@@ -1,0 +1,33 @@
+---
+title: Administrar listas de remitentes seguros para troyanos de envío masivo de correo electrónico
+ms.author: krowley
+author: kccross
+manager: laurawi
+ms.date: 11/17/2014
+ms.audience: ITPro
+ms.topic: article
+ms.service: O365-seccomp
+ms.custom: TN2DMC
+localization_priority: Normal
+ms.assetid: d48db4a3-9fbe-45e2-bbaa-1017ffdf96f8
+description: 'Si quiere usar listas de remitentes seguros, debe saber que Exchange Online Protection (EOP) y Outlook llevan a cabo el procesamiento de manera diferente. El servicio respeta los remitentes y los dominios seguros al inspeccionar la dirección RFC 5321.MailFrom y la dirección RFC 5322.From, mientras que Outlook agrega la dirección RFC 5322.From a la lista de remitentes seguros de un usuario. (Nota: El servicio inspecciona tanto la dirección 5321.MailFrom como la dirección 5322.From en busca de remitentes y dominios bloqueados).'
+ms.openlocfilehash: e5d6f8440281d527e7ea1846416b785beda25f1c
+ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "22026547"
+---
+# <a name="manage-safe-sender-lists-for-bulk-mailers"></a><span data-ttu-id="dff03-105">Administrar listas de remitentes seguros para troyanos de envío masivo de correo electrónico</span><span class="sxs-lookup"><span data-stu-id="dff03-105">Manage safe sender lists for bulk mailers</span></span>
+
+<span data-ttu-id="dff03-p102">Si quiere usar listas de remitentes seguros, debe saber que Exchange Online Protection (EOP) y Outlook llevan a cabo el procesamiento de manera diferente. El servicio respeta los remitentes y los dominios seguros al inspeccionar la dirección RFC 5321.MailFrom y la dirección RFC 5322.From, mientras que Outlook agrega la dirección RFC 5322.From a la lista de remitentes seguros de un usuario. (Nota: El servicio inspecciona tanto la dirección 5321.MailFrom como la dirección 5322.From en busca de remitentes y dominios bloqueados).</span><span class="sxs-lookup"><span data-stu-id="dff03-p102">If you want to use safe sender lists, you should know that Exchange Online Protection (EOP) and Outlook handle processing differently. The service respects safe senders and domains by inspecting the RFC 5321.MailFrom address and the RFC 5322.From address, while Outlook adds the RFC 5322.From address to a user's safe sender list. (Note: The service inspects both the 5321.MailFrom address and 5322.From address for blocked senders and domains.)</span></span>
+  
+<span data-ttu-id="dff03-p103">La dirección CORREO SMTP DE, también conocida como dirección RFC 5321.MailFrom, es la dirección de correo electrónico que se usa para realizar comprobaciones de SPF, y si el correo no se puede entregar, se proporciona la ruta de acceso a la que se rechaza el mensaje. Se trata de la dirección de correo electrónico que se coloca en Return-Path en los encabezados de mensaje de forma predeterminada, aunque es posible que el remitente designe una dirección de Return-Path diferente.</span><span class="sxs-lookup"><span data-stu-id="dff03-p103">The SMTP MAIL FROM address, otherwise known as the RFC 5321.MailFrom address, is the email address that's used to perform SPF checks, and if the mail can't be delivered, the path to which the bounced message is delivered. It's this email address that is placed into the Return-Path in the message headers by default, though it's possible for the sender to designate a different Return-Path address.</span></span>
+  
+<span data-ttu-id="dff03-111">La dirección De: en los encabezados de los mensajes, también conocida como la dirección RFC 5322.From, es la dirección de correo electrónico que se muestra en el cliente de correo como Outlook.</span><span class="sxs-lookup"><span data-stu-id="dff03-111">The From: address in the message headers, otherwise known as the RFC 5322.From address, is the email address that is displayed in the mail client such as Outlook.</span></span>
+  
+<span data-ttu-id="dff03-p104">La mayoría de las veces las direcciones 5321.MailFrom y 5322.From son las mismas. Esto es típico para la comunicación de persona a persona. No obstante, cuando el correo electrónico se envía en nombre de otra persona, las direcciones son frecuentemente diferentes. Esto generalmente ocurre con mucha frecuencia en mensajes de correo masivos.</span><span class="sxs-lookup"><span data-stu-id="dff03-p104">Much of the time, the 5321.MailFrom and 5322.From addresses are the same. This is typical for person-to-person communication. However, when email is sent on behalf of someone else, the addresses are frequently different. This usually happens most often for bulk email messages.</span></span>
+  
+<span data-ttu-id="dff03-p105">Por ejemplo, supongamos que la aerolínea Blue Yonder Airlines ha contratado a Margie's Travel para que distribuya su publicidad mediante correo electrónico. Luego, obtiene un mensaje en su bandeja de entrada del remitente blueyonder@news.blueyonderairlines.com. En este caso, la dirección 5321.MailFrom es blueyonder.airlines@margiestravel.com, y blueyonder@news.blueyonderairlines.com es la dirección 5322.From, que es la que ve en Outlook. Como el servicio respeta la dirección RFC 5322.From, para impedir que se filtre el mensaje, simplemente puede agregar la dirección RFC 5322.From como remitente seguro en Outlook.</span><span class="sxs-lookup"><span data-stu-id="dff03-p105">For example, suppose that the airline Blue Yonder Airlines has contracted out Margie's Travel to send out its email advertising. You then get a message in your inbox from sender blueyonder@news.blueyonderairlines.com. In this case, the 5321.MailFrom address is blueyonder.airlines@margiestravel.com, and blueyonder@news.blueyonderairlines.com is the 5322.From address which is the one you see in Outlook. Because the service respects the RFC 5322.From address, to prevent this message from getting filtered, you can simply add the RFC 5322.From address as a safe sender in Outlook.</span></span>
+  
+
