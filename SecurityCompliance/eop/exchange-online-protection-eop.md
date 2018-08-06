@@ -1,0 +1,79 @@
+---
+title: 'Protección de Exchange Online '
+ms.author: krowley
+author: kccross
+manager: laurawi
+ms.date: 12/9/2016
+ms.audience: ITPro
+ms.topic: hub-page
+ms.service: O365-seccomp
+ms.custom: TN2DMC
+localization_priority: Normal
+ms.assetid: 70ab4af2-fec4-4886-8e12-27d348649204
+description: A continuación presentamos algunas cosas que deben tener en cuenta antes de comenzar a trabajar con la elevación de privilegios.
+ms.openlocfilehash: 21d1bfe34485e97b35755bc2f88f3ba13066a616
+ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "22026387"
+---
+# <a name="exchange-online-protection"></a>Protección de Exchange Online 
+
+Este es el servicio de filtrado de correo electrónico hospedado de Microsoft Exchange Online Protection (EOP). A continuación, se detallan algunos aspectos que debe conocer antes de empezar a trabajar con EOP y usar este contenido:
+  
+- Para más información acerca de EOP, vea la [Descripción de servicio Protección en línea de Exchange](https://go.microsoft.com/fwlink/p/?LinkId=320619). Otros recursos útiles son [Información general de Exchange Online Protection](exchange-online-protection-overview.md), [Preguntas más frecuentes sobre EOP](eop-general-faq.md) y [Características de EOP](eop-features.md), así como la [página principal de Exchange Online Protection](https://go.microsoft.com/fwlink/?LinkId=279912).
+    
+- Para empezar a trabajar con EOP, los nuevos clientes deben ir a [Configurar un servicio de EOP](set-up-your-eop-service.md). En este tema se incluyen pasos que le ayudarán a configurar y a activar EOP. Es posible que también quiera ver la serie de vídeos de introducción que se muestran en [Vídeos de introducción a EOP](videos-for-getting-started-with-eop.md).
+    
+- Si precisa más ayuda o desea compartir sus ideas, el [foro de EOP](https://go.microsoft.com/fwlink/?LinkId=285351) es un buen sitio para empezar. 
+    
+- Puede usar la opción Exportar, en el lado superior derecho de cualquier página de TechNet, para agregar temas y, después, exportarlos a un archivo PDF. 
+    
+## <a name="eop-help-for-administrators"></a>Ayuda de EOP para administradores
+
+El contenido de la Ayuda para administradores de EOP consta de las siguientes categorías principales:
+  
+- [Información general de Exchange Online Protection](exchange-online-protection-overview.md) Describe cómo funciona EOP y proporciona vínculos a información adicional. 
+    
+- [Características de EOP](eop-features.md) Proporciona una lista de características que están disponibles en EOP. 
+    
+- [Vídeos de introducción a EOP](videos-for-getting-started-with-eop.md) Presenta EOP con una serie de vídeos que detallan las tareas de configuración frecuentes. 
+    
+- [Configurar un servicio de EOP](set-up-your-eop-service.md) Se incluyen pasos para configurar el servicio EOP, así como vínculos a información adicional. 
+    
+- [Cambiar a EOP desde Google Postini, Barracuda Spam y Virus Firewall o Cisco IronPort](switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco.md) Describe el proceso para cambiar de EOP a otro producto de protección de correo electrónico. 
+    
+- [Administrar destinatarios y grupos de roles de administración en EOP](manage-recipients-and-admin-role-groups-in-eop.md) Describe cómo administrar destinatarios y cómo asignar usuarios a grupos de roles de administración. 
+    
+- [Flujo de correo en EOP](mail-flow-in-eop.md) Describe cómo configurar escenarios de flujo de correo personalizados mediante conectores, cómo administrar dominios asociados con el servicio y cómo habilitar la característica Bloqueo perimetral basado en directorios (DBEB). 
+    
+- [Procedimientos recomendados para configurar EOP](best-practices-for-configuring-eop.md) Se describe la configuración recomendada y las consideraciones después de configurar y aprovisionar el servicio. 
+    
+- [Cumplimiento y directivas de mensajería en EOP](messaging-policy-and-compliance-in-eop.md) Se describe cómo usar las reglas de transporte de Exchange (reglas de filtrado personalizadas) para aplicar las directivas y reglamentos específicos de la compañía, y cómo usar los informes de auditoría para realizar el seguimiento de cambios de configuración en el servicio. 
+    
+- [Anti-Spam and Anti-Malware Protection](http://technet.microsoft.com/library/93c6c227-7442-4293-b64d-ec8f15c928db.aspx) Se describe el filtrado de correo no deseado y de malware,y se muestra cómo personalizarlos para que se adapten lo mejor posible a las necesidades de su organización. También se describen las tareas que los administradores y los usuarios finales pueden realizar en los mensajes en cuarentena. 
+    
+- [Informes y seguimiento de mensajes en Exchange Online Protection](reporting-and-message-trace-in-exchange-online-protection.md) Se describen los informes y las herramientas de solución de problemas que están disponibles. 
+    
+- [Exchange admin center en Exchange Online Protection](../exchange-admin-center-in-exchange-online-protection-eop.md) Describe cómo tener acceso y navegar por la interfaz de administración de Exchange admin center (EAC) con el fin de administrar el servicio EOP. 
+    
+- [PowerShell en Exchange Online Protection](http://technet.microsoft.com/library/f7918a88-774a-405e-945b-bc2f5ee9f748.aspx) Proporciona información sobre PowerShell remoto, que permite administrar el servicio EOP desde la línea de comandos. 
+    
+- [Ayuda y soporte técnico para EOP](help-and-support-for-eop.md) Se proporciona información sobre cómo obtener ayuda y soporte técnico. 
+    
+## <a name="eop-help-for-end-users"></a>Ayuda de EOP para usuarios finales
+<a name="sectionSection1"> </a>
+
+El contenido de la Ayuda para asistir a los usuarios finales de EOP a administrar el correo no deseado incluye los siguientes temas:
+  
+- [Find and Release Quarantined Messages as an End User](http://technet.microsoft.com/library/e439b560-827a-4807-abd3-6b861c1ff786.aspx) Describe la forma en que los usuarios finales pueden buscar y liberar sus propios mensajes de correo no deseado en cuarentena en la interfaz de usuario de cuarentena del correo no deseado y, opcionalmente, informarle a Microsoft que no se trata de correo no deseado. 
+        
+- [Envío de spam, no spam y los mensajes de estafas de suplantación de identidad a Microsoft para su análisis](../submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md) Describe las distintas formas en que los usuarios finales pueden enviar correo no deseado (no deseado) y que no sean de correo no deseado de los mensajes (no correo no deseados) a Microsoft. En este tema se incluyen vínculos a las herramientas de informes disponibles en Microsoft Outlook y OWA. 
+    
+- [Submitting malware and non-malware to Microsoft for analysis](../submitting-malware-and-non-malware-to-microsoft-for-analysis.md) Describe cómo los usuarios finales pueden enviar malware que consiguió pasar los filtros o un archivo que ha sido incorrectamente identificado como malware. 
+    
+- Los usuarios finales puede agregar dominios o usuarios específicos a una lista de remitentes seguros o una lista de remitentes bloqueados mediante la configuración de su configuración de correo electrónico no deseado en Outlook o en Microsoft OWA. Tenga en cuenta que los mensajes que se envían desde los remitentes bloqueados se marcan como correo no deseado, que no se rechaza, lo que significa que se pueden recuperar desde la carpeta de correo electrónico no deseado o cuarentena (según donde el administrador haya configurado el servicio para que envíen correo no deseado.) Para obtener más información, vea [usar el complemento en el mensaje de informe](https://support.office.com/article/addin-b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
+    
+- [Ayuda y soporte técnico para EOP](help-and-support-for-eop.md) Proporciona información sobre cómo obtener ayuda y soporte técnico. 
+    
