@@ -1,5 +1,4 @@
-# 
-  [Introducción](security-and-compliance.md)
+# [Introducción](security-and-compliance.md)
 ## [Guía de seguridad de Office 365](security-roadmap.md)
 ## [Configurar al inquilino de Office 365 para aumentar la seguridad](tenant-wide-setup-for-increased-security.md)
 ## [Ir a la seguridad y el centro de cumplimiento](go-to-the-securitycompliance-center.md)
@@ -411,6 +410,5 @@
 ### [Enviar correo a Office 365](sending-mail-to-office-365.md)
 ### [Servicios para no clientes](services-for-non-customers.md)
 
-# 
-  [Office 365 Enterprise](https://docs.microsoft.com/Office365/Enterprise)
+# [Office 365 Enterprise](https://docs.microsoft.com/Office365/Enterprise)
 # [Office 365 para profesionales](https://support.office.com/office365admin)
