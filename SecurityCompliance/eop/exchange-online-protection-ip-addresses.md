@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: eb14f38b-7b55-4a47-84a0-4a56a59e4111
 description: Microsoft Exchange Online Protection (EOP) utiliza las siguientes direcciones IP del centro de datos de Microsoft al enviar correo electrónico, recibirlo o para el portal y los servicios administrativos de Exchange Online Protection. Para enviar y recibir mensajes de EOP o utilizar los servicios administrativos, asegúrese de que la red permite conexiones desde estas direcciones IP.
-ms.openlocfilehash: 1b5dad69fb300f36bc94c9d264492f9c9be8948f
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 853b64410969fcc2f3c9ef238d2e9f4a4bb36e7b
+ms.sourcegitcommit: edf5db9357c0d34573f8cc406314525ef10d1eb9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026327"
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "23230012"
 ---
 # <a name="exchange-online-protection-ip-addresses"></a>Direcciones de IP para Exchange Online Protection
 
@@ -26,8 +26,6 @@ Microsoft Exchange Online Protection (EOP) utiliza las siguientes direcciones IP
 > Microsoft está desarrollando un servicio web basado en REST para la dirección IP y las entradas de FQDN en esta página. Este nuevo servicio le ayudará a configurar y actualizar los dispositivos de perímetro de red, como firewalls y servidores proxy. Puede descargar la lista de extremos, la versión actual de la lista o cambios específicos. Este servicio finalmente reemplazará el documento XML, la fuente RSS y la dirección IP y las entradas de FQDN en esta página. Para probar este nuevo servicio, vaya al [servicio Web](https://support.office.com/article/managing-office-365-endpoints-99cab9d4-ef59-4207-9f2b-3728eb46bf9a#webservice). 
  
 ## <a name="eop-ip-address-ranges"></a>Intervalos de direcciones IP para EOP
-
-La siguiente es una lista completa de los intervalos de direcciones IP para EOP a partir de **2/7/2018**. 
 
 ||||
 |:-----|:-----|:-----|
@@ -91,3 +89,4 @@ Exchange Online Protection enruta el correo de la forma más eficaz y, a la vez,
 | 216.32.180.0/23 |  | |
 | c 2a01:111:f400:7 00:: / 54 |  | |
 ||||
+
