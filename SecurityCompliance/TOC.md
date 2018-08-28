@@ -147,7 +147,7 @@
 ## [Usar búsqueda de contenido](content-search.md)
 ### [Consultas de palabras clave y condiciones de búsqueda para la búsqueda de contenido](keyword-queries-and-search-conditions.md).
 ### [Ver las estadísticas de palabras clave para resultados de búsqueda de contenido](view-keyword-statistics-for-content-search.md)
-### [Exportar resultados de la búsqueda de contenido](content-search.md#export-search-results)
+### [Exportar resultados de la búsqueda de contenido](export-search-results.md)
 ### [Exportar un informe de búsqueda de contenido](export-a-content-search-report.md)
 ### [Búsqueda y eliminación de mensajes de correo electrónico](search-for-and-delete-messagesadmin-help.md)
 ### [Buscar los buzones basados en la nube de usuarios locales en Office 365](search-cloud-based-mailboxes-for-on-premises-users.md)
@@ -169,11 +169,11 @@
 ### [Deshabilitar informes al exportar los resultados de búsqueda de contenido](disable-reports-when-you-export-content-search-results.md)
 ## Usar los scripts de PowerShell de búsqueda de contenido
 ### [Usar búsqueda de contenido para colecciones específicas](use-content-search-for-targeted-collections.md)
-### [Usar búsqueda de contenido para buscar una lista de usuarios en el buzón y el sitio de OneDrive para la Empresa](https://support.office.com/article/5f4f8206-2d6a-4cb2-bbc6-7a0698703cc0)
+### [Usar búsqueda de contenido para buscar una lista de usuarios en el buzón y el sitio de OneDrive para la Empresa](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md)
 ### [Crear, informar sobre y eliminar varias búsquedas de contenido](create-report-on-and-delete-multiple-content-searches.md)
 ### [Clonar una búsqueda de contenido](clone-a-content-search.md)
 
-# Administración de investigaciones legales
+# [Administración de investigaciones legales](manage-legal-investigations.md)
 ## [Crear y administrar casos de eDiscovery](ediscovery-cases.md)
 ## [Asignar permisos de eDiscovery](assign-ediscovery-permissions.md)
 ## [Configurar los límites de cumplimiento para investigaciones de eDiscovery en Office 365](set-up-compliance-boundaries.md).
@@ -183,6 +183,7 @@
 ## [Usar un script para agregar usuarios a una suspensión en un caso de eDiscovery](use-a-script-to-add-users-to-a-hold-in-ediscovery.md)
 ## [Crear un informe de suspensiones en casos de eDiscovery](create-a-report-on-holds-in-ediscovery-cases.md)
 ## Administrar suspensiones
+### [Crear un caso de retención de eDiscovery](ediscovery-cases.md#step-4-place-content-locations-on-hold)
 ### [Crear una retención por juicio](create-a-litigation-hold.md)
 ### [Eliminar elementos de la carpeta de elementos recuperables de buzones en retención en la nube](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md)
 ### [Aumentar la cuota de elementos recuperables para los buzones de correo en retención](increase-the-recoverable-quota-for-mailboxes-on-hold.md)
