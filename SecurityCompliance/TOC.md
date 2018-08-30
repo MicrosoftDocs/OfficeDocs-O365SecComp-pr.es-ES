@@ -143,7 +143,7 @@
 ### [Preguntas más frecuentes sobre cuarentena para Office 365](quarantine-faq.md)
 ### [Usar notificaciones de correo no deseado para el usuario para liberar y notificar mensajes de correo en cuarentena en Office 365](use-spam-notifications-to-release-and-report-quarantined-messages.md)
 
-# Buscar contenido
+# [Buscar contenido](search-for-content.md)
 ## [Usar búsqueda de contenido](content-search.md)
 ### [Consultas de palabras clave y condiciones de búsqueda para la búsqueda de contenido](keyword-queries-and-search-conditions.md).
 ### [Ver las estadísticas de palabras clave para resultados de búsqueda de contenido](view-keyword-statistics-for-content-search.md)
@@ -282,9 +282,9 @@
 ### [RGPD para uso compartido de archivos de Windows Server local](https://docs.microsoft.com/Office365/Enterprise/gdpr-for-on-premises-file-shares)
 # Respuesta a incidentes de seguridad
 
-## [Respuesta a incidentes de seguridad de Office 365](https://docs.microsoft.com/Office365/Enterprise/office365-security-incident-response-overview)
-## [Detectar y solucionar la concesión de consentimiento ilegal en Office 365](https://docs.microsoft.com/Office365/Enterprise/detect-and-remediate-illicit-consent-grants)
-## [Detectar y corregir las reglas de Outlook y ataques de inserciones de formularios personalizados en Office 365](https://docs.microsoft.com/Office365/Enterprise/detect-and-remediate-outlook-rules-forms-attack)
+## [Respuesta a incidentes de seguridad de Office 365](office365-security-incident-response-overview.md)
+## [Detectar y solucionar la concesión de consentimiento ilegal en Office 365](detect-and-remediate-illicit-consent-grants.md)
+## [Detectar y corregir las reglas de Outlook y ataques de inserciones de formularios personalizados en Office 365](detect-and-remediate-outlook-rules-forms-attack.md)
 
 # Garantía de servicio
 ## [Garantía del servicio en el Centro de seguridad y cumplimiento de Office 365](service-assurance.md)
