@@ -9,14 +9,16 @@ ms.topic: reference
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 111ab6b0-2dd2-4a87-a928-4931df6b3c4d
 description: Como administrador de Exchange Online o Exchange Online Protection (EOP), puede ayudar a garantizar que un mensaje de correo que pasa a través del servicio no se marque como correo no deseado. Una forma de hacerlo es crear listas de remitentes bloqueados y de remitentes seguros para las personas de su organización.
-ms.openlocfilehash: fcb43f990750782788dc6f459dd5c7d296146a38
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: cbf886bdcc40044a31b285b6806aecbc95f0f97c
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22028087"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23003109"
 ---
 # <a name="safe-sender-and-blocked-sender-lists-in-exchange-online"></a>Listas de remitentes seguros y bloqueados en Exchange Online
 
@@ -38,7 +40,7 @@ Nota:
   
 Puede experimentar el error que se describe en KB 2590466 ("recibirá el error"Error de validación de correo electrónico no deseado"en Outlook Web App para Exchange Server 2010"). Para resolver este problema, desactive la casilla de verificación "Confiar en mensajes de correo electrónico de Mis contactos". Como alternativa, reducir la cantidad de direcciones de correo electrónico que están en la carpeta de contactos predeterminada para que aparezca en el máximo permitido limitar de 1.024 en Exchange Online que se establece para el atributo "MaxSafeSenders". Para obtener más información acerca de este atributo y el cmdlet Set-Mailbox, seethe siguiente tema:
   
-[Set-Mailbox](https://docs.microsoft.com/en-us/powershell/module/exchange/mailboxes/Set-Mailbox?view=exchange-ps)
+[Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Set-Mailbox?view=exchange-ps)
   
 ## <a name="see-also"></a>See also
 

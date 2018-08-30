@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: La definición de usuarios de correo es una parte importante de la administración del servicio de Protección en línea de Exchange (EOP).
-ms.openlocfilehash: e985adf5659b50cf567ea798a092f809d77ca470
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 46bc63232be3ece8b9e5c6fce6bbea18dcfdf2b4
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027397"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23003049"
 ---
 # <a name="manage-mail-users-in-eop"></a>Administrar usuarios de correo en EOP
 
@@ -101,7 +101,7 @@ Deberá tener asignados permisos antes de poder llevar a cabo este procedimiento
     
 ### <a name="to-edit-or-remove-a-mail-user-in-the-eac"></a>Para editar o quitar un usuario de correo en el EAC
 
-- En el EAC, vaya a **Destinatarios** \> **Contactos**. En la lista de usuarios, haga clic en el usuario que quiera ver o cambiar y, a continuación, seleccione **Editar**![Icono Editar](../media/ITPro-EAC-EditIcon.png) para actualizar la configuración de usuario según sea necesario. Puede cambiar el nombre, el alias o la información de contacto del usuario, y puede registrar información detallada sobre el rol del usuario en la organización. También puede seleccionar un usuario y elegir **Quitar**![Icono de quitar](../media/ITPro-EAC-RemoveIcon.png) para eliminarlo. 
+- En el EAC, vaya a **destinatarios** \> **contactos**. En la lista de usuarios, haga clic en el usuario que desea ver o cambiar y, a continuación, seleccione **Editar** ![icono Editar](../media/ITPro-EAC-EditIcon.gif) para actualizar la configuración de usuario según sea necesario. Puede cambiar el nombre, alias o información de contacto del usuario y puede registrar información detallada sobre el rol del usuario en la organización. Puede también seleccionar un usuario y, a continuación, elija **Quitar**![icono Quitar](../media/ITPro-EAC-RemoveIcon.gif) para eliminarlo. 
     
 ## <a name="use-remote-windows-powershell-to-manage-mail-users"></a>Usar Windows PowerShell remoto para administrar usuarios de correo
 

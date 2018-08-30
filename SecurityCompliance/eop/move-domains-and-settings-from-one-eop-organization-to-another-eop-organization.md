@@ -11,19 +11,19 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 9d64867b-ebdb-4323-8e30-4560d76b4c97
 description: El cambio de requisitos empresariales a veces puede requerir dividir una organización de Microsoft Exchange Online Protection (EOP) (inquilino) en dos organizaciones separadas, combinar dos organizaciones en una, o mover sus dominios y opciones de configuración de EOP desde una organización hacia otra organización.
-ms.openlocfilehash: 87bf6a4f1e7d0fac1f98255d222693cb4910f1a6
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: f822e9e5aa91a67a15b327f73c29bf9bee2ff99e
+ms.sourcegitcommit: 380ea5b269a64bd581a225e122cbd82d2ce0bf98
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027667"
+ms.lasthandoff: 08/20/2018
+ms.locfileid: "23002233"
 ---
 # <a name="move-domains-and-settings-from-one-eop-organization-to-another-eop-organization"></a>Mover dominios y opciones de configuración de una organización de EOP a otra organización de EOP
 
 El cambio de requisitos empresariales a veces puede requerir dividir una organización de Microsoft Exchange Online Protection (EOP) (inquilino) en dos organizaciones separadas, combinar dos organizaciones en una, o mover sus dominios y opciones de configuración de EOP desde una organización hacia otra organización. El movimiento desde una organización de EOP a una segunda organización de EOP puede ser todo un desafío, pero con unos pocos scripts básicos de Windows PowerShell remoto y un poco de preparación, esto se puede lograr con una ventana de mantenimiento relativamente pequeña. 
   
 > [!NOTE]
->  Las opciones de configuración se pueden mover de forma segura desde una organización de EOP independiente (Standard) a otra organización de EOP Standard o una organización de Exchange Enterprise CAL con Services (EOP Premium), o desde una organización de EOP Premium a otra organización de EOP Premium. Debido a que no se admiten algunas características importantes en las organizaciones de EOP Standard, los movimientos desde una organización de EOP Premium hacia una organización de EOP Premium podrían no ser correctos. >  Estas instrucciones son para las organizaciones de solo filtrado de EOP. Existen consideraciones adicionales al moverse desde una organización de Exchange Online hacia otra organización de Exchange Online. Las organizaciones de Exchange Online están fuera del alcance de estas instrucciones. 
+>  Configuración se puede confiable mover sólo desde una organización (estándar) a otro estándar de elevación de privilegios o Exchange Enterprise CAL con la organización de servicios (elevación de privilegios Premium) de EOP independiente, o desde una organización Premium de elevación de privilegios a otra organización Premium de elevación de privilegios. Debido a que algunas características premium no se admiten en las organizaciones estándar de elevación de privilegios, se mueve de una organización de elevación de privilegios Premium a una organización estándar de elevación de privilegios podría no ser correcta. > Estas instrucciones son para las organizaciones sólo filtrado de elevación de privilegios. Existen consideraciones adicionales al moverse de una organización de Exchange Online a otra organización de Exchange Online. Las organizaciones de Exchange Online están fuera del ámbito de estas instrucciones. 
   
 En el ejemplo siguiente, Contoso, Ltd. se ha fusionado con Contoso Suites. La imagen siguiente muestra el proceso de mover los dominios, los usuarios y grupos de correo, y la configuración desde la organización de EOP de origen (contoso.onmicrosoft.com) hacia la organización de EOP de destino (contososuites.onmicrosoft.com):
   

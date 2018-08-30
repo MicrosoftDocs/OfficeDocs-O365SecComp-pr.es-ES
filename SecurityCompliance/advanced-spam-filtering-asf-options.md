@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: b286f853-b484-4af0-b01f-281fffd85e7a
 description: Opciones de filtrado de spam avanzados proporcionan a los administradores la capacidad de inspeccionar diferentes atributos de contenido de un mensaje. La presencia de estos atributos en un mensaje aumenta la puntuación de spam del mensaje (por lo que aumenta el potencial para que pueda ser identificado como correo no deseado) o marca el mensaje como correo no deseado. Las opciones de ASF destino propiedades del mensaje específicos, como etiquetas HTML y redirección de dirección URL, que se encuentran comúnmente en los mensajes de spam.
-ms.openlocfilehash: 4b67c3a9a79c4a51bdebed5ca1a6415cc7bd13ae
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 9a372d002717eacf9470b11b65c4b8f268f48e5a
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026577"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23003069"
 ---
 # <a name="advanced-spam-filtering--options"></a>Opciones de filtrado de spam avanzado
 

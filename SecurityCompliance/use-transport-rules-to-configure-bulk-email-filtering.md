@@ -1,5 +1,5 @@
 ---
-title: Uso de reglas de transporte para configurar el filtrado de correo electrónico masivo
+title: Usar reglas de transporte para configurar el filtrado de correo electrónico masivo
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -9,16 +9,18 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 2889c82e-fab0-4e85-87b0-b001b2ccd4f7
 description: Puede establecer filtros de contenido en toda la empresa para el correo electrónico masivo y correo no deseado usando las directivas de filtro de contenido de correo electrónico no deseado predeterminadas. Consulte Configurar las directivas de filtro de correo no deseado y Set-HostedContentFilterPolicy para obtener información sobre cómo configurar las directivas de filtro de contenido.
-ms.openlocfilehash: f72fa5cc50ab6aa5447e3af9fabc365457c82973
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 8fa4ba619b55ae12207f36b7625acfaa9838e696
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027687"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002491"
 ---
-# <a name="use-transport-rules-to-configure-bulk-email-filtering"></a>Uso de reglas de transporte para configurar el filtrado de correo electrónico masivo
+# <a name="use-transport-rules-to-configure-bulk-email-filtering"></a>Usar reglas de transporte para configurar el filtrado de correo electrónico masivo
 
 Puede establecer filtros de contenido en toda la empresa para el correo electrónico masivo y correo no deseado usando las directivas de filtro de contenido de correo electrónico no deseado predeterminadas. Consulte [Configurar las directivas de filtro de correo no deseado](configure-your-spam-filter-policies.md) y [Set-HostedContentFilterPolicy](http://technet.microsoft.com/library/f597aa65-baa7-49d0-8832-2a300073f211.aspx) para obtener información sobre cómo configurar las directivas de filtro de contenido. 
   
@@ -34,7 +36,7 @@ Si quiere más opciones para filtrar los mensajes masivos, puede crear reglas de
 
 1. En el Centro de administración de Exchange (EAC), vaya a **Flujo de correo** \> **Reglas**.
     
-2. Haga clic en **Agregar**![Agregar icono](media/ITPro-EAC-AddIcon.png) y seleccione **Crea una nueva regla**.
+2. Haga clic en **Agregar**![Agregar icono](media/ITPro-EAC-AddIcon.gif) y seleccione **Crea una nueva regla**.
     
 3. Especifique un nombre para la regla.
     
@@ -89,7 +91,7 @@ Si quiere más opciones para filtrar los mensajes masivos, puede crear reglas de
 
 1. En el EAC, vaya a **Flujo de correo** \> **Reglas**.
     
-2. Haga clic en **Agregar**![Agregar icono](media/ITPro-EAC-AddIcon.png) y seleccione **Crea una nueva regla**.
+2. Haga clic en **Agregar**![Agregar icono](media/ITPro-EAC-AddIcon.gif) y seleccione **Crea una nueva regla**.
     
 3. Especifique un nombre para la regla.
     

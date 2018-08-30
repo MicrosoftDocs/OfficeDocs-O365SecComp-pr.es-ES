@@ -1,5 +1,5 @@
 ---
-title: 'Centro de administración de Exchange en Exchange Online Protection '
+title: 'Centro de administración de Exchange en Exchange Online Protection  '
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -9,22 +9,24 @@ ms.topic: overview
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 97921f0e-832f-40c7-b56d-414faede5191
 description: El Centro de administración de Exchange (EAC) es la consola de administración basada en web para Microsoft Exchange Online Protection (EOP).
-ms.openlocfilehash: 99640e561b41e47a74e7c22f0bbdcacd0dd80bd7
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 144907110af9fcbec1c6399e0695abb705bef409
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026317"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002949"
 ---
-# <a name="exchange-admin-center-in-exchange-online-protection"></a>Centro de administración de Exchange en Exchange Online Protection 
+# <a name="exchange-admin-center-in-exchange-online-protection"></a>Centro de administración de Exchange en Exchange Online Protection  
 
 El Centro de administración de Exchange (EAC) es la consola de administración basada en web para Microsoft Exchange Online Protection (EOP). 
   
 ¿Está buscando la versión de Exchange 2013 de este tema? Vea [Exchange admin center in Exchange 2013](http://technet.microsoft.com/library/a9aea11a-6ba3-4f4a-a76e-79072e7cfc7d.aspx).
   
-¿Está buscando la versión de Exchange Online de este tema? Vea [Exchange admin center in Exchange Online](http://technet.microsoft.com/library/ace44f6b-4084-4f9c-89b3-e0317962472b.aspx).
+¿Está buscando la versión de Exchange Online de este tema? Vea [Exchange admin center in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
   
 ## <a name="accessing-the-eac"></a>Acceso a EAC
 
@@ -33,7 +35,6 @@ En la mayoría de los casos, los clientes de EOP obtienen acceso al EAC a travé
 También puede obtener acceso a la página directamente a través de la siguiente dirección URL de inicio de sesión de CEF: https://admin.protection.outlook.com/ecp/\<companydomain\>. Por ejemplo, https://admin.protection.outlook.com/ecp/contoso.onmicrosoft.com. Después de especificar sus credenciales de usuario se le dirigirá directamente en el EAC.
   
 ## <a name="common-user-interface-elements-in-the-eac"></a>Elementos comunes de la interfaz de usuario en EAC
-<a name="BKMK_CommonUserInterfaceElements"> </a>
 
 En esta sección se describen los elementos de la interfaz de usuario del EAC.
   
@@ -63,14 +64,14 @@ Al hacer clic en la mayoría de las pestañas, verá una barra de herramientas. 
   
 |**Icono**|**Nombre**|**Action**|
 |:-----|:-----|:-----|
-|![Agregar icono](media/ITPro-EAC-AddIcon.png)           <br/> |Agregar, nuevo  <br/> |Utilice este icono para crear un nuevo objeto. Algunos de estos iconos tienen una flecha hacia abajo asociada donde puede hacer clic para mostrar objetos adicionales que puede crear.  <br/> |
-|![Icono Editar](media/ITPro-EAC-EditIcon.png)           <br/> |Editar  <br/> |Utilice este icono para editar un objeto.  <br/> |
-|![Eliminar icono](media/ITPro-EAC-DeleteIcon.png)           <br/> |Eliminar  <br/> |Utilice este icono para eliminar un objeto. Algunos iconos eliminados tienen una flecha hacia abajo donde puede hacer clic para mostrar opciones adicionales.  <br/> |
-|![icono de Buscar](media/ITPro-EAC-.png)           <br/> |Búsqueda  <br/> |Usar este icono para abrir una casilla de búsqueda donde puede escribir una frase de búsqueda para el objeto que desee encontrar.  <br/> |
-|![Icono Actualizar](media/ITPro-EAC-RefreshIcon.png)           <br/> |Actualizar  <br/> |Utilice este icono para actualizar la vista de lista.  <br/> |
-|![Icono Más opciones](media/ITPro-EAC-MoreOptionsIcon.png)           <br/> |Más opciones  <br/> |Use este icono para ver más acciones que puede realizar para los objetos de la pestaña. Por ejemplo, al hacer clic en este icono en **Destinatarios \> Usuarios**, se muestra la opción para realizar una **Búsqueda avanzada**.  <br/> |
-|![Icono flecha arriba](media/ITPro-EAC-UpArrowIcon.png)![Icono flecha abajo](media/ITPro-EAC-DownArrowIcon.png)           <br/> |Flecha hacia arriba y flecha hacia abajo  <br/> |Utilice estos iconos para mover la prioridad de un objeto hacia arriba o hacia abajo.  <br/> |
-|![Icono de quitar](media/ITPro-EAC-RemoveIcon.png)           <br/> |Quitar  <br/> |Utilice este icono para quitar objetos de la lista.  <br/> |
+|![Agregar icono](media/ITPro-EAC-AddIcon.gif)           <br/> |Agregar, nuevo  <br/> |Utilice este icono para crear un nuevo objeto. Algunos de estos iconos tienen una flecha hacia abajo asociada donde puede hacer clic para mostrar objetos adicionales que puede crear.  <br/> |
+|![Icono Editar](media/ITPro-EAC-EditIcon.gif)           <br/> |Editar  <br/> |Utilice este icono para editar un objeto.  <br/> |
+|![Eliminar icono](media/ITPro-EAC-DeleteIcon.gif)           <br/> |Eliminar  <br/> |Utilice este icono para eliminar un objeto. Algunos iconos eliminados tienen una flecha hacia abajo donde puede hacer clic para mostrar opciones adicionales.  <br/> |
+|![icono de Buscar](media/ITPro-EAC-.gif)           <br/> |Búsqueda  <br/> |Usar este icono para abrir una casilla de búsqueda donde puede escribir una frase de búsqueda para el objeto que desee encontrar.  <br/> |
+|![Icono Actualizar](media/ITPro-EAC-RefreshIcon.gif)           <br/> |Actualizar  <br/> |Utilice este icono para actualizar la vista de lista.  <br/> |
+|![Icono Más opciones](media/ITPro-EAC-MoreOptionsIcon.gif)           <br/> |Más opciones  <br/> |Use este icono para ver más acciones que puede realizar para los objetos de la pestaña. Por ejemplo, al hacer clic en este icono en **Destinatarios \> Usuarios**, se muestra la opción para realizar una **Búsqueda avanzada**.  <br/> |
+|![Icono flecha arriba](media/ITPro-EAC-UpArrowIcon.gif)![Icono flecha abajo](media/ITPro-EAC-DownArrowIcon.gif)           <br/> |Flecha hacia arriba y flecha hacia abajo  <br/> |Utilice estos iconos para mover la prioridad de un objeto hacia arriba o hacia abajo.  <br/> |
+|![Icono de quitar](media/ITPro-EAC-RemoveIcon.gif)           <br/> |Quitar  <br/> |Utilice este icono para quitar objetos de la lista.  <br/> |
    
 ### <a name="list-view"></a>Vista de lista
 
@@ -82,9 +83,9 @@ Cuando seleccione un objeto de la vista de lista, la información acerca del obj
   
 ### <a name="me-tile-and-help"></a>Mosaico Yo y Ayuda
 
-El mosaico **Yo** permite cerrar sesión en el EAC e iniciar sesión como un usuario diferente. Desde el menú desplegable en **Ayuda**![Icono de ayuda](media/ITPro-EAC-HelpIcon.png), puede realizar las siguientes acciones: 
+El mosaico **Yo** permite cerrar sesión en el EAC e iniciar sesión como un usuario diferente. Desde el menú desplegable en **Ayuda**![Icono de ayuda](media/ITPro-EAC-HelpIcon.gif), puede realizar las siguientes acciones: 
   
-1. **Ayuda** Haga clic en ![Icono de ayuda](media/ITPro-EAC-HelpIcon.png) para ver el contenido de la ayuda en línea. 
+1. **Ayuda** Haga clic en ![Icono de ayuda](media/ITPro-EAC-HelpIcon.gif) para ver el contenido de la ayuda en línea. 
     
 2. **Deshabilitar el globo de Ayuda** El globo de Ayuda muestra la ayuda contextual de los campos cuando crea o edita un objeto. Puede desactivar el globo de Ayuda o activarlo si estaba deshabilitado. 
     
@@ -93,12 +94,10 @@ El mosaico **Yo** permite cerrar sesión en el EAC e iniciar sesión como un usu
 4. **Privacidad** Haga clic para leer la directiva de privacidad de Exchange Online Protection. 
     
 ## <a name="supported-browsers"></a>Exploradores compatibles
-<a name="BKMK_SupportedBrowsers"> </a>
 
 Para conseguir la mejor experiencia con EAC, le recomendamos que use siempre la versión más actualizada de los exploradores, clientes de Office y aplicaciones. También le recomendamos que instale las actualizaciones de software cuando estén disponibles. Para obtener más información acerca de los navegadores compatibles y los requisitos del sistema para el servicio, vea [Requisitos del sistema de Office 365](https://go.microsoft.com/fwlink/p/?LinkID=402699). 
   
 ## <a name="supported-languages-in-eop"></a>Idiomas admitidos en EOP
-<a name="BKMK_SupportedLanguages"> </a>
 
 Los siguientes idiomas están disponibles y son compatibles con Exchange Online Protection.
   
