@@ -1,0 +1,100 @@
+---
+title: Prepararse para Office 365 Cloud App Security
+ms.author: deniseb
+author: denisebmsft
+manager: laurawi
+ms.audience: ITPro
+ms.topic: overview
+ms.service: o365-administration
+localization_priority: Normal
+search.appverid:
+- MET150
+- MOE150
+ms.assetid: d9ee4d67-f2b3-42b4-9c9e-c4529904990a
+description: Introducción al uso de la seguridad de la aplicación de nube de Office 365
+ms.openlocfilehash: 906570c6607c70b63fa9d2059d56b50f7807124a
+ms.sourcegitcommit: edf5db9357c0d34573f8cc406314525ef10d1eb9
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 08/28/2018
+ms.locfileid: "23229992"
+---
+# <a name="get-ready-for-office-365-cloud-app-security"></a><span data-ttu-id="345f5-103">Prepararse para Office 365 Cloud App Security</span><span class="sxs-lookup"><span data-stu-id="345f5-103">Get ready for Office 365 Cloud App Security</span></span>
+  
+|<span data-ttu-id="345f5-104">Evaluación **\>**</span><span class="sxs-lookup"><span data-stu-id="345f5-104">****Evaluation** \>**</span></span>|<span data-ttu-id="345f5-105">Planeación de **\>**</span><span class="sxs-lookup"><span data-stu-id="345f5-105">****Planning** \>**</span></span>|<span data-ttu-id="345f5-106">Implementación **\>**</span><span class="sxs-lookup"><span data-stu-id="345f5-106">****Deployment** \>**</span></span>|<span data-ttu-id="345f5-107">Utilización de \*\*\*</span><span class="sxs-lookup"><span data-stu-id="345f5-107">****Utilization****</span></span>|
+|:-----|:-----|:-----|:-----|
+|[<span data-ttu-id="345f5-108">Empezar a evaluar</span><span class="sxs-lookup"><span data-stu-id="345f5-108">Start evaluating</span></span>](office-365-cas-overview.md) <br/> |<span data-ttu-id="345f5-109">¡Están aquí!</span><span class="sxs-lookup"><span data-stu-id="345f5-109">You are here!</span></span>  <br/> [<span data-ttu-id="345f5-110">Paso siguiente</span><span class="sxs-lookup"><span data-stu-id="345f5-110">Next step</span></span>](turn-on-office-365-cas.md) <br/> |[<span data-ttu-id="345f5-111">Iniciar la implementación</span><span class="sxs-lookup"><span data-stu-id="345f5-111">Start deploying</span></span>](turn-on-office-365-cas.md) <br/> |[<span data-ttu-id="345f5-112">Iniciar utilizando</span><span class="sxs-lookup"><span data-stu-id="345f5-112">Start utilizing</span></span>](utilization-activities-for-ocas.md) <br/> |
+   
+<span data-ttu-id="345f5-p101">Mientras se prepara para activar e implementar Office 365 en la nube seguridad de la aplicación (anteriormente conocido como administración avanzada de seguridad) para su organización, hay algunas cosas que debe tener en cuenta. Use este artículo como guía para planear la seguridad de la aplicación de nube de Office 365.</span><span class="sxs-lookup"><span data-stu-id="345f5-p101">As you prepare to turn on and implement Office 365 Cloud App Security (formerly known as Advanced Security Management) for your organization, there are a few things to take into account. Use this article as a guide to plan for Office 365 Cloud App Security.</span></span>
+    
+## <a name="step-1-identify-and-protect-your-global-and-security-administrator-accounts"></a><span data-ttu-id="345f5-115">Paso 1: Identificar y proteger las cuentas de administrador global y seguridad</span><span class="sxs-lookup"><span data-stu-id="345f5-115">Step 1: Identify and protect your global and security administrator accounts</span></span>
+
+<span data-ttu-id="345f5-p102">Los administradores globales, los administradores de seguridad y los lectores de seguridad pueden obtener acceso al portal de seguridad de la aplicación de nube de Office 365 para ver las directivas, revise las alertas y usar informes. Los administradores globales y los administradores de seguridad pueden definir directivas y realizar otras acciones para proteger su organización. (Para obtener más información, vea [permisos en la seguridad de Office 365 &amp; centro de cumplimiento](permissions-in-the-security-and-compliance-center.md).) Revise las cuentas de usuario de la organización que disponen de permisos elevados como medida de precaución.</span><span class="sxs-lookup"><span data-stu-id="345f5-p102">Global administrators, security administrators, and security readers can access the Office 365 Cloud App Security portal to view policies, review alerts, and use reports. Global administrators and security administrators can define policies and take other actions to protect your organization. (For more information, see [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md).) Review your organization's user accounts that have elevated permissions as a precaution.</span></span> 
+  
+ <span data-ttu-id="345f5-119">**[Las cuentas de administrador global de proteger su Office 365](https://docs.microsoft.com/office365/enterprise/protect-your-global-administrator-accounts)**.</span><span class="sxs-lookup"><span data-stu-id="345f5-119">**[Protect your Office 365 global administrator accounts](https://docs.microsoft.com/office365/enterprise/protect-your-global-administrator-accounts)**.</span></span> 
+  
+## <a name="step-2-turn-on-audit-logging-for-your-organization"></a><span data-ttu-id="345f5-120">Paso 2: Activar el registro de auditoría para la organización</span><span class="sxs-lookup"><span data-stu-id="345f5-120">Step 2: Turn on audit logging for your organization</span></span>
+
+<span data-ttu-id="345f5-p103">En orden para Office 365 la seguridad de la aplicación de nube trabajar correcta, debe activarse el registro de auditoría. Normalmente, esto se realiza por un administrador de Exchange Online o un administrador global.</span><span class="sxs-lookup"><span data-stu-id="345f5-p103">In order for Office 365 Cloud App Security to work correct, audit logging must be turned on. This is typically done by an Exchange Online administrator or a global administrator.</span></span>
+  
+ <span data-ttu-id="345f5-123">**[Búsqueda de registro de auditoría de activar Office 365 activado o desactivado](turn-audit-log-search-on-or-off.md)**.</span><span class="sxs-lookup"><span data-stu-id="345f5-123">**[Turn Office 365 audit log search on or off](turn-audit-log-search-on-or-off.md)**.</span></span> 
+  
+## <a name="step-3-go-to-the-office-365-cloud-app-security-portal"></a><span data-ttu-id="345f5-124">Paso 3: Vaya al portal de seguridad de la aplicación de nube de Office 365</span><span class="sxs-lookup"><span data-stu-id="345f5-124">Step 3: Go to the Office 365 Cloud App Security portal</span></span>
+
+1. <span data-ttu-id="345f5-p104">Vaya a [https://protection.office.com](https://protection.office.com) e iniciar sesión con su cuenta de trabajo o escuela para Office 365. (Esto le llevará a la seguridad &amp; centro de cumplimiento.)</span><span class="sxs-lookup"><span data-stu-id="345f5-p104">Go to [https://protection.office.com](https://protection.office.com) and sign in using your work or school account for Office 365. (This takes you to the Security &amp; Compliance Center.)</span></span> 
+    
+2. <span data-ttu-id="345f5-127">Vaya a **las alertas de** \> **avanzada de administrar las alertas**.</span><span class="sxs-lookup"><span data-stu-id="345f5-127">Go to **Alerts** \> **Manage advanced alerts**.</span></span>
+    
+3. <span data-ttu-id="345f5-128">Elija **Ir a la seguridad de la aplicación de Office 365 en la nube** para ir al portal de seguridad de la aplicación de nube de Office 365.</span><span class="sxs-lookup"><span data-stu-id="345f5-128">Choose **Go to Office 365 Cloud App Security** to go to the Office 365 Cloud App Security portal.</span></span> 
+    
+    ![En la seguridad &amp; centro de cumplimiento, elija Administrar alertas avanzadas para ir a la seguridad de la aplicación de nube de Office 365](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)
+  
+    <span data-ttu-id="345f5-130">Cuando vaya al portal de seguridad de la aplicación de nube de Office 365, la primera página que aparece es la página de directivas, que es similar a la siguiente imagen:</span><span class="sxs-lookup"><span data-stu-id="345f5-130">When you go to the Office 365 Cloud App Security portal, the first page you see is the Policies page, which resembles the following image:</span></span>
+    
+    ![Cuando vaya al portal de seguridad de la aplicación de nube de Office 365, empezar con la página de directivas](media/5cb8833c-4e08-438c-bab3-91b5106f6f3f.png)
+  
+## <a name="step-4-define-policies-and-set-up-alerts-amp-actions"></a><span data-ttu-id="345f5-132">Paso 4: Definir directivas y configurar las alertas de &amp; acciones</span><span class="sxs-lookup"><span data-stu-id="345f5-132">Step 4: Define policies and set up alerts &amp; actions</span></span>
+
+<span data-ttu-id="345f5-p105">Los administradores globales y los administradores de seguridad definición directivas de seguridad de la aplicación de nube de Office 365. Durante el proceso de definición de las directivas, también se establecen las alertas y acciones. Una alerta es una notificación basada en los criterios que aparece en una vista o se envía a través de correo electrónico.</span><span class="sxs-lookup"><span data-stu-id="345f5-p105">Global administrators and security administrators define policies in Office 365 Cloud App Security. During the process of defining policies, alerts and actions are also set. An alert is a criteria-based notification that appears in a view or is sent via email.</span></span> 
+  
+<span data-ttu-id="345f5-p106">Hay dos tipos de alertas de seguridad de la aplicación de Office 365 en la nube: alertas de detección de anomalías que detectan actividades sospechosas y alertas de actividad, que se definen para actividades que podrían ser atípicos para su organización. Las alertas de notificar a los administradores globales y los administradores de seguridad cuando hay una actividad en el entorno de Office 365 es poco habitual para su organización.</span><span class="sxs-lookup"><span data-stu-id="345f5-p106">There are two types of alerts in Office 365 Cloud App Security: anomaly detection alerts that detect suspicious activity, and activity alerts, which are defined for activities that might be atypical for your organization. Alerts notify global administrators and security administrators when there's an activity in your Office 365 environment that's unusual for your organization.</span></span>
+  
+<span data-ttu-id="345f5-138">Vea los siguientes recursos para obtener más información:</span><span class="sxs-lookup"><span data-stu-id="345f5-138">See the following resources to learn more:</span></span>
+  
+- [<span data-ttu-id="345f5-139">Directivas de actividad y alertas en Office 365 Cloud App Security</span><span class="sxs-lookup"><span data-stu-id="345f5-139">Activity policies and alerts in Office 365 Cloud App Security</span></span>](activity-policies-and-alerts.md)
+    
+- [<span data-ttu-id="345f5-140">Directivas de detección de anomalías en Office 365 Cloud App Security</span><span class="sxs-lookup"><span data-stu-id="345f5-140">Anomaly detection policies in Office 365 Cloud App Security</span></span>](anomaly-detection-policies-in-ocas.md)
+    
+- [<span data-ttu-id="345f5-141">Revisar y realizar acciones en las alertas de seguridad de la aplicación de nube de Office 365</span><span class="sxs-lookup"><span data-stu-id="345f5-141">Review and take action on Office 365 Cloud App Security alerts</span></span>](review-office-365-cas-alerts.md)
+    
+## <a name="step-5-learn-about-your-organizations-cloud-usage"></a><span data-ttu-id="345f5-142">Paso 5: Información sobre el uso de la nube de su organización</span><span class="sxs-lookup"><span data-stu-id="345f5-142">Step 5: Learn about your organization's cloud usage</span></span>
+
+<span data-ttu-id="345f5-p107">Como administrador global, Administrador de seguridad o lector de seguridad, información sobre el uso de la nube de su organización a través de informes y un panel de detección de la nube (también denominado detección de aplicaciones de productividad). Este panel muestra información acerca de los usuarios, aplicaciones, el tráfico web y los niveles de riesgo.</span><span class="sxs-lookup"><span data-stu-id="345f5-p107">As a global administrator, security administrator, or security reader, you can learn about your organization's cloud usage through reports and a Cloud Discovery dashboard (also called Productivity App Discovery). This dashboard shows information about users, apps, web traffic, and risk levels.</span></span>
+  
+![En el portal de Office 365 CAS, elija detectar \> panel de detección de la nube](media/61269290-fd82-4d4b-8045-aea1ebc82287.png)
+  
+<span data-ttu-id="345f5-146">Para ir al panel de detección de aplicaciones de productividad, en el portal de seguridad de la aplicación de nube de Office 365, elija **detectar** \> **panel de detección de la nube**.</span><span class="sxs-lookup"><span data-stu-id="345f5-146">To go to the Productivity App Discovery dashboard, in the Office 365 Cloud App Security portal, choose **Discover** \> **Cloud Discovery dashboard**.</span></span>
+  
+![En el portal de Office 365 CAS, elija detectar](media/73b5299f-94b5-49dd-a00f-154d188eb2c5.png)
+  
+<span data-ttu-id="345f5-p108">Para rellenar informes con la información que necesita, cargue los archivos de registro de los firewalls y servidores proxy de la organización. Para obtener más información, vea los siguientes recursos:</span><span class="sxs-lookup"><span data-stu-id="345f5-p108">To populate reports with the information you need, upload your log files from your organization's firewalls and proxies. To learn more, see the following resources:</span></span>
+  
+- [<span data-ttu-id="345f5-150">Crear informes de detección de aplicaciones en la seguridad de la aplicación de nube de Office 365</span><span class="sxs-lookup"><span data-stu-id="345f5-150">Create app discovery reports in Office 365 Cloud App Security</span></span>](create-app-discovery-reports-in-ocas.md)
+    
+- [<span data-ttu-id="345f5-151">Revisar los resultados de la detección de aplicaciones en Office 365 Cloud App Security</span><span class="sxs-lookup"><span data-stu-id="345f5-151">Review app discovery findings in Office 365 Cloud App Security</span></span>](review-app-discovery-findings-in-ocas.md)
+    
+## <a name="step-6-manage-apps-that-your-organization-is-using-to-access-office-365"></a><span data-ttu-id="345f5-152">Paso 6: Administración de aplicaciones que su organización usa para el acceso a Office 365</span><span class="sxs-lookup"><span data-stu-id="345f5-152">Step 6: Manage apps that your organization is using to access Office 365</span></span>
+
+<span data-ttu-id="345f5-p109">Como administrador global o administrador de seguridad, puede administrar las aplicaciones, como aplicaciones personalizadas o las aplicaciones de terceros, que usan las personas de su organización en sus dispositivos con Office 365. Por ejemplo, suponga que alguien ha descargado una aplicación personalizada que deseen usar con Office 365. Puede revisar las aplicaciones que usan las personas, prohibir aplicaciones no confiables o marcar aplicaciones como aprobados para el seguimiento. [Administrar permisos de aplicación con seguridad de la aplicación de nube de Office 365](manage-app-permissions-in-ocas.md).</span><span class="sxs-lookup"><span data-stu-id="345f5-p109">As a global administrator or security administrator, you can manage apps, such as custom apps or third-party apps, that people in your organization are using on their devices with Office 365. For example, suppose that someone has downloaded a custom app they want to use with Office 365. You can review the apps people are using, ban untrusted apps, or mark apps as approved for your tracking purposes. [Manage app permissions using Office 365 Cloud App Security](manage-app-permissions-in-ocas.md).</span></span>
+  
+## <a name="step-7-use-your-siem-server-with-office-365-cloud-app-security"></a><span data-ttu-id="345f5-157">Paso 7: Utilizar el servidor SIEM con seguridad de la aplicación de nube de Office 365</span><span class="sxs-lookup"><span data-stu-id="345f5-157">Step 7: Use your SIEM server with Office 365 Cloud App Security</span></span>
+
+<span data-ttu-id="345f5-p110">¿La organización usa un servidor de administración (SIEM) de eventos e información de seguridad? Office 365 ahora puede integrar la seguridad de la aplicación en la nube con su servidor SIEM para habilitar la supervisión centralizada de alertas. Integración con un servicio SIEM permite proteger mejor sus aplicaciones de nube mientras se mantiene el flujo de trabajo de seguridad habituales, automatización de procedimientos de seguridad y correlacionar entre basados en la nube y locales eventos. El agente de SIEM se ejecuta en su servidor, extrae las alertas de seguridad de la aplicación de Office 365 en la nube y transmite las alertas en el servidor SIEM. Vea [integración de SIEM con seguridad de la aplicación de nube de Office 365](integrate-your-siem-server-with-office-365-cas.md).</span><span class="sxs-lookup"><span data-stu-id="345f5-p110">Is your organization using a security information and event management (SIEM) server? Office 365 Cloud App Security can now integrate with your SIEM server to enable centralized monitoring of alerts. Integrating with a SIEM service allows you to better protect your cloud applications while maintaining your usual security workflow, automating security procedures and correlating between cloud-based and on-premises events. The SIEM agent runs on your server, pulls alerts from Office 365 Cloud App Security, and streams those alerts into your SIEM server. See [SIEM integration with Office 365 Cloud App Security](integrate-your-siem-server-with-office-365-cas.md).</span></span>
+  
+## <a name="next-steps"></a><span data-ttu-id="345f5-163">Pasos siguientes</span><span class="sxs-lookup"><span data-stu-id="345f5-163">Next steps</span></span>
+
+- [<span data-ttu-id="345f5-164">Activar Office 365 Cloud App Security</span><span class="sxs-lookup"><span data-stu-id="345f5-164">Turn on Office 365 Cloud App Security</span></span>](turn-on-office-365-cas.md)
+    
+- <span data-ttu-id="345f5-165">Intente nuestra [Guía del laboratorio de pruebas](https://docs.microsoft.com/office365/enterprise/cloud-app-security-for-your-office-365-dev-test-environment) para una experiencia práctica donde puede demostrar las eficaces características de seguridad de la aplicación de Office 365 en la nube y crear una prueba de concepto.</span><span class="sxs-lookup"><span data-stu-id="345f5-165">Try our [Test Lab Guide](https://docs.microsoft.com/office365/enterprise/cloud-app-security-for-your-office-365-dev-test-environment) for a hands-on experience where you can demonstrate the powerful features of Office 365 Cloud App Security and create a proof of concept.</span></span> 
+    
+
