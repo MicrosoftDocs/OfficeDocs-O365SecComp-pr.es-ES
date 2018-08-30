@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: adee4621-3626-4aec-aa53-00b35ff0d0b0
 description: 'Coloque un buzón en retención por juicio para conservar todo el contenido del buzón, incluidos los elementos eliminados y las versiones originales de los elementos modificados. '
-ms.openlocfilehash: 8f440f5fc0bc7dafd639bdf8136808aa2f3bd35f
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 9c2d5c77a604e4dbe6e1f1db75142d3bf5790618
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026447"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002849"
 ---
 # <a name="place-a-mailbox-on-litigation-hold"></a>Poner un buzón en retención por juicio
  
@@ -51,7 +53,7 @@ Coloque un buzón en retención por juicio para conservar todo el contenido del 
 
 1. Vaya a **Destinatarios** \> **Buzones de correo**.
     
-2. En la lista de buzones de usuarios, haga clic en el buzón que quiere colocar en retención por juicio y haga clic en **Editar**![Icono Editar](media/ITPro-EAC-EditIcon.png).
+2. En la lista de buzones de usuario, haga clic en el buzón de correo que desea colocar en suspensión por litigio y, a continuación, haga clic en **Editar** ![icono Editar](media/ITPro-EAC-EditIcon.gif).
     
 3. En la página de propiedades del buzón de correo, haga clic en **características de buzón.**
     
@@ -124,7 +126,7 @@ Para comprobar que un buzón se ha colocado correctamente en retención por juic
     
 1. Vaya a **Destinatarios** \> **Buzones de correo**.
     
-2. En la lista de buzones de usuario, haga clic en el buzón cuya configuración de retención por juicio quiere comprobar y, después, haga clic en **Editar**![Icono Editar](media/ITPro-EAC-EditIcon.png).
+2. En la lista de buzones de usuario, haga clic en el buzón de correo que se va a comprobar la configuración de la suspensión por litigio para y, a continuación, haga clic en **Editar** ![icono Editar](media/ITPro-EAC-EditIcon.gif).
     
 3. En la página de propiedades del buzón de correo, haga clic en **características de buzón.**
     
