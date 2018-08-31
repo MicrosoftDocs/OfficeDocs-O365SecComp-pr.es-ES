@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: ac11edd9-2da3-462d-8ea3-bbf9dbc6f948
 description: Cuando se ha comprometido el sistema de correo electrónico de un cliente por un ataque de malware o de correo no deseado y dicho sistema envía correo no deseado saliente por el servicio de filtrado hospedado, las direcciones IP de los servidores del centro de datos de Office 365 podrían incluirse en listas de bloqueados de terceros.
-ms.openlocfilehash: 856db53b105379ea3e606e39bf3c2612afa803c3
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 69548488f70944a319a449bfc4ac1cb1bffd7b1c
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026627"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23003139"
 ---
 # <a name="high-risk-delivery-pool-for-outbound-messages"></a>Grupo de entrega de alto riesgo para mensajes salientes
 

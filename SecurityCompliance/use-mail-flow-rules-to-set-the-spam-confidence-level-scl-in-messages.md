@@ -1,5 +1,5 @@
 ---
-title: Use mail flow rules to set the spam confidence level (SCL) in messages
+title: Use reglas de flujo de correo para establecer el nivel de confianza contra correo no deseado (SCL)
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -9,16 +9,18 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 4ccab17a-6d49-4786-aa28-92fb28893e99
 description: Puede crear una regla de transporte que establezca el nivel de confianza contra correo no deseado (SCL) de un mensaje de correo electrónico. El SCL es una medida de la probabilidad de que un mensaje sea correo no deseado. El correo no deseado son mensajes de correo electrónico no solicitados (y a menudo no deseados). El servicio realiza diferentes acciones en un mensaje según su clasificación SCL. Por ejemplo, tal vez desee evitar el filtrado de contenido de correo no deseado para los mensajes enviados por personas dentro de la organización porque confía en que un mensaje que envía internamente un colega no es correo no deseado. El uso de reglas de transporte para establecer el valor SCL de un mensaje le da un mayor control para tratar con el correo no deseado.
-ms.openlocfilehash: ad89230dac9de668488b40090d70d2b697a86edd
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 7abd0d1881374b1f2a4bd32ee480445f7683d1b3
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026737"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002899"
 ---
-# <a name="use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages"></a>Use mail flow rules to set the spam confidence level (SCL) in messages
+# <a name="use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages"></a>Use reglas de flujo de correo para establecer el nivel de confianza contra correo no deseado (SCL)
 
 Puede crear una regla de transporte que establezca el nivel de confianza contra correo no deseado (SCL) de un mensaje de correo electrónico. El SCL es una medida de la probabilidad de que un mensaje sea correo no deseado. El correo no deseado son mensajes de correo electrónico no solicitados (y a menudo no deseados). El servicio realiza diferentes acciones en un mensaje según su clasificación SCL. Por ejemplo, tal vez desee evitar el filtrado de contenido de correo no deseado para los mensajes enviados por personas dentro de la organización porque confía en que un mensaje que envía internamente un colega no es correo no deseado. El uso de reglas de transporte para establecer el valor SCL de un mensaje le da un mayor control para tratar con el correo no deseado. 
   
@@ -34,7 +36,7 @@ Puede crear una regla de transporte que establezca el nivel de confianza contra 
 
 1. En el Centro de administración de Exchange (EAC), elija **Flujo de correo** \> **Reglas**.
     
-2. Elija **Nuevo**![Agregar icono](media/ITPro-EAC-AddIcon.png) y seleccione **Crea una nueva regla**.
+2. Elija **Nuevo**![Agregar icono](media/ITPro-EAC-AddIcon.gif) y seleccione **Crea una nueva regla**.
     
 3. Especifique un nombre para la regla.
     

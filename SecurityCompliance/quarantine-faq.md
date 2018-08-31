@@ -9,14 +9,16 @@ ms.topic: reference
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: c440b2ac-cafa-4be5-ba4c-14278a7990ae
 description: Este tema contiene preguntas frecuentes y respuestas sobre la cuarentena hospedada.
-ms.openlocfilehash: 6aebeadc5155cbdb8cbeeb73e29c8b8cb0d53767
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: cc8a05b575e17dbc71d4b9e214cb29a4cafe8b6b
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027087"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23003199"
 ---
 # <a name="quarantine-faq"></a>Preguntas más frecuentes sobre la cuarentena
 
@@ -24,7 +26,7 @@ Este tema contiene preguntas frecuentes y respuestas sobre la cuarentena hospeda
   
  **Pregunta: ¿cómo administrar mensajes en cuarentena de malware en cuarentena?**
   
-Debe usar la seguridad &amp; centro de cumplimiento con el fin de ver y trabajar con los mensajes que se envían a cuarentena debido a que contienen malware. Para obtener más información, vea [los mensajes de correo electrónico de cuarentena en Office 365](https://support.office.com/en-US/article/Quarantine-email-messages-in-Office-365-4c234874-015e-4768-8495-98fcccfc639b).
+Debe usar la seguridad &amp; centro de cumplimiento con el fin de ver y trabajar con los mensajes que se envían a cuarentena debido a que contienen malware. Para obtener más información, vea [los mensajes de correo electrónico de cuarentena en Office 365](https://support.office.com/article/Quarantine-email-messages-in-Office-365-4c234874-015e-4768-8495-98fcccfc639b).
   
  **P. ¿Cómo se configura el servicio para enviar mensajes de correo no deseado en cuarentena a la cuarentena?**
   

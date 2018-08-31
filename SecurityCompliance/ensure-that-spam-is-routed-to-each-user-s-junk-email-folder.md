@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 0cbaccf8-4afc-47e3-a36d-a84598a55fb8
 description: Cuando los clientes de EOP reciben correo no deseado, estos mensajes se mueven de forma predeterminada a la carpeta de correo no deseado del destinatario. Para que esta acción funcione en los buzones locales, debe configurar reglas de transporte de Exchange en los servidores de concentradores o perimetrales locales para encontrar los encabezados de correo no deseado que agregó EOP. Las reglas de transporte establecen el nivel de confianza contra correo no deseado (SCL) que usa la propiedad SclJunkThreshold (del cmdlet Set-OrganizationConfig) para que el correo no deseado se mueva a la carpeta de correo no deseado de cada buzón.
-ms.openlocfilehash: 290a3cc6aed07cd4d91df65350fd49c9226a0d64
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 1b0a9e5ee39820baade714612ca0b0bdb7a81bb9
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026637"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002859"
 ---
 # <a name="ensure-that-spam-is-routed-to-each-users-junk-email-folder"></a>Asegurarse de que el correo no deseado se enruta a la carpeta de correo no deseado de cada usuario
 

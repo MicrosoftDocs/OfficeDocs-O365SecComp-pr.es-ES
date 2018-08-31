@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 description: Configuración de filtro de spam básico incluye seleccionando la acción que se realizará en los mensajes que se identifican como correo no deseado y elegir si va a filtrar los mensajes que se escriben en idiomas específicos o enviados desde ciertos países o regiones.
-ms.openlocfilehash: b0a5fa1a5640bd0baab68c29d8098059a6025f7d
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 3e24a69dacc18272baa710c18492759f67583f4f
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026537"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002969"
 ---
 # <a name="configure-your-spam-filter-policies"></a>Configurar las directivas de filtro de correo no deseado
   
@@ -26,7 +28,6 @@ Configuración de filtro de spam básico incluye seleccionando la acción que se
 > Para los clientes de Exchange Online Protection (EOP) independiente: de forma predeterminada, los filtros de spam de elevación de privilegios envían los mensajes detectados como correo no deseado a la carpeta de correo no deseado de cada destinatario. Sin embargo, con el fin de asegurarse de que la acción de **mover el mensaje a la carpeta correo no deseado** funciona para los buzones de correo local, debe configurar las reglas de transporte de Exchange en los servidores locales para detectar los encabezados de spam que se agregan mediante la elevación de privilegios. Para obtener información detallada, vea [Asegúrese de que el correo no deseado se enrute a la carpeta de correo no deseado de cada usuario](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). 
   
 ## <a name="what-you-must-know-before-you-begin"></a>Lo que debe saber antes de empezar
-<a name="sectionSection0"> </a>
 
 Tiempo estimado para finalizar: 30 minutos
   
@@ -35,7 +36,6 @@ Debe tener asignados los permisos puede llevar a cabo estos procedimientos. Para
 Para obtener información acerca de los métodos abreviados de teclado aplicables a los procedimientos de este tema, consulte **Keyboard shortcuts in Exchange 2013**.
   
 ## <a name="use-the-exchange-admin-center-eac-to-configure-spam-filter-policies"></a>Usar el Centro de administración de Exchange (EAC) para configurar directivas de filtro de correo no deseado
-<a name="sectionSection1"> </a>
 
 1. En el Centro de administración de Exchange (EAC), vaya a **Protección** \> **Filtro de correo no deseado**.
     
@@ -43,7 +43,7 @@ Para obtener información acerca de los métodos abreviados de teclado aplicable
     
   - Haga doble clic en la directiva predeterminada para editar esta directiva de toda la compañía.
     
-  - Haga clic en el icono ![Agregar icono](media/ITPro-EAC-AddIcon.png) **Nueva** para crear una nueva directiva personalizada de filtro de correo no deseado que se pueda aplicar a usuarios, grupos y dominios de la organización. También puede editar directivas personalizadas existentes haciendo doble clic en ellas. 
+  - Haga clic en el icono ![Agregar icono](media/ITPro-EAC-AddIcon.gif) **Nueva** para crear una nueva directiva personalizada de filtro de correo no deseado que se pueda aplicar a usuarios, grupos y dominios de la organización. También puede editar directivas personalizadas existentes haciendo doble clic en ellas. 
     
 3. Para directivas personalizadas, especifique un nombre para esta directiva. De forma opcional, también puede especificar una descripción más detallada. No se puede cambiar el nombre de la directiva predeterminada.
     
@@ -85,27 +85,27 @@ Para obtener información acerca de los métodos abreviados de teclado aplicable
     
 6. En la página **Listas de bloqueados**, puede especificar entradas, como remitentes o dominios, que siempre se marcarán como correo no deseado. El servicio aplicará la acción de correo no deseado de alta confianza configurada en el correo electrónico que coincida con estas entradas. 
     
-  - Agregue remitentes no deseados a la lista de bloqueados del remitente. Haga clic en **Agregar**![Agregar icono](media/ITPro-EAC-AddIcon.png) y, a continuación, en el cuadro de diálogo de selección, agregue las direcciones del remitente que desea bloquear. Puede separar varias entradas con un punto y coma o una nueva línea. Haga clic en **Aceptar** para volver a la página **Listas de bloqueados**. 
+  - Agregue remitentes no deseados a la lista de bloqueados del remitente. Haga clic en **Agregar**![Agregar icono](media/ITPro-EAC-AddIcon.gif) y, a continuación, en el cuadro de diálogo de selección, agregue las direcciones del remitente que desea bloquear. Puede separar varias entradas con un punto y coma o una nueva línea. Haga clic en **Aceptar** para volver a la página **Listas de bloqueados**. 
     
-  - Agregue dominios no deseados a la lista de bloqueados del dominio. Haga clic en **Agregar**![Agregar icono](media/ITPro-EAC-AddIcon.png) y, a continuación, en el cuadro de diálogo de selección, agregue los dominios que desea bloquear. Puede separar varias entradas con un punto y coma o una nueva línea. Haga clic en **Aceptar** para volver a la página **Listas de bloqueados**. 
+  - Agregue dominios no deseados a la lista de bloqueados del dominio. Haga clic en **Agregar**![Agregar icono](media/ITPro-EAC-AddIcon.gif) y, a continuación, en el cuadro de diálogo de selección, agregue los dominios que desea bloquear. Puede separar varias entradas con un punto y coma o una nueva línea. Haga clic en **Aceptar** para volver a la página **Listas de bloqueados**. 
     
     > [!CAUTION]
     > Si bloquea dominios de primer nivel, es probable que el correo electrónico que no desea se marque como correo no deseado. 
   
 7. En la página **Listas de permitidos**, puede especificar entradas, como remitentes o dominios, que siempre se entregarán en la Bandeja de entrada. El filtro contra correo no deseado no procesa el correo electrónico de estas entradas. 
     
-  - Agregue remitentes de confianza a la lista de permitidos del remitente. Haga clic en **Agregar**![Agregar icono](media/ITPro-EAC-AddIcon.png) y, a continuación, en el cuadro de diálogo de selección, agregue las direcciones del remitente que desea permitir. Puede separar varias entradas con un punto y coma o una nueva línea. Haga clic en Aceptar para volver a la página **Listas de permitidos**. 
+  - Agregue remitentes de confianza a la lista de permitidos del remitente. Haga clic en **Agregar**![Agregar icono](media/ITPro-EAC-AddIcon.gif) y, a continuación, en el cuadro de diálogo de selección, agregue las direcciones del remitente que desea permitir. Puede separar varias entradas con un punto y coma o una nueva línea. Haga clic en Aceptar para volver a la página **Listas de permitidos**. 
     
-  - Agregue dominios de confianza a la lista de permitidos del dominio. Haga clic en **Agregar**![Agregar icono](media/ITPro-EAC-AddIcon.png) y, a continuación, en el cuadro de diálogo de selección, agregue los dominios que desea permitir. Puede separar varias entradas con un punto y coma o una nueva línea. Haga clic en Aceptar para volver a la página **Listas de permitidos**. 
+  - Agregue dominios de confianza a la lista de permitidos del dominio. Haga clic en **Agregar**![Agregar icono](media/ITPro-EAC-AddIcon.gif) y, a continuación, en el cuadro de diálogo de selección, agregue los dominios que desea permitir. Puede separar varias entradas con un punto y coma o una nueva línea. Haga clic en Aceptar para volver a la página **Listas de permitidos**. 
     
     > [!CAUTION]
     > Si permite dominios de primer nivel, es probable que el correo no deseado se entregue en una bandeja de entrada. 
   
 8. En la página de **Spam internacional** puede filtrar los mensajes de correo electrónico que se escriben en idiomas específicos o enviados desde ciertos países o regiones. Puede configurar hasta 250 diferentes regiones e idiomas diferentes 86. El servicio aplicará la acción configurada como correo no deseado de alta confianza. 
     
-1. Seleccione la casilla de verificación **filtrar los mensajes de correo electrónico escritos en los siguientes idiomas** para habilitar esta funcionalidad. Haga clic en ![icono Agregar](media/ITPro-EAC-AddIcon.png)y, a continuación, en el cuadro de diálogo de selección, realice sus elecciones (se admite la selección múltiple). Por ejemplo, si selecciona para filtrar mensajes escritos en árabe (AR) y **el mensaje en cuarentena** es la acción configurada para los mensajes de spam de alta confianza, todos los mensajes escritos en árabe se pondrán en cuarentena. Haga clic en **Aceptar** para volver al panel de **Spam internacional** . 
+1. Seleccione la casilla de verificación **filtrar los mensajes de correo electrónico escritos en los siguientes idiomas** para habilitar esta funcionalidad. Haga clic en ![icono Agregar](media/ITPro-EAC-AddIcon.gif)y, a continuación, en el cuadro de diálogo de selección, realice sus elecciones (se admite la selección múltiple). Por ejemplo, si selecciona para filtrar mensajes escritos en árabe (AR) y **el mensaje en cuarentena** es la acción configurada para los mensajes de spam de alta confianza, todos los mensajes escritos en árabe se pondrán en cuarentena. Haga clic en **Aceptar** para volver al panel de **Spam internacional** . 
     
-2. Active la casilla de verificación **filtrar los mensajes de correo electrónico enviados desde los siguientes países o regiones** para habilitar esta funcionalidad. Haga clic en ![icono Agregar](media/ITPro-EAC-AddIcon.png)y, a continuación, en el cuadro de diálogo de selección, realice sus elecciones (se admite la selección múltiple). Por ejemplo, si selecciona para filtrar todos los mensajes que se envían desde Australia (AU), y **el mensaje en cuarentena** es la acción configurada para mensajes seguros de alta confianza y, a continuación, todos los mensajes que se envía desde Australia se pondrán en cuarentena. Haga clic en **Aceptar** para volver al panel de **Spam internacional** . 
+2. Active la casilla de verificación **filtrar los mensajes de correo electrónico enviados desde los siguientes países o regiones** para habilitar esta funcionalidad. Haga clic en ![icono Agregar](media/ITPro-EAC-AddIcon.gif)y, a continuación, en el cuadro de diálogo de selección, realice sus elecciones (se admite la selección múltiple). Por ejemplo, si selecciona para filtrar todos los mensajes que se envían desde Australia (AU), y **el mensaje en cuarentena** es la acción configurada para mensajes seguros de alta confianza y, a continuación, todos los mensajes que se envía desde Australia se pondrán en cuarentena. Haga clic en **Aceptar** para volver al panel de **Spam internacional** . 
     
     > [!NOTE]
     > De manera predeterminada, si no se seleccionan opciones internacionales de correo no deseado, el servicio realiza un filtrado normal de correo no deseado en los mensajes enviados en todos los idiomas y desde todas las regiones. Los mensajes se analizan y las acciones configuradas se aplican si se determina que el mensaje es correo no deseado o correo no deseado de confianza alta. 
@@ -143,10 +143,9 @@ Para obtener información acerca de los métodos abreviados de teclado aplicable
 11. Haga clic en **Guardar**. En el panel de la derecha, aparece un resumen de la configuración de la directiva.
     
 > [!TIP]
->  Puede seleccionar o desactive las casillas de verificación en la columna **activado** para habilitar o deshabilitar las directivas personalizadas. De forma predeterminada, se habilitan todas las directivas. No se puede deshabilitar la directiva predeterminada. > Para eliminar una directiva personalizada, seleccione la directiva, haga clic en el ![icono de eliminación](media/ITPro-EAC-DeleteIcon.png) icono **Eliminar** y, a continuación, confirme que desea eliminar la directiva. No se puede eliminar la directiva predeterminada. > Directivas personalizadas siempre tienen prioridad sobre la directiva predeterminada. Directivas personalizadas que se ejecutan en el orden inverso en el que los creó (de más antiguo a más reciente), pero puede cambiar la prioridad (orden de marcha) de sus directivas personalizadas haciendo clic en el ![seguridad el icono de flecha](media/ITPro-EAC-UpArrowIcon.png) flecha arriba y ![icono de la flecha hacia abajo](media/ITPro-EAC-DownArrowIcon.png) hacia abajo flecha. La directiva que tiene una **prioridad** de **0** se ejecutará en primer lugar, seguido de **1**, a continuación, **2**y así sucesivamente. 
+>  Puede seleccionar o desactive las casillas de verificación en la columna **activado** para habilitar o deshabilitar las directivas personalizadas. De forma predeterminada, se habilitan todas las directivas. No se puede deshabilitar la directiva predeterminada. > Para eliminar una directiva personalizada, seleccione la directiva, haga clic en el ![icono de eliminación](media/ITPro-EAC-DeleteIcon.gif) icono **Eliminar** y, a continuación, confirme que desea eliminar la directiva. No se puede eliminar la directiva predeterminada. > Directivas personalizadas siempre tienen prioridad sobre la directiva predeterminada. Directivas personalizadas que se ejecutan en el orden inverso en el que los creó (de más antiguo a más reciente), pero puede cambiar la prioridad (orden de marcha) de sus directivas personalizadas haciendo clic en el ![seguridad el icono de flecha](media/ITPro-EAC-UpArrowIcon.gif) flecha arriba y ![icono de la flecha hacia abajo](media/ITPro-EAC-DownArrowIcon.gif) hacia abajo flecha. La directiva que tiene una **prioridad** de **0** se ejecutará en primer lugar, seguido de **1**, a continuación, **2**y así sucesivamente. 
   
 ## <a name="use-remote-powershell-to-configure-spam-filter-policies"></a>Usar PowerShell remoto para configurar directivas de filtro de correo no deseado
-<a name="sectionSection2"> </a>
 
 También puede configurar y aplicar directivas de filtro de correo no deseado en PowerShell. Para obtener información sobre cómo usar Windows PowerShell para conectarse a Exchange Online, vea [Connect to Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554). Para obtener información sobre cómo usar Windows PowerShell para conectarse a Exchange Online Protection, vea [Connect to Exchange Online Protection PowerShell](https://go.microsoft.com/fwlink/p/?linkid=627290).
   
@@ -161,7 +160,6 @@ También puede configurar y aplicar directivas de filtro de correo no deseado en
 Para aplicar una directiva personalizada de filtro de correo no deseado a usuarios, grupos o dominios, use el cmdlet [New-HostedContentFilterRule](http://technet.microsoft.com/library/2df13ba9-1eb0-4da3-bd72-a79d5fa15e26.aspx) (para crear una nueva regla de filtro que se pueda aplicar a directivas personalizadas) o el cmdlet [Set-HostedContentFilterRule](http://technet.microsoft.com/library/ba259260-ffd3-43f3-8ef4-9d8659679d02.aspx) (para editar una regla de filtro existente que se pueda aplicar a directivas personalizadas). Use el cmdlet [Enable-HostedContentFilterRule](http://technet.microsoft.com/library/354ece28-dcde-4b5f-88ed-475115e7ea78.aspx) o el cmdlet [Disable-HostedContentFilterRule](http://technet.microsoft.com/library/c1f8dafc-ef5d-47e3-b0fb-71a88e145fc5.aspx) para habilitar o deshabilitar la regla aplicada a la directiva. 
   
 ## <a name="how-do-you-know-this-worked"></a>¿Cómo saber si el proceso se ha completado correctamente?
-<a name="sectionSection3"> </a>
 
 Para garantizar que el correo no deseado se detecte adecuadamente y se tomen las medidas necesarias, puede enviar un mensaje GTUBE a través del servicio. De manera similar al archivo de prueba del antivirus EICAR, GTUBE ofrece una prueba con la cual puede comprobar si el servicio detecta correo no deseado entrante. El filtro de correo no deseado siempre debe detectar un mensaje GTUBE como correo no deseado y las medidas que se toman respecto del mensaje deben coincidir con su configuración.
   
@@ -172,16 +170,8 @@ XJS*C4JDBQADN1.NSBN3*2IDNEN*GTUBE-STANDARD-ANTI-UBE-TEST-EMAIL*C.34X
 ```
 
 ## <a name="fine-tuning-your-spam-filter-policy-to-prevent-false-positives-and-false-negatives"></a>Ajustar la directiva de filtro de correo no deseado para evitar falsos positivos y falsos negativos
-<a name="sectionSection4"> </a>
 
 Puede habilitar las opciones avanzadas de filtrado de correo no deseado si quiere usar un filtrado de correo no deseado más agresivo. Para obtener información sobre la configuración genérica de correo no deseado que se aplica a toda la organización, consulte [Usar listas seguras y otras técnicas para evitar el marcado erróneo de mensajes como correo no deseado](https://go.microsoft.com/fwlink/p/?LinkId=534224) o [Bloquear el correo no deseado con el filtro de correo no deseado de Office 365 para evitar los problemas de falso negativo](https://go.microsoft.com/fwlink/p/?LinkId=534225). Esta información es útil si tiene control de nivel de administrador y quiere evitar falsos positivos o falsos negativos.
-  
-## <a name="new-to-office-365"></a>¿Es la primera vez que usa Office 365?
-<a name="sectionSection5"> </a>
-
-||
-|:-----|
-|![El icono reducido de LinkedIn Learning](media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **¿Es la primera vez que usa Office 365?**         LinkedIn Learning pone a su disposición vídeos gratuitos de cursos de **Office 365 admins and IT pros**. |
    
 ## <a name="for-more-information"></a>Más información
 <a name="sectionSection6"> </a>

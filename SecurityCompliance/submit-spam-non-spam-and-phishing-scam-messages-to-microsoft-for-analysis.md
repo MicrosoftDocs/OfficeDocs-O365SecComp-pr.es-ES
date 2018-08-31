@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 description: 'Usted y sus usuarios pueden enviar mensajes de falso negativo y falso positivo correo no deseado a Microsoft para su análisis. '
-ms.openlocfilehash: 1ae33fc7208ab679b7eeb148007bb3b676533e55
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 8966dcb513c727527cc809bb2fde5b3181dc94a2
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026427"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002869"
 ---
 # <a name="submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis"></a>Envío de mensajes de correo no deseado, mensajes seguros y mensajes de correo de suplantación de identidad (phishing) a Microsoft para su análisis
 
@@ -115,7 +117,7 @@ La evaluación del correo no deseado es un proceso continuo que se aplica indepe
 ## <a name="for-more-information"></a>Más información
 <a name="sectionSection4"> </a>
 
-[Protección contra correo no deseado y antimalware](http://technet.microsoft.com/library/93c6c227-7442-4293-b64d-ec8f15c928db.aspx)
+[Protección contra correo no deseado y malware](http://technet.microsoft.com/library/93c6c227-7442-4293-b64d-ec8f15c928db.aspx)
   
 [Cómo ayudar a garantizar que un mensaje no se marque como correo no deseado](https://go.microsoft.com/fwlink/p/?LinkId=534224)
   
