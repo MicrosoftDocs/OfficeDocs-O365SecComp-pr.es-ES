@@ -1,5 +1,5 @@
 ---
-title: Use reglas de flujo de correo para ver lo que los usuarios son informes a Microsoft
+title: Use reglas de flujo de correo para ver lo que los usuarios reportan a Microsoft
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -8,16 +8,18 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 8401f520-8e7c-467b-9e06-4a9fdb2ba548
 description: Puede crear una regla de transporte de Exchange para impedir que los usuarios enviar mensajes de correo electrónico a Microsoft para su análisis y usarlas en sus propios procesos de seguridad
-ms.openlocfilehash: 6c6af23e6a5f345e26c7dc09c898f2978ea51a5f
-ms.sourcegitcommit: df1e9590a9fa152fa776f16d9b25c180ba7198f3
+ms.openlocfilehash: 92acabe133ef154d880104c20aeed7572ea87d41
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "22122590"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002631"
 ---
-# <a name="use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft"></a>Use reglas de flujo de correo para ver lo que los usuarios son informes a Microsoft
+# <a name="use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft"></a>Use reglas de flujo de correo para ver lo que los usuarios reportan a Microsoft
 
 Hay varias maneras que puede enviar mensajes negativos falsos positivos y false a Microsoft para su análisis. Como administrador, puede usar las reglas de flujo de correo para ver lo que los usuarios son informes a Microsoft como correo no deseado, que no sean de correo no deseado y las estafas de suplantación de identidad. Para obtener más información, vea [enviar spam, no spam y los mensajes de estafas de suplantación de identidad a Microsoft para su análisis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md). Por el contrario, puede crear una regla de transporte de Exchange para impedir que los usuarios enviar mensajes de correo electrónico a Microsoft para su análisis y usarlas en sus propios procesos de seguridad.
   
@@ -33,16 +35,16 @@ Para obtener información acerca de los métodos abreviados de teclado aplicable
 
 1. En el EAC, vaya a **Flujo de correo** \> **Reglas**.
     
-2. Click ![Agregar icono](media/ITPro-EAC-AddIcon.png) and then select **Create a new rule**.
+2. Click ![Agregar icono](media/ITPro-EAC-AddIcon.gif) and then select **Create a new rule**.
     
 3. Give the rule a name and then click **More options**.
     
 4. Under **Apply this rule if**, select **The recipient** and then choose **address includes any of these words**.
     
 5. In the **specify words or phrases** box, do the following: 
-    - Tipo de `abuse@messaging.microsoft.com` y, a continuación, haga clic en ![icono Agregar](media/ITPro-EAC-AddIcon.png)y, a continuación, escriba `junk@office365.microsoft.com` y, a continuación, haga clic en ![icono Agregar](media/ITPro-EAC-AddIcon.png). Estas direcciones de correo electrónico se utilizan para enviar mensajes falsos negativos a Microsoft.
-    - Tipo de `phish@office365.microsoft.com` y, a continuación, haga clic en ![icono Agregar](media/ITPro-EAC-AddIcon.png). Esta dirección de correo electrónico se usa para enviar mensajes de suplantación de identidad perdidas a Microsoft.
-    - Tipo de `false_positive@messaging.microsoft.com` y, a continuación, haga clic en ![icono Agregar](media/ITPro-EAC-AddIcon.png)y, a continuación, escriba `not_junk@office365.microsoft.com` y, a continuación, haga clic en ![icono Agregar](media/ITPro-EAC-AddIcon.png). Estas direcciones de correo electrónico se utilizan para enviar mensajes falsos positivos a Microsoft.
+    - Tipo de `abuse@messaging.microsoft.com` y, a continuación, haga clic en ![icono Agregar](media/ITPro-EAC-AddIcon.gif)y, a continuación, escriba `junk@office365.microsoft.com` y, a continuación, haga clic en ![icono Agregar](media/ITPro-EAC-AddIcon.gif). Estas direcciones de correo electrónico se utilizan para enviar mensajes falsos negativos a Microsoft.
+    - Tipo de `phish@office365.microsoft.com` y, a continuación, haga clic en ![icono Agregar](media/ITPro-EAC-AddIcon.gif). Esta dirección de correo electrónico se usa para enviar mensajes de suplantación de identidad perdidas a Microsoft.
+    - Tipo de `false_positive@messaging.microsoft.com` y, a continuación, haga clic en ![icono Agregar](media/ITPro-EAC-AddIcon.gif)y, a continuación, escriba `not_junk@office365.microsoft.com` y, a continuación, haga clic en ![icono Agregar](media/ITPro-EAC-AddIcon.gif). Estas direcciones de correo electrónico se utilizan para enviar mensajes falsos positivos a Microsoft.
     - Click **ok**.
     
 6. Bajo, **siga este procedimiento**, seleccione **CCO del mensaje a...** y, a continuación y, a continuación, seleccione los buzones de correo que desea reciben los mensajes. 

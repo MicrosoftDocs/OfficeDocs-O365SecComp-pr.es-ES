@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: 'Normalmente, se utiliza un conector para enrutar los mensajes desde la organización de Office 365 para sus instalaciones en el entorno de mensajería. También puede usar un conector para enrutar los mensajes de Office 365 para una organización asociada. Cuando Office 365 no puede entregar estos mensajes a través del conector, está en cola en Office 365. '
-ms.openlocfilehash: 495d73524afb3ab3a34fd2f1f5f4cd747481f9d8
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 4effbb783d6ba8f3b33d0aed446e031193d2f2a3
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027627"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002733"
 ---
 # <a name="mail-flow-intelligence-in-office-365"></a>Inteligencia de flujo de correo en Office 365
   
@@ -39,7 +41,6 @@ Office 365 genera un error cuando no se puede entregar un mensaje mediante el us
 - [Código de error: error de validación de certificado 450 4.7.320](mail-flow-intelligence-in-office-365.md#ErrorCode47320)
     
 ## <a name="error-code-450-44312-dns-query-failed"></a>Código de error: error en la consulta DNS 450 4.4.312
-<a name="ErrorCode44312"> </a>
 
 Normalmente, este error significa que Office 365 intentó conectarse al host inteligente que se especifica en el conector, pero la consulta DNS para buscar la dirección IP de host inteligente direcciones no se pudo. Las posibles causas de este error son:
   
@@ -54,7 +55,6 @@ Debe trabajar con el servicio de hospedaje de DNS para corregir el problema DNS.
 Si el error es desde la organización de socios (por ejemplo, un 3 º parte en la nube proveedor de servicios), debe ponerse en contacto con su socio para corregir el problema.
   
 ## <a name="error-code-450-44315-connection-timed-out"></a>Código de error: 450 4.4.315 conexión agotó el tiempo de espera
-<a name="ErrorCode44315"> </a>
 
 Normalmente, esto significa que Office 365 no se puede conectar al servidor de mensajería de destino. Los detalles del error, explican el problema. Por ejemplo:
   
@@ -67,7 +67,6 @@ Averiguar qué escenario se aplica a usted y realice las correcciones necesarias
 Si el error es desde la organización de socios (por ejemplo, un 3 º parte en la nube proveedor de servicios), debe ponerse en contacto con su socio para corregir el problema.
   
 ## <a name="error-code-450-44316-connection-refused"></a>Código de error: 450 4.4.316 ha rechazado la conexión
-<a name="ErrorCode44316"> </a>
 
 Normalmente, este error significa que Office 365 encontró un error de conexión al intentar conectarse al servidor de mensajería de destino. Una causa común de este error es que el servidor de seguridad está bloqueando las conexiones de direcciones IP de Office 365. O bien, este error podría ser por diseño si haya terminado de migrar su local mensajería del sistema para Office 365 y apague su local en el entorno de mensajería..
   
@@ -75,7 +74,7 @@ Normalmente, este error significa que Office 365 encontró un error de conexión
     
 - Si no hay más mensajes deben entregarse a su entorno local, haga clic en **corregir ahora** en la alerta para que Office 365 puede rechazar inmediatamente los mensajes con destinatarios no válidos. Esto permite reducir el riesgo de superación del límite de cuota de la organización para los destinatarios no válidos, lo que podrían afectar la entrega del mensaje normal. O bien, puede usar las siguientes instrucciones para solucionar el problema de forma manual: 
     
-  - Deshabilitar o eliminar el conector de Office 365 a su entorno local: Centro de administración de Office 365 \> **centros de administración** \> **Exchange** \> **flujo de correo** \> **conectores** \> seleccione la conector con el valor **de** **Office 365** y **para** el valor de **servidor de correo electrónico de la organización**. Eliminar el conector haciendo clic en **Eliminar**![icono de eliminación](media/ITPro-EAC-DeleteIcon.png), o deshabilitar el conector haciendo clic en **Editar**![icono Editar](media/ITPro-EAC-EditIcon.png) y desactivar **activarla**.
+  - Deshabilitar o eliminar el conector de Office 365 a su entorno local: Centro de administración de Office 365 \> **centros de administración** \> **Exchange** \> **flujo de correo** \> **conectores** \> seleccione la conector con el valor **de** **Office 365** y **para** el valor de **servidor de correo electrónico de la organización**. Eliminar el conector haciendo clic en **Eliminar**![icono de eliminación](media/ITPro-EAC-DeleteIcon.gif), o deshabilitar el conector haciendo clic en **Editar** ![icono Editar](media/ITPro-EAC-EditIcon.gif) y desactivar **activarla**.
     
   - Cambiar el dominio aceptado en Office 365 que está asociado con su local entorno de mensajería de **Retransmisión interna** en **autoritativo**. Para obtener instrucciones, vea [Administrar dominios aceptados en Exchange Online](http://technet.microsoft.com/library/0fc0ecc0-e133-48fa-9d72-cb4793a73960.aspx).
     
@@ -84,7 +83,6 @@ Normalmente, este error significa que Office 365 encontró un error de conexión
 Si el error es desde la organización de socios (por ejemplo, un 3 º parte en la nube proveedor de servicios), debe ponerse en contacto con su socio para corregir el problema.
   
 ## <a name="error-code-450-44317-cannot-connect-to-remote-server"></a>Código de error: 450 4.4.317 no se puede conectar al servidor remoto
-<a name="ErrorCode44317"> </a>
 
 Normalmente, este error significa que Office 365 conectado al servidor de mensajería de destino, pero el servidor responde con un error inmediato, o no cumple los requisitos de conexión. Los detalles del error, explican el problema. Por ejemplo:
   
@@ -97,7 +95,6 @@ Compruebe la configuración de TLS y certificados en sus instalaciones en servid
 Si el error es desde la organización de socios (por ejemplo, un 3 º parte en la nube proveedor de servicios), debe ponerse en contacto con su socio para corregir el problema.
   
 ## <a name="error-code-450-44318-connection-was-closed-abruptly"></a>Código de error: 450 4.4.318 conexión se ha cerrado de manera repentina
-<a name="ErrorCode44318"> </a>
 
 Normalmente, este error significa que Office 365 es tiene dificultades para comunicarse con sus instalaciones en el entorno de mensajería, por lo que se quitó la conexión. Las posibles causas de este error son:
   
@@ -112,7 +109,6 @@ Averiguar qué escenario se aplica a usted y realice las correcciones necesarias
 Si el error es desde la organización de socios (por ejemplo, un 3 º parte en la nube proveedor de servicios), debe ponerse en contacto con su socio para corregir el problema.
   
 ## <a name="error-code-450-47320-certificate-validation-failed"></a>Código de error: error de validación de certificado 450 4.7.320
-<a name="ErrorCode47320"> </a>
 
 Normalmente, este error significa que Office 365 encontró un error al intentar validar el certificado del servidor de mensajería de destino. Los detalles del error, explican el error. Por ejemplo:
   
@@ -127,7 +123,6 @@ Corregir el certificado o el conector para que se entregue mensajes en cola en O
 Si el error es desde la organización de socios (por ejemplo, un 3 º parte en la nube proveedor de servicios), debe ponerse en contacto con su socio para corregir el problema.
   
 ## <a name="other-error-codes"></a>Otros códigos de error
-<a name="sectionSection6"> </a>
 
 Office 365 está teniendo dificultades para la entrega de mensajes su local o asociados al servidor de mensajería. Use la información de **servidor de destino** en el error para examinar el problema en su entorno, o modificar el conector si se ha producido un error de configuración. 
   

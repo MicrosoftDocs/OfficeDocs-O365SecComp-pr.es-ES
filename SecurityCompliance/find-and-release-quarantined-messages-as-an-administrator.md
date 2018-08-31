@@ -9,20 +9,22 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: ab95bf17-bb09-4dd1-9990-ddd02ddecf05
 description: En este tema se describe cómo los administradores de Exchange Online y Exchange Online Protection (EOP) pueden buscar, versión e informar sobre los mensajes en cuarentena en el centro de administración de Exchange (EAC).
-ms.openlocfilehash: 5ebe65bf703087e8ad4bace827d84833eddb038f
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: a8c450471d2fe627346b5bea8db50b91d67ffd3f
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027487"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23003279"
 ---
 # <a name="find-and-release-quarantined-messages-as-an-administrator"></a>Buscar y liberar mensajes en cuarentena como un administrador
 
 En este tema se describe la forma en que los administradores de Exchange Online y Exchange Online Protection (EOP) pueden buscar, liberar e informar sobre mensajes que residen en la cuarentena en el Centro de admin. de Exchange (EAC). Office 365 envía mensajes a la cuarentena ya sea porque los identifica como correo no deseado o porque coinciden con una regla de transporte. 
   
-Usar la seguridad &amp; centro de cumplimiento en lugar del CEF para completar cualquiera de estas tareas, así como ver y trabajar con los mensajes que se envían a cuarentena debido a que contienen malware. Para obtener más información, vea [los mensajes de correo electrónico de cuarentena en Office 365](https://support.office.com/en-US/article/Quarantine-email-messages-in-Office-365-4c234874-015e-4768-8495-98fcccfc639b).
+Usar la seguridad &amp; centro de cumplimiento en lugar del CEF para completar cualquiera de estas tareas, así como ver y trabajar con los mensajes que se envían a cuarentena debido a que contienen malware. Para obtener más información, vea [los mensajes de correo electrónico de cuarentena en Office 365](https://support.office.com/article/Quarantine-email-messages-in-Office-365-4c234874-015e-4768-8495-98fcccfc639b).
   
 Los mensajes en cuarentena figuran en la página **cuarentena** de EAC. De forma predeterminada, aparecen ordenados del más reciente al más antiguo en el campo **RECIBIDOS**. También se muestran los valores de **REMITENTE**, **ASUNTO** y **EXPIRA** de cada mensaje. Puede ordenar por cualquiera de estos campos haciendo clic en sus encabezados. Si hace clic en un encabezado de columna por segunda vez, se invertirá el orden. La página **cuarentena** puede mostrar como máximo 500 mensajes. 
   
@@ -158,7 +160,7 @@ Haga clic en **Liberar el mensaje seleccionado y permitir el remitente** en la l
     
 4. Haga clic en **publicar**. 
     
-Si hace clic en el icono **Actualizar**![Icono Actualizar](media/ITPro-EAC-RefreshIcon.png) para actualizar los datos y, a continuación, hace doble clic en el mensaje, verá que se ha liberado para los destinatarios previstos. 
+Si hace clic en el icono **Actualizar**![Icono Actualizar](media/ITPro-EAC-RefreshIcon.gif) para actualizar los datos y, a continuación, hace doble clic en el mensaje, verá que se ha liberado para los destinatarios previstos. 
   
 ### <a name="release-one-or-more-quarantined-messages-to-all-recipients"></a>Liberar un mensajes en cuarentena (o más) para todos los destinatarios
 <a name="Releaseoneormorequarantinedmessagestoallrecipients"> </a>
@@ -187,7 +189,7 @@ Si hace clic en el icono **Actualizar**![Icono Actualizar](media/ITPro-EAC-Refre
 > [!TIP]
 > Para ayudar a garantizar que un mensaje no se marque como correo no deseado, siga los pasos en [Cómo ayudar a garantizar que un mensaje no se marque como correo no deseado](how-to-help-ensure-that-a-message-isn-t-marked-as-spam.md). 
   
-Si hace clic en el icono **Actualizar**![Icono Actualizar](media/ITPro-EAC-RefreshIcon.png) para actualizar los datos y, a continuación, hace doble clic en el mensaje, verá que se ha liberado para los destinatarios previstos. 
+Si hace clic en el icono **Actualizar**![Icono Actualizar](media/ITPro-EAC-RefreshIcon.gif) para actualizar los datos y, a continuación, hace doble clic en el mensaje, verá que se ha liberado para los destinatarios previstos. 
   
 ## <a name="for-more-information"></a>Más información
 <a name="sectionSection4"> </a>

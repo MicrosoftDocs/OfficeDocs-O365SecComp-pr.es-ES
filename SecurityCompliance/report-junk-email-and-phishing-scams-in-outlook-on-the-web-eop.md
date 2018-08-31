@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 description: Microsoft Outlook en los usuarios de web puede informar de correo no deseado (correo no deseado) y las estafas de suplantación de identidad mediante el uso de las opciones de notificación de correo integrado. También puede permitir que Microsoft sabe si un correo electrónico incorrectamente identificado como correo no deseado (correo no deseado).
-ms.openlocfilehash: f1a71a91bd37e65430b2e05b8d650068ac7440f6
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: daa63e3b68927d7c5684c588a79727ba5d08f480
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026597"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002989"
 ---
 # <a name="report-junk-email-and-phishing-scams-in-outlook-on-the-web"></a>Las estafas de suplantación de identidad y correo electrónico no deseadas en Outlook, en la web de informes 
 

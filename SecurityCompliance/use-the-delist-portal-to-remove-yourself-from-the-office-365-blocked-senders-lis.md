@@ -9,14 +9,16 @@ ms.topic: troubleshooting
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 0bcecdd4-3343-4cc0-9e58-e19d4de515e8
 description: ¿Recibe un mensaje de error cuando intenta enviar un correo electrónico a un destinatario cuya dirección de correo electrónico está en Office 365? Si cree que no debería recibir este mensaje de error, use el portal de eliminación de la lista para quitarse de la lista de remitentes bloqueados de Office 365.
-ms.openlocfilehash: 127b305cdb27cffadc7ad6a43a5d2db2440365ca
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 4964429f4d3aa1a585b1b543929f83c2cebfb9a4
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026237"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23003259"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-list"></a>Usar el portal de eliminación de la lista para quitarse de la lista de remitentes bloqueados de Office 365
 
@@ -28,7 +30,7 @@ Microsoft usa la lista de remitentes bloqueados para proteger a sus clientes con
   
 Sabrá que lo hemos agregado a la lista cuando reciba una respuesta a un mensaje de correo que incluya un error similar al siguiente:
   
-550 5.7.606-649 acceso denegado, prohibido enviar IP [ _dirección IP_]; Para solicitar la eliminación de esta lista, visite https://sender.office.com/ y siga las instrucciones. Para obtener más información, consulte [informes de no entrega de correo electrónico en Office 365](http://go.microsoft.com/fwlink/?LinkID=526653).
+550 5.7.606-649 acceso denegado, prohibido enviar IP [_dirección IP_]; Para solicitar la eliminación de esta lista, visite https://sender.office.com/ y siga las instrucciones. Para obtener más información, consulte [informes de no entrega de correo electrónico en Office 365](http://go.microsoft.com/fwlink/?LinkID=526653).
   
 _IP address_ es la dirección IP del equipo en el que se ejecuta el servidor de correo. 
   

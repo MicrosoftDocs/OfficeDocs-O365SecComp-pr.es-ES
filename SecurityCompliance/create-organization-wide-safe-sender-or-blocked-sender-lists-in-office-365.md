@@ -1,7 +1,7 @@
 ---
-title: Create organization-wide safe sender or blocked sender lists in Office 365
+title: Crear listas de remitentes bloqueados o seguros para toda la organización en Office 365
 ms.author: stephow
-author: stephow-msft
+author: stephow-MSFT
 manager: laurawi
 ms.date: 8/8/2015
 ms.audience: ITPro
@@ -9,16 +9,18 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150s
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 description: Si desea para asegurarse de que recibe el correo de un remitente determinado, debido a que confía en ellos y sus mensajes, puede ajustar la lista de permitidos en una directiva de filtro de spam en el centro de administración de Exchange.
-ms.openlocfilehash: 1086a4a710432eb412ae9f08f204beda52aa5390
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: a90679fc900ca5695904898af3627fc1900a8545
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027547"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23003169"
 ---
-# <a name="create-organization-wide-safe-sender-or-blocked-sender-lists-in-office-365"></a>Create organization-wide safe sender or blocked sender lists in Office 365
+# <a name="create-organization-wide-safe-sender-or-blocked-sender-lists-in-office-365"></a>Crear listas de remitentes bloqueados o seguros para toda la organización en Office 365
   
 Si desea para asegurarse de que recibe el correo de un remitente determinado, debido a que confía en ellos y sus mensajes, puede ajustar la lista de permitidos en una directiva de filtro de spam en el centro de administración de Exchange (EAC) en **protección** \> **Spam filter**. Más información sobre esto en la [configuración de sus directivas de filtro de correo no deseado](configure-your-spam-filter-policies.md). Otra opción sería crear una regla de transporte de Exchange que funciona como el dominio o basadas en usuarios lista de permitidos en el filtro de spam. Puede bloquear los mensajes enviados desde un dominio en particular o un usuario de una manera similar demasiado.
   
@@ -30,7 +32,6 @@ Una regla de transporte sería útil en esta situación, si necesita filtrar los
 Para otras tareas de administración relacionadas con reglas de transporte, consulte [Transport Rules](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx).
   
 ## <a name="use-the-eac-to-customize-a-block-or-allow-list-to-prevent-or-receive-email-from-a-domain-or-user"></a>Use el CEF para personalizar un bloque o permitir lista impedir o recibir correo electrónico de un dominio o un usuario
-<a name="sectionSection0"> </a>
 
 1. En el EAC, vaya a **protección** \> **Spam filter**. 
     
@@ -51,17 +52,14 @@ Para otras tareas de administración relacionadas con reglas de transporte, cons
   
 4. En la página **Listas de bloqueados**, puede especificar entradas, como remitentes o dominios, que siempre se marcarán como correo no deseado. El servicio aplicará la acción de correo no deseado de alta confianza configurada en el correo electrónico que coincida con estas entradas. 
     
-  - Agregue remitentes no deseados a la lista de bloqueados del remitente. Haga clic en **Agregar**![Agregar icono](media/ITPro-EAC-AddIcon.png) y, a continuación, en el cuadro de diálogo de selección, agregue las direcciones del remitente que desea bloquear. Puede separar varias entradas con un punto y coma o una nueva línea. Haga clic en **Aceptar** para volver a la página **Listas de bloqueados**. 
+  - Agregue remitentes no deseados a la lista de bloqueados del remitente. Haga clic en **Agregar**![Agregar icono](media/ITPro-EAC-AddIcon.gif) y, a continuación, en el cuadro de diálogo de selección, agregue las direcciones del remitente que desea bloquear. Puede separar varias entradas con un punto y coma o una nueva línea. Haga clic en **Aceptar** para volver a la página **Listas de bloqueados**. 
     
-  - Agregue dominios no deseados a la lista de bloqueados del dominio. Haga clic en **Agregar**![Agregar icono](media/ITPro-EAC-AddIcon.png) y, a continuación, en el cuadro de diálogo de selección, agregue los dominios que desea bloquear. Puede separar varias entradas con un punto y coma o una nueva línea. Haga clic en **Aceptar** para volver a la página **Listas de bloqueados**. 
+  - Agregue dominios no deseados a la lista de bloqueados del dominio. Haga clic en **Agregar**![Agregar icono](media/ITPro-EAC-AddIcon.gif) y, a continuación, en el cuadro de diálogo de selección, agregue los dominios que desea bloquear. Puede separar varias entradas con un punto y coma o una nueva línea. Haga clic en **Aceptar** para volver a la página **Listas de bloqueados**. 
     
     > [!CAUTION]
     > Si bloquea dominios de primer nivel, es probable que el correo electrónico que no desea se marque como correo no deseado. 
   
 ## <a name="what-do-you-need-to-know-before-you-begin-creating-a-transport-rule"></a>¿Qué necesita saber antes de empezar a crear una regla de transporte?
-<a name="sectionSection1"> </a>
-
-- Tiempo estimado para finalizar: 15 minutos
     
 - No es necesario crear una regla de transporte para el desvío de filtrado de spam o marcar el correo electrónico como correo no deseado para un remitente o un dominio. Utilizar el bloque de Exchange Online Protection y permitir que las listas en una directiva de correo en lugar de esta regla de transporte si simplemente desea bloquear o permitir que un remitente específico o un dominio y no adjunta las condiciones adicionales. Más información sobre esto en la [configuración de sus directivas de filtro de correo no deseado](configure-your-spam-filter-policies.md).
     
@@ -70,16 +68,15 @@ Para otras tareas de administración relacionadas con reglas de transporte, cons
 - Para obtener información acerca de los métodos abreviados de teclado aplicables a los procedimientos de este tema, consulte **Métodos abreviados de teclado en el Centro de administración de Exchange**.
     
 > [!TIP]
-> ¿Tiene algún problema? Solicite ayuda en los foros de Exchange. Visite los foros en [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), o [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
+> ¿Teniendo problemas? Solicitar ayuda en los foros de Exchange. Visite los foros de [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542)o [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
   
 ## <a name="use-the-eac-to-create-a-transport-rule-to-bypass-spam-filtering-for-a-domain-or-user"></a>Usar el EAC para crear una regla de transporte para que omita el filtrado para un dominio o un usuario de spam
-<a name="sectionSection2"> </a>
 
-1. En el EAC, vaya a **Flujo del correo** \> **Reglas**. Elija **Agregar**![Agregar icono](media/ITPro-EAC-AddIcon.png) y, después, seleccione la opción de **filtrado de correo no deseado**.
+1. En el EAC, vaya a **flujo de correo** \> **reglas**. Elija **Agregar** ![icono Agregar](media/ITPro-EAC-AddIcon.gif) y, a continuación, elija **el desvío de correo no deseado filtrado**.
     
 2. Asigne un nombre a la regla. En **Aplicar esta regla si**, elija **El remitente** y, a continuación, seleccione una de las siguientes condiciones: 
     
-  - Si desea especificar un dominio, elija **el dominio es**. En el cuadro de diálogo **Especificar dominio**, escriba el dominio del remitente que desea designar como seguro, como contoso.com. Haga clic en **Agregar**![Agregar icono](media/ITPro-EAC-AddIcon.png) para moverlo a la lista de frases. Repita este paso si desea agregar otros dominios y haga clic en **Aceptar** cuando haya terminado. 
+  - Si desea especificar un dominio, elija el **dominio es**. En el cuadro de diálogo **Especificar dominio** , escriba el dominio del remitente que desea designar como seguros, por ejemplo, contoso.com. **Agregar** ![Icono Agregar](media/ITPro-EAC-AddIcon.gif) para moverlo a la lista de frases. Repita este paso si desea agregar dominios adicionales y haga clic en **Aceptar** cuando haya terminado. 
     
   - Si desea especificar un dominio, elija **es esta persona**. En el cuadro de diálogo **Seleccionar miembros**, agregue el usuario de la lista o escriba el usuario y haga clic en **Comprobar nombres**. Repita este paso si desea agregar otros usuarios y haga clic en **Aceptar** cuando haya terminado. 
     
@@ -94,15 +91,14 @@ Para otras tareas de administración relacionadas con reglas de transporte, cons
 Una vez que se ha creado y aplicado la regla, el filtrado de correo no deseado se omite para el dominio o usuario que haya especificado.
   
 ## <a name="use-the-eac-to-create-a-transport-rule-that-blocks-messages-sent-from-a-domain-or-user"></a>Usar el EAC para crear una regla de transporte que bloquea los mensajes enviados desde un dominio o un usuario
-<a name="sectionSection3"> </a>
 
-1. En el EAC, vaya a **Flujo de correo** \> **Reglas**. Seleccione **Agregar**![Agregar icono](media/ITPro-EAC-AddIcon.png) y elija **Crea una nueva regla**.
+1. En el EAC, vaya a **flujo de correo** \> **reglas**. Elija **Agregar** ![icono Agregar](media/ITPro-EAC-AddIcon.gif) y, a continuación, elija **crear una nueva regla**.
     
 2. Especifique un nombre para la regla y luego haga clic en **Más opciones**. 
     
 3. En **Aplicar esta regla si**, elija **El remitente** y, a continuación, seleccione una de las siguientes condiciones: 
     
-  - Si desea especificar un dominio, elija **el dominio es**. En el cuadro de diálogo Especificar dominio, escriba el dominio del remitente al que desea bloquear los mensajes, como contoso.com. Haga clic en **Agregar**![Agregar icono](media/ITPro-EAC-AddIcon.png) para moverlo a la lista de frases. Repita este paso si desea agregar otros dominios y haga clic en **Aceptar** cuando haya terminado. 
+  - Si desea especificar un dominio, elija el **dominio es**. En el cuadro de diálogo Especificar dominio, escriba el dominio del remitente desde el que desea bloquear mensajes, por ejemplo, contoso.com. Haga clic en **Agregar** ![icono Agregar](media/ITPro-EAC-AddIcon.gif) para moverlo a la lista de frases. Repita este paso si desea agregar dominios adicionales y haga clic en **Aceptar** cuando haya terminado. 
     
   - Si desea especificar un dominio, elija **es esta persona**. En el cuadro de diálogo **Seleccionar miembros**, agregue el usuario de la lista o escriba el usuario y haga clic en **Comprobar nombres**. Repita este paso si desea agregar otros usuarios y haga clic en **Aceptar** cuando haya terminado. 
     
@@ -116,10 +112,9 @@ Una vez que se ha creado y aplicado la regla, el filtrado de correo no deseado s
     
 Tras crear y aplicar la regla, los mensajes enviados desde el dominio o usuario que especifique se bloquearán.
   
-## <a name="see-also"></a>Consulte también
-<a name="sectionSection3"> </a>
+## <a name="see-also"></a>Vea también
 
 [Configurar las directivas de filtro de correo no deseado](configure-your-spam-filter-policies.md)
   
-[Uso de reglas de transporte para configurar el filtrado de correo electrónico masivo](use-transport-rules-to-configure-bulk-email-filtering.md)
+[Usar reglas de transporte para configurar el filtrado de correo electrónico masivo](use-transport-rules-to-configure-bulk-email-filtering.md)
 

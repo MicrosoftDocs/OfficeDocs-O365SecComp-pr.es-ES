@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 8079f193-1b40-4081-9e5d-d0e50dfbcc59
 description: ¿Los clientes a veces askwhat de la diferencia entre correo electrónico no deseado y mensajes de correo electrónico masivo? El propósito de este tema es para explicar la diferencia y para proporcionar información sobre las diferentes opciones que están disponibles para ambos tipos en Exchange Online y Exchange Online Protection (EOP).
-ms.openlocfilehash: 2cd9d9d91cf44af910983c045192ed7639d27417
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 87f946c7309589595efd3e11e998e0a9f503b651
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026247"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23003159"
 ---
 # <a name="whats-the-difference-between-junk-email-and-bulk-email"></a>¿Cuál es la diferencia entre correo electrónico no deseado y correo electrónico masivo?
 

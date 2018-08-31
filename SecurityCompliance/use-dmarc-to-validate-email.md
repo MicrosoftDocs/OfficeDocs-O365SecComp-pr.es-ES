@@ -8,15 +8,17 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.custom: TN2DMC
 ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
 description: 'Domain-based Message Authentication, Reporting, and Conformance (DMARC) trabaja con el marco de directivas de remitente (SPF) y DomainKeys Identified Mail (DKIM) para autenticar a los remitentes de los correos y garantizar que los sistemas de correo electrónico de destino confíen en los mensajes enviados desde su dominio. '
-ms.openlocfilehash: a95e41011e802a583ddd053d2ae4699ff46112b9
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 199ab67d17152fc0c4ed6b9f87cde66beaf913d5
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026827"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23003229"
 ---
 # <a name="use-dmarc-to-validate-email-in-office-365"></a>Usar DMARC para validar el correo electrónico en Office 365
 
@@ -223,7 +225,8 @@ contoso.com     3600   IN  MX  10 contoso-com.mail.protection.outlook.com
 
 ```
 
-Todo el correo electrónico o la mayor parte se enrutará primero a mail.contoso.com, ya que es el MX principal, y luego el correo se enrutará a EOP. En algunos casos, ni siquiera podría marcar EOP como registro MX y solo podría enlazar conectores para enrutar el correo electrónico. EOP debe ser la primera entrada de los registros MX de su dominio para que los errores de DMARC se apliquen en su dominio.
+Correo electrónico de todos o casi, primero se enrutarán a mail.contoso.com debido a que es la principal MX y, a continuación, obtener enrutará correo a EOP. En algunos casos, es posible que ni siquiera elevación de privilegios de lista como un registro MX en absoluto y simplemente enlazar los conectores enruten el correo electrónico. EOP no tiene que ser la primera entrada para la validación de DMARC realizarse. Sólo se asegura de la validación, tal y como se puede estar seguro de que todos los servidores en-in situ y que no sean-O365 hará la comprobación DMARC.  DMARC tiene derecho a que se deben cumplir para el dominio de un cliente (no servidor) al configurar el registro TXT DMARC, pero es hasta el servidor de recepción que realmente realizan el cumplimiento.  Si configura EOP como el servidor de recepción, EOP lo hace la aplicación DMARC.
+
   
 ## <a name="for-more-information"></a>Más información
 <a name="sectionSection8"> </a>
