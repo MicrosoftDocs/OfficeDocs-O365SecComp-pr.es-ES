@@ -1,0 +1,98 @@
+---
+title: Resistencia de datos de Exchange de Office 365
+ms.author: robmazz
+author: robmazz
+manager: laurawi
+ms.date: 8/21/2018
+audience: ITPro
+ms.topic: article
+ms.service: Office 365 Administration
+localization_priority: None
+search.appverid:
+- MET150
+ms.collection: Strat_O365_Enterprise
+description: Una explicación de los distintos aspectos de la resistencia de datos dentro de Exchange Online y Office 365.
+ms.openlocfilehash: 8d0448a95f010b766faf852a374513a1c2da61fa
+ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "22536090"
+---
+# <a name="exchange-online-data-resiliency-in-office-365"></a>Resistencia de datos en línea de Exchange en Office 365
+
+## <a name="introduction"></a>Introducción
+Hay dos tipos de daños que pueden afectar a una base de datos de Exchange: un daño físico, que normalmente está causado por problemas de hardware (en concreto, hardware de almacenamiento), y los daños lógicos, que se producen debido a otros factores. Por lo general, hay dos tipos de daños lógicos que pueden ocurrir dentro de una base de datos de Exchange: 
+- **Daños lógicos de base de datos** - las coincidencias de suma de comprobación de página de base de datos, pero los datos en la página lógicamente es incorrecta. Esto puede no ocurrir cuando el motor de base de datos (el almacenamiento de motor Extensible (ESE)) intenta escribir una página de base de datos y, aunque el sistema operativo devuelve un mensaje de confirmación, los datos se nunca escribe en el disco o se escribe en el lugar incorrecto. Esto se conoce como un *perdido flush*. ESE incluye muchas características y medidas de seguridad que están diseñadas para evitar un daño físico de una base de datos y otros escenarios de pérdida de datos. Para impedir que pierda vaciados de la pérdida de datos, ESE incluye un mecanismo de detección de vaciado pérdida en la base de datos junto con una característica (restauración de página único) para corregirlo. 
+- **Daños en el almacén lógico** - datos es agregado, eliminado o manipular de forma que el usuario no espera. Estos casos suelen deberse a aplicaciones de otros fabricantes. Por lo general es sólo los daños en el sentido de que el usuario ve como daños. El almacén de Exchange considera la transacción que generó el daño lógico para que sea una serie de operaciones de MAPI válidas. Las características de [Conservación local](https://docs.microsoft.com/exchange/security-and-compliance/create-or-remove-in-place-holds) de Exchange Online proporciona protección contra daños en el almacén lógico (debido a que impide que contenido va a eliminar permanentemente por un usuario o una aplicación). 
+
+Exchange Online realiza varias comprobaciones de coherencia en los archivos de registro replicada durante la inspección de registro y reproducción de registro. Estas comprobaciones de coherencia evitar daños físicos desde que se replica por el sistema. Por ejemplo, durante la inspección de registro, es una comprobación de integridad física que comprueba el archivo de registro y valida que la suma de comprobación registrada en el archivo de registro coincide con la suma de comprobación generado en la memoria. Además, se examina el encabezado del archivo de registro para asegurarse de que la firma del archivo de registro registrada en el encabezado del registro coincide con el del archivo de registro. Durante la reproducción del registro, el archivo de registro se somete a aún más exigentes. Por ejemplo, el encabezado de la base de datos también contiene la firma del registro que se compara con la firma del archivo de registro para asegurarse de que coinciden. 
+
+Protección contra daños de datos de buzones de correo en Exchange Online se consigue usando Exchange Native Data Protection, una estrategia de resistencia que aprovecha la replicación de nivel de la aplicación a través de varios servidores y varios centros de datos junto con otros características que ayudan a proteger los datos de que se pierdan debido a daños o por otros motivos. Estas características incluyen las características nativas que son administradas por Microsoft o la aplicación Exchange Online propiamente dicha, tales como:
+
+- [Grupos de disponibilidad de datos](https://docs.microsoft.com/exchange/back-up-email)
+- Corrección de Bit único 
+- Base de datos en línea de análisis 
+- Detección de vaciado perdida 
+- Restauración de página único 
+- Servicio de replicación de buzón de correo 
+- Comprobaciones de archivos de registro 
+- Implementación en el sistema de archivos resistente 
+
+Para obtener más información sobre las características nativas enumerados anteriormente, haga clic en los hipervínculos anteriores y vea a continuación para obtener información adicional y para obtener información detallada sobre los elementos sin hipervínculos. Además de estas características nativas, Exchange Online también incluye las características de resistencia de datos que los clientes pueden administrar, tales como: 
+- [Recuperación de elemento único (habilitado de forma predeterminada)](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages) 
+- [Conservación local y retención por juicio](https://docs.microsoft.com/exchange/security-and-compliance/in-place-and-litigation-holds) 
+- [Eliminado retención de elementos y los buzones de correo Soft-Deleted (ambos habilitados de forma predeterminada)](https://docs.microsoft.com/exchange/recipients-in-exchange-online/delete-or-restore-mailboxes) 
+
+## <a name="database-availability-groups"></a>Grupos de disponibilidad de base de datos 
+Cada base de datos de buzones de correo en Office 365 está hospedado en un [grupo de disponibilidad de base de datos (DAG)](https://docs.microsoft.com/exchange/back-up-email) y se replican en centros de datos geográficamente independiente dentro de la misma región. La configuración más común es cuatro copias de base de datos en cuatro centros de datos; Sin embargo, algunas regiones tienen menos centros de datos (bases de datos se replican en tres centros de datos en la India y dos centros de datos en Australia y Japón). Pero, en todos los casos, cada base de datos de buzón de correo tiene cuatro copias que se distribuyen entre varios centros de datos, lo que garantiza que los datos de buzón de correo está protegidos contra software, hardware e incluso errores de centro de datos. 
+
+Fuera de estos cuatro copias, tres de ellos se configuran como altamente disponibles. La cuarta copia está configurada como un [atrasadas copia de base de datos](https://docs.microsoft.com/Exchange/high-availability/manage-ha/activate-lagged-db-copies). La copia de la base de datos retardada no está pensada para la recuperación de buzones individuales o recuperación de elementos del buzón de correo. Su objetivo consiste en proporcionar un mecanismo de recuperación para el evento muy poco frecuente de todo el sistema, tras errores graves daños lógicos. 
+
+Copias de base de datos atrasadas en Exchange Online están configuradas con un tiempo de retardo de reproducción de archivos de registro de siete días. Además, el Administrador de retardo de reproducción de Exchange está habilitado para proporcionar reproducir de archivo de registro dinámico hacia abajo para las copias retrasadas permitir que las copias de base de datos atrasadas reparación automática y administrar el crecimiento del archivo de registro. Aunque atrasadas en Exchange Online se usan copias de base de datos, es importante comprender que no son una copia de seguridad en un momento garantizada. Copias de base de datos atrasadas en Exchange Online tienen un umbral de disponibilidad, normalmente alrededor del 90%, debido a los períodos donde se pierde debido a un error de disco, la copia retrasada se convierta en un altamente disponible el disco que contiene una copia retrasada copiar (debido a la reproducción automática hacia abajo), así como como los períodos donde la copia de la base de datos atrasadas volver a generar el registro a la reproducción de cola. 
+
+## <a name="transport-resilience"></a>Resistencia de transporte 
+Exchange Online incluye dos características de resistencia de transporte principal: redundancia de instantánea y la red de seguridad. Redundancia de instantánea mantiene una copia redundante de un mensaje mientras está en tránsito. Red de seguridad mantiene una copia redundante de un mensaje después de que el mensaje se entregó correctamente. 
+
+Con redundancia de instantánea, cada servidor de transporte de Exchange Online realiza una copia de cada mensaje que recibe antes de que reconoce correctamente recibir el mensaje para el servidor de envío. Esto hace que todos los mensajes en la canalización de transporte redundantes mientras están en tránsito. Si Exchange Online determina que el mensaje original se ha perdido en tránsito, se vuelve a entregar una copia redundante del mensaje. 
+
+Red de seguridad es una cola de transporte que está asociada con el servicio de transporte en un servidor de buzón de correo. Esta cola almacena copias de los mensajes que se han procesado correctamente por el servidor. Cuando un error de base de datos o servidor de buzón de correo requiere la activación de una copia caducada de la base de datos de buzones de correo, los mensajes en la cola de la red de seguridad se vuelven a enviar automáticamente a la nueva copia activa de la base de datos de buzón de correo. Red de seguridad también es redundante, lo que elimina transporte como un único punto de error. Usa el concepto de una red de seguridad principal y una red de seguridad de la sombra en el cual si la red principal de seguridad no está disponible durante más de 12 horas, vuelva a enviar solicitudes se convierten en las solicitudes de reenvío de sombra y los mensajes se vuelva a entregado desde la red de seguridad de sombra.
+
+Reenvíos de mensaje de red de seguridad se inician automáticamente mediante el componente de administrador activo del servicio de replicación de Microsoft Exchange que administra el dag y buzón de correo de copias de base de datos. No hay acciones manuales son necesarias para volver a enviar los mensajes de red de seguridad. 
+
+## <a name="single-bit-correction"></a>Corrección de Bit único 
+ESE incluye un mecanismo para detectar y resolver errores CRC de un solo bit (también conocido como bit único voltea) que son el resultado de errores de hardware (y, como tal, que representan un daño físico). Cuando se produzcan estos errores, ESE corrige automáticamente y registra un evento en el registro de eventos. 
+
+## <a name="online-database-scanning"></a>Base de datos en línea de análisis 
+Base de datos en línea de examen (también conocido como *sumas de comprobación de base de datos*) es el proceso donde un ESE utiliza un comprobador de coherencia de la base de datos para cada página de lectura y comprobar posibles daños de página. El propósito principal es detectar un daño físico y pierden vaciados que no se pueden obtener detectar operaciones transaccionales. Análisis de la base de datos también realiza operaciones de bloqueo de almacenamiento posteriores a la. Puede haber pérdidas espacio debido a los bloqueos y análisis de la base de datos en línea buscan y recuperación el espacio perdido. El sistema está diseñado con la expectativa de que cada base de datos se analiza por completo una vez cada siete días. 
+
+## <a name="lost-flush-detection"></a>Detección de vaciado perdida 
+Un vaciado pérdido se produce cuando una operación de escritura de la base de datos que el sistema operativo/subsistema de disco devuelto como completada en realidad no se escribieron para disco o se ha escrito en una ubicación incorrecta. Perdido incidentes vaciados puede resultado en daños lógicos de base de datos, por lo que para evitar que pierden vaciados resultante pérdida de datos, ESE incluye un mecanismo de detección de vaciado pierden. Como las páginas de la base de datos se escriben en copias pasivas, se realiza una comprobación para pierden vaciados de la copia activa. Si se detecta un vaciado pérdido, ESE puede reparar el proceso mediante una página de aplicación de revisiones de proceso. 
+
+## <a name="single-page-restore"></a>Restauración de página único 
+Restauración de página único, también conocido como *aplicación de revisiones de página*, es un proceso automático donde las páginas de la base de datos dañado se reemplazan por copias correcto de una réplica correcta. El proceso de reparación de una página dañado depende de si la copia de la base de datos está activo o pasivo. Cuando encuentra una página dañada con una copia de la base de datos activa, puede copiar una página de uno de sus réplicas, siempre que la página copia está completamente actualizada. Esto se logra colocando una solicitud de la página en la secuencia de registro, que es la base de la replicación de base de datos de buzón de correo. Tan pronto como una réplica encuentra la solicitud de página responde mediante el envío de una copia de la página a la copia de base de datos que solicita. Restauración de página único también proporciona un mecanismo de comunicación asincrónica para la activa solicitar una página de réplicas, incluso si las réplicas están actualmente sin conexión. 
+
+En el caso de daños en una copia pasiva de la base de datos, incluida una copia de base de datos atrasadas, debido a que estas copias siempre están detrás de su copia activa, siempre es más seguro copiar cualquier página de la copia activa a una copia pasiva. Una copia pasiva de la base de datos es por naturaleza altamente disponible, por lo que durante el proceso de aplicación de revisiones de la página, se suspende la reproducción de registro, pero la copia de registro continúa. La copia pasiva de la base de datos se recupera una copia de la página dañada de la copia activa, se espera hasta que el archivo de registro que cumple los requisitos de generación de registro necesario máximo se copia y puede inspeccionar y, a continuación, revisiones de la página dañada. Una vez que se ha revisado la página, se reanuda la reproducción del registro. El proceso es el mismo para la copia de la base de datos atrasadas, excepto en que la base de datos atrasada reproduce primero todos los archivos de registro que son necesarios para alcanzar un estado patchable. 
+
+## <a name="mailbox-replication-service"></a>Servicio de replicación de buzón de correo 
+Mover buzones es una parte clave de la administración de un servicio de correo electrónico a gran escala. Siempre son tecnologías actualizadas y las actualizaciones de hardware y la versión para abordar los problemas con, por lo que tener una sólida, limita el sistema que permite a nuestros ingenieros de llevar a cabo este trabajo mientras se mantiene el buzón se mueve transparente para los usuarios (asegurándose de que permanezcan en línea durante todo el proceso) es clave y asegurándose de que el proceso de escala hasta correctamente como buzones obtener mayores. 
+
+El servicio de replicación de buzón (MRS) de Exchange es responsable de mover buzones entre bases de datos. Durante el traslado, Sra. lleva a cabo una comprobación de coherencia en todos los elementos dentro del buzón. Si se encuentra un problema de coherencia, MRS se corrija el problema u omitir los elementos dañados, y lo quita los daños desde el buzón de correo. 
+
+Debido a que MRS es un componente de Exchange Online, nos podemos realizar cambios en su código a dirección nuevos formularios de daños en la que se detectan en el futuro. Por ejemplo, si se detecta un problema de coherencia que MRS no es capaz de corregir, podemos analizar los daños, cambie el código de MRS y corregir la incoherencia (si se comprender cómo). 
+
+## <a name="log-file-checks"></a>Comprobaciones de archivos de registro 
+Todos los archivos de registro de transacciones generados por una base de datos de Exchange sincronizan varios formularios de comprobaciones de coherencia. Cuando se crea un archivo de registro, es el listo lo primero que se escribe un patrón de bits y, a continuación, se lleva a cabo una serie de escrituras en el registro. Esto permite a Exchange Online ejecutar una serie de comprobaciones (flush pierden, CRC y otras comprobaciones) para validar cada archivo de registro, tal y como está escrito y vuelva a tal y como se replica. 
+
+## <a name="deployment-on-resilient-file-system"></a>Implementación en el sistema de archivos resistente 
+Para ayudar a evitar daños desde que se producen en el nivel de sistema de archivos, se está implementando el Exchange Online en las particiones de sistema de archivos resistente (ReFS) para proporcionar capacidades de recuperación mejorada. ReFS es un sistema de archivos en Windows Server 2012 y versiones posteriores que está diseñado para ser más resistente contra daños en los datos, desde allí, maximizar la integridad y la disponibilidad de los datos. En concreto, ReFS aporta mejoras en la forma en que los metadatos se actualizan lo que ofrece una mejor protección de datos y reduce los casos de daños de datos. También usa las sumas de comprobación para comprobar la integridad de los datos de archivo y metadatos asegurarse de que daños en los datos se encuentra fácilmente y se ha reparado. 
+
+Exchange Online aprovecha las ventajas ReFS: 
+- Resistencia más en la integridad de los datos significa menos incidentes de daños de datos. Reducir el número de incidentes de daños significa menos retransferencias innecesarios de la base de datos. 
+- Suma de comprobación que se ejecutan en metadatos habilitar detecciones de casos de daños antes y forma más determinista, lo que nos permite corregir los datos de cliente daños antes de que se producen errores gris en los volúmenes de datos.
+- Diseñado para funcionar bien con conjuntos de datos muy grandes — petabytes y mayor: sin impacto en el rendimiento
+- Compatibilidad con otras características que se usan por Exchange Online, como el cifrado de BitLocker. 
+
+Exchange Online también se beneficia de otras características ReFS: 
+- **Integridad (secuencias de integridad)** - ReFS almacena los datos de una manera que protege de muchos de los errores comunes que normalmente se pueden provocar la pérdida de datos. Búsqueda de Office 365 usa secuencias de integridad para ayudar con la detección de daños disco anticipado y sumas de comprobación de contenido del archivo. La característica también reduce los incidentes de daños causados por "Rasgado escribe" (cuando una operación de escritura no se completa debido a cortes en la alimentación, etcetera.). 
+- **Disponibilidad (residual)** - ReFS da prioridad a la disponibilidad de los datos. Tradicionalmente, los sistemas de archivos a menudo no eran susceptibles a daños en los datos que requieran la consultarse sin conexión para reparar el sistema. Aunque poco frecuente, si se producen daños, implementa ReFS residual, una característica que quita los datos dañados desde el espacio de nombres en un volumen activo y se asegura de que datos en buen estado no se ve afectadas negativamente por no reparable datos dañados. Aplicar la característica de residual y aislar los daños en los datos a volúmenes de base de datos de Exchange Online significan que podemos mantener las bases de datos no afectado en un volumen dañado correcto entre el momento de la acción de reparación y dañado. Esto aumenta la disponibilidad de bases de datos que normalmente se ve afectada por dichos problemas de daños en el disco. 
