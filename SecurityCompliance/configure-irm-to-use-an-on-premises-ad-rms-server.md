@@ -9,14 +9,16 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
+search.appverid:
+- MET150
 ms.assetid: 3ecde857-4b7c-451d-b4aa-9eeffc8a8c61
 description: En este tema se muestra cómo configurar IRM para usar un servidor de AD RMS.
-ms.openlocfilehash: 198d7b86b39318361a174395bc460b4a4bd35847
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 82eed73797cfb4ade04bfeed9118d8466c5c5480
+ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027377"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "23002816"
 ---
 # <a name="configure-irm-to-use-an-on-premises-ad-rms-server"></a>Configurar IRM para usar un servidor de AD RMS local
   
@@ -163,6 +165,6 @@ Para comprobar si ha importado el TPD y ha habilitado IRM correctamente, haga lo
   
 - Use el cmdlet **Test-IRMConfiguration** para probar si IRM funciona. Para obtener más información, vea "Ejemplo 1" en [Test-IRMConfiguration](http://technet.microsoft.com/library/a730e7ff-a67f-4360-b5ff-70d171bb5e1d.aspx).
     
-- Redacte un nuevo mensaje en Outlook Web App y protéjalo con IRM al seleccionar la opción **Establecer permisos** del menú extendido ( ![Icono Más opciones](media/ITPro-EAC-MoreOptionsIcon.png)).
+- Redacte un nuevo mensaje en Outlook Web App y protéjalo con IRM al seleccionar la opción **Establecer permisos** del menú extendido ( ![Icono Más opciones](media/ITPro-EAC-MoreOptionsIcon.gif)).
     
 
