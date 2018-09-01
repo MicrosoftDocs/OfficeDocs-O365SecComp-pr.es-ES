@@ -3,7 +3,6 @@ title: Novedades de la seguridad de la aplicación de nube de Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 8/6/2018
 ms.audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -13,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: d674763c-a4c9-4604-8623-68c1836d27f3
 description: Vea las novedades de seguridad de la aplicación de nube de Office 365
-ms.openlocfilehash: 484d46e9fef56e76e2f27d27b38a261c4ad19cc1
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: a8bca8cb62681491fb5a6964104b1aa1c626784d
+ms.sourcegitcommit: 31e0d94244c76a9f5118efee8bbc93395d080f91
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22536134"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "23796876"
 ---
 # <a name="what-is-new-in-office-365-cloud-app-security"></a>Novedades de la seguridad de la aplicación de nube de Office 365
 
@@ -26,11 +25,24 @@ Lea este artículo para obtener una introducción rápida a las actualizaciones 
   
 En este artículo se actualiza con frecuencia, como las características se agregan o se ha mejorado. Actualizaciones de seguridad de la aplicación en la nube de Office 365 se liberan aproximadamente dos semanas después de las actualizaciones de seguridad de la aplicación de Microsoft en la nube, y no todas las actualizaciones de seguridad de la aplicación de Microsoft en la nube se aplican a la seguridad de la aplicación de nube de Office 365. Además, las nuevas características pueden tardar una semana o más después de su fecha de lanzamiento aparezca en su entorno de seguridad de la aplicación de nube de Office 365.
   
+## <a name="office-365-cloud-app-security-release-130"></a>Versión de seguridad de la aplicación en la nube de Office 365 130
+
+*Versiones 5 de septiembre de 2018*
+
+**Lanzamiento con [130 de la versión de seguridad de la aplicación de Microsoft en la nube](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-130)**:
+
+- **Nueva barra de menús** Para proporcionar una experiencia más coherente de administración a través de productos de Microsoft 365 y para que pueda dinámicas más fácilmente entre las soluciones de seguridad de Microsoft, la barra de menús del portal de seguridad de la aplicación en la nube ha movido hasta el lado izquierdo de la pantalla. Esta navegación coherente experiencia ayuda a orientar a usted al pasar de un portal de seguridad de Microsoft a otro.
+
+- **Puntuación de la aplicación de OAuth de impacto** Ahora puede enviar los comentarios del equipo de seguridad de la aplicación en la nube para hacernos saber si hay una aplicación de OAuth detectada en la organización que parece malintencionada. Esta nueva característica permite formar parte de nuestra comunidad de seguridad y mejorar el análisis y la puntuación de riesgo de aplicación de OAuth. Para obtener más información, vea [Administrar permisos de aplicación](manage-app-permissions-in-ocas.md).
+
+- **Analizadores de detección de nuevo en la nube** Los analizadores de detección en la nube ahora admiten iboss seguro puerta de enlace de la nube y XG Sophos.
+
+
 ## <a name="office-365-cloud-app-security-release-128"></a>Versión de seguridad de la aplicación en la nube de Office 365 128
 
- *Versiones 5 de agosto de 2018* 
+*Publicada el 5 de agosto de 2018* 
   
- **Lanzamiento con [128 de la versión de seguridad de la aplicación de Microsoft en la nube](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-128)**: 
+**Lanzamiento con [128 de la versión de seguridad de la aplicación de Microsoft en la nube](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-128)**: 
   
 - **Permisos de aplicación a través de varias aplicaciones** Para las aplicaciones que se hayan concedido permisos de aplicación, ahora puede prohibir o aprobar varias aplicaciones en una sola acción. Por ejemplo, puede revisar todas las aplicaciones que se hayan concedido permiso por los usuarios de su organización, seleccione todas las aplicaciones que desea prohibir y, a continuación, haga clic en aplicaciones de prohibición para revocar todos los consentimiento concedido y ya no se permitirá a los usuarios conceder permiso a esas aplicaciones. 
     
@@ -38,9 +50,9 @@ En este artículo se actualiza con frecuencia, como las características se agre
     
 ## <a name="office-365-cloud-app-security-release-126"></a>Versión de seguridad de la aplicación en la nube de Office 365 126
 
- *Publicada el 7 de julio de 2018* 
+*Publicada el 7 de julio de 2018* 
   
- **Publicada el con [126 de la versión de seguridad de la aplicación de Microsoft en la nube](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-126)**: 
+**Publicada el con [126 de la versión de seguridad de la aplicación de Microsoft en la nube](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-126)**: 
   
 - **Corrección automática para detectar actividades sospechosas** Ahora puede definir las acciones de corrección automática de sesión sospechoso desencadenada por las directivas de detección de anomalías. Esta mejora le permite recibir una alerta al instante cuando se produce una infracción de y se aplican automáticamente a las acciones de gobierno, suspender como usuario. Para obtener más información, vea [las directivas de detección de anomalías de seguridad de la aplicación de nube de Office 365](anomaly-detection-policies-in-ocas.md).
     
@@ -50,9 +62,9 @@ En este artículo se actualiza con frecuencia, como las características se agre
     
 ## <a name="office-365-cloud-app-security-release-124"></a>Versión de seguridad de la aplicación en la nube de Office 365 124
 
- *Publicada el 10 de junio de 2018* 
+*Publicada el 10 de junio de 2018* 
   
- **Publicada el con [124 de la versión de seguridad de la aplicación de Microsoft en la nube](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-124)**: 
+**Publicada el con [124 de la versión de seguridad de la aplicación de Microsoft en la nube](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-124)**: 
   
 - **Implementaciones de ámbito** Las organizaciones empresariales forma granular pueden determinar qué usuarios para supervisar y proteger basándose en la pertenencia a grupo. Esta característica permite seleccionar los usuarios cuyas actividades no mostrará para cualquiera de las aplicaciones protegidas. Supervisión de ámbito es especialmente útil para el cumplimiento de normas y licencias. Algunas reglamentaciones de cumplimiento de normas exigen que Absténgase de supervisión de los usuarios de determinados países debido a la normativa local. Y puede supervisar a los usuarios menos permanecer dentro de los límites de las licencias de seguridad de la aplicación de nube de Office 365. 
     
@@ -60,9 +72,9 @@ En este artículo se actualiza con frecuencia, como las características se agre
     
 ## <a name="office-365-cloud-app-security-release-121"></a>Versión de seguridad de la aplicación en la nube de Office 365 121
 
- *Publicada el 6 de mayo de 2018* 
+*Publicada el 6 de mayo de 2018* 
   
- **Publicada el con [121 de la versión de seguridad de la aplicación de Microsoft en la nube](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-121)**: 
+**Publicada el con [121 de la versión de seguridad de la aplicación de Microsoft en la nube](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-121)**: 
   
 - **Mejoras en la directiva de detección de anomalías**. Se han mejorado para incluir dos nuevos tipos de detección de amenazas que gradualmente implantar directivas de detección de anomalías de Office 365 en la nube seguridad de la aplicación: 
     
@@ -74,9 +86,9 @@ En este artículo se actualiza con frecuencia, como las características se agre
     
 ## <a name="office-365-cloud-app-security-release-120"></a>Versión de seguridad de la aplicación en la nube de Office 365 120
 
- *Publicada el 22 de abril de 2018* 
+*Publicada el 22 de abril de 2018* 
   
- **Publicada el con [120 de la versión de seguridad de la aplicación de Microsoft en la nube](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-120)**: 
+**Publicada el con [120 de la versión de seguridad de la aplicación de Microsoft en la nube](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-120)**: 
   
 - **Aplicaciones internas como las actividades del usuario**. Para Office 365 y Azure Active Directory (AD Azure), nos estamos ahora gradualmente implantar la capacidad para detectar las aplicaciones internas como las actividades de cuenta de usuario realizadas por las aplicaciones de Office 365 y Azure AD (internas y externas). Esto le permite crear políticas para avisarle si una aplicación realiza actividades inesperadas y no autorizadas. 
     
@@ -84,9 +96,9 @@ En este artículo se actualiza con frecuencia, como las características se agre
     
 ## <a name="office-365-cloud-app-security-release-119"></a>Versión de seguridad de la aplicación en la nube de Office 365 119
 
- *Publicada el 1 de abril de 2018* 
+*Publicada el 1 de abril de 2018* 
   
- **Publicada el con [119 de la versión de seguridad de la aplicación de Microsoft en la nube](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-119)**: 
+**Publicada el con [119 de la versión de seguridad de la aplicación de Microsoft en la nube](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-119)**: 
   
 - **Mejoras en la detección de nube**. La detección de la nube proporciona más información acerca los usuarios superiores y direcciones IP, haciendo que sea más fácil para ver los detalles de uso sobre Office 365 y otras aplicaciones. Para obtener más información, vea [conclusiones de detección de aplicación de revisión de seguridad de la aplicación de nube de Office 365](review-app-discovery-findings-in-ocas.md).
     
@@ -94,25 +106,25 @@ En este artículo se actualiza con frecuencia, como las características se agre
   
 ## <a name="office-365-cloud-app-security-release-118"></a>Versión de seguridad de la aplicación en la nube de Office 365 118
 
- *Publicada el 18 de marzo de 2018* 
+*Publicada el 18 de marzo de 2018* 
   
- **Publicada el con [118 de la versión de seguridad de la aplicación de Microsoft en la nube](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-118)**: 
+**Publicada el con [118 de la versión de seguridad de la aplicación de Microsoft en la nube](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-118)**: 
   
 - **Admite barracuda**. Detección de nube ahora admite los firewalls de serie F de Barracuda y Barracuda F-serie firewall web registro transmisión por secuencias. 
     
 ## <a name="office-365-cloud-app-security-release-117"></a>Versión de seguridad de la aplicación en la nube de Office 365 117
 
- *Publicada el 6 de marzo de 2018* 
+*Publicada el 6 de marzo de 2018* 
   
- **Publicada el con [117 de la versión de seguridad de la aplicación de Microsoft en la nube](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-117)**: 
+**Publicada el con [117 de la versión de seguridad de la aplicación de Microsoft en la nube](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-117)**: 
   
 - **compatible con filtro de i**. Detección de nube ahora admite i-filtro. 
     
 ## <a name="office-365-cloud-app-security-release-116"></a>Versión de seguridad de la aplicación en la nube de Office 365 116
 
- *Publicada el 18 de febrero de 2018* 
+*Publicada el 18 de febrero de 2018* 
   
- **Publicada el con [116 de la versión de seguridad de la aplicación de Microsoft en la nube](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-116)**: 
+**Publicada el con [116 de la versión de seguridad de la aplicación de Microsoft en la nube](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-116)**: 
   
 - **Mejoras en la directiva de detección de anomalías**. Detección de anomalías de directivas de seguridad de la aplicación de nube de Office 365 se han mejorado con nuevas detecciones basada en escenarios incluidos imposible viajes, actividad desde una dirección IP sospechosa y los intentos de inicio de sesión con errores de varios. Las nuevas directivas se habilitan automáticamente, que proporciona la detección de amenazas de cuadro en todo el entorno de nube. Además, las nuevas directivas exponen más datos desde el motor de detección de seguridad de la aplicación de nube de Office 365, que puede ayudar a acelerar el proceso de investigación y contienen las amenazas en curso. Para obtener más información, vea el artículo de seguridad de la aplicación de Microsoft en la nube, [Obtenga análisis el comportamiento instantáneo y detección de anomalías](https://docs.microsoft.com/cloud-app-security/anomaly-detection-policy).
     
@@ -120,9 +132,9 @@ En este artículo se actualiza con frecuencia, como las características se agre
     
 ## <a name="office-365-cloud-app-security-release-114"></a>Versión de seguridad de la aplicación en la nube de Office 365 114
 
- *Publicada el 21 de enero de 2018* 
+*Publicada el 21 de enero de 2018* 
   
- **Publicada el con la [versión de seguridad de la aplicación de Microsoft en la nube 114](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-114)**: 
+**Publicada el con la [versión de seguridad de la aplicación de Microsoft en la nube 114](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-114)**: 
   
 - **Estado del servicio**. Ahora puede comprobar el estado actual del servicio de seguridad de la aplicación de nube de Office 365 yendo para **ayudar a** \> **estado del sistema**. 
     
@@ -132,17 +144,17 @@ En este artículo se actualiza con frecuencia, como las características se agre
     
 ## <a name="office-365-cloud-app-security-release-113"></a>Versión de seguridad de la aplicación en la nube de Office 365 113
 
- *Publicadas el 8 de enero de 2018* 
+*Publicadas el 8 de enero de 2018* 
   
- **Publicada el con [113 de la versión de seguridad de la aplicación de Microsoft en la nube](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-113)**: 
+**Publicada el con [113 de la versión de seguridad de la aplicación de Microsoft en la nube](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-113)**: 
   
 - **Compatibilidad con el registro del analizador para formatos genéricos**. Los analizadores de registro de detección en la nube ahora admiten los siguientes formatos genéricos: LEEF, CEF y W3C. 
     
 ## <a name="office-365-cloud-app-security-release-112"></a>Versión de seguridad de la aplicación en la nube de Office 365 112
 
- *Publicada el 24 de diciembre de 2017* 
+*Publicada el 24 de diciembre de 2017* 
   
- **Publicada el con [112 de la versión de seguridad de la aplicación de Microsoft en la nube](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-112)**: 
+**Publicada el con [112 de la versión de seguridad de la aplicación de Microsoft en la nube](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-112)**: 
   
 - **Alimentador de insight relevantes**. En el registro de actividad, ahora puede tener acceso el alimentador insight relevantes haciendo clic en un nombre de usuario o la dirección IP. 
     
@@ -156,9 +168,9 @@ En este artículo se actualiza con frecuencia, como las características se agre
     
 ## <a name="office-365-cloud-app-security-release-111"></a>Versión de seguridad de la aplicación en la nube de Office 365 111
 
- *Publicada el 10 de diciembre de 2017* 
+*Publicada el 10 de diciembre de 2017* 
   
- **Publicada el con [111 de la versión de seguridad de la aplicación de Microsoft en la nube](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-111)**: 
+**Publicada el con [111 de la versión de seguridad de la aplicación de Microsoft en la nube](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-111)**: 
   
 - **Mejoras de filtro de tiempo**. Filtros de tiempo ahora son más fáciles de usar. Para obtener acceso a un filtro de tiempo, en una vista, como el registro de actividad, las directivas, alertas, en la vista avanzada, elija la **fecha** en la lista de filtros. A continuación, elija una opción, como antes, después o en entre para aplicar el filtro de tiempo. 
     
@@ -166,9 +178,9 @@ En este artículo se actualiza con frecuencia, como las características se agre
   
 ## <a name="office-365-cloud-app-security-release-110"></a>Versión de seguridad de la aplicación en la nube de Office 365 110
 
- *Publicada el 26 de noviembre de 2017* 
+*Publicada el 26 de noviembre de 2017* 
   
- **Publicada el con la [versión de seguridad de la aplicación de Microsoft en la nube 110](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-110)**: 
+**Publicada el con la [versión de seguridad de la aplicación de Microsoft en la nube 110](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-110)**: 
   
 - **Integración del servidor de SIEM ahora generalmente está disponible**. Conectar el servidor SIEM a la seguridad de la aplicación de nube de Office 365. Ahora puede enviar alertas y actividades automáticamente a su servidor SIEM de elección mediante la configuración de los agentes de SIEM. Vea [integrar su servidor SIEM con seguridad de la aplicación de nube de Office 365](integrate-your-siem-server-with-office-365-cas.md).
     
@@ -178,17 +190,17 @@ En este artículo se actualiza con frecuencia, como las características se agre
     
 ## <a name="office-365-cloud-app-security-release-102"></a>Versión de seguridad de la aplicación en la nube de Office 365 102
 
- *Publicada el 13 de agosto de 2017* 
+*Publicada el 13 de agosto de 2017* 
   
- **Publicada el con [102 de la versión de seguridad de la aplicación de Microsoft en la nube](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-102)**: 
+**Publicada el con [102 de la versión de seguridad de la aplicación de Microsoft en la nube](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-102)**: 
   
 - **Nuevas acciones de investigación de usuario** habilitar un nivel de profundidad se ha agregado a las investigaciones de usuario. En una página de investigar, puede mantenga el mouse sobre una actividad, un usuario o una cuenta y aplicar como filtro y desde allí, puede ver actividades relacionadas o eventos. 
     
 ## <a name="office-365-cloud-app-security-release-100"></a>Versión de seguridad de la aplicación en la nube de Office 365 100
 
- *Publicada el 17 de julio de 2017* 
+*Publicada el 17 de julio de 2017* 
   
- **Publicada el con [100 de la versión de seguridad de la aplicación de Microsoft en la nube](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-100)**: 
+**Publicada el con [100 de la versión de seguridad de la aplicación de Microsoft en la nube](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-100)**: 
   
 - **Extensiones de seguridad** es un nuevo panel, donde puede administrar centralmente todas las extensiones de seguridad para Office 365 en la nube seguridad de la aplicación, incluidos los tokens de API y los agentes SIEM. Para ver el panel de extensiones de seguridad, siga estos pasos: 
     

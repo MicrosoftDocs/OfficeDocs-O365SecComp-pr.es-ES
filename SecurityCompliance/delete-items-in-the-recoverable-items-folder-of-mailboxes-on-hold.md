@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: 'Para los administradores: eliminar elementos de carpeta de elementos recuperables de un usuario para un buzón de Exchange Online, incluso si ese buzón se coloca en retención legal. Esto es una forma eficaz para eliminar los datos que se ha derramado accidentalmente en Office 365.'
-ms.openlocfilehash: 0519e389f05ed9952090fb9b163a05d18e3bd762
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: c984bcaa35a9bc7bc30e11d68ba8f7f0ce75b64d
+ms.sourcegitcommit: 31e0d94244c76a9f5118efee8bbc93395d080f91
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23014034"
+ms.lasthandoff: 09/01/2018
+ms.locfileid: "23796886"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold---admin-help"></a>Eliminar elementos de la carpeta elementos recuperables de los buzones de correo basados en la nube en espera - ayuda de administración
 
@@ -110,7 +110,7 @@ Además, debe obtener el buzón de correo en configuración de acceso de cliente
 
    Si se habilita el buzón de archivo del usuario, ejecute el siguiente comando para obtener el tamaño y el número total de elementos en carpetas y subcarpetas en la carpeta elementos recuperables en su buzón de archivo. 
 
-    ```
+    ```s
     Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems -Archive | FL Name,FolderAndSubfolderSize,ItemsInFolderAndSubfolders
     ```
 
