@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: Usar la búsqueda de contenido en la seguridad de Office 365 &amp; centro de cumplimiento para buscar contenido en los buzones de correo, sitios de SharePoint Online, OneDrive cuentas, Microsoft Teams, grupos de Office 365 y Skype para conversaciones de negocios. Puede usar las consultas de búsqueda de palabra clave y las condiciones para restringir los resultados de búsqueda de búsqueda. A continuación, puede obtener una vista previa y exportar los resultados de búsqueda. Búsqueda de contenido también es una herramienta eficaz para buscar contenido que puede estar relacionado con una solicitud de asunto GDPR datos.
-ms.openlocfilehash: f0064ae08226b1b0e864b25bb845054184f1efa4
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 11e96c6a11dd66c0095b7c624413e9e39036d8d6
+ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22536878"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "23782087"
 ---
 # <a name="content-search-in-office-365"></a>Búsqueda de contenido en Office 365
 
@@ -75,7 +75,7 @@ Para tener acceso a la página de **búsqueda de contenido** para ejecutar búsq
     
     ¿Por qué usar la lista de palabras clave? Puede obtener estadísticas que muestran cuántos elementos coinciden con cada palabra clave. Esto puede ayudarle a identificar rápidamente las palabras clave son los más (y menos) eficaces. También puede usar una frase de palabras clave (entre paréntesis) en una fila. Para obtener más información acerca de las estadísticas de búsqueda, vea [Ver las estadísticas de palabra clave para los resultados de la búsqueda de contenido](view-keyword-statistics-for-content-search.md).
     
-- **Condiciones** - puede agregar condiciones de búsqueda para restringir una búsqueda y devolver un conjunto de resultados más refinado. Cada condición agrega una cláusula a la consulta de búsqueda de palabras clave que se crean y ejecutan cuando se inicia la búsqueda. Una condición lógicamente está conectada a la consulta de palabras clave (especificada en el cuadro de palabra clave) por un operador lógico ( **c: c**) que es una funcionalidad similar para el operador **y** . Esto significa que los elementos tengan que satisfacer la consulta de palabras clave y una o varias condiciones que se deben incluir en los resultados. Se trata de cómo ayudar a condiciones para limitar los resultados. Para obtener una lista y descripción de las condiciones que puede utilizar en una consulta de búsqueda, vea la sección "Las condiciones de búsqueda" en [las consultas de palabra clave y las condiciones de búsqueda para la búsqueda de contenido](keyword-queries-and-search-conditions.md#search-conditions).
+- **Condiciones** - puede agregar condiciones de búsqueda para restringir una búsqueda y devolver un conjunto de resultados más refinado. Cada condición agrega una cláusula a la consulta de búsqueda que se crean y ejecutan cuando se inicia la búsqueda. Una condición lógicamente está conectada a la consulta de palabras clave (especificada en el cuadro de palabra clave) por un operador lógico ( **c: c**) que es una funcionalidad similar para el operador **y** . Esto significa que los elementos tengan que satisfacer la consulta de palabras clave y una o varias condiciones que se deben incluir en los resultados. Se trata de cómo ayudar a condiciones para limitar los resultados. Para obtener una lista y descripción de las condiciones que puede utilizar en una consulta de búsqueda, vea la sección "Las condiciones de búsqueda" en [las consultas de palabra clave y las condiciones de búsqueda para la búsqueda de contenido](keyword-queries-and-search-conditions.md#search-conditions).
     
 - **Ubicaciones** - elija las ubicaciones para buscar contenidas.
     
