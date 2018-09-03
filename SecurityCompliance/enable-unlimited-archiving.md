@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: e2a789f2-9962-4960-9fd4-a00aa063559e
 description: 'Para los administradores: Obtenga información sobre cómo habilitar el archivado en Office 365, que proporciona a los usuarios con el almacenamiento ilimitado para sus buzones de Exchange Online de ampliación automática. Puede habilitar la ampliación automática de archivado para toda la organización o solo para usuarios específicos.'
-ms.openlocfilehash: 823e4ed0049e7a28a6c97c4045fb75987f43db5f
-ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
+ms.openlocfilehash: ede3e75a021d750160268ccf06ac4fe1637d219a
+ms.sourcegitcommit: 81c2fd5cd940c51bc43ac7858c7bdfa207ce401a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "23782157"
+ms.lasthandoff: 09/03/2018
+ms.locfileid: "23809705"
 ---
 # <a name="enable-unlimited-archiving-in-office-365---admin-help"></a>Habilitar el archivado ilimitado en Office 365 - ayuda de administración
 
@@ -54,7 +54,7 @@ Puede habilitar la ampliación automática de archivado para toda la organizaci�
 
 En lugar de habilitar la ampliación automática de archivado para todos los usuarios de su organización, sólo puede habilitarla para usuarios específicos. Puede hacerlo debido a que sólo algunos usuarios puedan tener una necesidad de un almacenamiento de archivos muy grandes.
   
-Cuando se habilita la expansión automática de archivado para un usuario específico, también se realizan los siguientes cambios de dos configuraciones:
+Cuando se habilita el crecimiento automático archivado para un usuario específico y el buzón del usuario en espera o asignado a una directiva de retención de Office 365, se realizan los siguientes cambios de dos configuraciones:
   
 - La cuota de almacenamiento para el buzón del usuario archivo principal se aumenta por 10 GB (de 100 GB a 110 GB). La cuota de advertencia de archivo también se aumenta por 10 GB (de 90 GB a 100 GB).
     
