@@ -5,31 +5,34 @@ author: kccross
 manager: laurawi
 ms.audience: ITPro
 ms.topic: article
-ms.prod: office-online-server
+ms.date: 9/5/2018
+ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 description: Protección contra suplantación de identidad de ATP, parte de Office 365 avanzada protección contra amenazas, puede ayudar a proteger su organización frente a ataques de suplantación de identidad basada en suplantación malintencionado y otros ataques de suplantación de identidad. Si usted es un Office 365 información global de empresa o un administrador de seguridad, puede configurar las directivas de ATP contra suplantación de identidad. Suplantación de identidad ataques proceden de en una gran variedad de formularios ataques de mercancía a phishing lanza dirigido o whaling. Con la creciente complejidad, es difícil para incluso un ojo capacitado identificar algunos de estos ataques sofisticados. Afortunadamente, puede ayudar la protección de amenaza avanzada de Office 365. Puede configurar una directiva de anti-phishing ATP para ayudar a garantizar que la organización está protegida frente a estos ataques.
-ms.openlocfilehash: 2f2258c4059d17410fd040782d7ee9dfca12576d
-ms.sourcegitcommit: 4c6c937ec51e8b754332e4c1c8d286e73e197e2c
+ms.openlocfilehash: 5c93ae5de7d7b021dbe1c1da682e35799938e456
+ms.sourcegitcommit: a8884b9675559018e1fddec1c0cc2de0bc3bdde5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/04/2018
-ms.locfileid: "23827084"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "23839970"
 ---
 # <a name="set-up-office-365-atp-anti-phishing-policies"></a>Configurar las directivas de ATP contra suplantación de identidad de Office 365
 
-[Protección contra suplantación de identidad de ATP](atp-anti-phishing.md) , parte de [La protección de amenaza avanzada de Office 365](office-365-atp.md), puede ayudar a proteger su organización frente a ataques de suplantación de identidad basada en suplantación malintencionado y otros ataques de suplantación de identidad. Si usted es un Office 365 información global de empresa o un administrador de seguridad, puede configurar las directivas de ATP contra suplantación de identidad. Suplantación de identidad ataques proceden de en una gran variedad de formularios ataques de mercancía a phishing lanza dirigido o whaling. Con la creciente complejidad, es difícil para incluso un ojo capacitado identificar algunos de estos ataques sofisticados. Afortunadamente, puede ayudar la protección de amenaza avanzada de Office 365. Puede configurar una directiva de anti-phishing ATP para ayudar a garantizar que la organización está protegida frente a estos ataques.
+[Protección contra suplantación de identidad de ATP](atp-anti-phishing.md), parte de [La protección de amenaza avanzada de Office 365](office-365-atp.md), puede ayudar a proteger su organización frente a ataques de suplantación de identidad basada en suplantación malintencionado y otros ataques de suplantación de identidad. Si usted es un Office 365 información global de empresa o un administrador de seguridad, puede configurar las directivas de ATP contra suplantación de identidad. 
+
+Suplantación de identidad ataques proceden de en una gran variedad de formularios ataques de mercancía a phishing lanza dirigido o whaling. Con la creciente complejidad, es difícil para incluso un ojo capacitado identificar algunos de estos ataques sofisticados. Afortunadamente, puede ayudar la protección de amenaza avanzada de Office 365. Puede configurar una directiva de anti-phishing ATP para ayudar a garantizar que la organización está protegida frente a estos ataques.
   
 > [!NOTE]
 > Sólo está disponible en avanzada protección contra amenazas, disponibles con Office 365 Enterprise E5 ATP contra suplantación de identidad. Si su organización usa otra suscripción de Office 365 Enterprise, protección avanzada de amenaza puede adquirirse como un complemento. (Como un administrador global, en el centro de administración de Office 365, elija **facturación** \> **Agregar suscripciones**.) Para obtener más información acerca de las opciones del plan, consulte [comparar todos los Office 365 para planes de negocios](https://go.microsoft.com/fwlink/?linkid=844053). Asegúrese de que su organización usa la versión más reciente de Office 365 ProPlus en Windows para aprovechar al máximo de protección contra suplantación de identidad de ATP. 
   
 Lo que debe hacer:
   
-1. [Revise los requisitos previos](#review-the-prerequisites)
+1. Revise los requisitos previos.
     
-2. [Obtenga información acerca de las opciones de directiva contra suplantación de identidad de ATP](#learn-about-atp-anti-phishing-policy-options)
+2. Obtenga información acerca de las opciones de directiva contra suplantación de identidad de ATP.
     
-3. [Establecer una directiva de ATP contra suplantación de identidad](#set-up-an-atp-anti-phishing-policy)
+3. Establecer una directiva de ATP contra suplantación de identidad.
     
 ## <a name="review-the-prerequisites"></a>Revise los requisitos previos
 
@@ -45,7 +48,7 @@ Lo que debe hacer:
     
 ## <a name="set-up-an-atp-anti-phishing-policy"></a>Establecer una directiva de ATP contra suplantación de identidad
 
-Agregar, editar y eliminar directivas de ATP contra suplantación de identidad en la seguridad de Office 365 &amp; centro de cumplimiento.
+Cada organización en Office 365 tiene una directiva contra suplantación de identidad predeterminada que se aplica a todos los usuarios. También puede crear varias directivas contra suplantación de identidad personalizadas que puede delimitar a determinados usuarios, grupos o dominios dentro de la organización. Las directivas personalizadas que cree tendrán prioridad sobre la directiva predeterminada. Agregar, editar y eliminar directivas de ATP contra suplantación de identidad en la seguridad de Office 365 &amp; centro de cumplimiento.
   
 1. Vaya a [https://protection.office.com](https://protection.office.com) y el inicio de sesión con la cuenta de trabajo o escuela. 
     
@@ -57,7 +60,7 @@ Agregar, editar y eliminar directivas de ATP contra suplantación de identidad e
     
   - Para agregar una nueva directiva seleccione **+ crear**.
     
-  - Para editar una directiva existente, seleccione el nombre de la directiva de la lista que aparece en la página **contra suplantación de identidad** . En la página que aparece, elija **Editar directiva**.
+  - Para editar una directiva existente, seleccione el nombre de la directiva de la lista que aparece en la página de **Anti-phishing** o elija **Directiva predeterminada** encima de la lista para editar el poicy predeterminado para su organización. En la página que aparece, elija **Editar directiva**.  
     
     Se inicia un asistente que le guiará en el proceso de definición de la directiva contra suplantación de identidad.
     
@@ -96,7 +99,7 @@ El Administrador de seguridad de Contoso es posible que use valores como la sigu
 |||
 |:-----|:-----|
 |**Configuración o la opción** <br/> |**Ejemplo** <br/> |
-|Name  <br/> |Dominio y consejero Delegado  <br/> |
+|Nombre  <br/> |Dominio y consejero Delegado  <br/> |
 |Descripción  <br/> |Asegúrese de que el director general y nuestro dominio no son suplantados.  <br/> |
 |Agregar usuarios a proteger  <br/> |Dirección de correo electrónico del CEO como mínimo.  <br/> |
 |Agregar dominios para proteger  <br/> |El dominio organizativo que incluye la oficina del CEO.  <br/> |
@@ -107,7 +110,7 @@ El Administrador de seguridad de Contoso es posible que use valores como la sigu
    
 ## <a name="delete-an-atp-anti-phishing-policy"></a>Eliminar una directiva de ATP contra suplantación de identidad
 
-Puede agregar y editar las directivas de la seguridad &amp; centro de cumplimiento. Se recomienda usar la seguridad &amp; centro de cumplimiento para revisar o modificar cualquiera de las directivas de ATP.
+Puede eliminar las directivas personalizadas que ha creado mediante el uso de la seguridad &amp; centro de cumplimiento. No se puede eliminar la directiva predeterminada para la organización. Se recomienda usar la seguridad &amp; centro de cumplimiento para revisar o modificar cualquiera de las directivas de ATP.
   
 1. Vaya a [https://protection.office.com](https://protection.office.com) y el inicio de sesión con la cuenta de trabajo o escuela. 
     
