@@ -3,7 +3,7 @@ title: Quitar un usuario, un dominio o una dirección IP de una lista de bloquea
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 6/20/2018
+ms.date: 09/05/2018
 ms.audience: ITPro
 ms.topic: article
 f1_keywords:
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 description: Si un usuario envía continuamente mensajes de correo electrónico de Office 365 que se clasifica como correo no deseado, se bloqueará de enviar más mensajes.
-ms.openlocfilehash: 87b7083fe1345a15ea582f12a5b0d417bbe6b568
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 3f3130bec3cde4cdc1343a0140a9013deacfc519
+ms.sourcegitcommit: d85fc77cba3a17d5ddf215e2f506f61b499e0cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002613"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "23839114"
 ---
 # <a name="removing-a-user-domain-or-ip-address-from-a-block-list-after-sending-spam-email"></a>Quitar un usuario, un dominio o una dirección IP de una lista de bloqueados después de enviar correo no deseado
 
@@ -34,27 +34,19 @@ Configuración de correo no deseado saliente puede configurar para que obtener a
   
 ## <a name="unblock-a-blocked-office-365-email-account"></a>Desbloquear una cuenta de correo electrónico de Office 365
 
-Complete esta tarea en el centro de administración de Exchange (EAC). Desproteger [Exchange centro de administración en Exchange Online Protection](exchange-admin-center-in-exchange-online-protection-eop.md) para obtener información detallada sobre el CEF. 
-  
-> [!NOTE]
-> No verá el centro de actividades a no ser que se encuentre en el EAC de Exchange Online. 
-  
-1. En el EAC, vaya a **protección** \> **Centro de acción**.
+Complete esta tarea en la seguridad de Office 365 & Centro de cumplimiento (SCC). Para obtener más información acerca de control de código fuente, [vaya a la seguridad de Office 365 & Centro de cumplimiento](go-to-the-securitycompliance-center.md) .
+
+1. Utilizando una cuenta de trabajo o escuela que tiene privilegios de administrador global de Office 365, inicie sesión en el centro de cumplimiento y seguridad de Office 365 y en la lista de la izquierda, expanda **Administración de amenaza**, elija la **revisión**y, a continuación, elija **restringidos Los usuarios**.
     
-    ![Vaya al Centro de actividades del Centro de administración de Exchange.](media/9bbf0844-7b34-4a86-a2b7-8c7e9c8519a3.png)
-  
-2. Seleccione el icono de **búsqueda** y, a continuación, escriba la dirección SMTP del usuario bloqueado. 
-    
-    ![Buscar a un usuario bloqueado en el Centro de actividades](media/f931b5a0-7115-4d95-9f6f-b403436031ba.png)
-  
-3. Haga clic en **Desbloquear la cuenta** en el panel Descripción. 
-    
-    ![Desbloquear a un usuario en el Centro de actividades](media/c5d5b1b9-8416-45aa-9631-881e94d1d056.png)
-  
-4. Haga clic en **Sí** para confirmar el cambio. 
+    > [!TIP]
+    > Para ir directamente a la página **Usuarios restringidos** en la seguridad &amp; centro de cumplimiento, use esta dirección URL: >[https://protection.office.com/?hash=/restrictedusers](https://protection.office.com/?hash=/restrictedusers)
+
+2. Esta página contendrá la lista de usuarios que se han bloqueado de envío de correo a fuera de la organización.  Busque el usuario o usuarios que desea quitar las restricciones y, a continuación, haga clic en **desbloquear**.
+
+3. Haga clic en **Sí** para confirmar el cambio. 
     
 > [!NOTE]
-> Hay un límite para el número de veces que una cuenta puede ser desbloqueada por el Administrador de inquilinos. Si se ha superado el límite de un usuario, aparece un mensaje de error. Póngase en contacto con soporte técnico para desbloquear el usuario. 
+> Hay un límite para el número de veces que una cuenta puede ser desbloqueada por el Administrador de inquilinos. Si se ha superado el límite de un usuario, aparece un mensaje de error. A continuación, debe ponerse en contacto con soporte técnico para desbloquear el usuario. 
   
 ## <a name="third-party-block-lists"></a>Listas de bloqueados de terceros
 

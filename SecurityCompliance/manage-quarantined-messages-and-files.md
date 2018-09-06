@@ -3,7 +3,7 @@ title: Administrar mensajes en cuarentena y los archivos como un administrador e
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 5/19/2018
+ms.date: 09/05/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
 description: 'Como administrador, puede ver, liberar y notificar mensajes en cuarentena de falsos positivos en Office 365. Puede configurar directivas para que Office 365 filtra los mensajes y los envía a cuarentena por varias razones: debido a que se han identificado como spam, masiva, suplantación de identidad, malware, o porque coincide con una regla de flujo de correo. '
-ms.openlocfilehash: f30604da185b3455d89ae7c1206bda2149ef7778
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: be6384d8937e25aec55d82d8212c49d25b64b9a1
+ms.sourcegitcommit: d85fc77cba3a17d5ddf215e2f506f61b499e0cda
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22536247"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "23839104"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-administrator-in-office-365"></a>Administrar mensajes en cuarentena y los archivos como un administrador en Office 365
 
@@ -34,7 +34,7 @@ Debe tener permisos de administrador en Office 365 para trabajar con los mensaje
   
 ## <a name="view-your-organizations-quarantined-messages"></a>Ver los mensajes en cuarentena de su organización
 
-1. Utilizando una cuenta de trabajo o escuela que tiene privilegios de administrador global en su 365organization de Office, inicie sesión en Office 365 y [vaya a la seguridad y el centro de cumplimiento](go-to-the-securitycompliance-center.md).
+1. Uso de una cuenta de trabajo o escuela que tiene privilegios de administrador global de la organización de Office 365, inicie sesión en Office 365 y [vaya al centro de cumplimiento y seguridad](go-to-the-securitycompliance-center.md).
     
 2. En la lista de la izquierda, expanda **Administración de amenaza**, elija la **revisión**y, a continuación, elija la **cuarentena**.
     
