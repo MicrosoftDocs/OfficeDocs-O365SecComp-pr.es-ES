@@ -3,7 +3,6 @@ title: Configurar notificaciones de correo no deseado para el usuario final en E
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 11/17/2014
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: e9947db5-1dd1-4493-872d-7362b24c7ba0
 description: Las notificaciones de correo no deseado para el usuario final se pueden configurar en la directiva de filtro de contenido de toda la compañía, o bien en las directivas de filtro de contenido personalizadas que se aplican a los dominios.
-ms.openlocfilehash: 990fa31cc22b33d235d6e8f106511996a52212a2
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 3acb825a0b9e15c01c8b1c3266289c273b323d88
+ms.sourcegitcommit: 234a22c61859133ed5e7988a9551a569781518a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002929"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "23875802"
 ---
 # <a name="configure-end-user-spam-notifications-in-eop"></a>Configurar notificaciones de correo no deseado para el usuario final en EOP
   
@@ -29,9 +28,21 @@ Las notificaciones de correo no deseado para el usuario final se pueden configur
   
 Las notificaciones de correo no deseado para el usuario final contienen una lista de los mensajes de correo no deseado puestos en cuarentena que recibió el usuario final durante el período de tiempo que usted configure (puede especificar cualquier valor entre 1 y 15 días). También puede configurar el idioma en el que está escrito el mensaje de notificación.
   
-Tras recibir un mensaje de notificación, los usuarios finales pueden hacer clic en el correo electrónico no deseado para moverlo a su Bandeja de entrada o informar de que el correo es deseado, en cuyo caso se enviará al equipo de análisis de correo no deseado de Microsoft.
+Después de recibir un mensaje de notificación, los usuarios finales puede elegir entre las siguientes opciones:
+
+**Vista previa** del mensaje si desea obtener una vista previa del contenido o encabezado antes de realizar ninguna acción.
+
+**Descargar** el mensaje si desea revisar el mensaje y los datos adjuntos (si hay alguno) en su dispositivo antes de realizar ninguna acción.
+
+**Versión** si el mensaje no es correo no deseado y se desea que Office 365 para enviar el mensaje a su buzón de correo.
+
+**Versión & Permitir remitente** si el mensaje no es correo no deseado y se desea que Office 365 para agregar el remitente a los remitentes seguros y la lista de destinatarios para futuros mensajes de correo electrónico. Tenga en cuenta que el administrador puede tener otras configuraciones de permitir o bloquear amplia de organización que reemplazar la lista de remitentes seguros.
+
+**Versión & informe**, si el mensaje no es correo no deseado y desea enviar el mensaje a su buzón de correo y notificar a Microsoft para su análisis.
+
+**Bloque** si desea que Office 365 para agregar el remitente a la lista de remitentes bloqueados.
   
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 <a name="sectionSection0"> </a>
 
 Tiempo estimado para finalizar: 5 minutos
