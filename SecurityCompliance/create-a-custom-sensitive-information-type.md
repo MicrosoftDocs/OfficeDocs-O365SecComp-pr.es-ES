@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 82c382a5-b6db-44fd-995d-b333b3c7fc30
 description: Si tiene que identificar y proteger otro tipo de información confidencial (por ejemplo, un id. de empleado en el que se use un formato específico de su organización), puede crear un tipo personalizado de información confidencial. Los tipos de información confidencial se definen en un archivo XML denominado "paquete de reglas". En este tema se muestra cómo crear un archivo XML en el que se defina un tipo personalizado de información confidencial. Para ello, es necesario saber cómo crear una expresión regular.
-ms.openlocfilehash: 65e55832a88ec7b31dba55930cc90960aa33a20d
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 56683dd8ceac286f79084d2c2f19f48f5849a02f
+ms.sourcegitcommit: 4be502d1fc6cbaef4c72d599758d51efe3a173c9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22535747"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "23849433"
 ---
 # <a name="create-a-custom-sensitive-information-type"></a>Creación de un tipo personalizado de información confidencial
 
@@ -30,6 +30,12 @@ Sin embargo, si debe identificar y proteger otro tipo de información confidenci
 En este tema, se muestra cómo crear un archivo XML donde se define su propio tipo personalizado de información confidencial. Necesita saber cómo crear una expresión regular. Por ejemplo, en este tema se crea un tipo personalizado de información confidencial que identifica un id. de empleado. Puede usar este XML de ejemplo como punto de inicio para crear su propio archivo XML.
   
 Después de crear un archivo XML con formato correcto, puede cargarlo en Office 365 mediante PowerShell. Después, ya estará listo para usar su propio tipo personalizado de información confidencial en sus directivas DLP y comprobar si detecta la información confidencial del modo previsto.
+
+## <a name="important-disclaimer"></a>Declinación de responsabilidades importante
+
+Debido a las varianzas de los entornos de cliente y los requisitos de coincidencia de contenido, Microsoft Support no puede ayudar a proporcionar definiciones de contenido coincidente personalizadas: por ejemplo, definir clasificaciones personalizadas o patrones de expresiones regulares (“RegEx”). Para el desarrollo, las pruebas y la depuración de contenido coincidente personalizado, los clientes de Office 365 tendrán que basarse en recursos de TI internos o usar un recurso externo de consultoría como Microsoft Consulting Services (MCS). Los ingenieros de soporte técnico pueden proporcionar soporte técnico limitado para la característica, pero no pueden garantizar que cualquier desarrollo personalizado de contenido coincidente cumplirá los requisitos y obligaciones del cliente. Pueden proporcionarse modelos de expresiones regulares de muestra con fines de prueba como ejemplo del tipo de asistencia que se puede proporcionar, o el servicio de soporte técnico puede ayudarle a solucionar problemas de un diseño RegEx existente que no se desencadena como se esperaba con un único ejemplo de contenido específico.
+
+ Para obtener más información sobre el motor de RegEx de .NET que se usa para el procesamiento de texto, vea la documentación en [Expresiones regulares de .NET](https://docs.microsoft.com/es-ES/dotnet/standard/base-types/regular-expressions).
     
 ## <a name="sample-xml-of-a-rule-package"></a>XML de ejemplo de un paquete de reglas
 
