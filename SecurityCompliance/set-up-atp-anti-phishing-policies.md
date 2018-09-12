@@ -10,12 +10,12 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 description: Protección contra suplantación de identidad de ATP, parte de Office 365 avanzada protección contra amenazas, puede ayudar a proteger su organización frente a ataques de suplantación de identidad basada en suplantación malintencionado y otros ataques de suplantación de identidad. Si usted es un Office 365 información global de empresa o un administrador de seguridad, puede configurar las directivas de ATP contra suplantación de identidad. Suplantación de identidad ataques proceden de en una gran variedad de formularios ataques de mercancía a phishing lanza dirigido o whaling. Con la creciente complejidad, es difícil para incluso un ojo capacitado identificar algunos de estos ataques sofisticados. Afortunadamente, puede ayudar la protección de amenaza avanzada de Office 365. Puede configurar una directiva de anti-phishing ATP para ayudar a garantizar que la organización está protegida frente a estos ataques.
-ms.openlocfilehash: 5c93ae5de7d7b021dbe1c1da682e35799938e456
-ms.sourcegitcommit: a8884b9675559018e1fddec1c0cc2de0bc3bdde5
+ms.openlocfilehash: 9ceef88a2d60a10a8911e7559e10850858015977
+ms.sourcegitcommit: d89c24258123a3ffde574a391d59afd3aea8470d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "23839970"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "23955452"
 ---
 # <a name="set-up-office-365-atp-anti-phishing-policies"></a>Configurar las directivas de ATP contra suplantación de identidad de Office 365
 
@@ -38,7 +38,7 @@ Lo que debe hacer:
 
 - Asegúrese de que es un miembro del grupo de roles de **administradores de empresa** o de **administradores de seguridad** . 
     
-- [Obtenga información acerca de las opciones de directiva contra suplantación de identidad de ATP](set-up-atp-anti-phishing-policies.md#phishpolicyoptions) (en este artículo). 
+- [Obtenga información acerca de las opciones de directiva contra suplantación de identidad de ATP](set-up-atp-anti-phishing-policies.md#learn-about-atp-anti-phishing-policy-options) (en este artículo). 
     
 - Probablemente se instalará varias directivas contra suplantación de identidad de ATP para su organización. Office 365 aplica estas directivas en el orden en que aparecen en la página de **ATP contra suplantación de identidad** en la seguridad &amp; centro de cumplimiento. Una vez que haya revisado las opciones de directiva, se necesite algún tiempo para determinar cuántas directivas que necesitará y la prioridad para cada uno. 
     

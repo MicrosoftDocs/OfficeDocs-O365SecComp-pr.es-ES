@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: eef8408b-54d3-4d7d-9cf7-ad2af10b2e0e
 description: 'Para ayudar a evitar la suplantación de identidad, Office 365 y Outlook.com ahora requieren cumplimiento del RFC desde: direcciones.'
-ms.openlocfilehash: 562e08aa54cb6544beccb6f0e8760735f67b834b
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 8425d4ef7635c2beddcd7915daf73736432d4ca9
+ms.sourcegitcommit: d89c24258123a3ffde574a391d59afd3aea8470d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22535636"
+ms.lasthandoff: 09/12/2018
+ms.locfileid: "23955432"
 ---
 # <a name="how-office-365-validates-the-from-address-to-prevent-phishing"></a>Forma en que Office 365 valida la dirección para evitar la suplantación de identidad
 
@@ -35,8 +35,6 @@ Se iniciará Microsoft implantar la aplicación de las directivas que se describ
 
 Office 365 está realizando cambios en la forma en exige el uso de From: dirección en los mensajes que recibe mejor con el fin de proteger al equipo contra los ataques de suplantación de identidad. En este artículo:
   
-- [Todos los mensajes deben incluir válido desde: dirección](how-office-365-validates-the-from-address.md#MustIncludeFromAddress)
-    
 - [Todos los mensajes deben incluir válido desde: dirección](how-office-365-validates-the-from-address.md#MustIncludeFromAddress)
     
 - [Formato de From: si no incluye un nombre para mostrar de direcciones](how-office-365-validates-the-from-address.md#FormatNoDisplayName)
