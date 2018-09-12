@@ -10,11 +10,9 @@
 ## [Usar su suscripción gratuita de Azure Active Directory](use-your-free-azure-ad-subscription-in-office-365.md)
 ## [Planificación de la seguridad y el cumplimiento en Office 365](plan-for-security-and-compliance.md)
 ## [Usar el explorador en el Centro de cumplimiento y seguridad](use-explorer-in-security-and-compliance.md)
-
 # Proteger el acceso a datos y servicios
 ## [Proteger el acceso a datos y servicios de Office 365](protect-access-to-data-and-services.md)
 ## [Elegir entre MDM e Intune](choose-between-mdm-and-intune.md)
-
 # [Evitar la pérdida de datos (DLP)](data-loss-prevention-policies.md)
 ## [Ver una descripción general ampliada de DLP](https://go.microsoft.com/fwlink/?linkid=852300)
 ## Configurar DLP
@@ -34,7 +32,6 @@
 ### [Personalizar un tipo de información confidencial integrado](customize-a-built-in-sensitive-information-type.md)
 ### [Crear un tipo de información confidencial](create-a-custom-sensitive-information-type.md)
 ### [Crear un diccionario de palabras clave](create-a-keyword-dictionary.md)
-
 # Administrar el gobierno de datos        
 ## [Importar datos](importing-pst-files-to-office-365.md)
 ### [Usar la carga en la red para importar archivos PST](use-network-upload-to-import-pst-files.md)
@@ -68,7 +65,6 @@
 ### [Informes de supervisión](supervision-reports.md)
 ## Más información sobre el gobierno de datos
 ### [Ver vídeos del equipo de gobierno de datos de Microsoft](https://go.microsoft.com/fwlink/?linkid=867039)
-
 # [Protección contra amenazas](protect-against-threats.md)
 ## [Protección contra correo no deseado y malware](anti-spam-and-anti-malware-protection.md)
 ### [Protección contra suplantación de identidad (phishing) en Office 365](anti-phishing-protection.md)
@@ -142,7 +138,6 @@
 ### [Buscar y liberar mensajes en cuarentena como usuario](find-and-release-quarantined-messages-as-a-user.md)
 ### [Preguntas más frecuentes sobre cuarentena para Office 365](quarantine-faq.md)
 ### [Usar notificaciones de correo no deseado para el usuario para liberar y notificar mensajes de correo en cuarentena en Office 365](use-spam-notifications-to-release-and-report-quarantined-messages.md)
-
 # [Buscar contenido](search-for-content.md)
 ## [Usar búsqueda de contenido](content-search.md)
 ### [Consultas de palabras clave y condiciones de búsqueda para la búsqueda de contenido](keyword-queries-and-search-conditions.md).
@@ -172,7 +167,6 @@
 ### [Usar búsqueda de contenido para buscar una lista de usuarios en el buzón y el sitio de OneDrive para la Empresa](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md)
 ### [Crear, informar sobre y eliminar varias búsquedas de contenido](create-report-on-and-delete-multiple-content-searches.md)
 ### [Clonar una búsqueda de contenido](clone-a-content-search.md)
-
 # [Administración de investigaciones legales](manage-legal-investigations.md)
 ## [Crear y administrar casos de eDiscovery](ediscovery-cases.md)
 ## [Asignar permisos de eDiscovery](assign-ediscovery-permissions.md)
@@ -223,15 +217,13 @@
 ### [Establecer opciones avanzadas de analizar en eDiscovery avanzado de Office 365](set-analyze-options-in-advanced-ediscovery.md)
 ### [Comprender la evaluación de relevancia en eDiscovery avanzado de Office 365](assessment-in-relevance-in-advanced-ediscovery.md)
 ### [Búsqueda y etiquetado](search-and-tagging.md)
-
 # [Buscar en el registro de auditoría](search-the-audit-log-in-security-and-compliance.md)
 ## [Activar o desactivar la búsqueda de registros de auditoría](turn-audit-log-search-on-or-off.md)
 ## [Habilitar la auditoría de buzones de correo](enable-mailbox-auditing.md)
 ## [Propiedades detalladas del registro de auditoría](detailed-properties-in-the-office-365-audit-log.md)
 ## [Usar el uso compartido de auditoría en el registro de auditoría](use-sharing-auditing.md)
 ## [Buscar actividades de eDiscovery en el registro de auditoría](search-for-ediscovery-activities-in-the-audit-log.md)
-
-# Supervisión de la seguridad y el cumplimiento
+# [Supervisión de seguridad y cumplimiento](monitor-security-and-compliance.md)
 ## [Directivas de alerta](alert-policies.md)
 ### [Crear alertas de actividad](create-activity-alerts.md)
 ## [Informes inteligentes y reportes en el Centro de cumplimiento y seguridad](reports-and-insights-in-security-and-compliance.md)
@@ -245,7 +237,6 @@
 #### [Descargar informes existentes](download-existing-reports.md)
 ## [Habilitar o deshabilitar las sugerencias de seguridad en Office 365](enable-or-disable-safety-tips.md)
 ## [Habilite el complemento de mensajes de informe](enable-the-report-message-add-in.md)
-
 # Soluciones de seguridad
 ## [Instrucciones de seguridad de Microsoft para campañas políticas, organizaciones sin ánimo de lucro y otras organizaciones ágiles](https://docs.microsoft.com/Office365/Enterprise/microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o)
 ### [Configurar grupos y usuarios en un entorno de desarrollo y prueba de campaña política](https://docs.microsoft.com/Office365/Enterprise/configure-groups-and-users-for-a-political-campaign-dev-test-environment)
@@ -264,28 +255,27 @@
 # Soluciones de cumplimiento
 ## [Usar el Administrador de cumplimiento para satisfacer los requisitos normativos y de protección de datos al usar los servicios de nube de Microsoft](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
 ## [Administrar solicitudes de asunto de datos RGPD con la herramienta de casos DSR](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)
-## [Information Protection de Office 365 para RGPD](https://docs.microsoft.com/Office365/Enterprise/office-365-information-protection-for-gdpr)
-### [Introducción: Protección de Office 365 para RGPD](https://docs.microsoft.com/Office365/Enterprise/office-365-info-protection-for-gdpr-overview)
-### [Buscar y encontrar datos personales](https://docs.microsoft.com/Office365/Enterprise/search-for-and-find-personal-data)
-### [Personalizar o crear un nuevo tipo de información confidencial para RGPD](https://docs.microsoft.com/Office365/Enterprise/customize-or-create-a-new-sensitive-information-type)
-### [Diseño de un esquema de clasificación de planes personales](https://docs.microsoft.com/Office365/Enterprise/architect-a-classification-schema-for-personal-data)
-### [Aplicar etiquetas a datos personales en Office 365](https://docs.microsoft.com/Office365/Enterprise/apply-labels-to-personal-data-in-office-365)
-### [Aplicar protección a los datos personales de Office 365](https://docs.microsoft.com/Office365/Enterprise/apply-protection-to-personal-data-in-office-365)
-### [Supervisar pérdidas de datos personales](https://docs.microsoft.com/Office365/Enterprise/monitor-for-leaks-of-personal-data)
-### [Entorno de desarrollo y pruebas de RGPD para Office 365](https://docs.microsoft.com/Office365/Enterprise/gdpr-discovery-protection-reporting-in-office365-dev-test-environment)
-## RGPD para servidores locales de Office
-### [RGPD para SharePoint Server](https://docs.microsoft.com/Office365/Enterprise/gdpr-for-sharepoint-server)
-### [RGPD para Exchange Server](https://docs.microsoft.com/Office365/Enterprise/gdpr-for-exchange-server)
-### [RGPD para Skype Empresarial Server y Lync Server](https://docs.microsoft.com/Office365/Enterprise/gdpr-for-skype-for-business-server)
-### [RGPD para Project Server](https://docs.microsoft.com/Office365/Enterprise/gdpr-for-project-server)
-### [RGPD para Office Web Apps Server y Office Online Server](https://docs.microsoft.com/Office365/Enterprise/gdpr-for-office-online-server)
-### [RGPD para uso compartido de archivos de Windows Server local](https://docs.microsoft.com/Office365/Enterprise/gdpr-for-on-premises-file-shares)
+## [Information Protection de Office 365 para RGPD](office-365-information-protection-for-gdpr.md)
+### [Introducción: Protección de Office 365 para RGPD](office-365-info-protection-for-gdpr-overview.md)
+### [Buscar y encontrar datos personales](search-for-and-find-personal-data.md)
+### [Personalizar o crear un nuevo tipo de información confidencial para RGPD](customize-or-create-a-new-sensitive-information-type.md)
+### [Diseño de un esquema de clasificación de planes personales](architect-a-classification-schema-for-personal-data.md)
+### [Aplicar etiquetas a datos personales en Office 365](apply-labels-to-personal-data-in-office-365.md)
+### [Aplicar protección a los datos personales de Office 365](apply-protection-to-personal-data-in-office-365.md)
+### [Supervisar pérdidas de datos personales](monitor-for-leaks-of-personal-data.md)
+### [Entorno de desarrollo y pruebas de RGPD para Office 365](gdpr-discovery-protection-reporting-in-office365-dev-test-environment.md)
+## [RGPD para servidores locales de Office](gdpr-for-office-servers.md)
+### [RGPD para SharePoint Server](gdpr-for-sharepoint-server.md)
+### [RGPD para Exchange Server](gdpr-for-exchange-server.md)
+### [RGPD para Skype Empresarial Server y Lync Server](gdpr-for-skype-for-business-server.md)
+### [RGPD para Project Server](gdpr-for-project-server.md)
+### [RGPD para Office Web Apps Server y Office Online Server](gdpr-for-office-online-server.md)
+### [RGPD para uso compartido de archivos de Windows Server local](gdpr-for-on-premises-file-shares.md)
 # Respuesta a incidentes de seguridad
 
 ## [Respuesta a incidentes de seguridad de Office 365](office365-security-incident-response-overview.md)
 ## [Detectar y solucionar la concesión de consentimiento ilegal en Office 365](detect-and-remediate-illicit-consent-grants.md)
 ## [Detectar y corregir las reglas de Outlook y ataques de inserciones de formularios personalizados en Office 365](detect-and-remediate-outlook-rules-forms-attack.md)
-
 # Garantía de servicio
 ## [Garantía del servicio en el Centro de seguridad y cumplimiento de Office 365](service-assurance.md)
 ## [Aislamiento del inquilino en Office 365](office-365-tenant-isolation-overview.md)
@@ -332,7 +322,6 @@
 ### [Registro interno para el equipo de ingeniería de Office 365](office-365-internal-logging.md)
 ### [Migraciones de buzones de Office 365](office-365-mailbox-migrations.md)
 ### [API de Actividad de administración de Office 365](office-365-management-activity-api.md)
-
 # [Exchange Online Protection](eop/exchange-online-protection-overview.md)
 ## [Características de EOP](eop/eop-features.md)
 ## [Permisos de características en EOP](eop/feature-permissions-in-eop.md)
@@ -411,6 +400,5 @@
 ### [Accesibilidad para personas con discapacidad](eop/accessibility-for-people-with-disabilities.md)
 ### [Enviar correo a Office 365](sending-mail-to-office-365.md)
 ### [Servicios para no clientes](services-for-non-customers.md)
-
 # [Office 365 Enterprise](https://docs.microsoft.com/Office365/Enterprise)
 # [Office 365 para empresas](https://support.office.com/office365admin)
