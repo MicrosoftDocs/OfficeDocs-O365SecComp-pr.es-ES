@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
 description: Usar la seguridad de Office 365 &amp; centro de cumplimiento para crear y administrar casos de exhibición de documentos electrónicos en su organización. Puede asignar miembros a las mayúsculas y minúsculas, colocar el contenido de las ubicaciones en espera, ejecutar búsquedas de contenido asociados con las mayúsculas y minúsculas y la exportación los resultados de búsqueda. También puede preparar los datos de casos para un análisis posterior en la exhibición de documentos electrónicos avanzada.
-ms.openlocfilehash: 6f81c4296ea7455a781b02a25d065304a2a3a087
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 3beb7dcf3e09816c1a282944767d2353f08943be
+ms.sourcegitcommit: 82fd4c85b952819157fbb13175c7b2dbbdff510f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22536533"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "23965277"
 ---
 # <a name="ediscovery-cases-in-the-office-365-security-amp-compliance-center"></a>casos de exhibición de documentos electrónicos en la seguridad de Office 365 &amp; centro de cumplimiento
 
@@ -113,7 +113,7 @@ El siguiente paso es crear un nuevo caso de exhibición de documentos electróni
 
 Después de crear un nuevo caso, el siguiente paso es agregar a miembros a las mayúsculas y minúsculas. Explica como anterior, sólo los usuarios que son miembros del revisor o grupos de roles de administrador de exhibición de documentos electrónicos se pueden agregar como miembros de las mayúsculas y minúsculas. Tenga en cuenta que el administrador que creó el caso de exhibición de documentos electrónicos se agrega automáticamente como un miembro.
   
-1. En la seguridad &amp; centro de cumplimiento, haga clic en **búsqueda &amp; investigación** \> **exhibición de documentos electrónicos** para mostrar la lista de casos de la organización. 
+1. En el Centro de seguridad y cumplimiento, haga clic en **Búsqueda e investigación** \> **eDiscovery** para mostrar la lista de casos en su organización. 
     
 2. Haga clic en el nombre de la caja del que desea agregar a miembros a.
     
@@ -124,6 +124,9 @@ Después de crear un nuevo caso, el siguiente paso es agregar a miembros a las m
 3. En **miembros de administrar**, haga clic en ![icono Agregar](media/ITPro-EAC-AddIcon.gif) **Agregar** para agregar miembros a las mayúsculas y minúsculas. 
     
     También puede elegir agregar un grupo de roles a las mayúsculas y minúsculas. En **Administrar grupos de roles**, haga clic en ![icono Agregar](media/ITPro-EAC-AddIcon.gif) **Agregar**.
+    
+    > [!NOTE]
+    > Control de grupos de funciones que puede asignar a miembros a un caso de exhibición de documentos electrónicos. Esto significa que sólo se pueden asignar a los grupos de funciones que son miembros de un caso.
     
 4. En la lista de grupos de personas o rol que se pueden agregar como miembros de las mayúsculas y minúsculas, haga clic en la casilla de verificación junto a los nombres de los grupos de personas o rol que desea agregar.
     
@@ -151,7 +154,7 @@ Cuando se crea una suspensión, tiene las siguientes opciones para delimitar el 
   
 Para crear una suspensión para un caso de exhibición de documentos electrónicos:
   
-1. En la seguridad &amp; centro de cumplimiento, haga clic en **búsqueda &amp; investigación** \> **exhibición de documentos electrónicos** para mostrar la lista de casos de la organización. 
+1. En el Centro de seguridad y cumplimiento, haga clic en **Búsqueda e investigación** \> **eDiscovery** para mostrar la lista de casos en su organización. 
     
 2. Junto al caso de que desee crear las suspensiones en, haga clic en **Abrir** . 
     
@@ -227,7 +230,7 @@ Tenga en cuenta acerca de las estadísticas de espera lo siguiente:
 
 Después de crea un caso de exhibición de documentos electrónicos y cualquier custodia relacionadas con el caso se coloca en espera, puede crear y ejecutar una o varias búsquedas de contenido que están asociadas con las mayúsculas y minúsculas. Contenido de las búsquedas de asociarse a un caso no se enumeran en la página de **búsqueda** en la seguridad &amp; centro de cumplimiento. Esto significa que las búsquedas de contenido asociadas con un caso sólo se puede tener acceso por los miembros de mayúsculas y minúsculas que también son miembros del grupo de roles de administrador de exhibición de documentos electrónicos. 
   
-1. En la seguridad &amp; centro de cumplimiento, haga clic en **búsqueda &amp; investigación** \> **exhibición de documentos electrónicos** para mostrar la lista de casos de la organización. 
+1. En el Centro de seguridad y cumplimiento, haga clic en **Búsqueda e investigación** \> **eDiscovery** para mostrar la lista de casos en su organización. 
     
 2. Junto al caso de que se desea crear una búsqueda de contenido en, haga clic en **Abrir** . 
     
@@ -299,7 +302,7 @@ Puede exportar los resultados de una [exportación de los resultados de una bús
   
 ### <a name="export-the-results-of-a-single-search-associated-with-a-case"></a>Exportar los resultados de una búsqueda único asociado a un caso
 
-1. En la seguridad &amp; centro de cumplimiento, haga clic en **búsqueda &amp; investigación** \> **exhibición de documentos electrónicos** para mostrar la lista de casos de la organización. 
+1. En el Centro de seguridad y cumplimiento, haga clic en **Búsqueda e investigación** \> **eDiscovery** para mostrar la lista de casos en su organización. 
     
 2. Junto al caso de que se va a exportar la búsqueda desde, haga clic en **Abrir** . 
     
@@ -333,7 +336,7 @@ Como alternativa a la exportación de los resultados de una búsqueda de conteni
 > [!NOTE]
 > No se puede exportar los resultados de varias búsquedas si una de las búsquedas se configuró para buscar en todo el contenido de mayúsculas y minúsculas. exportar sólo los resultados de varias búsquedas para las búsquedas que están asociadas con un caso de exhibición de documentos electrónicos. No se puede exportar los resultados de varias búsquedas que aparecen en la página de **búsqueda de contenido** en la seguridad &amp; centro de cumplimiento. 
   
-1. En la seguridad &amp; centro de cumplimiento, haga clic en **búsqueda &amp; investigación** \> **exhibición de documentos electrónicos** para mostrar la lista de casos de la organización. 
+1. En el Centro de seguridad y cumplimiento, haga clic en **Búsqueda e investigación** \> **eDiscovery** para mostrar la lista de casos en su organización. 
     
 2. Junto al caso de que se va a exportar los resultados de búsqueda, haga clic en **Abrir** . 
     
@@ -395,7 +398,7 @@ Al preparar los resultados de búsqueda para la exhibición de documentos electr
 > [!NOTE]
 > Para analizar los datos de un usuario mediante la exhibición de documentos electrónicos avanzada, el usuario (la custodia de los datos) debe estar asignado una licencia de Office 365 E5. Como alternativa, se pueden asignar una licencia independiente de exhibición de documentos electrónicos avanzada a los usuarios con una licencia de Office 365 E1 o E3. Los administradores y responsables del cumplimiento normativo que se asignan a los casos y utilizan eDiscovery avanzada para analizar datos no necesitan una licencia de E5. 
   
-1. En la seguridad &amp; centro de cumplimiento, haga clic en **búsqueda &amp; investigación** \> **exhibición de documentos electrónicos** para mostrar la lista de casos de la organización. 
+1. En el Centro de seguridad y cumplimiento, haga clic en **Búsqueda e investigación** \> **eDiscovery** para mostrar la lista de casos en su organización. 
     
 2. Junto al caso de que se va a preparar los resultados de búsqueda para el análisis de exhibición de documentos electrónicos avanzada, haga clic en **Abrir** . 
     
@@ -425,9 +428,9 @@ Al preparar los resultados de búsqueda para la exhibición de documentos electr
 
 Después de crear un caso de la seguridad &amp; centro de cumplimiento, puede ir al mismo caso de exhibición de documentos electrónicos avanzada.
   
-Para ir a un caso de exhibición de documentos electrónicos avanzada:
+Para ir a un caso en eDiscovery avanzado:
   
-1. En la seguridad &amp; centro de cumplimiento, haga clic en **búsqueda &amp; investigación** \> **exhibición de documentos electrónicos** para mostrar la lista de casos de la organización. 
+1. En el Centro de seguridad y cumplimiento, haga clic en **Búsqueda e investigación** \> **eDiscovery** para mostrar la lista de casos en su organización. 
     
 2. Junto al caso de que se desea ir a en la exhibición de documentos electrónicos avanzada, haga clic en **Abrir** . 
     
@@ -462,7 +465,7 @@ Cuando se complete el caso legal o investigación compatibles con un caso de exh
     
 Para cerrar un caso:
   
-1. En la seguridad &amp; centro de cumplimiento, haga clic en **búsqueda &amp; investigación** \> **exhibición de documentos electrónicos** para mostrar la lista de casos de la organización. 
+1. En el Centro de seguridad y cumplimiento, haga clic en **Búsqueda e investigación** \> **eDiscovery** para mostrar la lista de casos en su organización. 
     
 2. Haga clic en el nombre de la caja del que se va a cerrar.
     
@@ -486,7 +489,7 @@ Para cerrar un caso:
 
 Cuando se vuelve a abrir un caso, cualquier suspensiones que tenía cuando se cerró el caso no se restablecerá automáticamente. Una vez que se vuelve a abrir el caso, tendrá que ir a la página de **retención** y activar las suspensiones anteriores. Para activar una suspensión, selecciónela y haga clic en **Activar** el panel de detalles. 
   
-1. En la seguridad &amp; centro de cumplimiento, haga clic en **búsqueda &amp; investigación** \> **exhibición de documentos electrónicos** para mostrar la lista de casos de la organización. 
+1. En el Centro de seguridad y cumplimiento, haga clic en **Búsqueda e investigación** \> **eDiscovery** para mostrar la lista de casos en su organización. 
     
 2. Haga clic en el nombre de la caja del que desea volver a abrir.
     

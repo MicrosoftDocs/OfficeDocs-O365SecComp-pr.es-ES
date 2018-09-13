@@ -3,7 +3,6 @@ title: Entrega dinámica y obtener una vista previa con Office 365 ATP los datos
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 2/28/2018
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -13,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: f16c9928-8e3d-4219-b994-271dc9a16272
 description: Al configurar las directivas de los datos adjuntos seguros ATP, elija entrega dinámica para evitar retrasos de mensaje y permiten a los usuarios obtener una vista previa de datos adjuntos que se están analizando.
-ms.openlocfilehash: 23017f4f995dfe6a90479d83af9522531d7bf96b
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 23ef316ed35b89ef1fad5e9639dd10e76036a4f3
+ms.sourcegitcommit: 82fd4c85b952819157fbb13175c7b2dbbdff510f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22535601"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "23965247"
 ---
 # <a name="dynamic-delivery-and-previewing-with-office-365-atp-safe-attachments"></a>Entrega dinámica y obtener una vista previa con Office 365 ATP los datos adjuntos seguros
 
@@ -65,6 +64,8 @@ Hay determinados escenarios en los que no se admite la entrega dinámica. Estos 
 - Carpeta de búsqueda de buzón de correo de un usuario que se encuentra en un estado de error
     
 - Entornos en los que un administrador de Exchange Online ha habilitado Exclaimer. (Vea [los mensajes con datos adjuntos no se entregan cuando se usan entrega dinámica ATP y Exclaimer](https://support.microsoft.com/help/4014438/messages-with-attachments-are-not-delivered-when-atp-dynamic-delivery))
+
+- Mensajes cifrados con extensiones seguras multipropósito de correo Internet ([S/MIME](s-mime-for-message-signing-and-encryption.md))
     
 ## <a name="related-topics"></a>Temas relacionados
 

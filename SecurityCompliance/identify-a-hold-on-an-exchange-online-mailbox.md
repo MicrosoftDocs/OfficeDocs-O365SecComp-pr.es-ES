@@ -11,18 +11,19 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
-ms.openlocfilehash: d24e51bca0e3d290f110b1ab40f3ee9ae7993678
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: Obtenga información sobre cómo identificar los distintos tipos de espera que se puede colocar en un buzón de Office 365. Estos tipos de suspensiones incluyen juicio, suspensiones de exhibición de documentos electrónicos y las directivas de retención de Office 365. También se puede determinar si un usuario se ha excluido de una directiva de retención de toda la organización
+ms.openlocfilehash: 375bd86df370fe34fbe59f6581836da7e9d06515
+ms.sourcegitcommit: 82fd4c85b952819157fbb13175c7b2dbbdff510f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22536462"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "23965267"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Cómo identificar el tipo de retención en un buzón de Exchange Online
 
 En este artículo se explica cómo identificar las suspensiones que se colocan en buzones de Exchange Online en Office 365.
 
-Office 365 ofrece una serie de formas en que su organización puede impedir que va a eliminar permanentemente el contenido del buzón. Esto permite a su organización conservar el contenido para satisfacer habituales de cumplimiento de normas o para la duración del departamento jurídico u otros tipos de investigaciones. Aquí tiene una lista de las características de retención (también llamadas suspensiones) en Office 365:
+Office 365 ofrece una serie de formas en que su organización puede impedir que va a eliminar permanentemente el contenido del buzón. Esto permite a su organización conservar el contenido para satisfacer habituales de cumplimiento de normas o para la duración del departamento jurídico u otros tipos de investigaciones. Aquí tiene una lista de las características de retención (también llamado *contiene*) en Office 365:
 
 - **La suspensión por litigio** - suspensiones que se aplican a los buzones de usuario en Exchange Online.
 
@@ -34,9 +35,11 @@ Office 365 ofrece una serie de formas en que su organización puede impedir que 
 
   Hay dos tipos de directivas de retención de Office 365 que se pueden asignar a los buzones de correo.
 
-    - **Las directivas de retención de ubicación específica** : estas son las directivas que se asignan a las ubicaciones de contenido de usuarios específicos. Use el cmdlet Get-Mailbox en Exchange Online PowerShell para obtener información acerca de las directivas de retención asignado a buzones específicos.
+    - **Las directivas de retención de ubicación específica** : estas son las directivas que se asignan a las ubicaciones de contenido de usuarios específicos. Use el cmdlet **Get-Mailbox** en Exchange Online PowerShell para obtener información acerca de las directivas de retención asignado a buzones específicos.
 
-    - **Las directivas de retención de toda la organización** : se trata de las directivas que se asignan a todas las ubicaciones de contenido en su organización. Use el cmdlet Get-OrganizationConfig en Exchange Online PowerShell para obtener información acerca de las directivas de retención de toda la organización. Para obtener más información, vea la sección "Aplicar una directiva de retención a toda la organización o ubicaciones específicas" en las directivas de retención de información general de Office 365.
+    - **Las directivas de retención de toda la organización** : se trata de las directivas que se asignan a todas las ubicaciones de contenido en su organización. Use el cmdlet **Get-OrganizationConfig** en Exchange Online PowerShell para obtener información acerca de las directivas de retención de toda la organización. Para obtener más información, vea la sección "Aplicar una directiva de retención a toda la organización o ubicaciones específicas" en [las directivas de retención de información general de Office 365](retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations).
+
+- **Etiquetas de office 365** - si un usuario aplica una etiqueta de Office 365 (uno que está configurado para conservar el contenido o retener y, a continuación, eliminar contenido) a *cualquier* carpeta o elemento en su buzón, una suspensión se coloca en el buzón de correo como si el buzón de correo se realizó en litigios Mantenga o asignada a una directiva de retención de Office 365. Para obtener más información, vea la sección [identificación buzones en suspensión debido a que se ha aplicado una etiqueta a una carpeta o elemento](#identifying-mailboxes-on-hold-because-a-label-has-been-applied-to-a-folder-or-item) en este artículo.
 
 Para administrar los buzones de correo en espera, debe identificar el tipo de espera que se coloca en un buzón de correo para que puedan realizar tareas como cambiar la duración de la suspensión, temporal o permanente quitar la suspensión o exclusión de un buzón de correo de una directiva de retención de Office 365. En estos casos, el primer paso es identificar el tipo de espera que se colocan en el buzón de correo. Y debido a que varias suspensiones (y distintos tipos de suspensiones) se pueden colocar en un solo buzón, tendrá que identificar todas las suspensiones que se colocan en un buzón de correo si desea quitar o cambiar dichas suspensiones.
 
@@ -150,6 +153,48 @@ Ejecute el siguiente comando en PowerShell de centro de cumplimiento y seguridad
 ```
 Get-RetentionCompliancePolicy <hold GUID without prefix or suffix> -DistributionDetail  | FL Name,*Location
 ```
+
+## <a name="identifying-mailboxes-on-hold-because-a-label-has-been-applied-to-a-folder-or-item"></a>Identificación de buzones en suspensión debido a que se ha aplicado una etiqueta a una carpeta o elemento
+
+Cada vez que un usuario aplica una etiqueta que está configurada para conservar el contenido o retener y, a continuación, eliminar contenido a una carpeta o elemento en su buzón, la propiedad del buzón de correo de *ComplianceTagHoldApplied* se establece en **True**. Cuando esto sucede, se considera que el buzón se encuentra en suspensión, como si se colocan en suspensión por litigio o asignado a una directiva de retención de Office 365. Cuando la propiedad *ComplianceTagHoldApplied* se establece en **True**, es posible que se producen las siguientes acciones:
+
+- Si se elimina el buzón de correo o cuenta de usuario de Office 365 del usuario, el buzón de correo se convierte en un [buzón de correo inactivo](inactive-mailboxes-in-office-365.md).
+- No podrá deshabilitar el buzón (el buzón principal o el buzón de archivo, si está habilitada).
+- Los elementos en el buzón de correo pueden conservarse durante más tiempo de lo esperado. Esto es debido a que el buzón se encuentra en suspensión y, por tanto, no hay elementos se eliminarán permanentemente (purga).
+
+Para ver el valor de la propiedad *ComplianceTagHoldApplied* , ejecute el siguiente comando en Exchange Online PowerShell:
+
+```
+Get-Mailbox <username> |FL ComplianceTagHoldApplied
+```
+
+Para obtener más información acerca de las etiquetas, vea [información general de Office 365 etiquetas](labels.md).
+
+## <a name="managing-mailboxes-on-delay-hold"></a>Administrar buzones de correo en retraso de suspensión
+
+Después de quita cualquier tipo de espera de un buzón de correo, el valor de la propiedad del buzón de correo de *DelayHoldApplied* se establece en **True**. Esto se denomina un *retraso suspensión* y significa que la eliminación real de la suspensión se retrasa durante 30 días impedir que los datos que se eliminan permanentemente (purga) desde el buzón de correo. Esto da a los administradores una oportunidad para buscar o recuperar los elementos del buzón de correo que se purgarán después de que realmente se ha quitado la suspensión. Cuando se coloca una suspensión de retraso en el buzón de correo, el buzón aún se considera que esté en espera para una duración ilimitada, como si el buzón estaba en suspensión por litigio. Después de 30 días, expira la suspensión de retraso, y Office 365 automáticamente intenta quitar la suspensión de retraso (estableciendo la propiedad *DelayHoldApplied* en **False**) para que se quitarán realmente la suspensión. Después de la propiedad *DelayHoldApplied* en **False**, los elementos que están marcados para eliminación se purgarán la próxima vez que se procesa el buzón de correo mediante el Asistente para carpeta administrada.
+
+Para ver el valor de la propiedad *DelayHoldApplied* para un buzón de correo, ejecute el siguiente comando en Exchange Online PowerShell.
+
+```
+Get-Mailbox <username> | FL DelayHoldApplied
+```
+
+Para quitar la suspensión de retraso antes de que expire, puede ejecutar el siguiente comando en Exchange Online PowerShell: 
+ 
+```
+Set-Mailbox <username> -RemoveDelayHoldApplied
+```
+Tenga en cuenta que debe ser asignado el rol de suspensión Legal en Exchange en línea para usar el parámetro *RemoveDelayHoldApplied* 
+
+Para quitar la suspensión de retraso en un buzón de correo inactivo, ejecute el siguiente comando en Exchange Online PowerShell:
+
+```
+Set-Mailbox <DN or Exchange GUID> -InactiveMailbox -RemoveDelayHoldApplied
+```
+
+> [!TIP]
+> La mejor forma de especificar un buzón inactivo en el comando anterior es utilizar su valor de nombre distintivo (DN) o el GUID de Exchange. Con uno de estos valores ayuda a evitar la especificación accidentalmente el buzón incorrecto. 
 
 ## <a name="next-steps"></a>Pasos siguientes
 

@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: f5caf497-5e8d-4b7a-bfff-d02942f38150
 description: Cuando ya no se necesita conservar el contenido de un buzón inactivo de Office 365, puede eliminar permanentemente el buzón de correo inactivo al quitar la suspensión. Después de quitar la suspensión, el buzón de correo inactivo se marca para su eliminación y se elimina permanentemente después de que se procesa.
-ms.openlocfilehash: 91b73fff6ca319735289abe7ea9351b5fba931a0
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: a7284be650d7ec6c89a6fdc43d8614603d6f1e19
+ms.sourcegitcommit: 82fd4c85b952819157fbb13175c7b2dbbdff510f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22535668"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "23965257"
 ---
 # <a name="delete-an-inactive-mailbox-in-office-365"></a>Eliminar un buzón inactivo en Office 365
 
@@ -104,11 +104,7 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
 
 2. En el EAC, vaya a **administración de cumplimiento** \> **exhibición de documentos electrónicos en contexto &amp; suspensión**.
     
-<<<<<<< HEAD
 3. Seleccione la retención local que desea eliminar y, a continuación, haga clic en **Editar** ![icono Editar](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
-=======
-3. ¡Seleccione la retención local que desea eliminar y, a continuación, haga clic en **Editar**! [Icono de edición](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
->>>>>>> conversión de markjjo
     
 4. En la **exhibición de documentos electrónicos en contexto &amp; suspensión** propiedades de página, haga clic en **Conservación local**, desactive la casilla de **la retención de contenido de sitio que coinciden con la consulta de búsqueda en buzones seleccionados en** y, a continuación, haga clic en **Guardar**.
     
