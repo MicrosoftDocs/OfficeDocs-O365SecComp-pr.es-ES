@@ -15,12 +15,12 @@ search.appverid:
 ms.custom: ''
 ms.assetid: ''
 description: Obtenga información sobre cómo reconocer y responder a una cuenta de correo electrónico en peligro en Office 365
-ms.openlocfilehash: 9a3dcc2d10c7487e525ae127674a830f9a921a60
-ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
+ms.openlocfilehash: bf3350da88804639356100fb5be2403c76cbcec6
+ms.sourcegitcommit: 17dda7ece5c9e884944a92ac0f842cf1e62ec506
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "23782187"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "23977595"
 ---
 # <a name="responding-to-a-compromised-email-account-in-office-365"></a>Responder a una cuenta de correo electrónico en peligro en Office 365
 
@@ -66,10 +66,13 @@ Debe realizar los pasos siguientes para volver a obtener acceso a su cuenta cuan
 
 1. Siga la contraseña de negocio restablecer un Office 365 para alguien else procedimientos de [administradores: restablecer Office 365 contraseñas de negocio](https://support.office.com/article/admins-reset-office-365-business-passwords-7a5d073b-7fae-4aa5-8f96-9ecd041aba9c)
 
-**Notas:**
+**Notas**:
 - Asegúrese de que la contraseña es segura y que contiene al menos un carácter especial, al menos un número y letras mayúsculas y minúsculas. 
 - No volver a usar cualquiera de las últimas cinco contraseñas. Aunque el requisito de historial de contraseña permite reutilizar una contraseña más reciente, debe seleccionar algo que no se puede estimar el atacante.
 - Si su identidad local está asociado a Office 365, debe cambiar su contraseña local y, a continuación, debe notificar a su administrador del peligro.
+
+> [!TIP]
+> Se recomienda que habilite la autenticación multifactor (MFA) con el fin de evitar que peligro, especialmente para las cuentas con privilegios administrativos.  Encontrará más información [aquí](https://support.office.com/en-us/article/Set-up-multi-factor-authentication-for-Office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6).
 
 ### <a name="step-2-remove-suspicious-email-forwarding-addresses"></a>Paso 2 direcciones de reenvío de correo electrónico sospechosos Remove
 1. Abrir la **Centro de administración de Office 365 > usuarios activos**.
