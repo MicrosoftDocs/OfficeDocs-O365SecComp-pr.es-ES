@@ -3,7 +3,7 @@ title: Controlar los datos en Office 365 con la clave de cliente
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 7/2/2018
+ms.date: 8/1/2018
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: f2cd475a-e592-46cf-80a3-1bfb0fa17697
 description: Obtenga información sobre cómo configurar clave de cliente para Office 365 para Exchange Online, Skype para la empresa, SharePoint Online y OneDrive para la empresa. Con la clave de cliente, controlar las claves de cifrado de la organización y, a continuación, configurar Office 365 para usarlos para cifrar los datos en reposo en centros de datos de Microsoft.
-ms.openlocfilehash: f8d7c12c32ca74b842f676f4a2ccde4d1c758361
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 3eeccd03b89aa5a79ceba536d3f13c7a881b6ca7
+ms.sourcegitcommit: ef0bb05a0cf7974ae5083c7551ce3fe4ab7a9544
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22559235"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "23965614"
 ---
 # <a name="controlling-your-data-in-office-365-using-customer-key"></a>Controlar los datos en Office 365 con la clave de cliente
 
