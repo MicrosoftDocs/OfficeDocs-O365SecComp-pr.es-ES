@@ -14,7 +14,7 @@
 ## [Proteger el acceso a datos y servicios de Office 365](protect-access-to-data-and-services.md)
 ## [Elegir entre MDM e Intune](choose-between-mdm-and-intune.md)
 # [Evitar la pérdida de datos (DLP)](data-loss-prevention-policies.md)
-## [Ver una descripción general ampliada de DLP](https://go.microsoft.com/fwlink/?linkid=852300)
+## [Ver una descripción general ampliada de DLP](https://channel9.msdn.com/events/ignite/microsoft-ignite-orlando-2017/brk3111)
 ## Configurar DLP
 ### [Introducción a las recomendaciones de la directiva DLP](get-started-with-dlp-policy-recommendations.md)
 ### [Introducción a la directiva predeterminada de DLP](get-started-with-the-default-dlp-policy.md)
@@ -32,6 +32,7 @@
 ### [Personalizar un tipo de información confidencial integrado](customize-a-built-in-sensitive-information-type.md)
 ### [Crear un tipo de información confidencial](create-a-custom-sensitive-information-type.md)
 ### [Crear un diccionario de palabras clave](create-a-keyword-dictionary.md)
+### [Creación de huella digital de documento](document-fingerprinting.md) 
 # Administrar el gobierno de datos        
 ## [Importar datos](importing-pst-files-to-office-365.md)
 ### [Usar la carga en la red para importar archivos PST](use-network-upload-to-import-pst-files.md)
