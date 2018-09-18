@@ -12,28 +12,43 @@ search.appverid:
 - MET150
 - MOE150
 description: Si envía un gran volumen de correo electrónico de dominio no registradas, corre el riesgo de su correo electrónico se bloquean. Lea este artículo para obtener más información.
-ms.openlocfilehash: 98435354aead4e779eb783c06bf9ce237e35403c
-ms.sourcegitcommit: 45c9c389ecd6204c38804b57d1014dd2070b93f0
+ms.openlocfilehash: f2b60f492197bf0dadb702a1c3f184c2d7e56bf1
+ms.sourcegitcommit: 7b85c22fc85ec19e4b44a07e91bfa9ade768185a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "23995743"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "23998604"
 ---
-# <a name="unregistered-domain-email-what-you-need-to-know"></a><span data-ttu-id="73be6-104">Correo electrónico de dominio no registrada: ¿Qué necesita saber</span><span class="sxs-lookup"><span data-stu-id="73be6-104">Unregistered Domain Email: What you need to know</span></span>
+# <a name="unregistered-domain-email-what-you-need-to-know"></a><span data-ttu-id="13102-104">Correo electrónico de dominio no registrada: ¿Qué necesita saber</span><span class="sxs-lookup"><span data-stu-id="13102-104">Unregistered Domain Email: What you need to know</span></span>
 
-<span data-ttu-id="73be6-105">Contenido próximamente</span><span class="sxs-lookup"><span data-stu-id="73be6-105">Content is coming soon</span></span>
+<span data-ttu-id="13102-p102">Office 365 permite los inquilinos para que transmita algunos mensajes a través de Exchange Online Protection (EOP). Un ejemplo compatible de esto sería cuando los usuarios tienen un buzón de Office 365 y alguien externo envía correo electrónico pero reenvío de correo electrónico está configurado para que vuelve para el buzón del usuario externo. Esto es más comunes en entornos de educación donde los alumnos desean sacar provecho de su interfaz de correo electrónico personal, aunque siguen teniendo correos electrónicos relacionados a la escuela. Otro ejemplo es cuando los clientes se encuentran en un escenario híbrido y tienen servidores locales que envían correo electrónico fuera de la elevación de privilegios.</span><span class="sxs-lookup"><span data-stu-id="13102-p102">Office 365 allows for tenants to relay some messages through Exchange Online Protection (EOP). One supported example of this would be when users have an Office 365 mailbox and someone external sends them email but email forwarding is configured so that it goes back out to the user's external mailbox. This is most common in education environments where students want to leverage their personal email interface but still get emails related to school. Another example is when customers are in a hybrid scenario and have on-premise servers that send email out of EOP.</span></span>
 
+## <a name="problems-with-unregistered-domains"></a><span data-ttu-id="13102-109">Problemas con los dominios no registradas</span><span class="sxs-lookup"><span data-stu-id="13102-109">Problems with unregistered domains</span></span>
+
+<span data-ttu-id="13102-p103">El problema es cuando los servidores locales obtengan en riesgo y terminen la retransmisión de un gran volumen de correo no deseado fuera de la elevación de privilegios. En casi todos los casos, se configuran los conectores derecho pero se está enviando correo electrónico de dominios no registradas, también conocido como no aprovisionadas. Office 365 permitir una cantidad razonable de correo a proceden de dominios no registradas, pero debe configurarse un dominio aceptado en el centro de administración para cada dominio que planea enviar fuera de.</span><span class="sxs-lookup"><span data-stu-id="13102-p103">The problem is when on-premise servers get compromised and end up relaying a large volume of spam out of EOP. In almost all cases, the right connectors are set up but email is being sent from unregistered, also known as unprovisioned, domains. Office 365 does allow a reasonable amount of mail to come from unregistered domains, but an Accepted Domain should be configured in the Admin Center for each domain you plan on sending out of.</span></span>
+
+<span data-ttu-id="13102-p104">Una vez que se ve comprometida, los inquilinos no podrán enviar correo saliente para dominios no registradas. Los usuarios recibirán un informe de no entrega (NDR) que indica:</span><span class="sxs-lookup"><span data-stu-id="13102-p104">Once compromised, tenants will be prevented from sending outbound mail for unregistered domains. Users will receive a Non-Delivery Report (NDR) that states:</span></span>
+
+- <span data-ttu-id="13102-p105">550 5.7.750 servicio no disponible. Cliente bloqueado el envío de dominios no registradas</span><span class="sxs-lookup"><span data-stu-id="13102-p105">550 5.7.750 Service unavailable. Client blocked from sending from unregistered domains</span></span>
+
+## <a name="unblocking-tenant-in-order-to-send-again"></a><span data-ttu-id="13102-117">Desbloqueo inquilino con el fin de volver a enviar</span><span class="sxs-lookup"><span data-stu-id="13102-117">Unblocking tenant in order to send again</span></span>
+
+<span data-ttu-id="13102-118">Hay varias cosas que debe hacer en el caso de que se obtenga bloqueado para el envío de dominios no registradas:</span><span class="sxs-lookup"><span data-stu-id="13102-118">There are several things you need to do if you get blocked for sending from unregistered domains:</span></span>
+
+1. <span data-ttu-id="13102-p106">Asegúrese de registrar todos los dominios en el centro de administración de Office 365. Puede encontrar más información [aquí](https://docs.microsoft.com/en-us/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).</span><span class="sxs-lookup"><span data-stu-id="13102-p106">Make sure that you register all of your domains in Office 365 admin center. More information can be found [here](https://docs.microsoft.com/en-us/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).</span></span>
+
+2. <span data-ttu-id="13102-p107">Bloquear los servidores locales y asegúrese de que no se comprometido. Hay muchos factores implicados aquí, especialmente si se trata de los servidores de aplicaciones de terceros, pero necesita poder para asegurarse de que todo el correo salir de ese servidor es legítimo.</span><span class="sxs-lookup"><span data-stu-id="13102-p107">Lock down your on-premise servers and ensure that they are not compromised. There are many factors involved here, especially if these are third-party servers, but you will need to be able to make sure all mail leaving that server is legitimate.</span></span>
+
+<span data-ttu-id="13102-p108">Una vez hecho, debe llamar a Microsoft Support y preguntar obtener al inquilino desbloqueado para enviar de nuevo de dominios no registradas.  Proporcionar el código de error es útil, pero necesita demostrar que el entorno está protegido y que spam no se enviarán nuevo. Puede encontrar más información [aquí](https://support.office.com/en-us/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b#ID0EAADAAA=online).</span><span class="sxs-lookup"><span data-stu-id="13102-p108">Once done, you will need to call Microsoft Support and ask to get your tenant unblocked to send from unregistered domains again.  Providing the error code is helpful, but you will need to prove that your environment is secured and that spam will not be sent again. More information can be found [here](https://support.office.com/en-us/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b#ID0EAADAAA=online).</span></span>
   
-## <a name="for-more-information"></a><span data-ttu-id="73be6-106">Más información</span><span class="sxs-lookup"><span data-stu-id="73be6-106">For more information</span></span>
+## <a name="for-more-information"></a><span data-ttu-id="13102-126">Más información</span><span class="sxs-lookup"><span data-stu-id="13102-126">For more information</span></span>
 
-[<span data-ttu-id="73be6-107">Informes de no entrega de correo electrónico en Office 365</span><span class="sxs-lookup"><span data-stu-id="73be6-107">Email non-delivery reports in Office 365</span></span>](https://support.office.com/article/email-non-delivery-reports-in-office-365-51daa6b9-2e35-49c4-a0c9-df85bf8533c3)
+[<span data-ttu-id="13102-127">Protección contra correo no deseado de Office 365</span><span class="sxs-lookup"><span data-stu-id="13102-127">Office 365 email anti-spam protection</span></span>](anti-spam-protection.md)
 
-[<span data-ttu-id="73be6-108">Notificación de muestra cuando se bloquea a un remitente para enviar correo no deseado de salida</span><span class="sxs-lookup"><span data-stu-id="73be6-108">Sample notification when a sender is blocked sending outbound spam</span></span>](sample-notification-when-a-sender-is-blocked-sending-outbound-spam.md)
+[<span data-ttu-id="13102-128">Informes de no entrega de correo electrónico en Office 365</span><span class="sxs-lookup"><span data-stu-id="13102-128">Email non-delivery reports in Office 365</span></span>](https://support.office.com/article/email-non-delivery-reports-in-office-365-51daa6b9-2e35-49c4-a0c9-df85bf8533c3)
 
-[<span data-ttu-id="73be6-109">Protección contra correo no deseado de Office 365</span><span class="sxs-lookup"><span data-stu-id="73be6-109">Office 365 email anti-spam protection</span></span>](anti-spam-protection.md)
+[<span data-ttu-id="13102-129">Configurar el reenvío de correo electrónico para un buzón de correo</span><span class="sxs-lookup"><span data-stu-id="13102-129">Configure email forwarding for a mailbox</span></span>](https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding)
 
-[<span data-ttu-id="73be6-110">Protección contra suplantación de identidad en Office 365</span><span class="sxs-lookup"><span data-stu-id="73be6-110">Anti-spoofing protection in Office 365</span></span>](anti-spoofing-protection.md)
+[<span data-ttu-id="13102-130">Cómo configurar una aplicación o dispositivo multifunción para enviar correos electrónicos mediante Office 365</span><span class="sxs-lookup"><span data-stu-id="13102-130">How to set up a multifunction device or application to send email using Office 365</span></span>](https://support.office.com/en-us/article/How-to-set-up-a-multifunction-device-or-application-to-send-email-using-Office-365-69f58e99-c550-4274-ad18-c805d654b4c4)
 
-[<span data-ttu-id="73be6-111">Niveles de confianza del correo no deseado</span><span class="sxs-lookup"><span data-stu-id="73be6-111">Spam confidence levels</span></span>](spam-confidence-levels.md)
-
-
+<span data-ttu-id="13102-131">[Administrar dominios aceptados en Exchange Online](https://docs.microsoft.com/en-us/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).</span><span class="sxs-lookup"><span data-stu-id="13102-131">[Manage accepted domains in Exchange Online](https://docs.microsoft.com/en-us/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).</span></span>
