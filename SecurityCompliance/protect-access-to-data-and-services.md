@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
 description: página de inicio para la protección de acceso a datos de Office 365 y servicios
-ms.openlocfilehash: e6e2d8d3ba6482d4b80593bd9e09d49d6120af80
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 6ea617b1a7a7a34492689908d4816a851d58e776
+ms.sourcegitcommit: 0ce722533d72fa8dcc1d8a58d3c649cb345b938d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22536456"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "24009106"
 ---
 # <a name="protect-access-to-data-and-services-in-office-365"></a>Proteger el acceso a datos y servicios de Office 365
 
@@ -54,13 +54,20 @@ Si está utilizando Azure AD MFA, crear una regla de acceso condicional para req
   
 - [Acceso condicional en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)
     
-## <a name="step-4-configure-sharepoint-device-access-policies"></a>Paso 4: Configurar las directivas de acceso de dispositivo de SharePoint
+## <a name="step-4-configure-privileged-access-management"></a>Paso 4: Configurar la administración con privilegios de acceso
+
+Con privilegios de acceso permite la administración de control de acceso granular a través de las tareas de administración con privilegios en Office 365.  Puede ayudar a proteger la organización de las infracciones que pueden usar cuentas con privilegios de administración existentes con acceso permanente a los datos confidenciales o acceso a la configuración de configuración crítica.
+
+- [Información general de con privilegios de administración de acceso](privileged-access-managment-overview.md)
+- [Configurar la administración con privilegios de acceso](privileged-access-management-configuration.md)
+
+## <a name="step-5-configure-sharepoint-device-access-policies"></a>Paso 5: Configurar las directivas de acceso de dispositivo de SharePoint
 
 Las directivas de acceso de dispositivo para SharePoint Online y OneDrive para la empresa se recomiendan para proteger los datos confidenciales, clasificados y regulados. Próximamente es la capacidad para aplicar las directivas de acceso de dispositivo a los sitios de grupo individuales.
   
 - [Control de acceso desde dispositivos no administrados](https://support.office.com/article/Control-access-from-unmanaged-devices-5ae550c4-bd20-4257-847b-5c20fb053622?ui=en-US&amp;rs=en-US&amp;ad=US)
     
-## <a name="step-5-configure-app-and-data-protection-for-devices"></a>Paso 5: Configurar la protección de aplicaciones y los datos para dispositivos
+## <a name="step-6-configure-app-and-data-protection-for-devices"></a>Paso 6: Configurar la aplicación y protección de datos para dispositivos
 
 Puede administrar las aplicaciones en dispositivos móviles, independientemente de si los dispositivos se inscriben para administración de dispositivos móviles. Esto protege contra la fuga accidental de datos de Office 365, incluidos correo y los archivos.
   
@@ -72,13 +79,13 @@ Puede administrar las aplicaciones en dispositivos móviles, independientemente 
     
 - Para dispositivos no gestionados: [crear e implementar la directiva de protección de aplicación de protección de información de Windows (curso) con Intune](https://docs.microsoft.com/intune/windows-information-protection-policy-create)
     
-## <a name="step-6-manage-devices-with-intune"></a>Paso 6: Administración de dispositivos con Intune
+## <a name="step-7-manage-devices-with-intune"></a>Paso 7: Administración de dispositivos con Intune
 
 Administración de dispositivos permite asegurarse de que son compatibles con y en buen estado antes de permitir el acceso a los recursos en el entorno. Dispositivo en función de acceso condicional reglas ayudan a garantizar que los atacantes no se pueden obtener acceso a los recursos desde dispositivos no administrados.
   
 - [Inscribirse dispositivos para la administración en Intune](https://docs.microsoft.com/intune-classic/deploy-use/enroll-devices-in-microsoft-intune)
     
-## <a name="step-7-configure-additional-intune-policies-and-conditional-access-rules-for-your-environment"></a>Paso 7: Configurar directivas Intune adicionales y las reglas de acceso condicional para su entorno
+## <a name="step-8-configure-additional-intune-policies-and-conditional-access-rules-for-your-environment"></a>Paso 8: Configurar directivas Intune adicionales y las reglas de acceso condicional para su entorno
 
 Use estas configuraciones recomendadas como punto de partida para escenarios de seguridad de acceso sofisticados o de escala empresarial.
   
