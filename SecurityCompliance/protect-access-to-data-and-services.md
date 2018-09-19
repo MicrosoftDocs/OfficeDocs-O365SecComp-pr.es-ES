@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
 description: página de inicio para la protección de acceso a datos de Office 365 y servicios
-ms.openlocfilehash: 6ea617b1a7a7a34492689908d4816a851d58e776
-ms.sourcegitcommit: 0ce722533d72fa8dcc1d8a58d3c649cb345b938d
+ms.openlocfilehash: 652a14c5f1f29187aeac51355e7a924c9378806f
+ms.sourcegitcommit: 15dfa0c83aa88816c18e30a44a49e36e733d952c
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 09/19/2018
-ms.locfileid: "24009106"
+ms.locfileid: "24011282"
 ---
 # <a name="protect-access-to-data-and-services-in-office-365"></a>Proteger el acceso a datos y servicios de Office 365
 
@@ -58,7 +58,7 @@ Si está utilizando Azure AD MFA, crear una regla de acceso condicional para req
 
 Con privilegios de acceso permite la administración de control de acceso granular a través de las tareas de administración con privilegios en Office 365.  Puede ayudar a proteger la organización de las infracciones que pueden usar cuentas con privilegios de administración existentes con acceso permanente a los datos confidenciales o acceso a la configuración de configuración crítica.
 
-- [Información general de con privilegios de administración de acceso](privileged-access-managment-overview.md)
+- [Información general de con privilegios de administración de acceso](privileged-access-management-overview.md)
 - [Configurar la administración con privilegios de acceso](privileged-access-management-configuration.md)
 
 ## <a name="step-5-configure-sharepoint-device-access-policies"></a>Paso 5: Configurar las directivas de acceso de dispositivo de SharePoint

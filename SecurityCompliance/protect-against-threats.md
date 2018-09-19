@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 description: Obtenga información sobre cómo puede ayudar a proteger su organización frente a una amplia variedad de amenazas, incluida la suplantación de identidad, malware, correo no deseado, los intentos de suplantación de identidad y acceso no autorizado a los datos de Office 365 Enterprise.
-ms.openlocfilehash: ac4ac5d9800402c587ed52cc03905414a60471f6
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 4534e12280b5e627c2594c0365262a5c7c14a8c4
+ms.sourcegitcommit: 15dfa0c83aa88816c18e30a44a49e36e733d952c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22536066"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "24011272"
 ---
 # <a name="protect-against-threats-in-office-365"></a>Protección contra amenazas en Office 365
 
@@ -88,6 +88,14 @@ Identificar, supervisar y comprender los ataques y con rapidez las amenazas de d
     
 - [Introducción a la inteligencia sobre amenazas de Office 365](get-started-with-ti.md)
     
+## <a name="privileged-access-management"></a>Privileged Access Management
+
+Ayudar a proteger la organización de las infracciones que pueden usar cuentas con privilegios de administración existentes con acceso permanente a los datos confidenciales o acceso a la configuración de configuración crítica. Después de habilitar la administración con privilegios de acceso, los usuarios deberán solicitar acceso just-in-time para completar las tareas con privilegios elevados y con privilegios a través de un flujo de trabajo de aprobación que es altamente con ámbito y límite de tiempo.
+  
+- [Obtenga una visión general de con privilegios de administración de acceso](privileged-access-management-overview.md)
+    
+- [Empezar a trabajar con privilegios de administración de acceso](privileged-access-management-configuration.md)
+
 ## <a name="additional-options"></a>Opciones adicionales
 
 Obtenga más información acerca de las tecnologías de Microsoft relacionadas y procesos que ayudan a seguro Office 365 contra amenazas.
