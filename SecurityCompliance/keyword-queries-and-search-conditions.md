@@ -16,16 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: 'Obtenga información acerca de las propiedades de correo electrónico y el archivo que se pueden buscar en buzones de Exchange Online y en SharePoint o OneDrive para los sitios de negocio con la herramienta de búsqueda de contenido en la seguridad de Office 365 &amp; centro de cumplimiento.  '
-ms.openlocfilehash: 8501743d38425cb980088d65e1dd6bd0bd45cc08
-ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
+ms.openlocfilehash: a797a8d6dd616616c5dc8606c3e3043530e873c3
+ms.sourcegitcommit: 7675230c9cda25cbf7ad7d4cadf4372c03789cf6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "23782107"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "24015361"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>Consultas de palabras clave y condiciones de búsqueda para la búsqueda de contenido
 
-En este tema se describe las propiedades de correo electrónico y documentos que se pueden buscar en los elementos de correo electrónico en Exchange Online y los documentos almacenados en SharePoint y sitios de OneDrive para la empresa mediante el uso de la característica de búsqueda de contenido en la seguridad de Office 365 &amp; cumplimiento Centro. También puede usar el ** \*- ComplianceSearch** cmdlets en seguridad &amp; PowerShell de centro de cumplimiento para buscar estas propiedades. También se describe el tema: 
+En este tema se describe las propiedades de correo electrónico y documentos que se pueden buscar en los elementos de correo electrónico en Exchange Online y los documentos almacenados en SharePoint y sitios de OneDrive para la empresa mediante el uso de la característica de búsqueda de contenido en la seguridad de Office 365 &amp; cumplimiento Centro. También puede usar el ** \*- ComplianceSearch** cmdlets en seguridad &amp; PowerShell de centro de cumplimiento para buscar estas propiedades. También se describe el tema:   
   
 - Uso de operadores de búsqueda booleanos, condiciones de búsqueda y otras técnicas de consulta de búsqueda para restringir los resultados de búsqueda.
     
