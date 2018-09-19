@@ -3,7 +3,6 @@ title: Retención, eliminación y destrucción de datos en Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: Office 365 Administration
@@ -12,12 +11,12 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: Una descripción general de las directivas de Microsoft para Office 365 con respecto a la retención de datos, eliminación y destrucción.
-ms.openlocfilehash: 4d952058df8d0efb664f23e5495796fdb9e006f2
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: bb038f8bd8e3f0286ea7d673e5e286bdc4a9677d
+ms.sourcegitcommit: 1bccdaacf358505604c9cf422cb1e272aefae19d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22535955"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "23999151"
 ---
 # <a name="data-retention-deletion-and-destruction-in-office-365"></a>Retención, eliminación y destrucción de datos en Office 365
 
@@ -33,10 +32,10 @@ La directiva estándar de tratamiento de datos de Microsoft para Office 365 espe
 | Categoría de datos | Conservar al menos | Conservar como máximo |
 |---------------------------------------|:-----------------:|:-----------------:|:----------------------------------:|:-------------------------------:|
 | Datos de Control de acceso | N/D | N/D |
-| Contenido de cliente | 7 días | 30 días |
-| Información de identificación personal del usuario final | 90 días | 180 días |
+| Contenido de cliente | 7 días | 30 días |
+| Información de identificación personal del usuario final | 90 días | 180 días |
 | Datos de la cuenta | 1 año | 3 años |
-| Información de identificación de organización | 90 días | 180 días |
+| Información de identificación de organización | 90 días | 180 días |
 | Metadatos del sistema | Consulte los registros de seguridad | Consulte los registros de seguridad |
 | Registros de seguridad | Min 1 año | 1 año de Max |
 | Registros de archivado en línea de Exchange | Min 3 años | 3 años de Max |
@@ -47,9 +46,9 @@ La directiva estándar de tratamiento de datos de Microsoft para Office 365 espe
 |---------------------------------------|:-----------------:|:-----------------:|:----------------------------------:|:-------------------------------:|
 | Datos de Control de acceso | 90 días (para la recuperación de contenido) | 180 días (para la recuperación de contenido) |
 | Contenido de cliente | 90 días (cuenta de función limitada) | 180 días |
-| Información de identificación personal del usuario final | 90 días | 180 días |
+| Información de identificación personal del usuario final | 90 días | 180 días |
 | Datos de la cuenta | 1 año | 3 años |
-| Información de identificación de organización | 90 días | 180 días |
+| Información de identificación de organización | 90 días | 180 días |
 | Metadatos del sistema | Consulte los registros de seguridad | Consulte los registros de seguridad |
 | Registros de seguridad | Min 1 año | 1 año de Max |
 | Registros de archivado en línea de Exchange | Min 3 años | 3 años de Max |
@@ -68,8 +67,8 @@ Microsoft también dispone de una directiva estándar de tratamiento de datos qu
 En todo momento durante el término de una suscripción, un suscriptor puede ponerse en contacto con Microsoft Support y solicitud EF Desaprovisionamiento de suscripción. En este proceso, todos los datos de usuario, incluidos los datos de SharePoint Online, Exchange Online que puede estar en suspensión o almacenados en los buzones de correo inactivos, es eliminados tres días después de que el administrador escribe el código de bloqueo proporcionado por Microsoft. Para obtener más información sobre desaprovisionamiento acelerada, vea [Cancelar Office 365](https://support.office.com/article/Cancel-Office-365-for-business-b1bc0bef-4608-4601-813a-cdd9f746709a).
 
 ## <a name="related-links"></a>Vínculos relacionados
-- [Eliminación de datos en Exchange Online](/office365/enterprise/office-365-exchange-online-data-deletion)
-- [Eliminación de datos en SharePoint Online](/office365/enterprise/office-365-sharepoint-online-data-deletion)
-- [Eliminación de datos en Skype Empresarial](/office365/enterprise/office-365-skype-data-deletion)
-- [Inmutabilidad en Office 365](/office365/enterprise/office-365-data-immutability)
-- [Destrucción de datos](/office365/enterprise/office-365-data-destruction)
+- [Eliminación de datos en Exchange Online](office-365-exchange-online-data-deletion.md)
+- [Eliminación de datos en SharePoint Online](office-365-sharepoint-online-data-deletion.md)
+- [Eliminación de datos en Skype Empresarial](office-365-skype-data-deletion.md)
+- [Inmutabilidad en Office 365](office-365-data-immutability.md)
+- [Destrucción de datos](office-365-data-destruction.md)
