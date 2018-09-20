@@ -13,12 +13,12 @@ ms.collection: Strat_O365_IP
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: Utilice este tema para obtener más información acerca de la configuración de administración de acceso con privilegios en Office 365
-ms.openlocfilehash: b2b6ab18687617c0da3425f4ee60cf81074f6f69
-ms.sourcegitcommit: 15dfa0c83aa88816c18e30a44a49e36e733d952c
+ms.openlocfilehash: 6494505554a02f005df8f45839c9575094acbf1a
+ms.sourcegitcommit: d31904e81f81d0fba75309a2bc8bbfb05565a0b4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "24021411"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "24055255"
 ---
 # <a name="configuring-privileged-access-management-in-office-365"></a>Configuración de administración de acceso con privilegios en Office 365
 
@@ -201,7 +201,7 @@ Get-ElevatedAccessRequest -Identity 28560ed0-419d-4cc3-8f5b-603911cbd450 | selec
 ```
 
 ### <a name="approving-an-elevation-authorization-request"></a>Aprobación de una solicitud de autorización de elevación
-Cuando se crea una solicitud de aprobación, los miembros del grupo de aprobadores relevantes recibirán una notificación de correo electrónico y pueden aprobar la solicitud asociada con el identificador de solicitud.
+Cuando se crea una solicitud de aprobación, los miembros del grupo de aprobadores relevantes recibirán una notificación de correo electrónico y pueden aprobar la solicitud asociada con el identificador de solicitud. El solicitante recibirá una notificación de la aprobación de la solicitud o la denegación a través del mensaje de correo electrónico.
 
 #### <a name="using-the-microsoft-365-admin-center"></a>Desde el centro de administración de Microsoft 365
 
