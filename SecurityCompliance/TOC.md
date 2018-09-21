@@ -84,7 +84,6 @@
 ### [Cifrado de correo electrónico en Office 365](email-encryption.md)
 ### [Administrar el cifrado de mensajes de Office 365](manage-office-365-message-encryption.md)
 ### [Configurar las nuevas capacidades de cifrado de mensajes de Office 365](set-up-new-message-encryption-capabilities.md)
-
 ### [Cómo Exchange Online protege su información confidencial de correo electrónico](exchange-online-secures-email-secrets.md)
 ### [Cifrado de mensajes de Office 365 (OME)](ome.md)
 ### [Preguntas más frecuentes sobre el cifrado de servicio con la clave de cliente para Office 365](service-encryption-with-customer-key-faq.md)
@@ -99,7 +98,6 @@
 ### [Creación de condiciones para una directiva de revisión de supervisión](create-conditions-for-a-supervisory-review-policy.md)
 ### [Configurar Azure Rights Management para el Cifrado de mensajes de Office 365](set-up-azure-rm-for-message-encryption.md)
 ## [Protección contra amenazas avanzada de Office 365](office-365-atp.md)
-### [Protección contra amenazas en Office 365](protect-against-threats.md) 
 ### [Vínculos seguros ATP de Office 365](atp-safe-links.md)
 #### [Configurar directivas de vínculos seguros de ATP](set-up-atp-safe-links-policies.md)
 #### [Páginas de advertencia de vínculos seguros de ATP](atp-safe-links-warning-pages.md)
@@ -141,6 +139,8 @@
 ### [Buscar y liberar mensajes en cuarentena como usuario](find-and-release-quarantined-messages-as-a-user.md)
 ### [Preguntas más frecuentes sobre cuarentena para Office 365](quarantine-faq.md)
 ### [Usar notificaciones de correo no deseado para el usuario para liberar y notificar mensajes de correo en cuarentena en Office 365](use-spam-notifications-to-release-and-report-quarantined-messages.md)
+## [Administración del acceso con privilegios](privileged-access-management-overview.md)
+### [Configurar la administración del acceso con privilegios](privileged-access-management-configuration.md)
 # [Buscar contenido](search-for-content.md)
 ## [Usar búsqueda de contenido](content-search.md)
 ### [Consultas de palabras clave y condiciones de búsqueda para la búsqueda de contenido](keyword-queries-and-search-conditions.md).
