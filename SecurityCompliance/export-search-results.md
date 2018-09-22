@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: 'Exportar los resultados de búsqueda de una búsqueda de contenido en la seguridad de Office 365 &amp; centro de cumplimiento a un equipo local. Los resultados de correo electrónico de Emaill se exportan como archivos PST. Contenido de SharePoint y OneDrive para sitios de negocio se exportan como documentos de Office nativos. '
-ms.openlocfilehash: a1ea1daef438225b5e65d835efbcdecdb2178da8
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 9b6db129371b234713b5504f5763ee1dc3d7d638
+ms.sourcegitcommit: bf70ec8e11b3f75bf45cd4f760cd1a982593dbad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22536671"
+ms.lasthandoff: 09/22/2018
+ms.locfileid: "24962966"
 ---
 # <a name="export-content-search-results-from-the-office-365-security-amp-compliance-center"></a>Exportar los resultados de búsqueda de contenido de la seguridad de Office 365 &amp; centro de cumplimiento
 
@@ -182,7 +182,7 @@ Aquí es obtener más información acerca de cómo exportar los resultados de b�
   
 [Exportación de informes](export-search-results.md#export-reports)
   
-[Exportar elementos sin indizar](export-search-results.md#exporting-unindexed-items)
+[Exportación de los elementos indizados parcialmente](#exporting-partially-indexed-items)
   
 [Exportación de los mensajes individuales o los archivos PST](export-search-results.md#Exporting-individual-messages-or-PST-files)
   
@@ -279,6 +279,8 @@ Aquí es obtener más información acerca de cómo exportar los resultados de b�
     C - todos los elementos indizados parcialmente desde todos los sitios de la búsqueda se exportan, independientemente de si un sitio contiene elementos que coinciden con los criterios de búsqueda.
     
     Si decide exportar elementos indizados parcialmente, se exportan los elementos del buzón parcialmente indizados en un archivo PST independiente independientemente de la opción que elija en **Exchange exportar contenido como**.
+
+- Si se devuelven los elementos indizados parcialmente en la búsqueda de resultados (debido a que otras propiedades de elementos indizados parcialmente coincide con los criterios de búsqueda), a continuación, se exporta esos parcialmente indizada con los resultados de búsqueda normal. Por lo tanto, si se decide exportar los elementos indizados y los elementos indizados parcialmente (seleccionando la opción de exportación de **todos los elementos, los que tienen formato no reconocido, incluidos se cifran, o no estaban indizados por otras razones** ), los elementos indizados parcialmente exportan con el reslts regular se mostrarán en el informe de Results.csv. No se enumerarán en el informe de items.csv no indizados.
     
  ### <a name="exporting-individual-messages-or-pst-files"></a>Exportación de los mensajes individuales o los archivos PST
   

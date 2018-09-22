@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Usar la seguridad de Office 365 &amp; centro de cumplimiento para buscar el registro de auditoría unificado para ver la actividad de usuario y Administrador de la organización de Office 365. '
-ms.openlocfilehash: 3fe8b4ade1b82cc76fcc300284127693b7e5fc07
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: dc673b8f52bacccfa746ad258ea91d8dd2074eeb
+ms.sourcegitcommit: bf70ec8e11b3f75bf45cd4f760cd1a982593dbad
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22535846"
+ms.lasthandoff: 09/22/2018
+ms.locfileid: "24962976"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security-amp-compliance-center"></a>Buscar en el registro de auditoría del Centro de seguridad y cumplimiento de Office 365
 
@@ -647,3 +647,60 @@ Estas son algunas sugerencias para la búsqueda de actividad en el registro de a
     
 - También puede ver eventos en el registro de auditoría de administración de Exchange mediante el centro de administración de Exchange. Para obtener instrucciones, vea [Ver el Administrador de registro de auditoría](https://technet.microsoft.com/library/dn342832%28v=exchg.150%29.aspx).
   
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+
+**¿Dónde puedo encontrar acerca de las características que ofrece el servicio de auditoría en Office 365?**
+
+Para obtener más información acerca de las características de auditoría y creación de informes disponibles en Office 365, vea [auditoría e informes en Office 365](office-365-auditing-and-reporting-overview.md). 
+
+**¿Cuáles son los distintos servicios de Office 365 que actualmente se auditan?**
+
+Los servicios de Office 365 más usados, como Exchange Online, SharePoint, OneDrive, Azure Active Directory, Microsoft Teams, CRM, protección avanzada de amenaza y prevención de pérdida de datos que se auditan. Vea la sección de [Introducción](#search-the-audit-log-in-the-office-365-security-amp-compliance-center) de este artículo para obtener una lista completa.
+
+**¿Qué actividades se auditan mediante la auditoría de servicio en Office 365?**
+
+Vea la sección [actividades auditada](#audited-activities) en este artículo para una lista y una descripción de las actividades que se auditan en Office 365.
+
+**¿Cuánto tiempo tarda para que un registro de auditoría a estar disponible después de que se ha producido un evento?**
+
+La mayoría de datos de auditoría están disponibles dentro de 30 minutos, pero puede tardar hasta 24 horas después de que se produce un evento de la entrada de registro de auditoría correspondientes que se mostrará en los resultados de búsqueda. Vea la tabla en la sección [antes de empezar](#before-you-begin) de este artículo que se muestra el tiempo que tarda eventos en los distintos servicios de Office 365 esté disponible.
+
+**¿Cuánto tiempo son los registros de auditoría mantiene para?**
+
+Actualmente los registros del registro de auditoría se conservan durante 90 días. Microsoft está trabajando activamente en un plan para aumentar este límite. 
+
+**¿Tener acceso a los datos de auditoría mediante programación?**
+
+Sí. La API de actividad de administración de Office 365 se usa para recuperar los registros de auditoría mediante programación.  Para empezar, vea [Introducción a las API de administración de Office 365](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis).
+
+**¿Hay otras maneras de obtener auditoría de registros que no sean suing la seguridad de Office 365 & Centro de cumplimiento o la API de actividad de administración de Office 365?**
+
+No. Estos son las sólo dos maneras de obtener datos desde el servicio de auditoría de Office 365. 
+
+**¿Es necesario habilitar individualmente la auditoría en cada servicio que va a capturar los registros de auditoría para?**
+
+En la mayoría de los servicios de Office 365, la auditoría está habilitada de forma predeterminada después de activar inicialmente de auditoría para la organización de Office 365 (tal como se describe en la sección [antes de comenzar](#before-you-begin) en este artículo). Sin embargo, se debe habilitar la auditoría en Exchange Online para cada buzón de correo que se va a auditar el buzón de correo.   Estamos trabajando en habilitar la auditoría de buzón de correo de forma predeterminada para todos los buzones en una organización de Office 365. Para obtener más información, consulte "auditoría de buzón de correo de Exchange estará habilitada de forma predeterminada" en el [blog de seguridad de Microsoft, privacidad y cumplimiento de normas](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Exchange-Mailbox-Auditing-will-be-enabled-by-default/ba-p/215171).
+
+**¿La compatibilidad de servicio de auditoría de Office 365 la desduplicación de registros?**
+
+No. La canalización del servicio de auditoría es casi en tiempo real y, por lo tanto, no es compatible con la desduplicación.
+ 
+**¿Flujo de datos de auditoría de Office 365 en todo el mundo?**
+
+No. Actualmente disponemos de auditoría de las implementaciones de canalización en NA (Norteamérica), EMEA (Europa, Oriente medio y África) y regiones APAC (Asia Pacífico). Sin embargo, nos podremos flujo de los datos entre estas regiones para equilibrio de carga y sólo durante los problemas del sitio de Live Meeting. Cuando se lleva a cabo estas actividades, se cifran los datos en tránsito.   
+ 
+**¿Es la auditoría datos cifrados?**
+
+Auditoría de datos se almacena en los buzones de Exchange (datos en reposo) en la misma región donde se implementa la canalización de auditoría. Estos datos no se cifran. Sin embargo, siempre se cifran los datos en tránsito. 
+
+
+
+
+
+
+
+
+
+
+
+
