@@ -3,7 +3,7 @@ title: Buscar en el registro de auditoría del Centro de seguridad y cumplimient
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/29/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 f1_keywords:
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Usar la seguridad de Office 365 &amp; centro de cumplimiento para buscar el registro de auditoría unificado para ver la actividad de usuario y Administrador de la organización de Office 365. '
-ms.openlocfilehash: dc673b8f52bacccfa746ad258ea91d8dd2074eeb
-ms.sourcegitcommit: bf70ec8e11b3f75bf45cd4f760cd1a982593dbad
+ms.openlocfilehash: 4c56f6f0c5f5a1ace7b94fab63d839760045c66f
+ms.sourcegitcommit: 6562a0d171dacdcdb945d192f45ea1a4c0c1c0c3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "24962976"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "24974690"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security-amp-compliance-center"></a>Buscar en el registro de auditoría del Centro de seguridad y cumplimiento de Office 365
 
@@ -47,7 +47,11 @@ ms.locfileid: "24962976"
 - Actividad de usuario y la administración en Power BI para Office 365
     
 - Actividad de usuario y la administración en Microsoft Teams
+
+- Actividad de usuario y administración de Dynamics 365
     
+- Actividad de usuario y la administración in Microsoft Flow
+
 - Actividad de usuario y administración de Yammer
     
 - Actividad de usuario y la administración en Microsoft Stream
@@ -57,7 +61,7 @@ ms.locfileid: "24962976"
 
 Asegúrese de leer el registro de auditoría de los siguientes elementos antes de iniciar la búsqueda de Office 365.
   
-- Usted (u otro administrador) en primer lugar debe activar el registro de auditoría antes de empezar, puede buscar en el registro de auditoría de Office 365. Para activarla, haga clic en ** iniciar la grabación de actividad de usuario y administración ** en la página de **búsqueda de registro de auditoría** en la seguridad &amp; centro de cumplimiento. (Si no ve este vínculo, auditoría ha ya se ha activado para la organización.) Después de activar, se muestra un mensaje que indica que se está preparando el registro de auditoría y que se puede ejecutar una búsqueda en un par de horas una vez finalizada la preparación. Solo tiene que hacer esto una vez. 
+- Usted (u otro administrador) en primer lugar debe activar el registro de auditoría antes de empezar, puede buscar en el registro de auditoría de Office 365. Para activarla, haga clic en **iniciar la grabación de usuario y la actividad de administración** en la página de **búsqueda de registro de auditoría** en la seguridad &amp; centro de cumplimiento. (Si no ve este vínculo, auditoría ha ya se ha activado para la organización.) Después de activar, se muestra un mensaje que indica que se está preparando el registro de auditoría y que se puede ejecutar una búsqueda en un par de horas una vez finalizada la preparación. Solo tiene que hacer esto una vez. 
     
     > [!NOTE]
     > Estamos en el proceso de activación de la auditoría de forma predeterminada. Hasta entonces, puede desactivarla como se describió anteriormente. 
@@ -91,11 +95,20 @@ Asegúrese de leer el registro de auditoría de los siguientes elementos antes d
     
 |**Servicio de Office 365**|**30 minutos**|**24 horas**|
 |:-----|:-----|:-----|
-|Azure Active Directory (administración eventos)  <br/> ||![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+|Protección contra amenazas avanzadas y la información sobre amenazas  <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)| |
 |Azure Active Directory (eventos de inicio de sesión de usuario)  <br/> ||![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+|Azure Active Directory (administración eventos)  <br/> ||![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) |
+|Azure Active Directory (eventos de inicio de sesión de usuario)  <br/> ||![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+|Prevención de pérdida de datos  <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+|Dynamics 365 CRM <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+|eDiscovery  <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
 |Exchange Online  <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
+|Microsoft Flow  <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+|Microsoft Forms  <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+|Microsoft Project  <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+|Microsoft Stream  <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
 |Microsoft Teams  <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
-|Power BI  <br/> ||![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+|Power BI  <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
 |Seguridad &amp; centro de cumplimiento  <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
 |SharePoint Online y OneDrive para la Empresa  <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
 |Sway  <br/> ||![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
