@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0a322724-08ca-43db-b69a-afbfa20484cd
 description: Con Office 365, el contenido se cifra en reposo y en tránsito, con el cifrado más seguro, protocolos y las tecnologías disponibles. Obtenga una visión general de cifrado en Office 365.
-ms.openlocfilehash: e5c21cf456f9ccca2393b8985dd47e34745902cf
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: a9f37fddf28461ee4912e0b8a1f5b922c59c009f
+ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22536205"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "24972292"
 ---
 # <a name="encryption-in-office-365"></a>Cifrado en Office 365
 
@@ -70,7 +70,7 @@ Vea los siguientes recursos para obtener más información:
 |Configurar el cifrado para mi organización  <br/> |[Configurar el cifrado en Office 365 Enterprise](set-up-encryption.md) <br/> |
 |Ver detalles acerca de certificados, las tecnologías y los conjuntos de cifrado TLS en Office 365  <br/> |[Detalles técnicos acerca del cifrado en Office 365](technical-reference-details-about-encryption.md) <br/> |
 |Trabajar con los mensajes cifrados en un dispositivo móvil  <br/> |[Ver los mensajes cifrados en su dispositivo Android](https://support.office.com/article/83d60f17-2305-407a-a762-7d518401fdeb) <br/> [Ver los mensajes cifrados en su iPhone o iPad](https://support.office.com/article/4d631321-0d26-4bcc-a483-d294dd0b1caf) <br/> |
-|Cifrar un documento mediante la protección con contraseña  <br/></br>  Actualmente, la protección con contraseña no se admite en Office Online. Utilice las versiones de escritorio de Word, Excel y PowerPoint para protección con contraseña.           |[Agregar o quitar la protección en el documento, libro o la presentación](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826) (Elija una sección de **protección de agregar** y, a continuación, vea **cifrar con contraseña** )  <br/> |
+|Cifrar un documento mediante la protección con contraseña  <br/><br/>  Actualmente, la protección con contraseña no se admite en Office Online. Utilice las versiones de escritorio de Word, Excel y PowerPoint para protección con contraseña.           |[Agregar o quitar la protección en el documento, libro o la presentación](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826) (Elija una sección de **protección de agregar** y, a continuación, vea **cifrar con contraseña** )  <br/> |
 |Quitar el cifrado de un documento  <br/> |[Agregar o quitar la protección en el documento, libro o la presentación](https://support.office.com/article/05084cc3-300d-4c1a-8416-38d3e37d6826) (Elija una sección de **quitar la protección** y, a continuación, vea **quitar el cifrado de contraseña** )  <br/> |
    
 ## <a name="related-topics"></a>Temas relacionados

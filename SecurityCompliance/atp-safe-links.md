@@ -19,12 +19,12 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: La característica vínculos seguros proporciona comprobación de tiempo de clic de los hipervínculos en documentos de Office y en los mensajes de correo electrónico. Use los vínculos seguros para proteger la organización de suplantación de identidad y otros ataques.
-ms.openlocfilehash: b2aa83d7958e030170bcbdc4bfb5e27578bf8b81
-ms.sourcegitcommit: d89c24258123a3ffde574a391d59afd3aea8470d
+ms.openlocfilehash: 35975ee58763578586b78d7d1f281fde81e1139b
+ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2018
-ms.locfileid: "23955462"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "24972352"
 ---
 # <a name="office-365-atp-safe-links"></a>Vínculos seguros ATP de Office 365
 
@@ -60,9 +60,9 @@ En un nivel alto, aquí es cómo funciona la protección de vínculos seguros de
     
 ## <a name="how-atp-safe-links-works-with-office-documents"></a>Cómo funciona la ATP seguros vínculos con documentos de Office
 
-En un nivel alto, aquí es cómo funciona la protección de vínculos seguros de ATP para las direcciones URL en aplicaciones de Office 365 ProPlus (versiones actuales de OneNote, Word, Excel y PowerPoint en Windows o Mac, las aplicaciones de Office de iOS o dispositivos Android, Visio en Windows y Office Online):
+En un nivel alto, aquí es cómo funciona la protección de vínculos seguros de ATP para las direcciones URL en aplicaciones de Office 365 ProPlus (versiones actuales de Word, Excel y PowerPoint en Windows o Mac, las aplicaciones de Office de iOS o dispositivos Android, Visio en Windows, OneNote Online y Office Online):
   
-1. Personas tener instalado Office 365 ProPlus en su equipo, smartphone o Tablet PC.
+1. Personas tener instalado Office 365 ProPlus en su equipo, smartphone o Tablet PC. (O bien, que utilicen Office Online en su explorador).
     
 2. Un usuario abre un Word, Excel, PowerPoint o Visio e inicia sesión en Office 365 Enterprise mediante su cuenta de trabajo o escuela. El documento contiene las direcciones URL.
     

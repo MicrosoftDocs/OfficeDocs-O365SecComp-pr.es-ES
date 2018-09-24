@@ -12,18 +12,18 @@ search.appverid:
 - MOE150
 ms.assetid: dd6d2417-49c4-4de6-9294-67fdabbf8532
 description: También puede integrar su servidor SIEM con seguridad de la aplicación de nube de Office 365. Lea este artículo para obtener información general sobre cómo funciona y cómo configurarla.
-ms.openlocfilehash: 6b9d51d91d4b1ae55dd0dd16a92872daa4ecef90
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: a2bd75e73ddccef9359ace304faa3c8b1dd4a728
+ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23043268"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "24972332"
 ---
 # <a name="integrate-your-siem-server-with-office-365-cloud-app-security"></a>Integrar el servidor SIEM con Office 365 Cloud App Security
   
 |Evaluación **\>**|Planeación de **\>**|Implementación **\>**|Utilización de ***|
 |:-----|:-----|:-----|:-----|
-|[Empezar a evaluar](office-365-cas-overview.md) <br/> |[Comenzar a planear](get-ready-for-office-365-cas.md) <br/> |¡Están aquí!  <br/> [Paso siguiente](utilization-activities-for-ocas.md) <br/> |[Iniciar utilizando](utilization-activities-for-ocas.md) <br/> |
+|[Empezar a evaluar](office-365-cas-overview.md) <br/> |[Comenzar a planear](get-ready-for-office-365-cas.md) <br/> |¡Están aquí!  <br/> [Siguiente paso](utilization-activities-for-ocas.md) <br/> |[Iniciar utilizando](utilization-activities-for-ocas.md) <br/> |
    
 También puede integrar la [Seguridad de la aplicación de Office 365 en la nube](get-ready-for-office-365-cas.md) con el servidor de administración (SIEM) de eventos e información de seguridad para habilitar la supervisión centralizada de alertas. Esto es especialmente beneficioso para las organizaciones que usan servicios de nube locales y en aplicaciones de servidor. Integración con un servidor SIEM permite a su equipo de seguridad proteger mejor las aplicaciones de Office 365 que se mantiene el flujo de trabajo de seguridad habituales, al automatizar determinados procedimientos de seguridad y correlacionar entre basados en la nube y locales eventos.  
   
@@ -71,25 +71,25 @@ Seguridad de la aplicación de Office 365 en la nube actualmente es compatible c
     
 2. Vaya a **las alertas de** \> **avanzada de administrar las alertas**.
     
-3. Elija **Ir a la seguridad de la aplicación de Office 365 en la nube**.</br>
+3. Elija **Ir a la seguridad de la aplicación de Office 365 en la nube**.<br/>
     ![En la seguridad &amp; centro de cumplimiento, elija Administrar alertas avanzadas para ir a la seguridad de la aplicación de nube de Office 365](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)
   
-4. Haga clic en **configuración de** \> **extensiones de seguridad**.</br>
+4. Haga clic en **configuración de** \> **extensiones de seguridad**.<br/>
 ![Elija Configuración > extensiones de seguridad](media/Settings-SecurityExtensions.png)
 
-5. Elija **Agregar SIEM agente**.</br>![Elija a agente SIEM agregar.](media/SIEMAgents.png)
+5. Elija **Agregar SIEM agente**.<br/>![Elija a agente SIEM agregar.](media/SIEMAgents.png)
     
-6. Elija **iniciar el Asistente**.</br>![Obtener ayuda o iniciar el Asistente para](media/HelpOrWizard.png) 
+6. Elija **iniciar el Asistente**.<br/>![Obtener ayuda o iniciar el Asistente para](media/HelpOrWizard.png) 
     
-7. En el paso **General** , especifique un nombre y **Seleccione el formato SIEM** y establecer cualquier **Configuración avanzada** que son relevantes para ese formato. A continuación, elija **siguiente**.</br>![Especifique un nombre y tipo](media/ChooseAgentTypeAndName.png)
+7. En el paso **General** , especifique un nombre y **Seleccione el formato SIEM** y establecer cualquier **Configuración avanzada** que son relevantes para ese formato. A continuación, elija **siguiente**.<br/>![Especifique un nombre y tipo](media/ChooseAgentTypeAndName.png)
     
-8. En el paso **Remoto de registro del sistema** , especifique la dirección IP o el nombre de host del **host remoto de registro del sistema** y el **número de puerto del registro del sistema**. Seleccione TCP o UDP como protocolo remoto registro del sistema. (Puede trabajar con el Administrador de seguridad o administrador de red para obtener estos detalles si no dispone de ellos). A continuación, elija **siguiente**.</br>![Especificar detalles del registro del sistema remoto remoto](media/ArcSightS1Syslog.png)
+8. En el paso **Remoto de registro del sistema** , especifique la dirección IP o el nombre de host del **host remoto de registro del sistema** y el **número de puerto del registro del sistema**. Seleccione TCP o UDP como protocolo remoto registro del sistema. (Puede trabajar con el Administrador de seguridad o administrador de red para obtener estos detalles si no dispone de ellos). A continuación, elija **siguiente**.<br/>![Especificar detalles del registro del sistema remoto remoto](media/ArcSightS1Syslog.png)
   
 9. En el paso de **Tipos de datos** , siga uno de los siguientes procedimientos y, a continuación, haga clic en **siguiente**:
-    - Conserve la configuración predeterminada de **Todas las alertas**</br>OR
-    - Haga clic en **todas las alertas**y, a continuación, elija **filtros específicos**. Definir filtros para seleccionar los tipos de alertas que desea enviar a su servidor SIEM.</br>![Paso de tipos de datos del Asistente](media/ArcSightS1ExportOptions.png)
+    - Conserve la configuración predeterminada de **Todas las alertas**<br/>OR
+    - Haga clic en **todas las alertas**y, a continuación, elija **filtros específicos**. Definir filtros para seleccionar los tipos de alertas que desea enviar a su servidor SIEM.<br/>![Paso de tipos de datos del Asistente](media/ArcSightS1ExportOptions.png)
   
-10. En la pantalla Enhorabuena, copie el token y guardar para usarlo más adelante.</br>![Pantalla de agente creado SIEM](media/SIEMAgentFinished.png) 
+10. En la pantalla Enhorabuena, copie el token y guardar para usarlo más adelante.<br/>![Pantalla de agente creado SIEM](media/SIEMAgentFinished.png) 
 
 > [!IMPORTANT]
 > En este punto, ha configurado un agente de SIEM en seguridad de la aplicación de Office 365 en la nube, pero aún no se han finalizado la integración del servidor de SIEM. Continúe con el paso siguiente para continuar la integración del servidor de SIEM.
@@ -104,7 +104,7 @@ Una vez que haga clic en Cerrar y salir del asistente, en la pantalla de extensi
     
 2. Extraiga el archivo .jar desde la carpeta zip y ejecutar en el servidor.
     
-3. Después de ejecutar el archivo, ejecute lo siguiente: comando:</br>
+3. Después de ejecutar el archivo, ejecute lo siguiente: comando:<br/>
   ```
   java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN
   ```
@@ -115,7 +115,7 @@ Una vez que haga clic en Cerrar y salir del asistente, en la pantalla de extensi
 - Se recomienda ejecutar el relleno JAR en el servidor durante la instalación del servidor.
     - **Windows**: ejecute como una tarea programada, asegurándose de que se configure la tarea para **ejecutar si el usuario inició sesión como si no** y desactive la opción **Detener la tarea si se ejecuta más de** .
 
-    - **Linux**: agregar el comando ejecutar con un **&** a la `rc.local` archivo. </br>Ejemplo:</br> 
+    - **Linux**: agregar el comando ejecutar con un **&** a la `rc.local` archivo. <br/>Ejemplo:<br/> 
     ```
     java -jar mcas-siemagent-0.87.20-signed.jar [--logsDirectory DIRNAME] [--proxy ADDRESS[:PORT]] --token TOKEN &
     ```
@@ -128,7 +128,7 @@ Una vez que haga clic en Cerrar y salir del asistente, en la pantalla de extensi
   
 ### <a name="step-3-validate-that-the-siem-agent-is-working"></a>Paso 3: Validar que el agente de SIEM está funcionando
 
-1. Asegúrese de que el estado del agente SIEM en el portal de seguridad de la aplicación de nube de Office 365 no se muestra como **error de conexión** o **desconectado** y que no hay ninguna notificación de agente.</br>Por ejemplo, aquí podemos ver que está conectado el servidor SIEM:</br>![Servidor SIEM conectado](media/siem-connected.png)</br>Y, a continuación, podemos ver que el servidor SIEM está desconectado:</br>![Servidor SIEM no conectado](media/siem-not-connected.png) 
+1. Asegúrese de que el estado del agente SIEM en el portal de seguridad de la aplicación de nube de Office 365 no se muestra como **error de conexión** o **desconectado** y que no hay ninguna notificación de agente.<br/>Por ejemplo, aquí podemos ver que está conectado el servidor SIEM:<br/>![Servidor SIEM conectado](media/siem-connected.png)<br/>Y, a continuación, podemos ver que el servidor SIEM está desconectado:<br/>![Servidor SIEM no conectado](media/siem-not-connected.png) 
   
 2. En el servidor de registro del sistema/SIEM, asegúrese de que vea que han llegado las alertas de seguridad de la aplicación de nube de Office 365.
   

@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: eb56b69b-3170-4086-82cf-ba40a530fa1b
 description: Integrar server de su organización SIEM con información sobre amenazas de Office 365 y avanzada protección contra amenazas con la API de administración de Office 365 actividad.
-ms.openlocfilehash: 40c84b9d7b7ec4c9b15383e3ffbbabf839294def
-ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
+ms.openlocfilehash: 057d8ac101b96f37846ac751645934279d45dc88
+ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "23782147"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "24972262"
 ---
 # <a name="siem-integration-with-office-365-threat-intelligence-and-advanced-threat-protection"></a>Integración de SIEM con información sobre amenazas de Office 365 y avanzada de protección contra amenazas
 
@@ -28,7 +28,7 @@ La API de administración de Office 365 actividad recupera información sobre el
 El servidor SIEM u otro sistema similar debería sondear la carga de trabajo **audit.general** a eventos de detección de acceso. Para obtener más información vea [empezar a trabajar con las API de administración de Office 365](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis). 
 
 > [!IMPORTANT]
-> Debe ser un administrador global de Office 365 o tener el rol de administrador de seguridad asignado en el centro de cumplimiento y seguridad para configurar la integración de SIEM con información sobre amenazas de Office 365 y avanzada de protección contra amenazas.</br>Registro de auditoría debe activarlo para su entorno de Office 365. Para obtener ayuda con esto, vea [activar Office 365 de búsqueda de registros de auditoría activado o desactivado](turn-audit-log-search-on-or-off.md).
+> Debe ser un administrador global de Office 365 o tener el rol de administrador de seguridad asignado en el centro de cumplimiento y seguridad para configurar la integración de SIEM con información sobre amenazas de Office 365 y avanzada de protección contra amenazas.<br/>Registro de auditoría debe activarlo para su entorno de Office 365. Para obtener ayuda con esto, vea [activar Office 365 de búsqueda de registros de auditoría activado o desactivado](turn-audit-log-search-on-or-off.md).
 
 ## <a name="related-topics"></a>Temas relacionados
 

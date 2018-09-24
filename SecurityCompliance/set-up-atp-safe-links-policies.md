@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 description: Configurar directivas de vínculos seguros para proteger la organización de vínculos malintencionados en archivos de Word, Excel, PowerPoint y Visio, así como en mensajes de correo electrónico.
-ms.openlocfilehash: 01ba394053e2da137d5adafa4799040507ab4270
-ms.sourcegitcommit: f8cc2c7bad31d04c99a8eca5e0f8fad72494087a
+ms.openlocfilehash: f1b5ca193043c5fffdcf5e2dee21a08f388fdcdf
+ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "23848090"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "24972312"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Configurar las directivas de seguros vínculos con Office 365 ATP
 
@@ -118,7 +118,7 @@ Como configurar o editar una directiva de vínculos seguros ATP, verá varias op
 |**Para esta directiva**|**Esta opción**|**Se obtiene este resultado**|
 |:-----|:-----|:-----|
 |Predeterminado (una vez definido, la directiva predeterminada se aplica a todas las personas de la organización)  <br/> |**Bloquear las siguientes direcciones URL** <br/> |Permite a su organización tengan una lista personalizada de direcciones URL que se bloquean automáticamente. Cuando los usuarios haga clic en una dirección URL en esta lista, se le lleva a una [página de advertencia](atp-safe-links-warning-pages.md) que explica por qué se bloqueó la dirección URL.<br/> Consulte [Configurar una lista personalizada de direcciones URL bloqueada mediante ATP seguros vínculos](set-up-a-custom-blocked-urls-list-wtih-atp.md) para obtener más detalles, como la compatibilidad con recién agregado hasta tres asteriscos comodín (\*).  <br/> |
-|Predeterminada  <br/> |**Office 365 ProPlus, Office para iOS y Android** <br/> |Cuando se selecciona esta opción, ATP vínculos seguros protección se aplica a las direcciones URL en los documentos que se abren en Office 365 ProPlus (Word, Excel y PowerPoint en Windows o Mac OS), documentos de Office en iOS o dispositivos Android, 2016 de Visio en Windows y Office Online (Word En línea en línea de PowerPoint, Excel Online proporciona y OneNote en línea), que el usuario ha iniciado sesión en Office 365. </br></br>Si ve sólo **2016 de Office en Windows**, a continuación, las actualizaciones de la característica no hayan alcanzado su entorno de Office 365 todavía (y se próximamente). Hasta entonces, la protección de vínculos seguros de ATP se aplica a Word 2016, 2016 de Excel, PowerPoint 2016 o 2016 de Visio que se ejecutan en Windows.           |
+|Predeterminada  <br/> |**Office 365 ProPlus, Office para iOS y Android** <br/> |Cuando se selecciona esta opción, ATP vínculos seguros protección se aplica a las direcciones URL en los documentos que se abren en Office 365 ProPlus (Word, Excel y PowerPoint en Windows o Mac OS), documentos de Office en iOS o dispositivos Android, 2016 de Visio en Windows y Office Online (Word En línea en línea de PowerPoint, Excel Online proporciona y OneNote en línea), que el usuario ha iniciado sesión en Office 365. <br/><br/>Si ve sólo **2016 de Office en Windows**, a continuación, las actualizaciones de la característica no hayan alcanzado su entorno de Office 365 todavía (y se próximamente). Hasta entonces, la protección de vínculos seguros de ATP se aplica a Word 2016, 2016 de Excel, PowerPoint 2016 o 2016 de Visio que se ejecutan en Windows.           |
 |Predeterminada  <br/> |**No realizar un seguimiento cuando los usuarios, haga clic en vínculos seguros de ATP** <br/> |Cuando se selecciona esta opción, haga clic en datos de las direcciones URL en los documentos de Word, Excel, PowerPoint y Visio no se almacena.  <br/> |
 |Predeterminada  <br/> |**No permita que los usuarios haga clic en a través de vínculos de seguros ATP a la dirección URL original** <br/> |Cuando se selecciona esta opción, los usuarios no pueden continuar más allá de una [página de advertencia](atp-safe-links-warning-pages.md) a una dirección URL que se determina que es malintencionado.  <br/> |
 |Una directiva creada para los destinatarios de correo electrónico específica  <br/> |**Off** <br/> |No examina las direcciones URL en mensajes de correo electrónico.  <br/> Le permite definir una regla de excepción, como una regla que no examina las direcciones URL en mensajes de correo electrónico para un grupo específico de destinatarios.  <br/> |

@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 description: Microsoft Outlook en los usuarios de web puede informar de correo no deseado (correo no deseado) y las estafas de suplantación de identidad mediante el uso de las opciones de notificación de correo integrado. También puede permitir que Microsoft sabe si un correo electrónico incorrectamente identificado como correo no deseado (correo no deseado).
-ms.openlocfilehash: daa63e3b68927d7c5684c588a79727ba5d08f480
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 4dab3013f2ca9918dc8529cb67113469ea945015
+ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002989"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "24972302"
 ---
 # <a name="report-junk-email-and-phishing-scams-in-outlook-on-the-web"></a>Las estafas de suplantación de identidad y correo electrónico no deseadas en Outlook, en la web de informes 
 
@@ -44,7 +44,7 @@ Puede informar sobre un mensaje de correo no deseado desde la **Bandeja de entra
 
 Para enviar un mensaje de correo de suplantación de identidad (phishing) a Microsoft:
   
-1. Haga clic en el mensaje de estafas de suplantación de identidad, haga clic en la flecha abajo situada junto a **no deseado**y, a continuación, haga clic en **suplantación de identidad** en la barra de herramientas. Office 365 no bloquear al remitente debido a que los remitentes de mensajes de estafas de suplantación de identidad normalmente suplantar a los remitentes legítimos. Si lo prefiere, agregar el remitente a la lista de remitentes bloqueados siguiendo las instrucciones que aparecen en el tema [Bloquear o permitir (configuración de correo electrónico no deseado)](https://go.microsoft.com/fwlink/?LinkId=627572). ![Indicar un correo electrónico es un phishing en Outlook en el web](media/959bb577-341c-41ee-a159-e46600b2cf8a.png)</br>También puede hacer clic con el botón derecho en un mensaje para mostrar un menú y después hacer clic en **Marcar como correo de suplantación de identidad (phishing)**.</br>Puede informar sobre un mensaje de correo de suplantación de identidad desde la **Bandeja de entrada**, **Otros correos** o la carpeta **Elementos eliminados**. 
+1. Haga clic en el mensaje de estafas de suplantación de identidad, haga clic en la flecha abajo situada junto a **no deseado**y, a continuación, haga clic en **suplantación de identidad** en la barra de herramientas. Office 365 no bloquear al remitente debido a que los remitentes de mensajes de estafas de suplantación de identidad normalmente suplantar a los remitentes legítimos. Si lo prefiere, agregar el remitente a la lista de remitentes bloqueados siguiendo las instrucciones que aparecen en el tema [Bloquear o permitir (configuración de correo electrónico no deseado)](https://go.microsoft.com/fwlink/?LinkId=627572). ![Indicar un correo electrónico es un phishing en Outlook en el web](media/959bb577-341c-41ee-a159-e46600b2cf8a.png)<br/>También puede hacer clic con el botón derecho en un mensaje para mostrar un menú y después hacer clic en **Marcar como correo de suplantación de identidad (phishing)**.<br/>Puede informar sobre un mensaje de correo de suplantación de identidad desde la **Bandeja de entrada**, **Otros correos** o la carpeta **Elementos eliminados**. 
   
 2. En algunas organizaciones, se abrirá un cuadro de diálogo que le pregunta si desea enviar una copia del mensaje de correo electrónico de suplantación de identidad a Microsoft para su análisis. Haga clic en **Informar** para enviar el mensaje al equipo de análisis de correo no deseado de Microsoft. Esta opción de notificación está disponible actualmente para un número limitado de organizaciones; es posible que no se le solicite que informe a Microsoft de un correo de suplantación de identidad. 
     
@@ -52,7 +52,7 @@ Para enviar un mensaje de correo de suplantación de identidad (phishing) a Micr
 
 Cuando Office 365 identifica incorrectamente un mensaje como correo no deseado, envíe un mensaje como "correo deseado" a Microsoft:
   
-1. En la carpeta de correo electrónico no deseado, haga clic en el mensaje y luego en **Correo deseado** en la barra de herramientas. Esto mueve el mensaje a la **Bandeja de entrada** y agrega al remitente a la lista de remitentes seguros.</br>También puede secundario en un mensaje en la carpeta de correo electrónico no deseado para mostrar un menú y haga clic en **Marcar como no deseado**. 
+1. En la carpeta de correo electrónico no deseado, haga clic en el mensaje y luego en **Correo deseado** en la barra de herramientas. Esto mueve el mensaje a la **Bandeja de entrada** y agrega al remitente a la lista de remitentes seguros.<br/>También puede secundario en un mensaje en la carpeta de correo electrónico no deseado para mostrar un menú y haga clic en **Marcar como no deseado**. 
   
 2. Se abrirá un cuadro de diálogo que le pregunta si desea enviar una copia del mensaje de correo electrónico deseado a Microsoft para su análisis. Haga clic en **Informar** para enviar el mensaje al equipo de análisis de correo no deseado de Microsoft. 
     

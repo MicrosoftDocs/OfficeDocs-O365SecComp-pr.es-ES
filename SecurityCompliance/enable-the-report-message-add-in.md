@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 description: Obtenga información sobre cómo habilitar el complemento en el mensaje de informe para Outlook y Outlook en el web, para usuarios individuales o de toda la organización.
-ms.openlocfilehash: 2260f8823132d23e0e1f57a421fd223ea3ab14bd
-ms.sourcegitcommit: edf5db9357c0d34573f8cc406314525ef10d1eb9
+ms.openlocfilehash: 68b70cdb138ad38216f188116e576a24304a3769
+ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23230002"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "24972272"
 ---
 # <a name="enable-the-report-message-add-in"></a>Habilite el complemento de mensajes de informe
 
@@ -40,8 +40,8 @@ Si es un administrador de Exchange Online, puede habilitar el complemento en el 
     
 Después de que el complemento está instalado y habilitado, verá los iconos siguientes: 
 
-- En Outlook el icono tiene el siguiente aspecto: </br> ![Icono informe de mensaje, complemento para Outlook](media/OutlookReportMessageIcon.png)</br>
-- En Outlook Web App el icono tiene el siguiente aspecto:</br>![Outlook en el icono mensaje de informe de Web, complemento](media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)</br>
+- En Outlook el icono tiene el siguiente aspecto: <br/> ![Icono informe de mensaje, complemento para Outlook](media/OutlookReportMessageIcon.png)<br/>
+- En Outlook Web App el icono tiene el siguiente aspecto:<br/>![Outlook en el icono mensaje de informe de Web, complemento](media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)<br/>
 
   
 Como un paso siguiente, obtenga información sobre cómo [usar el complemento en el mensaje de informe](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).

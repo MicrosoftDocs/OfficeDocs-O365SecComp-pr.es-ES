@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: Strat_O365_IP
 ms.assetid: fd505979-76be-4d9f-b459-abef3fc9e86b
 description: Prevención de pérdida de datos (DLP) en la seguridad de Office 365 &amp; centro de cumplimiento incluye los tipos de información confidencial 80 que están listos para su uso en las directivas de DLP. En este tema se enumera todos estos tipos de información confidencial y muestra lo que busca una directiva de DLP cuando detecta cada tipo.
-ms.openlocfilehash: 064606085363ba9de972511642993277451c8ce3
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 2e59b322730ca7fa828a685ed3a80c48ebdbbfd8
+ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22536570"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "24972362"
 ---
 # <a name="what-the-sensitive-information-types-look-for"></a>Qué buscan los tipos de información confidencial
 
@@ -3225,7 +3225,7 @@ Passeportn °
 ### <a name="pattern"></a>Patrón
 
 Debe coincidir uno de los dos patrones:
-- 13 dígitos seguidos de un espacio seguido de dos dígitos</br>
+- 13 dígitos seguidos de un espacio seguido de dos dígitos<br/>
 o
 - 15 dígitos consecutivos
 
@@ -3924,7 +3924,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 Ninguno
 
    
-## <a name="ip-address"></a>dirección IP
+## <a name="ip-address"></a>Dirección IP
 
 ### <a name="format"></a>Formato
 
@@ -4019,7 +4019,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
       </Entity>
 ```
 
-Keywords
+Palabras clave
 
 Cualquiera de los términos del diccionario de palabra clave Dictionary_icd_10_cm, que se basa en la [clasificación internacional de enfermedades, revisión décima, modificación ensayos (ICD-10-CM)](https://go.microsoft.com/fwlink/?linkid=852604). Este tipo sólo busca el término, no los códigos de seguro.
 
@@ -4051,7 +4051,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
       </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 Cualquiera de los términos del diccionario de palabra clave Dictionary_icd_9_cm, que se basa en la [clasificación internacional de enfermedades, revisión del noveno, modificación ensayos (ICD-9-CM)](https://go.microsoft.com/fwlink/?linkid=852605). Este tipo sólo busca el término, no los códigos de seguro.
    
