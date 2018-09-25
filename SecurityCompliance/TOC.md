@@ -86,6 +86,7 @@
 ### [Configurar las nuevas capacidades de cifrado de mensajes de Office 365](set-up-new-message-encryption-capabilities.md)
 ### [Cómo Exchange Online protege su información confidencial de correo electrónico](exchange-online-secures-email-secrets.md)
 ### [Cifrado de mensajes de Office 365 (OME)](ome.md)
+### [Revocar el correo electrónico cifrado por el cifrado de mensajes de Office 365](revoke-ome-encrypted-mail.md)
 ### [Preguntas más frecuentes sobre el cifrado de servicio con la clave de cliente para Office 365](service-encryption-with-customer-key-faq.md)
 ### [Configurar el cifrado en Office 365 Enterprise](set-up-encryption.md)
 ### [Agregar la marca de su organización a los mensajes cifrados](add-your-organization-brand-to-encrypted-messages.md)

@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Como administrador de Office 365, puede revocar determinados mensajes de correo electrónico cifrados con cifrado de mensajes de Office 365.
-ms.openlocfilehash: b2fd3e07bec6dfedd783a8a68169fc5f990a80d3
-ms.sourcegitcommit: 2150f49cf4305b75591a238ff649c57684c7632f
+ms.openlocfilehash: 19eb874fa15a21c29a9eb2823829e81ff244a555
+ms.sourcegitcommit: c168410974bc90aaf55f1dcaa9e05c09b2b78d76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "25004253"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "25011826"
 ---
 # <a name="office-365-message-encryption-email-revocation"></a>Revocación de correo electrónico de cifrado de mensajes de Office 365
 
@@ -62,7 +62,7 @@ Hay varias maneras de averiguar el identificador de mensaje de correo electróni
 
 Una vez que sepa el identificador de mensaje de correo electrónico que desea revocar, puede revocar el correo electrónico mediante el cmdlet Set-OMEMessageRevocation. 
 
-1. [Conectarse a Exchange Online mediante PowerShell remoto](http://technet.microsoft.com/library/jj984289%28v=exchg.150%29.aspx).
+1. [Conectarse a Exchange Online mediante PowerShell remoto](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
     
 2. Ejecute el cmdlet Set-OMEMessageRevocation como sigue:
     

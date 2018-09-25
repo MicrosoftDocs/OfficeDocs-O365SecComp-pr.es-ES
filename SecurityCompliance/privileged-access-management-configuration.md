@@ -13,12 +13,12 @@ ms.collection: Strat_O365_IP
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: Utilice este tema para obtener más información acerca de la configuración de administración de acceso con privilegios en Office 365
-ms.openlocfilehash: 6494505554a02f005df8f45839c9575094acbf1a
-ms.sourcegitcommit: d31904e81f81d0fba75309a2bc8bbfb05565a0b4
+ms.openlocfilehash: 47cae93a41b0fd60645021f6f299645777a9a2e1
+ms.sourcegitcommit: c168410974bc90aaf55f1dcaa9e05c09b2b78d76
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2018
-ms.locfileid: "24055255"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "25011846"
 ---
 # <a name="configuring-privileged-access-management-in-office-365"></a>Configuración de administración de acceso con privilegios en Office 365
 
@@ -102,6 +102,8 @@ Enable-ElevatedAccessControl -AdminGroup 'pamapprovers@fabrikam.onmicrosoft.com'
 
 ## <a name="step-3---create-an-access-policy"></a>Paso 3: crear una directiva de acceso
 
+Puede crear y configurar directivas de acceso con privilegios de hasta 30 para su organización de Office 365.
+
 ### <a name="using-the-microsoft-365-admin-center"></a>Desde el centro de administración de Microsoft 365
 
 1. Inicie sesión en el [Centro de administración de Microsoft 365](https://portal.office.com) de uso de credenciales para una cuenta de administrador de la organización.
@@ -144,6 +146,8 @@ New-ElevatedAccessApprovalPolicy -Task 'Exchange\New-MoveRequest' -ApprovalType 
 
 ### <a name="requesting-elevation-authorization-to-execute-privileged-tasks"></a>Solicitud de autorización de elevación para ejecutar tareas con privilegios
 
+Las solicitudes de acceso con privilegios son válidas durante 24 horas después de que se envía la solicitud. Si no aprobadas o rechazadas, las solicitudes de punto de expirar y acceso no está aprobado.
+
 #### <a name="using-the-microsoft-365-admin-center"></a>Desde el centro de administración de Microsoft 365
 
 1. Inicie sesión en el [Centro de administración de Microsoft 365](https://portal.office.com) con sus credenciales.
@@ -160,7 +164,7 @@ New-ElevatedAccessApprovalPolicy -Task 'Exchange\New-MoveRequest' -ApprovalType 
 
     **Solicitud para**: seleccione de las directivas disponibles
 
-    **Duración (horas)**: número de horas de acceso solicitado
+    **Duración (horas)**: número de horas de acceso solicitados. No hay un límite en el número de horas que se puede solicitar.
 
     **Comentarios**: campo de texto de comentarios relacionados con la solicitud de acceso
 
@@ -235,6 +239,31 @@ Deny-ElevatedAccessRequest -RequestId <request id> -Comment '<denial comment>'
 Ejemplo:
 ```
 Deny-ElevatedAccessRequest -RequestId a4bc1bdf-00a1-42b4-be65-b6c63d6be279 -Comment '<denial comment>'
+```
+
+## <a name="delete-a-privileged-access-policy-in-office-365"></a>Eliminar una directiva de acceso con privilegios en Office 365
+Puede eliminar una directiva de acceso con privilegios si ya no es necesario en la organización.
+
+### <a name="using-the-microsoft-365-admin-center"></a>Desde el centro de administración de Microsoft 365
+
+1. Inicie sesión en el [Centro de administración de Microsoft 365](https://portal.office.com) de uso de credenciales para una cuenta de administrador de la organización.
+
+2. En el centro de administración, vaya a **configuración de** > **de seguridad y privacidad** > **con privilegios de acceso**.
+
+3. Seleccione **las solicitudes y administrar las directivas de acceso**.
+
+4. Seleccione **la configuración de directivas**.
+
+5. Seleccione la directiva que desea eliminar y, a continuación, seleccione **Eliminar directiva**.
+
+6. Seleccione **Cerrar**.
+
+### <a name="using-exchange-management-powershell"></a>Uso de PowerShell de administración de Exchange
+
+Ejecute el siguiente comando en Exchange Online Powershell para eliminar una directiva de acceso con privilegios:
+
+```
+Remove-ElevatedAccessApprovalPolicy -Identity <identity GUID of the policy you want to delete>
 ```
 
 ## <a name="disable-privileged-access-in-office-365"></a>Deshabilitar el acceso con privilegios en Office 365
