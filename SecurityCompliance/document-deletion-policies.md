@@ -9,16 +9,15 @@ ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
 search.appverid:
-- MET150
 - SPO160
 ms.assetid: 55e8d858-f278-482b-a198-2e62d6a2e6e5
 description: Su organización puede ser requerida para retener documentos durante un período de tiempo a causa de cumplimiento de normas, legal, u otros requisitos empresariales. Sin embargo, si su organización mantiene documentos más de necesarios, crear riesgos legales innecesarios. Con una directiva de eliminación de documentos, puede reducir proactivamente riesgo mediante la eliminación de documentos en un sitio después de un período de tiempo específico, por ejemplo, puede eliminar documentos de OneDrive de los usuarios para profesionales de sitios de cinco años después de que se crearon los documentos.
-ms.openlocfilehash: 495dd781c56e25e884d47f72a7e48410ea340208
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 7af818dd7d9dd87eb671bdd86ef03e0b5dead1e2
+ms.sourcegitcommit: ede6230c2df398dc0a633e8f32ee0bfede0d5142
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23013664"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "25002673"
 ---
 # <a name="overview-of-document-deletion-policies"></a>Información general sobre las directivas de eliminación de documentos
 
@@ -113,7 +112,7 @@ Igual que los permisos, la navegación y muchas otras características del sitio
   
 ## <a name="assigning-document-deletion-policies-for-the-first-time"></a>Asignar directivas de eliminación de documentos por primera vez
 
-Es importante comprender que el período de tiempo especificado para un documento de directiva de eliminación significa el tiempo desde que el documento se ha creado o modificado, no el tiempo desde que se asignó la directiva. Por ejemplo, podría crear una directiva de eliminación de documentos que se elimina de forma permanente documentos dos años después de que se crearon y, a continuación, asignar esa directiva a una plantilla de la colección de sitios desde la que varias colecciones de sitios se crearon cuatro o cinco años. En este caso, es probable que las colecciones de sitios existentes contienen muchos documentos que ya son anteriores a los dos años especificados por la directiva de eliminación, esto significa que una gran cantidad de contenido se eliminará pronto después de asignar la directiva de eliminación de documentos para la primera tiempo.
+Es importante comprender que el período de tiempo especificado para un documento de directiva de eliminación significa el tiempo desde que el documento se ha creado o modificado, no el tiempo desde que se asignó la directiva. Por ejemplo, podría crear una directiva de eliminación de documentos que se elimina de forma permanente documentos dos años después de que se crearon y, a continuación, asignar esa directiva a una plantilla de la colección de sitios desde la que varias colecciones de sitios se crearon cuatro o cinco años. En este caso, es probable que las colecciones de sitios existentes contienen muchos documentos que ya son anteriores a los dos años especificados por la directiva de eliminación, esto significa que una gran cantidad de contenido se eliminará pronto después de asignar la directiva de eliminación de documentos para la primera hora.
   
 Cuando se asigna la directiva por primera vez, se evalúan todos los documentos del sitio. Si cumplen los criterios, se eliminarán. Esto se aplica a todos los documentos existentes, no solo a los documentos nuevos creados desde que se asignó la directiva. Y recuerde que el período de tiempo corresponde a la antigüedad de cada documento, no al tiempo desde que se asignó la directiva por primera vez.
   

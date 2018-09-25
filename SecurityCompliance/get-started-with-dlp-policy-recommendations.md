@@ -8,17 +8,14 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MET150
 ms.assetid: 2ea4459b-cb13-4ce2-b9d1-0619316df88c
 description: Esta recomendación controlados por insight ayuda a su organización a mantener segura la contenido confidencial cuando se almacena y se comparten en Office 365 para informar cuando hay una posible brecha en la cobertura de la directiva DLP. Verá esta recomendación en la página principal de la seguridad &amp; centro de cumplimiento, si los documentos contienen cualquiera de los tipos más comunes de cinco de la parte superior de la información confidencial, pero no están protegidos por una directiva de DLP.
-ms.openlocfilehash: 842387397b9b95d236660c5809174c2b356cf14a
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: fcd3a5a3a12932b22c310938c12f71fb01019411
+ms.sourcegitcommit: ede6230c2df398dc0a633e8f32ee0bfede0d5142
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22536741"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "25002633"
 ---
 # <a name="get-started-with-dlp-policy-recommendations"></a>Introducción a las recomendaciones de la directiva DLP
 
