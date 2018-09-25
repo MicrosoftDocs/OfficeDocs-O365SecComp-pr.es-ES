@@ -9,15 +9,17 @@ ms.topic: overview
 ms.service: o365-administration
 localization_priority: Priority
 ms.collection: Strat_O365_IP
-search.appverid: MOE150
+search.appverid:
+- MOE150
+- MET150
 ms.assetid: 34823bbc-a3e3-4949-ba42-97c73997eeed
 description: Obtenga información sobre cómo separar el correo electrónico real del correo no deseado y evitar que se marque como correo no deseado en Office 365.
-ms.openlocfilehash: d092dc0a1a222f51f48102eb8c07e8e6051aa1bd
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 05fb9858adb279d74368fc979db44cfd84b7f71e
+ms.sourcegitcommit: ede6230c2df398dc0a633e8f32ee0bfede0d5142
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22535818"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "25002643"
 ---
 # <a name="how-to-prevent-real-email-from-being-marked-as-spam-in-office-365"></a>Evitar que el correo electrónico real se marque como correo no deseado en Office 365
 
