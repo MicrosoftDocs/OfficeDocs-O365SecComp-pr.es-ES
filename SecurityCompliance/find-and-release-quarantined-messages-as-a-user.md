@@ -13,12 +13,12 @@ search.appverid:
 - MEW150
 ms.assetid: efff08ec-68ff-4099-89b7-266e3c4817be
 description: 'Como un usuario de Office 365, puede administrar sus propios mensajes en cuarentena de correo no deseado en una de estas dos formas: mediante responde a las notificaciones que se envían directamente de correo no deseado (si el administrador ha configurado esta característica), o mediante la característica de cuarentena de spam en la seguridad &amp; cumplimiento Centro.'
-ms.openlocfilehash: 08a0c5c35edb6c0829a1c7cafd7eaf9a41fa22ae
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 728273838d9e592e17638638258f481830bc0bbe
+ms.sourcegitcommit: f7fff49ae0b1c3056faa58d73c1070cb4e638fbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22535597"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "25018894"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-office-365"></a>Buscar y liberar mensajes en cuarentena como un usuario en Office 365
 
@@ -44,7 +44,7 @@ Puede ver una lista de todos los mensajes en cuarentena, o puede buscar mensajes
     
 - Correo identificado como correo masivo.
     
-Una vez encontrado un mensaje en cuarentena específico, haga clic en el mensaje para ver detalles acerca de él y tomar medidas. Puede liberar el mensaje a la Bandeja de entrada, obtener una vista previa del mensaje, descargue el mensaje o eliminar el mensaje en cuarentena inmediatamente.
+Una vez encontrado un mensaje en cuarentena específico, haga clic en el mensaje para ver detalles acerca de él y tomar medidas. Puede liberar el mensaje a su buzón de correo, obtener una vista previa del mensaje, descargue el mensaje o eliminar el mensaje en cuarentena inmediatamente.
   
 > [!NOTE]
 > Debe tener permisos de administrador en Office 365 para trabajar con los mensajes en cuarentena que se han enviado a otros usuarios. 
@@ -94,7 +94,7 @@ Después de seleccionar un mensaje, verá un resumen de las propiedades del mens
     
 - **Publicadas hasta:** Todas las direcciones de correo electrónico (si hay alguno) a la que se ha publicado el mensaje. 
     
-- **Aún no se han publicado en:** Todas las direcciones de correo electrónico (si hay alguno) para que no se ha publicado el mensaje. Puede elegir **la versión** si desea liberar el mensaje a la Bandeja de entrada (más información acerca de la liberación de los mensajes en la siguiente sección). 
+- **Aún no se han publicado en:** Todas las direcciones de correo electrónico (si hay alguno) para que no se ha publicado el mensaje. Puede elegir **la versión** si desea liberar el mensaje a su buzón de correo (más información acerca de la liberación de los mensajes en la siguiente sección). 
     
 Puede obtener más detalles acerca del mensaje, elija una de las siguientes opciones:
   
@@ -108,12 +108,12 @@ Después de seleccionar un mensaje o un grupo de mensajes, dispone de varias opc
   
 - No haga nada. Si decide no hacer nada, el mensaje se eliminará automáticamente por Office 365 tras la expiración. Recuerde que, cuando Office 365 elimina un mensaje de cuarentena, no puede recuperarlo.
     
-- **Mensaje de versión** Liberar un mensaje en cuarentena (o un conjunto de mensajes) para que el mensaje se envía a la Bandeja de entrada. Al liberar un mensaje, tiene la opción de enviar el mensaje a Microsoft para su análisis. 
+- **Mensaje de versión** Liberar un mensaje en cuarentena (o un conjunto de mensajes) para que el mensaje se envía a su buzón de correo. Al liberar un mensaje, tiene la opción de enviar el mensaje a Microsoft para su análisis. 
     
     Cuando elija informar de un mensaje, también denominado informar de un mensaje como falso positivo, el mensaje se notifica al equipo de análisis de correo electrónico no deseado de Microsoft. El equipo evalúa y analiza los mensajes falsos positivos y, dependiendo de los resultados del análisis, se pueden ajustar para permitir que estos mensajes a través de las reglas de filtro de contenido de spam de todo el servicio.
     
 - **Descargar mensajes** Le permite descargar el mensaje como un archivo EML. Una vez que se descarga un mensaje, puede revisar el archivo EML con su cliente de correo electrónico antes de liberar el mensaje. 
     
-- **Quitar de la cuarentena** Elimina el mensaje inmediatamente de cuarentena sin liberar el mensaje a la Bandeja de entrada. 
+- **Quitar de la cuarentena** Elimina el mensaje inmediatamente de cuarentena sin liberar el mensaje a su buzón de correo. 
     
 

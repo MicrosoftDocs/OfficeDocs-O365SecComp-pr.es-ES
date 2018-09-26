@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
 description: 'Como administrador, puede ver, liberar y notificar mensajes en cuarentena de falsos positivos en Office 365. Puede configurar directivas para que Office 365 filtra los mensajes y los envía a cuarentena por varias razones: debido a que se han identificado como spam, masiva, suplantación de identidad, malware, o porque coincide con una regla de flujo de correo. '
-ms.openlocfilehash: be6384d8937e25aec55d82d8212c49d25b64b9a1
-ms.sourcegitcommit: d85fc77cba3a17d5ddf215e2f506f61b499e0cda
+ms.openlocfilehash: 67fb4ac8e3a5fd443efb04d4f74e9844d2fa8c86
+ms.sourcegitcommit: f7fff49ae0b1c3056faa58d73c1070cb4e638fbf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "23839104"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "25018884"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-administrator-in-office-365"></a>Administrar mensajes en cuarentena y los archivos como un administrador en Office 365
 
@@ -59,7 +59,7 @@ Además, como administrador, puede elegir filtrar todos los mensajes para su org
   
 También puede filtrar los resultados para buscar mensajes específicos. Para obtener sugerencias, vea [filtrar los resultados y buscar archivos y mensajes en cuarentena](manage-quarantined-messages-and-files.md#BKMK_AdvSearch) en este artículo. 
   
-Una vez encontrado un mensaje en cuarentena específico, haga clic en el mensaje para ver detalles acerca de él y realizar acciones, como soltar el mensaje a la Bandeja de entrada de otra persona.
+Una vez encontrado un mensaje en cuarentena específico, haga clic en el mensaje para ver detalles acerca de él y realizar acciones, como soltar el mensaje al buzón de otra persona.
   
 ## <a name="view-your-organizations-quarantined-files"></a>Ver archivos en cuarentena de su organización
 
