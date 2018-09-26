@@ -1,0 +1,124 @@
+---
+title: Información general sobre el administrador del plan de archivos
+ms.author: stephow
+author: stephow-MSFT
+manager: laurawi
+ms.date: 9/25/2018
+ms.audience: Admin
+ms.topic: overview
+ms.service: o365-administration
+localization_priority: Priority
+ms.collection: Strat_O365_IP
+search.appverid:
+- MOE150
+- MET150
+ms.assetid: af398293-c69d-465e-a249-d74561552d30
+description: 'El administrador del plan de archivos proporciona funciones avanzadas de administración para las directivas de retención y proporciona una forma integrada para recorrer las etiquetas y la actividad de etiquetas de contenido para todo su ciclo de vida: incluyendo la creación, colaboración, declaración de registro, retención y por último disposición.'
+ms.openlocfilehash: 4feacf20444591f6da2d55a928a81e86b56c5d9a
+ms.sourcegitcommit: 9f34ace6bbe3d5e07e24ebaae96613750869cddf
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "25019281"
+---
+# <a name="overview-of-file-plan-manager"></a>Información general sobre el administrador del plan de archivos
+
+El administrador del plan de archivos proporciona funciones avanzadas de administración para las directivas de retención y proporciona una forma integrada para recorrer las etiquetas y la actividad de etiquetas de contenido para todo su ciclo de vida: incluyendo la creación, colaboración, declaración de registro, retención y por último disposición.
+
+![Página del plan de archivos](media/file-plan-page.png)
+
+## <a name="important-this-feature-is-currently-available-only-as-part-of-the-office-365-preview-program"></a>Importante: Esta característica está disponible solo como parte del programa Office 365 Preview
+
+Solo verá esta característica en su inquilino si su organización se ha inscrito en el programa de Office 365 Preview.
+
+## <a name="accessing-file-plan-manager"></a>Acceder al administrador del plan de archivos
+
+Hay dos requisitos para obtener acceso al administrador del plan de archivos, son:
+- Una suscripción de Office 365 Enterprise E5
+- El usuario tiene asignado uno de los siguientes roles del Centro de seguridad y cumplimiento: 
+    - Administrador de retención
+    - Administrador de retención con permiso de vista
+
+## <a name="navigating-your-file-plan"></a>Navegar por el plan de archivos
+
+El administrador del plan de archivos facilita ver y revisar la configuración de todas las directivas y etiquetas de retención en una vista.
+
+Tenga en cuenta que las etiquetas de retención creadas fuera del plan de archivos estarán disponibles en el plan de archivos y viceversa.
+
+En la pestaña **Etiquetas del plan de archivos**, están disponibles la siguiente información adicional y funciones:
+
+### <a name="label-settings-columns"></a>Columnas de configuración de etiqueta
+ 
+- **En base a** identifica el tipo de desencadenador que iniciará el período de retención. Los valores válidos son: 
+    - Evento
+    - Fecha de creación
+    - Fecha de última modificación
+    - Fecha de etiquetado
+- **Registro** identifica si el elemento se convertirá en un registro declarado cuando se aplique la etiqueta. Los valores válidos son:
+    - No
+    - Sí
+    - Sí (Normativa)
+- **Retención** identifica el tipo de retención. Los valores válidos son:
+    - Conservar
+    - Conservar y eliminar
+    - Eliminar
+- **Disposición** identifica qué ocurrirá con el contenido al final del período de retención. Los valores válidos son: 
+    - null
+    - Ninguna acción
+    - Eliminación automática
+    - Revisión necesaria (también conocido como revisión de disposición)
+
+![Configuración de etiqueta en el plan de archivos](media/file-plan-label-columns.png)
+
+### <a name="label-file-plan-descriptors-columns"></a>Columnas de descriptores del plan de archivos de las etiquetas
+
+Ahora puede incluir más información en la configuración de las etiquetas de retención. Insertar descriptores del plan de archivos en las etiquetas mejorará la administración y la organización de su plan de archivos.
+
+Para comenzar, el administrador del plan de archivos proporciona algunos valores de fábrica para: función o departamento, categoría, tipo de autoridad y aprovisionamiento o cita. Puede agregar nuevos archivos valores descriptores del plan de archivos al crear o editar una etiqueta de retención.
+
+Esta es una vista del paso de descriptores del plan de archivos al crear o editar una etiqueta de retención.
+
+![Descriptores del plan de archivos](media/file-plan-descriptors.png)
+
+Esta es una vista de las columnas de descriptores del plan de archivos en la pestaña de etiquetas del administrador del plan de archivos.
+
+![file-plan-descriptors-on-labels-tab.png](media/file-plan-descriptors-on-labels-tab.png)
+
+## <a name="export-labels-out-of-your-file-plan"></a>Exportar etiquetas del plan de archivos
+
+Desde el administrador del plan de archivos, puede exportar los detalles de todas las etiquetas de retención a un archivo .csv para facilitar el revisiones de cumplimiento periódicas con partes interesadas del gobierno de datos de su organización.
+
+Para exportar todas las etiquetas de retención, vaya al **Administrador del plan de archivos** \> **Acciones del plan de archivos** \> **Exportar etiquetas**.
+
+![Opción para exportar el plan de archivos](media/file-plan-export-labels-option.png)
+
+Se abrirá un archivo *.csv que contiene todas las etiquetas de retención existentes.
+
+![Archivo CSV que muestra todas las etiquetas de retención](media/file-plan-csv-file.png)
+
+## <a name="import-labels-into-your-file-plan"></a>Importar etiquetas en el plan de archivos
+
+Desde el administrador del plan de archivos, puede importar en masa nuevas etiquetas así como modificar las etiquetas de retención existentes.
+
+Para importar nuevas etiquetas de retención y realizar actualizaciones en etiquetas de retención existentes, vaya a **Administrador del plan de archivos** \> **Acciones del plan de archivos** \> **Importar etiquetas**.
+
+![Opción para importar el plan de archivos](media/file-plan-import-labels-option.png)
+
+![Opción para descargar una plantilla de plan de archivos en blanco](media/file-plan-blank-template-option.png)
+
+Descargue una plantilla en blanco (o empiece desde una exportación de su plan actual del archivo).
+
+![Plantilla en blanco del plan de archivos abierta en Excel](media/file-plan-blank-template.png)
+
+Rellene la plantilla (próximamente publicaremos la información de referencia acerca de los valores válidos para las entradas).
+
+![Plantilla del plan de archivos con información rellenada](media/file-plan-filled-out-template.png)
+
+Cargue la plantilla rellenada y el administrador del plan de archivos validará las entradas y mostrará las estadísticas de importación.
+
+![Estadísticas de importación del plan de archivos](media/file-plan-import-statistics.png)
+
+Una vez completada la importación, vuelva al administrador del plan de archivos para asignar nuevas etiquetas a las directivas nuevas o existentes.
+
+![Opción para publicar etiquetas](media/file-plan-publish-labels-option.png)
+
