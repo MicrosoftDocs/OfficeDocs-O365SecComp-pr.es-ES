@@ -9,16 +9,15 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
-search.appverid:
-- MET150
+search.appverid: ''
 ms.assetid: adee4621-3626-4aec-aa53-00b35ff0d0b0
 description: 'Coloque un buzón en retención por juicio para conservar todo el contenido del buzón, incluidos los elementos eliminados y las versiones originales de los elementos modificados. '
-ms.openlocfilehash: 9c2d5c77a604e4dbe6e1f1db75142d3bf5790618
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 00f83d69d90f10659427986ffcb16f9e5358c054
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002849"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038043"
 ---
 # <a name="place-a-mailbox-on-litigation-hold"></a>Poner un buzón en retención por juicio
  
@@ -27,7 +26,7 @@ Coloque un buzón en retención por juicio para conservar todo el contenido del 
 > [!IMPORTANT]
 > La suspensión por litigio conserva los elementos en la carpeta elementos recuperables en el buzón del usuario. Según el número y tamaño de los elementos eliminados o se han modificado, el tamaño de la carpeta elementos recuperables del buzón puede aumentar rápidamente. De forma predeterminada, la carpeta elementos recuperables está configurada con una cuota alta. En Exchange Online, esta cuota se incrementa automáticamente cuando se realiza un buzón en suspensión por litigio. En Exchange Server 2013, se recomienda supervisar los buzones de correo que se colocan en suspensión por litigio semanalmente para asegurarse de que no alcancen los límites de las cuotas de elementos recuperables. 
   
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 <a name="sectionSection0"> </a>
 
 - Tiempo estimado para finalizar: 5 minutos

@@ -8,17 +8,15 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: bdee24ed-b8cf-4dd0-92ae-b86ec4661e6b
 description: Después de un buzón de Office 365 se realiza como inactivo, puede cambiar la duración de la suspensión o la directiva de retención de Office 365 asignada para el buzón de correo inactivo. La duración de retención define cuánto tiempo los elementos en la carpeta se conservan de elementos recuperables.
-ms.openlocfilehash: 22bd9f9294b625a38d243f6235097d1aee437121
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: e3d1d6c7ec0311813dfa1144cc960d2fed9e160d
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22536232"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038063"
 ---
 # <a name="change-the-hold-duration-for-an-inactive-mailbox-in-office-365"></a>Cambiar la duración de retención para un buzón inactivo en Office 365
 
@@ -35,7 +33,7 @@ Un buzón inactivo se utiliza para retener el correo electrónico de un empleado
     
   - [Conectarse a Exchange Online mediante PowerShell remoto](https://go.microsoft.com/fwlink/p/?linkid=396554)
     
-  - [Conectarse a Office 365 seguridad &amp; PowerShell de centro de cumplimiento](https://go.microsoft.com/fwlink/?linkid=799771)
+  - [Conectarse a PowerShell del Centro de seguridad y cumplimiento de Office 365](https://go.microsoft.com/fwlink/?linkid=799771)
     
 - Tenga en cuenta que contiene asociado con los casos de exhibición de documentos electrónicos son suspensiones infinitas, lo que significa que no hay ninguna duración de retención que se puede cambiar. Se conservan los elementos indefinidamente o hasta que se elimina la suspensión y se elimina el buzón de correo inactivo.
     

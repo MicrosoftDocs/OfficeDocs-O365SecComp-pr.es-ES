@@ -8,17 +8,15 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 description: Usar búsqueda de contenido en la seguridad de Office 365 &amp; centro de cumplimiento para llevar a cabo las colecciones de destinadas. Una colección de destino significa que el que esté seguro de que los elementos con capacidad de respuesta a un caso de o elementos con privilegios se encuentran en una carpeta de buzón de correo o de sitio específica. Use la secuencia de comandos de este artículo para obtener el identificador de la carpeta o la ruta de acceso para las carpetas de buzón de correo o sitio específicas que desea buscar.
-ms.openlocfilehash: 3ff0ca00915bce53e9e932316c5ab47884f346b2
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: bb808e38f24ebf09a975b3082ef1dc61bc6344c4
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22535719"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038303"
 ---
 # <a name="use-content-search-in-office-365-for-targeted-collections"></a>Usar búsqueda de contenido en Office 365 para las colecciones de destinadas
 

@@ -11,15 +11,15 @@ f1_keywords:
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Strat_O365_IP
-search.appverid: MOE150
+search.appverid: MET150
 ms.assetid: ba688e0a-0fcb-4bd7-8e57-2b669564ea84
 description: 'Para los administradores: Aprenda a usar el servicio de importación en la seguridad de Office 365 &amp; centro de cumplimiento para importación masiva datos de correo electrónico (archivos PST) a los buzones de usuario en Exchange Online. Este tema proporciona las preguntas más frecuentes y explica cómo funciona el proceso de importación de PST.'
-ms.openlocfilehash: 1cbe5627ffb906b6a87541f4c4582a2806562ca4
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 2bd58b879d9d4d1ff9d3d2c6c8680a0171d42689
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22536494"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038023"
 ---
 # <a name="overview-of-importing-your-organization-pst-files-to-office-365"></a>Información general de importación de los archivos PST de organización a Office 365
 

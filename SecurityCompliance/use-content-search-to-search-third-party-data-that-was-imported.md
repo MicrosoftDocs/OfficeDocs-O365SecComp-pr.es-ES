@@ -8,17 +8,15 @@ ms.audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
 description: Use la herramienta de exhibición de documentos electrónicos de búsqueda de contenido para buscar los elementos que se han importado a buzones de correo en Office 365 desde un origen de datos de terceros. Puede crear una consulta para buscar todos los elementos importados o crear una consulta para buscar tipos específicos de datos de terceros. En este artículo se enumeran los valores que puede utilizar en una consulta de palabra clave para buscar los tipos de datos de terceros que se pueden importar a Office 365.
-ms.openlocfilehash: 90d9dc52dcd9dba9bc273dfcf1c5f22e3913d6ba
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 6829e894ba687fb09184c32201f76394e37bbbf8
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22536444"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25037973"
 ---
 # <a name="use-content-search-to-search-third-party-data-that-was-imported-to-office-365"></a>Usar búsqueda de contenido para buscar datos de terceros que se importaron a Office 365
 

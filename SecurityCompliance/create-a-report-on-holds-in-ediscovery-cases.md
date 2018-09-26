@@ -8,17 +8,15 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
 description: Use la secuencia de comandos de este artículo para generar un informe que contiene información acerca de todas las suspensiones a las que están asociadas con los casos de exhibición de documentos electrónicos en la seguridad de Office 365 &amp; centro de cumplimiento.
-ms.openlocfilehash: 8bc1285f776e2b1aa0c0330c06ccffff8ce4585c
-ms.sourcegitcommit: c166964fe14eec69139a2d3d9c10d2c40ab33f91
+ms.openlocfilehash: b6cef2824002d7e45e4f500bc6c1e9bc880cbd41
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23258648"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038213"
 ---
 # <a name="create-a-report-on-holds-in-ediscovery-cases-in-office-365"></a>Crear un informe en las suspensiones en los casos de exhibición de documentos electrónicos en Office 365
   
@@ -32,7 +30,7 @@ Vea la sección [obtener más información](#more-information) para obtener una 
     
 - La secuencia de comandos en este artículo tiene el tratamiento de errores mínima. El propósito principal es crear rápidamente informe sobre las suspensiones que se asocian con los casos de exhibición de documentos electrónicos en su organización.
     
-- Las secuencias de comandos de ejemplo proporcionados en este tema no son compatibles con cualquier servicio o programa de soporte estándar de Microsoft. Las secuencias de comandos de ejemplo se proporcionan tal cual sin garantía de ningún tipo. Microsoft renuncia a todas las garantías implícitas incluidas, sin limitación, cualquier las garantías implícitas de comerciabilidad o de idoneidad para un fin determinado. Todo el riesgo que pueda surgir por el uso o el rendimiento de las secuencias de comandos de ejemplo y documentación permanece con usted. En ningún caso Microsoft, sus autores o cualquier otro implicado en la creación, producción o entrega de las secuencias de comandos serán responsables de los daños índole (incluidos, pero sin limitarse a, daños por pérdida de beneficios empresariales, interrupción del negocio, pérdida de información de la empresa, o en otras pérdidas de carácter económico) derivado del uso o la incapacidad de usar los scripts de ejemplo o documentación, aunque Microsoft haya sido notificado de la posibilidad de dichos daños.
+- Los scripts de ejemplo que se proporcionan en este tema no son compatibles con ningún servicio o programa de soporte técnico estándar de Microsoft. Los scripts de ejemplo se proporcionan tal cual, sin garantía de ningún tipo. Además, Microsoft se exime de todas las garantías implícitas, incluidas (sin limitación) las garantías implícitas de comerciabilidad o idoneidad para un propósito específico. El usuario asume todos los riesgos derivados del uso o del rendimiento de los scripts de ejemplo y la documentación. Microsoft, sus autores o cualquier persona relacionada con la creación, producción o entrega de los scripts no serán en ningún caso responsables de cualesquiera daños (incluidos, sin limitación, los daños producidos por la pérdida de beneficios comerciales, interrupción de la actividad comercial, pérdida de información empresarial u otras pérdidas económicas) derivados del uso o de la imposibilidad de uso de los scripts de ejemplo o la documentación, incluso aunque Microsoft tenga constancia de la posibilidad de que dichos daños se produzcan.
     
 ## <a name="step-1-connect-to-the-security-amp-compliance-center-using-remote-powershell"></a>Paso 1: Conectar a la seguridad &amp; centro de cumplimiento de normas mediante PowerShell remoto
 

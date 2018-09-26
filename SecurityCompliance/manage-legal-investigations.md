@@ -11,15 +11,14 @@ localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
-ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 description: Utilice los casos de exhibición de documentos electrónicos en la seguridad de Office 365 &amp; centro de cumplimiento para administrar una investigación legal de la organización. Si tiene una suscripción E5, aún más puede analizar los datos de casos mediante el análisis de texto, aprendizaje de máquinas y capacidades de codificación predictivas de exhibición de documentos electrónicos avanzada.
-ms.openlocfilehash: ef8ff9347f7c1d604a01b70f54a1998fde91ace8
-ms.sourcegitcommit: edf5db9357c0d34573f8cc406314525ef10d1eb9
+ms.openlocfilehash: 7d00268a94613dfc0a1bef6314b5f917de5b9954
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23230032"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038273"
 ---
 # <a name="manage-legal-investigations-in-office-365"></a>Administrar las investigaciones legales en Office 365
 

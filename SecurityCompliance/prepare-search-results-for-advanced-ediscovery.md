@@ -11,17 +11,15 @@ f1_keywords:
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Strat_O365_IP
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: 0b6fac2d-8627-4b05-9df0-03609db6248b
 description: Obtenga información sobre cómo preparar los resultados de una búsqueda de contenido en la seguridad de Office 365 &amp; centro de cumplimiento para realizar un análisis con la herramienta de exhibición de documentos electrónicos avanzadas.
-ms.openlocfilehash: 4e5668c88d62e99f7a5f40ed2e17f4687a7e9adb
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: f5b10ac7fcfa67f67618c936000832b9bdb7d533
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22536866"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038313"
 ---
 # <a name="prepare-search-results-for-office-365-advanced-ediscovery"></a>Preparar los resultados de búsqueda para la exhibición avanzada de documentos electrónicos de Office 365
 
@@ -49,7 +47,7 @@ Después de una búsqueda en la que está asociado con un caso de exhibición de
 
 Puede preparar los resultados de una búsqueda en la que está asociado con un caso de exhibición de documentos electrónicos. Al preparar los resultados de búsqueda para la exhibición de documentos electrónicos avanzada, los datos se cargan y almacena temporalmente en un área de almacenamiento de Windows Azure único en la nube de Microsoft. En este punto es que la funcionalidad de reconocimiento óptico de caracteres extrae el texto de las imágenes en los resultados de búsqueda. En [paso 2](#step-2-add-the-search-results-data-to-the-case-in-advanced-ediscovery), el texto y la búsqueda de otra datos de los resultados se cargan en el caso de exhibición de documentos electrónicos avanzada.
   
-1. En la seguridad &amp; centro de cumplimiento, haga clic en **búsqueda &amp; investigación** \> **exhibición de documentos electrónicos** para mostrar la lista de casos de la organización. 
+1. En el Centro de seguridad y cumplimiento, haga clic en **Búsqueda e investigación** \> **eDiscovery** para mostrar la lista de casos en su organización. 
     
 2. Junto al caso de que se va a preparar los resultados de búsqueda para el análisis de exhibición de documentos electrónicos avanzada, haga clic en **Abrir** . 
     
@@ -82,11 +80,11 @@ Cuando finalice la preparación, el siguiente paso es ir a la exhibición de doc
 > [!NOTE]
 > El tiempo necesario para los datos de la seguridad &amp; centro de cumplimiento para que estén disponibles para agregar a un caso de exhibición de documentos electrónicos avanzada varía según el tamaño de los resultados de la búsqueda de exhibición de documentos electrónicos. 
   
-1. En la seguridad &amp; centro de cumplimiento, haga clic en **búsqueda &amp; investigación** \> **exhibición de documentos electrónicos** para mostrar la lista de casos de la organización. 
+1. En el Centro de seguridad y cumplimiento, haga clic en **Búsqueda e investigación** \> **eDiscovery** para mostrar la lista de casos en su organización. 
     
 2. Junto al caso de que se desea cargar los datos en a en la exhibición de documentos electrónicos avanzada, haga clic en **Abrir** . 
     
-3. En la página **principal** para el caso, haga clic en **Avanzadas exhibición de documentos electrónicos**. 
+3. En la **página principal** del caso, haga clic en **eDiscovery avanzado**. 
     
     ![Haga clic en cambiar para exhibición de documentos electrónicos avanzada para abrir el caso de exhibición de documentos electrónicos avanzada](media/8e34ba23-62e3-4e68-a530-b6ece39b54be.png)
   

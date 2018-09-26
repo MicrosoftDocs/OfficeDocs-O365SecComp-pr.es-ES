@@ -11,15 +11,14 @@ localization_priority: Normal
 search.appverid:
 - SPO160
 - MOE150
-- MET150
 ms.assetid: 422858ff-917b-46d4-9e5b-3397f60eee4d
 description: Puede usar el centro de exhibición de documentos electrónicos en SharePoint Online para buscar todos los OneDrive para sitios de profesionales de la organización para ciertas palabras clave, la información confidencial y otros criterios de búsqueda. Cada usuario de la organización es el propietario de su OneDrive para el sitio empresarial, que se encuentra en la colección de sitios con nombre de https://domain-my.sharepoint.com. De forma predeterminada, un administrador global de Office 365 o un administrador de cumplimiento no se puede usar el centro de exhibición de documentos electrónicos en SharePoint Online para buscar cualquier OneDrive para sitios de profesionales. Para buscar un OneDrive para sitio empresarial, los administradores o administradores de cumplimiento debe ser un administrador de colección de sitios para que OneDrive para el sitio de negocio.
-ms.openlocfilehash: 48f84dfe21f0f99913ba2c27123d6c0e1f8bc03f
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 61f068a03bcce599d9f1b7eb62d7b317b7feab68
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22536218"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038093"
 ---
 # <a name="assign-ediscovery-permissions-to-onedrive-for-business-sites"></a>Asignar permisos de exhibición de documentos electrónicos a sitios de OneDrive para la Empresa
 

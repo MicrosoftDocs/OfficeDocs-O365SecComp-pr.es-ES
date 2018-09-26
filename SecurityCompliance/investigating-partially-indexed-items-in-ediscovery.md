@@ -8,17 +8,15 @@ ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MOE150
-- MET150
+search.appverid: MOE150
 ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 description: Elementos indizados parcialmente (también llamada no indexado elementos) son los elementos del buzón de Exchange y documentos en SharePoint y sitios de OneDrive para la que, por algún motivo no estaba indizado completamente para la búsqueda de contenido. En este artículo, obtenga información sobre por qué elementos no se pueden indizar para la búsqueda y se devuelven como elementos indizados parcialmente, identificar errores de búsqueda para los elementos indizados parcialmente y usar un script de PowerShell para determinar la exposición de su organización a correo electrónico parcialmente indizado elementos.
-ms.openlocfilehash: 4e8e8c31e6c5450a9b84a1240c2ae8d891c1bd6f
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 98f794e80ea8a6016887ff139bc5b546c438f093
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22536743"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038083"
 ---
 # <a name="investigating-partially-indexed-items-in-office-365-ediscovery"></a>Investigar elementos indizados parcialmente en eDiscovery de Office 365
 

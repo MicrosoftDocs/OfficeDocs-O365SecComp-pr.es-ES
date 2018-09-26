@@ -8,15 +8,16 @@ ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
+search.appverid: MET150
 ms.custom: Adm_O365
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
 description: Para los informes de cumplimiento de las normativas de Office 365, Azure y Dynamics 365 Online, para ver las auditorías de terceros, descubra cómo Microsoft protege los datos de cliente, y cómo puede ser compatible con ISO, HIPAA, NIST, FINRA, GDPR y FedRAMP al usar estos servicios en línea.
-ms.openlocfilehash: a924ce157b89215e3c9909d791f0e8adb4cd684d
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 886c6df96bfe0821dd277b279d5aa16d038fae18
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22536038"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038223"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Empezar a trabajar con el portal del servicio de confianza a Microsoft
 
@@ -121,26 +122,26 @@ Funciones administrativas que sólo están disponibles para la cuenta de adminis
   
 ### <a name="search"></a>Búsqueda
 
-![Portal de confianza del servicio - campo de entrada de búsqueda](media/7c5cd817-3d62-420b-adb4-76e33fef941f.png)
+![Portal de confianza de servicios: Campo de búsqueda](media/7c5cd817-3d62-420b-adb4-76e33fef941f.png)
   
-Haga clic en la lupa en la esquina superior derecha de la página por para expandir el campo de entrada de búsqueda, escriba los términos de búsqueda y presione ENTRAR. Aparecerá el control de búsqueda, con el término de búsqueda en el campo de entrada del panel de búsqueda, y los resultados de búsqueda aparecerán debajo.
+Haga clic en el icono de lupa de la esquina superior derecha de la página para expandir el campo de búsqueda, escriba los términos de búsqueda y presione Entrar. Se mostrará el control de búsqueda con el término de búsqueda en el campo de entrada del panel de búsqueda y, en la parte inferior, se mostrarán los resultados de la búsqueda.
   
-De forma predeterminada, la búsqueda devuelve resultados de documento, y puede usar las listas de lista desplegable Filtrar por para perfeccionar la lista de los documentos mostrados, para agregar o quitar los resultados de búsqueda de la vista. Puede usar varios atributos de filtro al mismo tiempo para restringir los documentos devueltos a los servicios de nube específicos, categorías de cumplimiento de normas o prácticas de seguridad, las regiones del mundo o sectores. Haga clic en el vínculo del nombre de documento para descargar el documento.
+De forma predeterminada, la búsqueda muestra resultados de documentos, y puede usar las listas desplegables “Filtrar por” para restringir la lista de documentos mostrados con el fin de agregar o quitar resultados de la búsqueda de la vista. Puede usar varios atributos de filtro al mismo tiempo para restringir los documentos mostrados a elementos específicos, como servicios en la nube, categorías de cumplimiento o procedimientos de seguridad, regiones del mundo o sectores. Haga clic en el vínculo del nombre del documento para descargar el documento.
   
-![Portal de confianza de servicios - búsqueda en documentos con filtro aplicado](media/86b754e1-c63c-4514-89ac-d014bf334140.png)
+![Portal de confianza de servicios: Buscar en documentos con filtro aplicado](media/86b754e1-c63c-4514-89ac-d014bf334140.png)
   
 Haga clic en el vínculo Administrador de cumplimiento para mostrar los resultados de búsqueda para los controles de evaluación de administrador de cumplimiento. Los resultados de búsqueda que se enumeran mostrarán la fecha de la evaluación se ha creado, el nombre de la evaluación de agrupación, el servicio de nube aplicables, y si los controles están Microsoft o administradas por el cliente.
   
-![Portal de confianza de servicios - búsqueda en Administrador de cumplimiento de controles](media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
+![Portal de confianza de servicios: Búsqueda en controles del Administrador de cumplimiento](media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
   
 > [!NOTE]
-> Informes de Portal de servicio de confianza y documentos están disponibles para descargar para al menos doce meses después de la publicación o hasta que esté disponible una nueva versión del documento. 
+> Los informes y documentos del Portal de confianza de servicios pueden descargarse como mínimo durante 12 meses después de su publicación, o bien hasta que se publique una nueva versión del documento. 
   
 ## <a name="localization-support"></a>Soporte de localización
 
-Portal de servicio de confianza le permite ver el contenido de la página en diferentes idiomas. Para cambiar el idioma de la página, haga clic en el icono de globo en la esquina inferior izquierda de la página y seleccione el idioma de su elección. 
+El Portal de confianza de servicios de permite ver el contenido de la página en distintos idiomas. Para cambiar el idioma de la página, haga clic en el icono de globo de la esquina inferior izquierda de la página y seleccionar el idioma que prefiera. 
   
-![Portal de confianza del servicio - localizada las opciones de contenido](media/b50c677e-a886-4267-9eca-915d880ead7a.png)
+![Portal de confianza de servicios: Opciones de contenido localizado](media/b50c677e-a886-4267-9eca-915d880ead7a.png)
   
 ## <a name="feedback"></a>Comentarios
 

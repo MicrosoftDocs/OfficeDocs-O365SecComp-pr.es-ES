@@ -3,7 +3,6 @@ title: Registro interno de Office 365 para ingeniería de Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/18/2018
 audience: ITPro
 ms.topic: article
 ms.service: Office 365 Administration
@@ -12,15 +11,15 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: Obtener una explicación de cómo interno registro para Office 365 ingeniería de equipos de works.
-ms.openlocfilehash: 1a613584b6b815524435acb20db7a8022d95e3bc
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 4cade759fb4c095565b4e1f85ce15ed546177082
+ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22535904"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "25038193"
 ---
 # <a name="internal-logging-for-office-365-engineering"></a>Registro interno para el equipo de ingeniería de Office 365
-Además de los eventos y los datos de registro disponibles para los clientes, también es un sistema de colección de datos de registro interno que está disponible para los ingenieros de Office 365. Hay muchos tipos diferentes de datos de registro se cargan desde los servidores de Office 365 a un datos internos, big informática servicio denominado Cosmos. Cada equipo de servicio carga los registros de auditoría de sus respectivos servidores en la base de datos Cosmos agregación y análisis. Esta transferencia de datos se produce a través de una conexión TLS 140-2-validan FIPS en específicamente aprobados puertos y protocolos mediante una herramienta de automatización de la propiedad denominada el cargador de datos de Office (ODL).
+Además de los eventos y los datos de registro disponibles para los clientes, también es un sistema de colección de datos de registro interno que está disponible para los ingenieros de Office 365. Hay muchos tipos diferentes de datos de registro se cargan desde los servidores de Office 365 a un datos internos, big informática servicio denominado Cosmos. Cada equipo de servicio carga los registros de auditoría de sus respectivos servidores en la base de datos Cosmos agregación y análisis. Esta transferencia de datos se produce a través de una conexión TLS 140-2-validan FIPS en específicamente aprobados puertos y protocolos mediante una herramienta de automatización de la propiedad denominada el cargador de datos de Office (ODL). Las herramientas que se usan en Office 365 para recopilar y procesar los registros de auditoría no permiten permanentes o irreversibles cambios en el original de auditoría de contenido de registro o la ordenación de hora.
 
 Los equipos de servicio use Cosmos como un repositorio centralizado para llevar a cabo un análisis de uso de la aplicación, para medir el rendimiento del sistema y operativa y para buscar anomalías y patrones que puedan indicar problemas o problemas de seguridad. Cada equipo de servicio carga una línea base de los registros en Cosmos, dependiendo de lo desea buscar para analizar, que a menudo incluyen:
 - Registros de eventos
