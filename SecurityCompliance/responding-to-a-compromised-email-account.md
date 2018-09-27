@@ -15,12 +15,12 @@ search.appverid:
 ms.custom: ''
 ms.assetid: ''
 description: Obtenga información sobre cómo reconocer y responder a una cuenta de correo electrónico en peligro en Office 365
-ms.openlocfilehash: bf3350da88804639356100fb5be2403c76cbcec6
-ms.sourcegitcommit: 17dda7ece5c9e884944a92ac0f842cf1e62ec506
+ms.openlocfilehash: b10bf58aaebc46938e3962494ff30dfb1e226130
+ms.sourcegitcommit: 411713004251ee62d29b550eabea04c08a87e41f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "23977595"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "25341425"
 ---
 # <a name="responding-to-a-compromised-email-account-in-office-365"></a>Responder a una cuenta de correo electrónico en peligro en Office 365
 
@@ -72,7 +72,7 @@ Debe realizar los pasos siguientes para volver a obtener acceso a su cuenta cuan
 - Si su identidad local está asociado a Office 365, debe cambiar su contraseña local y, a continuación, debe notificar a su administrador del peligro.
 
 > [!TIP]
-> Se recomienda que habilite la autenticación multifactor (MFA) con el fin de evitar que peligro, especialmente para las cuentas con privilegios administrativos.  Encontrará más información [aquí](https://support.office.com/en-us/article/Set-up-multi-factor-authentication-for-Office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6).
+> Se recomienda que habilite la autenticación multifactor (MFA) con el fin de evitar que peligro, especialmente en las cuentas con privilegios administrativos.  Encontrará más información [aquí](https://support.office.com/en-us/article/Set-up-multi-factor-authentication-for-Office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6).
 
 ### <a name="step-2-remove-suspicious-email-forwarding-addresses"></a>Paso 2 direcciones de reenvío de correo electrónico sospechosos Remove
 1. Abrir la **Centro de administración de Office 365 > usuarios activos**.
