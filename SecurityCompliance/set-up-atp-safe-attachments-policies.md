@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 description: Definir directivas de los datos adjuntos seguros para proteger su organización desde archivos malintencionados en el correo electrónico.
-ms.openlocfilehash: 03fb0b62d37dc628241a1108b4b256290c23509b
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: bc52522a45071776835efe20f57cf37c415d2436
+ms.sourcegitcommit: 9826013c3e0532ae5d01b3d88a14691f8dd0f6b7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22536104"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "25092946"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Configurar las directivas de Office 365 ATP los datos adjuntos seguros
 
@@ -32,7 +32,7 @@ Personas con regularidad envían, recibir y compartir datos adjuntos, como docum
     
 3. [Obtenga información acerca de las opciones de directiva de los datos adjuntos seguros de ATP](#learn-about-atp-safe-attachments-policy-options)
     
-## <a name="review-the-prerequisites"></a>Revise los requisitos previos
+## <a name="step-1-review-the-prerequisites"></a>Paso 1: Revisar los requisitos previos
 
 - Asegúrese de que la organización tiene [La protección de amenaza avanzada de Office 365](office-365-atp.md).
     
@@ -42,9 +42,10 @@ Personas con regularidad envían, recibir y compartir datos adjuntos, como docum
     
 - Permitir hasta 30 minutos para la directiva de nueva o actualizada para propagarse a todos los centros de datos de Office 365.
     
-## <a name="set-up-an-atp-safe-attachments-policy"></a>Establecer una directiva de datos adjuntos seguros de ATP
+## <a name="step-2-set-up-or-edit-an-atp-safe-attachments-policy"></a>Paso 2: Configurar una directiva de datos adjuntos seguros de ATP (o editar)
 
-Puede configurar una directiva de datos adjuntos seguros de ATP mediante la seguridad de Office 365 &amp; centro de cumplimiento o el centro de administración de Exchange (EAC). **Se recomienda usar la seguridad de Office 365 &amp; centro de cumplimiento**. 
+> [!TIP]
+> Puede configurar una directiva de datos adjuntos seguros de ATP mediante la seguridad de Office 365 &amp; centro de cumplimiento o el centro de administración de Exchange (EAC). **Se recomienda usar la seguridad de Office 365 &amp; centro de cumplimiento**. 
   
 1. Como administrador global o administrador de seguridad, vaya a [https://protection.office.com](https://protection.office.com) y el inicio de sesión con la cuenta de trabajo o escuela. 
     
@@ -58,27 +59,27 @@ Puede configurar una directiva de datos adjuntos seguros de ATP mediante la segu
     
     **Ejemplo:** Para configurar una directiva no denominada "retrasos" que entrega los mensajes de todos los usuarios inmediatamente y, a continuación, vuelve a adjuntar datos adjuntos después de que estén digitalizar, es posible que especifique las siguientes opciones: 
     
-  - En el cuadro **nombre** , no escriba retrasos.
+      - En el cuadro **nombre** , no escriba retrasos.
     
-  - En el cuadro **Descripción** , escriba una descripción como, entrega los mensajes inmediatamente y vuelve a adjuntar datos adjuntos después de la digitalización.
+      - En el cuadro **Descripción** , escriba una descripción como, entrega los mensajes inmediatamente y vuelve a adjuntar datos adjuntos después de la digitalización.
     
-  - En la sección respuesta, elija la opción de **Entrega dinámica** . ([Obtenga más información sobre la entrega dinámica y obtener una vista previa con datos adjuntos seguros de ATP](dynamic-delivery-and-previewing.md)).
+      - En la sección respuesta, elija la opción de **Entrega dinámica** . ([Obtenga más información sobre la entrega dinámica y obtener una vista previa con datos adjuntos seguros de ATP](dynamic-delivery-and-previewing.md)).
     
-  - En la sección **redirigir datos adjuntos** , seleccione la opción para habilitar el redireccionamiento y escriba la dirección de correo electrónico del administrador global, Administrador de seguridad o analista de seguridad que va a investigar datos adjuntos malintencionados de Office 365. 
+      - En la sección **redirigir datos adjuntos** , seleccione la opción para habilitar el redireccionamiento y escriba la dirección de correo electrónico del administrador global, Administrador de seguridad o analista de seguridad que va a investigar datos adjuntos malintencionados de Office 365. 
     
-  - En la sección **Aplicar a** , elija la opción **es el dominio de destinatario**y, a continuación, seleccione su dominio. Elija **Agregar**y, a continuación, elija **Aceptar**.
+      - En la sección **Aplicar a** , elija la opción **es el dominio de destinatario**y, a continuación, seleccione su dominio. Elija **Agregar**y, a continuación, elija **Aceptar**.
     
 6. Elija **Guardar**.
     
 Considere la posibilidad de configurar varias directivas de datos adjuntos seguros de ATP para su organización. Estas directivas se aplicarán en el orden en que aparecen en la página **Datos adjuntos seguros de ATP** . Después de haberse definida o editar una directiva, permitir al menos 30 minutos para que las directivas surtan efecto a lo largo de centros de datos de Microsoft. 
   
-## <a name="learn-about-atp-safe-attachments-policy-options"></a>Obtenga información acerca de las opciones de directiva de los datos adjuntos seguros de ATP
+## <a name="step-3-learn-about-atp-safe-attachments-policy-options"></a>Paso 3: Obtenga información acerca de las opciones de directiva de los datos adjuntos seguros de ATP
 
 Como configurar las directivas de los datos adjuntos seguros de ATP, elegir entre muchas opciones, incluido el Monitor, bloquear, reemplazar, entrega dinámica y así sucesivamente. En caso de que se está preguntando qué hacer estas opciones, la tabla siguiente resume cada uno de ellos y su efecto.
   
 |**Opción**|**Efecto**|**Usar cuando desea:**|
 |:-----|:-----|:-----|
-|**Off** <br/> |No examina los datos adjuntos de malware  <br/> Retraso de no entrega de mensajes  <br/> |Desactivar el examen de remitentes internos, escáneres, faxes o hosts inteligentes que sólo va a enviar los datos adjuntos conocidos y de buenos  <br/> Evitar retrasos innecesarios en enrutamiento de correo interno  <br/> > [!IMPORTANT]> Esta opción no se recomienda para la mayoría de los usuarios. Permite que desactive el análisis de los datos adjuntos seguros de ATP para un pequeño grupo de remitentes internos.           |
+|**Off** <br/> |No examina los datos adjuntos de malware  <br/> Retraso de no entrega de mensajes  <br/> |Desactivar el examen de remitentes internos, escáneres, faxes o hosts inteligentes que sólo va a enviar los datos adjuntos conocidos y de buenos  <br/> Evitar retrasos innecesarios en enrutamiento de correo interno  <br/> **Esta opción no se recomienda para la mayoría de los usuarios. Permite que desactive el análisis de los datos adjuntos seguros de ATP para un pequeño grupo de remitentes internos.**           |
 |**Monitor** <br/> |Entrega los mensajes con datos adjuntos y, a continuación, realiza un seguimiento de lo que sucede con malware detectado  <br/> |Vea donde se ha detectado malware se coloca en la organización  <br/> |
 |**Bloque** <br/> |Impide que los mensajes con datos adjuntos se ha detectado malware desde continuar  <br/> Envía los mensajes con malware detectado en [cuarentena en Office 365](manage-quarantined-messages-and-files.md) donde un administrador de seguridad o analista puede revisar y de la versión (o eliminar) esos mensajes  <br/> Bloquea los datos adjuntos y mensajes futuros automáticamente  <br/> |Proteger su organización frente a ataques repetidos con los mismos datos adjuntos de malware  <br/> |
 |**Reemplazar** <br/> |Quita detecta los datos adjuntos de malware  <br/> Notifica a los destinatarios que se han quitado datos adjuntos  <br/> Envía los mensajes con malware detectado en [cuarentena en Office 365](manage-quarantined-messages-and-files.md) donde un administrador de seguridad o analista puede revisar y de la versión (o eliminar) esos mensajes  <br/> |Elevar visibilidad a los destinatarios que se han quitado datos adjuntos a causa de malware detectado  <br/> |

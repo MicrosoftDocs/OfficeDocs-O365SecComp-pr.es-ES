@@ -12,28 +12,18 @@ search.appverid:
 - MOE150
 ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 description: Configurar directivas de vínculos seguros para proteger la organización de vínculos malintencionados en archivos de Word, Excel, PowerPoint y Visio, así como en mensajes de correo electrónico.
-ms.openlocfilehash: f1b5ca193043c5fffdcf5e2dee21a08f388fdcdf
-ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
+ms.openlocfilehash: 94ad3a5d497a5fe97144e3aad29ba25d2073cde1
+ms.sourcegitcommit: 9826013c3e0532ae5d01b3d88a14691f8dd0f6b7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "24972312"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "25092956"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Configurar las directivas de seguros vínculos con Office 365 ATP
 
 [Vínculos seguros ATP](atp-safe-links.md) , una característica de [Protección de amenaza avanzada de Office 365](office-365-atp.md) (ATP), puede ayudar a proteger su organización de vínculos malintencionados utilizados en suplantación de identidad y otros ataques. Si tiene el requisito [permisos asignados en la seguridad de Office 365 &amp; centro de cumplimiento](permissions-in-the-security-and-compliance-center.md), puede configurar las directivas de vínculos seguros de ATP para ayudar a garantizar que, cuando las personas, haga clic en direcciones web (URL), la organización está protegida. Las directivas de vínculos seguros ATP pueden configurarse para examinar las direcciones URL en correo electrónico y las direcciones URL en los documentos de Office.
   
-Las nuevas características se están agregando continuamente a los vínculos seguros ATP:
-  
-- En las últimas de 2017 octubre, protección de vínculos seguros de ATP se ha ampliado para aplicar a las direcciones URL en correo electrónico, así como las direcciones URL en los documentos de Office 365 ProPlus, como Word, Excel, PowerPoint en Windows y en dispositivos Android, iOS y los archivos de Visio en Windows.
-    
-- A partir de marzo de 2018, protección de vínculos seguros de ATP se ha ampliado para aplicar a correo electrónico enviado entre las personas de una organización.
-    
-- A partir de las últimas de 2018 de marzo, protección de vínculos seguros de ATP se ha ampliado para aplicar a las direcciones URL en Office Online (en línea de Word, Excel Online, Online de PowerPoint y OneNote en línea) y Office 365 ProPlus en Mac OS.
-    
-- A partir de mayo de 2018, [páginas de advertencia](atp-safe-links-warning-pages.md) se actualizan con una nueva combinación de colores, más detalles y la capacidad para seguir a un sitio a pesar de las recomendaciones determinadas. 
-
-Cuando se agregan nuevas características, debe realizar ajustes en las directivas de ATP seguros vínculos existentes.
+[Las nuevas características se están agregando continuamente a los vínculos seguros de ATP](atp-safe-links.md#new-features-added-to-atp-safe-links). Cuando se agregan nuevas características, debe realizar ajustes en las directivas de ATP seguros vínculos existentes.
 
 ## <a name="what-to-do"></a>Qué hacer 
   
@@ -41,11 +31,11 @@ Cuando se agregan nuevas características, debe realizar ajustes en las directiv
     
 2. [Revisar y editar la directiva de vínculos seguros ATP predeterminada que se aplica a todos los usuarios](#define-an-atp-safe-links-policy-that-applies-to-everyone). Por ejemplo, puede [Configurar la lista de direcciones URL bloqueada personalizada para vínculos seguros de ATP](set-up-a-custom-blocked-urls-list-wtih-atp.md).
     
-3. [Agregar una directiva de destinatarios de correo electrónico específica](#add-a-policy-for-specific-email-recipients), incluida la [configuración de la lista de direcciones URL "No reescritura" personalizada para vínculos seguros de ATP](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)
+3. [Agregar o editar las directivas de destinatarios de correo electrónico específica](#add-a-policy-for-specific-email-recipients), incluida la [configuración de la lista de direcciones URL "No reescritura" personalizada para vínculos seguros de ATP](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)
     
 4. [Obtenga información acerca de las opciones de directiva de vínculos seguros de ATP](#learn-about-atp-safe-links-policy-options) (en este artículo), incluida la configuración para los cambios recientes
     
-## <a name="review-the-prerequisites"></a>Revise los requisitos previos
+## <a name="step-1-review-the-prerequisites"></a>Paso 1: Revisar los requisitos previos
 
 - Asegúrese de que la organización tiene [La protección de amenaza avanzada de Office 365](office-365-atp.md).
     
@@ -57,9 +47,12 @@ Cuando se agregan nuevas características, debe realizar ajustes en las directiv
     
 - Permitir hasta 30 minutos para la directiva de nueva o actualizada para propagarse a todos los centros de datos de Office 365.
     
-## <a name="define-an-atp-safe-links-policy-that-applies-to-everyone"></a>Definir una directiva de vínculos seguros de ATP que se aplica a todos los usuarios
+## <a name="step-2-define-or-review-the-atp-safe-links-policy-that-applies-to-everyone"></a>Paso 2: Definir (o revisar) en la directiva de vínculos seguros de ATP que se aplica a todos los usuarios
 
-Cuando haya avanzado de protección contra amenazas en Office 365 Enterprise, tendrá una directiva de vínculos seguros ATP predeterminada que se aplica a todas las personas de su organización. Puede editar la directiva en la seguridad &amp; centro de cumplimiento o el centro de administración de Exchange. **Se recomienda usar la seguridad &amp; centro de cumplimiento para revisar o modificar cualquiera de las directivas de ATP**.
+Cuando haya avanzado de protección contra amenazas en Office 365 Enterprise, tendrá una directiva de vínculos seguros ATP predeterminada que se aplica a todas las personas de su organización. 
+
+> [!TIP]
+> Puede editar la directiva en la seguridad &amp; centro de cumplimiento o el centro de administración de Exchange. **Se recomienda usar la seguridad &amp; centro de cumplimiento para revisar o modificar cualquiera de las directivas de ATP**.
   
 1. Vaya a [https://protection.office.com](https://protection.office.com) y el inicio de sesión con la cuenta de trabajo o escuela. 
     
@@ -75,9 +68,12 @@ Cuando haya avanzado de protección contra amenazas en Office 365 Enterprise, te
     
 6. Elija **Guardar**.
     
-## <a name="add-a-policy-for-specific-email-recipients"></a>Agregar una directiva de destinatarios de correo electrónico específicos
+## <a name="step-3-add-or-edit-atp-safe-links-policies-that-apply-to-specific-email-recipients"></a>Paso 3: Agregar (o editar) en las directivas de ATP seguros vínculos que se aplican a los destinatarios de correo electrónico específica
 
-Después de haber revisado la directiva para todos los usuarios, considere la posibilidad de definir directivas adicionales para grupos específicos de destinatarios de correo electrónico. Esto le permite especificar excepciones a la directiva predeterminada. Puede agregar las directivas de uso de la seguridad &amp; centro de cumplimiento (recomendado) o el centro de administración de Exchange. **Se recomienda usar la seguridad &amp; centro de cumplimiento para revisar o modificar cualquiera de las directivas de ATP**.
+Después de haber revisado la directiva de vínculos seguros de ATP para todos los usuarios, considere la posibilidad de definir directivas adicionales para grupos específicos de destinatarios de correo electrónico. Esto le permite especificar excepciones a la directiva predeterminada. 
+
+> [!TIP]
+> Puede agregar las directivas de uso de la seguridad &amp; centro de cumplimiento (recomendado) o el centro de administración de Exchange. **Se recomienda usar la seguridad &amp; centro de cumplimiento para revisar o modificar cualquiera de las directivas de ATP**.
   
 1. Vaya a [https://protection.office.com](https://protection.office.com) y el inicio de sesión con la cuenta de trabajo o escuela. 
     
@@ -111,9 +107,12 @@ Después de haber revisado la directiva para todos los usuarios, considere la po
     
 6. Elija **Guardar**.
     
-## <a name="learn-about-atp-safe-links-policy-options"></a>Obtenga información acerca de las opciones de directiva de vínculos seguros de ATP
+## <a name="step-5-learn-about-atp-safe-links-policy-options"></a>Paso 5: Información acerca de las opciones de directiva de vínculos seguros de ATP
 
-Como configurar o editar una directiva de vínculos seguros ATP, verá varias opciones disponibles. En caso de que se lo pregunte ¿cuáles son estas opciones, en la siguiente tabla se describe cada uno de ellos y su efecto. Tenga en cuenta que existen dos tipos principales de directivas para definir o editar: una directiva predeterminada que se aplica a todos los usuarios y las directivas adicionales que se definen para destinatarios concretos.
+Como configurar o editar las directivas de vínculos seguros ATP, verá varias opciones disponibles. En caso de que se lo pregunte ¿cuáles son estas opciones, en la siguiente tabla se describe cada uno de ellos y su efecto. 
+
+> [!NOTE]
+> Existen dos tipos principales de directivas para definir o editar: una directiva predeterminada que se aplica a todos los usuarios y las directivas adicionales que se definen para destinatarios concretos. Los que se diferencian en la columna "para esta directiva" en la siguiente tabla.
   
 |**Para esta directiva**|**Esta opción**|**Se obtiene este resultado**|
 |:-----|:-----|:-----|
