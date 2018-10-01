@@ -3,7 +3,6 @@ title: Configurar una lista personalizada de direcciones URL bloqueada mediante 
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 5/30/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 896a7efb-1683-465e-a394-261349e5d866
 description: Lea este artículo para obtener información sobre cómo configurar una lista de direcciones URL bloqueadas para su organización mediante la protección de amenaza avanzada de Office 365. Las direcciones URL bloqueadas se aplicarán a los mensajes de correo electrónico y documentos de Office según las directivas de vínculos seguros de ATP.
-ms.openlocfilehash: cd1e7858c8929bf468b2a4d5e09ccde9d5adc7b1
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 36d295e6924d2e9972c185657885fa25bd96bf08
+ms.sourcegitcommit: 7032830867eb3fc71760e04b8342aff174c5d757
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22536240"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "25353256"
 ---
 # <a name="set-up-a-custom-blocked-urls-list-using-office-365-atp-safe-links"></a>Configurar una lista personalizada de direcciones URL bloqueada mediante Office 365 ATP seguros vínculos
 
@@ -56,9 +55,9 @@ Lea este artículo para obtener información sobre cómo configurar la lista de 
     
 |**Entrada de ejemplo**|**Para qué sirve**|
 |:-----|:-----|
-|`contoso.com`o`\*contoso.com\*`  <br/> |Bloquea el dominio, subdominios y rutas de acceso, como `https://www.contoso.com`, `http://sub.contoso.com`, y`http://contoso.com/abc`  <br/> |
+|`contoso.com`o`*contoso.com*`  <br/> |Bloquea el dominio, subdominios y rutas de acceso, como `https://www.contoso.com`, `http://sub.contoso.com`, y`http://contoso.com/abc`  <br/> |
 |`http://contoso.com/a`  <br/> |Bloquea un sitio `http://contoso.com/a` pero subtrazados no adicionales, como`http://contoso.com/a/b`  <br/> |
-|`http://contoso.com/a\*`  <br/> |Bloquea un sitio `http://contoso.com/a` y subtrazados adicionales, como`http://contoso.com/a/b`  <br/> |
+|`http://contoso.com/a*`  <br/> |Bloquea un sitio `http://contoso.com/a` y subtrazados adicionales, como`http://contoso.com/a/b`  <br/> |
    
 5. Cuando haya terminado de agregar las direcciones URL, en la esquina inferior derecha de la pantalla, elija **Guardar**.
     

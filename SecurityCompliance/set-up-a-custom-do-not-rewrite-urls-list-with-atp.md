@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 35dbfd99-da5a-422b-9b0e-c6caf3b645fa
 description: Al configurar las directivas de vínculos seguros de ATP, puede incluir una reescritura de no hacer ' lista de direcciones URL para habilitar algunas personas de la organización visitar sitios que se incluyen en la lista.
-ms.openlocfilehash: 0ee9c87c90e6e30d6c43fb0de5291dd85b03be07
-ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
+ms.openlocfilehash: 3ce783a3f783889bdc59ad8d412c80a79e7dd914
+ms.sourcegitcommit: 7032830867eb3fc71760e04b8342aff174c5d757
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "23782167"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "25353266"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-office-365-atp-safe-links"></a>Configurar una lista personalizada de direcciones URL de reescritura de no hacer con Office 365 ATP seguros vínculos
 
@@ -52,9 +52,9 @@ Protección de vínculos seguros de ATP utiliza varias listas, incluida la lista
 
 - Cualquier dirección URL que especifique en la lista "no reescritura" se excluye de vínculos seguros ATP análisis para los destinatarios que especifique.
  
-- Cuando se especifica una lista de "no volver a escribir" para una directiva de vínculos seguros ATP, puede incluir hasta tres asteriscos comodín (\*). Caracteres comodín (\*) se supone que las entradas de como `contoso.com`, que no explícitamente incluir prefijos o subdominios, como `http://` o `https://`. Esto significa que una entrada, como `contoso.com` es similar a `\*contoso.com\*` para la lista de "no volver a escribir".
+- Cuando se especifica una lista de "no volver a escribir" para una directiva de vínculos seguros ATP, puede incluir hasta tres asteriscos comodín (\*). Caracteres comodín (\*) se supone que las entradas de como `contoso.com`, que no explícitamente incluir prefijos o subdominios, como `http://` o `https://`. Esto significa que una entrada, como `contoso.com` es similar a `*contoso.com*` para la lista de "no volver a escribir".
 
-- Si ya tiene una lista de direcciones URL en la lista de "no reescritura", asegúrese de revisar esa lista y agregue caracteres comodín según corresponda. Por ejemplo, si la lista existente tiene una entrada como `http://contoso.com/a` y desea incluir subrutas como `http://contoso.com/a/b` en la directiva, agregue un carácter comodín a la entrada para el aspecto `http://contoso.com/a\*`.
+- Si ya tiene una lista de direcciones URL en la lista de "no reescritura", asegúrese de revisar esa lista y agregue caracteres comodín según corresponda. Por ejemplo, si la lista existente tiene una entrada como `http://contoso.com/a` y desea incluir subrutas como `http://contoso.com/a/b` en la directiva, agregue un carácter comodín a la entrada para el aspecto `http://contoso.com/a*`.
     
 - No incluya una barra diagonal (/) en las direcciones URL que especifique en la lista de "no volver a escribir". Por ejemplo, en lugar de escribir `contoso.com/` en la lista de "no reescritura", escriba `contoso.com`.
     
@@ -62,9 +62,9 @@ Tienen los siguientes ejemplos de listas de tabla de lo que puede escribir y el 
     
 |**Entrada de ejemplo**|**Para qué sirve**|
 |:-----|:-----|
-|`\*contoso.com\*`  <br/> |Permite a los destinatarios específicos visite un dominio, subdominios y rutas de acceso, como `http://www.contoso.com`, `https://www.contoso.com`, `https://maps.contoso.com`, o`http://www.contoso.com/a`  <br/> |
+|`*contoso.com*`  <br/> |Permite a los destinatarios específicos visite un dominio, subdominios y rutas de acceso, como `http://www.contoso.com`, `https://www.contoso.com`, `https://maps.contoso.com`, o`http://www.contoso.com/a`  <br/> |
 |`http://contoso.com/a`  <br/> |Permite a los destinatarios específicos a visitar un sitio como `http://contoso.com/a`, pero no subtrazados like`http://contoso.com/a/b`  <br/> |
-|`http://contoso.com/a\*`  <br/> |Permite a los destinatarios específicos a visitar un sitio como `http://contoso.com/a` y subtrazados como`http://contoso.com/a/b`  <br/> |
+|`http://contoso.com/a*`  <br/> |Permite a los destinatarios específicos a visitar un sitio como `http://contoso.com/a` y subtrazados como`http://contoso.com/a/b`  <br/> |
    
   
 
