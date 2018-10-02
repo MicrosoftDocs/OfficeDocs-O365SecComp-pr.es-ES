@@ -3,7 +3,7 @@ title: Habilitar la auditoría de buzones de correo en Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/19/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 description: En Office 365, puede activar registro de auditoría de buzón de correo para registrar el acceso a buzones de correo por los propietarios de los buzones de correo, delegados y los administradores. De forma predeterminada, la auditoría de buzón de correo en Office 365 no está activada. Después de habilitar la auditoría de buzón de correo para un buzón de correo, puede buscar en el registro de auditoría de Office 365 para actividades que se realizan en el buzón de correo.
-ms.openlocfilehash: a31a96c8c5c65965746a3a31bc924731289795f0
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 9952cc94fe48e289e6eaf8de665a82cb3da4746d
+ms.sourcegitcommit: b6473cd6ba3f9ac79dc6a2040fc148020dfbe464
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22536022"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "25358389"
 ---
 # <a name="enable-mailbox-auditing-in-office-365"></a>Habilitar la auditoría de buzones de correo en Office 365
   
@@ -129,14 +129,14 @@ En la siguiente tabla se enumera las acciones que se pueden registrar por buzón
 |:-----|:-----|:-----|:-----|:-----|
 |**Copiar** <br/> |Un mensaje se copió en otra carpeta.  <br/> |Sí  <br/> |No  <br/> |No  <br/> |
 |**Create** <br/> |Se crea un elemento en la carpeta Calendario, contactos, notas o tareas en el buzón de correo; Por ejemplo, se crea una nueva convocatoria de reunión. Tenga en cuenta que no se audita crear, enviar o recibir un mensaje. Además, no se audita la creación de una carpeta de buzón de correo.  <br/> |Sí\*  <br/> |Sí\*  <br/> |Sí  <br/> |
-|**FolderBind** <br/> |Se tuvo acceso a una carpeta de buzón de correo. Esta acción también se registra cuando el administrador o un delegado abren el buzón de correo.  <br/> |Sí\*  <br/> |Sí\*\*  <br/> |No  <br/> |
+|**FolderBind** <br/> |Se tuvo acceso a una carpeta de buzón de correo. Esta acción también se registra cuando el administrador o un delegado abren el buzón de correo.  <br/> |Sí  <br/> |Sí\*\*  <br/> |No  <br/> |
 |**HardDelete** <br/> |Un mensaje se purgó de la carpeta Elementos recuperables.  <br/> |Sí\*  <br/> |Sí\*  <br/> |Sí  <br/> |
 |**MailboxLogin** <br/> |El usuario inició sesión en su buzón.  <br/> |No  <br/> |No  <br/> |Sí  <br/> |
 |**MessageBind** <br/> |Un mensaje se consultó en el panel de vista previa o se abrió.  <br/> |Sí  <br/> |No  <br/> |No  <br/> |
-|**Mover** <br/> |Un mensaje se movió a otra carpeta.  <br/> |Sí\*  <br/> |Sí  <br/> |Sí  <br/> |
-|**MoveToDeletedItems** <br/> |Un mensaje se eliminó y se movió a la carpeta Elementos eliminados.  <br/> |Sí\*  <br/> |Sí  <br/> |Sí  <br/> |
+|**Mover** <br/> |Un mensaje se movió a otra carpeta.  <br/> |Sí  <br/> |Sí  <br/> |Sí  <br/> |
+|**MoveToDeletedItems** <br/> |Un mensaje se eliminó y se movió a la carpeta Elementos eliminados.  <br/> |Sí\*  <br/> |Sí\*  <br/> |Sí  <br/> |
 |**SendAs** <br/> |Un mensaje se envió mediante el permiso SendAs. Esto significa que otro usuario envió el mensaje como si procediera del propietario del buzón.  <br/> |Sí\*  <br/> |Sí\*  <br/> |No  <br/> |
-|**SendOnBehalf** <br/> |Un mensaje se envió mediante el permiso SendOnBehalf. Esto significa que otro usuario envió el mensaje en nombre del propietario del buzón. El mensaje indica el destinatario en nombre de quien se envió el mensaje y quién lo envió realmente.  <br/> |Sí\*  <br/> |Sí  <br/> |No  <br/> |
+|**SendOnBehalf** <br/> |Un mensaje se envió mediante el permiso SendOnBehalf. Esto significa que otro usuario envió el mensaje en nombre del propietario del buzón. El mensaje indica el destinatario en nombre de quien se envió el mensaje y quién lo envió realmente.  <br/> |Sí\*  <br/> |Sí\*  <br/> |No  <br/> |
 |**SoftDelete** <br/> |Un mensaje se eliminó permanentemente o se eliminó de la carpeta Elementos eliminados. Los elementos eliminados de forma temporal se mueven a la carpeta Elementos recuperables.  <br/> |Sí\*  <br/> |Sí\*  <br/> |Sí  <br/> |
 |**Actualizar** <br/> |Se cambió un mensaje o sus propiedades.  <br/> |Sí\*  <br/> |Sí\*  <br/> |Sí  <br/> |
 |**UpdateCalendarDelegation** <br/> |Una delegación de calendario se asignó a un buzón de correo. Delegación de calendario proporciona a otra persona en los mismos permisos de organización para administrar el calendario del propietario del buzón.  <br/> |Sí\*  <br/> |No  <br/> |Sí\*  <br/> |
@@ -144,7 +144,7 @@ En la siguiente tabla se enumera las acciones que se pueden registrar por buzón
 |**UpdateInboxRules** <br/> |Se han agregado, eliminada o cambiado una regla de bandeja de entrada. Las reglas de bandeja de entrada se usan para procesar los mensajes en la Bandeja de entrada del usuario en función de las condiciones especificadas y realizar acciones cuando se cumplen las condiciones de una regla, como mover un mensaje a una carpeta especificada o la eliminación de un mensaje.  <br/> |Sí\*  <br/> |Sí\*  <br/> |Sí\*  <br/> |
    
 > [!NOTE]
-> <sup>\*</sup>Se audita de manera predeterminada si está habilitada la auditoría para un buzón de correo. > <sup> \* </sup> Se consolidan las entradas para acciones realizadas por los delegados de enlazar la carpeta. Se genera una entrada de registro para el acceso de carpeta individuales dentro de un intervalo de tiempo de 24 horas. > <sup> \* \* </sup> Un administrador que se ha asignado el permiso acceso total al buzón de un usuario se considera un usuario delegado. 
+> <sup>\*</sup> Se audita de forma predeterminada si la auditoría está habilitada para un buzón.<br/><br/>  <sup>\*\*</sup>Se consolidan las entradas para acciones realizadas por los delegados de enlazar la carpeta. Se genera una entrada de registro para el acceso de carpeta individuales dentro de un intervalo de tiempo de 24 horas.<br/><br/><sup>\*\*\*</sup>Un administrador que se ha asignado el permiso acceso total al buzón de un usuario se considera un usuario delegado. 
   
 Si ya no necesita determinados tipos de acciones de buzón de correo que se va a auditar, debe modificar la configuración de registro de auditoría del buzón para deshabilitar esas acciones. Las entradas de registro existentes no se purgan hasta que se alcanza el límite de edad de 90 días para las entradas de registro de auditoría.
   
