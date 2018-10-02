@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Las etiquetas de Office 365 ayudan a realizar las acciones adecuadas en el contenido adecuado. Con las etiquetas, puede clasificar los datos de su organización para administrarlos mejor y aplicar reglas de retención basadas en esa clasificación. También puede usar etiquetas para implementar la administración de registros en Office 365.
-ms.openlocfilehash: 6c47f48a773b3b3078a5d4c83b01b5300ce82eda
-ms.sourcegitcommit: ede6230c2df398dc0a633e8f32ee0bfede0d5142
+ms.openlocfilehash: 3a99a3e563913a11da2d9f4a2eb745cb8fa80dd2
+ms.sourcegitcommit: e0f016aca7befc8806233a492ee916cbe646094f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "25002683"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "25342818"
 ---
 # <a name="overview-of-labels"></a>Información general sobre las etiquetas
 
@@ -267,22 +267,28 @@ Después de seleccionar una plantilla de directiva, puede agregar o quitar los t
     
 ![Opciones para identificar tipos de información confidencial](media/de255881-f596-4c8d-8359-e974e3a0819a.png)
   
-### <a name="auto-apply-labels-to-content-with-specific-keywords-or-searchable-properties"></a>Aplicar automáticamente etiquetas a contenido con palabras clave específicas o propiedades que se puedan buscar
+### <a name="auto-apply-labels-to-content-with-keywords-or-searchable-properties"></a>Aplicar automáticamente etiquetas a contenido con palabras clave o propiedades que se puedan buscar
 
-Puede aplicar automáticamente etiquetas a contenido que cumpla determinadas condiciones. Las condiciones disponibles ahora permiten aplicar una etiqueta a contenido que coincida con palabras, frases o propiedades que puedan buscarse. Puede restringir la consulta con operadores de búsqueda como AND, OR y NOT. Para obtener más información sobre los operadores y la sintaxis de consultas, vea:
+Puede aplicar automáticamente etiquetas a contenido que cumpla determinadas condiciones. Las condiciones disponibles ahora permiten aplicar una etiqueta a contenido que coincida con palabras, frases o propiedades que puedan buscarse. Puede restringir la consulta con operadores de búsqueda como Y, O y NO. 
+
+Para obtener más información sobre la sintaxis de consultas, vea:
+
+- [Referencia de la sintaxis del lenguaje de consultas de palabras clave (KQL)](https://docs.microsoft.com/es-ES/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
+
+Las etiquetas basadas en consultas usan el índice de búsqueda para identificar el contenido. Para obtener más información sobre las propiedades de búsqueda válidas, vea:
 
 - [Consultas de palabras clave y condiciones de búsqueda para la búsqueda de contenido](keyword-queries-and-search-conditions.md).
-- [Referencia de la sintaxis del lenguaje de consultas de palabras clave (KQL)](https://docs.microsoft.com/es-ES/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
+- [Información general sobre las propiedades administradas y rastreadas en SharePoint Server](https://docs.microsoft.com/es-ES/SharePoint/technical-reference/crawled-and-managed-properties-overview)
   
 Consultas de ejemplos:
 
 - Exchange
-    - subject:"Finanzas trimestrales"
+    - asunto:"Finanzas trimestrales"
+    - destinatarios:garthf<!--nolink-->@contoso.com
+
 - SharePoint y OneDrive para la Empresa
     - contenttype:contract
-    - sitio:`https://contoso.sharepoint.com/sites/teams/procurement` y contenttype:contract
-  
-Tenga en cuenta que las etiquetas basadas en consultas usan el índice de búsqueda para identificar contenido.
+    - sitios: https<!--nolink-->: //contoso.sharepoint.com/sites/teams/procurement y contenttype:contract
   
 ![Editor de consultas](media/ac5b8e5e-7453-4ec7-905c-160df57298d3.png)
   
