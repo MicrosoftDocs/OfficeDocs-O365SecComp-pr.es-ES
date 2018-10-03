@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Usar la seguridad de Office 365 &amp; centro de cumplimiento para buscar el registro de auditoría unificado para ver la actividad de usuario y Administrador de la organización de Office 365. '
-ms.openlocfilehash: 4c56f6f0c5f5a1ace7b94fab63d839760045c66f
-ms.sourcegitcommit: 6562a0d171dacdcdb945d192f45ea1a4c0c1c0c3
+ms.openlocfilehash: 79aa544d7243a4f3a81aebea3ffce92e2ad057f8
+ms.sourcegitcommit: 09d34bf058c0afce2c3800f207d64020ca984d57
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "24974690"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "25363153"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security-amp-compliance-center"></a>Buscar en el registro de auditoría del Centro de seguridad y cumplimiento de Office 365
 
@@ -50,9 +50,9 @@ ms.locfileid: "24974690"
 
 - Actividad de usuario y administración de Dynamics 365
     
-- Actividad de usuario y la administración in Microsoft Flow
-
 - Actividad de usuario y administración de Yammer
+ 
+- Actividad de usuario y la administración in Microsoft Flow
     
 - Actividad de usuario y la administración en Microsoft Stream
     
@@ -71,6 +71,15 @@ Asegúrese de leer el registro de auditoría de los siguientes elementos antes d
     > [!IMPORTANT]
     > Si se asigna a un usuario el rol registros de auditoría con permiso de vista o los registros de auditoría en la página de **permisos** en la seguridad &amp; centro de cumplimiento, no podrán buscar el registro de auditoría de Office 365. Se debe asignar los permisos en Exchange Online. Esto es debido a que el cmdlet subyacente que sirven para buscar el registro de auditoría es un cmdlet de Exchange Online. 
   
+- Cuando se realiza una actividad auditada por un usuario o un administrador, un registro de auditoría se generado y se almacena en el registro de auditoría de Office 365 para su organización. El período de tiempo que un registro de auditoría se retenidas (y se pueden buscar en el registro de auditoría) depende de su suscripción de Office 365.
+
+     - **Office 365 E3** - auditoría registros se conservan durante 90 días. Esto significa que puede buscar el registro de auditoría de las actividades que se realizaron en los últimos 90 días.
+
+     - **Office 365 E5** - auditoría se retienen los registros de 365 días (un año). Esto significa que puede buscar el registro de auditoría de las actividades que se realizaron dentro del último año. Conservar registros de auditoría para un año también está disponible para las organizaciones que tienen una suscripción E3 y una suscripción de complemento de Office 365 avanzada cumplimiento.
+
+        > [!NOTE]
+        > El período de retención de un año para los registros de auditoría está actualmente disponible como parte de Office 365 Preview de programa y sólo está disponible para las organizaciones con una suscripción E5 que están inscritos en el programa de vista previa. Además, de auditoría de registros de las actividades que se realizaron antes de octubre de 2018 aún se conservan durante 90 días sólo. A partir de octubre de 2018, nuevos registros de auditoría se conservan durante un año para las organizaciones con una suscripción E5 o que tiene una suscripción E3 y una suscripción de complemento de cumplimiento avanzadas.
+
 - Si desea desactivar la búsqueda de registro de auditoría en Office 365 para su organización, puede ejecutar el siguiente comando en PowerShell remoto conectado a la organización de Exchange Online:
     
   ```
@@ -88,8 +97,6 @@ Asegúrese de leer el registro de auditoría de los siguientes elementos antes d
 - Como se ha indicado anteriormente, el cmdlet subyacente que sirven para buscar el registro de auditoría es un cmdlet de Exchange Online, que es **UnifiedAuditLog de búsqueda**. Esto significa que puede usar este cmdlet para buscar el registro de auditoría de Office 365 en lugar de desde la página de **búsqueda de registro de auditoría** de la seguridad &amp; centro de cumplimiento. Se debe ejecutar este cmdlet en PowerShell remoto conectado a la organización de Exchange Online. Para obtener más información, vea [UnifiedAuditLog de búsqueda](https://go.microsoft.com/fwlink/p/?linkid=834776).
     
 - Si desea descargar mediante programación los datos desde el registro de auditoría de Office 365, se recomienda que utilice la API de actividad de administración de Office 365 en lugar de usar un script de PowerShell. La API de actividad de administración de Office 365 es un servicio web REST que puede usar para desarrollar soluciones de supervisión de cumplimiento para su organización, seguridad y operaciones. Para obtener más información, vea la [referencia de la API de actividad de administración de Office 365](https://go.microsoft.com/fwlink/?linkid=852309).
-    
-- Puede buscar el registro de auditoría de Office 365 para las actividades que se realizaron en los últimos 90 días.
     
 - Puede tardar hasta 30 minutos o copia de seguridad a 24 horas después de un evento se produce para que la entrada de registro de auditoría correspondientes que se mostrará en los resultados de búsqueda. En la siguiente tabla se muestra el tiempo necesario para los distintos servicios de Office 365.
     
@@ -287,7 +294,8 @@ Haga clic en uno de los siguientes vínculos para ir a una tabla específica.
 |[Influir hora de elegir las actividades](#sway-activities) <br/> |[Actividades de administración de usuario](#user-administration-activities) <br/> |[Actividades de administración de grupo de Azure AD](#azure-ad-group-administration-activities) <br/> |
 |[Actividades de administración de aplicaciones](#application-administration-activities) <br/> |[Actividades de administración de roles](#role-administration-activities) <br/> |[Actividades de administración de Active Directory](#directory-administration-activities) <br/> |
 |[actividades de exhibición de documentos electrónicos](#ediscovery-activities) <br/> |[Actividades de Power BI](#power-bi-activities) <br/> |[Actividades de Microsoft Teams](#microsoft-teams-activities) <br/> |
-|[Actividades de yammer](#yammer-activities) <br/> |[Microsoft Stream](#microsoft-stream) <br/> |[Registro de auditoría de administración de Exchange](#exchange-admin-audit-log) <br/> |
+|[Actividades de yammer](#yammer-activities) <br/> |[Microsoft Flow](#microsoft-flow) <br/> |[Microsoft Stream](#microsoft-stream) <br/>|
+|[Registro de auditoría de administración de Exchange](#exchange-admin-audit-log) <br/> |
    
   
 ### <a name="file-and-page-activities"></a>Actividades de archivo y página
@@ -640,6 +648,11 @@ En la siguiente tabla se enumera el usuario y el registro de auditoría de las a
 |Nombre del archivo actualizado  <br/> |FileUpdateName  <br/> |Usuario cambia el nombre de un archivo.  <br/> |
 |Archivo visualizado  <br/> |FileVisited  <br/> |Usuario ve un archivo.  <br/> |
    
+### <a name="microsoft-flow"></a>Microsoft Flow
+
+Puede buscar el registro de auditoría para actividades in Microsoft Flow. Estas actividades incluyen la creación, edición y eliminación de flujos y cambiar los permisos de flujo. Para obtener información acerca de la auditoría para actividades de flujo de, consulte el blog del [Flujo de Microsoft de auditoría de eventos ahora está disponibles en el centro de cumplimiento y seguridad de Office 365](https://flow.microsoft.com/blog/security-and-compliance-center).
+
+
 ### <a name="microsoft-stream"></a>Microsoft Stream
   
 Puede buscar el registro de auditoría para actividades en Microsoft Stream. Estas actividades incluyen actividades vídeo realizadas por los usuarios, las actividades de canal de grupo y las actividades de administración como administración de usuarios, administración de la configuración de la organización y exportación de informes. Para obtener una descripción de estas actividades, vea la sección "Registran las actividades en Microsoft Stream" en [Los registros de auditoría en secuencia de Microsoft](https://docs.microsoft.com/stream/audit-logs).
@@ -678,9 +691,16 @@ Vea la sección [actividades auditada](#audited-activities) en este artículo pa
 
 La mayoría de datos de auditoría están disponibles dentro de 30 minutos, pero puede tardar hasta 24 horas después de que se produce un evento de la entrada de registro de auditoría correspondientes que se mostrará en los resultados de búsqueda. Vea la tabla en la sección [antes de empezar](#before-you-begin) de este artículo que se muestra el tiempo que tarda eventos en los distintos servicios de Office 365 esté disponible.
 
-**¿Cuánto tiempo son los registros de auditoría mantiene para?**
+**¿Durante cuánto tiempo se conservan los registros de auditoría para?**
 
-Actualmente los registros del registro de auditoría se conservan durante 90 días. Microsoft está trabajando activamente en un plan para aumentar este límite. 
+Tal y como se ha explicado anteriormente, el período de retención para los registros de auditoría depende de suscripción de Office 365 de su organización.  
+
+- **Office 365 E3** - auditoría registros se conservan durante 90 días.
+
+- **Office 365 E5** - auditoría se retienen los registros de 365 días (un año). Conservar registros de auditoría para un año también está disponible para las organizaciones que tienen una suscripción E3 y una suscripción de complemento de Office 365 avanzada cumplimiento.
+
+     > [!NOTE]
+     > El período de retención de un año para los registros de auditoría actualmente sólo está disponible para las organizaciones que están inscritos en el programa de vista previa de Office 365.
 
 **¿Tener acceso a los datos de auditoría mediante programación?**
 
