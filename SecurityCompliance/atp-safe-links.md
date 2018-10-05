@@ -19,16 +19,16 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: La característica vínculos seguros proporciona comprobación de tiempo de clic de los hipervínculos en documentos de Office y en los mensajes de correo electrónico. Use los vínculos seguros para proteger la organización de suplantación de identidad y otros ataques.
-ms.openlocfilehash: 35975ee58763578586b78d7d1f281fde81e1139b
-ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
+ms.openlocfilehash: 9199c69d73a1585d76181c7a5feba79e465289db
+ms.sourcegitcommit: e14dec9bed0c0009acbc1f1cb80b4d0794ad5739
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "24972352"
+ms.lasthandoff: 10/05/2018
+ms.locfileid: "25435117"
 ---
 # <a name="office-365-atp-safe-links"></a>Vínculos seguros ATP de Office 365
 
-Office 365 ATP seguros vínculos (ATP seguros vínculos) (junto con los [Datos adjuntos seguros de Office 365 ATP](atp-safe-attachments.md)) es un conjunto de características de seguridad que se ofrece como parte de [La protección de amenaza avanzada de Office 365](office-365-atp.md) para las organizaciones empresariales. Vínculos seguros ATP puede ayudar a proteger su organización proporcionando comprobación de tiempo de clic de direcciones web (URL) en mensajes de correo electrónico y documentos de Office. Protección se define a través de [vínculos seguros ATP directivas](set-up-atp-safe-links-policies.md) que se han establecido por el equipo de seguridad de Office 365. 
+Office 365 ATP seguros vínculos (ATP seguros vínculos) (junto con los [Datos adjuntos seguros de Office 365 ATP](atp-safe-attachments.md)) es un conjunto de características de seguridad que se ofrece como parte de [La protección de amenaza avanzada de Office 365](office-365-atp.md) para las organizaciones empresariales. Vínculos seguros ATP puede ayudar a proteger su organización proporcionando comprobación de tiempo de clic de direcciones web (URL) en [mensajes de correo electrónico](#how-atp-safe-links-works-with-email) y [documentos de Office](#how-atp-safe-links-works-with-office-documents). Protección se define a través de [vínculos seguros ATP directivas](set-up-atp-safe-links-policies.md) que se han establecido por el equipo de seguridad de Office 365. 
   
 Una vez que las directivas de vínculos seguros ATP, los administradores globales de Office 365, los administradores de seguridad y los lectores de seguridad pueden [Ver los informes de protección contra amenazas de avanzada](view-reports-for-atp.md). La información en los informes puede ayudar al equipo de seguridad lleve a cabo pasos adicionales para proteger su organización o la investigación de incidentes de seguridad.
          
@@ -84,13 +84,15 @@ Estamos siguiendo agregar nuevas características a vínculos seguros de ATP. Aq
   
 - A partir de las últimas de 2017 octubre, protección de vínculos seguros de ATP se ha ampliado para aplicar a las direcciones URL en correo electrónico, así como las direcciones URL en documentos de Office 365 ProPlus, como Word, Excel, PowerPoint y Visio en Windows, así como Office las aplicaciones de iOS y dispositivos Android. (Asegúrese de que está utilizando [Autenticación moderno para Office](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016).)
     
-- A partir de marzo de 2018, protección de vínculos seguros de ATP se ha ampliado para aplicar a correo electrónico enviado entre personas dentro de una organización.
+- A partir de marzo de 2018, protección de vínculos seguros de ATP se ha ampliado para aplicar a correo electrónico enviado entre personas dentro de una organización. (Asegúrese de [Revisar](set-up-atp-safe-links-policies.md)y modificar las directivas de vínculos seguros ATP.)
 
-- A partir de junio de 2018, cuando las personas están usando Outlook Web Application (OWA), vínculos seguros ATP representa direcciones URL originales y no mostrar direcciones URL reescritas. Esto permite a los usuarios ver vínculos original en el correo electrónico. (Esta característica no está disponible para las aplicaciones de cliente de Outlook.)
-    
-- A partir de la segunda parte de 2018, protección de vínculos seguros de ATP se ha ampliado para aplicar a las direcciones URL en Office Online (en línea de Word, Excel Online, Online de PowerPoint y OneNote en línea) y Office 365 ProPlus en Mac.
-    
+- A partir de junio de 2018, cuando las personas están usando Outlook Web Application (OWA), vínculos seguros ATP representa direcciones URL originales y no mostrar direcciones URL reescritas. Esto permite a los usuarios ver vínculos original en el correo electrónico. (Llamamos a este vínculo nativo visbility).
+
 - Principio en septiembre de 2018, la característica de [páginas de advertencia de Office 365 ATP](atp-safe-links-warning-pages.md) una nueva combinación de colores, más detalles y la capacidad para seguir a un sitio a pesar de recibir advertencias y recomendaciones. 
+  
+- A partir de la segunda parte de 2018, protección de vínculos seguros de ATP se ha ampliado para aplicar a las direcciones URL en Office Online (en línea de Word, Excel Online, Online de PowerPoint y OneNote en línea) y Office 365 ProPlus en Mac. (Asegúrese de [Revisar](set-up-atp-safe-links-policies.md)y modificar las directivas de vínculos seguros ATP.)
+   
+- A partir de las últimas 2018, visibilidad de vínculo nativo está disponible en Outlook. Los usuarios son capaces de ver originales (no reescritas direcciones URL) de las direcciones URL en correo electrónico, tanto si utilizan OWA o Outlook.
     
 ## <a name="how-to-get-atp-safe-links-protection"></a>Cómo obtener protección vínculos seguros de ATP
 
