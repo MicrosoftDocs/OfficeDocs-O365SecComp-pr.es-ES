@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: Los usuarios necesitan tener asignados los permisos en la seguridad de Office 365 &amp; centro de cumplimiento de normas antes de que puedan administrar cualquiera de sus características de cumplimiento de normas o de seguridad.
-ms.openlocfilehash: c612c99f7d72b19d072d728eb4851532d4012414
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: e0c8b655b1b3300e4ffa9aba1d94e65a9ef26121
+ms.sourcegitcommit: 2e41cc24ad92005084f2ba432e724bdcc4e295ff
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23013804"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "25450745"
 ---
 # <a name="give-users-access-to-the-office-365-security-amp-compliance-center"></a>Conceder a los usuarios acceso a la seguridad de Office 365 &amp; centro de cumplimiento
 
@@ -29,7 +29,7 @@ Los usuarios necesitan tener asignados los permisos en la seguridad de Office 36
   
 Para obtener más información acerca de los diferentes permisos puede otorgar a los usuarios de la seguridad &amp; centro de cumplimiento, desprotección [permisos en la seguridad de Office 365 &amp; centro de cumplimiento](permissions-in-the-security-and-compliance-center.md).
   
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
 - Debe ser un administrador global de Office 365, o un miembro del grupo de roles en la seguridad OrganizationManagement &amp; centro de cumplimiento, para llevar a cabo los pasos descritos en este artículo.
     
@@ -41,11 +41,7 @@ Para obtener más información acerca de los diferentes permisos puede otorgar a
 
 1. [Iniciar sesión en Office 365 y vaya al centro de administración](https://go.microsoft.com/fwlink/p/?LinkId=525275).
     
-<<<<<<< HEAD
 2. En el centro de administración de Office 365, abra **centros de administración** y, a continuación, haga clic en **seguridad &amp; cumplimiento**. 
-=======
-2. En el centro de administración de Office 365, abra **centros de administración** y, a continuación, haga clic en **seguridad &amp; cumplimiento**. 
->>>>>>> master
     
 3. En la seguridad &amp; centro de cumplimiento, vaya a **permisos**.
     
