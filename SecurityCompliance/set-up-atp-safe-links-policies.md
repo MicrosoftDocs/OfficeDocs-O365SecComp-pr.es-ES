@@ -12,18 +12,18 @@ search.appverid:
 - MOE150
 ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 description: Configurar directivas de vínculos seguros para proteger la organización de vínculos malintencionados en archivos de Word, Excel, PowerPoint y Visio, así como en mensajes de correo electrónico.
-ms.openlocfilehash: 94ad3a5d497a5fe97144e3aad29ba25d2073cde1
-ms.sourcegitcommit: 9826013c3e0532ae5d01b3d88a14691f8dd0f6b7
+ms.openlocfilehash: 9110fce9a6eb53832707de6235b79100e10c9b8a
+ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "25092956"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "25454337"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Configurar las directivas de seguros vínculos con Office 365 ATP
 
 [Vínculos seguros ATP](atp-safe-links.md) , una característica de [Protección de amenaza avanzada de Office 365](office-365-atp.md) (ATP), puede ayudar a proteger su organización de vínculos malintencionados utilizados en suplantación de identidad y otros ataques. Si tiene el requisito [permisos asignados en la seguridad de Office 365 &amp; centro de cumplimiento](permissions-in-the-security-and-compliance-center.md), puede configurar las directivas de vínculos seguros de ATP para ayudar a garantizar que, cuando las personas, haga clic en direcciones web (URL), la organización está protegida. Las directivas de vínculos seguros ATP pueden configurarse para examinar las direcciones URL en correo electrónico y las direcciones URL en los documentos de Office.
   
-[Las nuevas características se están agregando continuamente a los vínculos seguros de ATP](atp-safe-links.md#new-features-added-to-atp-safe-links). Cuando se agregan nuevas características, debe realizar ajustes en las directivas de ATP seguros vínculos existentes.
+[Las nuevas características se están agregando continuamente a los vínculos seguros de ATP](atp-safe-links.md#new-features-are-continually-being-added-to-atp-safe-links). Cuando se agregan nuevas características, debe realizar ajustes en las directivas de ATP seguros vínculos existentes.
 
 ## <a name="what-to-do"></a>Qué hacer 
   
@@ -50,9 +50,6 @@ ms.locfileid: "25092956"
 ## <a name="step-2-define-or-review-the-atp-safe-links-policy-that-applies-to-everyone"></a>Paso 2: Definir (o revisar) en la directiva de vínculos seguros de ATP que se aplica a todos los usuarios
 
 Cuando haya avanzado de protección contra amenazas en Office 365 Enterprise, tendrá una directiva de vínculos seguros ATP predeterminada que se aplica a todas las personas de su organización. 
-
-> [!TIP]
-> Puede editar la directiva en la seguridad &amp; centro de cumplimiento o el centro de administración de Exchange. **Se recomienda usar la seguridad &amp; centro de cumplimiento para revisar o modificar cualquiera de las directivas de ATP**.
   
 1. Vaya a [https://protection.office.com](https://protection.office.com) y el inicio de sesión con la cuenta de trabajo o escuela. 
     
@@ -71,9 +68,6 @@ Cuando haya avanzado de protección contra amenazas en Office 365 Enterprise, te
 ## <a name="step-3-add-or-edit-atp-safe-links-policies-that-apply-to-specific-email-recipients"></a>Paso 3: Agregar (o editar) en las directivas de ATP seguros vínculos que se aplican a los destinatarios de correo electrónico específica
 
 Después de haber revisado la directiva de vínculos seguros de ATP para todos los usuarios, considere la posibilidad de definir directivas adicionales para grupos específicos de destinatarios de correo electrónico. Esto le permite especificar excepciones a la directiva predeterminada. 
-
-> [!TIP]
-> Puede agregar las directivas de uso de la seguridad &amp; centro de cumplimiento (recomendado) o el centro de administración de Exchange. **Se recomienda usar la seguridad &amp; centro de cumplimiento para revisar o modificar cualquiera de las directivas de ATP**.
   
 1. Vaya a [https://protection.office.com](https://protection.office.com) y el inicio de sesión con la cuenta de trabajo o escuela. 
     
@@ -81,13 +75,9 @@ Después de haber revisado la directiva de vínculos seguros de ATP para todos l
     
 3. Elija **vínculos seguros**.
     
-4. En la sección de **directivas que se aplican a determinados destinatarios** , elija **nuevo** (el botón nuevo se parece a un signo más ( **+**)).
-    
-    ![Elija nuevo para agregar una directiva de vínculos seguros para los destinatarios de correo electrónico específica](media/01073f42-3cec-4ddb-8c10-4d33ec434676.png)
+4. En la sección de **directivas que se aplican a determinados destinatarios** , elija **nuevo** (el botón nuevo se parece a un signo más ( **+**)).<br/>![Elija nuevo para agregar una directiva de vínculos seguros para los destinatarios de correo electrónico específica](media/01073f42-3cec-4ddb-8c10-4d33ec434676.png)
   
-5. Especifique el nombre, la descripción y la configuración de la directiva.
-    
-    **Ejemplo:** Para configurar una directiva no denominada "hacer clic directa a través de" que no se permiten a personas en un determinado grupo de la organización y haga clic en a través de un sitio Web específico sin protección de vínculos seguros ATP, podría especificar la siguiente configuración recomendada: 
+5. Especifique el nombre, la descripción y la configuración de la directiva.<br/>**Ejemplo:** Para configurar una directiva no denominada "hacer clic directa a través de" que no se permiten a personas en un determinado grupo de la organización y haga clic en a través de un sitio Web específico sin protección de vínculos seguros ATP, podría especificar la siguiente configuración recomendada: 
     
   - En el cuadro **nombre** , no escriba haga clic en directo a través de.
     
@@ -111,8 +101,7 @@ Después de haber revisado la directiva de vínculos seguros de ATP para todos l
 
 Como configurar o editar las directivas de vínculos seguros ATP, verá varias opciones disponibles. En caso de que se lo pregunte ¿cuáles son estas opciones, en la siguiente tabla se describe cada uno de ellos y su efecto. 
 
-> [!NOTE]
-> Existen dos tipos principales de directivas para definir o editar: una directiva predeterminada que se aplica a todos los usuarios y las directivas adicionales que se definen para destinatarios concretos. Los que se diferencian en la columna "para esta directiva" en la siguiente tabla.
+Existen dos tipos principales de directivas para definir o editar: una directiva predeterminada que se aplica a todos los usuarios y las directivas adicionales que se definen para destinatarios concretos. Los que se diferencian en la columna **para esta directiva** en la siguiente tabla.
   
 |**Para esta directiva**|**Esta opción**|**Se obtiene este resultado**|
 |:-----|:-----|:-----|

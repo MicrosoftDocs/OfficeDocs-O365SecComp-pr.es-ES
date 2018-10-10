@@ -3,7 +3,6 @@ title: Ver los informes de seguridad de correo electrónico de la seguridad &amp
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 08/06/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,16 +12,16 @@ search.appverid:
 - MOE150
 ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 description: Obtenga información sobre cómo buscar y usar informes de seguridad de correo electrónico para la organización con Office 365 Enterprise. Informes de seguridad de correo electrónico están disponibles en la seguridad &amp; centro de cumplimiento.
-ms.openlocfilehash: 81716a3ecc506d36c786d53068f7d2cce8a44a9a
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 0dd0c2ee7090e488d8619e71c6e4931f1934e9b0
+ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22536867"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "25454347"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>Ver los informes de seguridad de correo electrónico de la seguridad &amp; centro de cumplimiento
 
-Informes de una gran variedad de seguridad de correo electrónico están disponibles en la seguridad &amp; centro de cumplimiento que le ayudarán a ver cómo las características contra correo no deseado y antimalware en Office 365 protegen a la organización. Si tiene los permisos necesarios, puede ver estos informes en la seguridad &amp; centro de cumplimiento yendo a los **informes** \> **panel**.
+Informes de una gran variedad de seguridad de correo electrónico están disponibles en la seguridad &amp; centro de cumplimiento que le ayudarán a ver cómo las características contra correo no deseado y antimalware en Office 365 protegen a la organización. Si tiene los [permisos necesarios](#what-permissions-are-needed-to-view-these-reports), puede ver estos informes en la seguridad &amp; centro de cumplimiento yendo a los **informes** \> **panel**.
   
 ![La seguridad &amp; panel del centro de cumplimiento puede ayudarle a ver dónde está trabajando avanzada de protección contra amenazas](media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
   

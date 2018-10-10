@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 896a7efb-1683-465e-a394-261349e5d866
 description: Lea este artículo para obtener información sobre cómo configurar una lista de direcciones URL bloqueadas para su organización mediante la protección de amenaza avanzada de Office 365. Las direcciones URL bloqueadas se aplicarán a los mensajes de correo electrónico y documentos de Office según las directivas de vínculos seguros de ATP.
-ms.openlocfilehash: 36d295e6924d2e9972c185657885fa25bd96bf08
-ms.sourcegitcommit: 7032830867eb3fc71760e04b8342aff174c5d757
+ms.openlocfilehash: 0429546e521bf3f6b7144342ab0997e924c2f616
+ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "25353256"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "25454367"
 ---
 # <a name="set-up-a-custom-blocked-urls-list-using-office-365-atp-safe-links"></a>Configurar una lista personalizada de direcciones URL bloqueada mediante Office 365 ATP seguros vínculos
 
@@ -61,7 +61,7 @@ Lea este artículo para obtener información sobre cómo configurar la lista de 
    
 5. Cuando haya terminado de agregar las direcciones URL, en la esquina inferior derecha de la pantalla, elija **Guardar**.
     
-## <a name="what-if-i-want-to-define-exceptions-for-certain-users-in-my-organization"></a>¿Qué ocurre si deseo definir excepciones para algunos usuarios de mi organización?
+## <a name="how-to-define-exceptions-for-certain-users-in-an-organization"></a>Procedimiento para definir excepciones para determinados usuarios en una organización
 
 Si desea que ciertos grupos puedan ver las direcciones URL que podrían estar bloqueadas para que otros usuarios, puede especificar una directiva de vínculos seguros de ATP que se aplica a determinados destinatarios. Consulte [Configurar una "no reescritura" las direcciones URL de lista personalizada con vínculos seguros de ATP](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md).
   

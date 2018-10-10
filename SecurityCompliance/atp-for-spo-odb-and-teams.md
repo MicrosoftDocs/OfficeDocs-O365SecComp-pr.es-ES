@@ -3,7 +3,6 @@ title: ATP de Office 365 para SharePoint, OneDrive y Microsoft Teams.
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 6/18/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,21 +12,20 @@ search.appverid:
 - MOE150
 ms.assetid: 26261670-db33-4c53-b125-af0662c34607
 description: Ampliar la protección de amenaza avanzada de Office 365 a los archivos en SharePoint Online, OneDrive para la empresa y Microsoft Teams permitir la colaboración más seguro para su organización.
-ms.openlocfilehash: ea1c77273be70ce27f60bfaeae3544d605553a32
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: ff07d88a150d3f059681556feec9a5e89b5875a8
+ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22536619"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "25454327"
 ---
 # <a name="office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>ATP de Office 365 para SharePoint, OneDrive y Microsoft Teams.
 
-Recurso compartido de archivos de personas con regularidad y colaborar mediante SharePoint, OneDrive y Microsoft Teams. Con [Office 365 avanzada una protección contra amenazas](office-365-atp.md) (ATP), la organización puede colaborar de manera más segura. ATP ayuda a detectar y bloquear archivos que haya identificado como malintencionados en sitios de grupo y las bibliotecas de documentos. Lea este artículo para obtener una visión general de ATP para SharePoint Online, OneDrive para la empresa y Microsoft Teams y, a continuación, realice los pasos siguientes. 
+## <a name="overview-of-office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Información general de Office 365 ATP para SharePoint, OneDrive y equipos de Microsoft
+
+Recurso compartido de archivos de personas con regularidad y colaborar mediante SharePoint, OneDrive y Microsoft Teams. Con [Office 365 avanzada una protección contra amenazas](office-365-atp.md) (ATP), la organización puede colaborar de manera más segura. ATP ayuda a detectar y bloquear archivos que haya identificado como malintencionados en sitios de grupo y las bibliotecas de documentos.  
   
-> [!TIP]
-> Para realizar las tareas descritas en este artículo, debe ser un administrador global de Office 365 o un administrador de seguridad. Vea [permisos en la seguridad de Office 365 &amp; centro de cumplimiento](permissions-in-the-security-and-compliance-center.md). 
-  
-## <a name="how-it-works"></a>Funcionamiento
+### <a name="how-it-works"></a>Funcionamiento
 
 Cuando un archivo en SharePoint Online, OneDrive para la empresa y Teams Microsoft ha identificado como malintencionados, ATP se integra directamente con los almacenes de archivos para bloquear ese archivo. En la siguiente imagen se muestra un ejemplo de un archivo malintencionado detectado en una biblioteca.
   
@@ -46,6 +44,8 @@ Para obtener más información, vea [activar Office 365 ATP para SharePoint, One
 ### <a name="keep-the-following-points-in-mind"></a>Tenga en cuenta los siguientes puntos
 
 - ATP no va a analizar cada archivo en SharePoint Online, OneDrive para el negocio o Microsoft Teams. Esto es por diseño. Los archivos se analizan de forma asincrónica, a través de un proceso que utiliza los eventos de actividad de uso compartido e invitado junto con heurística inteligente y señales de amenaza para identificar archivos malintencionados.
+
+- Asegúrese de que los sitios de SharePoint están configurados para usar la [experiencia moderna](https://docs.microsoft.com/sharepoint/guide-to-sharepoint-modern-experience). Cuando un archivo se identifica como personas malintencionadas y bloqueadas, pueden ver que esto se ha producido en la experiencia de moderna, pero no en la vista clásica. Protección de ATP se aplica si se usa la experiencia moderna o en la vista clásica; Sin embargo, indicadores visuales que se bloquea un archivo están presentes sólo en la experiencia de moderna.
     
 - Los archivos que se identifican como malintencionado en SharePoint Online, OneDrive para el negocio o Microsoft Teams se mostrará en los [informes de protección de amenaza avanzada de Office 365](view-reports-for-atp.md) y en el Explorador de amenaza (parte de la [Información sobre amenazas de Office 365](office-365-ti.md)).
     
@@ -53,11 +53,11 @@ Para obtener más información, vea [activar Office 365 ATP para SharePoint, One
     
 - Un administrador de SharePoint Online puede determinar si se permiten a las personas descargar los archivos que se detectan como malintencionados. Esto se realiza mediante la ejecución del cmdlet Set-SPOTenant PowerShell con un parámetro de DisallowInfectedFileDownload (vea [activar Office 365 ATP para SharePoint, OneDrive y los equipos de Microsoft](turn-on-atp-for-spo-odb-and-teams.md)).
     
-## <a name="new-quarantine-in-atp-for-sharepoint-online-onedrive-for-business-and-microsoft-teams"></a>(Nuevo)! Cuarentena de ATP para SharePoint Online, OneDrive para la empresa y los equipos de Microsoft
+## <a name="quarantine-in-atp-for-sharepoint-online-onedrive-for-business-and-microsoft-teams"></a>Cuarentena de ATP para SharePoint Online, OneDrive para la empresa y los equipos de Microsoft
 
- ** A partir de las últimas mayo de 2018, capacidades de [cuarentena](quarantine-email-messages.md) en la seguridad &amp; centro de cumplimiento se están extendiendo a ATP para SharePoint Online, OneDrive para la empresa y Microsoft Teams. **
+ A partir de las últimas mayo de 2018, capacidades de [cuarentena](quarantine-email-messages.md) en la seguridad &amp; centro de cumplimiento se están extendiendo a ATP para SharePoint Online, OneDrive para la empresa y Microsoft Teams.
   
-Cuando un archivo en SharePoint Online, OneDrive para el negocio o Microsoft Teams se identifica como malintencionado, además de ATP bloqueo del archivo se abran o compartido, ese archivo se incluye en una lista de elementos en cuarentena. (En la seguridad &amp; centro de cumplimiento, vaya a **administración de amenazas** \> **revisión** \> **cuarentena** y filtro de contenido.) 
+Cuando un archivo en SharePoint Online, OneDrive para el negocio o Microsoft Teams se identifica como malintencionado, además de ATP bloqueo del archivo se abran o compartido, ese archivo se incluye en una lista de elementos en cuarentena. (En la seguridad &amp; centro de cumplimiento, vaya a **administración de amenazas** \> **revisión** \> **cuarentena** y filtro de **contenido**.) 
   
 Si es parte del equipo de seguridad de Office 365 de su organización y tener el requisito [permisos asignados en la seguridad de Office 365 &amp; centro de cumplimiento](permissions-in-the-security-and-compliance-center.md), puede descargar, versión, notificar y eliminar los archivos que se detectan como malintencionados por ATP desde la cuarentena.
   

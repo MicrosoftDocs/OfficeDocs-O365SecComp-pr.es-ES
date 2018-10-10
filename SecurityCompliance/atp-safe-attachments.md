@@ -3,7 +3,6 @@ title: Datos adjuntos seguros ATP de Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 08/03/2018
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -14,20 +13,22 @@ search.appverid:
 - MOE150
 ms.assetid: 6e13311e-92ae-495e-a619-56d770199170
 description: La característica de los datos adjuntos seguros proporciona comprobación de tiempo de clic de los datos adjuntos de correo electrónico. Utilizar datos adjuntos seguros para proteger la organización de las personas de archivos malintencionados enviar o recibir por correo electrónico.
-ms.openlocfilehash: 0a28923bff8aa2cd987159edd3cad77ed42f80f4
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 44a7aa56db6b19ac948184988c930841fc7ffb89
+ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22536195"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "25454317"
 ---
 # <a name="office-365-atp-safe-attachments"></a>Datos adjuntos seguros ATP de Office 365
 
+## <a name="overview-of-office-365-atp-safe-attachments"></a>Información general de los datos adjuntos seguros ATP de Office 365
+
 Datos adjuntos seguros de ATP (junto con los [Vínculos seguros ATP](atp-safe-links.md)) es parte de [La protección de amenaza avanzada de Office 365](office-365-atp.md) (ATP). La característica de los datos adjuntos seguros de ATP comprueba si los datos adjuntos de correo electrónico son malintencionados y, a continuación, realiza una acción para proteger su organización. La función de los datos adjuntos seguros de ATP protege a la organización de acuerdo con [las directivas de los datos adjuntos seguros de ATP](set-up-atp-safe-attachments-policies.md) que se han establecido por su Office 365 globales o los administradores de seguridad. 
   
-A partir de las últimas de 2018 marzo y a través de las próximas semanas, protección de ATP que se se extiende a los archivos en SharePoint Online, OneDrive para la empresa y Microsoft Teams. Para obtener más información, vea [Office 365 avanzada protección contra amenazas para SharePoint, OneDrive y los equipos de Microsoft](atp-for-spo-odb-and-teams.md).
+Recientemente, protección de ATP se ha ampliado a los archivos en SharePoint Online, OneDrive para la empresa y Microsoft Teams. Para obtener más información, vea [Office 365 avanzada protección contra amenazas para SharePoint, OneDrive y los equipos de Microsoft](atp-for-spo-odb-and-teams.md).
        
-## <a name="how-it-works"></a>Funcionamiento
+### <a name="how-it-works"></a>Funcionamiento
 
 La característica de los datos adjuntos seguros de ATP comprueba los datos adjuntos de correo electrónico para las personas de su organización. Cuando una directiva de datos adjuntos seguros de ATP es en contexto y alguien cubierto por que Directiva ve su correo electrónico en Office 365, se comprueban los datos adjuntos de correo electrónico y se toman las acciones adecuadas, en función de las directivas de los datos adjuntos seguros de ATP. Dependiendo de cómo se definen las directivas, las personas pueden continuar trabajando sin necesidad de conocer nunca que se enviaron archivos malintencionados.
   
@@ -41,7 +42,7 @@ Las directivas de los datos adjuntos seguros de ATP se pueden aplicar a usuarios
   
 ## <a name="how-to-get-atp-safe-attachments"></a>Cómo obtener datos adjuntos seguros de ATP
 
-La característica de los datos adjuntos seguros de ATP es parte de avanzada protección contra amenazas, que se incluye en Office 365 Enterprise E5. Si su organización usa otra suscripción de Office 365 Enterprise, protección avanzada de amenaza puede adquirirse como un complemento. (Como administrador global, en el centro de administración de Office 365, elija **facturación** \> **Agregar suscripciones**.) Para obtener más información, vea [Descripción del servicio Office 365 plataforma: seguridad de Office 365 &amp; centro de cumplimiento](https://technet.microsoft.com/en-us/library/dn933793.aspx) y [comprar o editar un complemento de Office 365 para profesionales](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6).
+La característica datos adjuntos seguros de ATP es parte de avanzada protección contra amenazas, que se incluye en Microsoft 365 Enterprise, Office 365 Enterprise E5 y 365 de Microsoft Business. Si su organización usa otra suscripción de Office 365 Enterprise, protección avanzada de amenaza puede adquirirse como un complemento. (Como administrador global, en el centro de administración de Office 365, elija **facturación** \> **Agregar suscripciones**.) Para obtener más información, vea [Descripción del servicio Office 365 plataforma: seguridad de Office 365 &amp; centro de cumplimiento](https://technet.microsoft.com/en-us/library/dn933793.aspx) y [comprar o editar un complemento de Office 365 para profesionales](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6).
   
 La característica de los datos adjuntos seguros de ATP aplica cuando:
   
@@ -49,7 +50,7 @@ La característica de los datos adjuntos seguros de ATP aplica cuando:
     
 - Los usuarios han iniciado sesión en Office 365 mediante su cuenta de trabajo o escuela. (Vea [iniciar sesión en Office 365 o de Office](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426)).
     
-## <a name="how-to-know-if-atp-safe-attachments-protection-is-in-place"></a>Cómo saber si la protección de los datos adjuntos seguros de ATP es en contexto
+### <a name="how-to-know-if-atp-safe-attachments-protection-is-in-place"></a>Cómo saber si la protección de los datos adjuntos seguros de ATP es en contexto
 
  [Las directivas de los datos adjuntos seguros de ATP](set-up-atp-safe-attachments-policies.md) debe definirse en orden para la protección de los datos adjuntos seguros de ATP estar en su lugar. 
   
@@ -67,7 +68,9 @@ Además, en la siguiente tabla se describe algunos escenarios de ejemplo. En tod
    
 ## <a name="submitting-files-for-malware-analysis"></a>Envío de archivos para el análisis de malware
 
-Si recibe un archivo que se va a solicitar a Microsoft para analizar, visite [Enviar un archivo para el análisis de malware](https://aka.ms/wdsi/submit).
+- Si recibe un archivo que se va a solicitar a Microsoft para analizar, visite [Enviar un archivo para el análisis de malware](https://aka.ms/wdsi/submit).
+
+- Si recibe un mensaje de correo electrónico (con o sin datos adjuntos) que desea enviar a Microsoft para su análisis, use el [complemento en el mensaje de informe](enable-the-report-message-add-in.md).
   
 ## <a name="related-topics"></a>Temas relacionados
 

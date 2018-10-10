@@ -3,7 +3,6 @@ title: Configurar las directivas de Office 365 ATP los datos adjuntos seguros
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 5/8/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 description: Definir directivas de los datos adjuntos seguros para proteger su organización desde archivos malintencionados en el correo electrónico.
-ms.openlocfilehash: bc52522a45071776835efe20f57cf37c415d2436
-ms.sourcegitcommit: 9826013c3e0532ae5d01b3d88a14691f8dd0f6b7
+ms.openlocfilehash: c57f9320c7cd2b8b75bc2dc58d1f72ce136acbb6
+ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "25092946"
+ms.lasthandoff: 10/09/2018
+ms.locfileid: "25454288"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Configurar las directivas de Office 365 ATP los datos adjuntos seguros
 
@@ -43,9 +42,6 @@ Personas con regularidad envían, recibir y compartir datos adjuntos, como docum
 - Permitir hasta 30 minutos para la directiva de nueva o actualizada para propagarse a todos los centros de datos de Office 365.
     
 ## <a name="step-2-set-up-or-edit-an-atp-safe-attachments-policy"></a>Paso 2: Configurar una directiva de datos adjuntos seguros de ATP (o editar)
-
-> [!TIP]
-> Puede configurar una directiva de datos adjuntos seguros de ATP mediante la seguridad de Office 365 &amp; centro de cumplimiento o el centro de administración de Exchange (EAC). **Se recomienda usar la seguridad de Office 365 &amp; centro de cumplimiento**. 
   
 1. Como administrador global o administrador de seguridad, vaya a [https://protection.office.com](https://protection.office.com) y el inicio de sesión con la cuenta de trabajo o escuela. 
     
