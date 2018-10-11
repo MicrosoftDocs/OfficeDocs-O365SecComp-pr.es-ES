@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 9295e396-e53d-49b9-ae9b-0b5828cdedc3
 description: Minimizar el potencial de una infracción de datos o una cuenta en peligro siguiendo estos procedimientos recomendados.
-ms.openlocfilehash: 245302af0b08a4ee8183345fc386fe47985c93dd
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 63bda11afdd1e02e9e12e8c505aca7100c4deade
+ms.sourcegitcommit: a36d2692396786f49c8765c65145e5093578e9a1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22536758"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "25498096"
 ---
 # <a name="security-best-practices-for-office-365"></a>Procedimientos recomendados de seguridad para Office 365
 
@@ -46,7 +46,7 @@ MFA agrega una capa adicional de protección a una estrategia de contraseña seg
   
 - [Planeación de la autenticación multifactor para las implementaciones de Office 365](https://support.office.com/article/043807b2-21db-4d5c-b430-c8a6dee0e6ba)
     
-- [Configurar la autenticación multifactor para usuarios de Office 365](https://support.office.com/article/8f0454b2-f51a-4d9c-bcde-2c48e41621c6)
+- [Configurar autenticación multifactor para usuarios de Office 365](https://support.office.com/article/8f0454b2-f51a-4d9c-bcde-2c48e41621c6)
     
 ## <a name="use-office-365-cloud-app-security"></a>Usar la seguridad de la aplicación de Office 365 en la nube
 
@@ -70,9 +70,9 @@ Implementar el enriquecido conjunto en Exchange Online Protection de caracterís
     
 - Si utiliza un dominio personalizado para su organización en Office 365, configurar SPF, DKIM y, a continuación, DMARC para validar el correo enviado por la organización y para ayudar a evitar la suplantación de identidad:
     
-  - [Configurar SPF en Office 365 para ayudar a evitar la suplantación de identidad](https://technet.microsoft.com/en-us/library/dn789058%28v=exchg.150%29.aspx).
+  - [Configurar SPF en Office 365 para ayudar a evitar la suplantación de identidad](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing).
     
-  - [Uso de DKIM para validar el correo electrónico saliente enviado desde su dominio personalizado en Office 365](https://technet.microsoft.com/en-us/library/dn789058%28v=exchg.150%29.aspx).
+  - [Uso de DKIM para validar el correo electrónico saliente enviado desde su dominio personalizado en Office 365](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing).
     
   - [Usar DMARC para validar el correo electrónico en Office 365](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx).
     
