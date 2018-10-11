@@ -3,7 +3,7 @@ title: Obtenga más información sobre la inteligencia de suplantación de ident
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 3/14/2018
+ms.date: 10/11/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 978c3173-3578-4286-aaf4-8a10951978bf
 description: Usar suplantación de la inteligencia de la seguridad &amp; centro de cumplimiento en la página de configuración contra correo no deseado para revisar todos los remitentes que los dominios que forman parte de la organización de suplantación de identidad, o de dominios externos de suplantación de identidad. Suplantación de la inteligencia está disponible como parte de Office 365 Enterprise E5 o por separado como parte de la protección contra amenazas de avanzada y Exchange Online Protection.
-ms.openlocfilehash: 3be606c05dde4a13d3a6a4a43ce927cf4f0ca53c
-ms.sourcegitcommit: 176ce86e2b440c079414fe99d4b0b9e89ccebb40
+ms.openlocfilehash: 74fc1b3dd6fddd91a27785adcab111a02d8ba088
+ms.sourcegitcommit: ba2175e394d0cb9f8ede9206aabb44b5b677fa0a
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/11/2018
-ms.locfileid: "25496561"
+ms.locfileid: "25496844"
 ---
 # <a name="learn-more-about-spoof-intelligence"></a>Obtenga más información sobre la inteligencia de suplantación de identidad
 
@@ -58,7 +58,7 @@ Puede revisar los remitentes que son suplantación de identidad su dominio o dom
 |**Parámetro**|**Descripción**|
 |:-----|:-----|
 |Sender  <br/> |También se denomina el remitente es true. Esto suele ser el dominio desde el que se origina el correo electrónico falso. Office 365 determina el dominio del puntero de registro DNS (PTR) de la dirección IP de envío que es la falsificación de la organización. Si no se encuentra ningún dominio, el informe muestra la dirección IP del remitente en su lugar.  <br/> |
-|Usuario suplantado  <br/> |La cuenta de usuario que se va a suplantar por el remitente.  <br/> Ficha de **interno** . Este campo contiene una dirección de correo electrónico única, o si el remitente es la falsificación de varias cuentas de usuario, que contiene **más de uno**.<br/> Ficha **externo** . Dominios externos sólo contienen un dominio envío y no contienen una dirección de correo electrónico completa.<br/> > [!TIP]> **Para los administradores avanzados.** El usuario suplantado es el campo de dirección (5322.From) que también es la dirección que se muestra como la dirección de origen por el cliente de correo. En ocasiones, esto se denomina la dirección header.from. Esta validez de esta dirección no está protegida por SPF.           |
+|Usuario suplantado  <br/> |La cuenta de usuario que se va a suplantar por el remitente.  <br/> Ficha de **interno** . Este campo contiene una dirección de correo electrónico única, o si el remitente es la falsificación de varias cuentas de usuario, que contiene **más de uno**.<br/> Ficha **externo** . Dominios externos sólo contienen un dominio envío y no contienen una dirección de correo electrónico completa.<br/> ¡Sugerencia de **! Para los administradores avanzados.** El usuario suplantado es el campo de dirección (5322.From) que también es la dirección que se muestra como la dirección de origen por el cliente de correo. En ocasiones, esto se denomina la dirección header.from. No se comprueba la validez de esta dirección por SPF.           |
 |Número de mensajes  <br/> |El número de mensajes de correo enviados por el remitente a su organización en nombre del remitente falsificada identificado o los remitentes dentro de los últimos 30 días.  <br/> |
 |Número de quejas del usuario  <br/> |Reclamaciones presentadas por los usuarios contra este remitente por los usuarios dentro de los últimos 30 días. Quejas normalmente están en el formulario de envíos no deseados a Microsoft.  <br/> |
 |Resultado de la autenticación  <br/> |Este valor es **pasa** si el remitente pasado a remitente de Exchange Online Protection (EOP) comprobaciones de autenticación, como SPF o DKIM, **no se pudo** si el remitente no pudo comprobaciones de autenticación de remitente de elevación de privilegios o **desconocido** si no es el resultado de estos controles conocidos.  <br/> |
@@ -73,31 +73,31 @@ Puede revisar los remitentes que son suplantación de identidad su dominio o dom
     
 2. Inicie sesión con su cuenta de trabajo o escuela en Office 365. La cuenta debe tener credenciales de administrador de la organización de Office 365.
     
-3. En la seguridad &amp; centro de cumplimiento, expanda **Administración de amenaza** \> **Directiva** \> **contra correo no deseado**.
+3. En la seguridad &amp; centro de cumplimiento, expanda **Administración de amenaza** \> **Directiva** \> **contra correo no deseado**.  
   
-![](media/0a098e68-5ecf-40d7-984f-d15fcc1f958d.jpg)
+    ![Captura de pantalla que muestra el acceso a la página contra correo no deseado](media/0a098e68-5ecf-40d7-984f-d15fcc1f958d.jpg)
   
-4. En la página de **configuración de correo no deseado** en el panel derecho, seleccione la ficha **personalizado** y, a continuación, desplácese hacia abajo y expanda **Directiva de suplantación de la inteligencia**. 
+4. En la página de **configuración de correo no deseado** en el panel derecho, seleccione la ficha **personalizado** y, a continuación, desplácese hacia abajo y expanda **Directiva de suplantación de la inteligencia**.  
   
-![](media/a5112100-0b37-460f-932d-5b2f98157871.jpg)
+    ![Captura de pantalla que muestra el acceso a la configuración personalizada contra correo no deseada](media/a5112100-0b37-460f-932d-5b2f98157871.jpg)
   
-5. Para ver la lista de remitentes de su dominio de suplantación de identidad, elija **nueva remitentes de revisión** y seleccione el ** dominios Your ** ficha. 
+5. Para ver la lista de remitentes de su dominio de suplantación de identidad, elija **nueva remitentes de revisión** y seleccione la ficha de **Los dominios** . 
     
-    Si ya ha revisado los remitentes y desea cambiar algunas de las opciones anteriores, puede elegir **Mostrarme remitentes contenida** en su lugar. En cualquier caso, aparece el siguiente panel. 
+    Si ya ha revisado los remitentes y desea cambiar algunas de las opciones anteriores, puede elegir **Mostrarme remitentes contenida** en su lugar. En cualquier caso, aparece el siguiente panel.  
   
-![](media/c0c062fd-f4a4-4d78-96f7-2c22009052bb.jpg)
+    ![Captura de pantalla que muestra el acceso a la ficha remitentes falso](media/c0c062fd-f4a4-4d78-96f7-2c22009052bb.jpg)
   
-Cada usuario suplantado se muestra en una fila independiente, por lo que puede elegir si desea permitir o bloquear al remitente de suplantación de identidad cada usuario individualmente.
+    Cada usuario suplantado se muestra en una fila independiente, por lo que puede elegir si desea permitir o bloquear al remitente de suplantación de identidad cada usuario individualmente.  
   
-Para agregar un remitente a la lista Permitir de un usuario, seleccione **Sí** en la columna **permitido para suplantar** . Para agregar un remitente a la lista de bloqueo para un usuario, elija **No**.
+    Para agregar un remitente a la lista Permitir de un usuario, seleccione **Sí** en la columna **permitido para suplantar** . Para agregar un remitente a la lista de bloqueo para un usuario, elija **No**.
+     
+    Para establecer la directiva para dominios no es el propietario, seleccione la ficha **Dominios externos** cambiar cualquier remitente en **Sí** en la columna **permitido a Falso** para permitir que el remitente a enviar correo electrónico sin autenticar en su organización. Como alternativa, si piensa que Office 365 ha realizado un error en lo que permite que el remitente para enviar correo electrónico simulado, cambie la columna **permitido para suplantar** a **No**.  
   
-Para establecer la directiva para dominios no es el propietario, seleccione la ficha **Dominios externos** cambiar cualquier remitente en **Sí** en la columna **permitido a Falso** para permitir que el remitente a enviar correo electrónico sin autenticar en su organización. Como alternativa, si piensa que Office 365 ha realizado un error en lo que permite que el remitente para enviar correo electrónico simulado, cambie la columna **permitido para suplantar** a **No**. 
-  
-![](media/5dbef9cf-103f-49cd-9638-4b0083d6baa7.jpg)
+    ![Captura de pantalla que muestra si se permite un remitente suplantar](media/5dbef9cf-103f-49cd-9638-4b0083d6baa7.jpg)
   
 6. Elija **Guardar** para guardar los cambios. 
 
-Si usted es un cliente E5 o ATP, también puede administrar los remitentes que son de su dominio a través de la [Suplantación de la inteligencia Insight](https://docs.microsoft.com/en-us/office365/securitycompliance/walkthrough-spoof-intelligence-insight) suplantación
+Si tiene una suscripción a Office 365 Enterprise E5 o han adquirido por separado avanzada de protección contra amenazas como un complemento, también puede administrar los remitentes que son de su dominio a través de la [Suplantación de la inteligencia Insight](https://docs.microsoft.com/en-us/office365/securitycompliance/walkthrough-spoof-intelligence-insight)suplantación.
     
 ## <a name="configuring-the-anti-spoofing-policy"></a>Configuración de la directiva contra la suplantación
 <a name="Managespooflist"> </a>
@@ -122,15 +122,15 @@ Aunque la directiva contra la suplantación aparece bajo la directiva contra sup
     
 5. En la página que aparece, en la fila de **suplantación** , elija **Editar**. 
     
-6. A continuación, configure las acciones llevar a cabo cuando se detecta un mensaje como suplantación entre dominios. El comportamiento predeterminado es mover el mensaje a la carpeta de correo electrónico no deseado del destinatario. La otra opción es enviar el mensaje a la cuarentena. Para obtener más información acerca de cómo administrar los mensajes que se envían a cuarentena, consulte [los mensajes de correo electrónico de cuarentena en Office 365](quarantine-email-messages.md).
+6. A continuación, configure las acciones llevar a cabo cuando se detecta un mensaje como suplantación entre dominios. El comportamiento predeterminado es mover el mensaje a la carpeta de correo electrónico no deseado del destinatario. La otra opción es enviar el mensaje a la cuarentena. Para obtener más información acerca de cómo administrar los mensajes que se envían a cuarentena, consulte [los mensajes de correo electrónico de cuarentena en Office 365](quarantine-email-messages.md).  
   
-![](media/7a868dff-2c4b-46b9-88ca-f2d523ca2307.jpg)(
+    ![Captura de pantalla que muestra la directiva contra la suplantación Editar opciones](media/7a868dff-2c4b-46b9-88ca-f2d523ca2307.jpg)
   
-7. Elija si desea habilitar o deshabilitar las sugerencias de seguridad contra la suplantación. Office 365, recomienda habilitar la sugerencia de seguridad **se produce un error en la autenticación** para advertir a los usuarios cuando se evaluará su interacción con un remitente no se pudo comprobar cuya identidad. Office 365 también recomienda habilitar la sugerencia de seguridad para una **autenticación de paso temporalmente** de grupos más pequeños de usuarios, debido a que esta sugerencia de seguridad puede generar una gran cantidad de advertencias si el usuario recibe un correo electrónico de muchos orígenes legítimos, pero sin autenticar. 
+7. Elija si desea habilitar o deshabilitar las sugerencias de seguridad contra la suplantación. Office 365, recomienda habilitar la sugerencia de seguridad **se produce un error en la autenticación** para advertir a los usuarios cuando se evaluará su interacción con un remitente no se pudo comprobar cuya identidad. Office 365 también recomienda habilitar la sugerencia de seguridad para una **autenticación de paso temporalmente** de grupos más pequeños de usuarios, debido a que esta sugerencia de seguridad puede generar una gran cantidad de advertencias si el usuario recibe un correo electrónico de muchos orígenes legítimos, pero sin autenticar.  
   
-![](media/1ed675c0-48c2-4587-a957-60eb68dc9628.jpg)
-  
-Asegúrese de su elección y, a continuación, seleccione **Guardar**. 
+    ![Captura de pantalla que muestra opciones de punta de seguridad contra la suplantación](media/1ed675c0-48c2-4587-a957-60eb68dc9628.jpg)
+
+8. Realice su elección y, a continuación, elija **Guardar**. 
     
 ## <a name="other-ways-to-manage-spoofing-and-phishing-with-office-365"></a>Otras maneras de administrar la suplantación de identidad y suplantación de identidad con Office 365
 <a name="Managespooflist"> </a>
@@ -139,14 +139,14 @@ Ser diligente acerca de la protección de suplantación de identidad y suplantac
   
 - Consulte el informe de correo de suplantación de la protección en línea de Exchange como parte de la rutina. Puede usar este informe a menudo para ver y ayudar a administrar los remitentes falsos. Para obtener información, vea **informe de correo de suplantación** en los [informes de protección de correo de uso en Office 365 para ver datos sobre malware, correo no deseado y detecciones de regla](https://technet.microsoft.com/library/dn500744%28v=exchg.150%29.aspx).
     
-- Para los administradores de Office 365 más avanzados:
+Para los administradores de Office 365 más avanzados, también puede completar estas comprobaciones:
     
-  - Revise la configuración del marco de directivas de remitentes (SPF). Para obtener una introducción rápida a SPF y para obtenerlo configurado rápidamente, vea [Set up SPF en Office 365 para ayudar a evitar la suplantación de identidad](https://technet.microsoft.com/library/dn789058%28v=exchg.150%29.aspx). Para obtener una descripción más detallada de cómo Office 365 usa SPF, o para las implementaciones de solución de problemas o no estándar, como las implementaciones híbridas, empiece con [cómo Office 365 usa el marco de directivas de remitentes (SPF) para evitar la suplantación de identidad](https://technet.microsoft.com/library/mt712724%28v=exchg.150%29.aspx).
+- Revise la configuración del marco de directivas de remitentes (SPF). Para obtener una introducción rápida a SPF y para obtenerlo configurado rápidamente, vea [Set up SPF en Office 365 para ayudar a evitar la suplantación de identidad](https://technet.microsoft.com/library/dn789058%28v=exchg.150%29.aspx). Para obtener una descripción más detallada de cómo Office 365 usa SPF, o para las implementaciones de solución de problemas o no estándar, como las implementaciones híbridas, empiece con [cómo Office 365 usa el marco de directivas de remitentes (SPF) para evitar la suplantación de identidad](https://technet.microsoft.com/library/mt712724%28v=exchg.150%29.aspx).
     
-  - Revise la configuración de correo identificado por claves de dominio (DKIM). Debe usar DKIM además de SPF y DMARC para ayudar a evitar suplantadores de la identidad de envío de mensajes que parecen provenir de su dominio. DKIM le permite agregar una firma digital a los mensajes de correo electrónico en el encabezado del mensaje. Para obtener información, vea [Uso de DKIM para validar el correo electrónico saliente enviado desde su dominio en Office 365](https://technet.microsoft.com/library/mt695945%28v=exchg.150%29.aspx).
+- Revise la configuración de correo identificado por claves de dominio (DKIM). Debe usar DKIM además de SPF y DMARC para ayudar a evitar suplantadores de la identidad de envío de mensajes que parecen provenir de su dominio. DKIM le permite agregar una firma digital a los mensajes de correo electrónico en el encabezado del mensaje. Para obtener información, vea [Uso de DKIM para validar el correo electrónico saliente enviado desde su dominio en Office 365](https://technet.microsoft.com/library/mt695945%28v=exchg.150%29.aspx).
     
-  - Revise la configuración de autenticación de mensajes, informes y conformidad (DMARC) basada en dominio. Implementación de DMARC con SPF y DKIM proporciona protección adicional contra el correo electrónico de suplantación de identidad y suplantación de identidad. Ayuda DMARC sistemas de correo de recepción determinan qué hacer con los mensajes enviado desde su dominio que comprueba fail SPF o DKIM. Para obtener información, vea [Usar DMARC para validar el correo electrónico en Office 365](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx).
+- Revise la configuración de autenticación de mensajes, informes y conformidad (DMARC) basada en dominio. Implementación de DMARC con SPF y DKIM proporciona protección adicional contra el correo electrónico de suplantación de identidad y suplantación de identidad. Ayuda DMARC sistemas de correo de recepción determinan qué hacer con los mensajes enviado desde su dominio que comprueba fail SPF o DKIM. Para obtener información, vea [Usar DMARC para validar el correo electrónico en Office 365](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx).
     
-  - Use el cmdlet [Get-PhishFilterPolicy](https://technet.microsoft.com/en-us/library/mt735158%28v=exchg.160%29.aspx) Windows PowerShell para recopilar datos detallados sobre remitentes falsos, generar permitir y bloquear las listas y le ayudará a determinar cómo generar registros de SPF, DKIM y DMARC DNS más integrales sin necesidad de su correo electrónico legítimo obtener capturados en filtros de spam externo. Para obtener más información, vea [cómo funciona la protección de antispoofing en Office 365](https://blogs.msdn.microsoft.com/tzink/2016/02/23/how-antispoofing-protection-works-in-office-365/).
+- Use el cmdlet [Get-PhishFilterPolicy](https://technet.microsoft.com/en-us/library/mt735158%28v=exchg.160%29.aspx) Windows PowerShell para recopilar datos detallados sobre remitentes falsos, generar permitir y bloquear las listas y le ayudará a determinar cómo generar registros de SPF, DKIM y DMARC DNS más integrales sin necesidad de su correo electrónico legítimo obtener capturados en filtros de spam externo. Para obtener más información, vea [cómo funciona la protección de antispoofing en Office 365](https://blogs.msdn.microsoft.com/tzink/2016/02/23/how-antispoofing-protection-works-in-office-365/).
     
 

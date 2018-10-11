@@ -3,7 +3,7 @@ title: Configurar su inquilino de Office 365 para aumentar la seguridad
 ms.author: bcarter
 author: BrendaCarter
 manager: laurawi
-ms.date: 6/27/2018
+ms.date: 10/11/2018
 ms.audience: ITPro
 ms.topic: get-started-article
 ms.service: o365-administration
@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 description: Le guiará a través de la configuración recomendada para la configuración de todo el inquilino que afectan a la seguridad de su entorno de Office 365. Las necesidades de seguridad podrían requerir más o menos seguridad. Use estas recomendaciones como punto de partida.
-ms.openlocfilehash: e81c3e18bccc9ccaab7c6f018c6f40b5ea796e14
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: de3a1d19e09144105f9576b3a4eb8ed76eb08585
+ms.sourcegitcommit: ba2175e394d0cb9f8ede9206aabb44b5b677fa0a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23013874"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "25496874"
 ---
 # <a name="configure-your-office-365-tenant-for-increased-security"></a>Configurar su inquilino de Office 365 para aumentar la seguridad
 
@@ -32,7 +32,7 @@ La seguridad de Office 365 &amp; centro de cumplimiento incluye capacidades que 
   
 |Área ***|Incluye una directiva predeterminada ***|Recomendación ***|
 |:-----|:-----|:-----|
-|**ATP contra suplantación de identidad** <br/> |No  <br/> | Si tiene un dominio personalizado, cree una directiva contra suplantación de identidad para proteger las cuentas de correo electrónico de los usuarios más valiosos, como su director general y para proteger su dominio. Revisión de [establecer una directiva de ATP contra suplantación de identidad](set-up-atp-anti-phishing-policies.md) y crear una directiva con el ejemplo como guía: "ejemplo: directiva contra suplantación de identidad para proteger un usuario y un dominio."|
+|**Contra suplantación de identidad** <br/> |Sí  <br/> | Si tiene un dominio personalizado, cree una directiva contra suplantación de identidad para proteger las cuentas de correo electrónico de los usuarios más valiosos, como su director general y para proteger su dominio. Revise la [configuración de una directiva contra suplantación de identidad](set-up-anti-phishing-policies.md) y crear una directiva con el ejemplo como guía: "ejemplo: directiva contra suplantación de identidad para proteger un usuario y un dominio."|
 |**Motor de Anti-Malware** <br/> |Sí  <br/> | Editar la directiva predeterminada:  <br/> • Comunes de datos adjuntos de tipos de filtro: seleccione en  <br/><br>  También puede crear directivas de filtro de malware personalizada y aplicarla a determinados usuarios, grupos o dominios en su organización.  <br/> <br> Más información:  <br/> • [Protección contra malware](https://technet.microsoft.com/en-us/library/jj200669%28v=exchg.150%29.aspx) <br/> • [Configure anti-malware policies](https://technet.microsoft.com/en-us/library/jj200745%28v=exchg.150%29.aspx) <br/> |
 |**Datos adjuntos seguros ATP** <br/> |No  <br/> | En la página principal para los datos adjuntos seguros, proteger los archivos en SharePoint, OneDrive y Microsoft Teams al activar esta casilla de verificación:  <br/>  • Activar ATP para SharePoint, OneDrive y equipos de Microsoft  <br/> <br> Agregar una nueva directiva de datos adjuntos seguros con estas opciones:  <br/>  • Bloque: bloquear los correos electrónicos actuales y futuros y los datos adjuntos con malware detectado (elija esta opción)  <br/>  • Habilitar redireccionamiento: (Active esta casilla de verificación y escriba una dirección de correo electrónico, como una cuenta de administrador o cuarentena)  <br/>  • Se aplican a la selección anterior si se agota el tiempo de espera de análisis para datos adjuntos de malware o se produce error (esta casilla de verificación)  <br/>  • Aplicadas a: el dominio de destinatario es (seleccione su dominio)  <br/>  <br>Obtener más información: [configurar las directivas de los datos adjuntos seguros ATP de Office 365](set-up-atp-safe-attachments-policies.md) <br/> |
 |**Vínculos de ATP seguras** <br/> |Sí  <br/> | Agregue esta configuración para la directiva predeterminada para toda la organización:  <br/> • Utilizar vínculos seguros en: Office 365 ProPlus, Office para iOS y Android (Seleccione esta opción).  <br/> <br>Directiva recomendada para destinatarios concretos:  <br/>  • Las direcciones URL se comprobarán con una lista de vínculos malintencionados conocidos cuando el usuario hace clic en el vínculo y se modificó (Seleccione esta opción).  <br/>  • Utilizar datos adjuntos seguros para examinar el contenido descargable (esta casilla de verificación).  <br/>  • Aplicadas a: el dominio de destinatario es (seleccione su dominio).  <br/> <br> Obtener más información: [vínculos seguros ATP de Office 365](atp-safe-links.md).  <br/> |

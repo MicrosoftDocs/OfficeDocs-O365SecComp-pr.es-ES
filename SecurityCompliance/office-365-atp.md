@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 description: Protección contra amenazas avanzadas de Office 365 incluye inteligencia de suplantación, vínculos seguros, los datos adjuntos seguros y capacidades avanzadas de contra suplantación de identidad. Opciones avanzadas de protección contra amenazas también se ha ampliado a los archivos en SharePoint Online, OneDrive para la empresa y Microsoft Teams.
-ms.openlocfilehash: fed816ec8cd0e3e7a6b5118fde35d81647b94f02
-ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
+ms.openlocfilehash: e3b282118b5fde0374bb9f052e7efe8a13e2fd70
+ms.sourcegitcommit: ba2175e394d0cb9f8ede9206aabb44b5b677fa0a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25454357"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "25496864"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Protección contra amenazas avanzada de Office 365
 
@@ -51,7 +51,7 @@ Una vez que haya ATP, el siguiente paso es el equipo de seguridad definir las di
   
 ## <a name="define-policies-for-atp"></a>Definir directivas de ATP
 
-- **[Configurar directivas de ATP contra suplantación de identidad en Office 365](set-up-atp-anti-phishing-policies.md)** incluyendo ataques de suplantación en protección contra los intrusos que envían los mensajes de correo electrónico que parecen proceder de personas de confianza o dominios 
+- **[Configurar directivas de ATP contra suplantación de identidad en Office 365](set-up-anti-phishing-policies.md)** incluyendo ataques de suplantación en protección contra los intrusos que envían los mensajes de correo electrónico que parecen proceder de personas de confianza o dominios 
 
 - **[Configurar directivas de vínculos seguros de ATP en Office 365](set-up-atp-safe-links-policies.md)** incluidos [lista personalizada de direcciones URL bloqueado](set-up-a-custom-blocked-urls-list-wtih-atp.md) y la [lista de direcciones URL personalizada "No reescritura"](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md) de su organización
     
@@ -69,7 +69,7 @@ Una vez sus directivas de ATP, están disponibles para mostrar cómo funciona el
     
 3. Si es necesario, realizar ajustes en las directivas de seguridad. Vea los siguientes recursos:
 
-  - [Directivas de ATP contra suplantación de identidad en Office 365](set-up-atp-anti-phishing-policies.md)
+  - [Directivas de ATP contra suplantación de identidad en Office 365](set-up-anti-phishing-policies.md)
     
   - [Directivas de vínculos seguros de ATP en Office 365](set-up-atp-safe-links-policies.md)
     

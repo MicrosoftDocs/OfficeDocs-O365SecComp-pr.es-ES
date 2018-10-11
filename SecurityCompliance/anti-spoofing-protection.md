@@ -3,7 +3,7 @@ title: Protección contra suplantación de identidad en Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 7/2/2018
+ms.date: 10/11/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: d24bb387-c65d-486e-93e7-06a4f1a436c0
 description: Este artículo describe cómo Office 365 mitiga frente a ataques de suplantación de identidad que usa falsificado dominios de remitente, es decir, los dominios que están suplantados. Para ello, mediante el análisis de los mensajes y bloqueo de las que pueden ser autenticados neithe mediante el uso de métodos de autenticación de correo electrónico estándar, ni otras técnicas de reputación del remitente. Este cambio se que se implementa para reducir el número de ataques de suplantación de identidad se exponen las organizaciones en Office 365 a.
-ms.openlocfilehash: bbcfbcdf32c87e070f10c9478a7c5978e909f009
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 37eddfcad9bc5e412f62dd857178eafa8cac9355
+ms.sourcegitcommit: ba2175e394d0cb9f8ede9206aabb44b5b677fa0a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22559225"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "25496904"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Protección contra suplantación de identidad en Office 365
 
@@ -25,7 +25,7 @@ Este artículo describe cómo Office 365 mitiga frente a ataques de suplantació
   
 En este artículo también se describe por qué se está realizando este cambio, cómo pueden preparar los clientes para que este cambio, cómo ver los mensajes que se verán afectados, cómo informar sobre los mensajes, cómo mitigar falsos positivos, así como cómo deben preparar los remitentes a Microsoft para esto cambiar.
   
-La tecnología de Microsoft contra la suplantación se implementa inicialmente en su protección de amenaza avanzada de Office 365 (ATP) y los clientes E5. Sin embargo, debido a la forma en que todos sus filtros de información sobre cada uno de los otros, incluso los usuarios de Outlook.com y los clientes que no sean ATP pueden también verse afectados.
+La tecnología de Microsoft contra la suplantación inicialmente se implementó en sus organizaciones que tenían una suscripción a Office 365 Enterprise E5 o habían comprado el complemento de protección de amenaza avanzada de Office 365 (ATP) para su suscripción. A partir de octubre de 2018, hemos ampliado la protección para las organizaciones que tienen así como Exchange Online Protection (EOP). Además, debido a la forma en que todos nuestros filtros de información sobre cada uno de los otros, Outlook.com a los usuarios pueden verse afectados.
   
 ## <a name="how-spoofing-is-used-in-phishing-attacks"></a>Cómo se utiliza la suplantación de identidad en los ataques de suplantación de identidad
 
@@ -174,7 +174,7 @@ Authentication-Results: spf=none (sender IP is 1.2.3.4)
 From: sender @ example.com
 To: receiver @ contoso.com
 ```
-Después de contra la suplantación, si es usted un cliente avanzado de protección contra amenazas o E5, se mostrará el valor de compauth (los clientes que no sean de ATP y que no sean E5 no se ven afectados):
+Después de contra la suplantación, si tiene Office 365 Enterprise E5, elevación de privilegios o ATP, se mostrará el valor de compauth:
   
 ```
 Authentication-Results: spf=none (sender IP is 1.2.3.4)
@@ -408,27 +408,27 @@ Esta característica está actualmente en desarrollo. Tal y como se definen más
   
 ### <a name="understanding-how-spam-phishing-and-advanced-phishing-detections-are-combined"></a>Comprender cómo contra correo no deseado, suplantación de identidad y suplantación de identidad avanzada se combinan las detecciones
 
-Los clientes de Exchange Online - ATP y que no sean ATP - son capaces de especificar las acciones que se realizarán cuando el servicio identifica los mensajes como malware, correo no deseado, spam de alta confianza, suplantación de identidad y masiva. Sin embargo, con la introducción de nuevas directivas contra suplantación de identidad para los clientes de ATP y el hecho de que un mensaje puede alcanzado a varios tipos de detección (por ejemplo, malware, suplantación de identidad y suplantación de usuario), puede haber confusión acerca de qué se aplica la directiva. 
+Las organizaciones que utilizan Exchange Online, con o sin ATP, pueden especificar qué acciones llevar a cabo cuando el servicio identifica los mensajes como malware, correo no deseado, spam de alta confianza, suplantación de identidad y masiva. Con las directivas de ATP Anti-phishing para los clientes de ATP y las directivas contra suplantación de identidad para los clientes de EOP y el hecho de que un mensaje puede alcanzado a varios tipos de detección (por ejemplo, malware, suplantación de identidad y suplantación de usuario), que es posible que algunos confusión con respecto a que se aplica la directiva. 
   
 En general, la directiva aplicada a un mensaje se identifica en el encabezado X-Forefront-Antispam-Report en la propiedad CAT (categoría). 
   
 |**Priority**|**Directiva**|**Categoría**|**¿Donde administradas?**|**Se aplica a**|
 |:-----|:-----|:-----|:-----|:-----|
-|1  <br/> |Malware  <br/> |MALW  <br/> |[Directiva de malware](https://technet.microsoft.com/en-us/library/jj200745%28v=exchg.150%29.aspx) <br/> |Todos los clientes  <br/> |
-|2  <br/> |Suplantación de identidad  <br/> |PHSH  <br/> |[Directiva de filtro de contenido hospedado](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Todos los clientes  <br/> |
-|3  <br/> |Correo no deseado de alta confianza  <br/> |HSPM  <br/> |[Directiva de filtro de contenido hospedado](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Todos los clientes  <br/> |
-|4  <br/> |Suplantación de identidad  <br/> |SUPLANTACIÓN DE LA  <br/> |[Directiva contra suplantación de identidad](https://go.microsoft.com/fwlink/?linkid=864553), [inteligencia de suplantación](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf) <br/> |Sólo ATP  <br/> |
-|5  <br/> |Correo no deseado  <br/> |SPM  <br/> |[Directiva de filtro de contenido hospedado](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Todos los clientes  <br/> |
-|6  <br/> |Masiva  <br/> |MASIVA  <br/> |[Directiva de filtro de contenido hospedado](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Todos los clientes  <br/> |
-|7  <br/> |Suplantación de dominio  <br/> |DIMP  <br/> |[Directiva contra suplantación de identidad](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |Sólo ATP  <br/> |
-|8  <br/> |Suplantación de usuario  <br/> |UIMP  <br/> |[Directiva contra suplantación de identidad](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |Sólo ATP  <br/> |
+|1   <br/> |Malware  <br/> |MALW  <br/> |[Directiva de malware](https://technet.microsoft.com/en-us/library/jj200745%28v=exchg.150%29.aspx) <br/> |Todas las organizaciones  <br/> |
+|2   <br/> |Suplantación de identidad  <br/> |PHSH  <br/> |[Directiva de filtro de contenido hospedado](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Todas las organizaciones  <br/> |
+|3   <br/> |Correo no deseado de alta confianza  <br/> |HSPM  <br/> |[Directiva de filtro de contenido hospedado](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Todas las organizaciones  <br/> |
+|4   <br/> |Suplantación de identidad  <br/> |SUPLANTACIÓN DE LA  <br/> |[Directiva contra suplantación de identidad](https://go.microsoft.com/fwlink/?linkid=864553), [inteligencia de suplantación](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf) <br/> |Todas las organizaciones  <br/> |
+|5   <br/> |Correo no deseado  <br/> |SPM  <br/> |[Directiva de filtro de contenido hospedado](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Todas las organizaciones  <br/> |
+|6   <br/> |Masiva  <br/> |MASIVA  <br/> |[Directiva de filtro de contenido hospedado](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Todas las organizaciones  <br/> |
+|7   <br/> |Suplantación de dominio  <br/> |DIMP  <br/> |[Directiva contra suplantación de identidad](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |Solo para organizaciones con ATP  <br/> |
+|8   <br/> |Suplantación de usuario  <br/> |UIMP  <br/> |[Directiva contra suplantación de identidad](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |Solo para organizaciones con ATP <br/> |
    
 Si dispone de varias directivas de Anti-phishing diferentes, se aplicará el uno en la prioridad más alta. Por ejemplo, suponga que tiene dos directivas:
   
 |**Directiva**|**Priority**|**Suplantación de usuario o dominio**|**Contra la suplantación**|
 |:-----|:-----|:-----|:-----|
-|A  <br/> |1  <br/> |Activado  <br/> |Desactivado  <br/> |
-|B  <br/> |2  <br/> |Off  <br/> |Activado  <br/> |
+|A  <br/> |1   <br/> |Activado  <br/> |Desactivado  <br/> |
+|B  <br/> |2   <br/> |Off  <br/> |Activado  <br/> |
    
 Si un mensaje se presenta en y se identifica como suplantación de suplantación de identidad y de usuario, el mismo conjunto de usuarios se limita a la directiva de A y B de la directiva y, a continuación, el mensaje se trata como una dirección falsa pero no se aplica ninguna acción con respecto a la suplantación de identidad está desactivado , y SUPLANTACIÓN de la que se ejecuta en una prioridad superior (4) suplantación de usuario (8).
   
@@ -683,7 +683,7 @@ En primer lugar, Microsoft propio adoptado esta característica varias semanas a
   
 ### <a name="will-microsoft-bring-this-feature-to-outlookcom-and-non-advanced-threat-protection-customers-of-office-365"></a>¿Microsoft pondrá esta característica a Outlook.com y que no sean - avanzada protección contra amenazas de los clientes de Office 365?
 
-Protección contra la suplantación se inicialmente implementarán a los clientes de ATP/E5 y puede liberarse en el futuro a los otros usuarios. Sin embargo, si lo hace, es posible que algunas funciones que no se aplican como informes y custom anula.
+La tecnología de Microsoft contra la suplantación inicialmente se implementó en sus organizaciones que tenían una suscripción a Office 365 Enterprise E5 o habían comprado el complemento de protección de amenaza avanzada de Office 365 (ATP) para su suscripción. A partir de octubre de 2018, hemos ampliado la protección para las organizaciones que tienen así como Exchange Online Protection (EOP). En el futuro, nos podemos release para Outlook.com. Sin embargo, en ese caso, es posible que algunas funciones que no se aplican como informes y custom anula.
   
 ### <a name="how-can-i-report-spam-or-non-spam-messages-back-to-microsoft"></a>¿Cómo puedo informar los mensajes de correo no deseado o que no sean de correo no deseado volver a Microsoft?
 
