@@ -12,17 +12,17 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 978c3173-3578-4286-aaf4-8a10951978bf
-description: Usar suplantación de la inteligencia de la seguridad &amp; centro de cumplimiento en la página de configuración contra correo no deseado para revisar todos los remitentes que los dominios que forman parte de la organización de suplantación de identidad, o de dominios externos de suplantación de identidad. Suplantación de la inteligencia está disponible como parte de Office 365 Enterprise E5 o por separado como parte de la protección contra amenazas de avanzada.
-ms.openlocfilehash: a6e5f2daeab20b86354c4bf0d8d8abe0907095d1
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: Usar suplantación de la inteligencia de la seguridad &amp; centro de cumplimiento en la página de configuración contra correo no deseado para revisar todos los remitentes que los dominios que forman parte de la organización de suplantación de identidad, o de dominios externos de suplantación de identidad. Suplantación de la inteligencia está disponible como parte de Office 365 Enterprise E5 o por separado como parte de la protección contra amenazas de avanzada y Exchange Online Protection.
+ms.openlocfilehash: 3be606c05dde4a13d3a6a4a43ce927cf4f0ca53c
+ms.sourcegitcommit: 176ce86e2b440c079414fe99d4b0b9e89ccebb40
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22536279"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "25496561"
 ---
 # <a name="learn-more-about-spoof-intelligence"></a>Obtenga más información sobre la inteligencia de suplantación de identidad
 
-Usar suplantación de la inteligencia de la seguridad &amp; centro de cumplimiento en la **página de configuración contra correo no deseado** para revisar todos los remitentes que los dominios que forman parte de la organización de suplantación de identidad, o de dominios externos de suplantación de identidad. Suplantación de la inteligencia está disponible como parte de Office 365 Enterprise E5 o por separado como parte de la protección contra amenazas de avanzada. 
+Usar suplantación de la inteligencia de la seguridad &amp; centro de cumplimiento en la **página de configuración contra correo no deseado** para revisar todos los remitentes que los dominios que forman parte de la organización de suplantación de identidad, o de dominios externos de suplantación de identidad. Suplantación de la inteligencia está disponible como parte de Office 365 Enterprise E5 o por separado como parte de la protección de amenaza avanzada (ATP) y a partir de octubre, 2018 Exchange Online Protection (EOP). 
   
 ## <a name="what-types-of-email-spoofing-can-i-review-and-which-should-i-protect-against-with-spoof-intelligence"></a>¿Qué tipos de suplantación de identidad de correo electrónico se debe revisar y que debo proteger contra con inteligencia de suplantación?
 
@@ -46,7 +46,7 @@ Dominios externos con frecuencia envían correo electrónico simulado y muchos d
     
 Se necesita una forma para asegurarse de que el correo enviado por legítimos suplantadores de la identidad no centrarse en filtros de spam en Office 365 o sistemas de correo electrónico externa. Normalmente, Office 365 trata estos mensajes de correo electrónico como correo no deseado. Como un administrador de Office 365, tiene la capacidad para evitar que esto mediante la configuración de filtros de réplicas en la seguridad &amp; centro de cumplimiento. Si el propietario del dominio, puede configurar SPF, DKIM y DMARC para permitir estos remitentes.
   
-Por otro lado, malintencionados suplantadores de la identidad, los remitentes que son suplantación de su dominio o dominios externos, para enviar correo electrónico de correo no deseado o suplantación de identidad, necesitan se va a bloquear. Suplantación de identidad también es una manera común para los suplantadores de identidad obtener las credenciales de usuario. Office 365 tiene protección integrada simulado para ayudar a proteger la organización de los remitentes de estos mensajes de correo electrónico. Suplantación de la protección de dominios de la organización siempre está activada para todos los clientes de Office 365, y la protección de suplantación dominio externo está activada de forma predeterminada para los clientes de avanzada de protección contra amenazas. Para reforzar aún más esta protección, Díganos qué remitentes tienen autorización para imitar dominios de la organización y enviar correo electrónico en su nombre y, si todos los dominios externos tiene permiso para suplantar. Cualquier correo electrónico enviado desde un remitente que no autorice se tratará como correo no deseado o suplantación de identidad por Office 365. Mantenerse al tanto de los remitentes de su dominio de suplantación de identidad y nos ayudará a mejorar la suplantación de la inteligencia mediante el uso de la seguridad &amp; centro de cumplimiento.
+Por otro lado, malintencionados suplantadores de la identidad, los remitentes que son suplantación de su dominio o dominios externos, para enviar correo electrónico de correo no deseado o suplantación de identidad, necesitan se va a bloquear. Suplantación de identidad también es una manera común para los suplantadores de identidad obtener las credenciales de usuario. Office 365 tiene protección integrada simulado para ayudar a proteger la organización de los remitentes de estos mensajes de correo electrónico. Suplantación de la protección de dominios de la organización siempre está activada para todos los clientes de Office 365 y la protección de suplantación de la de dominio externo está activada de forma predeterminada para los clientes de protección contra amenazas de avanzada y a partir de octubre de 2018 EOP así como los clientes. Para reforzar aún más esta protección, Díganos qué remitentes tienen autorización para imitar dominios de la organización y enviar correo electrónico en su nombre y, si todos los dominios externos tiene permiso para suplantar. Cualquier correo electrónico enviado desde un remitente que no autorice se tratará como correo no deseado o suplantación de identidad por Office 365. Mantenerse al tanto de los remitentes de su dominio de suplantación de identidad y nos ayudará a mejorar la suplantación de la inteligencia mediante el uso de la seguridad &amp; centro de cumplimiento.
   
 ## <a name="managing-spoof-intelligence-in-the-security-amp-compliance-center"></a>Administración de suplantación de la inteligencia de la seguridad &amp; centro de cumplimiento
 <a name="Managespooflist"> </a>
@@ -96,17 +96,19 @@ Para establecer la directiva para dominios no es el propietario, seleccione la f
 ![](media/5dbef9cf-103f-49cd-9638-4b0083d6baa7.jpg)
   
 6. Elija **Guardar** para guardar los cambios. 
+
+Si usted es un cliente E5 o ATP, también puede administrar los remitentes que son de su dominio a través de la [Suplantación de la inteligencia Insight](https://docs.microsoft.com/en-us/office365/securitycompliance/walkthrough-spoof-intelligence-insight) suplantación
     
 ## <a name="configuring-the-anti-spoofing-policy"></a>Configuración de la directiva contra la suplantación
 <a name="Managespooflist"> </a>
 
 Además de permitir o bloquear a un remitente concreto de envío de correo electrónico simulado en su organización, también puede configurar estricto cómo desea que el filtro que se va, la acción que se realizará cuando se encuentra un mensaje de suplantación de identidad y si se deben habilitar sugerencias de seguridad para contra la suplantación.
   
-Protección contra la suplantación se aplica a correo electrónico de los remitentes de dominios que son externos a la organización de Office 365. Puede aplicar la directiva a los destinatarios cuyos buzones de correo se concede bajo licencia para Office 365 Enterprise E5 o avanzadas de protección contra amenazas. Administrar la directiva contra la suplantación junto con las demás opciones de ATP contra suplantación de identidad. Para obtener más información acerca de la configuración de ATP contra suplantación de identidad, vea [configurar las directivas contra suplantación de identidad de Office 365](https://support.office.com/article/set-up-office-365-atp-anti-phishing-policies-5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578?ui=en-US&amp;rs=en-US&amp;ad=US#phishpolicyoptions).
+Protección contra la suplantación se aplica a correo electrónico de los remitentes de dominios que son externos a la organización de Office 365. Puede aplicar la directiva a los destinatarios cuyos buzones de correo se concede bajo licencia para Office 365 Enterprise E5, protección avanzada de amenaza y a partir de octubre, así como los clientes de EOP de 2018. Administrar la directiva contra la suplantación junto con las demás opciones contra suplantación de identidad. Para obtener más información acerca de la configuración contra suplantación de identidad, vea [configurar las directivas contra suplantación de identidad de Office 365](https://support.office.com/article/set-up-office-365-atp-anti-phishing-policies-5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578?ui=en-US&amp;rs=en-US&amp;ad=US#phishpolicyoptions).
   
 Office 365 incluye la protección contra la suplantación predeterminada que siempre se ejecuta. Esta protección predeterminada no está visible en la seguridad &amp; centro de cumplimiento o se puede recuperar a través de los cmdlets de Windows PowerShell. No se puede modificar la protección contra la suplantación de forma predeterminada. En su lugar, puede configurar cómo estrictamente Office 365 aplica la protección contra la suplantación en cada directiva contra suplantación de identidad que cree. 
   
-Aunque la directiva contra la suplantación aparece bajo la directiva de ATP contra suplantación de identidad en la seguridad &amp; centro de cumplimiento, no heredan su comportamiento predeterminado de la suplantación de identidad existente en la configuración contra correo no deseado de la configuración. Si tiene una configuración en **contra correo no deseado** \> **suplantación de identidad** que se desea replicar para contra la suplantación, tendrá que crear una directiva contra suplantación de identidad, a continuación, modifique la parte de suplantación de la directiva contra suplantación de identidad para reflejar la configuración de suplantación como se describe en la sección siguiente, en lugar de aceptar la configuración predeterminada que se ejecutan en segundo plano. 
+Aunque la directiva contra la suplantación aparece bajo la directiva contra suplantación de identidad en la seguridad &amp; centro de cumplimiento, no heredan su comportamiento predeterminado de la suplantación de identidad existente en la configuración contra correo no deseado de la configuración. Si tiene una configuración en **contra correo no deseado** \> **suplantación de identidad** que se desea replicar para contra la suplantación, tendrá que crear una directiva contra suplantación de identidad, a continuación, modifique la parte de suplantación de la directiva contra suplantación de identidad para reflejar la configuración de suplantación como se describe en la sección siguiente, en lugar de aceptar la configuración predeterminada que se ejecutan en segundo plano. 
   
  **Para configurar la protección contra la suplantación dentro de una directiva contra suplantación de identidad mediante el uso de la seguridad &amp; centro de cumplimiento**
   
@@ -114,21 +116,17 @@ Aunque la directiva contra la suplantación aparece bajo la directiva de ATP con
     
 2. Inicie sesión con su cuenta de trabajo o escuela en Office 365. La cuenta debe tener credenciales de administrador de la organización de Office 365.
     
-3. En la seguridad &amp; centro de cumplimiento, expanda **Administración de amenaza** \> **Directiva** \> **ATP Anti-phishing**. 
+3. En la seguridad &amp; centro de cumplimiento, expanda **Administración de amenaza** \> **Directiva** \> **contra suplantación de identidad**. 
     
 4. En la página **contra suplantación de identidad** en el panel derecho, seleccione la directiva contra suplantación de identidad que desea configurar. 
     
 5. En la página que aparece, en la fila de **suplantación** , elija **Editar**. 
     
-6. En los **umbrales de suplantación** de la página, si se selecciona **predeterminado**, se entregarán todos los mensajes que de forma explícita o implícitamente superar la autenticación, es decir, se envía para el filtrado de correo electrónico normal. Si selecciona **estricta**, a continuación, los mensajes que superar la autenticación implícita con confianza media, también se denomina una autenticación compuesto de "pasada suave", ignorará todos modos y marcados como mensajes de correo electrónico de suplantación de identidad. La opción estricto permite es agresiva y generará falsos positivos. Asegúrese de su elección y, a continuación, seleccione **acciones**. 
+6. A continuación, configure las acciones llevar a cabo cuando se detecta un mensaje como suplantación entre dominios. El comportamiento predeterminado es mover el mensaje a la carpeta de correo electrónico no deseado del destinatario. La otra opción es enviar el mensaje a la cuarentena. Para obtener más información acerca de cómo administrar los mensajes que se envían a cuarentena, consulte [los mensajes de correo electrónico de cuarentena en Office 365](quarantine-email-messages.md).
   
-![](media/62327314-a65f-49b0-bf60-ab4775e0bc9e.jpg)
+![](media/7a868dff-2c4b-46b9-88ca-f2d523ca2307.jpg)(
   
-7. A continuación, configure las acciones llevar a cabo cuando se detecta un mensaje como suplantación entre dominios. El comportamiento predeterminado es mover el mensaje a la carpeta de correo electrónico no deseado del destinatario. La otra opción es enviar el mensaje a la cuarentena. Para obtener más información acerca de cómo administrar los mensajes que se envían a cuarentena, consulte [los mensajes de correo electrónico de cuarentena en Office 365](quarantine-email-messages.md).
-  
-![](media/7a868dff-2c4b-46b9-88ca-f2d523ca2307.jpg)
-  
-8. Elija si desea habilitar o deshabilitar las sugerencias de seguridad contra la suplantación. Office 365, recomienda habilitar la sugerencia de seguridad **se produce un error en la autenticación** para advertir a los usuarios cuando se evaluará su interacción con un remitente no se pudo comprobar cuya identidad. Office 365 también recomienda habilitar la sugerencia de seguridad para una **autenticación de paso temporalmente** de grupos más pequeños de usuarios, debido a que esta sugerencia de seguridad puede generar una gran cantidad de advertencias si el usuario recibe un correo electrónico de muchos orígenes legítimos, pero sin autenticar. 
+7. Elija si desea habilitar o deshabilitar las sugerencias de seguridad contra la suplantación. Office 365, recomienda habilitar la sugerencia de seguridad **se produce un error en la autenticación** para advertir a los usuarios cuando se evaluará su interacción con un remitente no se pudo comprobar cuya identidad. Office 365 también recomienda habilitar la sugerencia de seguridad para una **autenticación de paso temporalmente** de grupos más pequeños de usuarios, debido a que esta sugerencia de seguridad puede generar una gran cantidad de advertencias si el usuario recibe un correo electrónico de muchos orígenes legítimos, pero sin autenticar. 
   
 ![](media/1ed675c0-48c2-4587-a957-60eb68dc9628.jpg)
   
