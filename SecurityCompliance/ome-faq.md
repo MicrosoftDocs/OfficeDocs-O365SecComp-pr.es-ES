@@ -3,7 +3,7 @@ title: Preguntas más frecuentes sobre el cifrado de mensajes de Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 09/27/2018
+ms.date: 10/9/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: ¿Tiene una pregunta acerca de cómo funcionan las nuevas capacidades de protección de mensajes en Office 365? Compruebe si hay una respuesta aquí.
-ms.openlocfilehash: c580ef701f6ee98ea2fc71df792256b1792c73cd
-ms.sourcegitcommit: 411713004251ee62d29b550eabea04c08a87e41f
+ms.openlocfilehash: 63bea478e144f42cabc67f7075cd52199d954d9c
+ms.sourcegitcommit: d3f3e2eb9ef05ebef85d83935a2cb0f7690ee6fe
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "25341435"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "25495524"
 ---
 # <a name="office-365-message-encryption-faq"></a>Preguntas más frecuentes sobre el cifrado de mensajes de Office 365
 
@@ -89,7 +89,7 @@ No. Si se usa Exchange Online con el servicio de administración de derechos de 
   
 ## <a name="my-organization-has-an-exchange-hybrid-deployment-can-i-use-this-feature"></a>Mi organización tiene una implementación híbrida de Exchange. ¿Puedo usar esta característica?
 
-Los usuarios pueden enviar correo cifrado mediante reglas de flujo de correo de Exchange Online en local. Para ello, debe redirigir el correo electrónico a través de Exchange Online.
+Los usuarios pueden enviar correo cifrado mediante reglas de flujo de correo de Exchange Online en local. Para ello, debe redirigir el correo electrónico a través de Exchange Online. Para obtener más información, vea [parte 2: configurar el correo de flujo de su servidor de correo electrónico a Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-2-configure-mail-to-flow-from-your-email-server-to-office-365).
   
 ## <a name="what-email-client-do-i-need-to-use-in-order-to-create-an-ome-encrypted-message-what-applications-are-supported-for-sending-protected-messages"></a>¿Qué cliente de correo electrónico es necesario usar con el fin de crear un mensaje cifrado OME? ¿Qué aplicaciones son compatibles para el envío de mensajes protección?
 
@@ -119,7 +119,7 @@ Sí. Use reglas de flujo de correo en Exchange Online para cifrar automáticamen
   
 ## <a name="can-i-automatically-encrypt-messages-by-setting-up-policies-in-data-loss-prevention-dlp-through-the-security-amp-compliance-center"></a>¿Automáticamente cifrar mensajes mediante la configuración de directivas de prevención de pérdida de datos (DLP) a través de la seguridad &amp; centro de cumplimiento?
 
-Actualmente puede sólo configurar reglas de flujo de correo en Exchange Online. Cifrado no se admite actualmente en DLP a través de la seguridad &amp; centro de cumplimiento.
+¡Sí! Puede configurar reglas de flujo de correo en Exchange Online o mediante el uso de DLP en la seguridad &amp; centro de cumplimiento.
   
 ## <a name="can-i-open-encrypted-messages-sent-to-a-shared-mailbox"></a>¿Puedo abrir los mensajes cifrados enviados a un buzón compartido?
 
