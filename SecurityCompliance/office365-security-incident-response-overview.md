@@ -16,12 +16,12 @@ search.appverid:
 ms.custom: ''
 ms.assetid: ''
 description: Esta solución le indica qué los más comunes cyber-seguridad ataques podrían ser similar en Office 365 y cómo responder a ellos
-ms.openlocfilehash: 3b72b9bf8c68df2fcc1233b56ee33eaf45695bfe
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: d2caea8cc7ceecb18cd477b8a1ff12352d83c3df
+ms.sourcegitcommit: 87a3ca55b6e9cf7e9ccf73e64013dc78dd7660f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22536612"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "25494081"
 ---
 # <a name="office-365-security-incident-response"></a>Respuesta a incidentes de seguridad de Office 365
 
@@ -41,9 +41,14 @@ En esta serie de artículo le ayuda a entender la apariencia que podría tener u
 Vuelva a comprobar todos los meses tal y como se agregarán más artículos a través del tiempo.
 
 ## <a name="detect-and-remediate-articles"></a>Detectar y corregir los artículos
+
 - [Detectar y solucionar la concesión de consentimiento ilegal en Office 365](detect-and-remediate-illicit-consent-grants.md)
 - [Detectar y corregir las reglas de Outlook y ataques de inserciones de formularios personalizados en Office 365](detect-and-remediate-outlook-rules-forms-attack.md)
  
+## <a name="incident-response-articles"></a>Artículos de respuesta a incidentes
+
+- [Responder a una cuenta de correo electrónico en peligro en Office 365](responding-to-a-compromised-email-account.md)
+
 ## <a name="secure-office-365-like-a-cybersecurity-pro"></a>Seguro de Office 365 como una ciberseguridad pro
 Su suscripción de Office 365 incluye un conjunto eficaz de características de seguridad que puede utilizar para proteger los datos y los usuarios.  Usar el [Guía de seguridad de Office 365: principales prioridades para los primeros 30 días, 90 días y más allá de](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352) para implementar Microsoft procedimientos recomendado para proteger el inquilino de Office 365.
 - Tareas de llevar a cabo en los primeros 30 días.  Estos tienen un efecto inmediato y están bajo impacto para los usuarios.
