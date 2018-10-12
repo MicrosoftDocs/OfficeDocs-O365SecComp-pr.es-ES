@@ -16,12 +16,12 @@ search.appverid:
 - BCS160
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 description: Crear una directiva de archivado y eliminación en Office 365 que mueve automáticamente los elementos al buzón de archivo de un usuario.
-ms.openlocfilehash: 807488f9ec7088adccdf1fc111d67b9dab8e0a38
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 740164ee840a32aff20f5c2dc1b1ae433d95cfe5
+ms.sourcegitcommit: 448c5897e44448adfc82e3eaffb774c770c04815
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22536273"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "25522301"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-office-365-organization"></a>Configurar una directiva de eliminación y de archivo para los buzones de correo en la organización de Office 365
 
@@ -104,7 +104,7 @@ Para crear nuevas etiquetas de retención, debe usar el centro de administració
     
 2. En el panel de navegación izquierdo del centro de administración de Office 365, haga clic en **centros de administración**y, a continuación, haga clic en **Exchange**.
     
-    ![Captura de pantalla muestra que el centro de administración de Office 365 con la administración de centros de opción expandida y Exchange seleccionado.](media/47399df2-0bc4-42e2-b183-07750a46bc68.png)
+    ![Screenshot shows the Office 365 admin center with the Admin centers option expanded and Exchange selected.](media/47399df2-0bc4-42e2-b183-07750a46bc68.png)
   
 3. En el EAC, vaya a **administración de cumplimiento** \> **etiquetas de retención**
     
@@ -238,7 +238,7 @@ Cuando se crea un nuevo buzón de correo, se asigna una directiva de retención 
 ## <a name="optional-step-5-run-the-managed-folder-assistant-to-apply-the-new-settings"></a>(Opcional) Paso 5: Ejecutar el Asistente para carpeta administrada para aplicar la nueva configuración
 <a name="step3"> </a>
 
-Después de aplicar la nueva directiva de retención a buzones de correo en el paso 4, puede tardar hasta 7 días en Exchange Online para que la nueva configuración de retención que se aplicará a los buzones de correo. Esto es debido a que un proceso llama el Asistente para carpeta administrada buzones de procesos una vez cada siete días. En lugar de esperar el Asistente para carpeta administrada ejecutar, puede forzar a que esto ocurra mediante la ejecución de la el cmdlet **Start-ManagedFolderAssistant** en Exchange Online PowerShell. 
+Después de aplicar la nueva directiva de retención a buzones de correo en el paso 4, puede tardar hasta 7 días en Exchange Online para que la nueva configuración de retención que se aplicará a los buzones de correo. Esto es debido a que un proceso llama el Asistente para carpeta administrada buzones de procesos una vez cada siete días. En lugar de esperar el Asistente para carpeta administrada ejecutar, puede forzar a que esto ocurra ejecutando el cmdlet **Start-ManagedFolderAssistant** en Exchange Online PowerShell. 
   
  **¿Qué sucede cuando se ejecuta el Asistente para carpeta administrada?** Se aplica la configuración de la directiva de retención mediante la inspección de los elementos en el buzón de correo y determinar si están sujetos a retención. A continuación, marca elementos sujetos a retención con la etiqueta de retención correspondientes y, a continuación, realiza la acción de retención especificado en los elementos más allá de su antigüedad de retención. 
   

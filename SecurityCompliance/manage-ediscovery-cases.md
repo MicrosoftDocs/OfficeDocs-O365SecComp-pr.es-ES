@@ -3,19 +3,19 @@ title: Administrar casos de exhibición de documentos electrónicos en la seguri
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 7/2/2018
+ms.date: 10/12/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 9a00b9ea-33fd-4772-8ea6-9d3c65e829e6
 description: Usar la seguridad de Office 365 &amp; centro de cumplimiento para crear suspensiones de exhibición de documentos electrónicos y para obtener acceso y administrar casos de exhibición de documentos electrónicos en su organización.
-ms.openlocfilehash: cf7d821b9883caa98e867f4a38ee3caeddb2712b
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+ms.openlocfilehash: 604bdb5adff69911945c279fcb4fcd8a2e105632
+ms.sourcegitcommit: 448c5897e44448adfc82e3eaffb774c770c04815
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038333"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "25522311"
 ---
 # <a name="manage-ediscovery-cases-in-the-office-365-security-amp-compliance-center"></a>Administrar casos de exhibición de documentos electrónicos en la seguridad de Office 365 &amp; centro de cumplimiento
 
@@ -75,7 +75,7 @@ El primer paso es asignar los permisos adecuados relacionados con la exhibición
   
 1. Vaya a [https://protection.office.com](https://protection.office.com).
     
-2. Inicie sesión en Office 365 con su cuenta de trabajo o escuela.
+2. Inicie sesión en Office 365 con su cuenta profesional o educativa.
     
 3. En la seguridad &amp; centro de cumplimiento, haga clic en **permisos**y, a continuación, realice uno de los siguientes en función de la que desea asignar permisos de exhibición de documentos electrónicos.
     
@@ -87,7 +87,7 @@ El primer paso es asignar los permisos adecuados relacionados con la exhibición
     
 4. Una vez que haya agregado todos los usuarios, haga clic en **Listo**, haga clic en **Guardar** para guardar los cambios en el grupo de roles y, a continuación, haga clic en **Cerrar**.
     
-[Return to top](manage-ediscovery-cases.md#top)
+
   
 ## <a name="step-2-create-a-new-case"></a>Paso 2: Crear un nuevo caso
 <a name="step2_1"> </a>
@@ -96,7 +96,7 @@ El siguiente paso es crear un nuevo caso de exhibición de documentos electróni
   
 1. Vaya a [https://protection.office.com](https://protection.office.com).
     
-2. Inicie sesión en Office 365 con su cuenta de trabajo o escuela.
+2. Inicie sesión en Office 365 con su cuenta profesional o educativa.
     
 3. En la seguridad &amp; centro de cumplimiento, haga clic en **búsqueda &amp; investigación** \> **exhibición de documentos electrónicos**y, a continuación, haga clic en ![icono Agregar](media/ITPro-EAC-AddIcon.gif) **crear un caso**.
     
@@ -108,8 +108,6 @@ El siguiente paso es crear un nuevo caso de exhibición de documentos electróni
     
     > [!TIP]
     > Después de crear un nuevo caso, puede cambiar en cualquier momento. Haga clic en el nombre del caso en la página de **exhibición de documentos electrónicos** . En la página de emergente **administrar este caso** , cambiar el nombre mostrado en el cuadro en **nombre**y, a continuación, guardar el cambio. 
-  
-[Return to top](manage-ediscovery-cases.md#top)
   
 ## <a name="step-3-add-members-to-a-case"></a>Paso 3: Agregar a miembros a un caso
 <a name="step2a_1"> </a>
@@ -136,8 +134,6 @@ Después de crear un nuevo caso, el siguiente paso es agregar a miembros a las m
     En **este caso de administrar**, haga clic en **Guardar** para guardar la nueva lista de miembros de mayúsculas y minúsculas. 
     
 6. Haga clic en **Guardar** para guardar la nueva lista de miembros de mayúsculas y minúsculas. 
-    
-[Return to top](manage-ediscovery-cases.md#top)
   
 ## <a name="step-4-place-content-locations-on-hold"></a>Paso 4: Lugar ubicaciones de contenido en espera
 <a name="step3_1"> </a>
@@ -178,11 +174,10 @@ Para crear una suspensión para un caso de exhibición de documentos electrónic
   
 2. **Sitios** Haga clic en **Agregar**![icono Agregar](media/ITPro-EAC-AddIcon.gif) para especificar SharePoint y OneDrive para sitios profesionales para poner en espera. Escriba la dirección URL para cada sitio que desee poner en espera. También puede agregar la dirección URL del sitio de SharePoint para un grupo de Office 365 o un Microsoft Team. 
     
-<<<<<<< Vea HEAD el [administrar casos de exhibición de documentos electrónicos en la seguridad de Office 365 &amp; centro de cumplimiento](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da#moreinfo_1) sección para obtener sugerencias sobre la colocación de grupos de Office 365 y Microsoft Teams en espera. === Vea la sección [obtener más información](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da.aspx#moreinfo_1) para obtener sugerencias sobre la colocación de grupos de Office 365 y Microsoft Teams en espera. 
->>>>>>> conversión de deniseb
+    Vea la sección [obtener más información](https://support.office.com/article/edea80d6-20a7-40fb-b8c4-5e8c8395f6da.aspx#moreinfo_1) para obtener sugerencias sobre la colocación de grupos de Office 365 y Microsoft Teams en espera. 
     
     > [!NOTE]
-    > In the rare case that a person's user principal name (UPN) is changed, the URL for their OneDrive account will also be changed to incorporate the new UPN. If this happens, you'll have to modify the hold by adding the user's new OneDrive URL and removing the old one. 
+    > En el caso poco frecuente que se ha cambiado el nombre de entidad de seguridad de usuario (UPN) de una persona, también se cambiará la dirección URL de su cuenta de OneDrive para incorporar el UPN nuevo. En este caso, tendrá que modificar la suspensión mediante la adición OneDrive para la nueva dirección URL del usuario y eliminar la antigua. 
   
 3. **Carpetas públicas** Haga clic en **suspensión todas las carpetas públicas** para colocar todas las carpetas públicas en Exchange en línea de organización en suspensión. Tenga en cuenta que no se puede elegir carpetas públicas específicas para poner espera. Deje la opción **no mantenga todas las carpetas públicas** que se selecciona si no desea colocar una suspensión en las carpetas públicas. 
     
@@ -199,8 +194,6 @@ Para crear una suspensión para un caso de exhibición de documentos electrónic
 2. En **condiciones**, haga clic en **Agregar condición** para agregar una o varias condiciones para restringir la consulta de búsqueda para la suspensión. Cada condición agrega una cláusula a la consulta de búsqueda de palabras clave que se crean y ejecutan cuando se crea la suspensión. Por ejemplo, se puede especificar un intervalo de fechas para que los documentos de correo electrónico o un sitio que se crearon en la fecha que se iban se colocan en espera. Una condición lógicamente está conectada a la consulta de palabras clave (especificada en el cuadro de palabra clave) por el operador **y** . Que significa que los elementos tienen para satisfacer la consulta de palabra clave y la condición que se va a colocar en suspensión. 
     
 9. Después de configurar una consulta-based suspensión, haga clic en **Finalizar** para crear la suspensión. 
-    
-[Return to top](manage-ediscovery-cases.md#top)
   
 ### <a name="hold-statistics"></a>Mantenga las estadísticas
 
@@ -217,8 +210,6 @@ Tenga en cuenta acerca de las estadísticas de espera lo siguiente:
 - Puede obtener el último mantenga estadísticas haciendo clic en **Actualizar estadísticas** para volver a ejecutar una búsqueda estimación que calcula el número actual de elementos en suspensión. Si es necesario, haga clic en **Actualizar**![icono de actualización de](media/O365-MDM-Policy-RefreshIcon.gif) en la barra de herramientas para actualizar las estadísticas de espera en el panel de detalles. 
     
 - Es normal para el número de elementos en suspensión a aumentar con el tiempo debido a que los usuarios cuyos buzones de correo o el sitio se encuentra en suspensión normalmente se enviar o recibir nuevo mensaje de correo electrónico y creación de SharePoint nueva y OneDrive para documentos empresariales.
-    
-[Return to top](manage-ediscovery-cases.md#top)
   
 ## <a name="step-5-create-and-run-a-content-search-associated-with-a-case"></a>Paso 5: Crear y ejecutar una búsqueda de contenido asociados con un caso
 <a name="step4_1"> </a>
@@ -265,13 +256,11 @@ Después de crea un caso de exhibición de documentos electrónicos y cualquier 
     
 7. Después de seleccionar las ubicaciones de contenido de búsqueda, haga clic en **siguiente**.
     
-8. En la página **Nueva búsqueda**, puede agregar palabras clave y condiciones para crear la consulta de búsqueda. 
-    
-    ![Criterios de búsqueda y condiciones](media/9064147e-feac-4090-bbf6-2298ad7622c6.png)
+8. En la página **Nueva búsqueda**, puede agregar palabras clave y condiciones para crear la consulta de búsqueda. <br/>![Criterios de búsqueda y condiciones](media/9064147e-feac-4090-bbf6-2298ad7622c6.png)
   
-1. En el cuadro en **¿Qué desea nos para buscar?**, escriba una consulta de búsqueda en el cuadro. Puede especificar las palabras clave, mensaje propiedades como envían y reciben fechas, o las propiedades de documento, como los nombres de archivo o la fecha en que se modificó por última vez un documento. Puede usar una de las consultas más complejas que usan un operador booleano, como **AND**, **o**, **no**, **NEAR**o **ONEAR**. También puede buscar información confidencial (como números de la seguridad social) en los documentos o buscar documentos que se han compartido externamente. Si deja vacío el cuadro de palabra clave, todo el contenido que se encuentra en las ubicaciones de contenido especificadas se incluirán en los resultados de búsqueda. 
+9. En el cuadro en **¿Qué desea nos para buscar?**, escriba una consulta de búsqueda en el cuadro. Puede especificar las palabras clave, mensaje propiedades como envían y reciben fechas, o las propiedades de documento, como los nombres de archivo o la fecha en que se modificó por última vez un documento. Puede usar una de las consultas más complejas que usan un operador booleano, como **AND**, **o**, **no**, **NEAR**o **ONEAR**. También puede buscar información confidencial (como números de la seguridad social) en los documentos o buscar documentos que se han compartido externamente. Si deja vacío el cuadro de palabra clave, todo el contenido que se encuentra en las ubicaciones de contenido especificadas se incluirán en los resultados de búsqueda. 
     
-2. Puede hacer clic en la casilla de verificación **Mostrar la lista de palabras clave** y el tipo de una palabra clave en cada fila. Si lo hace, las palabras clave en cada fila están conectadas por el operador **o** en la consulta de búsqueda que se crea. 
+10. Puede hacer clic en la casilla de verificación **Mostrar la lista de palabras clave** y el tipo de una palabra clave en cada fila. Si lo hace, las palabras clave en cada fila están conectadas por el operador **o** en la consulta de búsqueda que se crea. 
     
     ![Palabras clave de búsqueda](media/c3ef511a-e0a3-4b5d-9779-36803270a193.png)
   
@@ -279,19 +268,17 @@ Después de crea un caso de exhibición de documentos electrónicos y cualquier 
     
     Para obtener más información acerca del uso de la lista de palabras clave, vea [obtener más información](run-a-content-search-in-the-security-and-compliance-center.md#moreinfo).
     
-3. Haga clic en **Comprobar consulta si hay errores ortográficos** para comprobar su consulta para caracteres no admitidos y operadores booleanos que es posible que no se puso en mayúsculas. Caracteres no admitidos a menudo están ocultos y normalmente un error de búsqueda o devuelvan resultados inesperados. Para obtener más información acerca de los caracteres no admitidos que se deben comprobar, vea [comprobar la consulta de búsqueda de contenido para errores](check-your-content-search-query-for-errors.md).
+11. Haga clic en **Comprobar consulta si hay errores ortográficos** para comprobar su consulta para caracteres no admitidos y operadores booleanos que es posible que no se puso en mayúsculas. Caracteres no admitidos a menudo están ocultos y normalmente un error de búsqueda o devuelvan resultados inesperados. Para obtener más información acerca de los caracteres no admitidos que se deben comprobar, vea [comprobar la consulta de búsqueda de contenido para errores](check-your-content-search-query-for-errors.md).
     
-4. En **condiciones**, agregar condiciones a una consulta de búsqueda para restringir una búsqueda y devolver un conjunto de resultados más refinado. Cada condición agrega una cláusula a la consulta de búsqueda de palabras clave que se crean y ejecutan cuando se inicia la búsqueda. Una condición lógicamente está conectada a la consulta de palabras clave (especificada en el cuadro de palabra clave) por el operador **y** . Esto significa que los elementos tengan que satisfacer la consulta de palabra clave y la condición que se deben incluir en los resultados. Se trata de cómo ayudar a condiciones para limitar los resultados. 
+12. En **condiciones**, agregar condiciones a una consulta de búsqueda para restringir una búsqueda y devolver un conjunto de resultados más refinado. Cada condición agrega una cláusula a la consulta de búsqueda de palabras clave que se crean y ejecutan cuando se inicia la búsqueda. Una condición lógicamente está conectada a la consulta de palabras clave (especificada en el cuadro de palabra clave) por el operador **y** . Esto significa que los elementos tengan que satisfacer la consulta de palabra clave y la condición que se deben incluir en los resultados. Se trata de cómo ayudar a condiciones para limitar los resultados. 
     
     Para obtener más información sobre cómo crear una consulta de búsqueda y el uso de las condiciones, consulte [Keyword queries for Content Search](keyword-queries-and-search-conditions.md).
     
-9. Haga clic en **Búsqueda** para guardar la configuración de la búsqueda e iniciar la búsqueda. 
+13. Haga clic en **Búsqueda** para guardar la configuración de la búsqueda e iniciar la búsqueda. 
     
     Se inicia la búsqueda. Después de unos momentos, se muestra una estimación de los resultados de búsqueda en el panel de detalles. La estimación incluye el tamaño total y el número de elementos que coinciden con los criterios de búsqueda. La estimación de búsqueda también incluye el número de los elementos no indizados en las ubicaciones de contenido que se desea buscar. El número de elementos sin indizar que no cumplen con los criterios de búsqueda se incluirá en las estadísticas de búsqueda que se muestran en el panel de detalles. Si un elemento sin indizar las coincidencias de la búsqueda de consulta (debido a que otras propiedades de mensaje o el documento cumple con los criterios de búsqueda), no se incluirán en el número estimado de elementos sin indizar. Si se excluye un elemento sin indizar por los criterios de búsqueda, también no se incluirán en la estimación de los elementos sin indizar.
     
     Una vez finalizada la búsqueda, puede obtener una vista previa de los resultados de búsqueda. Si es necesario, haga clic en **Actualizar**![icono de actualización](media/O365-MDM-Policy-RefreshIcon.gif) para actualizar la información en el panel de detalles. 
-    
-[Return to top](manage-ediscovery-cases.md#top)
   
 ## <a name="step-6-export-the-results-of-a-content-search-associated-with-a-case"></a>Paso 6: Exportar los resultados de una búsqueda de contenido asociados con un caso
 <a name="step5_1"> </a>
@@ -381,8 +368,6 @@ Como alternativa a la exportación de los resultados de una búsqueda de conteni
 - Si reinicia una exportación desde la página de **las exportaciones** en un caso de exhibición de documentos electrónicos, los resultados de búsqueda que se transfieren al área de almacenamiento de Azure sobrescribirán los resultados anteriores; los resultados anteriores se han producido transfiere no estará disponible para ser descargado. 
     
 - Preparación de los resultados de varias búsquedas para el análisis de exhibición de documentos electrónicos avanzada no está disponible. Sólo puede preparar los resultados de una búsqueda único para el análisis de exhibición de documentos electrónicos avanzada.
-    
-[Return to top](manage-ediscovery-cases.md#top)
   
 ## <a name="step-7-prepare-search-results-for-advanced-ediscovery"></a>Paso 7: Preparar los resultados de la exhibición de documentos electrónicos avanzada de búsqueda
 <a name="step7_1"> </a>
@@ -415,8 +400,6 @@ Al preparar los resultados de búsqueda para la exhibición de documentos electr
     Los resultados de búsqueda estén preparados para análisis con avanzadas exhibición de documentos electrónicos.
     
 7. En el panel de detalles, haga clic en **Comprobar estado de preparación** para mostrar información acerca del proceso de preparación. Cuando finalice el proceso de preparación, puede ir al caso de exhibición de documentos electrónicos avanzada para procesar los datos para su análisis. 
-    
-[Return to top](manage-ediscovery-cases.md#top)
   
 ## <a name="step-8-go-to-the-case-in-advanced-ediscovery"></a>Paso 8: Vaya al caso de exhibición de documentos electrónicos avanzada
 <a name="gotoAeD_1"> </a>
@@ -445,8 +428,6 @@ Para ir a un caso en eDiscovery avanzado:
     
 > [!TIP]
 > Haga clic en **cambiar a la exhibición de documentos electrónicos** para volver a las mismas mayúsculas y minúsculas en la seguridad &amp; centro de cumplimiento. 
-  
-[Return to top](manage-ediscovery-cases.md#top)
   
 ## <a name="optional-step-9-close-a-case"></a>(Opcional) Paso 9: Cerrar un caso
 <a name="closecase_1"> </a>
@@ -484,8 +465,6 @@ Para cerrar un caso:
 7. En la página de **exhibición de documentos electrónicos** , haga clic en ![icono de actualización](media/O365-MDM-Policy-RefreshIcon.gif) **Actualizar** para actualizar el estado del caso cerrado. Pueden tardar hasta 60 minutos completar el proceso de cierre. 
     
     Una vez completado el proceso, se cambia el estado de las mayúsculas y minúsculas a **Close** en la página de **exhibición de documentos electrónicos** . Haga clic en el nombre del caso de nuevo para mostrar la página emergente **administrar este caso** , que contiene información acerca de cuando se cerró el caso y quién la cerrado. 
-    
-[Return to top](manage-ediscovery-cases.md#top)
   
 ## <a name="optional-step-10-re-open-a-closed-case"></a>(Opcional) Paso 10: Volver a abrir un caso cerrado
 <a name="reopencase_1"> </a>
@@ -511,8 +490,6 @@ Al volver a abrir un caso, cualquier suspensiones que tenía cuando se cerró el
 6. En la página de **exhibición de documentos electrónicos** , haga clic en ![icono de actualización](media/O365-MDM-Policy-RefreshIcon.gif) **Actualizar** para actualizar el estado del caso vuelve a abrir. Pueden tardar hasta 60 minutos para el proceso de volver a abrir para llevar a cabo. 
     
     Una vez completado el proceso, se cambia el estado de las mayúsculas y minúsculas a **activo** en la página de **exhibición de documentos electrónicos** . 
-    
-[Return to top](manage-ediscovery-cases.md#top)
   
 ## <a name="more-information"></a>Más información
 <a name="moreinfo_1"> </a>
@@ -536,12 +513,9 @@ Al volver a abrir un caso, cualquier suspensiones que tenía cuando se cerró el
     
     Por último, como anterior se explica, los administradores de exhibición de documentos electrónicos en la seguridad &amp; centro de cumplimiento se agregan automáticamente como administradores de exhibición de documentos electrónicos avanzada. Esto significa que una persona que es un administrador de exhibición de documentos electrónicos puede realizar tareas administrativas en la exhibición de documentos avanzada, como la configuración de usuarios, creación de casos y adición de datos a los casos.
     
-<<<<<<< HEAD
-- **¿Cuáles son los requisitos de licencia para colocar las ubicaciones de contenido en espera?** En general, las organizaciones requieren una suscripción a Office 365 E3 o superior para colocar las ubicaciones de contenido en espera. Para poner los buzones de correo en espera, se requiere una licencia de Exchange Online Plan 2. Para obtener más información, vea este [exhibición de documentos electrónicos preguntas más frecuentes](https://support.office.com/article/9d1a29ae-b7b4-4a27-9c8c-84289023dcae#Q5). =======
 - **¿Cuáles son los requisitos de licencia para colocar las ubicaciones de contenido en espera?** En general, las organizaciones requieren una suscripción a Office 365 E3 o superior para colocar las ubicaciones de contenido en espera. Para poner los buzones de correo en espera, se requiere una licencia de Exchange Online Plan 2. Para obtener más información, consulte [preguntas más frecuentes](https://support.office.com/article/9d1a29ae-b7b4-4a27-9c8c-84289023dcae.aspx#Q5).
->>>>>>> conversión de deniseb
-    
-- **¿Qué más debe saber acerca de la búsqueda de todo el contenido de mayúsculas y minúsculas en el paso 5?** Como se explica anteriormente, puede buscar las ubicaciones de contenido que se han colocado en suspensión en el caso. En este caso, sólo el contenido que coincida con los criterios de retención es la búsqueda. Si no hay ningún criterio de suspensión, se busca en todo el contenido. Si se encuentran contenido en basada en consultas espera, sólo el contenido que coincide con ambas mantenga criterios (desde la suspensión realizadas en el paso 4) y los criterios de búsqueda (de la búsqueda en el paso 5) se devuelve con los resultados de búsqueda.
+
+- **¿Qué más debe saber acerca de la búsqueda de todo el contenido de mayúsculas y minúsculas en el paso 5?** Como se explica anteriormente, puede buscar las ubicaciones de contenido que se han colocado en espera en el caso. En este caso, sólo el contenido que coincida con los criterios de retención es la búsqueda. Si no hay ningún criterio de suspensión, se busca en todo el contenido. Si se encuentran contenido en basada en consultas espera, sólo el contenido que coincide con ambas mantenga criterios (desde la suspensión realizadas en el paso 4) y los criterios de búsqueda (de la búsqueda en el paso 5) se devuelve con los resultados de búsqueda.
     
     A continuación presentamos algunos otros aspectos a tener en cuenta al buscar en todo el contenido de mayúsculas y minúsculas:
     

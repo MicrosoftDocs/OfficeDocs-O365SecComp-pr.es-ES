@@ -13,19 +13,19 @@ ms.collection: Strat_O365_IP
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: Utilice este tema para obtener más información acerca de la configuración de administración de acceso con privilegios en Office 365
-ms.openlocfilehash: 47cae93a41b0fd60645021f6f299645777a9a2e1
-ms.sourcegitcommit: c168410974bc90aaf55f1dcaa9e05c09b2b78d76
+ms.openlocfilehash: 13d278c8e8555aa069035c2f03b23db69a475b43
+ms.sourcegitcommit: 448c5897e44448adfc82e3eaffb774c770c04815
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "25011846"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "25522262"
 ---
 # <a name="configuring-privileged-access-management-in-office-365"></a>Configuración de administración de acceso con privilegios en Office 365
 
 > [!IMPORTANT]
 > En este tema se trata instrucciones de implementación y configuración para características sólo actualmente disponibles en Office 365 E5 y avanzada SKU de cumplimiento.
 
-En este tema le guiará a través de habilitar y configurar la administración del acceso con privilegios en su organización de Office 365. Puede usar cualquiera el el centro de administración de Microsoft 365 o Exchange Management PowerShell para administrar y usar privilegios de acceso. 
+En este tema le guiará a través de habilitar y configurar la administración del acceso con privilegios en su organización de Office 365. Puede usar el centro de administración de Microsoft 365 o el PowerShell de administración de Exchange para administrar y usar con privilegios de acceso. 
 
 ## <a name="enable-and-configure-privileged-access-management"></a>Habilitar y configurar la administración con privilegios de acceso
 

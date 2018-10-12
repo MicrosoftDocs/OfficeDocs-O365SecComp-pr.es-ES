@@ -3,20 +3,20 @@ title: Cambiar el tamaño de los archivos PST al exportar los resultados de bús
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 11/30/2016
+ms.date: 10/12/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 04e9de2d-765b-457b-a98a-d0f60bfb13f2
-description: Puede cambiar el tamaño predeterminado de los archivos PST que se descargó a su equipo al exportar los resultados de búsqueda de exhibición de documentos electrónicos.
-ms.openlocfilehash: 1479db72117729d2e5cfa6feec1d9a0d9a60ffb5
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+description: Puede cambiar el tamaño predeterminado de los archivos PST que se descargan en el equipo al exportar los resultados de búsqueda de exhibición de documentos electrónicos.
+ms.openlocfilehash: c01f05a02fd94941eb2eb7a05b4c84ffecec9b39
+ms.sourcegitcommit: 448c5897e44448adfc82e3eaffb774c770c04815
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25037993"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "25522251"
 ---
 # <a name="change-the-size-of-pst-files-when-exporting-ediscovery-search-results"></a>Cambiar el tamaño de los archivos PST al exportar los resultados de búsqueda de exhibición de documentos electrónicos
 

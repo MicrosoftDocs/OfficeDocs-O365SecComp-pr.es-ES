@@ -3,7 +3,7 @@ title: Aumentar la cuota de elementos recuperables para los buzones de correo en
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 8/22/2017
+ms.date: 10/12/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: a8bdcbdd-9298-462f-b889-df26037a990c
 description: 'Habilitar el buzón de archivo y activar la ampliación automática de archivado para aumentar el tamaño de la carpeta elementos recuperables para un buzón de correo en Office 365. '
-ms.openlocfilehash: cd2d07e6ef1637343798ccb71870c8d436f10574
-ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
+ms.openlocfilehash: a347155645d7c058080b1db7fd47f7ea16249724
+ms.sourcegitcommit: 448c5897e44448adfc82e3eaffb774c770c04815
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "23782097"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "25522281"
 ---
 # <a name="increase-the-recoverable-items-quota-for-mailboxes-on-hold"></a>Aumentar la cuota de elementos recuperables para los buzones de correo en retención
 
@@ -35,7 +35,7 @@ Para ayudar a reducir las posibilidades de si se excede este límite, la cuota d
 |**Cuota de almacenamiento total de la carpeta Elementos recuperables** <br/> |Ilimitado  <br/> |Ilimitado  <br/> |
    
 > [!NOTE]
-> <sup>\*</sup>La cuota de almacenamiento inicial para el buzón de archivo es de 100 GB para los usuarios con una licencia de Exchange Online (Plan 2). Sin embargo, cuando el archivado de ampliación automática está activado para buzones de correo en espera, la cuota de almacenamiento para ambos el buzón de archivo y la carpeta elementos recuperables se aumenta a 110 GB. Espacio de almacenamiento de archivo adicionales se aprovisionará cuando sea necesario que da como resultado una cantidad ilimitada de almacenamiento de archivos. Para obtener más información acerca de la expansión automática de archivado, vea [información general sobre el archivo ilimitado en Office 365](unlimited-archiving.md). 
+> <sup>\*</sup>La cuota de almacenamiento inicial para el buzón de archivo es de 100 GB para los usuarios con una licencia de Exchange Online (Plan 2). Sin embargo, cuando la ampliación automática de archivado está activado para los buzones de correo en espera, se aumenta la cuota de almacenamiento para el buzón de archivo y la carpeta elementos recuperables a 110 GB. Espacio de almacenamiento de archivo adicionales se aprovisionará cuando sea necesario que da como resultado una cantidad ilimitada de almacenamiento de archivos. Para obtener más información acerca de la expansión automática de archivado, vea [información general sobre el archivo ilimitado en Office 365](unlimited-archiving.md). 
   
 Cuando la cuota de almacenamiento de la carpeta Elementos recuperables en el buzón principal de un buzón en suspensión está a punto de alcanzar su límite, puede hacer lo siguiente:
   
@@ -60,7 +60,7 @@ En el resto de este tema se describen procedimientos paso a paso para crear una 
 
 El primer paso es crear una etiqueta de retención personalizada (denominada una etiqueta de directiva de retención o RPT) de la carpeta elementos recuperables. Como se explica anteriormente, este RPT mueve los elementos de la carpeta elementos recuperables en el buzón del usuario principal a la carpeta elementos recuperables en el buzón de archivo del usuario. Se debe usar PowerShell para crear una RPT para la carpeta elementos recuperables. No puede usar el centro de administración de Exchange (EAC). 
   
-1. [Connect to Exchange Online using remote PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=517283)
+1. [Conectarse a Exchange Online con el PowerShell remoto](https://go.microsoft.com/fwlink/p/?LinkId=517283)
     
 2. Ejecute el comando siguiente para crear una RPT para la carpeta Elementos recuperables:  
     
