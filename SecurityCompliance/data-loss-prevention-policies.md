@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 1966b2a7-d1e2-4d92-ab61-42efbb137f5e
 description: Con una directiva de (DLP) de prevención de pérdida de datos en la seguridad de Office 365 &amp; centro de cumplimiento, puede identificar, supervisar y proteger información confidencial de forma automática a través de Office 365.
-ms.openlocfilehash: e9d033bc54aae6bc1c8089793dbc618f11bef273
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: c33fe53797f86208e7cd033029949737a5c84d2f
+ms.sourcegitcommit: 397a5fe594e4cf4bb64c0c6f233d310ef3cbd922
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23013744"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "25540426"
 ---
 # <a name="overview-of-data-loss-prevention-policies"></a>Información general sobre directivas de prevención de pérdida de datos
 
@@ -304,7 +304,7 @@ Por estos motivos, las instrucciones para la creación de reglas con diferente c
     
 - Normalmente, los niveles de confianza intermedias oscilar entre justo sobre el nivel de confianza inferior a la posición inmediatamente por debajo del nivel de confianza superior.
     
-## <a name="using-a-label-as-a-condition-in-a-dlp-policy"></a>Uso de una etiqueta como una condición en una directiva de DLP
+## <a name="using-a-label-as-a-condition-in-a-dlp-policy"></a>Usar una etiqueta como condición en una directiva DLP
 
 Puede crear una etiqueta y, a continuación:
   
@@ -312,7 +312,7 @@ Puede crear una etiqueta y, a continuación:
     
 - **Aplicar automáticamente** al contenido que coincida con las condiciones que elija. 
     
-Para obtener más información acerca de las etiquetas, vea [información general de las etiquetas](labels.md).
+Para obtener más información sobre las etiquetas, vea [Información general sobre etiquetas](labels.md).
   
 Después de crear una etiqueta, a continuación, puede usar esa etiqueta como una condición en las directivas de DLP. Por ejemplo, es posible que desee hacerlo porque:
   
@@ -332,7 +332,7 @@ Mediante el uso de las etiquetas como una condición en las reglas DLP, pueden s
 
 Varias características se pueden aplicar a contenido que contiene información confidencial:
   
-- Un [aplicando una etiqueta automáticamente según las condiciones](labels.md#applying-a-label-automatically-based-on-conditions) y una [Directiva de retención](retention-policies.md) pueden aplicar acciones de **retención** en este contenido. 
+- Una [etiqueta de retención](labels.md#applying-a-retention-label-automatically-based-on-conditions)[aplicar una etiqueta automáticamente según las condiciones] y una [Directiva de retención](retention-policies.md) pueden aplicar acciones de **retención** en este contenido. 
     
 - Una directiva de DLP puede aplicar acciones de **protección** en este contenido. Y antes de aplicar estas acciones, una directiva de DLP puede requerir otras condiciones que deben cumplirse además del contenido que contiene una etiqueta. 
     
@@ -478,13 +478,13 @@ Estos permisos son necesarios solo para crear y aplicar una directiva de DLP. La
 
 Para utilizar la mayoría de los cmdlets para la seguridad &amp; centro de cumplimiento, necesita:
   
-1. [Conectarse a la seguridad de Office 365 &amp; centro de cumplimiento de normas mediante PowerShell remoto](http://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
+1. [Conectarse al Centro de seguridad y cumplimiento de Office 365 mediante PowerShell remoto](http://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
     
 2. Use cualquiera de estas [Office 365 seguridad &amp; centro de cumplimiento cmdlets](http://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)
     
 Sin embargo, los informes de DLP necesitan extraer datos de a través de Office 365, como Exchange Online. Por este motivo, los cmdlets de para los informes DLP están disponibles en Exchange Online Powershell--no en seguridad &amp; Powershell de centro de cumplimiento. Por lo tanto, para usar los cmdlets de para los informes DLP, necesitará:
   
-1. [Connect to Exchange Online using remote PowerShell](http://go.microsoft.com/fwlink/?LinkID=799773&amp;clcid=0x409)
+1. [Conectarse a Exchange Online con el PowerShell remoto](http://go.microsoft.com/fwlink/?LinkID=799773&amp;clcid=0x409)
     
 2. Use cualquiera de estos cmdlets para los informes DLP:
     
