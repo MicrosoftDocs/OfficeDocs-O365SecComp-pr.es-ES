@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: d2104778-f0a1-4b69-baf3-c4b32e98a573
 description: Obtenga información sobre cómo puede mover de un informe detallado a un entendimiento con acciones recomendadas en la seguridad &amp; centro de cumplimiento.
-ms.openlocfilehash: c89026284b2351b1beae4fa087db81c2763ae241
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: be2af8916f70f9cf9fbacfcad8d26819c5001014
+ms.sourcegitcommit: e0c6f99d5514d8da8a70d9bd3616d1a1c0851254
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22535892"
+ms.lasthandoff: 10/13/2018
+ms.locfileid: "25552378"
 ---
 # <a name="walkthrough---from-a-detailed-report-to-an-insight"></a>Tutorial: desde un informe detallado a un reporte
 
@@ -34,9 +34,9 @@ Vamos a recorrer el flujo de un informe detallado a una profundidad y acciones. 
     
     ![En la seguridad &amp; centro de cumplimiento, vaya a informes \> panel](media/68f3bb7c-b4f7-4cca-904b-478643a93c94.png)
   
-2. Se elija un informe para obtener una vista más detallada. (Elija un informe, como el informe de **estado de protección de amenaza** ). 
+2. Se elija un informe para obtener una vista más detallada. (Elija un informe, como el informe de **Estado de protección de amenaza** ). 
     
-    ![Informe de estado de protección de amenaza que muestra insights](media/f47d7dbd-816a-47ba-b8db-53919fbed192.png)
+    ![Informe de estado de protección de amenaza con conocimientos](media/f47d7dbd-816a-47ba-b8db-53919fbed192.png)
   
 3. Se tenga en cuenta un indicador de conocimientos en el gráfico, así como a continuación el informe. El puntero del mouse en el marcador de conocimientos proporciona algunos detalles adicionales. (Mantenga el mouse sobre el marcador de conocimientos para ver detalles adicionales).
     

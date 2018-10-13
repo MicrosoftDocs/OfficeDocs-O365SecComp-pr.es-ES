@@ -1,5 +1,5 @@
 ---
-title: Administración de la seguridad de Office 365 de amenazas &amp; centro de cumplimiento
+title: Threat management in the Office 365 Security &amp; Compliance Center
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -12,14 +12,14 @@ search.appverid:
 - MET150
 ms.assetid: 0a73d5fa-b2c8-43e7-9ed4-61f0552b1c98
 description: Usar administración de amenaza para ayudar a controlar y administrar el acceso de dispositivo móvil a los datos de la organización, ayudar a proteger su organización contra la pérdida de datos y ayudar a proteger los mensajes entrantes y salientes de correo no deseado y otro software malintencionado. También use cuentas de administración para proteger la reputación de su dominio y para determinar si los remitentes se suplantación de identidad malintencionada desde su dominio de amenaza.
-ms.openlocfilehash: 88b2727b76fad1e8d700f15717a8aeedea934093
-ms.sourcegitcommit: c168410974bc90aaf55f1dcaa9e05c09b2b78d76
+ms.openlocfilehash: df843ab95920d24af778a9edf31626f4d6b08cff
+ms.sourcegitcommit: e0c6f99d5514d8da8a70d9bd3616d1a1c0851254
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "25011836"
+ms.lasthandoff: 10/13/2018
+ms.locfileid: "25552408"
 ---
-# <a name="threat-management-in-the-office-365-security-amp-compliance-center"></a>Administración de la seguridad de Office 365 de amenazas &amp; centro de cumplimiento
+# <a name="threat-management-in-the-office-365-security-amp-compliance-center"></a>Threat management in the Office 365 Security &amp; Compliance Center
 
 Usar administración de amenaza para ayudar a controlar y administrar el acceso de dispositivo móvil a los datos de la organización, ayudar a proteger su organización contra la pérdida de datos y ayudar a proteger los mensajes entrantes y salientes de correo no deseado y otro software malintencionado. También use cuentas de administración para proteger la reputación de su dominio y para determinar si los remitentes se suplantación de identidad malintencionada desde su dominio de amenaza.
   
@@ -31,7 +31,7 @@ En Office 365, use la seguridad &amp; centro de cumplimiento para administrar la
   
 1. Vaya a [https://protection.office.com](https://protection.office.com).
     
-2. Inicie sesión en Office 365 con su cuenta de trabajo o escuela.
+2. Inicie sesión en Office 365 con su cuenta profesional o educativa.
     
 3. En el panel izquierdo, seleccione **administración de amenaza**.
     
@@ -39,7 +39,7 @@ En Office 365, use la seguridad &amp; centro de cumplimiento para administrar la
   
  **Para ir a la seguridad &amp; centro de cumplimiento con el iniciador de la aplicación de Office 365:**
   
-1. Inicie sesión en Office 365 con su cuenta de trabajo o escuela.
+1. Inicie sesión en Office 365 con su cuenta profesional o educativa.
     
 2. Seleccione el iniciador de la aplicación ![el icono del selector de aplicación en Office 365](media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) en la esquina superior izquierda de esquina y, a continuación, seleccione la **seguridad &amp; cumplimiento** colocar en mosaico. 
     

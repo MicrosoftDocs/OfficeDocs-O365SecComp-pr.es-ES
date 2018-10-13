@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 description: Obtenga información sobre cómo buscar y usar informes de seguridad de correo electrónico para la organización con Office 365 Enterprise. Informes de seguridad de correo electrónico están disponibles en la seguridad &amp; centro de cumplimiento.
-ms.openlocfilehash: 0dd0c2ee7090e488d8619e71c6e4931f1934e9b0
-ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
+ms.openlocfilehash: ea5d60393809ef924d51435b695062fe51e772bd
+ms.sourcegitcommit: e0c6f99d5514d8da8a70d9bd3616d1a1c0851254
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25454347"
+ms.lasthandoff: 10/13/2018
+ms.locfileid: "25552398"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>Ver los informes de seguridad de correo electrónico de la seguridad &amp; centro de cumplimiento
 
@@ -43,11 +43,14 @@ Los informes de seguridad de correo electrónico son los siguientes:
     
 - [Informe de mensajes indicado por el usuario](view-email-security-reports.md#userreported) (nuevo)! 
     
-## <a name="threat-protection-status-report-new"></a>Informe de estado de protección de amenaza (¡nuevo!)
+## <a name="threat-protection-status-report-new"></a>Amenazas de informe de estado de protección (¡nuevo!)
 
-El nuevo informe de **estado de protección de amenaza** es un informe inteligente que se muestra el correo electrónico malintencionado que se ha detectado y bloqueado por Exchange Online Protection. Este informe muestra información acerca del correo electrónico identificado como malware o un intento de suplantación de identidad. 
+El nuevo informe de **Estado de protección de amenaza** es un informe inteligente que se muestra el correo electrónico malintencionado que se ha detectado y bloqueado por Exchange Online Protection. Este informe muestra información acerca del correo electrónico identificado como malware o un intento de suplantación de identidad. 
+
+> [!NOTE]
+> Un informe de estado de protección de amenaza está disponible para los clientes que tengan [Office 365 ATP](office-365-atp.md) o [Exchange Online Protection](eop/exchange-online-protection-eop.md) (EOP); Sin embargo, la información que se muestra en el informe de estado de protección de amenaza para los clientes de ATP probablemente contendrá datos distintos a lo que es posible que vea los clientes de EOP. Por ejemplo, los clientes de EOP pueden ver información sobre malware detectado en el correo electrónico, pero no información sobre [archivos malintencionados detectan en SharePoint Online, OneDrive o los equipos de Microsoft](atp-for-spo-odb-and-teams.md), una capacidad de ATP específicas. ([Más información acerca de los informes de ATP](view-reports-for-atp.md)).
   
-Para ver este informe, en la seguridad &amp; centro de cumplimiento, vaya a **informes** \> **panel** \> **estado de protección de amenaza**.
+Para ver este informe, en la seguridad &amp; centro de cumplimiento, vaya a **informes** \> **panel** \> **Estado de protección de amenaza**.
   
 ![Informe de estado de protección de amenaza](media/0ff86e12-c2b2-4d89-92a5-cefb054dc070.png)
   
@@ -176,8 +179,8 @@ Para poder ver y utilizar los informes de seguridad de correo electrónico que s
   
 |**Grupo de funciones**|**Punto de asignación**|**Obtener más información**|
 |:-----|:-----|:-----|
-| Uno de los siguientes:  <br/>  Administración de la organización  <br/>  Administrador de seguridad  <br/>  Lector de seguridad  <br/> |Seguridad &amp; centro de cumplimiento  <br/> |[Los permisos de la seguridad de Office 365 &amp; centro de cumplimiento](permissions-in-the-security-and-compliance-center.md) <br/> |
-| Uno de los siguientes:  <br/>  Administración de la organización  <br/>  Administración de organización de solo lectura  <br/>  Rol Destinatarios con permiso de vista  <br/>  Administración de cumplimiento  <br/> |Centro de administración de Exchange  <br/> |[Permisos de características de Exchange Online](https://technet.microsoft.com/library/jj200673%28v=exchg.150%29.aspx) <br/> |
+| Uno de los siguientes:  <br/><br/>: Administración de la organización  <br/>: Administrador de seguridad  <br/>--Seguridad lector  <br/> |Seguridad &amp; centro de cumplimiento  <br/> |[Los permisos de la seguridad de Office 365 &amp; centro de cumplimiento](permissions-in-the-security-and-compliance-center.md) <br/> |
+| Uno de los siguientes:  <br/><br/>: Administración de la organización  <br/>--Administración de la organización sólo vista  <br/>--Rol de los destinatarios con permiso de vista  <br/>--Administración de cumplimiento  <br/> |Centro de administración de Exchange  <br/> |[Permisos de características de Exchange Online](https://technet.microsoft.com/library/jj200673%28v=exchg.150%29.aspx) <br/> |
    
 ## <a name="what-if-the-reports-arent-showing-data"></a>¿Qué ocurre si los informes no muestran los datos?
 

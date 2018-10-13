@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 description: Configurar directivas de vínculos seguros para proteger la organización de vínculos malintencionados en archivos de Word, Excel, PowerPoint y Visio, así como en mensajes de correo electrónico.
-ms.openlocfilehash: 9110fce9a6eb53832707de6235b79100e10c9b8a
-ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
+ms.openlocfilehash: 6c4e208e9f944d9c38d43b5669167e0cf425ec39
+ms.sourcegitcommit: e0c6f99d5514d8da8a70d9bd3616d1a1c0851254
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25454337"
+ms.lasthandoff: 10/13/2018
+ms.locfileid: "25552348"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Configurar las directivas de seguros vínculos con Office 365 ATP
 
@@ -49,7 +49,7 @@ ms.locfileid: "25454337"
     
 ## <a name="step-2-define-or-review-the-atp-safe-links-policy-that-applies-to-everyone"></a>Paso 2: Definir (o revisar) en la directiva de vínculos seguros de ATP que se aplica a todos los usuarios
 
-Cuando haya avanzado de protección contra amenazas en Office 365 Enterprise, tendrá una directiva de vínculos seguros ATP predeterminada que se aplica a todas las personas de su organización. 
+Cuando haya avanzado de protección contra amenazas en Office 365 Enterprise, tendrá una directiva de vínculos seguros ATP predeterminada que se aplica a todas las personas de su organización. Asegúrese de revisar y, si es necesario, modificar la directiva predeterminada.
   
 1. Vaya a [https://protection.office.com](https://protection.office.com) y el inicio de sesión con la cuenta de trabajo o escuela. 
     
@@ -67,7 +67,7 @@ Cuando haya avanzado de protección contra amenazas en Office 365 Enterprise, te
     
 ## <a name="step-3-add-or-edit-atp-safe-links-policies-that-apply-to-specific-email-recipients"></a>Paso 3: Agregar (o editar) en las directivas de ATP seguros vínculos que se aplican a los destinatarios de correo electrónico específica
 
-Después de haber revisado la directiva de vínculos seguros de ATP para todos los usuarios, considere la posibilidad de definir directivas adicionales para grupos específicos de destinatarios de correo electrónico. Esto le permite especificar excepciones a la directiva predeterminada. 
+Después de haber revisado (o editar) la directiva de vínculos seguros ATP predeterminada que se aplica a todos los usuarios, el siguiente paso es definir directivas adicionales que se aplican a determinados destinatarios. Por ejemplo, puede especificar excepciones a la directiva predeterminada mediante la definición de una directiva adicional. 
   
 1. Vaya a [https://protection.office.com](https://protection.office.com) y el inicio de sesión con la cuenta de trabajo o escuela. 
     

@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 description: Obtenga información sobre cómo buscar y usar informes para Office 365 avanzada protección contra amenazas en la seguridad &amp; centro de cumplimiento.
-ms.openlocfilehash: 4a76c6a5b888142dc4c35af432fa61916145d648
-ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
+ms.openlocfilehash: 1a0ecb9a6722deb50a491a15f720481a5bb7b0a4
+ms.sourcegitcommit: e0c6f99d5514d8da8a70d9bd3616d1a1c0851254
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25454307"
+ms.lasthandoff: 10/13/2018
+ms.locfileid: "25552338"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Visualización de informes para la protección de amenaza avanzada de Office 365
 
@@ -29,9 +29,12 @@ Informes de ATP incluyen el [informe de estado de protección de amenaza](#threa
   
 ## <a name="threat-protection-status-report"></a>Informe de estado de protección de amenaza
 
-El informe de **estado de protección de amenaza** es una vista única que reúne información sobre malintencionado correo electrónico malintencionado y contenido detectados y bloqueados por Exchange Online y avanzada de protección contra amenazas. El informe proporciona un recuento de mensajes de correo electrónico único con contenido malintencionado (archivos o direcciones URL) bloqueados por el motor de protección contra malware, [cero horas automático purgar (ZAP)](zero-hour-auto-purge.md)y las características de protección contra amenazas de avanzada, como [Vínculos seguros ATP](atp-safe-links.md), [ATP agregado Los datos adjuntos seguros](atp-safe-attachments.md)y [funciones de ATP contra suplantación de identidad en Office 365](atp-anti-phishing.md).
+El informe de **Estado de protección de amenaza** es una vista única que reúne información sobre malintencionado correo electrónico malintencionado y contenido detectados y bloqueados por [ATP de Office 365](office-365-atp.md)y [Exchange Online Protection](eop/exchange-online-protection-overview.md) (EOP). El informe proporciona un recuento agregado de mensajes de correo electrónico único con contenido malintencionado (archivos o direcciones de sitios Web (URL)) bloqueados por el motor de antimalware, [cero horas automático purgar (ZAP)](zero-hour-auto-purge.md)y las características de ATP, como [Vínculos seguros ATP](atp-safe-links.md), [ATP seguras Datos adjuntos](atp-safe-attachments.md)y [las funciones de ATP contra suplantación de identidad](atp-anti-phishing.md).
+
+> [!NOTE]
+> Un informe de estado de protección de amenaza está disponible para los clientes que tengan [Office 365 ATP](office-365-atp.md) o [Exchange Online Protection](eop/exchange-online-protection-eop.md) (EOP); Sin embargo, la información que se muestra en el informe de estado de protección de amenaza para los clientes de ATP probablemente contendrá datos distintos a lo que es posible que vea los clientes de EOP. Por ejemplo, el informe de estado de protección de amenaza para los clientes de ATP contendrá información sobre [archivos malintencionados detectan en SharePoint Online, OneDrive o los equipos de Microsoft](atp-for-spo-odb-and-teams.md). Dicha información es específica de ATP, por lo que los clientes que tienen EOP pero no ATP no verán los detalles de su informe de estado de protección de amenaza.
   
-Para ver el informe de estado de protección de amenaza, en la seguridad &amp; centro de cumplimiento, vaya a **informes** \> **panel** \> **estado de protección de amenaza**.
+Para ver el informe de estado de protección de amenaza, en la seguridad &amp; centro de cumplimiento, vaya a **informes** \> **panel** \> **Estado de protección de amenaza**.
   
 ![Informe de estado de protección de amenaza ATP](media/6bdd41eb-62e0-423b-9fd4-d1d5baf0cbd5.png)
   
@@ -73,9 +76,16 @@ Cuando mantenga el mouse sobre una barra en el gráfico, puede ver las acciones 
   
 ## <a name="additional-reports-to-view"></a>Para ver los informes adicionales
 
-Además de los informes de ATP se describe en este artículo, [informes de seguridad de correo electrónico](view-email-security-reports.md) están disponibles en la seguridad &amp; centro de cumplimiento. Informes de seguridad de correo electrónico incluyen un [informe de los destinatarios y remitentes de la parte superior](view-email-security-reports.md#top-senders-and-recipients-report), un [informe de suplantación de correo](view-email-security-reports.md#spoof-mail-report), un [informe de detecciones de Spam](view-email-security-reports.md#spam-detections-report)y mucho más.
-  
-Y, si su organización tiene [Información sobre amenazas de Office 365](office-365-ti.md), también puede [Utilice el explorador en la seguridad &amp; centro de cumplimiento](use-explorer-in-security-and-compliance.md).
+Además de los informes de ATP que se describe en este artículo, varios otros informes están disponibles, tal como se describe en la siguiente tabla:
+
+
+|Tipo de informe  |Más información  |
+|---------|---------|
+|**Informes de seguridad de correo electrónico**, como una parte superior remitentes y destinatarios informe, un informe de correo de suplantación de la y un informe de detecciones de correo electrónico no deseado. | [Ver los informes de seguridad de correo electrónico de la seguridad &amp; centro de cumplimiento](view-email-security-reports.md)        |
+|**Explorador** (se conoce también como el Explorador de amenaza, esto se incluye en [Office 365 amenaza inteligencia](office-365-ti.md))     | [Use el explorador en la seguridad &amp; centro de cumplimiento](use-explorer-in-security-and-compliance.md)        |
+|**Resultados de la elevación de privilegios y ATP** (Esto es un informe personalizado que generar mediante el uso de PowerShell). Este informe contiene información, como el dominio, fecha, tipo de evento, dirección, acción y recuento de mensajes.  | [Referencia del cmdlet Get-MailTrafficATPReport](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-mailtrafficatpreport?view=exchange-ps) |
+|**Detecciones de elevación de privilegios y ATP** (Esto es un informe personalizado que generar mediante el uso de PowerShell). Este informe contiene detalles sobre archivos malintencionados o las direcciones URL, los intentos de suplantación de identidad, suplantación y otras posibles amenazas de correo electrónico o de archivos.   | [Referencia del cmdlet Get-MailDetailATPReport](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/get-maildetailatpreport?view=exchange-ps)        |
+
   
 ## <a name="what-permissions-are-needed-to-view-the-atp-reports"></a>¿Qué permisos son necesarios para ver los informes de ATP?
 
@@ -83,12 +93,12 @@ Para poder ver y usar los informes que se describen en este artículo, debe tene
   
 |**Grupo de funciones**|**Punto de asignación**|**Obtener más información**|
 |:-----|:-----|:-----|
-| Uno de los siguientes:  <br/>  Administración de la organización  <br/>  Administrador de seguridad  <br/>  Lector de seguridad  <br/> |Seguridad &amp; centro de cumplimiento  <br/> |[Los permisos de la seguridad de Office 365 &amp; centro de cumplimiento](permissions-in-the-security-and-compliance-center.md) <br/> |
-| Uno de los siguientes:  <br/>  Administración de la organización  <br/>  Administración de organización de solo lectura  <br/>  Rol Destinatarios con permiso de vista  <br/>  Administración de cumplimiento  <br/> |Centro de administración de Exchange  <br/> |[Permisos de características de Exchange Online](https://technet.microsoft.com/library/jj200673%28v=exchg.150%29.aspx) <br/> |
+| Uno de los siguientes:  <br/><br/>: Administración de la organización  <br/>: Administrador de seguridad  <br/>--Seguridad lector  <br/> |Seguridad &amp; centro de cumplimiento  <br/> |[Los permisos de la seguridad de Office 365 &amp; centro de cumplimiento](permissions-in-the-security-and-compliance-center.md) <br/> |
+| Uno de los siguientes:  <br/><br/>: Administración de la organización  <br/>--Administración de la organización sólo vista  <br/>--Rol de los destinatarios con permiso de vista  <br/>--Administración de cumplimiento  <br/> |Centro de administración de Exchange  <br/> |[Permisos de características de Exchange Online](https://technet.microsoft.com/library/jj200673%28v=exchg.150%29.aspx) <br/> |
    
 ## <a name="what-if-the-reports-arent-showing-data"></a>¿Qué ocurre si los informes no muestran los datos?
 
-Si no está viendo datos en los informes, vuelva a comprobar que sus directivas están configuradas correctamente. Su organización debe tener [las directivas de ATP seguros vínculos](set-up-atp-safe-links-policies.md) y [datos adjuntos seguros de ATP directivas](set-up-atp-safe-attachments-policies.md) definidas en orden para la protección de ATP para estar en su lugar. Vea también la [protección contra correo no deseado y antimalware en Office 365](anti-spam-and-anti-malware-protection.md).
+Si no está viendo datos en los informes de ATP, vuelva a comprobar que sus directivas están configuradas correctamente. Su organización debe tener [las directivas de ATP seguros vínculos](set-up-atp-safe-links-policies.md) y [datos adjuntos seguros de ATP directivas](set-up-atp-safe-attachments-policies.md) definidas en orden para la protección de ATP para estar en su lugar. Vea también la [protección contra correo no deseado y antimalware en Office 365](anti-spam-and-anti-malware-protection.md).
   
 ## <a name="related-topics"></a>Temas relacionados
 
