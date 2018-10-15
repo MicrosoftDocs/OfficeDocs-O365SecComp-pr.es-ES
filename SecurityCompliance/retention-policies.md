@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 5e377752-700d-4870-9b6d-12bfc12d2423
 description: Con una directiva de retención, puede decidir de forma proactiva si quiere retener o eliminar contenido, ambos (retener y, a continuación, eliminar el contenido), aplicar una directiva única a la toda la organización o solo a determinadas ubicaciones o usuarios, o aplicar una directiva a todo el contenido o solo a aquel que cumpla ciertas condiciones.
-ms.openlocfilehash: 82def4182607e6dde4f9d6612cdb93f6f8564f2a
-ms.sourcegitcommit: edf5db9357c0d34573f8cc406314525ef10d1eb9
+ms.openlocfilehash: 5b02d57931a47ca86f4da884463cfc0e52476d3c
+ms.sourcegitcommit: 397a5fe594e4cf4bb64c0c6f233d310ef3cbd922
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23230022"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "25540406"
 ---
 # <a name="overview-of-retention-policies"></a>Introducción a las directivas de retención
 
@@ -259,7 +259,7 @@ Una directiva de retención que se aplica a Teams puede usar [Bloqueo de conserv
 ## <a name="excluding-specific-types-of-exchange-items-from-a-retention-policy"></a>Excluir determinados tipos de elementos de Exchange de una directiva de retención
 Con PowerShell, puede excluir determinados tipos de elementos de Exchange de una directiva de retención. Por ejemplo, puede excluir mensajes de correo de voz, conversaciones de mensajería instantánea y otros contenidos de Skype Empresarial Online en los buzones. También puede excluir calendario, notas y elementos de la tarea. Esta función está disponible solo mediante PowerShell, no en la interfaz de usuario cuando se crea una directiva de retención.
   
-Para ello, utilice el parámetro `ExcludedItemClasses` de los cmdlets `New-RetentionComplianceRule` y `Set-RetentionComplianceRule`. Para obtener más información sobre PowerShell, vea la sección siguiente [Buscar los cmdlets de PowerShell para directivas de retención](retention-policies.md#powershell).
+Para ello, utilice el parámetro `ExcludedItemClasses` de los cmdlets `New-RetentionComplianceRule` y `Set-RetentionComplianceRule`. Para obtener más información sobre PowerShell, vea la sección siguiente [Buscar los cmdlets de PowerShell para directivas de retención](#find-the-powershell-cmdlets-for-retention-policies).
   
 ## <a name="locking-a-retention-policy"></a>Bloquear una directiva de retención
 Algunas organizaciones podrían tener que cumplir con las reglas que definen los organismos reguladores, como la regla 17a-4 de la SEC (Comisión de intercambio y valores), lo que requiere que, después de activar una directiva de retención, esta no se pueda desactivar ni hacer menos restrictiva. Con el Bloqueo de retención, puede bloquear una directiva de modo que ninguna persona pueda desactivarla ni hacerla menos restrictiva, ni siquiera el administrador.
@@ -268,11 +268,11 @@ Después de que se haya bloqueado una directiva, nadie puede desactivarla ni qui
   
 Por lo tanto, antes de bloquear una directiva de retención, es **muy importante** que comprenda los requisitos de cumplimiento de la organización y que **no bloquee** una directiva hasta que no esté seguro de que es necesario.
   
-Puede bloquear una directiva de retención con solo usar PowerShell. Utilice el parámetro `RestrictiveRetention` del cmdlet `New-RetentionCompliancePolicy` o `Set-RetentionCompliancePolicy`. Para obtener más información sobre PowerShell, vea a continuación la sección [Buscar los cmdlets de PowerShell para directivas de retención](retention-policies.md#powershell).
+Puede bloquear una directiva de retención con solo usar PowerShell. Utilice el parámetro `RestrictiveRetention` del cmdlet `New-RetentionCompliancePolicy` o `Set-RetentionCompliancePolicy`. Para obtener más información sobre PowerShell, vea a continuación la sección [Buscar los cmdlets de PowerShell para directivas de retención](#find-the-powershell-cmdlets-for-retention-policies).
   
 ## <a name="the-principles-of-retention-or-what-takes-precedence"></a>Los principios de retención o qué tiene prioridad
 
-Es posible o incluso probable que el contenido tenga varias directivas de retención aplicadas, cada una con una acción (conservar, eliminar o ambas) y un período de retención. ¿Qué tiene prioridad? En el nivel más alto, puede estar seguro de que el contenido que una directiva retiene no se puede eliminar de forma permanente mediante otra directiva.
+Es posible (o incluso probable) que se apliquen varias directivas de retención a contenido, cada una con una acción (conservar, eliminar o ambas) y un período de retención. ¿Qué tiene precedencia? En general, puede estar seguro de que el contenido conservado por una directiva no se puede eliminar de forma permanente con otra directiva.
   
 ![Diagrama de los principios de retención](media/1693d6ec-b340-4805-9da3-89aa41bc6afb.png)
   
@@ -280,17 +280,17 @@ Para entender cómo diferentes directivas de retención se aplican al contenido,
   
 1. **La retención gana a la eliminación.** Suponga que una directiva de retención dice que es preciso eliminar el correo electrónico de Exchange después de tres años, pero otra directiva de retención dice conservar el correo electrónico de Exchange durante cinco años y eliminarlo. Todo el contenido que llegue a tres años de antigüedad se eliminará y quedará oculto a ojos del usuario, pero seguirá en la carpeta Elementos recuperables hasta que llegue a los cinco años, momento en el que se eliminará de forma permanente. 
     
-2. **Gana el período de retención más largo.** Si el contenido está sujeto a varias directivas de retención, se retendrá hasta el final del período de retención más largo. 
+2. **El período de retención más largo tiene prioridad.** Si el contenido está sujeto a varias directivas de retención, se conservará hasta el final del período de retención más largo. 
     
-3. **La inclusión explícita gana a la inclusión implícita.** Esto significa: 
+3. **La inclusión explícita tiene prioridad sobre la inclusión implícita.** Esto significa que: 
     
-    1. Si una etiqueta con configuración de retención se asigna de forma manual a un usuario o elemento, como un correo electrónico de Exchange o un documento de OneDrive, tendrá prioridad sobre la directiva asignada al sitio o al buzón y una etiqueta predeterminada asignada por la biblioteca de documentos. Por ejemplo, si la etiqueta explícita dice que debe retenerse durante diez años, pero la directiva asignada al sitio dice que solo debe retenerse durante cinco años, la etiqueta tiene prioridad. Tenga en cuenta que las etiquetas autoaplicables se consideran implícitas y no implícitas porque Office 365 las aplica automáticamente.
+    1. Si una etiqueta con configuración de retención se asigna de forma manual a un usuario o elemento (como un correo electrónico de Exchange o un documento de OneDrive), tendrá precedencia sobre la directiva asignada en el nivel de sitio o buzón y una etiqueta predeterminada asignada por la biblioteca de documentos. Por ejemplo, si la etiqueta explícita indica que tiene que conservarse durante diez años, pero la directiva asignada al sitio dice que solo tiene que conservarse durante cinco años, la etiqueta tiene precedencia. Tenga en cuenta que las etiquetas de aplicación automática se consideran implícitas, no explícitas, porque Office 365 las aplica automáticamente.
     
-    2. Si una directiva de retención incluye una ubicación específica como el buzón de un usuario o una cuenta de OneDrive para la Empresa, tendrá prioridad sobre cualquier otra directiva de retención que se aplique a los buzones de todos los usuarios o a las cuentas de OneDrive para la Empresa, pero no incluye específicamente ese buzón de usuario.
+    2. Si una directiva de retención incluye una ubicación específica (como el buzón de un usuario o una cuenta de OneDrive para la Empresa), tendrá precedencia sobre cualquier otra directiva de retención que se aplique a los buzones de todos los usuarios o a las cuentas de OneDrive para la Empresa, pero que no incluyan específicamente ese buzón de usuario.
     
-4. **El período de eliminación más corto gana.** De forma similar, si el contenido está sujeto a varias directivas que eliminan contenido (sin ninguna retención), se eliminará al final del período de retención más corto. 
+4. **El período de eliminación más corto tiene prioridad.** De forma similar, si el contenido está sujeto a varias directivas que eliminan contenido (sin retención), se eliminará al final del período de retención más corto. 
     
-Tenga en cuenta que los principios de retención funcionan como un flujo de desempate de arriba a abajo: si las reglas aplicadas por todas las directivas o etiquetas son las mismas en un nivel, el flujo baja al siguiente nivel para determinar la prioridad de la regla que se aplica.
+Tenga en cuenta que los principios de retención funcionan como un flujo de desempate de arriba abajo: si las reglas aplicadas por todas las directivas o etiquetas son las mismas en un nivel, el flujo baja al siguiente nivel para determinar la precedencia de la regla que se aplica.
   
 Por último, una etiqueta o directiva de retención no puede eliminar ningún contenido de forma permanente si está en suspensión para eDiscovery. Cuando se levante la suspensión, el contenido estará disponible para el período de limpieza descrito anteriormente.
   
@@ -346,7 +346,7 @@ Para usar los cmdlets de directiva de retención, debe:
   
 1. [Conectarse al Centro de seguridad y cumplimiento de Office 365 mediante PowerShell remoto](http://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
     
-2. Usar estos [cmdlets del Centro de seguridad y cumplimiento de Office 365](http://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)
+2. Usar estos [Cmdlets del Centro de seguridad y cumplimiento de Office 365](http://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)
     
 ## <a name="more-information"></a>Más información
 
