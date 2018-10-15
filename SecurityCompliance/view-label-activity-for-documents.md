@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: af341600-5f68-40b3-a73e-73562715acd1
 description: Con el Explorador de actividad de etiquetas en el Centro de seguridad y cumplimiento de Office 365, puede buscar y visualizar rápidamente actividades de etiquetas de todo el contenido en SharePoint OneDrive para la Empresa en los últimos 30 días. Estos son datos en tiempo real que le ofrecen una vista clara de lo que ocurre en el espacio empresarial.
-ms.openlocfilehash: b40d1f9bdad4d0fcb3647f0c79c265bfe0713cd1
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 69e99ea7af683d7850cd56f356ad0ac99f8c084e
+ms.sourcegitcommit: 397a5fe594e4cf4bb64c0c6f233d310ef3cbd922
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23013964"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "25540396"
 ---
 # <a name="view-label-activity-for-documents"></a>Ver la actividad de etiquetas de documentos
 
@@ -46,7 +46,7 @@ Tenga en cuenta que, para usar el Explorador de actividad de etiquetas, se neces
 
 En la parte superior del Explorador de actividad de etiquetas, puede ver las actividades de archivos o carpetas. Tenga en cuenta que en la actividad de carpeta solo se incluye la carpeta en sí, no se incluyen los archivos dentro de la carpeta.
   
-Puede que quiera ver la actividad de etiquetas de las carpetas porque, si etiqueta una carpeta, todos los archivos dentro de esa carpeta también se etiquetarán (excepto los archivos donde se aplicó una etiqueta de forma explícita). Por lo tanto, etiquetar carpetas podría afectar a un número elevado de archivos. Para obtener más información, vea [Aplicar una etiqueta predeterminada a todo el contenido de una biblioteca, carpeta o conjunto de documentos de SharePoint](labels.md#applying-a-default-label-to-all-content-in-a-sharepoint-library-folder-or-document-set).
+Puede que quiera ver la actividad de etiquetas de las carpetas porque, si etiqueta una carpeta, todos los archivos dentro de esa carpeta también se etiquetarán (excepto los archivos donde se aplicó una etiqueta de forma explícita). Por lo tanto, etiquetar carpetas podría afectar a un número elevado de archivos. Para obtener más información, vea [Aplicar una etiqueta de retención predeterminada a todo el contenido de una biblioteca, carpeta o conjunto de documentos de SharePoint](labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set).
   
 ![Menú desplegable donde se muestran actividades de etiquetas de archivos y carpetas](media/11030584-f52d-49eb-86f3-7ead16a3b704.png)
   

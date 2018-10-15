@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: dd851332-747b-45b9-82de-e3cd7d01c8a7
 description: Con las etiquetas en Office 365, puede hacer que un período de retención se base en el momento en que se produzca un tipo específico de evento. El evento desencadena el inicio del período de retención y se exigirán las acciones de retención de etiqueta en todo el contenido que tenga aplicada una etiqueta para ese tipo de evento. La retención controlada por eventos suele usarse como parte de un proceso de administración de registros.
-ms.openlocfilehash: 7a360ec665843db2e7fb3ec5dc11e286a99b3f12
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: fca335d8218c2c22335592fd71bffd00a805f6fb
+ms.sourcegitcommit: 397a5fe594e4cf4bb64c0c6f233d310ef3cbd922
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23013714"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "25540416"
 ---
 # <a name="overview-of-event-driven-retention"></a>Información general sobre la retención controlada por eventos
 
@@ -35,7 +35,7 @@ Por ejemplo, puede usar etiquetas con la retención controlada por eventos para:
     
 La retención controlada por eventos suele usarse como parte de un proceso de administración de registros. Esto quiere decir que:
   
-- Las etiquetas basadas en eventos también suelen clasificar contenido como registros. Para obtener más información, vea [Usar Búsqueda de contenido para encontrar todo el contenido que tenga aplicada una etiqueta específica](labels.md#using-content-search-to-find-all-content-with-a-specific-label-applied-to-it).
+- Las etiquetas basadas en eventos también suelen clasificar contenido como registros. Para obtener más información, vea [Usar Búsqueda de contenido para encontrar todo el contenido que tenga aplicada una etiqueta de retención específica](labels.md#using-content-search-to-find-all-content-with-a-specific-retention-label-applied-to-it).
     
 - Un documento declarado como un registro, pero cuyo desencadenador de eventos aún no se produjo, se conserva de manera indefinida (los registros no se pueden eliminar de forma permanente), hasta que un evento desencadene el período de retención del documento.
     
