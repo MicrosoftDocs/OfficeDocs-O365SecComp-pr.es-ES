@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: Usar herramientas de exhibición de documentos electrónicos y búsqueda de Office 365 para administrar y responder a un incidente de pérdidas de datos en su organización.
-ms.openlocfilehash: 2bf17923408bd5cf8325d27a38595331d169906f
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 4da8efdb6f5d129e08d85f9b6c94726a7d099cb3
+ms.sourcegitcommit: dd58ed6fd424272e361bc3c109ecd6d63d673048
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22535704"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "25566881"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>serie de soluciones de exhibición de documentos electrónicos: escenario de pérdidas de datos - búsqueda y depuración
 
@@ -159,6 +159,8 @@ Si se habilita la recuperación de un solo elemento o un buzón de correo se pon
 - Vea "paso 2: preparar el buzón de correo" en [Eliminar elementos en la carpeta de buzones de correo basados en la nube en retención de elementos recuperables](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-2-prepare-the-mailbox) para obtener instrucciones acerca de cómo deshabilitar la recuperación de elemento único. 
     
 - Vea "paso 3: quitar todas las suspensiones desde el buzón de correo" en [Eliminar elementos en la carpeta de buzones de correo basados en la nube en retención de elementos recuperables](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-3-remove-all-holds-from-the-mailbox) para obtener instrucciones sobre cómo quitar una directiva de retención o suspensión de un buzón de correo. 
+
+- Vea "paso 4: quitar el retraso de espera en el buzón de correo" en [Eliminar elementos en la carpeta de buzones de correo basados en la nube en retención de elementos recuperables](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-4-remove-the-delay-hold-from-the-mailbox) para obtener instrucciones sobre cómo quitar la suspensión de retraso que se coloca en el buzón de correo después de cualquier tipo de espera se ha quitado.
     
  **Importante:** Compruebe con la administración de registros o departamentos legales antes de quitar una directiva de retención o suspensión. Su organización puede tener una directiva que define si un buzón de correo en espera o un incidente de pérdidas de datos tiene prioridad. 
   
@@ -168,9 +170,9 @@ No olvide revertir el buzón de correo a las configuraciones anteriores después
 
 Uso de las ubicaciones de buzón de correo que se recopilan y preparado en el paso 6 y la consulta de búsqueda que se creó y refinada en el paso 3 para buscar los mensajes de correo electrónico que contienen los datos derramados, ahora puede permanentemente eliminar los datos derramados. Como se explica anteriormente, se debe asignar el rol de buzón de correo importar exportar en Exchange Online para eliminar los mensajes mediante el siguiente procedimiento.
   
-1. [Conectarse a Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=396554).
+1. [Conexión a PowerShell de Exchange Online](https://go.microsoft.com/fwlink/?linkid=396554).
     
-2. Ejecute el comando siguiente:
+2. Ejecute el siguiente comando:
     
     ```
     Search-Mailbox -Identity <mailbox identity> -SearchDumpster -DeleteContent $true -SearchQuery <search query>
@@ -198,7 +200,7 @@ Es el último paso en el flujo de trabajo para administrar un incidente de pérd
   
 ### <a name="reverting-the-mailboxes-to-their-previous-state"></a>Revertir los buzones de correo a su estado anterior
 
-Si cambia cualquier configuración de buzón de correo en el paso 6 para preparar los buzones de correo antes de que se ha eliminado los datos derramados, necesita, vuelva a su estado anterior. Vea "paso 5: revertir el buzón de correo a su estado anterior" en [Eliminar elementos en la carpeta de buzones de correo basados en la nube en retención de elementos recuperables](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-5-revert-the-mailbox-to-its-previous-state).
+Si cambia cualquier configuración de buzón de correo en el paso 6 para preparar los buzones de correo antes de que se ha eliminado los datos derramados, necesita, vuelva a su estado anterior. Vea "paso 6: revertir el buzón de correo a su estado anterior" en [Eliminar elementos en la carpeta de buzones de correo basados en la nube en retención de elementos recuperables](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-6-revert-the-mailbox-to-its-previous-state).
   
 ### <a name="deleting-the-search-query"></a>Eliminación de la consulta de búsqueda
 

@@ -3,7 +3,7 @@ title: Eliminar elementos de la carpeta elementos recuperables de los buzones de
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 9/21/2017
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: 'Para los administradores: eliminar elementos de carpeta de elementos recuperables de un usuario para un buzón de Exchange Online, incluso si ese buzón se coloca en retención legal. Esto es una forma eficaz para eliminar los datos que se ha derramado accidentalmente en Office 365.'
-ms.openlocfilehash: c984bcaa35a9bc7bc30e11d68ba8f7f0ce75b64d
-ms.sourcegitcommit: 31e0d94244c76a9f5118efee8bbc93395d080f91
+ms.openlocfilehash: 9174e953ebdd7f0032f411b99a814aeacd880a1e
+ms.sourcegitcommit: dd58ed6fd424272e361bc3c109ecd6d63d673048
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "23796886"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "25566891"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold---admin-help"></a>Eliminar elementos de la carpeta elementos recuperables de los buzones de correo basados en la nube en espera - ayuda de administración
 
@@ -33,16 +33,18 @@ La carpeta elementos recuperables para un buzón de Exchange Online existe para 
 
 [Paso 3: Quitar todas las suspensiones desde el buzón de correo](#step-3-remove-all-holds-from-the-mailbox)
 
-[Paso 4: Eliminar elementos de la carpeta elementos recuperables](#step-4-delete-items-in-the-recoverable-items-folder)
+[Paso 4: Quitar la suspensión de retraso desde el buzón de correo](#step-4-remove-the-delay-hold-from-the-mailbox)
 
-[Paso 5: Revertir el buzón de correo a su estado anterior](#step-5-revert-the-mailbox-to-its-previous-state)
+[Paso 5: Eliminar elementos de la carpeta elementos recuperables](#step-5-delete-items-in-the-recoverable-items-folder)
+
+[Paso 6: Revertir el buzón de correo a su estado anterior](#step-6-revert-the-mailbox-to-its-previous-state)
   
 > [!CAUTION]
 > Los procedimientos descritos en este artículo, se producirá datos que se va a eliminar de forma permanente (depuraron) de un buzón de Exchange Online. Es decir, los mensajes que se eliminan de la carpeta elementos recuperables no se pueden recuperar y no estarán disponibles para otros fines de cumplimiento de normas o de descubrimiento legal. Si desea eliminar los mensajes de un buzón que se pondrá en espera como parte de un juicio, conservación local, mantenga presionada la exhibición de documentos electrónicos o directiva de retención de Office 365 creado en la seguridad de Office 365 &amp; centro de cumplimiento, verificación con la administración de registros o con fines legales departamentos antes de quitar la suspensión. Su organización puede tener una directiva que define si un buzón de correo en espera o un incidente de pérdidas de datos tiene prioridad. 
   
 ## <a name="before-you-begin"></a>Antes de empezar
 
-- Se debe asignarse ambas de las siguientes funciones de administración de Exchange en línea para buscar y eliminar mensajes de la carpeta elementos recuperables en el paso 4.
+- Se debe asignarse ambas de las siguientes funciones de administración de Exchange en línea para buscar y eliminar mensajes de la carpeta elementos recuperables en el paso 5.
     
   - **Búsqueda de buzones** - esta función permite para buscar los buzones de correo en la organización. Los administradores de Exchange no están asignados a esta función de forma predeterminada. Para asignar manualmente este rol, agregar usted mismo como miembro del grupo de roles de administración de detección en Exchange Online. 
     
@@ -56,13 +58,13 @@ La carpeta elementos recuperables para un buzón de Exchange Online existe para 
   
 ## <a name="step-1-collect-information-about-the-mailbox"></a>Paso 1: Recopilar información acerca del buzón
 
-En este primer paso es recopilar las propiedades seleccionadas del buzón de destino que afectará a este procedimiento. Asegúrese de anotar estas opciones de configuración o guardarlos en un archivo de texto, ya que podrá cambiar algunas de estas propiedades y, a continuación, volver a los valores originales en el paso 5, después de eliminar los elementos de la carpeta elementos recuperables. Aquí es una lista de las propiedades del buzón de correo que necesita recopilar.
+En este primer paso es recopilar las propiedades seleccionadas del buzón de destino que afectará a este procedimiento. Asegúrese de anotar estas opciones de configuración o guardarlos en un archivo de texto, ya que podrá cambiar algunas de estas propiedades y, a continuación, volver a los valores originales en el paso 6, después de eliminar los elementos de la carpeta elementos recuperables. Aquí es una lista de las propiedades del buzón de correo que necesita recopilar.
   
 -  *SingleItemRecoveryEnabled* y *RetainDeletedItemsFor* ; Si es necesario, podrá deshabilitar la recuperación único y aumentar el período de retención de elementos eliminados en el paso 3. 
     
 -  *LitigationHoldEnabled* y *InPlaceHolds* ; deberá identificar todas las suspensiones colocadas en el buzón de correo para que se pueden quitar temporalmente en el paso 3. Vea la sección [obtener más información](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#moreinfo) para obtener sugerencias sobre cómo identificar la suspensión de tipo que se puede incluir en un buzón de correo. 
     
-Además, debe obtener el buzón de correo en configuración de acceso de cliente, por lo que puede deshabilitarlas temporalmente por lo que el propietario (u otros usuarios) no se pueden obtener acceso al buzón durante este procedimiento. Por último, puede obtener el tamaño actual y el número de elementos en la carpeta elementos recuperables. Después de eliminar elementos de la carpeta elementos recuperables en el paso 4, debe usar esta información para comprobar que realmente se han eliminado los elementos.
+Además, debe obtener el buzón de correo en configuración de acceso de cliente, por lo que puede deshabilitarlas temporalmente por lo que el propietario (u otros usuarios) no se pueden obtener acceso al buzón durante este procedimiento. Por último, puede obtener el tamaño actual y el número de elementos en la carpeta elementos recuperables. Después de eliminar elementos de la carpeta elementos recuperables en el paso 5, debe usar esta información para comprobar que realmente se han eliminado los elementos.
   
 1. [Conectarse a Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=396554). Asegúrese de usar un nombre de usuario y una contraseña para una cuenta de administrador que se ha asignado los roles de administración adecuada de Exchange Online. 
     
@@ -114,7 +116,7 @@ Además, debe obtener el buzón de correo en configuración de acceso de cliente
     Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems -Archive | FL Name,FolderAndSubfolderSize,ItemsInFolderAndSubfolders
     ```
 
-   Cuando elimina los elementos en el paso 4, puede elegir eliminar o no eliminar elementos de la carpeta elementos recuperables en el buzón del usuario principal del archivo. Tenga en cuenta que si está habilitado la ampliación automática de archivado para el buzón de correo, los elementos de un buzón de archivo auxiliar no se eliminará.
+   Cuando elimina los elementos en el paso 5, puede elegir eliminar o no eliminar elementos de la carpeta elementos recuperables en el buzón del usuario principal del archivo. Tenga en cuenta que si está habilitado la ampliación automática de archivado para el buzón de correo, los elementos de un buzón de archivo auxiliar no se eliminará.
   
 ## <a name="step-2-prepare-the-mailbox"></a>Paso 2: Preparar el buzón de correo
 
@@ -122,11 +124,11 @@ Después de recopilar y guardar información acerca del buzón, el siguiente pas
   
 - **Deshabilitar el acceso de cliente al buzón de correo** para que el propietario del buzón no se puede obtener acceso a sus buzones de correo y realizar cambios en los datos de buzones durante este procedimiento. 
     
-- **Aumentar el período de retención de elementos eliminados** en 30 días (el valor máximo en Exchange Online) para que no se purgan elementos desde la carpeta elementos recuperables antes de poder eliminar en el paso 4. 
+- **Aumentar el período de retención de elementos eliminados** en 30 días (el valor máximo en Exchange Online) para que no se purgan elementos desde la carpeta elementos recuperables antes de poder eliminar en el paso 5. 
     
-- **Deshabilitar la recuperación de elemento único** por lo los elementos no se conservan (para la duración del período de retención de elementos eliminados) después de eliminar de la carpeta elementos recuperables en el paso 4. 
+- **Deshabilitar la recuperación de elemento único** por lo los elementos no se conservan (para la duración del período de retención de elementos eliminados) después de eliminar de la carpeta elementos recuperables en el paso 5. 
     
-- **Deshabilitar el Asistente para carpeta administrada** por lo que no procesar el buzón de correo y conservar los elementos que se eliminan en el paso 4. 
+- **Deshabilitar el Asistente para carpeta administrada** por lo que no procesar el buzón de correo y conservar los elementos que se eliminan en el paso 5. 
     
 Realice los pasos siguientes en Exchange Online PowerShell.
   
@@ -162,7 +164,7 @@ Realice los pasos siguientes en Exchange Online PowerShell.
 
 ## <a name="step-3-remove-all-holds-from-the-mailbox"></a>Paso 3: Quitar todas las suspensiones desde el buzón de correo
 
-El último paso antes de eliminar los elementos de la carpeta elementos recuperables es quitar todas las suspensiones (que ha identificado en el paso 1) colocadas en el buzón de correo. Todas las suspensiones deben quitarse para que no se conservan los elementos después de eliminarlos de la carpeta elementos recuperables. Las secciones siguientes contienen información sobre cómo quitar distintos tipos de suspensiones en un buzón de correo. Vea la sección [obtener más información](#more-information) para obtener sugerencias sobre cómo identificar la suspensión de tipo que se puede incluir en un buzón de correo. 
+El último paso antes de eliminar los elementos de la carpeta elementos recuperables es quitar todas las suspensiones (que ha identificado en el paso 1) colocadas en el buzón de correo. Todas las suspensiones deben quitarse para que no se conservan los elementos después de eliminarlos de la carpeta elementos recuperables. Las secciones siguientes contienen información sobre cómo quitar distintos tipos de suspensiones en un buzón de correo. Vea la sección [obtener más información](#more-information) para obtener sugerencias sobre cómo identificar la suspensión de tipo que se puede incluir en un buzón de correo. Para obtener más información, vea [cómo se identifica el tipo de suspensión colocado en un buzón de Exchange Online](identify-a-hold-on-an-exchange-online-mailbox.md).
   
 > [!CAUTION]
 > Como se señaló anteriormente, compruebe con la administración de registros o departamentos legales antes de quitar una suspensión de un buzón de correo. 
@@ -208,7 +210,21 @@ Get-RetentionCompliancePolicy <retention policy GUID without prefix> | FL Name
 ```
 
 Después de identificar las directivas de retención de toda la organización Office 365, vaya a la **gobernanza de fecha** \> página de **retención** en la seguridad &amp; centro de cumplimiento, editar cada directiva de retención de toda la organización que ha identificado en el anterior paso y agregar el buzón de correo a la lista de destinatarios excluidos. De esta forma quitará el buzón del usuario de la directiva de retención. 
-  
+
+### <a name="office-365-retention-labels"></a>Etiquetas de retención de Office 365
+
+Cada vez que un usuario aplica una etiqueta que está configurada para conservar el contenido o retener y, a continuación, eliminar contenido a una carpeta o elemento en su buzón, la propiedad del buzón de correo de *ComplianceTagHoldApplied* se establece en **True**. Cuando esto sucede, se considera que el buzón se encuentra en suspensión, como si se colocan en suspensión por litigio o asignado a una directiva de retención de Office 365.
+
+Para ver el valor de la propiedad *ComplianceTagHoldApplied* , ejecute el siguiente comando en Exchange Online PowerShell:
+
+```
+Get-Mailbox <username> |FL ComplianceTagHoldApplied
+```
+
+Una vez que ha identificado que un buzón se encuentra en suspensión debido a que se aplica una etiqueta de retención a una carpeta o elemento, puede usar la herramienta de búsqueda de contenido en la seguridad & Centro de cumplimiento para buscar elementos etiquetados mediante el uso de la condición de búsqueda ComplianceTag. Para obtener más información, vea la sección "Las condiciones de búsqueda" en [las consultas de palabra clave y las condiciones de búsqueda para la búsqueda de contenido](keyword-queries-and-search-conditions.md#conditions-for-common-properties).
+
+Para obtener más información acerca de las etiquetas, vea [información general de Office 365 etiquetas](labels.md).
+
  ### <a name="ediscovery-case-holds"></a>contiene el caso de exhibición de documentos electrónicos
   
 Ejecute los siguientes comandos [seguridad &amp; PowerShell de centro de cumplimiento de normas](https://go.microsoft.com/fwlink/?linkid=627084) para identificar la suspensión asociada con un caso de exhibición de documentos electrónicos que se aplica a los buzones de correo. Usar el GUID (sin incluir el `UniH` prefijo) para la exhibición de documentos electrónicos espera que ha identificado en el paso 1. Tenga en cuenta que el segundo comando muestra el nombre de la suspensión está asociada; el caso de exhibición de documentos electrónicos el tercer comando muestra el nombre de la suspensión. 
@@ -227,7 +243,26 @@ $CaseHold.Name
 
 Una vez que ha identificado el nombre del caso de exhibición de documentos electrónicos y la suspensión, vaya a la **búsqueda &amp; investigación** \> página de **exhibición de documentos electrónicos** en la seguridad &amp; centro de cumplimiento, abra el caso y quitar el buzón de correo de la suspensión. Para obtener más información, vea [administrar casos de exhibición de documentos electrónicos en la seguridad de Office 365 &amp; centro de cumplimiento](manage-ediscovery-cases.md).
   
-## <a name="step-4-delete-items-in-the-recoverable-items-folder"></a>Paso 4: Eliminar elementos de la carpeta elementos recuperables
+## <a name="step-4-remove-the-delay-hold-from-the-mailbox"></a>Paso 4: Quitar la suspensión de retraso desde el buzón de correo
+
+Después de quita cualquier tipo de espera de un buzón de correo, el valor de la propiedad del buzón de correo de *DelayHoldApplied* se establece en **True**. Esto se denomina un *retraso suspensión* y significa que la eliminación real de la suspensión se retrasa durante 30 días impedir que los datos que se eliminan permanentemente (purga) desde el buzón de correo.   Cuando se coloca una suspensión de retraso en el buzón de correo, el buzón aún se considera que esté en espera para una duración ilimitada, como si el buzón estaba en suspensión por litigio. (El propósito de una suspensión de retraso es para dar a los administradores una oportunidad para buscar o recuperar los elementos del buzón de correo que se purgarán después de que se ha quitado una suspensión). Noe que después de 30 días, mantenga el retraso caduca y Office 365 automáticamente intenta quitar la suspensión de retraso (estableciendo la propiedad *DelayHoldApplied* en **False**) para que se quitarán realmente la suspensión. 
+
+Antes de eliminar los elementos en el paso 5, se debe quitar la suspensión de retraso desde el buzón de correo. Ejecute el siguiente comando en Exchange Online PowerShell para quitar la suspensión de retraso: 
+ 
+```
+Set-Mailbox <username> -RemoveDelayHoldApplied
+```
+Tenga en cuenta que debe ser asignado el rol de suspensión Legal en Exchange en línea para usar el parámetro *RemoveDelayHoldApplied* .
+
+Para comprobar que se ha quitado la suspensión de retraso, ejecute el siguiente comando.
+
+```
+Get-Mailbox <username> | FL DelayHoldApplied
+```
+
+El valor **False** para la propiedad *DelayHoldApplied* indica que se ha quitado el retraso.
+
+## <a name="step-5-delete-items-in-the-recoverable-items-folder"></a>Paso 5: Eliminar elementos de la carpeta elementos recuperables
 
 Ahora está listo para eliminar realmente los elementos en la carpeta elementos recuperables mediante el cmdlet [Search-Mailbox](https://go.microsoft.com/fwlink/?linkid=852595) en Exchange Online PowerShell. Dispone de tres opciones cuando se ejecuta el cmdlet **Search-Mailbox** . 
   
@@ -308,7 +343,7 @@ Ejecute el siguiente comando para obtener el tamaño y el número total de eleme
 Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems -Archive | FL Name,FolderAndSubfolderSize,ItemsInFolderAndSubfolders
 ```
   
-## <a name="step-5-revert-the-mailbox-to-its-previous-state"></a>Paso 5: Revertir el buzón de correo a su estado anterior
+## <a name="step-6-revert-the-mailbox-to-its-previous-state"></a>Paso 6: Revertir el buzón de correo a su estado anterior
 
 El paso final consiste en revertir el buzón de correo a su configuración anterior. Esto significa restablecer las propiedades que ha cambiado en el paso 2 y volver a aplicar las suspensiones que se quitan en el paso 3. Esto incluye:
   
@@ -389,7 +424,9 @@ Realice los pasos siguientes (en la secuencia especificada) en Exchange Online P
   
 ## <a name="more-information"></a>Más información
 
-Aquí es una tabla que describe cómo identificar diferentes tipos de suspensiones según los valores de la propiedad *InPlaceHolds* al ejecutar los cmdlets **Get-Mailbox** o **Get-OrganizationConfig** . Como ya se explica, tiene que quitar todas las suspensiones y las directivas de retención de Office 365 desde un buzón de correo antes de que pueden eliminar correctamente los elementos en la carpeta elementos recuperables. 
+Aquí es una tabla que describe cómo identificar diferentes tipos de suspensiones según los valores de la propiedad *InPlaceHolds* al ejecutar los cmdlets **Get-Mailbox** o **Get-OrganizationConfig** . Para obtener información más detallada, vea [cómo se identifica el tipo de suspensión colocado en un buzón de Exchange Online](identify-a-hold-on-an-exchange-online-mailbox.md).
+
+Como ya se explica, tiene que quitar todas las suspensiones y las directivas de retención de Office 365 desde un buzón de correo antes de que pueden eliminar correctamente los elementos en la carpeta elementos recuperables. 
   
 |**Tipo de suspensión**|**Valor de ejemplo**|**Cómo identificar la suspensión**|
 |:-----|:-----|:-----|
