@@ -13,12 +13,12 @@ ms.collection: Strat_O365_IP
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: Utilice este tema para obtener más información sobre con privilegios de acceso a la administración de Office 365
-ms.openlocfilehash: 07e1f9090418e4261fef188ceb109c1b8083d34c
-ms.sourcegitcommit: c168410974bc90aaf55f1dcaa9e05c09b2b78d76
+ms.openlocfilehash: e92bbecd5957261c1eaf3088d872ae6572b7f235
+ms.sourcegitcommit: 659b5f5b38ef7e838cdb44eaa38c18e48d922768
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "25011866"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "25575344"
 ---
 # <a name="privileged-access-management-in-office-365"></a>Con privilegios de acceso a la administración de Office 365
 
@@ -31,7 +31,7 @@ Con privilegios de acceso permite la administración de control de acceso granul
 
 Con privilegios de acceso de administración complementa otras protecciones de característica de datos y el acceso dentro de la arquitectura de seguridad de Office 365. Mediante la habilitación de la administración de acceso con privilegios como parte de un enfoque integrado para la seguridad y la protección de la organización, un modelo de seguridad por capas puede usarse para maximizar la protección de información confidencial y opciones de configuración de Office 365. Como se muestra en el siguiente diagrama, habilitar con privilegios ayuda a administración de acceso se basa en la protección que se proporcionan con el cifrado de datos de Office 365 nativo y el modelo de seguridad de control de acceso basado en funciones de servicios de Office 365. Cuando se usa junto con [la administración de identidades AD con privilegios de Azure](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure), estas dos características proporcionan control de acceso con acceso just-in-time en los distintos ámbitos.
 
-![Protección de capas en Office 365](media/pam-layered-protection.jpg)
+![Protección de capas en Office 365](media/pam-layered-protection.png)
 
 Con privilegios de acceso se puede definir y con ámbito en el nivel de **tarea** , mientras que la administración de identidades AD con privilegios de Azure aplica protección en el nivel de **función** con la capacidad de ejecutar varias tareas de administración de Office 365.  Administración de identidades de Azure con privilegios de AD principalmente permite la administración de acceso para grupos de roles y roles de AD, mientras obtener acceso con privilegios de administración de Office 365 se aplica sólo en el nivel de tarea.
 

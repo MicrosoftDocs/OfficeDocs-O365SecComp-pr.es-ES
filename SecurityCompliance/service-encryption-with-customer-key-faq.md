@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 41ae293a-bd5c-4083-acd8-e1a2b4329da6
 description: Además de la línea de base, el cifrado de nivel de volumen que se ha habilitado a través de BitLocker y Administrador de clave distribuida (DKM), Office 365 ofrece un nivel adicional de cifrado en el nivel de aplicación para el contenido de cliente de Office 365, incluidos los datos de Exchange En línea, Skype para la empresa, SharePoint Online y OneDrive para la empresa. Esto se denomina cifrado de servicio.
-ms.openlocfilehash: 38731d22b78274e42b0886c41884a0395d8df69f
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: ceba35233872bb65b7706ed4e11a263057adc6c1
+ms.sourcegitcommit: 659b5f5b38ef7e838cdb44eaa38c18e48d922768
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22559245"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "25575334"
 ---
 # <a name="service-encryption-with-customer-key-for-office-365-faq"></a>Preguntas más frecuentes sobre el cifrado de servicio con la clave de cliente para Office 365
 
@@ -29,8 +29,8 @@ Para proporcionar comentarios en la clave del cliente, incluida la documentació
   
 ## <a name="what-is-service-encryption-with-customer-key"></a>¿Qué es el cifrado de servicio con la clave de cliente?
 
-Clave de cliente es una característica que le permite aprovisionar y administrar las claves utilizadas para cifrar datos en reposo en Office 365. La característica aprovecha el cifrado de servicio, que es el cifrado que se lleva a cabo por Office 365 Exchange y SharePoint. Cifrado de servicio proporciona las ventajas más allá de lo que BitLocker puede proporcionar - es decir, mayor defensa en profundidad contra los atacantes. Cifrado de servicio es una contramedida segura si un atacante intenta omitir el sistema de control de acceso de Office 365 que se utiliza para procesar todas las solicitudes de acceso a datos de clientes. Esto es debido a que el cifrado de servicio significa que un administrador del servidor no tiene control o incluso obtener acceso a cifrado de claves y no puede deshabilitar el cifrado, a diferencia de con BitLocker. Por lo tanto, un atacante con acceso administrativo a un servidor que hospeda los datos de cliente que se cifró mediante el cifrado de servicio no podrá leer los datos del cliente e incluso si los datos cifrados se copian desactiva el servidor permanecerá inútil. 
-  
+Clave de cliente mejora la capacidad de la organización para satisfacer las demandas de los requisitos de cumplimiento de normas que especifican las condiciones de clave con el proveedor de servicios en la nube. Con la clave de cliente, proporcionar y controlar las claves de cifrado para su Office 365 datos almacenados en el nivel de aplicación. Como resultado, es posible que ejercer control y revocar las claves de la organización, debe decidir salir el servicio. Revocar las claves, los datos es que debe recibirlo al servicio. Revocación de clave es el primer paso en la ruta de acceso hacia la eliminación de datos.
+
 ## <a name="what-office-365-data-at-rest-is-covered-by-customer-key"></a>¿Qué datos Office 365 en reposo está cubiertas por clave de cliente?
 <a name="WhatDataIsCoveredbyCustomerKey"> </a>
 
@@ -222,7 +222,7 @@ No. Por definición, las suscripciones de prueba tienen una duración limitada. 
 
 Además de la administración de licencias necesarios para la clave de cliente, los clientes se incurrir en un costo para el uso de cámara de clave. [Detalles de los precios de Azure clave cámara](https://azure.microsoft.com/en-us/pricing/details/key-vault/) se describe el modelo de costo y le ayudarán a calcular. No hay ninguna forma para predecir el costo exacto que cualquier cliente incurrirá debido a que los patrones de uso pueden variar. La experiencia ha demostrado que el costo es muy bajo y que generalmente se encuentra dentro del intervalo de $0.002 a 0,005 $ por usuario al mes más el costo de las claves con respaldo de HSM. El costo también varían según la configuración del registro elegida por el cliente y la cantidad de almacenamiento de Azure usado para los registros del depósito de clave de Azure. 
   
-## <a name="for-more-information"></a>Más información
+## <a name="for-more-information"></a>Para obtener más información
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
 
 Para empezar con la clave de cliente, vea [controlar los datos de uso de la clave del cliente de Office 365](controlling-your-data-using-customer-key.md).
