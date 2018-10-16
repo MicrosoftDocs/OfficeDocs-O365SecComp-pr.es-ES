@@ -3,7 +3,7 @@ title: Quitar un usuario, un dominio o una dirección IP de una lista de bloquea
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 09/05/2018
+ms.date: 10/16/2018
 ms.audience: ITPro
 ms.topic: article
 f1_keywords:
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 description: Si un usuario envía continuamente mensajes de correo electrónico de Office 365 que se clasifica como correo no deseado, se bloqueará de enviar más mensajes.
-ms.openlocfilehash: 6665c405c62f75b77e7898419ebcfbc1c8c20f4c
-ms.sourcegitcommit: 7b85c22fc85ec19e4b44a07e91bfa9ade768185a
+ms.openlocfilehash: 295d92fc6a1cd26783b18304a2d119d2ea0d7f1f
+ms.sourcegitcommit: b164d4af65709133e0b512a4327a70fae13a974d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "23998614"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "25577069"
 ---
 # <a name="removing-a-user-domain-or-ip-address-from-a-block-list-after-sending-spam-email"></a>Quitar un usuario, un dominio o una dirección IP de una lista de bloqueados después de enviar correo no deseado
 
@@ -37,7 +37,7 @@ Complete esta tarea en la seguridad de Office 365 & Centro de cumplimiento (SCC)
 1. Utilizando una cuenta de trabajo o escuela que tiene privilegios de administrador global de Office 365, inicie sesión en el centro de cumplimiento y seguridad de Office 365 y en la lista de la izquierda, expanda **Administración de amenaza**, elija la **revisión**y, a continuación, elija **restringidos Los usuarios**.
     
     > [!TIP]
-    > Para ir directamente a la página **Usuarios restringidos** en la seguridad &amp; centro de cumplimiento, use esta dirección URL: >[https://protection.office.com/?hash=/restrictedusers](https://protection.office.com/?hash=/restrictedusers)
+    > Para ir directamente a la página **Usuarios restringidos** (anteriormente conocida como el centro de acción) en la seguridad &amp; centro de cumplimiento, use esta dirección URL: >[https://protection.office.com/?hash=/restrictedusers](https://protection.office.com/?hash=/restrictedusers)
 
 2. Esta página contendrá la lista de usuarios que se han bloqueado de envío de correo a fuera de la organización.  Busque el usuario que desea quitar restricciones en y, a continuación, haga clic en **desbloquear**.
 
@@ -48,20 +48,12 @@ Complete esta tarea en la seguridad de Office 365 & Centro de cumplimiento (SCC)
   
 ## <a name="third-party-block-lists"></a>Listas de bloqueados de terceros
 
-Exchange Online Protection también usa listas de bloqueo de otro fabricante para ayudar a tomar decisiones de filtrado de spam. Los usuarios, sitios, dominios y direcciones IP pueden agregarse a bloquear listas solo para que aparezca en un mensaje de spam. Como la administración de Office 365, debe intentar obtener estos objetos quitado de los proveedores de la lista de terceros si éstos pertenecen a usted. Use los vínculos en el debajo de la tabla para ponerse en contacto con cada tercero y, a continuación, siga las instrucciones.
-
-|**Nombre de la lista**|**Portal de eliminación de la lista**|**Más información**|
-|:-----|:-----|:-----|
-|URIBL  <br/> |[https://admin.uribl.com/?section=lookup](https://admin.uribl.com/?section=lookup) <br/> |[Sitio Web URIBL](https://uribl.com/) <br/> |
-|SURBL  <br/> |[http://www.surbl.org/surbl-analysis](http://www.surbl.org/surbl-analysis) <br/> |[Presentación de datos de reputación de URI SURBL](http://www.surbl.org/) <br/> |
-|Spamhaus   <br/> |[https://www.spamhaus.org/lookup/](https://www.spamhaus.org/lookup/) <br/> |[Descripción de filtrado de DNSBL](https://www.spamhaus.org/whitepapers/dnsbl_function/) <br/> |
-|invaluement  <br/> |[http://dnsbl.invaluement.com/lookup/](http://dnsbl.invaluement.com/lookup/) <br/> |[lista de lista contra correo no deseado](http://dnsbl.invaluement.com/) <br/> |
-|Phishtank  <br/> |[https://www.phishtank.com/](https://www.phishtank.com/) <br/> |[PhishTank preguntas más frecuentes](https://www.phishtank.com/faq.php) <br/> |
+Exchange Online Protection también usa listas de bloqueo de otro fabricante para ayudar a tomar decisiones de filtrado de spam. Los usuarios, sitios, dominios y direcciones IP pueden agregarse a bloquear listas solo para que aparezca en un mensaje de spam. Como la administración de Office 365, debe intentar obtener estos objetos quitado de los proveedores de la lista de terceros si éstos pertenecen a usted.
 
 > [!NOTE]
 > Si alguien de fuera de Office 365 no puede enviar mensajes a su cuenta de Office 365, puede ser su cuenta en la lista de remitentes bloqueados externo. Los usuarios externos a Office 365 pueden intentar quitar a sí mismos mediante el [portal de autoservicio de eliminación de la lista](https://docs.microsoft.com/en-us/office365/SecurityCompliance/use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis). 
 
-## <a name="for-more-information"></a>Más información
+## <a name="for-more-information"></a>Para obtener más información
 
 [Responder a una cuenta de correo electrónico en peligro](responding-to-a-compromised-email-account.md)
 

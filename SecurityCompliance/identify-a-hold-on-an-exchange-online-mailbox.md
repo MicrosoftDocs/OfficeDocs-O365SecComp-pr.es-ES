@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 description: Obtenga información sobre cómo identificar los distintos tipos de espera que se puede colocar en un buzón de Office 365. Estos tipos de suspensiones incluyen juicio, suspensiones de exhibición de documentos electrónicos y las directivas de retención de Office 365. También se puede determinar si un usuario se ha excluido de una directiva de retención de toda la organización
-ms.openlocfilehash: 375bd86df370fe34fbe59f6581836da7e9d06515
-ms.sourcegitcommit: 82fd4c85b952819157fbb13175c7b2dbbdff510f
+ms.openlocfilehash: 821ec2a8be9ecd89a13ad9ad0378bc6e24fcee1e
+ms.sourcegitcommit: b164d4af65709133e0b512a4327a70fae13a974d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "23965267"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "25577079"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Cómo identificar el tipo de retención en un buzón de Exchange Online
 
@@ -172,7 +172,7 @@ Para obtener más información acerca de las etiquetas, vea [información genera
 
 ## <a name="managing-mailboxes-on-delay-hold"></a>Administrar buzones de correo en retraso de suspensión
 
-Después de quita cualquier tipo de espera de un buzón de correo, el valor de la propiedad del buzón de correo de *DelayHoldApplied* se establece en **True**. Esto se denomina un *retraso suspensión* y significa que la eliminación real de la suspensión se retrasa durante 30 días impedir que los datos que se eliminan permanentemente (purga) desde el buzón de correo. Esto da a los administradores una oportunidad para buscar o recuperar los elementos del buzón de correo que se purgarán después de que realmente se ha quitado la suspensión. Cuando se coloca una suspensión de retraso en el buzón de correo, el buzón aún se considera que esté en espera para una duración ilimitada, como si el buzón estaba en suspensión por litigio. Después de 30 días, expira la suspensión de retraso, y Office 365 automáticamente intenta quitar la suspensión de retraso (estableciendo la propiedad *DelayHoldApplied* en **False**) para que se quitarán realmente la suspensión. Después de la propiedad *DelayHoldApplied* en **False**, los elementos que están marcados para eliminación se purgarán la próxima vez que se procesa el buzón de correo mediante el Asistente para carpeta administrada.
+Después de quita cualquier tipo de espera de un buzón de correo, el valor de la propiedad del buzón de correo de *DelayHoldApplied* se establece en **True**. Esto se produce la próxima vez que el Asistente para carpeta administrada procesa el buzón de correo y detecta que se ha quitado una suspensión. Esto se denomina un *retraso suspensión* y significa que la eliminación real de la suspensión se retrasa durante 30 días impedir que los datos que se eliminan permanentemente (purga) desde el buzón de correo. Esto da a los administradores una oportunidad para buscar o recuperar los elementos del buzón de correo que se purgarán después de que realmente se ha quitado la suspensión. Cuando se coloca una suspensión de retraso en el buzón de correo, el buzón aún se considera que esté en espera para una duración ilimitada, como si el buzón estaba en suspensión por litigio. Después de 30 días, expira la suspensión de retraso, y Office 365 automáticamente intenta quitar la suspensión de retraso (estableciendo la propiedad *DelayHoldApplied* en **False**) para que se quitarán realmente la suspensión. Después de la propiedad *DelayHoldApplied* en **False**, los elementos que están marcados para eliminación se purgarán la próxima vez que se procesa el buzón de correo mediante el Asistente para carpeta administrada.
 
 Para ver el valor de la propiedad *DelayHoldApplied* para un buzón de correo, ejecute el siguiente comando en Exchange Online PowerShell.
 

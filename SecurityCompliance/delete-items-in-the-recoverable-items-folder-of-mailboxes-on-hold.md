@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: 'Para los administradores: eliminar elementos de carpeta de elementos recuperables de un usuario para un buzón de Exchange Online, incluso si ese buzón se coloca en retención legal. Esto es una forma eficaz para eliminar los datos que se ha derramado accidentalmente en Office 365.'
-ms.openlocfilehash: 9174e953ebdd7f0032f411b99a814aeacd880a1e
-ms.sourcegitcommit: dd58ed6fd424272e361bc3c109ecd6d63d673048
+ms.openlocfilehash: a10965ad088da98b4e4d84d823c124e5b192d505
+ms.sourcegitcommit: b164d4af65709133e0b512a4327a70fae13a974d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/15/2018
-ms.locfileid: "25566891"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "25577089"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold---admin-help"></a>Eliminar elementos de la carpeta elementos recuperables de los buzones de correo basados en la nube en espera - ayuda de administración
 
@@ -245,22 +245,22 @@ Una vez que ha identificado el nombre del caso de exhibición de documentos elec
   
 ## <a name="step-4-remove-the-delay-hold-from-the-mailbox"></a>Paso 4: Quitar la suspensión de retraso desde el buzón de correo
 
-Después de quita cualquier tipo de espera de un buzón de correo, el valor de la propiedad del buzón de correo de *DelayHoldApplied* se establece en **True**. Esto se denomina un *retraso suspensión* y significa que la eliminación real de la suspensión se retrasa durante 30 días impedir que los datos que se eliminan permanentemente (purga) desde el buzón de correo.   Cuando se coloca una suspensión de retraso en el buzón de correo, el buzón aún se considera que esté en espera para una duración ilimitada, como si el buzón estaba en suspensión por litigio. (El propósito de una suspensión de retraso es para dar a los administradores una oportunidad para buscar o recuperar los elementos del buzón de correo que se purgarán después de que se ha quitado una suspensión). Noe que después de 30 días, mantenga el retraso caduca y Office 365 automáticamente intenta quitar la suspensión de retraso (estableciendo la propiedad *DelayHoldApplied* en **False**) para que se quitarán realmente la suspensión. 
+Después de quita cualquier tipo de espera de un buzón de correo, el valor de la propiedad del buzón de correo de *DelayHoldApplied* se establece en **True**. Esto se produce la próxima vez que el Asistente para carpeta administrada procesa el buzón de correo y detecta que se ha quitado una suspensión. Esto se denomina un *retraso suspensión* y significa que la eliminación real de la suspensión se retrasa durante 30 días evitar que los datos se va a eliminar de forma permanente desde el buzón de correo. (El propósito de una suspensión de retraso es para dar a los administradores una oportunidad para buscar o recuperar los elementos del buzón de correo que se purgarán después de que se ha quitado una suspensión).  Cuando se coloca una suspensión de retraso en el buzón de correo, el buzón aún se considera que esté en espera para una duración ilimitada, como si el buzón estaba en suspensión por litigio. Después de 30 días, expira la suspensión de retraso, y Office 365 automáticamente intenta quitar la suspensión de retraso (estableciendo la propiedad *DelayHoldApplied* en **False**) para que realmente se ha quitado la suspensión. 
 
-Antes de eliminar los elementos en el paso 5, se debe quitar la suspensión de retraso desde el buzón de correo. Ejecute el siguiente comando en Exchange Online PowerShell para quitar la suspensión de retraso: 
- 
-```
-Set-Mailbox <username> -RemoveDelayHoldApplied
-```
-Tenga en cuenta que debe ser asignado el rol de suspensión Legal en Exchange en línea para usar el parámetro *RemoveDelayHoldApplied* .
-
-Para comprobar que se ha quitado la suspensión de retraso, ejecute el siguiente comando.
+Antes de eliminar los elementos en el paso 5, se debe quitar la suspensión de retraso desde el buzón de correo. En primer lugar, determine si la suspensión de retraso se aplica a los buzones de correo ejecutando el siguiente comando en Exchange Online PowerShell:
 
 ```
 Get-Mailbox <username> | FL DelayHoldApplied
 ```
 
-El valor **False** para la propiedad *DelayHoldApplied* indica que se ha quitado el retraso.
+Si el valor de la propiedad *DelayHoldApplied* se establece en **False**, no se ha colocado una suspensión de retraso en el buzón de correo. Puede ir al paso 5 y eliminar elementos en la carpeta elementos recuperables.
+
+Si el valor de la propiedad *DelayHoldApplied* se establece en **True**, ejecute el comando siguiente para quitar la suspensión de retraso:
+
+```
+Set-Mailbox <username> -RemoveDelayHoldApplied
+```
+Tenga en cuenta que debe ser asignado el rol de suspensión Legal en Exchange en línea para usar el parámetro *RemoveDelayHoldApplied* .
 
 ## <a name="step-5-delete-items-in-the-recoverable-items-folder"></a>Paso 5: Eliminar elementos de la carpeta elementos recuperables
 
