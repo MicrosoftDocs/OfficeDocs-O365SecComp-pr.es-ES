@@ -70,7 +70,7 @@
 ## [Protección contra correo no deseado y malware](anti-spam-and-anti-malware-protection.md)
 ### [Protección contra suplantación de identidad (phishing) en Office 365](anti-phishing-protection.md)
 #### [Funciones de ATP contra suplantación de identidad en Office 365](atp-anti-phishing.md)
-#### [Configurar las directivas de ATP contra suplantación de identidad de Office 365](set-up-atp-anti-phishing-policies.md)
+#### [Configurar directivas contra suplantación de identidad y directivas contra suplantación de identidad de ATP](set-up-anti-phishing-policies.md)
 #### [Cómo Office 365 valida la dirección del remitente para evitar la suplantación de identidad](how-office-365-validates-the-from-address.md)
 ### [Protección contra suplantación de identidad en Office 365](anti-spoofing-protection.md)
 #### [Obtenga más información sobre la inteligencia de suplantación de identidad](learn-about-spoof-intelligence.md)
