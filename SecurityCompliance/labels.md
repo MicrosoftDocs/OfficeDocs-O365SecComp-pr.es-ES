@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Las etiquetas de retención de Office 365 ayudan a realizar las acciones adecuadas en el contenido adecuado. Con las etiquetas de retención, puede clasificar los datos de su organización para administrarlos mejor y aplicar reglas de retención basadas en esa clasificación. También puede usar etiquetas de retención para implementar la administración de registros en Office 365.
-ms.openlocfilehash: 4816770575d704d54e8a988142d3115d6fc549e8
-ms.sourcegitcommit: 397a5fe594e4cf4bb64c0c6f233d310ef3cbd922
+ms.openlocfilehash: 7892cb54bff510cd4868b05385fd25fc440d9c49
+ms.sourcegitcommit: 49b565f6a57febe53f331b2605d6a06d11e2d0be
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "25540436"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "25638024"
 ---
 # <a name="overview-of-retention-labels"></a>Introducción a las etiquetas de retención
 
@@ -275,7 +275,7 @@ Puede aplicar automáticamente etiquetas de retención a contenido que cumpla de
 
 Para obtener más información sobre la sintaxis de consultas, vea:
 
-- [Referencia de la sintaxis del lenguaje de consultas de palabras clave (KQL)](https://docs.microsoft.com/es-ES/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
+- [Referencia de la sintaxis del lenguaje de consultas de palabras clave (KQL)](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
 Las etiquetas de retención basadas en consultas usan el índice de búsqueda para identificar contenido.
   
@@ -441,7 +441,7 @@ Estos permisos solo son necesarios para crear y aplicar etiquetas de retención 
 
 Para usar los cmdlets de etiquetas, necesita:
   
-1. [Conectarse al Centro de seguridad y cumplimiento de Office 365 mediante PowerShell remoto](http://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
+1. [Conectarse al Centro de seguridad y cumplimiento de Office 365 mediante PowerShell remoto](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)
     
 2. Usar estos [Cmdlets del Centro de seguridad y cumplimiento de Office 365](http://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)
     
