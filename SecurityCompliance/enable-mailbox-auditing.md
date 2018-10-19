@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 description: En Office 365, puede activar registro de auditoría de buzón de correo para registrar el acceso a buzones de correo por los propietarios de los buzones de correo, delegados y los administradores. De forma predeterminada, la auditoría de buzón de correo en Office 365 no está activada. Después de habilitar la auditoría de buzón de correo para un buzón de correo, puede buscar en el registro de auditoría de Office 365 para actividades que se realizan en el buzón de correo.
-ms.openlocfilehash: 9952cc94fe48e289e6eaf8de665a82cb3da4746d
-ms.sourcegitcommit: b6473cd6ba3f9ac79dc6a2040fc148020dfbe464
+ms.openlocfilehash: 6d3de226e7c0e03be824b14e1b16fadaae3f040e
+ms.sourcegitcommit: 8294182d4dd124f035a221de0b90159ef7eec4ae
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "25358389"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "25639669"
 ---
 # <a name="enable-mailbox-auditing-in-office-365"></a>Habilitar la auditoría de buzones de correo en Office 365
   
@@ -28,8 +28,6 @@ En Office 365, puede activar registro de auditoría de buzón de correo para reg
 ## <a name="before-you-begin"></a>Antes de empezar
   
 - Se debe usar Exchange Online PowerShell para habilitar el buzón de registro de auditoría. No se puede usar la seguridad de Office 365 &amp; centro de cumplimiento o el centro de administración de Exchange.
-    
-- Después de habilitar la auditoría de buzón de correo para un buzón de correo, acceso a las acciones de buzón de correo y determinados admin y delegado se registran de forma predeterminada. Para registrar las acciones realizadas por el propietario del buzón, debe especificar qué acciones de propietario para auditar. Vea la sección "Más información" para ver una lista de acciones que se registran después de registro de auditoría de buzón de correo está habilitada, y las acciones que están disponibles para cada tipo de inicio de sesión de usuario.
     
 - No se puede habilitar el registro para el buzón de correo que está asociado con un grupo de Office 365 o a un equipo en Microsoft Teams de auditoría de buzón de correo.
     
@@ -45,7 +43,7 @@ En Office 365, puede activar registro de auditoría de buzón de correo para reg
 
 2. En el cuadro de diálogo **Solicitud de credenciales de Windows PowerShell**, escriba el nombre de usuario y la contraseña de una cuenta de administrador global de Office 365 y, después, haga clic en **Aceptar**.
     
-3. Ejecute el comando siguiente:
+3. Ejecute el siguiente comando:
     
     ```
     $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
@@ -83,7 +81,7 @@ Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox
   
 ## <a name="step-3-specify-owner-actions-to-audit"></a>Paso 3: Especificar las acciones de propietario que se auditarán
 
-Al habilitar la auditoría para un buzón de correo, sólo una acción ( **UpdateFolderPermissions** ) realizada por el propietario del buzón se audita de forma predeterminada. Es necesario especificar otras acciones de propietario para auditar. Vea la tabla en la sección "Acciones de buzón de correo" para una lista y una descripción de las acciones de propietario que se pueden auditar. 
+Al habilitar la auditoría para un buzón de correo, algunas acciones realizadas por el propietario del buzón se auditan de forma predeterminada. Es necesario especificar otras acciones de propietario para auditar. Vea la tabla en la sección de [acciones de auditoría de buzón de correo](#mailbox-auditing-actions) de una lista y una descripción de las acciones de propietario que se registran de forma predeterminada y las otras acciones que se pueden auditar. 
   
 En este ejemplo se agregan las acciones de propietario **MailboxLogin** y **HardDelete** en buzón de auditoría de buzón de correo del Pilar Pinilla. En este ejemplo se da por supuesto que el auditoría de buzón de correo ya se ha habilitado para este buzón de correo. 
 
@@ -123,7 +121,7 @@ Un valor de **True** para la propiedad **AuditEnabled** comprueba que auditoría
     
 ## <a name="mailbox-auditing-actions"></a>Acciones de auditoría de buzón de correo
   
-En la siguiente tabla se enumera las acciones que se pueden registrar por buzón de registro de auditoría. La tabla incluye la acción que se puede registrar para los tipos de inicio de sesión de usuario diferente. En la tabla, un **No** indica que no se puede registrar una acción para ese tipo de inicio de sesión. Un asterisco ( **\*** ) indica que la acción se registra de forma predeterminada cuando el registro de auditoría de buzón de correo está habilitado para el buzón de correo. Como se ha indicado anteriormente, la acción de propietario sólo que se audita de manera predeterminada cuando se activa la auditoría de buzón de correo es UpdateFolderPermissions. Para iniciar otras acciones realizadas por el propietario del buzón, debe especificar acciones de propietario adicionales para auditar. Para ello, vea el [paso 3](#step-3-specify-owner-actions-to-audit) de este tema. 
+En la siguiente tabla se enumera las acciones que se pueden registrar por buzón de registro de auditoría. La tabla incluye la acción que se puede registrar para los tipos de inicio de sesión de usuario diferente. En la tabla, un **No** indica que no se puede registrar una acción para ese tipo de inicio de sesión. Un asterisco ( **\*** ) indica que la acción se registra de forma predeterminada cuando el registro de auditoría de buzón de correo está habilitado para el buzón de correo. 
   
 |**Acción**|**Descripción**|**Administrador**|**Delegado\*\*\***|**Propietario**|
 |:-----|:-----|:-----|:-----|:-----|
@@ -146,9 +144,9 @@ En la siguiente tabla se enumera las acciones que se pueden registrar por buzón
 > [!NOTE]
 > <sup>\*</sup> Se audita de forma predeterminada si la auditoría está habilitada para un buzón.<br/><br/>  <sup>\*\*</sup>Se consolidan las entradas para acciones realizadas por los delegados de enlazar la carpeta. Se genera una entrada de registro para el acceso de carpeta individuales dentro de un intervalo de tiempo de 24 horas.<br/><br/><sup>\*\*\*</sup>Un administrador que se ha asignado el permiso acceso total al buzón de un usuario se considera un usuario delegado. 
   
-Si ya no necesita determinados tipos de acciones de buzón de correo que se va a auditar, debe modificar la configuración de registro de auditoría del buzón para deshabilitar esas acciones. Las entradas de registro existentes no se purgan hasta que se alcanza el límite de edad de 90 días para las entradas de registro de auditoría.
+Si ya no necesita determinados tipos de acciones de buzón de correo que se va a auditar, debe modificar la configuración de registro de auditoría del buzón para deshabilitar esas acciones. Las entradas de registro existentes no se purgan hasta que se alcanza el límite de antigüedad de retención para las entradas de registro de auditoría. Para obtener más información acerca de la antigüedad de retención para las entradas de registro de auditoría, consulte la sección "antes de empezar" en [el registro de auditoría en el centro de cumplimiento de seguridad de Office 365 y de búsqueda](search-the-audit-log-in-security-and-compliance.md#before-you-begin).
   
-## <a name="more-infotab"></a>[Obtener más información](#tab/)
+## <a name="more-infotab"></a>[Más información](#tab/)
   
 - Usar el registro de auditoría de Office 365 para buscar actividad de buzón de correo que se hayan registrado. Puede buscar de la actividad de un buzón de usuario específico. La siguiente captura de pantalla muestra una lista de actividades de buzón de correo que se pueden buscar en el registro de auditoría de Office 365. Tenga en cuenta que estas actividades son las mismas acciones que se describen en la sección "Acciones de auditoría de buzón" en este tema.
     

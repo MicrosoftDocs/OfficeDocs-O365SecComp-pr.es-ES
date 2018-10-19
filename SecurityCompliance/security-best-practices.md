@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 9295e396-e53d-49b9-ae9b-0b5828cdedc3
 description: Minimizar el potencial de una infracción de datos o una cuenta en peligro siguiendo estos procedimientos recomendados.
-ms.openlocfilehash: 63bda11afdd1e02e9e12e8c505aca7100c4deade
-ms.sourcegitcommit: a36d2692396786f49c8765c65145e5093578e9a1
+ms.openlocfilehash: 0d3dc30a9975f2ed8fe6d524b4fc67918b34e51d
+ms.sourcegitcommit: 49b565f6a57febe53f331b2605d6a06d11e2d0be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "25498096"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "25638004"
 ---
 # <a name="security-best-practices-for-office-365"></a>Procedimientos recomendados de seguridad para Office 365
 
@@ -44,7 +44,7 @@ Acceso seguro puntuación en [https://SecureScore.office.com](https://SecureScor
 
 MFA agrega una capa adicional de protección a una estrategia de contraseña segura por requerir que los usuarios a una llamada de teléfono, mensaje de texto o una notificación de la aplicación en su teléfono inteligente después de escribir correctamente su contraseña. Con MFA en su lugar, las cuentas de usuario de Office 365 todavía están protegidas contra el acceso no autorizado, incluso si se ve comprometida una contraseña de usuario. Las cuentas están protegidas porque no se concede acceso a una cuenta hasta después de que se haya probado el desafío adicional. Una contraseña en peligro o robada no es suficiente.
   
-- [Planeación de la autenticación multifactor para las implementaciones de Office 365](https://support.office.com/article/043807b2-21db-4d5c-b430-c8a6dee0e6ba)
+- [Plan de Multi-Factor Authentication para implementaciones de Office 365](https://support.office.com/article/043807b2-21db-4d5c-b430-c8a6dee0e6ba)
     
 - [Configurar autenticación multifactor para usuarios de Office 365](https://support.office.com/article/8f0454b2-f51a-4d9c-bcde-2c48e41621c6)
     
@@ -90,7 +90,7 @@ DLP permite identificar datos confidenciales y crear directivas que ayudan a imp
   
 ## <a name="use-customer-lockbox"></a>Use la caja de seguridad del cliente
 
-Como un administrador de Office 365, puede usar la caja de seguridad de cliente para controlar cómo un ingeniero de soporte técnico de Microsoft tiene acceso a los datos durante una sesión de ayuda. En los casos donde el ingeniero requiere acceso a los datos para solucionar problemas y corregir un problema, caja de seguridad de cliente permite aprobar o rechazar la solicitud de acceso. Si aprobarlo, el ingeniero puede tener acceso a los datos. Cada solicitud tiene un tiempo de expiración y una vez que se resuelve el problema, se cierra la solicitud y se revoca el acceso. Caja de seguridad del cliente se incluye en el plan de Office 365 Enterprise 5, o puede comprar una suscripción independiente con cualquier otro plan de enterprise de Office 365. Para obtener información, vea [Office 365 las solicitudes de caja de seguridad del cliente](https://support.office.com/article/36f9cdd1-e64c-421b-a7e4-4a54d16440a2).
+Como un administrador de Office 365, puede usar la caja de seguridad de cliente para controlar cómo un ingeniero de soporte técnico de Microsoft tiene acceso a los datos durante una sesión de ayuda. En los casos donde el ingeniero requiere acceso a los datos para solucionar problemas y corregir un problema, caja de seguridad de cliente permite aprobar o rechazar la solicitud de acceso. Si aprobarlo, el ingeniero puede tener acceso a los datos. Cada solicitud tiene un tiempo de expiración y una vez que se resuelve el problema, se cierra la solicitud y se revoca el acceso. Caja de seguridad del cliente se incluye en el plan de Office 365 Enterprise E5, o puede comprar una suscripción independiente con cualquier otro plan de enterprise de Office 365. Para obtener información, vea [Office 365 las solicitudes de caja de seguridad del cliente](https://support.office.com/article/36f9cdd1-e64c-421b-a7e4-4a54d16440a2).
   
 ## <a name="try-it-yourself"></a>Pruébelo
 <a name="SecureScore"> </a>

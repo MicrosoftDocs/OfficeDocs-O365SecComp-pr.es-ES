@@ -3,7 +3,7 @@ title: Habilite el complemento de mensajes de informe
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 10/04/2018
+ms.date: 10/18/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,18 +13,27 @@ search.appverid:
 - MOE150
 ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 description: Obtenga información sobre cómo habilitar el complemento en el mensaje de informe para Outlook y Outlook en el web, para usuarios individuales o de toda la organización.
-ms.openlocfilehash: 2eb12bd14f92e2d4ee26fbef817578d32e737b85
-ms.sourcegitcommit: e14dec9bed0c0009acbc1f1cb80b4d0794ad5739
+ms.openlocfilehash: ad07d594a78b8134984b48f08898ad1ba697e03a
+ms.sourcegitcommit: 49b565f6a57febe53f331b2605d6a06d11e2d0be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "25435097"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "25638014"
 ---
 # <a name="enable-the-report-message-add-in"></a>Habilite el complemento de mensajes de informe
 
-El mensaje de informe complemento para Outlook permite que las personas que desea incorporar fácilmente clasificación incorrecta de correo electrónico, si seguros o malintencionado, Microsoft y sus filiales para el análisis. Microsoft utiliza estos envíos para mejorar la eficacia de las tecnologías de protección de correo electrónico. Además, si su organización usa servicios de Microsoft Cloud que incluyen [La protección de amenaza avanzada de Office 365](office-365-atp.md) o [Información sobre amenazas](office-365-ti.md), el complemento en el mensaje de informe proporciona el equipo de seguridad de su organización con información útil Puede usar para revisar y actualizar las directivas de seguridad. 
+## <a name="overview"></a>Información general
 
-Por ejemplo, suponga que las personas son informes una gran cantidad de mensajes como suplantación de identidad. Superficies de esta información en el [Panel de seguridad](security-dashboard.md) y otros informes. Equipo de seguridad de su organización puede usar esta información como una indicación de que las directivas contra suplantación de identidad es posible que deba actualizarse. O bien, si las personas informa de una gran cantidad de mensajes que se han marcado como correo no deseado como no deseado mediante el uso del complemento en el mensaje de informe, equipo de seguridad de su organización es posible que necesite ajustar [las directivas contra correo no deseadas](configure-the-anti-spam-policies.md).  
+El mensaje de informe complemento para Outlook y Outlook en el Web permite que las personas que desea incorporar fácilmente clasificación incorrecta de correo electrónico, si seguros o malintencionado, Microsoft y sus filiales para el análisis. Microsoft utiliza estos envíos para mejorar la eficacia de las tecnologías de protección de correo electrónico. Además, si su organización usa [Protección de amenaza avanzada de Office 365](office-365-atp.md) o [Información sobre amenazas de Office 365](office-365-ti.md), el complemento en el mensaje de informe proporciona equipo de seguridad de su organización con información útil que puedan usar para revisar y actualizar directivas de seguridad. 
+
+Por ejemplo, suponga que las personas son informes una gran cantidad de mensajes como suplantación de identidad. Superficies de esta información en el [Panel de seguridad](security-dashboard.md) y otros informes. Equipo de seguridad de su organización puede usar esta información como una indicación de que las directivas contra suplantación de identidad es posible que deba actualizarse. O bien, si las personas informa de una gran cantidad de mensajes que se han marcado como correo no deseado como no deseado mediante el uso del complemento en el mensaje de informe, equipo de seguridad de su organización es posible que necesite ajustar [las directivas contra correo no deseadas](configure-the-anti-spam-policies.md). 
+
+El complemento en el mensaje de informe funciona con la suscripción de Office 365 y los siguientes productos:
+ - Outlook en la Web
+ - Outlook 2013 SP1
+ - Outlook 2016
+ - Outlook 2016 para Mac
+ - Outlook incluido con Office 365 ProPlus
   
 Si es un usuario individual, se puede [Habilitar el complemento en el mensaje de informe para usted mismo](#get-the-report-message-add-in-for-yourself). 
   
@@ -77,32 +86,15 @@ Como un paso siguiente, obtenga información sobre cómo [usar el complemento en
     
 11. Especificar quién obtiene el mensaje de informe de complemento. <br/>![Especificar quién obtiene el mensaje de informe de complemento](media/ReportMessageChooseWhoGetsItAdminSettings.png)<br/>
 
-12. Elija **Guardar**.
+12. Elija **Guardar**. <br/>
+> [!TIP]
+> Se recomienda [Configurar una regla para obtener una copia de los mensajes de correo electrónico que notifica a los usuarios](#set-up-a-rule-to-get-a-copy-of-email-messages-reported-by-your-users)
 
-Dependiendo de lo que seleccionada utilizando al asistente, las personas de su organización tendrán el mensaje de informe complemento disponible. Las personas de su organización verán los iconos siguientes: 
+Dependiendo de lo que seleccionada utilizando al asistente, las personas de su organización tendrán el [complemento en el mensaje de informe](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2) disponibles. Las personas de su organización verán los iconos siguientes: 
 
 - En Outlook el icono tiene el siguiente aspecto: <br/> ![Icono informe de mensaje, complemento para Outlook](media/OutlookReportMessageIcon.png)<br/>
 - En Outlook Web App el icono tiene el siguiente aspecto:<br/>![Outlook en el icono mensaje de informe de Web, complemento](media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)<br/>
 
-
-A continuación, obtenga información sobre cómo [usar el complemento en el mensaje de informe](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)y configurar una regla para ver los mensajes de correo electrónico ha informado.
-
-## <a name="review-or-edit-the-default-settings-for-the-report-message-add-in"></a>Revisar o modificar la configuración predeterminada para el complemento en el mensaje de informe
-
-Puede revisar y modificar la configuración predeterminada para el complemento de mensaje de informe mediante el centro de administración. 
-
-> [!IMPORTANT]
-> Debe ser un administrador global de Office 365 o un administrador de Exchange Online para llevar a cabo esta tarea.
-    
-1. Si sólo ha instalado el complemento en el mensaje de informe para su organización, ya estará en la página Servicios & complementos. De lo contrario, vaya [aquí](https://portal.office.com/adminportal/home#/Settings/ServicesAndAddIns) e iniciar sesión con su cuenta de trabajo o escuela para Office 365.
-
-2. Buscar **Mensaje de informe**y, a continuación, selecciónelo.<br/>![Servicios y complementos para Office 365](media/ReportMessage-o365servicesaddins.png)<br/> 
-    
-3. Se abre un panel que muestra la configuración que se han seleccionado para el complemento en el mensaje de informe durante la implementación.<br/>![Configuración para el complemento en el mensaje de informe](media/ReportMessage-reviewaddinsettings.png)<br/> 
-
-4. Revise y si es necesario, modificar la configuración para el complemento en el mensaje de informe y, a continuación, guarde los cambios.
-    
-  
 ## <a name="set-up-a-rule-to-get-a-copy-of-email-messages-reported-by-your-users"></a>Configurar una regla para obtener una copia de los mensajes de correo electrónico que notifica a los usuarios
 
 > [!IMPORTANT]
@@ -137,6 +129,25 @@ Puede configurar una regla para obtener una copia de los mensajes de correo elec
 10. Elija **Guardar**. 
     
 Con esta regla en su lugar, siempre que una persona de su organización notifica un mensaje de correo electrónico mediante el complemento de mensaje de informe, el administrador global, Administrador de seguridad o lector de seguridad recibirá una copia de ese mensaje. Puede habilitar esta información le permite configurar o ajustar las directivas, como las directivas de [Office 365 ATP seguros vínculos](atp-safe-links.md) . 
+
+## <a name="review-or-edit-the-default-settings-for-the-report-message-add-in"></a>Revisar o modificar la configuración predeterminada para el complemento en el mensaje de informe
+
+Puede revisar y modificar la configuración predeterminada para el complemento de mensaje de informe mediante el centro de administración. 
+
+> [!IMPORTANT]
+> Debe ser un administrador global de Office 365 o un administrador de Exchange Online para llevar a cabo esta tarea.
+    
+1. Si sólo ha instalado el complemento en el mensaje de informe para su organización, ya estará en la página Servicios & complementos. De lo contrario, vaya [aquí](https://portal.office.com/adminportal/home#/Settings/ServicesAndAddIns) e iniciar sesión con su cuenta de trabajo o escuela para Office 365.
+
+2. Buscar **Mensaje de informe**y, a continuación, selecciónelo.<br/>![Servicios y complementos para Office 365](media/ReportMessage-o365servicesaddins.png)<br/> 
+    
+3. Se abre un panel que muestra la configuración que se han seleccionado para el complemento en el mensaje de informe durante la implementación.<br/>![Configuración para el complemento en el mensaje de informe](media/ReportMessage-reviewaddinsettings.png)<br/> 
+
+4. Revise y si es necesario, modificar la configuración para el complemento en el mensaje de informe y, a continuación, guarde los cambios.
+    
+## <a name="learn-how-to-use-the-report-message-add-in"></a>Obtenga información sobre cómo usar el complemento en el mensaje de informe
+
+Cómo [usar el complemento en el mensaje de informe](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
   
 ## <a name="related-topics"></a>Temas relacionados
 
