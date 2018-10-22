@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 34823bbc-a3e3-4949-ba42-97c73997eeed
 description: Obtenga información sobre cómo separar el correo electrónico real del correo no deseado y evitar que se marque como correo no deseado en Office 365.
-ms.openlocfilehash: 05fb9858adb279d74368fc979db44cfd84b7f71e
-ms.sourcegitcommit: ede6230c2df398dc0a633e8f32ee0bfede0d5142
+ms.openlocfilehash: f7ba560b4eb30abcda4c97617ead883659558bd8
+ms.sourcegitcommit: 6d72cdb882b93edf6dfddb5ff2e6d8a16e2fa0bc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "25002643"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "25596723"
 ---
 # <a name="how-to-prevent-real-email-from-being-marked-as-spam-in-office-365"></a>Evitar que el correo electrónico real se marque como correo no deseado en Office 365
 
@@ -59,7 +59,7 @@ Para funcionar correctamente, Exchange Online Protection (EOP) necesita que los 
     
 - **Deshabilitar el filtro SmartScreen en Outlook** Si los usuarios usan el cliente para equipo de escritorio de Outlook, tendrán que deshabilitar la función de filtro SmartScreen, que se considera descontinuada. Si está habilitada, puede causar falsos positivos. Esto no es necesario si se ejecuta una versión actualizada del cliente de Outlook para equipo de escritorio. 
     
-- **Activar el complemento Denunciar mensaje para los usuarios** Es muy recomendable que [habilite el complemento Denunciar mensaje para los usuarios](enable-the-report-message-add-in.md). Como administrador, es posible que también pueda ver los comentarios que los usuarios envían y usar cualquier patrón para ajustar la configuración que pueda estar causando problemas.
+- **Activar para los usuarios el complemento para informar de mensajes** Es muy recomendable que [habilite para los usuarios el complemento para informar de mensajes](enable-the-report-message-add-in.md). Como administrador, es posible que también pueda ver los comentarios que los usuarios envían y usar cualquier patrón para ajustar la configuración que pueda estar causando problemas.
     
 - **Permitir un remitente de forma inmediata** Si necesita permitir un remitente de forma inmediata, es muy recomendable que **SOLO permita una dirección IP de remitente específica**. Como alternativa, puede permitir un remitente y, además, asegurarse de que este supere una comprobación de autenticación, como SPF o DKIM; para hacerlo, cree una regla de transporte que examine **tanto** el dominio del remitente como un encabezado Authentication-Results correcto. 
     
