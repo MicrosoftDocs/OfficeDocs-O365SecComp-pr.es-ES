@@ -3,7 +3,7 @@ title: Las directivas de la seguridad de Office 365 de la alerta &amp; centro de
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/8/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 description: Crear directivas de alerta en la seguridad de Office 365 &amp; centro de cumplimiento para supervisar las posibles amenazas, la pérdida de datos y el problema de permisos. A continuación, puede ver y administrar las alertas que se generan cuando los usuarios realizan actividades que coinciden con las condiciones de una directiva de alerta.
-ms.openlocfilehash: 1404f03fdc59583fdf402f2cdc6209f4d55c23f3
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 020e9871170091e63cd6a59e6f1a0bfe50124fef
+ms.sourcegitcommit: 98a418052be88137c06f5c1abe7012359a7e90ee
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22536146"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "25698026"
 ---
 # <a name="alert-policies-in-the-office-365-security-amp-compliance-center"></a>Las directivas de la seguridad de Office 365 de la alerta &amp; centro de cumplimiento
 
@@ -74,7 +74,9 @@ Una directiva de alerta consta de los siguientes parámetros y condiciones.
     
   - Gobierno de datos
     
-  - Protección ante la pérdida de datos
+  - Prevención de pérdida de datos
+
+  - Flujo del correo
     
   - Permisos
     
@@ -100,6 +102,7 @@ En la siguiente tabla se enumera y se describe las directivas de alerta predeter
 |**Directiva de alerta predeterminada**|**Descripción**|**Suscripción a Office 365 Enterprise**|
 |:-----|:-----|:-----|
 |**Creación de regla de reenvío y redireccionamiento** <br/> |Genera una alerta cuando una persona de su organización crea una regla de bandeja de entrada para su buzón que reenvía o redirige los mensajes a otra cuenta de correo electrónico. Esta directiva sólo realiza un seguimiento de las reglas de bandeja de entrada que se crean utilizando Outlook Web App o Exchange Online PowerShell. Esta directiva tiene una configuración de gravedad **baja** . Para obtener más información de uso de las reglas de bandeja de entrada para reenviar y redirigir el correo electrónico en Outlook Web App, vea [usar las reglas de Outlook Web App para reenviar mensajes automáticamente a otra cuenta](https://support.office.com/article/1433e3a0-7fb0-4999-b536-50e05cb67fed).<br/> |E1, E3 o E5  <br/> |
+|**búsqueda de exhibición de documentos electrónicos iniciado o exportados** <br/> |Genera una alerta cuando alguien utiliza la herramienta de búsqueda de contenido en el centro de cumplimiento y seguridad. Se desencadena una alerta cuando se llevan a cabo las siguientes actividades de búsqueda de contenido:<br/><br/>• Una búsqueda de contenido se ha iniciado<br/>• Se exportan los resultados de una búsqueda de contenido<br/>• Se exporta un informe de búsqueda de contenido<br/><br/>También están activadas las alertas cuando se llevan a cabo las actividades de búsqueda de contenido anterior en asociación con un caso de exhibición de documentos electrónicos. Esta directiva tiene una configuración de gravedad **Media** . Para obtener más información acerca de las actividades de búsqueda de contenido, consulte [Buscar actividades de exhibición de documentos electrónicos en Office 365 registro de auditoría](search-for-ediscovery-activities-in-the-audit-log.md#ediscovery-activities).<br/> |E1, E3 o E5  <br/> |
 |**Elevación de privilegios de administración de Exchange** <br/> |Genera una alerta cuando alguien se asigna permisos administrativos en la organización de Exchange Online; Por ejemplo, si un usuario se agrega a la función de administración de la organización grupo en Exchange Online. Esta directiva tiene una configuración de gravedad **baja** .<br/> |E1, E3 o E5  <br/> |
 |**Los mensajes se han retrasado** <br/> |Genera una alerta cuando Office 365 no puede entregar mensajes de correo electrónico a la organización local o un socio de servidores mediante el uso de un conector. Cuando esto ocurre, el mensaje se ponen en cola en Office 365. Esta alerta se desencadena cuando hay 2.000 mensajes o más que ha formado por más de una hora. Esta directiva tiene una configuración de gravedad **alta** .<br/> |E1, E3 o E5  <br/> |
 |**Campaña de malware detectado después de la entrega** <br/> |Genera una alerta cuando se entrega un número inusualmente grande de los mensajes que contengan malware a buzones de la organización. Si se produce este evento, Office 365 quita los mensajes infectados de buzones de Exchange Online. Esta directiva tiene una configuración de gravedad **alta** .<br/> |Suscripción de complemento E5 o información sobre amenazas de Office 365  <br/> |
@@ -124,7 +127,7 @@ Puede usar los siguientes filtros para ver un subconjunto de todas las alertas e
   
 - **Estado** : Use este filtro para mostrar las alertas que se les asigna un estado determinado; el estado predeterminado es **activo**. Usted u otro administrador puede cambiar el valor de estado.
     
-- **Directivas** - este filtro se usa para mostrar las alertas que coinciden con la configuración de una o varias directivas de alerta. O bien, sólo se pueden mostrar todas las alertas para todas las directivas de alerta.
+- **Directiva** - este filtro se usa para mostrar las alertas que coinciden con la configuración de una o varias directivas de alerta. O bien, sólo se pueden mostrar todas las alertas para todas las directivas de alerta.
     
 - **Intervalo de tiempo** - Utilice este filtro para mostrar las alertas que se generaron dentro de un intervalo de tiempo y una fecha específica.
     

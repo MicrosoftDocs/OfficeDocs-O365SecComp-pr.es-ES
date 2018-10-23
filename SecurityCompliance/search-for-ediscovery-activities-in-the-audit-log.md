@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
 description: Obtenga información sobre cómo buscar en el registro de auditoría de Office 365 para eventos que se registran cuando los administradores de cumplimiento realizar tareas de mayúsculas y minúsculas de la búsqueda de contenido y exhibición de documentos electrónicos en la seguridad &amp; centro de cumplimiento.
-ms.openlocfilehash: a4cc3a6b5030a6412d739236e4c534f36948d57f
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+ms.openlocfilehash: f3d8e49da32de85c127d6bbf28d0b53bd6974c09
+ms.sourcegitcommit: 98a418052be88137c06f5c1abe7012359a7e90ee
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038353"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "25698036"
 ---
 # <a name="search-for-ediscovery-activities-in-the-office-365-audit-log"></a>Buscar actividades de exhibición de documentos electrónicos en el registro de auditoría de Office 365
 
@@ -43,7 +43,7 @@ Actualmente, tiene que hacer algunas cosas específicas para ver las actividades
   
 1. Vaya a [https://protection.office.com](https://protection.office.com).
     
-2. Inicie sesión en Office 365 con su cuenta de trabajo o escuela.
+2. Inicie sesión en Office 365 con su cuenta profesional o educativa.
     
 3. En el panel izquierdo, haga clic en **búsqueda &amp; investigación**y, a continuación, haga clic en **búsqueda de registro de auditoría**.
     
@@ -94,7 +94,7 @@ En la siguiente tabla se describe la búsqueda de contenido y las actividades re
 |Caso de exhibición de documentos electrónicos eliminados  <br/> |CaseRemoved  <br/> |Remove-ComplianceCase  <br/> |Se eliminó un caso de exhibición de documentos electrónicos. Tenga en cuenta que cualquier suspensión asociado con el caso debe quitarse antes de que se pueden eliminar las mayúsculas y minúsculas.  <br/> |
 |Filtro de permisos de búsqueda eliminados  <br/> |SearchPermissionRemoved  <br/> |Remove-ComplianceSecurityFilter  <br/> |Se eliminó un filtro de búsqueda de permisos.  <br/> |
 |Consulta de búsqueda eliminados suspensión casos de exhibición de documentos electrónicos  <br/> |HoldRemoved  <br/> |Remove-CaseHoldRule  <br/> |Se eliminó una suspensión basada en consultas asociada con un caso de exhibición de documentos electrónicos. Eliminación de la consulta de la suspensión a menudo es el resultado de la eliminación de una suspensión. Cuando se elimina una suspensión o una consulta de suspensión, se liberan las ubicaciones de contenido que estaban en espera.  <br/> |
-|Exportación descargado de búsqueda de contenido  <br/> |SearchResultDownloaded  <br/> |N/D  <br/> |Un usuario descarga los resultados de una búsqueda de contenido en su equipo local. Tenga en cuenta que una actividad **iniciado exportar de búsqueda de contenido** debe iniciarse antes de que se pueden descargar los resultados de búsqueda.<br/> |
+|Exportación descargado de búsqueda de contenido  <br/> |SearchExportDownloaded  <br/> |N/D  <br/> |Un usuario descarga los resultados de una búsqueda de contenido en su equipo local. Tenga en cuenta que una actividad **iniciado exportar de búsqueda de contenido** debe iniciarse antes de que se pueden descargar los resultados de búsqueda.<br/> |
 |La vista previa de los resultados de búsqueda de contenido  <br/> |SearchPreviewed  <br/> |N/D  <br/> |Un usuario obtener vista previa de los resultados de una búsqueda de contenido.  <br/> |
 |Purgado de los resultados de búsqueda de contenido  <br/> |SearchResultsPurged  <br/> |New-ComplianceSearchAction  <br/> |Un usuario purga los resultados de una búsqueda de contenido mediante la ejecución de la **New-ComplianceSearchAction-purgar** comando.  <br/> |
 |Se ha quitado el análisis de búsqueda de contenido  <br/> |RemovedSearchResultsSentToZoom  <br/> |Remove-ComplianceSearchAction  <br/> |Una búsqueda de contenido Preparar acción (para preparar los resultados de búsqueda de exhibición de documentos electrónicos avanzada de Office 365) se ha eliminado. Si la acción de preparación fue inferior a dos semanas de antigüedad, los resultados de búsqueda que se han preparado para exhibición de documentos electrónicos avanzada se eliminaron desde el área de almacenamiento de información de Microsoft Azure. Si la acción de preparación fue más de 2 semanas, este evento indica que se ha eliminado únicamente la acción de preparación correspondiente.  <br/> |
