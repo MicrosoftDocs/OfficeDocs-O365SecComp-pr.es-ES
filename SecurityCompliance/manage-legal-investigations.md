@@ -3,7 +3,7 @@ title: Administrar las investigaciones legales en Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 5/18/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: hub-page
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 description: Utilice los casos de exhibición de documentos electrónicos en la seguridad de Office 365 &amp; centro de cumplimiento para administrar una investigación legal de la organización. Si tiene una suscripción E5, aún más puede analizar los datos de casos mediante el análisis de texto, aprendizaje de máquinas y capacidades de codificación predictivas de exhibición de documentos electrónicos avanzada.
-ms.openlocfilehash: 7d00268a94613dfc0a1bef6314b5f917de5b9954
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+ms.openlocfilehash: 4e7b9117b3f0cb2fd6d4e70a7767f3cbe7b79724
+ms.sourcegitcommit: 01813cb9bbc2400d21bc99144745af953f9356e8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038273"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "25719054"
 ---
 # <a name="manage-legal-investigations-in-office-365"></a>Administrar las investigaciones legales en Office 365
 
@@ -32,7 +32,7 @@ Las organizaciones tienen muchas razones para responder a un caso legal que impl
    
 ## <a name="manage-legal-investigations-with-ediscovery-cases"></a>Administrar las investigaciones legales con los casos de exhibición de documentos electrónicos
 
-exhibición de documentos electrónicos de los casos permiten controlar quién puede crear, obtener acceso y administrar casos de exhibición de documentos electrónicos en su organización. Casos de uso para agregar miembros y control de qué tipos de acciones que puede realizar, colocar una suspensión en ubicaciones de contenido relevante para un caso legal y usar la herramienta de búsqueda de contenido para buscar las ubicaciones en espera para el contenido que es posible que responda a su caso. A continuación, también puede exportar y descargar dichos resultados para una mayor investigación por los revisores externos. Si tiene la organización de Office 365 y suscripción E5, también puede preparar los resultados de búsqueda para el análisis de exhibición de documentos electrónicos avanzada.
+exhibición de documentos electrónicos de los casos permiten controlar quién puede crear, obtener acceso y administrar casos de exhibición de documentos electrónicos en su organización. Casos de uso para agregar miembros y control de qué tipos de acciones que puede realizar, colocar una suspensión en ubicaciones de contenido relevante para un caso legal y usar la herramienta de búsqueda de contenido para buscar las ubicaciones en espera para el contenido que es posible que responda a su caso. A continuación, también puede exportar y descargar dichos resultados para una mayor investigación por los revisores externos. Si su organización de Office 365 tiene una suscripción E5, también puede preparar los resultados de búsqueda para el análisis de exhibición de documentos electrónicos avanzada.
   
 - [Administrar el flujo de trabajo de exhibición de documentos electrónicos](ediscovery-cases.md) mediante la creación y uso de los casos de exhibición de documentos electrónicos para cada investigación legal de su organización tiene para llevar a cabo 
     
