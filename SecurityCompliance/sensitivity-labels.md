@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Con las etiquetas de confidencialidad de Office 365, puede clasificar y ayudar a proteger el contenido confidencial, sin poner impedimentos a la productividad y la capacidad de colaboración de los usuarios. Puede usar etiquetas de confidencialidad para aplicar opciones de protección como encriptación o marcas de agua en el contenido con la etiqueta.
-ms.openlocfilehash: 736975d10084cb6672ae21b1716cd92d0956c6c6
-ms.sourcegitcommit: b164d4af65709133e0b512a4327a70fae13a974d
+ms.openlocfilehash: 9d3082d7bd5ce2b090c8e03605c2a8825a5acce3
+ms.sourcegitcommit: e9c3befa019463aedce681607fd23786786f76aa
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "25577099"
+ms.lasthandoff: 10/19/2018
+ms.locfileid: "25678129"
 ---
 # <a name="overview-of-sensitivity-labels"></a>Información general de etiquetas de confidencialidad
 
@@ -71,7 +71,7 @@ Después de aplicar una etiqueta de confidencialidad a un documento o correo ele
 
 - **Encriptar** solo correo electrónico o correo electrónico y documentos. Puede elegir qué usuarios o grupos tienen permisos para realizar qué acciones y durante cuánto tiempo. Por ejemplo, puede permitir que los usuarios de un dominio específico fuera de su organización tengan permisos para revisar el contenido durante solo 7 días después de que se haya etiquetado el contenido.
 
-- **Marcar el contenido** agregando marcas de agua personalizadas, encabezados o pies de página a correos electrónicos o documentos a los que se ha aplicado la etiqueta (tenga en cuenta que las marcas de agua se aplican únicamente a los documentos, no al correo electrónico, y están limitadas a 255 caracteres. Además, los encabezados y pies de página se limitan a 1024 caracteres, excepto en Excel, que están limitados a 253 caracteres).
+- **Marcar el contenido** agregando marcas de agua personalizadas, encabezados o pies de página a correos electrónicos o documentos a los que se ha aplicado la etiqueta. Tenga en cuenta que las marcas de agua se aplican únicamente a los documentos, no al correo electrónico, y están limitadas a 255 caracteres. Además, los encabezados y pies de página se limitan a 1024 caracteres (excepto en Excel, que están limitados a 255 caracteres o menos, en función de si el documento contiene otros encabezados o pies de página y de otros factores).
 
     ![Marca de agua y encabezado aplicados a un documento](media/Sensitivity_label_watermark_header.png)
 
@@ -92,7 +92,7 @@ Un documento o correo electrónico puede tener solo una etiqueta de confidencial
 
 ### <a name="sublabels-grouping-labels"></a>Subetiquetas (agrupación de etiquetas)
 
-Con las subetiquetas, puede agrupar una o varias etiquetas bajo un encabezado que un usuario vea en una aplicación de Office. Por ejemplo, bajo Confidencial, su organización puede usar varias etiquetas distintas para determinados tipos dentro de esa clasificación. En este ejemplo, la etiqueta Confidencial es simplemente una etiqueta de texto sin ninguna configuración de protección, por lo que no se puede aplicar al contenido. En su lugar, los usuarios deben elegir Confidencial para ver las subetiquetas y, a continuación, pueden elegir una subetiqueta para que se aplique al contenido.
+Con las subetiquetas, puede agrupar una o varias etiquetas bajo un encabezado que un usuario vea en una aplicación de Office. Por ejemplo, bajo Confidencial, su organización puede usar varias etiquetas distintas para determinados tipos dentro de esa clasificación. En este ejemplo, la etiqueta Confidencial es simplemente una etiqueta de texto sin ninguna configuración de protección y, como contiene subetiquetas, no se puede aplicar al contenido. En su lugar, los usuarios deben elegir Confidencial para ver las subetiquetas y, a continuación, pueden elegir una subetiqueta para que se aplique al contenido.
 
 Las subetiquetas son simplemente una forma de presentar etiquetas a los usuarios en grupos lógicos. Las subetiquetas no heredan ninguna configuración de la etiqueta bajo la que están.
 
@@ -148,7 +148,7 @@ En aplicaciones de Office en dispositivos con Windows, las etiquetas de confiden
 
 La compatibilidad nativa para etiquetas de confidencialidad en aplicaciones de Office en Windows estará disponible próximamente.
 
-Si es un cliente existente de Azure Information Protection, puede implementar el cliente de etiquetado unificado de Azure Information Protection, que es compatible con etiquetas de confidencialidad y estará disponible próximamente. (Vuelva a consultar esta sección para buscar un vínculo a la información sobre cómo implementar el cliente). Actualmente estamos trabajando en el soporte nativo de etiquetas de confidencialidad en aplicaciones de Office en Windows, para que el cliente de etiquetado unificado de Azure Information Protection deje de ser necesario.
+Si es cliente existente de Azure Information Protection, puede implementar el cliente de etiquetado unificado de Azure Information Protection, que es compatible con etiquetas de confidencialidad. Para obtener más información sobre cómo descargar el cliente, vea [Azure Information Protection unified labeling client: Version release information](https://docs.microsoft.com/es-ES/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history) (Cliente de etiquetado unificado de Azure Information Protection: información sobre la publicación de versiones). Actualmente estamos trabajando en la compatibilidad nativa de etiquetas de confidencialidad en aplicaciones de Office en Windows, para que el cliente de etiquetado unificado de Azure Information Protection deje de ser necesario.
 
 ![Botón de confidencialidad en la cinta de opciones en Excel para Windows](media/Sensitivity_label_Sensitivity_button.png)
 

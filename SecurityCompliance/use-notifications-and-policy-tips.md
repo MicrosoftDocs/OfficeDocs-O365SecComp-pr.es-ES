@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 87496bc5-9601-4473-8021-cb05c71369c1
 description: 'Una sugerencia de directiva es una notificación o una advertencia que aparece cuando alguien está trabajando con el contenido que está en conflicto con una directiva de DLP. Puede usar las notificaciones de correo electrónico y sugerencias de directivas para aumentar el conocimiento y ayudar a enseñar a las personas acerca de las directivas de su organización. También puede dar la opción Reemplazar la directiva para que no está bloqueados si tienen una empresa válida de los usuarios necesitan o si la directiva está detectando un falso positivo. '
-ms.openlocfilehash: a24afe6dd1203af4dc1f0f21468e828751bc5f3b
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: f95e392cc6cced6da29d34abfcab0fa0c3add069
+ms.sourcegitcommit: 3ac6452ab77a761d06122c35c5f4a76da4472990
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22536804"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "25769919"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Enviar notificaciones de correo electrónico y mostrar sugerencias de directivas para las directivas DLP
 
@@ -206,6 +206,25 @@ Si las sugerencias de directiva están configuradas para permitir el reemplazo, 
 ![Cuadro de diálogo de sugerencia de directiva donde se puede invalidar la sugerencia de directiva](media/f97e836c-04bd-44b4-aec6-ed9526ea31f8.png)
   
 Tenga en cuenta que cuando se agrega información confidencial a un correo electrónico, puede haber una latencia entre cuando se agrega la información confidencial y cuando aparezca la sugerencia de directiva.
+
+### <a name="outlook-2013-and-later-supports-showing-policy-tips-for-only-some-conditions"></a>Outlook 2013 y posterior admite que muestra sugerencias de directiva sólo algunas condiciones
+
+Actualmente, Outlook 2013 y versiones posteriores es compatible con sugerencias de directiva que muestra sólo para estas condiciones:
+
+- Contiene contenido
+- Se comparte contenido
+
+Actualmente estamos trabajando en soporte técnico para que muestre sugerencias de directivas para las condiciones adicionales. Entre estos se incluyen:
+
+- No se pudo analizar el contenido del cualquier adjunto correo electrónico
+- El contenido del cualquier adjunto correo electrónico no completaron el análisis
+- Extensión de archivo de datos adjuntos es
+- Los datos adjuntos están protegidos con contraseña
+- Es la propiedad de documento
+- Es el dominio de destinatario
+- Es la dirección IP remitente
+
+Tenga en cuenta que todas las condiciones siguientes funcionen correctamente en Outlook, donde se coinciden con contenido y aplicar medidas de protección en el contenido. Pero que muestra sugerencias de directiva a los usuarios aún no se admite.
   
 ### <a name="policy-tips-in-the-exchange-admin-center-vs-the-office-365-security-amp-compliance-center"></a>Sugerencias de directiva en el centro de administración de Exchange frente a la seguridad de Office 365 &amp; centro de cumplimiento
 
@@ -218,8 +237,7 @@ Tenga en cuenta que las notificaciones de correo electrónico mientras sugerenci
 ### <a name="default-text-for-policy-tips-in-email"></a>Texto predeterminado para obtener sugerencias de directiva de correo electrónico
 
 De forma predeterminada, sugerencias de directiva muestran texto similar al siguiente para el correo electrónico.
-  
-| |
+
 |**Si la regla de directiva DLP hace esto...**|**La sugerencia de directiva predeterminada indica lo siguiente...**|
 |:-----|:-----|
 |Envía una notificación, pero no permitir invalidación  <br/> |El correo electrónico entra en conflicto con una directiva de la organización.  <br/> |
@@ -255,8 +273,7 @@ En cada uno de estos programas de escritorio de Office 2016, los usuarios pueden
 ### <a name="default-text-for-policy-tips-in-excel-2016-powerpoint-2016-and-word-2016"></a>Texto predeterminado para las sugerencias de directiva en Excel 2016, PowerPoint 2016 y Word 2016
 
 De forma predeterminada, las sugerencias de directiva muestran texto similar para lo siguiente en la barra de mensajes y vista Backstage de un documento abierto. El texto de notificación se configura por separado para cada regla, por lo que el texto que se muestra es diferente en función de qué regla coincida.
-  
-| |
+
 |**Si la regla de directiva DLP hace esto...**|**La sugerencia de directiva predeterminada indica lo siguiente...**|
 |:-----|:-----|
 |Envía una notificación, pero no permitir invalidación  <br/> |Este archivo entra en conflicto con una directiva de la organización. Vaya al menú **archivo** para obtener más información.<br/> |
@@ -269,7 +286,7 @@ Puede personalizar el texto de sugerencias de directivas por separado a partir d
   
 ## <a name="more-information"></a>Más información
 
-- [Información general sobre directivas de prevención de pérdida de datos](data-loss-prevention-policies.md)
+- [Información general sobre las directivas de prevención de pérdida de datos](data-loss-prevention-policies.md)
     
 - [Crear una directiva DLP a partir de una plantilla](create-a-dlp-policy-from-a-template.md)
     

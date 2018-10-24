@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 38e9b67f-d188-490f-bc91-a1ae4b270441
 description: Obtenga información sobre Office 365 amenaza inteligencia y cómo empezar a usar.
-ms.openlocfilehash: 59da671b4d9b7b697ad4caf3573f954f2a446d24
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: b30543c7338bcd581bd0596f1c71d42c48559a59
+ms.sourcegitcommit: 3ac6452ab77a761d06122c35c5f4a76da4472990
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22536461"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "25769899"
 ---
 # <a name="get-started-with-office-365-threat-intelligence"></a>Introducción a la inteligencia sobre amenazas de Office 365
 
@@ -80,7 +80,7 @@ Información sobre amenazas de Office 365 se incluye en Office 365 Enterprise E5
     
     Si ve una suscripción a diferente, como **Office 365 Enterprise E3** o **Office 365 Enterprise E1**, a continuación, puede agregar inteligencia de amenaza de Office 365. Para ello, elija **+ Agregar suscripción**.
     
-4. En el centro de administración de Office 365, elija **usuarios** \> **usuarios activos**.
+4. En el Centro de administración de Office 365, seleccione **Usuarios** \> **Usuarios activos**.
     
 5. Asignación de licencias de Office 365 amenaza inteligencia a los usuarios. Para obtener más información acerca de la asignación de licencias, vea [asignar licencias a los usuarios de Office 365 para la empresa](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc).
     
@@ -92,7 +92,7 @@ Información sobre amenazas de Office 365 se incluye en Office 365 Enterprise E5
 |Usar el panel de amenaza (o el nuevo [panel de seguridad](security-dashboard.md))  <br/> Ver información sobre las amenazas recientes o actuales  <br/> |Administrador Global de Office 365  <br/> Administrador de seguridad (asignado en la seguridad &amp; centro de cumplimiento)  <br/> Lector de seguridad (asignado en la seguridad &amp; centro de cumplimiento)  <br/> |
 |Utilice el Explorador de amenaza (también denominada Explorer)  <br/> Analizar las amenazas  <br/> |Administrador Global de Office 365  <br/> Administrador de seguridad (asignado en la seguridad &amp; centro de cumplimiento)  <br/> Lector de seguridad (asignado en la seguridad &amp; centro de cumplimiento)  <br/> |
 |Ver incidentes  <br/> Agregar mensajes de correo electrónico a un incidente  <br/> |Administrador Global de Office 365  <br/> Administrador de seguridad (asignado en la seguridad &amp; centro de cumplimiento)  <br/> Lector de seguridad (asignado en la seguridad &amp; centro de cumplimiento)  <br/> |
-|Desencadenador de acciones de correo electrónico en un incidente  <br/> Buscar y eliminar mensajes de correo electrónico sospechosos  <br/> |Administrador Global de Office 365  <br/> Buscar y purgar (asignado en la seguridad &amp; centro de cumplimiento)  <br/> |
+|Desencadenador de acciones de correo electrónico en un incidente  <br/> Buscar y eliminar mensajes de correo electrónico sospechosos  <br/> |Administrador de seguridad o de administrador Global de Office 365  <br/> Buscar y purgar (asignado en la seguridad &amp; centro de cumplimiento)  <br/> |
 |Integrar la inteligencia de amenazas de Office 365 con la protección contra amenazas avanzada de Windows Defender  <br/> Integrar información sobre amenazas de Office 365 con un servidor SIEM  <br/> |Administrador Global de Office 365  <br/> Administrador de seguridad (asignado en la seguridad &amp; centro de cumplimiento)  <br/> Función apropiado asignado en aplicaciones adicionales (como portal de protección de amenaza avanzada de Windows Defender o un servidor SIEM)  <br/> |
    
 Para obtener información acerca de roles, grupos de roles y permisos, consulte [permisos en la seguridad de Office 365 &amp; centro de cumplimiento](permissions-in-the-security-and-compliance-center.md).
