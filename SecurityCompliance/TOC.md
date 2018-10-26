@@ -12,7 +12,9 @@
 # Proteger el acceso a datos y servicios
 ## [Proteger el acceso a datos y servicios de Office 365](protect-access-to-data-and-services.md)
 ## [Elegir entre MDM e Intune](choose-between-mdm-and-intune.md)
-# [Evitar la pérdida de datos (DLP)](data-loss-prevention-policies.md)
+# Proteger la información
+## [Etiquetas de confidencialidad](sensitivity-labels.md)
+## [Evitar la pérdida de datos (DLP)](data-loss-prevention-policies.md)
 ## [Ver una descripción general ampliada de DLP](https://channel9.msdn.com/events/ignite/microsoft-ignite-orlando-2017/brk3111)
 ## Configurar DLP
 ### [Introducción a las recomendaciones de la directiva DLP](get-started-with-dlp-policy-recommendations.md)
@@ -47,11 +49,11 @@
 ### [Habilitar el archivado ilimitado](enable-unlimited-archiving.md)
 ### [Configurar una directiva de archivo y eliminación para buzones de correo](set-up-an-archive-and-deletion-policy-for-mailboxes.md)
 ## Conservar datos
-### [Introducción a las directivas de retención](retention-policies.md)
-### [Introducción a las etiquetas](labels.md)
-### [Introducción a las revisiones de disposición](disposition-reviews.md)
-### [Información general sobre la retención basada en eventos](event-driven-retention.md)
-### [Información general sobre el administrador de planeación de archivos](file-plan-manager.md)
+### [Directivas de retención](retention-policies.md)
+### [Etiquetas de retención](labels.md)
+### [Revisiones para eliminación](disposition-reviews.md)
+### [Retención controlada por eventos](event-driven-retention.md)
+### [Administrador del plan de archivos](file-plan-manager.md)
 ## [Administrar buzones inactivos](inactive-mailboxes-in-office-365.md)
 ### [Crear y administrar buzones inactivos](create-and-manage-inactive-mailboxes.md)
 ### [Cambiar la duración de retención para un buzón inactivo](change-the-hold-duration-for-an-inactive-mailbox.md)
