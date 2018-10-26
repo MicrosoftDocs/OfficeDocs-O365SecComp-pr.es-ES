@@ -13,12 +13,12 @@ ms.collection: Strat_O365_IP
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: Utilice este tema para obtener más información sobre con privilegios de acceso a la administración de Office 365
-ms.openlocfilehash: e92bbecd5957261c1eaf3088d872ae6572b7f235
-ms.sourcegitcommit: 659b5f5b38ef7e838cdb44eaa38c18e48d922768
+ms.openlocfilehash: 5056c19acb03b2486cc84fe085ffd6c2814007dc
+ms.sourcegitcommit: a07b91723bae9ecee2cb092bfbc5b208b30b11a1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "25575344"
+ms.lasthandoff: 10/25/2018
+ms.locfileid: "25793555"
 ---
 # <a name="privileged-access-management-in-office-365"></a>Con privilegios de acceso a la administración de Office 365
 
@@ -80,7 +80,7 @@ Se planea ofrecer esta característica en otras cargas de trabajo de Office 365 
 Tenemos planes para aumentar el límite actual de directivas de acceso con privilegios 30 por la organización de Office 365 pronto.
 
 ### <a name="do-i-need-to-be-a-global-admin-to-manage-privileged-access-in-office-365"></a>¿Es necesario ser un administrador Global para administrar el acceso con privilegios en Office 365?
-Debe tener privilegios de administrador Global para poder administrar el acceso con privilegios en Office 365. Los usuarios que se incluyen en el grupo de los aprobadores no es necesario ser un administrador Global para revisar y aprobar las solicitudes. 
+No, debe tener el rol de administración de funciones de Exchange asignado a las cuentas que va a administrar el acceso con privilegios en Office 365. Sin embargo, la función de administrador Global incluye este rol de forma predeterminada y puede usarse para administrar el acceso con privilegios si no desea configurar la función de administración de la función como una cuenta independiente de permiso. Los usuarios que se incluyen en el grupo de los aprobadores no es necesario ser un administrador Global o tener el rol de administración de funciones asignado para revisar y aprobar las solicitudes. 
 
 ### <a name="how-is-privileged-access-management-in-office-365-related-to-customer-lockbox"></a>¿Cómo es la administración de acceso con privilegios en Office 365 relacionadas con la caja de seguridad del cliente?
 [Caja de seguridad de cliente](https://support.office.com/article/Office-365-Customer-Lockbox-Requests-36f9cdd1-e64c-421b-a7e4-4a54d16440a2) permite a un nivel de control de acceso para las organizaciones para el acceso a datos por su proveedor de servicios, es decir, Microsoft. Con privilegios de acceso de control de acceso granular dentro de una organización para todas las tareas de Office 365 con privilegios permite la administración de Office 365.
