@@ -35,37 +35,37 @@ ms.locfileid: "22535787"
   
 - **Etiquetado**: la efectividad del proceso de entrenamiento iterativo de Relevancia depende de la capacidad del experto de etiquetar archivos de muestra con precisión y coherencia.
     
-- **Problemas de casos**: 
+- **Asuntos de casos**: 
     
-  - Para cada problema, use el mismo experto en todo el proceso de entrenamiento de Relevancia. No se permite el etiquetado simultánea del mismo problema por varios expertos.
+  - Para cada asunto, use el mismo experto en todo el proceso de entrenamiento de Relevancia. No se permite el etiquetado simultánea del mismo asunto por varios expertos.
     
-  - Determine si cada grupo de archivos es relevante solo para un problema específico. 
+  - Determine si cada grupo de archivos es relevante solo para un asunto específico. 
     
-  - Si un problema se define de forma demasiado amplia, es posible que eDiscovery avanzado muestre demasiados archivos que no sean relevantes en realidad. Si un problema se define de forma demasiado restringida, es posible que el proceso de entrenamiento de Relevancia tarde más tiempo en completarse. 
+  - Si un asunto se define de forma demasiado amplia, es posible que eDiscovery avanzado muestre demasiados archivos que no sean relevantes en realidad. Si un asunto se define de forma demasiado restringida, es posible que el proceso de entrenamiento de Relevancia tarde más tiempo en completarse. 
     
-  - Durante cada ciclo de entrenamiento de Relevancia, eDiscovery avanzado se centra en un único problema activo y, en consecuencia, muestra los resultados de muestra provisionales.
+  - Durante cada ciclo de entrenamiento de Relevancia, eDiscovery avanzado se centra en un único asunto activo y, en consecuencia, muestra los resultados de ejemplo provisionales.
     
-  - En un escenario de varios problemas, el modo Muestreo permite seleccionar los archivos que se incluirán en el procesamiento. Los problemas definidos como “Desactivados” no se procesarán hasta que se cambie el modo de Muestreo. Un problema puede estar “inactivo” o “activo” para solo un experto.
+  - En un escenario de varios asuntos, el modo Muestreo permite seleccionar los archivos que se incluirán en el procesamiento. Los asuntos definidos como “Desactivados” no se procesarán hasta que se cambie el modo de Muestreo. Un asunto puede estar “inactivo” o “activo” para solo un experto.
     
-  -  eDiscovery avanzado puede usarse para generar archivos de privilegios de candidatos. Configure un problema separado por privilegio. Si es posible, entrene y seleccione primero para relevancia y, después, realice el entrenamiento para privilegios solo en el conjunto seleccionado (vuelva a cargar el conjunto seleccionado como un caso separado). 
+  -  eDiscovery avanzado puede usarse para generar archivos de privilegios de candidatos. Configure un asunto separado por privilegio. Si es posible, entrene y seleccione primero para relevancia y, después, realice el entrenamiento para privilegios solo en el conjunto seleccionado (vuelva a cargar el conjunto seleccionado como un caso separado). 
     
   - El cálculo por lotes solo puede realizarse cuando no haya muestras abiertas (al hacer clic en Cálculo por lotes, se mostrará una lista de usuarios con muestras abiertas). Para “cerrar” las muestras de otros usuarios (esto solo puede realizarse si los usuarios no están etiquetando esas muestras), un administrador puede usar la utilidad “Modificar relevancia” con la opción “Muestra de todos los usuarios”.
     
 - **Metadatos**: eDiscovery avanzado se centra en el contenido. No tiene en cuenta los metadatos como parte de los criterios de relevancia. 
     
-- **Riqueza**: si la riqueza de un problema es inferior al 3 % después de la evaluación, puede inicializar el entrenamiento de Relevancia con archivos conocidos que sean relevantes y no relevantes.
+- **Riqueza**: si la riqueza de un asunto es inferior al 3 % después de la evaluación, puede inicializar el entrenamiento de Relevancia con archivos conocidos que sean relevantes y no relevantes.
     
 - **Tamaño de archivo**: los archivos de gran tamaño (con más de 5 242 880 caracteres de texto extraído) se omiten en Relevancia. Los archivos no se incluyen en el proceso de entrenamiento de Relevancia y no reciben una puntuación de Relevancia después del cálculo por lotes. Los archivos con un tamaño superior a 5 MB se pueden incluir en el conjunto de evaluación.
     
-## <a name="setting-up-case-issues"></a>Configurar problemas de casos
+## <a name="setting-up-case-issues"></a>Configurar asuntos de casos
 
 Los parámetros descritos en esta sección están disponibles en eDiscovery avanzado **Relevancia** \> **Configuración de Relevancia**. 
   
-- Los problemas tienen que asignarse a un usuario que entrenará los archivos.
+- Los asuntos tienen que asignarse a un usuario que entrenará los archivos.
     
 - Después, los archivos importados tienen que agregarse a la carga que vaya a procesarse.
     
-- Defina y organice problemas cuidadosamente, ya que esto puede afectar a los resultados de entrenamiento de Relevancia.
+- Defina y organice asuntos cuidadosamente, ya que esto puede afectar a los resultados de entrenamiento de Relevancia.
     
 Después de establecer los parámetros, el revisor o experto puede empezar a entrenar los archivos en la pestaña **Relevancia**. 
   
@@ -73,7 +73,7 @@ Después de establecer los parámetros, el revisor o experto puede empezar a ent
 
 [eDiscovery avanzado de Office 365](office-365-advanced-ediscovery.md)
   
-[Definir problemas y asignar usuarios](define-issues-and-assign-users.md)
+[Definir asuntos y asignar usuarios](define-issues-and-assign-users.md)
   
 [Configurar cargas para agregar archivos importados](set-up-loads-to-add-imported-files.md)
   
