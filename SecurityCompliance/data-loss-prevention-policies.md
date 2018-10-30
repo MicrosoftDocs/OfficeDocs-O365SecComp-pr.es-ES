@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 1966b2a7-d1e2-4d92-ab61-42efbb137f5e
 description: Con una directiva de (DLP) de prevención de pérdida de datos en la seguridad de Office 365 &amp; centro de cumplimiento, puede identificar, supervisar y proteger información confidencial de forma automática a través de Office 365.
-ms.openlocfilehash: c33fe53797f86208e7cd033029949737a5c84d2f
-ms.sourcegitcommit: 397a5fe594e4cf4bb64c0c6f233d310ef3cbd922
+ms.openlocfilehash: b342686f38d734a0eff0df896204d7a2f4bfde6a
+ms.sourcegitcommit: 81e06e09bf5ca8e3f51b164d6251b1c35b3285cf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "25540426"
+ms.lasthandoff: 10/27/2018
+ms.locfileid: "25829201"
 ---
 # <a name="overview-of-data-loss-prevention-policies"></a>Información general sobre directivas de prevención de pérdida de datos
 
@@ -312,7 +312,7 @@ Puede crear una etiqueta y, a continuación:
     
 - **Aplicar automáticamente** al contenido que coincida con las condiciones que elija. 
     
-Para obtener más información sobre las etiquetas, vea [Información general sobre etiquetas](labels.md).
+Para obtener más información acerca de las etiquetas, vea [información general de las etiquetas de retención](labels.md).
   
 Después de crear una etiqueta, a continuación, puede usar esa etiqueta como una condición en las directivas de DLP. Por ejemplo, es posible que desee hacerlo porque:
   
@@ -327,12 +327,16 @@ Después de crear una etiqueta, a continuación, puede usar esa etiqueta como un
 Mediante el uso de las etiquetas como una condición en las reglas DLP, pueden se selectivamente exigir la aplicación de acciones de protección en un conjunto específico de contenido, ubicaciones o usuarios.
   
 ![Etiquetas como una condición](media/5b1752b4-a129-4a88-b010-8dcf8a38bb09.png)
+
+### <a name="support-for-sensitivity-labels-is-coming"></a>Compatibilidad con etiquetas de carácter procede
+
+Tenga en cuenta que actualmente se puede usar sólo una etiqueta de retención como una condición, no es una [etiqueta de seguridad](sensitivity-labels.md). Actualmente estamos trabajando en soporte técnico para el uso de una etiqueta de sensibilidad en esta condición.
   
 ### <a name="how-this-feature-relates-to-other-features"></a>¿Cómo se relaciona esta característica con otras características
 
 Varias características se pueden aplicar a contenido que contiene información confidencial:
   
-- Una [etiqueta de retención](labels.md#applying-a-retention-label-automatically-based-on-conditions)[aplicar una etiqueta automáticamente según las condiciones] y una [Directiva de retención](retention-policies.md) pueden aplicar acciones de **retención** en este contenido. 
+- Una [etiqueta de retención](labels.md#applying-a-retention-label-automatically-based-on-conditions) y una [Directiva de retención](retention-policies.md) pueden aplicar acciones de **retención** en este contenido. 
     
 - Una directiva de DLP puede aplicar acciones de **protección** en este contenido. Y antes de aplicar estas acciones, una directiva de DLP puede requerir otras condiciones que deben cumplirse además del contenido que contiene una etiqueta. 
     
