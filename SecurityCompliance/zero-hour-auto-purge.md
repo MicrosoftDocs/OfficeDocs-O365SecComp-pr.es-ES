@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 description: Purgar cero horas automático (ZAP) es una característica de protección de correo electrónico que detecta los mensajes con el correo no deseado o malware que ya se han entregado a las bandejas de entrada de los usuarios y, a continuación, representa el contenido malintencionado inocua. ZAP ¿cómo esto depende del tipo de contenido malintencionado detectado.
-ms.openlocfilehash: dc8901dc7c1db5b323ccbeee610647b8a302fcb3
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: dabe4caf8916d3f0de7a70cb3d056dd9a7fdcc3f
+ms.sourcegitcommit: ceb70ea863d8b97afea077a04fc7ec612b870695
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22535800"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25857248"
 ---
 # <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>Purga automática cero horas: protección contra correo no deseado y malware
 
@@ -74,7 +74,7 @@ Los administradores también pueden [Deshabilitar ZAP](zero-hour-auto-purge.md#B
     
     Si decide **Guardar** en este momento, la directiva se aplica a su inquilino de Office 365. 
     
-    ![Conjunto de acciones de correo no deseado y masiva a Mpve mensaje a la carpeta correo no deseado](media/4332cfb3-89e1-48ba-8da8-9286f2fa1089.PNG)
+    ![Acciones de correo no deseado y masiva de conjunto para mover el mensaje a la carpeta correo no deseado](media/4332cfb3-89e1-48ba-8da8-9286f2fa1089.PNG)
   
 4. Si ha creado una nueva directiva, y que desea aplicar la directiva a sólo un conjunto de usuarios, desplácese hasta la sección **Aplicada a** en la ventana de filtro de la directiva y en los controles de menú elegir los **destinatarios**, **dominio**o **las pertenencias a grupos** ¿desea aplicar la directiva. También puede establecer excepciones y condiciones adicionales. 
     
