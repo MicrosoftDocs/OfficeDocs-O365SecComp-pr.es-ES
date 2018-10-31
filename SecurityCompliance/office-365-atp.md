@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 description: Protección contra amenazas avanzadas de Office 365 incluye inteligencia de suplantación, vínculos seguros, los datos adjuntos seguros y capacidades avanzadas de contra suplantación de identidad. Opciones avanzadas de protección contra amenazas también se ha ampliado a los archivos en SharePoint Online, OneDrive para la empresa y Microsoft Teams.
-ms.openlocfilehash: e3b282118b5fde0374bb9f052e7efe8a13e2fd70
-ms.sourcegitcommit: ba2175e394d0cb9f8ede9206aabb44b5b677fa0a
+ms.openlocfilehash: def22368f8bc219ebceda797dd04b234bc3c4435
+ms.sourcegitcommit: cda46434094bc2837dba90256d044ba77552df12
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "25496864"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "25850834"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Protección contra amenazas avanzada de Office 365
 
@@ -55,7 +55,7 @@ Una vez que haya ATP, el siguiente paso es el equipo de seguridad definir las di
 
 - **[Configurar directivas de vínculos seguros de ATP en Office 365](set-up-atp-safe-links-policies.md)** incluidos [lista personalizada de direcciones URL bloqueado](set-up-a-custom-blocked-urls-list-wtih-atp.md) y la [lista de direcciones URL personalizada "No reescritura"](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md) de su organización
     
-- **[Configurar los datos adjuntos seguros de ATP directivas en Office 365](set-up-atp-safe-attachments-policies.md)** que puede incluir [la entrega dinámica y obtener una vista previa](dynamic-delivery-and-previewing.md)
+- **[Configurar las directivas de los datos adjuntos seguros de ATP en Office 365](set-up-atp-safe-attachments-policies.md)** que puede incluir [la entrega dinámica y obtener una vista previa](dynamic-delivery-and-previewing.md)
   
 ## <a name="see-how-atp-is-working-by-viewing-reports"></a>Vea cómo funciona ATP mediante la visualización de informes
 
@@ -86,6 +86,6 @@ Una vez sus directivas de ATP, están disponibles para mostrar cómo funciona el
 
 [Ver los informes de protección contra amenazas de avanzada](view-reports-for-atp.md)
   
-[Administración de la seguridad de Office 365 de amenazas &amp; centro de cumplimiento](threat-management.md)
+[Threat management in the Office 365 Security &amp; Compliance Center](threat-management.md)
   
 

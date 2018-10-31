@@ -3,6 +3,7 @@ title: Entrega dinámica y obtener una vista previa con Office 365 ATP los datos
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
+ms.date: 10/30/2018
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -12,26 +13,30 @@ search.appverid:
 - MOE150
 ms.assetid: f16c9928-8e3d-4219-b994-271dc9a16272
 description: Al configurar las directivas de los datos adjuntos seguros ATP, elija entrega dinámica para evitar retrasos de mensaje y permiten a los usuarios obtener una vista previa de datos adjuntos que se están analizando.
-ms.openlocfilehash: 23ef316ed35b89ef1fad5e9639dd10e76036a4f3
-ms.sourcegitcommit: 82fd4c85b952819157fbb13175c7b2dbbdff510f
+ms.openlocfilehash: b7b5f05170e6f27cbec9e0d5a121b2f71f16f41a
+ms.sourcegitcommit: cda46434094bc2837dba90256d044ba77552df12
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "23965247"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "25850824"
 ---
 # <a name="dynamic-delivery-and-previewing-with-office-365-atp-safe-attachments"></a>Entrega dinámica y obtener una vista previa con Office 365 ATP los datos adjuntos seguros
 
-Entrega dinámica es una opción que puede seleccionar para. Lea este artículo para obtener más información acerca de la entrega dinámica y las capacidades de vista previa de datos adjuntos en [Datos adjuntos seguros de ATP en Office 365](atp-safe-attachments.md).
+**Resumen**: entrega dinámico es una opción que se puede seleccionar los datos adjuntos [seguros](atp-safe-attachments.md)de ATP. Lea este artículo para obtener más información acerca de la entrega dinámica y las capacidades de vista previa de datos adjuntos en [Datos adjuntos seguros de ATP en Office 365](atp-safe-attachments.md).
   
-## <a name="how-dynamic-delivery-works"></a>Dinámico cómo funciona la entrega
+## <a name="how-dynamic-delivery-works"></a>Cómo funciona la entrega dinámica
 
-Al [configurar las directivas de los datos adjuntos seguros de ATP en Office 365](set-up-atp-safe-attachments-policies.md), puede elegir entre varias opciones, como **bloque**, **Reemplazar**y **Entrega dinámica**. Dependiendo de cómo se configuran las directivas, los destinatarios de correo electrónico pueden experimentar un retraso en la entrega de correo electrónico secundario mientras se examinan los datos adjuntos. Para evitar retrasos de mensaje, elija **Entrega dinámica**.
+Cuando [se configuran las directivas de los datos adjuntos seguros de ATP](set-up-atp-safe-attachments-policies.md) para su organización, hay varias opciones sobre cómo se controlan los datos adjuntos de correo electrónico. Éstas incluyen **bloque**, **Reemplazar**y **Entrega dinámica**. Dependiendo de cómo se configuran las directivas de los datos adjuntos seguros de ATP, los destinatarios de correo electrónico pueden experimentar un retraso en la entrega de correo electrónico secundario mientras se examinan los datos adjuntos. Para evitar retrasos de mensaje, elija **Entrega dinámica**.
   
-La opción de entrega dinámica elimina los retrasos de correo electrónico mediante el envío el cuerpo de un mensaje de correo electrónico a través de con un marcador de posición para cada dato adjunto de correo electrónico. El marcador de posición permanece hasta que los datos adjuntos se examinan por [Datos adjuntos seguros de ATP en Office 365](atp-safe-attachments.md). Destinatarios de correo electrónico pueden leer y responder a sus mensajes de correo electrónico inmediatamente, sabiendo que se están analizando sus datos adjuntos.
-  
-La mayoría de los archivos PDF y Office documentos pueden ser una vista previa en modo seguro mientras ATP análisis está en curso. Si un archivo adjunto no es compatible con el controlador de vista previa dinámica de entrega, los destinatarios de correo electrónico ven el marcador de posición de datos adjuntos hasta que se complete el análisis de los datos adjuntos seguros de ATP.
-  
-Como cada dato adjunto está desactivada, automáticamente se a adjuntar al mensaje de correo electrónico original. Si un archivo adjunto se determina como malintencionado, se envía a cuarentena, donde una persona en el equipo de seguridad de su organización (por ejemplo, un administrador global de Office 365 o un administrador de seguridad) puede [administrar los mensajes en cuarentena en Office 365](manage-quarantined-messages-and-files.md).
+Entrega dinámica elimina los retrasos de correo electrónico mediante el envío el cuerpo de un mensaje de correo electrónico a través de al destinatario con un marcador de posición para cada dato adjunto de correo electrónico. El marcador de posición permanece hasta que una copia de los datos adjuntos se examinan y determinada como segura por [Los datos adjuntos seguros de ATP](atp-safe-attachments.md). La mayoría de los archivos PDF y Office documentos pueden ser una vista previa en modo seguro mientras ATP análisis está en curso. Si un archivo adjunto no es compatible con el controlador de vista previa dinámica entrega, los destinatarios de correo electrónico ven un marcador de posición de datos adjuntos hasta que se complete el análisis de los datos adjuntos seguros de ATP.
+
+- Como cada dato adjunto está desactivada, está disponible para abrir o descargar. 
+
+- Si un archivo adjunto se determina como malintencionado, se envía a cuarentena, donde una persona en el equipo de seguridad de su organización (por ejemplo, un administrador global de Office 365 o un administrador de seguridad) puede [administrar los mensajes en cuarentena en Office 365](manage-quarantined-messages-and-files.md).
+
+Con entrega dinámico, los destinatarios de correo electrónico pueden leer y responder a sus mensajes de correo electrónico inmediatamente, sabiendo que se están analizando sus datos adjuntos. 
+
+Datos adjuntos seguros de ATP que lleve a cabo el examen se coloque en la misma región donde residen los datos de Office 365. Para obtener más información acerca de la zona geográfica de centro de datos, vea [¿dónde están los datos que se encuentra?](https://products.office.com/where-is-your-data-located?geo=All) 
   
 ## <a name="what-happens-when-someone-forwards-an-email-that-contains-an-attachment"></a>¿Qué sucede cuando alguien envía un correo electrónico que contiene datos adjuntos?
 

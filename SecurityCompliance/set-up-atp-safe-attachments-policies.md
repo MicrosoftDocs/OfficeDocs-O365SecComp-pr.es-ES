@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 description: Definir directivas de los datos adjuntos seguros para proteger su organización desde archivos malintencionados en el correo electrónico.
-ms.openlocfilehash: c57f9320c7cd2b8b75bc2dc58d1f72ce136acbb6
-ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
+ms.openlocfilehash: 1fd831adf5166223ba5df159a131c71e3b467233
+ms.sourcegitcommit: cda46434094bc2837dba90256d044ba77552df12
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25454288"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "25850844"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Configurar las directivas de Office 365 ATP los datos adjuntos seguros
 
@@ -59,7 +59,7 @@ Personas con regularidad envían, recibir y compartir datos adjuntos, como docum
     
       - En el cuadro **Descripción** , escriba una descripción como, entrega los mensajes inmediatamente y vuelve a adjuntar datos adjuntos después de la digitalización.
     
-      - En la sección respuesta, elija la opción de **Entrega dinámica** . ([Obtenga más información sobre la entrega dinámica y obtener una vista previa con datos adjuntos seguros de ATP](dynamic-delivery-and-previewing.md)).
+      - En la sección respuesta, elija la opción de **Entrega dinámica** . ([Obtenga más información acerca de la entrega dinámica y obtener una vista previa con datos adjuntos seguros de ATP](dynamic-delivery-and-previewing.md)).
     
       - En la sección **redirigir datos adjuntos** , seleccione la opción para habilitar el redireccionamiento y escriba la dirección de correo electrónico del administrador global, Administrador de seguridad o analista de seguridad que va a investigar datos adjuntos malintencionados de Office 365. 
     
