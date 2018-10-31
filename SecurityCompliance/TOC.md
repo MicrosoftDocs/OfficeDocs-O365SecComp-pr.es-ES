@@ -14,6 +14,7 @@
 ## [Elegir entre MDM e Intune](choose-between-mdm-and-intune.md)
 # Proteger la información
 ## [Etiquetas de confidencialidad](sensitivity-labels.md)
+## [Restringir el acceso al contenido mediante el cifrado en las etiquetas de confidencialidad](encryption-sensitivity-labels.md)
 ## [Evitar la pérdida de datos (DLP)](data-loss-prevention-policies.md)
 ## [Ver una descripción general ampliada de DLP](https://channel9.msdn.com/events/ignite/microsoft-ignite-orlando-2017/brk3111)
 ## Configurar DLP
@@ -149,7 +150,7 @@
 ## [Usar búsqueda de contenido](content-search.md)
 ### [Consultas de palabras clave y condiciones de búsqueda para la búsqueda de contenido](keyword-queries-and-search-conditions.md).
 ### [Ver las estadísticas de palabras clave para resultados de búsqueda de contenido](view-keyword-statistics-for-content-search.md)
-### [Exportar resultados de la búsqueda de contenido](export-search-results.md)
+### [Exportar resultados de la búsqueda de contenido ](export-search-results.md)
 ### [Exportar un informe de búsqueda de contenido](export-a-content-search-report.md)
 ### [Búsqueda y eliminación de mensajes de correo electrónico](search-for-and-delete-messagesadmin-help.md)
 ### [Buscar los buzones basados en la nube de usuarios locales en Office 365](search-cloud-based-mailboxes-for-on-premises-users.md)
@@ -258,8 +259,9 @@
 ### [Implementar un sitio de grupo de SharePoint Online aislado](deploy-an-isolated-sharepoint-online-team-site.md)
 ### [Administrar un sitio de grupo de SharePoint Online aislado](manage-an-isolated-sharepoint-online-team-site.md)
 ### [Sitio de grupo de SharePoint Online aislado en su entorno para desarrollo y pruebas](isolated-sharepoint-online-team-site-dev-test-environment.md)
+## [Integración de servidor SIEM](siem-server-integration.md)
 
-# Soluciones de cumplimiento
+# Soluciones de cumplimiento normativo
 ## [Usar el Administrador de cumplimiento para satisfacer los requisitos normativos y de protección de datos al usar los servicios de nube de Microsoft](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
 ## [Administrar solicitudes de asunto de datos RGPD con la herramienta de casos DSR](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)
 ## [Information Protection de Office 365 para RGPD](office-365-information-protection-for-gdpr.md)
