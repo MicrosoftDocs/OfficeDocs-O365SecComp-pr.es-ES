@@ -3,7 +3,7 @@ title: Cifrado de correo electrónico en Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 6/22/2018
+ms.date: 10/30/2018
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: c0d87cbe-6d65-4c03-88ad-5216ea5564e8
 description: Comparación de las opciones de cifrado en Office 365, incluido el cifrado de mensajes de Office (OME), S/MIME, Information Rights Management (IRM) y obtenga información acerca de la seguridad de capa de transporte (TLS).
-ms.openlocfilehash: a705637b85e73c6d1e5bcb3595dcd0b7766411e2
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: c9c83283cab09ac81ab2856aec53fe8682ec45b8
+ms.sourcegitcommit: c05076501dfe118e575998ecfc08ad69d13c8abc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22536283"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25853085"
 ---
 # <a name="email-encryption-in-office-365"></a>Cifrado de correo electrónico en Office 365
 
@@ -54,7 +54,7 @@ Vea este vídeo para obtener una introducción al [cifrado en Office 365](https:
   
 ## <a name="comparing-email-encryption-options-available-in-office-365"></a>Comparar las opciones de cifrado de correo electrónico disponibles en Office 365
 
-||**        ![Ilustración conceptual que describe OME](media/2bf27b5e-bbb3-46d1-95bf-884dc27a746c.png)                 **|**        ![Ilustración conceptual que describe IRM](media/9c0cc444-9448-40c6-b244-8fcc593a64e0.png)                 **|**        ![Ilustración conceptual que describe SMIME](media/ae4613a8-c17e-47e1-8e13-12e891e43744.png)                 **|
+||        ![Ilustración conceptual que describe OME](media/2bf27b5e-bbb3-46d1-95bf-884dc27a746c.png)                 |        ![Ilustración conceptual que describe IRM](media/9c0cc444-9448-40c6-b244-8fcc593a64e0.png)                 |        ![Ilustración conceptual que describe SMIME](media/ae4613a8-c17e-47e1-8e13-12e891e43744.png)                |
 |:-----|:-----|:-----|:-----|
 |¿Qué es?  <br/> |El cifrado de mensajes de Office 365 (OME) es un servicio basado en Azure Rights Management (Azure RMS) que permite enviar correo electrónico cifrado a otras personas dentro o fuera de la organización, independientemente de la dirección de correo electrónico de destino (Gmail, Yahoo! Mail, Outlook.com, etc.).  <br/> Como administrador, puede configurar reglas de transporte que definen las condiciones para el cifrado. Cuando un usuario envía un mensaje que coincide con una regla, se aplica automáticamente el cifrado.  <br/> Para ver los mensajes cifrados, los destinatarios pueden obtener un código de acceso única, el inicio de sesión con una cuenta de Microsoft o el inicio de sesión con un trabajo o escuela cuenta asociada con Office 365. Los destinatarios también pueden enviar respuestas cifradas. No necesitan una suscripción a Office 365 para ver los mensajes cifrados o enviar respuestas cifradas.  <br/> |IRM es una solución de cifrado que también se aplica a las restricciones de uso para los mensajes de correo electrónico. Ayuda a evitar que personas no autorizadas impriman, reenvíen o copien información confidencial.  <br/> Las capacidades IRM en Office 365 usan Azure Rights Management (Azure RMS). 
   <br/> |S/MIME es una solución basada en el certificado de cifrado que permite cifrar y firmar digitalmente un mensaje. El cifrado de mensajes ayuda a garantizar que sólo el destinatario puede abrir y leer el mensaje. Una firma digital ayuda al destinatario a validar la identidad del remitente.  <br/> Las firmas digitales y el cifrado de mensajes son posibles gracias al uso exclusivo de certificados digitales que contienen las claves para comprobar las firmas digitales y cifrar o descifrar mensajes.  <br/> Para usar S/MIME, debe tener las claves públicas en el archivo para cada destinatario. Los destinatarios tienen que mantener sus propias claves privadas, que deben permanecer seguros. Si las claves privadas de un destinatario se ve comprometidas, el destinatario debe obtener una nueva clave privada y redistribuya las claves públicas a todos los remitentes posibles.  <br/> |
