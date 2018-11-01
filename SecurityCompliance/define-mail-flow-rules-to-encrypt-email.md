@@ -3,7 +3,7 @@ title: Definir reglas de flujo de correo para cifrar mensajes de correo electró
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 10/30/2018
+ms.date: 10/31/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 description: Como administrador global de Office 365, puede crear reglas para habilitar el cifrado de mensajes de Office 365 (OME) de flujo de correo. Puede cifrar los mensajes de correo electrónico saliente y quitar el cifrado de mensajes internos o de las respuestas a los mensajes cifrados enviados desde su organización.
-ms.openlocfilehash: e9c6874ce304d1af9da093c02cbc954c54dae8cc
-ms.sourcegitcommit: c05076501dfe118e575998ecfc08ad69d13c8abc
+ms.openlocfilehash: bd94d36543653d5767fe27aee0f859fe9e374b2f
+ms.sourcegitcommit: c0f5c92664b3fbed7b3c2f8232bb4046fc19d1b7
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/31/2018
-ms.locfileid: "25853095"
+ms.locfileid: "25890038"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages-in-office-365"></a>Definir reglas de flujo de correo para cifrar mensajes de correo electrónico en Office 365
 
@@ -29,7 +29,7 @@ Si recientemente migrado desde AD RMS para protección de la información de Azu
 Para obtener información acerca de los componentes que componen las reglas de flujo de correo y cómo de las reglas de flujo de correo, consulte [(reglas de transporte) de reglas de flujo de correo en Exchange Online](https://technet.microsoft.com/library/jj919238%28v=exchg.150%29.aspx). Para obtener información adicional acerca de cómo funcionan las reglas de flujo de correo con Azure protección de la información, vea [configuración de Exchange Online reglas de flujo de correo para las etiquetas de protección de la información de Azure](https://docs.microsoft.com/azure/information-protection/deploy-use/configure-exo-rules).
   
 ## <a name="hybrid-exchange-environments-do-this-first"></a>Entornos híbridos de Exchange: hacerlo en primer lugar
-Los usuarios pueden enviar correo cifrado con OME si enrutar correo electrónico a través de Exchange Online en local. Para ello, debe configurar el correo de flujo para flujo de su servidor de correo electrónico a Office 365. Una vez que ha configurado el correo para transmitir a través de Office 365, puede realizar las reglas de flujo de correo para OME mediante el uso de este artículo.
+Los usuarios pueden enviar correo cifrado con OME si enrutar correo electrónico a través de Exchange Online en local. Para ello, debe configurar el correo de flujo de su servidor de correo electrónico a Office 365. Una vez configurado el correo fluya a través de Office 365, puede hacer que las reglas de flujo de correo para OME mediante el uso de este artículo.
 
 Para obtener instrucciones, vea [configurar conectores para enrutar el correo entre Office 365 y sus propios servidores de correo electrónico](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail). En particular, complete los pasos descritos en "parte 2: configurar el correo de flujo de su servidor de correo electrónico a Office 365".
 
