@@ -32,7 +32,8 @@
 ### [Qué buscan las funciones de DLP](what-the-dlp-functions-look-for.md)
 ### [Ver una descripción general ampliada de personalización de DLP](https://go.microsoft.com/fwlink/?linkid=852306)
 ### [Personalizar un tipo de información confidencial integrado](customize-a-built-in-sensitive-information-type.md)
-### [Crear un tipo de información confidencial](create-a-custom-sensitive-information-type.md)
+### [Crear un tipo personalizado de información confidencial](create-a-custom-sensitive-information-type.md)
+### [Crear un tipo personalizado de información confidencial en PowerShell del Centro de seguridad y cumplimiento de Office 365](create-a-custom-sensitive-information-type-in-scc-powershell.md)
 ### [Crear un diccionario de palabras clave](create-a-keyword-dictionary.md)
 ### [Creación de huella digital de documento](document-fingerprinting.md) 
 # Administrar el gobierno de datos        
