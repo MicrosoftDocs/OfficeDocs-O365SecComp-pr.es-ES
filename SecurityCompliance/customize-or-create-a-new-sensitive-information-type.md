@@ -17,28 +17,28 @@ search.appverid:
 ms.custom: ''
 ms.assetid: ''
 description: Aprenda a modificar o crear nuevos tipos de información confidencial de Office 365 para RGPD.
-ms.openlocfilehash: e0e217ed44c5206828468b57d778bffa28c95da3
-ms.sourcegitcommit: c31424cafbf1953f2864d7e2ceb95b329a694edb
+ms.openlocfilehash: ed1dca161b5580d67b5a9071ca1d5b32e8b23d80
+ms.sourcegitcommit: ceb70ea863d8b97afea077a04fc7ec612b870695
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "23272265"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25857288"
 ---
 # <a name="customize-or-create-a-new-sensitive-information-type"></a>Personalizar o crear un nuevo tipo de información confidencial
 
 En este artículo se proporcionan tres ejemplos para ilustrar cómo modificar o crear nuevos tipos de información confidencial de Office 365 para RGPD.
 
--   Modificar un tipo de información confidencial existente: número de tarjeta de débito de la UE
+- Modificar un tipo de información confidencial existente: número de tarjeta de débito de la UE
 
--   Crear un nuevo tipo de información confidencial: dirección de correo electrónico
+- Crear un nuevo tipo de información confidencial: dirección de correo electrónico
 
--   Crear un nuevo tipo de información confidencial con archivo XML de ejemplo: número de cliente de Contoso
+- Crear un nuevo tipo de información confidencial con archivo XML de ejemplo: número de cliente de Contoso
 
 Consulte también:
 
--   [Crear un tipo de información confidencial](https://support.office.com/es-ES/article/Create-a-custom-sensitive-information-type-82c382a5-b6db-44fd-995d-b333b3c7fc30)
+- [Crear un tipo personalizado de información confidencial en PowerShell del Centro de seguridad y cumplimiento de Office 365](create-a-custom-sensitive-information-type-in-scc-powershell.md)
 
--   [Personalizar un tipo de información confidencial integrado](https://support.office.com/es-ES/article/Customize-a-built-in-sensitive-information-type-2164ce3d-4d64-4283-b6b1-b81fbe835e8e)
+- [Personalizar un tipo de información confidencial integrado](customize-a-built-in-sensitive-information-type.md)
 
 ## <a name="modify-a-sensitive-information-type-to-improve-accuracy"></a>Modificar un tipo de información confidencial para mejorar la precisión
 
@@ -142,7 +142,7 @@ Use estos recursos para formular y optimizar consultas con KQL:
 
 -   [Referencia de la sintaxis del lenguaje de consultas de palabras clave (KQL) (DMC)](https://docs.microsoft.com/es-ES/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
--   [Ejecutar una búsqueda de contenido en el Centro de seguridad y cumplimiento de Office 365](https://support.office.com/es-ES/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a) 
+-   [Ejecutar una búsqueda de contenido en el Centro de seguridad y cumplimiento de Office 365](https://support.office.com/es-ES/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a) 
 
 La Búsqueda de contenido proporciona otro recurso para ayudarle a desarrollar consultas KQL y tipos de información confidencial: palabras clave. ¿Por qué usar la lista de palabras clave? Puede obtener estadísticas que muestran cuántos elementos coinciden con cada palabra clave. Esto puede ayudarle a identificar rápidamente qué palabras clave son las más (y menos) eficaces. Para obtener más información acerca de las estadísticas de búsqueda, consulte [Ver las estadísticas de palabra clave de resultados de búsqueda de contenido](https://support.office.com/es-ES/article/View-keyword-statistics-for-Content-Search-results-9701a024-c52e-43f0-b545-9a53478aec04).
 

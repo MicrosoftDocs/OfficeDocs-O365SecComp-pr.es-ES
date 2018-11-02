@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: c8a95d1b-c3b6-4613-98ab-0331d1872cf3
 description: Para identificar información confidencial, a veces es necesario buscar palabras clave, especialmente al identificar contenido genérico (como comunicaciones relacionadas con la salud) o lenguaje explícito o inadecuado. Aunque puede crear listas de palabras clave en tipos de información confidencial, las listas de palabras clave están limitadas en tamaño y es necesario modificar el código XML para crearlas o editarlas. Los diccionarios de palabras clave ofrecen una administración más sencilla de palabras clave y con una escala mucho mayor, admitiendo hasta 100 000 términos por diccionario.
-ms.openlocfilehash: 5dd0459c801b433b8f0a477aeb2ab4192236bd28
-ms.sourcegitcommit: 4be502d1fc6cbaef4c72d599758d51efe3a173c9
+ms.openlocfilehash: 1cf41df5475af7ac5018cd34ea26e66ad5d668ee
+ms.sourcegitcommit: ceb70ea863d8b97afea077a04fc7ec612b870695
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "23849403"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "25857238"
 ---
 # <a name="create-a-keyword-dictionary"></a>Crear un diccionario de palabras clave
 
@@ -149,7 +149,7 @@ Ahora, el diccionario se actualizó en contexto. Tenga en cuenta que el campo `I
   
 ## <a name="using-keyword-dictionaries-in-custom-sensitive-information-types-and-dlp-policies"></a>Usar diccionarios de palabras clave en tipos de información confidencial personalizados y directivas DLP
 
-Los diccionarios de palabras clave se pueden usar como parte de los requisitos de coincidencia para un tipo de información confidencial personalizado, o bien como un tipo de información confidencial en sí. En ambos casos, es necesario [crear un tipo de información confidencial personalizado](create-a-custom-sensitive-information-type.md). Siga las instrucciones en el artículo vinculado para crear un tipo de información confidencial. Cuando tenga el archivo XML, necesitará el identificador GUID para que el diccionario lo use.
+Los diccionarios de palabras clave se pueden usar como parte de los requisitos de coincidencia para un tipo de información confidencial personalizado, o bien como tipo de información confidencial en sí. En ambos casos, es necesario [crear un tipo personalizado de información confidencial en PowerShell del Centro de seguridad y cumplimiento de Office 365](create-a-custom-sensitive-information-type-in-scc-powershell.md). Siga las instrucciones del artículo vinculado para crear un tipo de información confidencial. Una vez que tenga el archivo XML, necesitará el identificador GUID del diccionario para poder usarlo.
   
 ```
 <Entity id="9e5382d0-1b6a-42fd-820e-44e0d3b15b6e" patternsProximity="300" recommendedConfidence="75">
