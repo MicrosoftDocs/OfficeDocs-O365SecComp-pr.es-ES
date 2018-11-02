@@ -3,7 +3,7 @@ title: Quitar un usuario, un dominio o una dirección IP de una lista de bloquea
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 10/16/2018
+ms.date: 11/01/2018
 ms.audience: ITPro
 ms.topic: article
 f1_keywords:
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 description: Si un usuario envía continuamente mensajes de correo electrónico de Office 365 que se clasifica como correo no deseado, se bloqueará de enviar más mensajes.
-ms.openlocfilehash: 295d92fc6a1cd26783b18304a2d119d2ea0d7f1f
-ms.sourcegitcommit: b164d4af65709133e0b512a4327a70fae13a974d
+ms.openlocfilehash: 0f58f9f2270c8be38b3ea2ea81f04656eb10e7fb
+ms.sourcegitcommit: 83406a3258e722020e46a82bbf4bc9d5d8a326ca
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "25577069"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "25899661"
 ---
 # <a name="removing-a-user-domain-or-ip-address-from-a-block-list-after-sending-spam-email"></a>Quitar un usuario, un dominio o una dirección IP de una lista de bloqueados después de enviar correo no deseado
 
@@ -44,7 +44,7 @@ Complete esta tarea en la seguridad de Office 365 & Centro de cumplimiento (SCC)
 3. Haga clic en **Sí** para confirmar el cambio. 
     
 > [!NOTE]
-> Hay un límite para el número de veces que una cuenta puede ser desbloqueada por el Administrador de inquilinos. Si se ha superado el límite de un usuario, aparece un mensaje de error. A continuación, debe ponerse en contacto con soporte técnico para desbloquear el usuario.
+> Hay un límite para el número de veces que una cuenta puede ser desbloqueada por el Administrador de inquilinos. Si se ha superado el límite de un usuario, aparece un mensaje de error. A continuación, debe ponerse en contacto con soporte técnico para desbloquear el usuario.</br></br> Puede tardar hasta 1 hora antes de que el usuario está desbloqueado.
   
 ## <a name="third-party-block-lists"></a>Listas de bloqueados de terceros
 
