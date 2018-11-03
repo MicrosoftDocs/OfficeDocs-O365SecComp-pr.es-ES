@@ -5,6 +5,7 @@ author: denisebmsft
 manager: laurawi
 ms.audience: Admin
 ms.topic: article
+ms.date: 11/02/2018
 ms.service: o365-administration
 localization_priority: Normal
 search.appverid:
@@ -12,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 description: Configurar directivas de vínculos seguros para proteger la organización de vínculos malintencionados en archivos de Word, Excel, PowerPoint y Visio, así como en mensajes de correo electrónico.
-ms.openlocfilehash: 6c4e208e9f944d9c38d43b5669167e0cf425ec39
-ms.sourcegitcommit: e0c6f99d5514d8da8a70d9bd3616d1a1c0851254
+ms.openlocfilehash: 823dc6073dfa6302f19154a86bafa7f19d5affdc
+ms.sourcegitcommit: 49abeb8e57a5ee622d72a3782175a989b1a2e3c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2018
-ms.locfileid: "25552348"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25935557"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Configurar las directivas de seguros vínculos con Office 365 ATP
 
@@ -40,11 +41,11 @@ ms.locfileid: "25552348"
 - Asegúrese de que la organización tiene [La protección de amenaza avanzada de Office 365](office-365-atp.md).
     
 - Asegúrese de que tiene los permisos necesarios para definir o editar las directivas de ATP. Vea [permisos en la seguridad de Office 365 &amp; centro de cumplimiento](permissions-in-the-security-and-compliance-center.md).
+
+- Asegúrese de que los clientes de Office están configurados para usar [Autenticación moderno](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016) (Esto es para la protección de vínculos seguros de ATP en documentos de Office).
     
 - [Obtenga información acerca de las opciones de directiva de vínculos seguros de ATP](#learn-about-atp-safe-links-policy-options) (en este artículo). 
 
-- Asegúrese de que los clientes de Office están configurados para usar [Autenticación moderno](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016).
-    
 - Permitir hasta 30 minutos para la directiva de nueva o actualizada para propagarse a todos los centros de datos de Office 365.
     
 ## <a name="step-2-define-or-review-the-atp-safe-links-policy-that-applies-to-everyone"></a>Paso 2: Definir (o revisar) en la directiva de vínculos seguros de ATP que se aplica a todos los usuarios

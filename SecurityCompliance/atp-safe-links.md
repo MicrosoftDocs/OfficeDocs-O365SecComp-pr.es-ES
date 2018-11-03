@@ -4,6 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.audience: Admin
+ms.date: 11/02/2018
 ms.topic: overview
 f1_keywords:
 - "197503"
@@ -19,12 +20,12 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: La característica vínculos seguros proporciona comprobación de tiempo de clic de los hipervínculos en documentos de Office y en los mensajes de correo electrónico. Use los vínculos seguros para proteger la organización de suplantación de identidad y otros ataques.
-ms.openlocfilehash: 75703cbe6b6a5a5d102570288bb20e6814d095fc
-ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
+ms.openlocfilehash: fcb8fb5862a1b9b574008e91f8745e93b6d1a939
+ms.sourcegitcommit: 49abeb8e57a5ee622d72a3782175a989b1a2e3c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25454377"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25935567"
 ---
 # <a name="office-365-atp-safe-links"></a>Vínculos seguros ATP de Office 365
 
@@ -88,7 +89,7 @@ Las características de ATP seguros vínculos están activos cuando:
   
 - **Las directivas de vínculos seguros de ATP se configuran** para el correo electrónico y para documentos de Word, Excel, PowerPoint y Visio. (Vea [configurar las directivas de ATP vínculos seguros en Office 365](set-up-atp-safe-links-policies.md)).
 
-- **Aplicaciones de cliente de office 365 están configuradas para usar autenticación moderno**. (Vea [moderno Authentication for Office 2016](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016).) 
+- **Aplicaciones de cliente de Office 365 están configuradas para usar autenticación moderno** (Esto es para la protección de vínculos seguros de ATP en documentos de Office). (Vea [moderno Authentication for Office 2016](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016).) 
     
 - **Los usuarios han iniciado sesión en Office 365** mediante su cuenta de trabajo o escuela. (Vea [iniciar sesión en Office 365 o de Office](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426)).
     

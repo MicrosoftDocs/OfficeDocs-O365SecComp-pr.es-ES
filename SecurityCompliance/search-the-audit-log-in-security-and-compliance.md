@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Usar la seguridad de Office 365 &amp; centro de cumplimiento para buscar el registro de auditoría unificado para ver la actividad de usuario y Administrador de la organización de Office 365. '
-ms.openlocfilehash: 5e0d19841c0e512173e8c42d37c0ec13867299af
-ms.sourcegitcommit: e14dec9bed0c0009acbc1f1cb80b4d0794ad5739
+ms.openlocfilehash: f44fa0a32a70a4b8d96b7bb7b9d9386f9efb74b6
+ms.sourcegitcommit: 49abeb8e57a5ee622d72a3782175a989b1a2e3c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/05/2018
-ms.locfileid: "25435127"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25935597"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security-amp-compliance-center"></a>Buscar en el registro de auditoría del Centro de seguridad y cumplimiento de Office 365
 
@@ -78,7 +78,7 @@ Asegúrese de leer el registro de auditoría de los siguientes elementos antes d
      - **Office 365 E5** - auditoría se retienen los registros de 365 días (un año). Esto significa que puede buscar el registro de auditoría de las actividades que se realizaron dentro del último año. También está disponible para los usuarios que están asignados a una licencia de E3/Exchange Online Plan 1 y tienen una licencia adicional para cumplimiento de normas de Office 365 avanzada conservar registros de auditoría para un año.
 
         > [!NOTE]
-        > El período de retención de un año para los registros de auditoría estará disponibles pronto como parte de Office 365 Preview de programa y se sólo está disponible para las organizaciones inscritos en el programa de vista previa. Cuando el período de retención más largo para los registros de auditoría estén disponible en la vista previa (y más adelante para disponibilidad general), sólo nuevos registros de auditoría (para las actividades que se llevan a cabo después de que se libera el período de retención más largo) se conservan durante un año.
+        > El período de retención de un año para los registros de auditoría para las organizaciones E5 (o E3 de las organizaciones que tienen licencias adicionales de cumplimiento de normas avanzadas) está actualmente disponible sólo como parte de un programa de vista previa privada. Para inscribirse en este programa de vista previa, presentar una solicitud con el [Soporte técnico de Microsoft](https://docs.microsoft.com/en-us/office365/admin/contact-support-for-business-products?redirectSourcePath=%252fen-us%252farticle%252fcontact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b&view=o365-worldwide&tabs=online) y se incluyen los siguientes como la descripción de lo que necesita ayuda con: "A largo plazo Office 365 auditoría registro privada preview".
 
 - Si desea desactivar la búsqueda de registro de auditoría en Office 365 para su organización, puede ejecutar el siguiente comando en PowerShell remoto conectado a la organización de Exchange Online:
     
@@ -147,7 +147,7 @@ Aquí es el proceso para buscar en el registro de auditoría en Office 365.
     > [!TIP]
     > Usar una sesión de exploración privada (no una sesión normal) para tener acceso a la seguridad de Office 365 &amp; del centro de cumplimiento debido a que esto evitará que las credenciales que se encuentra actualmente con se usen. Para abrir una sesión de exploración de InPrivate en Internet Explorer o Microsoft Edge, presione CTRL + MAYÚS + P. Para abrir una sesión de exploración privada en Google Chrome (denominado una ventana incognito), presione CTRL + MAYÚS + N. 
   
-2. Inicie sesión en Office 365 con su cuenta de trabajo o escuela.
+2. Inicie sesión en Office 365 con su cuenta profesional o educativa.
     
 3. En el panel izquierdo de la seguridad &amp; centro de cumplimiento, haga clic en **búsqueda &amp; investigación**y, a continuación, haga clic en **búsqueda de registro de auditoría**.
     
@@ -485,7 +485,7 @@ En la siguiente tabla se enumera las actividades de administración de usuario q
 |Se ha agregado un usuario  <br/> |Agregar usuario  <br/> |Se ha creado una cuenta de usuario de Office 365.  <br/> |
 |Licencia de usuario modificado  <br/> |Licencia de usuario de cambio  <br/> |La licencia asignada a un usuario, lo que ha cambiado. Para ver qué licencias fueron los cambios, vea la actividad de **usuario se ha actualizado** correspondiente.<br/> |
 |Contraseña de usuario modificado  <br/> |Cambiar la contraseña de usuario  <br/> |Administrador de cambia la contraseña la contraseña de un usuario.  <br/> |
-|Usuario eliminado  <br/> |Eliminación de usuario  <br/> |Se eliminó una cuenta de usuario de Office 365.  <br/> |
+|Usuario eliminado  <br/> |Delete user  <br/> |Se eliminó una cuenta de usuario de Office 365.  <br/> |
 |Restablecer la contraseña de usuario  <br/> |Restablecer la contraseña de usuario  <br/> |Administrador de restablecer la contraseña de un usuario.  <br/> |
 |Establece la propiedad que obliga al usuario cambiar la contraseña  <br/> |Conjunto force cambiar contraseña de usuario  <br/> |Administrador establecer la propiedad que obliga a un usuario para cambiar su contraseña la próxima vez que el usuario iniciar sesión en Office 365.  <br/> |
 |Establecer propiedades de licencia  <br/> |Establecer propiedades de licencia  <br/> |Administrador modifica las propiedades de una licencia asignada a un usuario.  <br/> |
@@ -700,7 +700,7 @@ Tal y como se ha explicado anteriormente, el período de retención para los reg
 - **Office 365 E5** - auditoría se retienen los registros de 365 días (un año). Conservar registros de auditoría para un año también está disponible para las organizaciones que tienen una suscripción E3 y una suscripción de complemento de Office 365 avanzada cumplimiento.
 
      > [!NOTE]
-     > El período de retención de un año de auditoría registros pronto estarán disponibles para las organizaciones que están inscritos en el programa de vista previa de Office 365.
+     > Como ya se explicó, el período de retención de un año para los registros de auditoría para las organizaciones E5 (o E3 de las organizaciones que tienen licencias adicionales de cumplimiento de normas avanzadas) está actualmente disponible sólo como parte de un programa de vista previa privada. Para inscribirse en este programa de vista previa, presentar una solicitud con el [Soporte técnico de Microsoft](https://docs.microsoft.com/en-us/office365/admin/contact-support-for-business-products?redirectSourcePath=%252fen-us%252farticle%252fcontact-support-for-business-products-admin-help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b&view=o365-worldwide&tabs=online) y se incluyen los siguientes como la descripción de lo que necesita ayuda con: "A largo plazo Office 365 auditoría registro privada preview".
 
 Tenga en cuenta también que la duración del período de retención para los registros de auditoría se basa en las licencias por usuario. Por ejemplo, si un usuario en la organización se le asigna una licencia de Office 365 E3, los registros de auditoría para actividades realizadas por el que el usuario se conservan durante 90 días. Si un usuario diferente se asigna una licencia de Office 365 E5, sus registros de auditoría se conservan durante un año. 
 

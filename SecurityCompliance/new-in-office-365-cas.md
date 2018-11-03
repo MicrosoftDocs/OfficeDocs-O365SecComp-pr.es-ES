@@ -5,6 +5,7 @@ author: denisebmsft
 manager: laurawi
 ms.audience: Admin
 ms.topic: reference
+ms.date: 10/31/2018
 ms.service: o365-administration
 localization_priority: Normal
 search.appverid:
@@ -12,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: d674763c-a4c9-4604-8623-68c1836d27f3
 description: Vea las novedades de seguridad de la aplicación de nube de Office 365
-ms.openlocfilehash: a8bca8cb62681491fb5a6964104b1aa1c626784d
-ms.sourcegitcommit: 31e0d94244c76a9f5118efee8bbc93395d080f91
+ms.openlocfilehash: f661d0d541e84db89b7abd99fd77ef9a767a4cd0
+ms.sourcegitcommit: 49abeb8e57a5ee622d72a3782175a989b1a2e3c6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2018
-ms.locfileid: "23796876"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "25935577"
 ---
 # <a name="what-is-new-in-office-365-cloud-app-security"></a>Novedades de la seguridad de la aplicación de nube de Office 365
 
@@ -27,11 +28,11 @@ En este artículo se actualiza con frecuencia, como las características se agre
   
 ## <a name="office-365-cloud-app-security-release-130"></a>Versión de seguridad de la aplicación en la nube de Office 365 130
 
-*Versiones 5 de septiembre de 2018*
+*Publicada el 5 de septiembre de 2018*
 
 **Lanzamiento con [130 de la versión de seguridad de la aplicación de Microsoft en la nube](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-130)**:
 
-- **Nueva barra de menús** Para proporcionar una experiencia más coherente de administración a través de productos de Microsoft 365 y para que pueda dinámicas más fácilmente entre las soluciones de seguridad de Microsoft, la barra de menús del portal de seguridad de la aplicación en la nube ha movido hasta el lado izquierdo de la pantalla. Esta navegación coherente experiencia ayuda a orientar a usted al pasar de un portal de seguridad de Microsoft a otro.
+- **Nueva barra de menús** Para proporcionar una experiencia más coherente de administración a través de productos de Microsoft 365 y para que pueda dinámicas más fácilmente entre las soluciones de seguridad de Microsoft, la barra de menús del portal de seguridad de la aplicación en la nube ha movido hasta el lado izquierdo de la pantalla. Esta navegación coherente experiencia ayuda a orientar a usted al pasar de un portal de seguridad de Microsoft a otro.<br/>![Barra de menús en la seguridad de la aplicación de Office en la nube](media/OCAS-MenuBar.png)<br/>
 
 - **Puntuación de la aplicación de OAuth de impacto** Ahora puede enviar los comentarios del equipo de seguridad de la aplicación en la nube para hacernos saber si hay una aplicación de OAuth detectada en la organización que parece malintencionada. Esta nueva característica permite formar parte de nuestra comunidad de seguridad y mejorar el análisis y la puntuación de riesgo de aplicación de OAuth. Para obtener más información, vea [Administrar permisos de aplicación](manage-app-permissions-in-ocas.md).
 
