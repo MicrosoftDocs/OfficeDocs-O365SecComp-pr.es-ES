@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 ms.assetid: 82c382a5-b6db-44fd-995d-b333b3c7fc30
 description: Aprenda a crear e importar un tipo de información confidencial personalizada para DLP en el Centro de seguridad y cumplimiento de Office 365.
-ms.openlocfilehash: 46e3e0cc502eb6135e18c30df3d96ec2e083b54c
-ms.sourcegitcommit: ceb70ea863d8b97afea077a04fc7ec612b870695
+ms.openlocfilehash: c1774b094163b5712519b3baeb5f0360d84896ea
+ms.sourcegitcommit: e044b4fd72e4151cd17bf2ad05acc057e0c0d45f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "25866060"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "25895279"
 ---
 # <a name="create-a-custom-sensitive-information-type-in-office-365-security--compliance-center-powershell"></a>Crear un tipo personalizado de información confidencial en PowerShell del Centro de seguridad y cumplimiento de Office 365
 
-La función Prevención de pérdida de datos (DLP) de Office 365 incluye distintos [tipos de información confidencial](what-the-sensitive-information-types-look-for.md) preparados para usarlos en directivas DLP. Estos tipos integrados pueden ayudarle a identificar y proteger números de tarjetas de crédito, cuentas bancarias, pasaportes y mucho más. 
+Prevención de pérdida de datos (DLP) de Office 365 incluye muchos [tipos de información confidencial](what-the-sensitive-information-types-look-for.md) integrados preparados para usarlos en las directivas DLP. Estos tipos integrados pueden ayudar a identificar y proteger números de tarjeta de crédito, cuentas bancarias, números de pasaporte y mucho más. 
   
 Sin embargo, si tiene que identificar y proteger otro tipo de información confidencial (por ejemplo, un id. de empleado que usa un formato específico de su organización), puede crear un tipo personalizado de información confidencial. Los tipos de información confidencial se definen en un archivo XML denominado _paquete de reglas_.
   
@@ -38,7 +38,7 @@ Después de crear un archivo XML con formato correcto, puede cargarlo en Office 
 
 Debido a las varianzas de los entornos de cliente y los requisitos de coincidencia de contenido, el Soporte técnico de Microsoft no puede ayudar a proporcionar definiciones de contenido coincidente personalizadas: por ejemplo, definir clasificaciones personalizadas o patrones de expresiones regulares (conocidas como “RegEx”). Para el desarrollo, las pruebas y la depuración de contenido coincidente personalizado, los clientes de Office 365 tendrán que basarse en recursos de TI internos o usar un recurso externo de consultoría como los Servicios de Consultoría de Microsoft (MCS). Los ingenieros de soporte técnico pueden proporcionar soporte técnico limitado para la característica, pero no pueden garantizar que cualquier desarrollo personalizado de contenido coincidente cumplirá los requisitos y obligaciones del cliente. Pueden proporcionarse modelos de expresiones regulares de muestra con fines de prueba como ejemplo del tipo de asistencia que se puede proporcionar, o el servicio de soporte técnico puede ayudarle a solucionar problemas de un diseño RegEx existente que no se desencadena como se esperaba con un único ejemplo de contenido específico.
 
- Para obtener más información sobre el motor de RegEx de .NET que se usa para el procesamiento de texto, vea la documentación en [Expresiones regulares de .NET](https://docs.microsoft.com/dotnet/standard/base-types/regular-expressions).
+ Para obtener más información sobre el motor Boost.RegEx (anteriormente conocido como RegEx++) que se usa para el procesamiento de texto, vea [Boost.Regex 5.1.3](https://www.boost.org/doc/libs/1_68_0/libs/regex/doc/html/).
     
 ## <a name="sample-xml-of-a-rule-package"></a>XML de ejemplo de un paquete de reglas
 
