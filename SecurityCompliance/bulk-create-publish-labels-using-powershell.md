@@ -1,5 +1,5 @@
 ---
-title: Crear y publicar etiquetas de forma masiva con PowerShell
+title: Crear y publicar etiquetas de retención de forma masiva con PowerShell
 ms.author: stephow
 author: stephow-msft
 ms.date: 1/17/2018
@@ -12,14 +12,14 @@ search.appverid:
 - MET150
 ms.assetid: 8986701b-ffa1-46ec-8fd0-8f7e81d5b25f
 description: En Office 365, puede usar etiquetas para implementar una programación de retención en su organización. Como administrador de registros o responsable de cumplimiento normativo, puede que tenga que crear y publicar cientos de etiquetas. Puede hacerlo mediante la interfaz de usuario del Centro de seguridad y cumplimiento, pero crear etiquetas de una en una es laborioso e ineficiente. Si usa el script y los archivos .csv que se proporcionan a continuación, puede crear y publicar de forma masiva etiquetas y directivas de etiquetas. Primero, creará una lista de las etiquetas y una lista de las directivas de etiquetas en Excel y, después, creará de forma masiva las etiquetas y las directivas de etiquetas en esas listas con PowerShell. Esto permite crear y publicar al mismo tiempo y con mayor facilidad todas las etiquetas que necesita la programación de retención.
-ms.openlocfilehash: 43e521d937a9589b522c608aca2e75fcfc2bf569
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 1cf597cf9453a2b9899141d708896b9782dc6047
+ms.sourcegitcommit: 83406a3258e722020e46a82bbf4bc9d5d8a326ca
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22535695"
+ms.lasthandoff: 11/01/2018
+ms.locfileid: "25899671"
 ---
-# <a name="bulk-create-and-publish-labels-by-using-powershell"></a>Crear y publicar etiquetas de forma masiva con PowerShell
+# <a name="bulk-create-and-publish-retention-labels-by-using-powershell"></a>Crear y publicar etiquetas de retención de forma masiva con PowerShell
 
 En Office 365, puede usar etiquetas para implementar una programación de retención en su organización. Como administrador de registros o responsable de cumplimiento normativo, puede que tenga que crear y publicar cientos de etiquetas. Puede hacerlo mediante la interfaz de usuario del Centro de seguridad y cumplimiento, pero crear etiquetas de una en una es laborioso e ineficiente.
   
