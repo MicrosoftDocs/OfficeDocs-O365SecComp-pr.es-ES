@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Las etiquetas de retención de Office 365 ayudan a realizar las acciones adecuadas en el contenido adecuado. Con las etiquetas de retención, puede clasificar los datos de su organización para administrarlos mejor y aplicar reglas de retención basadas en esa clasificación. También puede usar etiquetas de retención para implementar la administración de registros en Office 365.
-ms.openlocfilehash: f172a723dad3cd555dd910458d27ec1bf7926d0f
-ms.sourcegitcommit: 98a418052be88137c06f5c1abe7012359a7e90ee
+ms.openlocfilehash: d957fc251aa4591d273a65d0a85ecde0df0845c9
+ms.sourcegitcommit: c7264f3a6a97f1ff544544e2c722e7825e265fa1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "25698046"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "26299254"
 ---
 # <a name="overview-of-retention-labels"></a>Introducción a las etiquetas de retención
 
@@ -52,9 +52,10 @@ Con las etiquetas de retención, puede:
   - No es necesario depender de los usuarios para clasificar todo el contenido correctamente.
     
   - Los usuarios ya no necesitan conocer las directivas de gobierno de datos; en su lugar, pueden centrarse en su trabajo.
-    
-    Tenga en cuenta que, para aplicar automáticamente las etiquetas, se necesita una suscripción de Office 365 Enterprise E5.
-    
+
+  > [!NOTE]
+  > La capacidad de aplicar etiquetas automáticamente requiere una licencia de Office 365 Enterprise E5 para cada usuario que tenga permisos para editar el contenido que se etiqueta automáticamente en un sitio o buzón. Los usuarios que solo tienen acceso de solo lectura no necesitan una licencia.
+      
 - **Aplicar una etiqueta de retención predeterminada a una biblioteca de documentos** en un sitio de grupo de Office 365 y SharePoint, para que todos los documentos de esa biblioteca obtengan la etiqueta de retención predeterminada. 
     
 - **Implementar la administración de registros en todo Office 365**, tanto en correos electrónicos como en documentos. Puede usar una etiqueta de retención para clasificar contenido como un registro. Cuando ocurra esto, la etiqueta no se puede cambiar ni quitar, y el contenido no se puede editar ni eliminar. 
