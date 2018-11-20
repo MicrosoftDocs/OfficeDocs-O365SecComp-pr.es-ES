@@ -6,8 +6,6 @@ manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-f1_keywords:
-- O365AC_AlternativeEmailAddress
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection: Strat_O365_IP
@@ -15,15 +13,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
-description: 'Usar la seguridad de Office 365 &amp; centro de cumplimiento para buscar el registro de auditoría unificado para ver la actividad de usuario y Administrador de la organización de Office 365. '
-ms.openlocfilehash: f44fa0a32a70a4b8d96b7bb7b9d9386f9efb74b6
-ms.sourcegitcommit: 49abeb8e57a5ee622d72a3782175a989b1a2e3c6
+description: 'Usar el centro de cumplimiento y seguridad de Office 365 para buscar el registro de auditoría unificado para ver la actividad de usuario y Administrador de la organización de Office 365. '
+ms.openlocfilehash: 02e38917d3a82828d6602661b494ebc0ffb733d8
+ms.sourcegitcommit: 42c7ad69f95fc4d2de13293b39cc44931b9f82e6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25935597"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "26522812"
 ---
-# <a name="search-the-audit-log-in-the-office-365-security-amp-compliance-center"></a>Buscar en el registro de auditoría del Centro de seguridad y cumplimiento de Office 365
+# <a name="search-the-audit-log-in-the-office-365-security--compliance-center"></a>Buscar en el registro de auditoría en el centro de cumplimiento y seguridad de Office 365
 
 ¿Necesita encontrar si un usuario ve un documento específico o purga un elemento desde su buzón? Si, por lo tanto, puede usar la seguridad de Office 365 &amp; centro de cumplimiento para buscar el registro de auditoría unificado para ver la actividad de usuario y Administrador de la organización de Office 365. ¿Por qué se registra una auditoría unificada? Debido a que puede buscar los siguientes tipos de actividad de usuario y administración de Office 365:
   
@@ -100,26 +98,26 @@ Asegúrese de leer el registro de auditoría de los siguientes elementos antes d
     
 - Puede tardar hasta 30 minutos o copia de seguridad a 24 horas después de un evento se produce para que la entrada de registro de auditoría correspondientes que se mostrará en los resultados de búsqueda. En la siguiente tabla se muestra el tiempo necesario para los distintos servicios de Office 365.
     
-|**Servicio de Office 365**|**30 minutos**|**24 horas**|
-|:-----|:-----|:-----|
-|Protección contra amenazas avanzadas y la información sobre amenazas  <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)| |
-|Azure Active Directory (eventos de inicio de sesión de usuario)  <br/> ||![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
-|Azure Active Directory (administración eventos)  <br/> ||![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) |
-|Azure Active Directory (eventos de inicio de sesión de usuario)  <br/> ||![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
-|Prevención de pérdida de datos  <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-|Dynamics 365 CRM <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-|eDiscovery  <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-|Exchange Online  <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
-|Microsoft Flow  <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-|Microsoft Forms  <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-|Microsoft Project  <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-|Microsoft Stream  <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-|Microsoft Teams  <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
-|Power BI  <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-|Seguridad &amp; centro de cumplimiento  <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
-|SharePoint Online y OneDrive para la Empresa  <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
-|Sway  <br/> ||![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
-|Yammer  <br/> ||![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+    |**Servicio de Office 365**|**30 minutos**|**24 horas**|
+    |:-----|:-----|:-----|
+    |Protección contra amenazas avanzadas y la información sobre amenazas  <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)| |
+    |Azure Active Directory (eventos de inicio de sesión de usuario)  <br/> ||![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+    |Azure Active Directory (administración eventos)  <br/> ||![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) |
+    |Azure Active Directory (eventos de inicio de sesión de usuario)  <br/> ||![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+    |Prevención de pérdida de datos  <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+    |Dynamics 365 CRM <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+    |eDiscovery  <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+    |Exchange Online  <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
+    |Microsoft Flow  <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+    |Microsoft Forms  <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+    |Microsoft Project  <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+    |Microsoft Stream  <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+    |Microsoft Teams  <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
+    |Power BI  <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
+    |Seguridad &amp; centro de cumplimiento  <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
+    |SharePoint Online y OneDrive para la Empresa  <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
+    |Sway  <br/> ||![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
+    |Yammer  <br/> ||![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
    
 - Azure Active Directory (AD Azure) es el servicio de directorio para Office 365. El registro de auditoría unificadas contiene el usuario, grupo, aplicación, dominio y actividades de Active directory realizadas en el centro de administración de Office 365 o en el Azure en el portal de administración. Para obtener una lista completa de los eventos de Azure AD, vea [Eventos de informe de auditoría de Active Directory de Azure](https://go.microsoft.com/fwlink/p/?LinkID=616549).
     
@@ -160,18 +158,18 @@ Aquí es el proceso para buscar en el registro de auditoría en Office 365.
   
 4. Configurar los criterios de búsqueda siguientes:
     
-1. **Actividades** Haga clic en la lista desplegable para mostrar las actividades que puede buscar. Actividades de administrador y usuario están organizadas en grupos de actividades relacionadas. Puede seleccionar actividades específicas o puede hacer clic en el nombre del grupo de actividad para seleccionar todas las actividades en el grupo. También puede hacer clic en una actividad seleccionada para borrar la selección. Después de ejecutar la búsqueda, se muestran sólo las entradas de registro de auditoría de las actividades seleccionadas. Selección de **Mostrar los resultados de todas las actividades** mostrará los resultados para todas las actividades realizadas por el usuario seleccionado o el grupo de usuarios. 
+    r. **las actividades** , haga clic en la lista desplegable para mostrar las actividades que puede buscar. Actividades de administrador y usuario están organizadas en grupos de actividades relacionadas. Puede seleccionar actividades específicas o puede hacer clic en el nombre del grupo de actividad para seleccionar todas las actividades en el grupo. También puede hacer clic en una actividad seleccionada para borrar la selección. Después de ejecutar la búsqueda, se muestran sólo las entradas de registro de auditoría de las actividades seleccionadas. Selección de **Mostrar los resultados de todas las actividades** mostrará los resultados para todas las actividades realizadas por el usuario seleccionado o el grupo de usuarios. 
     
     Más de 100 actividades de administrador y usuario se registran en el registro de auditoría de Office 365. Haga clic en la ficha **actividades auditada** en el tema de este artículo para ver las descripciones de cada actividad en cada uno de los distintos servicios de Office 365. 
     
-2. **Fecha de inicio** y **fecha de finalización** de los últimos siete días están activadas de forma predeterminada. Seleccione un intervalo de fecha y hora para mostrar los eventos que se produjeron dentro de ese período. La fecha y hora se presentan en formato de hora Universal coordinada (UTC). El intervalo de fechas máximo que puede especificar es de 90 días. Si el intervalo de fechas seleccionado es mayor que 90 días, se muestra un error. 
+    de forma predeterminada, se seleccionan b. **fecha de inicio** y **fecha de finalización** de los últimos siete días. Seleccione un intervalo de fecha y hora para mostrar los eventos que se produjeron dentro de ese período. La fecha y hora se presentan en formato de hora Universal coordinada (UTC). El intervalo de fechas máximo que puede especificar es de 90 días. Si el intervalo de fechas seleccionado es mayor que 90 días, se muestra un error. 
     
     > [!TIP]
     > Si se usa el intervalo de fechas máximo de 90 días, seleccione la hora actual de la **fecha de inicio**. De lo contrario, recibirá un error que indica que la fecha de inicio es anterior a la fecha de finalización. Si ha activado la auditoría en los últimos 90 días, no se puede iniciar el intervalo de fechas máximo antes de la fecha que se ha activado la auditoría. 
   
-3. **Usuarios** Haga clic en este cuadro y, a continuación, seleccione uno o varios usuarios para mostrar los resultados de búsqueda para. Las entradas de registro de auditoría para la actividad seleccionada realizado por los usuarios que seleccione en este cuadro se muestran en la lista de resultados. Deje este cuadro en blanco para devolver las entradas para todos los usuarios (y las cuentas de servicio) en la organización. 
+    c. los resultados de **los usuarios** , haga clic en este cuadro y, a continuación, seleccione uno o varios usuarios para mostrar búsqueda. Las entradas de registro de auditoría para la actividad seleccionada realizado por los usuarios que seleccione en este cuadro se muestran en la lista de resultados. Deje este cuadro en blanco para devolver las entradas para todos los usuarios (y las cuentas de servicio) en la organización. 
     
-4. **Archivo o carpeta** Escriba algunos o todos los de un nombre de archivo o carpeta para buscar la actividad relacionada con el archivo de la carpeta que contiene la palabra clave especificada. También puede especificar una dirección URL de un archivo o carpeta. Si utiliza una dirección URL, asegúrese de que el tipo de la ruta de acceso de dirección URL completa o si sólo tiene que escribir una parte de la dirección URL, no incluya espacios ni caracteres especiales. 
+    d. el **archivo o carpeta** escriba algunos o todos los de un nombre de archivo o carpeta para buscar la actividad relacionada con el archivo de la carpeta que contiene la palabra clave especificada. También puede especificar una dirección URL de un archivo o carpeta. Si utiliza una dirección URL, asegúrese de que el tipo de la ruta de acceso de dirección URL completa o si sólo tiene que escribir una parte de la dirección URL, no incluya espacios ni caracteres especiales. 
     
     Deje este cuadro en blanco para devolver las entradas de todos los archivos y carpetas en la organización.
     

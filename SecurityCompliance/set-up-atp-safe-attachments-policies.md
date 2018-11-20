@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 description: Definir directivas de los datos adjuntos seguros para proteger su organización desde archivos malintencionados en el correo electrónico.
-ms.openlocfilehash: 1fd831adf5166223ba5df159a131c71e3b467233
-ms.sourcegitcommit: cda46434094bc2837dba90256d044ba77552df12
+ms.openlocfilehash: 84625cc688be4b6aa98674563b5c6c30b1b35598
+ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "25850844"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "26238412"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Configurar las directivas de Office 365 ATP los datos adjuntos seguros
 
@@ -82,18 +82,9 @@ Como configurar las directivas de los datos adjuntos seguros de ATP, elegir entr
 |**Entrega dinámica** <br/> |Entrega los mensajes inmediatamente  <br/> Reemplaza los datos adjuntos con un archivo de marcador de posición hasta que el examen se ha completado y, a continuación, vuelve a adjuntar los datos adjuntos si no se detecta ninguna malware  <br/> Incluye los datos adjuntos que se obtiene una vista previa de las capacidades para la mayoría de los archivos PDF y Office archivos durante la exploración  <br/> Envía los mensajes con malware detectado a cuarentena donde un administrador de seguridad o analista puede revisar y de la versión (o eliminar) esos mensajes  <br/> [Obtenga información sobre la entrega dinámica y obtener una vista previa con datos adjuntos seguros de ATP](dynamic-delivery-and-previewing.md) <br/> |Evitar retrasos de mensaje al tiempo que protege los destinatarios de archivos malintencionados  <br/> Habilitar destinatarios obtener una vista previa de datos adjuntos en modo seguro mientras el examen está produciendo  <br/> |
 |**Habilitar la redirección** <br/> |Se aplica cuando se elige la opción de Monitor, bloquear o reemplazar  <br/> Envía los datos adjuntos a una dirección de correo electrónico especificada donde pueden investigar los administradores de seguridad o los analistas  <br/> |Permiten a los administradores de seguridad y los analistas de investigación datos adjuntos sospechosos  <br/> |
    
-## <a name="related-topics"></a>Temas relacionados
+## <a name="next-steps"></a>Pasos siguientes
 
-[Protección contra amenazas avanzada de Office 365](office-365-atp.md)
-  
-[Datos adjuntos seguros de ATP en Office 365](atp-safe-attachments.md)
-  
-[Vínculos de ATP seguros en Office 365](atp-safe-links.md)
-  
-[Configurar directivas de vínculos seguros de ATP en Office 365](set-up-atp-safe-links-policies.md)
-  
-[Ver los informes de protección contra amenazas de avanzada](view-reports-for-atp.md)
-
-[Los permisos de la seguridad de Office 365 &amp; centro de cumplimiento](permissions-in-the-security-and-compliance-center.md)
-  
-
+Una vez que las directivas de los datos adjuntos seguros de ATP, puede ver cómo funciona ATP para su organización mediante la visualización de informes. Vea los siguientes recursos para obtener más información:
+- [Visualización de informes para la protección de amenaza avanzada de Office 365](view-reports-for-atp.md)
+- [Use el explorador en la seguridad &amp; centro de cumplimiento](use-explorer-in-security-and-compliance.md)
+ 

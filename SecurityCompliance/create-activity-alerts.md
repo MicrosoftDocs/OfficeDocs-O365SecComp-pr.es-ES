@@ -15,58 +15,62 @@ search.appverid:
 - MET150
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
 description: Agregar y administrar alertas de actividad en la seguridad &amp; centro de cumplimiento para que Office 365 se envíen notificaciones por correo electrónico cuando los usuarios realizan actividades específicas en Office 365.
-ms.openlocfilehash: 409c1ff4c7fdd0d2d071bdb2eab08ec49357ed8a
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 2a579e850d16b730a777ce6c4e5c0446305a027d
+ms.sourcegitcommit: 3a376619dbae472495c29da7c061f5c5faeeaddb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22536589"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "26282744"
 ---
 # <a name="create-activity-alerts-in-the-office-365-security-amp-compliance-center"></a>Crear alertas de actividad en la seguridad de Office 365 &amp; centro de cumplimiento
 
 Puede crear una alerta de actividad que se va a enviar una notificación de correo electrónico cuando los usuarios realizan actividades específicas en Office 365. Alertas de actividad son similares a la búsqueda de eventos en el registro de auditoría de Office 365, excepto en que se le enviará un mensaje de correo electrónico cuando un evento para una actividad que se ha creado una alerta para sucede. 
   
  **¿Por qué usar alertas de actividad en lugar de buscar el registro de auditoría?** Puede haber ciertos tipos de actividad o realizadas por usuarios específicos que realmente desea conocer. En lugar de tener que recordar buscar el registro de auditoría para esas actividades, puede usar las alertas de actividad para que Office 365 enviarle un mensaje de correo electrónico cuando los usuarios realizan dichas actividades. Por ejemplo, puede crear una alerta de actividad para avisarle cuando un usuario elimina los archivos de SharePoint o puede crear una alerta que le notifique cuando un usuario elimina permanentemente los mensajes de su buzón. La notificación de correo electrónico enviada a la incluye información sobre qué actividad se llevó a cabo y el usuario que la ha realizado. 
+
+> [!NOTE]
+> Se recomienda que para comenzar a usar las directivas de alerta en el centro de cumplimiento y seguridad en lugar de crear nuevas alertas de actividad. Directivas de alerta proporcionan la funcionalidad de adición como la capacidad para crear una directiva de alerta que se desencadene una alerta cuando cualquier usuario realiza una actividad especificada y mostrar las alertas en la página **Ver alertas** en el centro de cumplimiento y seguridad. Para obtener más información, vea [las directivas de la seguridad de Office 365 de la alerta &amp; centro de cumplimiento](alert-policies.md).
   
 ## <a name="before-you-begin"></a>Antes de empezar
 
 - Debe tener asignado el rol de la configuración de la organización en la seguridad &amp; centro de cumplimiento para administrar las alertas de actividad. De forma predeterminada, este rol se asigna a los grupos de roles de administrador de cumplimiento de normas y administración de la organización. Para obtener más información acerca de cómo agregar miembros a grupos de roles, consulte [dar a los usuarios acceso a la seguridad de Office 365 &amp; centro de cumplimiento](grant-access-to-the-security-and-compliance-center.md).
     
 - Usted (u otro administrador) debe activar el registro de auditoría para la organización antes de empezar a usar las alertas de actividad. Para ello, haga clic en **Iniciar grabación de usuario y la actividad de administración** en la página **alertas de actividad** . (Si no ve este vínculo, auditoría ha ya se ha activado para la organización.) También puede activar la auditoría en la página de **búsqueda de registro de auditoría** en la seguridad &amp; centro de cumplimiento (vaya a **búsqueda &amp; investigación** \> **búsqueda de registro de auditoría**). Sólo debe hacer esto una vez para su organización.
+  
+- Puede crear alertas para las mismas actividades que puede buscar en el registro de auditoría de Office 365. Ver la [información más](#more-information) de sección para obtener una lista de escenarios comunes (y la actividad específica para supervisar) que pueden crear alertas para. 
     
-- Puede usar la página de **alertas** en la seguridad &amp; centro de cumplimiento para crear alertas sólo para la actividad de los usuarios que aparecen en la libreta de direcciones de su organización. No puede usar esta página para crear alertas para la actividad de los usuarios externos. 
-    
-- Ver la [información más](#more-information) de sección para obtener una lista de escenarios comunes (y la actividad específica para supervisar) que pueden crear alertas para. 
-    
-- Puede crear alertas para las mismas actividades que puede buscar en el registro de auditoría de Office 365. 
+- Puede usar la página **alertas de actividad** en la seguridad &amp; centro de cumplimiento para crear alertas sólo para la actividad de los usuarios que aparecen en la libreta de direcciones de su organización. No puede usar esta página para crear alertas para la actividad de los usuarios externos que no se enumeran en la libreta de direcciones. 
     
 ## <a name="create-an-activity-alert"></a>Crear una alerta de actividad
 
-1. Vaya a [https://protection.office.com](https://protection.office.com).
+1. Vaya a [https://protection.office.com/#/managealerts](https://protection.office.com/#/managealerts).
     
-2. Inicie sesión en Office 365 con su cuenta de trabajo o escuela.
+2. Inicie sesión en Office 365 con su cuenta profesional o educativa.
     
-3. En el panel izquierdo, haga clic en **alertas**y, a continuación, haga clic en **Administrar alertas**.
+3. En la página **alertas de actividad** , haga clic en ![icono Agregar](media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **New**.
+
+   Se muestra la página emergente para crear una alerta de actividad.
+
     
-4. En la página **alertas de actividad** , haga clic en **Agregar una alerta**.
-    
-    ![Agregar una alerta de actividad](media/53888bd5-9fa2-4398-8ccc-1a9dc72517ac.png)
+    ![Crear una alerta de actividad](media/53888bd5-9fa2-4398-8ccc-1a9dc72517ac.png)
   
-5. Complete los campos siguientes para crear una alerta:
+4. Complete los campos siguientes para crear una alerta de actividad:
     
     a. **nombre** - escriba un nombre para la alerta. Los nombres de alertas deben ser únicos dentro de la organización.
     
     b. **Descripción** (opcional): se Describe la alerta, como las actividades y los usuarios que está realizando un seguimiento, y los usuarios que las notificaciones de correo electrónico se envían a. Las descripciones proporcionan un modo rápido y fácil para describir el propósito de la alerta para otros administradores.
     
-    c. **Enviar esta alerta cuándo** - haga clic en **Enviar esta alerta cuándo** y, a continuación, configurar estos dos campos:
+    c. **tipo de alerta** : asegúrese de que está seleccionada la opción **personalizada** . 
+
+    d. **Enviar esta alerta cuándo** - haga clic en **Enviar esta alerta cuándo** y, a continuación, configurar estos dos campos:
     
     - **Actividades** - haga clic en la lista desplegable de lista para mostrar las actividades que puede crear una alerta para. Se trata de la misma lista de actividades que se muestra al buscar en el registro de auditoría de Office 365. Puede seleccionar uno o más actividades específicas o puede hacer clic en el nombre del grupo de actividad para seleccionar todas las actividades en el grupo. Para obtener una descripción de estas actividades, vea la sección "Auditar actividades" en [el registro de auditoría en el centro de cumplimiento de seguridad de Office 365 y de búsqueda](search-the-audit-log-in-security-and-compliance.md#audited-activities). Cuando un usuario realiza alguna de las actividades que ha agregado a la alerta, se envía una notificación de correo electrónico. 
     
      - **Los usuarios** - haga clic en este cuadro y, a continuación, seleccione uno o varios usuarios. Si los usuarios de este cuadro de llevar a cabo las actividades que ha agregado al cuadro de **actividades** , se enviará una alerta. Deje el cuadro **usuarios** en blanco para enviar una alerta cuando cualquier usuario de la organización lleva a cabo las actividades especificadas por la alerta. 
+
+    e. **Enviar esta alerta a** - haga clic en **Enviar esta alerta**y, a continuación, haga clic en el cuadro **destinatarios** y escriba un nombre para agregar un usuarios que recibirán una notificación de correo electrónico cuando un usuario (especificado en el cuadro **usuarios** ) realiza una actividad (especificado en el Cuadro de **actividades** ). Tenga en cuenta que se agregan a la lista de destinatarios de forma predeterminada. Puede quitar el nombre de esta lista.
     
-    d. **Enviar esta alerta a** - haga clic en **Enviar esta alerta**y, a continuación, haga clic en el cuadro **destinatarios** y escriba un nombre para agregar un usuarios que recibirán una notificación de correo electrónico cuando un usuario (especificado en el cuadro **usuarios** ) realiza una actividad (especificado en el Cuadro de **actividades** ). Tenga en cuenta que se agregan a la lista de destinatarios de forma predeterminada. Puede quitar el nombre de esta lista.
-    
-6. Haga clic en **Guardar** para crear la alerta. 
+5. Haga clic en **Guardar** para crear la alerta. 
     
     La nueva alerta se muestra en la lista en la página **alertas de actividad** . 
     
@@ -78,17 +82,15 @@ Puede crear una alerta de actividad que se va a enviar una notificación de corr
 
 Puede desactivar una alerta de actividad para que no se envía una notificación de correo electrónico. Después de desactivar la alerta de actividad, aún se muestra en la lista de alertas de actividad para su organización y, aún puede ver sus propiedades.
   
-1. Vaya a [https://protection.office.com](https://protection.office.com).
+1. Vaya a [https://protection.office.com/#/managealerts](https://protection.office.com/#/managealerts).
     
-2. Inicie sesión en Office 365 con su cuenta de trabajo o escuela.
+2. Inicie sesión en Office 365 con su cuenta profesional o educativa.
     
-3. En el panel izquierdo, haga clic en **alertas**y, a continuación, haga clic en **Administrar alertas de actividad**.
+3. En la lista de alertas de actividad para su organización, haga clic en la alerta que desea desactivar.
     
-4. En la lista de alertas para su organización, haga clic en la alerta que desea desactivar.
+4. En la página **Editar alerta** , haga clic en el conmutador de alternancia **en** para cambiar el estado a **desactivar**y, a continuación, haga clic en **Guardar**.
     
-5. En la página **Editar alerta** , haga clic en el conmutador de alternancia **en** para cambiar el estado a **desactivar**y, a continuación, haga clic en **Guardar**.
-    
-    El estado de la alerta en las páginas de alertas de actividad está establecido en **Off**. 
+    El estado de la alerta en las páginas de **las alertas de actividades** está establecido en **Off**. 
     
 Para activar una alerta de actividad, repita estos pasos y haga clic en el conmutador de alternancia **desactivada** para cambiar el estado **activado**.
   

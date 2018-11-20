@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.audience: Admin
-ms.date: 11/02/2018
+ms.date: 11/08/2018
 ms.topic: overview
 f1_keywords:
 - "197503"
@@ -20,12 +20,12 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: La característica vínculos seguros proporciona comprobación de tiempo de clic de los hipervínculos en documentos de Office y en los mensajes de correo electrónico. Use los vínculos seguros para proteger la organización de suplantación de identidad y otros ataques.
-ms.openlocfilehash: fcb8fb5862a1b9b574008e91f8745e93b6d1a939
-ms.sourcegitcommit: 49abeb8e57a5ee622d72a3782175a989b1a2e3c6
+ms.openlocfilehash: bb9996f5761817fa80f0dd3dfd56e42c015bd751
+ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "25935567"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "26238502"
 ---
 # <a name="office-365-atp-safe-links"></a>Vínculos seguros ATP de Office 365
 
@@ -34,8 +34,10 @@ ms.locfileid: "25935567"
 Office 365 ATP seguros vínculos (ATP seguros vínculos) (junto con los [Datos adjuntos seguros de Office 365 ATP](atp-safe-attachments.md)) es un conjunto de características de seguridad que se ofrece como parte de [La protección de amenaza avanzada de Office 365](office-365-atp.md) para las organizaciones empresariales. Vínculos seguros ATP puede ayudar a proteger su organización proporcionando comprobación de tiempo de clic de direcciones web (URL) en [mensajes de correo electrónico](#how-atp-safe-links-works-with-email) y [documentos de Office](#how-atp-safe-links-works-with-office-documents). Protección se define a través de [vínculos seguros ATP directivas](set-up-atp-safe-links-policies.md) que se han establecido por el equipo de seguridad de Office 365. 
   
 Una vez que las directivas de vínculos seguros ATP, los administradores globales de Office 365, los administradores de seguridad y los lectores de seguridad pueden [Ver los informes de protección contra amenazas de avanzada](view-reports-for-atp.md). La información en los informes puede ayudar al equipo de seguridad lleve a cabo pasos adicionales para proteger su organización o la investigación de incidentes de seguridad.
+
+Como [las nuevas características se agregan a ATP](office-365-atp.md#new-features-are-continually-being-added-to-atp), el equipo de seguridad de Office 365 puede agregar o modificar directivas de vínculos seguros ATP de su organización. Además, es posible que observe los cambios y mejoras, como nuestro recién revisado [las páginas de advertencia](atp-safe-links-warning-pages.md).
          
-### <a name="how-atp-safe-links-works-with-urls-in-email"></a>Funcionamiento de ATP seguros vínculos con direcciones URL en correo electrónico
+## <a name="how-atp-safe-links-works-with-urls-in-email"></a>Funcionamiento de ATP seguros vínculos con direcciones URL en correo electrónico
 
 En un nivel alto, aquí es cómo funciona la protección de vínculos seguros de ATP para las direcciones URL en el correo electrónico (hospedado en Office 365, no local):
   
@@ -61,7 +63,7 @@ En un nivel alto, aquí es cómo funciona la protección de vínculos seguros de
     
     - Si la dirección URL se determina como seguros, se abre el sitio Web.
     
-### <a name="how-atp-safe-links-works-with-urls-in-office-documents"></a>Funcionamiento de ATP seguros vínculos con direcciones URL en documentos de Office
+## <a name="how-atp-safe-links-works-with-urls-in-office-documents"></a>Funcionamiento de ATP seguros vínculos con direcciones URL en documentos de Office
 
 En un nivel alto, aquí es cómo funciona la protección de vínculos seguros de ATP para las direcciones URL en aplicaciones de Office 365 ProPlus (versiones actuales de Word, Excel y PowerPoint en Windows o Mac, las aplicaciones de Office de iOS o dispositivos Android, Visio en Windows, OneNote Online y Office Online):
   
@@ -83,7 +85,7 @@ En un nivel alto, aquí es cómo funciona la protección de vínculos seguros de
 
 ## <a name="how-to-get-atp-safe-links-protection"></a>Cómo obtener protección vínculos seguros de ATP
 
-Características de vínculos seguros de ATP forman parte de la [Protección contra amenazas de avanzada](office-365-atp.md), que se incluye en Office 365 Enterprise E5, Microsoft 365 Business y Microsoft 365 Enterprise. Si su organización usa otra suscripción de Office 365 Enterprise, protección avanzada de amenaza puede adquirirse como un complemento. Para obtener más información, vea [Descripción del servicio Office 365 plataforma: seguridad de Office 365 &amp; centro de cumplimiento](https://technet.microsoft.com/en-us/library/dn933793.aspx) y [comprar o editar un complemento de Office 365 para profesionales](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6).
+Características de vínculos seguros de ATP forman parte de la [Protección contra amenazas de avanzada](office-365-atp.md), que se incluye en Office 365 Enterprise E5, Microsoft 365 Business y Microsoft 365 Enterprise. 
   
 Las características de ATP seguros vínculos están activos cuando:
   
@@ -95,11 +97,11 @@ Las características de ATP seguros vínculos están activos cuando:
     
 - **Que correo electrónico de la organización está hospedado en Office 365**, no en un servidor local. 
     
-### <a name="how-to-make-sure-atp-safe-links-protection-is-in-place"></a>Para que sea seguro de protección de ATP seguros vínculos está en su lugar
+## <a name="how-to-make-sure-atp-safe-links-protection-is-in-place"></a>Para que sea seguro de protección de ATP seguros vínculos está en su lugar
 
 Es una buena manera de ver cómo funciona protección vínculos seguros de ATP para su organización mediante la [visualización de informes de protección avanzada de amenaza](view-reports-for-atp.md). Además, como un administrador global o administrador de seguridad, asegúrese de revisar las [directivas de vínculos seguros de ATP](set-up-atp-safe-links-policies.md). Las directivas de vínculos seguros ATP determinan si protección se aplica a los hipervínculos en mensajes de correo electrónico sólo, o a las direcciones URL en documentos de Office así como.
 
-### <a name="example-scenarios-where-atp-safe-links-protection-might-or-might-not-be-in-place"></a>Escenarios de ejemplo donde es posible que protección de vínculos seguros ATP o que no sea en contexto
+## <a name="example-scenarios-where-atp-safe-links-protection-might-or-might-not-be-in-place"></a>Escenarios de ejemplo donde es posible que protección de vínculos seguros ATP o que no sea en contexto
   
 En la siguiente tabla se describe algunos escenarios de ejemplo donde protección vínculos seguros ATP puede ser o no en su lugar. (En todos estos casos, se supone que la organización tiene Office 365 Enterprise E5).
   
@@ -111,31 +113,6 @@ En la siguiente tabla se describe algunos escenarios de ejemplo donde protecció
 |Organización de Díaz tiene una directiva de vínculos seguros de ATP que tiene `http://tailspintoys.com` aparece como un sitio Web bloqueado. Lee recibe un mensaje de correo electrónico que contiene una dirección URL a `http://tailspintoys.com/aboutus/trythispage`. Lee hace clic en la dirección URL.<br/> |Depende de si todo el sitio y todos sus subpáginas se incluyen en la lista de URL bloquean. Consulte [Configurar una lista de direcciones URL bloqueada personalizada con vínculos seguros de ATP](set-up-a-custom-blocked-urls-list-wtih-atp.md).<br/> |
 |Pablo, compañeros de Jean, envía un correo electrónico a Jean, sin saber que el correo electrónico contiene una dirección URL malintencionada.  <br/> |Depende de si se definen las directivas de vínculos seguros de ATP para el correo electrónico enviado dentro de la organización. Consulte [configurar las directivas de vínculos seguros ATP de Office 365](set-up-atp-safe-links-policies.md).<br/> |
 
-## <a name="new-features-are-continually-being-added-to-atp-safe-links"></a>Las nuevas características se están agregando continuamente a los vínculos seguros de ATP
 
-Estamos siguiendo agregar nuevas características a vínculos seguros de ATP. En ocasiones, una nueva característica llama para que las directivas de vínculos seguros de ATP ser revisado y actualizado. Aquí hay varios ejemplos:
-  
-- A partir de las últimas de 2017 octubre, protección de vínculos seguros de ATP se ha ampliado para aplicar a las direcciones URL en correo electrónico, así como las direcciones URL en documentos de Office 365 ProPlus, como Word, Excel, PowerPoint y Visio en Windows, así como Office las aplicaciones de iOS y dispositivos Android. (Asegúrese de que está utilizando [Autenticación moderno para Office](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016).)
-    
-- A partir de marzo de 2018, protección de vínculos seguros de ATP se ha ampliado para aplicar a correo electrónico enviado entre personas dentro de una organización. (Asegúrese de [Revisar](set-up-atp-safe-links-policies.md)y modificar las directivas de vínculos seguros ATP.)
- 
-- A partir de la segunda parte de 2018, protección de vínculos seguros de ATP se ha ampliado para aplicar a las direcciones URL en Office Online (en línea de Word, Excel Online, Online de PowerPoint y OneNote en línea) y Office 365 ProPlus en Mac. (Asegúrese de [Revisar](set-up-atp-safe-links-policies.md)y modificar las directivas de vínculos seguros ATP.)
-
-- Principio en septiembre de 2018, la característica de [páginas de advertencia de Office 365 ATP](atp-safe-links-warning-pages.md) una nueva combinación de colores, más detalles y la capacidad para seguir a un sitio a pesar de recibir advertencias y recomendaciones. 
- 
-- A partir de octubre de 2018 e implantar durante los próximos meses, cuando las personas usan Outlook Web Application (OWA) o Outlook, vínculos seguros de ATP no procesa las direcciones URL originales, volver a escribir las direcciones URL. (Llamamos a esta visibilidad de vínculo nativo).
-
-   
-## <a name="related-topics"></a>Temas relacionados
-
-[Protección contra amenazas avanzada de Office 365](office-365-atp.md)
-  
-[Configurar directivas de vínculos seguros de ATP en Office 365](set-up-atp-safe-links-policies.md)
-  
-[Datos adjuntos seguros de ATP en Office 365](atp-safe-attachments.md)
-  
-[Funciones de ATP contra suplantación de identidad en Office 365](atp-anti-phishing.md)
-  
-[Ver los informes de protección contra amenazas de avanzada](view-reports-for-atp.md)
   
 

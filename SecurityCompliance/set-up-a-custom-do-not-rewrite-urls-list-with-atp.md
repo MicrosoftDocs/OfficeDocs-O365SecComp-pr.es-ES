@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 35dbfd99-da5a-422b-9b0e-c6caf3b645fa
 description: Al configurar las directivas de vínculos seguros de ATP, puede incluir una reescritura de no hacer ' lista de direcciones URL para habilitar algunas personas de la organización visitar sitios que se incluyen en la lista.
-ms.openlocfilehash: 3ce783a3f783889bdc59ad8d412c80a79e7dd914
-ms.sourcegitcommit: 7032830867eb3fc71760e04b8342aff174c5d757
+ms.openlocfilehash: c954c12785659f9c025046bf3773cfec2d5dd5f9
+ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "25353266"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "26238392"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-office-365-atp-safe-links"></a>Configurar una lista personalizada de direcciones URL de reescritura de no hacer con Office 365 ATP seguros vínculos
 
@@ -66,20 +66,4 @@ Tienen los siguientes ejemplos de listas de tabla de lo que puede escribir y el 
 |`http://contoso.com/a`  <br/> |Permite a los destinatarios específicos a visitar un sitio como `http://contoso.com/a`, pero no subtrazados like`http://contoso.com/a/b`  <br/> |
 |`http://contoso.com/a*`  <br/> |Permite a los destinatarios específicos a visitar un sitio como `http://contoso.com/a` y subtrazados como`http://contoso.com/a/b`  <br/> |
    
-  
-
-## <a name="related-topics"></a>Temas relacionados
-
-[Protección contra amenazas avanzada de Office 365](office-365-atp.md)
-  
-[Vínculos de ATP seguros en Office 365](atp-safe-links.md)
-  
-[Configurar directivas de vínculos seguros de ATP en Office 365](set-up-atp-safe-links-policies.md)
-  
-[Configurar una lista de direcciones URL bloqueada personalizada con vínculos seguros de ATP](set-up-a-custom-blocked-urls-list-wtih-atp.md)
-
-[Visualización de informes para la protección de amenaza avanzada de Office 365](view-reports-for-atp.md)
-
-[Los permisos de la seguridad de Office 365 &amp; centro de cumplimiento](permissions-in-the-security-and-compliance-center.md)
-  
-
+ 

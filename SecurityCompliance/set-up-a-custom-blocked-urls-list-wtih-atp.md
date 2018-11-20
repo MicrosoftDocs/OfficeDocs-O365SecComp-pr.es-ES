@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 896a7efb-1683-465e-a394-261349e5d866
 description: Lea este artículo para obtener información sobre cómo configurar una lista de direcciones URL bloqueadas para su organización mediante la protección de amenaza avanzada de Office 365. Las direcciones URL bloqueadas se aplicarán a los mensajes de correo electrónico y documentos de Office según las directivas de vínculos seguros de ATP.
-ms.openlocfilehash: 0429546e521bf3f6b7144342ab0997e924c2f616
-ms.sourcegitcommit: 099bbfb1d16b251fd5cf18ec6515faaf9a989176
+ms.openlocfilehash: 1f7a991b9ab8f3a9f16616379cfb6c4c3c546260
+ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25454367"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "26238372"
 ---
 # <a name="set-up-a-custom-blocked-urls-list-using-office-365-atp-safe-links"></a>Configurar una lista personalizada de direcciones URL bloqueada mediante Office 365 ATP seguros vínculos
 
@@ -64,17 +64,5 @@ Lea este artículo para obtener información sobre cómo configurar la lista de 
 ## <a name="how-to-define-exceptions-for-certain-users-in-an-organization"></a>Procedimiento para definir excepciones para determinados usuarios en una organización
 
 Si desea que ciertos grupos puedan ver las direcciones URL que podrían estar bloqueadas para que otros usuarios, puede especificar una directiva de vínculos seguros de ATP que se aplica a determinados destinatarios. Consulte [Configurar una "no reescritura" las direcciones URL de lista personalizada con vínculos seguros de ATP](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md).
-  
-## <a name="related-topics"></a>Temas relacionados
-
-[Protección contra amenazas avanzada de Office 365](office-365-atp.md)
-  
-[Vínculos de ATP seguros en Office 365](atp-safe-links.md)
-  
-[Configurar directivas de vínculos seguros de ATP en Office 365](set-up-atp-safe-links-policies.md)
-  
-[Datos adjuntos seguros de ATP en Office 365](atp-safe-attachments.md)
-
-[Los permisos de la seguridad de Office 365 &amp; centro de cumplimiento](permissions-in-the-security-and-compliance-center.md)
   
 

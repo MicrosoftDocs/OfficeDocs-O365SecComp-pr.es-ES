@@ -3,7 +3,7 @@ title: Entrega dinámica y obtener una vista previa con Office 365 ATP los datos
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 10/30/2018
+ms.date: 11/08/2018
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: f16c9928-8e3d-4219-b994-271dc9a16272
 description: Al configurar las directivas de los datos adjuntos seguros ATP, elija entrega dinámica para evitar retrasos de mensaje y permiten a los usuarios obtener una vista previa de datos adjuntos que se están analizando.
-ms.openlocfilehash: b7b5f05170e6f27cbec9e0d5a121b2f71f16f41a
-ms.sourcegitcommit: cda46434094bc2837dba90256d044ba77552df12
+ms.openlocfilehash: a272253594dda7ea720bb1e8b59e38e870f2f036
+ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "25850824"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "26238432"
 ---
 # <a name="dynamic-delivery-and-previewing-with-office-365-atp-safe-attachments"></a>Entrega dinámica y obtener una vista previa con Office 365 ATP los datos adjuntos seguros
 
@@ -72,16 +72,3 @@ Hay determinados escenarios en los que no se admite la entrega dinámica. Estos 
 
 - Mensajes cifrados con extensiones seguras multipropósito de correo Internet ([S/MIME](s-mime-for-message-signing-and-encryption.md))
     
-## <a name="related-topics"></a>Temas relacionados
-
-[Protección contra amenazas avanzada de Office 365](office-365-atp.md)
-  
-[Datos adjuntos seguros de ATP en Office 365](atp-safe-attachments.md)
-  
-[Configurar las directivas de los datos adjuntos seguros de ATP en Office 365](set-up-atp-safe-attachments-policies.md)
-  
-[Vínculos de ATP seguros en Office 365](atp-safe-links.md)
-
-[Los permisos de la seguridad de Office 365 &amp; centro de cumplimiento](permissions-in-the-security-and-compliance-center.md)
-  
-

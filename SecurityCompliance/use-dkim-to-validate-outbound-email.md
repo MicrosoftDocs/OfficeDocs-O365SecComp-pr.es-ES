@@ -3,7 +3,7 @@ title: Usar DKIM para validar el correo electrónico saliente enviado desde su d
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 6/19/2017
+ms.date: ''
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 description: 'Resumen: Este artículo describe cómo usa DomainKeys Identified Mail (DKIM) con Office 365 para asegurarse de que los sistemas de correo electrónico de destino confían en los mensajes enviados desde su dominio personalizado.'
-ms.openlocfilehash: 7dccab55ab86d9ecac14b7042b5a030c2415fece
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 6f09a75a96abda54e69833a8be14811c8113b5b1
+ms.sourcegitcommit: 75b985b2574f4be70cf352498ea300b3d99dd338
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003219"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "26255825"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain-in-office-365"></a>Usar DKIM para validar el correo electrónico saliente enviado desde su dominio personalizado en Office 365
 
@@ -91,23 +91,23 @@ Use el formato siguiente para los registros CNAME:
 Host name:          selector1._domainkey.<domain>
 Points to address or value: selector1-<domainGUID>._domainkey.<initialDomain> 
 TTL:                3600
+
 Host name:          selector2._domainkey.<domain>
 Points to address or value: selector2-<domainGUID>._domainkey.<initialDomain> 
 TTL:                3600
-
 ```
 
 Donde:
   
--  Para Office 365, los selectores siempre serán "selector1" o "selector2". 
+- Para Office 365, los selectores siempre serán "selector1" o "selector2". 
     
--  _domainGUID_ es el mismo que el  _domainGUID_ en el registro MX personalizado para su dominio personalizado que aparece antes de mail.protection.outlook.com. Por ejemplo, en el siguiente registro MX del dominio contoso.com, el  _domainGUID_ es contoso-com: 
+- _GuidDominio_ es el mismo que el _GuidDominio_ en el registro MX personalizado para su dominio personalizado que aparece antes de mail.protection.outlook.com. Por ejemplo, en el siguiente registro MX para el dominio contoso.com, el _GuidDominio_ es contoso-com: 
     
-  ```
-  contoso.com.  3600  IN  MX   5 contoso-com.mail.protection.outlook.com
-  ```
+    ```
+    contoso.com.  3600  IN  MX   5 contoso-com.mail.protection.outlook.com
+    ```
 
--  _initialDomain_ es el dominio que usó al registrarse para Office 365. Para obtener información sobre cómo determinar el dominio inicial, vea [Preguntas más frecuentes de dominios](https://support.office.com/article/Domains-FAQ-1272bad0-4bd4-4796-8005-67d6fb3afc5a#bkmk_whydoihaveanonmicrosoft.comdomain).
+- _initialDomain_ es el dominio que usó al registrarse para Office 365. Para obtener información sobre cómo determinar el dominio inicial, vea [Preguntas más frecuentes de dominios](https://support.office.com/article/1272bad0-4bd4-4796-8005-67d6fb3afc5a#bkmk_whydoihaveanonmicrosoft.comdomain).
     
 Por ejemplo, si tiene un dominio inicial de cohovineyardandwinery.onmicrosoft.com y dos dominios personalizados cohovineyard.com y cohowinery.com, necesitará configurar dos registros CNAME para cada dominio adicional, un total de cuatro registros CNAME.
   
@@ -115,9 +115,11 @@ Por ejemplo, si tiene un dominio inicial de cohovineyardandwinery.onmicrosoft.co
 Host name:          selector1._domainkey.cohovineyard.com  
 Points to address or value: selector1-cohovineyard-com._domainkey.cohovineyardandwinery.onmicrosoft.com
 TTL:                3600
+
 Host name:          selector2._domainkey.cohovineyard.com  
 Points to address or value: selector2-cohovineyard-com._domainkey.cohovineyardandwinery.onmicrosoft.com
 TTL:                3600
+
 Host name:          selector1._domainkey.cohowinery.com
 Points to address or value: selector1-cohowinery-com._domainkey.cohovineyardandwinery.onmicrosoft.com 
 TTL:                3600
@@ -134,7 +136,7 @@ Una vez que haya publicado los registros CNAME en DNS, está preparado para habi
   
 #### <a name="to-enable-dkim-signing-for-your-custom-domain-through-the-office-365-admin-center"></a>Para habilitar la firma DKIM para su dominio personalizado a través del Centro de administración de Office 365
 
-1. [Inicie sesión en Office 365](https://support.office.microsoft.com/article/Sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4) con su cuenta profesional o educativa. 
+1. [Inicie sesión en Office 365](https://support.office.microsoft.com/article/e9eb7d51-5430-4929-91ab-6157c5a050b4) con su cuenta profesional o educativa. 
     
 2. Seleccione el icono del iniciador de aplicaciones en la esquina superior izquierda y elija **Administración**.
     
@@ -146,21 +148,21 @@ Una vez que haya publicado los registros CNAME en DNS, está preparado para habi
     
 #### <a name="to-enable-dkim-signing-for-your-custom-domain-by-using-powershell"></a>Para habilitar la firma DKIM para su dominio personalizado mediante PowerShell
 
-1. [Conectarse a Exchange Online mediante PowerShell remoto](https://technet.microsoft.com/library/jj984289%28v=exchg.160%29.aspx).
+1. [Conexión a PowerShell de Exchange Online](https://technet.microsoft.com/library/jj984289.aspx).
     
-2. Ejecute el siguiente cmdlet:
+2. Ejecute el comando siguiente:
     
-  ```
-  New-DkimSigningConfig -DomainName <domain> -Enabled $true
-  ```
+    ```
+    New-DkimSigningConfig -DomainName <domain> -Enabled $true
+    ```
 
-    Donde  _domain_ es el nombre del dominio personalizado para el que quiere habilitar la firma DKIM. 
+   Donde _dominio_ es el nombre del dominio personalizado que desea habilitar la firma para de DKIM. 
     
-    Por ejemplo, para el dominio contoso.com:
+   Por ejemplo, para el dominio contoso.com:
     
-  ```
-  New-DkimSigningConfig -DomainName contoso.com -Enabled $true
-  ```
+    ```
+    New-DkimSigningConfig -DomainName contoso.com -Enabled $true
+    ```
 
 #### <a name="to-confirm-dkim-signing-is-configured-properly-for-office-365"></a>Para confirmar que la firma DKIM está configurada correctamente en Office 365
 
@@ -171,18 +173,17 @@ Espere unos minutos antes de seguir estos pasos para confirmar que ha configurad
 - No use una cuenta de aol.com con fines de prueba. AOL puede omitir la comprobación DKIM si se supera la comprobación SPF. Esto anulará la prueba.
     
 - Abra el mensaje y observe el encabezado. Las instrucciones para ver el encabezado del mensaje variarán según el cliente de mensajería. Para obtener instrucciones acerca de cómo ver los encabezados de los mensajes en Outlook, consulte [Ver encabezados de mensajes de correo electrónico](https://support.office.com/article/CD039382-DC6E-4264-AC74-C048563D212C).
+
+  El mensaje con firma DKIM contendrá el nombre de host y el dominio que definió cuando publicó las entradas CNAME. El mensaje tendrá un aspecto similar al de este ejemplo: 
     
-     El mensaje con firma DKIM contendrá el nombre de host y el dominio que definió cuando publicó las entradas CNAME. El mensaje tendrá un aspecto similar al de este ejemplo: 
-    
-  ```
-  From: Example User <example@contoso.com> 
-  DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; 
-      s=selector1; d=contoso.com; t=1429912795; 
-      h=From:To:Message-ID:Subject:MIME-Version:Content-Type; 
-      bh=<body hash>; 
-      b=<signed field>;
-  
-  ```
+    ```
+    From: Example User <example@contoso.com> 
+    DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; 
+        s=selector1; d=contoso.com; t=1429912795; 
+        h=From:To:Message-ID:Subject:MIME-Version:Content-Type; 
+        bh=<body hash>; 
+        b=<signed field>;
+    ```
 
 - Busque el encabezado Authentication-Results. Aunque cada servicio de recepción usa un formato ligeramente diferente para estampar el correo entrante, el resultado debe incluir algo como **DKIM=pass** o **DKIM=OK**. 
     
@@ -198,35 +199,33 @@ Deshabilitar la directiva de firmas no deshabilita DKIM completamente. Después 
   
 ### <a name="to-disable-the-dkim-signing-policy-by-using-windows-powershell"></a>Para deshabilitar la directiva de firmas DKIM mediante Windows PowerShell
 
-1. [Conectarse a Exchange Online mediante PowerShell remoto](https://technet.microsoft.com/library/jj984289%28v=exchg.160%29.aspx).
+1. [Conexión a PowerShell de Exchange Online](https://technet.microsoft.com/library/jj984289.aspx).
     
 2. Ejecute uno de los siguientes comandos para cada dominio para el que quiera deshabilitar la firma DKIM.
     
-  ```
-  $p=Get-DkimSigningConfig -identity <domain>
-  $p[0] | set-DkimSigningConfig -enabled $false
-  
-  ```
+    ```
+    $p=Get-DkimSigningConfig -identity <domain>
+    $p[0] | set-DkimSigningConfig -enabled $false
+    ```
 
-    Por ejemplo:
+   Por ejemplo:
     
-  ```
-  $p=Get-DkimSigningConfig -identity contoso.com
-  $p[0] | set-DkimSigningConfig -enabled $false
-  ```
+    ```
+    $p=Get-DkimSigningConfig -identity contoso.com
+    $p[0] | set-DkimSigningConfig -enabled $false
+    ```
 
-    O bien
+   O bien
     
-  ```
-  Set-DkimSigningConfig -identity $p[<number>].identity -enabled $false
-  
-  ```
+    ```
+    Set-DkimSigningConfig -identity $p[<number>].identity -enabled $false
+    ```
 
-    Donde  _number_ es el índice de la directiva. Por ejemplo: 
+    Donde _number_ es el índice de la directiva. Por ejemplo: 
     
-  ```
-  Set-DkimSigningConfig -identity $p[0].identity -enabled $false
-  ```
+    ```
+    Set-DkimSigningConfig -identity $p[0].identity -enabled $false
+    ```
 
 ## <a name="default-behavior-for-dkim-and-office-365"></a>Comportamiento predeterminado para DKIM y Office 365
 <a name="DefaultDKIMbehavior"> </a>
@@ -244,10 +243,9 @@ DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
     h=From:To:Message-ID:Subject:MIME-Version:Content-Type; 
     bh=<body hash>; 
     b=<signed field>;
-
 ```
 
-En este ejemplo, el nombre de host y el dominio contienen los valores a los que señalaría el registro CNAME si el administrador del dominio hubiera habilitado la firma DKIM para fabrikam.com. Finalmente, todos los mensajes enviados desde Office 365 contendrán una firma DKIM. Si habilita DKIM, el dominio será el mismo que el dominio que figura en la dirección del campo De:, en este caso, fabrikam.com. Si no lo hace, el dominio no se alineará y en su lugar se usará el dominio inicial de la organización. Para obtener información sobre cómo determinar el dominio inicial, vea [Preguntas más frecuentes de dominios](https://support.office.com/article/Domains-FAQ-1272bad0-4bd4-4796-8005-67d6fb3afc5a#bkmk_whydoihaveanonmicrosoft.comdomain).
+En este ejemplo, el nombre de host y el dominio contienen los valores a los que señalaría el registro CNAME si el administrador del dominio hubiera habilitado la firma DKIM para fabrikam.com. Finalmente, todos los mensajes enviados desde Office 365 contendrán una firma DKIM. Si habilita DKIM, el dominio será el mismo que el dominio que figura en la dirección del campo De:, en este caso, fabrikam.com. Si no lo hace, el dominio no se alineará y en su lugar se usará el dominio inicial de la organización. Para obtener información sobre cómo determinar el dominio inicial, vea [Preguntas más frecuentes de dominios](https://support.office.com/article/1272bad0-4bd4-4796-8005-67d6fb3afc5a#bkmk_whydoihaveanonmicrosoft.comdomain).
   
 ## <a name="set-up-dkim-so-that-a-third-party-service-can-send-or-spoof-email-on-behalf-of-your-custom-domain"></a>Configurar DKIM para que un servicio de terceros pueda enviar, o suplantar, correo electrónico en nombre de su dominio personalizado
 <a name="SetUp3rdPartyspoof"> </a>
@@ -273,9 +271,9 @@ En este ejemplo, para conseguir este resultado:
     
 4. Los sistemas de correo electrónico de recepción realizan una comprobación DKIM mediante la autenticación del valor d=\<dominio\> de la firma DKIM contra el dominio del campo De: (5322.From) dirección del mensaje. En este ejemplo, los valores coinciden:
     
-    sender@ **contoso.com**
+    remitente @**contoso.com**
     
-    d= **contoso.com**
+    d. =**contoso.com**
     
 ## <a name="next-steps-after-you-set-up-dkim-for-office-365"></a>Pasos siguientes: una vez configurado DKIM para Office 365
 <a name="DKIMNextSteps"> </a>

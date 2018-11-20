@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: Los usuarios necesitan tener asignados los permisos en la seguridad de Office 365 &amp; centro de cumplimiento de normas antes de que puedan administrar cualquiera de sus características de cumplimiento de normas o de seguridad.
-ms.openlocfilehash: e0c8b655b1b3300e4ffa9aba1d94e65a9ef26121
-ms.sourcegitcommit: 2e41cc24ad92005084f2ba432e724bdcc4e295ff
+ms.openlocfilehash: 976c4e21351e352672f3075d0f713e63a634ce42
+ms.sourcegitcommit: da4aa7335b577148ecd61e09bbb11039b817b287
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25450745"
+ms.lasthandoff: 11/15/2018
+ms.locfileid: "26539112"
 ---
 # <a name="give-users-access-to-the-office-365-security-amp-compliance-center"></a>Conceder a los usuarios acceso a la seguridad de Office 365 &amp; centro de cumplimiento
 
@@ -63,7 +63,7 @@ Para obtener más información acerca de los diferentes permisos puede otorgar a
     
 ## <a name="use-powershell-to-give-another-user-access-to-the-security-amp-compliance-center"></a>Uso de PowerShell para ceder el otro usuario tenga acceso a la seguridad &amp; centro de cumplimiento
 
-1. [Conectar con la seguridad de Office 365 &amp; centro de cumplimiento de normas mediante PowerShell remoto](https://go.microsoft.com/fwlink/p/?LinkID=627084).
+1. [Conectarse a Office 365 seguridad & PowerShell de centro de cumplimiento](https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
     
 2. Use el comando **Add-RoleGroupMember** para agregar un usuario al rol Administración de la organización, tal y como se muestra en el ejemplo siguiente. 
     

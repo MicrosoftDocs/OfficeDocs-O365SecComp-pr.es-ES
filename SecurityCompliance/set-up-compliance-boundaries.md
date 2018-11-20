@@ -3,7 +3,6 @@ title: Configurar los límites de cumplimiento para investigaciones de eDiscover
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/6/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Use los límites de cumplimiento para crear los límites lógicos dentro de una organización de Office 365 que controlan las ubicaciones de contenido de usuario que puede buscar un administrador de exhibición de documentos electrónicos. Límites de cumplimiento usar permisos de búsqueda filtrado (también denominado conformidad seguridad filtros) para controlar qué buzones de correo, los sitios de SharePoint y OneDrive cuentas se pueden buscar por usuarios específicos.
-ms.openlocfilehash: 822d228d64d2fd5432db327db98e8d7329c7d939
-ms.sourcegitcommit: c166964fe14eec69139a2d3d9c10d2c40ab33f91
+ms.openlocfilehash: 2bebd29fa7701ba07aae7170142263aeaec5569e
+ms.sourcegitcommit: c7264f3a6a97f1ff544544e2c722e7825e265fa1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23258638"
+ms.lasthandoff: 11/14/2018
+ms.locfileid: "26299244"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations-in-office-365"></a>Configurar los límites de cumplimiento para investigaciones de eDiscovery en Office 365.
 
@@ -179,9 +178,9 @@ Tenga las siguientes limitaciones en cuenta al administrar casos de exhibición 
     
 - No se aplican filtros de búsqueda de permisos para carpetas públicas de Exchange.
 
-## <a name="searching-and-exporting-sharepoint-content-in-multi-geo-environments"></a>Búsqueda y exportación de contenido de SharePoint en entornos de Multi-Geo
+## <a name="searching-and-exporting-content-in-multi-geo-environments"></a>Búsqueda y exportación de contenido en entornos de Multi-Geo
 
-Filtros de búsqueda de permisos también permiten controlar donde se enruta el contenido para la exportación y qué centros de datos pueden ser busca cuentas de OneDrive y sitios de SharePoint en un [entorno de SharePoint Multi-Geo](https://go.microsoft.com/fwlink/?linkid=860840):
+Filtros de búsqueda de permisos también permiten controlar donde se enruta el contenido para la exportación y se puede buscar en el centro de datos al buscar en las cuentas de OneDrive y sitios de SharePoint en un [entorno de SharePoint Multi-Geo](https://go.microsoft.com/fwlink/?linkid=860840):
   
 - Exportar los resultados de búsqueda de un centro de datos específico. Esto significa que puede especificar la que ubicación del centro de los datos que se van a exportar los resultados de la búsqueda.
     
@@ -211,7 +210,7 @@ De forma similar, puede usar los siguientes valores para los valores de parámet
 |IND  <br/> |Asia Pacífico  <br/> |
 |LAM  <br/> |EE. UU.  <br/> |
    
- **Nota:** Si no especifica el parámetro de región para un filtro de permisos de búsqueda, se exportan los resultados de búsqueda desde el centro de datos más cercano. 
+ **Nota:** Si no especifica el parámetro de región para un filtro de permisos de búsqueda, se buscará en la región de SharePoint predeterminados de las organizaciones, a continuación, se exportan los resultados de búsqueda en el centro de datos más cercano. 
   
 Estos son ejemplos del uso de la **-región** parámetro al crear filtros de permiso de búsqueda de los límites de cumplimiento. Esto supone que la subsidiaria cuarto café se encuentra en Norteamérica y que Coho Winery es en Europa. 
   
@@ -223,7 +222,7 @@ New-ComplianceSecurityFilter -FilterName "Fourth Coffee Security Filter" -Users 
 New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "Coho Winery eDiscovery Managers", "Coho Winery Investigators" -Filters "Mailbox_Department -eq 'CohoWinery'", "Site_Department -eq 'CohoWinery' -or Site_Path -like 'https://contoso.sharepoint.com/sites/CohoWinery*'" -Action ALL -Region EUR
 ```
    
-Tenga en cuenta cuando búsqueda y exportación de SharePoint y OneDrive lo siguiente contenido en entornos de multi-ubican.
+Tenga en cuenta al buscar y exportar lo siguiente contenido en entornos de multi-ubican.
   
 - El parámetro **Region** no controlar las búsquedas de buzones de Exchange; se buscará en todos los centros de datos al buscar en los buzones de correo. Para limitar el ámbito de los de Exchange que se pueden buscar en los buzones de correo, use el parámetro de **filtros** al crear o cambiar un filtro de búsqueda de permisos. 
     

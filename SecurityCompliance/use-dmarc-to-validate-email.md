@@ -3,7 +3,7 @@ title: Usar DMARC para validar el correo electrónico en Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 10/9/2017
+ms.date: ''
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,26 +12,26 @@ search.appverid:
 - MET150
 ms.custom: TN2DMC
 ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
-description: 'Domain-based Message Authentication, Reporting, and Conformance (DMARC) trabaja con el marco de directivas de remitente (SPF) y DomainKeys Identified Mail (DKIM) para autenticar a los remitentes de los correos y garantizar que los sistemas de correo electrónico de destino confíen en los mensajes enviados desde su dominio. '
-ms.openlocfilehash: 199ab67d17152fc0c4ed6b9f87cde66beaf913d5
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+description: Obtenga información sobre cómo configurar la autenticación basada en dominio del mensaje, informes y conformidad (DMARC) para validar los mensajes enviados desde la organización de Office 365.
+ms.openlocfilehash: f8c310e5efb6859bff392a89a3ad325400aa369f
+ms.sourcegitcommit: 75b985b2574f4be70cf352498ea300b3d99dd338
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003229"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "26255875"
 ---
 # <a name="use-dmarc-to-validate-email-in-office-365"></a>Usar DMARC para validar el correo electrónico en Office 365
 
-Autenticación de mensajes, informes y conformidad Domain-based [DMARC)](https://dmarc.org) funciona con el marco de directivas de remitentes (SPF) y correo identificado por claves de dominio (DKIM) para autenticar los remitentes de correo y asegurarse de que los sistemas de correo electrónico de destino confían en los mensajes enviados desde su dominio. Implementación de DMARC con SPF y DKIM proporciona protección adicional contra el correo electrónico de suplantación de identidad y suplantación de identidad. Ayuda DMARC sistemas de correo de recepción determinan qué hacer con los mensajes enviado desde su dominio que comprueba fail SPF o DKIM. 
+Basada en el dominio de autenticación de mensajes, informes y conformidad ([DMARC](https://dmarc.org)) funciona con el marco de directivas de remitentes (SPF) y correo identificado por claves de dominio (DKIM) para autenticar los remitentes de correo y asegurarse de que los sistemas de correo electrónico de destino confían en los mensajes enviados desde su dominio. Implementación de DMARC con SPF y DKIM proporciona protección adicional contra el correo electrónico de suplantación de identidad y suplantación de identidad. Ayuda DMARC sistemas de correo de recepción determinan qué hacer con los mensajes enviado desde su dominio que comprueba fail SPF o DKIM.
   
 ## <a name="how-do-spf-and-dmarc-work-together-to-protect-email-in-office-365"></a>¿Cómo se coordinan SPF y DMARC para proteger el correo electrónico en Office 365?
 <a name="SPFandDMARC"> </a>
 
  Un mensaje de correo electrónico puede contener varias direcciones de remitentes, que se usan para distintos propósitos. Por ejemplo, observe las siguientes direcciones: 
   
-- **Dirección "Correo de"** Identifica al remitente y especifica dónde se deben enviar los avisos de devolución si se produce algún problema al entregar el mensaje (por ejemplo, un aviso de no entrega). Aparece en la zona del sobre de un mensaje de correo electrónico, aunque su aplicación de correo electrónico no suele mostrarla. A veces, recibe la denominación dirección 5321.MailFrom o dirección de ruta de acceso inversa.
+- **"Mail From" dirección**: identifica al remitente y especifica dónde enviar avisos devueltos si se producen problemas con la entrega del mensaje, como los avisos de no entrega. Esto aparece en la parte de sobres de un mensaje de correo electrónico y no se muestra normalmente por la aplicación de correo electrónico. En ocasiones, esto se denomina la dirección 5321.MailFrom o la dirección de la ruta de acceso inversa.
     
-- **Dirección "De"** Es la dirección que aparece como dirección De en su aplicación de correo e identifica al autor del correo electrónico; es decir, el buzón de la persona o el sistema responsable de escribir el mensaje. A veces, recibe la denominación dirección 5322.From.
+- **Dirección "De" origen**: la dirección que se muestra como la dirección de origen por la aplicación de correo. Esta dirección identifica al autor del correo electrónico. Es decir, el buzón de correo de la persona o del sistema responsable de escribir el mensaje. En ocasiones, esto se denomina la dirección 5322.From.
     
 SPF usa un registro TXT de DNS para proporcionar una lista de direcciones IP de envío autorizadas en un dominio dado. Normalmente, solo se realizan comprobaciones de SPF en la dirección 5321.MailFrom. Esto significa que la dirección de 5322.From no se autentica al usar solamente SPF. Esto habilita un escenario donde un usuario puede recibir un mensaje que pasa una comprobación de SPF, pero tiene una dirección de remitente 5322.From falsificada. Por ejemplo, veamos esta transcripción de SMTP:
   
@@ -54,7 +54,6 @@ S:
 S: Thank you,
 S: Woodgrove Bank
 S: .
-
 ```
 
 En esta transcripción, las direcciones del remitente son las siguientes:
@@ -76,7 +75,6 @@ El registro TXT de DMARC de Microsoft es algo así:
   
 ```
 _dmarc.microsoft.com.   3600    IN      TXT     "v=DMARC1; p=none; pct=100; rua=mailto:d@rua.agari.com; ruf=mailto:d@ruf.agari.com; fo=1" 
-
 ```
 
 Microsoft envía sus informes de DMARC a [Agari](https://agari.com), un agente externo. Agari recopila y analiza los informes de DMARC.
@@ -143,37 +141,37 @@ _dmarc.domainTTL IN TXT "v=DMARC1; pct=100; p=policy
 
 donde:
   
--  *domain*  es el dominio que quiere proteger. De forma predeterminada, el registro protege el correo del dominio y todos los subdominios. Por ejemplo, si especifica _dmarc.contoso.com, DMARC protege correo del dominio y todos los subdominios, como housewares.contoso.com o plumbing.contoso.com. 
+- *dominio* es el dominio que desee proteger. De forma predeterminada, el registro protege el correo desde el dominio y todos los subdominios. Por ejemplo, si especifica \_dmarc.contoso.com y, a continuación, DMARC protege el correo desde el dominio y todos los subdominios, como housewares.contoso.com o plumbing.contoso.com. 
     
--  *TTL*  siempre debe ser el equivalente a una hora. La unidad usada para el TTL, ya sean las horas (1 hora), los minutos (60 minutos) o los segundos (3600 segundos), variará en función del registrador del dominio. 
+- *TTL* siempre debe ser el equivalente a una hora. La unidad usada para el TTL, ya sean las horas (1 hora), los minutos (60 minutos) o los segundos (3600 segundos), variará en función del registrador del dominio. 
     
 - pct=100 indica que esta regla debe usarse para el 100 % del correo electrónico.
     
--  *policy*  especifica qué directiva quiere que el servidor de recepción siga si se produce un error en DMARC. Puede establecer la directiva en none, quarantine o reject. 
+- *Directiva* especifica qué directiva desea que el servidor de recepción que se deben seguir si se produce un error en DMARC. Puede establecer la directiva en ninguno, cuarentena, o rechazar. 
     
 Para obtener información sobre las opciones que se usan, consulte los conceptos de las [Prácticas recomendadas para la implementación de DMARC en Office 365](use-dmarc-to-validate-email.md#DMARCbestpractices).
   
 Ejemplos
   
-Directiva establecida en none
+- Directiva establecida en none
   
-```
-_dmarc.contoso.com 3600 IN  TXT  "v=DMARC1; p=none"
-```
+    ```
+    _dmarc.contoso.com 3600 IN  TXT  "v=DMARC1; p=none"
+    ```
 
-Directiva establecida en quarantine
+- Directiva establecida en quarantine
   
-```
-_dmarc.contoso.com 3600 IN  TXT  "v=DMARC1; p=quarantine"
-```
+    ```
+    _dmarc.contoso.com 3600 IN  TXT  "v=DMARC1; p=quarantine"
+    ```
 
-Directiva establecida en reject
+- Directiva establecida en reject
   
-```
-_dmarc.contoso.com  3600 IN  TXT  "v=DMARC1; p=reject"
-```
+    ```
+    _dmarc.contoso.com  3600 IN  TXT  "v=DMARC1; p=reject"
+    ```
 
-Una vez que formule el registro, debe actualizarlo en el registrador del dominio. Para obtener instrucciones sobre cómo agregar el registro TXT de DMARC en los registros DNS para Office 365, consulte [Crear registros DNS para Office 365 al administrar los registros DNS](https://support.office.com/article/Create-DNS-records-for-Office-365-when-you-manage-your-DNS-records-b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23).
+Una vez que formule el registro, debe actualizarlo en el registrador del dominio. Para obtener instrucciones sobre cómo agregar el registro TXT de DMARC en los registros DNS para Office 365, consulte [Crear registros DNS para Office 365 al administrar los registros DNS](https://support.office.com/article/b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23).
   
 ## <a name="best-practices-for-implementing-dmarc-in-office-365"></a>Prácticas recomendadas para la implementación de DMARC en Office 365
 <a name="DMARCbestpractices"> </a>
@@ -222,11 +220,9 @@ Si usted es cliente de Office 365 y el registro MX principal de su dominio no ap
 ```
 contoso.com     3600   IN  MX  0  mail.contoso.com
 contoso.com     3600   IN  MX  10 contoso-com.mail.protection.outlook.com
-
 ```
 
 Correo electrónico de todos o casi, primero se enrutarán a mail.contoso.com debido a que es la principal MX y, a continuación, obtener enrutará correo a EOP. En algunos casos, es posible que ni siquiera elevación de privilegios de lista como un registro MX en absoluto y simplemente enlazar los conectores enruten el correo electrónico. EOP no tiene que ser la primera entrada para la validación de DMARC realizarse. Sólo se asegura de la validación, tal y como se puede estar seguro de que todos los servidores en-in situ y que no sean-O365 hará la comprobación DMARC.  DMARC tiene derecho a que se deben cumplir para el dominio de un cliente (no servidor) al configurar el registro TXT DMARC, pero es hasta el servidor de recepción que realmente realizan el cumplimiento.  Si configura EOP como el servidor de recepción, EOP lo hace la aplicación DMARC.
-
   
 ## <a name="for-more-information"></a>Más información
 <a name="sectionSection8"> </a>

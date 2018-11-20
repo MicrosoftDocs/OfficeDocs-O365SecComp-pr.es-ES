@@ -11,12 +11,12 @@ localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: df2d1e0f-b476-42c9-aade-4a260b24f193
 description: Usar la herramienta de exhibición de documentos electrónicos de búsqueda de contenido en la seguridad de Office 365 &amp; centro de cumplimiento para encontrar rápidamente el correo electrónico en los buzones de Exchange, los documentos en sitios de SharePoint y las ubicaciones de OneDrive y las conversaciones de Skype para la empresa de mensajería instantánea.
-ms.openlocfilehash: d7ccdd8e501e38b67cc00ec457622080d6c58001
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+ms.openlocfilehash: 96a30bfe7b7cc5a1398cafa66577f0b7dc681d23
+ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038233"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "26238402"
 ---
 # <a name="search-for-content-in-office-365"></a>Búsqueda de contenido en Office 365
 
@@ -42,6 +42,8 @@ El primer paso es iniciar el uso de la herramienta de búsqueda de contenido par
     
 - [Edición en masa de](bulk-edit-content-searches.md) la consulta y ubicaciones para varias búsquedas de contenido 
     
+- [Destinatarios CCO conservar](https://docs.microsoft.com/exchange/policy-and-compliance/holds/preserve-bcc-recipients-and-group-members) de forma que pueda buscar para ellos 
+
 ## <a name="perform-actions-on-content-you-find"></a>Realizar acciones en el contenido que encuentre
 
 Después de ejecutar una búsqueda y refinar según sea necesario, el siguiente paso es hacer algo con los resultados devueltos por la búsqueda. Puede exportar y descargar los resultados en el equipo local o en el caso de un ataque de correo electrónico en la organización, puede eliminar los resultados de una búsqueda de buzones de usuario.
