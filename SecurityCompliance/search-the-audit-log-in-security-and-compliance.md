@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Usar el centro de cumplimiento y seguridad de Office 365 para buscar el registro de auditoría unificado para ver la actividad de usuario y Administrador de la organización de Office 365. '
-ms.openlocfilehash: 02e38917d3a82828d6602661b494ebc0ffb733d8
-ms.sourcegitcommit: 42c7ad69f95fc4d2de13293b39cc44931b9f82e6
+ms.openlocfilehash: 39b3d6438d4680fe7a50f831bbd2d5667c4acffe
+ms.sourcegitcommit: a138cf89095ab0d2bd07caf82b3d48149002c1fa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "26522812"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "26626156"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security--compliance-center"></a>Buscar en el registro de auditoría en el centro de cumplimiento y seguridad de Office 365
 
@@ -40,9 +40,9 @@ ms.locfileid: "26522812"
     
 - Actividad de usuario y administración de balanceo
     
-- actividades de exhibición de documentos electrónicos en la seguridad de Office 365 &amp; centro de cumplimiento
+- actividades de exhibición de documentos electrónicos en el centro de cumplimiento y seguridad de Office 365
     
-- Actividad de usuario y la administración en Power BI para Office 365
+- Actividad de usuario y la administración en Power BI
     
 - Actividad de usuario y la administración en Microsoft Teams
 
@@ -123,7 +123,7 @@ Asegúrese de leer el registro de auditoría de los siguientes elementos antes d
     
 - Registros de auditoría de Exchange Online constan de dos tipos de eventos: eventos de administración (acciones realizadas por los administradores) y eventos (acciones realizadas por los usuarios en los buzones de correo) de buzón de correo de Exchange. Tenga en cuenta que no está habilitada la auditoría de buzón de correo de forma predeterminada. Se debe habilitar para cada buzón de usuario antes de eventos de buzón de correo se pueden buscar en el registro de auditoría de Office 365. Para obtener más información acerca de la auditoría de buzón de correo y el buzón de auditoría de las acciones que se registran, vea [Habilitar la auditoría en Office 365 de buzón de correo](enable-mailbox-auditing.md).
     
-- Registro de auditoría de Power BI no está habilitado de forma predeterminada. Para buscar actividades de Power BI en el registro de auditoría de Office 365, se debe habilitar la auditoría en el portal de administración de Power BI. Para obtener instrucciones, vea [Auditoría Power BI](https://docs.microsoft.com/power-bi/service-admin-auditing#enabling-auditing-functionality-in-the-power-bi-admin-portal).
+- Registro de auditoría de Power BI no está habilitado de forma predeterminada. Para buscar actividades de Power BI en el registro de auditoría de Office 365, se debe habilitar la auditoría en el portal de administración de Power BI. Para obtener instrucciones, vea la sección "Registros de auditoría" en el [portal de administración de Power BI](https://docs.microsoft.com/power-bi/service-admin-portal#audit-logs).
     
     
 ## <a name="search-the-audit-log"></a>Buscar en el registro de auditoría
@@ -276,7 +276,6 @@ Puede exportar los resultados de una búsqueda de registro de auditoría a un ar
     
     Para obtener una descripción de las propiedades que se enumeran en la columna **AuditData** en el archivo CSV cuando se descargan todos los resultados y el servicio de cada uno se aplica a, consulte el [registro de auditoría de propiedades detalladas en Office 365](detailed-properties-in-the-office-365-audit-log.md).
 
-  
 ## <a name="audited-activities"></a>Actividades auditadas
 
 Las tablas de esta sección describen las actividades que se auditan en Office 365. Puede buscar estos eventos buscando la auditoría de registro en la seguridad &amp; centro de cumplimiento. Haga clic en la ficha de **búsqueda del registro de auditoría** para obtener instrucciones paso a paso. 
@@ -565,32 +564,9 @@ Para una lista y una descripción detallada de las actividades de exhibición de
   
 ### <a name="power-bi-activities"></a>Actividades de Power BI
   
-En la siguiente tabla se enumera usuarios y las actividades de administración en Power BI que se registran en el registro de auditoría de Office 365.
+Puede buscar el registro de auditoría para actividades en Power BI. Para obtener información acerca de las actividades de Power BI, vea la sección "Actividades se auditan de manera Power Power BI" en [usando auditoría dentro de la organización](https://docs.microsoft.com/power-bi/service-admin-auditing#activities-audited-by-power-bi).
   
- **Importante:** Registro de auditoría de Power BI no está habilitado de forma predeterminada. Para buscar actividades de Power BI en el registro de auditoría de Office 365, se debe habilitar la auditoría en el portal de administración de Power BI. Para obtener instrucciones, vea [Auditoría Power BI](https://docs.microsoft.com/power-bi/service-admin-auditing#enabling-auditing-functionality-in-the-power-bi-admin-portal).
-  
-|**Nombre descriptivo**|**Operation**|**Descripción**|
-|:-----|:-----|:-----|
-|Se ha agregado los miembros del grupo de Power BI  <br/> |AddGroupMembers  <br/> |Se agrega un miembro a un área de trabajo de grupo de Power BI.  <br/> |
-|Conjunto de datos de Power BI analizado  <br/> |AnalyzedByExternalApplication  <br/> |Un conjunto de datos se analiza por una aplicación externa.  <br/> |
-|Panel de Power BI creado  <br/> |CreateDashboard  <br/> |Se crea un nuevo panel.  <br/> |
-|Grupo de Power BI creado  <br/> |CreateGroup  <br/> |Se crea un grupo.  <br/> |
-|Crear paquete de contenido de Power BI organizativa  <br/> |CreateOrgApp  <br/> |Se crea un paquete de contenido de organización.  <br/> |
-|Panel de Power BI eliminado  <br/> |DeleteDashboard  <br/> |Se elimina un panel.  <br/> |
-|Conjunto de datos de Power BI eliminado  <br/> |DeleteDataset  <br/> |Se elimina un conjunto de datos.  <br/> |
-|Informe de Power BI eliminados  <br/> |DeleteReport  <br/> |Se elimina un informe.  <br/> |
-|Informe de Power BI descargado  <br/> |DownloadReport  <br/> |Un usuario descarga un informe de Power BI desde el servicio en su equipo.  <br/> |
-|Panel de Power BI editado  <br/> |Editar panel  <br/> |Cambiar el nombre de un panel.  <br/> |
-|Datos de informe visual Power BI exportados  <br/> |ExportReport  <br/> |Se exportan los datos de un mosaico de informe.  <br/> |
-|Datos exportados de mosaico de Power BI  <br/> |ExportTile  <br/> |Se exportan los datos desde un icono de panel.  <br/> |
-|Panel de Power BI impresa  <br/> |PrintDashboard  <br/> |Se imprime un panel.  <br/> |
-|Página de informe de Power BI impresa  <br/> |PrintReport  <br/> |Se imprime un informe.  <br/> |
-|Publicar el informe de Power BI en web  <br/> |PublishToWebReport  <br/> |Un informe se publica en el web.  <br/> |
-|Panel de Power BI compartida  <br/> |ShareDashboard  <br/> |Se comparte un panel.  <br/> |
-|Versión de evaluación de Power BI iniciado  <br/> |OptInForProTrial  <br/> |Un usuario inicia una suscripción de prueba Power BI Pro.  <br/> |
-|Configuración de la organización actualizados de Power BI  <br/> |UpdatedAdminFeatureSwitch  <br/> |Un administrador ha cambiado un valor de organización en el portal de administración de Power BI.  <br/> |
-|Panel de Power BI visualizado  <br/> |ViewDashboard  <br/> |Se ve un panel.  <br/> |
-|Informe de Power BI visualizado  <br/> |ViewReport  <br/> |Se ve un informe.  <br/> |
+Tenga en cuenta que el registro de auditoría de Power BI no está habilitado de forma predeterminada. Para buscar actividades de Power BI en el registro de auditoría de Office 365, se debe habilitar la auditoría en el portal de administración de Power BI. Para obtener instrucciones, vea la sección "Registros de auditoría" en el [portal de administración de Power BI](https://docs.microsoft.com/power-bi/service-admin-portal#audit-logs).
   
 ### <a name="microsoft-teams-activities"></a>Actividades de Microsoft Teams
   
