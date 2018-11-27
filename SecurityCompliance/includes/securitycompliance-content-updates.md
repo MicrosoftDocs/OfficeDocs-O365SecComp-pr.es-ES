@@ -100,7 +100,7 @@
 |------|------------|--------|
 | 23/10/2018 | [Configurar el servicio EOP](/Office365/SecurityCompliance/eop/set-up-your-eop-service) | Fecha de modificación |
 | 23/10/2018 | [Obtenga más información sobre la inteligencia de suplantación de identidad](/Office365/SecurityCompliance/learn-about-spoof-intelligence) | Fecha de modificación |
-| 23/10/2018 | [Administrar las investigaciones legales en Office 365](/Office365/SecurityCompliance/manage-legal-investigations) | Fecha de modificación |
+| 23/10/2018 | [Administración de investigaciones legales en Office 365](/Office365/SecurityCompliance/manage-legal-investigations) | Fecha de modificación |
 | 24/10/2018 | [Introducción a la inteligencia sobre amenazas de Office 365](/Office365/SecurityCompliance/get-started-with-ti) | Fecha de modificación |
 | 24/10/2018 | [Información general de etiquetas de confidencialidad](/Office365/SecurityCompliance/sensitivity-labels) | Fecha de modificación |
 | 24/10/2018 | [Enviar notificaciones de correo electrónico y mostrar sugerencias de directivas para las directivas DLP](/Office365/SecurityCompliance/use-notifications-and-policy-tips) | Fecha de modificación |
@@ -152,7 +152,7 @@
 | 2/11/2018 | [Configurar las directivas de seguros vínculos con Office 365 ATP](/Office365/SecurityCompliance/set-up-atp-safe-links-policies) | Fecha de modificación |
 
 
-## <a name="week-of-november-05-2018"></a>Semana 05 de noviembre de 2018
+## <a name="week-of-november-05-2018"></a>Semana 5 de noviembre de 2018
 
 
 | Publicado en |Título del tema | Cambio |
@@ -163,7 +163,7 @@
 | 6/11/2018 | [Cómo identificar el tipo de retención en un buzón de Exchange Online](/Office365/SecurityCompliance/identify-a-hold-on-an-exchange-online-mailbox) | Fecha de modificación |
 | 6/11/2018 | [Información de referencia técnica sobre el cifrado en Office 365](/Office365/SecurityCompliance/technical-reference-details-about-encryption) | Fecha de modificación |
 | 8/11/2018 | [Definir reglas de flujo de correo para cifrar mensajes de correo electrónico en Office 365](/Office365/SecurityCompliance/define-mail-flow-rules-to-encrypt-email) | Fecha de modificación |
-| 8/11/2018 | [Búsqueda de contenido en Office 365](/Office365/SecurityCompliance/search-for-content) | Fecha de modificación |
+| 8/11/2018 | [Buscar contenido en Office 365](/Office365/SecurityCompliance/search-for-content) | Fecha de modificación |
 | 8/11/2018 | [ATP de Office 365 para SharePoint, OneDrive y Microsoft Teams](/Office365/SecurityCompliance/atp-for-spo-odb-and-teams). | Fecha de modificación |
 | 8/11/2018 | [Datos adjuntos seguros ATP de Office 365](/Office365/SecurityCompliance/atp-safe-attachments) | Fecha de modificación |
 | 8/11/2018 | [Páginas de advertencia de vínculos seguros ATP de Office 365](/Office365/SecurityCompliance/atp-safe-links-warning-pages) | Fecha de modificación |
@@ -215,3 +215,13 @@
 | 16/11/2018 | [Información general sobre las directivas de retención](/Office365/SecurityCompliance/retention-policies) | Fecha de modificación |
 | 16/11/2018 | [Información general de etiquetas de confidencialidad](/Office365/SecurityCompliance/sensitivity-labels) | Fecha de modificación |
 | 16/11/2018 | [Use el explorador en la seguridad &amp; centro de cumplimiento](/Office365/SecurityCompliance/use-explorer-in-security-and-compliance) | Fecha de modificación |
+
+
+## <a name="week-of-november-19-2018"></a>Semana del 19 de noviembre de 2018
+
+
+| Publicado en |Título del tema | Cambio |
+|------|------------|--------|
+| 19/11/2018 | [Usar el Administrador de cumplimiento para satisfacer los requisitos normativos y de protección de datos al usar los servicios de nube de Microsoft](/Office365/SecurityCompliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud) | Fecha de modificación |
+| 19/11/2018 | [Habilite el complemento de mensajes de informe](/Office365/SecurityCompliance/enable-the-report-message-add-in) | Fecha de modificación |
+| 20/11/2018 | [Buscar en el registro de auditoría del Centro de seguridad y cumplimiento de Office 365](/Office365/SecurityCompliance/search-the-audit-log-in-security-and-compliance) | Fecha de modificación |

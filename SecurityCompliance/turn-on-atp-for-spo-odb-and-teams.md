@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 07e76024-0c80-40dc-8c48-1dd0d0f863cb
 description: Obtenga información sobre cómo activar ATP para SharePoint, OneDrive y equipos, incluido cómo establecer alertas para los archivos detectados.
-ms.openlocfilehash: d70c574f002ca7e70ab6f9a4abad3ea5ef21a20f
-ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
+ms.openlocfilehash: e413f0b57186dc1364b63e14985ef0f54ca7e442
+ms.sourcegitcommit: 0cc6083bd8cb2f7bbf18847149c6d5239f2a6403
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "26238422"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26699943"
 ---
 # <a name="turn-on-office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Activar Office 365 ATP para SharePoint, OneDrive y equipos de Microsoft
 
@@ -40,14 +40,16 @@ A fin de realizar las tareas descritas en este artículo, debe tener los permiso
 5. Revise (y, según corresponda, edite) [las directivas de los datos adjuntos seguros](set-up-atp-safe-attachments-policies.md) y [las directivas de vínculos seguros](set-up-atp-safe-links-policies.md)de su organización.
     
 6. (Recomendado) Como un administrador global o un administrador de SharePoint Online, ejecute el cmdlet **[Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant?view=sharepoint-ps)** con el parámetro **DisallowInfectedFileDownload** establecido en *true*. <br/>
-  - Establecer el parámetro a *true* bloques todas las acciones (excepto eliminar) de los archivos detectados. Personas no se pueden abrir, mover, copiar o compartir archivos detectados.
-  - Si el parámetro se establece en *false* , bloquea todas las acciones excepto eliminar y la descarga. Personas pueden optar por aceptar el riesgo y descargar un archivo detectado.  
+      - Establecer el parámetro a *true* bloques todas las acciones (excepto eliminar) de los archivos detectados. Personas no se pueden abrir, mover, copiar o compartir archivos detectados.
+      - Si el parámetro se establece en *false* , bloquea todas las acciones excepto eliminar y la descarga. Personas pueden optar por aceptar el riesgo y descargar un archivo detectado.  
    
 7. Permitir hasta 30 minutos para que los cambios propagar a todos los centros de datos de Office 365.
     
 8. (Recomendado) Continúe con para configurar alertas para los archivos detectados.
     
-Para obtener más información acerca del uso de PowerShell con Office 365, vea [administrar Office 365 con PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell). > Para obtener más información acerca de la experiencia del usuario cuando se detecta un archivo como malintencionado, vea [qué hacer cuando se encuentra un archivo malintencionado en SharePoint Online, OneDrive o los equipos de Microsoft](https://support.office.com/article/01e902ad-a903-4e0f-b093-1e1ac0c37ad2). 
+Para obtener más información acerca del uso de PowerShell con Office 365, vea [administrar Office 365 con PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell). 
+
+Para obtener más información acerca de la experiencia del usuario cuando se detecta un archivo como malintencionado, vea [qué hacer cuando se encuentra un archivo malintencionado en SharePoint Online, OneDrive o los equipos de Microsoft](https://support.office.com/article/01e902ad-a903-4e0f-b093-1e1ac0c37ad2). 
   
 ## <a name="set-up-alerts-for-detected-files"></a>Configurar alertas para archivos detectados
 
@@ -63,9 +65,9 @@ Para recibir una notificación cuando un archivo en SharePoint Online, OneDrive 
     
 5. En la sección **Enviar esta alerta cuando...** , haga lo siguiente: 
     
-  - En la lista de **actividades** , elija **detectado malware en un archivo**.
+    r. en la lista de **actividades** , elija **detectado malware en un archivo**.
     
-  - Deje en blanco el campo de **los usuarios** . 
+    b. deje en blanco el campo de **los usuarios** . 
     
 6. En la sección **Enviar esta alerta a...** , seleccione uno o varios de los administradores globales, los administradores de seguridad o lectores de seguridad que deben recibir una notificación cuando se detecta un archivo malintencionado. 
     
