@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 description: Obtenga información sobre cómo usar la información sobre amenazas para buscar e investigar el correo electrónico malintencionado.
-ms.openlocfilehash: 9d63bd69e11bca4bc76fa6d6d00a429ed1aac508
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 4440b4d1503b9a13977ef773b95fa64873662b85
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22536029"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706044"
 ---
 # <a name="find-and-investigate-malicious-email-that-was-delivered-office-365-threat-intelligence"></a>Buscar e investigar el correo electrónico malintencionado que se entregó (Office 365 información sobre amenazas)
 
@@ -48,37 +48,23 @@ Los atacantes malintencionados se puede enviar correo a los usuarios para probar
 > [!TIP]
 > [Explorador de amenaza](get-started-with-ti.md#threat-explorer) (también denominada Explorador), es un informe eficaces que puede servir para varios propósitos, por ejemplo, buscar y eliminar mensajes, que identifica la dirección IP de un remitente de correo electrónico malintencionado o iniciar un incidente para una mayor investigación. El siguiente procedimiento se centra en usar el explorador para buscar y eliminar el correo electrónico malintencionado de buzones de correo de los destinatarios. 
   
-1. Vaya a [https://protection.office.com](https://protection.office.com) e iniciar sesión con su cuenta de trabajo o escuela para Office 365. Esto le llevará a la seguridad &amp; centro de cumplimiento. 
+1. Vaya a [https://security.microsoft.com](https://security.microsoft.com) e iniciar sesión con su cuenta de trabajo o escuela para Office 365. Esto le llevará a la seguridad &amp; centro de cumplimiento. 
     
 2. En el panel de navegación izquierdo, elija **administración de amenaza** \> **Explorer**.
     
-3. En el menú Ver, elija **todos los correos electrónicos**.
-    
-    ![Use el menú Ver para elegir entre correo electrónico y los informes de contenido](media/d39013ff-93b6-42f6-bee5-628895c251c2.png)
+3. En el menú Ver, elija **todos los correos electrónicos**.<br/>![Use el menú Ver para elegir entre correo electrónico y los informes de contenido](media/d39013ff-93b6-42f6-bee5-628895c251c2.png)
   
-4. Tenga en cuenta las etiquetas que aparecen en el informe, como **entregados**, **desconocido**o **entrega a no deseado**.
+4. Tenga en cuenta las etiquetas que aparecen en el informe, como **entregados**, **desconocido**o **entrega a no deseado**.<br/>![Explorador de amenaza que muestra datos para todos los correos electrónicos](media/208826ed-a85e-446f-b276-b5fdc312fbcb.png)<br/>(Dependiendo de las acciones que se tomaron en mensajes de correo electrónico para su organización, es posible que vea etiquetas adicionales, como **bloqueado** o **se reemplazó**.)
     
-    ![Explorador de amenaza que muestra datos para todos los correos electrónicos](media/208826ed-a85e-446f-b276-b5fdc312fbcb.png)
+5. En el informe, elija **entregado** para ver solo los correos electrónicos que ha terminado en las bandejas de entrada de los usuarios.<br/>![Al hacer clic en "Entregar a no deseado" quita esos datos de vista](media/e6fb2e47-461e-4f6f-8c65-c331bd858758.png)
   
-    (Dependiendo de las acciones que se tomaron en mensajes de correo electrónico para su organización, es posible que vea etiquetas adicionales, como **bloqueado** o **se reemplazó**.)
-    
-5. En el informe, elija **entregado** para ver solo los correos electrónicos que ha terminado en las bandejas de entrada de los usuarios. 
-    
-    ![Al hacer clic en "Entregar a no deseado" quita esos datos de vista](media/e6fb2e47-461e-4f6f-8c65-c331bd858758.png)
+6. Debajo del gráfico, revise la lista de **correo electrónico** debajo del gráfico.<br/>![Debajo del gráfico, ver una lista de los mensajes de correo electrónico que se han detectado](media/dfb60590-1236-499d-97da-86c68621e2bc.png)
   
-6. Debajo del gráfico, revise la lista de **correo electrónico** debajo del gráfico. 
-    
-    ![Debajo del gráfico, ver una lista de los mensajes de correo electrónico que se han detectado](media/dfb60590-1236-499d-97da-86c68621e2bc.png)
-  
-7. En la lista, elija un elemento para ver más detalles acerca de ese mensaje de correo electrónico. Por ejemplo, puede hacer clic en la línea de asunto para ver información sobre el remitente, los destinatarios, datos adjuntos y otros mensajes de correo electrónico similar.
-    
-    ![Puede ver información adicional acerca de un elemento, incluidos los detalles y los datos adjuntos](media/5a5707c3-d62a-4610-ae7b-900fff8708b2.png)
+7. En la lista, elija un elemento para ver más detalles acerca de ese mensaje de correo electrónico. Por ejemplo, puede hacer clic en la línea de asunto para ver información sobre el remitente, los destinatarios, datos adjuntos y otros mensajes de correo electrónico similar.<br/>![Puede ver información adicional acerca de un elemento, incluidos los detalles y los datos adjuntos](media/5a5707c3-d62a-4610-ae7b-900fff8708b2.png)
   
 8. Después de ver información acerca de los mensajes de correo electrónico, seleccione uno o más elementos en la lista para activar **+ acciones**.
     
-9. Use la lista **+ acciones** para aplicar una acción, como **mover a eliminar** los elementos. Esto eliminará los mensajes seleccionados de los buzones de los destinatarios. 
-    
-    ![Cuando se selecciona uno o más mensajes de correo electrónico, puede elegir entre varias acciones disponibles](media/ef12e10c-60a7-4f66-8f76-68d77ae26de1.png)
+9. Use la lista **+ acciones** para aplicar una acción, como **mover a eliminar** los elementos. Esto eliminará los mensajes seleccionados de los buzones de los destinatarios.<br/>![Cuando se selecciona uno o más mensajes de correo electrónico, puede elegir entre varias acciones disponibles](media/ef12e10c-60a7-4f66-8f76-68d77ae26de1.png)
   
 ## <a name="related-topics"></a>Temas relacionados
 

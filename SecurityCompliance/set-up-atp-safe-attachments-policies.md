@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 description: Definir directivas de los datos adjuntos seguros para proteger su organización desde archivos malintencionados en el correo electrónico.
-ms.openlocfilehash: 84625cc688be4b6aa98674563b5c6c30b1b35598
-ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
+ms.openlocfilehash: 7c2bcfd1d9faad48cb8852b066f544abd1fb6ace
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "26238412"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706074"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Configurar las directivas de Office 365 ATP los datos adjuntos seguros
 
@@ -35,7 +35,7 @@ Personas con regularidad envían, recibir y compartir datos adjuntos, como docum
 
 - Asegúrese de que la organización tiene [La protección de amenaza avanzada de Office 365](office-365-atp.md).
     
-- Asegúrese de tener el requisito [permisos asignados en la seguridad de Office 365 &amp; centro de cumplimiento](permissions-in-the-security-and-compliance-center.md).
+- Asegúrese de tener el requisito [permisos para la seguridad de Office 365 &amp; centro de cumplimiento](permissions-in-the-security-and-compliance-center.md).
     
 - [Obtenga información acerca de las opciones de directiva de los datos adjuntos seguros de ATP](#learn-about-atp-safe-attachments-policy-options) (en este artículo). Algunas opciones, como las opciones de Monitor o reemplazar, pueden provocar un retraso secundario de correo electrónico mientras se examinan los datos adjuntos. Para evitar retrasos de mensaje, considere el uso de [la entrega dinámica y obtener una vista previa](dynamic-delivery-and-previewing.md).
     
@@ -43,7 +43,7 @@ Personas con regularidad envían, recibir y compartir datos adjuntos, como docum
     
 ## <a name="step-2-set-up-or-edit-an-atp-safe-attachments-policy"></a>Paso 2: Configurar una directiva de datos adjuntos seguros de ATP (o editar)
   
-1. Como administrador global o administrador de seguridad, vaya a [https://protection.office.com](https://protection.office.com) y el inicio de sesión con la cuenta de trabajo o escuela. 
+1. Como administrador global o administrador de seguridad, vaya a [https://security.microsoft.com](https://security.microsoft.com) y el inicio de sesión con la cuenta de trabajo o escuela. 
     
 2. En la seguridad de Office 365 &amp; centro de cumplimiento, en el panel de navegación izquierdo, en **administración de amenaza**, elija **Directiva** \> **Los datos adjuntos seguros**.
     
@@ -51,9 +51,7 @@ Personas con regularidad envían, recibir y compartir datos adjuntos, como docum
     
 4. Elija **nuevo** (el botón nuevo se parece a un signo más ( **+**)) para empezar a crear la directiva.
     
-5. Especifique el nombre, la descripción y la configuración de la directiva.
-    
-    **Ejemplo:** Para configurar una directiva no denominada "retrasos" que entrega los mensajes de todos los usuarios inmediatamente y, a continuación, vuelve a adjuntar datos adjuntos después de que estén digitalizar, es posible que especifique las siguientes opciones: 
+5. Especifique el nombre, la descripción y la configuración de la directiva.<br/><br/>**Ejemplo:** Para configurar una directiva no denominada "retrasos" que entrega los mensajes de todos los usuarios inmediatamente y, a continuación, vuelve a adjuntar datos adjuntos después de que estén digitalizar, es posible que especifique las siguientes opciones: 
     
       - En el cuadro **nombre** , no escriba retrasos.
     

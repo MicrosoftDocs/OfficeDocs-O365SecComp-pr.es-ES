@@ -3,6 +3,7 @@ title: Ver los informes de seguridad de correo electrónico de la seguridad &amp
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
+ms.date: 11/27/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,16 +13,16 @@ search.appverid:
 - MOE150
 ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 description: Obtenga información sobre cómo buscar y usar informes de seguridad de correo electrónico para la organización con Office 365 Enterprise. Informes de seguridad de correo electrónico están disponibles en la seguridad &amp; centro de cumplimiento.
-ms.openlocfilehash: ea5d60393809ef924d51435b695062fe51e772bd
-ms.sourcegitcommit: e0c6f99d5514d8da8a70d9bd3616d1a1c0851254
+ms.openlocfilehash: 72039afd52cd6e9da7dfd05bb67aac2c7e7db001
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2018
-ms.locfileid: "25552398"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706424"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>Ver los informes de seguridad de correo electrónico de la seguridad &amp; centro de cumplimiento
 
-Informes de una gran variedad de seguridad de correo electrónico están disponibles en la seguridad &amp; centro de cumplimiento que le ayudarán a ver cómo las características contra correo no deseado y antimalware en Office 365 protegen a la organización. Si tiene los [permisos necesarios](#what-permissions-are-needed-to-view-these-reports), puede ver estos informes en la seguridad &amp; centro de cumplimiento yendo a los **informes** \> **panel**.
+Una variedad de informes de seguridad de correo electrónico están disponibles en la [seguridad &amp; centro de cumplimiento](https://security.microsoft.com) que le ayudarán a ver cómo las características contra correo no deseado y antimalware en Office 365 protegen a la organización. Si tiene los [permisos necesarios](#what-permissions-are-needed-to-view-these-reports), puede ver estos informes en la seguridad &amp; centro de cumplimiento yendo a los **informes** \> **panel**.
   
 ![La seguridad &amp; panel del centro de cumplimiento puede ayudarle a ver dónde está trabajando avanzada de protección contra amenazas](media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
   
@@ -50,7 +51,7 @@ El nuevo informe de **Estado de protección de amenaza** es un informe inteligen
 > [!NOTE]
 > Un informe de estado de protección de amenaza está disponible para los clientes que tengan [Office 365 ATP](office-365-atp.md) o [Exchange Online Protection](eop/exchange-online-protection-eop.md) (EOP); Sin embargo, la información que se muestra en el informe de estado de protección de amenaza para los clientes de ATP probablemente contendrá datos distintos a lo que es posible que vea los clientes de EOP. Por ejemplo, los clientes de EOP pueden ver información sobre malware detectado en el correo electrónico, pero no información sobre [archivos malintencionados detectan en SharePoint Online, OneDrive o los equipos de Microsoft](atp-for-spo-odb-and-teams.md), una capacidad de ATP específicas. ([Más información acerca de los informes de ATP](view-reports-for-atp.md)).
   
-Para ver este informe, en la seguridad &amp; centro de cumplimiento, vaya a **informes** \> **panel** \> **Estado de protección de amenaza**.
+Para ver este informe, en la [seguridad &amp; centro de cumplimiento](https://security.microsoft.com), vaya a **informes** \> **panel** \> **Estado de protección de amenaza**.
   
 ![Informe de estado de protección de amenaza](media/0ff86e12-c2b2-4d89-92a5-cefb054dc070.png)
   
@@ -66,7 +67,7 @@ También puede elegir si de forma para ver los datos de correo electrónico que 
 
 El informe de **Detecciones de Malware** muestra el número de mensajes entrante y saliente se detectaron como que contiene el malware para su organización. 
   
-Para ver este informe, en la seguridad &amp; centro de cumplimiento, vaya a **informes** \> **panel** \> **Detecciones de Malware**.
+Para ver este informe, en la [seguridad &amp; centro de cumplimiento](https://security.microsoft.com), vaya a **informes** \> **panel** \> **Detecciones de Malware**.
   
 ![Ejemplo de informe de detecciones de malware](media/a1ba61a3-565a-46d6-b0d5-6a6cff6b31d7.png)
   
@@ -76,7 +77,7 @@ Similar a otros informes, como el informe de estado de protección de amenaza, e
 
 El informe de **Malware de la parte superior** muestra los distintos tipos de malware que se detectó por Exchange Online. 
   
-Para ver este informe, en la seguridad &amp; centro de cumplimiento, vaya a **informes** \> **panel** \> **Malware de la parte superior**.
+Para ver este informe, en la [seguridad &amp; centro de cumplimiento](https://security.microsoft.com), vaya a **informes** \> **panel** \> **Malware de la parte superior**.
   
 ![SCC - principales de Malware de elevación de privilegios](media/763330b3-f56e-4ba4-b0bb-051500ae950a.png)
   
@@ -92,7 +93,7 @@ Debajo del gráfico, verá una lista de malware detectado y cuántos mensajes se
 
 El informe **principales remitentes y destinatarios** es un gráfico circular que muestra la lista de remitentes de correo electrónico superior. 
   
-Para ver este informe, en la seguridad &amp; centro de cumplimiento, vaya a **informes** \> **panel** \> **principales remitentes y destinatarios**.
+Para ver este informe, en la [seguridad &amp; centro de cumplimiento](https://security.microsoft.com), vaya a **informes** \> **panel** \> **principales remitentes y destinatarios**.
   
 ![Para ver este informe, en la seguridad &amp; centro de cumplimiento, vaya a informes \> panel \> principales remitentes y destinatarios](media/b5506b5c-2420-4a5a-9ea3-d654294ac838.png)
   
@@ -110,7 +111,7 @@ Debajo del gráfico, comprobará que los remitentes de correo electrónico super
 
 El informe de **Correo de suplantación de la** muestra se detectaron ¿cuántos mensajes de correo de suplantación de la y, de ellas, cuáles se consideran "bueno" (correo de suplantación hecho por razones de negocio legítimo). 
   
-Para ver este informe, en la seguridad &amp; centro de cumplimiento, vaya a **informes** \> **panel** \> **Suplantación de correo**.
+Para ver este informe, en la [seguridad &amp; centro de cumplimiento](https://security.microsoft.com), vaya a **informes** \> **panel** \> **Suplantación de correo**.
   
 ![Para ver este informe, en la seguridad &amp; centro de cumplimiento, vaya a informes \> panel \> suplantación de correo](media/0427e85c-9e40-4225-a0f0-e21a4e8b0e44.png)
   
@@ -122,7 +123,7 @@ Haga clic en (o puntee) el informe para abrirlo en una nueva ventana del explora
 
 El informe de **Detecciones de Spam** muestra todo el contenido de spam bloqueado por Exchange Online. 
   
-Para ver este informe, en la seguridad &amp; centro de cumplimiento, vaya a **informes** \> **panel** \> **Detecciones de Spam**.
+Para ver este informe, en la [seguridad &amp; centro de cumplimiento](https://security.microsoft.com), vaya a **informes** \> **panel** \> **Detecciones de Spam**.
   
 ![Para ver este informe, en la seguridad &amp; centro de cumplimiento, vaya a informes \> panel \> detecciones de correo electrónico no deseado de elevación de privilegios](media/028cff3c-79ce-4ec0-8f0f-ec32ac28243a.png)
   
@@ -138,7 +139,7 @@ Debajo del gráfico, verá una lista de elementos de spam que se detectaron. Sel
 
 El informe **enviado y recibido de correo electrónico** es un informe inteligente que muestra información sobre el correo electrónico entrante y saliente, incluidas las detecciones de spam, malware y correo electrónico identificado como "bueno". 
   
-Para ver este informe, en la seguridad &amp; centro de cumplimiento, vaya a **informes** \> **panel** \> **enviado y recibido de correo electrónico**.
+Para ver este informe, en la [seguridad &amp; centro de cumplimiento](https://security.microsoft.com), vaya a **informes** \> **panel** \> **enviado y recibido de correo electrónico**.
   
 ![Para ver este informe, en la seguridad &amp; centro de cumplimiento, vaya a informes \> panel \> enviados y correo electrónico recibido](media/0e710ed0-1b0e-4dac-8796-94a01a710f3a.png)
   
@@ -162,7 +163,7 @@ Detalles están disponibles para cada mensaje, incluidos el motivo de la entrega
   
 ![El informe de los mensajes de User-Reported muestra a los usuarios de los mensajes etiquetados como no deseado, no correo no deseado o suplantación de identidad intentos.](media/ad5e9a3d-b833-419c-bcc9-3425d9604ead.png)
   
-Para ver este informe, en la seguridad &amp; centro de cumplimiento, realice uno de los siguientes:
+Para ver este informe, en la [seguridad &amp; centro de cumplimiento](https://security.microsoft.com), siga uno de los siguientes procedimientos:
   
 - Vaya a **administración de amenaza** \> **panel** \> **mensajes indicado por el usuario**.
     
@@ -175,12 +176,25 @@ Para ver este informe, en la seguridad &amp; centro de cumplimiento, realice uno
   
 ## <a name="what-permissions-are-needed-to-view-these-reports"></a>¿Qué permisos son necesarios para ver estos informes?
 
-Para poder ver y utilizar los informes de seguridad de correo electrónico que se describen en este artículo, debe tener una función adecuada asignada en la seguridad &amp; centro de cumplimiento y en el centro de administración de Exchange.
-  
-|**Grupo de funciones**|**Punto de asignación**|**Obtener más información**|
-|:-----|:-----|:-----|
-| Uno de los siguientes:  <br/><br/>: Administración de la organización  <br/>: Administrador de seguridad  <br/>--Seguridad lector  <br/> |Seguridad &amp; centro de cumplimiento  <br/> |[Los permisos de la seguridad de Office 365 &amp; centro de cumplimiento](permissions-in-the-security-and-compliance-center.md) <br/> |
-| Uno de los siguientes:  <br/><br/>: Administración de la organización  <br/>--Administración de la organización sólo vista  <br/>--Rol de los destinatarios con permiso de vista  <br/>--Administración de cumplimiento  <br/> |Centro de administración de Exchange  <br/> |[Permisos de características de Exchange Online](https://technet.microsoft.com/library/jj200673%28v=exchg.150%29.aspx) <br/> |
+Para poder ver y usar los informes que se describen en este artículo, debe tener una función adecuada asignada en ambos la seguridad &amp; centro de cumplimiento y el centro de administración de Exchange.
+
+- Para la seguridad &amp; centro de cumplimiento, debe tener uno de los siguientes roles asignados:
+    - Administración de la organización
+    - Administrador de seguridad
+    - Lector de seguridad
+
+- Para Exchange Online, debe tener uno de los siguientes roles asignados:
+    - Administración de la organización
+    - Administración de organización de solo lectura
+    - Rol Destinatarios con permiso de vista
+    - Administración de cumplimiento
+
+Para obtener más información, vea los siguientes recursos:
+
+- [Los permisos de la seguridad de Office 365 &amp; centro de cumplimiento](permissions-in-the-security-and-compliance-center.md)
+
+- [Permisos de características de Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
+   
    
 ## <a name="what-if-the-reports-arent-showing-data"></a>¿Qué ocurre si los informes no muestran los datos?
 

@@ -3,7 +3,6 @@ title: 'Rastreadores de amenazas: nuevos y destacables'
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 6/15/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -13,16 +12,16 @@ search.appverid:
 - MOE150
 ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
 description: Obtenga información sobre los objetos de seguimiento de amenaza, incluidos los rastreadores notable nuevo, para ayudar a su organización permanezca sobre problemas de seguridad.
-ms.openlocfilehash: 1ec772d367446b20f1846a71a86d6f62a2370e6c
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: e9dfdde563260ff7969f4749357c130ab98ce386
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22536091"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706384"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>Rastreadores de amenazas: nuevos y destacables
 
-[Información sobre amenazas de Office 365](office-365-ti.md) permite el equipo de seguridad de su organización detectar y tomar medidas frente a las amenazas de la ciberseguridad. **A partir de las últimas 2018 marzo y a través de las próximas semanas, Office 365 amenaza inteligencia incluirá nuevas características de rastreador de amenaza**, incluidos rastreadores notables. Lea este artículo para obtener una introducción a estas nuevas características y pasos siguientes. 
+[Información sobre amenazas de Office 365](office-365-ti.md) permite el equipo de seguridad de su organización detectar y tomar medidas frente a las amenazas de la ciberseguridad. A partir de las últimas de 2018 marzo y a través de las próximas semanas, Office 365 amenaza inteligencia incluirá nuevas características de rastreador de amenaza, incluidos rastreadores notables. Lea este artículo para obtener una introducción a estas nuevas características y pasos siguientes. 
   
 ## <a name="what-are-threat-trackers"></a>¿Cuáles son los objetos de seguimiento de amenaza?
 
@@ -36,7 +35,7 @@ La mayoría de las páginas de rastreador incluye los números de tendencias que
   
 Objetos de seguimiento son sólo algunas de las muchas características de gran que obtener con [Información sobre amenazas de Office 365](office-365-ti.md). Cuando está disponible, su nuevo rastreadores de amenaza incluirá [rastreadores notables](threat-trackers.md#notey), [objetos de seguimiento de tendencias](threat-trackers.md#trending), [las consultas de seguimiento](threat-trackers.md#trackedq)y [consultas guardadas](threat-trackers.md#savedq).
   
-Para ver y usar los objetos de seguimiento de amenaza cuando estén disponibles para la organización, vaya a la seguridad &amp; centro de cumplimiento ([https://protection.office.com](https://protection.office.com)) y elija **administración de amenaza** \> **Rastreador de amenaza**.
+Para ver y usar los objetos de seguimiento de amenaza cuando estén disponibles para la organización, vaya a la seguridad &amp; centro de cumplimiento ([https://security.microsoft.com](https://security.microsoft.com)) y elija **administración de amenaza** \> **Rastreador de amenaza**.
   
 > [!NOTE]
 > Para utilizar los objetos de seguimiento de amenaza, debe ser un administrador global de Office 365, el Administrador de seguridad o el lector de seguridad. Vea [permisos en la seguridad de Office 365 &amp; centro de cumplimiento](permissions-in-the-security-and-compliance-center.md). 
@@ -75,7 +74,7 @@ Si está revisando el correo electrónico, el contenido o las actividades de Off
   
 Cuando los objetos de seguimiento de amenaza están disponibles para usted, pruébelos out - y recuerde que puede siempre nos facilita comentarios en éste o en otras características de seguridad de Office 365 haciendo clic en el botón de **comentarios** en la esquina inferior derecha de la información general de Office 365 [ Seguridad &amp; centro de cumplimiento](https://support.office.com/article/a5f2fd18-b029-4257-b5a8-ae83e7768c85).
   
-![Seguridad de Office 365 &amp; centro de cumplimiento](media/86c330db-8132-4150-8475-220258fe04fb.png)
+![Centro de seguridad y cumplimiento de Office 365](media/86c330db-8132-4150-8475-220258fe04fb.png)
   
 ## <a name="trackers-and-office-365-advanced-threat-protection"></a>Objetos de seguimiento y Office 365 protección avanzada
 

@@ -3,7 +3,6 @@ title: Activar Office 365 Cloud App Security
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 2/26/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: ba919c73-d021-404d-9850-eec57e78678c
 description: Lea este artículo para obtener información sobre cómo activar Office 365 administración avanzada de seguridad, con tecnología de seguridad de la aplicación en la nube de Microsoft Azure.
-ms.openlocfilehash: 6e40dcf1abeae4f9e01502282d00b934431a8258
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 586ebc5f496652e05b4ab6d2421fa9bc42603895
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22535648"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706294"
 ---
 # <a name="turn-on-office-365-cloud-app-security"></a>Activar Office 365 Cloud App Security
   
@@ -31,17 +30,13 @@ ms.locfileid: "22535648"
 > [!IMPORTANT]
 > Debe ser un administrador global o administrador de seguridad para llevar a cabo la siguiente tarea. Para obtener más información, vea [permisos en la seguridad de Office 365 &amp; centro de cumplimiento](permissions-in-the-security-and-compliance-center.md). En orden para Office 365 la seguridad de la aplicación de nube para que funcione la correcta, **debe estar activado el registro de auditoría** para su entorno de Office 365. Para obtener más información, vea [activar Office 365 de búsqueda de registros de auditoría activado o desactivado](turn-audit-log-search-on-or-off.md). 
   
-1. Como administrador global o administrador de seguridad, vaya a [https://protection.office.com](https://protection.office.com) e iniciar sesión con su cuenta de trabajo o escuela para Office 365. (Esto le llevará a la seguridad &amp; centro de cumplimiento.) 
+1. Como administrador global o administrador de seguridad, vaya a [https://security.microsoft.com](https://security.microsoft.com) e iniciar sesión con su cuenta de trabajo o escuela para Office 365. (Esto le llevará a la seguridad &amp; centro de cumplimiento.) 
     
 2. Vaya a **las alertas de** \> **avanzada de administrar las alertas**.
     
 3. Seleccione **activar la seguridad de la aplicación de Office 365 en la nube**.
     
-4. Elija **Ir a la seguridad de la aplicación de Office 365 en la nube**.
-    
-    ![En la seguridad &amp; centro de cumplimiento, elija Administrar alertas avanzadas para ir a la seguridad de la aplicación de nube de Office 365](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)
-  
-    Esto le llevará al portal de seguridad de la aplicación de nube de Office 365, donde puede ver los informes y crear o editar las directivas.
+4. Elija **Ir a la seguridad de la aplicación de Office 365 en la nube**.<br/>![En la seguridad &amp; centro de cumplimiento, elija Administrar alertas avanzadas para ir a la seguridad de la aplicación de nube de Office 365](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)<br/>Esto le llevará al portal de seguridad de la aplicación de nube de Office 365, donde puede ver los informes y crear o editar las directivas.
     
 > [!NOTE]
 > Al activar la seguridad de la aplicación de nube de Office 365, información de auditoría sobre sus cuentas de usuario de Office 365 y las actividades del usuario se transfiere a la [Seguridad de la aplicación de Microsoft en la nube](https://aka.ms/whatiscas). Esto permite a Office 365 proporcionar alertas avanzadas, el filtrado y otras características para que pueda obtener información y tomar medidas sobre actividades sospechosas. 

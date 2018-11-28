@@ -3,6 +3,7 @@ title: Visualización de informes para la protección de amenaza avanzada de Off
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
+ms.date: 11/27/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 description: Obtenga información sobre cómo buscar y usar informes para Office 365 avanzada protección contra amenazas en la seguridad &amp; centro de cumplimiento.
-ms.openlocfilehash: 1a0ecb9a6722deb50a491a15f720481a5bb7b0a4
-ms.sourcegitcommit: e0c6f99d5514d8da8a70d9bd3616d1a1c0851254
+ms.openlocfilehash: e9d3088f81d1020e70de4c2260fba81cd469715d
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2018
-ms.locfileid: "25552338"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706324"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Visualización de informes para la protección de amenaza avanzada de Office 365
 
@@ -34,7 +35,7 @@ El informe de **Estado de protección de amenaza** es una vista única que reún
 > [!NOTE]
 > Un informe de estado de protección de amenaza está disponible para los clientes que tengan [Office 365 ATP](office-365-atp.md) o [Exchange Online Protection](eop/exchange-online-protection-eop.md) (EOP); Sin embargo, la información que se muestra en el informe de estado de protección de amenaza para los clientes de ATP probablemente contendrá datos distintos a lo que es posible que vea los clientes de EOP. Por ejemplo, el informe de estado de protección de amenaza para los clientes de ATP contendrá información sobre [archivos malintencionados detectan en SharePoint Online, OneDrive o los equipos de Microsoft](atp-for-spo-odb-and-teams.md). Dicha información es específica de ATP, por lo que los clientes que tienen EOP pero no ATP no verán los detalles de su informe de estado de protección de amenaza.
   
-Para ver el informe de estado de protección de amenaza, en la seguridad &amp; centro de cumplimiento, vaya a **informes** \> **panel** \> **Estado de protección de amenaza**.
+Para ver el informe de estado de protección de amenaza, en la [seguridad &amp; centro de cumplimiento](https://security.microsoft.com), vaya a **informes** \> **panel** \> **Estado de protección de amenaza**.
   
 ![Informe de estado de protección de amenaza ATP](media/6bdd41eb-62e0-423b-9fd4-d1d5baf0cbd5.png)
   
@@ -54,7 +55,7 @@ También puede usar el menú **Ver datos por** para cambiar la información que 
 
 El informe de **Tipos de archivo de ATP** muestra el tipo de archivos detectados como malintencionado por [Los datos adjuntos seguros de ATP](atp-safe-attachments.md).
   
-Para ver este informe, en la seguridad &amp; centro de cumplimiento, vaya a **informes** \> **panel** \> **ATP tipos de archivo**.
+Para ver este informe, en la [seguridad &amp; centro de cumplimiento](https://security.microsoft.com), vaya a **informes** \> **panel** \> **ATP tipos de archivo**.
   
 ![Informe de tipos de archivo de ATP](media/6e3f5d33-79aa-4b2d-938c-6ef135d9e54c.png)
   
@@ -66,7 +67,7 @@ Cuando mantenga el mouse sobre un día determinado, puede ver el desglose de los
 
 El informe de **Eliminación de mensaje de ATP** muestra las acciones que se tomaron para mensajes de correo electrónico que se detectaron como tener contenido malintencionado. 
   
-Para ver este informe, en la seguridad &amp; centro de cumplimiento, vaya a **informes** \> **panel** \> **ATP mensaje disposición**.
+Para ver este informe, en la [seguridad &amp; centro de cumplimiento](https://security.microsoft.com), vaya a **informes** \> **panel** \> **ATP mensaje disposición**.
   
 ![Informe de eliminación de mensajes de ATP](media/b0ff65c4-53d3-496d-bafa-8937a5eb69e5.png)
   
@@ -89,12 +90,24 @@ Además de los informes de ATP que se describe en este artículo, varios otros i
   
 ## <a name="what-permissions-are-needed-to-view-the-atp-reports"></a>¿Qué permisos son necesarios para ver los informes de ATP?
 
-Para poder ver y usar los informes que se describen en este artículo, debe tener una función adecuada asignada en la seguridad &amp; centro de cumplimiento y en el centro de administración de Exchange.
-  
-|**Grupo de funciones**|**Punto de asignación**|**Obtener más información**|
-|:-----|:-----|:-----|
-| Uno de los siguientes:  <br/><br/>: Administración de la organización  <br/>: Administrador de seguridad  <br/>--Seguridad lector  <br/> |Seguridad &amp; centro de cumplimiento  <br/> |[Los permisos de la seguridad de Office 365 &amp; centro de cumplimiento](permissions-in-the-security-and-compliance-center.md) <br/> |
-| Uno de los siguientes:  <br/><br/>: Administración de la organización  <br/>--Administración de la organización sólo vista  <br/>--Rol de los destinatarios con permiso de vista  <br/>--Administración de cumplimiento  <br/> |Centro de administración de Exchange  <br/> |[Permisos de características de Exchange Online](https://technet.microsoft.com/library/jj200673%28v=exchg.150%29.aspx) <br/> |
+Para poder ver y usar los informes que se describen en este artículo, debe tener una función adecuada asignada en ambos la seguridad &amp; centro de cumplimiento y el centro de administración de Exchange.
+
+- Para la seguridad &amp; centro de cumplimiento, debe tener uno de los siguientes roles asignados:
+    - Administración de la organización
+    - Administrador de seguridad
+    - Lector de seguridad
+
+- Para Exchange Online, debe tener uno de los siguientes roles asignados:
+    - Administración de la organización
+    - Administración de organización de solo lectura
+    - Rol Destinatarios con permiso de vista
+    - Administración de cumplimiento
+
+Para obtener más información, vea los siguientes recursos:
+
+- [Los permisos de la seguridad de Office 365 &amp; centro de cumplimiento](permissions-in-the-security-and-compliance-center.md)
+
+- [Permisos de características de Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
    
 ## <a name="what-if-the-reports-arent-showing-data"></a>¿Qué ocurre si los informes no muestran los datos?
 

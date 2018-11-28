@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 88935b4e-dcb1-47f1-8aca-1bf8fb069db6
 description: 'Las directivas de detección de anomalías de seguridad de la aplicación de nube de Office 365 usen algoritmos integrados para ayudar a descubrir posibles problemas. Debe tener la directiva de detección de anomalías de al menos un, que puede ajustar (al crearla) mediante el uso de filtros. '
-ms.openlocfilehash: 80f576d7c1c42ab60c1b031dcd33591f8e1ce4b8
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 8babe86dd5adb6c25a069096157cac121ad66ab1
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22536778"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706344"
 ---
 # <a name="anomaly-detection-policies-in-office-365-cloud-app-security"></a>Directivas de detección de anomalías en Office 365 Cloud App Security
 
@@ -51,7 +51,7 @@ Asegúrese de que:
     
 ## <a name="view-your-anomaly-detection-policies"></a>Ver las directivas de detección de anomalías
 
-1. Como administrador global o administrador de seguridad, vaya a [https://protection.office.com](https://protection.office.com) e iniciar sesión con su cuenta de trabajo o escuela. 
+1. Como administrador global o administrador de seguridad, vaya a [https://security.microsoft.com](https://security.microsoft.com) e iniciar sesión con su cuenta de trabajo o escuela. 
     
 2. En la seguridad &amp; centro de cumplimiento, elija **alertas** \> **avanzada de administrar las alertas**.
     
@@ -67,7 +67,7 @@ Asegúrese de que:
   
 5. Seleccione una directiva para revisar o modificar su configuración.
     
-6. Elija **Update** para guardar los cambios. 
+6. Elija **Actualizar** para guardar los cambios. 
     
 ## <a name="learn-more-about-anomaly-detection-policies"></a>Encontrará más información acerca de las directivas de detección de anomalías
 
@@ -93,7 +93,7 @@ En la siguiente tabla se describe las directivas de detección de anomalías de 
 
 Como las alertas se incluyen, puede procesar dichas alertas rápidamente y determinar cuáles para tratar en primer lugar. Necesidad de contexto para una alerta le permite ver la imagen más grande y determinar si realmente está ocurriendo algo malintencionado. Use el procedimiento siguiente para empezar a explorar una alerta:
   
-1. Como administrador global o administrador de seguridad, vaya a [https://protection.office.com](https://protection.office.com) e iniciar sesión con su cuenta de trabajo o escuela. 
+1. Como administrador global o administrador de seguridad, vaya a [https://security.microsoft.com](https://security.microsoft.com) e iniciar sesión con su cuenta de trabajo o escuela. 
     
 2. En la seguridad &amp; centro de cumplimiento, elija **alertas** \> **avanzada de administrar las alertas**.
     
@@ -118,7 +118,6 @@ Como las alertas se incluyen, puede procesar dichas alertas rápidamente y deter
 Una alerta en múltiples inicios de sesión con errores de hecho posible sospechosa y puede indicar un posible ataque de fuerza bruta. Sin embargo, como una alerta también puede ser un error de configuración de aplicación, lo que provoca que la alerta sea un favorable positivo es true. Si ve una alerta de varios-error-inicios de sesión con las actividades de sospechosas adicionales, a continuación, hay una mayor probabilidad de que una cuenta se ve comprometida. Por ejemplo, suponga que una alerta de varios-error de inicio de sesión es seguida por actividad desde una dirección IP TOR y actividad de viajes imposible, ambos indicadores seguros de compromiso. Incluso es posible que vea que el mismo usuario realiza una actividad masivo descarga, que a menudo es un indicador de que el atacante realizando exfiltration de datos. Lo de cosas que puede explorar en Office 365 la seguridad de la aplicación de nube para ver y procesar las alertas y tomar medidas donde sea necesario.
   
 ## <a name="next-steps"></a>Pasos siguientes
-<a name="nextsteps"> </a>
 
 - [Integrar su servidor SIEM](integrate-your-siem-server-with-office-365-cas.md)
     

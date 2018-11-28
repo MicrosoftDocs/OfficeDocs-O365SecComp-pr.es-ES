@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: a74f637b-3710-4c41-b70f-b5a812929a81
 description: Obtenga información sobre cómo configurar una programación para un informe en la seguridad &amp; centro de cumplimiento.
-ms.openlocfilehash: 411379d0be2d0af3843c3ccfec87ea6184fdb0c8
-ms.sourcegitcommit: e0c6f99d5514d8da8a70d9bd3616d1a1c0851254
+ms.openlocfilehash: 4251296c75629062ca5cba2e6c2e1cb3972b3f8a
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2018
-ms.locfileid: "25552358"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706024"
 ---
 # <a name="create-a-schedule-for-a-report-in-the-security-amp-compliance-center"></a>Crear una programación para un informe en la seguridad &amp; centro de cumplimiento
 
@@ -29,7 +29,7 @@ En la seguridad &amp; centro de cumplimiento, varios [informes y perspectivas](r
 > [!IMPORTANT]
 > Asegúrese de que tiene los permisos necesarios para realizar esta tarea. En general, los administradores globales de Office 365, los administradores de seguridad y los lectores de seguridad pueden acceder a los informes en la seguridad &amp; centro de cumplimiento. Para obtener más información acerca de los permisos, vea [permisos en la seguridad de Office 365 &amp; centro de cumplimiento](permissions-in-the-security-and-compliance-center.md).
   
-1. En la seguridad &amp; centro de cumplimiento, vaya a **informes** \> **panel**.
+1. En la [seguridad &amp; centro de cumplimiento](https://security.microsoft.com), vaya a **informes** \> **panel**.
     
 2. Elija un informe. Para este ejemplo, se podrá elegir el informe de estado de protección de amenaza.
     

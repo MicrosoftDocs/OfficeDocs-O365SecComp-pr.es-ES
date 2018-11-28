@@ -3,7 +3,6 @@ title: Revisar los resultados de la detección de aplicaciones en Office 365 Clo
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 3/19/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: aac65513-e75e-4c82-a668-9a6604dd9f9d
 description: Revisión de informes de detección de aplicaciones en administración avanzada de seguridad le ayudarán a obtener más información acerca de cómo las personas de su organización utilizan aplicaciones de nube. Después de crear informes de detección de aplicación con archivos de registro de los firewalls y servidores proxy, revise los resultados en el panel de la detección de la aplicación.
-ms.openlocfilehash: 188ef87920b26069e7d99057662b3812be22e46c
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: ddf3826f5aac9d3c837cf66f1b97b4650df70f32
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22535602"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706264"
 ---
 # <a name="review-app-discovery-findings-in-office-365-cloud-app-security"></a>Revisar los resultados de la detección de aplicaciones en Office 365 Cloud App Security
   
@@ -36,9 +35,7 @@ El panel de detección de la nube funciona con registros de tráfico web de la o
 
 1. Vaya a [https://protection.office.com](https://protection.office.com) e iniciar sesión con su cuenta de trabajo o escuela para Office 365. (Esto le llevará a la seguridad &amp; centro de cumplimiento.) 
     
-2. En la seguridad &amp; centro de cumplimiento, elija **alertas** \> **avanzada de administrar las alertas**.
-    
-    (Si no está habilitado aún seguridad de la aplicación de nube de Office 365, y debe ser un administrador global, [activar la seguridad de la aplicación de nube de Office 365](turn-on-office-365-cas.md).)
+2. En la seguridad &amp; centro de cumplimiento, elija **alertas** \> **avanzada de administrar las alertas**.<br/>(Si no está habilitado aún seguridad de la aplicación de nube de Office 365, y debe ser un administrador global, [activar la seguridad de la aplicación de nube de Office 365](turn-on-office-365-cas.md).)
     
 3. Elija **Ir a la seguridad de la aplicación de Office 365 en la nube**.
     
@@ -70,21 +67,11 @@ Puede usar la detección en la nube para Eche un vistazo más profundo de aplica
     
 2. Use la sección filtros para ver aplicaciones por nombre, categoría, el nivel de uso o última fecha visto.
     
-3. En la lista de resultados, pase el ratón por un nombre de la aplicación para mostrar el vínculo **Ver subdominios** . 
+3. En la lista de resultados, pase el ratón por un nombre de la aplicación para mostrar el vínculo **Ver subdominios** .<br/> ![Mantenga el mouse junto a una aplicación para mostrar un vínculo para ver los detalles de subdominio](media/4a212215-8a2c-46fd-9ef9-89e4064658a6.png)<br/>Aparecerá información detallada sobre la aplicación seleccionada.
     
-    ![Mantenga el mouse junto a una aplicación para mostrar un vínculo para ver los detalles de subdominio](media/4a212215-8a2c-46fd-9ef9-89e4064658a6.png)
-  
-    Aparecerá información detallada sobre la aplicación seleccionada.
+4. Para ver detalles acerca de las direcciones IP, elija la pestaña **direcciones IP** .<br/>![Detección de la nube muestra información detallada acerca de las direcciones IP](media/0c742bf6-da9e-4d22-8656-a27a5007d5d5.png)<br/>En la lista de resultados, seleccione una dirección IP individual para ver información más detallada.
     
-4. Para ver detalles acerca de las direcciones IP, elija la pestaña **direcciones IP** . 
-    
-    ![Detección de la nube muestra información detallada acerca de las direcciones IP](media/0c742bf6-da9e-4d22-8656-a27a5007d5d5.png)
-  
-    En la lista de resultados, seleccione una dirección IP individual para ver información más detallada.
-    
-5. Para ver detalles acerca de los usuarios de Office 365 dentro de la organización, elija la pestaña de **los usuarios** . 
-    
-    ![Detección de nube - información de los usuarios](media/2d9c2d85-01e6-4057-8020-d9a68f26bbac.png)
+5. Para ver detalles acerca de los usuarios de Office 365 dentro de la organización, elija la pestaña de **los usuarios** .<br/>![Detección de nube - información de los usuarios](media/2d9c2d85-01e6-4057-8020-d9a68f26bbac.png)
   
 ## <a name="exclude-entities"></a>Excluir las entidades
 

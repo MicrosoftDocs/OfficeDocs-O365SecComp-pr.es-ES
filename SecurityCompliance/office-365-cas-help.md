@@ -3,7 +3,6 @@ title: Ayuda y procedimientos de Ayuda de seguridad de la aplicación en la nube
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 3/16/2018
 ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-administration
@@ -13,19 +12,17 @@ search.appverid:
 - MOE150
 ms.assetid: ade98409-a15e-4de3-8c06-8e748f5b7e96
 description: Buscar contenido de ayuda para la administración de seguridad avanzada en Office 365, ahora conocida como seguridad de la aplicación de nube de Office 365.
-ms.openlocfilehash: 06d134e1db8a8693a509fb6273042ca6ff1e6812
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: d38b12afe50ac56b3047b24d68c9c00d3bcbf602
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22536054"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706274"
 ---
 # <a name="office-365-cloud-app-security-help-and-how-to"></a>Ayuda y procedimientos de Ayuda de seguridad de la aplicación en la nube de office 365
-
- **Administración de seguridad avanzada de office 365 es ahora Office 365 en la nube seguridad de la aplicación**. 
   
 > [!NOTE]
-> Seguridad de la aplicación de Office 365 en la nube está disponible en Office 365 Enterprise E5 o como una suscripción de complemento para Office 365. Si su organización usa otra suscripción de Office 365 Enterprise, seguridad de la aplicación de nube de Office 365 puede adquirirse como un complemento. (Como administrador global, en el centro de administración de Office 365, elija **facturación** \> **Agregar suscripciones**.) Para obtener más información acerca de las opciones del plan, consulte [comparar todos los Office 365 para planes de negocios](https://go.microsoft.com/fwlink/?linkid=844053). 
+> Seguridad de la aplicación de nube de Office 365 (anteriormente conocido como la administración de seguridad avanzada de Office 365) está disponible en Office 365 Enterprise E5 o como una suscripción de complemento para Office 365. Si su organización usa otra suscripción de Office 365 Enterprise, seguridad de la aplicación de nube de Office 365 puede adquirirse como un complemento. (Como administrador global, en el centro de administración de Office 365, elija **facturación** \> **Agregar suscripciones**.) Para obtener más información acerca de las opciones del plan, consulte [comparar todos los Office 365 para planes de negocios](https://go.microsoft.com/fwlink/?linkid=844053). 
   
 Con la seguridad de la aplicación de nube de Office 365, los administradores globales, los administradores de seguridad y seguridad lectores pueden ver sospechosos o anómalas actividades a través de la detección de amenazas avanzadas, decida qué personas de la organización pueden usar para tener acceso a información de aplicaciones en Office 365 y obtener instantáneas de uso de la nube de su organización a través de Office 365 y otros servicios en la nube. Todos los de esto puede ayuda a proteger a los usuarios y los datos y sin tener que instalar los agentes de extremo.
   

@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 367f25d3-10a0-4a91-bdae-70ebb7a79c98
 description: Definir directivas de actividad con Office 365 la seguridad de la aplicación de nube para configurar alertas para desencadenar cuando actividades específicas suceden o sucedería con demasiada frecuencia. Mediante la configuración de directivas para activar las alertas, puede recibir una notificación sobre y supervisar las actividades específicas.
-ms.openlocfilehash: a239e2bf453a01bf852a702a66cb2f09c02b8c96
-ms.sourcegitcommit: c31424cafbf1953f2864d7e2ceb95b329a694edb
+ms.openlocfilehash: ff1f0acd3c622f20bff26f6a77cc686193cf76fc
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "23272375"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706474"
 ---
 # <a name="activity-policies-and-alerts-in-office-365-cloud-app-security"></a>Directivas de actividad y alertas en Office 365 Cloud App Security
 
@@ -47,7 +47,7 @@ Asegúrese de que:
     
 ## <a name="create-a-new-activity-policy"></a>Crear una nueva directiva de actividad
 
-1. Como administrador global o administrador de seguridad, vaya a [https://protection.office.com](https://protection.office.com) e iniciar sesión con su cuenta de trabajo o escuela. 
+1. Como administrador global o administrador de seguridad, vaya a [https://security.microsoft.com](https://security.microsoft.com) e iniciar sesión con su cuenta de trabajo o escuela. 
     
 2. En la seguridad &amp; centro de cumplimiento, elija **alertas** \> **avanzada de administrar las alertas**.
     

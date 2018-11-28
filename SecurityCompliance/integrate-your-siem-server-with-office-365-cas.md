@@ -12,18 +12,18 @@ search.appverid:
 - MOE150
 ms.assetid: dd6d2417-49c4-4de6-9294-67fdabbf8532
 description: También puede integrar su servidor SIEM con seguridad de la aplicación de nube de Office 365. Lea este artículo para obtener información general sobre cómo funciona y cómo configurarla.
-ms.openlocfilehash: d8603d53e156e89c53f13153cd90d400b1312538
-ms.sourcegitcommit: 2e41cc24ad92005084f2ba432e724bdcc4e295ff
+ms.openlocfilehash: f0965f822b50a0f06dfb69620a9d64c6ca509864
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2018
-ms.locfileid: "25450765"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706414"
 ---
 # <a name="integrate-your-siem-server-with-office-365-cloud-app-security"></a>Integrar el servidor SIEM con Office 365 Cloud App Security
   
 |Evaluación **\>**|Planeación de **\>**|Implementación **\>**|Utilización de ***|
 |:-----|:-----|:-----|:-----|
-|[Empezar a evaluar](office-365-cas-overview.md) <br/> |[Comenzar a planear](get-ready-for-office-365-cas.md) <br/> |¡Están aquí!  <br/> [Siguiente paso](utilization-activities-for-ocas.md) <br/> |[Iniciar utilizando](utilization-activities-for-ocas.md) <br/> |
+|[Empezar a evaluar](office-365-cas-overview.md) <br/> |[Comenzar a planear](get-ready-for-office-365-cas.md) <br/> |¡Están aquí!  <br/> [Paso siguiente](utilization-activities-for-ocas.md) <br/> |[Iniciar utilizando](utilization-activities-for-ocas.md) <br/> |
    
 ## <a name="overview-and-prerequisites"></a>Información general y los requisitos previos
 
@@ -67,7 +67,7 @@ Seguridad de la aplicación de Office 365 en la nube actualmente es compatible c
  
 ## <a name="step-1-set-it-up-a-siem-agent-in-office-365-cloud-app-security"></a>Paso 1: Lo configurar un agente de SIEM en seguridad de la aplicación de nube de Office 365
 
-1. Vaya a [https://protection.office.com](https://protection.office.com) e iniciar sesión con su cuenta de trabajo o escuela para Office 365. (Esto le llevará a la seguridad &amp; centro de cumplimiento.) 
+1. Vaya a [https://security.microsoft.com](https://security.microsoft.com) e iniciar sesión con su cuenta de trabajo o escuela para Office 365. (Esto le llevará a la seguridad &amp; centro de cumplimiento.) 
     
 2. Vaya a **las alertas de** \> **avanzada de administrar las alertas**.
     
@@ -86,7 +86,7 @@ Seguridad de la aplicación de Office 365 en la nube actualmente es compatible c
 8. En el paso **Remoto de registro del sistema** , especifique la dirección IP o el nombre de host del **host remoto de registro del sistema** y el **número de puerto del registro del sistema**. Seleccione TCP o UDP como protocolo remoto registro del sistema. (Puede trabajar con el Administrador de seguridad o administrador de red para obtener estos detalles si no dispone de ellos). A continuación, elija **siguiente**.<br/>![Especificar detalles del registro del sistema remoto remoto](media/ArcSightS1Syslog.png)
   
 9. En el paso de **Tipos de datos** , siga uno de los siguientes procedimientos y, a continuación, haga clic en **siguiente**:
-    - Conserve la configuración predeterminada de **Todas las alertas**<br/>OR
+    - Conserve la configuración predeterminada de **Todas las alertas**<br/>O BIEN
     - Haga clic en **todas las alertas**y, a continuación, elija **filtros específicos**. Definir filtros para seleccionar los tipos de alertas que desea enviar a su servidor SIEM.<br/>![Paso de tipos de datos del Asistente](media/ArcSightS1ExportOptions.png)
   
 10. En la pantalla Enhorabuena, copie el token y guardar para usarlo más adelante.<br/>![Pantalla de agente creado SIEM](media/SIEMAgentFinished.png) 
@@ -122,9 +122,13 @@ Una vez que haga clic en Cerrar y salir del asistente, en la pantalla de extensi
     ```
 
 - Parámetros entre corchetes [] son opcionales y deben usarse sólo si es relevante. Use las siguientes variables:
+
     - **DIRNAME** es la ruta de acceso al directorio que desea usar para los registros de depuración de agente local.
+
     - **Dirección [: puerto]** es la dirección del servidor proxy y el puerto que utiliza el servidor para conectarse a Internet.
+
     - **Símbolo (token)** es el símbolo (token) de agente SIEM que se copió en el primer procedimiento.
+
     - Para obtener ayuda, escriba `-h`. 
   
 ## <a name="step-3-validate-that-the-siem-agent-is-working"></a>Paso 3: Validar que el agente de SIEM está funcionando

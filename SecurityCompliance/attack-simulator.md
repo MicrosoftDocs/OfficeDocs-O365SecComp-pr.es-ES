@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 description: Como administrador global de Office 365, puede usar simulador de ataque para ejecutar los escenarios de ataque realista en su organización. Esto puede ayudar a identificar y buscar usuarios vulnerables antes de que un ataque real afecta a su negocio.
-ms.openlocfilehash: ccef127c4ce4d806ef9af04673b8c68d82ce9ec6
-ms.sourcegitcommit: 7c55721b51b2f321537a0cdad6644abf91996710
+ms.openlocfilehash: 9a7e1fd5327b4a764356df110c46ee7a9f496b53
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "26256445"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706444"
 ---
 # <a name="attack-simulator-in-office-365"></a>Simulator ataques en Office 365
 
@@ -26,7 +26,7 @@ ms.locfileid: "26256445"
   
 ## <a name="the-attacks"></a>Los ataques
 
-Actualmente, los tres tipos de simulaciones de ataque están disponibles:
+Tres tipos de simulaciones de ataque están actualmente disponibles:
   
 - [Mostrar los ataques de suplantación de identidad lanza de nombre](attack-simulator.md#spearphish)
     
@@ -66,7 +66,7 @@ Este ataque se centra en lo que le permite manipular que aparece el mensaje proc
   
 Puede crear el editor de HTML enriquecido directamente en el propio campo del **cuerpo del correo electrónico** o trabajar con código fuente HTML. Hay dos campos importantes para su inclusión en el código HTML: 
   
-1. En la seguridad &amp; centro de cumplimiento, elija **administración de amenaza** \> **simulador de ataque**.
+1. En la [seguridad &amp; centro de cumplimiento](https://security.microsoft.com), elija **administración de amenaza** \> **simulador de ataque**.
     
 2. Especifique un nombre de campaña significativa para el ataque o seleccione una plantilla. <br/>![Página de inicio de suplantación de identidad](media/5e93b3cc-5981-462f-8b45-bdf85d97f1b8.jpg)
   
@@ -96,7 +96,7 @@ Este ataque se centra en lo que le permite especificar una contraseña común co
   
 ### <a name="to-simulate-a-password-spray-attack"></a>Para simular un ataque de contraseña spray
 
-1. En la seguridad &amp; centro de cumplimiento, elija **administración de amenaza** \> **simulador de ataque**.
+1. En la [seguridad &amp; centro de cumplimiento](https://security.microsoft.com), elija **administración de amenaza** \> **simulador de ataque**.
     
 2. Especifique un nombre de campaña significativa para el ataque.
     
@@ -112,7 +112,7 @@ Un ataque de contraseña por fuerza bruta contra una organización se utiliza no
   
 ### <a name="to-simulate-a-brute-force-password-attack"></a>Para simular un ataque de contraseña por fuerza bruta
 
-1. En la seguridad &amp; centro de cumplimiento, elija **administración de amenaza** \> **simulador de ataque**.
+1. En la [seguridad &amp; centro de cumplimiento](https://security.microsoft.com), elija **administración de amenaza** \> **simulador de ataque**.
     
 2. Especifique un nombre de campaña significativa para el ataque.
     

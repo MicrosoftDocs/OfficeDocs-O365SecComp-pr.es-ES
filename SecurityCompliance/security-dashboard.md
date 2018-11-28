@@ -3,7 +3,7 @@ title: Información general del panel de seguridad
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 09/05/2018
+ms.date: 11/27/2018
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -13,16 +13,16 @@ search.appverid:
 - MOE150
 ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 description: Usar el nuevo panel de seguridad para revisar el estado de protección de amenaza de Office 365 y ver y actuar en las alertas de seguridad.
-ms.openlocfilehash: d124ce07fbd3eba633e8c1e844ef3f83fc8fd04f
-ms.sourcegitcommit: e0c6f99d5514d8da8a70d9bd3616d1a1c0851254
+ms.openlocfilehash: d4dd20d5ce456bfca391925786a5cc02787dee54
+ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/13/2018
-ms.locfileid: "25552368"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "26706284"
 ---
 # <a name="security-dashboard-overview"></a>Información general del panel de seguridad
 
-La seguridad &amp; centro de cumplimiento permite a su organización administrar la protección de datos y cumplimiento de normas. A partir de marzo de 2018, la seguridad &amp; un nuevo panel de seguridad que se puede usar para revisar el estado de protección de amenaza y ver y actuar en las alertas de seguridad sobre las características de centro de cumplimiento. 
+La [seguridad &amp; centro de cumplimiento](go-to-the-securitycompliance-center.md) permite a su organización administrar la protección de datos y cumplimiento de normas. A partir de marzo de 2018, la seguridad &amp; un nuevo panel de seguridad que se puede usar para revisar el estado de protección de amenaza y ver y actuar en las alertas de seguridad sobre las características de centro de cumplimiento. 
   
 Vea el vídeo para obtener una visión general y, a continuación, lea este artículo para obtener más información.
   
@@ -41,7 +41,7 @@ Dependiendo de lo que incluye la suscripción de Office 365 de su organización,
 Para ver el panel de seguridad, en la [Office 365 seguridad &amp; centro de cumplimiento](go-to-the-securitycompliance-center.md), vaya a **administración de amenaza** \> **panel**.
   
 > [!NOTE]
-> Debe ser un administrador global Office 365, la Administrador de seguridad o el lector de seguridad para ver el panel de seguridad. Vea [permisos en la seguridad de Office 365 &amp; centro de cumplimiento](permissions-in-the-security-and-compliance-center.md). 
+> Debe ser un administrador global de Office 365, un administrador de seguridad o un lector de seguridad para ver el panel de seguridad. Vea [permisos en la seguridad de Office 365 &amp; centro de cumplimiento](permissions-in-the-security-and-compliance-center.md). 
   
 ## <a name="threat-protection-status"></a>Estado de protección de amenaza
 
@@ -80,6 +80,6 @@ Y, si la suscripción a Office 365 de su organización incluye [Información sob
   
 [Protección contra amenazas avanzada de Office 365](office-365-atp.md)
   
-[Office 365 Threat Intelligence](office-365-ti.md)
+[Inteligencia sobre amenazas de Office 365](office-365-ti.md)
   
 
