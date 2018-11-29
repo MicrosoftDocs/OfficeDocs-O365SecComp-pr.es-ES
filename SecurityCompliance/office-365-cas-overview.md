@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 81f0ee9a-9645-45ab-ba56-de9cbccab475
 description: 'Seguridad de la aplicación en la nube Office 365 proporciona entendimiento actividad sospechosa en Office 365 por lo que puede investigar situaciones en las que son potencialmente problemáticas y, si es necesario, tomar medidas para resolver problemas de seguridad. '
-ms.openlocfilehash: b146512c22cbe86ce3aef95c5916de6959341578
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 722c305288798b38ac125a693d9d150446458324
+ms.sourcegitcommit: cd452513d8761b2e50b4f9b6cf29422d146307ec
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706404"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "26864561"
 ---
 # <a name="overview-of-office-365-cloud-app-security"></a>Introducción a Office 365 Cloud App Security
   
@@ -47,7 +47,7 @@ Puede obtener el portal de seguridad de la aplicación de nube de Office 365 a t
     
 ## <a name="policies"></a>Policies
 
-Office 365 funciona la seguridad de la aplicación en la nube con las directivas que se definen para su organización. Con la seguridad de la aplicación de nube de Office 365, su organización obtiene 10 directivas de detección de anomalías predefinidos y varias plantillas de directivas de actividad. Estas directivas están diseñadas para detectar anomalías general, identificar a los usuarios el registro de una dirección IP arriesgada, detectar actividades ransomware, detectar actividades de administrador de direcciones IP de no corporativos y mucho más.
+Office 365 funciona la seguridad de la aplicación en la nube con las directivas que se definen para su organización. Con la seguridad de la aplicación de nube de Office 365, su organización obtiene muchas de las directivas de detección de anomalías predefinidos y varias plantillas de directivas de actividad. Estas directivas están diseñadas para detectar anomalías general, identificar a los usuarios el registro de una dirección IP arriesgada, detectar actividades ransomware, detectar actividades de administrador de direcciones IP de no corporativos y mucho más.
   
 ![En el portal de entidades de certificación, elija Control \> plantillas para ver o crear plantillas de directiva](media/88f615b4-aa8a-480c-b239-323dfcd628e1.png)
   

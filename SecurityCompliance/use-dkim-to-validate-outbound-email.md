@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 description: 'Resumen: Este artículo describe cómo usa DomainKeys Identified Mail (DKIM) con Office 365 para asegurarse de que los sistemas de correo electrónico de destino confían en los mensajes enviados desde su dominio personalizado.'
-ms.openlocfilehash: 6f09a75a96abda54e69833a8be14811c8113b5b1
-ms.sourcegitcommit: 75b985b2574f4be70cf352498ea300b3d99dd338
+ms.openlocfilehash: 67652fc11a42263b2666554021c018df01ad33cd
+ms.sourcegitcommit: bf628da123a89d9422e8cff02165b1e2d35dfe12
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "26255825"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "26872008"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain-in-office-365"></a>Usar DKIM para validar el correo electrónico saliente enviado desde su dominio personalizado en Office 365
 
@@ -107,7 +107,7 @@ Donde:
     contoso.com.  3600  IN  MX   5 contoso-com.mail.protection.outlook.com
     ```
 
-- _initialDomain_ es el dominio que usó al registrarse para Office 365. Para obtener información sobre cómo determinar el dominio inicial, vea [Preguntas más frecuentes de dominios](https://support.office.com/article/1272bad0-4bd4-4796-8005-67d6fb3afc5a#bkmk_whydoihaveanonmicrosoft.comdomain).
+- _initialDomain_ es el dominio que utiliza cuando se suscribió para Office 365. Dominios iniciales siempre finalizan en onmicrosoft.com. Para obtener información acerca de cómo determinar su dominio inicial, consulte [Preguntas más frecuentes de dominios](https://support.office.com/article/1272bad0-4bd4-4796-8005-67d6fb3afc5a#bkmk_whydoihaveanonmicrosoft.comdomain).
     
 Por ejemplo, si tiene un dominio inicial de cohovineyardandwinery.onmicrosoft.com y dos dominios personalizados cohovineyard.com y cohowinery.com, necesitará configurar dos registros CNAME para cada dominio adicional, un total de cuatro registros CNAME.
   
