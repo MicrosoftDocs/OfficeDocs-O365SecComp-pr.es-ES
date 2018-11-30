@@ -14,19 +14,19 @@ search.appverid:
 - MOE150
 ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 description: Crear directivas de alerta en la seguridad de Office 365 &amp; centro de cumplimiento para supervisar las posibles amenazas, la pérdida de datos y el problema de permisos. A continuación, puede ver y administrar las alertas que se generan cuando los usuarios realizan actividades que coinciden con las condiciones de una directiva de alerta.
-ms.openlocfilehash: 99025d4a3064e845358ad542d0bfd456d7669dcd
-ms.sourcegitcommit: a07b91723bae9ecee2cb092bfbc5b208b30b11a1
+ms.openlocfilehash: 9aea5660f6a890afb06c5bd04db812d6aeacd17a
+ms.sourcegitcommit: 95a3ce0bc5b0f3782fc4ef22a70f5ef1dc879ee3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "25793575"
+ms.lasthandoff: 11/30/2018
+ms.locfileid: "26988439"
 ---
 # <a name="alert-policies-in-the-office-365-security-amp-compliance-center"></a>Las directivas de la seguridad de Office 365 de la alerta &amp; centro de cumplimiento
 
 Puede usar la nueva directiva de alerta y herramientas de alerta de escritorio en la seguridad de Office 365 &amp; centro de cumplimiento para crear directivas de alerta y, a continuación, ver las alertas que se generan cuando los usuarios realizan actividades que coinciden con las condiciones de una directiva de alerta. Alerta de directivas se basan en y expanden la funcionalidad de alertas de actividad según lo que le permite clasificar la directiva de alerta, aplicar la directiva a todos los usuarios de su organización, establecer un nivel de umbral cuando se desencadena una alerta y decidir si desea recibir correo electrónico o no notificaciones. También hay una página de **alertas de vista** de la seguridad &amp; centro de cumplimiento, donde puede ver y filtrar las alertas, establecer un estado de la alerta que le ayudarán a administrar alertas y, a continuación, descartar las alertas después de haber solucionado o resuelto el incidente subyacente. También nos hemos expandido el tipo de eventos que se pueden crear alertas para. Por ejemplo, puede crear directivas de alerta para realizar un seguimiento de los incidentes de pérdida de datos y la actividad de malware. Por último, también hemos incluido un número de directivas de alerta predeterminadas que le ayudan a supervisar asignar privilegios de administrador en Exchange Online, ataques de malware y poco habituales niveles de eliminaciones de archivos y uso compartido externo. 
   
 > [!NOTE]
-> Directivas de alerta están disponibles para las organizaciones con una empresa de Office 365 y planes de Office 365 nos gobierno E1/G1, E3/G3 o E5/G5. Sin embargo, algunas funciones avanzadas sólo está disponible para organizaciones con un planes E5/G5, o para las organizaciones que tienen un G1/E1 o E3/G3 suscripción y una suscripción de complemento de Office 365 amenaza inteligencia o cumplimiento avanzadas de Office 365. En este tema, se resaltará la funcionalidad que requiere suscripción E5/G5 o el complemento. 
+> Directivas de alerta están disponibles para las organizaciones con Office 365 Enterprise o Office 365 nos gobierno E1/G1, E3/G3 o suscripción E5/G5. Sin embargo, algunas funciones avanzadas sólo está disponible para las organizaciones con una suscripción E5/G5, o para las organizaciones que tienen un G1/E1 o E3/G3 suscripción y una suscripción de complemento de Office 365 amenaza inteligencia o cumplimiento avanzadas de Office 365. En este tema, se resaltará la funcionalidad que requiere una suscripción E5/G5 o el complemento. Tenga en cuenta también que las directivas de alerta están disponibles en Office 365 GCC, GCC alta y entornos de gobierno de DoD de Estados Unidos.
   
 ## <a name="how-alert-policies-work"></a>Cómo funciona alert trabajo de directivas
 
@@ -57,7 +57,7 @@ Una directiva de alerta consta de los siguientes parámetros y condiciones.
 - **Realiza un seguimiento de actividad de la alerta** - crear una directiva para realizar un seguimiento de una actividad o en algunos casos, algunas actividades relacionadas, tales un uso compartido de un archivo con un usuario externo por compartirla, asignar permisos de acceso o la creación de un vínculo anónimo. Cuando un usuario realiza la actividad definida por la directiva, se activará una alerta en función de la configuración de umbral de alerta.
     
     > [!NOTE]
-    > Las actividades que puede realizar un seguimiento dependen de la suscripción a Office 365 Enterprise de su organización. En general, las actividades relacionadas con las campañas de malware y ataques de suplantación de identidad requieren una suscripción E5 o una suscripción a E1 o E3 con una suscripción de complemento de inteligencia de amenaza. 
+    > Las actividades que puede realizar un seguimiento dependen de plan de Office 365 Enterprise u Office 365 gobierno de Estados Unidos de la organización. En general, las actividades relacionadas con las campañas de malware y ataques de suplantación de identidad requieren una suscripción E5/G5 o una suscripción G1/E1 o E3/G3 con una suscripción de complemento de inteligencia de amenaza. 
   
 - **Condiciones de actividad** - para la mayoría de las actividades, puede definir condiciones adicionales que se deben cumplir para que se desencadena una alerta. Condiciones comunes incluyen IP direcciones (para que una alerta se desencadena cuando el usuario realiza la actividad en un equipo con una dirección IP específica o dentro de un intervalo de direcciones IP), si se desencadena una alerta si un usuario específico o a los usuarios realizan esa actividad y si la actividad se realiza en un nombre de archivo específico o la dirección URL. También puede configurar una condición que se desencadene una alerta cuando la actividad se lleva a cabo por cualquier usuario de la organización. Tenga en cuenta que las condiciones disponibles dependen de la actividad seleccionada.
     
@@ -68,7 +68,7 @@ Una directiva de alerta consta de los siguientes parámetros y condiciones.
     Si selecciona la opción basada en la actividad inusual, Office 365 establece un valor de línea de base que define la frecuencia normal para la actividad seleccionada; se tarda hasta 7 días para establecer una línea base, durante el cual no se pueden generar alertas. Una vez establecida la línea de base, se activará una alerta cuando la frecuencia de la actividad hace un seguimiento mediante la directiva de alerta en gran medida supera el valor de la línea de base. Puede establecer una línea base para las actividades relacionadas con la auditoría (por ejemplo, las actividades de archivos y carpetas), en función de un solo usuario o en función de todos los usuarios de la organización; para las actividades relacionadas con el malware, puede establecer una línea base en función de una familia de malware única, un solo destinatario o todos los mensajes en la organización.
     
     > [!NOTE]
-    > La capacidad para configurar directivas de alerta en función de un umbral o en función de una actividad inusual requiere una suscripción E5 o una suscripción a E1 o E3 con una suscripción de complemento de inteligencia de amenaza o cumplimiento avanzada. Las organizaciones con una suscripción a E1 y E3 sólo pueden crear una directiva de alerta donde se activará una alerta cada vez que se produce una actividad. 
+    > La capacidad para configurar la alerta de directivas en función de un umbral o en función de una actividad inusual requiere una suscripción E5/G5, o un G1/E1 o E3/G3 suscripción con una información sobre amenazas o suscripción de complemento de cumplimiento avanzadas. Las organizaciones con una suscripción a E1/G1 y E3/G3 sólo pueden crear una directiva de alerta donde se activará una alerta cada vez que se produce una actividad. 
   
 - **Categoría de alerta** - favorecer el seguimiento y la administración de las alertas generadas por una directiva, puede asignar una de las siguientes categorías a una directiva.
     
@@ -97,9 +97,9 @@ Una directiva de alerta consta de los siguientes parámetros y condiciones.
 
 Office 365 proporciona directivas de alerta integradas que ayudan a identificar infracción de permisos de administración de Exchange, la actividad de malware y los riesgos de gobierno de datos. En la página de **directivas de alerta** , el nombre de estas directivas integradas están en negrita y el tipo de directiva se define como **sistema**. Estas directivas están activadas de forma predeterminada. Puede desactivar estas directivas (o volver a aquel en), configurar una lista de destinatarios para enviar notificaciones de correo electrónico a y establecer un límite de notificación diaria. Las demás configuraciones de estas directivas no pueden editarse.
   
-En la siguiente tabla se enumera y se describe las directivas de alerta predeterminados disponibles e indica los planes de Office 365 Enterprise y Govenment 365 de Office nos necesarios para cada uno de ellos. Tenga en cuenta que algunas directivas de alerta predeterminadas están disponibles si su organización tiene la suscripción de complemento apropiado además de una suscripción G1/E1 o E3/G3. 
+En la siguiente tabla se enumera y se describe las directivas de alerta predeterminados disponibles e indica los planes de Office 365 Enterprise y Office 365 gobierno de Estados Unidos necesarios para cada uno de ellos. Tenga en cuenta que algunas directivas de alerta predeterminadas están disponibles si su organización tiene la suscripción de complemento apropiado además de una suscripción G1/E1 o E3/G3. 
   
-|**Directiva de alerta predeterminada**|**Descripción**|**Planes de Office 365**|
+|**Directiva de alerta predeterminada**|**Descripción**|**Suscripción a Office 365 Enterprise**|
 |:-----|:-----|:-----|
 |**Creación de regla de reenvío y redireccionamiento** <br/> |Genera una alerta cuando una persona de su organización crea una regla de bandeja de entrada para su buzón que reenvía o redirige los mensajes a otra cuenta de correo electrónico. Esta directiva sólo realiza un seguimiento de las reglas de bandeja de entrada que se crean utilizando Outlook Web App o Exchange Online PowerShell. Esta directiva tiene una configuración de gravedad **baja** . Para obtener más información de uso de las reglas de bandeja de entrada para reenviar y redirigir el correo electrónico en Outlook Web App, vea [usar las reglas de Outlook Web App para reenviar mensajes automáticamente a otra cuenta](https://support.office.com/article/1433e3a0-7fb0-4999-b536-50e05cb67fed).<br/> |G1/E1, E3/G3 o E5/G5  <br/> |
 |**búsqueda de exhibición de documentos electrónicos iniciado o exportados** <br/> |Genera una alerta cuando alguien utiliza la herramienta de búsqueda de contenido en el centro de cumplimiento y seguridad. Se desencadena una alerta cuando se llevan a cabo las siguientes actividades de búsqueda de contenido:<br/><br/>• Una búsqueda de contenido se ha iniciado<br/>• Se exportan los resultados de una búsqueda de contenido<br/>• Se exporta un informe de búsqueda de contenido<br/><br/>También están activadas las alertas cuando se llevan a cabo las actividades de búsqueda de contenido anterior en asociación con un caso de exhibición de documentos electrónicos. Esta directiva tiene una configuración de gravedad **Media** . Para obtener más información acerca de las actividades de búsqueda de contenido, consulte [Buscar actividades de exhibición de documentos electrónicos en Office 365 registro de auditoría](search-for-ediscovery-activities-in-the-audit-log.md#ediscovery-activities).<br/> |G1/E1, E3/G3 o E5/G5  <br/> |
@@ -134,11 +134,11 @@ Puede usar los siguientes filtros para ver un subconjunto de todas las alertas e
 - **Gravedad** - este filtro se usa para mostrar las alertas que se le asigna una gravedad específica.
     
 - **Categoría** - este filtro se usa para mostrar las alertas desde una o varias categorías de alerta.
-    
+
+- **Origen** - este filtro se usa para mostrar las alertas desencadenadas por las directivas de alerta en la seguridad & Centro de cumplimiento o alertas desencadenadas por las directivas de seguridad de la aplicación de nube de Office 365, o ambos. Para obtener más información acerca de las alertas de seguridad de la aplicación de nube de Office 365, vea la sección de [alertas de seguridad de la aplicación de visualización de la nube](#viewing-cloud-app-security-alerts) .
 
   
 ## <a name="managing-alerts"></a>Administrar alertas
-<a name="managingalerts"> </a>
 
 Después de que las alertas se han generado y que se muestra en la página **Ver avisos** en la seguridad &amp; centro de cumplimiento, puede detectar, investigar y resolverlos conflictos. A continuación presentamos algunas tareas que puede realizar para administrar las alertas. 
   
@@ -162,6 +162,19 @@ Después de que las alertas se han generado y que se muestra en la página **Ver
     
 - **Resolver las alertas** - puede marcar una alerta como resuelto en la página emergente para una alerta (que establece el estado de la alerta a **resuelto**). A menos que cambie el filtro, no se muestran alertas resueltos en la página **Ver avisos** . 
     
-
+## <a name="viewing-cloud-app-security-alerts"></a>Visualización de las alertas de seguridad de la aplicación en la nube
   
+Las alertas desencadenadas por las directivas de seguridad de la aplicación de Office 365 en la nube ahora se muestran en la página **Ver avisos** en el centro de cumplimiento y seguridad. Esto incluye las alertas desencadenadas por las directivas de la actividad y que se desencadenan por las directivas de detección de anomalías de seguridad de la aplicación de nube de Office 365. Esto significa que puede ver todas las alertas en el centro de cumplimiento y seguridad. Tenga en cuenta que sólo está disponible para las organizaciones con una suscripción a Office 365 Enterprise E5 o Office 365 nos gobierno G5 seguridad de la aplicación de nube de Office 365. Para obtener más información, vea [Información general de Office 365 en la nube seguridad de la aplicación](office-365-cas-overview.md).
 
+Además, las organizaciones que tienen la seguridad de la aplicación de la nube de Microsoft como parte de una empresa movilidad + seguridad E5 suscripción o como un servicio independiente también puede ver alertas de seguridad de la aplicación en la nube que están relacionadas con aplicaciones de Office 365 y servicios en la seguridad & Centro de cumplimiento.
+
+Para mostrar sólo alertas de seguridad de la aplicación en la nube en el centro de cumplimiento y seguridad, use el filtro de **origen** y seleccione la **Seguridad de la aplicación en la nube**.
+
+![Use el filtro de origen para mostrar sólo alertas de seguridad de la aplicación en la nube](media/FilterCASAlerts.png)
+
+Al igual que una alerta activada por una directiva de alerta de seguridad & Centro de cumplimiento, puede hacer clic en una alerta de seguridad de la aplicación en la nube para mostrar una página emergente con detalles acerca de la alerta. La alerta incluye un vínculo para ver los detalles y administrar la alerta en el portal de seguridad de la aplicación en la nube y un vínculo a la directiva de seguridad de la aplicación en la nube correspondiente que desencadenan la alerta. Ver la [acción de revisión y tomar las alertas de seguridad de la aplicación de nube de Office 365](review-office-365-cas-alerts.md).
+
+![Detalles de la alerta de contienen vínculos al portal de seguridad de la aplicación en la nube](media/CASAlertDetail.png)
+
+> [!IMPORTANT]
+> Cambiar el estado de una alerta de seguridad de la aplicación en la nube en el centro de cumplimiento y seguridad no actualizará el estado de resolución de la misma alerta en el portal de seguridad de la aplicación en la nube. Por ejemplo, si marca el estado de la alerta como **resuelto** en el centro de cumplimiento y seguridad, no ha cambiado el estado de la alerta en el portal de seguridad de la aplicación en la nube. Para resolver o descartar una alerta de seguridad de la aplicación en la nube, administrar la alerta en el portal de seguridad de la aplicación en la nube.
