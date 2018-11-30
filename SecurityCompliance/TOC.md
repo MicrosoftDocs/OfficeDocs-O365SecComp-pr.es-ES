@@ -265,7 +265,8 @@
 ## [Integración de servidor SIEM](siem-server-integration.md)
 
 # Soluciones de cumplimiento normativo
-## [Usar el Administrador de cumplimiento para satisfacer los requisitos normativos y de protección de datos al usar los servicios de nube de Microsoft](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
+## [Empezar a trabajar con el Portal de confianza del servicio de Microsoft](get-started-with-service-trust-portal.md)
+## [Usar el Administrador de cumplimiento para satisfacer los requisitos normativos y de protección de datos al usar los Servicios en la nube de Microsoft](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
 ## [Administrar solicitudes de asunto de datos RGPD con la herramienta de casos DSR](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)
 ## [Information Protection de Office 365 para RGPD](office-365-information-protection-for-gdpr.md)
 ### [Introducción: Protección de Office 365 para RGPD](office-365-info-protection-for-gdpr-overview.md)
