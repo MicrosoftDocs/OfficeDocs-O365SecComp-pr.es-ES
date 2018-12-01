@@ -233,6 +233,7 @@
 ## [Activar o desactivar la búsqueda de registros de auditoría](turn-audit-log-search-on-or-off.md)
 ## [Habilitar la auditoría de buzones de correo](enable-mailbox-auditing.md)
 ## [Propiedades detalladas del registro de auditoría](detailed-properties-in-the-office-365-audit-log.md)
+## [Usar el registro de auditoría para solucionar escenarios comunes](auditing-troubleshooting-scenarios.md)
 ## [Usar el uso compartido de auditoría en el registro de auditoría](use-sharing-auditing.md)
 ## [Buscar actividades de eDiscovery en el registro de auditoría](search-for-ediscovery-activities-in-the-audit-log.md)
 # [Supervisión de seguridad y cumplimiento]()
