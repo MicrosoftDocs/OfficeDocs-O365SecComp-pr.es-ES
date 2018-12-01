@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Usar el centro de cumplimiento y seguridad de Office 365 para buscar el registro de auditoría unificado para ver la actividad de usuario y Administrador de la organización de Office 365. '
-ms.openlocfilehash: 39b3d6438d4680fe7a50f831bbd2d5667c4acffe
-ms.sourcegitcommit: a138cf89095ab0d2bd07caf82b3d48149002c1fa
+ms.openlocfilehash: 95516cd88677955137e51401113844375cb1e082
+ms.sourcegitcommit: c34f1a0d560117153fc9a7b8da8994bc6fc53791
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "26626156"
+ms.lasthandoff: 11/30/2018
+ms.locfileid: "27118146"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security--compliance-center"></a>Buscar en el registro de auditoría en el centro de cumplimiento y seguridad de Office 365
 
@@ -169,7 +169,7 @@ Aquí es el proceso para buscar en el registro de auditoría en Office 365.
   
     c. los resultados de **los usuarios** , haga clic en este cuadro y, a continuación, seleccione uno o varios usuarios para mostrar búsqueda. Las entradas de registro de auditoría para la actividad seleccionada realizado por los usuarios que seleccione en este cuadro se muestran en la lista de resultados. Deje este cuadro en blanco para devolver las entradas para todos los usuarios (y las cuentas de servicio) en la organización. 
     
-    d. el **archivo o carpeta** escriba algunos o todos los de un nombre de archivo o carpeta para buscar la actividad relacionada con el archivo de la carpeta que contiene la palabra clave especificada. También puede especificar una dirección URL de un archivo o carpeta. Si utiliza una dirección URL, asegúrese de que el tipo de la ruta de acceso de dirección URL completa o si sólo tiene que escribir una parte de la dirección URL, no incluya espacios ni caracteres especiales. 
+    d. **archivo, carpeta o sitio** escriba algunos o todos los de un nombre de archivo o carpeta para buscar la actividad relacionada con el archivo de la carpeta que contiene la palabra clave especificada. También puede especificar una dirección URL de un archivo o carpeta. Si utiliza una dirección URL, asegúrese de que el tipo de la ruta de acceso de dirección URL completa o si sólo tiene que escribir una parte de la dirección URL, no incluya espacios ni caracteres especiales. 
     
     Deje este cuadro en blanco para devolver las entradas de todos los archivos y carpetas en la organización.
     
