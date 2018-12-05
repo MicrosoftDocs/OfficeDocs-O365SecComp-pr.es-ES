@@ -3,7 +3,7 @@ title: Use la herramienta de recopilación de PST para buscar, copiar y eliminar
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 10/18/2017
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,14 +12,17 @@ ms.collection: Strat_O365_IP
 search.appverid: MOE150
 ms.assetid: 7a150c84-049c-4a9c-8c91-22355b35f2a7
 description: Use la herramienta de recopilación de PST de Microsoft para buscar la red de su organización para obtener un inventario de los archivos PST que están dispersos por la organización. Después de encontrar los archivos PST, puede usar la herramienta de recopilación de PST para copiarlos en una ubicación central para que pueda importar a Office 365.
-ms.openlocfilehash: 0537a65a32fa25704045bd587cb20f9eee13f628
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+ms.openlocfilehash: 34395eee7776d8bff1ddccb7fed5b683e97c02c7
+ms.sourcegitcommit: c59a082dca6593d0e35e58124ee6ba240547bfa5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038133"
+ms.lasthandoff: 12/05/2018
+ms.locfileid: "27154216"
 ---
 # <a name="use-the-pst-collection-tool-to-find-copy-and-delete-pst-files-in-your-organization"></a>Use la herramienta de recopilación de PST para buscar, copiar y eliminar los archivos PST en su organización
+
+> [!IMPORTANT]
+> La herramienta de recopilación de PST que se describen en este artículo no es compatible con ningún servicio o programa de soporte estándar de Microsoft. La herramienta se proporciona tal cual sin garantía de ningún tipo. Microsoft renuncia a todas las garantías implícitas incluidas, sin limitación, cualquier las garantías implícitas de comerciabilidad o de idoneidad para un fin determinado. Todo el riesgo que pueda surgir por el uso o el rendimiento de la herramienta y documentación permanece con usted. En ningún caso Microsoft, sus autores o cualquier otro implicado en la creación, producción o entrega de la herramienta de serán responsables de los daños índole (incluidos, pero sin limitarse a, daños por pérdida de beneficios empresariales, interrupción del negocio, pérdida de información de la empresa, o en otras pérdidas de carácter económico) derivado del uso o la incapacidad de uso de la herramienta o la documentación, aunque Microsoft haya sido notificado de la posibilidad de dichos daños.
 
 Puede usar la herramienta de recopilación de PST de Microsoft para buscar en la red de su organización para los archivos PST. La herramienta le ayudará a obtener un inventario de los archivos PST que están dispersos por la organización. Después de encontrar los archivos PST, puede usar la herramienta de recopilación de PST para copiarlos en una ubicación central. Necesidad de archivos pst en un uno lugar, a continuación, le permite importarlos a Exchange Online buzones (o un solo buzón de Exchange Online), donde, a continuación, puede aplicar el amplio conjunto de características de cumplimiento en Office 365. Esto incluye la importación de archivos PST al archivo que contiene los buzones de correo, busca mensajes específicos en los archivos PST que ha importado mediante el uso de las herramientas de búsqueda de exhibición de documentos electrónicos, retención de mensajes mediante el uso de exhibición de documentos electrónicos de los usuarios y las directivas de retención de Office 365 y administración de la vida ciclo de estos mensajes mediante la mensajería registra las características de administración de Exchange en línea. Una vez que esté seguro de que los archivos PST que recopilan se han importado correctamente a Office 365, puede usar la herramienta para eliminarlos de su ubicación original en la red. 
   
