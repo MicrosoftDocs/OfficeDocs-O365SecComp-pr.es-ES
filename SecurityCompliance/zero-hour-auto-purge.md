@@ -3,7 +3,7 @@ title: 'Purga automática cero horas: protección contra correo no deseado y mal
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 10/23/2018
+ms.date: 12/05/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,18 +15,18 @@ search.appverid:
 - MET150
 ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 description: Purgar cero horas automático (ZAP) es una característica de protección de correo electrónico que detecta los mensajes con el correo no deseado o malware que ya se han entregado a las bandejas de entrada de los usuarios y, a continuación, representa el contenido malintencionado inocua. ZAP ¿cómo esto depende del tipo de contenido malintencionado detectado.
-ms.openlocfilehash: ac181a7c57b4b16a952ff9c046edbff1380828d1
-ms.sourcegitcommit: 791d23e1c2dea622b6ef77a6e2bde32e1d31a41b
+ms.openlocfilehash: 1cf14051e91801a74a0d739c69900bb3f825b318
+ms.sourcegitcommit: 204fb0269b5c10b63941055824e863d77e3e9b02
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/06/2018
-ms.locfileid: "25999984"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "27180850"
 ---
 # <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>Purga automática cero horas: protección contra correo no deseado y malware
 
 ## <a name="overview"></a>Información general
 
-Purgar cero horas automático (ZAP) es una característica de protección de correo electrónico que detecta los mensajes con el correo no deseado o malware que ya se han entregado a las bandejas de entrada de los usuarios y, a continuación, representa el contenido malintencionado inocua. ZAP ¿cómo esto depende del tipo de contenido malintencionado detectado.
+Purgar cero horas automático (ZAP) es una característica de protección de correo electrónico que detecta los mensajes con phishing, spam o malware que ya se han entregado a las bandejas de entrada de los usuarios y, a continuación, representa el contenido malintencionado inocua. ¿Cómo ZAP hace esto depende del tipo de contenido malintencionado detectado; Puede que haya que hacerlo correo debido a contenido de correo, las direcciones URL o los datos adjuntos.
   
 ZAP está disponible con el valor predeterminado de Exchange Online Protection que se incluye con cualquier suscripción de Office 365 que contiene los buzones de Exchange Online.
 
@@ -39,7 +39,11 @@ ZAP está activado de forma predeterminada, pero se deben cumplir las condicione
 ## <a name="how-does-zap-work"></a>¿Cómo funciona ZAP?
 
 Las firmas de motor y malware contra correo no deseadas en las actualizaciones de Office 365 en tiempo real de manera diaria. Sin embargo, los usuarios aún es posible que obtenga malintencionados mensajes entregados a sus bandejas de entrada para una variedad de motivos, incluido si el contenido se weaponized después de que se envía a los usuarios. ZAP soluciona este problema mediante la supervisión de forma continua las actualizaciones de las firmas de correo no deseado y malware de Office 365. ZAP puede buscar y quitar mensajes entregados que ya están en las bandejas de entrada de los usuarios. 
+
 - Para el correo que se identifica como correo no deseado, ZAP mueve mensajes no leídos a la carpeta de correo electrónico no deseado de los usuarios. 
+
+- Para el correo que se identifica como correo no deseado, ZAP mueve los mensajes a la carpeta de correo electrónico no deseado de los usuarios, independientemente de si se ha leído el correo electrónico.
+
 - Para recién detectado malware, ZAP quita los datos adjuntos de mensajes de correo electrónico, independientemente de si se ha leído el correo electrónico. 
   
 La acción ZAP es transparente para el usuario del buzón; no se notifica sobre esto si se mueve un mensaje de correo electrónico.
@@ -49,8 +53,11 @@ Permitir listas, [reglas de flujo de correo](https://go.microsoft.com/fwlink/p/?
 ## <a name="to-review-or-set-up-a-spam-filter-policy"></a>Para revisar o configurar una directiva de filtro de spam
   
 1. Vaya a [https://protection.office.com](https://protection.office.com) e iniciar sesión con su cuenta de trabajo o escuela para Office 365.
+
 2. En **administración de amenaza**, elija **contra correo no deseado**.
+
 3. Revise la configuración estándar. 
+
 4. Si desea personalizar la configuración, seleccione la ficha **personalizado** y activar la **configuración personalizada**. Editar la configuración y si lo desea, elija **+ crear una directiva** para agregar una nueva directiva. 
     
 ## <a name="to-see-if-zap-moved-your-message"></a>Para ver si ZAP mueve el mensaje

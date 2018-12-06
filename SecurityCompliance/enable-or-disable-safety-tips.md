@@ -3,7 +3,7 @@ title: Habilitar o deshabilitar las sugerencias de seguridad en Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 10/6/2017
+ms.date: 12/05/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: f09668bd-fe1a-4c01-89e3-e88c370e66c7
 description: Indica cómo habilitar y deshabilitar las sugerencias de seguridad en los mensajes de correo electrónico de los administradores de Office 365 y elevación de privilegios.
-ms.openlocfilehash: 3a8257f9d34ec5def54e2b9c9e919172366d023f
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 8e5d8bf1d2f831b5d74ca3accd8b434519bfeaab
+ms.sourcegitcommit: 204fb0269b5c10b63941055824e863d77e3e9b02
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22536298"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "27180860"
 ---
 # <a name="enable-or-disable-safety-tips-in-office-365"></a>Habilitar o deshabilitar las sugerencias de seguridad en Office 365
 
@@ -75,7 +75,7 @@ Los administradores pueden utilizar Exchange Online PowerShell para habilitar o 
   Set-HostedContentFilterPolicy -Identity "policy name " -InlineSafetyTipsEnabled <$true|$false>
   ```
 
-    Donde:
+Donde:
     
   -  *nombre de la directiva* es el nombre de la directiva que desea modificar, por ejemplo **predeterminada**.
     
@@ -89,7 +89,7 @@ Los administradores pueden utilizar Exchange Online PowerShell para habilitar o 
   PS C:\> Set-HostedContentFilterPolicy -Identity "default" -InlineSafetyTipsEnabled $false
   ```
 
-    Para obtener más información acerca de este cmdlet, vea [Set-HostedContentFilterPolicy](https://technet.microsoft.com/library/jj200781.aspx).
+Para obtener más información acerca de este cmdlet, vea [Set-HostedContentFilterPolicy](https://technet.microsoft.com/library/jj200781.aspx).
     
 ## <a name="still-need-help"></a>¿Aún necesita ayuda?
 <a name="pshellsafetytip"> </a>

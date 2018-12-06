@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
 description: 'Como administrador, puede ver, liberar y notificar mensajes en cuarentena de falsos positivos en Office 365. Puede configurar directivas para que Office 365 filtra los mensajes y los envía a cuarentena por varias razones: debido a que se han identificado como spam, masiva, suplantación de identidad, malware, o porque coincide con una regla de flujo de correo. '
-ms.openlocfilehash: 67fb4ac8e3a5fd443efb04d4f74e9844d2fa8c86
-ms.sourcegitcommit: f7fff49ae0b1c3056faa58d73c1070cb4e638fbf
+ms.openlocfilehash: 1a0aa0b3f08b18d81b6e1e025e5672ab8fcfafa4
+ms.sourcegitcommit: 204fb0269b5c10b63941055824e863d77e3e9b02
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "25018884"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "27180890"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-administrator-in-office-365"></a>Administrar mensajes en cuarentena y los archivos como un administrador en Office 365
 
@@ -65,8 +65,7 @@ Una vez encontrado un mensaje en cuarentena específico, haga clic en el mensaje
 
 1. Con una cuenta de trabajo o escuela que tiene privilegios de administrador global de la organización de Office 365, inicie sesión en Office 365 y [vaya a la seguridad y el centro de cumplimiento](go-to-the-securitycompliance-center.md).
     
-2. A la izquierda, expanda **Administración de amenaza**, elija la **revisión**y, a continuación, elija la **cuarentena**. 
-    
+2. A la izquierda, expanda **Administración de amenaza**, elija la **revisión**y, a continuación, elija la **cuarentena**. <br/>
     > [!TIP]
     > Para ir directamente a la página de **cuarentena** en la seguridad &amp; centro de cumplimiento, use esta dirección URL: >[https://protection.office.com/?hash=/quarantine](https://protection.office.com/?hash=/quarantine)
   
@@ -83,36 +82,27 @@ Dependiendo de la configuración, puede haber una gran cantidad de mensajes en c
   
 1. En la página de **cuarentena** , asegúrese de que la fila superior de filtros está configurada para mostrar mensajes o archivos según corresponda: 
     
-  - Para buscar archivos, defina los filtros para mostrar **los archivos** en cuarentena debido a **malware**.
-    
+      - Para buscar archivos, defina los filtros para mostrar **los archivos** en cuarentena debido a **malware**.<br/>
     Para los archivos en cuarentena, la página muestra en cuarentena todos los archivos, no sólo su propios, independientemente de qué indicar a TI para mostrar.
     
-  - Para buscar mensajes en cuarentena, establecer filtros para mostrar **todos los** o **sólo mis** **correo electrónico**. Para el último filtro elegir al tipo de mensaje en cuarentena que busca. Puede buscar los mensajes en cuarentena que se hayan identificado como **spam**, para los mensajes que coincidieron con un flujo de correo o **regla de transporte**, correo **masivo** , correo de **suplantación de identidad** o correo electrónico que contiene el **malware**.
+      - Para buscar mensajes en cuarentena, establecer filtros para mostrar **todos los** o **sólo mis** **correo electrónico**. Para el último filtro elegir al tipo de mensaje en cuarentena que busca. Puede buscar los mensajes en cuarentena que se hayan identificado como **spam**, para los mensajes que coincidieron con un flujo de correo o **regla de transporte**, correo **masivo** , correo de **suplantación de identidad** o correo electrónico que contiene el **malware**.
     
-2. En **los resultados de la ordenación por**, seleccione el filtro o los filtros que desea utilizar para buscar en las listas de lista desplegable. Las opciones varían en función de si está buscando archivos o mensajes. No se admite caracteres comodín en los campos de búsqueda en este momento.
+2. En **los resultados de la ordenación por**, seleccione el filtro o los filtros que desea utilizar para buscar en las listas de lista desplegable. Las opciones varían en función de si está buscando archivos o mensajes. No se admite caracteres comodín en los campos de búsqueda en este momento.<br/><br/>Para los archivos y mensajes, puede elegir filtrar por la fecha en el mensaje o archivo se envía a cuarentena. Puede especificar la fecha o un intervalo de fechas, incluida la hora. También puede filtrar los resultados de búsqueda por la fecha de caducidad en la que el archivo o el mensaje se eliminará de la cuarentena, o puede usar una combinación de filtros. Para buscar por fecha de caducidad, elija **filtro avanzado**. En **Expires**, puede seleccionar los mensajes que se eliminará de la cuarentena en las próximas 24 horas ( **hoy**), en las próximas 48 horas ( **2 siguiente días**), dentro de la semana siguiente ( **siguiente 7 días**), o puede seleccionar un intervalo de tiempo personalizado.<br/><br/>Para los mensajes, tiene las siguientes opciones adicionales:
     
-    Para los archivos y mensajes, puede elegir filtrar por la fecha en el mensaje o archivo se envía a cuarentena. Puede especificar la fecha o un intervalo de fechas, incluida la hora. También puede filtrar los resultados de búsqueda por la fecha de caducidad en la que el archivo o el mensaje se eliminará de la cuarentena, o puede usar una combinación de filtros. Para buscar por fecha de caducidad, elija **filtro avanzado**. En **Expires**, puede seleccionar los mensajes que se eliminará de la cuarentena en las próximas 24 horas ( **hoy**), en las próximas 48 horas ( **2 siguiente días**), dentro de la semana siguiente ( **siguiente 7 días**), o puede seleccionar un intervalo de tiempo personalizado.
+      - **Identificador de mensaje**. Se usa para identificar un mensaje específico cuando conoce el identificador de mensaje.<br/><br/>Por ejemplo, si un mensaje específico es enviado por, o está pensado para un usuario en la organización, pero nunca llegado a su destino, se puede buscar para el mensaje mediante el uso de un seguimiento de mensajes (vea [ejecutar un seguimiento de mensajes y los resultados de la vista](https://go.microsoft.com/fwlink/?LinkId=799737)). Si se detectan que se envió el mensaje en cuarentena, quizás porque coincide con una regla de flujo de correo o identificado como correo no deseado, a continuación, encontrará fácilmente este mensaje en cuarentena especificando su identificador de mensaje. Asegúrese de incluir la cadena de identificador de mensaje completo. Esto podría incluir entre corchetes angulares (\<\>), por ejemplo:<br/>
+    `<79239079-d95a-483a-aacf-e954f592a0f6@XYZPR00BM0200.contoso.com>`
     
-    Para los mensajes, tiene las siguientes opciones adicionales:
+      - **Dirección de correo electrónico del remitente**. Elija esta opción para filtrar por una dirección de correo electrónico de remitente único. 
     
-  - **Identificador de mensaje**. Se usa para identificar un mensaje específico cuando conoce el identificador de mensaje. 
+      - **Dirección de correo electrónico del destinatario**. Elija esta opción para filtrar por una dirección de correo electrónico del destinatario único. 
     
-    Por ejemplo, si un mensaje específico es enviado por, o está pensado para un usuario en la organización, pero nunca llegado a su destino, se puede buscar para el mensaje mediante el uso de un seguimiento de mensajes (vea [ejecutar un seguimiento de mensajes y los resultados de la vista](https://go.microsoft.com/fwlink/?LinkId=799737)). Si se detectan que se envió el mensaje en cuarentena, quizás porque coincide con una regla de flujo de correo o identificado como correo no deseado, a continuación, encontrará fácilmente este mensaje en cuarentena especificando su identificador de mensaje. Asegúrese de incluir la cadena de identificador de mensaje completo. Esto podría incluir entre corchetes angulares (\<\>), por ejemplo:
-    
-    \<79239079-d95a-483a-aacf-e954f592a0f6@XYZPR00BM0200.contoso.com\>
-    
-  - **Dirección de correo electrónico del remitente**. Elija esta opción para filtrar por una dirección de correo electrónico de remitente único. 
-    
-  - **Dirección de correo electrónico del destinatario**. Elija esta opción para filtrar por una dirección de correo electrónico del destinatario único. 
-    
-  - **Asunto**. Escriba al asunto de una dirección de correo electrónico que desea buscar. Dado que no se admite la búsqueda por comodines, debe usar a todo el tema del mensaje en orden de búsqueda para devolver el mensaje en los resultados. La búsqueda no distingue mayúsculas de minúsculas. 
+      - **Asunto**. Escriba al asunto de una dirección de correo electrónico que desea buscar. Dado que no se admite la búsqueda por comodines, debe usar a todo el tema del mensaje en orden de búsqueda para devolver el mensaje en los resultados. La búsqueda no distingue mayúsculas de minúsculas. 
     
 ## <a name="view-details-about-quarantined-messages-and-files"></a>Ver detalles acerca de los mensajes en cuarentena y archivos
-<a name="BKMK_ViewDetails"> </a>
 
 Cuando se selecciona un elemento mostrado en la lista de cuarentena, verá un resumen de sus propiedades en el panel de **Detalles** en el lado derecho de la seguridad &amp; centro de cumplimiento. 
   
- **Detalles que se muestran para los mensajes en cuarentena**
+**Detalles que se muestran para los mensajes en cuarentena**
   
 - **Identificador de mensaje**. El identificador único para el mensaje. 
     
@@ -198,8 +188,7 @@ Puede configurar cuánto mensajes y archivos permanecerá en cuarentena antes de
 
 1. Con una cuenta de trabajo o escuela que tiene privilegios de administrador global de la organización de Office 365, inicie sesión en Office 365 y [vaya a la seguridad y el centro de cumplimiento](go-to-the-securitycompliance-center.md).
     
-2. A la izquierda, expanda **Administración de amenaza**, elija la **Directiva**y, a continuación, elija **contra correo no deseado**. 
-    
+2. A la izquierda, expanda **Administración de amenaza**, elija la **Directiva**y, a continuación, elija **contra correo no deseado**. <br/>
     > [!TIP]
     > Para ir directamente a la página **contra correo no deseado** en la seguridad &amp; centro de cumplimiento, use esta dirección URL: >[https://protection.office.com/?hash=/antispam](https://protection.office.com/?hash=/antispam)
   
