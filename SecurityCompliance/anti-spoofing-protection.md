@@ -3,7 +3,7 @@ title: Protección contra suplantación de identidad en Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 10/11/2018
+ms.date: 12/06/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: d24bb387-c65d-486e-93e7-06a4f1a436c0
 description: Este artículo describe cómo Office 365 mitiga frente a ataques de suplantación de identidad que usa falsificado dominios de remitente, es decir, los dominios que están suplantados. Para ello, mediante el análisis de los mensajes y bloqueo de las que pueden ser autenticados neithe mediante el uso de métodos de autenticación de correo electrónico estándar, ni otras técnicas de reputación del remitente. Este cambio se que se implementa para reducir el número de ataques de suplantación de identidad se exponen las organizaciones en Office 365 a.
-ms.openlocfilehash: 231f66b094a98363375a68fbddc8b71077b7baa4
-ms.sourcegitcommit: a36d2692396786f49c8765c65145e5093578e9a1
+ms.openlocfilehash: 95f4995b6447870700bc483f205ca3ff831045f5
+ms.sourcegitcommit: 8c5a88433cff23c59b436260808cf3d91b06fdef
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "25498116"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27194721"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Protección contra suplantación de identidad en Office 365
 
@@ -302,17 +302,17 @@ A diferencia de una directiva que cree, no se puede eliminar la directiva predet
   
 ![Detalles de la directiva contra predeterminada](media/30c21ceb-df52-4c93-aa65-f44a55dc1009.jpg)
   
-Más adelante en 2018, para configurar la protección de forma predeterminada a través de PowerShell:
+Para configurar la protección de forma predeterminada a través de PowerShell:
   
 ```
-$defaultAntiphishPolicy = Get-AntiphishingPolicy -IsDefault $true
+$defaultAntiphishPolicy = Get-AntiphishPolicy | ? {$_.IsDefault -eq $true}
 Set-AntiphishPolicy -Identity $defaultAntiphishPolicy.Name -EnableAntispoofEnforcement <$true|$false>
 ```
 
 Sólo debe deshabilitar protección contra la suplantación si tiene otro servidor de correo o servidores delante de Office 365 (vea los escenarios legítimos para deshabilitar contra suplantación de identidad para obtener más detalles). 
   
 ```
-$defaultAntiphishPolicy = Get-AntiphishingPolicy -IsDefault $true
+$defaultAntiphishPolicy = Get-AntiphishiPolicy | ? {$_.IsDefault $true}
 Set-AntiphishPolicy -Identity $defaultAntiphishPolicy.Name -EnableAntispoofEnforcement $false 
 
 ```
@@ -412,7 +412,7 @@ Las organizaciones que utilizan Exchange Online, con o sin ATP, pueden especific
   
 En general, la directiva aplicada a un mensaje se identifica en el encabezado X-Forefront-Antispam-Report en la propiedad CAT (categoría). 
   
-|**Priority**|**Directiva**|**Categoría**|**¿Donde administradas?**|**Se aplica a**|
+|**Prioridad**|**Directiva**|**Categoría**|**¿Donde administradas?**|**Se aplica a**|
 |:-----|:-----|:-----|:-----|:-----|
 |1   <br/> |Malware  <br/> |MALW  <br/> |[Directiva de malware](https://technet.microsoft.com/en-us/library/jj200745%28v=exchg.150%29.aspx) <br/> |Todas las organizaciones  <br/> |
 |2   <br/> |Suplantación de identidad  <br/> |PHSH  <br/> |[Directiva de filtro de contenido hospedado](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Todas las organizaciones  <br/> |
@@ -425,7 +425,7 @@ En general, la directiva aplicada a un mensaje se identifica en el encabezado X-
    
 Si dispone de varias directivas de Anti-phishing diferentes, se aplicará el uno en la prioridad más alta. Por ejemplo, suponga que tiene dos directivas:
   
-|**Directiva**|**Priority**|**Suplantación de usuario o dominio**|**Contra la suplantación**|
+|**Directiva**|**Prioridad**|**Suplantación de usuario o dominio**|**Contra la suplantación**|
 |:-----|:-----|:-----|:-----|
 |A  <br/> |1   <br/> |Activado  <br/> |Desactivado  <br/> |
 |B  <br/> |2   <br/> |Off  <br/> |Activado  <br/> |
