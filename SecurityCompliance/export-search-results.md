@@ -16,13 +16,13 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
-description: 'Exportar los resultados de búsqueda de una búsqueda de contenido en la seguridad de Office 365 &amp; centro de cumplimiento a un equipo local. Los resultados de correo electrónico de Emaill se exportan como archivos PST. Contenido de SharePoint y OneDrive para sitios de negocio se exportan como documentos de Office nativos. '
-ms.openlocfilehash: 35fb0aa8a037fc77020269d1b42d738dd801ea0a
-ms.sourcegitcommit: da4aa7335b577148ecd61e09bbb11039b817b287
+description: 'Exportar los resultados de búsqueda de una búsqueda de contenido en el centro de cumplimiento y seguridad de Office 365 a un equipo local. Resultados de correo electrónico se exportan como archivos PST. Contenido de SharePoint y OneDrive para sitios de negocio se exportan como documentos de Office nativos. '
+ms.openlocfilehash: f4ecdb59b20138e8b159e6056cac791837a84387
+ms.sourcegitcommit: 9f08af5502070a42de22b6d83e3a08c67cc0c619
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "26539122"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27201584"
 ---
 # <a name="export-content-search-results-from-the-office-365-security--compliance-center"></a>Exportar los resultados de la búsqueda de contenido desde el centro de cumplimiento y seguridad de Office 365
 
@@ -330,3 +330,5 @@ Aquí es obtener más información acerca de cómo exportar los resultados de b�
 - Todos los resultados de la búsqueda y los informes de exportación se incluyen en una carpeta que tiene el mismo nombre que la búsqueda de contenido. Los mensajes de correo electrónico que se han exportado se encuentran en una carpeta denominada **Exchange**. Documentos se encuentran en una carpeta denominada **SharePoint**. 
     
 - Los metadatos del sistema de archivos de documentos en SharePoint y OneDrive para sitios de profesionales se mantienen cuando se exportan documentos en el equipo local. Que significa que las propiedades de documento, como se creó y modificó por última vez las fechas, no se cambian cuando se exportan documentos.
+
+- Si los resultados de búsqueda incluyen un elemento de lista de SharePoint que coincida con la consulta de búsqueda, se exportan todas las filas en la lista además el elemento que coincida con la consulta de búsqueda. Esto incluye los datos adjuntos en la lista. El motivo de esto consiste en proporcionar un contexto para elementos de lista que se devuelven en los resultados de búsqueda. Tenga en cuenta también que los elementos de lista adicionales y los datos adjuntos pueden causar el recuento de elementos exportados a ser diferente de la estimación original de los resultados de búsqueda.
