@@ -3,7 +3,7 @@ title: Introducción a las directivas de retención
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: 6/29/2018
+ms.date: 11/16/2018
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 5e377752-700d-4870-9b6d-12bfc12d2423
 description: Con una directiva de retención, puede decidir de forma proactiva si quiere retener o eliminar contenido, ambos (retener y, a continuación, eliminar el contenido), aplicar una directiva única a la toda la organización o solo a determinadas ubicaciones o usuarios, o aplicar una directiva a todo el contenido o solo a aquel que cumpla ciertas condiciones.
-ms.openlocfilehash: 5b02d57931a47ca86f4da884463cfc0e52476d3c
-ms.sourcegitcommit: 397a5fe594e4cf4bb64c0c6f233d310ef3cbd922
+ms.openlocfilehash: 57f782046fcac2bd28830a0204e0b663d69de842
+ms.sourcegitcommit: 8c5a88433cff23c59b436260808cf3d91b06fdef
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "25540406"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "27194711"
 ---
 # <a name="overview-of-retention-policies"></a>Introducción a las directivas de retención
 
@@ -197,17 +197,13 @@ Otras características importantes de una directiva de retención para toda la o
 - No hay ningún límite en el número de buzones o sitios que puede incluir la directiva.
     
 - Para Exchange, todos los buzones creados tras la aplicación de la directiva la heredarán automáticamente.
-    
-Sin embargo, hay un límite de 10 directivas para toda la organización y directivas para ubicaciones completas combinadas (vea la sección siguiente) por espacio empresarial.
   
 ### <a name="a-policy-that-applies-to-entire-locations"></a>Una directiva para ubicaciones completas
 
 Al elegir ubicaciones, puede incluir o excluir una ubicación completa, como correo electrónico de Exchange o cuentas de OneDrive fácilmente. Para ello, solo tiene que activar o desactivar el **estado** de esa ubicación. 
   
 Al igual que una directiva para toda la organización, si una directiva se aplica a cualquier combinación de ubicaciones completas, no hay ningún límite en el número de buzones o sitios que puede incluir la directiva. Por ejemplo, si la directiva incluye todo el correo electrónico de Exchange y todos los sitios de SharePoint, todos los sitios y buzones se incluirán, sin importar el número. Y en Exchange, todos los buzones que se creen una vez que se aplica la directiva, heredarán automáticamente la directiva.
-  
-Sin embargo, hay un límite de 10 directivas para toda la organización y directivas para ubicaciones completas combinadas por espacio empresarial.
-  
+ 
 ![Página Elegir ubicaciones](media/6ac0c2d6-1abf-4690-b3f6-9ca506887ba3.png)
   
 ### <a name="a-policy-with-specific-inclusions-or-exclusions"></a>Una directiva con inclusiones o exclusiones específicas
