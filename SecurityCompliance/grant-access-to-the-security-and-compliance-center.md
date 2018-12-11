@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: Los usuarios necesitan tener asignados los permisos en la seguridad de Office 365 &amp; centro de cumplimiento de normas antes de que puedan administrar cualquiera de sus características de cumplimiento de normas o de seguridad.
-ms.openlocfilehash: 976c4e21351e352672f3075d0f713e63a634ce42
-ms.sourcegitcommit: da4aa7335b577148ecd61e09bbb11039b817b287
+ms.openlocfilehash: 5055c64d914e15a6570c339ade48bb8f7e802ea7
+ms.sourcegitcommit: a56fa2e184a2662fd8a7881ccea0891e9a26d497
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "26539112"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "27221071"
 ---
 # <a name="give-users-access-to-the-office-365-security-amp-compliance-center"></a>Conceder a los usuarios acceso a la seguridad de Office 365 &amp; centro de cumplimiento
 
@@ -53,7 +53,7 @@ Para obtener más información acerca de los diferentes permisos puede otorgar a
     
 7. Haga clic en **Guardar** para guardar los cambios realizados en el grupo de funciones. 
     
-### <a name="how-do-you-know-this-worked"></a>¿Cómo saber si el proceso se ha completado correctamente?
+### <a name="how-do-you-know-this-worked"></a>¿Cómo saber si el proceso se completó correctamente?
 
 1. En la seguridad &amp; centro de cumplimiento, vaya a **permisos**.
     
@@ -74,13 +74,13 @@ Para obtener más información acerca de los diferentes permisos puede otorgar a
 
  **Parámetros**
   
--  _-Identity_ es el grupo de roles al que se agregará un miembro. 
+- _-Identity_ es el grupo de roles al que se agregará un miembro. 
     
-- - _Miembro_ es el buzón de correo, el grupo de seguridad universal (USG) o el equipo para agregar al grupo de funciones. Puede especificar a un solo miembro a la vez. 
+- _Miembro_ es el buzón de correo, el grupo de seguridad universal (USG) o el equipo para agregar al grupo de funciones. Puede especificar a un solo miembro a la vez. 
     
 Para obtener información detallada sobre la sintaxis y los parámetros, vea [Add-RoleGroupMember](https://go.microsoft.com/fwlink/p/?LinkId=510859).
   
-### <a name="how-do-you-know-this-worked"></a>¿Cómo saber si el proceso se ha completado correctamente?
+### <a name="how-do-you-know-this-worked"></a>¿Cómo saber si el proceso se completó correctamente?
 
 Para comprobar que ha asignado a los usuarios a acceso a la seguridad &amp; centro de cumplimiento, use el cmdlet **Get-RoleGroupMember** para ver los miembros en el grupo de roles de administración de la organización, tal como se muestra en el siguiente ejemplo. 
   
