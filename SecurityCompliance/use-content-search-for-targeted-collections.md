@@ -3,7 +3,7 @@ title: Usar búsqueda de contenido en Office 365 para las colecciones de destina
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 10/12/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -11,16 +11,16 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 description: Usar búsqueda de contenido en la seguridad de Office 365 &amp; centro de cumplimiento para llevar a cabo las colecciones de destinadas. Una colección de destino significa que el que esté seguro de que los elementos con capacidad de respuesta a un caso de o elementos con privilegios se encuentran en una carpeta de buzón de correo o de sitio específica. Use la secuencia de comandos de este artículo para obtener el identificador de la carpeta o la ruta de acceso para las carpetas de buzón de correo o sitio específicas que desea buscar.
-ms.openlocfilehash: f4bb63a193a11e7467b3b296b2bdfa50657ae65a
-ms.sourcegitcommit: 448c5897e44448adfc82e3eaffb774c770c04815
+ms.openlocfilehash: 094fa4de4b8de9782a9bafb2eb8fb6ef3c52b46b
+ms.sourcegitcommit: 06ae71741875f604bcc7a4e01b0b62cc768cbe97
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "25522291"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "27245067"
 ---
 # <a name="use-content-search-in-office-365-for-targeted-collections"></a>Usar búsqueda de contenido en Office 365 para las colecciones de destinadas
 
-La característica de búsqueda de contenido de la seguridad de Office 365 &amp; centro de cumplimiento no proporciona una forma directa en la interfaz de usuario para buscar carpetas específicas en los buzones de Exchange o SharePoint y OneDrive sitios profesionales. Sin embargo, es posible buscar carpetas específicas (denominadas una colección de destino) especificando el identificador de la carpeta o la ruta de acceso en la sintaxis de consulta de búsqueda reales. Uso de búsqueda de contenido para llevar a cabo una colección de destino es útil cuando esté seguro de que los elementos con capacidad de respuesta a un caso de o elementos con privilegios se encuentran en una carpeta de buzón de correo o de sitio específica. Puede usar la secuencia de comandos en este artículo para obtener el identificador de carpeta para carpetas del buzón o la ruta de acceso para las carpetas en un SharePoint y OneDrive para el sitio de negocio. A continuación, puede usar el identificador de la carpeta o la ruta de acceso en una consulta de búsqueda para devolver los elementos que se encuentran en la carpeta.
+La característica de búsqueda de contenido de la seguridad de Office 365 &amp; centro de cumplimiento no proporciona una forma directa en la interfaz de usuario para buscar carpetas específicas en los buzones de Exchange o SharePoint y OneDrive sitios profesionales. Sin embargo, es posible buscar carpetas específicas (denominadas un *destino colección*) especificando el identificador de la carpeta o la ruta de acceso en la sintaxis de consulta de búsqueda reales. Uso de búsqueda de contenido para llevar a cabo una colección de destino es útil cuando esté seguro de que los elementos con capacidad de respuesta a un caso de o elementos con privilegios se encuentran en una carpeta de buzón de correo o de sitio específica. Puede usar la secuencia de comandos en este artículo para obtener el identificador de carpeta para carpetas del buzón o la ruta de acceso para las carpetas en un SharePoint y OneDrive para el sitio de negocio. A continuación, puede usar el identificador de la carpeta o la ruta de acceso en una consulta de búsqueda para devolver los elementos que se encuentran en la carpeta.
   
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -44,7 +44,7 @@ La característica de búsqueda de contenido de la seguridad de Office 365 &amp;
 
 La secuencia de comandos que se ejecuta en este primer paso devolverá una lista de carpetas del buzón o SharePoint o OneDrive para las carpetas de negocio y el identificador correspondiente de carpeta o ruta de acceso para cada carpeta. Al ejecutar este script, le pedirá la siguiente información.
   
-- **Dirección URL de sitio o dirección de correo electrónico** Escriba una dirección de correo electrónico de la custodia para devolver una lista de carpetas de buzón de correo de Exchange y los identificadores de doblado. O bien, escriba la dirección URL de un sitio de SharePoint o un OneDrive para el sitio de negocio para devolver una lista de rutas de acceso para el sitio especificado. Estos son algunos ejemplos: 
+- **Dirección URL de sitio o dirección de correo electrónico** Escriba una dirección de correo electrónico de la custodia para devolver una lista de las carpetas de buzón de correo de Exchange y los identificadores de la carpeta. O bien, escriba la dirección URL de un sitio de SharePoint o un OneDrive para el sitio de negocio para devolver una lista de rutas de acceso para el sitio especificado. Estos son algunos ejemplos: 
     
   - **Exchange** - stacig@contoso.onmicrosoft.com 
     
@@ -138,7 +138,7 @@ Para mostrar una lista de carpetas del buzón o los nombres de ruta de acceso de
       }while ($complianceSearch.Status -ne 'Completed')
       if ($complianceSearch.Items -gt 0)
       {
-          # Create a Complinace Search Action and wait for it to complete. The folders will be listed in the .Results parameter
+          # Create a Compliance Search Action and wait for it to complete. The folders will be listed in the .Results parameter
           $complianceSearchAction = New-ComplianceSearchAction -SearchName $searchName -Preview
           do
           {
@@ -216,7 +216,7 @@ Una vez ejecutado el script para recopilar una lista de identificadores de las c
     
 4. En la página **Búsqueda nueva**, escriba un nombre para la búsqueda de contenido. Este nombre debe ser único en la organización. 
     
-5. En **¿dónde desea que nos buscar**, siga uno de los siguientes valores, en función de si la búsqueda de una carpeta de buzón de correo o una carpeta del sitio:
+5. En **¿dónde desea que nos buscar**, siga uno de los siguientes valores, en función de si va a buscar una carpeta de buzón de correo o una carpeta del sitio:
     
     - Haga clic en **elegir buzones específicos para buscar** y, a continuación, agregue el mismo buzón que especificó cuando ejecutó la secuencia de comandos en el paso 1. 
     
@@ -264,14 +264,16 @@ Estos son algunos ejemplos del uso de la `folderid` y `path` las propiedades de 
   
 ## <a name="more-information"></a>Más información
 
-Tenga en cuenta lo siguiente cuando se usa la secuencia de comandos en este artículo y realiza dirigido colecciones.
+Tenga en cuenta lo siguiente cuando se usa la secuencia de comandos de este artículo para llevar a cabo las colecciones de destinadas.
   
 - La secuencia de comandos no quita todas las carpetas de los resultados. Por lo que algunas carpetas que aparecen en los resultados podrían ser buscar (o devolver elementos de cero), porque contienen contenido generado por el sistema.
     
 - Esta secuencia de comandos sólo devuelve información de la carpeta de buzón principal del usuario. No devuelve información sobre las carpetas de buzón de archivo del usuario.
     
-- Al buscar en las carpetas de buzón de correo, sólo la carpeta especificada (identificado por su `folderid` (propiedad)) se buscará. No se busca en las subcarpetas. Para buscar las subcarpetas, tiene que usar el `folderid` para la subcarpeta que desea buscar. 
+- Al buscar en las carpetas de buzón de correo, sólo la carpeta especificada (identificado por su `folderid` (propiedad)) se buscará. No se busca en las subcarpetas. Para buscar las subcarpetas, debe usar el identificador de carpeta para la subcarpeta que desea buscar. 
     
 - Al buscar en carpetas del sitio, la carpeta (identificado por su `path` (propiedad)) y se buscará en todas las subcarpetas. 
     
 - Como se señaló anteriormente, no se puede usar `path` (propiedad) para buscar archivos multimedia, por ejemplo, .png, .tiff y los archivos .wav, que se encuentra en las ubicaciones de OneDrive. Use una [propiedad del sitio](keyword-queries-and-search-conditions.md#searchable-site-properties) de diferentes para buscar archivos multimedia en las carpetas de OneDrive. 
+
+- Al exportar los resultados de una búsqueda en la que especificó sólo el `folderid` (propiedad) en la consulta de búsqueda, puede elegir la exportación de la primera opción, "todos los artículos, excepto los que tienen un formato no reconocido, se cifran o no estaban indizados por otros motivos". Debido a que el identificador de la carpeta siempre se indiza todos los elementos de la carpeta siempre se exportarán independientemente de su estado de indización.

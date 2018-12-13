@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: f4caa4e1-e414-4b21-8822-31c08064c059
 description: En este artículo se proporciona información para solucionar problemas destinada a los remitentes que están teniendo problemas al intentar enviar correo electrónico a bandejas de entrada de Office 365 y prácticas recomendadas para el envío de correo masivo a clientes de Office 365.
-ms.openlocfilehash: 3d8c0a05d096da87b9f686222055d76a6ae96ff2
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 3d90da9ac239971fd888ed3b8637ba9941628fc2
+ms.sourcegitcommit: 031781d0eecf33baabcd03ea53546d41076062b4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003209"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "27240563"
 ---
 # <a name="troubleshooting-mail-sent-to-office-365"></a>Correo de solución de problemas enviado a Office 365
 
@@ -115,7 +115,7 @@ Ha recibido el NDR porque se ha detectado actividad sospechosa procedente de la 
 ### <a name="i-cant-receive-email-from-senders-in-office-365"></a>No puedo recibir correo electrónico de remitentes de Office 365
 <a name="AllowEOPIPs"> </a>
 
- Con el fin de recibir mensajes de nuestros usuarios, asegúrese de que su red permite conexiones desde las direcciones IP que usa EOP en nuestros centros de datos. Para obtener más información, vea [las direcciones IP de protección en línea de Exchange](eop/exchange-online-protection-ip-addresses.md). Para un registro de la dirección IP de todas las direcciones que se han agregado, cambiado o en desuso en el año pasado, vea [notificación de cambio para las direcciones IP de elevación de privilegios](eop/change-notification-for-eop-ip-addresses.md).
+ Con el fin de recibir mensajes de nuestros usuarios, asegúrese de que su red permite conexiones desde las direcciones IP que usa EOP en nuestros centros de datos. Para obtener más información, vea [las direcciones IP de protección en línea de Exchange](eop/exchange-online-protection-ip-addresses.md). 
   
 ## <a name="best-practices-for-bulk-emailing-to-office-365-users"></a>Prácticas recomendadas para enviar correo electrónico masivo a usuarios de Office 365
 <a name="BulkMailer"> </a>
