@@ -3,7 +3,7 @@ title: Proteger archivos de SharePoint Online con DLP y etiquetas de Office 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/15/2017
+ms.date: 12/12/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
 description: 'Resumen: Aplique directivas de etiquetas y prevención de pérdida de datos (DLP) de Office 365 a sitios de grupo de SharePoint Online con distintos niveles de protección de la información.'
-ms.openlocfilehash: f8d835481c0eac00be11f7934c1d74b8a2d08d78
-ms.sourcegitcommit: e0f016aca7befc8806233a492ee916cbe646094f
+ms.openlocfilehash: 38ded352c91a4c7f0138a6b9932840842d730926
+ms.sourcegitcommit: 031781d0eecf33baabcd03ea53546d41076062b4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "25345972"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "27240573"
 ---
 # <a name="protect-sharepoint-online-files-with-office-365-labels-and-dlp"></a>Proteger archivos de SharePoint Online con DLP y etiquetas de Office 365
 
@@ -68,13 +68,13 @@ Para crear las etiquetas, puede usar el Centro de administración de Office 365 
     
 4. En la nueva pestaña **Inicio - Seguridad y cumplimiento** del explorador, haga clic en **Clasificaciones > Etiquetas**.
     
-5. En el panel **Inicio > Etiquetas**, haga clic en **Crear una etiqueta**.
+5. En el panel **Inicio > Etiquetas**, haga clic en la pestaña **Retención** y, después, haga clic en **Publicar etiquetas**.
     
-6. En el panel **Asignar un nombre a la etiqueta**, escriba el nombre de la etiqueta y haga clic en **Siguiente**.
-    
+6. En el panel **Asignar un nombre a la etiqueta**, escriba el nombre de la etiqueta y una descripción para administradores y usuarios, después, haga clic en **Siguiente**.
+
 7. En el panel **Configuración de etiquetas**, haga clic en **Siguiente**.
     
-8. En el panel **Revise su configuración**, haga clic en **Crear esta etiqueta** y luego en **Cerrar**.
+8. En el panel **Revise su configuración**, haga clic en **Crear** y luego en **Cerrar**.
     
 9. Repita los pasos del 5 al 8 para las etiquetas adicionales.
     
@@ -89,9 +89,11 @@ Para crear las etiquetas, puede usar el Centro de administración de Office 365 
 ForEach ($element in $labelNames){ New-ComplianceTag -Name $element }
   ```
 
+### <a name="publish-your-new-labels"></a>Publicar las nuevas etiquetas
+
 Luego siga estos pasos para publicar las nuevas etiquetas de Office 365.
   
-1. En el panel **Inicio > Etiquetas** del Centro de seguridad y cumplimiento, haga clic en **Publicar etiquetas**.
+1. En el panel **Inicio > Etiquetas** del Centro de seguridad y cumplimiento, haga clic en la pestaña **Retención** y, después, haga clic en **Publicar etiquetas**.
     
 2. En el panel **Elegir etiquetas para publicar**, haga clic en **Elegir etiquetas para publicar**.
     
@@ -106,6 +108,7 @@ Luego siga estos pasos para publicar las nuevas etiquetas de Office 365.
 7. En el panel **Escriba un nombre para la directiva**, escriba un nombre para el conjunto de etiquetas en **Nombre** y haga clic en **Siguiente**.
     
 8. En el panel **Revise su configuración**, haga clic en **Publicar etiquetas** y luego en **Cerrar**.
+
     
 ### <a name="phase-3-apply-the-office-365-labels-to-your-sharepoint-online-sites"></a>Fase 3: Aplicar las etiquetas de Office 365 a los sitios de SharePoint Online
 
@@ -134,14 +137,16 @@ Esta es la configuración resultante.
 ## <a name="dlp-policies-for-your-sharepoint-online-sites"></a>Directivas de DLP para los sitios de SharePoint Online
 
 Siga estos pasos para configurar una directiva de DLP que notifique a los usuarios cada vez que compartan un documento en un sitio de grupo confidencial de SharePoint Online de fuera de la organización.
-  
-1. En la pestaña **Inicio de Microsoft Office** del explorador, haga clic en el icono **Seguridad y cumplimiento**.
+
+1. En la pestaña **Inicio de Microsoft Office**, haga clic en el icono **Administrador**.
     
-2. En la nueva pestaña **Seguridad y cumplimiento** del explorador, haga clic en **Prevención de pérdida de datos > Directiva**.
+2. En la nueva pestaña **Centro de administración de Office** del explorador, haga clic en **Centros de administración > Seguridad &amp; Cumplimiento**.
     
-3. En el panel **Prevención de pérdida de datos**, haga clic en **+ Crear una directiva**.
+3. En la nueva pestaña **Seguridad y cumplimiento** del explorador, haga clic en **Prevención de pérdida de datos > Directiva**.
     
-4. En el panel **Start with a template or create a custom policy** (Empezar con una plantilla o crear una directiva personalizada), haga clic en **Personalizada** y luego en **Siguiente**.
+4. En el panel **Prevención de pérdida de datos**, haga clic en **+ Crear una directiva**.
+    
+5. En el panel **Start with a template or create a custom policy** (Empezar con una plantilla o crear una directiva personalizada), haga clic en **Personalizada** y luego en **Siguiente**.
     
 5. En el panel **Escriba un nombre para la directiva**, escriba el nombre de la directiva de DLP de nivel confidencial en **Nombre** y haga clic en **Siguiente**.
     
@@ -158,7 +163,7 @@ Siga estos pasos para configurar una directiva de DLP que notifique a los usuari
 11. En el panel **Choose the types of content to protect** (Elegir los tipos de contenido que se va a proteger), haga clic en **Guardar**.
     
 12. En el panel **Customize the types of sensitive info you want to protect** (Personalizar los tipos de información confidencial que quiere proteger), haga clic en **Siguiente**.
-    
+
 13. En el panel **What do you want to do if we detect sensitive info?** (¿Qué quiere hacer si se detecta información confidencial?), haga clic en **Customize the tip and email** (Personalizar la sugerencia y el correo electrónico).
     
 14. En el panel **Personalizar sugerencias de directiva y notificaciones de correo electrónico**, haga clic en **Personalizar el texto de la sugerencia de directiva**.
@@ -172,7 +177,7 @@ Siga estos pasos para configurar una directiva de DLP que notifique a los usuari
     
 16. Haga clic en **Aceptar**.
     
-17. En el panel **What do you want to do if we detect sensitive info?** (¿Qué quiere hacer si se detecta información confidencial?), desactive la casilla **Block people from sharing, and restrict access to shared content** (Evitar que los usuarios puedan compartir y restringir el acceso al contenido compartido) y haga clic en **Siguiente**.
+17. En el panel **¿Qué quiere hacer si se detecta información confidencial?**, haga clic en **Siguiente**.
     
 18. En el panel **Do you want to turn on the policy or test things out first?** (¿Desea activar la directiva o probarla primero?), haga clic en **Yes, turn it on right away** (Sí, activarla inmediatamente) y luego en **Siguiente**.
     
@@ -220,7 +225,7 @@ Ahora siga estos pasos para configurar una directiva de DLP que impida a los usu
     
 16. Haga clic en **Aceptar**.
     
-17. En el panel **What do you want to do if we detect sensitive info?** (¿Qué desea hacer si se detecta información confidencial?), seleccione **Require a business justification to override** (Exigir una justificación de empresa para invalidar) y haga clic en **Siguiente**.
+17. En el panel **¿Qué quiere hacer si se detecta información confidencial?**, haga clic en **Siguiente**.
     
 18. En el panel **Do you want to turn on the policy or test things out first?** (¿Desea activar la directiva o probarla primero?), haga clic en **Yes, turn it on right away** (Sí, activarla inmediatamente) y luego en **Siguiente**.
     
