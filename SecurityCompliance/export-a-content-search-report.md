@@ -3,7 +3,7 @@ title: Exportar un informe de búsqueda de contenido
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 4/25/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 f1_keywords:
@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9
 description: En lugar de exportar los resultados reales de una búsqueda de contenido en la seguridad de Office 365 &amp; centro de cumplimiento, sólo puede exportar un informe de resultados de búsqueda. El informe contiene un resumen de los resultados de búsqueda y un documento con información detallada acerca de cada elemento que se van a exportar.
-ms.openlocfilehash: 45415f25754b4549a919e4ce56853a6ae09a9bdc
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: e15c6550d58701abe9b268455deca0aef60265fb
+ms.sourcegitcommit: 1bc36cd57ab1604f057e2b5d336cf1893ba00125
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22535603"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "27283146"
 ---
 # <a name="export-a-content-search-report"></a>Exportar un informe de búsqueda de contenido
 
@@ -52,7 +52,9 @@ Al exportar un informe, se descarga en una carpeta que tiene el mismo nombre que
     - Microsoft Internet Explorer 10 y versiones posteriores
     
     **Nota:** Microsoft no fabrica las extensiones de terceros o complementos para las aplicaciones ClickOnce. No se admite la exportación de resultados de búsqueda mediante un explorador no compatible con las extensiones de terceros o los complementos. 
-    
+
+- Si el tamaño total estimado de los resultados devueltos por una búsqueda de contenido supera los 20&nbsp;TB, exportar el informe se producirá un error. Para exportar correctamente el informe, intente reducir el ámbito y vuelva a ejecutar la búsqueda, por lo que el tamaño estimado de los resultados es menor que 20&nbsp;TB.
+
 ## <a name="generate-and-download-a-content-search-report"></a>Generar y descargar un informe de búsqueda de contenido
 
 Los pasos necesarios para generar y descargar un informe de búsqueda de contenido son muy similares a realmente exportar los resultados de búsqueda.
@@ -63,7 +65,7 @@ El primer paso consiste en preparar el informe para la descarga a su equipo de e
   
 1. Vaya a [https://protection.office.com](https://protection.office.com).
     
-2. Inicie sesión en Office 365 con su cuenta de trabajo o escuela.
+2. Inicie sesión en Office 365 con su cuenta profesional o educativa.
     
 3. En el panel izquierdo del Centro de seguridad y cumplimiento, haga clic en **Búsqueda e investigación** \> **Búsqueda de contenido**.
     
