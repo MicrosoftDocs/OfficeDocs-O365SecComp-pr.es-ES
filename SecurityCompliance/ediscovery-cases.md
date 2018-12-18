@@ -3,7 +3,7 @@ title: casos de exhibición de documentos electrónicos en la seguridad de Offic
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/26/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
 description: Usar la seguridad de Office 365 &amp; centro de cumplimiento para crear y administrar casos de exhibición de documentos electrónicos en su organización. Puede asignar miembros a las mayúsculas y minúsculas, colocar el contenido de las ubicaciones en espera, ejecutar búsquedas de contenido asociados con las mayúsculas y minúsculas y la exportación los resultados de búsqueda. También puede preparar los datos de casos para un análisis posterior en la exhibición de documentos electrónicos avanzada.
-ms.openlocfilehash: 3beb7dcf3e09816c1a282944767d2353f08943be
-ms.sourcegitcommit: 82fd4c85b952819157fbb13175c7b2dbbdff510f
+ms.openlocfilehash: 8abaa0a962a63cc227a8bb1371e14218a9ee854d
+ms.sourcegitcommit: 3cc069415132ccaa1ead5162df15baa2203ca2e6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "23965277"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "27299366"
 ---
 # <a name="ediscovery-cases-in-the-office-365-security-amp-compliance-center"></a>casos de exhibición de documentos electrónicos en la seguridad de Office 365 &amp; centro de cumplimiento
 
@@ -53,9 +53,9 @@ Use el siguiente flujo de trabajo para configurar y usar los casos de exhibició
   
 ## <a name="step-1-assign-ediscovery-permissions-to-potential-case-members"></a>Paso 1: Asignar permisos de exhibición de documentos electrónicos a posibles miembros del caso
 
-El primer paso es asignar los permisos adecuados relacionados con la exhibición de documentos electrónicos a las personas para que pueda agregar a un caso de exhibición de documentos electrónicos en el paso 2. Tiene que ser un miembro del grupo de roles de administración de la organización (o tener asignado el rol de administración de funciones) en la seguridad de Office 365 &amp; centro de cumplimiento para asignar permisos de exhibición de documentos electrónicos. La siguiente lista describe los grupos de funciones relacionadas con la exhibición de documentos electrónicos en la seguridad &amp; centro de cumplimiento.
+El primer paso es asignar los permisos adecuados relacionados con la exhibición de documentos electrónicos a las personas para que pueda agregar a un caso de exhibición de documentos electrónicos en el paso 2. Tiene que ser un miembro del grupo de roles de administración de la organización (o tener asignado el rol de administración de funciones) en la seguridad de Office 365 &amp; centro de cumplimiento para asignar permisos de exhibición de documentos electrónicos. La siguiente lista describe los grupos de funciones relacionadas con la exhibición de documentos electrónicos en la seguridad &amp; centro de cumplimiento. 
   
-- **Revisor** - este grupo de funciones tiene los permisos más restrictivos relacionadas con la exhibición de documentos electrónicos. Los miembros de este grupo sólo pueden ver y abrir la lista de los casos en la página de **exhibición de documentos electrónicos** en la seguridad &amp; centro de cumplimiento que son miembros de. No pueden crear casos, agregar miembros a un caso, crear suspensiones, crear búsquedas, exportar los resultados de búsqueda o preparar los resultados de la exhibición de documentos electrónicos avanzadas. Sin embargo, los miembros pueden acceder a los casos de exhibición de documentos electrónicos avanzada para llevar a cabo tareas de análisis. 
+- **Revisor** - este grupo de funciones tiene los permisos más restrictivos relacionadas con la exhibición de documentos electrónicos. Es el propósito principal de este grupo de funciones permitir que los miembros de la vista y acceso a datos en Office 365 avanzada exhibición de documentos electrónicos de casos. Los miembros de este grupo sólo pueden ver y abrir la lista de los casos en la página de **exhibición de documentos electrónicos** en la seguridad &amp; centro de cumplimiento que son miembros de. Después de que el usuario obtiene acceso a un caso en el centro de cumplimiento y seguridad, puede haga clic en **conmutador de exhibición de documentos electrónicos avanzada** para tener acceso y analizar los datos de escenario de exhibición de documentos electrónicos avanzada. No pueden crear casos, agregar miembros a un caso, crear suspensiones, crear búsquedas, obtener una vista previa de los resultados de búsqueda, exportar los resultados de búsqueda o preparar los resultados de la exhibición de documentos electrónicos avanzadas. 
     
 - **exhibición de documentos electrónicos Manager** - los miembros de este grupo de funciones puede crear y administrar casos de exhibición de documentos electrónicos. Puede agregar y quitar a miembros, colocar contenido ubicaciones en espera, crean y edición las búsquedas de contenido asociados con un caso, exportación los resultados de una búsqueda de contenido y preparar los resultados de búsqueda para el análisis de exhibición de documentos electrónicos avanzada. Existen dos subgrupos en este grupo de funciones. La diferencia entre estos subgrupos se basa en el ámbito.
     
@@ -65,20 +65,22 @@ El primer paso es asignar los permisos adecuados relacionados con la exhibición
     
     - Ver todos los casos que se enumeran en la página **Exhibición de documentos electrónicos**. 
     
-    - Administrar cualquier caso de exhibición de documentos electrónicos en la organización después de agregarse ellos mismos como un miembro de las mayúsculas y minúsculas.
+    - Administrar cualquier caso de la organización después de agregarse ellos mismos como un miembro de las mayúsculas y minúsculas.
     
-    - Realizar tareas administrativas en Avanzadas exhibición de documentos electrónicos, como el procesamiento de datos para el análisis de los casos, configuración de opciones de mayúsculas y minúsculas y exportar datos de exhibición de documentos electrónicos avanzada. Esto es debido a que una persona que es un administrador de la seguridad de exhibición de documentos electrónicos &amp; centro de cumplimiento se agrega automáticamente como un administrador de exhibición de documentos electrónicos avanzada.
+    - Acceso a datos de mayúsculas y minúsculas en Avanzadas exhibición de documentos electrónicos para cualquier caso en la organización.
     
-    Consulte la sección [More information](ediscovery-cases.md#moreinfo_1) para saber por qué quizás quiera tener un administrador de exhibición de documentos electrónicos en su organización. 
+    Consulte la sección [More information](#more-information) para saber por qué quizás quiera tener un administrador de exhibición de documentos electrónicos en su organización. 
     
 > [!IMPORTANT]
 > Si una persona no es un miembro de uno de estos grupos de funciones relacionadas con la exhibición de documentos electrónicos, o no es un miembro de un grupo de roles que ha asignado el rol de revisor, no puede agregarlos como un miembro de un caso de exhibición de documentos electrónicos. 
+
+Para obtener más información acerca de los permisos de exhibición de documentos electrónicos, vea [asignar permisos de exhibición de documentos electrónicos en la seguridad de Office 365 &amp; centro de cumplimiento](assign-ediscovery-permissions.md).
   
  **Para asignar permisos de exhibición de documentos electrónicos:**
   
 1. Vaya a [https://protection.office.com](https://protection.office.com).
     
-2. Inicie sesión en Office 365 con su cuenta de trabajo o escuela.
+2. Inicie sesión en Office 365 con su cuenta profesional o educativa.
     
 3. En la seguridad &amp; centro de cumplimiento, haga clic en **permisos**y, a continuación, realice uno de los siguientes en función de la que desea asignar permisos de exhibición de documentos electrónicos.
     
@@ -96,7 +98,7 @@ El siguiente paso es crear un nuevo caso de exhibición de documentos electróni
   
 1. Vaya a [https://protection.office.com](https://protection.office.com).
     
-2. Inicie sesión en Office 365 con su cuenta de trabajo o escuela.
+2. Inicie sesión en Office 365 con su cuenta profesional o educativa.
     
 3. En la seguridad &amp; centro de cumplimiento, haga clic en **búsqueda &amp; investigación** \> **exhibición de documentos electrónicos**y, a continuación, haga clic en ![icono Agregar](media/ITPro-EAC-AddIcon.gif) **crear un caso**.
     
@@ -142,7 +144,10 @@ Después de crear un nuevo caso, el siguiente paso es agregar a miembros a las m
 ## <a name="step-4-place-content-locations-on-hold"></a>Paso 4: Lugar ubicaciones de contenido en espera
 
 Puede usar un caso de exhibición de documentos electrónicos para crear suspensiones para conservar el contenido que puede ser relevante para las mayúsculas y minúsculas. Puede colocar una suspensión en los buzones y OneDrive para sitios de profesionales de las personas que custodia en las mayúsculas y minúsculas. También puede colocar una suspensión en el buzón de correo de grupo, sitios de SharePoint y OneDrive para el sitio de negocio para un grupo de Office 365. De forma similar, puede colocar una suspensión en el sitio que están asociados con Microsoft Teams y buzón de correo. Al colocar las ubicaciones de contenido en espera, contenido se mantiene hasta que se quite la suspensión desde la ubicación del contenido o hasta que se elimine la suspensión.
-  
+
+> [!NOTE]
+> Después de realizar una ubicación de contenido en espera, se tardan hasta 24 horas para la suspensión surta efecto. 
+>   
 Cuando se crea una suspensión, tiene las siguientes opciones para delimitar el contenido que se encuentra en las ubicaciones de contenido especificadas:
   
 - Crear una suspensión infinita donde todo el contenido se pondrá en espera. Como alternativa, puede crear una suspensión basada en consultas donde sólo el contenido que coincide con una consulta de búsqueda se pondrá en espera.
@@ -183,7 +188,7 @@ Para crear una suspensión para un caso de exhibición de documentos electrónic
   
    b. **Sitios de SharePoint** : haga clic en **Elegir sitios** y, a continuación, haga clic en **sitios de elija** nuevo para especificar SharePoint y OneDrive para sitios profesionales para poner en espera. Escriba la dirección URL para cada sitio que desee poner en espera. También puede agregar la dirección URL del sitio de SharePoint para un grupo de Office 365 o un Microsoft Team. Haga clic en **Elegir**y, a continuación, haga clic en **Listo**.
     
-    Vea la sección [obtener más información](ediscovery-cases.md#moreinfo_1) para obtener sugerencias sobre la colocación de grupos de Office 365 y Microsoft Teams en espera. 
+    Vea la sección [obtener más información](#more-information) para obtener sugerencias sobre la colocación de grupos de Office 365 y Microsoft Teams en espera. 
     
     > [!NOTE]
     > En el caso poco frecuente que se ha cambiado el nombre de entidad de seguridad de usuario (UPN) de una persona, también se cambiará la dirección URL de su cuenta de OneDrive para incorporar el UPN nuevo. En este caso, tendrá que modificar la suspensión mediante la adición OneDrive para la nueva dirección URL del usuario y eliminar la antigua. 
@@ -391,7 +396,7 @@ Como alternativa a la exportación de los resultados de una búsqueda de conteni
 
 ## <a name="step-7-prepare-search-results-for-advanced-ediscovery"></a>Paso 7: Preparar los resultados de la exhibición de documentos electrónicos avanzada de búsqueda
 
-Si su organización tiene una suscripción a Office 365 E5, puede preparar los resultados de búsquedas de contenido asociado a un caso para el análisis de exhibición de documentos electrónicos avanzada. Después de preparar los resultados de búsqueda, puede ir a la exhibición de documentos electrónicos avanzada (vea [paso 8: vaya al caso de exhibición de documentos electrónicos avanzada](ediscovery-cases.md#gotoAeD_1)) y procesar los datos de resultados de búsqueda para un análisis posterior en la exhibición de documentos electrónicos avanzada.
+Si su organización tiene una suscripción a Office 365 E5, puede preparar los resultados de búsquedas de contenido asociado a un caso para el análisis de exhibición de documentos electrónicos avanzada. Después de preparar los resultados de búsqueda, puede ir a la exhibición de documentos electrónicos avanzada (vea [paso 8: vaya al caso de exhibición de documentos electrónicos avanzada](#step-8-go-to-the-case-in-advanced-ediscovery)) y procesar los datos de resultados de búsqueda para un análisis posterior en la exhibición de documentos electrónicos avanzada.
   
 Al preparar los resultados de búsqueda para la exhibición de documentos electrónicos avanzada, funcionalidad de reconocimiento óptico de caracteres (OCR) extrae automáticamente el texto de las imágenes. Reconocimiento óptico de caracteres es compatible con archivos sueltos, datos adjuntos de correo electrónico e imágenes incrustadas. Esto permite aplicar las capacidades de texto analítico de eDiscovery avanzada (cerca de duplicados, subprocesos de correo electrónico, los temas y codificación predictivo) a cualquier texto en los archivos de imagen.
   
@@ -530,7 +535,7 @@ Cuando se vuelve a abrir un caso, cualquier suspensiones que tenía cuando se ce
     
     Por último, como anterior se explica, los administradores de exhibición de documentos electrónicos en la seguridad &amp; centro de cumplimiento se agregan automáticamente como administradores de exhibición de documentos electrónicos avanzada. Esto significa que una persona que es un administrador de exhibición de documentos electrónicos puede realizar tareas administrativas en la exhibición de documentos avanzada, como la configuración de usuarios, creación de casos y adición de datos a los casos.
     
-- **¿Cuáles son los requisitos de licencia para colocar las ubicaciones de contenido en espera?** En general, las organizaciones requieren una suscripción a Office 365 E3 o superior para colocar las ubicaciones de contenido en espera. Para poner los buzones de correo en espera, se requiere una licencia de Exchange Online Plan 2.
+- **¿Cuáles son los requisitos de licencia para colocar las ubicaciones de contenido en espera?** En general, las organizaciones requieren una suscripción a Office 365 E3 o superior para colocar las ubicaciones de contenido en espera. Para poner los buzones de correo en espera, una licencia de Exchange Online Plan 2 se requiere para el buzón de correo que desea poner en espera.
     
 - **¿Qué más debe saber acerca de la búsqueda de todo el contenido de mayúsculas y minúsculas en el paso 5?** Como se explica anteriormente, puede buscar las ubicaciones de contenido que se han colocado en espera en el caso. En este caso, sólo el contenido que coincida con los criterios de retención es la búsqueda. Si no hay ningún criterio de suspensión, se busca en todo el contenido. Si se encuentran contenido en basada en consultas espera, sólo el contenido que coincide con ambas mantenga criterios (desde la suspensión realizadas en el paso 4) y los criterios de búsqueda (de la búsqueda en el paso 5) se devuelve con los resultados de búsqueda.
     
