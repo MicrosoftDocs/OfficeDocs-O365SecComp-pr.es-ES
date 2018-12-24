@@ -186,7 +186,6 @@
 ## [Configurar los límites de cumplimiento para investigaciones de eDiscovery en Office 365](set-up-compliance-boundaries.md).
 ## [Serie de soluciones de eDiscovery: escenario de pérdidas de datos: búsqueda y purga](data-spillage-scenariosearch-and-purge.md)
 ## [Preparar los resultados de búsqueda para eDiscovery avanzado](prepare-search-results-for-advanced-ediscovery.md)
-## [Asignar permisos de eDiscovery a sitios de OneDrive para la Empresa](assign-permissions-to-onedrive-for-business-sites.md)
 ## [Usar un script para agregar usuarios a una suspensión en un caso de eDiscovery](use-a-script-to-add-users-to-a-hold-in-ediscovery.md)
 ## [Crear un informe de suspensiones en casos de eDiscovery](create-a-report-on-holds-in-ediscovery-cases.md)
 ## Administrar suspensiones
