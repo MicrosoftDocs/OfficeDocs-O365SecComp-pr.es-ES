@@ -126,7 +126,7 @@
 ### [Mantenga seguros a sus usuarios de Office 365 con inteligencia de amenazas de Office 365](keep-users-safe-with-office-365-ti.md)
 ### [Rastreadores de amenazas: nuevos y destacables](threat-trackers.md)
 ### [Usar el explorador en el Centro de cumplimiento y seguridad](use-explorer-in-security-and-compliance.md)
-## [Introducción a Office 365 Cloud App Security](office-365-cas-overview.md)
+## [Office 365 Cloud App Security](office-365-cas-overview.md)
 ### [Novedades de Office 365 Cloud App Security](new-in-office-365-cas.md)
 #### [Actualizaciones durante 2017](new-in-office-365-cas-2017.md)
 ### [Prepararse para Office 365 Cloud App Security](get-ready-for-office-365-cas.md)
