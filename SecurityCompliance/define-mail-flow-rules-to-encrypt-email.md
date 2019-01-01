@@ -3,7 +3,6 @@ title: Definir reglas de flujo de correo para cifrar mensajes de correo electró
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: ''
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 description: Los administradores pueden aprender a crear reglas de flujo (también conocida como reglas de transporte) para cifrar y descifrar mensajes con Office 365 Message Encryption (OME) de correo.
-ms.openlocfilehash: 35867d45bb8ad5cb8de2fa1aa0c870ee9a66fe5d
-ms.sourcegitcommit: 8c5a88433cff23c59b436260808cf3d91b06fdef
+ms.openlocfilehash: 6633958478c947d765251145ecd6d45e34dea2ab
+ms.sourcegitcommit: 31098b35607d0fd949fd357f783d1e9ed2444deb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27194681"
+ms.lasthandoff: 12/31/2018
+ms.locfileid: "27466929"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages-in-office-365"></a>Definir reglas de flujo de correo para cifrar mensajes de correo electrónico en Office 365
 
