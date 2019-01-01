@@ -92,7 +92,7 @@
 ### [Cifrado de correo electrónico en Office 365](email-encryption.md)
 ### [Cifrado de mensajes de Office 365 (OME)](ome.md)
 #### [Configurar las nuevas capacidades de cifrado de mensajes de Office 365](set-up-new-message-encryption-capabilities.md)
-#### [Definir reglas de flujo de correo para cifrar mensajes de correo electrónico en Office 365](https://docs.microsoft.com/es-ES/office365/securitycompliance/define-mail-flow-rules-to-encrypt-mail.md)
+#### [Definir reglas de flujo de correo para cifrar mensajes de correo electrónico en Office 365](define-mail-flow-rules-to-encrypt-email.md)
 #### [Administrar el cifrado de mensajes de Office 365](manage-office-365-message-encryption.md)
 #### [Preguntas más frecuentes sobre el cifrado de mensajes de Office 365](ome-faq.md)
 #### [Revocar el correo electrónico cifrado por el cifrado de mensajes de Office 365](revoke-ome-encrypted-mail.md)
