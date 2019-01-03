@@ -3,7 +3,7 @@ title: Simulator ataques en Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 11/09/2018
+ms.date: 01/02/2019
 ms.audience: ITPro
 ms.topic: overview
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 description: Como administrador global de Office 365, puede usar simulador de ataque para ejecutar los escenarios de ataque realista en su organización. Esto puede ayudar a identificar y buscar usuarios vulnerables antes de que un ataque real afecta a su negocio.
-ms.openlocfilehash: 9a7e1fd5327b4a764356df110c46ee7a9f496b53
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 1a1d22b0b36ce8b6a2086296be8f8b5d47d79280
+ms.sourcegitcommit: d512c1df01377e305e8d5c0170c822cf78f09565
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706444"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "27472003"
 ---
 # <a name="attack-simulator-in-office-365"></a>Simulator ataques en Office 365
 
@@ -49,7 +49,7 @@ Asegúrese de que usted y su organización cumplen los siguientes requisitos de 
     
 - Es un administrador global de Office 365
     
-- Su organización usa [la autenticación multifactor para usuarios de Office 365](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication&view=o365-worldwide)
+- Su organización usa [la autenticación multifactor para usuarios de Office 365](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication?view=o365-worldwide)
  
 - Su organización tiene [Información sobre amenazas de Office 365](office-365-ti.md), con simulador de ataque visible en la seguridad &amp; centro de cumplimiento (vaya a **administración de amenaza** \> **simulador de ataque**)<br/>![Administración de amenaza - simulador de ataque](media/ThreatMgmt-AttackSimulator.png)
 
@@ -64,7 +64,7 @@ Este ataque se centra en lo que le permite manipular que aparece el mensaje proc
 
 ![Redactar el cuerpo del correo electrónico](media/9bd65af4-1f9d-45c1-8c06-796d7ccfd425.jpg)
   
-Puede crear el editor de HTML enriquecido directamente en el propio campo del **cuerpo del correo electrónico** o trabajar con código fuente HTML. Hay dos campos importantes para su inclusión en el código HTML: 
+Puede crear el editor de HTML enriquecido directamente en el propio campo del **cuerpo del correo electrónico** o trabajar con código fuente HTML.
   
 1. En la [seguridad &amp; centro de cumplimiento](https://security.microsoft.com), elija **administración de amenaza** \> **simulador de ataque**.
     
@@ -118,7 +118,7 @@ Un ataque de contraseña por fuerza bruta contra una organización se utiliza no
     
 3. Especificar al destinatario de destino. Un destinatario de destino debe tener un buzón de Exchange Online en orden para que el ataque tenga éxito.
     
-4. Especificar un conjunto de contraseñas que se usará para el ataque. Puede usar un archivo de texto (.txt) para su lista de contraseñas. El archivo de texto no puede superar los 10 MB en tamaño del archivo. Usar una contraseña por línea y asegúrese de que incluir un retorno de carro después de la última contraseña en la lista.
+4. Especificar un conjunto de contraseñas que se usará para el ataque. Para ello, puede usar un archivo de texto (.txt) para su lista de contraseñas. El archivo de texto no puede superar los 10 MB en tamaño del archivo. Usar una contraseña por línea y asegúrese de que incluir un retorno de carro después de la última contraseña en la lista.
     
 5. Elija **Finalizar** para iniciar el ataque. 
     
