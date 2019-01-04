@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9
 description: En lugar de exportar los resultados reales de una búsqueda de contenido en la seguridad de Office 365 &amp; centro de cumplimiento, sólo puede exportar un informe de resultados de búsqueda. El informe contiene un resumen de los resultados de búsqueda y un documento con información detallada acerca de cada elemento que se van a exportar.
-ms.openlocfilehash: e15c6550d58701abe9b268455deca0aef60265fb
-ms.sourcegitcommit: 1bc36cd57ab1604f057e2b5d336cf1893ba00125
+ms.openlocfilehash: db6ba2dd58befa782dc3a5968e0034bccfa46855
+ms.sourcegitcommit: ea625737c4be14927f69aa71d4fbd7d7d94d9334
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "27283146"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "27544131"
 ---
 # <a name="export-a-content-search-report"></a>Exportar un informe de búsqueda de contenido
 
@@ -54,6 +54,8 @@ Al exportar un informe, se descarga en una carpeta que tiene el mismo nombre que
     **Nota:** Microsoft no fabrica las extensiones de terceros o complementos para las aplicaciones ClickOnce. No se admite la exportación de resultados de búsqueda mediante un explorador no compatible con las extensiones de terceros o los complementos. 
 
 - Si el tamaño total estimado de los resultados devueltos por una búsqueda de contenido supera los 20&nbsp;TB, exportar el informe se producirá un error. Para exportar correctamente el informe, intente reducir el ámbito y vuelva a ejecutar la búsqueda, por lo que el tamaño estimado de los resultados es menor que 20&nbsp;TB.
+
+- Exportación de contenido de búsqueda informes recuentos contra el número máximo de exportaciones que se ejecuta en el mismo momento y el número máximo de exportaciones que puede ejecutar un único usuario. Para obtener más información acerca de los límites de exportación, vea [los resultados de la búsqueda de contenido exportar desde el centro de cumplimiento y seguridad de Office 365](export-search-results.md#export-limits).
 
 ## <a name="generate-and-download-a-content-search-report"></a>Generar y descargar un informe de búsqueda de contenido
 

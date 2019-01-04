@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: 'Exportar los resultados de búsqueda de una búsqueda de contenido en el centro de cumplimiento y seguridad de Office 365 a un equipo local. Resultados de correo electrónico se exportan como archivos PST. Contenido de SharePoint y OneDrive para sitios de negocio se exportan como documentos de Office nativos. '
-ms.openlocfilehash: f4ecdb59b20138e8b159e6056cac791837a84387
-ms.sourcegitcommit: 9f08af5502070a42de22b6d83e3a08c67cc0c619
+ms.openlocfilehash: d67b6aeedd3f01bd21de0e07f42870db7a18767b
+ms.sourcegitcommit: ea625737c4be14927f69aa71d4fbd7d7d94d9334
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27201584"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "27544121"
 ---
 # <a name="export-content-search-results-from-the-office-365-security--compliance-center"></a>Exportar los resultados de la búsqueda de contenido desde el centro de cumplimiento y seguridad de Office 365
 
@@ -74,10 +74,6 @@ Exportar los resultados de una búsqueda de contenido implica la preparación de
        </defaultProxy>
     </system.net>
     ```
-
-- Vea la sección para obtener una descripción de los límites para exportar los resultados de búsqueda. 
-    
-- El tamaño máximo de un archivo PST que se puede exportar es 10 GB. Si desea cambiar este tamaño predeterminado, puede editar el registro de Windows en el equipo que utilice para exportar los resultados de búsqueda. Vea [cambiar el tamaño de los archivos PST al exportar los resultados de búsqueda de exhibición de documentos electrónicos](change-the-size-of-pst-files-when-exporting-results.md).
     
 ## <a name="step-1-prepare-search-results-for-export"></a>Paso 1: Preparar los resultados de búsqueda para la exportación
 
@@ -96,13 +92,13 @@ El primer paso consiste en preparar los resultados de búsqueda para la exportac
     > [!NOTE]
     > Si los resultados de una búsqueda son de hace más de 7 días, se le solicitará que actualice los resultados de búsqueda. Si esto ocurre, cancele la exportación, haga clic en **Actualizar los resultados de búsqueda** en el panel de detalles para la búsqueda seleccionada y, a continuación, inicie la exportación de nuevo después de que se actualicen los resultados.  
   
-6. En la página **exportar los resultados de búsqueda** , en **incluir estos elementos de la búsqueda**, elija una de las siguientes opciones:
+6. En la página **exportar los resultados de búsqueda** , en **Opciones de salida**, elija una de las siguientes opciones:
     
-    - Exportar solo los elementos indexados
+    - Todos los artículos, excepto que tienen un formato no reconocido, se cifran o no estaban indizados por otras razones
     
-    - Exportar elementos indizados y parcialmente indizados
+    - Todos los elementos, los que tienen formato no reconocido, incluidos se cifran o no estaban indizados por otras razones
     
-    - Exportar sólo los elementos indizados parcialmente
+    - Sólo los elementos que tienen un formato no reconocido, se cifran o no estaban indizados por otras razones
     
     Vea la sección [obtener más información](#more-information) para obtener una descripción acerca de los elementos indizados cómo parcialmente se exportan. Para obtener más información acerca de los elementos indizados parcialmente, vea [parcialmente indizar los elementos de búsqueda de contenido](partially-indexed-items-in-content-search.md).
     
@@ -202,8 +198,9 @@ Aquí es obtener más información acerca de cómo exportar los resultados de b�
   - Puede tener un máximo de 10 exportaciones ejecutándose a la vez dentro de su organización.
     
   - Un único usuario puede ejecutar un máximo de tres exportaciones al mismo tiempo.
-    
-  - Exportación de informes de búsqueda de contenido no cuenta con cualquiera de los límites de exportación. 
+
+  > [!NOTE]
+  > Exportar sólo los informes de una búsqueda de contenido también cuenta con respecto al número de exportaciones que se ejecuta en el mismo momento y el número de exportaciones que puede ejecutar un único usuario.
     
 - Como se mencionó anteriormente, los resultados de búsqueda de buzones de correo y los sitios se cargan en la ubicación de almacenamiento de Azure (tal como se describe en [paso 1: preparación de los resultados para la exportación de búsqueda](#step-1-prepare-search-results-for-export)) a una velocidad máxima de 2 GB por hora.
     
