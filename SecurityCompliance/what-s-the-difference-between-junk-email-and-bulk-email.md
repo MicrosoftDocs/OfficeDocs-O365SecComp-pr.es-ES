@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 8079f193-1b40-4081-9e5d-d0e50dfbcc59
 description: ¿Los clientes a veces askwhat de la diferencia entre correo electrónico no deseado y mensajes de correo electrónico masivo? El propósito de este tema es para explicar la diferencia y para proporcionar información sobre las diferentes opciones que están disponibles para ambos tipos en Exchange Online y Exchange Online Protection (EOP).
-ms.openlocfilehash: 87f946c7309589595efd3e11e998e0a9f503b651
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: ea3f27bdd9ec2aa586dd55139825fc90390ca736
+ms.sourcegitcommit: b4e69c54c7bf405d37dfeadc5611803bea9554e3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003159"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "27733306"
 ---
 # <a name="whats-the-difference-between-junk-email-and-bulk-email"></a>¿Cuál es la diferencia entre correo electrónico no deseado y correo electrónico masivo?
 
@@ -41,6 +41,6 @@ La administración del correo electrónico masivo no es una decisión clara, por
   
 ### <a name="enable-bulk-mail-sensitivity-control-in-the-content-filter-policy"></a>Habilitar el control de sensibilidad de correo masivo en la directiva de filtro de contenido
 
-Según la directiva de su empresa sobre mensajes de correo electrónico masivo, los administradores pueden seleccionar el umbral que se asignará al correo electrónico masivo. El valor se puede configurar mediante directivas de filtro de contenido en el EAC. Consulte [Configurar las directivas de filtro de correo no deseado](configure-your-spam-filter-policies.md) para ver los pasos. Puede elegir una valor de umbral de 1 a 9, donde 1 marca la mayor parte del correo electrónico masivo como correo no deseado y 9 permite entregar la mayoría del correo electrónico masivo. A continuación, el servicio realiza la acción configurada, por ejemplo, enviar el mensaje a la carpeta Correo electrónico no deseado del destinatario. 
+Según la política de su empresa en mensajes de correo electrónico masivo, los administradores pueden seleccionar un umbral para asignar el correo electrónico masivo. El valor es configurable a través de las directivas de filtro de contenido en el EAC. Desproteger [configurar sus directivas de filtro de correo no deseado](configure-your-spam-filter-policies.md) para los pasos. Puede elegir una configuración de umbral de 1 a 9, donde 1 marca la mayor parte del correo masivo como correo no deseado y 9 permite la mayor parte del correo masivo entregar. El servicio, a continuación, realiza la acción configurada, como enviar el mensaje a la carpeta de correo no deseado del destinatario. 
   
 
