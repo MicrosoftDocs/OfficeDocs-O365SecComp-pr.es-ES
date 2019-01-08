@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 description: Obtenga información sobre cómo puede ayudar a proteger su organización frente a una amplia variedad de amenazas, incluida la suplantación de identidad, malware, correo no deseado, los intentos de suplantación de identidad y acceso no autorizado a los datos de Office 365 Enterprise.
-ms.openlocfilehash: e5e14e66617af6a513979d93aa4764c8843b975f
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 38fc2590b8693989befcf399e32ef378ab89495d
+ms.sourcegitcommit: 30faa3ba91cab4c36e3d8d8ed5858d5269ea8a56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706064"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27749314"
 ---
 # <a name="protect-against-threats-in-office-365"></a>Protección contra amenazas en Office 365
 
@@ -27,11 +27,11 @@ Con Office 365 Enterprise, puede ayudar a proteger su organización frente a una
 
 Si utiliza un dominio personalizado en Office 365, ayudar a detener loterías del remitente de la organización, mejorar la seguridad de correo electrónico y proteger la reputación de su dominio.
   
-- [Evitar la suplantación de SPF]([Set up SPF in Office 365 to help prevent spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md))
+- [Configurar SPF en Office 365 para ayudar a evitar la suplantación de identidad](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
     
-- [Validar el correo electrónico saliente con DKIM]([Use DKIM to validate outbound email sent from your custom domain in Office 365](use-dkim-to-validate-outbound-email.md))
+- [Usar DKIM para validar el correo electrónico saliente enviado desde su dominio personalizado en Office 365](use-dkim-to-validate-outbound-email.md)
     
-- [Validar el correo electrónico con DMARC]([Use DMARC to validate email in Office 365](use-dmarc-to-validate-email.md))
+- [Usar DMARC para validar el correo electrónico en Office 365](use-dmarc-to-validate-email.md)
     
 ## <a name="anti-spam-amp-anti-malware"></a>Contra correo no deseado &amp; anti-malware
 
@@ -39,11 +39,11 @@ Obtenga información sobre los resultados contra correo no deseado de Office 365
   
 - [Contra correo no deseado &amp; protección contra malware](anti-spam-and-anti-malware-protection.md)
     
-- [Activar el registro para el correo electrónico]([Enable mailbox auditing in Office 365](enable-mailbox-auditing.md))
+- [Habilitar la auditoría de buzones de correo en Office 365](enable-mailbox-auditing.md)
     
 - [Cuarentena de mensajes de correo electrónico en Office 365](quarantine-email-messages.md)
     
-- [Enviar contenido sospechoso a Microsoft]([Submitting malware and non-malware to Microsoft for analysis](submitting-malware-and-non-malware-to-microsoft-for-analysis.md))
+- [Enviar malware y no malware a Microsoft para su análisis](submitting-malware-and-non-malware-to-microsoft-for-analysis.md)
     
 ## <a name="advanced-threat-protection"></a>Protección contra amenazas avanzada
 

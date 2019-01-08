@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 description: Purgar cero horas automático (ZAP) es una característica de protección de correo electrónico que detecta los mensajes con el correo no deseado o malware que ya se han entregado a las bandejas de entrada de los usuarios y, a continuación, representa el contenido malintencionado inocua. ZAP ¿cómo esto depende del tipo de contenido malintencionado detectado.
-ms.openlocfilehash: 1cf14051e91801a74a0d739c69900bb3f825b318
-ms.sourcegitcommit: 204fb0269b5c10b63941055824e863d77e3e9b02
+ms.openlocfilehash: 1e90e69018b7640bb36011287abd5bcd77d43358
+ms.sourcegitcommit: 30faa3ba91cab4c36e3d8d8ed5858d5269ea8a56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "27180850"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27749324"
 ---
 # <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>Purga automática cero horas: protección contra correo no deseado y malware
 
@@ -30,7 +30,7 @@ Purgar cero horas automático (ZAP) es una característica de protección de cor
   
 ZAP está disponible con el valor predeterminado de Exchange Online Protection que se incluye con cualquier suscripción de Office 365 que contiene los buzones de Exchange Online.
 
-ZAP está activado de forma predeterminada, pero se deben cumplir las condiciones siguientes:
+ZAP está activado de forma predeterminada, pero se deben cumplir las siguientes condiciones:
   
 - **Acción de spam** se establece para **mover el mensaje a la carpeta correo no deseado**. <br/>También puede crear una nueva directiva de filtro de spam que sólo se aplica a un conjunto de usuarios si no desea que todos los buzones que se filtran por ZAP.
 
@@ -62,7 +62,7 @@ Permitir listas, [reglas de flujo de correo](https://go.microsoft.com/fwlink/p/?
     
 ## <a name="to-see-if-zap-moved-your-message"></a>Para ver si ZAP mueve el mensaje
 
-Si desea ver si ZAP mueve el mensaje, puede utilizar ya sea el [informe de estado de protección de amenaza](view-email-security-reports.md#threat-protection-status-report-new) (o [El Explorador de amenaza](use-explorer-in-security-and-compliance.md)).
+Si desea ver si ZAP mueve el mensaje, puede utilizar ya sea el [informe de estado de protección de amenaza](view-email-security-reports.md#threat-protection-status-report) (o [El Explorador de amenaza](use-explorer-in-security-and-compliance.md)).
     
 ## <a name="to-disable-zap"></a>Para deshabilitar ZAP
   

@@ -3,7 +3,7 @@ title: Ver los informes de seguridad de correo electrónico de la seguridad &amp
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 11/27/2018
+ms.date: 01/07/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 description: Obtenga información sobre cómo buscar y usar informes de seguridad de correo electrónico para la organización con Office 365 Enterprise. Informes de seguridad de correo electrónico están disponibles en la seguridad &amp; centro de cumplimiento.
-ms.openlocfilehash: 72039afd52cd6e9da7dfd05bb67aac2c7e7db001
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 670317707c5695161f23615fb87fe93258e8d95b
+ms.sourcegitcommit: 30faa3ba91cab4c36e3d8d8ed5858d5269ea8a56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706424"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27749334"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>Ver los informes de seguridad de correo electrónico de la seguridad &amp; centro de cumplimiento
 
@@ -28,7 +28,7 @@ Una variedad de informes de seguridad de correo electrónico están disponibles 
   
 Los informes de seguridad de correo electrónico son los siguientes:
   
-- [Informe de estado de protección de amenaza](view-email-security-reports.md#tps) (nuevo)! 
+- [Informe de estado de protección de amenaza](view-email-security-reports.md#tps) 
     
 - [Informe de detecciones de malware](view-email-security-reports.md#maldet)
     
@@ -44,7 +44,7 @@ Los informes de seguridad de correo electrónico son los siguientes:
     
 - [Informe de mensajes indicado por el usuario](view-email-security-reports.md#userreported) (nuevo)! 
     
-## <a name="threat-protection-status-report-new"></a>Amenazas de informe de estado de protección (¡nuevo!)
+## <a name="threat-protection-status-report"></a>Informe de estado de protección de amenaza
 
 El nuevo informe de **Estado de protección de amenaza** es un informe inteligente que se muestra el correo electrónico malintencionado que se ha detectado y bloqueado por Exchange Online Protection. Este informe muestra información acerca del correo electrónico identificado como malware o un intento de suplantación de identidad. 
 
@@ -176,7 +176,7 @@ Para ver este informe, en la [seguridad &amp; centro de cumplimiento](https://se
   
 ## <a name="what-permissions-are-needed-to-view-these-reports"></a>¿Qué permisos son necesarios para ver estos informes?
 
-Para poder ver y usar los informes que se describen en este artículo, debe tener una función adecuada asignada en ambos la seguridad &amp; centro de cumplimiento y el centro de administración de Exchange.
+Para poder ver y usar los informes que se describen en este artículo, **debe tener una función adecuada asignada en ambos la seguridad &amp; centro de cumplimiento y el centro de administración de Exchange**.
 
 - Para la seguridad &amp; centro de cumplimiento, debe tener uno de los siguientes roles asignados:
     - Administración de la organización

@@ -3,7 +3,7 @@ title: Visualización de informes para la protección de amenaza avanzada de Off
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 11/27/2018
+ms.date: 01/07/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 description: Obtenga información sobre cómo buscar y usar informes para Office 365 avanzada protección contra amenazas en la seguridad &amp; centro de cumplimiento.
-ms.openlocfilehash: e9d3088f81d1020e70de4c2260fba81cd469715d
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: d387e020e5834d4961e7bda50b418ea11b9f0f4d
+ms.sourcegitcommit: 30faa3ba91cab4c36e3d8d8ed5858d5269ea8a56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706324"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27749354"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Visualización de informes para la protección de amenaza avanzada de Office 365
 
@@ -90,7 +90,7 @@ Además de los informes de ATP que se describe en este artículo, varios otros i
   
 ## <a name="what-permissions-are-needed-to-view-the-atp-reports"></a>¿Qué permisos son necesarios para ver los informes de ATP?
 
-Para poder ver y usar los informes que se describen en este artículo, debe tener una función adecuada asignada en ambos la seguridad &amp; centro de cumplimiento y el centro de administración de Exchange.
+Para poder ver y usar los informes que se describen en este artículo, **debe tener una función adecuada asignada en ambos la seguridad &amp; centro de cumplimiento y el centro de administración de Exchange**.
 
 - Para la seguridad &amp; centro de cumplimiento, debe tener uno de los siguientes roles asignados:
     - Administración de la organización

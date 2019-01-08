@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 description: Los administradores pueden aprender a crear reglas de flujo (también conocida como reglas de transporte) para cifrar y descifrar mensajes con Office 365 Message Encryption (OME) de correo.
-ms.openlocfilehash: 6633958478c947d765251145ecd6d45e34dea2ab
-ms.sourcegitcommit: 31098b35607d0fd949fd357f783d1e9ed2444deb
+ms.openlocfilehash: ce6b1ce60abb58c5f4e217c66bca013101af5f91
+ms.sourcegitcommit: 30faa3ba91cab4c36e3d8d8ed5858d5269ea8a56
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/31/2018
-ms.locfileid: "27466929"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27749364"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages-in-office-365"></a>Definir reglas de flujo de correo para cifrar mensajes de correo electrónico en Office 365
 
@@ -61,10 +61,10 @@ Puede definir reglas de flujo de correo para desencadenar el cifrado de mensajes
    Por ejemplo, para aplicar la regla sólo si el destinatario está fuera de su organización, seleccione **Agregar condición** y, a continuación, seleccione **el destinatario es interna y externa** \> **fuera de la organización** \> **Aceptar**.
 
 8. Para habilitar el cifrado mediante las nuevas capacidades OME, de **hacer lo siguiente**, seleccione **modificar la seguridad de los mensajes** y, a continuación, elija **aplicar el cifrado de mensajes de Office 365 y protección de derechos**. Seleccione una plantilla de RMS en la lista, elija **Guardar**y, a continuación, elija **Aceptar**.
+  
+  La lista de plantillas incluye todas las plantillas predeterminadas y opciones, así como las plantillas personalizadas que ha creado para utilizan por Office 365. Si la lista está vacía, asegúrese de que ha configurado el cifrado de mensajes de Office 365 con las nuevas capacidades como se describe en [Configurar nuevas capacidades de Office 365 Message Encryption integradas en la parte superior de la protección de la información de Azure](set-up-new-message-encryption-capabilities.md). Para obtener información acerca de las plantillas predeterminadas, vea [configuración y administración de plantillas para la protección de la información de Azure](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-templates). Para obtener información acerca de la opción **No reenviar** , vea [no reenviar una opción para los correos electrónicos](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails). Para obtener información acerca de la opción de **cifrar sólo** , vea [cifrar sólo una opción para los correos electrónicos](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails).
 
-   La lista de plantillas incluye todas las plantillas predeterminadas y opciones, así como las plantillas personalizadas que ha creado para utilizan por Office 365. Si la lista está vacía, asegúrese de que ha configurado el cifrado de mensajes de Office 365 con las nuevas capacidades como se describe en [Configurar nuevas capacidades de Office 365 Message Encryption integradas en la parte superior de la protección de la información de Azure](set-up-new-message-encryption-capabilities.md). Para obtener información acerca de las plantillas predeterminadas, vea [configuración y administración de plantillas para la protección de la información de Azure](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-templates). Para obtener información acerca de la opción **No reenviar** , vea [no reenviar una opción para los correos electrónicos](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails). Para obtener información acerca de la opción de **cifrar sólo** , vea [cifrar sólo una opción para los correos electrónicos](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails).
-
-   Puede elegir **Agregar acción** si desea especificar otra acción.
+  Puede elegir **Agregar acción** si desea especificar otra acción.
 
 ### <a name="use-the-eac-to-update-an-existing-mail-flow-rule-to-use-the-new-ome-capabilities"></a>Use el CEF para actualizar una regla de flujo de correo existente para usar las nuevas capacidades OME
 
@@ -118,11 +118,11 @@ Si aún no se ha desplazado la organización de Office 365 para las nuevas capac
 
    Por ejemplo, para aplicar la regla sólo si el destinatario está fuera de su organización, seleccione **Agregar condición** y, a continuación, seleccione **el destinatario es interna y externa** \> **fuera de la organización** \> **Aceptar**.
 
-  8. Para habilitar el cifrado sin usar las nuevas capacidades OME, en **hacer lo siguiente**, seleccione **modificar la seguridad de los mensajes** \> **aplicar la versión anterior de OME**y, a continuación, elija **Guardar**.
+8. Para habilitar el cifrado sin usar las nuevas capacidades OME, en **hacer lo siguiente**, seleccione **modificar la seguridad de los mensajes** \> **aplicar la versión anterior de OME**y, a continuación, elija **Guardar**.
 
-    Si recibe un error que IRM licencias no está habilitada, a continuación, no ha configurado OME para su organización todavía. Si desea configurar ahora OME, debe configurar para usar las nuevas capacidades OME. Para obtener información, vea [Configurar nuevas capacidades de Office 365 Message Encryption fundamentan en protección de la información de Azure](set-up-new-message-encryption-capabilities.md). Microsoft ya no admite la configuración de las nuevas implementaciones de OME sin las nuevas capacidades.
+  Si recibe un error que IRM licencias no está habilitada, a continuación, no ha configurado OME para su organización todavía. Si desea configurar ahora OME, debe configurar para usar las nuevas capacidades OME. Para obtener información, vea [Configurar nuevas capacidades de Office 365 Message Encryption fundamentan en protección de la información de Azure](set-up-new-message-encryption-capabilities.md). Microsoft ya no admite la configuración de las nuevas implementaciones de OME sin las nuevas capacidades.
 
-    Puede elegir **Agregar acción** si desea especificar otra acción.
+  Puede elegir **Agregar acción** si desea especificar otra acción.
 
 ### <a name="use-exchange-online-powershell-to-create-a-mail-flow-rule-for-encrypting-email-messages-without-the-new-ome-capabilities"></a>Use Exchange Online PowerShell para crear una regla de flujo de correo para cifrar los mensajes de correo electrónico sin las nuevas capacidades OME
 
