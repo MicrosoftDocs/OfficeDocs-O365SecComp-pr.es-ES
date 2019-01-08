@@ -13,12 +13,12 @@ search.appverid:
 ms.custom: TN2DMC
 ms.assetid: 4a05898c-b8e4-4eab-bd70-ee912e349737
 description: Obtenga información sobre cómo configurar la autenticación basada en dominio del mensaje, informes y conformidad (DMARC) para validar los mensajes enviados desde la organización de Office 365.
-ms.openlocfilehash: f8c310e5efb6859bff392a89a3ad325400aa369f
-ms.sourcegitcommit: 75b985b2574f4be70cf352498ea300b3d99dd338
+ms.openlocfilehash: 2f8e712028b5b5ee8950b48780083a20c7dce6ab
+ms.sourcegitcommit: bd1762ccf63c7d2ad8b49a936115171c72fb2c0f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "26255875"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27750049"
 ---
 # <a name="use-dmarc-to-validate-email-in-office-365"></a>Usar DMARC para validar el correo electrónico en Office 365
 
@@ -136,16 +136,16 @@ Para ver las instrucciones sobre cómo configurar DKIM para el dominio, incluyen
 Aunque existen otras opciones de sintaxis que no se mencionan aquí, estas son las opciones de sintaxis más usadas en Office 365. Formule el registro TXT de DMARC para el dominio con el siguiente formato:
   
 ```
-_dmarc.domainTTL IN TXT "v=DMARC1; pct=100; p=policy
+_dmarc.domain  TTL  IN  TXT  "v=DMARC1; pct=100; p=policy"
 ```
 
 donde:
   
 - *dominio* es el dominio que desee proteger. De forma predeterminada, el registro protege el correo desde el dominio y todos los subdominios. Por ejemplo, si especifica \_dmarc.contoso.com y, a continuación, DMARC protege el correo desde el dominio y todos los subdominios, como housewares.contoso.com o plumbing.contoso.com. 
     
-- *TTL* siempre debe ser el equivalente a una hora. La unidad usada para el TTL, ya sean las horas (1 hora), los minutos (60 minutos) o los segundos (3600 segundos), variará en función del registrador del dominio. 
+- *TTL* siempre debe ser el equivalente de una hora. La unidad utilizada para TTL, puede ser horas (1 hora), minutos (60 minutos) o segundos (3.600 segundos), variará en función del registrador para su dominio. 
     
-- pct=100 indica que esta regla debe usarse para el 100 % del correo electrónico.
+- *pct = 100* indica que se debe usar esta regla para 100% del correo electrónico.
     
 - *Directiva* especifica qué directiva desea que el servidor de recepción que se deben seguir si se produce un error en DMARC. Puede establecer la directiva en ninguno, cuarentena, o rechazar. 
     
