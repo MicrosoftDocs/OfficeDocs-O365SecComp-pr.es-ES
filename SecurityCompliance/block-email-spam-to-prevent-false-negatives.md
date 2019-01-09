@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: da21c0b6-e8f0-4cc8-af2e-5029a9433d59
 description: Sugerencias para configurar el filtro contra correo no deseado de Office 365 con el fin de bloquear el correo no deseado e impedir mensajes de falsos negativos. Un administrador usa el filtro de correo no deseado de Office 365 para impedir que se envíe correo no deseado a las bandejas de entrada de los usuarios.
-ms.openlocfilehash: 3502215dba4097d0643501dd089ec3fe94575c87
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: d96dfa0cad4ef8c27303c9f77d259d4c8b2b04c9
+ms.sourcegitcommit: 03e64ead7805f3dfa9149252be8606efe50375df
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22536088"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27769874"
 ---
 # <a name="block-email-spam-with-the-office-365-spam-filter-to-prevent-false-negative-issues"></a>Bloquear el correo no deseado con el filtro contra correo no deseado de Office 365 para evitar problemas de falsos negativos
 
@@ -79,7 +79,7 @@ El servicio EOP se diseñó para respetar las listas de remitentes bloqueados y 
   
 - Si un mensaje pasa un filtrado de correo no deseado normal mediante EOP y, después, se entrega en un servidor Exchange local y EOP asigna un veredicto de correo no deseado de SCL 1-4 (correo deseado), la lista de remitentes bloqueados local de los usuarios invalidará el veredicto de filtro de correo no deseado de EOP y lo entregará en la carpeta Correo no deseado.
     
-- Si, en EOP, una regla de flujo del correo de Exchange asigna un SCL de -1 a un mensaje o la dirección IP WHEL dominio se encuentra en la lista de permitidos, el valor de SCL se propagará al servidor Exchange local mediante conectores. En este caso, no se exigirá el uso de la lista de remitentes bloqueados del usuario. Para cambiar esto, puede crear una regla de flujo del correo local que establezca el valor de SCL en 0. Esto hará que Outlook exija el uso de la lista de remitentes bloqueados local del usuario.
+- Si a un mensaje en EOP se le asigna un SCL -1 mediante una regla de flujo del correo de Exchange o porque la dirección IP o dominio se encuentran en la lista de permitidos, el valor de SCL se propagará al servidor Exchange local mediante conectores. En este caso, no se exigirá la lista de remitentes bloqueados del usuario. Para que Outlook exija el uso de la lista de remitentes bloqueados local del usuario, puede crear una regla de flujo del correo local que establezca el valor de SCL a 0.
     
 **Para configurar una regla de flujo del correo con el fin de impedir que se entreguen mensajes en la bandeja de entrada de los usuarios con la lista de remitentes bloqueados**
   
@@ -97,7 +97,6 @@ El servicio EOP se diseñó para respetar las listas de remitentes bloqueados y 
 > Si usa una regla de flujo del correo para cambiar el valor de SCL a 0 (o a cualquier valor distinto de -1), se aplicarán en el mensaje todas las opciones de correo no deseado de Outlook. Esto quiere decir que se respetarán las listas seguras y de bloqueados, pero los mensajes que no tengan direcciones en las listas de remitentes seguros o bloqueados podrían marcarse como correo no deseado al procesar el filtro de correo no deseado del lado cliente. Si quiere que Outlook procese las listas seguras y de bloqueados, pero no usa el filtro de correo no deseado de lado cliente, necesita establecer la opción en “Sin filtrado automático” en Opciones de correo no deseado de Outlook. “Sin filtrado automático” es la opción predeterminada en las versiones más recientes de Outlook, pero necesita confirmar que se aplicó esta opción para asegurarse de que el filtro de correo no deseado de lado cliente no se aplique en los mensajes. Como administrador, puede exigir que se deshabilite el filtrado de correo no deseado de Outlook si sigue las instrucciones que se indican en [Outlook: Configuración de directiva para deshabilitar la interfaz de usuario de correo no deseado y el mecanismo de filtrado](https://support.microsoft.com/es-ES/kb/2180568).
   
 ## <a name="see-also"></a>Vea también
-<a name="BKMK_please_comment"> </a>
 
 [Protección contra correo no deseado de Office 365](anti-spam-protection.md)
   
