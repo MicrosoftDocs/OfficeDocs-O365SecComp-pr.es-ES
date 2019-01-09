@@ -12,16 +12,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Si envía un gran volumen de correo electrónico de dominio no registradas, corre el riesgo de su correo electrónico se bloquean. Lea este artículo para obtener más información.
-ms.openlocfilehash: 30d7887be0429195380f2c4ae1a328904dffd69c
-ms.sourcegitcommit: 6d72cdb882b93edf6dfddb5ff2e6d8a16e2fa0bc
+ms.openlocfilehash: f632c5f7ab94a200a364828408b13c0026335869
+ms.sourcegitcommit: 03e64ead7805f3dfa9149252be8606efe50375df
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "25596733"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27769793"
 ---
 # <a name="unregistered-domain-email-what-you-need-to-know"></a>Correo electrónico de dominio no registrada: ¿Qué necesita saber
 
-Office 365 permite los inquilinos para que transmita algunos mensajes a través de Exchange Online Protection (EOP). Un ejemplo compatible de esto sería cuando los usuarios tienen un buzón de Office 365 y alguien externo envía correo electrónico pero reenvío de correo electrónico está configurado para que vuelve para el buzón del usuario externo. Esto es más comunes en entornos de educación donde los alumnos desean sacar provecho de su interfaz de correo electrónico personal, aunque siguen teniendo correos electrónicos relacionados a la escuela. Otro ejemplo es cuando los clientes se encuentran en un escenario híbrido y tienen servidores locales que envían correo electrónico fuera de la elevación de privilegios.
+Office 365 permite los inquilinos para que transmita algunos mensajes a través de Exchange Online Protection (EOP). Un ejemplo compatible de esto sería cuando los usuarios tienen un buzón de Office 365 y alguien externo envía correo electrónico pero reenvío de correo electrónico está configurado para que vuelve para el buzón del usuario externo. Esto es más comunes en entornos de educación donde los alumnos desean sacar provecho de su interfaz de correo electrónico personal, aunque siguen teniendo correos electrónicos relacionados a la escuela. Otro ejemplo es cuando los clientes se encuentran en un escenario híbrido y tienen los servidores locales que envían correo electrónico fuera de la elevación de privilegios.
 
 ## <a name="problems-with-unregistered-domains"></a>Problemas con los dominios no registradas
 
@@ -46,14 +46,14 @@ Hay varias cosas que debe hacer en el caso de que se obtenga bloqueado para el e
 
 4. Una vez hecho, debe llamar a Microsoft Support y preguntar obtener al inquilino desbloqueado para enviar de nuevo de dominios no registradas.  Proporcionar el código de error es útil, pero necesita demostrar que el entorno está protegido y que spam no se enviarán nuevo. Puede encontrar más información acerca de cómo abrir un caso de soporte [aquí](https://support.office.com/en-us/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b#ID0EAADAAA=online).
   
-## <a name="for-more-information"></a>Para obtener más información
+## <a name="for-more-information"></a>Más información
 
-[Office 365 email anti-spam protection](anti-spam-protection.md)
+[Protección contra correo no deseado de Office 365](anti-spam-protection.md)
 
 [Informes de no entrega de correo electrónico en Office 365](https://support.office.com/article/email-non-delivery-reports-in-office-365-51daa6b9-2e35-49c4-a0c9-df85bf8533c3)
 
 [Configurar el reenvío de correo electrónico para un buzón de correo](https://docs.microsoft.com/en-us/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding)
 
-[Cómo configurar un dispositivo o aplicación multifunción para enviar correo mediante Office 365](https://support.office.com/en-us/article/How-to-set-up-a-multifunction-device-or-application-to-send-email-using-Office-365-69f58e99-c550-4274-ad18-c805d654b4c4)
+[Cómo configurar una aplicación o dispositivo multifunción para enviar correos electrónicos mediante Office 365](https://support.office.com/en-us/article/How-to-set-up-a-multifunction-device-or-application-to-send-email-using-Office-365-69f58e99-c550-4274-ad18-c805d654b4c4)
 
 [Administrar dominios aceptados en Exchange Online](https://docs.microsoft.com/en-us/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains).

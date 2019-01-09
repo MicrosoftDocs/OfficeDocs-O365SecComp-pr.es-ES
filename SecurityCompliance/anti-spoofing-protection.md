@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: d24bb387-c65d-486e-93e7-06a4f1a436c0
 description: Este artículo describe cómo Office 365 mitiga frente a ataques de suplantación de identidad que usa falsificado dominios de remitente, es decir, los dominios que están suplantados. Para ello, mediante el análisis de los mensajes y bloqueo de las que pueden ser autenticados neithe mediante el uso de métodos de autenticación de correo electrónico estándar, ni otras técnicas de reputación del remitente. Este cambio se que se implementa para reducir el número de ataques de suplantación de identidad se exponen las organizaciones en Office 365 a.
-ms.openlocfilehash: 95f4995b6447870700bc483f205ca3ff831045f5
-ms.sourcegitcommit: 8c5a88433cff23c59b436260808cf3d91b06fdef
+ms.openlocfilehash: 19e7ea957592a486a559dac222a51139bf79b574
+ms.sourcegitcommit: 03e64ead7805f3dfa9149252be8606efe50375df
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27194721"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27769864"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Protección contra suplantación de identidad en Office 365
 
@@ -414,21 +414,21 @@ En general, la directiva aplicada a un mensaje se identifica en el encabezado X-
   
 |**Prioridad**|**Directiva**|**Categoría**|**¿Donde administradas?**|**Se aplica a**|
 |:-----|:-----|:-----|:-----|:-----|
-|1   <br/> |Malware  <br/> |MALW  <br/> |[Directiva de malware](https://technet.microsoft.com/en-us/library/jj200745%28v=exchg.150%29.aspx) <br/> |Todas las organizaciones  <br/> |
-|2   <br/> |Suplantación de identidad  <br/> |PHSH  <br/> |[Directiva de filtro de contenido hospedado](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Todas las organizaciones  <br/> |
-|3   <br/> |Correo no deseado de alta confianza  <br/> |HSPM  <br/> |[Directiva de filtro de contenido hospedado](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Todas las organizaciones  <br/> |
-|4   <br/> |Suplantación de identidad  <br/> |SUPLANTACIÓN DE LA  <br/> |[Directiva contra suplantación de identidad](https://go.microsoft.com/fwlink/?linkid=864553), [inteligencia de suplantación](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf) <br/> |Todas las organizaciones  <br/> |
-|5   <br/> |Correo no deseado  <br/> |SPM  <br/> |[Directiva de filtro de contenido hospedado](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Todas las organizaciones  <br/> |
-|6   <br/> |Masiva  <br/> |MASIVA  <br/> |[Directiva de filtro de contenido hospedado](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Todas las organizaciones  <br/> |
-|7   <br/> |Suplantación de dominio  <br/> |DIMP  <br/> |[Directiva contra suplantación de identidad](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |Solo para organizaciones con ATP  <br/> |
-|8   <br/> |Suplantación de usuario  <br/> |UIMP  <br/> |[Directiva contra suplantación de identidad](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |Solo para organizaciones con ATP <br/> |
+|1  <br/> |Malware  <br/> |MALW  <br/> |[Directiva de malware](https://technet.microsoft.com/en-us/library/jj200745%28v=exchg.150%29.aspx) <br/> |Todas las organizaciones  <br/> |
+|2  <br/> |Suplantación de identidad  <br/> |PHSH  <br/> |[Directiva de filtro de contenido hospedado](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Todas las organizaciones  <br/> |
+|3  <br/> |Correo no deseado de alta confianza  <br/> |HSPM  <br/> |[Directiva de filtro de contenido hospedado](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Todas las organizaciones  <br/> |
+|4  <br/> |Suplantación de identidad  <br/> |SUPLANTACIÓN DE LA  <br/> |[Directiva contra suplantación de identidad](https://go.microsoft.com/fwlink/?linkid=864553), [inteligencia de suplantación](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf) <br/> |Todas las organizaciones  <br/> |
+|5  <br/> |Correo no deseado  <br/> |SPM  <br/> |[Directiva de filtro de contenido hospedado](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Todas las organizaciones  <br/> |
+|6  <br/> |Masiva  <br/> |MASIVA  <br/> |[Directiva de filtro de contenido hospedado](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Todas las organizaciones  <br/> |
+|7  <br/> |Suplantación de dominio  <br/> |DIMP  <br/> |[Directiva contra suplantación de identidad](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |Solo para organizaciones con ATP  <br/> |
+|8  <br/> |Suplantación de usuario  <br/> |UIMP  <br/> |[Directiva contra suplantación de identidad](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |Solo para organizaciones con ATP <br/> |
    
 Si dispone de varias directivas de Anti-phishing diferentes, se aplicará el uno en la prioridad más alta. Por ejemplo, suponga que tiene dos directivas:
   
 |**Directiva**|**Prioridad**|**Suplantación de usuario o dominio**|**Contra la suplantación**|
 |:-----|:-----|:-----|:-----|
-|A  <br/> |1   <br/> |Activado  <br/> |Desactivado  <br/> |
-|B  <br/> |2   <br/> |Off  <br/> |Activado  <br/> |
+|A  <br/> |1  <br/> |Activado  <br/> |Desactivado  <br/> |
+|B  <br/> |2  <br/> |Off  <br/> |Activado  <br/> |
    
 Si un mensaje se presenta en y se identifica como suplantación de suplantación de identidad y de usuario, el mismo conjunto de usuarios se limita a la directiva de A y B de la directiva y, a continuación, el mensaje se trata como una dirección falsa pero no se aplica ninguna acción con respecto a la suplantación de identidad está desactivado , y SUPLANTACIÓN de la que se ejecuta en una prioridad superior (4) suplantación de usuario (8).
   
@@ -444,7 +444,7 @@ Sin embargo, hay un escenario legítimo donde debe deshabilitarse contra la supl
   
 ![Registro de MX del cliente no hace referencia a Office 365](media/62127c16-cfb8-4880-9cad-3c12d827c67e.jpg)
   
-El otro servidor puede ser un servidor de correo local de Exchange, un dispositivo como Ironport, el filtrado de correo o servicio hospedado de otra en la nube.
+El otro servidor puede ser un intercambio de servidor de correo, un dispositivo como Ironport, el filtrado de correo local o servicio hospedado de otra en la nube.
   
 Si el registro MX del dominio del destinatario no apunta a Office 365, no es necesario deshabilitar contra la suplantación porque Office 365 busca el registro MX de su dominio receptor y suprime contra la suplantación apunta a otro servicio. Si no sabe si su dominio tiene otro servidor en la parte frontal, puede usar un sitio Web al igual que el cuadro de herramientas de MX para buscar el registro MX. Puede que diga algo parecido a lo siguiente:
   
@@ -635,7 +635,7 @@ Si es un administrador de dominio, pero no es un cliente de Office 365:
     
 - Si tiene masivo que se transmite el correo electrónico en su nombre, debe trabajar con ellos para enviar correo electrónico de forma tal que el dominio en el campo de envío: dirección (si le pertenece) se alinea con el dominio que pasa SPF o DMARC.
     
-- Si tiene in situ en los servidores de correo o enviar desde un proveedor de Software como servicio, o desde un servicio de hospedaje en la nube como Microsoft Azure, GoDaddy, Rackspace, servicios Web de Amazon o similar, debe asegurarse de que se agregan a su registro SPF.
+- Si tiene local de los servidores de correo o enviar desde un proveedor de Software como servicio, o desde un servicio de hospedaje en la nube como Microsoft Azure, GoDaddy, Rackspace, servicios Web de Amazon o similar, debe asegurarse de que se agregan a su registro SPF.
     
 - Si es un dominio pequeño que está hospedado en un ISP, debe configurar el registro de SPF según las instrucciones que es proporcionado por el ISP. La mayoría de ISP proporcionan estos tipos de instrucciones y pueden encontrarse en las páginas de soporte técnico de la empresa.
     

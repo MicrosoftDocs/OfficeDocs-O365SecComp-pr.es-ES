@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.audience: Admin
-ms.date: 11/08/2018
+ms.date: 01/08/2019
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6e13311e-92ae-495e-a619-56d770199170
 description: La característica de los datos adjuntos seguros proporciona comprobación de tiempo de clic de los datos adjuntos de correo electrónico. Utilizar datos adjuntos seguros para proteger la organización de las personas de archivos malintencionados enviar o recibir por correo electrónico.
-ms.openlocfilehash: e09c9abec7485408f102fa6c20d14b91d9c2bf36
-ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
+ms.openlocfilehash: 85c1ec3e0126a155f863b9fef9ddb36b13d0b3fb
+ms.sourcegitcommit: 03e64ead7805f3dfa9149252be8606efe50375df
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "26238442"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27769844"
 ---
 # <a name="office-365-atp-safe-attachments"></a>Datos adjuntos seguros ATP de Office 365
 
@@ -39,13 +39,13 @@ Aquí hay dos ejemplos de datos adjuntos seguros de ATP en el trabajo.
     
 - **En el ejemplo 2: archivo en SharePoint Online** Suponga que Jean recibió un archivo y carga en una biblioteca en SharePoint Online. Jean comparte el vínculo al archivo con el resto del equipo, no saber que el archivo es en realidad malintencionado. Afortunadamente, [ATP para SharePoint, OneDrive y los equipos de Microsoft](atp-for-spo-odb-and-teams.md) detecta el archivo malintencionado y lo bloquea. Unos días más tarde, Chris que se va a abrir el documento. Aunque Chris puede ver que el archivo se encuentra allí, Chris no se puede abrir o compartirlo, lo que impide el archivo malintencionado en equipo de Chris y otros usuarios. 
     
-Las directivas de los datos adjuntos seguros de ATP se pueden aplicar a usuarios específicos o grupos de la organización o para todo el dominio. Para obtener más información, vea **[configurar las directivas de los datos adjuntos seguros de ATP en Office 365](set-up-atp-safe-attachments-policies.md)**. 
+Datos adjuntos seguros de ATP que lleve a cabo el examen se coloque en la misma región donde residen los datos de Office 365. Para obtener más información acerca de la zona geográfica de centro de datos, vea [¿dónde están los datos que se encuentra?](https://products.office.com/where-is-your-data-located?geo=All) 
+
+Las directivas de los datos adjuntos seguros de ATP se pueden aplicar a usuarios específicos o grupos de la organización o para todo el dominio. Además, las directivas de los datos adjuntos seguros de ATP pueden configurarse para usar datos adjuntos de marcador de posición mientras se están analizando datos adjuntos real. Para obtener más información, vea **[configurar las directivas de los datos adjuntos seguros de ATP en Office 365](set-up-atp-safe-attachments-policies.md)**. 
   
 ## <a name="how-to-get-atp-safe-attachments"></a>Cómo obtener datos adjuntos seguros de ATP
 
-La característica de los datos adjuntos seguros de ATP es parte de la [Protección contra amenazas de avanzada](office-365-atp.md), que se incluye en Microsoft 365 Enterprise, Office 365 Enterprise E5 y 365 de Microsoft Business. 
-  
-La característica de los datos adjuntos seguros de ATP aplica cuando:
+La característica de los datos adjuntos seguros de ATP es parte de [La protección de amenaza avanzada de Office 365](office-365-atp.md). Las características de los datos adjuntos seguros de ATP aplican cuando:
   
 - Se configuran las directivas de los datos adjuntos seguros de ATP. (Vea [configurar las directivas de los datos adjuntos seguros de ATP en Office 365](set-up-atp-safe-attachments-policies.md)).
     
@@ -53,11 +53,12 @@ La característica de los datos adjuntos seguros de ATP aplica cuando:
     
 ## <a name="how-to-know-if-atp-safe-attachments-protection-is-in-place"></a>Cómo saber si la protección de los datos adjuntos seguros de ATP es en contexto
 
- [Las directivas de los datos adjuntos seguros de ATP](set-up-atp-safe-attachments-policies.md) debe definirse en orden para la protección de los datos adjuntos seguros de ATP estar en su lugar. 
-  
 Es una buena manera de ver cómo funciona el servicio mediante la [visualización de informes de protección avanzada de amenaza](view-reports-for-atp.md).
+
+
+[Las directivas de los datos adjuntos seguros de ATP](set-up-atp-safe-attachments-policies.md) debe definirse en orden para la protección de los datos adjuntos seguros de ATP estar en su lugar.   
   
-Además, en la siguiente tabla se describe algunos escenarios de ejemplo. En todos estos casos, se supone que la organización tiene Office 365 Enterprise E5, que incluye la protección contra amenazas de avanzada.
+La tabla siguiente describen algunos escenarios de ejemplo. En todos estos casos, se supone que la organización tiene una suscripción a Office 365 que incluye la protección contra amenazas de avanzada.
   
 |**Escenario de ejemplo**|**¿Se aplica protección de los datos adjuntos seguros de ATP en este caso?**|
 |:-----|:-----|

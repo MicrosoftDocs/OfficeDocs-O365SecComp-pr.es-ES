@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 description: Si la organización envía una gran cantidad de correo masivo que se marca como correo no deseado, que se podría obtener bloqueado de envío de correo electrónico con Office 365. Lea este artículo para obtener más información acerca de por qué esto ocurre y qué puede hacer acerca de él.
-ms.openlocfilehash: 916a062d08e01954e7736b6f22d297aea04baf28
-ms.sourcegitcommit: 17dda7ece5c9e884944a92ac0f842cf1e62ec506
+ms.openlocfilehash: a18e584a260218a53494ef49dd2d7380a0a9a3f1
+ms.sourcegitcommit: 03e64ead7805f3dfa9149252be8606efe50375df
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "23977585"
+ms.lasthandoff: 01/08/2019
+ms.locfileid: "27769794"
 ---
 # <a name="controlling-outbound-spam-in-office-365"></a>Controlar el correo no deseado saliente en Office 365
 
@@ -50,7 +50,7 @@ Un solo mensaje se marca como spam puede ser un misclassification por el motor d
 
 Es difícil mantener un equilibrio entre los clientes que desean enviar un gran volumen de correo electrónico frente a proteger el servicio de cuentas en peligro y emailers de forma masiva con prácticas de adquisición de lista deficiente. Una vez más, el costo de un IP saliente en una lista de bloqueo de parte 3ª de destino es mayor que un cliente de envío de correo electrónico saliente de bloqueo. Tal como se describe en la [Descripción del servicio de Exchange Online](https://technet.microsoft.com/en-us/library/exchange-online-limits.aspx#Receiving and sending limits), uso de elevación de privilegios para enviar correo electrónico masivo no es un uso del servicio y no admitidas sólo se permite en una base de "mejor esfuerzo". Para los clientes que desean enviar correo electrónico masivo, se recomienda lo siguiente:
 
-r. **enviar el correo electrónico masivo a través de sus propios servidores de correo local**. Esto significa que el cliente tendrá que mantener su propia infraestructura de correo electrónico para este tipo de correo electrónico.
+r. **enviar el correo electrónico masivo a través de su propio local en los servidores de correo**. Esto significa que el cliente tendrá que mantener su propia infraestructura de correo electrónico para este tipo de correo electrónico.
 
 b. **emailer de usar un 3rd parte masiva para enviar la comunicación masiva**. Hay varias emailers de masa parte 3ª cuyo único empresarial es enviar correo electrónico masivo. Puede trabajar con los clientes para asegurarse de que disponen de buenas prácticas de Email y tienen recursos dedicados a aplicarla. 
 
