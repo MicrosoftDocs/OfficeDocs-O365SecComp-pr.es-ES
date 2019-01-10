@@ -3,7 +3,7 @@ title: Nueva directiva de cifrado de mensajes de Office 365 para información co
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 1/7/2019
+ms.date: 1/9/2019
 ROBOTS: NOINDEX, NOFOLLOW
 audience: ITPro
 ms.topic: article
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: 'Resumen: Aplica automáticamente la directiva de cifrado de mensajes de Office 365 para implantar para todos los inquilinos de tipos de información confidencial.'
-ms.openlocfilehash: f5996707d1cafe8dc1bf90856878de0a4fb7b77b
-ms.sourcegitcommit: 30faa3ba91cab4c36e3d8d8ed5858d5269ea8a56
+ms.openlocfilehash: a8cd132af2b1429698ea92779a3c54559e2b13e2
+ms.sourcegitcommit: b936a2fd4b7f7a7099b96cc29580ed55bdb8bf2b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27752096"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "27789458"
 ---
 # <a name="office-365-message-encryption-policy-for-sensitive-information"></a>Directiva de cifrado de mensajes de Office 365 para información confidencial
 
@@ -30,7 +30,7 @@ La organización recibirá una notificación en el centro de mensajes de Office 
 
 ## <a name="sensitive-information-type-policy-details"></a>Detalles de directivas de tipo de información confidencial
 
-Se creará una regla de flujo de correo de Exchange en la organización que se va a cifrar automáticamente mensajes de correo electrónico desde fuera de la organización con el *Solo cifrar* directiva si contienen los siguientes tipos de información confidencial:
+Se creará una regla de flujo de correo de Exchange en la organización que se va a cifrar automáticamente mensajes de correo electrónico desde fuera de la organización con el *Solo cifrar* directiva si los mensajes de correo electrónico o sus datos adjuntos contienen los siguientes tipos de información confidencial:
 
 - Número de enrutamiento ABA
 - Número de tarjeta de crédito
@@ -70,6 +70,6 @@ Si le gustaría voluntaria de este cambio, siga estos pasos:
    Set-IRMConfiguration -AutomaticServiceUpdateEnabled $false
    ```
 
-## <a name="how-do-i-disable-the-automatic-policy"></a>¿Cómo se puede deshabilitar la directiva automática?
+## <a name="how-do-i-disable-or-customize-the-automatic-policy"></a>¿Cómo deshabilitar o personalizar la directiva automática?
 
-Si no voluntaria de este cambio y ya se ha creado la regla de correo de Exchange, puede [Deshabilitar la regla](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#enable-or-disable-a-mail-flow-rule) yendo al **flujo de correo** > de**reglas** en la administración de Exchange (EAC) del centro y deshabilite la regla "*cifrar saliente mensajes de correo electrónico confidenciales (fuera de la regla del cuadro)*".
+Si no voluntaria de este cambio y ya se ha creado la regla de flujo de correo de Exchange, puede [Deshabilitar o editar la regla](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#enable-or-disable-a-mail-flow-rule) yendo al **flujo de correo** > **reglas** en el Exchange admin center (EAC) y deshabilite la regla "*cifrar correos salientes con información confidencial (fuera de la regla del cuadro)*".

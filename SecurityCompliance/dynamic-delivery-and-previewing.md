@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: f16c9928-8e3d-4219-b994-271dc9a16272
 description: Al configurar las directivas de los datos adjuntos seguros ATP, elija entrega dinámica para evitar retrasos de mensaje y permiten a los usuarios obtener una vista previa de datos adjuntos que se están analizando.
-ms.openlocfilehash: 95c270e871c3febb13eef8c4374d996fc763315b
-ms.sourcegitcommit: 03e64ead7805f3dfa9149252be8606efe50375df
+ms.openlocfilehash: fe1b8fd2e26c683735f64de6b5b195e3bc351c8e
+ms.sourcegitcommit: b936a2fd4b7f7a7099b96cc29580ed55bdb8bf2b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27769834"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "27789468"
 ---
 # <a name="dynamic-delivery-and-previewing-with-office-365-atp-safe-attachments"></a>Entrega dinámica y obtener una vista previa con Office 365 ATP los datos adjuntos seguros
 
@@ -35,6 +35,9 @@ Entrega dinámica elimina los retrasos de correo electrónico mediante el envío
 - Si un archivo adjunto se determina como malintencionado, se envía a cuarentena, donde una persona en el equipo de seguridad de su organización (por ejemplo, un administrador global de Office 365 o un administrador de seguridad) puede [administrar los mensajes en cuarentena en Office 365](manage-quarantined-messages-and-files.md).
 
 La mayoría de los archivos PDF y Office documentos pueden ser una vista previa en modo seguro mientras ATP análisis está en curso. Si un archivo adjunto no es compatible con el controlador de vista previa dinámica entrega, los destinatarios de correo electrónico ven un marcador de posición de datos adjuntos hasta que se complete el análisis de los datos adjuntos seguros de ATP.
+
+> [!TIP]
+> Si está usando un dispositivo móvil y documentos PDF no se procesan en el controlador de vista previa dinámica entrega en primer lugar, intente iniciar sesión en Office 365 mediante el explorador móvil.
 
 Con la entrega dinámica, personas puedan leer y responder a sus mensajes de correo electrónico inmediatamente, mientras se están analizando sus datos adjuntos. 
 
@@ -73,4 +76,4 @@ Hay determinados escenarios en los que no se admite la entrega dinámica. Estos 
 - Entornos en los que un administrador de Exchange Online ha habilitado Exclaimer. Para resolver este problema, vea [los mensajes con datos adjuntos no se entregan cuando se usan entrega dinámica ATP y Exclaimer](https://support.microsoft.com/help/4014438/messages-with-attachments-are-not-delivered-when-atp-dynamic-delivery)
 
 - Mensajes cifrados con [Extensiones seguras/multipropósito de correo Internet (S/MIME)](s-mime-for-message-signing-and-encryption.md))
-    
+
