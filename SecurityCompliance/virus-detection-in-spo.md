@@ -3,7 +3,7 @@ title: Detección de virus en SharePoint Online
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 4/17/2018
+ms.date: 01/14/2019
 ms.audience: Admin
 ms.topic: reference
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 description: Office 365 puede ayudar a proteger su entorno de malware mediante la detección de virus en los archivos que los usuarios cargar en SharePoint Online. Los archivos se examinan en busca de virus después de que se cargan. Si se encuentra un archivo infectado, se establece una propiedad para que los usuarios no se pueden descargar o sincronizar el archivo.
-ms.openlocfilehash: 22e983d35283ff96e1469fdf913e25b8d1d1c485
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: ab02d2d4e82e9427ec6b512490f94ccc9c14b54e
+ms.sourcegitcommit: 5ccc3dd0d1c087bffd3a8fc807d5d1750f046eeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22536452"
+ms.lasthandoff: 01/14/2019
+ms.locfileid: "28009596"
 ---
 # <a name="virus-detection-in-sharepoint-online"></a>Detección de virus en SharePoint Online
 
@@ -48,7 +48,10 @@ Esto es lo que sucede:
   
 1. Un usuario abre un explorador web y se intenta descargar un archivo infectado desde SharePoint Online.
     
-2. El usuario recibe una advertencia de que un virus ha detectado y se le ofrecerá la opción para descargar el archivo e intentar limpiar utilizando su propio software antivirus.
+2. El usuario recibe una advertencia de que se ha detectado un virus. Se concede al usuario la opción para descargar el archivo e intentar limpiar utilizando su propio software antivirus.
+
+> [!NOTE]
+> Puede usar el cmdlet Set-SPOTenant con el parámetro **DisallowInfectedFileDownload** para no permitir a los usuarios descargar un archivo detectado, incluso en la ventana de advertencia de antivirus. Vea [DisallowInfectedFileDownload] (https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant).
     
 ## <a name="what-happens-when-the-onedrive-sync-client-tries-to-sync-an-infected-file"></a>¿Qué sucede cuando el cliente de sincronización de OneDrive intenta sincronizar un archivo infectado?
 

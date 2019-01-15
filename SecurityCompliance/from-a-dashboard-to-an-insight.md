@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 703c41df-b3e2-4e7e-9eeb-1a0b8d60fb56
 description: Obtenga información sobre cómo puede ir desde un panel a un entendimiento con acciones recomendadas en la seguridad &amp; centro de cumplimiento.
-ms.openlocfilehash: 933bf6e86bc1ddce9259d071b69654f68e4dd370
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: cbea4dadefa498ac164773718ef8a4dbad351fb7
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706154"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014732"
 ---
 # <a name="walkthrough---from-a-dashboard-to-an-insight"></a>Tutorial: desde un panel o a un reporte
 
@@ -30,27 +30,15 @@ Se trata de uno de varios tutoriales para la seguridad &amp; centro de cumplimie
 
 Examinemos el flujo de un panel a un informe a un entendimiento y la acción. (Esto es un ejemplo de [suplantación de la inteligencia](learn-about-spoof-intelligence.md) de breve). 
   
-1. Empezamos con el panel de la seguridad en la [seguridad &amp; centro de cumplimiento](https://security.microsoft.com). (Vaya a **administración de amenaza** \> **panel**.)
-    
-    ![En la seguridad &amp; centro de cumplimiento, elija Administración de amenaza \> panel](media/05a38660-eb13-4960-a266-11809c453d95.png)
+1. Empezamos con el panel de la seguridad en la [seguridad &amp; centro de cumplimiento](https://protection.office.com). (Vaya a **administración de amenaza** \> **panel**.)<br>![En la seguridad &amp; centro de cumplimiento, elija Administración de amenaza \> panel](media/05a38660-eb13-4960-a266-11809c453d95.png)<br>
   
-2. En la fila de **conocimientos** , se observe un entendimiento que indica que es necesario revisar algunos dominios que podrían ser sospechosos. (En la fila de **datos** , haga clic en **pares de dominio**).
-    
-    ![La fila de perspectivas menciones posibles problemas de suplantación de identidad](media/dd1d0cb3-3201-45d7-b41d-18a0944fe85d.png)
+2. En la fila de **conocimientos** , se observe un entendimiento que indica que es necesario revisar algunos dominios que podrían ser sospechosos. (En la fila de **datos** , haga clic en **pares de dominio**).<br>![La fila de perspectivas menciones posibles problemas de suplantación de identidad](media/dd1d0cb3-3201-45d7-b41d-18a0944fe85d.png)<br>
   
-3. Se obtiene una lista de las actividades relacionadas con suplantación de inteligencia. Estos son instancias donde se han enviado mensajes de correo electrónico que parecen proceden de nuestra organización pero, de hecho, enviados desde otra organización. El objetivo es determinar si están autorizados los mensajes falsos o no.
+3. Se obtiene una lista de las actividades relacionadas con suplantación de inteligencia. Estos son instancias donde se han enviado mensajes de correo electrónico que parecen proceden de nuestra organización pero, de hecho, enviados desde otra organización. El objetivo es determinar si están autorizados los mensajes falsos o no.<br>![Suplantación de la inteligencia insights](media/a2e2b4fd-0c1e-499f-8401-cf3089da82fa.png)<br>En esta lista, podemos ordenar la información por recuento de mensajes, la fecha de que la suplantación de identidad se detectó por última vez y mucho más. (Haga clic en los encabezados de columna, como **recuento de mensaje** o **visto por última vez** para ver cómo ordenación funciona). 
     
-    ![Suplantación de la inteligencia insights](media/a2e2b4fd-0c1e-499f-8401-cf3089da82fa.png)
+4. Al seleccionar un elemento en la lista, abrirá un panel de detalles donde podemos ver información adicional, incluidos los mensajes de correo electrónico similar que se detectaron. (Haga clic en un elemento en la lista y revise la información y recomendaciones).<br>![Al seleccionar un elemento abrirá un panel de detalles](media/7ad1faa5-6ca2-474e-a609-eb275e0a8e59.png)<br>
   
-    En esta lista, podemos ordenar la información por recuento de mensajes, la fecha de que la suplantación de identidad se detectó por última vez y mucho más. (Haga clic en los encabezados de columna, como **recuento de mensaje** o **visto por última vez** para ver cómo ordenación funciona). 
-    
-4. Al seleccionar un elemento en la lista, abrirá un panel de detalles donde podemos ver información adicional, incluidos los mensajes de correo electrónico similar que se detectaron. (Haga clic en un elemento en la lista y revise la información y recomendaciones).
-    
-    ![Al seleccionar un elemento abrirá un panel de detalles](media/7ad1faa5-6ca2-474e-a609-eb275e0a8e59.png)
-  
-5. Observe que en la parte superior del panel, tenemos la opción para agregar el remitente a la lista de remitentes permitidos de nuestra organización. (No seleccione **lista de permitidos de agregar al remitente 'AllowedtoSpoof'** hasta que esté seguro de que desea hacerlo. [Obtenga más información sobre inteligencia de réplicas](learn-about-spoof-intelligence.md).)
-    
-    ![Puede autorizar un remitente](media/caf0c20a-6047-486d-8060-5a229a3de49f.png)
+5. Observe que en la parte superior del panel, tenemos la opción para agregar el remitente a la lista de remitentes permitidos de nuestra organización. (No seleccione **lista de permitidos de agregar al remitente 'AllowedtoSpoof'** hasta que esté seguro de que desea hacerlo. [Obtenga más información sobre inteligencia de réplicas](learn-about-spoof-intelligence.md).)<br>![Puede autorizar un remitente](media/caf0c20a-6047-486d-8060-5a229a3de49f.png)
   
 De este modo, se puede mover de un panel a conocimientos y acciones recomendadas.
   

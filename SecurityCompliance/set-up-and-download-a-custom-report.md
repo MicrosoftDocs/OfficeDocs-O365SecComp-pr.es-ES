@@ -12,23 +12,23 @@ search.appverid:
 - MOE150
 ms.assetid: 1a7be622-f6a5-4ce1-a343-f249475334f6
 description: Obtenga información sobre cómo configurar y descargar un informe con un intervalo de fechas personalizado y filtros en la seguridad &amp; centro de cumplimiento.
-ms.openlocfilehash: 4bfd2b0cc9d0076085e312c7478a0f356b4f39d5
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 313caf1e6d7a4cdca74979c3a5ccdbc413c6c7db
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706034"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014752"
 ---
 # <a name="set-up-and-download-a-custom-report-in-the-security-amp-compliance-center"></a>Configurar y descargar un informe personalizado en la seguridad &amp; centro de cumplimiento
 
-En la [seguridad &amp; centro de cumplimiento](https://security.microsoft.com), varios [informes y perspectivas](reports-and-insights-in-security-and-compliance.md) están disponibles para ayudar a equipo de seguridad de su organización mitigación y afrontar las amenazas para su organización. Si usted es un miembro del equipo de seguridad de su organización, puede configurar un informe con filtros y los intervalos de fechas personalizado y, a continuación, descargue el informe personalizado. 
+En la [seguridad &amp; centro de cumplimiento](https://protection.office.com), varios [informes y perspectivas](reports-and-insights-in-security-and-compliance.md) están disponibles para ayudar a equipo de seguridad de su organización mitigación y afrontar las amenazas para su organización. Si usted es un miembro del equipo de seguridad de su organización, puede configurar un informe con filtros y los intervalos de fechas personalizado y, a continuación, descargue el informe personalizado. 
   
 ## <a name="download-a-custom-report"></a>Descargar un informe personalizado
 
 > [!IMPORTANT]
 > Asegúrese de tener el requisito [permisos para la seguridad de Office 365 &amp; centro de cumplimiento](permissions-in-the-security-and-compliance-center.md). En general, los administradores globales de Office 365, los administradores de seguridad y los lectores de seguridad pueden acceder a los informes en la seguridad &amp; centro de cumplimiento. 
   
-1. En la [seguridad &amp; centro de cumplimiento](https://security.microsoft.com), vaya a **informes** \> **panel**.
+1. En la [seguridad &amp; centro de cumplimiento](https://protection.office.com), vaya a **informes** \> **panel**.
     
 2. Elija un informe. (Para este ejemplo, vamos a utilizar el informe de eliminación de mensaje.)<br/>![Elija el informe de solicitudes para descargar un informe](media/b566925d-b9d9-453d-9bdd-f2637c7ba140.png)
   

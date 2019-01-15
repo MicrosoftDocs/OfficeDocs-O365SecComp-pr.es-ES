@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: ba919c73-d021-404d-9850-eec57e78678c
 description: Lea este artículo para obtener información sobre cómo activar Office 365 administración avanzada de seguridad, con tecnología de seguridad de la aplicación en la nube de Microsoft Azure.
-ms.openlocfilehash: 586ebc5f496652e05b4ab6d2421fa9bc42603895
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 8964a0b413b0350188c7f61638d04032534e5374
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706294"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014792"
 ---
 # <a name="turn-on-office-365-cloud-app-security"></a>Activar Office 365 Cloud App Security
   
@@ -30,7 +30,7 @@ ms.locfileid: "26706294"
 > [!IMPORTANT]
 > Debe ser un administrador global o administrador de seguridad para llevar a cabo la siguiente tarea. Para obtener más información, vea [permisos en la seguridad de Office 365 &amp; centro de cumplimiento](permissions-in-the-security-and-compliance-center.md). En orden para Office 365 la seguridad de la aplicación de nube para que funcione la correcta, **debe estar activado el registro de auditoría** para su entorno de Office 365. Para obtener más información, vea [activar Office 365 de búsqueda de registros de auditoría activado o desactivado](turn-audit-log-search-on-or-off.md). 
   
-1. Como administrador global o administrador de seguridad, vaya a [https://security.microsoft.com](https://security.microsoft.com) e iniciar sesión con su cuenta de trabajo o escuela para Office 365. (Esto le llevará a la seguridad &amp; centro de cumplimiento.) 
+1. Como administrador global o administrador de seguridad, vaya a [https://protection.office.com](https://security.microsoft.com) e iniciar sesión con su cuenta de trabajo o escuela para Office 365. (Esto le llevará a la seguridad &amp; centro de cumplimiento.) 
     
 2. Vaya a **las alertas de** \> **avanzada de administrar las alertas**.
     

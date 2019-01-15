@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5ed8abf1-c0e9-4e5b-a5b7-2059cea50b61
 description: Obtenga información sobre dónde ir para ver la información acerca de los archivos malintencionados detectado en SharePoint, OneDrive o equipos y cómo tomar medidas en esos archivos.
-ms.openlocfilehash: c22e57e34cccafa3dd30a77a5a6011f2999f708c
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 435e1f449003f670f698c4e6813e18f5e83c498d
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706204"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014802"
 ---
 # <a name="view-information-about-malicious-files-detected-in-sharepoint-onedrive-or-microsoft-teams"></a>Ver información sobre archivos malintencionados detectada en SharePoint, OneDrive o Microsoft Teams
 
@@ -29,7 +29,7 @@ A fin de realizar las tareas descritas en este artículo, debe tener el requisit
 
 Para ver el estado y obtener información detallada acerca de los archivos que se han detectado por Office 365 ATP, puede usar el informe de estado de protección de amenaza.
   
-1. En la [Office 365 seguridad &amp; centro de cumplimiento](https://security.microsoft.com), elija **informes** \> **panel** \> **Estado de protección de amenaza**.
+1. En la [Office 365 seguridad &amp; centro de cumplimiento](https://protection.office.com), elija **informes** \> **panel** \> **Estado de protección de amenaza**.
     
 2. En la esquina superior derecha del informe, elija **tabla de detalles de la vista**.
     

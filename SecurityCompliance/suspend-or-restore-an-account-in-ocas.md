@@ -3,7 +3,7 @@ title: Suspender o restaurar una cuenta de usuario en Office 365 Cloud App Secur
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 2/26/2018
+ms.date: 12/03/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5f02d20f-b9aa-4b2f-ad2d-506a4a3c4540
 description: 'Con Office 365 en la nube seguridad de la aplicación, puede realizar las acciones de gobierno son suspender o quitar la suspensión de una cuenta de usuario. '
-ms.openlocfilehash: a5c75edefc6ddb87b5676c4253aafe04817f6a1d
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 09d6ae870aa1a6b0a619ccf20f8cc19b392e23a8
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22535789"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014852"
 ---
 # <a name="suspend-or-restore-a-user-account-in-office-365-cloud-app-security"></a>Suspender o restaurar una cuenta de usuario en Office 365 Cloud App Security
 
@@ -44,9 +44,7 @@ Cuando se suspende una cuenta de usuario, se evita que el usuario de iniciar ses
     
 2. En la seguridad &amp; centro de cumplimiento, elija **alertas** \> **avanzada de administrar las alertas**.
     
-3. Elija **Ir a la seguridad de la aplicación de Office 365 en la nube**.
-    
-    ![En la seguridad &amp; centro de cumplimiento, elija Administrar alertas avanzadas para ir a la seguridad de la aplicación de nube de Office 365](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)
+3. Elija **Ir a la seguridad de la aplicación de Office 365 en la nube**.<br>![En la seguridad &amp; centro de cumplimiento, elija Administrar alertas avanzadas para ir a la seguridad de la aplicación de nube de Office 365](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)<br>
   
 4. En la barra de navegación a través de la parte superior de la pantalla, elija **alertas**.
     
@@ -62,7 +60,7 @@ Vea [restaurar un usuario en Office 365](https://support.office.com/article/2c26
 
 - [Revisar y realizar acciones sobre alertas en Office 365 Cloud App Security](review-office-365-cas-alerts.md)
     
-- [Administrar permisos de aplicación con Office 365 Cloud App Security](manage-app-permissions-in-ocas.md)
+- [Administrar aplicaciones de OAuth con Office 365 Cloud App Security](manage-app-permissions-in-ocas.md)
     
 - Revise las [actividades de uso para la seguridad de la aplicación de nube de Office 365](utilization-activities-for-ocas.md)
     
