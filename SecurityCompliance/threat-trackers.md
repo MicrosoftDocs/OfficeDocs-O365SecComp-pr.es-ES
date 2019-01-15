@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
 description: Obtenga información sobre los objetos de seguimiento de amenaza, incluidos los rastreadores notable nuevo, para ayudar a su organización permanezca sobre problemas de seguridad.
-ms.openlocfilehash: e9dfdde563260ff7969f4749357c130ab98ce386
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 7729a78d0b18df7d73751f4480ef095bedc5965b
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706384"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28015002"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>Rastreadores de amenazas: nuevos y destacables
 
@@ -35,7 +35,7 @@ La mayoría de las páginas de rastreador incluye los números de tendencias que
   
 Objetos de seguimiento son sólo algunas de las muchas características de gran que obtener con [Información sobre amenazas de Office 365](office-365-ti.md). Cuando está disponible, su nuevo rastreadores de amenaza incluirá [rastreadores notables](threat-trackers.md#notey), [objetos de seguimiento de tendencias](threat-trackers.md#trending), [las consultas de seguimiento](threat-trackers.md#trackedq)y [consultas guardadas](threat-trackers.md#savedq).
   
-Para ver y usar los objetos de seguimiento de amenaza cuando estén disponibles para la organización, vaya a la seguridad &amp; centro de cumplimiento ([https://security.microsoft.com](https://security.microsoft.com)) y elija **administración de amenaza** \> **Rastreador de amenaza**.
+Para ver y usar los objetos de seguimiento de amenaza cuando estén disponibles para la organización, vaya a la seguridad &amp; centro de cumplimiento ([https://protection.office.com](https://protection.office.com)) y elija **administración de amenaza** \> **Rastreador de amenaza**.
   
 > [!NOTE]
 > Para utilizar los objetos de seguimiento de amenaza, debe ser un administrador global de Office 365, el Administrador de seguridad o el lector de seguridad. Vea [permisos en la seguridad de Office 365 &amp; centro de cumplimiento](permissions-in-the-security-and-compliance-center.md). 

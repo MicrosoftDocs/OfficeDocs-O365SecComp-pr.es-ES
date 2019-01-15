@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 description: Configurar directivas de vínculos seguros para proteger la organización de vínculos malintencionados en archivos de Word, Excel, PowerPoint y Visio, así como en mensajes de correo electrónico.
-ms.openlocfilehash: fb2af8e29bfe2de027a2d0e88cf9bcc07299fba9
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 145e8998637756d204171f64021d6ad783b367f3
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706094"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28015062"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Configurar las directivas de seguros vínculos con Office 365 ATP
 
@@ -51,7 +51,7 @@ ms.locfileid: "26706094"
 
 Cuando tenga [La protección de amenaza avanzada de Office 365](office-365-atp.md), tendrá una directiva de vínculos seguros ATP predeterminada que se aplica a todas las personas de su organización. Asegúrese de revisar y, si es necesario, modificar la directiva predeterminada.
   
-1. Vaya a [https://security.microsoft.com](https://security.microsoft.com) y el inicio de sesión con la cuenta de trabajo o escuela. 
+1. Vaya a [https://protection.office.com](https://protection.office.com) y el inicio de sesión con la cuenta de trabajo o escuela. 
     
 2. En la izquierda, en **administración de amenaza**, elija **directiva \> ** **Vínculos seguros**.
     
@@ -67,7 +67,7 @@ Cuando tenga [La protección de amenaza avanzada de Office 365](office-365-atp.m
 
 Después de haber revisado (o editar) la directiva de vínculos seguros ATP predeterminada que se aplica a todos los usuarios, el siguiente paso es definir directivas adicionales que se aplican a determinados destinatarios. Por ejemplo, puede especificar excepciones a la directiva predeterminada mediante la definición de una directiva adicional. 
   
-1. Vaya a [https://security.microsoft.com](https://security.microsoft.com) y el inicio de sesión con la cuenta de trabajo o escuela. 
+1. Vaya a [https://protection.office.com](https://protection.office.com) y el inicio de sesión con la cuenta de trabajo o escuela. 
     
 2. En la izquierda, en **administración de amenaza**, elija la **Directiva**.
     

@@ -3,7 +3,7 @@ title: 'Buscar y eliminar mensajes de correo electrónico en su organización de
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 4/25/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Usar la búsqueda y purgar la característica en la seguridad de Office 365 &amp; centro de cumplimiento para buscar y eliminar un mensaje de correo electrónico de todos los buzones de la organización.
-ms.openlocfilehash: d9ca212585f1cb7e98e5f577ce47fcdef7ea979f
-ms.sourcegitcommit: 08f36794552e2213d0baf35180e47744d3e87fe4
+ms.openlocfilehash: 82ba38ef2c3c8c6b78743a4b2263dde0ef3a5b48
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "23531873"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28015022"
 ---
 # <a name="search-for-and-delete-email-messages-in-your-office-365-organization---admin-help"></a>Buscar y eliminar mensajes de correo electrónico en su organización de Office 365: Ayuda de administración
 
@@ -99,15 +99,26 @@ Si su cuenta de Office 365 usa la autenticación multifactor (MFA) o autenticaci
   
 ## <a name="step-3-delete-the-message"></a>Paso 3: Eliminar el mensaje
 
-Una vez que haya creado y refinado una búsqueda de contenido para devolver el mensaje que desea quitar y están conectados a la seguridad &amp; PowerShell de centro de cumplimiento, el paso final consiste en ejecutar el cmdlet **New-ComplianceSearchAction** para eliminar el mensaje. Los mensajes eliminados se mueven a la carpeta elementos recuperables de un usuario. 
+Una vez que haya creado y refinado una búsqueda de contenido para devolver el mensaje que desea quitar y están conectados a la seguridad &amp; PowerShell de centro de cumplimiento, el paso final consiste en ejecutar el cmdlet **New-ComplianceSearchAction** para eliminar el mensaje. Puede temporalmente o disco duro-eliminar el mensaje. Un mensaje eliminado temporalmente se mueve a la carpeta elementos recuperables de un usuario y se conserva hasta que expire el período de retención de elementos eliminados. Disco duro elimina los mensajes marcados para eliminación permanente del buzón de correo y se quitará permanentemente la próxima vez que se procesa el buzón de correo mediante el Asistente para carpeta administrada. Si está habilitada la recuperación de elemento único para el buzón de correo, se quitará permanentemente elementos eliminados disco duro después de que expire el período de retención de elementos eliminados. Si un buzón de correo se pondrá en espera, se conservarán los mensajes eliminados hasta que expire la duración de retención para el elemento o hasta que se elimina la suspensión desde el buzón de correo.
   
-En el ejemplo siguiente, el comando eliminará los resultados de la búsqueda devueltos por una búsqueda de contenido denominada "Quitar mensaje de suplantación de identidad". 
+En el siguiente ejemplo, el comando se temporalmente-eliminar los resultados de búsqueda devueltos por una búsqueda de contenido denominado "Quitar mensaje de suplantación de identidad". 
 
 ```
 New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeType SoftDelete
 ```
-  
+En el siguiente ejemplo, el comando disco duro eliminará los resultados de búsqueda devueltos por una búsqueda de contenido denominado "Quitar mensaje de suplantación de identidad". 
+
+```
+New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeType HardDelete
+```
+
 La búsqueda especificada por el parámetro *SearchName* es la búsqueda de contenido que creó en el paso 1. 
+
+Al disco duro eliminado los elementos devueltos por la búsqueda de contenido de "Quitar mensaje de suplantación de identidad", debe ejecutar este comando:
+
+```
+New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeType HardDelete
+```
   
 Para obtener más información, vea [New-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/New-ComplianceSearchAction).
   
@@ -120,11 +131,9 @@ Para obtener más información, vea [New-ComplianceSearchAction](https://docs.mi
     
 - **¿Qué sucede después de eliminar un mensaje?**
 
-    Un mensaje que se elimina mediante el uso de la `New-ComplianceSearchAction -Purge -PurgeType SoftDelete` comando se mueve a la carpeta de eliminaciones en la carpeta del usuario elementos recuperables. Se no se purgan inmediatamente de Office 365. El usuario puede recuperar los mensajes en la carpeta Elementos eliminados de la duración basándose en el período de retención de elementos eliminados configurado para el buzón de correo. Después de que finalice este período de retención (o si el usuario purga el mensaje antes de que caduque), el mensaje se mueve a la carpeta de purga y ya no se puede tener acceso el usuario. Una vez en la carpeta de purga, el mensaje se conserva nuevo para la duración basándose en el período de retención de elementos eliminados configurado para el buzón de correo si está habilitada la recuperación de elementos únicos para el buzón de correo. (En Office 365, recuperación de elemento único está habilitado de forma predeterminada cuando se crea un nuevo buzón de correo.) Después de que expire el período de retención de elementos eliminados, el mensaje está marcado para su eliminación permanente y se purgarán desde Office 365 la próxima vez que se procesa el buzón de correo mediante el Asistente para carpeta administrada. 
-    
-- **¿Cómo sé que los mensajes se eliminan o se mueve a la carpeta del usuario elementos recuperables?**
+   Un mensaje que se elimina con el `New-ComplianceSearchAction -Purge -PurgeType HardDelete` comando se mueve a la carpeta de purga y no puede tener acceso el usuario. Después de que el mensaje se mueve a la carpeta de purga, el mensaje se conserva durante el período de retención de elementos eliminados si está habilitada la recuperación de elemento único para el buzón de correo. (En Office 365, recuperación de elemento único está habilitado de forma predeterminada cuando se crea un nuevo buzón de correo.) Después de que expire el período de retención de elementos eliminados, el mensaje está marcado para su eliminación permanente y se purgarán desde Office 365 la próxima vez que se procesa el buzón de correo mediante el Asistente para carpeta administrada. 
 
-    Si ejecuta la misma búsqueda de contenido después de eliminar un mensaje, se seguirá viendo el mismo número de resultados de búsqueda (y es posible que se supone que el mensaje no se haya eliminado de buzones de usuario). Esto es debido a que busca en una búsqueda de contenido de la carpeta elementos recuperables, que es donde los mensajes eliminados se mueven a después de ejecutar el `New-ComplianceSearchAction -Purge -PurgeType SoftDelete` comando. Para comprobar que los mensajes se han movido a la carpeta elementos recuperables, puede ejecutar una búsqueda de exhibición de documentos electrónicos en contexto (utilizando el mismo buzones de origen y los criterios de búsqueda como la búsqueda de contenido que creó en el paso 1) y, a continuación, copie los resultados de búsqueda en el buzón de detección. A continuación, puede ver los resultados de búsqueda en el buzón de detección y compruebe que los mensajes se han movido a la carpeta elementos recuperables. Para obtener información detallada sobre la creación de una búsqueda de exhibición de documentos electrónicos en contexto que utiliza la lista de buzones de origen y la consulta de búsqueda de una búsqueda de contenido, vea [Usar la búsqueda de contenido en el flujo de trabajo de exhibición de documentos electrónicos](use-content-search-in-ediscovery.md) . 
+   Si usa el `New-ComplianceSearchAction -Purge -PurgeType SoftDelete` de comando, los mensajes se mueven a la carpeta de eliminaciones de la carpeta del usuario elementos recuperables. Se no se purgan inmediatamente de Office 365. El usuario puede recuperar los mensajes en la carpeta Elementos eliminados de la duración basándose en el período de retención de elementos eliminados configurado para el buzón de correo. Después de que finalice este período de retención (o si el usuario purga el mensaje antes de que caduque), el mensaje se mueve a la carpeta de purga y ya no se puede tener acceso el usuario. Una vez en la carpeta de purga, el mensaje se mantiene para la duración basándose en el período de retención de elementos eliminados configurado para el buzón de correo si está habilitada la recuperación de elementos únicos para el buzón de correo. (En Office 365, recuperación de elemento único está habilitado de forma predeterminada cuando se crea un nuevo buzón de correo.) Después de que expire el período de retención de elementos eliminados, el mensaje está marcado para su eliminación permanente y se purgarán desde Office 365 la próxima vez que se procesa el buzón de correo mediante el Asistente para carpeta administrada. 
     
 - **¿Qué ocurre si se debe eliminar un mensaje de buzones de correo de más de 50.000?**
 
@@ -132,12 +141,12 @@ Para obtener más información, vea [New-ComplianceSearchAction](https://docs.mi
     
 - **¿Se eliminarán sin indizar elementos incluidos en los resultados de búsqueda?**
 
-    No, el `New-ComplianceSearchAction -Purge -PurgeType SoftDelete` comando no elimina elementos sin indizar. 
+    No, el ' New-ComplianceSearchAction-comando Purgar no elimina elementos sin indizar. 
     
 - **¿Qué sucede si se elimina un mensaje de un buzón de correo se ha colocado en suspensión en contexto o juicio o que esté asignada a una directiva de retención de Office 365?**
 
-    Después de que el mensaje se purga (ya sea por el usuario o después de que expire el período de retención de elementos eliminados), el mensaje se conserva hasta que expire la duración de la suspensión. Si la duración de retención es ilimitada, a continuación, se conservan los elementos hasta que se elimina la suspensión o se cambia la duración de la suspensión.
+    Después de que el mensaje se purgarán y movido a la carpeta de purga, el mensaje se conserva hasta que expire la duración de la suspensión. Si la duración de retención es ilimitada, a continuación, se conservan los elementos hasta que se elimina la suspensión o se cambia la duración de la suspensión.
     
-- **¿Por qué se divide el flujo de trabajo de búsqueda y remove entre seguridad diferentes &amp; grupos de roles de centro de cumplimiento?**
+- **¿Por qué es la búsqueda y quitar flujo de trabajo que se divide entre los distintos grupos de roles de seguridad y el centro de cumplimiento?**
 
     Como se explica anteriormente, una persona debe ser miembro del grupo de roles de administrador de exhibición de documentos electrónicos o tener asignado el rol de administración de búsqueda de cumplimiento para buscar los buzones de correo. Para eliminar los mensajes, una persona debe ser miembro del grupo de roles de administración de la organización o tener asignado el rol de administración de búsqueda y purgar. Esto posibilita para controlar quién puede buscar los buzones de correo en la organización y quién puede eliminar los mensajes. 

@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 35dbfd99-da5a-422b-9b0e-c6caf3b645fa
 description: Al configurar las directivas de vínculos seguros de ATP, puede incluir una reescritura de no hacer ' lista de direcciones URL para habilitar algunas personas de la organización visitar sitios que se incluyen en la lista.
-ms.openlocfilehash: 89fafd5ff7def491a231bc8bc3eb19ef8db16a59
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: d3883d6aff29b9a061b62e4854e7aad52656769f
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26705984"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28015052"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-office-365-atp-safe-links"></a>Configurar una lista personalizada de direcciones URL de reescritura de no hacer con Office 365 ATP seguros vínculos
 
@@ -29,7 +29,7 @@ En este artículo se describe cómo especificar una lista de direcciones URL que
 
 Protección de vínculos seguros de ATP utiliza varias listas, incluida la lista de direcciones URL bloqueadas de la organización y las listas de "no volver a escribir" para las excepciones. Si tiene los permisos necesarios, puede configurar las listas personalizadas "no reescritura de". Para ello, al agregar o editar las directivas de seguros vínculos que se aplican a determinados destinatarios en la organización. 
   
-1. Vaya a [https://security.microsoft.com](https://security.microsoft.com) y el inicio de sesión con la cuenta de trabajo o escuela. 
+1. Vaya a [https://protection.office.com](https://protection.office.com) y el inicio de sesión con la cuenta de trabajo o escuela. 
     
 2. En la izquierda, en **administración de amenaza** \> **Directiva** \> **Vínculos seguros**.
     

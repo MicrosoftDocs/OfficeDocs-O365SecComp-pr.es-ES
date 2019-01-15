@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 88935b4e-dcb1-47f1-8aca-1bf8fb069db6
 description: 'Las directivas de detección de anomalías de seguridad de la aplicación de nube de Office 365 usen algoritmos integrados para ayudar a descubrir posibles problemas. Debe tener la directiva de detección de anomalías de al menos un, que puede ajustar (al crearla) mediante el uso de filtros. '
-ms.openlocfilehash: 8babe86dd5adb6c25a069096157cac121ad66ab1
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 62e2db3ba46f41bce5c5c4fab9e6c685838d68e8
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706344"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28015082"
 ---
 # <a name="anomaly-detection-policies-in-office-365-cloud-app-security"></a>Directivas de detección de anomalías en Office 365 Cloud App Security
 
@@ -51,7 +51,7 @@ Asegúrese de que:
     
 ## <a name="view-your-anomaly-detection-policies"></a>Ver las directivas de detección de anomalías
 
-1. Como administrador global o administrador de seguridad, vaya a [https://security.microsoft.com](https://security.microsoft.com) e iniciar sesión con su cuenta de trabajo o escuela. 
+1. Como administrador global o administrador de seguridad, vaya a [https://protection.office.com](https://protection.office.com) e iniciar sesión con su cuenta de trabajo o escuela. 
     
 2. En la seguridad &amp; centro de cumplimiento, elija **alertas** \> **avanzada de administrar las alertas**.
     
@@ -89,11 +89,10 @@ En la siguiente tabla se describe las directivas de detección de anomalías de 
 |Varios intentos de inicio de sesión con errores  <br/> |Identifica a los usuarios que no se pudo varios intentos de inicio de sesión en una única sesión con respecto a la línea de base aprendido, lo que podría indicar un intento de infracción.  <br/> |
    
 ## <a name="triage-anomaly-detection-alerts"></a>Alertas de detección de anomalías de evaluación de errores
-<a name="triage"> </a>
 
 Como las alertas se incluyen, puede procesar dichas alertas rápidamente y determinar cuáles para tratar en primer lugar. Necesidad de contexto para una alerta le permite ver la imagen más grande y determinar si realmente está ocurriendo algo malintencionado. Use el procedimiento siguiente para empezar a explorar una alerta:
   
-1. Como administrador global o administrador de seguridad, vaya a [https://security.microsoft.com](https://security.microsoft.com) e iniciar sesión con su cuenta de trabajo o escuela. 
+1. Como administrador global o administrador de seguridad, vaya a [https://protection.office.com](https://protection.office.com) e iniciar sesión con su cuenta de trabajo o escuela. 
     
 2. En la seguridad &amp; centro de cumplimiento, elija **alertas** \> **avanzada de administrar las alertas**.
     

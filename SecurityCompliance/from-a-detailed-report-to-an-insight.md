@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: d2104778-f0a1-4b69-baf3-c4b32e98a573
 description: Obtenga información sobre cómo puede mover de un informe detallado a un entendimiento con acciones recomendadas en la seguridad &amp; centro de cumplimiento.
-ms.openlocfilehash: 8048e9aac9191bd89028ac3e4f5fdde577ad7226
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 48c7283723a75685e16e1f7ddbe34bc3779819cf
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706254"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014982"
 ---
 # <a name="walkthrough---from-a-detailed-report-to-an-insight"></a>Tutorial: desde un informe detallado a un reporte
 
@@ -30,7 +30,7 @@ Se trata de uno de varios tutoriales para la seguridad &amp; centro de cumplimie
 
 Vamos a recorrer el flujo de un informe detallado a una profundidad y acciones. (Esto es un ejemplo breve [antimalware y contra correo no deseado](anti-spam-and-anti-malware-protection.md) ). 
   
-1. Empezamos con [seguridad &amp; centro de cumplimiento](https://security.microsoft.com) informes. (Vaya a **informes** \> **panel**.)<br/>![En la seguridad &amp; centro de cumplimiento, vaya a informes \> panel](media/68f3bb7c-b4f7-4cca-904b-478643a93c94.png)
+1. Empezamos con [seguridad &amp; centro de cumplimiento](https://protection.office.com) informes. (Vaya a **informes** \> **panel**.)<br/>![En la seguridad &amp; centro de cumplimiento, vaya a informes \> panel](media/68f3bb7c-b4f7-4cca-904b-478643a93c94.png)
   
 2. Se elija un informe para obtener una vista más detallada. (Elija un informe, como el informe de **Estado de protección de amenaza** ).<br/>![Informe de estado de protección de amenaza con conocimientos](media/f47d7dbd-816a-47ba-b8db-53919fbed192.png)
   

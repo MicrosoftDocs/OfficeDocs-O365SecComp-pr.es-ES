@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 3384c6f1-ffc0-4120-a211-1991aca51663
 description: Obtenga información sobre cómo ver, editar y administrar programaciones para los informes de la seguridad &amp; centro de cumplimiento.
-ms.openlocfilehash: 3dfe7c2f596078112150b944d45b43de8508cdca
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: e1b27b5c9797f7c8eae9ad22d251998f894565b4
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22535920"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014912"
 ---
 # <a name="manage-schedules-for-multiple-reports-in-the-security-amp-compliance-center"></a>Administrar programaciones para varios informes en la seguridad &amp; centro de cumplimiento
 
@@ -30,14 +30,16 @@ En la seguridad &amp; centro de cumplimiento, varios [informes y perspectivas](r
 > Asegúrese de tener el requisito [permisos asignados en la seguridad de Office 365 &amp; centro de cumplimiento](permissions-in-the-security-and-compliance-center.md). En general, los administradores globales de Office 365, los administradores de seguridad y los lectores de seguridad pueden acceder a los informes en la seguridad &amp; centro de cumplimiento. 
   
 ![En la seguridad &amp; centro de cumplimiento, seleccione informes \> administra las programaciones](media/efa5e2f9-bf73-4f85-acea-f1ca7e2bca5e.png)
-  
-1. En la seguridad &amp; centro de cumplimiento, vaya a **informes** \> **Administrar programaciones**.
+
+1. Vaya a [https://protection.office.com](https://protection.office.com) e iniciar sesión. Esto le llevará a la seguridad y el centro de cumplimiento.
+
+2. En la seguridad &amp; centro de cumplimiento, vaya a **informes** \> **Administrar programaciones**.
     
-2. Seleccione un elemento en la lista.
+3. Seleccione un elemento en la lista.
     
-3. Revise la información de programación del informe.
+4. Revise la información de programación del informe.
     
-4. Según corresponda, editar o eliminar la programación y, a continuación, haga clic en **Cerrar**.
+5. Según corresponda, editar o eliminar la programación y, a continuación, haga clic en **Cerrar**.
     
 ## <a name="related-topics"></a>Temas relacionados
 

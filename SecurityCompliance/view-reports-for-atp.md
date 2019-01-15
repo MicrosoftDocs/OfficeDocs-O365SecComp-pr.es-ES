@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 description: Obtenga información sobre cómo buscar y usar informes para Office 365 avanzada protección contra amenazas en la seguridad &amp; centro de cumplimiento.
-ms.openlocfilehash: d387e020e5834d4961e7bda50b418ea11b9f0f4d
-ms.sourcegitcommit: 30faa3ba91cab4c36e3d8d8ed5858d5269ea8a56
+ms.openlocfilehash: a17f182f5c8d79e7863b26324a3c073ef18f14c9
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27749354"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014952"
 ---
 # <a name="view-reports-for-office-365-advanced-threat-protection"></a>Visualización de informes para la protección de amenaza avanzada de Office 365
 
@@ -35,7 +35,7 @@ El informe de **Estado de protección de amenaza** es una vista única que reún
 > [!NOTE]
 > Un informe de estado de protección de amenaza está disponible para los clientes que tengan [Office 365 ATP](office-365-atp.md) o [Exchange Online Protection](eop/exchange-online-protection-eop.md) (EOP); Sin embargo, la información que se muestra en el informe de estado de protección de amenaza para los clientes de ATP probablemente contendrá datos distintos a lo que es posible que vea los clientes de EOP. Por ejemplo, el informe de estado de protección de amenaza para los clientes de ATP contendrá información sobre [archivos malintencionados detectan en SharePoint Online, OneDrive o los equipos de Microsoft](atp-for-spo-odb-and-teams.md). Dicha información es específica de ATP, por lo que los clientes que tienen EOP pero no ATP no verán los detalles de su informe de estado de protección de amenaza.
   
-Para ver el informe de estado de protección de amenaza, en la [seguridad &amp; centro de cumplimiento](https://security.microsoft.com), vaya a **informes** \> **panel** \> **Estado de protección de amenaza**.
+Para ver el informe de estado de protección de amenaza, en la [seguridad &amp; centro de cumplimiento](https://protection.office.com), vaya a **informes** \> **panel** \> **Estado de protección de amenaza**.
   
 ![Informe de estado de protección de amenaza ATP](media/6bdd41eb-62e0-423b-9fd4-d1d5baf0cbd5.png)
   
@@ -55,7 +55,7 @@ También puede usar el menú **Ver datos por** para cambiar la información que 
 
 El informe de **Tipos de archivo de ATP** muestra el tipo de archivos detectados como malintencionado por [Los datos adjuntos seguros de ATP](atp-safe-attachments.md).
   
-Para ver este informe, en la [seguridad &amp; centro de cumplimiento](https://security.microsoft.com), vaya a **informes** \> **panel** \> **ATP tipos de archivo**.
+Para ver este informe, en la [seguridad &amp; centro de cumplimiento](https://protection.office.com), vaya a **informes** \> **panel** \> **ATP tipos de archivo**.
   
 ![Informe de tipos de archivo de ATP](media/6e3f5d33-79aa-4b2d-938c-6ef135d9e54c.png)
   
@@ -67,7 +67,7 @@ Cuando mantenga el mouse sobre un día determinado, puede ver el desglose de los
 
 El informe de **Eliminación de mensaje de ATP** muestra las acciones que se tomaron para mensajes de correo electrónico que se detectaron como tener contenido malintencionado. 
   
-Para ver este informe, en la [seguridad &amp; centro de cumplimiento](https://security.microsoft.com), vaya a **informes** \> **panel** \> **ATP mensaje disposición**.
+Para ver este informe, en la [seguridad &amp; centro de cumplimiento](https://protection.office.com), vaya a **informes** \> **panel** \> **ATP mensaje disposición**.
   
 ![Informe de eliminación de mensajes de ATP](media/b0ff65c4-53d3-496d-bafa-8937a5eb69e5.png)
   

@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 description: Obtenga información sobre cómo usar la información sobre amenazas para buscar e investigar el correo electrónico malintencionado.
-ms.openlocfilehash: 4440b4d1503b9a13977ef773b95fa64873662b85
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: b6d4f8a5d1fcfce4461b91796b1264f94d1eb4d1
+ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706044"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "28014922"
 ---
 # <a name="find-and-investigate-malicious-email-that-was-delivered-office-365-threat-intelligence"></a>Buscar e investigar el correo electrónico malintencionado que se entregó (Office 365 información sobre amenazas)
 
@@ -48,7 +48,7 @@ Los atacantes malintencionados se puede enviar correo a los usuarios para probar
 > [!TIP]
 > [Explorador de amenaza](get-started-with-ti.md#threat-explorer) (también denominada Explorador), es un informe eficaces que puede servir para varios propósitos, por ejemplo, buscar y eliminar mensajes, que identifica la dirección IP de un remitente de correo electrónico malintencionado o iniciar un incidente para una mayor investigación. El siguiente procedimiento se centra en usar el explorador para buscar y eliminar el correo electrónico malintencionado de buzones de correo de los destinatarios. 
   
-1. Vaya a [https://security.microsoft.com](https://security.microsoft.com) e iniciar sesión con su cuenta de trabajo o escuela para Office 365. Esto le llevará a la seguridad &amp; centro de cumplimiento. 
+1. Vaya a [https://protection.office.com](https://protection.office.com) e iniciar sesión con su cuenta de trabajo o escuela para Office 365. Esto le llevará a la seguridad &amp; centro de cumplimiento. 
     
 2. En el panel de navegación izquierdo, elija **administración de amenaza** \> **Explorer**.
     
