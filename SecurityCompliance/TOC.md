@@ -156,7 +156,7 @@
 ### [Ver las estadísticas de palabras clave para resultados de búsqueda de contenido](view-keyword-statistics-for-content-search.md)
 ### [Exportar resultados de la búsqueda de contenido ](export-search-results.md)
 ### [Exportar un informe de búsqueda de contenido](export-a-content-search-report.md)
-### [Búsqueda y eliminación de mensajes de correo electrónico](search-for-and-delete-messagesadmin-help.md)
+### [Búsqueda y eliminación de mensajes de correo electrónico](search-for-and-delete-messages-in-your-organization.md)
 ### [Buscar los buzones basados en la nube de usuarios locales en Office 365](search-cloud-based-mailboxes-for-on-premises-users.md)
 ### [Editar en masa varias búsquedas de contenido](bulk-edit-content-searches.md)
 ### [Preparar un archivo CSV para una búsqueda de contenido de lista de identificadores](csv-file-for-an-id-list-content-search.md)
@@ -264,9 +264,9 @@
 ## [Integración de servidor SIEM](siem-server-integration.md)
 
 # Soluciones de cumplimiento normativo
-## [Empezar a trabajar con el Portal de confianza del servicio de Microsoft](get-started-with-service-trust-portal.md)
-## [Usar el Administrador de cumplimiento para satisfacer los requisitos normativos y de protección de datos al usar los Servicios en la nube de Microsoft](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
-## [Administrar solicitudes de asunto de datos RGPD con la herramienta de casos DSR](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)
+## [Portal de confianza del servicio de Microsoft](get-started-with-service-trust-portal.md)
+## [Administrador de cumplimiento](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
+## [Herramienta de solicitudes de interesados RGPD](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)
 ## [Information Protection de Office 365 para RGPD](office-365-information-protection-for-gdpr.md)
 ### [Introducción: Protección de Office 365 para RGPD](office-365-info-protection-for-gdpr-overview.md)
 ### [Buscar y encontrar datos personales](search-for-and-find-personal-data.md)
