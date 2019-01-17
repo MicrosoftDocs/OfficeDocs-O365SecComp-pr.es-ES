@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 description: Crear directivas de alerta en la seguridad de Office 365 &amp; centro de cumplimiento para supervisar las posibles amenazas, la pérdida de datos y el problema de permisos. A continuación, puede ver y administrar las alertas que se generan cuando los usuarios realizan actividades que coinciden con las condiciones de una directiva de alerta.
-ms.openlocfilehash: 9aea5660f6a890afb06c5bd04db812d6aeacd17a
-ms.sourcegitcommit: 95a3ce0bc5b0f3782fc4ef22a70f5ef1dc879ee3
+ms.openlocfilehash: 6bdbf9c4c352bf16fd1a7b5c9f7b0af7eb4fadfd
+ms.sourcegitcommit: a2afa4c06e9b762cf689b0d2a0653076f9b00c49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/30/2018
-ms.locfileid: "26988439"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28328146"
 ---
 # <a name="alert-policies-in-the-office-365-security-amp-compliance-center"></a>Las directivas de la seguridad de Office 365 de la alerta &amp; centro de cumplimiento
 
@@ -84,7 +84,7 @@ Una directiva de alerta consta de los siguientes parámetros y condiciones.
     
   - Otros
     
-    Cuando se produce una actividad que coincide con las condiciones de la directiva de alerta, la alerta que se genera se cuente con la categoría definida en esta configuración. Esto permite realizar un seguimiento y administrar las alertas que tienen la misma configuración de categoría en la página **Ver avisos** en la seguridad &amp; debido a que se puede ordenar y alertas de filtro basan en la categoría del centro de cumplimiento. 
+  Cuando se produce una actividad que coincide con las condiciones de la directiva de alerta, la alerta que se genera se cuente con la categoría definida en esta configuración. Esto permite realizar un seguimiento y administrar las alertas que tienen la misma configuración en la página **Ver alertas** en el centro de cumplimiento de seguridad & debido a que se puede ordenar y alertas de filtro basan en la categoría de categoría. 
     
 - **Gravedad de alerta** - Similar a la categoría de alerta, para asignar un atributo de gravedad ( **bajo**, **medio**o **alto**) a las directivas de alerta. Al igual que la categoría de alerta, cuando se produce una actividad que coincide con las condiciones de la directiva de la alerta, la alerta que se genera se cuente con el mismo nivel de gravedad que se establece para la directiva de alerta. Una vez más, esto permite realizar un seguimiento y administrar las alertas que tienen el mismo valor de gravedad en la página **Ver avisos** . Por ejemplo, puede filtrar la lista de alertas para que se muestran sólo las alertas con una gravedad **alta** . 
     
@@ -102,7 +102,7 @@ En la siguiente tabla se enumera y se describe las directivas de alerta predeter
 |**Directiva de alerta predeterminada**|**Descripción**|**Suscripción a Office 365 Enterprise**|
 |:-----|:-----|:-----|
 |**Creación de regla de reenvío y redireccionamiento** <br/> |Genera una alerta cuando una persona de su organización crea una regla de bandeja de entrada para su buzón que reenvía o redirige los mensajes a otra cuenta de correo electrónico. Esta directiva sólo realiza un seguimiento de las reglas de bandeja de entrada que se crean utilizando Outlook Web App o Exchange Online PowerShell. Esta directiva tiene una configuración de gravedad **baja** . Para obtener más información de uso de las reglas de bandeja de entrada para reenviar y redirigir el correo electrónico en Outlook Web App, vea [usar las reglas de Outlook Web App para reenviar mensajes automáticamente a otra cuenta](https://support.office.com/article/1433e3a0-7fb0-4999-b536-50e05cb67fed).<br/> |G1/E1, E3/G3 o E5/G5  <br/> |
-|**búsqueda de exhibición de documentos electrónicos iniciado o exportados** <br/> |Genera una alerta cuando alguien utiliza la herramienta de búsqueda de contenido en el centro de cumplimiento y seguridad. Se desencadena una alerta cuando se llevan a cabo las siguientes actividades de búsqueda de contenido:<br/><br/>• Una búsqueda de contenido se ha iniciado<br/>• Se exportan los resultados de una búsqueda de contenido<br/>• Se exporta un informe de búsqueda de contenido<br/><br/>También están activadas las alertas cuando se llevan a cabo las actividades de búsqueda de contenido anterior en asociación con un caso de exhibición de documentos electrónicos. Esta directiva tiene una configuración de gravedad **Media** . Para obtener más información acerca de las actividades de búsqueda de contenido, consulte [Buscar actividades de exhibición de documentos electrónicos en Office 365 registro de auditoría](search-for-ediscovery-activities-in-the-audit-log.md#ediscovery-activities).<br/> |G1/E1, E3/G3 o E5/G5  <br/> |
+|**búsqueda de exhibición de documentos electrónicos iniciado o exportados** <br/> |Genera una alerta cuando alguien utiliza la herramienta de búsqueda de contenido en el centro de cumplimiento de seguridad &. Se desencadena una alerta cuando se llevan a cabo las siguientes actividades de búsqueda de contenido:<br/><br/>• Una búsqueda de contenido se ha iniciado<br/>• Se exportan los resultados de una búsqueda de contenido<br/>• Se exporta un informe de búsqueda de contenido<br/><br/>También están activadas las alertas cuando se llevan a cabo las actividades de búsqueda de contenido anterior en asociación con un caso de exhibición de documentos electrónicos. Esta directiva tiene una configuración de gravedad **Media** . Para obtener más información acerca de las actividades de búsqueda de contenido, consulte [Buscar actividades de exhibición de documentos electrónicos en Office 365 registro de auditoría](search-for-ediscovery-activities-in-the-audit-log.md#ediscovery-activities).<br/> |G1/E1, E3/G3 o E5/G5  <br/> |
 |**Elevación de privilegios de administración de Exchange** <br/> |Genera una alerta cuando alguien se asigna permisos administrativos en la organización de Exchange Online; Por ejemplo, si un usuario se agrega a la función de administración de la organización grupo en Exchange Online. Esta directiva tiene una configuración de gravedad **baja** .<br/> |G1/E1, E3/G3 o E5/G5  <br/> |
 |**Los mensajes se han retrasado** <br/> |Genera una alerta cuando Office 365 no puede entregar mensajes de correo electrónico a la organización local o un socio de servidores mediante el uso de un conector. Cuando esto ocurre, el mensaje se ponen en cola en Office 365. Esta alerta se desencadena cuando hay 2.000 mensajes o más que ha formado por más de una hora. Esta directiva tiene una configuración de gravedad **alta** .<br/> |G1/E1, E3/G3 o E5/G5  <br/> |
 |**Campaña de malware detectado después de la entrega** <br/> |Genera una alerta cuando se entrega un número inusualmente grande de los mensajes que contengan malware a buzones de la organización. Si se produce este evento, Office 365 quita los mensajes infectados de buzones de Exchange Online. Esta directiva tiene una configuración de gravedad **alta** .<br/> |Suscripción de complemento E5/G5 o información sobre amenazas de Office 365  <br/> |
@@ -135,9 +135,66 @@ Puede usar los siguientes filtros para ver un subconjunto de todas las alertas e
     
 - **Categoría** - este filtro se usa para mostrar las alertas desde una o varias categorías de alerta.
 
-- **Origen** - este filtro se usa para mostrar las alertas desencadenadas por las directivas de alerta en la seguridad & Centro de cumplimiento o alertas desencadenadas por las directivas de seguridad de la aplicación de nube de Office 365, o ambos. Para obtener más información acerca de las alertas de seguridad de la aplicación de nube de Office 365, vea la sección de [alertas de seguridad de la aplicación de visualización de la nube](#viewing-cloud-app-security-alerts) .
+- **Origen** - este filtro se usa para mostrar las alertas desencadenadas por las directivas de alerta en el centro de cumplimiento de seguridad & o alertas desencadenadas por las directivas de seguridad de la aplicación de nube de Office 365, o ambos. Para obtener más información acerca de las alertas de seguridad de la aplicación de nube de Office 365, vea la sección de [alertas de seguridad de la aplicación de visualización de la nube](#viewing-cloud-app-security-alerts) .
 
-  
+### <a name="rbac-permissions-required-to-view-alerts"></a>Permisos de RBAC necesarios para ver las alertas
+
+> [!NOTE]
+> La funcionalidad descrita en esta sección se desplegar a las organizaciones a partir del 20 de febrero de 2019 y se completará en todo el mundo a finales de marzo de 2019.
+
+Los permisos de Control de acceso a Bases de roles (RBAC) asignados a los usuarios de su organización determina qué alertas que los usuarios pueden ver en la página **Ver alertas** . ¿Cómo se consigue? Las funciones de administración que se asigna a los usuarios (basados en su pertenencia a grupos de roles en el centro de cumplimiento de seguridad &) determinan qué categorías de alertas que un usuario puede ver en la página **Ver alertas** . Estos son algunos ejemplos:
+
+- Los miembros del grupo de roles de administración de registros pueden ver solo las alertas que se generan mediante las directivas de alerta que se asignan a la categoría de **Gobierno de datos** .
+- Los miembros del grupo de roles de administrador de cumplimiento de normas no pueden ver las alertas que se generan mediante las directivas de alerta que se asignan a la categoría de **administración de amenaza** . 
+- Los miembros del grupo de roles de administrador de exhibición de documentos electrónicos no pueden ver las alertas debido a que ninguno de los roles asignados proporcionan permiso para ver las alertas desde cualquier categoría de alerta.
+
+Este diseño (según los permisos de RBAC) le permite determinar qué alertas se pueden ver (y administrados) por los usuarios de funciones de trabajos específicos en la organización. 
+
+En la siguiente tabla enumera las funciones que son necesarios para ver las alertas de las diferentes categorías de alerta 6. La primera columna de las tablas enumera todas las funciones de centro de cumplimiento de seguridad &.  Una marca de verificación indica que un usuario que se asigna esa función puede ver las alertas desde la categoría correspondiente de la alerta aparece en la fila superior.
+
+|<br/>|Gobierno de datos|Prevención de pérdida de datos|Flujo del correo|Permisos|Administración de amenazas|Otros | 
+|:---------|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
+|Registros de auditoría <br/> |         ||         |         |         |         |
+|Administración de casos <br/>|         |         |         |         |         |         |
+|Administrador de cumplimiento de normas<br/>|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)| ![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|         |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Búsqueda de cumplimiento<br/>|         |         |         |         |         |         |
+|Administración de dispositivos<br/>|         |         |         |         |         |         |
+|Administración de la eliminación<br/>|         |         |         |         |         |         |
+|Administración de cumplimiento de normas de DLP<br/>|         |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|         |         |         |         |
+|Exportar<br/>|         |         |         |         |         |         |
+|Retención<br/>|         |         |         |         |         |         |
+|Administrar alertas<br/>|         |         |         |         |         |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Configuración de la organización|         |         |         |         |         |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Vista previa <br/>|         |         |         |         |         |         |
+|Administración de registros <br/>|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|         |         |         |         |         |
+|Administración de la retención <br/>| ![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|         |         |         |         |         |
+|Revisión <br/>|         |         |         |         |         |         |
+|Descifrar de RMS<br/>|         |         |         |         |         |         |
+|Administración de funciones<br/>|         |         |         |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|         |         |
+|Búsqueda y depuración<br/>|         |         |         |         |         |         |
+|Administrador de seguridad<br/>||![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)| | ![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)| ![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Lector de seguridad<br/>|         |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)| | ![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)| ![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)
+|Vista del servicio de garantía<br/>|         |         |         |         |         |         |
+|Administrador de revisión de supervisión<br/>|         |         |         |         |         |         |
+|Registros de auditoría de sólo vista<br/>|         |         |         |         |         |         |
+|Administración de dispositivos de sólo vista<br/>|         |         |         |         |         |         |
+|Administración de cumplimiento de normas de DLP de sólo vista<br/>|         |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|         |         |         |         |
+|Sólo vista Administrar alertas<br/>|         |         |         |         |         |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Destinatarios con permiso de vista<br/>|         |         |  ![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)       |         ||         |
+|Administración de registros de sólo vista<br/>|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|         |         |         |         |         |
+|Administración de la retención de sólo vista<br/>|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|         |         |         |         |         |
+|         |         |         |         |         |         |
+
+**Sugerencia:** Para ver las funciones que están asignadas a cada uno de los grupos de roles de forma predeterminada, ejecute los siguientes comandos en & PowerShell de centro de cumplimiento de seguridad: 
+
+```
+$RoleGroups = Get-RoleGroup
+
+$RoleGroups | foreach {Write-Output -InputObject `r`n,$_.Name,"-----------------------"; Get-RoleGroup $_.Identity | Select-Object -ExpandProperty Roles}
+```
+También puede ver los roles asignados a un grupo de roles en el centro de cumplimiento de seguridad &. Vaya a la página de **permisos** y haga clic en un grupo de roles. Los roles asignados se enumeran en la página emergente.
+
+
 ## <a name="managing-alerts"></a>Administrar alertas
 
 Después de que las alertas se han generado y que se muestra en la página **Ver avisos** en la seguridad &amp; centro de cumplimiento, puede detectar, investigar y resolverlos conflictos. A continuación presentamos algunas tareas que puede realizar para administrar las alertas. 
@@ -164,17 +221,17 @@ Después de que las alertas se han generado y que se muestra en la página **Ver
     
 ## <a name="viewing-cloud-app-security-alerts"></a>Visualización de las alertas de seguridad de la aplicación en la nube
   
-Las alertas desencadenadas por las directivas de seguridad de la aplicación de Office 365 en la nube ahora se muestran en la página **Ver avisos** en el centro de cumplimiento y seguridad. Esto incluye las alertas desencadenadas por las directivas de la actividad y que se desencadenan por las directivas de detección de anomalías de seguridad de la aplicación de nube de Office 365. Esto significa que puede ver todas las alertas en el centro de cumplimiento y seguridad. Tenga en cuenta que sólo está disponible para las organizaciones con una suscripción a Office 365 Enterprise E5 o Office 365 nos gobierno G5 seguridad de la aplicación de nube de Office 365. Para obtener más información, vea [Información general de Office 365 en la nube seguridad de la aplicación](office-365-cas-overview.md).
+Las alertas desencadenadas por las directivas de seguridad de la aplicación de Office 365 en la nube ahora se muestran en la página **Ver avisos** en el centro de cumplimiento de seguridad &. Esto incluye las alertas desencadenadas por las directivas de la actividad y que se desencadenan por las directivas de detección de anomalías de seguridad de la aplicación de nube de Office 365. Esto significa que puede ver todas las alertas en el centro de cumplimiento de seguridad &. Tenga en cuenta que sólo está disponible para las organizaciones con una suscripción a Office 365 Enterprise E5 o Office 365 nos gobierno G5 seguridad de la aplicación de nube de Office 365. Para obtener más información, vea [Información general de Office 365 en la nube seguridad de la aplicación](office-365-cas-overview.md).
 
-Además, las organizaciones que tienen la seguridad de la aplicación de la nube de Microsoft como parte de una empresa movilidad + seguridad E5 suscripción o como un servicio independiente también puede ver alertas de seguridad de la aplicación en la nube que están relacionadas con aplicaciones de Office 365 y servicios en la seguridad & Centro de cumplimiento.
+Además, las organizaciones que tienen la seguridad de la aplicación de la nube de Microsoft como parte de una empresa movilidad + seguridad E5 suscripción o como un servicio independiente también pueden ver las alertas de seguridad de la aplicación en la nube que están relacionadas con aplicaciones de Office 365 y servicios en el & de seguridad Centro de cumplimiento.
 
-Para mostrar sólo alertas de seguridad de la aplicación en la nube en el centro de cumplimiento y seguridad, use el filtro de **origen** y seleccione la **Seguridad de la aplicación en la nube**.
+Para mostrar sólo alertas de seguridad de la aplicación en la nube en el centro de cumplimiento de seguridad &, use el filtro de **origen** y seleccione la **Seguridad de la aplicación en la nube**.
 
 ![Use el filtro de origen para mostrar sólo alertas de seguridad de la aplicación en la nube](media/FilterCASAlerts.png)
 
-Al igual que una alerta activada por una directiva de alerta de seguridad & Centro de cumplimiento, puede hacer clic en una alerta de seguridad de la aplicación en la nube para mostrar una página emergente con detalles acerca de la alerta. La alerta incluye un vínculo para ver los detalles y administrar la alerta en el portal de seguridad de la aplicación en la nube y un vínculo a la directiva de seguridad de la aplicación en la nube correspondiente que desencadenan la alerta. Ver la [acción de revisión y tomar las alertas de seguridad de la aplicación de nube de Office 365](review-office-365-cas-alerts.md).
+Al igual que una alerta activada por una directiva de alerta del centro de cumplimiento de seguridad &, puede hacer clic en una alerta de seguridad de la aplicación en la nube para mostrar una página emergente con detalles acerca de la alerta. La alerta incluye un vínculo para ver los detalles y administrar la alerta en el portal de seguridad de la aplicación en la nube y un vínculo a la directiva de seguridad de la aplicación en la nube correspondiente que desencadenan la alerta. Ver la [acción de revisión y tomar las alertas de seguridad de la aplicación de nube de Office 365](review-office-365-cas-alerts.md).
 
 ![Detalles de la alerta de contienen vínculos al portal de seguridad de la aplicación en la nube](media/CASAlertDetail.png)
 
 > [!IMPORTANT]
-> Cambiar el estado de una alerta de seguridad de la aplicación en la nube en el centro de cumplimiento y seguridad no actualizará el estado de resolución de la misma alerta en el portal de seguridad de la aplicación en la nube. Por ejemplo, si marca el estado de la alerta como **resuelto** en el centro de cumplimiento y seguridad, no ha cambiado el estado de la alerta en el portal de seguridad de la aplicación en la nube. Para resolver o descartar una alerta de seguridad de la aplicación en la nube, administrar la alerta en el portal de seguridad de la aplicación en la nube.
+> Cambiar el estado de una alerta de seguridad de la aplicación en la nube en el centro de cumplimiento de seguridad & no actualiza el estado de resolución de la misma alerta en el portal de seguridad de la aplicación en la nube. Por ejemplo, si marca el estado de la alerta como **resuelto** en el centro de cumplimiento de seguridad &, ha cambiado el estado de la alerta en el portal de seguridad de la aplicación en la nube. Para resolver o descartar una alerta de seguridad de la aplicación en la nube, administrar la alerta en el portal de seguridad de la aplicación en la nube.

@@ -3,7 +3,7 @@ title: Consultas de palabras clave y condiciones de búsqueda para la búsqueda 
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/29/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: reference
 f1_keywords:
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: 'Obtenga información acerca de las propiedades de correo electrónico y el archivo que se pueden buscar en buzones de Exchange Online y en SharePoint o OneDrive para los sitios de negocio con la herramienta de búsqueda de contenido en la seguridad de Office 365 &amp; centro de cumplimiento.  '
-ms.openlocfilehash: 49dab5c26516f0549a6f72a24c98618db459dcc6
-ms.sourcegitcommit: bf70ec8e11b3f75bf45cd4f760cd1a982593dbad
+ms.openlocfilehash: c1b5c3721a892929535a7e699201d0bcfc39937b
+ms.sourcegitcommit: a2afa4c06e9b762cf689b0d2a0653076f9b00c49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "24962956"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28328166"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>Consultas de palabras clave y condiciones de búsqueda para la búsqueda de contenido
 
@@ -84,9 +84,9 @@ Para obtener una lista completa de las propiedades de SharePoint que se puede bu
 |FileName  <br/> |El nombre de un archivo.  <br/> |`filename:"marketing plan"`  <br/> `filename:estimate`  <br/> |El primer ejemplo devuelve archivos con la frase exacta "plan de marketing" en el título. El segundo ejemplo devuelve archivos con la palabra "estimación" en el nombre del archivo.  <br/> |
 |LastModifiedTime  <br/> |La fecha de la última modificación de un elemento.  <br/> |`lastmodifiedtime>=05/01/2016`  <br/> `lastmodifiedtime>=05/10/2016 AND lastmodifiedtime<=06/1/2016`  <br/> |El primer ejemplo devuelve los elementos que se han cambiado en o después del 1 de mayo de 2016. El segundo ejemplo devuelve los elementos que han cambiado entre el 1 de mayo de 2016 y el 1 de junio de 2016.  <br/> |
 |ModifiedBy  <br/> |La persona que modificó por última vez un elemento. Asegúrese de usar el nombre para mostrar del usuario para esta propiedad.  <br/> |`modifiedby:"Garth Fort"`  <br/> |Todos los elementos que Juan Casanova modificó por última vez.  <br/> |
-|Path  <br/> |La ruta de acceso (dirección URL) de una carpeta específica en un SharePoint o OneDrive para el sitio de negocio. Si utiliza esta propiedad, asegúrese de buscar en el sitio que se encuentra la carpeta especificada en.<br/> Para devolver los elementos ubicados en las subcarpetas de la carpeta que especifique para la propiedad de ruta de acceso, tiene que agregar /\* a la dirección URL de la carpeta especificada; Por ejemplo, `path: https://contoso.sharepoint.com/Shared Documents/*`.  <br/> <br/> **Nota:** Uso de la `Path` propiedad a OneDrive ubicaciones de búsqueda no devolverá los archivos multimedia, como archivos .png, .tiff o .wav, en los resultados de búsqueda. Use una propiedad de sitio diferente en la consulta de búsqueda para buscar archivos multimedia en las carpetas de OneDrive.<br/> <br/> Para obtener más información acerca de la búsqueda para la propiedad de ruta de acceso y uso de una secuencia de comandos para obtener las direcciones URL de ruta de acceso para las carpetas en un sitio específico, vea [Usar la búsqueda de contenido en Office 365 para las colecciones de destinadas](use-content-search-for-targeted-collections.md).  <br/> |`path:https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Private`  <br/> `path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Shared with Everyone/*" AND filename:confidential`  <br/> |El primer ejemplo devuelve todos los elementos en el OneDrive especificada para la carpeta Business. El segundo ejemplo devuelve documentos en la carpeta del sitio especificado (y todas las subcarpetas) que contienen la palabra "confidential" en el nombre de archivo.  <br/> |
+|Path  <br/> |La ruta de acceso (dirección URL) de una carpeta específica en un SharePoint o OneDrive para el sitio de negocio. Si utiliza esta propiedad, asegúrese de buscar en el sitio que se encuentra la carpeta especificada en.<br/> Para devolver los elementos ubicados en las subcarpetas de la carpeta que especifique para la propiedad de ruta de acceso, tiene que agregar /\* a la dirección URL de la carpeta especificada; Por ejemplo,`path: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/> <br/> **Nota:** Uso de la `Path` propiedad a OneDrive ubicaciones de búsqueda no devolverá los archivos multimedia, como archivos .png, .tiff o .wav, en los resultados de búsqueda. Use una propiedad de sitio diferente en la consulta de búsqueda para buscar archivos multimedia en las carpetas de OneDrive.<br/> <br/> Para obtener más información acerca de la búsqueda para la propiedad de ruta de acceso y uso de una secuencia de comandos para obtener las direcciones URL de ruta de acceso para las carpetas en un sitio específico, vea [Usar la búsqueda de contenido en Office 365 para las colecciones de destinadas](use-content-search-for-targeted-collections.md).  <br/> |`path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Private"`  <br/> `path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Shared with Everyone/*" AND filename:confidential`  <br/> |El primer ejemplo devuelve todos los elementos en el OneDrive especificada para la carpeta Business. El segundo ejemplo devuelve documentos en la carpeta del sitio especificado (y todas las subcarpetas) que contienen la palabra "confidential" en el nombre de archivo.  <br/> |
 |SharedWithUsersOWSUser  <br/> |Documentos que se han compartido con el usuario especificado y que se muestra en la página **compartidos conmigo** en OneDrive del usuario para el sitio de negocio. Estos son los documentos que se han explícitamente compartidos con el usuario especificado por otras personas en su organización. Al exportar documentos que coinciden con una consulta de búsqueda que se utiliza la propiedad SharedWithUsersOWSUser, los documentos se exportan desde la ubicación original del contenido de la persona que comparte el documento con el usuario especificado. Para obtener más información, consulte [búsqueda de contenido de sitio compartidos dentro de la organización](keyword-queries-and-search-conditions.md#internal).<br/> |`sharedwithusersowsuser:garthf`  <br/> `sharedwithusersowsuser:"garthf@contoso.com"`  <br/> |Ambos ejemplos devuelven todos los documentos internos que se han compartido explícitamente con Luis fuertes y que aparecen en la página **compartidos conmigo** en Luis fuertes OneDrive para la cuenta de empresa.  <br/> |
-|Sitio  <br/> |La dirección URL de un sitio o grupo de sitios de la organización.  <br/> |`site:https://contoso-my.sharepoint.com`  <br/> `site:https://contoso.sharepoint.com/sites/teams`  <br/> |El primer ejemplo devuelve los elementos de la OneDrive para sitios de negocio para todos los usuarios de la organización. El segundo ejemplo devuelve los elementos de todos los sitios de grupo.  <br/> |
+|Sitio  <br/> |La dirección URL de un sitio o grupo de sitios de la organización.  <br/> |`site:"https://contoso-my.sharepoint.com"`  <br/> `site:"https://contoso.sharepoint.com/sites/teams"`  <br/> |El primer ejemplo devuelve los elementos de la OneDrive para sitios de negocio para todos los usuarios de la organización. El segundo ejemplo devuelve los elementos de todos los sitios de grupo.  <br/> |
 |Size  <br/> |El tamaño de un elemento, en bytes.  <br/> |`size>=1`  <br/> `size:1..10000`  <br/> |El primer ejemplo devuelve elementos mayores de 1 byte. El segundo ejemplo devuelve elementos que tienen un tamaño de entre 1 y 10 000 bytes.  <br/> |
 |Título  <br/> |El título del documento. La propiedad Title es metadatos que se especifican en documentos de Microsoft Office. Es diferente del nombre de archivo del documento.  <br/> |`title:"communication plan"`  <br/> |Cualquier documento que contenga la frase "plan de comunicación" en la propiedad Título de metadatos de un documento de Office.  <br/> |
    
@@ -95,7 +95,7 @@ Para obtener una lista completa de las propiedades de SharePoint que se puede bu
 En la siguiente tabla se enumera las propiedades de contacto que están indizadas y que pueden buscar para el uso de búsqueda de contenido. Estas son las propiedades que están disponibles para los usuarios a configurar para los contactos (también denominados contactos personales) que se encuentran en la libreta de direcciones personales del buzón de un usuario. Para buscar contactos, puede seleccionar los buzones de correo para buscar y, a continuación, utilice una o más propiedades de contacto en la consulta de palabra clave.
   
 > [!TIP]
-> Para buscar los valores que contienen espacios, usar comillas dobles ("??") para que contengan la frase; Por ejemplo, `businessaddress:"123 Main Street"`. 
+> Para buscar los valores que contienen espacios ni caracteres especiales, utilice las comillas dobles ("") para contener la frase; Por ejemplo, `businessaddress:"123 Main Street"`. 
   
 |**Propiedad**|**Descripción de la propiedad**|
 |:-----|:-----|
@@ -139,7 +139,7 @@ Operadores de búsqueda booleanos, como **AND**, **OR**y **no**, le ayudará a d
 |NOT  <br/> |palabra clave 1 NOT palabra clave 2  <br/> NOT from:"Ann Beebe"  <br/> NO tipo: mensajería instantánea  <br/> |Excluye los elementos especificados por una palabra clave o un `property:value` expresión. En el segundo ejemplo, excluyen los mensajes enviados por Ann Beebe. El tercer ejemplo excluye cualquier conversaciones de mensajería instantánea, como Skype para las conversaciones de negocio que se guardan en la carpeta de buzón de correo de historial de conversaciones. <sup>2</sup> <br/> |
 |-  <br/> |palabra clave 1 - palabra clave 2  <br/> |El mismo que el operador **NOT** . Por tanto, esta consulta devuelve los elementos que contienen `keyword1` y podrían excluir los elementos que contienen `keyword2`.<br/> |
 |NEAR  <br/> |palabra clave 1 NEAR(n) palabra clave 2  <br/> |Devuelve los elementos con las palabras que están cerca entre sí, donde n es igual al número de separación de palabras. Por ejemplo, `best NEAR(5) worst` devuelve cualquier elemento donde es la palabra "peor" dentro de cinco palabras de "el mejor". Si se especifica ningún número, la distancia predeterminada es ocho palabras. <sup>2</sup> <br/> |
-|ONEAR  <br/> |palabra clave 1 ONEAR(n) palabra clave 2  <br/> |Es similar a **cerca**, pero devuelve los elementos con las palabras que están cerca entre sí en el orden especificado. Por ejemplo, `best ONEAR(5) worst` devuelve cualquier elemento donde se produce la palabra "buenas" antes de la palabra "peor" y las dos palabras están dentro de cinco palabras de cada uno de los otros. Si se especifica ningún número, la distancia predeterminada es ocho palabras. <sup>2</sup> <br/> > [!NOTE]> El operador **ONEAR** no se admite al buscar en los buzones de correo; sólo funciona cuando se busca sitios profesionales en SharePoint y OneDrive. Si va a buscar en la misma búsqueda de buzones de correo y los sitios y la consulta incluye el operador **ONEAR** , la búsqueda devolverá los elementos del buzón como si estuviera utilizando el operador **NEAR** . En otras palabras, la búsqueda devuelve los elementos en los que las palabras especificadas están cerca entre sí independientemente del orden en el que se producen las palabras.           |
+|ONEAR  <br/> |palabra clave 1 ONEAR(n) palabra clave 2  <br/> |Es similar a **cerca**, pero devuelve los elementos con las palabras que están cerca entre sí en el orden especificado. Por ejemplo, `best ONEAR(5) worst` devuelve cualquier elemento donde se produce la palabra "buenas" antes de la palabra "peor" y las dos palabras están dentro de cinco palabras de cada uno de los otros. Si se especifica ningún número, la distancia predeterminada es ocho palabras. <sup>2</sup> <br/> > [!NOTE]> que no se admite el operador **ONEAR** al buscar en los buzones de correo; sólo funciona cuando se busca sitios profesionales en SharePoint y OneDrive. Si va a buscar en la misma búsqueda de buzones de correo y los sitios y la consulta incluye el operador **ONEAR** , la búsqueda devolverá los elementos del buzón como si estuviera utilizando el operador **NEAR** . En otras palabras, la búsqueda devuelve los elementos en los que las palabras especificadas están cerca entre sí independientemente del orden en el que se producen las palabras.           |
 |:  <br/> |propiedad:valor  <br/> |Los dos puntos (:) en el `property:value` sintaxis especifica que el valor de la propiedad que se busca contiene el valor especificado. Por ejemplo, `recipients:garthf@contoso.com` devuelve los mensajes enviados a garthf@contoso.com.<br/> |
 |=  <br/> |propiedad=valor  <br/> |El mismo que el operador de **:** .  <br/> |
 |\<  <br/> |propiedad\<valor  <br/> |Indica que la propiedad que se busca es menor que el valor especificado. <sup>1</sup> <br/> |
@@ -196,7 +196,7 @@ Cree una condición usando las propiedades de correo cuando busque buzones o car
 |Remitente  <br/> |El remitente de un mensaje de correo electrónico.  <br/> |
 |Sent  <br/> |La fecha en la que se envió un mensaje de correo electrónico por el remitente. Se trata de la misma propiedad como la propiedad de correo electrónico enviados.  <br/> |
 |Subject  <br/> |El texto en la línea de asunto de un mensaje de correo electrónico.  <br/> |
-|To  <br/> |El destinatario de un mensaje de correo electrónico.  <br/> |
+|Para  <br/> |El destinatario de un mensaje de correo electrónico.  <br/> |
   
 ### <a name="conditions-for-document-properties"></a>Condiciones para las propiedades de documento
 
@@ -322,11 +322,11 @@ También puede usar la característica de búsqueda de contenido en la seguridad
     
 - Un vínculo de invitado anónimo, que permite a cualquier persona con este vínculo para obtener acceso al recurso sin tener que ser autenticados.
     
-Estos son algunos ejemplos:
+Aquí se muestran algunos ejemplos:
   
 - La consulta `ViewableByExternalUsers:true AND SensitiveType:"Credit Card Number"` devolverá todos los elementos que se han compartido con personas fuera de la organización y contienen un número de tarjeta de crédito. 
     
-- La consulta `ViewableByExternalUsers:true AND ContentType:document AND Site:https://contoso.sharepoint.com/Sites/Teams` devolverá una lista de documentos en todos los sitios de equipo de la organización que han decidido compartir con los usuarios externos. 
+- La consulta `ViewableByExternalUsers:true AND ContentType:document AND site:"https://contoso.sharepoint.com/Sites/Teams"` devolverá una lista de documentos en todos los sitios de equipo de la organización que han decidido compartir con los usuarios externos. 
     
 > [!TIP]
 > Una consulta de búsqueda como `ViewableByExternalUsers:true AND ContentType:document` puede devolver una gran cantidad de archivos .aspx en los resultados de búsqueda. Para eliminar estos (u otros tipos de archivos), puede usar el `FileExtension` (propiedad) para excluir determinados tipos de archivo; Por ejemplo `ViewableByExternalUsers:true AND ContentType:document NOT FileExtension:aspx`. 
