@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
 description: Puede usar las reglas de flujo de correo (también denominadas "reglas de transporte") para identificar mensajes del flujo de correo de su organización de Office 365 y realizar acciones en ellos.
-ms.openlocfilehash: 841a88f7074ce469643630cf29e0674db8fb88b6
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: b6bd5f0510c8a9e5f5cc4679dce669b6da50f5e8
+ms.sourcegitcommit: b0b0b716718c22779c7c04775b8010d65cd6656b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026617"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28723247"
 ---
 # <a name="mail-flow-rules-transport-rules-in-exchange-online-protection"></a>Reglas de flujo de correo (reglas de transporte) en Exchange Online Protection
 
@@ -32,7 +32,7 @@ Para implementar directivas de mensajería específicas mediante el uso de regla
   
 - [Use mail flow rules to inspect message attachments in Office 365](http://technet.microsoft.com/library/874d1c78-a8ec-4938-b388-d3208c2fa971.aspx)
     
-- [Configurar el cifrado en Office 365 Enterprise](https://support.office.com/article/e86fc991-0161-4f01-9c1c-d25e87733d06)
+- [Configurar el cifrado en Office 365 Enterprise](https://support.office.com/article/e86fc991-0161-4f01-9c1c-d25e87733d06)
     
 - [Organization-wide message disclaimers, signatures, footers, or headers in Office 365](http://technet.microsoft.com/library/29ac61c2-77f1-4071-b14e-8cc64e3e76ba.aspx)
     
@@ -54,7 +54,7 @@ Una regla de flujo de correo consta de condiciones, excepciones, acciones y prop
   
 - **Condiciones** Identifican los mensajes a los que quiere aplicar las acciones. Algunas condiciones examinan campos de encabezado del mensaje (por ejemplo, los campos Para, De o CC). Otras examinan propiedades del mensaje (por ejemplo, el asunto, el cuerpo, los datos adjuntos, el tamaño del mensaje o la clasificación del mensaje). La mayoría de las condiciones exigen que se especifique un operador de comparación (por ejemplo, es igual a, no es igual a o contiene) y un valor de coincidencia. En caso de que no haya condiciones o excepciones, la regla se aplica a todos los mensajes. 
     
-    Para obtener más información acerca de correo condiciones de regla de flujo de Exchange Online Protection, vea [Mail condiciones de regla de flujo y excepciones (predicados) en Exchange Online Protection](http://technet.microsoft.com/library/04edeaba-afd4-4207-b2cb-51bcc44e483c.aspx).
+    Para obtener más información acerca de las condiciones de regla de flujo de correo en Exchange Online Protection, vea [excepciones (predicados) y las condiciones de regla de flujo de correo en Exchange Online.](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions).
     
 - **Excepciones** Identifican de forma opcional los mensajes a los que no deben aplicarse las acciones. Los mismos identificadores de mensaje que están disponibles en las condiciones están también disponibles en las excepciones. Las excepciones invalidan las condiciones e impiden que se apliquen las acciones de regla a un mensaje, aunque este cumpla todas las condiciones configuradas. 
     
