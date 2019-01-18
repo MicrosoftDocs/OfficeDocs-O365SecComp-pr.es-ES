@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: f2cd475a-e592-46cf-80a3-1bfb0fa17697
 description: Obtenga información sobre cómo configurar clave de cliente para Office 365 para Exchange Online, Skype para la empresa, SharePoint Online y OneDrive para la empresa. Con la clave de cliente, controlar las claves de cifrado de la organización y, a continuación, configurar Office 365 para usarlos para cifrar los datos en reposo en centros de datos de Microsoft.
-ms.openlocfilehash: 3eeccd03b89aa5a79ceba536d3f13c7a881b6ca7
-ms.sourcegitcommit: ef0bb05a0cf7974ae5083c7551ce3fe4ab7a9544
+ms.openlocfilehash: c4a59af49efad3bb8539b6c83b9ad9fd1c2d1f43
+ms.sourcegitcommit: b0b0b716718c22779c7c04775b8010d65cd6656b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "23965614"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28723257"
 ---
 # <a name="controlling-your-data-in-office-365-using-customer-key"></a>Controlar los datos en Office 365 con la clave de cliente
 
@@ -54,7 +54,7 @@ La mayoría de estas tareas se efectuarán mediante la conexión de forma remota
     
 - [Enviar una solicitud para activar la clave de cliente de Office 365](controlling-your-data-using-customer-key.md#FastTrack)
     
-    Una vez que ha creado las dos suscripciones en Azure nuevo, debe enviar la solicitud de oferta de clave de cliente correspondiente al completar un formulario web que se hospeda en el portal de Microsoft FastTrack. El equipo de FastTrack no proporciona asistencia con clave de cliente. Office simplemente usa el portal de FastTrack para permitirle enviar el formulario y nos ayudará a realizar un seguimiento de las ofertas relevantes para la clave de cliente.
+    Una vez que ha creado las dos suscripciones en Azure nuevo, debe enviar la solicitud de oferta de clave de cliente correspondiente al completar un formulario web que se hospeda en el portal de Microsoft FastTrack. **FastTrack el equipo no proporciona asistencia con clave de cliente. Office simplemente usa el portal de FastTrack para permitirle enviar el formulario y nos ayudará a realizar un seguimiento de las ofertas relevantes para la clave de cliente**.
   
 Una vez que se han enviado una oferta de clave de cliente, Microsoft revisa la solicitud y le notifica cuando puede continuar con el resto de las tareas del programa de instalación. Este proceso puede tardar hasta cinco días laborables.
     
@@ -434,7 +434,7 @@ Para crear la DEP, siga estos pasos:
    $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
    ```
 
-3. Ejecute el siguiente comando.
+3. Ejecute el comando siguiente.
     
    ```
    Import-PSSession $Session
