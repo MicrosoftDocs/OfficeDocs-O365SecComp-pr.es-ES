@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: bc1508c3d07e62864ffb156d6e311ace421bc8bc
+ms.sourcegitcommit: a2afa4c06e9b762cf689b0d2a0653076f9b00c49
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "28328136"
+---
 # [Introducción]()
 ## [Guía de seguridad de Office 365](security-roadmap.md)
 ## [Configurar su inquilino de Office 365 para aumentar la seguridad](tenant-wide-setup-for-increased-security.md)
@@ -239,7 +247,7 @@
 # [Supervisión de seguridad y cumplimiento]()
 ## [Directivas de alerta](alert-policies.md)
 ## [Informes inteligentes y reportes en el Centro de seguridad y cumplimiento](reports-and-insights-in-security-and-compliance.md)
-### [ Ver informes de seguridad de correo electrónico en el Centro de seguridad y cumplimiento](view-email-security-reports.md)
+### [Ver informes de seguridad de correo electrónico en el Centro de seguridad y cumplimiento](view-email-security-reports.md)
 #### [Tutorial: desde un informe detallado a un reporte](from-a-detailed-report-to-an-insight.md)
 #### [Tutorial: desde un reporte a un informe detallado](from-an-insight-to-a-detailed-report.md)
 #### [Tutorial: desde un panel o a un reporte](from-a-dashboard-to-an-insight.md)
@@ -248,7 +256,15 @@
 #### [Configurar y descargar un informe personalizado](set-up-and-download-a-custom-report.md)
 #### [Descargar informes existentes](download-existing-reports.md)
 ## [Habilitar o deshabilitar las sugerencias de seguridad en Office 365](enable-or-disable-safety-tips.md)
-## [Habilite el complemento de mensajes de informe](enable-the-report-message-add-in.md)
+## [Habilitar el complemento de mensajes de informe](enable-the-report-message-add-in.md)
+# Flujo de correo
+## [Seguimiento de mensajes en el Centro de seguridad y cumplimiento](message-trace-scc.md)
+## [Reportes de flujo de Correo en el Centro de seguridad y cumplimiento](mail-flow-insights.md)
+### [Informe de mensajes reenviados automáticamente](mfi-auto-forwarded-messages-report.md)
+### [Reporte de bucle de correo](mfi-mail-loop-insight.md)
+### [Flujo de correo entrante y saliente](mfi-outbound-and-inbound-mail-flow.md)
+### [Colas y alertas de cola](mfi-queue-alerts-and-queues.md)
+### [Reporte de reglas de flujo de correo lento](mfi-slow-mail-flow-rules-insight.md)
 # Soluciones de seguridad
 ## [Instrucciones de seguridad de Microsoft para campañas políticas, organizaciones sin ánimo de lucro y otras organizaciones ágiles](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
 ### [Configurar grupos y usuarios en un entorno de desarrollo y prueba de campaña política](configure-groups-and-users-for-a-political-campaign-dev-test-environment.md)
@@ -263,7 +279,6 @@
 ### [Administrar un sitio de grupo de SharePoint Online aislado](manage-an-isolated-sharepoint-online-team-site.md)
 ### [Sitio de grupo de SharePoint Online aislado en su entorno para desarrollo y pruebas](isolated-sharepoint-online-team-site-dev-test-environment.md)
 ## [Integración de servidor SIEM](siem-server-integration.md)
-
 # Soluciones de cumplimiento normativo
 ## [Portal de confianza del servicio de Microsoft](get-started-with-service-trust-portal.md)
 ## [Administrador de cumplimiento](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
