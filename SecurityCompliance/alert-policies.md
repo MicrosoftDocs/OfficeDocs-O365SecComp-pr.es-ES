@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 description: Crear directivas de alerta en la seguridad de Office 365 &amp; centro de cumplimiento para supervisar las posibles amenazas, la pérdida de datos y el problema de permisos. A continuación, puede ver y administrar las alertas que se generan cuando los usuarios realizan actividades que coinciden con las condiciones de una directiva de alerta.
-ms.openlocfilehash: 6bdbf9c4c352bf16fd1a7b5c9f7b0af7eb4fadfd
-ms.sourcegitcommit: a2afa4c06e9b762cf689b0d2a0653076f9b00c49
+ms.openlocfilehash: 28ea842c74f2d3d232218e582d3de31f3841284e
+ms.sourcegitcommit: a1d8174240eb88b51af3a1ba26d715292fe08c53
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28328146"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "29426035"
 ---
 # <a name="alert-policies-in-the-office-365-security-amp-compliance-center"></a>Las directivas de la seguridad de Office 365 de la alerta &amp; centro de cumplimiento
 
@@ -34,11 +34,11 @@ Este es un breve resumen del trabajo de alerta cómo las directivas y las alerta
   
 ![Información general de cómo alerta de las directivas de trabajo](media/e02a622d-b429-448b-8107-dd1a4770b4e0.png)
   
-1. Un administrador de la organización crea, configura y activa en una directiva de alerta mediante la página de **directivas de alerta** en la seguridad &amp; centro de cumplimiento. También puede crear directivas de alerta mediante el cmdlet **New-ProtectionAlert** en PowerShell. 
+1. Un administrador de la organización crea, configura y activa en una directiva de alerta mediante la página de **directivas de alerta** en el centro de cumplimiento de seguridad &. También puede crear directivas de alerta mediante el cmdlet **New-ProtectionAlert** en PowerShell. Para crear directivas de alerta, se debe asignar la función de la configuración de la organización o el rol de administrar alertas en el centro de cumplimiento de seguridad &.
     
 2. Un usuario realiza una actividad que coincide con las condiciones de una directiva de alerta. En el caso de los ataques de malware, los mensajes de correo electrónico infectados enviados a los usuarios de su organización activarán una alerta.
     
-3. Office 365 genera una alerta que se muestra en la página **Ver avisos** en la seguridad &amp; centro de cumplimiento. Además, si se habilitan las notificaciones de correo electrónico para la directiva de alerta, Office 365 envía una notificación a destinatarios de una lista. 
+3. Office 365 genera una alerta que se muestra en la página **Ver avisos** en la seguridad &amp; centro de cumplimiento. Además, si se habilitan las notificaciones de correo electrónico para la directiva de alerta, Office 365 envía una notificación a destinatarios de una lista. Las alertas que un administrador u otros usuarios pueden ver en la página **Ver avisos** está determinado por los roles asignados al usuario. Para obtener más información, vea la sección [permisos de RBAC necesitan para ver las alertas](#rbac-permissions-required-to-view-alerts) .
     
 4. Un administrador que administra las alertas en la seguridad &amp; centro de cumplimiento. Administrar alertas consta de asignar un estado de la alerta para ayudar a realizar un seguimiento y administrar cualquier investigación.
     
@@ -76,7 +76,7 @@ Una directiva de alerta consta de los siguientes parámetros y condiciones.
     
   - Prevención de pérdida de datos
 
-  - Flujo del correo
+  - Flujo de correo
     
   - Permisos
     
@@ -152,7 +152,7 @@ Este diseño (según los permisos de RBAC) le permite determinar qué alertas se
 
 En la siguiente tabla enumera las funciones que son necesarios para ver las alertas de las diferentes categorías de alerta 6. La primera columna de las tablas enumera todas las funciones de centro de cumplimiento de seguridad &.  Una marca de verificación indica que un usuario que se asigna esa función puede ver las alertas desde la categoría correspondiente de la alerta aparece en la fila superior.
 
-|<br/>|Gobierno de datos|Prevención de pérdida de datos|Flujo del correo|Permisos|Administración de amenazas|Otros | 
+|<br/>|Gobierno de datos|Prevención de pérdida de datos|Flujo de correo|Permisos|Administración de amenazas|Otros | 
 |:---------|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
 |Registros de auditoría <br/> |         ||         |         |         |         |
 |Administración de casos <br/>|         |         |         |         |         |         |
