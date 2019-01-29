@@ -3,7 +3,7 @@ title: Directivas de detección de anomalías en Office 365 Cloud App Security
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 2/26/2018
+ms.date: 01/28/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 88935b4e-dcb1-47f1-8aca-1bf8fb069db6
 description: 'Las directivas de detección de anomalías de seguridad de la aplicación de nube de Office 365 usen algoritmos integrados para ayudar a descubrir posibles problemas. Debe tener la directiva de detección de anomalías de al menos un, que puede ajustar (al crearla) mediante el uso de filtros. '
-ms.openlocfilehash: 62e2db3ba46f41bce5c5c4fab9e6c685838d68e8
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: 7a1cb795531df168f0a5c425e7555ae6b1412d2b
+ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28015082"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29604421"
 ---
 # <a name="anomaly-detection-policies-in-office-365-cloud-app-security"></a>Directivas de detección de anomalías en Office 365 Cloud App Security
 
@@ -28,13 +28,13 @@ Administración avanzada de seguridad de Office 365 es ahora de seguridad de la 
 |:-----|:-----|:-----|:-----|
 |[Empezar a evaluar](office-365-cas-overview.md) <br/> |[Comenzar a planear](get-ready-for-office-365-cas.md) <br/> |¡Están aquí!  <br/> [Paso siguiente](integrate-your-siem-server-with-office-365-cas.md) <br/> |[Iniciar utilizando](utilization-activities-for-ocas.md) <br/> |
    
-A partir [de la seguridad de la aplicación de Microsoft en la nube versión 116](https://docs.microsoft.com/cloud-app-security/release-notes), seguridad de la aplicación de nube de Office 365 incluye varias directivas de detección de anomalías predefinidos ("fuera de la caja") que incluyen usuario y análisis de comportamiento de entidad (UEBA) y una máquina de aprendizaje (ML).
+A partir [de la seguridad de la aplicación de Microsoft en la nube versión 116](new-in-office-365-cas-2018.md#office-365-cloud-app-security-release-116-3), seguridad de la aplicación de nube de Office 365 incluye varias directivas de detección de anomalías predefinidos ("fuera de la caja") que incluyen usuario y análisis de comportamiento de entidad (UEBA) y una máquina de aprendizaje (ML).
   
 ![Para ver las directivas de detección de anomalías, elija Control \> directivas.](media/9663baa5-98bf-45e0-9458-6e572b43ec72.png)
   
 Estas directivas de detección de anomalías proporcionan resultados inmediatos proporcionando detecciones de inmediatas, identificación de numerosas anomalías de comportamiento entre los usuarios y equipos y dispositivos conectados a la red. Además, las nuevas directivas exponen más datos desde el motor de detección de seguridad de la aplicación en la nube que le ayudarán a acelerar el proceso de investigación y contienen las amenazas en curso.
   
-Como [administrador global o administrador de seguridad](permissions-in-the-security-and-compliance-center.md), puede revisar y, si es necesario, revisar las directivas predeterminadas que están disponibles con seguridad de la aplicación de nube de Office 365.
+Como un administrador global de Office 365 o un administrador de seguridad, puede revisar y, si es necesario, revisar las directivas predeterminadas que están disponibles con seguridad de la aplicación de nube de Office 365.
   
  > [!IMPORTANT]
 > Hay un período de aprendizaje inicial de siete (7) días durante el cual no se desencadenan alertas de comportamiento anómalo. El algoritmo de detección de anomalías está optimizado para reducir el número de alertas de falsos positivos. 
@@ -51,23 +51,13 @@ Asegúrese de que:
     
 ## <a name="view-your-anomaly-detection-policies"></a>Ver las directivas de detección de anomalías
 
-1. Como administrador global o administrador de seguridad, vaya a [https://protection.office.com](https://protection.office.com) e iniciar sesión con su cuenta de trabajo o escuela. 
+1. Como administrador global o administrador de seguridad, vaya al portal de seguridad de la aplicación en la nube ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)) e iniciar sesión.<br>Esto le llevará a la página de directivas de seguridad de aplicaciones de Office 365 en la nube.
     
-2. En la seguridad &amp; centro de cumplimiento, elija **alertas** \> **avanzada de administrar las alertas**.
-    
-3. Elija **Ir a la seguridad de la aplicación de Office 365 en la nube**.
-    
-    Esto le llevará a la página de directivas de seguridad de aplicaciones de Office 365 en la nube.
-    
-4. En la lista **tipo** , seleccione **Directiva de detección de anomalías**.
-    
-    La organización predeterminada (o los existentes) se muestran las directivas de detección de anomalías.
-    
-    ![Varias directivas de detección de anomalías están disponibles de forma predeterminada en la seguridad de la aplicación de nube de Office 365](media/2e0ee770-787a-4d4a-bea8-389dc765d4c6.png)
+2. En la lista **tipo** , seleccione **Directiva de detección de anomalías**.<br>La organización predeterminada (o los existentes) se muestran las directivas de detección de anomalías.<br>![Directivas de detección de anomalías en Office 365 Cloud App Security](media/2e0ee770-787a-4d4a-bea8-389dc765d4c6.png)
   
-5. Seleccione una directiva para revisar o modificar su configuración.
+3. Seleccione una directiva para revisar o modificar su configuración.
     
-6. Elija **Actualizar** para guardar los cambios. 
+4. Elija **Actualizar** para guardar los cambios. 
     
 ## <a name="learn-more-about-anomaly-detection-policies"></a>Encontrará más información acerca de las directivas de detección de anomalías
 
@@ -92,27 +82,19 @@ En la siguiente tabla se describe las directivas de detección de anomalías de 
 
 Como las alertas se incluyen, puede procesar dichas alertas rápidamente y determinar cuáles para tratar en primer lugar. Necesidad de contexto para una alerta le permite ver la imagen más grande y determinar si realmente está ocurriendo algo malintencionado. Use el procedimiento siguiente para empezar a explorar una alerta:
   
-1. Como administrador global o administrador de seguridad, vaya a [https://protection.office.com](https://protection.office.com) e iniciar sesión con su cuenta de trabajo o escuela. 
+1. Como administrador global o administrador de seguridad, vaya al portal de seguridad de la aplicación en la nube ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)) e iniciar sesión. 
     
-2. En la seguridad &amp; centro de cumplimiento, elija **alertas** \> **avanzada de administrar las alertas**.
+2. Elija **alertas** para ver sus avisos. 
     
-3. Elija **Ir a la seguridad de la aplicación de Office 365 en la nube**.
+3. Para obtener el contexto de una alerta, siga estos pasos:
     
-4. Elija **alertas** para ver sus avisos. 
+4. Elija **investigar** \> **registro de actividad**.
     
-5. Para obtener el contexto de una alerta, siga estos pasos:
-    
-1. Elija **investigar** \> **registro de actividad**.
-    
-2. Seleccione un elemento, como un usuario o dirección IP. Se abrirá el alimentador de conocimientos relevantes.
-    
-    ![En el registro de actividad, puede investigar una dirección IP.](media/32a727c5-e406-4fe2-9443-c1a7fb6628fc.png)
+5. Seleccione un elemento, como un usuario o dirección IP. Se abrirá el alimentador de conocimientos relevantes.<br>![En el registro de actividad, puede investigar una dirección IP.](media/32a727c5-e406-4fe2-9443-c1a7fb6628fc.png)
   
-3. En el alimentador de perspectivas pertinentes, haga clic en un comando disponible, como un icono en la sección **Mostrar SIMILAR** . 
-    
-    ![En el alimentador de perspectivas pertinentes, haga clic en el icono de reloj para ver las actividades realizadas dentro de una actividad seleccionada 48 horas](media/c6c96aa0-98e5-4205-8873-45f8d6fd0843.png)
+6. En el alimentador de perspectivas pertinentes, haga clic en un comando disponible, como un icono en la sección **Mostrar SIMILAR** .<br> ![Haga clic en el icono de reloj para ver las actividades realizadas dentro de una actividad seleccionada 48 horas](media/c6c96aa0-98e5-4205-8873-45f8d6fd0843.png)
   
-4. Obtenga información sobre el elemento seleccionado al continuar utilizando explorar detalles para ese elemento.
+7. Obtenga información sobre el elemento seleccionado al continuar utilizando explorar detalles para ese elemento.
     
 Una alerta en múltiples inicios de sesión con errores de hecho posible sospechosa y puede indicar un posible ataque de fuerza bruta. Sin embargo, como una alerta también puede ser un error de configuración de aplicación, lo que provoca que la alerta sea un favorable positivo es true. Si ve una alerta de varios-error-inicios de sesión con las actividades de sospechosas adicionales, a continuación, hay una mayor probabilidad de que una cuenta se ve comprometida. Por ejemplo, suponga que una alerta de varios-error de inicio de sesión es seguida por actividad desde una dirección IP TOR y actividad de viajes imposible, ambos indicadores seguros de compromiso. Incluso es posible que vea que el mismo usuario realiza una actividad masivo descarga, que a menudo es un indicador de que el atacante realizando exfiltration de datos. Lo de cosas que puede explorar en Office 365 la seguridad de la aplicación de nube para ver y procesar las alertas y tomar medidas donde sea necesario.
   
