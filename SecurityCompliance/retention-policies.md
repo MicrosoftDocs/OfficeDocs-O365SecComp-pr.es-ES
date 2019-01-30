@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 5e377752-700d-4870-9b6d-12bfc12d2423
 description: Con una directiva de retención, puede decidir de forma proactiva si quiere retener o eliminar contenido, ambos (retener y, a continuación, eliminar el contenido), aplicar una directiva única a la toda la organización o solo a determinadas ubicaciones o usuarios, o aplicar una directiva a todo el contenido o solo a aquel que cumpla ciertas condiciones.
-ms.openlocfilehash: a6d185484f83ca93c99153d584af6841397dbc2f
-ms.sourcegitcommit: ec465771a846de103a365fcb36cb7a7c0a5744c1
+ms.openlocfilehash: 46b7cd133551d8a0756361fd209e93ab9e721678
+ms.sourcegitcommit: d05a9937780d210b7ad48e721b947397ac5405a2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "27380620"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29607172"
 ---
 # <a name="overview-of-retention-policies"></a>Introducción a las directivas de retención
 
@@ -260,13 +260,37 @@ Para ello, utilice el parámetro `ExcludedItemClasses` de los cmdlets `New-Reten
 ## <a name="locking-a-retention-policy"></a>Bloquear una directiva de retención
 Algunas organizaciones podrían tener que cumplir con las reglas que definen los organismos reguladores, como la regla 17a-4 de la SEC (Comisión de intercambio y valores), lo que requiere que, después de activar una directiva de retención, esta no se pueda desactivar ni hacer menos restrictiva. Con el Bloqueo de retención, puede bloquear una directiva de modo que ninguna persona pueda desactivarla ni hacerla menos restrictiva, ni siquiera el administrador.
   
-Después de que se haya bloqueado una directiva, nadie puede desactivarla ni quitar ubicaciones de la directiva. Tampoco es posible modificar o eliminar el contenido que está sujeto a la directiva durante el período de retención. Una vez que se ha bloqueado la directiva, la única manera de modificar la directiva de conservación consiste en agregarle contenido o ampliar su duración. Una directiva bloqueada se puede incrementar o ampliar, pero no se puede reducir, deshabilitar ni desactivar.
+Después de que se haya bloqueado una directiva, nadie puede desactivarla ni quitar ubicaciones de ella. Tampoco es posible modificar o eliminar el contenido que está sujeto a la directiva durante el período de retención. Una vez que se ha bloqueado la directiva, la única manera de modificar la directiva de conservación consiste en agregarle contenido o ampliar su duración. Una directiva bloqueada se puede incrementar o ampliar, pero no se puede reducir, deshabilitar ni desactivar.
   
 Por lo tanto, antes de bloquear una directiva de retención, es **muy importante** que comprenda los requisitos de cumplimiento de la organización y que **no bloquee** una directiva hasta que no esté seguro de que es necesario.
+
+### <a name="lock-a-retention-policy-by-using-powershell"></a>Bloquear una directiva de retención con PowerShell
   
-Puede bloquear una directiva de retención con solo usar PowerShell. Utilice el parámetro `RestrictiveRetention` del cmdlet `New-RetentionCompliancePolicy` o `Set-RetentionCompliancePolicy`. Para obtener más información sobre PowerShell, vea a continuación la sección [Buscar los cmdlets de PowerShell para directivas de retención](#find-the-powershell-cmdlets-for-retention-policies).
+Puede bloquear una directiva de retención solo con PowerShell
+
+En primer lugar, [conéctese a PowerShell del Centro de seguridad y cumplimiento de Office 365](http://go.microsoft.com/fwlink/p/?LinkID=799771).
+
+Después, para ver una lista de las directivas de retención y buscar el nombre de la directiva que desea bloquear, ejecute `Get-RetentionCompliancePolicy`.
+
+![Lista de las directivas de retención en PowerShell](media/retention-policy-preservation-lock-get-retentioncompliancepolicy.PNG)
+
+Por último, para colocar un bloqueo de retención en la directiva de retención, ejecute `Set-RetentionCompliancePolicy` con el parámetro `RestrictiveRetention` establecido en true, por ejemplo:
+
+`Set-RetentionCompliancePolicy -Identity “<Name of Policy>” – RestrictiveRetention $true`
+
+![Parámetro RestrictiveRetention de PowerShell](media/retention-policy-preservation-lock-restrictiveretention.PNG)
+
+Después de ejecutar ese cmdlet, verá un mensaje de confirmación. Elija **Sí a todo**.
+
+![Aviso para confirmar que quiere bloquear una directiva de retención en PowerShell](media/retention-policy-preservation-lock-confirmation-prompt.PNG)
+
+La directiva de retención aparece ahora con un bloqueo de retención. Si ejecuta `Get-RetentionCompliancePolicy`, el parámetro `RestrictiveRetention` está establecido en true, por ejemplo:
+
+`Get-RetentionCompliancePolicy -Identity “<Name of Policy>” |Fl`
+
+![Directiva bloqueada con todos los parámetros visibles en PowerShell](media/retention-policy-preservation-lock-locked-policy.PNG)
   
-## <a name="the-principles-of-retention-or-what-takes-precedence"></a>Los principios de retención o qué tiene prioridad
+## <a name="the-principles-of-retention-or-what-takes-precedence"></a>Los principios de retención o qué tiene precedencia
 
 Es posible (o incluso probable) que se apliquen varias directivas de retención a contenido, cada una con una acción (conservar, eliminar o ambas) y un período de retención. ¿Qué tiene precedencia? En general, puede estar seguro de que el contenido conservado por una directiva no se puede eliminar de forma permanente con otra directiva.
   

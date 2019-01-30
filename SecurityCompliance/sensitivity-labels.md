@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Con las etiquetas de confidencialidad de Office 365, puede clasificar y ayudar a proteger el contenido confidencial, sin poner impedimentos a la productividad y la capacidad de colaboración de los usuarios. Puede usar etiquetas de confidencialidad para aplicar opciones de protección como encriptación o marcas de agua en el contenido con la etiqueta.
-ms.openlocfilehash: ad6137ad00fa2e7eb83a405e429d6c7826cf6a90
-ms.sourcegitcommit: d7e87ce4b1579ac47af2e853ef59ef058c40191f
+ms.openlocfilehash: 2804785362b504137319f5560287b6b2319e840b
+ms.sourcegitcommit: d05a9937780d210b7ad48e721b947397ac5405a2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "26547222"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29607162"
 ---
 # <a name="overview-of-sensitivity-labels"></a>Información general de etiquetas de confidencialidad
 
@@ -78,6 +78,11 @@ Después de aplicar una etiqueta de confidencialidad a un documento o correo ele
 - 
   **Evitar la pérdida de datos** activando endpoint protection en Intune. Si se descarga el contenido confidencial, puede ayudar a evitar la pérdida de datos desde dispositivos Windows. Por ejemplo, no puede copiar contenido a Dropbox, Gmail o una unidad USB. Antes de que las etiquetas de confidencialidad puedan usar Windows Information Protection (WIP), primero debe crear una directiva de protección de aplicaciones en Azure Portal. Para obtener más información, vea [Cómo Windows Information Protection protege los archivos con una etiqueta de confidencialidad](https://docs.microsoft.com/en-us/windows/security/information-protection/windows-information-protection/how-wip-works-with-labels?branch=vsts17546553).
 
+- **Aplicar la etiqueta automáticamente al contenido que contenga información confidencial.** Puede elegir el tipo de información confidencial que desee etiquetar y la etiqueta se puede aplicar automáticamente o, si lo prefiere, puede pedir a los usuarios que apliquen una etiqueta específica. Si recomienda una etiqueta, el aviso muestra el texto que elija. Para obtener más información, vea [Aplicar una etiqueta de contenido sensible automáticamente](apply_sensitivity_label_automatically.md).
+
+    ![Aviso para asignar una etiqueta necesaria](media/Sensitivity_label_Prompt_for_required_label.png)
+
+
 Todas estas opciones están disponibles cuando se crea una etiqueta en el Centro de seguridad y cumplimiento.
 
 ![Opciones al crear una etiqueta de confidencialidad](media/Sensitivity_label_create_options.png)
@@ -116,7 +121,11 @@ Con una directiva de etiqueta, puede:
 
 - **Requerir una justificación para cambiar una etiqueta.** Si el contenido está marcado como Confidencial y un usuario desea quitar esa etiqueta o reemplazarla con una clasificación inferior, como una etiqueta denominada Público, puede hacer que el usuario necesite proporcionar una justificación para realizar esta acción. Estas justificaciones estarán disponibles para que el administrador las revise. Actualmente estamos trabajando en un informe en el que los administradores puedan ver las justificaciones de los usuarios.
 
-    ![Cuadro en el que los usuarios especifican una justificación](media/Sensitivity_label_justification_required.png)
+    ![Aviso en el que los usuarios especifican una justificación](media/Sensitivity_label_justification_required.png)
+
+- **Requerir que los usuarios apliquen una etiqueta a su correo electrónico y documentos.** Si desea que todo el contenido de un usuario esté etiquetado, puede requerir que se aplique una etiqueta a todos los documentos guardados y correos electrónicos enviados. La etiqueta se puede asignar manualmente por el usuario de manera automática como resultado de una condición o se puede asignar de forma predeterminada (la opción de etiqueta predeterminada descrita anteriormente). Este es el aviso que aparece en Outlook cuando se pide a un usuario que asigne una etiqueta.
+
+    ![Aviso en Outlook donde se pide a un usuario que aplique una etiqueta necesaria](media/sensitivity_labels_mandatory_prompt_aipv2_outlook.PNG)
 
 - **Proporcionar un vínculo de ayuda a una página de asistencia.** Si los usuarios no están seguros de lo que significan las etiquetas de confidencialidad o cómo deben usarse, puede proporcionar una URL con más información que aparecerá en la parte inferior del menú Etiqueta de confidencialidad en las aplicaciones de Office.
 
