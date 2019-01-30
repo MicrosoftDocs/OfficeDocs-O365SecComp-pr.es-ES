@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 description: Cuando Exchange Online Protection examina un mensaje de correo entrante, inserta el encabezado **X-Forefront-Antispam-Report** en cada mensaje.
-ms.openlocfilehash: 39cac8e1406bd4f7505ae4bc626b8c7e78f88101
-ms.sourcegitcommit: 75b985b2574f4be70cf352498ea300b3d99dd338
+ms.openlocfilehash: d887fea94bac6177dde69fac9586d7d562ef50de
+ms.sourcegitcommit: 03b9221d9885bcde1cdb5df2c2dc5d835802d299
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "26255895"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29614464"
 ---
 # <a name="anti-spam-message-headers"></a>Encabezados de mensajes de correo no deseado
 
@@ -54,7 +54,7 @@ Al obtener acceso a la información del encabezado del mensaje, busque **X-Foref
 |SFV:NSPM|El mensaje se marcó como correo seguro y se envió a los destinatarios correspondientes.|
 |H: [helostring]|Cadena HELO o EHLO del servidor de correo que realiza la conexión.|
 |PTR: [ReverseDNS]|Registro PTR, o registro de marcador, de la dirección IP de envío, también denominado dirección DNS inversa.|
-|SFTY|El mensaje se identificó como suplantación de identidad y también se marcan con uno de los siguientes valores: <br/>• 9.1: valor predeterminado. El mensaje contiene una dirección URL de la suplantación de identidad, puede contener otro contenido de suplantación de identidad o es posible que se han marcado como suplantación de identidad por otro filtro de correo como una versión local de Exchange Server antes de transmitir el mensaje a Office 365. <br/>• 9.11: mensaje de error contra la suplantación comprobaciones donde el dominio en el campo de envío: encabezado es el mismo que, o se alinea con o forma parte de la misma organización que el dominio receptor. <br/>• 9.21: mensaje de error comprobaciones contra la suplantación y el dominio en el campo de envío: encabezado no autenticar. Usados en combinación con CompAuth (vea resultados de autenticación). <br/>• 9.22: igual que 9.21, excepto que el usuario tiene un remitente seguro que se ha reemplazado. <br/>• 9.23: igual que 9.22, excepto que la organización tiene un remitente permitido o dominio que se ha reemplazado. <br/>• 9,24: igual que 9.23, excepto que el usuario tiene una regla de flujo de correo de Exchange que se ha reemplazado.|
+|SFTY|El mensaje se identificó como suplantación de identidad y también se marcan con uno de los siguientes valores: <br/>• 9.1: valor predeterminado. El mensaje contiene una dirección URL de la suplantación de identidad, puede contener otro contenido de suplantación de identidad o es posible que se han marcado como suplantación de identidad por otro filtro de correo como una versión local de Exchange Server antes de transmitir el mensaje a Office 365. <br/>• 9.11: mensaje de error contra la suplantación comprobaciones donde el dominio en el campo de envío: encabezado es el mismo que, o se alinea con o forma parte de la misma organización que el dominio receptor. Esto indica que una sugerencia de seguridad de suplantación de identidad dentro de la organización se agregarán al mensaje. <br/>• 9.19: mensaje de error de comprobaciones de suplantación de dominio donde el dominio envío está intentando suplantar a un dominio al que pertenece el receptor, o un dominio personalizado protegida por la directiva contra suplantación de identidad. Esto indica que una sugerencia de seguridad de suplantación se agregarán al mensaje, si se habilita a través de la directiva de Anti-Phishig. <br/>• 9,20: mensaje de error de comprobaciones de suplantación de usuario donde el usuario que envía está intentando suplantar a un usuario dentro de la organización de receptores o un usuario personalizado protegido por la directiva contra suplantación de identidad. Esto indica que una sugerencia de seguridad de suplantación se agregarán al mensaje, si se habilita a través de la directiva de Anti-Phishig. <br/>• 9.21: mensaje de error comprobaciones contra la suplantación y el dominio en el campo de envío: encabezado no autenticar y es de un dominio externo. Usados en combinación con CompAuth (vea resultados de autenticación). <br/>• 9.22: igual que 9.21, excepto que el usuario tiene un remitente seguro que se ha reemplazado. <br/>• 9.23: igual que 9.22, excepto que la organización tiene un remitente permitido o dominio que se ha reemplazado. <br/>• 9,24: igual que 9.23, excepto que el usuario tiene una regla de flujo de correo de Exchange que se ha reemplazado.|
 |X-CustomSpam: [ASFOption]|El mensaje coincide con una opción de filtrado avanzadas correo no deseado. Por ejemplo, **X-CustomSpam: vínculos a sitios remotos de la imagen** indica que se ha asignado la opción ASF de **vínculos de imagen a sitios remotos** . Para averiguar qué texto de encabezado X se agrega para cada opción de ASF específico, vea [Opciones de filtrado avanzadas correo no deseado](advanced-spam-filtering-asf-options.md).|
    
 ## <a name="x-microsoft-antispam-message-header-fields"></a>Campos de encabezado de mensaje X-Microsoft-Antispam

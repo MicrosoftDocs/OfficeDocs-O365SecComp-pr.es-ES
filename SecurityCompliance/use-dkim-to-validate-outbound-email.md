@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 description: 'Resumen: Este artículo describe cómo usa DomainKeys Identified Mail (DKIM) con Office 365 para asegurarse de que los sistemas de correo electrónico de destino confían en los mensajes enviados desde su dominio personalizado.'
-ms.openlocfilehash: 1bafae2a1e1e5de390fd0b8d81c1cf2513092d8e
-ms.sourcegitcommit: 4f776e1cf8872ce90e632d4305cb727d31754767
+ms.openlocfilehash: b5b28bef60148749e3ea6ac2619358fbc425e36c
+ms.sourcegitcommit: 03b9221d9885bcde1cdb5df2c2dc5d835802d299
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/13/2018
-ms.locfileid: "27263919"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29614454"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain-in-office-365"></a>Usar DKIM para validar el correo electrónico saliente enviado desde su dominio personalizado en Office 365
 
@@ -88,7 +88,10 @@ Para cada dominio para el que quiera agregar una firma DKIM en DNS, necesita pub
 Use el siguiente formato para los registros CNAME.
 
 > [!IMPORTANT]
-> Si es uno de nuestros clientes GCC, el método GuidDominio no funcionará para usted! Asegúrese de usar el valor correcto de MX para su dominio. Uso: `selector2-<domain-key>._domainkey.<initialDomain>` en los ejemplos siguientes. Use [este artículo](https://docs.microsoft.com/en-us/office365/admin/get-help-with-domains/information-for-dns-records?view=o365-worldwide) para buscar el registro MX necesario para el valor de *clave de dominio* .
+> Si es uno de nuestros clientes GCC alta, calculamos de manera diferente _GuidDominio_ ! En lugar de buscar el registro MX para su _initialDomain_ calcular _GuidDominio_, en su lugar se lo calcule directamente desde el dominio personalizado. Por ejemplo, si su dominio personalizado es "contoso.com" su GuidDominio se convierte en "contoso-com", los períodos se reemplazan con un guión.
+
+Por lo tanto, independientemente de qué registro MX, los puntos de initialDomain siempre utilizará el método anterior para calcular la GuidDominio para usar en los registros CNAME.
+
   
 ```
 Host name:          selector1._domainkey

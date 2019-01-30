@@ -3,7 +3,7 @@ title: Nueva directiva de cifrado de mensajes de Office 365 para información co
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 1/9/2019
+ms.date: 1/16/2019
 ROBOTS: NOINDEX, NOFOLLOW
 audience: ITPro
 ms.topic: article
@@ -13,16 +13,16 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: 'Resumen: Aplica automáticamente la directiva de cifrado de mensajes de Office 365 para implantar para todos los inquilinos de tipos de información confidencial.'
-ms.openlocfilehash: a8cd132af2b1429698ea92779a3c54559e2b13e2
-ms.sourcegitcommit: b936a2fd4b7f7a7099b96cc29580ed55bdb8bf2b
+ms.openlocfilehash: f83bf0fe572586b3becf2dd53395e611bdaaea24
+ms.sourcegitcommit: 03b9221d9885bcde1cdb5df2c2dc5d835802d299
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "27789458"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29614384"
 ---
 # <a name="office-365-message-encryption-policy-for-sensitive-information"></a>Directiva de cifrado de mensajes de Office 365 para información confidencial
 
-Se van a crear una nueva directiva automática en los inquilinos de Office 365 que se aplicarán el cifrado de mensajes de Office 365 a todos los correos electrónicos que contienen información confidencial y que se están enviando fuera de su organización. Esta nueva regla de flujo de correo de Exchange se crearán automáticamente en el inquilino de Office 365 para que su organización se protegerán de forma predeterminada.
+Para un grupo de inquilinos, según su tamaño de la organización y la complejidad de flujo de correo, seleccione que hacemos una implantación lenta de una nueva directiva automática en los inquilinos de Office 365 que se aplicará el cifrado de mensajes de Office 365 a los correos electrónicos que contienen ciertos tipos de confidenciales información. Que se prueban con un pequeño grupo de inquilinos. No se implementarán esta directiva a todas las organizaciones y consideraciones como el tamaño de la organización y complejidad de flujo de correo se utilizará para determinar la idoneidad para esta implantación. Si se selecciona la organización para esta implantación, recibirá una notificación en el centro de mensajes de Office 365 notificarlo a la fecha en la que se creará esta directiva automática y se le dará al menos un aviso de 30 días y la opción de voluntaria. Si no desea esperar a que Microsoft crear esta directiva y le gustaría hacerlo usted, puede crear esta directiva automática mediante reglas de flujo de correo de Exchange.
 
 ## <a name="when-to-expect-the-update-for-your-tenant"></a>Cuándo se espera que la actualización para el inquilino
 
@@ -52,7 +52,7 @@ No es necesario que actualizar o modificar los valores de configuración de Offi
 
 ## <a name="how-will-this-change-be-represented-in-the-audit-log"></a>¿Cómo se representará este cambio en el registro de auditoría?
 
-Esta actividad se audita y está disponible para los clientes.  La operación es 'New-TransportRule' y es un fragmento de código de una entrada de auditoría de ejemplo de la búsqueda de registro de auditoría en el centro de cumplimiento y seguridad a continuación:
+Esta actividad se audita y está disponible para los clientes.  La operación es 'New-TransportRule' y es un fragmento de código de una entrada de auditoría de la búsqueda de registro de auditoría de seguridad & centro de cumplimiento de ejemplo a continuación:
 
 |     |
 | --- |
