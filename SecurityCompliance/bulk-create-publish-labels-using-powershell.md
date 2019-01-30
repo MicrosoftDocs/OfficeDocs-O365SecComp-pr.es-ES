@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 8986701b-ffa1-46ec-8fd0-8f7e81d5b25f
 description: En Office 365, puede usar etiquetas para implementar una programación de retención en su organización. Como administrador de registros o responsable de cumplimiento normativo, puede que tenga que crear y publicar cientos de etiquetas. Puede hacerlo mediante la interfaz de usuario del Centro de seguridad y cumplimiento, pero crear etiquetas de una en una es laborioso e ineficiente. Si usa el script y los archivos .csv que se proporcionan a continuación, puede crear y publicar de forma masiva etiquetas y directivas de etiquetas. Primero, creará una lista de las etiquetas y una lista de las directivas de etiquetas en Excel y, después, creará de forma masiva las etiquetas y las directivas de etiquetas en esas listas con PowerShell. Esto permite crear y publicar al mismo tiempo y con mayor facilidad todas las etiquetas que necesita la programación de retención.
-ms.openlocfilehash: 1cf597cf9453a2b9899141d708896b9782dc6047
-ms.sourcegitcommit: 83406a3258e722020e46a82bbf4bc9d5d8a326ca
+ms.openlocfilehash: d05246dacd71ee59a795121e60a2a4202cfef69f
+ms.sourcegitcommit: 98ec28932ae20e848f9f489c3c78e4a7edab6d18
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "25899671"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "29629052"
 ---
 # <a name="bulk-create-and-publish-retention-labels-by-using-powershell"></a>Crear y publicar etiquetas de retención de forma masiva con PowerShell
 
@@ -77,7 +77,7 @@ Notas:
 Policy Name (Required),PublishComplianceTag (Required),Comment (Optional),Enabled (Required),ExchangeLocation (Optional),ExchangeLocationException (Optional),ModernGroupLocation (Optional),ModernGroupLocationException (Optional),OneDriveLocation (Optional),OneDriveLocationException (Optional),PublicFolderLocation (Optional),SharePointLocation (Optional),SharePointLocationException (Optional),SkypeLocation (Optional),SkypeLocationException (Optional)
 Publishing Policy Red1,"LabelName_t_1, LabelName_t_2, LabelName_t_3, LabelName_t_4",N/A,$true,All,,All,,All,,,All,,,
 Publishing Policy Orange1,"LabelName_t_1, LabelName_t_2",N/A,$true,All,,,,,,,,,,
-Publishing Policy Yellow1,"LabelName_t_3, LabelName_t_4",N/A,$false,,,,,,,,,,,
+Publishing Policy Yellow1,"LabelName_t_3, LabelName_t_4",N/A,$false,All,,,,,,,,,,
 ```
 
 ## <a name="step-3-create-the-powershell-script"></a>Paso 3: Crear el script de PowerShell
