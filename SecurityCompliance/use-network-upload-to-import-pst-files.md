@@ -3,7 +3,7 @@ title: Use la carga de red para importar los archivos PST de organización a Off
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/29/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 'Para los administradores: Aprenda a usar la carga de red para la importación masiva de varios archivos PST a buzones de usuario en Office 365.'
-ms.openlocfilehash: c5bcaed9075939d098ac4bf9fbf4d8a94007232c
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 81c799a8c820e9d9287f4792fe463d6a99b90e36
+ms.sourcegitcommit: 25f1028643d8a20d17306e8b09cafea46eaf7a58
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22535948"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "29666160"
 ---
 # <a name="use-network-upload-to-import-your-organization-pst-files-to-office-365"></a>Use la carga de red para importar los archivos PST de organización a Office 365
 
@@ -81,17 +81,19 @@ Tenga en cuenta que tendrá que realizar el paso 1 sólo una vez para importar l
     > [!TIP]
     > Para identificar el mensaje de tamaño de recepción para un buzón de correo, se puede ejecutar este comando en Exchange Online PowerShell: `Get-Mailbox <user mailbox> | FL MaxReceiveSize`. 
 
-### <a name="step-1-copy-the-sas-url-and-install-azure-azcopy"></a>Paso 1: Copie la dirección URL de SAS e instalar AzCopy de Azure
+## <a name="step-1-copy-the-sas-url-and-install-azure-azcopy"></a>Paso 1: Copie la dirección URL de SAS e instalar AzCopy de Azure
 
 El primer paso es descargar e instalar la herramienta de AzCopy de Azure, que es la herramienta que se ejecutará en el paso 2 para cargar archivos de PST a Office 365. También podrá copiar la dirección URL de SAS para su organización. Esta dirección URL es una combinación de la dirección URL de red para la ubicación de almacenamiento de Azure en la nube de Microsoft para su organización y una clave de firma de acceso compartidos (SAS). Esta clave proporciona los permisos necesarios para cargar los archivos PST en su ubicación de almacenamiento de Azure. Asegúrese de tomar precauciones para proteger la dirección URL de SAS. Es único para la organización y se utilizará en el paso 2.
-  
- **Importante:** Se recomienda que use versión Azure AzCopy método de carga 7.1.0 para importar archivos PST mediante el uso de la red. Versión 7.1.0 se descarga en el paso 6b en el procedimiento siguiente. 
+
+> [!IMPORTANT]
+> Para importar archivos PST método de carga de archivos de uso de la red, se recomienda usar la versión de AzCopy de Azure que se pueden descargar en Paso 6b en el procedimiento siguiente.
   
 1. Vaya a [https://protection.office.com](https://protection.office.com) e iniciar sesión con las credenciales para una cuenta de administrador de la organización de Office 365. 
     
 2. En el panel izquierdo de la seguridad &amp; centro de cumplimiento, haga clic en **el gobierno de datos** \> **importación**.
     
-    **Nota:** Se debe tener asignados los permisos adecuados para tener acceso a la página de **importación** de la seguridad &amp; centro de cumplimiento. Vea la sección **antes de empezar** para obtener más información. 
+    > [!NOTE]
+    > Se debe tener asignados los permisos adecuados para tener acceso a la página de **importación** de la seguridad &amp; centro de cumplimiento. Vea la sección **antes de empezar** para obtener más información. 
     
 3. En la página **Importar** , haga clic en ![icono Agregar](media/ITPro-EAC-AddIcon.gif) **nuevo trabajo de importación**.
     
@@ -109,9 +111,10 @@ El primer paso es descargar e instalar la herramienta de AzCopy de Azure, que es
   
     r. en el paso 2, haga clic en **Mostrar la dirección URL de SAS de carga de red**. Después de que se muestra la dirección URL de asociaciones de seguridad, haga clic en **Copiar al Portapapeles** y, a continuación, péguelo y guárdelo en un archivo, por lo que puede tener acceso a él más adelante.
     
-    b. en el paso 3, haga clic en **Descargar AzCopy de Azure** para descargar e instalar la herramienta de AzCopy de Azure. Como se mencionó anteriormente, se descargará la versión 7.1.0. En la ventana emergente, haga clic en **Ejecutar** para instalar AzCopy. 
+    b. en el paso 3, haga clic en **Descargar AzCopy de Azure** para descargar e instalar la herramienta de AzCopy de Azure. En la ventana emergente, haga clic en **Ejecutar** para instalar AzCopy. 
     
-  **Nota:** Puede dejar que la página **Importar datos** abierto (en caso de que debe volver a copiar la dirección URL de SAS) o haga clic en **Cancelar** para cerrarlo. 
+> [!NOTE]
+> Puede dejar que la página **Importar datos** abierto (en caso de que debe volver a copiar la dirección URL de SAS) o haga clic en **Cancelar** para cerrarlo. 
  
 ## <a name="step-2-upload-your-pst-files-to-office-365"></a>Paso 2: Cargar los archivos PST a Office 365
 
@@ -146,8 +149,9 @@ A continuación se muestra un ejemplo de la sintaxis de la herramienta AzCopy.ex
 ```
 
 Después de ejecutar el comando, aparecen mensajes de estado en los que se muestra el progreso de la carga de los archivos PST. En un mensaje de estado final aparece el número total de archivos cargados correctamente. 
-    
-**Sugerencia:** Después de que se ejecute el comando AzCopy.exe correctamente y compruebe que todos los parámetros son correctos, guardar una copia de la sintaxis de línea de comandos para el mismo archivo (protegida) donde copió la información obtenida en el paso 1. A continuación, puede copiar y pegar este comando en un símbolo del sistema cada vez que se desea ejecutar la herramienta AzCopy.exe para cargar los archivos PST en Office 365. El único valor que es posible que deba cambiar son las que para la `/Source:` parámetro. Esto depende en el directorio de origen donde se encuentran los archivos PST. 
+
+> [!TIP]
+> Después de que se ejecute el comando AzCopy.exe correctamente y compruebe que todos los parámetros son correctos, guardar una copia de la sintaxis de línea de comandos para el mismo archivo (protegida) donde copió la información obtenida en el paso 1. A continuación, puede copiar y pegar este comando en un símbolo del sistema cada vez que se desea ejecutar la herramienta AzCopy.exe para cargar los archivos PST en Office 365. El único valor que es posible que deba cambiar son las que para la `/Source:` parámetro. Esto depende en el directorio de origen donde se encuentran los archivos PST.
 
 ## <a name="optional-step-3-view-a-list-of-the-pst-files-uploaded-to-office-365"></a>(Opcional) Paso 3: Ver una lista de los archivos PST cargado a Office 365
 
@@ -159,7 +163,8 @@ Como un paso opcional, puede instalar y usar el Explorador de almacenamiento de 
     
 El Explorador de almacenamiento de información de Microsoft Azure está en vista previa.
   
- **Importante:** No puede usar el Explorador de almacenamiento de Azure para cargar o modificar los archivos PST. El único método admitido para la importación de los archivos PST a Office 365 es utilizar AzCopy. Además, no se puede eliminar los archivos PST que han cargado en el blob de Azure. Si se intenta eliminar un archivo PST, recibirá un error acerca de no tener los permisos necesarios. Tenga en cuenta que todos los archivos PST se eliminan automáticamente desde el área de almacenamiento de Azure. Si no hay ningún trabajo de importación en curso y, a continuación, todos los archivos PST en el ** ingestiondata ** contenedor se eliminan 30 días después de que se creó el trabajo de importación más reciente. 
+> [!IMPORTANT]
+> No puede usar el Explorador de almacenamiento de Azure para cargar o modificar los archivos PST. El único método admitido para la importación de los archivos PST a Office 365 es utilizar AzCopy. Además, no se puede eliminar los archivos PST que han cargado en el blob de Azure. Si se intenta eliminar un archivo PST, recibirá un error acerca de no tener los permisos necesarios. Tenga en cuenta que todos los archivos PST se eliminan automáticamente desde el área de almacenamiento de Azure. Si no hay ningún trabajo de importación en curso, a continuación, todos los archivos PST en el contenedor de **ingestiondata** se elimina 30 días después de que se creó el trabajo de importación más reciente.
   
 Para instalar el Explorador de almacenamiento de Azure y conectarse a su área de almacenamiento de Azure:
   
@@ -263,7 +268,7 @@ El siguiente paso es crear el trabajo de importación de PST en el servicio de i
     
     Se muestra una página de estado emergente, con un estado de **análisis en curso** y el trabajo de importación nuevo se muestra en la lista en la página **Importar** . 
     
-11. Haga clic en **Actualizar**![icono de actualización](media/O365-MDM-Policy-RefreshIcon.gif) para actualizar la información de estado que se muestra en la columna **estado** . Cuando se completa el análisis y están listos para importar los datos, se cambia el estado para **Análisis completado**.
+11. Haga clic en **Actualizar** ![icono de actualización](media/O365-MDM-Policy-RefreshIcon.gif) para actualizar la información de estado que se muestra en la columna **estado** . Cuando se completa el análisis y están listos para importar los datos, se cambia el estado para **Análisis completado**.
     
     Puede hacer clic en el trabajo de importación para mostrar la página emergente de estado, que contiene información más detallada sobre el trabajo de importación, como el estado de cada archivo PST que aparecen en el archivo de asignación.
  
@@ -283,7 +288,7 @@ Después de crear el trabajo de importación en el paso 5, Office 365 analiza lo
     
     ![Puede recortar los datos en los archivos PST o importar todos de la misma](media/287fc030-99e9-417b-ace7-f64617ea5d4e.png)
   
-3. Realice una de las acciones siguientes:
+3. Siga uno de estos pasos:
     
     r. para recortar los datos que se importan, haga clic en **Sí, deseo filtrarla antes de importar**.
     
@@ -361,11 +366,11 @@ Aquí es una ilustración y una descripción del proceso de carga de red para im
     AzCopy.exe /Source:"\\FILESERVER1\PSTs" /Dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata/PSTFiles?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D" /V:"c:\Users\Admin\Desktop\AzCopy1.log" /Y
 ``
 
-- As previously explained, the Office 365 Import service turns on the retention hold setting (for an indefinite duration) after PST files are imported to a mailbox. This means the  *RetentionHoldEnabled*  property is set to  `True` so that the retention policy assigned to the mailbox won't be processed. This gives the mailbox owner time to manage the newly-imported messages by preventing a deletion or archive policy from deleting or archiving older messages. Here are some steps you can take to manage this retention hold: 
+- As previously explained, the Office 365 Import service turns on the retention hold setting (for an indefinite duration) after PST files are imported to a mailbox. This means the  *RetentionHoldEnabled*  property is set to  **True** so that the retention policy assigned to the mailbox won't be processed. This gives the mailbox owner time to manage the newly-imported messages by preventing a deletion or archive policy from deleting or archiving older messages. Here are some steps you can take to manage this retention hold: 
     
-    - After a certain period of time, you can turn off the retention hold by running the  `Set-Mailbox -RetentionHoldEnabled $false` command. For instructions, see [Place a mailbox on retention hold](https://go.microsoft.com/fwlink/p/?LinkId=544749).
+    - After a certain period of time, you can turn off the retention hold by running the **Set-Mailbox -RetentionHoldEnabled $false** command. For instructions, see [Place a mailbox on retention hold](https://go.microsoft.com/fwlink/p/?LinkId=544749).
     
-   - You can configure the retention hold so that it's turned off on some date in the future. You do this by running the  `Set-Mailbox -EndDateForRetentionHold <date>` command. For example, assuming that today's date is July 1, 2016 and you want the retention hold turned off in 30 days, you would run the following command:  `Set-Mailbox -EndDateForRetentionHold 8/1/2016`. In this scenario, you would leave the  *RetentionHoldEnabled*  property set to  *True*  . For more information, see [Set-Mailbox](https://go.microsoft.com/fwlink/p/?LinkId=150317).
+   - You can configure the retention hold so that it's turned off on some date in the future. You do this by running the **Set-Mailbox -EndDateForRetentionHold *date*** command. For example, assuming that today's date is July 1, 2016 and you want the retention hold turned off in 30 days, you would run the following command:  **Set-Mailbox -EndDateForRetentionHold 8/1/2016**. In this scenario, you would leave the  **RetentionHoldEnabled**  property set to  *True*. For more information, see [Set-Mailbox](https://go.microsoft.com/fwlink/p/?LinkId=150317).
     
    - You can change the settings for the retention policy that's assigned to the mailbox so that older items that were imported won't be immediately deleted or moved to the user's archive mailbox. For example, you could lengthen the retention age for a deletion or archive policy that's assigned to the mailbox. In this scenario, you would turn off the retention hold on the mailbox after you changed the settings of the retention policy. For more information, see [Set up an archive and deletion policy for mailboxes in your Office 365 organization](set-up-an-archive-and-deletion-policy-for-mailboxes.md).
     
