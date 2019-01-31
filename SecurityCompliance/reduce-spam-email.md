@@ -14,30 +14,34 @@ search.appverid:
 - MET150
 ms.assetid: 07824c51-2c45-4005-8596-03c0d7c4ff2a
 description: Obtenga información sobre las formas más comunes de reducir el correo masivo y el correo no deseado en Office 365.
-ms.openlocfilehash: 59778f992ebc232ae31ebc9aaae4ca5333080698
-ms.sourcegitcommit: 7023fd3c4d6088f82a5cd2fda241897a3a1c7f5c
+ms.openlocfilehash: 6dbcfa27c5ecbec6b6d1ab0bec298f45e867c4b3
+ms.sourcegitcommit: 03b9221d9885bcde1cdb5df2c2dc5d835802d299
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "29453696"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "29614414"
 ---
 # <a name="how-to-reduce-spam-email-in-office-365"></a>Reducir el correo no deseado en Office 365
 
  **¿Recibe demasiado correo no deseado en Office 365? Siga este procedimiento.**
   
-Muchos de los problemas relacionados con el correo no deseado en Office 365 pueden solucionarse si se [analizan los encabezados de mensaje de correo electrónico](https://support.office.com/article/cd039382-dc6e-4264-ac74-c048563d212c) y se determina cuál fue el problema. Si ve un encabezado de mensaje llamado X-Forefront-Antispam-Report que contiene la cadena SFV:NSPM, quiere decir que Exchange Online Protection (EOP) analizó el mensaje y determinó que no era correo no deseado. En ese caso, es muy recomendable que [use el complemento Denunciar mensaje](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2) para ayudarnos a mejorar nuestros filtros. Si no ve este valor en los encabezados, puede que no se realizara un análisis de correo no deseado del mensaje, o bien se produjo un problema de configuración que causó que el mensaje omitiera. En este caso, vea la información siguiente. 
+Muchos de los problemas relacionados con el correo no deseado en Office 365 pueden solucionarse si se [analizan los encabezados de mensaje de correo electrónico](https://support.office.com/article/cd039382-dc6e-4264-ac74-c048563d212c) y se determina cuál fue el problema. Deberá buscar un encabezado llamado X-Forefront-Antispam-Report.
+
+  Si contiene la cadena SFV:NSPM, quiere decir que Exchange Online Protection (EOP) analizó el mensaje y determinó que no era correo no deseado. Si no está de acuerdo, se trata de un falso negativo y es muy recomendable que [use el complemento Denunciar mensaje](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2) para ayudarnos a mejorar nuestros filtros.
+
+  Si no ve este valor en los encabezados, puede que no se realizara un análisis de correo no deseado del mensaje, o bien se produjo un problema de configuración que causó que el mensaje omitiera. En este caso, vea la información siguiente. 
   
 Obtenga más información sobre los [encabezados de mensaje contra correo no deseado](https://technet.microsoft.com/library/dn205071%28v=exchg.150%29.aspx).
-  
+
 ## <a name="solutions-to-common-causes-of-getting-too-much-spam"></a>Soluciones para causas comunes de recibir demasiado correo no deseado
 
 Para impedir que se reciba demasiado correo no deseado, Exchange Online Protection (EOP) necesita que los administradores completen algunas tareas. Si no es el administrador de su espacio empresarial de Office 365 y recibe demasiado correo no deseado, le recomendamos que trabaje con su administrador en relación con estas tareas. De lo contrario, puede ir directamente a la sección para usuarios.
   
 ### <a name="for-admins"></a>Para administradores
 
-- **Apuntar los registros DNS a Office 365** Para que EOP proporcione protección, los registros DNS del agente de intercambio de correo (MX) de todos los dominios tienen que apuntar a Office 365 (y únicamente a Office 365). Si los [registros MX no apuntan a Office 365](https://blogs.msdn.microsoft.com/tzink/2017/12/28/if-you-use-office-365-but-your-mx-record-doesnt-point-to-office-you-may-want-to-close-down-your-security-settings/), EOP no proporcionará el filtrado de correo no deseado para los usuarios. Vea [Crear registros DNS para Office 365 al administrar los registros DNS](https://support.office.com/article/b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23).
+- **Apuntar los registros DNS a Office 365** Para que EOP proporcione protección, los registros DNS del agente de intercambio de correo (MX) de todos los dominios tienen que apuntar a Office 365 (y únicamente a Office 365). Vea [Crear registros DNS para Office 365 al administrar los registros DNS](https://support.office.com/article/b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23).
     
-- **Habilitar la regla de correo no deseado en todos los buzones** De forma predeterminada, la acción de filtrado de correo no deseado se establece en **Mover el mensaje a la carpeta de correo no deseado**. Si esta es la acción de directiva contra correo no deseado preferida y actual, cada buzón también [necesita tener habilitada la regla de correo masivo](https://blogs.msdn.microsoft.com/tzink/2017/12/14/making-sure-your-junk-email-filtering-is-enabled-in-office-365/). Para comprobarlo, ejecute el cmdlet Get-MailboxJunkEmailConfiguration en uno o más buzones. Por ejemplo, para comprobar esto en todos los buzones, ejecute lo siguiente: Get-MailboxJunkEmailConfiguration -Identity \* | Where {$_.Enabled -eq $false}
+- **Habilitar la regla de correo no deseado en todos los buzones** De forma predeterminada, la acción de filtrado de correo no deseado se establece en **Mover el mensaje a la carpeta de correo no deseado**. Si esta es la acción de directiva contra correo no deseado preferida y actual, cada buzón también [necesita tener habilitada la regla de correo masivo](https://support.office.com/es-ES/article/overview-of-the-junk-email-filter-5ae3ea8e-cf41-4fa0-b02a-3b96e21de089). Para comprobarlo, ejecute el cmdlet Get-MailboxJunkEmailConfiguration en uno o más buzones. Por ejemplo, para comprobar esto en todos los buzones, ejecute lo siguiente: Get-MailboxJunkEmailConfiguration -Identity \* | Where {$_.Enabled -eq $false}
     
     Al ver el resultado, el valor de la propiedad Enable tiene que ser True. Si está establecida en False, ejecute Set-MailboxJunkEmailConfiguration para cambiarla a True.
     
@@ -45,7 +49,7 @@ Para impedir que se reciba demasiado correo no deseado, Exchange Online Protecti
     
 - **Crear reglas de flujo del correo en un servidor Exchange local** Si usa Exchange Online Protection, pero los buzones se encuentran en un servidor Exchange local, tendrá que crear un par de reglas de flujo del correo en el servidor Exchange local. Vea las [instrucciones para EOP solo](https://technet.microsoft.com/library/ms.exch.eac.EditAntispamPolicy_SpamAction%28EXCHG.150%29.aspx?v=15.20.548.14&amp;l=1&amp;s=BPOS_S_E15_0).
     
-- **Marcar correo masivo como correo no deseado** El correo masivo es el correo electrónico al que puede que los usuarios se suscribieran, pero se sigue considerando correo no deseado. En el encabezado de mensaje, busque la propiedad BCL (nivel de confianza en masa) en el encabezado X-Microsoft-Antispam. Si el valor de BCL es inferior al umbral establecido en el filtro de correo no deseado, puede ajustar el umbral para que, en su lugar, marque estos tipos de mensajes masivos como correo no deseado. Diferentes usuarios tienen distintas tolerancias y preferencias para la [administración del correo masivo](https://blogs.msdn.microsoft.com/tzink/2014/08/25/different-levels-of-bulk-mail-filtering-in-office-365/). Puede crear distintas directivas o reglas para diferentes preferencias de usuario. 
+- **Marcar correo masivo como correo no deseado** El correo masivo es el correo electrónico al que puede que los usuarios se suscribieran, pero se sigue considerando correo no deseado. En el encabezado de mensaje, busque la propiedad BCL (nivel de confianza en masa) en el encabezado X-Microsoft-Antispam. Si el valor de BCL es inferior al umbral establecido en el filtro de correo no deseado, puede ajustar el umbral para que, en su lugar, marque estos tipos de mensajes masivos como correo no deseado. Diferentes usuarios tienen distintas tolerancias y preferencias para la [administración del correo masivo](https://docs.microsoft.com/es-ES/office365/SecurityCompliance/bulk-complaint-level-values). Puede crear distintas directivas o reglas para diferentes preferencias de usuario. 
     
 - **Bloquear inmediatamente un remitente** Si necesita bloquear de forma inmediata un remitente, puede bloquearlo por dirección de correo electrónico, dominio o dirección IP. Vea [Bloquear el correo no deseado con el filtro contra correo no deseado de Office 365 para evitar problemas de falsos negativos](block-email-spam-to-prevent-false-negatives.md). Una entrada en una lista de permitidos del usuario final puede invalidar un bloqueo establecido por el administrador.
     
@@ -57,8 +61,6 @@ Para impedir que se reciba demasiado correo no deseado, Exchange Online Protecti
     
 - **Denunciar correo no deseado a Microsoft** Informe de los mensajes de correo no deseado a Microsoft con el [complemento Denunciar mensaje](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2). Además, también puede enviar un mensaje a junk@office365.microsoft.com y adjuntar uno o más mensajes al informe.
     
-    **Importante** Si no reenvía los mensajes como datos adjuntos, [no se incluirán los encabezados y no podremos mejorar](https://blogs.msdn.microsoft.com/tzink/2017/11/30/when-creating-support-tickets-about-spam-be-sure-to-include-message-headers/) el filtrado de correo no deseado en Office 365. 
+    **Importante** Si no reenvía los mensajes como datos adjuntos, no se incluirán los encabezados y no podremos mejorar el filtrado de correo no deseado en Office 365. 
     
-- **Cancelar la suscripción de correo masivo** Si el mensaje era algo para lo que se registró (boletines, anuncios de productos, etc.) y contiene un vínculo para cancelar la suscripción de un origen confiable, simplemente puede cancelar la suscripción. Office 365 no suele considerar estos mensajes como correo no deseado. También puede bloquear el remitente o pedirle al administrador que realice un cambio que cause que todo el correo masivo se considere correo no deseado. 
-    
-
+- **Cancelar la suscripción de correo masivo** Si el mensaje era algo para lo que se registró (boletines, anuncios de productos, etc.) y contiene un vínculo para cancelar la suscripción de un origen confiable, simplemente puede cancelar la suscripción. Office 365 no suele considerar estos mensajes como correo no deseado. También puede bloquear el remitente o pedirle al administrador que realice un cambio que cause que todo el correo masivo se considere correo no deseado.
