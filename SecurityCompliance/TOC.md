@@ -1,4 +1,4 @@
-# [Introducción]
+# Introducción
 ## [Guía de seguridad de Office 365](security-roadmap.md)
 ## [Configurar su inquilino de Office 365 para aumentar la seguridad](tenant-wide-setup-for-increased-security.md)
 ## [Ir al Centro de seguridad y cumplimiento de Office 365](go-to-the-securitycompliance-center.md)
@@ -15,6 +15,7 @@
 # Proteger la información
 ## [Etiquetas de confidencialidad](sensitivity-labels.md)
 ### [Restringir el acceso al contenido mediante el cifrado en las etiquetas de confidencialidad](encryption-sensitivity-labels.md)
+### [Aplicar una etiqueta de confidencialidad automáticamente al contenido](apply_sensitivity_label_automatically.md)
 ## [Evitar la pérdida de datos (DLP)](data-loss-prevention-policies.md)
 ### [Ver una descripción general ampliada de DLP](https://channel9.msdn.com/events/ignite/microsoft-ignite-orlando-2017/brk3111)
 ## Configurar DLP
@@ -37,6 +38,15 @@
 ### [Crear un tipo personalizado de información confidencial en PowerShell del Centro de seguridad y cumplimiento de Office 365](create-a-custom-sensitive-information-type-in-scc-powershell.md)
 ### [Crear un diccionario de palabras clave](create-a-keyword-dictionary.md)
 ### [Creación de huella digital de documento](document-fingerprinting.md) 
+# Administración de registros
+## [Directivas de retención](retention-policies.md)
+## [Etiquetas de retención](labels.md)
+## [Usar Exchange Online y el Centro de seguridad y cumplimiento para cumplir con la norma SEC 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
+## [Revisiones para eliminación](disposition-reviews.md)
+## [Retención controlada por eventos](event-driven-retention.md)
+## [Retención automática basada en eventos](automate-event-driven-retention.md)
+## [Administrador del plan de archivos](file-plan-manager.md)
+## [Crear y publicar etiquetas de retención de forma masiva con PowerShell](https://docs.microsoft.com/es-ES/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
 # Administrar el gobierno de datos        
 ## [Importar datos](importing-pst-files-to-office-365.md)
 ### [Usar la carga en la red para importar archivos PST](use-network-upload-to-import-pst-files.md)
@@ -54,10 +64,12 @@
 ## Conservar datos
 ### [Directivas de retención](retention-policies.md)
 ### [Etiquetas de retención](labels.md)
-### [Crear y publicar etiquetas de retención de forma masiva con PowerShell](https://docs.microsoft.com/es-ES/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+### [Usar Exchange Online y el Centro de seguridad y cumplimiento para cumplir con la norma SEC 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
 ### [Revisiones para eliminación](disposition-reviews.md)
 ### [Retención controlada por eventos](event-driven-retention.md)
+### [Retención automática basada en eventos](automate-event-driven-retention.md)
 ### [Administrador del plan de archivos](file-plan-manager.md)
+### [Crear y publicar etiquetas de retención de forma masiva con PowerShell](https://docs.microsoft.com/es-ES/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
 ## [Supervisar las comunicaciones](supervision-policies.md)
 ### [Configurar directivas de supervisión para su organización](configure-supervision-policies.md)
 ## [Administrar buzones inactivos](inactive-mailboxes-in-office-365.md)
