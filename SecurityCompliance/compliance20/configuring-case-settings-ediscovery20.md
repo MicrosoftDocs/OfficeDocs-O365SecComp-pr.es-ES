@@ -1,5 +1,5 @@
 ---
-title: Configurar las opciones de casos de exhibición de documentos electrónicos avanzada (vista previa)
+title: Establecer la configuración de mayúsculas y minúsculas en la exhibición de documentos electrónicos avanzada (vista previa)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,13 +14,13 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: bded5e1b76b24d17acd2117ff5c8316b81ad08ef
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 8549af59965a9197179b328581d61dd559846797
+ms.sourcegitcommit: e3ea6eb9fab1a66b499458749838fe350d43d0d4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29608355"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "29694828"
 ---
-# <a name="configuring-case-settings-in-advanced-ediscovery-preview"></a>Configurar las opciones de casos de exhibición de documentos electrónicos avanzada (vista previa)
+# <a name="configure-case-settings-in-advanced-ediscovery-preview"></a>Establecer la configuración de mayúsculas y minúsculas en la exhibición de documentos electrónicos avanzada (vista previa)
 
 Contenido disponible próximamente.
