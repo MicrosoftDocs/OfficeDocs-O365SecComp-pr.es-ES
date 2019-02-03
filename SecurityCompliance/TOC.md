@@ -131,6 +131,7 @@
 ### [Configurar el cifrado en Office 365 Enterprise](set-up-encryption.md)
 ### [Cifrado de correo electrónico en Office 365](email-encryption.md)
 ### [Cifrado de mensajes de Office 365 (OME)](ome.md)
+#### [Comparar versiones de OME](ome-version-comparison.md)
 #### [Configurar las nuevas capacidades de cifrado de mensajes de Office 365](set-up-new-message-encryption-capabilities.md)
 #### [Definir reglas de flujo de correo para cifrar mensajes de correo electrónico en Office 365](define-mail-flow-rules-to-encrypt-email.md)
 #### [Administrar el cifrado de mensajes de Office 365](manage-office-365-message-encryption.md)
@@ -272,15 +273,15 @@
 #### [Usar el editor de comunicaciones](compliance20/using-communications-editor.md)
 #### [Administrar las notificaciones de retención](compliance20/manage-hold-notification.md)
 #### [Editar una notificación de retención](compliance20/edit-hold-notification.md)
-#### [Confirmar las notificaciones de retención](compliance20/acknowledge-hold-notification.md)
+#### [Confirmar una notificación de retención](compliance20/acknowledge-hold-notification.md)
 
-### [Administrar las retenciones](compliance20/managing-holds.md)
+### [Administrar retenciones](compliance20/managing-holds.md)
 
 ### [Corregir errores de procesamiento](compliance20/processing-data-for-case.md)
 #### [Clasificación avanzada de los datos de administración](compliance20/indexing-custodian-data.md)
 #### [Corrección de errores al procesar los datos](compliance20/error-remediation.md)
 
-### [Recopilación de datos para un caso](compliance20/collecting-data-for-ediscovery.md)
+### [Recopilar datos para un caso](compliance20/collecting-data-for-ediscovery.md)
 #### [Crear una búsqueda para recopilar datos](compliance20/create-search-to-collect-data.md)
 #### [Crear consultas de búsqueda](compliance20/building-search-queries.md)
 #### [Estadísticas de búsqueda](compliance20/search-statistics.md)
@@ -291,7 +292,7 @@
 #### [Administrar conjuntos de carga](compliance20/manage-load-sets.md)
 #### [Cargar datos que no son de Office 365 a un conjunto de trabajo](compliance20/load-non-office365-data.md)
 #### [Consultar los datos de un conjunto de trabajo](compliance20/working-set-search.md)
-#### [Visualizar documentos en un conjunto de trabajo](compliance20/annotating-and-redacting-documents.md)
+#### [Ver documentos de un conjunto de trabajo](compliance20/annotating-and-redacting-documents.md)
 #### [Etiquetar documentos en un conjunto de trabajo](compliance20/tagging-documents.md)
 
 ### [Analizar datos de casos](compliance20/analyzing-data-in-working-set.md)
