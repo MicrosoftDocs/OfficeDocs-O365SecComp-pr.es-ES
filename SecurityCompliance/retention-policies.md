@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 5e377752-700d-4870-9b6d-12bfc12d2423
 description: Con una directiva de retención, puede decidir de forma proactiva si quiere retener o eliminar contenido, ambos (retener y, a continuación, eliminar el contenido), aplicar una directiva única a la toda la organización o solo a determinadas ubicaciones o usuarios, o aplicar una directiva a todo el contenido o solo a aquel que cumpla ciertas condiciones.
-ms.openlocfilehash: 46b7cd133551d8a0756361fd209e93ab9e721678
-ms.sourcegitcommit: d05a9937780d210b7ad48e721b947397ac5405a2
+ms.openlocfilehash: 61d5a79d46a35cf4a58fb3def8ae124f7025fd6d
+ms.sourcegitcommit: 71922c3e427008d904e5eb6c1a6dc7330e666c8c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29607172"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "29690421"
 ---
 # <a name="overview-of-retention-policies"></a>Introducción a las directivas de retención
 
@@ -60,7 +60,7 @@ Las directivas de retención se crean y se administran en la página **Retenció
 
 Cuando se incluye en una directiva de retención una ubicación como un sitio o buzón, el contenido permanece en su ubicación original. Los usuarios pueden seguir trabajando con sus documentos o buzones como si nada hubiera cambiado, pero si modifican o eliminan contenido que esté incluido en la directiva, se conservará una copia del mismo tal como era cuando se aplicó la directiva.
   
-Para los sitios, se conserva una copia del contenido original en la biblioteca de conservación de documentos cuando los usuarios lo modifican o eliminan; para el correo electrónico y las carpetas públicas, la copia se retiene en la carpeta Elementos recuperables. Estas ubicaciones seguras y el contenido retenido no son visibles para la mayoría de los usuarios. Con una directiva de retención, los usuarios ni siquiera necesitan saber que su contenido está sujeto a la directiva.
+Para las colecciones de sitios de Sharepoint, se conserva una copia del contenido original en la biblioteca de conservación de documentos cuando los usuarios lo modifican o eliminan; para el correo electrónico y las carpetas públicas, la copia se retiene en la carpeta Elementos recuperables. Estas ubicaciones seguras y el contenido retenido no son visibles para la mayoría de los usuarios. Con una directiva de retención, los usuarios ni siquiera necesitan saber que su contenido está sujeto a la directiva.
   
 Notas:
   
@@ -70,15 +70,15 @@ Notas:
     
 ### <a name="content-in-onedrive-accounts-and-sharepoint-sites"></a>Contenido en cuentas de OneDrive y sitios de SharePoint
 
-Las directivas de retención se aplican en el nivel de un sitio. Cuando se incluye un sitio de SharePoint o una cuenta de OneDrive en una directiva de retención, se crea una biblioteca de conservación de documentos si aún no existe. La mayoría de los usuarios no pueden ver esta biblioteca porque solo se muestra a los administradores de colecciones de sitios.
+Las directivas de retención se aplican en el nivel de un sitio. Cuando se incluye un sitio de SharePoint o una cuenta de OneDrive en una directiva de retención, se crea una biblioteca de conservación de documentos si aún no existe. Puede ver esta biblioteca en la página **Contenido del sitio**, en el sitio de nivel superior de la colección de sitios. La mayoría de los usuarios no pueden ver esta biblioteca porque solo se muestra a los administradores de colecciones de sitios.
   
-Si una persona intenta cambiar o eliminar el contenido de un sitio sujeto a una directiva de conservación, la directiva comprueba primero si el contenido se ha cambiado desde que se aplicó la directiva. Si este es el primer cambio desde que se aplicó la directiva, esta copia el contenido en la biblioteca de conservación de documentos y, después, permite al usuario cambiar o eliminar el contenido original. Tenga en cuenta que es posible copiar cualquier contenido del sitio en la biblioteca de conservación de documentos, incluso aunque dicho contenido no coincida con la consulta que se haya usado para la directiva de retención.
+Si una persona intenta cambiar o eliminar el contenido de un sitio sujeto a una directiva de conservación, la directiva comprueba primero si el contenido se ha cambiado desde que se aplicó la directiva. Si este es el primer cambio desde que se aplicó la directiva, esta copia el contenido en la biblioteca de conservación de documentos y, después, permite al usuario cambiar o eliminar el contenido original. Tenga en cuenta que es posible copiar cualquier contenido del sitio en la biblioteca de conservación de documentos, incluso si dicho contenido no coincide con la consulta que se ha usado para la directiva de retención.
   
 Después, un trabajo del temporizador limpia la biblioteca de conservación de documentos. El trabajo del temporizador se ejecuta periódicamente y compara todo el contenido de la biblioteca de conservación de documentos con todas las consultas utilizadas por las directivas de retención del sitio. A menos que el contenido coincida con, como mínimo, una de las consultas, el trabajo del temporizador eliminará permanentemente el contenido de la biblioteca de conservación de documentos.
   
 Esto es aplicable al contenido existente en el momento de aplicar la directiva de retención. Además, después de la eliminación, se conservará cualquier contenido nuevo que se haya creado o agregado al sitio tras incluirlo en la directiva. Sin embargo, el contenido nuevo no se copia en la biblioteca de conservación de documentos la primera vez que se edita, solo cuando se elimina. Para conservar todas las versiones de un archivo, debe activar el control de versiones (consulte más adelante la sección sobre el control de versiones).
   
-Tenga en cuenta que un usuario recibirá un error si intenta eliminar una biblioteca, lista, carpeta o sitio sujeto a una directiva de retención. Un usuario puede eliminar una carpeta si primero mueve o elimina los archivos que contiene que están sujetos a la directiva.
+Tenga en cuenta que un usuario recibirá un error si intenta eliminar una biblioteca, lista, carpeta o sitio sujeto a una directiva de retención. Un usuario puede eliminar una carpeta si primero mueve o elimina los archivos que contiene que están sujetos a la directiva. Tenga en cuenta también que la biblioteca de conservación de documentos se crea cuando es necesario copiar el primer elemento a la biblioteca, y no al crear la directiva de retención. Por lo tanto, para probar la directiva, primero debe editar o eliminar un documento sujeto a la directiva en un sitio y, a continuación, ir a la biblioteca de conservación de documentos para ver la copia retenida.
   
 ![Diagrama del flujo de retención en SharePoint y OneDrive](media/858702f8-5a09-4464-86d0-3b16fed800f3.png)
   
@@ -108,7 +108,7 @@ Cuando se asigna una directiva de retención a un buzón o una carpeta pública,
     
 2. **Si el elemento no se ha modificado o eliminado** durante el período de retención, el mismo proceso se ejecuta periódicamente en todas las carpetas del buzón para identificar los elementos cuyo período de retención ha expirado y estos se eliminan de forma permanente en un plazo de 14 días al final del período de retención. Tenga en cuenta que 14 días es la configuración predeterminada, pero es posible configurar hasta 30 días. 
     
-## <a name="how-a-retention-policy-works-with-document-versions-in-a-site"></a>Funcionamiento de una directiva de retención con versiones de documentos de un sitio
+## <a name="how-a-retention-policy-works-with-document-versions-in-a-site-collection"></a>Funcionamiento de una directiva de retención con versiones de documentos de un sitio
 
 El control de versiones es una característica de todas las bibliotecas de documentos en SharePoint Online y OneDrive para la Empresa. De forma predeterminada, el control de versiones conserva un mínimo de cien versiones principales, aunque puede aumentar este límite. Para obtener más información, vea [Habilitar y configurar el control de versiones para una lista o biblioteca](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37).
   
@@ -122,7 +122,7 @@ Una directiva de retención conserva todas las versiones de un documento en un s
 
 Puede usar una directiva de retención para retener el contenido de forma indefinida o durante un número específico de días, meses o años. Tenga en cuenta que el período de conservación del contenido se basa en su antigüedad, no en el momento de aplicación de la directiva de retención. Puede elegir basar su antigüedad en la fecha de creación del contenido o, en el caso de OneDrive y SharePoint, en la fecha de última modificación.
   
-Por ejemplo, si desea retener el contenido de un sitio durante siete años a partir de la última modificación, y un documento de ese sitio no se ha modificado en seis años, el documento se retendrá solo durante un año más, a no ser que se modifique. Si el documento se edita de nuevo, la antigüedad de dicho documento se calculará a partir de la fecha de la última modificación, y se retendrá durante otros siete años.
+Por ejemplo, si desea retener el contenido de un sitio durante siete años a partir de la última modificación, y un documento de ese sitio no se ha modificado en seis años, el documento se retendrá solo durante un año más, a no ser que se modifique. Si el documento se edita de nuevo, la antigüedad de dicho documento se calculará a partir de la fecha de la última modificación y se retendrá durante otros siete años.
   
 De forma similar, si desea retener el contenido en un buzón durante siete años y un mensaje se envió hace seis, se retendrá solo durante un año. Para el contenido de Exchange, la antigüedad siempre se basa en la fecha de envío o recepción (son iguales). Conservar el contenido en función de cuándo se realizó esa modificación solo se aplica a contenido de sitio de OneDrive y SharePoint.
   
@@ -182,7 +182,7 @@ Una de las características más eficaces de una directiva de retención es que 
   
 - Correo electrónico de Exchange
     
-- Sitios de SharePoint
+- Colecciones de sitios de SharePoint
     
 - Cuentas de OneDrive
     
@@ -212,7 +212,7 @@ También puede aplicar una directiva de retención a usuarios específicos. Para
   
 Sin embargo, tenga en cuenta que existen los siguientes límites para una directiva de retención que incluya o excluya más de 1000 usuarios específicos:
   
-- Una directiva de retención semejante no puede contener más de 1000 buzones de correo y 100 sitios.
+- Una directiva de retención semejante no puede contener más de 1000 buzones de correo y 100 colecciones de sitios.
     
 - Un espacio empresarial no puede contener más de 10000 directivas de retención.
     
