@@ -3,7 +3,7 @@ title: Asignar permisos de exhibición de documentos electrónicos en la segurid
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 3/22/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: Asigne los permisos necesarios para realizar tareas relacionadas con la exhibición de documentos electrónicos con la seguridad &amp; centro de cumplimiento.
-ms.openlocfilehash: 96434655dbb7bc9145406ccb6e2c70d36c448928
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 95f0ed171c37ec84ca8bb8f00e69ab0318cd31cd
+ms.sourcegitcommit: a64af0ebd0b03e4a5e60a33e9108c44c7d74f356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22536086"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29741163"
 ---
 # <a name="assign-ediscovery-permissions-in-the-office-365-security-amp-compliance-center"></a>Asignar permisos de exhibición de documentos electrónicos en la seguridad de Office 365 &amp; centro de cumplimiento
 
@@ -27,21 +27,21 @@ Si desea que las personas a usar cualquiera de las herramientas relacionadas con
   
 El grupo de rol principal relacionadas con la exhibición de documentos electrónicos en seguridad &amp; centro de cumplimiento se denomina **Administrador de exhibición de documentos**. Existen dos subgrupos dentro de este grupo de funciones. 
   
-- **los administradores de exhibición de documentos electrónicos** - una exhibición de documentos electrónicos el administrador puede usar la herramienta de búsqueda de contenido en la seguridad &amp; centro de cumplimiento para buscar ubicaciones de contenido de la organización y realizar varias acciones relacionadas con la búsqueda como vista previa y exportación de búsqueda resultados. Miembros pueden también crear y administrar casos de exhibición de documentos electrónicos, agregar y quitar a miembros a un caso de, crear suspensiones de mayúsculas y minúsculas y ejecutar búsquedas de contenido asociado a un caso. Sólo puede tener acceso una exhibición de documentos electrónicos los administradores y administrar los casos que se creen. No pueden tener acceso o administrar casos creación por otro jefes de exhibición de documentos electrónicos. 
+- **los administradores de exhibición de documentos electrónicos** - una exhibición de documentos electrónicos el administrador puede usar la herramienta de búsqueda de contenido en la seguridad &amp; centro de cumplimiento para buscar ubicaciones de contenido de la organización y realizar varias acciones relacionadas con la búsqueda como vista previa y exportación de búsqueda resultados. (Miembros) puede también crear y administrar casos de exhibición de documentos electrónicos, agregar y quitar a miembros a un caso, crear casos suspensiones y ejecutar búsquedas de contenido asociado a un caso y los datos de access casos de exhibición de documentos electrónicos avanzada de Office 365.  Sólo puede tener acceso una exhibición de documentos electrónicos los administradores y administrar los casos que se creen. Que no se pueden tener acceso o administrar casos creados por otro jefes de exhibición de documentos electrónicos. 
     
 - **exhibición de documentos electrónicos los administradores** - una exhibición de documentos electrónicos administrador es un miembro del grupo de roles de administrador de exhibición de documentos electrónicos y puede realizar la misma búsqueda de contenido y casos tareas relacionadas con la administración que puede realizar un administrador de exhibición de documentos electrónicos. Además, un administrador de exhibición de documentos electrónicos puede: 
     
   - Obtener acceso a todos los casos que se enumeran en la página de **casos de exhibición de documentos electrónicos** en la seguridad &amp; centro de cumplimiento. 
+
+  - Acceso a datos de mayúsculas y minúsculas en Avanzadas exhibición de documentos electrónicos para cualquier caso en la organización.
     
   - Administrar cualquier caso de exhibición de documentos electrónicos después de haberse agregado como miembro del caso.
-    
-  - Realizar tareas administrativas en la exhibición de documentos avanzada, como la configuración de usuarios, creación de casos y la importación de datos. Esto es debido a que una persona que es un administrador de la seguridad de exhibición de documentos electrónicos &amp; centro de cumplimiento se agrega automáticamente como un administrador de exhibición de documentos electrónicos avanzada.
-    
-  > [!NOTE]
-    > Para analizar los datos de un usuario mediante la exhibición de documentos electrónicos avanzada, el usuario (la custodia de los datos) debe estar asignado una licencia de Office 365 E5. Como alternativa, se pueden asignar una licencia independiente de exhibición de documentos electrónicos avanzada a los usuarios con una licencia de Office 365 E1 o E3. Los administradores y responsables del cumplimiento normativo que se asignan a los casos y utilizan eDiscovery avanzada para analizar datos no necesitan una licencia de E5. 
   
-    Por motivos de por qué es posible que desea que los administradores de la exhibición de documentos electrónicos en su organización, vea la sección [obtener más información](#more-information) . 
-    
+  Por motivos de por qué es posible que desea que los administradores de la exhibición de documentos electrónicos en su organización, vea la sección [obtener más información](#more-information) . 
+
+> [!NOTE]
+> Para analizar los datos de un usuario mediante la exhibición de documentos electrónicos avanzada, el usuario (la custodia de los datos) debe estar asignado una licencia de Office 365 E5. Como alternativa, se pueden asignar una licencia independiente de exhibición de documentos electrónicos avanzada a los usuarios con una licencia de Office 365 E1 o E3. Los administradores y responsables del cumplimiento normativo que se asignan a los casos y utilizan eDiscovery avanzada para analizar datos no necesitan una licencia de E5.  
+  
 ## <a name="before-you-begin"></a>Antes de empezar
 
 - Tiene que ser un miembro del grupo de roles de administración de la organización (o tener asignado el rol de administración de funciones) para asignar permisos de exhibición de documentos electrónicos en la seguridad &amp; centro de cumplimiento.
@@ -52,7 +52,7 @@ El grupo de rol principal relacionadas con la exhibición de documentos electró
 
 1. Vaya a [https://protection.office.com](https://protection.office.com).
     
-2. Inicie sesión en Office 365 con su cuenta de trabajo o escuela.
+2. Inicie sesión en Office 365 con su cuenta profesional o educativa.
     
 3. En el panel izquierdo de la seguridad &amp; centro de cumplimiento, haga clic en **permisos**y, a continuación, haga clic en la casilla de verificación situada junto a la **exhibición de documentos electrónicos Manager**.
     
@@ -65,23 +65,74 @@ El grupo de rol principal relacionadas con la exhibición de documentos electró
 > [!NOTE]
 > También puede usar el cmdlet **Add-eDiscoveryCaseAdmin** para que un usuario sea un administrador de exhibición de documentos electrónicos. Sin embargo, el usuario debe estar asignado el rol de administración de casos para poder usar este cmdlet para que sean un administrador de exhibición de documentos electrónicos. Para obtener más información, vea [Add-eDiscoveryCaseAdmin](https://go.microsoft.com/fwlink/p/?LinkID=798217). 
   
-En la página de **permisos** en la seguridad &amp; centro de cumplimiento, también es posible asignar a los usuarios los permisos relacionados con la exhibición de documentos electrónicos, agregándolos a los grupos de roles de administrador de cumplimiento de normas, administración de la organización y revisor. Para obtener una lista de las funciones relacionadas con la exhibición de documentos electrónicos asignadas a cada uno de estos grupos de roles, vea la sección [obtener más información](#more-information) . 
+En la página de **permisos** en la seguridad &amp; centro de cumplimiento, también es posible asignar a los usuarios los permisos relacionados con la exhibición de documentos electrónicos, agregándolos a los grupos de roles de administrador de cumplimiento de normas, administración de la organización y revisor. Para obtener una descripción de las funciones RBAC relacionadas con la exhibición de documentos electrónicos asignadas a cada uno de estos grupos de roles, vea la sección [roles RBAC relacionadas con la exhibición de documentos electrónicos](#rbac-roles-related-to-ediscovery) . 
+
+## <a name="rbac-roles-related-to-ediscovery"></a>Funciones de RBAC relacionadas con la exhibición de documentos electrónicos
+
+En la siguiente tabla se enumera las funciones RBAC relacionadas con la exhibición de documentos electrónicos en el centro de cumplimiento de seguridad & e indica los grupos de funciones integradas que se asigna cada función a de forma predeterminada. 
+    
+|**Rol**|**Administrador de cumplimiento de normas**|**exhibición de documentos electrónicos administrador Manager &**|**Administración de organizaciones**|**Reviewer**|
+|:-----|:-----:|:-----:|:-----:|:-----:|
+|Administración de casos <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
+|Búsqueda de cumplimiento <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
+|Exportar <br/> | <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
+|Retención <br/>  |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
+|Vista previa <br/>  | <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
+|Revisión <br/>  | <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |
+|Descifrar de RMS <br/>  ||![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |||
+|Búsqueda y depuración <br/> | <br/> | <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> | <br/> | 
+||||
   
+Las secciones siguientes describen cada uno de los roles RBAC relacionadas con la exhibición de documentos electrónicos enumerados en la tabla anterior.
+
+### <a name="case-management"></a>Administración de casos
+
+Esta función permite a los usuarios crear, editar, eliminar y controlar el acceso a los casos de exhibición de documentos electrónicos en el centro de cumplimiento de seguridad &. Para obtener más información, vea [administrar casos de exhibición de documentos electrónicos en la seguridad de Office 365 &amp; centro de cumplimiento](manage-ediscovery-cases.md). Como se explica anteriormente, un usuario debe tener asignado el rol de administración de casos para poder usar el cmdlet **Add-eDiscoveryCaseAdmin** para que sean un administrador de exhibición de documentos electrónicos. 
+
+### <a name="compliance-search"></a>Búsqueda de cumplimiento
+
+Esta función permite a los usuarios a ejecutar la herramienta de búsqueda de contenido en el centro de cumplimiento para buscar buzones de correo y las carpetas públicas, sitios de SharePoint Online, OneDrive para los sitios de negocio, Skype para las conversaciones de negocios, grupos de Office 365 y Microsoft Teams & de seguridad. Esta función permite que un usuario obtener una estimación de los resultados de búsqueda y crear informes de exportación, pero las funciones adicionales son necesarios para iniciar acciones de búsqueda de contenido como obtener una vista previa, exportar o eliminar los resultados de búsqueda.
+
+Tenga en cuenta que los usuarios asignada la función de búsqueda de cumplimiento, pero no tienen el rol de la vista previa puede obtener la vista previa de los resultados de una búsqueda en la que se ha iniciado la acción de vista previa por un usuario que tiene asignado el rol de vista previa. El usuario sin la función de vista previa puede obtener una vista previa los resultados para hasta 2 semanas después de que se ha creado la acción de vista previa inicial.
+
+De forma similar, los usuarios asignados a la función de búsqueda de cumplimiento, pero no tienen el rol puede descargar los resultados de una búsqueda en la que ha iniciado la acción de exportación por un usuario que ha asignado la función de exportación de exportación. El usuario sin la función de exportación puede descargar los resultados de una búsqueda de hasta 2 semanas después de que se ha creado la acción de exportación inicial. Después de que no podrá descargar los resultados a menos que alguien con la función de exportación reinicia la exportación.
+
+Para obtener más información, consulte [Búsqueda de contenido en Office 365](content-search.md). 
+
+### <a name="export"></a>Exportar
+
+La función permite a los usuarios a exportar los resultados de una búsqueda de contenido a un equipo local. También les permite preparar los resultados de búsqueda para el análisis de exhibición de documentos electrónicos avanzada. 
+
+Para obtener más información acerca de cómo exportar los resultados de búsqueda, consulte [Exportar resultados de búsqueda de la & centro de cumplimiento de seguridad de Office 365](export-search-results.md).
+
+### <a name="hold"></a>Retención
+
+Esta función permite a los usuarios a colocar el contenido en los buzones de correo, carpetas públicas, sitios, Skype para conversaciones de negocios, y los grupos de Office 365 en suspensión. Cuando el contenido se encuentra en suspensión, los propietarios de contenido aún podrá modificar o eliminar el contenido original, pero el contenido se conservarán hasta que se elimina la suspensión o hasta que expire la duración de la suspensión. 
+
+Para obtener más información sobre suspensiones, consulte:
+
+- [casos de exhibición de documentos electrónicos en el centro de cumplimiento de seguridad de Office 365 &](ediscovery-cases.md) 
+- [Información general sobre las directivas de retención](retention-policies.md)
+
+### <a name="preview"></a>Vista previa
+
+Esta función permite a los usuarios ver una lista de los elementos que se han devuelto desde una búsqueda de contenido. También podrán abrir y ver cada elemento de la lista para ver su contenido.
+
+### <a name="review"></a>Revisión
+
+Esta función permite a los usuarios tener acceso a los datos de casos de exhibición de documentos electrónicos avanzada de Office 365. El propósito principal de este rol es proporcionar a los usuarios acceso a la exhibición de documentos electrónicos avanzada. Los usuarios que están asignados a esta función pueden ver y abrir la lista de los casos, en la página de exhibición de documentos electrónicos en el centro de cumplimiento que son miembros de & de seguridad. Después de que el usuario obtiene acceso a un caso en el centro de cumplimiento de seguridad &, pueden hacer clic en **conmutador de exhibición de documentos electrónicos avanzada** para tener acceso y analizar los datos de escenario de exhibición de documentos electrónicos avanzada. Esta función no permite al usuario obtener una vista previa de los resultados de una búsqueda de contenido que está asociado con el caso o llevar a cabo otros búsqueda de contenido o las tareas de administración de casos.
+
+### <a name="rms-decrypt"></a>Descifrar de RMS
+
+Esta función permite a los usuarios descifrar cifrado de RMS mensajes de correo electrónico cuando exportación de búsqueda los resultados o preparar los resultados de búsqueda para el análisis de exhibición de documentos electrónicos avanzada. Para obtener más información acerca de descifrar los resultados de búsqueda durante la exportación, consulte [Exportar resultados de búsqueda de la & centro de cumplimiento de seguridad de Office 365](export-search-results.md).
+
+### <a name="search-and-purge"></a>Búsqueda y depuración
+
+Esta función permite a los usuarios a realizar la desinstalación de forma masiva de datos que cumplan los criterios de una búsqueda de contenido. Para obtener más información, vea [Buscar y eliminar mensajes de correo electrónico en la organización de Office 365](search-for-and-delete-messages-in-your-organization.md). 
+
+
 ## <a name="more-information"></a>Más información
 
-- **¿Cuáles son las funciones relacionadas con la exhibición de documentos electrónicos en la seguridad &amp; centro de cumplimiento?** En la siguiente tabla se describe los roles relacionados con la exhibición de documentos electrónicos en la seguridad &amp; centro de cumplimiento, e indica los grupos de funciones integradas que se asigna cada rol, de forma predeterminada. 
-    
-|**Rol**|**Administrador de cumplimiento**|**exhibición de documentos electrónicos Manager &amp; administrador**|**Administración de organizaciones**|**Reviewer**|
-|:-----|:-----|:-----|:-----|:-----|
-|**Administración de casos** <br/> Permite a los usuarios crear, editar, eliminar y controlar el acceso a los casos de exhibición de documentos electrónicos en la seguridad &amp; centro de cumplimiento. Para obtener más información, vea [administrar casos de exhibición de documentos electrónicos en la seguridad de Office 365 &amp; centro de cumplimiento](manage-ediscovery-cases.md).<br/> Como se explica anteriormente, un usuario debe tener asignado el rol de administración de casos para poder usar el cmdlet **Add-eDiscoveryCaseAdmin** para que sean un administrador de exhibición de documentos electrónicos.  <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> | <br/> |
-|**Búsqueda de cumplimiento** <br/> Permite a los usuarios a ejecutar la herramienta de búsqueda de contenido en la seguridad &amp; centro de cumplimiento para buscar buzones de correo y las carpetas públicas, sitios de SharePoint Online, OneDrive para sitios de profesionales, Skype para las conversaciones, grupos de Office 365 y Microsoft Teams empresarial. Esta función permite que un usuario obtener una estimación de los resultados de búsqueda y crear informes de exportación, pero las funciones adicionales son necesarios para iniciar acciones de búsqueda de contenido como obtener una vista previa, exportar o eliminar los resultados de búsqueda.<br/><br/>Tenga en cuenta que los usuarios asignada la función de búsqueda de cumplimiento, pero no tienen el rol de la vista previa puede obtener la vista previa de los resultados de una búsqueda en la que se ha iniciado la acción de vista previa por un usuario que tiene asignado el rol de vista previa. El usuario sin la función de vista previa puede obtener una vista previa los resultados para hasta 2 semanas después de que se ha creado la acción de vista previa inicial.<br/><br/> De forma similar, los usuarios asignados a la función de búsqueda de cumplimiento, pero no tienen el rol puede descargar los resultados de una búsqueda en la que ha iniciado la acción de exportación por un usuario que ha asignado la función de exportación de exportación. El usuario sin la función de exportación puede descargar los resultados de una búsqueda de hasta 2 semanas después de que se ha creado la acción de exportación inicial. Después de que no podrá descargar los resultados a menos que alguien con la función de exportación reinicia la exportación.<br/><br/>Para obtener más información, consulte [Búsqueda de contenido en Office 365](content-search.md).  <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> | <br/> |
-|**Export** <br/> Permite a los usuarios exportar los resultados de una búsqueda de contenido a un equipo local. También les permite preparar los resultados de búsqueda para el análisis de exhibición de documentos electrónicos avanzada.<br/> Para obtener más información acerca de cómo exportar los resultados de búsqueda, vea [resultados de búsqueda de exportación de la seguridad de Office 365 &amp; centro de cumplimiento](export-search-results.md).  <br/> | <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> | <br/> | <br/> |
-|**Retención** <br/>  Permite a los usuarios a colocar el contenido en los buzones de correo, carpetas públicas, sitios, Skype para conversaciones de negocios y los grupos de Office 365 en espera. Cuando el contenido se encuentra en suspensión, los propietarios de contenido aún podrá modificar o eliminar el contenido original, pero el contenido se conservarán hasta que se elimina la suspensión o hasta que expire la duración de la suspensión.<br/>  Para obtener más información sobre suspensiones, consulte:  <br/> [Administrar casos de exhibición de documentos electrónicos en la seguridad de Office 365 &amp; centro de cumplimiento](manage-ediscovery-cases.md) <br/> [Introducción a las directivas de retención](retention-policies.md) <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> | <br/> |
-|**Vista previa** <br/> Permite a los usuarios ver una lista de los elementos que se han devuelto desde una búsqueda de contenido. También podrán abrir y ver cada elemento de la lista para ver su contenido.<br/> | <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> | <br/> | <br/> |
-|**Revisar** <br/> Permite a los usuarios ver y abrir la lista de los casos en la página de exhibición de documentos electrónicos en la seguridad &amp; centro de cumplimiento que son miembros de. No pueden realizar otras tareas de administración de casos.<br/> | <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> | <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
-|**Descifrar de RMS** <br/> Permite a los usuarios a descifrar mensajes de correo electrónico cifrados RMS cuando exportación de búsqueda los resultados o preparar los resultados de búsqueda para el análisis de exhibición de documentos electrónicos avanzada. Para obtener más información acerca de descifrar los resultados de búsqueda durante la exportación, vea [resultados de búsqueda de exportación de la seguridad de Office 365 &amp; centro de cumplimiento](export-search-results.md).<br/> ||![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |||
-|**Búsqueda y depuración** <br/> Permite a los usuarios realizar la desinstalación de forma masiva de datos que cumplan los criterios de una búsqueda de contenido. Para obtener más información, vea [Buscar y eliminar mensajes de correo electrónico en la organización de Office 365](search-for-and-delete-messages-in-your-organization.md).<br/> | <br/> | <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> | <br/> |
-   
 - **¿Por qué crear un administrador de exhibición de documentos electrónicos?** Como ya se explica, una exhibición de documentos electrónicos administrador es miembro del grupo de roles de administrador de exhibición de documentos electrónicos que puede ver y obtener acceso a todos los casos de exhibición de documentos electrónicos en su organización. Esta capacidad para tener acceso a todos los casos de exhibición de documentos electrónicos tiene dos propósitos importantes: 
     
   - Si una persona que es el único miembro de un caso de exhibición de documentos electrónicos abandona la organización, nadie (incluidos los miembros del grupo de roles de administración de la organización u otro miembro del grupo de roles de administrador de exhibición de documentos electrónicos) puede tener acceso a ese caso de exhibición de documentos electrónicos porque no son un miembro de un caso. En esta situación, no sería ninguna forma de obtener acceso a los datos en el caso. Pero debido a que un administrador de exhibición de documentos electrónicos puede obtener acceso a todos los casos de exhibición de documentos electrónicos en la organización, pueden ver el caso de la seguridad &amp; centro de cumplimiento y agregue a sí mismos u otro administrador de exhibición de documentos electrónicos como un miembro de las mayúsculas y minúsculas.

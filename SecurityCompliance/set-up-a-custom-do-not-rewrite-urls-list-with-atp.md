@@ -5,6 +5,7 @@ author: denisebmsft
 manager: laurawi
 ms.audience: Admin
 ms.topic: article
+ms.date: 02/05/2019
 ms.service: o365-administration
 localization_priority: Normal
 search.appverid:
@@ -12,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 35dbfd99-da5a-422b-9b0e-c6caf3b645fa
 description: Al configurar las directivas de vínculos seguros de ATP, puede incluir una reescritura de no hacer ' lista de direcciones URL para habilitar algunas personas de la organización visitar sitios que se incluyen en la lista.
-ms.openlocfilehash: d3883d6aff29b9a061b62e4854e7aad52656769f
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: f97abdb0f4e20ed968b4f71761a60cda79658d18
+ms.sourcegitcommit: a64af0ebd0b03e4a5e60a33e9108c44c7d74f356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28015052"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29741073"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-office-365-atp-safe-links"></a>Configurar una lista personalizada de direcciones URL de reescritura de no hacer con Office 365 ATP seguros vínculos
 
@@ -28,6 +29,14 @@ En este artículo se describe cómo especificar una lista de direcciones URL que
 ## <a name="set-up-a-do-not-rewrite-list"></a>Configurar una lista "no reescritura de"
 
 Protección de vínculos seguros de ATP utiliza varias listas, incluida la lista de direcciones URL bloqueadas de la organización y las listas de "no volver a escribir" para las excepciones. Si tiene los permisos necesarios, puede configurar las listas personalizadas "no reescritura de". Para ello, al agregar o editar las directivas de seguros vínculos que se aplican a determinados destinatarios en la organización. 
+
+Para editar las directivas de ATP (o definir), debe asignar uno de los roles que se describen en la siguiente tabla:
+
+|Rol  |Dónde y cómo asignado  |
+|---------|---------|
+|Administrador Global de Office 365 |La persona que se registra para comprar Office 365 es un administrador global de forma predeterminada. (Consulte [acerca de Office 365 roles de administrador](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) para obtener más información).         |
+|Administrador de seguridad de Office 365 |Centro de administración ([https://aka.ms/admincenter](https://aka.ms/admincenter))|
+|Administración de la organización en línea de Exchange |Centro de administración de Exchange ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>o <br>  Cmdlets de PowerShell (vea [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
   
 1. Vaya a [https://protection.office.com](https://protection.office.com) y el inicio de sesión con la cuenta de trabajo o escuela. 
     

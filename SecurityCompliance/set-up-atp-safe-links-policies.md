@@ -5,6 +5,7 @@ author: denisebmsft
 manager: laurawi
 ms.audience: Admin
 ms.topic: article
+ms.date: 02/05/2019
 ms.service: o365-administration
 localization_priority: Normal
 search.appverid:
@@ -12,16 +13,16 @@ search.appverid:
 - MOE150
 ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 description: Configurar directivas de vínculos seguros para proteger la organización de vínculos malintencionados en archivos de Word, Excel, PowerPoint y Visio, así como en mensajes de correo electrónico.
-ms.openlocfilehash: 145e8998637756d204171f64021d6ad783b367f3
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: 714b3df825272ab182443b31e0b2cf90b64b71b7
+ms.sourcegitcommit: a64af0ebd0b03e4a5e60a33e9108c44c7d74f356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28015062"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29741093"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Configurar las directivas de seguros vínculos con Office 365 ATP
 
-[Vínculos seguros ATP](atp-safe-links.md) , una característica de [Protección de amenaza avanzada de Office 365](office-365-atp.md) (ATP), puede ayudar a proteger su organización de vínculos malintencionados utilizados en suplantación de identidad y otros ataques. Si tiene el requisito [permisos para la seguridad de Office 365 &amp; centro de cumplimiento](permissions-in-the-security-and-compliance-center.md), puede configurar las directivas de vínculos seguros de ATP para ayudar a garantizar que, cuando las personas, haga clic en direcciones web (URL), la organización está protegida. Las directivas de vínculos seguros ATP pueden configurarse para examinar las direcciones URL en correo electrónico y las direcciones URL en los documentos de Office.
+[Vínculos seguros ATP](atp-safe-links.md), una característica de [Protección de amenaza avanzada de Office 365](office-365-atp.md) (ATP), puede ayudar a proteger su organización de vínculos malintencionados utilizados en suplantación de identidad y otros ataques. Si tiene el requisito [permisos para la seguridad de Office 365 &amp; centro de cumplimiento](permissions-in-the-security-and-compliance-center.md), puede configurar las directivas de vínculos seguros de ATP para ayudar a garantizar que, cuando las personas, haga clic en direcciones web (URL), la organización está protegida. Las directivas de vínculos seguros ATP pueden configurarse para examinar las direcciones URL en correo electrónico y las direcciones URL en los documentos de Office.
   
 [Las nuevas características se están agregando continuamente ATP](office-365-atp.md#new-features-are-continually-being-added-to-atp). Cuando se agregan nuevas características, debe realizar ajustes en las directivas de ATP seguros vínculos existentes.
 
@@ -33,13 +34,19 @@ ms.locfileid: "28015062"
     
 3. [Agregar o editar las directivas de destinatarios de correo electrónico específica](#add-a-policy-for-specific-email-recipients), incluida la [configuración de la lista de direcciones URL "No reescritura" personalizada para vínculos seguros de ATP](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)
     
-4. [Obtenga información acerca de las opciones de directiva de vínculos seguros de ATP](#learn-about-atp-safe-links-policy-options) (en este artículo), incluida la configuración para los cambios recientes
+4. [Obtenga información acerca de las opciones de directiva de vínculos seguros de ATP](#learn-about-atp-safe-links-policy-options) (en este artículo), incluida la configuración para los cambios recientes.
     
 ## <a name="step-1-review-the-prerequisites"></a>Paso 1: Revisar los requisitos previos
 
 - Asegúrese de que la organización tiene [La protección de amenaza avanzada de Office 365](office-365-atp.md).
     
-- Asegúrese de que tiene los permisos necesarios para definir o editar las directivas de ATP. Vea [permisos en la seguridad de Office 365 &amp; centro de cumplimiento](permissions-in-the-security-and-compliance-center.md).
+- Asegúrese de que tiene los permisos necesarios. Para definir las directivas de ATP (o editar), debe asignar uno de los roles que se describen en la siguiente tabla: <br>
+
+    |Rol  |Dónde y cómo asignado  |
+    |---------|---------|
+    |Administrador Global de Office 365 |La persona que se registra para comprar Office 365 es un administrador global de forma predeterminada. (Consulte [acerca de Office 365 roles de administrador](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) para obtener más información).         |
+    |Administrador de seguridad de Office 365 |Centro de administración ([https://aka.ms/admincenter](https://aka.ms/admincenter))|
+    |Administración de la organización en línea de Exchange |Centro de administración de Exchange ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>o <br>  Cmdlets de PowerShell (vea [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
 
 - Asegúrese de que los clientes de Office están configurados para usar [Autenticación moderno](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016) (Esto es para la protección de vínculos seguros de ATP en documentos de Office).
     
@@ -130,4 +137,6 @@ Una vez que las directivas de vínculos seguros ATP, puede ver cómo funciona AT
 
 - [Visualización de informes para la protección de amenaza avanzada de Office 365](view-reports-for-atp.md)
 
-- [Use el explorador en la seguridad &amp; centro de cumplimiento](use-explorer-in-security-and-compliance.md) 
+- [Use el explorador en la seguridad &amp; centro de cumplimiento](use-explorer-in-security-and-compliance.md)
+
+Siempre encima de las nuevas características que incide en ATP. visite la [Guía básica de 365 de Microsoft](https://www.microsoft.com/microsoft-365/roadmap?filters=O365) y obtenga información acerca de [las características nuevas que se agregan a ATP](office-365-atp.md#new-features-are-continually-being-added-to-atp).

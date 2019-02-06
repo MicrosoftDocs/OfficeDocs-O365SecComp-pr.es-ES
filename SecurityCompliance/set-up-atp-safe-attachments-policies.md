@@ -5,6 +5,7 @@ author: denisebmsft
 manager: laurawi
 ms.audience: Admin
 ms.topic: article
+ms.date: 02/05/2019
 ms.service: o365-administration
 localization_priority: Normal
 search.appverid:
@@ -12,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 description: Definir directivas de los datos adjuntos seguros para proteger su organización desde archivos malintencionados en el correo electrónico.
-ms.openlocfilehash: c5c18e3e8300a5cb8eabb8a099d6757a09170ff7
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: 229f5eb4ec1af4302f724151f599bd33b15055e1
+ms.sourcegitcommit: a64af0ebd0b03e4a5e60a33e9108c44c7d74f356
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014882"
+ms.lasthandoff: 02/05/2019
+ms.locfileid: "29741123"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Configurar las directivas de Office 365 ATP los datos adjuntos seguros
 
@@ -35,7 +36,13 @@ Personas con regularidad envían, recibir y compartir datos adjuntos, como docum
 
 - Asegúrese de que la organización tiene [La protección de amenaza avanzada de Office 365](office-365-atp.md).
     
-- Asegúrese de tener el requisito [permisos para la seguridad de Office 365 &amp; centro de cumplimiento](permissions-in-the-security-and-compliance-center.md).
+- Asegúrese de que tiene los permisos necesarios. Para definir las directivas de ATP (o editar), debe asignar uno de los roles que se describen en la siguiente tabla: <br>
+
+    |Rol  |Dónde y cómo asignado  |
+    |---------|---------|
+    |Administrador Global de Office 365 |La persona que se registra para comprar Office 365 es un administrador global de forma predeterminada. (Consulte [acerca de Office 365 roles de administrador](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) para obtener más información).         |
+    |Administrador de seguridad de Office 365 |Centro de administración ([https://aka.ms/admincenter](https://aka.ms/admincenter))|
+    |Administración de la organización en línea de Exchange |Centro de administración de Exchange ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>o <br>  Cmdlets de PowerShell (vea [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
     
 - [Obtenga información acerca de las opciones de directiva de los datos adjuntos seguros de ATP](#learn-about-atp-safe-attachments-policy-options) (en este artículo). Algunas opciones, como las opciones de Monitor o reemplazar, pueden provocar un retraso secundario de correo electrónico mientras se examinan los datos adjuntos. Para evitar retrasos de mensaje, considere el uso de [la entrega dinámica y obtener una vista previa](dynamic-delivery-and-previewing.md).
     
@@ -43,7 +50,7 @@ Personas con regularidad envían, recibir y compartir datos adjuntos, como docum
     
 ## <a name="step-2-set-up-or-edit-an-atp-safe-attachments-policy"></a>Paso 2: Configurar una directiva de datos adjuntos seguros de ATP (o editar)
   
-1. Como administrador global o administrador de seguridad, vaya a [https://protection.office.com](https://protection.office.com) y el inicio de sesión con la cuenta de trabajo o escuela. 
+1. Vaya a [https://protection.office.com](https://protection.office.com) y el inicio de sesión con la cuenta de trabajo o escuela. 
     
 2. En la seguridad de Office 365 &amp; centro de cumplimiento, en el panel de navegación izquierdo, en **administración de amenaza**, elija **Directiva** \> **Los datos adjuntos seguros**.
     
@@ -85,4 +92,6 @@ Como configurar las directivas de los datos adjuntos seguros de ATP, elegir entr
 Una vez que las directivas de los datos adjuntos seguros de ATP, puede ver cómo funciona ATP para su organización mediante la visualización de informes. Vea los siguientes recursos para obtener más información:
 - [Visualización de informes para la protección de amenaza avanzada de Office 365](view-reports-for-atp.md)
 - [Use el explorador en la seguridad &amp; centro de cumplimiento](use-explorer-in-security-and-compliance.md)
+
+Siempre encima de las nuevas características que incide en ATP. visite la [Guía básica de 365 de Microsoft](https://www.microsoft.com/microsoft-365/roadmap?filters=O365) y obtenga información acerca de [las características nuevas que se agregan a ATP](office-365-atp.md#new-features-are-continually-being-added-to-atp).
  
