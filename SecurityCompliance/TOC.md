@@ -272,7 +272,6 @@
 #### [Crear una notificación de retención](compliance20/create-hold-notification.md)
 #### [Usar el editor de comunicaciones](compliance20/using-communications-editor.md)
 #### [Administrar las notificaciones de retención](compliance20/manage-hold-notification.md)
-#### [Editar una notificación de retención](compliance20/edit-hold-notification.md)
 #### [Confirmar una notificación de retención](compliance20/acknowledge-hold-notification.md)
 
 ### [Administrar retenciones](compliance20/managing-holds.md)
