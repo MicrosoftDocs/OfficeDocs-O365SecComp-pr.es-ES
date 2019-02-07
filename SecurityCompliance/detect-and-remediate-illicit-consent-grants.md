@@ -16,12 +16,12 @@ ms.assetid: ''
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo reconocer y corregir el ataque de concede a consentimiento ilegal en Office 365.
-ms.openlocfilehash: 412b601af30ce87332225d271ec1a9e622012405
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 457279e6d9498ac132ed3fb77b7c0fef68a293fa
+ms.sourcegitcommit: d6a28c4f6db6a676ca960173e8ff8f17d4aa1c4b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22536852"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "29755241"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants-in-office-365"></a>Detectar y solucionar la concesión de consentimiento ilegal en Office 365
 
@@ -34,7 +34,7 @@ En un consentimiento ilegal conceder ataque, que el atacante crea una aplicació
 Debe buscar el Office 365 de **registro de auditoría** para buscar signos, que también se denomina indicadores de compromiso (IOC) de este ataque. Para las organizaciones con muchas aplicaciones registradas en Azure y una base de usuarios de gran tamaño, el procedimiento recomendado es revisar su consentimiento de las organizaciones concede a semanalmente.
 ### <a name="steps-for-finding-signs-of-this-attack"></a>Pasos de la búsqueda de signos de este ataque
 1. Abra el **Centro de cumplimiento y seguridad** en el inquilino de Office 365.
-2. Desplácese hasta el nodo **búsqueda & investigación** y seleccione la búsqueda de **registro de auditoría** .
+2. Desplácese hasta el nodo de **investigación de & de búsqueda** y seleccione la búsqueda de **registro de auditoría** .
 3. Crear una búsqueda (todas las actividades y todos los usuarios) y filtrar los resultados para su consentimiento a la aplicación y agregar OAuth2PermissionGrant.
 4. Examine la comprobación y propiedades extendidas para ver si IsAdminContent se establece en True.
 
@@ -65,7 +65,7 @@ Esto le mostrará las aplicaciones que están asignadas al usuario y qué permis
 Hacer que los usuarios vaya a https://myapps.microsoft.com y revise su propios acceso de la aplicación no existe. Debe ser capaz de ver todas las aplicaciones con acceso, ver detalles acerca de ellos (incluido el ámbito de acceso) y poder revocar privilegios para aplicaciones sospechosos o ilegal.
 
 ### <a name="steps-for-doing-this-with-powershell"></a>Pasos para realizar esta acción con PowerShell
-Es la forma más sencilla para comprobar el ataque ilegal Grant da su consentimiento ejecutar [Get-AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09), que se va a volcar todos los permisos de aplicación para todos los usuarios y concede a consentimiento de OAuth en su arrendamiento en un archivo .csv. 
+Es la forma más sencilla para comprobar el ataque ilegal Grant da su consentimiento ejecutar [Get-AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09), que se va a volcar todas las concesiones de consentimiento de OAuth y aplicaciones de OAuth para todos los usuarios en su arrendamiento en un archivo .csv. 
 
 #### <a name="pre-requisites"></a>Requisitos previos
 - La biblioteca de Windows Azure AD PowerShell instalada.
@@ -79,7 +79,7 @@ Es la forma más sencilla para comprobar el ataque ilegal Grant da su consentimi
 2. Descargue o copie el script [Get-AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09) de depósito en una carpeta desde la que se ejecutará el scruipt.  Se trata de la misma carpeta a la que se escribirá el archivo de salida "permissions.csv".
 3. Abra una sesión de PowerShell como administrador y abra la carpeta que se ha guardado la secuencia de comandos.
 4. Conectar con el directorio mediante el cmdlet [Connect-AzureAD](https://docs.microsoft.com/powershell/module/azuread/connect-azuread?view=azureadps-2.0) .
-5. Ejecute esta línea de comandos de PowerShell como sigue:`.Get-AzureASPSPermissions.ps1 | Export-csv -path "Permissions.csv" -NoTypeInformation`
+5. Ejecute esta línea de comandos de PowerShell como sigue:`Get-AzureADPSPermissions.ps1 | Export-csv -path "Permissions.csv" -NoTypeInformation`
 
 La secuencia de comandos genera un archivo denominado Permissions.csv. Siga estos pasos para buscar concesiones de permisos de aplicación ilegal: 
 1. En la columna ConsentType (columna G) de búsqueda para el valor "AllPrinciples". El permiso AllPrincipals permite que la aplicación cliente tener acceso al contenido de todos los usuarios en el arrendamiento. Las aplicaciones de Office 365 nativas necesitan este permiso para que funcione correctamente. Todas las aplicaciones que no son de Microsoft con este permiso deben ser revisada cuidadosamente.

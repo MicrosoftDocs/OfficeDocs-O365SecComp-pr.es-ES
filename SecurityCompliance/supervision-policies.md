@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: Descripción de las directivas de supervisión en Office 365
-ms.openlocfilehash: 0c76ba5b17277d8bd441810415e7e9acd1adbf36
-ms.sourcegitcommit: 3cb775e60b3806b66568ed2f9664c17ef96ca8de
+ms.openlocfilehash: c66ded719791c4a5ecaaa459f81d0a0d4a3db924
+ms.sourcegitcommit: e4d56cab6bbb77404457d506d17f6a7577f302be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "29603530"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "29760082"
 ---
 # <a name="supervision-policies-in-office-365"></a>Directivas de supervisión de Office 365
 
@@ -69,12 +69,7 @@ Para simplificar el programa de instalación, crear grupos para las personas que
 
 Con las directivas de supervisión, puede elegir para supervisar los mensajes en una o varias de las plataformas de comunicación siguientes:
 
-- **Correo electrónico de exchange:** Buzones de correo que se hospedan en Exchange Online como parte de su suscripción de Office 365 son todos los aptos para la supervisión de mensaje. Mensajes de correo electrónico y datos adjuntos que coincidan con las condiciones de la directiva de supervisión están disponibles al instante para la supervisión y en los informes de supervisión. Tipos de datos adjuntos compatibles son:
-
-    - Microsoft Word (.docx)
-    - Microsoft Excel (.xlsx)
-    - Microsoft PowerPoint (.pptx)
-
+- **Correo electrónico de exchange:** Buzones de correo que se hospedan en Exchange Online como parte de su suscripción de Office 365 son todos los aptos para la supervisión de mensaje. Mensajes de correo electrónico y datos adjuntos que coincidan con las condiciones de la directiva de supervisión están disponibles al instante para la supervisión y en los informes de supervisión. Tipos de datos adjuntos compatibles para supervisión son los mismos que los [tipos de archivo admitidos para controles de contenido de regla de flujo de correo de Exchange](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection).
 - **Equipos de Microsoft:** Comunicaciones de chat y los datos adjuntos asociados en los canales de Microsoft Teams públicos y privados y chats individuales pueden ser supervisados. Chats de los equipos que coincidan con las condiciones de la directiva de supervisión se procesan una vez cada 24 horas y, a continuación, están disponibles para la supervisión y en los informes de supervisión.
 - **Orígenes de terceros:** Puede supervisar las comunicaciones de orígenes de terceros (como desde la lista desplegable o de Facebook) si se han importado estos datos a los buzones de correo de Office 365 en su organización. [Obtenga información sobre cómo importar datos de 3rd terceros a Office 365](https://docs.microsoft.com/office365/securitycompliance/archiving-third-party-data).
 

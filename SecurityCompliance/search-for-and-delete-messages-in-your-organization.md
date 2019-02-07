@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Usar la búsqueda y purgar la característica en la seguridad de Office 365 &amp; centro de cumplimiento para buscar y eliminar un mensaje de correo electrónico de todos los buzones de la organización.
-ms.openlocfilehash: 82ba38ef2c3c8c6b78743a4b2263dde0ef3a5b48
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: be83b2e3e765980ae401356b924c26c53386a2b3
+ms.sourcegitcommit: d6a28c4f6db6a676ca960173e8ff8f17d4aa1c4b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28015022"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "29755261"
 ---
 # <a name="search-for-and-delete-email-messages-in-your-office-365-organization---admin-help"></a>Buscar y eliminar mensajes de correo electrónico en su organización de Office 365: Ayuda de administración
 
@@ -38,9 +38,9 @@ Puede usar la característica de búsqueda de contenido en Office 365 para busca
   
 ## <a name="before-you-begin"></a>Antes de empezar
 
-- Para crear y ejecutar una búsqueda de contenido, tiene que ser un miembro del grupo de roles de **exhibición de documentos electrónicos administrador** o tener asignado el rol de administración de **Búsqueda de cumplimiento** . Para eliminar los mensajes, debe ser miembro del grupo de roles de **Administración de la organización** o tener asignado el rol de administración de **Búsqueda y purgar** . Para obtener información sobre cómo agregar usuarios a un grupo de roles, consulte [dar a los usuarios acceso a la seguridad de Office 365 &amp; centro de cumplimiento](grant-access-to-the-security-and-compliance-center.md).
+- Para crear y ejecutar una búsqueda de contenido, tiene que ser un miembro del grupo de roles de **exhibición de documentos electrónicos administrador** o tener asignado el rol de administración de **Búsqueda de cumplimiento** . Para eliminar los mensajes, debe ser miembro del grupo de roles de **Administración de la organización** o tener asignado el rol de administración de **Búsqueda y purgar** . Para obtener información sobre cómo agregar usuarios a un grupo de roles, consulte [dar acceso a los usuarios para el centro de cumplimiento de seguridad de Office 365 &](grant-access-to-the-security-and-compliance-center.md).
     
-- Se debe usar seguridad &amp; PowerShell de centro de cumplimiento para eliminar los mensajes. Vea el [paso 2](#step-2-connect-to-security-amp-compliance-center-powershell) para obtener instrucciones sobre cómo conectar.
+- Se debe usar seguridad & PowerShell de centro de cumplimiento para eliminar los mensajes. Vea el [paso 2](#step-2-connect-to-security-amp-compliance-center-powershell) para obtener instrucciones sobre cómo conectar.
     
 - Se puede quitar a un máximo de 10 elementos por buzón de correo a la vez. Debido a que la capacidad de buscar y quitar mensajes está pensada para ser una herramienta de respuesta a incidentes, este límite ayuda a garantizar que los mensajes se quitan rápidamente los buzones de correo. Esta característica no está pensada para limpiar los buzones de usuario. Para eliminar más de 10 elementos, puede usar el comando **Search-Mailbox-DeleteContent** en Exchange Online PowerShell. Consulte [Buscar y eliminar mensajes - ayuda de administración](search-for-and-delete-messagesadmin-help.md).
     
@@ -50,7 +50,7 @@ Puede usar la característica de búsqueda de contenido en Office 365 para busca
     
 ## <a name="step-1-create-a-content-search-to-find-the-message-to-delete"></a>Paso 1: Crear una búsqueda de contenido para buscar el mensaje que quiera eliminar
 
-El primer paso es crear y ejecutar una búsqueda de contenido para buscar el mensaje que desea quitar de los buzones de correo en la organización. Puede crear la búsqueda mediante el uso de la seguridad &amp; centro de cumplimiento o mediante la ejecución de los cmdlets **New-ComplianceSearch** y **ComplianceSearch de inicio** . Se eliminarán los mensajes que coinciden con la consulta para esta búsqueda ejecutando el cmdlet **New-ComplianceSearchAction** en el [paso 3](#step-3-delete-the-message). Para obtener información sobre cómo crear una búsqueda de contenido y configuración de las consultas de búsqueda, vea los temas siguientes: 
+El primer paso es crear y ejecutar una búsqueda de contenido para buscar el mensaje que desea quitar de los buzones de correo en la organización. Puede crear la búsqueda mediante el uso de la seguridad &amp; centro de cumplimiento o mediante la ejecución de los cmdlets **New-ComplianceSearch** y **ComplianceSearch de inicio** . Los mensajes que coinciden con la consulta para esta búsqueda se eliminará mediante la ejecución de la **New-ComplianceSearchAction-purgar** command en el [paso 3](#step-3-delete-the-message). Para obtener información sobre cómo crear una búsqueda de contenido y configuración de las consultas de búsqueda, vea los temas siguientes: 
   
 - [Búsqueda de contenido en Office 365](content-search.md)
     
@@ -91,11 +91,11 @@ Estos son dos ejemplos de consultas para buscar mensajes de correo electrónico 
     (From:chatsuwloginsset12345@outlook.com) AND (Subject:"Update your account information")
     ```
 
-## <a name="step-2-connect-to-security-amp-compliance-center-powershell"></a>Paso 2: Conectarse a seguridad &amp; PowerShell de centro de cumplimiento
+## <a name="step-2-connect-to-security--compliance-center-powershell"></a>Paso 2: Conectarse a PowerShell de centro de cumplimiento de seguridad &
 
-El siguiente paso es conectar a la seguridad &amp; PowerShell de centro de cumplimiento para su organización. Para obtener instrucciones detalladas, consulte [Conectar a Office 365 seguridad &amp; PowerShell de centro de cumplimiento de normas](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+El siguiente paso es conectar a & PowerShell de centro de cumplimiento de seguridad para su organización. Para obtener instrucciones detalladas, consulte [Conectar a Office 365 seguridad &amp; PowerShell de centro de cumplimiento de normas](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
   
-Si su cuenta de Office 365 usa la autenticación multifactor (MFA) o autenticación federada, no puede usar las instrucciones que aparecen en el tema anterior en la que se conectan a seguridad &amp; PowerShell de centro de cumplimiento. En su lugar, vea las instrucciones en el tema [Conectar a Office 365 seguridad &amp; PowerShell de centro de cumplimiento de normas mediante la autenticación multifactor](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell).
+Si su cuenta de Office 365 usa la autenticación multifactor (MFA) o federados de autenticación, no puede usar las instrucciones que aparecen en el tema sobre la conexión a & PowerShell de centro de cumplimiento de seguridad anterior. En su lugar, vea las instrucciones en el tema [conectarse a Office 365 seguridad & PowerShell de centro de cumplimiento de normas mediante la autenticación multifactor](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell).
   
 ## <a name="step-3-delete-the-message"></a>Paso 3: Eliminar el mensaje
 
@@ -106,22 +106,16 @@ En el siguiente ejemplo, el comando se temporalmente-eliminar los resultados de 
 ```
 New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeType SoftDelete
 ```
-En el siguiente ejemplo, el comando disco duro eliminará los resultados de búsqueda devueltos por una búsqueda de contenido denominado "Quitar mensaje de suplantación de identidad". 
-
-```
-New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeType HardDelete
-```
-
-La búsqueda especificada por el parámetro *SearchName* es la búsqueda de contenido que creó en el paso 1. 
 
 Al disco duro eliminado los elementos devueltos por la búsqueda de contenido de "Quitar mensaje de suplantación de identidad", debe ejecutar este comando:
 
 ```
 New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeType HardDelete
 ```
+
+Tenga en cuenta que cuando se ejecuta el comando anterior a los mensajes de eliminar por temporalmente o disco duro, la búsqueda especificada por el parámetro *SearchName* es la búsqueda de contenido que creó en el paso 1. 
   
 Para obtener más información, vea [New-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-content-search/New-ComplianceSearchAction).
-  
 
 ## <a name="more-information"></a>Más información
 
@@ -147,6 +141,6 @@ Para obtener más información, vea [New-ComplianceSearchAction](https://docs.mi
 
     Después de que el mensaje se purgarán y movido a la carpeta de purga, el mensaje se conserva hasta que expire la duración de la suspensión. Si la duración de retención es ilimitada, a continuación, se conservan los elementos hasta que se elimina la suspensión o se cambia la duración de la suspensión.
     
-- **¿Por qué es la búsqueda y quitar flujo de trabajo que se divide entre los distintos grupos de roles de seguridad y el centro de cumplimiento?**
+- **¿Por qué es la búsqueda y quitar flujo de trabajo que se divide entre los distintos grupos de roles de centro de cumplimiento de & de seguridad?**
 
     Como se explica anteriormente, una persona debe ser miembro del grupo de roles de administrador de exhibición de documentos electrónicos o tener asignado el rol de administración de búsqueda de cumplimiento para buscar los buzones de correo. Para eliminar los mensajes, una persona debe ser miembro del grupo de roles de administración de la organización o tener asignado el rol de administración de búsqueda y purgar. Esto posibilita para controlar quién puede buscar los buzones de correo en la organización y quién puede eliminar los mensajes. 

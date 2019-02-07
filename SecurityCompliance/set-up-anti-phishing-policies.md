@@ -5,17 +5,17 @@ author: kccross
 manager: laurawi
 ms.audience: ITPro
 ms.topic: article
-ms.date: 02/04/2019
+ms.date: 02/06/2019
 ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 description: Protección contra suplantación de identidad, con una protección completa como parte de la protección de amenaza avanzada de Office 365 y protección básica en Office 365 Exchange Online Protection, puede ayudar a proteger su organización frente a ataques de suplantación de identidad basada en suplantación malintencionado y otros ataques de suplantación de identidad.
-ms.openlocfilehash: 1ef1dc0781cc28e660cbebf8cde59f97d3e65000
-ms.sourcegitcommit: a64af0ebd0b03e4a5e60a33e9108c44c7d74f356
+ms.openlocfilehash: 1ecc76f674b1d64b59b5dec0f92cd06bbe8b55e8
+ms.sourcegitcommit: d6a28c4f6db6a676ca960173e8ff8f17d4aa1c4b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "29741153"
+ms.lasthandoff: 02/06/2019
+ms.locfileid: "29755271"
 ---
 # <a name="set-up-office-365-atp-anti-phishing-and-anti-phishing-policies"></a>Configurar las directivas de Office 365 ATP contra suplantación de identidad y contra suplantación de identidad
 
@@ -43,9 +43,11 @@ Lo que debe hacer:
     |Rol  |Dónde y cómo asignado  |
     |---------|---------|
     |Administrador Global de Office 365 |La persona que se registra para comprar Office 365 es un administrador global de forma predeterminada. (Consulte [acerca de Office 365 roles de administrador](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) para obtener más información).         |
-    |Administrador de seguridad de Office 365 |Centro de administración ([https://aka.ms/admincenter](https://aka.ms/admincenter))|
+    |Administrador de seguridad |Centro de administración de Azure Active Directory ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
     |Administración de la organización en línea de Exchange |Centro de administración de Exchange ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>o <br>  Cmdlets de PowerShell (vea [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
     
+    Para obtener más información sobre los roles y permisos, vea [permisos en la seguridad de Office 365 &amp; centro de cumplimiento](permissions-in-the-security-and-compliance-center.md).
+
 - Probablemente se instalará varias directivas contra suplantación de identidad para su organización. Office 365 aplica estas directivas en el orden en que aparecen en las páginas **página contra suplantación de identidad** y **ATP contra suplantación de identidad** en la seguridad &amp; centro de cumplimiento. Una vez que haya revisado las [Opciones de directiva](#learn-about-atp-anti-phishing-policy-options), se necesite algún tiempo para determinar cuántas directivas que necesitará y la prioridad para cada uno. 
     
 - Planifique dedicar aproximadamente 5-15 minutos para configurar su primera Directiva contra suplantación de identidad.
