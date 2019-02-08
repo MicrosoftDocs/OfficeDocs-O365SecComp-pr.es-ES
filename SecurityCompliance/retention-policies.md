@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 5e377752-700d-4870-9b6d-12bfc12d2423
 description: Con una directiva de retención, puede decidir de forma proactiva si quiere retener o eliminar contenido, ambos (retener y, a continuación, eliminar el contenido), aplicar una directiva única a la toda la organización o solo a determinadas ubicaciones o usuarios, o aplicar una directiva a todo el contenido o solo a aquel que cumpla ciertas condiciones.
-ms.openlocfilehash: 61d5a79d46a35cf4a58fb3def8ae124f7025fd6d
-ms.sourcegitcommit: 71922c3e427008d904e5eb6c1a6dc7330e666c8c
+ms.openlocfilehash: 328d63265fdaa311b94c25902e7f380c9b0be89c
+ms.sourcegitcommit: c2ec9a4b0279a248b85c2e4a4e91458214b5b31c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "29690421"
+ms.lasthandoff: 02/08/2019
+ms.locfileid: "29770825"
 ---
 # <a name="overview-of-retention-policies"></a>Introducción a las directivas de retención
 
@@ -53,8 +53,6 @@ Las directivas de retención se crean y se administran en la página **Retenció
   
 ![Página Retención en el Centro de seguridad y cumplimiento](media/107fc33a-6a29-44d1-85e4-0efef0544147.png)
   
-> [!NOTE]
-> Para incluir un buzón de Exchange Online en una directiva de retención, debe tener asignada una licencia de Exchange Online plan 2. Si un buzón tiene asignada una licencia de Exchange Online plan 1, deberá asignarle una licencia independiente de Archivado de Exchange Online para incluirlo en una directiva de retención. 
   
 ## <a name="how-a-retention-policy-works-with-content-in-place"></a>Funcionamiento de una directiva de retención local
 
