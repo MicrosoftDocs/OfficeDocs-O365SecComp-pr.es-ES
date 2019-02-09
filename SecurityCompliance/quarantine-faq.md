@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: c440b2ac-cafa-4be5-ba4c-14278a7990ae
 description: Este tema contiene preguntas frecuentes y respuestas sobre la cuarentena hospedada.
-ms.openlocfilehash: cc8a05b575e17dbc71d4b9e214cb29a4cafe8b6b
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 1473e682faab0471f5a6356e8d54a65a9baf291a
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003199"
+ms.lasthandoff: 02/09/2019
+ms.locfileid: "29792501"
 ---
 # <a name="quarantine-faq"></a>Preguntas más frecuentes sobre la cuarentena
 
@@ -50,7 +50,7 @@ R. Los mensajes que coinciden con una regla de transporte también se pueden env
   
  **P. ¿Durante cuánto tiempo se guardan los mensajes en cuarentena?**
   
-A. De manera predeterminada, los mensajes de correo no deseado se mantienen en cuarentena durante 15 días, durante la cuarentena los mensajes que coinciden con una regla de transporte se mantienen en cuarentena durante 7 días. Finalizado este tiempo, los mensajes se eliminan y ya no se pueden recuperar. No se puede configurar el periodo de retención de los mensajes en cuarentena que coinciden con una regla de transporte. Sin embargo, es posible reducir el período de retención de los mensajes de correo no deseado en cuarentena mediante la configuración **Mantener el correo no deseado durante (días)** en las directivas de filtro de contenido. Para obtener más información, vea [Configurar las directivas de filtro de correo no deseado](configure-your-spam-filter-policies.md).
+R. de forma predeterminada, los mensajes en cuarentena de correo no deseado se conservan en la cuarentena para 30 días, mientras los mensajes en cuarentena que coincide con una regla de transporte se conservan en la cuarentena de 7 días. Después de este período de tiempo de los mensajes se eliminan y no se puede recuperar. El período de retención para los mensajes en cuarentena que coincide con una regla de transporte no es configurable. Sin embargo, se puede reducir el período de retención de mensajes en cuarentena de correo no deseado a través de la opción de **conservar spam de (días)** en las directivas de filtro de contenido. Para obtener más información, vea [configurar sus directivas de filtro de correo no deseado](configure-your-spam-filter-policies.md).
   
  **Q. ¿Puedo liberar o informar de más de un mensaje en cuarentena a la vez?**
   
