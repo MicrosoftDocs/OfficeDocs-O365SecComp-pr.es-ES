@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.audience: Admin
-ms.date: 02/05/2019
+ms.date: 02/08/2019
 ms.topic: overview
 ms.service: o365-administration
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6e13311e-92ae-495e-a619-56d770199170
 description: La característica de los datos adjuntos seguros proporciona comprobación de tiempo de clic de los datos adjuntos de correo electrónico. Utilizar datos adjuntos seguros para proteger la organización de las personas de archivos malintencionados enviar o recibir por correo electrónico.
-ms.openlocfilehash: 936d24e3782e1018e77e24373756e378472f7e7c
-ms.sourcegitcommit: d6a28c4f6db6a676ca960173e8ff8f17d4aa1c4b
+ms.openlocfilehash: 45cd3b74b67d7ff8735da7a703ff14c4c517341f
+ms.sourcegitcommit: c1c41744c2de89c9e172f817c8f73bb0ada81a58
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "29755281"
+ms.lasthandoff: 02/09/2019
+ms.locfileid: "29792235"
 ---
 # <a name="office-365-atp-safe-attachments"></a>Datos adjuntos seguros ATP de Office 365
 
@@ -45,7 +45,7 @@ Las directivas de los datos adjuntos seguros de ATP se pueden aplicar a usuarios
   
 ## <a name="how-to-get-atp-safe-attachments"></a>Cómo obtener datos adjuntos seguros de ATP
 
-En primer lugar, asegúrese de que la suscripción incluye [Avanzadas de protección contra amenazas](office-365-atp.md). ATP se incluye en suscripciones, como [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home), [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business), Office 365 Enterprise E5, Office 365 educación A5, etcetera. Si su organización tiene una suscripción a Office 365 que no incluye Office 365 ATP, puede comprar potencialmente ATP como un complemento. Para obtener más información, vea [Office 365 avanzada Threat Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). 
+En primer lugar, asegúrese de que la suscripción incluye [Avanzadas de protección contra amenazas](office-365-atp.md). ATP se incluye en suscripciones, como [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home), [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business), Office 365 Enterprise E5, Office 365 educación A5, etcetera. Si su organización tiene una suscripción a Office 365 que no incluye Office 365 ATP, puede comprar potencialmente ATP como un complemento. Para obtener más información, vea [precios y planes de protección de amenaza avanzada de Office 365](https://products.office.com/exchange/advance-threat-protection) y [Office 365 avanzada Threat Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). 
 
 A continuación, asegúrese de que se definen las directivas de los datos adjuntos seguros de ATP. (Vea [configurar las directivas de datos adjuntos seguros de Office 365 ATP](set-up-atp-safe-attachments-policies.md)) Las características de los datos adjuntos seguros de ATP están activas cuando:
   

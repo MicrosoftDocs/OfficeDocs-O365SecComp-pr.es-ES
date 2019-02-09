@@ -20,12 +20,12 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: La característica vínculos seguros proporciona comprobación de tiempo de clic de los hipervínculos en documentos de Office y en los mensajes de correo electrónico. Use los vínculos seguros para proteger la organización de suplantación de identidad y otros ataques.
-ms.openlocfilehash: 7e610d23534dcd4c9ea20608bab6fca536f877cb
-ms.sourcegitcommit: a64af0ebd0b03e4a5e60a33e9108c44c7d74f356
+ms.openlocfilehash: 8c63de9e62e33dbca6dde5a5bb45a7f7875ab71f
+ms.sourcegitcommit: c1c41744c2de89c9e172f817c8f73bb0ada81a58
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "29741113"
+ms.lasthandoff: 02/09/2019
+ms.locfileid: "29792245"
 ---
 # <a name="office-365-atp-safe-links"></a>Vínculos seguros ATP de Office 365
 
@@ -88,7 +88,7 @@ En un nivel alto, aquí es cómo funciona la protección de vínculos seguros de
 
 ## <a name="how-to-get-atp-safe-links-protection"></a>Cómo obtener protección vínculos seguros de ATP
 
-En primer lugar, asegúrese de que la suscripción incluye [Avanzadas de protección contra amenazas](office-365-atp.md). ATP se incluye en suscripciones, como [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home), [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business), Office 365 Enterprise E5, Office 365 educación A5, etcetera. Si su organización tiene una suscripción a Office 365 que no incluye Office 365 ATP, puede comprar potencialmente ATP como un complemento. Para obtener más información, vea [Office 365 avanzada Threat Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). 
+En primer lugar, asegúrese de que la suscripción incluye [Avanzadas de protección contra amenazas](office-365-atp.md). ATP se incluye en suscripciones, como [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home), [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business), Office 365 Enterprise E5, Office 365 educación A5, etcetera. Si su organización tiene una suscripción a Office 365 que no incluye Office 365 ATP, puede comprar potencialmente ATP como un complemento. Para obtener más información, vea [precios y planes de protección de amenaza avanzada de Office 365](https://products.office.com/exchange/advance-threat-protection) y [Office 365 avanzada Threat Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). 
   
 A continuación, asegúrese de que se definen las directivas de vínculos seguros de ATP. (Vea [configurar las directivas de seguros vínculos con Office 365 ATP](set-up-atp-safe-links-policies.md)). Las características de ATP seguros vínculos están activas cuando:
   
@@ -105,7 +105,7 @@ Para definir las directivas de ATP (o editar), debe asignar uno de los roles que
 |Rol  |Dónde y cómo asignado  |
 |---------|---------|
 |Administrador Global de Office 365 |La persona que se registra para comprar Office 365 es un administrador global de forma predeterminada. (Consulte [acerca de Office 365 roles de administrador](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) para obtener más información).         |
-|Administrador de seguridad de Office 365 |Centro de administración ([https://aka.ms/admincenter](https://aka.ms/admincenter))|
+|Administrador de seguridad |Centro de administración de Azure Active Directory ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
 |Administración de la organización en línea de Exchange |Centro de administración de Exchange ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>o <br>  Cmdlets de PowerShell (vea [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
     
 ## <a name="how-to-make-sure-atp-safe-links-protection-is-in-place"></a>Para que sea seguro de protección de ATP seguros vínculos está en su lugar

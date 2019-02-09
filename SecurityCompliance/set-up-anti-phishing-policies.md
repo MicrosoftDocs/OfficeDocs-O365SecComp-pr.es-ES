@@ -10,12 +10,12 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 description: Protección contra suplantación de identidad, con una protección completa como parte de la protección de amenaza avanzada de Office 365 y protección básica en Office 365 Exchange Online Protection, puede ayudar a proteger su organización frente a ataques de suplantación de identidad basada en suplantación malintencionado y otros ataques de suplantación de identidad.
-ms.openlocfilehash: 1ecc76f674b1d64b59b5dec0f92cd06bbe8b55e8
-ms.sourcegitcommit: d6a28c4f6db6a676ca960173e8ff8f17d4aa1c4b
+ms.openlocfilehash: 333176ebef8d6367f5090730386fc820927cf3af
+ms.sourcegitcommit: c1c41744c2de89c9e172f817c8f73bb0ada81a58
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "29755271"
+ms.lasthandoff: 02/09/2019
+ms.locfileid: "29792285"
 ---
 # <a name="set-up-office-365-atp-anti-phishing-and-anti-phishing-policies"></a>Configurar las directivas de Office 365 ATP contra suplantación de identidad y contra suplantación de identidad
 
@@ -24,7 +24,7 @@ ms.locfileid: "29755271"
 Suplantación de identidad ataques proceden de en una gran variedad de formularios ataques de mercancía a phishing lanza dirigido o whaling. Con la creciente complejidad, es difícil para incluso un ojo capacitado identificar algunos de estos ataques sofisticados. Afortunadamente, puede ayudar la protección de amenaza avanzada de Office 365. Puede configurar una directiva de anti-phishing ATP para ayudar a garantizar que la organización está protegida frente a estos ataques.
   
 > [!NOTE]
-> ATP anti-phishing sólo está disponible en la protección de amenaza avanzada (ATP). ATP se incluye en suscripciones, como [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home), [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business), Office 365 Enterprise E5, Office 365 educación A5, etcetera. Si su organización tiene una suscripción a Office 365 que no incluye Office 365 ATP, puede comprar potencialmente ATP como un complemento. Para obtener más información, vea [Office 365 avanzada Threat Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). Asegúrese de que su organización usa la versión más reciente de Office 365 ProPlus en Windows para aprovechar al máximo de protección contra suplantación de identidad de ATP. 
+> ATP anti-phishing sólo está disponible en la protección de amenaza avanzada (ATP). ATP se incluye en suscripciones, como [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home), [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business), Office 365 Enterprise E5, Office 365 educación A5, etcetera. Si su organización tiene una suscripción a Office 365 que no incluye Office 365 ATP, puede comprar potencialmente ATP como un complemento. Para obtener más información, vea [precios y planes de protección de amenaza avanzada de Office 365](https://products.office.com/exchange/advance-threat-protection) y [Office 365 avanzada Threat Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). Asegúrese de que su organización usa la versión más reciente de Office 365 ProPlus en Windows para aprovechar al máximo de protección contra suplantación de identidad de ATP. 
 
 Una directiva contra suplantación de identidad también está disponible para Office 365 Exchange Online Protection, con un conjunto limitado de protección contra la suplantación que está pensada para protegerse frente a ataques basados en la autenticación y descripción.
   
