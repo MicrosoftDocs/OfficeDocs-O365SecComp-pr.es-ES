@@ -1,5 +1,5 @@
 ---
-title: Administrar las suspensiones en la exhibición de documentos electrónicos avanzada (vista previa)
+title: Administrar suspensiones de exhibición de documentos electrónicos avanzada (vista previa)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 861b8fb8c0595f4ede0327d7426650d21046eba3
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 476ea80e61b5354c53368613e29a79c55a50276f
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29608387"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29695186"
 ---
-# <a name="managing-holds-in-advanced-ediscovery-preview"></a>Administrar las suspensiones en la exhibición de documentos electrónicos avanzada (vista previa)
+# <a name="manage-holds-in-advanced-ediscovery-preview"></a>Administrar suspensiones de exhibición de documentos electrónicos avanzada (vista previa)
 
 Puede usar un caso de exhibición de documentos electrónicos avanzada (vista previa) para crear suspensiones para conservar el contenido que puede ser relevante para su caso. Uso de la exhibición de documentos electrónicos avanzada (vista previa) mantenga las funciones, puede colocar las suspensiones en custodia y sus orígenes de datos. Además, puede colocar una suspensión que no sean custodia en los buzones de correo y OneDrive para sitios de negocio. También puede colocar una suspensión en el buzón de correo de grupo, sitios de SharePoint y OneDrive para el sitio de negocio para un grupo de Office 365. De forma similar, puede colocar una suspensión en el sitio que están asociados con Microsoft Teams y buzón de correo. Al colocar las ubicaciones de contenido en espera, contenido se mantiene hasta que suelte a la custodia, eliminar una ubicación de datos específicos o eliminar la directiva de retención por completo.
 

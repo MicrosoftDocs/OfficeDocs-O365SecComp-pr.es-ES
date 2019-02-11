@@ -3,7 +3,7 @@ title: Actividades de uso después de implementar Office 365 Cloud App Security
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 2/26/2018
+ms.date: 01/28/2019
 ms.audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 86f414ad-81de-4703-b40a-c6615bbe9108
 description: Después de haber configurado e implantado de seguridad de la aplicación de nube de Office 365, desea realizar determinadas tareas para asegurarse de que la configuración es correcta y que está preparado para revisiones regulares.
-ms.openlocfilehash: bc8cfad8eb9d9444066c3193ec2978e9ffd9f56a
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 71b6793f2e325fcba3431ba5157640b29814ad30
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22535965"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29603711"
 ---
 # <a name="utilization-activities-after-rolling-out-office-365-cloud-app-security"></a>Actividades de uso después de implementar Office 365 Cloud App Security
   
@@ -27,7 +27,7 @@ ms.locfileid: "22535965"
 |[Empezar a evaluar](office-365-cas-overview.md) <br/> |[Comenzar a planear](get-ready-for-office-365-cas.md) <br/> |[Iniciar la implementación](turn-on-office-365-cas.md) <br/> |¡Están aquí!  <br/> [Paso siguiente](review-office-365-cas-alerts.md) <br/> |
    
 > [!NOTE]
-> Seguridad de la aplicación de Office 365 en la nube está disponible en Office 365 Enterprise E5. Si su organización usa otra suscripción de Office 365 Enterprise, seguridad de la aplicación de nube de Office 365 puede adquirirse como un complemento. (Como administrador global, en el centro de administración de Office 365, elija **facturación** \> **Agregar suscripciones**.) Para obtener más información, vea [Descripción del servicio Office 365 plataforma: seguridad de Office 365 &amp; centro de cumplimiento](https://technet.microsoft.com/en-us/library/dn933793.aspx) y [comprar o editar un complemento de Office 365 para profesionales](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6). 
+> Seguridad de la aplicación de Office 365 en la nube está disponible en Office 365 Enterprise E5. Si su organización usa otra suscripción de Office 365 Enterprise, seguridad de la aplicación de nube de Office 365 puede adquirirse como un complemento. (Como administrador global, en el centro de administración de Office 365, elija **facturación** \> **Agregar suscripciones**.) Para obtener más información, vea [Descripción del servicio Office 365 plataforma: seguridad de Office 365 &amp; centro de cumplimiento](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center) y [comprar o editar un complemento de Office 365 para profesionales](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6). 
   
 Después de haber configurado y configura la seguridad de la aplicación de nube de Office 365, desea realizar algunas tareas de uso como un administrador global de Office 365 o un administrador de seguridad de la organización. 
 
@@ -92,7 +92,7 @@ Si una larga como cantidad de tiempo ha transcurrido desde que inicialmente se c
     
 - [Suspender o restauración de una cuenta de usuario](suspend-or-restore-an-account-in-ocas.md)
     
-- [Administrar permisos de aplicación](manage-app-permissions-in-ocas.md)
+- [Administración de aplicaciones de OAuth](manage-app-permissions-in-ocas.md)
     
 - [Revisar los resultados de la detección de aplicaciones en Office 365 Cloud App Security](review-app-discovery-findings-in-ocas.md)
     

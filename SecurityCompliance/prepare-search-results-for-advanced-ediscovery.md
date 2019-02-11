@@ -3,7 +3,7 @@ title: Preparar los resultados de búsqueda para la exhibición avanzada de docu
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 5/10/2017
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 f1_keywords:
@@ -14,18 +14,24 @@ ms.collection: Strat_O365_IP
 search.appverid: MOE150
 ms.assetid: 0b6fac2d-8627-4b05-9df0-03609db6248b
 description: Obtenga información sobre cómo preparar los resultados de una búsqueda de contenido en la seguridad de Office 365 &amp; centro de cumplimiento para realizar un análisis con la herramienta de exhibición de documentos electrónicos avanzadas.
-ms.openlocfilehash: f5b10ac7fcfa67f67618c936000832b9bdb7d533
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+ms.openlocfilehash: c70eec691359170ae67e431f20e3b8ad389443f3
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038313"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "27280173"
 ---
 # <a name="prepare-search-results-for-office-365-advanced-ediscovery"></a>Preparar los resultados de búsqueda para la exhibición avanzada de documentos electrónicos de Office 365
 
 Después de una búsqueda en la que está asociado con un caso de exhibición de documentos electrónicos en la seguridad de Office 365 &amp; centro de cumplimiento se ejecuta correctamente, puede preparar los resultados de búsqueda para realizar un análisis con Office 365 avanzada exhibición de documentos electrónicos, que permite analizar grandes, datos no estructurados establecen y reducen la cantidad de datos que es relevantes para un caso legal. Las características de exhibición de documentos electrónicos avanzada incluyen:
   
-- **Reconocimiento óptico de caracteres** - cuando se preparan los resultados de búsqueda avanzada exhibición de documentos electrónicos, la funcionalidad de reconocimiento óptico de caracteres (OCR) automáticamente extrae el texto de imágenes y se incluye con los resultados de búsqueda que se cargan en a Exhibición de documentos electrónicos avanzada para el análisis. Reconocimiento óptico de caracteres es compatible con archivos sueltos, datos adjuntos de correo electrónico e imágenes incrustadas. Esto permite aplicar las capacidades de texto analítico de eDiscovery avanzada (cerca de duplicados, subprocesos de correo electrónico, los temas y codificación predictivo) para el contenido de texto en los archivos de imagen. 
+- **Reconocimiento óptico de caracteres** - cuando se preparan los resultados de búsqueda avanzada exhibición de documentos electrónicos, la funcionalidad de reconocimiento óptico de caracteres (OCR) automáticamente extrae el texto de imágenes y se incluye con los resultados de búsqueda que se cargan en a Exhibición de documentos electrónicos avanzada para el análisis. Reconocimiento óptico de caracteres es compatible con archivos sueltos, datos adjuntos de correo electrónico e imágenes incrustadas. Esto permite aplicar las capacidades de texto analítico de eDiscovery avanzada (cerca de duplicados, subprocesos de correo electrónico, los temas y codificación predictivo) para el contenido de texto en los archivos de imagen. Exhibición de documentos electrónicos avanzada reconocimiento óptico de caracteres admite los siguientes formatos de archivos de imagen:
+
+    - GIF
+    - JPEG
+    - JPG
+    - PNG
+    - TIFF
     
 - **Detección de casi duplicados** - le permite estructurar la revisión de datos de forma más eficaz, por lo que una persona revisa un grupo de documentos similares. Esto ayuda a evitar que varios revisores tener que ver las diferentes versiones del mismo documento. 
     
@@ -41,7 +47,7 @@ Después de una búsqueda en la que está asociado con un caso de exhibición de
 
 - Para analizar los datos de un usuario mediante la exhibición de documentos electrónicos avanzada, el usuario (la custodia de los datos) debe estar asignado una licencia de Office 365 E5. Como alternativa, se pueden asignar una licencia independiente de exhibición de documentos electrónicos avanzada a los usuarios con una licencia de Office 365 E1 o E3. Los administradores y responsables del cumplimiento normativo que se asignan a los casos y utilizan eDiscovery avanzada para analizar datos no necesitan una licencia de E5. 
     
-- Tiene que ser un administrador de exhibición de documentos electrónicos o un administrador de la seguridad de Office 365 de exhibición de documentos electrónicos &amp; centro de cumplimiento para preparar los resultados de búsqueda de exhibición de documentos electrónicos avanzada. Un administrador de exhibición de documentos electrónicos es un miembro del grupo de roles de administrador de exhibición de documentos electrónicos. Una exhibición de documentos electrónicos administrador también es miembro del grupo de roles de administrador de exhibición de documentos electrónicos, pero se ha asignado privilegios de exhibición de documentos electrónicos adicionales. Para obtener instrucciones acerca de cómo asignar permisos de administrador de exhibición de documentos electrónicos, vea el paso 1 en [los casos de exhibición de documentos electrónicos en el centro de cumplimiento y seguridad de Office 365](ediscovery-cases.md#step-1-assign-ediscovery-permissions-to-potential-case-members).
+- Tiene que ser un administrador de exhibición de documentos electrónicos o un administrador de la seguridad de Office 365 de exhibición de documentos electrónicos &amp; centro de cumplimiento para preparar los resultados de búsqueda de exhibición de documentos electrónicos avanzada. Un administrador de exhibición de documentos electrónicos es un miembro del grupo de roles de administrador de exhibición de documentos electrónicos. Una exhibición de documentos electrónicos administrador también es miembro del grupo de roles de administrador de exhibición de documentos electrónicos, pero se ha asignado privilegios de exhibición de documentos electrónicos adicionales. Para obtener instrucciones acerca de cómo asignar permisos de administrador de exhibición de documentos electrónicos, vea el paso 1 en [los casos de exhibición de documentos electrónicos en el centro de cumplimiento de seguridad de Office 365 &](ediscovery-cases.md#step-1-assign-ediscovery-permissions-to-potential-case-members).
     
 ## <a name="step-1-prepare-search-results-for-advanced-ediscovery"></a>Paso 1: Preparar los resultados de la exhibición de documentos electrónicos avanzada de búsqueda
 

@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 description: 'Resumen: Este artículo describe cómo usa DomainKeys Identified Mail (DKIM) con Office 365 para asegurarse de que los sistemas de correo electrónico de destino confían en los mensajes enviados desde su dominio personalizado.'
-ms.openlocfilehash: b5b28bef60148749e3ea6ac2619358fbc425e36c
-ms.sourcegitcommit: 03b9221d9885bcde1cdb5df2c2dc5d835802d299
+ms.openlocfilehash: 080d873c91c2dfb5910588113f2a6709b3ee9ab4
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29614454"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29696337"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain-in-office-365"></a>Usar DKIM para validar el correo electrónico saliente enviado desde su dominio personalizado en Office 365
 
@@ -88,9 +88,7 @@ Para cada dominio para el que quiera agregar una firma DKIM en DNS, necesita pub
 Use el siguiente formato para los registros CNAME.
 
 > [!IMPORTANT]
-> Si es uno de nuestros clientes GCC alta, calculamos de manera diferente _GuidDominio_ ! En lugar de buscar el registro MX para su _initialDomain_ calcular _GuidDominio_, en su lugar se lo calcule directamente desde el dominio personalizado. Por ejemplo, si su dominio personalizado es "contoso.com" su GuidDominio se convierte en "contoso-com", los períodos se reemplazan con un guión.
-
-Por lo tanto, independientemente de qué registro MX, los puntos de initialDomain siempre utilizará el método anterior para calcular la GuidDominio para usar en los registros CNAME.
+> Si es uno de nuestros clientes GCC alta, calculamos de manera diferente _GuidDominio_ ! En lugar de buscar el registro MX para su _initialDomain_ calcular _GuidDominio_, en su lugar se lo calcule directamente desde el dominio personalizado. Por ejemplo, si su dominio personalizado es "contoso.com" su GuidDominio se convierte en "contoso-com", los períodos se reemplazan con un guión. Por lo tanto, independientemente de qué registro MX, los puntos de initialDomain siempre utilizará el método anterior para calcular la GuidDominio para usar en los registros CNAME.
 
   
 ```

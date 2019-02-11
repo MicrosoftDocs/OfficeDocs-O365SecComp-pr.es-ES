@@ -13,19 +13,19 @@ search.appverid:
 - MET150
 ms.assetid: 60ffd80b-4376-419d-b6e4-a72029b9907c
 description: 'Obtenga información sobre cómo configurar las funciones de usuario, crear casos y asignar a usuarios a los casos de exhibición de documentos electrónicos avanzada de Office 365.  '
-ms.openlocfilehash: 49f76b415d86035cecafc19c23b36c413f7576e5
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 4c0043b7651cc82272492e19faf01041c6f67932
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22536453"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29559063"
 ---
 # <a name="set-up-users-and-cases-in-office-365-advanced-ediscovery"></a>Configurar usuarios y casos en eDiscovery avanzado de Office 365
 
 En este tema se describe cómo configurar los usuarios y los casos de exhibición de documentos electrónicos avanzada de Office 365.
   
 > [!NOTE]
-> Exhibición de documentos electrónicos avanzada requiere un E3 de Office 365 con el complemento de cumplimiento avanzadas o una suscripción E5 para su organización. Si no tiene ese plan y desea probar avanzada exhibición de documentos electrónicos, puede [registrarse y obtener una versión de prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -61,7 +61,5 @@ Después de crear un caso de exhibición de documentos electrónicos y agregar a
 
 [eDiscovery avanzado de Office 365](office-365-advanced-ediscovery.md)
   
-[Preparación de datos](prepare-data-for-advanced-ediscovery.md)
-  
-[Acceso y roles de usuario](user-roles-and-access-in-advanced-ediscovery.md)
-
+[Preparar datos](prepare-data-for-advanced-ediscovery.md)
+ 

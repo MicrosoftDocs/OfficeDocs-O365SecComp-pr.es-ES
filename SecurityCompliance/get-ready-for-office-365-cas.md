@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: d9ee4d67-f2b3-42b4-9c9e-c4529904990a
 description: Introducción al uso de la seguridad de la aplicación de nube de Office 365
-ms.openlocfilehash: 906570c6607c70b63fa9d2059d56b50f7807124a
-ms.sourcegitcommit: edf5db9357c0d34573f8cc406314525ef10d1eb9
+ms.openlocfilehash: 1d1ae464278a5d9aafa5a176298f03174b6a37dc
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/28/2018
-ms.locfileid: "23229992"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29603701"
 ---
 # <a name="get-ready-for-office-365-cloud-app-security"></a>Prepararse para Office 365 Cloud App Security
   
@@ -41,17 +41,15 @@ En orden para Office 365 la seguridad de la aplicación de nube trabajar correct
   
 ## <a name="step-3-go-to-the-office-365-cloud-app-security-portal"></a>Paso 3: Vaya al portal de seguridad de la aplicación de nube de Office 365
 
-1. Vaya a [https://protection.office.com](https://protection.office.com) e iniciar sesión con su cuenta de trabajo o escuela para Office 365. (Esto le llevará a la seguridad &amp; centro de cumplimiento.) 
+Puede obtener el portal de seguridad de la aplicación de nube de Office 365, vaya a [https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com) e inicio de sesión. 
+
+También puede obtener existe en la seguridad de Office 365 &amp; centro de cumplimiento. Aquí es una buena forma de hacerlo:
+
+1. Vaya a [https://protection.office.com](https://protection.office.com) y el inicio de sesión. (Esto le llevará a la seguridad &amp; centro de cumplimiento.)
     
 2. Vaya a **las alertas de** \> **avanzada de administrar las alertas**.
     
-3. Elija **Ir a la seguridad de la aplicación de Office 365 en la nube** para ir al portal de seguridad de la aplicación de nube de Office 365. 
-    
-    ![En la seguridad &amp; centro de cumplimiento, elija Administrar alertas avanzadas para ir a la seguridad de la aplicación de nube de Office 365](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)
-  
-    Cuando vaya al portal de seguridad de la aplicación de nube de Office 365, la primera página que aparece es la página de directivas, que es similar a la siguiente imagen:
-    
-    ![Cuando vaya al portal de seguridad de la aplicación de nube de Office 365, empezar con la página de directivas](media/5cb8833c-4e08-438c-bab3-91b5106f6f3f.png)
+3. Elija **Ir a la seguridad de la aplicación de Office 365 en la nube** para ir al portal de seguridad de la aplicación de nube de Office 365.<br> ![Elija Administrar alertas avanzadas para ir a la seguridad de la aplicación de nube de Office 365](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)<br>Cuando vaya al portal de seguridad de la aplicación de nube de Office 365, la primera página que aparece es la página de directivas, que es similar a la siguiente imagen:<br>![Cuando vaya al portal de seguridad de la aplicación de nube de Office 365, empezar con la página de directivas](media/5cb8833c-4e08-438c-bab3-91b5106f6f3f.png)<br>
   
 ## <a name="step-4-define-policies-and-set-up-alerts-amp-actions"></a>Paso 4: Definir directivas y configurar las alertas de &amp; acciones
 
@@ -85,7 +83,7 @@ Para rellenar informes con la información que necesita, cargue los archivos de 
     
 ## <a name="step-6-manage-apps-that-your-organization-is-using-to-access-office-365"></a>Paso 6: Administración de aplicaciones que su organización usa para el acceso a Office 365
 
-Como administrador global o administrador de seguridad, puede administrar las aplicaciones, como aplicaciones personalizadas o las aplicaciones de terceros, que usan las personas de su organización en sus dispositivos con Office 365. Por ejemplo, suponga que alguien ha descargado una aplicación personalizada que deseen usar con Office 365. Puede revisar las aplicaciones que usan las personas, prohibir aplicaciones no confiables o marcar aplicaciones como aprobados para el seguimiento. [Administrar permisos de aplicación con seguridad de la aplicación de nube de Office 365](manage-app-permissions-in-ocas.md).
+Como administrador global o administrador de seguridad, puede administrar las aplicaciones, como aplicaciones personalizadas o las aplicaciones de terceros, que usan las personas de su organización en sus dispositivos con Office 365. Por ejemplo, suponga que alguien ha descargado una aplicación personalizada que deseen usar con Office 365. Puede revisar las aplicaciones que usan las personas, prohibir aplicaciones no confiables o marcar aplicaciones como aprobados para el seguimiento. [Aplicaciones de administración de OAuth con seguridad de la aplicación de nube de Office 365](manage-app-permissions-in-ocas.md).
   
 ## <a name="step-7-use-your-siem-server-with-office-365-cloud-app-security"></a>Paso 7: Utilizar el servidor SIEM con seguridad de la aplicación de nube de Office 365
 

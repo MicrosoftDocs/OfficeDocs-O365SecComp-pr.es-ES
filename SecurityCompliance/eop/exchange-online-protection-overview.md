@@ -1,9 +1,9 @@
 ---
 title: Información general de Exchange Online Protection
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyp
 manager: laurawi
-ms.date: 12/9/2016
+ms.date: 01/31/2019
 ms.audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 description: Microsoft Protección de Exchange Online (EOP) es un servicio de filtro de correo electrónico basado en nube que ayuda a proteger su organización contra correo no deseado y malware, e incluye características para proteger a su organización contra incumplimiento de directivas de mensajería.
-ms.openlocfilehash: 89852c7ba211ccb266c8b231b00d3d83987a5f20
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 16f2f423b6e517cf204e4b4f6a2949baebfd6223
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026697"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29686369"
 ---
 # <a name="exchange-online-protection-overview"></a>Información general de Exchange Online Protection
 
@@ -44,11 +44,16 @@ EOP se ejecuta en una red mundial de centros de datos que están diseñados para
   
 EOP realiza el equilibrio de carga entre los centros de datos, pero solo dentro de una región. Si está aprovisionado en una región, todos sus mensajes se procesarán usando el enrutamiento de correo de esa región. La siguiente lista muestra cómo funciona el enrutamiento regional de correo para los centros de datos de EOP:
   
-- En el de los Estados Unidos, Exchange todos los Online buzones se encuentren en centros de datos de Estados Unidos, con la excepción de Sudamérica, donde se usan los centros de datos en Brasil y Chile y Canadá donde se usan los centros de datos en Canadá. Todos los mensajes de correo electrónico, incluidos los mensajes para los clientes de Sudamérica y Canadá, se enrutan a través de centros de datos de Estados Unidos para el filtrado de EOP; Sin embargo, correo electrónico de mensajes de correo puestos se almacena en el centro de datos donde se encuentra el inquilino..
     
 - En Europa, Oriente Medio y África (EMEA), todos los buzones de Exchange Online están ubicados en centros de datos de EMEA, y todos los mensajes se enrutan a través de EMEA para el filtrado de EOP.
     
-- En Asia Pacífico (APAC), todos los buzones de Exchange Online están ubicados en centros de datos de APAC, pero los mensajes se enrutan a través de centros de datos de EMEA para el filtrado de EOP. Está previsto que esto cambie en el cuarto trimestre de 2014, cuando los mensajes se enrutarán a través de centros de datos de APAC para el filtrado de EOP.
+- En Asia Pacífico (APAC), todos los buzones de Exchange Online están ubicados en centros de datos APAC, pero actualmente se enrutan los mensajes a través de centros de datos APAC para el filtrado de elevación de privilegios.
+=======
+- En América, todos los buzones de Exchange Online están ubicados en centros de datos de Estados Unidos, con la excepción de Sudamérica donde se usan los centros de datos en Brasil y Chile y Canadá donde se usan los centros de datos en Canadá. Todos los mensajes de correo electrónico, incluidos los mensajes para los clientes de Sudamérica y Canadá, se enrutan a través de centros de datos locales para el filtrado de EOP; correo electrónico mensajes de correo puestos se almacena en el centro de datos donde se encuentra el inquilino.
+    
+- En Europa, Oriente Medio y África (EMEA), todos los buzones de Exchange Online están ubicados en centros de datos de EMEA, y todos los mensajes se enrutan a través de EMEA para el filtrado de EOP.
+    
+- En Asia Pacífico (APAC), todos los buzones de Exchange Online están ubicados en centros de datos APAC y actualmente se enrutan los mensajes a través de centros de datos APAC para el filtrado de elevación de privilegios.
     
 - Para la nube de la comunidad de organismos oficiales (GCC), todos los buzones de Exchange Online están ubicados en centros de datos de Estados Unidos y los mensajes se enrutan a través de centros de datos de Estados Unidos para el filtrado de EOP.
     

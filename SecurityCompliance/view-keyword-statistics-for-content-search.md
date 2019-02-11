@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 9701a024-c52e-43f0-b545-9a53478aec04
 description: Use la característica de estadísticas de búsqueda para mostrar y comparar estadísticas para varias búsquedas de contenido en Office 365 seguridad &amp; centro de cumplimiento. También puede configurar la lista de palabras clave al crear o editar una consulta de búsqueda para obtener estadísticas mejoradas que muestran cuántos elementos coincidieron con cada palabra clave o frase de palabras clave.
-ms.openlocfilehash: cb71b30b32ff6a24cd68ea5728063c2997d8ada0
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 0f0258f228e296e48def8de16aabc068901dffc7
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22536260"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "27209811"
 ---
 # <a name="view-keyword-statistics-for-content-search-results"></a>Ver las estadísticas de palabras clave para resultados de búsqueda de contenido
 
@@ -100,6 +100,10 @@ Para mostrar las estadísticas para las búsquedas de contenido:
 ## <a name="get-keyword-statistics-for-content-searches"></a>Obtener estadísticas de palabras clave para las búsquedas de contenido
 
 Como anterior se explica, muestra la página de **consultas de** la consulta de búsqueda y el número (y tamaño) de los elementos que coinciden con la consulta. Si utiliza una lista de palabras clave al crear o editar una consulta de búsqueda, puede obtener estadísticas mejoradas que muestran el número de elementos que coinciden con cada palabra clave o frase de palabras clave. Esto puede ayudarle a identificar rápidamente qué partes de la consulta son los más (y menos) eficaces. Por ejemplo, si una palabra clave devuelve un gran número de elementos, es posible que elija refinar la consulta de palabras clave para restringir los resultados de búsqueda. Puede configurar una lista de palabras clave al crear o editar una búsqueda de contenido. 
+
+
+
+
   
 Para crear una lista de palabras clave y ver las estadísticas de palabra clave para una búsqueda de contenido:
   
@@ -130,3 +134,6 @@ Para crear una lista de palabras clave y ver las estadísticas de palabra clave 
     - La consulta de búsqueda reales para cada palabra clave, que incluye las condiciones de la consulta de búsqueda. 
     
     - La consulta de búsqueda completa (identificado como **principal** en la columna **parte** ) y las estadísticas de la consulta completa. Tenga en cuenta que estos son las mismas que se muestra en la página de **Resumen** de estadísticas. 
+
+> [!NOTE]
+> Para ayudar a reducir los problemas de listas de palabras clave de gran tamaño, ahora está limitado a un máximo de 20 filas de la lista de palabras clave de una consulta de búsqueda.

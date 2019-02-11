@@ -1,5 +1,5 @@
 ---
-title: Consulta de datos en un conjunto de trabajo
+title: Consultar los datos de un conjunto de trabajo
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 03c82741b3a4433c43ef709701ab40330ac5fd1f
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 3a503dd825cf65bef0dde537862561887d908563
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29608364"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29694996"
 ---
-# <a name="querying-data-in-a-working-set"></a>Consulta de datos en un conjunto de trabajo
+# <a name="query-the-data-in-a-working-set"></a>Consultar los datos de un conjunto de trabajo
 
 En la mayoría de los casos, es útil poder profundizar en lo que hay en un conjunto de trabajo y organícelas para revisar de forma más eficaz. Consultas dentro de un conjunto de trabajo permite hacer para, ya que permite centrarse en un subconjunto de los documentos que cumplen los criterios definidos por el usuario a la vez.
 

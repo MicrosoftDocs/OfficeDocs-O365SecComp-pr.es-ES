@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 88935b4e-dcb1-47f1-8aca-1bf8fb069db6
 description: 'Las directivas de detección de anomalías de seguridad de la aplicación de nube de Office 365 usen algoritmos integrados para ayudar a descubrir posibles problemas. Debe tener la directiva de detección de anomalías de al menos un, que puede ajustar (al crearla) mediante el uso de filtros. '
-ms.openlocfilehash: 7a1cb795531df168f0a5c425e7555ae6b1412d2b
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 5a6cf05b90b69045540bb7913124fe0d9e32f9a1
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29604421"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29612713"
 ---
 # <a name="anomaly-detection-policies-in-office-365-cloud-app-security"></a>Directivas de detección de anomalías en Office 365 Cloud App Security
 
@@ -28,7 +28,7 @@ Administración avanzada de seguridad de Office 365 es ahora de seguridad de la 
 |:-----|:-----|:-----|:-----|
 |[Empezar a evaluar](office-365-cas-overview.md) <br/> |[Comenzar a planear](get-ready-for-office-365-cas.md) <br/> |¡Están aquí!  <br/> [Paso siguiente](integrate-your-siem-server-with-office-365-cas.md) <br/> |[Iniciar utilizando](utilization-activities-for-ocas.md) <br/> |
    
-A partir [de la seguridad de la aplicación de Microsoft en la nube versión 116](new-in-office-365-cas-2018.md#office-365-cloud-app-security-release-116-3), seguridad de la aplicación de nube de Office 365 incluye varias directivas de detección de anomalías predefinidos ("fuera de la caja") que incluyen usuario y análisis de comportamiento de entidad (UEBA) y una máquina de aprendizaje (ML).
+A partir [de la seguridad de la aplicación de Microsoft en la nube versión 116](new-in-office-365-cas-2018.md#office-365-cloud-app-security-release-116), seguridad de la aplicación de nube de Office 365 incluye varias directivas de detección de anomalías predefinidos ("fuera de la caja") que incluyen usuario y análisis de comportamiento de entidad (UEBA) y una máquina de aprendizaje (ML).
   
 ![Para ver las directivas de detección de anomalías, elija Control \> directivas.](media/9663baa5-98bf-45e0-9458-6e572b43ec72.png)
   

@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 description: Configuración de filtro de spam básico incluye seleccionando la acción que se realizará en los mensajes que se identifican como correo no deseado y elegir si va a filtrar los mensajes que se escriben en idiomas específicos o enviados desde ciertos países o regiones.
-ms.openlocfilehash: c425be1814f9f04329f30254763cbbb5bd8b861e
-ms.sourcegitcommit: 204fb0269b5c10b63941055824e863d77e3e9b02
+ms.openlocfilehash: 64b66f53bb56c404acefebd4fa9d211f5458f29f
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "27180900"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29614484"
 ---
 # <a name="configure-your-spam-filter-policies"></a>Configurar las directivas de filtro de correo no deseado
   
@@ -51,7 +51,7 @@ Para obtener información acerca de los métodos abreviados de teclado aplicable
     
       - **Eliminar mensaje** Elimina el mensaje completo, incluyendo todos los datos adjuntos. 
         
-      - **Colocar el mensaje en cuarentena** Envía el mensaje a la cuarentena en lugar de a los destinatarios. Si selecciona esta opción, en el cuadro de entrada **Mantener el correo no deseado durante (días)**, especifique la cantidad de días durante los cuales se mantendrá el mensaje de correo no deseado en cuarentena. (Automáticamente se borrará después de que transcurra ese tiempo. El valor predeterminado es 15 días, que es el valor máximo. El valor mínimo es 1 día).<br/><br/>Sugerencia: Para obtener información acerca de cómo los administradores pueden administrar los mensajes de correo electrónico que residen en cuarentena en el CEF, consulte [cuarentena](quarantine.md) y [Buscar y liberar mensajes en cuarentena como administrador](find-and-release-quarantined-messages-as-an-administrator.md). > Para obtener información acerca de cómo configurar los mensajes de notificación de spam que se envíen a los usuarios, vea [Configure para el usuario final las notificaciones en EOP de correo no deseado](configure-end-user-spam-notifications-in-eop.md) o [configurar para el usuario final de correo no deseado notificaciones en Exchange Online](configure-end-user-spam-notifications-in-exchange-online.md). 
+      - **Colocar el mensaje en cuarentena** Envía el mensaje a la cuarentena en lugar de a los destinatarios. Si selecciona esta opción, en el cuadro de entrada **Mantener el correo no deseado durante (días)**, especifique la cantidad de días durante los cuales se mantendrá el mensaje de correo no deseado en cuarentena. (Automáticamente se borrará después de que transcurra ese tiempo. El valor predeterminado es 15 días, que es el valor máximo. El valor mínimo es 1 día).<br/><br/>Sugerencia: Para obtener información acerca de cómo los administradores pueden administrar los mensajes de correo electrónico que residen en cuarentena en el CEF, consulte [cuarentena](quarantine.md) y [Buscar y liberar mensajes en cuarentena como administrador](find-and-release-quarantined-messages-as-an-administrator.md). > para obtener información acerca de cómo configurar los mensajes de notificación de spam que se envíen a los usuarios, vea [Configure para el usuario final las notificaciones en EOP de correo no deseado](configure-end-user-spam-notifications-in-eop.md) o [configurar para el usuario final de correo no deseado notificaciones en Exchange Online](configure-end-user-spam-notifications-in-exchange-online.md). 
   
       - **Mover mensaje a la carpeta Correo no deseado** Entrega el mensaje a la carpeta de Correo no deseado de los destinatarios especificados. Es la acción predeterminada para ambos los niveles de umbrales de confianza.<br/><br/>**Importante: Para los clientes de Exchange Online Protection (EOP): en orden para esta acción para que funcione con buzones locales, debe configurar dos reglas de transporte de Exchange en los servidores locales para detectar los encabezados de spam agregados por elevación de privilegios. Para obtener información detallada, vea [Asegúrese de que el correo no deseado se enrute a la carpeta de correo no deseado de cada usuario](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).**
   
@@ -62,6 +62,8 @@ Para obtener información acerca de los métodos abreviados de teclado aplicable
       - Si incluye espacios en el texto de encabezado personalizado, o si agrega los dos puntos (como "X es mi encabezado personalizado" o "X-This-is-my-custom-header:"), el texto del encabezado de X se revierte a la predeterminada como "X-esta-es-correo no deseado: este mensaje parece ser correo no deseado."
     
       - No se puede especificar el texto del encabezado en el formato \< *encabezado*  \>:\<  *valor*  \>. Si en este caso, ambos valores antes y después se pasará por alto los dos puntos y el texto de encabezado X predeterminado aparece en su lugar: "X-esta-es-correo no deseado: este mensaje parece ser correo no deseado." 
+      
+      - Tenga en cuenta que es posible que puede moverse aún correos con este encabezado X a la carpeta correo electrónico no deseado del buzón debido a la configuración de buzón de correo no deseado. Puede cambiar esto al deshabilitar esta característica con Set-MailboxJunkEmailConfiguration.
         
       - **Línea de asunto Prepend con texto** Envía el mensaje a los destinatarios pero antepone la línea de asunto con el texto que especifique en el cuadro de entrada de **línea de asunto con este texto de prefijo** . Este texto se usa como un identificador, opcionalmente puede crear reglas para filtrar o enrutar los mensajes según sea necesario. 
         
@@ -112,7 +114,7 @@ Para obtener información acerca de los métodos abreviados de teclado aplicable
 16. Haga clic en **Guardar**. En el panel de la derecha, aparece un resumen de la configuración de la directiva.
 
 > [!TIP]
->  Puede seleccionar o desactive las casillas de verificación en la columna **activado** para habilitar o deshabilitar las directivas personalizadas. De forma predeterminada, se habilitan todas las directivas. No se puede deshabilitar la directiva predeterminada. > Para eliminar una directiva personalizada, seleccione la directiva, haga clic en el ![icono de eliminación](media/ITPro-EAC-DeleteIcon.gif) icono **Eliminar** y, a continuación, confirme que desea eliminar la directiva. No se puede eliminar la directiva predeterminada. > Directivas personalizadas siempre tienen prioridad sobre la directiva predeterminada. Directivas personalizadas que se ejecutan en el orden inverso en el que los creó (de más antiguo a más reciente), pero puede cambiar la prioridad (orden de marcha) de sus directivas personalizadas haciendo clic en el ![seguridad el icono de flecha](media/ITPro-EAC-UpArrowIcon.gif) flecha arriba y ![icono de la flecha hacia abajo](media/ITPro-EAC-DownArrowIcon.gif) hacia abajo flecha. La directiva que tiene una **prioridad** de **0** se ejecutará en primer lugar, seguido de **1**, a continuación, **2**y así sucesivamente. 
+>  Puede seleccionar o desactive las casillas de verificación en la columna **activado** para habilitar o deshabilitar las directivas personalizadas. De forma predeterminada, se habilitan todas las directivas. No se puede deshabilitar la directiva predeterminada. > para eliminar una directiva personalizada, seleccione la directiva, haga clic en el ![icono de eliminación](media/ITPro-EAC-DeleteIcon.gif) icono **Eliminar** y, a continuación, confirme que desea eliminar la directiva. No se puede eliminar la directiva predeterminada. las directivas personalizadas de > siempre tienen prioridad sobre la directiva predeterminada. Directivas personalizadas que se ejecutan en el orden inverso en el que los creó (de más antiguo a más reciente), pero puede cambiar la prioridad (orden de marcha) de sus directivas personalizadas haciendo clic en el ![seguridad el icono de flecha](media/ITPro-EAC-UpArrowIcon.gif) flecha arriba y ![icono de la flecha hacia abajo](media/ITPro-EAC-DownArrowIcon.gif) hacia abajo flecha. La directiva que tiene una **prioridad** de **0** se ejecutará en primer lugar, seguido de **1**, a continuación, **2**y así sucesivamente. 
   
 ## <a name="use-remote-powershell-to-configure-spam-filter-policies"></a>Usar PowerShell remoto para configurar directivas de filtro de correo no deseado
 

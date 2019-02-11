@@ -13,15 +13,13 @@ ms.service: o365-solutions
 localization_priority: Normal
 search.appverid:
 - MET150
-ms.custom: ''
-ms.assetid: ''
 description: Obtenga información sobre cómo reconocer y corregir las reglas de Outlook y los ataques de inserciones de formularios personalizados en Office 365
-ms.openlocfilehash: 893ade67976d7e6d1442a23f1f61948cea591dad
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 1067d7c791217c146fedea839754e45f76ef5d8e
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22535872"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29603761"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks-in-office-365"></a>Detectar y corregir las reglas de Outlook y ataques de inserciones de formularios personalizados en Office 365
 

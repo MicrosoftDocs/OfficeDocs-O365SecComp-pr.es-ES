@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: En este artículo se describe la nueva versión de avanzada exhibición de documentos electrónicos (vista previa) en Microsoft 365.
-ms.openlocfilehash: bcf10f5154723709b1cde761b0e8d02540341a26
-ms.sourcegitcommit: 98ec28932ae20e848f9f489c3c78e4a7edab6d18
+ms.openlocfilehash: 90bcbd4cae1e410e1544352a776ba4cbbedfa429
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29636641"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29695066"
 ---
 # <a name="release-notes-for-data-investigations-preview-in-microsoft-365"></a>Notas de la versión para datos investigaciones (vista previa) en Microsoft 365
 
-Puede usar la nueva herramienta de investigaciones de datos (vista previa) en Microsoft 365 para evaluar, investigar y corregir los datos relacionados con incidentes, como un incidente de pérdidas de datos o una investigación interna. Las investigaciones de vista previa de datos públicos le proporciona acceso rápido a la funcionalidad próxima y las actualizaciones. Para obtener acceso rápido a las características más recientes, cree una nueva investigación en investigaciones de datos (vista previa) en el centro de cumplimiento de seguridad de Office 365 &. Para obtener más información, vea [administración de un incidente de pérdidas de datos en Microsoft 365](manage-data-spillage-incidents.md).
+Puede usar la nueva herramienta de investigaciones de datos (vista previa) en Microsoft 365 para evaluar, investigar y corregir los datos relacionados con incidentes, como un incidente de pérdidas de datos o una investigación interna. Las investigaciones de vista previa de datos públicos le proporciona acceso rápido a la funcionalidad próxima y las actualizaciones. Para obtener acceso rápido a las características más recientes, cree una nueva investigación en investigaciones de datos (vista previa) en el centro de cumplimiento de seguridad de Office 365 &. Para obtener más información, vea [administrar un incidente de pérdidas de datos en Microsoft 365](manage-data-spillage-incidents.md).
 
 ## <a name="whats-new"></a>Novedades 
 

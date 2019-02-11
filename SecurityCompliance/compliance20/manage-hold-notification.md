@@ -1,5 +1,5 @@
 ---
-title: Administrar las comunicaciones
+title: Administrar las notificaciones de retención
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 7189680f1ec022ae76e8003c7e6660a8da7c5906
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 38db73000e84db0bbdcac7710ef71431666a5494
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29608431"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29706051"
 ---
-# <a name="manage-communications"></a>Administrar las comunicaciones
+# <a name="manage-hold-notifications"></a>Administrar las notificaciones de retención
 
 Después de haber iniciado el departamento jurídico mantenga el flujo de trabajo de notificación, puede sacar provecho de exhibición de documentos electrónicos avanzada (vista previa) para realizar un seguimiento del estado de las comunicaciones. La ficha comunicaciones se muestran todas las notificaciones de suspensión dentro de su caso de exhibición de documentos electrónicos avanzada (vista previa). Aquí, puede ver detalles, como el número de custodia que se han asignado o ha confirmado el aviso.
 
@@ -71,6 +71,8 @@ Cuando se actualizarán el contenido o la configuración de la notificación de 
 
 ## <a name="related-information"></a>Información relacionada 
 
-    - [Crear una notificación de retención Legal] (~ SecurityCompliance\compliance20\create-hold-notification.md)
-    - [Confirmar una notificación de retención Legal] (~/acknowledge-hold-notification.md)
-    - [Agregar custodia para un caso]
+- [Crear un aviso de retención legal](create-hold-notification.md)
+    
+- [Confirmar una notificación de retención](acknowledge-hold-notification.md)
+    
+- [Agregar administradores a un caso](add-custodians-to-case.md)

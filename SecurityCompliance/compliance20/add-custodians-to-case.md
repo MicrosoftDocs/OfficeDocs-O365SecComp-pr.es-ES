@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: d9a7dc6b1c2eeffdcd49be64d1d09d4a2bda782b
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 88d2e64f4e1fb519955d8970b34e9670fb18d3f8
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29608375"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29706111"
 ---
-# <a name="add-custodians-to-an-advanced-ediscovery-preview-case"></a>Agregar custodia a una exhibición de documentos electrónicos avanzada (vista previa) caso
+# <a name="add-custodians-to-an-advanced-ediscovery-preview-case"></a>Agregar a custodia a un caso de exhibición de documentos electrónicos avanzada (vista previa)
 
 Uso de exhibición de documentos electrónicos avanzada (vista previa), puede aprovechar la herramienta de administración integrada de custodia para coordinar los flujos de trabajo alrededor de administración de custodia y la identificación de los orígenes de datos relevantes, custodia dentro de un caso. Cuando se agrega una custodia, puede identificar automáticamente el sistema y realizar suspensiones en su buzón de Exchange principal y OneDrive para el sitio de negocio. Como dirigir la detección, también es posible que descubrir y asignar los buzones de correo adicionales o sitios que una custodia tener acceso en el pasado o los equipos que una custodia es un miembro de hoy.
 

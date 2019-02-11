@@ -3,7 +3,7 @@ title: Habilitar buzones de archivo en la seguridad de Office 365 &amp; centro d
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/29/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 f1_keywords:
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 description: Usar la seguridad de Office 365 &amp; centro de cumplimiento para habilitar buzones de archivo admitir la retención de mensajes de su organización, exhibición de documentos electrónicos y los requisitos de retención.
-ms.openlocfilehash: 5ba578ba611f619194ac4f475121bd485b75f9e0
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 1c290cf19b396221dac702efd1395911e8a51631
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22536287"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "28327102"
 ---
 # <a name="enable-archive-mailboxes-in-the-office-365-security-amp-compliance-center"></a>Habilitar buzones de archivo en la seguridad de Office 365 &amp; centro de cumplimiento
   
@@ -38,7 +38,7 @@ Se debe asignar el rol de destinatarios de correo en Exchange Online para habili
   
 1. Vaya a [https://protection.office.com](https://protection.office.com).
     
-2. Inicie sesión en Office 365 con su cuenta de trabajo o escuela.
+2. Inicie sesión en Office 365 con su cuenta profesional o educativa.
     
 3. En el panel izquierdo de la seguridad &amp; centro de cumplimiento, haga clic en **el gobierno de datos** \> **archivo**.
     
@@ -69,7 +69,7 @@ Para deshabilitar un buzón de archivo:
   
 1. Vaya a [https://protection.office.com](https://protection.office.com).
     
-2. Inicie sesión en Office 365 con su cuenta de trabajo o escuela.
+2. Inicie sesión en Office 365 con su cuenta profesional o educativa.
     
 3. En el panel izquierdo de la seguridad &amp; centro de cumplimiento, haga clic en **el gobierno de datos** \> **archivo**.
     
@@ -88,6 +88,42 @@ Para deshabilitar un buzón de archivo:
 > [!TIP]
 > También puede deshabilitar buzones de archivo de forma masiva seleccionando varios usuarios con los buzones de archivo habilitados (use las teclas Mayús o Ctrl). Después de seleccionar varios buzones, haga clic en **Deshabilitar** en el panel de detalles. 
   
+## <a name="use-exchange-online-powershell-to-enable-or-disable-archive-mailboxes"></a>Use Exchange Online PowerShell para habilitar o deshabilitar los buzones de archivo
+
+También puede usar Exchange Online PowerShell para habilitar buzones de archivo. La razón principal para usar PowerShell es que se puede habilitar rápidamente el buzón de archivo para todos los usuarios de la organización.
+
+El primer paso es para conectarse a Exchange Online PowerShell. Para obtener instrucciones, vea [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+
+Después de conectarse a Exchange Online, puede ejecutar los comandos en las secciones siguientes para habilitar o deshabilitar los buzones de archivo.
+
+### <a name="enable-archive-mailboxes"></a>Habilitar buzones de archivo
+
+Ejecute el siguiente comando para habilitar el buzón de archivo para un único usuario.
+    
+  ```
+  Enable-Mailbox -Identity <username> -Archive
+  ```
+
+Ejecute el siguiente comando para habilitar el buzón de archivo para todos los usuarios de la organización (cuyo buzón de archivo actualmente no está habilitado).
+    
+  ```
+  Get-Mailbox -Filter {ArchiveStatus -Eq "None" -AND RecipientTypeDetails -eq "UserMailbox"} | Enable-Mailbox -Archive
+  ```
+  
+### <a name="disable-archive-mailboxes"></a>Deshabilitar los buzones de archivo
+
+Ejecute el siguiente comando para deshabilitar el buzón de archivo para un único usuario.
+    
+  ```
+  Disable-Mailbox -Identity <username> -Archive
+  ```
+
+Ejecute el siguiente comando para deshabilitar el buzón de archivo para todos los usuarios de su organización (cuyo buzón de archivo actualmente está habilitado).
+    
+  ```
+  Get-Mailbox -Filter {ArchiveStatus -Eq "Active" -AND RecipientTypeDetails -eq "UserMailbox"} | Disable-Mailbox -Archive
+  ```
+
 ## <a name="more-information"></a>Más información
   
 - Buzones de archivo ayudan a usted y a sus usuarios para satisfacer la retención de la organización, exhibición de documentos electrónicos y los requisitos de retención. Por ejemplo, puede usar la directiva de retención de la organización Exchange para mover el contenido de buzón de correo al buzón de archivo de los usuarios. Al utilizar la herramienta de búsqueda de contenido en la seguridad &amp; también se buscará en el centro de cumplimiento para buscar el buzón de un usuario para contenido específico, buzón de archivo del usuario. Y, cuando se coloque un juicio o aplicar una directiva de retención de Office 365 para el buzón de un usuario, también se conservan los elementos en el buzón de archivo.
@@ -102,7 +138,6 @@ Para deshabilitar un buzón de archivo:
     
 - Para obtener más información acerca de los buzones de archivo y las directivas de retención de Exchange, consulte:
   
-  - [Buzones de archivo en Exchange Online](https://go.microsoft.com/fwlink/?LinkId=404421)
     
   - [Etiquetas de retención y directivas de retención](https://go.microsoft.com/fwlink/?LinkId=404424)
     

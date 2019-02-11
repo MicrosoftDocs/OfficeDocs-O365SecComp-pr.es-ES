@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 87496bc5-9601-4473-8021-cb05c71369c1
 description: 'Una sugerencia de directiva es una notificación o una advertencia que aparece cuando alguien está trabajando con el contenido que está en conflicto con una directiva de DLP. Puede usar las notificaciones de correo electrónico y sugerencias de directivas para aumentar el conocimiento y ayudar a enseñar a las personas acerca de las directivas de su organización. También puede dar la opción Reemplazar la directiva para que no está bloqueados si tienen una empresa válida de los usuarios necesitan o si la directiva está detectando un falso positivo. '
-ms.openlocfilehash: f95e392cc6cced6da29d34abfcab0fa0c3add069
-ms.sourcegitcommit: 3ac6452ab77a761d06122c35c5f4a76da4472990
+ms.openlocfilehash: 78247a283b2a3b8d581a8b27fe0bf124ed46b222
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "25769919"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "25804001"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Enviar notificaciones de correo electrónico y mostrar sugerencias de directivas para las directivas DLP
 
@@ -90,7 +90,7 @@ Para cada regla en una directiva DLP, puede:
 - Personalizar el texto que se incluye en la notificación mediante el uso de HTML o tokens. Vea la sección siguiente para obtener más información.
     
 > [!NOTE]
->  Se pueden enviar notificaciones por correo electrónico sólo a los destinatarios, no grupos o listas de distribución. > Contenido nuevo sólo activará una notificación de correo electrónico. Se activarán la edición de contenido existente, pero no una notificación de correo electrónico de sugerencias de directiva. 
+>  Se pueden enviar notificaciones por correo electrónico sólo a los destinatarios, no grupos o listas de distribución. > sólo el nuevo contenido se activará una notificación de correo electrónico. Se activarán la edición de contenido existente, pero no una notificación de correo electrónico de sugerencias de directiva. 
   
 ![Opciones de notificación de correo electrónico](media/4e7b9500-2a78-44e6-9067-09f4bfd50301.png)
   
@@ -101,8 +101,7 @@ Las notificaciones tienen una línea de asunto que comienza con la acción reali
 ![Mensaje de notificación](media/35813d40-5fd8-425f-9624-55655e74fa6b.png)
   
 De forma predeterminada, las notificaciones muestran texto similar al siguiente para un elemento de un sitio. El texto de notificación se configura por separado para cada regla, por lo que el texto que se muestra es diferente en función de qué regla coincida.
-  
-| |
+
 |**Si la regla de directiva DLP hace esto...**|**A continuación, la notificación de forma predeterminada para SharePoint o OneDrive para documentos empresariales dice esto...**|**A continuación, la notificación de forma predeterminada para los mensajes de Outlook dice esto...**|
 |:-----|:-----|:-----|
 |Envía una notificación, pero no permitir invalidación  <br/> |Este elemento está en conflicto con una directiva de la organización.  <br/> |Su correo electrónico mensaje entra en conflicto con una directiva de la organización.  <br/> |
@@ -114,8 +113,7 @@ De forma predeterminada, las notificaciones muestran texto similar al siguiente 
 Puede crear una notificación de correo electrónico personalizado en lugar de enviar la notificación de correo electrónico predeterminado en el que los usuarios finales o administradores. La notificación de correo electrónico personalizado es compatible con HTML y tiene un límite de 5.000 caracteres. Puede utilizar HTML para incluir imágenes, el formato y otros de personalización de marca en la notificación.
   
 También puede usar los siguientes tokens para ayudar a personalizar la notificación de correo electrónico. Estos tokens son variables que se han reemplazado por información específica en la notificación que se envía.
-  
-| |
+
 |**Símbolo (token)**|**Descripción**|
 |:-----|:-----|
 |%% AppliedActions %%  <br/> |Las acciones que se aplica al contenido.  <br/> |
@@ -177,8 +175,7 @@ Las directivas DLP se sincronizan con los sitios y el contenido se evalúa con e
 ### <a name="default-text-for-policy-tips-on-sites"></a>Texto predeterminado para las sugerencias de directiva en los sitios
 
 De forma predeterminada, las sugerencias de directiva muestran texto similar al siguiente para un elemento de un sitio. El texto de notificación se configura por separado para cada regla, por lo que el texto que se muestra es diferente en función de qué regla coincida.
-  
-| |
+
 |**Si la regla de directiva DLP hace esto...**|**La sugerencia de directiva predeterminada indica lo siguiente...**|
 |:-----|:-----|
 |Envía una notificación, pero no permitir invalidación  <br/> |Este elemento está en conflicto con una directiva de la organización.  <br/> |

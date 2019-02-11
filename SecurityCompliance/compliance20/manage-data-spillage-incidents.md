@@ -1,5 +1,5 @@
 ---
-title: Administración de un incidente de pérdidas de datos en Microsoft 365
+title: Administrar un incidente de pérdidas de datos en Microsoft 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: En este artículo se describe cómo utilizar la nueva herramienta de investigaciones (vista previa) de datos en el centro de cumplimiento de seguridad de Office 365 & para administrar un incidente de pérdidas de datos.
-ms.openlocfilehash: d863d87cc667b9695f9bf619c35575715dfa144e
-ms.sourcegitcommit: 98ec28932ae20e848f9f489c3c78e4a7edab6d18
+ms.openlocfilehash: d7adc17d01a0ae2ad6b7bfb7052862a5a6419882
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/30/2019
-ms.locfileid: "29636642"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29706183"
 ---
-# <a name="managing-a-data-spillage-incident-in-microsoft-365"></a>Administración de un incidente de pérdidas de datos en Microsoft 365 
+# <a name="manage-a-data-spillage-incident-in-microsoft-365"></a>Administrar un incidente de pérdidas de datos en Microsoft 365 
 
 Pérdidas de datos es cuando se libera un documento confidencial en un entorno que no se confía. Cuando se detecta un incidente de pérdidas de datos, es importante evaluar rápidamente el tamaño y las ubicaciones de las pérdidas, se examinan las actividades del usuario alrededor de él y, a continuación, permanentemente purgar los datos derramados desde el sistema.
 
@@ -111,7 +111,7 @@ En la investigación, vaya a la ficha de **incidentes** y haga clic en el incide
 
 Para agrupar los documentos y obtener más ayuda para su revisión, haga clic en **Administrar incidente**. En el icono del **análisis** , haga clic en **analizar**. Esto ejecutará análisis avanzados, como la detección de duplicados, correo electrónico threading y análisis de tema. Para obtener más información, vea:
 
-- [Cerca de detección de duplicados](near-duplicates.md)
+- [Detección de semiduplicados](near-duplicates.md)
 - [Subprocesos de correo electrónico](email-threading.md)
 - [Temas](themes.md)
 
@@ -130,7 +130,7 @@ Tenga en cuenta que si está habilitada la recuperación de elemento único para
 
 ### <a name="deleting-site-items"></a>Eliminación de elementos de sitio
 
-Para eliminar permanentemente un documento desde un sitio de SharePoint o OneDrive para la cuenta de empresa, debe eliminarlo y, a continuación, se debe eliminar del sitio y, a continuación, elimine la Papelera de reciclaje de la colección de sitios. Para obtener instrucciones, consulte [eliminación de documentos en SharePoint y OneDrive](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#deleting-documents-in-sharepoint-online-and-onedrive-for-business).
+Para eliminar permanentemente un documento desde un sitio de SharePoint o OneDrive para la cuenta de empresa, debe eliminarlo y, a continuación, se debe eliminar del sitio y, a continuación, elimine la Papelera de reciclaje de la colección de sitios. Para obtener instrucciones, vea [Eliminar documentos en SharePoint y OneDrive](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#deleting-documents-in-sharepoint-online-and-onedrive-for-business).
 
 Como alternativa, puede eliminar una colección de sitios completa que es posible que contenía datos derramados. Para obtener instrucciones, vea [Eliminar una colección de sitios](https://docs.microsoft.com/sharepoint/delete-site-collection).
 
@@ -141,6 +141,7 @@ Después de eliminar documentos en las ubicaciones de contenido de origen (buzon
 Para eliminar una investigación:
 
 1. En la ficha **configuración** , haga clic en **información de investigación**.
+
 2. Haga clic en **Eliminar caso**. 
 
 Si no es necesario eliminar la investigación o si desea guardar la información recopilada durante la investigación, puede hacer clic en **Cerrar el caso**. En una fecha posterior, puede volver a abrir investigaciones cerradas.

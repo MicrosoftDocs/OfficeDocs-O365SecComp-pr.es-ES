@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 description: Cuando Exchange Online Protection examina un mensaje de correo entrante, inserta el encabezado **X-Forefront-Antispam-Report** en cada mensaje.
-ms.openlocfilehash: d887fea94bac6177dde69fac9586d7d562ef50de
-ms.sourcegitcommit: 03b9221d9885bcde1cdb5df2c2dc5d835802d299
+ms.openlocfilehash: 5632aa28a0d23186e6a36fdf63f7968322c93e39
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29614464"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29686450"
 ---
 # <a name="anti-spam-message-headers"></a>Encabezados de mensajes de correo no deseado
 
@@ -38,7 +38,7 @@ Al obtener acceso a la información del encabezado del mensaje, busque **X-Foref
 |CTRY|El país desde el que el mensaje se conectó al servicio. Está determinado por la dirección IP de conexión, que puede no ser la misma que la dirección IP de envío original.|
 |LANG|El idioma en que se redactó el mensaje, que está definido por el código de país (por ejemplo, ru_RU indica ruso).|
 |SCL|El valor del nivel de confianza contra correo no deseado (SCL) del mensaje. Para obtener más información sobre cómo interpretar estos valores, consulte [Niveles de confianza de correo no deseado](spam-confidence-levels.md).  |
-|PCL|El valor del nivel de confianza de protección antiphishing (PCL) del mensaje. Consulte [PCL](anti-spam-message-headers.md#PCL) para obtener más información sobre los valores de PCL.  |
+|PCL|El valor del nivel de confianza de protección antiphishing (PCL) del mensaje. |
 |SRV:BULK|El mensaje se identificó como mensaje de correo masivo. Si la opción avanzada de filtrado de correo no deseado **Bloquear todos los mensajes de correo masivo** está habilitada, se marcará como correo no deseado. Si no lo está, solo se marcará como correo no deseado en el caso de que el resto de las reglas de filtrado determinen que el mensaje es correo no deseado.  |
 |SFV:SFE|Se omitió el filtrado y se permitió el mensaje porque se envió desde una dirección de una lista de remitentes seguros del individuo.|
 |SFV:BLK|Se omitió el filtrado y se bloqueó el mensaje porque se envió desde una dirección de una lista de remitentes bloqueados del individuo.  <br/> **Sugerencia**: para obtener más información sobre cómo los usuarios finales pueden crear listas de remitentes seguros y bloqueados, vea [Bloquear o permitir (configuración de correo electrónico no deseado)](https://go.microsoft.com/fwlink/p/?LinkId=294862) (Outlook en la web) y la [información general sobre el filtro de correo electrónico no deseado](https://go.microsoft.com/fwlink/p/?LinkId=270065) (en Outlook).|

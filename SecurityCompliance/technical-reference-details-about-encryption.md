@@ -3,7 +3,7 @@ title: Información de referencia técnica sobre el cifrado en Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 4/12/2018
+ms.date: 1/15/2019
 ms.audience: ITPro
 ms.topic: reference
 ms.service: o365-administration
@@ -14,20 +14,20 @@ search.appverid:
 - MOE150
 ms.assetid: 862cbe93-4268-4ef9-ba79-277545ecf221
 description: Ver detalles técnicos acerca de cifrado en Office 365.
-ms.openlocfilehash: 69365b66479ab89a9c036fe489b4087d327460eb
-ms.sourcegitcommit: e4ebef6aaf756eefb86c9f3a602cf75f5d344271
+ms.openlocfilehash: bb4629d89d2ed625cc1b817c53d2355484bfdf6c
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2018
-ms.locfileid: "26026527"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "28326941"
 ---
 # <a name="technical-reference-details-about-encryption-in-office-365"></a>Información de referencia técnica sobre el cifrado en Office 365
 
 Consulte este artículo para obtener más información acerca de los certificados, las tecnologías y TLS conjuntos de cifrado utilizadas para el [cifrado en Office 365](encryption.md). En este artículo también proporciona detalles sobre desuso planeada.
   
 - Si está buscando información general, vea [cifrado en Office 365](encryption.md).
-    
 - Si está buscando información de configuración, vea [Configurar el cifrado en Office 365 Enterprise](set-up-encryption.md).
+- Para obtener información acerca de los conjuntos de cifrado compatibles con versiones específicas de Windows, vea [Conjuntos de cifrado de TLS/SSL (Schannel SSP)](https://docs.microsoft.com/windows/desktop/SecAuthN/cipher-suites-in-schannel).
     
 ## <a name="microsoft-office-365-certificate-ownership-and-management"></a>Propiedad y administración de certificados de Microsoft Office 365
 
@@ -35,7 +35,10 @@ No es necesario comprar ni mantener certificados para Office 365 porque Microsof
   
 ## <a name="current-encryption-standards-and-planned-deprecations"></a>Los estándares de cifrado actual y el desuso planeado
 
-Para poder continuar proporcionar mejores en su clase cifrado para Office 365, Microsoft revisa con regularidad cifrado compatible con estándares. En ocasiones, es necesario dejar de utilizar los estándares antiguo como estén caducada y, por tanto, es menos segura. Este tema describe los conjuntos de cifrado compatibles actualmente y otros estándares así como detalles sobre desuso planeada.
+Para poder continuar proporcionar mejores en su clase cifrado para Office 365, Microsoft revisa con regularidad cifrado compatible con estándares. En ocasiones, es necesario dejar de utilizar los estándares antiguo como estén caducada y, por tanto, es menos segura. Este tema describe los conjuntos de cifrado compatibles actualmente y otros estándares así como detalles sobre desuso planeada. 
+
+## <a name="fips-compliance-for-office-365"></a>Cumplimiento de FIPS para Office 365
+Todos los conjuntos de aplicaciones de cifrado compatibles con Office 365 usen algoritmos aceptables en FIPS 140-2. Office 365 hereda validaciones de FIPS de Windows (a través de Schannel). Para obtener información acerca de Schannel, vea [Conjuntos de cifrado de TLS/SSL (Schannel SSP)](https://docs.microsoft.com/windows/desktop/SecAuthN/cipher-suites-in-schannel).
   
 ## <a name="versions-of-tls-supported-by-office-365"></a>Versiones de TLS admitidas por Office 365
 
@@ -89,6 +92,8 @@ Un conjunto de cifrado es una colección de algoritmos de cifrado que TLS emplea
   
 |**Protocolos**|**Nombre del conjunto de cifrado**|**Algoritmo de intercambio de claves o seguridad**|**Compatibilidad con Confidencialidad directa total**|**Algoritmo de autenticación o seguridad**|**Cifrado o seguridad**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
+|TLS 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384  <br/> |ECDH/192  <br/> |Sí  <br/> |RSA/112  <br/> |AES/256  <br/> |
+|TLS 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256  <br/> |ECDH/128  <br/> |Sí  <br/> |RSA/112  <br/> |AES/128  <br/> |
 |TLS 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384_P384  <br/> |ECDH/192  <br/> |Sí  <br/> |RSA/112  <br/> |AES/256  <br/> |
 |TLS 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256_P256  <br/> |ECDH/128  <br/> |Sí  <br/> |RSA/112  <br/> |AES/128  <br/> |
 |TLS 1.0, 1.1, 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA_P384  <br/> |ECDH/192  <br/> |Sí  <br/> |RSA/112  <br/> |AES/256  <br/> |
@@ -97,10 +102,9 @@ Un conjunto de cifrado es una colección de algoritmos de cifrado que TLS emplea
 |TLS 1.2  <br/> |TLS_RSA_WITH_AES_128_CBC_SHA256  <br/> |RSA/112  <br/> |No  <br/> |RSA/112  <br/> |AES/128  <br/> |
 |TLS 1.0, 1.1, 1.2  <br/> |TLS_RSA_WITH_AES_256_CBC_SHA  <br/> |RSA/112  <br/> |No  <br/> |RSA/112  <br/> |AES/256  <br/> |
 |TLS 1.0, 1.1, 1.2  <br/> |TLS_RSA_WITH_AES_128_CBC_SHA  <br/> |RSA/112  <br/> |No  <br/> |RSA/112  <br/> |AES/128  <br/> |
-|TLS 1.0, 1.1, 1.2  <br/> |TLS_RSA_WITH_3DES_EDE_CBC_SHA  <br/> |RSA/112  <br/> |No  <br/> |RSA/112  <br/> |3DES/192  <br/> |
    
 ## <a name="related-topics"></a>Temas relacionados
-<a name="TLSCipherSuites"> </a>
+[Conjuntos de cifrado TLS en Windows 10 v1607](https://docs.microsoft.com/windows/desktop/SecAuthN/tls-cipher-suites-in-windows-10-v1607)
 
 [Cifrado en Office 365](encryption.md)
   

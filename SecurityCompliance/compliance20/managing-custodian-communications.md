@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: b27d6cca0382b18123cae4106f77ce0dcdf5e525
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 962bd13f66ec8fe4f3385656f1241dd5fb5c4dcf
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29608409"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29695046"
 ---
-# <a name="working-with-communications-in-advanced-ediscovery-preview"></a>Trabajar con las comunicaciones de exhibición de documentos electrónicos avanzada (vista previa)
+# <a name="work-with-communications-in-advanced-ediscovery-preview"></a>Trabajar con las comunicaciones de exhibición de documentos electrónicos avanzada (vista previa)
 
 Exhibición de documentos electrónicos avanzada (vista previa) permite que los departamentos legales a simplificar sus procesos alrededor de seguimiento y distribución de notificaciones de retención legal. La característica de comunicaciones de custodia permite que los departamentos legales administrar y automatizar sus procesos de retención legal toda--de notificaciones, avisos y escalaciones--todo en un solo lugar.
 

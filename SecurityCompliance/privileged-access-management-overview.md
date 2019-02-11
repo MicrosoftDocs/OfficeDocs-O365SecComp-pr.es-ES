@@ -13,19 +13,21 @@ ms.collection: Strat_O365_IP
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: Utilice este tema para obtener más información sobre con privilegios de acceso a la administración de Office 365
-ms.openlocfilehash: f3cd5fb263fe3bb83d60a7938f0e22dc38f199e3
-ms.sourcegitcommit: b0b0b716718c22779c7c04775b8010d65cd6656b
+ms.openlocfilehash: 85141ae885132095692683b766d5550cc538e2e8
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28723237"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29652265"
 ---
 # <a name="privileged-access-management-in-office-365"></a>Con privilegios de acceso a la administración de Office 365
 
 > [!IMPORTANT]
 > En este tema se trata instrucciones de implementación y configuración para características sólo actualmente disponibles en Office 365 E5 y avanzada SKU de cumplimiento.
 
-Con privilegios de acceso permite la administración de control de acceso granular a través de las tareas de administración con privilegios en Office 365. Puede ayudar a proteger la organización de las infracciones que pueden usar cuentas con privilegios de administración existentes con acceso permanente a los datos confidenciales o acceso a la configuración de configuración crítica. Después de habilitar la administración con privilegios de acceso, los usuarios deberán solicitar acceso just-in-time para completar las tareas con privilegios elevados y con privilegios a través de un flujo de trabajo de aprobación que es altamente con ámbito y límite de tiempo. Esto proporciona a los usuarios just-suficientemente-acceso para realizar la tarea en curso, sin riesgo de exposición de datos confidenciales u opciones de configuración críticos. Habilitación de la administración de acceso con privilegios en Office 365 habilitará la organización operar con cero privilegios permanente y proporcionar un nivel de defensa contra las vulnerabilidades de seguridad que surjan debido a tales acceso administrativo permanente. 
+Con privilegios de acceso permite la administración de control de acceso granular a través de las tareas de administración con privilegios en Office 365. Puede ayudar a proteger la organización de las infracciones que pueden usar cuentas con privilegios de administración existentes con acceso permanente a los datos confidenciales o acceso a la configuración de configuración crítica. Después de habilitar la administración con privilegios de acceso, los usuarios deberán solicitar acceso just-in-time para completar las tareas con privilegios elevados y con privilegios a través de un flujo de trabajo de aprobación que es altamente con ámbito y límite de tiempo. Esto proporciona a los usuarios just-suficientemente-acceso para realizar la tarea en curso, sin riesgo de exposición de datos confidenciales u opciones de configuración críticos. Habilitación de la administración de acceso con privilegios en Office 365 habilitará la organización operar con cero privilegios permanente y proporcionar un nivel de defensa contra las vulnerabilidades de seguridad que surjan debido a tales acceso administrativo permanente.
+
+Para obtener una introducción rápida a de la caja de seguridad integrada de atención al cliente y el flujo de trabajo de access con privilegios administración end-to-end, vea esta [caja de seguridad del cliente y la administración de acceso con privilegios en vídeo de Office 365](https://go.microsoft.com/fwlink/?linkid=2066800).
 
 ## <a name="layers-of-protection"></a>Capas de protección
 

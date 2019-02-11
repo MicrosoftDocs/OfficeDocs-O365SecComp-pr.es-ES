@@ -3,6 +3,7 @@ title: Ayuda y procedimientos de Ayuda de seguridad de la aplicación en la nube
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
+ms.date: 12/03/2018
 ms.audience: ITPro
 ms.topic: hub-page
 ms.service: o365-administration
@@ -12,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: ade98409-a15e-4de3-8c06-8e748f5b7e96
 description: Buscar contenido de ayuda para la administración de seguridad avanzada en Office 365, ahora conocida como seguridad de la aplicación de nube de Office 365.
-ms.openlocfilehash: d38b12afe50ac56b3047b24d68c9c00d3bcbf602
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 45f45812251d17a7a58d8c5f6cbd23d27407daf1
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706274"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "27131840"
 ---
 # <a name="office-365-cloud-app-security-help-and-how-to"></a>Ayuda y procedimientos de Ayuda de seguridad de la aplicación en la nube de office 365
   
@@ -35,7 +36,7 @@ Con la seguridad de la aplicación de nube de Office 365, los administradores gl
 |Configurar las directivas y las alertas para la organización  <br/> |[Directivas de actividad y alertas en Office 365 Cloud App Security](activity-policies-and-alerts.md) <br/> [Directivas de detección de anomalías de seguridad de la aplicación de nube de Office 365](anomaly-detection-policies-in-ocas.md) (actualizado recientemente)  <br/> [Integración de SIEM con seguridad de la aplicación de nube de Office 365](integrate-your-siem-server-with-office-365-cas.md) <br/> [Información de referencia de directiva de seguridad para la seguridad de la aplicación de nube de Office 365](security-policy-reference-information-for-ocas.md) <br/> |
 |Ajustar la configuración de seguridad de la aplicación de nube de Office 365  <br/> |[Agrupar las direcciones IP para simplificar la administración en Office 365 Cloud App Security](group-your-ip-addresses-in-ocas.md) <br/> [Actividades de uso después de implementar Office 365 Cloud App Security](utilization-activities-for-ocas.md) <br/> |
 |Investigar las actividades y tomar medidas  <br/> |[Revisar y realizar acciones en las alertas de seguridad de la aplicación de nube de Office 365](review-office-365-cas-alerts.md) <br/> [Investigar la actividad en Office 365 Cloud App Security](investigate-an-activity-in-office-365-cas.md) <br/> [Suspender o restaurar una cuenta de usuario en Office 365 Cloud App Security](suspend-or-restore-an-account-in-ocas.md) <br/> |
-|Administración de aplicaciones de terceros en Office 365  <br/> |[Administrar permisos de aplicación con Office 365 Cloud App Security](manage-app-permissions-in-ocas.md) <br/> |
+|Administración de aplicaciones de terceros en Office 365  <br/> |[Administrar aplicaciones de OAuth con Office 365 Cloud App Security](manage-app-permissions-in-ocas.md) <br/> |
 |Crear y ver los informes de detección de aplicaciones  <br/> |[Orígenes de datos y registros de tráfico Web para Office 365 Cloud App Security](web-traffic-logs-and-data-sources-for-ocas.md) <br/> [Crear informes de detección de aplicaciones en la seguridad de la aplicación de nube de Office 365](create-app-discovery-reports-in-ocas.md) <br/> [Conclusiones de detección de aplicación de revisión de seguridad de la aplicación de nube de Office 365](review-app-discovery-findings-in-ocas.md) (actualizado recientemente)  <br/> |
 |Mantenerse informado sobre lo que es una novedad de seguridad de la aplicación de nube de Office 365  <br/> |[Novedades de Office 365 Cloud App Security](new-in-office-365-cas.md) <br/> |
    

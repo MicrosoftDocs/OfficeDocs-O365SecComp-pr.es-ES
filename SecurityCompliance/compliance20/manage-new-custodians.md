@@ -1,5 +1,5 @@
 ---
-title: Administración de custodia en un caso de exhibición de documentos electrónicos avanzada (vista previa)
+title: Administrar a custodia en un caso de exhibición de documentos electrónicos avanzada (vista previa)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 742f6bc35b67071fba528e6a0ce543ecc6915762
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: cce823924502fa2617d7819dc0967733fbc072e0
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29608401"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29706101"
 ---
-# <a name="managing-custodians-in-an-advanced-ediscovery-preview-case"></a>Administración de custodia en un caso de exhibición de documentos electrónicos avanzada (vista previa)
+# <a name="manage-custodians-in-an-advanced-ediscovery-preview-case"></a>Administrar a custodia en un caso de exhibición de documentos electrónicos avanzada (vista previa)
 
 La ficha de custodia contiene una lista se puede ordenar de todos los la custodia en el caso. Después de agregar a un caso de custodia, automáticamente se recopilarán obtener información detallada sobre cada custodia de Azure Active Directory.
 
@@ -70,7 +70,7 @@ Para actualizar una custodia y los orígenes de datos seleccionados:
   
 4. Actualizar las selecciones de ubicaciones de Exchange y OneDrive haciendo clic en **Elegir orígenes de datos**.
   
-5. Agregar o quitar Exchange, SharePoint o los equipos de los buzones de correo asignan al usuario haciendo clic para **Seleccionar los orígenes de datos adicionales**. Para obtener más información acerca de cómo asignar datos orígenes custodia, vea [Agregar custodia a una exhibición de documentos electrónicos avanzada (vista previa) caso](add-custodians-to-case.md).
+5. Agregar o quitar Exchange, SharePoint o los equipos de los buzones de correo asignan al usuario haciendo clic para **Seleccionar los orígenes de datos adicionales**. Para obtener más información acerca de cómo asignar datos orígenes custodia, vea [custodia de agregar para un caso](add-custodians-to-case.md).
   
 6. Para actualizar el estado de suspensión de custodia, haga clic en **realizar custodia suspensiones**y habilitar o deshabilitar la suspensión de custodia.
 
@@ -95,7 +95,7 @@ Para desencadenar un proceso de volver a indización a dirección parcialmente e
 
 5. También puede realizar un seguimiento del estado para el proceso de indización volver a en la ficha **trabajos** .
 
-Para obtener más información acerca de los elementos indizados parcialmente volver a indización y solucionar, vea [fijación de procesamiento de errores en la exhibición de documentos electrónicos avanzada (vista previa)](processing-data-for-case.md).
+Para obtener más información acerca de los elementos indizados parcialmente volver a indización y solucionar, consulte [corregir errores de procesamiento](processing-data-for-case.md).
 
 ## <a name="releasing-a-custodian-from-a-case"></a>Liberación de custodia de un caso
 
@@ -118,6 +118,5 @@ Para liberar a una custodia:
 
 ## <a name="related-information"></a>Información relacionada
 
- - Atributos de usuario en Active Directory 
- - [Corrección de error al procesar los datos](error-remediation.md) 
- - [Trabajar con las comunicaciones](managing-custodian-communications.md)
+ - [Corrección de errores al procesar los datos](error-remediation.md) 
+- [Trabajar con las comunicaciones](managing-custodian-communications.md)

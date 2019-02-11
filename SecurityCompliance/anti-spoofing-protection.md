@@ -12,18 +12,18 @@ search.appverid:
 - MET150
 ms.assetid: d24bb387-c65d-486e-93e7-06a4f1a436c0
 description: Este artículo describe cómo Office 365 mitiga frente a ataques de suplantación de identidad que usa falsificado dominios de remitente, es decir, los dominios que están suplantados. Para ello, mediante el análisis de los mensajes y bloqueo de las que pueden ser autenticados neithe mediante el uso de métodos de autenticación de correo electrónico estándar, ni otras técnicas de reputación del remitente. Este cambio se que se implementa para reducir el número de ataques de suplantación de identidad se exponen las organizaciones en Office 365 a.
-ms.openlocfilehash: 19e7ea957592a486a559dac222a51139bf79b574
-ms.sourcegitcommit: 03e64ead7805f3dfa9149252be8606efe50375df
+ms.openlocfilehash: 4ce195feae002e468d1b6ed61c6b186af7f8950d
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27769864"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29614514"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Protección contra suplantación de identidad en Office 365
 
 Este artículo describe cómo Office 365 mitiga frente a ataques de suplantación de identidad que usa falsificado dominios de remitente, es decir, los dominios que están suplantados. Para ello, analizar los mensajes y el bloqueo de los que no se puede autenticar mediante los métodos de autenticación de correo electrónico estándar, ni otras técnicas de reputación del remitente. Este cambio se que se implementa para reducir el número de ataques de suplantación de identidad se exponen a los clientes a.
   
-En este artículo también se describe por qué se está realizando este cambio, cómo pueden preparar los clientes para que este cambio, cómo ver los mensajes que se verán afectados, cómo informar sobre los mensajes, cómo mitigar falsos positivos, así como cómo deben preparar los remitentes a Microsoft para esto cambiar.
+En este artículo también se describe por qué se está realizando este cambio, cómo pueden preparar los clientes para que este cambio, cómo ver los mensajes que se verán afectados, cómo informar sobre los mensajes, cómo mitigar falsos positivos, así como cómo deben preparar los remitentes a Microsoft para esto cambio.
   
 La tecnología de Microsoft contra la suplantación inicialmente se implementó en sus organizaciones que tenían una suscripción a Office 365 Enterprise E5 o habían comprado el complemento de protección de amenaza avanzada de Office 365 (ATP) para su suscripción. A partir de octubre de 2018, hemos ampliado la protección para las organizaciones que tienen así como Exchange Online Protection (EOP). Además, debido a la forma en que todos nuestros filtros de información sobre cada uno de los otros, Outlook.com a los usuarios pueden verse afectados.
   
@@ -99,7 +99,7 @@ Authentication-Results:
 |||
 |:-----|:-----|
 |**Reason**|**Descripción**|
-|0XX|Mensaje de error de autenticación compuesta.<br/>**000** significa que el mensaje no pudo DMARC con una acción de rechazar o cuarentena.                    -001 significa que el mensaje de error en la autenticación implícita de correo electrónico. Esto significa que el dominio del remitente no tenía registros de la autenticación de correo electrónico publicados o, si es así, que tenían una directiva de errores más débil (fail suave SPF o neutral, directiva de DMARC de p = none).<br/>**002** significa que la organización tiene una directiva para el par de remitente o dominio que está prohibido explícitamente de envío de correo electrónico falso, esta configuración se establece manualmente por un administrador.  <br/>**010** significa que el mensaje no pudo DMARC con una acción de rechazar o cuarentena, y el dominio del remitente es uno de los dominios aceptados de su organización (Esto es parte de self-to-self o dentro de la organización, suplantación de identidad).  <br/>**011** significa que el mensaje de error en la autenticación implícita de correo electrónico y el dominio del remitente es uno de los dominios aceptados de su organización (Esto es parte de self-to-self o dentro de la organización, suplantación de identidad).|
+|0XX|Mensaje de error de autenticación compuesta.<br/>**000** significa que el mensaje no pudo DMARC con una acción de rechazar o cuarentena.  <br/>**001** significa que el mensaje de error en la autenticación implícita de correo electrónico. Esto significa que el dominio del remitente no tenía registros de la autenticación de correo electrónico publicados o, si es así, que tenían una directiva de errores más débil (fail suave SPF o neutral, directiva de DMARC de p = none).<br/>**002** significa que la organización tiene una directiva para el par de remitente o dominio que está prohibido explícitamente de envío de correo electrónico falso, esta configuración se establece manualmente por un administrador.  <br/>**010** significa que el mensaje no pudo DMARC con una acción de rechazar o cuarentena, y el dominio del remitente es uno de los dominios aceptados de su organización (Esto es parte de self-to-self o dentro de la organización, suplantación de identidad).  <br/>**011** significa que el mensaje de error en la autenticación implícita de correo electrónico y el dominio del remitente es uno de los dominios aceptados de su organización (Esto es parte de self-to-self o dentro de la organización, suplantación de identidad).|
 |Todos los otros códigos (1xx, 2xx, 3xx, 4xx, 5xx)|Corresponde a diversos códigos internos de por qué un mensaje pasa a la autenticación implícita o no tenía autenticación pero no se aplicó ninguna acción.|
    
 Mirando los encabezados de un mensaje, un administrador o incluso un usuario final puede determinar cómo Office 365 llega a la conclusión que el remitente puede ser suplantado.
@@ -419,9 +419,9 @@ En general, la directiva aplicada a un mensaje se identifica en el encabezado X-
 |3  <br/> |Correo no deseado de alta confianza  <br/> |HSPM  <br/> |[Directiva de filtro de contenido hospedado](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Todas las organizaciones  <br/> |
 |4  <br/> |Suplantación de identidad  <br/> |SUPLANTACIÓN DE LA  <br/> |[Directiva contra suplantación de identidad](https://go.microsoft.com/fwlink/?linkid=864553), [inteligencia de suplantación](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf) <br/> |Todas las organizaciones  <br/> |
 |5  <br/> |Correo no deseado  <br/> |SPM  <br/> |[Directiva de filtro de contenido hospedado](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Todas las organizaciones  <br/> |
-|6  <br/> |Masiva  <br/> |MASIVA  <br/> |[Directiva de filtro de contenido hospedado](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Todas las organizaciones  <br/> |
-|7  <br/> |Suplantación de dominio  <br/> |DIMP  <br/> |[Directiva contra suplantación de identidad](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |Solo para organizaciones con ATP  <br/> |
-|8  <br/> |Suplantación de usuario  <br/> |UIMP  <br/> |[Directiva contra suplantación de identidad](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |Solo para organizaciones con ATP <br/> |
+|6   <br/> |Masiva  <br/> |MASIVA  <br/> |[Directiva de filtro de contenido hospedado](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Todas las organizaciones  <br/> |
+|7   <br/> |Suplantación de dominio  <br/> |DIMP  <br/> |[Directiva contra suplantación de identidad](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |Solo para organizaciones con ATP  <br/> |
+|8   <br/> |Suplantación de usuario  <br/> |UIMP  <br/> |[Directiva contra suplantación de identidad](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |Solo para organizaciones con ATP <br/> |
    
 Si dispone de varias directivas de Anti-phishing diferentes, se aplicará el uno en la prioridad más alta. Por ejemplo, suponga que tiene dos directivas:
   

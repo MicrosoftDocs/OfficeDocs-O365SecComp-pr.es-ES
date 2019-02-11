@@ -12,14 +12,17 @@ search.appverid:
 - MOE150
 ms.assetid: fc4e6ebb-5acc-4bc5-bad8-4f3407d1d3f4
 description: Obtenga una visión general de las páginas de la advertencia que es posible que vea cuando la protección de amenaza avanzada de Office 365 está en el trabajo.
-ms.openlocfilehash: ac7fdcd17ad449afd9107ce67ecc89a107eb152b
-ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
+ms.openlocfilehash: 422bdabf0593dd154461f973f86a4c1ca94e8651
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "26238272"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29686359"
 ---
 # <a name="office-365-atp-safe-links-warning-pages"></a>Páginas de advertencia de vínculos seguros ATP de Office 365
+
+> [!IMPORTANT]
+> En este artículo está destinada a los clientes empresariales. Si es un usuario particular para obtener más información acerca de los vínculos seguros en Outlook, vea [seguridad de Outlook.com avanzadas](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 [Office 365 protección avanzada](office-365-atp.md) (ATP) ayuda a proteger su organización de intentos de suplantación de identidad y malware a través de características, como [Vínculos seguros ATP](atp-safe-links.md), [Los datos adjuntos seguros de ATP](atp-safe-attachments.md)y [protección contra suplantación de identidad](anti-phishing-protection.md). Cuando la protección está en su lugar, se comprueban los vínculos (direcciones URL) en mensajes de correo electrónico y documentos de Office. Si se identifica una dirección URL como sospechosos o malintencionado, podrían estar bloqueadas de apertura de la dirección URL cuando haga clic en él. En lugar de ir directamente al sitio, es posible que vea una página de advertencia en su lugar. 
   

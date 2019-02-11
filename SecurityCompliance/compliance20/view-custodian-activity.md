@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 8219ae8a061f6d08dd37da5b7f2974dd86c68f04
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 34e3fe207cf440c5992cdba7186e919a3968db22
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29608344"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29706151"
 ---
-# <a name="viewing-custodian-audit-activity"></a>Visualización de la actividad de auditoría de custodia
+# <a name="view-custodian-audit-activity"></a>Ver la actividad de auditoría de custodia
 
 ¿Necesita encontrar si un usuario ve un documento específico o purga un elemento desde su buzón? Exhibición de documentos electrónicos avanzada (vista previa) ahora se integra con la herramienta de búsqueda de registro de auditoría existente en el centro de cumplimiento de seguridad &. Mediante esta experiencia incrustada, puede usar la herramienta de administración de custodia de exhibición de documentos electrónicos avanzada (vista previa) para facilitar la investigación por acceso fácilmente y busca la actividad custodia dentro de su caso.
 
@@ -101,8 +101,4 @@ Puede exportar los resultados de una búsqueda de registro de auditoría a un ar
 
 3. Después de seleccionar una opción de exportación, se muestra un mensaje en la parte inferior de la ventana que le pregunta si desea abrir el archivo CSV, guárdelo en la carpeta de descargas o guárdelo en una carpeta específica
 
-[!NOTE] 
- Para obtener más información acerca de la visualización, filtrado o exportar los resultados de búsqueda de registro de auditoría, consulte:
-   - Ver la lista de actividades auditadas 
-   - Antes de comenzar: Los registros de auditoría unificadas
- 
+Para obtener más información sobre cómo ver, filtrar o exportar los resultados de la búsqueda de registro de auditoría, consulte [el registro de auditoría en el centro de cumplimiento de seguridad de Office 365 & de búsqueda](../search-the-audit-log-in-security-and-compliance.md).

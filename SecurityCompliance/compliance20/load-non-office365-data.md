@@ -1,5 +1,5 @@
 ---
-title: Cargar datos que no sean Office 365 en un conjunto de trabajo
+title: Cargar datos que no son de Office 365 a un conjunto de trabajo
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 427b4c8c9dfffe351827a6869ae26a5356d646d8
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 1dad52075303450673e7f48b87e2952e35629a5e
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29608372"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29706091"
 ---
-# <a name="load-non-office-365-data-into-a-working-set"></a>Cargar datos que no sean Office 365 en un conjunto de trabajo
+# <a name="load-non-office-365-data-into-a-working-set"></a>Cargar datos que no son de Office 365 a un conjunto de trabajo
 
 No todos los documentos que necesita analizar con Office 365 avanzada eDiscovery residirá en Office 365. Con el contenido que no son Office 365 importar característica de exhibición de documentos electrónicos avanzada que puede cargar documentos que no live en Office 365 en un conjunto de trabajo, por lo que se analiza con avanzadas exhibición de documentos electrónicos. Este procedimiento muestra cómo incorporar los documentos que no sean Office 365 en la exhibición de documentos electrónicos avanzada para el análisis.
 
@@ -30,14 +30,21 @@ No todos los documentos que necesita analizar con Office 365 avanzada eDiscovery
 
 ## <a name="before-you-begin"></a>Antes de empezar
 Uso de la característica de carga no Office 365 tal como se describe en este procedimiento requiere que tenga:
-* Un equipo con Office 365 E3 con complemento de cumplimiento avanzadas o suscripción E5
-* Todos los Custodios cuyo contenido que no sean Office 365 se cargará deben tener E3 con complemento de cumplimiento avanzadas o licencias E5
-* Un caso de exhibición de documentos electrónicos existentes
-* Todos los archivos para cargar se recopilan en carpetas donde hay una carpeta por custodia y es el nombre de las carpetas en este formato *alias@domainname* . El *alias@domainname* debe ser dominio y alias de los usuarios de Office 365. Puede recopilar todas las carpetas de *alias@domainname* en una carpeta raíz. La carpeta raíz sólo puede contener las carpetas *alias@domainname* , no debe haber ningún archivos separados en la carpeta raíz
-* Una cuenta que es un administrador de exhibición de documentos electrónicos o exhibición de documentos electrónicos Administrador Microsoft Azure almacenamiento herramientas instalado en un equipo que tenga acceso a la estructura de la carpeta de contenido que no sean Office 365.
-* Instalar AzCopy, puede hacerlo desde aquí:https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy
+
+- Un Office 365 E3 con complemento de cumplimiento avanzadas o suscripción E5.
+
+- Todos los Custodios cuyo contenido que no sean Office 365 se cargará deben tener E3 con complemento de cumplimiento avanzadas o licencias E5.
+
+- Un caso de exhibición de documentos electrónicos existentes.
+
+- Todos los archivos para cargar se recopilan en carpetas donde hay una carpeta por custodia y es el nombre de las carpetas en este formato *alias@domainname* . El *alias@domainname* debe ser dominio y alias de los usuarios de Office 365. Puede recopilar todas las carpetas de *alias@domainname* en una carpeta raíz. La carpeta raíz sólo puede contener las carpetas *alias@domainname* , no debe haber ningún archivos separados en la carpeta raíz.
+
+- Una cuenta que es un administrador de exhibición de documentos electrónicos o exhibición de documentos electrónicos Administrador Microsoft Azure almacenamiento herramientas instalado en un equipo que tenga acceso a la estructura de la carpeta de contenido que no sean Office 365.
+
+- Instalar AzCopy, que se puede realizar desde aquí:https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy
 
 ## <a name="upload-non-office-365-content-into-advanced-ediscovery"></a>Cargar contenido que no sean Office 365 en la exhibición de documentos electrónicos avanzada
+
 1. Como una exhibición de documentos electrónicos Manager o la exhibición de documentos electrónicos administrador, abra la exhibición de documentos electrónicos avanzada, a continuación, en el caso de que los datos que no sean Office 365 se cargará en.  Haga clic en la ficha **conjuntos de trabajo** y, a continuación, seleccione el conjunto de trabajo que desea cargar los datos que no son de Office 365 para.  Si aún no ha creado un conjunto de trabajo, puede hacerlo ahora.  Por último, haga clic en **establece el funcionamiento de administrar** **cargas de vista** en la sección de datos que no son de Office 365
 
 2. Haga clic en el botón **cargar archivos** para iniciar el Asistente para importación de datos que no son de Office 365.

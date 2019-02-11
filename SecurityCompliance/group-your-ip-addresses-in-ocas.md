@@ -3,7 +3,7 @@ title: Agrupar las direcciones IP para simplificar la administración en Office 
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 2/22/2018
+ms.date: 01/28/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: b5e1471c-1ad6-4bc5-9e75-ce791aee283c
 description: Para identificar fácilmente los conjuntos de direcciones IP que usará en la seguridad de la aplicación de nube de Office 365, como las direcciones IP de oficina física, puede configurar grupos de intervalos de direcciones IP.
-ms.openlocfilehash: 76cb9625a46d1f5eceaab696de5dcbb72f4d2b47
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 42a62d2dd9771fb7d3ac992f4e0f8b5f6826efe3
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22535617"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29603741"
 ---
 # <a name="group-your-ip-addresses-to-simplify-management-in-office-365-cloud-app-security"></a>Agrupar las direcciones IP para simplificar la administración en Office 365 Cloud App Security
   
@@ -35,21 +35,13 @@ Cada grupo de intervalos de IP se puede etiquetar con nombres de etiqueta que el
   
 ## <a name="to-set-up-an-ip-address-range-in-office-365-cloud-app-security"></a>Para configurar un intervalo de direcciones IP en la seguridad de la aplicación de nube de Office 365
 
-1. Como administrador global o administrador de seguridad, vaya a [https://protection.office.com](https://protection.office.com) e iniciar sesión con su cuenta de trabajo o escuela. (Esto le llevará a la seguridad &amp; centro de cumplimiento.) 
+1. Como administrador global o administrador de seguridad, vaya al portal de seguridad de la aplicación en la nube ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)) e iniciar sesión.
     
-2. En la seguridad &amp; centro de cumplimiento, elija **alertas** \> **avanzada de administrar las alertas**.
-    
-3. Elija **Ir a la seguridad de la aplicación de Office 365 en la nube**.
-    
-    ![En la seguridad &amp; centro de cumplimiento, elija Administrar alertas avanzadas para ir a la seguridad de la aplicación de nube de Office 365](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)
+2. En la esquina superior derecha de la página, haga clic en **configuración de** \> **intervalos de direcciones IP**.<br>![En seguridad de la aplicación de nube de Office 365, elija Configuración para tener acceso a la configuración del sistema y de datos](media/f6c48ee3-39b4-4b5a-8252-b6493b7bcd3d.png)<br>
   
-4. En la esquina superior derecha de la página, haga clic en **configuración de** \> **intervalos de direcciones IP**.
+3. Haga clic en el botón nuevo, que se parece a un signo más ( **+**).
     
-    ![En seguridad de la aplicación de nube de Office 365, elija Configuración para tener acceso a la configuración del sistema y de datos](media/f6c48ee3-39b4-4b5a-8252-b6493b7bcd3d.png)
-  
-5. Haga clic en el botón nuevo, que se parece a un signo más ( **+**).
-    
-6. En la ventana de **intervalo de direcciones IP de nuevo** , especifique los valores siguientes: 
+4. En la ventana de **intervalo de direcciones IP de nuevo** , especifique los valores siguientes: 
     
 |**Campo o lista**|**Qué hacer**|
 |:-----|:-----|

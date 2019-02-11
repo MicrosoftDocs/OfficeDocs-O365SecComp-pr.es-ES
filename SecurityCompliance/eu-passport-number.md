@@ -10,12 +10,12 @@ ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 8c00df57-9fb3-459c-ba87-40480c87bd55
 description: En este tema se muestra lo que busca una directiva de (DLP) de prevención de pérdida de datos cuando detecte el tipo de información confidencial de la UE Passport número. Este tipo de información confidencial define diferentes patrones, palabras clave y otras pruebas para cada país.
-ms.openlocfilehash: 71acc39b885c057e1771ec13b2f3c25017ac1bb6
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 7a7fc1ff826aab4096c46535686eb0fd68173c6f
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22536280"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "25840329"
 ---
 # <a name="eu-passport-number"></a>Número de cuenta de Passport de la UE
 
@@ -59,7 +59,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 | |
 |**Keywords_austria_eu_passport_number**|
@@ -98,7 +98,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 | |
 |**Keywords_belgium_eu_passport_number**|
@@ -137,7 +137,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 | |
 |**Keywords_bulgaria_eu_passport_number**|
@@ -176,7 +176,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 | |
 |**Keywords_croatia_eu_passport_number**|
@@ -215,7 +215,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 | |
 |**Keywords_cyprus_eu_passport_number**|
@@ -254,7 +254,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 | |
 |**Keywords_czech_republic_eu_passport_number**|
@@ -293,7 +293,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 | |
 |**Keywords_denmark_eu_passport_number**|
@@ -332,7 +332,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 | |
 |**Keywords_estonia_eu_passport_number**|
@@ -383,7 +383,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 | |
 |**Keywords_greece_eu_passport_number**|
@@ -422,7 +422,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 | |
 |**Keywords_hungary_eu_passport_number**|
@@ -465,7 +465,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 | |
 |**Keywords_ireland_eu_passport_number**|
@@ -508,7 +508,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 | |
 |**Keywords_italy_eu_passport_number**|
@@ -551,7 +551,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 | |
 |**Keywords_latvia_eu_passport_number**|
@@ -590,7 +590,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 | |
 |**Keywords_lithuania_eu_passport_number**|
@@ -629,7 +629,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 | |
 |**Keywords_nation_eu_passport_number**|
@@ -668,7 +668,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 | |
 |**Keywords_malta_eu_passport_number**|
@@ -707,7 +707,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 | |
 |**Keywords_netherlands_eu_passport_number**|
@@ -754,12 +754,12 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 | |
 |**Keywords_portugal_eu_passport_number**|
 |:-----|
-|número de cuenta de Passport  <br/> número de cuenta de passport portugués  <br/> cuenta de Passport no  <br/> número passaporte  <br/> |
+|número de cuenta de Passport  <br/> número de pasaporte portugués  <br/> cuenta de Passport no  <br/> número passaporte  <br/> |
    
 ## <a name="romania"></a>Rumania
 
@@ -793,7 +793,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 | |
 |**Keywords_romania_eu_passport_number**|
@@ -832,7 +832,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 | |
 |**Keywords_slovakia_eu_passport_number**|
@@ -877,7 +877,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 | |
 |**Keywords_slovenia_eu_passport_number**|
@@ -922,7 +922,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 | |
 |**Keywords_spain_eu_passport_number**|
@@ -937,7 +937,7 @@ Para obtener información detallada, vea la sección "Número de pasaporte Sueci
 
 Para obtener información detallada, vea la sección "Número de pasaporte de Estados Unidos / Reino Unido" en [Buscar qué los tipos de información confidencial](what-the-sensitive-information-types-look-for.md).
   
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Recursos adicionales
 
 [Qué buscan los tipos de información confidencial](what-the-sensitive-information-types-look-for.md)
 

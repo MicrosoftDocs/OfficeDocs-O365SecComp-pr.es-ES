@@ -14,18 +14,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: a6284204fd709bcf936688f36f38f6b3283b1f98
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 68a8b7586700a9bffe78f2b3a4ff419a1f85ba8a
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29608335"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29695146"
 ---
-# <a name="analyzing-data-in-a-working-set-in-advanced-ediscovery-preview"></a>Analizar datos en un conjunto de trabajo en la exhibición de documentos electrónicos avanzada (vista previa)
+# <a name="analyze-data-in-a-working-set-in-advanced-ediscovery-preview"></a>Analizar datos en un conjunto de trabajo en la exhibición de documentos electrónicos avanzada (vista previa)
 
 Cuando el número de documentos recopilados es grande, puede ser muy difícil revisar todas ellas. Exhibición de documentos electrónicos avanzada (vista previa) proporciona una serie de herramientas para analizar los documentos para reducir el volumen de documentos que se debe revisar sin ninguna pérdida de información y para ayudarle a organizar los documentos de forma coherente. Para obtener más información acerca de estas funciones, vea:
 
-- [Cerca de detección de duplicados](near-duplicates.md)
+- [Detección de semiduplicados](near-duplicates.md)
 - [Subprocesos de correo electrónico](email-threading.md)
 - [Temas](themes.md)
 

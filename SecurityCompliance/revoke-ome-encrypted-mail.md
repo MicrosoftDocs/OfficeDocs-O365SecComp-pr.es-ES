@@ -3,7 +3,6 @@ title: Revocar el correo electrónico cifrado por el cifrado de mensajes de Offi
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 1/29/2019
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -11,12 +10,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Como administrador de Office 365, puede revocar determinados mensajes de correo electrónico cifrados con cifrado de mensajes de Office 365.
-ms.openlocfilehash: a3f5c08d2c8660e56c378fc5fa7a850ff2c12eb5
-ms.sourcegitcommit: 03b9221d9885bcde1cdb5df2c2dc5d835802d299
+ms.openlocfilehash: 018f12105e19382372a8a4b3a91248bb60b228be
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29614394"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29696244"
 ---
 # <a name="office-365-message-encryption-email-revocation"></a>Revocación de correo electrónico de cifrado de mensajes de Office 365
 
@@ -59,22 +58,41 @@ Hay varias maneras de averiguar el identificador de mensaje de correo electróni
 2. Elija la tabla de **Detalles de la vista** e identificar el mensaje que se va a revocar.
 3. Haga doble clic en el mensaje para ver los detalles que incluyen el identificador de mensaje.
 
-### <a name="step-2-revoke-the-mail"></a>Paso 2. Revocar el correo  
+### <a name="step-2-verify-that-the-mail-is-revocable"></a>Paso 2. Compruebe que el correo es revocable
 
-Una vez que sepa el identificador de mensaje de correo electrónico que desea revocar, puede revocar el correo electrónico mediante el cmdlet Set-OMEMessageRevocation.
+Para comprobar si está o no puede revocar un mensaje de correo electrónico en concreto, siga estos pasos.
 
-1. [Conectarse a Exchange Online mediante PowerShell remoto](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
+1. Uso de una cuenta de trabajo o escuela que tiene permisos de administrador global de la organización de Office 365, iniciar una sesión de Windows PowerShell y conectarse a Exchange Online. Para obtener instrucciones, vea [Connect to Exchange Online PowerShell](https://aka.ms/exopowershell).
+
+2. Ejecute el cmdlet Set-OMEMessageStatus como sigue:
+     ```powershell
+     Get-OMEMessageStatus -MessageId "<messagieid>" | ft -a  Subject, IsRevocable
+     ```
+
+   Este parámetro devuelve al asunto del mensaje y si el mensaje es revocable. Por ejemplo,
+
+     ```text
+     Subject IsRevocable
+     ------- -----------
+     “Test message”  True
+     ```
+
+### <a name="step-3-revoke-the-mail"></a>Paso 3. Revocar el correo  
+
+Una vez que conozca el identificador de mensaje de correo electrónico que desea revocar y haya comprobado que el mensaje es revocable, puede revocar el correo electrónico mediante el cmdlet Set-OMEMessageRevocation.
+
+1. [Conexión a PowerShell de Exchange Online](https://aka.ms/exopowershell).
 
 2. Ejecute el cmdlet Set-OMEMessageRevocation como sigue:
 
     ```powershell
     Set-OMEMessageRevocation -Revoke $true -MessageId "<messageId>"
-    ```  
+    ```
 
 3. Para comprobar si se ha revocado el correo electrónico, ejecute el cmdlet Get-OMEMessageStatus como sigue:
 
     ```powershell
-    Get-OMEMessageStatus -MessageId "<messageId>" | fl Revoked
+    Get-OMEMessageStatus -MessageId "<messageId>" | ft -a  Subject, Revoked
     ```  
     Si revocación se realizó correctamente, el cmdlet devuelve el resultado siguiente:  
 

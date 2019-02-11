@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: aac65513-e75e-4c82-a668-9a6604dd9f9d
 description: Revisión de informes de detección de aplicaciones en administración avanzada de seguridad le ayudarán a obtener más información acerca de cómo las personas de su organización utilizan aplicaciones de nube. Después de crear informes de detección de aplicación con archivos de registro de los firewalls y servidores proxy, revise los resultados en el panel de la detección de la aplicación.
-ms.openlocfilehash: ddf3826f5aac9d3c837cf66f1b97b4650df70f32
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: 6195c9aae7ae5e398ac555cc820de04dee05d4fd
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706264"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29603751"
 ---
 # <a name="review-app-discovery-findings-in-office-365-cloud-app-security"></a>Revisar los resultados de la detección de aplicaciones en Office 365 Cloud App Security
   
@@ -27,19 +27,15 @@ ms.locfileid: "26706264"
    
 El panel de detección de la nube funciona con registros de tráfico web de la organización para proporcionar información detallada sobre el uso de la aplicación en la nube. Si usted es un administrador global, Administrador de seguridad o lector de seguridad y su organización tiene [creado informes de detección de aplicaciones en la seguridad de la aplicación de nube de Office 365](create-app-discovery-reports-in-ocas.md), puede usar el panel de detección en la nube para comprender mejor cómo de personas en su organización está usando Office 365 y otras aplicaciones en la nube. (El panel de detección de la nube también conocido como está detección de aplicaciones de productividad).
   
- **A partir de marzo 2018, el panel de detección de la nube tiene nuevas características** que hacen que sea más fácil ver información detallada acerca de cómo las personas de su organización están usando Office 365 y otras aplicaciones. 
+ El panel de detección de la nube permite ver información detallada sobre cómo las personas de su organización están usando Office 365 y otras aplicaciones. 
   
 ![Se ha actualizado el panel detección de nube](media/12712681-c0b3-4cb3-b7fd-2cf2ad4e825f.png)
      
 ## <a name="go-to-the-cloud-discovery-dashboard"></a>Vaya al panel de detección de la nube
 
-1. Vaya a [https://protection.office.com](https://protection.office.com) e iniciar sesión con su cuenta de trabajo o escuela para Office 365. (Esto le llevará a la seguridad &amp; centro de cumplimiento.) 
+1. Vaya al portal de seguridad de la aplicación en la nube ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)) e iniciar sesión.
     
-2. En la seguridad &amp; centro de cumplimiento, elija **alertas** \> **avanzada de administrar las alertas**.<br/>(Si no está habilitado aún seguridad de la aplicación de nube de Office 365, y debe ser un administrador global, [activar la seguridad de la aplicación de nube de Office 365](turn-on-office-365-cas.md).)
-    
-3. Elija **Ir a la seguridad de la aplicación de Office 365 en la nube**.
-    
-4. Vaya a **descubrir** \> **panel de detección de la nube**.
+2. Vaya a **descubrir** \> **panel de detección de la nube**.
     
 ## <a name="see-your-top-users-ip-addresses-apps-and-risk-levels"></a>Vea sus usuarios principales, direcciones IP, aplicaciones y niveles de riesgo
 

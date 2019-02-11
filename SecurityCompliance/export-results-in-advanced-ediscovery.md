@@ -13,17 +13,17 @@ search.appverid:
 - MET150
 ms.assetid: a9951a07-10b3-48cb-b37a-0ffaa24931ad
 description: 'Obtenga información sobre cómo definir las opciones de exportación de resultados desde Office 365 avanzada exhibición de documentos electrónicos, incluido el procedimiento para especificar los parámetros de una sección de exportación. '
-ms.openlocfilehash: 92ee107ad096393fbccbc9a3dbe81d8e7dd28da9
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 49dab9820735af3bf5c322fc531c78a6baab2f8e
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22536788"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29559053"
 ---
 # <a name="export-results-in-office-365-advanced-ediscovery"></a>Exportar resultados en eDiscovery avanzado de Office 365
 
 > [!NOTE]
-> Exhibición de documentos electrónicos avanzada requiere un E3 de Office 365 con el complemento de cumplimiento avanzadas o una suscripción E5 para su organización. Si no tiene ese plan y desea probar avanzada exhibición de documentos electrónicos, puede [registrarse y obtener una versión de prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 En este tema se describe las opciones de configuración de exportación de exhibición de documentos electrónicos avanzada.
   
@@ -62,118 +62,116 @@ La herramienta de exportación de exhibición de documentos se usa para exportar
   
 1. En la exhibición de documentos electrónicos avanzada, seleccione un caso y haga clic en **Exportar** \> **el programa de instalación**.
     
-  - En la lista **Exportar por lotes** , seleccione el nombre del lote o exportar los resultados a la sección de exportación 01, (el lote de forma predeterminada). 
+    - En la lista **Exportar por lotes** , seleccione el nombre del lote o exportar los resultados a la sección de exportación 01, (el lote de forma predeterminada). 
     
-  - Para exportar los resultados de los archivos nuevos que ha agregado a un caso existente, continúe con el lote actual. Para crear una sesión en el lote, seleccione el mismo número de lote y haga clic en **crear exportación sesión** puede usar esta opción para exportar los mismos parámetros como el lote anterior, de manera incremental. 
+    - Para exportar los resultados de los archivos nuevos que ha agregado a un caso existente, continúe con el lote actual. Para crear una sesión en el lote, seleccione el mismo número de lote y haga clic en **crear exportación sesión** puede usar esta opción para exportar los mismos parámetros como el lote anterior, de manera incremental. 
     
-  - Para exportar a un nuevo lote, haga clic en **Agregar**![agregar icono](media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png)y especifique un nuevo nombre en **nombre de lote** (o acepte el valor predeterminado) y una descripción en la **Descripción de lote**. Haga clic en **Aceptar**.
+    - Para exportar a un nuevo lote, haga clic en **Agregar** ![agregar icono](media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png)y especifique un nuevo nombre en **nombre de lote** (o acepte el valor predeterminado) y una descripción en la **Descripción de lote**. Haga clic en **Aceptar**.
     
-  - Para editar un nombre de proceso por lotes o una descripción, seleccione el nombre de **exportación por lotes**, haga clic en **Editar** ![icono Editar](media/3d613660-7602-4df2-bdb9-14e9ca2f9cf2.png)y, a continuación, modifique los campos.
+    - Para editar un nombre de proceso por lotes o una descripción, seleccione el nombre de **exportación por lotes**, haga clic en **Editar** ![icono Editar](media/3d613660-7602-4df2-bdb9-14e9ca2f9cf2.png)y, a continuación, modifique los campos.
     
-    > [!NOTE]
-    > Una vez ejecutado el sesiones de una sección de exportación, no se puede eliminar. Además, se pueden editar sólo algunos parámetros una vez que se ejecuta la primera sesión. 
+      > [!NOTE]
+      > Una vez ejecutado el sesiones de una sección de exportación, no se puede eliminar. Además, se pueden editar sólo algunos parámetros una vez que se ejecuta la primera sesión. 
   
-  - Para crear un lote de exportación duplicados, elija **por lotes de exportación de duplicado**![crear un icono de proceso por lotes de exportación duplicados](media/3f6d5f59-e842-4946-a493-473528af0119.jpg) y escriba un nombre y una descripción para el lote de duplicados en el panel. 
+    - Para crear un lote de exportación duplicados, elija **por lotes de exportación de duplicado** ![crear un icono de proceso por lotes de exportación duplicados](media/3f6d5f59-e842-4946-a493-473528af0119.jpg) y escriba un nombre y una descripción para el lote de duplicados en el panel. 
     
-  - Para eliminar una sección de exportación, elija **Eliminar**![eliminar un icono de exportación de lote](media/92a9f8e0-d469-48da-addb-69365e7ffb6f.jpg).
+    - Para eliminar una sección de exportación, elija **Eliminar** ![eliminar un icono de exportación de lote](media/92a9f8e0-d469-48da-addb-69365e7ffb6f.jpg).
     
-  - Para ver el historial de un lote, elija **Historial por lotes**![icono de vista de historial](media/a80cc320-d96c-4d91-8884-75fe2cb147e2.jpg).
+    - Para ver el historial de un lote, elija **Historial por lotes** ![icono de vista de historial](media/a80cc320-d96c-4d91-8884-75fe2cb147e2.jpg).
     
 2. En la **población**, seleccione **incluir sólo los archivos por encima de la puntuación de relevancia corte** o **por lotes de exportación de refinar** si desea ajustar la configuración de la sección de exportación. 
     
 3. Si selecciona **incluir sólo archivos por encima de la puntuación de relevancia corte**, está habilitado el **problema** . Si la puntuación de relevancia del archivo es mayor que la puntuación de límite para el problema seleccionado, el archivo se exportará a menos que se excluye el filtro 'para revisión'. 
   
-Si selecciona **por lotes de exportación de refinar**, la **desduplicación** y filtro 'Para revisión' se habilitan los botones de opción de campo. Si elige **la desduplicación**, a continuación, los archivos duplicados se filtrarán según la directiva definida [Case nivel (valor predeterminado): en cada conjunto de archivos duplicados en el caso todo, será desaprovisionamiento duped todos menos un archivo. Nivel de custodia: de cada conjunto de archivos duplicados de la misma custodia, será desaprovisionamiento duped todos menos un archivo.] El resultado de exportación contiene un registro de todos los archivos duplicados. Si elige **filtrar por 'para revisión'** campo, seleccione **modificar en metadatos** para escribir la configuración de campo **'para revisión'** . Seleccione **incluir los archivos de entrada** para incluir los archivos de origen en el contenido del paquete. Puede desactivar esta opción para acelerar el proceso de exportación. Tenga en cuenta que se exportará los archivos nativos en cualquier caso. 
+    Si selecciona **por lotes de exportación de refinar**, la **desduplicación** y filtro 'Para revisión' se habilitan los botones de opción de campo. Si elige **la desduplicación**, a continuación, los archivos duplicados se filtrarán según la directiva definida [Case nivel (valor predeterminado): en cada conjunto de archivos duplicados en el caso todo, será desaprovisionamiento duped todos menos un archivo. Nivel de custodia: de cada conjunto de archivos duplicados de la misma custodia, será desaprovisionamiento duped todos menos un archivo.] El resultado de exportación contiene un registro de todos los archivos duplicados. Si elige **filtrar por 'para revisión'** campo, seleccione **modificar en metadatos** para escribir la configuración de campo **'para revisión'** . Seleccione **incluir los archivos de entrada** para incluir los archivos de origen en el contenido del paquete. Puede desactivar esta opción para acelerar el proceso de exportación. Tenga en cuenta que se exportará los archivos nativos en cualquier caso. 
     
 4. En **metadatos**, seleccione una de las siguientes opciones en la lista **plantilla de exportación** (una vez por sesión). 
     
-  - **Estándar**: conjunto básico de propiedades, metadatos y elementos de datos. Use esta opción cuando importar datos ya se procesan en la exhibición de documentos electrónicos avanzada y exportar datos se carguen a un sistema que ya contiene los archivos. De forma predeterminada, se crean las columnas de plantilla de exportación y se rellena.
+    - **Estándar**: conjunto básico de propiedades, metadatos y elementos de datos. Use esta opción cuando importar datos ya se procesan en la exhibición de documentos electrónicos avanzada y exportar datos se carguen a un sistema que ya contiene los archivos. De forma predeterminada, se crean las columnas de plantilla de exportación y se rellena.
     
-  - **Todos los**: conjunto completo de metadatos estándar, incluidos todos los datos de procesamiento, así como las puntuaciones de análisis y la relevancia. Esta plantilla se requiere cuando exhibición de documentos electrónicos avanzada realiza el procesamiento y datos de archivo se carguen a un sistema externo por primera vez.
+    - **Todos los**: conjunto completo de metadatos estándar, incluidos todos los datos de procesamiento, así como las puntuaciones de análisis y la relevancia. Esta plantilla se requiere cuando exhibición de documentos electrónicos avanzada realiza el procesamiento y datos de archivo se carguen a un sistema externo por primera vez.
     
-  - **Problemas**: seleccione **Todos los problemas** o seleccione un problema determinado que haya creado. 
+    - **Problemas**: seleccione **Todos los problemas** o seleccione un problema determinado que haya creado. 
     
 5. En el área **destino**:
     
-  - **Descargar en el equipo local**
+    - **Descargar en el equipo local**
     
-  - **Exportar a definidas por el usuario Azure blob**: si se activa esta característica, puede especificar un token de dirección URL y SAS de contenedor.
+    - **Exportar a definidas por el usuario Azure blob**: si se activa esta característica, puede especificar un token de dirección URL y SAS de contenedor.
     
-    > [!NOTE]
-    > Una vez que se almacena un paquete de exportación para el usuario definido Azure blob, los datos ya no se administran mediante avanzada exhibición de documentos electrónicos; se administra mediante el blob de Azure. Esto significa que si se elimina el caso, los archivos exportados seguirá estando en el blob de Azure. 
+      > [!NOTE]
+      > Una vez que se almacena un paquete de exportación para el usuario definido Azure blob, los datos ya no se administran mediante avanzada exhibición de documentos electrónicos; se administra mediante el blob de Azure. Esto significa que si se elimina el caso, los archivos exportados seguirá estando en el blob de Azure. 
   
-  - **Guardar SAS símbolo (token) de sesión de exportación futuras**: si está activado, el token de SAS se cifrarán en la base de datos interna de la exhibición de documentos avanzadas para un uso futuro.
+    - **Guardar SAS símbolo (token) de sesión de exportación futuras**: si está activado, el token de SAS se cifrarán en la base de datos interna de la exhibición de documentos avanzadas para un uso futuro.
     
-    > [!NOTE]
-    > Actualmente, el token de SAS expira después de un mes. Si se intenta descargar después de más de un mes que tenga que deshacer la última sesión, a continuación, exportar de nuevo. 
+      > [!NOTE]
+      > Actualmente, el token de SAS expira después de un mes. Si se intenta descargar después de más de un mes que tenga que deshacer la última sesión, a continuación, exportar de nuevo. 
   
-6. Haga clic en **Modificar** para establecer el "para su revisión ' configuración de campo. 
+6. Haga clic en **Modificar** para establecer la configuración de campo 'para revisión'. 
     
-> ![Configurar para la configuración de campo de revisión de un lote de exportación](media/39451aba-f6fe-4a01-8ed0-0be6a6ce889a.png)
+    ![Configurar para revisar la configuración de campo para una sección de exportación](media/39451aba-f6fe-4a01-8ed0-0be6a6ce889a.png)
   
-    In **For review field settings** panel, in **Select scenario**, select the scenario and scope of the review. The settings are displayed based on your selection.
+   - En **para revisar la configuración de campo**, en la lista desplegable **Seleccione el escenario** , seleccione el escenario y el ámbito de la revisión. Se muestra la configuración en función de la selección.
     
-    **Review all** (default): All emails, attachments, and documents are selected by default. 
+      - **Revisar todos los** (valor predeterminado): se seleccionan todos los mensajes de correo electrónico, datos adjuntos y documentos de forma predeterminada. 
     
-    **Review all unique content in a set**: Inclusives and unique inclusive copies, unique attachments in email set level, representative from every set of exact duplicates.
+      - **Revise todo el contenido en un conjunto único**: Inclusives y copias únicas, ambos inclusivas, los únicos datos adjuntos de correo electrónico establecen nivel, representativo de cada conjunto de duplicados exactos.
     
-    **Review all unique content in a set - no inclusive copies**: Inclusives, unique attachments in email set level, representative from every set of exact duplicates.
+      - **Revisar todos los único contenido en un conjunto - ninguna copia inclusive**: Inclusives, únicos datos adjuntos de correo electrónico establecer nivel, representativo de cada conjunto de duplicados exactos.
     
-    **Review all unique content and related family files**: Inclusives, unique attachments in email set level, representative from every set of exact duplicates, expand to include family files.
+      - **Revisar todos los únicos contenidos relacionados familia archivos y**: Inclusives, los únicos datos adjuntos de correo electrónico establecer nivel, el representante de cada conjunto de duplicados exactos, se expande para incluir los archivos de la familia.
     
-    **Custom** (allows you to define the options in the dialog): The default is to keep current selections and enable all dialog options, to allow their selection. 
+      - **Personalizado** (le permite definir las opciones en el cuadro de diálogo): el valor predeterminado es mantener las selecciones actuales y habilitar todas las opciones del cuadro de diálogo permitir su selección. Si selecciona esta opción, a continuación, puede personalizar la configuración de mensajes de correo electrónico, documentos, datos adjuntos y varios.
     
-    If you select custom, you can then customize the settings for emails, documents, attachments and miscellaneous.
+    - En los **mensajes de correo electrónico**, seleccione los mensajes de correo electrónico que desea exportar.
     
-> En los **mensajes de correo electrónico** , seleccione los mensajes de correo electrónico que desee exportar: 
+      - **Todos los mensajes de correo electrónico**: (valor predeterminado) se seleccionan todos los mensajes de correo electrónico.
     
-    **All emails**: (default) All emails are selected.
+      - **Inclusives**: un correo electrónico inclusive es un último correo electrónico de un subproceso, y contiene todos los mensajes desde el subproceso.
     
-    **Inclusives**: An inclusive email is a last email of a thread, and it contains all the other emails from the thread.
+      - **Inclusives y copias únicas, ambos inclusivas**: copias Inclusive y inclusives con el mismo asunto, cuerpo y los datos adjuntos; copias de ambos inclusivas únicos son únicos copias de estos mensajes de correo electrónico.
     
-    **Inclusives and unique inclusive copies**: Inclusive copies and inclusives with the same subject, body and attachments; unique inclusive copies are unique copies of these emails .
+    - En los **documentos**, seleccione los documentos que desea exportar. 
     
-> En los **documentos** , seleccione los documentos que desea exportar: 
+      - **Todos los documentos**: (valor predeterminado) se seleccionan todos los documentos.
     
-    **All documents**: (default) All documents are selected.
+      - **Tablas dinámicas**: un archivo elegido como representativo de conjunto de cerca de duplicados, que se utiliza normalmente como la línea base al revisar el conjunto.
     
-    **Pivots**: A file chosen as representative of near-duplicates set, which is typically used as the baseline when reviewing the set.
+      - **Representativo de cada conjunto de duplicados exactos**: únicos archivos casi duplicados (incluida la tabla dinámica).
     
-    **Representative from every set of exact duplicates**: Unique near-duplicate files (including the pivot).
+    - En **los datos adjuntos**, seleccione los datos adjuntos que desea exportar. 
     
-> En **los datos adjuntos** , seleccione los datos adjuntos que desea exportar 
+      - **Todos los datos adjuntos**: (valor predeterminado) se seleccionan todos los datos adjuntos.
     
-    **All attachments**: (default) All attachments are selected.
+      - **Datos adjuntos único en el nivel de escenario**: archivos de datos adjuntos único en el caso de especificado.
     
-    **Unique attachment in case level**: Unique attachment files within the specified case.
+      - **Único datos adjuntos de correo electrónico establecer nivel**: archivos de datos adjuntos único en el caso de correo electrónico especificada.
     
-    **Unique attachment in email set level**: Unique attachment files within the specified email case.
+   - En**Micellaneous**, puede elegir para **tratar los datos adjuntos como documentos**, **tratar los correos electrónicos como documentos**o **Expandir para incluir los archivos de la familia**. Cuando elija **Expandir para incluir los archivos de la familia**, para cada archivo que se marca para su revisión, también se marcará todos los archivos de la misma familia.
     
-> En **Micellaneous** puede elegir para **tratar los datos adjuntos como documentos**, **tratar los correos electrónicos como documentos**o **Expandir para incluir los archivos de la familia**. Cuando elija **Expandir para incluir los archivos de la familia**, para cada archivo que se marca para su revisión, también se marcará todos los archivos de la misma familia.
+7. Elija **Guardar** para guardar la configuración. 
     
-    Choose **Save** to save the settings. 
-    
-7. Después de especificar los parámetros de exportación, para iniciar el proceso de exportación, haga clic en **Crear sesión de exportación**.
+8. Después de especificar los parámetros de exportación, para iniciar el proceso de exportación, haga clic en **Crear sesión de exportación**.
     
     Durante la exportación, el estado se muestra en el **estado de la tarea**. Los resultados se muestran en el **Resumen de exportación**.
     
-8. En la ventana **descarga de archivos** , haga clic en **Copiar al Portapapeles** para copiar la clave de exportación. 
+9. En la ventana **descarga de archivos** , haga clic en **Copiar al Portapapeles** para copiar la clave de exportación. 
     
     ![Descargar archivos](media/99cf2c13-4954-479f-9741-80d7458c1a15.png)
   
-9. Haga clic en **Cerrar**. 
+10. Haga clic en **Cerrar**. 
     
     Se inicia la herramienta de exportación de exhibición de documentos electrónicos.
     
     ![Herramienta de exportación de exhibición de documentos electrónicos](media/705756ca-ee97-4d24-b70f-8b23513f6d11.gif)
   
-10. En la **exhibición de documentos electrónicos herramienta para exportar**:
+11. En la **exhibición de documentos electrónicos herramienta para exportar**:
     
-1. En **Pegar que se usará para conectarse al origen de la firma de acceso compartidos**, pegue la clave de exportación que youcopied en el Portapapeles en el paso 7.
+    -  En **Pegar que se usará para conectarse al origen de la firma de acceso compartidos**, pegue la clave de exportación que youcopied en el Portapapeles en el paso 7.
     
-2. Haga clic en **Examinar** para seleccionar la ubicación de destino para almacenar los archivos de exportación descargado en el equipo local. 
+    - Haga clic en **Examinar** para seleccionar la ubicación de destino para almacenar los archivos de exportación descargado en el equipo local. 
     
-11. Haga clic en **Iniciar**. Los archivos de exportación se descargan en el equipo local. Si opta por **Exportar a blob Azure definidas por el usuario** en el paso 4, la sesión se exporta a un destino de dirección URL de almacenamiento de blobs de su elección. 
+    - Haga clic en **Iniciar**. Los archivos de exportación se descargan en el equipo local. Si opta por **Exportar a blob Azure definidas por el usuario** en el paso 4, la sesión se exporta a un destino de dirección URL de almacenamiento de blobs de su elección.
     
 Para obtener una descripción completa de los campos en el informe de exportación, consulte [los campos del informe de exportación](export-report-fields-in-advanced-ediscovery.md).
   
@@ -182,7 +180,7 @@ Para obtener una descripción completa de los campos en el informe de exportaci�
 
 En la siguiente tabla se enumera los archivos de resultados que se generan cuando se ejecuta una sección de exportación.
   
-|**Nombre de archivo**|**Tipo de archivo**|**Descripción**|
+|**Nombre del archivo**|**Tipo de archivo**|**Descripción**|
 |:-----|:-----|:-----|
 |Resumen de exportación  <br/> |CSV  <br/> |Un archivo de registro generado por la herramienta de exportación de exhibición de documentos electrónicos.  <br/> |
 |Seguimiento  <br/> |txt  <br/> |Un archivo de registro generado por la herramienta de exportación de exhibición de documentos electrónicos.  <br/> |
@@ -193,7 +191,6 @@ En la siguiente tabla se enumera los archivos de resultados que se generan cuand
 |Indicador de éxito  <br/> |txt  <br/> |Sólo se crean al exportar para un 3 º Azure blob. Si la exportación se realiza correctamente completamente, se creará el archivo. En caso de fallo, parcial o no se creará el archivo correcto. Se creará el archivo en la carpeta raíz, lo que permite el seguimiento automatizado en diferentes Estados de lotes o sesiones de exportación. Esto es un archivo vacío. Su nombre es: TenantId_CaseId_ExternalCaseId_CaseName_ExportBatchId_SessionId_DateTime.txt.  <br/> |
    
 ## <a name="see-also"></a>Vea también
-<a name="BK_ExportOutputFIles"> </a>
 
 [eDiscovery avanzado de Office 365](office-365-advanced-ediscovery.md)
   
@@ -201,7 +198,7 @@ En la siguiente tabla se enumera los archivos de resultados que se generan cuand
   
 [Configuración rápida de eDiscovery avanzado de Office 365](quick-setup-for-advanced-ediscovery.md)
 
-[Campos de exportación de informe](export-report-fields-in-advanced-ediscovery.md)
+[Exportar campos de informes](export-report-fields-in-advanced-ediscovery.md)
   
 [Aumentar la velocidad de descarga al exportar los resultados de búsqueda de exhibición de documentos electrónicos de Office 365](increase-download-speeds-when-exporting-ediscovery-results.md)
 

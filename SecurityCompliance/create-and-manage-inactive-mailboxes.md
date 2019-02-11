@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
 description: Puede crear un buzón inactivo en Office 365 aplicar una suspensión o la directiva de retención de Office 365 para el buzón de correo y, a continuación, eliminando la correspondiente cuenta de usuario de Office 365. Se conservan los elementos de un buzón inactivo para la duración de la directiva de retención o suspensión que se aplicó a ella antes de que se ha realizado como inactiva. Para eliminar permanentemente un buzón inactivo, simplemente quite la directiva de retención o suspensión.
-ms.openlocfilehash: ed0af9077222d9151dc41010bca10590769118b1
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: de67068ded30f63e46a8a94c1030d45a12b56a2e
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22535970"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29740842"
 ---
 # <a name="create-and-manage-inactive-mailboxes-in-office-365"></a>Crear y administrar buzones inactivos en Office 365
 
@@ -122,8 +122,6 @@ Después de un buzón de correo se realiza como inactiva, puede cambiar la durac
 ## <a name="recover-an-inactive-mailbox"></a>Recuperar un buzón inactivo
 
 Si un empleado anterior devuelve a su organización, o si se contrata a un nuevo empleado a cabo en las responsabilidades de cargo del empleado abandonada, puede recuperar el contenido del buzón de correo inactivo. Al recuperar un buzón inactivo, el buzón de correo se convierte en un nuevo buzón de correo, se conservan el contenido y la estructura de carpetas de buzón de correo inactivo y el buzón de correo está vinculada a una nueva cuenta de usuario. Una vez recuperado, ya no existe el buzón de correo inactivo. Para procedimientos paso a paso y obtener más información acerca de sucede al recuperar un buzón inactivo, vea [recuperar un buzón inactivo en Office 365](recover-an-inactive-mailbox.md).
-  
-[Administrar buzones inactivos](create-and-manage-inactive-mailboxes.md#manageinactivemailboxes)
   
 ## <a name="restore-the-contents-of-an-inactive-mailbox-to-another-mailbox"></a>Restaurar el contenido de un buzón inactivo en otro buzón de correo
 

@@ -1,5 +1,5 @@
 ---
-title: Con el módulo de la relevancia para analizar datos en la exhibición de documentos electrónicos avanzada (vista previa)
+title: Utilice el módulo de la relevancia para analizar los datos de exhibición de documentos electrónicos avanzada (vista previa)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 5e30a7f6919f50d2d73606fae3b53f21ef33e223
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 56e83a1f8a951fd6e14172122a5e86447c6f2ccf
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29608341"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29695176"
 ---
-# <a name="using-the-relevance-module-to-analyze-data-in-advanced-ediscovery-preview"></a>Con el módulo de la relevancia para analizar datos en la exhibición de documentos electrónicos avanzada (vista previa)
+# <a name="use-the-relevance-module-to-analyze-data-in-advanced-ediscovery-preview"></a>Utilice el módulo de la relevancia para analizar los datos de exhibición de documentos electrónicos avanzada (vista previa)
 
 En Avanzadas exhibición de documentos electrónicos (vista previa), el módulo de la relevancia incluye la formación de la relevancia y la revisión de los archivos relacionados con un caso. El flujo de trabajo de la relevancia se muestran y se describen a continuación:
   

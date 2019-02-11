@@ -3,7 +3,7 @@ title: Investigar la actividad en Office 365 Cloud App Security
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 2/26/2018
+ms.date: 1/28/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 15fa4545-28b4-4dd4-bf85-88e0926bd5fc
 description: 'Con la seguridad de la aplicación de nube de Office 365, puede ver lo que sucede en el entorno de Office 365, ¿está buscando a través de instructora actividades y cuentas. '
-ms.openlocfilehash: d988a86c5ceaa2ec46bc27f1aaff540fa3e0b3b4
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: e463323cf28738e1d54fcdb65ed0d15290c79994
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014902"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29603661"
 ---
 # <a name="investigate-an-activity-in-office-365-cloud-app-security"></a>Investigar la actividad en Office 365 Cloud App Security
   
@@ -30,13 +30,9 @@ Office 365 funciona la seguridad de la aplicación en la nube con el [registro d
   
 ## <a name="how-to-get-to-the-activity-log-page"></a>Cómo llegar a la página de registro de actividad
 
-1. Como administrador global o administrador de seguridad, vaya a [https://protection.office.com](https://protection.office.com) e iniciar sesión con su cuenta de trabajo o escuela. (Vea [permisos en la seguridad de Office 365 &amp; centro de cumplimiento](permissions-in-the-security-and-compliance-center.md).)
-    
-2. En la seguridad &amp; centro de cumplimiento, elija **alertas** \> **avanzada de administrar las alertas**.
-    
-3. Elija **Ir a la seguridad de la aplicación de Office 365 en la nube**.<br/>![En la seguridad &amp; centro de cumplimiento, elija Administrar alertas avanzadas para ir a la seguridad de la aplicación de nube de Office 365](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)
+1. Vaya al portal de seguridad de la aplicación en la nube ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)) e iniciar sesión.
   
-4. En la barra de navegación a través de la parte superior de la pantalla, elija **investigar** \> **registro de actividad**.<br/>![En el portal de O365 CAS, elija investigar.](media/8c7b87c9-71a6-4952-adb2-185e941ffe9a.png)
+2. En la barra de navegación a través de la parte superior de la pantalla, elija **investigar** \> **registro de actividad**.<br/>![En el portal de O365 CAS, elija investigar.](media/8c7b87c9-71a6-4952-adb2-185e941ffe9a.png)
   
 ## <a name="review-and-investigate-activities"></a>Revise e investigar las actividades
 

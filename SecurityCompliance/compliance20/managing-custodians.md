@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 5f29ef72ed885ab268292667e6e5fd2f53c4d15a
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 4dd2c44b40b5d458f9b200c249fe2f9bb16f83e0
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29608388"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29706021"
 ---
-# <a name="working-with-custodians-in-advanced-ediscovery-preview"></a>Trabajar con custodia de exhibición de documentos electrónicos avanzada (vista previa)
+# <a name="work-with-custodians-in-advanced-ediscovery-preview"></a>Trabajar con custodia de exhibición de documentos electrónicos avanzada (vista previa)
 
 A menudo, cuando una organización está respondiendo a una investigación legal, el flujo de trabajo alrededor de identificación, la conservación así como en recopilar contenido potencialmente relevante se basa en custodia de personas o datos dentro de su organización. En la exhibición de documentos electrónicos, estas personas se denominan a custodia de datos y se definen como "personas tener control administrativo de un documento o archivo electrónico". Por ejemplo, la custodia de datos de un correo electrónico podría ser el propietario del buzón que contiene el mensaje correspondiente.  
 
@@ -31,11 +31,11 @@ Dentro de un caso de exhibición de documentos electrónicos avanzada (vista pre
 
 Para obtener más información sobre cómo trabajar con custodia, vea los siguientes artículos: 
 
-- [Agregar a custodia a un caso](add-custodians-to-case.md)
+- [Agregar administradores a un caso](add-custodians-to-case.md)
 
-- [Administración de custodia en un caso](manage-new-custodians.md)
+- [Administrar a custodia en un caso](manage-new-custodians.md)
 
-- [Visualización de la actividad de custodia](view-custodian-activity.md)
+- [Ver la actividad administrativa](view-custodian-activity.md)
 
 ## <a name="roles-and-permissions"></a>Roles y permisos
 

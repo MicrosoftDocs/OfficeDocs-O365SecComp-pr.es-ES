@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: dd6d2417-49c4-4de6-9294-67fdabbf8532
 description: También puede integrar su servidor SIEM con seguridad de la aplicación de nube de Office 365. Lea este artículo para obtener información general sobre cómo funciona y cómo configurarla.
-ms.openlocfilehash: 3cdae0389065b18da090139528eceefb007363fa
-ms.sourcegitcommit: b0b0b716718c22779c7c04775b8010d65cd6656b
+ms.openlocfilehash: 8d231a16db1ef75993ffa484f3ac8717187fdef6
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "28723267"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29603771"
 ---
 # <a name="integrate-your-siem-server-with-office-365-cloud-app-security"></a>Integrar el servidor SIEM con Office 365 Cloud App Security
   
@@ -67,29 +67,24 @@ Seguridad de la aplicación de Office 365 en la nube actualmente es compatible c
  
 ## <a name="step-1-set-it-up-a-siem-agent-in-office-365-cloud-app-security"></a>Paso 1: Lo configurar un agente de SIEM en seguridad de la aplicación de nube de Office 365
 
-1. Vaya a [https://protection.office.com](https://protection.office.com) e iniciar sesión con su cuenta de trabajo o escuela para Office 365. (Esto le llevará a la seguridad &amp; centro de cumplimiento.) 
-    
-2. Vaya a **las alertas de** \> **avanzada de administrar las alertas**.
-    
-3. Elija **Ir a la seguridad de la aplicación de Office 365 en la nube**.<br/>
-    ![En la seguridad &amp; centro de cumplimiento, elija Administrar alertas avanzadas para ir a la seguridad de la aplicación de nube de Office 365](media/958632d4-03e3-4ade-8e22-d5509db6fca7.png)
+1. Vaya al portal de seguridad de la aplicación en la nube ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)) e iniciar sesión.
   
-4. Haga clic en **configuración de** \> de **extensiones de seguridad**y, a continuación, elija los agentes SIEM.<br/>
+2. Haga clic en **configuración de** \> de **extensiones de seguridad**y, a continuación, elija los agentes SIEM.<br/>
 ![Elija Configuración > extensiones de seguridad](media/Settings-SecurityExtensions.png)
 
-5. Elija **Agregar SIEM agente**.<br/>![Elija a agente SIEM agregar.](media/SIEMAgents.png)
+3. Elija **Agregar SIEM agente**.<br/>![Elija a agente SIEM agregar.](media/SIEMAgents.png)
     
-6. Elija **iniciar el Asistente**.<br/>![Obtener ayuda o iniciar el Asistente para](media/HelpOrWizard.png) 
+4. Elija **iniciar el Asistente**.<br/>![Obtener ayuda o iniciar el Asistente para](media/HelpOrWizard.png) 
     
-7. En el paso **General** , especifique un nombre y **Seleccione el formato SIEM** y establecer cualquier **Configuración avanzada** que son relevantes para ese formato. A continuación, elija **siguiente**.<br/>![Especifique un nombre y tipo](media/ChooseAgentTypeAndName.png)
+5. En el paso **General** , especifique un nombre y **Seleccione el formato SIEM** y establecer cualquier **Configuración avanzada** que son relevantes para ese formato. A continuación, elija **siguiente**.<br/>![Especifique un nombre y tipo](media/ChooseAgentTypeAndName.png)
     
-8. En el paso **Remoto de registro del sistema** , especifique la dirección IP o el nombre de host del **host remoto de registro del sistema** y el **número de puerto del registro del sistema**. Seleccione TCP o UDP como protocolo remoto registro del sistema. (Puede trabajar con el Administrador de seguridad o administrador de red para obtener estos detalles si no dispone de ellos). A continuación, elija **siguiente**.<br/>![Especificar detalles del registro del sistema remoto remoto](media/ArcSightS1Syslog.png)
+6. En el paso **Remoto de registro del sistema** , especifique la dirección IP o el nombre de host del **host remoto de registro del sistema** y el **número de puerto del registro del sistema**. Seleccione TCP o UDP como protocolo remoto registro del sistema. (Puede trabajar con el Administrador de seguridad o administrador de red para obtener estos detalles si no dispone de ellos). A continuación, elija **siguiente**.<br/>![Especificar detalles del registro del sistema remoto remoto](media/ArcSightS1Syslog.png)
   
-9. En el paso de **Tipos de datos** , siga uno de los siguientes procedimientos y, a continuación, haga clic en **siguiente**:
+7. En el paso de **Tipos de datos** , siga uno de los siguientes procedimientos y, a continuación, haga clic en **siguiente**:
     - Conserve la configuración predeterminada de **Todas las alertas**<br/>O BIEN
     - Haga clic en **todas las alertas**y, a continuación, elija **filtros específicos**. Definir filtros para seleccionar los tipos de alertas que desea enviar a su servidor SIEM.<br/>![Paso de tipos de datos del Asistente](media/ArcSightS1ExportOptions.png)
   
-10. En la pantalla Enhorabuena, copie el token y guardar para usarlo más adelante.<br/>![Pantalla de agente creado SIEM](media/SIEMAgentFinished.png) 
+8. En la pantalla Enhorabuena, copie el token y guardar para usarlo más adelante.<br/>![Pantalla de agente creado SIEM](media/SIEMAgentFinished.png) 
 
 > [!IMPORTANT]
 > En este punto, ha configurado un agente de SIEM en seguridad de la aplicación de Office 365 en la nube, pero aún no se han finalizado la integración del servidor de SIEM. Continúe con el paso siguiente para continuar la integración del servidor de SIEM.
@@ -177,7 +172,7 @@ Una vez que se ha configurado el servidor SIEM y se la integrado con la segurida
 
 Si se pierde su token, puede volver a generar uno. 
 
-1. En el portal de seguridad de la aplicación de nube de Office 365, elija **configuración** > **extensiones de seguridad**.
+1. En el portal de seguridad de la aplicación de nube de Office 365 ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)), elija **configuración** > **extensiones de seguridad**.
 
 2. En la tabla, busque la fila para el agente de SIEM. 
 
@@ -185,7 +180,7 @@ Si se pierde su token, puede volver a generar uno.
   
 ### <a name="edit-a-siem-agent"></a>Editar a un agente de SIEM
 
-1. En el portal de seguridad de la aplicación de nube de Office 365, elija **configuración** > **extensiones de seguridad**.
+1. En el portal de seguridad de la aplicación de nube de Office 365 ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)), elija **configuración** > **extensiones de seguridad**.
 
 2. Busque la fila para el agente de SIEM. 
 
@@ -193,7 +188,7 @@ Si se pierde su token, puede volver a generar uno.
   
 ### <a name="delete-a-siem-agent"></a>Eliminar a un agente de SIEM
 
-1. En el portal de seguridad de la aplicación de nube de Office 365, elija **configuración** > **extensiones de seguridad**.
+1. En el portal de seguridad de la aplicación de nube de Office 365 ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)), elija **configuración** > **extensiones de seguridad**.
 
 2. Busque la fila para el agente de SIEM. 
 

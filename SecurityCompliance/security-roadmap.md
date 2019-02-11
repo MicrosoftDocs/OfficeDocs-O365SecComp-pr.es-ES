@@ -16,10 +16,10 @@ search.appverid:
 ms.assetid: 28c86a1c-e4dd-4aad-a2a6-c768a21cb352
 description: 'Recomendaciones superiores de la ciberseguridad del equipo de Microsoft para la implementación de las funciones de seguridad para proteger el entorno de Office 365. '
 ms.openlocfilehash: 58767ea9a2b825d1583d9135f9d8edcb0d20d7c2
-ms.sourcegitcommit: 4a7d7717f0da05cf5a3c506df2989a9d02f33dfa
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2018
+ms.lasthandoff: 02/11/2019
 ms.locfileid: "25450085"
 ---
 # <a name="office-365-security-roadmap---top-priorities-for-the-first-30-days-90-days-and-beyond"></a>Guía de seguridad de Office 365 - principales prioridades para los primeros 30 días, 90 días y más allá
@@ -44,8 +44,8 @@ Estas recomendaciones de la guía básica se almacenan provisionalmente a travé
 |||
 |:-----|:-----|
 | |Resultados
-|30 días|Configuración rápida:  <br/> • Administración básica protecciones  <br/> Análisis y el registro de •  <br/> • Protecciones de identidad básica  <br/> Configuración de inquilino  <br/>  Preparación de las partes interesadas  <br/> |
-|90 días|Protecciones de avanzada:  <br/> Cuentas de administración •  <br/>  • Datos &amp; las cuentas de usuario  <br/>  Visibilidad de las necesidades de cumplimiento de normas, amenaza y usuario  <br/>  Adaptar e implementar protecciones y directivas predeterminadas  <br/> |
+|30 días|Configuración rápida:  <br/> • Administración básica protecciones  <br/> Análisis y el registro de •  <br/> • Protecciones de identidad básica  <br/> Configuración de inquilino  <br/>  Preparación de las partes interesadas  <br/> |
+|90 días|Protecciones de avanzada:  <br/> Cuentas de administración •  <br/>  • Datos &amp; las cuentas de usuario  <br/>  Visibilidad de las necesidades de cumplimiento de normas, amenaza y usuario  <br/>  Adaptar e implementar protecciones y directivas predeterminadas  <br/> |
 |Más allá de|Ajustar y refinar los controles y directivas de clave  <br/> Extender protecciones de dependencias de local  <br/> Integrar con los procesos empresariales y de seguridad (con fines legales, amenaza de ataque, etcetera).  <br/> |
   
 
@@ -57,7 +57,7 @@ Estas tareas pueden realizarse rápidamente y tienen un impacto menor para los u
   
 |||
 |:-----|:-----|
-|Área  <br/> |Tareas  <br/> |
+|Área  <br/> |Tasks  <br/> |
 |Administración de seguridad  <br/> |• Compruebe la puntuación de seguro y tome nota de la puntuación actual ( [https://securescore.office.com](https://securescore.office.com)).  <br/>  • Activar el registro de auditoría para Office 365. Vea [Buscar en el registro de auditoría de la seguridad de Office 365 &amp; centro de cumplimiento](search-the-audit-log-in-security-and-compliance.md).<br/> • [Configure el inquilino de Office 365 para aumentar la seguridad](tenant-wide-setup-for-increased-security.md) .  <br/>  • Revise con regularidad paneles e informes en el centro de cumplimiento y seguridad de Office 365 y seguridad de la aplicación en la nube.  <br/> |
 |Protección contra amenazas  <br/> |[Conectarse a Office 365 para seguridad de la aplicación de Microsoft en la nube](https://docs.microsoft.com/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security) para iniciar la supervisión de uso de las directivas de detección de amenaza predeterminadas para comportamientos anómalos. Se tarda siete días para crear una línea de base para la detección de anomalías.<br><br/>  Implementar la protección de cuentas de administrador:  <br/> • Uso dedicado administración de cuentas para la actividad de administración de.  <br/>  • Aplicar la autenticación multifactor (MFA) para las cuentas de administrador.  <br/>  • Utilice un [dispositivo de Windows 10 de alta seguridad](https://docs.microsoft.com/windows-hardware/design/device-experiences/oem-highly-secure) para la actividad de administración de.  <br/> |
 |Administración de identidad y acceso  <br/> |• [Activar la protección de identidad de Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection-enable).  <br/> • Para entornos de identidades federadas, reforzar la seguridad de cuenta (longitud de la contraseña, vigencia, complejidad, etcetera).  <br/> |

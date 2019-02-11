@@ -1,5 +1,5 @@
 ---
-title: La recopilación de datos para un caso de exhibición de documentos electrónicos avanzada (vista previa)
+title: Recopilar datos para un caso de exhibición de documentos electrónicos avanzada (vista previa)
 ms.author: esclee
 author: markjjo
 manager: laurawi
@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 6964cc00d7ae78078aa0729bd5408abd5ed9542a
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 11e2c336512c91d65bd046c3022d5375ebecde4a
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29608378"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29695056"
 ---
-# <a name="collecting-data-for-a-case-in-advanced-ediscovery-preview"></a>La recopilación de datos para un caso de exhibición de documentos electrónicos avanzada (vista previa)
+# <a name="collect-data-for-a-case-in-advanced-ediscovery-preview"></a>Recopilar datos para un caso de exhibición de documentos electrónicos avanzada (vista previa)
 
 Una vez que haya identificado custodia y orígenes de datos que son de interés para su caso, es el momento para identificar el conjunto de documentos a profundizar en. Puede usar la herramienta de búsqueda de exhibición de documentos electrónicos avanzada (vista previa) para identificar estos desde ubicaciones que no sean de custodia y apoyo en Office 365.
 

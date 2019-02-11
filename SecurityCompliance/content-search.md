@@ -3,7 +3,7 @@ title: Búsqueda de contenido en Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/28/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: Usar la búsqueda de contenido en la seguridad de Office 365 &amp; centro de cumplimiento para buscar contenido en los buzones de correo, sitios de SharePoint Online, OneDrive cuentas, Microsoft Teams, grupos de Office 365 y Skype para conversaciones de negocios. Puede usar las consultas de búsqueda de palabra clave y las condiciones para restringir los resultados de búsqueda de búsqueda. A continuación, puede obtener una vista previa y exportar los resultados de búsqueda. Búsqueda de contenido también es una herramienta eficaz para buscar contenido que puede estar relacionado con una solicitud de asunto GDPR datos.
-ms.openlocfilehash: 11e96c6a11dd66c0095b7c624413e9e39036d8d6
-ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
+ms.openlocfilehash: befd2060e65cea73d3c8432b77727e27dd91b82a
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "23782087"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29686121"
 ---
 # <a name="content-search-in-office-365"></a>Búsqueda de contenido en Office 365
 
@@ -74,6 +74,8 @@ Para tener acceso a la página de **búsqueda de contenido** para ejecutar búsq
     Como alternativa, puede hacer clic en la casilla de verificación **Mostrar la lista de palabras clave** y el tipo de una palabra clave en cada fila. Si lo hace, las palabras clave en cada fila están conectadas mediante un operador lógico ( **c:s**) que es una funcionalidad similar para el operador **OR** en la consulta de búsqueda que se crea. 
     
     ¿Por qué usar la lista de palabras clave? Puede obtener estadísticas que muestran cuántos elementos coinciden con cada palabra clave. Esto puede ayudarle a identificar rápidamente las palabras clave son los más (y menos) eficaces. También puede usar una frase de palabras clave (entre paréntesis) en una fila. Para obtener más información acerca de las estadísticas de búsqueda, vea [Ver las estadísticas de palabra clave para los resultados de la búsqueda de contenido](view-keyword-statistics-for-content-search.md).
+
+    [!NOTE] Para ayudar a reducir los problemas de listas de palabras clave de gran tamaño, ahora está limitado a un máximo de 20 filas de la lista de palabras clave.
     
 - **Condiciones** - puede agregar condiciones de búsqueda para restringir una búsqueda y devolver un conjunto de resultados más refinado. Cada condición agrega una cláusula a la consulta de búsqueda que se crean y ejecutan cuando se inicia la búsqueda. Una condición lógicamente está conectada a la consulta de palabras clave (especificada en el cuadro de palabra clave) por un operador lógico ( **c: c**) que es una funcionalidad similar para el operador **y** . Esto significa que los elementos tengan que satisfacer la consulta de palabras clave y una o varias condiciones que se deben incluir en los resultados. Se trata de cómo ayudar a condiciones para limitar los resultados. Para obtener una lista y descripción de las condiciones que puede utilizar en una consulta de búsqueda, vea la sección "Las condiciones de búsqueda" en [las consultas de palabra clave y las condiciones de búsqueda para la búsqueda de contenido](keyword-queries-and-search-conditions.md#search-conditions).
     
@@ -189,7 +191,7 @@ Consulte las siguientes secciones para obtener más información acerca de las b
     
 - Microsoft recopila información de rendimiento para las búsquedas de contenido ejecutar por todas las organizaciones de Office 365. Mientras la complejidad de la consulta de búsqueda puede afectar a los tiempos de búsqueda, busca en el factor más importante que afecta a cuánto tomar las búsquedas es el número de buzones de correo. Aunque Microsoft no proporciona un contrato de nivel de servicio para los tiempos de búsqueda, en la siguiente tabla se enumera los tiempos de búsqueda promedio para una búsqueda de contenido en función del número de buzones que se incluyen en la búsqueda.
     
-|**Número de buzones de correo**|**Tiempo medio de búsqueda**|
+|**Número de buzones**|**Tiempo medio de búsqueda**|
 |:-----|:-----|
 |100  <br/> |30 segundos  <br/> |
 |1,000  <br/> |45 segundos  <br/> |
@@ -210,7 +212,7 @@ Mantener en cuenta lo siguiente cuando se usa la lista de palabras clave para cr
     
     ![La manera incorrecta dar formato a una lista de palabras clave (pegar la lista en el cuadro de palabra clave)](media/fb54e3df-232a-439a-b3d7-27a60ec76a4c.png)
   
-    **Correcto**
+    **Corregir**
     
     ![La forma correcta para dar formato a una lista de palabras clave (mediante la selección de casilla de verificación y, a continuación, Pegar lista)](media/5d511a7b-c1f9-499c-bffe-e075bfc9adec.png)
   
@@ -268,7 +270,7 @@ Tenga en cuenta lo siguiente al buscar contenido en Microsoft Teams y grupos de 
 - Como alternativa, las conversaciones que forman parte de la lista de Chat en Microsoft Teams se almacenan en el buzón de Exchange Online de los usuarios que participan en la conversación. Y los archivos que un usuario comparte en las conversaciones de Chat se almacenan en la OneDrive para la cuenta de la empresa del usuario que comparte el archivo. Por lo tanto, se debe agregar los buzones de usuario individual y OneDrive para las cuentas de negocio como ubicaciones de contenido para buscar las conversaciones y archivos en la lista de Chat.
     
     > [!NOTE]
-    > Los usuarios que participan en las conversaciones que forman parte de la lista de Chat en Microsoft Teams deben tener un buzón de Exchange Online (basada en la nube) en orden para buscar las conversaciones de chat. Eso es porque las conversaciones que forman parte de la lista de Chat se almacenan en los buzones de correo basados en la nube de los participantes de chat. Si un participante de chat no tiene un buzón de Exchange Online, no podrá buscar las conversaciones de chat. Por ejemplo, en una implementación híbrida de Exchange, los usuarios con un buzón de correo local podrían ser capaz de participar en conversaciones que forman parte de la lista de Chat en Microsoft Teams. En este caso, sin embargo el contenido de estos conversación no que admite búsquedas debido a que los usuarios no dispongan de buzones de correo basados en la nube. 
+    > En una implementación híbrida de Exchange, los usuarios con un buzón de correo local pueden participar en conversaciones que forman parte de la lista de Chat en Microsoft Teams. En este caso, el contenido de estas conversaciones también es que admite búsquedo porque se guarda en un área de almacenamiento de información basada en la nube (denominada un *buzón de correo basados en la nube para usuarios locales*) para los usuarios que tienen un buzón de correo local. Para obtener más información, vea [Buscar buzones de correo basados en la nube para los usuarios de Office 365 local](search-cloud-based-mailboxes-for-on-premises-users.md).
   
 - Todos los canales Microsoft Team o equipo contiene un sitio Wiki para colaboración y toma de notas. El contenido de Wiki se guarda automáticamente en un archivo con un formato .mht. Este archivo se almacena en la biblioteca de documentos de datos de Wiki de los equipos en el sitio de SharePoint del equipo. Puede usar la herramienta de búsqueda de contenido para buscar el sitio Wiki mediante la especificación de sitio de SharePoint del equipo como para buscar la ubicación del contenido. 
     

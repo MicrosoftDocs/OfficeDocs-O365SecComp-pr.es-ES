@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 description: Obtenga información acerca de la configuración contra correo no deseado y los filtros que le ayudarán a que evitar correo no deseado en Exchange Online y Office 365. ¿Introducción demasiado spam en Office 365? Puede personalizar los filtros de spam y la configuración de la directiva contra correo no deseado.
-ms.openlocfilehash: 5547904633a0be9ad57fa7431aeddf1267871662
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: 0a23ddd0610599bbd6478781c61e5e32b06726bc
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22536229"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29652275"
 ---
 # <a name="office-365-email-anti-spam-protection"></a>Protección contra correo no deseado de Office 365
 
@@ -43,37 +43,35 @@ En el siguiente vídeo se proporciona información general de la configuración 
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/608be94c-d763-4c47-af94-99e7cb277713?autoplay=false]
   
-Para obtener más información, vea el tema [Configure las directivas de filtro de correo no deseado](https://go.microsoft.com/fwlink/p/?LinkId=617147) . 
+Para obtener más información, vea el tema [Configure las directivas de filtro de correo no deseado](https://go.microsoft.com/fwlink/p/?LinkId=617147) .
   
 ## <a name="check-your-outgoing-messages-to-prevent-spam-in-office-365"></a>Comprobar los mensajes salientes para impedir el correo no deseado en Office 365
 
  **El filtrado de salida.** Office 365 también comprueba para asegurarse de que los usuarios no envíen correo no deseado. Por ejemplo, el equipo de un usuario puede obtener infectado con malware que hace que enviar los mensajes de spam, por lo que creamos protección frente a la que llama *el filtrado de salida* . No se puede desactivar el filtrado de salida, pero se puede establecer la configuración que se describe en [Configurar la directiva de correo no deseado saliente](https://technet.microsoft.com/library/jj200737%28v=exchg.150%29.aspx). Si le preocupa la gran cantidad de spam en Office 365, use el filtrado de salida para ayudar a evitar el correo no deseado en Exchange Online.
   
 ## <a name="beyond-the-basics-more-ways-to-prevent-spam-in-office-365"></a>Más allá de los conceptos básicos: más formas para evitar que el correo no deseado en Office 365
-<a name="BeyondBasics"> </a>
 
- **Las reglas de flujo de correo.** Si desea ir más allá de filtrado de correo no deseado integrado y crear reglas personalizadas que se basan en directivas de su empresa, *[reglas de flujo de correo](https://technet.microsoft.com/library/jj919238%28v=exchg.150%29.aspx)* , también denominadas *las reglas de transporte* , son otro filtro que le ayudan a evitar correo no deseado en Office 365. Por ejemplo, puede usar las reglas de flujo de correo para establecer el valor deseado (SCL) nivel de confianza para los mensajes que coinciden con las condiciones específicas, como se describe en [utilizar reglas de flujo de correo para establecer el nivel de confianza de correo no deseado (SCL) en los mensajes](https://technet.microsoft.com/library/dn798345%28v=exchg.150%29.aspx). 
+ **Las reglas de flujo de correo.** Si desea ir más allá de filtrado de correo no deseado integrado y crear reglas personalizadas que se basan en directivas de su empresa, *[reglas de flujo de correo](https://technet.microsoft.com/library/jj919238%28v=exchg.150%29.aspx)*, también denominadas *las reglas de transporte*, son otro filtro que le ayudan a evitar correo no deseado en Office 365. Por ejemplo, puede usar las reglas de flujo de correo para establecer el valor deseado (SCL) nivel de confianza para los mensajes que coinciden con las condiciones específicas, como se describe en [utilizar reglas de flujo de correo para establecer el nivel de confianza de correo no deseado (SCL) en los mensajes](https://technet.microsoft.com/library/dn798345%28v=exchg.150%29.aspx).
   
- **Autenticación de correo electrónico.** Las técnicas que use el sistema de nombres de dominio (DNS) para agregar estipulan a mensajes de correo electrónico acerca del remitente de un mensaje de correo electrónico se denominan autenticación de correo electrónico. Más avanzado pueden hacer que los administradores de Office 365 el uso de estos métodos de autenticación de correo electrónico: 
+ **Autenticación de correo electrónico.** Las técnicas que use el sistema de nombres de dominio (DNS) para agregar estipulan a mensajes de correo electrónico acerca del remitente de un mensaje de correo electrónico se denominan autenticación de correo electrónico. Más avanzado pueden hacer que los administradores de Office 365 el uso de estos métodos de autenticación de correo electrónico:
   
 - **Marco de directivas de remitente (SPF).** SPF valida el origen de los mensajes de correo electrónico mediante la comprobación de la dirección IP del remitente contra la presunta propietario del dominio envío. Para obtener una introducción rápida a SPF y para obtenerlo configurado rápidamente, vea [Set up SPF en Office 365 para ayudar a evitar la suplantación de identidad](https://technet.microsoft.com/library/dn789058%28v=exchg.150%29.aspx). Para obtener una descripción más detallada de cómo Office 365 usa SPF, o para las implementaciones de solución de problemas o no estándar, como las implementaciones híbridas, empiece con [cómo Office 365 usa el marco de directivas de remitentes (SPF) para evitar la suplantación de identidad](https://technet.microsoft.com/library/mt712724%28v=exchg.150%29.aspx).
-    
+
 - **Por claves de dominio identifican correo (DKIM).** DKIM le permite adjuntar una firma digital a los mensajes de correo electrónico en el encabezado del mensaje de los correos electrónicos enviados. Sistemas de correo electrónico que reciben correo electrónico de su dominio use esta firma digital para determinar si el correo electrónico entrante que reciben es legítimo. Para obtener información acerca de DKIM y Office 365, vea [Uso de DKIM para validar el correo electrónico saliente enviado desde su dominio en Office 365](https://technet.microsoft.com/library/mt695945%28v=exchg.150%29.aspx).
-    
+
 - **Autenticación de mensajes basado en dominio, informes y conformidad (DMARC).** Ayuda de DMARC a recibir sistemas de correo de determinar qué hacer con los mensajes que no cumplen las comprobaciones SPF o DKIM y proporcionan otro nivel de confianza para los socios de correo electrónico. Para obtener información acerca de cómo configurar DMARC, vea [Usar DMARC para validar el correo electrónico en Office 365](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx).
-    
+
 Si le preocupa de correo no deseado, suplantación de identidad y suplantación de identidad en Office 365, use SPF, DKIM y DMARC conjuntamente para ayudar a impedir el correo no deseado y suplantación de identidad no deseados.
   
  **Para el usuario final la configuración administrado.** Si está buscando información acerca de cómo los usuarios finales pueden administrar su propia configuración de correo no deseado, consulte [información general del filtro de correo electrónico no deseado](https://go.microsoft.com/fwlink/?LinkId=270065) (para los usuarios de Microsoft Outlook) o [Aprenda acerca de correo electrónico no deseado y suplantación de identidad](https://go.microsoft.com/fwlink/?LinkId=270068) (para Outlook en los usuarios de web). Si usa EOP para proteger los buzones locales, asegúrese de usar la sincronización de directorios para asegurarse de que estas opciones se sincronizan con el servicio. Para obtener más información acerca de cómo configurar la sincronización de Active directory, vea "Usar la sincronización de Active directory para administrar usuarios de correo" en [Administrar usuarios de correo en EOP](https://technet.microsoft.com/library/dn636911%28v=exchg.150%29.aspx).
   
 ## <a name="for-more-information"></a>Más información
-<a name="BeyondBasics"> </a>
 
 [Blog: ¿Por qué correo no deseado y suplantación de identidad obtener a través de Office 365?](https://go.microsoft.com/fwlink/?LinkId=528179 )
   
 [Preguntas más frecuentes sobre protección contra correo electrónico no deseado](https://technet.microsoft.com/library/jj937231%28v=exchg.150%29.aspx)
   
-[Impedir que el correo electrónico falso positivo se marque como correo no deseado con una lista de IP seguras u otras técnicas](prevent-email-from-being-marked-as-spam-0.md)
+[Impedir falsos positivos de correo electrónico marcado como correo no deseado con una lista segura u otras técnicas](prevent-email-from-being-marked-as-spam-0.md)
   
 [Cómo configurar el filtrado para ayudar a bloquear los mensajes no deseado de spam de Office 365](block-email-spam-to-prevent-false-negatives.md)
   
@@ -82,14 +80,11 @@ Si le preocupa de correo no deseado, suplantación de identidad y suplantación 
 [Encabezados de mensajes de correo no deseado](https://technet.microsoft.com/library/dn205071%28v=exchg.150%29.aspx)
   
 [Contra mensajes y elevación de privilegios](https://technet.microsoft.com/library/dn499795%28v=exchg.150%29.aspx)
-  
-## <a name="still-need-help"></a>¿Aún necesita ayuda?
-<a name="BeyondBasics"> </a>
 
-[![Obtener ayuda en los foros de la comunidad de Office 365](media/12a746cc-184b-4288-908c-f718ce9c4ba5.png)](https://go.microsoft.com/fwlink/p/?LinkId=518605)
-  
-[![Administradores: Iniciar sesión y crear una solicitud de servicio](media/10862798-181d-47a5-ae4f-3f8d5a2874d4.png)]( https://go.microsoft.com/fwlink/p/?LinkId=519124)
-  
-[![Administradores: Llamar al soporte técnico](media/9f262e67-e8c9-4fc0-85c2-b3f4cfbc064e.png)](https://go.microsoft.com/fwlink/p/?LinkID=518322)
-  
+## <a name="more-resources"></a>Más recursos
 
+[Obtén ayuda en los foros de la comunidad de Office 365](https://go.microsoft.com/fwlink/p/?LinkId=518605)
+  
+[Administradores: iniciar sesión y crear una solicitud de servicio](https://go.microsoft.com/fwlink/p/?LinkId=519124)
+  
+[Administradores: llamar al soporte técnico](https://go.microsoft.com/fwlink/p/?LinkID=518322)

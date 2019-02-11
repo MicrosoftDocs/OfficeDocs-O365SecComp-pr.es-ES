@@ -3,7 +3,7 @@ title: Información general sobre el archivo ilimitado en Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/29/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: Obtenga información acerca de la expansión automática de archivado en Office 365, que proporciona almacenamiento de archivo ilimitado para buzones de Exchange Online.
-ms.openlocfilehash: a762a0fb8295a645957404c1c88881f40329f7a1
-ms.sourcegitcommit: e7b87fae103a858981bdbcdf7ec55afa4751ad05
+ms.openlocfilehash: 83eb49b3f2a7da418b61e509f44023809ed396c3
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "23782127"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29740822"
 ---
 # <a name="overview-of-unlimited-archiving-in-office-365"></a>Información general sobre el archivo ilimitado en Office 365
 
@@ -69,11 +69,11 @@ Las capturas de pantalla siguiente muestran una lista de carpetas antes y despu�
 
 Para obtener acceso a los mensajes que se almacenan en un archivo expandido automático, los usuarios tienen que usar uno de los siguientes clientes de Outlook:
   
-- Outlook 2016 para Windows
+- 2016 de Outlook o Outlook 2019 para Windows
     
-- Outlook en la web 
+- Outlook en la Web 
     
-- Outlook 2016 para Mac 
+- Outlook 2016 o 2019 Outlook para Mac 
     
 > [!NOTE]
 > Los usuarios de Outlook 2013 pueden sólo los elementos de acceso que se almacenaron originalmente en su buzón de archivo. No podrán para acceder a elementos que se mueven al almacenamiento de archivos adicionales. 
@@ -96,7 +96,7 @@ En esta sección se explica la funcionalidad entre la ampliación automática de
   
 - También se busca en la **exhibición de documentos electrónicos** - cuando use una herramienta de exhibición de documentos electrónicos de Office 365, como la búsqueda de contenido o en contexto exhibición de documentos electrónicos, las áreas de almacenamiento de información adicional en un archivo expandido automático.
     
-- **Retención** - al poner un buzón de correo en espera mediante herramientas como juicio en Exchange Online o contiene el caso de exhibición de documentos electrónicos y las directivas de retención de la seguridad de Office 365 &amp; centro de cumplimiento, contenido que se encuentra en un archivo expandido automático también es pondrá en espera.
+- Suspensión de **retención** - al poner un buzón de correo en mediante herramientas como juicio en Exchange contiene caso en línea o exhibición de documentos electrónicos y las directivas de retención en el centro de cumplimiento, contenido de seguridad de Office 365 & que se encuentra en un archivo expandido automático también es pondrá en espera.
     
 - También se eliminará de **mensajería (MRM) de administración de registros** - si usa las directivas de eliminación de MRM en Exchange Online para eliminar permanentemente los elementos del buzón que han expirado, elementos caducados que se encuentra en el archivo expandido automático.
     

@@ -14,14 +14,15 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: b0d1bcd8ddb1e29853a633a386becfd1688b9cd1
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: d4f6b457880a4c4029e331e5488ea31a61781765
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29608329"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29706131"
 ---
 # <a name="themes"></a>Temas
+
 Cuando alguien redacta un documento, no lo prefieran palabras aleatoriamente; intenta transmitir algunas ideas o los conceptos y las palabras se eligen según corresponda. Módulos de temas clústeres de documentos que se analizan los asuntos similar para que los revisores pueden ser más eficaces en iba a través de documentos.
 
 ## <a name="how-does-themes-work"></a>¿Cómo funciona temas?
