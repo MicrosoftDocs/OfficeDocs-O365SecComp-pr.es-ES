@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Usar el centro de cumplimiento de seguridad de Office 365 & para buscar en el registro de auditoría unificado para ver la actividad de usuario y Administrador de la organización de Office 365. '
-ms.openlocfilehash: 848dbbdeb8b7cd9abd664b5ac401f6afde31c1e1
-ms.sourcegitcommit: c40eee4ef3890056da58649e4617283b0b9d1673
+ms.openlocfilehash: 41f6f2c90a0171b52807cbf46f15eebb1f16cc9a
+ms.sourcegitcommit: d6b1632a44e40522a4a16e7cb05ba5189214baeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "29735472"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29890061"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security--compliance-center"></a>Buscar en el registro de auditoría en el centro de cumplimiento de seguridad de Office 365 &
 
@@ -281,7 +281,7 @@ Puede exportar los resultados de una búsqueda de registro de auditoría a un ar
 
 ## <a name="audited-activities"></a>Actividades auditadas
 
-Las tablas de esta sección describen las actividades que se auditan en Office 365. Puede buscar estos eventos buscando la auditoría de registro en la seguridad &amp; centro de cumplimiento. Haga clic en la ficha de **búsqueda del registro de auditoría** para obtener instrucciones paso a paso. 
+Las tablas de esta sección describen las actividades que se auditan en Office 365. Para buscar estos eventos, puede buscar en el registro de auditoría en el centro de cumplimiento de seguridad &.
   
 Estas tablas agrupar actividades relacionadas o las actividades de un servicio específico de Office 365. Las tablas incluyen el nombre descriptivo que se muestra en la lista desplegable de **las actividades** y el nombre de la operación correspondiente que aparece en la información detallada de un registro de auditoría y en el archivo CSV al exportar los resultados de búsqueda. Para obtener descripciones de la información detallada, vea el [registro de auditoría de propiedades detalladas en Office 365](detailed-properties-in-the-office-365-audit-log.md).
   
@@ -293,9 +293,10 @@ Haga clic en uno de los siguientes vínculos para ir a una tabla específica.
 |[Actividades de sincronización](#synchronization-activities)<br/> |[Actividades de administración del sitio](#site-administration-activities)<br/> |[Actividades de buzón de correo de Exchange](#exchange-mailbox-activities)<br/> |
 |[Influir hora de elegir las actividades](#sway-activities) <br/> |[Actividades de administración de usuario](#user-administration-activities) <br/> |[Actividades de administración de grupo de Azure AD](#azure-ad-group-administration-activities) <br/> |
 |[Actividades de administración de aplicaciones](#application-administration-activities) <br/> |[Actividades de administración de roles](#role-administration-activities) <br/> |[Actividades de administración de Active Directory](#directory-administration-activities) <br/> |
-|[actividades de exhibición de documentos electrónicos](#ediscovery-activities) <br/> |[Actividades de Power BI](#power-bi-activities) <br/> |[Actividades de Microsoft Teams](#microsoft-teams-activities) <br/> |
-|[Actividades de yammer](#yammer-activities) <br/> |[Microsoft Flow](#microsoft-flow) <br/> |[Microsoft Stream](#microsoft-stream) <br/>|
-|[Registro de auditoría de administración de Exchange](#exchange-admin-audit-log) <br/> |
+|[actividades de exhibición de documentos electrónicos](#ediscovery-activities) <br/> |[Actividades de Power BI](#power-bi-activities) <br/> |[Análisis de área de trabajo de Microsoft](#microsoft-workplace-analytics-activities)<br/>|
+[Actividades de Microsoft Teams](#microsoft-teams-activities) <br/> |[Actividades de yammer](#yammer-activities) <br/> |[Microsoft Flow](#microsoft-flow) <br/> 
+|[Microsoft Stream](#microsoft-stream) <br/>|[Actividades de administración de Exchange](#exchange-admin-audit-log)<br/>
+||||
    
   
 ### <a name="file-and-page-activities"></a>Actividades de archivo y página
@@ -326,6 +327,7 @@ En la siguiente tabla describe las actividades de archivo y la página en ShareP
 |Archivo cargado  <br/> |FileUploaded  <br/> |Usuario carga un documento en una carpeta de un sitio.  <br/> |
 |Página visitada  <br/> |PageViewed  <br/> |Usuario visualiza una página de un sitio. Esto no incluye el uso de un explorador Web para ver los archivos que se encuentra en una biblioteca de documentos.  <br/> |
 |(ninguno)  <br/> |PageViewedExtended  <br/> |Esto está relacionado con el "se ve"página de actividad (PageViewed). Se registra un evento PageViewedExtended cuando la misma persona continuamente ve una página web durante un largo período de tiempo (hasta 3 horas). El propósito del registro de eventos de PageViewedExtended es reducir el número de eventos de PageViewed que se registran cuando una página se ve continuamente. Esto ayuda a reducir el ruido de varios registros de PageViewed de lo que es esencialmente la misma actividad del usuario y le permite centrarse en el evento PageViewed inicial (y más importante).  <br/> |
+||||
   
 ### <a name="folder-activities"></a>Actividades de carpeta
   
@@ -342,6 +344,7 @@ En la siguiente tabla describe las actividades de la carpeta en SharePoint Onlin
 |Carpeta que se ha movido  <br/> |FolderMoved  <br/> |Usuario mueve una carpeta a una ubicación diferente en un sitio.  <br/> |
 |Ha cambiado el nombre de carpeta  <br/> |FolderRenamed  <br/> |Usuario cambia el nombre de una carpeta en un sitio.  <br/> |
 |Carpeta restaurado  <br/> |FolderRestored  <br/> |Usuario restaura una carpeta eliminada de la Papelera de reciclaje en un sitio.  <br/> |
+||||
   
 ### <a name="sharing-and-access-request-activities"></a>Actividades de solicitud de acceso y uso compartido
   
@@ -382,6 +385,7 @@ En la siguiente tabla se describe las actividades de solicitud de uso compartido
 |Usuario ha añadido a vínculo seguro  <br/> |AddedToSecureLink  <br/> |Se agregó un usuario a la lista de entidades que puede usar un vínculo de uso compartido seguro.  <br/> |
 |Usuario quitado de vínculo seguro  <br/> |RemovedFromSecureLink  <br/> |Un usuario se quitó de la lista de entidades que puede usar un vínculo de uso compartido seguro.  <br/> |
 |Retiró invitación de uso compartido  <br/> |SharingInvitationRevoked  <br/> |Usuario retiró una invitación para compartir para un recurso.  <br/> |
+||||
   
 ### <a name="synchronization-activities"></a>Actividades de sincronización
   
@@ -395,6 +399,7 @@ En la siguiente tabla se enumera las actividades de sincronización del archivo 
 |Cambios de archivo descargado en el equipo  <br/> |FileSyncDownloadedPartial  <br/> |Usuario descarga correctamente los cambios a los archivos de una biblioteca de documentos. Esta actividad indica que los cambios que se han realizado en los archivos en la biblioteca de documentos se han descargado en el equipo del usuario. Sólo los cambios que se han descargado debido a que la biblioteca de documentos se ha descargado previamente por el usuario (tal como indica la actividad de **descargar los archivos en equipo** ).<br/> |
 |Archivos cargados en biblioteca de documentos  <br/> |FileSyncUploadedFull  <br/> |Usuario establece una relación de sincronización y carga correctamente los archivos por primera vez desde su equipo a una biblioteca de documentos.  <br/> |
 |Cambios de archivo cargado en la biblioteca de documentos  <br/> |FileSyncUploadedPartial  <br/> |Usuario carga correctamente los cambios en los archivos en una biblioteca de documentos. Este evento indica que los cambios realizados en la versión local de un archivo desde una biblioteca de documentos se cargan correctamente en la biblioteca de documentos. Sólo se descargan los cambios debido a que dichos archivos se han cargado previamente por el usuario (indicada por el ** a los archivos cargados en biblioteca de documentos ** actividad).  <br/> |
+||||
   
 ### <a name="site-administration-activities"></a>Actividades de administración del sitio
   
@@ -432,6 +437,7 @@ En la siguiente tabla se enumera los eventos que resultan de las tareas de admin
 |Mover ubican programado del sitio  <br/> |SiteGeoMoveScheduled  <br/> |Un administrador global o SharePoint correctamente programaciones de SharePoint o OneDrive sitio ubican mover. La capacidad de Multi-ubican permite a una organización de Office 365 abarcan diversas geografías de centro de datos de Office 365, que se denominan zonas. Para obtener más información, vea [Funciones de Multi-ubican en OneDrive y SharePoint Online en Office 365](https://go.microsoft.com/fwlink/?linkid=860840).<br/> |
 |Sitio de host de conjunto  <br/> |HostSiteSet  <br/> |Un administrador global o SharePoint cambia el sitio designado para hospedar personal o OneDrive para los sitios de negocio.  <br/> |
 |Grupo actualizado  <br/> |GroupUpdated  <br/> |Administrador de sitios o propietario cambia la configuración de un grupo para un sitio. Esto puede incluir cambiar el nombre del grupo, que puede ver o editar la pertenencia al grupo, y cómo se controlan las solicitudes de participación.  <br/> |
+||||
   
 ### <a name="exchange-mailbox-activities"></a>Actividades de buzón de correo de Exchange
   
@@ -454,6 +460,7 @@ En la siguiente tabla se enumera las actividades que se pueden registrar por buz
 |Mensaje actualizado  <br/> |Update  <br/> |Se cambió un mensaje o sus propiedades.  <br/> |
 |Usuario que ha iniciado sesión en el buzón de correo  <br/> |MailboxLogin  <br/> |El usuario inició sesión en su buzón.  <br/> |
 |(ninguno)  <br/> |UpdateInboxRules  <br/> |Se han agregado, eliminada o cambiado una regla de bandeja de entrada. Las reglas de bandeja de entrada se usan para procesar los mensajes en la Bandeja de entrada del usuario en función de las condiciones especificadas y realizar acciones cuando se cumplen las condiciones de una regla, como mover un mensaje a una carpeta especificada o la eliminación de un mensaje.<br/> Para devolver las entradas para las actividades de regla de bandeja de entrada, tendrá que seleccionar **Mostrar los resultados de todas las actividades** en la lista de **actividades** . Utilice los cuadros intervalo de fechas y la lista de **usuarios** para restringir los resultados de búsqueda.<br/> |
+||||
   
 ### <a name="sway-activities"></a>Influir hora de elegir las actividades
   
@@ -475,6 +482,7 @@ En la siguiente tabla enumera las actividades de usuario y administración de ba
 |Desactivar el servicio de balanceo  <br/> |SwayServiceOff  <br/> |Administrador deshabilita balanceo para toda la organización mediante el centro de administración de Office 365.  <br/> |
 |Activado el servicio de balanceo  <br/> |SwayServiceOn  <br/> |Administrador habilita balanceo para toda la organización mediante el centro de administración de Office 365 (balanceo servicio está habilitado de forma predeterminada).  <br/> |
 |Balanceo visualizado  <br/> |SwayView  <br/> |Usuario visualiza un balanceo.  <br/> |
+||||
 
   
 ### <a name="user-administration-activities"></a>Actividades de administración de usuario
@@ -491,6 +499,7 @@ En la siguiente tabla se enumera las actividades de administración de usuario q
 |Establece la propiedad que obliga al usuario cambiar la contraseña  <br/> |Conjunto force cambiar contraseña de usuario  <br/> |Administrador establecer la propiedad que obliga a un usuario para cambiar su contraseña la próxima vez que el usuario iniciar sesión en Office 365.  <br/> |
 |Establecer propiedades de licencia  <br/> |Establecer propiedades de licencia  <br/> |Administrador modifica las propiedades de una licencia asignada a un usuario.  <br/> |
 |Usuario actualizada  <br/> |Usuario de actualización  <br/> |Administrador cambia las propiedades de uno o más de una cuenta de usuario. Para obtener una lista de las propiedades de usuario que se pueden actualizar, vea la sección "Actualizar los atributos de usuario" en [Eventos de informe de auditoría de Active Directory de Azure](https://go.microsoft.com/fwlink/p/?LinkID=616549).<br/> |
+||||
   
 ### <a name="azure-ad-group-administration-activities"></a>Actividades de administración de grupo de Azure AD
   
@@ -503,6 +512,7 @@ En la siguiente tabla se enumera las actividades de administración de grupo que
 |Grupo eliminado  <br/> |Eliminar grupo  <br/> |Se eliminó un grupo.  <br/> |
 |Se ha quitado miembro de grupo  <br/> |Quitar a miembros de grupo  <br/> |Se ha quitado un miembro de un grupo.  <br/> |
 |Grupo actualizado  <br/> |Grupo de actualización  <br/> |Se ha cambiado una propiedad de un grupo.  <br/> |
+||||
    
 ### <a name="application-administration-activities"></a>Actividades de administración de aplicaciones
   
@@ -517,6 +527,7 @@ En la siguiente tabla se enumera las actividades de administración de aplicacio
 |Quita una entidad de seguridad del servicio del directorio  <br/> |Quitar entidad de seguridad de servicio  <br/> |Una aplicación fue eliminado o elimina del registro de Azure AD. Una aplicación está representada por una entidad de seguridad de servicio en el directorio.  <br/> |
 |Se han quitado las credenciales de una entidad de seguridad de servicio  <br/> |Quitar las credenciales del servicio de entidad de seguridad  <br/> |Se han eliminado las credenciales de un servicio de entidad de seguridad en Azure AD. Un principio de servicio representa una aplicación en el directorio.  <br/> |
 |Entrada de conjunto de delegación  <br/> |Entrada de conjunto de delegación  <br/> |Se ha actualizado un permiso de autenticación para una aplicación en Azure AD.  <br/> |
+||||
 
 ### <a name="role-administration-activities"></a>Actividades de administración de roles
   
@@ -527,6 +538,7 @@ En la siguiente tabla se enumera las actividades de administración de roles Azu
 |Agregar a miembro a función  <br/> |Agregar a miembro de la función a función  <br/> |Agrega un usuario a un rol de administración de Office 365.  <br/> |
 |Quita un usuario de una función de Active directory  <br/> |Quitar a miembro de la función de función  <br/> |Quitar a un usuario de una función de administración de Office 365.  <br/> |
 |Establecer información de contacto de la compañía  <br/> |Establecer información de contacto de la compañía  <br/> |Se ha actualizado las preferencias de contacto de nivel de empresa para su organización de Office 365. Esto incluye las direcciones de correo electrónico para relacionadas con la suscripción el correo electrónico enviado por Office 365, así como las notificaciones de técnicas acerca de los servicios de Office 365.  <br/> |
+||||
    
 ### <a name="directory-administration-activities"></a>Actividades de administración de Active Directory
   
@@ -546,6 +558,7 @@ La siguiente tabla se recogen AD Azure Active directory y dominio relacionadas c
 |Dominio actualizado  <br/> |Actualizar dominio  <br/> |Se actualizó la configuración de un dominio de la organización de Office 365.  <br/> |
 |Dominio comprobado  <br/> |Comprobar el dominio  <br/> |Comprobar que la organización es el propietario de un dominio.  <br/> |
 |Dominio de correo electrónico comprobada verificado  <br/> |Comprobar el dominio verificado de correo electrónico  <br/> |Comprobación de correo electrónico se usa para comprobar que la organización es el propietario de un dominio.  <br/> |
+||||
    
 ### <a name="ediscovery-activities"></a>actividades de exhibición de documentos electrónicos
   
@@ -572,6 +585,24 @@ Puede buscar el registro de auditoría para actividades en Power BI. Para obtene
   
 Tenga en cuenta que el registro de auditoría de Power BI no está habilitado de forma predeterminada. Para buscar actividades de Power BI en el registro de auditoría de Office 365, se debe habilitar la auditoría en el portal de administración de Power BI. Para obtener instrucciones, vea la sección "Registros de auditoría" en el [portal de administración de Power BI](https://docs.microsoft.com/power-bi/service-admin-portal#audit-logs).
   
+### <a name="microsoft-workplace-analytics-activities"></a>Actividades de análisis de área de trabajo de Microsoft
+
+En la siguiente tabla se enumera la administración y registro de auditoría de las actividades de analista en análisis de área de trabajo de Microsoft que se registran en Office 365. Análisis de área de trabajo proporcionan una visión de cómo grupos colaboran en toda la organización de Office 365. Para obtener más información, vea [Análisis de área de trabajo](https://docs.microsoft.com/en-us/workplace-analytics/index-orig).
+
+|**Nombre descriptivo**|**Operation**|**Descripción**|
+|:-----|:-----|:-----|
+|Vínculo al que se accede de OData <br/> |AccessedOdataLink <br/> |Analista de tener acceso al vínculo de OData para una consulta.|
+|Consulta cancelada <br/> |CanceledQuery <br/> |Analista de cancela una consulta que se está ejecutando.|
+|Exclusión de reunión creada <br/> |MeetingExclusionCreated <br/> |Analista creado una nueva regla de exclusión de la reunión.|
+|Resultado eliminado <br/> |DeletedResult <br/> |Analista de elimina un resultado de la consulta.|
+|Informe descargado <br/> |DownloadedReport <br/> |Analista de descarga un archivo de resultados de consulta.|
+|Consulta ejecutada <br/> |ExecutedQuery <br/> |Analista ejecutó una consulta.|
+|Configuración de acceso de datos actualizados <br/> |UpdatedDataAccessSetting <br/> |Admin actualizó la configuración de acceso de datos.|
+|Configuración de privacidad actualizada <br/> |UpdatedPrivacySetting <br/> |Admin actualizó la configuración de privacidad; Por ejemplo, el tamaño mínimo del grupo.|
+|Datos de la organización que se cargan <br/> |UploadedOrgData <br/> |Archivo de datos de la organización que se cargan de administración.|
+|Ver explorar <br/> |ViewedExplore <br/> |Analista de ve visualizaciones en las fichas de página explorar uno o más.|
+||||
+
 ### <a name="microsoft-teams-activities"></a>Actividades de Microsoft Teams
   
 En la siguiente tabla se enumera el usuario y el registro de auditoría de las actividades de administración en Microsoft Teams que se registran en Office 365. Microsoft Teams es un área de trabajo centrado en el chat en Office 365. Reúne las conversaciones, reuniones, archivos y notas de un equipo en un solo lugar. Para que obtener más información y vínculos a temas de ayuda, vea:
@@ -601,6 +632,7 @@ En la siguiente tabla se enumera el usuario y el registro de auditoría de las a
 |Versión actualizada del conector  <br/> |ConnectorUpdated  <br/> |Un usuario puede modificar un conector en un canal.  <br/> |
 |Ficha actualizada  <br/> |TabUpdated  <br/> |Un usuario puede modificar una ficha en un canal.  <br/> |
 |Usuario que ha iniciado sesión en los equipos  <br/> |TeamsSessionStarted  <br/> |Un usuario inicia sesión en un cliente de Microsoft Teams.  <br/> |
+||||
 
 ### <a name="yammer-activities"></a>Actividades de yammer
   
@@ -625,6 +657,7 @@ En la siguiente tabla se enumera el usuario y el registro de auditoría de las a
 |Descripción del archivo actualizado  <br/> |FileUpdateDescription  <br/> |Usuario cambia la descripción de un archivo.  <br/> |
 |Nombre del archivo actualizado  <br/> |FileUpdateName  <br/> |Usuario cambia el nombre de un archivo.  <br/> |
 |Archivo visualizado  <br/> |FileVisited  <br/> |Usuario ve un archivo.  <br/> |
+||||
    
 ### <a name="microsoft-flow"></a>Microsoft Flow
 

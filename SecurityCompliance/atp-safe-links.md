@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.audience: Admin
-ms.date: 02/05/2019
+ms.date: 02/11/2019
 ms.topic: overview
 f1_keywords:
 - "197503"
@@ -20,12 +20,12 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: La característica vínculos seguros proporciona comprobación de tiempo de clic de los hipervínculos en documentos de Office y en los mensajes de correo electrónico. Use los vínculos seguros para proteger la organización de suplantación de identidad y otros ataques.
-ms.openlocfilehash: 8c63de9e62e33dbca6dde5a5bb45a7f7875ab71f
-ms.sourcegitcommit: c1c41744c2de89c9e172f817c8f73bb0ada81a58
+ms.openlocfilehash: 4d83aa65af47ea6723d6e2042c230fb2b07c174c
+ms.sourcegitcommit: 065f5e72676511b5ecf7f10a17685999780e92d8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2019
-ms.locfileid: "29792245"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29888036"
 ---
 # <a name="office-365-atp-safe-links"></a>Vínculos seguros ATP de Office 365
 
@@ -98,7 +98,7 @@ A continuación, asegúrese de que se definen las directivas de vínculos seguro
     
 - **Los usuarios han iniciado sesión en Office 365** mediante su cuenta de trabajo o escuela. (Vea [iniciar sesión en Office 365 o de Office](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426)).
     
-- **Correo electrónico de la organización está hospedado en Office 365**. 
+- **Correo electrónico de su organización pasa a través de Exchange Online Protection**.  
 
 Para definir las directivas de ATP (o editar), debe asignar uno de los roles que se describen en la siguiente tabla:
 
