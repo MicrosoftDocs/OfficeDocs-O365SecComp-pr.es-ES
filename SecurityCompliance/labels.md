@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Las etiquetas de retención de Office 365 ayudan a realizar las acciones adecuadas en el contenido adecuado. Con las etiquetas de retención, puede clasificar los datos de su organización para administrarlos mejor y aplicar reglas de retención basadas en esa clasificación. También puede usar etiquetas de retención para implementar la administración de registros en Office 365.
-ms.openlocfilehash: d957fc251aa4591d273a65d0a85ecde0df0845c9
-ms.sourcegitcommit: c7264f3a6a97f1ff544544e2c722e7825e265fa1
+ms.openlocfilehash: 7f8ab61a4d42f1a032f19110ccd1d12f833c0737
+ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/14/2018
-ms.locfileid: "26299254"
+ms.lasthandoff: 02/11/2019
+ms.locfileid: "29614504"
 ---
 # <a name="overview-of-retention-labels"></a>Introducción a las etiquetas de retención
 
@@ -266,22 +266,34 @@ Después de seleccionar una plantilla de directiva, puede agregar o quitar los t
     
 - El tipo de información confidencial detectado tiene una precisión de coincidencia (o nivel de confianza) mínima de 75. Muchos tipos de información confidencial se definen con varios patrones, donde un patrón con una precisión de coincidencia más alta necesita encontrar más evidencias (como palabras clave, fechas o direcciones), mientras que un patrón con una precisión de coincidencia inferior necesita menos evidencias. En resumen, cuanto menor sea la precisión de coincidencia **mínima**, más fácil será que el contenido coincida con la condición. 
     
-    Si cambia la precisión de coincidencia (o el nivel de confianza), tendrá que usar uno de los niveles de confianza de un patrón para ese tipo de información confidencial, como se define en [Información que buscan los tipos de información confidencial](what-the-sensitive-information-types-look-for.md).
+Para obtener más información acerca de estas opciones, vea [Ajustar reglas para que sea más o menos fáciles que coincidan](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match).
     
 ![Opciones para identificar tipos de información confidencial](media/de255881-f596-4c8d-8359-e974e3a0819a.png)
   
-### <a name="auto-apply-retention-labels-to-content-with-keywords"></a>Aplicar automáticamente etiquetas de retención a contenido con palabras clave
+### <a name="auto-apply-labels-to-content-with-keywords-or-searchable-properties"></a>Aplicar automáticamente etiquetas a contenido con palabras clave o propiedades que se puedan buscar
 
-Puede aplicar automáticamente etiquetas de retención a contenido que cumpla determinadas condiciones. Las condiciones disponibles ahora permiten aplicar una etiqueta de retención a contenido que coincida con palabras o frases que puedan buscarse. Puede restringir la consulta con operadores de búsqueda como Y, O y NO. 
+Puede aplicar automáticamente etiquetas a contenido que cumpla determinadas condiciones. Las condiciones disponibles ahora permiten aplicar una etiqueta a contenido que coincida con palabras, frases o propiedades que puedan buscarse. Puede restringir la consulta con operadores de búsqueda como Y, O y NO.
 
 Para obtener más información sobre la sintaxis de consultas, vea:
 
-- [Referencia de la sintaxis del lenguaje de consultas de palabras clave (KQL)](https://docs.microsoft.com/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
+- [Referencia de la sintaxis del lenguaje de consultas de palabras clave (KQL)](https://docs.microsoft.com/es-ES/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
-Las etiquetas de retención basadas en consultas usan el índice de búsqueda para identificar contenido.
-  
+Las etiquetas basadas en consultas usan el índice de búsqueda para identificar el contenido. Para obtener más información sobre las propiedades de búsqueda válidas, vea:
+
+- [Consultas de palabras clave y condiciones de búsqueda para la búsqueda de contenido](keyword-queries-and-search-conditions.md).
+- [Información general sobre las propiedades administradas y rastreadas en SharePoint Server](https://docs.microsoft.com/es-ES/SharePoint/technical-reference/crawled-and-managed-properties-overview)
+
+Consultas de ejemplos:
+
+- Exchange
+    - asunto:"Finanzas trimestrales"
+    - destinatarios:garthf<!--nolink-->@contoso.com
+- SharePoint y OneDrive para la Empresa
+    - contenttype:contract
+    - sitios: https<!--nolink-->: //contoso.sharepoint.com/sites/teams/procurement y contenttype:contract
+
 ![Editor de consultas](media/ac5b8e5e-7453-4ec7-905c-160df57298d3.png)
-  
+
 ## <a name="applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set"></a>Aplicar una etiqueta de retención predeterminada a todo el contenido de una biblioteca, carpeta o conjunto de documentos de SharePoint
 
 Además de permitir que los usuarios apliquen una etiqueta de retención a documentos individuales, también puede aplicar una etiqueta de retención predeterminada a una biblioteca, carpeta o conjunto de documentos de SharePoint para aplicar la etiqueta de retención predeterminada a todos los documentos de esa ubicación.
@@ -346,7 +358,7 @@ Al etiquetar un elemento como un registro, ocurren cuatro cosas:
     
 ### <a name="who-can-classify-content-as-a-record"></a>Quién puede clasificar contenido como un registro
 
-En el caso de contenido de SharePoint, cualquier usuario del grupo predeterminado Miembros (el nivel de permisos Colaborar) puede aplicar una etiqueta de registro a contenido. Solo el administrador de la colección de sitios puede quitar o cambiar la etiqueta de retención una vez aplicada. Además, las etiquetas de retención que clasifican contenido como registros tienen que aplicarse de forma manual (no se pueden aplicar automáticamente).
+En el caso de contenido de SharePoint, cualquier usuario del grupo predeterminado Miembros (el nivel de permisos Colaborar) puede aplicar una etiqueta de registro a contenido. Solo el administrador de la colección de sitios puede quitar o cambiar la etiqueta de retención una vez aplicada. Además, las etiquetas de retención que clasifican contenido como registros pueden [aplicarse al contenido automáticamente](#auto-apply-retention-labels).
   
 ### <a name="records-and-folders"></a>Registros y carpetas
 
