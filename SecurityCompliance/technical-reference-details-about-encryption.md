@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 862cbe93-4268-4ef9-ba79-277545ecf221
 description: Ver detalles técnicos acerca de cifrado en Office 365.
-ms.openlocfilehash: bb4629d89d2ed625cc1b817c53d2355484bfdf6c
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: c11f152b18a15886fc8a5108e6df66dafe53a758
+ms.sourcegitcommit: 6bdba12c13c02f7d9a7297d3042933b100c4e481
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "28326941"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "29966194"
 ---
 # <a name="technical-reference-details-about-encryption-in-office-365"></a>Información de referencia técnica sobre el cifrado en Office 365
 
@@ -89,6 +89,9 @@ Iniciar el 1 de diciembre de 2014, Office 365 comenzó deshabilitar compatibilid
 <a name="TLSCipherSuites"> </a>
 
 Un conjunto de cifrado es una colección de algoritmos de cifrado que TLS emplea para establecer conexiones seguras. Los conjuntos de cifrado compatibles con Office 365 se enumeran en la siguiente tabla por orden de seguridad, con el conjunto de cifrado más seguro en primer lugar. Cuando Office 365 recibe una solicitud de conexión, primero intenta conectarse con el conjunto de cifrado de nivel superior y, si no lo consigue, prueba con el segundo conjunto de cifrado de la lista y así sucesivamente. Cuando Office 365 envía una solicitud de conexión a otro servidor o a un cliente, el servidor o el cliente receptor elige el conjunto de cifrado o si se va a usar TLS.
+
+> [!IMPORTANT]
+> Tenga en cuenta que dejar de utilizar versiones TLS y que en desuso versiones *no debe usarse* donde estén disponibles versiones más recientes. En otras palabras, en cualquier lugar que ha incluido esa TLS 1.0, 1.1 y 1.2 son compatibles, elija la versión *más reciente* (TLS 1.2).
   
 |**Protocolos**|**Nombre del conjunto de cifrado**|**Algoritmo de intercambio de claves o seguridad**|**Compatibilidad con Confidencialidad directa total**|**Algoritmo de autenticación o seguridad**|**Cifrado o seguridad**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
