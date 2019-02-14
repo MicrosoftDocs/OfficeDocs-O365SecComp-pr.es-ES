@@ -12,13 +12,14 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
+ms.collection: M365-security-compliance
 description: Definir directivas de los datos adjuntos seguros para proteger su organización desde archivos malintencionados en el correo electrónico.
-ms.openlocfilehash: 2f33114d46778f2f01f5a263a05c320f75fad49e
-ms.sourcegitcommit: d6a28c4f6db6a676ca960173e8ff8f17d4aa1c4b
+ms.openlocfilehash: c089d46da2070f32f2452bab1fd2f7c15a39861c
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "29755221"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995391"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Configurar las directivas de Office 365 ATP los datos adjuntos seguros
 
@@ -84,7 +85,7 @@ Como configurar las directivas de los datos adjuntos seguros de ATP, elegir entr
 |:-----|:-----|:-----|
 |**Off** <br/> |No examina los datos adjuntos de malware  <br/> Retraso de no entrega de mensajes  <br/> |Desactivar el examen de remitentes internos, escáneres, faxes o hosts inteligentes que sólo va a enviar los datos adjuntos conocidos y de buenos  <br/> Evitar retrasos innecesarios en enrutamiento de correo interno  <br/> **Esta opción no se recomienda para la mayoría de los usuarios. Permite que desactive el análisis de los datos adjuntos seguros de ATP para un pequeño grupo de remitentes internos.**           |
 |**Monitor** <br/> |Entrega los mensajes con datos adjuntos y, a continuación, realiza un seguimiento de lo que sucede con malware detectado  <br/> |Vea donde se ha detectado malware se coloca en la organización  <br/> |
-|**Bloque** <br/> |Impide que los mensajes con datos adjuntos se ha detectado malware desde continuar  <br/> Envía los mensajes con malware detectado en [cuarentena en Office 365](manage-quarantined-messages-and-files.md) donde un administrador de seguridad o analista puede revisar y de la versión (o eliminar) esos mensajes  <br/> Bloquea los datos adjuntos y mensajes futuros automáticamente  <br/> |Proteger su organización frente a ataques repetidos con los mismos datos adjuntos de malware  <br/> |
+|**Bloquear** <br/> |Impide que los mensajes con datos adjuntos se ha detectado malware desde continuar  <br/> Envía los mensajes con malware detectado en [cuarentena en Office 365](manage-quarantined-messages-and-files.md) donde un administrador de seguridad o analista puede revisar y de la versión (o eliminar) esos mensajes  <br/> Bloquea los datos adjuntos y mensajes futuros automáticamente  <br/> |Proteger su organización frente a ataques repetidos con los mismos datos adjuntos de malware  <br/> |
 |**Reemplazar** <br/> |Quita detecta los datos adjuntos de malware  <br/> Notifica a los destinatarios que se han quitado datos adjuntos  <br/> Envía los mensajes con malware detectado en [cuarentena en Office 365](manage-quarantined-messages-and-files.md) donde un administrador de seguridad o analista puede revisar y de la versión (o eliminar) esos mensajes  <br/> |Elevar visibilidad a los destinatarios que se han quitado datos adjuntos a causa de malware detectado  <br/> |
 |**Entrega dinámica** <br/> |Entrega los mensajes inmediatamente  <br/> Reemplaza los datos adjuntos con un archivo de marcador de posición hasta que el examen se ha completado y, a continuación, vuelve a adjuntar los datos adjuntos si no se detecta ninguna malware  <br/> Incluye los datos adjuntos que se obtiene una vista previa de las capacidades para la mayoría de los archivos PDF y Office archivos durante la exploración  <br/> Envía los mensajes con malware detectado a cuarentena donde un administrador de seguridad o analista puede revisar y de la versión (o eliminar) esos mensajes  <br/> [Obtenga información sobre la entrega dinámica y obtener una vista previa con datos adjuntos seguros de ATP](dynamic-delivery-and-previewing.md) <br/> |Evitar retrasos de mensaje al tiempo que protege los destinatarios de archivos malintencionados  <br/> Habilitar destinatarios obtener una vista previa de datos adjuntos en modo seguro mientras el examen está produciendo  <br/> |
 |**Habilitar la redirección** <br/> |Se aplica cuando se elige la opción de Monitor, bloquear o reemplazar  <br/> Envía los datos adjuntos a una dirección de correo electrónico especificada donde pueden investigar los administradores de seguridad o los analistas  <br/> |Permiten a los administradores de seguridad y los analistas de investigación datos adjuntos sospechosos  <br/> |

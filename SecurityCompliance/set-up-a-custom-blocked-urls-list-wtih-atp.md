@@ -12,15 +12,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 896a7efb-1683-465e-a394-261349e5d866
+ms.collection: M365-security-compliance
 description: Obtenga información sobre cómo configurar una lista de direcciones URL bloqueadas para su organización mediante la protección de amenaza avanzada de Office 365. Las direcciones URL bloqueadas se aplicarán a los mensajes de correo electrónico y documentos de Office según las directivas de vínculos seguros de ATP.
-ms.openlocfilehash: 4d8c9c669310137d3f491f5a79c93f4d6af71ac5
-ms.sourcegitcommit: d6a28c4f6db6a676ca960173e8ff8f17d4aa1c4b
+ms.openlocfilehash: 261d85ce72de3a19ed4c2327d56fe1f32107781b
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "29755321"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995321"
 ---
 # <a name="set-up-a-custom-blocked-urls-list-using-office-365-atp-safe-links"></a>Configurar una lista personalizada de direcciones URL bloqueada mediante Office 365 ATP seguros vínculos
+
+> [!IMPORTANT]
+> En este artículo está destinada a los clientes empresariales. Si es un usuario particular para obtener más información acerca de los vínculos seguros en Outlook, vea [seguridad de Outlook.com avanzadas](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 Con [Office 365 avanzada una protección contra amenazas](office-365-atp.md) (ATP), la organización puede tener una lista personalizada de direcciones de sitios Web (URL) que están bloqueados. Cuando se bloquea una dirección URL, se toman las personas que haga clic en vínculos a la dirección URL bloqueada a una [página de advertencia](atp-safe-links-warning-pages.md) que es similar a la siguiente imagen: 
   

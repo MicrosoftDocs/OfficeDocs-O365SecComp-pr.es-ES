@@ -12,15 +12,20 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
+ms.collection:
+- M365-security-compliance
 description: Protección contra amenazas avanzadas de Office 365 incluye suplantación de la inteligencia, vínculos seguros, los datos adjuntos seguros, capacidades avanzadas de contra suplantación de identidad y sobre amenazas.
-ms.openlocfilehash: 213b262b0ecc821b8f139b1b63568b2b03e635c5
-ms.sourcegitcommit: c1c41744c2de89c9e172f817c8f73bb0ada81a58
+ms.openlocfilehash: 4899073247f4b39e7cda39f8f35544c436c0b2d7
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2019
-ms.locfileid: "29792255"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995221"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Protección contra amenazas avanzada de Office 365
+
+> [!IMPORTANT]
+> En este artículo está destinada a los clientes empresariales. Si es un usuario particular para obtener más información acerca de los vínculos seguros en Outlook, vea [seguridad de Outlook.com avanzadas](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 ## <a name="overview-of-office-365-advanced-threat-protection"></a>Información general de Office 365 protección avanzada
 

@@ -3,7 +3,7 @@ title: Use el explorador en la seguridad &amp; centro de cumplimiento
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 11/26/2018
+ms.date: 02/13/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,13 +12,14 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
+ms.collection: M365-security-compliance
 description: Obtenga información sobre el explorador (también denominado Explorador de amenaza) en la seguridad &amp; centro de cumplimiento.
-ms.openlocfilehash: c5b6273120c605cb4233f62b5c52c6a794e554eb
-ms.sourcegitcommit: 0cc6083bd8cb2f7bbf18847149c6d5239f2a6403
+ms.openlocfilehash: 16f5b15c6993301f4f324f4b84c3b6e61f255e0f
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26699933"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995121"
 ---
 # <a name="use-explorer-in-the-security-amp-compliance-center"></a>Use el explorador en la seguridad &amp; centro de cumplimiento
 
@@ -27,6 +28,9 @@ Si su organización tiene [Información sobre amenazas de Office 365](office-365
 ![Vaya a administración de amenaza \> Explorer](media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
   
 Para usar el explorador, en la seguridad &amp; centro de cumplimiento, vaya a **administración de amenazas** \> **Explorer**.
+
+> [!IMPORTANT]
+> A partir de febrero de 2019 e implantar durante los próximos meses, información sobre amenazas de Office 365 se está convirtiendo en Office 365 avanzada amenaza protección Plan 2, con las funcionalidades de protección de amenaza adicionales. Para obtener más información, vea [los planes de protección de amenaza avanzada de Office 365 y los precios](https://products.office.com/exchange/advance-threat-protection) y la [Office 365 avanzada Threat Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
       
 ## <a name="explorer-overview"></a>Introducción al explorador
 

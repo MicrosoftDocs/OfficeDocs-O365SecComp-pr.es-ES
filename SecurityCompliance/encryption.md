@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0a322724-08ca-43db-b69a-afbfa20484cd
 description: Con Office 365, el contenido se cifra en reposo y en tránsito, con el cifrado más seguro, protocolos y las tecnologías disponibles. Obtenga una visión general de cifrado en Office 365.
-ms.openlocfilehash: a9f37fddf28461ee4912e0b8a1f5b922c59c009f
-ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
+ms.openlocfilehash: 5f64d6e758818d410f54370adee549f565d4f042
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "24972292"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995111"
 ---
 # <a name="encryption-in-office-365"></a>Cifrado en Office 365
 
@@ -49,7 +49,7 @@ Con Office 365, puede tener varias capas y tipos de cifrado que trabajan en conj
 |:-----|:-----|:-----|
 |Archivos en un dispositivo. Esto puede incluir mensajes de correo electrónico guardados en una carpeta, documentos de Office guardados en un equipo, un Tablet PC o un teléfono o datos que se guardan en la nube de Microsoft.  <br/> |BitLocker en centros de datos de Microsoft. También se puede usar BitLocker en equipos cliente, como los equipos de Windows y tabletas  <br/> Administrador de clave distribuida (DKM) en centros de datos de Microsoft  <br/> Clave de cliente de Office 365  <br/> |[Windows IT Center: BitLocker](https://docs.microsoft.com/windows/device-security/bitlocker/bitlocker-overview) <br/> [Centro de confianza de Microsoft: cifrado](https://www.microsoft.com/en-us/TrustCenter/Security/Encryption) <br/> [Serie de controles de seguridad en la nube: cifrar datos en reposo](https://blogs.microsoft.com/microsoftsecure/2015/09/10/cloud-security-controls-series-encrypting-data-at-rest) <br/> [Cómo Exchange Online protege su información confidencial de correo electrónico](exchange-online-secures-email-secrets.md) <br/> [Controlar los datos en Office 365 con la clave de cliente](controlling-your-data-using-customer-key.md) <br/> |
 |Archivos en tránsito entre los usuarios. Esto puede incluir documentos de Office o elementos de lista de SharePoint que comparte entre los usuarios.  <br/> |TLS para los archivos en tránsito  <br/> |[Cifrado de datos en OneDrive para la Empresa y SharePoint Online](data-encryption-in-odb-and-spo.md) <br/> [Skype para la empresa en línea: seguridad y archivado](https://technet.microsoft.com/library/skype-for-business-online-security-and-archiving.aspx) <br/> |
-|En tránsito entre los destinatarios de correo electrónico. Esto incluye correo electrónico hospedado por Exchange Online.  <br/> |Cifrado de mensajes de Office 365 con Azure Rights Management, S/MIME y TLS para el correo electrónico en tránsito  <br/> |[Cifrado de mensajes de Office 365 (OME)](ome.md) <br/> [Cifrado de correo electrónico en Office 365](email-encryption.md) <br/> [Empleo de TLS por parte de Exchange Online para proteger las conexiones de correo electrónico en Office 365](exchange-online-uses-tls-to-secure-email-connections.md) <br/> |
+|En tránsito entre los destinatarios de correo electrónico. Esto incluye correo electrónico hospedado por Exchange Online.  <br/> |Cifrado de mensajes de Office 365 con Azure Rights Management, S/MIME y TLS para el correo electrónico en tránsito  <br/> |[Cifrado de mensajes de Office 365 (OME)](ome.md) <br/> [Cifrado de correo electrónico en Office 365](email-encryption.md) <br/> [Cómo Exchange Online usa TLS para proteger las conexiones de correo electrónico en Office 365](exchange-online-uses-tls-to-secure-email-connections.md) <br/> |
    
 ## <a name="what-if-i-need-more-control-over-encryption-to-meet-security-and-compliance-requirements"></a>¿Qué ocurre si necesito más controlar a través de cifrado para cumplir los requisitos de seguridad y cumplimiento de normas?
 
@@ -61,7 +61,7 @@ Vea los siguientes recursos para obtener más información:
     
 - [Activación de Rights Management en el Centro de administración de Office 365](https://support.office.com/article/5b6d3ac7-b1ac-428e-b03e-50e882f85a6e)
     
-- [Establecer seguridad de Information Rights Management (IRM) en el centro de administración de SharePoint](set-up-irm-in-sp-admin-center.md)
+- [Set up Information Rights Management (IRM) in SharePoint admin center](set-up-irm-in-sp-admin-center.md).
     
 ## <a name="how-do-i"></a>Cómo...
 

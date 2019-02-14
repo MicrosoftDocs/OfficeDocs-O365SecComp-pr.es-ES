@@ -12,13 +12,14 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
+ms.collection: M365-security-compliance
 description: Obtenga información sobre cómo buscar y usar informes de seguridad de correo electrónico para la organización con Office 365 Enterprise. Informes de seguridad de correo electrónico están disponibles en la seguridad &amp; centro de cumplimiento.
-ms.openlocfilehash: 3fc6d3dd8468bc060efcaa7eadec2ff9257fe583
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: 0c9b4c4c75f1e2996217bea600b9d36145b30339
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014992"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995301"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>Ver los informes de seguridad de correo electrónico de la seguridad &amp; centro de cumplimiento
 
@@ -176,14 +177,14 @@ Para ver este informe, en la [seguridad &amp; centro de cumplimiento](https://pr
   
 ## <a name="what-permissions-are-needed-to-view-these-reports"></a>¿Qué permisos son necesarios para ver estos informes?
 
-Para poder ver y usar los informes que se describen en este artículo, **debe tener una función adecuada asignada en ambos la seguridad &amp; centro de cumplimiento y el centro de administración de Exchange**.
+Para poder ver y usar los informes que se describen en este artículo, **debe tener un rol correspondiente asignado a ambos la seguridad &amp; centro de cumplimiento y el centro de administración de Exchange**.
 
 - Para la seguridad &amp; centro de cumplimiento, debe tener uno de los siguientes roles asignados:
     - Administración de la organización
-    - Administrador de seguridad
+    - Administrador de seguridad (Esto se puede asignar en el centro de administración de Azure Active Directory ([https://aad.portal.azure.com](https://aad.portal.azure.com))
     - Lector de seguridad
 
-- Para Exchange Online, debe tener uno de los siguientes roles asignados:
+- Para Exchange Online, debe tener uno de los siguientes roles asignados en el centro de administración de Exchange ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) o con los cmdlets de PowerShell (vea [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)):
     - Administración de la organización
     - Administración de organización de solo lectura
     - Rol Destinatarios con permiso de vista

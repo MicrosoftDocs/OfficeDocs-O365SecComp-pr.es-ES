@@ -3,7 +3,7 @@ title: Buscar e investigar el correo electrónico malintencionado que se entreg�
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 8/6/2018
+ms.date: 02/13/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,20 +12,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
+ms.collection: M365-security-compliance
 description: Obtenga información sobre cómo usar la información sobre amenazas para buscar e investigar el correo electrónico malintencionado.
-ms.openlocfilehash: b6d4f8a5d1fcfce4461b91796b1264f94d1eb4d1
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: c7492ccf2a7fa5d67b256264c6ed6fbdb06bcbc8
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014922"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995191"
 ---
 # <a name="find-and-investigate-malicious-email-that-was-delivered-office-365-threat-intelligence"></a>Buscar e investigar el correo electrónico malintencionado que se entregó (Office 365 información sobre amenazas)
 
 [Información sobre amenazas de Office 365](office-365-ti.md) le permite investigar las actividades que los usuarios correr el riesgo y tomar medidas para proteger a su organización. Por ejemplo, si son parte del equipo de seguridad de su organización, puede encontrar e investigar los mensajes de correo electrónico sospechosos que se entregaron a los usuarios. Puede hacerlo mediante [El Explorador de amenaza](get-started-with-ti.md#threat-explorer).
   
-> [!NOTE]
-> Información sobre amenazas de Office 365 está disponible en Office 365 Enterprise E5. Si su organización usa otra suscripción de Office 365 Enterprise, información sobre amenazas de Office 365 puede adquirirse como un complemento. (Como administrador global, en el centro de administración de Office 365, elija **facturación** \> **Agregar suscripciones**.) Para obtener más información, vea [Descripción del servicio Office 365 plataforma: seguridad de Office 365 &amp; centro de cumplimiento](https://technet.microsoft.com/en-us/library/dn933793.aspx) y [comprar o editar un complemento de Office 365 para profesionales](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6). 
+> [!IMPORTANT]
+> A partir de febrero de 2019 e implantar durante los próximos meses, información sobre amenazas de Office 365 se está convirtiendo en Office 365 avanzada amenaza protección Plan 2, con las funcionalidades de protección de amenaza adicionales. Para obtener más información, vea [los planes de protección de amenaza avanzada de Office 365 y los precios](https://products.office.com/exchange/advance-threat-protection) y la [Office 365 avanzada Threat Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
   
 ## <a name="before-you-begin"></a>Antes de comenzar...
 

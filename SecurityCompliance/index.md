@@ -6,17 +6,18 @@ author: robmazz
 manager: laurawi
 layout: LandingPage
 ms.service: office-365
+ms.collection: M365-security-compliance
 ms.tgt_pltfrm: na
 ms.devlang: na
 ms.topic: landing-page
 ms.date: 12/27/2018
 ms.author: robmazz
-ms.openlocfilehash: 255bde226f5a284f2ac20d65124d4722e2357385
-ms.sourcegitcommit: 55762890e5129a5240054990ce64e93007ed7a32
+ms.openlocfilehash: aa6224754830e99f43deb8da5326622a46ccad51
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "27449884"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995181"
 ---
 # <a name="office-365-security-and-compliance"></a>Cumplimiento y seguridad de office 365
 
@@ -51,7 +52,7 @@ Si su organización necesita proteger los datos o cumplir con los estándares le
                     </div>
                     <div class="cardText">
                         <h3>Pasos siguientes dentro de 90 días</h3>
-                        <p>Estas tareas tardan un poco más en planear e implementar pero aumenta considerablemente el nivel de seguridad: <br> - <a href="attack-simulator.md">Llevar a cabo simulaciones de ataque</a> <br> - <a href="meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md">Administrador de cumplimiento de revisión</a> <br> - <a href="https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure">Configuración de administración de identidades con privilegios Azure</a> <br> - <a href="privileged-access-management-configuration.md">Configurar la administración con privilegios de acceso</a>  <br> - <a href="https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks">Habilitar la autenticación multifactor</a> <br> - <a href="protect-against-threats.md">Revisar y actualizar las directivas de protección</a> </p>
+                        <p>Estas tareas tardan un poco más en planear e implementar pero aumenta considerablemente el nivel de seguridad: <br> - <a href="attack-simulator.md">Llevar a cabo simulaciones de ataque</a> <br> - <a href="meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md">Administrador de cumplimiento de revisión</a> <br> - <a href="https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure">Configuración de administración de identidades con privilegios Azure</a> <br> - <a href="privileged-access-management-configuration.md">Configurar la administración con privilegios de acceso</a>  <br> - <a href="https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks">Habilitar la autenticación multifactor</a> <br> - <a href="protect-against-threats.md">Revisar las directivas de protección de actualización de &</a> </p>
                     </div>
                 </div>
             </div>

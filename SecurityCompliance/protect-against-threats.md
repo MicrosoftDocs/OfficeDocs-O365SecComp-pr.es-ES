@@ -11,13 +11,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
+ms.collection: M365-security-compliance
 description: Obtenga información sobre cómo puede ayudar a proteger su organización frente a una amplia variedad de amenazas, incluida la suplantación de identidad, malware, correo no deseado, los intentos de suplantación de identidad y acceso no autorizado a los datos de Office 365 Enterprise.
-ms.openlocfilehash: 38fc2590b8693989befcf399e32ef378ab89495d
-ms.sourcegitcommit: 30faa3ba91cab4c36e3d8d8ed5858d5269ea8a56
+ms.openlocfilehash: 6caf891acb8c96d17a3aa1b4ffc222380ed9341b
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27749314"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995141"
 ---
 # <a name="protect-against-threats-in-office-365"></a>Protección contra amenazas en Office 365
 

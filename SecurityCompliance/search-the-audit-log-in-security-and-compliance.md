@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Usar el centro de cumplimiento de seguridad de Office 365 & para buscar en el registro de auditoría unificado para ver la actividad de usuario y Administrador de la organización de Office 365. '
-ms.openlocfilehash: 41f6f2c90a0171b52807cbf46f15eebb1f16cc9a
-ms.sourcegitcommit: d6b1632a44e40522a4a16e7cb05ba5189214baeb
+ms.openlocfilehash: 55d45d55bb515307ed94853878b6e9ae1cef4ad8
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29890061"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995411"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security--compliance-center"></a>Buscar en el registro de auditoría en el centro de cumplimiento de seguridad de Office 365 &
 
@@ -53,6 +53,8 @@ ms.locfileid: "29890061"
 - Actividad de usuario y la administración in Microsoft Flow
     
 - Actividad de usuario y la administración en Microsoft Stream
+
+- Actividad de analista y administración de análisis de área de trabajo de Microsoft
     
    
 ## <a name="before-you-begin"></a>Antes de empezar
@@ -562,7 +564,7 @@ La siguiente tabla se recogen AD Azure Active directory y dominio relacionadas c
    
 ### <a name="ediscovery-activities"></a>actividades de exhibición de documentos electrónicos
   
-Contenido de búsqueda y las actividades relacionadas con la exhibición de documentos electrónicos que se realizan en Office 365 seguridad &amp; centro de cumplimiento o mediante la ejecución de la correspondiente Windows PowerShell cmdlets se registran en el registro de auditoría de Office 365. Esto incluye las siguientes actividades:
+Búsqueda de contenido y las actividades relacionadas con la exhibición de documentos electrónicos que se realizan en & centro de cumplimiento de seguridad de Office 365 o mediante la ejecución de los cmdlets de Windows PowerShell correspondientes se registran en el registro de auditoría de Office 365. Esto incluye las siguientes actividades:
   
 - Creación y administración de casos de exhibición de documentos electrónicos
     
@@ -587,7 +589,7 @@ Tenga en cuenta que el registro de auditoría de Power BI no está habilitado de
   
 ### <a name="microsoft-workplace-analytics-activities"></a>Actividades de análisis de área de trabajo de Microsoft
 
-En la siguiente tabla se enumera la administración y registro de auditoría de las actividades de analista en análisis de área de trabajo de Microsoft que se registran en Office 365. Análisis de área de trabajo proporcionan una visión de cómo grupos colaboran en toda la organización de Office 365. Para obtener más información, vea [Análisis de área de trabajo](https://docs.microsoft.com/en-us/workplace-analytics/index-orig).
+Análisis de área de trabajo proporcionan una visión de cómo grupos colaboran en toda la organización de Office 365. En la siguiente tabla se enumera las actividades realizadas por los usuarios que tienen asignados la función de administrador o los roles de analista de análisis de área de trabajo. Los usuarios asignados a la función analista tienen acceso completo a todas las características de servicio y usan el producto para realizar análisis. Los usuarios asignados a la función de administrador pueden configurar las opciones de privacidad y valores predeterminados del sistema y puede preparar, cargar y comprobar los datos de análisis de área de trabajo de la organización. Para obtener más información, vea [Análisis de área de trabajo](https://docs.microsoft.com/en-us/workplace-analytics/index-orig).
 
 |**Nombre descriptivo**|**Operation**|**Descripción**|
 |:-----|:-----|:-----|

@@ -12,13 +12,14 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 414fa693-d7b7-4a1d-a387-ebc3b6a52889
+ms.collection: M365-security-compliance
 description: Integrar la protección de amenaza avanzada de Office 365 con Windows Defender avanzada protección contra amenazas para ver información más detallada de administración de amenaza.
-ms.openlocfilehash: e5070e003972ae5308415dcdcca85b069d1163ac
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: f8f5f50af10fb668aa67b68604e95e8dd19c9e69
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29382543"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995211"
 ---
 # <a name="integrate-office-365-threat-intelligence-with-windows-defender-advanced-threat-protection"></a>Integrar la inteligencia de amenazas de Office 365 con la protección contra amenazas avanzada de Windows Defender
 

@@ -12,15 +12,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
+ms.collection: M365-security-compliance
 description: Configurar directivas de vínculos seguros para proteger la organización de vínculos malintencionados en archivos de Word, Excel, PowerPoint y Visio, así como en mensajes de correo electrónico.
-ms.openlocfilehash: 69cef41e3e2dc9b01bf1b001ca63f8202c4c6017
-ms.sourcegitcommit: d6a28c4f6db6a676ca960173e8ff8f17d4aa1c4b
+ms.openlocfilehash: 834b83efe505a399fd3744e97533b92f2fc156f4
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "29755311"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995261"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Configurar las directivas de seguros vínculos con Office 365 ATP
+
+> [!IMPORTANT]
+> En este artículo está destinada a los clientes empresariales. Si es un usuario particular para obtener más información acerca de los vínculos seguros en Outlook, vea [seguridad de Outlook.com avanzadas](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 [Vínculos seguros ATP](atp-safe-links.md), una característica de [Protección de amenaza avanzada de Office 365](office-365-atp.md) (ATP), puede ayudar a proteger su organización de vínculos malintencionados utilizados en suplantación de identidad y otros ataques. Si tiene el requisito [permisos para la seguridad de Office 365 &amp; centro de cumplimiento](permissions-in-the-security-and-compliance-center.md), puede configurar las directivas de vínculos seguros de ATP para ayudar a garantizar que, cuando las personas, haga clic en direcciones web (URL), la organización está protegida. Las directivas de vínculos seguros ATP pueden configurarse para examinar las direcciones URL en correo electrónico y las direcciones URL en los documentos de Office.
   

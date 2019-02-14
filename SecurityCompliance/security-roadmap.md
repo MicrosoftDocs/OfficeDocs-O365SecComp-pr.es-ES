@@ -11,16 +11,17 @@ localization_priority: Normal
 ms.collection:
 - Ent_O365
 - Strat_O365_IP
+- M365-security-compliance
 search.appverid:
 - MET150
 ms.assetid: 28c86a1c-e4dd-4aad-a2a6-c768a21cb352
 description: 'Recomendaciones superiores de la ciberseguridad del equipo de Microsoft para la implementación de las funciones de seguridad para proteger el entorno de Office 365. '
-ms.openlocfilehash: 58767ea9a2b825d1583d9135f9d8edcb0d20d7c2
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: ce7b4371a284763c506ea4e1a06a63dbf2968ae5
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "25450085"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995291"
 ---
 # <a name="office-365-security-roadmap---top-priorities-for-the-first-30-days-90-days-and-beyond"></a>Guía de seguridad de Office 365 - principales prioridades para los primeros 30 días, 90 días y más allá
 

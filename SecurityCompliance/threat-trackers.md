@@ -11,17 +11,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
+ms.collection: M365-security-compliance
 description: Obtenga información sobre los objetos de seguimiento de amenaza, incluidos los rastreadores notable nuevo, para ayudar a su organización permanezca sobre problemas de seguridad.
-ms.openlocfilehash: 7729a78d0b18df7d73751f4480ef095bedc5965b
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+ms.openlocfilehash: 06fdd24e545a3ee04bccf177d777efea31fbe137
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28015002"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995311"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>Rastreadores de amenazas: nuevos y destacables
 
 [Información sobre amenazas de Office 365](office-365-ti.md) permite el equipo de seguridad de su organización detectar y tomar medidas frente a las amenazas de la ciberseguridad. A partir de las últimas de 2018 marzo y a través de las próximas semanas, Office 365 amenaza inteligencia incluirá nuevas características de rastreador de amenaza, incluidos rastreadores notables. Lea este artículo para obtener una introducción a estas nuevas características y pasos siguientes. 
+
+> [!IMPORTANT]
+> A partir de febrero de 2019 e implantar durante los próximos meses, información sobre amenazas de Office 365 se está convirtiendo en Office 365 avanzada amenaza protección Plan 2, con las funcionalidades de protección de amenaza adicionales. Para obtener más información, vea [los planes de protección de amenaza avanzada de Office 365 y los precios](https://products.office.com/exchange/advance-threat-protection) y la [Office 365 avanzada Threat Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
   
 ## <a name="what-are-threat-trackers"></a>¿Cuáles son los objetos de seguimiento de amenaza?
 

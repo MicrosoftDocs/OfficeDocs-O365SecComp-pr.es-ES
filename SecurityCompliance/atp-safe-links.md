@@ -10,7 +10,9 @@ f1_keywords:
 - "197503"
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 search.appverid:
 - MET150
 - MOE150
@@ -20,12 +22,12 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: La característica vínculos seguros proporciona comprobación de tiempo de clic de los hipervínculos en documentos de Office y en los mensajes de correo electrónico. Use los vínculos seguros para proteger la organización de suplantación de identidad y otros ataques.
-ms.openlocfilehash: 4d83aa65af47ea6723d6e2042c230fb2b07c174c
-ms.sourcegitcommit: 065f5e72676511b5ecf7f10a17685999780e92d8
+ms.openlocfilehash: 77b7ac4af8cd9ad27f18af6fd55588e320da69ac
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29888036"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995351"
 ---
 # <a name="office-365-atp-safe-links"></a>Vínculos seguros ATP de Office 365
 

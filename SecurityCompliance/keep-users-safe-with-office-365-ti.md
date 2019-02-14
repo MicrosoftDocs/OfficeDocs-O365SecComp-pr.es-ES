@@ -3,7 +3,7 @@ title: Mantenga seguros a sus usuarios de Office 365 con inteligencia de amenaza
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 2/12/2018
+ms.date: 02/13/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -12,13 +12,14 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 3387bfc3-028a-42f4-8133-4cbecfaab812
+ms.collection: M365-security-compliance
 description: Obtenga información sobre cómo información sobre amenazas de Office 365 puede ayudar a su organización a detectar intrusiones y las amenazas y rápidamente mitigar y recuperarse de las amenazas.
-ms.openlocfilehash: ffcbf6cc179ec8a7e8887402e139d2a0cc716eef
-ms.sourcegitcommit: 2cf7f5bb282c971d33e00f65d9982a3f14aec74e
+ms.openlocfilehash: c049e6f811eec8a30eb2b94361f8cdcbdaa8ac49
+ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "26706104"
+ms.lasthandoff: 02/14/2019
+ms.locfileid: "29995371"
 ---
 # <a name="keep-your-office-365-users-safe-with-office-365-threat-intelligence"></a>Mantenga seguros a sus usuarios de Office 365 con inteligencia de amenazas de Office 365
 
@@ -27,6 +28,9 @@ ms.locfileid: "26706104"
 ¿Sabe cuáles de los usuarios de Office 365 se encuentran en ataque o peor - en peligro? ¿Sabe cómo mitigar y recuperación de los ataques que los usuarios de destino? ¿Sabía que puede hacerlo exactamente con las funciones de seguridad que ya están disponibles en Office 365? 
   
 [Información sobre amenazas de Office 365](office-365-ti.md) es un conjunto de capacidades que se incluyen en su suscripción de Office 365 E5. Office 365 inteligencia de amenaza ha ayudado a Microsoft IT reducir promedio de tiempo de resolución de incidentes de ingeniería social por 80% y aumentar el rendimiento de mayúsculas y minúsculas en un 37% al mes en comparación con los 2 trimestres anteriores! 
+
+> [!IMPORTANT]
+> A partir de febrero de 2019 e implantar durante los próximos meses, información sobre amenazas de Office 365 se está convirtiendo en Office 365 avanzada amenaza protección Plan 2, con las funcionalidades de protección de amenaza adicionales. Para obtener más información, vea [los planes de protección de amenaza avanzada de Office 365 y los precios](https://products.office.com/exchange/advance-threat-protection) y la [Office 365 avanzada Threat Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
   
 Recientemente hemos agregado nuevas capacidades para ayudar a mejorar cómo puede detectar y recuperarse de las amenazas! Aquí tiene un rápido recorrido a través de cómo el servicio de inteligencia de amenaza actualizado puede hacer incluso más eficaz.
   
