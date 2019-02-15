@@ -14,99 +14,97 @@ search.appverid:
 ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
 - M365-security-compliance
-description: Protección contra amenazas avanzadas de Office 365 incluye suplantación de la inteligencia, vínculos seguros, los datos adjuntos seguros, capacidades avanzadas de contra suplantación de identidad y sobre amenazas.
-ms.openlocfilehash: 4899073247f4b39e7cda39f8f35544c436c0b2d7
-ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
+description: La protección contra amenazas avanzada de Office 365 incluye inteligencia engañosa, vínculos seguros, datos adjuntos seguros, capacidades avanzadas antiphishing e inteligencia de amenazas.
+ms.openlocfilehash: d78b37ca048187a298b6e083b54ad68b949638ef
+ms.sourcegitcommit: 2af6c3e8a74995294a67429530af8f085e6ca136
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 02/14/2019
-ms.locfileid: "29995221"
+ms.locfileid: "30051181"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Protección contra amenazas avanzada de Office 365
 
+## <a name="overview-of-office-365-advanced-threat-protection"></a>Información general sobre la protección contra amenazas avanzada de Office 365
+
 > [!IMPORTANT]
-> En este artículo está destinada a los clientes empresariales. Si es un usuario particular para obtener más información acerca de los vínculos seguros en Outlook, vea [seguridad de Outlook.com avanzadas](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Este artículo está destinado a los clientes empresariales. Si es un usuario doméstico que busca información sobre vínculos seguros en Outlook, consulte [Advanced Outlook.com Security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-## <a name="overview-of-office-365-advanced-threat-protection"></a>Información general de Office 365 protección avanzada
-
-Protección de amenaza avanzada de Office 365 (ATP) ayuda a proteger su organización frente a ataques malintencionados por:
+La protección contra amenazas avanzada de Office 365 (ATP) ayuda a proteger su organización contra ataques malintencionados al:
   
-- Análisis de archivos adjuntos de correo electrónico de malware con [Datos adjuntos seguros de ATP](atp-safe-attachments.md)
+- Analizar archivos adjuntos de correo electrónico en busca de malware con [datos adjuntos seguros de ATP](atp-safe-attachments.md)
     
-- Análisis web direcciones (URL) en mensajes de correo electrónico y documentos de Office con [Vínculos seguros de ATP](atp-safe-links.md)
+- Análisis de direcciones web (URL) en mensajes de correo electrónico y documentos de Office con [vínculos seguros de ATP](atp-safe-links.md)
     
-- Identificación y el bloqueo de archivos malintencionados en las bibliotecas en línea con [ATP para SharePoint, OneDrive y los equipos de Microsoft](atp-for-spo-odb-and-teams.md)
+- Identificación y bloqueo de archivos malintencionados en bibliotecas en línea con [ATP para SharePoint, OneDrive y Microsoft Teams](atp-for-spo-odb-and-teams.md)
     
-- Comprobación de los mensajes de correo electrónico de suplantación de identidad no autorizado con [suplantación de la inteligencia](learn-about-spoof-intelligence.md)
+- Comprobación de mensajes de correo electrónico para la suplantación no autorizada con [inteligencia](learn-about-spoof-intelligence.md) de suplantación
     
-- Detectar cuando alguien intenta suplantar a los usuarios y dominios personalizados de la organización con [capacidades de ATP contra suplantación de identidad en Office 365](atp-anti-phishing.md)
+- Detectar cuándo alguien intenta suplantar a los usuarios y los dominios personalizados de la organización con las [funcionalidades contra el suplantado de identidad ATP en Office 365](atp-anti-phishing.md)
     
-**Protección a través de Office 365 ATP está determinada por las directivas que define el equipo de seguridad de su organización para vínculos seguros, los datos adjuntos seguros y contra suplantación de identidad**. Es importante para definir las directivas y revisar periódicamente y revisar dichas directivas para mantenerlos actualizados y a aprovechar las ventajas de las nuevas características que se agregan al servicio. 
+**La protección a través de Office 365 ATP está determinada por las directivas que define el equipo de seguridad de su organización para vínculos seguros, datos adjuntos seguros y antiphishing**. Es importante definir directivas y revisar periódicamente las directivas para mantenerlas actualizadas y aprovechar las ventajas de las nuevas características que se agregan al servicio. 
 
-[Los informes están disponibles](view-reports-for-atp.md) para mostrar cómo funciona ATP para su organización. Estos informes también pueden mostrar áreas donde es posible que necesite revisar y actualizar las directivas. Y, si dispone de los archivos que están marcados como malware que no debería ser, o archivos le gustaría que Microsoft para examinar, puede [Enviar un archivo a Microsoft para su análisis](#submit-a-suspicious-file-to-microsoft-for-analysis).
+Los [informes están disponibles](view-reports-for-atp.md) para mostrar cómo está trabajando ATP para su organización. Estos informes también le pueden mostrar áreas en las que es posible que deba revisar y actualizar las directivas. Además, si tiene archivos que están marcados como malware que no deben o archivos que desea que Microsoft examine, puede [Enviar un archivo a Microsoft para su análisis](#submit-a-suspicious-file-to-microsoft-for-analysis).
 
-## <a name="new-features-are-continually-being-added-to-atp"></a>Las nuevas características se están agregando continuamente ATP
+## <a name="new-features-are-continually-being-added-to-atp"></a>Las nuevas características se agregan continuamente a ATP
 
-Para agregar nuevas características a Office 365, estamos siguiendo e incluye ATP. A continuación se presenta una lista de varias características nuevas, algunas de las cuales llamar para que una directiva de ATP ser revisado y actualizado. Para obtener más información acerca de las nuevas características que incide en ATP (o 365 de Microsoft en general), visite la [Guía básica de 365 de Microsoft](https://www.microsoft.com/microsoft-365/roadmap?filters=O365).
+Seguimos agregando nuevas características a Office 365 y esto incluye ATP. A continuación se muestra una lista de varias características nuevas, algunas de las cuales llaman para revisar y actualizar una directiva de ATP. Para obtener más información acerca de las nuevas características disponibles para ATP (o Microsoft 365 en general), visite el [plan de desarrollo de microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=O365).
 
 
 |Actualizaciones de características  |Elementos de acción  |
 |---------|---------|
-|A partir de febrero de 2019 e implantar durante los próximos meses, se agregan las capacidades de inteligencia de amenaza a ATP. Además, si su organización no tiene actualmente ATP, tendrá nuevas opciones que se deben considerar, incluidos ATP Plan 1 y ATP Plan 2. Para obtener más información, vea [los planes de protección de amenaza avanzada de Office 365 y los precios](https://products.office.com/exchange/advance-threat-protection) y la [Office 365 avanzada Threat Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). |Revise la suscripción de su organización y si es necesario, [comprar o editar un complemento](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/buy-or-edit-an-add-on).  |
-|A partir de octubre de 2018 e implantar durante los próximos meses, cuando las personas están utilizando Outlook o Outlook Web Application (OWA), vínculos seguros ATP procesa las direcciones URL originales, no se modificó las direcciones URL. (Llamamos a esta representación de vínculo nativo).<br>Cuando la representación de vínculo nativo está disponible para su organización, esta característica funcionará en 365 (Click-to-Run) de Outlook y OWA.|Ninguno         |
-|Principio en septiembre de 2018, la característica de [páginas de advertencia de Office 365 ATP](atp-safe-links-warning-pages.md) una nueva combinación de colores, más detalles y la capacidad para seguir a un sitio a pesar de recibir advertencias y recomendaciones. |Ninguno         |
-|A partir de la segunda parte de 2018, protección de vínculos seguros de ATP se ha ampliado para aplicar a las direcciones URL en Office Online (en línea de Word, Excel Online, Online de PowerPoint y OneNote en línea) y Office 365 ProPlus en Mac.   |[Revisar y modificar las directivas de vínculos seguros de ATP](set-up-atp-safe-links-policies.md)  |
-|A partir de las últimas mayo de 2018, capacidades de [cuarentena](quarantine-email-messages.md) en la seguridad &amp; centro de cumplimiento se están extendiendo a [ATP para SharePoint Online, OneDrive para la empresa y los equipos de Microsoft](atp-for-spo-odb-and-teams.md). |[Revisar y modificar las directivas de los datos adjuntos seguros de ATP](set-up-atp-safe-attachments-policies.md) |
-|A partir de marzo de 2018, protección de vínculos seguros de ATP se ha ampliado para aplicar a correo electrónico enviado entre personas dentro de una organización. |[Revisar y modificar las directivas de vínculos seguros de ATP](set-up-atp-safe-links-policies.md) |
-|A partir de las últimas de 2017 octubre, protección de vínculos seguros de ATP se ha ampliado para aplicar a las direcciones URL en correo electrónico, así como las direcciones URL en documentos de Office 365 ProPlus, como Word, Excel, PowerPoint y Visio en Windows, así como Office las aplicaciones de iOS y dispositivos Android.  |Asegúrese de que está utilizando [Autenticación moderno para Office](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016) |
+|A partir de febrero de 2019 y la implementación en los próximos meses, las capacidades de inteligencia sobre amenazas se agregan a ATP. Además, si su organización no tiene ATP, tendrá que tener en cuenta nuevas opciones, incluidos el plan 1 de ATP y el plan ATP 2. Para obtener más información, consulte [planes y precios](https://products.office.com/exchange/advance-threat-protection) de la protección contra amenazas avanzada de Office 365 y la [Descripción del servicio de protección contra amenazas avanzada de Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). |Revise la suscripción de su organización y, si es necesario, [compre o edite un complemento](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/buy-or-edit-an-add-on).  |
+|A partir de octubre de 2018 y de implementarse durante los próximos meses, cuando los usuarios usan Outlook o Outlook Web Application (OWA), los vínculos seguros ATP representan las direcciones URL originales, no las URL reescritas. (Llamamos a esta representación de vínculos nativos).<br>Cuando la representación de vínculos nativos está disponible para su organización, esta característica funcionará en Outlook 365 (hacer clic y ejecutar) y en OWA.|Ninguno         |
+|A partir de 2018 de septiembre, [las páginas de advertencia de ATP de Office 365](atp-safe-links-warning-pages.md) presentan una nueva combinación de colores, más detalles y la posibilidad de continuar a un sitio a pesar de determinadas advertencias y recomendaciones. |Ninguno         |
+|A partir de la segunda mitad de 2018, la protección de vínculos seguros de ATP se extiende para aplicarse a las direcciones URL en Office Online (Word online, Excel online, PowerPoint online, OneNote online) y Office 365 proPlus en Mac.   |[Revisar y editar las directivas de vínculos seguros de ATP](set-up-atp-safe-links-policies.md)  |
+|Desde tarde Mayo 2018, las capacidades de [cuarentena](quarantine-email-messages.md) del centro &amp; de seguridad y cumplimiento se amplían a [ATP para SharePoint Online, OneDrive para la empresa y Microsoft Teams](atp-for-spo-odb-and-teams.md). |[Revisar y editar las directivas de datos adJuntos seguros de ATP](set-up-atp-safe-attachments-policies.md) |
+|A partir de 2018 de marzo, la protección de vínculos seguros de ATP se extiende para aplicarse al correo electrónico que se envía entre personas de una organización. |[Revisar y editar las directivas de vínculos seguros de ATP](set-up-atp-safe-links-policies.md) |
+|A partir de la 2017 de octubre de, la protección de vínculos seguros de ATP se extiende para aplicarse a las direcciones URL en el correo electrónico, así como a las direcciones URL de los documentos de Office 365 proPlus, como Word, Excel, PowerPoint y Visio en Windows, así como las aplicaciones de Office en dispositivos iOS y Android.  |Asegurarse de que está usando la [autenticación moderna para Office](https://docs.microsoft.com/office365/enterprise/modern-auth-for-office-2013-and-2016) |
 
+## <a name="get-office-365-atp"></a>Obtener Office 365 ATP
 
-      
-## <a name="get-office-365-atp"></a>Obtener ATP de Office 365
+Office 365 ATP se incluye en suscripciones, como [microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home), [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business), Office 365 enterprise E5 y Office 365 Education A5. Si su organización tiene una suscripción de Office 365 que no incluye ATP de Office 365, puede comprar ATP como complemento. Para obtener más información, consulte [planes y precios](https://products.office.com/exchange/advance-threat-protection) de la protección contra amenazas avanzada de Office 365 y la [Descripción del servicio de protección contra amenazas avanzada de Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). 
 
-Office 365 ATP se incluye en las suscripciones, como [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home), [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business), Office 365 Enterprise E5 y Office 365 educación A5. Si su organización tiene una suscripción a Office 365 que no incluye Office 365 ATP, puede comprar potencialmente ATP como un complemento. Para obtener más información, vea [precios y planes de protección de amenaza avanzada de Office 365](https://products.office.com/exchange/advance-threat-protection) y [Office 365 avanzada Threat Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). 
+## <a name="define-policies-for-atp"></a>Definir directivas para ATP
 
-## <a name="define-policies-for-atp"></a>Definir directivas de ATP
+Para definir (o editar) las directivas de ATP, debe tener asignado uno de los roles descritos en la tabla siguiente:
 
-Para definir las directivas de ATP (o editar), debe asignar uno de los roles que se describen en la siguiente tabla:
-
-|Rol  |Dónde y cómo asignado  |
+|Rol  |Dónde y cómo se asigna  |
 |---------|---------|
-|Administrador Global de Office 365 |La persona que se registra para comprar Office 365 es un administrador global de forma predeterminada. (Consulte [acerca de Office 365 roles de administrador](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) para obtener más información).         |
-|Administrador de seguridad |Centro de administración de Azure Active Directory ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
-|Administración de la organización en línea de Exchange |Centro de administración de Exchange ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>o <br>  Cmdlets de PowerShell (vea [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
+|Administrador global de Office 365 |La persona que se registra para comprar Office 365 es un administrador global de forma predeterminada. (Consulte [acerca de los roles de administrador de Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) para obtener más información).         |
+|Administrador de seguridad |Centro de administración de Azure Active[https://aad.portal.azure.com](https://aad.portal.azure.com)Directory ()|
+|Administración de la organización de Exchange Online |Centro de administración de[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)Exchange () <br>o <br>  Cmdlets de PowerShell (vea [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
 
 > [!TIP]
-> Para obtener más información sobre los roles y permisos, vea [permisos en la seguridad de Office 365 &amp; centro de cumplimiento](permissions-in-the-security-and-compliance-center.md).
+> Para obtener más información acerca de los roles y los permisos, consulte perMissions [in the Office 365 &amp; Security Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-Hay varios tipos de directivas de ATP para definir y revisar periódicamente.
+Hay varios tipos de directivas de ATP para definir y revisar de forma periódica.
 
-1. **[Configurar directivas de ATP contra suplantación de identidad en Office 365](set-up-anti-phishing-policies.md)** incluyendo ataques de suplantación en protección contra los intrusos que envían los mensajes de correo electrónico que parece ser de confianza de personas o dominios. 
+1. **[Configure las directivas antiphishing de ATP en Office 365](set-up-anti-phishing-policies.md)** , incluidos los ataques basados en suplantación para proteger contra los atacantes que envían mensajes de correo electrónico que parecen pertenecer a personas o dominios de confianza. 
 
-2. **[Configurar directivas de vínculos seguros de ATP en Office 365](set-up-atp-safe-links-policies.md)** incluidos [lista personalizada de direcciones URL bloqueado](set-up-a-custom-blocked-urls-list-wtih-atp.md) y la [lista de direcciones URL personalizada "No reescritura"](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)de su organización.
+2. **[Configure las directivas de vínculos seguros ATP en Office 365](set-up-atp-safe-links-policies.md)** , incluida la [lista de URL bloqueadas personalizadas](set-up-a-custom-blocked-urls-list-wtih-atp.md) de su organización y la [lista de direcciones URL personalizadas "no reescribir"](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md).
     
-3. **[Configurar las directivas de los datos adjuntos seguros de ATP en Office 365](set-up-atp-safe-attachments-policies.md)** y elija entre varias opciones, como [la entrega dinámica y obtener una vista previa](dynamic-delivery-and-previewing.md).
+3. **[Configure las directivas de datos adjuntos seguros ATP en Office 365](set-up-atp-safe-attachments-policies.md)** y elija entre varias opciones, como la [entrega dinámica y la vista previa](dynamic-delivery-and-previewing.md).
   
-## <a name="see-how-atp-is-working-by-viewing-reports"></a>Vea cómo funciona ATP mediante la visualización de informes
+## <a name="see-how-atp-is-working-by-viewing-reports"></a>Ver cómo está funcionando ATP viendo los informes
 
-Una vez sus directivas de ATP, están disponibles para mostrar cómo funciona el servicio de informes. (En el centro de cumplimiento de seguridad de Office 365 &, vaya a **informes** > **panel**.)
+Una vez que se hayan implementado las directivas de ATP, los informes estarán disponibles para mostrar cómo funciona el servicio. (en el centro de cumplimiento de Office 365 Security &, vaya a **informes** > de**panel**).
 
-[![La seguridad &amp; panel del centro de cumplimiento puede ayudarle a ver dónde está trabajando avanzada de protección contra amenazas](media/6b213d34-adbb-44af-8549-be9a7e2db087.png)](view-reports-for-atp.md)
+[![El panel &amp; del centro de seguridad y cumplimiento puede ayudarle a ver dónde está funcionando la protección contra amenazas avanzada](media/6b213d34-adbb-44af-8549-be9a7e2db087.png)](view-reports-for-atp.md)
   
-1. Como un administrador global de Office 365, un administrador de seguridad o un lector de seguridad, vaya a [https://protection.office.com](https://protection.office.com) e iniciar sesión.
+1. Como administrador global de Office 365, administrador de seguridad o lector de seguridad, vaya a [https://protection.office.com](https://protection.office.com) e inicie sesión.
     
-2. Vaya a **informes** > **panel**. (Para obtener ayuda con estos informes, vea [Ver informes de protección contra amenazas de avanzada](view-reports-for-atp.md)).
+2. Vaya a **** > **Panel**de informes. (Para obtener ayuda con estos informes, consulte [ver informes para la protección contra amenazas avanzada](view-reports-for-atp.md)).
     
-3. Si es necesario, realizar ajustes en las directivas de seguridad. Para obtener ayuda con esto, vea los siguientes recursos:
-      - [Directivas de ATP contra suplantación de identidad en Office 365](set-up-anti-phishing-policies.md)
-      - [Directivas de vínculos seguros de ATP en Office 365](set-up-atp-safe-links-policies.md)
-      - [Directivas de los datos adjuntos seguros de ATP en Office 365](set-up-atp-safe-attachments-policies.md)
+3. Si es necesario, realice ajustes en las directivas de seguridad. Para obtener ayuda, vea los siguientes recursos:
+    - [Directivas contra la suplantación de identidad ATP](set-up-anti-phishing-policies.md)
+    - [Directivas de vínculos seguros de ATP](set-up-atp-safe-links-policies.md)
+    - [Directivas de datos adJuntos seguros de ATP](set-up-atp-safe-attachments-policies.md)
     
     
 ## <a name="submit-a-suspicious-file-to-microsoft-for-analysis"></a>Enviar un archivo sospechoso a Microsoft para su análisis
 
-- Si recibe un archivo que cree que podría ser malware, puede enviar ese archivo a Microsoft para su análisis. Visite el [portal de envío de inteligencia de seguridad de Windows Defender](https://go.microsoft.com/fwlink/?linkid=857185).
+- Si obtiene un archivo que sospecha que podría ser malware, puede enviar ese archivo a Microsoft para su análisis. Visite el [portal de envío de inteligencia en seguridad de Windows Defender](https://go.microsoft.com/fwlink/?linkid=857185).
 
-- Si recibe un mensaje de correo electrónico (con o sin datos adjuntos) que le gustaría usar para enviar a Microsoft para su análisis, use el [complemento en el mensaje de informe](enable-the-report-message-add-in.md). 
+- Si recibe un mensaje de correo electrónico (con o sin datos adjuntos) que le gustaría enviar a Microsoft para su análisis, use el [complemento de mensajes de informe](enable-the-report-message-add-in.md). 
   
 
