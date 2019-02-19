@@ -1,5 +1,5 @@
 ---
-title: Usar DKIM para validar el correo electrónico saliente enviado desde su dominio personalizado en Office 365
+title: Usar DKIM para el correo electrónico de su dominio personalizado en Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -13,16 +13,16 @@ search.appverid:
 - MET150
 ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 description: 'Resumen: Este artículo describe cómo usa DomainKeys Identified Mail (DKIM) con Office 365 para asegurarse de que los sistemas de correo electrónico de destino confían en los mensajes enviados desde su dominio personalizado.'
-ms.openlocfilehash: 080d873c91c2dfb5910588113f2a6709b3ee9ab4
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: a076e70b72711d1b812ffb0d30fba0ffb322d6b7
+ms.sourcegitcommit: 24659bdb09f49d0ffed180a4b80bbb7c45c2d301
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29696337"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "29954263"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain-in-office-365"></a>Usar DKIM para validar el correo electrónico saliente enviado desde su dominio personalizado en Office 365
 
- **Resumen:** Este artículo describe cómo usa DomainKeys Identified Mail (DKIM) con Office 365 para asegurarse de que los sistemas de correo electrónico de destino confían en los mensajes enviados desde su dominio personalizado. 
+ **Resumen:** En este artículo se describe cómo usar DomainKeys Identified Mail (DKIM) con Office 365 para asegurarse de que los sistemas de correo electrónico de destino confían en los mensajes salientes desde su dominio personalizado. 
   
 Debería usar DKIM además de SPF y DMARC para ayudarle a evitar que los suplantadores de identidad envíen mensajes que parece que provienen de su dominio. DKIM le permite agregar una firma digital a los mensajes de correo electrónico en el encabezado del mensaje. Suena complicado, pero realmente no lo es. Cuando configura DKIM, autoriza su dominio para asociar, o firmar, su nombre a un mensaje de correo electrónico mediante la autenticación criptográfica. Los sistemas de correo electrónico que reciben correo electrónico desde el dominio pueden usar esta firma digital para ayudarles a determinar si el correo entrante que reciben es legítimo.
   
@@ -88,7 +88,7 @@ Para cada dominio para el que quiera agregar una firma DKIM en DNS, necesita pub
 Use el siguiente formato para los registros CNAME.
 
 > [!IMPORTANT]
-> Si es uno de nuestros clientes GCC alta, calculamos de manera diferente _GuidDominio_ ! En lugar de buscar el registro MX para su _initialDomain_ calcular _GuidDominio_, en su lugar se lo calcule directamente desde el dominio personalizado. Por ejemplo, si su dominio personalizado es "contoso.com" su GuidDominio se convierte en "contoso-com", los períodos se reemplazan con un guión. Por lo tanto, independientemente de qué registro MX, los puntos de initialDomain siempre utilizará el método anterior para calcular la GuidDominio para usar en los registros CNAME.
+> Si es uno de los clientes más importantes de GCC, se calcula _domainGuid_ de manera diferente. En lugar de buscar el registro MX de su _initialDomain_ para calcular _domainGuid_, lo calculamos directamente desde el dominio personalizado. Por ejemplo, si el dominio personalizado es "contoso.com", el domainGuid se convierte en "Contoso-com", los períodos se reemplazan por un guión. Por lo tanto, independientemente de los registros MX a los que apunte el initialDomain, siempre usará el método anterior para calcular el domainGuid para usarlo en sus registros CNAME.
 
   
 ```
@@ -105,13 +105,13 @@ Donde:
   
 - Para Office 365, los selectores siempre serán "selector1" o "selector2". 
     
-- _GuidDominio_ es el mismo que el _GuidDominio_ en el registro MX personalizado para su dominio personalizado que aparece antes de mail.protection.outlook.com. Por ejemplo, en el siguiente registro MX para el dominio contoso.com, el _GuidDominio_ es contoso-com: 
+- _domainGUID_ es el mismo que el _domainGUID_ en el registro MX personalizado para el dominio personalizado que aparece antes de mail.Protection.Outlook.com. Por ejemplo, en el siguiente registro MX para el dominio contoso.com, _domainGUID_ es contoso-com: 
     
     ```
     contoso.com.  3600  IN  MX   5 contoso-com.mail.protection.outlook.com
     ```
 
-- _initialDomain_ es el dominio que utiliza cuando se suscribió para Office 365. Dominios iniciales siempre finalizan en onmicrosoft.com. Para obtener información acerca de cómo determinar su dominio inicial, consulte [Preguntas más frecuentes de dominios](https://support.office.com/article/1272bad0-4bd4-4796-8005-67d6fb3afc5a#bkmk_whydoihaveanonmicrosoft.comdomain).
+- _initialDomain_ es el dominio que usó cuando se suscribió a Office 365. Los dominios iniciales siempre terminan en onmicrosoft.com. Para obtener información sobre cómo determinar el dominio inicial, vea [preguntas más frecuentes sobre dominios](https://support.office.com/article/1272bad0-4bd4-4796-8005-67d6fb3afc5a#bkmk_whydoihaveanonmicrosoft.comdomain).
     
 Por ejemplo, si tiene un dominio inicial de cohovineyardandwinery.onmicrosoft.com y dos dominios personalizados cohovineyard.com y cohowinery.com, necesitará configurar dos registros CNAME para cada dominio adicional, un total de cuatro registros CNAME.
   
@@ -160,7 +160,7 @@ Una vez que haya publicado los registros CNAME en DNS, está preparado para habi
     New-DkimSigningConfig -DomainName <domain> -Enabled $true
     ```
 
-   Donde _dominio_ es el nombre del dominio personalizado que desea habilitar la firma para de DKIM. 
+   Donde _dominio_ es el nombre del dominio personalizado para el que desea habilitar la firma DKIM. 
     
    Por ejemplo, para el dominio contoso.com:
     
@@ -275,13 +275,13 @@ En este ejemplo, para conseguir este resultado:
     
 4. Los sistemas de correo electrónico de recepción realizan una comprobación DKIM mediante la autenticación del valor d=\<dominio\> de la firma DKIM contra el dominio del campo De: (5322.From) dirección del mensaje. En este ejemplo, los valores coinciden:
     
-    remitente @**contoso.com**
+    Sender @**contoso.com**
     
-    d. =**contoso.com**
+    d =**contoso.com**
     
 ## <a name="next-steps-after-you-set-up-dkim-for-office-365"></a>Pasos siguientes: una vez configurado DKIM para Office 365
 <a name="DKIMNextSteps"> </a>
 
-Aunque DKIM está diseñado para ayudar a evitar la suplantación, DKIM funciona mejor con SPF y DMARC. Una vez haya configurado DKIM, si no ya configuró SPF, debe hacerlo. Para obtener una introducción rápida a SPF y para obtenerlo configurado rápidamente, vea [Set up SPF en Office 365 para ayudar a evitar la suplantación de identidad](set-up-spf-in-office-365-to-help-prevent-spoofing.md). Para obtener una descripción más detallada de cómo Office 365 usa SPF, o para las implementaciones de solución de problemas o no estándar, como las implementaciones híbridas, empiece con [cómo Office 365 usa el marco de directivas de remitentes (SPF) para evitar la suplantación de identidad](how-office-365-uses-spf-to-prevent-spoofing.md). A continuación, vea [Usar DMARC para validar el correo electrónico en Office 365](use-dmarc-to-validate-email.md). [Encabezados de mensajes de correo no deseado](anti-spam-message-headers.md) incluye los campos de la sintaxis y encabezado utilizados por Office 365 para comprobaciones de DKIM. 
+Aunque DKIM está diseñado para ayudar a evitar la suplantación de identidad, DKIM funciona mejor con SPF y DMARC. Una vez que haya configurado DKIM, si todavía no ha configurado SPF debe hacerlo. Para obtener una introducción rápida a SPF y configurarlo rápidamente, consulte [configurar SPF en Office 365 para ayudar a evitar la suplantación de identidad](set-up-spf-in-office-365-to-help-prevent-spoofing.md). Para obtener una descripción más detallada de cómo Office 365 usa SPF o para la solución de problemas o implementaciones no estándar, como las implementaciones híbridas, empiece con [la forma en que Office 365 usa el marco de directivas de remitente (SPF) para evitar la](how-office-365-uses-spf-to-prevent-spoofing.md)suplantación de identidad. A continuación, vea [usar DMARC para validar el correo electrónico en Office 365](use-dmarc-to-validate-email.md). Los [encabezados de mensajes de correo no deseado](anti-spam-message-headers.md) incluyen la sintaxis y los campos de encabezado que usa Office 365 para las comprobaciones de DKIM. 
   
 

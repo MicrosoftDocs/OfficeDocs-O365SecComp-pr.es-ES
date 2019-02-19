@@ -10,65 +10,43 @@ localization_priority: None
 search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
-description: Una descripción general de las directivas de Microsoft para Office 365 con respecto a la retención de datos, eliminación y destrucción.
-ms.openlocfilehash: bb038f8bd8e3f0286ea7d673e5e286bdc4a9677d
-ms.sourcegitcommit: 1bccdaacf358505604c9cf422cb1e272aefae19d
+description: Información general sobre las directivas de Microsoft para Office 365 relacionadas con la retención, eliminación y destrucción de datos.
+ms.openlocfilehash: 8a773ebafba0d7cdd36b9da30878dcc487685846
+ms.sourcegitcommit: 24659bdb09f49d0ffed180a4b80bbb7c45c2d301
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "23999151"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "24961576"
 ---
 # <a name="data-retention-deletion-and-destruction-in-office-365"></a>Retención, eliminación y destrucción de datos en Office 365
 
-## <a name="introduction"></a>Introducción
-Microsoft tiene una directiva estándar de tratamiento de datos para Office 365 que especifica cuánto tiempo se conservarán los datos de cliente después va a eliminar. Por lo general, incluido en Office 365, hay dos escenarios en los que se eliminan los datos de cliente:
-- **Eliminación active** - un usuario elimina datos, o datos privados de un usuario se eliminarán después de que el usuario se elimina por el Administrador de un inquilino activo.
-- **Eliminación de pasivo** - los extremos de suscripción del inquilino.
+Microsoft tiene una directiva estándar de tratamiento de datos para Office 365 que especifica cuánto tiempo se conservarán los datos de los clientes después de eliminarlos. Normalmente, hay dos escenarios en los que se eliminan los datos de los clientes:
 
-La directiva estándar de tratamiento de datos de Microsoft para Office 365 especifica cuánto se va a conservar los datos en cada uno de estos escenarios. Las secciones siguientes describen las categorías de datos (que se basa en la clasificación de activos de Office 365 estándar de Microsoft) y los períodos de retención para los escenarios de eliminación activas y pasivas.
+- **Eliminación activa** : el inquilino tiene una suscripción activa y un usuario elimina datos, o bien el administrador elimina los datos proporcionados por un usuario.
+- **Eliminación pasiva** : finaliza la suscripción de inquilino.
 
-## <a name="active-deletion-retention"></a>Retención de eliminación activo
+## <a name="data-retention"></a>Retención de datos
 
-| Categoría de datos | Conservar al menos | Conservar como máximo |
-|---------------------------------------|:-----------------:|:-----------------:|:----------------------------------:|:-------------------------------:|
-| Datos de Control de acceso | N/D | N/D |
-| Contenido de cliente | 7 días | 30 días |
-| Información de identificación personal del usuario final | 90 días | 180 días |
-| Datos de la cuenta | 1 año | 3 años |
-| Información de identificación de organización | 90 días | 180 días |
-| Metadatos del sistema | Consulte los registros de seguridad | Consulte los registros de seguridad |
-| Registros de seguridad | Min 1 año | 1 año de Max |
-| Registros de archivado en línea de Exchange | Min 3 años | 3 años de Max |
+Para cada uno de estos escenarios de eliminación, en la tabla siguiente se muestra el período de retención de datos máximo, por categoría de datos y clasificación:
 
-## <a name="passive-deletion-retention"></a>Retención de eliminación pasivo
+| Categoría de datos | Clasificación de datos | Descripción | Ejemplos | Período de retención |
+|-----------------|-----------------|-----------------|----------------------------------|-------------------------------|
+| Datos de cliente | Contenido del cliente| Contenido proporcionado directamente/creado por administradores y usuarios <br><br> Esto incluye todo el texto, sonido, vídeo, archivos de imagen y software creado y almacenado en centros de datos de Microsoft cuando se usan los servicios de Office 365 | Algunos ejemplos de las aplicaciones de Office 365 más usadas que permiten a los usuarios crear datos son Word, Excel, PowerPoint, Outlook y OneNote <br><br> El contenido del cliente también incluye secretos de propiedad del cliente o proporcionados (contraseñas, certificados, claves de cifrado, claves de almacenamiento) | **Escenario de eliminación activa:** como máximo 30 días <br><br> **Escenario de eliminación pasiva:** como máximo 180 días |
+| Datos de cliente | Información de identificación del usuario final (EUII) | Datos que identifican o pueden usarse para identificar al usuario de un servicio de Microsoft. EUII no incluye contenido del cliente | Nombre de usuario o nombre para mostrar (Dominio\nombre de usuario) <br><br> Nombre principal de usuario (nombre @ dominio) <br><br>  Direcciones IP específicas del usuario | **Escenario de eliminación activa:** como máximo de 180 días (solo una acción de administrador de inquilinos) <br><br> **Escenario de eliminación pasiva:** como máximo 180 días |
+| Datos personales <br> (datos no incluidos en los datos del cliente) | Identificadores de seudónimos de usuario final (EUPI) | Identificador creado por Microsoft ligado al usuario de un servicio de Microsoft. Cuando EUPI se combina con otra información, como una tabla de asignación, identifica al usuario final. <br><br> EUPI no contiene información que el cliente ha cargado o creado | GUID de usuario, PUIDs o SID <br><br> Identificadores de sesión | **Escenario de eliminación activa:** como máximo 30 días <br><br> **Escenario de eliminación pasiva:** como máximo 180 días |
 
-| Categoría de datos | Conservar al menos | Conservar como máximo |
-|---------------------------------------|:-----------------:|:-----------------:|:----------------------------------:|:-------------------------------:|
-| Datos de Control de acceso | 90 días (para la recuperación de contenido) | 180 días (para la recuperación de contenido) |
-| Contenido de cliente | 90 días (cuenta de función limitada) | 180 días |
-| Información de identificación personal del usuario final | 90 días | 180 días |
-| Datos de la cuenta | 1 año | 3 años |
-| Información de identificación de organización | 90 días | 180 días |
-| Metadatos del sistema | Consulte los registros de seguridad | Consulte los registros de seguridad |
-| Registros de seguridad | Min 1 año | 1 año de Max |
-| Registros de archivado en línea de Exchange | Min 3 años | 3 años de Max |
+## <a name="subscription-retention"></a>Retención de suscripción
 
-## <a name="subscription-rentention"></a>Limpieza de suscripción
+En todo momento durante el período de una suscripción activa, un suscriptor puede obtener acceso, extraer o eliminar los datos de los clientes almacenados en Office 365. Si una suscripción de pago finaliza o finaliza, Microsoft conservará los datos de los clientes almacenados en Office 365 en una cuenta de funciones limitadas durante 90 días para permitir que el suscriptor Extraiga los datos. Una vez finalizado el período de retención de 90 días, Microsoft deshabilitará la cuenta y eliminará los datos del cliente. No más de 180 días tras la expiración o cancelación de una suscripción a Office 365, Microsoft deshabilitará la cuenta y eliminará todos los datos de los clientes de la cuenta. Una vez que ha transcurrido el período de retención máximo de los datos, los datos se representan comercialmente no recuperables.
 
-Contenido de cliente se define como el contenido del buzón Exchange Online (cuerpo, las entradas de calendario y el contenido de los datos adjuntos de correo electrónico, correo electrónico y, si procede, Skype para contenido empresarial), SharePoint Online contenido del sitio y los archivos almacenados dentro de los sitios y cargar a OneDrive para empresa o de Skype para la empresa.
+En el caso de una prueba gratuita, su cuenta pasará a un estado de gracia durante 30 días en la mayoría de países y regiones. Durante este período de gracia, tiene la opción de comprar Office 365. Si decide no comprar Office 365, puede cancelar la versión de prueba o dejar que expire el período de gracia y se eliminarán los datos y la información de la cuenta de prueba.
 
-En todo momento durante el término de una suscripción, un suscriptor puede tener acceso y extraer los datos del cliente almacenados en Office 365. Excepto en versiones gratuitas y servicios de LinkedIn, Microsoft mantiene datos almacenados en Office 365 en una cuenta limitada función durante 90 días después de la caducidad o la terminación de la suscripción para habilitar el suscriptor extraer los datos de los clientes. (En el caso de una versión de prueba gratuita, cuando expire la versión de evaluación, lo traslada a un período de gracia, que confiere 30 días (para la mayoría ensayos, en la mayoría de países y regiones) para adquirir Office 365. Si decide no comprar Office 365, puede let su caducidad de prueba o Cancelar. Poco después del período de gracia de 30 días, su información de cuenta de prueba y los datos se permanentemente borrará.)
-
-Después de que finalice el período de retención de 90 días, Microsoft deshabilita la cuenta y elimina los datos del cliente. No más de 180 días después de la expiración o terminación de una suscripción a Office 365, Microsoft deshabilitar la cuenta y eliminar todos los datos de cliente de la cuenta. Una vez que haya transcurrido el período de retención máximo para todos los datos, los datos se representan comercialmente irrecuperables.
-
-Microsoft también dispone de una directiva estándar de tratamiento de datos que resuelve el reciclaje y la eliminación de unidades de disco y con errores o retirar servidores. Antes de volver a usar las unidades de disco dentro de Office 365, Microsoft lleva a cabo un proceso de limpieza físico que sea compatible con NIST SP 800-88. Unidades de disco que no se puede volver a utilizadas se eliminan mediante un proceso de destrucción física que se lleva a cabo en el sitio del centro de datos que contiene los discos que se va a destruir. Estos procedimientos se llevan a cabo mediante la infraestructura de nube de Microsoft & operaciones (MCIO). Para obtener más información, consulte el MCIO de informes en la [Vista previa de confianza del servicio](https://aka.ms/STP)de auditoría.
-
-## <a name="expedited-deletion"></a>Eliminación acelerada
-En todo momento durante el término de una suscripción, un suscriptor puede ponerse en contacto con Microsoft Support y solicitud EF Desaprovisionamiento de suscripción. En este proceso, todos los datos de usuario, incluidos los datos de SharePoint Online, Exchange Online que puede estar en suspensión o almacenados en los buzones de correo inactivos, es eliminados tres días después de que el administrador escribe el código de bloqueo proporcionado por Microsoft. Para obtener más información sobre desaprovisionamiento acelerada, vea [Cancelar Office 365](https://support.office.com/article/Cancel-Office-365-for-business-b1bc0bef-4608-4601-813a-cdd9f746709a).
+## <a name="expedited-deletion"></a>Eliminación urgente
+En todo momento, durante el período de una suscripción, un suscriptor puede ponerse en contacto con el soporte técnico de Microsoft y solicitar la anulación de la suscripción de la suscripción. En este proceso, todos los datos de usuario, incluidos los datos de SharePoint Online, Exchange online que pueden estar en retención o almacenados en buzones inactivos, se eliminan tres días después de que el administrador escriba el código de bloqueo proporcionado por Microsoft. Para obtener más información sobre la anulación de aprovisionamiento urgente, vea [Cancelar Office 365](https://support.office.com/article/Cancel-Office-365-for-business-b1bc0bef-4608-4601-813a-cdd9f746709a).
 
 ## <a name="related-links"></a>Vínculos relacionados
+- [Destrucción de datos](office-365-data-destruction.md)
+- [Inmutabilidad en Office 365](office-365-data-immutability.md)
 - [Eliminación de datos en Exchange Online](office-365-exchange-online-data-deletion.md)
 - [Eliminación de datos en SharePoint Online](office-365-sharepoint-online-data-deletion.md)
 - [Eliminación de datos en Skype Empresarial](office-365-skype-data-deletion.md)
-- [Inmutabilidad en Office 365](office-365-data-immutability.md)
-- [Destrucción de datos](office-365-data-destruction.md)

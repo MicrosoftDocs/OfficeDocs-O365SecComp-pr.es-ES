@@ -10,50 +10,50 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 5076d0f6-7a59-4d6c-bd07-ba95033f0682
-description: ATP contra suplantación de identidad es parte de la protección de amenaza avanzada de Office 365. ATP contra suplantación de identidad, aplica un conjunto de modelos de aprendizaje de máquina junto con los algoritmos de detección de suplantación a los mensajes entrantes para proporcionar protección para mercancías y lanza ataques de suplantación de identidad. Todos los mensajes están sujetas a un amplio conjunto de modelos de aprendizaje de máquina capacitados para detectar los mensajes de suplantación de identidad, junto con un conjunto de algoritmos avanzados que se usa para proteger contra diversos ataques de suplantación de usuario y dominio.
-ms.openlocfilehash: c3e44a313bf9c823fbfda138fc5a10294993d509
-ms.sourcegitcommit: c1c41744c2de89c9e172f817c8f73bb0ada81a58
+description: La protección contra phishing de ATP forma parte de la protección contra amenazas avanzada de Office 365. ATP anti-phishing aplica un conjunto de modelos de aprendizaje automático junto con algoritmos de detección de suplantación a los mensajes entrantes para proporcionar protección para los ataques de suplantación de identidad (phishing) y de consumo. Todos los mensajes están sujetos a un amplio conjunto de modelos de aprendizaje de máquinas capacitados para detectar mensajes de suplantación de identidad (phishing), junto con un conjunto de algoritmos avanzados que se usan para proteger contra varios ataques de suplantación de usuario y de dominio.
+ms.openlocfilehash: 3cd786de403bd2fe4fcdd5d53f3f825c6e4e8a40
+ms.sourcegitcommit: 24659bdb09f49d0ffed180a4b80bbb7c45c2d301
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2019
-ms.locfileid: "29792275"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "29889253"
 ---
 # <a name="atp-anti-phishing-capabilities-in-office-365"></a>Funciones de ATP contra suplantación de identidad en Office 365
 
-ATP contra suplantación de identidad es parte de [La protección de amenaza avanzada de Office 365](office-365-atp.md). ATP contra suplantación de identidad, aplica un conjunto de modelos de aprendizaje de máquina junto con los algoritmos de detección de suplantación a los mensajes entrantes para proporcionar protección para mercancías y lanza ataques de suplantación de identidad. Todos los mensajes están sujetas a un amplio conjunto de modelos de aprendizaje de máquina capacitados para detectar los mensajes de suplantación de identidad, junto con un conjunto de algoritmos avanzados que se usa para proteger contra diversos ataques de suplantación de usuario y dominio. ATP contra suplantación de identidad protege su organización de acuerdo a las directivas que se establecen por su Office 365 globales o los administradores de seguridad.
+La protección contra phishing de ATP forma parte de la [protección contra amenazas avanzada de Office 365](office-365-atp.md). ATP anti-phishing aplica un conjunto de modelos de aprendizaje automático junto con algoritmos de detección de suplantación a los mensajes entrantes para proporcionar protección para los ataques de suplantación de identidad (phishing) y de consumo. Todos los mensajes están sujetos a un amplio conjunto de modelos de aprendizaje de máquinas capacitados para detectar mensajes de suplantación de identidad (phishing), junto con un conjunto de algoritmos avanzados que se usan para proteger contra varios ataques de suplantación de usuario y de dominio. La protección contra el phishing de ATP protege a su organización de acuerdo con las directivas establecidas por los administradores globales o de seguridad de Office 365.
   
-Para obtener más información, vea [configurar las directivas contra suplantación de identidad en Office 365](set-up-anti-phishing-policies.md).
+Para obtener más información, consulte [set up anti-phishing policies in Office 365](set-up-anti-phishing-policies.md).
   
 > [!NOTE]
-> Sólo está disponible en avanzada protección contra amenazas, que se incluye en las suscripciones, como [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home), [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business), Office 365 Enterprise E5, Office 365 educación A5, etcetera ATP contra suplantación de identidad. Si su organización tiene una suscripción a Office 365 que no incluye Office 365 ATP, puede comprar potencialmente ATP como un complemento. Para obtener más información, vea [precios y planes de protección de amenaza avanzada de Office 365](https://products.office.com/exchange/advance-threat-protection) y [Office 365 avanzada Threat Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+> La protección contra phishing de ATP solo está disponible en la protección contra amenazas avanzada, que se incluye en las suscripciones, como [microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home), [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business), Office 365 enterprise E5, Office 365 Education A5, etc. Si su organización tiene una suscripción de Office 365 que no incluye ATP de Office 365, puede comprar ATP como complemento. Para obtener más información, consulte [planes y precios](https://products.office.com/exchange/advance-threat-protection) de la protección contra amenazas avanzada de Office 365 y la [Descripción del servicio de protección contra amenazas avanzada de Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
 
-## <a name="how-atp-anti-phishing-works"></a>Cómo funciona la ATP contra suplantación de identidad
+## <a name="how-atp-anti-phishing-works"></a>Cómo funciona la protección contra el phishing ATP
 
-ATP anti-phishing comprueba los mensajes entrantes para los indicadores de que el mensaje puede ser la suplantación de identidad. Cada vez que un usuario está cubierto por una directiva de ATP (los datos adjuntos seguros, vínculos seguros o contra suplantación de identidad) se evalúa el mensaje entrante por máquina varios modelos que analizar el mensaje para determinar si la directiva se aplica al mensaje y la acción apropiada de aprendizaje tomar, en función de la directiva configurada.
+Anti-phishing de ATP comprueba los mensajes entrantes en busca de indicadores de que el mensaje puede ser una suplantación de identidad. Siempre que un usuario está cubierto por una directiva ATP (datos adjuntos seguros, vínculos seguros o antiphishing) el mensaje entrante se evalúa en varios modelos de aprendizaje automático que analizan el mensaje para determinar si la Directiva se aplica al mensaje y la acción correspondiente es se realiza en función de la Directiva configurada.
   
-ATP contra suplantación de identidad permite a los administradores globales de Office 365 o administradores de seguridad definir las directivas que proporcionan protección contra ataques de suplantación de identidad que incluyen la suplantación de usuarios o dominios. (o ambos). Los administradores globales de Office 365 o administradores de seguridad definición dentro de la directiva de usuario y los dominios se debe proteger contra los ataques de suplantación mediante una lista fija de usuarios o dominios o mediante el uso de inteligencia de buzón de correo. Inteligencia de buzón de correo es una descripción avanzada de hábitos de correo electrónico de un usuario y contactos personales. ATP aprende cómo cada usuario individual se comunica con otros usuarios dentro y fuera de la organización y genera un mapa de estas relaciones. Este mapa permite ATP conocer más detalles acerca de cómo asegurarse de que los mensajes de derecho son identificados como suplantación.
+ATP anti-phishing permite a los administradores globales de Office 365 o a los administradores de seguridad definir directivas que proporcionan protección contra ataques de suplantación de identidad (phishing) que incluyen la suplantación de usuarios o dominios. (o ambos). Los administradores globales de Office 365 o los administradores de seguridad definen en la Directiva qué usuarios y dominios deben protegerse de los ataques de suplantación mediante una lista fija de usuarios o dominios o mediante el uso de la inteligencia de buzones de correo. La inteligencia de buzones es un conocimiento avanzado de las hábitos de correo electrónico y los contactos personales de un usuario. ATP aprende cómo cada usuario individual se comunica con otros usuarios de dentro y fuera de la organización y crea un mapa de estas relaciones. Esta asignación permite que ATP comprenda más detalles sobre cómo asegurarse de que los mensajes correctos se identifican como suplantación.
   
-Las directivas de ATP contra suplantación de identidad se puede aplicar a un conjunto específico de personas o grupos de la organización, o a un dominio completo o todos los dominios personalizados. Para obtener más información, vea [configurar las directivas contra suplantación de identidad en Office 365](set-up-anti-phishing-policies.md).
+Las directivas antiphishing de ATP se pueden aplicar a un conjunto específico de personas o grupos de la organización, o a un dominio completo o a todos los dominios personalizados. Para obtener más información, consulte [set up anti-phishing policies in Office 365](set-up-anti-phishing-policies.md).
   
-## <a name="how-to-get-atp-anti-phishing"></a>Cómo obtener ATP contra suplantación de identidad
+## <a name="how-to-get-atp-anti-phishing"></a>Cómo obtener anti-phishing de ATP
 
-Características de ATP Anti-Phishing forman parte de la [Protección avanzada de amenaza](office-365-atp.md); Sin embargo, la protección contra suplantación de identidad de ATP se aplica cuando se definen las directivas contra suplantación de identidad. (Un ejemplo es una directiva de suplantación). Consulte [configurar las directivas contra suplantación de identidad en Office 365](set-up-anti-phishing-policies.md).
+Las características contra la suPlantación de identidad ATP forman parte de la [protección contra amenazas avanzada](office-365-atp.md); sin embargo, la protección contra la suplantación de identidad ATP se aplica cuando se definen las directivas antiphishing. (Un ejemplo es una directiva basada en suplantación). Consulte [set up anti-phishing policies in Office 365](set-up-anti-phishing-policies.md).
   
-## <a name="how-to-know-if-atp-anti-phishing-is-in-place"></a>Cómo saber si ATP contra suplantación de identidad está en su lugar
+## <a name="how-to-know-if-atp-anti-phishing-is-in-place"></a>Cómo saber si se ha implementado anti-phishing de ATP
 
-Directivas de anti-phishing ATP deben definirse en orden para protección surta efecto. Compruebe esto en primer lugar para comprobar la protección está en su lugar.
+Las directivas antiphishing de ATP deben definirse en orden para que la protección esté en vigor. Compruebe esto primero para comprobar que la protección está en su lugar.
 
-Además, los informes están disponibles para mostrar cómo funciona el servicio para la organización. Para obtener más información, vea [Ver informes de protección de amenaza avanzada de Office 365](view-reports-for-atp.md).
+Además, los informes están disponibles para mostrar cómo funciona el servicio para su organización. Para obtener más información, consulte [View Reports for Office 365 Advanced Threat Protection](view-reports-for-atp.md).
 
-Máquina de anti-phishing ATP modelos para que esté activo para un usuario determinado de aprendizaje, que el usuario debe ser parte de una directiva de [Datos adjuntos seguros de ATP](atp-safe-attachments.md), [Vínculos seguros ATP](atp-safe-links.md)o ATP Anti-Phishing definida. 
+Para que los modelos de aprendizaje de equipos anti-phishing de ATP estén activos para un usuario concreto, dicho usuario debe formar parte de una directiva de [datos adjuntos seguros](atp-safe-attachments.md)de ATP definida, [vínculos seguros de ATP](atp-safe-links.md)o una directiva antiphishing de ATP. 
 
-En la siguiente tabla se describe algunos escenarios de ejemplo. En cada uno de estos ejemplos, la organización está usando Office 365 Enterprise E5, que incluye la protección contra amenazas de avanzada.
+En la tabla siguiente se describen algunos escenarios de ejemplo. En cada uno de estos ejemplos, la organización usa Office 365 Enterprise E5, que incluye protección contra amenazas avanzada.
   
-|**Escenario de ejemplo**|**¿Se aplica en este caso ATP contra suplantación de identidad?**|
+|**Escenario de ejemplo**|**¿Se aplica la protección contra la suplantación ATP en este caso?**|
 |:-----|:-----|
-|Organización de Pat tiene E5 Enterprise de Office 365, pero nadie ha definido las directivas de ATP seguros los datos adjuntos, vínculos seguros ATP o ATP avanzado de suplantación de identidad todavía.|No. Aunque la característica está disponible, debe definirse al menos una directiva de ATP en orden de la máquina de ATP modelos de aprendizaje para que funcione. Para la suplantación una directiva contra suplantación de identidad de ATP también debe ser en su lugar.|
-|Lee es un empleado del departamento de ventas de Contoso. Organización de Díaz tiene una directiva contra suplantación de identidad de ATP en contexto que se aplica a los empleados de finanzas sólo.|No. En este caso, ATP contra suplantación de identidad (modelos de equipo y protección de suplantación) se aplicará a los empleados de finanzas, pero otros empleados, incluido el departamento de ventas, no lo haría.|
-|Ayer, un administrador de Office 365 en la organización de Jean establecer una directiva de ATP contra suplantación de identidad que se aplica a todos los empleados. Anteriormente en la actualidad, Jean recibió un mensaje de correo electrónico que incluya una suplantación cubierta por la directiva.|Sí. En este ejemplo, Jean tiene una licencia para protección avanzada de amenaza y se ha definido una directiva contra suplantación de identidad de ATP que incluye Jean. Normalmente tiene unos 30 minutos para una nueva directiva tener efecto en centros de datos; Dado que un día ha pasado en este caso, la directiva debe ser en vigor.|
+|La organización de Pat tiene Office 365 Enterprise E5, pero nadie ha definido ninguna directiva para los datos adjuntos seguros de ATP, los vínculos seguros de ATP o el phishing avanzado de ATP todavía.|Dejan. Aunque la característica está disponible, se debe definir al menos una directiva ATP para que funcionen los modelos de aprendizaje automático de ATP. Para la suplantación, también debe estar implementada una directiva antiphishing de ATP.|
+|Lee es un empleado del Departamento de ventas de contoso. La organización de Lee tiene una directiva contra la suplantación de identidad ATP que solo se aplica a los empleados de finanzas.|Dejan. En este caso, la antiphishing de ATP (modelos de equipo e protección de suplantación) se aplicaría a los empleados de finanzas, pero otros empleados, incluido el Departamento de ventas, no lo harían.|
+|Ayer, un administrador de Office 365 en la organización de Jean configuró una directiva antiphishing de ATP que se aplica a todos los empleados. Anteriormente, Jean recibió un mensaje de correo electrónico que incluye una suplantación cubierta por la Directiva.|Afirma. En este ejemplo, Jean tiene una licencia para la protección contra amenazas avanzada y se ha definido una directiva contra la suplantación de identidad (ATP) que incluye Jean. Por lo general, la nueva Directiva tarda unos 30 minutos en surtir efecto en los centros de recursos; como se ha pasado un día en este caso, la Directiva debe estar en vigor.|
 
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -61,14 +61,14 @@ En la siguiente tabla se describe algunos escenarios de ejemplo. En cada uno de 
   
 [Protección contra suplantación de identidad (phishing) en Office 365](anti-phishing-protection.md)
   
-[Configurar las directivas contra suplantación de identidad en Office 365](set-up-anti-phishing-policies.md)
+[Configurar directivas antiphishing en Office 365](set-up-anti-phishing-policies.md)
   
 [Vínculos seguros de ATP en Office 365](atp-safe-links.md)
   
-[Configurar directivas de ATP vínculos seguros en Office 365](set-up-atp-safe-links-policies.md)
+[Configurar las directivas de vínculos seguros ATP en Office 365](set-up-atp-safe-links-policies.md)
   
 [Datos adjuntos seguros de ATP en Office 365](atp-safe-attachments.md)
   
-[Configurar las directivas de los datos adjuntos seguros de ATP en Office 365](set-up-atp-safe-attachments-policies.md)
+[Configurar las directivas de datos adjuntos seguros ATP en Office 365](set-up-atp-safe-attachments-policies.md)
   
-[Ver los informes de protección contra amenazas de avanzada](view-reports-for-atp.md)
+[Ver los informes para la protección contra amenazas avanzada](view-reports-for-atp.md)
