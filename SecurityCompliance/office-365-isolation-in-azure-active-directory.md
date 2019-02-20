@@ -1,5 +1,5 @@
 ---
-title: Aislamiento de Office 365 y Control de acceso en Azure Active Directory
+title: Aislamiento y control de acceso de Office 365 en Azure Active Directory
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -10,38 +10,40 @@ ms.service: Office 365 Administration
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
-description: 'Resumen: Cómo funcionan el aislamiento y Control de acceso dentro de Azure Active Directory.'
-ms.openlocfilehash: db4fa0d026c6c608f09252c65bf1e0de5354f68c
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
+description: 'Resumen: funcionamiento del aislamiento y el control de acceso dentro de Azure Active Directory.'
+ms.openlocfilehash: 01103361a084d50adbc6c0a8351d9af8311a39fd
+ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22536724"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30090512"
 ---
 # <a name="isolation-and-access-control-in-azure-active-directory"></a>Aislamiento y Control de acceso en Azure Active Directory
 
-Azure Active Directory se ha diseñado para hospedar a varios inquilinos de una forma muy segura a través de aislamiento lógico de datos. Acceso a Active Directory de Azure es controlado por una capa de autorización. Azure Active Directory aísla a los clientes que usen los contenedores de inquilinos como los límites de seguridad para proteger el contenido de un cliente para que el contenido no se puede tener acceso a o se ve comprometido por los inquilinos compañero. Se realizan comprobaciones de tres por la capa de autorización de Active Directory de Azure:
-- ¿Está habilitada la entidad de seguridad para el acceso a los inquilinos de Azure Active Directory?
-- ¿Está habilitada la entidad de seguridad para el acceso a los datos de este inquilino?
-- ¿Es el rol de la entidad de seguridad en este inquilino autorizado para el tipo de acceso a los datos solicitado?
+Azure Active Directory se diseñó para hospedar varios inquilinos de una forma muy segura mediante el aislamiento de datos lógicos. Un nivel de autorización controla el acceso a Azure Active Directory. Azure Active Directory aísla a los clientes en el uso de contenedores de inquilinos como límites de seguridad para proteger el contenido de un cliente de modo que los coinquilinos no puedan acceder al contenido ni verse comprometidos. La capa de autorización de Azure Active Directory realiza tres comprobaciones:
+- ¿Está habilitada la entidad principal para obtener acceso al inquilino de Azure Active Directory?
+- ¿Está habilitada la entidad principal para obtener acceso a los datos de este inquilino?
+- ¿La entidad de identidad está autorizada en este inquilino para el tipo de acceso a datos solicitado?
 
-Ninguna aplicación, usuario, servidor o servicio puede tener acceso a Azure Active Directory sin la autenticación apropiada y el símbolo (token) o el certificado. Las solicitudes se rechazan si no van acompañados de las credenciales correctas.
+Ninguna aplicación, usuario, servidor o servicio puede obtener acceso a Azure Active Directory sin la autenticación y el certificado correctos. Las solicitudes se rechazan si no van acompañadas de las credenciales correctas.
 
-De hecho, Azure Active Directory hospeda a cada inquilino en su propio contenedor protegido, con las directivas y permisos para y dentro del contenedor únicamente posee y administra el inquilino.
+De hecho, Azure Active Directory hospeda cada inquilino en su propio contenedor protegido, con directivas y permisos para y en el contenedor que solo posee y administra el inquilino.
  
-![Contenedor de Azure](media/office-365-isolation-azure-container.png)
+![Azure Container](media/office-365-isolation-azure-container.png)
 
-El concepto de contenedores de inquilino profundamente es una constante en el servicio de directorio en todos los niveles, desde portales para el almacenamiento persistente. Incluso cuando varios metadatos del inquilino de Azure Active Directory se almacenan en el mismo disco físico, no hay ninguna relación entre los contenedores que no sea lo que se define mediante el servicio de directorio, que a su vez está determinado por el Administrador de inquilinos. No puede haber ninguna conexión directa al almacenamiento de Azure Active Directory desde cualquier aplicación o servicio sin atravesar la capa de autorización solicitante.
+El concepto de contenedores de inquilinos es profundamente ingranulado en el servicio de directorio en todas las capas, desde portales hasta almacenamiento persistente. Incluso cuando varios metadatos de inquilino de Azure Active Directory se almacenan en el mismo disco físico, no hay una relación entre los contenedores que no sean lo definido por el servicio de directorio, que a su vez viene dictado por el administrador de inquilinos. No puede haber conexiones directas con el almacenamiento de Azure Active Directory desde ninguna aplicación o servicio de solicitud sin pasar primero por el nivel de autorización.
 
-En el siguiente ejemplo, Contoso y Fabrikam tienen contenedores dedicados, independientes y, aunque estos contenedores pueden compartir algunas de la misma infraestructura subyacente, tales como servidores y almacenamiento de información, siendo independientes y aisladas entre ellas y controlada por capas de autorización y control de acceso.
+En el ejemplo siguiente, contoso y Fabrikam tienen contenedores independientes dedicados y, aunque estos contenedores pueden compartir algunas de las infraestructuras subyacentes, como los servidores y el almacenamiento, permanecen separadas y aisladas entre sí y se canalizan mediante capas de autorización y control de acceso.
  
 ![Contenedores dedicados de Azure](media/office-365-isolation-azure-dedicated-containers.png)
 
-Además, no hay ningún componente de aplicación que puede ejecutar desde dentro de Azure Active Directory y no es posible para un inquilino a forzosamente infringir la integridad del inquilino de otra, tener acceso a las claves de cifrado de otro inquilino o leer datos sin procesar desde el servidor.
+Además, no hay ningún componente de la aplicación que se pueda ejecutar desde dentro de Azure Active Directory y no es posible que un inquilino infrinja forzosamente la integridad de otro inquilino, obtenga acceso a las claves de cifrado de otro inquilino o lea datos sin procesar del servidor.
 
-De forma predeterminada, Azure Active Directory impide la ejecución de todas las operaciones emitidas por las identidades de otros inquilinos. Cada inquilino es lógicamente aislada dentro de Azure Active Directory a través de los controles de acceso basado en notificaciones. Lecturas y escrituras de directorio datos son contenedores del inquilino en el ámbito y controlados por una capa de abstracción interna y una capa de acceso basado en roles (RBAC) del control, que conjuntamente exigir al inquilino como el límite de seguridad. Estas capas procesa todas las solicitudes de acceso de datos de Active directory y todas las solicitudes de acceso en Office 365 están controlada por la lógica anterior.
+De forma predeterminada, Azure Active Directory no permite todas las operaciones emitidas por identidades en otros inquilinos. Cada inquilino está aislado lógicamente dentro de Azure Active Directory a través de los controles de acceso basados en notificaciones. Las lecturas y escrituras de datos de directorio se limitan a contenedores de inquilinos y se canalizan mediante una capa de abstracción interna y una capa de control de acceso basado en roles (RBAC), que en conjunto aplican el inquilino como límite de seguridad. Todas las solicitudes de acceso a datos de directorio se procesan mediante estas capas y cada solicitud de acceso en Office 365 se controla con la lógica anterior.
 
-Azure Active Directory tiene particiones de América del Norte, gobierno de Estados Unidos, Unión Europea, Alemania y todo el mundo. Existe un inquilino en una única partición y particiones pueden contener a varios inquilinos. Se extrae información de la partición fuera de los usuarios. Una partición determinada (incluidos a todos los inquilinos dentro de él) se ha replicado en varios centros de datos. La partición de un inquilino se elige en función de las propiedades del inquilino (por ejemplo, el código del país). Secretos y demás información confidencial en cada partición se cifran con una clave dedicada. Las claves se generan automáticamente cuando se crea una nueva partición.
+Azure Active Directory tiene las particiones de Norteamérica, del gobierno de Estados Unidos, de la Unión Europea, de Alemania y de la World Wide. Un inquilino existe en una sola partición y las particiones pueden contener varios inquilinos. La información de particiones se abstrae de los usuarios. Una partición determinada (incluidos todos los inquilinos que contenga) se replica en varios centros de recursos. La partición de un inquilino se elige en función de las propiedades del espacio empresarial (por ejemplo, el código del país). Los secretos y otra información confidencial en cada partición se cifran con una clave dedicada. Las claves se generan automáticamente cuando se crea una partición nueva.
 
-Funcionalidades de sistema de Azure Active Directory son una instancia única para cada sesión de usuario. Además, Azure Active Directory usa tecnologías de cifrado para proporcionar el aislamiento de los recursos del sistema compartidos en el nivel de red para evitar que la transferencia no autorizada y no deseada de información.
+Las funciones del sistema de Azure Active Directory son una instancia única para cada sesión de usuario. Además, Azure Active Directory usa tecnologías de cifrado para proporcionar aislamiento de recursos del sistema compartidos en el nivel de red para evitar la transferencia de información no autorizada e inesperada.

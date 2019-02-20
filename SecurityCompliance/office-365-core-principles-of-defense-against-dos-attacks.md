@@ -1,5 +1,5 @@
 ---
-title: Principios básicos de Office 365 de defensa frente a ataques de denegación de servicio
+title: Office 365 principales principios de defensa contra ataques por denegación de servicio
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -9,33 +9,35 @@ ms.service: Office 365 Administration
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
-description: Cómo Microsoft utiliza los principios básicos de absorción, detección y mitigación en su defensa contra los ataques de denegación de servicio (DoS).
-ms.openlocfilehash: e313d5514e9bc493db78bebffca24a0fae4cbca7
-ms.sourcegitcommit: a64af0ebd0b03e4a5e60a33e9108c44c7d74f356
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
+description: Modo en que Microsoft usa los principios principales de absorción, detección y mitigación en su defensa contra ataques por denegación de servicio (DoS).
+ms.openlocfilehash: 17dc583258cdb4781dbe2a715e1ce153ee769ed3
+ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "29741103"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30091012"
 ---
 # <a name="core-principles-of-defense-against-denial-of-service-attacks"></a>Principios básicos de la defensa contra ataques por denegación de servicio
 
-Los tres principales principios cuando defensa contra los ataques de denegación de servicio basados en red es absorción, detección y mitigación. Absorción sucede antes de detección y detección lleva a cabo antes de mitigación. Absorción es la mejor defensa contra los ataques de denegación de servicio. Si no se puede detectar el ataque, no se pueden mitigar. Pero si no se pueden absorber incluso el ataque DoS más pequeño, a continuación, no se van a servicios sobrevivir tiempo suficiente para que el ataque se detectó.
+Los tres principios básicos para defenderse contra los ataques DoS basados en la red son la absorción, la detección y la mitigación. La absorción se produce antes de la detección y la detección se produce antes de la mitigación. La absorción es la mejor protección contra un ataque DoS. Si el ataque no se puede detectar, no se puede mitigar. Pero, incluso si no se puede absorber el ataque a DoS más pequeño, los servicios no se mantendrán durante el tiempo suficiente para que se detecte el ataque.
 
-Por supuesto, por lo general no resulta económica viable para la mayoría de las organizaciones comprar el exceso de capacidad necesario para absorber los ataques de denegación de servicio, ya que exige una considerable inversión en tecnología y conocimientos técnicos. Esto destaca una de las ventajas de seguridad del uso de servicios de nube de Microsoft; la escala ingente de nuestros servicios nos permite proporcionar protección de la red segura a nuestros clientes en la nube de manera rentable. Pero incluso en nuestra escala, sin embargo, debe haber un equilibrio entre la absorción, detección y mitigación. Para encontrar ese equilibrio, nos estudiar la tasa de crecimiento de un ataque para calcular cuánto necesitamos absorber.
+Por supuesto, por lo general no es viable económicamente para la mayoría de las organizaciones comprar la capacidad sobrante necesaria para absorber ataques de DoS, ya que esto requiere una gran inversión en tecnología y conocimientos técnicos. Esto destaca una de las ventajas de seguridad de usar los servicios en la nube de Microsoft; la gran escala de nuestros servicios nos permite proporcionar una protección de red sólida a los clientes de la nube de manera rentable. Pero incluso en nuestra escala, sin embargo, debe haber un equilibrio entre la absorción, la detección y la mitigación. Para encontrar ese equilibrio, estudiaremos la tasa de crecimiento de un ataque para calcular cuánto es necesario absorber.
 
-Detección es un juego de ratón y el gato. Debe buscar constantemente para las personas de formas nuevas se atacar se o intentar para defenderse de los sistemas. Detectar - > mitigar - detectar > - > mitigar, etc., es un estado perpetuo, persistente que seguirá indefinidamente.
+La detección es un juego de gato y de mouse. Debe buscar constantemente las nuevas formas en las que los usuarios atacan o intentan derrotar a sus sistemas. Detect-> mitigate-> detecte-> mitigate, etc., es un estado persistente, permanente y que continuará indefinidamente.
 
-## <a name="defending-against-dos-attacks"></a>Defensa contra los ataques de denegación de servicio
+## <a name="defending-against-dos-attacks"></a>Defensa contra ataques DoS
 
-Para defenderse correctamente un ataque DoS, detección temprana es esencial. Mediante la detección de un ataque antes de que el sistema está sobrecargado, defensores pueden ejecutar un plan de respuesta.
+Para defenderse correctamente contra un ataque DoS, la detección temprana es esencial. Al detectar un ataque antes de que el sistema esté saturado, los defensores pueden ejecutar un plan de respuesta.
 
-La fórmula siguiente le ayudará a aproximar el tiempo a un impacto de un ataque de denegación de servicio:
+La siguiente fórmula le ayudará a aproximarse al tiempo de impacto de un ataque DoS:
 
-   **Capacidad máxima (en bytes/seg.) / tasa de crecimiento (en bytes/seg.) = tiempo de impacto (en bytes/seg.)**
+   **Capacidad máxima (en bytes/s)/velocidad de crecimiento (en bytes/s) = tiempo de impacto (en bytes/s)**
 
-Si el tiempo de detección se produce después de la hora de impacto, a continuación, es probable que el ataque de denegación de servicio se completará correctamente. Si el tiempo de detección se produce antes de impacto de tiempo, los servicios de sufrir un ataque deben permanecer en línea y accesibles, si se usan las estrategias de mitigación. Por lo tanto, hay sólo dos cosas que pueden hacer para defenderse de los ataques de denegación de servicio:
-- Aumentar la capacidad para elevar el límite máximo de capacidad máxima (que a su vez proporciona más tiempo para detectar un ataque); o
-- Reducir el tiempo para detectar.
+Si el tiempo de detección se produce después del tiempo de impacto, es probable que el ataque de DoS se realice correctamente. Si el tiempo de detección se produce antes del tiempo de impacto, los servicios que sean atacados deben permanecer en línea y ser accesibles, si se usan estrategias de mitigación. Por lo tanto, solo se pueden hacer dos cosas para defenderse contra ataques DoS:
+- Aumente la capacidad para aumentar el límite máximo de capacidad (lo que, a su vez, proporciona más tiempo para detectar un ataque); o
+- Reducir el tiempo de detección.
 
-Aumento de la capacidad tiene una repercusión directa fiscal. Microsoft recomienda que los clientes desarrollan absorción básica al menos capacidad, para asegurarse de que pueden sobrevivir cierto nivel de ataque de denegación de servicio. La capacidad de absorción real varían de un cliente a otro, como cada cliente tiene sus propios umbrales de exposición, los riesgos y gastos financieros. En última instancia, las inversiones de investigación y tiempo en formas de reducir el tiempo de detección por motivos económicos, son normalmente la defensa más rentable.
+El aumento de la capacidad tiene un impacto fiscal directo. Microsoft recomienda que los clientes desarrollen una capacidad de absorción básica mínima, para garantizar que pueden sobrevivir a algún ataque de DoS niveles. La capacidad de absorción real variará de un cliente a un cliente, ya que cada cliente tiene sus propios umbrales para la exposición, el riesgo y la inversión financiera. En última instancia, por razones económicas, las inversiones de investigación y tiempo en formas de reducir el tiempo de detección suelen ser la defensa más rentable.

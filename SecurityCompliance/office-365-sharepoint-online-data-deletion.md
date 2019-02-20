@@ -1,5 +1,5 @@
 ---
-title: Eliminación de datos en línea de SharePoint de Office 365
+title: Eliminación de datos de SharePoint Online de Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -9,29 +9,31 @@ ms.service: Office 365 Administration
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
-description: Una explicación de eliminación de datos en SharePoint Online.
-ms.openlocfilehash: 8a84859ce170a4c3ca713c751aef2b6d5b911c55
-ms.sourcegitcommit: 29ba4c36af8e90ddc8d885863ef25bac2cffbe94
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
+description: Una explicación de la eliminación de datos en SharePoint Online.
+ms.openlocfilehash: 48b108637e53b8ca4ab18b7b37e2fad7fbbd779c
+ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2018
-ms.locfileid: "27411166"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30090862"
 ---
-# <a name="sharepoint-online-data-deletion-in-office-365"></a>Eliminación de datos en línea de SharePoint en Office 365
+# <a name="sharepoint-online-data-deletion-in-office-365"></a>Eliminación de datos de SharePoint Online en Office 365
 
-SharePoint Online almacena objetos como abstracta código dentro de las bases de datos de aplicación. Cuando un usuario carga un archivo en SharePoint Online, ese archivo se desmontar y traducir a código de la aplicación y se almacena en varias tablas a través de varias bases de datos. En SharePoint Online, todo el contenido que un cliente carga se divide en fragmentos, cifrados (potencialmente con varias claves de AES de 256 bits) y distribuido en el centro de datos. Para obtener información específica acerca del proceso de fragmentación y el cifrado, vea [cifrado en la nube de Microsoft](office-365-encryption-in-the-microsoft-cloud-overview.md). 
+SharePoint Online almacena objetos como código abstracto dentro de las bases de datos de la aplicación. Cuando un usuario carga un archivo en SharePoint Online, ese archivo se desensambla y se traduce a código de aplicación y se almacena en varias tablas en varias bases de datos. En SharePoint Online, todo el contenido que carga un cliente se divide en fragmentos, cifrados (potencialmente con varias claves AES 256-bit), y distribuidos en el centro de datos. Para obtener información específica sobre el proceso de fragmentación y cifrado, vea [cifrado en la nube de Microsoft](office-365-encryption-in-the-microsoft-cloud-overview.md). 
 
-En SharePoint Online, los elementos se conservan para 93 días desde el momento en que eliminarlos de su ubicación original. Permanecer en la Papelera de reciclaje del sitio todo el tiempo, a menos que alguien elimina ellos desde allí o vacía la Papelera de reciclaje. En ese caso, los elementos se vaya a la colección de sitios Papelera de reciclaje, donde permanecen para el resto de los días 93. Para obtener información acerca de cómo restaurar los elementos eliminados, vea [restaurar los elementos en la Papelera de reciclaje de un sitio de SharePoint](https://support.office.com/en-us/article/6df466b6-55f2-4898-8d6e-c0dff851a0be#ID0EAADAAA=Online
-) y [Restaurar elementos eliminados de la Papelera de reciclaje de la colección de sitios](https://support.office.com/article/5fa924ee-16d7-487b-9a0a-021b9062d14b). El tiempo de retención de la Papelera de reciclaje no es configurable en SharePoint Online.
+En SharePoint Online, los elementos se conservan durante 93 días desde el momento en que los elimina de su ubicación original. Permanecen en la papelera de reciclaje del sitio todo el tiempo, a menos que alguien las elimine o vacíe dicha papelera de reciclaje. En ese caso, los elementos se dirigen a la papelera de reciclaje de la colección de sitios, donde permanecen durante el resto de los 93 días. Para obtener información sobre cómo restaurar elementos eliminados, vea [Restaurar elementos en la papelera de reciclaje de un sitio de SharePoint](https://support.office.com/en-us/article/6df466b6-55f2-4898-8d6e-c0dff851a0be#ID0EAADAAA=Online
+) y [Restaurar elementos eliminados de la papelera de reciclaje de la colección de sitios](https://support.office.com/article/5fa924ee-16d7-487b-9a0a-021b9062d14b). El tiempo de retención de la papelera de reciclaje no se puede configurar en SharePoint Online.
 
-Cuando se elimina una colección de sitios, también está eliminando la jerarquía de sitios en la colección y todo el contenido dentro de ellos:
+Cuando se elimina una colección de sitios, también se elimina la jerarquía de los sitios de la colección y todo el contenido de los mismos:
 - Documentos y bibliotecas de documentos
 - Listas y datos de lista
-- Opciones de configuración de sitio
-- Información de roles y seguridad que está relacionada con el sitio o sus subsitios
-- Subsitios de la información de sitio Web, su contenido y el usuario de nivel superior
+- Opciones de configuración del sitio
+- Información de roles y seguridad relacionada con el sitio o sus subsitios
+- Subsitios del sitio web de nivel superior, su contenido e información de usuario
 
-Si accidentalmente elimina una colección de sitios, se puede restaurar de forma global o SharePoint admin con el centro de administración de SharePoint. 
+Si elimina por error una colección de sitios, puede restaurarla un administrador global o de SharePoint con el centro de administración de SharePoint. 
 
-Eliminación de disco duro se produce cuando un usuario purga los elementos eliminados de la Papelera de reciclaje de la colección de sitios cuando expiren los períodos de retención y copia de seguridad, o cuando un administrador elimina de forma permanente una colección de sitios mediante el [cmdlet Remove-SPODeletedSite](/powershell/module/sharepoint-online/Remove-SPODeletedSite?view=sharepoint-ps). Cuando se elimina un usuario de disco duro (elimina de forma permanente o depura) también se eliminan contenido de SharePoint Online, todas las claves de cifrado para los fragmentos eliminados. Los bloques en los discos que anteriormente se almacenan los fragmentos eliminados se marcan como no usado y están disponible para volver a usar.
+La eliminación de hardware se produce cuando un usuario depura elementos eliminados de la papelera de reciclaje de la colección de sitios, cuando expiran los períodos de retención y copia de seguridad, o cuando un administrador elimina permanentemente una colección de sitios con el [cmdlet Remove-SPODeletedSite](/powershell/module/sharepoint-online/Remove-SPODeletedSite?view=sharepoint-ps). Cuando un usuario elimina (elimina o purga permanentemente) contenido de SharePoint Online, también se eliminan todas las claves de cifrado de los fragmentos eliminados. Los bloques de los discos que anteriormente almacenaban los fragmentos eliminados se marcan como no usados y disponibles para volver a usarlos.

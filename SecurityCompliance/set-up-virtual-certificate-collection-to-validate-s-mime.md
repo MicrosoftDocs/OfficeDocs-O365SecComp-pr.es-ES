@@ -12,13 +12,13 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 04a616e6-197c-490c-ae8c-c8d5f0f0b3dd
-description: s un administrador de inquilinos debe configurar una colección virtual de certificado que se usará para validar certificados S/MIME.
-ms.openlocfilehash: 88d12b3c1d5f36c58f278cf304237a569a8b92c4
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+description: s un administrador de inquilinos tendrá que configurar una colección de certificados virtuales que se usará para validar los certificados S/MIME.
+ms.openlocfilehash: 0e8226ca35e872cd8c7da16ba353bf8b99a6954d
+ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003039"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30091062"
 ---
 # <a name="set-up-virtual-certificate-collection-to-validate-smime"></a>Configurar una colección de certificados virtuales para validar S/MIME
 
@@ -29,7 +29,7 @@ Como administrador de inquilinos tendrá que configurar una colección de certif
 
 Solo puede usar el Shell para realizar este procedimiento. Para obtener información sobre cómo abrir el Shell de administración de Exchange en su organización local Exchange, vea **Open the Shell**. Para obtener información sobre cómo usar Windows PowerShell para conectarse a Exchange Online, vea [Conexión a Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
   
-Como administrador, puede crear este archivo SST exportando los certificados desde un equipo de confianza mediante el cmdlet  `Export-Certificate` y especificando el tipo como SST. Para obtener más información sobre el cmdlet  `Export-Certificate`, consulte el tema de referencia [Export-Certificate](https://technet.microsoft.com/en-us/library/hh848628.aspx). 
+Como administrador, puede crear este archivo SST exportando los certificados desde un equipo de confianza mediante el cmdlet  `Export-Certificate` y especificando el tipo como SST. Para obtener más información sobre el cmdlet  `Export-Certificate`, consulte el tema de referencia [Export-Certificate](https://docs.microsoft.com/en-us/powershell/module/pkiclient/export-certificate?view=win10-ps). 
   
 Una vez que se genere el archivo SST, use el cmdlet  `Set-Smimeconfig` para guardarlo en el almacén de certificados virtuales mediante el parámetro  _-SMIMECertificateIssuingCA_. Por ejemplo:  `Set-SmimeConfig -SMIMECertificateIssuingCA (Get-Content filename.sst -Encoding Byte)`
   

@@ -11,75 +11,75 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: aac65513-e75e-4c82-a668-9a6604dd9f9d
-description: Revisión de informes de detección de aplicaciones en administración avanzada de seguridad le ayudarán a obtener más información acerca de cómo las personas de su organización utilizan aplicaciones de nube. Después de crear informes de detección de aplicación con archivos de registro de los firewalls y servidores proxy, revise los resultados en el panel de la detección de la aplicación.
-ms.openlocfilehash: 6195c9aae7ae5e398ac555cc820de04dee05d4fd
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+description: Revisar los informes de detección de aplicaciones en Office 365 Cloud App Security puede ayudarle a obtener más información sobre cómo los usuarios de su organización usan aplicaciones en la nube. Una vez que haya creado los informes de detección de aplicaciones con archivos de registro de los firewalls y servidores proxy, revise los resultados en el panel de detección de aplicaciones.
+ms.openlocfilehash: fa5ab7c6cd734feb26878cf1a97f7ce708aa1478
+ms.sourcegitcommit: 8679937354c1d8870ecd41519a59d2d7468c23c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29603751"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "30087339"
 ---
 # <a name="review-app-discovery-findings-in-office-365-cloud-app-security"></a>Revisar los resultados de la detección de aplicaciones en Office 365 Cloud App Security
   
-|Evaluación **\>**|Planeación de **\>**|Implementación **\>**|Utilización de ***|
+|Evaluación * *\>**|Planeación * *\>**|Implementación * *\>**|Uso * * * *|
 |:-----|:-----|:-----|:-----|
-|[Empezar a evaluar](office-365-cas-overview.md) <br/> |[Comenzar a planear](get-ready-for-office-365-cas.md) <br/> |[Iniciar la implementación](turn-on-office-365-cas.md) <br/> |¡Están aquí!  <br/> [Pasos siguientes](#next-steps) <br/> |
+|[Empezar a evaluar](office-365-cas-overview.md) <br/> |[Empezar a planear](get-ready-for-office-365-cas.md) <br/> |[Iniciar la implementación](turn-on-office-365-cas.md) <br/> |Ya está aquí.  <br/> [Pasos siguientes](#next-steps) <br/> |
    
-El panel de detección de la nube funciona con registros de tráfico web de la organización para proporcionar información detallada sobre el uso de la aplicación en la nube. Si usted es un administrador global, Administrador de seguridad o lector de seguridad y su organización tiene [creado informes de detección de aplicaciones en la seguridad de la aplicación de nube de Office 365](create-app-discovery-reports-in-ocas.md), puede usar el panel de detección en la nube para comprender mejor cómo de personas en su organización está usando Office 365 y otras aplicaciones en la nube. (El panel de detección de la nube también conocido como está detección de aplicaciones de productividad).
+El panel de detección en la nube funciona con los registros de tráfico web de la organización para proporcionar información detallada sobre el uso de aplicaciones en la nube. Si es administrador global, administrador de seguridad o lector de seguridad y su organización ha [creado informes de detección de aplicaciones en Office 365 Cloud App Security](create-app-discovery-reports-in-ocas.md), puede usar el panel de detección en la nube para conocer la forma en que los usuarios de su organización usan Office 365 y otras aplicaciones en la nube. (El panel de detección en la nube también se conoce como detección de aplicaciones de productividad).
   
- El panel de detección de la nube permite ver información detallada sobre cómo las personas de su organización están usando Office 365 y otras aplicaciones. 
+ El panel de detección en la nube le permite ver información detallada sobre la forma en que los usuarios de su organización usan Office 365 y otras aplicaciones. 
   
-![Se ha actualizado el panel detección de nube](media/12712681-c0b3-4cb3-b7fd-2cf2ad4e825f.png)
+![Se ha actualizado el panel de detección en la nube](media/12712681-c0b3-4cb3-b7fd-2cf2ad4e825f.png)
      
-## <a name="go-to-the-cloud-discovery-dashboard"></a>Vaya al panel de detección de la nube
+## <a name="go-to-the-cloud-discovery-dashboard"></a>Ir al panel de detección en la nube
 
-1. Vaya al portal de seguridad de la aplicación en la nube ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)) e iniciar sesión.
+1. Vaya al portal de Cloud App Security ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)) e inicie sesión.
     
-2. Vaya a **descubrir** \> **panel de detección de la nube**.
+2. Vaya al panel **Descubra** \> **detección en la nube**.
     
-## <a name="see-your-top-users-ip-addresses-apps-and-risk-levels"></a>Vea sus usuarios principales, direcciones IP, aplicaciones y niveles de riesgo
+## <a name="see-your-top-users-ip-addresses-apps-and-risk-levels"></a>Ver los usuarios principales, las direcciones IP, las aplicaciones y los niveles de riesgo
 
-El panel de detección de la nube le ofrece una introducción de un vistazo a las aplicaciones que se usan con Office 365 en su organización, cualquier alertas abiertas, superior a los usuarios y niveles de riesgo.
+El panel de detección en la nube le ofrece una visión general de las aplicaciones que se usan con Office 365 en su organización, las alertas abiertas, los usuarios principales y los niveles de riesgo.
   
-![Dashboaard de detección de la nube](media/06696946-fbdf-4781-b5b8-2ac074fcb2a1.png)
+![Detección en la nube dashboaard](media/06696946-fbdf-4781-b5b8-2ac074fcb2a1.png)
   
-1. En la ficha de **panel** , examine el uso de aplicación en la nube global en la organización en la sección información general en la parte superior de la pantalla. 
+1. En la pestaña **Panel** , mire el uso general de la aplicación de nube en su organización en la sección información general en la parte superior de la pantalla. 
     
-2. Ver las **categorías de Office 365** para las aplicaciones que se usan en su organización. 
+2. Vea las **categorías de Office 365** para las aplicaciones que se usan en su organización. 
     
-3. Examine el widget **Discovered aplicaciones** para ver el uso de Office 365 y otras aplicaciones en esta vista. 
+3. Mire el widget **aplicaciones** descubiertas para ver el uso de Office 365 y otras aplicaciones en esta vista. 
     
-4. Examine el widget **superior a los usuarios** y **las direcciones IP de la parte superior** para identificar aquellos que usar Office 365 y en la nube de aplicaciones en la mayor parte de la organización. 
+4. Mire el widget **principales usuarios** y **direcciones IP principales** para identificar a los usuarios de Office 365 y de la nube la mayor parte de su organización. 
     
-5. Vea dónde están las aplicaciones que usan las personas por ubicación geográfica mediante el uso de la asignación de **ubicación de sedes centrales de aplicaciones** . 
+5. Vea dónde las aplicaciones que usan los usuarios se encuentran en la ubicación geográfica con el mapa de ubicación de las **oficinas centrales de aplicaciones** . 
     
-6. Sobre el área de mapas, eche un vistazo en la puntuación de riesgo de las aplicaciones descubiertas en la información general de **los niveles de riesgo** . Puede mirar los riesgos por los mismos grupos y categorías que se usaron en el área de **aplicaciones Discovered** . Por ejemplo, puede ver es la cantidad de tráfico en cada agrupación de aplicaciones de riesgo alto, medio o bajo. 
+6. Por encima del área mapas, eche un vistazo a la puntuación de riesgo de las aplicaciones detectadas en la introducción a **los niveles de riesgo** . Puede ver los riesgos en los mismos grupos y categorías que usó en el área de **aplicaciones detectadas** . Por ejemplo, puede ver la cantidad de tráfico de cada agrupación de aplicaciones de riesgo alta, media o baja. 
     
-## <a name="dive-deeper-into-the-information"></a>Profundizan en la información
+## <a name="dive-deeper-into-the-information"></a>Profundizar más en la información
 
-Puede usar la detección en la nube para Eche un vistazo más profundo de aplicaciones, subdominios, direcciones IP y los usuarios.
+Puede usar detección en la nube para profundizar en las aplicaciones, subdominios, direcciones IP y usuarios.
   
-1. En el panel de la detección de la nube, elija la ficha **Discovered aplicaciones** . 
+1. En el panel detección en la nube, elija la pestaña **aplicaciones detectadas** . 
     
-2. Use la sección filtros para ver aplicaciones por nombre, categoría, el nivel de uso o última fecha visto.
+2. Use la sección Filtros para ver las aplicaciones por nombre, categoría, nivel de uso o fecha de última visualización.
     
-3. En la lista de resultados, pase el ratón por un nombre de la aplicación para mostrar el vínculo **Ver subdominios** .<br/> ![Mantenga el mouse junto a una aplicación para mostrar un vínculo para ver los detalles de subdominio](media/4a212215-8a2c-46fd-9ef9-89e4064658a6.png)<br/>Aparecerá información detallada sobre la aplicación seleccionada.
+3. En la lista de resultados, mantenga el mouse por un nombre de aplicación para mostrar el vínculo **Ver** subdominios.<br/> ![Mantener el mouse junto a una aplicación para mostrar un vínculo para ver los detalles de subdominio](media/4a212215-8a2c-46fd-9ef9-89e4064658a6.png)<br/>Se mostrará información detallada sobre la aplicación seleccionada.
     
-4. Para ver detalles acerca de las direcciones IP, elija la pestaña **direcciones IP** .<br/>![Detección de la nube muestra información detallada acerca de las direcciones IP](media/0c742bf6-da9e-4d22-8656-a27a5007d5d5.png)<br/>En la lista de resultados, seleccione una dirección IP individual para ver información más detallada.
+4. Para ver los detalles de las direcciones IP, seleccione la pestaña **direcciones IP** .<br/>![Detección en la nube muestra información detallada sobre las direcciones IP](media/0c742bf6-da9e-4d22-8656-a27a5007d5d5.png)<br/>En la lista de resultados, seleccione una dirección IP individual para ver información más detallada.
     
-5. Para ver detalles acerca de los usuarios de Office 365 dentro de la organización, elija la pestaña de **los usuarios** .<br/>![Detección de nube - información de los usuarios](media/2d9c2d85-01e6-4057-8020-d9a68f26bbac.png)
+5. Para ver información detallada sobre los usuarios de Office 365 dentro de su organización, elija la pestaña **usuarios** .<br/>![Detección en la nube: información de los usuarios](media/2d9c2d85-01e6-4057-8020-d9a68f26bbac.png)
   
-## <a name="exclude-entities"></a>Excluir las entidades
+## <a name="exclude-entities"></a>Excluir entidades
 
-Puede excluir determinados usuarios del sistema o las direcciones IP con el fin de centrarse en información más específica.
+Puede excluir determinados usuarios del sistema o direcciones IP para poder centrarse en información más específica.
   
-1. Elija **configuración** \> **configuración de detección de la nube**.
+1. Elija Configuración de **detección en la nube**. **** \>
     
-2. Elija **excluir las entidades**.
+2. Elija **excluir entidades**.
     
-3. Elija **los usuarios excluidos** o **direcciones IP excluidos**.
+3. Elija **usuarios excluidos** o **direcciones IP excluidas**.
     
-4. Especificar los usuarios o las direcciones IP y, en el cuadro **comentarios** , escriba información acerca de por qué se van a excluir los usuarios o direcciones IP. 
+4. Especifique los usuarios o las direcciones IP y, en el cuadro **comentarios** , escriba información sobre los motivos por los que se excluyen los usuarios o las direcciones IP. 
     
 5. Elija **Agregar**.
     
@@ -89,6 +89,6 @@ Puede excluir determinados usuarios del sistema o las direcciones IP con el fin 
     
 - [Crear informes de detección de aplicaciones](create-app-discovery-reports-in-ocas.md)
     
-- Revise las [actividades de uso para la seguridad de la aplicación de nube de Office 365](utilization-activities-for-ocas.md)
+- Revisar las [actividades de uso de Office 365 Cloud App Security](utilization-activities-for-ocas.md)
     
 

@@ -10,16 +10,18 @@ ms.service: Office 365 Administration
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
-description: Un resumen breve acerca de la API de actividad de administración de Office 365.
-ms.openlocfilehash: 4753be89c008676d5244b5c659c3dd1a545975b2
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.collection:
+- Strat_O365_IP
+- M365-analytics
+description: Un breve resumen sobre la API de actividad de administración de Office 365.
+ms.openlocfilehash: ca5517d3049830cd7be912b2e2e47a34a866aca0
+ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22535692"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "30090563"
 ---
 # <a name="office-365-management-activity-api"></a>API de Actividad de administración de Office 365
-Microsoft proporciona servicios de informes que permiten a los administradores obtener información transaccional agregada sobre su inquilino de Office 365. La [API de actividad de administración de Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-apis-overview) usa un diseño RESTful estándar del sector y OAuth v2 para la autenticación, lo que facilita la empezar a experimentar con la recuperación de datos y recopila en las aplicaciones y herramientas de visualización. La API proporciona datos de una fuente que incluye información acerca de la actividad de usuario, el administrador, operaciones y seguridad en Office 365. Los datos pueden conserva para fines legales, o se combinan con los datos de registro obtenidos de una infraestructura local o de otros orígenes para crear una solución de supervisión de operaciones, seguridad y cumplimiento en toda la empresa.
+Microsoft proporciona Reporting Services que permite a los administradores obtener información transaccional agregada sobre su inquilino de Office 365. La [API de actividad de administración 365 de Office](https://docs.microsoft.com/office/office-365-management-api/office-365-management-apis-overview) usa un diseño RESTful estándar de la industria y OAuth v2 para la autenticación, lo que facilita empezar a experimentar con la recuperación de datos y su incorporación a herramientas y aplicaciones de visualización. La API proporciona una fuente de datos que incluye información sobre el usuario, el administrador, las operaciones y la actividad de seguridad en Office 365. Los datos se pueden conservar con fines regulatorios o combinarse con datos de registros que se retienen de una infraestructura local u otros orígenes para crear una solución de supervisión para operaciones, seguridad y cumplimiento en toda la empresa.
 
-La API de actividad de administración de Office 365 proporciona información sobre diversos usuario, administración, sistema y las acciones de directiva y eventos de Office 365 y los registros de actividad de Azure Active Directory. La API proporciona un esquema de auditoría coherente con más de 10 campos que están en común con todos los servicios. Esto permite a las organizaciones realizar conexiones fáciles entre los eventos, y ofrece la posibilidad de nuevas formas de motivo a través de los datos. Docenas de proveedores de Software independiente (ISV) tienen asociado con Microsoft y crean soluciones basadas en la API. Algunas soluciones se centran exclusivamente en datos de Office 365, mientras que otros usuarios ofrecen la posibilidad de recopilar datos de varios proveedores de nube y sistemas locales para crear una vista unificada de todas las operaciones, seguridad y actividades relacionadas con el cumplimiento de normas. Para obtener más información, vea la [referencia de la API de actividad de administración de Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference).
+La API de actividad de administración de Office 365 proporciona información sobre diversas acciones y eventos de usuario, administrador, sistema y Directiva de los registros de actividad de Office 365 y Azure Active Directory. La API proporciona un esquema de auditoría coherente con más de 10 campos que son comunes a todos los servicios. Esto permite a las organizaciones establecer conexiones entre eventos de forma sencilla y permite nuevas formas de la razón sobre los datos. Docenas de proveedores de software independientes (ISV) se han asociado con Microsoft y han creado soluciones basadas en la API. Algunas soluciones se centran exclusivamente en los datos de Office 365, mientras que otras proporcionan la capacidad de recopilar datos de varios proveedores de nube y sistemas locales para crear una vista unificada de todas las operaciones, la seguridad y la actividad relacionada con el cumplimiento. Para obtener más información, vea la referencia de la [API de actividad de administración de Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference).

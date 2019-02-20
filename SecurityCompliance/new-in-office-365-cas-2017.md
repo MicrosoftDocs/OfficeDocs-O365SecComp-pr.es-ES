@@ -1,5 +1,5 @@
 ---
-title: Actualizaciones de seguridad de la aplicación en la nube de Office 365 durante 2017
+title: Actualizaciones de seguridad de aplicaciones de nube de Office 365 durante 2017
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -8,91 +8,89 @@ ms.topic: reference
 ms.date: 01/25/2019
 ms.service: o365-administration
 localization_priority: Normal
-description: Vea ¿qué publicadas en 2017 para seguridad de la aplicación de nube de Office 365
-ms.openlocfilehash: a5f17f626876298d1551c9ca4439448c536a4d62
-ms.sourcegitcommit: 38ba284b793b080b77d9c9d94ae5a0b6c1ba689b
+description: Vea lo que se ha lanzado en 2017 para Office 365 Cloud App Security
+ms.openlocfilehash: cfc5d9d06c1b2296b82c35fc5fdd6e4bc0deb42b
+ms.sourcegitcommit: 8679937354c1d8870ecd41519a59d2d7468c23c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "29570186"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "30087409"
 ---
-# <a name="office-365-cloud-app-security-updates-during-2017"></a>Actualizaciones de seguridad de la aplicación en la nube de Office 365 durante 2017
+# <a name="office-365-cloud-app-security-updates-during-2017"></a>Actualizaciones de seguridad de aplicaciones de nube de Office 365 durante 2017
     
-## <a name="office-365-cloud-app-security-release-112"></a>Versión de seguridad de la aplicación en la nube de Office 365 112
+## <a name="office-365-cloud-app-security-release-112"></a>Office 365 Cloud App Security Release 112
 
-*Publicada el 24 de diciembre de 2017* 
+*Lanzado el 24 de diciembre de 2017* 
   
-**Después de la [versión de seguridad de la aplicación de Microsoft en la nube 112](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-112)**: 
+** [Revisión de seguridad de aplicaciones en la nube de Microsoft 112](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-112)**: 
   
-- **Alimentador de insight relevantes**. En el registro de actividad, ahora puede tener acceso el alimentador insight relevantes haciendo clic en un nombre de usuario o la dirección IP. 
+- **Cajón de ideas relevante**. En el registro de actividades, ahora puede obtener acceso al cajón de Insight correspondiente haciendo clic en un nombre de usuario o dirección IP. 
     
-    ![Haga clic en un nombre de usuario o la dirección IP del alimentador de insight relevantes en el registro de actividad.](media/8e32b3fa-8c0c-4c5e-b248-fe7d7e1b516d.png)
+    ![Haga clic en un nombre de usuario o dirección IP para ver el cajón de Insight correspondiente en el registro de actividades.](media/8e32b3fa-8c0c-4c5e-b248-fe7d7e1b516d.png)
   
-- **Capacidad de ver más actividades con un clic**. En la caja insight relevantes, hacer clic en el icono de reloj para ver todas las actividades realizadas dentro de 48 horas de una actividad seleccionada. 
+- **Posibilidad de ver más actividades con un clic**. En el cajón de Insight correspondiente, puede hacer clic en el icono de reloj para ver todas las actividades realizadas en un plazo de 48 horas a una actividad seleccionada. 
     
-    ![En el alimentador de perspectivas pertinentes, haga clic en el icono de reloj para ver las actividades realizadas dentro de una actividad seleccionada 48 horas](media/c6c96aa0-98e5-4205-8873-45f8d6fd0843.png)
+    ![En el cajón de información relevante, puede hacer clic en el icono del reloj para ver las actividades realizadas en un plazo de 48 horas a una actividad seleccionada.](media/c6c96aa0-98e5-4205-8873-45f8d6fd0843.png)
   
-- **Mejoras del analizador de registro para Juniper SRX**. Se realizaron mejoras en el analizador de registro de detección de la nube para Juniper SRX. 
+- **Registra las mejoras del analizador para el SRX de Juniper**. Se realizaron mejoras en el analizador de registro de detección en la nube para el SRX de Juniper. 
     
-## <a name="office-365-cloud-app-security-release-111"></a>Versión de seguridad de la aplicación en la nube de Office 365 111
+## <a name="office-365-cloud-app-security-release-111"></a>Office 365 Cloud App Security Release 111
 
-*Publicada el 10 de diciembre de 2017* 
+*Lanzado el 10 de diciembre de 2017* 
   
-**Después de la [versión de seguridad de la aplicación de Microsoft en la nube 111](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-111)**: 
+** [Revisión de seguridad de aplicaciones en la nube de Microsoft 111](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-111)**: 
   
-- **Mejoras de filtro de tiempo**. Filtros de tiempo ahora son más fáciles de usar. Para obtener acceso a un filtro de tiempo, en una vista, como el registro de actividad, las directivas, alertas, en la vista avanzada, elija la **fecha** en la lista de filtros. A continuación, elija una opción, como antes, después o en entre para aplicar el filtro de tiempo. 
+- **Mejoras en el filtro de tiempo**. Los filtros de tiempo ahora son más fáciles de usar. Para obtener acceso a un filtro de tiempo, en una vista, como registro de actividad, directivas, alertas, utilizando la vista avanzada, elija **fecha** en la lista de filtros. A continuación, elija una opción, como antes, después o entre para aplicar el filtro de tiempo. 
     
-    ![Use el filtro de fecha para ver información antes, después o entre las fechas.](media/9dbb2a10-f68f-413b-8b4e-88911152cb92.png)
+    ![Use el filtro de fecha para ver la información antes, después o entre las fechas.](media/9dbb2a10-f68f-413b-8b4e-88911152cb92.png)
   
-## <a name="office-365-cloud-app-security-release-110"></a>Versión de seguridad de la aplicación en la nube de Office 365 110
+## <a name="office-365-cloud-app-security-release-110"></a>Office 365 Cloud App Security Release 110
 
-*Publicada el 26 de noviembre de 2017* 
+*Lanzado el 26 de noviembre de 2017* 
   
-**Después de la [versión de seguridad de la aplicación de Microsoft en la nube 110](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-110)**: 
+** [Revisión de seguridad de aplicaciones en la nube de Microsoft 110](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-110)**: 
   
-- **Integración del servidor de SIEM ahora generalmente está disponible**. Conectar el servidor SIEM a la seguridad de la aplicación de nube de Office 365. Ahora puede enviar alertas y actividades automáticamente a su servidor SIEM de elección mediante la configuración de los agentes de SIEM. Vea [integrar su servidor SIEM con seguridad de la aplicación de nube de Office 365](integrate-your-siem-server-with-office-365-cas.md).
+- La **integración del servidor Siem ahora está disponible en general**. Conecte el servidor de SIEM a Office 365 Cloud App Security. Ahora puede enviar alertas y actividades automáticamente al servidor de SIEM que prefiera mediante la configuración de agentes de SIEM. Consulte [integrar el servidor de Siem con Office 365 Cloud App Security](integrate-your-siem-server-with-office-365-cas.md).
     
-- **Facilitar el acceso a contenido de la Ayuda**. Usar el signo de interrogación nuevo en la esquina superior derecha, ahora puede tener acceso el contenido de Ayuda desde dentro de las páginas del portal de seguridad de la aplicación de nube de Office 365. Es contextual, desviar a la información que necesita, en función de la página en que está cada vínculo. 
+- **Acceso más fácil al contenido de ayuda**. Con el nuevo signo de interrogación en la esquina superior derecha, ahora puede obtener acceso al contenido de la ayuda desde las páginas del portal de seguridad de aplicaciones de nube de Office 365. Cada vínculo es sensible al contexto y le lleva a la información que necesita, en función de la página en la que se encuentra. 
     
-- **Envíenos su opinión**. Uso de la cara sonriente en la esquina superior derecha, ahora puede enviar comentarios de cada página del portal de seguridad de la aplicación de nube de Office 365. Esto permite informar sobre errores, solicitar nuevas características y compartir su experiencia directamente con el equipo de seguridad de la aplicación de nube de Office 365. 
+- **Envíenos sus comentarios**. Con la cara sonriente en la esquina superior derecha, ahora puede enviar comentarios desde cada página del portal de seguridad de aplicaciones de nube de Office 365. Esto le permite informar sobre errores, solicitar nuevas características y compartir su experiencia directamente con el equipo de seguridad de aplicaciones de nube de Office 365. 
     
-## <a name="office-365-cloud-app-security-release-102"></a>Versión de seguridad de la aplicación en la nube de Office 365 102
+## <a name="office-365-cloud-app-security-release-102"></a>Office 365 Cloud App Security Release 102
 
-*Publicada el 13 de agosto de 2017* 
+*Lanzado el 13 de agosto de 2017* 
   
-**Después de la [versión de seguridad de la aplicación de Microsoft en la nube 102](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-102)**: 
+** [Revisión de seguridad de aplicaciones en la nube de Microsoft 102](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-102)**: 
   
-- **Nuevas acciones de investigación de usuario** habilitar un nivel de profundidad se ha agregado a las investigaciones de usuario. En una página de investigar, puede mantenga el mouse sobre una actividad, un usuario o una cuenta y aplicar como filtro y desde allí, puede ver actividades relacionadas o eventos. 
+- **Las nuevas acciones de investigación de usuario** permiten un nivel adicional de obtención de detalles para las investigaciones del usuario. En una página de investigación, puede desplazarse por una actividad, un usuario o una cuenta y aplicarla como filtro y, desde allí, puede ver actividades relacionadas o eventos. 
     
-## <a name="office-365-cloud-app-security-release-100"></a>Versión de seguridad de la aplicación en la nube de Office 365 100
+## <a name="office-365-cloud-app-security-release-100"></a>Office 365 Cloud App Security Release 100
 
-*Publicada el 17 de julio de 2017* 
+*Lanzado el 17 de julio de 2017* 
   
-**Después de la [seguridad de la aplicación de Microsoft en la nube de la versión 100](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-100)**: 
+** [Revisión de seguridad de aplicaciones en la nube de Microsoft 100](https://docs.microsoft.com/cloud-app-security/release-notes#cloud-app-security-release-100)**: 
   
-- **Extensiones de seguridad** es un nuevo panel, donde puede administrar centralmente todas las extensiones de seguridad para Office 365 en la nube seguridad de la aplicación, incluidos los tokens de API y los agentes SIEM. Para ver el panel de extensiones de seguridad, siga estos pasos: 
+- **Extensiones de seguridad** es un nuevo panel en el que puede administrar de forma centralizada todas las extensiones de seguridad para Office 365 Cloud App Security, incluidos los tokens de API y los agentes de Siem. Para ver el panel de extensiones de seguridad, siga estos pasos: 
     
-1. Vaya a [https://protection.office.com](https://protection.office.com) e iniciar sesión con su cuenta de trabajo o escuela para Office 365. (Esto le llevará a la seguridad &amp; centro de cumplimiento.) 
+1. Vaya a [https://protection.office.com](https://protection.office.com) e inicie sesión con su cuenta profesional o educativa para Office 365. (Esto le llevará al centro de &amp; seguridad y cumplimiento). 
     
-2. Vaya a **las alertas de** \> **avanzada de administrar las alertas**.
+2. Vaya a **alertas** \> para **Administrar alertas avanzadas**.
     
-3. Elija **Ir a la seguridad de la aplicación de Office 365 en la nube**.
-    
-    ![En la seguridad &amp; centro de cumplimiento, elija alertas \> administrar avanzada alertas \> vaya a administración de seguridad avanzada](media/9792b121-9cd4-4faa-a6e0-81cfab4bf2f2.png)
+3. Elija **ir a Office 365 Cloud App Security**.
   
-4. Elija **configuración** \> **extensiones de seguridad**.
+4. Elija **** \> **las extensiones de seguridad**de configuración.
     
-    ![En el portal de ASM, elija configuración \> extensiones de seguridad](media/f03d47a1-91ff-41b9-9baf-b514cffe41a8.png)
+    ![En el portal de ASM, elija \> configuración de extensiones de seguridad](media/f03d47a1-91ff-41b9-9baf-b514cffe41a8.png)
   
-- **Función mejorada de análisis**. Se han realizado mejoras en el registro de detección de la nube mecanismo de análisis. Errores internos son considerablemente menos probables que se produzca. 
+- **Análisis mejorado**. Se realizaron mejoras en el mecanismo de análisis del registro de detección en la nube. Es muy poco probable que se produzcan errores internos. 
     
-- **Los formatos de registro esperado**. El formato esperado del registro para los registros de detección de la nube ahora proporciona ejemplos de formato de registro del sistema y el formato FTP. 
+- **Formatos de registro esperados**. El formato de registro previsto para los registros de detección en la nube ahora ofrece ejemplos para el formato syslog y el formato FTP. 
     
 ## <a name="related-topics"></a>Temas relacionados
 
-[Contenido de Ayuda de seguridad de la aplicación en la nube de Office 365](office-365-cas-help.md)
+[Contenido de la ayuda de seguridad de aplicación de nube de Office 365](office-365-cas-help.md)
 
-[Novedades de la seguridad de la aplicación de nube de Office 365](new-in-office-365-cas.md)
+[Novedades de Office 365 Cloud App Security](new-in-office-365-cas.md)
   
 [Actividades de uso después de implementar Office 365 Cloud App Security](utilization-activities-for-ocas.md)
 

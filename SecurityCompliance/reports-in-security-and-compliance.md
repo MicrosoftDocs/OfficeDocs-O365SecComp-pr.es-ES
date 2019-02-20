@@ -1,9 +1,9 @@
 ---
-title: Informes en la seguridad de Office 365 &amp; centro de cumplimiento
+title: Informes en el Centro de seguridad y cumplimiento de Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 2/1/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: overview
 f1_keywords:
@@ -11,38 +11,38 @@ f1_keywords:
 ms.service: o365-administration
 localization_priority: Normal
 ms.assetid: 7acd33ce-1ec8-49fb-b625-43bac7b58c5a
-description: 'Usar la seguridad de Office 365 &amp; informes de centro de cumplimiento para obtener diversos informes para la organización de Exchange Online y SharePoint Online, además de Azure Active Directory.  '
-ms.openlocfilehash: 019ccc49352db1aaf392287f62fa63f66913e293
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+description: 'Use el centro de cumplimiento de & de seguridad de Office 365 para obtener varios informes para su organización de SharePoint Online y Exchange Online, además de informes de Azure Active Directory.  '
+ms.openlocfilehash: 36e6d3efce1758d52cd30451a2b60b19f4654056
+ms.sourcegitcommit: 8679937354c1d8870ecd41519a59d2d7468c23c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038343"
+ms.lasthandoff: 02/19/2019
+ms.locfileid: "30087309"
 ---
-# <a name="reports-in-the-office-365-security-amp-compliance-center"></a>Informes en la seguridad de Office 365 &amp; centro de cumplimiento
+# <a name="reports-in-the-office-365-security--compliance-center"></a>Informes en el Centro de seguridad y cumplimiento de Office 365
 
-Puede usar la página **Ver informes** en la seguridad de Office 365 &amp; centro de cumplimiento para agilizar el acceso a informes de auditoría para las organizaciones de Exchange Online y SharePoint Online. También se pueden acceder Azure Active Directory (AD) inicio de sesión de informes de usuario, informes de actividad del usuario, y la auditoría de Azure AD la sesión en la página **Ver informes** . Esto es debido a que su suscripción de pago Office 365 incluye una suscripción gratuita a Microsoft Azure. La primera vez que intenta obtener acceso a estos informes Azure, tendrá para llevar a cabo un proceso de registro único. 
+Puede usar la página **ver informes** en el centro de seguridad & cumplimiento de Office 365 para acceder rápidamente a los informes de auditoría de sus organizaciones de SharePoint Online y Exchange Online. También puede obtener acceso a informes de inicio de sesión de usuario de Azure Active Directory (AD), informes de actividad de usuario y el registro de auditoría de Azure AD desde la página **ver informes** . Esto se debe a que la suscripción a Office 365 pagada incluye una suscripción gratuita a Microsoft Azure. La primera vez que intente obtener acceso a estos informes de Azure, tendrá que completar un proceso de registro de un solo tiempo. 
   
 > [!TIP]
-> Para ver informes adicionales acerca de la actividad en la organización de Office 365, consulte [Informes de actividad en el centro de administración de Office 365](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263). 
+> Para ver informes adicionales sobre la actividad de su organización de Office 365, vea [informes de actividades en el centro de administración de office 365](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263). 
   
  **Antes de empezar**
   
-Necesita los siguientes permisos para ver los informes de la seguridad &amp; centro de cumplimiento.
+Necesita los siguientes permisos para ver informes en el centro de seguridad & cumplimiento.
   
-- Tiene que tener asignado el rol de lector de seguridad en el centro de administración de Exchange (EAC) para ver los informes en la seguridad &amp; centro de cumplimiento. De forma predeterminada, este rol se asigna a los grupos de funciones de administración de la organización y lector de seguridad en el EAC.
+- Debe tener asignado el rol de lector de seguridad en el centro de administración de Exchange (EAC) para ver los informes en el centro de seguridad & cumplimiento. De forma predeterminada, este rol se asigna a los grupos de roles administración de la organización y lector de seguridad en el EAC.
     
-- Tiene que tener asignado el rol de administración de cumplimiento de normas de DLP en la seguridad &amp; centro de cumplimiento para ver informes de DLP (y las directivas de DLP) en la seguridad &amp; centro de cumplimiento. De forma predeterminada, este rol se asigna a los grupos de roles de administrador de cumplimiento de normas, administración de la organización y Administrador de seguridad en la seguridad &amp; centro de cumplimiento.
-    
-Además, se tiene que tener asignado el rol de prevención de pérdida de datos en el EAC para ver informes de DLP (y las directivas de DLP) en el EAC. De forma predeterminada, este rol se asigna a los grupos de funciones de administración de cumplimiento y administración de la organización en el EAC.
+- Debe tener asignado el rol de administración de cumplimiento de DLP de solo vista en el centro de seguridad & cumplimiento para ver los informes de DLP en el centro de seguridad & cumplimiento. De forma predeterminada, este rol se asigna a los grupos de roles administrador de cumplimiento, administración de la organización, administrador de seguridad y lector de seguridad en el centro de seguridad & cumplimiento.
+
+- Además, debe tener asignado el rol de destinatarios con permiso de vista en el EAC para ver los informes de DLP en el EAC. De forma predeterminada, este rol se asigna a los grupos de roles administración de cumplimiento, administración de la organización y administración de la organización de solo vista en el EAC.
   
- **Para abrir la página de informes de la vista de la seguridad &amp; centro de cumplimiento:**
+ **Para abrir la página ver informes en el centro de seguridad & cumplimiento:**
   
 1. Vaya a [https://protection.office.com/#/viewreports](https://protection.office.com/#/viewreports).
     
-2. Inicie sesión en Office 365 con las credenciales para una cuenta de usuario de la organización de Office 365.
+2. Inicie sesión en Office 365 con las credenciales de una cuenta de usuario en su organización de Office 365.
     
-En la página **Ver informes** , puede ver los siguientes tipos de informes: 
+En la página **ver informes** , puede ver los siguientes tipos de informes: 
   
 - [Informes de auditoría en EOP](#auditing-reports)
 - [Informe de revisión de supervisión](#supervisory-review-report)
@@ -50,18 +50,18 @@ En la página **Ver informes** , puede ver los siguientes tipos de informes:
     
 ## <a name="auditing-reports"></a>Informes de auditoría
 
-En la siguiente tabla se describe los informes en la sección **auditoría** en la página **Ver informes** en la seguridad &amp; centro de cumplimiento. 
+En la tabla siguiente se describen los informes en la sección **Auditoría** de la página **ver informes** en el centro de seguridad & cumplimiento. 
   
 |**Informe**|**Descripción**|
 |:-----|:-----|
-|**Informe de registro de auditoría de Office 365** <br/> |Puede buscar el registro de auditoría de Office 365 para la actividad de usuario y administración de en la organización de Office 365. El informe contiene actividad de usuario y administración de las entradas en Exchange Online, SharePoint Online, OneDrive para la empresa y Azure Active Directory, que es el servicio de directorio para Office 365. Para obtener más información, vea [Buscar en el registro de auditoría de la seguridad de Office 365 &amp; centro de cumplimiento](search-the-audit-log-in-security-and-compliance.md).<br/> |
-|**Informes de Azure AD** <br/> |Para buscar inusual o sospechosa inicio de sesión de actividad en la organización de Office 365, puede usar el inicio de sesión y la actividad de informes en Microsoft Azure. También puede ver eventos en el registro de auditoría de Azure AD. Para ver los informes en Azure, simplemente haga clic en **Ver Azure AD informes**. Para obtener más información, vea:<br/><br/>[Use su suscripción de Azure Active Directory gratuita en Office 365](use-your-free-azure-ad-subscription-in-office-365.md). <br/> [Ver los informes de uso y acceso](http://go.microsoft.com/fwlink/p/?LinkId=506902).  <br/> |
-|**Informes de auditoría de Exchange** <br/> | Puede usar la funcionalidad de auditoría en Office 365 para realizar un seguimiento de los cambios realizados en la configuración de Exchange Online por los administradores de la organización. También se registran los cambios realizados en la organización de Exchange Online por un administrador de centro de datos de Microsoft o por un administrador delegado. Para Exchange Online, auditoría de administrador de registro está habilitado de forma predeterminada, por lo que no tiene que hacer nada para activarla. Exchange Online también proporciona un registro que permita controlar el acceso a los buzones de correo por alguien que no sea el propietario del buzón de auditoría de buzón de correo. Se debe habilitar la auditoría de buzón de correo para cada buzón de correo que se va a realizar un seguimiento de acceso no propietario.<br/>  Registro de auditoría para la administración y el buzón de correo, puede ejecutar informes de auditoría para ver las entradas de registro de auditoría. También puede exportar los registros de auditoría de buzón de correo y administración que se le envíen dentro de 24 horas en un archivo XML que se adjunta a mensaje de correo electrónico.<br/><br/>Para obtener más información acerca de cómo exportar los registros de auditoría, consulte:  <br/><br/> [Exportar registros de auditoría de buzones](http://go.microsoft.com/fwlink/p/?LinkID=404104) <br/> [Ver y exportar el registro de auditoría de administración de centros de datos](http://go.microsoft.com/fwlink/p/?LinkId=404109) <br/> [Los cambios del grupo de roles de búsqueda o los registros de auditoría del administrador](http://go.microsoft.com/fwlink/p/?LinkId=404105) <br/>   [Informes de auditoría de Exchange](http://go.microsoft.com/fwlink/p/?LinkID=395232).  <br/> |
+|**Informe de registro de auditoría de Office 365** <br/> |Puede buscar en el registro de auditoría de Office 365 la actividad de usuario y de administrador de su organización de Office 365. El informe contiene entradas actividad de usuario y administrador de Exchange Online, SharePoint Online, OneDrive para la empresa y Azure Active Directory, que es el servicio de directorio para Office 365. Para obtener más información, vea [Buscar en el registro de auditoría en el centro de seguridad _AMP_ cumplimiento de Office 365](search-the-audit-log-in-security-and-compliance.md).<br/> |
+|**Informes de Azure AD** <br/> |Para buscar actividad de inicio de sesión sospechoso o inusual en su organización de Office 365, puede usar los informes de actividad y de inicio de sesión en Microsoft Azure. También puede ver eventos en el registro de auditoría de Azure AD. Para ver los informes en Azure, solo tiene que hacer clic en **ver informes de Azure ad**. Para obtener más información, vea:<br/><br/>[Use su suscripción gratuita de Azure Active Directory en Office 365](use-your-free-azure-ad-subscription-in-office-365.md). <br/> [Ver los informes de acceso y uso](http://go.microsoft.com/fwlink/p/?LinkId=506902).  <br/> |
+|**Informes de auditoría de Exchange** <br/> | Puede usar la funcionalidad de auditoría de Office 365 para realizar un seguimiento de los cambios realizados en la configuración de Exchange Online por parte de los administradores de la organización. También se registran los cambios realizados en la organización de Exchange Online por un administrador del centro de datos de Microsoft o por un administrador delegado. Para Exchange Online, el registro de auditoría de administrador está habilitado de forma predeterminada, por lo que no tiene que hacer nada para activarlo. Exchange Online también proporciona un registro de auditoría de buzones de correo para permitirle realizar un seguimiento del acceso a los buzones por parte de alguien que no sea el propietario del buzón. Tiene que habilitar el registro de auditoría de buzones de correo para cada buzón de correo en el que desea realizar un seguimiento del acceso de usuario no propietario.<br/>  Para el registro de auditoría de administración y de buzones de correo, puede ejecutar informes de auditoría para ver las entradas del registro de auditoría. También puede exportar los registros de auditoría de buzones y de administración, que se le envían en un plazo de 24 horas en un archivo XML adjunto a un mensaje de correo electrónico.<br/><br/>Para obtener más información acerca de la exportación de registros de auditoría, vea:  <br/><br/> [Exportar registros de auditoría de buzones](http://go.microsoft.com/fwlink/p/?LinkID=404104) <br/> [Ver y exportar el registro de auditoría de administración del centro de administración de información](http://go.microsoft.com/fwlink/p/?LinkId=404109) <br/> [Buscar los informes de cambios del grupo de roles o auditorías de administrador](http://go.microsoft.com/fwlink/p/?LinkId=404105) <br/>   [Informes de auditoría de Exchange](http://go.microsoft.com/fwlink/p/?LinkID=395232).  <br/> |
    
 ## <a name="supervisory-review-report"></a>Informe de revisión de supervisión
 
-Con el informe de revisión de supervisión, puede ver el estado de todas las directivas de la revisión de supervisión de la organización. Para obtener más información, vea [Configure supervisión revisar las directivas para la organización](configure-supervision-policies.md).
+Con el informe de revisión de supervisión, puede ver el estado de todas las directivas de revisión de supervisión de su organización. Para obtener más información, consulte [configurar las directivas de revisión de supervisión para su organización](configure-supervision-policies.md).
   
 ## <a name="data-loss-prevention-reports"></a>Informes de prevención de pérdida de datos
 
-Informes de prevención de pérdida de datos (DLP) contienen información acerca de las directivas DLP y las reglas que se han aplicado al contenido contienen datos confidenciales en su organización de Office 365. También puede configurar el informe para mostrar información acerca de las acciones de DLP que se basaban en su directiva de DLP y reglas. Para obtener más información, vea [Ver el informe de prevención de pérdida de datos](view-the-dlp-reports.md).
+Los informes de prevención de pérdida de datos (DLP) contienen información sobre las directivas y reglas de DLP que se han aplicado al contenido que contienen datos confidenciales en la organización de Office 365. También puede configurar el informe para que muestre información sobre las acciones de DLP que se basan en la Directiva y las reglas de DLP. Para obtener más información, vea [ver el informe de prevención de pérdida de datos](view-the-dlp-reports.md).
