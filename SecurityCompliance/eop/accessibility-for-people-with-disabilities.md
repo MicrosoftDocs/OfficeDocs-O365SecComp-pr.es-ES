@@ -12,12 +12,12 @@ localization_priority: Normal
 ms.collection: Ent_O365_Hybrid
 ms.assetid: a7203ebd-ffac-4a8d-a2d0-6c8a61c8eeb8
 description: Microsoft mantiene el compromiso de hacer más fácil para todos el uso de sus productos y servicios.
-ms.openlocfilehash: 1e59e995ffaa4b3324913d8e49a9c2ee00b142fb
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 2403ef4ec5a99202a45b40bf639193643b6ad02b
+ms.sourcegitcommit: 06d6e63225f912d0f3c6bb836c61eb11c1dbe97a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026217"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "30206383"
 ---
 # <a name="accessibility-for-people-with-disabilities"></a>Accesibilidad para personas con discapacidad
 
@@ -25,11 +25,11 @@ ms.locfileid: "22026217"
 
 Las siguientes características de Microsoft Exchange lo hacen más accesible para personas que conviven con una discapacidad:
   
-- [Métodos abreviados de teclado en Exchange 2013 Preview](http://technet.microsoft.com/library/146b2b52-1ef8-4606-991a-4cf4da694970.aspx)
+- [Métodos abreviados de teclado de Exchange Server](http://technet.microsoft.com/library/146b2b52-1ef8-4606-991a-4cf4da694970.aspx)
     
-- [Métodos abreviados de teclado en Outlook Web App](https://go.microsoft.com/fwlink/p/?LinkId=268079)
+- [Métodos abreviados en Outlook en la web](https://go.microsoft.com/fwlink/p/?LinkId=268079)
     
-Además, algunas características de accesibilidad y utilidades de Windows pueden beneficiar a los usuarios de Exchange con discapacidades. Además, los cambios de tamaño y color de Windows PowerShell proporcionan opciones de accesibilidad cuando se usa el Shell de administración de Exchange. Para obtener más información acerca de las opciones de accesibilidad de Windows PowerShell, vea la [accesibilidad en Windows PowerShell 2.0 ISE](https://go.microsoft.com/fwlink/p/?LinkId=258240).
+Además, algunas utilidades y características de accesibilidad de Windows pueden beneficiar a los usuarios de Exchange con discapacidades. Además, los cambios de tamaño y color de Windows PowerShell proporcionan opciones de accesibilidad al usar el shell de administración de Exchange. Para obtener más información acerca de las opciones de accesibilidad de Windows PowerShell, consulte [Accessibility in Windows PowerShell 2,0 ISE](https://go.microsoft.com/fwlink/p/?LinkId=258240).
   
 ## <a name="accessibility-features-of-exchange-help"></a>Características de accesibilidad de la ayuda de Exchange
 

@@ -1,91 +1,91 @@
 ---
-title: Usar una secuencia de comandos para agregar usuarios a una suspensión en un caso de exhibición de documentos electrónicos en la seguridad de Office 365 &amp; centro de cumplimiento
+title: Usar un script para agregar usuarios a una suspensión en un caso de exhibición de documentos electrónicos en &amp; el centro de seguridad y cumplimiento de Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 1/23/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MED150
 - MBS150
 ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
-description: Ejecutar un script para agregar rápidamente los buzones de correo y de sitios de OneDrive para la empresa a una nueva suspensión que está asociado con un caso de exhibición de documentos electrónicos en la seguridad de Office 365 &amp; centro de cumplimiento.
-ms.openlocfilehash: 2c93deb14bc8c1f89dab7bb054d2e94db06cfbd5
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+description: Ejecute un script para agregar rápidamente sitios de buzones de correo y OneDrive para la empresa a una nueva retención asociada a un caso de exhibición de documentos &amp; electrónicos en el centro de seguridad y cumplimiento de Office 365.
+ms.openlocfilehash: b9d34f4576299dccf0f751c7f204639b5a770b32
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038263"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214290"
 ---
-# <a name="use-a-script-to-add-users-to-a-hold-in-an-ediscovery-case-in-the-office-365-security-amp-compliance-center"></a>Usar una secuencia de comandos para agregar usuarios a una suspensión en un caso de exhibición de documentos electrónicos en la seguridad de Office 365 &amp; centro de cumplimiento
+# <a name="use-a-script-to-add-users-to-a-hold-in-an-ediscovery-case-in-the-office-365-security-amp-compliance-center"></a>Usar un script para agregar usuarios a una suspensión en un caso de exhibición de documentos electrónicos en &amp; el centro de seguridad y cumplimiento de Office 365
 
-La seguridad de Office 365 &amp; centro de cumplimiento proporciona una gran cantidad de cmdlets de Windows PowerShell que permiten automatizar laboriosas tareas relacionadas con la creación y administración de casos de exhibición de documentos electrónicos. Actualmente, con la herramienta de casos de exhibición de documentos electrónicos en la seguridad &amp; centro de cumplimiento de normas para poner un gran número de ubicaciones de contenido de custodia en espera lleva tiempo y preparación. Por ejemplo, antes de crear una suspensión, se debe recopilar la dirección URL para cada OneDrive para el sitio de negocio que desee poner en espera. A continuación, para cada usuario que desee poner en espera, se debe agregar a su buzón y su OneDrive para el sitio de negocio a la suspensión. En futuras versiones de la seguridad &amp; centro de cumplimiento, esto se obtiene más fácil de hacer. Hasta entonces, puede utilizar la secuencia de comandos de este artículo para automatizar este proceso.
+El centro de seguridad &amp; y cumplimiento de Office 365 proporciona muchos cmdlets de Windows PowerShell que permiten automatizar las tareas que llevan mucho tiempo relacionadas con la creación y la administración de casos de eDiscovery. Actualmente, el uso de la herramienta de casos de &amp; eDiscovery en el centro de seguridad y cumplimiento para poner en retención un gran número de ubicaciones de contenido de custodios requiere tiempo y preparación. Por ejemplo, antes de crear una retención, tiene que recopilar la dirección URL de cada sitio de OneDrive para la empresa que quiera poner en retención. A continuación, para cada usuario que quiera poner en retención, tiene que agregar su buzón y su sitio de OneDrive para la empresa a la retención. En versiones futuras del centro de &amp; seguridad y cumplimiento, esto le resultará más sencillo. Hasta entonces, puede usar el script de este artículo para automatizar este proceso.
   
-La secuencia de comandos le pide el nombre de dominio de Mi sitio de la organización (por ejemplo, **contoso** en la dirección URL https://contoso-my.sharepoint.com), el nombre de un caso de exhibición de documentos electrónicos existente, el nombre de la suspensión nuevo que asociado con el caso, una lista de direcciones de correo electrónico de los usuarios que desee. para poner en espera y una consulta de búsqueda que se utilizará si desea crear una suspensión basada en consultas. La secuencia de comandos, a continuación, obtiene la dirección URL para el OneDrive para sitio empresarial para cada usuario en la lista, crea la suspensión nuevo y, a continuación, agrega el buzón de correo y OneDrive para sitio empresarial para cada usuario en la lista a la suspensión. La secuencia de comandos también genera archivos de registro que contienen información acerca de la suspensión nuevo. 
+El script le pedirá el nombre del dominio de mi sitio de su organización (por ejemplo, **contoso** en la dirección https://contoso-my.sharepoint.com)URL, el nombre de un caso de eDiscovery existente, el nombre de la nueva retención asociada con el caso, una lista de direcciones de correo electrónico de los usuarios que desea poner en espera y una consulta de búsqueda para usar si desea crear una suspensión basada en consulta. A continuación, el script obtiene la dirección URL del sitio de OneDrive para la empresa para cada usuario de la lista, crea la nueva retención y, a continuación, agrega el buzón y el sitio de OneDrive para la empresa para cada usuario de la lista a la retención. El script también genera archivos de registro que contienen información sobre la nueva suspensión. 
   
-Estos son los pasos para que esto ocurra:
+Estos son los pasos para que esto suceda:
   
 [Paso 1: Instalar el Shell de administración de SharePoint Online](use-a-script-to-add-users-to-a-hold-in-ediscovery.md#step1)
   
-[Paso 2: Generar una lista de usuarios](use-a-script-to-add-users-to-a-hold-in-ediscovery.md#step2)
+[Paso 2: generar una lista de usuarios](use-a-script-to-add-users-to-a-hold-in-ediscovery.md#step2)
   
-[Paso 3: Ejecutar el script para crear una suspensión y agregar usuarios](use-a-script-to-add-users-to-a-hold-in-ediscovery.md#step3)
+[Paso 3: ejecutar el script para crear una retención y agregar usuarios](use-a-script-to-add-users-to-a-hold-in-ediscovery.md#step3)
   
 ## <a name="before-you-begin"></a>Antes de empezar
 
-- Tiene que ser un miembro del grupo de roles de administrador de exhibición de documentos electrónicos en la seguridad &amp; centro de cumplimiento y un administrador global de SharePoint Online para ejecutar el script en el paso 3. Para obtener más información, vea [asignar permisos de exhibición de documentos electrónicos en la seguridad de Office 365 &amp; centro de cumplimiento](assign-ediscovery-permissions.md).
+- Debe ser miembro del grupo de roles eDiscovery Manager en el centro de seguridad &amp; y cumplimiento y un administrador global de SharePoint Online para ejecutar el script en el paso 3. Para obtener más información, consulte [asignar permisos de exhibición de documentos electrónicos &amp; en el centro de seguridad y cumplimiento de Office 365](assign-ediscovery-permissions.md).
     
-- Un máximo de 1.000 buzones de correo y 100 sitios puede agregarse a una suspensión a la que está asociado con un caso de exhibición de documentos electrónicos en la seguridad &amp; centro de cumplimiento. Suponiendo que todos los usuarios que desea poner en espera tienen un OneDrive para el sitio de negocio, puede agregar un máximo de 100 usuarios a una suspensión con la secuencia de comandos en este artículo. 
+- Se puede Agregar un máximo de 1.000 buzones y sitios de 100 a una suspensión asociada a un caso de exhibición de documentos electrónicos &amp; en el centro de seguridad y cumplimiento. SuPoniendo que todos los usuarios que quiera poner en retención dispongan de un sitio de OneDrive para la empresa, puede Agregar un máximo de 100 usuarios a una suspensión mediante el script de este artículo. 
     
-- Asegúrese de guardar la lista de usuarios que se crean en el paso 2 y la secuencia de comandos en el paso 3 en la misma carpeta. Que facilitan ejecutar el script.
+- Asegúrese de guardar la lista de usuarios que ha creado en el paso 2 y el script en el paso 3 en la misma carpeta. Esto hará que sea más fácil ejecutar el script.
     
-- La secuencia de comandos agrega la lista de usuarios a una suspensión nueva que está asociada con un caso existente. Asegúrese de que se crea el caso de que se va a asociar la suspensión con antes de ejecutar la secuencia de comandos.
+- La secuencia de comandos agrega la lista de usuarios a una nueva retención asociada a un caso existente. Asegúrese de que el caso con el que desea asociar la retención se ha creado antes de ejecutar el script.
     
-- La secuencia de comandos incluye el tratamiento de errores mínima. Su objetivo principal es rápida y fácilmente colocar el buzón de correo y OneDrive para el sitio de negocio de cada usuario en suspensión.
+- El script incluye un tratamiento de errores mínimo. Su objetivo principal es ubicar de forma rápida y sencilla el buzón y el sitio de OneDrive para la empresa de cada usuario en espera.
     
 - Los scripts de ejemplo que se proporcionan en este tema no son compatibles con ningún servicio o programa de soporte técnico estándar de Microsoft. Los scripts de ejemplo se proporcionan tal cual, sin garantía de ningún tipo. Además, Microsoft se exime de todas las garantías implícitas, incluidas (sin limitación) las garantías implícitas de comerciabilidad o idoneidad para un propósito específico. El usuario asume todos los riesgos derivados del uso o del rendimiento de los scripts de ejemplo y la documentación. Microsoft, sus autores o cualquier persona relacionada con la creación, producción o entrega de los scripts no serán en ningún caso responsables de cualesquiera daños (incluidos, sin limitación, los daños producidos por la pérdida de beneficios comerciales, interrupción de la actividad comercial, pérdida de información empresarial u otras pérdidas económicas) derivados del uso o de la imposibilidad de uso de los scripts de ejemplo o la documentación, incluso aunque Microsoft tenga constancia de la posibilidad de que dichos daños se produzcan.
 
 ## <a name="step-1-install-the-sharepoint-online-management-shell"></a>Paso 1: Instalar el Shell de administración de SharePoint Online
 
-El primer paso es instalar la consola de administración en línea de SharePoint si no está ya está instalado en el equipo local. No tiene que usar el shell en este procedimiento, pero debe instalarlo porque contiene los requisitos previos necesarios para la secuencia de comandos que se ejecutan en el paso 3. Estos requisitos previos de permiten la secuencia de comandos para comunicarse con SharePoint Online para obtener las direcciones URL para el OneDrive para sitios de negocio.
+El primer paso es instalar el shell de administración de SharePoint Online si todavía no está instalado en el equipo local. No tiene que usar el shell de este procedimiento, pero tiene que instalarlo porque contiene los requisitos previos necesarios para el script que ejecutó en el paso 3. Estos requisitos previos permiten que el script se comunique con SharePoint Online para obtener las direcciones URL de los sitios de OneDrive para la empresa.
   
-Vaya a [Configurar el entorno de SharePoint Online Management Shell de Windows PowerShell](https://go.microsoft.com/fwlink/p/?LinkID=286318) y realice el paso 1 y paso 2 para instalar la consola de administración de SharePoint Online en el equipo local. 
+Vaya a [configurar el entorno de Windows PowerShell de Shell de administración de SharePoint Online](https://go.microsoft.com/fwlink/p/?LinkID=286318) y realice los pasos 1 y 2 para instalar el shell de administración de SharePoint Online en el equipo local. 
 
-## <a name="step-2-generate-a-list-of-users"></a>Paso 2: Generar una lista de usuarios
+## <a name="step-2-generate-a-list-of-users"></a>Paso 2: generar una lista de usuarios
 <a name="step2"> </a>
 
-La secuencia de comandos en el paso 3 creará una suspensión a la que está asociado con un caso de exhibición de documentos electrónicos y la adición de los buzones y OneDrive para sitios de profesionales de una lista de los usuarios a la suspensión. Sólo puede escribir las direcciones de correo electrónico en un archivo de texto, o puede ejecutar un comando de Windows PowerShell para obtener una lista de direcciones de correo electrónico y guardarlos en un archivo (que se encuentra en la misma carpeta que se va a guardar la secuencia de comandos en el paso 3).
+El script del paso 3 creará una retención asociada con un caso de exhibición de documentos electrónicos, y los sitios y agregar los buzones y OneDrive para la empresa de una lista de usuarios a la retención. Solo puede escribir las direcciones de correo electrónico en un archivo de texto o puede ejecutar un comando en Windows PowerShell para obtener una lista de direcciones de correo electrónico y guardarlas en un archivo (ubicado en la misma carpeta en la que guardará el script en el paso 3).
   
-Este es un comando de PowerShell (que se ejecuta mediante el uso de PowerShell remoto conectado a la organización de Exchange Online) obtener una lista de direcciones de correo electrónico para todos los usuarios de su organización y guárdelo en un archivo de texto denominado HoldUsers.txt.
+Este es un comando de PowerShell (que ejecuta con PowerShell remoto conectado a su organización de Exchange Online) para obtener una lista de direcciones de correo electrónico para todos los usuarios de la organización y guardarla en un archivo de texto denominado HoldUsers. txt.
   
 ```
 Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbox'} | Select-Object PrimarySmtpAddress > HoldUsers.txt
 ```
 
-Después de ejecutar este comando, abra el archivo de texto y quitar el encabezado que contiene el nombre de la propiedad, `PrimarySmtpAddress`. A continuación, quite todas las direcciones de correo electrónico, excepto las de los usuarios que desea agregar a la suspensión que creará en el paso 3. Asegúrese de que no hay ninguna fila en blanco antes o después de la lista de direcciones de correo electrónico.
+Después de ejecutar este comando, abra el archivo de texto y quite el encabezado que contiene el nombre de `PrimarySmtpAddress`la propiedad. A continuación, quite todas las direcciones de correo electrónico excepto las de los usuarios que desea agregar a la suspensión que creará en el paso 3. Asegúrese de que no haya filas en blanco antes ni después de la lista de direcciones de correo electrónico.
   
 
   
-## <a name="step-3-run-the-script-to-create-a-hold-and-add-users"></a>Paso 3: Ejecutar el script para crear una suspensión y agregar usuarios
+## <a name="step-3-run-the-script-to-create-a-hold-and-add-users"></a>Paso 3: ejecutar el script para crear una retención y agregar usuarios
 <a name="step3"> </a>
 
-Cuando se ejecuta la secuencia de comandos en este paso, le pedirá la siguiente información. Asegúrese de que tiene esta información lista antes de ejecutar la secuencia de comandos.
+Al ejecutar el script en este paso, se le pedirá la siguiente información. Asegúrese de que tiene esta información lista antes de ejecutar el script.
   
-- **Sus credenciales de usuario** : la secuencia de comandos usará las credenciales para conectarse a la seguridad &amp; centro de cumplimiento con PowerShell remoto. También utilizará estas credenciales para tener acceso a SharePoint Online para obtener el OneDrive para direcciones URL de negocio para la lista de usuarios.
+- **Sus credenciales de usuario** : el script usará sus credenciales para conectarse al &amp; centro de seguridad y cumplimiento con PowerShell remoto. También usará estas credenciales para acceder a SharePoint Online y obtener las direcciones URL de OneDrive para la empresa para la lista de usuarios.
     
-- **Nombre de su dominio de Mi sitio** - misitio el dominio es el dominio que contiene la de OneDrive para sitios de profesionales de la organización. Por ejemplo, si la dirección URL para su dominio de Mi sitio es **https://contoso-my.sharepoint.com**, a continuación, deberá escribir `contoso` cuando la secuencia de comandos le pide el nombre de su dominio de Mi sitio. 
+- **Nombre del dominio de mi sitio** : el dominio de mi sitio es el dominio que contiene todos los sitios de OneDrive para la empresa de su organización. Por ejemplo, si la dirección URL del dominio de mi sitio **https://contoso-my.sharepoint.com**es, debe especificar `contoso` cuando el script le pide el nombre de su dominio de mi sitio. 
     
-- **Nombre del caso** - el nombre de un caso existente. La secuencia de comandos creará una nueva suspensión que está asociada con este caso.
+- **Nombre del caso** : nombre de un caso existente. El script creará una nueva suspensión asociada a este caso.
     
-- **Nombre de la suspensión** - el nombre de la suspensión de la secuencia de comandos creará y asociar con el caso especificado.
+- **Nombre de la suspensión** : el nombre de la retención que creará el script y se asociará con el caso especificado.
     
-- **Mantenga presionada la consulta de búsqueda para una consulta-based** - puede crear una suspensión basada en consultas para que sólo el contenido que cumpla los criterios de búsqueda especificado se pondrá en espera. Para poner todo el contenido en espera, simplemente, presione **ENTRAR** cuando se le solicite para una consulta de búsqueda. 
+- **Consulta de búsqueda para una retención basada en consulta** : puede crear una suspensión basada en consulta para que solo se coloque en retención el contenido que cumpla los criterios de búsqueda especificados. Para poner todo el contenido en espera, simplemente presione **entrar** cuando se le pida una consulta de búsqueda. 
     
-- **Si desea activar la suspensión** - puede tener la secuencia de comandos activar la suspensión después de crearla o puede hacer que la secuencia de comandos cree la suspensión sin habilitarla. Si no dispone de la secuencia de comandos activar la suspensión, puede activarlo más adelante en la seguridad &amp; centro de cumplimiento o mediante la ejecución de los siguientes comandos de PowerShell: 
+- **Si quiere activar o no la retención** , puede hacer que la secuencia de comandos vuelva a pasar la retención una vez creada o puede hacer que el script cree la retención sin habilitarla. Si la secuencia de comandos no se activa, puede activarla más adelante en el centro de seguridad &amp; y cumplimiento o mediante la ejecución de los siguientes comandos de PowerShell: 
     
   ```
   Set-CaseHoldPolicy -Identity <name of the hold> -Enabled $true
@@ -95,11 +95,11 @@ Cuando se ejecuta la secuencia de comandos en este paso, le pedirá la siguiente
   Set-CaseHoldRule -Identity <name of the hold> -Disabled $false
   ```
 
-- **Nombre del archivo de texto con la lista de usuarios** : el nombre del archivo de texto del paso 2 que contiene la lista de usuarios para agregar a la suspensión. Si este archivo se encuentra en la misma carpeta que la secuencia de comandos, simplemente escriba el nombre del archivo (por ejemplo, HoldUsers.txt). Si el archivo de texto está en otra carpeta, escriba la ruta de acceso completa del archivo.
+- **Nombre del archivo de texto con la lista de usuarios** : el nombre del archivo de texto del paso 2 que contiene la lista de usuarios que se van a agregar a la suspensión. Si este archivo se encuentra en la misma carpeta que el script, escriba el nombre del archivo (por ejemplo, HoldUsers. txt). Si el archivo de texto está en otra carpeta, escriba la ruta de directorio completa del archivo.
     
-Una vez recopilada la información que la secuencia de comandos le pedirá, es el paso final ejecutar el script para crear la nueva suspensión y agregar usuarios a ella.
+Una vez que haya recopilado la información que le pedirá el script, el paso final consiste en ejecutar el script para crear la nueva retención y agregar usuarios a la misma.
   
-1. Guarde el siguiente texto en un archivo de secuencia de comandos de Windows PowerShell mediante el uso de un sufijo de nombre de archivo de. ps1; Por ejemplo, `AddUsersToHold.ps1`.
+1. Guarde el siguiente texto en un archivo de script de Windows PowerShell mediante un sufijo de nombre de archivo de. ps1; por ejemplo, `AddUsersToHold.ps1`.
     
   ```
   #script begin
@@ -274,24 +274,24 @@ Una vez recopilada la información que la secuencia de comandos le pedirá, es e
   #script end
   ```
 
-2. En el equipo local, abra Windows PowerShell y vaya a la carpeta donde guardó la secuencia de comandos.
+2. En el equipo local, abra Windows PowerShell y vaya a la carpeta donde guardó el script.
     
-3. Ejecute la secuencia de comandos; Por ejemplo:
+3. Ejecutar el script; por ejemplo:
     
       ```
     .\AddUsersToHold.ps1
       ```
 
-4. Escriba la información que le pide la secuencia de comandos.
+4. Escriba la información que el script le pide.
     
-    La secuencia de comandos se conecta a seguridad & PowerShell de centro de cumplimiento y, a continuación, crea la suspensión nuevo en el caso de exhibición de documentos electrónicos y agrega los buzones y OneDrive para la empresa para los usuarios de la lista. Puede ir a las mayúsculas y minúsculas en la página de **exhibición de documentos electrónicos** en la seguridad &amp; centro de cumplimiento para ver la suspensión nuevo. 
+    El script se conecta a Security & Compliance Center PowerShell y, a continuación, crea la nueva retención en el caso de eDiscovery y agrega los buzones y OneDrive para la empresa para los usuarios de la lista. Puede ir al caso en la página **exhibición** de documentos electrónicos del centro &amp; de seguridad y cumplimiento para ver la nueva suspensión. 
     
-Una vez finalizada la secuencia de comandos que se ejecuta, lo crea los siguientes archivos de registro y los guarda en la carpeta donde se encuentra la secuencia de comandos.
+Una vez finalizada la ejecución del script, se crean los siguientes archivos de registro y se guardan en la carpeta en la que se encuentra el script.
   
-- **LocationsOnHold.txt** - contiene una lista de buzones de correo y OneDrive para los sitios de negocio que la secuencia de comandos correctamente colocado en suspensión.
+- **LocationsOnHold. txt** : contiene una lista de buzones de correo y de sitios de OneDrive para la empresa en los que la secuencia de comandos se colocó correctamente en retención.
     
-- **LocationsNotOnHold.txt** - contiene una lista de buzones de correo y OneDrive para los sitios de negocio que la secuencia de comandos no se convirtieron en espera. Si un usuario tiene un buzón de correo, pero no un OneDrive para el sitio de negocio, el usuario se incluirá en la lista de OneDrive para sitios de negocio que no se han colocado en suspensión.
+- **LocationsNotOnHold. txt** : contiene una lista de buzones de correo y de sitios de OneDrive para la empresa que el script no se ha puesto en espera. Si un usuario tiene un buzón de correo, pero no un sitio de OneDrive para la empresa, el usuario se incluiría en la lista de sitios de OneDrive para la empresa que no se pusieron en suspensión.
     
-- **GetCaseHoldPolicy.txt** - contiene el resultado del cmdlet **Get-CaseHoldPolicy** para la suspensión nuevo, que se ejecutó la secuencia de comandos después de crear la suspensión nuevo. La información devuelta por este cmdlet incluye una lista de los usuarios cuyos buzones de correo y OneDrive para sitios de negocio se colocaron en espera y si la suspensión está habilitada o deshabilitada. 
+- **GetCaseHoldPolicy. txt** : contiene la salida del cmdlet **Get-CaseHoldPolicy** para la nueva suspensión, que se ejecutó el script después de crear la nueva suspensión. La información devuelta por este cmdlet incluye una lista de usuarios cuyos buzones y los sitios de OneDrive para la empresa se pusieron en retención y si la retención está habilitada o deshabilitada. 
     
-- **GetCaseHoldRule.txt** - contiene el resultado del cmdlet **Get-CaseHoldRule** para la suspensión nuevo, que se ejecutó la secuencia de comandos después de crear la suspensión nuevo. La información devuelta por este cmdlet incluye la consulta de búsqueda si se usa la secuencia de comandos para crear una suspensión basada en consultas. 
+- **GetCaseHoldRule. txt** : contiene la salida del cmdlet **Get-CaseHoldRule** para la nueva suspensión, que se ejecutó el script después de crear la nueva suspensión. La información devuelta por este cmdlet incluye la consulta de búsqueda si usó el script para crear una suspensión basada en consulta. 

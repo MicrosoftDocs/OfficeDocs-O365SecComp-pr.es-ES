@@ -6,118 +6,118 @@ manager: laurawi
 ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 44055727-56e8-42d7-9dc3-fb942f3901cc
-description: 'Obtenga información sobre cómo definir la regla para omitir el texto específico al utilizar los módulos de proceso y analizar en la exhibición de documentos electrónicos avanzada de Office 365.  '
-ms.openlocfilehash: eb7e7052979087b7dba98aac3b0c9ab75ec0d02a
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: 'Obtenga información sobre cómo definir la regla para omitir texto específico cuando use los módulos Analyze y Process en Office 365 Advanced eDiscovery.  '
+ms.openlocfilehash: 3a4c1d17a9a56d3018509a8dcfd6b49abb951676
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22536239"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214250"
 ---
 # <a name="set-ignore-text-option-for-analyze-in-office-365-advanced-ediscovery"></a>Establecer la opción de omitir el texto para analizar en eDiscovery avanzado de Office 365
 
 > [!NOTE]
-> Exhibición de documentos electrónicos avanzada requiere un E3 de Office 365 con el complemento de cumplimiento avanzadas o una suscripción E5 para su organización. Si no tiene ese plan y desea probar avanzada exhibición de documentos electrónicos, puede [registrarse y obtener una versión de prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
-La característica de omitir el texto se puede aplicar a todos o cualquiera de los siguientes módulos de exhibición de documentos electrónicos avanzada: analizar (cerca de duplicados, subprocesos de correo electrónico, los temas) y la relevancia. Texto omitido no aparecerán en los archivos que se muestran en la relevancia y los cálculos de análisis descartará el texto omitido.
+La característica omitir texto se puede aplicar a todos los módulos avanzados de eDiscovery (o a cualquiera de ellos): analizar (casi duplicados, subProcesos de correo electrónico, temas) y relevancia. El texto omitido no aparecerá en los archivos que se muestren en relevancia y el análisis o cálculos descartará el texto omitido.
   
-Si la característica de omitir el texto se ha definido previamente para los módulos que ya ha ejecutado, la opción Omitir texto ahora estará protegida frente a la modificación. Sin embargo, aún puede cambiarse la característica de omitir el texto para el módulo de la relevancia en cualquier momento.
+Si la característica de omitir texto se ha definido previamente para los módulos que ya se han ejecutado, la configuración de omitir texto ahora estará protegida contra modificaciones. Sin embargo, la característica de omisión de texto para el módulo de relevancia todavía puede cambiarse en cualquier momento.
   
-## <a name="how-ignore-text-filters-are-applied"></a>Cómo se aplican los filtros de omitir texto
+## <a name="how-ignore-text-filters-are-applied"></a>Cómo omitir los filtros de texto que se aplican
 
-Varios filtros de omitir texto se aplican en el orden en que se escribieron. Para cambiar el orden en que se aplican, debe eliminar y volver a escribir en el orden que desee.
+Se aplican varios filtros de omitir texto en el orden en que se especificaron. Para cambiar el orden en el que se aplican, se deben eliminar y volver a especificar en el orden deseado.
   
-Por ejemplo, si el contenido de texto es: "EVA de CAROL de ALICE para BOB de DAVE", los siguientes son ejemplos de entradas de omitir el texto y los resultados:
+Por ejemplo, si el contenido de texto es: "DAVE BOB ALICE CAROL Eva", a continuación se muestran ejemplos de omitir las entradas de texto y los resultados:
   
 ||||
 |:-----|:-----|:-----|
-|**Omitir las entradas de texto** <br/> |**==\>** <br/> |**Resultados** <br/> |
-|"ALICE", "BOB ANA"  <br/> |==\>  <br/> |"DAVE EVA"  <br/> |
-|"ALICE", "BOB ALICE CAROL"  <br/> |==\>  <br/> |"DAVE BOB CAROL EVA"  <br/> |
+|**Omitir entradas de texto** <br/> |**==\>** <br/> |**Resultados** <br/> |
+|"ALICIA", "BOB CAROL"  <br/> |==\>  <br/> |"DAVE EVA"  <br/> |
+|"ALICIA", "BOB ALICE CAROL"  <br/> |==\>  <br/> |"EVA BOB CAROL EVA"  <br/> |
    
-No se implementa la segunda entrada de texto omitir debido a que la cadena no se encuentra como tal, una vez que se ha aplicado el primer texto omitir.
+La segunda omisión de la entrada de texto no se implementa porque no se encuentra la cadena como tal después de que se haya aplicado el primer texto ignore.
   
-## <a name="use-regular-expressions-when-defining-ignore-text"></a>Usar expresiones regulares al definir Omitir texto
+## <a name="use-regular-expressions-when-defining-ignore-text"></a>Usar expresiones regulares al definir omitir texto
 
-Expresiones regulares compatibles para su uso al definir Omitir texto. Los siguientes son ejemplos de uso y la sintaxis de expresión regular:
+Las expresiones regulares se pueden usar al definir omitir texto. A continuación, se muestran ejemplos de sintaxis y uso de expresiones regulares:
   
-- Para quitar (omitir) el texto de inicio hasta el final de una línea:
+- Para quitar (omitir) el texto desde el principio hasta el final de una línea:
     
      `Begin(.*)$`
     
-    donde "Begin" es la aparición de esta cadena en la línea inicial.
+    donde "begin" es la ocurrencia inicial de esta cadena en la línea.
     
     Por ejemplo, para el siguiente texto:
     
-    **"Ésta es la primera oración y primera línea**
+    **"Es la primera oración y primera línea**
     
-    **Ésta es la segunda oración y la segunda línea"**
+    **Es la segunda oración y segunda línea "**
     
-    la expresión Regular first(.\*) $ dará como resultado:
+    primero la expresión regular (.\*) $ dará como resultado:
     
-    **"Ésta es la**
+    **"Esto es**
     
-    **Ésta es la segunda oración y la segunda línea"**
+    **Es la segunda oración y segunda línea "**
     
-- Para quitar la declinación de responsabilidades y legales instrucciones que se insertan automáticamente al final de subprocesos de correo electrónico:
+- Para quitar avisos de declinación de responsabilidad e instrucciones legales insertadas automáticamente al final de los subprocesos de correo electrónico:
     
      `Begin(.|\s)*End`
     
-    donde "Begin" y "End" son cadenas únicas al principio y al final de un párrafo de texto ajustado. 
+    donde "begin" y "End" son cadenas únicas al principio y al final de un párrafo de texto ajustado. 
     
-    Por ejemplo, la siguiente expresión regular quitará declinación de responsabilidades y declaraciones legales que estaban en el subproceso de correo electrónico entre las cadenas Begin y End:
+    Por ejemplo, la siguiente expresión regular quitará los avisos de declinación de responsabilidad y las instrucciones legales que estaban en el hilo de correo electrónico entre las cadenas de inicio y finalización:
     
-    **Este mensaje contiene información confidencial (. | \s)\*si es necesario la verificación por favor, solicitar una versión de la copia impresa**
+    **Este mensaje contiene información confidencial (. | \s)\*si se requiere la comprobación, solicite una copia impresa de la versión**
     
-- Para quitar una renuncia de responsabilidad (incluidos los caracteres especiales): 
+- Para quitar un aviso de declinación de responsabilidades (incluidos los caracteres especiales): 
     
-    Por ejemplo, para el siguiente texto (con la declinación de responsabilidades aquí representado por x): 
+    Por ejemplo, para el texto siguiente (con la declinación de responsabilidades representada aquí por x): 
     
-    **/\*\ Este mensaje contiene información confidencial. xxxx xxxx**
+    **/\*\ Este mensaje contiene información confidencial. XXXX XXXX**
     
-    **xxxx xxxx xxxx xxxx xxxx xxxx xxxx**
+    **XXXX XXXX XXXX XXXX XXXX XXXX XXXX**
     
-    **Si es necesario, la verificación: xxxx xxxx solicita una versión de la copia impresa. /\*\**
+    **XXXX XXXX si es necesario realizar una comprobación, solicite una copia impresa de la versión. /\*\**
     
-    debe ser la expresión regular para quitar la declinación de responsabilidades anterior: 
+    la expresión regular para quitar el aviso de declinación de responsabilidades anterior debería ser: 
     
-    **\/\\*\\Este mensaje contiene información confidencial\.(. | \s)\* si es necesario la verificación por favor, solicitar una versión de la copia impresa\.\/\\*\\**
+    **\/\\*\\Este mensaje contiene información\.confidencial (. | \s)\* si se requiere la comprobación, solicite una copia impresa de\. la versión\/\\*\\**
     
-- Reglas de expresión regular:
+- Reglas de expresiones regulares:
     
-  - Todos los caracteres que no forman parte del alfabeto excepto espacios, "_" y "-" debe ir precedido por "\".
+  - Los caracteres que no forman parte del alfabeto excepto los espacios, "_" y "-" deben ir precedidos de "\".
     
-  - El campo eExpression regular puede ser una longitud ilimitada.
+  - El campo eExpression normal puede tener una longitud ilimitada.
     
 > [!TIP]
-> Para obtener una explicación y detallada sobre la sintaxis de expresiones regulares, consulte: [Lenguaje de expresiones regulares - referencia rápida](https://msdn.microsoft.com/en-us/library/az24scfc%28v=vs.110%29.aspx). 
+> Para obtener una explicación y una sintaxis detallada de las expresiones regulares, vea: [referencia rápida del lenguaje de expresiones regulares](https://msdn.microsoft.com/en-us/library/az24scfc%28v=vs.110%29.aspx). 
   
-## <a name="define-ignore-text-rule"></a>Definir la regla de omitir texto
+## <a name="define-ignore-text-rule"></a>Definir la regla de omisión de texto
 
-1. En la **administrar \> analizar \> analizar las opciones de** ficha, en la sección **Omitir texto** , haga clic en el **+** icono para agregar una regla. 
+1. En la sección **omitir texto** de la pestaña **administrar \> \> opciones** de análisis, haga clic **+** en el icono para agregar una regla. 
     
-2. En el cuadro de diálogo **Agregar texto omitir** , en el campo **nombre** , escriba un nombre para la regla de texto omitir. 
+2. En el cuadro de diálogo **Agregar y omitir texto** , en el campo **nombre** , escriba un nombre para la regla de omitir texto. 
     
     ![Agregar texto omitido](media/98e5129b-2667-4692-86fa-2d0117187a7f.png)
   
-3. En el cuadro de **texto** , escriba el texto que se pasen por alto. El campo de texto permite a un número ilimitado de caracteres. 
+3. En el cuadro de **texto** , escriba el texto que se va a omitir. El campo de texto permite un número de caracteres ilimitado. 
     
     > [!TIP]
-    > Tal como se muestra en la ventana anterior, haga clic en la **bombilla** para ver las instrucciones de sintaxis comunes para la regla de texto omitir. 
+    > Como se muestra en la ventana anterior, haga clic en **bombilla** para ver instrucciones de sintaxis comunes para la regla de omitir texto. 
   
-4. Seleccione la casilla de verificación **distinguir mayúsculas de minúsculas** , si así lo desea. 
+4. Active la casilla de verificación **distinguir mayúsculas** de minúsculas, si lo desea. 
     
-5. En la lista **aplicar a** , seleccione los módulos de exhibición de documentos electrónicos avanzada en el que se va a aplicar la definición. 
+5. En la lista **aplicar a** , seleccione los módulos avanzados de eDiscovery en los que desea aplicar la definición. 
     
-6. Si desea que una ejecución de prueba en el texto de ejemplo, escriba el texto de ejemplo en el cuadro de texto de **entrada** y haga clic en **probar**. Los resultados se muestran en el cuadro de texto de **salida** . 
+6. Si desea una ejecución de prueba en texto de ejemplo, escriba ejemplo de texto en el cuadro de texto de **entrada** y haga clic en **prueba**. Los resultados se muestran en el cuadro de texto de **salida** . 
     
-7. Haga clic en **Aceptar** para guardar la regla Omitir texto. Se muestra la regla de omitir texto definida. 
+7. Haga clic en **Aceptar** para guardar la regla de omisión de texto. Se muestra la regla definida por omitir texto. 
     
     ![Establecer el nombre del texto omitido](media/3a788ac3-4a1c-46c9-89bd-7ff32d68ce23.png)
   
@@ -125,11 +125,11 @@ Expresiones regulares compatibles para su uso al definir Omitir texto. Los sigui
 
 [eDiscovery avanzado de Office 365](office-365-advanced-ediscovery.md)
   
-[Descripción de la similitud de documento](understand-document-similarity-in-advanced-ediscovery.md)
+[Descripción de la similitud de documentos](understand-document-similarity-in-advanced-ediscovery.md)
   
-[Configurar las opciones de análisis](set-analyze-options-in-advanced-ediscovery.md)
+[Configuración de las opciones de análisis](set-analyze-options-in-advanced-ediscovery.md)
   
-[Análisis de la opción Configuración avanzada](set-analyze-advanced-settings-in-advanced-ediscovery.md)
+[Configuración de la configuración avanzada de análisis](set-analyze-advanced-settings-in-advanced-ediscovery.md)
   
-[Ver los resultados del análisis](view-analyze-results-in-advanced-ediscovery.md)
+[Visualización de los resultados del análisis](view-analyze-results-in-advanced-ediscovery.md)
 

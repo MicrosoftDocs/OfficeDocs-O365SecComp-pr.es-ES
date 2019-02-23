@@ -3,7 +3,7 @@ title: Listas de remitentes seguros y bloqueados en Exchange Online
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 5/22/2018
+ms.date: ''
 ms.audience: ITPro
 ms.topic: reference
 ms.service: O365-seccomp
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 111ab6b0-2dd2-4a87-a928-4931df6b3c4d
 description: Como administrador de Exchange Online o Exchange Online Protection (EOP), puede ayudar a garantizar que un mensaje de correo que pasa a través del servicio no se marque como correo no deseado. Una forma de hacerlo es crear listas de remitentes bloqueados y de remitentes seguros para las personas de su organización.
-ms.openlocfilehash: cbf886bdcc40044a31b285b6806aecbc95f0f97c
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: d785f5f605dd9b8610eaed95f3f2783d04bcbc14
+ms.sourcegitcommit: 06d6e63225f912d0f3c6bb836c61eb11c1dbe97a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003109"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "30206353"
 ---
 # <a name="safe-sender-and-blocked-sender-lists-in-exchange-online"></a>Listas de remitentes seguros y bloqueados en Exchange Online
 
@@ -38,9 +38,9 @@ Los límites de remitentes seguros y bloqueados en Exchange Online difieren de l
     
 Nota:
   
-Puede experimentar el error que se describe en KB 2590466 ("recibirá el error"Error de validación de correo electrónico no deseado"en Outlook Web App para Exchange Server 2010"). Para resolver este problema, desactive la casilla de verificación "Confiar en mensajes de correo electrónico de Mis contactos". Como alternativa, reducir la cantidad de direcciones de correo electrónico que están en la carpeta de contactos predeterminada para que aparezca en el máximo permitido limitar de 1.024 en Exchange Online que se establece para el atributo "MaxSafeSenders". Para obtener más información acerca de este atributo y el cmdlet Set-Mailbox, seethe siguiente tema:
+Puede experimentar el error que se describe en [KB2590466](https://support.microsoft.com/help/2590466/you-receive-the-error-junk-e-mail-validation-error-in-outlook-web-app). Para resolver este problema, desactive la casilla "confiar en mensajes de correo electrónico de mis contactos". También puede reducir la cantidad de direcciones de correo electrónico que se encuentran en la carpeta contactos predeterminada para que pasen al límite máximo permitido de 1024 en Exchange online que se establece para el atributo "parámetros maxsafesenders". Para obtener más información sobre este atributo y el cmdlet Set-Mailbox, sobre elscript siguiente tema:
   
-[Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Set-Mailbox?view=exchange-ps)
+[Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Set-Mailbox)
   
 ## <a name="see-also"></a>See also
 
