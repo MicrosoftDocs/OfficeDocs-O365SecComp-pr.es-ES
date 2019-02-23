@@ -1,85 +1,85 @@
 ---
-title: Búsqueda de contenido en Office 365
+title: Buscar contenido en Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 4/4/2018
 ms.audience: Admin
 ms.topic: hub-page
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: df2d1e0f-b476-42c9-aade-4a260b24f193
-description: Usar la herramienta de exhibición de documentos electrónicos de búsqueda de contenido en la seguridad de Office 365 &amp; centro de cumplimiento para encontrar rápidamente el correo electrónico en los buzones de Exchange, los documentos en sitios de SharePoint y las ubicaciones de OneDrive y las conversaciones de Skype para la empresa de mensajería instantánea.
-ms.openlocfilehash: 96a30bfe7b7cc5a1398cafa66577f0b7dc681d23
-ms.sourcegitcommit: 147768bbe44c8c98c02fa29ae9d882cee4ec2d6b
+description: Use la herramienta de búsqueda de contenido eDiscovery en el centro &amp; de seguridad y cumplimiento de Office 365 para encontrar rápidamente el correo electrónico en buzoNes de Exchange, documentos en sitios de SharePoint y ubicaciones de OneDrive, y conversaciones de mensajería instantánea en Skype empresarial.
+ms.openlocfilehash: 255ddbde4488ab5e7d13872cea95398ed5fd4d75
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "26238402"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214540"
 ---
-# <a name="search-for-content-in-office-365"></a>Búsqueda de contenido en Office 365
+# <a name="search-for-content-in-office-365"></a>Buscar contenido en Office 365
 
-Use la herramienta de búsqueda de contenido en la seguridad &amp; centro de cumplimiento para encontrar rápidamente el correo electrónico en los buzones de Exchange, los documentos en sitios de SharePoint y las ubicaciones de OneDrive y las conversaciones de Skype para la empresa de mensajería instantánea. Puede usar la herramienta de búsqueda de contenido para buscar correo electrónico, los documentos y las conversaciones de herramientas de colaboración de Office 365, como Microsoft Teams y Office 365 grupos de mensajería instantánea.
+Use la herramienta de búsqueda de contenido en &amp; el centro de seguridad y cumplimiento para encontrar rápidamente el correo electrónico en buzoNes de Exchange, documentos en sitios de SharePoint y ubicaciones de OneDrive, y conversaciones de mensajería instantánea en Skype empresarial. Puede usar la herramienta de búsqueda de contenido para buscar correos electrónicos, documentos y conversaciones de mensajería instantánea en las herramientas de colaboración de Office 365, como Microsoft Teams y Office 365 groups.
   
 ## <a name="search-for-content"></a>Buscar contenido
 
-El primer paso es iniciar el uso de la herramienta de búsqueda de contenido para elegir las ubicaciones de contenido para buscar y configurar una consulta de palabra clave para buscar elementos específicos. O bien, puede dejar en blanco la consulta y devolver todos los elementos en las ubicaciones de destino.
+El primer paso consiste en empezar a usar la herramienta de búsqueda de contenido para elegir las ubicaciones de contenido donde buscar y configurar una consulta de palabras clave para buscar elementos específicos. O bien, puede dejar la consulta en blanco y devolver todos los elementos de las ubicaciones de destino.
   
 - [Crear y ejecutar](content-search.md) una búsqueda de contenido 
     
-- [Generar consultas de búsqueda y utilizar condiciones](keyword-queries-and-search-conditions.md) para acotar la búsqueda 
+- [Crear consultas de búsqueda y usar condiciones](keyword-queries-and-search-conditions.md) para restringir la búsqueda 
     
-- [Configurar los permisos de búsqueda filtrado](permissions-filtering-for-content-search.md) para que un administrador de exhibición de documentos electrónicos sólo puede buscar el subconjunto de buzones de correo o sitios de la organización 
+- [Configurar el filtrado de permisos de búsqueda](permissions-filtering-for-content-search.md) para que un administrador de exhibición de documentos electrónicos solo pueda buscar en subconjuntos de buzones o sitios de la organización 
     
-- [Ejecutar una búsqueda de identificador de lista](csv-file-for-an-id-list-content-search.md) para buscar mensajes de correo electrónico específicos 
+- [Ejecutar una búsqueda de lista](csv-file-for-an-id-list-content-search.md) de identificadores para buscar mensajes de correo electrónico específicos 
     
-- [Los buzones de correo basados en la nube de búsqueda](search-cloud-based-mailboxes-for-on-premises-users.md) para los usuarios locales en Office 365
+- [Buscar buzones de correo basados en la nube](search-cloud-based-mailboxes-for-on-premises-users.md) para usuarios locales en Office 365
 
-- [Ver las estadísticas de palabra clave](view-keyword-statistics-for-content-search.md) para los resultados de una búsqueda y, a continuación, refinar la consulta si es necesario 
+- [Ver las estadísticas de palabras clave](view-keyword-statistics-for-content-search.md) para los resultados de una búsqueda y, a continuación, refinar la consulta si es necesario 
     
-- [Búsqueda de datos de terceros](use-content-search-to-search-third-party-data-that-was-imported.md) que su organización ha importado a Office 365 
+- [Buscar datos de terceros](use-content-search-to-search-third-party-data-that-was-imported.md) que su organización haya importado a Office 365 
     
-- [Edición en masa de](bulk-edit-content-searches.md) la consulta y ubicaciones para varias búsquedas de contenido 
+- [Edición en masa](bulk-edit-content-searches.md) de las ubicaciones de consultas y contenido para varias búsquedas 
     
-- [Destinatarios CCO conservar](https://docs.microsoft.com/exchange/policy-and-compliance/holds/preserve-bcc-recipients-and-group-members) de forma que pueda buscar para ellos 
+- [Conservar](https://docs.microsoft.com/exchange/policy-and-compliance/holds/preserve-bcc-recipients-and-group-members) los destinatarios de CCO para poder buscarlos 
 
-## <a name="perform-actions-on-content-you-find"></a>Realizar acciones en el contenido que encuentre
+## <a name="perform-actions-on-content-you-find"></a>Realizar acciones en el contenido que encuentra
 
-Después de ejecutar una búsqueda y refinar según sea necesario, el siguiente paso es hacer algo con los resultados devueltos por la búsqueda. Puede exportar y descargar los resultados en el equipo local o en el caso de un ataque de correo electrónico en la organización, puede eliminar los resultados de una búsqueda de buzones de usuario.
+Después de ejecutar una búsqueda y redefinirla según sea necesario, el siguiente paso consiste en hacer algo con los resultados devueltos por la búsqueda. Puede exportar y descargar los resultados en su equipo local o en el caso de un ataque de correo electrónico en su organización, puede eliminar los resultados de una búsqueda de los buzones de los usuarios.
   
 - [Exportar los resultados de una búsqueda de contenido](export-search-results.md) y descargarlos en el equipo local 
     
-- [Buscar y eliminar mensajes de correo electrónico](search-for-and-delete-messages-in-your-organization.md) , como los mensajes que el contenido de un virus, datos adjuntos peligrosos o los mensajes de suplantación de identidad 
+- [Buscar y eliminar mensajes de correo electrónico](search-for-and-delete-messages-in-your-organization.md) , como mensajes que contengan un virus, datos adjuntos peligrosos o mensajes de suplantación de identidad 
     
-- [Exportar un informe](export-a-content-search-report.md) sobre los resultados de una búsqueda de contenido, sin necesidad de exportar los resultados reales 
+- [Exportar un informe](export-a-content-search-report.md) sobre los resultados de una búsqueda de contenido sin exportar los resultados reales 
     
-- [Aumentar la velocidad de descarga](increase-download-speeds-when-exporting-ediscovery-results.md) al exportar los resultados de búsqueda 
+- [Aumentar la velocidad de descarga](increase-download-speeds-when-exporting-ediscovery-results.md) al exportar los resultados de la búsqueda 
     
-## <a name="learn-more-about-content-search"></a>Encontrará más información acerca de la búsqueda de contenido
+## <a name="learn-more-about-content-search"></a>Obtenga más información sobre la búsqueda de contenido
 
-Búsqueda de contenido es fácil de usar, pero también es una herramienta eficaz. Un segundo plano, no hay mucho. Más conocimientos sobre él y comprender su comportamiento y sus limitaciones, más correcta se van a usarlo para las necesidades de búsqueda y de investigación de su organización. Obtenga información acerca de:
+La búsqueda de contenido es fácil de usar, pero también es una herramienta eficaz. En segundo plano, hay muchas cosas en marcha. Cuanto más conozca y comprenda su comportamiento y sus limitaciones, cuanto más le conviene, podrá usarla para las necesidades de búsqueda e investigación de su organización. Obtenga más información sobre:
   
-- [Parcialmente indizar los elementos de Exchange y SharePoint](partially-indexed-items-in-content-search.md) y cómo incluir o excluir ellos al exportar y descargar los resultados de búsqueda 
+- [Elementos parcialmente indizados en Exchange y SharePoint](partially-indexed-items-in-content-search.md) , y cómo incluirlos o excluirlos cuando se exportan y se descargan los resultados de la búsqueda 
     
-- [Investigar los elementos indizados parcialmente](investigating-partially-indexed-items-in-ediscovery.md) y determinar la exposición de su organización a ellos 
+- [Investigar elementos indizados parcialmente](investigating-partially-indexed-items-in-ediscovery.md) y determinar la exposición de su organización a ellos 
     
-- [Límites de la herramienta de búsqueda de contenido](limits-for-content-search.md), como el número máximo de búsquedas que se pueden ejecutar al mismo tiempo y el número máximo de ubicaciones de contenido que puede incluir en una sola búsqueda 
+- [Límites de la herramienta de búsqueda de contenido](limits-for-content-search.md), como el número máximo de búsquedas que se pueden ejecutar al mismo tiempo y el número máximo de ubicaciones de contenido que se pueden incluir en una sola búsqueda. 
     
-- [Estimado y los resultados de búsqueda reales](differences-between-estimated-and-actual-ediscovery-search-results.md) y los motivos por qué puede haber diferencias entre ellos al exportar y descargar los resultados de búsqueda 
+- [Resultados de búsqueda estimados y reales](differences-between-estimated-and-actual-ediscovery-search-results.md) y los motivos por los que puede haber diferencias entre ellos cuando se exportan y se descargan los resultados de la búsqueda 
     
-- [La desduplicación en los resultados de búsqueda](de-duplication-in-ediscovery-search-results.md) que se pueden activar al exportar mensajes de correo electrónico que son los resultados de una búsqueda 
+- [Desduplicación en los resultados](de-duplication-in-ediscovery-search-results.md) de la búsqueda que puede habilitar al exportar mensajes de correo electrónico que son el resultado de una búsqueda 
     
-## <a name="use-scripts-for-advanced-scenarios"></a>Utilizar secuencias de comandos para escenarios avanzados
+## <a name="use-scripts-for-advanced-scenarios"></a>Usar scripts para escenarios avanzados
 
-A veces tendrá que realizar tareas de búsqueda de contenido más avanzados, complejas y repetitivas. En estos casos, es más fácil y rápida para usar comandos de PowerShell en la seguridad &amp; centro de cumplimiento. Para ayudar a facilitar este proceso, hemos creado un número de la seguridad de &amp; secuencias de comandos de PowerShell de centro de cumplimiento que le ayudarán a completar tareas relacionadas con la búsqueda de contenido complejas.
+A veces tiene que realizar tareas de búsqueda de contenido más avanzadas, complejas y repetitivas. En estos casos, es más fácil y rápido usar comandos de PowerShell en el centro &amp; de seguridad y cumplimiento. Para facilitar esta tarea, hemos creado una serie de scripts de &amp; PowerShell del centro de cumplimiento de seguridad que le ayudarán a completar tareas complejas relacionadas con la búsqueda de contenido.
   
-- [Buzón de correo específico de búsqueda y carpetas del sitio](use-content-search-for-targeted-collections.md) (denominado un *destino colección* ) cuando esté seguro de que los elementos con capacidad de respuesta a un caso de se encuentran en esa carpeta 
+- [Buscar en carpetas de sitio y buzones específicas](use-content-search-for-targeted-collections.md) (denominada *colección de destino* ) cuando tiene la certeza de que los elementos que responden a un caso se encuentran en esa carpeta 
     
-- [Buscar en el buzón de correo y la ubicación de OneDrive](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md) para obtener una lista de usuarios 
+- Buscar una lista de usuarios en [el buzón y en la ubicación de OneDrive](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md) 
     
-- [Crear un informe sobre y eliminar varias búsquedas](create-report-on-and-delete-multiple-content-searches.md) para rápida y eficazmente identificar y extraer datos de búsqueda 
+- [Crear, informar sobre y eliminar varias búsquedas](create-report-on-and-delete-multiple-content-searches.md) para identificar y reactivar datos de búsqueda de forma rápida y eficaz 
     
-- [Clonación de una búsqueda de contenido](clone-a-content-search.md) y comparar rápidamente los resultados de las consultas de búsqueda de palabra clave diferentes ejecutar en las mismas ubicaciones de contenido; o use el script para ahorrar tiempo al no tener que volver a escribir un gran número de ubicaciones de contenido cuando se crea una nueva búsqueda 
+- [Clonar una búsqueda de contenido](clone-a-content-search.md) y comparar rápidamente los resultados de las diferentes consultas de búsqueda de palabras clave que se ejecutan en las mismas ubicaciones de contenido; o use el script para ahorrar tiempo sin tener que volver a especificar un gran número de ubicaciones de contenido al crear una nueva búsqueda 
     
 

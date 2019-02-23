@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 6/29/2018
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - SPO160
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: e3e92668-f9b2-46ee-8e5e-c623870588b6
 description: Las organizaciones suelen estar sujetas a normas de cumplimiento, leyes u otras regulaciones que las obligan a conservar sus documentos durante un período de tiempo. Sin embargo, conservar los documentos durante más tiempo de lo necesario puede exponer a la organización a riesgos de carácter legal. Por esta razón, su organización puede haber creado una directiva de eliminación de documentos para el sitio como, por ejemplo, en el caso de que los documentos empresariales de carácter general deban eliminarse cinco años después de su creación.
-ms.openlocfilehash: abee0da7adfba6f653743d503f8b30770ee93c40
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+ms.openlocfilehash: c00298a177ac405181ab2b2d9642b631e60a8a92
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22536607"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219170"
 ---
 # <a name="apply-or-remove-a-document-deletion-policy-for-a-site"></a>Aplicar o quitar una directiva de eliminación de documentos de un sitio
 
@@ -27,7 +27,7 @@ Las organizaciones suelen estar sujetas a normas de cumplimiento, leyes u otras 
   
 Dependiendo de la organización, una directiva de eliminación de documentos puede ser:
   
-- **Obligatorio** Propietario de un sitio no puede anular una directiva obligatoria, que se aplica automáticamente al sitio. 
+- **Obligatorio** El propietario de un sitio no puede optar por una directiva obligatoria, que se aplica automáticamente al sitio. 
     
 - **Predeterminada** Una directiva predeterminada se aplica automáticamente a un sitio, pero el propietario de dicho sitio puede: 
     
@@ -45,12 +45,12 @@ Por último, las directivas de eliminación de documentos son heredadas. Cuando 
 
 Su organización puede asignar distintas directivas a colecciones de sitios diferentes. En el nivel de colección de sitios, el propietario de una colección de sitios puede ver todas las directivas de eliminación de documentos disponibles para esa colección concreta. Las directivas pueden estar disponibles para la plantilla de la colección de sitios (y, por tanto, para todas las colecciones de sitios creadas a partir de esta plantilla) o para esta colección de sitios específica.
   
-1. En el sitio de nivel superior en la colección de sitios, en la esquina superior derecha, elija **configuración** [icono de engranaje] \> **Configuración del sitio**.
+1. En el sitio de nivel superior de la colección de sitios, en la esquina superior derecha, elija **configuración** del \> **sitio**[icono de engranaje].
     
-2. En **administración de colección de sitios** \> **directivas de eliminación de documentos**.
+2. En **directivas de eliminación de documentos**de administración \> de la colección de **sitios** .
     
     > [!NOTE]
-    > El vínculo de **Las directivas de eliminación de documentos** no aparecerá a menos que las directivas se han asignado a la colección de sitios. Además, el vínculo no aparece inmediatamente después de que las directivas se han asignado al sitio, puede demorar hasta 24 horas desde cuando las directivas se asignan a cuando aparece el vínculo de **Las directivas de eliminación de documentos** . 
+    > El vínculo **directivas de eliminación de documentos** no aparecerá a menos que se hayan asignado directivas a la colección de sitios. Además, el vínculo no aparece inmediatamente después de que las directivas se hayan asignado al sitio: puede tardar hasta 24 horas desde el momento en que se asignan las directivas cuando aparece el vínculo **directivas de eliminación de documentos** . 
   
 3. En esta página, puede ver lo siguiente:
     
@@ -68,26 +68,26 @@ Esta lista es solo para consulta, para que el propietario de la colección de si
 
 Como propietario del sitio o propietario de la colección de sitios, su organización puede haber creado directivas que puede aplicar al sitio o anular por completo.
   
-1. En la esquina superior derecha, elija **configuración** [icono de engranaje] \> **Configuración del sitio**.
+1. En la esquina superior derecha, elija **configuración** del \> **sitio**[icono de engranaje].
     
-2. En **administración de sitios** \> **directivas de eliminación de documentos**.
+2. En **directivas de eliminación de documentos**de administración \> del **sitio** .
     
     > [!NOTE]
-    > El vínculo de **Las directivas de eliminación de documentos** no aparecerá a menos que las directivas se han asignado a la colección de sitios. Además, el vínculo no aparece inmediatamente después de que las directivas se han asignado al sitio, puede demorar hasta 24 horas desde cuando las directivas se asignan a cuando aparece el vínculo de **Las directivas de eliminación de documentos** . 
+    > El vínculo **directivas de eliminación de documentos** no aparecerá a menos que se hayan asignado directivas a la colección de sitios. Además, el vínculo no aparece inmediatamente después de que las directivas se hayan asignado al sitio: puede tardar hasta 24 horas desde el momento en que se asignan las directivas cuando aparece el vínculo **directivas de eliminación de documentos** . 
   
-3. Realice una de las acciones siguientes:
+3. Siga uno de estos pasos:
     
-  - **Para aplicar una directiva** Seleccione una directiva de \> seleccione una regla en esa directiva \> **Guardar**.
+  - **Para aplicar una directiva** Seleccione una directiva \> Seleccione una regla en esa directiva \> **Guardar**.
     
     Solo puede haber una directiva y una regla activas en un sitio al mismo tiempo. Su organización puede proporcionar varias directivas y reglas para elegir o solo una directiva o regla.
     
-    ![Seleccione la opción de directiva](media/f7c7c055-fca7-4a4f-bb97-63e35a65beac.png)
+    ![Selección de la opción de Directiva](media/f7c7c055-fca7-4a4f-bb97-63e35a65beac.png)
   
-  - **Para anular una directiva** Elija **voluntaria: tenga en cuenta eliminar** \> **Guardar**.
+  - **Para dejar de participar en una directiva** Elija **no participar: Nota eliminar** \> **Guardar**.
     
     Como propietario de un sitio, puede anular una directiva de eliminación de documentos si considera que la directiva no puede aplicarse al contenido del sitio. Sin embargo, no puede anular una directiva marcada como **Obligatoria**.
     
-    ![Opción alta de salida](media/efac709c-bef7-4a02-a09d-5bc7d2b4ec63.png)
+    ![Opción de cancelación](media/efac709c-bef7-4a02-a09d-5bc7d2b4ec63.png)
   
 ## <a name="document-deletion-policies-override-other-policies"></a>Las directivas de eliminación de documentos invalidan otras directivas
 
@@ -97,7 +97,7 @@ Un sitio puede usar otras directivas para la retención y eliminación de conten
     
 - Directivas de administración de la información para una lista o biblioteca.
     
-Si se aplica una directiva de eliminación de documentos a un sitio que ya usa las directivas de tipo de contenido o las directivas de administración de información para una lista o biblioteca, dichas directivas se omiten mientras la directiva de eliminación de documentos se encuentra en vigor. Si se omiten las otras directivas, verá el mensaje "El contenido de este sitio usa las directivas de eliminación de documentos".
+Si aplica una directiva de eliminación de documentos a un sitio que ya usa directivas de tipo de contenido o directivas de administración de la información para una lista o biblioteca, esas directivas se ignoran mientras la Directiva de eliminación de documentos está en vigor. Si se omiten otras directivas, verá el mensaje "el contenido de este sitio usa directivas de eliminación de documentos".
   
 Esto quiere decir que debe configurar un sitio de forma que solo utilice directivas creadas para contenido estructurado (directivas de administración de información y directivas de tipo de contenido) o contenido no estructurado (directivas de eliminación de documentos), pero no ambos. Si anula una directiva de eliminación de documentos, no se mostrará la advertencia y los demás tipos de directivas seguirán funcionando con normalidad.
   
@@ -105,23 +105,23 @@ Las directivas del sitio no se verán afectadas por las directivas de eliminaci�
   
 ### <a name="determine-if-content-type-policies-are-being-ignored"></a>Determinar si se están ignorando las directivas de tipo de contenido
 
-Si el sitio estaba en uso las directivas de tipo de contenido y ver ahora este mensaje, esas directivas ya no están en vigor. Para restaurar las directivas de tipo de contenido, puede quitar la directiva de eliminación de documentos de su sitio, tal y como se ha descrito anteriormente, si hay una opción de anular. Si no hay ninguna opción para excluir, la directiva de eliminación de documentos es obligatoria y debe ponerse en contacto con el responsable de cumplimiento de normas en su organización.
+Si el sitio estaba usando directivas de tipo de contenido y ahora ve este mensaje, esas directivas ya no se aplicarán. Para restaurar las directivas de tipo de contenido, puede quitar la Directiva de eliminación de documentos del sitio, tal como se ha descrito anteriormente, si hay una opción de cancelación disponible. Si no existe la opción de no participar, la Directiva de eliminación de documentos es obligatoria y deberá ponerse en contacto con el responsable de cumplimiento de su organización.
   
-1. En la esquina superior derecha, elija **configuración** [icono de engranaje] \> **Configuración del sitio**.
+1. En la esquina superior derecha, elija **configuración** del \> **sitio**[icono de engranaje].
     
-2. En **administración de sitios** \> **plantillas de directiva de tipo de contenido**.
+2. En **plantillas de directiva de tipo de contenido**de administración \> de **sitio** .
     
-    ![Advertencia en el sitio que se usan las directivas de eliminación de documentos](media/4cc3d703-9aff-4695-9670-f78c291c0010.png)
+    ![ADVERTENCIA en el sitio de que se están usando directivas de eliminación de documentos](media/4cc3d703-9aff-4695-9670-f78c291c0010.png)
   
 ### <a name="determine-if-information-management-policies-are-being-ignored"></a>Determinar si se están ignorando las directivas de administración de información
 
-Si el sitio estaba en uso las directivas de administración de información y ahora verá este mensaje, esas directivas ya no están en vigor. Para restaurar las directivas de administración de información, puede quitar la directiva de eliminación de documentos de su sitio, tal y como se ha descrito anteriormente, si hay una opción de anular. Si no hay ninguna opción para excluir, la directiva de eliminación de documentos es obligatoria y debe ponerse en contacto con el responsable de cumplimiento de normas en su organización.
+Si el sitio estaba usando directivas de administración de la información y ahora ve este mensaje, esas directivas ya no se aplicarán. Para restaurar las directivas de administración de la información, puede quitar la Directiva de eliminación de documentos del sitio, como se ha descrito anteriormente, si hay una opción de cancelación disponible. Si no existe la opción de no participar, la Directiva de eliminación de documentos es obligatoria y deberá ponerse en contacto con el responsable de cumplimiento de su organización.
   
-- Para una lista o biblioteca, en la cinta de opciones \> ficha **biblioteca** \> **Configuración de la biblioteca** \> en **permisos y administración** \> **Configuración de directiva de administración de información**.
+- Para una lista o biblioteca, en la biblioteca \> de la \> ficha **biblioteca** de la cinta de **Opciones Configuración** \> de la **Directiva** **permisos y** \> administración de información de administración.
     
-    ![Advertencia en el sitio que se usan las directivas de eliminación de documentos](media/3f043057-a741-4cd8-a165-6d139b986064.png)
+    ![ADVERTENCIA en el sitio de que se están usando directivas de eliminación de documentos](media/3f043057-a741-4cd8-a165-6d139b986064.png)
   
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Información general sobre las directivas de eliminación de documentos](document-deletion-policies.md)
   

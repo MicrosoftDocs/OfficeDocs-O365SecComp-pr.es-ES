@@ -1,5 +1,5 @@
 ---
-title: Vaya a la seguridad de Office 365 &amp; centro de cumplimiento
+title: Vaya al centro de seguridad &amp; y cumplimiento de Office 365
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
@@ -8,37 +8,37 @@ ms.audience: Admin
 ms.topic: article
 f1_keywords:
 - PCOverview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 7e696a40-b86b-4a20-afcc-559218b7b1b8
-description: La seguridad de Office 365 &amp; centro de cumplimiento es su portal única para la protección de los datos en Office 365. Usar la seguridad de Office 365 &amp; centro de cumplimiento para administrar el cumplimiento para todos los datos de su organización a través de Office 365.
-ms.openlocfilehash: fddecb9ab6cdc9dce6d57c8ac44762eaacb3ace3
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: El centro de seguridad &amp; y cumplimiento de Office 365 es su portal de un solo punto para proteger sus datos en Office 365. Use el centro de seguridad &amp; y cumplimiento de Office 365 para administrar el cumplimiento de todos los datos de la organización en Office 365.
+ms.openlocfilehash: 31cb275b8a961d597db06a6597660c3a07b7e8d7
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22536062"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219300"
 ---
-# <a name="go-to-the-office-365-security-amp-compliance-center"></a>Vaya a la seguridad de Office 365 &amp; centro de cumplimiento
+# <a name="go-to-the-office-365-security-amp-compliance-center"></a>Vaya al centro de seguridad &amp; y cumplimiento de Office 365
 
-La seguridad de Office 365 &amp; centro de cumplimiento es su portal única para la protección de los datos en Office 365. Usar la seguridad de Office 365 &amp; centro de cumplimiento para administrar el cumplimiento para todos los datos de su organización a través de Office 365.
+El centro de seguridad &amp; y cumplimiento de Office 365 es su portal de un solo punto para proteger sus datos en Office 365. Use el centro de seguridad &amp; y cumplimiento de Office 365 para administrar el cumplimiento de todos los datos de la organización en Office 365.
   
-## <a name="go-to-the-office-365-security-amp-compliance-center"></a>Vaya a la seguridad de Office 365 &amp; centro de cumplimiento
+## <a name="go-to-the-office-365-security-amp-compliance-center"></a>Vaya al centro de seguridad &amp; y cumplimiento de Office 365
 
-Antes de poder usar la seguridad &amp; centro de cumplimiento, necesita los permisos adecuados. La cuenta de trabajo o escuela ya sea debe tener asignado el rol de administrador global de Office 365 o se han asignado a uno o más seguridad &amp; grupos de roles de centro de cumplimiento por un administrador global:
+Para poder usar el centro de &amp; seguridad y cumplimiento, necesitará los permisos adecuados. La cuenta profesional o educativa debe tener asignado el rol de administrador global de Office 365 o haber sido asignada a uno o &amp; varios grupos de roles del centro de cumplimiento de seguridad por un administrador global:
   
-- Para obtener más información acerca de la función de administrador global de Office 365, vea [roles de administrador acerca de Office 365](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d). 
+- Para obtener más información acerca del rol de administrador global de Office 365, consulte [acerca de los roles de administrador de office 365](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d). 
     
-- Para obtener información sobre la asignación de seguridad &amp; de las funciones de centro de cumplimiento a otros usuarios, consulte [dar a los usuarios acceso a la seguridad &amp; centro de cumplimiento](grant-access-to-the-security-and-compliance-center.md).
+- Para obtener información sobre cómo asignar roles &amp; del centro de cumplimiento de seguridad a otros usuarios, vea [conceder acceso &amp; a los usuarios al centro de seguridad y cumplimiento](grant-access-to-the-security-and-compliance-center.md).
     
-Aquí es la forma más directa para llegar a la seguridad &amp; centro de cumplimiento:
+Esta es la forma más directa de llegar al centro de &amp; seguridad y cumplimiento:
   
 1. Vaya a [https://protection.office.com](https://protection.office.com).
     
-2. Inicie sesión en Office 365 con su cuenta de trabajo o escuela.
+2. Inicie sesión en Office 365 con su cuenta profesional o educativa.
     
-![Seguridad de Office 365 &amp; página principal del centro de cumplimiento](media/f1d35324-ac44-4f59-96a7-b11767b43201.png)
+![Página de inicio &amp; del centro de seguridad y cumplimiento de Office 365](media/f1d35324-ac44-4f59-96a7-b11767b43201.png)
   
 

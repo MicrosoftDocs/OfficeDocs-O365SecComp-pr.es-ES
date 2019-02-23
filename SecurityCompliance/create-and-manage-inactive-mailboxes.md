@@ -6,41 +6,41 @@ manager: laurawi
 ms.date: 6/29/2018
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
-description: Puede crear un buzón inactivo en Office 365 aplicar una suspensión o la directiva de retención de Office 365 para el buzón de correo y, a continuación, eliminando la correspondiente cuenta de usuario de Office 365. Se conservan los elementos de un buzón inactivo para la duración de la directiva de retención o suspensión que se aplicó a ella antes de que se ha realizado como inactiva. Para eliminar permanentemente un buzón inactivo, simplemente quite la directiva de retención o suspensión.
-ms.openlocfilehash: de67068ded30f63e46a8a94c1030d45a12b56a2e
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+description: Puede crear un buzón inactivo en Office 365 aplicando una directiva de retención de Office 365 o retención al buzón de correo y, a continuación, eliminando la cuenta de usuario de Office 365 correspondiente. Los elementos de un buzón inactivo se conservan durante toda la Directiva de retención o retención que se le aplicó antes de que se desactivara. Para eliminar de forma permanente un buzón inactivo, solo tiene que quitar la Directiva de retención o retención.
+ms.openlocfilehash: 8f798873da7d787b54932438e81aebf2dfe85181
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29740842"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217780"
 ---
 # <a name="create-and-manage-inactive-mailboxes-in-office-365"></a>Crear y administrar buzones inactivos en Office 365
 
-Office 365 permite conservar el contenido de los buzones eliminados. Esta característica se denomina [buzones inactivos](inactive-mailboxes-in-office-365.md). Buzones de correo inactivos permiten conservar el correo electrónico de los empleados anterior después de salir de su organización. Un buzón de correo, se convierte en inactivo cuando un juicio o una directiva de retención de Office 365 (creado en la seguridad de Office 365 &amp; centro de cumplimiento) se aplica a los buzones de correo antes de que se elimine la cuenta de usuario de Office 365 correspondiente. El contenido de un buzón inactivo se conserva para la duración de la suspensión a la que se realizó en el buzón de correo antes de que se ha realizado como inactiva. Esto permite que los administradores, responsables del cumplimiento normativo y registros a usar la búsqueda de contenido en la seguridad de los jefes de &amp; centro de cumplimiento para buscar y exportar el contenido de un buzón de correo inactivo. Buzones de correo inactivos no pueden recibir correo electrónico y no se muestran en la libreta de direcciones compartida de la organización o en otras listas.
+Office 365 hace posible que conserve el contenido de los buzones de correo eliminados. Esta característica se denomina [buzones de correo](inactive-mailboxes-in-office-365.md)inactivos. Los buzones inactivos le permiten conservar el correo electrónico de los antiguos empleados después de que dejen la organización. Un buzón se vuelve inactivo cuando se aplica una retención por juicio o una directiva de retención de Office 365 (creada &amp; en el centro de seguridad y cumplimiento de Office 365) al buzón antes de que se elimine la cuenta de usuario de Office 365 correspondiente. El contenido de un buzón inactivo se conserva durante toda la retención que se colocó en el buzón antes de que se inactivara. Esto permite que los administradores, responsables de cumplimiento normativo y los administradores de registros usen la &amp; búsqueda de contenido en el centro de seguridad y cumplimiento para buscar y exportar el contenido de un buzón inactivo. Los buzones inactivos no pueden recibir correo electrónico y no se muestran en la libreta de direcciones compartida de la organización ni en otras listas.
   
 > [!NOTE]
 > Hemos pospuesto la fecha límite del 1 de julio de 2017 para crear conservaciones locales con el fin de desactivar buzones, pero más adelante este año o a principios del año que viene ya no podrá crear conservaciones locales en Exchange Online. A partir de ese momento, solo podrán usarse retenciones por juicio y directivas de retención de Office 365 para crear buzones inactivos. Aun así, se seguirán admitiendo los buzones inactivos existentes que estén en conservación local y podrá seguir administrando las conservaciones locales de buzones inactivos. Esto incluye el cambio de la duración de las conservaciones locales y la eliminación de forma permanente de buzones inactivos al quitar la conservación local. 
   
 ## <a name="before-you-begin"></a>Antes de empezar
 
-- Para definir un buzón de correo como inactiva, se debe asignar una licencia de Exchange Online Plan 2 para que un juicio o una directiva de retención de Office 365 se puede aplicar al buzón antes de que se elimine. Licencias de Exchange Online Plan 2 forman parte de un suscripciones a Office 365 Enterprise E3 y E5. Si un buzón se asigna una licencia de Exchange Online Plan 1 (que forma parte de una suscripción a Office 365 Enterprise E1), tendría que asignar una licencia independiente de archivado de Exchange Online para que se puede aplicar una suspensión para el buzón de correo antes de que se elimine. Para obtener más información, vea [Archivado de Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=286153).
+- Para convertir un buzón en inactivo, se le debe asignar una licencia de plan 2 de Exchange Online para que se pueda aplicar una retención por juicio o una directiva de retención de Office 365 al buzón antes de eliminarlo. Las licencias del plan 2 de Exchange Online forman parte de las suscripciones de Office 365 Enterprise E3 y E5. Si a un buzón se le asigna una licencia de Exchange Online plan 1 (que forma parte de una suscripción a Office 365 Enterprise E1), tendrá que asignar una licencia de archivado de Exchange Online independiente para que se pueda aplicar una retención al buzón antes de que se elimine. Para obtener más información, vea archivado de [Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=286153).
     
-- La licencia asociada con el buzón de Exchange Online eliminado estará disponible después de eliminar la cuenta de usuario de Office 365 correspondiente. A continuación, puede [asignar licencias a los usuarios de Office 365 para la empresa](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc) a otro usuario. 
+- La licencia asociada con el buzón de Exchange Online eliminado estará disponible después de eliminar la cuenta de usuario de Office 365 correspondiente. A continuación, puede [asignar licencias a usuarios en Office 365 para empresas](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc) a otro usuario. 
     
 - Si no se aplica una retención por juicio o una directiva de retención de Office 365 en un buzón antes de eliminarlo, su contenido no se conservará y no podrá detectarse. Aun así, el buzón eliminado se puede recuperar en un plazo de 30 días a partir de su eliminación, pero el buzón junto con su contenido se eliminará permanentemente transcurrido dicho plazo, si no se recupera.
     
-- Para obtener más información acerca de la suspensión por litigio, vea [conservación local y suspensión por litigio](https://go.microsoft.com/fwlink/p/?LinkId=846124). Para obtener más información acerca de las directivas de retención de Office 365 en la seguridad &amp; centro de cumplimiento, vea [Introducción a las directivas de retención en Office 365](retention-policies.md).
+- Para obtener más información sobre la retención por juicio, vea conservación [local y retención por juicio](https://go.microsoft.com/fwlink/p/?LinkId=846124). Para obtener más información acerca de las directivas de retención de &amp; Office 365 en el centro de seguridad y cumplimiento, vea [información general sobre las directivas de retención en Office 365](retention-policies.md).
   
 ## <a name="create-an-inactive-mailbox"></a>Crear un buzón inactivo
 
-Convertir en un buzón de correo inactivos consta de dos pasos: (1) colocar el buzón de correo en juicio o aplicar una directiva de retención de Office 365 a ella y (2) eliminar el buzón o la cuenta de usuario de Office 365 correspondiente. Después de que el buzón de correo está inactivo, su contenido se conserva hasta que se quite la directiva de retención o suspensión.
+El hecho de que un buzón esté inactivo implica dos pasos: 1) colocar el buzón en retención por juicio o aplicarle una directiva de retención de Office 365 y 2 eliminar el buzón o la cuenta de usuario de Office 365 correspondiente. Una vez que el buzón de correo está inactivo, su contenido se conserva hasta que se quite la Directiva de retención o retención.
   
 ### <a name="step-1-place-a-mailbox-on-litigation-hold-or-apply-an-office-365-retention-policy"></a>Paso 1: poner un buzón en retención por juicio o aplicar una directiva de retención de Office 365
 
@@ -59,74 +59,74 @@ Para consultar los procedimientos detallados para poner un buzón en retención 
   
 ### <a name="step-2-delete-the-mailbox"></a>Paso 2: Eliminar el buzón.
 
-Después de que el buzón de correo se pondrá en espera o se le aplica una directiva de retención de Office 365, el siguiente paso es eliminar el buzón de correo. Es la mejor forma de eliminar un buzón de correo eliminar la cuenta de usuario de Office 365 correspondiente en el centro de administración de Office 365. Para obtener información acerca de cómo eliminar cuentas de usuario de Office 365, vea [Eliminar un usuario de la organización](https://support.office.com/article/d5155593-3bac-4d8d-9d8b-f4513a81479e).
+Una vez que el buzón se coloca en retención o se le aplica una directiva de retención de Office 365, el siguiente paso consiste en eliminar el buzón. La mejor forma de eliminar un buzón es eliminar la cuenta de usuario de Office 365 correspondiente en el centro de administración de Office 365. Para obtener información acerca de cómo eliminar cuentas de usuario de Office 365, consulte [eliminar un usuario de la organización](https://support.office.com/article/d5155593-3bac-4d8d-9d8b-f4513a81479e).
   
 > [!NOTE]
-> También puede eliminar el buzón de correo mediante el cmdlet **Remove-Mailbox** en Exchange Online PowerShell. Para obtener más información, vea [eliminar o restaurar los buzones de usuario en Exchange Online](https://go.microsoft.com/fwlink/?linkid=856287). 
+> También puede eliminar el buzón con el cmdlet **Remove-Mailbox** en Exchange Online PowerShell. Para obtener más información, vea [eliminar o restaurar buzones de usuario en Exchange Online](https://go.microsoft.com/fwlink/?linkid=856287). 
   
 
-## <a name="view-a-list-of-inactive-mailboxes"></a>Ver una lista de buzones de correo inactivos
+## <a name="view-a-list-of-inactive-mailboxes"></a>Ver una lista de buzones inactivos
 
 
 Para ver una lista de los buzones inactivos en su organización:
   
-1. Vaya a [https://protection.office.com/](https://protection.office.com/) e iniciar sesión con las credenciales para una cuenta de administrador de la organización de Office 365. 
+1. Vaya a [https://protection.office.com/](https://protection.office.com/) e inicie sesión con las credenciales de una cuenta de administrador en la organización de Office 365. 
     
-2. En el panel izquierdo de la seguridad &amp; centro de cumplimiento, haga clic en **el gobierno de datos** \> ** retención **.
+2. En el panel izquierdo del centro de &amp; seguridad y cumplimiento, haga clic en **gobierno** \> de datos * * retención * *.
     
-3. En la página de **retención** , haga clic en **más**![puntos suspensivos de la barra de navegación](media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif)y, a continuación, haga clic en **buzones de correo inactivos**.
+3. En la página **retención** , haga clic en **más**![elipses](media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif)de la barra de navegación y, a continuación, en buzones inactivos. ****
     
-    ![En la página de retención, haga clic en más y, a continuación, haga clic en buzones de correo inactivos para mostrar una lista de buzones de correo inactivos](media/761bd90c-3e37-48f9-b1b9-479e90fea267.png)
+    ![En la página retención, haga clic en más y, a continuación, haga clic en buzones inactivos para mostrar una lista de buzones inactivos](media/761bd90c-3e37-48f9-b1b9-479e90fea267.png)
   
-    Se abrirá la página de **buzones inactivos** . Tenga en cuenta que se muestra el número total de buzones inactivos en su organización. 
+    Se **** muestra la página buzones inactivos. Nota se muestra el número total de buzones inactivos en la organización. 
     
     ![Se muestra una lista de todos los buzones inactivos en la organización](media/57d9d183-0c6c-4bd8-82e7-115f7b7b6de7.png)
   
-Como alternativa, puede ejecutar el siguiente comando en Exchange Online PowerShell para mostrar la lista de buzones de correo inactivos.
+Como alternativa, puede ejecutar el siguiente comando en Exchange Online PowerShell para mostrar la lista de buzones inactivos.
 
 ```
  Get-Mailbox -InactiveMailboxOnly | FT DisplayName,PrimarySMTPAddress,WhenSoftDeleted
 ```
 
-Puede hacer clic en ![icono de resultados de búsqueda de exportación](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **Exportar** para ver o descargar un archivo CSV que contiene información adicional acerca de los buzones inactivos en su organización. 
+Puede hacer clic ![en exportar resultados](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) de la búsqueda para **exportar** para ver o descargar un archivo CSV que contenga información adicional acerca de los buzones inactivos en su organización. 
   
-También puede ejecutar el siguiente comando para exportar la lista de buzones de correo inactivos y otra información a un archivo CSV. En este ejemplo, se crea el archivo CSV en el directorio actual.
+También puede ejecutar el siguiente comando para exportar la lista de buzones inactivos y otra información a un archivo CSV. En este ejemplo, el archivo CSV se crea en el directorio actual.
 
 ```
 Get-Mailbox -InactiveMailboxOnly | Select Displayname,PrimarySMTPAddress,DistinguishedName,ExchangeGuid,WhenSoftDeleted | Export-Csv InactiveMailboxes.csv -NoType
 ```
    
 > [!NOTE]
-> Es posible que un buzón inactivo es posible que tenga la misma dirección SMTP como un buzón de usuario activo. En este caso, el valor de la propiedad **DistinguishedName** o **ExchangeGuid** puede utilizarse para identificar de forma única un buzón de correo inactivo. 
+> Es posible que un buzón inactivo pueda tener la misma dirección SMTP que un buzón de usuario activo. En este caso, el valor de la propiedad **DistinguishedName** o **ExchangeGuid** puede usarse para identificar de forma exclusiva un buzón inactivo. 
   
 ## <a name="search-and-export-the-contents-of-an-inactive-mailbox"></a>Buscar y exportar el contenido de un buzón inactivo
 
-Tener acceso al contenido del buzón inactivo mediante la herramienta de búsqueda de contenido en la seguridad &amp; centro de cumplimiento. Al buscar en un buzón de correo inactivo, puede crear una consulta de búsqueda de palabra clave para buscar elementos específicos o puede devolver todo el contenido del buzón de correo inactivo. Puede obtener una vista previa de los resultados de búsqueda o exportar los resultados de búsqueda a un archivo de datos de Outlook (PST) o como mensajes de correo electrónico individuales. Para obtener procedimientos paso a paso para buscar los buzones de correo y exportar los resultados de búsqueda, vea los temas siguientes:
+Puede tener acceso al contenido del buzón inactivo mediante la herramienta de búsqueda de contenido en el centro &amp; de seguridad y cumplimiento. Cuando busca en un buzón inactivo, puede crear una consulta de búsqueda de palabras clave para buscar elementos específicos o puede devolver todo el contenido del buzón inactivo. Puede obtener una vista previa de los resultados de la búsqueda o exportar los resultados de la búsqueda a un archivo de datos de Outlook (PST) o a mensajes de correo electrónico individuales. Para conocer los procedimientos paso a paso para buscar buzones y exportar resultados de búsqueda, vea los siguientes temas:
   
 - [Búsqueda de contenido en Office 365](content-search.md)
     
-- [Exportar los resultados de búsqueda de contenido de la seguridad de Office 365 &amp; centro de cumplimiento](export-search-results.md)
+- [Exportar resultados de búsqueda de contenido desde el centro &amp; de seguridad y cumplimiento de Office 365](export-search-results.md)
     
-A continuación presentamos algunas cosas que debe tener en cuenta al buscar buzones inactivos.
+Estas son algunas de las cosas que debe tener en cuenta al buscar buzones inactivos.
   
-- Si una búsqueda de contenido incluye un buzón de usuario y ese buzón, a continuación, se convierte en inactivo, continuará la búsqueda de contenido buscar el buzón de correo inactivo cuando vuelva a ejecutar la búsqueda después de que quede inactiva.
+- Si una búsqueda de contenido incluye un buzón de usuario y, a continuación, dicho buzón se convierte en inactivo, la búsqueda de contenido continuará buscando en el buzón inactivo cuando vuelva a ejecutar la búsqueda después de que quede inactiva.
     
-- En algunos casos, un usuario puede tener un buzón de correo activa y un buzón inactivo que tienen la misma dirección SMTP. En este caso, se buscarán sólo el buzón específico que seleccione como una ubicación para una búsqueda de contenido. En otras palabras, si el buzón de un usuario se agrega a una búsqueda, no se puede suponer que se buscará en sus buzones activos e inactivos; se buscarán sólo el buzón de correo que se agregue explícitamente a la búsqueda.
+- En algunos casos, es posible que un usuario tenga un buzón activo y un buzón inactivo con la misma dirección SMTP. En este caso, solo se buscará en el buzón específico que seleccione como ubicación para una búsqueda de contenido. Es decir, si agrega el buzón de un usuario a una búsqueda, no puede suponer que se buscará en los buzones activos e inactivos; solo se buscará en el buzón que agregue explícitamente a la búsqueda.
     
-- Se recomienda encarecidamente que no tenga un buzón activo y el buzón de correo inactivo con la misma dirección SMTP. Si necesita volver a usar la dirección SMTP que está asignada actualmente a un buzón de correo inactivo, se recomienda que recuperar el buzón de correo inactivo o restaurar el contenido de un buzón inactivo en un buzón de correo activo (o el archivo de un buzón de active) y, a continuación, elimine el buzón de correo inactivo.
+- Le recomendamos encarecidamente que Evite tener un buzón activo y un buzón inactivo con la misma dirección SMTP. Si necesita volver a usar la dirección SMTP actualmente asignada a un buzón inactivo, se recomienda recuperar el buzón inactivo o restaurar el contenido de un buzón inactivo en un buzón activo (o el archivo de un buzón activo) y, a continuación, eliminar el buzón inactivo.
     
 ## <a name="change-the-hold-duration-for-an-inactive-mailbox"></a>Cambiar la duración de retención para un buzón inactivo
 
-Después de un buzón de correo se realiza como inactiva, puede cambiar la duración de la suspensión o la directiva de retención de Office 365 aplicada para el buzón de correo inactivo. Para obtener procedimientos paso a paso, consulte [cambiar la duración de retención para un buzón inactivo en Office 365](change-the-hold-duration-for-an-inactive-mailbox.md).
+Una vez que un buzón se convierte en inactivo, puede cambiar la duración de la retención o la Directiva de retención de Office 365 aplicada al buzón inactivo. Para conocer los procedimientos paso a paso, vea [cambiar la duración de retención para un buzón inactivo en Office 365](change-the-hold-duration-for-an-inactive-mailbox.md).
   
 ## <a name="recover-an-inactive-mailbox"></a>Recuperar un buzón inactivo
 
-Si un empleado anterior devuelve a su organización, o si se contrata a un nuevo empleado a cabo en las responsabilidades de cargo del empleado abandonada, puede recuperar el contenido del buzón de correo inactivo. Al recuperar un buzón inactivo, el buzón de correo se convierte en un nuevo buzón de correo, se conservan el contenido y la estructura de carpetas de buzón de correo inactivo y el buzón de correo está vinculada a una nueva cuenta de usuario. Una vez recuperado, ya no existe el buzón de correo inactivo. Para procedimientos paso a paso y obtener más información acerca de sucede al recuperar un buzón inactivo, vea [recuperar un buzón inactivo en Office 365](recover-an-inactive-mailbox.md).
+Si un antiguo empleado vuelve a su organización, o si se contrata a un nuevo empleado para que realice las responsabilidades laborales del empleado que ha finalizado, puede recuperar el contenido del buzón inactivo. Al recuperar un buzón inactivo, el buzón se convierte en un nuevo buzón de correo, se conserva el contenido y la estructura de carpetas del buzón inactivo, y el buzón de correo se vincula a una nueva cuenta de usuario. Una vez recuperado, el buzón inactivo deja de existir. Para conocer los procedimientos paso a paso y obtener más información acerca de Cuándo recuperar un buzón inactivo, vea [recuperar un buzón inactivo en Office 365](recover-an-inactive-mailbox.md).
   
 ## <a name="restore-the-contents-of-an-inactive-mailbox-to-another-mailbox"></a>Restaurar el contenido de un buzón inactivo en otro buzón de correo
 
-Si lleva a otro empleado en las responsabilidades de trabajo de un empleado anterior, o si otra persona necesita tener acceso al contenido del buzón de correo inactivo, puede restaurar (o combinación) el contenido del buzón de correo inactivo a un buzón existente. Al restaurar un buzón inactivo, el contenido se copia en otro buzón. El buzón de correo inactivo se conserva y sigue siendo un buzón de correo inactivo. Aún se puede buscar en el buzón de correo inactivo uso de exhibición de documentos electrónicos, su contenido se puede restaurar en otro buzón, o puede ser recuperado o eliminado en una fecha posterior. Para obtener procedimientos paso a paso, consulte [restaurar un buzón inactivo en Office 365](restore-an-inactive-mailbox.md).
+Si otro empleado asume las responsabilidades laborales de un antiguo empleado o si otra persona necesita acceso al contenido del buzón inactivo, puede restaurar (o combinar) el contenido del buzón inactivo en un buzón existente. Cuando se restaura un buzón inactivo, el contenido se copia en otro buzón de correo. El buzón inactivo se conserva y sigue siendo un buzón inactivo. El buzón inactivo todavía se puede buscar mediante la exhibición de documentos electrónicos, su contenido se puede restaurar a otro buzón o se puede recuperar o eliminar en una fecha posterior. Para conocer los procedimientos paso a paso, consulte [restaurar un buzón inactivo en Office 365](restore-an-inactive-mailbox.md).
   
 ## <a name="delete-an-inactive-mailbox"></a>Eliminar un buzón inactivo
 
-Si ya no necesita conservar el contenido de un buzón de correo inactivo, puede eliminar permanentemente el buzón de correo inactivo por quitar la suspensión o la eliminación de la directiva de retención de Office 365 aplicada para el buzón de correo inactivo. Si el buzón de correo se ha eliminado de hace más de 30 días, el buzón se marcará para su eliminación permanente después de quitar la suspensión y el buzón de correo se convertirán en no recuperable. Si se ha eliminado el buzón de correo en los últimos 30 días, aún puede recuperar el buzón de correo después de quitar la directiva de retención o suspensión. Para obtener procedimientos paso a paso para quitar una suspensión o una directiva de retención de Office 365 para eliminar permanentemente un buzón inactivo, vea [Eliminar un buzón inactivo en Office 365](delete-an-inactive-mailbox.md).
+Si ya no necesita conservar el contenido de un buzón inactivo, puede eliminar de forma permanente el buzón inactivo quitando la retención o quitando la Directiva de retención de Office 365 aplicada al buzón inactivo. Si el buzón se eliminó hace más de 30 días, el buzón se marcará para su eliminación permanente después de quitar la retención y el buzón se convertirá en no recuperable. Si el buzón se eliminó en los últimos 30 días, todavía puede recuperar el buzón de correo después de quitar la retención o la Directiva de retención. Para obtener los procedimientos paso a paso para quitar una suspensión o una directiva de retención de Office 365 para eliminar de forma permanente un buzón inactivo, vea [eliminar un buzón inactivo en Office 365](delete-an-inactive-mailbox.md).

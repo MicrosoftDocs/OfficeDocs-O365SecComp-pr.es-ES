@@ -1,12 +1,12 @@
 ---
-title: Corrección de error al procesar los datos
+title: Corrección de errores al procesar los datos
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,78 +14,78 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 82e6d44ded64d586611f429f9b3eebe4f47e9898
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 0224e6bf750af209eefd47902f1f4a78200d1db1
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29608402"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216000"
 ---
-# <a name="error-remediation-when-processing-data"></a>Corrección de error al procesar los datos
+# <a name="error-remediation-when-processing-data"></a>Corrección de errores al procesar los datos
 
-Corrección de error permite a los administradores de la exhibición de documentos electrónicos la posibilidad de corregir los problemas de datos que impiden que procesar correctamente el contenido de exhibición de documentos electrónicos avanzada (vista previa). Por ejemplo, los archivos que están protegidos con contraseña no se puede procesar ya que los archivos estén bloqueados o se cifran. Con corrección de error, los administradores de exhibición de documentos electrónicos pueden descargar archivos con estos errores, quitar la protección con contraseña y cargar los archivos corregidos con pruebas.
+La corrección de errores permite que los administradores de eDiscovery puedan rectificar problemas de datos que impiden la exhibición avanzada de documentos electrónicos (vista previa) para procesar correctamente el contenido. Por ejemplo, no se pueden procesar archivos protegidos con contraseña, ya que los archivos están bloqueados o cifrados. Mediante la corrección de errores, los administradores de eDiscovery pueden descargar archivos con estos errores, quitar la protección con contraseña y cargar los archivos corregidos.
 
-Use el siguiente flujo de trabajo para corregir los archivos con errores en los casos de exhibición de documentos electrónicos avanzada (vista previa).
+Use el siguiente flujo de trabajo para corregir los archivos con errores en los casos de eDiscovery avanzado (vista previa).
 
-## <a name="creating-an-error-remediation-session-to-remediate-files-with-processing-errors"></a>Creación de una sesión de corrección de error para corregir los archivos con errores de procesamiento
+## <a name="creating-an-error-remediation-session-to-remediate-files-with-processing-errors"></a>Crear una sesión de corrección de errores para corregir los archivos con errores de procesamiento
 
 >[!NOTE]
->Si el en cualquier momento durante el procedimiento siguiente, se cierra el Asistente para la corrección de error, puede volver a la sesión de corrección de error desde la ficha **procesamiento** mediante la selección de **correcciones de Error** en el menú desplegable **vista** .
+>Si el Asistente para la corrección de errores se cierra en cualquier momento durante el siguiente procedimiento, puede volver a la sesión de corrección de errores desde **** la pestaña procesando; para ello, seleccione **corrección de errores** en el menú desplegable **Ver** .
 
-1. En la ficha **de procesamiento** en un caso de exhibición de documentos electrónicos avanzada (vista previa), seleccione **errores** en el menú desplegable **vista** .
+1. En la pestaña **procesamiento** en un caso de exhibición avanzada de documentos electrónicos (versión preliminar), seleccione **errores** en el menú desplegable **vista** .
 
-2. Seleccione los errores que desea corregir haciendo clic en el botón de opción situado junto al tipo de error o el tipo de archivo.  En el siguiente ejemplo, nos estamos solucionar relativos a un archivo protegido con contraseña.
+2. Seleccione los errores que desea corregir haciendo clic en el botón de opción situado junto a tipo de error o tipo de archivo.  En el siguiente ejemplo, estamos corrigiendo un archivo protegido con contraseña.
 
-3. Haga clic en **+ nuevo corrección de error**.
+3. Haga clic en **+ nuevo error de corrección**.
 
-    ![Corrección de error](../media/8c2faf1a-834b-44fc-b418-6a18aed8b81a.png)
+    ![Corrección de errores](../media/8c2faf1a-834b-44fc-b418-6a18aed8b81a.png)
 
-    La sesión de corrección de error comenzará, empezando por una fase de preparación, donde los archivos con errores que se mueven a una ubicación segura de Azure para ser descargado.
+    La sesión de corrección de errores comenzará a partir de una etapa de preparación en la que los archivos con errores se moverán a una ubicación segura de Azure que se descargará.
 
-    ![Preparación de la corrección de error](../media/390572ec-7012-47c4-a6b6-4cbb5649e8a8.png)
+    ![Preparación de la corrección de errores](../media/390572ec-7012-47c4-a6b6-4cbb5649e8a8.png)
 
-4. Una vez finalizada la preparación, haga clic en **siguiente: descargar archivos** para continuar con la descarga.
+4. Una vez completada la preparación, haga clic en **siguiente: descargar archivos** para continuar con la descarga.
 
     ![Descargar archivos](../media/6ac04b09-8e13-414a-9e24-7c75ba586363.png)
 
-5. Para descargar los archivos, especifique la **ruta de acceso de destino para su descarga**; Esto es una ruta de acceso en el equipo local donde se debe descargar el archivo.  La ruta de acceso predeterminada, % USERPROFILE%\Downloads\errors, señala a la carpeta de descargas del usuario que ha iniciado sesión; Esto se puede cambiar según sea necesario.
+5. Para descargar archivos, especifique la **ruta de destino de la descarga**; se trata de una ruta de acceso en el equipo local en la que se debe descargar el archivo.  La ruta de acceso predeterminada,%USERPROFILE%\Downloads\errors, apunta a la carpeta descargas del usuario que ha iniciado sesión; Esto se puede cambiar si es necesario.
 
     >[!NOTE]
-    >Se recomienda usar una ruta de acceso de archivo local en lugar de una ruta de acceso de red remoto para un rendimiento óptimo.
+    >Le recomendamos que use una ruta de acceso de archivo local en lugar de una ruta de acceso de red remota para obtener un rendimiento óptimo.
 
     > [!NOTE]
-    > Si no ha instalado AzCopy, se pueden instalar desde aquí:https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy
+    > Si no ha instalado AzCopy, puede instalarlo desde aquí:https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy
 
-6. Copie el comando predefinido, haga clic en **Copiar al Portapapeles**. Inicie un símbolo del sistema de windows, pegue el comando y, a continuación, presione **ENTRAR**.  
+6. Copie el comando predefinido; para ello, haga clic en **copiar al**portapapeles. Inicie un símbolo del sistema de Windows, pegue el comando y, a continuación, presione **entrar**.  
 
     Los archivos se descargarán.
 
-    ![Preparación de la corrección de error](../media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)
+    ![Preparación de la corrección de errores](../media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)
 
      > [!NOTE]
-     > Si tiene problemas al ejecutar este comando, vea https://go.microsoft.com/fwlink/?linkid=2038117 sugerencias para resolver problemas.
+     > Si tiene problemas al ejecutar este comando, consulte https://go.microsoft.com/fwlink/?linkid=2038117 para obtener sugerencias para la solución de problemas.
 
-7. Después de descargar los archivos, puede corregir con una herramienta apropiada. Para archivos protegidos con contraseña, hay un número de contraseñas de herramientas que puede utilizar. Si conoce las contraseñas de los archivos, puede abrirlos y quitar la protección con contraseña.
+7. Después de descargar los archivos, puede corregirlos con una herramienta adecuada. Para los archivos protegidos con contraseña, hay varias herramientas de averiguación de contraseñas que puede usar. Si conoce las contraseñas de los archivos, puede abrirlas y quitar la protección con contraseña.
     > [!NOTE]
-    > TI es importante que mantenga los nombres de archivo y la estructura de directorio de los archivos corregidos con pruebas permanecen.  Convenciones de nomenclatura de todos los que se usan en los archivos descargados y carpetas hacen posible asociar los archivos de remdiated al original.
+    > Es importante que mantenga intactos la estructura de directorios y los nombres de archivo de los archivos corregidos.  Todas las convenciones de nomenclatura usadas en los archivos y carpetas descargados hacen posible asociar los archivos de remdiated con el original.
 
-8. Ahora, vuelva a la exhibición de documentos electrónicos avanzada (vista previa) y haga clic en **siguiente: cargar archivos**.  Se moverán con el paso siguiente donde puede cargar los archivos.
+8. Ahora, vuelva a la exhibición avanzada de documentos electrónicos (versión preliminar) y haga clic en **siguiente: cargar archivos**.  Se desplazará al siguiente paso en el que ahora puede cargar los archivos.
 
     ![Cargar archivos](../media/af3d8617-1bab-4ecd-8de0-22e53acba240.png)
 
-9. Especifique la ubicación de los archivos corregidos con pruebas en el cuadro de texto **ruta de acceso a la ubicación de archivos** , a continuación, haga clic en **Copiar a clibpboard**.
+9. Especifique la ubicación de los archivos corregidos en el cuadro **de texto Ruta de acceso a la ubicación del archivo** y, a continuación, haga clic en **copiar a clibpboard**.
 
-10. Pegue el comando en un símbolo del sistema de Windows y presione **ENTRAR** para cargar los archivos.
+10. Pegue el comando en un símbolo del sistema de Windows y presione **entrar** para cargar los archivos.
 
-    ![ff2ff691-629f-4065-9b37-5333f937daf6.png](../media/ff2ff691-629f-4065-9b37-5333f937daf6.png)
+    ![ff2ff691-629f-4065-9b37-5333f937daf6. png](../media/ff2ff691-629f-4065-9b37-5333f937daf6.png)
 
-11. Por último, volver a la exhibición de documentos electrónicos avanzada (vista previa) y haga clic en **siguiente: procesar archivos**.
+11. Por último, vuelva a la exhibición avanzada de documentos electrónicos (versión preliminar) y haga clic en **siguiente: procesar archivos**.
 
-12. Cuando el procesamiento se complete.  Puede devolver el conjunto de trabajo y ver el archivo corregidos con pruebas.
+12. Cuando se complete el procesamiento.  Puede volver al conjunto de trabajo y ver el archivo corregido.
 
-## <a name="what-happens-when-files-are-remediated"></a>¿Qué sucede cuando se modifiquen los archivos
+## <a name="what-happens-when-files-are-remediated"></a>Qué sucede cuando se corrigen los archivos
 
-Cuando se cargan archivos corregidos con pruebas, los metadatos originales se conservan con la excepción de los siguientes campos: 
+Cuando se cargan los archivos corregidos, se conservan los metadatos originales, con la excepción de los siguientes campos: 
 
 - DocumentExtractedUrl
 - ExtractedTextSize
@@ -95,9 +95,9 @@ Cuando se cargan archivos corregidos con pruebas, los metadatos originales se co
 - ItemExtractedUrl
 - LoadId
 - ProcessingErrorMessage
-- Procesamiento
+- ProcessingStatus
 - Text
 - WordCount
 - WorkingsetId
 
-Para una definición de todos los campos de metadatos de documento de exhibición de documentos electrónicos avanzada (vista previa), vea [los campos de metadatos del documento](document-metadata-fields.md).
+Para obtener una definición de todos los campos de metadatos del documento en eDiscovery avanzado (versión preliminar), consulte campos de metadatos del [documento](document-metadata-fields.md).

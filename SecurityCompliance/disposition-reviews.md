@@ -6,119 +6,119 @@ manager: laurawi
 ms.date: 6/29/2018
 ms.audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: d0c6095b-bfee-4906-a2c7-89c2d7f411c1
-description: Cuando se crea una etiqueta que se conserva el contenido en Office 365, puede desencadenar una revisión de disposición al final del período de retención.
-ms.openlocfilehash: c0a2933f597c9b314ac4ce2e72de9619fac90082
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: Cuando se crea una etiqueta que conserva el contenido en Office 365, se puede optar por desencadenar una revisión de disposición al final del período de retención.
+ms.openlocfilehash: 0948d61131595d4111f656c385c58258c5cce99c
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "23013724"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215010"
 ---
 # <a name="overview-of-disposition-reviews"></a>Introducción a las revisiones de disposición
 
-Cuando el contenido llega al final de su período de retención, existen varias razones por qué es posible que desee revisar dicho contenido para decidir si se puede eliminar sin ningún riesgo ("eliminado"). Por ejemplo, es posible que necesite:
+Cuando el contenido alcanza el final de su período de retención, existen varios motivos por los que puede que desee revisar el contenido para decidir si se puede eliminar de forma segura ("eliminado"). Por ejemplo, es posible que deba:
   
-- Suspender la eliminación ("disposición") de contenido relevante en caso de litigio o una auditoría.
+- Suspender la eliminación ("disposición") del contenido relevante en caso de litigio o una auditoría.
     
-- Quitar el contenido de la lista de disposición para almacenar en un archivo, si dicho contenido tiene investigación o valor histórico.
+- Quitar contenido de la lista de disposición para almacenarla en un archivo, si el contenido tiene un valor histórico o de investigación.
     
-- Asignar un período de retención diferente para el contenido, si la directiva original era una solución temporal o provisional.
+- Asigne un período de retención diferente al contenido, si la directiva original era una solución temporal o provisional.
     
-- Devolver el contenido a los clientes o transferir a otra organización.
+- Devolver el contenido a los clientes o transferirlo a otra organización.
     
-Cuando se crea una etiqueta que se conserva el contenido en Office 365, puede desencadenar una revisión de disposición al final del período de retención. En una revisión de disposición:
+Cuando se crea una etiqueta que conserva el contenido en Office 365, se puede optar por desencadenar una revisión de disposición al final del período de retención. En una revisión de disposición:
   
-- Las personas que elija reciben una notificación de correo electrónico que tienen contenido para revisar. Estos revisores pueden ser usuarios individuales, distribución o grupos de seguridad o grupos de Office 365. Tenga en cuenta que las notificaciones se envían de forma semanal.
+- Las personas que elija reciben una notificación por correo electrónico de que tienen contenido que revisar. Estos revisores pueden ser usuarios individuales, grupos de seguridad o de distribución o grupos de Office 365. Tenga en cuenta que las notificaciones se envían cada semana.
     
-- Los revisores vaya a la página de **disposición** en la seguridad &amp; centro de cumplimiento para revisar el contenido. 
+- Los revisores van a la página de **disposición** en el &amp; centro de seguridad y cumplimiento para revisar el contenido. 
     
 - Para cada documento, el revisor puede:
     
-  - Aplicar una etiqueta diferente.
+  - Aplique una etiqueta diferente.
     
   - Ampliar su período de retención.
     
   - Eliminarlo de forma permanente.
     
-- Los revisores pueden ver disposiciones pendientes o históricas y exportar esa lista como un archivo .csv.
+- Los revisores pueden ver las disposiciones pendientes o históricas y exportar dicha lista como un archivo. csv.
     
-Tenga en cuenta que disposición revisiones requieren una suscripción a Office 365 Enterprise E5.
+Tenga en cuenta que las revisiones de disposición requieren una suscripción a Office 365 Enterprise E5.
   
-Una revisión de disposición puede incluir contenido en los buzones de Exchange, los sitios de SharePoint, OneDrive cuentas y grupos de Office 365. En espera de una revisión de disposición en esas ubicaciones de contenido se elimina después de que un revisor elige eliminar permanentemente el contenido.
+Una revisión de disposición puede incluir contenido en buzones de Exchange, sitios de SharePoint, cuentas de OneDrive y grupos de Office 365. El contenido que espera una revisión de disposición en esas ubicaciones se elimina solo después de que un revisor elige eliminar el contenido de forma permanente.
   
 ![Página de disposición](media/b7436fb2-1f35-4146-8ca2-32c9d10f7e09.png)
   
 ## <a name="setting-up-the-disposition-review-by-creating-a-label"></a>Configuración de la revisión de disposición mediante la creación de una etiqueta
 
-Este es el flujo de trabajo básico para la configuración de una revisión de disposición. Tenga en cuenta que este flujo de muestra una etiqueta que se va a publicar y, a continuación, se aplica manualmente por un usuario; como alternativa, una etiqueta que desencadena una revisión de disposición puede ser automático aplicada al contenido.
+Este es el flujo de trabajo básico para configurar una revisión de disposición. Tenga en cuenta que este flujo muestra una etiqueta que se publica y que un usuario aplica manualmente; como alternativa, se puede aplicar automáticamente una etiqueta que desencadene una revisión de disposición al contenido.
   
-![Gráfico que muestra el flujo del funcionamiento de disposición](media/5fb3f33a-cb53-468c-becc-6dda0ec52778.png)
+![Gráfico que muestra el flujo de trabajo de disposición](media/5fb3f33a-cb53-468c-becc-6dda0ec52778.png)
   
-Una revisión de disposición es una opción cuando se crea una etiqueta en Office 365. Tenga en cuenta que esta opción no está disponible en una directiva de retención, pero solo en una etiqueta con la configuración de retención.
+Una revisión de disposición es una opción cuando se crea una etiqueta en Office 365. Tenga en cuenta que esta opción no está disponible en una directiva de retención, sino solo en una etiqueta con la configuración de retención.
   
-Para obtener más información acerca de las etiquetas, vea [información general de las etiquetas](labels.md).
+Para obtener más información sobre las etiquetas, vea [Información general sobre etiquetas](labels.md).
   
 ![Configuración de retención de una etiqueta](media/a16dd202-8862-40ac-80ff-6fee974de5da.png)
   
 ## <a name="disposing-content"></a>Eliminación de contenido
 
-Cuando un revisor recibe una notificación por correo electrónico que el contenido está listo para revisar, pueden ir a la página de **disposición** en la seguridad &amp; centro de cumplimiento y seleccionados uno o varios elementos. El revisor puede, a continuación: 
+Cuando se notifica a un revisor por correo electrónico que el contenido está listo para su revisión, puede ir a la página de **disposición** en &amp; el centro de seguridad y cumplimiento y seleccionar uno o más elementos. A continuación, el revisor puede: 
   
-- Aplicar una etiqueta diferente.
+- Aplique una etiqueta diferente.
     
 - Ampliar el período de retención.
     
 - Eliminar permanentemente el elemento.
     
-Un revisor puede usar el vínculo para ver el documento en su ubicación original, si el revisor tiene permisos para esa ubicación. Durante una revisión de disposición, el contenido nunca se mueve desde su ubicación original y no se eliminen nunca hasta que el revisor elige hacerlo.
+Un revisor puede usar el vínculo para ver el documento en su ubicación original, si el revisor tiene permisos para dicha ubicación. Durante una revisión de disposición, el contenido nunca se mueve desde su ubicación original, y nunca se elimina hasta que el revisor elige hacerlo.
   
-Tenga en cuenta que las notificaciones de correo electrónico se envían automáticamente a los revisores de forma semanal. Por lo tanto, cuando el contenido llega al final de su período de retención, puede tardar hasta siete días para los revisores reciben la notificación de correo electrónico que el contenido está esperando su disposición.
+Tenga en cuenta que las notificaciones por correo electrónico se envían de forma automática a los revisores cada semana. Por lo tanto, cuando el contenido alcanza el final de su período de retención, los revisores pueden tardar hasta siete días en recibir la notificación por correo electrónico de que el contenido espera la disposición.
   
-Tenga en cuenta también que todas las acciones de disposición se auditan. Para asegurarse de esto, debe activar la auditoría de al menos un día antes de la primera acción de disposición - para obtener más información, vea [Buscar en el registro de auditoría de la seguridad de Office 365 &amp; centro de cumplimiento](search-the-audit-log-in-security-and-compliance.md). 
+Además, tenga en cuenta que se auditan todas las acciones de disposición. Para garantizar esto, debe activar la auditoría al menos un día antes de la primera acción de disposición (para obtener más información, vea [Buscar en el registro de auditoría del centro de &amp; seguridad y cumplimiento de Office 365](search-the-audit-log-in-security-and-compliance.md)). 
   
-![Opciones de eliminación de un documento](media/771630fd-a9b0-47cf-983b-fe85eb4cdafd.png)
+![Opciones de disposición para un documento](media/771630fd-a9b0-47cf-983b-fe85eb4cdafd.png)
   
-## <a name="permissions-for-disposition"></a>Permisos para la disposición
+## <a name="permissions-for-disposition"></a>Permisos para disposición
 
-Para obtener acceso a la página de **disposición** , los revisores deben ser miembros de la **Administración de la eliminación** y el rol de **Los registros de auditoría con permiso de vista** . Se recomienda crear un nuevo grupo de rol denominado revisores de disposición, adición de estas dos funciones a ese grupo de roles y, a continuación, agregar miembros al grupo de funciones. 
+Para obtener acceso a la página de **disposición** , los revisores deben ser miembros de la función de **Administración de disposición** y el rol **registros de auditoría con permiso de vista** . Se recomienda crear un nuevo grupo de roles denominado revisores de disposición, agregar estos dos roles a ese grupo de roles y, a continuación, agregar miembros al grupo de roles. 
   
-Para obtener más información, vea [dar a los usuarios acceso a la seguridad de Office 365 &amp; centro de cumplimiento](grant-access-to-the-security-and-compliance-center.md)
+Para obtener más información, vea [conceder acceso a los usuarios al &amp; centro de seguridad y cumplimiento de Office 365](grant-access-to-the-security-and-compliance-center.md)
   
-## <a name="how-long-until-disposed-content-is-permanently-deleted"></a>¿Cuánto tiempo hasta que el contenido eliminado se elimina de manera permanente
+## <a name="how-long-until-disposed-content-is-permanently-deleted"></a>Cuánto tiempo se eliminará permanentemente el contenido desechado
 
-En espera de una revisión de disposición de contenido se elimina después de que un revisor elige eliminar permanentemente el contenido. Cuando el revisor elige esta opción, el contenido en el sitio de SharePoint o la cuenta de OneDrive, pasa a ser candidato para el proceso de limpieza estándar que se describen en esta sección: [funcionamiento con contenido en lugar de una directiva de retención](retention-policies.md#how-a-retention-policy-works-with-content-in-place).
+El contenido que espera una revisión de disposición se elimina solo después de que un revisor elige eliminar el contenido de forma permanente. Cuando el revisor elige esta opción, el contenido en el sitio de SharePoint o la cuenta de OneDrive pasa a ser elegible para el proceso de limpieza estándar descrito en esta sección: [Cómo funciona una directiva de retención con el contenido en su lugar](retention-policies.md#how-a-retention-policy-works-with-content-in-place).
   
-Esto significa:
+Esto significa que:
   
-- El contenido en una biblioteca de documentos estará mueve a la primera etapa Papelera de reciclaje **dentro de 7 días** de disposición y, a continuación, elimina permanentemente **93 días** después de que. La Papelera de reciclaje no se indiza por la búsqueda y, por tanto, su contenido no está disponible para una exhibición de documentos electrónicos. 
+- El contenido de una biblioteca de documentos se mueve a la papelera de reciclaje de primera etapa **en un plazo de 7 días** después de la disposición y, a continuación, se elimina de forma permanente **93 días** después de eso. La papelera de reciclaje no está indizada por búsqueda y, por lo tanto, su contenido no está disponible para la conservación de la exhibición de documentos electrónicos. 
     
-- El contenido de la suspensión de conservación biblioteca quedará permanentemente eliminado **dentro de 7 días** de disposición. 
+- El contenido de la biblioteca de conservación de contenido se eliminará permanentemente **en 7 días después** de la disposición. 
     
-## <a name="view-pending-and-completed-dispositions"></a>Ver pendientes y disposiciones completados
+## <a name="view-pending-and-completed-dispositions"></a>Ver las disposiciones pendientes y completadas
 
-En la página de **eliminación** de la seguridad &amp; centro de cumplimiento, puede ver disposiciones pendientes y completadas: 
+En la página de **disposición** del centro &amp; de seguridad y cumplimiento, puede ver las disposiciones pendientes y completadas: 
   
-- Disposiciones **pendiente** han alcanzado el final de su período de retención y requieren una revisión de disposición. Después de revisar cada elemento, decidir si desea aplicar una etiqueta diferente a ella, ampliar su período de retención o eliminarlo de forma permanente. 
+- Las desposiciones **pendientes** han llegado al final de su período de retención y requieren una revisión de disposición. Después de revisar cada elemento, decida si desea aplicar una etiqueta distinta, ampliar su período de retención o eliminarlo de forma permanente. 
     
-- Disposiciones **completado** se han aprobado para su eliminación durante una revisión de disposición y ahora están en el proceso que se va a eliminar de forma permanente. Elementos que han tenido una etiqueta diferente aplicado o su período de retención extendido como parte de una revisión no aparecerá aquí. 
+- **** Las desposiciones completadas se aprobaron para su eliminación durante una revisión de disposición y ahora están en proceso de eliminación permanente. Los elementos a los que se ha aplicado una etiqueta diferente o cuyo período de retención se ha ampliado como parte de una revisión no aparecerán aquí. 
     
 ### <a name="filter-the-disposition-views"></a>Filtrar las vistas de disposición
 
-Puede filtrar estas vistas por intervalo de tiempo o de etiqueta. Para pendientes disposiciones, el intervalo de tiempo se basa en la fecha de caducidad. Para disposiciones históricas, el intervalo de tiempo se basa en la fecha de eliminación.
+Puede filtrar estas vistas por etiqueta o intervalo de tiempo. Para las disposiciones pendientes, el intervalo de tiempo se basa en la fecha de expiración. Para las disposiciones históricas, el intervalo de tiempo se basa en la fecha de eliminación.
   
 ![Opciones de filtro en la página de disposición](media/8682a9f5-a77d-45ae-b902-8418a3ebbea1.png)
   
 ### <a name="export-the-disposition-items"></a>Exportar los elementos de disposición
 
-Además, puede exportar los elementos en la vista como un archivo .csv que se puede abrir en Excel.
+Además, puede exportar los elementos en cualquiera de las vistas como un archivo. csv que se puede abrir en Excel.
   
-![Datos de disposición exportado en Excel](media/08e3bc09-b132-47b4-a051-a590b697e725.png)
+![Datos de disposición exPortados en Excel](media/08e3bc09-b132-47b4-a051-a590b697e725.png)
   
 

@@ -6,102 +6,102 @@ manager: laurawi
 ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: c6f016cb-409f-4ae9-911c-1395cf0c86ea
-description: 'Obtenga información sobre cómo encontrar los resultados de un módulo de un proceso que se ejecutan en Office 365 avanzada exhibición de documentos electrónicos, incluidos el estado de la tarea y el proceso de resumen.  '
-ms.openlocfilehash: 01093b0230aaf78ab7ccf1235f0874a0b69aa1bd
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: 'Obtenga información sobre cómo encontrar los resultados de un módulo de proceso en la exhibición avanzada de documentos de Office 365, incluido el estado de la tarea y el resumen del proceso.  '
+ms.openlocfilehash: 0393cde78e559036d92b9ac48245afafc974a8b2
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22535611"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218060"
 ---
 # <a name="view-process-module-results-in-office-365-advanced-ediscovery"></a>Ver resultados del módulo de proceso en eDiscovery avanzado de Office 365
 
-Después de **Preparar** \> se inicia el **proceso** , puede ver el progreso y los resultados. 
+Una vez iniciado el **proceso** de **preparación** \> , puede ver el progreso y los resultados. 
   
 > [!NOTE]
-> Exhibición de documentos electrónicos avanzada requiere un E3 de Office 365 con el complemento de cumplimiento avanzadas o una suscripción E5 para su organización. Si no tiene ese plan y desea probar avanzada exhibición de documentos electrónicos, puede [registrarse y obtener una versión de prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
-## <a name="process-task-status"></a>Estado de la tarea de proceso
+## <a name="process-task-status"></a>Procesar el estado de la tarea
 
-En **Prepare** \> **proceso** \> **los resultados**, la página muestra el estado actual (si el proceso se está ejecutando actualmente) o el último estado de tarea de estado de proceso tal como se muestra en el siguiente ejemplo.
+En **preparar** \> los **resultados**del **proceso** \> , la página muestra el estado actual (si el proceso se está ejecutando actualmente) o el estado de la tarea de estado de proceso último como se muestra en el siguiente ejemplo.
   
 ![Estado de la tarea del módulo de proceso](media/9430f9e7-a4dd-47c7-ac2e-2c6a60fc948b.png)
   
-Las tareas que se muestra pueden variar según las opciones de proceso seleccionadas. 
+Las tareas mostradas pueden variar en función de las opciones de proceso seleccionadas. 
   
-- **Inventario**: exhibición de documentos electrónicos avanzada recorre en iteración todos los archivos seleccionados para el proceso y realiza la recolección de datos básica.
+- **Inventory**: Advanced eDiscovery recorre en iteración todos los archivos seleccionados para procesar y realiza la recopilación de datos básica.
     
-- **Las firmas de calcular**: calcula las firmas digitales de MD5.
+- **Calcular firmas**: calcula las firmas digitales MD5.
     
-- **Extracción de compuestos**: extractos internos o contiene los archivos de forma recursiva de archivos compuestos (por ejemplo, PST, ZIP, MSG). Los archivos extraídos se almacenan en la carpeta de mayúsculas y minúsculas de las mayúsculas y minúsculas.
+- **Extracción de compuestos**: extrae archivos internos o contenidos de forma recursiva de archivos compuestos (por ejemplo, PST, zip, MSG). Los archivos exTraídos se almacenan en la carpeta Case del caso.
     
-- **Base de datos de sincronización**: proceso de base de datos interna.
+- **Sincronización de base de datos**: proceso de base de datos interno.
     
-- **Copia de archivos**: proceso de copias de archivos. Siempre se muestra esta tarea, incluso cuando se selecciona la opción avanzada de los archivos de copia.
+- **Copia de archivos**: copia los archivos de proceso. Esta tarea se muestra siempre, incluso cuando está seleccionada la opción copias avanzadas de archivos.
     
-- **Extracción de texto**: cuando hay archivos nativos, exhibición de documentos electrónicos avanzada extrae el texto de estos archivos mediante DTSearch. El texto extraído de estos archivos se almacena como archivos de texto en la carpeta de mayúsculas y minúsculas.
+- **Extracción de texto**: cuando hay archivos nativos, eDiscovery avanzado extrae texto de estos archivos mediante dtSearch. El texto extraído de estos archivos se almacena como archivos de texto en la carpeta Case.
     
-- **Actualizar los metadatos**: procesa los metadatos cargados. 
+- **Actualización**de metadatos: procesa los metadatos cargados. 
     
-- **Finalizing**: procesamiento interno que finaliza los datos de carga archivos de casos (por ejemplo, identificar los archivos de error y éxito). 
+- **Finalización**: procesamiento interno que finaliza los datos de los archivos de mayúsculas y minúsculas cargados (por ejemplo, identificar los archivos de errores y correctos). 
     
-Estado de la tarea: muestra una vez finalizada la tarea. Mientras se ejecutan las tareas, se muestra la duración de ejecución.
+Estado de la tarea: se muestra después de la finalización de la tarea. Mientras se ejecutan las tareas, se muestra la duración de ejecución.
   
 > [!NOTE]
-> Las tareas completadas también pueden incluir los totales de los archivos que se completó el procesamiento o con errores. 
+> Las tareas completadas también pueden incluir los totales de los archivos que han completado el procesamiento o los archivos con errores. 
   
 > [!TIP]
-> "Cancelar" proporciona una opción de reversión para detener la ejecución del proceso y, a continuación, revertir a la población de datos anterior o guarda datos procesados. Reversión borra procesados todos los datos. Si no desea que los datos procesados se pierdan (por ejemplo, plan para volver a cargar estos archivos), seleccione la "Cancelar" opción en esta ventana Elegir no revertir. 
+> "Cancelar" proporciona una opción de reversión para detener la ejecución del proceso y, a continuación, volver a la población de datos anterior o a los datos procesados guardados. Rollback borra todos los datos procesados. Si no desea que se pierdan los datos procesados (por ejemplo, si planea volver a cargar estos archivos), seleccione la opción "Cancelar" en esta ventana para elegir no revertirlos. 
   
 ## <a name="process-summary"></a>Resumen del proceso
 
-En Prepare \> proceso \> los resultados \> proceso de resumen, se muestra un desglose de los resultados del archivo cargado según los resultados de procesamiento y error correcta de los archivos.
+En preparar \> Resumen \> de \> proceso de resultados del proceso, se muestra un desglose de los resultados de los archivos cargados de acuerdo con resultados de errores y procesamiento de archivos correctos.
   
-Los paneles de presentan una representación gráfica de las estadísticas de archivo importado, como se indica a continuación:
+Los paneles presentan una representación gráfica de las estadísticas del archivo importado, de la siguiente manera:
   
-- **Proceso de resumen se acumulan**d: en el caso de todos los archivos.
+- **Resumen de proceso acumula**d: todos los archivos en el caso.
     
-- **Resumen del proceso por última vez**: los archivos que se cargan desde la última sesión o acción. 
+- **Resumen del proceso en último lugar**: archivos cargados desde la última sesión o acción. 
     
-- **Familias por última vez**: información de la familia en el caso (si hay alguno).
+- **Últimas familias**: información de la familia en el caso (en caso de que haya).
     
-- Si se han agregado los archivos de **inicialización** , aparece el número de archivos de inicialización por el problema que se ha definido para los archivos. 
+- Si **** se agregaron archivos de inicialización, el número de archivos de inicialización se enumera por problema que se definió para los archivos. 
     
-    Si el marcado de los archivos de **inicialización** no se pudo, que también se ha indicado. 
+    Si se produce un **** error en la marcación de los archivos de inicialización, también se indica. 
     
-- Si se agregaron archivos **previamente con etiqueta** , aparece el número de archivos con previa a la etiqueta por el problema que se ha definido para los archivos. 
+- Si se agregaron archivos **etiquetaDos previamente** , el número de archivos predefinidos se enumera por problema que se definió para los archivos. 
     
-    Si el marcado de los archivos **etiquetados previamente** no se pudo, que también se ha indicado. 
+    Si se produce un error **en** la marcación de archivos predefinidos, también se indica. 
     
 ![Resumen del módulo de proceso](media/2086a691-9e3d-4117-beb2-a5c3a9a4cc94.png)
   
-## <a name="process-summary-accumulated-and-last-charts"></a>Resumen del proceso de acumulado y por última vez los gráficos
+## <a name="process-summary-accumulated-and-last-charts"></a>Gráficos acumulativos y último resumen del proceso
 
-La barra izquierda incluye origen + archivos extraídos: que es todos los archivos que se encuentra. 
+La barra izquierda incluye el origen y los archivos extraídos: que son todos los archivos encontrados. 
   
-El derecho de la barra, procesada, incluye:
+La barra derecha, procesada, incluye:
   
 - Archivos con errores de carga
     
 - Archivos cargados correctamente, que pueden incluir: 
     
-  - **Existente**: los archivos que se cargaron antes y ahora se cargan nuevo (incluidos los duplicados).
+  - **Existente**: archivos que se cargaron antes y que ahora se cargan de nuevo (incluidos duplicados).
     
-  - **Texto**: archivos únicos con texto.
+  - **Text**: archivos únicos con texto.
     
-  - **No texto**: vaciar archivos de texto, archivos de texto nativa vacía, los archivos que no son de texto nativos. 
+  - **No texto**: archivos de texto vacíos, archivos de texto nativos vacíos, archivos nativos que no son de texto. 
     
-  - **Duplicar**s: duplicado archivos con texto.
+  - **** S duplicados: archivos duplicados con texto.
     
-## <a name="last-process-errors"></a>Última errores de proceso
+## <a name="last-process-errors"></a>Errores del último proceso
 
-En Prepare \> proceso \> los resultados \> se muestran errores de proceso última, detalles de los errores en la última sesión o acción realizada.
+En la \> sección \> preparar \> los resultados del proceso último error, se muestran detalles de los errores de la última sesión o acción realizada.
   
 ![Errores del módulo de proceso](media/4771d0f4-4217-445a-9ba4-8b6541c5ad09.png)
   
@@ -109,5 +109,5 @@ En Prepare \> proceso \> los resultados \> se muestran errores de proceso últim
 
 [eDiscovery avanzado de Office 365](office-365-advanced-ediscovery.md)
   
-[Ejecute el módulo de proceso y carga de datos](run-the-process-module-and-load-data-in-advanced-ediscovery.md)
+[Ejecutar el módulo de proceso y cargar datos](run-the-process-module-and-load-data-in-advanced-ediscovery.md)
 

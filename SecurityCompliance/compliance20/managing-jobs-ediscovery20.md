@@ -1,12 +1,12 @@
 ---
-title: Administración de trabajos en la exhibición de documentos electrónicos avanzada (vista previa)
+title: Administrar trabajos en la exhibición avanzada de documentos electrónicos (versión preliminar)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,26 +14,26 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 493d1b6ec448f3de9b782028b903c7b290681e88
-ms.sourcegitcommit: e3ea6eb9fab1a66b499458749838fe350d43d0d4
+ms.openlocfilehash: 03165ba64ed5b75fa2d327ee798dc6a8e43fe908
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "29694806"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214990"
 ---
-# <a name="manage-jobs-in-advanced-ediscovery-preview"></a>Administración de trabajos en la exhibición de documentos electrónicos avanzada (vista previa)
+# <a name="manage-jobs-in-advanced-ediscovery-preview"></a>Administrar trabajos en la exhibición avanzada de documentos electrónicos (versión preliminar)
 
-Aquí tiene una lista de los trabajos que se realiza un seguimiento en la ficha de **trabajos** de un caso de exhibición de documentos electrónicos avanzada (vista previa).
+Esta es una lista de los trabajos de los que se realiza un seguimiento en la ficha **trabajos** de un caso en la exhibición avanzada de documentos electrónicos (versión preliminar).
 
-- Volver a indizar datos de custodia
-- Cálculo de los resultados de búsqueda
-- Preparación de la vista previa de la búsqueda
-- Agregar datos a un conjunto de trabajo
-- Agregar datos a otro conjunto de trabajo
-- Agrega datos que no sean de Office 365 a un conjunto de trabajo
+- Volver a indizar los datos del custodio
+- Estimar los resultados de la búsqueda
+- Preparación de la vista previa de búsqueda
+- Adición de datos a un conjunto de trabajo
+- Adición de datos a otro conjunto de trabajo
+- Adición de datos que no son de Office 365 a un conjunto de trabajo
 - Preparación para la resolución de errores
-- Agrega datos corregidos con pruebas para un conjunto de trabajo
-- Establece la comparación de carga
-- Etiquetado de documentos
-- Análisis que se está ejecutando
-- Preparación para la exportación de datos
+- Adición de datos corregidos a un conjunto de trabajo
+- Comparar conjuntos de carga
+- Etiquetando documentos
+- Ejecución de análisis
+- Preparación de datos para la exportación

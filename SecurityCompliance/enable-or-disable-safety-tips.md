@@ -6,70 +6,70 @@ manager: laurawi
 ms.date: 12/05/2018
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: f09668bd-fe1a-4c01-89e3-e88c370e66c7
-description: Indica cómo habilitar y deshabilitar las sugerencias de seguridad en los mensajes de correo electrónico de los administradores de Office 365 y elevación de privilegios.
-ms.openlocfilehash: 8e5d8bf1d2f831b5d74ca3accd8b434519bfeaab
-ms.sourcegitcommit: 204fb0269b5c10b63941055824e863d77e3e9b02
+description: Indica a Office 365 y a los administradores de EOP cómo habilitar y deshabilitar las sugerencias de seguridad en los mensajes de correo electrónico.
+ms.openlocfilehash: f4e85b45c1483111d9edeb39d00d3f2cbafbf3ab
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "27180860"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215560"
 ---
 # <a name="enable-or-disable-safety-tips-in-office-365"></a>Habilitar o deshabilitar las sugerencias de seguridad en Office 365
 
-Agrega Exchange Online Protection (EOP) o marcas, una seguridad sugerencia a los mensajes de correo electrónico que ofrece. Estas sugerencias de seguridad proporcionan los destinatarios con una forma rápida y visual para determinar si es un mensaje de forma segura comprobado remitente, si el mensaje se ha marcado como correo no deseado por Office 365, si el mensaje contiene algo sospechosos como un estafas de suplantación de identidad, o bien, si dispone de imágenes externas se ha bloqueado. Office 365 y los administradores de EOP independiente pueden modificar la configuración de directiva spam para habilitar o deshabilitar sugerencias de seguridad que no se muestren en el correo electrónico en Outlook y otros clientes de correo electrónico de escritorio. 
+Exchange Online Protection (EOP) agrega o marca una sugerencia de seguridad a los mensajes de correo electrónico que entrega. Estas sugerencias de seguridad proporcionan a los destinatarios una forma rápida y visual de determinar si un mensaje proviene de un remitente protegido seguro, si el mensaje ha sido marcado como correo no deseado por Office 365, si el mensaje contiene algo sospechoso, como una estafa de suplantación de identidad (phishing), o si las imágenes externas tienen se ha bloqueado. Office 365 y EOP: los administradores independientes pueden editar una configuración de directiva de correo no deseado para habilitar o deshabilitar las sugerencias de seguridad para que no se muestren en el correo electrónico en Outlook y en otros clientes de correo electrónico de escritorio. 
   
-Office 365 permite sugerencias de seguridad para la organización de forma predeterminada y se recomienda que deje de ellos habilita para ayudar a combatir los ataques de correo no deseado y suplantación de identidad. No se puede deshabilitar sugerencias de seguridad para Outlook en el web.
+Office 365 habilita sugerencias de seguridad de forma predeterminada para su organización y le recomendamos que las deje habilitadas para luchar contra el correo no deseado y los ataques de suplantación de identidad. No puede deshabilitar las sugerencias de seguridad para Outlook en la Web.
   
-Para ver ejemplos y para obtener más información acerca de la información que se muestra en sugerencias de seguridad, vea [sugerencias de seguridad en los mensajes de correo electrónico en Office 365.](safety-tips-in-office-365.md)
+Para ver ejemplos y obtener información sobre la información que se muestra en sugerencias de seguridad, vea [sugerencias de seguridad en los mensajes de correo electrónico en Office 365.](safety-tips-in-office-365.md)
   
 En este tema:
   
-- [Para habilitar o deshabilitar sugerencias de seguridad mediante el uso de la seguridad de Office 365 &amp; centro de cumplimiento](enable-or-disable-safety-tips.md#SandCCsafetytip)
+- [Para habilitar o deshabilitar las sugerencias de seguridad mediante el centro &amp; de seguridad y cumplimiento de Office 365](enable-or-disable-safety-tips.md#SandCCsafetytip)
     
-- [Para habilitar o deshabilitar sugerencias de seguridad mediante el uso de PowerShell](enable-or-disable-safety-tips.md#pshellsafetytip)
+- [Para habilitar o deshabilitar las sugerencias de seguridad con PowerShell](enable-or-disable-safety-tips.md#pshellsafetytip)
     
-## <a name="to-enable-or-disable-safety-tips-by-using-the-office-365-security-amp-compliance-center"></a>Para habilitar o deshabilitar sugerencias de seguridad mediante el uso de la seguridad de Office 365 &amp; centro de cumplimiento
+## <a name="to-enable-or-disable-safety-tips-by-using-the-office-365-security-amp-compliance-center"></a>Para habilitar o deshabilitar las sugerencias de seguridad mediante el centro &amp; de seguridad y cumplimiento de Office 365
 <a name="SandCCsafetytip"> </a>
 
 1. Vaya a [https://protection.office.com](https://protection.office.com).
     
 2. Inicie sesión en Office 365 con su cuenta profesional o educativa.
     
-3. Elija **administración de amenaza** \> **Directiva**. 
+3. Elija **** \> **Directiva**de administración de amenazas. 
     
-4. En la página **Directiva** , elija **contra correo no deseado**.
+4. En la página **Directiva** , elija **anti-spam**.
     
-    ![Esta captura de pantalla muestra cómo llegar a la página de configuración contra correo no deseado en la seguridad &amp; centro de cumplimiento.](media/b8eb2ee3-2eb1-4ea2-b138-f6d7fb2e23de.png)
+    ![En esta captura de pantalla se muestra cómo obtener acceso a la página Configuración de correo &amp; no deseado en el centro de seguridad y cumplimiento.](media/b8eb2ee3-2eb1-4ea2-b138-f6d7fb2e23de.png)
   
-5. En la página **configuración de correo no deseado** , elija la ficha **personalizado** . 
+5. En la página **configuración contra correo no deseado,** elija la pestaña **personalizado** . 
     
-    ![Esta captura de pantalla muestra la ubicación de la ficha personalizada en la página de configuración contra correo no deseado en la seguridad &amp; centro de cumplimiento.](media/1d688d23-e6f3-4de5-84a7-e8ce31786193.png)
+    ![Esta captura de pantalla muestra la ubicación de la pestaña personalizada en la página Configuración contra correo no deseado &amp; del centro de seguridad y cumplimiento.](media/1d688d23-e6f3-4de5-84a7-e8ce31786193.png)
   
-6. Si es necesario, elija el modificador de **configuración personalizada** para activar la configuración personalizada. Si el modificador de configuración personalizada está establecido en **desactivado**, no podrá modificar directivas de filtro de correo no deseado.
+6. Si es necesario, elija el modificador de **configuración personalizado** para activar la configuración personalizada. Si el modificador de configuración personalizado está **** desactivado, no podrá modificar las directivas de filtro de correo no deseado.
     
-    ![Esta captura de pantalla muestra los filtros contra correo no deseado personalizados desactivado de configuración de la directiva.](media/94f900ad-b556-4a31-a3ac-acfcd72e71b8.png)
+    ![Esta captura de pantalla muestra la configuración de directiva de filtro contra correo no deseado personalizada desactivada.](media/94f900ad-b556-4a31-a3ac-acfcd72e71b8.png)
   
-7. Expanda la directiva de correo que desea modificar y, a continuación, elija **Editar directiva**. Por ejemplo, elija la flecha hacia abajo junto a **spam predeterminada filtrar la directiva**. O bien, si lo desea, puede crear una nueva directiva mediante la opción **Agregar una directiva**.
+7. ExPanda la Directiva de correo no deseado que desea modificar y, a continuación, elija **Editar Directiva**. Por ejemplo, seleccione la flecha abajo junto a **Directiva de filtro de correo no deseado predeterminada**. O bien, si lo desea, puede crear una nueva Directiva eligiendo **Agregar una directiva**.
     
-8. Expanda acciones de **correo no deseado y masiva** . 
+8. ExPanda **correo no deseado y** acciones en masa. 
     
-9. Para habilitar sugerencias de seguridad, en la sección **Sugerencias de seguridad**, active la casilla de verificación **en** . Para deshabilitar sugerencias de seguridad, desactive la casilla de verificación **en** . 
+9. Para habilitar las sugerencias de seguridad, en **sugerencias de seguridad**, active la casilla **de verificación activado** . Para deshabilitar las sugerencias de seguridad, desactive la casilla **de verificación activado** . 
     
 10. Elija **Guardar**.
     
-## <a name="to-enable-or-disable-safety-tips-by-using-powershell"></a>Para habilitar o deshabilitar sugerencias de seguridad mediante el uso de PowerShell
+## <a name="to-enable-or-disable-safety-tips-by-using-powershell"></a>Para habilitar o deshabilitar las sugerencias de seguridad con PowerShell
 <a name="pshellsafetytip"> </a>
 
-Los administradores pueden utilizar Exchange Online PowerShell para habilitar o deshabilitar sugerencias de seguridad. Use el cmdlet Set-HostedContentFilterPolicy para habilitar o deshabilitar sugerencias de seguridad en una directiva de filtro de spam.
+Los administradores pueden usar Exchange Online PowerShell para habilitar o deshabilitar las sugerencias de seguridad. Use el cmdlet Set-HostedContentFilterPolicy para habilitar o deshabilitar las sugerencias de seguridad en una directiva de filtro de correo no deseado.
   
-1. Conectarse a Exchange Online PowerShell. Para obtener información, vea [Connect to Exchange Online PowerShell](http://go.microsoft.com/fwlink/p/?LinkId=396554).
+1. Conéctese a Exchange Online PowerShell. Para obtener más información, vea [conectarse a Exchange Online PowerShell](http://go.microsoft.com/fwlink/p/?LinkId=396554).
     
-2. Ejecute el cmdlet Set-HostedContentFilterPolicy para habilitar o deshabilitar sugerencias de seguridad:
+2. Ejecute el cmdlet Set-HostedContentFilterPolicy para habilitar o deshabilitar las sugerencias de seguridad:
     
   ```
   Set-HostedContentFilterPolicy -Identity "policy name " -InlineSafetyTipsEnabled <$true|$false>
@@ -77,29 +77,29 @@ Los administradores pueden utilizar Exchange Online PowerShell para habilitar o 
 
 Donde:
     
-  -  *nombre de la directiva* es el nombre de la directiva que desea modificar, por ejemplo **predeterminada**.
+  -  *nombre de directiva* es el nombre de la Directiva que desea modificar; por ejemplo, **default**.
     
-  -  `$true`permite sugerencias de seguridad para la directiva de filtro de spam. 
+  -  `$true`habilita las sugerencias de seguridad para la Directiva de filtro de correo no deseado. 
     
-  -  `$false`deshabilita las sugerencias de seguridad para la directiva de filtro de spam. 
+  -  `$false`deshabilita las sugerencias de seguridad para la Directiva de filtro de correo no deseado. 
     
-    Por ejemplo, para deshabilitar sugerencias de seguridad para la directiva de filtro de spam de forma predeterminada, ejecute el siguiente comando:
+    Por ejemplo, para deshabilitar las sugerencias de seguridad para la Directiva de filtro de correo no deseado predeterminada, ejecute el siguiente comando:
     
   ```
   PS C:\> Set-HostedContentFilterPolicy -Identity "default" -InlineSafetyTipsEnabled $false
   ```
 
-Para obtener más información acerca de este cmdlet, vea [Set-HostedContentFilterPolicy](https://technet.microsoft.com/library/jj200781.aspx).
+Para obtener más información sobre este cmdlet, vea [set-HostedContentFilterPolicy](https://technet.microsoft.com/library/jj200781.aspx).
     
 ## <a name="still-need-help"></a>¿Aún necesita ayuda?
 <a name="pshellsafetytip"> </a>
 
-Si deshabilita las sugerencias de seguridad, pero son todavía los ver en los mensajes de correo electrónico, compruebe estas cosas:
+Si ha deshabilitado las sugerencias de seguridad, pero sigue apareciendo en los mensajes de correo electrónico, compruebe lo siguiente:
   
-- No se puede deshabilitar sugerencias de seguridad para Outlook en el web. Intente ver el correo electrónico mismo en otro cliente, como Outlook.
+- No puede deshabilitar las sugerencias de seguridad para Outlook en la Web. Pruebe a ver el mismo correo electrónico en otro cliente, como Outlook.
     
-- Sugerencias de seguridad se encuentran en de forma predeterminada para cada uno que usa EOP, esto incluye todas las personas que tiene Office 365. Con el fin de deshabilitar sugerencias de seguridad no se muestren en el correo electrónico, debe deshabilitar mediante una directiva de filtro de spam, tal como se describe en este tema. Una vez que ha configurado la directiva, asegúrese de que esté habilitado. Para obtener información acerca de cómo habilitar directivas de filtro de correo no deseado, consulte [configurar sus directivas de filtro de correo no deseado](https://technet.microsoft.com/library/jj200684.aspx).
+- Las sugerencias de seguridad están habilitadas de forma predeterminada para cada uno que usa EOP, esto incluye a todos los usuarios que tienen Office 365. Para deshabilitar las sugerencias de seguridad y que no se muestren en el correo electrónico, debe deshabilitarlas mediante una directiva de filtro de correo no deseado, como se describe en este tema. Una vez configurada la Directiva, asegúrese de que está habilitada. Para obtener información sobre cómo habilitar las directivas de filtro de correo no deseado, consulte [configurar las directivas de filtro de correo no deseado](https://technet.microsoft.com/library/jj200684.aspx).
     
-Para que obtener más métodos combatir el correo no deseado y suplantación de identidad, consulte [Protección contra correo no deseado de Office 365 correo](anti-spam-protection.md).
+Para obtener más información sobre cómo combatir el correo no deseado y el phishing, consulte [Office 365 email anti-spam protection](anti-spam-protection.md).
   
 

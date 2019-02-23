@@ -6,178 +6,178 @@ manager: laurawi
 ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 3ab1e2c3-28cf-4bf5-b0a8-c0222f32bdf5
-description: 'Obtenga información sobre cómo ver e interpretar los resultados para problemas de casos de exhibición de documentos electrónicos avanzada de Office 365 y estado de recursos de aprendizaje de la relevancia.  '
-ms.openlocfilehash: a19f7eaabf5dc15eefaa7209ded8261020d0d557
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: 'Obtenga información sobre cómo ver e interpretar el estado de aprendizaje de relevancia y los resultados de los problemas de caso en eDiscovery avanzado de Office 365.  '
+ms.openlocfilehash: 8bdfd2ddb88215b7217d1cc4cdacf2e775a0d977
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22536851"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218180"
 ---
 # <a name="track-relevance-analysis-in-office-365-advanced-ediscovery"></a>Seguimiento del análisis de relevancia en eDiscovery avanzado de Office 365
 
 > [!NOTE]
-> Exhibición de documentos electrónicos avanzada requiere un E3 de Office 365 con el complemento de cumplimiento avanzadas o una suscripción E5 para su organización. Si no tiene ese plan y desea probar avanzada exhibición de documentos electrónicos, puede [registrarse y obtener una versión de prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
-En Avanzadas exhibición de documentos electrónicos, la ficha seguimiento de la relevancia muestra la validez de la formación de relevancia realizada en la ficha etiqueta calculada e indica el siguiente paso a tomar en el proceso de entrenamiento iterativo en la relevancia. 
+En la exhibición avanzada de documentos electrónicos, la pestaña seguimiento de relevancia muestra la validez calculada del entrenamiento de relevancia realizado en la pestaña etiqueta e indica el siguiente paso que debe realizar en el proceso de entrenamiento iterativo en relevancia. 
   
-## <a name="tracking-relevance-training-status"></a>Seguimiento del estado de recursos de aprendizaje de relevancia
+## <a name="tracking-relevance-training-status"></a>Seguimiento del estado del entrenamiento de relevancia
 
-1. Ver los detalles siguientes de la relevancia de seguimiento para los problemas de mayúsculas y minúsculas, tal como se muestra en el siguiente ejemplo de un cuadro de diálogo **nombre del problema** que aparece a continuación. 
+1. Vea los siguientes detalles en el seguimiento de relevancia para los problemas de casos, como se muestra en el siguiente ejemplo de un cuadro de diálogo de **nombre de problema** a continuación. 
     
-  - **Evaluación**: este indicador de progreso muestra en qué medida la relevancia de recursos de aprendizaje a este punto se realizan ha logrado el destino de evaluación en términos de margen de error. También se muestra la flexibilidad de los resultados de aprendizaje de la relevancia. 
+  - **Evaluación**: este indicador de progreso muestra el grado en el que el entrenamiento de relevancia realizado hasta este punto ha logrado el objetivo de la evaluación en cuanto al margen de error. También se muestra la riqueza de los resultados de entrenamiento de relevancia. 
     
-  - **Recursos de aprendizaje**: esta pantalla progreso codificada por colores de indicador y de información sobre herramientas indica el aprendizaje de la relevancia de resultados de estabilidad y una escala numérica que muestra el número de muestras de aprendizaje de la relevancia etiquetados para cada problema. El experto supervisa el progreso del proceso de aprendizaje de la relevancia iterativo. 
+  - **Aprendizaje**: este indicador de progreso codificado por colores y muestra de la información sobre herramientas indica la estabilidad de los resultados del entrenamiento de relevancia y una escala numérica que muestra el número de muestras de aprendizaje de relevancia etiquetadas para cada problema. El experto supervisa el progreso del proceso de entrenamiento de relevancia iterativa. 
     
-  - **Cálculo por lotes**: este indicador de progreso proporciona información acerca de la finalización de cálculo por lotes.
+  - **Cálculo del lote**: este indicador de progreso proporciona información acerca de la finalización del cálculo por lotes.
     
-  - **Siguiente paso**: muestra la recomendación para el siguiente paso que se debe realizar. 
+  - **Siguiente paso**: muestra las recomendaciones para el siguiente paso que se debe realizar. 
     
-    En el ejemplo, se muestra una evaluación completada correctamente por un problema, indicada por el indicador de progreso de color completado y la marca de verificación. Etiquetado está en curso, pero el caso todavía se considera inestable (estado de estabilidad también se muestra en una información sobre herramientas). La recomendación de paso siguiente es "formación". 
+    En el ejemplo, se muestra una evaluación completada correctamente de un problema, indicada por el indicador de progreso de color completado y la marca de verificación. Se está realizando un etiquetado, pero el caso se considera inestable (el estado de estabilidad también se muestra en un Consejo de herramientas). La recomendación de paso siguiente es "Training". 
     
     ![Formación del seguimiento de relevancia paso 1](media/a00fe607-680a-48eb-9d61-4565319f7ab6.png)
   
-    La vista expandida muestra opciones e información adicional. El margen de error actual que se muestra es el margen de error de la recuperación en el estado actual de evaluación, dado los archivos existentes de evaluación (ya etiquetado).
+    La vista expandida muestra información adicional y opciones. El margen de error actual mostrado es el margen de error de la recuperación en el estado actual de la evaluación, dados los archivos de evaluación existentes (ya etiquetados).
     
     > [!NOTE]
-    >  La fase de evaluación puede omitirse desactivando la casilla de verificación **evaluación** por el problema y, a continuación, para "todos los problemas". Sin embargo, como resultado, habrá ningún estadísticas para este problema. > Desactivando la casilla de verificación de **evaluación** sólo puede realizarse antes de realiza la evaluación. Cuando hay varios problemas en un caso, se omitirá el evaluación sólo si la casilla de verificación está desactivada por cada problema 
+    >  La fase de evaluación se puede omitir desactivando la casilla de verificación **evaluación** por problema y, a continuación, de "todos los problemas". Sin embargo, como resultado, no habrá estadísticas para este problema. > desactivar la casilla de verificación **evaluación** solo puede realizarse antes de que se realice la evaluación. Cuando hay varios problemas en un caso, la evaluación se omite solo si la casilla de verificación está desactivada para cada problema 
   
-    Cuando no se completa la evaluación con el primer ejemplo de conjunto de archivos, evaluación podría ser el siguiente paso para etiquetar los archivos más. 
+    Cuando la evaluación no se completa con el primer conjunto de ejemplos de archivos, la evaluación podría ser el paso siguiente para etiquetar más archivos. 
     
-    En **la relevancia** \> **pista**, el indicador de progreso de aprendizaje y la información sobre herramientas indican el número estimado de ejemplos adicionales necesarios para llegar a la estabilidad. Esta estimación proporciona instrucciones para los recursos de aprendizaje adicionales necesitado.
+    En el **seguimiento**de **relevancia** \> , el indicador de progreso de formación y la información sobre herramientas indican el número estimado de muestras adicionales necesarias para alcanzar la estabilidad. Esta estimación proporciona una pauta para la formación adicional necesaria.
     
     ![Formación del seguimiento de relevancia](media/98dbc3f5-5238-4d73-9f88-1aa4d77ea729.png)
   
-2. Cuando esté listo etiquetado y si necesita continuar la formación, haga clic en **recursos de aprendizaje**. Otro conjunto de archivos de ejemplo se genera a partir del archivo cargado establecido para recursos de aprendizaje adicionales. A continuación, se devuelven a la ficha de etiqueta para etiquetar y formar a más archivos.
+2. Cuando haya terminado de realizar el etiquetado y tenga que continuar con la formación, haga clic en **entrenamiento**. Se genera otro conjunto de archivos de ejemplo a partir del conjunto de archivos cargados para obtener más formación. A continuación, se vuelve a la pestaña etiqueta para etiquetar y entrenar a más archivos.
     
-### <a name="reaching-stable-training-levels"></a>Alcanzar los niveles de formación estable
+### <a name="reaching-stable-training-levels"></a>Alcanzar niveles de formación estables
 
-Después de que los archivos de evaluación han alcanzado un nivel estable de formación, exhibición de documentos electrónicos avanzada está preparada para cálculo por lotes.
+Una vez que los archivos de evaluación alcanzan un nivel de formación estable, la exhibición avanzada de documentos electrónicos está lista para el cálculo por lotes.
   
 > [!NOTE]
-> Normalmente, después de tres estable ejemplos de aprendizaje, el siguiente paso es "Cálculo por lotes". Puede haber excepciones, por ejemplo, cuando se produjeron cambios para el etiquetado de los archivos de ejemplos anteriores o cuando se han agregado los archivos de inicialización. 
+> Normalmente, después de tres ejemplos de formación estables, el siguiente paso es "cálculo por lotes". Puede haber excepciones, por ejemplo, cuando se han producido cambios en el etiquetado de archivos desde ejemplos anteriores o cuando se han agregado archivos de inicialización. 
   
 ### <a name="performing-batch-calculation"></a>Realizar el cálculo por lotes
 
-Cálculo por lotes se ejecuta como el siguiente paso después de que se haya completado correctamente aprendizaje (cuando un estado estable aprendizaje se muestra en la barra de progreso, una marca de verificación y un estado estable en la información sobre herramientas.) Cálculo del lote aplica el conocimiento adquirido durante el curso de la relevancia para la población de todo el archivo, para evaluar la relevancia de los archivos y para asignar las puntuaciones de la relevancia.
+El cálculo del lote se ejecuta como el paso siguiente una vez que el entrenamiento se completa correctamente (cuando la barra de progreso muestra un estado de entrenamiento estable, una marca de verificación y un estado estable en la información sobre herramientas). El cálculo del lote aplica los conocimientos adquiridos durante el entrenamiento de relevancia a toda la población de archivos, para evaluar la relevancia de los archivos y asignar los resultados de relevancia.
   
-Cuando hay más de un problema, el cálculo de proceso por lotes se realiza por el problema. Durante el cálculo por lotes, se supervisa el progreso durante el procesamiento de todos los archivos. 
+Cuando hay más de un problema, el cálculo del lote se realiza por problema. Durante el cálculo por lotes, el progreso se supervisa mientras se procesan todos los archivos. 
   
-En este caso, el siguiente paso recomendado es "None", que indica que no hay recursos de aprendizaje de la relevancia iterativo adicionales es necesario en este momento. La siguiente fase es la **la relevancia de \> decidir** ficha. 
+Aquí, el siguiente paso recomendado es "ninguno", que indica que no se requiere ningún aprendizaje de relevancia iterativo adicional en este punto. La siguiente fase es la **pestaña \> decisión de relevancia** . 
   
-Si desea importar nuevos archivos después del cálculo por lotes, el administrador puede agregar los archivos importados a una carga de nuevo.
-  
-> [!NOTE]
-> Si hace clic en **Cancelar** durante el cálculo por lotes, guarda el proceso de lo que ya se ha ejecutado. Si ejecuta el nuevo cálculo de proceso por lotes, el proceso continuará desde el último punto ejecutado. 
-  
-### <a name="assessing-tagging-consistency"></a>Evaluación de coherencia etiquetas temáticas
-
-Si hay incoherencias en archivo etiquetado, puede afectar el análisis. La exhibición de documentos electrónicos avanzada etiquetado proceso de coherencia se puede usar cuando los resultados no son óptimos o coherencia está en duda. Se devuelve una lista de archivos de forma incoherente con etiqueta posibles, y pueda revisarse y volver a etiquetados, según sea necesario.
+Si desea importar nuevos archivos tras el cálculo por lotes, el administrador puede Agregar los archivos importados a una nueva carga.
   
 > [!NOTE]
-> Después de siete o más redondea aprendizaje siguiente evaluación, etiquetado coherencia puede verse en **la relevancia** \> **pista** \> **problema** \> **resultados detallados** \> **curso de formación**. Esta revisión se realiza para un problema a la vez. 
+> Si hace clic en **Cancelar** durante el cálculo por lotes, el proceso guarda lo que ya se ha ejecutado. Si vuelve a ejecutar el cálculo por lotes, el proceso continuará desde el último punto ejecutado. 
   
-1. En **relevancia \> pista**, expanda la fila de un problema.
-    
-2. A la derecha del **siguiente paso**, haga clic en **Modificar**.
-    
-3. Seleccione **las incoherencias de etiqueta** como la opción **siguiente paso** , después de siete ejemplos de aprendizaje y haga clic en **Aceptar**.
-    
-4. Seleccione **las incoherencias de etiqueta**. Mostrar una lista de las incoherencias para volver a marcar cuando sea necesario, abre la ficha de la **etiqueta** . 
-    
-5. Haga clic en **calcular** para enviar los cambios. El paso siguiente después de etiquetado incoherencias es "formación". 
-    
-## <a name="viewing-and-using-relevance-results"></a>Ver y usar los resultados de la relevancia
+### <a name="assessing-tagging-consistency"></a>Evaluación de la coherencia de etiquetado
 
-En el **la relevancia \> pista** ficha, expanda la fila de un problema y junto a los **resultados detallados**, haga clic en **Ver**. Los paneles de resultados detallados se muestran, como se muestra y se describe a continuación.
+Si hay incoherencias en el etiquetado de archivos, puede afectar al análisis. El proceso de coherencia de etiquetado de exhibición de documentos electrónicos avanzado puede usarse cuando los resultados no son óptimos o la coherencia está en duda. Se devuelve una lista de los archivos etiquetados que pueden ser incoherentes y se pueden revisar y volver a etiquetar, según sea necesario.
+  
+> [!NOTE]
+> Después de siete o más formación redondeos tras la evaluación, la coherencia de etiquetado se puede ver en el **seguimiento** \> **** \> de **relevancia** \> **progreso de aprendizaje**de **resultados** \> detallados. Esta revisión se realiza por un problema a la vez. 
+  
+1. En **el \> seguimiento de relevancia**, expanda la fila de un problema.
+    
+2. A la derecha del **paso siguiente**, haga clic en **modificar**.
+    
+3. Seleccione incoherencias de **etiquetas** como la opción de **paso siguiente** , después de siete ejemplos de aprendizaje y haga clic en **Aceptar**.
+    
+4. Seleccione incoherencias de **etiqueta**. La ficha **etiqueta** se abre y muestra una lista de las incoherencias que se deben volver a etiquetar según sea necesario. 
+    
+5. Haga clic en **calcular** para enviar los cambios. El paso siguiente tras las incoherencias de etiquetado es "Training". 
+    
+## <a name="viewing-and-using-relevance-results"></a>Visualización y uso de los resultados de relevancia
+
+En la **pestaña \> seguimiento de relevancia** , expanda la fila de un problema y, junto a **resultados**detallados, haga clic en **Ver**. Se mostrarán los paneles de resultados deTallados, tal y como se describe a continuación.
   
 ![Resultados detallados de la formación de relevancia](media/495c04a9-ed1e-4355-8cab-c14270ca2bbb.png)
   
-### <a name="tagging-summary"></a>Resumen de las etiquetas temáticas
+### <a name="tagging-summary"></a>Resumen de etiquetación
 
- En el ejemplo que se muestra a continuación, el **etiquetado de resumen** muestra los totales de cada uno de evaluación, formación y etiquetar los procesos de archivo puesta al día. 
+ En el ejemplo que se muestra a continuación, el **Resumen de etiquetado** muestra los totales de cada proceso de etiquetado de archivos de evaluación, formación y captura. 
   
 ![Resumen de etiquetado del seguimiento de relevancia](media/0ec906fc-bc84-4245-a964-fb3ca37891db.png)
   
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
-Una palabra clave es una cadena única, word, frase o secuencia de palabras en un archivo identificado por avanzada exhibición de documentos electrónicos como un indicador de si un archivo es relevante significativo. Lista de las columnas "Include" palabra clave y pesos en archivos etiquetados como pertinente y las columnas "Excluir" se enumeran las palabras clave y pesos en archivos etiquetados como no relevantes.
+Una palabra clave es una cadena única, palabra, frase o secuencia de palabras en un archivo identificado por Advanced eDiscovery como un indicador significativo de si un archivo es relevante. La palabra clave "include" de la lista de columnas y los pesos en archivos etiquetados como relevantes, y las columnas "excluir" enumeran palabras clave y pesos en archivos etiquetados como no relevantes.
   
-Exhibición de documentos electrónicos avanzada asigna palabras clave positivo o negativo los valores de weight. Cuanto mayor sea el peso, mayor será la probabilidad de que un archivo en el que aparece la palabra clave se asigna una puntuación más alta de la relevancia durante el cálculo de lote. 
+La exhibición avanzada de documentos electrónicos asigna valores de peso de palabras clave negativas o positiva. Cuanto mayor sea el peso, mayor será la probabilidad de que un archivo en el que aparezca la palabra clave tenga una puntuación de relevancia superior durante el cálculo del lote. 
   
-La lista de exhibición de documentos electrónicos avanzada de palabras clave puede utilizarse para completar una lista creada por un experto o como una comprobación de validez indirecta en cualquier momento en el archivo de proceso de revisión.
+La lista de palabras clave de eDiscovery avanzada se puede usar para complementar una lista creada por un experto o como comprobación indirecta de validez en cualquier punto del proceso de revisión de archivos.
   
-### <a name="training-progress"></a>Curso de formación
+### <a name="training-progress"></a>Progreso de formación
 
-El panel **Progreso del aprendizaje** incluye un aprendizaje progreso gráfico y la calidad de visualización de indicador, tal como se muestra en el ejemplo siguiente. 
+El panel **progreso del entrenamiento** incluye un gráfico de progreso de formación y una visualización del indicador de calidad, como se muestra en el ejemplo siguiente. 
   
 ![Progreso de formación del seguimiento de relevancia](media/8a5089f5-a162-4246-ae09-bc1921859860.png)
   
- **Indicador de calidad de recursos de aprendizaje**: muestra la clasificación de la coherencia de las etiquetas temáticas de la siguiente manera:
+ **Indicador de calidad de formación**: muestra la clasificación de la coherencia de etiquetado de la siguiente manera:
   
-- **Buena**: los archivos se etiquetan de forma coherente. (Muestra de luz verde)
+- **Bueno**: los archivos se etiquetan de forma coherente. (Luz verde mostrada)
     
-- **Medio**: algunos archivos se pueden etiquetar de forma incoherente. (Muestra amarillo claro)
+- **Media**: es posible que algunos archivos se etiqueten de manera incoherente. (Luz amarilla mostrada)
     
-- **Advertencia**: es posible que se etiquetados muchos archivos de forma incoherente. (Muestra de luz roja)
+- **ADVERTENCIA**: es posible que muchos archivos se etiqueten de manera incoherente. (Luz roja mostrada)
     
- **Gráfico de progreso de recursos de aprendizaje**: muestra el grado de estabilidad de aprendizaje de la relevancia después de un número de ciclos de aprendizaje de la relevancia en comparación con el valor de medida de F. Tal y como se mueva desde la izquierda a la derecha en el gráfico, se restringe el intervalo de confianza y se usa junto con la medida de F, mediante la exhibición de documentos electrónicos avanzada la relevancia para determinar la estabilidad cuando el aprendizaje de la relevancia de resultados están optimizados.
+ **Gráfico de progreso de formación**: muestra el grado de estabilidad del aprendizaje de relevancia después de varios ciclos de aprendizaje de relevancia en comparación con el valor de la medida de F. A medida que nos desplazamos de izquierda a derecha en el gráfico, el intervalo de confianza se reduce y se usa, junto con la medida F, por relevancia de eDiscovery avanzado para determinar la estabilidad cuando se optimizan los resultados de la formación de relevancia.
   
 > [!NOTE]
-> La relevancia usa F2, una métrica F medida donde recuperación recibe dos veces mucho peso como precisión. Para los casos con flexibilidad alta (más del 25%), usos de la relevancia F1 (proporción de 1:1). La proporción de F medida se puede configurar en **el programa de instalación de la relevancia** \> **Configuración avanzada**. 
+> Relevancia usa F2, una métrica de F-Measure donde la recuperación recibe dos veces el peso de la precisión. Para los casos con alta riqueza (más de 25%), relevancia usa F1 (proporción de 1:1). La relación de medida F se puede configurar en la **Configuración avanzada**de la **configuración** \> de relevancia. 
   
-### <a name="batch-calculation-results"></a>Resultados de los cálculos por lotes
+### <a name="batch-calculation-results"></a>Resultados del cálculo por lotes
 
-El panel de **resultados de los cálculos por lotes** incluye el número de archivos que se han obtenido de la relevancia, como se indica a continuación: 
+El panel de **resultados de cálculo por lotes** incluye el número de archivos que se han puntuado para la relevancia, de la siguiente manera: 
   
 - **Success**
     
-- **Vacío**: no contiene texto, por ejemplo, sólo espacios/fichas
+- **Empty**: no contiene texto, por ejemplo, solo espacios/tabulaciones
     
 - **Error**: debido a un tamaño excesivo o no se pudo leer
     
-- **Omitido**: debido a un tamaño excesivo
+- **Ignorado**: debido a un tamaño excesivo
     
-- **Nebulous**: contiene texto sin sentido o no relevantes para el problema de características
+- **Nebulous**: contiene texto sin significado o no tiene características relevantes para el problema
     
 > [!NOTE]
-> Vacío, error, Ignored o Nebulous recibirá una puntuación de relevancia de -1. 
+> Empty, failed, Ignored o Nebulous recibirá una puntuación de relevancia de-1. 
   
-### <a name="training-statistics"></a>Estadísticas de recursos de aprendizaje
+### <a name="training-statistics"></a>Estadísticas de formación
 
-El panel de **estadísticas de recursos de aprendizaje** muestra estadísticas y gráficos basados en los resultados de aprendizaje de la relevancia de exhibición de documentos electrónicos avanzadas. 
+El panel de **estadísticas de formación** muestra las estadísticas y los gráficos basados en los resultados de la formación avanzada de relevancia de eDiscovery. 
   
 ![Estadísticas de formación del seguimiento de relevancia](media/9a07740e-20d3-49fb-b9b9-84265e0a1836.png)
   
 Esta vista muestra lo siguiente:
   
-- **Proporción de retirada de revisión**: comparación de resultados en función de la relevancia de puntuación en una revisión teoría lineal. Recuperación es estimada dado el conjunto de tamaño del conjunto de revisión.
+- **Tasa de revisión-RECALL**: comparación de los resultados de acuerdo con los resultados de relevancia en una revisión hipotéticamente lineal. La recuperación se calcula según el conjunto Review size set.
     
-- **Parámetros**: acumulativa calcula las estadísticas correspondientes a la revisión que se establece en relación con la población de archivo para el caso de todo.
+- **** Parameters: estadísticas calculadas acumuladas relativas a la revisión establecida en relación con el llenado de archivos para todo el caso.
     
-- **Revisión**: porcentaje de los archivos para revisar basándose en este límite.
+- **Revisión**: porcentaje de archivos que se van a revisar en función de este límite.
     
-- **Recuerde**: porcentaje de pertinente archivos en el conjunto de revisión. 
+- **RECALL**: porcentaje de archivos relevantes en el conjunto de revisión. 
     
-- **Distribución por puntuación de relevancia**: los archivos en la pantalla gris oscuro a la izquierda están por debajo de la puntuación de corte. Una información sobre herramientas muestra la puntuación de relevancia y el porcentaje de archivos relacionado en el archivo de revisión que se establece en relación con el total de archivos.
+- **Distribución por puntuación de relevancia**: los archivos en la pantalla gris oscuro a la izquierda están por debajo de la puntuación límite. Una información sobre herramientas muestra la puntuación de relevancia y el porcentaje relacionado de los archivos en el archivo de revisión establecido en relación con el total de archivos.
     
 ## <a name="see-also"></a>Vea también
 
 [eDiscovery avanzado de Office 365](office-365-advanced-ediscovery.md)
   
-[Evaluación de descripción en la relevancia](assessment-in-relevance-in-advanced-ediscovery.md)
+[Descripción de la evaluación en relevancia](assessment-in-relevance-in-advanced-ediscovery.md)
   
-[Realizando y revisión de evaluación](tagging-and-assessment-in-advanced-ediscovery.md)
+[Realización y revisión de la evaluación](tagging-and-assessment-in-advanced-ediscovery.md)
   
-[Realización de aprendizaje de relevancia](tagging-and-relevance-training-in-advanced-ediscovery.md)
+[Realizar entrenamiento de relevancia](tagging-and-relevance-training-in-advanced-ediscovery.md)
   
-[En función de los resultados de la toma de decisiones](decision-based-on-the-results-in-advanced-ediscovery.md)
+[Toma de decisiones basándose en los resultados](decision-based-on-the-results-in-advanced-ediscovery.md)
   
-[Las pruebas de análisis de la relevancia](test-relevance-analysis-in-advanced-ediscovery.md)
+[Prueba del análisis de relevancia](test-relevance-analysis-in-advanced-ediscovery.md)
 

@@ -1,25 +1,25 @@
 ---
-title: Identificador de número de seguridad Social de la UE o equivalente
+title: Número de la seguridad social de la UE o identificador equivalente
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: 8/17/2018
 ms.audience: Admin
 ms.topic: reference
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 1fabd341-e594-4bfe-961c-62aa82893f60
-description: En este tema se muestra lo que busca una directiva de (DLP) de prevención de pérdida de datos cuando detecte el tipo de información confidencial del número de seguridad Social de la UE o identificador equivalente. Este tipo de información confidencial define diferentes patrones, palabras clave y otras pruebas para cada país.
-ms.openlocfilehash: 6f1027dcfb648ed937b8180d74d4bc6348dab650
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: En este tema se muestra qué busca una directiva de prevención de pérdida de datos (DLP) cuando detecta el número de la seguridad social de la UE o el tipo de información confidencial del identificador equivalente. Este tipo de información confidencial define distintos patrones, palabras clave y otras pruebas para cada país.
+ms.openlocfilehash: abcefb6930e9c02d2f32d84b65accfecf1e20d95
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22536077"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216530"
 ---
-# <a name="eu-social-security-number-or-equivalent-id"></a>Identificador de número de seguridad Social de la UE o equivalente
+# <a name="eu-social-security-number-or-equivalent-id"></a>Número de la seguridad social de la UE o identificador equivalente
 
-En este tema se muestra lo que busca una directiva de (DLP) de prevención de pérdida de datos cuando detecte el tipo de información confidencial de la UE número de seguridad Social (SSN) o identificador equivalente. Este tipo de información confidencial define diferentes patrones, palabras clave y otras pruebas para cada país.
+En este tema se muestra qué busca una directiva de prevención de pérdida de datos (DLP) cuando detecta el tipo de información confidencial del número de la seguridad social (SSN) o del identificador equivalente de la UE. Este tipo de información confidencial define distintos patrones, palabras clave y otras pruebas para cada país.
   
 ## <a name="austria"></a>Austria
 
@@ -31,11 +31,11 @@ En este tema se muestra lo que busca una directiva de (DLP) de prevención de p�
 
 10 dígitos:
   
--  Tres dígitos que se corresponden con un número de serie 
+-  Tres dígitos que corresponden a un número de serie 
     
-- Dígito de un control
+- Un dígito de control
     
-- Seis dígitos que se corresponden con la fecha de nacimiento (DDMMAA)
+- Seis dígitos que corresponden a la fecha de nacimiento (DDMMAA)
     
 ### <a name="checksum"></a>Suma de comprobación
 
@@ -47,7 +47,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
   
 - La función `Func_austria_eu_ssn_or_equivalent` busca contenido que coincide con el patrón. 
     
-- Una palabra clave de `Keywords_austria_eu_ssn_or_equivalent` se encuentra. 
+- Se encuentra una `Keywords_austria_eu_ssn_or_equivalent` palabra clave de. 
     
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
   
@@ -66,11 +66,11 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywordsaustriaeussnorequivalent"></a>Keywords_austria_eu_ssn_or_equivalent
 
-seguridad social no
+n.º de seguridad social
   
 social security number
 
@@ -80,21 +80,21 @@ social security code
   
 número de seguro
   
-ssn austriaco
+SSN austriaco
   
-ssn #
+SSN
   
-ssn
+SSN
   
 código de seguro
   
-código seguro #
+número de código de seguro
   
 socialsecurityno #
   
 sozialversicherungsnummer
   
-Soziale sicherheit kein
+Soziale Sicherheit kein
   
 versicherungsnummer
   
@@ -102,7 +102,7 @@ versicherungsnummer
 
 ### <a name="format"></a>Formato
 
-11 dígitos sin espacios o delimitadores
+11 dígitos sin espacios ni delimitadores
   
 ### <a name="pattern"></a>Patrón
 
@@ -118,7 +118,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
   
 - La función `Func_belgium_eu_ssn_or_equivalent` busca contenido que coincide con el patrón. 
     
-- Una palabra clave de `Keywords_belgium_eu_ssn_or_equivalent` se encuentra. 
+- Se encuentra una `Keywords_belgium_eu_ssn_or_equivalent` palabra clave de. 
     
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
   
@@ -137,7 +137,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywordsbelgiumeussnorequivalent"></a>Keywords_belgium_eu_ssn_or_equivalent
 
@@ -150,15 +150,15 @@ social security number
   
 nationalnumber #
   
-ssn #
+SSN
   
-ssn
+SSN
   
 nationalnumber
   
-bnn #
+BNN #
   
-bnn
+BNN
   
 número de identificación personal
   
@@ -169,9 +169,9 @@ numéro nacional
 numéro de sécurité
 
   
-d. numéro' proceder
+numéro d'assuré
   
-por parte nacional
+Nacional del identificador
   
 identifiantnational #
   
@@ -181,7 +181,7 @@ numéronational #
 
 ### <a name="format"></a>Formato
 
-11 dígitos sin espacios y los delimitadores
+11 dígitos sin espacios y delimitadores
   
 ### <a name="pattern"></a>Patrón
 
@@ -189,7 +189,7 @@ numéronational #
   
 -  Diez dígitos 
     
-- Dígito de un control
+- Un dígito de control
     
 ### <a name="checksum"></a>Suma de comprobación
 
@@ -201,7 +201,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
   
 - La función `Func_croatia_eu_ssn_or_equivalent` busca contenido que coincide con el patrón. 
     
-- Una palabra clave de `Keywords_croatia_eu_ssn_or_equivalent` se encuentra. 
+- Se encuentra una `Keywords_croatia_eu_ssn_or_equivalent` palabra clave de. 
     
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
   
@@ -220,13 +220,13 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywordscroatiaeussnorequivalent"></a>Keywords_croatia_eu_ssn_or_equivalent
 
 número de identificación personal
   
-número de ciudadanos maestra
+número de ciudadano principal
   
 número de identificación nacional
   
@@ -235,25 +235,25 @@ social security number
   
 nationalnumber #
   
-ssn #
+SSN
   
-ssn
+SSN
   
 nationalnumber
   
-bnn #
+BNN #
   
-bnn
+BNN
   
 número de identificación personal
   
 personalidnumber #
   
-oib
+OIB
   
 osobni identifikacijski broj
   
-## <a name="czech-republic"></a>República Checa
+## <a name="czech-republic"></a>Chequia
 
 ### <a name="format"></a>Formato
 
@@ -263,13 +263,13 @@ Diez dígitos y una barra diagonal inversa en el patrón especificado
 
 Diez dígitos y una barra diagonal inversa:
   
-- Seis dígitos que se corresponden con la fecha de nacimiento (AAMMDD): 
+- Seis dígitos que corresponden a la fecha de nacimiento (AAMMDD): 
     
 - Una barra diagonal inversa
     
-- Tres dígitos que se corresponden con un número de serie que separa a las personas nacidas en la misma fecha
+- Tres dígitos que corresponden a un número de serie que separa a los empleados nacidos en la misma fecha.
     
-- Dígito de un control
+- Un dígito de control
     
 ### <a name="checksum"></a>Suma de comprobación
 
@@ -281,7 +281,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
   
 - La función `Func_czech_republic_eu_ssn_or_equivalent` busca contenido que coincide con el patrón. 
     
-- Una palabra clave de `Keywords_czech_republic_eu_ssn_or_equivalent` se encuentra. 
+- Se encuentra una `Keywords_czech_republic_eu_ssn_or_equivalent` palabra clave de. 
     
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
   
@@ -300,7 +300,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywordsczechrepubliceussnorequivalent"></a>Keywords_czech_republic_eu_ssn_or_equivalent
 
@@ -315,9 +315,9 @@ social security number
   
 nationalnumber #
   
-ssn #
+SSN
   
-ssn
+SSN
   
 número nacional
   
@@ -341,11 +341,11 @@ Diez dígitos y un guión en el patrón especificado
 
 Diez dígitos y un guión:
   
-- Seis dígitos que se corresponden con la fecha de nacimiento (DDMMAA) 
+- Seis dígitos que corresponden a la fecha de nacimiento (DDMMAA) 
     
 - Un guión 
     
-- Cuatro dígitos que se corresponden con un número de secuencia
+- Cuatro dígitos que corresponden a un número de secuencia
     
 ### <a name="checksum"></a>Suma de comprobación
 
@@ -357,7 +357,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
   
 - La función `Func_denmark_eu_ssn_or_equivalent` busca contenido que coincide con el patrón. 
     
-- Una palabra clave de `Keywords_denmark_eu_ssn_or_equivalent` se encuentra. 
+- Se encuentra una `Keywords_denmark_eu_ssn_or_equivalent` palabra clave de. 
     
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
   
@@ -376,7 +376,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywordsdenmarkeussnorequivalent"></a>Keywords_denmark_eu_ssn_or_equivalent
 
@@ -389,9 +389,9 @@ social security number
   
 nationalnumber #
   
-ssn #
+SSN
   
-ssn
+SSN
   
 número nacional
   
@@ -399,7 +399,7 @@ número de identificación personal
   
 personalidnumber #
   
-rcp nummer
+CPR-Nummer
   
 personnummer
   
@@ -407,21 +407,21 @@ personnummer
 
 ### <a name="format"></a>Formato
 
-Una combinación de caracteres de 11 en el formato especificado
+Una combinación de 11 caracteres en el formato especificado
   
 ### <a name="pattern"></a>Patrón
 
-Una combinación de caracteres de 11 en el formato especificado:
+Una combinación de 11 caracteres en el formato especificado:
   
 -  Seis dígitos 
     
-- Una instancia de uno de los siguientes:
+- Una instancia de una de las siguientes opciones:
     
-  - Además de símbolo
+  - Símbolo más
     
-  - Signo menos
+  - Símbolo menos
     
-  - La letra "A" (no distingue mayúsculas de minúsculas)
+  - La letra "A" (sin distinción entre mayúsculas y minúsculas)
     
 - Tres dígitos
     
@@ -437,7 +437,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
   
 - La función `Func_finland_eu_ssn_or_equivalent` busca contenido que coincide con el patrón. 
     
-- Una palabra clave de `Keywords_finland_eu_ssn_or_equivalent` se encuentra. 
+- Se encuentra una `Keywords_finland_eu_ssn_or_equivalent` palabra clave de. 
     
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
   
@@ -456,7 +456,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywordsfinlandeussnorequivalent"></a>Keywords_finland_eu_ssn_or_equivalent
 
@@ -467,19 +467,19 @@ identificador personal
   
 número de identidad
   
-número de identificación nacional finlandés
+número de identificación nacional finlandesa
   
 personalidnumber #
   
 número de identificación nacional
   
-número de Id.
+número de identificador
   
-identificador de nacional no.
+n.º de identificación nacional
   
 número de identificación nacional
   
-identificador de ningún
+identificador no
   
 tunnistenumero
   
@@ -487,11 +487,11 @@ henkilötunnus
   
 yksilöllinen henkilökohtainen tunnistenumero
   
-ainutlaatuinen henkilökohtainen tunnus
+Ainutlaatuinen henkilökohtainen Tunnus
   
-numero de identiteetti
+identiteetti numero
   
-Suomen kansallinen henkilötunnus
+Suomen Kansallinen henkilötunnus
   
 henkilötunnusnumero #
   
@@ -499,27 +499,27 @@ kansallisen tunnistenumero
   
 tunnusnumero
   
-numero de tunnus kansallinen
+Kansallinen Tunnus numero
   
 hetu
   
 ## <a name="france"></a>Francia
 
-Para obtener información detallada, vea la sección "Francia número de seguridad Social (INSEE)" en [Buscar qué los tipos de información confidencial](what-the-sensitive-information-types-look-for.md).
+Para obtener más información, consulte la sección "número de la seguridad social de Francia (INSEE)" en [Qué buscan los tipos de información confidencial](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="germany"></a>Alemania
 
-Para obtener información detallada, vea la sección "Número de tarjeta de identidad de Alemania" en [Buscar qué los tipos de información confidencial](what-the-sensitive-information-types-look-for.md).
+Para obtener más información, consulte la sección "número de tarjeta de identidades Alemania" en [Qué buscan los tipos de información confidencial](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="greece"></a>Grecia
 
-Para obtener información detallada, vea la sección "tarjeta de identificación nacional Grecia" en [Buscar qué los tipos de información confidencial](what-the-sensitive-information-types-look-for.md).
+Para obtener más información, consulte la sección "tarjeta de identificación nacional de Grecia" en [Qué buscan los tipos de información confidencial](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="hungary"></a>Hungría
 
 ### <a name="format"></a>Formato
 
-Nueve dígitos sin espacios y los delimitadores
+Nueve dígitos sin espacios y delimitadores
   
 ### <a name="pattern"></a>Patrón
 
@@ -535,7 +535,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
   
 - La función `Func_hungary_eu_ssn_or_equivalent` busca contenido que coincide con el patrón. 
     
-- Una palabra clave de `Keywords_hungary_eu_ssn_or_equivalent` se encuentra. 
+- Se encuentra una `Keywords_hungary_eu_ssn_or_equivalent` palabra clave de. 
     
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
   
@@ -554,16 +554,16 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywordshungaryeussnorequivalent"></a>Keywords_hungary_eu_ssn_or_equivalent
 
-número de la seguridad social húngaro
+número de la seguridad social húngara
   
 social security number
 
   
-NúmeroSeguridadSocial #
+NúmeroSeguridadSocial
   
 hssn #
   
@@ -571,55 +571,55 @@ socialsecuritynno
   
 hssn
   
-taj
+Taj
   
-taj #
+Taj #
   
-ssn
+SSN
   
-ssn #
+SSN
   
-seguridad social no
+n.º de seguridad social
   
 áfa
   
 közösségi adószám
   
-általános forgalmi adó szám
+Általános forgalmi adó szám
   
 hozzáadottérték adó
   
 áfa szám
   
-Magiar áfa szám
+Magyar áfa szám
   
 ## <a name="portugal"></a>Portugal
 
-Para obtener información detallada, vea la sección "Número de tarjeta de Portugal ciudadanos" en [Buscar qué los tipos de información confidencial](what-the-sensitive-information-types-look-for.md).
+Para obtener más información, consulte la sección "número de tarjeta de ciudadano de Portugal" en [Qué buscan los tipos de información confidencial](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="spain"></a>España
 
-Para obtener información detallada, vea la sección "España número de seguridad Social (SSN)" en [Buscar qué los tipos de información confidencial](what-the-sensitive-information-types-look-for.md).
+Para obtener más información, consulte la sección "número de la seguridad social de España (SSN)" en [Qué buscan los tipos de información confidencial](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="sweden"></a>Suecia
 
 ### <a name="format"></a>Formato
 
-12 dígitos sin espacios y los delimitadores
+12 dígitos sin espacios y delimitadores
   
 ### <a name="pattern"></a>Patrón
 
 12 dígitos:
   
--  Ocho dígitos que se corresponden con la fecha de nacimiento (aaaammdd) 
+-  Ocho dígitos que corresponden a la fecha de nacimiento (AAAAMMDD) 
     
-- Tres dígitos que se corresponden con un número de serie donde: 
+- Tres dígitos que corresponden a un número de serie en el que: 
     
-  - El último dígito en el número de serie indica género por la asignación de un número impar para hombre y un número par de hembra
+  - El último dígito del número de serie indica el sexo por la asignación de un número impar para macho y un número par para hembras
     
-  - Hasta 1990, la asignación del número de serie correspondía a la provincia donde surgió el portador del número o (si nacimiento antes de 1947) donde éste tenía ha viva, según los registros de impuestos, en el 1 de enero de 1947, con un código especial (normalmente 9 como el dígito 7) para inmigrantes 
+  - Hasta 1990, la asignación de número de serie que se corresponde con el condado en el que nació el portador del número o (si nació antes de 1947) donde estuvo viviendo, de acuerdo con los registros fiscales, el 1 de enero de 1947, con un código especial (por lo general, 9 como el séptimo dígito) para Immigrants 
     
-- Dígito de un control
+- Un dígito de control
     
 ### <a name="checksum"></a>Suma de comprobación
 
@@ -631,7 +631,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
   
 - La función `Func_sweden_eu_ssn_or_equivalent` busca contenido que coincide con el patrón. 
     
-- Una palabra clave de `Keywords_sweden_eu_ssn_or_equivalent` se encuentra. 
+- Se encuentra una `Keywords_sweden_eu_ssn_or_equivalent` palabra clave de. 
     
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
   
@@ -650,7 +650,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywordsswedeneussnorequivalent"></a>Keywords_sweden_eu_ssn_or_equivalent
 
@@ -659,19 +659,19 @@ número de identificación personal
 identification number
 
   
-un identificador personal no
+número de identificación personal
   
-identidad no
+n.º de identidad
   
-identificación no
+n.º de identificación
   
-identificación personal no
+n.º de identificación personal
   
-identificador de personnummer
+identificador personnummer
   
-identificador de personligt-nummer
+personligt ID-Nummer
   
-identificador de unikt-nummer
+unikt ID-Nummer
   
 personnummer
   
@@ -681,7 +681,7 @@ personnummer #
   
 identifikationsnumret #
   
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Qué buscan los tipos de información confidencial](what-the-sensitive-information-types-look-for.md)
 

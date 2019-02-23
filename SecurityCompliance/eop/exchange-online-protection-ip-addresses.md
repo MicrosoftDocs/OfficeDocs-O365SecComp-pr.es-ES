@@ -11,28 +11,28 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: eb14f38b-7b55-4a47-84a0-4a56a59e4111
 description: Microsoft Exchange Online Protection (EOP) utiliza las siguientes direcciones IP del centro de datos de Microsoft al enviar correo electrónico, recibirlo o para el portal y los servicios administrativos de Exchange Online Protection. Para enviar y recibir mensajes de EOP o utilizar los servicios administrativos, asegúrese de que la red permite conexiones desde estas direcciones IP.
-ms.openlocfilehash: 5ea1a3df2ba1ea6853e2e44983fa7a97877c0778
-ms.sourcegitcommit: 031781d0eecf33baabcd03ea53546d41076062b4
+ms.openlocfilehash: 6c7d8c78a012be3928317eac1e9b6fcdeab64a24
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "27240513"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30222829"
 ---
 # <a name="exchange-online-protection-ip-addresses"></a>Direcciones de IP para Exchange Online Protection
 
 Microsoft Exchange Online Protection (EOP) utiliza las siguientes direcciones IP del centro de datos de Microsoft al enviar correo electrónico, recibirlo o para el portal y los servicios administrativos de Exchange Online Protection. Para enviar y recibir mensajes de EOP o utilizar los servicios administrativos, asegúrese de que la red permite conexiones desde estas direcciones IP.
  
 > [!NOTE]
-> Microsoft ha desarrollado un servicio web basado en REST para la dirección IP y las entradas de FQDN en esta página. Este nuevo servicio le ayuda a configurar y actualizar los dispositivos de perímetro de red, como firewalls y servidores proxy. Puede descargar la lista de extremos, la versión actual de la lista o cambios específicos. Este servicio reemplaza el documento XML, la fuente RSS y la dirección IP y las entradas de FQDN en esta página. Para probar este nuevo servicio, vaya a la [dirección IP de Office 365 y servicio Web de la dirección URL](https://docs.microsoft.com/office365/enterprise/office-365-ip-web-service). 
+> Microsoft ha desarrollado un servicio Web basado en REST para las entradas de dirección IP y FQDN de esta página. Este nuevo servicio le ayuda a configurar y actualizar los dispositivos perimetrales de red, como firewalls y servidores proxy. Puede descargar la lista de puntos de conexión, la versión actual de la lista o los cambios específicos. Este servicio reemplaza el documento XML, la fuente RSS y las entradas de dirección IP y FQDN de esta página. Para probar este nuevo servicio, vaya a [Office 365 IP address and URL Web Service](https://docs.microsoft.com/office365/enterprise/office-365-ip-web-service). 
  
 ## <a name="eop-ip-address-ranges"></a>Intervalos de direcciones IP para EOP
 
 ||||
 |:-----|:-----|:-----|
 |**Intervalos de direcciones IPv4** <br/> |**Intervalos de direcciones IPv6** <br/> |
-| 23.103.132.0/22 | c 2a01:111:f400:7 00:: / 54 |
-| 23.103.136.0/21 | 2a01:111:f400:fc00:: / 54 |
-| 23.103.144.0/20 | 2a01:111:f403:: / 48 |
+| 23.103.132.0/22 | 2a01:111: F400:7c00::/54 |
+| 23.103.136.0/21 | 2a01:111: F400: fc00::/54 |
+| 23.103.144.0/20 | 2a01:111: F403::/48 |
 | 23.103.198.0/23 |  |
 | 23.103.200.0/22 |  |
 | 40.92.0.0/14 |  |
@@ -54,7 +54,7 @@ Microsoft Exchange Online Protection (EOP) utiliza las siguientes direcciones IP
 ||||
  
 > [!IMPORTANT]
-> Los intervalos de direcciones IP proporcionados aquí solo se usan para retransmitir a través de conectores de atención al cliente. Los cambios realizados en la lista de direcciones IP son poco frecuentes y se comunican con antelación. Para asegurarse de que los mensajes que envíe a sus socios comerciales, un host inteligente o una ruta de entorno local a través del servicio publicado intervalo de direcciones IP, debe configurar el conector correcto para el enrutamiento a cada destino. Para obtener más información acerca de los conectores, vea [Decidir que conector que va a usar](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail). las direcciones IP en este tema pueden cambiar con el tiempo.  
+> Los intervalos de direcciones IP que se proporcionan aquí solo se usan para la retransmisión a través de conectores de cliente. Los cambios en la lista de direcciones IP son poco frecuentes y se comunican por adelantado. Para asegurarse de que los mensajes que envía a sus socios comerciales, un host inteligente o un entorno local se enrutan a través del intervalo de direcciones IP publicadas del servicio, debe configurar el conector correcto para el enrutamiento a cada destino. Para obtener más información acerca de los conectores, consulte [decidir qué conector usar](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail). las direcciones IP de este tema pueden cambiar con el tiempo.  
  
 Para obtener más información sobre las direcciones IP utilizadas por Microsoft Office 365, vea [Intervalos de direcciones IP y URL de Office 365](https://go.microsoft.com/fwlink/p/?LinkId=324165).
 

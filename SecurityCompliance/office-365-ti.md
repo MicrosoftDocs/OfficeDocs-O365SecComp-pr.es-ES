@@ -6,63 +6,63 @@ manager: laurawi
 ms.date: 02/08/2019
 ms.audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
 ms.collection: M365-security-compliance
-description: Obtenga información acerca de cómo las capacidades de inteligencia de amenaza en protección contra amenazas de avanzada pueden ayudarle a investigar las amenazas contra su organización, responder a malware, suplantación de identidad y otros ataques que Office 365 ha detectado en su nombre y buscar los indicadores de amenaza.
-ms.openlocfilehash: 632a2387e7cb5a30745459383e670d08c9b84aff
-ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
+description: Descubra cómo las capacidades de inteligencia sobre amenazas de la protección contra amenazas avanzada pueden ayudarle a investigar las amenazas contra su organización, responder a malware, suplantación de identidad (phishing) y otros ataques que Office 365 ha detectado en su nombre y buscar indicadores de amenazas.
+ms.openlocfilehash: a55a17bae141c394ba01e1526615c5c1687340a2
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "29995101"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216560"
 ---
 # <a name="office-365-threat-intelligence"></a>Inteligencia sobre amenazas de Office 365
 
-Capacidades de inteligencia de amenaza en Office 365 avanzada una protección contra amenazas ayudan a los analistas de seguridad y los administradores protegen a los usuarios de Office 365 de su organización por:
+Capacidades de inteligencia sobre amenazas en Office 365 Advanced Threat Protection ayuda a los analistas de seguridad y los administradores a proteger a los usuarios de Office 365 de su organización:
   
-1. Facilita el proceso identificar, supervisar y comprender los ataques
+1. Facilitar la identificación, la supervisión y la comprensión de los ataques
     
-2. Ayudar a rápidamente las amenazas de direcciones en Exchange Online y SharePoint Online
+2. Ayuda para solucionar rápidamente las amenazas en Exchange Online y SharePoint Online
     
-3. Proporcionar conocimientos y conocimientos para ayudar a evitar ataques contra su organización
+3. Proporciona información y conocimientos para ayudar a evitar ataques contra su organización
     
 > [!IMPORTANT]
-> **Inteligencia de amenaza es ahora forma parte de en Office 365 avanzada amenaza protección Plan 2**, que está incluido en determinadas suscripciones, como [Microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home), [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business), Office 365 Enterprise E5, Office 365 A5 de educación, etcetera. Si su organización tiene una suscripción que no incluye Office 365 ATP, puede comprar potencialmente ATP como un complemento. Para obtener más información, vea [precios y planes de protección de amenaza avanzada de Office 365](https://products.office.com/exchange/advance-threat-protection) y [Office 365 avanzada Threat Protection Service Description](https://docs.microsoft.com/en-us/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp). 
+> La **inteligencia sobre amenazas ahora forma parte de la planeación de la protección contra amenazas avanzada 2 de Office 365**, que se incluye en determinadas suscripciones, como [Microsoft 365 enterprise](https://www.microsoft.com/microsoft-365/enterprise/home), [microsoft 365 Business](https://www.microsoft.com/microsoft-365/business), office 365 Enterprise E5, Office 365 Educación A5, etc. Si su organización tiene una suscripción que no incluye Office 365 ATP, puede comprar ATP como complemento. Para obtener más información, consulte [planes y precios](https://products.office.com/exchange/advance-threat-protection) de la protección contra amenazas avanzada de Office 365 y la [Descripción del servicio de protección contra amenazas avanzada de Office 365](https://docs.microsoft.com/en-us/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp). 
   
-## <a name="whats-changing"></a>¿Lo que está cambiando?
+## <a name="whats-changing"></a>¿Qué está cambiando?
 
-Anteriormente, se ha incluido información sobre amenazas de Office 365 en suscripciones, como Office 365 Enterprise E5. Aún es el caso, aunque las características de inteligencia de amenaza ahora forman parte de Office 365 avanzada amenaza protección Plan 2 (y esto se incluye en Office 365 Enterprise E5). 
+Anteriormente, la inteligencia sobre amenazas de Office 365 se incluyó en las suscripciones, como Office 365 Enterprise E5. Este es el caso, aunque las características de inteligencia sobre amenazas ahora forman parte de Office 365 Advanced Threat Protection Plan 2 (y esto se incluye en Office 365 Enterprise E5). 
 
-Además, Office 365 amenaza inteligencia anteriormente estaba disponible para la compra como un complemento para Office 365 para los clientes empresariales. Ahora, se incluye información sobre amenazas en Office 365 avanzada amenaza protección Plan 2. Para obtener más información, vea [precios y planes de protección de amenaza avanzada de Office 365](https://products.office.com/exchange/advance-threat-protection).
+Además, la inteligencia sobre amenazas de Office 365 anteriormente estuvo disponible para la compra como un complemento para los clientes de Office 365 para empresas. Ahora, la inteligencia de amenazas se incluye en el plan 2 de la protección contra amenazas avanzada de Office 365. Para obtener más información, consulte [planes y precios de la protección contra amenazas avanzada de Office 365](https://products.office.com/exchange/advance-threat-protection).
 
-Esto es lo que todo esto significa:
+Esto es lo que significa todo esto:
 
-- **Si su organización ya tiene Office 365 Enterprise E5**, a continuación, debe tener ya avanzada protección de amenaza Plan 2, y esto incluye las capacidades de inteligencia de amenaza.
+- **Si su organización ya tiene Office 365 Enterprise E5**, ya tiene el plan 2 de la protección contra amenazas avanzada y esto incluye capacidades de inteligencia de amenazas.
 
-- **Si su organización tenía previamente información sobre amenazas de Office 365 (pero no Office 365 avanzada protección contra amenazas) como un complemento** a otra suscripción de Office 365, a continuación, debe tendrá Office 365 avanzada amenaza protección Plan 2. Esto incluye capacidades avanzadas de protección contra amenazas y la información sobre amenazas. 
+- **Si su organización tenía anteriormente inteligencia sobre amenazas de office 365 (pero no la protección contra amenazas avanzada de office 365) como complemento** a otra suscripción de Office 365, tendrá Office 365 Advanced Threat Protection Plan 2. Esto incluye la protección contra amenazas avanzada y las capacidades de inteligencia de amenazas. 
 
-- **Si su organización tenía previamente la protección de amenaza avanzada de Office 365 (pero no en Office 365 amenaza inteligencia) como un complemento** a otra suscripción de Office 365, a continuación, debe tendrá Office 365 avanzada amenaza protección Plan 1. Esto incluye la protección contra amenazas de avanzada (pero no las capacidades de inteligencia de amenaza).
+- **Si su organización tenía previamente la protección contra amenazas avanzada de office 365 (pero no la inteligencia de amenazas de office 365) como un complemento** para otra suscripción de Office 365, tendrá Office 365 Advanced Threat Protection Plan 1. Esto incluye protección contra amenazas avanzada (pero no capacidades de inteligencia de amenazas).
 
-Para obtener más información, vea [los planes de protección de amenaza avanzada de Office 365 y los precios](https://products.office.com/exchange/advance-threat-protection) y la [Office 365 avanzada Threat Protection Service Description](https://docs.microsoft.com/en-us/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp)
+Para obtener más información, consulte [planes y precios](https://products.office.com/exchange/advance-threat-protection) de la protección contra amenazas avanzada de Office 365 y la [Descripción del servicio de protección contra amenazas avanzada de Office 365](https://docs.microsoft.com/en-us/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp)
 
-## <a name="get-started-with-threat-intelligence-capabilities"></a>Introducción a las capacidades de inteligencia de amenaza
+## <a name="get-started-with-threat-intelligence-capabilities"></a>Introducción a las capacidades de inteligencia de amenazas
 
-Use los siguientes recursos para obtener más información acerca de la información sobre amenazas y cómo puede utilizarlo para mantener a las personas de la organización más segura.
+Use los siguientes recursos para obtener más información sobre la inteligencia de amenazas y cómo usarla para mantener a las personas de su organización más seguras.
   
-- [Empezar a trabajar con inteligencia de amenaza](get-started-with-ti.md) (Esto incluye información acerca de las funciones necesarias) 
+- [Introducción a la inteligencia sobre amenazas](get-started-with-ti.md) (incluye información sobre las funciones necesarias) 
     
-- [Obtenga información sobre objetos de seguimiento de amenaza - nuevos y valioso](threat-trackers.md)
+- [Obtenga información sobre los rastreadores de amenazas: nuevos y dignos](threat-trackers.md)
     
-- [Buscar e investigar el correo electrónico malintencionado que se entregó](investigate-malicious-email-that-was-delivered.md)
+- [Buscar e investigar correo electrónico malintencionado que se entregó](investigate-malicious-email-that-was-delivered.md)
     
-- [Use simulador de ataque](attack-simulator.md)
+- [Usar el simulador de ataques](attack-simulator.md)
     
-- [Integrar información sobre amenazas con Windows Defender una protección avanzada](integrate-office-365-ti-with-wdatp.md)
+- [Integrar la inteligencia de amenazas con la Protección contra amenazas avanzada de Windows Defender](integrate-office-365-ti-with-wdatp.md)
     
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -70,6 +70,6 @@ Use los siguientes recursos para obtener más información acerca de la informac
   
 [Protección contra amenazas avanzada de Office 365](office-365-atp.md)
   
-[Los permisos de la seguridad de Office 365 &amp; centro de cumplimiento](permissions-in-the-security-and-compliance-center.md)
+[Permisos en el centro de seguridad &amp; y cumplimiento de Office 365](permissions-in-the-security-and-compliance-center.md)
   
 

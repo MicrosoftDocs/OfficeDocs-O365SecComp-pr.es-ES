@@ -1,60 +1,60 @@
 ---
-title: Crear una programación para un informe en la seguridad &amp; centro de cumplimiento
+title: Crear una programación para un informe en el centro &amp; de seguridad y cumplimiento
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 6/1/2018
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: a74f637b-3710-4c41-b70f-b5a812929a81
-description: Obtenga información sobre cómo configurar una programación para un informe en la seguridad &amp; centro de cumplimiento.
-ms.openlocfilehash: b1c253f1af6369fc17f5f620c464bf1ed231cbde
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+description: Obtenga información sobre cómo configurar una programación para un informe en el centro &amp; de seguridad y cumplimiento.
+ms.openlocfilehash: 25e8ee175314c5447da95d3636236d1682479c70
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014782"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216760"
 ---
-# <a name="create-a-schedule-for-a-report-in-the-security-amp-compliance-center"></a>Crear una programación para un informe en la seguridad &amp; centro de cumplimiento
+# <a name="create-a-schedule-for-a-report-in-the-security-amp-compliance-center"></a>Crear una programación para un informe en el centro &amp; de seguridad y cumplimiento
 
-En la seguridad &amp; centro de cumplimiento, varios [informes y perspectivas](reports-and-insights-in-security-and-compliance.md) están disponibles para ayudar a equipo de seguridad de su organización mitigación y afrontar las amenazas para su organización. Si usted es un miembro del equipo de seguridad de su organización, puede crear una programación para un informe. El plan creado puede incluir un intervalos de fecha personalizado para adaptarse a su organización. 
+En el centro &amp; de seguridad y cumplimiento, hay disponibles varios [informes y perspectivas](reports-and-insights-in-security-and-compliance.md) para ayudar al equipo de seguridad de su organización a mitigar y enfrentar las amenazas a su organización. Si es miembro del equipo de seguridad de su organización, puede crear una programación para un informe. La programación que cree puede incluir intervalos de fechas personalizados para adaptarse a su organización. 
   
 ## <a name="create-a-schedule-for-a-report"></a>Crear una programación para un informe
 
 > [!IMPORTANT]
-> Asegúrese de que tiene los permisos necesarios para realizar esta tarea. En general, los administradores globales de Office 365, los administradores de seguridad y los lectores de seguridad pueden acceder a los informes en la seguridad &amp; centro de cumplimiento. Para obtener más información acerca de los permisos, vea [permisos en la seguridad de Office 365 &amp; centro de cumplimiento](permissions-in-the-security-and-compliance-center.md).
+> Asegúrese de que dispone de los permisos necesarios para realizar esta tarea. En general, los administradores globales de Office 365, los administradores de seguridad y los lectores de seguridad pueden tener acceso &amp; a los informes en el centro de seguridad y cumplimiento. Para obtener más información acerca de los permisos, consulte [Permissions &amp; in the Office 365 Security Compliance Center](permissions-in-the-security-and-compliance-center.md).
   
-1. En la [seguridad &amp; centro de cumplimiento](https://protection.office.com), vaya a **informes** \> **panel**.
+1. En el [Centro &amp; de seguridad y cumplimiento](https://protection.office.com), vaya a **informes** \> de **Panel**.
     
-2. Elija un informe. Para este ejemplo, se podrá elegir el informe de estado de protección de amenaza.
+2. Elija un informe. Para este ejemplo, elegiremos el informe de estado de protección contra amenazas.
     
-3. En la esquina superior izquierda del informe, elija **+ Crear programación**.
+3. En la esquina superior izquierda del informe, elija **+ crear programación**.
     
-    ![Puede crear una programación para los informes en la seguridad &amp; centro de cumplimiento](media/2311327c-14f6-4a17-b604-0c9ff2d485d1.png)
+    ![Puede crear una programación de informes en el centro de &amp; seguridad y cumplimiento](media/2311327c-14f6-4a17-b604-0c9ff2d485d1.png)
   
-    Se abre el cuadro de diálogo **Crear programación** . 
+    Se abrirá el cuadro de diálogo **crear programación** . 
     
-4. Mantenga la configuración predeterminada y elija **Crear programación**o elija **Personalizar programación**.
+4. Mantenga la configuración predeterminada y elija **crear programación**o elija **personalizar programación**.
     
-    ![Puede usar la configuración predeterminada o personalizar la programación de un informe](media/04fac327-8f73-4711-8319-58c11880fd96.png)
+    ![Puede usar la configuración predeterminada o personalizar una programación de informes](media/04fac327-8f73-4711-8319-58c11880fd96.png)
   
-    Si elige Personalizar la programación de informe, puede especificar la frecuencia del informe, la dirección de correo electrónico de un remitente y la dirección de correo electrónico de un destinatario. 
+    Si opta por personalizar la programación del informe, puede especificar la frecuencia del informe, la dirección de correo electrónico del remitente y la dirección de correo electrónico del destinatario. 
     
-Una vez haya creado una programación para un informe, que informe se entregan a través de correo electrónico a las direcciones de destinatarios emali automáticamente. 
+Una vez que haya creado una programación para un informe, ese informe se entregará a través del correo electrónico a las direcciones emali de los destinatarios de forma automática. 
   
 ## <a name="related-topics"></a>Temas relacionados
 
-[Informes y conocimientos en la seguridad de Office 365 &amp; centro de cumplimiento](reports-and-insights-in-security-and-compliance.md)
+[Informes y opiniones en el centro de seguridad &amp; y cumplimiento de Office 365](reports-and-insights-in-security-and-compliance.md)
   
-[Administrar programaciones para los informes de la seguridad &amp; centro de cumplimiento](manage-schedules-for-multiple-reports.md)
+[Administrar programaciones de informes en el &amp; centro de seguridad y cumplimiento](manage-schedules-for-multiple-reports.md)
   
-[Descargar los informes existentes en la seguridad &amp; centro de cumplimiento](download-existing-reports.md)
+[Descargar los informes existentes en el &amp; centro de seguridad y cumplimiento](download-existing-reports.md)
   
-[Descargar un informe personalizado en la seguridad &amp; centro de cumplimiento](set-up-and-download-a-custom-report.md)
+[Descargar un informe personalizado en el centro &amp; de seguridad y cumplimiento](set-up-and-download-a-custom-report.md)
   
 

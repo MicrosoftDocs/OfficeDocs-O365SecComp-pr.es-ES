@@ -7,7 +7,7 @@ ms.audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.SupervisoryReview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - Strat_O365_IP
@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: Descripción de las directivas de supervisión en Office 365
-ms.openlocfilehash: f715fdcd073f8d75f0046bb3ed5adb1987eec263
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+ms.openlocfilehash: 7a173809f37262f73671fe6ee96485cda97c1eb3
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30090982"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214120"
 ---
 # <a name="supervision-policies-in-office-365"></a>Directivas de supervisión en Office 365
 
@@ -215,7 +215,7 @@ Use los informes de supervisión para ver la actividad de revisión en el nivel 
   
 ### <a name="how-to-use-the-report"></a>Uso del informe
 
-Cuando una directiva de supervisión identifica un mensaje de comunicación para revisión, el correo electrónico se entrega a la carpeta supervisión del revisor en Outlook y Outlook Web App. Este informe muestra el nombre de cada directiva y el número de comunicaciones en cada fase del proceso de revisión.
+Cuando una directiva de supervisión identifica un mensaje de comunicación para revisión, el correo electrónico se entrega a la carpeta de supervisión del revisor en Outlook y en Outlook en la web (anteriormente conocido como Outlook Web App). Este informe muestra el nombre de cada directiva y el número de comunicaciones en cada fase del proceso de revisión.
   
 Use el informe para:
   
@@ -228,7 +228,7 @@ Este es un desglose de los valores que puede ver en la columna **tipo de etiquet
   
 |**Tipo de etiqueta**|**Qué significa**|
 |:-----|:-----|
-| No revisado | El número de correos electrónicos que todavía no se han revisado. Estos mensajes de correo electrónico están pendientes de revisión en el panel de supervisión de Office 365 o en la carpeta supervisión del revisor en Outlook/Outlook Web App.|
+| No revisado | El número de correos electrónicos que todavía no se han revisado. Estos mensajes de correo electrónico están pendientes de revisión en el panel de supervisión de Office 365 o en la carpeta supervisión del revisor en Outlook/Outlook en la web
 | Directivas | Número de mensajes de correo electrónico revisados y marcados como compatibles. Estos mensajes todavía deben resolverse. |
 | Cuestionable | Número de correos electrónicos revisados y marcados como cuestionables. Esto actúa como una marca; otros revisores pueden ayudarle a comprobar si un correo electrónico necesita investigar el cumplimiento. Estos mensajes todavía deben resolverse. |
 | No compatible (activo) | El número de correos electrónicos no compatibles que los revisores están investigando en este momento. |

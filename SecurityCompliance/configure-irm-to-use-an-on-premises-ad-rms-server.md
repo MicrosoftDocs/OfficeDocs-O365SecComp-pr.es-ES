@@ -1,7 +1,7 @@
 ---
 title: Configurar IRM para usar un servidor de AD RMS local
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 12/13/2017
 ms.audience: End User
@@ -12,19 +12,21 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 3ecde857-4b7c-451d-b4aa-9eeffc8a8c61
+ms.collection:
+- M365-security-compliance
 description: En este tema se muestra cómo configurar IRM para usar un servidor de AD RMS.
-ms.openlocfilehash: 82eed73797cfb4ade04bfeed9118d8466c5c5480
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 19d353dc8aa0e02b564616aacdde31c0fffa0483
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002816"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215261"
 ---
 # <a name="configure-irm-to-use-an-on-premises-ad-rms-server"></a>Configurar IRM para usar un servidor de AD RMS local
   
-Para usar con las implementaciones locales, Information Rights Management (IRM) en Exchange Online usa Active Directory Rights Management Services (AD RMS), una tecnología de protección de información en Windows Server 2008 y versiones posteriores. Protección de IRM se aplica a correo electrónico mediante la aplicación de una plantilla de directiva de derechos de AD RMS a un mensaje de correo electrónico. Derechos están asociados al propio mensaje para que se produzca una protección en línea y sin conexión y dentro y fuera del firewall de la organización.
+Para su uso con implementaciones locales, Information Rights Management (IRM) en Exchange online usa Active Directory Rights Management Services (AD RMS), una tecnología de protección de la información en Windows Server 2008 y versiones posteriores. La protección de IRM se aplica al correo electrónico aplicando una plantilla de directiva de permisos AD RMS a un mensaje de correo electrónico. Los derechos se adjuntan al propio mensaje para que la protección se produzca en línea o sin conexión, y dentro y fuera del firewall de la organización.
   
-En este tema se muestra cómo configurar IRM para usar un servidor de AD RMS. Para obtener información acerca del uso de las nuevas capacidades de Office 365 para cifrado de mensajes con Active Directory de Azure y Azure Rights Management, vea las [Preguntas más frecuentes sobre el cifrado de mensajes de Office 365](https://support.office.com/article/0432dce9-d9b6-4e73-8a13-4a932eb0081e).
+En este tema se muestra cómo configurar IRM para usar un servidor de AD RMS. Para obtener información acerca del uso de las nuevas funciones de cifrado de mensajes de Office 365 con Azure Active Directory y Azure Rights Management, consulte las [preguntas más frecuentes sobre el cifrado de mensajes de office 365](https://support.office.com/article/0432dce9-d9b6-4e73-8a13-4a932eb0081e).
   
 Para obtener más información sobre IRM en Exchange Online, consulte [Information Rights Management en Exchange Online](information-rights-management-in-exchange-online.md).
   
@@ -93,13 +95,13 @@ Import-RMSTrustedPublishingDomain -FileData $([byte[]](Get-Content -Encoding byt
 
 Para información detallada sobre la sintaxis y los parámetros, vea [Import-RMSTrustedPublishingDomain](http://technet.microsoft.com/library/7c5e7a0f-9c9d-4863-bab8-bcc729cc16a6.aspx).
   
-#### <a name="how-do-you-know-this-step-worked"></a>¿Cómo sabe si este paso funcionó?
+#### <a name="how-do-you-know-this-step-worked"></a>¿Cómo saber si el paso ha funcionado?
 
 Para comprobar que el dominio de publicación de confianza se haya importado correctamente, ejecute el cmdlet **Get-RMSTrustedPublishingDomain** para recuperar los dominios de publicación de confianza de su organización de Exchange Online. Para obtener detalles, consulte los ejemplos en [Get-RMSTrustedPublishingDomain](http://technet.microsoft.com/library/69499195-f08f-41bd-b0ed-443688410b12.aspx).
   
 ### <a name="step-3-use-the-exchange-management-shell-to-distribute-an-ad-rms-rights-policy-template"></a>Paso 3: use el Shell de administración de Exchange para distribuir una plantilla de directiva de permisos AD RMS
 
-Después de importar el dominio de publicación de confianza, debe asegurarse de que la plantilla de directiva de permisos AD RMS esté distribuida. Una plantilla distribuida es visible para los usuarios de Outlook Web App, que después pueden aplicarla a un mensaje de correo electrónico.
+Después de importar el TPD, debe asegurarse de que se distribuya una plantilla de directiva de derechos de AD RMS. Una plantilla distribuida es visible para los usuarios de Outlook en la web (anteriormente conocido como Outlook Web App), que a su vez pueden aplicar las plantillas a un mensaje de correo electrónico.
   
 Para obtener una lista de todas las plantillas que incluye el TPD predeterminado, ejecute el comando siguiente:
   
@@ -107,7 +109,7 @@ Para obtener una lista de todas las plantillas que incluye el TPD predeterminado
 Get-RMSTemplate -Type All | fl
 ```
 
-Si el valor del parámetro  _Type_ es  `Archived`, la plantilla no está visible para los usuarios. Solo las plantillas distribuidas en el TPD predeterminado están disponibles en Outlook Web App.
+Si el valor del parámetro _Type_ es `Archived`, la plantilla no es visible para los usuarios. Solo las plantillas distribuidas en el TPD predeterminado están disponibles en Outlook en la Web.
   
 Para distribuir una plantilla, ejecute el comando siguiente:
   
@@ -165,6 +167,6 @@ Para comprobar si ha importado el TPD y ha habilitado IRM correctamente, haga lo
   
 - Use el cmdlet **Test-IRMConfiguration** para probar si IRM funciona. Para obtener más información, vea "Ejemplo 1" en [Test-IRMConfiguration](http://technet.microsoft.com/library/a730e7ff-a67f-4360-b5ff-70d171bb5e1d.aspx).
     
-- Redacte un nuevo mensaje en Outlook Web App y protéjalo con IRM al seleccionar la opción **Establecer permisos** del menú extendido ( ![Icono Más opciones](media/ITPro-EAC-MoreOptionsIcon.gif)).
+- Redacte un nuevo mensaje en Outlook en la web y protéjalo con IRM seleccionando la opción **establecer permisos** en el menú extendido ( ![icono](media/ITPro-EAC-MoreOptionsIcon.gif)más opciones).
     
 

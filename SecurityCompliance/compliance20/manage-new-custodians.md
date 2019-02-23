@@ -1,12 +1,12 @@
 ---
-title: Administrar a custodia en un caso de exhibición de documentos electrónicos avanzada (vista previa)
+title: Administrar los custodios en un caso de eDiscovery avanzado (vista previa)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,107 +14,107 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: cce823924502fa2617d7819dc0967733fbc072e0
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: 0c33335ecc103a97090dacaa769315ad9413b3c6
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29706101"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214980"
 ---
-# <a name="manage-custodians-in-an-advanced-ediscovery-preview-case"></a>Administrar a custodia en un caso de exhibición de documentos electrónicos avanzada (vista previa)
+# <a name="manage-custodians-in-an-advanced-ediscovery-preview-case"></a>Administrar los custodios en un caso de eDiscovery avanzado (vista previa)
 
-La ficha de custodia contiene una lista se puede ordenar de todos los la custodia en el caso. Después de agregar a un caso de custodia, automáticamente se recopilarán obtener información detallada sobre cada custodia de Azure Active Directory.
+La ficha custodios contiene una lista de todos los custodios que se puede ordenar en el caso. Después de agregar custodios a un caso, los detalles de cada custodio se recopilarán de forma automática desde Azure Active Directory.
 
-## <a name="viewing-custodian-details"></a>Visualización de detalles de custodia
+## <a name="viewing-custodian-details"></a>Visualización de detalles de custodios
 
-La página emergente que contiene detalles de custodia aparece después de agregar a una custodia a un caso y selecciónelos en la lista en la ficha de **custodia** . Desde aquí, puede ver todos los detalles relacionados con ese custodia. La página emergente contiene los siguientes campos:
+La página de control flotante que contiene los detalles de custodios aparece después de agregar un custodio a un caso y seleccionarlos **** en la lista de la ficha custodios. Desde aquí, puede ver todos los detalles relacionados con el custodio. La página de control flotante contiene los siguientes campos:
 
 - Información de contacto
 
-  - **Nombre para mostrar**: el nombre mostrado en la libreta de direcciones para la custodia. Suele ser la combinación de nombre de la custodia, medio inicial y el nombre.
-  - **Correo/SMTP**: dirección SMTP el para la custodia, por ejemplo, jeff@contoso.onmicrosoft.com.  
-  - **Título**: título del trabajo de la custodia.
-  - **Departamento**: el nombre del departamento en el que trabaja la custodia.
-  - **Administrador**: Administrador de custodia. El administrador designado recibirá las comunicaciones de escalación para este custodia.
+  - **Nombre para mostrar**: nombre que se muestra en la libreta de direcciones del custodio. Suele ser la combinación del nombre del custodio, la inicial del segundo nombre y el apellido.
+  - **Correo/SMTP**: la dirección SMTP de la custodio, por ejemplo, Jeff@contoso.onmicrosoft.com.  
+  - **Title**: el puesto del custodio.
+  - **Departamento**: nombre del Departamento en el que trabaja el custodio.
+  - **Administrador**: el administrador del custodio. El administrador designado recibirá todas las comunicaciones de escalado para este custodio.
   
 - Información de ubicación
 
-  - **Ciudad**: la ciudad donde se encuentra la custodia.
-  - **Estado**: el estado o provincia de dirección de la custodia.
-  - **País o región**: el país o región en el que se encuentra; la custodia Por ejemplo, "US" o "UK".
-  - **Office**: la ubicación de la oficina en lugar de la custodia de negocio.
+  - **City**: la ciudad en la que se encuentra el custodio.
+  - **State**: el estado o provincia de la dirección del custodio.
+  - **País o región**: el país o región en el que se encuentra el custodio; por ejemplo, "US" o "UK".
+  - **Oficina**: la ubicación de la oficina en el lugar de trabajo del custodio.
 
-- Información de casos
+- Información del caso
 
-  - **Estado de suspensión**: indica si se ha asignado la custodia en espera. 
-  - **Estado de las comunicaciones**: indica si se ha emitido la custodia un aviso de suspensión. Si se ha emitido un aviso a la custodia, esto se marcarán como *publicados*. Si no se ha emitido la custodia un aviso, a continuación, en este estado puede ser *Reactivar publicado*. 
-  - **Estado**: el estado de la custodia dentro de las mayúsculas y minúsculas. Estará *activa* si la custodia todavía está en espera para el caso. Si se quita una custodia de un caso, su estado cambiará a *liberado*. 
+  - **Estado de suspensión**: indica si el custodio se ha puesto en retención. 
+  - **Estado de comunicación**: indica si el custodio ha emitido un aviso de retenciones. Si se ha emitido un aviso al custodio, este se marcará como *publicado*. Si no se ha emitido un aviso al custodio, este estado no se *publicará*. 
+  - **Status**: el estado del custodio en el caso. Estará *activo* si el custodio todavía está en espera para el caso. Si se quita un custodio de un caso, su estado cambiará a *lanzado*. 
 
 - Estado de procesamiento
 
-  - **Estado de indización**: indica el estado del trabajo de indización profundo.  
-  - **Indización de última vez actualizado**: indica la fecha de cuando se desencadenó por última vez el trabajo de indización profundo.
-  - **Orígenes de datos**: muestra el número de buzones de correo, los sitios y los equipos que se han seleccionado para la custodia.
+  - **Estado**de indización: indica el estado del trabajo de indización profunda.  
+  - **Fecha y hora de la última actualización**de la indización: indica el fecha de Cuándo se desencadenó por última vez el trabajo de indización en profundidad.
+  - **Orígenes de datos**: muestra el número de buzones de correo, sitios y equipos que se han seleccionado para el custodio.
 
-## <a name="updating-a-custodian"></a>Actualización de custodia
+## <a name="updating-a-custodian"></a>Actualización de un custodio
 
-Medida que avanza el caso, es posible que descubra que pueden haber orígenes de datos adicionales relevantes para una & de custodia específico su caso. En otros escenarios, es posible que desee quitar determinados orígenes de datos que se han revisado y se considera como no relevantes.
+A medida que avanza el caso, es posible que descubra que puede haber orígenes de datos adicionales relacionados con un custodio específico & su caso. En otros escenarios, es posible que desee quitar determinados orígenes de datos que se han revisado y considerados como no relevantes.
 
-Para actualizar una custodia y los orígenes de datos seleccionados:
+Para actualizar un custodio y los orígenes de datos seleccionados:
 
-1. Seleccione un caso existente de la **exhibición de documentos electrónicos > avanzada exhibición de documentos electrónicos (vista previa)**.
+1. Seleccione un caso existente de la exhibición de documentos electrónicos **_GT_ Advanced eDiscovery (Preview)**.
   
-2. En el caso, haga clic en la ficha de **custodia** .
+2. En el caso, haga clic **** en la ficha custodios.
   
-3. Seleccione el custodian(s) de la lista y haga clic en **Editar orígenes**.
+3. Seleccione los custodios de la lista y haga clic en **editar fuentes**.
   
-4. Actualizar las selecciones de ubicaciones de Exchange y OneDrive haciendo clic en **Elegir orígenes de datos**.
+4. Para actualizar las selecciones para las ubicaciones de Exchange y OneDrive, haga clic en **Elegir orígenes de datos**.
   
-5. Agregar o quitar Exchange, SharePoint o los equipos de los buzones de correo asignan al usuario haciendo clic para **Seleccionar los orígenes de datos adicionales**. Para obtener más información acerca de cómo asignar datos orígenes custodia, vea [custodia de agregar para un caso](add-custodians-to-case.md).
+5. Agregar o quitar buzones de correo de Microsoft Teams, SharePoint o Exchange asigne el usuario haciendo clic para **seleccionar orígenes de datos adicionales**. Para obtener más información sobre cómo asignar orígenes de datos a un custodio, consulte [Add custodios to a case](add-custodians-to-case.md).
   
-6. Para actualizar el estado de suspensión de custodia, haga clic en **realizar custodia suspensiones**y habilitar o deshabilitar la suspensión de custodia.
+6. Para actualizar el estado de conservación de custodios, haga clic en **realizar suspensiones de custodia**y habilite o deshabilite la retención para los custodios.
 
 > [!TIP]
-> Puede seleccionar varios custodia para realizar acciones masivas, como volver a indizar, soltar o edición de un conjunto de custodia.
+> Puede seleccionar varios custodios para realizar acciones en masa, como volver a indexar, liberar o editar un conjunto de custodios.
 
-## <a name="resolving-custodian-processing-errors"></a>Resolución de errores de procesamiento de custodia
+## <a name="resolving-custodian-processing-errors"></a>Resolver errores de procesamiento de custodios
 
-En la mayoría Legal flujos de trabajo después de custodia se agrega para una investigación específica, un subconjunto de datos de los usuarios se buscará. Debido a los tamaños de archivo grandes o daños posibles, algunos de los elementos dentro de los orígenes de datos de custodia podrían indizarse parcialmente. Uso de la capacidad de indización profundo de exhibición de documentos electrónicos avanzada (vista previa), estos elementos indizados parcialmente pueden ser automáticamente corrigió por volver a rastrear e indizar estos elementos a petición. 
+En la mayoría de los flujos de trabajo legales, después de agregar custodios para una investigación específica, se buscará un subconjunto de los datos de los usuarios. Debido a los tamaños de archivo grandes o posibles daños, algunos elementos de los orígenes de datos de los custodios pueden indizarse parcialmente. Mediante el uso de la función de indización profunda de eDiscovery avanzado (versión preliminar), estos elementos parcialmente indizados se pueden corregir automáticamente volviendo a rastrear y indizar estos elementos a petición. 
 
-Cuando se agrega una custodia a un caso, sus datos automáticamente "profundo indizará", lo que permite a los usuarios dejar estas parcialmente indiza elementos en contexto en lugar de tener que descargar, corregir y volver a ejecutar búsquedas fuera de Office 365. Durante el ciclo de vida de un caso, un usuario puede corregir los elementos o agregar nuevos orígenes de datos para una determinada custodia. Esto puede requerir la actualización del índice de custodia. 
+Cuando se agrega un custodio a un caso, sus datos se "indizarán automáticamente" de forma automática, lo que permite a los usuarios dejar estos elementos parcialmente indizados en lugar de tener que descargar, corregir y volver a ejecutar búsquedas fuera de Office 365. Durante el ciclo de vida de un caso, un usuario puede corregir elementos o agregar nuevos orígenes de datos para un custodio determinado. Esto puede requerir que se actualice el índice de custodios. 
 
-Para desencadenar un proceso de volver a indización a dirección parcialmente elementos indizados:
+Para desencadenar un proceso de reindización para tratar los elementos parcialmente indizados:
 
-1. Vaya a la **exhibición de documentos electrónicos > avanzada exhibición de documentos electrónicos (vista previa)** y seleccione un caso existente.
+1. Vaya a **eDiscovery _GT_ Advanced eDiscovery (Preview)** y seleccione un caso existente.
 
-2. En el caso, haga clic en **ficha de custodia**. 
+2. En el caso, haga clic en para la **ficha custodios**. 
 
-3. Seleccione el custodian(s) que se debe volver a indizar y, a continuación, haga clic en **Actualizar índice** en la página emergente.
+3. Seleccione los custodios que se deben reindizar y, a continuación, haga clic en **Actualizar índice** en la página de control flotante.
 
-4. Compruebe el estado del índice de custodia haciendo clic en el vínculo en la columna **estado del trabajo de indización** en la ficha de **custodia** .  
+4. Compruebe el estado del índice de custodios haciendo clic en el vínculo de la columna **Estado de trabajo** de **** indización en la ficha custodios.  
 
-5. También puede realizar un seguimiento del estado para el proceso de indización volver a en la ficha **trabajos** .
+5. También se puede realizar un seguimiento del estado del proceso de reindización en la pestaña **trabajos** .
 
-Para obtener más información acerca de los elementos indizados parcialmente volver a indización y solucionar, consulte [corregir errores de procesamiento](processing-data-for-case.md).
+Para obtener más información acerca de cómo volver a indizar y corregir los elementos parcialmente indizados, vea [corregir errores de procesamiento](processing-data-for-case.md).
 
-## <a name="releasing-a-custodian-from-a-case"></a>Liberación de custodia de un caso
+## <a name="releasing-a-custodian-from-a-case"></a>Liberar un custodio de un caso
 
-Custodia está publicada en situaciones donde se cierra un caso, custodia ya no está bajo obligación de conservar el contenido de un caso, o cuando una custodia se considera que no ya sea relevante a un determinado caso. 
+Un custodio se publica en situaciones en las que se cierra un caso, ya que un custodio ya no está obligado a preservar el contenido de un caso, o cuando se considera que un custodio ya no es relevante para un caso en particular. 
 
-Si liberar a custodia después de que se ha publicado un aviso de suspensión, se enviará un aviso de versión a la custodia. Además, también se quitará cualquier suspensiones custodia atribuidas a la custodia de lanzamiento.
+Si libera un custodio después de que se publique un aviso de retención, se enviará una notificación de publicación al custodio. Además, también se eliminarán todos los retenciones de privación que se hayan atribuido a los custodios emitidos.
 
-Si se realizó la custodia de una suspensión silenciosa, donde no se emitieron las notificaciones de retención legal, a continuación, se quitará cualquier suspensiones custodia atribuidas a la custodia de lanzamiento.  
+Si el custodio se puso en una retención silenciosa, donde no se emitieron notificaciones legales de retención, se eliminarán todos los retenciones de privación que se hayan atribuido a los custodios emitidos.  
 
-Para liberar a una custodia: 
+Para liberar un custodio: 
 
-1.  Vaya a la ficha de **custodia** .
+1.  Vaya a la **** pestaña custodios.
 
-2.  Seleccione a la custodia de la lista y haga clic en **custodia de versión** en la página emergente.
+2.  Seleccione el custodio de la lista y haga clic en **liberar custodios** en la página de flotante.
 
-    Se establece el estado de la custodia en la ficha de **custodia** a **liberado** y el **estado de suspensión** en la página emergente se cambia a **inactivo**. 
+    El estado del custodio en la ficha **custodios** está establecido en **lanzado** y el estado de la **retención** en la página de control flotante cambia a inactivo. **** 
 
 > [!TIP]
-> Custodia ser simultáneamente es posible implicados en materia de retención legal varias. Cuando se suelta una custodia desde un caso, las suspensiones y notificaciones a través de otros asuntos no se verán afectadas.
+> Un custodio puede estar involucrado de manera simultánea en varias cuestiones legales de retención. Cuando se publica un custodio desde un caso, las suspensiones y notificaciones en otros asuntos no se verán afectadas.
 
 ## <a name="related-information"></a>Información relacionada
 

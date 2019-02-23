@@ -1,45 +1,45 @@
 ---
-title: Declaración de privacidad para el Portal de correo electrónico seguro de Office 365
+title: Declaración de privacidad de Office 365 portal de correo seguro
 ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 10/12/2018
 ms.audience: End User
 ms.topic: reference
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 278917cd-a930-46cc-9580-6b9d2361a5f9
-description: 'Última actualización: Mayo de 2017'
-ms.openlocfilehash: 75714c097690b222ebd3b8d25ab2e0eca8fe8d91
-ms.sourcegitcommit: 448c5897e44448adfc82e3eaffb774c770c04815
+description: 'Última actualización: 2017 de mayo'
+ms.openlocfilehash: bd49b496685b94ed4555e6d8b0ff82c0aff5a202
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "25522241"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219160"
 ---
-# <a name="privacy-statement-for-office-365-secure-email-portal"></a>Declaración de privacidad para el Portal de correo electrónico seguro de Office 365
+# <a name="privacy-statement-for-office-365-secure-email-portal"></a>Declaración de privacidad de Office 365 portal de correo seguro
 
-Última actualización: Mayo de 2017
+Última actualización: 2017 de mayo
   
-Esta declaración de privacidad regula el Office 365 las nuevas capacidades OME Portal (el "las nuevas OME capacidades Portal"). Las versiones anteriores eran conocidas como Office 365 Message Encryption (OME) y el Portal de"OME". Esta declaración de privacidad no se aplica a otros sitios con o sin conexión, productos o servicios de Microsoft. Otras declaraciones de privacidad también es posible que se aplican a los datos de que proceso a través de las nuevas capacidades OME Portal, por ejemplo, la declaración de privacidad para una cuenta de Microsoft (si se usa para la autenticación) o la declaración de privacidad asociada con su dispositivo.
+Esta declaración de privacidad rige el nuevo portal de capacidades de OME (el nuevo portal de capacidades de OME). Las versiones anteriores se conocían como cifrado de mensajes de Office 365 (OME) y "portal de OME". Esta declaración de privacidad no se aplica a otros sitios, productos o servicios de Microsoft en línea o sin conexión. También se pueden aplicar otras declaraciones de privacidad a los datos que procese a través del nuevo portal de capacidades de OME, como la declaración de privacidad de la cuenta de Microsoft (si se usa para la autenticación) o la declaración de privacidad asociada con el dispositivo.
   
-## <a name="collection-processing-and-use-of-your-information"></a>Colección, el procesamiento y el uso de la información
+## <a name="collection-processing-and-use-of-your-information"></a>Recopilación, procesamiento y uso de la información
 
-Las nuevas capacidades OME Portal le permite ver el correo electrónico cifrado con Office 365 desde una variedad de puntos finales, como los equipos de escritorio o dispositivos móviles. El correo electrónico cifrado llega a su buzón de correo como datos adjuntos HTML a un correo normal. Si el correo se envía a su cuenta de Microsoft, del trabajo o cuenta de escuela o cuenta de Gmail, se le pedirá que inicie sesión en basada en la web las nuevas capacidades OME Portal con dicha cuenta. Si se envía el correo cifrado a una cuenta distinta de la Account de Microsoft, el trabajo o escuela cuenta o una cuenta de Gmail, le pedirá que cree una cuenta de Microsoft y asociarlo a la cuenta a la que se envió el mensaje cifrado; como alternativa, puede elegir solicitar un código de acceso única para la autenticación que se van a enviar a la misma dirección de correo electrónico a la que se envió el mensaje cifrado. Después de la autenticación correcta, el mensaje se descifra y se mostrará a través de las nuevas capacidades OME Portal.
+El nuevo portal de capacidades de OME permite ver el correo electrónico cifrado con Office 365 desde una amplia variedad de puntos finales, como equipos de escritorio o dispositivos móviles. El correo electrónico cifrado llega a su buzón como datos adjuntos HTML a un correo normal. Si el correo se envía a su cuenta de Microsoft, a una cuenta profesional o educativa o a una cuenta de gmail, se le pedirá que inicie sesión en el nuevo portal de capacidades de OME con dicha cuenta. Si el correo cifrado se envía a una cuenta distinta de la cuenta de Microsoft, a la cuenta profesional o educativa o a una cuenta de gmail, se le pedirá que cree una cuenta de Microsoft y la asociará a la cuenta a la que se envió el mensaje cifrado; como alternativa, puede elegir solicitar un código de acceso de un solo uso para la autenticación que se enviará a la misma dirección de correo electrónico a la que se envió el mensaje cifrado. Una vez realizada correctamente la autenticación, el mensaje se descifrará y se mostrará a través del nuevo portal de capacidades de OME.
   
-La información de las credenciales para la cuenta de Microsoft, el trabajo o cuenta de escuela, o la cuenta de Gmail, así como el código de acceso única, se utilizará únicamente con fines de autenticación; no se almacenan en las nuevas capacidades OME Portal, ni se utilizó las nuevas capacidades OME para ningún otro fin.
+La información de credenciales para la cuenta de Microsoft, la cuenta profesional o educativa, o la cuenta de gmail, así como el código de acceso de un solo uso, se usará únicamente con fines de autenticación; no se almacenará en el nuevo portal de capacidades de OME o lo usarán las nuevas funciones de OME para cualquier otro fin.
   
-Durante el proceso de descifrado, no se almacenará el correo cifrado que recibirá por las nuevas capacidades OME Portal; no se podrá transmitir fuera de las nuevas capacidades OME Portal en cualquier momento.
+Durante el proceso de descifrado, el nuevo portal de capacidades de OME no almacenará el correo cifrado que reciba. no se transmitirá fuera del nuevo portal de capacidades de OME en cualquier momento.
   
-Las nuevas capacidades OME que portal puede, en algunos casos, recopilan los puntos de datos sobre el uso y el rendimiento de las nuevas capacidades OME (por ejemplo, ¿con qué frecuencia se ven los mensajes cifrados, el explorador o aplicación utiliza y todos los errores detectados), que se puede analizar en agregado para fines de mejorar la calidad, la seguridad y la integridad de este y otros Microsoft aplicaciones, productos o servicios. Esta información no se usa para identificar, póngase en contacto con o anuncios de destino.
+El nuevo portal de capacidades de OME puede, en algunos casos, recopilar puntos de datos sobre el uso y el rendimiento de las nuevas capacidades de OME (por ejemplo, la frecuencia con la que se ven los mensajes cifrados, el explorador o la aplicación usados, y los errores encontrados), que se pueden analizar en agregarse a fin de mejorar la calidad, la seguridad y la integridad de esta y otras aplicaciones, productos o servicios de Microsoft. Esta información no se usa para identificar, contactar o dirigir publicidad a usted.
   
 ## <a name="for-more-information"></a>Para obtener más información
 
-Por favor, indique privacidad relacionadas con consultas a Microsoft a través de [omepriv@microsoft.com](mailto:omepriv@microsoft.com)o por correo, en la dirección siguiente:
+Dirija las consultas relacionadas con la privacidad a Microsoft a través de [omepriv@microsoft.com](mailto:omepriv@microsoft.com), o por correo electrónico, en la siguiente dirección:
   
-Privacidad de Microsoft - protección de la información
+Privacidad de Microsoft: protección de la información
   
 Microsoft Corporation
   
@@ -49,6 +49,6 @@ Redmond, Washington 98052, EE. UU.
   
 ## <a name="changes"></a>Cambios
 
-Si se registran los cambios realizados en esta declaración, revisaremos los datos de "última actualización" en la parte superior de la instrucción. Póngase en contacto con la organización que proporciona que acceso a sus servicios para obtener más información acerca de los cambios realizados en las prácticas de privacidad.
+Si se publican cambios en esta instrucción, se revisarán los datos de "última actualización" que se encuentra en la parte superior de la instrucción. Consulte con la organización que proporciona acceso a sus servicios para obtener más información acerca de los cambios en las prácticas de privacidad.
   
 

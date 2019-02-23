@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Comprenda la resistencia de los datos en Microsoft Office 365.
-ms.openlocfilehash: 126e00c53e578b287538617a0e1ad84ae86ce7f1
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+ms.openlocfilehash: 1e85f431edeec0a4548b1d37b65a4b1a6cbef8eb
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30090542"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215640"
 ---
 # <a name="data-resiliency-in-office-365"></a>Resistencia de datos en Office 365
 

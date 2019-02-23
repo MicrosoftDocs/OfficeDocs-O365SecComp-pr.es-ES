@@ -1,12 +1,12 @@
 ---
-title: Límites de indización en la exhibición de documentos electrónicos avanzada (vista previa)
+title: Límites de indización en la exhibición avanzada de documentos electrónicos (versión preliminar)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,13 +14,13 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: c5e503dadb213bfaac48ec92fa599be16a8f8d0c
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 610d87d168538d627cf64e2968d6e6350b587115
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29608343"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214680"
 ---
-# <a name="indexing-limits-in-advanced-ediscovery-preview"></a>Límites de indización en la exhibición de documentos electrónicos avanzada (vista previa)
+# <a name="indexing-limits-in-advanced-ediscovery-preview"></a>Límites de indización en la exhibición avanzada de documentos electrónicos (versión preliminar)
 
 Contenido disponible próximamente.

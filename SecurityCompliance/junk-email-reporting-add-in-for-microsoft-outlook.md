@@ -6,17 +6,17 @@ manager: laurawi
 ms.date: 1/14/2016
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 4650fec1-4ee3-4659-abbc-bf091718cb26
 description: 'El complemento de notificación de correo no deseado para Microsoft Outlook permite a los usuarios de Exchange Online y de Exchange Online Protection notificar correo no deseado fácilmente a Microsoft para su análisis a fin de reducir el número de mensajes futuros de correo no deseado filtrados por el servicio y minimizar su impacto. Compatible con Microsoft Outlook 2013, Outlook 2010 u Outlook 2007, con Windows 7, Windows 8 o Windows 10, el complemento de notificación ofrece las siguientes ventajas:'
-ms.openlocfilehash: 80ebbb0c202daec54722d3f87a92e85a8d500164
-ms.sourcegitcommit: c31424cafbf1953f2864d7e2ceb95b329a694edb
+ms.openlocfilehash: ec99ecc16137741b2f0de3043601105825417d37
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "23272215"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214590"
 ---
 # <a name="junk-email-reporting-add-in-for-microsoft-outlook"></a>Complemento de notificación de correo no deseado de Microsoft Outlook
 
@@ -36,6 +36,6 @@ En los siguientes temas se proporcionan instrucciones sobre cómo implementar, u
     
 - [Informar a Microsoft sobre mensajes de correo electrónico no deseado](report-junk-email-messages-to-microsoft.md) Se ofrece información a los usuarios finales acerca de cómo usar el complemento para notificar mensajes de correo no deseado a Microsoft. 
     
-- [Información de solución de problemas y soporte técnico](troubleshooting-and-support-information.md) Proporciona pasos para solucionar problemas para los usuarios finales y administradores y obtener información acerca de cómo ponerse en contacto con soporte técnico para obtener ayuda. 
+- [Solución de problemas e información de soporte técnico](troubleshooting-and-support-information.md) Describe los pasos para la solución de problemas para usuarios finales y administradores, e información sobre cómo ponerse en contacto con el soporte técnico para obtener ayuda. 
     
 

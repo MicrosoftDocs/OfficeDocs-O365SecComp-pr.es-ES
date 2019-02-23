@@ -6,130 +6,130 @@ manager: laurawi
 ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0e0a9d04-294f-4f54-8bf1-b32d81345126
-description: 'Revise los pasos para agregar los archivos importados a la última carga definido, o el lote, de los archivos antes de realizar la formación de relevancia de exhibición de documentos electrónicos avanzada de Office 365.  '
-ms.openlocfilehash: 2c986578b969b671351930fd6939a90e3a821dc2
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: 'Revise los pasos para agregar archivos importados a la última carga definida, o lote, de archivos antes de realizar el aprendizaje de relevancia en eDiscovery avanzado de Office 365.  '
+ms.openlocfilehash: 8c5101628b468719f8aa4f81a4c73cbbb226105f
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22536719"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215990"
 ---
 # <a name="set-up-loads-to-add-imported-files-in-office-365-advanced-ediscovery"></a>Configurar cargas para agregar archivos importados en eDiscovery avanzado de Office 365
 
 > [!NOTE]
-> Exhibición de documentos electrónicos avanzada requiere un E3 de Office 365 con el complemento de cumplimiento avanzadas o una suscripción E5 para su organización. Si no tiene ese plan y desea probar avanzada exhibición de documentos electrónicos, puede [registrarse y obtener una versión de prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
-En la exhibición de documentos electrónicos avanzada, una carga es un nuevo lote de archivos agregados a un caso. De forma predeterminada, se define una carga y todos los archivos importados se agregan a él. Antes de realizar la formación de relevancia, archivos importados deben agregarse a la carga. 
+En eDiscovery avanzado, una carga es un nuevo lote de archivos que se agregan a un caso. De forma predeterminada, se define una carga y se agregan todos los archivos importados. Antes de realizar la formación de relevancia, los archivos importados deben agregarse a la carga. 
   
 Tenga en cuenta los siguientes escenarios:
   
-- Los archivos nuevos se conocen como similar a los archivos anteriores cargados en la base de datos de mayúsculas y minúsculas, o la carga de archivos anterior era un conjunto aleatorio de la colección de archivos. En este caso, agregue los archivos importados a la carga del archivo actual.
+- Se sabe que los archivos nuevos son similares a los archivos anteriores cargados en la base de datos de casos o la carga anterior de archivos fue un conjunto aleatorio de la colección de archivos. En este caso, agregue los archivos importados a la carga de archivos actual.
     
-- Nuevos archivos son diferentes de los anteriores (por ejemplo, desde un origen diferente), o no tiene ningún conocimiento previo que son similares o diferentes a las cargas anteriores. En este escenario, agregar los archivos importados a una nueva carga de archivo. Exhibición de documentos electrónicos avanzada reconoce esto como un escenario de carga sucesivas, invoca un proceso de puesta al día, bloqueos de recursos de aprendizaje de la relevancia y cálculos de lote hasta que se complete ponerse al día, y la carga de nuevo es integrada y formación. 
+- Los archivos nuevos son distintos de los anteriores (por ejemplo, de un origen distinto) o no hay conocimiento previo de que sean similares o distintos a las cargas anteriores. En este escenario, agregue los archivos importados a una nueva carga de archivos. EDiscovery avanzado reconoce esto como un escenario de cargas continuas, invoca un proceso de puesta en marcha, bloquea el entrenamiento de relevancia y los cálculos por lotes hasta que se completa la puesta en marcha y la nueva carga se integra y se entrena. 
     
 ## <a name="adding-imported-files-to-the-current-load"></a>Adición de archivos importados a la carga actual
 
-Todos los archivos importados deben agregarse a una carga que va a procesar en la exhibición de documentos electrónicos avanzada. Los archivos importados se agregan a la última carga definida. Si importa archivos adicionales más adelante, también deben agregarse a la carga.
+Todos los archivos importados deben agregarse a una carga para ser procesados en eDiscovery avanzado. Los archivos importados se agregan a la última carga definida. Si importa archivos adicionales más adelante, también deben agregarse a la carga.
   
-1. En el **la relevancia \> el programa de instalación de la relevancia** ficha, seleccione **las cargas**.
+1. En la **pestaña \> configuración de relevancia** para la relevancia, seleccione **carga**.
     
     ![Pestaña Cargas de configuración de relevancia](media/278aac7f-655f-462f-852a-6baa5d818768.png)
   
-2. **Archivos de inclusión**: seleccione una opción para los archivos que se incluirán. De forma predeterminada, la adición de archivos a la carga actual se basa en la población de "Todos los archivos".
+2. **Archivos de inclusión**: Seleccione una opción para los archivos que se van a incluir. De forma predeterminada, la adición de archivos a la carga actual se basa en el llenado "todos los archivos".
     
     > [!TIP]
-    > Cargar todos los archivos sacrificados disponibles en la relevancia. Si tiene previsto cargar sólo un subconjunto de los archivos disponibles, póngase en primer lugar en contacto con soporte técnico, como subconjuntos de carga puede afectar negativamente al aprendizaje de la relevancia. 
+    > Cargar todos los archivos de selección disponibles en relevancia. Si tiene previsto cargar solo un subconjunto de los archivos disponibles, consulte primero la ayuda, ya que los subconjuntos de carga pueden afectar negativamente al entrenamiento de relevancia. 
   
-3. En la **administración de cargas**, seleccione una carga.
+3. En cargar **Administración**, seleccione una carga.
     
 4. Haga clic en **Agregar archivos**. Los archivos se agregan a la carga y se muestra un mensaje de confirmación. 
     
 5. Haga clic en **Aceptar**.
     
-Ahora se pueden procesar los archivos en la exhibición de documentos electrónicos avanzada la relevancia para los archivos de recursos de aprendizaje.
+Ahora, los archivos se pueden procesar en la relevancia avanzada de eDiscovery para entrenar a los archivos.
   
-## <a name="editing-a-load-name-within-a-case"></a>Edición de un nombre de la carga dentro de un caso
+## <a name="editing-a-load-name-within-a-case"></a>Edición de un nombre de carga en un caso
 
-Si se cambia el nombre de la carga, se recomienda usar un nombre que es importante para el caso.
+Si se cambia el nombre de carga, se recomienda usar un nombre significativo en el caso.
   
-1. En el **la relevancia \> el programa de instalación de la relevancia** ficha, seleccione **las cargas**.
+1. En la **pestaña \> configuración de relevancia** para la relevancia, seleccione **carga**.
     
-2. En la lista de **administración de cargas** , seleccione una carga y haga clic en el icono **Editar** . Se muestra la ventana de carga de edición. 
+2. En la lista **Administración de cargas** , seleccione una carga y haga clic en el icono **Editar** . Se muestra la ventana Editar carga. 
     
 3. Escriba los cambios y, a continuación, haga clic en **Aceptar**.
     
 ## <a name="adding-imported-files-to-a-new-load"></a>Adición de archivos importados a una nueva carga
 
-Después de iniciar el aprendizaje de la relevancia o realizar cálculos de lote, es posible que desee importar y procesar un conjunto de archivos adicional. 
+Después de iniciar el entrenamiento de relevancia o realizar el cálculo por lotes, es posible que desee importar y procesar un conjunto de archivos adicional. 
   
-Durante la puesta al día, puede crear, etiquetar y analizar el conjunto de ponerse al día. Exhibición de documentos electrónicos avanzada compara su evaluación de archivos pertinente y no pertinente en la carga de nuevo a los de cargas anteriores. En función de los resultados, le pedirá que tomar decisiones de ponerse al día, si es necesario y avanzada de exhibición de documentos electrónicos proporciona recomendaciones basadas en la información de la relevancia devengada. 
+Durante la puesta en marcha, puede crear, etiquetar y analizar el conjunto de puesta en marcha. EDiscovery avanzado compara la evaluación de los archivos relevantes y no relevantes en la nueva carga con los de cargas anteriores. En función de los resultados, se le pedirá que tome decisiones de puesta en marcha, si es necesario, y la exhibición avanzada de documentos electrónicos le proporcionará recomendaciones basadas en la información de relevancia acumulada. 
   
-Las sucesivas cargas y funcionalidad de puesta al día varían como sigue: 
+Las cargas graduales y la funcionalidad de puesta en marcha varían de la siguiente manera: 
   
-- Cuando se importa un nuevo archivo de carga después de cálculo por lotes, exhibición de documentos electrónicos avanzada determina en qué medida se clasifican los archivos en las siguientes categorías:
+- Al importar una nueva carga de archivos después del cálculo por lotes, la exhibición avanzada de documentos electrónicos determina en qué medida los archivos se dividen en una de las siguientes categorías:
     
-  - Similar (homogéneo): no se requiere una ronda personalizada, nueva y de aprendizaje de la relevancia y el conocimiento acumulado de la carga anterior se puede aplicar "tal cual" a la carga de nuevo. 
+  - Similar (homogéneo): no se requiere una nueva ronda personalizada de formación de relevancia y el conocimiento acumulado de la carga anterior puede aplicarse "tal cual" a la nueva carga. 
     
-  - DISTINCT (heterogéneo): se requiere una ronda personalizada, nueva y de aprendizaje de la relevancia y no se puede aplicar el conocimiento acumulado de la carga anterior. 
+  - DISTINCT (heterogéneo): se requiere un nuevo y personalizado de aprendizaje de relevancia, y no se puede aplicar el conocimiento acumulado de la carga anterior. 
     
-    Estos términos hacen referencia al nivel de similitud de archivos entre las cargas y no está dentro de las cargas. 
+    Estos términos se refieren al nivel de similitud de los archivos entre cargas y no dentro de las cargas. 
     
-- Al importar un nuevo archivo de carga durante el curso de la relevancia (antes de cálculo por lotes), permite ponerse al día continuar formación de relevancia en el conjunto de archivos united. Exhibición de documentos electrónicos avanzada no estimar si la carga de nuevo es similar a o distinta de la carga anterior. Simplemente recopila información sobre la carga de nuevo y habilita la relevancia de recursos de aprendizaje continuar en los nuevos y anteriores conjuntos de archivos. 
+- Al importar una nueva carga de archivos durante el entrenamiento de relevancia (antes del cálculo por lotes), la puesta en marcha permite continuar la formación de relevancia en el conjunto de archivos. La exhibición avanzada de documentos electrónicos no calcula si la nueva carga es similar o es diferente de la carga anterior. Simplemente recopila información sobre la nueva carga y permite que el entrenamiento de relevancia continúe en los conjuntos de archivos nuevos y anteriores. 
     
-- Cuando hay varios problemas en recursos de aprendizaje de la relevancia, así como problemas después de cálculo por lotes, el proceso de ponerse al día se lleva a cabo una vez para todos los problemas, y los resultados se calculan y se muestran para cada problema.
+- Cuando hay varios problemas en el entrenamiento de relevancia, así como problemas tras el cálculo del lote, el proceso de puesta en marcha se realiza una vez para todos los problemas y los resultados se calculan y se muestran para cada problema.
     
 > [!NOTE]
-> Puede variar el tamaño de la muestra de ponerse al día. Depende del tamaño de la carga de nuevo con respecto a las cargas anteriores y en el número de muestras completado antes de agregar la nueva carga. El ejemplo de ponerse al día normalmente es un conjunto de archivos de 200 a 2.000 desde la carga de nuevo. 
+> El tamaño de la muestra de puesta al día puede variar. Depende del tamaño de la nueva carga con respecto a las cargas anteriores y del número de muestras completadas antes de agregar la nueva carga. La muestra de puesta en marcha suele ser un conjunto de 200 a 2.000 archivos de la nueva carga. 
   
 > [!TIP]
-> Ponerse al día detiene cualquier otras tareas y requiere revisión y etiquetado de archivo individuales. Por lo tanto, puede reducir una sobrecarga cuando se agregan nuevos archivos por lotes de gran tamaño. 
+> La puesta en marcha detiene cualquier otra tarea y requiere un etiquetado y revisión del archivo individual. Por lo tanto, puede reducir la sobrecarga al agregar archivos nuevos en lotes grandes. 
   
-## <a name="adding-a-new-file-load-using-catch-up-and-rolling-loads"></a>Adición de una nueva carga de archivo con puesta al día y sucesiva carga
+## <a name="adding-a-new-file-load-using-catch-up-and-rolling-loads"></a>Adición de una nueva carga de archivos mediante la puesta en marcha y las cargas graduales
 
-1. En el **la relevancia \> el programa de instalación de la relevancia** ficha, seleccione **las cargas**.
+1. En la **pestaña \> configuración de relevancia** para la relevancia, seleccione **carga**.
     
-2. En **administración de cargas**, haga clic en el **+** icono para agregar una carga. Se muestra un mensaje de confirmación. 
+2. En cargar **Administración**, haga clic **+** en el icono para agregar una carga. Se muestra un mensaje de confirmación. 
     
-3. Haga clic en **Sí** para continuar. Se muestra el cuadro de diálogo **Agregar nueva carga** . 
+3. Haga clic en **sí** para continuar. Se muestra el cuadro de diálogo **Agregar nueva carga** . 
     
     > [!NOTE]
-    > Sólo se puede agregar una nueva carga si las acciones se realizaron a la carga anterior. 
+    > Solo se puede Agregar una nueva carga si se han realizado acciones con la carga anterior. 
   
-4. En el cuadro de diálogo **Agregar nuevo de carga** , escriba información en **cargar el nombre** y **Descripción** y, a continuación, haga clic en **Aceptar**. Exhibición de documentos electrónicos avanzada agrega una nueva carga.
+4. En el cuadro de diálogo **Agregar nueva carga** , escriba la información en **nombre de carga** y **Descripción** y, a continuación, haga clic en **Aceptar**. La exhibición avanzada de documentos electrónicos agrega una nueva carga.
     
-5. Para importar el nuevo archivo de carga, haga clic en **Agregar archivos**. Todos los archivos nuevos se agregan a esta carga. Después de exhibición de documentos electrónicos avanzada importa los archivos, reconoce el escenario de cargas sucesivas e indica ponerse al día como el siguiente paso.
+5. Para importar el nuevo archivo de carga, haga clic en **Agregar archivos**. Todos los archivos nuevos se agregan a esta carga. Una vez que la exhibición avanzada de documentos electrónicos importa los archivos, reconoce el escenario de cargas de rodadura e indica la puesta en marcha como paso siguiente.
     
-6. Haga clic en **ponerse al día** en la parte inferior del cuadro de diálogo para ejecutar el escenario. 
+6. Haga clic en **puesta en marcha** en la parte inferior del cuadro de diálogo para ejecutar el escenario. 
     
-    Un único conjunto de ponerse al día, que normalmente contiene los archivos de 200 a 2.000 de la carga de nuevo, se crea para que todos los problemas permitir que el etiquetado de archivo simultáneo.
+    Se crea un conjunto único de puesta en marcha, que suele contener de 200 a 2.000 archivos de la nueva carga, para todos los problemas que permitan el etiquetado simultáneo de archivos.
     
-    Se proporcionan detalles acerca de si las cargas son similares o distintos, si avanzada exhibición de documentos electrónicos a combinar o divide automáticamente las cargas e información con respecto al procesamiento en el paso siguiente.
+    Se proporcionan detalles sobre si las cargas son similares o distintas, si la exhibición de documentos electrónicos avanzada se combina o divide automáticamente las cargas, e información sobre el procesamiento en el paso siguiente.
     
-    Puede, a continuación, los archivos de etiqueta y ejecutar una operación de calcular. El etiquetado permite la relevancia determinar si las cargas son similares o distintos y le permite continuar trabajando en el nuevo conjunto de archivos.
+    A continuación, puede etiquetar archivos y ejecutar una operación de cálculo. El etiquetado permite que la relevancia determine si las cargas son similares o distintas, y le permite seguir trabajando en el nuevo conjunto de archivos.
     
-7. Una vez que se revisa el conjunto ponerse al día, ver **relevancia \> pista** para los resultados de ponerse al día. 
+7. Una vez revisado el conjunto de la puesta en marcha, vea el seguimiento de la **relevancia \> ** de los resultados de la puesta al día. 
     
-1. Si se ha agregado la nueva carga de archivo durante la formación de la relevancia (es decir, el problema no ha experimentado todavía cálculo por lotes), **aprendizaje continuar** es el siguiente paso, independientemente de los resultados de ponerse al día. 
+1. Si se agregó la nueva carga de archivos durante el entrenamiento de relevancia (es decir, el problema todavía no ha pasado por el cálculo del lote), **continúe con el aprendizaje** en el paso siguiente, independientemente de los resultados de la puesta en marcha. 
     
-    Se procesan las cargas anteriores y nueva como una carga y continúa la formación de la relevancia en el conjunto de united. Ahora ha terminado con este procedimiento y puede continuar la formación de relevancia. 
+    Las cargas nuevas y anteriores se procesan como una carga y el entrenamiento de relevancia sigue en el conjunto de United. Ha terminado con este procedimiento y puede continuar con el aprendizaje de relevancia. 
     
-2. Si se ha agregado la nueva carga después del cálculo por lotes, continúe con los pasos siguientes.
+2. Si la nueva carga se agregó después del cálculo por lotes, continúe con los pasos siguientes.
     
-8. Cargas nuevo agregadas después del cálculo por lotes, de exhibición de documentos electrónicos avanzada determina si la carga de nuevo es similar a o distintos de cargas anteriores, como se indica a continuación:
+8. Para las nuevas cargas agregadas después del cálculo por lotes, la exhibición avanzada de documentos electrónicos determina si la nueva carga es similar o diferente de las cargas anteriores, como se indica a continuación:
     
-1. Si se han encontrado cargas de forma similar: no hay recursos de aprendizaje adicionales de relevancia es necesario. El panel muestra el siguiente paso recomendado es ejecutar ** por lotes cálculo ** nuevamente para calcular las puntuaciones de relevancia para la carga de nuevo. Se han encontrado cargas de forma similar, por lo que se puede ejecutar el análisis de clasificador anterior en los nuevos archivos. 
+1. Si se considera que las cargas son similares: no es necesaria ninguna formación adicional de relevancia. El panel muestra el siguiente paso recomendado es ejecutar * * cálculo por lotes * * de nuevo para calcular los resultados de relevancia para la nueva carga. Se encontraron cargas similares, por lo que el análisis de clasificado anterior puede ejecutarse en los nuevos archivos. 
     
-2. Si se han encontrado cargas distinto: formación más relevancia es necesario y el siguiente paso es decisión ponerse al día. Seleccione una decisión ponerse al día de la siguiente manera:
+2. Si se encontraron cargas distintas: es necesario más aprendizaje de relevancia y el siguiente paso es la decisión de puesta al día. Seleccione una decisión de puesta en marcha de la siguiente manera:
     
-    Si selecciona **Combinar cargas**, exhibición de documentos electrónicos avanzada combina cargas anteriores y nueva para el conjunto de recursos de aprendizaje. Aunque la primera carga salió a través de cálculo por lotes, se necesitan más recursos de formación. Continuar la formación anterior y nueva carga juntos. Cálculo por lotes, a continuación, se ejecutará de nuevo y se deben omitir las puntuaciones de cálculo por lotes anteriores. Elija esta selección cuando las puntuaciones de la relevancia para cargas existentes pueden volver a calcularse, por ejemplo, cuando no ha iniciado la revisión de las cargas de archivos existente.
+    Si selecciona **cargas de fusión**, la exhibición avanzada de documentos electrónicos combina cargas anteriores y nuevas para el conjunto de entrenamiento. Aunque la primera carga pasó a través del cálculo por lotes, se necesita más formación. Continuar la formación de cargas nuevas y anteriores juntas. El cálculo del lote se ejecutará de nuevo y se omitirán los resultados del cálculo del lote anterior. Elija esta selección cuando se pueden actualizar los resultados de relevancia para las cargas existentes, por ejemplo, cuando no se ha iniciado la revisión de las cargas de archivos existentes.
     
-    Si selecciona **carga dividida**, continuar aprendizaje relevancia únicamente en la carga de nuevo. En esta instancia, las puntuaciones de cálculo de lote anteriores permanecerá tal y como está. Elija esta opción cuando las puntuaciones de la relevancia existentes para cargas existentes no se pueden volver a calcularse, por ejemplo, si ya ha iniciado la revisión de cargas existentes. Las puntuaciones de la relevancia se administran por separado desde este punto hacia adelante y no se pueden combinar.
+    Si selecciona **cargas divididas**, continúe el aprendizaje de relevancia solo en la nueva carga. En este caso, los resultados de cálculo del lote anteriores se conservarán tal cual. Elija esta opción si los resultados de relevancia existentes para cargas existentes no se pueden volver a calcular, por ejemplo, si ya se ha iniciado la revisión de las cargas existentes. Los resultados de relevancia se administran de forma independiente desde este punto hacia adelante y no se pueden combinar.
     
 3. Haga clic en **continuar formación**.
     
@@ -137,7 +137,7 @@ Las sucesivas cargas y funcionalidad de puesta al día varían como sigue:
 
 [eDiscovery avanzado de Office 365](office-365-advanced-ediscovery.md)
   
-[Definición de problemas y la asignación de usuarios](define-issues-and-assign-users.md)
+[Definir asuntos y asignar usuarios](define-issues-and-assign-users.md)
   
-[Definición de resaltado de las palabras clave y avanzadas opciones](define-highlighted-keywords-and-advanced-options.md)
+[Definir palabras clave resaltadas y opciones avanzadas](define-highlighted-keywords-and-advanced-options.md)
 

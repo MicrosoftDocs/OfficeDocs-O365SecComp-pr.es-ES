@@ -1,140 +1,139 @@
 ---
-title: Administrar las investigaciones legales en Office 365
+title: Administración de investigaciones legales en Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: ''
 ms.audience: Admin
 ms.topic: hub-page
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
-description: Utilice los casos de exhibición de documentos electrónicos en la seguridad de Office 365 &amp; centro de cumplimiento para administrar una investigación legal de la organización. Si tiene una suscripción E5, aún más puede analizar los datos de casos mediante el análisis de texto, aprendizaje de máquinas y capacidades de codificación predictivas de exhibición de documentos electrónicos avanzada.
-ms.openlocfilehash: 4e7b9117b3f0cb2fd6d4e70a7767f3cbe7b79724
-ms.sourcegitcommit: 01813cb9bbc2400d21bc99144745af953f9356e8
+description: Use casos de exhibición de documentos electrónicos en &amp; el centro de seguridad y cumplimiento de Office 365 para administrar la investigación legal de su organización. Si tiene una suscripción a E5, puede analizar más datos de caso con las capacidades de análisis de texto, aprendizaje de la máquina y Codificación predictiva de eDiscovery avanzado.
+ms.openlocfilehash: 5b3feb16b638235d46f67f6aa16ce49e1e7c11d5
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "25719054"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214400"
 ---
-# <a name="manage-legal-investigations-in-office-365"></a>Administrar las investigaciones legales en Office 365
+# <a name="manage-legal-investigations-in-office-365"></a>Administración de investigaciones legales en Office 365
 
-Las organizaciones tienen muchas razones para responder a un caso legal que implican ciertas ejecutivos u otros empleados de su organización. Esto podría implicar buscar rápidamente y conservar aún más investigación información específica en correo electrónico, documentos, las conversaciones de mensajería instantáneas y otras ubicaciones de contenido usadas por personas en sus tareas diarias. Puede realizar estas y muchas otras actividades similar mediante el uso de las herramientas de casos de exhibición de documentos electrónicos en la seguridad de Office 365 &amp; centro de cumplimiento.
+Las organizaciones tienen muchas razones para responder a un caso legal en el que participan determinados ejecutivos u otros empleados de la organización. Esto puede implicar la rápida búsqueda y la retención de información específica de la investigación en el correo electrónico, los documentos, las conversaciones de mensajería instantánea y otras ubicaciones de contenido que usan los usuarios en sus tareas de trabajo cotidianas. Puede realizar estas y muchas otras actividades similares mediante las herramientas de caso de exhibición de documentos electrónicos del centro &amp; de seguridad y cumplimiento de Office 365.
   
-[Administrar las investigaciones legales con los casos de exhibición de documentos electrónicos](#manage-legal-investigations-with-ediscovery-cases)
+[Administración de investigaciones legales con casos de eDiscovery](#manage-legal-investigations-with-ediscovery-cases)
   
-[Analizar datos mayúsculas usando Office 365 avanzada exhibición de documentos electrónicos](#analyze-case-data-using-office-365-advanced-ediscovery)
+[Analizar datos de casos con Office 365 Advanced eDiscovery](#analyze-case-data-using-office-365-advanced-ediscovery)
   
-**Desea saber cómo Microsoft administra sus investigaciones de exhibición de documentos electrónicos?** Aquí es una [técnica notas del producto](https://go.microsoft.com/fwlink/?linkid=852161) se puede descargar que explica cómo utilizamos las mismas herramientas de búsqueda y de investigación de Office 365 para administrar nuestro flujo de trabajo de exhibición de documentos electrónicos interno.
+**¿Desea saber cómo administra Microsoft sus investigaciones de eDiscovery?** A continuación se describen las [notas del producto](https://go.microsoft.com/fwlink/?linkid=852161) que puede descargar y que explican cómo usamos las mismas herramientas de búsqueda e investigación de Office 365 para administrar nuestro flujo de trabajo de eDiscovery interno.
    
-## <a name="manage-legal-investigations-with-ediscovery-cases"></a>Administrar las investigaciones legales con los casos de exhibición de documentos electrónicos
+## <a name="manage-legal-investigations-with-ediscovery-cases"></a>Administración de investigaciones legales con casos de eDiscovery
 
-exhibición de documentos electrónicos de los casos permiten controlar quién puede crear, obtener acceso y administrar casos de exhibición de documentos electrónicos en su organización. Casos de uso para agregar miembros y control de qué tipos de acciones que puede realizar, colocar una suspensión en ubicaciones de contenido relevante para un caso legal y usar la herramienta de búsqueda de contenido para buscar las ubicaciones en espera para el contenido que es posible que responda a su caso. A continuación, también puede exportar y descargar dichos resultados para una mayor investigación por los revisores externos. Si su organización de Office 365 tiene una suscripción E5, también puede preparar los resultados de búsqueda para el análisis de exhibición de documentos electrónicos avanzada.
+los casos de eDiscovery le permiten controlar quién puede crear, acceder y administrar casos de eDiscovery en su organización. Use casos para agregar miembros y controlar los tipos de acciones que pueden realizar, poner una retención en las ubicaciones de contenido relevantes para un caso legal y usar la herramienta de búsqueda de contenido para buscar en las ubicaciones en espera el contenido que pueda responder a su caso. A continuación, también puede exportar y descargar los resultados para seguir investigando por revisores externos. Si su organización de Office 365 tiene una suscripción a E5, también puede preparar los resultados de búsqueda para el análisis en la exhibición avanzada de documentos electrónicos.
   
-- [Administrar el flujo de trabajo de exhibición de documentos electrónicos](ediscovery-cases.md) mediante la creación y uso de los casos de exhibición de documentos electrónicos para cada investigación legal de su organización tiene para llevar a cabo 
+- [Administrar el flujo de trabajo de eDiscovery](ediscovery-cases.md) mediante la creación y el uso de casos de eDiscovery para cada investigación legal que la organización tiene que llevar a cabo 
     
-- [Asignar permisos de exhibición de documentos electrónicos](assign-ediscovery-permissions.md) para controlar quién puede crear y administrar casos de exhibición de documentos electrónicos en la organización 
+- [Asignar permisos de exhibición](assign-ediscovery-permissions.md) de documentos electrónicos para controlar quién puede crear y administrar casos de eDiscovery en su organización 
     
-- [Configurar los límites de cumplimiento](set-up-compliance-boundaries.md) para controlar las ubicaciones de contenido de usuario que pueden buscar los administradores de exhibición de documentos electrónicos 
+- [Configurar límites de cumplimiento](set-up-compliance-boundaries.md) para controlar las ubicaciones de contenido del usuario que los administradores de eDiscovery pueden buscar 
     
-- [Búsqueda de contenido](search-for-content.md) en la organización 
+- [Buscar contenido](search-for-content.md) en la organización 
     
-- [Preparar contenido caso de exhibición de documentos electrónicos avanzada](prepare-search-results-for-advanced-ediscovery.md) por lo que puede realizar mediante el análisis eficaces analítico herramientas de exhibición de documentos electrónicos avanzadas, como el reconocimiento óptico de caracteres, los subprocesos de correo electrónico y codificación predictivo 
+- [Preparar el contenido del caso para la exhibición avanzada de](prepare-search-results-for-advanced-ediscovery.md) documentos electrónicos para poder realizar análisis con las eficaces herramientas analíticas de eDiscovery avanzado, como el reconocimiento óptico de caracteres, el subprocesamiento de correo electrónico y la codificación predictiva 
     
-### <a name="use-scripts-for-advanced-scenarios"></a>Utilizar secuencias de comandos para escenarios avanzados
+### <a name="use-scripts-for-advanced-scenarios"></a>Usar scripts para escenarios avanzados
 
-Al igual que la sección anterior que enumeran las secuencias de comandos para los escenarios de búsqueda de contenido, también hemos creado algunas seguridad &amp; secuencias de comandos de PowerShell de centro de cumplimiento que le ayudarán a administrar casos de exhibición de documentos electrónicos.
+Al igual que en la sección anterior que enumeraba scripts para escenarios de búsqueda de contenido &amp; , también hemos creado algunos scripts de PowerShell del centro de cumplimiento de seguridad para ayudarle a administrar casos de eDiscovery.
   
-- [Informe de suspensión crear una exhibición de documentos electrónicos](create-a-report-on-holds-in-ediscovery-cases.md) que contiene información acerca de todas las suspensiones asociados con los casos de exhibición de documentos electrónicos en su organización 
+- [Crear un informe de suspensión de exhibición](create-a-report-on-holds-in-ediscovery-cases.md) de documentos electrónicos que contenga información sobre todas las retenciones asociadas con casos de eDiscovery en su organización 
     
-- Mantenga [los buzones de correo de agregar y ubicaciones de OneDrive](use-a-script-to-add-users-to-a-hold-in-ediscovery.md) para obtener una lista de los usuarios a una exhibición de documentos electrónicos 
+- [Agregar buzones de correo y ubicaciones de OneDrive](use-a-script-to-add-users-to-a-hold-in-ediscovery.md) para una lista de usuarios a una suspensión de exhibición de documentos electrónicos 
   
-## <a name="analyze-case-data-using-office-365-advanced-ediscovery"></a>Analizar datos mayúsculas usando Office 365 avanzada exhibición de documentos electrónicos
+## <a name="analyze-case-data-using-office-365-advanced-ediscovery"></a>Analizar datos de casos con Office 365 Advanced eDiscovery
 
-EDiscovery avanzada de Office 365 se basa en las capacidades de búsqueda y exhibición de documentos electrónicos contenidas que se describen en las secciones anteriores. Después de crear un caso de exhibición de documentos electrónicos, ubicaciones de custodia de lugar en espera y recopilan datos que es posible que responda a las mayúsculas y minúsculas, aún más, a continuación, puede analizar los datos mediante el análisis de texto, máquina de aprendizaje y las capacidades de codificación predictivas de opciones avanzadas exhibición de documentos electrónicos. Esto puede ayudar a su organización rápidamente procesar miles de mensajes de correo electrónico, documentos y otros tipos de datos para buscar los elementos que tienen más probabilidades de relevante para un caso concreto. Nos hemos unificadas y administración de casos y exhibición de documentos electrónicos avanzada para que puede administrar de manera transparente el mismo caso dentro de la seguridad &amp; centro de cumplimiento.
+Office 365 Advanced eDiscovery se basa en la búsqueda de contenido y en las capacidades de eDiscovery descritas en las secciones anteriores. Después de crear un caso de exhibición de documentos electrónicos, poner ubicaciones de custodios en suspensión y recopilar datos que puedan responder al caso, puede seguir analizando los datos con el análisis de texto, el aprendizaje de la máquina y las capacidades de Codificación predictiva de Advanced. exhibición. Esto puede ayudar a su organización a procesar rápidamente miles de mensajes de correo electrónico, documentos y otros tipos de datos para encontrar los elementos que son más relevantes para un caso específico. Además, hemos Unificado la administración de casos y la exhibición avanzada de documentos electrónicos para que pueda administrar sin problemas el &amp; mismo caso en el centro de seguridad y cumplimiento.
   
 > [!NOTE]
-> Para analizar los datos de un usuario mediante la exhibición de documentos electrónicos avanzada, el usuario (la custodia de los datos) debe estar asignado una licencia de Office 365 E5. Como alternativa, se pueden asignar una licencia independiente de exhibición de documentos electrónicos avanzada a los usuarios con una licencia de Office 365 E1 o E3. Los administradores y responsables del cumplimiento normativo que se asignan a los casos y utilizan eDiscovery avanzada para analizar datos no necesitan una licencia de E5. 
+> Para analizar los datos de un usuario con la exhibición avanzada de documentos electrónicos, el usuario (el custodio de los datos) debe tener asignada una licencia de Office 365 E5. Como alternativa, se puede asignar una licencia independiente de eDiscovery avanzado a los usuarios con una licencia de Office 365 E1 o E3. Los administradores y los responsables de cumplimiento que se asignan a los casos y usan la exhibición avanzada de documentos electrónicos para analizar los datos no necesitan una licencia E5. 
   
 ### <a name="get-started"></a>Introducción
 
-La forma más rápida de empezar a trabajar con la exhibición de documentos electrónicos avanzada consiste en crear un caso y preparación de los resultados de búsqueda en seguridad &amp; centro de cumplimiento, cargar esos resultados en la exhibición de documentos electrónicos avanzada y, a continuación, ejecutar análisis de Express para analizar que caso datos y, a continuación, exportar la resultados de una revisión externa.
+La forma más rápida de empezar a usar eDiscovery avanzado es crear un caso y preparar los resultados de la búsqueda &amp; en el centro de seguridad y cumplimiento, cargar los resultados en la exhibición avanzada de documentos electrónicos y, a continuación, ejecutar el análisis rápido para analizar los datos de caso y, a continuación, exportar el resultados de la revisión externa.
   
-- [Obtenga una introducción acerca](quick-setup-for-advanced-ediscovery.md) del flujo de trabajo de exhibición de documentos electrónicos avanzadas 
+- [Obtener información general rápida sobre](quick-setup-for-advanced-ediscovery.md) el flujo de trabajo de eDiscovery avanzado 
     
-- [Configurar los usuarios y los casos de](set-up-users-and-cases-in-advanced-ediscovery.md) exhibición de documentos electrónicos avanzada mediante la creación de un caso, asignación de permisos de exhibición de documentos electrónicos y adición de case (miembros), todo mediante el uso de la seguridad &amp; centro de cumplimiento 
+- [Configure usuarios y casos](set-up-users-and-cases-in-advanced-ediscovery.md) para la exhibición avanzada de documentos electrónicos creando un caso, asignando permisos de exhibición de documentos electrónicos y agregando miembros de &amp; caso, todo mediante el centro de seguridad y cumplimiento 
     
-- [Prepare y carga de datos de búsqueda](prepare-data-for-advanced-ediscovery.md) en el caso de exhibición de documentos electrónicos avanzada 
+- [Preparar y cargar los datos de búsqueda](prepare-data-for-advanced-ediscovery.md) en el caso de eDiscovery avanzado 
     
-- [Carga de datos que no sean de Office 365](import-non-office-365-data-into-advanced-ediscovery.md) en a un caso para analizar en la exhibición de documentos electrónicos avanzada 
+- [Cargar datos que no son de Office 365](import-non-office-365-data-into-advanced-ediscovery.md) en un caso para analizarlos en la exhibición avanzada de documentos electrónicos 
     
-- [Análisis de uso Express](use-express-analysis-in-advanced-ediscovery.md) para analizar rápidamente los datos en un caso y, a continuación, exportar fácilmente los resultados 
+- [Usar el análisis](use-express-analysis-in-advanced-ediscovery.md) rápido para analizar rápidamente los datos en un caso y, a continuación, exportar fácilmente los resultados 
     
-### <a name="analyze-data"></a>Análisis de datos
+### <a name="analyze-data"></a>Analizar datos
 
-Después de cargar datos de búsqueda en el caso de exhibición de documentos electrónicos avanzada, debe usar el módulo de analizar para iniciar su análisis. La primera parte del proceso de análisis consta de organizar los archivos en grupos de archivos únicos, duplicados y cerca de duplicados (también se conoce como la similitud de documento). A continuación, podrá organizar los datos nuevamente en grupos estructurados jerárquicamente de subprocesos de correo electrónico y los temas y, opcionalmente, set omitir filtros de texto para excluir determinado texto de análisis. A continuación, podrá ejecutar el análisis y ver los resultados.
+Una vez que los datos de búsqueda se cargan en el caso de la exhibición avanzada de documentos electrónicos, usará el módulo analizar para empezar a analizarlo. La primera parte del proceso de análisis consiste en organizar los archivos en grupos de archivos únicos, duplicados y casi duplicados (también conocido como similitud de documentos). A continuación, organizará de nuevo los datos en grupos estructurados jerárquicamente de subprocesos y temas de correo electrónico y, opcionalmente, puede configurar omitir filtros de texto para excluir determinados textos del análisis. A continuación, ejecutará el análisis y verá los resultados.
   
-- [Obtenga información acerca de la similitud de documento](understand-document-similarity-in-advanced-ediscovery.md) a prepararse para analizar datos en la exhibición de documentos electrónicos avanzada 
+- [Obtenga información sobre la similitud de documentos](understand-document-similarity-in-advanced-ediscovery.md) para prepararse para analizar datos en eDiscovery avanzado. 
     
-- [Configurar las opciones](set-analyze-options-in-advanced-ediscovery.md) de cerca de duplicados, temas y correo electrónico threading y, a continuación, ejecute el módulo de analizar 
+- [Configurar las opciones](set-analyze-options-in-advanced-ediscovery.md) para casi duplicados, temas y subprocesos de correo electrónico y, a continuación, ejecutar el módulo ANALYZE 
     
-- [Configurar filtros de omitir texto](set-ignore-text-in-advanced-ediscovery.md) para excluir el texto y las cadenas de texto de que se analizan; Estos filtros también omitirá el texto cuando se ejecutan el análisis de la relevancia 
+- [Configure omitir filtros de texto](set-ignore-text-in-advanced-ediscovery.md) para excluir texto y cadenas de texto del análisis; Estos filtros también omitirán el texto al ejecutar el análisis de relevancia 
     
 - [Ver los resultados](view-analyze-results-in-advanced-ediscovery.md) del proceso de análisis 
     
-- [Configurar las propiedades avanzadas de configuración](set-analyze-advanced-settings-in-advanced-ediscovery.md) para el proceso de análisis 
+- [Configurar opciones avanzadas](set-analyze-advanced-settings-in-advanced-ediscovery.md) para el proceso de análisis 
     
-### <a name="set-up-relevance-training"></a>Configurar recursos de aprendizaje de relevancia
+### <a name="set-up-relevance-training"></a>Configurar la formación de relevancia
 
-Predicción de codificación (llamada relevancia) en Opciones avanzadas exhibición de documentos electrónicos permite entrenar al sistema en lo está buscando por lo que le permite para tomar decisiones (sobre si algo es relevante o no) en un conjunto reducido de documentos.
+La codificación predictiva (denominada relevancia) en eDiscovery avanzado le permite entrenar al sistema sobre lo que está buscando, permitiéndole tomar decisiones (sobre si algo es relevante o no) en un pequeño conjunto de documentos.
   
-- [Obtenga información sobre la configuración de recursos de aprendizaje de la relevancia](manage-relevance-setup-in-advanced-ediscovery.md) , los archivos que son relevantes para un caso de etiquetado y la definición de caso de problemas 
+- [Obtenga información sobre la configuración](manage-relevance-setup-in-advanced-ediscovery.md) de la formación de relevancia, la etiquetación de archivos que son relevantes para un caso y la definición de problemas de casos. 
     
-- [Problemas de caso de definir](define-issues-and-assign-users.md) y asignar cada problema a un usuario que enseñará a los archivos 
+- [Definir los problemas de caso](define-issues-and-assign-users.md) y asignar cada problema a un usuario que vaya a entrenar los archivos 
     
-- [Agregar archivos importados para carga actual o nueva](set-up-loads-to-add-imported-files.md) que se agregará a la formación de relevancia; una carga es un nuevo lote de archivos que se agregan a un caso y, a continuación, se usa para realizar un curso de relevancia 
+- [Agregar archivos importados a la carga actual o nueva](set-up-loads-to-add-imported-files.md) que se agregarán al aprendizaje de relevancia; una carga es un nuevo lote de archivos que se agregan a un caso y que luego se usan para el entrenamiento de relevancia. 
     
-- [Definir resalta las palabras clave](define-highlighted-keywords-and-advanced-options.md) que se pueden agregar a la formación de relevancia; Esto ayuda a identificar mejor los archivos que son relevantes para un caso 
+- [Definir palabras clave](define-highlighted-keywords-and-advanced-options.md) resaltadas que se pueden agregar al aprendizaje de relevancia; Esto le ayuda a identificar mejor los archivos relevantes para un caso 
     
-### <a name="run-the-relevance-module"></a>Ejecute el módulo de relevancia
+### <a name="run-the-relevance-module"></a>Ejecutar el módulo de relevancia
 
-Después de configurar los recursos de aprendizaje, estará listo ejecutar el módulo de la relevancia y evaluar la eficacia de la configuración de recursos de aprendizaje este los resultados en una clasificación por relevancia que le ayudará a decidir si necesita realizar cursos de aprendizaje adicionales o si está listo para iniciar el etiquetado de archivos como pertinentes a su caso.
+Una vez configurada la formación, ya está listo para ejecutar el módulo de relevancia y evaluar la efectividad de la configuración de entrenamiento esto da como resultado una clasificación de relevancia que le ayuda a decidir si necesita realizar más aprendizajes o si está listo para empezar a etiquetar archivos como relevante para el caso.
   
-- [Obtenga información acerca del proceso de la relevancia](use-relevance-in-advanced-ediscovery.md) y el proceso iterativo de evaluación, etiquetas temáticas, el seguimiento y volver a recursos de aprendizaje basan en conjunto de archivos de ejemplo 
+- [Obtenga más información sobre el proceso de relevancia](use-relevance-in-advanced-ediscovery.md) y el proceso iterativo de evaluación, etiquetado, seguimiento y reentrenamiento en función del conjunto de archivos de muestra. 
     
-- [Obtenga información acerca de la evaluación](assessment-in-relevance-in-advanced-ediscovery.md) , donde un especialista familiarizado con el caso revisa un conjunto de archivos de mayúsculas y minúsculas y determina la eficacia de la formación de relevancia 
+- [Obtenga más información acerca](assessment-in-relevance-in-advanced-ediscovery.md) de la evaluación, donde un experto familiarizado con el caso revisa un conjunto de archivos de casos y determina la efectividad del entrenamiento de relevancia. 
     
-- [Archivos de casos Assess](tagging-and-assessment-in-advanced-ediscovery.md) para calcular la eficacia (denominada *flexibilidad* ) de configuración de recursos de aprendizaje y, a continuación, los archivos de etiqueta como relevantes o no relevantes para su caso; Esto ayuda a determinar si la formación actual es suficiente o si se debe ajustar la configuración de recursos de aprendizaje. 
+- [Evaluar los archivos de casos](tagging-and-assessment-in-advanced-ediscovery.md) para calcular la eficacia (denominada *riqueza* ) de la configuración de entrenamiento y, a continuación, etiquete los archivos según sea relevante o no sean relevantes para su caso; Esto le ayudará a determinar si la formación actual es suficiente o si debe ajustar la configuración del entrenamiento. 
     
-- [La formación de la relevancia de realizar](tagging-and-relevance-training-in-advanced-ediscovery.md) una vez finalizada de evaluación y, a continuación, una vez más marcar archivos como relevantes o no relevantes para los problemas que haya definido para el caso de 
+- [Lleve a cabo el entrenamiento de relevancia](tagging-and-relevance-training-in-advanced-ediscovery.md) una vez que se haya completado la evaluación y, después, vuelva a etiquetar los archivos según sea relevante o no sean relevantes para los problemas que ha definido en el caso 
     
-- Proceso de [seguimiento el análisis de la relevancia](track-relevance-analysis-in-advanced-ediscovery.md) para determinar si los recursos de aprendizaje de la relevancia ha logrado su destino de evaluación (conocido como un *estado estable aprendizaje* ) o si se necesita más recursos de formación; También puede ver los resultados de la relevancia de cada problema de mayúsculas y minúsculas 
+- [Realizar un seguimiento del](track-relevance-analysis-in-advanced-ediscovery.md) proceso de análisis de relevancia para determinar si el entrenamiento de relevancia ha logrado su objetivo de evaluación (conocido como *Estado de formación estable* ) o si se necesita más formación; también puede ver los resultados de relevancia para cada problema de caso 
     
-- [Tomar decisiones en función de análisis de la relevancia](decision-based-on-the-results-in-advanced-ediscovery.md) para determinar que el tamaño del conjunto resultante de caso de archivos que se pueden exportar para su revisión 
+- [Tomar decisiones basadas en el análisis de relevancia](decision-based-on-the-results-in-advanced-ediscovery.md) para determinar el tamaño del conjunto resultante de archivos de casos que se pueden exportar para revisión 
     
-- [La calidad del análisis de la relevancia de prueba](test-relevance-analysis-in-advanced-ediscovery.md) para validar las decisiones de selección realizadas durante el proceso de relevancia 
+- [Probar la calidad del análisis de relevancia](test-relevance-analysis-in-advanced-ediscovery.md) para validar las decisiones de selección realizadas durante el proceso de relevancia 
     
-### <a name="export-results"></a>Resultados de la exportación
+### <a name="export-results"></a>Exportar resultados
 
-Es el último paso de análisis de datos de los casos de exhibición de documentos electrónicos avanzada exportar los resultados del análisis de una revisión externa.
+El último paso para analizar los datos de casos en eDiscovery avanzado es exportar los resultados del análisis para una revisión externa.
   
-- [Obtenga información sobre cómo exportar los datos de casos](export-case-data-in-advanced-ediscovery.md)
+- [Obtener información sobre cómo exportar datos de casos](export-case-data-in-advanced-ediscovery.md)
     
-- [Exportar los datos de casos](export-results-in-advanced-ediscovery.md)
+- [Exportar datos de casos](export-results-in-advanced-ediscovery.md)
     
-- [Ver el historial de proceso por lotes y exportar más allá de los resultados](view-batch-history-and-export-past-results.md)
+- [Ver el historial del lote y exportar resultados pasados](view-batch-history-and-export-past-results.md)
     
-- [Campos de exportación de informe](export-report-fields-in-advanced-ediscovery.md)
+- [Exportar campos de informes](export-report-fields-in-advanced-ediscovery.md)
     
-### <a name="other-advanced-ediscovery-tools"></a>Otras herramientas de exhibición de documentos electrónicos avanzadas
+### <a name="other-advanced-ediscovery-tools"></a>Otras herramientas avanzadas de eDiscovery
 
-Exhibición de documentos electrónicos avanzada proporciona herramientas adicionales y capacidades más allá del análisis de datos de los casos, el análisis de la relevancia y exportación de datos.
+EDiscovery avanzado proporciona herramientas y capacidades adicionales aparte del análisis de datos de casos, el análisis de relevancia y la exportación de datos.
   
-- [Ejecutar informes de exhibición de documentos electrónicos avanzadas](run-reports-in-advanced-ediscovery.md)
+- [Ejecutar informes de eDiscovery avanzado](run-reports-in-advanced-ediscovery.md)
     
-- [Definir la configuración de mayúsculas y minúsculas e inquilino](define-case-and-tenant-settings-in-advanced-ediscovery.md)
+- [Definir la configuración de casos y espacios empresariales](define-case-and-tenant-settings-in-advanced-ediscovery.md)
     
-- [Utilidades de exhibición de documentos electrónicos avanzadas](use-advanced-ediscovery-utilities.md)
+- [Utilidades avanzadas de eDiscovery](use-advanced-ediscovery-utilities.md)

@@ -1,136 +1,136 @@
 ---
-title: Use el explorador en la seguridad &amp; centro de cumplimiento
+title: Usar el explorador en el &amp; centro de seguridad y cumplimiento
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 02/13/2019
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection: M365-security-compliance
-description: Obtenga información sobre el explorador (también denominado Explorador de amenaza) en la seguridad &amp; centro de cumplimiento.
-ms.openlocfilehash: 16f5b15c6993301f4f324f4b84c3b6e61f255e0f
-ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
+description: Obtenga información sobre el explorador (también denominado explorador de amenazas) &amp; en el centro de seguridad y cumplimiento.
+ms.openlocfilehash: 439a7d53e185e12ddd5d2e19b9d88bd8c9b47dad
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "29995121"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218990"
 ---
-# <a name="use-explorer-in-the-security-amp-compliance-center"></a>Use el explorador en la seguridad &amp; centro de cumplimiento
+# <a name="use-explorer-in-the-security-amp-compliance-center"></a>Usar el explorador en el &amp; centro de seguridad y cumplimiento
 
-Si su organización tiene [Información sobre amenazas de Office 365](office-365-ti.md), y tiene los permisos necesarios, puede usar el explorador para identificar y analizar las amenazas. Por ejemplo, puede identificar y eliminar el correo electrónico malintencionado que se entregó o vea malware que se capturó mediante las características de seguridad de Office 365. Explorer (también denominada Explorador de amenaza) es un potente cerca de informe en tiempo real en la seguridad &amp; centro de cumplimiento.
+Si su organización tiene [Office 365 Threat Intelligence](office-365-ti.md)y dispone de los permisos necesarios, puede usar el explorador para identificar y analizar las amenazas. Por ejemplo, puede identificar y eliminar correo electrónico malintencionado que se entregó, o ver malware detectado por las características de seguridad de Office 365. Explorer (también conocido como explorador de amenazas) es un eficaz informe en tiempo real en el centro de &amp; seguridad y cumplimiento.
   
-![Vaya a administración de amenaza \> Explorer](media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
+![Ir al explorador de \> administración de amenazas](media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
   
-Para usar el explorador, en la seguridad &amp; centro de cumplimiento, vaya a **administración de amenazas** \> **Explorer**.
+Para usar el explorador, en el &amp; centro de seguridad y cumplimiento, vaya a **Threat Management** \> **Explorer**.
 
 > [!IMPORTANT]
-> A partir de febrero de 2019 e implantar durante los próximos meses, información sobre amenazas de Office 365 se está convirtiendo en Office 365 avanzada amenaza protección Plan 2, con las funcionalidades de protección de amenaza adicionales. Para obtener más información, vea [los planes de protección de amenaza avanzada de Office 365 y los precios](https://products.office.com/exchange/advance-threat-protection) y la [Office 365 avanzada Threat Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+> A partir de febrero de 2019 y la implementación en los próximos meses, Office 365 Threat Intelligence se convierte en Office 365 Advanced Threat Protection Plan 2, con capacidades adicionales de protección contra amenazas. Para obtener más información, consulte [planes y precios](https://products.office.com/exchange/advance-threat-protection) de la protección contra amenazas avanzada de Office 365 y la [Descripción del servicio de protección contra amenazas avanzada de Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
       
-## <a name="explorer-overview"></a>Introducción al explorador
+## <a name="explorer-overview"></a>Información general del explorador
 
-El explorador muestra información sobre malware sospechoso en el correo electrónico y los archivos de Office 365, así como otras amenazas de seguridad y riesgos para la organización. La primera vez que se abre el explorador, la vista predeterminada muestra las detecciones de malware de antivirus para los últimos 7 días. El explorador también puede mostrar seguridad características de protección en Office 365, incluidos [Vínculos seguros](atp-safe-links.md) y [Los datos adjuntos seguros](atp-safe-attachments.md) y se puede modificar para mostrar los datos de los últimos 30 días.
+Explorer muestra información sobre malware sospechoso en el correo electrónico y los archivos de Office 365, así como otras amenazas de seguridad y riesgos para la organización. La primera vez que se abre el explorador, la vista predeterminada muestra las detecciones de malware desde el antivirus durante los últimos 7 días. El explorador también puede mostrar características de protección de seguridad en Office 365, incluidos [vínculos seguros](atp-safe-links.md) y [datos adjuntos seguros](atp-safe-attachments.md) , y se puede modificar para mostrar los datos de los últimos 30 días.
   
-![El explorador muestra información acerca de los principales de malware y los usuarios de destino](media/8e8c1582-d6f4-4521-8591-686a1cb01f7e.png)
+![El explorador muestra información sobre el malware y los usuarios de destino](media/8e8c1582-d6f4-4521-8591-686a1cb01f7e.png)
   
 Use el menú Ver para cambiar la información que se muestra.
   
-![El menú Ver para el explorador](media/2bb34f58-555f-4967-ba55-740334ef1f8e.png)
+![Menú Ver del explorador](media/2bb34f58-555f-4967-ba55-740334ef1f8e.png)
   
-El explorador tiene varias filtrado y consultar las funcionalidades que permiten explorar en profundidad detalles, como la parte superior había destinada a los usuarios, las familias de malware superior y más. Cada tipo de informe ofrece una variedad de posibilidades para ver y explorar datos.
+El explorador tiene varias capacidades de filtrado y consulta que le permiten profundizar en los detalles, como los usuarios de destino más importantes, las familias de malware más importantes y mucho más. Cada tipo de informe ofrece varias formas de ver y explorar los datos.
 
 > [!IMPORTANT]
-> No utilice caracteres comodín, como un asterisco (*) o un signo de interrogación (?), con el explorador. Al buscar en el campo Asunto de los mensajes de correo electrónico, el explorador realizará parciales resultados de coincidencia y rendimiento similares a una búsqueda con caracteres comodín.
+> No use caracteres comodín, como un asterisco (*) o un signo de interrogación (?), con el explorador. Al buscar mensajes de correo electrónico en el campo asunto, el explorador realizará una coincidencia parcial y obtendrá resultados similares a una búsqueda con caracteres comodín.
 
-## <a name="email--malware"></a>Correo electrónico \> Malware
+## <a name="email--malware"></a>Malware \> de correo electrónico
 
-Esta vista muestra los mensajes de correo electrónico identificados como que contiene el malware.  
+Esta vista muestra los mensajes de correo electrónico identificados como que contienen malware.  
 
-Ver la información en el gráfico por familia de código malintencionado, dominio del remitente, IP del remitente, el estado de protección (acciones realizadas por sus características de protección de amenaza y directivas en Office 365) y tecnología de detección (cómo se detectó el malware).  
+Permite ver la información del gráfico por la familia de código malintencionado, el dominio del remitente, la dirección IP del remitente, el estado de protección (acciones tomadas por las directivas y directivas de protección contra amenazas en Office 365) y la tecnología de detección (el modo en que se detectó el malware).  
 
 ![Ver datos sobre malware detectado](media/d11dc568-b091-4159-b261-df13d76b520b.png)         
 
-Debajo del gráfico, ver detalles acerca de las familias de malware superior, parte superior había destinada a los usuarios y obtener más detalles acerca de los mensajes específicos. 
+Debajo del gráfico, vea los detalles de las familias de malware principales, los usuarios de destino más importantes y más información sobre mensajes específicos. 
 
-## <a name="email--phish"></a>Correo electrónico \> phishing
+## <a name="email--phish"></a>Phishing \> de correo electrónico
 
-Esta vista muestra los mensajes de correo electrónico identificados como los intentos de suplantación de identidad.  
+Esta vista muestra los mensajes de correo electrónico identificados como intentos de suplantación de identidad.  
 
-Ver la información de dominio del remitente, IP del remitente y el estado de protección (acciones realizadas por sus características de protección de amenaza y directivas en Office 365). 
+Ver información por dominio del remitente, IP del remitente y estado de protección (acciones tomadas por las características y directivas de protección contra amenazas en Office 365). 
 
-![Ver los datos de correo electrónico que se identificó como intentos de suplantación de identidad](media/2e3f97fa-2b99-47f9-afd6-216d10633c50.png) 
+![Ver datos sobre correo electrónico identificado como intentos de suplantación de identidad](media/2e3f97fa-2b99-47f9-afd6-216d10633c50.png) 
 
-Debajo del gráfico, ver más detalles acerca de los mensajes específicos. 
+Debajo del gráfico, vea más detalles sobre mensajes específicos. 
 
-## <a name="email--user-reported"></a>Correo electrónico \> indicado por el usuario
+## <a name="email--user-reported"></a>Usuario \> de correo electrónico: informado
 
-Esta vista muestra el correo electrónico que los usuarios han informado como no deseado, no correo no deseado o correo electrónico de suplantación de identidad.  
+Esta vista muestra el correo electrónico que los usuarios han notificado como correo electrónico no deseado, no deseado o de suplantación de identidad.  
 
-Ver la información por tipo de informe (determinación de la del usuario que el correo electrónico es correo no deseado, no no deseado o phishing) y por el motivo de la entrega (motivos de por qué salió el correo electrónico a una ubicación específica, como una directiva de filtro de spam, una regla de flujo de correo, una lista de remitentes bloqueados, una lista de remitentes seguros, etcetera.).  
+Ver información por tipo de informe (la determinación del usuario de que era correo no deseado, correo deseado o phish) y por razón de entrega (razones por las que el correo electrónico se redirigió a una ubicación específica, como una directiva de filtro de correo no deseado, una regla de flujo de correo, una lista de remitentes bloqueados, una lista de remitentes seguros, etc.).  
 
-![Datos de vista acerca de los usuarios de correo electrónico enviados como correo no deseado, no no deseado o suplantación de identidad](media/255acd04-0d07-4b29-82af-5060a60c20ab.png)  
+![Ver los datos de los usuarios de correo electrónico que se notifican como correo no deseado, correo deseado o phishing](media/255acd04-0d07-4b29-82af-5060a60c20ab.png)  
 
-Debajo del gráfico, ver más detalles acerca de los mensajes de correo electrónico específica, como la línea de asunto, la dirección IP del remitente, el usuario que envió el mensaje como correo no deseado, no no deseado, o phishing y mucho más. 
+Debajo del gráfico, vea más detalles sobre los mensajes de correo electrónico específicos, como la línea de asunto, la dirección IP del remitente, el usuario que notificó el mensaje como correo no deseado, correo deseado o phish, entre otros. 
 
-## <a name="email--all-mail"></a>Correo electrónico \> todo el correo
+## <a name="email--all-mail"></a>Enviar \> por correo electrónico todo el correo
 
-Este vistas muestra una vista de total de actividad de correo electrónico, correo electrónico, con identificado como malintencionados de vencimiento para la suplantación de identidad o malware, además de todo el correo que no sean malintencionado (correo electrónico normal, correo no deseado y correo masivo). 
+En esta vista se muestra una vista general de la actividad de correo electrónico, incluido el correo electrónico identificado como malintencionado debido a suplantación de identidad (phishing) o malware, así como a todo el correo no malintencionado (correo electrónico normal, correo no deseado y correo masivo). 
 
 > [!NOTE]
-> Si recibe un error que lee **demasiado cantidad de datos para mostrar**, agregue un filtro y, si es necesario, restringir el intervalo de fechas que se está viendo. 
+> Si recibe un error que lee **demasiados datos para mostrar**, agregue un filtro y, si es necesario, restrinja el intervalo de fechas que está viendo. 
 
-Para aplicar un filtro, elija **remitente**, seleccione un elemento en la lista y, a continuación, haga clic en el botón Actualizar. En nuestro ejemplo, hemos usado la **tecnología de detección** como un filtro (hay varias opciones disponibles). Ver la información de remitente, dominio del remitente, los destinatarios, asunto, nombre de archivo de datos adjuntos, familia de código malintencionado, el estado de protección (acciones realizadas por sus características de protección de amenaza y directivas en Office 365), tecnología de detección (cómo se detectó el malware), y más. 
+Para aplicar un filtro, elija **remitente**, seleccione un elemento de la lista y, a continuación, haga clic en el botón actualizar. En nuestro ejemplo, utilizamos la **tecnología de detección** como filtro (hay varias opciones disponibles). Ver información por remitente, dominio del remitente, destinatarios, asunto, nombre de archivo de datos adjuntos, familia de malware, estado de protección (acciones llevadas a cabo por las directivas y características de protección contra amenazas en Office 365), la tecnología de detección (cómo se detectó el malware) y adicional. 
 
-![Ver los datos de correo electrónico detectado por tecnología de detección](media/0c032eb3-6021-4174-9f06-ff8f30c245ca.png) 
+![Ver los datos sobre el correo electrónico detectado mediante la tecnología de detección](media/0c032eb3-6021-4174-9f06-ff8f30c245ca.png) 
 
-Debajo del gráfico, ver más detalles acerca de los mensajes de correo electrónico específica, por ejemplo, la línea de asunto, destinatario, remitente, estado y así sucesivamente. 
+Debajo del gráfico, vea más detalles sobre los mensajes de correo electrónico específicos, como la línea de asunto, el destinatario, el remitente, el estado, etc. 
 
-## <a name="content--malware"></a>Contenido \> Malware
+## <a name="content--malware"></a>Malware \> de contenido
 
-Esta vista muestra los archivos que se han identificado como malintencionados en SharePoint Online, OneDrive para la empresa y Microsoft Teams.
+Esta vista muestra los archivos que se identificaron como malintencionados en SharePoint Online, OneDrive para la empresa y Microsoft Teams.
 
-Ver la información por malware, detección tecnología de la familia (cómo se detectó el malware) y carga de trabajo (OneDrive, SharePoint o equipos). 
+Ver información por familia de malware, tecnología de detección (cómo se detectó el malware) y carga de trabajo (OneDrive, SharePoint o Teams). 
 
 ![Ver datos sobre malware detectado](media/d11dc568-b091-4159-b261-df13d76b520b.png)  
 
-Debajo del gráfico, ver más detalles acerca de los archivos específicos, como el nombre del archivo adjunto, carga de trabajo, el tamaño de archivo que se modificó por última vez el archivo y mucho más. 
+Debajo del gráfico, vea más detalles sobre archivos específicos, como nombre de archivo de datos adjuntos, carga de trabajo, tamaño de archivo, quién modificó el archivo por última vez, etc. 
   
-## <a name="new-click-to-filter-capabilities"></a>(Nuevo)! Haga clic en para filtrar capacidades
+## <a name="new-click-to-filter-capabilities"></a>(Nueva) Capacidades de hacer clic y filtrar
 
-El explorador es la capacidad de hacer clic para filtrar. A partir de las últimas de 2018 mayo, al hacer clic en un elemento de la leyenda, que el elemento se convierte en un filtro para el informe. Por ejemplo, suponga que buscamos en la vista de Malware en el explorador:
+Nuevo en el explorador es la capacidad de hacer clic para filtrar. Desde el final del 2018 de mayo, cuando hace clic en un elemento de la leyenda, ese elemento se convierte en un filtro para el informe. Por ejemplo, supongamos que estamos viendo la vista de malware en el explorador:
   
-![Vaya a administración de amenaza \> Explorer](media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
+![Ir al explorador de \> administración de amenazas](media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
   
-Al hacer clic en **Detonación ATP** en los resultados de este gráfico en una vista como esta: 
+Al hacer clic en **detonaCiones ATP** en este gráfico, se obtiene una vista similar a la siguiente: 
   
-![Explorador de filtrado para mostrar sólo los resultados de detonación ATO](media/7241d7dd-27bc-467d-9db8-6e806c49df14.png)
+![El explorador está filtrado para mostrar solo los resultados de la detonación de ATO](media/7241d7dd-27bc-467d-9db8-6e806c49df14.png)
   
-En esta vista, ahora observamos datos para los archivos que se han detonated por [Office 365 ATP los datos adjuntos seguros](atp-safe-attachments.md). Debajo del gráfico, podemos ver detalles acerca de los mensajes de correo electrónico específica que tenían datos adjuntos que se han detectado por los datos adjuntos seguros de ATP.
+En esta vista, ahora miramos los datos de los archivos que se han enumerado con datos adJuntos [seguros de ATP de Office 365](atp-safe-attachments.md). Debajo del gráfico, podemos ver los detalles sobre los mensajes de correo electrónico específicos que tienen datos adjuntos detectados por los datos adJuntos seguros de ATP.
   
-![Detalles específicos acerca de los mensajes de correo electrónico con datos adjuntos detectados](media/c91fb05c-d1d4-4085-acc6-f7008a415c2a.png)
+![Detalles específicos sobre los mensajes de correo electrónico con datos adjuntos detectados](media/c91fb05c-d1d4-4085-acc6-f7008a415c2a.png)
   
-Al seleccionar uno o varios elementos, activa el menú **acciones** , que ofrece varias opciones desde el que se elija para los elementos seleccionados. 
+Al seleccionar uno o más elementos, se activa el menú **acciones** , que ofrece varias opciones entre las que elegir para los elementos seleccionados. 
   
-![Al seleccionar un elemento, activa el menú Acciones](media/95f127a4-1b2a-4a76-88b9-096e3ba27d1b.png)
+![Al seleccionar un elemento, se activa el menú acciones](media/95f127a4-1b2a-4a76-88b9-096e3ba27d1b.png)
   
-La capacidad de filtrar en un clic y desplazarse por los detalles específicos puede guardar una gran cantidad de tiempo en investigar las amenazas.
+La capacidad de filtrar en un clic y navegar a detalles específicos puede ahorrarle mucho tiempo para la investigación de las amenazas.
   
-## <a name="how-do-i-get-explorer"></a>¿Cómo se puede obtener el explorador?
+## <a name="how-do-i-get-explorer"></a>¿Cómo se obtiene el explorador?
 
-El explorador se incluye en la [Información sobre amenazas de Office 365](office-365-ti.md). 
+Explorer se incluye en la [inteligencia sobre amenazas de Office 365](office-365-ti.md). 
 
-Debe tener los permisos adecuados, como los concedidos a un administrador de seguridad o el lector de seguridad, a fin de ver y usar el explorador. Para obtener más información, vea [permisos en la seguridad de Office 365 &amp; centro de cumplimiento](permissions-in-the-security-and-compliance-center.md).
+Debe tener los permisos adecuados, como los que se han concedido a un administrador de seguridad o un lector de seguridad, para poder ver y usar el explorador. Para obtener más información, consulte perMissions [in the &amp; Office 365 Security Compliance Center](permissions-in-the-security-and-compliance-center.md).
   
 ## <a name="related-topics"></a>Temas relacionados
 
-[Informes y conocimientos en la seguridad de Office 365 &amp; centro de cumplimiento](reports-and-insights-in-security-and-compliance.md)
+[Informes y opiniones en el centro de seguridad &amp; y cumplimiento de Office 365](reports-and-insights-in-security-and-compliance.md)
   
-[Buscar e investigar el correo electrónico malintencionado que se entregó (Office 365 información sobre amenazas)](investigate-malicious-email-that-was-delivered.md)
+[Buscar e investigar el correo electrónico malintencionado que se entregó (inteligencia de amenazas de Office 365)](investigate-malicious-email-that-was-delivered.md)
   
 [Protección contra correo electrónico no deseado y antimalware en Office 365](anti-spam-and-anti-malware-protection.md)
   

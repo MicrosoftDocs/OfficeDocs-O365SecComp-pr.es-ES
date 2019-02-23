@@ -1,48 +1,48 @@
 ---
-title: Descargar los informes existentes en la seguridad &amp; centro de cumplimiento
+title: Descargar los informes existentes en el &amp; centro de seguridad y cumplimiento
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 6/1/2018
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 1372da29-f3ab-49d7-8c02-eb9305bb5fd8
-description: Obtenga información sobre cómo descargar uno o varios de los informes existentes en la seguridad &amp; centro de cumplimiento.
-ms.openlocfilehash: b4231a29fd9c3282bd36bed6197f811de36de092
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+description: Obtenga información sobre cómo descargar uno o varios informes existentes en el &amp; centro de seguridad y cumplimiento.
+ms.openlocfilehash: 0ea48eca0744dbcf663d15f52342546a54a85af2
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014842"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219130"
 ---
-# <a name="download-existing-reports-in-the-security-amp-compliance-center"></a>Descargar los informes existentes en la seguridad &amp; centro de cumplimiento
+# <a name="download-existing-reports-in-the-security-amp-compliance-center"></a>Descargar los informes existentes en el &amp; centro de seguridad y cumplimiento
 
-En la [seguridad &amp; centro de cumplimiento](https://protection.office.com), varios [informes y perspectivas](reports-and-insights-in-security-and-compliance.md) están disponibles para ayudar a equipo de seguridad de su organización mitigación y afrontar las amenazas para su organización. Si usted es un miembro del equipo de seguridad de su organización, puede descargar uno o más informes existentes. 
+En el [Centro &amp; de seguridad y cumplimiento](https://protection.office.com), hay disponibles varios [informes y perspectivas](reports-and-insights-in-security-and-compliance.md) para ayudar al equipo de seguridad de su organización a mitigar y enfrentar las amenazas a su organización. Si es miembro del equipo de seguridad de su organización, puede descargar uno o varios informes existentes. 
   
 ## <a name="download-existing-reports"></a>Descargar informes existentes
 
 > [!IMPORTANT]
-> Asegúrese de tener el requisito [permisos asignados en la seguridad de Office 365 &amp; centro de cumplimiento](permissions-in-the-security-and-compliance-center.md). En general, los administradores globales de Office 365, los administradores de seguridad y los lectores de seguridad pueden acceder a los informes en la seguridad &amp; centro de cumplimiento. 
+> Asegúrese de que tiene asignados los [permisos necesarios en el centro de seguridad &amp; y cumplimiento de Office 365](permissions-in-the-security-and-compliance-center.md). En general, los administradores globales de Office 365, los administradores de seguridad y los lectores de seguridad pueden tener acceso &amp; a los informes en el centro de seguridad y cumplimiento. 
   
-1. En la [seguridad &amp; centro de cumplimiento](https://protection.office.com), vaya a **informes** \> **informes para descargar**.
+1. En el [Centro &amp; de seguridad y cumplimiento](https://protection.office.com), **** \> vaya a informes **informes para descarga**.
     
-2. Seleccione uno o más elementos en la lista.
+2. Seleccione uno o más elementos de la lista.
     
-3. Haga clic en **Descargar informe**y, a continuación, haga clic en **Cerrar**.
+3. Haga clic en **Descargar Informe**y, a continuación, haga clic en **cerrar**.
     
 ## <a name="related-topics"></a>Temas relacionados
 
-[Informes y conocimientos en la seguridad de Office 365 &amp; centro de cumplimiento](reports-and-insights-in-security-and-compliance.md)
+[Informes y opiniones en el centro de seguridad &amp; y cumplimiento de Office 365](reports-and-insights-in-security-and-compliance.md)
   
-[Crear una programación para un informe en la seguridad &amp; centro de cumplimiento](create-a-schedule-for-a-report.md)
+[Crear una programación para un informe en el centro &amp; de seguridad y cumplimiento](create-a-schedule-for-a-report.md)
   
-[Administrar programaciones para los informes de la seguridad &amp; centro de cumplimiento](manage-schedules-for-multiple-reports.md)
+[Administrar programaciones de informes en el &amp; centro de seguridad y cumplimiento](manage-schedules-for-multiple-reports.md)
   
-[Descargar un informe personalizado en la seguridad &amp; centro de cumplimiento](set-up-and-download-a-custom-report.md)
+[Descargar un informe personalizado en el centro &amp; de seguridad y cumplimiento](set-up-and-download-a-custom-report.md)
   
 

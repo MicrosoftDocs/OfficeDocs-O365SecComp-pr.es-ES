@@ -1,12 +1,12 @@
 ---
-title: Corrija los errores de procesamiento de exhibición de documentos electrónicos avanzada (vista previa)
+title: Solucionar errores de procesamiento en la exhibición avanzada de documentos electrónicos (versión preliminar)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,20 +14,20 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 65dce586f95d04294f51f16d361bfc659d6ab23b
-ms.sourcegitcommit: e3ea6eb9fab1a66b499458749838fe350d43d0d4
+ms.openlocfilehash: 1e473ee3813e53600d8843c0db399e54fc16915f
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "29694816"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219560"
 ---
-# <a name="fix-processing-errors-in-advanced-ediscovery-preview"></a>Corrija los errores de procesamiento de exhibición de documentos electrónicos avanzada (vista previa)
+# <a name="fix-processing-errors-in-advanced-ediscovery-preview"></a>Solucionar errores de procesamiento en la exhibición avanzada de documentos electrónicos (versión preliminar)
 
-El procesamiento es el proceso de identificación de archivo, la expansión de los documentos incrustados y los datos adjuntos, extracción de texto, OCR (reconocimiento óptico de caracteres) de los archivos de imagen y la indización de contenido.  Cuando una custodia se pondrá en espera, se procesan todos los elementos indizados parcialmente desde Office 365 para hacerlas que permite realizar búsquedas.  Del mismo modo, cuando se agrega contenido a un conjunto de trabajo de orígenes de datos de Office 365 o los orígenes de datos que no sean Office 365, también se procesa el contenido.
+El procesamiento es el proceso de identificación de archivos, la expansión de documentos y datos adjuntos incrustados, la extracción de texto, OCR (reconocimiento óptico de caracteres) de archivos de imagen e indización de ese contenido.  Cuando se pone en suspensión un custodio, todos los elementos parcialmente indizados de Office 365 se procesan para que se puedan buscar por completo.  Del mismo modo, cuando se agrega contenido a un conjunto de trabajo desde orígenes de datos de Office 365 o desde orígenes de datos que no son de Office 365, el contenido también se procesa.
 
-La ficha **de procesamiento** de exhibición de documentos electrónicos avanzada (vista previa) proporciona transparencia en el estado de indización de avanzada para todos estos escenarios.
+La pestaña **procesamiento** de la exhibición avanzada de documentos electrónicos (versión preliminar) proporciona transparencia al estado de la indización avanzada para todos estos escenarios.
 
-Vea los siguientes artículos para obtener más detalles.
+Vea los artículos siguientes para obtener más información.
 
 - [Clasificación avanzada de los datos de administración](indexing-custodian-data.md)
 - [Corrección de errores al procesar los datos](error-remediation.md)

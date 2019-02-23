@@ -5,35 +5,35 @@ manager: laurawi
 ms.date: 5/12/2017
 ms.audience: Admin
 ms.topic: reference
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 05b2e7e4-230e-48a9-802c-4cafac0d7c9d
-description: Esta declaración de privacidad regula la protegida mensaje Visor de Portal de Office 365 (el "Portal") que permite ver los mensajes protegidos (cifrados) en sus dispositivos. no se aplica a otros sitios con o sin conexión, productos o servicios de Microsoft. Otras declaraciones de privacidad también es posible que se aplican a los datos de que proceso a través del Portal, como la declaración de privacidad de Microsoft Account (si se usa para la autenticación) o la declaración de privacidad asociada con su dispositivo.
-ms.openlocfilehash: 0b85962a28974178228860333511ae3467f9859d
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: Esta declaración de privacidad rige el portal del visor de mensajes protegidos de Office 365 (el "portal") que le permite ver los mensajes protegidos (cifrados) en sus dispositivos. no se aplica a otros sitios, productos o servicios de Microsoft en línea o sin conexión. También se pueden aplicar otras declaraciones de privacidad a los datos que procese a través del portal, como la declaración de privacidad de la cuenta de Microsoft (si se usa para la autenticación) o la declaración de privacidad asociada con el dispositivo.
+ms.openlocfilehash: 56b1902fc206581115cd4afce0469d11f19b57a3
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22535783"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219880"
 ---
 # <a name="office-365-protected-message-viewer-portal-privacy-statement"></a>Declaración de privacidad del Portal Visor de mensajes protegidos de Office 365
 
-Esta declaración de privacidad regula la protegida mensaje Visor de Portal de Office 365 (el "Portal") que permite ver los mensajes protegidos (cifrados) en sus dispositivos. no se aplica a otros sitios con o sin conexión, productos o servicios de Microsoft. Otras declaraciones de privacidad también es posible que se aplican a los datos de que proceso a través del Portal, como la declaración de privacidad de Microsoft Account (si se usa para la autenticación) o la declaración de privacidad asociada con su dispositivo.
+Esta declaración de privacidad rige el portal del visor de mensajes protegidos de Office 365 (el "portal") que le permite ver los mensajes protegidos (cifrados) en sus dispositivos. no se aplica a otros sitios, productos o servicios de Microsoft en línea o sin conexión. También se pueden aplicar otras declaraciones de privacidad a los datos que procese a través del portal, como la declaración de privacidad de la cuenta de Microsoft (si se usa para la autenticación) o la declaración de privacidad asociada con el dispositivo.
 
 ## <a name="collection-processing-and-use-of-your-information"></a>Recopilación, procesamiento y uso de la información
 
-El Portal permite ver los mensajes protegidos desde Office 365 desde una variedad de los puntos finales (por ejemplo, los equipos de escritorio o dispositivos móviles).  Se recibe un mensaje de correo electrónico en su buzón de correo con un hipervínculo para ver el mensaje protegido. Al hacer clic en ese hipervínculo, se le ofrecerá opciones para iniciar sesión en el Portal de uso de las cuentas de Office 365, Microsoft Account, Gmail o Yahoo, para ver ese mensaje.  También tiene una opción para usar un código de acceso única, dependiendo de la configuración de la dirección del remitente inquilino. El Portal le llevará a su proveedor de correo electrónico para autenticar. Después de la autenticación correcta, el mensaje se descifra y se mostrará a través del Portal.
+El portal permite ver los mensajes protegidos de Office 365 desde una amplia variedad de puntos finales (por ejemplo, equipos de escritorio o dispositivos móviles).  Recibirá un mensaje de correo electrónico en su buzón con un hipervínculo para ver el mensaje protegido. Al hacer clic en el hipervínculo, se le dará opciones para iniciar sesión en el portal con cuentas de O365, cuenta de Microsoft, Gmail o Yahoo, para ver el mensaje.  También tiene la opción de usar un código de acceso de un solo uso, en función de la configuración del espacio empresarial del remitente. El portal le redirigirá a su proveedor de correo electrónico para que le autentique. Una vez realizada correctamente la autenticación, el mensaje se descifrará y se mostrará a través del portal.
 
-Inicio de sesión de información de credenciales para la cuenta de correo electrónico, así como el código de acceso única, se utilizará únicamente con fines de autenticación; no se almacenan en el Portal, ni se usa para otros fines.
+La información de credenciales de inicio de sesión de su cuenta de correo electrónico, así como el código de acceso de un solo uso, se usará únicamente con fines de autenticación; no se almacenará en el portal ni se usará para otros fines.
 
-Durante el proceso de descifrado, no se almacenará el correo cifrado que recibirá el portal; no se podrá transmitir fuera del Portal en cualquier momento.
+Durante el proceso de descifrado, el correo cifrado que reciba no se almacenará en el portal; no se transmitirá fuera del portal en ningún momento.
 
 ## <a name="for-more-information-about-privacy"></a>Para obtener más información sobre la privacidad
 
-Privacidad de Microsoft – información protección Microsoft Corporation One Microsoft Way Redmond, Washington 98052 EE.UU.
+Privacidad de Microsoft: protección de la información Microsoft Corporation One Microsoft Way Redmond, Washington 98052 EEUU
 
 ##     <a name="changes-to-this-statement"></a>Cambios en esta declaración
 

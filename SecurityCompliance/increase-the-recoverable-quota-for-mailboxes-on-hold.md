@@ -6,25 +6,25 @@ manager: laurawi
 ms.date: 10/12/2018
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: a8bdcbdd-9298-462f-b889-df26037a990c
-description: 'Habilitar el buzón de archivo y activar la ampliación automática de archivado para aumentar el tamaño de la carpeta elementos recuperables para un buzón de correo en Office 365. '
-ms.openlocfilehash: a347155645d7c058080b1db7fd47f7ea16249724
-ms.sourcegitcommit: 448c5897e44448adfc82e3eaffb774c770c04815
+description: 'Habilite el buzón de archivo y active el archivado de expansión automática para aumentar el tamaño de la carpeta elementos recuperables para un buzón de correo en Office 365. '
+ms.openlocfilehash: ebb052ba17ba8a84076e1e75a82713cc5cf437a1
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "25522281"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218480"
 ---
 # <a name="increase-the-recoverable-items-quota-for-mailboxes-on-hold"></a>Aumentar la cuota de elementos recuperables para los buzones de correo en retención
 
-La directiva de retención de forma predeterminada, denominada directiva MRM predeterminada — es decir aplicados automáticamente a los nuevos buzones en Exchange Online contiene una etiqueta de retención mover a archivo con nombre días 14 de los elementos recuperables. Esta etiqueta de retención mueve elementos desde la carpeta elementos recuperables en el buzón del usuario principal a la carpeta elementos recuperables en el buzón del usuario archivo después de que expire el período de retención de 14 días para un elemento. Para que esto ocurra, debe habilitarse el buzón de archivo del usuario. Si el buzón de archivo no está habilitado, se realiza ninguna acción, lo que significa que no se mueven los elementos en la carpeta de un buzón en suspensión de elementos recuperables en el buzón de archivo, después de que expire el período de retención de 14 días. Debido a que no se elimina nada desde un buzón de correo en espera, es posible que es posible que se superó la cuota de almacenamiento de la carpeta elementos recuperables, especialmente si no está habilitado para el buzón de archivo del usuario. 
+La Directiva de retención predeterminada, denominada Directiva de MRM predeterminada, que se aplica automáticamente a los nuevos buzones de correo de Exchange Online contiene una etiqueta de retención denominada elementos recuperables de 14 días para mover a archivo. Esta etiqueta de retención mueve los elementos de la carpeta elementos recuperables del buzón de correo principal del usuario a la carpeta elementos recuperables del buzón de archivo del usuario después de que expire el período de retención de 14 días de un elemento. Para que esto suceda, debe estar habilitado el buzón de archivo del usuario. Si el buzón de archivo no está habilitado, no se realiza ninguna acción, lo que significa que los elementos de la carpeta elementos recuperables de un buzón en retención no se mueven al buzón de archivo después de que expire el período de retención de 14 días. Como no se elimina nada de un buzón de correo en suspensión, es posible que se supere la cuota de almacenamiento de la carpeta elementos recuperables, especialmente si el buzón de archivo del usuario no está habilitado. 
   
-Para ayudar a reducir las posibilidades de si se excede este límite, la cuota de almacenamiento de la carpeta elementos recuperables se incrementa automáticamente de 30 GB a 100 GB cuando una suspensión se coloca en un buzón de correo en Exchange Online. Si se habilita el buzón de archivo, la cuota de almacenamiento para la carpeta elementos recuperables en el buzón de archivo también se incrementa de 30 GB a 100 GB. Si el archivado de ampliación automática de la característica en Exchange Online está habilitada, la cuota de almacenamiento para la carpeta elementos recuperables en el archivo del usuario será ilimitada.
+Para ayudar a reducir la posibilidad de superar este límite, la cuota de almacenamiento de la carpeta elementos recuperables aumenta automáticamente de 30 GB a 100 GB cuando se coloca una retención en un buzón de correo en Exchange Online. Si el buzón de archivo está habilitado, la cuota de almacenamiento de la carpeta elementos recuperables del buzón de archivo también aumenta de 30 GB a 100 GB. Si la característica de archivado de ampliación automática en Exchange Online está habilitada, la cuota de almacenamiento de la carpeta elementos recuperables del archivo del usuario será ilimitada.
   
   En la tabla siguiente se resume la cuota de almacenamiento de la carpeta Elementos recuperables. 
   
@@ -35,22 +35,22 @@ Para ayudar a reducir las posibilidades de si se excede este límite, la cuota d
 |**Cuota de almacenamiento total de la carpeta Elementos recuperables** <br/> |Ilimitado  <br/> |Ilimitado  <br/> |
    
 > [!NOTE]
-> <sup>\*</sup>La cuota de almacenamiento inicial para el buzón de archivo es de 100 GB para los usuarios con una licencia de Exchange Online (Plan 2). Sin embargo, cuando la ampliación automática de archivado está activado para los buzones de correo en espera, se aumenta la cuota de almacenamiento para el buzón de archivo y la carpeta elementos recuperables a 110 GB. Espacio de almacenamiento de archivo adicionales se aprovisionará cuando sea necesario que da como resultado una cantidad ilimitada de almacenamiento de archivos. Para obtener más información acerca de la expansión automática de archivado, vea [información general sobre el archivo ilimitado en Office 365](unlimited-archiving.md). 
+> <sup>\*</sup>La cuota de almacenamiento inicial para el buzón de archivo es de 100 GB para los usuarios con una licencia de Exchange Online (plan 2). Sin embargo, cuando el archivado de expansión automática está activado para buzones en retención, la cuota de almacenamiento para el buzón de archivo y la carpeta elementos recuperables aumenta a 110 GB. El espacio de almacenamiento de archivo adicional se aprovisionará cuando sea necesario, lo que da como resultado una cantidad ilimitada de almacenamiento de archivo. Para obtener más información acerca del archivado de expansión automática, vea [información general sobre el archivado ilimitado en Office 365](unlimited-archiving.md). 
   
 Cuando la cuota de almacenamiento de la carpeta Elementos recuperables en el buzón principal de un buzón en suspensión está a punto de alcanzar su límite, puede hacer lo siguiente:
   
-- **Habilitar el buzón de archivo y activar el archivado de ampliación automática** - puede habilitar una capacidad de almacenamiento de información ilimitado para la carpeta elementos recuperables, basta con habilitar el buzón de archivo y, a continuación, activar la característica de archivado ampliación automática de Exchange En línea. Esto da como resultado 110 GB para la carpeta elementos recuperables en el buzón principal y una cantidad ilimitada de capacidad de almacenamiento para la carpeta elementos recuperables en el archivo del usuario. Vea Cómo: [Habilitar buzones de archivo en la seguridad de Office 365 &amp; centro de cumplimiento](enable-archive-mailboxes.md) y [Habilitar el archivado ilimitado en Office 365](enable-unlimited-archiving.md).
+- **Habilitar el buzón de archivo y activar el archivado de expansión automática** : puede habilitar una capacidad de almacenamiento ilimitada para la carpeta elementos recuperables con tan solo habilitar el buzón de archivo y, a continuación, activar la característica de archivado de ampliación automática en Exchange. Online. Esto da como resultado 110 GB para la carpeta elementos recuperables en el buzón principal y una cantidad ilimitada de capacidad de almacenamiento para la carpeta elementos recuperables del archivo del usuario. Vea cómo: [Habilitar buzones de archivo en el centro de &amp; seguridad y cumplimiento de Office 365](enable-archive-mailboxes.md) y [Habilitar el archivado ilimitado en Office 365](enable-unlimited-archiving.md).
     
     > [!NOTE]
-    > Después de habilitar el archivo para un buzón de correo que está cerca de la superación del límite de la cuota de almacenamiento de la carpeta elementos recuperables, es posible que desee ejecutar el Asistente para carpeta administrada para desencadenar manualmente el Asistente para procesar el buzón de correo de modo que se mueven los elementos que han expirado el Carpeta elementos recuperables en el buzón de archivo. Para obtener instrucciones, consulte el [paso 4](#optional-step-4-run-the-managed-folder-assistant-to-apply-the-new-retention-settings) . Tenga en cuenta que es posible que puede moverse otros elementos en el buzón del usuario para el nuevo buzón de archivo. Tenga en cuenta que indica al usuario que esto puede ocurrir después de habilitar el buzón de archivo. 
+    > Después de habilitar el archivo para un buzón que está a punto de superar la cuota de almacenamiento de la carpeta elementos recuperables, es posible que desee ejecutar el Asistente para carpeta administrada para desencadenar manualmente el Asistente para procesar el buzón de modo que los elementos expirados se muevan Carpeta elementos recuperables en el buzón de archivo. Consulte el [paso 4](#optional-step-4-run-the-managed-folder-assistant-to-apply-the-new-retention-settings) para obtener instrucciones. Tenga en cuenta que es posible que se muevan otros elementos del buzón del usuario al nuevo buzón de archivo. Considere la posibilidad de que se indique al usuario que esto puede ocurrir después de habilitar el buzón de archivo. 
   
-- **Crear una directiva de retención personalizada para los buzones de correo en espera** - además de habilitar el buzón de archivo y ampliación automática archivado de buzones de correo en juicio o conservación local, es posible que también desee crear una directiva de retención personalizada para los buzones de correo en suspensión. Esto vamos a aplica una directiva de retención a los buzones de correo en espera que es diferente de la directiva MRM predeterminada que se aplica a los buzones de correo que no están en espera. Esto permite aplicar etiquetas de retención que están diseñadas específicamente para los buzones de correo en espera. Esto incluye la creación de una nueva etiqueta de retención para la carpeta elementos recuperables. 
+- **Crear una directiva de retención personalizada para buzones de correo en** retención: además de habilitar el buzón de archivo y el archivado de expansión automática para buzones en retención por juicio o conservación local, es posible que también desee crear una directiva de retención personalizada para los buzones de correo en retención. Esto le permite aplicar una directiva de retención a los buzones de correo en retención que es diferente de la Directiva de MRM predeterminada que se aplica a los buzones que no están en suspensión. Esto le permite aplicar etiquetas de retención que se han diseñado específicamente para buzones de correo en retención. Esto incluye la creación de una nueva etiqueta de retención para la carpeta elementos recuperables. 
     
 En el resto de este tema se describen procedimientos paso a paso para crear una directiva de retención personalizada para los buzones en suspensión.
   
 [Paso 1: Crear una etiqueta de retención personalizada para la carpeta Elementos recuperables](#step-1-create-a-custom-retention-tag-for-the-recoverable-items-folder)
 
-[[Paso 2: crear una nueva directiva de retención para los buzones de correo en espera](#step-2-create-a-new-retention-policy-for-mailboxes-on-hold)
+[[Paso 2: crear una nueva Directiva de retención para buzones en retención](#step-2-create-a-new-retention-policy-for-mailboxes-on-hold)
 
 [Paso 3: Aplicar la nueva directiva de retención a buzones de correo en suspensión](#step-3-apply-the-new-retention-policy-to-mailboxes-on-hold)
 
@@ -58,7 +58,7 @@ En el resto de este tema se describen procedimientos paso a paso para crear una 
   
 ## <a name="step-1-create-a-custom-retention-tag-for-the-recoverable-items-folder"></a>Paso 1: Crear una etiqueta de retención personalizada para la carpeta Elementos recuperables
 
-El primer paso es crear una etiqueta de retención personalizada (denominada una etiqueta de directiva de retención o RPT) de la carpeta elementos recuperables. Como se explica anteriormente, este RPT mueve los elementos de la carpeta elementos recuperables en el buzón del usuario principal a la carpeta elementos recuperables en el buzón de archivo del usuario. Se debe usar PowerShell para crear una RPT para la carpeta elementos recuperables. No puede usar el centro de administración de Exchange (EAC). 
+El primer paso consiste en crear una etiqueta de retención personalizada (denominada "etiqueta de directiva de retención" o "RPT") para la carpeta elementos recuperables. Como se explicó anteriormente, esta RPT mueve los elementos de la carpeta elementos recuperables del buzón de correo principal del usuario a la carpeta elementos recuperables del buzón de archivo del usuario. Debe usar PowerShell para crear una RPT para la carpeta elementos recuperables. No puede usar el centro de administración de Exchange (EAC). 
   
 1. [Conectarse a Exchange Online con el PowerShell remoto](https://go.microsoft.com/fwlink/p/?LinkId=517283)
     
@@ -75,7 +75,7 @@ El primer paso es crear una etiqueta de retención personalizada (denominada una
     ```
 
     > [!TIP]
-    > Se recomienda que el período de retención (definido por el parámetro _AgeLimitForRetention_ ) para el RPT elementos recuperables es el mismo que el período de retención de elementos eliminados para los buzones de correo que se aplicará la RPT a. Esto permite a un usuario el período de retención de elementos eliminados todo para recuperar elementos eliminados antes de que se muevan al buzón de archivo. En el ejemplo anterior, el período de retención se estableció en 30 días que se basan en la suposición de que el período de retención de elementos eliminados para los buzones de correo también es de 30 días. Un buzón de Exchange Online está configurado para conservar los elementos eliminados durante 14 días, de forma predeterminada. Pero se puede cambiar esta configuración a un máximo de 30 días. Para obtener más información, vea [cambiar el período de retención de elementos eliminados de un buzón en Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=286940). 
+    > Se recomienda que el período de retención (definido por el parámetro _AgeLimitForRetention_ ) para la RPT de elementos recuperables sea el mismo que el período de retención de elementos eliminados para los buzones de correo a los que se aplicará el RPT. Esto permite a un usuario todo el período de retención de elementos eliminados para recuperar los elementos eliminados antes de que se muevan al buzón de archivo. En el ejemplo anterior, el período de retención se estableció en 30 días en función de la hipótesis de que el período de retención de elementos eliminados para los buzones de correo es también de 30 días. De forma predeterminada, se configura un buzón de correo de Exchange Online para conservar los elementos eliminados durante 14 días. Pero puede cambiar esta configuración a un máximo de 30 días. Para obtener más información, vea [cambiar el período de retención de elementos eliminados para un buzón de correo en Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=286940). 
   
 ## <a name="step-2-create-a-new-retention-policy-for-mailboxes-on-hold"></a>Paso 2: Crear una directiva de retención para buzones de correo en suspensión
 
@@ -83,21 +83,21 @@ El siguiente paso consiste en crear una directiva de retención y agregarle etiq
   
 Antes de crear la directiva de retención, determine las etiquetas de retención adicionales que quiere agregar. Para obtener una lista de las etiquetas de retención que se agregan a la directiva de MRM predeterminada y para obtener información sobre cómo crear etiquetas de retención, vea lo siguiente:
   
-- [Directiva predeterminada de retención en Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=746954)
+- [Directiva de retención predeterminada en Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=746954)
     
 - [Carpetas predeterminadas que admiten etiquetas de la directiva de retención](https://go.microsoft.com/fwlink/p/?LinkId=746957)
     
-- La sección "Creación de una etiqueta de retención" en el tema [crear una directiva de retención](https://go.microsoft.com/fwlink/p/?LinkId=404422) .
+- La sección "crear una etiqueta de retención" en el tema [Create a Retention Policy](https://go.microsoft.com/fwlink/p/?LinkId=404422) .
     
-Puede usar el CEF o Exchange Online PowerShell para crear una directiva de retención.
+Puede usar el EAC o Exchange Online PowerShell para crear una directiva de retención.
   
 ### <a name="use-the-eac-to-create-a-retention-policy"></a>Uso de EAC para crear una directiva de retención
   
-1. En el EAC, vaya a **administración de cumplimiento** \> **las directivas de retención**y, a continuación, haga clic en **Agregar** ![icono Agregar](media/ITPro-EAC-AddIcon.gif).
+1. En el EAC, vaya a **** \> **directivas de retención**de administración de cumplimiento y, a continuación](media/ITPro-EAC-AddIcon.gif), haga clic en **Agregar** ![icono de agregar.
     
 2. En la página **Nueva directiva de retención**, en **Nombre**, escriba un nombre que describa el propósito de la directiva, como **MRM Policy for Mailboxes on Hold** (Directiva de MRM para buzones de correo en suspensión).  
     
-3. En **las etiquetas de retención**, haga clic en **Agregar** ![icono Agregar](media/ITPro-EAC-AddIcon.gif).
+3. En **etiquetas de retención**, haga clic en](media/ITPro-EAC-AddIcon.gif) **Agregar** ![icono de agregar.
     
 4. En la lista de etiquetas de retención, seleccione la RPT de Elementos recuperables que ha creado en el paso 1 y, después, haga clic en **Agregar**.
     
@@ -113,7 +113,7 @@ Puede usar el CEF o Exchange Online PowerShell para crear una directiva de reten
     
     ![Las etiquetas de retención vinculadas a la directiva de retención se muestran en el panel de detalles](media/dad1c8f4-9928-4d6d-991a-6f6c5194eceb.png)
   
-### <a name="use-exchange-online-powershell-to-create-a-retention-policy"></a>Use Exchange Online PowerShell para crear una directiva de retención
+### <a name="use-exchange-online-powershell-to-create-a-retention-policy"></a>Usar Exchange Online PowerShell para crear una directiva de retención
   
 Ejecute el comando siguiente para crear una directiva de retención para buzones en suspensión.  
   
@@ -130,13 +130,13 @@ New-RetentionPolicy "MRM Policy for Mailboxes on Hold"  -RetentionPolicyTagLinks
   
 ## <a name="step-3-apply-the-new-retention-policy-to-mailboxes-on-hold"></a>Paso 3: Aplicar la nueva directiva de retención a buzones de correo en suspensión
 
-El último paso consiste en aplicar la nueva directiva de retención que se ha creado en el paso 2 para los buzones de correo en espera en la organización. Puede usar el CEF o Exchange Online PowerShell para aplicar la directiva de retención a un buzón o a varios buzones. 
+El último paso consiste en aplicar la nueva Directiva de retención que ha creado en el paso 2 a los buzones en retención en la organización. Puede usar el EAC o Exchange Online PowerShell para aplicar la Directiva de retención a un único buzón o a varios buzones. 
   
 ### <a name="use-the-eac-to-apply-the-new-retention-policy"></a>Usar el EAC para aplicar la nueva directiva de retención
   
 1. Vaya a **Destinatarios** \> **Buzones de correo**.
     
-2. En la vista de lista, seleccione el buzón que desea aplicar la directiva de retención a y, a continuación, haga clic en **Editar** ![icono Editar](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif).
+2. En la vista de lista, seleccione el buzón al que desea aplicar la Directiva de retención y, a **** ![continuación, haga](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)clic en Editar icono de edición.
     
 3. En la página **Buzón de usuario**, haga clic en **Características de buzón de correo**.
     
@@ -154,9 +154,9 @@ También puede usar el EAC para aplicar la directiva de retención a varios buzo
     
 5. En la página **Directiva de retención de asignación masiva**, seleccione la directiva de retención que ha creado en el paso 2 y, después, haga clic en **Guardar**.  
     
-### <a name="use-exchange-online-powershell-to-apply-the-new-retention-policy"></a>Use Exchange Online PowerShell para aplicar la nueva directiva de retención
+### <a name="use-exchange-online-powershell-to-apply-the-new-retention-policy"></a>Usar Exchange Online PowerShell para aplicar la nueva Directiva de retención
   
-Puede usar Exchange Online PowerShell para aplicar una nueva directiva de retención a un solo buzón. Pero la eficacia real de PowerShell que puede usar para identificar rápidamente todos los buzones de correo en la organización que están en suspensión por litigio o conservación local y, a continuación, aplican la nueva directiva de retención a todos los buzones en suspensión en un solo comando. Estos son algunos ejemplos del uso de PowerShell de Exchange para aplicar una directiva de retención a uno o más buzones. Todos los ejemplos aplican la directiva de retención que se creó en el paso 2.
+Puede usar Exchange Online PowerShell para aplicar una nueva Directiva de retención a un único buzón. Pero el potencial real de PowerShell es que puede usarlo para identificar rápidamente todos los buzones de la organización que están en retención por juicio o conservación local y, a continuación, aplicar la nueva Directiva de retención a todos los buzones en retención en un solo comando. A continuación, se muestran algunos ejemplos de cómo usar Exchange PowerShell para aplicar una directiva de retención a uno o más buzones. En todos los ejemplos se aplica la Directiva de retención que se creó en el paso 2.
   
 En este ejemplo se aplica la nueva directiva de retención al buzón de Pilar Pinilla.
   
@@ -202,7 +202,7 @@ Get-Mailbox -ResultSize unlimited | Where-Object {$_.InPlaceHolds -ne $null} | F
   
 ## <a name="optional-step-4-run-the-managed-folder-assistant-to-apply-the-new-retention-settings"></a>Paso 4 (opcional): Ejecutar el Asistente para carpeta administrada para aplicar la nueva configuración de retención
 
-Después de aplicar la nueva directiva de retención a buzones de correo en espera, puede tardar hasta 7 días en Exchange Online para que el Asistente para carpeta administrada procesar estos buzones de correo con la configuración de la nueva directiva de retención. En lugar de esperar a ejecutar el Asistente para carpeta administrada, puede usar el cmdlet **Start-ManagedFolderAssistant** para activar manualmente el Asistente para procesar los buzones que se aplica la nueva directiva de retención a. 
+Una vez aplicada la nueva Directiva de retención a los buzones, puede tardar hasta 7 días en Exchange Online para que el Asistente para carpeta administrada procese estos buzones mediante la configuración de la nueva Directiva de retención. En lugar de esperar a que se ejecute el Asistente para carpeta administrada, puede usar el cmdlet **Start-ManagedFolderAssistant** para desencadenar manualmente el Asistente para que procese los buzones a los que aplicó la nueva Directiva de retención. 
   
 Ejecute el comando siguiente para iniciar el Asistente para carpeta administrada en el buzón del Pilar Pinilla.
   
@@ -222,6 +222,6 @@ $MailboxesOnHold.DistinguishedName | Start-ManagedFolderAssistant
 
 ## <a name="more-information"></a>Más información
 
-- Después de habilitar el buzón de archivo de un usuario, tenga en cuenta que indica al usuario que es posible que puede moverse otros elementos en su buzón (no sólo los elementos en la carpeta elementos recuperables) para el buzón de archivo. Esto es debido a que la directiva MRM predeterminada que se asigna a los buzones de Exchange Online contiene una etiqueta de retención (años con nombre de valor predeterminado 2 mover a archivo) que mueve los elementos en el buzón de archivo dos años después de la fecha o el elemento se ha entregado al buzón creado por el usuario. Para obtener más información, vea [Directiva de retención predeterminada en Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=746954)
+- Después de habilitar el buzón de archivo de un usuario, considere la posibilidad de indicar al usuario que se pueden mover otros elementos del buzón (no solo los elementos de la carpeta elementos recuperables) al buzón de archivo. Esto se debe a que la Directiva de MRM predeterminada que se asigna a los buzones de correo de Exchange Online contiene una etiqueta de retención (denominada 2 años como predeterminada, mover a archivo) que mueve los elementos al buzón de archivo dos años después de la fecha en que se entregó el elemento al buzón o se creó mediante el usuario. Para obtener más información, vea [Directiva de retención predeterminada en Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=746954) .
     
-- Después de habilitar el buzón de archivo de un usuario, también podría indicar al usuario que se puede recuperar los elementos eliminados en la carpeta elementos recuperables en su buzón de archivo. Esto puede hacer en Outlook mediante la selección de la carpeta **Elementos eliminados** en el buzón de archivo y, a continuación, haciendo clic en **Recuperar elementos eliminados del servidor** en la ficha **Inicio** . Para obtener más información acerca de los elementos eliminados de recuperación, vea [que recuperar elementos eliminados en Outlook para Windows](https://go.microsoft.com/fwlink/p/?LinkId=624829). 
+- Después de habilitar el buzón de archivo de un usuario, también puede decirle al usuario que puede recuperar los elementos eliminados de la carpeta elementos recuperables de su buzón de archivo. Puede hacerlo en Outlook seleccionando la carpeta **elementos eliminados** en el buzón de archivo y, a continuación, haciendo clic en **recuperar elementos eliminados del servidor** en la ficha **Inicio** . Para obtener más información acerca de la recuperación de elementos eliminados, vea [recuperar elementos eliminados en Outlook para Windows](https://go.microsoft.com/fwlink/p/?LinkId=624829). 

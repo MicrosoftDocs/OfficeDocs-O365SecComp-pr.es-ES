@@ -1,53 +1,53 @@
 ---
-title: Configurar y descargar un informe personalizado en la seguridad &amp; centro de cumplimiento
+title: Configurar y descargar un informe personalizado en el centro de &amp; seguridad y cumplimiento
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 1a7be622-f6a5-4ce1-a343-f249475334f6
-description: Obtenga información sobre cómo configurar y descargar un informe con un intervalo de fechas personalizado y filtros en la seguridad &amp; centro de cumplimiento.
-ms.openlocfilehash: 313caf1e6d7a4cdca74979c3a5ccdbc413c6c7db
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+description: Obtenga información sobre cómo configurar y descargar un informe con un intervalo de fechas personalizado y filtros en el &amp; centro de seguridad y cumplimiento.
+ms.openlocfilehash: 7e4d152509a6e904c7df5ea7c8ccddf9503a35da
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014752"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219710"
 ---
-# <a name="set-up-and-download-a-custom-report-in-the-security-amp-compliance-center"></a>Configurar y descargar un informe personalizado en la seguridad &amp; centro de cumplimiento
+# <a name="set-up-and-download-a-custom-report-in-the-security-amp-compliance-center"></a>Configurar y descargar un informe personalizado en el centro de &amp; seguridad y cumplimiento
 
-En la [seguridad &amp; centro de cumplimiento](https://protection.office.com), varios [informes y perspectivas](reports-and-insights-in-security-and-compliance.md) están disponibles para ayudar a equipo de seguridad de su organización mitigación y afrontar las amenazas para su organización. Si usted es un miembro del equipo de seguridad de su organización, puede configurar un informe con filtros y los intervalos de fechas personalizado y, a continuación, descargue el informe personalizado. 
+En el [Centro &amp; de seguridad y cumplimiento](https://protection.office.com), hay disponibles varios [informes y perspectivas](reports-and-insights-in-security-and-compliance.md) para ayudar al equipo de seguridad de su organización a mitigar y enfrentar las amenazas a su organización. Si es miembro del equipo de seguridad de su organización, puede configurar un informe con intervalos de fechas personalizados y filtros y, a continuación, descargar el informe personalizado. 
   
 ## <a name="download-a-custom-report"></a>Descargar un informe personalizado
 
 > [!IMPORTANT]
-> Asegúrese de tener el requisito [permisos para la seguridad de Office 365 &amp; centro de cumplimiento](permissions-in-the-security-and-compliance-center.md). En general, los administradores globales de Office 365, los administradores de seguridad y los lectores de seguridad pueden acceder a los informes en la seguridad &amp; centro de cumplimiento. 
+> Asegúrese de que dispone de los [permisos necesarios para el centro de seguridad &amp; y cumplimiento de Office 365](permissions-in-the-security-and-compliance-center.md). En general, los administradores globales de Office 365, los administradores de seguridad y los lectores de seguridad pueden tener acceso &amp; a los informes en el centro de seguridad y cumplimiento. 
   
-1. En la [seguridad &amp; centro de cumplimiento](https://protection.office.com), vaya a **informes** \> **panel**.
+1. En el [Centro &amp; de seguridad y cumplimiento](https://protection.office.com), vaya a **informes** \> de **Panel**.
     
-2. Elija un informe. (Para este ejemplo, vamos a utilizar el informe de eliminación de mensaje.)<br/>![Elija el informe de solicitudes para descargar un informe](media/b566925d-b9d9-453d-9bdd-f2637c7ba140.png)
+2. Elija un informe. (Para este ejemplo, usaremos el informe de disposición del mensaje).<br/>![Elegir informe de solicitud para descargar un informe](media/b566925d-b9d9-453d-9bdd-f2637c7ba140.png)
   
-3. En la esquina superior izquierda del informe, elija **informe de solicitudes**.
+3. En la esquina superior izquierda del informe, elija **request Report**.
     
-4. En el cuadro de diálogo **solicitud de informe** , especifique un nombre, fecha de comienzo y fecha de finalización para el informe. A continuación, elija **siguiente**.<br/>![En la seguridad &amp; centro de cumplimiento, seleccione informes \> informes para su descarga](media/65e625f5-c98c-49fc-9c1f-8c80ec8308fd.png)
+4. En el cuadro de diálogo **Informe de solicitud** , especifique un nombre, una fecha de inicio y una fecha de finalización para el informe. A continuación, elija **siguiente**.<br/>![En el centro &amp; de seguridad y cumplimiento, \> elija informes informes para descarga](media/65e625f5-c98c-49fc-9c1f-8c80ec8308fd.png)
   
-5. Especifique los filtros que desea usar para el informe. (Por ejemplo, podría especificar una dirección IP del cliente para el informe de eliminación de mensaje.) A continuación, elija **siguiente**.
+5. Especifique los filtros que desee usar para el informe. (Por ejemplo, puede especificar una dirección IP de cliente para el informe de disposición del mensaje). A continuación, elija **siguiente**.
     
-6. Especifique a los destinatarios de correo electrónico para el informe y, a continuación, elija **Guardar**.
+6. Especifique los destinatarios de correo electrónico para el informe y, a continuación, elija **Guardar**.
     
 ## <a name="related-topics"></a>Temas relacionados
 
-[Informes y conocimientos en la seguridad de Office 365 &amp; centro de cumplimiento](reports-and-insights-in-security-and-compliance.md)
+[Informes y opiniones en el centro de seguridad &amp; y cumplimiento de Office 365](reports-and-insights-in-security-and-compliance.md)
   
-[Crear una programación para un informe en la seguridad &amp; centro de cumplimiento](create-a-schedule-for-a-report.md)
+[Crear una programación para un informe en el centro &amp; de seguridad y cumplimiento](create-a-schedule-for-a-report.md)
   
-[Administrar programaciones para los informes de la seguridad &amp; centro de cumplimiento](manage-schedules-for-multiple-reports.md)
+[Administrar programaciones de informes en el &amp; centro de seguridad y cumplimiento](manage-schedules-for-multiple-reports.md)
   
-[Descargar los informes existentes en la seguridad &amp; centro de cumplimiento](download-existing-reports.md)
+[Descargar los informes existentes en el &amp; centro de seguridad y cumplimiento](download-existing-reports.md)
   
 

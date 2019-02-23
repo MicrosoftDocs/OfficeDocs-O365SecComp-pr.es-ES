@@ -6,96 +6,96 @@ manager: laurawi
 ms.date: 01/28/2019
 ms.audience: ITPro
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 86f414ad-81de-4703-b40a-c6615bbe9108
-description: Después de haber configurado e implantado de seguridad de la aplicación de nube de Office 365, desea realizar determinadas tareas para asegurarse de que la configuración es correcta y que está preparado para revisiones regulares.
-ms.openlocfilehash: 71b6793f2e325fcba3431ba5157640b29814ad30
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+description: Una vez que haya configurado e implementado la seguridad de aplicaciones de nube de Office 365, querrá realizar ciertas tareas para asegurarse de que la configuración es correcta y de que está preparado para realizar revisiones periódicas.
+ms.openlocfilehash: 3afcfc307ea4a587287f3b71080bba89c715c908
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29603711"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215950"
 ---
 # <a name="utilization-activities-after-rolling-out-office-365-cloud-app-security"></a>Actividades de uso después de implementar Office 365 Cloud App Security
   
-|Evaluación **\>**|Planeación de **\>**|Implementación **\>**|Utilización de ***|
+|Evaluación * *\>**|Planeación * *\>**|Implementación * *\>**|Uso * * * *|
 |:-----|:-----|:-----|:-----|
-|[Empezar a evaluar](office-365-cas-overview.md) <br/> |[Comenzar a planear](get-ready-for-office-365-cas.md) <br/> |[Iniciar la implementación](turn-on-office-365-cas.md) <br/> |¡Están aquí!  <br/> [Paso siguiente](review-office-365-cas-alerts.md) <br/> |
+|[Empezar a evaluar](office-365-cas-overview.md) <br/> |[Empezar a planear](get-ready-for-office-365-cas.md) <br/> |[Iniciar la implementación](turn-on-office-365-cas.md) <br/> |Ya está aquí.  <br/> [Siguiente paso](review-office-365-cas-alerts.md) <br/> |
    
 > [!NOTE]
-> Seguridad de la aplicación de Office 365 en la nube está disponible en Office 365 Enterprise E5. Si su organización usa otra suscripción de Office 365 Enterprise, seguridad de la aplicación de nube de Office 365 puede adquirirse como un complemento. (Como administrador global, en el centro de administración de Office 365, elija **facturación** \> **Agregar suscripciones**.) Para obtener más información, vea [Descripción del servicio Office 365 plataforma: seguridad de Office 365 &amp; centro de cumplimiento](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center) y [comprar o editar un complemento de Office 365 para profesionales](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6). 
+> Office 365 Cloud App Security está disponible en Office 365 Enterprise E5. Si su organización usa otra suscripción de Office 365 Enterprise, Office 365 Cloud App Security puede adquirirse como un complemento. (como administrador global, en el centro de administración de Office 365, elija **facturación** \> **Add**subscriptions). Para obtener más información, consulte [office 365 Platform Service Description: office &amp; 365 Security Compliance Center](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center) y [comprar o editar un complemento para Office 365 para empresas](https://support.office.com/article/4e7b57d6-b93b-457d-aecd-0ea58bff07a6). 
   
-Después de haber configurado y configura la seguridad de la aplicación de nube de Office 365, desea realizar algunas tareas de uso como un administrador global de Office 365 o un administrador de seguridad de la organización. 
+Una vez que haya configurado y configurado la seguridad de aplicaciones en la nube de Office 365, querrá realizar determinadas tareas de uso como administrador global de Office 365 o administrador de seguridad de su organización. 
 
-Mediante la realización de estas tareas, ayudaremos a asegurarse de que seguridad de la aplicación de nube de Office 365 está configurado correctamente, las directivas están actualizadas y valor desde Office 365 es consciente de la organización. Use este artículo como guía para ayudarle a planear para estas tareas.
+Al realizar estas tareas, le ayudará a asegurarse de que la seguridad de la aplicación de nube de Office 365 está configurada correctamente, a que las directivas están actualizadas y a su organización se obtienen valores de Office 365. Use este artículo como guía para ayudarle a planear estas tareas.
   
 > [!NOTE]
-> Debe ser un administrador global o administrador de seguridad para llevar a cabo las tareas descritas en este artículo. Para obtener más información, vea [permisos en la seguridad de Office 365 &amp; centro de cumplimiento](permissions-in-the-security-and-compliance-center.md). 
+> Debe ser administrador global o administrador de seguridad para realizar las tareas descritas en este artículo. Para obtener más información, consulte perMissions [in the &amp; Office 365 Security Compliance Center](permissions-in-the-security-and-compliance-center.md). 
     
-## <a name="activities-after-the-initial-configuration-and-rollout-of-office-365-cloud-app-security"></a>Actividades después de la configuración inicial y la implantación de seguridad de la aplicación de nube de Office 365
+## <a name="activities-after-the-initial-configuration-and-rollout-of-office-365-cloud-app-security"></a>Actividades después de la configuración inicial y la implementación de Office 365 Cloud App Security
 
-Después de configurar e implantado, como un administrador global o los administradores de seguridad, seguridad de la aplicación de nube de Office 365 tiene varios aspectos a tener en cuenta:
+Una vez que Office 365 Cloud App Security se configura y se implementa, como administrador global o como administradores de seguridad, tiene que tener en cuenta varios aspectos:
   
-- ¿Qué tareas deben agregarse al calendario del departamento de TI?
+- ¿Qué tareas deben agregarse al calendario del Departamento de ti?
     
-- ¿Cómo puede, asegurarse de que seguridad de la aplicación de nube de Office 365 está configurado para usar el conjunto correcto de directivas con el tiempo?
+- ¿Cómo puede asegurarse de que la seguridad de la aplicación de nube de Office 365 está configurada para usar el conjunto de directivas adecuado a lo largo del tiempo?
     
-- ¿Qué tipos de información de resumen se debe enviar la cadena de administración de TI?
+- ¿Qué tipo de información de Resumen debería enviar a la cadena de administración de ti?
     
-En la siguiente tabla resume brevemente la desea realizar tareas en curso y tareas periódicas que se debe considerar la adición al calendario de su departamento de TI.
+En la tabla siguiente se resumen brevemente las tareas en curso que desea realizar y las tareas periódicas que debería considerar para agregar al calendario del Departamento de ti.
   
 |**Tareas en curso**|**Tareas periódicas**|
 |:-----|:-----|
-| Supervisar las cuentas de correo electrónico a la que va a enviar mensajes de alerta  <br/>  Supervisar los suministros de noticias de la ciberseguridad del sector para obtener la información más reciente sobre nuevos ataques de Internet  <br/>  Actuar en las alertas de seguridad para identificar y resolver los riesgos y los incidentes de seguridad  <br/>  Resumir cada incidente de seguridad y la solución en un registro central  <br/> | Realizar revisiones mensuales o trimestrales de alertas de seguridad de la aplicación de Office 365 en la nube a anomalías manchas de color y analizar las tendencias  <br/>  Realizar revisiones mensuales o trimestrales de sus directivas de seguridad de la aplicación de nube de Office 365 existentes para incluir mejoras en cyberattacks nueva seguridad de la aplicación de Office 365 en la nube y la dirección y las tendencias en la ciberseguridad  <br/> |
+| Supervisión de las cuentas de correo electrónico a las que envía mensajes de alerta  <br/>  Supervisar los suministros de noticias de Cybersecurity de la industria para obtener la información más reciente acerca de los nuevos ataques cibernéticos  <br/>  Actuar sobre alertas de seguridad para identificar y solucionar incidentes y riesgos de seguridad  <br/>  ReSumir cada incidente de seguridad y resolución en un registro central  <br/> | Realizar revisiones mensuales o trimestrales de alertas de seguridad de aplicaciones de nube de Office 365 para detectar anomalías y analizar tendencias  <br/>  Realizar revisiones mensuales o trimestrales de las directivas de seguridad de aplicaciones de la nube de Office 365 para incluir mejoras en la seguridad de aplicaciones en la nube de Office 365 y dirigir nuevas cyberattacks y tendencias en Cybersecurity  <br/> |
    
-Según el tamaño y el interés en la supervisión y el mantenimiento de un stature de seguridad de su organización, puede compilar un resumen mensual para la cadena de administración de TI que incluye:
+Según el tamaño y el interés de su organización en la supervisión y el mantenimiento de un Stature de seguridad, puede compilar un resumen mensual para la cadena de administración de ti que incluya lo siguiente:
   
-- Los distintos tipos de incidentes de seguridad que se identifican con la seguridad de la aplicación de nube de Office 365
+- Los diferentes tipos de incidentes de seguridad identificados con Office 365 Cloud App Security
     
-- Información de resumen de su registro central de los incidentes de seguridad, como el número de incidentes detectados
+- Información de resumen del registro central de los incidentes de seguridad, como el número de incidentes detectados
     
-- Tendencias de alertas y cómo se han solucionado
+- Tendencias de alertas y cómo se trataron
     
-- Las últimas tendencias de la ciberseguridad
+- Las últimas tendencias de Cybersecurity
     
-- Recomendaciones para los cambios de directiva de seguridad de la aplicación de Office 365 en la nube y su impacto en los usuarios finales
+- Recomendaciones para los cambios en la Directiva de seguridad de aplicación de Office 365 Cloud y su impacto en los usuarios finales
     
-## <a name="activities-after-time-has-passed-since-rolling-out-office-365-cloud-app-security"></a>Actividades después de transcurrido el tiempo con respecto a implantar la seguridad de la aplicación de nube de Office 365
+## <a name="activities-after-time-has-passed-since-rolling-out-office-365-cloud-app-security"></a>Actividades después de que ha pasado el tiempo desde la implementación de la seguridad de aplicación de nube de Office 365
 
-Si una larga como cantidad de tiempo ha transcurrido desde que inicialmente se configurado o se mantienen sus directivas de seguridad de la aplicación de nube de Office 365, siga estos pasos para volver a una configuración que refleja los objetivos de seguridad de la organización y las capacidades actuales de seguridad de la aplicación de nube de Office 365:
+Si ha transcurrido una cantidad de tiempo que ha transcurrido desde que ha configurado o mantenido inicialmente sus directivas de seguridad de aplicación de nube de Office 365, siga estos pasos para volver a una configuración que refleje los objetivos de seguridad de su organización y las capacidades actuales. de Office 365 Cloud App Security:
   
-1. Determinar la fecha del último cambio de configuración de seguridad de la aplicación de nube de Office 365.
+1. DeTermine la fecha del último cambio de configuración de Office 365 Cloud App Security.
     
-2. Comprender la actual configuración de seguridad de la aplicación de nube de Office 365 y ajustar dichas directivas según sea necesario. Por ejemplo, asegúrese de que sabe donde las alertas se envían a través de correo electrónico.
+2. Comprenda su configuración actual de seguridad de aplicaciones de nube de Office 365 y ajuste las directivas según sea necesario. Por ejemplo, asegúrese de que sabe dónde se envían las alertas por correo electrónico.
     
-3. Dado que configuró por última vez la seguridad de la aplicación de nube de Office 365, vea [Novedades de seguridad de la aplicación de Office 365 en la nube](new-in-office-365-cas.md) para que los cambios del producto. 
+3. Consulte [what's New in office 365 Cloud App Security](new-in-office-365-cas.md) para cambios de productos desde la última vez que configuró Office 365 Cloud App Security. 
     
-4. Realizar un análisis de las alertas de seguridad de la aplicación de Office 365 en la nube y los registros a anomalías manchas de color y analizar las tendencias.
+4. Realice un análisis de alertas y registros de seguridad de aplicaciones de nube de Office 365 para detectar anomalías y analizar tendencias.
     
-5. Compruebe las tendencias del sector la ciberseguridad le servirán para tener en cuenta las amenazas de seguridad más recientes.
+5. Compruebe las tendencias de Cybersecurity de la industria para conocer las amenazas de seguridad más recientes.
     
-6. Realizar un análisis de los cambios que deben realizarse para el conjunto actual de directivas de seguridad de la aplicación de nube de Office 365. Incorporar cambios de las características de seguridad de la aplicación de nube de Office 365, anomalías actuales y las tendencias de la ciberseguridad. Recomendar cambios en las directivas existentes o la creación de nuevas directivas.
+6. Realice un análisis de los cambios que deben realizarse en el conjunto actual de directivas de seguridad de aplicaciones de nube de Office 365. Incorpore cambios de características de seguridad de aplicaciones de nube de Office 365, anomalías actuales y tendencias de Cybersecurity. Recomendar cambios a las directivas existentes o la creación de nuevas directivas.
     
-7. Crear un plan para la implementación de los cambios de directiva. Comunicarse (relacionarse) las consecuencias de los cambios propuestos con los usuarios finales según sea necesario.
+7. Cree un plan para implementar los cambios de la Directiva. Comunique (socialmente) las consecuencias de los cambios propuestos con los usuarios finales según sea necesario.
     
-8. Implementar los cambios de la directiva de seguridad de la aplicación de nube de Office 365.
+8. Implemente los cambios de la Directiva de seguridad de aplicación de Office 365 Cloud.
     
-9. Supervisar las alertas de seguridad de la aplicación de Office 365 en la nube y los comentarios del usuario final y ajustar las directivas a través del tiempo.
+9. Supervise los comentarios de los usuarios finales y alertas de seguridad de aplicaciones de nube de Office 365 y ajuste las directivas a lo largo del tiempo.
     
 ## <a name="next-steps"></a>Pasos siguientes
 
 - [Investigar una actividad](investigate-an-activity-in-office-365-cas.md)
     
-- [Suspender o restauración de una cuenta de usuario](suspend-or-restore-an-account-in-ocas.md)
+- [Suspender o restaurar una cuenta de usuario](suspend-or-restore-an-account-in-ocas.md)
     
-- [Administración de aplicaciones de OAuth](manage-app-permissions-in-ocas.md)
+- [Administrar aplicaciones de OAuth](manage-app-permissions-in-ocas.md)
     
 - [Revisar los resultados de la detección de aplicaciones en Office 365 Cloud App Security](review-app-discovery-findings-in-ocas.md)
     
-- Ver una lista de admitidos de [orígenes de datos y los registros de tráfico Web](web-traffic-logs-and-data-sources-for-ocas.md)
+- Ver una lista de los [orígenes de datos y los registros de tráfico web](web-traffic-logs-and-data-sources-for-ocas.md) admitidos
     
 

@@ -1,67 +1,67 @@
 ---
-title: Administrar un incidente de pérdidas de datos en Microsoft 365
+title: Administrar un incidente de derrame de datos en Microsoft 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: En este artículo se describe cómo utilizar la nueva herramienta de investigaciones (vista previa) de datos en el centro de cumplimiento de seguridad de Office 365 & para administrar un incidente de pérdidas de datos.
-ms.openlocfilehash: d7adc17d01a0ae2ad6b7bfb7052862a5a6419882
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+description: En este artículo se describe el uso de la herramienta nueva investigación de datos (vista previa) en el centro de seguridad de Office 365 Security & para administrar un incidente de derrame de datos.
+ms.openlocfilehash: 93cbbed8763f0af31ab8d4e32348f01bfda17a2a
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29706183"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218130"
 ---
-# <a name="manage-a-data-spillage-incident-in-microsoft-365"></a>Administrar un incidente de pérdidas de datos en Microsoft 365 
+# <a name="manage-a-data-spillage-incident-in-microsoft-365"></a>Administrar un incidente de derrame de datos en Microsoft 365 
 
-Pérdidas de datos es cuando se libera un documento confidencial en un entorno que no se confía. Cuando se detecta un incidente de pérdidas de datos, es importante evaluar rápidamente el tamaño y las ubicaciones de las pérdidas, se examinan las actividades del usuario alrededor de él y, a continuación, permanentemente purgar los datos derramados desde el sistema.
+La derramación de datos es cuando se publica un documento confidencial en un entorno que no es de confianza. Cuando se detecta un incidente de derrame de datos, es importante evaluar rápidamente el tamaño y las ubicaciones del derrame, examinar las actividades de los usuarios en torno a él y, a continuación, purgar de forma permanente los datos derramados del sistema.
 
 ## <a name="scope-of-this-article"></a>Ámbito de este artículo
 
-En este artículo se proporciona una lista de instrucciones acerca de cómo quitar permanentemente los elementos de buzones de Office 365 por lo que ya no son accesibles o recuperables por los usuarios o administradores. 
+En este artículo se proporciona una lista de instrucciones sobre cómo quitar permanentemente los elementos de los buzones de correo de Office 365 para que los usuarios o los administradores ya no puedan obtener acceso a ellos o puedan recuperarlos. 
 
 > [!NOTE]
-> Cuando elimina los elementos ubicados en un SharePoint o OneDrive para el sitio de negocio, sí se conservan para 93 días desde el momento en que eliminarlos de su ubicación original.
+> Cuando se eliminan elementos ubicados en un sitio de SharePoint o de OneDrive para la empresa, se conservan durante 93 días desde el momento en que se eliminan de su ubicación original.
 
 ## <a name="scenario"></a>Escenario
 
-Se está informado de un incidente de pérdidas de datos donde un empleado sin darse cuenta comparte un documento altamente confidencial con varias personas a través de correo electrónico. Desea evaluar rápidamente que recibió este documento, tanto dentro como fuera de la organización. Una vez haya investigar el incidente, planea compartir sus conclusiones con otros investigadores para revisar y, a continuación, quitar permanentemente los datos derramados de Office 365. Una vez finalizada la investigación, que desea quitar todas las pruebas. 
+Se le informa de un incidente de derrame de datos donde un empleado ha compartido sin saberlo un documento altamente confidencial con varias personas a través del correo electrónico. Desea evaluar rápidamente quién recibió este documento, tanto dentro como fuera de la organización. Una vez que haya investigado el incidente, tiene previsto compartir sus hallazgos con otros investigadores para revisar y, a continuación, eliminar de forma permanente los datos derramados de Office 365. Una vez completada la investigación, desea quitar todas las evidencias. 
 
 ## <a name="workflow"></a>Flujo de trabajo
 
-Este es el flujo de trabajo para usar datos de investigaciones (vista previa) para administrar un incidente de pérdidas de datos:
+Este es el flujo de trabajo para usar investigaciones de datos (versión preliminar) para administrar un incidente de derrame de datos:
 
-1.  Crear una investigación de datos.
+1.  Cree una investigación de datos.
 
-2.  Buscar los datos derramados.
+2.  Busque los datos derramados.
 
-3.  Revise e investigar el incidente.
+3.  Revise e investigue el incidente.
 
-4.  Eliminar permanentemente los datos derramados.
+4.  Eliminar de forma permanente los datos derramados.
 
 5.  Cierre o elimine la investigación.
 
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-- Para crear una investigación, buscar los datos derramados y revisar y analizar, debe usar la herramienta de investigaciones de datos (vista previa) en el centro de cumplimiento de seguridad de Office 365 &. A continuación, usará seguridad & PowerShell de centro de cumplimiento para eliminar permanentemente los datos derramados de Office 365. 
+- Debe usar la herramienta de investigación de datos (vista previa) del centro de seguridad de Office 365 & para crear una investigación, buscar los datos derramados y revisarlos y analizarlos. A continuación, usará Security & Compliance Center PowerShell para eliminar de forma permanente los datos derramados de Office 365. 
 
-- Para crear una investigación, debe ser miembro del grupo de roles de administrador de cumplimiento de normas en el centro de cumplimiento de seguridad &.
+- Para crear una investigación, debe ser miembro del grupo de roles de administrador de cumplimiento en el centro de seguridad & cumplimiento.
 
-- Para eliminar los mensajes, debe ser miembro del grupo de roles de administración de la organización en el centro de cumplimiento de seguridad & o tener asignada la función de búsqueda y depuración. Para obtener información sobre cómo agregar usuarios a un grupo de roles, consulte [dar acceso a los usuarios para el centro de cumplimiento de seguridad &](../grant-access-to-the-security-and-compliance-center.md). 
+- Para eliminar mensajes, debe ser miembro del grupo de roles de administración de la organización en el centro de seguridad & cumplimiento o tener asignado el rol de búsqueda y dePuración. Para obtener información sobre cómo agregar usuarios a un grupo de roles, consulte [proporcionar a los usuarios acceso al centro de seguridad _AMP_ cumplimiento](../grant-access-to-the-security-and-compliance-center.md). 
 
-- Para controlar las cuentas de OneDrive para la que se puede buscar una investigación y que los buzones de usuario, su organización puede configurar los límites de cumplimiento. Para obtener más información, [establecer los límites de cumplimiento para investigaciones de exhibición de documentos electrónicos](../set-up-compliance-boundaries.md). 
+- Para controlar los buzones de usuario y las cuentas de OneDrive que puede buscar un investigador, su organización puede configurar límites de cumplimiento. Para obtener más información, configure los [límites de cumplimiento para las investigaciones de eDiscovery](../set-up-compliance-boundaries.md). 
 
-## <a name="step-1-create-a-data-investigation"></a>Paso 1: Crear una investigación de datos
+## <a name="step-1-create-a-data-investigation"></a>Paso 1: crear una investigación de datos
 
 Para crear una investigación de datos:
 
@@ -69,79 +69,79 @@ Para crear una investigación de datos:
     
 2. Inicie sesión en Office 365 con su cuenta profesional o educativa.
     
-3. En el centro de cumplimiento de seguridad &, haga clic en **Datos de investigaciones**.
+3. En el centro de seguridad & cumplimiento, haga clic en **investigaciones de datos**.
  
-4. En la página **Datos de investigaciones (vista previa)** , haga clic en **crear una nueva investigación**.
+4. En la página **investigaciones de datos (vista previa)** , haga clic en **crear una nueva investigación**.
     
-5. En la página de emergente **nueva investigación de datos** , asigne un nombre (obligatorio) a la investigación y, a continuación, escriba una descripción y un número de investigación opcional. Tenga en cuenta que el nombre debe ser único en la organización.
+5. En la página flotante **nueva investigación de datos** , dé un nombre a la investigación (obligatorio) y, a continuación, escriba una descripción y un número de investigación opcional. Tenga en cuenta que el nombre debe ser único en su organización.
 
-6. Bajo **¿desea configurar opciones adicionales después de crear esta investigación?**, siga uno de los siguientes procedimientos:
+6. En **¿desea configurar opciones adicionales después de crear esta investigación?**, siga uno de estos procedimientos:
 
-    - Haga clic en **Sí** para crear la investigación y mostrar la página de **configuración** en el caso nuevo. Esto le permite agregar miembros a la investigación.
+    - Haga clic en **sí** para crear la investigación y mostrar la página de **configuración** en el nuevo caso. Esto le permite agregar miembros a la investigación.
     
-    - Haga clic en **No** para acaba de crear la investigación y mostrarlos en la lista de los casos, en la página de **Datos de investigaciones (vista previa)** . Si elige esta opción, se agrega como el único miembro de la investigación y la configuración de búsqueda y análisis de predeterminada que se va a usar. Puede agregar a miembros o cambiar configuración en cualquier momento después de haber creado la investigación.
+    - Haga clic en **no** para crear la investigación solo y mostrarla en la lista de casos de la página **investigaciones de datos (vista previa)** . Si elige esta opción, se agregará como el único miembro de la investigación y se usará la configuración de búsqueda y análisis predeterminada. Puede Agregar miembros o cambiar la configuración en cualquier momento después de crear la investigación.
 
 7. Haga clic en **Guardar** para crear la investigación.
 
-    La nueva investigación se muestra en la lista en la página de **Datos de investigaciones (vista previa)** . 
+    La nueva investigación se muestra en la lista de la página **investigaciones de datos (vista previa)** . 
 
 8. Para abrir una investigación, haga clic en el nombre de la investigación. 
 
-    Se muestra la ficha **Inicio** para la investigación. 
+    Se muestra la pestaña **Inicio** de la investigación. 
 
 > [!TIP]
-> Considere la posibilidad de establecer una convención de nomenclatura para las investigaciones y proporcione tanta información como lo haría en el nombre y la descripción para que pueda buscar y hacer referencia a en el futuro si es necesario.
+> Considere la posibilidad de establecer una Convención de nomenclatura para las investigaciones y proporcionar toda la información que pueda en el nombre y la descripción para que pueda ubicar y hacer referencia a ella en el futuro si es necesario.
  
-## <a name="step-2-search-for-the-spilled-data"></a>Paso 2: Búsqueda de los datos derramados 
+## <a name="step-2-search-for-the-spilled-data"></a>Paso 2: buscar los datos derramados 
  
-Si sabe qué usuarios desea buscar datos derramados, puede agregarlas como personas de interés para asignar sus orígenes de datos para la investigación y buscar rápidamente su buzón de correo y la cuenta de OneDrive. Para agregar personas de interés para la investigación, haga clic en **personas de interés**y, a continuación, haga clic en **agregar personas de interés**. 
+Si sabe qué usuarios desean buscar datos derramados, puede agregarlos como personas de interés para asignar sus orígenes de datos a la investigación y buscar rápidamente sus buzones de correo y su cuenta de OneDrive. Para agregar personas de interés a la investigación, haga clic en **personas de interés**y, a continuación, haga clic en **Agregar personas de interés**. 
 
-En la ficha de **búsquedas** , puede crear las búsquedas para encontrar los datos derramados. Va a usar la misma consulta de búsqueda que usa para buscar los datos derramados para eliminar esos mismos mensajes en el [paso 4](##step-4:-permanently-delete-the-spilled-data). Para obtener más información sobre la creación de búsquedas, vea [crear una búsqueda para recopilar datos](create-search-to-collect-data.md).
+En la pestaña **búsquedas** , puede crear búsquedas para buscar los datos derramados. Usará la misma consulta de búsqueda que usó para buscar los datos derramados para eliminar los mismos mensajes en el [paso 4](##step-4:-permanently-delete-the-spilled-data). Para obtener más información acerca de la creación de búsquedas, vea [crear una búsqueda para recopilar datos](create-search-to-collect-data.md).
 
-Después de ejecutar la búsqueda, puede obtener una vista previa de ejemplos de los resultados de búsqueda y ver las estadísticas de búsqueda para evaluar la eficacia de la consulta de búsqueda. Una vez que se identifican los elementos que desea eliminar de Office 365, puede haga clic en la ficha de **incidentes** y, a continuación, crear un incidente y agregar los resultados de búsqueda que contienen esos elementos. 
+Después de ejecutar la búsqueda, puede obtener una vista previa de los ejemplos de los resultados de búsqueda y ver las estadísticas de búsqueda para evaluar la efectividad de la consulta de búsqueda. Una vez que identifique los elementos que desea eliminar de Office 365, puede hacer clic en la pestaña **incidentes** y, a continuación, crear un incidente y agregar resultados de búsqueda que contengan dichos elementos. 
 
-Para ello, haga clic en la búsqueda que desea investigar. En la página emergente, haga clic en **Agregar resultados a incidentes** y siga las instrucciones. A continuación, en el incidente, puede revisar documentos individuales, investigar quién ha tenido acceso a documentos y exportar los documentos. Para eliminar simplemente los documentos en lugar de revisarlos, vaya al [paso 4](##step-4:-permanently-delete-the-spilled-data). 
+Para ello, haga clic en la búsqueda que desea investigar. En la página flotante, haga clic en **Agregar resultados a incidente** y siga las instrucciones. A continuación, en la incidencia, puede revisar documentos individuales, investigar quién tenía acceso a los documentos y exportar los documentos. Para eliminar los documentos en lugar de revisarlos, vaya al [paso 4](##step-4:-permanently-delete-the-spilled-data). 
 
 > [!IMPORTANT]
-> Las palabras clave que usar en la consulta de búsqueda pueden contener los datos derramados real que se va a buscar. Por ejemplo, si busca documentos que contienen un número de la seguridad social y usarlo como una palabra clave en la consulta de búsqueda, debe eliminar la consulta posteriormente para evitar pérdidas de otros. Puede eliminar la búsqueda o eliminar la investigación toda en el [paso 5](##step-5:-close-or-delete-investigation). 
+> Las palabras clave que se usan en la consulta de búsqueda pueden contener los datos que se han derramado reales que se están buscando. Por ejemplo, si busca documentos que contengan un número de la seguridad social y lo usa como una palabra clave en la consulta de búsqueda, debe eliminar la consulta posteriormente para evitar más derrames. Puede eliminar la búsqueda o eliminar la investigación completa en el [paso 5](##step-5:-close-or-delete-investigation). 
 
-## <a name="step-3-review-and-investigate"></a>Paso 3: Revisar e investigar 
+## <a name="step-3-review-and-investigate"></a>Paso 3: revisar e investigar 
 
-En la investigación, vaya a la ficha de **incidentes** y haga clic en el incidente que creó en el paso anterior. Después de que se complete el trabajo de procesamiento y los resultados de búsqueda se agregan a un incidente, puede revisar los documentos individuales en su formato nativo, formato de texto o un formato casi nativo. Puede crear consultas adicionales para restringir más la lista de documentos y documentos de etiqueta para indicar los resultados de la investigación.
+En la investigación, vaya a **incidentes** y haga clic en el incidente que ha creado en el paso anterior. Una vez completado el trabajo de procesamiento y agregados los resultados de la búsqueda al incidente, puede revisar documentos individuales en su formato nativo, formato de texto o un formato casi nativo. Puede crear consultas adicionales para restringir aún más la lista de documentos y etiquetar los documentos para indicar los resultados de la investigación.
 
-Para agrupar los documentos y obtener más ayuda para su revisión, haga clic en **Administrar incidente**. En el icono del **análisis** , haga clic en **analizar**. Esto ejecutará análisis avanzados, como la detección de duplicados, correo electrónico threading y análisis de tema. Para obtener más información, vea:
+Para agrupar documentos y obtener más ayuda para su revisión, haga clic en **administrar incidente**. En el mosaico **Analytics** , haga clic en **analizar**. De esta forma, se ejecutarán análisis avanzados, como la detección de duplicados, el procesamiento de correo electrónico y el análisis de temas. Para obtener más información, vea:
 
 - [Detección de semiduplicados](near-duplicates.md)
 - [Subprocesos de correo electrónico](email-threading.md)
 - [Temas](themes.md)
 
-Para determinar los usuarios que participan en las pérdidas de datos, puede crear una nueva consulta en el incidente y, a continuación, usar el remitente/autor y las condiciones de los destinatarios. Esto creará una lista de todos los remitentes, destinatarios y los autores que se encuentran en los datos recopilados que se ha agregado a un incidente. Asegúrese de examinar la lista para determinar si hay algún usuario externo en la lista. Para obtener más información, vea [condiciones de búsqueda](../keyword-queries-and-search-conditions.md#search-conditions).
+Para determinar qué usuarios participan en la derrame de datos, puede crear una nueva consulta en el incidente y, a continuación, usar las condiciones de remitente/autor y destinatarios. Se creará una lista de todos los remitentes, destinatarios y autores encontrados en los datos recopilados que se agregaron al incidente. Asegúrese de examinar la lista para determinar si hay usuarios externos en la lista. Para obtener más información, vea [condiciones de búsqueda](../keyword-queries-and-search-conditions.md#search-conditions).
 
-## <a name="step-4-permanently-delete-the-spilled-data"></a>Paso 4: Eliminar permanentemente los datos derramados
+## <a name="step-4-permanently-delete-the-spilled-data"></a>Paso 4: eliminar permanentemente los datos derramados
 
-### <a name="deleting-mailbox-items"></a>Eliminar elementos del buzón de correo
+### <a name="deleting-mailbox-items"></a>Eliminación de elementos de buzón
 
-Después de revisar y validar que los resultados de búsqueda contienen solo los mensajes de correo electrónico que se deben eliminar, puede eliminar ellos permanentemente mediante la ejecución de la **New-ComplianceSearchAction-purgar - PurgeType HardDelete** command en & cumplimiento de seguridad Centro PowerShell. Para obtener instrucciones, vea [Buscar y eliminar mensajes de correo electrónico](../search-for-and-delete-messages-in-your-organization.md). 
+Después de revisar y validar que los resultados de la búsqueda contengan solo los mensajes de correo electrónico que deben eliminarse, puede eliminarlos de forma permanente ejecutando el comando **New-ComplianceSearchAction-Purge-PurgeType HardDelete** en Security & Compliance. Center PowerShell. Para obtener instrucciones, consulte [Buscar y eliminar mensajes de correo electrónico](../search-for-and-delete-messages-in-your-organization.md). 
 
-Tenga en cuenta que si está habilitada la recuperación de elemento único para los buzones de correo en la organización, los elementos eliminados permanentemente será retenidas en la carpeta del usuario elementos recuperables (y pueden tener acceso a los administradores) hasta que finalice de período de retención de elementos eliminados (el valor predeterminado es de 14 días). Además, si cualquiera de los buzones de correo que contienen datos derramados están en una suspensión legal o asignados a una directiva de retención, los mensajes purgados se conservarán en la carpeta elementos recuperables hasta que se elimina la suspensión o el buzón de correo se excluye de las directivas de retención. Para eliminar disco duro mensajes inmediatamente, necesario para llevar a cabo tareas de incorporación. Para obtener instrucciones, vea [Eliminar elementos en la carpeta de buzones de correo basados en la nube en retención de elementos recuperables ](../delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md).  
+Tenga en cuenta que si la recuperación de elementos individuales está habilitada para los buzones de la organización, los elementos eliminados permanentemente se conservarán en la carpeta elementos recuperables del usuario (y los administradores podrán acceder a ellos) hasta que finalice el período de retención de elementos eliminados (el valor predeterminado es de 14 días). Además, si alguno de los buzones de correo que contienen datos derramados están en suspensión legal o se asignan a una directiva de retención, el mensaje purgado se conservará en la carpeta elementos recuperables hasta que se quite la retención o hasta que el buzón de correo se excluya de las directivas de retención. Para eliminar los mensajes de forma inmediata, debe realizar tareas adicionales. Para obtener instrucciones, consulte [eliminar elementos de la carpeta elementos recuperables de buzones basados en la nube en retención ](../delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md).  
 
 > [!IMPORTANT]
-> Compruebe con la administración de registros o departamentos legales antes de quitar una directiva de retención o suspensión. Su organización puede tener una directiva que define si un buzón de correo en espera o un incidente de pérdidas de datos tiene prioridad. 
+> Compruebe con la administración de registros o los departamentos jurídicos antes de quitar una retención o Directiva de retención. Es posible que su organización tenga una directiva que defina si un buzón de correo en espera o un incidente de derrame de datos tiene prioridad. 
 
 ### <a name="deleting-site-items"></a>Eliminación de elementos de sitio
 
-Para eliminar permanentemente un documento desde un sitio de SharePoint o OneDrive para la cuenta de empresa, debe eliminarlo y, a continuación, se debe eliminar del sitio y, a continuación, elimine la Papelera de reciclaje de la colección de sitios. Para obtener instrucciones, vea [Eliminar documentos en SharePoint y OneDrive](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#deleting-documents-in-sharepoint-online-and-onedrive-for-business).
+Para eliminar de forma permanente un documento de un sitio de SharePoint o una cuenta de OneDrive para la empresa, debe eliminarlo y, a continuación, eliminarlo del sitio y, a continuación, eliminarlo de la papelera de reciclaje de la colección de sitios. Para obtener instrucciones, vea [Eliminar documentos en SharePoint y OneDrive](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365#deleting-documents-in-sharepoint-online-and-onedrive-for-business).
 
-Como alternativa, puede eliminar una colección de sitios completa que es posible que contenía datos derramados. Para obtener instrucciones, vea [Eliminar una colección de sitios](https://docs.microsoft.com/sharepoint/delete-site-collection).
+Como alternativa, puede eliminar una colección de sitios completa que podría contener datos derramados. Para obtener instrucciones, vea [Delete a site Collection](https://docs.microsoft.com/sharepoint/delete-site-collection).
 
-## <a name="step-5-close-or-delete-the-investigation"></a>Paso 5: Cerrar o eliminar la investigación
+## <a name="step-5-close-or-delete-the-investigation"></a>Paso 5: cerrar o eliminar la investigación
 
-Después de eliminar documentos en las ubicaciones de contenido de origen (buzones de correo o sitios), aún tendrá copias de estos documentos que haya agregado al incidentes como parte de la investigación. Para evitar aún más pérdidas de datos, considere la posibilidad de eliminar la investigación.
+Después de eliminar documentos en las ubicaciones de contenido de origen (buzones o sitios), seguirá teniendo copias de estos documentos que agregó a los incidentes como parte de la investigación. Para evitar la posterior derramación de datos, debe considerar la posibilidad de eliminar la investigación.
 
 Para eliminar una investigación:
 
-1. En la ficha **configuración** , haga clic en **información de investigación**.
+1. En la pestaña **configuración** , haga clic en información de la **investigación**.
 
-2. Haga clic en **Eliminar caso**. 
+2. Haga clic en **eliminar caso**. 
 
-Si no es necesario eliminar la investigación o si desea guardar la información recopilada durante la investigación, puede hacer clic en **Cerrar el caso**. En una fecha posterior, puede volver a abrir investigaciones cerradas.
+Si no necesita eliminar la investigación o si desea guardar la información recopilada durante la investigación, puede hacer clic en **cerrar caso**. En una fecha posterior, puede volver a abrir investigaciones cerradas.

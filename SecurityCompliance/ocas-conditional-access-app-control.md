@@ -1,5 +1,5 @@
 ---
-title: Proteger aplicaciones con Office 365 Cloud App Security de acceso condicional control de aplicaciones
+title: Proteger aplicaciones con el Control de aplicaciones de acceso condicional de Office 365 Cloud App Security
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -7,17 +7,17 @@ ms.reviewer: alesibov
 ms.audience: Admin
 ms.topic: reference
 ms.date: 02/14/2019
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 description: Detenga las infracciones y pérdidas en tiempo real con el control de aplicación de acceso condicional de seguridad de aplicación de Office 365 Cloud app.
-ms.openlocfilehash: 8656bf9d3e028bf6b44731c397b74d9c883db707
-ms.sourcegitcommit: 8679937354c1d8870ecd41519a59d2d7468c23c4
+ms.openlocfilehash: 23c4b29e86eb8ba92cfa8a544d6484965ec6372b
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30103365"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217090"
 ---
-# <a name="protect-apps-with-office-365-cloud-app-security-conditional-access-app-control"></a>Proteger aplicaciones con Office 365 Cloud App Security de acceso condicional control de aplicaciones
+# <a name="protect-apps-with-office-365-cloud-app-security-conditional-access-app-control"></a>Proteger aplicaciones con el Control de aplicaciones de acceso condicional de Office 365 Cloud App Security
 
 |Evaluación * *\>**|Planeación * *\>**|Implementación * *\>**|Uso * * * *|
 |:-----|:-----|:-----|:-----|
@@ -104,7 +104,7 @@ Las aplicaciones adicionales se están continuamente en el control de la sesión
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-- [Implementar el control de aplicaciones de acceso condicional para aplicaciones de Office 365](ocas-deploy-conditional-access-app-control.md)
+- [Implementar el Control de aplicaciones de acceso condicional para las aplicaciones de Office 365](ocas-deploy-conditional-access-app-control.md)
 
 - [Obtener información sobre las directivas de sesión en Office 365 Cloud App Security](ocas-session-policies.md)
 

@@ -6,36 +6,36 @@ manager: laurawi
 ms.date: 6/29/2018
 ms.audience: Admin
 ms.topic: hub-page
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MED150
 - MET150
 ms.assetid: 4c234874-015e-4768-8495-98fcccfc639b
-description: Puede configurar una cuarentena para mensajes de correo electrónico entrante en Office 365 donde los mensajes de correo electrónico entrantes que se han filtrado como correo no deseado, de forma masiva, correo de suplantación de identidad, y se puede mantener el malware para su revisión posterior.
-ms.openlocfilehash: a336e1fed0bd9a3c1e347610f6a42b70f5c80b1b
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: Puede configurar una cuarentena para los mensajes de correo electrónico entrantes en Office 365 donde los mensajes de correo electrónico entrantes que se filtraron como correo no deseado, masivo, correo de suplantación de identidad (phishing) y malware se pueden conservar para una revisión posterior.
+ms.openlocfilehash: fe8e59718a6b7293821875d19ba2b98070396f0f
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22536048"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217770"
 ---
 # <a name="quarantine-email-messages-in-office-365"></a>Cuarentena de mensajes de correo electrónico en Office 365
 
-Puede configurar la cuarentena para mensajes de correo electrónico entrante en Office 365, donde pueden guardarse los mensajes que se han filtrado como correo no deseado, correo masivo, correo de suplantación de identidad, correo electrónico que contiene el malware y correo electrónico que coincide con una regla de flujo de correo especificado para su revisión posterior.
+Puede configurar la cuarentena para los mensajes de correo electrónico entrantes en Office 365 donde los mensajes que se han filtrado como correo no deseado, correo masivo, correo de suplantación de identidad, correo que contiene malware y el correo que coincide con una regla de flujo de correo especificada se pueden conservar para su posterior revisión.
   
-De forma predeterminada, los mensajes filtrados se envían a la carpeta de correo no deseado de los destinatarios, excepto por correo electrónico que contiene el malware que se envía a cuarentena de forma predeterminada. Como administrador, puede configurar las directivas de filtro de contenido para enviar los mensajes filtrados en cuarentena en su lugar. Las distintas acciones que puede realizar para los mensajes filtrados por contenido dependen de las [directivas de filtro que haya definido de correo no deseado](https://go.microsoft.com/fwlink/?LinkId=799736).
+De forma predeterminada, los mensajes filtrados se envían a la carpeta de correo electrónico no deseado de los destinatarios, excepto el correo que contiene malware que se envía a la cuarentena de forma predeterminada. Como administrador, puede configurar directivas de filtro de contenido para enviar en su lugar a cuarentena todos los mensajes filtrados. Las diferentes acciones que puede llevar a cabo para los mensajes filtrados por contenido dependen de las [directivas de filtro de correo no deseado que haya definido](https://go.microsoft.com/fwlink/?LinkId=799736).
   
-Los usuarios y los administradores pueden trabajar con los mensajes en cuarentena. Los usuarios pueden trabajar con sus propios mensajes de filtrados en cuarentena. Los administradores pueden buscar y administrar los mensajes en cuarentena para todos los usuarios.
+Tanto los usuarios como los administradores pueden trabajar con los mensajes en cuarentena. Los usuarios pueden trabajar en cuarentena solo con sus propios mensajes filtrados. Los administradores pueden buscar y administrar los mensajes en cuarentena para todos los usuarios.
   
-Encontrará más información sobre cómo trabajar con los mensajes en cuarentena:
+Obtenga más información sobre cómo trabajar con mensajes en cuarentena:
   
-- [Administrar mensajes en cuarentena como un administrador](manage-quarantined-messages-and-files.md)
+- [Administrar mensajes en cuarentena como administrador](manage-quarantined-messages-and-files.md)
     
 - [Buscar y liberar mensajes en cuarentena como usuario](find-and-release-quarantined-messages-as-a-user.md)
     
-- [Usar notificaciones de spam de usuario para liberar y notificar mensajes en cuarentena de correo no deseado](use-spam-notifications-to-release-and-report-quarantined-messages.md)
+- [Usar notificaciones de correo no deseado de usuario para liberar y notificar mensajes de correo no deseado en cuarentena](use-spam-notifications-to-release-and-report-quarantined-messages.md)
     
 - [Preguntas más frecuentes sobre la cuarentena](quarantine-faq.md)
     

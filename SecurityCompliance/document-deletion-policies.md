@@ -6,27 +6,27 @@ manager: laurawi
 ms.date: 6/12/2017
 ms.audience: Admin
 ms.topic: overview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - SPO160
 ms.assetid: 55e8d858-f278-482b-a198-2e62d6a2e6e5
-description: Su organización puede ser requerida para retener documentos durante un período de tiempo a causa de cumplimiento de normas, legal, u otros requisitos empresariales. Sin embargo, si su organización mantiene documentos más de necesarios, crear riesgos legales innecesarios. Con una directiva de eliminación de documentos, puede reducir proactivamente riesgo mediante la eliminación de documentos en un sitio después de un período de tiempo específico, por ejemplo, puede eliminar documentos de OneDrive de los usuarios para profesionales de sitios de cinco años después de que se crearon los documentos.
-ms.openlocfilehash: 7af818dd7d9dd87eb671bdd86ef03e0b5dead1e2
-ms.sourcegitcommit: ede6230c2df398dc0a633e8f32ee0bfede0d5142
+description: Es posible que su organización tenga que conservar los documentos durante un período de tiempo debido a los requisitos de cumplimiento, legales u otros requisitos empresariales. Sin embargo, si la organización guarda documentos más tiempo del necesario, se crea un riesgo legal innecesario. Con una directiva de eliminación de documentos, puede reducir el riesgo de forma proactiva eliminando los documentos de un sitio después de un período de tiempo específico (por ejemplo, puede eliminar documentos de los sitios de OneDrive para la empresa de los usuarios cinco años después de que se crearon los documentos).
+ms.openlocfilehash: 9f1355e8a522900aa47ef20ef580918ab5584b99
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "25002673"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218440"
 ---
 # <a name="overview-of-document-deletion-policies"></a>Información general sobre las directivas de eliminación de documentos
 
 > [!IMPORTANT]
-> Más adelante, se recomienda usar una directiva de retención o etiquetas creadas en la seguridad &amp; centro de cumplimiento en lugar de una directiva de eliminación de documentos. Las directivas de eliminación de documentos seguirán funcionando codo con codo con las directivas de retención, pero si desea conservar o eliminar contenido en cualquier lugar en Office 365, se recomienda que use una directiva de retención. Para obtener más información, vea [utilizar una directiva de retención en lugar de estas características](retention-policies.md#use-a-retention-policy-instead-of-these-features).
+> En el futuro, le recomendamos que use una directiva de retención o etiquetas creadas en &amp; el centro de seguridad y cumplimiento en lugar de una directiva de eliminación de documentos. Las directivas de eliminación de documentos seguirán funcionando en paralelo con las directivas de retención, pero si necesita conservar o eliminar contenido en cualquier lugar de Office 365, le recomendamos que use una directiva de retención. Para obtener más información, vea [usar una directiva de retención en lugar de estas características](retention-policies.md#use-a-retention-policy-instead-of-these-features).
   
-Su organización puede ser requerida para retener documentos durante un período de tiempo a causa de cumplimiento de normas, legal, u otros requisitos empresariales. Sin embargo, si su organización mantiene documentos más de necesarios, crear riesgos legales innecesarios. Con una directiva de eliminación de documentos, puede reducir proactivamente riesgo mediante la eliminación de documentos en un sitio después de un período de tiempo específico, por ejemplo, puede eliminar documentos de OneDrive de los usuarios para profesionales de sitios de cinco años después de que se crearon los documentos.
+Es posible que su organización tenga que conservar los documentos durante un período de tiempo debido a los requisitos de cumplimiento, legales u otros requisitos empresariales. Sin embargo, si la organización guarda documentos más tiempo del necesario, se crea un riesgo legal innecesario. Con una directiva de eliminación de documentos, puede reducir el riesgo de forma proactiva eliminando los documentos de un sitio después de un período de tiempo específico (por ejemplo, puede eliminar documentos de los sitios de OneDrive para la empresa de los usuarios cinco años después de que se crearon los documentos).
   
-Las directivas de eliminación de documentos son eficaces aún flexible — por ejemplo, se puede:
+Las directivas de eliminación de documentos son potentes pero flexibles, por ejemplo, puede:
   
 - Permitir a los propietarios de sitios elegir directivas que usted cree y administre de forma centralizada. También puede permitir que los propietarios de sitios anulen una directiva si deciden que no se aplica a su contenido.
     
@@ -36,7 +36,7 @@ Las directivas de eliminación de documentos son eficaces aún flexible — por 
     
 - Crear una directiva que incluya varias reglas de eliminación entre las que podrá elegir el propietario de un sitio.
     
-Puede crear y administrar las directivas de eliminación de documentos mediante el centro de directiva de eliminación de documentos, que puede encontrar en **retención** en la seguridad de Office 365 &amp; centro de cumplimiento. Como alternativa, puede crear el centro de directiva manualmente mediante la [creación de la colección de sitios](https://go.microsoft.com/fwlink/p/?LinkID=404342) y elija **Centro de cumplimiento de directivas** en la ficha de **empresa** . Cada inquilino puede tener un solo centro de directiva de eliminación de documento y se podrá crear automáticamente si inicia desde la seguridad &amp; centro de cumplimiento. 
+Puede crear y administrar directivas de eliminación de documentos mediante el centro de directivas de eliminación de documentos, que puede encontrar en **retención** en el &amp; centro de seguridad y cumplimiento de Office 365. Como alternativa, puede crear el centro de directivas manualmente [creando la colección de sitios](https://go.microsoft.com/fwlink/p/?LinkID=404342) y seleccionando **centro de directivas de cumplimiento** en la pestaña **empresa** . Cada inquilino solo puede tener un centro de directivas de eliminación de documentos y se creará automáticamente si se inicia desde el &amp; centro de seguridad y cumplimiento. 
   
 ![Página de inicio de Centro de directivas de eliminación de documentos](media/IP-Document-Deletion-Policy-Center-home-page.png)
   
@@ -46,13 +46,13 @@ Además de las directivas de eliminación de documentos, Office 365 proporciona 
   
 - [Administración de registros](https://go.microsoft.com/fwlink/p/?LinkID=404250)
     
-- [Directivas de administración de información para los tipos de contenido, las listas y bibliotecas](https://go.microsoft.com/fwlink/p/?LinkID=404239)
+- [Directivas de administración de información para tipos de contenido, listas y bibliotecas](https://go.microsoft.com/fwlink/p/?LinkID=404239)
     
 - [Directivas del sitio](https://go.microsoft.com/fwlink/p/?LinkID=404242)
     
 Cada tipo de directiva funciona mejor para un tipo específico de datos o de sitio. Por ejemplo, su organización puede tener un sitio muy estructurado que usa tipos de contenido diferentes, como un sitio financiero para contratos o una knowledge base para artículos. En este caso, puede usar directivas de tipo de contenido. También es posible que su organización necesite conservar documentos legales, en cuyo caso puede usar tipos de contenido y un centro de registros para implementar un plan de archivos.
   
-Las directivas de eliminación de documentos no reemplazar registros información o administración de directivas de administración, que funcionan mejor con datos estructurados y tipos de contenido. En su lugar, debe usar las directivas de eliminación de documentos cuando necesite a grandes rasgos administrar la eliminación automática de datos no estructurados, como OneDrive para sitios de negocio y sitios de grupo.
+Las directivas de eliminación de documentos no sustituyen las directivas de administración de registros o de administración de información, que funcionan mejor con los datos estructurados y los tipos de contenido. En su lugar, debe usar directivas de eliminación de documentos cuando necesite administrar de manera general la eliminación automática de datos no estructurados, como sitios de grupo y sitios de OneDrive para la empresa.
   
 ![Diagrama con opciones de retención para contenido de sitio](media/IP-Retention-policies-for-site-content.png)
   
@@ -76,7 +76,7 @@ Si una directiva contiene más de una regla, los propietarios de los sitios pued
   
 ## <a name="policies-and-assignments"></a>Directivas y asignaciones
 
-Después de crear una directiva de eliminación de documentos, puede asignar a una plantilla de la colección de sitios, por ejemplo, puede asignar una directiva a la OneDrive para la plantilla de negocio para que incluya el sitio de OneDrive de cada usuario. Al asignar una directiva a una plantilla de la colección de sitios, esto se aplica a todas las colecciones de sitios ya creadas a partir de esa plantilla, además de las colecciones de sitios creados a partir de esa plantilla en el futuro.
+Después de crear una directiva de eliminación de documentos, puede asignarla a una plantilla de colección de sitios (por ejemplo, puede asignar una directiva a la plantilla de OneDrive para la empresa para que incluya el sitio de OneDrive de todos los usuarios). Cuando se asigna una directiva a una plantilla de colección de sitios, esto se aplica a todas las colecciones de sitios ya creadas a partir de esa plantilla, además de las colecciones de sitios creadas a partir de esa plantilla en el futuro.
   
 ![Página Seleccionar una plantilla con la opción OneDrive](media/IP-Choose-a-template.png)
   
@@ -90,19 +90,19 @@ En lugar de hacer una sola directiva obligatoria, también puede asignar varias 
   
 ### <a name="one-rule-or-several-rules-to-choose-from"></a>Una regla o varias reglas para elegir
 
-A su vez, cada directiva puede contener muchas reglas, por ejemplo, una directiva de eliminación de documentos de negocios general puede tener dos reglas:
+A su vez, cada Directiva puede contener varias reglas; por ejemplo, una directiva de eliminación para documentos empresariales generales puede tener dos reglas:
   
-- Documentos que no necesiten retención según las obligaciones legales o las necesidades empresariales actuales no se deben conservar durante más de un año desde su creación.
+- Los documentos que no necesiten retención según las obligaciones legales o las necesidades empresariales en curso no deben conservarse durante más de un año desde su creación.
     
 - Los documentos necesarios para un uso empresarial activo y continuado que se necesiten durante más de un año no deben conservarse durante más de tres años desde su creación.
     
-Un propietario del sitio puede determinar que su sitio contiene empresarial general documentos, seleccione esta directiva de eliminación y, a continuación, seleccione la regla correspondiente de la directiva. Sólo puede seleccionar una regla de la directiva que se aplica actualmente al sitio (no de cualquier directiva) y la regla se aplica a todas las bibliotecas de documentos en el sitio.
+El propietario de un sitio puede determinar que su sitio contiene documentos empresariales generales, seleccionar esta directiva de eliminación y, a continuación, seleccionar la regla adecuada de la Directiva. Solo se puede seleccionar una regla de la Directiva que se aplica actualmente al sitio (no desde cualquier directiva) y la regla se aplica a todas las bibliotecas de documentos del sitio.
   
 ## <a name="the-relationship-of-site-collections-policies-and-rules"></a>Relación entre colecciones de sitios, directivas y reglas
 
 La relación básica es la siguiente:
   
-Una colección de sitios o una plantilla de la colección de sitios puede tener una o varias directivas asignadas a ella, y cada una de dichas directivas puede tener una o varias reglas. Sin embargo, puede haber sólo una directiva que está activa por sitio, y puede haber sólo una regla de eliminación que está activa en cualquier momento para las bibliotecas dentro del sitio.
+Una colección de sitios o una plantilla de colección de sitios puede tener una o varias directivas asignadas, y cada una de estas directivas puede tener una o más reglas. Sin embargo, solo puede haber una Directiva activa por sitio y solo puede haber una regla de eliminación activa en cualquier momento para las bibliotecas dentro del sitio.
   
 ![Diagrama con relación entre directivas](media/IP-Two-policies-four-rules.png)
   
@@ -112,7 +112,7 @@ Igual que los permisos, la navegación y muchas otras características del sitio
   
 ## <a name="assigning-document-deletion-policies-for-the-first-time"></a>Asignar directivas de eliminación de documentos por primera vez
 
-Es importante comprender que el período de tiempo especificado para un documento de directiva de eliminación significa el tiempo desde que el documento se ha creado o modificado, no el tiempo desde que se asignó la directiva. Por ejemplo, podría crear una directiva de eliminación de documentos que se elimina de forma permanente documentos dos años después de que se crearon y, a continuación, asignar esa directiva a una plantilla de la colección de sitios desde la que varias colecciones de sitios se crearon cuatro o cinco años. En este caso, es probable que las colecciones de sitios existentes contienen muchos documentos que ya son anteriores a los dos años especificados por la directiva de eliminación, esto significa que una gran cantidad de contenido se eliminará pronto después de asignar la directiva de eliminación de documentos para la primera hora.
+Es importante comprender que el período de tiempo especificado para una directiva de eliminación de documentos significa el tiempo desde que se creó o modificó el documento, no el tiempo desde que se asignó la Directiva. Por ejemplo, puede crear una directiva de eliminación de documentos que elimine permanentemente los documentos dos años después de su creación y, a continuación, asignar esa Directiva a una plantilla de colección de sitios desde la que se crearon varias colecciones de sitios hace cuatro o cinco años. En este caso, es probable que las colecciones de sitios existentes contengan muchos documentos que ya son más antiguos que los dos años especificados por la Directiva de eliminación, lo que significa que se eliminará mucho contenido después de asignar la Directiva de eliminación de documentos para el primer temporal.
   
 Cuando se asigna la directiva por primera vez, se evalúan todos los documentos del sitio. Si cumplen los criterios, se eliminarán. Esto se aplica a todos los documentos existentes, no solo a los documentos nuevos creados desde que se asignó la directiva. Y recuerde que el período de tiempo corresponde a la antigüedad de cada documento, no al tiempo desde que se asignó la directiva por primera vez.
   
@@ -122,15 +122,15 @@ Por lo tanto, antes de asignar una directiva a un sitio por primera vez, primero
 
 Después de asignar directivas a una colección de sitios, los propietarios de los sitios usan el vínculo **Directivas de eliminación de documentos** de la página **Configuración del sitio** para ver y aplicar directivas disponibles para el sitio. 
   
-El vínculo de **Las directivas de eliminación de documentos** no aparecerá a menos que las directivas se han asignado a la colección de sitios. Además, el vínculo no aparece inmediatamente después de que las directivas se han asignado al sitio, puede demorar hasta 24 horas desde cuando las directivas se asignan a cuando aparece el vínculo de **Las directivas de eliminación de documentos** . 
+El vínculo **directivas de eliminación de documentos** no aparecerá a menos que se hayan asignado directivas a la colección de sitios. Además, el vínculo no aparece inmediatamente después de que las directivas se hayan asignado al sitio: puede tardar hasta 24 horas desde el momento en que se asignan las directivas cuando aparece el vínculo **directivas de eliminación de documentos** . 
   
 ## <a name="permissions"></a>Permisos
 
 Los miembros de su equipo de cumplimiento normativo que vayan a usar el centro de directivas de eliminación de documentos necesitan permisos para el centro de directivas y para las colecciones de sitios en las que se aplicarán las directivas. Le recomendamos que haga lo siguiente:
   
-1. Crear un grupo de seguridad que contiene todos los usuarios del centro de directiva de eliminación de documentos, más probable es que su equipo de administración de directivas de cumplimiento de normas. Para obtener más información, vea [Grupos de seguridad de Manage Mail-Enabled](https://go.microsoft.com/fwlink/p/?LinkID=404345) . 
+1. Cree un grupo de seguridad que contenga todos los usuarios del centro de directivas de eliminación de documentos, probablemente el equipo de administración de directivas de cumplimiento. Consulte [Manage mail-Enabled Security Groups](https://go.microsoft.com/fwlink/p/?LinkID=404345) para obtener más información. 
     
-2. En el centro de directiva de eliminación de documentos, asignar la colección de sitios permisos de propietario para el grupo de seguridad. Para obtener más información, vea [permisos para los administradores de colección de sitios](https://go.microsoft.com/fwlink/p/?LinkID=404346) . 
+2. En el centro de directivas de eliminación de documentos, asigne permisos de propietario de colección de sitios al grupo de seguridad. Vea [permisos para administradores](https://go.microsoft.com/fwlink/p/?LinkID=404346) de la colección de sitios para obtener más información. 
     
 3. En cada colección de sitios en que necesite asignar directivas de eliminación de documentos, asigne permisos de propietario de colección de sitios al grupo de seguridad.
     
@@ -142,7 +142,7 @@ Si necesita conservar documentos durante un período fijo de tiempo, puede usar 
   
 Tenga en cuenta que una directiva de eliminación no puede reemplazar a una retención. Si un sitio está en retención y una directiva de eliminación de documentos elimina un documento, el documento se conservará en la biblioteca de conservación de documentos de la misma forma que si el documento se hubiera eliminado de forma manual.
   
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Aplicar o quitar una directiva de eliminación de documentos de un sitio](apply-or-remove-a-document-deletion-policy-for-a-site.md)
 

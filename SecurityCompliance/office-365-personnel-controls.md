@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 'Resumen: información general sobre los procedimientos de filtrado de personal de Microsoft para Office 365.'
-ms.openlocfilehash: 126be117c790e4d8fc0328ee2dab6b97d516ab88
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+ms.openlocfilehash: e7b7659447217adc2a5b7c001df0994e82180b3b
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30091082"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216220"
 ---
 # <a name="office-365-personnel-controls"></a>Controles de personal de Office 365 
 

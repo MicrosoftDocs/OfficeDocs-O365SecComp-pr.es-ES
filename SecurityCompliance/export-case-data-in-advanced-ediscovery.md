@@ -6,34 +6,34 @@ manager: laurawi
 ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: c3198d1c-51b4-4280-87c5-269b47246d33
-description: 'Comprender las directrices para la exportación de datos de casos de exhibición de documentos electrónicos y los resultados para revisar usando el proceso de exportación de exhibición de documentos electrónicos avanzada de Office 365.  '
-ms.openlocfilehash: 1cb4cb45b1456649f7b3e12ed07565694b6bf6ec
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: 'Comprenda las directrices para exportar datos de casos de eDiscovery y los resultados de la revisión mediante el proceso de exportación en eDiscovery avanzado de Office 365.  '
+ms.openlocfilehash: 01997d3c799eeabc9686e3d747652d54fc963d26
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22536183"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215580"
 ---
 # <a name="export-case-data-in-office-365-advanced-ediscovery"></a>Exportar datos de casos en eDiscovery avanzado de Office 365
 
 > [!NOTE]
-> Exhibición de documentos electrónicos avanzada requiere un E3 de Office 365 con el complemento de cumplimiento avanzadas o una suscripción E5 para su organización. Si no tiene ese plan y desea probar avanzada exhibición de documentos electrónicos, puede [registrarse y obtener una versión de prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
-El proceso de exportación de exhibición de documentos electrónicos avanzada permite la exportación de contenido de exhibición de documentos electrónicos avanzada y los resultados de una revisión externa. 
+El proceso de exportación en eDiscovery avanzado permite la exportación de contenido avanzado de eDiscovery y los resultados para una revisión externa. 
   
-## <a name="guidelines-for-exporting-data"></a>Directrices para la exportación de datos
+## <a name="guidelines-for-exporting-data"></a>Directrices para exportar datos
 
-- Puede revisar los datos de exportación generados a partir de avanzada exhibición de documentos electrónicos, por ejemplo, para distribuir elementos pertinentes para el equipo de revisión de documentos o exportar a una herramienta de revisión de documento externo.
+- Puede revisar los datos de exportación generados desde la exhibición avanzada de documentos electrónicos, por ejemplo, para distribuir los elementos pertinentes al equipo de revisión de documentos o exportar a una herramienta de revisión de documentos externos.
     
-- Puede generar y manipular el resultado de exportación en cualquier momento durante y después de procesamiento de exhibición de documentos electrónicos avanzadas. En un escenario estándar, se consiguen resultados significativos después de aprendizaje de la relevancia y en los cálculos de lote se ha finalizado correctamente. Por ejemplo, puede generar un ejemplo de los archivos más relevantes de 1.000 y evaluar el rendimiento de exhibición de documentos electrónicos avanzada antes de continuar.
+- Puede generar y manipular el resultado de la exportación en cualquier momento durante el procesamiento avanzado de eDiscovery. En un escenario estándar, se obtienen resultados significativos después de que se completen correctamente el entrenamiento de relevancia y el cálculo de lotes. Por ejemplo, puede generar una muestra de los archivos más relevantes de 1.000 y evaluar el rendimiento avanzado de eDiscovery antes de continuar.
     
-- Exportación de una gran cantidad de datos a una base de datos puede tener un impacto significativo en el tamaño de la base de datos necesarias y la configuración necesaria de la base de datos de exhibición de documentos electrónicos avanzadas.
+- Exportar una gran cantidad de datos a una base de datos puede tener un impacto significativo en el tamaño de base de datos necesario y en la configuración necesaria de la base de datos eDiscovery avanzada.
     
 ## <a name="see-also"></a>Vea también
 
@@ -41,7 +41,7 @@ El proceso de exportación de exhibición de documentos electrónicos avanzada p
   
 [Exportar resultados](export-results-in-advanced-ediscovery.md)
   
-[Ver el historial de proceso por lotes y resultados de la exportación](view-batch-history-and-export-past-results.md)
+[Ver el historial del lote y exportar los resultados](view-batch-history-and-export-past-results.md)
 
-[Campos de exportación de informe](export-report-fields-in-advanced-ediscovery.md)
+[Exportar campos de informes](export-report-fields-in-advanced-ediscovery.md)
 

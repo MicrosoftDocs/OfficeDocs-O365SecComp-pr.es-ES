@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Información sobre la supervisión y las funcionalidades de Autorrecuperación de Office 365.
-ms.openlocfilehash: 799c4dc97e9cc88dcc77f17b0f11ab76525012d9
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+ms.openlocfilehash: 4878ca5889c9b893154e0e7b910cb17c4b36402c
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30090522"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217550"
 ---
 # <a name="office-365-monitoring-and-self-healing"></a>Supervisión y recuperación automática de Office 365
 A partir de la escala de Office 365, sería imposible mantener los datos de los clientes resistentes y protegidos del malware sin una supervisión integrada que sea exhaustiva, lo que alerta de que es inteligente y tiene una solución automática y que es más rápida y fiable. La supervisión de un conjunto de servicios en la escala de Office 365 es muy desafiante. Es necesario crear nuevas metodologías y máximas y nuevos conjuntos de tecnología para que funcionen y administren el servicio en un entorno global conectado. Hemos alejado el enfoque de supervisión tradicional de recopilación de datos y filtrado para crear alertas de un enfoque basado en análisis de datos; tomar señales y confiar en esos datos y luego usar la automatización para recuperar o resolver el problema. Este enfoque ayuda a sacar a los seres humanos de la ecuación de recuperación, que a su vez hace que las operaciones sean menos costosas, rápidas y menos propensos a errores. 

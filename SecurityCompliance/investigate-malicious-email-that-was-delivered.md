@@ -1,71 +1,71 @@
 ---
-title: Buscar e investigar el correo electrónico malintencionado que se entregó (Office 365 información sobre amenazas)
+title: Buscar e investigar el correo electrónico malintencionado que se entregó (inteligencia de amenazas de Office 365)
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 02/13/2019
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection: M365-security-compliance
-description: Obtenga información sobre cómo usar la información sobre amenazas para buscar e investigar el correo electrónico malintencionado.
-ms.openlocfilehash: c7492ccf2a7fa5d67b256264c6ed6fbdb06bcbc8
-ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
+description: Obtenga información sobre cómo usar la inteligencia de amenazas para buscar y investigar correo electrónico malintencionado.
+ms.openlocfilehash: adf4066b5119f131b90dc88b99be4011582931c2
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "29995191"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215500"
 ---
-# <a name="find-and-investigate-malicious-email-that-was-delivered-office-365-threat-intelligence"></a>Buscar e investigar el correo electrónico malintencionado que se entregó (Office 365 información sobre amenazas)
+# <a name="find-and-investigate-malicious-email-that-was-delivered-office-365-threat-intelligence"></a>Buscar e investigar el correo electrónico malintencionado que se entregó (inteligencia de amenazas de Office 365)
 
-[Información sobre amenazas de Office 365](office-365-ti.md) le permite investigar las actividades que los usuarios correr el riesgo y tomar medidas para proteger a su organización. Por ejemplo, si son parte del equipo de seguridad de su organización, puede encontrar e investigar los mensajes de correo electrónico sospechosos que se entregaron a los usuarios. Puede hacerlo mediante [El Explorador de amenaza](get-started-with-ti.md#threat-explorer).
+[Office 365 Threat Intelligence](office-365-ti.md) le permite investigar actividades que ponen en peligro a los usuarios y emprender acciones para proteger su organización. Por ejemplo, si forma parte del equipo de seguridad de su organización, puede encontrar e investigar los mensajes de correo electrónico sospechosos que se entregaron a los usuarios. Para ello, puede usar el [Explorador de amenazas](get-started-with-ti.md#threat-explorer).
   
 > [!IMPORTANT]
-> A partir de febrero de 2019 e implantar durante los próximos meses, información sobre amenazas de Office 365 se está convirtiendo en Office 365 avanzada amenaza protección Plan 2, con las funcionalidades de protección de amenaza adicionales. Para obtener más información, vea [los planes de protección de amenaza avanzada de Office 365 y los precios](https://products.office.com/exchange/advance-threat-protection) y la [Office 365 avanzada Threat Protection Service Description](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+> A partir de febrero de 2019 y la implementación en los próximos meses, Office 365 Threat Intelligence se convierte en Office 365 Advanced Threat Protection Plan 2, con capacidades adicionales de protección contra amenazas. Para obtener más información, consulte [planes y precios](https://products.office.com/exchange/advance-threat-protection) de la protección contra amenazas avanzada de Office 365 y la [Descripción del servicio de protección contra amenazas avanzada de Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
   
 ## <a name="before-you-begin"></a>Antes de comenzar...
 
 Asegúrese de que se cumplen los siguientes requisitos:
   
-- Su organización tiene [Información sobre amenazas de Office 365](office-365-ti.md) y [asignar licencias a los usuarios de Office 365 para la empresa](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc).
+- Su organización tiene [office 365 Threat Intelligence](office-365-ti.md) y [asigna licencias a usuarios en Office 365 para empresas](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc).
     
-- [Registro de auditoría de Office 365](turn-audit-log-search-on-or-off.md) está activado para la organización. 
+- El [registro de auditoría de Office 365](turn-audit-log-search-on-or-off.md) está activado para su organización. 
     
-- Su organización tiene las directivas definidas para contra correo no deseado, anti-malware, contra suplantación de identidad y así sucesivamente. Vea [administración de la seguridad de Office 365 de amenazas &amp; centro de cumplimiento](threat-management.md).
+- Su organización tiene directivas definidas para protección contra correo electrónico no deseado, antimalware, antiphishing, etc. Consulte [Threat Management en el centro de seguridad &amp; y cumplimiento de Office 365](threat-management.md).
     
-- Es un administrador global de Office 365, o tiene el Administrador de seguridad o la función de búsqueda y purgar asignado en la seguridad &amp; centro de cumplimiento. Vea [permisos en la seguridad de Office 365 &amp; centro de cumplimiento](permissions-in-the-security-and-compliance-center.md).
+- Es un administrador global de Office 365 o bien tiene el rol de administrador de seguridad o de búsqueda y dePuración asignado en &amp; el centro de seguridad y cumplimiento. Consulte [permisos en el centro de seguridad &amp; y cumplimiento de Office 365](permissions-in-the-security-and-compliance-center.md).
     
-## <a name="dealing-with-suspicious-emails"></a>Trabaja con mensajes de correo electrónico sospechosos
+## <a name="dealing-with-suspicious-emails"></a>Tratar los correos sospechosos
 
-Los atacantes malintencionados se puede enviar correo a los usuarios para probar y phishing sus credenciales y obtener acceso a su información confidencial corporativa! Con el fin de evitar esto, debe usar los servicios de protección de amenaza ofrecidos por Office 365, como Exchange Online Protection y avanzada de protección contra amenazas. Sin embargo, hay veces cuando un atacante podría enviar correo a los usuarios que contiene una dirección URL y realizar sólo posterior en ese punto de la dirección URL a contenido malintencionado (malware, etcetera). Como alternativa, los clientes pueden obtener demasiado tarde que un usuario en su organización se ha puesto en peligro y, mientras que el usuario se ve comprometido, un atacante utiliza esa cuenta para enviar correo electrónico a otros usuarios de su compañía. Como parte de la limpieza de estos dos escenarios, es posible que desee quitar mensajes de correo electrónico de las bandejas de entrada del usuario. En estas situaciones, puede aprovechar el Explorador de amenaza para buscar y quitar los mensajes de correo electrónico!
+Los atacantes malintencionados pueden enviar correo a sus usuarios para probar y phish sus credenciales y obtener acceso a sus secretos corporativos. Para evitar esto, debe usar los servicios de protección contra amenazas ofrecidos por Office 365, incluidos Exchange Online Protection y la protección contra amenazas avanzada. Sin embargo, hay veces en las que un atacante puede enviar correo a los usuarios que contengan una dirección URL y que, más adelante, esta dirección URL apunte a contenido malintencionado (malware, etc.). Como alternativa, es posible que se vea demasiado tarde que un usuario de la organización se ha puesto en peligro y, mientras que el usuario ha estado en peligro, el atacante ha usado esa cuenta para enviar correo electrónico a otros usuarios de la compañía. Como parte de la limpieza de ambos escenarios, es posible que desee quitar los mensajes de correo electrónico de las bandejas de los usuarios. En situaciones como estas, puede aprovechar el explorador de amenazas para buscar y quitar los mensajes de correo electrónico.
   
-## <a name="find-and-delete-suspicious-email-that-was-delivered"></a>Buscar y eliminar el correo electrónico sospechoso que se entregó
+## <a name="find-and-delete-suspicious-email-that-was-delivered"></a>Buscar y eliminar correo electrónico sospechoso que se entregó
 
 > [!TIP]
-> [Explorador de amenaza](get-started-with-ti.md#threat-explorer) (también denominada Explorador), es un informe eficaces que puede servir para varios propósitos, por ejemplo, buscar y eliminar mensajes, que identifica la dirección IP de un remitente de correo electrónico malintencionado o iniciar un incidente para una mayor investigación. El siguiente procedimiento se centra en usar el explorador para buscar y eliminar el correo electrónico malintencionado de buzones de correo de los destinatarios. 
+> [Explorador de amenazas](get-started-with-ti.md#threat-explorer) (también conocido como explorador) es un eficaz informe que puede servir para varios propósitos, como buscar y eliminar mensajes, identificar la dirección IP de un remitente de correo electrónico malintencionado o iniciar un incidente para una mayor investigación. El siguiente procedimiento se centra en usar el explorador para buscar y eliminar correo electrónico malintencionado de los buzones de los destinatarios. 
   
-1. Vaya a [https://protection.office.com](https://protection.office.com) e iniciar sesión con su cuenta de trabajo o escuela para Office 365. Esto le llevará a la seguridad &amp; centro de cumplimiento. 
+1. Vaya a [https://protection.office.com](https://protection.office.com) e inicie sesión con su cuenta profesional o educativa para Office 365. Esto le llevará al centro de &amp; seguridad y cumplimiento. 
     
-2. En el panel de navegación izquierdo, elija **administración de amenaza** \> **Explorer**.
+2. En el panel de navegación izquierdo, elija **Threat Management** \> **Explorer**.
     
-3. En el menú Ver, elija **todos los correos electrónicos**.<br/>![Use el menú Ver para elegir entre correo electrónico y los informes de contenido](media/d39013ff-93b6-42f6-bee5-628895c251c2.png)
+3. En el menú Ver, elija **todo el correo electrónico**.<br/>![Usar el menú Ver para elegir entre los informes de correo electrónico y de contenido](media/d39013ff-93b6-42f6-bee5-628895c251c2.png)
   
-4. Tenga en cuenta las etiquetas que aparecen en el informe, como **entregados**, **desconocido**o **entrega a no deseado**.<br/>![Explorador de amenaza que muestra datos para todos los correos electrónicos](media/208826ed-a85e-446f-b276-b5fdc312fbcb.png)<br/>(Dependiendo de las acciones que se tomaron en mensajes de correo electrónico para su organización, es posible que vea etiquetas adicionales, como **bloqueado** o **se reemplazó**.)
+4. Observe las etiquetas que aparecen en el informe, como **entregado**, **desconocido**o **entregado a correo no deseado**.<br/>![Explorador de amenazas que muestra datos de todo el correo electrónico](media/208826ed-a85e-446f-b276-b5fdc312fbcb.png)<br/>(En función de las acciones realizadas en los mensajes de correo electrónico de su organización, es posible que vea etiquetas adicionales, como **bloqueado** o **reemplazado**.)
     
-5. En el informe, elija **entregado** para ver solo los correos electrónicos que ha terminado en las bandejas de entrada de los usuarios.<br/>![Al hacer clic en "Entregar a no deseado" quita esos datos de vista](media/e6fb2e47-461e-4f6f-8c65-c331bd858758.png)
+5. En el informe, seleccione **entregado** para ver solo los correos electrónicos que finalizaron en las bandejas de correo de los usuarios.<br/>![Al hacer clic en "entregado a correo no deseado" se quitan los datos de la vista](media/e6fb2e47-461e-4f6f-8c65-c331bd858758.png)
   
-6. Debajo del gráfico, revise la lista de **correo electrónico** debajo del gráfico.<br/>![Debajo del gráfico, ver una lista de los mensajes de correo electrónico que se han detectado](media/dfb60590-1236-499d-97da-86c68621e2bc.png)
+6. Debajo del gráfico, revise la lista de **correo electrónico** que hay debajo del gráfico.<br/>![Debajo del gráfico, se muestra una lista de los mensajes de correo electrónico que se detectaron](media/dfb60590-1236-499d-97da-86c68621e2bc.png)
   
-7. En la lista, elija un elemento para ver más detalles acerca de ese mensaje de correo electrónico. Por ejemplo, puede hacer clic en la línea de asunto para ver información sobre el remitente, los destinatarios, datos adjuntos y otros mensajes de correo electrónico similar.<br/>![Puede ver información adicional acerca de un elemento, incluidos los detalles y los datos adjuntos](media/5a5707c3-d62a-4610-ae7b-900fff8708b2.png)
+7. En la lista, elija un elemento para ver más detalles sobre el mensaje de correo electrónico. Por ejemplo, puede hacer clic en la línea de asunto para ver información sobre el remitente, los destinatarios, los datos adjuntos y otros mensajes de correo electrónico similares.<br/>![Puede ver información adicional acerca de un elemento, incluidos los detalles y los datos adjuntos](media/5a5707c3-d62a-4610-ae7b-900fff8708b2.png)
   
-8. Después de ver información acerca de los mensajes de correo electrónico, seleccione uno o más elementos en la lista para activar **+ acciones**.
+8. Después de ver la información sobre los mensajes de correo electrónico, seleccione uno o más elementos de la lista para activar **+ acciones**.
     
-9. Use la lista **+ acciones** para aplicar una acción, como **mover a eliminar** los elementos. Esto eliminará los mensajes seleccionados de los buzones de los destinatarios.<br/>![Cuando se selecciona uno o más mensajes de correo electrónico, puede elegir entre varias acciones disponibles](media/ef12e10c-60a7-4f66-8f76-68d77ae26de1.png)
+9. Utilice la lista de **acciones +** para aplicar una acción, como **mover a** elementos eliminados. Se eliminarán los mensajes seleccionados de los buzones de correo de los destinatarios.<br/>![Al seleccionar uno o más mensajes de correo electrónico, puede elegir entre varias acciones disponibles.](media/ef12e10c-60a7-4f66-8f76-68d77ae26de1.png)
   
 ## <a name="related-topics"></a>Temas relacionados
 
@@ -73,6 +73,6 @@ Los atacantes malintencionados se puede enviar correo a los usuarios para probar
   
 [Protección contra amenazas en Office 365](protect-against-threats.md)
   
-[Visualización de informes para la protección de amenaza avanzada de Office 365](view-reports-for-atp.md)
+[Ver informes para la protección contra amenazas avanzada de Office 365](view-reports-for-atp.md)
   
 

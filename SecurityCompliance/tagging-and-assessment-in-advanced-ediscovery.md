@@ -6,131 +6,131 @@ manager: laurawi
 ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: b5c82de7-ed2f-4cc6-becd-db403faf4d18
-description: 'Revise los pasos para realizar la formación de evaluación, incluidos archivos de etiquetado y revisar los resultados de la evaluación de exhibición de documentos electrónicos avanzada de Office 365. '
-ms.openlocfilehash: 0f67dd4780a29536888231f556c18fe887f230ba
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: 'Revise los pasos para realizar la formación sobre la evaluación, incluidos los archivos de etiquetado y la revisión de los resultados de la evaluación en eDiscovery avanzado de Office 365. '
+ms.openlocfilehash: 02dae23b6489b40243272beea1d79e871ca6a911
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22536065"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217940"
 ---
 # <a name="tagging-and-assessment-in-office-365-advanced-ediscovery"></a>Etiquetado y evaluación en eDiscovery avanzado de Office 365
 
 > [!NOTE]
-> Exhibición de documentos electrónicos avanzada requiere un E3 de Office 365 con el complemento de cumplimiento avanzadas o una suscripción E5 para su organización. Si no tiene ese plan y desea probar avanzada exhibición de documentos electrónicos, puede [registrarse y obtener una versión de prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
-En esta sección se describe el procedimiento para el módulo de evaluación de la relevancia de exhibición de documentos electrónicos avanzadas. 
+En esta sección se describe el procedimiento para el módulo de evaluación de relevancia de eDiscovery avanzado. 
   
-## <a name="performing-assessment-training-and-analysis"></a>Realización de análisis y formación de evaluación
+## <a name="performing-assessment-training-and-analysis"></a>Realización de análisis y aprendizaje de evaluación
 
-1. En el **la relevancia \> pista** ficha, haga clic en **evaluación** para iniciar la evaluación del caso. 
+1. En la **pestaña \> seguimiento de relevancia** , haga clic en **evaluación** para iniciar la evaluación de casos. 
     
-    Por ejemplo, con fines de este procedimiento, se crea un conjunto de evaluación de ejemplo de 500 archivos y se muestra la ficha **etiqueta** , que contiene el panel etiquetado, el contenido del archivo que se muestra y otras opciones de etiquetas temáticas. 
+    Por ejemplo, en este procedimiento, se crea un conjunto de evaluación de ejemplo de 500 archivos y se muestra la pestaña **etiqueta** , que contiene el panel etiquetado, el contenido del archivo mostrado y otras opciones de etiquetado. 
     
     ![Pestaña de etiqueta de relevancia para la evaluación](media/c8acf891-b1cd-4344-816c-eabb8cbbe742.png)
   
-2. Revise cada archivo en el ejemplo, determinar la relevancia de un archivo por cada problema de mayúsculas y minúsculas y marcar el archivo mediante el Relevance (R), no relevante (n) y omitir los botones en el panel de **etiquetado** . 
+2. Revise cada archivo de la muestra, determine la relevancia del archivo para cada problema de caso y etiquete el archivo con los botones relevancia (R), no relevante (NR) y omitir en el panel de **etiquetado** . 
     
     > [!NOTE]
-    >  Evaluación requiere 500 archivos con etiqueta. Si se "omiten archivos", recibirá más archivos a la etiqueta. 
+    >  La evaluación requiere 500 de archivos etiquetados. Si los archivos se "omiten", recibirás más archivos para etiquetar. 
   
 3. Después de etiquetar todos los archivos en el ejemplo, haga clic en **calcular**. 
     
-    El margen de error actual de evaluación y la flexibilidad se calculan y se muestran en la ficha **Seguimiento de relevancia** , con detalles expandidas por el problema, tal y como se muestra a continuación. Obtener más detalles acerca de este cuadro de diálogo se describen en la sección posterior "Los resultados de las evaluaciones de revisión". 
+    El margen y la riqueza del error actual de la evaluación se calculan y muestran en la pestaña **seguimiento de relevancia** , con detalles expandidos por problema, tal como se muestra a continuación. Para obtener más información sobre este cuadro de diálogo, vea la sección posterior "revisión de los resultados de las evaluaciones". 
     
     ![Seguimiento de relevancia: evaluación](media/da911ba5-8678-40d6-9ad5-fd0b058355c1.png)
   
     > [!TIP]
-    > De forma predeterminada, se recomienda que realice el paso siguiente de forma predeterminada cuando haya finalizado el indicador de progreso de evaluación para el problema, que indica que se ha revisado el ejemplo de evaluación y etiquetaron suficientes archivos relevantes. > En caso contrario, si desea ver los resultados de la pestaña **seguimiento** y control el margen de error y el siguiente paso, haga clic en **Modificar** junto al **Paso siguiente**, seleccione **evaluación continuar**y, a continuación, haga clic en **Aceptar**. 
+    > De forma predeterminada, se recomienda continuar con el paso siguiente predeterminado cuando se haya completado el indicador de progreso de la evaluación para el problema, lo que indica que se ha revisado la muestra de evaluación y que se han etiquetado los archivos relevantes necesarios. > de lo contrario, si desea ver los resultados de la ficha **seguimiento** y controlar el margen de error y el siguiente paso, haga clic en **modificar** junto al **siguiente paso**, seleccione **continuar evaluación**y, a continuación, haga clic en **Aceptar**. 
   
-1. Haga clic en **Modificar** a la derecha de la casilla de verificación de **evaluación** para ver y especificar los parámetros de evaluación por el problema. Se muestra un cuadro de diálogo de **nivel de evaluación** para cada problema, tal como se muestra en el ejemplo siguiente: 
+1. Haga clic en **modificar** a la derecha de la casilla **evaluación** para ver y especificar los parámetros de evaluación por problema. Se muestra un cuadro de diálogo de **nivel de evaluación** para cada problema, tal como se muestra en el ejemplo siguiente: 
     
     ![Problema de caso del nivel de evaluación](media/b7113fef-d125-4617-ae1b-c9eb0bf79aec.png)
   
     Los siguientes parámetros para el problema se calculan y se muestran en el cuadro de diálogo **nivel de evaluación** : 
     
-    **Calcula el margen de error de destino para la recuperación**: en función de este valor, se calcula el número estimado de archivos adicionales necesarios para revisar. El margen que se usa para recuperación es mayor que el 75% y con un nivel de confianza del 95%. 
+    **Margen de error de destino para estimaciones de recuperación**: según este valor, se calcula el número estimado de archivos adicionales necesarios para la revisión. El margen usado para la recuperación es superior al 75% y con un nivel de confianza de 95%. 
     
-    **Los archivos de evaluación adicionales necesarios**: indica cuántos más archivos son necesarios si no se cumplen los requisitos del margen de error actual. 
+    Se **requieren archivos de evaluación adicionales**: indica el número de archivos necesarios si no se han cumplido los requisitos del margen de error actual. 
     
-2. Para ajustar el margen de error actual y ver el efecto de los márgenes de error diferentes (por problema):
+2. Para ajustar el margen de error actual y ver el efecto de los distintos márgenes de error (por problema):
     
-1. En la lista **Seleccione el problema** , seleccione un problema. 
+1. En la lista **seleccionar problema** , seleccione un problema. 
     
-2. En el **margen de error de destino para recuperación estima**, escriba un nuevo valor.
+2. En el **margen del error de destino para las estimaciones de recuperación**, escriba un nuevo valor.
     
-3. Haga clic en **Actualizar valores** para ver el impacto de los ajustes. 
+3. Haga clic en **actualizar valores** para ver el impacto de los ajustes. 
     
-3. Haga clic en **Avanzadas** en el cuadro de diálogo de **nivel de evaluación** para ver los siguientes parámetros adicionales y detalles: 
+3. Haga clic en **avanzadas** en el cuadro de diálogo **nivel de evaluación** para ver los siguientes parámetros y detalles adicionales: 
     
     ![Vista avanzada del problema de caso del nivel de evaluación](media/577d7e0e-95df-48c2-9dec-bdeab5e801d8.png)
   
-    **Flexibilidad estimado**: estimado flexibilidad según los resultados de la evaluación actual
+    **Riqueza estimada**: riqueza estimada de acuerdo con los resultados de la evaluación actual
     
-    **Para recuperación supuesta**: de forma predeterminada, se aplica el margen de error de destino para recuperar por encima del 75%. Si desea cambiar este parámetro y controlar el margen de error en un intervalo de valores de recuperación diferente, haga clic en **Editar** . 
+    **Para RECALL**recalld: de forma predeterminada, el margen de error de destino se aplica a RECALL por encima del 75%. Haga clic en **Editar** si desea cambiar este parámetro y controlar el margen de error en un intervalo diferente de valores de recuperación. 
     
-    **Nivel de confianza**: de forma predeterminada, el margen de error recomendada para confianza es 95%. Si desea cambiar este parámetro, haga clic en **Editar** . 
+    **Nivel de confianza**: de forma predeterminada, el margen de error recomendado para la confianza es del 95%. Haga clic en **Editar** si desea cambiar este parámetro. 
     
-    **Margen de error de flexibilidad esperados**: dado los valores actualizados, este es el margen de error de la flexibilidad, esperado después de que se revisan todos los archivos de evaluación adicionales.
+    **Margen de error de riqueza esperado**: dados los valores actualizados, este es el margen de error esperado de la riqueza, una vez que se han revisado todos los archivos de evaluación adicionales.
     
-    **Los archivos de evaluación adicionales necesarios**: dado los valores actualizados, el número de evaluación adicional de los archivos que necesitan para ser revisado para llegar a la de destino.
+    Se **requieren archivos de evaluación adicionales**: dados los valores actualizados, el número de archivos de evaluación adicionales que deben revisarse para llegar al destino.
     
-    **Evaluación total archivos necesarios**: dado los valores actualizados, número total de archivos de evaluación necesarios para su revisión.
+    **Total de archivos de evaluación necesarios**: dados los valores actualizados, los archivos de evaluación totales necesarios para la revisión.
     
-    **Número esperado de archivos relevantes de evaluación**: dados los valores actualizados, el número esperado de los archivos relevantes en toda la evaluación después de que se revisan todos los archivos de evaluación adicionales.
+    **Número previsto de archivos relevantes en la evaluación**: dados los valores actualizados, el número previsto de archivos relevantes en toda la evaluación después de revisar todos los archivos de evaluación adicionales.
     
-4. Haga clic en **volver a calcular valores**, si se modifican los parámetros. Cuando haya terminado, si hay un problema, haga clic en **Aceptar** para guardar los cambios (o **siguiente** cuando hay varios problemas para revisar o modificar y, a continuación, **Finalizar**). 
+4. Haga clic en **recalcular valores**, si se modifican los parámetros. Cuando haya terminado, si hay un problema, haga clic en **Aceptar** para guardar los cambios (o en **siguiente** cuando haya varios problemas para revisar o modificar y, a continuación, **Finalizar**). 
     
-    Cuando hay varios problemas, después de todos los problemas se han revisado o ajustados, un **nivel de evaluación: resumen** se muestra el cuadro de diálogo, tal como se muestra en el siguiente ejemplo. 
+    Cuando hay varios problemas, una vez que se han revisado o ajustado todos los problemas, se muestra un cuadro de diálogo de **Resumen:** cuadro de diálogo de Resumen, tal como se muestra en el ejemplo siguiente. 
     
     ![Resumen del nivel de evaluación](media/4997b46d-10a5-4abc-b3b2-7b75a370eb9e.png)
   
-    Una vez finalizada la correcta de evaluación, continúe con la siguiente fase de aprendizaje de la relevancia.
+    Una vez finalizada correctamente la evaluación, continúe con la siguiente fase del aprendizaje de relevancia.
     
-## <a name="reviewing-assessment-results"></a>Revisar los resultados de la evaluación
+## <a name="reviewing-assessment-results"></a>Revisión de los resultados de la evaluación
 
-Después de que se etiqueta un ejemplo de evaluación, se calculan los resultados de la evaluación y se muestran en la ficha seguimiento de la relevancia.
+Después de etiquetar un ejemplo de evaluación, los resultados de la evaluación se calculan y se muestran en la pestaña seguimiento de relevancia.
   
-Los siguientes resultados se muestran en la visualización de pista expandida: 
+Los siguientes resultados se muestran en la pantalla de la pista expandida: 
   
-- Margen de error actual de evaluación para las estimaciones de recuperación
+- Margen de error actual de la evaluación para estimaciones de recuperación
     
-- Flexibilidad estimado
+- Riqueza estimada
     
-- Archivos de evaluación adicionales necesarios (para revisión)
+- Se requieren archivos de evaluación adicionales (para revisión)
     
-El margen de error actual de evaluación es el margen de error recomendado por avanzada exhibición de documentos electrónicos. El número que se muestra para "archivos de la evaluación adicionales necesarios" corresponde a esa recomendación.
+El margen de error actual de la evaluación es el margen de error recomendado por eDiscovery avanzado. El número que se muestra para los "archivos de evaluación adicionales necesarios" corresponde a esa recomendación.
   
-El indicador de progreso de la evaluación muestra el nivel de finalización de la evaluación, dada el margen de error actual. Cuando la evaluación está en curso, el usuario va a marcar otro ejemplo de evaluación.
+El indicador de progreso de la evaluación muestra el nivel de finalización de la evaluación, según el margen de error actual. Cuando se está realizando la evaluación, el usuario etiquetará otra muestra de evaluación.
   
-Cuando el indicador de progreso de la evaluación muestra evaluación como completada, que significa que se completó la revisión de ejemplo de evaluación y etiquetaron suficientes archivos relevantes. 
+Cuando el indicador de progreso de la evaluación muestra la evaluación como completada, significa que se ha completado la revisión de muestreo de la evaluación y que se han etiquetado los archivos relevantes. 
   
-La visualización de pista expandida muestra el siguiente paso recomendado, las estadísticas de evaluación y acceso a resultados detallados.
+La pantalla expandida muestra el siguiente paso recomendado, las estadísticas de la evaluación y el acceso a los resultados detallados.
   
-Cuando flexibilidad es muy bajo, el número de archivos de evaluación adicionales necesarios para llegar a un número mínimo de archivos relevantes para producir estadísticas útiles es muy alto. Exhibición de documentos electrónicos avanzada, a continuación, recomienda pasar a recursos de aprendizaje. El indicador de progreso de la evaluación será sombreado y no hay estadísticas estará disponible. 
+Cuando la riqueza es muy baja, el número de archivos de evaluación adicionales necesarios para alcanzar un número mínimo de archivos relevantes para producir estadísticas útiles es muy alto. La exhibición avanzada de documentos electrónicos le recomendará continuar con el aprendizaje. El indicador de progreso de la evaluación se verá sombreado y no habrá estadísticas disponibles. 
   
-En ausencia de estabilización estadísticamente en función, habrá resultados con un nivel de precisión y confianza de nivel inferior. Sin embargo, estos resultados pueden utilizarse para buscar archivos relevantes cuando no es necesario saber el porcentaje de archivos relevantes que se encuentran. De forma similar, se puede usar este estado para enseñar a los problemas con la flexibilidad baja, donde las puntuaciones de la relevancia pueden acelerar el acceso a archivos relevantes para un problema específico.
+En ausencia de estabilización basada en estadísticas, habrá resultados con un nivel inferior de precisión y nivel de confianza. Sin embargo, estos resultados se pueden usar para buscar archivos relevantes cuando no es necesario conocer el porcentaje de archivos relevantes encontrados. De forma similar, este estado puede usarse para entrenar problemas con escasa riqueza, donde los resultados de relevancia pueden acelerar el acceso a los archivos relevantes para un problema específico.
   
 > [!TIP]
-> En el **la relevancia \> pista** ficha, mostrar problema expandida, están disponibles las siguientes opciones de visualización: > paso la próxima recomendada, tales como **siguiente paso: etiquetado** puede omitirse (por problema) haciendo clic en el botón **Modificar** para su derecha y, a continuación, seleccionar un paso diferente en el **paso siguiente**. Cuando no se ha completado el indicador de progreso de la evaluación, evaluación será la siguiente opción recomendada para etiquetar más archivos de evaluación y aumentar la precisión de las estadísticas. > Se puede cambiar el margen de error y evaluar su impacto, haciendo clic en **Modificar**y, en el **cuadro de diálogo nivel de evaluación**, cambiar el **margen de error de destino para recuperación estima**y haciendo clic en **Actualizar valores**. Además, en este cuadro de diálogo, puede ver las opciones avanzadas, haciendo clic en **Opciones avanzadas**. > Puede ver las estadísticas de nivel de evaluación adicionales y su impacto haciendo clic en **Ver**. En el diálogo de resultados de todos los detalles que se muestra, las estadísticas están disponibles por el problema, cuando hay al menos 500 archivos de evaluación con etiqueta y los archivos de al menos 18 se etiquetan como pertinente para el problema. 
+> En la **pestaña \> seguimiento de relevancia** , la visualización de problemas expandida, están disponibles las siguientes opciones de visualización: > el siguiente paso recomendado, como **paso siguiente: el etiquetado** se puede omitir (por problema) haciendo clic en el botón **modificar** para su a la derecha y, a continuación, seleccione un paso diferente en el **paso siguiente**. Cuando no se haya completado el indicador de progreso de la evaluación, la evaluación será la siguiente opción recomendada, para etiquetar más archivos de evaluación y aumentar la precisión de las estadísticas. > puede cambiar el margen de error y evaluar su impacto; para ello, haga clic en **modificar**y, en el **cuadro de diálogo nivel de evaluación**, cambie el **margen de error de destino para RECALL estimaciones**y haga clic en **actualizar valores**. Además, en este cuadro de diálogo, puede ver las opciones avanzadas haciendo clic en **avanzadas**. > puede ver estadísticas adicionales del nivel de evaluación y su impacto haciendo clic en **Ver**. En el cuadro de diálogo resultados deTallados mostrados, las estadísticas están disponibles por problema, cuando hay al menos 500 archivos de evaluación etiquetada y al menos 18 archivos se etiquetan como pertinentes para el problema. 
   
 ## <a name="see-also"></a>Vea también
 
 [eDiscovery avanzado de Office 365](office-365-advanced-ediscovery.md)
   
-[Evaluación de descripción en la relevancia](assessment-in-relevance-in-advanced-ediscovery.md)
+[Descripción de la evaluación en relevancia](assessment-in-relevance-in-advanced-ediscovery.md)
   
-[Etiquetado y formación de relevancia](tagging-and-relevance-training-in-advanced-ediscovery.md)
+[Aprendizaje de etiquetas y relevancia](tagging-and-relevance-training-in-advanced-ediscovery.md)
   
-[Análisis de la relevancia de seguimiento](track-relevance-analysis-in-advanced-ediscovery.md)
+[Seguimiento del análisis de relevancia](track-relevance-analysis-in-advanced-ediscovery.md)
   
-[Decidir en función de los resultados](decision-based-on-the-results-in-advanced-ediscovery.md)
+[Decisiones basadas en los resultados](decision-based-on-the-results-in-advanced-ediscovery.md)
   
-[Las pruebas de análisis de la relevancia](test-relevance-analysis-in-advanced-ediscovery.md)
+[Prueba del análisis de relevancia](test-relevance-analysis-in-advanced-ediscovery.md)
 

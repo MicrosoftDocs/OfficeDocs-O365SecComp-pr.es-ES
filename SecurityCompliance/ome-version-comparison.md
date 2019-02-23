@@ -5,70 +5,70 @@ author: kccross
 manager: laurawi
 ms.audience: Admin
 ms.topic: conceptual
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
-description: Ayuda a explicar las diferencias en las características de entregar con distintas versiones de Office 365 Message Encryption, así como el modo en los dos continuarán para que funcionen conjuntamente.
-ms.openlocfilehash: a418d840c7e0eb50ae076bf2b03164bef9488058
-ms.sourcegitcommit: 88f3982217c29b558e3f9e838bcb425da395dd5e
+description: Ayuda a explicar las diferencias en las características proporcionadas con diferentes versiones del cifrado de mensajes de Office 365, así como la forma en que los dos continúan funcionando.
+ms.openlocfilehash: 477fbe8f9d71bd92225a7ba5043576f164933b4e
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/02/2019
-ms.locfileid: "29708547"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216680"
 ---
 # <a name="compare-versions-of-ome"></a>Comparar versiones de OME
 
-En este artículo se compara heredado Office 365 Message Encryption para las nuevas capacidades OME. Las nuevas capacidades son una fusión y la versión más reciente de OME y de Information Rights Management (IRM). También trataremos cómo pueden coexistir los dos en la organización de Office 365.
+En este artículo se compara el cifrado de mensajes de Office 365 heredado con las nuevas capacidades de OME. Las nuevas funciones son una fusión y una versión más reciente tanto de OME como de Information Rights Management (IRM). También trataremos cómo pueden coexistir los dos en su organización de Office 365.
 
 ||
 |:-----|
-|En este artículo es parte de una serie de artículos sobre Office 365 Message Encryption más grande. En este artículo está destinada a los administradores y profesionales de TI. Si sólo está buscando información en enviar o recibir un mensaje cifrado, vea la lista de los artículos de [Office 365 Message Encryption (OME)](ome.md) y busque el artículo que mejor se adapte a sus necesidades. |
+|Este artículo forma parte de una amplia serie de artículos sobre el cifrado de mensajes de Office 365. Este artículo está destinado a los administradores y ITPros. Si solo está buscando información sobre cómo enviar o recibir un mensaje cifrado, vea la lista de artículos en el cifrado de [mensajes de Office 365 (OME)](ome.md) y busque el artículo que mejor se adapte a sus necesidades. |
 ||
 
-## <a name="side-by-side-comparison-of-features-and-capabilities"></a>Comparación de características y funciones
+## <a name="side-by-side-comparison-of-features-and-capabilities"></a>Comparación en paralelo de las características y capacidades
 
 |                                   |Características antiguas       |                   |Características nuevas              |
 |-----------------------------------|-------------------|-------------------|--------------------------|
-|**Función**                     | **OME heredado**    | **IRM**           | **Nuevas capacidades OME** |
-|*Enviar un correo cifrado*        |A través de reglas de flujo de correo de Exchange|Para el usuario final iniciado desde el escritorio de Outlook o Outlook en la Web; o a través de Exchange de reglas de flujo de correo|Para el usuario final iniciado desde el escritorio de Outlook, Outlook para Mac o Outlook en la Web; a través de las reglas de transporte de Exchange y prevención de pérdida de datos (DLP) de Office 365|
-|*Plantilla de derechos de administración*       |   N/D      |Realice la opción no reenviar y las plantillas personalizadas|Realice la opción no reenviar, opción sólo cifrar y las plantillas personalizadas|
-|*Tipo de destinatario*                   |Destinatarios internos y externos|Sólo los destinatarios internos         |Destinatarios internos y externos|
-|*Experiencia para el destinatario interno*|Los destinatarios reciben un mensaje HTML, que se puedan descargan y abrirán en un explorador web o una aplicación móvil|Experiencia en línea nativo en los clientes de Outlook|Experiencia en línea nativo para los destinatarios de Office 365. Todos los otros destinatarios pueden leer mensaje desde el portal de OME (ninguna descarga ni aplicación necesarios).|
-|*Experiencia para los destinatarios externos*|Los destinatarios reciben un mensaje HTML, que se puedan descargan y abrirán en un explorador web o una aplicación móvil|N/D|Experiencia en línea nativo para los destinatarios de Office 365. Todos los otros destinatarios pueden leer mensaje desde el portal de OME (ninguna descarga ni aplicación necesarios).|
-|*Permisos de los datos adjuntos*           |No hay restricciones en los datos adjuntos|Los datos adjuntos están protegidos|Los datos adjuntos están protegidos de la opción de no reenviar y las plantillas personalizadas. Los administradores pueden elegir si los datos adjuntos para la opción de cifrar sólo están protegidos o no.|
-|*Traer su propio soporte clave (BYOK)*|Ninguno                |Ninguno               |BYOK compatibles          |
+|**Función**                     | **OME heredado**    | **IRM**           | **Nuevas funciones de OME** |
+|*Enviar un correo cifrado*        |Mediante reglas de flujo de correo de Exchange|Usuario final iniciado desde un equipo de escritorio de Outlook o Outlook en la web; o mediante reglas de flujo de correo de Exchange|Usuario final iniciado desde el escritorio de Outlook, Outlook para Mac o Outlook en la web; a través de las reglas de transporte de Exchange y la prevención de pérdida de datos (DLP) de Office 365|
+|*Plantilla de administración de derechos*       |   N/D      |No reEnviar opciones y plantillas personalizadas|Opción no reEnviar, opción de solo codificación y plantillas personalizadas|
+|*Tipo de destinatario*                   |Destinatarios internos y externos|Solo destinatarios internos         |Destinatarios internos y externos|
+|*Experiencia para destinatario interno*|Los destinatarios reciben un mensaje HTML que descargan y abren en un explorador Web o en una aplicación móvil|Experiencia en línea nativa en clientes de Outlook|Experiencia en línea nativa para destinatarios de Office 365. El resto de los destinatarios pueden leer el mensaje del portal de OME (no se requiere descarga ni aplicación).|
+|*Experiencia para destinatario externo*|Los destinatarios reciben un mensaje HTML que descargan y abren en un explorador Web o en una aplicación móvil|N/D|Experiencia en línea nativa para destinatarios de Office 365. El resto de los destinatarios pueden leer el mensaje del portal de OME (no se requiere descarga ni aplicación).|
+|*Permisos de datos adJuntos*           |No hay restricciones en los datos adjuntos|Los datos adJuntos están protegidos|Los datos adJuntos están protegidos para la opción no reEnviar y las plantillas personalizadas. Los administradores pueden elegir si los datos adjuntos de la opción de solo codificación están protegidos o no.|
+|*Proporcionar compatibilidad con claves propias (BYOK)*|Ninguno                |Ninguno               |BYOK compatible          |
 ||
 
-## <a name="advantages-of-using-the-new-ome-capabilities-over-legacy-ome"></a>Ventajas de usar las nuevas capacidades OME OME heredado
+## <a name="advantages-of-using-the-new-ome-capabilities-over-legacy-ome"></a>Ventajas de usar las nuevas capacidades de OME sobre las heredadas de OME
 
-Las nuevas capacidades ofrecen las siguientes ventajas:
+Las nuevas capacidades proporcionan las siguientes ventajas:
 
-- Capacidad de usar cifrar sólo (que permite la colaboración segura), no reenviar, así como restricciones personalizadas.
-- Los remitentes pueden enviar mensajes de correo cifrados con las nuevas capacidades manualmente desde el escritorio de Outlook, Outlook para Mac y Outlook en los clientes web.
-- Obtener destinatarios de Office 365 usar una experiencia en línea en los clientes de Outlook compatibles. Como alternativa, pueden elegir los administradores mostrar una experiencia de marca de los destinatarios de Office 365.
-- Cuentas fuera de Office 365, como las cuentas de Gmail, Yahoo y Microsoft, son contactos asociados externos con el portal de OME, que proporciona una mejor experiencia de usuario para estos destinatarios. Todas las otras identidades utilice un código de acceso única para tener acceso a los mensajes cifrados.
+- Capacidad para usar solo cifrar (lo que permite la colaboración segura), no reEnviar, así como restricciones personalizadas.
+- Los remitentes pueden enviar correo cifrado con las nuevas funciones de forma manual desde los clientes de escritorio de Outlook, Outlook para Mac y Outlook en la Web.
+- Office 365 destinatarios usan una experiencia en línea en clientes de Outlook compatibles. Como alternativa, los administradores pueden elegir mostrar a los destinatarios de Office 365 una experiencia de personalización de marca.
+- Las cuentas fuera de Office 365, como las cuentas de gmail, Yahoo y Microsoft, están federadas con el portal OME, que proporciona una mejor experiencia de usuario para estos destinatarios. El resto de las identidades usan un código de paso único para acceder a los mensajes cifrados.
 - Los administradores pueden personalizar la personalización de marca y crear varias plantillas de personalización de marca.
-- Los administradores pueden revocar mensajes de correo electrónico cifrados con las nuevas capacidades.
-- Las nuevas capacidades proporcionan informes de uso detallados a través de la seguridad &amp; centro de cumplimiento.
+- Los administradores pueden revocar mensajes de correo electrónico cifrados con las nuevas funciones.
+- Las nuevas funciones proporcionan informes de uso detallados &amp; a través del centro de seguridad y cumplimiento.
 
-## <a name="coexistence-of-legacy-ome-and-the-new-capabilities-in-the-same-tenant"></a>Coexistencia de OME heredado y las nuevas capacidades en el mismo arrendatario
+## <a name="coexistence-of-legacy-ome-and-the-new-capabilities-in-the-same-tenant"></a>Coexistencia de OME heredados y las nuevas funcionalidades en el mismo espacio empresarial
 
-Puede usar OME heredado y las nuevas capacidades en el mismo arrendatario. Como administrador, para ello, elegir qué versión de OME que va a usar al crear reglas de flujo de correo de.
+Puede usar OME y las funciones nuevas en el mismo inquilino. Como administrador, para ello, debe elegir la versión de OME que desea usar para crear las reglas de flujo de correo.
 
-- Para especificar la versión heredada de OME, use la acción de regla de flujo de correo de Exchange "Aplicar la versión anterior de OME".
-- Para especificar las nuevas capacidades, use el correo flujo regla acción "aplicar Office 365 mensaje cifrado y derechos de protección de Exchange".
+- Para especificar la versión heredada de OME, use la acción de regla de flujo de correo de Exchange "aplicar la versión anterior de OME".
+- Para especificar las nuevas funciones, use la acción de regla de flujo de correo de Exchange "aplicar la protección de derechos y el cifrado de mensajes de Office 365".
 
-Los usuarios también pueden enviar mensajes de correo cifrados con las nuevas capacidades manualmente desde el escritorio de Outlook, Outlook para Mac y Outlook en los clientes web.
+Los usuarios también pueden enviar correo cifrado con las nuevas funciones de forma manual desde los clientes de escritorio de Outlook, Outlook para Mac y Outlook en la Web.
 
-## <a name="migrating-from-legacy-ome-to-the-new-capabilities"></a>Migración de OME heredado a las nuevas capacidades
+## <a name="migrating-from-legacy-ome-to-the-new-capabilities"></a>Migración de OME heredado a las nuevas funciones
 
-Aunque ambas versiones de OME pueden coexistir, es muy recomendable que modificar las reglas de flujo de correo antiguo que utilice la acción de regla "Se aplican a la versión anterior de OME" para usar las nuevas capacidades mediante la especificación de la acción de regla de flujo de correo "aplicar mensaje cifrado de Office 365 derechos y protección". Para obtener instrucciones, consulte [definir reglas de flujo de correo para cifrar mensajes de correo electrónico en Office 365](define-mail-flow-rules-to-encrypt-email.md).
+Aunque ambas versiones de OME pueden coexistir, se recomienda encarecidamente editar las reglas de flujo de correo antiguas que usan la acción de regla "aplicar la versión anterior de OME" para usar las nuevas funciones mediante la especificación de la acción de regla de flujo de correo "aplicar el cifrado de mensajes de Office 365 y protección de derechos ". Para obtener instrucciones, vea [definir reglas de flujo de correo para cifrar mensajes de correo electrónico en Office 365](define-mail-flow-rules-to-encrypt-email.md).
 
 ## <a name="getting-started-with-ome"></a>Introducción a OME
 
-Normalmente, las nuevas capacidades OME se habilitan automáticamente para la organización de Office 365. Si está listo para empezar a usar las nuevas capacidades OME dentro de la organización, consulte [Configurar nuevas capacidades de cifrado de mensajes de Office 365](set-up-new-message-encryption-capabilities.md).
+Normalmente, las nuevas funciones de OME se habilitan automáticamente para su organización de Office 365. Si está listo para empezar a usar las nuevas funciones de OME dentro de su organización, vea [set up New Office 365 Message Encryption Capabilities](set-up-new-message-encryption-capabilities.md).
 
-Si ha habilitado la protección de la información de Azure, se habilita automáticamente la versión heredada de OME para la organización de Office 365. En el pasado, ha funcionado OME heredado incluso si no se ha habilitado la protección de la información de Azure. Ya no es el caso.
+La versión heredada de OME se habilita automáticamente para su organización de Office 365 si ha habilitado Azure Information Protection. En el pasado, los OME heredados funcionaban incluso si Azure Information Protection no estaba habilitado. Esto ya no es así.
 
-Para empezar a usar OME heredado, si ha habilitado la protección de la información de Azure, todo lo que necesita hacer es configurar reglas de flujo de correo que utilizan la acción de regla "Aplicar la versión anterior de OME". Para obtener instrucciones, consulte [definir reglas de flujo de correo para cifrar mensajes de correo electrónico en Office 365](define-mail-flow-rules-to-encrypt-email.md).
+Para empezar a usar OME heredados, si ha habilitado Azure Information Protection, todo lo que necesita hacer es configurar reglas de flujo de correo que usen la acción de regla "aplicar la versión anterior de OME". Para obtener instrucciones, vea [definir reglas de flujo de correo para cifrar mensajes de correo electrónico en Office 365](define-mail-flow-rules-to-encrypt-email.md).

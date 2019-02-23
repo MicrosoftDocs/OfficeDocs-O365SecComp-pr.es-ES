@@ -6,44 +6,44 @@ manager: laurawi
 ms.date: 6/4/2018
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: d2104778-f0a1-4b69-baf3-c4b32e98a573
-description: Obtenga información sobre cómo puede mover de un informe detallado a un entendimiento con acciones recomendadas en la seguridad &amp; centro de cumplimiento.
-ms.openlocfilehash: 48c7283723a75685e16e1f7ddbe34bc3779819cf
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+description: Obtenga información acerca de cómo puede pasar de un informe detallado a un conocimiento con las acciones recomendadas en el centro de seguridad &amp; y cumplimiento.
+ms.openlocfilehash: b0fdb3a75db8e3b18813193a5fa7c5523de16fe8
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014982"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219090"
 ---
 # <a name="walkthrough---from-a-detailed-report-to-an-insight"></a>Tutorial: desde un informe detallado a un reporte
 
-Si está familiarizado con [informes y conocimientos en la seguridad de Office 365 &amp; centro de cumplimiento de normas](reports-and-insights-in-security-and-compliance.md), que puede resultar útil para ver cómo puede navegar fácilmente desde un informe detallado a un entendimiento y acciones recomendadas. 
+Si no está familiarizado con [los informes y la información del centro de seguridad &amp; y cumplimiento de Office 365](reports-and-insights-in-security-and-compliance.md), es posible que le resulte útil ver cómo puede desplazarse fácilmente de un informe detallado a un conocimiento y a acciones recomendadas. 
   
-Se trata de uno de varios tutoriales para la seguridad &amp; centro de cumplimiento. Para ver tutoriales adicionales, vea la sección [temas relacionados](#related-topics) . 
+Este es uno de los diversos tutoriales del centro &amp; de seguridad y cumplimiento. Para ver Tutoriales adicionales, consulte la sección [temas relacionados](#related-topics) . 
   
-## <a name="walkthrough-from-a-detailed-report-to-an-insight"></a>Tutorial: desde un informe detallado a un entendimiento
+## <a name="walkthrough-from-a-detailed-report-to-an-insight"></a>Tutorial: desde un informe detallado a un conocimiento
 
-Vamos a recorrer el flujo de un informe detallado a una profundidad y acciones. (Esto es un ejemplo breve [antimalware y contra correo no deseado](anti-spam-and-anti-malware-protection.md) ). 
+Vamos a recorrer el flujo de un informe detallado a un conocimiento y acciones. (Este es un breve ejemplo de [antimalware y contra correo no deseado](anti-spam-and-anti-malware-protection.md) ). 
   
-1. Empezamos con [seguridad &amp; centro de cumplimiento](https://protection.office.com) informes. (Vaya a **informes** \> **panel**.)<br/>![En la seguridad &amp; centro de cumplimiento, vaya a informes \> panel](media/68f3bb7c-b4f7-4cca-904b-478643a93c94.png)
+1. Comencemos con los informes del [centro de cumplimiento de seguridad &amp; ](https://protection.office.com) . (Vaya a **** \> **Panel**de informes).<br/>![En el centro &amp; de seguridad y cumplimiento, vaya \> a informes de panel](media/68f3bb7c-b4f7-4cca-904b-478643a93c94.png)
   
-2. Se elija un informe para obtener una vista más detallada. (Elija un informe, como el informe de **Estado de protección de amenaza** ).<br/>![Informe de estado de protección de amenaza con conocimientos](media/f47d7dbd-816a-47ba-b8db-53919fbed192.png)
+2. Elegimos un informe para obtener una vista más detallada. (Elija un informe, como el informe de **Estado de protección contra amenazas** ).<br/>![Informe de estado de protección contra amenazas que muestra información](media/f47d7dbd-816a-47ba-b8db-53919fbed192.png)
   
-3. Se tenga en cuenta un indicador de conocimientos en el gráfico, así como a continuación el informe. El puntero del mouse en el marcador de conocimientos proporciona algunos detalles adicionales. (Mantenga el mouse sobre el marcador de conocimientos para ver detalles adicionales).
+3. Observamos un indicador de información en el gráfico, así como debajo del informe. Al colocar el puntero del mouse sobre el marcador de la información se proporcionan algunos detalles adicionales. (Mantenga el mouse sobre el marcador de información para ver más detalles).
     
-4. Al hacer clic en el marcador de conocimientos en el gráfico o el widget conocimientos sobre malware debajo del gráfico se abrirá un panel de detalles. (Debajo del gráfico, seleccione el widget de conocimientos).<br/>![Detalles de conocimientos sobre malware](media/2c8bccc5-ca4e-4bb9-ad4c-55fcee0535b7.png)<br/>El panel de detalles proporciona información y recomendaciones que se deben considerar, incluidos revisar las directivas, llevar a cabo la exploración y edición de estado. ([Más información acerca de la protección contra correo no deseado y antimalware en Office 365](anti-spam-and-anti-malware-protection.md)).
+4. Al hacer clic en el marcador de información del gráfico o del widget información sobre malware, debajo del gráfico se abre un panel de detalles. (Debajo del gráfico, seleccione el widget información).<br/>![Detalles de información sobre malware](media/2c8bccc5-ca4e-4bb9-ad4c-55fcee0535b7.png)<br/>El panel de detalles proporciona información y recomendaciones que se deben tener en cuenta, incluidas las directivas de revisión, la realización de exploraciones adicionales y el estado de edición. ([Obtenga más información sobre protección contra correo no deseado y antimalware en Office 365](anti-spam-and-anti-malware-protection.md)).
     
-De este modo, se puede mover de un informe detallado a un entendimiento y acciones recomendadas. 
+De esta forma, podemos pasar de un informe detallado a un conocimiento y realizar acciones recomendadas. 
   
 ## <a name="related-topics"></a>Temas relacionados
 
-[Tutorial: desde una perspectiva con respecto a un informe detallado](from-an-insight-to-a-detailed-report.md)
+[Tutorial: desde una perspectiva a un informe detallado](from-an-insight-to-a-detailed-report.md)
   
-[Tutorial: desde un panel para un entendimiento](from-a-dashboard-to-an-insight.md)
+[Tutorial: desde un panel a un conocimiento](from-a-dashboard-to-an-insight.md)
   
 

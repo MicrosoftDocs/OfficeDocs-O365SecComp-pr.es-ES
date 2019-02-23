@@ -1,85 +1,85 @@
 ---
-title: Configurar una lista personalizada de direcciones URL de reescritura de no hacer con Office 365 ATP seguros vínculos
+title: Configurar una lista de direcciones URL de do-not-Rewrite personalizada con los vínculos seguros de Office 365 ATP
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.audience: Admin
 ms.topic: article
 ms.date: 02/06/2019
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 35dbfd99-da5a-422b-9b0e-c6caf3b645fa
 ms.collection: M365-security-compliance
-description: Al configurar las directivas de vínculos seguros de ATP, puede incluir una reescritura de no hacer ' lista de direcciones URL para habilitar algunas personas de la organización visitar sitios que se incluyen en la lista.
-ms.openlocfilehash: 87a245e2f21408cd06d483ec5fdcdac47ce7e317
-ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
+description: Cuando configure las directivas de vínculos seguros de ATP, puede incluir una lista de direcciones URL de "do-not-Rewrite" para permitir que algunos usuarios de la organización visiten los sitios que incluya en la lista.
+ms.openlocfilehash: 7fbc7d0d0caec79dcdbb3dc5b1b5a8a4e085dc09
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "29995381"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215030"
 ---
-# <a name="set-up-a-custom-do-not-rewrite-urls-list-using-office-365-atp-safe-links"></a>Configurar una lista personalizada de direcciones URL de reescritura de no hacer con Office 365 ATP seguros vínculos
+# <a name="set-up-a-custom-do-not-rewrite-urls-list-using-office-365-atp-safe-links"></a>Configurar una lista de direcciones URL de do-not-Rewrite personalizada con los vínculos seguros de Office 365 ATP
 
 > [!IMPORTANT]
-> En este artículo está destinada a los clientes empresariales. Si es un usuario particular para obtener más información acerca de los vínculos seguros en Outlook, vea [seguridad de Outlook.com avanzadas](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Este artículo está destinado a los clientes empresariales. Si es un usuario doméstico que busca información sobre vínculos seguros en Outlook, consulte [Advanced Outlook.com Security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-Con [Office 365 avanzada una protección contra amenazas](office-365-atp.md) (ATP), la organización puede tener un [URL bloqueadas personalizadas](set-up-a-custom-blocked-urls-list-wtih-atp.md), por ejemplo, que cuando haga clic en personas en web direcciones (URL) en mensajes de correo electrónico o de determinados documentos de Office, se impide que se va a esas direcciones. La organización también puede tener listas personalizadas "no reescritura" para grupos específicos de la organización. Una lista "no reescritura" permite algunas personas visitar las direcciones URL que en caso contrario, están bloqueadas por [ATP vínculos seguros en Office 365](atp-safe-links.md). 
+Con [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP), su organización puede tener [direcciones URL bloqueadas personalizadas](set-up-a-custom-blocked-urls-list-wtih-atp.md), de modo que cuando los usuarios hagan clic en direcciones web (URL) en mensajes de correo electrónico o en determinados documentos de Office, no se les impedirá ir a esas direcciones URL. La organización también puede tener listas personalizadas de "no reescribir" para grupos específicos de la organización. Una lista "no reescribir" permite que algunas personas visiten direcciones URL que, de lo contrario, se bloquearán mediante [vínculos seguros de ATP en Office 365](atp-safe-links.md). 
   
-En este artículo se describe cómo especificar una lista de direcciones URL que se excluyen de examen de vínculos seguros de ATP y algunos puntos importantes que deben tenerse en cuenta.
+En este artículo se describe cómo especificar una lista de direcciones URL que se excluyen del análisis de vínculos seguros de ATP y algunos puntos importantes que se deben tener en cuenta.
 
-## <a name="set-up-a-do-not-rewrite-list"></a>Configurar una lista "no reescritura de"
+## <a name="set-up-a-do-not-rewrite-list"></a>Configurar una lista de "no reescribir"
 
-Protección de vínculos seguros de ATP utiliza varias listas, incluida la lista de direcciones URL bloqueadas de la organización y las listas de "no volver a escribir" para las excepciones. Si tiene los permisos necesarios, puede configurar las listas personalizadas "no reescritura de". Para ello, al agregar o editar las directivas de seguros vínculos que se aplican a determinados destinatarios en la organización. 
+La protección de vínculos seguros de ATP usa varias listas, incluidas la lista de URL bloqueadas de su organización y las listas "no reescribir" para las excepciones. Si tiene los permisos necesarios, puede configurar las listas de "no reescribir" personalizadas. Esto se hace al agregar o editar directivas de vínculos a prueba de errores que se aplican a destinatarios específicos de la organización. 
 
-Para editar las directivas de ATP (o definir), debe asignar uno de los roles que se describen en la siguiente tabla:
+Para editar (o definir) las directivas de ATP, debe tener asignado uno de los roles descritos en la siguiente tabla:
 
-|Rol  |Dónde y cómo asignado  |
+|Rol  |Dónde y cómo se asigna  |
 |---------|---------|
-|Administrador Global de Office 365 |La persona que se registra para comprar Office 365 es un administrador global de forma predeterminada. (Consulte [acerca de Office 365 roles de administrador](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) para obtener más información).         |
-|Administrador de seguridad |Centro de administración de Azure Active Directory ([https://aad.portal.azure.com](https://aad.portal.azure.com))|
-|Administración de la organización en línea de Exchange |Centro de administración de Exchange ([https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)) <br>o <br>  Cmdlets de PowerShell (vea [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
+|Administrador global de Office 365 |La persona que se registra para comprar Office 365 es un administrador global de forma predeterminada. (Consulte [acerca de los roles de administrador de Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) para obtener más información).         |
+|Administrador de seguridad |Centro de administración de Azure Active[https://aad.portal.azure.com](https://aad.portal.azure.com)Directory ()|
+|Administración de la organización de Exchange Online |Centro de administración de[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)Exchange () <br>o <br>  Cmdlets de PowerShell (vea [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
 
 > [!TIP]
-> Para obtener más información sobre los roles y permisos, vea [permisos en la seguridad de Office 365 &amp; centro de cumplimiento](permissions-in-the-security-and-compliance-center.md).
+> Para obtener más información acerca de los roles y los permisos, consulte perMissions [in the Office 365 &amp; Security Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-### <a name="to-view-or-edit-a-custom-do-not-rewrite-urls-list"></a>Para ver o editar una lista de direcciones URL personalizada "no reescritura de"
+### <a name="to-view-or-edit-a-custom-do-not-rewrite-urls-list"></a>Para ver o editar una lista de direcciones URL "no reescribir" personalizadas
   
-1. Vaya a [https://protection.office.com](https://protection.office.com) y el inicio de sesión con la cuenta de trabajo o escuela. 
+1. Vaya a [https://protection.office.com](https://protection.office.com) e inicie sesión con su cuenta profesional o educativa. 
     
-2. En la izquierda, en **administración de amenaza** \> **Directiva** \> **Vínculos seguros**.
+2. En el panel de navegación izquierdo, en **vínculos seguros**de la **Directiva** \> de **Administración** \> de amenazas.
     
-3. En la sección de **directivas que se aplican a determinados destinatarios** , elija **nuevo** (el botón nuevo se parece a un signo más ( **+**)) para crear una nueva directiva. (Como alternativa, puede editar una directiva existente).<br/>![Elija nuevo para agregar una directiva de vínculos seguros para los destinatarios de correo electrónico específica](media/01073f42-3cec-4ddb-8c10-4d33ec434676.png)
+3. En la sección **directivas que se aplican a destinatarios específicos** , elija **nuevo** (el botón nuevo es similar a un **+** signo más ()) para crear una nueva Directiva. (También puede editar una directiva existente).<br/>![Elija nuevo para agregar una directiva de vínculos seguros para destinatarios de correo electrónico específicos](media/01073f42-3cec-4ddb-8c10-4d33ec434676.png)
   
-4. Especifique un nombre y una descripción para la directiva.
+4. Especifique un nombre y una descripción para la Directiva.
     
-5. En la sección **no de reescritura de las siguientes direcciones URL** , seleccione el cuadro **Escriba una dirección URL válida** y, a continuación, escriba una dirección URL y, a continuación, elija el signo más (+). 
+5. En la sección no **reescribir las siguientes direcciones** URL, seleccione el cuadro **Escriba una dirección URL válida** y, a continuación, escriba una dirección URL y, a continuación, elija el signo más (+). 
     
-6. En la sección **Aplicar a** , elija **el destinatario es un miembro de**y, a continuación, elija el grupo o grupos que desea incluir en la directiva. Elija **Agregar**y, a continuación, elija **Aceptar**.
+6. En la sección **aplicado a** , elija **el destinatario es miembro de**y, a continuación, elija el grupo o los grupos que desea incluir en la Directiva. Elija **Agregar**y, después, haga clic en **Aceptar**.
     
-7. Cuando haya terminado de agregar las direcciones URL, en la esquina inferior derecha de la pantalla, elija **Guardar**.
+7. Cuando termine de agregar direcciones URL, en la esquina inferior derecha de la pantalla, elija **Guardar**.
     
 > [!NOTE]
-> Asegúrese de revisar la lista personalizada de la organización de las URL bloqueadas. Consulte [Configurar una lista de direcciones URL bloqueada personalizada con vínculos seguros de ATP](set-up-a-custom-blocked-urls-list-wtih-atp.md). 
+> Asegúrese de revisar la lista personalizada de direcciones URL bloqueadas de su organización. Consulte [configurar una lista de direcciones URL bloqueadas personalizadas mediante vínculos seguros de ATP](set-up-a-custom-blocked-urls-list-wtih-atp.md). 
   
-## <a name="important-points-to-keep-in-mind"></a>Puntos importantes que deben tenerse en cuenta
+## <a name="important-points-to-keep-in-mind"></a>Aspectos importantes que debe tener en cuenta
 
-- Cualquier dirección URL que especifique en la lista "no reescritura" se excluye de vínculos seguros ATP análisis para los destinatarios que especifique.
+- Las direcciones URL que especifique en la lista "no reescribir" se excluyen del análisis de vínculos seguros de ATP para los destinatarios que especifique.
  
-- Cuando se especifica una lista de "no volver a escribir" para una directiva de vínculos seguros ATP, puede incluir hasta tres asteriscos comodín (\*). Caracteres comodín (\*) se supone que las entradas de como `contoso.com`, que no explícitamente incluir prefijos o subdominios, como `http://` o `https://`. Esto significa que una entrada, como `contoso.com` es similar a `*contoso.com*` para la lista de "no volver a escribir".
+- Cuando se especifica una lista de "no reescribir" para una directiva de vínculos seguros de ATP, puede incluir hasta tres asteriscos comodín (\*). Se asumen\*caracteres comodín () para entradas como `contoso.com`, que no incluyen explícitamente prefijos o subdominios, `http://` como `https://`o. Esto significa que una entrada, como `contoso.com` es similar a `*contoso.com*` la de la lista "no reescribir".
 
-- Si ya tiene una lista de direcciones URL en la lista de "no reescritura", asegúrese de revisar esa lista y agregue caracteres comodín según corresponda. Por ejemplo, si la lista existente tiene una entrada como `http://contoso.com/a` y desea incluir subrutas como `http://contoso.com/a/b` en la directiva, agregue un carácter comodín a la entrada para el aspecto `http://contoso.com/a*`.
+- Si ya tiene una lista de direcciones URL en la lista "no reescribir", asegúrese de revisar dicha lista y agregar caracteres comodín según corresponda. Por ejemplo, si la lista existente tiene una entrada como `http://contoso.com/a` y desea incluir subrutas como `http://contoso.com/a/b` en la Directiva, agregue un carácter comodín a la entrada para que tenga el aspecto `http://contoso.com/a*`deseado.
     
-- No incluya una barra diagonal (/) en las direcciones URL que especifique en la lista de "no volver a escribir". Por ejemplo, en lugar de escribir `contoso.com/` en la lista de "no reescritura", escriba `contoso.com`.
+- No incluya una barra diagonal (/) en las direcciones URL que especifique en la lista "no reescribir". Por ejemplo, en lugar de `contoso.com/` escribir en la lista "no reescribir", escriba `contoso.com`.
     
-Tienen los siguientes ejemplos de listas de tabla de lo que puede escribir y el efecto que esas entradas.
+En la tabla siguiente se muestran ejemplos de lo que se puede especificar y el efecto que tienen estas entradas.
     
-|**Entrada de ejemplo**|**Para qué sirve**|
+|**Entrada de ejemplo**|**Qué hace**|
 |:-----|:-----|
-|`*contoso.com*`  <br/> |Permite a los destinatarios específicos visite un dominio, subdominios y rutas de acceso, como `http://www.contoso.com`, `https://www.contoso.com`, `https://maps.contoso.com`, o`http://www.contoso.com/a`  <br/> |
-|`http://contoso.com/a`  <br/> |Permite a los destinatarios específicos a visitar un sitio como `http://contoso.com/a`, pero no subtrazados like`http://contoso.com/a/b`  <br/> |
-|`http://contoso.com/a*`  <br/> |Permite a los destinatarios específicos a visitar un sitio como `http://contoso.com/a` y subtrazados como`http://contoso.com/a/b`  <br/> |
+|`*contoso.com*`  <br/> |Permite a los destinatarios específicos visitar un dominio, subdominios y rutas de destino, `http://www.contoso.com`como `https://www.contoso.com`, `https://maps.contoso.com`, o`http://www.contoso.com/a`  <br/> |
+|`http://contoso.com/a`  <br/> |Permite a los destinatarios específicos visitar un sitio `http://contoso.com/a`como, pero no subtrazados como`http://contoso.com/a/b`  <br/> |
+|`http://contoso.com/a*`  <br/> |Permite a los destinatarios específicos visitar un sitio `http://contoso.com/a` como y subrutas como`http://contoso.com/a/b`  <br/> |
    
  

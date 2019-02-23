@@ -7,15 +7,15 @@ ms.reviewer: alesibov
 ms.audience: Admin
 ms.topic: reference
 ms.date: 02/14/2019
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 description: Las directivas de sesión de seguridad de aplicación de nube de Office 365 permiten la supervisión en tiempo real de los usuarios, lo que le ofrece una visibilidad granular de las aplicaciones de Office 365 y la capacidad de realizar diferentes acciones según la Directiva que establezca para una sesión de usuario. En lugar de permitir o bloquear completamente el acceso, con el control de sesión puede permitir el acceso a la vez que supervisa la sesión o limitar actividades de sesión específicas mediante el uso de las funciones de proxy inverso del control de aplicación de acceso condicional.
-ms.openlocfilehash: 0dbfb3e5827fb76e52f0262333d372860f0cb58a
-ms.sourcegitcommit: 8679937354c1d8870ecd41519a59d2d7468c23c4
+ms.openlocfilehash: a57b62073e93c95217a829f8aa381f4a585dacc5
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30103345"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218610"
 ---
 # <a name="session-policies-in-office-365-cloud-app-security"></a>Directivas de sesión en Office 365 Cloud App Security
 

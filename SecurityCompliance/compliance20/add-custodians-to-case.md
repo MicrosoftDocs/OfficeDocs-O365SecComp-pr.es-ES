@@ -1,12 +1,12 @@
 ---
-title: Agregar a custodia a un caso de exhibición de documentos electrónicos avanzada (vista previa)
+title: Agregar custodios a un caso de eDiscovery avanzado (versión preliminar)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,77 +14,78 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 88d2e64f4e1fb519955d8970b34e9670fb18d3f8
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: c36e0a2228db042d50361460e2e22f13556e8715
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29706111"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30218220"
 ---
-# <a name="add-custodians-to-an-advanced-ediscovery-preview-case"></a>Agregar a custodia a un caso de exhibición de documentos electrónicos avanzada (vista previa)
+# <a name="add-custodians-to-an-advanced-ediscovery-preview-case"></a>Agregar custodios a un caso de eDiscovery avanzado (versión preliminar)
 
-Uso de exhibición de documentos electrónicos avanzada (vista previa), puede aprovechar la herramienta de administración integrada de custodia para coordinar los flujos de trabajo alrededor de administración de custodia y la identificación de los orígenes de datos relevantes, custodia dentro de un caso. Cuando se agrega una custodia, puede identificar automáticamente el sistema y realizar suspensiones en su buzón de Exchange principal y OneDrive para el sitio de negocio. Como dirigir la detección, también es posible que descubrir y asignar los buzones de correo adicionales o sitios que una custodia tener acceso en el pasado o los equipos que una custodia es un miembro de hoy.
+Mediante eDiscovery avanzado (versión preliminar), puede aprovechar la herramienta de administración de custodios incorporada para coordinar sus flujos de trabajo en la administración de custodios y para identificar los orígenes de datos relevantes y relevantes dentro de un caso. Cuando se agrega un custodio, el sistema puede identificar automáticamente y realizar suspensiones en el buzón principal de Exchange y en el sitio de OneDrive para la empresa. Al realizar la detección, también puede descubrir y asignar los sitios o buzones de correo adicionales que un custodio haya accediendo en el pasado o Teams de los que un custodio es miembro de hoy.
 
-Use el siguiente flujo de trabajo para agregar y administrar a custodia en los casos de exhibición de documentos electrónicos avanzada (vista previa) en el centro de cumplimiento de seguridad &. 
+Use el siguiente flujo de trabajo para agregar y administrar custodios en escenarios de eDiscovery avanzado (vista previa) en el centro de seguridad & cumplimiento. 
 
-## <a name="step-1-identify-potential-custodians"></a>Paso 1: Identificar posible custodia
+## <a name="step-1-identify-potential-custodians"></a>Paso 1: identificar custodios potenciales
 
-El primer paso es identificar a la custodia adecuada para su caso. Para agregar a custodia a un caso, debe ser un miembro de la exhibición de documentos electrónicos los administradores o el grupo de roles de administradores de exhibición de documentos electrónicos.   
+El primer paso es identificar los custodios adecuados para su caso. Para agregar custodios a un caso, debe ser miembro del grupo de roles de administradores de eDiscovery o administradores de exhibición de documentos electrónicos.   
 
-Para agregar a custodia a un caso de exhibición de documentos electrónicos avanzada (vista previa) existente:
+Para agregar custodios a un caso existente de eDiscovery avanzado (versión preliminar):
 
-1. Desde la página de **exhibición de documentos electrónicos avanzada (vista previa)** , vaya a su caso.
+1. En la página exhibición avanzada de documentos electrónicos **(vista previa)** , vaya a su caso.
  
-2. Después de haber seleccionado un caso, vaya a la ficha de **custodia** y haga clic en **+ custodia de agregar**. 
+2. Una vez que haya seleccionado un caso, vaya a **** la pestaña custodios y haga clic en **+ Agregar custodio**. 
  
-3. Elija a la custodia que desea agregar a las mayúsculas y minúsculas. Puede iniciar escribiendo para buscar y seleccionar los usuarios de Azure Active Directory su organización.
+3. Elija los custodios que desea agregar al caso. Puede empezar a escribir para buscar y seleccionar los usuarios de Azure Active Directory de su organización.
  
-4. Tras finalizar la lista de custodia, haga clic en **siguiente** para comenzar a identificar los posibles orígenes de datos. 
+4. Una vez que haya finalizado la lista de custodios, haga clic en **siguiente** para identificar los posibles orígenes de datos. 
    
-## <a name="optional-step-2-select-custodian-data-sources"></a>(Opcional) Paso 2: Seleccione orígenes de datos de custodia
+## <a name="optional-step-2-select-custodian-data-sources"></a>Opcional Paso 2: seleccionar orígenes de datos custodios
 
-Después de agregar a un caso de custodia, puede sacar provecho de Office 365 para ayudarle a identificar y conservar los orígenes de datos de custodia principal. Es el paso siguiente de este flujo de trabajo seleccionar los orígenes de datos que pertenecen a la custodia especificado en el paso 1. 
+Una vez que haya agregado custodios a un caso, puede aprovechar Office 365 para ayudarle a identificar y preservar los principales orígenes de datos de custodios. El siguiente paso de este flujo de trabajo es seleccionar los orígenes de datos que pertenecen a los custodios especificados en el paso 1. 
 
-Para identificar los orígenes de datos de custodia: 
+Para identificar los orígenes de datos de custodios: 
 
-1. Para cada custodia, seleccione **Exchange** si le gustaría que el sistema para identificar y agregar el buzón principal de la custodia de automáticamente. 
+1. Para cada custodio, seleccione **Exchange** si desea que el sistema identifique y agregue automáticamente el buzón de correo principal de Exchange del custodio. 
  
-2. Para cada custodia, seleccione **OneDrive** si le gustaría que el sistema para identificar automáticamente y agregar principal OneDrive para la dirección URL de la custodia. 
+2. Para cada custodio, seleccione **onedrive** si desea que el sistema identifique y agregue automáticamente la dirección URL principal de onedrive del custodio. 
 
-    Una vez haya realizado las selecciones, sistema intentará automáticamente identificar los orígenes de datos y agregarlos a su caso.
+    Después de realizar las selecciones, el sistema intentará identificar los orígenes de datos automáticamente y agregarlos a su caso.
  
-4. Haga clic en **siguiente** para comenzar la asignación de orígenes de datos adicionales a su custodia.
+4. Haga clic en **siguiente** para comenzar a asignar orígenes de datos adicionales a su custodio.
 
-## <a name="optional-step-3-map-additional-data-sources"></a>(Opcional) Paso 3: Asignar orígenes de datos adicionales
+## <a name="optional-step-3-map-additional-data-sources"></a>Opcional Paso 3: asignar orígenes de datos adicionales
 
-Dependiendo del caso, es posible que desee agregar buzones de correo que es posible que ha usado la custodia determinada en el pasado, grupos donde actualmente es un miembro de custodia o sitios que una custodia tenía acceso a en el pasado. Además de los orígenes de datos principal de custodia, puede agregar otros orígenes de datos de Office 365 a custodia o sacar provecho de Office 365 para ayudar a identificar los orígenes de datos potencialmente relevantes así como. 
+Según el caso, es posible que también desee agregar buzones que un custodio dado puede haber usado anteriormente, grupos en los que un custodio es actualmente miembro o sitios a los que un custodio tenía acceso en el pasado. Además de los orígenes de datos de custodios principales, puede Agregar orígenes de datos de Office 365 adicionales a un custodio o aprovechar Office 365 para ayudarle a identificar también los orígenes de datos potencialmente relevantes. 
 
-Para asignar los buzones de correo, sitios o los equipos a custodia específica:
-1. Seleccione la **actualización** para asignar las ubicaciones de contenido, como los buzones de correo, los sitios y de los equipos, a una custodia específica. 
+Para asignar buzones de correo, sitios o equipos a un custodio específico:
 
-2. En el menú desplegable, especifique lo siguiente:
+1. Seleccione **Actualizar** para asignar ubicaciones de contenido, como buzones de correo, sitios y equipos, a un custodio específico. 
+
+2. En el control flotante, especifique lo siguiente:
    
-  -  **Los buzones de Exchange** - haga clic en **Elegir usuarios, grupos o equipos** y, a continuación, haga clic en **Elegir usuarios, grupos o equipos de** nuevo. Para especificar los buzones de correo para asignar a la custodia seleccionada, use el cuadro de búsqueda para encontrar buzones de usuario y grupos de distribución. También puede asignar el buzón asociado para un grupo de Office 365 o un Microsoft Team. Seleccione el usuario, el grupo, la casilla de verificación de equipo, haga clic en **Elegir**y, a continuación, haga clic en **Listo**.
+  -  **Buzones de Exchange** : haga clic en **elegir usuarios, grupos o equipos** y, a continuación, haga clic en **elegir usuarios, grupos o equipos** de nuevo. Para especificar los buzones que se asignarán al custodio seleccionado, use el cuadro de búsqueda para buscar los buzones de usuario y los grupos de distribución. También puede asignar el buzón asociado para un grupo de Office 365 o un equipo de Microsoft. Active la casilla de verificación usuario, grupo, equipo, haga clic en **elegir**y, a continuación, haga clic en **listo**.
 
       > [!NOTE]
-      > Al hacer clic en Elegir usuarios, grupos o equipos para especificar los buzones de correo, el selector de buzón de correo que se muestra está vacío. Este comportamiento está diseñado para mejorar el rendimiento. Para agregar personas a esta lista, escriba un nombre (un mínimo de 3 caracteres) en el cuadro de búsqueda.
+      > Al hacer clic en elegir usuarios, grupos o equipos para especificar los buzones, el selector de buzones que se muestra está vacío. Esto se debe a su diseño para mejorar el rendimiento. Para agregar personas a esta lista, escriba un nombre (un mínimo de 3 caracteres) en el cuadro de búsqueda.
      
-   - **Sitios de SharePoint** : haga clic en **Elegir sitios** y, a continuación, haga clic en **sitios de elija** nuevo para especificar SharePoint y OneDrive adicionales para sitios de negocio que le gustaría usar para asignar a la custodia seleccionada. También puede agregar la dirección URL del sitio de SharePoint para un grupo de Office 365 o un Microsoft Team. Escriba la dirección URL para cada sitio que desee asignar. Haga clic en **Elegir**y, a continuación, haga clic en **Listo**.
-   - **Los equipos de Microsoft** : haga clic en **Elegir los equipos** y, a continuación, haga clic en **Elegir los equipos** de nuevo para ver una lista de grupos de Microsoft Team que la custodia es un miembro de hoy. Seleccione los equipos que le gustaría usar para agregar a su custodia. Una vez seleccionado, el sistema automáticamente identificará seleccionar & que el sitio de SharePoint y el buzón de grupo asociado asociado a ese Microsoft Team. Haga clic en **Elegir**y, a continuación, haga clic en **Listo**.
+   - **Sitios de SharePoint** : haga clic en **elegir sitios** y, a continuación, haga clic en **elegir sitios** de nuevo para especificar sitios de SharePoint y OneDrive para la empresa adicionales que quiera asignar al custodio seleccionado. También puede Agregar la dirección URL del sitio de SharePoint para un grupo de Office 365 o un equipo de Microsoft. Escriba la dirección URL de cada sitio que quiera asignar. Haga clic en **elegir**y, a continuación, en **listo**.
+   - **Microsoft Teams** : haga clic en **elegir Teams** y, a continuación, haga clic en **elegir Teams** de nuevo para ver una lista de los grupos de Microsoft Teams de los que el custodio es miembro de hoy. Seleccione los equipos que quiera agregar a su custodio. Una vez seleccionado, el sistema identificará automáticamente & seleccionar el sitio de SharePoint y el buzón de grupo asociados a ese equipo de Microsoft. Haga clic en **elegir**y, a continuación, en **listo**.
         
       > [!NOTE]
-      > Para agregar adicionales Teams Microsoft, debe agregar por separado el buzón de correo y el sitio de SharePoint como se indicó anteriormente.
+      > Para agregar Microsoft Teams, tendrá que agregar por separado el buzón de correo y el sitio de SharePoint, como se muestra más arriba.
 
-Cuando haya terminado de asignación de los orígenes, puede ver el totales buzones, sitios y los equipos para la custodia que acaba de agregar. Cuando haya finalizado los orígenes de datos relevantes de custodia específica, esta asignación se mantiene y extendida para la colección de exhibición de documentos electrónicos, procesamiento y los flujos de trabajo de revisión. 
+Una vez que haya terminado de asignar sus orígenes, puede ver los buzones de correo totales, los sitios y los equipos de los custodios que acaba de agregar. Cuando haya finalizado los orígenes de datos relevantes para un custodio específico, esta asignación se mantendrá y se extenderá a los flujos de trabajo de recopilación, procesamiento y revisión de la exhibición de documentos electrónicos. 
 
-## <a name="optional-step-4-place-custodians-on-hold"></a>(Opcional) Paso 4: Lugar custodia en espera
+## <a name="optional-step-4-place-custodians-on-hold"></a>Opcional Paso 4: poner los custodios en espera
 
- Tras finalizar la custodia y orígenes de datos que desea agregar a su caso, opcionalmente puede colocar algunos o todos los de su custodia en espera. Cuando se realiza una custodia en espera, el contenido asignado a ese usuario se mantiene hasta que se suelte a la custodia desde las mayúsculas y minúsculas o hasta que se elimine la suspensión. En algunos casos, es posible que desee agregar a custodia a un caso sin colocarlos en suspensión. 
+ Una vez que haya finalizado los custodios y los orígenes de datos que desea agregar a su caso, puede, de manera opcional, poner algunos o todos los custodios en retención. Cuando se pone un custodio en espera, el contenido asignado a ese usuario se conserva hasta que se libere el custodio del caso o hasta que se elimine la retención. En algunos casos, es posible que quiera agregar custodios a un caso sin ponerlos en retención. 
 
-Para colocar el seleccionado custodia y orígenes de datos en espera:
+Para poner los custodios y los orígenes de datos seleccionados en espera:
 
-1. Compruebe las selecciones de custodia y seleccione el checkox para realizar a cada custodia en espera. Una vez que una custodia se pondrá en espera, se creará automáticamente una directiva de retención de custodia que contiene custodia todos los orígenes. Si la opción no está activada, los orígenes de datos de custodia & seleccionado se agregará a las mayúsculas y minúsculas, pero no se conservará el contenido.
+1. Compruebe las selecciones de custodios y seleccione la casilla para poner cada custodio en espera. Una vez que un custodio se coloca en retención, se creará automáticamente una directiva de retención de custodios que contiene todas las fuentes de la Private. Si la opción no está seleccionada, se agregarán al caso los orígenes de datos seleccionados del & del custodio, pero el contenido no se conservará.
 
-2. Vaya a la ficha **contiene** y seleccione la **Directiva de retención de custodia**. 
+2. Vaya a la **** pestaña suspensiones y seleccione la **Directiva de retención**de custodios. 
 
-3. Haga clic en **Editar** para ver todos los orígenes de datos de custodia seleccionado.
+3. Haga clic en **Editar** para ver todos los orígenes de datos de custodios seleccionados.

@@ -1,9 +1,27 @@
 ---
-Título: "preguntas más frecuentes sobre protección contra correo no deseado" MS. Author: krowley Author: kccross Manager: laurawi ms. Date: 12/9/2016 ms. Audience: ITPro ms. topic: artículo ms. Service: O365-seccomp ms. Custom: TN2DMC localization_priority: normal Search. appverid:
-- MET150 ms. AssetID: c534a35d-B121-45DA-9d0a-ce738ce51fce ms. Collection:
-    - M365-Security-Compliance Description: "este tema proporciona las preguntas más frecuentes y sus respuestas sobre la protección contra correo no deseado. Las respuestas son válidas para los clientes de Microsoft Exchange Online y Exchange Online Protection (EOP). "
+title: Preguntas más frecuentes sobre protección contra correo electrónico no deseado
+ms.author: krowley
+author: kccross
+manager: laurawi
+ms.date: 12/9/2016
+ms.audience: ITPro
+ms.topic: article
+ms.service: O365-seccomp
+ms.custom: TN2DMC
+localization_priority: Normal
+search.appverid:
+- MET150
+ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
+ms.collection:
+- M365-security-compliance
+description: En este tema encontrará las preguntas frecuentes y sus correspondientes respuestas sobre la protección contra el correo no deseado. Las respuestas sirven para los clientes de Microsoft Exchange Online y de Exchange Online Protection (EOP).
+ms.openlocfilehash: f41799a3870e899fd3601453aaa11f6f9c51c608
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223059"
 ---
-
 # <a name="anti-spam-protection-faq"></a>Preguntas más frecuentes sobre protección contra correo electrónico no deseado
 
 En este tema encontrará las preguntas frecuentes y sus correspondientes respuestas sobre la protección contra el correo no deseado. Las respuestas sirven para los clientes de Microsoft Exchange Online y de Exchange Online Protection (EOP). 

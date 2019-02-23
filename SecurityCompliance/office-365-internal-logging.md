@@ -5,7 +5,7 @@ author: robmazz
 manager: laurawi
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Una explicación de cómo funciona el registro interno de Office 365 Engineering Teams.
-ms.openlocfilehash: cf11a52541f6434a580435688db0f986f670bd31
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+ms.openlocfilehash: 68f8763b9a647de462f402e40a4c78749343dfd9
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30090762"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216500"
 ---
 # <a name="internal-logging-for-office-365-engineering"></a>Registro interno para el equipo de ingeniería de Office 365
 Además de los datos de registro y eventos disponibles para los clientes, también hay un sistema de recopilación de datos de registro interna que está disponible para los ingenieros de Office 365. Se cargan muchos tipos diferentes de datos de registro de los servidores de Office 365 en un servicio informático interno de gran tamaño denominado cosmos. Cada equipo de servicio carga los registros de auditoría desde sus servidores respectivos a la base de datos cosmos para agregación y análisis. Esta transferencia de datos se produce en una conexión TLS validada por FIPS 140-2 en puertos y protocolos aprobados específicamente mediante una herramienta de automatización patentada llamada Office Data Loader (ODL). Las herramientas usadas en Office 365 para recopilar y procesar registros de auditoría no permiten cambios permanentes o irreversibles en el contenido del registro de auditoría original o el pedido de tiempo.

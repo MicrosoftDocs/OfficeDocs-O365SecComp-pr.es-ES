@@ -6,81 +6,81 @@ manager: laurawi
 ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: c87bb0e5-301c-4d1d-958e-aabeb7990f44
-description: 'Obtenga información sobre cómo usar la seguridad de Office 365 &amp; centro de cumplimiento para tener acceso a Office 365 avanzada exhibición de documentos electrónicos y ejecutar el módulo de proceso para un caso.  '
-ms.openlocfilehash: 32052bccc37d20c8707a1efb0592f7c93daf3590
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: 'Obtenga información sobre cómo usar el centro de &amp; seguridad y cumplimiento de Office 365 para obtener acceso a eDiscovery avanzado de Office 365 y ejecutar el módulo de proceso para un caso.  '
+ms.openlocfilehash: 95c73c034ed2ffa1c45f9aacd8463c497a842859
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22536207"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217610"
 ---
 # <a name="run-the-process-module-and-load-data-in-office-365-advanced-ediscovery"></a>Ejecutar el módulo de proceso y cargar datos en eDiscovery avanzado de Office 365
 
 > [!NOTE]
-> Exhibición de documentos electrónicos avanzada requiere un E3 de Office 365 con el complemento de cumplimiento avanzadas o una suscripción E5 para su organización. Si no tiene ese plan y desea probar avanzada exhibición de documentos electrónicos, puede [registrarse y obtener una versión de prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
+> Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
-En esta sección se describe la funcionalidad del módulo del proceso de exhibición de documentos electrónicos avanzadas. 
+En esta sección se describe la funcionalidad del módulo de proceso avanzado de eDiscovery. 
   
-Además de los datos de archivo, se pueden cargar metadatos como tipo de archivo, extensión, ubicación o ruta de acceso, fecha de creación y tiempo, autor, custodia y asunto, en avanzada de exhibición de documentos electrónicos y guardan para cada caso. Algunos metadatos se calculan mediante avanzada exhibición de documentos electrónicos, por ejemplo, cuando se cargan archivos nativos. 
+Además de los datos de archivo, los metadatos como el tipo de archivo, la extensión, la ubicación o la ruta de acceso, la fecha y hora de creación, el autor, el custodio y el sujeto se pueden cargar en eDiscovery avanzado y guardarse para cada caso. Algunos metadatos los calcula la exhibición avanzada de documentos electrónicos, por ejemplo, cuando se cargan archivos nativos. 
   
-Exhibición de documentos electrónicos avanzada proporciona al sistema de valores de metadatos, como las agrupaciones de casi duplicados o las puntuaciones de la relevancia. Otros metadatos, como las anotaciones de archivo, se pueden agregar por el administrador. 
+EDiscovery avanzado proporciona valores de metadatos del sistema, como agrupaciones casi duplicadas o calificaciones de relevancia. El administrador puede agregar otros metadatos, como las anotaciones de archivo. 
   
-## <a name="running-process"></a>Proceso que se está ejecutando
+## <a name="running-process"></a>Proceso en ejecución
 
 > [!NOTE]
-> Los números de lote se asignan a un archivo durante el proceso para permitir el seguimiento de los archivos. El número de lote también permite la identificación de los lotes de proceso para las opciones de reprocesamiento. Filtros adicionales están disponibles para filtrar por número de lote y sesiones. 
+> Los números de lote se asignan a un archivo durante el proceso para permitir el seguimiento de archivos. El número de lote también permite la identificación de lotes de proceso para las opciones de reprocesamiento. Hay filtros adicionales disponibles para filtrar por número de lote y sesiones. 
   
-Realice los pasos siguientes para ejecutar el proceso.
+Realice los siguientes pasos para ejecutar el proceso.
   
-1. [Abrir la seguridad de Office 365 &amp; centro de cumplimiento](go-to-the-securitycompliance-center.md) . 
+1. [Abra el centro de seguridad &amp; y cumplimiento de Office 365](go-to-the-securitycompliance-center.md) . 
     
-2. Vaya a **búsqueda &amp; investigación** \> **exhibición de documentos electrónicos** y, a continuación, haga clic en **Ir a la exhibición de documentos electrónicos avanzada**.
+2. Vaya a la **exhibición** de documentos electrónicos de ** &amp; investigación** \> y haga clic en **ir a exhibición avanzada**de documentos electrónicos.
     
-3. En la exhibición de documentos electrónicos avanzada, seleccione el caso apropiado en la página de **casos** mostrada en y haga clic en **Ir a caso**.
+3. En la exhibición avanzada de documentos electrónicos, seleccione el caso apropiado en la página **casos** mostrados y haga clic en **ir al caso**.
     
-4. En **Prepare** \> **proceso** \> **el programa de instalación**, seleccione un contenedor de la lista de contenedores disponibles.
+4. En **preparar** \> el **proceso** \> de **instalación**, seleccione un contenedor de la lista de contenedores disponibles.
     
-    ![Haga clic en el proceso para agregar los resultados de búsqueda a las mayúsculas y minúsculas](media/50bdc55c-d378-4881-b302-31ef785fa359.png)
+    ![Haga clic en proceso para agregar los resultados de la búsqueda al caso](media/50bdc55c-d378-4881-b302-31ef785fa359.png)
   
-5. Haga clic en **configuración... avanzada** si desea agregar el contenedor como archivos de inicialización o como archivos con previa a la etiqueta. 
+5. Haga clic en **Configuración avanzada...** si desea agregar el contenedor como archivos semilla o como archivos etiquetados previamente. 
     
-    Usar archivos de inicialización para acelerar el aprendizaje para problemas con flexibilidad baja (normalmente un 2% o menos). Para los archivos de inicialización, se recomienda que seleccione una gran variedad de archivos claramente relevantes y procesar sobre semillas 20-50 por problema (demasiados archivos de inicialización pueden contraer los resultados de la relevancia). Archivos de inicialización deben ser revisados por la misma persona que enseñará el problema.
+    Use los archivos de inicialización para acelerar el entrenamiento de problemas con escasa riqueza (normalmente 2% o menos). En el caso de los archivos de inicialización, se recomienda seleccionar una variedad de archivos y un proceso claramente relevantes alrededor de 20-50 de semillas por problema (demasiados archivos de inicialización pueden sesgar los resultados de relevancia). Los archivos de inicialización deben ser revisados por la misma persona que va a entrenar el problema.
     
-    Usar archivos con previa a la etiqueta para automatizar la formación de relevancia. Debe marcar los archivos al menos 1.500 y mantener la misma que en la colección que se agrega a la relevancia de la proporción de relevantes para los archivos que no sean relevantes. Estos archivos se deben etiquetar manualmente, y debe estar seguro de la calidad de etiquetas temáticas.
+    Use archivos etiquetados previamente para automatizar el entrenamiento de relevancia. Debe etiquetar al menos 1.500 archivos y mantener la proporción de archivos relevantes y no relevantes del mismo modo que en la colección agregada a relevancia. Estos archivos se deben etiquetar manualmente y debe estar seguro de la calidad de etiquetado.
     
-    ![Captura de pantalla de avanzada de página de configuración para el procesamiento por lotes de archivos](media/3c25cb78-4484-41e5-bd34-3753c7ab6cf2.jpg)
+    ![Captura de pantalla de la página Configuración avanzada para procesar archivos por lotes](media/3c25cb78-4484-41e5-bd34-3753c7ab6cf2.jpg)
   
-  - En la sección **valor de inicialización** : 
+  - En la sección **SEED** : 
     
-    Seleccione **Marcar como archivos de inicialización** para marcar el contenedor como archivos de inicialización. También necesita elegir asignar por problema desde la **para el problema de** lista desplegable. Elija **pertinente** o **no relevantes** en la lista desplegable de **etiqueta** . 
+    Elija **marcar como archivos semilla** para marcar el contenedor como archivos de inicialización. También tiene que elegir asignarlos por asunto en la lista desplegable **para problema** . Elija **relevante** o **no relevante** en la lista desplegable de **etiquetas** . 
     
     > [!NOTE]
-    > Una vez que los archivos se establece como **valor de inicialización**, no se puede marcarlos como **previamente con etiqueta**. 
+    > Una vez que haya establecido **** los archivos como inicialización, no podrá marcarlos como **etiquetados previamente**. 
   
-  - En la sección **archivos con previa a la etiqueta** : 
+  - En la sección **archivos etiquetaDos previamente** : 
     
-    Seleccione **Marcar como archivos con previa a la etiqueta** para marcar el contenedor como archivos con previa a la etiqueta. También debe asignar por problema desde la **para el problema de** lista desplegable. Elija **pertinente** o **no relevantes** en la lista desplegable de **etiqueta** . 
+    Elija **marcar como archivos etiquetados previamente** para marcar el contenedor como archivos etiquetados previamente. También tiene que asignarlos por problema desde la lista desplegable **para problema** . Elija **relevante** o **no relevante** en la lista desplegable de **etiquetas** . 
     
     > [!NOTE]
-    > Una vez establecido archivos como **previamente con la etiqueta**, no se puede marcarlos como **valor de inicialización**. 
+    > Una vez que haya establecido los archivos como **etiquetaDos previamente**, no podrá marcarlos como **inicialización**. 
   
-  - En la sección **correo electrónico etiquetado** . conjunto de qué parte de un correo electrónico procesado deben estar marcados como semillas o con previa a la etiqueta. 
+  - En la sección **etiquetado de correo electrónico** . establecer qué parte de un correo electrónico procesado se marcará como semilla o preetiquetada. 
     
-6. Para empezar, haga clic en **proceso**. Cuando se complete, se muestran los resultados del proceso.
+6. Para empezar, haga clic en **procesar**. Una vez finalizado, se muestran los resultados del proceso.
     
-7. (Opcional) Si necesita asignar orígenes de datos a una custodia específica, puede agregar y editar los nombres de custodia en **custodia** \> **Administrar** y asignar custodia en **custodia** \> **asignar**. 
+7. Opcional Si necesita asignar orígenes de datos a un custodio específico, puede Agregar y editar nombres de custodios en los **custodios** \> **administre** y asigne custodios en **asignación**de **custodios** \> . 
     
-Si agrega a las mayúsculas y minúsculas, a continuación, puede procesar de nuevo.
+Si agrega al caso, puede volver a procesar.
   
 ## <a name="see-also"></a>Vea también
 
 [eDiscovery avanzado de Office 365](office-365-advanced-ediscovery.md)
   
-[Ver los resultados del módulo de proceso](view-process-module-results-in-advanced-ediscovery.md)
+[Visualización de los resultados del módulo de proceso](view-process-module-results-in-advanced-ediscovery.md)
 

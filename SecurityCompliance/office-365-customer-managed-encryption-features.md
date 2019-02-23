@@ -5,18 +5,18 @@ author: kccross
 manager: laurawi
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: 'Resumen: comprenda la resistencia de los datos en Microsoft Office 365.'
-ms.openlocfilehash: 26abb93e491a183c5c307dde8055f1050e16068c
-ms.sourcegitcommit: 24659bdb09f49d0ffed180a4b80bbb7c45c2d301
+ms.openlocfilehash: 7c4817a2982733bc1d292117811cb21aa5278972
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "29664126"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216066"
 ---
 # <a name="customer-managed-encryption-features-in-office-365"></a>Características de cifrado administradas por el cliente en Office 365
 

@@ -1,53 +1,53 @@
 ---
-title: Integración del servidor de SIEM con Microsoft 365
+title: Integración del servidor SIEM con Microsoft 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.audience: ITPro
 ms.topic: article
 ms.date: 10/29/2018
-ms.service: o365-solutions
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom:
 - Ent_Solutions
 - SIEM
 - M365-security-compliance
-description: 'Resumen: Lea este artículo para obtener una visión general de la integración del servidor de SIEM con Microsoft 365.'
-ms.openlocfilehash: a6e139d14a7ea3625b2d2fffec5ad5d913ea9184
-ms.sourcegitcommit: efccf5b4f22d34a9674bc55ebf3d88bc8bda2972
+description: 'Resumen: Lea este artículo para obtener información general sobre la integración del servidor SIEM con Microsoft 365.'
+ms.openlocfilehash: 56ac1b244bc7bfc62bd6edb097a733e8477baa26
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2019
-ms.locfileid: "29995201"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215660"
 ---
-# <a name="siem-server-integration-with-microsoft-365-services-and-applications"></a>Integración del servidor de SIEM con las aplicaciones y servicios de Microsoft 365
+# <a name="siem-server-integration-with-microsoft-365-services-and-applications"></a>Integración del servidor de SIEM con los servicios y aplicaciones de Microsoft 365
 
 ## <a name="overview"></a>Información general
 
-Si su organización usa un servidor de información de seguridad y administración de eventos (SIEM), o si va a obtener un servidor SIEM pronto, es posible que se pregunte cómo que aquí se integran con su 365 de Microsoft, incluidos Office 365 Enterprise. Si necesita un servidor SIEM depende de muchos factores, como los requisitos de seguridad de la organización. Microsoft 365 ofrece una variedad de características de seguridad. Sin embargo, si su organización tiene contenido y las aplicaciones localmente y en la nube (como en el caso de una implementación de nube híbrida), es posible que considere la posibilidad de agregar un servidor SIEM para protección adicional. O bien, si su organización tiene requisitos de seguridad muy rigurosas que debe cumplir, es posible que considere la posibilidad de agregar un servidor SIEM a su entorno.
+Si su organización usa un servidor de administración de eventos e información de seguridad (SIEM), o si tiene previsto obtener un servidor de SIEM en breve, es posible que se pregunte cómo se integrará con el 365 de Microsoft, incluido Office 365 Enterprise. Si necesita un servidor de SIEM depende de muchos factores, como los requisitos de seguridad de la organización. Microsoft 365 ofrece una amplia variedad de características de seguridad; sin embargo, si su organización tiene contenido y aplicaciones locales y en la nube (como en el caso de una implementación de nube híbrida), puede considerar la posibilidad de agregar un servidor SIEM para una protección adicional. O bien, si su organización tiene unos requisitos de seguridad especialmente estrictos que debe cumplir, puede considerar la posibilidad de agregar un servidor SIEM a su entorno.
 
-## <a name="siem-server-integration-microsoft-365"></a>Integración del servidor de SIEM 365 de Microsoft
+## <a name="siem-server-integration-microsoft-365"></a>Integración del servidor de SIEM Microsoft 365
 
-Un servidor SIEM puede recibir datos de una amplia variedad de aplicaciones y servicios de Microsoft 365. En la siguiente tabla se enumera varias aplicaciones junto con entradas de los servidores SIEM y dónde debe acudir para obtener más información acerca de la integración de SIEM server y servicios de Microsoft 365. 
+Un servidor de SIEM puede recibir datos de una amplia variedad de aplicaciones y servicios de Microsoft 365. En la siguiente tabla se enumeran varios servicios y aplicaciones de Microsoft 365 junto con entradas del servidor SIEM y dónde obtener más información sobre la integración del servidor de SIEM. 
 
-| El servicio de Microsoft 365 o de la aplicación | Entradas de los servidores SIEM | Recursos para obtener más información |
+| Servicio o aplicación de Microsoft 365 | Entradas del servidor SIEM | Recursos para obtener más información |
 | --- | --- | --- |
-| [Protección contra amenazas avanzada de Office 365](office-365-atp.md) <br/>   o   <br/>[Inteligencia sobre amenazas de Office 365](office-365-ti.md) | Registros de auditoría | [Integración de SIEM con información sobre amenazas de Office 365 y avanzada de protección contra amenazas](siem-integration-with-office-365-ti.md) |
-| [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) | Integración de registro | [Integración de SIEM con seguridad de la aplicación de Microsoft en la nube](https://docs.microsoft.com/cloud-app-security/siem) |
-| [Office 365 Cloud App Security](office-365-cas-overview.md) | Integración de registro | [Integrar el servidor SIEM con Office 365 Cloud App Security](integrate-your-siem-server-with-office-365-cas.md) |
-| [Protección contra amenazas avanzada de Windows Defender](https://docs.microsoft.com/windows/security/threat-protection/) | Integración de registro | [Alertas de extracción a sus herramientas SIEM](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-siem-windows-defender-advanced-threat-protection) |
-| [Centro de seguridad de Azure](https://docs.microsoft.com/azure/security-center/security-center-intro) (Protección contra amenazas y detección de amenazas) | Alertas | [Exportación de datos de Azure seguridad a la vista previa SIEM: configuración de canalización:](https://docs.microsoft.com/azure/security-center/security-center-export-data-to-siem) |
-| [Protección de identidad de Azure Active Directory](https://docs.microsoft.com/azure/active-directory/identity-protection/overview) | Registros de auditoría | [Integrar los registros de auditoría de Azure Active Directory](https://docs.microsoft.com/azure/security/security-azure-log-integration-ad) |
-| [Análisis de amenazas avanzadas Azure](https://docs.microsoft.com/azure/security/azure-threat-detection) | Integración de registro | [Referencia de registro SIEM ATA](https://docs.microsoft.com/advanced-threat-analytics/cef-format-sa) |
+| [Protección contra amenazas avanzada de Office 365](office-365-atp.md) <br/>   o   <br/>[Inteligencia sobre amenazas de Office 365](office-365-ti.md) | Registros de auditoría | [Integración de SIEM con Office 365 Threat Intelligence y protección contra amenazas avanzada](siem-integration-with-office-365-ti.md) |
+| [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) | Integración de registros | [Integración de SIEM con Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/siem) |
+| [Office 365 Cloud App Security](office-365-cas-overview.md) | Integración de registros | [Integrar el servidor SIEM con Office 365 Cloud App Security](integrate-your-siem-server-with-office-365-cas.md) |
+| [Protección contra amenazas avanzada de Windows Defender](https://docs.microsoft.com/windows/security/threat-protection/) | Integración de registros | [Extraer alertas a las herramientas de SIEM](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-siem-windows-defender-advanced-threat-protection) |
+| [Centro de seguridad de Azure](https://docs.microsoft.com/azure/security-center/security-center-intro) (Protección contra amenazas y detección de amenazas) | Alertas | [Exportación de datos de seguridad de Azure a SIEM-configuración de canalización-vista previa](https://docs.microsoft.com/azure/security-center/security-center-export-data-to-siem) |
+| [Protección de identidad de Azure Active Directory](https://docs.microsoft.com/azure/active-directory/identity-protection/overview) | Registros de auditoría | [Integración de los registros de auditoría de Azure Active Directory](https://docs.microsoft.com/azure/security/security-azure-log-integration-ad) |
+| [Análisis de amenazas avanzadas de Azure](https://docs.microsoft.com/azure/security/azure-threat-detection) | Integración de registros | [Referencia de registro SIEM de ATA](https://docs.microsoft.com/advanced-threat-analytics/cef-format-sa) |
 
-## <a name="audit-logging-must-be-turned-on"></a>Debe estar activado el registro de auditoría
+## <a name="audit-logging-must-be-turned-on"></a>El registro de auditoría debe estar activado
 
-Asegúrese de que está activado el registro de auditoría antes de configurar la integración del servidor de SIEM. 
+Asegúrese de que el registro de auditoría esté activado antes de configurar la integración del servidor SIEM. 
 
-- Para SharePoint Online, OneDrive para profesionales y Azure Active Directory, [el registro de auditoría está activado en el centro de cumplimiento de seguridad &](https://docs.microsoft.com/office365/securitycompliance/turn-audit-log-search-on-or-off).
+- En SharePoint Online, OneDrive para la empresa y Azure Active Directory, [el registro de auditoría está activado en el centro de seguridad _AMP_ cumplimiento](https://docs.microsoft.com/office365/securitycompliance/turn-audit-log-search-on-or-off).
 
-- Para Exchange Online, [se activa el registro de auditoría con Windows PowerShell](https://docs.microsoft.com/office365/securitycompliance/enable-mailbox-auditing).
+- Para Exchange Online, el [registro de auditoría está activado con Windows PowerShell](https://docs.microsoft.com/office365/securitycompliance/enable-mailbox-auditing).
  
 ## <a name="see-also"></a>Vea también
 

@@ -6,7 +6,7 @@ manager: laurawi
 ms.audience: Admin
 ms.date: 02/08/2019
 ms.topic: overview
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6e13311e-92ae-495e-a619-56d770199170
 description: La característica datos adJuntos seguros proporciona comprobación del tiempo de los datos adjuntos de correo electrónico. Usar datos adJuntos seguros para proteger a su organización de archivos malintencionados envíe o reciba mensajes de correo electrónico.
-ms.openlocfilehash: f8cdfe8027804eaa06784502f72110173f8fa61f
-ms.sourcegitcommit: 32cb896aef370764ec6e8f8278ebaf16f1c5ff37
+ms.openlocfilehash: 9e0a53acb55e4fcb81c071f3decaccde3b45c96a
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30123911"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215190"
 ---
 # <a name="office-365-atp-safe-attachments"></a>Datos adJuntos seguros de ATP de Office 365
 

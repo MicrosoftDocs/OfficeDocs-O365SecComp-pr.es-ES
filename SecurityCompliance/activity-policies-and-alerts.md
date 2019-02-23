@@ -6,75 +6,73 @@ manager: laurawi
 ms.date: 01/28/2019
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 367f25d3-10a0-4a91-bdae-70ebb7a79c98
-description: Definir directivas de actividad con Office 365 la seguridad de la aplicación de nube para configurar alertas para desencadenar cuando actividades específicas suceden o sucedería con demasiada frecuencia. Mediante la configuración de directivas para activar las alertas, puede recibir una notificación sobre y supervisar las actividades específicas.
-ms.openlocfilehash: af364e7ff96f6d18b60d3267c5992d4c5533ea8c
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+description: Definir directivas de actividad con Office 365 Cloud App Security para configurar las alertas que se desencadenen cuando se produzcan actividades específicas o se produzcan con demasiada frecuencia. Mediante la configuración de directivas para desencadenar alertas, puede recibir notificaciones sobre actividades específicas y supervisarlas.
+ms.openlocfilehash: cfa58182ea35551ca3a3807c23e09c9f87c7be82
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29604097"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219770"
 ---
 # <a name="activity-policies-and-alerts-in-office-365-cloud-app-security"></a>Directivas de actividad y alertas en Office 365 Cloud App Security
 
-Administración avanzada de seguridad de Office 365 es ahora de seguridad de la aplicación de nube de Office 365.
-  
-|Evaluación **\>**|Planeación de **\>**|Implementación **\>**|Utilización de ***|
+|Evaluación * *\>**|Planeación * *\>**|Implementación * *\>**|Uso * * * *|
 |:-----|:-----|:-----|:-----|
-|[Empezar a evaluar](office-365-cas-overview.md) <br/> |[Comenzar a planear](get-ready-for-office-365-cas.md) <br/> |¡Están aquí!  <br/> [Paso siguiente](anomaly-detection-policies-in-ocas.md) <br/> |[Iniciar utilizando](utilization-activities-for-ocas.md) <br/> |
+|[Empezar a evaluar](office-365-cas-overview.md) <br/> |[Empezar a planear](get-ready-for-office-365-cas.md) <br/> |Ya está aquí.  <br/> [Siguiente paso](anomaly-detection-policies-in-ocas.md) <br/> |[Empezar a usar](utilization-activities-for-ocas.md) <br/> |
    
-Con la seguridad de la aplicación de nube de Office 365, las directivas de administración de la nube avanzada activan las alertas para las actividades específicas que suceden o sucedería con demasiada frecuencia. Por ejemplo, supongamos que un usuario intenta iniciar sesión en Office 365 y se produce un error 70 veces en un minuto. Suponga que otro usuario descarga los archivos de 7.000 o parece que se conectan desde Canadá, cuando ese usuario debe para estar en otra ubicación. O bien, lo que es peor, suponga que se ha puesto en peligro la cuenta de otra persona, y un atacante usa esa cuenta para obtener acceso a aplicaciones de nube de su organización y los datos confidenciales.
+Con Office 365 Cloud App Security, las directivas de administración de nube avanzadas activan alertas para actividades específicas que ocurren o se producen con demasiada frecuencia. Por ejemplo, supongamos que un usuario intenta iniciar sesión en Office 365 y produce un error 70 veces en un minuto. SuPongamos que otro usuario descarga archivos de 7.000, o que parece que ha iniciado sesión en Canadá, cuando se supone que el usuario está en otra ubicación. O peor, supongamos que la cuenta de un usuario está en peligro y que un atacante está usando esa cuenta para acceder a las aplicaciones en la nube y a los datos confidenciales de la organización.
   
-Si es un [administrador global o administrador de seguridad](permissions-in-the-security-and-compliance-center.md), las alertas de actividad notificación cuando eventos como éstas se produce. A continuación, puede realizar acciones específicas, como la suspensión de una cuenta de usuario hasta que puede investigar qué ha ocurrido.
+Si es [administrador global o administrador de seguridad](permissions-in-the-security-and-compliance-center.md), las alertas de actividad le notificarán cuando se produzcan eventos como estos. A continuación, puede realizar acciones específicas, como suspender una cuenta de usuario hasta que pueda investigar qué ha sucedido.
   
 > [!NOTE]
-> Son diferentes de las directivas de seguridad de la aplicación en la nube de Office 365 [las directivas de la seguridad de Office 365 de la alerta &amp; centro de cumplimiento](alert-policies.md). La actividad de las directivas que se describen en este artículo se definen en el portal de seguridad de la aplicación de nube de Office 365 y pueden ayudarle a una mejor administración de entorno de nube de su organización. 
+> Las directivas de seguridad de aplicación de nube de Office 365 son distintas de [las directivas &amp; de alerta del centro de seguridad y cumplimiento de Office 365](alert-policies.md). Las directivas de actividad descritas en este artículo se definen en el portal de seguridad de aplicaciones en la nube de Office 365 y pueden ayudarle a administrar mejor el entorno de nube de su organización. 
   
 ## <a name="before-you-begin"></a>Antes de empezar
 
 Asegúrese de que:
   
-- Su organización tiene la [Seguridad de la aplicación de Office 365 en la nube](office-365-cas-overview.md)y el servicio está [activado](turn-on-office-365-cas.md).
+- Su organización tiene [Office 365 Cloud App Security](office-365-cas-overview.md)y el servicio está [activado](turn-on-office-365-cas.md).
     
-- [Registro de auditoría](turn-audit-log-search-on-or-off.md) está activado para el entorno de Office 365. 
+- El [registro de auditoría](turn-audit-log-search-on-or-off.md) está activado para su entorno de Office 365. 
     
-- Es un administrador global o administrador de seguridad para Office 365.
+- Es administrador global o administrador de seguridad de Office 365.
     
-## <a name="create-a-new-activity-policy"></a>Crear una nueva directiva de actividad
+## <a name="create-a-new-activity-policy"></a>Crear una nueva Directiva de actividad
 
-1. Como administrador global o administrador de seguridad, vaya al portal de seguridad de la aplicación en la nube ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)) e iniciar sesión. <br>Esto le llevará a la página de directivas de seguridad de aplicaciones de Office 365 en la nube.<br>![Cuando vaya al portal de seguridad de la aplicación de nube de Office 365, empezar con la página de directivas](media/5cb8833c-4e08-438c-bab3-91b5106f6f3f.png)
+1. Como administrador global o administrador de seguridad, vaya al portal de Cloud App Security ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)) e inicie sesión. <br>Esto le llevará a la página de directivas de seguridad de aplicación de Office 365 Cloud.<br>![Cuando vaya al portal de seguridad de la aplicación de nube de Office 365, empezará con la página de directivas.](media/5cb8833c-4e08-438c-bab3-91b5106f6f3f.png)
   
-2. Haga clic en **Crear directiva**y, a continuación, seleccione **Directiva de actividad**.<br>![Cuando se crea una directiva en O365 CAS, puede elegir entre las directivas de la actividad y detección de anomalías.](media/79f34535-ddf9-4a5b-a0a3-8766bf9c174c.png)
+2. Haga clic en **crear Directiva**y, a continuación, seleccione **Directiva de actividad**.<br>![Al crear una directiva en las entidades de certificación de O365, puede elegir entre directivas de actividad y directivas de detección de anomalías.](media/79f34535-ddf9-4a5b-a0a3-8766bf9c174c.png)
   
-3. En la página **Crear directiva de actividad** , especifique el **nombre de la directiva** y la **Descripción**. Para basar la directiva en una plantilla predeterminada, elija uno en la lista **plantilla de directiva** o crear su propia directiva sin utilizar una plantilla.<br>![Puede crear directivas de actividad con seguridad de la aplicación de nube de Office 365.](media/4083a76f-7074-4d6a-8200-6d76d49259d7.png)
+3. En la página **crear Directiva de actividad** , especifique el nombre y la **Descripción**de la **Directiva** . Para basar la Directiva en una plantilla predeterminada, elija una en la lista **plantilla de directiva** o cree su propia Directiva sin usar una plantilla.<br>![Puede crear directivas de actividad con Office 365 Cloud App Security.](media/4083a76f-7074-4d6a-8200-6d76d49259d7.png)
   
-4. Elija una **gravedad de directiva** (bajo, medio o alto) que mide el grado de gravedad es para usted si esta directiva desencadena una alerta. Esto le ayudará a filtrar alertas cuando está revisarlos más adelante. 
+4. Elija una **gravedad de directiva** (baja, media o alta) que mida lo seria que es si esta directiva desencadena una alerta. Esto le ayudará a filtrar las alertas cuando las esté revisando más adelante. 
     
-5. Elija una **categoría** para esta directiva. Esto le ayudará a filtrar y ordenar las alertas que se han desencadenado, o a las directivas de grupo cuando está revisando ellos para realizar cambios. 
+5. Elija una **categoría** para esta Directiva. Esto le ayudará a filtrar y ordenar las alertas que se han desencadenado o a las directivas de grupo cuando las esté revisando para realizar cambios. 
     
-6. Elija **filtros de actividad** para configurar otras acciones o métricas que se activarán una alerta en función de esta directiva. 
+6. Elija **filtros de actividad** para configurar otras acciones o métricas que desencadenarán una alerta basada en esta Directiva. 
     
-7. En la **actividad coinciden con los parámetros**, especifique si una infracción de la directiva se desencadenará cuando una sola actividad coincide con los filtros, o si es necesario un número especificado de actividades repetidas antes de la alertas desencadenadores.<br>Si selecciona **repetida actividad**, especifique el número de actividades, el plazo de tiempo, y si una infracción contarán para un usuario dentro de una aplicación específica o para el mismo usuario con cualquier aplicación.
+7. En **parámetros de coincidencia de actividad**, especifique si una infracción de Directiva se desencadenará cuando una sola actividad coincida con los filtros o si se requiere un número determinado de actividades repetidas antes de la activación de la alerta.<br>Si selecciona la **actividad repetida**, especifique el número de actividades, el intervalo de tiempo y si la infracción se contará para un usuario dentro de una aplicación específica o para el mismo usuario con cualquier aplicación.
     
-8. De forma opcional, puede seleccionar **crear alerta** para crear alertas adicionales para que reciba notificaciones de esta directiva (a través de correo electrónico, mensaje de texto o ambos).<br>**Asegúrese de que su proveedor de correo electrónico no bloquea los correos electrónicos enviados desde `no-reply@cloudappsecurity.com` **. 
+8. Opcionalmente, puede seleccionar **crear alerta** para crear alertas adicionales para recibir notificaciones de esta Directiva (por correo electrónico, mensaje de texto o ambos).<br>Asegúrate de **que tu proveedor de correo electrónico no bloquee `no-reply@cloudappsecurity.com`los correos electrónicos enviados desde **. 
   
-9. Elija las **acciones** que deben tomarse cuando se desencadena una alerta para suspender el usuario o requieren que el usuario iniciar sesión de nuevo a las aplicaciones de Office 365. 
+9. Elija las **acciones** que se deben realizar cuando se desencadene una alerta para suspender al usuario o pedir al usuario que inicie sesión de nuevo en las aplicaciones de Office 365. 
     
-10. Elija **crear** para terminar de crear la directiva. 
+10. Elija **crear** para finalizar la creación de la Directiva. 
     
 ## <a name="next-steps"></a>Pasos siguientes
 
 - [Directivas de detección de anomalías](anomaly-detection-policies-in-ocas.md)
     
-- [Integrar su servidor SIEM](integrate-your-siem-server-with-office-365-cas.md)
+- [Integración del servidor de SIEM](integrate-your-siem-server-with-office-365-cas.md)
     
 - [Revisar y realizar acciones en las alertas](review-office-365-cas-alerts.md)
     
-- [Las direcciones IP para simplificar la administración de grupo](group-your-ip-addresses-in-ocas.md)
+- [Agrupar las direcciones IP para simplificar la administración](group-your-ip-addresses-in-ocas.md)
     
 

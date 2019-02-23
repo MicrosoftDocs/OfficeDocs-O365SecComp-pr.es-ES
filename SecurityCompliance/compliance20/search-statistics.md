@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,57 +14,53 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 0cfc1e5f04887cbdbcc0be8854fc50d6f9b5f1f2
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: 98999d3d82efaace7673d70b0334cb0efb80fc08
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29706011"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30215210"
 ---
 # <a name="search-statistics"></a>Estadísticas de búsqueda
 
-Una forma puede validar los resultados de búsqueda es consultar las estadísticas alrededor de los resultados para asegurarse de que se alinean con sus expectativas. Cuando se completa una búsqueda, se muestran las estadísticas de alto nivel en la barra flotante detalles de búsqueda:
-- Número y volumen de elementos recuperados por la búsqueda
-- Número y volumen de parcialmente indizan o no indexados los elementos que se han encontrado en las ubicaciones de búsqueda
-- Busca en el número de buzones de correo y ubicaciones. Para ver estadísticas más detalladas, haga clic en "Estadísticas" del elemento de detalles de la búsqueda.
+Una forma de validar los resultados de la búsqueda es ver las estadísticas de los resultados para asegurarse de que se ajustan a sus expectativas. Una vez finalizada la búsqueda, se muestran las estadísticas de alto nivel en el control flotante de detalles de búsqueda:
+- Número y volumen de los elementos recuperados por la búsqueda
+- Número y volumen de elementos parcialmente indizados o sin indexar que se encontraron en las ubicaciones de búsqueda
+- Número de buzones y ubicaciones que se han buscado. Para ver estadísticas más detalladas, haga clic en "estadísticas" en el control flotante de detalles de búsqueda.
 
 ## <a name="summary"></a>Resumen
 
-En la vista de resumen, puede ver los resultados de búsqueda desglosados por tipo de ubicación (por ejemplo, Exchange). Para cada tipo de ubicación, vea:
-- Número de ubicaciones que tenían los elementos que coincidan con las condiciones de búsqueda
-- Número de elementos desde estas ubicaciones que coincidieron con las condiciones de búsqueda
-- Volumen total de los elementos que coincidan con las condiciones de búsqueda.
+En la vista de Resumen, puede ver los resultados de la búsqueda desglosados por tipo de ubicación (por ejemplo, Exchange). Para cada tipo de ubicación, puede ver:
+- Número de ubicaciones que tenían elementos que coincidían con las condiciones de búsqueda
+- Número de elementos de estas ubicaciones que coinciden con las condiciones de búsqueda
+- Volumen total de elementos que coinciden con las condiciones de búsqueda.
 
-## <a name="top-locations"></a>Ubicaciones principales
+## <a name="top-locations"></a>Principales ubicaciones
 
-En la vista de ubicaciones principales, verá las ubicaciones individuales con más coincidencias. Para cada ubicación, verá:
+En la vista de ubicaciones superiores, verá las ubicaciones individuales con más coincidencias. Para cada ubicación, verá:
 - Nombre de la ubicación (por ejemplo, dirección URL de SharePoint)
 - Tipo de ubicación
 - Número de elementos que coinciden con las condiciones de búsqueda
-- Volumen total de los elementos que coincidan con las condiciones de búsqueda.
+- Volumen total de elementos que coinciden con las condiciones de búsqueda.
 
-## <a name="queries"></a>Consultas
+## <a name="queries"></a>Peticiones
 
-Si ha usado la palabra clave (c:s) o las filas de la palabra clave en su consulta, a continuación, puede ver el desglose de la consulta en la vista de consultas por tipo de ubicación. Para cada tipo de ubicación, verá:
+Si ha usado (c:s) palabra clave o filas de palabra clave en la consulta, puede ver el desglose de la consulta en la vista consultas por tipo de ubicación. Para cada tipo de ubicación, verá:
 
-- Parte: esta columna tendrá la palabra "Principal" o "Palabras clave". "Principal" significa que la fila presenta estadísticas de la consulta completa, mientras que "la palabra clave" significa uno de los componentes de consulta.
+- Parte: esta columna tendrá la palabra "principal" o "palabra clave". "Principal" significa que la fila presenta estadísticas sobre toda la consulta, mientras que "palabra clave" se refiere a uno de los componentes de consulta.
 
-- Consulta: el componente de consulta real la fila hace referencia a. Si el elemento es "Principal", se trata de toda la consulta; Si el elemento era "Palabras clave", verá uno de los componentes de consulta aquí.
+- Consulta: el componente de consulta real al que hace referencia la fila. Si la parte es "principal", será toda la consulta; Si la parte es "keyword", verá uno de los componentes de consulta aquí.
   
-  - Al buscar en todos los buzones de contenidoedición (si no se especifica ninguna palabra clave), la consulta real es (tamaño > = 0) para que se devuelvan todos los elementos
+  - Cuando busca en todo el contenido de los buzones de correo (sin especificar ninguna palabra clave), la consulta real es (Size > = 0) para que se devuelvan todos los elementos.
   
-  - Al buscar SharePoint Online y OneDrive para sitios de negocio, se agregan los siguientes dos componentes:
+  - Al buscar sitios de SharePoint Online y OneDrive para la empresa, se agregan los dos componentes siguientes:
     
-    - NO IsExternalContent:1 - excluye cualquier contenido de una organización de SharePoint local
+    - NO IsExternalContent: 1-excluye el contenido de una organización de SharePoint local
     
-    - NO isOneNotePage: 1 - excluye todos los archivos de OneNote debido a que estos sería duplicados de cualquier documento que coincide con la consulta de búsqueda.
+    - NO isOneNotePage: 1: excluye todos los archivos de OneNote porque serían duplicados de cualquier documento que coincida con la consulta de búsqueda.
 
-- Número de ubicaciones que tenían los elementos que coincidan con las condiciones de búsqueda.
+- Número de ubicaciones que tenían elementos que coincidían con las condiciones de búsqueda.
 
-- Número de elementos desde estas ubicaciones que coincidieron con las condiciones de búsqueda.
+- Número de elementos de estas ubicaciones que coinciden con las condiciones de búsqueda.
 
-- Volumen total de los elementos que coincidan con las condiciones de búsqueda.
-
-## <a name="refiners"></a>Refinadores
-
-Para los buzones de Exchange, la vista refinadores ofrece adicionales interrupciones por ItemClass, el remitente y el destinatario. Para cada valor de ubicación y refinador, puede ver cuántos documentos se han devuelto en la búsqueda.
+- Volumen total de elementos que coinciden con las condiciones de búsqueda.

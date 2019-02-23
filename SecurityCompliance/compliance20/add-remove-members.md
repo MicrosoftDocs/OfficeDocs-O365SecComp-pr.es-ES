@@ -1,12 +1,12 @@
 ---
-title: Agregar o quitar a miembros de un caso
+title: Agregar o quitar miembros de un caso
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,13 +14,29 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: d50cd6cc66f5745852f415533b9aaf2047a91317
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 32e71dc73df1e9abc709a2a1106fcf1b96a354b2
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29608354"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217820"
 ---
-# <a name="add-or-remove-members-from-a-case"></a>Agregar o quitar a miembros de un caso
+# <a name="add-or-remove-members-from-a-case"></a>Agregar o quitar miembros de un caso
 
-Contenido disponible próximamente.
+Puede Agregar o quitar miembros para administrar quién puede tener acceso al caso. Tenga en cuenta que los usuarios que se agregan a los grupos de roles revisor o eDiscovery Manager pueden agregarse como miembros del caso. Tenga en cuenta que el administrador de eDiscovery que ha creado el caso se agrega automáticamente como miembro.
+
+1. En la página exhibición avanzada de documentos electrónicos **(vista previa)** , vaya a su caso.
+
+2. Vaya a **configuración** y seleccione "permisos de _AMP_ de acceso".
+ 
+3. Haga clic en **Actualizar**.
+ 
+4. En **administrar miembros**, haga clic en agregar icono Agregar para agregar miembros al caso. También puede optar por agregar un grupo de funciones al caso. En **administrar grupos de roles**, haga clic en agregar icono Agregar.  Tenga en cuenta que los grupos de roles controlan el permiso de acceso al caso. Esto significa que solo puede asignar revisor, administrador de exhibición de documentos electrónicos o grupos de roles personalizados con el rol de administración de casos.
+ 
+5. En la lista de personas o grupos de roles que se pueden agregar como miembros del caso, haga clic en la casilla situada junto a los nombres de los grupos de personas o roles que desea agregar.
+
+6. Una vez que haya seleccionado los grupos de personas o roles que desea agregar como miembros del grupo, haga clic en **Agregar**.
+
+7. En **administrar este caso**, haga clic en **Guardar** para guardar la nueva lista de miembros de mayúsculas y minúsculas.
+
+8. Haga clic en **Guardar** para guardar la nueva lista de miembros de caso.

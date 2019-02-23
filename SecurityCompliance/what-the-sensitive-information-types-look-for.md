@@ -9,21 +9,21 @@ search.appverid: MET150
 ms.topic: reference
 f1_keywords:
 - ms.o365.cc.UnifiedDLPRuleContainsSensitiveInformation
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 ms.assetid: fd505979-76be-4d9f-b459-abef3fc9e86b
-description: Prevención de pérdida de datos (DLP) en la seguridad de Office 365 &amp; centro de cumplimiento incluye los tipos de información confidencial 80 que están listos para su uso en las directivas de DLP. En este tema se enumera todos estos tipos de información confidencial y muestra lo que busca una directiva de DLP cuando detecta cada tipo.
-ms.openlocfilehash: 4b083f80e02c80053b63ee897b2515a4505c16d9
-ms.sourcegitcommit: 8c5a88433cff23c59b436260808cf3d91b06fdef
+description: La prevención de pérdida de datos (DLP) en el &amp; centro de seguridad y cumplimiento de Office 365 incluye 80 tipos de información confidencial listos para que pueda usarlos en las directivas de DLP. En este tema se enumeran todos estos tipos de información confidencial y se muestra el aspecto de una directiva DLP cuando detecta cada tipo.
+ms.openlocfilehash: 17fb0b8d745168f8000fba9e6fc42f3c255a1937
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "27194741"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30216360"
 ---
 # <a name="what-the-sensitive-information-types-look-for"></a>Qué buscan los tipos de información confidencial
 
-Prevención de pérdida de datos (DLP) en la seguridad de Office 365 &amp; centro de cumplimiento incluye muchos tipos de información confidencial que están listos para su uso en las directivas de DLP. En este tema se enumera todos estos tipos de información confidencial y muestra lo que busca una directiva de DLP cuando detecta cada tipo. Un tipo de información confidencial se define mediante un patrón que puede identificarse mediante una expresión regular o una función. Además, como las palabras clave y sumas de comprobación de prueba puede utilizarse para identificar un tipo de información confidencial. Proximidad y nivel de confianza también se usan en el proceso de evaluación.
+La prevención de pérdida de datos (DLP) en el &amp; centro de seguridad y cumplimiento de Office 365 incluye muchos tipos de información confidencial listos para que pueda usarlos en las directivas de DLP. En este tema se enumeran todos estos tipos de información confidencial y se muestra el aspecto de una directiva DLP cuando detecta cada tipo. Un patrón que puede identificarse mediante una expresión regular o una función define un tipo de información confidencial. Además, las evidencias confirmativas, como las palabras clave y las sumas de comprobación, se pueden usar para identificar un tipo de información confidencial. El nivel de confianza y la proximidad también se usan en el proceso de evaluación.
   
 ## <a name="aba-routing-number"></a>Número de enrutamiento ABA
 
@@ -35,12 +35,12 @@ Prevención de pérdida de datos (DLP) en la seguridad de Office 365 &amp; centr
 
 Con formato:
 - Cuatro dígitos a partir de 0, 1, 2, 3, 6, 7 u 8
-- Un guion
+- Un guión 
 - Cuatro dígitos
-- Un guion
+- Un guión
 - Un dígito
 
-Sin formato: dígitos consecutivos 9 a partir de 0, 1, 2, 3, 6, 7 o 8 
+Sin formato: 9 dígitos consecutivos que comienzan por 0, 1, 2, 3, 6, 7 u 8 
 
 ### <a name="checksum"></a>Suma de comprobación
 
@@ -112,9 +112,9 @@ Ocho dígitos separados por puntos
 Ocho dígitos:
 - Dos dígitos
 - Un punto 
-- Tres dígitos
+- Tres dígitos 
 - Un punto 
-- Tres dígitos
+- Tres dígitos 
 
 ### <a name="checksum"></a>Suma de comprobación
 
@@ -146,7 +146,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - Tarjeta de identidad nacional de identificación 
 - DNI
  
-- Registro nacional de NIC de personas 
+- Registro Nacional de NIC de personas 
 - Documento Nacional de Identidad
  
 - Registro nacional de las personas
@@ -164,9 +164,9 @@ De 6 a 10 dígitos con o sin número de sucursal bancaria de estado
 
 ### <a name="pattern"></a>Patrón
 
-Número de cuenta es 10 de 6 dígitos. Número de sucursal de estado de banco de Australia:
+El número de cuenta es de 6-10 dígitos. Número de sucursal estatal del Banco de Australia:
 - Tres dígitos 
-- Un guión  
+- Un guion 
 - Tres dígitos
 
 ### <a name="checksum"></a>Suma de comprobación
@@ -289,7 +289,7 @@ australian automobile association
 international driving permit
 - DriverLicence
 - DriverLicences
-- Lic de controlador
+- Lic del conductor
 - Driver Licence
 
 - Driver Licences
@@ -297,24 +297,24 @@ international driving permit
 - DriversLic
 - DriversLicence
 - DriversLicences
-- Lic de controladores
-- LIC de controladores
-- Licencia de controladores
-- Licencias de controladores
-- Driver'Lic
-- Driver'Lics
-- Driver'Licence
-- Driver'Licences
-- Controlador ' Lic
-- Controlador ' LIC
-- Controlador ' licencia
-- Controlador ' certificados
+- Lic de los drivers
+- Controladores conducción
+- Licencia de conductores
+- Licencias de conductores
+- N.º carné
+- N.º carnés
+- N.º carné
+- N.º carnés
+- Lic del controlador
+- Controlador de conducción
+- Permiso de conducción
+- Licencias de conducir
 - Driver'sLic
 - Driver'sLics
 - Driver'sLicence
 - Driver'sLicences
-- Lic del controlador
-- LIC del controlador
+- Lic del conductor
+- Conducción del conductor
 - Driver's Licence
 
 - Driver's Licences
@@ -327,16 +327,16 @@ international driving permit
 - 
 Driver Lics#
 
-- Controlador certificado #
-- Controlador certificados #
+- N.º de permiso de conducir
+- N.º de licencias de conducir
 - DriversLic #
 - DriversLics #
 - DriversLicence #
 - DriversLicences #
-- Controladores Lic #
-- Controladores LIC #
-- Licencia de controladores #
-- Controladores certificados #
+- N.º de Lic de los conductores
+- Controladores conducción #
+- N.º de permiso de conducción
+- N.º de licencias de conductores
 - Driver'Lic#
 
 - Driver'Lics#
@@ -349,8 +349,8 @@ Driver Lics#
 
 - Driver' Lics#
 
-- Controlador ' certificado #
-- Controlador ' certificados #
+- N.º de permiso de conducir
+- N.º de licencias de conducir
 - Driver'sLic #
 - Driver'sLics #
 - Driver'sLicence #
@@ -359,8 +359,8 @@ Driver Lics#
 
 - Driver's Lics#
 
-- Certificado # del controlador
-- El certificado # del controlador 
+- Número de permiso de conducción
+- N.º de licencias de conducir 
 
 #### <a name="keywordaustraliadriverslicensenumberexclusions"></a>Keyword_australia_drivers_license_number_exclusions
 
@@ -369,26 +369,26 @@ Driver Lics#
 - DriverLicenses
 - Licencia de controlador
 - Licencias de controlador
-- PermisoDeConducción
+- DriversLicense
 - DriversLicenses
 - Licencia de controladores
 - Licencias de controladores
-- Driver'License
-- Driver'Licenses
-- Controlador ' licencia
-- Controlador ' licencias
+- Conducción
+- Conducción
+- Licencia del controlador
+- Licencias de controlador
 - Driver'sLicense
 - Driver'sLicenses
-- De conducir permiso
-- Permisos de conducir
+- Permiso de conducción
+- Licencias de conducir
 - DriverLicense #
 - DriverLicenses #
-- Controlador licencia #
-- Controlador licencias #
-- PermisoDeConducción #
+- N.º de permiso de conducir
+- N.º de licencias de conducir
+- DriversLicense #
 - DriversLicenses #
-- Licencia de controladores #
-- Licencias de controladores #
+- N.º de permiso de conducción
+- N.º de licencias de impulsores
 - Driver'License#
 
 - Driver'Licenses#
@@ -493,7 +493,7 @@ No
 
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La expresión regular Regex_australia_passport_number encuentra contenido que coincide con el patrón.
-- Se ha encontrado una palabra clave de Keyword_passport o Keyword_australia_passport_number.
+- Se encuentra una palabra clave de Keyword_passport o Keyword_australia_passport_number.
 
 ```
 <!-- Australia Passport Number -->
@@ -564,7 +564,7 @@ department of immigration and citizenship
 
 - 
 national identity card
-- número de cuenta de Passport
+- número de pasaporte
 - 
 travel document
 - 
@@ -636,7 +636,7 @@ tax file number
 
 - 00000000
 - 11111111
-- por 22222222
+- 22222222
 - 33333333
 - 44444444
 - 55555555
@@ -677,7 +677,7 @@ tax file number
 - Seis dígitos y dos puntos con el formato AA.MM.DD para la fecha de nacimiento  
 - Un guión  
 - Tres dígitos secuenciales (impares para hombres, pares para mujeres)  
-- Un punto  
+- Un punto 
 - Dos dígitos que son un dígito de comprobación
 
 ### <a name="checksum"></a>Suma de comprobación
@@ -745,12 +745,12 @@ identité
 ### <a name="pattern"></a>Patrón
 
 Con formato:
-- Tres dígitos 
+- Tres dígitos  
+- Un punto  
+- Tres dígitos  
 - Un punto  
 - Tres dígitos 
-- Un punto  
-- Tres dígitos 
-- Un guión  
+- Un guion 
 - Dos dígitos que son dígitos de control
 
 Sin formato:
@@ -813,8 +813,8 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 ### <a name="pattern"></a>Patrón
 14 dígitos más delimitadores:
 - Dos dígitos 
-- Un punto  
-- Tres dígitos 
+- Un punto 
+- Tres dígitos  
 - Un punto  
 - Tres dígitos (estos ocho primeros dígitos son el número de registro)  
 - Una barra diagonal  
@@ -895,7 +895,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="format"></a>Formato
 
-Registro Geral (formato anterior): nueve dígitos
+Registro geral (formato anterior): nueve dígitos
 
 Registro de Identidade (RIC) (nuevo formato): 11 dígitos
 
@@ -903,9 +903,9 @@ Registro de Identidade (RIC) (nuevo formato): 11 dígitos
 
 Registro de Geral (formato antiguo):
 - Dos dígitos 
-- Un punto  
-- Tres dígitos 
-- Un punto  
+- Un punto 
+- Tres dígitos  
+- Un punto 
 - Tres dígitos 
 - Un guión  
 - Un dígito que es un dígito de control
@@ -947,7 +947,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 #### <a name="keywordbrazilrg"></a>Keyword_brazil_rg
 
-Cédula de identidade tarjeta de identidad nacional identificador número de rregistro registro de Iidentidade registro geral RG (esta palabra clave distingue mayúsculas de minúsculas) RIC (esta palabra clave distingue mayúsculas de minúsculas) 
+Cédula de Identidade identidad nacional identificador número de rregistro registro de Iidentidade registro Geral RG (esta palabra clave distingue entre mayúsculas y minúsculas) RIC (esta palabra clave distingue entre mayúsculas y minúsculas) 
    
 ## <a name="canada-bank-account-number"></a>Número de cuenta bancaria de Canadá
 
@@ -1139,8 +1139,8 @@ El nombre de la provincia, por ejemplo, Alberta
 - DriverLicenses
 - DriverLicence
 - DriverLicences
-- Lic de controlador
-- LIC de controlador
+- Lic del conductor
+- Controlador conducción
 - Licencia de controlador
 - Licencias de controlador
 - Driver Licence
@@ -1151,43 +1151,43 @@ El nombre de la provincia, por ejemplo, Alberta
 - DriversLics
 - DriversLicence
 - DriversLicences
-- PermisoDeConducción
+- DriversLicense
 - DriversLicenses
-- Lic de controladores
-- LIC de controladores
+- Lic de los drivers
+- Controladores conducción
 - Licencia de controladores
 - Licencias de controladores
-- Licencia de controladores
-- Licencias de controladores
-- Driver'Lic
-- Driver'Lics
-- Driver'License
-- Driver'Licenses
-- Driver'Licence
-- Driver'Licences
-- Controlador ' Lic
-- Controlador ' LIC
-- Controlador ' licencia
-- Controlador ' licencias
-- Controlador ' licencia
-- Controlador ' certificados
+- Licencia de conductores
+- Licencias de conductores
+- N.º carné
+- N.º carnés
+- Conducción
+- Conducción
+- N.º carné
+- N.º carnés
+- Lic del controlador
+- Controlador de conducción
+- Licencia del controlador
+- Licencias de controlador
+- Permiso de conducción
+- Licencias de conducir
 - Driver'sLic
 - Driver'sLics
 - Driver'sLicense
 - Driver'sLicenses
 - Driver'sLicence
 - Driver'sLicences
-- Lic del controlador
-- LIC del controlador
-- De conducir permiso
-- Permisos de conducir
+- Lic del conductor
+- Conducción del conductor
+- Permiso de conducción
+- Licencias de conducir
 - Driver's Licence
 
 - Driver's Licences
 
-- Permis de Conduire
+- Perm de conduire
 - id
-- identificadores de
+- falta
 - 
 idcard number
 - 
@@ -1196,9 +1196,9 @@ idcard numbers
 idcard #
 - 
 idcard #s
-- tarjeta de idcard
-- tarjetas de idcard
-- idcard
+- tarjeta tarjeta
+- tarjetas tarjeta
+- tarjeta
 - identification number
 
 - identification numbers
@@ -1230,22 +1230,22 @@ DLS#
 - 
 Driver Lics#
  
-- Controlador licencia # 
-- Controlador licencias # 
-- Controlador licencia # 
-- Controlador certificados # 
+- N.º de permiso de conducir 
+- N.º de licencias de conducir 
+- N.º de permiso de conducir 
+- N.º de licencias de conducir 
 - DriversLic # 
 - DriversLics # 
-- PermisoDeConducción # 
+- DriversLicense # 
 - DriversLicenses # 
 - DriversLicence # 
 - DriversLicences # 
-- Controladores Lic # 
-- Controladores LIC # 
-- Licencia de controladores # 
-- Licencias de controladores # 
-- Licencia de controladores # 
-- Controladores certificados # 
+- N.º de Lic de los conductores 
+- Controladores conducción # 
+- N.º de permiso de conducción 
+- N.º de licencias de impulsores 
+- N.º de permiso de conducción 
+- N.º de licencias de conductores 
 - Driver'Lic#
  
 - Driver'Lics#
@@ -1266,8 +1266,8 @@ Driver Lics#
  
 - Driver' Licenses#
  
-- Controlador ' certificado # 
-- Controlador ' certificados # 
+- N.º de permiso de conducir 
+- N.º de licencias de conducir 
 - Driver'sLic # 
 - Driver'sLics # 
 - Driver'sLicense # 
@@ -1282,11 +1282,11 @@ Driver Lics#
  
 - Driver's Licenses#
  
-- Certificado # del controlador 
-- El certificado # del controlador 
-- Permis de Conduire # 
-- identificador de # 
-- los identificadores de # 
+- Número de permiso de conducción 
+- N.º de licencias de conducir 
+- Perm de conduire # 
+- identificador 
+- falta 
 - idcard card#
  
 - idcard cards#
@@ -1339,7 +1339,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - personal health number
 - 
 patient information
-- Servicios de mantenimiento
+- servicios de mantenimiento
 - 
 speciality services
 - 
@@ -1371,7 +1371,7 @@ No
 
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La expresión regular Regex_canada_passport_number encuentra contenido que coincide con el patrón.
-- Se ha encontrado una palabra clave de Keyword_canada_passport_number o Keyword_passport.
+- Se encuentra una palabra clave de Keyword_canada_passport_number o Keyword_passport.
 
 ``` 
 <!-- Canada Passport Number -->
@@ -1458,7 +1458,7 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva de DLP está seguro de que ha detectado este tipo de información confidencial al 75% if, dentro de una proximidad de 300 caracteres: la expresión regular Regex_canada_phin busca contenido que coincide con el patrón. Al menos dos palabras clave de Keyword_canada_phin o Keyword_canada_provinces se encuentran..
+Una directiva DLP está 75% segura de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres: la expresión regular Regex_canada_phin encuentra contenido que coincide con el patrón. Se encuentran al menos dos palabras clave de Keyword_canada_phin o Keyword_canada_provinces..
 
 ```
 <!-- Canada PHIN -->
@@ -1551,7 +1551,7 @@ Con formato:
 - Un guión o un espacio  
 - Tres dígitos
 
-Sin formato: Nueve dígitos
+Sin formato: nueve dígitos
 
 ### <a name="checksum"></a>Suma de comprobación
 
@@ -1594,15 +1594,15 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 #### <a name="keywordsin"></a>Keyword_sin
 
-- seno 
+- PIN 
 - social insurance
  
 - numero d'assurance sociale
  
 - sins
  
-- ssn 
-- números de seguridad social 
+- SSN 
+- SSN 
 - seguridad social 
 - numero d'assurance social
  
@@ -1620,7 +1620,7 @@ national id
 
 - permiso de conducción 
 - permiso de conducir 
-- permiso de conducir 
+- permiso de conducción 
 - drivers licence 
 - DOB
  
@@ -1633,7 +1633,7 @@ national id
 
 ### <a name="format"></a>Formato
 
-7-8 dígitos y delimitadores un dígito de control o una letra
+7-8 dígitos más delimitadores, un dígito de control o una letra
 
 ### <a name="pattern"></a>Patrón
 
@@ -1641,7 +1641,7 @@ national id
 - 1 o 2 dígitos  
 - Un punto  
 - Tres dígitos 
-- Un punto  
+- Un punto 
 - Tres dígitos 
 - Un guión  
 - Un dígito o letra (no distingue entre mayúsculas y minúsculas) que es un dígito de control
@@ -1685,7 +1685,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - Identificación 
 - Rol Único Nacional
  
-- EJECUTAR 
+- REALIZAR 
 - Rol Único Tributario
  
 - RUT
@@ -1747,8 +1747,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 - Tarjeta de identidad de residente
  
-- República Popular China
- 
+- China 
 - Tarjeta de identificación nacional
  
 - 身份证  
@@ -1766,7 +1765,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="format"></a>Formato
 
-16 dígitos que se pueden dar formato o sin formato (dddddddddddddddd) y debe pasar la prueba Luhn.
+16 dígitos que pueden ser formateados o sin formato (dddddddddddddddd) y deben pasar la prueba Luhn.
 
 ### <a name="pattern"></a>Patrón
 
@@ -1817,8 +1816,8 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 
 - cid
 
-- CVC2 obtenidos
-- cvv2
+- CVC2
+- CVV2
 - pin block
 
 - security code
@@ -1845,7 +1844,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 
 - prufziffer
 
-- sicherheits Kode
+- Sicherheits Kode
 - sicherheitscode
 
 - sicherheitsnummer
@@ -1856,7 +1855,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 
 - cod. sicurezza
 
-- COD sicurezza
+- c.o.d. sicurezza
 - 
 n autorizzazione
 - código
@@ -1865,7 +1864,7 @@ n autorizzazione
 
 - cod. seg
 
-- COD seg
+- seg de bacalao
 - código de segurança
 
 - codigo de seguranca
@@ -1876,12 +1875,12 @@ n autorizzazione
 
 - cód. segurança
 
-- Cod. seguranca cod. segurança
+- COD. DQO SEGURANCA. segurança
 - cód. seguranca
 
-- campo Cód. segurança
-- bacalao seguranca cod segurança
-- campo Cód. seguranca
+- Cód segurança
+- Bacalao SEGURANCA contra reembolso de segurança
+- Cód SEGURANCA
 - número de verificação
 
 - numero de verificacao
@@ -1933,7 +1932,7 @@ n autorizzazione
 american express
 - americanexpress
 
-- Visa
+- Régimen
 - mastercard
 
 - master card
@@ -1944,7 +1943,7 @@ mc
 - mastercards
 - 
 master cards
-- Club del comensal
+- Club de comensal
 - diners club
 
 - dinersclub
@@ -1964,8 +1963,8 @@ master cards
 
 - credit card
 
-- CC #
-- cc #:
+- CC
+- # CC:
 - 
 expiration date
 - exp date
@@ -2073,16 +2072,16 @@ kartennr
 - kartennummer
 - 
 kreditkartennummer
-- kreditkarten nummer
+- Kreditkarten-Nummer
 - carta di credito
 
 - carta credito
 
-- carta
+- cobro
 - carta n
 - nr. carta
 
-- carta n
+- Carta de NR
 - numero carta
 
 - numero della carta
@@ -2113,7 +2112,7 @@ tarjeta de débito
 
 - no. de tarjeta
 
-- No hay tarjeta de
+- sin tarjeta de
 - numero de tarjeta
 
 - número de tarjeta
@@ -2157,13 +2156,13 @@ numero do cartao
 
 - numero de cartao
 
-- Nº cartão
+- n º do cartão
 - nº do cartao
 
 - nº. do cartão
 
-- No hay cartão
-- No hay cartao
+- no cartão
+- no hacer carta
 - no. do cartão
 
 - 
@@ -2180,13 +2179,13 @@ Nueve dígitos
 
 Nueve dígitos consecutivos
 
-### <a name="checksum"></a>Suma de comprobación
+### <a name="checksum"></a>Checksum
 
 No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP está 75 % segura de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_croatia_id_card encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_croatia_id_card.
 
@@ -2218,7 +2217,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 11 dígitos:
 - 10 dígitos 
-- Dígito final es un dígito de verificación para los fines de intercambio de datos internacional, las letras recursos humanos se agregan anterior a los once dígitos.
+- El dígito final es un dígito de control para el intercambio internacional de datos, se agregan las letras h antes de los once dígitos.
 
 ### <a name="checksum"></a>Suma de comprobación
 
@@ -2259,15 +2258,15 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
  
 
    
-## <a name="czech-personal-identity-number"></a>Número de identidad Personal checo
+## <a name="czech-personal-identity-number"></a>Número de identidad personal en Checo
 
 ### <a name="format"></a>Formato
 
-Nueve dígitos con opcional barra diagonal (formato anterior) 10 dígitos con opcional barra diagonal (nuevo formato)
+Nueve dígitos con barra diagonal (formato antiguo) 10 dígitos con barra diagonal (nuevo formato) opcional
 
 ### <a name="pattern"></a>Patrón
 
-Nueve dígitos (formato anterior):
+Nueve dígitos (formato antiguo):
 - Nueve dígitos
 
 O bien
@@ -2276,14 +2275,14 @@ O bien
 - Una barra diagonal 
 - Tres dígitos
 
-(nuevo formato) de 10 dígitos:
+10 dígitos (nuevo formato):
 - 10 dígitos
 
 O BIEN
 
 - Seis dígitos que representan la fecha de nacimiento
 - Una barra diagonal  
-- Donde el último dígito es un dígito de verificación de cuatro dígitos
+- Cuatro dígitos donde el último dígito es un dígito de control
 
 ### <a name="checksum"></a>Suma de comprobación
 
@@ -2291,7 +2290,7 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva de DLP es 85% seguro de que ha detectado este tipo de información confidencial if, dentro de una proximidad de 300 caracteres: la función Func_czech_id_card busca contenido que coincide con el patrón. Se ha encontrado una palabra clave de Keyword_czech_id_card. Pasa la suma de comprobación.
+Una directiva DLP está 85% segura de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres: la función Func_czech_id_card encuentra contenido que coincide con el patrón. Se encuentra una palabra clave de Keyword_czech_id_card. La suma de comprobación se supera.
 
 ```
 <!-- Czech Personal Identity Number -->
@@ -2304,7 +2303,7 @@ Una directiva de DLP es 85% seguro de que ha detectado este tipo de información
 ```
 ### <a name="keywords"></a>Palabras clave
 
-- número de identidad personal checo
+- número de identidad personal en Checo
 - Rodné číslo
    
 ## <a name="denmark-personal-identification-number"></a>Número de identificación personal de Dinamarca
@@ -2326,7 +2325,7 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva de DLP está seguro de que ha detectado este tipo de información confidencial al 75% if, dentro de una proximidad de 300 caracteres: la expresión regular Regex_denmark_id busca contenido que coincide con el patrón. Se ha encontrado una palabra clave de Keyword_denmark_id. Pasa la suma de comprobación.
+Una directiva DLP está 75% segura de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres: la expresión regular Regex_denmark_id encuentra contenido que coincide con el patrón. Se encuentra una palabra clave de Keyword_denmark_id. La suma de comprobación se supera.
 
 ```
 <!-- Denmark Personal Identification Number -->
@@ -2437,7 +2436,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
  
 - security number
  
-- CC # 
+- CC 
 
 #### <a name="keywordcardtermsdict"></a>Keyword_card_terms_dict
 
@@ -2580,7 +2579,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
  
 - dinersclub
  
-- descubrir 
+- advierte 
 - discover card
  
 - discover cards
@@ -2632,7 +2631,7 @@ kartennr
 - kartennummer 
 - kreditkarte
  
-- kreditkarten nummer 
+- Kreditkarten-Nummer 
 - kreditkarteninhaber
  
 - kreditkarteninstitut
@@ -2650,21 +2649,21 @@ kartennr
 - mastercard
  
 - mastercards 
-- MC 
+- valuación 
 - mister cash
  
 - carta n 
-- carta 
-- No hay tarjeta de 
-- No hay cartao 
-- No hay cartão 
+- cobro 
+- sin tarjeta de 
+- no hacer carta 
+- no cartão 
 - no. de tarjeta
  
 - no. do cartao
  
 - no. do cartão
  
-- carta n 
+- Carta de NR 
 - nr. carta
  
 - numeri di scheda
@@ -2701,7 +2700,7 @@ kartennr
  
 - nº do cartao
  
-- Nº cartão 
+- n º do cartão 
 - nº. do cartão
  
 - número de cartao
@@ -2767,7 +2766,7 @@ kartennr
  
 - v pay
  
-- v-pago 
+- v-Pay 
 - visa
  
 - visa plus
@@ -2789,10 +2788,10 @@ kartennr
  
 - cid
  
-- COD seg 
-- COD seguranca 
-- COD segurança 
-- COD sicurezza 
+- seg de bacalao 
+- c.o.d. SEGURANCA 
+- c.o.d. segurança 
+- c.o.d. sicurezza 
 - cod. seg
  
 - cod. seguranca
@@ -2820,14 +2819,14 @@ kartennr
 - CV2 
 - cvc
  
-- CVC2 obtenidos 
+- CVC2 
 - cvn
  
 - cvv
  
-- cvv2 
-- campo Cód. seguranca 
-- campo Cód. segurança 
+- CVV2 
+- Cód SEGURANCA 
+- Cód segurança 
 - cód. seguranca
  
 - cód. segurança
@@ -2994,25 +2993,25 @@ kartennr
 - válido hasta
  
    
-## <a name="eu-drivers-license-number"></a>Número de licencia del controlador de la UE
+## <a name="eu-drivers-license-number"></a>Número de permiso de conducción de la UE
 
-Para obtener más información, vea el [tipo de información confidencial del número de licencia del controlador de la UE](eu-driver-s-license-number.md).
+Para obtener más información, vea [tipo de información confidencial del número de licencia del conductor de la UE](eu-driver-s-license-number.md).
   
-## <a name="eu-national-identification-number"></a>Número de identificación de la UE nacional
+## <a name="eu-national-identification-number"></a>Número de identificación nacional de la UE
 
-Para obtener más información, vea el [tipo de información confidencial del número de identificación nacional de la UE](eu-national-identification-number.md).
+Para obtener más información, consulte el [tipo de información confidencial de número de identificación nacional de la UE](eu-national-identification-number.md).
   
-## <a name="eu-passport-number"></a>Número de cuenta de Passport de la UE
+## <a name="eu-passport-number"></a>Número de pasaporte de la UE
 
-Para obtener más información, vea el [tipo de información confidencial del número de cuenta de Passport de la UE](eu-passport-number.md).
+Para obtener más información, consulte [EU Number Sensitive Information Type](eu-passport-number.md).
   
-## <a name="eu-social-security-number-or-equivalent-id"></a>Identificador de número de seguridad Social de la UE o equivalente
+## <a name="eu-social-security-number-or-equivalent-id"></a>Número de la seguridad social de la UE o identificador equivalente
 
-Para obtener más información, vea el [número de seguridad Social de la UE o tipo de información confidencial de identificador equivalente](eu-social-security-number-or-equivalent-id.md).
+Para obtener más información, consulte el [número de la seguridad social de la UE o el tipo de información confidencial del identificador equivalente](eu-social-security-number-or-equivalent-id.md).
   
 ## <a name="eu-tax-identification-number"></a>Número de identificación fiscal de la UE
 
-Para obtener más información, vea el [tipo de información confidencial del número de identificación de impuestos de la UE](eu-tax-identification-number.md).
+Para obtener más información, vea [tipo de información confidencial de número de identificación de impuestos de la UE](eu-tax-identification-number.md).
   
 ## <a name="finland-national-id"></a>Identificación nacional de Finlandia
 
@@ -3061,9 +3060,9 @@ Sosiaaliturvatunnus
    
 ## <a name="finland-passport-number"></a>Número de pasaporte de Finlandia
 
-Formato de combinación de nueve letras y dígitos combinación de patrón de nueve letras y dígitos: directiva de dos letras (no entre mayúsculas y minúsculas) siete dígitos DLP de una definición de suma de comprobación No está seguro de que ha detectado este tipo de información confidencial si al 75%, comprendido en un proximidad de 300 caracteres: la expresión regular Regex_finland_passport_number busca contenido que coincide con el patrón. Se ha encontrado una palabra clave de Keyword_finland_passport_number. <!-- Finland Passport Number --> 
- <Entity id="d1685ac3-1d3a-40f8-8198-32ef5669c7a5" recommendedConfidence="75" patternsProximity="300"> <Pattern confidenceLevel="75"> <IdMatch idRef="Regex_finland_passport_number"/> <Match idRef="Keyword_finland_passport_number"/> </Pattern> 
- </Entity> Erta pasiva de Passport de Keyword_finland_passport_number palabras clave
+Combinación de formato de nueve letras y dígitos de la combinación de los patrones de nueve letras y dígitos: dos letras (no distingue entre mayúsculas y minúsculas) siete dígitos de suma de comprobación no Definition una directiva DLP está 75% segura de que se detecta este tipo de información confidencial si, en un proximidad de 300 caracteres: la expresión regular Regex_finland_passport_number encuentra contenido que coincide con el patrón. Se encuentra una palabra clave de Keyword_finland_passport_number. Palabras clave <!-- Finland Passport Number --> 
+ <Entity id="d1685ac3-1d3a-40f8-8198-32ef5669c7a5" recommendedConfidence="75" patternsProximity="300"> 
+ de Passport <Pattern confidenceLevel="75"> <IdMatch idRef="Regex_finland_passport_number"/> <Match idRef="Keyword_finland_passport_number"/> </Pattern> </Entity>
    
 ## <a name="france-drivers-license-number"></a>Número de licencia de conductor de Francia
 
@@ -3075,7 +3074,7 @@ Formato de combinación de nueve letras y dígitos combinación de patrón de nu
 
 12 dígitos con validación para descontar patrones similares como los números de teléfono franceses
 
-### <a name="checksum"></a>Suma de comprobación
+### <a name="checksum"></a>Checksum
 
 No
 
@@ -3108,7 +3107,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - permiso de conducir
 - driving licence
 
-- licencia fuerzas
+- licencia de conducir
 - 
 permis de conduire
 - 
@@ -3166,7 +3165,7 @@ Nueve dígitos y letras:
 - Dos letras (no distingue entre mayúsculas y minúsculas)  
 - Cinco dígitos
 
-### <a name="checksum"></a>Suma de comprobación
+### <a name="checksum"></a>Checksum
 
 No
 
@@ -3289,12 +3288,12 @@ national id
 national identification
 - 
 numéro d'identité
-- sin FEC ' identité
+- sin d'identité
 - 
 no. d'identité
 - 
 numero d'identite
-- No hay d'identite
+- sin d'identite
 - 
 no. d'identite
 - social security number
@@ -3327,7 +3326,7 @@ Combinación de 11 dígitos y letras
 ### <a name="pattern"></a>Patrón
 
 11 dígitos y letras (no distingue entre mayúsculas y minúsculas):
-- Un dígito o letra 
+- Un dígito o una letra  
 - Dos dígitos 
 - Seis dígitos o letras 
 - Un dígito 
@@ -3441,17 +3440,17 @@ Driv Licenses
  
 - Driver Licences
  
-- Lic de controladores 
-- Controladores Licen 
+- Lic de los drivers 
+- Controladores licen 
 - Licencia de controladores 
 - Licencias de controladores 
-- Licencia de controladores 
-- Licencias de controladores 
-- Lic del controlador 
+- Licencia de conductores 
+- Licencias de conductores 
+- Lic del conductor 
 - Driver's Licen
  
-- De conducir permiso 
-- Permisos de conducir 
+- Permiso de conducción 
+- Licencias de conducir 
 - Driver's Licence
  
 - Driver's Licences
@@ -3600,7 +3599,7 @@ ausstellungsort
 
 #### <a name="keywordgermanpassportnumber"></a>Keyword_german_passport_number
 
-No-Reisepass n-Reisepass
+No-Reisepass NR-Reisepass
 
 #### <a name="keywordgermanpassport1"></a>Keyword_german_passport1
 
@@ -3609,7 +3608,7 @@ Reisepass-Nr
 
 #### <a name="keywordgermanpassport2"></a>Keyword_german_passport2
 
-bnationalit.t
+bnationalit. t
    
 ## <a name="germany-identity-card-number"></a>Número de documento de identidad de Alemania
 
@@ -3617,7 +3616,7 @@ bnationalit.t
 
 Desde el 1 de noviembre de 2010: nueve letras y dígitos
 
-Desde el 1 de abril de 1987 hasta 31 dígitos de 2010:10 de octubre
+Desde el 1 de abril de 1987 hasta el 31 de octubre de 2010:10 dígitos
 
 ### <a name="pattern"></a>Patrón
 
@@ -3628,7 +3627,7 @@ Desde el 1 de noviembre de 2010:
 Desde el 1 de abril de 1987 hasta el 31 de octubre de 2010:
 - 10 dígitos
 
-### <a name="checksum"></a>Suma de comprobación
+### <a name="checksum"></a>Checksum
 
 No
 
@@ -3678,13 +3677,13 @@ Ocho letras y números (nuevo formato):
 - Un guión  
 - Seis dígitos
 
-### <a name="checksum"></a>Suma de comprobación
+### <a name="checksum"></a>Checksum
 
 No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP está 75 % segura de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular Regex_greece_id_card encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_greece_id_card.
 
@@ -3726,7 +3725,7 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP está 75 % segura de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La función Func_hong_kong_id_card encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_hong_kong_id_card.
 - Se supera la suma de comprobación.
@@ -3752,12 +3751,12 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 
 #### <a name="keywordhongkongidcard"></a>Keyword_hong_kong_id_card
 
-- tarjeta de identidad de Hong kong
+- tarjeta de identidad de Hong Kong
 - HKIDC
-- tarjeta de Id.
+- tarjeta de identificación
 - documento de identidad
 - tarjeta de identidad HK
-- identificador de Hong kong
+- ID de Hong Kong
 - 香港身份證
 
 - 香港永久性居民身份證
@@ -3846,9 +3845,9 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 ### <a name="pattern"></a>Patrón
 
 12 dígitos:
-- Cuatro dígitos 
+- Cuatro dígitos  
 - Un guión o un espacio opcional  
-- Cuatro dígitos 
+- Cuatro dígitos  
 - Un guión o un espacio opcional  
 - El dígito final que es el dígito de control
 
@@ -3858,7 +3857,7 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva de DLP es 85% seguro de que ha detectado este tipo de información confidencial if, dentro de una proximidad de 300 caracteres: la función Func_india_aadhaar busca contenido que coincide con el patrón. Se ha encontrado una palabra clave de Keyword_india_aadhar. Pasa la suma de comprobación. Una directiva de DLP está seguro de que ha detectado este tipo de información confidencial al 75% if, dentro de una proximidad de 300 caracteres: la función Func_india_aadhaar busca contenido que coincide con el patrón. Pasa la suma de comprobación. <!-- India Unique Identification (Aadhaar) number -->
+Una directiva DLP está 85% segura de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres: la función Func_india_aadhaar encuentra contenido que coincide con el patrón. Se encuentra una palabra clave de Keyword_india_aadhar. La suma de comprobación se supera. Una directiva DLP está 75% segura de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres: la función Func_india_aadhaar encuentra contenido que coincide con el patrón. La suma de comprobación se supera. <!-- India Unique Identification (Aadhaar) number -->
 <Entity id="1ca46b29-76f5-4f46-9383-cfa15e91048f" recommendedConfidence="85" patternsProximity="300"> <Pattern confidenceLevel="85"> <IdMatch idRef="Func_india_aadhaar"/> <Match idRef="Keyword_india_aadhar"/> </Pattern> <Pattern confidenceLevel="75"> <IdMatch idRef="Func_india_aadhaar"/> </Pattern>
 </Entity>
 
@@ -3979,7 +3978,7 @@ Patrón complejo que representa las versiones con formato (con puntos) y sin for
 
 ### <a name="pattern"></a>Patrón
 
-### <a name="checksum"></a>Suma de comprobación
+### <a name="checksum"></a>Checksum
 
 No
 
@@ -3995,7 +3994,7 @@ Para IPv4, una directiva DLP está segura al 95% de que este tipo de informació
 
 Para IPv6, una directiva DLP está segura al 95% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La expresión regular Regex_ipv6_address encuentra contenido que coincide con el patrón.
-- No se encuentra ninguna palabra clave de Keyword_ipaddress.
+- No se encuentra una palabra clave de Keyword_ipaddress.
 
 ```
     <!-- IP Address -->
@@ -4034,7 +4033,7 @@ Para IPv6, una directiva DLP está segura al 95% de que este tipo de informació
 IP-כתובת ה
  
    
-## <a name="international-classification-of-diseases-icd-10-cm"></a>Clasificación internacional de enfermedades (ICD-10-CM)
+## <a name="international-classification-of-diseases-icd-10-cm"></a>Clasificación Internacional de enfermedades (ICD-10-CM)
 
 ### <a name="format"></a>Formato
 
@@ -4042,16 +4041,16 @@ Diccionario
 
 ### <a name="pattern"></a>Patrón
 
-Palabra clave
+Palabraclave
 
-### <a name="checksum"></a>Suma de comprobación
+### <a name="checksum"></a>Checksum
 
 No
 
 ### <a name="definition"></a>Definición
 
 Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
-- Se ha encontrado una palabra clave de Dictionary_icd_10_cm.
+- Se encuentra una palabra clave de Dictionary_icd_10_cm.
 
 ```
       <!-- ICD-10 CM -->
@@ -4064,10 +4063,10 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 
 Palabras clave
 
-Cualquiera de los términos del diccionario de palabra clave Dictionary_icd_10_cm, que se basa en la [clasificación internacional de enfermedades, revisión décima, modificación ensayos (ICD-10-CM)](https://go.microsoft.com/fwlink/?linkid=852604). Este tipo sólo busca el término, no los códigos de seguro.
+Cualquier término del Diccionario de palabras clave de Dictionary_icd_10_cm, que se basa en la [clasificación internacional de enfermedades, décima revisión, modificación clínica (ICD-10-cm)](https://go.microsoft.com/fwlink/?linkid=852604). Este tipo solo busca el término, no los códigos de seguro.
 
    
-## <a name="international-classification-of-diseases-icd-9-cm"></a>Clasificación internacional de enfermedades (ICD-9-CM)
+## <a name="international-classification-of-diseases-icd-9-cm"></a>Clasificación Internacional de enfermedades (ICD-9-CM)
 
 ### <a name="format"></a>Formato
 
@@ -4075,16 +4074,16 @@ Diccionario
 
 ### <a name="pattern"></a>Patrón
 
-Palabra clave
+Palabraclave
 
-### <a name="checksum"></a>Suma de comprobación
+### <a name="checksum"></a>Checksum
 
 No
 
 ### <a name="definition"></a>Definición
 
 Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
-- Se ha encontrado una palabra clave de Dictionary_icd_9_cm.
+- Se encuentra una palabra clave de Dictionary_icd_9_cm.
 
 ```
       <Entity id="fa3f9c74-ee07-4c52-b5f2-085d6b2c0ec4" patternsProximity="300" recommendedConfidence="85">
@@ -4096,7 +4095,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-Cualquiera de los términos del diccionario de palabra clave Dictionary_icd_9_cm, que se basa en la [clasificación internacional de enfermedades, revisión del noveno, modificación ensayos (ICD-9-CM)](https://go.microsoft.com/fwlink/?linkid=852605). Este tipo sólo busca el término, no los códigos de seguro.
+Cualquier término del Diccionario de palabras clave de Dictionary_icd_9_cm, que se basa en la [clasificación internacional de enfermedades, novena revisión, modificación clínica (ICD-9-cm)](https://go.microsoft.com/fwlink/?linkid=852605). Este tipo solo busca el término, no los códigos de seguro.
    
 ## <a name="ireland-personal-public-service-pps-number"></a>Número de servicio público personal (PPS) de Irlanda
 
@@ -4166,7 +4165,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
  
 - N.ro PPS
  
-- PPS # 
+- PPS 
 - NPPS
  
 - Tarjeta de servicios públicos
@@ -4188,7 +4187,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 
 Con formato:
 - Dos dígitos 
-- Guion 
+- Un guión  
 - Tres dígitos 
 - Guion 
 - Ocho dígitos
@@ -4196,7 +4195,7 @@ Con formato:
 Sin formato:
 - 	13 dígitos consecutivos
 
-### <a name="checksum"></a>Suma de comprobación
+### <a name="checksum"></a>Checksum
 
 No
 
@@ -4332,7 +4331,7 @@ Número de cuenta bancaria:
 - Un espacio o un guion (opcional) 
 - Tres dígitos
 
-Suma de comprobación
+Checksum
 
 No
 
@@ -4517,9 +4516,9 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 #### <a name="keywordjpdriverslicensenumber"></a>Keyword_jp_drivers_license_number
 
 - dl# 
-- DL # 
+- LISTAS 
 - dls# 
-- LISTAS DE DISTRIBUCIÓN # 
+- DISTRIBUCIÓN 
 - permiso de conducción 
 - permisos de conducción 
 - permiso de conducir 
@@ -4529,7 +4528,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - driving licence
  
 - lic# 
-- LIC # 
+- Lic 
 - lics# 
 - identificador de estado 
 - state identification
@@ -4706,7 +4705,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - 社会保険番号
  
 
-## <a name="japanese-residence-card-number"></a>Número de tarjeta de residencia en japonés
+## <a name="japanese-residence-card-number"></a>Número de tarjeta de residencia japonés
 
 ### <a name="format"></a>Formato
 
@@ -4726,8 +4725,8 @@ No
 ### <a name="definition"></a>Definición
 
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
-- La expresión regular Regex_jp_residence_card_number busca contenido que coincide con el patrón.
-- Se ha encontrado una palabra clave de Keyword_jp_residence_card_number.
+- La expresión regular Regex_jp_residence_card_number encuentra contenido que coincide con el patrón.
+- Se encuentra una palabra clave de Keyword_jp_residence_card_number.
 
 ```
 <!--Japan Residence Card Number-->
@@ -4744,8 +4743,8 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 #### <a name="keywordjpresidencecardnumber"></a>Keyword_jp_residence_card_number
 
 - Número de tarjeta de residencia
-- No de tarjetas de residencia
-- Número de la tarjeta de residencia
+- Nº de tarjeta de residencia
+- Número de tarjeta de residencia
 - 在留カード番号
    
 ## <a name="malaysia-id-card-number"></a>Número de la tarjeta de identificación de Malasia
@@ -4790,28 +4789,28 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 #### <a name="keywordmalaysiaidcardnumber"></a>Keyword_malaysia_id_card_number
 
 - tarjeta de aplicación digital
-- / c
-- / c no
-- IC
-- IC sin
-- tarjeta de Id.
+- i/c
+- i/c no
+- i
+- no IC
+- tarjeta de identificación
 - Tarjeta de identificación
 - documento de identidad
 - k/p
 - k/p no
-- kad akuan diri
-- kad aplikasi digital
-- kad pengenalan Malasia
-- KP
+- Kad akuan diri
+- Kad aplikasi digital
+- Kad pengenalan Malasia
+- PK
 - KP no
 - mykad
-- mykas
+- MYKAS
 - mykid
 - mypr
 - mytentera
 - tarjeta de identidad de Malasia
-- malasio tarjeta de identidad
-- nric
+- tarjeta de identidad malasio
+- NRIC
 - tarjeta de identificación personal
    
 ## <a name="netherlands-citizens-service-bsn-number"></a>Número de servicio del ciudadano (BSN) de Países Bajos
@@ -4879,7 +4878,7 @@ Tres letras, un espacio (opcional) y cuatro dígitos
 
 ### <a name="pattern"></a>Patrón
 
-Tres letras (no distinguir mayúsculas de minúsculas) un cuatro dígitos (opcional) espacio
+Tres letras (no distingue entre mayúsculas y minúsculas), un espacio (opcional) y cuatro dígitos
 
 ### <a name="checksum"></a>Suma de comprobación
 
@@ -4977,7 +4976,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 
 12 dígitos:
 - Cuatro dígitos 
-- Un guión  
+- Un guion 
 - Siete dígitos  
 - Un guión  
 - Un dígito
@@ -4988,7 +4987,7 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+Una directiva DLP está 75 % segura de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
 - La expresión regular Regex_philippines_unified_id encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_philippines_id.
 
@@ -5029,7 +5028,7 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva de DLP está seguro de que ha detectado este tipo de información confidencial al 75% if, dentro de una proximidad de 300 caracteres: la función Func_polish_national_id busca contenido que coincide con el patrón. Se ha encontrado una palabra clave de Keyword_polish_national_id_passport_number. Pasa la suma de comprobación.
+Una directiva DLP está 75% segura de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres: la función Func_polish_national_id encuentra contenido que coincide con el patrón. Se encuentra una palabra clave de Keyword_polish_national_id_passport_number. La suma de comprobación se supera.
 
 ```
 <!-- Poland Identity Card-->
@@ -5046,9 +5045,9 @@ Una directiva de DLP está seguro de que ha detectado este tipo de información 
 #### <a name="keywordpolishnationalidpassportnumber"></a>Keyword_polish_national_id_passport_number
 
 - Dowód osobisty
-- Número dowodu osobistego
-- Nazwa número dowodu osobistego
-- Nazwa nr dowodu osobistego
+- Numerar dowodu osobistego
+- Nazwa i número dowodu osobistego
+- Nazwa i NR dowodu osobistego
 - Nazwa i nr dowodu tożsamości
 
 - Dowód Tożsamości
@@ -5132,8 +5131,8 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 
 #### <a name="keywordpolishnationalidpassportnumber"></a>Keyword_polish_national_id_passport_number
 
-- Número paszportu
-- Paszportu nr.
+- Números paszportu
+- Nr. Paszportu
 - Paszport
 
    
@@ -5147,7 +5146,7 @@ Ocho dígitos
 
 Ocho dígitos
 
-### <a name="checksum"></a>Suma de comprobación
+### <a name="checksum"></a>Checksum
 
 No
 
@@ -5187,7 +5186,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 
 10 dígitos consecutivos
 
-### <a name="checksum"></a>Suma de comprobación
+### <a name="checksum"></a>Checksum
 
 No
 
@@ -5293,7 +5292,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 13 dígitos:
 - Seis dígitos en el formato DDMMAA que son la fecha de nacimiento  
-- Cuatro dígitos 
+- Cuatro dígitos  
 - Un indicador de ciudadanía de un solo dígito  
 - El dígito "8" o "9"  
 - Un dígito que es un dígito de suma de comprobación
@@ -5393,7 +5392,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="pattern"></a>Patrón
 
-12 de 11 dígitos:
+11-12 dígitos:
 - Dos dígitos 
 - Una barra diagonal (opcional) 
 - 7-8 dígitos 
@@ -5596,14 +5595,14 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - iso 9362
  
 - iso9362 
-- SWIFT\# 
+- rápido\# 
 - swiftcode
  
 - swiftnumber
  
 - swiftroutingnumber
  
-- código SWIFT 
+- Código SWIFT 
 - swift number #
  
 - swift routing number
@@ -5616,7 +5615,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - BIC\# 
 - bank identifier code
  
-- 標準化9362 
+- 標準化 9362 
 - 迅速＃
  
 - SWIFTコード
@@ -5633,7 +5632,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
  
 - Organisation internationale de normalisation 9362
  
-- rapide\# 
+- rápido\# 
 - code SWIFT
  
 - le numéro de swift
@@ -5716,18 +5715,18 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 
 ### <a name="format"></a>Formato
 
-- Número de pasaporte biométrica: nueve dígitos
-- Número de cuenta de passport no biométrica: nueve dígitos
+- Número de pasaporte biométrico: nueve dígitos
+- Número de pasaporte no biométrico: nueve dígitos
 
 ### <a name="pattern"></a>Patrón
-Número de cuenta de passport biométrica:
+Número de pasaporte biométrico:
 - El dígito "3"  
 - Ocho dígitos
 
-Número de cuenta de passport no biométrica:
+Número de pasaporte no biométrico:
 - Nueve dígitos
 
-### <a name="checksum"></a>Suma de comprobación
+### <a name="checksum"></a>Checksum
 
 No
 
@@ -5753,8 +5752,8 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 - Número de pasaporte ROC
  
-- Número de cuenta de Passport 
-- Cuenta de Passport no 
+- Número de pasaporte 
+- N.º de pasaporte 
 - N.ro pasaporte
  
 - Passport #
@@ -5777,7 +5776,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - Dos letras (no distingue entre mayúsculas y minúsculas)  
 - Ocho dígitos
 
-### <a name="checksum"></a>Suma de comprobación
+### <a name="checksum"></a>Checksum
 
 No
 
@@ -5803,14 +5802,13 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 - Certificado de residente
  
-- Cert residente 
+- Certificado residente 
 - Cert. residente
  
 - Tarjeta de identificación 
 - Certificado de residente extranjero
  
-- ARC
- 
+- ARCOS 
 - Certificado de residente en el área de Taiwán
  
 - TARC
@@ -5822,7 +5820,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - 台灣地區居留證
  
 
-## <a name="thai-population-identification-code"></a>Código de identificación de población tailandés
+## <a name="thai-population-identification-code"></a>Código de identificación de población tailandesa
 
 ### <a name="format"></a>Formato
 
@@ -5831,7 +5829,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 ### <a name="pattern"></a>Patrón
 
 13 dígitos:
-- Primer dígito no es 0 o 9 
+- El primer dígito no es 0 ni 9 
 - 12 dígitos
 
 ### <a name="checksum"></a>Suma de comprobación
@@ -5841,11 +5839,11 @@ Sí
 ### <a name="definition"></a>Definición
 
 Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
-- La función Func_Thai_Citizen_Id busca contenido que coincide con el patrón.
-- Se ha encontrado una palabra clave de Keyword_Thai_Citizen_Id.
+- La función Func_Thai_Citizen_Id encuentra contenido que coincide con el patrón.
+- Se encuentra una palabra clave de Keyword_Thai_Citizen_Id.
 
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
-- La función Func_Thai_Citizen_Id busca contenido que coincide con el patrón.
+- La función Func_Thai_Citizen_Id encuentra contenido que coincide con el patrón.
 
 ```
 <!-- Thai Citizen ID -->
@@ -5871,7 +5869,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - บัตรประชาชน
 - รหัสบัตรประชาชน
   
-## <a name="turkish-national-identification-number"></a>Número de identificación nacional turco
+## <a name="turkish-national-identification-number"></a>Número de identificación nacional de Turco
 
 ### <a name="format"></a>Formato
 
@@ -5888,11 +5886,11 @@ Sí
 ### <a name="definition"></a>Definición
 
 Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
-- La función Func_Turkish_National_Id busca contenido que coincide con el patrón.
-- Se ha encontrado una palabra clave de Keyword_Turkish_National_Id.
+- La función Func_Turkish_National_Id encuentra contenido que coincide con el patrón.
+- Se encuentra una palabra clave de Keyword_Turkish_National_Id.
 
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
-- La función Func_Turkish_National_Id busca contenido que coincide con el patrón.
+- La función Func_Turkish_National_Id encuentra contenido que coincide con el patrón.
 
 ```
 <!-- Turkish National Identity -->
@@ -5911,8 +5909,8 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 #### <a name="keywordturkishnationalid"></a>Keyword_Turkish_National_Id
 
-- TC Kimlik n
-- Numarası Kimlik TC
+- TC Kimlik no
+- TC Kimlik numarası
 - Vatandaşlık numarası
 - Vatandaşlık no
 
@@ -5964,7 +5962,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
  
 - motor cars
  
-- 125CC 
+- 125cc 
 - sidecar
  
 - tricycles
@@ -6104,7 +6102,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 - DG 
 - DOB
  
-- D.O.B 
+- D. O. B 
 - Fecha de nacimiento
  
 - Fecha de nacimiento
@@ -6114,15 +6112,15 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 
 ### <a name="format"></a>Formato
 
-los 7 caracteres o 9 separadas por espacios o guiones
+7 caracteres o 9 caracteres separados por espacios o guiones
 
 ### <a name="pattern"></a>Patrón
 
-Dos modelos posibles:
+Dos patrones posibles:
 
-- Dos letras (NINOs válidos utilizar sólo determinados caracteres en este prefijo, que valida este patrón; no mayúsculas de minúsculas)
+- Dos letras (los NINO válidos usan solo caracteres determinados en este prefijo, que valida este patrón; no distingue entre mayúsculas y minúsculas)
 - Seis dígitos
-- Puede ser 'A', 'B', 'C', o tenía ' (como el prefijo, sólo ciertos caracteres se permiten en el sufijo; no distingue mayúsculas de minúsculas)
+- ' A ', ' B ', ' C ' o ' T ' (como el prefijo, solo se permiten determinados caracteres en el sufijo; no distingue entre mayúsculas y minúsculas)
 
 O BIEN
 
@@ -6134,7 +6132,7 @@ O BIEN
 - Un espacio o un guion
 - Dos dígitos
 - Un espacio o un guion
-- Puede ser 'A', 'B', 'C', o tenía '
+- ' A ', ' B ', ' C ' o ' T '
 
 ### <a name="checksum"></a>Suma de comprobación
 
@@ -6404,7 +6402,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 - CDL 
 - CDLS 
 - ID 
-- Identificadores de 
+- Falta 
 - DL# 
 - 
 DLS#
@@ -6430,42 +6428,42 @@ IDs#
 - DriverLics 
 - DriverLicense 
 - DriverLicenses 
-- Lic de controlador 
-- LIC de controlador 
+- Lic del conductor 
+- Controlador conducción 
 - Licencia de controlador 
 - Licencias de controlador 
 - DriversLic 
 - DriversLics 
-- PermisoDeConducción 
+- DriversLicense 
 - DriversLicenses 
-- Lic de controladores 
-- LIC de controladores 
+- Lic de los drivers 
+- Controladores conducción 
 - Licencia de controladores 
 - Licencias de controladores 
-- Driver'Lic 
-- Driver'Lics 
-- Driver'License 
-- Driver'Licenses 
-- Controlador ' Lic 
-- Controlador ' LIC 
-- Controlador ' licencia 
-- Controlador ' licencias
+- N.º carné 
+- N.º carnés 
+- Conducción 
+- Conducción 
+- Lic del controlador 
+- Controlador de conducción 
+- Licencia del controlador 
+- Licencias de controlador
 - Driver'sLic 
 - Driver'sLics 
 - Driver'sLicense 
 - Driver'sLicenses 
-- Lic del controlador 
-- LIC del controlador 
-- De conducir permiso 
-- Permisos de conducir 
+- Lic del conductor 
+- Conducción del conductor 
+- Permiso de conducción 
+- Licencias de conducir 
 - identification number
  
 - identification numbers
  
 - identification #
  
-- tarjeta de Id. 
-- identificador de tarjetas 
+- tarjeta de identificación 
+- tarjetas de identificación 
 - tarjeta de identificación 
 - tarjetas de identificación 
 - DriverLic # 
@@ -6476,16 +6474,16 @@ IDs#
 - 
 Driver Lics#
  
-- Controlador licencia # 
-- Controlador licencias # 
+- N.º de permiso de conducir 
+- N.º de licencias de conducir 
 - DriversLic # 
 - DriversLics # 
-- PermisoDeConducción # 
+- DriversLicense # 
 - DriversLicenses # 
-- Controladores Lic # 
-- Controladores LIC # 
-- Licencia de controladores # 
-- Licencias de controladores # 
+- N.º de Lic de los conductores 
+- Controladores conducción # 
+- N.º de permiso de conducción 
+- N.º de licencias de impulsores 
 - Driver'Lic#
  
 - Driver'Lics#
@@ -6514,7 +6512,7 @@ Driver Lics#
  
 - Driver's Licenses#
  
-- tarjeta de identificación # 
+- número de tarjeta de identificación 
 - id cards#
  
 - identification card#
@@ -6610,7 +6608,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
  
 - itin
  
-- ssn 
+- SSN 
 - tin
  
 - seguridad social 
