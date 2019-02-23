@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: d4f6b457880a4c4029e331e5488ea31a61781765
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: 68931eb3c6c653677d4cc09e48b451df2b78d17e
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29706131"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214770"
 ---
-# <a name="themes"></a><span data-ttu-id="c194b-102">Temas</span><span class="sxs-lookup"><span data-stu-id="c194b-102">Themes</span></span>
+# <a name="themes"></a><span data-ttu-id="188fb-102">Temas</span><span class="sxs-lookup"><span data-stu-id="188fb-102">Themes</span></span>
 
-<span data-ttu-id="c194b-p101">Cuando alguien redacta un documento, no lo prefieran palabras aleatoriamente; intenta transmitir algunas ideas o los conceptos y las palabras se eligen según corresponda. Módulos de temas clústeres de documentos que se analizan los asuntos similar para que los revisores pueden ser más eficaces en iba a través de documentos.</span><span class="sxs-lookup"><span data-stu-id="c194b-p101">When someone composes a document, they do not choose words randomly; they are trying to convey some ideas or concepts, and the words are chosen accordingly. Themes modules clusters documents that discuss similar subject matters so that reviewers can be more efficient in going through documents.</span></span>
+<span data-ttu-id="188fb-p101">Cuando alguien redacta un documento, no elige palabras de forma aleatoria; están intentando transmitir ideas o conceptos, y las palabras se eligen en consecuencia. Módulos de temas agrupa los documentos que tratan temas similares para que los revisores puedan ser más eficientes para pasar por los documentos.</span><span class="sxs-lookup"><span data-stu-id="188fb-p101">When someone composes a document, they do not choose words randomly; they are trying to convey some ideas or concepts, and the words are chosen accordingly. Themes modules clusters documents that discuss similar subject matters so that reviewers can be more efficient in going through documents.</span></span>
 
-## <a name="how-does-themes-work"></a><span data-ttu-id="c194b-105">¿Cómo funciona temas?</span><span class="sxs-lookup"><span data-stu-id="c194b-105">How does Themes work?</span></span>
-<span data-ttu-id="c194b-p102">Los temas se analiza documentos con texto en un conjunto de trabajo para analizar por temas comunes que aparecen en los documentos. A continuación, se asigna los temas a los documentos en el que aparecen. También etiquetas cada uno con las palabras que se usa en los documentos que están representante del tema. Dado que puede ser un documento sobre más de una materia, en muchos casos un documento tiene los temas más de uno asignado a él. El tema que aparece de forma más destacada en un documento se designa como su tema dominante.</span><span class="sxs-lookup"><span data-stu-id="c194b-p102">Themes analyzes documents with text in a working set to parse out common themes that appear accross the documents. Then, it assigns those themes to the documents in which they appear. It also labels each with words used in the documents that are representative of the theme. Since a document can be about more than one subject matter, in many cases a document has more than one themes assigned to it. The theme that appears most prominently in a document is designated as its dominant theme.</span></span>
+## <a name="how-does-themes-work"></a><span data-ttu-id="188fb-105">¿Cómo funciona los temas?</span><span class="sxs-lookup"><span data-stu-id="188fb-105">How does Themes work?</span></span>
+<span data-ttu-id="188fb-p102">Los temas analizan los documentos con texto en un conjunto de trabajo para analizar los temas comunes que aparecen en los documentos. A continuación, asigna esos temas a los documentos en los que aparecen. También etiqueta cada con las palabras que se usan en los documentos representativos del tema. Dado que un documento puede estar sobre más de un asunto, en muchos casos, un documento tiene más de un tema asignado. El tema que aparece más visiblemente en un documento se designa como su tema dominante.</span><span class="sxs-lookup"><span data-stu-id="188fb-p102">Themes analyzes documents with text in a working set to parse out common themes that appear accross the documents. Then, it assigns those themes to the documents in which they appear. It also labels each with words used in the documents that are representative of the theme. Since a document can be about more than one subject matter, in many cases a document has more than one themes assigned to it. The theme that appears most prominently in a document is designated as its dominant theme.</span></span>
