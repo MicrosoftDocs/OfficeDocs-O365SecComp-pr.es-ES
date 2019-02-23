@@ -12,17 +12,15 @@ ms.collection:
 - GDPR
 ms.service: O365-seccomp
 localization_priority: Priority
-ms.custom: ''
-ms.assetid: ''
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo usar las directivas DLP para proteger datos personales en Office 365.
-ms.openlocfilehash: d1041d406025d573f44d0dc6b76ede77da6913ea
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 637992ac673cd59adebf22f6c039ed85c2184477
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220590"
+ms.locfileid: "30223449"
 ---
 # <a name="apply-protection-to-personal-data-in-office-365"></a>Aplicar protección a los datos personales de Office 365
 
