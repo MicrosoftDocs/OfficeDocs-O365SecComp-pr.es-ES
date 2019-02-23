@@ -6,39 +6,39 @@ manager: laurawi
 ms.date: 1/15/2019
 ms.audience: ITPro
 ms.topic: reference
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 862cbe93-4268-4ef9-ba79-277545ecf221
-description: Ver detalles técnicos acerca de cifrado en Office 365.
-ms.openlocfilehash: c11f152b18a15886fc8a5108e6df66dafe53a758
-ms.sourcegitcommit: 6bdba12c13c02f7d9a7297d3042933b100c4e481
+description: Vea los detalles técnicos sobre encyption en Office 365.
+ms.openlocfilehash: 77e12d0d4872d29e9cc33571b2cd5040d8d45677
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "29966194"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30213630"
 ---
 # <a name="technical-reference-details-about-encryption-in-office-365"></a>Información de referencia técnica sobre el cifrado en Office 365
 
-Consulte este artículo para obtener más información acerca de los certificados, las tecnologías y TLS conjuntos de cifrado utilizadas para el [cifrado en Office 365](encryption.md). En este artículo también proporciona detalles sobre desuso planeada.
+Consulte este artículo para obtener información sobre certificados, tecnologías y conjuntos de cifrado TLS usados para el [cifrado en Office 365](encryption.md). En este artículo también se proporcionan detalles sobre las despreciaciones planeadas.
   
-- Si está buscando información general, vea [cifrado en Office 365](encryption.md).
-- Si está buscando información de configuración, vea [Configurar el cifrado en Office 365 Enterprise](set-up-encryption.md).
-- Para obtener información acerca de los conjuntos de cifrado compatibles con versiones específicas de Windows, vea [Conjuntos de cifrado de TLS/SSL (Schannel SSP)](https://docs.microsoft.com/windows/desktop/SecAuthN/cipher-suites-in-schannel).
+- Si está buscando información general, vea cifrado [en Office 365](encryption.md).
+- Si está buscando información de configuración, consulte [configurar el cifrado en Office 365 Enterprise](set-up-encryption.md).
+- Para obtener información acerca de los conjuntos de cifrado compatibles con versiones específicas de Windows, consulte [conjuntos de cifrado en TLS/SSL (Schannel SSP)](https://docs.microsoft.com/windows/desktop/SecAuthN/cipher-suites-in-schannel).
     
 ## <a name="microsoft-office-365-certificate-ownership-and-management"></a>Propiedad y administración de certificados de Microsoft Office 365
 
 No es necesario comprar ni mantener certificados para Office 365 porque Microsoft usa sus propios certificados.
   
-## <a name="current-encryption-standards-and-planned-deprecations"></a>Los estándares de cifrado actual y el desuso planeado
+## <a name="current-encryption-standards-and-planned-deprecations"></a>Estándares de cifrado actuales y despreciaciones planeadas
 
-Para poder continuar proporcionar mejores en su clase cifrado para Office 365, Microsoft revisa con regularidad cifrado compatible con estándares. En ocasiones, es necesario dejar de utilizar los estándares antiguo como estén caducada y, por tanto, es menos segura. Este tema describe los conjuntos de cifrado compatibles actualmente y otros estándares así como detalles sobre desuso planeada. 
+Para seguir proporcionando el mejor cifrado de su clase para Office 365, Microsoft revisa regularmente los estándares de cifrado compatibles. A veces, es necesario dejar de usar los estándares anteriores, ya que se han quedado obsoletos y, por lo tanto, son menos seguros. En este tema se describen los conjuntos de cifrado admitidos actualmente y otros estándares, así como detalles sobre las despreciaciones planeadas. 
 
 ## <a name="fips-compliance-for-office-365"></a>Cumplimiento de FIPS para Office 365
-Todos los conjuntos de aplicaciones de cifrado compatibles con Office 365 usen algoritmos aceptables en FIPS 140-2. Office 365 hereda validaciones de FIPS de Windows (a través de Schannel). Para obtener información acerca de Schannel, vea [Conjuntos de cifrado de TLS/SSL (Schannel SSP)](https://docs.microsoft.com/windows/desktop/SecAuthN/cipher-suites-in-schannel).
+Todos los conjuntos de programas de cifrado compatibles con Office 365 usan algoritmos aceptables en FIPS 140-2. Office 365 hereda las validaciones FIPS de Windows (a través de Schannel). Para obtener información sobre Schannel, consulte [conjuntos de cifrado en TLS/SSL (Schannel SSP)](https://docs.microsoft.com/windows/desktop/SecAuthN/cipher-suites-in-schannel).
   
 ## <a name="versions-of-tls-supported-by-office-365"></a>Versiones de TLS admitidas por Office 365
 
@@ -50,26 +50,26 @@ TLS (Seguridad de la capa de transporte) y SSL (antecesor de TLS) son protocolos
     
 - TLS versión 1.0 (TLS 1.0)
     
- Compatibilidad con TLS 1.0 y 1.1 de TLS quedará obsoleto el 31 de octubre de 2018. Para obtener más información, vea [compatibilidad con Deprecating para TLS 1.0, 1.1 y lo que esto significa para usted](technical-reference-details-about-encryption.md#TLS11and12deprecation) . 
+ La compatibilidad con TLS 1,0 y TLS 1,1 estará en desuso el 31 de octubre de 2018. Vea [desuso de la compatibilidad con TLS 1,0 y 1,1 y qué significa para](technical-reference-details-about-encryption.md#TLS11and12deprecation) obtener más información. 
   
-## <a name="deprecating-support-for-tls-10-and-11-and-what-this-means-for-you"></a>Dejar obsoletos soporte para TLS 1.0 y 1.1 y lo que esto significa para usted
+## <a name="deprecating-support-for-tls-10-and-11-and-what-this-means-for-you"></a>Desuso de la compatibilidad con TLS 1,0 y 1,1, y lo que esto significa para usted
 <a name="TLS11and12deprecation"> </a>
 
-A partir del 31 de octubre de 2018, Office 365 ya no admiten TLS 1.0 y 1.1. Esto significa que Microsoft no corregirá nuevos problemas que se encuentran en los clientes, dispositivos o servicios que se conectan a Office 365 mediante el uso de TLS 1.0 y 1.1.
+A partir del 31 de octubre de 2018, Office 365 ya no será compatible con TLS 1,0 y 1,1. Esto significa que Microsoft no corregirá los nuevos problemas que se encuentren en los clientes, dispositivos o servicios que se conectan a Office 365 mediante TLS 1,0 y 1,1.
 
-Tenga en cuenta que esto no significa que Office 365 se bloqueará TLS 1.0 y 1.1 conexiones. No hay ninguna fecha oficial para deshabilitar o quitar TLS 1.0 y 1.1 en el servicio TLS para las conexiones de cliente. La fecha final amortización estará determinada por la telemetría de atención al cliente y no se conoce aún. Después de que se toma una decisión, habrá un anuncio seis meses de antelación a menos que se convertirán en tener en cuenta un compromiso conocido, en cuyo caso podremos tenemos para que actúe en menos de seis meses a proteger a los clientes que usan los servicios.
+Nota Esto no significa que Office 365 bloqueará las conexiones TLS 1,0 y 1,1. No hay ninguna fecha oficial para deshabilitar o quitar TLS 1,0 y 1,1 en el servicio TLS para las conexiones de clientes. La fecha de degradación eventual será determinada por la telemetría de clientes y aún no se conoce. Después de tomar una decisión, habrá un anuncio con una seis meses de anticipación, a menos que se detecte un compromiso conocido, en cuyo caso es posible que tenga que actuar en menos de seis meses para proteger a los clientes que usan los servicios.
 
-Asegúrese de que todas las combinaciones de cliente a servidor y de explorador y el servidor usar TLS 1.2 (o una versión posterior) para mantener la conexión a servicios de Office 365. Debe actualizar determinadas combinaciones de cliente a servidor y de explorador y el servidor. Para obtener información acerca de cómo esto afecta, vea [Preparar el uso obligatorio de TLS 1.2 en Office 365](https://support.microsoft.com/en-us/help/4057306/preparing-for-tls-1-2-in-office-365).
+Debe asegurarse de que todas las combinaciones cliente-servidor y explorador-servidor usen TLS 1,2 (o una versión posterior) para mantener la conexión con los servicios de Office 365. Puede que tenga que actualizar ciertas combinaciones cliente-servidor y explorador-servidor. Para obtener más información acerca de cómo esto afecta, vea [preparación del uso obligatorio de TLS 1,2 en Office 365](https://support.microsoft.com/en-us/help/4057306/preparing-for-tls-1-2-in-office-365).
   
-## <a name="deprecating-support-for-3des"></a>Compatibilidad con dejar obsoletos 3DES
+## <a name="deprecating-support-for-3des"></a>Desuso de la compatibilidad con 3DES
 <a name="TLS11and12deprecation"> </a>
 
-A partir del 31 de octubre de 2018, Office 365 ya no se admite el uso de conjuntos de cifrado 3DES para la comunicación de Office 365. Más concretamente, Office 365 ya no se admite el conjunto de cifrado TLS_RSA_WITH_3DES_EDE_CBC_SHA. Los clientes y servidores comunicar con Office 365 después de esta fecha debe admitir al menos uno de los datos cifrados más seguros que aparecen en este tema (vea [conjuntos de aplicaciones compatibles con Office 365 de cifrado TLS](technical-reference-details-about-encryption.md#TLSCipherSuites)).
+A partir del 31 de octubre de 2018, Office 365 ya no será compatible con el uso de conjuntos de cifrado 3DES para comunicarse con Office 365. Más concretamente, Office 365 ya no será compatible con el conjunto de cifrado de TLS_RSA_WITH_3DES_EDE_CBC_SHA. Los clientes y los servidores que se comunican con O365 después de esta fecha deben admitir al menos uno de los cifrados más seguros que se enumeran en este tema (vea conjuntos de cifrado de [TLS compatibles con Office 365](technical-reference-details-about-encryption.md#TLSCipherSuites)).
   
 ## <a name="deprecating-sha-1-certificate-support-in-office-365"></a>Desuso de la compatibilidad con certificados SHA-1 en Office 365
 <a name="TLS11and12deprecation"> </a>
 
-A partir de junio de 2016, Office 365 ya no se acepta un certificado SHA-1 para las conexiones entrantes o salientes. Si actualmente está utilizando un certificado con SHA-1 en la cadena de certificados, debe actualizar la cadena para usar SHA-2 (2 de algoritmo de Hash seguro) o un algoritmo de hash más seguro.
+A partir del 2016 de junio de Office 365 ya no acepta un certificado SHA-1 para las conexiones salientes o entrantes. Si actualmente usa un certificado con SHA-1 en la cadena de certificados, tendrá que actualizar la cadena para usar SHA-2 (algoritmo de hash seguro 2) o un algoritmo hash más seguro.
   
 ## <a name="deprecating-rc4-support-in-office-365"></a>Desuso de la compatibilidad con RC4 en Office 365
 <a name="TLS11and12deprecation"> </a>
@@ -80,18 +80,18 @@ En julio de 2015, se interrumpió la compatibilidad con los siguientes conjuntos
     
 - TLS_RSA_WITH_RC4_128_MD5
     
-## <a name="deprecating-secure-sockets-layer-ssl-30-support-in-office-365"></a>Dejar obsoletos compatibilidad con la capa de Sockets seguros (SSL) 3.0 en Office 365
+## <a name="deprecating-secure-sockets-layer-ssl-30-support-in-office-365"></a>Desuso de la compatibilidad de la capa de sockets seguros (SSL) 3,0 en Office 365
 <a name="TLS11and12deprecation"> </a>
 
-Iniciar el 1 de diciembre de 2014, Office 365 comenzó deshabilitar compatibilidad para Secure Sockets Layer (SSL) 3.0, el predecesor de TLS. Para obtener más información, vea [seguridad asesoramiento al 3009008](https://technet.microsoft.com/library/security/3009008.aspx). Para obtener instrucciones sobre cómo asegurar los clientes usan TLS 1.0 o superior y para deshabilitar SSL 3.0, consulte [protección SSL 3.0 vulnerabilidad](http://blogs.office.com/2014/10/29/protecting-ssl-3-0-vulnerability/).
+A partir del 1 de diciembre de 2014, Office 365 empezó a deshabilitar la compatibilidad con la capa de sockets seguros (SSL) 3,0, la predecesora para TLS. Para obtener más información, consulte el documento informativo sobre [seguridad 3009008](https://technet.microsoft.com/library/security/3009008.aspx). Para obtener instrucciones sobre cómo asegurarse de que los clientes usan TLS 1,0 o superior y deshabilitar SSL 3,0, consulte [protectING ssl 3,0 Vulnerability](http://blogs.office.com/2014/10/29/protecting-ssl-3-0-vulnerability/).
   
-## <a name="tls-cipher-suites-supported-by-office-365"></a>Conjuntos de aplicaciones de cifrado TLS compatibles con Office 365
+## <a name="tls-cipher-suites-supported-by-office-365"></a>Conjuntos de cifrado de TLS compatibles con Office 365
 <a name="TLSCipherSuites"> </a>
 
 Un conjunto de cifrado es una colección de algoritmos de cifrado que TLS emplea para establecer conexiones seguras. Los conjuntos de cifrado compatibles con Office 365 se enumeran en la siguiente tabla por orden de seguridad, con el conjunto de cifrado más seguro en primer lugar. Cuando Office 365 recibe una solicitud de conexión, primero intenta conectarse con el conjunto de cifrado de nivel superior y, si no lo consigue, prueba con el segundo conjunto de cifrado de la lista y así sucesivamente. Cuando Office 365 envía una solicitud de conexión a otro servidor o a un cliente, el servidor o el cliente receptor elige el conjunto de cifrado o si se va a usar TLS.
 
 > [!IMPORTANT]
-> Tenga en cuenta que dejar de utilizar versiones TLS y que en desuso versiones *no debe usarse* donde estén disponibles versiones más recientes. En otras palabras, en cualquier lugar que ha incluido esa TLS 1.0, 1.1 y 1.2 son compatibles, elija la versión *más reciente* (TLS 1.2).
+> Tenga en cuenta que las versiones de TLS están en desuso y que *no deben usarse* versiones obsoletas cuando hay versiones más recientes disponibles. En otras palabras, en cualquier lugar en el que se muestre que se admiten TLS 1,0, 1,1 y 1,2, elija la versión *más reciente* (TLS 1,2).
   
 |**Protocolos**|**Nombre del conjunto de cifrado**|**Algoritmo de intercambio de claves o seguridad**|**Compatibilidad con Confidencialidad directa total**|**Algoritmo de autenticación o seguridad**|**Cifrado o seguridad**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
@@ -113,8 +113,8 @@ Un conjunto de cifrado es una colección de algoritmos de cifrado que TLS emplea
   
 [Configurar el cifrado en Office 365 Enterprise](set-up-encryption.md)
   
-[Implementación de Schannel de TLS 1.0 en actualización de estado de seguridad de Windows: 24 de noviembre de 2015](https://support.microsoft.com/kb/3117336)
+[Implementación de Schannel TLS 1,0 en la actualización de estado de seguridad de Windows: 24 de noviembre de 2015](https://support.microsoft.com/kb/3117336)
   
-[Mejoras de cifrado TLS/SSL (Windows IT Center)](https://technet.microsoft.com/en-us/library/cc766285%28v=ws.10%29.aspx)
+[Mejoras de cifrado de TLS/SSL (centro de TI de Windows)](https://technet.microsoft.com/en-us/library/cc766285%28v=ws.10%29.aspx)
   
 

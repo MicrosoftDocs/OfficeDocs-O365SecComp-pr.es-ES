@@ -6,46 +6,46 @@ manager: laurawi
 ms.date: 6/4/2018
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 703c41df-b3e2-4e7e-9eeb-1a0b8d60fb56
-description: Obtenga información sobre cómo puede ir desde un panel a un entendimiento con acciones recomendadas en la seguridad &amp; centro de cumplimiento.
-ms.openlocfilehash: cbea4dadefa498ac164773718ef8a4dbad351fb7
-ms.sourcegitcommit: 9034809b6f308bedc3b8ddcca8242586b5c30f94
+description: Obtenga información acerca de cómo puede ir de un panel a un conocimiento de las acciones recomendadas en el centro de seguridad &amp; y cumplimiento.
+ms.openlocfilehash: 1c43d529d02872563bf6e1c9643b542ab6b8db9a
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28014732"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220530"
 ---
 # <a name="walkthrough---from-a-dashboard-to-an-insight"></a>Tutorial: desde un panel o a un reporte
 
-Si está familiarizado con [informes y conocimientos en la seguridad de Office 365 &amp; centro de cumplimiento de normas](reports-and-insights-in-security-and-compliance.md), que puede resultar útil para ver cómo puede navegar fácilmente desde un panel a un entendimiento y acciones recomendadas. 
+Si no está familiarizado con [los informes y la información del centro de seguridad &amp; y cumplimiento de Office 365](reports-and-insights-in-security-and-compliance.md), es posible que le resulte útil ver cómo puede navegar fácilmente desde un panel hasta una perspectiva y las acciones recomendadas. 
   
-Se trata de uno de varios tutoriales para la seguridad &amp; centro de cumplimiento. Para ver tutoriales adicionales, vea la sección [temas relacionados](#related-topics) . 
+Este es uno de los diversos tutoriales del centro &amp; de seguridad y cumplimiento. Para ver Tutoriales adicionales, consulte la sección [temas relacionados](#related-topics) . 
   
-## <a name="walkthrough-from-a-dashboard-to-an-insight"></a>Tutorial: desde un panel para un entendimiento
+## <a name="walkthrough-from-a-dashboard-to-an-insight"></a>Tutorial: desde un panel a un conocimiento
 
-Examinemos el flujo de un panel a un informe a un entendimiento y la acción. (Esto es un ejemplo de [suplantación de la inteligencia](learn-about-spoof-intelligence.md) de breve). 
+Vamos a recorrer el flujo de un panel a un informe de una visión y una acción. (Este es un breve ejemplo de inteligencia de suplantación de [identidad](learn-about-spoof-intelligence.md) ). 
   
-1. Empezamos con el panel de la seguridad en la [seguridad &amp; centro de cumplimiento](https://protection.office.com). (Vaya a **administración de amenaza** \> **panel**.)<br>![En la seguridad &amp; centro de cumplimiento, elija Administración de amenaza \> panel](media/05a38660-eb13-4960-a266-11809c453d95.png)<br>
+1. Comenzamos con el panel de seguridad en [el &amp; centro de seguridad y cumplimiento](https://protection.office.com). (Vaya al **** \> **Panel**de administración de amenazas).<br>![En el centro &amp; de seguridad y cumplimiento, elija \> panel de administración de amenazas](media/05a38660-eb13-4960-a266-11809c453d95.png)<br>
   
-2. En la fila de **conocimientos** , se observe un entendimiento que indica que es necesario revisar algunos dominios que podrían ser sospechosos. (En la fila de **datos** , haga clic en **pares de dominio**).<br>![La fila de perspectivas menciones posibles problemas de suplantación de identidad](media/dd1d0cb3-3201-45d7-b41d-18a0944fe85d.png)<br>
+2. En la **** fila Insights, se observa una información que indica que es necesario revisar algunos dominios que podrían ser sospechosos. (En la fila **información** , haga clic en **pares de dominios**).<br>![La fila Insights menciona los posibles problemas de suplantación](media/dd1d0cb3-3201-45d7-b41d-18a0944fe85d.png)<br>
   
-3. Se obtiene una lista de las actividades relacionadas con suplantación de inteligencia. Estos son instancias donde se han enviado mensajes de correo electrónico que parecen proceden de nuestra organización pero, de hecho, enviados desde otra organización. El objetivo es determinar si están autorizados los mensajes falsos o no.<br>![Suplantación de la inteligencia insights](media/a2e2b4fd-0c1e-499f-8401-cf3089da82fa.png)<br>En esta lista, podemos ordenar la información por recuento de mensajes, la fecha de que la suplantación de identidad se detectó por última vez y mucho más. (Haga clic en los encabezados de columna, como **recuento de mensaje** o **visto por última vez** para ver cómo ordenación funciona). 
+3. Obtenemos una lista de las actividades relacionadas con la inteligencia de suplantación de identidad. Son instancias en las que se enviaron los mensajes de correo electrónico que parecen de nuestra organización pero, de hecho, se enviaron desde otra organización. El objetivo es determinar si los mensajes suplantados están autorizados o no.<br>![Información de inteligencia de falsificación](media/a2e2b4fd-0c1e-499f-8401-cf3089da82fa.png)<br>En esta lista, podemos ordenar la información por número de mensajes, fecha en la que se detectó por última vez la suplantación, etc. (Haga clic en los encabezados de columna, como **número de mensajes** o **último visto** para ver cómo funciona la ordenación.) 
     
-4. Al seleccionar un elemento en la lista, abrirá un panel de detalles donde podemos ver información adicional, incluidos los mensajes de correo electrónico similar que se detectaron. (Haga clic en un elemento en la lista y revise la información y recomendaciones).<br>![Al seleccionar un elemento abrirá un panel de detalles](media/7ad1faa5-6ca2-474e-a609-eb275e0a8e59.png)<br>
+4. Al seleccionar un elemento de la lista, se abre un panel de detalles en el que se puede ver información adicional, incluidos los mensajes de correo electrónico similares que se detectaron. (Haga clic en un elemento de la lista y revise la información y las recomendaciones).<br>![Al seleccionar un elemento se abre un panel de detalles.](media/7ad1faa5-6ca2-474e-a609-eb275e0a8e59.png)<br>
   
-5. Observe que en la parte superior del panel, tenemos la opción para agregar el remitente a la lista de remitentes permitidos de nuestra organización. (No seleccione **lista de permitidos de agregar al remitente 'AllowedtoSpoof'** hasta que esté seguro de que desea hacerlo. [Obtenga más información sobre inteligencia de réplicas](learn-about-spoof-intelligence.md).)<br>![Puede autorizar un remitente](media/caf0c20a-6047-486d-8060-5a229a3de49f.png)
+5. Observe que en la parte superior del panel, tenemos la opción de agregar el remitente a la lista de remitentes permitidos de la organización. (No seleccione **Agregar a la lista de remitentes permitidos de ' AllowedtoSpoof '** hasta que esté seguro de que desea hacerlo. [Obtenga más información sobre la inteligencia de suplantación de identidad](learn-about-spoof-intelligence.md).)<br>![Puede autorizar a un remitente](media/caf0c20a-6047-486d-8060-5a229a3de49f.png)
   
-De este modo, se puede mover de un panel a conocimientos y acciones recomendadas.
+De esta forma, podemos pasar de un panel a información y acciones recomendadas.
   
 ## <a name="related-topics"></a>Temas relacionados
 
-[Tutorial: desde una perspectiva con respecto a un informe detallado](from-an-insight-to-a-detailed-report.md)
+[Tutorial: desde una perspectiva a un informe detallado](from-an-insight-to-a-detailed-report.md)
   
-[Tutorial: desde un informe detallado a un entendimiento](from-a-detailed-report-to-an-insight.md)
+[Tutorial: desde un informe detallado a un conocimiento](from-a-detailed-report-to-an-insight.md)
   
 

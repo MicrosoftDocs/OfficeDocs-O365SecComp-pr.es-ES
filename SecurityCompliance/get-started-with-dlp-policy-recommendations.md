@@ -6,67 +6,67 @@ manager: laurawi
 ms.date: 8/7/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 2ea4459b-cb13-4ce2-b9d1-0619316df88c
-description: Esta recomendación controlados por insight ayuda a su organización a mantener segura la contenido confidencial cuando se almacena y se comparten en Office 365 para informar cuando hay una posible brecha en la cobertura de la directiva DLP. Verá esta recomendación en la página principal de la seguridad &amp; centro de cumplimiento, si los documentos contienen cualquiera de los tipos más comunes de cinco de la parte superior de la información confidencial, pero no están protegidos por una directiva de DLP.
-ms.openlocfilehash: fcd3a5a3a12932b22c310938c12f71fb01019411
-ms.sourcegitcommit: ede6230c2df398dc0a633e8f32ee0bfede0d5142
+description: Esta recomendación basada en la información ayuda a su organización a mantener la seguridad del contenido confidencial cuando se almacena y se comparte en Office 365, ya que le informa cuando hay una brecha posible en la cobertura de la Directiva DLP. Verá esta recomendación en la Página principal del centro de seguridad &amp; y cumplimiento, si los documentos contienen alguno de los cinco tipos más comunes de información confidencial, pero no están protegidos por una directiva DLP.
+ms.openlocfilehash: ba5a1dd6165309ec024087f6b7c036edd5b480bc
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "25002633"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220540"
 ---
 # <a name="get-started-with-dlp-policy-recommendations"></a>Introducción a las recomendaciones de la directiva DLP
 
-Esta recomendación controlados por insight ayuda a su organización a mantener segura la contenido confidencial cuando se almacena y se comparten en Office 365 para informar cuando hay una posible brecha en la cobertura de la directiva DLP. Verá esta recomendación en la página **principal** de la seguridad &amp; centro de cumplimiento, si los documentos contienen cualquiera de los tipos más comunes de cinco de la parte superior de la información confidencial, pero no están protegidos por una directiva de (DLP) de prevención de pérdida de datos. 
+Esta recomendación basada en la información ayuda a su organización a mantener la seguridad del contenido confidencial cuando se almacena y se comparte en Office 365, ya que le informa cuando hay una brecha posible en la cobertura de la Directiva DLP. Verá esta recomendación en la página **principal** del centro de seguridad &amp; y cumplimiento, si los documentos contienen alguno de los cinco tipos más comunes de información confidencial, pero no están protegidos por una directiva de prevención de pérdida de datos (DLP). 
   
-Puede usar este widget para crear rápidamente una directiva de DLP personalizada en un clic o dos y, después de crear esta directiva DLP, es totalmente personalizable. Tenga en cuenta que si no ve la recomendación en primer lugar, intente hacer clic en **+ más** en la parte inferior de la sección **recomendado para usted** . 
+Puede usar este widget para crear rápidamente una directiva de DLP personalizada en tan solo un clic o dos y después de crear esta directiva de DLP, es totalmente personalizable. Tenga en cuenta que si no ve la recomendación en primer lugar, intente hacer clic en **+ más** en la parte inferior de la sección **recomendada para usted** . 
   
-![Widget con nombre de información confidencial desprotegida](media/91bc04d2-6eff-4294-8b73-b2d56d26ffc4.png)
+![Widget denominado información confidencial desprotegida](media/91bc04d2-6eff-4294-8b73-b2d56d26ffc4.png)
   
-## <a name="create-the-recommended-dlp-policy"></a>Crear la directiva DLP recomendada
+## <a name="create-the-recommended-dlp-policy"></a>Crear la Directiva de DLP recomendada
 
-Cuando se muestra en el widget desprotegido información confidencial, elija **empezar a trabajar** en la parte inferior para crear rápidamente una directiva de DLP. 
+Cuando el widget muestre información confidencial desprotegida, elija **empezar** en la parte inferior para crear rápidamente una directiva de DLP. 
   
-Para ayudar a proteger la información confidencial, esta directiva DLP:
+Para ayudar a proteger la información confidencial, esta directiva de DLP:
   
-- Detecta cuando el contenido de Exchange, SharePoint y OneDrive que contiene uno de los tipos de información confidencial desprotegidos se comparte con personas fuera de la organización.
+- Detecta cuando el contenido de Exchange, SharePoint y OneDrive que contiene uno de los tipos de información confidencial no protegidos se comparte con personas de fuera de la organización.
     
-- Genera informes de actividad detallada de modo que puede realizar un seguimiento de cosas como el contenido que compartido con personas fuera de la organización y cuando lo hacían. Puede usar los [informes DLP](view-the-dlp-reports.md) y los [datos de registro de auditoría](search-the-audit-log-in-security-and-compliance.md) (donde **actividad** = **DLP**) para ver esta información.
+- Genera informes de actividad detallados para que pueda realizar un seguimiento de cosas como quién ha compartido el contenido con personas de fuera de la organización y cuándo lo ha hecho. Puede usar los [informes de DLP](view-the-dlp-reports.md) y los datos del [registro de auditoría](search-the-audit-log-in-security-and-compliance.md) (donde**DLP**de **actividad** = ) para ver esta información.
     
-También puede elegir que tengan la directiva DLP:
+También puede elegir que la Directiva DLP:
   
-- Enviará un correo electrónico de informe del incidente cuando los usuarios compartir una gran cantidad de información confidencial con personas fuera de la organización.
+- Envíe un informe de correo electrónico de incidentes cuando los usuarios compartan gran parte de esta información confidencial con personas de fuera de la organización.
     
 - Agregar otros usuarios al informe de incidentes de correo electrónico.
     
-- Mostrar una sugerencia de directiva y enviar una notificación de correo electrónico a los usuarios cuando intenten compartir esta información confidencial con personas fuera de la organización. Para obtener más información acerca de estas opciones, vea [Enviar notificaciones por correo electrónico y mostrar sugerencias de directivas para las directivas DLP](use-notifications-and-policy-tips.md).
+- Mostrar una sugerencia de directiva y enviar una notificación por correo electrónico a los usuarios cuando intenten compartir esta información confidencial con personas de fuera de la organización. Para obtener más información sobre estas opciones, vea [enviar notificaciones de correo electrónico y Mostrar sugerencias de directiva para directivas de DLP](use-notifications-and-policy-tips.md).
     
-Si desea cambiar estas opciones más adelante, puede editar la directiva DLP después de crearla. Por ejemplo, puede realizar la directiva más restrictiva por personas incluso bloqueo de uso compartido de contenido que contiene información confidencial en primer lugar - vea la siguiente sección.
+Si desea cambiar estas opciones más adelante, puede editar la Directiva DLP una vez creada. Por ejemplo, puede hacer que la Directiva sea más restrictiva impidiendo que los usuarios compartan contenido que contiene información confidencial en el primer lugar; consulte la siguiente sección.
   
-![Configuración para el widget con nombre de información confidencial desprotegida](media/b6106cbd-1bed-4582-aaef-b678de470c9b.png)
+![Configuración del widget denominado información confidencial desprotegida](media/b6106cbd-1bed-4582-aaef-b678de470c9b.png)
   
-## <a name="edit-the-recommended-dlp-policy"></a>Editar la directiva DLP recomendada
+## <a name="edit-the-recommended-dlp-policy"></a>Edición de la Directiva de DLP recomendada
 
-Después de usar el widget para crear una directiva de DLP, la directiva aparece bajo la **prevención de pérdida de datos** en la página **Directiva** de la seguridad &amp; centro de cumplimiento. 
+Después de usar el widget para crear una directiva de DLP, la directiva aparece en **prevención de pérdida de datos** en la página de la **Directiva** del centro de seguridad &amp; y cumplimiento. 
   
-De forma predeterminada, la directiva se denomina **Directiva del sistema se recomienda para el uso compartido de información confidencial**. Esta directiva es totalmente personalizable, igual que cualquier directiva DLP crear usted mismo desde el principio. Por ejemplo, si ha decidido no activar informes de incidentes y sugerencias de directiva cuando se utiliza el widget, siempre puede editar la directiva y activar estas opciones en cualquier momento.
+De forma predeterminada, la Directiva se denomina **Directiva recomendada del sistema para compartir información confidencial**. Esta directiva es totalmente personalizable, igual que cualquier directiva DLP que se cree a partir de cero. Por ejemplo, si decidió no activar los informes de incidentes y las sugerencias de directiva al usar el widget, siempre puede editar la Directiva y activar estas opciones en cualquier momento.
   
-![Sistema recomendado directiva para uso compartido de información confidencial](media/2fc49f25-ec25-4433-add4-d60f73888f13.png)
+![Directiva recomendada por el sistema para compartir información confidencial](media/2fc49f25-ec25-4433-add4-d60f73888f13.png)
   
-## <a name="when-the-widget-does-and-does-not-appear"></a>Cuando el widget y no aparece
+## <a name="when-the-widget-does-and-does-not-appear"></a>Cuando el widget no aparece
 
-El widget con nombre de **Información confidencial desprotegida** aparece en la sección de **recomendado para usted** de la página **principal** de la seguridad &amp; centro de cumplimiento. 
+El widget denominado **información confidencial no protegida** aparece en la sección **recomendada para usted** de la página **principal** del centro de seguridad &amp; y cumplimiento. 
   
-Este widget aparece sólo cuando:
+Este widget solo aparece cuando:
   
-- Se detectan nuevos documentos que contengan cualquiera de los cinco tipos más comunes de información confidencial en SharePoint o OneDrive durante los últimos 30 días.
+- Los documentos nuevos que contienen los cinco tipos más comunes de información confidencial se detectan en SharePoint o en OneDrive en los últimos 30 días.
     
-- Esa información confidencial ya no está protegida por una directiva DLP existente.
+- La información confidencial todavía no está protegida por una directiva de DLP existente.
     
-A diferencia de las directivas de DLP que constantemente se están analizando los datos, esta recomendación examina para los vacíos en la cobertura de la directiva DLP aproximadamente cada 48 horas, por lo que después de carga el nuevo contenido, puede tardar hasta dos días para la recomendación que aparezca.
+A diferencia de las directivas de DLP que continuamente examinan los datos, esta recomendación examina las brechas de la cobertura de la Directiva de DLP aproximadamente cada 48 horas, por lo que, una vez cargado el nuevo contenido, puede tardar hasta dos días en aparecer la recomendación.
   
-Por último, después de usar el widget para crear una directiva DLP recomendada, el widget desaparece de la página **principal** . 
+Por último, después de usar el widget para crear una directiva de DLP recomendada, el widget desaparecerá de la página **principal** . 
   
 

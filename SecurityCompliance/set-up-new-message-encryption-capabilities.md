@@ -5,68 +5,68 @@ author: kccross
 manager: laurawi
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 7ff0c040-b25c-4378-9904-b1b50210d00e
-description: Nuevo Office 365 Message Encryption capacidades fundamentan en protección de la información de Azure, su organización pueden usar protegida comunicación por correo electrónico con personas dentro y fuera de su organización. Las nuevas capacidades OME trabajar con otras organizaciones de Office 365, Outlook.com, Gmail y otros servicios de correo electrónico.
-ms.openlocfilehash: a30054bf7b03a3e4fadf9a0e34537c682c10e217
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+description: Nuevas capacidades de cifrado de mensajes de Office 365 basadas en Azure Information Protection, su organización puede usar la comunicación de correo electrónico protegida con personas de dentro y fuera de la organización. Las nuevas capacidades de OME funcionan con otras organizaciones de Office 365, Outlook.com, gmail y otros servicios de correo electrónico.
+ms.openlocfilehash: eddafca15fa4efdd3f929145e7933a3b7dfb5f27
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29696254"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220650"
 ---
 # <a name="set-up-new-office-365-message-encryption-capabilities"></a>Configurar las nuevas capacidades de cifrado de mensajes de Office 365
 
-Con las nuevas capacidades de Office 365 Message Encryption (OME), que aprovechen las características de protección de protección de la información de Azure, su organización puede compartir fácilmente correo electrónico protegido con cualquier usuario en cualquier dispositivo. Los usuarios pueden enviar y recibir mensajes protegidos con otras organizaciones de Office 365, así como los clientes que no sean Office 365 mediante Outlook.com, Gmail y otros servicios de correo electrónico.
+Con las nuevas capacidades de cifrado de mensajes de Office 365 (OME), que aprovechan las características de protección de Azure Information Protection, su organización puede compartir fácilmente el correo electrónico protegido con cualquier persona en cualquier dispositivo. Los usuarios pueden enviar y recibir mensajes protegidos con otras organizaciones de Office 365, así como con clientes que no son de Office 365 con Outlook.com, gmail y otros servicios de correo electrónico.
 
 ||
 |:-----|
-|En este artículo es parte de una serie de artículos sobre Office 365 Message Encryption más grande. En este artículo está destinada a los administradores y profesionales de TI. Si sólo está buscando información en enviar o recibir un mensaje cifrado, vea la lista de los artículos de [Office 365 Message Encryption (OME)](ome.md) y busque el artículo que mejor se adapte a sus necesidades. |
+|Este artículo forma parte de una amplia serie de artículos sobre el cifrado de mensajes de Office 365. Este artículo está destinado a los administradores y ITPros. Si solo está buscando información sobre cómo enviar o recibir un mensaje cifrado, vea la lista de artículos en el cifrado de [mensajes de Office 365 (OME)](ome.md) y busque el artículo que mejor se adapte a sus necesidades. |
 ||
 
-## <a name="get-started-with-ome-by-activating-azure-rights-management-part-of-azure-information-protection"></a>Introducción a OME mediante la activación de Azure Rights Management, parte de la protección de la información de Azure
+## <a name="get-started-with-ome-by-activating-azure-rights-management-part-of-azure-information-protection"></a>Introducción a OME mediante la activación de Azure Rights Management, parte de Azure Information Protection
 
-Ahora es fácil empezar a trabajar con las nuevas capacidades OME. A partir de febrero de 2018, Office 365 automáticamente permite que las nuevas capacidades OME para las organizaciones optan dentro de nuestros centros de datos. La organización es optan si es un nuevo inquilino de Office 365 y su organización tiene las suscripciones adecuadas. **Si ha habilitado Azure Rights Management (RMS Azure), parte de la protección de la información de Azure, a continuación, se permiten automáticamente el cifrado de mensajes de Office 365 para usted.** No tiene que hacer nada más para habilitar OME. Para activar Azure Rights Management, vea [Activar Azure Rights Management](https://docs.microsoft.com/azure/information-protection/deploy-use/activate-service). Para obtener información acerca de las suscripciones, vea "¿qué suscripciones necesito para usar el nuevo capabilities? OME" en las [Preguntas más frecuentes sobre el cifrado de mensajes de Office 365](ome-faq.md). Para obtener información sobre la compra de una suscripción a la protección de la información de Azure, consulte [Protección de la información de Azure](https://azure.microsoft.com/services/information-protection/).
+Ahora es fácil empezar a trabajar con las nuevas capacidades de OME. A partir del 2018 de febrero de 365, Office habilita automáticamente las nuevas capacidades de OME para las organizaciones elegibles dentro de nuestros centros de recursos. Su organización es elegible si es un nuevo inquilino de Office 365 y su organización tiene las suscripciones adecuadas. **Si ha habilitaDo Azure Rights Management (Azure RMS), parte de Azure Information Protection, se habilitará automáticamente el cifrado de mensajes de Office 365.** No tiene que hacer nada más para habilitar OME. Para activar Azure Rights Management, vea [Activar Azure Rights Management](https://docs.microsoft.com/azure/information-protection/deploy-use/activate-service). Para obtener más información acerca de las suscripciones, vea "What suscripciones necesito use The New OME capabilities?" en el archivo de [preguntas más frecuentes sobre el cifrado de mensajes de Office 365](ome-faq.md). Para obtener información sobre cómo comprar una suscripción a Azure Information Protection, consulte [Azure Information Protection](https://azure.microsoft.com/services/information-protection/).
   
-Si se usa Exchange Online con el servicio de administración de derechos de Active Directory (AD RMS), no se puede habilitar estas nuevas capacidades de inmediato. En su lugar, debe migrar desde AD RMS para protección de la información de Azure en primer lugar. Cuando haya terminado de la migración, puede completar los pasos.
+Si usa Exchange Online con el servicio de administración de derechos de Active Directory (AD RMS), no puede habilitar estas nuevas funcionalidades inmediatamente. En su lugar, debe realizar la migración de AD RMS a Azure Information Protection en primer lugar. Una vez finalizada la migración, puede completar correctamente estos pasos.
   
-Si opta por seguir utilizando local AD RMS con Exchange Online en lugar de migrar a la protección de la información de Azure, no podrá usar estas nuevas capacidades.
+Si opta por seguir usando AD RMS local con Exchange online en lugar de migrar a Azure Information Protection, no podrá usar estas nuevas funciones de.
   
-## <a name="how-the-new-capabilities-for-ome-work"></a>Cómo funcionan las nuevas capacidades para OME
+## <a name="how-the-new-capabilities-for-ome-work"></a>Funcionamiento de las nuevas capacidades de OME
 
-Las nuevas capacidades de Office 365 Message Encryption usan las capacidades de protección, también denominadas Azure Rights Management (RMS Azure), de protección de la información de Azure. Esto incluye las directivas de cifrado, identidad y autorización para ayudar a proteger su correo electrónico. Puede cifrar los mensajes mediante el uso de las plantillas de administración de derechos, la [opción no reenviar](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails)y la [opción de cifrar sólo](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails). A continuación, los usuarios pueden cifrar mensajes de correo electrónico y una gran variedad de datos adjuntos de Office 365 mediante el uso de estas opciones. Para obtener una lista completa de tipos de datos adjuntos compatibles, vea ["tipos de archivo están cubiertas por las políticas de IRM cuando se adjuntan a los mensajes" en la introducción a IRM para mensajes de correo electrónico](https://support.office.com/article/bb643d33-4a3f-4ac7-9770-fd50d95f58dc#FileTypesforIRM). Como administrador, también puede definir reglas de flujo de correo para aplicar esta protección. Por ejemplo, puede definir una regla donde todos los mensajes no protegidos que se dirigen a un destinatario concreto o que contienen palabras específicas en la línea de asunto están protegidos contra el acceso no autorizado y los destinatarios no pueden copiar o imprimir el contenido del mensaje.
+Las nuevas capacidades de cifrado de mensajes de Office 365 usan las capacidades de protección, también denominada Azure Rights Management (Azure RMS), de Azure Information Protection. Esto incluye directivas de cifrado, identidades y autorización para ayudar a proteger el correo electrónico. Puede cifrar mensajes mediante el uso de plantillas de Rights Management, la [opción](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails)no reenviar y la [opción de solo cifrado](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails). A continuación, los usuarios pueden cifrar los mensajes de correo electrónico y una gran variedad de datos adjuntos de Office 365 mediante estas opciones. Para obtener una lista completa de los tipos de datos adjuntos admitidos, consulte ["tipos de archivos cubiertos por las directivas de IRM cuando se adjuntan a mensajes" en Introducción a IRM para los mensajes de correo electrónico](https://support.office.com/article/bb643d33-4a3f-4ac7-9770-fd50d95f58dc#FileTypesforIRM). Como administrador, también puede definir reglas de flujo de correo para aplicar esta protección. Por ejemplo, puede definir una regla en la que todos los mensajes desprotegidos que se dirijan a un destinatario específico o que contengan palabras específicas en la línea de asunto estén protegidos contra el acceso no autorizado, y los destinatarios no podrán copiar ni imprimir el contenido del mensaje.
   
-A diferencia de la versión anterior de OME, estas nuevas capacidades proporcionan una experiencia unificada remitente si va a enviar correo dentro de su organización o a destinatarios fuera de Office 365. Además, los destinatarios que reciben un mensaje de correo electrónico protegido enviado a una cuenta de Office 365 en 2016 de Outlook o Outlook en el sitio web, no tiene que realizar ninguna acción adicional para ver el mensaje. Funciona de manera transparente. Los destinatarios con otros clientes de correo electrónico y proveedores de servicios de correo electrónico también tienen una experiencia mejorada. Para obtener información, vea [sobre los mensajes protegidos en Office 365](https://support.office.com/article/Learn-about-protected-messages-in-Office-365-2baf3ac7-12db-40a4-8af7-1852204b4b67) y [cómo abrir un mensaje protegido](https://support.office.com/article/How-do-I-open-a-protected-message-1157a286-8ecc-4b1e-ac43-2a608fbf3098).
+A diferencia de la versión anterior de OME, estas nuevas capacidades proporcionan una experiencia de remitente unificado, ya sea para enviar correo dentro de su organización o para destinatarios fuera de Office 365. Además, los destinatarios que reciben un mensaje de correo electrónico protegido que se envía a una cuenta de Office 365 en Outlook 2016 o en Outlook en la web no tienen que realizar ninguna acción adicional para ver el mensaje. Funciona sin problemas. Los destinatarios que usan otros clientes de correo electrónico y proveedores de servicios de correo electrónico también tienen una mejor experiencia. Para obtener más información, vea información [sobre los mensajes protegidos en Office 365](https://support.office.com/article/Learn-about-protected-messages-in-Office-365-2baf3ac7-12db-40a4-8af7-1852204b4b67) y [Cómo abrir un mensaje protegido](https://support.office.com/article/How-do-I-open-a-protected-message-1157a286-8ecc-4b1e-ac43-2a608fbf3098).
 
-Para obtener una lista detallada de las diferencias entre la versión anterior de OME y las nuevas capacidades OME, vea [Comparar versiones de OME](ome-version-comparison.md).
+Para obtener una lista detallada de las diferencias entre la versión anterior de OME y las nuevas capacidades de OME, vea [Compare Versions of OME](ome-version-comparison.md).
   
-## <a name="steps-to-manually-set-up-the-new-capabilities-for-ome"></a>Pasos para configurar manualmente las nuevas capacidades para OME
+## <a name="steps-to-manually-set-up-the-new-capabilities-for-ome"></a>Pasos para configurar manualmente las nuevas funciones de OME
 
-Las nuevas capacidades OME se habilitan automáticamente para la mayoría de las organizaciones de Office 365. Si su organización no tiene OME habilitado automáticamente o si activa las nuevas capacidades OME desactivado, siga estos pasos para configurar manualmente las nuevas capacidades para OME.
+Las nuevas capacidades de OME se habilitan automáticamente para la mayoría de las organizaciones de Office 365. Si la organización no tiene instalado automáticamente OME o si ha desactivado las nuevas funciones de OME, siga estos pasos para configurar manualmente las nuevas funciones de OME.
   
-### <a name="to-manually-set-up-the-new-capabilities-for-ome"></a>Para configurar manualmente las nuevas capacidades para OME
+### <a name="to-manually-set-up-the-new-capabilities-for-ome"></a>Para configurar manualmente las nuevas funciones para OME
 
-1. Asegúrese de que tiene la suscripción adecuada para su organización. Para obtener información acerca de las suscripciones, consulte "¿qué suscripciones necesito para usar el nuevo capabilities? OME" en la [preguntas más frecuentes de Office 365 mensaje cifrado.](ome-faq.md). Para obtener información sobre la compra de una suscripción a la protección de la información de Azure, consulte [Protección de la información de Azure](https://azure.microsoft.com/services/information-protection/).
+1. Asegúrese de que tiene la suscripción adecuada para su organización. Para obtener información acerca de las suscripciones, consulte "What suscripciones necesito use The New OME capabilities?" en el archivo de [preguntas más frecuentes sobre el cifrado de mensajes de Office 365.](ome-faq.md) Para obtener información sobre cómo comprar una suscripción a Azure Information Protection, consulte [Azure Information Protection](https://azure.microsoft.com/services/information-protection/).
 
-2. Decida si desea que Microsoft para administrar la clave de raíz para la protección de la información de Azure (valor predeterminado), o generar y administrar esta clave usted mismo (conocido como Traer su propia clave o BYOK). Si desea generar y administrar esta clave usted mismo, debe completar algunos pasos antes de configurar las nuevas capacidades para OME. Para obtener más información, vea [planeación y la implementación de la clave de inquilino de protección de la información de Azure](https://docs.microsoft.com/information-protection/plan-design/plan-implement-tenant-key). Microsoft recomienda completar estos pasos antes de configurar OME.
+2. Decida si desea que Microsoft administre la clave raíz de Azure Information Protection (el valor predeterminado) o genere y administre esta clave usted mismo (conocido como BYOK). Si desea generar y administrar esta clave usted mismo, debe realizar algunos pasos antes de configurar las nuevas capacidades de OME. Para obtener más información, vea [planeación e implementación de la clave de inquilino de Azure Information Protection](https://docs.microsoft.com/information-protection/plan-design/plan-implement-tenant-key). Microsoft recomienda que complete estos pasos antes de configurar OME.
 
-3. Habilitar las nuevas capacidades para OME mediante la activación de Azure Rights Management. Para obtener instrucciones, vea [Activar Azure Rights Management](https://docs.microsoft.com/azure/information-protection/deploy-use/activate-service). En este caso, Office 365 permite automáticamente las nuevas capacidades OME para usted.
+3. Habilite las nuevas funciones para OME activando Azure Rights Management. Para obtener instrucciones, consulte [Activar Azure Rights Management](https://docs.microsoft.com/azure/information-protection/deploy-use/activate-service). Al hacerlo, Office 365 automáticamente habilita las nuevas funciones de OME para usted.
 
     > [!TIP]
-    > Outlook en la Web se almacena en caché su interfaz de usuario, por lo que es una buena idea que hay que esperar un día antes de intentar aplicar las nuevas capacidades para OME a los mensajes de correo electrónico con este cliente. Antes de la interfaz de usuario se actualiza para reflejar la nueva configuración, las nuevas capacidades para OME no estarán disponibles. Una vez que se actualiza la interfaz de usuario, los usuarios pueden proteger mensajes de correo electrónico mediante el uso de las nuevas capacidades para OME.
+    > Outlook en la Web almacena en caché su interfaz de usuario, por lo que es una buena idea esperar un día antes de intentar aplicar las nuevas funciones de OME a los mensajes de correo electrónico mediante este cliente. Antes de que la interfaz de usuario se actualice para reflejar la nueva configuración, las nuevas funciones de OME no estarán disponibles. Una vez que se actualiza la interfaz de usuario, los usuarios pueden proteger los mensajes de correo electrónico con las nuevas funciones de OME.
   
-4. (Opcional) Configurar las reglas de flujo de correo nuevo o actualice reglas de flujo de correo existentes que definen cómo y cuándo desea que Office 365 para cifrar los mensajes enviados desde su organización.
+4. Opcional Configure nuevas reglas de flujo de correo o actualice las reglas de flujo de correo existentes que definen cómo y cuándo desea que Office 365 Cifre los mensajes enviados desde su organización.
 
-## <a name="verify-that-the-new-capabilities-for-ome-are-configured-properly-by-using-windows-powershell"></a>Compruebe que las nuevas capacidades para OME están configuradas correctamente mediante el uso de Windows PowerShell
+## <a name="verify-that-the-new-capabilities-for-ome-are-configured-properly-by-using-windows-powershell"></a>Comprobar que las nuevas capacidades para OME están configuradas correctamente mediante Windows PowerShell
 
-Siga estos pasos para comprobar que el inquilino está configurado correctamente para usar las nuevas capacidades para OME a través de Exchange Online PowerShell.
+Siga estos pasos para comprobar que el inquilino está configurado correctamente para usar las nuevas funciones de OME a través de PowerShell de Exchange Online.
   
-1. Uso de una cuenta de trabajo o escuela que tiene permisos de administrador global de la organización de Office 365, iniciar una sesión de Windows PowerShell y conectarse a Exchange Online. Para obtener instrucciones, vea [Connect to Exchange Online PowerShell](https://aka.ms/exopowershell).
+1. Con una cuenta profesional o educativa que tenga permisos de administrador global en su organización de Office 365, inicie una sesión de Windows PowerShell y conéctese a Exchange Online. Para obtener instrucciones, vea [conectarse a Exchange Online PowerShell](https://aka.ms/exopowershell).
 
-2. Ejecute el cmdlet Test-IRMConfiguration mediante la siguiente sintaxis:
+2. Ejecute el cmdlet test-IRMConfiguration con la siguiente sintaxis:
 
      ```powershell
      Test-IRMConfiguration [-Sender <email address >]
@@ -78,7 +78,7 @@ Siga estos pasos para comprobar que el inquilino está configurado correctamente
      Test-IRMConfiguration -Sender securityadmin@contoso.com
      ```
 
-    Donde la dirección de correo electrónico es la dirección de correo electrónico de un usuario en la organización de Office 365. Mientras opcional, que se proporcione una dirección de correo electrónico del remitente fuerza al sistema a llevar a cabo comprobaciones adicionales. Los resultados de deben tener un aspecto como las siguientes:
+    Donde email address es la dirección de correo electrónico de un usuario de su organización de Office 365. Si bien es opcional, al suministrar una dirección de correo electrónico del remitente, el sistema debe realizar comprobaciones adicionales. Los resultados deben tener el siguiente aspecto:
 
      ```text
     Results : Acquiring RMS Templates ...
@@ -94,31 +94,31 @@ Siga estos pasos para comprobar que el inquilino está configurado correctamente
             OVERALL RESULT: PASS
     ```
 
-    Donde *Contoso* se reemplaza con el nombre de la organización de Office 365.
+    Donde *contoso* es reemplazado por el nombre de su organización de Office 365.
 
-    Los nombres de las plantillas predeterminadas que se devuelven en los resultados pueden ser diferentes de los que se muestran en los resultados anteriores.
+    Los nombres de las plantillas predeterminadas que se devuelven en los resultados pueden ser diferentes de los mostrados en los resultados anteriores.
 
-    Para obtener una introducción a las plantillas e información acerca de las plantillas predeterminadas, vea [configuración y administración de plantillas para la protección de la información de Azure](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-templates). Para obtener información acerca de la no reenviar opción, la opción sólo para cifrar y cómo crear plantillas adicionales o averiguar qué derechos se incluyen en una plantilla existente, vea [configuración de derechos de uso de Azure Rights Management](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights).
+    Para obtener una introducción a las plantillas y la información sobre las plantillas predeterminadas, vea [Configuring and Managing templates for Azure Information Protection](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-templates). Para obtener información sobre la opción no reEnviar, la opción de solo cifrado y cómo crear plantillas adicionales, o averiguar qué derechos se incluyen en una plantilla existente, vea [Configuring Usage Rights for Azure Rights Management](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights).
 
-3. Ejecute el cmdlet Remove-PSSession para desconectarse del servicio de administración de derechos.
+3. Ejecute el cmdlet Remove-PSSession para desconectarse del servicio Rights Management.
     
      ```powershell
      Remove-PSSession $session
      ```
 
-## <a name="next-steps-define-new-mail-flow-rules-that-use-the-new-ome-capabilities"></a>Pasos siguientes: definir nuevas reglas de flujo de correo que utilice las nuevas capacidades OME
+## <a name="next-steps-define-new-mail-flow-rules-that-use-the-new-ome-capabilities"></a>Pasos siguientes: definir nuevas reglas de flujo de correo que usen las nuevas funciones de OME
 
-Este paso es opcional para las nuevas implementaciones OME, sin embargo, este paso es necesario para las implementaciones de OME existentes que ya tienen las reglas de flujo de correo configuradas para cifrar el correo saliente. Si desea aprovechar las ventajas de las nuevas capacidades OME, debe actualizar las reglas de flujo de correo existente. De lo contrario, los usuarios seguirán recibir correo cifrado que usa el formato de los datos adjuntos HTML anterior en lugar de la experiencia OME nuevo, sin problemas.
+Este paso es opcional para las implementaciones de OME nuevas; sin embargo, este paso es necesario para las implementaciones de OME existentes que ya tienen reglas de flujo de correo configuradas para cifrar el correo saliente. Si desea aprovechar las nuevas capacidades de OME, debe actualizar las reglas de flujo de correo existentes. De lo contrario, los usuarios seguirán recibiendo correo cifrado que usa el formato de datos adjuntos HTML anterior en lugar de la nueva experiencia de OME sin problemas.
   
-Reglas de flujo de correo determinan en qué correo electrónico de condiciones deben cifrarse los mensajes, así como las condiciones para que el cifrado de quitar. Cuando se establece una acción para una regla, todos los mensajes que coincidan con las condiciones de regla se cifran cuando se envían.
+Las reglas de flujo de correo determinan en qué condiciones se deben cifrar los mensajes de correo electrónico, así como las condiciones para quitar ese cifrado. Cuando se establece una acción para una regla, los mensajes que cumplan las condiciones de la regla se cifran cuando se envían.
   
-Para obtener más información acerca de las reglas de flujo de correo, consulte [definir reglas de flujo de correo para cifrar mensajes de correo electrónico en Office 365](define-mail-flow-rules-to-encrypt-email.md).
+Para obtener más información acerca de las reglas de flujo de correo, vea [definir reglas de flujo de correo para cifrar mensajes de correo electrónico en Office 365](define-mail-flow-rules-to-encrypt-email.md).
   
 ## <a name="related-topics"></a>Temas relacionados
 
-[Enviar, ver y responder a los mensajes cifrados en Outlook](https://support.office.com/article/eaa43495-9bbb-4fca-922a-df90dee51980.aspx)
+[Enviar, ver y responder mensajes cifrados en Outlook](https://support.office.com/article/eaa43495-9bbb-4fca-922a-df90dee51980.aspx)
   
-[Habilitar Aadrm](https://docs.microsoft.com/powershell/module/aadrm/enable-aadrm?view=azureipps)
+[EnAble-Aadrm](https://docs.microsoft.com/powershell/module/aadrm/enable-aadrm?view=azureipps)
   
 [Conectarse a Exchange Online mediante PowerShell remoto](https://technet.microsoft.com/library/jj984289%28v=exchg.160%29.aspx)
   

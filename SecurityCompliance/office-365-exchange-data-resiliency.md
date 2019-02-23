@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Una explicación de los diversos aspectos de la resistencia de datos en Exchange Online y Office 365.
-ms.openlocfilehash: 5c0f42d1abc48b497a915354e3056b47a41326c5
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+ms.openlocfilehash: 02395c9d87f9f75b260bac88e97db3df7d23e532
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30090952"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220410"
 ---
 # <a name="exchange-online-data-resiliency-in-office-365"></a>Resistencia de datos de Exchange online en Office 365
 

@@ -1,64 +1,64 @@
 ---
-title: Notas de la versión de exhibición de documentos electrónicos avanzada (vista previa)
+title: Notas de la versión para eDiscovery avanzado (versión preliminar)
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Este artículo contiene las notas de la versión de exhibición de documentos electrónicos avanzada (vista previa).
-ms.openlocfilehash: 305d1da31c9628f4f87b7b50da0b48c64efb808d
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+description: Este artículo contiene las notas de la versión para eDiscovery avanzado (versión preliminar).
+ms.openlocfilehash: c717a07d75e84046de07203515fceaf26aab5a41
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29608368"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30212940"
 ---
-# <a name="release-notes-for-advanced-ediscovery-preview"></a>Notas de la versión de exhibición de documentos electrónicos avanzada (vista previa)
+# <a name="release-notes-for-advanced-ediscovery-preview"></a>Notas de la versión para eDiscovery avanzado (versión preliminar)
 
-El programa de Public Preview de exhibición de documentos electrónicos avanzada es la forma de obtener acceso rápido a la funcionalidad próxima y las actualizaciones. Para obtener acceso rápido a las características más recientes, crear y usar un caso de exhibición de documentos electrónicos avanzada (vista previa) en el centro de cumplimiento de seguridad de Office 365 &. Vea [crear un nuevo caso](create-new-ediscovery-case.md).
+El programa de vista previa pública para eDiscovery avanzado es la forma de obtener acceso anticipado a la próxima funcionalidad y actualizaciones. Para obtener acceso anticipado a las características más recientes, simplemente cree y use un caso de exhibición avanzada de documentos electrónicos (versión preliminar) en el centro de seguridad & cumplimiento de Office 365. Consulte [Create a New Case](create-new-ediscovery-case.md).
 
 ## <a name="issues-fixed-in-this-release"></a>Problemas corregidos en esta versión
 
-- DCR: Control de excepciones para los elementos Unindexed y huérfanos
-- DCR: Notificaciones de espera
-- DCR: Custodia en la exhibición de documentos electrónicos
+- DCR: control de excepciones para los elementos no indexados y huérfanos
+- DCR: mantener notificaciones
+- DCR: custodios en eDiscovery
 
 ## <a name="whats-new"></a>Novedades
 
-- **Exploración de Redesigned en el centro de cumplimiento de seguridad &** – exhibición de documentos electrónicos avanzada (vista previa) tiene una nueva apariencia. Usar la exhibición de documentos electrónicos avanzada (vista previa) para administrar más de su flujo de trabajo de caso.
+- **La navegación rediseñada en el centro de seguridad _AMP_ cumplimiento del** -Advanced EDiscovery (versión preliminar) tiene un aspecto nuevo. Use la exhibición avanzada de documentos electrónicos (versión preliminar) para administrar más el flujo de trabajo de casos.
 
-- **Administración de casos** – no hay compatibilidad adicional para nuevos tipos de mayúsculas y minúsculas. También puede seleccionar y guardar los casos recientes y favoritos. Seguimiento y supervisar la actividad dentro y entre los casos mediante paneles nuevo.
+- **Administración de casos** : hay compatibilidad adicional para nuevos tipos de casos. También puede seleccionar y guardar sus casos de reciente y favoritos. Seguimiento y supervisión de la actividad en y a través de los casos con nuevos paneles.
 
-- **Administración de custodia** : agregar y quitar usuarios como custodia de datos dentro de un caso.
+- **Administración** de custodios – agregue y elimine usuarios como custodios de datos en un caso.
 
-- **Exchange, OneDrive y los equipos de integración** : agregar automáticamente el buzón de un usuario actual, OneDrive para la cuenta de empresa y los sitios de Microsoft Teams a un caso. 
+- **Integración de Exchange, onedrive y Teams** : agregue automáticamente el buzón actual de un usuario, la cuenta de onedrive para la empresa y los sitios de Microsoft Teams a un caso. 
 
-- **Comunicaciones de custodia** – enviar y administrar las notificaciones de retención legal en nombre de la organización.
+- **Comunicaciones** de custodios: Envíe y administre notificaciones de retención legal en nombre de su organización.
 
-- **Portal de custodia** – nuevo portal de custodia para tener acceso a su activo mantenga avisos.
+- **Portal de custodia** : nuevo portal para los custodios para acceder a sus avisos de espera activos.
 
-- **Indización profundo** – volver a rastrear elementos petición parcialmente indizados.
+- **IndizaCión profunda** : vuelva a rastrear los elementos indexados parcialmente a petición.
 
-- **Corrección de error** – Remediate o descargar procesamiento errores; Esto incluye compatibilidad con corrección para tipos de archivos de gran tamaño, archivos protegidos con contraseña y mucho más. 
+- **Corrección** de errores: corregir o descargar errores de procesamiento; Esto incluye compatibilidad con la corrección para tipos de archivo grandes, archivos protegidos con contraseña y mucho más. 
 
-- **Mejoras en la búsqueda** : crear una búsqueda mediante la identificación de custodia o ubicaciones.
+- **Mejoras en la búsqueda** : cree una búsqueda identificando los custodios o las ubicaciones.
 
-- **Conjuntos de trabajo** – auditoría estática, pista y administrar conjuntos de documentos.
+- **Conjuntos de trabajo** : administre, realice un seguimiento y audite conjuntos de documentos estáticos.
 
-- **Revise** – utilice una nativo, texto y casi nativo vista para revisar los documentos de agregado al conjunto de trabajo.
+- **Revisión** : Use una vista nativa, de texto y casi nativa para revisar los documentos agregados al conjunto de trabajo.
 
-- **Redact, etiqueta y puede incluir anotaciones en** – censurar texto, aplicar etiquetas y realizar anotaciones como revisar documentos.
+- **Censurar, etiquetar y anotar** : censurar texto, aplicar etiquetas y crear anotaciones mientras revisa documentos.
   
-- **Con tecnología de análisis de revisión**: análisis de exhibición de documentos electrónicos de aprovechar para buscar, buscar y seleccionar los resultados dentro de un conjunto de trabajo.
+- **Revisión con tecnología de análisis**: aproveche el análisis de eDiscovery para buscar, buscar y deshacer resultados en un conjunto de trabajo.
 
-- **Trabajos** : seguimiento de estado de los procesos de larga ejecución.
+- **Trabajos** : seguimiento del estado de los procesos de ejecución prolongada.
 
-- **Actividades de auditoría de nuevo** : pista y vista nueva auditar la actividad de exhibición de documentos electrónicos avanzadas.
+- **Nuevas actividades de auditoría** : realizar un seguimiento y ver una nueva actividad de auditoría para la exhibición avanzada de documentos electrónicos.

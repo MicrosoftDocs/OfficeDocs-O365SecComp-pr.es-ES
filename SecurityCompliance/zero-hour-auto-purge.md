@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 12/05/2018
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
@@ -14,61 +14,61 @@ search.appverid:
 - MBS150
 - MET150
 ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
-description: Purgar cero horas automático (ZAP) es una característica de protección de correo electrónico que detecta los mensajes con el correo no deseado o malware que ya se han entregado a las bandejas de entrada de los usuarios y, a continuación, representa el contenido malintencionado inocua. ZAP ¿cómo esto depende del tipo de contenido malintencionado detectado.
-ms.openlocfilehash: 1e90e69018b7640bb36011287abd5bcd77d43358
-ms.sourcegitcommit: 30faa3ba91cab4c36e3d8d8ed5858d5269ea8a56
+description: La depuración automática de cero horas (ZAP) es una característica de protección de correo electrónico que detecta los mensajes con correo no deseado o malware que ya se han entregado a los buzones de los usuarios y, a continuación, inofensivos en el contenido malintencionado. Cómo hace ZAP esto depende del tipo de contenido malintencionado detectado.
+ms.openlocfilehash: eac984289cf5e2785e8ff61e4a3dd3e0c0d99732
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "27749324"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30213571"
 ---
 # <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>Purga automática cero horas: protección contra correo no deseado y malware
 
 ## <a name="overview"></a>Información general
 
-Purgar cero horas automático (ZAP) es una característica de protección de correo electrónico que detecta los mensajes con phishing, spam o malware que ya se han entregado a las bandejas de entrada de los usuarios y, a continuación, representa el contenido malintencionado inocua. ¿Cómo ZAP hace esto depende del tipo de contenido malintencionado detectado; Puede que haya que hacerlo correo debido a contenido de correo, las direcciones URL o los datos adjuntos.
+La purga automática de cero horas (ZAP) es una característica de protección de correo electrónico que detecta los mensajes con phish, correo no deseado o malware que ya se han entregado a los buzones de los usuarios y, a continuación, inofensivos en el contenido malintencionado. Cómo hace ZAP esto depende del tipo de contenido malintencionado detectado; el correo se puede zapped debido al contenido de correo, las direcciones URL o los datos adjuntos.
   
-ZAP está disponible con el valor predeterminado de Exchange Online Protection que se incluye con cualquier suscripción de Office 365 que contiene los buzones de Exchange Online.
+ZAP está disponible con la protección de Exchange Online predeterminada que se incluye con cualquier suscripción a Office 365 que contenga buzones de correo de Exchange Online.
 
-ZAP está activado de forma predeterminada, pero se deben cumplir las siguientes condiciones:
+ZAP está activado de forma predeterminada, pero deben cumplirse las siguientes condiciones:
   
-- **Acción de spam** se establece para **mover el mensaje a la carpeta correo no deseado**. <br/>También puede crear una nueva directiva de filtro de spam que sólo se aplica a un conjunto de usuarios si no desea que todos los buzones que se filtran por ZAP.
+- La **acción de correo no deseado** está configurada para **mover el mensaje a la carpeta correo no deseado**. <br/>También puede crear una nueva Directiva de filtro de correo no deseado que se aplique sólo a un grupo de usuarios si no desea que ZAP pueda filtrar todos los buzones.
 
-- Los usuarios conservan su valor predeterminado configuración del correo electrónico no deseado y no han desactivado de protección de correo electrónico no deseado. (Para obtener información detallada acerca de las opciones de usuario en Outlook, vea [cambiar el nivel de protección en el filtro de correo electrónico no deseado](https://support.office.com/article/change-the-level-of-protection-in-the-junk-email-filter-e89c12d8-9d61-4320-8c57-d982c8d52f6b) ). 
+- Los usuarios han mantenido su configuración predeterminada de correo no deseado y no han desactivado la protección contra correo electrónico no deseado. (Consulte [cambiar el nivel de protección en el filtro de correo no deseado](https://support.office.com/article/change-the-level-of-protection-in-the-junk-email-filter-e89c12d8-9d61-4320-8c57-d982c8d52f6b) para obtener más información acerca de las opciones de usuario en Outlook). 
   
-## <a name="how-does-zap-work"></a>¿Cómo funciona ZAP?
+## <a name="how-does-zap-work"></a>¿Cómo funciona el ZAP?
 
-Las firmas de motor y malware contra correo no deseadas en las actualizaciones de Office 365 en tiempo real de manera diaria. Sin embargo, los usuarios aún es posible que obtenga malintencionados mensajes entregados a sus bandejas de entrada para una variedad de motivos, incluido si el contenido se weaponized después de que se envía a los usuarios. ZAP soluciona este problema mediante la supervisión de forma continua las actualizaciones de las firmas de correo no deseado y malware de Office 365. ZAP puede buscar y quitar mensajes entregados que ya están en las bandejas de entrada de los usuarios. 
+Office 365 actualiza las firmas de malware y del motor de correo no deseado en tiempo real de manera diaria. Sin embargo, es posible que los usuarios sigan teniendo mensajes malintencionados entregados a sus bandejas de correo por diversos motivos, incluso si el contenido se ha armado después de que se entregue a los usuarios. ZAP soluciona el control continuado de las actualizaciones de las firmas de correo no deseado y malware de Office 365. ZAP puede buscar y quitar los mensajes previamente entregados que ya se encuentran en las bandejas de los usuarios. 
 
-- Para el correo que se identifica como correo no deseado, ZAP mueve mensajes no leídos a la carpeta de correo electrónico no deseado de los usuarios. 
+- En el caso del correo identificado como correo no deseado, ZAP mueve los mensajes no leídos a la carpeta de correo no deseado de los usuarios. 
 
-- Para el correo que se identifica como correo no deseado, ZAP mueve los mensajes a la carpeta de correo electrónico no deseado de los usuarios, independientemente de si se ha leído el correo electrónico.
+- En el caso del correo identificado como correo no deseado, ZAP mueve los mensajes a la carpeta de correo no deseado de los usuarios, independientemente de si se ha leído el correo electrónico.
 
-- Para recién detectado malware, ZAP quita los datos adjuntos de mensajes de correo electrónico, independientemente de si se ha leído el correo electrónico. 
+- Para el malware recién detectado, ZAP quita los datos adjuntos de los mensajes de correo electrónico, independientemente de si el correo electrónico se ha leído. 
   
-La acción ZAP es transparente para el usuario del buzón; no se notifica sobre esto si se mueve un mensaje de correo electrónico.
+La acción ZAP es fluida para el usuario del buzón de correo; no se notifica si se mueve un mensaje de correo electrónico.
   
-Permitir listas, [reglas de flujo de correo](https://go.microsoft.com/fwlink/p/?LinkId=722755)y las reglas de usuario final o filtros adicionales tienen prioridad sobre ZAP.
+Las listas de permitidos, [las reglas de flujo de correo](https://go.microsoft.com/fwlink/p/?LinkId=722755)y las reglas de usuario final o los filtros adicionales tienen prioridad sobre Zap.
   
-## <a name="to-review-or-set-up-a-spam-filter-policy"></a>Para revisar o configurar una directiva de filtro de spam
+## <a name="to-review-or-set-up-a-spam-filter-policy"></a>Para revisar o configurar una directiva de filtro de correo no deseado
   
-1. Vaya a [https://protection.office.com](https://protection.office.com) e iniciar sesión con su cuenta de trabajo o escuela para Office 365.
+1. Vaya a [https://protection.office.com](https://protection.office.com) e inicie sesión con su cuenta profesional o educativa para Office 365.
 
-2. En **administración de amenaza**, elija **contra correo no deseado**.
+2. En **Administración de amenazas**, elija **anti-spam**.
 
 3. Revise la configuración estándar. 
 
-4. Si desea personalizar la configuración, seleccione la ficha **personalizado** y activar la **configuración personalizada**. Editar la configuración y si lo desea, elija **+ crear una directiva** para agregar una nueva directiva. 
+4. Si desea personalizar la configuración, seleccione la pestaña **personalizado** y active la **Configuración personalizada**. Modifique la configuración y, si quiere, elija **+ crear una directiva** para agregar una nueva Directiva. 
     
-## <a name="to-see-if-zap-moved-your-message"></a>Para ver si ZAP mueve el mensaje
+## <a name="to-see-if-zap-moved-your-message"></a>Para ver si ZAP movió el mensaje
 
-Si desea ver si ZAP mueve el mensaje, puede utilizar ya sea el [informe de estado de protección de amenaza](view-email-security-reports.md#threat-protection-status-report) (o [El Explorador de amenaza](use-explorer-in-security-and-compliance.md)).
+Si desea ver si el mensaje se movió a un ZAP, puede usar el [Informe de estado de protección contra amenazas](view-email-security-reports.md#threat-protection-status-report) (o el [Explorador de amenazas](use-explorer-in-security-and-compliance.md)).
     
 ## <a name="to-disable-zap"></a>Para deshabilitar ZAP
   
-Si desea deshabilitar eliminar para el inquilino de Office 365, o un conjunto de usuarios, use el parámetro **ZapEnabled** de [Set-HostedContentFilterPolicy](https://go.microsoft.com/fwlink/p/?LinkId=722758), un cmdlet de elevación de privilegios.
+Si desea deshabilitar ZAP para el inquilino de Office 365 o un conjunto de usuarios, use el parámetro **ZapEnabled** de [set-HostedContentFilterPolicy](https://go.microsoft.com/fwlink/p/?LinkId=722758), un cmdlet de EOP.
     
-En el siguiente ejemplo, ZAP está deshabilitado para una directiva de filtro de contenido denominada "Prueba".
+En el siguiente ejemplo, se deshabilita ZAP para una directiva de filtro de contenido denominada "Test".
     
 ```
   Set-HostedContentFilterPolicy -Identity Test -ZapEnabled $false
@@ -76,17 +76,17 @@ En el siguiente ejemplo, ZAP está deshabilitado para una directiva de filtro de
 
 ## <a name="faq"></a>Preguntas más frecuentes
 
-### <a name="what-happens-if-a-legitimate-message-is-moved-to-the-junk-mail-folder"></a>¿Qué ocurre si un mensaje legítimo se mueve a la carpeta correo electrónico no deseado?
+### <a name="what-happens-if-a-legitimate-message-is-moved-to-the-junk-mail-folder"></a>¿Qué sucede si un mensaje legítimo se mueve a la carpeta correo no deseado?
   
-Debe seguir el proceso de generación de informes normal de falsos positivos. La única razón se pasaría el mensaje de la Bandeja de entrada a la carpeta correo electrónico no deseado sería debido a que el servicio ha determinado que el mensaje es correo no deseado o malintencionado.
+Debe seguir el proceso normal de informes para falsos positivos. La única razón por la que el mensaje se movería de la bandeja de entrada a la carpeta correo no deseado sería porque el servicio determinó que el mensaje era correo no deseado o malintencionado.
   
-### <a name="what-if-i-use-the-office-365-quarantine-instead-of-the-junk-mail-folder"></a>¿Qué ocurre si utilizo la cuarentena de Office 365 en lugar de la carpeta de correo electrónico no deseado?
+### <a name="what-if-i-use-the-office-365-quarantine-instead-of-the-junk-mail-folder"></a>¿Qué ocurre si utilizo la cuarentena de Office 365 en lugar de la carpeta de correo no deseado?
   
-ZAP no mover los mensajes en cuarentena desde la Bandeja de entrada en este momento.
+ZAP no mueve los mensajes a cuarentena de la bandeja de entrada en este momento.
   
-### <a name="what-if-i-have-a-custom-mail-flow-rule-block-allow-rule"></a>¿Qué ocurre si tiene una regla de flujo de correo personalizado (bloquear o permitir regla)?
+### <a name="what-if-i-have-a-custom-mail-flow-rule-block-allow-rule"></a>¿Qué ocurre si tengo una regla de flujo de correo personalizada (regla de bloqueo/permiso)?
   
-Las reglas creadas por administradores (reglas de flujo de correo) o las reglas de bloqueo y permitir tiene prioridad. Este tipo de mensajes se excluye de los criterios de la característica.
+Las reglas creadas por los administradores (reglas de flujo de correo) o las reglas de bloqueo y permiso tienen prioridad. Estos mensajes se excluyen de los criterios de la característica.
   
 ## <a name="related-topics"></a>Temas relacionados
 

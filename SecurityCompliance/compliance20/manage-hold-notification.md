@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,64 +14,64 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 38db73000e84db0bbdcac7710ef71431666a5494
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: b633e2522b1f3593f2c095a8f0cc74b4e8571f4a
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29706051"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30213590"
 ---
 # <a name="manage-hold-notifications"></a>Administrar las notificaciones de retención
 
-Después de haber iniciado el departamento jurídico mantenga el flujo de trabajo de notificación, puede sacar provecho de exhibición de documentos electrónicos avanzada (vista previa) para realizar un seguimiento del estado de las comunicaciones. La ficha comunicaciones se muestran todas las notificaciones de suspensión dentro de su caso de exhibición de documentos electrónicos avanzada (vista previa). Aquí, puede ver detalles, como el número de custodia que se han asignado o ha confirmado el aviso.
+Una vez que haya iniciado el flujo de trabajo de la notificación de retención legal, puede aprovechar la exhibición avanzada de documentos electrónicos (vista previa) para realizar un seguimiento del estado de sus comunicaciones. La pestaña comunicaciones muestra todas las notificaciones de retención en el caso de la exhibición avanzada de documentos electrónicos (versión preliminar). Aquí puede ver los detalles, como el número de custodios que se han asignado o que han confirmado el aviso.
 
 ## <a name="view-communication-details"></a>Ver detalles de comunicación
 
-### <a name="track-acknowledgements"></a>Realizar un seguimiento de las confirmaciones
+### <a name="track-acknowledgements"></a>Rastrear confirmaciones
 
-Una vez que seleccione una comunicación de las **comunicaciones**, ficha puede ver una lista de custodia que ha confirmado un aviso de suspensión. 
+Una vez que seleccione una comunicación en la ficha **comunicaciones**, puede ver una lista de custodios que han confirmado un aviso de retención. 
 
-### <a name="preview-acknowledgements"></a>Confirmaciones de vista previa
+### <a name="preview-acknowledgements"></a>Vista previa de confirmaciones
 
-En la barra flotante detalles de comunicación, puede obtener una vista previa de los detalles con respecto a la comunicación con retención legal. En el panel de **vista previa** , podrá ver una instantánea rápida de la retención legal tenga en cuenta, así como la configuración y el contenido de las notificaciones de flujo de trabajo. El panel de vista previa también le detalles de la superficie alrededor del cual custodia ya ha confirmado el aviso.
+En el control flotante comunicación de detalles, puede obtener una vista previa de los detalles de la comunicación de suspensión legal. En el panel **vista previa** , podrá ver una instantánea rápida del aviso de retención legal, así como la configuración y el contenido de las notificaciones de flujo de trabajo. El panel de vista previa también muestra detalles sobre qué custodios ya han confirmado el aviso.
 
 ## <a name="taking-action-on-existing-communications"></a>Realizar acciones en las comunicaciones existentes
 
 ### <a name="re-send-a-hold-notice"></a>Volver a enviar un aviso de suspensión
 
-En ocasiones, custodia perder el control de sus correos electrónicos en su trabajo diario. O bien, para un litigio prolongados, custodia puede llegar y preguntará si desea volver a enviar un aviso. Cuando administre el flujo de trabajo alrededor de avisos de retención legal, debe volver a enviar un aviso para incorporar a la "superior del buzón de un usuario".
+En ocasiones, los custodios pierden el seguimiento de sus correos electrónicos en su trabajo cotidiano. O bien, para un litigio de larga duración, un custodio puede ponerse en contacto con usted y pedirle que vuelva a enviar un aviso. Mientras administra el flujo de trabajo en torno a los avisos de suspensión legal, es posible que deba volver a enviar un aviso para volver a colocarlo en la "parte superior del buzón de un usuario".
 
-Volver a puede enviar un aviso de suspensión a su custodia por:
-1. Navegue a un caso de dentro de **seguridad y cumplimiento de normas > avanzada exhibición de documentos electrónicos (vista previa)**.
-2. Una vez que haya seleccionado un caso, vaya a la ficha **Communications** .
-3. Para volver a enviar un aviso de retención legal a custodia, seleccione la comunicación y haga clic en la opción **volver a enviar** .
-4. Si una custodia no ha confirmado ya su notificación de espera, a continuación, se reiniciará el flujo de escalación y aviso. A continuación, si una custodia ya ha confirmado el aviso de suspensión, la custodia sólo reciben una copia de la notificación de espera inicial.
+Puede volver a enviar un aviso de suspensión a su custodio:
+1. Navegue a un caso dentro de **seguridad y cumplimiento de _GT_ Advanced eDiscovery (versión preliminar)**.
+2. Una vez que haya seleccionado un caso, vaya a la pestaña **comunicaciones** .
+3. Para volver a enviar un aviso de suspensión legal a un custodio, seleccione la comunicación y haga clic en la opción **volver a enviar** .
+4. Si un custodio todavía no ha reconocido su notificación de retención, se reiniciará el flujo de aviso y escalado. Si un custodio ya ha confirmado el aviso de retenciones, el custodio recibirá una copia del aviso de retenciones inicial.
 
 > [!NOTE]
-> Sólo puede volver a enviar una notificación de retención legal a custodia que se asigna a la comunicación. 
+> Solo se puede volver a enviar una notificación de suspensión legal a los custodios asignados a la comunicación. 
 
 ### <a name="edit-a-communication"></a>Editar una comunicación
 
-#### <a name="update-preservation-requirements"></a>Requisitos de conservación de actualización
+#### <a name="update-preservation-requirements"></a>Requisitos de conservación de la actualización
   
-Medida que avanza el caso, custodia es posible que sea necesario para conservar los datos adicionales o menor que anteriormente se le indique. En términos de exhibición de documentos electrónicos, debe volver a emitir el aviso de suspensión con contenido actualizado.
+A medida que avanza el caso, es posible que se necesiten custodios para conservar más o menos datos de los que se indicó anteriormente. En términos de exhibición de documentos electrónicos, debe volver a emitir el aviso de suspensión con contenido actualizado.
 
-Para actualizar el contenido de la notificación de espera inicial:
+Para actualizar el contenido del aviso de suspensión inicial:
 
-1. Navegue a un caso de dentro de **seguridad y cumplimiento de normas > avanzada exhibición de documentos electrónicos (vista previa)**.
-2. Una vez que haya seleccionado un caso, vaya a la ficha **Communications** .
-3. Seleccione el aviso de espera que le gustaría usar para actualizar y haga clic en **Editar**.
-4. En el flujo de trabajo de edición, seleccione **Definir el contenido del Portal** y actualizar el contenido de la notificación. 
-5. Haga clic en **Guardar**. Una vez guardado, se enviará el aviso de emisión de re a todas la custodia que actualmente está asignado a la notificación de retención legal. Además, si están habilitados los avisos de aviso/escalación, a continuación, estos flujos de trabajo se reiniciará también. 
+1. Navegue a un caso dentro de **seguridad y cumplimiento de _GT_ Advanced eDiscovery (versión preliminar)**.
+2. Una vez que haya seleccionado un caso, vaya a la pestaña **comunicaciones** .
+3. Seleccione el aviso de retención que quiera actualizar y haga clic en **Editar**.
+4. En Editar flujo de trabajo, seleccione **definir contenido del portal** y actualizar el contenido del aviso. 
+5. Haga clic en **Guardar**. Una vez guardado, se enviará el aviso de reemisión a todos los custodios que están actualmente asignados a la notificación de retenciones legales. Además, si se habilitan los avisos de aviso/remisión, estos flujos de trabajo también se reiniciarán. 
 
 
-#### <a name="update-legal-hold-notifications-and-settings"></a>Actualización con fines legales mantenga las notificaciones y la configuración
+#### <a name="update-legal-hold-notifications-and-settings"></a>Actualizar la configuración y las notificaciones de retención legal
 
-Cuando se actualizarán el contenido o la configuración de la notificación de emisión, versión, nueva emisión, aviso o escalación, estos cambios se aplicarán a todas las comunicaciones futuras generadas por el flujo de trabajo.
+Cuando se actualiza el contenido o la configuración del aviso de emisión, publicación, reemisión, aviso o escalado, estos cambios se aplican a todas las comunicaciones futuras generadas por el flujo de trabajo.
 
 ## <a name="related-information"></a>Información relacionada 
 
-- [Crear un aviso de retención legal](create-hold-notification.md)
+- [Crear un aviso de suspensión legal](create-hold-notification.md)
     
 - [Confirmar una notificación de retención](acknowledge-hold-notification.md)
     

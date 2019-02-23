@@ -5,60 +5,60 @@ author: denisebmsft
 manager: laurawi
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 97e9c3d9-df89-458e-924b-369becee5532
-description: Use la página alertas de seguridad de la aplicación de nube de Office 365 para ver posibles problemas y tomar medidas. Puede descartar o resolver las alertas y, si es necesario, suspender una cuenta de usuario.
-ms.openlocfilehash: ff20b913553414d796f9653108ac9b8a3d84cb74
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+description: Use la página Alertas de Office 365 Cloud App Security para ver posibles problemas y emprender acciones. Puede omitir o resolver las alertas y, si es necesario, suspender una cuenta de usuario.
+ms.openlocfilehash: 6c2f9788cb238e86abc347a3a118eb08fa84e971
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29603681"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30213170"
 ---
 # <a name="review-and-take-action-on-alerts-in-office-365-cloud-app-security"></a>Revisar y realizar acciones sobre alertas en Office 365 Cloud App Security
   
-|Evaluación **\>**|Planeación de **\>**|Implementación **\>**|Utilización de ***|
+|Evaluación * *\>**|Planeación * *\>**|Implementación * *\>**|Uso * * * *|
 |:-----|:-----|:-----|:-----|
-|[Empezar a evaluar](office-365-cas-overview.md) <br/> |[Comenzar a planear](get-ready-for-office-365-cas.md) <br/> |[Iniciar la implementación](turn-on-office-365-cas.md) <br/> |¡Están aquí!  <br/> [Pasos siguientes](#next-steps) <br/> |
+|[Empezar a evaluar](office-365-cas-overview.md) <br/> |[Empezar a planear](get-ready-for-office-365-cas.md) <br/> |[Iniciar la implementación](turn-on-office-365-cas.md) <br/> |Ya está aquí.  <br/> [Pasos siguientes](#next-steps) <br/> |
    
-Puede usar la página alertas de seguridad de la aplicación de nube de Office 365 para ver posibles problemas y, si es necesario, tomar medidas.
+Puede usar la página de alertas de Office 365 Cloud App Security para ver posibles problemas y, si es necesario, realizar una acción.
   
 > [!NOTE]
-> Debe ser un administrador global o administrador de seguridad para llevar a cabo las tareas de este artículo. Vea [permisos en la seguridad de Office 365 &amp; centro de cumplimiento](permissions-in-the-security-and-compliance-center.md). 
+> Debe ser administrador global o administrador de seguridad para realizar las tareas de este artículo. Consulte [permisos en el centro de seguridad &amp; y cumplimiento de Office 365](permissions-in-the-security-and-compliance-center.md). 
   
-## <a name="how-to-get-to-the-alerts-page"></a>Cómo llegar a la página de alertas
+## <a name="how-to-get-to-the-alerts-page"></a>Cómo obtener acceso a la página de alertas
 
-1. Vaya al portal de seguridad de la aplicación en la nube ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)) e iniciar sesión.
+1. Vaya al portal de Cloud App Security ([https://portal.cloudappsecurity.com](https://portal.cloudappsecurity.com)) e inicie sesión.
   
-2. En la barra de navegación a través de la parte superior de la pantalla, elija **alertas**.<br/>![En la página alertas, puede ver las alertas que se activaron y todas las acciones realizadas.](media/3b53d4c9-4b13-435d-8547-8c0f9ae6b914.png)
+2. En la barra de navegación en la parte superior de la pantalla, elija **alertas**.<br/>![En la página Alertas, puede ver las alertas que se han desencadenado y las acciones que se han llevado a cabo.](media/3b53d4c9-4b13-435d-8547-8c0f9ae6b914.png)
   
-## <a name="review-and-handle-alerts"></a>Revisión y controlar las alertas
+## <a name="review-and-handle-alerts"></a>Revisar y controlar las alertas
 
-Las alertas le ayudarán a identificar las actividades en el entorno de nube de Office 365 que es posible que desee investigar más. También es posible que decida crear nuevas directivas o edición de directivas existentes en función de las alertas que consulte. Por ejemplo, si ve un administrador de inicio de sesión desde una ubicación extraña, es posible que decida configurar una directiva que impide que los administradores de inicio de sesión en Office 365 de determinadas ubicaciones.
+Las alertas le ayudan a identificar actividades en su entorno de nube de Office 365 que quizá quiera investigar con más detalle. También puede optar por crear nuevas directivas o editar las existentes en función de las alertas que vea. Por ejemplo, si ve que un administrador inicia sesión desde una ubicación extraña, es posible que decida configurar una directiva que impida que los administradores inicien sesión en Office 365 desde determinadas ubicaciones.
   
 > [!TIP]
-> Puede filtrar las alertas por **categoría** o por **gravedad** para que pueda administrar los más importantes en primer lugar. 
+> Puede filtrar las alertas por **categoría** o por **gravedad** para poder administrar las alertas más importantes en primer lugar. 
   
-Para cada alerta, busque en la causa para que pueda decidir qué acción debe realizar. Para ver más detalles acerca de una alerta y tomar medidas, como la resolución de la alerta o suspender una cuenta de los usuarios, elija la alerta para abrir una página de detalles. En la página de detalles, puede revisar el registro de actividad, las cuentas y los usuarios que están relacionadas con la alerta y realizar acciones como las siguientes:
+Para cada alerta, mire qué le causó para poder decidir qué acción llevar a cabo. Para ver más detalles sobre una alerta y emprender acciones como, por ejemplo, resolver la alerta o suspender una cuenta de usuario, elija la alerta para abrir una página de detalles. En la página detalles, puede revisar el registro de actividades, las cuentas y los usuarios que están relacionados con la alerta, y emprender acciones como las siguientes:
   
-- **Descartar** Si la alerta era un falso positivo, cerrarlo. Opcionalmente, puede agregar un comentario que explique por qué se descarta. 
+- **** Descartar Si la alerta era un falso positivo, se ha omitido. Opcionalmente, puede Agregar un comentario que explique por qué se ha desechado. 
     
-- **Resolver la alerta** Si la alerta se desencadenó por una actividad que sabe que no es una amenaza, resolverlo. Opcionalmente, puede agregar un comentario que explique por qué se ha resuelto. 
+- **Resolver alerta** Si la alerta se activó por una actividad que sabe que no es una amenaza, resuélvalo. Opcionalmente, puede Agregar un comentario que explique por qué lo resolvió. 
     
-- **Suspender** Si sospecha que el inicio de sesión no autorizado ins en una cuenta, por ejemplo, alguien que inicie sesión desde otro país cuando sabe que esa persona es físicamente en una oficina local, puede [suspender la cuenta](suspend-or-restore-an-account-in-ocas.md) mientras investigar lo que está ocurriendo. 
+- **Suspender** Si sospecha que hay inicios de sesión no autorizados en una cuenta, por ejemplo, alguien que inicie sesión desde otro país cuando sepa que esa persona se encuentra físicamente en una oficina local, puede [suspender la cuenta](suspend-or-restore-an-account-in-ocas.md) mientras investiga el contenido que se está realizando. 
     
 ## <a name="next-steps"></a>Pasos siguientes
 
 - [Investigar una actividad](investigate-an-activity-in-office-365-cas.md)
     
-- [Suspender o restauración de una cuenta de usuario](suspend-or-restore-an-account-in-ocas.md)
+- [Suspender o restaurar una cuenta de usuario](suspend-or-restore-an-account-in-ocas.md)
     
-- Ver una lista de admitidos de [orígenes de datos y los registros de tráfico Web](web-traffic-logs-and-data-sources-for-ocas.md)
+- Ver una lista de los [orígenes de datos y los registros de tráfico web](web-traffic-logs-and-data-sources-for-ocas.md) admitidos
     
-- Revise las [actividades de uso para la seguridad de la aplicación de nube de Office 365](utilization-activities-for-ocas.md)
+- Revisar las [actividades de uso de Office 365 Cloud App Security](utilization-activities-for-ocas.md)
     
 

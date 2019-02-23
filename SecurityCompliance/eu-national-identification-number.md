@@ -1,39 +1,39 @@
 ---
-title: Número de identificación de la UE nacional
+title: Número de identificación nacional de la UE
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: 8/17/2018
 ms.audience: Admin
 ms.topic: reference
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 2ea971bf-9434-4b61-b825-2bbd28ae6064
-description: En este tema se muestra lo que busca una directiva de (DLP) de prevención de pérdida de datos cuando detecte el tipo de información confidencial de número nacional de identificación de la UE. Este tipo de información confidencial define diferentes patrones, palabras clave y otras pruebas para cada país.
-ms.openlocfilehash: 29d2126b937ff46039284a74eb2a84f2ebbacb41
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: En este tema se muestra qué busca una directiva de prevención de pérdida de datos (DLP) cuando detecta el tipo de información confidencial de número de identificación nacional de la UE. Este tipo de información confidencial define distintos patrones, palabras clave y otras pruebas para cada país.
+ms.openlocfilehash: 9a85fd6954f39de348874e03268a2e19ae47366c
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22536137"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220640"
 ---
-# <a name="eu-national-identification-number"></a>Número de identificación de la UE nacional
+# <a name="eu-national-identification-number"></a>Número de identificación nacional de la UE
 
-En este tema se muestra lo que busca una directiva de (DLP) de prevención de pérdida de datos cuando detecte el tipo de información confidencial de número nacional de identificación de la UE. Este tipo de información confidencial define diferentes patrones, palabras clave y otras pruebas para cada país.
+En este tema se muestra qué busca una directiva de prevención de pérdida de datos (DLP) cuando detecta el tipo de información confidencial de número de identificación nacional de la UE. Este tipo de información confidencial define distintos patrones, palabras clave y otras pruebas para cada país.
   
 ## <a name="austria"></a>Austria
 
 ### <a name="format"></a>Formato
 
-Una combinación de 24 caracteres de letras, números y caracteres especiales
+Una combinación de letras, dígitos y caracteres especiales de 24 caracteres
   
 ### <a name="pattern"></a>Patrón
 
 24 caracteres:
   
--  22 letras (no distingue mayúsculas de minúsculas), dígitos, barras diagonales inversas, barras diagonales o signos más 
+-  22 letras (no distinguen entre mayúsculas y minúsculas), dígitos, barras diagonales inversas, barras diagonales o signos más 
     
-- (No distingue mayúsculas de minúsculas) de dos letras, dígitos, barras diagonales inversas, barras diagonales, signos más o signos igual
+- Dos letras (no distinguen entre mayúsculas y minúsculas), dígitos, barras diagonales inversas, barras diagonales, signos más o signos igual
     
 ### <a name="checksum"></a>Suma de comprobación
 
@@ -43,9 +43,9 @@ No aplicable
 
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
   
-- La expresión regular `Regex_austria_eu_national_id_card` busca contenido que coincide con el patrón. 
+- La expresión `Regex_austria_eu_national_id_card` regular busca contenido que coincide con el patrón. 
     
-- Una palabra clave de `Keywords_austria_eu_national_id_card` se encuentra. 
+- Se encuentra una `Keywords_austria_eu_national_id_card` palabra clave de. 
     
 ```
  
@@ -57,7 +57,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywordsaustriaeunationalidcard"></a>Keywords_austria_eu_national_id_card
 
@@ -70,29 +70,29 @@ número de identidad
 
 national id
   
-personalausweis República österreich
+personalausweis Republik Österreich
   
 ## <a name="belgium"></a>Bélgica
 
-Para obtener información detallada, vea la sección "Número nacional de Bélgica" en [Buscar qué los tipos de información confidencial](what-the-sensitive-information-types-look-for.md).
+Para obtener más información, consulte la sección "número nacional de Bélgica" en [Qué buscan los tipos de información confidencial](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="bulgaria"></a>Bulgaria
 
 ### <a name="format"></a>Formato
 
-Diez dígitos sin espacios y los delimitadores
+Diez dígitos sin espacios y delimitadores
   
 ### <a name="pattern"></a>Patrón
 
-Diez dígitos sin espacios y los delimitadores
+Diez dígitos sin espacios y delimitadores
   
--  Seis dígitos que se corresponden con la fecha de nacimiento (AAMMDD) 
+-  Seis dígitos que corresponden a la fecha de nacimiento (AAMMDD) 
     
-- Dos dígitos que se corresponden con el orden de nacimiento
+- Dos dígitos que corresponden a la orden de nacimiento
     
-- Un dígito que corresponde al género: un dígito par para masculino y un dígito impar para hembra
+- Un dígito que corresponde al género: un dígito par para macho y un dígito impar para hembra
     
-- Dígito de un control
+- Un dígito de control
     
 ### <a name="checksum"></a>Suma de comprobación
 
@@ -104,7 +104,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
   
 - La función `Func_bulgaria_national_number` busca contenido que coincide con el patrón. 
     
-- Una palabra clave de `Keywords_bulgaria_national_number` se encuentra. 
+- Se encuentra una `Keywords_bulgaria_national_number` palabra clave de. 
     
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
   
@@ -122,15 +122,15 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywordsbulgarianationalnumber"></a>Keywords_bulgaria_national_number
 
-egn
+EGN
   
-egn #
+EGN #
   
-Búlgaro número nacional
+número nacional búlgaro
   
 número nacional
   
@@ -139,37 +139,37 @@ social security number
   
 nationalnumber #
   
-ssn #
+SSN
   
-ssn
+SSN
   
 nationalnumber
   
-bnn #
+BNN #
   
-bnn
+BNN
   
 número de identificación personal
   
 personalidnumber #
   
-ЕДИНЕН ГРАЖДАНСКИ НОМЕР
+единен граждански номер
   
-edinen grazhdanski nomer
+edinen grazhdanski Nomer
   
-ЕГН
+егн
   
-ЕГН #
+егн #
   
 ## <a name="croatia"></a>Croacia
 
-Para obtener información detallada, vea la sección "Número de identidad Croacia" en [Buscar qué los tipos de información confidencial](what-the-sensitive-information-types-look-for.md).
+Para obtener más información, consulte la sección "número de identidad de Croacia" en [Qué buscan los tipos de información confidencial](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="cyprus"></a>Chipre
 
 ### <a name="format"></a>Formato
 
-Diez dígitos sin espacios y los delimitadores
+Diez dígitos sin espacios y delimitadores
   
 ### <a name="pattern"></a>Patrón
 
@@ -183,9 +183,9 @@ No aplicable
 
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
   
-- La expresión regular `Regex_cyprus_eu_national_id_card` busca contenido que coincide con el patrón. 
+- La expresión `Regex_cyprus_eu_national_id_card` regular busca contenido que coincide con el patrón. 
     
-- Una palabra clave de `Keywords_cyprus_eu_national_id_card` se encuentra. 
+- Se encuentra una `Keywords_cyprus_eu_national_id_card` palabra clave de. 
     
 ```
  
@@ -197,11 +197,11 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywordscypruseunationalidcard"></a>Keywords_cyprus_eu_national_id_card
 
-número de identificador de tarjeta
+número de tarjeta de identificación
   
 número de identificación nacional
   
@@ -209,33 +209,33 @@ número de identificación personal
   
 número de tarjeta de identidad
   
-ΤΑΥΤΟΤΗΤΑΣ
+ταυτοτητασ
   
-## <a name="czech-republic"></a>República Checa
+## <a name="czech-republic"></a>Chequia
 
-Para obtener información detallada, vea la sección "Número nacional de identidad de checo" en [Buscar qué los tipos de información confidencial](what-the-sensitive-information-types-look-for.md).
+Para obtener más información, consulte la sección "número de identidad nacional Checa" en el [que se buscan los tipos de información confidencial](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="denmark"></a>Dinamarca
 
-Para obtener información detallada, vea la sección "Número de identificación Personal de Dinamarca" en [Buscar qué los tipos de información confidencial](what-the-sensitive-information-types-look-for.md).
+Para obtener más información, vea la sección sobre el número de identificación personal de Dinamarca en el [que se buscan los tipos de información confidencial](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="estonia"></a>Estonia
 
 ### <a name="format"></a>Formato
 
-11 dígitos sin espacios y los delimitadores
+11 dígitos sin espacios y delimitadores
   
 ### <a name="pattern"></a>Patrón
 
 11 dígitos:
   
-- Un dígito que corresponde al sexo y century de nacimiento (masculino número impar, número par femenino; 1-2: 19 century; 3-4: 20 century; 5-6: century 21)
+- Un dígito que corresponde al sexo y al siglo de nacimiento (número impar macho, par hembra; 1-2: siglo XIX; 3-4: siglo XX; 5-6: siglo XXI)
     
-- Seis dígitos que se corresponden con la fecha de nacimiento (AAMMDD)
+- Seis dígitos que corresponden a la fecha de nacimiento (AAMMDD)
     
-- Tres dígitos que se corresponden con un número de serie separación de nacimiento en la misma fecha de personas
+- Tres dígitos que corresponden a un número de serie que separa a los empleados nacidos en la misma fecha
     
-- Dígito de un control
+- Un dígito de control
     
 ### <a name="checksum"></a>Suma de comprobación
 
@@ -247,7 +247,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
   
 - La función `Func_estonia_eu_national_id_card` busca contenido que coincide con el patrón. 
     
-- Una palabra clave de `Keywords_estonia_eu_national_id_card` se encuentra. 
+- Se encuentra una `Keywords_estonia_eu_national_id_card` palabra clave de. 
     
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
   
@@ -266,7 +266,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywordsestoniaeunationalidcard"></a>Keywords_estonia_eu_national_id_card
 
@@ -286,23 +286,23 @@ IK
   
 isikukood
   
-identificador de kaart
+ID-Kaart
   
 ## <a name="finland"></a>Finlandia
 
-Para obtener información detallada, vea la sección "Finlandia nacional ID" en [Buscar qué los tipos de información confidencial](what-the-sensitive-information-types-look-for.md).
+Para obtener más información, consulte la sección "identificación nacional de Finlandia" en [Qué buscan los tipos de información confidencial](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="france"></a>Francia
 
-Para obtener información detallada, vea la sección "Francia nacional tarjeta de identificación (CNI)" en [Buscar qué los tipos de información confidencial](what-the-sensitive-information-types-look-for.md).
+Para obtener más información, vea la sección sobre la tarjeta de identificación nacional (CNI) de Francia en la [que se buscan los tipos de información confidencial](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="germany"></a>Alemania
 
-Para obtener información detallada, vea la sección "Número de tarjeta de identidad de Alemania" en [Buscar qué los tipos de información confidencial](what-the-sensitive-information-types-look-for.md).
+Para obtener más información, consulte la sección "número de tarjeta de identidades Alemania" en [Qué buscan los tipos de información confidencial](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="greece"></a>Grecia
 
-Para obtener información detallada, vea la sección "tarjeta de identificación nacional Grecia" en [Buscar qué los tipos de información confidencial](what-the-sensitive-information-types-look-for.md).
+Para obtener más información, consulte la sección "tarjeta de identificación nacional de Grecia" en [Qué buscan los tipos de información confidencial](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="hungary"></a>Hungría
 
@@ -314,13 +314,13 @@ Para obtener información detallada, vea la sección "tarjeta de identificación
 
 11 dígitos:
   
--  Un dígito que corresponde al género (hombre de 1, 2-hembra, de otros números también son posibles para los ciudadanos nacidos antes de 1900 o los ciudadanos con posea doble) 
+-  Un dígito que corresponde a sexo (1-macho, 2-hembra, otros números también son posibles para los ciudadanos nacidos antes del 1900 o los ciudadanos con doble nacionalidad) 
     
-- Seis dígitos que se corresponden con la fecha de nacimiento (AAMMDD)
+- Seis dígitos que corresponden a la fecha de nacimiento (AAMMDD)
     
-- Tres dígitos que se corresponden con un número de serie
+- Tres dígitos que corresponden a un número de serie
     
-- Dígito de un control
+- Un dígito de control
     
 ### <a name="checksum"></a>Suma de comprobación
 
@@ -332,7 +332,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
   
 - La función `Func_hungary_eu_national_id_card` busca contenido que coincide con el patrón. 
     
-- Una palabra clave de `Keywords_hungary_eu_national_id_card` se encuentra. 
+- Se encuentra una `Keywords_hungary_eu_national_id_card` palabra clave de. 
     
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
   
@@ -350,7 +350,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywordshungaryeunationalidcard"></a>Keywords_hungary_eu_national_id_card
 
@@ -367,27 +367,27 @@ személyazonosító igazolvány
 
 ### <a name="format"></a>Formato
 
-Una combinación de nueve caracteres de letras, dígitos y un espacio en el patrón especificado
+Una combinación de Letras de nueve caracteres, dígitos y un espacio en el patrón especificado
   
 ### <a name="pattern"></a>Patrón
 
-Una combinación de nueve caracteres de letras, dígitos y un espacio en el patrón especificado
+Una combinación de Letras de nueve caracteres, dígitos y un espacio en el patrón especificado
   
-Desde 01 de enero de 2013 hasta ahora:
-  
--  Siete dígitos  
-    
-- Dígito de un control
-    
-- Un espacio o la letra mayúscula "W" (se distingue entre mayúsculas y minúsculas)
-    
-Antes de 01 de enero de 2013:
+De 01 de enero de 2013 a ahora:
   
 -  Siete dígitos  
     
-- Dígito de un control
+- Un dígito de control
     
-- Un espacio o una letra mayúscula (distinguir mayúsculas de minúsculas)
+- Un espacio o la letra mayúscula "W" (distingue entre mayúsculas y minúsculas)
+    
+Antes del 01 de enero de 2013:
+  
+-  Siete dígitos  
+    
+- Un dígito de control
+    
+- Un espacio o una letra mayúscula (distingue entre mayúsculas y minúsculas)
     
 ### <a name="checksum"></a>Suma de comprobación
 
@@ -399,7 +399,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
   
 - La función busca contenido que coincide con el patrón.
     
-- Se ha encontrado una palabra clave de.
+- Se encuentra una palabra clave de.
     
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
   
@@ -418,15 +418,15 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywordsirelandeunationalidcard"></a>Keywords_ireland_eu_national_id_card
 
 número de servicio público personal
   
-PPS no
+n.º de PPS
   
-número de ingresos y seguridad social
+número de la seguridad social y de ingresos
   
 RSI no
   
@@ -445,23 +445,23 @@ uimh. PSP
 
 ### <a name="format"></a>Formato
 
-Una combinación de 16 caracteres de letras y dígitos en el patrón especificado
+Una combinación de letras y dígitos de 16 caracteres en el patrón especificado
   
 ### <a name="pattern"></a>Patrón
 
-Una combinación de 16 caracteres de letras y dígitos:
+Una combinación de letras y dígitos de 16 caracteres:
   
-- Tres letras que corresponden a los tres primeros consonantes en el nombre de la familia
+- Tres letras que corresponden a las tres primeras consonantes en el nombre de la familia
     
-- Tres letras que corresponden a la primera, tercera y cuarta consonantes en el nombre
+- Tres letras que corresponden a los consonantes primero, tercero y cuarto en el nombre
     
-- Dos dígitos que corresponden a la última dígitos del año de nacimiento
+- Dos dígitos que corresponden a los últimos dígitos del año de nacimiento
     
-- Una letra que corresponde a la letra para el mes de nacimiento: letras se usan en orden alfabético, pero se usan sólo las letras A E, H, L, M, P, R a T (por lo tanto, es enero y octubre es R)
+- Una letra que corresponde a la carta del mes de nacimiento: las letras se usan en orden alfabético, pero solo se usan las letras de a a E, H, L, M, P, R a T (por lo tanto, enero es A y octubre es R)
     
-- Dos dígitos que se corresponden con el día del mes de nacimiento, con el fin de diferenciar entre sexos, 40 se agrega en el día de nacimiento para mujeres
+- Dos dígitos que corresponden al día del mes de nacimiento: para diferenciar entre los sexos, 40 se agrega al día de nacimiento para las mujeres
     
-- Cuatro dígitos que se corresponde con el código de área específico para el ayuntamiento donde surgió la persona (códigos de todo el país se usan para países externas)
+- Cuatro dígitos que corresponden al código de área específico del municipio donde nació la persona (los códigos de todo el país se usan para países extranjeros)
     
 - Un dígito de paridad
     
@@ -475,7 +475,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
   
 - La función `Func_italy_eu_national_id_card` busca contenido que coincide con el patrón. 
     
-- Una palabra clave de `Keywords_italy_eu_national_id_card` se encuentra. 
+- Se encuentra una `Keywords_italy_eu_national_id_card` palabra clave de. 
     
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
   
@@ -493,7 +493,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywordsitalyeunationalidcard"></a>Keywords_italy_eu_national_id_card
 
@@ -503,7 +503,7 @@ número de código personal
   
 número de certificado personal
   
-código fiscal
+Código fiscal
   
 personalcodeno #
   
@@ -511,35 +511,35 @@ número de identificación personal
   
 código de identificación personal
   
-Codice personale
+personal Codice
   
-numero certificato personale
+numero certificato personal
   
-numero personale
+personal numero
   
-numero identificador personale
+personal del identificador numero
   
-Codice identificador personale
+personal del identificador Codice
   
-Codice fiscale
+Codice fiscal
   
 ## <a name="italy"></a>Italia
 
 ### <a name="format"></a>Formato
 
-de 11 dígitos y un guión en el formato especificado
+11 dígitos y un guión en el formato especificado
   
 ### <a name="pattern"></a>Patrón
 
-de 11 dígitos y un guión:
+11 dígitos y un guión:
   
--  Seis dígitos que se corresponden con la fecha de nacimiento (DDMMAA) 
+-  Seis dígitos que corresponden a la fecha de nacimiento (DDMMAA) 
     
 - Un guión 
     
-- Un dígito que corresponde a la century de nacimiento ("0" para century 19, "1" para century 20 y "2" para century 21)
+- Un dígito que corresponde al siglo de nacimiento ("0" para el siglo XIX, "1" para el siglo XX y "2" para el siglo XXI)
     
-- Cuatro dígitos, generadas de forma aleatoria
+- Cuatro dígitos, generados aleatoriamente
     
 ### <a name="checksum"></a>Suma de comprobación
 
@@ -551,7 +551,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
   
 - La función `Func_latvia_eu_national_id_card` busca contenido que coincide con el patrón. 
     
-- Una palabra clave de `Keywords_latvia_eu_national_id_card` se encuentra. 
+- Se encuentra una `Keywords_latvia_eu_national_id_card` palabra clave de. 
     
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
   
@@ -569,7 +569,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywordslatviaeunationalidcard"></a>Keywords_latvia_eu_national_id_card
 
@@ -585,25 +585,25 @@ número de identificación personal
   
 código de identificación personal
   
-kods roles
+roles kods
   
 ## <a name="lithuania"></a>Lituania
 
 ### <a name="format"></a>Formato
 
-11 dígitos sin espacios y los delimitadores
+11 dígitos sin espacios y delimitadores
   
 ### <a name="pattern"></a>Patrón
 
-11 dígitos sin espacios y los delimitadores:
+11 dígitos sin espacios y delimitadores:
   
-- Un dígito que corresponde a la persona género y century de nacimiento
+- Un dígito que corresponde al sexo de la persona y al siglo de nacimiento
     
--  Seis dígitos que se corresponden con la fecha de nacimiento (AAMMDD) 
+-  Seis dígitos que corresponden a la fecha de nacimiento (AAMMDD) 
     
-- Tres dígitos que se corresponden con el número de serie de la fecha de nacimiento
+- Tres dígitos que corresponden al número de serie de la fecha de nacimiento
     
-- Dígito de un control
+- Un dígito de control
     
 ### <a name="checksum"></a>Suma de comprobación
 
@@ -615,7 +615,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
   
 - La función `Func_lithuania_eu_national_id_card` busca contenido que coincide con el patrón. 
     
-- Una palabra clave de `Keywords_lithuania_eu_national_id_card` se encuentra. 
+- Se encuentra una `Keywords_lithuania_eu_national_id_card` palabra clave de. 
     
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
   
@@ -634,7 +634,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywordslithuaniaeunationalidcard"></a>Keywords_lithuania_eu_national_id_card
 
@@ -644,7 +644,7 @@ número de identificación único
   
 número de servicio de ciudadanos
   
-número de identidad única
+número de identidad único
   
 uniqueidentityno #
   
@@ -652,9 +652,9 @@ código personal.
   
 asmeninis skaitmeninis kodas
   
-unikalus identifikavimo numeris
+unikalus identifikavimo número
   
-piliečio paslaugos numeris
+piliečio paslaugos número
   
 unikalus identifikavimo kodas
   
@@ -664,19 +664,19 @@ asmens kodas.
 
 ### <a name="format"></a>Formato
 
-11 dígitos sin espacios y los delimitadores
+11 dígitos sin espacios y delimitadores
   
 ### <a name="pattern"></a>Patrón
 
 11 dígitos
   
-- Un dígito que corresponde a la persona género y century de nacimiento
+- Un dígito que corresponde al sexo de la persona y al siglo de nacimiento
     
--  Seis dígitos que se corresponden con la fecha de nacimiento (AAMMDD) 
+-  Seis dígitos que corresponden a la fecha de nacimiento (AAMMDD) 
     
-- Tres dígitos que se corresponden con el número de serie de la fecha de nacimiento
+- Tres dígitos que corresponden al número de serie de la fecha de nacimiento
     
-- Dígito de un control
+- Un dígito de control
     
 ### <a name="checksum"></a>Suma de comprobación
 
@@ -686,9 +686,9 @@ No aplicable
 
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
   
-- La expresión regular `Regex_luxemburg_eu_national_id_card` busca contenido que coincide con el patrón. 
+- La expresión `Regex_luxemburg_eu_national_id_card` regular busca contenido que coincide con el patrón. 
     
-- Una palabra clave de `Keywords_luxemburg_eu_national_id_card` se encuentra. 
+- Se encuentra una `Keywords_luxemburg_eu_national_id_card` palabra clave de. 
     
 ```
 <Entity id="419f449f-6d9d-4be1-a154-b531f7a91b41" patternsProximity="300" recommendedConfidence="75">
@@ -699,7 +699,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywordsluxemburgeunationalidcard"></a>Keywords_luxemburg_eu_national_id_card
 
@@ -713,27 +713,27 @@ número de identificador único
   
 personalidnumber #
   
-clave de identificador único
+clave de identificador única
   
 código de identificación personal
   
 uniqueidkey #
   
-código individual
+Código individual
   
-identificador de individual
+identificador individual
   
-identificador de eindeutige-nummer
+eindeutige ID-Nummer
   
-identificador de eindeutige
+identificador eindeutige
   
-identificador personal
+identificador personnelle
   
-numéro de identificación personal
+personal de numéro d'identification
   
 idpersonnelle #
   
-persönliche identifikationsnummer
+persönliche Identifikationsnummer
   
 eindeutigeid #
   
@@ -749,7 +749,7 @@ Siete dígitos seguidos de una letra:
   
 -  Siete dígitos  
     
-- Una letra mayúscula (se distingue entre mayúsculas y minúsculas)
+- Una letra mayúscula (distingue entre mayúsculas y minúsculas)
     
 ### <a name="checksum"></a>Suma de comprobación
 
@@ -759,13 +759,13 @@ No aplicable
 
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
   
-- La expresión regular `Regex_malta_eu_national_id_card` busca contenido que coincide con el patrón. 
+- La expresión `Regex_malta_eu_national_id_card` regular busca contenido que coincide con el patrón. 
     
-- Una palabra clave de `Keywords_malta_eu_national_id_card` se encuentra. 
+- Se encuentra una `Keywords_malta_eu_national_id_card` palabra clave de. 
     
 Una directiva DLP está segura al 65% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
   
-- La expresión regular `Regex_malta_eu_national_id_card` busca contenido que coincide con el patrón. 
+- La expresión `Regex_malta_eu_national_id_card` regular busca contenido que coincide con el patrón. 
     
 ```
  
@@ -780,7 +780,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywordsmaltaeunationalidcard"></a>Keywords_malta_eu_national_id_card
 
@@ -790,7 +790,7 @@ número de identificación único
   
 número de servicio de ciudadanos
   
-número de identidad única
+número de identidad único
   
 uniqueidentityno #
   
@@ -798,15 +798,15 @@ kodiċi numerali personali
   
 numru ta ' identifikazzjoni uniku
   
-tareas servizz de numru taċ-ċittadin
+numru Servizz taċ-ċittadin
   
-numru ta' identità uniku
+numru ta ' Identità uniku
   
 ## <a name="netherlands"></a>Países Bajos
 
 ### <a name="format"></a>Formato
 
-Nueve dígitos sin espacios o delimitadores
+Nueve dígitos sin espacios ni delimitadores
   
 ### <a name="pattern"></a>Patrón
 
@@ -822,7 +822,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
   
 - La función `Func_netherlands_eu_national_id_card` busca contenido que coincide con el patrón. 
     
-- Se ha encontrado una palabra clave de.
+- Se encuentra una palabra clave de.
     
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
   
@@ -841,7 +841,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywordsnetherlandseunationalidcard"></a>Keywords_netherlands_eu_national_id_card
 
@@ -851,35 +851,35 @@ número de identificación único
   
 número de servicio de ciudadanos
   
-número de identidad única
+número de identidad único
   
 uniqueidentityno #
   
-bsn
+BSN
   
-bsn #
+BSN
   
-código de numerieke persoonlijke
+persoonlijke numerieke código
   
-uniek identificatienummer
+Uniek identificatienummer
   
-burgerservicenummer
+Burgerservicenummer
   
-uniek identiteitsnummer
+Uniek identiteitsnummer
   
 ## <a name="poland"></a>Polonia
 
-Para obtener información detallada, vea la sección "Polonia nacional identificador (PESEL)" en [Buscar qué los tipos de información confidencial](what-the-sensitive-information-types-look-for.md).
+Para obtener más información, consulte la sección "identificación nacional (PESEL) de Polonia" en el [que se buscan los tipos de información confidencial](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="portugal"></a>Portugal
 
-Para obtener información detallada, vea la sección "Número de tarjeta de Portugal ciudadanos" en [Buscar qué los tipos de información confidencial](what-the-sensitive-information-types-look-for.md).
+Para obtener más información, consulte la sección "número de tarjeta de ciudadano de Portugal" en [Qué buscan los tipos de información confidencial](what-the-sensitive-information-types-look-for.md).
   
 ## <a name="romania"></a>Rumania
 
 ### <a name="format"></a>Formato
 
-13 dígitos sin espacios y los delimitadores
+13 dígitos sin espacios y delimitadores
   
 ### <a name="pattern"></a>Patrón
 
@@ -895,7 +895,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
   
 - La función `Func_romania_eu_national_id_card` busca contenido que coincide con el patrón. 
     
-- Una palabra clave de `Keywords_romania_eu_national_id_card` se encuentra. 
+- Se encuentra una `Keywords_romania_eu_national_id_card` palabra clave de. 
     
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
   
@@ -914,7 +914,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywordsromaniaeunationalidcard"></a>Keywords_romania_eu_national_id_card
 
@@ -922,29 +922,29 @@ código numérico personal
   
 número de identificación único
   
-cnp
+CNP
   
-cnp #
+CNP #
   
 anclar
   
-PIN #
+patilla
   
 número de seguro
   
 insurancenumber #
   
-número de identidad única
+número de identidad único
   
 uniqueidentityno #
   
-COD numérico personal
+personal numérico de pago
   
-bacalao identificare personal
+c.o.d. identificare personal
   
-COD unic identificare
+Bacalao UNIC identificare
   
-număr personal unic
+număr personal UNIC
   
 număr identitate
   
@@ -960,11 +960,11 @@ numărpersonalunic #
 
 ### <a name="format"></a>Formato
 
-Diez dígitos que contiene una barra diagonal inversa
+Diez dígitos que contienen una barra diagonal inversa
   
 ### <a name="pattern"></a>Patrón
 
-Diez dígitos que contiene una barra diagonal inversa:
+Diez dígitos que contienen una barra diagonal inversa:
   
 ### <a name="checksum"></a>Suma de comprobación
 
@@ -976,7 +976,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
   
 - La función `Func_slovakia_eu_national_id_card` busca contenido que coincide con el patrón. 
     
-- Una palabra clave de `Keywords_slovakia_eu_national_id_card` se encuentra. 
+- Se encuentra una `Keywords_slovakia_eu_national_id_card` palabra clave de. 
     
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
   
@@ -995,7 +995,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywordsslovakiaeunationalidcard"></a>Keywords_slovakia_eu_national_id_card
 
@@ -1010,9 +1010,9 @@ social security number
   
 nationalnumber #
   
-ssn #
+SSN
   
-ssn
+SSN
   
 número nacional
   
@@ -1030,19 +1030,19 @@ rodne cislo
 
 ### <a name="format"></a>Formato
 
-13 dígitos sin espacios o delimitadores
+13 dígitos sin espacios ni delimitadores
   
 ### <a name="pattern"></a>Patrón
 
 13 dígitos en el patrón especificado:
   
--  Siete dígitos que corresponden a la fecha de nacimiento (DDMMLLL), donde "LLL" corresponde a la última tres dígitos del año de nacimiento 
+-  Siete dígitos que corresponden a la fecha de nacimiento (DDMMLLL) donde "LLL" corresponde a los tres últimos dígitos del año de nacimiento. 
     
-- Dos dígitos que se corresponden con el área de nacimiento
+- Dos dígitos que corresponden al área de nacimiento
     
-- Tres dígitos que se corresponden con una combinación de género y número de serie para las personas nacidas en el mismo día (000-499 para hombre) y 500-999 para hembra
+- Tres dígitos que corresponden a una combinación de sexo y número de serie de las personas nacidos el mismo día (000-499 para macho y 500-999 para hembras)
     
-- Dígito de un control
+- Un dígito de control
     
 ### <a name="checksum"></a>Suma de comprobación
 
@@ -1054,7 +1054,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
   
 - La función `Func_slovenia_eu_national_id_card` busca contenido que coincide con el patrón. 
     
-- Una palabra clave de `Keywords_slovenia_eu_national_id_card` se encuentra. 
+- Se encuentra una `Keywords_slovenia_eu_national_id_card` palabra clave de. 
     
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
   
@@ -1073,7 +1073,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywordssloveniaeunationalidcard"></a>Keywords_slovenia_eu_national_id_card
 
@@ -1083,11 +1083,11 @@ número de identificación único
   
 número de registro único
   
-número de identidad única
+número de identidad único
   
 uniqueidentityno #
   
-número único ciudadanos maestra
+número único de ciudadano principal
   
 edinstvena identifikacijska številka
   
@@ -1109,7 +1109,7 @@ Siete dígitos seguidos de un carácter
   
 - Siete dígitos 
     
-- Un dígito o letra (no distingue mayúsculas de minúsculas)
+- Un dígito o letra (no distingue entre mayúsculas y minúsculas)
     
 ### <a name="checksum"></a>Suma de comprobación
 
@@ -1119,9 +1119,9 @@ No aplicable
 
 Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
   
-- La expresión regular `Regex_spain_eu_national_id_card` busca contenido que coincide con el patrón. 
+- La expresión `Regex_spain_eu_national_id_card` regular busca contenido que coincide con el patrón. 
     
-- Una palabra clave de `Keywords_spain_eu_national_id_card"` se encuentra. 
+- Se encuentra una `Keywords_spain_eu_national_id_card"` palabra clave de. 
     
 ```
  
@@ -1133,7 +1133,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 </Entity>
 ```
 
-### <a name="keywords"></a>Keywords
+### <a name="keywords"></a>Palabras clave
 
 #### <a name="keywordsspaineunationalidcard"></a>Keywords_spain_eu_national_id_card
 
@@ -1149,31 +1149,31 @@ número de identificación personal
   
 identidad nacional
   
-identidad personal no
+número de la identidad personal
   
-número de identidad única
+número de identidad único
   
 nationalidno #
   
-UniqueID #
+UniqueID
   
-DNI #
+DNI
   
 nationalid #
   
-NIE #
+NIE
   
 NIE
   
 nienúmero #
   
-número de NIE
+NIE número
   
 documento nacional de identidad
   
 identidad único
   
-identidad de número nacional
+número nacional identidad
   
 número de DNI
   
@@ -1183,9 +1183,9 @@ identidadúnico #
   
 ## <a name="sweden"></a>Suecia
 
-Para obtener información detallada, vea la sección "Suecia nacional ID" en [Buscar qué los tipos de información confidencial](what-the-sensitive-information-types-look-for.md).
+Para obtener más información, consulte la sección "identificación nacional de Suecia" en [Qué buscan los tipos de información confidencial](what-the-sensitive-information-types-look-for.md).
   
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [Qué buscan los tipos de información confidencial](what-the-sensitive-information-types-look-for.md)
 

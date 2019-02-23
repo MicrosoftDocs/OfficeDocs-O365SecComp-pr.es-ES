@@ -1,62 +1,62 @@
 ---
-title: Clonación de una búsqueda de contenido en la seguridad de Office 365 &amp; centro de cumplimiento
+title: Clonar una búsqueda de contenido en el centro &amp; de seguridad y cumplimiento de Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 4/26/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MED150
 ms.assetid: 7b40eeaa-544c-4534-b89b-9f79998e374c
-description: Use el script de Windows PowerShell en este artículo para clonar rápidamente una búsqueda de contenido existente en la seguridad &amp; búsqueda Compliane centro. Al clonar una búsqueda, se crea una nueva búsqueda (con un nuevo nombre) que contiene las mismas propiedades que la búsqueda original. A continuación, puede editar la nueva búsqueda (cambiando la consulta de palabra clave o el intervalo de fechas) y, a continuación, ejecútelo.
-ms.openlocfilehash: fd2ea0d8fa812d23e7479b664b13c786a62d5a38
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+description: Use el script de Windows PowerShell de este artículo para clonar rápidamente una búsqueda de contenido existente &amp; en la búsqueda de centro de seguridad Compliane. Cuando se clona una búsqueda, se crea una nueva búsqueda (con un nombre nuevo) que contiene las mismas propiedades que la búsqueda original. A continuación, puede editar la nueva búsqueda (cambiando la palabra clave consulta o el intervalo de fechas) y, a continuación, ejecutarla.
+ms.openlocfilehash: 15f1ca5d00f03f510745fef7ae8418192a9eb448
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038053"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30213550"
 ---
-# <a name="clone-a-content-search-in-the-office-365-security-amp-compliance-center"></a>Clonación de una búsqueda de contenido en la seguridad de Office 365 &amp; centro de cumplimiento
+# <a name="clone-a-content-search-in-the-office-365-security-amp-compliance-center"></a>Clonar una búsqueda de contenido en el centro &amp; de seguridad y cumplimiento de Office 365
 
-Creación de una búsqueda de contenido en Office 365 seguridad &amp; centro de cumplimiento que busca una gran cantidad de buzones de correo o de SharePoint y OneDrive para sitios de negocio pueden tardar unos minutos. Especificación de los sitios para buscar también puede ser propensa a errores si se escribe mal una dirección URL. Para evitar estos problemas, puede usar la secuencia de comandos de Windows PowerShell en este artículo para clonar rápidamente una búsqueda de contenido existente. Al clonar una búsqueda, se crea una nueva búsqueda (con un nombre diferente) que contiene las mismas propiedades (por ejemplo, las ubicaciones de contenido y la consulta de búsqueda) que la búsqueda original. A continuación, puede editar la nueva búsqueda (cambiando la consulta de palabra clave o el intervalo de fechas) y ejecútelo.
+La creación de una búsqueda de contenido en &amp; el centro de seguridad y cumplimiento de Office 365 que busca en muchos buzones o en sitios de SharePoint y OneDrive para la empresa puede tardar unos minutos. La especificación de los sitios que se van a buscar también puede provocar errores si se escribe Inde una dirección URL. Para evitar estos problemas, puede usar el script de Windows PowerShell de este artículo para clonar rápidamente una búsqueda de contenido existente. Cuando se clona una búsqueda, se crea una nueva búsqueda (con un nombre diferente) que contiene las mismas propiedades (como las ubicaciones de contenido y la consulta de búsqueda) como la búsqueda original. A continuación, puede editar la nueva búsqueda (cambiando la palabra clave consulta o el intervalo de fechas) y ejecutarla.
   
 ¿Por qué clonar búsquedas de contenido?
   
-- Para comparar los resultados de la palabra clave diferente ejecutar consultas de búsqueda en las mismas ubicaciones de contenido.
+- Para comparar los resultados de las diferentes consultas de búsqueda de palabras clave que se ejecutan en las mismas ubicaciones de contenido.
     
-- Para que se evitará tener que volver a escribir un gran número de ubicaciones de contenido cuando se crea una nueva búsqueda.
+- Para evitar tener que volver a especificar un gran número de ubicaciones de contenido al crear una nueva búsqueda.
     
-- Para reducir el tamaño de los resultados de búsqueda; Por ejemplo, si dispone de una búsqueda que devuelve demasiados resultados para exportar, puede clonar la búsqueda y, a continuación, agregue una condición de búsqueda en función de un intervalo de fechas para reducir el número de resultados de búsqueda.
+- Para reducir el tamaño de los resultados de la búsqueda; por ejemplo, si tiene una búsqueda que devuelve demasiados resultados para exportar, puede clonar la búsqueda y, a continuación, agregar una condición de búsqueda basada en un intervalo de fechas para reducir el número de resultados de búsqueda.
   
 ## <a name="before-you-begin"></a>Antes de empezar
 
-- Tiene que ser un miembro del grupo de roles de administrador de exhibición de documentos electrónicos en la seguridad &amp; centro de cumplimiento para ejecutar la secuencia de comandos que se describen en este tema.
+- Debe ser miembro del grupo de roles eDiscovery Manager en el centro de seguridad &amp; y cumplimiento para ejecutar el script que se describe en este tema.
     
-- La secuencia de comandos incluye el tratamiento de errores mínima. El propósito principal de la secuencia de comandos es clonar rápidamente una búsqueda de contenido.
+- El script incluye un tratamiento de errores mínimo. El objetivo principal del script es clonar rápidamente una búsqueda de contenido.
     
-- La secuencia de comandos crea una nueva búsqueda de contenido, pero no la inicia.
+- El script crea una nueva búsqueda de contenido, pero no la inicia.
     
-- Esta secuencia de comandos tiene en cuenta si la búsqueda de contenido que está clonando está asociada a un caso de exhibición de documentos electrónicos. Si la búsqueda está asociada con un caso, la nueva búsqueda también se asociarán con el mismo caso. Si la búsqueda existente no está asociada a un caso, la nueva búsqueda aparecerán en la página de **búsqueda de contenido** en la seguridad &amp; centro de cumplimiento. 
+- Este script tiene en cuenta si la búsqueda de contenido que va a clonar está asociada a un caso de exhibición de documentos electrónicos. Si la búsqueda está asociada a un caso, la nueva búsqueda también se asociará con el mismo caso. Si la búsqueda existente no está asociada a un caso, la nueva búsqueda se enumerará en la página **búsqueda de contenido** en &amp; el centro de seguridad y cumplimiento. 
     
-- El script de ejemplo proporcionado en este tema no es compatible con ningún servicio o programa de soporte estándar de Microsoft. El script de ejemplo se proporciona tal cual sin garantía de ningún tipo. Microsoft renuncia a todas las garantías implícitas incluidas, sin limitación, cualquier las garantías implícitas de comerciabilidad o de idoneidad para un fin determinado. Todo el riesgo que pueda surgir por el uso o el rendimiento de la secuencia de comandos de ejemplo y documentación permanece con usted. En ningún caso Microsoft, sus autores o cualquier otro implicado en la creación, producción o entrega de las secuencias de comandos serán responsables de los daños índole (incluidos, pero sin limitarse a, daños por pérdida de beneficios empresariales, interrupción del negocio, pérdida de información de la empresa, o en otras pérdidas de carácter económico) derivado del uso o la incapacidad de usar los scripts de ejemplo o documentación, aunque Microsoft haya sido notificado de la posibilidad de dichos daños.
+- La secuencia de comandos de ejemplo proporcionada en este tema no es compatible con ningún servicio o programa de soporte estándar de Microsoft. El script de ejemplo se proporciona tal cual sin garantías de ningún tipo. Microsoft renuncia a todas las garantías implícitas, incluidas, entre otras, todas las garantías implícitas de comerciabilidad o de idoneidad para un propósito en particular. Todo el riesgo derivado del uso o el rendimiento de la secuencia de comandos de muestra y la documentación se conservan con usted. En ningún caso Microsoft, sus autores o cualquier otro implicado en la creación, la producción o la entrega de las secuencias de comandos serán responsables de cualquier daño (incluidos, entre otros, los daños causados por la pérdida de beneficios de negocio, la interrupción del negocio, la pérdida de información de la empresa u otra pérdida pecuniaria que surja del uso o la incapacidad para usar la documentación o los scripts de ejemplo, incluso si se ha notificado a Microsoft de la posibilidad de dichos daños.
   
-## <a name="step-1-run-the-script-to-clone-a-search"></a>Paso 1: Ejecute el script para clonar una búsqueda
+## <a name="step-1-run-the-script-to-clone-a-search"></a>Paso 1: ejecutar el script para clonar una búsqueda
 
-La secuencia de comandos en este paso creará una nueva búsqueda de contenido mediante la clonación de uno existente. Al ejecutar este script, se le pedirá la siguiente información:
+El script de este paso creará una nueva búsqueda de contenido mediante la clonación de una existente. Al ejecutar este script, se le pedirá la siguiente información:
   
-- **Sus credenciales de usuario** : la secuencia de comandos usará las credenciales para conectarse a la seguridad &amp; centro de cumplimiento de normas de la organización de Office 365 con Windows PowerShell. Como se mencionó anteriormente, tiene que ser un miembro del grupo de roles de administrador de exhibición de documentos electrónicos en la seguridad &amp; centro de cumplimiento para ejecutar el script. 
+- **Sus credenciales de usuario** : el script usará sus credenciales para conectarse al &amp; centro de seguridad y cumplimiento de la organización de Office 365 con Windows PowerShell. Como se mencionó anteriormente, debe ser miembro del grupo de roles eDiscovery Manager en el centro de seguridad &amp; y cumplimiento para ejecutar el script. 
     
-- **El nombre de la búsqueda existente** - se trata de la búsqueda de contenido que va a clonar. 
+- **El nombre de la búsqueda existente** : es la búsqueda de contenido que desea clonar. 
     
-- **El nombre de la nueva búsqueda que se crearán** - si deja este valor en blanco, la secuencia de comandos creará un nombre para la búsqueda nuevo que se basa en el nombre de la búsqueda que está clonando. 
+- **El nombre de la nueva búsqueda que** se creará; si deja este valor en blanco, el script creará un nombre para la nueva búsqueda que se basa en el nombre de la búsqueda que va a clonar. 
     
 Para clonar una búsqueda:
   
-1. Guarde el siguiente texto en un archivo de secuencia de comandos de Windows PowerShell mediante el uso de un sufijo de nombre de archivo de. ps1; Por ejemplo, `CloneSearch.ps1`.
+1. Guarde el siguiente texto en un archivo de script de Windows PowerShell mediante un sufijo de nombre de archivo de. ps1; por ejemplo, `CloneSearch.ps1`.
     
   ```
   # This PowerShell script clones an existing Content Search in the Office 365 Security &amp; Compliance Center
@@ -116,9 +116,9 @@ Para clonar una búsqueda:
   }
   ```
 
-2. Abra Windows PowerShell y vaya a la carpeta donde guardó la secuencia de comandos.
+2. Abra Windows PowerShell y vaya a la carpeta en la que guardó el script.
     
-3. Ejecute la secuencia de comandos; Por ejemplo:
+3. Ejecutar el script; por ejemplo:
     
     ```
     .\CloneSearch.ps1
@@ -126,20 +126,20 @@ Para clonar una búsqueda:
 
 4. Cuando se le pidan sus credenciales, escriba su dirección de correo electrónico y contraseña y, a continuación, haga clic en **Aceptar**.
     
-5. Escriba la siguiente información cuando se le solicite la secuencia de comandos. Escriba cada parte de la información y, a continuación, presione **ENTRAR**.
+5. Escriba la información siguiente cuando se lo solicite el script. Escriba cada fragmento de información y, a continuación, presione **entrar**.
     
     - El nombre de la búsqueda existente.
     
-    - El nombre de la búsqueda nuevo.
+    - Nombre de la nueva búsqueda.
     
-    La secuencia de comandos crea la búsqueda de contenido nuevo, pero no la inicia. Esto le ofrece una oportunidad para editar y ejecutar la búsqueda en el paso siguiente. Puede ver las propiedades de la nueva búsqueda ejecutando el cmdlet **Get-ComplianceSearch** o yendo a la página de **búsqueda de contenido** o de **exhibición de documentos electrónicos** en la seguridad &amp; centro de cumplimiento, dependiendo de si está o no la búsqueda nuevo asociarse a un caso. 
+    El script crea la nueva búsqueda de contenido, pero no la inicia. Esto le da la oportunidad de editar y ejecutar la búsqueda en el paso siguiente. Para ver las propiedades de la nueva búsqueda, ejecute el cmdlet **Get-ComplianceSearch** o vaya a la página de **búsqueda de contenido** o de **exhibición** de documentos &amp; electrónicos en el centro de seguridad y cumplimiento, dependiendo de si la nueva búsqueda está o no asociado a un caso. 
   
-## <a name="step-2-edit-and-run-the-cloned-search-in-the-security-amp-compliance-center"></a>Paso 2: Editar y ejecutar la búsqueda clonada en la seguridad &amp; centro de cumplimiento
+## <a name="step-2-edit-and-run-the-cloned-search-in-the-security-amp-compliance-center"></a>Paso 2: editar y ejecutar la búsqueda clonada en el centro &amp; de seguridad y cumplimiento
 
-Después de la que ha ejecutado la secuencia de comandos que se debe clonar una búsqueda de contenido existente, el siguiente paso es ir a la seguridad &amp; centro de cumplimiento para editar y ejecutar la búsqueda nuevo. Como se mencionó anteriormente, puede editar una búsqueda cambiando la consulta de búsqueda de palabra clave y agregar o quitar las condiciones de búsqueda. Para obtener más información, vea:
+Una vez que haya ejecutado el script para clonar una búsqueda de contenido existente, el siguiente paso consiste en ir al &amp; centro de seguridad y cumplimiento para editar y ejecutar la nueva búsqueda. Como se mencionó anteriormente, puede editar una búsqueda cambiando la consulta de búsqueda de palabras clave y agregando o quitando condiciones de búsqueda. Para obtener más información, vea:
   
 - [Búsqueda de contenido en Office 365](content-search.md)
     
 - [Consultas de palabras clave y condiciones de búsqueda para la búsqueda de contenido](keyword-queries-and-search-conditions.md).
     
-- [casos de exhibición de documentos electrónicos en la seguridad de Office 365 &amp; centro de cumplimiento](ediscovery-cases.md)
+- [casos de eDiscovery en el centro de &amp; seguridad y cumplimiento de Office 365](ediscovery-cases.md)

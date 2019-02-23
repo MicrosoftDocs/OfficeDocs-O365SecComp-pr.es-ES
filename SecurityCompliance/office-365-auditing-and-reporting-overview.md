@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 12/03/2018
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - M365-analytics
 description: Información general sobre las características de auditoría e informes de Office 365, así como la garantía de servicio.
-ms.openlocfilehash: 0167239e854d9b96d9505f4264ada225804eef96
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+ms.openlocfilehash: e2fd596279743ad72a3632ba09ec28142e9322f4
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30091042"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30221020"
 ---
 # <a name="auditing-and-reporting-in-office-365"></a>Auditoría e informes en Office 365
 

@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 'Resumen: una explicación de los controles de aislamiento en Office 365.'
-ms.openlocfilehash: ad39f300445485e46699b509f845ac363d3041fa
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+ms.openlocfilehash: a6ff2b11ea02334a6c47317cbb77b8d47207b552
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30090972"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217320"
 ---
 # <a name="office-365-isolation-controls"></a>Controles de aislamiento de Office 365 
 

@@ -1,31 +1,15 @@
 ---
-title: Preguntas más frecuentes sobre protección contra correo electrónico no deseado
-ms.author: krowley
-author: kccross
-manager: laurawi
-ms.date: 12/9/2016
-ms.audience: ITPro
-ms.topic: article
-ms.service: O365-seccomp
-ms.custom: TN2DMC
-localization_priority: Normal
-search.appverid:
-- MET150
-ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
-description: En este tema encontrará las preguntas frecuentes y sus correspondientes respuestas sobre la protección contra el correo no deseado. Las respuestas sirven para los clientes de Microsoft Exchange Online y de Exchange Online Protection (EOP).
-ms.openlocfilehash: 77b3dc26d55f75e7476a3b52a550174a3876c56f
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003079"
+Título: "preguntas más frecuentes sobre protección contra correo no deseado" MS. Author: krowley Author: kccross Manager: laurawi ms. Date: 12/9/2016 ms. Audience: ITPro ms. topic: artículo ms. Service: O365-seccomp ms. Custom: TN2DMC localization_priority: normal Search. appverid:
+- MET150 ms. AssetID: c534a35d-B121-45DA-9d0a-ce738ce51fce ms. Collection:
+    - M365-Security-Compliance Description: "este tema proporciona las preguntas más frecuentes y sus respuestas sobre la protección contra correo no deseado. Las respuestas son válidas para los clientes de Microsoft Exchange Online y Exchange Online Protection (EOP). "
 ---
+
 # <a name="anti-spam-protection-faq"></a>Preguntas más frecuentes sobre protección contra correo electrónico no deseado
 
 En este tema encontrará las preguntas frecuentes y sus correspondientes respuestas sobre la protección contra el correo no deseado. Las respuestas sirven para los clientes de Microsoft Exchange Online y de Exchange Online Protection (EOP). 
   
 > [!TIP]
-> Para las preguntas y respuestas acerca de las listas de remitentes bloqueados y de remitentes seguros, vea [remitentes seguros y remitentes bloqueados se enumeran en Exchange Online](safe-sender-and-blocked-sender-lists-faq.md). Para las preguntas y respuestas sobre la cuarentena, consulte [Preguntas más frecuentes de cuarentena](quarantine-faq.md). 
+> Para obtener preguntas y respuestas sobre las listas de remitentes seguros y bloqueados, vea [listas de remiteNtes seguros y bloqueados en Exchange Online](safe-sender-and-blocked-sender-lists-faq.md). Para obtener preguntas y respuestas sobre la cuarentena, vea [preguntas más frecuentes](quarantine-faq.md)sobre la cuarentena. 
   
  **P: De manera predeterminada, ¿qué sucede con un mensaje de correo no deseado detectado?**
   
@@ -38,7 +22,7 @@ R. **Para mensajes entrantes:** La mayor parte del correo no deseado se elimina 
   
  **P. ¿Qué es una variante de correo no deseado de día cero y cómo la controla el servicio?**
   
-R. un valor variant de día cero spam es una primera generación, variant anteriormente desconocida de correo no deseado que nunca se ha capturado o analizar, por lo que nuestros filtros de contenido aún no tienen ninguna información disponible para que lo detecte. Después de un día cero de spam ejemplo se captura y analiza nuestros analistas spam, si cumple los criterios de clasificación spam, nuestro spam contenido los filtros se actualizan para detectarlo y ya no se considera "de día cero." ( **Nota:** si recibe un mensaje que puede ser un valor de variant spam de día cero, con el fin de mejorar el servicio, envíe el mensaje a Microsoft mediante uno de los métodos que se describen en [enviar spam, que no sean de correo no deseado y mensajes de estafas de suplantación de identidad a Microsoft para análisis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md).)
+A. una variante de correo no deseado de día cero es una primera generación, una variante desconocida anteriormente de correo no deseado que nunca se ha capturado o analizado, por lo que los filtros de contenido de correo no deseado todavía no tienen información disponible para detectarlo. Una vez que nuestros analistas de correo no deseado capturan y analizan un ejemplo de correo no deseado de día cero, si cumplen los criterios de clasificación de correo no deseado, los filtros de contenido de correo no deseado se actualizan para detectarlo y ya no se considera "día cero". ( **Nota:** si recibe un mensaje que puede ser una variante de 0 días de correo no deseado, para ayudarnos a mejorar el servicio, envíe el mensaje a Microsoft mediante uno de los métodos descritos en [enviar mensajes de correo no deseado, no spam y fraude de suplantación de identidad a Microsoft para Análisis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)).
   
  **P: ¿Debo configurar el servicio para obtener protección contra el correo no deseado?**
   
@@ -66,15 +50,15 @@ R. Si, el servicio tiene un filtro de direcciones URL que comprueba las direccio
   
  **P: ¿Cómo pueden hacer los clientes del servicio para enviar mensajes falsos negativos (correo no deseado) y falsos positivos (correo deseado) a Microsoft?**
   
-R. correo no deseado y los mensajes que no sean de correo no deseado pueden enviarse a Microsoft para su análisis de varias maneras. Para obtener más información, vea [enviar spam, no spam y los mensajes de estafas de suplantación de identidad a Microsoft para su análisis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md). 
+Los mensajes de correo no deseado y los que no son de correo no deseado pueden enviarse a Microsoft para su análisis de varias formas. Para obtener más información, vea enviar correo electrónico no deseado, mensajes de correo [no deseado y mensajes de estafa de suplantación de identidad a Microsoft para su análisis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md). 
   
  **P: ¿Puedo obtener informes de correo no deseado?**
   
 R. Sí, por ejemplo puede obtener un informe de detección de correo no deseado en el centro de administración de Office 365. Este informe muestra el volumen de correo no deseado como un recuento de mensajes únicos. Para obtener más información sobre los informes, consulte los siguientes vínculos:
   
-Los clientes de Exchange Online: [supervisión, informes y mensaje de seguimiento en Exchange Online](http://technet.microsoft.com/library/87bdeeae-bd80-4a3b-95c5-62fbaf97c2e8.aspx)
+Clientes de Exchange Online: [supervisión, informes y seguimiento de mensajes en Exchange Online](http://technet.microsoft.com/library/87bdeeae-bd80-4a3b-95c5-62fbaf97c2e8.aspx)
   
-Los clientes de Exchange Online Protection: [informes y seguimiento de mensajes en Exchange Online Protection](eop/reporting-and-message-trace-in-exchange-online-protection.md)
+Clientes de Exchange Online Protection: [informes y seguimiento de mensajes en Exchange Online Protection](eop/reporting-and-message-trace-in-exchange-online-protection.md)
   
  **P: Alguien me envió un mensaje y no lo encuentro. Sospecho que se pudo haber detectado como correo no deseado. ¿Existe alguna herramienta que pueda utilizar para averiguarlo?**
   
@@ -108,7 +92,7 @@ A. Las pautas presentadas a continuación son los procedimientos recomendados pa
   
 1. **El dominio de envío del correo electrónico debe resolverse en DNS.**
     
-    Por ejemplo, si el remitente es user@example.com, el dominio ejemplo.com se resuelve en la dirección IP 192.0.43.10. Si un dominio envío no tiene ningún registro y no hay ningún registro MX en DNS, el servicio va a enrutar el mensaje a través de su grupo de entrega de mayor riesgo, independientemente de si está o no el contenido del mensaje spam. Para obtener más información sobre el grupo de entrega de mayor riesgo, vea el [grupo de alto riesgo de entrega para los mensajes salientes](high-risk-delivery-pool-for-outbound-messages.md). 
+    Por ejemplo, si el remitente es user@example.com, el dominio example.com se resuelve en la dirección IP 192.0.43.10. Si un dominio remitente no tiene registro A y no MX en DNS, el servicio enrutará el mensaje a través de su grupo de entrega de mayor riesgo independientemente de si el contenido del mensaje es o no correo no deseado. Para obtener más información acerca del grupo de entrega de mayor riesgo, consulte [grupo de entrega de alto riesgo para los mensajes salientes](high-risk-delivery-pool-for-outbound-messages.md). 
     
 2. **La dirección IP de envío del servidor de correo saliente debe tener una entrada DNS (PTR) reversa.**
     

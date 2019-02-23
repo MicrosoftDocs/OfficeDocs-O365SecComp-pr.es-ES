@@ -1,12 +1,12 @@
 ---
-title: Campos de metadatos de documento
+title: Campos de metadatos del documento
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,13 +14,13 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: c69af6ecd5ab0d262799af31f1118080e4d94d36
-ms.sourcegitcommit: ee28ee2b2bdfd049333c2f495d7f7780d13af4a6
+ms.openlocfilehash: 19e4961fd0ca6d0beb285cb6b8cb4bf2608bb772
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "29608331"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220760"
 ---
-# <a name="document-metadata-fields"></a>Campos de metadatos de documento
+# <a name="document-metadata-fields"></a>Campos de metadatos del documento
 
 Contenido disponible próximamente.

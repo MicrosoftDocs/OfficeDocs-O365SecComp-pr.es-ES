@@ -1,42 +1,42 @@
 ---
-title: Crear un informe en las suspensiones en los casos de exhibición de documentos electrónicos en Office 365
+title: Crear un informe sobre suspensiones en casos de eDiscovery en Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 9/11/2017
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
-description: Use la secuencia de comandos de este artículo para generar un informe que contiene información acerca de todas las suspensiones a las que están asociadas con los casos de exhibición de documentos electrónicos en la seguridad de Office 365 &amp; centro de cumplimiento.
-ms.openlocfilehash: b6cef2824002d7e45e4f500bc6c1e9bc880cbd41
-ms.sourcegitcommit: 7956955cd919f6e00b64e4506605a743c5872549
+description: Use el script de este artículo para generar un informe que contenga información sobre todas las suspensiones asociadas con casos de eDiscovery en el centro de &amp; seguridad y cumplimiento de Office 365.
+ms.openlocfilehash: cf547ff7c76ba6e16a3bde18465ae0aef9ab4075
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "25038213"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30217443"
 ---
-# <a name="create-a-report-on-holds-in-ediscovery-cases-in-office-365"></a>Crear un informe en las suspensiones en los casos de exhibición de documentos electrónicos en Office 365
+# <a name="create-a-report-on-holds-in-ediscovery-cases-in-office-365"></a>Crear un informe sobre suspensiones en casos de eDiscovery en Office 365
   
-La secuencia de comandos en este artículo permite a los administradores de la exhibición de documentos electrónicos y los administradores de exhibición de documentos electrónicos generan un informe que contiene información acerca de todas las suspensiones que se asocian con los casos de exhibición de documentos electrónicos en la seguridad de Office 365 &amp; centro de cumplimiento. El informe contiene información como el nombre del caso de una suspensión está asociado con las ubicaciones de contenido que se colocan en espera, y si la suspensión está basado en la consulta. Si hay casos en los que no tengan ninguna suspensión, la secuencia de comandos creará un informe adicional con una lista de los casos sin suspensiones.
+La secuencia de comandos de este artículo permite que los administradores de eDiscovery y los administradores de eDiscovery generen un informe que contiene información acerca de todas las suspensiones asociadas &amp; con casos de eDiscovery en el centro de seguridad y cumplimiento de Office 365. El informe contiene información como, por ejemplo, el nombre del caso de que está asociada una suspensión, las ubicaciones de contenido que se encuentran en espera y si la retención se basa en la consulta. Si hay casos que no tienen ninguna suspensión, el script creará un informe adicional con una lista de casos sin suspensiones.
 
-Vea la sección [obtener más información](#more-information) para obtener una descripción detallada de la información incluida en el informe. 
+Consulte la sección [More Information](#more-information) para obtener una descripción detallada de la información incluida en el informe. 
   
 ## <a name="before-you-begin"></a>Antes de empezar
 
-- Para generar un informe en todos los casos de exhibición de documentos electrónicos en su organización, debe ser un administrador de exhibición de documentos en su organización. Si es un administrador de exhibición de documentos electrónicos, el informe sólo incluirá información acerca de los casos que puede tener acceso. Para obtener más información acerca de los permisos de exhibición de documentos electrónicos, vea [asignar permisos de exhibición de documentos electrónicos en la seguridad de Office 365 &amp; centro de cumplimiento](assign-ediscovery-permissions.md).
+- Para generar un informe en todos los casos de eDiscovery de su organización, debe ser administrador de exhibición de documentos electrónicos en su organización. Si es un administrador de exhibición de documentos electrónicos, el informe solo incluirá información sobre los casos a los que puede tener acceso. Para obtener más información acerca de los permisos de eDiscovery, consulte [asignar permisos de exhibición &amp; de documentos electrónicos en el centro de seguridad y cumplimiento de Office 365](assign-ediscovery-permissions.md).
     
-- La secuencia de comandos en este artículo tiene el tratamiento de errores mínima. El propósito principal es crear rápidamente informe sobre las suspensiones que se asocian con los casos de exhibición de documentos electrónicos en su organización.
+- La secuencia de comandos de este artículo tiene un tratamiento de errores mínimo. El objetivo principal es crear rápidamente informes sobre las suspensiones asociadas a los casos de eDiscovery de su organización.
     
 - Los scripts de ejemplo que se proporcionan en este tema no son compatibles con ningún servicio o programa de soporte técnico estándar de Microsoft. Los scripts de ejemplo se proporcionan tal cual, sin garantía de ningún tipo. Además, Microsoft se exime de todas las garantías implícitas, incluidas (sin limitación) las garantías implícitas de comerciabilidad o idoneidad para un propósito específico. El usuario asume todos los riesgos derivados del uso o del rendimiento de los scripts de ejemplo y la documentación. Microsoft, sus autores o cualquier persona relacionada con la creación, producción o entrega de los scripts no serán en ningún caso responsables de cualesquiera daños (incluidos, sin limitación, los daños producidos por la pérdida de beneficios comerciales, interrupción de la actividad comercial, pérdida de información empresarial u otras pérdidas económicas) derivados del uso o de la imposibilidad de uso de los scripts de ejemplo o la documentación, incluso aunque Microsoft tenga constancia de la posibilidad de que dichos daños se produzcan.
     
-## <a name="step-1-connect-to-the-security-amp-compliance-center-using-remote-powershell"></a>Paso 1: Conectar a la seguridad &amp; centro de cumplimiento de normas mediante PowerShell remoto
+## <a name="step-1-connect-to-the-security-amp-compliance-center-using-remote-powershell"></a>Paso 1: conectarse al centro de &amp; seguridad y cumplimiento con PowerShell remoto
 
-El primer paso es conectar Windows PowerShell a la seguridad &amp; centro de cumplimiento de normas de la organización.
+El primer paso consiste en conectar Windows PowerShell al centro de &amp; seguridad y cumplimiento de la organización.
   
-1. Guarde el siguiente texto en un archivo de secuencia de comandos de Windows PowerShell mediante el uso de un sufijo de nombre de archivo de. ps1; Por ejemplo, `ConnectSCC.ps1`. 
+1. Guarde el siguiente texto en un archivo de script de Windows PowerShell mediante un sufijo de nombre de archivo de. ps1; por ejemplo, `ConnectSCC.ps1`. 
     
       ```
       # Get login credentials 
@@ -46,9 +46,9 @@ El primer paso es conectar Windows PowerShell a la seguridad &amp; centro de cum
       $Host.UI.RawUI.WindowTitle = $UserCredential.UserName + " (Office 365 Security &amp; Compliance Center)" 
     ```
 
-2. En el equipo local, abra Windows PowerShell y vaya a la carpeta donde guardó la secuencia de comandos. 
+2. En el equipo local, abra Windows PowerShell y vaya a la carpeta donde guardó el script. 
     
-3. Ejecute la secuencia de comandos; Por ejemplo:
+3. Ejecutar el script; por ejemplo:
 
     ```
     .\ConnectSCC.ps1
@@ -56,11 +56,11 @@ El primer paso es conectar Windows PowerShell a la seguridad &amp; centro de cum
    
 4. Cuando se le pidan sus credenciales, escriba su dirección de correo electrónico y contraseña y, a continuación, haga clic en **Aceptar**. 
   
-## <a name="step-2-run-the-script-to-report-on-holds-associated-with-ediscovery-cases"></a>Paso 2: Ejecutar el script para informar sobre las suspensiones asociado con los casos de exhibición de documentos electrónicos
+## <a name="step-2-run-the-script-to-report-on-holds-associated-with-ediscovery-cases"></a>Paso 2: ejecutar el script para informar sobre suspensiones asociadas con casos de eDiscovery
 
-Una vez conectado a la seguridad &amp; centro de cumplimiento con PowerShell remoto, el siguiente paso es crear y ejecutar la secuencia de comandos que recopila información acerca de los casos de exhibición de documentos electrónicos en su organización. 
+Una vez que se haya conectado al &amp; centro de seguridad y cumplimiento con PowerShell remoto, el siguiente paso es crear y ejecutar el script que recopila la información sobre los casos de eDiscovery de la organización. 
   
-1. Guarde el siguiente texto en un archivo de secuencia de comandos de Windows PowerShell mediante el uso de un sufijo de nombre de archivo de. ps1; Por ejemplo, CaseHoldsReport.ps1. 
+1. Guarde el siguiente texto en un archivo de script de Windows PowerShell mediante un sufijo de nombre de archivo de. ps1; por ejemplo, CaseHoldsReport. ps1. 
     
   ```
 #script begin
@@ -150,49 +150,49 @@ Write-host "Script complete! Report files saved to this folder: '$Path'"
 #script end
   ```
 
-2. En la sesión de Windows PowerShell que abrió en el paso 1, vaya a la carpeta donde guardó la secuencia de comandos. 
+2. En la sesión de Windows PowerShell que se abrió en el paso 1, vaya a la carpeta en la que guardó el script. 
     
-3. Ejecute la secuencia de comandos; Por ejemplo:
+3. Ejecutar el script; por ejemplo:
 
     ```
     .\CaseHoldsReport.ps1
     ```
 
-    La secuencia de comandos realizará mostrará el mensaje guardar el informe para que una carpeta de destino. 
+    La secuencia de comandos pedirá una carpeta de destino en la que guardar el informe. 
     
-4. Escriba el nombre de ruta de acceso completa de la carpeta que se va a guardar el informe y, a continuación, presione **ENTRAR**.
+4. Escriba el nombre de la ruta de acceso completa de la carpeta en la que desea guardar el informe y, a continuación, presione **entrar**.
     
     > [!TIP]
-    > Para guardar el informe en la misma carpeta que la secuencia de comandos se encuentra en, escriba un punto (".") cuando se le solicite una carpeta de destino. Para guardar el informe en una subcarpeta en la carpeta donde se encuentra la secuencia de comandos, simplemente escriba el nombre de la subcarpeta. 
+    > Para guardar el informe en la misma carpeta en la que se encuentra el script, escriba un punto (".") cuando se le solicite una carpeta de destino. Para guardar el informe en una subcarpeta de la carpeta en la que se encuentra el script, escriba el nombre de la subcarpeta. 
   
-    La secuencia de comandos empieza a recopilar información acerca de todos los casos de exhibición de documentos electrónicos en su organización. No tener acceso al archivo de informe mientras se está ejecutando la secuencia de comandos. Una vez finalizada la secuencia de comandos, se muestra un mensaje de confirmación en la sesión de Windows PowerShell. Después de que aparezca este mensaje, se puede obtener acceso al informe en la carpeta que especificó en el paso 4. Es el nombre de archivo para el informe de `CaseHoldsReport<DateTimeStamp>.csv`.
+    El script empieza a recopilar información sobre todos los casos de eDiscovery de la organización. No obtenga acceso al archivo de informe mientras se ejecuta el script. Una vez completado el script, se muestra un mensaje de confirmación en la sesión de Windows PowerShell. Después de que se muestre este mensaje, puede tener acceso al informe en la carpeta que especificó en el paso 4. El nombre de archivo del informe es `CaseHoldsReport<DateTimeStamp>.csv`.
 
-    Addtionally, la secuencia de comandos también crea un informe con una lista de los casos que no tengan ninguna suspensión. El nombre de archivo para este informe es `CaseswithNoHolds<DateTimeStamp>.csv`.
+    Además, el script también crea un informe con una lista de casos que no tienen ninguna suspensión. El nombre de archivo de este informe `CaseswithNoHolds<DateTimeStamp>.csv`es.
     
-    Este es un ejemplo de ejecución del script CaseHoldsReport.ps1. 
+    Este es un ejemplo de cómo se ejecuta el script CaseHoldsReport. ps1. 
     
-    ![El resultado después de ejecutar la secuencia de comandos CaseHoldsReport.ps1](media/7d312ed5-505e-4ec5-8f06-3571e3524a1a.png)
+    ![El resultado después de ejecutar el script CaseHoldsReport. ps1](media/7d312ed5-505e-4ec5-8f06-3571e3524a1a.png)
   
 ## <a name="more-information"></a>Más información
 
-El caso contiene el informe que se crea al ejecutar el script en este artículo contiene la siguiente información sobre cada suspensión. Como se explica anteriormente, debe ser un administrador para devolver información para todas las suspensiones en la organización de exhibición de documentos electrónicos. Para obtener más información acerca de caso de suspensiones, consulte [casos de exhibición de documentos electrónicos en la seguridad de Office 365 &amp; centro de cumplimiento](ediscovery-cases.md).
+El informe de suspensiones de casos que se crea al ejecutar el script de este artículo contiene la siguiente información sobre cada suspensión. Como se ha explicado anteriormente, debe ser administrador de eDiscovery para devolver información de todas las suspensiones de la organización. Para obtener más información acerca de las suspensiones de casos, consulte [casos de &amp; EDiscovery en el centro de seguridad y cumplimiento de Office 365](ediscovery-cases.md).
   
-  - El nombre de la suspensión y el nombre del caso de exhibición de documentos electrónicos que está asociada la suspensión.
+  - El nombre de la retención y el nombre del caso de exhibición de documentos electrónicos con el que está asociada la retención.
     
-  - Si está o no el caso de exhibición de documentos electrónicos activo o cerrado.
+  - Si el caso de exhibición de documentos electrónicos está activo o cerrado.
     
-  - Si la suspensión está habilitada o deshabilitada.
+  - Indica si la retención está habilitada o deshabilitada.
     
-  - Los miembros de los casos de exhibición de documentos electrónicos que está asociada la suspensión. Case (miembros) puede ver o administrar un caso, dependiendo de los permisos de exhibición de documentos electrónicos que se han asignado.
+  - Los miembros del caso de eDiscovery con los que está asociada la retención. Los miembros de caso pueden ver o administrar un caso, según los permisos de exhibición de documentos electrónicos que se les haya asignado.
     
-  - La hora y fecha de que creación de las mayúsculas y minúsculas.
+  - La hora y la fecha en que se creó el caso.
     
-  - Si se cierra un caso, la persona que se cierra y la hora y fecha se ha cerrado.
+  - Si se cierra un caso, la persona que lo cerró y la fecha y hora en que se cerró.
     
-  - Ubicaciones que están en espera de sitios de los buzones de Exchange y SharePoint.
+  - Las ubicaciones de los buzones de Exchange y de los sitios de SharePoint que están en suspensión.
     
-  - Si la suspensión está basada en consultas, la sintaxis de consulta.
+  - Si la retención está basada en consultas, la sintaxis de la consulta.
     
-  - La hora y fecha de que creación de la suspensión y la persona que lo creó.
+  - La fecha y la hora en que se creó la retención y la persona que la creó.
     
-  - La hora y fecha de que la suspensión se modificó por última vez y la persona que haya cambiado.
+  - La fecha y la hora en que se modificó por última vez la retención y la persona que la modificó.

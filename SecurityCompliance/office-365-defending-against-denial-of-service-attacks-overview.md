@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
-ms.service: Office 365 Administration
+ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Información general sobre los ataques de denegación de servicio (DoS).
-ms.openlocfilehash: cd099bcb225cfa5dd1f44f14d4b7813bef8f7442
-ms.sourcegitcommit: c94cb88a9ce5bcc2d3c558f0fcc648519cc264a2
+ms.openlocfilehash: 246704bff18c07d9b76281ae3c7071cd0d747630
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30091028"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220510"
 ---
 # <a name="defending-against-denial-of-service-attacks-in-office-365"></a>Defensa contra ataques por denegación de servicio en Office 365
 

@@ -1,7 +1,7 @@
 ---
 title: 'Centro de administración de Exchange en Exchange Online Protection  '
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 12/9/2016
 ms.audience: ITPro
@@ -12,13 +12,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 97921f0e-832f-40c7-b56d-414faede5191
+ms.collection:
+- M365-security-compliance
 description: El Centro de administración de Exchange (EAC) es la consola de administración basada en web para Microsoft Exchange Online Protection (EOP).
-ms.openlocfilehash: 144907110af9fcbec1c6399e0695abb705bef409
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 0d1e56b85afe6655b5c6d08df51d4607df92d1d5
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002949"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30220470"
 ---
 # <a name="exchange-admin-center-in-exchange-online-protection"></a>Centro de administración de Exchange en Exchange Online Protection  
 
@@ -32,13 +34,13 @@ El Centro de administración de Exchange (EAC) es la consola de administración 
 
 En la mayoría de los casos, los clientes de EOP obtienen acceso al EAC a través del Centro de administración de Office 365. Encontrará un vínculo a EOP en el menú desplegable del icono **Administrador**, que está al lado del icono **Yo**. Haga clic en el icono **Administrador** y seleccione **Protección en línea de Exchange** en el menú desplegable para ir al EAC. 
   
-También puede obtener acceso a la página directamente a través de la siguiente dirección URL de inicio de sesión de CEF: https://admin.protection.outlook.com/ecp/\<companydomain\>. Por ejemplo, https://admin.protection.outlook.com/ecp/contoso.onmicrosoft.com. Después de especificar sus credenciales de usuario se le dirigirá directamente en el EAC.
+También puede tener acceso a la página de inicio de sesión del EAC directamente a https://admin.protection.outlook.com/ecp/\<companydomain\>través de la siguiente dirección URL:. Por ejemplo, https://admin.protection.outlook.com/ecp/contoso.onmicrosoft.com. Después de especificar las credenciales de usuario, se le dirigirá directamente al EAC.
   
 ## <a name="common-user-interface-elements-in-the-eac"></a>Elementos comunes de la interfaz de usuario en EAC
 
 En esta sección se describen los elementos de la interfaz de usuario del EAC.
   
-![AdminCenter de elevación de privilegios](media/EOP-AdminCenter.png)
+![EOP: AdminCenter](media/EOP-AdminCenter.png)
   
 ### <a name="feature-pane"></a>Panel de características
 
@@ -123,7 +125,7 @@ Los siguientes idiomas están disponibles y son compatibles con Exchange Online 
     
 - Danés
     
-- Holandés
+- Neerlandés
     
 - Holandés
     

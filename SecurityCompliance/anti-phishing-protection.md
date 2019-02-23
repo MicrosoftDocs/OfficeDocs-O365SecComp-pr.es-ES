@@ -1,45 +1,30 @@
 ---
-title: Protección contra suplantación de identidad (phishing) en Office 365
-ms.author: krowley
-author: kccross
-manager: laurawi
-ms.date: 10/11/2018
-ms.audience: ITPro
-ms.topic: article
-ms.service: o365-administration
-localization_priority: Normal
-search.appverid:
-- MET150
-ms.assetid: 75af74b2-c7ea-4556-a912-8c48e07271d3
-description: Office 365 ofrece una variedad de protección contra ataques de suplantación de identidad de forma predeterminada y también a través de las ofertas adicionales como ATP contra suplantación de identidad. En este tema se presentan los recursos en línea que puede usar para aprender sobre e implementar opciones contra suplantación de identidad y estrategias en Office 365.
-ms.openlocfilehash: 163d03ee49ccf18f7d50324e0ac13ac6d219a4ea
-ms.sourcegitcommit: ba2175e394d0cb9f8ede9206aabb44b5b677fa0a
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "25496884"
+title: "protección contra la suplantación de identidad en Office 365" MS. Author: krowley Author: kccross Manager: laurawi ms. Date: 10/11/2018 ms. Audience: ITPro ms. topic: article ms. Service: O365-seccomp localization_priority: normal Search. appverid:
+- MET150 ms. AssetID: 75af74b2-c7ea-4556-A912-8c48e07271d3 ms. Collection:
+    - M365-Security-Compliance Description: "Office 365 ofrece una amplia variedad de protección contra los ataques de suplantación de identidad de forma predeterminada y también a través de ofertas adicionales, como la antiphishing de ATP. En este tema se presentan los recursos en línea que puede usar para obtener información sobre las opciones y estrategias contra el suplantación de identidad en Office 365.
 ---
+
 # <a name="anti-phishing-protection-in-office-365"></a>Protección contra suplantación de identidad (phishing) en Office 365
 
-Office 365 ofrece una variedad de protección contra ataques de suplantación de identidad de forma predeterminada y también a través de las ofertas adicionales como ATP contra suplantación de identidad. En este tema se presentan los recursos en línea que puede usar para aprender sobre e implementar opciones contra suplantación de identidad y estrategias en Office 365.
+Office 365 ofrece una amplia variedad de protección contra los ataques de suplantación de identidad de forma predeterminada y a través de ofertas adicionales como el antiphishing de ATP. En este tema se presentan los recursos en línea que se pueden usar para obtener información sobre cómo implementar las opciones y estrategias contra la suplantación de identidad (phishing) en Office 365.
   
-## <a name="protect-your-organization-against-phishing-attacks-in-office-365"></a>Proteger su organización contra los ataques de suplantación de identidad en Office 365
+## <a name="protect-your-organization-against-phishing-attacks-in-office-365"></a>Proteger la organización contra ataques de suplantación de identidad (phishing) en Office 365
 
-Como administrador de Office 365, use estos recursos para aprender a usar Office 365 para proteger contra los ataques de suplantación de identidad basada en suplantación y que le ayudarán a instruir a los usuarios finales para que no ser víctima de ataques de suplantación de identidad malintencionado.
+Como administrador de Office 365, use estos recursos para aprender a usar Office 365 para protegerse contra ataques de suplantación de identidad basados en suplantación y para ayudar a los usuarios finales a que no caigan en las solicitudes de ataques de suplantación de identidad malintencionado.
   
-Antes de realizar cualquier cambio en la configuración de Office 365, asegúrese de que está al día en la última que ofrece Office 365. [Visite la seguridad de Microsoft &amp; centro de seguridad de](https://www.microsoft.com/security/default.aspx).
+Antes de realizar cambios en la configuración de Office 365, asegúrese de que está al día sobre lo último que Office 365 tiene que ofrecer. [Visite el centro de &amp; seguridad y protección de Microsoft](https://www.microsoft.com/security/default.aspx).
   
-Lo más importante que puede hacer para proteger el entorno es enseñar a los usuarios acerca de los riesgos y los signos de advertencia de ataques de suplantación de identidad. Para empezar, debe revisar a los usuarios con la información de [protegerse de los esquemas de suplantación de identidad y otras formas de loterías en línea](https://support.office.com/article/f84750b4-2f2c-46c3-89f6-e65f7f8c3546).
+Lo más importante que puede hacer para proteger su entorno es educar a los usuarios sobre los peligros y las señales de advertencia de los ataques de suplantación de identidad. Para empezar, familiaríce a sus usuarios con la información de protegerse de las tramas de suplantación de [identidad y otras formas de fraude en línea](https://support.office.com/article/f84750b4-2f2c-46c3-89f6-e65f7f8c3546).
   
-Para las organizaciones de Office 365 con Office Enterprise E5, puede usar ATP contra suplantación de identidad en la seguridad &amp; centro de cumplimiento. ATP contra suplantación de identidad, aplica un conjunto de modelos de aprendizaje de máquina junto con los algoritmos de detección de suplantación a los mensajes entrantes para proporcionar protección para mercancías y lanza ataques de suplantación de identidad. ATP contra suplantación de identidad protege su organización de acuerdo con las directivas que se han establecido por su Office 365 globales o los administradores de seguridad. Para obtener más información, vea [funciones de ATP contra suplantación de identidad en Office 365](atp-anti-phishing.md) y [configurar las directivas contra suplantación de identidad en Office 365](set-up-anti-phishing-policies.md).
+Para las organizaciones de Office 365 con Office Enterprise E5, puede usar anti-phishing de ATP en &amp; el centro de seguridad y cumplimiento. ATP anti-phishing aplica un conjunto de modelos de aprendizaje automático junto con algoritmos de detección de suplantación a los mensajes entrantes para proporcionar protección para los ataques de suplantación de identidad (phishing) y de consumo. La protección contra el phishing de ATP protege a su organización de acuerdo con las directivas establecidas por los administradores globales o de seguridad de Office 365. Para obtener más información, consulte [ATP anti-phishing Capabilities in office 365](atp-anti-phishing.md) y [set up anti-phishing policies in Office 365](set-up-anti-phishing-policies.md).
   
-Para obtener más detalles sobre cómo Office 365 se configura de forma predeterminada para proteger al equipo contra los ataques de suplantación de identidad, vea [cómo Office 365 valida la From: dirección para evitar la suplantación de identidad](how-office-365-validates-the-from-address.md).
+Para obtener más información acerca de cómo Office 365 está configurado de forma predeterminada para protegerle de ataques de suplantación de identidad (phishing), vea [Cómo office 365 valida la dirección de: para evitar la suplantaCión de identidad](how-office-365-validates-the-from-address.md).
   
 ## <a name="related-topics"></a>Temas relacionados
 
 [Cómo Office 365 valida la dirección del remitente para evitar la suplantación de identidad](how-office-365-validates-the-from-address.md)
   
-[Protegerse contra esquemas de suplantación de identidad y otras formas de loterías en línea](https://support.office.com/article/f84750b4-2f2c-46c3-89f6-e65f7f8c3546)
+[Protéjase de los esquemas de suplantación de identidad y otras formas de fraude en línea](https://support.office.com/article/f84750b4-2f2c-46c3-89f6-e65f7f8c3546)
   
 [Protección contra amenazas avanzada de Office 365](office-365-atp.md)
   

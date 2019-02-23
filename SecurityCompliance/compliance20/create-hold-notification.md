@@ -1,12 +1,12 @@
 ---
-title: Crear un aviso de retención legal
+title: Crear un aviso de suspensión legal
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,166 +14,166 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 8db5a21f60a1d73c11e28bc2765a95c23646115d
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: 7d2746699a427fa3c7ad3afd7cf791c61cd55249
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29706081"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30213100"
 ---
-# <a name="create-a-legal-hold-notice"></a>Crear un aviso de retención legal
+# <a name="create-a-legal-hold-notice"></a>Crear un aviso de suspensión legal
 
-Con comunicaciones de custodia de exhibición de documentos electrónicos avanzada (vista previa), las organizaciones pueden administrar su flujo de trabajo alrededor de comunicarse con custodia. A través de la herramienta de comunicaciones, los equipos legales sistemáticamente pueden enviar, recopilar y realizar un seguimiento de las notificaciones de retención legal. El proceso de creación flexible también permite a los equipos personalizar el flujo de trabajo de notificación de espera y el contenido en los anuncios enviados a custodia. 
+Mediante el uso de comunicaciones por custodios de eDiscovery avanzado (versión preliminar), las organizaciones pueden administrar su flujo de trabajo a partir de la comunicación con los custodios. Mediante la herramienta de comunicaciones, los equipos legales pueden enviar, recopilar y realizar un seguimiento sistemático de las notificaciones de retención legal. El proceso de creación flexible también permite a Microsoft Teams personalizar el flujo de trabajo de notificaciones de retención y el contenido de los avisos que se envían a los custodios. 
 
-El artículo describe los pasos del flujo de trabajo de notificación de espera.
+En el artículo se describen los pasos del flujo de trabajo de la notificación de retención.
 
-## <a name="step-1-specify-communication-details"></a>Paso 1: Especificar detalles de comunicación
+## <a name="step-1-specify-communication-details"></a>Paso 1: especificar detalles de comunicación
 
-El primer paso es especificar los detalles adecuados para avisos de retención legal u otras comunicaciones de custodia. 
+El primer paso es especificar los detalles adecuados para los avisos de suspensión legal u otras comunicaciones de custodios. 
 
-1. En el centro de cumplimiento de seguridad &, vaya a la **exhibición de documentos electrónicos > avanzada exhibición de documentos electrónicos (vista previa)** para mostrar la lista de casos de la organización.
+1. En el centro de seguridad & cumplimiento, vaya a **eDiscovery _GT_ Advanced eDiscovery (versión preliminar)** para mostrar la lista de casos de su organización.
    
-2. Haga clic en la ficha **comunicaciones** y, a continuación, haga clic en **nueva comunicación**.
+2. Haga clic en la pestaña **comunicaciones** y, a continuación, en **nueva comunicación**.
    
-3. En la página de **comunicación de nombre** , especifique los siguientes detalles de comunicación (obligatorio).
+3. En la página **comunicación de nombre** , especifique los siguientes detalles de comunicación (obligatorios).
 
-    - **Nombre**: éste es el nombre para la comunicación.
+    - **Name**: nombre de la comunicación.
     
-    - **Responsable de emisión**: la lista desplegable muestra una lista de miembros de mayúsculas y minúsculas. Cada aviso enviado a custodia se van a enviar en nombre del ordenador emisora especificado.
+    - **Responsable**de la emisión: la lista desplegable muestra una lista de los miembros de caso. Cada aviso que se envíe a los custodios se enviará en nombre del responsable de la expedición especificado.
 
 4. Haga clic en **Siguiente**.
 
-## <a name="step-2-define-the-portal-content"></a>Paso 2: Definir el contenido del portal
+## <a name="step-2-define-the-portal-content"></a>Paso 2: definir el contenido del portal
 
-A continuación, puede crear y agregar el contenido de la notificación de espera. En la página de **contenido del portal de definir** en el Asistente para **crear comunicaciones** , especifique el contenido de la notificación de espera. Este contenido se anexará automáticamente a los avisos de emisión, vuelva a emitir, aviso y escalación. Además, este contenido aparecerá en el Portal de cumplimiento de normas de custodia. 
+A continuación, puede crear y agregar el contenido del aviso de suspensión. En la página **definir contenido del portal** del Asistente para **crear una comunicación** , especifique el contenido del aviso de retención. Este contenido se anexará automáticamente a los avisos de emisión, reEmisión, aviso y reAsignación de responsabilidades. Además, este contenido aparecerá en el portal de cumplimiento de la custodio. 
 
 Para crear el contenido del portal:
 
-1. Tipo (o cortar y paster de otro documento) aviso de la suspensión en el cuadro de edición para el contenido del portal. 
+1. Escriba (o corte y pegado desde otro documento) el aviso de suspensión en el cuadro de texto para el contenido del portal. 
 
-2. Insertar combinación variables en el aviso para personalizar el aviso y compartir el Portal de cumplimiento de normas de custodia.
+2. Inserte las variables de combinación en el aviso para personalizar el aviso y compartir el portal de cumplimiento de custodios.
 
 3. Haga clic en **Siguiente**.
 
   >[!Tip]
-  >Para obtener que más información acerca de cómo puede personalizar el contenido y el formato del contenido del portal, vea [usar el Editor de comunicaciones](using-communications-editor.md).
+  >Para obtener más información acerca de cómo puede personalizar el contenido y el formato del contenido del portal, consulte [use el editor de comunicaciones](using-communications-editor.md).
 
-## <a name="step-3-set-the-required-notifications"></a>Paso 3: Establecer las notificaciones necesarias
+## <a name="step-3-set-the-required-notifications"></a>Paso 3: establecer las notificaciones necesarias
 
-Una vez que haya definido el contenido de la notificación de espera, puede configurar los flujos de trabajo alrededor de envío y administración del proceso de notificación. Las notificaciones son mensajes de correo electrónico que se envían a notificar y el seguimiento con custodia. Cada agregado a la comunicación de custodia recibirán la misma notificación. 
+Una vez que haya definido el contenido del aviso de retención, puede configurar los flujos de trabajo para enviar y administrar el proceso de notificación. Las notificaciones son mensajes de correo electrónico que se envían a notificar y realizar un seguimiento con custodios. Todos los custodios que se agreguen a la comunicación recibirán la misma notificación. 
 
-Para configurar y enviar un aviso de suspensión, debe incluir la emisión, Re-emisión y las notificaciones de la versión.
+Para configurar y enviar un aviso de retención, debe incluir notificaciones de emisión, reEmisión y publicación.
 
 ### <a name="issuance-notification"></a>Notificación de emisión 
 
-Una vez creada la comunicación, la **Notificación de emisión** se inicia por el ordenador emitir especificado. La notificación de emisión es la primera comunicación enviada a la custodia para informar sobre sus obligaciones de conservación. 
+Una vez creada la comunicación, la **notificación de emisión** la inicia el responsable de la emisión especificado. La notificación de emisión es la primera comunicación que se envía al custodio para informarles sobre sus obligaciones de conservación. 
 
 Para crear una notificación de emisión:
 
-1. En el icono de **emisión** , haga clic en **Editar**.
+1. En el icono **emisión** , haga clic en **Editar**.
    
-2. Si es necesario, agregar miembros casos adicionales o personal para los campos **Cc** y **CCO** . Para agregar varios usuarios a estos campos, separe las direcciones de correo electrónico con un punto y coma.
+2. Si es necesario, agregue miembros del caso o personal adicional a los campos **CC** y **CCO** . Para agregar varios usuarios a estos campos, separe las direcciones de correo electrónico con un punto y coma.
    
-3. Especifique el **asunto** de la notificación (obligatorio).
+3. Especifique el **asunto** del aviso (obligatorio).
    
-4. Especificar el contenido o las instrucciones adicionales que le gustaría usar para proporcionar a la custodia (obligatorio). Tenga en cuenta que el contenido del portal que haya definido en el paso 2 se agrega al final de la notificación de emisión. 
+4. Especifique el contenido o las instrucciones adicionales que desearía proporcionar al custodio (obligatorio). Tenga en cuenta que el contenido del portal que definió en el paso 2 se agrega al final del aviso de emisión. 
    
 5. Haga clic en **Guardar** 
 
-### <a name="re-issuance-notification"></a>Notificación de emisión de RE 
+### <a name="re-issuance-notification"></a>Notificación de nueva emisión 
 
-Medida que avanza el caso, custodia es posible que sea necesario para conservar los datos adicionales o menor que anteriormente se le indique. Después de actualizar el contenido de la notificación de espera, la notificación de emisión de re las alertas a la custodia acerca de los cambios a sus obligaciones de conservación.
+A medida que avanza el caso, es posible que se necesiten custodios para conservar más o menos datos de los que se indicó anteriormente. Después de actualizar el contenido del aviso de retención, la notificación de reemisión alerta a los custodios sobre los cambios en sus obligaciones de conservación.
 
-Para crear una notificación de emisión de re: 
+Para crear una notificación de nueva emisión: 
 
-1. En el mosaico **publicó de nuevo** , haga clic en **Editar**.
+1. En el **** icono de reemisión, haga clic en **Editar**.
    
-2. Si es necesario, agregar miembros casos adicionales o personal para los campos **Cc** y **CCO** . Para agregar varios usuarios a estos campos, separe las direcciones de correo electrónico con un punto y coma.
+2. Si es necesario, agregue miembros del caso o personal adicional a los campos **CC** y **CCO** . Para agregar varios usuarios a estos campos, separe las direcciones de correo electrónico con un punto y coma.
    
-3. Especifique el **asunto** de la notificación (obligatorio).
+3. Especifique el **asunto** del aviso (obligatorio).
    
-4. Especificar el contenido o las instrucciones adicionales que le gustaría usar para proporcionar a la custodia (obligatorio). Tenga en cuenta que el contenido del portal que haya definido en el paso 2 se agrega al final de la notificación de re-emisión.
+4. Especifique el contenido o las instrucciones adicionales que desearía proporcionar al custodio (obligatorio). Tenga en cuenta que el contenido del portal que definió en el paso 2 se agrega al final del aviso de reemisión.
    
 5. Haga clic en **Guardar**.
 
 >[!Note]
->Si se modifica una notificación de espera, la notificación de emisión de re se enviarán automáticamente a todos los custodia asignada para el aviso de. Una vez que se envía la notificación, custodia le pedirá que vuelva a confirmar su aviso de suspensión. Si ha configurado los flujos de trabajo de cualquier aviso o escalación, estos se también volver a iniciar. 
+>Si se modifica una notificación de retención, se enviará automáticamente la notificación de reemisión a todos los custodios asignados a la notificación. Una vez enviada la notificación, se pedirá a los custodios que vuelvan a confirmar su aviso de suspensión. Si ha configurado un flujo de trabajo de aviso o de escalado, también se reiniciará. 
 
-### <a name="release-notification"></a>Notificación de versión
+### <a name="release-notification"></a>Notificación de versiones
 
-Después de que se resuelve un asunto o si custodia ya no está sujeto a conservar el contenido, puede liberar la custodia de un caso. Si la custodia emitió anteriormente un aviso de suspensión, la notificación de versión puede usarse para custodia de alerta que se han liberado de sus obligaciones.
+Después de resolver una cuestión o si un custodio ya no está sujeto a preservar contenido, puede liberar el custodio de un caso. Si el custodio ha emitido previamente un aviso de retención, la notificación de versión puede usarse para avisar a los custodios de que han sido entregados desde sus obligaciones.
 
 Para crear una notificación de versión: 
 
-1. En el icono de **versión** , haga clic en **Editar**.
+1. En el mosaico de **versión** , haga clic en **Editar**.
    
-2. Si es necesario, agregar miembros casos adicionales o personal para los campos **Cc** y **CCO** . Para agregar varios usuarios a estos campos, separe las direcciones de correo electrónico con un punto y coma.
+2. Si es necesario, agregue miembros del caso o personal adicional a los campos **CC** y **CCO** . Para agregar varios usuarios a estos campos, separe las direcciones de correo electrónico con un punto y coma.
    
-3. Especifique el **asunto** de la notificación (obligatorio).
+3. Especifique el **asunto** del aviso (obligatorio).
    
-4. Especificar el contenido o las instrucciones adicionales que le gustaría usar para proporcionar a la custodia (obligatorio).
+4. Especifique el contenido o las instrucciones adicionales que desearía proporcionar al custodio (obligatorio).
    
 5. Haga clic en **Guardar** y vaya al paso siguiente. 
 
-## <a name="optional-step-4-set-the-optional-notifications"></a>(Opcional) Paso 4: Establecer las notificaciones opcionales
+## <a name="optional-step-4-set-the-optional-notifications"></a>Opcional Paso 4: establecer las notificaciones opcionales
 
-De forma opcional, puede simplificar el flujo de trabajo para seguir copia de seguridad con custodia no responde por escalación y aviso automatizada de creación y programación las notificaciones.
+De manera opcional, puede simplificar el flujo de trabajo para seguir con los administradores que no responden mediante la creación y programación de notificaciones automatizadas de reaviso y reasignación de incidencias.
 
 ### <a name="reminders"></a>Avisos
 
-Una vez ha enviado una notificación de espera, puede seguimiento con custodia no responde mediante la definición de un flujo de trabajo de aviso. 
+Después de enviar una notificación de retención, puede realizar un seguimiento de los administradores que no responden mediante la definición de un flujo de trabajo de aviso. 
 
-Para programar avisos:
+Para programar los avisos:
 
 1. En el icono de **aviso** , haga clic en **Editar**.
    
-2. Habilitar el flujo de trabajo de **aviso** al activar la alternancia de **estado** (obligatorio).
+2. Habilite el flujo de trabajo de **aviso** activando el **Estado** de alternancia (obligatorio).
    
-3. Especifique el **intervalo de aviso (en días)** (obligatorio). Esto es el número de días que se esperará antes de enviar las notificaciones de aviso primera y seguimiento. Por ejemplo, si establece el intervalo de aviso a 7 días, a continuación, el primer aviso se enviará 7 días después de la notificación de espera se emitió inicialmente. Todos los avisos subsiguientes también se enviará cada 7 días.
+3. Especifique el **intervalo de aviso (en días)** (obligatorio). Es el número de días que se debe esperar antes de enviar las notificaciones de aviso de primer y seguimiento. Por ejemplo, si establece el intervalo de recordatorio en 7 días, el primer aviso se enviaría 7 días después de la emisión inicial de la notificación de retención. Todos los avisos subsiguientes se enviarán también cada 7 días.
    
-4. Especifique el **número de avisos** (obligatorio). Este campo especifica cuántos avisos para enviar a custodia reactivar con capacidad de respuesta. Por ejemplo, si establece el número de avisos a 3, custodia recibirían un máximo de 3 avisos. Después de custodia reconoce la notificación de la suspensión, ya no se van a enviar los avisos a ese usuario.
+4. Especifique el **número de avisos** (obligatorios). Este campo especifica cuántos avisos enviar a los custodios que no responden. Por ejemplo, si establece el número de avisos en 3, un custodio recibirá un máximo de 3 avisos. Una vez que un custodio reconoce la notificación de retención, ya no se enviarán avisos a ese usuario.
    
-5. Especifique el **asunto** de la notificación (obligatorio). 
+5. Especifique el **asunto** del aviso (obligatorio). 
    
-6. Especificar el contenido o las instrucciones adicionales que le gustaría usar para proporcionar a la custodia (obligatorio). Tenga en cuenta que el contenido del portal que haya definido en el paso 2 se agrega al final de la notificación de aviso.
+6. Especifique el contenido o las instrucciones adicionales que desearía proporcionar al custodio (obligatorio). Tenga en cuenta que el contenido del portal que definió en el paso 2 se agrega al final de la notificación de aviso.
    
-7. Haga clic en **Guardar** y vaya el paso siguiente.
+7. Haga clic en **Guardar** y continúe con el paso siguiente.
 
 ### <a name="escalations"></a>Escalaciones 
 
-En algunas situaciones, puede ser necesario obtener otras maneras de seguimiento con custodia no responde. Si una custodia no confirmar una notificación de espera después de recibir el número especificado de avisos, el equipo legal puede especificar un flujo de trabajo para enviar automáticamente un aviso de escalación a la custodia y su director.
+En algunas situaciones, es posible que necesite otras formas de realizar un seguimiento de los administradores que no responden. Si un custodio no reconoce una notificación de retención después de recibir el número especificado de avisos, el equipo legal puede especificar un flujo de trabajo para enviar automáticamente un aviso de escalado al custodio y a su administrador.
 
-Para programar extensiones:
+Para programar las escalaciones:
 
-1. En el icono de **escalación** , haga clic en **Editar**.
+1. En el **** mosaico escalado, haga clic en **Editar**.
    
-2. Habilitar el flujo de trabajo de **escalación** activando la alternancia de **estado** .
+2. Habilite el **** flujo de trabajo de escalado activando el **Estado** de alternancia.
    
 3. Especifique el **intervalo de escalación (en días)** (obligatorio). 
    
-4. Especifique el **número de escalaciones** (obligatorio). Este campo especifica cuántos extensiones para enviar a custodia reactivar con capacidad de respuesta. Por ejemplo, si se establece el número de extensiones en 3, a continuación, un aviso de escalación se enviará a la custodia y su administrador de un máximo de 3 veces. Después de custodia reconoce la notificación de la suspensión, escalaciones ya no se enviarán. 
+4. Especifique el **número de escalaciones** (obligatorio). Este campo especifica cuántas escalaciones se deben enviar a los custodios que no responden. Por ejemplo, si establece el número de escalaciones en 3, se enviará un aviso de remisión a la custodio y a su administrador un máximo de 3 veces. Después de que un custodio reconozca la notificación de retención, las escalaciones ya no se enviarán. 
    
-5. Especifique el **asunto** de la notificación (obligatorio). 
+5. Especifique el **asunto** del aviso (obligatorio). 
    
-6. Especificar el contenido o las instrucciones adicionales que le gustaría usar para proporcionar a la custodia (obligatorio). Tenga en cuenta que el contenido del portal que haya definido en el paso 2 se agrega al final de la notificación de escalación.
+6. Especifique el contenido o las instrucciones adicionales que desearía proporcionar al custodio (obligatorio). Tenga en cuenta que el contenido del portal que definió en el paso 2 se agrega al final de la notificación de escalamiento.
    
-7. Haga clic en **Guardar** y vaya el paso siguiente.
+7. Haga clic en **Guardar** y continúe con el paso siguiente.
    
-## <a name="step-5-assign-custodians"></a>Paso 5: Asignar custodia 
+## <a name="step-5-assign-custodians"></a>Paso 5: asignar custodios 
 
-Una vez que haya establecido el contenido para las notificaciones, seleccione la custodia para enviar las notificaciones a. 
+Una vez que haya finalizado el contenido de las notificaciones, seleccione los custodios a los que desea enviar las notificaciones. 
 
-Para agregar a custodia:
+Para agregar custodios:
 
-1. Asignar a custodia a la comunicación haciendo clic en la casilla de verificación junto a su nombre.
+1. Asigne custodios a la comunicación haciendo clic en la casilla situada junto a su nombre.
 
-    Una vez creada la comunicación, el flujo de trabajo de notificación se aplicará automáticamente a la custodia seleccionado.
+    Una vez creada la comunicación, el flujo de trabajo de notificaciones se aplicará automáticamente a los custodios seleccionados.
    
-2. Haga clic en **siguiente** para revisar la configuración de las comunicaciones y los detalles.
+2. Haga clic en **siguiente** para revisar la configuración y los detalles de comunicación.
  
 >[!NOTE]
->Sólo se puede agregar a custodia que se han agregado a las mayúsculas y minúsculas y no han sido enviado otra notificación dentro de las mayúsculas y minúsculas.
+>Solo se pueden agregar custodios que se hayan agregado al caso y que no se haya enviado otra notificación en el caso.
 
-## <a name="step-6-review-settings"></a>Paso 6: Configuración de revisión
+## <a name="step-6-review-settings"></a>Paso 6: revisar la configuración
 
-Después de revisar la configuración y haga clic en **Enviar** para completar la comunicación, el sistema iniciará automáticamente el flujo de trabajo de comunicación mediante el envío de la notificación de emisión.
+Después de revisar la configuración y hacer clic en **Enviar** para completar la comunicación, el sistema iniciará automáticamente el flujo de trabajo de comunicación enviando el aviso de emisión.
