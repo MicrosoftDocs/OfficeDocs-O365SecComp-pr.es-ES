@@ -1,7 +1,7 @@
 ---
 title: Asegurarse de que el correo no deseado se enruta a la carpeta de correo no deseado de cada usuario
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 7/16/2016
 ms.audience: ITPro
@@ -12,52 +12,54 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 0cbaccf8-4afc-47e3-a36d-a84598a55fb8
+ms.collection:
+- M365-security-compliance
 description: Cuando los clientes de EOP reciben correo no deseado, estos mensajes se mueven de forma predeterminada a la carpeta de correo no deseado del destinatario. Para que esta acción funcione en los buzones locales, debe configurar reglas de transporte de Exchange en los servidores de concentradores o perimetrales locales para encontrar los encabezados de correo no deseado que agregó EOP. Las reglas de transporte establecen el nivel de confianza contra correo no deseado (SCL) que usa la propiedad SclJunkThreshold (del cmdlet Set-OrganizationConfig) para que el correo no deseado se mueva a la carpeta de correo no deseado de cada buzón.
-ms.openlocfilehash: 1b0a9e5ee39820baade714612ca0b0bdb7a81bb9
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: d0ae9637ce95a1a8f0d4d241b3aef928c84ba3fa
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002859"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30221030"
 ---
-# <a name="ensure-that-spam-is-routed-to-each-users-junk-email-folder"></a><span data-ttu-id="29173-105">Asegurarse de que el correo no deseado se enruta a la carpeta de correo no deseado de cada usuario</span><span class="sxs-lookup"><span data-stu-id="29173-105">Ensure that spam is routed to each user's Junk Email folder</span></span>
+# <a name="ensure-that-spam-is-routed-to-each-users-junk-email-folder"></a><span data-ttu-id="f384f-105">Asegurarse de que el correo no deseado se enruta a la carpeta de correo no deseado de cada usuario</span><span class="sxs-lookup"><span data-stu-id="f384f-105">Ensure that spam is routed to each user's Junk Email folder</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="29173-p102">Este tema solo se aplica a clientes de Exchange Online Protection (EOP) que hospedan buzones de correo localmente en una implementación híbrida. Los clientes de Exchange Online cuyos buzones se hospedan completamente en Office 365 no necesitan ejecutar estos comandos.</span><span class="sxs-lookup"><span data-stu-id="29173-p102">This topic only applies to Exchange Online Protection (EOP) customers who host mailboxes on-premises in a hybrid deployment. Exchange Online customers whose mailboxes are fully-hosted in Office 365 do not need to run these commands.</span></span> 
+> <span data-ttu-id="f384f-p102">Este tema solo se aplica a clientes de Exchange Online Protection (EOP) que hospedan buzones de correo localmente en una implementación híbrida. Los clientes de Exchange Online cuyos buzones se hospedan completamente en Office 365 no necesitan ejecutar estos comandos.</span><span class="sxs-lookup"><span data-stu-id="f384f-p102">This topic only applies to Exchange Online Protection (EOP) customers who host mailboxes on-premises in a hybrid deployment. Exchange Online customers whose mailboxes are fully-hosted in Office 365 do not need to run these commands.</span></span> 
   
-<span data-ttu-id="29173-p103">Cuando los clientes de EOP reciben correo no deseado, estos mensajes se mueven de forma predeterminada a la carpeta de correo no deseado del destinatario. Para que esta acción funcione en los buzones locales, debe configurar reglas de transporte de Exchange en los servidores de concentradores o perimetrales locales para encontrar los encabezados de correo no deseado que agregó EOP. Las reglas de transporte establecen el nivel de confianza contra correo no deseado (SCL) que usa la propiedad SclJunkThreshold (del cmdlet Set-OrganizationConfig) para que el correo no deseado se mueva a la carpeta de correo no deseado de cada buzón.</span><span class="sxs-lookup"><span data-stu-id="29173-p103">The default anti-spam action for EOP customers is to move spam messages to the recipients' Junk Email folder. In order for this action to work with on-premises mailboxes, you must configure Exchange Transport rules on your on-premises Edge or Hub servers to detect spam headers added by EOP. These Transport rules set the spam confidence level (SCL) used by the SclJunkThreshold property of the Set-OrganizationConfig cmdlet to move spam into the Junk Email folder of each mailbox.</span></span> 
+<span data-ttu-id="f384f-p103">Cuando los clientes de EOP reciben correo no deseado, estos mensajes se mueven de forma predeterminada a la carpeta de correo no deseado del destinatario. Para que esta acción funcione en los buzones locales, debe configurar reglas de transporte de Exchange en los servidores de concentradores o perimetrales locales para encontrar los encabezados de correo no deseado que agregó EOP. Las reglas de transporte establecen el nivel de confianza contra correo no deseado (SCL) que usa la propiedad SclJunkThreshold (del cmdlet Set-OrganizationConfig) para que el correo no deseado se mueva a la carpeta de correo no deseado de cada buzón.</span><span class="sxs-lookup"><span data-stu-id="f384f-p103">The default anti-spam action for EOP customers is to move spam messages to the recipients' Junk Email folder. In order for this action to work with on-premises mailboxes, you must configure Exchange Transport rules on your on-premises Edge or Hub servers to detect spam headers added by EOP. These Transport rules set the spam confidence level (SCL) used by the SclJunkThreshold property of the Set-OrganizationConfig cmdlet to move spam into the Junk Email folder of each mailbox.</span></span> 
   
-### <a name="to-add-transport-rules-to-ensure-spam-is-moved-to-the-junk-email-folder-by-using-windows-powershell"></a><span data-ttu-id="29173-111">Para agregar reglas de transporte que hagan que el correo no deseado se mueva a la carpeta de correo no deseado mediante Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="29173-111">To add transport rules to ensure spam is moved to the Junk Email folder by using Windows PowerShell</span></span>
+### <a name="to-add-transport-rules-to-ensure-spam-is-moved-to-the-junk-email-folder-by-using-windows-powershell"></a><span data-ttu-id="f384f-111">Para agregar reglas de transporte que hagan que el correo no deseado se mueva a la carpeta de correo no deseado mediante Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="f384f-111">To add transport rules to ensure spam is moved to the Junk Email folder by using Windows PowerShell</span></span>
 
-1. <span data-ttu-id="29173-p104">Obtenga acceso al Shell de administración de Exchange de su servidor Exchange local. Para obtener información sobre cómo abrir el Shell de administración de Exchange en su organización local Exchange, vea **Open the Shell**.</span><span class="sxs-lookup"><span data-stu-id="29173-p104">Access the Exchange Management Shell for your on-premises Exchange server. To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see **Open the Shell**.</span></span>
+1. <span data-ttu-id="f384f-p104">Obtenga acceso al Shell de administración de Exchange de su servidor Exchange local. Para obtener información sobre cómo abrir el Shell de administración de Exchange en su organización local Exchange, vea **Open the Shell**.</span><span class="sxs-lookup"><span data-stu-id="f384f-p104">Access the Exchange Management Shell for your on-premises Exchange server. To learn how to open the Exchange Management Shell in your on-premises Exchange organization, see **Open the Shell**.</span></span>
     
-2. <span data-ttu-id="29173-114">Ejecute el siguiente comando para enrutar mensajes de correo no deseado de contenido filtrado a la carpeta de correo electrónico no deseado:</span><span class="sxs-lookup"><span data-stu-id="29173-114">Run the following command to route content-filtered spam messages to the Junk Email folder:</span></span>
+2. <span data-ttu-id="f384f-114">Ejecute el siguiente comando para enrutar mensajes de correo no deseado de contenido filtrado a la carpeta de correo electrónico no deseado:</span><span class="sxs-lookup"><span data-stu-id="f384f-114">Run the following command to route content-filtered spam messages to the Junk Email folder:</span></span>
     
   ```
   New-TransportRule "NameForRule" -HeaderContainsMessageHeader "X-Forefront-Antispam-Report" -HeaderContainsWords "SFV:SPM" -SetSCL 6
   ```
 
-    <span data-ttu-id="29173-115">Donde  _NameForRule_ es el nombre de la regla nueva, por ejemplo, JunkContentFilteredMail.</span><span class="sxs-lookup"><span data-stu-id="29173-115">Where  _NameForRule_ is the name for the new rule, for example, JunkContentFilteredMail.</span></span> 
+    <span data-ttu-id="f384f-115">Donde  _NameForRule_ es el nombre de la regla nueva, por ejemplo, JunkContentFilteredMail.</span><span class="sxs-lookup"><span data-stu-id="f384f-115">Where  _NameForRule_ is the name for the new rule, for example, JunkContentFilteredMail.</span></span> 
     
-3. <span data-ttu-id="29173-116">Ejecute el siguiente comando para enrutar mensajes marcados como correo no deseado antes de alcanzar el filtro de contenido en la carpeta de correo electrónico no deseado:</span><span class="sxs-lookup"><span data-stu-id="29173-116">Run the following command to route messages marked as spam prior to reaching the content filter to the Junk Email folder:</span></span>
+3. <span data-ttu-id="f384f-116">Ejecute el siguiente comando para enrutar mensajes marcados como correo no deseado antes de alcanzar el filtro de contenido en la carpeta de correo electrónico no deseado:</span><span class="sxs-lookup"><span data-stu-id="f384f-116">Run the following command to route messages marked as spam prior to reaching the content filter to the Junk Email folder:</span></span>
     
   ```
   New-TransportRule "NameForRule" -HeaderContainsMessageHeader "X-Forefront-Antispam-Report" -HeaderContainsWords "SFV:SKS" -SetSCL 6
   ```
 
-    <span data-ttu-id="29173-117">Donde  _NameForRule_ es el nombre de la regla nueva, por ejemplo, JunkMailBeforeReachingContentFilter.</span><span class="sxs-lookup"><span data-stu-id="29173-117">Where  _NameForRule_ is the name for the new rule, for example, JunkMailBeforeReachingContentFilter.</span></span> 
+    <span data-ttu-id="f384f-117">Donde  _NameForRule_ es el nombre de la regla nueva, por ejemplo, JunkMailBeforeReachingContentFilter.</span><span class="sxs-lookup"><span data-stu-id="f384f-117">Where  _NameForRule_ is the name for the new rule, for example, JunkMailBeforeReachingContentFilter.</span></span> 
     
-4. <span data-ttu-id="29173-118">Ejecute el siguiente comando para asegurarse de que los mensajes de los remitentes que estén en una lista de bloqueados de la directiva de correo no deseado, como la de **remitentes bloqueados**, se enruten a la carpeta de correo no deseado:</span><span class="sxs-lookup"><span data-stu-id="29173-118">Run the following command to ensure that messages from senders in a block list in the spam filter policy, such as the **Sender block** list, are routed to the Junk Email folder:</span></span> 
+4. <span data-ttu-id="f384f-118">Ejecute el siguiente comando para asegurarse de que los mensajes de los remitentes que estén en una lista de bloqueados de la directiva de correo no deseado, como la de **remitentes bloqueados**, se enruten a la carpeta de correo no deseado:</span><span class="sxs-lookup"><span data-stu-id="f384f-118">Run the following command to ensure that messages from senders in a block list in the spam filter policy, such as the **Sender block** list, are routed to the Junk Email folder:</span></span> 
     
   ```
   New-TransportRule "NameForRule" -HeaderContainsMessageHeader "X-Forefront-Antispam-Report" -HeaderContainsWords "SFV:SKB" -SetSCL 6
   ```
 
-    <span data-ttu-id="29173-119">Donde  _NameForRule_ es el nombre de la regla nueva, por ejemplo, JunkMailInSenderBlockList.</span><span class="sxs-lookup"><span data-stu-id="29173-119">Where  _NameForRule_ is the name for the new rule, for example, JunkMailInSenderBlockList.</span></span> 
+    <span data-ttu-id="f384f-119">Donde  _NameForRule_ es el nombre de la regla nueva, por ejemplo, JunkMailInSenderBlockList.</span><span class="sxs-lookup"><span data-stu-id="f384f-119">Where  _NameForRule_ is the name for the new rule, for example, JunkMailInSenderBlockList.</span></span> 
     
-<span data-ttu-id="29173-p105">Si no quiere usar la acción **Mover el mensaje a la carpeta de correo no deseado**, puede elegir otra acción en las directivas de filtro de contenido del Centro de administración de Exchange. Para obtener más información, vea [Configurar las directivas de filtro de correo no deseado](configure-your-spam-filter-policies.md). Para obtener más información sobre estos campos del encabezado del mensaje, vea [Encabezados de mensajes de correo no deseado](anti-spam-message-headers.md).</span><span class="sxs-lookup"><span data-stu-id="29173-p105">If you do not want to use the **Move message to Junk Email folder** action, you can choose another action in your content filter policies in the Exchange admin center. For more information, see [Configure your spam filter policies](configure-your-spam-filter-policies.md). For more information about these fields in the message header, see [Anti-spam message headers](anti-spam-message-headers.md).</span></span>
+<span data-ttu-id="f384f-p105">Si no quiere usar la acción **Mover el mensaje a la carpeta de correo no deseado**, puede elegir otra acción en las directivas de filtro de contenido del Centro de administración de Exchange. Para obtener más información, vea [Configurar las directivas de filtro de correo no deseado](configure-your-spam-filter-policies.md). Para obtener más información sobre estos campos del encabezado del mensaje, vea [Encabezados de mensajes de correo no deseado](anti-spam-message-headers.md).</span><span class="sxs-lookup"><span data-stu-id="f384f-p105">If you do not want to use the **Move message to Junk Email folder** action, you can choose another action in your content filter policies in the Exchange admin center. For more information, see [Configure your spam filter policies](configure-your-spam-filter-policies.md). For more information about these fields in the message header, see [Anti-spam message headers](anti-spam-message-headers.md).</span></span>
   
-## <a name="see-also"></a><span data-ttu-id="29173-123">See also</span><span class="sxs-lookup"><span data-stu-id="29173-123">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="f384f-123">See also</span><span class="sxs-lookup"><span data-stu-id="f384f-123">See also</span></span>
 
-[<span data-ttu-id="29173-124">Cmdlet New-TransportRule</span><span class="sxs-lookup"><span data-stu-id="29173-124">New-TransportRule cmdlet</span></span>](https://technet.microsoft.com/library/bb125138%28v=exchg.160%29.aspx)
+[<span data-ttu-id="f384f-124">Cmdlet New-TransportRule</span><span class="sxs-lookup"><span data-stu-id="f384f-124">New-TransportRule cmdlet</span></span>](https://technet.microsoft.com/library/bb125138%28v=exchg.160%29.aspx)
 

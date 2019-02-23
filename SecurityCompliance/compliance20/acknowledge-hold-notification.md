@@ -1,12 +1,12 @@
 ---
-title: Confirmar las notificaciones de una suspensión
+title: Reconocer notificaciones de retención
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: ''
 search.appverid:
@@ -14,13 +14,13 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 5ed3d214fe55df658faee6859d366637ef0fd37b
-ms.sourcegitcommit: e3ea6eb9fab1a66b499458749838fe350d43d0d4
+ms.openlocfilehash: 3722d9c58e701455c02c07388036141cd8d9ddd5
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/01/2019
-ms.locfileid: "29694936"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30213300"
 ---
-# <a name="acknowledge-a-hold-notification"></a><span data-ttu-id="b3cae-102">Confirmar una notificación de espera</span><span class="sxs-lookup"><span data-stu-id="b3cae-102">Acknowledge a hold notification</span></span> 
+# <a name="acknowledge-a-hold-notification"></a><span data-ttu-id="da980-102">Confirmar una notificación de retención</span><span class="sxs-lookup"><span data-stu-id="da980-102">Acknowledge a hold notification</span></span> 
 
-<span data-ttu-id="b3cae-103">Contenido disponible próximamente.</span><span class="sxs-lookup"><span data-stu-id="b3cae-103">Content coming soon.</span></span>
+<span data-ttu-id="da980-103">Contenido disponible próximamente.</span><span class="sxs-lookup"><span data-stu-id="da980-103">Content coming soon.</span></span>
