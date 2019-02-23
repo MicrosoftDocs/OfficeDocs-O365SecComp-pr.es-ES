@@ -9,32 +9,30 @@ ms.topic: overview
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-ms.service: o365-solutions
+ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
-ms.custom: ''
-ms.assetid: ''
 description: Esta solución muestra cómo proteger datos confidenciales que se almacenan en servicios de Office 365.
-ms.openlocfilehash: 9a2c45831b556d9d5dfb3aac16dbd0eae6415d67
-ms.sourcegitcommit: c31424cafbf1953f2864d7e2ceb95b329a694edb
+ms.openlocfilehash: 3ec4f89ba0933ead52467d67ec0f3a5ace37ea4d
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "23272295"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30219760"
 ---
-# <a name="office-365-information-protection-for-gdpr"></a><span data-ttu-id="f0825-103">Information Protection de Office 365 para RGPD</span><span class="sxs-lookup"><span data-stu-id="f0825-103">Office 365 Information Protection for GDPR</span></span>
+# <a name="office-365-information-protection-for-gdpr"></a><span data-ttu-id="ac540-103">Information Protection de Office 365 para RGPD</span><span class="sxs-lookup"><span data-stu-id="ac540-103">Office 365 Information Protection for GDPR</span></span>
 
- <span data-ttu-id="f0825-104">**Resumen:** Esta solución muestra cómo proteger datos confidenciales que se almacenan en servicios de Office 365.</span><span class="sxs-lookup"><span data-stu-id="f0825-104">**Summary:** This solution demonstrates how to protect sensitive data that is stored in Office 365 services.</span></span>
+ <span data-ttu-id="ac540-104">**Resumen:** Esta solución muestra cómo proteger datos confidenciales que se almacenan en servicios de Office 365.</span><span class="sxs-lookup"><span data-stu-id="ac540-104">**Summary:** This solution demonstrates how to protect sensitive data that is stored in Office 365 services.</span></span>
   
-<span data-ttu-id="f0825-p101">Esta solución incluye recomendaciones para descubrir, clasificar, proteger y supervisar datos personales. Esta solución usa el Reglamento general de protección de datos (RGPD) como ejemplo, pero se puede aplicar el mismo proceso para lograr el cumplimiento con muchas otras normativas.</span><span class="sxs-lookup"><span data-stu-id="f0825-p101">This solution includes prescriptive recommendations for discovering, classifying, protecting, and monitoring personal data. This solution uses General Data Protection Regulation (GDPR) as an example, but you can apply the same process to achieve compliance with many other regulations.</span></span>
+<span data-ttu-id="ac540-p101">Esta solución incluye recomendaciones para descubrir, clasificar, proteger y supervisar datos personales. Esta solución usa el Reglamento general de protección de datos (RGPD) como ejemplo, pero se puede aplicar el mismo proceso para lograr el cumplimiento con muchas otras normativas.</span><span class="sxs-lookup"><span data-stu-id="ac540-p101">This solution includes prescriptive recommendations for discovering, classifying, protecting, and monitoring personal data. This solution uses General Data Protection Regulation (GDPR) as an example, but you can apply the same process to achieve compliance with many other regulations.</span></span>
 
-<span data-ttu-id="f0825-107">[![Imagen en miniatura del póster "Information Protection en Office 365 para RGPD".](media/InfoProtectGDPR-Poster/o365infoprotectforgdpr-thumb.png)](http://download.microsoft.com/download/E/C/D/ECD5A339-EF10-4420-B3A9-99098884D716/MSFT_Cloud_architecture_information%20protection%20for%20GDPR.pdf)</span><span class="sxs-lookup"><span data-stu-id="f0825-107">[![Thumb image of the Office 365 Information Protection for GDPR poster.](media/InfoProtectGDPR-Poster/o365infoprotectforgdpr-thumb.png)](http://download.microsoft.com/download/E/C/D/ECD5A339-EF10-4420-B3A9-99098884D716/MSFT_Cloud_architecture_information%20protection%20for%20GDPR.pdf)</span></span>
+<span data-ttu-id="ac540-107">[![Imagen en miniatura del póster "Information Protection en Office 365 para RGPD".](media/InfoProtectGDPR-Poster/o365infoprotectforgdpr-thumb.png)](http://download.microsoft.com/download/E/C/D/ECD5A339-EF10-4420-B3A9-99098884D716/MSFT_Cloud_architecture_information%20protection%20for%20GDPR.pdf)</span><span class="sxs-lookup"><span data-stu-id="ac540-107">[![Thumb image of the Office 365 Information Protection for GDPR poster.](media/InfoProtectGDPR-Poster/o365infoprotectforgdpr-thumb.png)](http://download.microsoft.com/download/E/C/D/ECD5A339-EF10-4420-B3A9-99098884D716/MSFT_Cloud_architecture_information%20protection%20for%20GDPR.pdf)</span></span>
 
-<span data-ttu-id="f0825-108">[PDF](http://download.microsoft.com/download/E/C/D/ECD5A339-EF10-4420-B3A9-99098884D716/MSFT_Cloud_architecture_information%20protection%20for%20GDPR.pdf)  |  [Visio](http://download.microsoft.com/download/E/C/D/ECD5A339-EF10-4420-B3A9-99098884D716/MSFT_Cloud_architecture_information%20protection%20for%20GDPR.vsdx)</span><span class="sxs-lookup"><span data-stu-id="f0825-108">[PDF](http://download.microsoft.com/download/E/C/D/ECD5A339-EF10-4420-B3A9-99098884D716/MSFT_Cloud_architecture_information%20protection%20for%20GDPR.pdf)  |  [Visio](http://download.microsoft.com/download/E/C/D/ECD5A339-EF10-4420-B3A9-99098884D716/MSFT_Cloud_architecture_information%20protection%20for%20GDPR.vsdx)</span></span>
+<span data-ttu-id="ac540-108">[PDF](http://download.microsoft.com/download/E/C/D/ECD5A339-EF10-4420-B3A9-99098884D716/MSFT_Cloud_architecture_information%20protection%20for%20GDPR.pdf)  |  [Visio](http://download.microsoft.com/download/E/C/D/ECD5A339-EF10-4420-B3A9-99098884D716/MSFT_Cloud_architecture_information%20protection%20for%20GDPR.vsdx)</span><span class="sxs-lookup"><span data-stu-id="ac540-108">[PDF](http://download.microsoft.com/download/E/C/D/ECD5A339-EF10-4420-B3A9-99098884D716/MSFT_Cloud_architecture_information%20protection%20for%20GDPR.pdf)  |  [Visio](http://download.microsoft.com/download/E/C/D/ECD5A339-EF10-4420-B3A9-99098884D716/MSFT_Cloud_architecture_information%20protection%20for%20GDPR.vsdx)</span></span>
   
-<span data-ttu-id="f0825-109">Para más información sobre cómo cursar solicitudes de interesados para el RGPD, vea [Solicitudes de interesados de Office 365 para el RGPD](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365?toc=/microsoft-365/enterprise/toc.json).</span><span class="sxs-lookup"><span data-stu-id="f0825-109">For information about performing data subject requests for the GDPR, see [Office 365 Data Subject Requests for the GDPR](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365?toc=/microsoft-365/enterprise/toc.json).</span></span> 
+<span data-ttu-id="ac540-109">Para más información sobre cómo cursar solicitudes de interesados para el RGPD, vea [Solicitudes de interesados de Office 365 para el RGPD](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365?toc=/microsoft-365/enterprise/toc.json).</span><span class="sxs-lookup"><span data-stu-id="ac540-109">For information about performing data subject requests for the GDPR, see [Office 365 Data Subject Requests for the GDPR](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365?toc=/microsoft-365/enterprise/toc.json).</span></span> 
 
-## <a name="see-also"></a><span data-ttu-id="f0825-110">Vea también</span><span class="sxs-lookup"><span data-stu-id="f0825-110">See Also</span></span>
+## <a name="see-also"></a><span data-ttu-id="ac540-110">Vea también</span><span class="sxs-lookup"><span data-stu-id="ac540-110">See Also</span></span>
   
-[<span data-ttu-id="f0825-111">Instrucciones de seguridad de Microsoft para campañas políticas, organizaciones sin ánimo de lucro y otras organizaciones ágiles</span><span class="sxs-lookup"><span data-stu-id="f0825-111">Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations</span></span>](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
+[<span data-ttu-id="ac540-111">Instrucciones de seguridad de Microsoft para campañas políticas, organizaciones sin ánimo de lucro y otras organizaciones ágiles</span><span class="sxs-lookup"><span data-stu-id="ac540-111">Microsoft Security Guidance for Political Campaigns, Nonprofits, and Other Agile Organizations</span></span>](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
