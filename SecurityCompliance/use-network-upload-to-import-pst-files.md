@@ -3,7 +3,6 @@ title: Use la carga de red para importar los archivos PST de su organización a 
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 'Para los administradores: Obtenga información sobre cómo usar la carga de red para importar varios archivos PST a los buzones de usuario en Office 365.'
-ms.openlocfilehash: 04beb021b34a7357556e4d6e4d26d43de6a85c5d
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: a92217ad4126851a042b3492614aaa35ef215f61
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 02/23/2019
-ms.locfileid: "30217360"
+ms.locfileid: "30223609"
 ---
 # <a name="use-network-upload-to-import-your-organization-pst-files-to-office-365"></a>Use la carga de red para importar los archivos PST de su organización a Office 365
 

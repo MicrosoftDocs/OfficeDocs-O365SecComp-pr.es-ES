@@ -1,9 +1,26 @@
 ---
-title: "configurar notificaciones de correo no deseado para el usuario final en EOP" MS. Author: krowley Author: kccross Manager: laurawi ms. Audience: ITPro ms. topic: artículo ms. Service: O365-seccomp ms. Custom: TN2DMC localization_priority: normal Search. appverid:
-- MET150 ms. AssetID: e9947db5-1dd1-4493-872d-7362b24c7ba0 ms. Collection:
-    - M365-Security-Compliance Description: "puede configurar notificaciones de correo no deseado para el usuario final para la Directiva de filtro de contenido para toda la compañía o para directivas de filtro de contenido personalizadas que se aplican a dominios."
+title: Configurar notificaciones de correo no deseado para el usuario final en EOP
+ms.author: krowley
+author: kccross
+manager: laurawi
+ms.audience: ITPro
+ms.topic: article
+ms.service: O365-seccomp
+ms.custom: TN2DMC
+localization_priority: Normal
+search.appverid:
+- MET150
+ms.assetid: e9947db5-1dd1-4493-872d-7362b24c7ba0
+ms.collection:
+- M365-security-compliance
+description: Las notificaciones de correo no deseado para el usuario final se pueden configurar en la directiva de filtro de contenido de toda la compañía, o bien en las directivas de filtro de contenido personalizadas que se aplican a los dominios.
+ms.openlocfilehash: 2cab65347c726cab482eb127f5068586f4f3afd3
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30222979"
 ---
-
 # <a name="configure-end-user-spam-notifications-in-eop"></a>Configurar notificaciones de correo no deseado para el usuario final en EOP
   
 > [!IMPORTANT]

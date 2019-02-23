@@ -3,21 +3,20 @@ title: Informes en el Centro de seguridad y cumplimiento de Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: ''
 ms.audience: Admin
 ms.topic: overview
 f1_keywords:
 - ms.o365.cc.AuditingHelp
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 7acd33ce-1ec8-49fb-b625-43bac7b58c5a
 description: 'Use el centro de cumplimiento de & de seguridad de Office 365 para obtener varios informes para su organización de SharePoint Online y Exchange Online, además de informes de Azure Active Directory.  '
-ms.openlocfilehash: 36e6d3efce1758d52cd30451a2b60b19f4654056
-ms.sourcegitcommit: 8679937354c1d8870ecd41519a59d2d7468c23c4
+ms.openlocfilehash: 5f3e510aaacd82095cf502acd5609a204e738bd3
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "30087309"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223549"
 ---
 # <a name="reports-in-the-office-365-security--compliance-center"></a>Informes en el Centro de seguridad y cumplimiento de Office 365
 

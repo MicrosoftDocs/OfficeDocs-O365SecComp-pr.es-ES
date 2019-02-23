@@ -1,10 +1,27 @@
 ---
-title: "Office 365 email anti-spam protection" MS. Author: krowley Author: kccross Manager: laurawi ms. Date: 6/29/2018 ms. Audience: admin ms. topic: información general ms. Service: O365-seccomp localization_priority: normal Search. appverid:
+title: Protección contra correo no deseado de Office 365
+ms.author: krowley
+author: kccross
+manager: laurawi
+ms.date: 6/29/2018
+ms.audience: Admin
+ms.topic: overview
+ms.service: O365-seccomp
+localization_priority: Normal
+search.appverid:
 - MET150
-- MOE150 ms. AssetID: 6a601501-A6A8-4559-b2e7-56b59c96a586 ms. Collection:
-    - M365-Security-Compliance Description: "Obtenga información sobre la configuración y los filtros contra correo electrónico no deseado que le ayudarán a evitar el correo no deseado en Exchange Online y Office 365. ¿Obtengo mucho correo no deseado en Office 365? Puede personalizar los filtros de correo no deseado y la configuración de la Directiva contra correo no deseado. "
+- MOE150
+ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
+ms.collection:
+- M365-security-compliance
+description: Obtenga información sobre la configuración y los filtros contra correo no deseado que le ayudarán a evitar el correo no deseado en Exchange Online y Office 365. ¿Obtengo mucho correo no deseado en Office 365? Puede personalizar los filtros de correo no deseado y la configuración de la Directiva contra correo no deseado.
+ms.openlocfilehash: 2d8f433cabda4408da2e29b7bc6570e09e6989dd
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223429"
 ---
-
 # <a name="office-365-email-anti-spam-protection"></a>Protección contra correo no deseado de Office 365
 
 ¿Le preocupa demasiado correo no deseado en Office 365? Hemos creado varios filtros de correo no deseado en el servicio de Office 365 o Exchange Online Protection (EOP), por lo que el correo electrónico está protegido desde el momento en que recibe el primer mensaje. Para ayudar a evitar el correo no deseado en Office 365, es posible que quiera cambiar una configuración de protección para tratar con un problema específico de su organización (por ejemplo, que reciba un gran número de mensajes de correo no deseado de un remitente en particular, por ejemplo) o que simplemente ajuste la configuración para que esté adaptado para satisfacer mejor las necesidades de su organización. Para ello, puede cambiar la configuración contra correo no deseado en el centro de seguridad &amp; y cumplimiento de Office 365.

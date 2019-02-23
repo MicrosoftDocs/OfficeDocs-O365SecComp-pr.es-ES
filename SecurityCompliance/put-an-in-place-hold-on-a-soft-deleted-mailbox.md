@@ -3,7 +3,6 @@ title: Colocar una conservación local en un buzón eliminado temporalmente en E
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: ''
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,21 +11,21 @@ localization_priority: Normal
 search.appverid: ''
 ms.assetid: 421f72bd-dd43-4be1-82f5-0ae9ac43bd00
 description: Obtenga información sobre cómo crear una conservación local en un buzón eliminado temporalmente para que se convierta en inactivo y se conserve su contenido. Después, puede usar las herramientas de Microsoft eDiscovery para buscar el buzón inactivo.
-ms.openlocfilehash: e666ac608ec224bf97caa947be2cb42b742c6fa9
-ms.sourcegitcommit: ca97beff215d154b6ab006ce1222056434fde1a9
+ms.openlocfilehash: 70feb265e95741406dbf170c6be70bd83b2ec081
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "29740802"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223529"
 ---
 # <a name="put-an-in-place-hold-on-a-soft-deleted-mailbox-in-exchange-online"></a>Colocar una conservación local en un buzón eliminado temporalmente en Exchange Online
 
 Obtenga información sobre cómo crear una conservación local en un buzón eliminado temporalmente para que se convierta en inactivo y se conserve su contenido. Después, puede usar las herramientas de Microsoft eDiscovery para buscar el buzón inactivo.
   
 > [!NOTE]
-> Nos hemos pospuso la fecha límite para la creación de nuevos suspensiones en contexto en Exchange Online (en los planes independientes de Office 365 y Exchange Online). Pero más adelante este año o el principio del próximo año, no podrá crear nuevos suspensiones en contexto en Exchange Online. Como alternativa al uso de suspensiones en contexto, puede usar [las directivas de retención](https://go.microsoft.com/fwlink/?linkid=827811) o [casos de exhibición de documentos electrónicos](https://go.microsoft.com/fwlink/?linkid=780738) en la seguridad de Office 365 &amp; centro de cumplimiento. Después de que se dé de baja nuevo suspensiones en contexto, aún podrá modificar existente retenciones locales y creando un nuevo suspensiones en contexto en Exchange Server 2013 y las implementaciones híbridas de Exchange todavía se admitirán. Y, aún podrá colocar buzones en suspensión por litigio. 
+> Hemos pospuesto la fecha límite para crear nuevas reTenciones locales en Exchange Online (en los planes independientes de Office 365 y Exchange Online). Pero más adelante este año, no podrá crear nuevas reTenciones locales en Exchange Online. Como alternativa al uso de conservaciones locales, puede usar casos de [exhibición](https://go.microsoft.com/fwlink/?linkid=780738) de documentos electrónicos o [directivas de retención](https://go.microsoft.com/fwlink/?linkid=827811) en el &amp; centro de seguridad y cumplimiento de Office 365. Después de haber retirado nuevas retenciones locales, aún podrá modificar las suspensiones locales existentes y crear reTenciones locales en Exchange Server 2013 y las implementaciones híbridas de Exchange seguirán siendo compatibles. Además, podrá seguir colocando buzones de correo en retención por juicio. 
   
-Es posible que tenga una situación donde una persona ha abandonado la organización y su correspondiente cuenta de usuario y su buzón se eliminaron. Posteriormente, se da cuenta hay información en el buzón de correo que debe conservarse. ¿Qué puede hacer? Si no ha caducado el período de retención de buzones eliminados, puede poner una retención local en el buzón eliminado (denominado un buzón eliminado temporalmente) y hacer que un buzón de correo inactivo. Un *buzón de correo inactivo* se usa para conservar el correo electrónico de un empleado anterior después de que abandona la organización. El contenido de un buzón inactivo se conserva para la duración de la conservación local que estaba se coloca en el buzón eliminado temporalmente cuando se realizó inactivos. Después de que el buzón de correo se realiza como inactiva, puede buscar el buzón de correo mediante el uso de exhibición de documentos electrónicos en contexto en Exchange Online, búsqueda de contenido en la seguridad de Office 365 &amp; centro de cumplimiento o el centro de exhibición de documentos electrónicos en SharePoint Online. 
+Es posible que tenga una situación en la que una persona haya abandonado su organización y que se haya eliminado la cuenta de usuario y el buzón correspondientes. Después, se da cuenta de que hay información en el buzón que debe conservarse. ¿Qué puede hacer? Si el período de retención de buzón eliminado no ha expirado, puede colocar una conservación local en el buzón de correo eliminado (denominado buzón de correo eliminado temporalmente) y convertirlo en un buzón inactivo. Un *buzón inactivo* se usa para conservar el correo electrónico de un antiguo empleado después de que abandone la organización. El contenido de un buzón inactivo se conserva durante el período de tiempo de la retención local que se coloca en el buzón de correo eliminado temporalmente cuando se ha inactivo. Una vez que el buzón se convierte en inactivo, puede buscar en el buzón de correo mediante eDiscovery local en Exchange Online, en el centro de seguridad &amp; de Office 365 o en el centro de exhibición de documentos electrónicos de SharePoint Online. 
   
 > [!NOTE]
 > En Exchange Online, un buzón eliminado temporalmente es un buzón que se ha eliminado, pero se puede recuperar en un período de retención específico. El período de retención de buzón eliminado temporalmente en Exchange Online es de 30 días. Esto significa que el buzón se puede recuperar (o convertirse en un buzón inactivo) en un plazo de 30 días después de eliminarse. Transcurrido este período, un buzón eliminado temporalmente se marca para su eliminación permanente y no puede recuperarse ni convertirse en inactivo. 
@@ -43,7 +42,7 @@ Es posible que tenga una situación donde una persona ha abandonado la organizac
   Get-Mailbox -SoftDeletedMailbox | FL Name,WhenSoftDeleted,DistinguishedName,ExchangeGuid,PrimarySmtpAddress
   ```
 
-- Para obtener más información acerca de los buzones de correo inactivos, vea [información general de buzones inactivos en Office 365](inactive-mailboxes-in-office-365.md).
+- Para obtener más información acerca de los buzones inactivos, vea [información general sobre buzones inactivos en Office 365](inactive-mailboxes-in-office-365.md).
     
 ## <a name="put-an-in-place-hold-on-a-soft-deleted-mailbox-to-make-it-an-inactive-mailbox"></a>Colocar una conservación local en un buzón eliminado temporalmente para convertirlo en un buzón inactivo
 
@@ -91,4 +90,4 @@ Después de que convierta un buzón eliminado temporalmente en un buzón inactiv
     
 - [Restaurar un buzón inactivo](restore-an-inactive-mailbox.md)
     
-- [Eliminar un buzón inactivo](delete-an-inactive-mailbox.md) (quitando la suspensión)
+- [Eliminar un buzón inactivo](delete-an-inactive-mailbox.md) (quitando la retención)

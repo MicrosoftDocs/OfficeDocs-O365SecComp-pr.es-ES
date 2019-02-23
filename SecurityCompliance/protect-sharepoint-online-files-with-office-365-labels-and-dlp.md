@@ -6,7 +6,7 @@ manager: laurawi
 ms.date: 12/12/2018
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-solutions
+ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
 description: 'Resumen: Aplique directivas de etiquetas y prevención de pérdida de datos (DLP) de Office 365 a sitios de grupo de SharePoint Online con distintos niveles de protección de la información.'
-ms.openlocfilehash: fd2fedf23b4e65bd32642b8528548f8a85533051
-ms.sourcegitcommit: 6ff0233b5a1a07595f8b4d55db6b1327bcaa174c
+ms.openlocfilehash: 759722e7e3ba7c07b869d56a271af7d40692d39e
+ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "28023463"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30214441"
 ---
 # <a name="protect-sharepoint-online-files-with-office-365-labels-and-dlp"></a>Proteger archivos de SharePoint Online con DLP y etiquetas de Office 365
 

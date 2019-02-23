@@ -3,10 +3,9 @@ title: Propiedades detalladas del registro de auditoría de Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: ''
 ms.audience: Admin
 ms.topic: reference
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Strat_O365_IP
 search.appverid:
@@ -15,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ce004100-9e7f-443e-942b-9b04098fcfc3
 description: DeScripciones de las propiedades adicionales que se incluyen en un registro de auditoría de Office 365.
-ms.openlocfilehash: e2450f8d4f9a613d6b21e373d2a2de841cfc7ca0
-ms.sourcegitcommit: 24659bdb09f49d0ffed180a4b80bbb7c45c2d301
+ms.openlocfilehash: 0219ed1fe29dc3ae1f940cd6991781368ae2d519
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "29890051"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223479"
 ---
 # <a name="detailed-properties-in-the-office-365-audit-log"></a>Propiedades detalladas del registro de auditoría de Office 365
 

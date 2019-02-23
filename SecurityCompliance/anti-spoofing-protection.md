@@ -1,9 +1,26 @@
 ---
-title: "protección contra la suplantación de identidad en Office 365" MS. Author: krowley Author: kccross Manager: laurawi ms. Date: 12/06/2018 ms. Audience: ITPro ms. topic: artículo ms. Service: O365-seccomp localization_priority: búsqueda normal. appverid:
-- MET150 ms. AssetID: d24bb387-c65d-486e-93e7-06a4f1a436c0 ms. Collection:
-    - M365-Security-Compliance Description: "este artículo describe cómo Office 365 mitiga los ataques de suplantación de identidad (phishing) que usan dominios de remitente falsificados, es decir, dominios que se falsifican. Para ello, analiza los mensajes y bloquea los que se pueden autenticar neithe mediante los métodos de autenticación de correo electrónico estándar, ni otras técnicas de reputación del remitente. Este cambio se está implementando para reducir el número de ataques de suplantación de identidad (phishing) que se exponen a las organizaciones en Office 365.
+title: Protección contra suplantación de identidad en Office 365
+ms.author: krowley
+author: kccross
+manager: laurawi
+ms.date: 12/06/2018
+ms.audience: ITPro
+ms.topic: article
+ms.service: O365-seccomp
+localization_priority: Normal
+search.appverid:
+- MET150
+ms.assetid: d24bb387-c65d-486e-93e7-06a4f1a436c0
+ms.collection:
+- M365-security-compliance
+description: En este artículo se describe cómo Office 365 mitiga los ataques de suplantación de identidad (phishing) que usan dominios de remitente falsificados, es decir, dominios que se falsifican. Para ello, analiza los mensajes y bloquea los que se pueden autenticar neithe mediante los métodos de autenticación de correo electrónico estándar, ni otras técnicas de reputación del remitente. Este cambio se está implementando para reducir el número de ataques de suplantación de identidad que se exponen a las organizaciones en Office 365.
+ms.openlocfilehash: 041d2ee2cbad1c051c0ca4724d42b189215f0e82
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223879"
 ---
-
 # <a name="anti-spoofing-protection-in-office-365"></a>Protección contra suplantación de identidad en Office 365
 
 En este artículo se describe cómo Office 365 mitiga los ataques de suplantación de identidad (phishing) que usan dominios de remitente falsificados, es decir, dominios que se falsifican. Para ello, analiza los mensajes y bloquea los que no se pueden autenticar con los métodos de autenticación de correo electrónico estándar, ni con otras técnicas de reputación del remitente. Este cambio se está implementando para reducir el número de ataques de suplantación de identidad a los que se exponen los clientes.

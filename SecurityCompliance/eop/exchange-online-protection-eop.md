@@ -1,5 +1,5 @@
 ---
-title: 'Protección de Exchange Online '
+title: 'Exchange Online Protection '
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -10,15 +10,15 @@ ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 70ab4af2-fec4-4886-8e12-27d348649204
-description: A continuación presentamos algunas cosas que deben tener en cuenta antes de comenzar a trabajar con la elevación de privilegios.
-ms.openlocfilehash: 21d1bfe34485e97b35755bc2f88f3ba13066a616
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+description: Estas son algunas de las cosas que debe tener en cuenta antes de empezar a trabajar con EOP.
+ms.openlocfilehash: 2535a796a0ac1548160545226586233af7b50080
+ms.sourcegitcommit: 06d6e63225f912d0f3c6bb836c61eb11c1dbe97a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026387"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "30206563"
 ---
-# <a name="exchange-online-protection"></a>Protección de Exchange Online 
+# <a name="exchange-online-protection"></a>Exchange Online Protection 
 
 Este es el servicio de filtrado de correo electrónico hospedado de Microsoft Exchange Online Protection (EOP). A continuación, se detallan algunos aspectos que debe conocer antes de empezar a trabajar con EOP y usar este contenido:
   
@@ -56,7 +56,7 @@ El contenido de la Ayuda para administradores de EOP consta de las siguientes ca
     
 - [Informes y seguimiento de mensajes en Exchange Online Protection](reporting-and-message-trace-in-exchange-online-protection.md) Se describen los informes y las herramientas de solución de problemas que están disponibles. 
     
-- [Exchange admin center en Exchange Online Protection](../exchange-admin-center-in-exchange-online-protection-eop.md) Describe cómo tener acceso y navegar por la interfaz de administración de Exchange admin center (EAC) con el fin de administrar el servicio EOP. 
+- [Centro de administración de Exchange en Exchange Online Protection](../exchange-admin-center-in-exchange-online-protection-eop.md) Describe cómo tener acceso y navegar por la interfaz de administración del centro de administración de Exchange (EAC) para administrar el servicio de EOP. 
     
 - [PowerShell en Exchange Online Protection](http://technet.microsoft.com/library/f7918a88-774a-405e-945b-bc2f5ee9f748.aspx) Proporciona información sobre PowerShell remoto, que permite administrar el servicio EOP desde la línea de comandos. 
     
@@ -69,11 +69,11 @@ El contenido de la Ayuda para asistir a los usuarios finales de EOP a administra
   
 - [Find and Release Quarantined Messages as an End User](http://technet.microsoft.com/library/e439b560-827a-4807-abd3-6b861c1ff786.aspx) Describe la forma en que los usuarios finales pueden buscar y liberar sus propios mensajes de correo no deseado en cuarentena en la interfaz de usuario de cuarentena del correo no deseado y, opcionalmente, informarle a Microsoft que no se trata de correo no deseado. 
         
-- [Envío de spam, no spam y los mensajes de estafas de suplantación de identidad a Microsoft para su análisis](../submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md) Describe las distintas formas en que los usuarios finales pueden enviar correo no deseado (no deseado) y que no sean de correo no deseado de los mensajes (no correo no deseados) a Microsoft. En este tema se incluyen vínculos a las herramientas de informes disponibles en Microsoft Outlook y OWA. 
+- [Enviar mensajes de correo no deseado, mensajes de correo no deseado y estafas de suplantación de identidad a Microsoft para su análisis](../submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md) Describe las distintas formas en que los usuarios finales pueden enviar mensajes de correo no deseado (correo no deseado) y correo no deseado a Microsoft. En este tema se incluyen vínculos a las herramientas de informes disponibles en Microsoft Outlook y Outlook en la web (anteriormente conocido como Outlook Web App). 
     
 - [Submitting malware and non-malware to Microsoft for analysis](../submitting-malware-and-non-malware-to-microsoft-for-analysis.md) Describe cómo los usuarios finales pueden enviar malware que consiguió pasar los filtros o un archivo que ha sido incorrectamente identificado como malware. 
     
-- Los usuarios finales puede agregar dominios o usuarios específicos a una lista de remitentes seguros o una lista de remitentes bloqueados mediante la configuración de su configuración de correo electrónico no deseado en Outlook o en Microsoft OWA. Tenga en cuenta que los mensajes que se envían desde los remitentes bloqueados se marcan como correo no deseado, que no se rechaza, lo que significa que se pueden recuperar desde la carpeta de correo electrónico no deseado o cuarentena (según donde el administrador haya configurado el servicio para que envíen correo no deseado.) Para obtener más información, vea [usar el complemento en el mensaje de informe](https://support.office.com/article/addin-b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
+- Los usuarios finales pueden agregar determinados usuarios o dominios a una lista de remitentes seguros o a una lista de remitentes bloqueados configurando su configuración de correo no deseado en Outlook o en Outlook en la Web. Tenga en cuenta que los mensajes que se envían de remitentes bloqueados se marcan como correo no deseado, no rechazados, lo que significa que se pueden recuperar de la carpeta de correo electrónico no deseado o cuarentena (en función de dónde haya configurado el servicio para enviar correo no deseado). Para obtener más información, vea [usar el complemento de mensajes de informe](https://support.office.com/article/addin-b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
     
 - [Ayuda y soporte técnico para EOP](help-and-support-for-eop.md) Proporciona información sobre cómo obtener ayuda y soporte técnico. 
     

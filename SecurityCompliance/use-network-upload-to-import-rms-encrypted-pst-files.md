@@ -6,106 +6,106 @@ manager: laurawi
 ms.date: 5/29/2018
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
 - MED150
 - MET150
 ms.assetid: 84a595b8-cd77-4f66-ac52-57a33ddd4773
-description: Obtenga información sobre cómo usar la carga de red para importar los archivos PST de cifrado de RMS a buzones de usuario en Office 365.
-ms.openlocfilehash: 6460512e2d6085df684841248dc286d39dbd9d87
-ms.sourcegitcommit: 36c5466056cdef6ad2a8d9372f2bc009a30892bb
+description: Obtenga información sobre cómo usar la carga de red para importar archivos PST cifrados con RMS en buzones de usuario en Office 365.
+ms.openlocfilehash: c552e8a4d1ddc4163fefaeff18b75a4dbd5ee4cb
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/27/2018
-ms.locfileid: "22536812"
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223649"
 ---
 # <a name="use-network-upload-to-import-rms-encrypted-pst-files-to-office-365"></a>Usar la carga en la red para importar archivos PST con cifrado RMS en Office 365
 
-**En este artículo está dirigido a administradores. ¿Está intentando importar archivos PST en su propio buzón? Consulte el [correo electrónico de importación, contactos y calendario desde un archivo .pst de Outlook](https://go.microsoft.com/fwlink/p/?LinkID=785075)**
+**Este artículo está destinado a los administradores. ¿Está intentando importar archivos PST a su propio buzón? Consulte [importar el correo electrónico, los contactos y el calendario desde un archivo. pst de Outlook](https://go.microsoft.com/fwlink/p/?LinkID=785075)**
    
-Uso de la red cargar opción y el servicio Office 365 importar para importar archivos PST a buzones de usuario. Carga de red significa cargar los archivos PST en un área de almacenamiento temporal en la nube de Microsoft. A continuación, el servicio Office 365 importación copia los archivos PST desde el área de almacenamiento para los buzones de usuario de destino. Una nueva característica del servicio de importación permite cifrar los archivos PST antes de que se cargan y se almacenan en la nube de Microsoft. Estos archivos se podrán no cifrados importados a buzones de usuario. 
+Use la opción carga de red y el servicio de importación de Office 365 para importar archivos PST a los buzones de usuario. Carga de red significa que se cargan los archivos PST en un área de almacenamiento temporal en la nube de Microsoft. A continuación, el servicio de importación de Office 365 copia los archivos PST del área de almacenamiento en los buzones de usuario de destino. Una nueva característica del servicio de importación le permite cifrar los archivos PST antes de cargarlos y almacenarlos en la nube de Microsoft. Estos archivos no se cifrarán cuando se importen a los buzones de usuario. 
   
-Estos son los pasos necesarios para cifrar e importar archivos PST a buzones de Office 365:
+Estos son los pasos necesarios para cifrar e importar los archivos PST a los buzones de correo de Office 365:
   
 [Paso 1: configurar Azure Rights Management para la importación de PST ](#step-1-set-up-azure-rights-management-for-pst-import)
 
 [Paso 2: generar una clave de cifrado para la importación de PST](#step-2-generate-an-encryption-key-for-pst-import)
 
-[Paso 3: Obtener el identificador del inquilino de RMS y licencias de dirección URL](#step-3-obtain-rms-tenant-id-and-licensing-url)
+[Paso 3: obtener el identificador de inquilino de RMS y la dirección URL de licencias](#step-3-obtain-rms-tenant-id-and-licensing-url)
 
-[Paso 4: Descargar las herramientas de importación de PST y copie la dirección URL de SAS](#step-4-download-the-pst-import-tools-and-copy-the-sas-url)
+[Paso 4: descargar las herramientas de importación de PST y copiar la dirección URL de SAS](#step-4-download-the-pst-import-tools-and-copy-the-sas-url)
 
-[Paso 5: Cifrar y cargar los archivos PST en Office 365](#step-5-encrypt-and-upload-your-pst-files-to-office-365)
+[Paso 5: cifrar y cargar los archivos PST a Office 365](#step-5-encrypt-and-upload-your-pst-files-to-office-365)
 
-[(Opcional) Paso 6: Ver una lista de los archivos PST cargado a Office 365](#optional-step-6-view-a-list-of-the-pst-files-uploaded-to-office-365)
+[Opcional Paso 6: ver una lista de los archivos PST cargados en Office 365](#optional-step-6-view-a-list-of-the-pst-files-uploaded-to-office-365)
 
-[Paso 7: Crear el archivo de asignación de importación de PST](#step-7-create-the-pst-import-mapping-file)
+[Paso 7: crear el archivo de asignación de importaciones de PST](#step-7-create-the-pst-import-mapping-file)
 
 [Paso 8: crear un trabajo de importación de PST en Office 365](#step-8-create-a-pst-import-job-in-office-365)
   
 > [!IMPORTANT]
-> Se debe realizar el paso 1 a 4 de paso sólo una vez para instalar y configurar la organización para cifrar e importar archivos PST a buzones de correo de Office 365. Después de realizar estos pasos, siga el paso 5 al paso 8 cada vez que desee cifrar, cargar e importar un lote de archivos PST. 
+> Debe realizar los pasos del 1 al 4 sólo una vez para configurar y configurar la organización para cifrar e importar archivos PST a los buzones de correo de Office 365. Después de realizar estos pasos, siga los pasos 5 a 8 cada vez que desee cifrar, cargar e importar un lote de archivos PST. 
   
-Para obtener más información sobre cómo importar datos a Office 365, vea [información general de importación de los archivos PST de organización a Office 365](importing-pst-files-to-office-365.md).
+Para obtener más información acerca de cómo importar datos a Office 365, vea [información general sobre la importación de archivos PST de la organización a office 365](importing-pst-files-to-office-365.md).
   
 ## <a name="before-you-begin"></a>Antes de empezar
 
-- Se debe asignar la función de importación de exportación de buzones de correo en Exchange en línea para importar archivos PST a buzones de Office 365. De forma predeterminada, este rol no está asignado a ningún grupo de funciones en Exchange Online. Puede agregar la función de exportación de importación de buzón de correo para el grupo de roles de administración de la organización. O bien, puede crear un nuevo grupo de roles, asignar el rol de buzón de correo importar exportar y, a continuación, agregue a usted como un miembro. Para obtener más información, vea el "Agregar un rol a un grupo de roles" o la "crear un grupo de roles" secciones en [Administrar grupos de roles](https://go.microsoft.com/fwlink/p/?LinkId=730688).
+- Debe tener asignado el rol importación y exportación de buzones de correo en Exchange Online para importar archivos PST a los buzones de correo de Office 365. De forma predeterminada, este rol no está asignado a ningún grupo de roles en Exchange Online. Puede Agregar el rol importación y exportación de buzones al grupo de funciones de administración de la organización. O bien, puede crear un nuevo grupo de roles, asignar el rol exportar importación de buzón y, a continuación, agregarse como miembro. Para obtener más información, vea las secciones "agregar un rol a un grupo de roles" o "crear un grupo de roles" en [Manage role Groups](https://go.microsoft.com/fwlink/p/?LinkId=730688).
     
-    Además crear la importación de trabajos en la seguridad de Office 365 &amp; debe ser verdadero centro de cumplimiento, uno de los siguientes:
+    Además, para crear trabajos de importación en el centro de &amp; seguridad y cumplimiento de Office 365, debe cumplirse una de las siguientes condiciones:
     
-  - Se debe tener asignado el rol de destinatarios de correo en Exchange Online. De forma predeterminada, este rol se asigna a los grupos de funciones de administración de la organización y administración de destinatarios.
+  - Debe tener asignado el rol destinatarios de correo en Exchange Online. De forma predeterminada, este rol se asigna a los grupos administración de la organización y roles de administración de destinatarios.
     
     O bien
     
-  - Debe ser un administrador global de la organización de Office 365.
+  - Debe ser administrador global de la organización de Office 365.
     
   > [!TIP]
-  > Considere la posibilidad de crear un nuevo grupo de funciones en Exchange Online diseñada específicamente para la importación de los archivos PST a Office 365. Para el nivel mínimo de privilegios necesarios para importar los archivos PST, asigne las funciones de importación de exportación de buzones de correo y destinatarios de correo para el nuevo grupo de roles y, a continuación, agregar a miembros. 
+  > Considere la posibilidad de crear un nuevo grupo de roles en Exchange online que esté destinado específicamente a importar archivos PST a Office 365. Para el nivel mínimo de privilegios necesarios para importar archivos PST, asigne los roles Mailbox Import Export y mail Recipients al nuevo grupo de roles y, a continuación, agregue members. 
   
-- Que se necesita para almacenar los archivos PST que desea importar a Office 365 en un servidor de archivos o la carpeta compartida en la organización. En el paso 5, lo ejecutará el ImportTool Office 365, que se va a cifrar y cargar los archivos PST que se almacenan en este servidor de archivo o carpeta a Office 365 comparten.
+- Debe almacenar los archivos PST que desea importar a Office 365 en un servidor de archivos o una carpeta compartida de la organización. En el paso 5, ejecutará el ImportTool de Office 365, que cifrará y cargará los archivos PST almacenados en este servidor de archivos o carpeta compartida en Office 365.
     
-- Este procedimiento implica copiar y guardar una copia de una clave de cifrado, una clave de almacenamiento de información y un número de direcciones URL y las claves de identificación. Esta información se utilizará en el paso 5 para cifrar y cargar los archivos PST. Asegúrese de tomar precauciones para proteger estos simplemente como haría proteger las contraseñas u otra información relacionada con la seguridad. Por ejemplo puede guardarlos en un documento de Microsoft Word protegidos con contraseña o guardarlos en una unidad USB cifrada. Vea la sección [obtener más información](#more-information) para obtener un ejemplo de estas claves, identificadores y direcciones URL. 
+- Este procedimiento implica copiar y guardar una copia de una clave de cifrado, una clave de almacenamiento y varias claves de identificación y direcciones URL. Esta información se usará en el paso 5 para cifrar y cargar los archivos PST. Asegúrese de tomar precauciones para protegerlas exactamente como lo haría para proteger las contraseñas u otra información relacionada con la seguridad. Por ejemplo, puede guardarlos en un documento de Microsoft Word protegido con contraseña o guardarlos en una unidad USB cifrada. Consulte la sección [More Information](#more-information) para ver un ejemplo de estas claves, identificadores y direcciones URL. 
     
-- Puede importar archivos PST a un buzón de correo inactivo en Office 365. Para ello, que especifica el GUID del buzón de correo inactivo en el `Mailbox` parámetro en el archivo de asignación de importación de PST. Para obtener más información, vea el [paso 7](#step-7-create-the-pst-import-mapping-file) . 
+- Puede importar archivos PST a un buzón inactivo en Office 365. Para ello, especifique el GUID del buzón inactivo en el `Mailbox` parámetro del archivo de asignación de importaCIONES de PST. Consulte el [paso 7](#step-7-create-the-pst-import-mapping-file) para obtener más información. 
     
-- En una implementación híbrida de Exchange, puede importar archivos PST en un buzón de archivo basados en la nube para un usuario cuyo buzón de correo principal es local. Para ello, hacer lo siguiente en el archivo de asignación de importación de PST:
+- En una implementación híbrida de Exchange, puede importar archivos PST a un buzón de archivo basado en la nube para un usuario cuyo buzón principal es local. Para ello, realice lo siguiente en el archivo de asignación de importaciones de PST:
     
-  - Especifique la dirección de correo electrónico para el buzón del usuario local en el `Mailbox` parámetro. 
+  - Especifique la dirección de correo electrónico del buzón local del usuario en el `Mailbox` parámetro. 
     
-  - Especificar el valor **TRUE** en el `IsArchive` parámetro. 
+  - Especifique el valor **true** en el `IsArchive` parámetro. 
     
-    Para obtener más información, vea el [paso 7](#step-7-create-the-pst-import-mapping-file) . 
+    Consulte el [paso 7](#step-7-create-the-pst-import-mapping-file) para obtener más información. 
     
-- Una vez que se importan los archivos PST en un buzón de Office 365, la suspensión de retención establecer para el buzón de correo está activada para una duración indefinida. Esto significa que no se procesará la directiva de retención asignada al buzón hasta que se desactiva la suspensión de retención o establecer una fecha para desactivar la suspensión. ¿Por qué hacemos esto? Si los mensajes que se importa a un buzón de correo son anteriores, se podría eliminar permanentemente (purga) debido a que ha caducado su período de retención en función de la configuración de retención configurada para el buzón de correo. Colocar el buzón de correo en suspensión de retención, le dará el tiempo de propietario del buzón de correo para administrar estos mensajes recién importadas o ceder mucho tiempo para cambiar la configuración de retención para el buzón de correo. Vea la sección [obtener más información](#more-information) para obtener sugerencias acerca de cómo administrar la suspensión de retención. 
+- Una vez que los archivos PST se importan a un buzón de correo de Office 365, la configuración de espera de retención del buzón de correo se activa durante un período de tiempo indefinido. Esto significa que la Directiva de retención asignada al buzón no se procesará hasta que desactive la suspensión de la retención o establezca una fecha para desactivar la retención. ¿Por qué hacemos esto? Si los mensajes importados a un buzón de correo son viejos, podrían eliminarse de forma permanente (purgarse) porque el período de retención ha expirado según la configuración de retención configurada para el buzón. Al colocar el buzón en suspensión de retención, el propietario del buzón podrá administrar estos mensajes recién importados o le dará tiempo para cambiar la configuración de retención del buzón. Consulte la sección [más información](#more-information) para obtener sugerencias sobre cómo administrar la suspensión de la retención. 
     
-- Si no necesita cifrar los archivos PST antes de cargarlas en Office 365, vea [Use network cargar para importar archivos PST a Office 365](use-network-upload-to-import-pst-files.md).
+- Si no necesita cifrar los archivos PST antes de cargarlos en Office 365, vea [usar la carga en la red para importar archivos PST a office 365](use-network-upload-to-import-pst-files.md).
     
-- Para las preguntas más frecuentes sobre el uso de carga de red para importar archivos PST a Office 365, consulte [preguntas más frecuentes acerca de cómo importar archivos PST a Office 365](faqimporting-pst-files-to-office-365.md).
+- Para conocer las preguntas más frecuentes sobre el uso de la carga de red para importar archivos PST a Office 365, vea [preguntas más frecuentes sobre la importación de archivos PST a office 365](faqimporting-pst-files-to-office-365.md).
   
 ## <a name="step-1-set-up-azure-rights-management-for-pst-import"></a>Paso 1: configurar Azure Rights Management para la importación de PST 
 
-Importación de PST usa la funcionalidad de cifrado proporcionada por el servicio de Azure Rights Management (RMS Azure) en Office 365. Esto le permite para cifrar los archivos PST antes de cargarlas a Office 365. 
+La importación de PST usa la funcionalidad de cifrado proporcionada por el servicio Azure Rights Management (Azure RMS) en Office 365. Esto le permite cifrar los archivos PST antes de cargarlos a Office 365. 
   
-Configuración de RMS de Azure para la importación de PST consta de tres pasos:
+La configuración de Azure RMS para la importación de PST consta de tres pasos:
   
-- [Activación de RMS de Azure](#activate-azure-rms)
+- [Activación de Azure RMS](#activate-azure-rms)
     
 - [Configuración de RMS en Exchange Online](#configure-rms-in-exchange-online)
     
-- [Instalar al cliente de RMS de Active Directory](#install-the-active-directory-rms-client)
+- [Instalación del cliente RMS de Active Directory](#install-the-active-directory-rms-client)
     
-### <a name="activating-azure-rms"></a>Activación de RMS de Azure
+### <a name="activating-azure-rms"></a>Activación de Azure RMS
 
-RMS Azure está deshabilitada de forma predeterminada, pero usted u otro administrador de la organización puede activar. Siga las instrucciones que aparecen en la [Activación de Azure Rights Management](https://docs.microsoft.com/azure/information-protection/deploy-use/activate-service) para instalar y activar Azure DRM.
+Azure RMS está deshabilitado de forma predeterminada, pero es posible que usted u otro administrador de su organización lo haya activado. Siga las instrucciones para [Activar Azure Rights Management](https://docs.microsoft.com/azure/information-protection/deploy-use/activate-service) para instalar y activar DRM de Azure.
   
 ### <a name="configuring-rms-in-exchange-online"></a>Configuración de RMS en Exchange Online
 
-Después de que ha activado el servicio de administración de derechos, el siguiente paso es configurar Information Rights Management (IRM) en Exchange Online para usar RMS de Azure. Para obtener más información, vea [Configurar IRM para usar Azure Rights Management](https://go.microsoft.com/fwlink/p/?LinkId=394816).
+Una vez que haya activado el servicio Rights Management, el siguiente paso consiste en configurar Information Rights Management (IRM) en Exchange Online para usar Azure RMS. Para obtener más información, vea [configurar IRM para usar Azure Rights Management](https://go.microsoft.com/fwlink/p/?LinkId=394816).
   
-1. [Conectarse a Exchange Online mediante PowerShell remoto](https://go.microsoft.com/fwlink/p/?LinkId=396554 ).
+1. [Conéctese a Exchange online mediante PowerShell remoto](https://go.microsoft.com/fwlink/p/?LinkId=396554 ).
     
 2. Ejecute el comando siguiente para establecer la dirección URL de uso compartido de claves de RMS.
     
@@ -126,13 +126,13 @@ Después de que ha activado el servicio de administración de derechos, el sigui
     > [!NOTE]
     > <sup>1</sup> Solo deben utilizar esta ubicación de uso compartido de claves de RMS los clientes que han adquirido SKU de Office 365 Administración Pública (nube de la comunidad de administración pública). 
   
-    Por ejemplo, este comando configura la clave de RMS Online ubicación de uso compartido en Exchange Online para un cliente que se encuentra en Norteamérica.
+    Por ejemplo, este comando configura la ubicación de uso compartido de claves de RMS online en Exchange Online para un cliente ubicado en Norteamérica.
     
     ```
     Set-IRMConfiguration -RMSOnlineKeySharingLocation "https://sp-rms.na.aadrm.com/TenantManagement/ServicePartner.svc"
     ```
 
-3. Ejecute el siguiente comando para importar un dominio de publicación de confianza (TPD) desde RMS Online a la organización de Office 365. 
+3. Ejecute el siguiente comando para importar un dominio de publicación de confianza (TPD) desde RMS online a su organización de Office 365. 
     
     ```
     Import-RMSTrustedPublishingDomain -RMSOnline -Name "RMS Online"
@@ -140,25 +140,25 @@ Después de que ha activado el servicio de administración de derechos, el sigui
 
     Un TPD contiene la configuración necesaria para usar las características de RMS en su organización, incluido el cifrado de archivos PST.  
     
-4. Ejecute el siguiente comando para habilitar IRM para la organización de Office 365.
+4. Ejecute el siguiente comando para habilitar IRM en su organización de Office 365.
     
     ```
     Set-IRMConfiguration -InternalLicensingEnabled $true
     ```
 
-### <a name="installing-the-active-directory-rms-client"></a>Instalar al cliente de RMS de Active Directory
+### <a name="installing-the-active-directory-rms-client"></a>Instalación del cliente RMS de Active Directory
 
-El último paso de esta sección es para descargar al cliente de Rights Management Services (RMS) 2.1. Este software ayuda a proteger el acceso a Azure RMS y protege la información que fluye a través de las aplicaciones que usan Azure RMS instalar el cliente de RMS en el mismo equipo que se usará para cifrar y cargar los archivos PST en el paso 5. 
+El último paso de esta sección es descargar el cliente de Rights Management Services (RMS) 2,1. Este software ayuda a proteger el acceso a Azure RMS y protege la información que fluye a través de aplicaciones que usan Azure RMS. Instale el cliente de RMS en el mismo equipo que usará para cifrar y cargar los archivos PST en el paso 5. 
   
-1. Descargar el [cliente de servicios de administración de derechos 2.1](https://www.microsoft.com/en-us/download/details.aspx?id=38396).
+1. Descargue el [cliente de Rights Management Service 2,1](https://www.microsoft.com/en-us/download/details.aspx?id=38396).
     
 2. Ejecute el asistente del cliente de Rights Management Service de Active Directory 2.1 para instalar el cliente.
 
 ## <a name="step-2-generate-an-encryption-key-for-pst-import"></a>Paso 2: generar una clave de cifrado para la importación de PST
 
-Después de configurar RMS de Azure, el siguiente paso es generar una clave de cifrado (denominada una clave simétrica) que se usará para cifrar los archivos PST que se cargan a Office 365. Que hará agregando el servicio de importación de PST como un servicio de entidad de seguridad en Active Directory de Azure. Adición de esta aplicación como una entidad de seguridad de servicio permite al servicio de PST Import autenticar directamente con Azure Active Directory cuando se carga, cifra los archivos PST a la ubicación de almacenamiento de Azure en el paso 5.
+Una vez que haya configurado Azure RMS, el siguiente paso consiste en generar una clave de cifrado (denominada clave simétrica) que se usará para cifrar los archivos PST que se cargan en Office 365. Para hacerlo, deberá agregar el servicio de importación de PST como entidad de servicio en Azure Active Directory. Agregar esta aplicación como una entidad de servicio permitirá que el servicio de importación de PST se autentique directamente con Azure Active Directory cuando cargue los archivos PST cifrados en la ubicación de almacenamiento de Azure en el paso 5.
   
-1. Inicie el módulo Azure Active Directory para Windows PowerShell.
+1. Inicie el módulo de Azure Active Directory para Windows PowerShell.
     
 2. Ejecute el comando siguiente para conectarse al servicio de Microsoft Online.
     
@@ -166,7 +166,7 @@ Después de configurar RMS de Azure, el siguiente paso es generar una clave de c
     Connect-MsolService
     ```
 
-3. Escriba las credenciales para una cuenta de administrador de la organización de Office 365 y, a continuación, haga clic en **Aceptar**.
+3. Escriba las credenciales de una cuenta de administrador en la organización de Office 365 y, a continuación, haga clic en **Aceptar**.
     
 4. Ejecute el comando siguiente para generar una clave de cifrado (llamada clave simétrica). Debe hacerlo creando una nueva entidad de cifrado de archivos PST.
     
@@ -183,81 +183,81 @@ Después de configurar RMS de Azure, el siguiente paso es generar una clave de c
     > [!IMPORTANT]
     > Una vez creada la entidad de cifrado de archivos PST, no podrá recuperar la clave simétrica con el cmdlet **Get-MsolServicePrincipal**. Por eso es importante guardar la clave. 
   
-Mantener Azure Active Directory módulo para Windows PowerShell abierta y conectada al servicio de Microsoft Online. Debe ejecutar un comando en esta ventana en el paso siguiente.
+Mantenga el módulo de Azure Active Directory para Windows PowerShell abierto y conectado al servicio de Microsoft online. Ejecutará un comando en esta ventana en el paso siguiente.
 
-## <a name="step-3-obtain-rms-tenant-id-and-licensing-url"></a>Paso 3: Obtener el identificador del inquilino de RMS y licencias de dirección URL
+## <a name="step-3-obtain-rms-tenant-id-and-licensing-url"></a>Paso 3: obtener el identificador de inquilino de RMS y la dirección URL de licencias
 
-El siguiente paso es obtener al inquilino identificador y licencias de dirección URL de ubicación para el servicio de RMS de Azure para su organización. Copie y guarde esta información en el mismo archivo que contiene la clave simétrica del paso 2. El identificador y la dirección URL se usará en el paso 5 para cifrar los archivos PST.
+El siguiente paso es obtener el identificador de inquilino y la dirección URL de la ubicación de licencias para el servicio de Azure RMS de su organización. Copie y guarde esta información en el mismo archivo que contiene la clave simétrica del paso 2. El identificador y la dirección URL se usarán en el paso 5 para cifrar los archivos PST.
   
-1. En el Azure módulo Active Directory para Windows PowerShell (que está conectado al servicio de Microsoft Online), ejecute el siguiente comando para conectar con el servicio de RMS de Azure en la organización de Office 365.
+1. En el módulo Azure Active Directory para Windows PowerShell (que está conectado al servicio Microsoft online), ejecute el siguiente comando para conectarse al servicio de Azure RMS en su organización de Office 365.
     
     ```
     Connect-AadrmService 
     ```
 
-2. Escriba las credenciales para una cuenta de administrador de la organización de Office 365 y, a continuación, haga clic en **Aceptar**.
+2. Escriba las credenciales de una cuenta de administrador de su organización de Office 365 y, a continuación, haga clic en **Aceptar**.
     
-3. Ejecute el siguiente comando para mostrar el identificador de inquilino para el servicio de RMS de Azure en la organización de Office 365.
+3. Ejecute el siguiente comando para mostrar el identificador de inquilino del servicio de Azure RMS en la organización de Office 365.
     
     ```
     Get-AadrmConfiguration | FL BPOSId
     ```
 
-    Copie y guarde el valor para el `BPOSId` (propiedad). 
+    Copie y guarde el valor de la `BPOSId` propiedad. 
     
-4. Ejecute el siguiente comando para mostrar la ubicación de licencias para el servicio de RMS de Azure.
+4. Ejecute el siguiente comando para mostrar la ubicación de la licencia del servicio Azure RMS.
     
     ```
     Get-AadrmConfiguration | FL LicensingIntranetDistributionPointUrl
     ```
 
-    Copie y guarde el valor para el `LicensingIntranetDistributionPointUrl` (propiedad). 
+    Copie y guarde el valor de la `LicensingIntranetDistributionPointUrl` propiedad. 
 
-## <a name="step-4-download-the-pst-import-tools-and-copy-the-sas-url"></a>Paso 4: Descargar las herramientas de importación de PST y copie la dirección URL de SAS
+## <a name="step-4-download-the-pst-import-tools-and-copy-the-sas-url"></a>Paso 4: descargar las herramientas de importación de PST y copiar la dirección URL de SAS
 
-Ahora que ha configurado RMS de Azure y obtener los identificadores necesarios para cifrar los archivos PST, el siguiente paso es descargar e instalar las herramientas que se ejecutará en el paso 5 para cifrar y los archivos PST de carga para Office 365. Estas herramientas son la herramienta de AzCopy de Azure y la herramienta de cifrado de datos de Office 365. También podrá copiar la dirección URL de SAS para su organización. Esta dirección URL es una combinación de la dirección URL de red para la ubicación de almacenamiento de Azure en la nube de Microsoft para su organización y una clave de firma de acceso compartidos (SAS). Esta clave proporciona los permisos necesarios para cargar los archivos PST en su ubicación de almacenamiento de Azure. Guárdelo en el mismo archivo que ha copiado el resto de información para en el paso 2 y paso 3. Como se mencionó anteriormente, tome precauciones para proteger la dirección URL de SAS. 
+Ahora que ha configurado Azure RMS y ha obtenido los identificadores necesarios para cifrar los archivos PST, el siguiente paso consiste en descargar e instalar las herramientas que se ejecutarán en el paso 5 para cifrar y cargar los archivos PST a Office 365. Estas herramientas son la herramienta AzCopy de Azure y la herramienta de cifrado de datos de Office 365. También copiará la dirección URL de SAS de su organización. Esta dirección URL es una combinación de la dirección URL de red para la ubicación de almacenamiento de Azure en la nube de Microsoft para su organización y una clave de firma de acceso compartido (SAS). Esta clave le proporciona los permisos necesarios para cargar archivos PST en su ubicación de almacenamiento de Azure. Guárdelo en el mismo archivo en el que copió la otra información en el paso 2 y en el paso 3. Como se mencionó anteriormente, tome precauciones para proteger la URL de SAS. 
   
 > [!IMPORTANT]
-> Se debe usar Azure AzCopy versión 5.0 para cargar correctamente los archivos PST en la ubicación de almacenamiento de Azure. Las versiones más recientes de la herramienta de AzCopy no son compatibles para la importación de los archivos PST a Office 365. Asegúrese de descargar la herramienta de AzCopy desde la página **cargar archivos a través de la red** siguiendo los procedimientos descritos en este paso. 
+> Tiene que usar Azure AzCopy versión 5,0 para cargar los archivos PST correctamente en la ubicación de almacenamiento de Azure. Las versiones más recientes de la herramienta AzCopy no se admiten para importar archivos PST a Office 365. Asegúrese de descargar la herramienta AzCopy de la página **cargar archivos a través de la red** siguiendo los procedimientos de este paso. 
   
 1. Vaya a [https://protection.office.com](https://protection.office.com).
     
-2. Inicie sesión en Office 365 con las credenciales para una cuenta de administrador de la organización de Office 365.
+2. Inicie sesión en Office 365 con las credenciales de una cuenta de administrador de su organización de Office 365.
     
-3. En el panel izquierdo, haga clic en **el gobierno de datos** y, a continuación, haga clic en **Importar**.
+3. En el panel izquierdo, haga clic en **gobierno de datos** y, a continuación, haga clic en **importar**.
     
 4. En la página **Importar**, haga clic en **Ir al servicio de importación**.
     
-5. En la página **Importar datos a Office 365** , haga clic en **nuevo trabajo** ![icono Agregar](media/ITPro-EAC-AddIcon.gif)y, a continuación, haga clic en **mensajes de correo electrónico de carga (archivos PST)**.
+5. en la página **importar datos a Office 365** , haga clic en **nuevo** ![icono](media/ITPro-EAC-AddIcon.gif)agregar trabajo y, a continuación, haga clic en **cargar mensajes de correo electrónico (archivos PST)**.
     
-6. En la página **cargar archivos a través de la red** , en el paso 2, haga clic en **Mostrar la dirección URL de SAS de carga de red**.
+6. En la página **cargar archivos a través de la red** , en el paso 2, haga clic en **Mostrar la dirección URL de carga de red SAS**.
     
-7. Después de que se muestra la dirección URL, cópiela y vuelva a guardarla en el archivo donde guardó las otras claves. Asegúrese de copiar la dirección URL completa. 
+7. Una vez mostrada la dirección URL, cópiela y guárdela en el archivo donde guardó las demás claves. Asegúrese de copiar la dirección URL completa. 
     
-8. En el paso 3, haga clic en **Descargar la herramienta de AzCopy de Azure** para descargar e instalar la herramienta de AzCopy de Azure. 
+8. En el paso 3, haga clic en **descargar la herramienta azcopy** de Azure para descargar e instalar la herramienta Azcopy de Azure. 
     
 9. En la ventana emergente, haga clic en **Ejecutar** para instalar la herramienta AzCopy de Azure. 
     
     > [!IMPORTANT]
-    > Asegúrese de instalar la herramienta de AzCopy de Azure en la ubicación predeterminada, que es `%ProgramFiles(x86)%\Microsoft SDKs\Azure\AzCopy` en un equipo que ejecuta Windows de 64 bits. Eso es porque cuando se ejecuta el O365ImportTool.exe en el paso 5, busca la herramienta AzCopy en esta ubicación. 
+    > Asegúrese de instalar la herramienta AzCopy de Azure en la ubicación predeterminada, que se `%ProgramFiles(x86)%\Microsoft SDKs\Azure\AzCopy` encuentra en un equipo que ejecuta Windows de 64 bits. Esto se debe a que cuando ejecuta O365ImportTool. exe en el paso 5, busca la herramienta AzCopy en esta ubicación. 
   
-10. Después de instalar la herramienta de AzCopy de Azure, haga clic en **Descargar la herramienta de importación y el cifrado de datos de Office 365**.
+10. Una vez instalada la herramienta AzCopy de Azure, haga clic en **descargar la herramienta de importación y cifrado de datos de Office 365**.
     
-11. En la ventana emergente, haga clic en **Guardar** \> **Guardar como** para guardar el archivo O365ImportTool.zip en una carpeta en el equipo local. 
+11. En la ventana emergente, haga clic en **Guardar** \> y **Guardar como** para guardar el archivo O365ImportTool. zip en una carpeta del equipo local. 
     
 12. Extraiga el archivo O365ImportTool.zip.
     
 13. Haga clic en **Cancelar** para cerrar la página **cargar archivos a través de la red** . 
  
-## <a name="step-5-encrypt-and-upload-your-pst-files-to-office-365"></a>Paso 5: Cifrar y cargar los archivos PST en Office 365
+## <a name="step-5-encrypt-and-upload-your-pst-files-to-office-365"></a>Paso 5: cifrar y cargar los archivos PST a Office 365
 
-Después de haber completado el paso 1 a través del paso 4, estará listo usar la herramienta de O365ImportTool.exe para cifrar y cargar los archivos PST a Office 365. Esta herramienta cifra los archivos PST y, a continuación, carga y las almacena en una ubicación de almacenamiento de Azure en la nube de Microsoft. Para completar este paso, los archivos PST tienen que estar ubicada en un recurso compartido de archivos o un servidor de archivos en su organización. Esto se conoce como el directorio de origen en el procedimiento siguiente. Cada vez que se ejecuta la herramienta O365ImportTool.exe, aquí puede especificar un directorio de origen diferentes. 
+Una vez completado el paso 1 hasta el paso 4, está listo para usar la herramienta O365ImportTool. exe para cifrar y cargar los archivos PST a Office 365. Esta herramienta cifra los archivos PST y, a continuación, los carga y almacena en una ubicación de Azure Storage en la nube de Microsoft. Para completar este paso, los archivos PST deben encontrarse en un recurso compartido de archivos o en un servidor de archivos de la organización. Esto se conoce como el directorio de origen en el siguiente procedimiento. Cada vez que ejecuta la herramienta O365ImportTool. exe, puede especificar un directorio de origen diferente. 
   
 1. Abra el símbolo del sistema del equipo local.
     
 2. Vaya al directorio en el que instaló la herramienta O365ImportTool.exe en el paso 4.
     
-3. Ejecute el comando siguiente para cifrar y cargar los archivos PST a Office 365.
+3. Ejecute el siguiente comando para cifrar y cargar los archivos PST a Office 365.
     
     ```
     O365ImportTool.exe /srcdir:<Location of PST files> /protect-rmsserver:<RMS licensing location> /protect-tenantid:<BPOSId> /protect-key:<Symmetric key> /transfer:upload /upload-dest:<Network upload URL> /upload-destSAS:<SAS key>
@@ -267,14 +267,14 @@ Después de haber completado el paso 1 a través del paso 4, estará listo usar 
     
     |**Parámetro**|**Descripción**|**Ejemplo**|
     |:-----|:-----|:-----|
-    | `/srcdir:` <br/> |Especifica el directorio de origen en la organización que contiene los archivos PST que se cargará a Office 365.  <br/> | `/srcdir:\\FILESERVER01\PSTs` <br/> |
-    | `/protect-rmsserver:` <br/> |Especifica la ubicación de licencias para el servicio de RMS de Azure. Use el valor de la `LicensingIntranetDistributionPointUrl` propiedad que obtuvo en el paso 3. Asegúrese de que rodee el valor de este parámetro con comillas dobles ("")<br/> | `/protect-rmsserver:"https://afcbd8ec-cb2b-4a1a-8246-0b4bc22d1978.rms.na.aadrm.com/_wmcs/licensing"` <br/> |
-    | `/protect-tenantid:` <br/> |Especifica la identidad de la organización de RMS de Azure. Use el valor de la `BPOSId` propiedad que obtuvo en el paso 3.<br/> | `/protect-tenantid:42745b33-2a5c-4726-8a2a-ca43caa0f74b` <br/> |
-    | `/protect-key:` <br/> |Especifica la clave simétrica que obtuvo en el paso 2. Asegúrese de que rodee el valor de este parámetro con comillas dobles ("").  <br/> | `/protect-key:"l+R+Umc5RGmSBh1oW+DoyMxm/h5h2JJXFcNOFiNp867="` <br/> |
-    | `/transfer:` <br/> |Especifica si va a carga los archivos PST a través de la red o enviarlos en una unidad de disco duro. El valor `upload` indica que va a cargar los archivos a través de la red. El valor `drive` indica que vaya a distribuir los archivos pst en una unidad de disco duro.<br/> | `/transfer:upload` <br/> |
-    | `/upload-dest:` <br/> |Especifica el destino en Office 365 donde se cargará los archivos PST en; Ésta es la ubicación de almacenamiento de Azure para su organización. El valor para este parámetro consta de la dirección URL de carga de red desde la dirección URL de asociaciones de seguridad que se copió en el paso 4. Asegúrese de que rodee el valor de este parámetro con comillas dobles ("").<br/><br/> **Sugerencia:** (Opcional) Puede especificar una subcarpeta en la ubicación de almacenamiento de Azure para cargar los archivos PST cifrados a. Para ello, mediante la adición de una ubicación de la subcarpeta (después de "ingestiondata") en la dirección URL de carga de red. El primer ejemplo no especifica una subcarpeta; Esto significa que los archivos PST se cargará en la raíz (denominada *ingestiondata* ) de la ubicación de almacenamiento de Azure. El segundo ejemplo carga los archivos PST en una subcarpeta (denominada *EncryptedPSTs* ) en la ubicación de almacenamiento de Azure.           | `/upload-dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata"` <br/> O bien  <br/>  `/upload-dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata/EncryptedPSTs"` <br/> |
-    | `/upload-destSAS:` <br/> |Especifica la clave de asociaciones de seguridad de su organización. El valor para este parámetro se compone de la clave de asociaciones de seguridad de la dirección URL de asociaciones de seguridad que se copió en el paso 4. Tenga en cuenta que el primer carácter de la clave SAS es un signo de interrogación ("?"). Asegúrese de que rodee el valor de este parámetro con comillas dobles ("").  <br/> | `/upload-destSAS:"?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"` <br/> |
-    | `/recurse` <br/> |Este modificador opcional especifica el modo de recursiva para que la herramienta O365ImportTool.exe copiará archivos pst que se encuentran en las subcarpetas en el directorio de origen que se especifica mediante el `/srcdir:` parámetro.  <br/><br/> **Nota:** Si se incluye este modificador, los archivos PST en subcarpetas tendrán una ruta de acceso de archivo diferente en la ubicación de almacenamiento de Azure después de cargarlas. Debe especificar la ruta de acceso exacta del archivo en el archivo CSV que cree en el paso 7.           | `/recurse` <br/> |
+    | `/srcdir:` <br/> |Especifica el directorio de origen de la organización que contiene los archivos PST que se cargarán en Office 365.  <br/> | `/srcdir:\\FILESERVER01\PSTs` <br/> |
+    | `/protect-rmsserver:` <br/> |Especifica la ubicación de licencias para el servicio de Azure RMS. Use el valor de la `LicensingIntranetDistributionPointUrl` propiedad que obtuvo en el paso 3. Asegúrese de rodear el valor de este parámetro con comillas dobles ("").<br/> | `/protect-rmsserver:"https://afcbd8ec-cb2b-4a1a-8246-0b4bc22d1978.rms.na.aadrm.com/_wmcs/licensing"` <br/> |
+    | `/protect-tenantid:` <br/> |Especifica la identidad de la organización de Azure RMS. Use el valor de la `BPOSId` propiedad que obtuvo en el paso 3.<br/> | `/protect-tenantid:42745b33-2a5c-4726-8a2a-ca43caa0f74b` <br/> |
+    | `/protect-key:` <br/> |Especifica la clave simétrica obtenida en el paso 2. Asegúrese de rodear el valor de este parámetro con comillas dobles ("").  <br/> | `/protect-key:"l+R+Umc5RGmSBh1oW+DoyMxm/h5h2JJXFcNOFiNp867="` <br/> |
+    | `/transfer:` <br/> |Especifica si se cargan los archivos PST a través de la red o se envían a un disco duro. El valor `upload` indica que está cargando los archivos a través de la red. El valor `drive` indica que está enviando los archivos PST en una unidad de disco duro.<br/> | `/transfer:upload` <br/> |
+    | `/upload-dest:` <br/> |Especifica el destino en Office 365 donde se cargarán los archivos PST; Esta es la ubicación de almacenamiento de Azure de su organización. El valor de este parámetro se compone de la dirección URL de carga de red de la dirección URL de SAS que copió en el paso 4. Asegúrese de rodear el valor de este parámetro con comillas dobles ("").<br/><br/> **Sugerencia:** Opcional Puede especificar una subcarpeta en la ubicación de Azure Storage en la que se van a cargar los archivos PST cifrados. Para hacerlo, agregue una ubicación de subcarpeta (después de "ingestiondata") en la dirección URL de carga de red. El primer ejemplo no especifica una subcarpeta; Esto significa que los archivos PST se cargarán en la raíz (denominada *ingestiondata* ) de la ubicación de almacenamiento de Azure. En el segundo ejemplo se cargan los archivos PST en una subcarpeta (denominada *EncryptedPSTs* ) en la ubicación de almacenamiento de Azure.           | `/upload-dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata"` <br/> O bien  <br/>  `/upload-dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata/EncryptedPSTs"` <br/> |
+    | `/upload-destSAS:` <br/> |Especifica la clave SAS para la organización. El valor de este parámetro se compone de la clave SAS de la dirección URL de SAS que copió en el paso 4. Tenga en cuenta que el primer carácter de la clave SAS es un signo de interrogación ("?"). Asegúrese de rodear el valor de este parámetro con comillas dobles ("").  <br/> | `/upload-destSAS:"?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"` <br/> |
+    | `/recurse` <br/> |Este modificador opcional especifica el modo recursivo para que la herramienta O365ImportTool. exe copie los archivos PST que se encuentran en las subcarpetas en el directorio de origen especificado por el `/srcdir:` parámetro.  <br/><br/> **Nota:** Si incluye este modificador, los archivos PST en las subcarpetas tendrán un directorio de ruta de archivo diferente en la ubicación de almacenamiento de Azure después de que se carguen. Deberá especificar el directorio de ruta de archivo exacto en el archivo CSV que creará en el paso 7.           | `/recurse` <br/> |
    
     A continuación se muestra un ejemplo de la sintaxis de la herramienta O365ImportTool.exe, en el que se usan valores reales para cada parámetro:
     
@@ -285,56 +285,56 @@ Después de haber completado el paso 1 a través del paso 4, estará listo usar 
     Después de ejecutar el comando, aparecen mensajes de estado en los que se muestra el progreso del cifrado y la carga de los archivos PST. En un mensaje de estado final aparece el número total de archivos cifrados y cargados correctamente.  
     
     > [!TIP]
-    > Después de que se ejecute el comando O365ImportTool.exe correctamente y compruebe que todos los parámetros son correctos, guardar una copia de la sintaxis de línea de comandos para el mismo archivo (protegida) donde copió la información obtenida en los pasos anteriores. A continuación, puede copiar y pegar este comando en un símbolo del sistema cada vez que se desea ejecutar la herramienta O365ImportTool.exe para cifrar y cargar los archivos PST a Office 365. Los únicos valores es posible que deba cambiar son las que para la `/srcdir:` y `/upload-dest:` parámetros. 
+    > Después de ejecutar correctamente el comando O365ImportTool. exe y comprobar que todos los parámetros son correctos, guarde una copia de la sintaxis de la línea de comandos en el mismo archivo (seguro) donde copió la información obtenida en los pasos anteriores. A continuación, puede copiar y pegar este comando en un símbolo del sistema cada vez que desee ejecutar la herramienta O365ImportTool. exe para cifrar y cargar los archivos PST a Office 365. Los únicos valores que puede que deba cambiar son los de los `/srcdir:` parámetros y `/upload-dest:` . 
   
-## <a name="optional-step-6-view-a-list-of-the-pst-files-uploaded-to-office-365"></a>(Opcional) Paso 6: Ver una lista de los archivos PST cargado a Office 365
+## <a name="optional-step-6-view-a-list-of-the-pst-files-uploaded-to-office-365"></a>Opcional Paso 6: ver una lista de los archivos PST cargados en Office 365
 
-Como un paso opcional, puede instalar y usar el Explorador de almacenamiento de información de Microsoft Azure (que es una herramienta gratuita y de código abierto) para ver la lista de los archivos PST que han cargado en el blob de Azure. Hay tres buenas razones para hacerlo:
+Como paso opcional, puede instalar y usar el explorador de almacenamiento de Microsoft Azure (que es una herramienta de código abierto gratuita) para ver la lista de los archivos PST que ha cargado en el BLOB de Azure. Hay tres buenas razones para hacer esto:
   
-- Compruebe que los archivos PST desde el servidor de archivos de la organización o la carpeta compartida se han cargado correctamente en el blob de Azure.
+- Compruebe que los archivos PST de la carpeta compartida o el servidor de archivos de la organización se hayan cargado correctamente en el BLOB de Azure.
 
-- Compruebe que se cifran los archivos PST. Los archivos PST cifrados tienen un `.pfile` extensión que se anexa al nombre del archivo PST; Por ejemplo, `pilarp.pst.pfile`.
+- Compruebe que los archivos PST están cifrados. Los archivos PST cifrados `.pfile` tienen una extensión anexada al nombre del archivo pst; por ejemplo, `pilarp.pst.pfile`.
     
-- Compruebe el nombre de archivo (y la ruta de acceso de la subcarpeta si ha incluido uno) para cada archivo PST cargado en el blob de Azure. Esto es realmente útil cuando se está creando el PST de archivo en el siguiente paso de asignación debido a que es necesario especificar la ruta de acceso de carpeta y el nombre de archivo para cada archivo PST. Comprobar estos nombres puede ayudar a reducir posibles errores en el archivo de asignación de PST.
+- Compruebe el nombre de archivo (y la ruta de directorio de la subcarpeta si incluyó una) para cada archivo PST cargado en el BLOB de Azure. Esto es muy útil cuando está creando el archivo de asignación de PST en el paso siguiente porque tiene que especificar el nombre de ruta de la carpeta y el nombre de archivo de cada archivo PST. La comprobación de estos nombres puede ayudar a reducir posibles errores en el archivo de asignación de PST.
     
-El Explorador de almacenamiento de información de Microsoft Azure está en vista previa. 
+El explorador de almacenamiento de Microsoft Azure está en versión preliminar. 
   
  > [!IMPORTANT]
->  No puede usar el Explorador de almacenamiento de Azure para cargar o modificar los archivos PST. El único método admitido para la importación de los archivos PST a Office 365 es utilizar AzCopy. Además, no se puede eliminar los archivos PST que han cargado en el blob de Azure. Si se intenta eliminar un archivo PST, recibirá un error acerca de no tener los permisos necesarios. Tenga en cuenta que todos los archivos PST se eliminan automáticamente desde el área de almacenamiento de Azure. Si no hay ningún trabajo de importación en curso, a continuación, todos los archivos PST en el contenedor de **ingestiondata** se elimina 30 días después de que se creó el trabajo de importación más reciente. 
+>  No puede usar el explorador de Azure Storage para cargar o modificar archivos PST. El único método admitido para importar archivos PST a Office 365 es usar AzCopy. Además, no puede eliminar los archivos PST que ha cargado en el BLOB de Azure. Si intenta eliminar un archivo PST, recibirá un error sobre el no tener los permisos necesarios. Tenga en cuenta que todos los archivos PST se eliminan automáticamente del área de almacenamiento de Azure. Si no hay ningún trabajo de importación en curso, se eliminarán todos los archivos PST del contenedor **ingestiondata** 30 días después de que se haya creado el trabajo de importación más reciente. 
   
-Para instalar el Explorador de almacenamiento de Azure y conectarse a su área de almacenamiento de Azure:
+Para instalar el explorador de almacenamiento de Azure y conectarse a su área de almacenamiento de Azure:
   
-1. Descargue e instale la [herramienta de explorador de almacenamiento de Microsoft Azure](https://go.microsoft.com/fwlink/p/?LinkId=544842).
+1. Descargue e instale la [herramienta Microsoft Azure Storage Explorer](https://go.microsoft.com/fwlink/p/?LinkId=544842).
     
-2. Inicie el Explorador de almacenamiento de información de Microsoft Azure, haga clic en **Cuentas de almacenamiento** en el panel izquierdo y, a continuación, haga clic en **Conectar con el almacenamiento de Azure**. 
+2. Inicie el explorador de almacenamiento de Microsoft Azure, haga clic con el botón derecho en **cuentas de almacenamiento** en el panel izquierdo y, después, haga clic en **conectar a Azure Storage**. 
     
-    ![Haga clic en cuentas de almacenamiento y, a continuación, haga clic en conectar para almacenamiento de Azure](media/75b80cc3-c336-4f96-ad32-54ac9b96a7af.png)
+    ![Haga clic con el botón secundario en cuentas de almacenamiento y haga clic en conectar a Azure Storage](media/75b80cc3-c336-4f96-ad32-54ac9b96a7af.png)
   
-3. En el cuadro de **Conectar con el almacenamiento de Azure**, pegue la dirección URL de SAS que obtuvo en el paso 4 y, a continuación, haga clic en **siguiente**. 
+3. En el cuadro en **conectarse a Azure Storage**, pegue la dirección URL de SAS que obtuvo en el paso 4 y, a continuación, haga clic en **siguiente**. 
     
-    ![Pegue la dirección URL de SAS en el cuadro en la página Conectar con el almacenamiento de Azure](media/5d034128-e087-48e1-9ebc-4c9fa262d5b7.png)
+    ![Pegue la dirección URL de SAS en el cuadro de la página conectar a Azure Storage](media/5d034128-e087-48e1-9ebc-4c9fa262d5b7.png)
   
-4. En la página **Resumen de la conexión** , puede revisar la información de conexión y, a continuación, haga clic en **Conectar**. 
+4. En la página **Resumen de conexión** , puede revisar la información de conexión y, a continuación, hacer clic en **conectar**. 
     
-5. En **Cuentas de almacenamiento**, expanda el nodo **(Servicio SAS)** y, a continuación, expanda el nodo de **Contenedores de Blob** . 
+5. En **cuentas de almacenamiento**, expanda el nodo **(SAS de servicio)** y, a continuación, expanda el nodo **contenedores** de blobs. 
     
-6. Haga clic en **ingestiondata**y, a continuación, haga clic en **Abrir Editor de contenedor de Blob**.
+6. Haga clic con el botón secundario en **ingestiondata**y haga clic en **Abrir editor de contenedores**de blobs.
     
     ![Haga clic con el botón derecho en ingestiondata y, después, haga clic en Abrir editor de contenedores de blobs.](media/f50eee30-9202-4efc-904a-2895a0bc388d.png)
   
-    Se muestra el área de almacenamiento de Azure, con una lista de los archivos PST que cargan en el paso 5.
+    Se muestra el área de almacenamiento de Azure, con una lista de los archivos PST que cargó en el paso 5.
     
     ![El explorador de almacenamiento de Azure muestra una lista de los archivos PST que ha cargado](media/a448ae43-e744-4153-8304-22b59e93883c.png)
   
-7. Cuando haya terminado con el Explorador de almacenamiento de información de Microsoft Azure, haga clic con el botón **ingestiondata**y, a continuación, haga clic en **Desasociar** a desconectar de su área de almacenamiento de Azure. De lo contrario, recibirá un error la próxima vez que se intenta adjuntar. 
+7. Cuando haya terminado de usar el explorador de almacenamiento de Microsoft Azure, haga clic con el botón secundario en **ingestiondata**y, a continuación, haga clic en **desconectar** para desconectarse de su área de almacenamiento de Azure. De lo contrario, recibirá un error la próxima vez que intente adjuntar. 
     
     ![Haga clic con el botón derecho en la ingesta y haga clic en Desasociar para desconectar de su área de almacenamiento de Azure](media/1e8e5e95-4215-4ce4-a13d-ab5f826a0510.png)
   
-## <a name="step-7-create-the-pst-import-mapping-file"></a>Paso 7: Crear el archivo de asignación de importación de PST
+## <a name="step-7-create-the-pst-import-mapping-file"></a>Paso 7: crear el archivo de asignación de importaciones de PST
 
-Tras han cifran los archivos PST y cargados en la ubicación de almacenamiento de Azure para su organización de Office 365, el siguiente paso es crear una coma separados archivo valor (CSV) que especifica qué buzones de usuario se importará a los archivos PST. Va a enviar este archivo CSV en el siguiente paso al crear un trabajo de importación de PST.
+Una vez cifrados y cargados los archivos PST en la ubicación de almacenamiento de Azure para la organización de Office 365, el siguiente paso consiste en crear un archivo de valores separados por comas (CSV) que especifica a qué buzones de usuario se importarán los archivos PST. Enviará este archivo CSV en el paso siguiente al crear un trabajo de importación de PST.
   
-1. [Descargar una copia del archivo de asignación de importación de PST](https://go.microsoft.com/fwlink/p/?LinkId=544717). 
+1. [Descargue una copia del archivo de asignación de importaciones de PST](https://go.microsoft.com/fwlink/p/?LinkId=544717). 
     
 2. Abra o guarde el archivo CSV en el equipo local. En el ejemplo siguiente se muestra un archivo de asignación de importaciones de archivos PST completado (que se abre en el Bloc de notas). Es mucho más fácil usar Microsoft Excel para editar el archivo CSV.
     
@@ -352,7 +352,7 @@ Tras han cifran los archivos PST y cargados en la ubicación de almacenamiento d
     Exchange,EncryptedPSTs,zrinkam_archive.pst.pfile,zrinkam@contoso.onmicrosoft.com,TRUE,/ImportedPst,,,,
     ```
 
-    La primera fila o la fila de encabezado, del archivo CSV se enumera los parámetros que usará el servicio de PST Import para importar los archivos PST a buzones de usuario. Cada nombre de parámetro viene separada por una coma. Cada fila debajo de la fila de encabezado representa los valores de parámetro para la importación de un archivo PST a un buzón específico. Necesitará una fila para cada archivo PST que desea importar a un buzón de usuario. Asegúrese de reemplazar los datos de marcador de posición en el archivo de asignación con los datos reales.
+    En la primera fila, o fila de encabezado, del archivo CSV se enumeran los parámetros que usará el servicio de importación de PST para importar los archivos PST a los buzones de usuario. Cada nombre de parámetro está separado por una coma. Cada fila situada debajo de la fila de encabezado representa los valores de parámetro para importar un archivo PST a un buzón específico. Necesitará una fila para cada archivo PST que desee importar a un buzón de usuario. Asegúrese de reemplazar los datos de marcador de posición en el archivo de asignación con los datos reales.
     
     > [!NOTE]
     > No cambie nada en la fila de encabezado, ni siquiera los parámetros SharePoint; se ignorarán durante el proceso de importación de PST. 
@@ -361,41 +361,41 @@ Tras han cifran los archivos PST y cargados en la ubicación de almacenamiento d
     
     |**Parámetro**|**Descripción**|**Ejemplo**|
     |:-----|:-----|:-----|
-    | `Workload` <br/> |Especifica el servicio Office 365 que se va a importar datos. Para importar archivos PST a buzones de usuario, use `Exchange`.<br/> | `Exchange` <br/> |
-    | `FilePath` <br/> |Especifica la ubicación de la carpeta en la ubicación de almacenamiento de Azure que cargan los archivos PST en el paso 5.  <br/>  Si no ha incluido un nombre de la subcarpeta opcional en la dirección URL de red en el `/upload-dest:` parámetro en el paso 5, deje este parámetro en blanco en el archivo CSV. Si ha incluido un nombre de la subcarpeta, especifique en este parámetro. El valor para este parámetro distingue mayúsculas de minúsculas. En cualquier caso, *no* incluya "ingestiondata" en el valor de la `FilePath` parámetro.<br/> <br/>**Importante:** El caso para el nombre de ruta de acceso del archivo debe ser el mismo caso que usa si ha incluido un nombre de la subcarpeta opcional de la dirección URL de SAS en el `/upload-dest:` parámetro en el paso 5. Por ejemplo, si usó `EncryptedPSTs` para la subcarpeta el nombre en el paso 5 y, a continuación, usar `encryptedpsts` en el `FilePath` parámetro en el archivo CSV, la importación para el archivo PST se producirá un error. Asegúrese de usar el mismo caso en ambas instancias.           |(se deja en blanco)  <br/> O bien  <br/>  `EncryptedPSTs` <br/> |
-    | `Name` <br/> |Especifica el nombre del archivo PST que se va a importar al buzón del usuario. El valor para este parámetro distingue mayúsculas de minúsculas. Debido a que se cifran los archivos PST que se cargan en la ubicación de almacenamiento de Azure, un `.pfile` extensión se agrega al nombre del archivo PST. Debe agregar el `.pfile` los archivos de extensión en el nombre de los archivos PST en el archivo CSV.<br/><br/> **Importante:** El caso para el nombre del archivo PST en el archivo CSV debe ser el mismo que el archivo PST que se cargó en la ubicación de almacenamiento de Azure en el paso 5. Por ejemplo, si usa `annb.pst.pfile` en el `Name` parámetro en el archivo CSV, pero el nombre del archivo PST real es `AnnB.pst`, se producirá un error en la importación de ese archivo PST. Asegúrese de que el nombre de los archivos PST en el archivo CSV usa el mismo caso que el archivo PST real.           | `annb.pst.pfile` <br/> |
-    | `Mailbox` <br/> |Especifica la dirección de correo electrónico del buzón en el que se importará el archivo PST.   <br/> Para importar un archivo PST a un buzón de correo inactivo, es necesario especificar el GUID del buzón de correo para este parámetro. Para obtener este GUID, ejecute el siguiente comando de PowerShell en Exchange Online: ' Get-Mailbox - InactiveMailboxOnly<identity of inactive mailbox> | Guid de FL` <br/><br/> **Note:** In some cases, you might have multiple mailboxes with the same email address, where one mailbox is an active mailbox and the other mailbox is in a soft-deleted (or inactive) state. In these situations, you have specify the mailbox GUID to uniquely identify the mailbox to import the PST file to. To obtain this GUID for active mailboxes, run the following PowerShell command:  `Get-Mailbox -<identity of active mailbox> | Guid de FL`. To obtain the GUID for soft-deleted (or inactive) mailboxes, run this command  `Get-Mailbox - <identity of soft-deleted or inactive mailbox> - SoftDeletedMailbox | FL Guid'           | `annb@contoso.onmicrosoft.com` <br/> O bien  <br/>  `2d7a87fe-d6a2-40cc-8aff-1ebea80d4ae7` <br/> |
-    | `IsArchive` <br/> | Especifica si se va a importar o no el archivo PST en el buzón de archivo del usuario. Hay dos opciones:<br/> **FALSE** Importa el archivo PST en el buzón del usuario principal.  <br/> **Es TRUE** Importa el archivo PST al buzón de archivo del usuario.  <br/>  Si deja en blanco este parámetro, se importa el archivo PST en el buzón del usuario principal.  <br/><br/> **Nota:** Para importar un archivo PST a un buzón de archivo basados en la nube para un usuario cuyo buzón de correo principal es local, especifique **TRUE** para este parámetro y especificar la dirección de correo electrónico para el buzón del usuario local para el `Mailbox` parámetro.           | `FALSE` <br/> O bien  <br/>  `TRUE` <br/> |
-    | `TargetRootFolder` <br/> | Especifica la carpeta de buzón de correo que se importa el archivo PST a.  <br/>  Si deja en blanco este parámetro, se va a importar el archivo PST en una carpeta nueva con nombre **importado** que se encuentra en el nivel raíz del buzón (el mismo nivel que la carpeta Bandeja de entrada y las otras carpetas de buzón de correo de forma predeterminada).  <br/>  Si especifica `/`, los elementos en el archivo PST se va a importar en directamente a la carpeta de bandeja de entrada del usuario.  <br/>  Si especifica `/<foldername>`, se va a importar elementos en el archivo PST en una subcarpeta denominada * \<foldername\> * . Por ejemplo, si usó `/ImportedPst`, se importará los elementos en una subcarpeta denominada **ImportedPst**. Esta subcarpeta se encuentran en la carpeta de bandeja de entrada del usuario.<br/><br/> **Sugerencia:** Tenga en cuenta que ejecuta unos lotes de prueba para experimentar con este parámetro para que pueda determinar la mejor ubicación de carpeta para importar archivos de archivos pst a.           |(se deja en blanco)  <br/> O bien  <br/>  `/` <br/> O bien  <br/>  `/ImportedPst` <br/> |
-    | `ContentCodePage` <br/> |Este parámetro opcional especifica un valor numérico para la página de códigos que se utilizará para importar los archivos PST en el formato de archivo ANSI. Este parámetro se usa para importar los archivos PST de organizaciones chino, japonés y coreano (CJK) debido a que estos lenguajes normalmente usan un juego de caracteres de doble byte (DBCS) para la codificación de caracteres. Si este parámetro no se usa para importar archivos PST para idiomas que usan DBCS para nombres de carpeta de buzón de correo, los nombres de carpeta a menudo aparecerán dañados después de su importación. Para obtener una lista de valores admitidos que se usará para este parámetro, vea [Identificadores de la página de código](https://go.microsoft.com/fwlink/p/?LinkId=328514).<br/><br/> **Nota:** Como ya ha indicado, éste es un parámetro opcional y no tiene que incluir en el archivo CSV. O bien, puede incluirlo y deje el valor en blanco para una o varias filas.           |(se deja en blanco)  <br/> O bien  <br/>  `932`(que es el identificador de la página de códigos para ANSI/OEM en japonés)  <br/> |
+    | `Workload` <br/> |Especifica el servicio de Office 365 al que se importarán los datos. Para importar archivos PST a los buzones de usuario `Exchange`, use.<br/> | `Exchange` <br/> |
+    | `FilePath` <br/> |Especifica la ubicación de la carpeta en la ubicación de almacenamiento de Azure en la que cargó los archivos PST en el paso 5.  <br/>  Si no incluyó un nombre de subcarpeta opcional en la dirección URL de red en `/upload-dest:` el parámetro en el paso 5, deje este parámetro en blanco en el archivo CSV. Si incluyó un nombre de subcarpeta, debe especificarlo en este parámetro. El valor de este parámetro distingue mayúsculas de minúsculas. En cualquier caso, *no* incluya "ingestiondata" en el valor del `FilePath` parámetro.<br/> <br/>**Importante:** El caso del nombre de la ruta de acceso del archivo debe ser el mismo caso que usó si incluyó un nombre de subcarpeta opcional en la dirección URL `/upload-dest:` de SAS en el parámetro del paso 5. Por ejemplo, si ha usado `EncryptedPSTs` para el nombre de la subcarpeta en el paso 5 y `encryptedpsts` , a `FilePath` continuación, usa en el parámetro en el archivo CSV, se producirá un error en la importación del archivo pst. Asegúrese de usar el mismo caso en ambas instancias.           |(se deja en blanco)  <br/> O bien  <br/>  `EncryptedPSTs` <br/> |
+    | `Name` <br/> |Especifica el nombre del archivo PST que se importará al buzón del usuario. El valor de este parámetro distingue mayúsculas de minúsculas. Debido a que los archivos PST que se cargan en la ubicación de Azure Storage están cifrados, se agrega una `.pfile` extensión al nombre de archivo pst. Debe agregar la `.pfile` extensión al nombre de los archivos PST en el archivo CSV.<br/><br/> **Importante:** El caso del nombre de archivo PST en el archivo CSV debe ser el mismo que el archivo PST que se cargó en la ubicación de almacenamiento de Azure en el paso 5. Por ejemplo, si usa `annb.pst.pfile` en el `Name` parámetro del archivo CSV, pero el nombre del archivo pst real `AnnB.pst`, se producirá un error en la importación de ese archivo pst. Asegúrese de que el nombre del archivo PST en el archivo CSV use el mismo caso que el archivo PST real.           | `annb.pst.pfile` <br/> |
+    | `Mailbox` <br/> |Especifica la dirección de correo electrónico del buzón en el que se importará el archivo PST.   <br/> Para importar un archivo PST a un buzón inactivo, tiene que especificar el GUID de buzón para este parámetro. Para obtener este GUID, ejecute el siguiente comando de PowerShell en Exchange Online:`Get-Mailbox -InactiveMailboxOnly <identity of inactive mailbox> | FL Guid` <br/><br/> **Nota:** En algunos casos, puede tener varios buzones con la misma dirección de correo electrónico, donde un buzón es un buzón activo y el otro buzón está en un estado eliminado temporalmente (o inactivo). En estas situaciones, ha especificado el GUID de buzón para identificar de forma exclusiva el buzón en el que se va a importar el archivo PST. Para obtener este GUID para buzones activos, ejecute el siguiente comando de PowerShell `Get-Mailbox - <identity of active mailbox> | FL Guid`:. Para obtener el GUID de los buzones eliminados temporalmente (o inactivos), ejecute este comando`Get-Mailbox - <identity of soft-deleted or inactive mailbox> -SoftDeletedMailbox | FL Guid`           | `annb@contoso.onmicrosoft.com` <br/> O bien  <br/>  `2d7a87fe-d6a2-40cc-8aff-1ebea80d4ae7` <br/> |
+    | `IsArchive` <br/> | Especifica si se va a importar o no el archivo PST en el buzón de archivo del usuario. Hay dos opciones:<br/> **False** Importa el archivo PST en el buzón de correo principal del usuario.  <br/> **True** Importa el archivo PST en el buzón de archivo del usuario.  <br/>  Si deja este parámetro en blanco, el archivo PST se importa al buzón de correo principal del usuario.  <br/><br/> **Nota:** Para importar un archivo PST a un buzón de archivo basado en la nube para un usuario cuyo buzón de correo principal es local, solo especifique **true** para este parámetro y especifique la dirección de correo electrónico del buzón local del usuario para `Mailbox` el parámetro.           | `FALSE` <br/> O bien  <br/>  `TRUE` <br/> |
+    | `TargetRootFolder` <br/> | Especifica la carpeta de buzón de correo a la que se importa el archivo PST.  <br/>  Si deja este parámetro en blanco, el archivo PST se importará a una nueva carpeta **** denominada importada que se encuentre en el nivel raíz del buzón de correo (el mismo nivel que la carpeta Bandeja de entrada y las otras carpetas de buzón de correo predeterminadas).  <br/>  Si especifica `/`, los elementos del archivo pst se importarán directamente en la carpeta Bandeja de entrada del usuario.  <br/>  Si especifica `/<foldername>`, los elementos del archivo pst se importarán a una subcarpeta denominada * \<nombreDeCarpeta\> * . Por ejemplo, si usa `/ImportedPst`, los elementos se importarán a una subcarpeta denominada **ImportedPst**. Esta subcarpeta se ubicará en la carpeta Bandeja de entrada del usuario.<br/><br/> **Sugerencia:** Considere la posibilidad de ejecutar algunos lotes de prueba para experimentar con este parámetro, de modo que pueda determinar la mejor ubicación de la carpeta en la que se van a importar los archivos PST.           |(se deja en blanco)  <br/> O bien  <br/>  `/` <br/> O bien  <br/>  `/ImportedPst` <br/> |
+    | `ContentCodePage` <br/> |Este parámetro opcional especifica un valor numérico para la página de códigos que se va a usar para importar archivos PST en el formato de archivo ANSI. Este parámetro se usa para importar archivos PST desde organizaciones de chino, Japonés y Coreano (CJK) porque estos idiomas suelen usar un juego de caracteres de doble byte (DBCS) para la codificación de caracteres. Si este parámetro no se usa para importar archivos PST para idiomas que usan DBCS para nombres de carpeta de buzón de correo, los nombres de carpeta suelen ser ilegibles una vez importados. Para obtener una lista de los valores admitidos que se deben usar para este parámetro, consulte identificadores de [Página de códigos](https://go.microsoft.com/fwlink/p/?LinkId=328514).<br/><br/> **Nota:** Como se mencionó anteriormente, este es un parámetro opcional y no es necesario incluirlo en el archivo CSV. O puede incluirlo y dejar el valor en blanco para una o más filas.           |(se deja en blanco)  <br/> O bien  <br/>  `932`(que es el identificador de la página de códigos para ANSI/OEM japonés)  <br/> |
     | `SPFileContainer` <br/> |Para la importación de archivos PST, deje este parámetro en blanco.   <br/> |No aplicable  <br/> |
     | `SPManifestContainer` <br/> |Para la importación de archivos PST, deje este parámetro en blanco.   <br/> |No aplicable  <br/> |
     | `SPSiteUrl` <br/> |Para la importación de archivos PST, deje este parámetro en blanco.   <br/> |No aplicable  <br/> |
   
 ## <a name="step-8-create-a-pst-import-job-in-office-365"></a>Paso 8: crear un trabajo de importación de PST en Office 365
 
-El último paso es crear el trabajo de importación de PST en el servicio de importación en Office 365. Como se explica anteriormente, se enviará el archivo de asignación de importación de PST que creó en el paso 7. Después de crear el nuevo trabajo, el servicio de importación utilizará la información en el archivo de asignación para Naciones Unidas-cifrar e importar los archivos PST (que ha cargado en Office 365 en el paso 5) para el buzón del usuario especificado. 
+El último paso consiste en crear el trabajo de importación de PST en el servicio de importación en Office 365. Como se ha explicado anteriormente, enviará el archivo de asignación de importaciones de PST que creó en el paso 7. Después de crear el nuevo trabajo, el servicio de importación usará la información del archivo de asignación para descifrar e importar los archivos PST (que ha cargado en Office 365 en el paso 5) al buzón de usuario especificado. 
   
 1. Vaya a [https://protection.office.com](https://protection.office.com).
     
-2. Inicie sesión en Office 365 con las credenciales para una cuenta de administrador de la organización de Office 365.
+2. Inicie sesión en Office 365 con las credenciales de una cuenta de administrador de su organización de Office 365.
     
-3. En el panel izquierdo, haga clic en **el gobierno de datos** y, a continuación, haga clic en **Importar**.
+3. En el panel izquierdo, haga clic en **gobierno de datos** y, a continuación, haga clic en **importar**.
     
 4. En la página **Importar**, haga clic en **Ir al servicio de importación**.
     
-5. En la página **Importar datos a Office 365** , haga clic en **nuevo trabajo**![icono Agregar](media/ITPro-EAC-AddIcon.gif)y, a continuación, haga clic en **mensajes de correo electrónico de carga (archivos PST)**.
+5. en la página **importar datos a Office 365** , haga clic en **nuevo**![icono](media/ITPro-EAC-AddIcon.gif)agregar trabajo y, a continuación, haga clic en **cargar mensajes de correo electrónico (archivos PST)**.
     
 6. En la página **Cargar archivos a través de la red**, marque las casillas **Terminé de cargar mis archivos** y **Tengo acceso al archivo de asignación** y haga clic en **Siguiente**.  
     
 7. Escriba un nombre para el trabajo de importación de PST y haga clic en **Siguiente**.
     
-8. Haga clic en **Agregar** ![icono Agregar](media/ITPro-EAC-AddIcon.gif) para seleccionar el archivo de asignación de PST que creó en el paso 7. 
+8. Haga **** ![clic en agregar](media/ITPro-EAC-AddIcon.gif) icono para agregar para seleccionar el archivo de asignación de PST que creó en el paso 7. 
     
 9. Cuando el nombre del archivo CSV aparezca en la lista, selecciónelo y haga clic en **Validar** para comprobar si hay errores en el archivo CSV.  
     
     > [!NOTE]
-    > Explica como anterior, cuando se cifran los archivos PST, un `.pfile` extensión se anexa al nombre del archivo PST. Debe agregar el `.pfile` los archivos de extensión en el nombre de los archivos PST en el archivo CSV. Si no lo hace, se producirá un error en la validación del archivo CSV. 
+    > Como se explicó anteriormente, cuando se cifran los archivos PST `.pfile` , se anexa una extensión al nombre del archivo pst. Debe agregar la `.pfile` extensión al nombre de los archivos PST en el archivo CSV. Si no lo hace, se producirá un error en la validación del archivo CSV. 
   
     El archivo CSV debe estar validado correctamente para poder crear un trabajo de importación de PST. Si se produce un error en la validación, haga clic en el vínculo **No válido** de la columna **Estado**. Se abrirá una copia del archivo de asignación de importaciones de PST, con un mensaje de error para todas las filas del error en el que se produjo el error. 
     
@@ -403,9 +403,9 @@ El último paso es crear el trabajo de importación de PST en el servicio de imp
     
 11. Haga clic en **Finalizar** para enviar el trabajo. 
     
-    El trabajo se muestra en la lista de trabajos de importación de PST en la página **Importar datos a Office 365** . 
+    El trabajo se muestra en la lista de trabajos de importación de PST en la página **importar datos a Office 365** . 
     
-12. Seleccione el trabajo y haga clic en **Actualizar**![icono de actualización](media/O365-MDM-Policy-RefreshIcon.gif) para actualizar la información de estado que se muestra en el panel de detalles. 
+12. Seleccione el trabajo y haga ****![clic en actualizar](media/O365-MDM-Policy-RefreshIcon.gif) icono de actualización para actualizar la información de estado que se muestra en el panel de detalles. 
     
 13. En el panel de detalles, haga clic en **Ver detalles** para obtener el último estado del trabajo seleccionado. 
  
@@ -413,7 +413,7 @@ El último paso es crear el trabajo de importación de PST en el servicio de imp
 
 - ¿Por qué importar archivos PST a Office 365?
     
-  - Es una buena forma de migrar correo electrónico de su organización a Office 365.
+  - Es una buena forma de migrar el correo electrónico de su organización a Office 365.
     
   - Ayuda a satisfacer las necesidades de cumplimiento de la organización, ya que le permite:
     
@@ -425,13 +425,13 @@ El último paso es crear el trabajo de importación de PST en el servicio de imp
     
   - Usar directivas de retención para controlar el tiempo durante el que se conserva el contenido de los buzones.
     
-  - Busque en el registro de auditoría de Office 365 para eventos relacionados con el buzón de correo.
+  - Busque en el registro de auditoría de Office 365 los eventos relacionados con el buzón.
     
-  - Ayuda a proteger contra la pérdida de datos. Los archivos PST que se importan a buzones de correo de Office 365 heredan las características de alta disponibilidad de Exchange Online, en lugar de almacenar los datos en el equipo del usuario.
+  - Ayuda a proteger contra la pérdida de datos. Los archivos PST que se importan a los buzones de correo de Office 365 heredan las características de alta disponibilidad de Exchange Online, en lugar de almacenar los datos en el equipo de un usuario.
     
   - Los datos están disponibles para el usuario en todos los dispositivos, ya que se almacenan en la nube.
     
-- Este es un ejemplo de las claves, los identificadores y las direcciones URL que se obtienen en los pasos 2, 3 y 4. En este ejemplo se también contiene la sintaxis para el comando que se ejecuta en la herramienta O365ImportTool.exe para cifrar y los archivos PST de carga para Office 365. Asegúrese de tomar precauciones para proteger estos simplemente como haría proteger las contraseñas u otra información relacionada con la seguridad.
+- A continuación, se muestra un ejemplo de las claves, los identificadores y las direcciones URL que se obtienen en los pasos 2, 3 y 4. Este ejemplo también contiene la sintaxis del comando que se ejecuta en la herramienta O365ImportTool. exe para cifrar y cargar los archivos PST a Office 365. Asegúrese de tomar precauciones para protegerlas exactamente como lo haría para proteger las contraseñas u otra información relacionada con la seguridad.
     
   ```
   Symmetric key: l+R+Umc5RGmSBh1oW+DoyMxm/h5h2JJXFcNOFiNp867=
@@ -455,10 +455,10 @@ El último paso es crear el trabajo de importación de PST en el servicio de imp
   O365ImportTool.exe /srcdir:\\FILESERVER01\PSTs /protect-rmsserver:"https://afcbd8ec-cb2b-4a1a-8246-0b4bc22d1978.rms.na.aadrm.com/_wmcs/licensing" /protect-tenantid:42745b33-2a5c-4726-8a2a-ca43caa0f74b /protect-ownerid:45beb445-4d06-47df-8e61-6ca1a88a080e /protect-key:"l+R+Umc5RGmSBh1oW+DoyMxm/h5h2JJXFcNOFiNp867=" /transfer:upload /upload-dest:"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata/EncryptedPSTs" /upload-destSAS:"?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"
   ```
 
-- Como se explica anteriormente, el servicio Office 365 importación activa la suspensión de retención establecer (durante un tiempo indefinido) después de que se importan los archivos PST en un buzón de correo. Esto significa que la propiedad *RentionHoldEnabled* está establecida en `True` para que no se procesará la directiva de retención asignada al buzón. Esto proporciona a la hora de propietario de buzón de correo para administrar los mensajes recién importadas al impedir que una eliminación o directiva de archivo eliminar o archivar los mensajes antiguos. Estos son algunos pasos que puede seguir para administrar la suspensión de retención: 
+- Como se explicó anteriormente, el servicio de importación de Office 365 activa la opción de espera de retención (por una duración indefinida) después de que los archivos PST se hayan importado a un buzón. Esto significa que la propiedad *RentionHoldEnabled* se establece `True` en para que no se procese la Directiva de retención asignada al buzón. Esto le da al propietario del buzón de correo el tiempo de administrar los mensajes recién importados al impedir que una directiva de eliminación o de archivo elimine o Archive mensajes más antiguos. Estos son algunos de los pasos que puede seguir para administrar esta suspensión de retención: 
     
-  - Después de un determinado período de tiempo, puede desactivar la suspensión de retención mediante la ejecución de la `Set-Mailbox -RetentionHoldEnabled $false` comando. Para obtener instrucciones, vea [conservación un buzón de correo en retención](https://go.microsoft.com/fwlink/p/?LinkId=544749).
+  - Después de un período de tiempo determinado, puede desactivar la suspensión de la retención mediante la `Set-Mailbox -RetentionHoldEnabled $false` ejecución del comando. Para obtener instrucciones, vea [poner un buzón de correo en suspensión de retención](https://go.microsoft.com/fwlink/p/?LinkId=544749).
     
-  - Puede configurar la suspensión de retención para que está desactivado en una fecha en el futuro. Para ello, ejecuta el `Set-Mailbox -EndDateForRetentionHold <date>` comando. Por ejemplo, suponiendo que la fecha de hoy es 1 de julio de 2016 y desea que la suspensión de retención desactivada en 30 días, se ejecute el siguiente comando: `Set-Mailbox -EndDateForRetentionHold 8/1/2016`. En este escenario, dejaría la propiedad *RentionHoldEnabled* establecida en `True`. Para obtener más información, consulte [Set-Mailbox](https://go.microsoft.com/fwlink/p/?LinkId=150317).
+  - Puede configurar la suspensión de la retención para que esté desactivada en alguna fecha en el futuro. Para ello, ejecute el `Set-Mailbox -EndDateForRetentionHold <date>` comando. Por ejemplo, suponiendo que la fecha de hoy es el 1 de julio de 2016 y desea que la suspensión de la retención esté desactivada en 30 días, `Set-Mailbox -EndDateForRetentionHold 8/1/2016`ejecutaría el siguiente comando:. En este escenario, dejaría la propiedad *RentionHoldEnabled* establecida en `True`. Para obtener más información, vea [set-Mailbox](https://go.microsoft.com/fwlink/p/?LinkId=150317).
     
-  - Puede cambiar la configuración de la directiva de retención que se asigna al buzón para que no se elimina inmediatamente los elementos más antiguos que se han importado o movidos al buzón de archivo del usuario. Por ejemplo, podría aumentar la antigüedad de retención para una directiva de eliminación o un archivo que se asigna al buzón. En este escenario, debería desactivar la suspensión de retención en el buzón de correo después de cambiar la configuración de la directiva de retención. Para obtener más información, vea [Configurar una directiva de eliminación y de archivo para los buzones de correo en la organización de Office 365](set-up-an-archive-and-deletion-policy-for-mailboxes.md).
+  - Puede cambiar la configuración de la Directiva de retención asignada al buzón para que los elementos más antiguos que se hayan importado no se eliminen inmediatamente ni se muevan al buzón de archivo del usuario. Por ejemplo, puede alargar la antigüedad de retención de una directiva de eliminación o archivo asignada al buzón. En este escenario, se desactiva la suspensión de la retención en el buzón de correo después de cambiar la configuración de la Directiva de retención. Para obtener más información, consulte [configurar una directiva de archivo y eliminación para buzones en la organización de Office 365](set-up-an-archive-and-deletion-policy-for-mailboxes.md).

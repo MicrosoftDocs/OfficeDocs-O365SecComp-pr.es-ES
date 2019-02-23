@@ -1,10 +1,27 @@
 ---
-title: "cifrado de datos en OneDrive para la empresa y SharePoint Online" MS. Author: krowley Author: kccross Manager: laurawi ms. Date: 7/2/2018 ms. Audience: ITPro ms. topic: información general ms. Service: O365-seccomp localization_priority: búsqueda normal. appverid: 
+title: Cifrado de datos en OneDrive para la Empresa y SharePoint Online
+ms.author: krowley
+author: kccross
+manager: laurawi
+ms.date: 7/2/2018
+ms.audience: ITPro
+ms.topic: overview
+ms.service: O365-seccomp
+localization_priority: Normal
+search.appverid:
 - SPO160
-- MET150 ms. AssetID: 6501b5ef-6bf7-43df-b60d-f65781847d6c ms. Collection:
-    - M365-Security-Compliance Description: "comprenda los elementos básicos del cifrado de seguridad de datos en OneDrive para la empresa y SharePoint Online."
+- MET150
+ms.assetid: 6501b5ef-6bf7-43df-b60d-f65781847d6c
+ms.collection:
+- M365-security-compliance
+description: Entienda los elementos básicos del cifrado de seguridad de datos en OneDrive para la Empresa y SharePoint Online.
+ms.openlocfilehash: a43db3da6e4663aee4437689ff51276972298872
+ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 02/23/2019
+ms.locfileid: "30223219"
 ---
-
 # <a name="data-encryption-in-onedrive-for-business-and-sharepoint-online"></a>Cifrado de datos en OneDrive para la Empresa y SharePoint Online
 
 Entienda los elementos básicos del cifrado de seguridad de datos en OneDrive para la Empresa y SharePoint Online.
