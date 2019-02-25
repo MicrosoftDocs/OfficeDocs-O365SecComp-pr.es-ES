@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Las etiquetas de retención de Office 365 ayudan a realizar las acciones adecuadas en el contenido adecuado. Con las etiquetas de retención, puede clasificar los datos de su organización para administrarlos mejor y aplicar reglas de retención basadas en esa clasificación. También puede usar etiquetas de retención para implementar la administración de registros en Office 365.
-ms.openlocfilehash: 7f8ab61a4d42f1a032f19110ccd1d12f833c0737
-ms.sourcegitcommit: 7e2a0185cadea7f3a6afc5ddc445eac2e1ce22eb
+ms.openlocfilehash: 6599c9daf3cd2dc7c7c22179c132e58ba28aa487
+ms.sourcegitcommit: 942726b33ba67f2b89b5c593ccd534af6715c8b9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "29614504"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "30202771"
 ---
 # <a name="overview-of-retention-labels"></a>Introducción a las etiquetas de retención
 
@@ -229,8 +229,12 @@ También puede crear una vista de la biblioteca que contenga la columna **Etique
 ### <a name="office-365-groups"></a>Grupos de Office 365
 
 Al publicar etiquetas de retención en un grupo de Office 365, las etiquetas de retención aparecen tanto en el sitio de grupo como en el buzón de grupo de Outlook en la Web. La experiencia de aplicar una etiqueta de retención al contenido es idéntica a la que se muestra anteriormente para el correo electrónico y los documentos.
+
+Para conservar el contenido de un grupo de Office 365, necesita usar la ubicación de los grupos de Office 365. Aunque un grupo de Office 365 tiene un buzón de Exchange, una directiva de retención que incluya la ubicación completa de Exchange no incluye contenido en buzones de grupo de Office 365.
+
+Además, no es posible usar la ubicación de Exchange para incluir o excluir un buzón de grupo específico. Aunque la ubicación de Exchange inicialmente permite la selección de un buzón de grupo, cuando intenta guardar la directiva de retención, recibirá el error que "RemoteGroupMailbox" no es una selección válida para la ubicación de Exchange.
   
-## <a name="applying-a-retention-label-automatically-based-on-conditions"></a>Aplicar automáticamente una etiqueta de retención basándose en condiciones
+## <a name="applying-a-retention-label-automatically-based-on-conditions"></a>Aplicar automáticamente una etiqueta de retención según las condiciones
 
 Una de las características más útiles de las etiquetas de retención es la capacidad de aplicarlas automáticamente a contenido que coincida con determinadas condiciones. En ese caso, los usuarios de su organización no necesitan aplicar las etiquetas de retención: Office 365 lo hace automáticamente.
   
