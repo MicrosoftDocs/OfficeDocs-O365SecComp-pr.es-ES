@@ -12,14 +12,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
 description: Descubra cómo las capacidades de inteligencia sobre amenazas de la protección contra amenazas avanzada pueden ayudarle a investigar las amenazas contra su organización, responder a malware, suplantación de identidad (phishing) y otros ataques que Office 365 ha detectado en su nombre y buscar indicadores de amenazas.
-ms.openlocfilehash: a55a17bae141c394ba01e1526615c5c1687340a2
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 81a986c4b47d740313356b22fd1c23bd5e472a24
+ms.sourcegitcommit: 1c73c2f83703af0a30a5b0633db00d8e0e6b39b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216560"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "30241933"
 ---
 # <a name="office-365-threat-intelligence"></a>Inteligencia sobre amenazas de Office 365
 

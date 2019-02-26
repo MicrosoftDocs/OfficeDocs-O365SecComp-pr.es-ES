@@ -12,14 +12,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
 description: Obtenga información sobre cómo usar la inteligencia de amenazas para buscar y investigar correo electrónico malintencionado.
-ms.openlocfilehash: adf4066b5119f131b90dc88b99be4011582931c2
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: d5b08338bc0a3a6a88ea498861ab9e27522b759d
+ms.sourcegitcommit: 1c73c2f83703af0a30a5b0633db00d8e0e6b39b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215500"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "30241912"
 ---
 # <a name="find-and-investigate-malicious-email-that-was-delivered-office-365-threat-intelligence"></a>Buscar e investigar el correo electrónico malintencionado que se entregó (inteligencia de amenazas de Office 365)
 

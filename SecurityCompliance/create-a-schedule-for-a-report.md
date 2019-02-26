@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: a74f637b-3710-4c41-b70f-b5a812929a81
 description: Obtenga información sobre cómo configurar una programación para un informe en el centro &amp; de seguridad y cumplimiento.
-ms.openlocfilehash: 25e8ee175314c5447da95d3636236d1682479c70
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: f3730c6f2bd6a7c307cd17c0894116b1e8328dc9
+ms.sourcegitcommit: 1c73c2f83703af0a30a5b0633db00d8e0e6b39b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216760"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "30241872"
 ---
 # <a name="create-a-schedule-for-a-report-in-the-security-amp-compliance-center"></a>Crear una programación para un informe en el centro &amp; de seguridad y cumplimiento
 
@@ -45,7 +45,7 @@ En el centro &amp; de seguridad y cumplimiento, hay disponibles varios [informes
   
     Si opta por personalizar la programación del informe, puede especificar la frecuencia del informe, la dirección de correo electrónico del remitente y la dirección de correo electrónico del destinatario. 
     
-Una vez que haya creado una programación para un informe, ese informe se entregará a través del correo electrónico a las direcciones emali de los destinatarios de forma automática. 
+Una vez que haya creado una programación para un informe, ese informe se entregará a través del correo electrónico a las direcciones de correo electrónico de los destinatarios automáticamente. 
   
 ## <a name="related-topics"></a>Temas relacionados
 
