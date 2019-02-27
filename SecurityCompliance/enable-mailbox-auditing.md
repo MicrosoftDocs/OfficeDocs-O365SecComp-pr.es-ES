@@ -7,18 +7,20 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 description: En Office 365, puede activar el registro de auditoría de buzones para registrar el acceso a buzones por parte de los propietarios, delegados y administradores de buzones de correo. De forma predeterminada, la auditoría de buzones de correo en Office 365 no está activada. Después de habilitar el registro de auditoría de buzones de correo para un buzón de correo, puede buscar en el registro de auditoría de Office 365 actividades realizadas en el buzón.
-ms.openlocfilehash: bb110e95d27feb8ae82b62803d218a2b38528692
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: a9bc84bad8532dd546d5ce3e2f149151967050d6
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214610"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30295923"
 ---
 # <a name="enable-mailbox-auditing-in-office-365"></a>Habilitar la auditoría de buzones de correo en Office 365
   
@@ -100,7 +102,7 @@ En este ejemplo se agregan las acciones de propietario **MailboxLogin**, **HardD
 Get-Mailbox -ResultSize Unlimited -Filter {RecipientTypeDetails -eq "UserMailbox"} | Set-Mailbox -AuditOwner @{Add="MailboxLogin","HardDelete","SoftDelete"}
 ```
   
-## <a name="how-do-you-know-this-worked"></a>¿Cómo saber si el proceso se ha completado correctamente?
+## <a name="how-do-you-know-this-worked"></a>¿Cómo saber si el proceso se completó correctamente?
 
 Para comprobar que se haya habilitado correctamente el registro de auditoría de buzones de correo, utilice el cmdlet **Get-Mailbox** para recuperar la configuración de auditoría de ese buzón. 
   

@@ -1,7 +1,7 @@
 ---
-title: Evitar los caracteres no válidos en la directiva de filtro de correo y las reglas de filtro de spam
-ms.author: krowley
-author: kccross
+title: Evitar caracteres no válidos en las reglas de filtro de correo no deseado y la Directiva de filtro de correo no deseado
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 9/24/2018
 ms.audience: ITPro
@@ -10,40 +10,42 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
-description: Proporciona ayuda para los administradores que tienen caracteres no válidos en su configuración contra correo no deseado y ejecutan en problemas cuando se intenta usar la seguridad &amp; centro de cumplimiento.
-ms.openlocfilehash: ca409b4daa7bec01417adb7cbfdfa2a128929e81
-ms.sourcegitcommit: c168410974bc90aaf55f1dcaa9e05c09b2b78d76
+ms.collection:
+- M365-security-compliance
+description: Proporciona ayuda a los administradores que tienen caracteres no válidos en la configuración contra correo no deseado y tienen problemas al intentar usar el centro &amp; de seguridad y cumplimiento.
+ms.openlocfilehash: 90cf89d019a34658b676f02baa84c70f27200262
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "25018739"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30276085"
 ---
-# <a name="avoid-invalid-characters-in-your-spam-filter-rules-and-spam-filter-policy"></a>Evitar los caracteres no válidos en las reglas de filtro de spam y directiva de filtro de correo no deseado 
+# <a name="avoid-invalid-characters-in-your-spam-filter-rules-and-spam-filter-policy"></a>Evitar caracteres no válidos en las reglas de filtro de correo no deseado y Directiva de filtro de correo no deseado 
 
-Anteriormente, los administradores de Office 365 configuración y configurar la directiva de filtro de correo y las reglas de filtro de spam mediante el centro de administración de Exchange (EAC). Ahora, use la seguridad &amp; centro de cumplimiento para administrar la su configuración contra correo no deseada. Los siguientes caracteres se admitían en el CEF pero no son compatibles para su uso en la seguridad &amp; centro de cumplimiento.  
+Anteriormente, los administradores de Office 365 instalaron y configuraron reglas de filtro de correo no deseado y la Directiva de filtro de correo no deseado mediante el centro de administración de Exchange (EAC). Ahora, puede usar el centro &amp; de seguridad y cumplimiento para administrar la configuración contra correo no deseado. Los siguientes caracteres se admitiron en el EAC, pero no se admiten para su &amp; uso en el centro de seguridad y cumplimiento.  
 
 **Caracteres no válidos:**
   
 ```\ % & * + / = ? { } | < > ( ) ; : , [ ] "```
 
-Si las reglas de filtro de spam o la directiva de filtro de spam contiene cualquiera de los caracteres no válidos, se podrían encontrarse con cualquier o todos estos problemas:
-- Es posible que no se puede encontrar la directiva o las reglas en la seguridad &amp; centro de cumplimiento.
-- Es posible que reciba errores al intentar obtener las reglas o directivas mediante Windows PowerShell.
-- Es posible que la directiva o configuración de no ejecutar o realizar según lo previsto.
+Si las reglas de filtro de correo no deseado o la Directiva de filtro de correo no deseado contienen alguno de los caracteres no válidos, puede encontrarse alguno o todos estos problemas:
+- Es posible que no pueda encontrar la Directiva o las reglas en el &amp; centro de seguridad y cumplimiento.
+- Es posible que reciba errores al intentar obtener las reglas o la Directiva mediante Windows PowerShell.
+- Es posible que la Directiva o la configuración no se ejecuten o no funcionen de la manera esperada.
 
-## <a name="remove-the-invalid-characters-from-the-spam-filter-policy-and-rules"></a>Quitar los caracteres no válidos de la directiva de filtro de spam y reglas
+## <a name="remove-the-invalid-characters-from-the-spam-filter-policy-and-rules"></a>Quitar los caracteres no válidos de la Directiva y reglas del filtro de correo no deseado
 
-Una vez que haya identificado la directiva y las reglas que contienen caracteres no válidos, puede cambiar los nombres mediante el uso de los cmdlets de Windows PowerShell. 
+Una vez que haya identificado la Directiva y las reglas que contienen caracteres no válidos, puede cambiar los nombres con los cmdlets de Windows PowerShell. 
 
-1. [Conectarse a Exchange Online mediante PowerShell remoto](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
+1. [Conéctese a Exchange online mediante PowerShell remoto](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
     
-2. Para cambiar el nombre de la directiva de filtro de spam, ejecute el cmdlet Set-HostedContentFilterPolicy como sigue:
+2. Para cambiar el nombre de la Directiva de filtro de correo no deseado, ejecute el cmdlet Set-HostedContentFilterPolicy de la siguiente manera:
     
     ```
     Set-HostedContentFilterPolicy -Identity "Old policy name" -Name "New policy name"
     ```  
 
-3. Para cambiar el nombre de una regla de filtro de spam, ejecute el cmdlet Set-HostedContentFilterRule como sigue:
+3. Para cambiar el nombre de una regla de filtro de correo no deseado, ejecute el cmdlet Set-HostedContentFilterRule de la siguiente manera:
     
     ```
     Set-HostedContentFilterRule -Identity "Old rule name" -Name "New rule name"
@@ -52,7 +54,7 @@ Una vez que haya identificado la directiva y las reglas que contienen caracteres
   
  ## <a name="for-more-information"></a>Más información
 
-[Administración de la seguridad de amenazas &amp; centro de cumplimiento](threat-management.md)
+[Administración de amenazas en el &amp; centro de seguridad y cumplimiento](threat-management.md)
   
 [Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/set-hostedcontentfilterpolicy?view=exchange-ps)
 

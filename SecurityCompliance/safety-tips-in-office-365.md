@@ -1,7 +1,7 @@
 ---
 title: Sugerencias de seguridad en los mensajes de correo electrónico en Office 365
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: scotv
 ms.date: 10/6/2016
 ms.audience: Admin
@@ -12,13 +12,15 @@ search.appverid:
 - MET150
 - BCS160
 ms.assetid: fb4f8e49-0468-4be2-8fa6-99501f1ad9d5
+ms.collection:
+- M365-security-compliance
 description: Presenta sugerencias de seguridad para los mensajes de correo filtrados por el filtro de correo no deseado de EOP y Office 365.
-ms.openlocfilehash: 54f41d1ae0b7d0ca883bf6be7e2dbe006536d1aa
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: d85eb0bde24220fbbfc12e7b5f01acec69571dee
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214310"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30276290"
 ---
 # <a name="safety-tips-in-email-messages-in-office-365"></a>Sugerencias de seguridad en los mensajes de correo electrónico en Office 365
 
@@ -58,7 +60,7 @@ Las sugerencias de seguridad siempre están habilitadas para Outlook en la web, 
   
 Si no está de acuerdo con el modo en que Office 365 y EOP clasificaron un mensaje (es decir, no es correo no deseado o no es legítimo), puede enviar los mensajes para su análisis para mejorar su experiencia. Para obtener más información, vea [informar sobre correo no deseado y estafas de suplantación de identidad en Outlook en la web](https://technet.microsoft.com/library/dn594557.aspx). También puede hacer clic en el vínculo comentarios de la sugerencia de seguridad para enviar comentarios directamente a Microsoft para ayudarnos a mejorar.
   
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Habilitar o deshabilitar las sugerencias de seguridad en Office 365](enable-or-disable-safety-tips.md)
 

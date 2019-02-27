@@ -7,18 +7,20 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Use el centro de cumplimiento de & de seguridad de Office 365 para buscar en el registro de auditoría unificado para ver la actividad del usuario y del administrador de la organización de Office 365. '
-ms.openlocfilehash: 5fe4eac59f3e60e75a7452b0dcc51b6b8ca88a5b
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: 6cab2a0495b4c4b1976a5c45b898603653568599
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223769"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296613"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security--compliance-center"></a>Buscar el registro de auditoría en el centro de seguridad & cumplimiento de Office 365
 
@@ -54,6 +56,8 @@ ms.locfileid: "30223769"
 - Actividad de usuario y administrador en Microsoft Stream
 
 - Actividades de Analista y administración en Microsoft Workplace Analytics
+
+- Actividad de usuario y administrador en PowerApps
     
    
 ## <a name="before-you-begin"></a>Antes de empezar
@@ -295,8 +299,8 @@ Haga clic en uno de los siguientes vínculos para ir a una tabla específica.
 |[Actividades de administración de aplicaciones](#application-administration-activities) <br/> |[Actividades de administración de roles](#role-administration-activities) <br/> |[Actividades de administración de directorios](#directory-administration-activities) <br/> |
 |[actividades de eDiscovery](#ediscovery-activities) <br/> |[Actividades de Power BI](#power-bi-activities) <br/> |[Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)<br/>|
 [Actividades de Microsoft Teams](#microsoft-teams-activities) <br/> |[Actividades de Yammer](#yammer-activities) <br/> |[Microsoft Flow](#microsoft-flow) <br/> 
-|[Microsoft Stream](#microsoft-stream) <br/>|[Actividades de administración de Exchange](#exchange-admin-audit-log)<br/>
-||||
+|[Microsoft PowerApps](#microsoft-powerapps)<br/>|[Microsoft Stream](#microsoft-stream) <br/>|[Actividades de administración de Exchange](#exchange-admin-audit-log)<br/>|
+|||
    
   
 ### <a name="file-and-page-activities"></a>Actividades de archivo y página
@@ -663,6 +667,9 @@ En la siguiente tabla se enumeran las actividades de usuario y de administrador 
 
 Puede buscar en el registro de auditoría actividades de Microsoft Flow. Estas actividades incluyen la creación, edición y eliminación de flujos y el cambio de los permisos de flujo. Para obtener información sobre la auditoría de actividades de flujo, vea el blog [eventos de auditoría de Microsoft Flow ahora disponibles en el centro de seguridad _AMP_ cumplimiento de Office 365](https://flow.microsoft.com/blog/security-and-compliance-center).
 
+### <a name="microsoft-powerapps"></a>Microsoft PowerApps
+
+Puede buscar en el registro de auditoría las actividades relacionadas con la aplicación en PowerApps. Estas actividades incluyen la creación, el inicio y la publicación de una aplicación. también se audita la asignación de permisos a las aplicaciones. Para obtener una descripción de todas las actividades de PowerApps, consulte [registro de actividades para PowerApps](https://docs.microsoft.com/en-us/power-platform/admin/logging-powerapps#what-events-are-audited).
 
 ### <a name="microsoft-stream"></a>Microsoft Stream
   

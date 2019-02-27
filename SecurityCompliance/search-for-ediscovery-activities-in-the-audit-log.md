@@ -7,16 +7,17 @@ ms.date: 10/24/2017
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
+ms.collection: M365-security-compliance
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
 description: Obtenga información sobre cómo buscar en el registro de auditoría de Office 365 eventos que se registran cuando los administradores de cumplimiento realizan tareas de caso de &amp; exhibición de documentos electrónicos y búsqueda de contenido en el centro de seguridad y cumplimiento.
-ms.openlocfilehash: 1e364e1d82acb7ad72c4a6d3fb27421a9a89916c
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: f4778fd2aab48d58b3104dd2466875ba53e2c0a0
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220900"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296763"
 ---
 # <a name="search-for-ediscovery-activities-in-the-office-365-audit-log"></a>Buscar actividades de eDiscovery en el registro de auditoría de Office 365
 

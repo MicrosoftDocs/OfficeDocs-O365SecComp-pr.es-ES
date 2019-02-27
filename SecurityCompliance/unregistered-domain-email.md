@@ -1,7 +1,7 @@
 ---
 title: Correo electrónico de dominio no registrado
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 10/17/2018
 ms.audience: Admin
@@ -11,13 +11,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
+ms.collection:
+- M365-security-compliance
 description: Si envía un gran volumen de correo electrónico de dominio no registrado, corre el riesgo de que se bloquee el correo electrónico. Lea este artículo para obtener más información.
-ms.openlocfilehash: bef39780438a6d9669354bddaed391b2364badf8
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 8120bd147da2a7aab41ae14c444d2fe57242199e
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220780"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30276230"
 ---
 # <a name="unregistered-domain-email-what-you-need-to-know"></a>Correo electrónico de dominio no registrado: lo que debe saber
 

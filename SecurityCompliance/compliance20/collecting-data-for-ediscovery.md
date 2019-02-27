@@ -8,18 +8,18 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: ''
+ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 2e9e7836a2dc777410b88ffac1aea0c5137b7b89
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: bcc307cc08954dd3cc69e8905747393d79f97b04
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219000"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30297103"
 ---
 # <a name="collect-data-for-a-case-in-advanced-ediscovery-preview"></a>Recopilar datos para un caso en eDiscovery avanzado (versión preliminar)
 

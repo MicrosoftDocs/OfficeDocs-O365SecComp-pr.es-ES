@@ -8,15 +8,16 @@ ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MET150
+mscollection: M365-security-compliance
 ms.custom: Adm_O365
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
 description: Para los informes de cumplimiento normativo de Office 365, Azure y Dynamics 365, para ver auditorías de terceros, averiguar cómo Microsoft mantiene seguros los datos de los clientes y cómo se puede cumplir con ISO, HIPAA, NIST, FINRA, RGPD y FedRAMP cuando se usan estos servicios en línea.
-ms.openlocfilehash: 6a34fd325934d76271f5ce3a4d760580de830457
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: e4b3d1497b2dcf3a079dbe60f742e902ab45544c
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220260"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296693"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Empezar a trabajar con el Portal de confianza del servicio de Microsoft
 
@@ -117,7 +118,7 @@ Funciones administrativas que solo están disponibles para la cuenta de administ
   
  La página de **configuración** le permite asignar el acceso basado en roles al administrador de cumplimiento. Para obtener más información, consulte la sección sobre el control de acceso basado en permisos y roles en [use el administrador de cumplimiento como ayuda para cumplir los requisitos normativos y de protección de datos al usar los servicios en la nube de Microsoft](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#permissions-and-role-based-access-control).
   
-### <a name="search"></a>Búsqueda
+### <a name="search"></a>Buscar
 
 Haga clic en la lupa de la esquina superior derecha de la página portal de confianza de servicios para expandir el cuadro, escriba los términos de búsqueda y presione **entrar**.
 

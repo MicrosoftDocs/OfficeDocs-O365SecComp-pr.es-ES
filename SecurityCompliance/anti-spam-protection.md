@@ -15,12 +15,12 @@ ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre la configuración y los filtros contra correo no deseado que le ayudarán a evitar el correo no deseado en Exchange Online y Office 365. ¿Obtengo mucho correo no deseado en Office 365? Puede personalizar los filtros de correo no deseado y la configuración de la Directiva contra correo no deseado.
-ms.openlocfilehash: 2d8f433cabda4408da2e29b7bc6570e09e6989dd
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: f4d32bb0efae0a38fdc6789feef73bd5014eb75b
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223429"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296323"
 ---
 # <a name="office-365-email-anti-spam-protection"></a>Protección contra correo no deseado de Office 365
 
@@ -75,7 +75,7 @@ Si está preocupado por el correo no deseado, la suplantación de identidad (phi
   
 [Impedir falsos positivos de correo electrónico marcado como correo no deseado con una lista segura u otras técnicas](prevent-email-from-being-marked-as-spam-0.md)
   
-[Cómo configurar el filtrado de correo no deseado de Office 365 para ayudar a bloquear los mensajes de correo no deseado](block-email-spam-to-prevent-false-negatives.md)
+[Cómo configurar el filtrado de correo no deseado de Office 365 para ayudar a bloquear los mensajes de correo no deseado](reduce-spam-email.md)
   
 [¿Cuál es la diferencia entre correo electrónico no deseado y correo electrónico masivo?](https://technet.microsoft.com/library/dn720441%28v=exchg.150%29.aspx)
   

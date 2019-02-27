@@ -7,18 +7,19 @@ ms.date: 12/20/2017
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
+ms.collection: M365-security-compliance
 ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 8c36bb03-e716-4fdd-9958-4aa7a2a1db42
 description: Los administradores pueden usar el cmdlet Search-Mailbox para buscar en buzones de usuario y, después, eliminar mensajes de un buzón.
-ms.openlocfilehash: c5f727d7772e23cc8723eee6a45e51e3ac074648
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 718a23f649843420ccfd924be72752a99278da4c
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002829"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30297133"
 ---
 # <a name="search-for-and-delete-messages---admin-help"></a>Buscar y eliminar mensajes: Ayuda para administradores
   
@@ -36,19 +37,19 @@ Como una protección adicional, primero puede copiar los mensajes en otro buzón
     
 - Tiene que tener asignados los siguientes roles de administración para buscar y eliminar los mensajes en los buzones de correo de los usuarios:
     
-  - **Búsqueda de buzones**- este rol permite buscar mensajes a través de varios buzones en la organización. Los administradores no están asignados a esta función de forma predeterminada. Para asignar manualmente este rol para que puedan buscar los buzones de correo, agregar usted mismo como miembro del grupo de roles de administración de detección. Vea [Agregar un usuario al grupo de funciones de administración de detección](http://technet.microsoft.com/library/729e09d8-614b-431f-ae04-ae41fb4c628e.aspx).
+  - **Búsqueda**en buzones: este rol permite buscar mensajes en varios buzones de la organización. De forma predeterminada, los administradores no tienen asignado este rol. Para asignarse a sí mismo este rol para que pueda buscar buzones de correo, agréguese como miembro del grupo de roles de administración de detección. Consulte [Agregar un usuario al grupo de roles de administración de detección](http://technet.microsoft.com/library/729e09d8-614b-431f-ae04-ae41fb4c628e.aspx).
     
-  - **Buzón de correo importar exportar** - este rol le permite eliminar mensajes del buzón de un usuario. De forma predeterminada, esta función no está asignada a ningún grupo de funciones. Para eliminar los mensajes de los buzones de los usuarios, puede agregar la función de exportación de importación de buzón de correo para el grupo de roles de administración de la organización. Para obtener más información, vea la sección "Adición de una función a un grupo de roles" en [Administrar grupos de roles](http://technet.microsoft.com/library/ab9b7a3b-bf67-4ba1-bde5-8e6ac174b82c.aspx) . 
+  - **Importación y exportación** de buzones: este rol permite eliminar mensajes del buzón de un usuario. De forma predeterminada, este rol no está asignado a ningún grupo de roles. Para eliminar mensajes de los buzones de los usuarios, puede Agregar el rol importación y exportación de buzones al grupo de funciones de administración de la organización. Para obtener más información, consulte la sección "agregar un rol a un grupo de roles" en [Manage role Groups](http://technet.microsoft.com/library/ab9b7a3b-bf67-4ba1-bde5-8e6ac174b82c.aspx) . 
     
 - Si el buzón desde el cual desea eliminar los mensajes tiene la recuperación de un solo elemento habilitada, primero debe deshabilitar la función. Para obtener más información, consulte [Habilitar o deshabilitar la recuperación de elementos individuales de un buzón de correo](http://technet.microsoft.com/library/2e7f1bcd-8395-45ad-86ce-22868bd46af0.aspx).
     
-- Si el buzón de correo desde la que desea eliminar los mensajes se pondrá en espera, se recomienda que compruebe con el departamento legal antes de quitar la suspensión y eliminar el contenido de los buzones o la administración de registros. Después de obtener aprobación, siga los pasos enumerados en el tema [Limpia seguridad de la carpeta elementos recuperables](http://technet.microsoft.com/library/82c310f8-de2f-46f2-8e1a-edb6055d6e69.aspx).
+- Si el buzón desde el que desea eliminar los mensajes se coloca en retención, le recomendamos que consulte a su administrador de registros o departamento legal antes de quitar la retención y eliminar el contenido del buzón. Después de obtener la aprobación, siga los pasos que se indican en el tema [Clean up the recoverAble items Folder](http://technet.microsoft.com/library/82c310f8-de2f-46f2-8e1a-edb6055d6e69.aspx).
     
 - Puede buscar en un máximo de 10 000 buzones con el cmdlet **Search-Mailbox**. Si es Exchange Online de una organización y tiene más de 10 000 buzones, puede usar la característica Búsqueda de cumplimiento (o el cmdlet **New-ComplianceSearch** correspondiente) para buscar en un número ilimitado de buzones. Después, puede usar el cmdlet **New-ComplianceSearchAction** para eliminar los mensajes encontrados por una búsqueda de cumplimiento. Para obtener más información, vea [Buscar y eliminar mensajes de correo electrónico de la organización de Office 365](https://go.microsoft.com/fwlink/p/?LinkId=786856).
     
 - Si incluye una consulta de búsqueda (utilizando el parámetro  *SearchQuery*  ), el cmdlet **Search-Mailbox** devolverá un máximo de 10 000 elementos en los resultados de búsqueda. Por tanto, si incluye una consulta de búsqueda, es posible que deba ejecutar el comando **Search-Mailbox** varias veces para eliminar más de 10 000 elementos. 
     
-- También se buscará en el buzón del usuario archivo cuando se ejecuta el cmdlet **Search-Mailbox** . De forma similar, los elementos en el buzón de archivo principal se eliminarán cuando se usa el cmdlet **Search-Mailbox** con el modificador _DeleteContent_ . Para evitar esto, puede incluir el modificador *DoNotIncludeArchive* . Además, se recomienda no usar el modificador _DeleteContent_ para eliminar los mensajes en Exchange Online buzones que tienen habilitado porque pueden producirse pérdidas de datos inesperadas el archivado ampliación automática. 
+- El buzón de archivo del usuario también se buscará cuando ejecute el cmdlet **Search-Mailbox** . De forma similar, los elementos del buzón de correo de archivo principal se eliminarán cuando use el cmdlet **Search-Mailbox** con el modificador _DeleteContent_ . Para evitarlo, puede incluir el modificador *DoNotIncludeArchive* . Además, se recomienda no usar el modificador _DeleteContent_ para eliminar los mensajes de los buzones de Exchange online que tienen habilitado el archivado de expansión automática porque se puede producir una pérdida de datos inesperada. 
     
 ## <a name="search-messages-and-log-the-search-results"></a>Buscar mensajes y registrar los resultados de la búsqueda
 

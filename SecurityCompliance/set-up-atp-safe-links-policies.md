@@ -5,7 +5,7 @@ author: denisebmsft
 manager: laurawi
 ms.audience: Admin
 ms.topic: article
-ms.date: 02/06/2019
+ms.date: 02/26/2019
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -15,12 +15,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Configure las directivas de vínculos seguros para proteger a su organización de vínculos malintencionados en archivos de Word, Excel, PowerPoint y Visio, así como en mensajes de correo electrónico.
-ms.openlocfilehash: 0cf6c22be42f11fe52a1f43d0ebef48bd639675d
-ms.sourcegitcommit: 5b5bbced1577701bdb6befc8ed252e9d9e776529
+ms.openlocfilehash: e9ab086454703113bca6e8b260ba898a5e36ef9b
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "30245606"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296833"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Configurar directivas de vínculos seguros de Office 365 ATP
 
@@ -112,8 +112,8 @@ Una vez que haya revisado (o editado) la directiva predeterminada de vínculos s
 ## <a name="step-4-learn-about-atp-safe-links-policy-options"></a>Paso 4: información sobre las opciones de directiva de vínculos seguros de ATP
 
 Al configurar o editar las directivas de vínculos seguros de ATP, verá que hay varias opciones disponibles. En caso de que se pregunte Cuáles son estas opciones, en la tabla siguiente se describe cada una de ellas y su efecto. Recuerde que hay dos tipos principales de directivas de vínculos seguros de ATP que debe definir o editar:
-- una [directiva predeterminada](#default-policy-options) que se aplica a todos los usuarios 
-- [directivas adicionales que se definen para destinatarios específicos](#policies-that-apply-to-specific-email-recipients) 
+- una [directiva predeterminada](#default-policy-options) que se aplica a todos los usuarios; y  
+- [directivas adicionales para destinatarios específicos](#policies-that-apply-to-specific-email-recipients) 
 
 ### <a name="default-policy-options"></a>Opciones de directivas preDeterminadas
 
@@ -121,8 +121,8 @@ Las opciones de directiva preDeterminadas se aplican a todos los usuarios de la 
 
 |Esta opción  |Se obtiene este resultado  |
 |---------|---------|
-| **Bloquear las siguientes direcciones URL** <br/>    | Permite a su organización tener una lista personalizada de direcciones URL que se bloquean automáticamente. Cuando los usuarios hagan clic en una dirección URL de esta lista, se les redirigirá a una [Página de advertencia](atp-safe-links-warning-pages.md) que explica por qué se bloquea la dirección URL.<br/> Para obtener más información, consulte [configurar una lista de direcciones URL bloqueadas personalizadas mediante vínculos seguros de ATP      |
-| **Office 365 proPlus, Office para iOS y Android** <br/>    | Cuando se selecciona esta opción, la protección de vínculos seguros de ATP se aplica a las direcciones URL de los documentos abiertos en Office 365 proPlus (Word, Excel y PowerPoint en Windows o Mac OS), documentos de Office en iOS o dispositivos Android, Visio 2016 en Windows y Office Online (Word Online, PowerPoint online, Excel online y OneNote online), siempre que el usuario haya iniciado sesión en Office 365. <br/><br/>Si ve solo **office 2016 en Windows**, las actualizaciones de características no han llegado a su entorno de Office 365 todavía (y estarán disponibles próximamente). Hasta entonces, la protección de vínculos seguros de ATP se aplica a Word 2016, Excel 2016, PowerPoint 2016 o Visio 2016 que se ejecutan en Windows.            |
+| **Bloquear las siguientes direcciones URL** <br/>    | Permite a su organización tener una lista personalizada de direcciones URL que se bloquean automáticamente. Cuando los usuarios hagan clic en una dirección URL de esta lista, se les redirigirá a una [Página de advertencia](atp-safe-links-warning-pages.md) que explica por qué se bloquea la dirección URL. Para obtener más información, consulte [configurar una lista de direcciones URL bloqueadas personalizadas con los vínculos seguros de Office 365 ATP](set-up-a-custom-blocked-urls-list-wtih-atp.md). |
+| **Office 365 proPlus, Office para iOS y Android** <br/>    | Cuando se selecciona esta opción, la protección de vínculos seguros de ATP se aplica a las direcciones URL de los archivos de Word, Excel y PowerPoint en Windows o Mac OS, documentos de Office en iOS o dispositivos Android, Visio 2016 en Windows y Office Online (Word online, PowerPoint online, Excel online, y OneNote online), siempre que el usuario haya iniciado sesión en Office 365. |
 | **No hacer un seguimiento cuando los usuarios hacen clic en ATP vínculos seguros** <br/>  | Cuando se selecciona esta opción, no se almacenan los datos de direcciones URL en los documentos de Word, Excel, PowerPoint y Visio.  <br/> |
 |**No permitir que los usuarios haga clic en los vínculos seguros ATP a la dirección URL original** <br/> |Cuando se selecciona esta opción, los usuarios no pueden continuar después de una [Página de advertencia](atp-safe-links-warning-pages.md) en una dirección URL que se determina como malintencionada.  <br/> |
 
