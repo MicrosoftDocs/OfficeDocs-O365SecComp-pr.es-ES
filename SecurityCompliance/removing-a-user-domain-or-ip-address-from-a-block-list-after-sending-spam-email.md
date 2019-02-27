@@ -1,7 +1,7 @@
 ---
 title: Quitar un usuario, un dominio o una dirección IP de una lista de bloqueados después de enviar correo no deseado
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 11/01/2018
 ms.audience: ITPro
@@ -14,13 +14,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
+ms.collection:
+- M365-security-compliance
 description: Si un usuario envía continuamente mensajes de correo electrónico de Office 365 que se clasifican como correo no deseado, se les bloqueará el envío de mensajes adicionales.
-ms.openlocfilehash: 3ffd8b65d6994699093237e9f9a0a3aaa802f5e2
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: 870e5eabca9e799dfca1e99846a5bfe845f65df4
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223089"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30275941"
 ---
 # <a name="removing-a-user-domain-or-ip-address-from-a-block-list-after-sending-spam-email"></a>Quitar un usuario, un dominio o una dirección IP de una lista de bloqueados después de enviar correo no deseado
 
@@ -30,7 +32,7 @@ Si un usuario envía continuamente mensajes de correo electrónico de Office 365
 
 Los administradores de espacios empresariales también recibirán una alerta que indica que se ha restringido el envío de más mensajes salientes al usuario.
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
 <a name="sectionSection0"> </a>
 
 Tiempo estimado para finalizar: 5 minutos

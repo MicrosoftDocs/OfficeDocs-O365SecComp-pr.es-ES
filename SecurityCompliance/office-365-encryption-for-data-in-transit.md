@@ -9,14 +9,15 @@ ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
+ms.collection:
+- M365-security-compliance
 description: 'Resumen: breve explicación de cómo Microsoft cifra los datos en tránsito.'
-ms.openlocfilehash: 987e923e242b47b07ad1ef65e5c7ce791c27d5bd
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 596b884ac76c9b138d01958363c7921acf926345
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30217510"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30275850"
 ---
 # <a name="office-365-encryption-for-data-in-transit"></a>Office 365 cifrado para los datos en tránsito
 

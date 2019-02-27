@@ -1,7 +1,7 @@
 ---
 title: Usar reglas de flujo de correo para configurar el filtrado masivo de correo electrónico en Exchange Online Protection
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.audience: ITPro
 ms.topic: article
@@ -11,13 +11,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 2889c82e-fab0-4e85-87b0-b001b2ccd4f7
+ms.collection:
+- M365-security-compliance
 description: Los administradores pueden aprender a usar reglas de flujo de correo en Exchange Online Protection para el filtrado masivo de correo electrónico.
-ms.openlocfilehash: d308439b5c26569f85eb62ddee6f01786d2998b9
-ms.sourcegitcommit: 32cb896aef370764ec6e8f8278ebaf16f1c5ff37
+ms.openlocfilehash: b7144f16df3e7b9f90a24f1ac224ccb20287d918
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "30123921"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30275690"
 ---
 # <a name="use-mail-flow-rules-to-configure-bulk-email-filtering-in-exchange-online-protection"></a>Usar reglas de flujo de correo para configurar el filtrado masivo de correo electrónico en Exchange Online Protection
 

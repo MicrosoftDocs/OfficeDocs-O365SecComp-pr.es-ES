@@ -1,7 +1,7 @@
 ---
 title: Use reglas de flujo de correo para establecer el nivel de confianza contra correo no deseado (SCL)
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 11/17/2014
 ms.audience: ITPro
@@ -12,13 +12,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 4ccab17a-6d49-4786-aa28-92fb28893e99
+ms.collection:
+- M365-security-compliance
 description: Puede crear una regla de transporte que establezca el nivel de confianza contra correo no deseado (SCL) de un mensaje de correo electrónico. El SCL es una medida de la probabilidad de que un mensaje sea correo no deseado. El correo no deseado son mensajes de correo electrónico no solicitados (y a menudo no deseados). El servicio realiza diferentes acciones en un mensaje según su clasificación SCL. Por ejemplo, tal vez desee evitar el filtrado de contenido de correo no deseado para los mensajes enviados por personas dentro de la organización porque confía en que un mensaje que envía internamente un colega no es correo no deseado. El uso de reglas de transporte para establecer el valor SCL de un mensaje le da un mayor control para tratar con el correo no deseado.
-ms.openlocfilehash: 97b9a62e76efea134af5bb1bb7bd25a98bb466d2
-ms.sourcegitcommit: 17c7e18d7d00135b1af40cbea117c9a817a41117
+ms.openlocfilehash: dfce98aa9d4fec25a06674eb68d6e00ae2964e87
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "24972282"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30275630"
 ---
 # <a name="use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages"></a>Use reglas de flujo de correo para establecer el nivel de confianza contra correo no deseado (SCL)
 
@@ -28,7 +30,7 @@ Puede crear una regla de transporte que establezca el nivel de confianza contra 
   
 - Tiempo estimado para finalizar este procedimiento: 10 minutos.
     
-- Debe tener asignados los permisos puede llevar a cabo estos procedimientos. Para ver qué permisos necesita, vea la entrada "Reglas de transporte" en [Feature Permissions in Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) o [permisos de características de elevación de privilegios](eop/feature-permissions-in-eop.md). 
+- Debe tener permisos asignados para poder llevar a cabo este procedimiento o procedimientos. Para ver qué permisos necesita, consulte el entrada "reglas de transporte" en [Feature Permissions in Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) o [Feature Permissions in EOP](eop/feature-permissions-in-eop.md). 
     
 - Para obtener información acerca de los métodos abreviados de teclado aplicables a los procedimientos de este tema, consulte **Keyboard shortcuts in Exchange 2013**.
     

@@ -1,7 +1,7 @@
 ---
 title: Mensajes de reenvío masivo de correo electrónico y EOP
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 12/9/2016
 ms.audience: ITPro
@@ -15,12 +15,12 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 description: Los mensajes de reenvío masivo son mensajes de devolución automatizados que se envían por los servidores de correo, normalmente como resultado del correo no deseado entrante. El DNSBL es una lista de direcciones IP que envían mensajes de reenvío masivo. No es una lista de remitentes de correo no deseado y no se intenta quitar los servidores del DNSBL de dispersión.
-ms.openlocfilehash: 075200ff85762056290690f40d6047ea25a1dbde
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: 73f8631c50bcfb8a023b2b6007b7ccf48038e16e
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30222779"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30275300"
 ---
 # <a name="backscatter-messages-and-eop"></a>Mensajes de reenvío masivo de correo electrónico y EOP
 

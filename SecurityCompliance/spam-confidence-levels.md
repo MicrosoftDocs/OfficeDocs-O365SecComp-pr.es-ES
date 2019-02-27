@@ -1,7 +1,7 @@
 ---
 title: Niveles de confianza de correo no deseado
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 10/2/2017
 ms.audience: ITPro
@@ -12,13 +12,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 34681000-0022-4b92-b38a-e32b3ed96bf6
+ms.collection:
+- M365-security-compliance
 description: A cada mensaje de correo electrónico que pasa por el filtrado de correo no deseado se le asigna una puntuación de correo no deseado. La puntuación se asigna a una clasificación de nivel de confianza contra correo no deseado (SCL) individual y se marca en un encabezado X. El servicio realiza acciones en los mensajes según la interpretación de la confianza contra correo no deseado de las clasificaciones de SCL. La tabla siguiente muestra cómo las distintas clasificaciones de SCL se interpretan en los filtros y la acción predeterminada que se realiza en los mensajes entrantes por cada clasificación.
-ms.openlocfilehash: 4b8eea798bc46396e06da2c6ba0573c019d7a9b7
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 1822fa50f9815397513fddf7a2024a99277cbb28
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002909"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30275650"
 ---
 # <a name="spam-confidence-levels"></a>Niveles de confianza de correo no deseado
 
@@ -32,7 +34,7 @@ A cada mensaje de correo electrónico que pasa por el filtrado de correo no dese
 |7, 8, 9  <br/> |Correo no deseado de alta confianza  <br/> |El mensaje se entrega a la carpeta de Correo no deseado de los destinatarios.  <br/> |
    
 > [!TIP]
-> Clasificaciones de SCL de 2, 3, 4, 7 y 8 no se establecen por el servicio. Una clasificación SCL de 5 o 6 se considera sospechoso de ser correo no deseado que es menos determinado ser correo no deseado que un SCL de 9, que se considera determinada spam. Diferentes acciones para correo no deseado y spam de alta confianza se pueden configurar a través de las directivas de filtro de contenido en el centro de administración de Exchange. Para obtener más información, vea [configurar sus directivas de filtro de correo no deseado](configure-your-spam-filter-policies.md). También puede establecer la clasificación de SCL para los mensajes que coinciden con las condiciones específicas mediante el uso de reglas de transporte, tal como se describe en [las reglas de flujo de correo de uso para establecer el nivel de confianza de correo no deseado (SCL) en los mensajes](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md). Si utiliza una regla de transporte para establecer SCL de 7, 8 o 9 se tratará el mensaje como correo no deseado de alta confianza. 
+> El servicio no establece las clasificaciones de SCL de 2, 3, 4, 7 y 8. Una clasificación de SCL de 5 o 6 se considera correo no deseado sospechoso, que es menos seguro que el correo no deseado que una clasificación SCL de 9, que se considera cierto correo no deseado. Las diferentes acciones de correo no deseado y correo no deseado de alta confianza se pueden configurar a través de las directivas de filtro de contenido en el centro de administración de Exchange. Para obtener más información, consulte [configurar las directivas de filtro de correo no deseado](configure-your-spam-filter-policies.md). También puede establecer la clasificación SCL para los mensajes que coinciden con condiciones específicas mediante reglas de transporte, como se describe en [usar reglas de flujo de correo para establecer el nivel de confianza contra correo no deseado (SCL) en los mensajes](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md). Si usa una regla de transporte para establecer el SCL de 7, 8 o 9, el mensaje se considerará correo no deseado de confianza alta. 
   
 ||
 |:-----|

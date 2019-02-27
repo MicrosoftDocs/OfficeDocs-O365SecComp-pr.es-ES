@@ -1,7 +1,7 @@
 ---
 title: Notificación de muestra cuando se bloquea a un remitente para enviar correo no deseado de salida
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 11/2/2017
 ms.audience: ITPro
@@ -12,13 +12,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: c33fd406-a4c8-4ac8-ad85-123996c5cded
+ms.collection:
+- M365-security-compliance
 description: 'Cuando se bloquea a un remitente en el servicio debido al envío de correo no deseado de salida, el administrador de dominio especificado al Configurar la directiva de correo no deseado saliente recibirá un correo electrónico de notificación similar al siguiente:'
-ms.openlocfilehash: b9fcdf9c2f44a4446a678ca4b22a0a12b24b6fd4
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 94af965505f7541600a6cd7937ae881226a2ac79
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003249"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30275480"
 ---
 # <a name="sample-notification-when-a-sender-is-blocked-sending-outbound-spam"></a>Notificación de muestra cuando se bloquea a un remitente para enviar correo no deseado de salida
 
@@ -28,39 +30,39 @@ Cuando se bloquea a un remitente en el servicio debido al envío de correo no de
   
  **Asunto:** Notificación de correo no deseado de salida: \<  *nombre de cuenta*  \> bloqueada para enviar correo saliente 
   
- **Cuerpo:** Esto es una respuesta automática desde el sistema de análisis de Exchange Online Protection correo no deseado. 
+ **Cuerpo:** Se trata de una respuesta automática desde el sistema de análisis de correo no deseado de Exchange Online Protection. 
   
-Se pone en contacto debido a que hemos detectado volúmenes de correo electrónico que se marcó como correo no deseado o cualquier otro comportamiento sospechoso, que se originan desde la organización. Las siguientes cuentas de correo electrónico que se haya bloqueado de envío de correo electrónico (aún pueden recibir correo electrónico):
+Se está poniéndose en contacto con usted porque hemos detectado grandes volúmenes de correo electrónico marcados como correo no deseado, u otros comportamientos sospechosos, que provienen de su organización. Las siguientes cuentas de correo electrónico han sido bloqueadas para enviar correo electrónico (pueden seguir recibiendo correo electrónico):
   
 \< *nombre de cuenta*  \> 
   
-Es probable que esta cuenta de correo electrónico se ha puesto en peligro. Por favor, siga estos pasos:
+Es probable que esta cuenta de correo electrónico se haya puesto en peligro. Siga estos pasos:
   
-1. Resolver este problema en su parte por:
+1. Resuelva este problema en su parte:
     
-  - Cambiar la contraseña de la cuenta.
+  - Cambio de la contraseña de la cuenta.
     
-  - Determinación de cómo se ha puesto en peligro la cuenta.
+  - Determinación del modo en que la cuenta se ha puesto en peligro.
     
-  - Tomando precauciones para asegurarse de que esta vulnerabilidad no se aproveche nuevo.
+  - Tomar precauciones para asegurarse de que no se pueda aprovechar esta vulnerabilidad de nuevo.
     
-  - Para confirmar que se ha borrado la cola de correo saliente de todos los mensajes ofensivos.
+  - Confirmar que la cola de correo saliente se ha borrado de todos los mensajes ofensivos.
     
-2. Póngase en contacto con el soporte técnico de Microsoft mediante el uso de su canal de contacto regular.
+2. Póngase en contacto con el soporte técnico de Microsoft con el canal de contacto habitual.
     
-3. Explique que dispone de un usuario que está bloqueado el envío de correo y que el problema se ha dedicado a.
+3. Explique que hay un usuario que está bloqueado y no puede enviar correo y que el problema se ha solucionado.
     
-4. El agente creará un vale de soporte técnico con la información que proporcionan y pasar para que tiene la dirección de correo electrónico o dominio desbloqueado.
+4. El agente creará un vale de soporte técnico con la información que proporcione y la escalará para que la dirección de correo electrónico o el dominio no se bloqueen.
     
-5. Después de que se ha desbloqueado la dirección y no hay otros asuntos pendientes, se ponen en contacto y una alerta para el desbloqueo.
+5. Una vez que se haya desbloqueado la dirección y no se hayan producido otros problemas, se le pondrá en contacto y se le enviará una alerta al desbloqueo.
     
-Gracias por asistir a nosotros en el control de correo electrónico no deseado.
+Gracias por ayudarnos a controlar el correo no deseado.
   
 Exchange Online Protection.
   
 \*\*NOTA: no responda a este correo electrónico ya que se envía desde una dirección sin supervisar\*\*
   
 > [!TIP]
-> También puede ponerse en contacto con soporte técnico a través de las opciones que se documentan en la [Ayuda y soporte técnico para EOP](eop/help-and-support-for-eop.md). 
+> También puede ponerse en contacto con el soporte técnico a través de las opciones documentadas en [Help and Support for EOP](eop/help-and-support-for-eop.md). 
   
 

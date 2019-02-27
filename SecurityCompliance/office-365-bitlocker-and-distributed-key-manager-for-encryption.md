@@ -1,7 +1,7 @@
 ---
 title: Office 365 BitLocker para cifrado
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 audience: ITPro
 ms.topic: article
@@ -9,14 +9,15 @@ ms.service: O365-seccomp
 localization_priority: None
 search.appverid:
 - MET150
-ms.collection: Strat_O365_Enterprise
+ms.collection:
+- M365-security-compliance
 description: 'Resumen: información sobre BitLocker para el cifrado en la nube.'
-ms.openlocfilehash: 77de478899591be54bdaf7c3ac9e7d591dd418b1
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 573f43b850f15e56fa529963d2db53402f717a34
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30212910"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30275870"
 ---
 # <a name="bitlocker-and-distributed-key-manager-dkm-for-encryption"></a>BitLocker y Administrador de claves distribuidas (DKM) para el cifrado
 Los servidores de Office 365 usan BitLocker para cifrar las unidades de disco que contienen datos de clientes en reposo en el nivel de volumen. El cifrado de BitLocker es una característica de protección de datos que se integra en Windows. BitLocker es una de las tecnologías que se usan para protegerse frente a amenazas en caso de que haya fallos en otros procesos o controles (por ejemplo, el control de acceso o el reciclaje de hardware) que puedan dar lugar a que alguien obtenga acceso físico a los discos que contienen datos de clientes. En este caso, BitLocker elimina el potencial de robo de datos o de exposición debido a la pérdida, robo o desactivación de discos y equipos de forma inadecuada.

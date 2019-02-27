@@ -1,7 +1,7 @@
 ---
 title: Tutorial suplantación de información sobre inteligencia
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 ms.date: 7/30/2018
 ms.audience: ITPro
 ms.topic: overview
@@ -11,13 +11,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 59a3ecaf-15ed-483b-b824-d98961d88bdd
+ms.collection:
+- M365-security-compliance
 description: Vea cómo funciona el nuevo conocimiento de inteligencia de TI de suplantación.
-ms.openlocfilehash: 83fa1580a0e7c4717581cc5f23b8f525d6b918e0
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 4303b8f2524e6722e7febbbd06ab9daa853ed802
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220330"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30275920"
 ---
 # <a name="walkthrough-spoof-intelligence-insight"></a>Tutorial: información sobre inteligencia de inteligencia de suplantación
 
