@@ -1,8 +1,8 @@
 ---
 title: Sincronizar certificados de usuario con Office 365 para S/MIME
-ms.author: krowley
-author: kccross
-manager: laurawi
+ms.author: chrisda
+author: chrisda
+manager: Serdars
 ms.date: 12/9/2016
 ms.audience: ITPro
 ms.topic: article
@@ -13,29 +13,27 @@ search.appverid:
 - MET150
 ms.assetid: 351c932e-99c1-4512-a6e8-788e90b7838f
 description: Antes de poder enviar mensajes protegidos por S/MIME, deben configurarse los certificados apropiados. Para poder enviar mensajes cifrados mediante Exchange Online, el programa de correo electrónico del remitente usa el certificado público del destinatario para cifrar el mensaje. Este certificado X.509 público debe publicarse en Office 365.
-ms.openlocfilehash: 452b538b4515bdbcd5fcbdedad17f0450c04207a
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 35de3ba34be48a8553c7034f646576e4fca8b870
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002395"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30295003"
 ---
-# <a name="sync-user-certificates-to-office-365-for-smime"></a><span data-ttu-id="c51a9-105">Sincronizar certificados de usuario con Office 365 para S/MIME</span><span class="sxs-lookup"><span data-stu-id="c51a9-105">Sync user certificates to Office 365 for S/MIME</span></span>
+# <a name="sync-user-certificates-to-office-365-for-smime"></a><span data-ttu-id="7a3aa-105">Sincronizar certificados de usuario con Office 365 para S/MIME</span><span class="sxs-lookup"><span data-stu-id="7a3aa-105">Sync user certificates to Office 365 for S/MIME</span></span>
 
-<span data-ttu-id="c51a9-p102">Antes de poder enviar mensajes protegidos por S/MIME, deben configurarse los certificados apropiados. Para poder enviar mensajes cifrados mediante Exchange Online, el programa de correo electrónico del remitente usa el certificado público del destinatario para cifrar el mensaje. Este certificado X.509 público debe publicarse en Office 365.</span><span class="sxs-lookup"><span data-stu-id="c51a9-p102">Before anyone can send S/MIME-protected messages, the appropriate certificates must be set up. In order to send encrypted messages through Exchange Online, the sender's email program uses the public certificate of the recipient to encrypt the message. This public X.509 certificate has to be published to Office 365.</span></span>
-  
-## <a name="to-sync-certificates-that-support-smime"></a><span data-ttu-id="c51a9-109">Para sincronizar los certificados que admiten S/MIME</span><span class="sxs-lookup"><span data-stu-id="c51a9-109">To Sync certificates that support S/MIME</span></span>
+<span data-ttu-id="7a3aa-p102">Para que cualquier persona pueda enviar mensajes protegidos por S/MIME en Exchange Online, deben configurarse los certificados apropiados. Para enviar mensajes cifrados a través de Exchange Online, la aplicación de correo electrónico del remitente usa el certificado público del destinatario para cifrar el mensaje. Este certificado X. 509 público debe publicarse en Office 365.</span><span class="sxs-lookup"><span data-stu-id="7a3aa-p102">Before anyone can send S/MIME-protected messages in Exchange Online, the appropriate certificates must be set up. To send encrypted messages through Exchange Online, the sender's email app uses the public certificate of the recipient to encrypt the message. This public X.509 certificate has to be published to Office 365.</span></span>
 
-<span data-ttu-id="c51a9-p103">Para comenzar a configurar S/MIME, emita los certificados y publíquelos en sus Servicios de directorio de Active Directory. Para obtener más información acerca de la administración de certificados en Exchange 2013, consulte [Digital Certificates and SSL](http://technet.microsoft.com/library/a9e2e08c-d46a-4135-a387-eb653212b676.aspx).</span><span class="sxs-lookup"><span data-stu-id="c51a9-p103">Begin setting up S/MIME by issuing certificates and publishing them in your local Active Directory Domain Service. For more information about managing certificates in Exchange 2013, see [Digital Certificates and SSL](http://technet.microsoft.com/library/a9e2e08c-d46a-4135-a387-eb653212b676.aspx).</span></span>
-  
-<span data-ttu-id="c51a9-p104">Una vez publicados los certificados, use la Herramienta de sincronización de Microsoft Azure Active Directory para sincronizar los datos de usuario de su entorno local de Exchange con Office 365. Para obtener más información acerca de este proceso, consulte [DirSync: historial de publicación de las versiones de la herramienta de sincronización](https://go.microsoft.com/fwlink/p/?LinkId=392587).</span><span class="sxs-lookup"><span data-stu-id="c51a9-p104">After your certificates are published, use the Azure Active Directory Sync tool to synchronize user data from your on-premises Exchange environment to Office 365. For more information on this process, see [DirSync: Directory Sync Tool Version Release History](https://go.microsoft.com/fwlink/p/?LinkId=392587).</span></span>
-  
-<span data-ttu-id="c51a9-114">Además de sincronizar otros datos de directorio, para los fines de S/MIME, la herramienta sincronizará los atributos  `userCertificate` y  `userSMIMECertificate` para cada objeto de usuario de manera que los datos puedan usarse para firmar y cifrar mensajes.</span><span class="sxs-lookup"><span data-stu-id="c51a9-114">Along with synchronizing other directory data, for S/MIME purposes, the tool will synchronize the  `userCertificate` and  `userSMIMECertificate` attributes for each user object so the data can be used to sign and encrypt messages.</span></span> 
-  
-## <a name="more-information"></a><span data-ttu-id="c51a9-115">Más información</span><span class="sxs-lookup"><span data-stu-id="c51a9-115">More Information</span></span>
+## <a name="to-sync-certificates-that-support-smime"></a><span data-ttu-id="7a3aa-109">Para sincronizar los certificados que admiten S/MIME</span><span class="sxs-lookup"><span data-stu-id="7a3aa-109">To Sync certificates that support S/MIME</span></span>
 
-[<span data-ttu-id="c51a9-116">S/MIME para la firma y el cifrado de mensajes</span><span class="sxs-lookup"><span data-stu-id="c51a9-116">S/MIME for message signing and encryption</span></span>](s-mime-for-message-signing-and-encryption.md)
-  
-[<span data-ttu-id="c51a9-117">Herramienta de sincronización de Azure Active Directory</span><span class="sxs-lookup"><span data-stu-id="c51a9-117">Azure Active Directory Sync tool</span></span>](https://go.microsoft.com/fwlink/p/?LinkId=392587)
-  
+<span data-ttu-id="7a3aa-p103">Empiece a configurar S/MIME mediante la emisión de certificados y su publicación en el servicio de dominio local de Active Directory. Para obtener más información acerca de la administración de certificados en Exchange Server, consulte [digital Certificates and SSL](http://technet.microsoft.com/library/a9e2e08c-d46a-4135-a387-eb653212b676.aspx).</span><span class="sxs-lookup"><span data-stu-id="7a3aa-p103">Begin setting up S/MIME by issuing certificates and publishing them in your local Active Directory Domain Service. For more information about managing certificates in Exchange Server, see [Digital Certificates and SSL](http://technet.microsoft.com/library/a9e2e08c-d46a-4135-a387-eb653212b676.aspx).</span></span>
 
+<span data-ttu-id="7a3aa-p104">Una vez publicados los certificados, use la Herramienta de sincronización de Microsoft Azure Active Directory para sincronizar los datos de usuario de su entorno local de Exchange con Office 365. Para obtener más información acerca de este proceso, consulte [DirSync: historial de publicación de las versiones de la herramienta de sincronización](https://go.microsoft.com/fwlink/p/?LinkId=392587).</span><span class="sxs-lookup"><span data-stu-id="7a3aa-p104">After your certificates are published, use the Azure Active Directory Sync tool to synchronize user data from your on-premises Exchange environment to Office 365. For more information on this process, see [DirSync: Directory Sync Tool Version Release History](https://go.microsoft.com/fwlink/p/?LinkId=392587).</span></span>
+
+<span data-ttu-id="7a3aa-114">Además de sincronizar otros datos de directorio, para fines de S/MIME, la herramienta sincronizará los atributos **userCertificate** y **userSMIMECertificate** para cada objeto de usuario, de modo que los datos puedan usarse para firmar y cifrar mensajes.</span><span class="sxs-lookup"><span data-stu-id="7a3aa-114">Along with synchronizing other directory data, for S/MIME purposes, the tool will synchronize the  **userCertificate** and **userSMIMECertificate** attributes for each user object so the data can be used to sign and encrypt messages.</span></span>
+
+## <a name="more-information"></a><span data-ttu-id="7a3aa-115">Más información</span><span class="sxs-lookup"><span data-stu-id="7a3aa-115">More Information</span></span>
+
+[<span data-ttu-id="7a3aa-116">S/MIME para la firma y el cifrado de mensajes</span><span class="sxs-lookup"><span data-stu-id="7a3aa-116">S/MIME for message signing and encryption</span></span>](s-mime-for-message-signing-and-encryption.md)
+
+[<span data-ttu-id="7a3aa-117">Herramienta de sincronización de Azure Active Directory</span><span class="sxs-lookup"><span data-stu-id="7a3aa-117">Azure Active Directory Sync tool</span></span>](https://go.microsoft.com/fwlink/p/?LinkId=392587)
