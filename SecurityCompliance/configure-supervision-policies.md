@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: Configurar las directivas de revisión de supervisión para capturar las comunicaciones de los empleados para su revisión.
-ms.openlocfilehash: af317194fcf551acde8c53cdf6aa38bfb040dc84
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: bb84520fed1eb5015d46c2c35931f786d29855e7
+ms.sourcegitcommit: 13c601ea11ce6a3c71036fdafda059061c6998d0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216740"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "30313176"
 ---
 # <a name="configure-supervision-policies-for-your-organization"></a>Configurar directivas de supervisión para su organización
 
@@ -53,9 +53,9 @@ Siga estos pasos para configurar y usar la supervisión en su organización de O
 
     Probar la Directiva de supervisión para asegurarse de que funciona como desea es una parte importante de garantizar que la estrategia de cumplimiento cumpla los estándares.
 
-- **Paso 6: (opcional)** [Configurar el complemento de Outlook para revisores que no desean usar el panel de supervisión de Office 365 o Outlook en la web (anteriormente conocido como Outlook Web App) para revisar las comunicaciones](configure-supervision-policies.md#UseOutlook) supervisadas
+- **Paso 6: (opcional)** [Configurar Outlook para revisores que no desean usar el panel de supervisión de Office 365 o Outlook en la web (anteriormente conocido como Outlook Web App) para revisar las comunicaciones](configure-supervision-policies.md#UseOutlook) supervisadas
 
-    El complemento de supervisión para Outlook ofrece a los revisores acceso a la funcionalidad de supervisión directamente en el cliente de Outlook para que puedan evaluar y clasificar cada elemento.
+    Outlook se puede configurar para proporcionar a los revisores acceso a la funcionalidad de supervisión en el cliente de Outlook para que puedan evaluar y clasificar cada elemento.
 
 <a name="exampledist"> </a>
 
@@ -189,13 +189,13 @@ Después de crear una directiva de supervisión, es aconsejable probarla para as
 
 <a name="UseOutlook"> </a>
 
-## <a name="step-6---set-up-outlook-add-in-for-reviewers-optional"></a>Paso 6: configurar el complemento de Outlook para revisores (opcional)
+## <a name="step-6---configure-outlook-for-reviewers-optional"></a>Paso 6: configurar Outlook para revisores (opcional)
 
-Los revisores que quieran usar Outlook en lugar de usar el panel de supervisión en Office 365 o en Outlook en la web para revisar las comunicaciones deben instalar el complemento de supervisión para su cliente de Outlook.
+Los revisores que quieran usar Outlook en lugar de usar el panel de supervisión en Office 365 para revisar las comunicaciones deben configurar su cliente de Outlook.
 
 ### <a name="step-1-copy-the-address-for-the-supervision-mailbox"></a>Paso 1: copiar la dirección del buzón de supervisión
 
-Para instalar el complemento para el escritorio de Outlook, necesitará la dirección del buzón de correo de supervisión que se creó como parte de la configuración de la Directiva de supervisión.
+Para configurar la revisión para escritorio de Outlook o Outlook para la web, necesitará la dirección del buzón de correo de supervisión que se creó como parte de la configuración de la Directiva de supervisión.
   
 > [!NOTE]
 > Si otra persona creó la Directiva, tendrá que obtener esta dirección para instalar el complemento.
@@ -210,7 +210,7 @@ Para instalar el complemento para el escritorio de Outlook, necesitará la direc
 
 4. En el control flotante detalles de la Directiva, en **buzón de supervisión**, copie la dirección.<br/>![Sección "buzón de supervisión" de un control flotante de la Directiva de supervisión que muestra la dirección del buzón de supervisión resaltada](media/71779d0e-4f01-4dd3-8234-5f9c30eeb067.jpg)
   
-### <a name="step-2-configure-the-supervision-mailbox-for-outlook-desktop-access"></a>Paso 2: configurar el buzón de supervisión para el acceso al escritorio de Outlook
+### <a name="step-2-configure-the-supervision-mailbox-for-outlook-access"></a>Paso 2: configurar el buzón de supervisión para Outlook Access
 
 A continuación, los revisores deberán ejecutar un par de comandos de PowerShell de Exchange Online para que puedan conectar Outlook al buzón de correo de supervisión.
   
