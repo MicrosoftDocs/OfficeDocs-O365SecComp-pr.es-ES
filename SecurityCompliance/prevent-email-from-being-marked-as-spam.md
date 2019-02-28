@@ -14,24 +14,20 @@ search.appverid:
 - MET150
 ms.assetid: 34823bbc-a3e3-4949-ba42-97c73997eeed
 description: Obtenga información sobre cómo evitar los falsos positivos y evitar que el correo electrónico deseado se marque como no deseado en Office 365.
-ms.openlocfilehash: be6e534608544c8db7a33ae6ed6492d4f730a2a0
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 7d64beb5070b62640ce0af2e7f18ed8ea4199dda
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219420"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30296893"
 ---
 # <a name="how-to-prevent-real-email-from-being-marked-as-spam-in-office-365"></a>Evitar que el correo electrónico real se marque como correo no deseado en Office 365
 
  **¿Se está marcando el correo electrónico real como correo no deseado en Office 365? Siga este procedimiento.**
   
-Exchange Online Protection (EOP) es un servicio de filtrado de correo electrónico basado en la nube que protege su organización contra el correo no deseado y el malware. Si tiene buzones en Office 365, ya están protegidos de forma predeterminada con EOP porque forma parte del servicio.
-
-Exchange Online Protection (EOP) intenta filtrar el correo no deseado y mantener la bandeja de entrada libre de contenido que los usuarios no quieran ver. Pero, a veces, EOP filtra mensajes que sí quieren ver los usuarios. Los mensajes marcados incorrectamente como spam se conocen como falsos positivos.
-
 Si recibe un falso positivo, debe informar del mensaje a Microsoft a través del [complemento Usar el mensaje de informe](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2). Además, puede reenviar el mensaje *como datos adjuntos* a not_junk@office365.microsoft.com.
 
-    **Important** If you do not forward the messages as attachments, then the headers will be missing and we will be unable to improve the junk mail filtering in Office 365.
+**Importante** Si no reenvía los mensajes como datos adjuntos, no se incluirán los encabezados y no podremos mejorar el filtrado de correo no deseado en Office 365.
     
 ## <a name="determine-the-reason-why-the-message-was-marked-as-spam"></a>Determinar el motivo por el que un mensaje se marcó como correo no deseado
 

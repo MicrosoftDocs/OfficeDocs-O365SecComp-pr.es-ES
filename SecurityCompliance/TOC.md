@@ -95,7 +95,7 @@
 ### [Cómo reducir el correo no deseado en Office 365](reduce-spam-email.md)
 ### [Evitar que los mensajes se marquen como correo no deseado en EOP y Office 365](prevent-email-from-being-marked-as-spam-0.md)
 ### [Controlar el correo no deseado saliente en Office 365](outbound-spam-controls.md)
-### [Bloquear el correo no deseado con el filtro de correo no deseado de Office 365 para evitar problemas de negativos falsos](block-email-spam-to-prevent-false-negatives.md)
+### [Bloquear el correo no deseado con el filtro de correo no deseado de Office 365 para evitar problemas de negativos falsos](reduce-spam-email.md)
 ### [Purga automática cero horas: protección contra correo no deseado y malware](zero-hour-auto-purge.md)
 ### [Asegurarse de que el correo no deseado se enruta a la carpeta de correo no deseado de cada usuario](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)
 ### [Informar a Microsoft de los mensajes de correo electrónico no deseado](report-junk-email-messages-to-microsoft.md)
@@ -297,7 +297,7 @@
 #### [Administrar conjuntos de carga](compliance20/manage-load-sets.md)
 #### [Cargar datos que no son de Office 365 a un conjunto de trabajo](compliance20/load-non-office365-data.md)
 #### [Consultar los datos de un conjunto de trabajo](compliance20/working-set-search.md)
-#### [Ver documentos de un conjunto de trabajo](compliance20/annotating-and-redacting-documents.md)
+#### [Ver documentos de un conjunto de trabajo](compliance20/view-documents-in-working-set.md)
 #### [Etiquetar documentos en un conjunto de trabajo](compliance20/tagging-documents.md)
 
 ### [Analizar datos de casos](compliance20/analyzing-data-in-working-set.md)
@@ -318,10 +318,7 @@
 #### [Establecer la configuración de búsqueda y análisis](compliance20/configure-search-analytics-settings.md)
 
 ### Referencia de eDiscovery avanzado (versión preliminar)
-#### [Límites de búsqueda](compliance20/search-limits-ediscovery20.md)
-#### [Límites de indexación](compliance20/indexing-limits-ediscovery20.md)
-#### [Límites de exportación](compliance20/export-limits-ediscovery20.md)
-#### [Límites de descarga](compliance20/download-limits-ediscovery20.md)
+#### [Límites de eDiscovery avanzado (versión preliminar)](compliance20/limits-ediscovery20.md)
 #### [Tipos de archivo admitidos](compliance20/supported-filetypes-ediscovery20.md)
 #### [Campos de metadatos del documento](compliance20/document-metadata-fields.md)
 
