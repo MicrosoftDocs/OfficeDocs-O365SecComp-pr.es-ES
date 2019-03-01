@@ -15,12 +15,12 @@ ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 ms.collection:
 - M365-security-compliance
 description: 'Usted y sus usuarios pueden enviar mensajes de correo no deseado falsos negativos y falsos positivos a Microsoft para su análisis. '
-ms.openlocfilehash: 553f73ffc82dc6f7091b81171213f95f7a092674
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: af11c7ab8e6d80737d2b25ca2b37c3bf7da9fe07
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276100"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341531"
 ---
 # <a name="submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis"></a>Envío de mensajes de correo no deseado, mensajes seguros y mensajes de correo de suplantación de identidad (phishing) a Microsoft para su análisis
 
@@ -79,7 +79,7 @@ Puede enviar mensajes seguros de las maneras siguientes:
     
 - Si usa la acción **mensaje en cuarentena** en lugar de la acción **mover mensaje a la carpeta correo no deseado** al configurar los filtros de contenido: 
     
-  - Los administradores pueden liberar mensajes de correo no deseado en cuarentena e identificarlos como falsos positivos desde el centro de administración de Exchange. Para obtener más información, vea [Buscar y liberar mensajes en cuarentena como administrador](find-and-release-quarantined-messages-as-an-administrator.md).
+  - Los administradores pueden liberar mensajes de correo no deseado en cuarentena e informarlos como falsos positivos desde el Centro de administración de Exchange. Para más información, vea [Buscar y liberar mensajes en cuarentena como un administrador](find-and-release-quarantined-messages-as-an-administrator.md).
     
   - Los usuarios pueden liberar sus propios mensajes de correo no deseado en cuarentena e identificarlos como falsos positivos a través de los siguientes canales: 
     

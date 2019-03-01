@@ -14,12 +14,12 @@ ms.assetid: 5986b9e1-c824-4f8f-9b7d-a2b0ae2a7fe9
 ms.collection:
 - M365-security-compliance
 description: Si todavía no ha movido su organización de Office 365 a las nuevas capacidades de OME, pero ya ha implementado OME, la información de este artículo se aplica a su organización. Microsoft recomienda que cree un plan para cambiar a las nuevas funciones de OME en cuanto sea razonable para su organización. Para obtener instrucciones, vea configurar las nuevas funciones de cifrado de mensajes de Office 365 basadas en Azure Information Protection. Si desea obtener más información sobre cómo funcionan las nuevas funciones en primer lugar, consulte Office 365 Message Encryption. En el resto de este artículo se hace referencia al comportamiento OME antes de la publicación de las nuevas capacidades de OME.
-ms.openlocfilehash: f6e407208735a53b98033e58a6f7b36fe9a37f62
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: 03e2cb9c1f7d447f2fcf222382fcc2366faf0658
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276070"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341501"
 ---
 # <a name="legacy-information-for-office-365-message-encryption"></a>Información heredada para el cifrado de mensajes de Office 365
 
@@ -167,7 +167,7 @@ RMS proporciona funciones de protección de derechos de la información para los
   
  **P. ¿en qué se diferencia el cifrado de mensajes de Office 365 de S/MIME?**
   
-S/MIME es básicamente una tecnología de cifrado del lado cliente y requiere la administración de certificados complicados y la publicación de infraestructura. El cifrado de mensajes Office 365 usa reglas de transporte y no depende de la publicación de certificados.
+S/MIME es básicamente una tecnología de cifrado del lado cliente y requiere una infraestructura de publicación y administración de certificados complicada. El cifrado de mensajes de Office 365 usa reglas de flujo de correo (también conocidas como reglas de transporte) y no depende de la publicación de certificados.
   
  **P. ¿Puedo leer los mensajes cifrados en dispositivos móviles?**
   
@@ -213,7 +213,7 @@ Dejan. No puede revocar un mensaje a una persona determinada después de enviarl
   
  **P. ¿Puedo ver un informe de los mensajes cifrados que se han recibido y leído?**
   
-No hay un informe que muestre si se ha visto un mensaje cifrado, pero hay disponibles informes de Office 365 que puede aprovechar para determinar el número de mensajes que coincidieron con una regla de transporte específica, por ejemplo.
+No hay un informe que muestre si se ha visto un mensaje cifrado, pero hay disponible Office 365 Reports que puede aprovechar para determinar el número de mensajes que coincidieron con una regla de flujo de correo específica (también denominada regla de transporte), por ejemplo.
   
  **P. ¿Qué hace Microsoft con la información que proporciono a través del Portal OME y la aplicación Visor OME?**
   

@@ -15,12 +15,12 @@ ms.assetid: c440b2ac-cafa-4be5-ba4c-14278a7990ae
 ms.collection:
 - M365-security-compliance
 description: Este tema contiene preguntas frecuentes y respuestas sobre la cuarentena hospedada.
-ms.openlocfilehash: 381eb0aba25d7149c2f164f9e0173034568d5eff
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: 9f9b16a92b8ef8105a9439972ebed54111b227c6
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276030"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341181"
 ---
 # <a name="quarantine-faq"></a>Preguntas más frecuentes sobre la cuarentena
 
@@ -48,11 +48,11 @@ A. para poder tener acceso a la cuarentena de correo no deseado del usuario fina
   
  **P. ¿Se puede enviar otra cosa que no sea correo no deseado a la cuarentena?**
   
-R. Los mensajes que coinciden con una regla de transporte también se pueden enviar a la cuarentena del administrador, si es la acción configurada. La cuarentena del usuario final es únicamente para correo no deseado.
+A. los mensajes que coinciden con una regla de flujo de correo (también denominada regla de transporte) también se pueden enviar a la cuarentena de administrador, si esa es la acción configurada. La cuarentena del usuario final es sólo para correo no deseado.
   
  **P. ¿Durante cuánto tiempo se guardan los mensajes en cuarentena?**
   
-A. de forma predeterminada, los mensajes de correo no deseado se mantienen en cuarentena durante 30 días, mientras que los mensajes en cuarentena que coinciden con una regla de transporte se mantienen en cuarentena durante 7 días. TransCurrido este período de tiempo, los mensajes se eliminan y no se pueden recuperar. No se puede configurar el período de retención de los mensajes en cuarentena que coinciden con una regla de transporte. Sin embargo, el período de retención de los mensajes de correo no deseado en cuarentena puede reducirse a través de la configuración **conservar el correo no deseado durante (días)** en las directivas de filtro de contenido. Para obtener más información, consulte [configurar las directivas de filtro de correo no deseado](configure-your-spam-filter-policies.md).
+A. de forma predeterminada, los mensajes de correo no deseado se mantienen en cuarentena durante 30 días, mientras que los mensajes en cuarentena que coinciden con una regla de flujo de correo se mantienen en cuarentena durante 7 días. TransCurrido este período de tiempo, los mensajes se eliminan y no se pueden recuperar. No se puede configurar el período de retención de los mensajes en cuarentena que coinciden con una regla de flujo de correo. Sin embargo, el período de retención de los mensajes de correo no deseado en cuarentena puede reducirse a través de la configuración **conservar el correo no deseado durante (días)** en las directivas de filtro de contenido. Para obtener más información, consulte [configurar las directivas de filtro de correo no deseado](configure-your-spam-filter-policies.md).
   
  **Q. ¿Puedo liberar o informar de más de un mensaje en cuarentena a la vez?**
   

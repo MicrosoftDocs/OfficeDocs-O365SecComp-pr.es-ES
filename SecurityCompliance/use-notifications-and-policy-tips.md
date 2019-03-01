@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 87496bc5-9601-4473-8021-cb05c71369c1
 description: 'Una sugerencia de directiva es una notificación o advertencia que aparece cuando alguien trabaja con contenido que entra en conflicto con una directiva DLP. Puede usar notificaciones de correo electrónico y sugerencias de directiva para aumentar el conocimiento y ayudar a los usuarios acerca de las directivas de la organización. También puede dar a los usuarios la opción de invalidar la Directiva, de modo que no se bloqueen si tienen una necesidad empresarial válida o si la Directiva está detectando un falso positivo. '
-ms.openlocfilehash: 1e161aa1b8de48cea32718f2c04b05436b25c0ff
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 77bf9947356a4c8986e8b8cca7544350fa300c01
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216451"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341701"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Enviar notificaciones de correo electrónico y Mostrar sugerencias de directiva para directivas de DLP
 
@@ -227,7 +227,7 @@ Tenga en cuenta que todas estas condiciones funcionan en Outlook, donde coincidi
 
 Las sugerencias de Directiva pueden funcionar con las directivas de DLP y las reglas de flujo de correo creadas en el centro de administración de Exchange o con las &amp; directivas de DLP creadas en el centro de seguridad y cumplimiento de Office 365, pero no en ambos. Esto se debe a que estas directivas se almacenan en ubicaciones distintas, pero las sugerencias de directiva solo pueden dibujar desde una única ubicación.
   
-Si ha configurado sugerencias de directiva en el centro de administración de Exchange, las sugerencias de directiva que configure en el &amp; centro de seguridad y cumplimiento de Office 365 no aparecerán a los usuarios en Outlook en la web ni en Outlook 2013 y versiones posteriores hasta que desactive las sugerencias de Exchange. Centro de administración. Esto garantiza que las reglas de transporte de Exchange actuales seguirán funcionando hasta que elija cambiar al centro de seguridad &amp; y cumplimiento de Office 365.
+Si ha configurado sugerencias de directiva en el centro de administración de Exchange, las sugerencias de directiva que configure en el &amp; centro de seguridad y cumplimiento de Office 365 no aparecerán a los usuarios en Outlook en la web ni en Outlook 2013 y versiones posteriores hasta que desactive las sugerencias de Exchange. Centro de administración. Esto garantiza que las reglas de flujo de correo de Exchange actuales (también conocidas como reglas de transporte) seguirán funcionando hasta que elija cambiar al centro de seguridad &amp; y cumplimiento de Office 365.
   
 Tenga en cuenta que, aunque las sugerencias de directiva solo pueden dibujar desde una única ubicación, siempre se envían notificaciones de correo electrónico, incluso si usa directivas de DLP &amp; tanto en el centro de administración de seguridad de Office 365 como en el centro de administración de Exchange.
   

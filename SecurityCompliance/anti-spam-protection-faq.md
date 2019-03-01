@@ -15,12 +15,12 @@ ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
 description: En este tema encontrará las preguntas frecuentes y sus correspondientes respuestas sobre la protección contra el correo no deseado. Las respuestas sirven para los clientes de Microsoft Exchange Online y de Exchange Online Protection (EOP).
-ms.openlocfilehash: f41799a3870e899fd3601453aaa11f6f9c51c608
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: 47ab5202e4f20bbb8cdcf1d83987b0c0c20e8f29
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223059"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341681"
 ---
 # <a name="anti-spam-protection-faq"></a>Preguntas más frecuentes sobre protección contra correo electrónico no deseado
 
@@ -34,7 +34,7 @@ En este tema encontrará las preguntas frecuentes y sus correspondientes respues
 R. **Para mensajes entrantes:** La mayor parte del correo no deseado se elimina mediante el filtrado de conexiones, que se basa en la dirección IP del remitente. A continuación, el servicio inspecciona el contenido del mensaje. El correo no deseado con contenido filtrado se envía de manera predeterminada a la carpeta Correo electrónico no deseado del destinatario. Esta acción se puede cambiar. Por ejemplo, se puede elegir enviar los mensajes de correo no deseado a cuarentena configurando la directiva de filtro de contenido. 
   
 > [!IMPORTANT]
-> Para clientes independientes de EOP: a fin de garantizar que la acción **Mover mensaje a la carpeta Correo electrónico no deseado** va a funcionar en los buzones locales, debe configurar dos reglas de transporte de Exchange en los servidores locales para detectar los encabezados de correo no deseado agregados mediante EOP. Para obtener información detallada, consulte [Asegurarse de que el correo no deseado se enruta a la carpeta de correo no deseado de cada usuario](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). 
+> Para clientes independientes de EOP: para asegurarse de que la acción **mover el mensaje a la carpeta de correo electrónico no deseado** funcionará con los buzones locales, debe configurar dos reglas de flujo de correo de Exchange (también conocidas como reglas de transporte) en los servidores locales para detectar encabezados de correo no deseado agregados por EOP. Para obtener más información, consulte [asegurarse de que el correo no deseado se enruta a la carpeta de correo no deseado de cada usuario](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). 
   
  **Para mensajes salientes:** El mensaje se enruta a través del grupo de entrega de mayor riesgo o se devuelve y no se entrega, en cuyo caso el remitente debería recibir un mensaje de notificación de estado de entrega (DSN) indicando que el mensaje no se pudo entregar. 
   

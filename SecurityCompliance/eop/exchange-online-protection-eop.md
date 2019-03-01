@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 70ab4af2-fec4-4886-8e12-27d348649204
 description: Estas son algunas de las cosas que debe tener en cuenta antes de empezar a trabajar con EOP.
-ms.openlocfilehash: 2535a796a0ac1548160545226586233af7b50080
-ms.sourcegitcommit: 06d6e63225f912d0f3c6bb836c61eb11c1dbe97a
+ms.openlocfilehash: fc5ea726de190395407952ceac69c4c682ac8f67
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "30206563"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341751"
 ---
 # <a name="exchange-online-protection"></a>Exchange Online Protection 
 
@@ -50,7 +50,7 @@ El contenido de la Ayuda para administradores de EOP consta de las siguientes ca
     
 - [Procedimientos recomendados para configurar EOP](best-practices-for-configuring-eop.md) Se describe la configuración recomendada y las consideraciones después de configurar y aprovisionar el servicio. 
     
-- [Cumplimiento y directivas de mensajería en EOP](messaging-policy-and-compliance-in-eop.md) Se describe cómo usar las reglas de transporte de Exchange (reglas de filtrado personalizadas) para aplicar las directivas y reglamentos específicos de la compañía, y cómo usar los informes de auditoría para realizar el seguimiento de cambios de configuración en el servicio. 
+- [Directiva de mensajería y cumplimiento en EOP](messaging-policy-and-compliance-in-eop.md) Describe cómo usar las reglas de flujo de correo de Exchange (también conocidas como reglas de transporte) para aplicar directivas y reglamentos específicos de la empresa, y cómo usar los informes de auditoría para realizar un seguimiento de los cambios de configuración en el servicio. 
     
 - [Anti-Spam and Anti-Malware Protection](http://technet.microsoft.com/library/93c6c227-7442-4293-b64d-ec8f15c928db.aspx) Se describe el filtrado de correo no deseado y de malware,y se muestra cómo personalizarlos para que se adapten lo mejor posible a las necesidades de su organización. También se describen las tareas que los administradores y los usuarios finales pueden realizar en los mensajes en cuarentena. 
     

@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: Siga estos procedimientos recomendados para Exchange Online Protection (EOP) con el fin de evitar errores comunes de configuración y prepararse para usar esta característica sin problemas.
-ms.openlocfilehash: ef58e2cd5a3ffdbbeb02124442c355974d174073
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: a70fe44eb80b49c6e8c6ea46bc1d38b92bd07279
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027277"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341551"
 ---
 # <a name="best-practices-for-configuring-eop"></a>Procedimientos recomendados para configurar EOP
   
@@ -32,28 +32,28 @@ Si su organización tiene cuentas de usuario existentes en un entorno local de A
   
 ## <a name="spf-record-customization-to-help-prevent-spoofing"></a>Personalización del registro de SPF para impedir la suplantación de identidad
 
-Al configurar EOP, agregó un registro de SPF (marco de directivas de remitentes) para EOP a sus registros DNS. El registro SPF ayuda a evitar la suplantación de identidad. Para obtener más información acerca de cómo evita la suplantación de un registro SPF y cómo se pueden agregar las direcciones IP local para el registro de SPF, consulte [Set up SPF en Office 365 para ayudar a evitar la suplantación de identidad](../set-up-spf-in-office-365-to-help-prevent-spoofing.md). 
+Al configurar EOP, agregó un registro SPF (marco de directivas de remitente) para EOP a sus registros DNS. El registro de SPF ayuda a evitar la suplantación de identidad. Para obtener más información acerca de cómo un registro de SPF impide la suplantación de identidad y cómo puede Agregar las direcciones IP locales al registro de SPF, consulte [configurar SPF en Office 365 para evitar la suplantación de identidad](../set-up-spf-in-office-365-to-help-prevent-spoofing.md). 
   
 ## <a name="set-anti-spam-options"></a>Establecer opciones contra correo no deseado
 
-Administrar la conexión de configuración del filtro mediante la adición de las direcciones IP a las listas de direcciones IP bloqueadas y direcciones IP permitidas y seleccionando la opción de **Habilitar la lista de seguros** , que debe reducir el número de falsos positivos (correo correcto que se clasifica como correo no deseado) recibe. Encontrará más información en [Configurar la directiva de filtro de conexión](../configure-the-connection-filter-policy.md). Para obtener más configuración de correo no deseado que se aplica a toda la organización, eche un vistazo de [cómo ayudar a garantizar que no se marcó un mensaje como correo no deseado](https://go.microsoft.com/fwlink/p/?LinkId=534224) o [correo electrónico de bloqueo de correo no deseado con el filtro de spam de Office 365 para evitar problemas de negativos es false](https://go.microsoft.com/fwlink/p/?LinkId=534225). Estos son útiles si tiene control de nivel de administrador y desea impedir que falsos positivos o negativos falsos.
+Administre la configuración del filtro de conexión agregando direcciones IP a las listas de direcciones IP permitidas y IP bloqueadas, y seleccionando la opción **Habilitar lista segura** , que debe reducir el número de falsos positivos (correo correcto que se clasifica como correo no deseado) que recibe. Para obtener más información, vea [Configure the Connection Filter Policy](../configure-the-connection-filter-policy.md). Para obtener más opciones de configuración de correo no deseado que se aplican a toda la organización, eche un vistazo a [Cómo garantizar que un mensaje no se marque como correo no deseado](https://go.microsoft.com/fwlink/p/?LinkId=534224) o [bloquear el correo no deseado con el filtro de correo no deseado de Office 365 para evitar problemas negativos falsos](https://go.microsoft.com/fwlink/p/?LinkId=534225). Estas son útiles si tiene control de nivel de administrador y desea evitar falsos positivos o falsos negativos.
   
-Administrar los filtros de contenido mediante la revisión y, opcionalmente, cambiar la configuración predeterminada. Por ejemplo, puede cambiar la acción de lo que ocurre con los mensajes detectados como correo no deseado. Si desea seguir un enfoque agresivo para el filtrado de correo no deseado, puede configurar opciones de filtrado de spam avanzado. Se recomienda probar estas opciones en primer lugar antes implementarlos en el entorno de producción (activando ellos) se recomienda que las organizaciones que se preocupan por suplantación de identidad para convertir la **registro SPF: error** opción. Encontrará más información en la [configuración de sus directivas de filtro de correo no deseado](../configure-your-spam-filter-policies.md) y [Opciones de filtrado avanzadas correo no deseado](../advanced-spam-filtering-asf-options.md).
+Administre los filtros de contenido revisando y, opcionalmente, cambie la configuración predeterminada. Por ejemplo, puede cambiar la acción de qué ocurre con los mensajes detectados como correo no deseado. Si desea seguir un enfoque agresivo del filtrado de correo no deseado, puede configurar opciones avanzadas de filtrado de correo no deseado. Le recomendamos que Pruebe estas opciones primero antes de implementarlas en su entorno de producción (al activarlas) se recomienda que las organizaciones a las que les preocupa la suplantación de identidad (phishing) activen la opción **registro de SPF: error grave** . Para obtener más información, vea [configurar las directivas de filtro de correo no deseado](../configure-your-spam-filter-policies.md) y [Opciones avanzadas de filtrado de correo no deseado](../advanced-spam-filtering-asf-options.md).
   
 > [!IMPORTANT]
-> Si usa la acción de filtro de contenido de forma predeterminada, **mover el mensaje a la carpeta correo no deseado**, con el fin de garantizar que esta acción funciona con buzones locales, debe configurar reglas de flujo de correo de Exchange, también denominadas reglas de transporte, en sus instalaciones servidores para detectar los encabezados de spam agregados por elevación de privilegios. Para obtener información detallada, vea [Asegúrese de que el correo no deseado se enrute a la carpeta de correo no deseado de cada usuario](../ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). 
+> Si usa la acción de filtrado de contenido predeterminada, **mueva el mensaje a la carpeta correo no deseado**para asegurarse de que esta acción funcionará con los buzones locales, debe configurar las reglas de flujo de correo de Exchange (también conocidas como reglas de transporte) en su entorno local. servidores para detectar los encabezados de correo no deseado agregados por EOP. Para obtener más información, consulte [asegurarse de que el correo no deseado se enruta a la carpeta de correo no deseado de cada usuario](../ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). 
   
-Le recomendamos que revise la [protección contra correo no deseado preguntas más frecuentes](../anti-spam-protection-faq.md), incluidas la salida postal sección sobre procedimientos recomendados, que le ayudará a asegurarse de que el correo saliente se entrega.
+Le recomendamos que revise las [preguntas más frecuentes sobre protección contra correo electrónico no deseado](../anti-spam-protection-faq.md), incluida la sección procedimientos recomendados de correo saliente, que le permitirá garantizar que el correo saliente se entregue.
   
-Puede enviar (correo no deseado) de falsos negativos y falsos positivos (que no sean el correo no deseado) a Microsoft para su análisis de varias maneras. Para obtener información detallada, vea [enviar spam, no spam y los mensajes de estafas de suplantación de identidad a Microsoft para su análisis](../submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md).
+Puede enviar falsos negativos (correo no deseado) y falsos positivos (correo no deseado) a Microsoft para su análisis de varias formas. Para obtener más información, consulte [Enviar correo electrónico no deseado, mensajes sin correo no deseado y mensajes de suplantación de identidad a Microsoft para su análisis](../submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md).
   
 ## <a name="set-anti-malware-options"></a>Establecer opciones antimalware
 
-Revisar y ajustar las opciones de filtro de malware en el center(EAC) de administración de Exchange. Encontrará más información en [Configure anti-malware policies](../configure-anti-malware-policies.md). También se recomienda la lectura sobre otras preguntas más frecuentes y respuestas relativas a la protección contra malware en nuestra [protección Anti-malware preguntas más frecuentes ](../anti-malware-protection-faq-eop.md).
+Revise y ajuste la configuración del filtro de malware en el centro de administración de Exchange (EAC). Para obtener más información, vea [Configure anti-malware Policies](../configure-anti-malware-policies.md). También le recomendamos que lea información sobre otras preguntas frecuentes y respuestas relativas a la protección antimalware en nuestras [preguntas más frecuentes sobre protección contra malware ](../anti-malware-protection-faq-eop.md).
   
-Si le preocupan los archivos ejecutables que contienen malware, puede crear una regla de flujo de correo de Exchange que bloquee los datos adjuntos de correo electrónico que tengan contenido ejecutable. Siga los pasos descritos en el tema[Cómo reducir las amenazas de malware a través del bloqueo de datos adjuntos de los archivos en Exchange Online Protection](https://support.microsoft.com/kb/2959596) para bloquear los tipos de archivos que aparecen en "Tipos de archivo ejecutables admitidos para la inspección de reglas de transporte" en [Use mail flow rules to inspect message attachments](http://technet.microsoft.com/library/874d1c78-a8ec-4938-b388-d3208c2fa971.aspx).
+Si le preocupan los archivos ejecutables que contienen malware, puede crear una regla de flujo de correo de Exchange que bloquee todos los datos adjuntos de correo electrónico que tengan contenido ejecutable. Siga los pasos [que se describen en cómo reducir las amenazas de malware a través del bloqueo de datos adjuntos de archivos en Exchange Online Protection](https://support.microsoft.com/kb/2959596) para bloquear los archivos adjuntos a [mensajes en Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection)que aparecen en usar reglas de flujo de correo.
   
-Puede usar el filtro de tipos comunes de datos adjuntos en el EAC. Seleccione **protección** \> **filtros de malware**. Puede crear una regla de flujo de correo de Exchange, también denominada regla de transporte, que bloquea los datos adjuntos de correo electrónico que tengan contenido ejecutable. 
+Puede usar el filtro tipos de datos adJuntos comunes en el EAC. Seleccione **** \> **filtros de malware**de protección. Puede crear una regla de flujo de correo que bloquee todos los datos adjuntos de correo electrónico que tengan contenido ejecutable. 
   
 Para una mayor protección, también le recomendamos usar reglas de flujo de correo para bloquear algunas o todas las extensiones siguientes: ade, adp, ani, bas, bat, chm, cmd, com, cpl, crt, hlp, ht, hta, inf, ins, isp, job, js, jse, lnk, mda, mdb, mde, mdz, msc, msi, msp, mst, pcd, reg, scr, sct, shs, url, vb, vbe, vbs, wsc, wsf, wsh. Esto puede realizarse mediante la condición **La extensión de archivo de alguno de los datos adjuntos incluye estas palabras**. 
   
@@ -61,13 +61,13 @@ Los administradores y usuarios finales pueden enviar malware que logró pasar po
   
 ## <a name="create-mail-flow-rules"></a>Crear reglas de flujo de correo
 
-Cree reglas de flujo de correo, también denominadas reglas de transporte o filtros personalizados, según sus necesidades empresariales.
+Cree reglas de flujo de correo (también conocidas como reglas de transporte) o filtros personalizados para satisfacer sus necesidades empresariales.
   
 Al implementar una regla nueva en producción, seleccione primero uno de los modos de prueba para ver su efecto. Cuando tenga la seguridad de que la regla funciona como se espera, cambie el modo de la regla a **Exigir**.
   
 Al implementar reglas nuevas, considere la posibilidad de agregar la acción adicional de **Generar informe de incidentes** para supervisar la regla en acción. 
   
-Si se encuentra en una configuración de implementación híbrida, con parte de la organización local y parte en Office 365, puede crear reglas que se apliquen a toda la organización. Para ello, use condiciones que estén disponibles tanto localmente como en Office 365. Si bien la mayoría de las condiciones están disponibles en ambas implementaciones, hay un pequeño conjunto que es específico de un escenario de implementación determinado. Para más información, vea [Mail flow or Transport rules](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx).
+Si está en una configuración de implementación híbrida, con parte de su organización local y parte en Office 365, puede crear reglas que se apliquen a toda la organización. Para ello, use las condiciones que están disponibles tanto en local como en Office 365. Aunque la mayoría de las condiciones están disponibles en ambas implementaciones, hay un pequeño conjunto específico de un escenario de implementación en particular. Obtenga más información en [reglas de flujo de correo (reglas de transporte) en Exchange Online](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx).
   
 Si quiere inspeccionar los archivos adjuntos de correo electrónico de los mensajes en tránsito dentro de su organización, puede hacerlo mediante reglas de flujo de correo. Después, puede actuar en los mensajes inspeccionados en función del contenido o de las características de esos datos adjuntos. Obtenga más información en [Use mail flow rules to inspect message attachments](http://technet.microsoft.com/library/874d1c78-a8ec-4938-b388-d3208c2fa971.aspx).
   
@@ -90,7 +90,7 @@ El éxito de las campañas de correo no deseado y de suplantación de identidad 
   
 ### <a name="extension-blocking"></a>Bloqueo de extensiones
 
-Si le preocupa de archivos ejecutables que contienen código malintencionado, puede configurar directivas antimalware para bloquear todos los datos adjuntos de correo electrónico que tiene contenido ejecutable. Siga los pasos descritos en [Configure anti-malware policies](../configure-anti-malware-policies.md).
+Si le preocupan los archivos ejecutables que contienen malware, puede configurar directivas antimalware para bloquear todos los datos adjuntos de correo electrónico que tengan contenido ejecutable. Siga los pasos descritos en [Configure anti-malware Policies](../configure-anti-malware-policies.md).
   
 Para una mayor protección, también le recomendamos que bloquee algunas o todas las extensiones siguientes: ade, adp, ani, bas, bat, chm, cmd, com, cpl, crt, hlp, ht, hta, inf, ins, isp, job, js, jse, lnk, mda, mdb, mde, mdz, msc, msi, msp, mst, pcd, reg, scr, sct, shs, url, vb, vbe, vbs, wsc, wsf, wsh.
   

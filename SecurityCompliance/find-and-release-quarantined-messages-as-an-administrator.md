@@ -15,16 +15,16 @@ ms.assetid: ab95bf17-bb09-4dd1-9990-ddd02ddecf05
 ms.collection:
 - M365-security-compliance
 description: En este tema se describe cómo los administradores de Exchange Online y Exchange Online Protection (EOP) pueden buscar, liberar e informar sobre los mensajes en cuarentena en el centro de administración de Exchange (EAC).
-ms.openlocfilehash: 9c3501b79c6a733fd7b6239a26b7e7cfa69f3edc
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: aec067169b343ed186d506ed33c29385a7dc6450
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219040"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341791"
 ---
 # <a name="find-and-release-quarantined-messages-as-an-administrator"></a>Buscar y liberar mensajes en cuarentena como un administrador
 
-En este tema se describe la forma en que los administradores de Exchange Online y Exchange Online Protection (EOP) pueden buscar, liberar e informar sobre mensajes que residen en la cuarentena en el Centro de admin. de Exchange (EAC). Office 365 envía mensajes a la cuarentena ya sea porque los identifica como correo no deseado o porque coinciden con una regla de transporte. 
+En este tema se describe cómo los administradores de Exchange Online y Exchange Online Protection (EOP) pueden buscar, liberar e informar sobre los mensajes en cuarentena en el centro de administración de Exchange (EAC). Office 365 dirige los mensajes a la cuarentena ya sea porque se identificaron como correo no deseado o coincidieron con una regla de flujo de correo (también denominada regla de transporte). 
   
 Use el centro &amp; de seguridad y cumplimiento en lugar del EAC para completar cualquiera de estas tareas, así como para ver y trabajar con mensajes que se enviaron a cuarentena porque contienen malware. Para obtener más información, vea [cuarentena de mensajes de correo electrónico en Office 365](https://support.office.com/article/Quarantine-email-messages-in-Office-365-4c234874-015e-4768-8495-98fcccfc639b).
   
@@ -70,9 +70,9 @@ En el centro de administración de Exchange (EAC), puede filtrar elementos en cu
 6. **Expira** Puede seleccionar que el mensaje se elimine de la cuarentena en las próximas 24 horas ( **Hoy**), en las próximas 48 horas ( **Próximos 2 días**), en la próxima semana ( **Próximos 7 días**), o puede seleccionar un intervalo de tiempo personalizado en el cual se eliminará el mensaje de la cuarentena.
     
     > [!IMPORTANT]
-    > De manera predeterminada, los mensajes de correo no deseado se mantienen en cuarentena durante 15 días, mientras que los mensajes que coinciden con una regla de transporte se mantienen en cuarentena durante 7 días. Finalizado este tiempo, Office 365 elimina estos mensajes y ya no se pueden recuperar. No se puede configurar el periodo de retención de los mensajes en cuarentena que coinciden con una regla de transporte. Sin embargo, es posible reducir el período de retención de los mensajes de correo no deseado en cuarentena mediante la configuración **Mantener el correo no deseado durante (días)** en las directivas de filtro de contenido. Para obtener más información, consulte [Configurar las directivas de filtro de correo no deseado](configure-your-spam-filter-policies.md). 
+    > De forma predeterminada, los mensajes en cuarentena de correo no deseado se mantienen en cuarentena durante 15 días, mientras que los mensajes en cuarentena que coinciden con una regla de flujo de correo se mantienen en cuarentena durante 7 días. Después de este período de tiempo, Office 365 elimina los mensajes y no se pueden recuperar. No se puede configurar el período de retención de los mensajes en cuarentena que coinciden con una regla de flujo de correo. Sin embargo, el período de retención de los mensajes de correo no deseado en cuarentena puede reducirse a través de la configuración **conservar el correo no deseado durante (días)** en las directivas de filtro de contenido. Para obtener más información, consulte [configurar las directivas de filtro de correo no deseado](configure-your-spam-filter-policies.md). 
   
-7. **Tipo** Especifique si desea buscar los mensajes en cuarentena que se hayan identificado como **Correo no deseado** o si desea buscar los que coinciden con una **Regla de transporte**.
+7. **Tipo** Puede especificar si desea buscar mensajes en cuarentena que se hayan identificado como **correo no deseado**o si desea buscar los mensajes que coinciden con una regla de flujo de correo (**regla de transporte**).
     
 3. Haga clic en **Aceptar** para iniciar la ejecución de la búsqueda avanzada. 
     
@@ -90,7 +90,7 @@ Una vez encontrado un mensaje en cuarentena específico en la página **cuarente
     
     Los valores de **estado del mensaje** son: 
     
-  - **Tipo** Indica si el mensaje se ha identificado como **correo no deseado** o si coincide con una **regla de transporte**.
+  - **Tipo** Indica si el mensaje se ha identificado como **correo no deseado** o si coincide con una regla de flujo de correo (**regla de transporte**).
     
   - **Expira** La fecha en la que se eliminará el mensaje de la cuarentena. 
     
@@ -145,7 +145,7 @@ Si desea liberar los mensajes dirigidos para sus destinatarios, tiene las opcion
   
 Haga clic en **Liberar el mensaje seleccionado y permitir el remitente** en la lista desplegable. 
     
-3. Se abrirá el cuadro de diálogo **liberar mensaje y permitir remitente**. Si lo desea, puede informar del mensaje a Microsoft; a continuación, haga clic en **liberar y permitir**. El mensaje se liberará para todos los destinatarios y se permitirán todos los mensajes que este remitente envíe en el futuro. Sin embargo, si este mensaje se ha puesto en cuarentena debido a una regla de transporte o a un bloqueo del remitente, el remitente seguirá bloqueado para los mensajes futuros. 
+3. Se abrirá el cuadro de diálogo **liberar mensaje y permitir remitente** . Opcionalmente, puede elegir informar del mensaje a Microsoft y, a continuación, hacer clic en **liberar y permitir**. El mensaje se entregará a todos los destinatarios a los que se dirige y se permitirán todos los mensajes futuros de este remitente. Sin embargo, si este mensaje se ha puesto en cuarentena debido a una regla de flujo de correo o a un remitente bloqueado, el remitente seguirá bloqueado para futuros mensajes. 
     
 ### <a name="release-a-quarantined-message-to-specific-recipients-without-reporting-it-as-a-false-positive"></a>Liberar un mensaje en cuarentena para sus destinatarios sin identificarlo como falso positivo
 <a name="Releasequarantinedmessagetospecificrecipientswithoutreportingasfalsepositive"> </a>

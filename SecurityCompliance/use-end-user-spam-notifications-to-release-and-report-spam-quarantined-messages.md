@@ -13,12 +13,12 @@ ms.assetid: 4b250bc9-0056-4426-8397-7b4398f1b026
 ms.collection:
 - M365-security-compliance
 description: 'Los usuarios que ven un mensaje de notificación de correo no deseado para el usuario final de su administrador sobre el correo electrónico en cuarentena pueden realizar estas acciones en los mensajes. '
-ms.openlocfilehash: fac960a8eb090248988bd5a0072f659f04e852b9
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: adddd5032e6254b6084a7f6e714859b713815ed2
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30275220"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341241"
 ---
 # <a name="use-end-user-spam-notifications-to-release-and-report-spam-quarantined-messages"></a>Usar notificaciones de correo no deseado para el usuario final para liberar y notificar mensajes de correo no deseado en cuarentena
 
@@ -41,6 +41,6 @@ Puede realizar las siguientes acciones en cada mensaje:
 - **Identificar como correo deseado** Al hacer clic en este vínculo, se envía una copia del mensaje a Microsoft para que sea analizado. El equipo de correo no deseado evalúa y analiza el mensaje, y, según de los resultados del análisis, ajusta las reglas de filtro de correo no deseado para permitir que el mensaje pase. 
     
 > [!NOTE]
->  Los mensajes que se colocan en cuarentena debido a una coincidencia de regla de transporte no se incluyen en los mensajes en cuarentena de correo no deseado de usuario final. Solo se enumeran los mensajes en cuarentena de correo no deseado. >  Únicamente puede liberar un mensaje e identificarlo como un falso positivo (deseado) una vez. 
+>  Los mensajes que están en cuarentena debido a una coincidencia de regla de flujo de correo (también conocida como una) no se incluyen en los mensajes de cuarentena de correo no deseado del usuario final. Solo se muestran los mensajes de correo no deseado en cuarentena. > solo puede liberar un mensaje e identificarlo como un falso positivo (correo deseado) una vez. 
   
 

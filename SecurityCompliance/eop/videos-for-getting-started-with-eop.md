@@ -13,12 +13,12 @@ ms.assetid: c9c39ada-6100-4034-a479-8bd39d428498
 ms.collection:
 - M365-security-compliance
 description: La siguiente serie de vídeos le ayudará a configurar y usar el servicio de filtrado de correo electrónico hospedado en Exchange Online Protection (EOP).
-ms.openlocfilehash: 524eb25a3564a844d5cdd147a1101af87ddfc393
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: 65568d21f6b4cb718526a9c9dcddfef2f58b1ca1
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276010"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341191"
 ---
 # <a name="videos-for-getting-started-with-eop"></a>Vídeos de introducción a EOP
 
@@ -27,7 +27,7 @@ La siguiente serie de vídeos le ayudará a configurar y usar el servicio de fil
 > [!NOTE]
 > Antes de iniciar las tareas descritas en los vídeos, se recomienda configurar el flujo del correo. Para obtener más información, consulte el tema [Configure mail flow using connectors in Office 365](http://technet.microsoft.com/library/854b5a50-4462-4836-a092-37e208d29624.aspx). 
   
-En estos vídeos, se describe cómo personalizar la configuración de filtro de correo electrónico no deseado para satisfacer las necesidades de su organización. Para el correo entrante a través del servicio a su organización, esto incluye la creación de un remitente seguro y listas de remitentes bloqueados según direcciones IP y la configuración de filtro de contenido. También hay un vídeo que muestra cómo los administradores pueden encontrar y liberar mensajes de correo no deseado filtrados por contenido o mensajes que coincidieron con una regla de transporte y se enviaron a la cuarentena, y también cómo informar mensajes de correo no deseado para ayudarnos a mejorar el servicio.
+Estos vídeos están relacionados con la personalización de la configuración contra el correo no deseado para satisfacer las necesidades de su organización. Para el correo entrante que se transmite a través del servicio a su organización, esto incluye la creación de listas de remitentes seguros y bloqueados basada en direcciones IP y la configuración del filtro de contenido. También hay un vídeo que muestra cómo los administradores pueden buscar y liberar mensajes de correo no deseado filtrados por contenido o mensajes que coinciden con una regla de flujo de correo (también denominada regla de transporte) que se enviaron a la cuarentena, y también cómo notificar mensajes de correo no deseado para ayudarnos a mejorar el servicio.
   
 - Configurar listas de direcciones IP bloqueadas y direcciones IP permitidas en EOP
     > [!VIDEO https://www.microsoft.com/videoplayer/embed/b2f5bea3-e1a7-44b3-b7e2-07fac0d0ca40?autoplay=false]
@@ -58,12 +58,12 @@ EOP también tiene opciones de configuración sobre cómo administrar el malware
   
     Para obtener más información, consulte el tema [Configure anti-malware Policies](../configure-anti-malware-policies.md) . 
     
-Para filtrar y enrutar mensajes sobre condiciones específicas que establece, según la directiva o las regulaciones de la compañía, puede ver el vídeo sobre cómo crear reglas de transporte.
+Para filtrar y enrutar mensajes en función de condiciones específicas que establezca, según la Directiva o las regulaciones de la compañía, querrá ver el vídeo sobre cómo crear reglas de flujo de correo.
   
-- Configurar reglas de transporte de Exchange en EOP
+- Configurar reglas de flujo de correo de Exchange en EOP
     > [!VIDEO https://www.microsoft.com/videoplayer/embed/7cdcd2cb-9382-4065-98e1-81257b32a189?autoplay=false]
   
-    Para obtener más información, consulte el tema [reglas de flujo de correo (reglas de transporte) en Exchange Online Protection](mail-flow-rules-transport-rules-0.md) si usa EOP independiente o vea el tema [Transport rules](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx) si usa Exchange Online. 
+    Para obtener más información, consulte el tema [reglas de flujo de correo (reglas de transporte) en Exchange Online Protection](mail-flow-rules-transport-rules-0.md) si usa EOP independiente o vea [reglas de flujo de correo (reglas de transporte) en Exchange Online](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx) , si usa Exchange Online.
     
 Si está interesado en configurar el servicio al ejecutar los scripts de la línea de comandos, el vídeo de PowerShell remoto le ayudará a comenzar.
   

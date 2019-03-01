@@ -15,12 +15,12 @@ ms.assetid: 6ae78c12-7bbe-44fa-ab13-c3768387d0e3
 ms.collection:
 - M365-security-compliance
 description: Para asegurarse de que el correo electrónico enviado por personas de confianza no está bloqueado, puede usar la Directiva de filtro de conexión para crear una lista de permitidos, también conocida como lista de remitentes seguros, de las direcciones IP en las que confía. También puede crear una lista de remitentes bloqueados.
-ms.openlocfilehash: d7c99f8fb6b9b05efb800804927ccb26f7dd9f40
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 2b6cbb709eec6911e8aa83d560d5c00ad2a6e344
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216910"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341611"
 ---
 # <a name="configure-the-connection-filter-policy"></a>Configurar la directiva de filtro de conexión
  
@@ -98,9 +98,9 @@ Después de crear y aplicar la regla, el servicio omite el filtrado de correo no
   
 ### <a name="scoping-an-ip-allow-list-exception-for-a-specific-domain"></a>Ámbito de una excepción de lista de direcciones IP permitidas para un dominio específico
 
-En general, recomendamos agregar las direcciones IP (o los intervalos de direcciones IP) para todos los dominios que considere seguros para la lista de direcciones IP permitidas. Sin embargo, si no desea que su entrada de lista de direcciones IP permitidas se aplique a todos los dominios, puede crear una regla de transporte que excluya dominios específicos. 
+En general, se recomienda agregar las direcciones IP (o intervalos de direcciones IP) para todos los dominios que considere seguros para la lista de direcciones IP permitidas. Sin embargo, si no quiere que la entrada de la lista de direcciones IP permitidas se aplique a todos los dominios, puede crear una regla de flujo de correo (también denominada regla de transporte) que no sea un dominio específico. 
   
-Por ejemplo, supongamos que tiene tres dominios: ContosoA.com, ContosoB.com y and ContosoC.com y desea agregar la dirección IP (para simplificar el proceso, usaremos la dirección 1.2.3.4) y omitir el filtrado solo para el dominio ContosoB.com. Para ello, deberá crear una lista de direcciones IP permitidas para la dirección 1.2.3.4, que establecerá el nivel de confianza contra correo no deseado (SCL) en -1 (lo que implica que no se clasificará como correo no deseado) para todos los dominios. A continuación, podrá crear una regla de transporte que establezca el SCL de todos los dominios en 0 excepto para el dominio ContosoB.com. De este modo, el mensaje se volverá a analizar para todos los dominios asociados a la dirección IP salvo para el dominio ContosoB.com, que es el dominio que figura como excepción en la regla. ContosoB.com seguirá teniendo un SCL de -1, con lo que se omitirá el filtrado, mientras que los dominios ContosoA.com y ContosoC.com tendrán un SCL de 0, lo que implica que el filtro analizará todo el contenido.
+Por ejemplo, supongamos que tiene tres dominios: ContosoA.com, ContosoB.com y ContosoC.com, y que desea agregar la dirección IP (por razones de simplicidad, usar 1.2.3.4) y omitir el filtrado solo para ContosoB.com de dominio. Crearía una lista de direcciones IP permitidas para 1.2.3.4, que establece el nivel de confianza contra correo no deseado (SCL) en-1 (lo que significa que se clasifica como correo no deseado) para todos los dominios. A continuación, puede crear una regla de flujo de correo que establezca el SCL para todos los dominios excepto ContosoB.com a 0. Esto hace que el mensaje se vuelva a examinar para todos los dominios asociados con la dirección IP, excepto ContosoB.com, que es el dominio que aparece como excepción en la regla. ContosoB.com todavía tiene un SCL de-1 que significa el filtrado por omisión, mientras que ContosoA.com y ContosoC.com tienen tendrán de 0, lo que significa que el filtro de contenido volverá a examinarlos.
   
 Para ello, realice los siguientes pasos:
   

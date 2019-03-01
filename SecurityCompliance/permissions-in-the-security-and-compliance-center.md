@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: d10608af-7934-490a-818e-e68f17d0e9c1
 description: El centro de seguridad &amp; y cumplimiento de Office 365 le permite conceder permisos a personas que realizan tareas de cumplimiento como la administración de dispositivos, prevención de pérdida de datos, eDiscovery, retención, etc. Estos usuarios solo pueden realizar las tareas a las que les conceda acceso de forma explícita. Para obtener acceso al &amp; centro de seguridad y cumplimiento, los usuarios deben ser un administrador global de Office 365 o miembro de uno &amp; o varios grupos de roles del centro de cumplimiento de seguridad.
-ms.openlocfilehash: 3ff5583a0a4f9dcabcc1b7d676593b7c6eb0bbba
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: e935c71f9324dbce8e0b359bfe723b93ff500b0a
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223509"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341361"
 ---
 # <a name="permissions-in-the-office-365-security-amp-compliance-center"></a>Permisos en el centro de seguridad &amp; y cumplimiento de Office 365
 
@@ -47,7 +47,7 @@ Puede editar o eliminar los grupos de roles existentes, pero no lo recomendamos.
 
 En la siguiente tabla se enumeran los grupos de funciones predeterminados &amp; que están disponibles en el centro de seguridad y cumplimiento. Para conceder permisos a un usuario para que realice una tarea de cumplimiento, agréguelos al grupo &amp; de funciones del centro de cumplimiento de seguridad adecuado.
   
-La administración de permisos en &amp; el centro de seguridad y cumplimiento solo proporciona a los usuarios acceso a las características de &amp; cumplimiento que están disponibles en el propio centro de seguridad y cumplimiento. Si desea conceder permisos a otras características de cumplimiento que no se encuentren &amp; en el centro de seguridad y cumplimiento, como las reglas de transporte de Exchange, debe usar el centro de administración de Exchange.
+La administración de permisos en &amp; el centro de seguridad y cumplimiento solo proporciona a los usuarios acceso a las características de &amp; cumplimiento que están disponibles en el propio centro de seguridad y cumplimiento. Si desea conceder permisos a otras características de cumplimiento que no se encuentren &amp; en el centro de seguridad y cumplimiento, como reglas de flujo de correo de Exchange (también conocidas como reglas de transporte), debe usar el centro de administración de Exchange.
   
 Para ver cómo conceder acceso al centro de &amp; seguridad y cumplimiento, consulte [proporcionar a los usuarios acceso al centro de administración de cumplimiento de Office 365](grant-access-to-the-security-and-compliance-center.md).
   

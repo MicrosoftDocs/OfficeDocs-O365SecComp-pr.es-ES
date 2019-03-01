@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Use el centro de cumplimiento de & de seguridad de Office 365 para buscar en el registro de auditoría unificado para ver la actividad del usuario y del administrador de la organización de Office 365. '
-ms.openlocfilehash: 6cab2a0495b4c4b1976a5c45b898603653568599
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: ac4ded889b913b2a090e4002f917ec06485948e1
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296613"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341781"
 ---
 # <a name="search-the-audit-log-in-the-office-365-security--compliance-center"></a>Buscar el registro de auditoría en el centro de seguridad & cumplimiento de Office 365
 
@@ -295,12 +295,13 @@ Haga clic en uno de los siguientes vínculos para ir a una tabla específica.
 |:-----|:-----|:-----|
 |[Actividades de archivo y página](#file-and-page-activities)<br/> |[Actividades de carpeta](#folder-activities)<br/> |[Actividades de solicitud de acceso y uso compartido](#sharing-and-access-request-activities)<br/> |
 |[Actividades de sincronización](#synchronization-activities)<br/> |[Actividades de administración del sitio](#site-administration-activities)<br/> |[Actividades de buzón de Exchange](#exchange-mailbox-activities)<br/> |
-|[Actividades de Sway](#sway-activities) <br/> |[Actividades de administración de usuarios](#user-administration-activities) <br/> |[Actividades de administración de grupos de Azure AD](#azure-ad-group-administration-activities) <br/> |
-|[Actividades de administración de aplicaciones](#application-administration-activities) <br/> |[Actividades de administración de roles](#role-administration-activities) <br/> |[Actividades de administración de directorios](#directory-administration-activities) <br/> |
-|[actividades de eDiscovery](#ediscovery-activities) <br/> |[Actividades de Power BI](#power-bi-activities) <br/> |[Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)<br/>|
-[Actividades de Microsoft Teams](#microsoft-teams-activities) <br/> |[Actividades de Yammer](#yammer-activities) <br/> |[Microsoft Flow](#microsoft-flow) <br/> 
-|[Microsoft PowerApps](#microsoft-powerapps)<br/>|[Microsoft Stream](#microsoft-stream) <br/>|[Actividades de administración de Exchange](#exchange-admin-audit-log)<br/>|
-|||
+|[Actividades de la Directiva de retención y etiqueta](#retention-policy-and-label-activities) <br/>|[Actividades de Sway](#sway-activities) <br/> |[Actividades de administración de usuarios](#user-administration-activities) <br/> 
+|[Actividades de administración de grupos de Azure AD](#azure-ad-group-administration-activities) <br/> |[Actividades de administración de aplicaciones](#application-administration-activities) <br/> |[Actividades de administración de roles](#role-administration-activities) <br/> |
+|[Actividades de administración de directorios](#directory-administration-activities) <br/> |[actividades de eDiscovery](#ediscovery-activities) <br/> |[Actividades de Power BI](#power-bi-activities) <br/> |
+|[Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)<br/>|[Actividades de Microsoft Teams](#microsoft-teams-activities) <br/> |[Actividades de Yammer](#yammer-activities) <br/> |
+[Microsoft Flow](#microsoft-flow) <br/> |[Microsoft PowerApps](#microsoft-powerapps)<br/>|[Microsoft Stream](#microsoft-stream) <br/>|
+|[Actividades de administración de Exchange](#exchange-admin-audit-log)<br/>
+||||
    
   
 ### <a name="file-and-page-activities"></a>Actividades de archivo y página
@@ -450,8 +451,10 @@ En la siguiente tabla se enumeran las actividades que puede registrar el registr
 |**Nombre descriptivo**|**Operation**|**Descripción**|
 |:-----|:-----|:-----|
 |Se agregaron permisos de delegado de buzón  <br/> |Add-MailboxPermission  <br/> |Un administrador ha asignado el permiso de buzón de correo de FullAccess a un usuario (conocido como delegado) al buzón de otra persona. El permiso FullAccess permite al delegado abrir el buzón de la otra persona y leer y administrar el contenido del buzón.  <br/> |
+|Mensaje clasificado como registro  <br/> |ApplyRecordLabel<br/> |Un mensaje se clasificó como un registro. Esto ocurre cuando una etiqueta de retención que clasifica el contenido como un registro se aplica de forma manual o automática a un mensaje.<br/> |
 |Mensajes copiados a otra carpeta  <br/> |Copiar  <br/> |Un mensaje se copió en otra carpeta.  <br/> |
 |Elemento de buzón creado  <br/> |Crear  <br/> |Se crea un elemento en la carpeta calendario, contactos, notas o tareas del buzón de correo; por ejemplo, se crea una nueva convocatoria de reunión. Tenga en cuenta que no se audita la creación, el envío o la recepción de un mensaje. Además, no se audita la creación de una carpeta de buzón de correo.  <br/> |
+|Nueva regla de bandeja de entrada creada en Outlook Web App  <br/> |NewInboxRule<br/> |<br/> |
 |Mensajes eliminados de la carpeta elementos eliminados  <br/> |SoftDelete  <br/> |Un mensaje se eliminó o eliminó permanentemente de la carpeta elementos eliminados. Estos elementos se mueven a la carpeta elementos recuperables. Los mensajes también se mueven a la carpeta elementos recuperables cuando un usuario lo selecciona y presiona **Mayús + Supr**.<br/> |
 |Mensajes movidos a otra carpeta  <br/> |Mover  <br/> |Un mensaje se movió a otra carpeta.  <br/> |
 |Mensajes movidos a la carpeta elementos eliminados  <br/> |MoveToDeletedItems  <br/> |Un mensaje se eliminó y se movió a la carpeta Elementos eliminados.  <br/> |
@@ -466,6 +469,28 @@ En la siguiente tabla se enumeran las actividades que puede registrar el registr
 |None  <br/> |UpdateInboxRules  <br/> |Se ha agregado, quitado o cambiado una regla de bandeja de entrada. Las reglas de la bandeja de entrada se usan para procesar mensajes en la bandeja de entrada del usuario en función de las condiciones especificadas y emprender acciones cuando se cumplen las condiciones de una regla, como mover un mensaje a una carpeta especificada o eliminar un mensaje.<br/> Para devolver entradas para actividades de reglas de la bandeja de entrada, debe seleccionar **Mostrar resultados para todas las actividades** en la lista **actividades** . Use los cuadros intervalo de fechas y la lista **usuarios** para restringir los resultados de la búsqueda.<br/> |
 ||||
   
+### <a name="retention-policy-and-label-activities"></a>Actividades de la Directiva de retención y etiqueta
+
+En la tabla siguiente se describen las actividades relacionadas con las directivas de retención de Office 365 y las etiquetas de retención de Office 365 para obtener más información, vea:
+
+- [Información general sobre las directivas de retención](retention-policies.md)
+- [Introducción a las etiquetas de retención](labels.md)
+<br/>
+
+|**Actividad**|**Operation**|**Descripción**|
+|:-----|:-----|:-----|
+| Configuración de retención creada para una directiva de retención<br/> |NewRetentionComplianceRule<br/> |El administrador configura las opciones de retención de una nueva Directiva de retención. La configuración de retención incluye el tiempo que se conservan los elementos y lo que sucede con los elementos cuando expira el período de retención (como eliminar elementos, conservar elementos o retenerlos y eliminarlos). Esta actividad también corresponde a la ejecución del cmdlet [New-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentioncompliancerule) .<br/>|
+| Etiqueta de retención creada <br/> |NewComplianceTag<br/>  |El administrador crea una nueva etiqueta de retención.<br/> |
+| Directiva de retención creada<br/> |NewRetentionCompliancePolicy<br/> |El administrador crea una nueva Directiva de retención.<br/>  |
+| Configuración de retención eliminada para una directiva de retención<br/> | RemoveRetentionComplianceRule<br/>| El administrador elimina las opciones de configuración de una directiva de retención. Lo más probable es que esta actividad se registre cuando un administrador elimina una directiva de retención o ejecuta el cmdlet **Remove-RetentionComplianceRule** .<br/> |
+| Etiqueta de retención eliminada <br/> |RemoveComplianceTag<br/>  | El administrador elimina una etiqueta de retención.<br/>|
+| Directiva de retención eliminada<br/> |RemoveRetentionCompliancePolicy<br/> |El administrador elimina una directiva de retención. <br/>  |
+| Habilitar las características de cumplimiento normativo<br/> |SetRestrictiveRetentionUI<br/> |El administrador habilita las características de cumplimiento normativo mediante la ejecución del cmdlet **set-RegulatoryComplianceUI** . Después de ejecutar este cmdlet, los administradores pueden bloquear una directiva de retención y especificar una etiqueta de retención como un registro normativo mediante la interfaz de usuario del centro de cumplimiento de seguridad &. Hasta que una organización use el cmdlet **set-RegulatoryComplianceUI** para habilitar estas características, el bloqueo de una directiva de retención y la creación de una etiqueta de retención regulatoria solo puede realizarse con PowerShell.<br/>|
+| Configuración de retención actualizada para una directiva de retención<br/> | SetRetentionComplianceRule<br/>| El administrador cambia la configuración de retención de una directiva de retención existente. La configuración de retención incluye el tiempo que se conservan los elementos y lo que sucede con los elementos cuando expira el período de retención (como eliminar elementos, conservar elementos o retenerlos y eliminarlos). Esta actividad también corresponde a la ejecución del cmdlet [set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/set-retentioncompliancerule) .<br/>|
+| Etiqueta de retención actualizada <br/> |SetComplianceTag<br/>  | El administrador actualiza una etiqueta de retención existente.<br/>|
+| Directiva de retención actualizada<br/> |SetRetentionCompliancePolicy <br/>|El administrador actualiza una directiva de retención existente. Las actualizaciones que desencadenan este evento incluyen la adición o exclusión de ubicaciones de contenido a las que se aplica la Directiva de retención.<br/>|
+||||
+
 ### <a name="sway-activities"></a>Actividades de Sway
   
 En la siguiente tabla se enumeran las actividades de usuario y administrador en Sway. Sway es una aplicación de Office 365 que ayuda a los usuarios a recopilar, dar formato y compartir ideas, historias y presentaciones en un lienzo interactivo basado en Web. Para obtener más información, consulte [preguntas más frecuentes acerca de Sway: ayuda de administración](https://support.office.com/article/446380fa-25bf-47b2-996c-e12cb2f9d075).
@@ -663,7 +688,7 @@ En la siguiente tabla se enumeran las actividades de usuario y de administrador 
 |Archivo visto  <br/> |FileVisited  <br/> |El usuario ve un archivo.  <br/> |
 ||||
    
-### <a name="microsoft-flow"></a>Microsoft Flow
+### <a name="microsoft-flow-activities"></a>Actividades de Microsoft Flow
 
 Puede buscar en el registro de auditoría actividades de Microsoft Flow. Estas actividades incluyen la creación, edición y eliminación de flujos y el cambio de los permisos de flujo. Para obtener información sobre la auditoría de actividades de flujo, vea el blog [eventos de auditoría de Microsoft Flow ahora disponibles en el centro de seguridad _AMP_ cumplimiento de Office 365](https://flow.microsoft.com/blog/security-and-compliance-center).
 
@@ -671,10 +696,10 @@ Puede buscar en el registro de auditoría actividades de Microsoft Flow. Estas a
 
 Puede buscar en el registro de auditoría las actividades relacionadas con la aplicación en PowerApps. Estas actividades incluyen la creación, el inicio y la publicación de una aplicación. también se audita la asignación de permisos a las aplicaciones. Para obtener una descripción de todas las actividades de PowerApps, consulte [registro de actividades para PowerApps](https://docs.microsoft.com/en-us/power-platform/admin/logging-powerapps#what-events-are-audited).
 
-### <a name="microsoft-stream"></a>Microsoft Stream
+### <a name="microsoft-stream-activities"></a>Actividades de Microsoft Stream
   
 Puede buscar actividades en Microsoft stream en el registro de auditoría. Estas actividades incluyen actividades de vídeo realizadas por los usuarios, actividades de canal de grupo y actividades de administración, como la administración de usuarios, la administración de la configuración de la organización y la exportación de informes. Para obtener una descripción de estas actividades, consulte la sección "actividades registradas en Microsoft Stream" en [registros de auditoría de Microsoft Stream](https://docs.microsoft.com/stream/audit-logs).
-  
+
 ### <a name="exchange-admin-audit-log"></a>Registro de auditoría de administración de Exchange
   
 El registro de auditoría del administrador de Exchange, que se habilita de forma predeterminada en Office 365, registra un evento en el registro de auditoría de Office 365 cuando un administrador (o un usuario al que se le han asignado permisos administrativos) realiza un cambio en la organización de Exchange Online. Los cambios realizados mediante el uso del centro de administración de Exchange o mediante la ejecución de un cmdlet en Windows PowerShell se registran en el registro de auditoría de administración de Exchange. Para obtener información más detallada acerca del registro de auditoría de administrador en Exchange, consulte [registro de auditoría de administrador](https://go.microsoft.com/fwlink/p/?LinkID=619225).

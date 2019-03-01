@@ -15,12 +15,12 @@ ms.assetid: 31279431-828d-48bd-b979-20b6de15fa4a
 ms.collection:
 - M365-security-compliance
 description: El filtrado de correo no deseado se habilita automáticamente en toda la compañía con las directivas de correo no deseado predeterminadas (filtro de conexión, filtro de correo no deseado y correo no deseado saliente). Como administrador, puede ver y editar, y no eliminar, las directivas contra correo no deseado predeterminadas para que se adapten mejor a las necesidades de la organización. Para mayor granularidad, también puede crear directivas de filtro de correo no deseado personalizadas y aplicarlas a determinados usuarios, grupos o dominios de la organización. De manera predeterminada, las directivas personalizadas tienen prioridad sobre las directivas predeterminadas, pero esta prioridad se puede cambiar.
-ms.openlocfilehash: ebd65050fb5a0d3862653e0279ef530fbcabc042
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 3e972a150b70f1081cb4c3b5e3672a3acba34785
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215430"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30340971"
 ---
 # <a name="configure-the-anti-spam-policies"></a>Configurar las directivas contra correo electrónico no deseado
 
@@ -33,7 +33,7 @@ Para obtener más información acerca de la configuración de políticas contra 
 [Configurar las directivas de filtro de correo no deseado](configure-your-spam-filter-policies.md)
   
 > [!IMPORTANT]
-> Para clientes independientes de EOP: De manera predeterminada, los filtros de contenido de EOP envían mensajes detectados como correo no deseado a la carpeta Correo electrónico no deseado del destinatario. Sin embargo, a fin de garantizar que la acción **Mover mensaje a la carpeta Correo electrónico no deseado** va a funcionar en los buzones locales, debe configurar dos reglas de transporte de Exchange en los servidores locales para detectar los encabezados de correo no deseado agregados mediante EOP. Para más información, consulte [Asegurarse de que el correo no deseado se enruta a la carpeta de correo no deseado de cada usuario](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). 
+> Para clientes independientes de EOP: de manera predeterminada, los filtros de contenido de EOP envían mensajes detectados como correo no deseado a la carpeta de correo electrónico no deseado de cada destinatario. Sin embargo, para asegurarse de que la acción **mover el mensaje a la carpeta correo no deseado** funcionará con los buzones locales, debe configurar dos reglas de flujo de correo de Exchange (también conocidas como reglas de transporte) en los servidores locales para detectar los encabezados de correo no deseado agregados por EOP. Para obtener más información, consulte [asegurarse de que el correo no deseado se enruta a la carpeta de correo no deseado de cada usuario](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). 
   
 [Configurar la directiva de correo no deseado saliente](configure-the-outbound-spam-policy.md)
   

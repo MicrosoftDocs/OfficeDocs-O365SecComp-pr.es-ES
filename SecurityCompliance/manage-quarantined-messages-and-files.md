@@ -16,12 +16,12 @@ ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
 ms.collection:
 - M365-security-compliance
 description: 'Como administrador, puede ver, liberar e informar de mensajes falsos positivos en cuarentena en Office 365. Puede configurar directivas para que Office 365 filtre mensajes y los envíe a la cuarentena por varias razones: debido a que se identificaron como correo no deseado, en masa, con suplantación de identidad (phishing) o porque coincidieron con una regla de flujo de correo. '
-ms.openlocfilehash: 797a2e54d6f0a0b1f0d06bd287dd636988f078b5
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: c2a6fff9f6b4d93900174426e2230284695ff3bf
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276270"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341731"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-administrator-in-office-365"></a>Administrar archivos y mensajes en cuarentena como un administrador en Office 365
 
@@ -87,7 +87,7 @@ En función de la configuración, es posible que haya muchos archivos y mensajes
       - Para buscar archivos, establezca los filtros para mostrar **los archivos** en cuarentena debido a **malware**.<br/>
     Para los archivos en cuarentena, la página muestra todos los archivos en cuarentena, no solo los suyos, independientemente de lo que indique que se muestre.
     
-      - Para buscar mensajes en cuarentena, establezca filtros para mostrar **todos los** o **solo mi** **correo electrónico**. Para el último filtro, elija el tipo de mensaje en cuarentena que está buscando. Puede buscar mensajes en cuarentena que se hayan identificado como **correo no deseado**en los mensajes que coinciden con un flujo de correo o una **regla de transporte**, correo **masivo** , correo de suplantación de **identidad (phishing)** o correo que contenga **malware**.
+      - Para buscar mensajes en cuarentena, establezca filtros para mostrar **todos los** o **solo mi** **correo electrónico**. Para el último filtro, elija el tipo de mensaje en cuarentena que está buscando. Puede buscar mensajes en cuarentena que se hayan identificado como **correo no deseado**en los mensajes que coinciden con una regla de flujo de correo (**regla de transporte**), correo **masivo** , correo de suplantación de **identidad (phishing** ) o correo que contenga **malware**.
     
 2. En **ordenar resultados por**, seleccione el filtro o los filtros que desea usar para la búsqueda en las listas desplegables. Las opciones varían en función de si se está buscando archivos o mensajes. Los caracteres comodín no se admiten en los campos de búsqueda en este momento.<br/><br/>Para los archivos y los mensajes, puede elegir filtrar por la fecha en la que se envió el mensaje o el archivo a cuarentena. Puede especificar la fecha o un intervalo de fechas, incluida la hora. También puede filtrar los resultados de la búsqueda por la fecha de caducidad en la que se eliminará el archivo o mensaje de la cuarentena, o puede usar una combinación de filtros. Para buscar por fecha de expiración, elija **filtro avanzado**. En **fecha**de expiración, puede seleccionar mensajes que se eliminarán de la cuarentena en las próximas 24 horas ( **hoy**), en el siguiente 48 horas ( **próximos 2 días**), en la próxima semana ( **próximos 7 días**), o puede seleccionar un intervalo de tiempo personalizado.<br/><br/>Para los mensajes, tiene las siguientes opciones adicionales:
     
@@ -114,7 +114,7 @@ Al seleccionar un elemento que se muestra en la lista de cuarentena, verá un re
     
 - **Asunto**. Texto de la línea de asunto del mensaje. 
     
-- **Tipo**. Muestra si un mensaje se ha identificado como **correo no deseado**, en **masa**, **phish**, coincide con una regla de flujo de correo ( **regla de transporte**) o se identificó como **malware**que lo contiene.
+- **Tipo**. Muestra si un mensaje se ha identificado como **correo no deseado**, en **masa**, **phish**, coincide con una regla de flujo de correo (**regla de transporte**) o se identificó como **malware**que lo contiene.
     
 - **Expira**. Fecha y hora en que se eliminará automáticamente del mensaje la cuarentena. 
     

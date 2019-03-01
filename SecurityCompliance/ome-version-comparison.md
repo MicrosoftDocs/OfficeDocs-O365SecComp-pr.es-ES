@@ -10,12 +10,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Ayuda a explicar las diferencias en las características proporcionadas con diferentes versiones del cifrado de mensajes de Office 365, así como la forma en que los dos continúan funcionando.
-ms.openlocfilehash: 477fbe8f9d71bd92225a7ba5043576f164933b4e
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 47632d7e960e2dee2b068baaf46b98716fc8d4d0
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216680"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341441"
 ---
 # <a name="compare-versions-of-ome"></a>Comparar versiones de OME
 
@@ -31,7 +31,7 @@ En este artículo se compara el cifrado de mensajes de Office 365 heredado con l
 |                                   |Características antiguas       |                   |Características nuevas              |
 |-----------------------------------|-------------------|-------------------|--------------------------|
 |**Función**                     | **OME heredado**    | **IRM**           | **Nuevas funciones de OME** |
-|*Enviar un correo cifrado*        |Mediante reglas de flujo de correo de Exchange|Usuario final iniciado desde un equipo de escritorio de Outlook o Outlook en la web; o mediante reglas de flujo de correo de Exchange|Usuario final iniciado desde el escritorio de Outlook, Outlook para Mac o Outlook en la web; a través de las reglas de transporte de Exchange y la prevención de pérdida de datos (DLP) de Office 365|
+|*Enviar un correo cifrado*        |Mediante reglas de flujo de correo de Exchange|Usuario final iniciado desde un equipo de escritorio de Outlook o Outlook en la web; o mediante reglas de flujo de correo de Exchange|Usuario final iniciado desde el escritorio de Outlook, Outlook para Mac o Outlook en la web; mediante reglas de flujo de correo de Exchange (también conocidas como reglas de transporte) y la prevención de pérdida de datos (DLP) de Office 365|
 |*Plantilla de administración de derechos*       |   N/D      |No reEnviar opciones y plantillas personalizadas|Opción no reEnviar, opción de solo codificación y plantillas personalizadas|
 |*Tipo de destinatario*                   |Destinatarios internos y externos|Solo destinatarios internos         |Destinatarios internos y externos|
 |*Experiencia para destinatario interno*|Los destinatarios reciben un mensaje HTML que descargan y abren en un explorador Web o en una aplicación móvil|Experiencia en línea nativa en clientes de Outlook|Experiencia en línea nativa para destinatarios de Office 365. El resto de los destinatarios pueden leer el mensaje del portal de OME (no se requiere descarga ni aplicación).|

@@ -14,12 +14,12 @@ ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 ms.collection:
 - M365-security-compliance
 description: Cuando Exchange Online Protection examina un mensaje de correo entrante, inserta el encabezado **X-Forefront-Antispam-Report** en cada mensaje.
-ms.openlocfilehash: 13bcb3598552bbb63bd50b50963b9806c3f34844
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: fa14d32f06d07bf7c5131e9c417e9baa0720fcdd
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276200"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341741"
 ---
 # <a name="anti-spam-message-headers"></a>Encabezados de mensajes de correo no deseado
 
@@ -46,10 +46,10 @@ Al obtener acceso a la información del encabezado del mensaje, busque **X-Foref
 |IPV:CAL|El mensaje se permitió a través de los filtros de correo no deseado porque la dirección IP estaba incluida en una lista de direcciones IP permitidas en el filtro de conexión.|
 |IPV:NLI|La dirección IP no aparecía en ninguna lista de reputación de IP.|
 |SFV:SPM|El filtro de contenido marcó el mensaje como correo no deseado.|
-|SFV:SKS|El mensaje se marcó como correo no deseado antes de que el filtro de contenido lo procesara. Esto incluye los mensajes que coinciden con una regla de transporte que marca el mensaje automáticamente como correo no deseado y omite otros tipos de filtrado.|
+|SFV:SKS|El mensaje se marcó como correo no deseado antes de ser procesado por el filtro de contenido. Esto incluye los mensajes en los que el mensaje coincide con una regla de flujo de correo (también denominada regla de transporte) para marcarlo automáticamente como correo no deseado y omitir todos los filtros adicionales.|
 |SFV:SKA|El mensaje omitió el filtrado y se entregó a la bandeja de entrada porque coincidía con una lista de permitidos en la directiva de filtro de correo no deseado, como la lista de **remitentes permitidos**.|
 |SFV:SKB|El mensaje se marcó como correo no deseado porque coincidía con una lista de bloqueados en la directiva de filtro de correo no deseado, como la lista de **remitentes bloqueados**.|
-|SFV:SKN|El mensaje se marcó como correo seguro antes de que el filtro de contenido lo procesara. Esto incluye los mensajes que coinciden con una regla de transporte que marca el mensaje automáticamente como correo seguro y omite otros tipos de filtrado.|
+|SFV:SKN|El mensaje se marcó como correo no deseado antes de ser procesado por el filtro de contenido. Esto incluye los mensajes en los que el mensaje coincide con una regla de flujo de correo para marcarlo automáticamente como no correo no deseado y omitir todos los filtros adicionales.|
 |SFV:SKI|Similar a SFV:SKN, el mensaje omitió el filtrado por otra razón, por ejemplo, ser un mensaje de correo electrónico dentro un inquilino de la organización.|
 |SFV:SKQ|El mensaje fue publicado desde la cuarentena y se ha enviado a los destinatarios.|
 |SFV:NSPM|El mensaje se marcó como correo seguro y se envió a los destinatarios correspondientes.|

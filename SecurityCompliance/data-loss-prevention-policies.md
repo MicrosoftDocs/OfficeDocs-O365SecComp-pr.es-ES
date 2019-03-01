@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 1966b2a7-d1e2-4d92-ab61-42efbb137f5e
 description: Con una directiva de prevención de pérdida de datos (DLP) en el &amp; centro de seguridad y cumplimiento de Office 365, puede identificar, supervisar y proteger automáticamente la información confidencial en Office 365.
-ms.openlocfilehash: bf30e7de625903c3cce53407901f627ef1345d66
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 6f96d7150047190e3fec2894383cd56312cfd872
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218980"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341775"
 ---
 # <a name="overview-of-data-loss-prevention-policies"></a>Información general sobre directivas de prevención de pérdida de datos
 
@@ -456,7 +456,7 @@ DLP evalúa todo el contenido que se puede indizar. Para obtener más informaci�
 
 Cuando se crea una directiva DLP que incluye Exchange online como ubicación, la Directiva se sincroniza desde el centro de seguridad &amp; y cumplimiento de Office 365 a Exchange Online y, a continuación, desde Exchange Online a Outlook en la web y Outlook 2013 y versiones posteriores.
   
-Cuando se redacta un mensaje en Outlook, el usuario puede ver las sugerencias de directiva a medida que se evalúa el contenido que se está creando en las directivas de DLP. Y después de enviar un mensaje, se evalúa en las directivas DLP como una parte normal del flujo de correo, junto con las reglas de transporte de Exchange y las directivas de DLP creadas en el centro de administración de Exchange (consulte la siguiente sección para obtener más información). Las directivas de DLP examinan el mensaje y los datos adjuntos.
+Cuando se redacta un mensaje en Outlook, el usuario puede ver las sugerencias de directiva a medida que se evalúa el contenido que se está creando en las directivas de DLP. Y después de enviar un mensaje, se evalúa en las directivas de DLP como una parte normal del flujo de correo, junto con las reglas de flujo de correo de Exchange (también conocidas como reglas de transporte) y las directivas de DLP creadas en el centro de administración de Exchange (consulte la siguiente sección para obtener más información). Las directivas de DLP examinan el mensaje y los datos adjuntos.
   
 ### <a name="policy-evaluation-in-the-office-2016-desktop-programs"></a>Evaluación de la directiva en los programas de escritorio de Office 2016
 
