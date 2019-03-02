@@ -10,18 +10,21 @@ localization_priority: None
 search.appverid:
 - MET150
 ms.collection:
+- Strat_O365_Enterprise
 - M365-security-compliance
+- Strat_O365_Enterprise
 description: 'Resumen: una explicación del cifrado en Azure.'
-ms.openlocfilehash: 4d6d898ecd711f09519ca53eaebb8c345f443488
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: b8980b3979ada9ac02232065a27a7891936aa945
+ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276260"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "30357581"
 ---
 # <a name="office-365-encryption-in-azure"></a>Office 365 cifrado en Azure
 
 ## <a name="introduction"></a>Introducción
+
 Las protecciones tecnológicas de Azure, como las comunicaciones cifradas y los procesos operativos, ayudan a mantener los datos protegidos. También tiene la flexibilidad de implementar características de cifrado adicionales y administrar sus propias claves de cifrado. Independientemente de la configuración del cliente, Microsoft aplica el cifrado para proteger los datos de los clientes en Azure. Microsoft también le permite controlar los datos hospedados en Azure a través de una amplia variedad de tecnologías avanzadas para cifrar, controlar y administrar claves criptográficas, controlar y auditar el acceso a los datos. Además, Azure Storage ofrece un conjunto completo de capacidades de seguridad que permiten a los desarrolladores crear aplicaciones seguras de forma conjunta.
 
 Azure ofrece varios mecanismos para proteger los datos a medida que se mueven de una ubicación a otra. Microsoft usa TLS para proteger los datos cuando se transmite entre los servicios en la nube y los clientes. Los centros de recursos de Microsoft negocian una conexión TLS con los sistemas cliente que se conectan a los servicios de Azure. La confidencialidad directa perfecta (PFS) protege las conexiones entre los sistemas cliente de los clientes y los servicios en la nube de Microsoft con claves únicas. Las conexiones también usan longitudes de claves de cifrado de 2.048 bits basadas en RSA. Esta combinación dificulta que alguien intercepte y tenga acceso a los datos que están en tránsito.
@@ -33,14 +36,17 @@ Para datos en reposo, Azure ofrece muchas opciones de cifrado, como la compatibi
 Para obtener más información sobre el cifrado en Azure, vea [Azure Encryption Overview](https://docs.microsoft.com/azure/security/security-azure-encryption-overview) y [Azure Data Encryption-at-Rest](https://docs.microsoft.com/azure/security/azure-security-encryption-atrest).
 
 ## <a name="azure-disk-encryption"></a>Azure Disk Encryption
+
 [Azure Disk Encryption](https://docs.microsoft.com/azure/security/azure-security-disk-encryption) permite cifrar los discos de la infraestructura de Windows y Linux como discos de VM de servicio (IaaS). Azure Disk Encryption aprovecha la característica de BitLocker de Windows y la característica DM-Crypt de Linux para proporcionar cifrado de nivel de volumen para el sistema operativo y los discos de datos. También garantiza que todos los datos de los discos de máquina virtual estén cifrados en reposo en el almacenamiento de Azure. Azure Disk Encryption se integra con Azure Key Vault para ayudarle a controlar, administrar y auditar el uso de las claves de cifrado y los secretos.
 
 Para obtener más información, vea [Azure Disk Encryption for Windows and Linux IaaS VM](https://docs.microsoft.com/azure/security/azure-security-disk-encryption).
 
 ## <a name="azure-storage-service-encryption"></a>Cifrado de Azure Storage Service
+
 Con el cifrado de [Azure Storage Service](https://docs.microsoft.com/azure/storage/storage-service-encryption), Azure Storage cifra automáticamente los datos antes de almacenarlos en el almacenamiento y descifra los datos antes de la recuperación. Los procesos de cifrado, descifrado y administración de claves son totalmente transparentes para los usuarios. El cifrado del servicio de almacenamiento de Azure se puede usar para Azure [BLOB Storage](https://azure.microsoft.com/services/storage/blobs/) y [Azure files](https://azure.microsoft.com/services/storage/files/). También puede usar las claves de cifrado administradas por Microsoft con el cifrado del servicio de almacenamiento de Azure o puede usar sus propias claves de cifrado. (Para obtener información sobre el uso de sus propias claves, vea cifrado del [servicio de almacenamiento usando claves administradas por el cliente en Azure Key Vault](https://docs.microsoft.com/azure/storage/common/storage-service-encryption-customer-managed-keys). Para obtener información acerca del uso de las claves administradas por Microsoft, consulte [Storage Service Encryption for Data in Rest](https://docs.microsoft.com/azure/storage/storage-service-encryption).) Además, puede automatizar el uso de cifrado. Por ejemplo, puede habilitar o deshabilitar mediante programación el cifrado del servicio de almacenamiento en una cuenta de almacenamiento mediante la [API de REST del proveedor de recursos](https://msdn.microsoft.com/library/azure/mt163683.aspx)de almacenamiento de Azure, la [biblioteca cliente del proveedor de recursos de almacenamiento para .net](https://msdn.microsoft.com/library/azure/mt131037.aspx), [Azure PowerShell](https://docs.microsoft.com/powershell/azureps-cmdlets-docs)o la [CLI de Azure](https://docs.microsoft.com/azure/storage/storage-azure-cli).
 
 Algunos servicios de Office 365 usan Azure para almacenar datos. Por ejemplo, SharePoint Online y OneDrive para la empresa almacenan datos en el almacenamiento de blobs de Azure y Microsoft Teams almacena datos para su servicio de chat en tablas, blobs y colas. Además, la característica del administrador de cumplimiento del portal de confianza del servicio almacena datos introducidos por el cliente que se almacenan en formato cifrado en [Azure Cosmos dB](https://docs.microsoft.com/azure/cosmos-db/database-encryption-at-rest), una plataforma como servicio (PaaS), una base de datos de varios modelos distribuida en todo el mundo. El cifrado del servicio de almacenamiento de Azure cifra los datos almacenados en el almacenamiento de blobs de Azure y en tablas, y Azure Disk Encryption cifra los datos de las colas, así como los discos de la máquina virtual de Windows y IaaS para proporcionar cifrado de volumen para el sistema operativo y el disco de datos. La solución garantiza que todos los datos de los discos de la máquina virtual estén cifrados en reposo en el almacenamiento de Azure. El [cifrado en reposo en Azure Cosmos dB](https://docs.microsoft.com/azure/cosmos-db/database-encryption-at-rest) se implementa mediante el uso de varias tecnologías de seguridad, entre las que se incluyen sistemas de almacenamiento de claves seguros, redes cifradas y API criptográficas.
 
 ## <a name="azure-key-vault"></a>Azure Key Vault
+
 La administración de claves segura no es solo fundamental para los procedimientos recomendados de cifrado; también es esencial para proteger los datos en la nube. [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/key-vault-whatis) le permite cifrar claves y secretos pequeños como contraseñas que usan claves almacenadas en módulos de seguridad de hardware (HSM). Azure Key Vault es la solución recomendada por Microsoft para administrar y controlar el acceso a las claves de cifrado que usan los servicios en la nube. Los permisos para las claves de acceso se pueden asignar a los servicios o a los usuarios con cuentas de Azure Active Directory. Azure Key Vault libera a las organizaciones de la necesidad de configurar, aplicar revisiones y mantener los HSM y el software de administración de claves. Con Azure Key Vault, Microsoft nunca ve que sus claves y aplicaciones no tienen acceso directo a ellas; mantener el control. También puede importar o generar claves en HSM. las organizaciones que tienen una suscripción que incluye Azure Information Protection pueden configurar el inquilino de Azure Information Protection para que use una clave administrada por el cliente y que [incorpore su propia clave](https://docs.microsoft.com/information-protection/plan-design/byok-price-restrictions) (BYOK)) y [Registre su uso](https://docs.microsoft.com/information-protection/deploy-use/log-analyze-usage).

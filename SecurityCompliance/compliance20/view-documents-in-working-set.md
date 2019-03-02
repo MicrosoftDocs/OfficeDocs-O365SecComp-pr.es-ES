@@ -3,23 +3,21 @@ title: Ver documentos de un conjunto de trabajo
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: ''
 ms.audience: Admin
 ms.topic: article
-ms.service: o365-administration
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: ''
 description: ''
-ms.openlocfilehash: 155d5663ff54e48bee0c0561e58319b5f213c016
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 1502308fab4f27ed9e93e1dff204bdddf6ae726e
+ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30306519"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "30357461"
 ---
 # <a name="view-documents-in-a-working-set"></a>Ver documentos de un conjunto de trabajo
 

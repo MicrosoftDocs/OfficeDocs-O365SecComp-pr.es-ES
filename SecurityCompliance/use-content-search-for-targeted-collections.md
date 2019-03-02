@@ -12,12 +12,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 description: Use la búsqueda de contenido en el centro &amp; de seguridad y cumplimiento de Office 365 para realizar colecciones de destino. Una colección de destino significa que tiene la certeza de que los elementos que responden a un caso o los elementos con privilegios están ubicados en un buzón o carpeta de sitio específicos. Use el script de este artículo para obtener el identificador de carpeta o la ruta de acceso de las carpetas de sitio o de buzón de correo específicas que desea buscar.
-ms.openlocfilehash: c6e837e2f95b4f2ae3e32344f966f096407e360e
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 6c41069a268991553f03763ae80dea032d5db202
+ms.sourcegitcommit: 03054baf50c1dd5cd9ca6a9bd5d056f3db98f964
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296933"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "30354692"
 ---
 # <a name="use-content-search-in-office-365-for-targeted-collections"></a>Usar la búsqueda de contenido en Office 365 para colecciones dirigidas
 
@@ -55,7 +55,7 @@ El script que se ejecuta en el primer paso devolverá una lista de carpetas de b
     
 - **Sus credenciales de usuario** : el script usará sus credenciales para conectarse a Exchange Online y &amp; al centro de seguridad y cumplimiento con PowerShell remoto. Como se ha explicado anteriormente, tiene que asignar los permisos adecuados para que este script se ejecute correctamente.
     
-Para mostrar una lista de las carpetas del buzón o los nombres de las rutas de acceso a sitios:
+Para mostrar una lista de las carpetas del buzón o los nombres de documentlink (ruta de acceso) del sitio:
   
 1. Guarde el siguiente texto en un archivo de script de Windows PowerShell mediante un sufijo de nombre de archivo de. ps1; por ejemplo, `GetFolderSearchParameters.ps1`.
     
@@ -66,9 +66,10 @@ Para mostrar una lista de las carpetas del buzón o los nombres de las rutas de 
   #      Online and who is an eDiscovery Manager in the Security &amp; Compliance Center.           #
   # The script will then:                                           #
   #    * If an email address is supplied: list the folders for the target mailbox.          #
-  #    * If a SharePoint or OneDrive for Business site is supplied: list the folder paths for the site. #
-  #    * In both cases, the script supplies the correct search properties (folderid: or path:)      #
-  #      appended to the folder ID or path ID to use in a Content Search.               #
+  #    * If a SharePoint or OneDrive for Business site is supplied: list the documentlinks (folder paths) #
+  #    * for the site.                                                                                  #
+  #    * In both cases, the script supplies the correct search properties (folderid: or documentlink:)  #
+  #      appended to the folder ID or documentlink to use in a Content Search.              #
   # Notes:                                              #
   #    * For SharePoint and OneDrive for Business, the paths are searched recursively; this means the   #
   #      the current folder and all sub-folders are searched.                       #
@@ -154,7 +155,7 @@ Para mostrar una lista de las carpetas del buzón o los nombres de las rutas de 
           {
               $rawUrl = $match.Value
               $rawUrl = $rawUrl -replace "Data Link: " -replace "," -replace "}"
-              Write-Host "path:""$rawUrl"""
+              Write-Host "DocumentLink:""$rawUrl"""
           }
       }
       else
@@ -196,18 +197,15 @@ El ejemplo del paso 2 muestra la consulta utilizada para buscar en la subcarpeta
   
 ### <a name="script-output-for-site-folders"></a>Salida de script para carpetas de sitio
 
-Si va a obtener rutas de sitios de SharePoint o de OneDrive para la empresa, el script se &amp; conecta al centro de seguridad y cumplimiento mediante PowerShell remoto, crea una nueva búsqueda de contenido que busca carpetas en el sitio y, a continuación, muestra una lista de las carpetas. ubicado en el sitio especificado. El script muestra el nombre de cada carpeta y agrega el prefijo de la **ruta de acceso** (que es el nombre de la propiedad del sitio) a la dirección URL de la carpeta. Dado que la propiedad **path** es una propiedad que se puede buscar, `path:<path>` usará en una consulta de búsqueda en el paso 2 para buscar en esa carpeta. 
+Si está obteniendo documentlinks de sitios de SharePoint o de OneDrive para la empresa, el script se conecta &amp; al centro de seguridad y cumplimiento mediante PowerShell remoto, crea una nueva búsqueda de contenido que busca carpetas en el sitio y, a continuación, muestra una lista de los carpetas ubicadas en el sitio especificado. El script muestra el nombre de cada carpeta y agrega el prefijo de la **ruta de acceso** (que es el nombre de la propiedad del sitio) a la dirección URL de la carpeta. Dado que la propiedad **path** es una propiedad que se puede buscar, `path:<path>` usará en una consulta de búsqueda en el paso 2 para buscar en esa carpeta. 
   
 A continuación, se muestra un ejemplo de los resultados devueltos por el script para las carpetas del sitio.
   
-![Ejemplo de la lista de nombres de ruta de acceso para las carpetas de sitio devueltas por el script](media/519e8347-7365-4067-af78-96c465dc3d15.png)
+![Ejemplo de la lista de nombres de documentlink para las carpetas de sitio devueltas por el script](media/519e8347-7365-4067-af78-96c465dc3d15.png)
   
-## <a name="step-2-use-a-folder-id-or-path-to-perform-a-targeted-collection"></a>Paso 2: usar un identificador de carpeta o una ruta de acceso para realizar una colección de destino
+## <a name="step-2-use-a-folder-id-or-documentlink-to-perform-a-targeted-collection"></a>Paso 2: usar un identificador de carpeta o documentlink para realizar una colección de destino
 
-Después de ejecutar el script para recopilar una lista de identificadores de carpeta o rutas de acceso para un usuario específico, el siguiente paso para &amp; ir al centro de cumplimiento y crear una nueva búsqueda de contenido para buscar en una carpeta específica. Use la `folderid:<folderid>` propiedad o `path:<path>` en la consulta de búsqueda que configure en el cuadro palabra clave de búsqueda de contenido (o como el valor para el parámetro *ContentMatchQuery* si usa el cmdlet **New-ComplianceSearch** ). Puede combinar la `folderid` propiedad o `path` con otros parámetros de búsqueda o condiciones de búsqueda. Si solo incluye la `folderid` propiedad o `path` en la consulta, la búsqueda devolverá todos los elementos que se encuentran en la carpeta especificada. 
-  
-> [!NOTE]
-> Usar la `path` propiedad para buscar en ubicaciones de OneDrive no devolverá archivos multimedia, como archivos. png,. TIFF o. wav, en los resultados de la búsqueda. 
+Después de ejecutar el script para recopilar una lista de identificadores de carpeta o documentlinks para un usuario específico, siga el paso siguiente para ir &amp; al centro de cumplimiento de seguridad y crear una nueva búsqueda de contenido para buscar en una carpeta específica. Use la `folderid:<folderid>` propiedad o `documentlink:<path>` en la consulta de búsqueda que configure en el cuadro palabra clave de búsqueda de contenido (o como el valor para el parámetro *ContentMatchQuery* si usa el cmdlet **New-ComplianceSearch** ). Puede combinar la `folderid` propiedad o `documentlink` con otros parámetros de búsqueda o condiciones de búsqueda. Si solo incluye la `folderid` propiedad o `documentlink` en la consulta, la búsqueda devolverá todos los elementos que se encuentran en la carpeta especificada. 
   
 1. Vaya a [https://protection.office.com](https://protection.office.com).
     
@@ -227,17 +225,17 @@ Después de ejecutar el script para recopilar una lista de identificadores de ca
     
 6. Haga clic en **Siguiente**.
     
-7. En el cuadro palabra clave de la página **¿qué desea que busquemos?** , pegue el `folderid:<folderid>` valor `path:<path>` o deVuelto por el script en el paso 1. 
+7. En el cuadro palabra clave de la página **¿qué desea que busquemos?** , pegue el `folderid:<folderid>` valor `documentlink:<path>` o deVuelto por el script en el paso 1. 
     
     Por ejemplo, en la siguiente captura de pantalla se buscará cualquier elemento de la subcarpeta dePuraciones en la carpeta elementos recuperables del usuario (el valor de la `folderid` propiedad de la subcarpeta purgas se muestra en la captura de pantalla del paso 1):
     
-    ![Pegue la folderId o ruta de acceso en el cuadro de palabra clave de la consulta de búsqueda](media/84057516-b663-48a4-a78f-8032a8f8da80.png)
+    ![Pegue el folderId o documentlink en el cuadro de palabras clave de la consulta de búsqueda](media/84057516-b663-48a4-a78f-8032a8f8da80.png)
   
 8. Haga clic en **Buscar** para iniciar la búsqueda de colección de destino. 
   
 ### <a name="examples-of-search-queries-for-targeted-collections"></a>Ejemplos de consultas de búsqueda para colecciones dirigidas
 
-A continuación se muestran algunos ejemplos de `folderid` cómo `path` usar las propiedades y en una consulta de búsqueda para realizar una colección de destino. Tenga en cuenta que los marcadores de `folderid:<folderid>` posición `path:<path>` se usan para y para ahorrar espacio. 
+A continuación se muestran algunos ejemplos de `folderid` cómo `documentlink` usar las propiedades y en una consulta de búsqueda para realizar una colección de destino. Tenga en cuenta que los marcadores de `folderid:<folderid>` posición `documentlink:<path>` se usan para y para ahorrar espacio. 
   
 - En este ejemplo se buscan tres carpetas de buzón diferentes. Puede usar sintaxis de consulta similar para buscar en las carpetas ocultas de la carpeta elementos recuperables de un usuario.
     
@@ -254,13 +252,13 @@ A continuación se muestran algunos ejemplos de `folderid` cómo `path` usar las
 - En este ejemplo se busca en una carpeta del sitio (y en cualquier subcarpeta) documentos que contengan las letras "NDA" en el título.
     
   ```
-  path:<path> AND filename:nda
+  documentlink:<path> AND filename:nda
   ```
 
 - En este ejemplo se busca en una carpeta del sitio (y en cualquier subcarpeta) los documentos que se han modificado en un intervalo de fechas.
     
   ```
-  path:<path> AND (lastmodifiedtime>=01/01/2017 AND lastmodifiedtime<=01/21/2017)
+  documentlink:<path> AND (lastmodifiedtime>=01/01/2017 AND lastmodifiedtime<=01/21/2017)
   ```
   
 ## <a name="more-information"></a>Más información
@@ -273,8 +271,6 @@ Tenga en cuenta lo siguiente cuando use el script de este artículo para realiza
     
 - Al buscar carpetas de buzón de correo, solo se buscará en `folderid` la carpeta especificada (identificada por su propiedad). No se buscará en las subcarpetas. Para buscar en las subcarpetas, debe usar el identificador de carpeta de la subcarpeta que desea buscar. 
     
-- Al realizar búsquedas en carpetas de sitio, se buscará `path` en la carpeta (identificada por su propiedad) y en todas las subcarpetas. 
+- Al realizar búsquedas en carpetas de sitio, se buscará `documentlink` en la carpeta (identificada por su propiedad) y en todas las subcarpetas. 
     
-- Como se mencionó anteriormente, no se `path` puede usar Property para buscar archivos multimedia, como archivos. png,. TIFF o. wav, ubicados en ubicaciones de OneDrive. Use una [propiedad de sitio](keyword-queries-and-search-conditions.md#searchable-site-properties) diferente para buscar archivos multimedia en las carpetas de OneDrive. 
-
 - Al exportar los resultados de una búsqueda en la que solo especificó `folderid` la propiedad en la consulta de búsqueda, puede elegir la primera opción de exportación: "todos los elementos, excluidos los que tienen un formato no reconocido, están cifrados o no se indizaron por otros motivos". Todos los elementos de la carpeta siempre se exportarán independientemente de su estado de indización, ya que el identificador de carpeta siempre está indizado.

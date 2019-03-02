@@ -10,14 +10,16 @@ localization_priority: None
 search.appverid:
 - MET150
 ms.collection:
+- Strat_O365_Enterprise
 - M365-security-compliance
+- Strat_O365_Enterprise
 description: Información general sobre el cifrado en la nube de Microsoft.
-ms.openlocfilehash: 8d4b94908e9847062ff5f4612b8726b44a36a59f
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: 36bb50cda5f39461401b14ca3e7ada77a6e2cc0d
+ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30275950"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "30357521"
 ---
 # <a name="encryption-in-the-microsoft-cloud"></a>Cifrado en Microsoft Cloud
 
@@ -36,6 +38,7 @@ De acuerdo con la norma de seguridad operativa de la infraestructura de clave p�
 FIPS 140-2 es un estándar diseñado específicamente para validar módulos de producto que implementan la criptografía en lugar de los productos que los usan. Los módulos criptográficos que se implementan dentro de un servicio pueden certificarse para cumplir los requisitos de seguridad de hash, la administración de claves y similares. Todas las capacidades de cifrado de tiempo que se emplean para proteger la confidencialidad, la integridad o la disponibilidad de los datos en los servicios en la nube de Microsoft, los módulos y los cifrados que se usan cumplen el estándar FIPS 140-2.
 
 Microsoft certifica los módulos criptográficos subyacentes que se usan en nuestros servicios en la nube con cada nueva versión del sistema operativo Windows:
+
 - Azure y Azure U.S. Government
 - Dynamics 365 y Dynamics 365 U.S. Government
 - Office 365, Office 365 el gobierno de Estados Unidos y Office 365 para la defensa del gobierno de Estados Unidos

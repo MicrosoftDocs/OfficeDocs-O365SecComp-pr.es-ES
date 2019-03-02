@@ -11,13 +11,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 1a7be622-f6a5-4ce1-a343-f249475334f6
+ms.collection:
+- M365-security-compliance
 description: Obtenga información sobre cómo configurar y descargar un informe con un intervalo de fechas personalizado y filtros en el &amp; centro de seguridad y cumplimiento.
-ms.openlocfilehash: 7e4d152509a6e904c7df5ea7c8ccddf9503a35da
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 912dfb43a7fd146f4fb00eb68a7d1004db81466c
+ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219710"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "30357471"
 ---
 # <a name="set-up-and-download-a-custom-report-in-the-security-amp-compliance-center"></a>Configurar y descargar un informe personalizado en el centro de &amp; seguridad y cumplimiento
 

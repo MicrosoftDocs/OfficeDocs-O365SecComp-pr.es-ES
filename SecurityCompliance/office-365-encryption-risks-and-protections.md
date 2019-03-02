@@ -10,14 +10,16 @@ localization_priority: None
 search.appverid:
 - MET150
 ms.collection:
+- Strat_O365_Enterprise
 - M365-security-compliance
+- Strat_O365_Enterprise
 description: 'Resumen: comprenda la resistencia de los datos en Microsoft Office 365.'
-ms.openlocfilehash: 8cfdcc62a28ba5feaf9a76e0ec004fd1b3890831
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: c154637ad2834622ba61baf115454cdb9a076e45
+ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276160"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "30357621"
 ---
 # <a name="encryption-risks-and-protections"></a>Riesgos y protección de cifrado
 

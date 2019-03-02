@@ -10,20 +10,23 @@ localization_priority: None
 search.appverid:
 - MET150
 ms.collection:
+- Strat_O365_Enterprise
 - M365-security-compliance
+- Strat_O365_Enterprise
 description: 'Resumen: breve explicación de cómo Microsoft cifra los datos en tránsito.'
-ms.openlocfilehash: 596b884ac76c9b138d01958363c7921acf926345
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: ba1317a0a2a685d0f3ac2216939d04e402503e49
+ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30275850"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "30357611"
 ---
 # <a name="office-365-encryption-for-data-in-transit"></a>Office 365 cifrado para los datos en tránsito
 
 Además de proteger los datos de clientes en reposo, Microsoft usa tecnologías de cifrado para proteger los datos de clientes de Office 365 en tránsito. 
 
 Los datos están en tránsito:
+
 - Cuando un equipo cliente se comunica con un servidor de Office 365;
 - Cuando un servidor de Office 365 se comunica con otro servidor de Office 365; y
 - Cuando un servidor de Office 365 se comunica con un servidor que no es Office 365 (por ejemplo, Exchange online que entrega el correo electrónico a un servidor de correo electrónico externo).
@@ -33,6 +36,7 @@ Las comunicaciones entre centros de recursos entre Office 365 Servers tienen lug
 Los certificados públicos los emite SSL de Microsoft IT con SSLAdmin, una herramienta interna de Microsoft para proteger la confidencialidad de la información transmitida. Todos los certificados emitidos por Microsoft IT tienen un mínimo de 2048 bits de longitud [](http://www.webtrust.org/homepage-documents/item70372.pdf) y el cumplimiento de WebTrust requiere SSLAdmin para asegurarse de que los certificados solo se emiten para las direcciones IP públicas que pertenecen a Microsoft. Las direcciones IP que no cumplan este criterio se enrutan a través de un proceso de excepción.
 
 Todos los detalles de implementación, como la versión de TLS que se usa, si la confidencialidad directa (FS) está habilitada, el orden de los conjuntos de cifrado, etc., están disponibles públicamente. Una forma de ver estos detalles es usar un sitio web de terceros, como Qualys SSL Labs (www.ssllabs.com). A continuación se muestran los vínculos a páginas de prueba automatizadas desde Qualys que muestran información para los siguientes servicios:
+
 - [Portal de Office 365](https://www.ssllabs.com/ssltest/analyze.html?d=portal.office.com&hideResults=on)
 - [Exchange Online](https://www.ssllabs.com/ssltest/analyze.html?d=outlook.office365.com&hideResults=on)
 - [SharePoint Online](https://www.ssllabs.com/ssltest/analyze.html?d=microsoft-my.sharepoint.com&hideResults=on)

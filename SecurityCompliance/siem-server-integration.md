@@ -8,17 +8,18 @@ ms.topic: article
 ms.date: 10/29/2018
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Ent_O365
+ms.collection:
+- M365-security-compliance
 ms.custom:
 - Ent_Solutions
 - SIEM
 description: 'Resumen: Lea este artículo para obtener información general sobre la integración del servidor SIEM con Microsoft 365.'
-ms.openlocfilehash: 4b9b631ab27d777be610ed3b954acc7b2c3bdf50
-ms.sourcegitcommit: 1c73c2f83703af0a30a5b0633db00d8e0e6b39b5
+ms.openlocfilehash: 3f906fb082ec2c1a026940d2b5701a3d1fbec393
+ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "30241882"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "30357501"
 ---
 # <a name="siem-server-integration-with-microsoft-365-services-and-applications"></a>Integración del servidor de SIEM con los servicios y aplicaciones de Microsoft 365
 
