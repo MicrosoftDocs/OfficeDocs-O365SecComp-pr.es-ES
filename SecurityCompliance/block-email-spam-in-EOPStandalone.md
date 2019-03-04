@@ -16,12 +16,12 @@ ms.assetid: da21c0b6-e8f0-4cc8-af2e-5029a9433d59
 ms.collection:
 - M365-security-compliance
 description: Documento para administradores de EOP independiente para evitar falsos negativos de correo no deseado
-ms.openlocfilehash: c9b17704c514fd83f8c00a51fad76cddb26e378c
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 598f63bba4be32c6c664db83126b40c5fae159a0
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30306549"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341821"
 ---
 ## <a name="customize-the-office-365-anti-spam-filter-with-these-settings"></a>Personalizar el filtro contra correo no deseado de Office 365 con estas opciones de configuración
 
@@ -37,9 +37,9 @@ Para personalizar el filtro contra correo no deseado de Office 365, agregue la d
     
 3. Para agregar la dirección IP a la lista de direcciones IP bloqueadas, siga los pasos que se indican en “Usar el EAC para editar la directiva de filtro de conexión predeterminada” en [Configurar la directiva de filtro de conexiones](https://technet.microsoft.com/es-ES/library/jj200718%28v=exchg.150%29.aspx).
     
-### <a name="block-bulk-mail-with-transport-rules-or-the-spam-filter"></a>Bloquear el correo masivo con regla de transporte o el filtro de correo no deseado
+### <a name="block-bulk-mail-with-mail-flow-rules-transport-rules-or-the-spam-filter"></a>Bloquear el correo masivo con reglas de flujo de correo (reglas de transporte) o el filtro de correo no deseado
 
-¿Es el correo no deseado principalmente correo masivo (por ejemplo, boletines o promociones)? Puede personalizar el filtro de correo no deseado en Office 365 si [usa reglas de transporte para filtrar de forma agresiva mensajes de correo masivo](https://technet.microsoft.com/es-ES/library/dn720438%28v=exchg.150%29.aspx) o activa la opción **Correo masivo** en las [Opciones avanzadas de filtrado de correo no deseado](https://technet.microsoft.com/es-ES/library/jj200750%28v=exchg.150%29.aspx) del filtro de correo no deseado. En el Centro de administración de Exchange, primero haga clic en **Protección** \> **Filtro de contenido** y, después, haga doble clic en la directiva de filtro que quiera ajustar. Haga clic en **Acciones de correo no deseado y correo masivo** para ajustar la configuración, como se muestra aquí. 
+¿Es el correo no deseado principalmente correo masivo (por ejemplo, boletines o promociones)? Puede personalizar el filtro de correo no deseado en Office 365 si [usa reglas de flujo de correo para configurar el filtro de mensajes de correo masivo](use-transport-rules-to-configure-bulk-email-filtering.md) o activar la opción **Correo masivo** en las [Opciones avanzadas de filtrado de correo no deseado](advanced-spam-filtering-asf-options.md) del filtro de correo no deseado. En el centro de administración de Exchange, primero haga clic en **Protección** \> **Filtro de contenido** y, después, haga doble clic en la directiva de filtro que quiera ajustar. Haga clic en **Acciones de correo no deseado y correo masivo** para ajustar la configuración, como se muestra aquí. 
   
 ![Establecer el filtro de correo masivo en Exchange Online](media/a45095c2-269d-45b8-a76c-999b5e78da68.png)
   

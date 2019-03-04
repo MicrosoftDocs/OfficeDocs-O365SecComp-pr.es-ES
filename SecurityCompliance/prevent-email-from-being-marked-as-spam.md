@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 34823bbc-a3e3-4949-ba42-97c73997eeed
 description: Obtenga información sobre cómo evitar los falsos positivos y evitar que el correo electrónico deseado se marque como no deseado en Office 365.
-ms.openlocfilehash: 7d64beb5070b62640ce0af2e7f18ed8ea4199dda
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 10d71519da1639073122b0a89652753f466f6dbe
+ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296893"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30341481"
 ---
 # <a name="how-to-prevent-real-email-from-being-marked-as-spam-in-office-365"></a>Evitar que el correo electrónico real se marque como correo no deseado en Office 365
 
@@ -41,7 +41,7 @@ En el encabezado, busque los siguientes encabezados y valores.
 
 - **SFV:BLK** Indica que el mensaje se marcó como correo no deseado porque la dirección de envío se encuentra en la lista de remitentes bloqueados del destinatario. 
     
-- **SFV:SKS** Indica que el mensaje se marcó como correo no deseado antes del filtro de contenido. Esto puede ocurrir debido a una regla de transporte que marque el mensaje como correo no deseado. Ejecute un seguimiento de mensajes para ver si se desencadenó una regla de transporte que pudiera establecer un nivel de confianza contra correo no deseado (SCL) alto. 
+- **SFV:SKS** Indica que el mensaje se marcó como correo no deseado antes del filtro de contenido. Esto puede ocurrir debido a una regla de flujo de correo (también conocida como regla de transporte) que marque el mensaje como correo no deseado. Ejecute un seguimiento de mensajes para ver si se desencadenó una regla de flujo de correo que pudiera establecer un nivel de confianza contra correo no deseado (SCL) alto. 
     
 - **SFV:SKB** Indica que el mensaje se marcó como correo no deseado porque coincidía con una lista de bloqueados en la directiva de filtro contra correo no deseado. 
     
@@ -59,7 +59,7 @@ Para funcionar correctamente, Exchange Online Protection (EOP) necesita que los 
   
 ### <a name="for-admins"></a>Para administradores
 
-- **Apuntar los registros DNS a Office 365** Para que EOP proporcione protección, los registros DNS del agente de intercambio de correo (MX) de todos los dominios tienen que apuntar a Office 365 (y únicamente a Office 365). Si los registros MX no apuntan a Office 365, EOP no proporcionará el filtrado de correo no deseado para los usuarios. Si quiere usar otro servicio o dispositivo para proporcionar filtrado de correo no deseado para su dominio, puede deshabilitar la protección contra correo no deseado en EOP. Para hacerlo, cree una regla de transporte que establezca el valor de SCL en -1. Si posteriormente decide usar EOP, asegúrese de quitar esta regla de transporte. 
+- **Apuntar los registros DNS a Office 365** Para que EOP proporcione protección, los registros DNS del agente de intercambio de correo (MX) de todos los dominios tienen que apuntar a Office 365 (y únicamente a Office 365). Si los registros MX no apuntan a Office 365, EOP no proporcionará el filtrado de correo no deseado para los usuarios. Si quiere usar otro servicio o dispositivo para proporcionar filtrado de correo no deseado para su dominio, puede deshabilitar la protección contra correo no deseado en EOP. Para hacerlo, cree una regla de flujo de correo que establezca el valor de SCL en -1. Si posteriormente decide usar EOP, asegúrese de quitar esta regla de flujo de correo. 
     
 - **Activar el complemento Usar el mensaje de informe para los usuarios** Es muy recomendable que [habilite el complemento de mensaje de informe para los usuarios](enable-the-report-message-add-in.md). Como administrador, es posible que también pueda ver los comentarios que los usuarios envían y usar cualquier patrón para ajustar la configuración que pueda estar causando problemas.
     
