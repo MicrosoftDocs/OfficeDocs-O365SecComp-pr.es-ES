@@ -1,39 +1,43 @@
 ---
 title: Reducir el correo no deseado en Office 365
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 6/7/2018
 ms.audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Priority
-ms.collection: Strat_O365_IP
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: 07824c51-2c45-4005-8596-03c0d7c4ff2a
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
+- Strat_O365_IP
 description: Obtenga información sobre las formas más comunes de reducir el correo masivo y el correo no deseado en Office 365.
-ms.openlocfilehash: fc7181333b9914673c9919d7132af99fec294773
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 5dac207393864f95f769ac205277b0c969f2fe32
+ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219930"
+ms.lasthandoff: 03/01/2019
+ms.locfileid: "30357551"
 ---
 # <a name="how-to-reduce-spam-email-in-office-365"></a>Reducir el correo no deseado en Office 365
 
  **¿Recibe demasiado correo no deseado en Office 365? Siga este procedimiento.**
   
-Muchos de los problemas relacionados con el correo no deseado en Office 365 pueden solucionarse si se [analizan los encabezados de mensaje de correo electrónico](https://support.office.com/article/cd039382-dc6e-4264-ac74-c048563d212c) y se determina cuál fue el problema. Deberá buscar un encabezado llamado X-Forefront-Antispam-Report.
+Se recomienda informar de los mensajes que constituyan falsos negativos [usando el complemento Denunciar mensaje](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2) para ayudarnos a mejorar nuestros filtros. Además, puede reenviar el mensaje *como elemento adjunto* a junk@office365.microsoft.com o a phish@office365.microsoft.com (si se trataba de suplantación de identidad).
 
-  Si contiene la cadena SFV:NSPM, quiere decir que Exchange Online Protection (EOP) analizó el mensaje y determinó que no era correo no deseado. Si no está de acuerdo, se trata de un falso negativo y es muy recomendable que [use el complemento Denunciar mensaje](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2) para ayudarnos a mejorar nuestros filtros.
+> [!TIP]
+> Si cree que el mensaje es correo no deseado y está en la carpeta Correo no deseado, esto no debería suponer un problema. Si no desea que aparezca en ninguna parte del buzón, debe cambiar la directiva contra correo no deseado para poner el mensaje en cuarentena. Encontrará más información acerca de poner un mensaje en cuarentena en [Quarantine email messages in Office 365](quarantine-email-messages.md) (Poner mensajes de correo electrónico en cuarentena en Office 365).
 
-  Si no ve este valor en los encabezados, puede que no se realizara un análisis de correo no deseado del mensaje, o bien se produjo un problema de configuración que causó que el mensaje omitiera. En este caso, vea la información siguiente. 
-  
-Obtenga más información sobre los [encabezados de mensaje contra correo no deseado](https://technet.microsoft.com/library/dn205071%28v=exchg.150%29.aspx).
+## <a name="fixing-allowed-spam"></a>Se ha solucionado el correo no deseado permitido
 
-## <a name="solutions-to-common-causes-of-getting-too-much-spam"></a>Soluciones para causas comunes de recibir demasiado correo no deseado
+A menudo vemos que los clientes reciben correo no deseado en su bandeja de entrada debido a configuraciones incorrectas. La más común es configurar los dominios en una regla de flujo de correo (también conocida como regla de transporte) que permite omitir los filtros o incluir su dominio o dominios en la lista de remitentes permitidos o seguros. Esto no es conveniente porque estos mensajes omiten el filtrado contra correo no deseado cuando se podrían haber filtrado.  
+
+## <a name="solutions-to-other-common-causes-of-getting-too-much-spam"></a>Soluciones para otras causas comunes de la recepción de demasiado correo no deseado
 
 Para impedir que se reciba demasiado correo no deseado, Exchange Online Protection (EOP) necesita que los administradores completen algunas tareas. Si no es el administrador de su espacio empresarial de Office 365 y recibe demasiado correo no deseado, le recomendamos que trabaje con su administrador en relación con estas tareas. De lo contrario, puede ir directamente a la sección para usuarios.
   
@@ -45,13 +49,11 @@ Para impedir que se reciba demasiado correo no deseado, Exchange Online Protecti
     
     Al ver el resultado, el valor de la propiedad Enable tiene que ser True. Si está establecida en False, ejecute Set-MailboxJunkEmailConfiguration para cambiarla a True.
     
-- **Comprobar las reglas de flujo del correo y las listas seguras** Examine el encabezado de un mensaje que tendría que haberse marcado como correo no deseado. Busque la propiedad SCL en el encabezado X-Forefront-Antispam-Report. Si el valor de SCL es -1, esto indica que el mensaje se agregó a la lista segura y omitió el filtrado de correo no deseado de EOP. Investigue las reglas de flujo del correo, las listas de permitidos y la lista de remitentes permitidos de los destinatarios. [Buscar y corregir problemas de entrega de correo electrónico como administrador de Office 365](https://support.office.com/article/e7758b99-1896-41db-bf39-51e2dba21de6) para empresas también resultará útil para proporcionar detalles sobre los motivos por los que un mensaje recibió un SCL de -1. 
-    
-- **Crear reglas de flujo del correo en un servidor Exchange local** Si usa Exchange Online Protection, pero los buzones se encuentran en un servidor Exchange local, tendrá que crear un par de reglas de flujo del correo en el servidor Exchange local. Vea las [instrucciones para EOP solo](https://technet.microsoft.com/library/ms.exch.eac.EditAntispamPolicy_SpamAction%28EXCHG.150%29.aspx?v=15.20.548.14&amp;l=1&amp;s=BPOS_S_E15_0).
+- **Crear reglas de flujo del correo en un servidor Exchange local** Si usa Exchange Online Protection, pero los buzones se encuentran en un servidor Exchange local, tendrá que crear un par de reglas de flujo del correo en el servidor Exchange local. Vea las [instrucciones para EOP solo](https://docs.microsoft.com/previous-versions/exchange-server/exchange-150/jj900470(v=exchg.150)).
     
 - **Marcar correo masivo como correo no deseado** El correo masivo es el correo electrónico al que puede que los usuarios se suscribieran, pero se sigue considerando correo no deseado. En el encabezado de mensaje, busque la propiedad BCL (nivel de confianza en masa) en el encabezado X-Microsoft-Antispam. Si el valor de BCL es inferior al umbral establecido en el filtro de correo no deseado, puede ajustar el umbral para que, en su lugar, marque estos tipos de mensajes masivos como correo no deseado. Diferentes usuarios tienen distintas tolerancias y preferencias para la [administración del correo masivo](https://docs.microsoft.com/es-ES/office365/SecurityCompliance/bulk-complaint-level-values). Puede crear distintas directivas o reglas para diferentes preferencias de usuario. 
     
-- **Bloquear inmediatamente un remitente** Si necesita bloquear de forma inmediata un remitente, puede bloquearlo por dirección de correo electrónico, dominio o dirección IP. Vea [Bloquear el correo no deseado con el filtro contra correo no deseado de Office 365 para evitar problemas de falsos negativos](block-email-spam-to-prevent-false-negatives.md). Una entrada en una lista de permitidos del usuario final puede invalidar un bloqueo establecido por el administrador.
+- **Bloquear inmediatamente un remitente** Si necesita bloquear de forma inmediata un remitente, puede hacerlo por dirección de correo electrónico, dominio o dirección IP. Vea [Usar el CAE (Centro de Administración de Exchange) para crear una regla de flujo de correo que bloquee los mensajes enviados desde un dominio o usuario](create-organization-wide-safe-sender-or-blocked-sender-lists-in-office-365.md#use-the-eac-to-create-a-mail-flow-rule-that-blocks-messages-sent-from-a-domain-or-user). Una entrada en una lista de permitidos del usuario final puede invalidar un bloque establecido por el administrador.
     
 - **Activar el complemento Denunciar mensaje para los usuarios** Es muy recomendable que [habilite el complemento Denunciar mensaje para los usuarios](enable-the-report-message-add-in.md). Como administrador, es posible que también pueda ver los comentarios que los usuarios envían y usar cualquier patrón para ajustar la configuración que pueda estar causando problemas.
     
