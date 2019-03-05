@@ -8,15 +8,19 @@ ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
+ms.collection:
+- Ent_O365
+- Strat_O365_IP
+- M365-security-compliance
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 description: Le guía por la configuración recomendada para la configuración de todos los inquilinos que afectan a la seguridad de su entorno de Office 365. Las necesidades de seguridad pueden requerir más o menos seguridad. Use estas recomendaciones como punto de partida.
-ms.openlocfilehash: b94d894770462adc317f3307bfb16d5f643dfa14
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: 249ccda6bdd474c853dc5e1941d49ea182e2dad1
+ms.sourcegitcommit: 15983a08a4ae9c2050344172c7e957830ce3867e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341511"
+ms.lasthandoff: 03/04/2019
+ms.locfileid: "30373931"
 ---
 # <a name="configure-your-office-365-tenant-for-increased-security"></a>Configurar su inquilino de Office 365 para aumentar la seguridad
 
@@ -118,7 +122,7 @@ Más información:
     
 ![Panel de Cloud App Security](media/1fb2aa65-54b8-4746-9f5e-c187d339e9f5.png)
   
-## <a name="additional-resources"></a>Recursos adicionales
+## <a name="additional-resources"></a>Otros recursos
 
 En estos artículos y guías se proporciona información preceptiva adicional para proteger el entorno de Office 365:
   
