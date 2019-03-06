@@ -6,17 +6,18 @@ manager: laurawi
 ms.audience: Admin
 ms.service: O365-seccomp
 localization_priority: Priority
-ms.collection: Strat_O365_IP
+ms.collection: M365-security-compliance
+ms.topic: article
 search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de confidencialidad, puede asignar automáticamente una etiqueta a un documento o correo electrónico, o bien puede pedir a los usuarios que seleccionen la etiqueta recomendada.
-ms.openlocfilehash: 3009056989b0cc26f8b2c76db4318042ce470482
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 2a57d51dce77e44fe4098f038babca3d6d015e8c
+ms.sourcegitcommit: 0a1ce1ac45672d1d98eb7dbcfd4f0179d9eb4509
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214851"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30412938"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Aplicar automáticamente una etiqueta de confidencialidad al contenido
 
@@ -76,3 +77,7 @@ Este es un ejemplo de un mensaje que se muestra al configurar una condición par
 ## <a name="how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label"></a>Forma en que se evalúan varias condiciones cuando se aplican en más de una etiqueta
 
 Las etiquetas se ordenan para su evaluación según la posición que especifique en la directiva: la primera etiqueta colocada tiene la posición inferior (menor confidencialidad) y la última etiqueta colocada tiene la posición superior (mayor confidencialidad). Para obtener más información sobre la prioridad, vea [Prioridad de etiqueta (el orden importa)](sensitivity-labels.md#label-priority-order-matters).
+
+## <a name="dont-configure-a-parent-label-to-be-applied-automatically-or-recommended"></a>No configure una etiqueta principal para que se aplique o recomiende automáticamente
+
+Recuerde que una etiqueta principal (una etiqueta con subetiquetas) no se puede aplicar al contenido. Asegúrese de no configurar una etiqueta principal para que se aplique o recomiende automáticamente, ya que la etiqueta principal no se aplicará al contenido en las aplicaciones de Office que usan el cliente de etiquetado unificado de Azure Information Protection. Para obtener más información sobre las etiquetas principales y las subetiquetas, consulte [Subetiquetas (agrupación de etiquetas)](sensitivity-labels.md#sublabels-grouping-labels).

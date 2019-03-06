@@ -5,21 +5,20 @@ author: stephow-MSFT
 manager: laurawi
 ms.date: 10/22/2018
 ms.audience: Admin
-ms.topic: overview
+ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Priority
-ms.collection: Strat_O365_IP
+ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Con las etiquetas de confidencialidad de Office 365, puede clasificar y ayudar a proteger el contenido confidencial, sin poner impedimentos a la productividad y la capacidad de colaboración de los usuarios. Puede usar etiquetas de confidencialidad para aplicar opciones de protección como encriptación o marcas de agua en el contenido con la etiqueta.
-ms.openlocfilehash: 449b2567366bb262d469d78d3de447cccf04389b
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 6f624308e7cbfb7aae738e0c08505412314200e7
+ms.sourcegitcommit: 0a1ce1ac45672d1d98eb7dbcfd4f0179d9eb4509
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220950"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30412958"
 ---
 # <a name="overview-of-sensitivity-labels"></a>Información general de etiquetas de confidencialidad
 
@@ -97,9 +96,11 @@ Un documento o correo electrónico puede tener solo una etiqueta de confidencial
 
 ### <a name="sublabels-grouping-labels"></a>Subetiquetas (agrupación de etiquetas)
 
-Con las subetiquetas, puede agrupar una o varias etiquetas bajo un encabezado que un usuario vea en una aplicación de Office. Por ejemplo, bajo Confidencial, su organización puede usar varias etiquetas distintas para determinados tipos dentro de esa clasificación. En este ejemplo, la etiqueta Confidencial es simplemente una etiqueta de texto sin ninguna configuración de protección y, como contiene subetiquetas, no se puede aplicar al contenido. En su lugar, los usuarios deben elegir Confidencial para ver las subetiquetas y, a continuación, pueden elegir una subetiqueta para que se aplique al contenido.
+Con las subetiquetas, puede agrupar una o varias etiquetas bajo una etiqueta principal que el usuario ve en la aplicación de Office. Por ejemplo, en Confidencial, su organización puede usar varias etiquetas distintas para determinados tipos dentro de esa clasificación. En este ejemplo, la etiqueta principal Confidencial es simplemente una etiqueta de texto sin ninguna configuración de protección y, como contiene subetiquetas, no se puede aplicar al contenido. En su lugar, los usuarios deben elegir Confidencial para ver las subetiquetas y, a continuación, pueden elegir una subetiqueta para que se aplique al contenido.
 
-Las subetiquetas son simplemente una forma de presentar etiquetas a los usuarios en grupos lógicos. Las subetiquetas no heredan ninguna configuración de la etiqueta bajo la que están.
+Las subetiquetas son simplemente una forma de presentar etiquetas a los usuarios en grupos lógicos. Las subetiquetas no heredan ninguna configuración de su etiqueta principal. Las subetiquetas pueden aplicarse al contenido, las etiquetas principales no.
+
+(Además, no debería elegir una etiqueta principal como etiqueta predeterminada (vea la sección siguiente), o configurar una etiqueta principal para que se aplique o recomiende automáticamente, ya que la etiqueta principal no se aplicará al contenido en las aplicaciones de Office que usan el cliente de etiquetado unificado de Azure Information Protection).
 
 ![Subetiquetas agrupadas en la cinta de opciones](media/Sensitivity_label_grouped_labels.png)
 
@@ -117,7 +118,7 @@ Con una directiva de etiqueta, puede:
 
 - **Elegir qué usuarios y grupos ven las etiquetas.** Las etiquetas pueden publicarse en cualquier grupo de seguridad habilitado para correo electrónico, grupo de distribución, grupo de Office 365 o grupo de distribución dinámico.
 
-- **Aplicar una etiqueta predeterminada** a todos los nuevos documentos y correos electrónicos creados por los usuarios y grupos incluidos en la directiva de etiqueta. Esta etiqueta predeterminada puede establecer un nivel base de configuración de protección que desee aplicar a todo su contenido.
+- **Aplicar una etiqueta predeterminada** a todos los nuevos documentos y correos electrónicos creados por los usuarios y grupos incluidos en la directiva de etiqueta. Esta etiqueta predeterminada puede establecer un nivel base de configuración de protección que desee aplicar a todo su contenido. (Tenga en cuenta que un )
 
 - **Requerir una justificación para cambiar una etiqueta.** Si el contenido está marcado como Confidencial y un usuario desea quitar esa etiqueta o reemplazarla con una clasificación inferior, como una etiqueta denominada Público, puede hacer que el usuario necesite proporcionar una justificación para realizar esta acción. Estas justificaciones estarán disponibles para que el administrador las revise. Actualmente estamos trabajando en un informe en el que los administradores puedan ver las justificaciones de los usuarios.
 
