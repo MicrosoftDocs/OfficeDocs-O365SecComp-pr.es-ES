@@ -3,7 +3,7 @@ title: Habilitar el complemento de mensajes de informe
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 01/18/2019
+ms.date: 03/05/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,14 +15,17 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo habilitar el complemento de mensajes de informe para Outlook y Outlook en la web, para usuarios individuales o para toda la organización.
-ms.openlocfilehash: c184b7ac1baef297d65e6e93e4e7a085920d87b0
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: aba02855b514f0d631d332623d840f9c65911bd1
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341431"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410905"
 ---
 # <a name="enable-the-report-message-add-in"></a>Habilitar el complemento de mensajes de informe
+
+> [!NOTE]
+> El complemento de mensajes de informe para Outlook y Outlook en la web no es exactamente lo mismo que el [filtro de correo electrónico no deseado de Outlook](https://support.office.com/article/Overview-of-the-Junk-Email-Filter-5ae3ea8e-cf41-4fa0-b02a-3b96e21de089), aunque ambos pueden usarse para marcar el correo electrónico como correo no deseado, no deseado o como un intento de suplantación de identidad. La diferencia es que el complemento de mensajes de informe para Outlook y Outlook en la web notifica a Microsoft sobre el correo electrónico no clasificado, mientras que el filtro de correo electrónico no deseado de Outlook se usa para organizar los mensajes de correo electrónico en el buzón de un usuario. 
 
 ## <a name="overview"></a>Información general
 
@@ -31,14 +34,13 @@ El complemento de mensajes de informe para Outlook y Outlook en la web permite a
 Por ejemplo, supongamos que las personas están notificando una gran cantidad de mensajes como suplantación de identidad. Esta información se Surfaces en el [Panel de seguridad](security-dashboard.md) y otros informes. El equipo de seguridad de su organización puede usar esta información como indicación de que es posible que sea necesario actualizar las directivas antiphishing. O bien, si los usuarios notifican un gran número de mensajes que se marcaron como correo no deseado mediante el complemento de mensajes de informe, es posible que el equipo de seguridad de la organización deba ajustar [las directivas contra correo no deseado](configure-the-anti-spam-policies.md). 
 
 El complemento de mensajes de informe funciona con su suscripción a Office 365 y los productos siguientes:
- - Outlook en la Web
+ - Outlook en la web
  - Outlook 2013 SP1
  - Outlook 2016
  - Outlook 2016 para Mac
  - Outlook incluido con Office 365 proPlus
 
-> [!NOTE]
-> El complemento de mensajes de informe para Outlook y Outlook en la web no es exactamente lo mismo que el [filtro de correo electrónico no deseado de Outlook](https://support.office.com/article/Overview-of-the-Junk-Email-Filter-5ae3ea8e-cf41-4fa0-b02a-3b96e21de089), aunque ambos pueden usarse para marcar el correo electrónico como correo no deseado, no deseado o como un intento de suplantación de identidad. El complemento de mensajes de informe para Outlook y Outlook en la web notifica a Microsoft sobre el correo electrónico no clasificado, mientras que el filtro de correo electrónico no deseado de Outlook se usa para organizar los mensajes de correo electrónico en el buzón de un usuario. 
+El explorador Web existente debería ser suficiente para que funcione el complemento de mensajes de informe; sin embargo, si observa que el complemento no está disponible o no funciona como se esperaba, pruebe con otro explorador.
   
 Si es un usuario individual, puede [Habilitar el complemento de mensajes de informe para usted mismo](#get-the-report-message-add-in-for-yourself). 
   
@@ -50,7 +52,7 @@ Si es un administrador global de Office 365 o un administrador de Exchange Onlin
     
 2. Elija **obtenerLO ahora**.<br/>![Mensaje de informe: obtenerlo ahora](media/ReportMessageGETITNOW.png)<br/> 
     
-3. Revise las condiciones de uso y la Directiva de privacidad. A continuación, elija **continuar**. 
+3. Revise las condiciones de uso y la Directiva de privacidad. Después, elija **Continuar**. 
     
 4. Inicie sesión en Office 365 con su cuenta profesional o educativa (para uso empresarial) o su cuenta Microsoft (para uso personal).
     
@@ -139,8 +141,8 @@ Puede revisar y editar la configuración predeterminada para el complemento de m
 2. Busque y seleccione el complemento de mensajes de informe.<br/>![Buscar y seleccionar el complemento de mensajes de informe](media/FindReportMessageAddIn.png)<br/> 
     
 3. En la pantalla de mensaje de informe, revise y edite las opciones según corresponda para su organización.<br/>![Configuración del complemento de mensajes de informe](media/EditReportMessageAddIn.png)<br/> 
-  
-## <a name="related-topics"></a>Temas relacionados
+
+## <a name="related-topics"></a>Related topics
 
 [Usar el complemento de mensajes de informe](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)
   

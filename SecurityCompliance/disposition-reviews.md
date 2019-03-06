@@ -1,27 +1,26 @@
 ---
-title: Introducción a las revisiones de disposición
+title: Información general sobre las revisiones de disposición
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: 6/29/2018
 ms.audience: Admin
-ms.topic: overview
+ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: d0c6095b-bfee-4906-a2c7-89c2d7f411c1
 description: Cuando se crea una etiqueta que conserva el contenido en Office 365, se puede optar por desencadenar una revisión de disposición al final del período de retención.
-ms.openlocfilehash: 0948d61131595d4111f656c385c58258c5cce99c
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: a3125ee3f0ae388fce71968f25a68d5ccf3fc652
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215010"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410765"
 ---
-# <a name="overview-of-disposition-reviews"></a>Introducción a las revisiones de disposición
+# <a name="overview-of-disposition-reviews"></a>Información general sobre las revisiones de disposición
 
 Cuando el contenido alcanza el final de su período de retención, existen varios motivos por los que puede que desee revisar el contenido para decidir si se puede eliminar de forma segura ("eliminado"). Por ejemplo, es posible que deba:
   

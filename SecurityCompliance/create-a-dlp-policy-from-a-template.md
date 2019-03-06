@@ -10,24 +10,22 @@ f1_keywords:
 - ms.o365.cc.NewPolicyFromTemplate
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection:
-- Strat_O365_IP
+ms.collection: M365-security-compliance
 search.appverid:
 - MET150
-ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: 'La forma más sencilla y habitual de empezar a trabajar con directivas de DLP es usar una de las plantillas incluidas en Office 365. '
-ms.openlocfilehash: 32c16ca69e624e009591316cccc70a7faafb4bc6
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 2a1802592edbc3cfbcc05f5db979a0b4c3988e0d
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219440"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410955"
 ---
 # <a name="create-a-dlp-policy-from-a-template"></a>Crear una directiva DLP a partir de una plantilla
 
 La forma más sencilla y habitual de empezar a trabajar con directivas de DLP es usar una de las plantillas incluidas en Office 365. Puede usar una de estas plantillas como está o personalizar las reglas para cumplir los requisitos de cumplimiento específicos de la organización.
   
-Office 365 incluye más de 40 plantillas listas para usar que pueden ayudarle a cumplir con una amplia gama de necesidades normativas y de cumplimiento comunes. Por ejemplo, hay plantillas de directivas DLP para:
+Office 365 incluye más de 40 plantillas listas para usar que pueden ayudarle a satisfacer una amplia gama de necesidades comunes de directivas de negocio y reglamentarias. Por ejemplo, hay plantillas de directivas de DLP para:
   
 - Ley Gramm-Leach-Bliley (GLBA)
     
@@ -35,11 +33,11 @@ Office 365 incluye más de 40 plantillas listas para usar que pueden ayudarle a 
     
 - Información de identificación personal de Estados Unidos (PII de EE.UU.)
     
-- Ley de seguros médicos (HIPAA) de los Estados Unidos
+- Ley de seguros de salud (HIPAA) de los Estados Unidos
     
-Para ajustar una plantilla puede modificar cualquiera de las reglas existentes o agregar nuevas. Por ejemplo, puede agregar nuevos tipos de información confidencial a una regla, modificar los recuentos en una regla para que sea más difícil o fácil de desencadenar, permitir que los usuarios invaliden las acciones en una regla proporcionando una justificación del negocio o cambiar a quién se le envían notificaciones o informes de incidentes. Una plantilla de directiva DLP es un punto de partida flexible para muchos escenarios comunes de cumplimiento.
+Para ajustar una plantilla, modifique cualquiera de las reglas existentes o agregue otras nuevas. Por ejemplo, puede agregar nuevos tipos de información confidencial a una regla, modificar los recuentos de una regla para que sea más difícil o más fácil desencadenar, permitir a los usuarios invalidar las acciones en una regla proporcionando una justificación comercial o cambiar las notificaciones y el incidente. los informes se envían a. Una plantilla de directiva DLP es un punto de partida flexible para muchos escenarios de cumplimiento comunes.
   
-También puede elegir la plantilla personalizada, que no tiene ninguna regla predeterminada, y configurar la directiva DLP desde cero, para cumplir los requisitos de cumplimiento específicos para la organización.
+También puede elegir la plantilla personalizada, que no tiene reglas predeterminadas, y configurar la Directiva DLP desde cero para cumplir los requisitos de cumplimiento específicos de su organización.
   
 ## <a name="example-identify-sensitive-information-across-all-onedrive-for-business-sites-and-restrict-access-for-people-outside-your-organization"></a>Ejemplo: identificar información confidencial en todos los sitios de OneDrive para la empresa y restringir el acceso de usuarios externos a la organización
 
@@ -81,7 +79,7 @@ En este ejemplo, creará una directiva DLP que identifique los datos PII de Esta
     
     Para incluir o excluir una ubicación completa, como todos los correos electrónicos de Exchange o todas las cuentas de OneDrive, cambie el **Estado** de dicha ubicación a activado o desactivado. 
     
-    Para incluir solo sitios de SharePoint específicos o cuentas de OneDrive para la empresa, cambie el **Estado** a activado y, a continuación, haga clic en los vínculos de **incluir** para elegir sitios o cuentas específicos. Cuando se aplica una directiva a un sitio, las reglas configuradas en dicha Directiva se aplican automáticamente a todos los subsitios de ese sitio. 
+    Para incluir solo sitios de SharePoint específicos o cuentas de OneDrive para la empresa, cambie el **Estado** a activado y, a continuación, haga clic en los vínculos de **incluir** para elegir sitios o cuentas específicos. Cuando se aplica una directiva a un sitio, las reglas configuradas en dicha directiva se aplican automáticamente a todos los subsitios de ese sitio. 
     
     ![Opciones de ubicaciones donde se puede aplicar una directiva DLP](media/ee50a61a-e867-4571-a150-3eec8d83650f.png)
   
@@ -147,7 +145,7 @@ En este ejemplo, creará una directiva DLP que identifique los datos PII de Esta
     
 18. Cambie a modo de prueba con notificaciones y sugerencias de directivas para que pueda comenzar a enseñar a los usuarios las directivas de cumplimiento y prepararlos para las reglas que se van a aplicar. En esta fase, también puede solicitar a los usuarios que informen de falsos positivos para que pueda perfeccionar las reglas de los usuarios.
     
-19. Active las directivas para que se apliquen las reglas y el contenido esté protegido. Continúe supervisando los informes de DLP y los informes o notificaciones de incidentes para asegurarse de que los resultados son los que desea. 
+19. Active las directivas para que se apliquen las reglas y el contenido esté protegido. Continúe supervisando los informes DLP y los informes de incidentes o las notificaciones para asegurarse de que los resultados sean los deseados. 
     
     ![Opciones para usar el modo de prueba y activar la directiva](media/49fafaac-c6cb-41de-99c4-c43c3e380c3a.png)
   
@@ -159,16 +157,16 @@ Después de crear y activar una directiva DLP, se implementa en cualquier origen
 
 En cualquier momento, puede ver el estado de las directivas DLP en la página **Directiva** en la sección **prevención de pérdida de datos** del centro &amp; de seguridad y cumplimiento. Aquí puede encontrar información importante, como si una directiva se habilitó o deshabilitó correctamente, o si la Directiva está en modo de prueba. 
   
-A continuación, se enumeran los distintos estados y su significado.
+Estos son los distintos Estados y su significado.
   
 |**Estado**|**Explicación**|
 |:-----|:-----|
 |**Activando...** <br/> |La directiva se está implementando en los orígenes de contenido que incluye. Aún no se exige la directiva en todos los orígenes.  <br/> |
-|**Probando, con notificaciones** <br/> |La directiva está en modo de prueba. No se aplican las acciones en una regla, pero las coincidencias de directiva se recopilan y se pueden ver con los informes de DLP. Las notificaciones sobre las coincidencias de directiva se envían a los destinatarios especificados.  <br/> |
-|**Probando, sin notificaciones** <br/> |La directiva está en modo de prueba. No se aplican las acciones en una regla, pero las coincidencias de directiva se recopilan y se pueden ver con los informes de DLP. Las notificaciones sobre las coincidencias de directiva no se envían a los destinatarios especificados.  <br/> |
-|**Activo** <br/> |La directiva está activa y se exige. La directiva se implementó correctamente en todos sus orígenes de contenido.  <br/> |
-|**Desactivando...** <br/> |La directiva se está quitando de los orígenes de contenido que incluye. La directiva todavía puede estar activa y exigirse en algunos orígenes. La desactivación de una directiva puede tardar hasta 45 minutos.  <br/> |
-|**Desactivado** <br/> |La directiva no está activa y no se exige. Se guarda la configuración de la directiva (orígenes, palabras clave, duración, etc.).  <br/> |
+|**Pruebas, con notificaciones** <br/> |La Directiva está en modo de prueba. Las acciones de una regla no se aplican, pero las coincidencias de Directiva se recopilan y se pueden ver mediante los informes de DLP. Las notificaciones sobre coincidencias de directivas se envían a los destinatarios especificados.  <br/> |
+|**Pruebas, sin notificaciones** <br/> |La Directiva está en modo de prueba. Las acciones de una regla no se aplican, pero las coincidencias de Directiva se recopilan y se pueden ver mediante los informes de DLP. Las notificaciones sobre coincidencias de directivas no se envían a los destinatarios especificados.  <br/> |
+|**On** <br/> |La directiva está activa y se exige. La directiva se implementó correctamente en todos sus orígenes de contenido.  <br/> |
+|**Desactivando...** <br/> |La directiva se está quitando de los orígenes de contenido que incluye. La directiva todavía puede estar activa y exigirse en algunos orígenes. La desactivación de una Directiva puede tardar hasta 45 minutos.  <br/> |
+|**Off** <br/> |La directiva no está activa y no se exige. Se guarda la configuración de la directiva (orígenes, palabras clave, duración, etc.).  <br/> |
 |**Eliminando...** <br/> |La directiva está en proceso de eliminación. La directiva no está activa y no se exige.  <br/> |
    
 ## <a name="turn-off-a-dlp-policy"></a>Desactivar una directiva DLP

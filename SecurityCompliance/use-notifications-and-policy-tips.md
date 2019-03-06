@@ -10,22 +10,21 @@ f1_keywords:
 - ms.o365.cc.UnifiedDLPRuleNotifyUser
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: 87496bc5-9601-4473-8021-cb05c71369c1
 description: 'Una sugerencia de directiva es una notificación o advertencia que aparece cuando alguien trabaja con contenido que entra en conflicto con una directiva DLP. Puede usar notificaciones de correo electrónico y sugerencias de directiva para aumentar el conocimiento y ayudar a los usuarios acerca de las directivas de la organización. También puede dar a los usuarios la opción de invalidar la Directiva, de modo que no se bloqueen si tienen una necesidad empresarial válida o si la Directiva está detectando un falso positivo. '
-ms.openlocfilehash: 77bf9947356a4c8986e8b8cca7544350fa300c01
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: fbaabd674de97ffce32b8caae8e2b41471e52569
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341701"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410925"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Enviar notificaciones de correo electrónico y Mostrar sugerencias de directiva para directivas de DLP
 
-Puede usar una directiva de prevención de pérdida de datos (DLP) para identificar, supervisar y proteger información confidencial en Office 365. Desea que las personas de la organización que trabajan con esta información confidencial sigan siendo compatibles con las directivas de DLP, pero no desea bloquearlas sin necesidad de que se realice su trabajo. Aquí es donde las notificaciones de correo electrónico y las sugerencias de Directiva pueden ser de ayuda.
+Puede usar una directiva de prevención de pérdida de datos (DLP) para identificar, supervisar y proteger información confidencial en Office 365. Desea que las personas de la organización que trabajan con esta información confidencial sigan siendo compatibles con las directivas de DLP, pero no desea bloquearlas sin necesidad de que se realice su trabajo. Aquí es donde pueden ayudarle las notificaciones de correo electrónico y las sugerencias de directivas.
   
 ![La barra de mensajes muestra sugerencia de directiva en Excel 2016](media/7002ff54-1656-4a6c-993f-37427d6508c8.png)
   
@@ -90,7 +89,7 @@ Para cada regla en una directiva DLP, puede:
 - Personalizar el texto que se incluye en la notificación mediante HTML o tokens. Vea la sección siguiente para obtener más información.
     
 > [!NOTE]
->  Las notificaciones de correo electrónico solo pueden enviarse a destinatarios individuales, no a grupos ni a listas de distribución. > solo el nuevo contenido desencadenará una notificación de correo electrónico. La edición del contenido existente desencadenará sugerencias de Directiva, pero no una notificación de correo electrónico. 
+>  Las notificaciones de correo electrónico solo pueden enviarse a destinatarios individuales, no a grupos ni a listas de distribución. > solo el nuevo contenido desencadenará una notificación de correo electrónico. La edición de contenido existente desencadenará las sugerencias de directiva, pero no una notificación por correo electrónico. 
   
 ![Opciones de notificación de correo electrónico](media/4e7b9500-2a78-44e6-9067-09f4bfd50301.png)
   
@@ -114,7 +113,7 @@ Puede crear una notificación de correo electrónico personalizada en lugar de e
   
 También puede usar los siguientes tokens para ayudar a personalizar la notificación de correo electrónico. Estos tokens son variables que se reemplazan por información específica en la notificación que se envía.
 
-|**Comproba**|**Descripción**|
+|**Token**|**Descripción**|
 |:-----|:-----|
 |%% AppliedActions%%  <br/> |Acciones aplicadas al contenido.  <br/> |
 |%% ContentURL%%  <br/> |Dirección URL del documento en el sitio de SharePoint Online o el sitio de OneDrive para la empresa.  <br/> |
@@ -126,11 +125,11 @@ También puede usar los siguientes tokens para ayudar a personalizar la notifica
 
 Para cada regla de una directiva DLP, puede configurar sugerencias de directiva para:
   
-- Solo tiene que notificar a la persona que el contenido está en conflicto con una directiva DLP, de modo que puedan actuar para resolver el conflicto. Puede usar el texto predeterminado (consulte las siguientes tablas) o especificar texto personalizado sobre las directivas específicas de su organización.
+- Simplemente notificar a la persona que el contenido está en conflicto con una directiva DLP, de modo que pueda tomar medidas para resolver el conflicto. Puede usar el texto predeterminado (consulte las siguientes tablas) o especificar texto personalizado sobre las directivas específicas de su organización.
     
 - Permitir que la persona invalide la directiva DLP. Opcionalmente, puede:
     
-  - Requerir que la persona escriba una justificación comercial para invalidar la Directiva. Esta información se registra y se puede ver en los informes DLP en la sección **informes** del centro de seguridad &amp; y cumplimiento. 
+  - Requerir que la persona escriba una justificación del negocio para invalidar la directiva. Esta información se registra y se puede ver en los informes DLP en la sección **informes** del centro de seguridad &amp; y cumplimiento. 
     
   - Permitir que la persona informe de un falso positivo e invalide la directiva DLP. Esta información también se registra en los informes, de modo que puede usar falsos positivos para ajustar las reglas.
     
@@ -140,7 +139,7 @@ Por ejemplo, puede tener una directiva DLP aplicada a sitios de OneDrive para la
   
 1. Primera regla: Si se detectan menos de cinco instancias de información confidencial en un documento y el documento se comparte con personas que pertenecen a la organización, la acción **Enviar una notificación** muestra una sugerencia de directiva. Para obtener sugerencias de directiva, no se necesitan opciones de invalidación porque esta regla simplemente está avisando a las personas y no está bloqueando el acceso. 
     
-2. Segunda regla: si se detectan más de cinco instancias de esta información confidencial en un documento y el documento se comparte con personas dentro de la organización, la acción **bloquear el acceso a contenido** restringe los permisos para el archivo y el ** Enviar una** acción de notificación permite a los usuarios invalidar las acciones de esta regla proporcionando una justificación empresarial. A veces, la empresa de su organización requiere que los usuarios internos compartan los datos de PII y no quiere que la Directiva DLP la bloquee este trabajo. 
+2. Segunda regla: Si se detectan más de cinco instancias de información confidencial en un documento y el documento se comparte con personas que pertenecen a la organización, la acción **Bloquear el acceso al contenido** restringe los permisos para el archivo y la acción **Enviar una notificación** permite a los usuarios invalidar las acciones de esta regla proporcionando una justificación del negocio. A veces, la empresa de su organización requiere que los usuarios internos compartan los datos de PII y no quiere que la Directiva DLP la bloquee este trabajo. 
     
 3. Tercera regla: Si se detectan más de cinco instancias de información confidencial en un documento y el documento se comparte con personas externas a la organización, la acción **Bloquear el acceso al contenido** restringe los permisos para el archivo y la acción **Enviar una notificación** no permite a los usuarios invalidar las acciones de esta regla porque la información se comparte con el exterior. Bajo ninguna circunstancia las personas de su organización pueden compartir datos de PII fuera de la organización. 
     
@@ -148,7 +147,7 @@ Estos son algunos puntos clave para comprender el uso de una sugerencia de direc
   
 - La opción para invalidar es por regla y invalida todas las acciones de la regla (excepto el envío de una notificación, que no se puede invalidar).
     
-- El contenido puede coincidir con varias reglas de una directiva de DLP, pero solo se mostrará la sugerencia de directiva de la regla de mayor prioridad más restrictiva. Por ejemplo, una sugerencia de directiva de una regla que bloquea el acceso al contenido se muestra en una sugerencia de directiva a partir de una regla que simplemente envía una notificación. Esto impide que los usuarios vean una cascada de sugerencias de directiva.
+- El contenido puede coincidir con varias reglas de una directiva de DLP, pero solo se mostrará la sugerencia de directiva de la regla de mayor prioridad más restrictiva. Por ejemplo, una sugerencia de directiva de una regla que bloquea el acceso al contenido se mostrará por encima de una sugerencia de directiva de una regla que simplemente envía una notificación. Esto impide que las personas vean una cascada de sugerencias de directiva.
     
 - Si las sugerencias de directiva en la regla más restrictiva permite que los usuarios invaliden la regla, la invalidación de esta regla invalida también otras reglas que coinciden con el contenido.
     
@@ -211,7 +210,7 @@ Actualmente, Outlook 2013 y versiones posteriores admiten la visualización de s
 - Contenido contiene
 - El contenido se comparte
 
-Actualmente estamos trabajando en soporte para mostrar sugerencias de directiva para condiciones adicionales. Entre ellos se incluyen:
+Actualmente estamos trabajando en soporte para mostrar sugerencias de directiva para condiciones adicionales. Entre estos, incluyen los siguientes:
 
 - No se pudo analizar el contenido de los datos adjuntos de correo electrónico
 - No se completó el análisis del contenido de los datos adjuntos de correo
@@ -273,9 +272,9 @@ De forma predeterminada, las sugerencias de directiva muestran texto similar par
 
 |**Si la regla de directiva DLP hace esto...**|**La sugerencia de directiva predeterminada indica lo siguiente...**|
 |:-----|:-----|
-|Envía una notificación pero no permite la invalidación  <br/> |Este archivo está en conflicto con una directiva de la organización. Para obtener más información, vaya al menú **archivo** .<br/> |
-|Bloquea el acceso, envía una notificación y permite la invalidación  <br/> |Este archivo está en conflicto con una directiva de la organización. Si no resuelve este conflicto, es posible que se bloquee el acceso a este archivo. Para obtener más información, vaya al menú **archivo** .<br/> |
-|Bloquea el acceso y envía una notificación  <br/> |Este archivo está en conflicto con una directiva de la organización. Si no resuelve este conflicto, es posible que se bloquee el acceso a este archivo. Para obtener más información, vaya al menú **archivo** .<br/> |
+|Envía una notificación pero no permite la invalidación  <br/> |Este archivo está en conflicto con una directiva de la organización. Para obtener más información, vaya al menú **archivo** .  <br/> |
+|Bloquea el acceso, envía una notificación y permite la invalidación  <br/> |Este archivo está en conflicto con una directiva de la organización. Si no resuelve este conflicto, es posible que se bloquee el acceso a este archivo. Para obtener más información, vaya al menú **archivo** .  <br/> |
+|Bloquea el acceso y envía una notificación  <br/> |Este archivo está en conflicto con una directiva de la organización. Si no resuelve este conflicto, es posible que se bloquee el acceso a este archivo. Para obtener más información, vaya al menú **archivo** .  <br/> |
    
 ### <a name="custom-text-for-policy-tips-in-excel-2016-powerpoint-2016-and-word-2016"></a>Texto personalizado para sugerencias de directiva en Excel 2016, PowerPoint 2016 y Word 2016
 

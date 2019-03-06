@@ -8,18 +8,17 @@ ms.audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
+ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ms.assetid: 94349ed4-5351-4ee2-bbda-70813c9ed693
-description: Los tipos de información confidencial buscan un patrón específico y corroborarlo asegurándose de que el formato es correcto, aplicando sumas de comprobación y buscando palabras clave relevantes u otra información. Parte de esta funcionalidad se realiza mediante funciones internas. En este tema se explica qué buscan estas funciones para ayudarle a comprender cómo funcionan los tipos de información confidencial predefinidos.
-ms.openlocfilehash: 55c740e892e92902b368b2dcf7b0999cbc60f3ed
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+description: Los tipos de información confidencial buscan un patrón específico y corroborarlo asegurándose de que el formato es correcto, aplicando sumas de comprobación y buscando palabras clave relevantes u otra información. Parte de esta funcionalidad la realizan funciones internas. En este tema se explica lo que estas funciones buscan, para que comprenda mejor cómo funcionan los tipos de información confidencial predefinidos.
+ms.openlocfilehash: 4cc6f4d27e106aeedb2fa8cae0f3634b9e3d6319
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219360"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410555"
 ---
 # <a name="what-the-dlp-functions-look-for"></a>Qué buscan las funciones de DLP
 
@@ -29,7 +28,7 @@ En este tema se explica lo que estas funciones buscan, para que comprenda mejor 
   
 ## <a name="funcusdate"></a>Func_us_date
 
-Esta función busca una fecha con el formato que se usa habitualmente en Estados Unidos. Esto incluye los formatos "month/Day/Year", "month-Day-Year" y "month Day Year". Los nombres o abreviaturas de meses no distinguen mayúsculas de minúsculas. 
+Esta función busca una fecha con el formato que se usa habitualmente en Estados Unidos. Esto incluye los formatos "month/Day/Year", "month-Day-Year" y "month Day Year". Los nombres o las abreviaturas de los meses no distinguen mayúsculas de minúsculas. 
   
 Ejemplos:
   
@@ -93,7 +92,7 @@ Nombres de mes aceptados:
     
   - Janvier, février, Mars, Avril, Mai, juin Juillet, Août, Septembre, octobre, Novembre, décembre
     
-  - janv. févr. Mars Avril Mai juin juil. Août Sept. Oct. Nov. déc.
+  - janv. févr. Mars Avril Mai juin juil. Août Sept. Oct. noviembre. déc.
     
 - Alemán
     
@@ -117,14 +116,14 @@ Nombres de mes aceptados:
     
   - enero, febrero, marzo, abril, mayo, junio, julio, agosto, septiembre, octubre, noviembre, diciembre
     
-  - Enero Feb. marzo Abr. Mayo Jun. Jul. Agosto Sept./set. Oct. Nov. Dic.
+  - Enero Feb. marzo Abr. Mayo Jun. Julio. Agosto Sept./set. Oct. noviembre. Dic.
     
 ## <a name="funceudate1-deprecated"></a>Func_eu_date1 (en desuso)
 
 > [!NOTE]
 > Esta función está en desuso porque solo admite nombres de mes en Portugués, que ahora están incluidos en `Func_eu_date` la función anterior. 
   
-Esta función busca una fecha con el formato que se usa habitualmente en Portugués. El formato de esta función es el mismo que `Func_eu_date`en el idioma usado.
+Esta función busca una fecha en el formato que suele usarse en portugués. El formato de esta función es el mismo que `Func_eu_date`en el idioma usado.
   
 Ejemplos:
   
@@ -155,7 +154,7 @@ Nombres de mes aceptados:
 > [!NOTE]
 > Esta función está en desuso porque solo admite nombres de mes en holandés, que ahora están incluidos en `Func_eu_date` la función anterior. 
   
-Esta función busca una fecha con el formato que se usa normalmente en holandés. El formato de esta función es el mismo que `Func_eu_date`en el idioma usado.
+Esta función busca una fecha en el formato que suele usarse en neerlandés. El formato de esta función es el mismo que `Func_eu_date`en el idioma usado.
   
 Ejemplos:
   
@@ -175,7 +174,7 @@ Ejemplos:
     
 Nombres de mes aceptados:
   
-- Holandés
+- Neerlandés
     
   - januari, februari, maart, April, mei, juni, juli, augustus, September, ocktober, October, November, December
     
@@ -183,9 +182,9 @@ Nombres de mes aceptados:
     
 ## <a name="funcexpirationdate"></a>Func_expiration_date
 
-Esta función busca una fecha en los formatos usados normalmente por tarjetas de crédito y débito, que excluyen los días en favor de los meses. Esta función coincidirá con las fechas en el formato "mes/año", "mes-año", "[nombre del mes]" y "[abreviatura del mes] año". Los nombres o abreviaturas de meses no distinguen mayúsculas de minúsculas.
+Esta función busca una fecha en los formatos que suelen usarse en las tarjetas de crédito y débito, que excluyen los días a favor de los meses. Esta función coincidirá con las fechas en el formato "mes/año", "mes-año", "[nombre del mes]" y "[abreviatura del mes] año". Los nombres o las abreviaturas de los meses no distinguen mayúsculas de minúsculas.
   
-Ejemplos
+Ejemplos:
   
 - MM/AA: por ejemplo, 01/11 o 1/11
     

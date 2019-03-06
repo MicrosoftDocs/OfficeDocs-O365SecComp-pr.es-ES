@@ -7,15 +7,15 @@ ms.date: 8/16/2018
 ms.audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
+ms.collection: M365-security-compliance
 localization_priority: Normal
-ms.assetid: 8c00df57-9fb3-459c-ba87-40480c87bd55
 description: En este tema se muestra qué busca una directiva de prevención de pérdida de datos (DLP) cuando detecta el tipo de información confidencial de número de pasaporte de la UE. Este tipo de información confidencial define distintos patrones, palabras clave y otras pruebas para cada país.
-ms.openlocfilehash: c46f683bd1baf651bcf13c1766dfff3cb953b341
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 3ab92e87607f41cffa8c15f1179a4eef5369cb29
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218270"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410935"
 ---
 # <a name="eu-passport-number"></a>Número de pasaporte de la UE
 
@@ -23,7 +23,7 @@ En este tema se muestra qué busca una directiva de prevención de pérdida de d
   
 ## <a name="austria"></a>Austria
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Dé
 
 Una letra seguida de un espacio opcional y siete dígitos
   
@@ -64,11 +64,11 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 | |
 |**Keywords_austria_eu_passport_number**|
 |:-----|
-|número de pasaporte  <br/> número de pasaporte austriaco  <br/> n.º de pasaporte  <br/> reisepass  <br/> österreichisch reisepass  <br/> |
+|passport number  <br/> número de pasaporte austriaco  <br/> n.º de pasaporte  <br/> reisepass  <br/> österreichisch reisepass  <br/> |
    
 ## <a name="belgium"></a>Bélgica
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Dé
 
 Dos letras seguidas de seis dígitos sin espacios ni delimitadores
   
@@ -103,11 +103,11 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 | |
 |**Keywords_belgium_eu_passport_number**|
 |:-----|
-|número de pasaporte  <br/> número de pasaporte belga  <br/> n.º de pasaporte  <br/> paspoort  <br/> paspoortnummer  <br/> reisepass kein  <br/> reisepass  <br/> |
+|passport number  <br/> número de pasaporte belga  <br/> n.º de pasaporte  <br/> paspoort  <br/> paspoortnummer  <br/> reisepass kein  <br/> reisepass  <br/> |
    
 ## <a name="bulgaria"></a>Bulgaria
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Dé
 
 Nueve dígitos sin espacios y delimitadores
   
@@ -142,11 +142,11 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 | |
 |**Keywords_bulgaria_eu_passport_number**|
 |:-----|
-|número de pasaporte  <br/> número de pasaporte búlgaro  <br/> n.º de pasaporte  <br/> номер на паспорта  <br/> |
+|passport number  <br/> número de pasaporte búlgaro  <br/> n.º de pasaporte  <br/> номер на паспорта  <br/> |
    
 ## <a name="croatia"></a>Croacia
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Dé
 
 Nueve dígitos sin espacios y delimitadores
   
@@ -181,11 +181,11 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 | |
 |**Keywords_croatia_eu_passport_number**|
 |:-----|
-|número de pasaporte  <br/> número de pasaporte de croata  <br/> n.º de pasaporte  <br/> Broj putovnice  <br/> |
+|passport number  <br/> número de pasaporte de croata  <br/> n.º de pasaporte  <br/> Broj putovnice  <br/> |
    
 ## <a name="cyprus"></a>Chipre
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Dé
 
 Una letra seguida de 6-8 dígitos sin espacios ni delimitadores
   
@@ -220,11 +220,11 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 | |
 |**Keywords_cyprus_eu_passport_number**|
 |:-----|
-|número de pasaporte  <br/> número de pasaporte de Chipre  <br/> n.º de pasaporte  <br/> αριθμό διαβατηρίου  <br/> |
+|passport number  <br/> número de pasaporte de Chipre  <br/> n.º de pasaporte  <br/> αριθμό διαβατηρίου  <br/> |
    
 ## <a name="czech-republic"></a>Chequia
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Dé
 
 Ocho dígitos sin espacios ni delimitadores
   
@@ -259,11 +259,11 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 | |
 |**Keywords_czech_republic_eu_passport_number**|
 |:-----|
-|número de pasaporte  <br/> número de pasaporte Checo  <br/> n.º de pasaporte  <br/> Cestovní PAS  <br/> PAS  <br/> |
+|passport number  <br/> número de pasaporte Checo  <br/> n.º de pasaporte  <br/> Cestovní PAS  <br/> PAS  <br/> |
    
 ## <a name="denmark"></a>Dinamarca
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Dé
 
 Nueve dígitos sin espacios y delimitadores
   
@@ -298,11 +298,11 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 | |
 |**Keywords_denmark_eu_passport_number**|
 |:-----|
-|número de pasaporte  <br/> número de pasaporte danés  <br/> n.º de pasaporte  <br/> PAS  <br/> pasnummer  <br/> |
+|passport number  <br/> número de pasaporte danés  <br/> n.º de pasaporte  <br/> PAS  <br/> pasnummer  <br/> |
    
 ## <a name="estonia"></a>Estonia
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Dé
 
 Una letra seguida de siete dígitos sin espacios ni delimitadores
   
@@ -337,7 +337,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 | |
 |**Keywords_estonia_eu_passport_number**|
 |:-----|
-|número de pasaporte  <br/> número de pasaporte de estonio  <br/> n.º de pasaporte  <br/> Eesti kodaniku Pass  <br/> |
+|passport number  <br/> número de pasaporte de estonio  <br/> n.º de pasaporte  <br/> Eesti kodaniku Pass  <br/> |
    
 ## <a name="finland"></a>Finlandia
 
@@ -353,7 +353,7 @@ Para obtener más información, consulte la sección "número de pasaporte de Al
   
 ## <a name="greece"></a>Grecia
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Dé
 
 Dos letras seguidas de siete dígitos sin espacios ni delimitadores
   
@@ -388,11 +388,11 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 | |
 |**Keywords_greece_eu_passport_number**|
 |:-----|
-|número de pasaporte  <br/> número de pasaporte griego  <br/> n.º de pasaporte  <br/> διαβατηριο  <br/> |
+|passport number  <br/> número de pasaporte griego  <br/> n.º de pasaporte  <br/> διαβατηριο  <br/> |
    
 ## <a name="hungary"></a>Hungría
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Dé
 
 Dos letras seguidas por seis u siete dígitos sin espacios ni delimitadores
   
@@ -427,11 +427,11 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 | |
 |**Keywords_hungary_eu_passport_number**|
 |:-----|
-|número de pasaporte  <br/> número de pasaporte Húngaro  <br/> n.º de pasaporte  <br/> útlevél száma  <br/> |
+|passport number  <br/> número de pasaporte Húngaro  <br/> n.º de pasaporte  <br/> útlevél száma  <br/> |
    
 ## <a name="ireland"></a>Irlanda
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Dé
 
 Dos letras o dígitos seguidos de siete dígitos sin espacios ni delimitadores
   
@@ -470,11 +470,11 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 | |
 |**Keywords_ireland_eu_passport_number**|
 |:-----|
-|número de pasaporte  <br/> número de pasaporte irlandés  <br/> n.º de pasaporte  <br/> PAS  <br/> passport  <br/> passeport  <br/> passeport numero  <br/> |
+|passport number  <br/> número de pasaporte irlandés  <br/> n.º de pasaporte  <br/> PAS  <br/> usuarios  <br/> passeport  <br/> passeport numero  <br/> |
    
 ## <a name="italy"></a>Italia
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Dé
 
 Dos letras o dígitos seguidos de siete dígitos sin espacios ni delimitadores
   
@@ -513,11 +513,11 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 | |
 |**Keywords_italy_eu_passport_number**|
 |:-----|
-|número de pasaporte Italiano  <br/> Repubblica Italiana Passaporto  <br/> Passaporto  <br/> Passaporto italiana  <br/> número de pasaporte  <br/> italiana Passaporto numero  <br/> Passaporto numero  <br/> numéro passeport Italien  <br/> numéro passeport  <br/> |
+|número de pasaporte Italiano  <br/> Repubblica Italiana Passaporto  <br/> Passaporto  <br/> Passaporto italiana  <br/> passport number  <br/> italiana Passaporto numero  <br/> Passaporto numero  <br/> numéro passeport Italien  <br/> numéro passeport  <br/> |
    
 ## <a name="latvia"></a>Letonia
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Dé
 
 Dos letras o dígitos seguidos de siete dígitos sin espacios ni delimitadores
   
@@ -556,11 +556,11 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 | |
 |**Keywords_latvia_eu_passport_number**|
 |:-----|
-|número de pasaporte  <br/> número de pasaporte de letón  <br/> n.º de pasaporte  <br/> Pase numurs  <br/> |
+|passport number  <br/> número de pasaporte de letón  <br/> n.º de pasaporte  <br/> Pase numurs  <br/> |
    
 ## <a name="lithuania"></a>Lituania
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Dé
 
 Ocho dígitos o letras sin espacios ni delimitadores
   
@@ -595,11 +595,11 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 | |
 |**Keywords_lithuania_eu_passport_number**|
 |:-----|
-|número de pasaporte  <br/> número de pasaporte de lithunian  <br/> n.º de pasaporte  <br/> numeración paso  <br/> |
+|passport number  <br/> número de pasaporte de lithunian  <br/> n.º de pasaporte  <br/> numeración paso  <br/> |
    
 ## <a name="luxemburg"></a>Luxemburgo
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Dé
 
 Ocho dígitos o letras sin espacios ni delimitadores
   
@@ -634,11 +634,11 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 | |
 |**Keywords_nation_eu_passport_number**|
 |:-----|
-|número de pasaporte  <br/> número de pasaporte de letón  <br/> n.º de pasaporte  <br/> passnummer  <br/> |
+|passport number  <br/> número de pasaporte de letón  <br/> n.º de pasaporte  <br/> passnummer  <br/> |
    
 ## <a name="malta"></a>Malta
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Dé
 
 Siete dígitos sin espacios ni delimitadores
   
@@ -673,11 +673,11 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 | |
 |**Keywords_malta_eu_passport_number**|
 |:-----|
-|número de pasaporte  <br/> número de pasaporte de Maltés  <br/> n.º de pasaporte  <br/> numru tal-passaport  <br/> |
+|passport number  <br/> número de pasaporte de Maltés  <br/> n.º de pasaporte  <br/> numru tal-passaport  <br/> |
    
 ## <a name="netherlands"></a>Países Bajos
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Dé
 
 Nueve letras o dígitos sin espacios ni delimitadores
   
@@ -712,7 +712,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 | |
 |**Keywords_netherlands_eu_passport_number**|
 |:-----|
-|número de pasaporte holandés  <br/> número de pasaporte  <br/> número de pasaporte de Holanda  <br/> Nederlanden paspoort Nummer  <br/> paspoort  <br/> Nederlanden paspoortnummer  <br/> paspoortnummer  <br/> |
+|número de pasaporte holandés  <br/> passport number  <br/> número de pasaporte de Holanda  <br/> Nederlanden paspoort Nummer  <br/> paspoort  <br/> Nederlanden paspoortnummer  <br/> paspoortnummer  <br/> |
    
 ## <a name="poland"></a>Polonia
 
@@ -720,7 +720,7 @@ Para obtener más información, consulte la sección "número de pasaporte de Po
   
 ## <a name="portugal"></a>Portugal
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Dé
 
 Una letra seguida de seis dígitos sin espacios ni delimitadores
   
@@ -759,11 +759,11 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 | |
 |**Keywords_portugal_eu_passport_number**|
 |:-----|
-|número de pasaporte  <br/> número de pasaporte de Portugués  <br/> n.º de pasaporte  <br/> número Passaporte  <br/> |
+|passport number  <br/> número de pasaporte de Portugués  <br/> n.º de pasaporte  <br/> número Passaporte  <br/> |
    
 ## <a name="romania"></a>Rumania
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Dé
 
 Ocho o nueve dígitos sin espacios y delimitadores
   
@@ -798,11 +798,11 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 | |
 |**Keywords_romania_eu_passport_number**|
 |:-----|
-|número de pasaporte  <br/> número de pasaporte de rumano  <br/> n.º de pasaporte  <br/> numărul pașaportului  <br/> |
+|passport number  <br/> número de pasaporte de rumano  <br/> n.º de pasaporte  <br/> numărul pașaportului  <br/> |
    
 ## <a name="slovakia"></a>Eslovaquia
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Dé
 
 Un dígito o letra seguido de siete dígitos sin espacios ni delimitadores
   
@@ -837,11 +837,11 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 | |
 |**Keywords_slovakia_eu_passport_number**|
 |:-----|
-|número de pasaporte  <br/> número de pasaporte de eslovaco  <br/> n.º de pasaporte  <br/> číslo Pasu  <br/> |
+|passport number  <br/> número de pasaporte de eslovaco  <br/> n.º de pasaporte  <br/> číslo Pasu  <br/> |
    
 ## <a name="slovenia"></a>Eslovenia
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Dé
 
 Dos letras seguidas de siete dígitos sin espacios ni delimitadores
   
@@ -882,11 +882,11 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 | |
 |**Keywords_slovenia_eu_passport_number**|
 |:-----|
-|número de pasaporte  <br/> número de pasaporte de esloveno  <br/> n.º de pasaporte  <br/> številka potnega lista  <br/> |
+|passport number  <br/> número de pasaporte de esloveno  <br/> n.º de pasaporte  <br/> številka potnega lista  <br/> |
    
 ## <a name="spain"></a>España
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Dé
 
 Una combinación de letras y números de ocho o nueve caracteres sin espacios ni delimitadores
   
@@ -927,7 +927,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 | |
 |**Keywords_spain_eu_passport_number**|
 |:-----|
-|passport  <br/> pasaporte de España  <br/> libro de Passport  <br/> número de pasaporte  <br/> n.º de pasaporte  <br/> libreta pasaporte  <br/> número pasaporte  <br/> España pasaporte  <br/> pasaporte  <br/> |
+|usuarios  <br/> pasaporte de España  <br/> libro de Passport  <br/> passport number  <br/> n.º de pasaporte  <br/> libreta pasaporte  <br/> número pasaporte  <br/> España pasaporte  <br/> pasaporte  <br/> |
    
 ## <a name="sweden"></a>Suecia
 
@@ -935,9 +935,9 @@ Para obtener más información, consulte la sección "número de pasaporte de Su
   
 ## <a name="uk"></a>LIBRA
 
-Para obtener más información, consulte la sección "número de pasaporte de Estados Unidos/Reino Unido" en [Qué buscan los tipos de información confidencial](what-the-sensitive-information-types-look-for.md).
+Para obtener más información, consulte la sección "Estados Unidos/Reino Unido Número de pasaporte "en [lo que buscan los tipos de información confidencial](what-the-sensitive-information-types-look-for.md).
   
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Qué buscan los tipos de información confidencial](what-the-sensitive-information-types-look-for.md)
 

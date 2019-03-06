@@ -7,15 +7,15 @@ ms.date: 8/17/2018
 ms.audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
+ms.collection: M365-security-compliance
 localization_priority: Normal
-ms.assetid: 2ea971bf-9434-4b61-b825-2bbd28ae6064
 description: En este tema se muestra qué busca una directiva de prevención de pérdida de datos (DLP) cuando detecta el tipo de información confidencial de número de identificación nacional de la UE. Este tipo de información confidencial define distintos patrones, palabras clave y otras pruebas para cada país.
-ms.openlocfilehash: 9a85fd6954f39de348874e03268a2e19ae47366c
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: afae2c3fa54fe5fcd93990cdf5797f5517c46202
+ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220640"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "30410975"
 ---
 # <a name="eu-national-identification-number"></a>Número de identificación nacional de la UE
 
@@ -23,7 +23,7 @@ En este tema se muestra qué busca una directiva de prevención de pérdida de d
   
 ## <a name="austria"></a>Austria
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Dé
 
 Una combinación de letras, dígitos y caracteres especiales de 24 caracteres
   
@@ -67,7 +67,6 @@ número de identidad nacional
   
 número de identidad
   
-
 national id
   
 personalausweis Republik Österreich
@@ -78,7 +77,7 @@ Para obtener más información, consulte la sección "número nacional de Bélgi
   
 ## <a name="bulgaria"></a>Bulgaria
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Dé
 
 Diez dígitos sin espacios y delimitadores
   
@@ -135,7 +134,6 @@ número nacional búlgaro
 número nacional
   
 social security number
-
   
 nationalnumber #
   
@@ -167,7 +165,7 @@ Para obtener más información, consulte la sección "número de identidad de Cr
   
 ## <a name="cyprus"></a>Chipre
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Dé
 
 Diez dígitos sin espacios y delimitadores
   
@@ -203,7 +201,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 número de tarjeta de identificación
   
-número de identificación nacional
+national identification number
   
 número de identificación personal
   
@@ -221,7 +219,7 @@ Para obtener más información, vea la sección sobre el número de identificaci
   
 ## <a name="estonia"></a>Estonia
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Dé
 
 11 dígitos sin espacios y delimitadores
   
@@ -274,7 +272,7 @@ código de identificación personal
   
 número de identificación personal
   
-número de identificación nacional
+national identification number
   
 número nacional
   
@@ -306,7 +304,7 @@ Para obtener más información, consulte la sección "tarjeta de identificación
   
 ## <a name="hungary"></a>Hungría
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Dé
 
 11 dígitos
   
@@ -357,7 +355,6 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 número de identificación personal
   
 identification number
-
   
 número de identificación personal
   
@@ -365,7 +362,7 @@ személyazonosító igazolvány
   
 ## <a name="ireland"></a>Irlanda
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Dé
 
 Una combinación de Letras de nueve caracteres, dígitos y un espacio en el patrón especificado
   
@@ -433,7 +430,6 @@ RSI no
 número de identificación personal
   
 identification number
-
   
 número de identificación personal
   
@@ -443,7 +439,7 @@ uimh. PSP
   
 ## <a name="italy"></a>Italia
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Dé
 
 Una combinación de letras y dígitos de 16 caracteres en el patrón especificado
   
@@ -525,7 +521,7 @@ Codice fiscal
   
 ## <a name="italy"></a>Italia
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Dé
 
 11 dígitos y un guión en el formato especificado
   
@@ -589,7 +585,7 @@ roles kods
   
 ## <a name="lithuania"></a>Lituania
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Dé
 
 11 dígitos sin espacios y delimitadores
   
@@ -662,7 +658,7 @@ asmens kodas.
   
 ## <a name="luxemburg"></a>Luxemburgo
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Dé
 
 11 dígitos sin espacios y delimitadores
   
@@ -739,7 +735,7 @@ eindeutigeid #
   
 ## <a name="malta"></a>Malta
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Dé
 
 Siete dígitos seguidos de una letra
   
@@ -804,7 +800,7 @@ numru ta ' Identità uniku
   
 ## <a name="netherlands"></a>Países Bajos
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Dé
 
 Nueve dígitos sin espacios ni delimitadores
   
@@ -877,7 +873,7 @@ Para obtener más información, consulte la sección "número de tarjeta de ciud
   
 ## <a name="romania"></a>Rumania
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Dé
 
 13 dígitos sin espacios y delimitadores
   
@@ -926,7 +922,7 @@ CNP
   
 CNP #
   
-anclar
+patilla
   
 patilla
   
@@ -958,7 +954,7 @@ numărpersonalunic #
   
 ## <a name="slovakia"></a>Eslovaquia
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Dé
 
 Diez dígitos que contienen una barra diagonal inversa
   
@@ -1001,12 +997,11 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 número de nacimiento
   
-número de identificación nacional
+national identification number
   
 número de identificación personal
   
 social security number
-
   
 nationalnumber #
   
@@ -1028,7 +1023,7 @@ rodne cislo
   
 ## <a name="slovenia"></a>Eslovenia
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Dé
 
 13 dígitos sin espacios ni delimitadores
   
@@ -1099,7 +1094,7 @@ emšo
   
 ## <a name="spain"></a>España
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Dé
 
 Siete dígitos seguidos de un carácter
   
@@ -1139,7 +1134,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 DNI
   
-número de identificación nacional
+national identification number
   
 número de identidad nacional
   
@@ -1185,7 +1180,7 @@ identidadúnico #
 
 Para obtener más información, consulte la sección "identificación nacional de Suecia" en [Qué buscan los tipos de información confidencial](what-the-sensitive-information-types-look-for.md).
   
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Qué buscan los tipos de información confidencial](what-the-sensitive-information-types-look-for.md)
 
