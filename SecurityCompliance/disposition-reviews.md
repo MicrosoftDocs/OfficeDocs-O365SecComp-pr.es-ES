@@ -8,17 +8,18 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: Cuando se crea una etiqueta que conserva el contenido en Office 365, se puede optar por desencadenar una revisión de disposición al final del período de retención.
-ms.openlocfilehash: a3125ee3f0ae388fce71968f25a68d5ccf3fc652
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.openlocfilehash: 5dac91368ff2aff6ca7e1a2c3591b50466b869ac
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410765"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30455042"
 ---
 # <a name="overview-of-disposition-reviews"></a>Información general sobre las revisiones de disposición
 

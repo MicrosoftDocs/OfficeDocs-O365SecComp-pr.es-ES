@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 730e1fe40756bcb38f3b071137828072f4e2dcb5
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: fe208f4a9f7927d8481d5c6ec8b901baafb98626
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296723"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30455302"
 ---
 # <a name="add-custodians-to-an-advanced-ediscovery-preview-case"></a>Agregar custodios a un caso de eDiscovery avanzado (versión preliminar)
 
@@ -69,15 +69,13 @@ Según el caso, es posible que también desee agregar buzones que un custodio da
 ![Asignar orígenes de datos adicionales](../media/AddCustodianStep3.PNG)
 
 Para asignar buzones de correo, sitios o equipos a un custodio específico:
+1. Seleccione **Agregar** para asignar ubicaciones de contenido, como buzones de correo, sitios y equipos, a un custodio específico. 
 
-1. Seleccione **Actualizar** para asignar ubicaciones de contenido, como buzones de correo, sitios y equipos, a un custodio específico. 
-
-2. En el control flotante, especifique lo siguiente:
-   
-    -  **Buzones de Exchange** : haga clic en **elegir usuarios, grupos o equipos** y, a continuación, haga clic en **elegir usuarios, grupos o equipos** de nuevo. Para especificar los buzones que se asignarán al custodio seleccionado, use el cuadro de búsqueda para buscar los buzones de usuario y los grupos de distribución. También puede asignar el buzón asociado para un grupo de Office 365 o un equipo de Microsoft. Active la casilla de verificación usuario, grupo, equipo, haga clic en **elegir**y, a continuación, haga clic en **listo**.
+2. En el control flotante, especifique lo siguiente ![: asignar orígenes de datos](../media/AddCustodianStep4.PNG)
+  -  **Buzones de Exchange** : haga clic en **elegir usuarios, grupos o equipos** y, a continuación, haga clic en **elegir usuarios, grupos o equipos** de nuevo. Para especificar los buzones que se asignarán al custodio seleccionado, use el cuadro de búsqueda para buscar los buzones de usuario y los grupos de distribución. También puede asignar el buzón asociado para un grupo de Office 365 o un equipo de Microsoft. Active la casilla de verificación usuario, grupo, equipo, haga clic en **elegir**y, a continuación, haga clic en **listo**.
 
         > [!NOTE]
-        > Al hacer clic en elegir usuarios, grupos o equipos para especificar los buzones, el selector de buzones que se muestra está vacío. Esto se debe a su diseño para mejorar el rendimiento. Para agregar personas a esta lista, escriba un nombre (un mínimo de 3 caracteres) en el cuadro de búsqueda.
+        > Al hacer clic en elegir usuarios, grupos o equipos para especificar los buzones, el selector de buzones que se muestra está vacío. Esto se ha diseñado así para mejorar el rendimiento. Para agregar personas a esta lista, escriba un nombre (un mínimo de 3 caracteres) en el cuadro de búsqueda.
      
      - **Sitios de SharePoint** : haga clic en **elegir sitios** y, a continuación, haga clic en **elegir sitios** de nuevo para especificar sitios de SharePoint y OneDrive para la empresa adicionales que quiera asignar al custodio seleccionado. También puede Agregar la dirección URL del sitio de SharePoint para un grupo de Office 365 o un equipo de Microsoft. Escriba la dirección URL de cada sitio que quiera asignar. Haga clic en **elegir**y, a continuación, en **listo**.
      - **Microsoft Teams** : haga clic en **elegir Teams** y, a continuación, haga clic en **elegir Teams** de nuevo para ver una lista de los grupos de Microsoft Teams de los que el custodio es miembro de hoy. Seleccione los equipos que quiera agregar a su custodio. Una vez seleccionado, el sistema identificará automáticamente & seleccionar el sitio de SharePoint y el buzón de grupo asociados a ese equipo de Microsoft. Haga clic en **elegir**y, a continuación, en **listo**.
@@ -89,6 +87,8 @@ Una vez que haya terminado de asignar sus orígenes, puede ver los buzones de co
 
 ## <a name="optional-step-4-place-custodians-on-hold"></a>Opcional Paso 4: poner los custodios en espera
 
+![ReTenciones de posición](../media/AddCustodianStep5.PNG)
+
 Una vez que haya finalizado los custodios y los orígenes de datos que desea agregar a su caso, puede, de manera opcional, poner algunos o todos los custodios en retención. Cuando se pone un custodio en espera, el contenido asignado a ese usuario se conserva hasta que se libere el custodio del caso o hasta que se elimine la retención. En algunos casos, es posible que quiera agregar custodios a un caso sin ponerlos en retención. 
 
 Para poner los custodios y los orígenes de datos seleccionados en espera:
@@ -99,4 +99,4 @@ Para poner los custodios y los orígenes de datos seleccionados en espera:
 
 3. Haga clic en **Editar** para ver todos los orígenes de datos de custodios seleccionados.
 
-    ![ReTenciones de posición](../media/AddCustodianStep4.PNG)
+   

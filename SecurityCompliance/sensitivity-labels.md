@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con las etiquetas de confidencialidad de Office 365, puede clasificar y ayudar a proteger el contenido confidencial, sin poner impedimentos a la productividad y la capacidad de colaboración de los usuarios. Puede usar etiquetas de confidencialidad para aplicar opciones de protección como encriptación o marcas de agua en el contenido con la etiqueta.
-ms.openlocfilehash: 6f624308e7cbfb7aae738e0c08505412314200e7
-ms.sourcegitcommit: 0a1ce1ac45672d1d98eb7dbcfd4f0179d9eb4509
+ms.openlocfilehash: 05f53c508126962d36be3e131413d5a4314875a9
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30412958"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30455032"
 ---
 # <a name="overview-of-sensitivity-labels"></a>Información general de etiquetas de confidencialidad
 

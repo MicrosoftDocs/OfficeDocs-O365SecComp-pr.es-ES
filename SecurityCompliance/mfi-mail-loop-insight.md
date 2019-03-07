@@ -5,16 +5,16 @@ author: chrisda
 manager: serdars
 ms.audience: ITPro
 ms.topic: article
-ms.prod: office-online-server
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: cb801985-3c89-4979-9c18-17829a4cb563
 description: Los administradores pueden obtener información sobre la información sobre el bucle de correo en el panel del flujo de correo en el centro de seguridad & cumplimiento de Office 365.
-ms.openlocfilehash: 67d9fd7e7ffe54e78acf75cbafcbc21d7f733e1a
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: babf102e7645de26d4af0a947319856468ccf755
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214850"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30455242"
 ---
 # <a name="mail-loop-insight"></a>Reporte de bucle de correo
 

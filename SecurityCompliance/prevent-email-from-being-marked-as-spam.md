@@ -7,18 +7,19 @@ ms.date: 6/7/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-ms.collection: Strat_O365_IP
+ms.collection:
+- M365-security-compliance
 localization_priority: Priority
 search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre cómo evitar los falsos positivos y evitar que el correo electrónico deseado se marque como no deseado en Office 365.
-ms.openlocfilehash: d225f7ae3a97d497787c91ed6d4baab1b979f0c3
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.openlocfilehash: 31977cee26b894e915744b76e717b829bd540fc0
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410785"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30455102"
 ---
 # <a name="how-to-prevent-real-email-from-being-marked-as-spam-in-office-365"></a>Evitar que el correo electrónico real se marque como correo no deseado en Office 365
 

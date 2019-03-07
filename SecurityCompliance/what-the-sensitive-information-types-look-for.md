@@ -11,33 +11,33 @@ f1_keywords:
 - ms.o365.cc.UnifiedDLPRuleContainsSensitiveInformation
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: Strat_O365_IP
-ms.assetid: fd505979-76be-4d9f-b459-abef3fc9e86b
-description: La prevención de pérdida de datos (DLP) en el &amp; centro de seguridad y cumplimiento de Office 365 incluye 80 tipos de información confidencial listos para que pueda usarlos en las directivas de DLP. En este tema se enumeran todos estos tipos de información confidencial y se muestra el aspecto de una directiva DLP cuando detecta cada tipo.
-ms.openlocfilehash: 17fb0b8d745168f8000fba9e6fc42f3c255a1937
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.collection:
+- M365-security-compliance
+description: La prevención de pérdida de datos (DLP) en el &amp; centro de seguridad y cumplimiento de Office 365 incluye 80 tipos de información confidencial listos para que pueda usarlos en las directivas de DLP. Este tema enumera todos estos tipos de información confidencial y muestra lo que una directiva DLP busca al detectar cada uno de los tipos.
+ms.openlocfilehash: 55fa8b6855a9a5bf2c84f6555dd8c8227a2ad9cf
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216360"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30455272"
 ---
 # <a name="what-the-sensitive-information-types-look-for"></a>Qué buscan los tipos de información confidencial
 
-La prevención de pérdida de datos (DLP) en el &amp; centro de seguridad y cumplimiento de Office 365 incluye muchos tipos de información confidencial listos para que pueda usarlos en las directivas de DLP. En este tema se enumeran todos estos tipos de información confidencial y se muestra el aspecto de una directiva DLP cuando detecta cada tipo. Un patrón que puede identificarse mediante una expresión regular o una función define un tipo de información confidencial. Además, las evidencias confirmativas, como las palabras clave y las sumas de comprobación, se pueden usar para identificar un tipo de información confidencial. El nivel de confianza y la proximidad también se usan en el proceso de evaluación.
+La prevención de pérdida de datos (DLP) en el &amp; centro de seguridad y cumplimiento de Office 365 incluye muchos tipos de información confidencial listos para que pueda usarlos en las directivas de DLP. Este tema enumera todos estos tipos de información confidencial y muestra lo que una directiva DLP busca al detectar cada uno de los tipos. Un tipo de información confidencial se define por medio de un patrón que puede identificarse mediante una expresión regular o una función. Además, pueden usarse pruebas contundentes como palabras clave y sumas de comprobación para identificar un tipo de información confidencial. El nivel de confianza y la proximidad también se usan en el proceso de evaluación.
   
 ## <a name="aba-routing-number"></a>Número de enrutamiento ABA
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 9 dígitos, que pueden tener un patrón con o sin formato
 
 ### <a name="pattern"></a>Patrón
 
-Con formato:
+Con formato
 - Cuatro dígitos a partir de 0, 1, 2, 3, 6, 7 u 8
 - Un guión 
 - Cuatro dígitos
-- Un guión
+- Un guión 
 - Un dígito
 
 Sin formato: 9 dígitos consecutivos que comienzan por 0, 1, 2, 3, 6, 7 u 8 
@@ -67,43 +67,27 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 #### <a name="keywordabarouting"></a>Keyword_ABA_Routing
 
-- aba
-- 
-aba #
-- 
-aba routing #
-- número de enrutamiento ABA
-- 
-aba#
-- 
-abarouting#
-- 
-aba number
-- 
-abaroutingnumber
-- 
-american bank association routing #
-- 
-american bank association routing number
-- 
-americanbankassociationrouting#
-- 
-americanbankassociationroutingnumber
-- 
-bank routing number
-- 
-bankrouting#
-- 
-bankroutingnumber
-- 
-routing transit number
-- 
-RTN
- 
+- ABA
+- aba #
+- aba routing #
+- aba routing number
+- ABA
+- abarouting #
+- aba number
+- abaroutingnumber
+- american bank association routing #
+- american bank association routing number
+- americanbankassociationrouting #
+- americanbankassociationroutingnumber
+- bank routing number
+- bankrouting #
+- bankroutingnumber
+- routing transit number
+- RTN 
    
 ## <a name="argentina-national-identity-dni-number"></a>Número de identidad nacional (DNI) de Argentina
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Ocho dígitos separados por puntos
 
@@ -140,31 +124,26 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 #### <a name="keywordargentinanationalid"></a>Keyword_argentina_national_id
 
-- Número de identidad nacional de Argentina
- 
+- Número de identidad nacional de Argentina 
 - Identidad 
 - Tarjeta de identidad nacional de identificación 
-- DNI
- 
+- DNI 
 - Registro Nacional de NIC de personas 
-- Documento Nacional de Identidad
- 
-- Registro nacional de las personas
- 
-- Identidad
- 
-- Identificación
- 
+- Documento Nacional de Identidad 
+- Registro nacional de las personas 
+- Identidad 
+- Identificación 
    
 ## <a name="australia-bank-account-number"></a>Número de cuenta bancaria de Australia
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 De 6 a 10 dígitos con o sin número de sucursal bancaria de estado
 
 ### <a name="pattern"></a>Patrón
 
-El número de cuenta es de 6-10 dígitos. Número de sucursal estatal del Banco de Australia:
+El número de cuenta tiene entre 6 y 10 dígitos.
+Número de sucursal bancaria de Australia:
 - Tres dígitos 
 - Un guion 
 - Tres dígitos
@@ -204,36 +183,23 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 #### <a name="keywordaustraliabankaccountnumber"></a>Keyword_australia_bank_account_number
 
 - swift bank code
-- 
-correspondent bank
-- 
-base currency
-- 
-usa account
-- 
-holder address
-- 
-bank address
-- 
-information account
-- 
-fund transfers
-- 
-bank charges
-- 
-bank details
-- 
-banking information
-- 
-full names
-- 
-
-iaea
+- correspondent bank
+- base currency
+- usa account
+- holder address
+- bank address
+- information account
+- fund transfers
+- bank charges
+- bank details
+- banking information
+- full names
+- OIEA
 
    
 ## <a name="australia-drivers-license-number"></a>Número de licencia de conducción de Australia
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Nueve letras y dígitos
 
@@ -245,12 +211,12 @@ Nueve letras y dígitos:
 - Dos dígitos 
 - Cinco dígitos o letras (no distinguen entre mayúsculas y minúsculas)
 
-O bien
+OR
 
 - 1 o 2 letras opcionales (no distingue entre mayúsculas y minúsculas)  
 - 4-9 dígitos
 
-O bien
+OR
 
 - Nueve dígitos o letras (no distingue entre mayúsculas y minúsculas)
 
@@ -283,131 +249,108 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 #### <a name="keywordaustraliadriverslicensenumber"></a>Keyword_australia_drivers_license_number
 
 - international driving permits
-- 
-australian automobile association
-- 
-international driving permit
+- australian automobile association
+- international driving permit
 - DriverLicence
 - DriverLicences
-- Lic del conductor
+- Driver Lic
 - Driver Licence
-
 - Driver Licences
-
 - DriversLic
 - DriversLicence
 - DriversLicences
-- Lic de los drivers
-- Controladores conducción
-- Licencia de conductores
-- Licencias de conductores
+- Drivers Lic
+- Drivers Lics
+- Drivers Licence
+- Drivers Licences
 - N.º carné
 - N.º carnés
 - N.º carné
 - N.º carnés
-- Lic del controlador
-- Controlador de conducción
-- Permiso de conducción
-- Licencias de conducir
+- Driver' Lic
+- Driver' Lics
+- Driver' Licence
+- Driver' Licences
 - Driver'sLic
 - Driver'sLics
 - Driver'sLicence
 - Driver'sLicences
-- Lic del conductor
-- Conducción del conductor
+- Driver's Lic
+- Driver's Lics
 - Driver's Licence
-
 - Driver's Licences
-
 - DriverLic #
 - DriverLics #
 - DriverLicence #
 - DriverLicences #
 - Driver Lic#
-- 
-Driver Lics#
-
-- N.º de permiso de conducir
-- N.º de licencias de conducir
+- Driver Lics#
+- Driver Licence#
+- Driver Licences#
 - DriversLic #
 - DriversLics #
 - DriversLicence #
 - DriversLicences #
-- N.º de Lic de los conductores
-- Controladores conducción #
-- N.º de permiso de conducción
-- N.º de licencias de conductores
-- Driver'Lic#
-
-- Driver'Lics#
-
-- Driver'Licence#
-
-- Driver'Licences#
-
+- Drivers Lic#
+- Drivers Lics#
+- Drivers Licence#
+- Drivers Licences#
+- N.º carné
+- N.º carnés
+- N.º carné
+- N.º carnés
 - Driver' Lic#
-
 - Driver' Lics#
-
-- N.º de permiso de conducir
-- N.º de licencias de conducir
+- Driver' Licence#
+- Driver' Licences#
 - Driver'sLic #
 - Driver'sLics #
 - Driver'sLicence #
 - Driver'sLicences #
 - Driver's Lic#
-
 - Driver's Lics#
-
-- Número de permiso de conducción
-- N.º de licencias de conducir 
+- Driver's Licence#
+- Driver's Licences# 
 
 #### <a name="keywordaustraliadriverslicensenumberexclusions"></a>Keyword_australia_drivers_license_number_exclusions
 
-- aaa
+- aaaa
 - DriverLicense
 - DriverLicenses
-- Licencia de controlador
-- Licencias de controlador
+- Driver License
+- Driver Licenses
 - DriversLicense
 - DriversLicenses
-- Licencia de controladores
-- Licencias de controladores
+- Drivers License
+- Drivers Licenses
 - Conducción
 - Conducción
-- Licencia del controlador
-- Licencias de controlador
+- Driver' License
+- Driver' Licenses
 - Driver'sLicense
 - Driver'sLicenses
-- Permiso de conducción
-- Licencias de conducir
+- Driver's License
+- Permisos de conducción
 - DriverLicense #
 - DriverLicenses #
-- N.º de permiso de conducir
-- N.º de licencias de conducir
+- Driver License#
+- Driver Licenses#
 - DriversLicense #
 - DriversLicenses #
-- N.º de permiso de conducción
-- N.º de licencias de impulsores
-- Driver'License#
-
-- Driver'Licenses#
-
+- Drivers License#
+- Drivers Licenses#
+- Conducción
+- Conducción
 - Driver' License#
-
 - Driver' Licenses#
-
 - Driver'sLicense #
 - Driver'sLicenses #
 - Driver's License#
-
-- 
-
-Driver's Licenses#
+- Driver's Licenses#
    
 ## <a name="australia-medical-account-number"></a>Número de cuenta médica de Australia
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Entre 10 y 11 dígitos
 
@@ -457,27 +400,19 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 #### <a name="keywordaustraliamedicalaccountnumber"></a>Keyword_Australia_Medical_Account_Number
 
 - bank account details
-- 
-medicare payments
-- 
-mortgage account
-- 
-bank payments
-- 
-information branch
-- 
-credit card loan
-- 
-department of human services
-- servicio local
-- 
-
-medicare
+- medicare payments
+- mortgage account
+- bank payments
+- information branch
+- credit card loan
+- department of human services
+- local service
+- Medicare
 
    
 ## <a name="australia-passport-number"></a>Número de pasaporte de Australia
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Una letra seguida de siete dígitos
 
@@ -513,67 +448,42 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 #### <a name="keywordpassport"></a>Keyword_passport
 
 - Passport Number
-- 
-Passport No
+- Passport No
 - Passport #
-
-- Passport#
-
+- Usuarios
 - PassportID
 - Passportno
-
 - passportnumber
-
 - パスポート
 - パスポート番号
-
 - パスポートのNum
-
-- 
-パスポート ＃
- 
+- パスポート ＃ 
 - Numéro de passeport
-- 
-Passeport n °
+- Passeport n °
 - Passeport Non
-
 - Passeport #
-
-- Passeport#
-
+- Passeport #
 - PasseportNon
 - Passeportn °
 
-
 #### <a name="keywordaustraliapassportnumber"></a>Keyword_australia_passport_number
 
-- passport
-- 
-passport details
-- 
-immigration and citizenship
-- 
-commonwealth of australia
-- 
-department of immigration
-- 
-residential address
-- 
-department of immigration and citizenship
-- visa
-
-- 
-national identity card
-- número de pasaporte
-- 
-travel document
-- 
-
-issuing authority
+- usuarios
+- passport details
+- immigration and citizenship
+- commonwealth of australia
+- department of immigration
+- residential address
+- department of immigration and citizenship
+- régimen
+- national identity card
+- passport number
+- travel document
+- issuing authority
    
 ## <a name="australia-tax-file-number"></a>Número de archivo de impuestos de Australia
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Entre 8 y 9 dígitos
 
@@ -616,21 +526,13 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 #### <a name="keywordaustraliataxfilenumber"></a>Keyword_Australia_Tax_File_Number
 
 - australian business number
-- 
-marginal tax rate
-- 
-medicare levy
-- 
-portfolio number
-- 
-service veterans
-- 
-withholding tax
-- 
-individual tax return
-- 
-
-tax file number
+- marginal tax rate
+- medicare levy
+- portfolio number
+- service veterans
+- withholding tax
+- individual tax return
+- tax file number
 
 #### <a name="keywordnumberexclusions"></a>Keyword_number_exclusions
 
@@ -667,7 +569,7 @@ tax file number
    
 ## <a name="belgium-national-number"></a>Número nacional de Bélgica
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 11 dígitos más delimitadores
 
@@ -677,7 +579,7 @@ tax file number
 - Seis dígitos y dos puntos con el formato AA.MM.DD para la fecha de nacimiento  
 - Un guión  
 - Tres dígitos secuenciales (impares para hombres, pares para mujeres)  
-- Un punto 
+- Un punto  
 - Dos dígitos que son un dígito de comprobación
 
 ### <a name="checksum"></a>Suma de comprobación
@@ -706,28 +608,20 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 #### <a name="keywordbelgiumnationalnumber"></a>Keyword_belgium_national_number
 
 - Identidad
-- Registration
-- Identificación 
-- ID 
+- Registro
+- Determinación 
+- Id. 
 - Identiteitskaart
 - Registratie nummer 
- 
-- Identificatie nummer
- 
+- Identificatie nummer 
 - Identiteit
 - Registratie
-- Identificatie
-
- 
-- Carte d’identité
- 
+- Identificatie 
+- Carte d’identité 
 - numéro d'immatriculation
 - numéro d'identification
-- 
-identité
- 
-- inscription
- 
+- Identité 
+- indicación 
 - Identifikation
 - Identifizierung
 - Identifikationsnummer
@@ -738,22 +632,22 @@ identité
    
 ## <a name="brazil-cpf-number"></a>Número CPF de Brasil
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 11 dígitos incluido un dígito de control y que pueden tener o no formato
 
 ### <a name="pattern"></a>Patrón
 
-Con formato:
-- Tres dígitos  
+Con formato
+- Tres dígitos 
 - Un punto  
-- Tres dígitos  
+- Tres dígitos 
 - Un punto  
 - Tres dígitos 
 - Un guion 
 - Dos dígitos que son dígitos de control
 
-Sin formato:
+Sin formato
 - 11 dígitos, donde los dos últimos dígitos son dígitos de control
 
 ### <a name="checksum"></a>Suma de comprobación
@@ -789,32 +683,26 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 #### <a name="keywordbrazilcpf"></a>Keyword_brazil_cpf
 
 - CPF
-- Identificación
+- Determinación
 - Registro
-- Ingresos
-- Cadastro de Pessoas Físicas
- 
-- Imposto
- 
-- Identificação
- 
-- Inscrição
- 
-- Receita
-
- 
+- Generar
+- Cadastro de Pessoas Físicas 
+- Imposto 
+- Identificação 
+- Inscrição 
+- Receita 
    
 ## <a name="brazil-legal-entity-number-cnpj"></a>Número de entidad jurídica de Brasil (CNPJ)
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 14 dígitos que incluyen un número de registro, número de sucursal y dígitos de comprobación, además de delimitadores
 
 ### <a name="pattern"></a>Patrón
 14 dígitos más delimitadores:
 - Dos dígitos 
-- Un punto 
-- Tres dígitos  
+- Un punto  
+- Tres dígitos 
 - Un punto  
 - Tres dígitos (estos ocho primeros dígitos son el número de registro)  
 - Una barra diagonal  
@@ -854,46 +742,29 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 #### <a name="keywordbrazilcnpj"></a>Keyword_brazil_cnpj
 
-- CNPJ
- 
+- CNPJ 
 - CNPJ/MF 
-- CNPJ-MF
- 
-- Registro nacional de entidades jurídicas
- 
-- Registro de contribuyentes
- 
-- Entidad jurídica
- 
-- Entidades jurídicas
- 
-- Estado de registro
- 
-- Negocio
- 
+- CNPJ-MF 
+- Registro nacional de entidades jurídicas 
+- Registro de contribuyentes 
+- Entidad jurídica 
+- Entidades jurídicas 
+- Estado de registro 
+- Empresa 
 - Company
-- CNPJ
- 
-- Cadastro Nacional da Pessoa Jurídica
- 
-- Cadastro Geral de Contribuintes
- 
-- CGC
- 
-- Pessoa jurídica
- 
-- Pessoas jurídicas
- 
-- Situação cadastral
- 
-- Inscrição
- 
-- Empresa
- 
+- CNPJ 
+- Cadastro Nacional da Pessoa Jurídica 
+- Cadastro Geral de Contribuintes 
+- CGC 
+- Pessoa jurídica 
+- Pessoas jurídicas 
+- Situação cadastral 
+- Inscrição 
+- Empresa 
    
-## <a name="brazil-national-id-card-rg"></a>Tarjeta de identificación nacional de Brasil (RG)
+## <a name="brazil-national-id-card-rg"></a>	Tarjeta de identificación nacional de Brasil (RG)
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Registro geral (formato anterior): nueve dígitos
 
@@ -903,9 +774,9 @@ Registro de Identidade (RIC) (nuevo formato): 11 dígitos
 
 Registro de Geral (formato antiguo):
 - Dos dígitos 
-- Un punto 
-- Tres dígitos  
-- Un punto 
+- Un punto  
+- Tres dígitos 
+- Un punto  
 - Tres dígitos 
 - Un guión  
 - Un dígito que es un dígito de control
@@ -951,7 +822,7 @@ Cédula de Identidade identidad nacional identificador número de rregistro regi
    
 ## <a name="canada-bank-account-number"></a>Número de cuenta bancaria de Canadá
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Siete o doce dígitos
 
@@ -961,7 +832,7 @@ El número de una cuenta bancaria de Canadá contiene siete o doce dígitos.
 
 Un número de tránsito de cuenta bancaria de Canadá es:
 - Cinco dígitos 
-- Un guión  
+- Un guion 
 - Tres dígitos o
 - Un cero "0"  
 - Ocho dígitos
@@ -1001,50 +872,30 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 #### <a name="keywordcanadabankaccountnumber"></a>Keyword_canada_bank_account_number
 
 - canada savings bonds
-- 
-canada revenue agency
-- 
-canadian financial institution
-- 
-direct deposit form
-- 
-canadian citizen
-- 
-legal representative
-- 
-notary public
-- 
-commissioner for oaths
-- 
-child care benefit
-- 
-universal child care
-- 
-canada child tax benefit
-- 
-income tax benefit
-- 
-harmonized sales tax
+- canada revenue agency
+- canadian financial institution
+- direct deposit form
+- canadian citizen
+- legal representative
+- notary public
+- commissioner for oaths
+- child care benefit
+- universal child care
+- canada child tax benefit
+- income tax benefit
+- harmonized sales tax
 - social insurance number
-- 
-income tax refund
-- 
-child tax benefit
-- 
-territorial payments
-- 
-institution number
-- 
-deposit request
-- 
-banking information
-- 
-
-direct deposit
+- income tax refund
+- child tax benefit
+- territorial payments
+- institution number
+- deposit request
+- banking information
+- direct deposit
    
 ## <a name="canada-drivers-license-number"></a>Número de licencia de conductor de Canadá
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Varía según la provincia
 
@@ -1121,16 +972,15 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywordprovincenamedriverslicensename"></a>Keyword_[province_name]_drivers_license_name
+#### <a name="keywordprovincenamedriverslicensename"></a>Keyword_ [province_name] _drivers_license_name
 
 - La abreviatura de la provincia, por ejemplo, AB
-- 
-El nombre de la provincia, por ejemplo, Alberta
+- El nombre de la provincia, por ejemplo, Alberta
 
 #### <a name="keywordcanadadriverslicense"></a>Keyword_canada_drivers_license
 
-- DL
-- DLS
+- LISTAS
+- DISTRIBUCIÓN
 - CDL
 - CDLS
 - DriverLic
@@ -1139,87 +989,69 @@ El nombre de la provincia, por ejemplo, Alberta
 - DriverLicenses
 - DriverLicence
 - DriverLicences
-- Lic del conductor
-- Controlador conducción
-- Licencia de controlador
-- Licencias de controlador
+- Driver Lic
+- Driver Lics
+- Driver License
+- Driver Licenses
 - Driver Licence
-
 - Driver Licences
-
 - DriversLic
 - DriversLics
 - DriversLicence
 - DriversLicences
 - DriversLicense
 - DriversLicenses
-- Lic de los drivers
-- Controladores conducción
-- Licencia de controladores
-- Licencias de controladores
-- Licencia de conductores
-- Licencias de conductores
+- Drivers Lic
+- Drivers Lics
+- Drivers License
+- Drivers Licenses
+- Drivers Licence
+- Drivers Licences
 - N.º carné
 - N.º carnés
 - Conducción
 - Conducción
 - N.º carné
 - N.º carnés
-- Lic del controlador
-- Controlador de conducción
-- Licencia del controlador
-- Licencias de controlador
-- Permiso de conducción
-- Licencias de conducir
+- Driver' Lic
+- Driver' Lics
+- Driver' License
+- Driver' Licenses
+- Driver' Licence
+- Driver' Licences
 - Driver'sLic
 - Driver'sLics
 - Driver'sLicense
 - Driver'sLicenses
 - Driver'sLicence
 - Driver'sLicences
-- Lic del conductor
-- Conducción del conductor
-- Permiso de conducción
-- Licencias de conducir
+- Driver's Lic
+- Driver's Lics
+- Driver's License
+- Driver's Licenses
 - Driver's Licence
-
 - Driver's Licences
-
-- Perm de conduire
+- Permis de Conduire
 - id
-- falta
-- 
-idcard number
-- 
-idcard numbers
-- 
-idcard #
-- 
-idcard #s
-- tarjeta tarjeta
-- tarjetas tarjeta
+- ids
+- idcard number
+- idcard numbers
+- idcard #
+- idcard #s
+- idcard card
+- idcard cards
 - tarjeta
 - identification number
-
 - identification numbers
-
 - identification #
-
-- 
-identification #s
-- tarjeta de identificación
-- tarjetas de identificación
-- 
-identification
- 
-- DL#
-- 
-DLS#
- 
-- CDL#
- 
-- CDLS#
- 
+- identification #s
+- identification card
+- identification cards
+- determinación 
+- LISTAS
+- DISTRIBUCIÓN 
+- CDL 
+- CDLS # 
 - DriverLic # 
 - DriverLics # 
 - DriverLicense # 
@@ -1227,82 +1059,60 @@ DLS#
 - DriverLicence # 
 - DriverLicences # 
 - Driver Lic#
-- 
-Driver Lics#
- 
-- N.º de permiso de conducir 
-- N.º de licencias de conducir 
-- N.º de permiso de conducir 
-- N.º de licencias de conducir 
+- Driver Lics# 
+- Driver License# 
+- Driver Licenses# 
+- Driver License# 
+- Driver Licences# 
 - DriversLic # 
 - DriversLics # 
 - DriversLicense # 
 - DriversLicenses # 
 - DriversLicence # 
 - DriversLicences # 
-- N.º de Lic de los conductores 
-- Controladores conducción # 
-- N.º de permiso de conducción 
-- N.º de licencias de impulsores 
-- N.º de permiso de conducción 
-- N.º de licencias de conductores 
-- Driver'Lic#
- 
-- Driver'Lics#
- 
-- Driver'License#
- 
-- Driver'Licenses#
- 
-- Driver'Licence#
- 
-- Driver'Licences#
- 
-- Driver' Lic#
- 
-- Driver' Lics#
- 
-- Driver' License#
- 
-- Driver' Licenses#
- 
-- N.º de permiso de conducir 
-- N.º de licencias de conducir 
+- Drivers Lic# 
+- Drivers Lics# 
+- Drivers License# 
+- Drivers Licenses# 
+- Drivers Licence# 
+- Drivers Licences# 
+- N.º carné 
+- N.º carnés 
+- Conducción 
+- Conducción 
+- N.º carné 
+- N.º carnés 
+- Driver' Lic# 
+- Driver' Lics# 
+- Driver' License# 
+- Driver' Licenses# 
+- Driver' Licence# 
+- Driver' Licences# 
 - Driver'sLic # 
 - Driver'sLics # 
 - Driver'sLicense # 
 - Driver'sLicenses # 
 - Driver'sLicence # 
 - Driver'sLicences # 
-- Driver's Lic#
- 
-- Driver's Lics#
- 
-- Driver's License#
- 
-- Driver's Licenses#
- 
-- Número de permiso de conducción 
-- N.º de licencias de conducir 
-- Perm de conduire # 
+- Driver's Lic# 
+- Driver's Lics# 
+- Driver's License# 
+- Driver's Licenses# 
+- Driver's Licence# 
+- Driver's Licences# 
+- Permis de Conduire# 
 - identificador 
 - falta 
-- idcard card#
- 
-- idcard cards#
- 
-- idcard#
- 
-- identification card#
- 
-- identification cards#
- 
-- identification#
- 
+- idcard card# 
+- idcard cards# 
+- tarjeta 
+- identification card# 
+- identification cards# 
+- determinación 
    
 ## <a name="canada-health-service-number"></a>Número de servicio de salud de Canadá
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 10 dígitos
 
@@ -1337,25 +1147,18 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 #### <a name="keywordcanadahealthservicenumber"></a>Keyword_canada_health_service_number
 
 - personal health number
-- 
-patient information
-- servicios de mantenimiento
-- 
-speciality services
-- 
-automobile accident
-- 
-patient hospital
-- 
-psychiatrist
-- 
-workers compensation
-- 
-disability
+- patient information
+- health services
+- speciality services
+- automobile accident
+- patient hospital
+- psychiatrist
+- workers compensation
+- discapacidad
       
 ## <a name="canada-passport-number"></a>Número de pasaporte de Canadá
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Dos letras mayúsculas seguidas por seis dígitos
 
@@ -1391,60 +1194,38 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 #### <a name="keywordcanadapassportnumber"></a>Keyword_canada_passport_number
 
 - canadian citizenship
-- 
-canadian passport
-- 
-passport application
-- 
-passport photos
-- 
-certified translator
-- 
-canadian citizens
-- 
-processing times
-- 
-
-renewal application
+- canadian passport
+- passport application
+- passport photos
+- certified translator
+- canadian citizens
+- processing times
+- renewal application
 
 #### <a name="keywordpassport"></a>Keyword_passport
 
 - Passport Number
-- 
-Passport No
+- Passport No
 - Passport #
-
-- Passport#
-
+- Usuarios
 - PassportID
 - Passportno
-
 - passportnumber
-
 - パスポート
 - パスポート番号
-
 - パスポートのNum
-
-- パスポート＃
-
+- パスポート #
 - Numéro de passeport
-- 
-Passeport n °
+- Passeport n °
 - Passeport Non
-
 - Passeport #
-
-- Passeport#
-
+- Passeport #
 - PasseportNon
-- 
-
-Passeportn °
+- Passeportn °
    
 ## <a name="canada-personal-health-identification-number-phin"></a>Número de Identificación Personal de salud en Canadá (PHIN)
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Nueve dígitos
 
@@ -1458,7 +1239,8 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está 75% segura de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres: la expresión regular Regex_canada_phin encuentra contenido que coincide con el patrón. Se encuentran al menos dos palabras clave de Keyword_canada_phin o Keyword_canada_provinces..
+Una directiva DLP está 75% segura de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres: la expresión regular Regex_canada_phin encuentra contenido que coincide con el patrón.
+Se encuentran al menos dos palabras clave de Keyword_canada_phin o Keyword_canada_provinces..
 
 ```
 <!-- Canada PHIN -->
@@ -1478,77 +1260,51 @@ Una directiva DLP está 75% segura de que se detecta este tipo de información c
 #### <a name="keywordcanadaphin"></a>Keyword_canada_phin
 
 - social insurance number
-- 
-health information act
-- 
-income tax information
-- 
-manitoba health
-- 
-health registration
-- 
-prescription purchases
-- 
-benefit eligibility
-- 
-personal health
-- 
-power of attorney
-- 
-registration number
+- health information act
+- income tax information
+- manitoba health
+- health registration
+- prescription purchases
+- benefit eligibility
+- personal health
+- power of attorney
+- registration number
 - personal health number
-- 
-practitioner referral
-- 
-wellness professional
-- 
-patient referral
-- 
-
-health and wellness
+- practitioner referral
+- wellness professional
+- patient referral
+- health and wellness
 
 #### <a name="keywordcanadaprovinces"></a>Keyword_canada_provinces
 
 - Nunavut
-- 
-Quebec
-- 
-Northwest Territories
-- 
-Ontario
-- 
-British Columbia
-- 
-Alberta
-- 
-Saskatchewan
-- 
-Manitoba
-- 
-Yukon
-- 
-Newfoundland and Labrador
-- 
-New Brunswick
-- 
-Nova Scotia
-- 
-Prince Edward Island
+- Quebec
+- Northwest Territories
+- Ontario
+- British Columbia
+- Alberta
+- Saskatchewan
+- Manitoba
+- Yukon
+- Newfoundland and Labrador
+- New Brunswick
+- Nova Scotia
+- Prince Edward Island
 - Canadá
    
 ## <a name="canada-social-insurance-number"></a>Número de seguridad social de Canadá
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Nueve dígitos con guiones opcionales o espacios
 
 ### <a name="pattern"></a>Patrón
 
-Con formato:
+Con formato
+- Tres dígitos  
+- Un guion o un espacio 
 - Tres dígitos 
-- Un guión o un espacio  
-- Tres dígitos 
-- Un guión o un espacio  
+- Un guion o un espacio 
 - Tres dígitos
 
 Sin formato: nueve dígitos
@@ -1594,44 +1350,34 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 #### <a name="keywordsin"></a>Keyword_sin
 
+- sin 
+- social insurance 
+- numero d'assurance sociale 
+- pecados 
+- SSN 
+- SSN 
+- social security 
+- numero d'assurance social 
+- national identification number 
+- national id 
 - PIN 
-- social insurance
- 
-- numero d'assurance sociale
- 
-- sins
- 
-- SSN 
-- SSN 
-- seguridad social 
-- numero d'assurance social
- 
-- número de identificación nacional 
-- 
-national id 
-- sin#
- 
-- soc ins
- 
-- social ins
- 
+- soc ins 
+- social ins 
 
 #### <a name="keywordsincollaborative"></a>Keyword_sin_collaborative
 
-- permiso de conducción 
-- permiso de conducir 
-- permiso de conducción 
+- driver's license 
+- drivers license 
+- driver's licence 
 - drivers licence 
-- DOB
- 
+- NACIMIENTO 
 - Fecha de nacimiento 
-- Cumpleaños  
-- Fecha de nacimiento
- 
+- Cumpleaños 
+- Fecha de nacimiento 
    
-## <a name="chile-identity-card-number"></a>Número de tarjeta de identidad de Chile
+## <a name="chile-identity-card-number"></a>	Número de tarjeta de identidad de Chile
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 7-8 dígitos más delimitadores, un dígito de control o una letra
 
@@ -1641,7 +1387,7 @@ national id
 - 1 o 2 dígitos  
 - Un punto  
 - Tres dígitos 
-- Un punto 
+- Un punto  
 - Tres dígitos 
 - Un guión  
 - Un dígito o letra (no distingue entre mayúsculas y minúsculas) que es un dígito de control
@@ -1678,30 +1424,22 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 #### <a name="keywordchileidcard"></a>Keyword_chile_id_card
 
-- Número de identificación nacional
- 
+- Número de identificación nacional 
 - tarjeta de identidad 
-- ID 
-- Identificación 
-- Rol Único Nacional
- 
+- Id. 
+- Determinación 
+- Rol Único Nacional 
 - REALIZAR 
-- Rol Único Tributario
- 
-- RUT
- 
-- Cédula de Identidad
- 
-- Número De Identificación Nacional
- 
-- Tarjeta de identificación
- 
-- Identificación
- 
+- Rol Único Tributario 
+- ESTANCARSE 
+- Cédula de Identidad 
+- Número De Identificación Nacional 
+- Tarjeta de identificación 
+- Identificación 
    
 ## <a name="china-resident-identity-card-prc-number"></a>	Número de tarjeta de identidad de residente de China (PRC)
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 18 dígitos
 
@@ -1745,25 +1483,20 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="keywordchinaresidentid"></a>Keyword_china_resident_id
 
-- Tarjeta de identidad de residente
- 
+- Tarjeta de identidad de residente 
 - China 
-- Tarjeta de identificación nacional
- 
-- 身份证  
-- 居民 身份证  
-- 居民身份证
- 
-- 鉴定
-
- 
-- 身分證  
+- Tarjeta de identificación nacional 
+- 身份证 
+- 居民 身份证 
+- 居民身份证 
+- 鉴定 
+- 身分證 
 - 居民 身份證
-- 鑑定  
+- 鑑定 
    
 ## <a name="credit-card-number"></a>Número de tarjeta de crédito
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 16 dígitos que pueden ser formateados o sin formato (dddddddddddddddd) y deben pasar la prueba Luhn.
 
@@ -1812,366 +1545,202 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 
 - card verification
 - card identification number
-- cvn
-
+- CVN
 - cid
-
 - CVC2
 - CVV2
 - pin block
-
 - security code
-
 - security number
-
 - security no
-
 - issue number
-
 - issue no
-
 - cryptogramme
-
 - numéro de sécurité
-
 - numero de securite
-
 - kreditkartenprüfnummer
-
 - kreditkartenprufnummer
-
 - prüfziffer
-
 - prufziffer
-
-- Sicherheits Kode
-- sicherheitscode
-
+- sicherheits Kode
+- Sicherheitscode
 - sicherheitsnummer
-
 - verfalldatum
-
 - codice di verifica
-
-- cod. sicurezza
-
-- c.o.d. sicurezza
-- 
-n autorizzazione
-- código
-
+- COD. sicurezza
+- cod sicurezza
+- n autorizzazione
+- Código
 - codigo
-
-- cod. seg
-
-- seg de bacalao
+- COD. seg
+- cod seg
 - código de segurança
-
 - codigo de seguranca
-
 - codigo de segurança
-
 - código de seguranca
-
-- cód. segurança
-
+- campos. segurança
 - COD. DQO SEGURANCA. segurança
-- cód. seguranca
-
-- Cód segurança
+- campos. SEGURANCA
+- cód segurança
 - Bacalao SEGURANCA contra reembolso de segurança
-- Cód SEGURANCA
+- cód seguranca
 - número de verificação
-
 - numero de verificacao
-
 - ablauf
-
 - gültig bis
-
 - gültigkeitsdatum
-
 - gultig bis
-
 - gultigkeitsdatum
-
 - scadenza
-
 - data scad
-
 - fecha de expiracion
-
 - fecha de venc
-
-- vencimiento
-
+- 1er
 - válido hasta
-
 - valido hasta
-
 - vto
-
 - data de expiração
-
 - data de expiracao
-
 - data em que expira
-
 - validade
-
-- valor
-
+- valorar
 - vencimento
-
 - Venc 
 
 #### <a name="keywordccname"></a>Keyword_cc_name
 
-- amex
-- 
-american express
+- AMEX
+- american express
 - americanexpress
-
 - Régimen
-- mastercard
-
+- MasterCard
 - master card
-
-- 
-mc
- 
-- mastercards
-- 
-master cards
-- Club de comensal
+- valuación 
+- MasterCard
+- master cards
+- diner's Club
 - diners club
-
-- dinersclub
-
+- DinersClub
 - discover card
-
-- discovercard
-
+- detectar tarjeta
 - discover cards
-
 - JCB
 - japanese card bureau
-
 - carte blanche
-
 - carteblanche
-
 - credit card
-
 - CC
 - # CC:
-- 
-expiration date
+- expiration date
 - exp date
-
-- 
-expiry date
-- 
-date d’expiration
-- 
-date d'exp
-- 
-date expiration
+- expiry date
+- date d’expiration
+- date d'exp
+- date expiration
 - bank card
-
-- 
-bankcard
+- Bankcard
 - card number
-
 - card num
-
-- cardnumber
-
+- cardNumber
 - cardnumbers
-
 - card numbers
-
-- creditcard
-
+- crédito
 - credit cards
-
 - creditcards
-
-- ccn
-
+- CCN
 - card holder
-
-- cardholder
-
+- titular
 - card holders
-
-- cardholders
-
+- titulares de la titular
 - check card
-
-- checkcard
-
+- Checkcard
 - check cards
-
 - checkcards
-
 - debit card
-
 - debitcard
-
 - debit cards
-
-- debitcards
-
+- DebitCards
 - atm card
-
 - atmcard
-
 - atm cards
-
 - atmcards
-
-- 
-enroute
-- 
-en route
+- enrutar
+- en route
 - card type
-
 - carte bancaire
-
 - carte de crédit
-
 - carte de credit
-
 - numéro de carte
-
 - numero de carte
-
 - nº de la carte
-
 - nº de carte
-
 - kreditkarte
-
-- karte
-
+- Karte
 - karteninhaber
-
 - karteninhabers
 - kreditkarteninhaber
-
 - kreditkarteninstitut
-
 - kreditkartentyp
-
 - eigentümername
-
-- 
-kartennr
- 
+- kartennr 
 - kartennummer
-- 
-kreditkartennummer
+- kreditkartennummer
 - Kreditkarten-Nummer
 - carta di credito
-
 - carta credito
-
 - cobro
-- carta n
-- nr. carta
-
-- Carta de NR
+- n carta
+- Nº. cobro
+- nr carta
 - numero carta
-
 - numero della carta
-
 - numero di carta
-
 - tarjeta credito
-
 - tarjeta de credito
-
-- 
-tarjeta crédito
-- 
-tarjeta de crédito
+- tarjeta crédito
+- tarjeta de crédito
 - tarjeta de atm
-
 - tarjeta atm
-
 - tarjeta debito
-
 - tarjeta de debito
-
-- 
-tarjeta débito
-- 
-tarjeta de débito
+- tarjeta débito
+- tarjeta de débito
 - nº de tarjeta
-
-- no. de tarjeta
-
-- sin tarjeta de
+- dejan. de tarjeta
+- no de tarjeta
 - numero de tarjeta
-
 - número de tarjeta
-
 - tarjeta no
-
 - tarjetahabiente
-
 - cartão de crédito
-
 - cartão de credito
-
 - cartao de crédito
-
 - cartao de credito
-
 - cartão de débito
-
 - cartao de débito
-
 - cartão de debito
-
 - cartao de debito
-
 - débito automático
 - debito automatico
-
-- 
-número do cartão
-- 
-numero do cartão
- 
+- número do cartão
+- numero do cartão 
 - número do cartao
-- 
-numero do cartao
+- numero do cartao
 - número de cartão
-
 - numero de cartão
-
 - número de cartao
-
 - numero de cartao
-
-- n º do cartão
+- nº do cartão
 - nº do cartao
-
-- nº. do cartão
-
-- no cartão
-- no hacer carta
-- no. do cartão
-
-- 
-no. do cartao
- 
+- Nº. do cartão
+- no do cartão
+- no do cartao
+- dejan. do cartão
+- dejan. do cartao 
    
 ## <a name="croatia-identity-card-number"></a>Número de tarjeta de identidad de Croacia
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Nueve dígitos
 
@@ -2179,13 +1748,13 @@ Nueve dígitos
 
 Nueve dígitos consecutivos
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma de comprobación
 
 No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está 75 % segura de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La función Func_croatia_id_card encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_croatia_id_card.
 
@@ -2207,9 +1776,9 @@ Una directiva DLP está 75 % segura de que se detecta este tipo de información
 - Osobna iskaznica
 
    
-## <a name="croatia-personal-identification-oib-number"></a>	Número de identificación personal de Croacia (OIB)
+## <a name="croatia-personal-identification-oib-number"></a>Número de identificación personal de Croacia (OIB)
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 11 dígitos
 
@@ -2252,15 +1821,13 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 #### <a name="keywordcroatiaoibnumber"></a>Keyword_croatia_oib_number
 
 - Número de identificación personal
-- Osobni identifikacijski broj
- 
-- OIB
- 
+- Osobni identifikacijski broj 
+- OIB 
 
    
 ## <a name="czech-personal-identity-number"></a>Número de identidad personal en Checo
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Nueve dígitos con barra diagonal (formato antiguo) 10 dígitos con barra diagonal (nuevo formato) opcional
 
@@ -2269,7 +1836,7 @@ Nueve dígitos con barra diagonal (formato antiguo) 10 dígitos con barra diagon
 Nueve dígitos (formato antiguo):
 - Nueve dígitos
 
-O bien
+OR
 
 - Seis dígitos que representan la fecha de nacimiento
 - Una barra diagonal 
@@ -2278,7 +1845,7 @@ O bien
 10 dígitos (nuevo formato):
 - 10 dígitos
 
-O BIEN
+OR
 
 - Seis dígitos que representan la fecha de nacimiento
 - Una barra diagonal  
@@ -2290,7 +1857,9 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está 85% segura de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres: la función Func_czech_id_card encuentra contenido que coincide con el patrón. Se encuentra una palabra clave de Keyword_czech_id_card. La suma de comprobación se supera.
+Una directiva DLP está 85% segura de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres: la función Func_czech_id_card encuentra contenido que coincide con el patrón.
+Se encuentra una palabra clave de Keyword_czech_id_card.
+Se supera la suma de comprobación.
 
 ```
 <!-- Czech Personal Identity Number -->
@@ -2308,7 +1877,7 @@ Una directiva DLP está 85% segura de que se detecta este tipo de información c
    
 ## <a name="denmark-personal-identification-number"></a>Número de identificación personal de Dinamarca
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 10 dígitos que contienen un guión
 
@@ -2325,7 +1894,9 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está 75% segura de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres: la expresión regular Regex_denmark_id encuentra contenido que coincide con el patrón. Se encuentra una palabra clave de Keyword_denmark_id. La suma de comprobación se supera.
+Una directiva DLP está 75% segura de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres: la expresión regular Regex_denmark_id encuentra contenido que coincide con el patrón.
+Se encuentra una palabra clave de Keyword_denmark_id.
+Se supera la suma de comprobación.
 
 ```
 <!-- Denmark Personal Identification Number -->
@@ -2342,13 +1913,13 @@ Una directiva DLP está 75% segura de que se detecta este tipo de información c
 #### <a name="keyworddenmarkid"></a>Keyword_denmark_id
 
 - Número de identificación personal
-- CPR
+- RCP
 - Det Centrale Personregister
 - Personnummer
    
 ## <a name="drug-enforcement-agency-dea-number"></a>Número de la Drug Enforcement Agency (DEA)
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Dos letras seguidas de siete dígitos
 
@@ -2385,7 +1956,7 @@ Ninguno
    
 ## <a name="eu-debit-card-number"></a>Tarjeta de débito de la UE
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 16 dígitos
 
@@ -2429,569 +2000,308 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 
 #### <a name="keywordeudebitcard"></a>Keyword_eu_debit_card
 
-- número de cuenta 
-- card number
- 
-- card no.
- 
-- security number
- 
+- account number 
+- card number 
+- card no. 
+- security number 
 - CC 
 
 #### <a name="keywordcardtermsdict"></a>Keyword_card_terms_dict
 
-- acct nbr
- 
-- acct num
- 
-- acct no
- 
-- american express
- 
-- americanexpress
- 
-- americano espresso
- 
-- amex 
-- atm card
- 
-- atm cards
- 
-- atm kaart
- 
-- atmcard
- 
-- atmcards
- 
-- atmkaart
- 
-- atmkaarten
- 
-- bancontact
- 
-- bank card
- 
-- bankkaart
- 
-- card holder
- 
-- card holders
- 
-- card num
- 
-- card number
- 
-- card numbers
- 
-- card type
- 
-- cardano numerico
- 
-- cardholder
- 
-- cardholders
- 
-- cardnumber
- 
-- cardnumbers
- 
-- carta bianca
- 
-- carta credito
- 
-- carta di credito
- 
-- cartao de credito
- 
-- cartao de crédito
- 
-- cartao de debito
- 
-- cartao de débito
- 
-- carte bancaire
- 
-- carte blanche
- 
-- carte bleue
- 
-- carte de credit
- 
-- carte de crédit
- 
-- carte di credito
- 
-- carteblanche
- 
-- cartão de credito
- 
-- cartão de crédito
- 
-- cartão de debito
- 
-- cartão de débito
- 
-- cb
- 
-- ccn
- 
-- check card
- 
-- check cards
- 
-- checkcard
-
-- checkcards
- 
-- chequekaart
- 
-- cirrus
- 
-- cirrus-edc-maestro
- 
-- controlekaart
- 
-- controlekaarten
- 
-- credit card
- 
-- credit cards
- 
-- creditcard
- 
-- creditcards
- 
-- debetkaart
- 
-- debetkaarten
- 
-- debit card
- 
-- debit cards
- 
-- debitcard
- 
-- debitcards
- 
-- debito automatico
- 
-- diners club
- 
-- dinersclub
- 
+- acct nbr 
+- acct num 
+- acct no 
+- american express 
+- americanexpress 
+- americano espresso 
+- AMEX 
+- atm card 
+- atm cards 
+- atm kaart 
+- atmcard 
+- atmcards 
+- atmkaart 
+- atmkaarten 
+- Bancontact 
+- bank card 
+- bankkaart 
+- card holder 
+- card holders 
+- card num 
+- card number 
+- card numbers 
+- card type 
+- cardano numerico 
+- titular 
+- titulares de la titular 
+- cardNumber 
+- cardnumbers 
+- carta bianca 
+- carta credito 
+- carta di credito 
+- cartao de credito 
+- cartao de crédito 
+- cartao de debito 
+- cartao de débito 
+- carte bancaire 
+- carte blanche 
+- carte bleue 
+- carte de credit 
+- carte de crédit 
+- carte di credito 
+- carteblanche 
+- cartão de credito 
+- cartão de crédito 
+- cartão de debito 
+- cartão de débito 
+- cb 
+- CCN 
+- check card 
+- check cards 
+- Checkcard
+- checkcards 
+- chequekaart 
+- Logic 
+- Cirrus-EDC-maestro 
+- controlekaart 
+- controlekaarten 
+- credit card 
+- credit cards 
+- crédito 
+- creditcards 
+- debetkaart 
+- debetkaarten 
+- debit card 
+- debit cards 
+- debitcard 
+- DebitCards 
+- debito automatico 
+- diners club 
+- DinersClub 
 - advierte 
-- discover card
- 
-- discover cards
- 
-- discovercard
- 
-- discovercards
- 
+- discover card 
+- discover cards 
+- detectar tarjeta 
+- discovercards 
 - débito automático
-- 
-edc
- 
-- eigentümername
- 
-- european debit card
- 
-- hoofdkaart
- 
-- hoofdkaarten
- 
-- in viaggio
- 
-- japanese card bureau
- 
-- japanse kaartdienst
- 
-- jcb
- 
-- kaart
- 
-- kaart num
- 
-- kaartaantal
- 
-- kaartaantallen
- 
-- kaarthouder
- 
-- kaarthouders
- 
-- karte
-  
-- karteninhaber
- 
+- EDC 
+- eigentümername 
+- european debit card 
+- hoofdkaart 
+- hoofdkaarten 
+- in viaggio 
+- japanese card bureau 
+- japanse kaartdienst 
+- JCB 
+- Kaart 
+- kaart num 
+- kaartaantal 
+- kaartaantallen 
+- kaarthouder 
+- kaarthouders 
+- Karte  
+- karteninhaber 
 - karteninhabers
-- 
-kartennr
- 
+- kartennr 
 - kartennummer 
-- kreditkarte
- 
+- kreditkarte 
 - Kreditkarten-Nummer 
-- kreditkarteninhaber
- 
-- kreditkarteninstitut
- 
-- kreditkartennummer
- 
-- kreditkartentyp
- 
-- maestro
- 
-- master card
- 
-- master cards
- 
-- mastercard
- 
-- mastercards 
+- kreditkarteninhaber 
+- kreditkarteninstitut 
+- kreditkartennummer 
+- kreditkartentyp 
+- dispositivos 
+- master card 
+- master cards 
+- MasterCard 
+- MasterCard 
 - valuación 
-- mister cash
- 
-- carta n 
+- mister cash 
+- n carta 
 - cobro 
-- sin tarjeta de 
-- no hacer carta 
-- no cartão 
-- no. de tarjeta
- 
-- no. do cartao
- 
-- no. do cartão
- 
-- Carta de NR 
-- nr. carta
- 
-- numeri di scheda
- 
-- numero carta
- 
-- numero de cartao
- 
-- numero de carte
- 
-- numero de cartão
- 
+- no de tarjeta 
+- no do cartao 
+- no do cartão 
+- dejan. de tarjeta 
+- dejan. do cartao 
+- dejan. do cartão 
+- nr carta 
+- Nº. cobro 
+- numeri di scheda 
+- numero carta 
+- numero de cartao 
+- numero de carte 
+- numero de cartão 
 - numero de tarjeta
-
-- numero della carta
- 
-- numero di carta
- 
-- numero di scheda
- 
-- numero do cartao
- 
-- numero do cartão
- 
-- numéro de carte
- 
-- nº carta
- 
-- nº de carte
- 
-- nº de la carte
- 
-- nº de tarjeta
- 
-- nº do cartao
- 
-- n º do cartão 
-- nº. do cartão
- 
-- número de cartao
- 
-- número de cartão
- 
-- número de tarjeta
- 
+- numero della carta 
+- numero di carta 
+- numero di scheda 
+- numero do cartao 
+- numero do cartão 
+- numéro de carte 
+- nº carta 
+- nº de carte 
+- nº de la carte 
+- nº de tarjeta 
+- nº do cartao 
+- nº do cartão 
+- Nº. do cartão 
+- número de cartao 
+- número de cartão 
+- número de tarjeta 
 - número do cartao 
-- scheda dell'assegno
- 
-- scheda dell'atmosfera
- 
-- scheda dell'atmosfera
- 
-- scheda della banca
- 
-- scheda di controllo
- 
-- scheda di debito
- 
-- scheda matrice
- 
-- schede dell'atmosfera
- 
-- schede di controllo
- 
-- schede di debito
- 
-- schede matrici
- 
-- scoprono la scheda
- 
-- scoprono le schede
- 
-- solo
- 
-- supporti di scheda
- 
-- supporto di scheda
- 
-- conmutador 
-- tarjeta atm
- 
-- tarjeta credito
- 
-- tarjeta de atm
- 
-- tarjeta de credito
- 
-- tarjeta de debito
- 
-- tarjeta debito
- 
+- scheda dell'assegno 
+- scheda dell'atmosfera 
+- scheda dell'atmosfera 
+- scheda della banca 
+- scheda di controllo 
+- scheda di debito 
+- scheda matrice 
+- schede dell'atmosfera 
+- schede di controllo 
+- schede di debito 
+- schede matrici 
+- scoprono la scheda 
+- scoprono le schede 
+- solo 
+- supporti di scheda 
+- supporto di scheda 
+- cambia 
+- tarjeta atm 
+- tarjeta credito 
+- tarjeta de atm 
+- tarjeta de credito 
+- tarjeta de debito 
+- tarjeta debito 
 - tarjeta no
-
-- tarjetahabiente
- 
-- tipo della scheda
- 
+- tarjetahabiente 
+- tipo della scheda 
 - ufficio giapponese della 
-- scheda
- 
-- v pay
- 
+- Scheda 
+- v pay 
 - v-Pay 
-- visa
- 
-- visa plus
- 
-- visa electron
- 
-- visto
- 
-- visum
- 
-- vpay
-   
+- régimen 
+- visa plus 
+- visa electron 
+- a 
+- visum 
+- VPay   
 
 #### <a name="keywordcardsecuritytermsdict"></a>Keyword_card_security_terms_dict
 
 - card identification number
 - card verification 
-- cardi la verifica
- 
-- cid
- 
-- seg de bacalao 
-- c.o.d. SEGURANCA 
-- c.o.d. segurança 
-- c.o.d. sicurezza 
-- cod. seg
- 
-- cod. seguranca
- 
-- cod. segurança
- 
-- cod. sicurezza
- 
-- codice di sicurezza
- 
-- codice di verifica
- 
-- codigo
- 
-- codigo de seguranca
- 
-- codigo de segurança
- 
-- crittogramma
- 
-- cryptogram
- 
-- cryptogramme
- 
+- cardi la verifica 
+- cid 
+- cod seg 
+- cod seguranca 
+- cod segurança 
+- cod sicurezza 
+- COD. seg 
+- COD. SEGURANCA 
+- COD. segurança 
+- COD. sicurezza 
+- codice di sicurezza 
+- codice di verifica 
+- codigo 
+- codigo de seguranca 
+- codigo de segurança 
+- crittogramma 
+- criptograma 
+- cryptogramme 
 - CV2 
-- cvc
- 
+- CVC 
 - CVC2 
-- cvn
- 
-- cvv
- 
+- CVN 
+- CVV 
 - CVV2 
-- Cód SEGURANCA 
-- Cód segurança 
-- cód. seguranca
- 
-- cód. segurança
- 
-- código
- 
-- código de seguranca
- 
-- código de segurança
- 
-- de kaart controle
- 
-- geeft nr uit
- 
-- issue no
- 
-- issue number
- 
-- kaartidentificatienummer
- 
-- kreditkartenprufnummer
- 
-- kreditkartenprüfnummer
- 
-- kwestieaantal
- 
-- no. dell'edizione
- 
-- no. di sicurezza
- 
-- numero de securite
- 
-- numero de verificacao
- 
-- numero dell'edizione
- 
+- cód seguranca 
+- cód segurança 
+- campos. SEGURANCA 
+- campos. segurança 
+- Código 
+- código de seguranca 
+- código de segurança 
+- de kaart controle 
+- geeft nr uit 
+- issue no 
+- issue number 
+- kaartidentificatienummer 
+- kreditkartenprufnummer 
+- kreditkartenprüfnummer 
+- kwestieaantal 
+- dejan. dell'edizione 
+- dejan. di sicurezza 
+- numero de securite 
+- numero de verificacao 
+- numero dell'edizione 
 - numero di identificazione della 
-- scheda
- 
-- numero di sicurezza
- 
-- numero van veiligheid
- 
-- numéro de sécurité
- 
-- nº autorizzazione
- 
-- número de verificação
- 
-- perno il blocco
- 
-- pin block
- 
-- prufziffer
- 
-- prüfziffer
- 
-- security code
- 
-- security no
- 
-- security number
- 
-- sicherheits kode
- 
-- sicherheitscode
- 
-- sicherheitsnummer
- 
-- speldblok
- 
-- veiligheid nr
- 
-- veiligheidsaantal
- 
-- veiligheidscode
- 
-- veiligheidsnummer
- 
-- verfalldatum
- 
+- Scheda 
+- numero di sicurezza 
+- numero van veiligheid 
+- numéro de sécurité 
+- nº autorizzazione 
+- número de verificação 
+- perno il blocco 
+- pin block 
+- prufziffer 
+- prüfziffer 
+- security code 
+- security no 
+- security number 
+- sicherheits kode 
+- Sicherheitscode 
+- sicherheitsnummer 
+- speldblok 
+- veiligheid nr 
+- veiligheidsaantal 
+- veiligheidscode 
+- veiligheidsnummer 
+- verfalldatum 
 
 #### <a name="keywordcardexpirationtermsdict"></a>Keyword_card_expiration_terms_dict
 
-- ablauf
- 
-- data de expiracao
- 
-- data de expiração
- 
-- data del exp
- 
-- data di exp
- 
-- data di scadenza
- 
-- data em que expira
- 
-- data scad
- 
-- data scadenza
- 
-- date de validité
- 
-- datum afloop
- 
-- datum van exp
- 
-- de afloop
- 
-- espira
- 
-- espira
- 
-- exp date
- 
-- exp datum
- 
+- ablauf 
+- data de expiracao 
+- data de expiração 
+- data del exp 
+- data di exp 
+- data di scadenza 
+- data em que expira 
+- data scad 
+- data scadenza 
+- date de validité 
+- datum afloop 
+- datum van exp 
+- de afloop 
+- espira 
+- espira 
+- exp date 
+- exp datum 
 - expiración 
-- expirar
- 
-- expires
- 
-- expiry
- 
-- fecha de expiracion
- 
-- fecha de venc
- 
-- gultig bis
- 
-- gultigkeitsdatum
- 
-- gültig bis
- 
-- gültigkeitsdatum
- 
-- la scadenza
- 
-- scadenza
- 
-- valable
- 
-- validade
- 
-- valido hasta
- 
-- valor
- 
-- venc
- 
-- vencimento
- 
-- vencimiento
- 
-- verloopt
- 
-- vervaldag
- 
-- vervaldatum
- 
-- vto
- 
-- válido hasta
- 
+- expiran 
+- expira 
+- expiración 
+- fecha de expiracion 
+- fecha de venc 
+- gultig bis 
+- gultigkeitsdatum 
+- gültig bis 
+- gültigkeitsdatum 
+- la scadenza 
+- scadenza 
+- valable 
+- validade 
+- valido hasta 
+- valorar 
+- venc 
+- vencimento 
+- 1er 
+- verloopt 
+- vervaldag 
+- vervaldatum 
+- vto 
+- válido hasta 
    
 ## <a name="eu-drivers-license-number"></a>Número de permiso de conducción de la UE
 
@@ -3015,7 +2325,7 @@ Para obtener más información, vea [tipo de información confidencial de númer
   
 ## <a name="finland-national-id"></a>Identificación nacional de Finlandia
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Seis dígitos y un carácter que indican un siglo, más tres dígitos y un dígito de control
 
@@ -3051,22 +2361,23 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 ### <a name="keywords"></a>Palabras clave
 
 - Keyword_finnish_national_id
-- 
-
-Sosiaaliturvatunnus
+- Sosiaaliturvatunnus
 - SOTU Henkilötunnus HETU
 - Personbeteckning
 - Personnummer
    
 ## <a name="finland-passport-number"></a>Número de pasaporte de Finlandia
 
-Combinación de formato de nueve letras y dígitos de la combinación de los patrones de nueve letras y dígitos: dos letras (no distingue entre mayúsculas y minúsculas) siete dígitos de suma de comprobación no Definition una directiva DLP está 75% segura de que se detecta este tipo de información confidencial si, en un proximidad de 300 caracteres: la expresión regular Regex_finland_passport_number encuentra contenido que coincide con el patrón. Se encuentra una palabra clave de Keyword_finland_passport_number. Palabras clave <!-- Finland Passport Number --> 
- <Entity id="d1685ac3-1d3a-40f8-8198-32ef5669c7a5" recommendedConfidence="75" patternsProximity="300"> 
- de Passport <Pattern confidenceLevel="75"> <IdMatch idRef="Regex_finland_passport_number"/> <Match idRef="Keyword_finland_passport_number"/> </Pattern> </Entity>
+Combinación de formato de nueve letras y dígitos de la combinación de los patrones de nueve letras y dígitos: dos letras (no distingue entre mayúsculas y minúsculas) siete dígitos de suma de comprobación no Definition una directiva DLP está 75% segura de que se detecta este tipo de información confidencial si, en un proximidad de 300 caracteres: la expresión regular Regex_finland_passport_number encuentra contenido que coincide con el patrón.
+Se encuentra una palabra clave de Keyword_finland_passport_number.
+<!-- Finland Passport Number -->
+<Entity id="d1685ac3-1d3a-40f8-8198-32ef5669c7a5" recommendedConfidence="75" patternsProximity="300"> <Pattern confidenceLevel="75"> <IdMatch idRef="Regex_finland_passport_number"/> <Match idRef="Keyword_finland_passport_number"/> </Pattern>
+</Entity>
+Palabras clave Keyword_finland_passport_number Passi de Passport
    
 ## <a name="france-drivers-license-number"></a>Número de licencia de conductor de Francia
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 12 dígitos
 
@@ -3074,7 +2385,7 @@ Combinación de formato de nueve letras y dígitos de la combinación de los pat
 
 12 dígitos con validación para descontar patrones similares como los números de teléfono franceses
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma de comprobación
 
 No
 
@@ -3104,25 +2415,18 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 #### <a name="keywordfrenchdriverslicense"></a>Keyword_french_drivers_license
 
 - drivers licence
-- permiso de conducir
+- drivers license
 - driving licence
-
-- licencia de conducir
-- 
-permis de conduire
-- 
-licence number
-- 
-license number
-- 
-licence numbers
-- 
-
-license numbers
+- driving license
+- permis de conduire
+- licence number
+- license number
+- licence numbers
+- license numbers
 
 ## <a name="france-national-id-card-cni"></a>Tarjeta de identificación nacional de Francia (CNI)
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 12 dígitos
 
@@ -3154,7 +2458,7 @@ Ninguno
    
 ## <a name="france-passport-number"></a>Número de pasaporte de Francia
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Nueve dígitos y letras
 
@@ -3162,10 +2466,10 @@ Nueve dígitos y letras
 
 Nueve dígitos y letras:
 - Dos dígitos 
-- Dos letras (no distingue entre mayúsculas y minúsculas)  
+- Dos letras (no distingue entre mayúsculas y minúsculas) 
 - Cinco dígitos
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma de comprobación
 
 No
 
@@ -3190,43 +2494,28 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 #### <a name="keywordpassport"></a>Keyword_passport
 
 - Passport Number
-- 
-Passport No
+- Passport No
 - Passport #
-
-- Passport#
-
+- Usuarios
 - PassportID
 - Passportno
-
 - passportnumber
-
 - パスポート
 - パスポート番号
-
 - パスポートのNum
-
-- 
-パスポート ＃
- 
+- パスポート ＃ 
 - Numéro de passeport
-- 
-Passeport n °
+- Passeport n °
 - Passeport Non
-
 - Passeport #
-
-- Passeport#
-
+- Passeport #
 - PasseportNon
-- 
-
-Passeportn °
+- Passeportn °
 
       
 ## <a name="france-social-security-number-insee"></a>Número de seguridad social de Francia (INSEE)
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 15 dígitos
 
@@ -3277,56 +2566,38 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 
 #### <a name="keywordfrinsee"></a>Keyword_fr_insee
 
-- insee
-- 
-securité sociale
-- 
-securite sociale
-- 
-national id
-- 
-national identification
-- 
-numéro d'identité
-- sin d'identité
-- 
-no. d'identité
-- 
-numero d'identite
-- sin d'identite
-- 
-no. d'identite
+- INSEE
+- securité sociale
+- securite sociale
+- national id
+- national identification
+- numéro d'identité
+- no d'identité
+- dejan. d'identité
+- numero d'identite
+- no d'identite
+- dejan. d'identite
 - social security number
-
-- 
-social security code
+- social security code
 - social insurance number
-- 
-le numéro d'identification nationale
-- 
-d'identité nationale
-- 
-numéro de sécurité sociale
-- 
-le code de la sécurité sociale
-- 
-numéro d'assurance sociale
-- 
-numéro de sécu
-- 
-code sécu
- 
+- le numéro d'identification nationale
+- d'identité nationale
+- numéro de sécurité sociale
+- le code de la sécurité sociale
+- numéro d'assurance sociale
+- numéro de sécu
+- code sécu 
    
 ## <a name="german-drivers-license-number"></a>Número de licencia de conductor de Alemania
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Combinación de 11 dígitos y letras
 
 ### <a name="pattern"></a>Patrón
 
 11 dígitos y letras (no distingue entre mayúsculas y minúsculas):
-- Un dígito o una letra  
+- Un dígito o letra 
 - Dos dígitos 
 - Seis dígitos o letras 
 - Un dígito 
@@ -3365,22 +2636,14 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 #### <a name="keywordgermandriverslicensenumber"></a>Keyword_german_drivers_license_number
 
 - Führerschein
-- 
-Fuhrerschein
+- Fuhrerschein
 - Fuehrerschein
-- 
-Führerscheinnummer
-- 
-Fuhrerscheinnummer
-- 
-Fuehrerscheinnummer
-- 
-Führerschein-
- 
-- Fuhrerschein-
- 
-- Fuehrerschein-
- 
+- Führerscheinnummer
+- Fuhrerscheinnummer
+- Fuehrerscheinnummer
+- Führerschein- 
+- Fuhrerschein- 
+- Fuehrerschein- 
 - FührerscheinnummerNr
 - FuhrerscheinnummerNr
 - FuehrerscheinnummerNr
@@ -3388,15 +2651,10 @@ Führerschein-
 - FuhrerscheinnummerKlasse
 - FuehrerscheinnummerKlasse
 - Führerschein- Nr
-
 - Fuhrerschein- Nr
-
-- Fuehrerschein- Nr
- 
-- Führerschein- Klasse
- 
-- Fuhrerschein- Klasse
- 
+- Fuehrerschein- Nr 
+- Führerschein- Klasse 
+- Fuhrerschein- Klasse 
 - Fuehrerschein- Klasse
 - FührerscheinnummerNr 
 - FuhrerscheinnummerNr 
@@ -3404,125 +2662,77 @@ Führerschein-
 - FührerscheinnummerKlasse 
 - FuhrerscheinnummerKlasse 
 - FuehrerscheinnummerKlasse 
-- Führerschein- Nr
- 
-- Fuhrerschein- Nr
- 
-- Fuehrerschein- Nr
- 
-- Führerschein- Klasse
- 
-- Fuhrerschein- Klasse
- 
+- Führerschein- Nr 
+- Fuhrerschein- Nr 
+- Fuehrerschein- Nr 
+- Führerschein- Klasse 
+- Fuhrerschein- Klasse 
 - Fuehrerschein- Klasse 
-- DL 
-- DLS
-- 
-Driv Lic
- 
-- Driv Licen
- 
+- LISTAS 
+- DISTRIBUCIÓN
+- Driv Lic 
+- Driv Licen 
 - Driv License
-- 
-Driv Licenses
- 
-- Driv Licence
- 
-- Driv Licences
- 
-- Driv Lic
- 
-- Driver Licen
- 
-- Licencia de controlador 
-- Licencias de controlador 
-- Driver Licence
- 
-- Driver Licences
- 
-- Lic de los drivers 
-- Controladores licen 
-- Licencia de controladores 
-- Licencias de controladores 
-- Licencia de conductores 
-- Licencias de conductores 
-- Lic del conductor 
-- Driver's Licen
- 
-- Permiso de conducción 
-- Licencias de conducir 
-- Driver's Licence
- 
-- Driver's Licences
- 
-- Driving Lic
- 
-- Driving Licen
- 
-- Driving License
- 
-- Driving Licenses
- 
-- Driving Licence
-
- 
+- Driv Licenses 
+- Driv Licence 
+- Driv Licences 
+- Driv Lic 
+- Driver Licen 
+- Driver License 
+- Driver Licenses 
+- Driver Licence 
+- Driver Licences 
+- Drivers Lic 
+- Drivers Licen 
+- Drivers License 
+- Drivers Licenses 
+- Drivers Licence 
+- Drivers Licences 
+- Driver's Lic 
+- Driver's Licen 
+- Driver's License 
+- Driver's Licenses 
+- Driver's Licence 
+- Driver's Licences 
+- Driving Lic 
+- Driving Licen 
+- Driving License 
+- Driving Licenses 
+- Driving Licence 
 - Driving Licences
 
 #### <a name="keywordgermandriverslicensecollaborative"></a>Keyword_german_drivers_license_collaborative
 
-- 
-Nr-Führerschein
- 
-- Nr-Fuhrerschein
- 
-- Nr-Fuehrerschein
- 
-- No-Führerschein
- 
-- No-Fuhrerschein
- 
-- No-Fuehrerschein
- 
-- N-Führerschein
- 
-- N-Fuhrerschein
- 
-- N-Fuehrerschein
-- 
-Nr-Führerschein
- 
-- Nr-Fuhrerschein
- 
-- Nr-Fuehrerschein
- 
-- No-Führerschein
- 
-- No-Fuhrerschein
- 
-- No-Fuehrerschein
- 
-- N-Führerschein
- 
-- N-Fuhrerschein
- 
-- N-Fuehrerschein 
+- Nr-Führerschein 
+- Nr-Fuhrerschein 
+- Nr-fuehrerschein 
+- No-Führerschein 
+- No-Fuhrerschein 
+- No-fuehrerschein 
+- N-Führerschein 
+- N-Fuhrerschein 
+- N-fuehrerschein
+- Nr-Führerschein 
+- Nr-Fuhrerschein 
+- Nr-fuehrerschein 
+- No-Führerschein 
+- No-Fuhrerschein 
+- No-fuehrerschein 
+- N-Führerschein 
+- N-Fuhrerschein 
+- N-fuehrerschein 
 
 #### <a name="keywordgermandriverslicense"></a>Keyword_german_drivers_license
 
 - ausstellungsdatum
-- 
-ausstellungsort
-- 
-ausstellende behöde
-- 
-ausstellende behorde
-- 
-
-ausstellende behoerde
+- ausstellungsort
+- ausstellende behöde
+- ausstellende behorde
+- ausstellende behoerde
    
 ## <a name="german-passport-number"></a>Número de pasaporte de Alemania
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 10 dígitos o letras
 
@@ -3581,21 +2791,16 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 #### <a name="keywordgermanpassport"></a>Keyword_german_passport
 
 - reisepass
-- 
-reisepasse
-- 
-reisepassnummer
-- passport
-- 
-
-passports
+- reisepasse
+- reisepassnummer
+- usuarios
+- passports
 
 #### <a name="keywordgermanpassportcollaborative"></a>Keyword_german_passport_collaborative
 
 - geburtsdatum
 - ausstellungsdatum
-- 
-ausstellungsort
+- ausstellungsort
 
 #### <a name="keywordgermanpassportnumber"></a>Keyword_german_passport_number
 
@@ -3603,8 +2808,7 @@ No-Reisepass NR-Reisepass
 
 #### <a name="keywordgermanpassport1"></a>Keyword_german_passport1
 
-Reisepass-Nr
-
+Reisepass-NR
 
 #### <a name="keywordgermanpassport2"></a>Keyword_german_passport2
 
@@ -3612,7 +2816,7 @@ bnationalit. t
    
 ## <a name="germany-identity-card-number"></a>Número de documento de identidad de Alemania
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Desde el 1 de noviembre de 2010: nueve letras y dígitos
 
@@ -3627,7 +2831,7 @@ Desde el 1 de noviembre de 2010:
 Desde el 1 de abril de 1987 hasta el 31 de octubre de 2010:
 - 10 dígitos
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma de comprobación
 
 No
 
@@ -3652,8 +2856,8 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 #### <a name="keywordgermanyidcard"></a>Keyword_germany_id_card
 
 - tarjeta de identidad
-- ID
-- Identificación
+- Id.
+- Determinación
 - Personalausweis
 - Identifizierungsnummer
 - Ausweis
@@ -3661,7 +2865,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
    
 ## <a name="greece-national-id-card"></a>Tarjeta de identificación nacional de Grecia
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Combinación de 7 u 8 letras y números más un guión
 
@@ -3677,13 +2881,13 @@ Ocho letras y números (nuevo formato):
 - Un guión  
 - Seis dígitos
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma de comprobación
 
 No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está 75 % segura de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La expresión regular Regex_greece_id_card encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_greece_id_card.
 
@@ -3708,7 +2912,7 @@ Una directiva DLP está 75 % segura de que se detecta este tipo de información
    
 ## <a name="hong-kong-identity-card-hkid-number"></a>Número de tarjeta de identidad de Hong Kong (HKID)
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Combinación de 8 o 9 letras y números, más paréntesis opcionales alrededor del carácter final
 
@@ -3725,7 +2929,7 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está 75 % segura de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La función Func_hong_kong_id_card encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_hong_kong_id_card.
 - Se supera la suma de comprobación.
@@ -3753,24 +2957,20 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 
 - tarjeta de identidad de Hong Kong
 - HKIDC
-- tarjeta de identificación
+- id card
 - documento de identidad
 - tarjeta de identidad HK
 - ID de Hong Kong
 - 香港身份證
-
 - 香港永久性居民身份證
-
 - 身份證
-
 - 身份証
-- 身分證 
+- 身分證
 - 身分証
 - 香港身份証
 - 香港身分證
 - 香港身分証
 - 香港身份證
-
 - 香港居民身份證
 - 香港居民身份証
 - 香港居民身分證
@@ -3779,7 +2979,6 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 - 香港永久性居民身分證
 - 香港永久性居民身分証
 - 香港永久性居民身份證
-
 - 香港非永久性居民身份證
 - 香港非永久性居民身份証
 - 香港非永久性居民身分證
@@ -3795,7 +2994,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
    
 ## <a name="india-permanent-account-number-pan"></a>Número de cuenta permanente de India (PAN)
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 10 letras o dígitos
 
@@ -3831,23 +3030,21 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 
 #### <a name="keywordindiapermanentaccountnumber"></a>Keyword_india_permanent_account_number
 
-- Número de cuenta permanente
- 
-- PAN
- 
+- Número de cuenta permanente 
+- MANO 
    
 ## <a name="india-unique-identification-aadhaar-number"></a>Número de identificación único (Aadhaar) de la India
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 12 dígitos que contienen espacios o guiones opcionales
 
 ### <a name="pattern"></a>Patrón
 
 12 dígitos:
-- Cuatro dígitos  
+- Cuatro dígitos 
 - Un guión o un espacio opcional  
-- Cuatro dígitos  
+- Cuatro dígitos 
 - Un guión o un espacio opcional  
 - El dígito final que es el dígito de control
 
@@ -3857,7 +3054,12 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está 85% segura de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres: la función Func_india_aadhaar encuentra contenido que coincide con el patrón. Se encuentra una palabra clave de Keyword_india_aadhar. La suma de comprobación se supera. Una directiva DLP está 75% segura de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres: la función Func_india_aadhaar encuentra contenido que coincide con el patrón. La suma de comprobación se supera. <!-- India Unique Identification (Aadhaar) number -->
+Una directiva DLP está 85% segura de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres: la función Func_india_aadhaar encuentra contenido que coincide con el patrón.
+Se encuentra una palabra clave de Keyword_india_aadhar.
+Se supera la suma de comprobación.
+Una directiva DLP está 75% segura de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres: la función Func_india_aadhaar encuentra contenido que coincide con el patrón.
+Se supera la suma de comprobación.
+<!-- India Unique Identification (Aadhaar) number -->
 <Entity id="1ca46b29-76f5-4f46-9383-cfa15e91048f" recommendedConfidence="85" patternsProximity="300"> <Pattern confidenceLevel="85"> <IdMatch idRef="Func_india_aadhaar"/> <Match idRef="Keyword_india_aadhar"/> </Pattern> <Pattern confidenceLevel="75"> <IdMatch idRef="Func_india_aadhaar"/> </Pattern>
 </Entity>
 
@@ -3871,7 +3073,7 @@ Una directiva DLP está 85% segura de que se detecta este tipo de información c
    
 ## <a name="indonesia-identity-card-ktp-number"></a>Número de tarjeta de identidad (KTP) de Indonesia
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 16 dígitos que contienen puntos opcionales
 
@@ -3918,14 +3120,12 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 #### <a name="keywordindonesiaidcard"></a>Keyword_indonesia_id_card
 
 - KTP
-- Kartu Tanda Penduduk
- 
-- Nomor Induk Kependudukan
- 
+- Kartu Tanda Penduduk 
+- Nomor Induk Kependudukan 
    
 ## <a name="international-banking-account-number-iban"></a>Número de cuenta bancaria internacional (IBAN)
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Código de país (dos letras) más dígitos de control (dos dígitos), más el número IBAN (hasta 30 caracteres)
 
@@ -3966,19 +3166,19 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 Ninguno
 
    
-## <a name="ip-address"></a>Dirección IP
+## <a name="ip-address"></a>dirección IP
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
-#### <a name="ipv4"></a>IPv4:
+#### <a name="ipv4"></a>IPv4
 Patrón complejo que representa las versiones con formato (con puntos) y sin formato (sin puntos) de las direcciones IPv4
 
-#### <a name="ipv6"></a>IPv6:
+#### <a name="ipv6"></a>Protocolo
  Patrón complejo que representa el formato de números IPv6 (que incluye signos de dos puntos)
 
 ### <a name="pattern"></a>Patrón
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma de comprobación
 
 No
 
@@ -3994,7 +3194,7 @@ Para IPv4, una directiva DLP está segura al 95% de que este tipo de informació
 
 Para IPv6, una directiva DLP está segura al 95% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La expresión regular Regex_ipv6_address encuentra contenido que coincide con el patrón.
-- No se encuentra una palabra clave de Keyword_ipaddress.
+- No se encuentra ninguna palabra clave de Keyword_ipaddress.
 
 ```
     <!-- IP Address -->
@@ -4025,25 +3225,22 @@ Para IPv6, una directiva DLP está segura al 95% de que este tipo de informació
 #### <a name="keywordipaddress"></a>Keyword_ipaddress
 
 - IP (esta palabra clave distingue entre mayúsculas y minúsculas)
-- dirección IP
- 
+- dirección IP 
 - Direcciones IP
 - internet protocol
-- 
-IP-כתובת ה
- 
+- IP-כתובת ה 
    
 ## <a name="international-classification-of-diseases-icd-10-cm"></a>Clasificación Internacional de enfermedades (ICD-10-CM)
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
-Diccionario
+Dictionary
 
 ### <a name="pattern"></a>Patrón
 
-Palabraclave
+Palabra clave
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma de comprobación
 
 No
 
@@ -4068,15 +3265,15 @@ Cualquier término del Diccionario de palabras clave de Dictionary_icd_10_cm, qu
    
 ## <a name="international-classification-of-diseases-icd-9-cm"></a>Clasificación Internacional de enfermedades (ICD-9-CM)
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
-Diccionario
+Dictionary
 
 ### <a name="pattern"></a>Patrón
 
-Palabraclave
+Palabra clave
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma de comprobación
 
 No
 
@@ -4099,7 +3296,7 @@ Cualquier término del Diccionario de palabras clave de Dictionary_icd_9_cm, que
    
 ## <a name="ireland-personal-public-service-pps-number"></a>Número de servicio público personal (PPS) de Irlanda
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Formato antiguo (hasta el 31 de diciembre de 2012):
 - Siete dígitos seguidos por 1 o 2 letras  
@@ -4156,46 +3353,37 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 #### <a name="keywordirelandpps"></a>Keyword_ireland_pps
 
 - Número de servicio público personal 
- 
-- Número de PPS
- 
+- Número de PPS 
 - Núm. PPS
  
-- N.º PPS
- 
-- N.ro PPS
- 
+- N.º PPS 
+- N.ro PPS 
 - PPS 
-- NPPS
- 
-- Tarjeta de servicios públicos
- 
-- Uimhir Phearsanta Seirbhíse Poiblí
- 
-- Uimh. PSP
- 
-- PSP
- 
+- PPSN 
+- Tarjeta de servicios públicos 
+- Uimhir Phearsanta Seirbhíse Poiblí 
+- Uimh. PSP 
+- PSP 
    
 ## <a name="israel-bank-account-number"></a>Número de cuenta bancaria de Israel
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 13 dígitos
 
 ### <a name="pattern"></a>Patrón
 
-Con formato:
+Con formato
 - Dos dígitos 
-- Un guión  
+- Guion 
 - Tres dígitos 
 - Guion 
 - Ocho dígitos
 
-Sin formato:
+Sin formato
 - 	13 dígitos consecutivos
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma de comprobación
 
 No
 
@@ -4221,18 +3409,14 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 #### <a name="keywordisraelbankaccountnumber"></a>Keyword_israel_bank_account_number
 
-- Bank Account Number
- 
-- Bank Account
- 
-- Account Number
- 
-- מספר חשבון בנק
- 
+- Número de cuenta bancaria 
+- Cuenta bancaria 
+- Account Number 
+- מספר חשבון בנק 
    
 ## <a name="israel-national-id"></a>Identificación nacional de Israel
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Nueve dígitos
 
@@ -4267,13 +3451,12 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 #### <a name="keywordisraelnationalid"></a>Keyword_Israel_National_ID
 
-- מספר זהות
- 
+- מספר זהות 
 - National ID Number
    
 ## <a name="italy-drivers-license-number"></a>Número de licencia de conductor de Italia
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Una combinación de 10 letras y dígitos
 
@@ -4311,14 +3494,12 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 #### <a name="keyworditalydriverslicensenumber"></a>Keyword_italy_drivers_license_number
 
-- numero di patente di guida
- 
-- patente di guida
- 
+- numero di patente di guida 
+- patente di guida 
    
 ## <a name="japan-bank-account-number"></a>Número de cuenta bancaria de Japón
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Siete u ocho dígitos
 
@@ -4331,7 +3512,7 @@ Número de cuenta bancaria:
 - Un espacio o un guion (opcional) 
 - Tres dígitos
 
-Checksum
+Suma de comprobación
 
 No
 
@@ -4372,110 +3553,60 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 #### <a name="keywordjpbankaccount"></a>Keyword_jp_bank_account
 
-- Checking Account Number
- 
-- Checking Account
- 
-- Checking Account #
- 
-- Checking Acct Number
- 
-- Checking Acct #
- 
-- Checking Acct No.
- 
-- Checking Account No.
- 
-- Bank Account Number
- 
-- Bank Account
- 
-- Bank Account #
- 
-- Bank Acct Number
- 
-- Bank Acct #
- 
-- Bank Acct No.
- 
-- Bank Account No.
- 
-- Savings Account Number
- 
-- Cuenta de ahorro 
-- Savings Account #
- 
-- Savings Acct Number
- 
-- Savings Acct #
- 
-- Savings Acct No.
- 
-- Savings Account No.
- 
-- Debit Account Number
- 
-- Debit Account
- 
-- Debit Account #
- 
-- Debit Acct Number
- 
-- Debit Acct #
- 
-- Debit Acct No.
- 
-- Debit Account No.
- 
-- 口座番号を当座預金口座の確認
- 
-- ＃アカウントの確認、勘定番号の確認
- 
-- ＃勘定の確認
- 
-- 勘定番号の確認
- 
-- 口座番号の確認
- 
+- Checking Account Number 
+- Checking Account 
+- Checking Account # 
+- Checking Acct Number 
+- Checking Acct # 
+- Checking Acct No. 
+- Checking Account No. 
+- Bank Account Number 
+- Bank Account 
+- Bank Account # 
+- Bank Acct Number 
+- Bank Acct # 
+- Bank Acct No. 
+- Bank Account No. 
+- Savings Account Number 
+- Savings Account 
+- Savings Account # 
+- Savings Acct Number 
+- Savings Acct # 
+- Savings Acct No. 
+- Savings Account No. 
+- Debit Account Number 
+- Debit Account 
+- Debit Account # 
+- Debit Acct Number 
+- Debit Acct # 
+- Debit Acct No. 
+- Debit Account No. 
+- 口座番号を当座預金口座の確認 
+- #アカウントの確認 、 勘定番号の確認 
+- #勘定の確認 
+- 勘定番号の確認 
+- 口座番号の確認 
 - 銀行口座番号 
 - 銀行口座 
-- 銀行口座＃
- 
-- 銀行の勘定番号
- 
-- 銀行のacct＃
- 
-- 銀行の勘定いいえ
- 
+- 銀行口座 # 
+- 銀行の勘定番号 
+- 銀行のacct # 
+- 銀行の勘定いいえ 
 - 銀行口座番号
-- 
-普通預金口座番号
- 
-- 預金口座
- 
-- 貯蓄口座＃
- 
-- 貯蓄勘定の数
- 
-- 貯蓄勘定＃
- 
-- 貯蓄勘定番号
- 
-- 普通預金口座番号
- 
-- 引き落とし口座番号
- 
+- 普通預金口座番号 
+- 預金口座 
+- 貯蓄口座 # 
+- 貯蓄勘定の数 
+- 貯蓄勘定 # 
+- 貯蓄勘定番号 
+- 普通預金口座番号 
+- 引き落とし口座番号 
 - 口座番号 
-- 口座番号＃
- 
-- デビットのacct番号
- 
-- デビット勘定＃
- 
-- デビットACCTの番号
- 
-- デビット口座番号
- 
+- 口座番号 # 
+- デビットのacct番号 
+- デビット勘定 # 
+- デビットACCTの番号 
+- デビット口座番号 
 
 #### <a name="keywordjpbankbranchcode"></a>Keyword_jp_bank_branch_code
 
@@ -4483,7 +3614,7 @@ Otemachi
 
 ## <a name="japan-drivers-license-number"></a>Número de licencia de conductor de Japón
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 12 dígitos
 
@@ -4515,42 +3646,35 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 #### <a name="keywordjpdriverslicensenumber"></a>Keyword_jp_drivers_license_number
 
-- dl# 
+- listas 
 - LISTAS 
-- dls# 
+- distribución 
 - DISTRIBUCIÓN 
-- permiso de conducción 
-- permisos de conducción 
-- permiso de conducir 
-- permiso de conducción 
-- permisos de conducir 
-- permisos de conducción 
-- driving licence
- 
-- lic# 
+- driver license 
+- driver licenses 
+- drivers license 
+- driver's license 
+- drivers licenses 
+- driver's licenses 
+- driving licence 
 - Lic 
-- lics# 
-- identificador de estado 
-- state identification
- 
-- state identification number
- 
-- 低所得国＃
- 
+- Lic 
+- conducción 
+- state id 
+- state identification 
+- state identification number 
+- 低所得国 # 
 - 免許証 
 - 状態ID
-- 
-状態の識別
- 
-- 状態の識別番号
- 
+- 状態の識別 
+- 状態の識別番号 
 - 運転免許 
 - 運転免許証 
 - 運転免許証番号 
    
 ## <a name="japan-passport-number"></a>Número de pasaporte de Japón
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Dos letras seguidas de siete dígitos
 
@@ -4582,18 +3706,14 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 #### <a name="keywordjppassport"></a>Keyword_jp_passport
 
-- パスポート
- 
-- パスポート番号
- 
-- パスポートのNum
- 
-- パスポート＃
- 
+- パスポート 
+- パスポート番号 
+- パスポートのNum 
+- パスポート # 
    
 ## <a name="japan-resident-registration-number"></a>Número de registro de residente de Japón
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 11 dígitos
 
@@ -4626,31 +3746,21 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 #### <a name="keywordjpresidentregistrationnumber"></a>Keyword_jp_resident_registration_number
 
 - Resident Registration Number
-- Resident Register Number
- 
-- Residents Basic Registry Number
- 
-- Resident Registration No.
- 
-- Resident Register No.
- 
-- Residents Basic Registry No.
- 
-- Basic Resident Register No.
- 
-- 住民登録番号、登録番号をレジデント
- 
-- 住民基本登録番号、登録番号
- 
-- 住民基本レジストリ番号を常駐
- 
-- 登録番号を常駐住民基本台帳登録番号
- 
+- Resident Register Number 
+- Residents Basic Registry Number 
+- Resident Registration No. 
+- Resident Register No. 
+- Residents Basic Registry No. 
+- Basic Resident Register No. 
+- 住民登録番号 、 登録番号をレジデント 
+- 住民基本登録番号 、 登録番号 
+- 住民基本レジストリ番号を常駐 
+- 登録番号を常駐住民基本台帳登録番号 
 
    
 ## <a name="japan-social-insurance-number-sin"></a>Número de Seguridad Social de Japón (SIN)
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 De 7 a 12 dígitos
 
@@ -4694,20 +3804,15 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 #### <a name="keywordjpsin"></a>Keyword_jp_sin
 
-- Social Insurance No.
- 
-- Social Insurance Num
- 
-- Social Insurance Number
- 
-- 社会保険のテンキー
- 
-- 社会保険番号
- 
+- Social Insurance No. 
+- Social Insurance Num 
+- Social Insurance Number 
+- 社会保険のテンキー 
+- 社会保険番号 
 
 ## <a name="japanese-residence-card-number"></a>Número de tarjeta de residencia japonés
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 12 letras y dígitos
 
@@ -4749,7 +3854,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
    
 ## <a name="malaysia-id-card-number"></a>Número de la tarjeta de identificación de Malasia
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 12 dígitos que contienen guiones opcionales
 
@@ -4793,7 +3898,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 - i/c no
 - i
 - no IC
-- tarjeta de identificación
+- id card
 - Tarjeta de identificación
 - documento de identidad
 - k/p
@@ -4815,7 +3920,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
    
 ## <a name="netherlands-citizens-service-bsn-number"></a>Número de servicio del ciudadano (BSN) de Países Bajos
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 8 o 9 dígitos que contienen espacios opcionales
 
@@ -4855,24 +3960,17 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 
 #### <a name="keywordnetherlandsbsn"></a>Keyword_netherlands_bsn
 
-- Número de servicio de ciudadanía
- 
-- BSN
-
- 
-- Burgerservicenummer
- 
-- Sofinummer
- 
-- Persoonsgebonden nummer
- 
-- Persoonsnummer
-    
+- Número de servicio de ciudadanía 
+- BSN 
+- Burgerservicenummer 
+- Sofinummer 
+- Persoonsgebonden nummer 
+- Persoonsnummer    
 
    
 ## <a name="new-zealand-ministry-of-health-number"></a>Número de Ministerio de salud de Nueva Zelanda
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Tres letras, un espacio (opcional) y cuatro dígitos
 
@@ -4907,16 +4005,14 @@ Palabras clave
 
 Keyword_nz_terms
 
-- NHI
- 
-- Nueva Zelanda 
+- NHI 
+- New Zealand 
 - Mantenimiento 
-- tratamiento
- 
+- régimen 
    
 ## <a name="norway-identification-number"></a>Número de identificación de Noruega
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 11 dígitos
 
@@ -4961,14 +4057,14 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 - Número de identificación personal
 - Número de id. noruego
 - Número de id.
-- Identificación
+- Determinación
 - Personnummer
 - Fødselsnummer
 
    
 ## <a name="philippines-unified-multi-purpose-id-number"></a>Número de id. universal unificado de Filipinas
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 12 dígitos separados por guiones
 
@@ -4976,7 +4072,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 
 12 dígitos:
 - Cuatro dígitos 
-- Un guion 
+- Un guión  
 - Siete dígitos  
 - Un guión  
 - Un dígito
@@ -4987,7 +4083,7 @@ No
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está 75 % segura de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres:
+Una directiva DLP está segura al 75% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
 - La expresión regular Regex_philippines_unified_id encuentra contenido que coincide con el patrón.
 - Se encuentra una palabra clave de Keyword_philippines_id.
 
@@ -5007,14 +4103,13 @@ Una directiva DLP está 75 % segura de que se detecta este tipo de información
 
 - Id. universal unificado
  
-- UMID
- 
-- tarjeta de identidad 
+- UMID 
+- Tarjeta de identidad 
 - Pinag-isang Multi-Layunin ID
    
 ## <a name="poland-identity-card"></a>Tarjeta de identificación de Polonia
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Tres letras y seis dígitos
 
@@ -5028,7 +4123,9 @@ Sí
 
 ### <a name="definition"></a>Definición
 
-Una directiva DLP está 75% segura de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres: la función Func_polish_national_id encuentra contenido que coincide con el patrón. Se encuentra una palabra clave de Keyword_polish_national_id_passport_number. La suma de comprobación se supera.
+Una directiva DLP está 75% segura de que se detecta este tipo de información confidencial si, en una proximidad de 300 caracteres: la función Func_polish_national_id encuentra contenido que coincide con el patrón.
+Se encuentra una palabra clave de Keyword_polish_national_id_passport_number.
+Se supera la suma de comprobación.
 
 ```
 <!-- Poland Identity Card-->
@@ -5049,16 +4146,13 @@ Una directiva DLP está 75% segura de que se detecta este tipo de información c
 - Nazwa i número dowodu osobistego
 - Nazwa i NR dowodu osobistego
 - Nazwa i nr dowodu tożsamości
-
 - Dowód Tożsamości
-
-- dow. os.
-
+- Dow. MacOS.
 
    
 ## <a name="poland-national-id-pesel"></a>Identificación nacional de Polonia (PESEL)
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 11 dígitos
 
@@ -5097,7 +4191,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
    
 ## <a name="poland-passport"></a>Pasaporte de Polonia
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Dos letras y siete dígitos
 
@@ -5132,13 +4226,13 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 #### <a name="keywordpolishnationalidpassportnumber"></a>Keyword_polish_national_id_passport_number
 
 - Números paszportu
-- Nr. Paszportu
+- Nº. Paszportu
 - Paszport
 
    
 ## <a name="portugal-citizen-card-number"></a>Número de tarjeta del ciudadano de Portugal
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Ocho dígitos
 
@@ -5146,7 +4240,7 @@ Ocho dígitos
 
 Ocho dígitos
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma de comprobación
 
 No
 
@@ -5178,7 +4272,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
    
 ## <a name="saudi-arabia-national-id"></a>Identificación nacional de Arabia Saudí
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 10 dígitos
 
@@ -5186,7 +4280,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 
 10 dígitos consecutivos
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma de comprobación
 
 No
 
@@ -5212,18 +4306,15 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 #### <a name="keywordsaudiarabianationalid"></a>Keyword_saudi_arabia_national_id
 
-- Identification Card
- 
-- I card number
- 
-- número de Id. 
-- الوطنية الهوية بطاقة رقم
- 
+- Identification Card 
+- I card number 
+- ID number 
+- الوطنية الهوية بطاقة رقم 
 
    
 ## <a name="singapore-national-registration-identity-card-nric-number"></a>Número de tarjeta de identidad de registro nacional (NRIC) de Singapur
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Nueve letras y dígitos
 
@@ -5266,25 +4357,18 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
    
 #### <a name="keywordsingaporenric"></a>Keyword_singapore_nric
 
-- Tarjeta de identidad de registro nacional
- 
-- Número de tarjeta de identidad
- 
-- NRIC
- 
-- IC
- 
-- Número de identificación de extranjeros
- 
-- FIN
- 
-- 身份证  
-- 身份證
- 
+- Tarjeta de identidad de registro nacional 
+- Número de tarjeta de identidad 
+- NRIC 
+- I 
+- Número de identificación de extranjeros 
+- AC 
+- 身份证 
+- 身份證 
    
 ## <a name="south-africa-identification-number"></a>Número de identificación de Sudáfrica
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 13 dígitos que pueden contener espacios
 
@@ -5292,7 +4376,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 13 dígitos:
 - Seis dígitos en el formato DDMMAA que son la fecha de nacimiento  
-- Cuatro dígitos  
+- Cuatro dígitos 
 - Un indicador de ciudadanía de un solo dígito  
 - El dígito "8" o "9"  
 - Un dígito que es un dígito de suma de comprobación
@@ -5323,12 +4407,12 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 #### <a name="keywordsouthafricaidentificationnumber"></a>Keyword_south_africa_identification_number
 
 - tarjeta de identidad
-- ID
-- Identificación 
+- Id.
+- Determinación 
    
 ## <a name="south-korea-resident-registration-number"></a>Número de registro de residente de Corea del Sur
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 13 dígitos que contienen un guión
 
@@ -5374,19 +4458,15 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
    
 #### <a name="keywordsouthkorearesidentnumber"></a>Keyword_south_korea_resident_number
 
-- Tarjeta de id. nacional
- 
-- Número de registro de ciudadano
- 
-- Jumin deungnok beonho
- 
-- RRN
- 
+- Tarjeta de id. nacional 
+- Número de registro de ciudadano 
+- Jumin deungnok beonho 
+- RRN 
 - 주민등록번호
    
 ## <a name="spain-social-security-number-ssn"></a>Número de seguridad social de España (NSS)
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 11 o 12 dígitos
 
@@ -5424,7 +4504,7 @@ Ninguno
    
 ## <a name="sweden-national-id"></a>Identificación nacional de Suecia
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 10 o 12 dígitos y un delimitador opcional
 
@@ -5461,7 +4541,7 @@ No
    
 ## <a name="sweden-passport-number"></a>Número de pasaporte de Suecia
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Ocho dígitos
 
@@ -5498,63 +4578,40 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
    
 #### <a name="keywordswedenpassport"></a>Keyword_sweden_passport
 
-- visa requirements
- 
-- Alien Registration Card
- 
-- Schengen visas
- 
-- Schengen visa
- 
-- Visa Processing
- 
-- Visa Type
- 
-- Single Entry
- 
-- Multiple Entry
- 
-- G3 Processing Fees
-
- 
+- visa requirements 
+- Alien Registration Card 
+- Schengen visas 
+- Schengen visa 
+- Visa Processing 
+- Visa Type 
+- Single Entry 
+- Multiple Entry 
+- G3 Processing Fees 
 
 #### <a name="keywordpassport"></a>Keyword_passport
 
 - Passport Number 
-- 
-Passport No 
-- Passport #
- 
-- Passport#
- 
+- Passport No 
+- Passport # 
+- Usuarios 
 - PassportID 
-- Passportno
- 
-- passportnumber
- 
+- Passportno 
+- passportnumber 
 - パスポート 
-- パスポート番号
- 
-- パスポートのNum
- 
-- パスポート＃
- 
+- パスポート番号 
+- パスポートのNum 
+- パスポート # 
 - Numéro de passeport 
-- 
-Passeport n ° 
-- Passeport Non
- 
-- Passeport #
- 
-- Passeport#
- 
+- Passeport n ° 
+- Passeport Non 
+- Passeport # 
+- Passeport # 
 - PasseportNon 
-- Passeportn °
- 
+- Passeportn ° 
    
 ## <a name="swift-code"></a>Código SWIFT
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Cuatro letras seguidas de 5 a 31 letras o dígitos
 
@@ -5590,64 +4647,41 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
    
 #### <a name="keywordswift"></a>Keyword_swift
 
-- international organization for standardization 9362
- 
-- iso 9362
- 
+- international organization for standardization 9362 
+- iso 9362 
 - iso9362 
 - rápido\# 
-- swiftcode
- 
-- swiftnumber
- 
-- swiftroutingnumber
- 
-- Código SWIFT 
-- swift number #
- 
-- swift routing number
- 
-- bic number
- 
-- bic code
- 
+- Swiftcode 
+- swiftnumber 
+- swiftroutingnumber 
+- swift code 
+- swift number # 
+- swift routing number 
+- bic number 
+- bic code 
 - BIC\# 
 - BIC\# 
-- bank identifier code
- 
+- bank identifier code 
 - 標準化 9362 
-- 迅速＃
- 
-- SWIFTコード
- 
-- SWIFT番号
- 
-- 迅速なルーティング番号
- 
-- BIC番号
- 
-- BICコード
- 
-- 銀行識別コードのための国際組織
- 
-- Organisation internationale de normalisation 9362
- 
+- 迅速 # 
+- SWIFTコード 
+- SWIFT番号 
+- 迅速なルーティング番号 
+- BIC番号 
+- BICコード 
+- 銀行識別コードのための国際組織 
+- Organisation internationale de normalisation 9362 
 - rápido\# 
-- code SWIFT
- 
-- le numéro de swift
- 
-- swift numéro d'acheminement
- 
-- le numéro BIC
- 
+- code SWIFT 
+- le numéro de swift 
+- swift numéro d'acheminement 
+- le numéro BIC 
 - \#BIC 
-- code identificateur de banque
- 
+- code identificateur de banque 
    
 ## <a name="taiwan-national-id"></a>Identificación nacional de Taiwán
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Una letra  seguida de nueve dígitos
 
@@ -5683,37 +4717,24 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 
 #### <a name="keywordtaiwanesenationalid"></a>Keyword_taiwanese_national_id
 
-- 身份證字號
- 
-- 身份證
- 
-- 身份證號碼
- 
-- 身份證號
- 
-- 身分證字號
- 
-- 身分證  
-- 身分證號碼
- 
-- 身份證號
- 
-- 身分證統一編號
- 
-- 國民身分證統一編號
- 
-- 簽名
- 
-- 蓋章
- 
-- 簽名或蓋章
-
- 
+- 身份證字號 
+- 身份證 
+- 身份證號碼 
+- 身份證號 
+- 身分證字號 
+- 身分證 
+- 身分證號碼 
+- 身份證號 
+- 身分證統一編號 
+- 國民身分證統一編號 
+- 簽名 
+- 蓋章 
+- 簽名或蓋章 
 - 簽章   
    
-## <a name="taiwan-passport-number"></a>Número de pasaporte de Taiwán
+## <a name="taiwan-passport-number"></a>	Número de pasaporte de Taiwán
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 - Número de pasaporte biométrico: nueve dígitos
 - Número de pasaporte no biométrico: nueve dígitos
@@ -5726,7 +4747,7 @@ Número de pasaporte biométrico:
 Número de pasaporte no biométrico:
 - Nueve dígitos
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma de comprobación
 
 No
 
@@ -5750,23 +4771,19 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 #### <a name="keywordtaiwanpassport"></a>Keyword_taiwan_passport
 
-- Número de pasaporte ROC
- 
+- Número de pasaporte ROC 
 - Número de pasaporte 
+- Núm. pasaporte
+ 
+- N.ro pasaporte 
 - N.º de pasaporte 
-- N.ro pasaporte
- 
-- Passport #
- 
-- 护照
- 
-- 中華民國護照
- 
+- 护照 
+- 中華民國護照 
 - Zhōnghuá Mínguó hùzhào
    
 ## <a name="taiwan-resident-certificate-arctarc-number"></a>Número de certificado de residente (ARC/TARC) de Taiwán
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 10 letras y dígitos
 
@@ -5776,7 +4793,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - Dos letras (no distingue entre mayúsculas y minúsculas)  
 - Ocho dígitos
 
-### <a name="checksum"></a>Checksum
+### <a name="checksum"></a>Suma de comprobación
 
 No
 
@@ -5800,29 +4817,23 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 #### <a name="keywordtaiwanresidentcertificate"></a>Keyword_taiwan_resident_certificate
 
-- Certificado de residente
+- Certificado de residente 
+- Cert. residente
  
-- Certificado residente 
 - Cert. residente
  
 - Tarjeta de identificación 
-- Certificado de residente extranjero
- 
+- Certificado de residente extranjero 
 - ARCOS 
-- Certificado de residente en el área de Taiwán
- 
-- TARC
- 
-- 居留證
- 
-- 外僑居留證
- 
-- 台灣地區居留證
- 
+- Certificado de residente en el área de Taiwán 
+- TARC 
+- 居留證 
+- 外僑居留證 
+- 台灣地區居留證 
 
 ## <a name="thai-population-identification-code"></a>Código de identificación de población tailandesa
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 13 dígitos
 
@@ -5871,7 +4882,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
   
 ## <a name="turkish-national-identification-number"></a>Número de identificación nacional de Turco
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 11 dígitos
 
@@ -5916,7 +4927,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ## <a name="uk-drivers-license-number"></a>Número de licencia de conductor de Reino Unido
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Combinación de 18 letras y dígitos en el formato especificado
 
@@ -5954,39 +4965,25 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 #### <a name="keywordukdriverslicense"></a>Keyword_uk_drivers_license
 
-- DVLA
- 
-- light vans
- 
-- quadbikes
- 
-- motor cars
- 
+- DVLA 
+- light vans 
+- quadbikes 
+- motor cars 
 - 125cc 
-- sidecar
- 
-- tricycles
- 
-- motorcycles
- 
-- photocard licence
- 
-- learner drivers
- 
-- licence holder
- 
-- licence holders
- 
-- driving licences
- 
-- driving licence
- 
-- dual control car
- 
+- sidecar 
+- Tricycles 
+- sidecar 
+- photocard licence 
+- learner drivers 
+- licence holder 
+- licence holders 
+- driving licences 
+- driving licence 
+- dual control car 
    
 ## <a name="uk-electoral-roll-number"></a>Número de registro electoral de Reino Unido
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Dos letras seguidas por entre 1 y 4 dígitos
 
@@ -6020,19 +5017,15 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 #### <a name="keywordukelectoral"></a>Keyword_uk_electoral
 
-- council nomination
- 
-- nomination form
- 
-- electoral register
-
- 
+- council nomination 
+- nomination form 
+- electoral register 
 - electoral roll
 
    
 ## <a name="uk-national-health-service-number"></a>Número de Servicio Nacional de Salud de Reino Unido
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 De 10 a 17 dígitos separados por espacios
 
@@ -6077,40 +5070,29 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
    
 #### <a name="keyworduknhsnumber"></a>Keyword_uk_nhs_number
 
-- national health service
- 
-- nhs
- 
-- health services authority
-
- 
+- national health service 
+- del NHS del 
+- health services authority 
 - health authority
 
 #### <a name="keyworduknhsnumber1"></a>Keyword_uk_nhs_number1
 
-- patient id
- 
-- patient identification
- 
-- patient no
-
- 
+- patient id 
+- patient identification 
+- patient no 
 - patient number
 
 #### <a name="keyworduknhsnumberdob"></a>Keyword_uk_nhs_number_dob
 
-- DG 
-- DOB
- 
+- EON 
+- NACIMIENTO 
 - D. O. B 
-- Fecha de nacimiento
- 
-- Fecha de nacimiento
- 
+- Fecha de nacimiento 
+- Fecha de nacimiento 
    
 ## <a name="uk-national-insurance-number-nino"></a>Número de seguro nacional de Reino Unido (NINO)
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 7 caracteres o 9 caracteres separados por espacios o guiones
 
@@ -6122,7 +5104,7 @@ Dos patrones posibles:
 - Seis dígitos
 - ' A ', ' B ', ' C ' o ' T ' (como el prefijo, solo se permiten determinados caracteres en el sufijo; no distingue entre mayúsculas y minúsculas)
 
-O BIEN
+OR
 
 - Dos letras
 - Un espacio o un guion
@@ -6170,33 +5152,22 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 #### <a name="keyworduknino"></a>Keyword_uk_nino
 
-- national insurance number
- 
-- national insurance contributions
- 
-- protection act
- 
-- insurance
- 
-- social security number
- 
-- insurance application
- 
-- medical application
- 
-- social insurance
- 
-- medical attention
- 
-- seguridad social 
-- great britain
- 
-- insurance
-    
+- national insurance number 
+- national insurance contributions 
+- protection act 
+- Pensión 
+- social security number 
+- insurance application 
+- medical application 
+- social insurance 
+- medical attention 
+- social security 
+- great britain 
+- Pensión    
    
 ## <a name="us--uk-passport-number"></a>Número de pasaporte EE. UU. / Reino Unido
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Nueve dígitos
 
@@ -6228,40 +5199,27 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 #### <a name="keywordpassport"></a>Keyword_passport
 
 - Passport Number 
-- 
-Passport No 
-- Passport #
- 
-- Passport#
- 
+- Passport No 
+- Passport # 
+- Usuarios 
 - PassportID 
-- Passportno
- 
-- passportnumber
- 
+- Passportno 
+- passportnumber 
 - パスポート 
-- パスポート番号
- 
-- パスポートのNum
- 
-- パスポート＃
- 
+- パスポート番号 
+- パスポートのNum 
+- パスポート # 
 - Numéro de passeport 
-- 
-Passeport n ° 
-- Passeport Non
- 
-- Passeport #
- 
-- Passeport#
- 
+- Passeport n ° 
+- Passeport Non 
+- Passeport # 
+- Passeport # 
 - PasseportNon 
-- Passeportn °
- 
+- Passeportn ° 
    
 ## <a name="us-bank-account-number"></a>Número de cuenta bancaria de EE. UU.
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Entre 8 y 17 dígitos
 
@@ -6293,71 +5251,44 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 #### <a name="keywordusabankaccount"></a>Keyword_usa_Bank_Account
 
-- Checking Account Number
- 
-- Checking Account
- 
-- Checking Account #
- 
-- Checking Acct Number
- 
-- Checking Acct #
- 
-- Checking Acct No.
- 
-- Checking Account No.
- 
-- Bank Account Number
- 
-- Bank Account #
- 
-- Bank Acct Number
- 
-- Bank Acct #
- 
-- Bank Acct No.
- 
-- Bank Account No.
- 
-- Savings Account Number
- 
-- Savings Account.
- 
-- Savings Account #
- 
-- Savings Acct Number
- 
-- Savings Acct #
- 
-- Savings Acct No.
- 
-- Savings Account No.
- 
-- Debit Account Number
- 
-- Debit Account
- 
-- Debit Account #
- 
-- Debit Acct Number
- 
-- Debit Acct #
- 
-- Debit Acct No.
- 
-- Debit Account No.
- 
+- Checking Account Number 
+- Checking Account 
+- Checking Account # 
+- Checking Acct Number 
+- Checking Acct # 
+- Checking Acct No. 
+- Checking Account No. 
+- Bank Account Number 
+- Bank Account # 
+- Bank Acct Number 
+- Bank Acct # 
+- Bank Acct No. 
+- Bank Account No. 
+- Savings Account Number 
+- Savings Account. 
+- Savings Account # 
+- Savings Acct Number 
+- Savings Acct # 
+- Savings Acct No. 
+- Savings Account No. 
+- Debit Account Number 
+- Debit Account 
+- Debit Account # 
+- Debit Acct Number 
+- Debit Acct # 
+- Debit Acct No. 
+- Debit Account No. 
    
 ## <a name="us-drivers-license-number"></a>Número de licencia de conductor de EE. UU.
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Depende del estado
 
 ### <a name="pattern"></a>Patrón
 
 Depende del estado, por ejemplo, Nueva York:
-- Nueve dígitos como ddd ddd ddd coinciden con el formato.
+- Nueve dígitos con formato como DDD DDD DDD coincidirán.
 - Nueve dígitos como ddddddddd no coinciden con el formato.
 
 ### <a name="checksum"></a>Suma de comprobación
@@ -6397,30 +5328,22 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 
 #### <a name="keywordusdriverslicenseabbreviations"></a>Keyword_us_drivers_license_abbreviations
 
-- DL 
-- DLS 
+- LISTAS 
+- DISTRIBUCIÓN 
 - CDL 
 - CDLS 
-- ID 
+- Id. 
 - Falta 
-- DL# 
-- 
-DLS#
- 
-- CDL#
- 
-- CDLS#
- 
-- ID#
-- 
-IDs#
- 
-- número de Id. 
-- ID numbers
- 
+- LISTAS 
+- DISTRIBUCIÓN 
+- CDL 
+- CDLS # 
+- IDENTIFICADOR
+- Falta 
+- ID number 
+- ID numbers 
 - LIC 
-- LIC#
- 
+- Lic 
 
 #### <a name="keywordusdriverslicense"></a>Keyword_us_drivers_license
 
@@ -6428,115 +5351,93 @@ IDs#
 - DriverLics 
 - DriverLicense 
 - DriverLicenses 
-- Lic del conductor 
-- Controlador conducción 
-- Licencia de controlador 
-- Licencias de controlador 
+- Driver Lic 
+- Driver Lics 
+- Driver License 
+- Driver Licenses 
 - DriversLic 
 - DriversLics 
 - DriversLicense 
 - DriversLicenses 
-- Lic de los drivers 
-- Controladores conducción 
-- Licencia de controladores 
-- Licencias de controladores 
+- Drivers Lic 
+- Drivers Lics 
+- Drivers License 
+- Drivers Licenses 
 - N.º carné 
 - N.º carnés 
 - Conducción 
 - Conducción 
-- Lic del controlador 
-- Controlador de conducción 
-- Licencia del controlador 
-- Licencias de controlador
+- Driver' Lic 
+- Driver' Lics 
+- Driver' License 
+- Driver' Licenses
 - Driver'sLic 
 - Driver'sLics 
 - Driver'sLicense 
 - Driver'sLicenses 
-- Lic del conductor 
-- Conducción del conductor 
-- Permiso de conducción 
-- Licencias de conducir 
-- identification number
- 
-- identification numbers
- 
-- identification #
- 
-- tarjeta de identificación 
-- tarjetas de identificación 
-- tarjeta de identificación 
-- tarjetas de identificación 
+- Driver's Lic 
+- Driver's Lics 
+- Driver's License 
+- Permisos de conducción 
+- identification number 
+- identification numbers 
+- identification # 
+- id card 
+- id cards 
+- identification card 
+- identification cards 
 - DriverLic # 
 - DriverLics # 
 - DriverLicense # 
 - DriverLicenses # 
 - Driver Lic# 
-- 
-Driver Lics#
- 
-- N.º de permiso de conducir 
-- N.º de licencias de conducir 
+- Driver Lics# 
+- Driver License# 
+- Driver Licenses# 
 - DriversLic # 
 - DriversLics # 
 - DriversLicense # 
 - DriversLicenses # 
-- N.º de Lic de los conductores 
-- Controladores conducción # 
-- N.º de permiso de conducción 
-- N.º de licencias de impulsores 
-- Driver'Lic#
- 
-- Driver'Lics#
- 
-- Driver'License#
- 
-- Driver'Licenses#
- 
-- Driver' Lic#
- 
-- Driver' Lics#
- 
-- Driver' License#
- 
-- Driver' Licenses#
- 
+- Drivers Lic# 
+- Drivers Lics# 
+- Drivers License# 
+- Drivers Licenses# 
+- N.º carné 
+- N.º carnés 
+- Conducción 
+- Conducción 
+- Driver' Lic# 
+- Driver' Lics# 
+- Driver' License# 
+- Driver' Licenses# 
 - Driver'sLic # 
 - Driver'sLics # 
 - Driver'sLicense # 
 - Driver'sLicenses # 
-- Driver's Lic#
- 
-- Driver's Lics#
- 
-- Driver's License#
- 
-- Driver's Licenses#
- 
-- número de tarjeta de identificación 
-- id cards#
- 
-- identification card#
- 
-- identification cards#
- 
+- Driver's Lic# 
+- Driver's Lics# 
+- Driver's License# 
+- Driver's Licenses# 
+- id card# 
+- id cards# 
+- identification card# 
+- identification cards# 
 
 
-#### <a name="keywordstatenamedriverslicensename"></a>Keyword_[state_name]_drivers_license_name
+#### <a name="keywordstatenamedriverslicensename"></a>Keyword_ [state_name] _drivers_license_name
 
-- Abreviatura del estado (por ejemplo, "NY")
- 
-- Nombre del estado (por ejemplo, "New York")
-    
+- Abreviatura del estado (por ejemplo, "NY") 
+- Nombre del estado (por ejemplo, "New York")    
    
 ## <a name="us-individual-taxpayer-identification-number-itin"></a>Número de identificación de contribuyente individual (ITIN) de EE. UU.
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Nueve dígitos que empiezan con un "9" y contienen un "7" u "8" como cuarto dígito; se puede optar por un formato con espacios o guiones
 
 ### <a name="pattern"></a>Patrón
 
-Con formato:
+Con formato
 - El dígito "9" 
 - Dos dígitos 
 - Un espacio o un guion 
@@ -6545,7 +5446,7 @@ Con formato:
 - Un espacio o un guion 
 - Cuatro dígitos
 
-Sin formato:
+Sin formato
 - El dígito "9" 
 - Dos dígitos 
 - Un "7" o "8" 
@@ -6600,42 +5501,30 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 #### <a name="keyworditin"></a>Keyword_itin
 
-- taxpayer
- 
-- tax id
- 
-- tax identification
- 
-- itin
- 
+- contribuyente 
+- tax id 
+- tax identification 
+- élen 
 - SSN 
-- tin
- 
-- seguridad social 
-- tax payer
- 
-- itins
- 
-- taxid
-
- 
-- individual taxpayer
- 
+- / 
+- social security 
+- tax payer 
+- ITINs 
+- taxi 
+- individual taxpayer 
 
 #### <a name="keyworditincollaborative"></a>Keyword_itin_collaborative
 
 - License 
-- DL 
-- DOB
- 
+- LISTAS 
+- NACIMIENTO 
 - Fecha de nacimiento 
-- Cumpleaños  
-- Fecha de nacimiento
- 
+- Cumpleaños 
+- Fecha de nacimiento 
    
 ## <a name="us-social-security-number-ssn"></a>Número de seguridad social (SSN) de EE. UU.
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 9 dígitos, que pueden ser un patrón con o sin formato
 
@@ -6707,20 +5596,13 @@ Una directiva DLP está segura al 55% de que este tipo de información confidenc
 
 #### <a name="keywordssn"></a>Keyword_ssn
 
-- Social Security
- 
-- Social Security#
- 
-- Soc Sec
- 
+- Social Security 
+- Social Security# 
+- Soc Sec 
 - SSN 
-- SSNS
- 
-- SSN#
- 
-- SS#
- 
-- SSID
- 
+- SSN 
+- SSN 
+- SS 
+- SSID 
    
 

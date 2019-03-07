@@ -14,16 +14,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 95a1bcbbc279ad4e476fc479e701b0f8a921c83b
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 6a21240f71c64f244ee42c3d3a2ed9d75381edaa
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295683"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30454942"
 ---
 # <a name="manage-custodians-in-an-advanced-ediscovery-preview-case"></a>Administrar los custodios en un caso de eDiscovery avanzado (vista previa)
 
 La ficha custodios contiene una lista de todos los custodios que se puede ordenar en el caso. Después de agregar custodios a un caso, los detalles de cada custodio se recopilarán de forma automática desde Azure Active Directory.
+
+![Administrar custodios](../media/CustodianDetails.PNG)
 
 ## <a name="viewing-custodian-details"></a>Visualización de detalles de custodios
 
@@ -56,7 +58,7 @@ La página de control flotante que contiene los detalles de custodios aparece de
   - **Fecha y hora de la última actualización**de la indización: indica el fecha de Cuándo se desencadenó por última vez el trabajo de indización en profundidad.
   - **Orígenes de datos**: muestra el número de buzones de correo, sitios y equipos que se han seleccionado para el custodio.
 
-## <a name="updating-a-custodian"></a>Actualización de un custodio
+## <a name="editing-a-custodian"></a>Edición de un custodio
 
 A medida que avanza el caso, es posible que descubra que puede haber orígenes de datos adicionales relacionados con un custodio específico & su caso. En otros escenarios, es posible que desee quitar determinados orígenes de datos que se han revisado y considerados como no relevantes.
 
@@ -67,6 +69,8 @@ Para actualizar un custodio y los orígenes de datos seleccionados:
 2. En el caso, haga clic **** en la ficha custodios.
   
 3. Seleccione los custodios de la lista y haga clic en **editar fuentes**.
+
+    ![Edición de orígenes de datos](../media/EditCustodianDataSource.PNG)
   
 4. Para actualizar las selecciones para las ubicaciones de Exchange y OneDrive, haga clic en **Elegir orígenes de datos**.
   
@@ -89,7 +93,7 @@ Para desencadenar un proceso de reindización para tratar los elementos parcialm
 
 2. En el caso, haga clic en para la **ficha custodios**. 
 
-3. Seleccione los custodios que se deben reindizar y, a continuación, haga clic en **Actualizar índice** en la página de control flotante.
+3. Seleccione los custodios que se deben reindizar y, a continuación, haga clic en ![Actualizar índice](../media/UpdateIndex.PNG) en la página de flotante.
 
 4. Compruebe el estado del índice de custodios haciendo clic en el vínculo de la columna **Estado de trabajo** de **** indización en la ficha custodios.  
 
@@ -109,7 +113,7 @@ Para liberar un custodio:
 
 1.  Vaya a la **** pestaña custodios.
 
-2.  Seleccione el custodio de la lista y haga clic en **liberar custodios** en la página de flotante.
+2.  Selecciona el custodio de la lista y haz clic en ![Liberar custodio](../media/ReleaseCustodian.PNG) en la página de flotante.
 
     El estado del custodio en la ficha **custodios** está establecido en **lanzado** y el estado de la **retención** en la página de control flotante cambia a inactivo. **** 
 

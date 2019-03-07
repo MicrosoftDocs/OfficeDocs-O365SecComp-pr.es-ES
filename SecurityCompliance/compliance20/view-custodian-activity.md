@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 1f5f463bcda5c33df890547f7113a032ae935dbe
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: defc89f1d54238e62f947fd197e7a866380ee601
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295533"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30455172"
 ---
 # <a name="view-custodian-audit-activity"></a>Ver actividad de auditoría de custodios
 
@@ -38,17 +38,19 @@ Debe tener asignado el rol registros de auditoría con permiso de vista o regist
    
    2. Navegue a la **** pestaña custodios y seleccione un custodio.
    
-   3. Una vez que haya seleccionado un custodio, haga clic en **ver actividad de custodio** en el panel de detalles.
+   3. Una vez que haya seleccionado un custodio, haga clic en  ![Ver la actividad de custodio](../media/ViewCustodianActivity.PNG)  en el panel de detalles.
    
    4. Configure los siguientes criterios de búsqueda:
       
-      a. **actividades** : haga clic en la lista desplegable para mostrar las actividades que puede buscar. Después de ejecutar la búsqueda, solo se muestran los registros de auditoría de las actividades seleccionadas. Al seleccionar **Mostrar resultados para todas las actividades** , se mostrarán los resultados de todas las actividades que cumplan los otros criterios de búsqueda.
+      a. **Actividades** : haga clic en la lista desplegable para mostrar las actividades que puede buscar. Después de ejecutar la búsqueda, solo se muestran los registros de auditoría de las actividades seleccionadas. Al seleccionar **Mostrar resultados para todas las actividades** , se mostrarán los resultados de todas las actividades que cumplan los otros criterios de búsqueda.
+
+      ![Lista de actividades](../media/CustodianActivityAudit.PNG)
       
-      b. **fecha de inicio y fecha** de finalización: Seleccione un intervalo de fechas y horas para mostrar los eventos que se produjeron dentro de ese período. Los últimos siete días están seleccionados de forma predeterminada. La fecha y la hora se presentan en formato de hora universal coordinada (UTC). El intervalo de fechas máximo que puede especificar es un año.
+      b. Fecha de **Inicio y fecha** de finalización: Seleccione un intervalo de fechas y horas para mostrar los eventos que se produjeron dentro de ese período. Los últimos siete días están seleccionados de forma predeterminada. La fecha y la hora se presentan en formato de hora universal coordinada (UTC). El intervalo de fechas máximo que puede especificar es un año.
       
-      c. **custodios** : haga clic en este cuadro y seleccione un custodio específico para mostrar los resultados de la búsqueda. Los registros de auditoría para la actividad seleccionada realizada por los usuarios que seleccione en este cuadro se muestran en la lista de resultados.
-    
-    1. Haga clic en **Buscar** para ejecutar la búsqueda con los criterios de búsqueda. Los resultados de la búsqueda se cargan y, después de unos segundos, se muestran en resultados en la página de búsqueda de actividades de custodio. 
+      c. **Custodios** : haga clic en este cuadro y seleccione un custodio específico para mostrar los resultados de la búsqueda. Los registros de auditoría para la actividad seleccionada realizada por los usuarios que seleccione en este cuadro se muestran en la lista de resultados.
+      
+   5. Haga clic en   ![Botón buscar](../media/SearchButton.PNG)  para ejecutar la búsqueda con los criterios de búsqueda. Los resultados de la búsqueda se cargan y, después de unos segundos, se muestran en resultados en la página de búsqueda de actividades de custodio. 
 
 ## <a name="step-2-view-the-audit-log-search-results"></a>Paso 2: ver los resultados de la búsqueda de registros de auditoría
 
@@ -57,7 +59,7 @@ Los resultados de una búsqueda de registro de auditoría se muestran en resulta
 Los resultados contienen la siguiente información sobre cada evento devuelto por la búsqueda.
 - **Fecha**: fecha y hora (en formato UTC) cuando se produjo el evento.
 
-- **Dirección IP**: la dirección IP del dispositivo que se usó cuando se registró la actividad. La dirección IP se muestra en un formato de dirección IPv4 o IPv6.
+- **Dirección IP**: la dirección IP del dispositivo que se usó cuando se registró la actividad. La dirección IP se muestra en el formato de dirección IPv4 o IPv6.
 
 - **Usuario**: el usuario (o cuenta de servicio) que llevó a cabo la acción que desencadenó el evento.
 

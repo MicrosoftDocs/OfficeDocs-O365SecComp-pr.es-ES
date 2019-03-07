@@ -1,33 +1,34 @@
 ---
 title: Protección contra suplantación de identidad en Office 365
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTtracyp
 manager: laurawi
-ms.date: 12/06/2018
+ms.date: 3/6/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+localization_priority: Priority
 search.appverid:
 - MET150
 ms.assetid: d24bb387-c65d-486e-93e7-06a4f1a436c0
 ms.collection:
 - M365-security-compliance
-description: En este artículo se describe cómo Office 365 mitiga los ataques de suplantación de identidad (phishing) que usan dominios de remitente falsificados, es decir, dominios que se falsifican. Para ello, analiza los mensajes y bloquea los que se pueden autenticar neithe mediante los métodos de autenticación de correo electrónico estándar, ni otras técnicas de reputación del remitente. Este cambio se está implementando para reducir el número de ataques de suplantación de identidad que se exponen a las organizaciones en Office 365.
-ms.openlocfilehash: 041d2ee2cbad1c051c0ca4724d42b189215f0e82
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+- Strat_O365_IP
+description: En este artículo se describe cómo Office 365 mitiga los ataques de suplantación de identidad (phishing) que usan dominios de remitente falsificados, es decir, dominios que se falsifican. Para ello, se analizan los mensajes y se bloquean los que no se pueden autenticar a través de los métodos de autenticación de correo electrónico estándar, ni de otras técnicas de reputación del remitente. Este cambio se implementó para reducir el número de ataques de suplantación de identidad a los que se exponen las organizaciones de Office 365.
+ms.openlocfilehash: 422bac2ad5fd0c58928d79467721204b20583fd7
+ms.sourcegitcommit: 5d6be2b208dbe28d5d5da057c60cf97729799c1b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223879"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "30465487"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Protección contra suplantación de identidad en Office 365
 
-En este artículo se describe cómo Office 365 mitiga los ataques de suplantación de identidad (phishing) que usan dominios de remitente falsificados, es decir, dominios que se falsifican. Para ello, analiza los mensajes y bloquea los que no se pueden autenticar con los métodos de autenticación de correo electrónico estándar, ni con otras técnicas de reputación del remitente. Este cambio se está implementando para reducir el número de ataques de suplantación de identidad a los que se exponen los clientes.
+En este artículo se describe cómo Office 365 mitiga los ataques de suplantación de identidad (phishing) que usan dominios de remitente falsificados, es decir, dominios que se falsifican. Para ello, analiza los mensajes y bloquea los que no se pueden autenticar con los métodos de autenticación de correo electrónico estándar, ni con otras técnicas de reputación del remitente. Este cambio se implementó para reducir el número de ataques de suplantación de identidad a los que se exponen las organizaciones de Office 365.
   
 En este artículo también se describe por qué se realiza este cambio, cómo los clientes pueden prepararse para este cambio, cómo ver los mensajes que se verán afectados, cómo informar sobre los mensajes, cómo mitigar los falsos positivos y cómo deben prepararse los remitentes a Microsoft para este cambie.
   
-La tecnología contra la suplantación de identidad de Microsoft se implementó inicialmente en sus organizaciones con una suscripción a Office 365 Enterprise E5 o compró el complemento de protección contra amenazas avanzada (ATP) de Office 365 para su suscripción. A partir de octubre, 2018 hemos ampliado la protección a las organizaciones que también tienen Exchange Online Protection (EOP). Además, debido a la forma en que todos los filtros se aprenden entre sí, los usuarios de Outlook.com también pueden verse afectados.
+La tecnología contra la suplantación de identidad de Microsoft se implementó inicialmente en sus organizaciones con una suscripción a Office 365 Enterprise E5 o compró el complemento de protección contra amenazas avanzada (ATP) de Office 365 para su suscripción. A partir de octubre, 2018 amplié la protección a las organizaciones que también tienen Exchange Online Protection (EOP). Además, debido a la forma en que todos los filtros se aprenden entre sí, los usuarios de Outlook.com también pueden verse afectados.
   
 ## <a name="how-spoofing-is-used-in-phishing-attacks"></a>Uso de la suplantación de identidad en ataques de suplantación de identidad
 
@@ -48,7 +49,7 @@ El siguiente ejemplo es la suplantación de contoso.com:
 ![Mensaje de suPlantación de identidad: compromiso de correo electrónico empresarial](media/da15adaa-708b-4e73-8165-482fc9182090.jpg)
   
 El mensaje parece legítimo, pero de hecho es una falsa simulación. Este mensaje de suplantación de identidad es un tipo de compromiso de correo electrónico empresarial que es una subcategoría de la suplantación de identidad.
-    
+
 ### <a name="2-users-confuse-real-messages-for-fake-ones"></a>2. los usuarios confunden mensajes reales para falsos
   
 En segundo lugar, los mensajes suplantados crean incertidumbre para los usuarios que saben los mensajes de suplantación de identidad (phishing) pero no pueden distinguir la diferencia entre un mensaje real y los suplantados en uno. Por ejemplo, el siguiente es un ejemplo de restablecimiento real de contraseñas desde la dirección de correo electrónico de la cuenta de seguridad de Microsoft:
@@ -56,8 +57,8 @@ En segundo lugar, los mensajes suplantados crean incertidumbre para los usuarios
 ![Restablecimiento de contraseña legítima de Microsoft](media/58a3154f-e83d-4f86-bcfe-ae9e8c87bd37.jpg)
   
 El mensaje anterior procedía de Microsoft, pero al mismo tiempo, los usuarios se utilizan para obtener mensajes de suplantación de identidad (phishing) que pueden engañar a un usuario para que haga clic en un vínculo y dar su credencial, descargar malware o responder a un mensaje con contenido confidencial. Debido a que es difícil identificar la diferencia entre un restablecimiento de contraseña real y uno falso, muchos usuarios ignoran estos mensajes, los informan como correo no deseado o innecesariamente notificar los mensajes a Microsoft como estafas de suplantación de identidad (phishing) perdidas.
-    
-Para detener la suplantación, el sector de filtrado de correo electrónico ha desarrollado protocolos de autenticación de correo electrónico, como [SPF](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing), [DKIM](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email)y [DMARC](https://docs.microsoft.com/office365/SecurityCompliance/use-dmarc-to-validate-email). DMARC impide la suplantación de identidad examinando el remitente de un mensaje (el que ve el usuario en su cliente de correo electrónico) (en los ejemplos anteriores, es service.outlook.com, outlook.com y accountprotection.microsoft.com)-con el dominio que pasó SPF o DKIM. Es decir, el dominio que el usuario ve se ha autenticado y, por lo tanto, no está falsificado. Para obtener una explicación más completa, consulte la sección "*Descripción del motivo por el que la autenticación de correo electrónico no siempre es suficiente para detener* la suplantación" más adelante en este documento. 
+
+Para detener la suplantación, el sector de filtrado de correo electrónico ha desarrollado protocolos de autenticación de correo electrónico, como [SPF](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing), [DKIM](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email)y [DMARC](https://docs.microsoft.com/office365/SecurityCompliance/use-dmarc-to-validate-email). DMARC impide la suplantación de identidad examinando el remitente de un mensaje (el que ve el usuario en su cliente de correo electrónico) (en los ejemplos anteriores, es service.outlook.com, outlook.com y accountprotection.microsoft.com)-con el dominio que pasó SPF o DKIM. Es decir, el dominio que el usuario ve se ha autenticado y, por lo tanto, no está falsificado. Para obtener una explicación más completa, consulte la sección "*Descripción del motivo por el que la autenticación de correo electrónico no siempre es suficiente para detener* la suplantación" más adelante en este artículo.
   
 Sin embargo, el problema es que los registros de autenticación de correo electrónico son opcionales, no obligatorios. Por lo tanto, aunque los dominios con directivas de autenticación firme como microsoft.com y skype.com están protegidos contra la suplantación de identidad, los dominios que publican directivas de autenticación más débiles o no tienen ninguna directiva, son objetivos de suplantación de identidad. A partir del 2018 de marzo, solo el 9% de los dominios de las empresas de la Fortune 500 publican directivas de autenticación de correo electrónico seguras. El 91% restante puede ser falsificado por un phish y, a menos que el filtro de correo electrónico lo detecte con otra directiva, se entregue a un usuario final y se engañará:
   
@@ -96,12 +97,12 @@ Authentication-Results:
 |interrumpi|Error en el mensaje autenticación explícita (envío de registros publicados de dominio explícitamente en DNS) o autenticación implícita (el dominio de envío no publicó registros en DNS, por lo que Office 365 interpolaba el resultado como si hubiera publicado registros publicados).|
 |DV|El mensaje ha pasado una autenticación explícita (el mensaje ha superado DMARC o [dMarc que ha pasado](https://blogs.msdn.microsoft.com/tzink/2015/05/06/what-is-dmarc-bestguesspass-in-office-365)una adivinación) o la autenticación implícita con alta confianza (el dominio de envío no publica los registros de autenticación de correo electrónico, pero Office 365 tiene señales back-end de gran rendimiento) para indica que el mensaje es probable que sea legítimo).|
 |softpass|El mensaje pasó la autenticación implícita con una confianza baja a media (el dominio de envío no publica la autenticación de correo electrónico, pero Office 365 tiene señales de back-end para indicar que el mensaje es legítimo, pero la fuerza de la señal es más débil).|
-|Ninguno|El mensaje no se autenticó (o se autenticó pero no se alinea), pero no se aplicó la autenticación compuesta debido a la reputación del remitente u otros factores.|
+|ninguna|El mensaje no se autenticó (o se autenticó pero no se alinea), pero no se aplicó la autenticación compuesta debido a la reputación del remitente u otros factores.|
    
 |||
 |:-----|:-----|
-|**Reason**|**Descripción**|
-|0xx|Error en el mensaje de autenticación compuesta.<br/>**000** significa que el mensaje produjo un error de DMARC con una acción de rechazar o poner en cuarentena.  <br/>**001** significa que el mensaje no pudo realizar la autenticación implícita de correo electrónico. Esto significa que el dominio de envío no tenía registros de autenticación de correo electrónico publicada o, si lo hicieron, tenía una directiva de error más débil (error de SPF o un error de la Directiva de DMARC? o neutral, la Directiva de DMARC de p = None).<br/>**002** significa que la organización tiene una directiva para el par remitente/dominio que está explícitamente prohibida para el envío de correo electrónico falsificado; un administrador establece manualmente esta configuración.  <br/>**010** significa que el mensaje produjo un error de DMARC con una acción de rechazar o poner en cuarentena, y el dominio de envío es uno de los dominios aceptados de la organización (esto es parte de la suplantación de identidad o de una imitación).  <br/>**011** significa que el mensaje no pudo realizar la autenticación implícita del correo electrónico y el dominio de envío es uno de los dominios aceptados de la organización (esto es parte de la suplantación de identidad o de una imitación).|
+|**Motivo**|**Descripción**|
+|0xx|Error en el mensaje de autenticación compuesta.<br/>**000** significa que el mensaje produjo un error de DMARC con una acción de rechazar o poner en cuarentena.  <br/>**001** significa que el mensaje no pudo realizar la autenticación implícita de correo electrónico. Esto significa que el dominio de envío no tenía registros de autenticación de correo electrónico publicada o, si lo hicieron, tenía una directiva de error más débil (error de SPF o un error de la Directiva de DMARC? o neutral, la Directiva de DMARC de p = None).  <br/>**002** significa que la organización tiene una directiva para el par remitente/dominio que está explícitamente prohibida para el envío de correo electrónico falsificado; un administrador establece manualmente esta configuración.  <br/>**010** significa que el mensaje produjo un error de DMARC con una acción de rechazar o poner en cuarentena, y el dominio de envío es uno de los dominios aceptados de la organización (esto es parte de la suplantación de identidad o de una imitación).  <br/>**011** significa que el mensaje no pudo realizar la autenticación implícita del correo electrónico y el dominio de envío es uno de los dominios aceptados de la organización (esto es parte de la suplantación de identidad o de una imitación).|
 |Todos los demás códigos (1xx, 2xx, 3xx, 4xx, 5xx)|Corresponde a diversos códigos internos por los cuales un mensaje pasa la autenticación implícita o no tenía ninguna autenticación pero no se ha aplicado ninguna acción.|
    
 Al mirar los encabezados de un mensaje, un administrador o incluso un usuario final puede determinar cómo Office 365 llega a la conclusión de que el remitente puede ser falso.
@@ -257,26 +258,26 @@ Hay varias maneras diferentes en las que se puede suplantar un mensaje (vea [dif
 |Error de DMARC (cuarentena o rechazo)  <br/> |HSPM (valor predeterminado), también puede ser SPM o PHSH  <br/> |No (aún no)  <br/> |Todos los clientes de Office 365, Outlook.com  <br/> |
 |De Self a self  <br/> |SPM  <br/> |Sí  <br/> |Todas las organizaciones de Office 365, Outlook.com  <br/> |
 |Entre dominios  <br/> |SUPLANTACIÓN  <br/> |Sí  <br/> |Office 365 protección contra amenazas avanzada y clientes de E5  <br/> |
-   
+
 ### <a name="changing-your-anti-spoofing-settings"></a>Cambio de la configuración contra la suplantación de identidad
 
 Para crear o actualizar la configuración contra la suplantación de identidad (entre dominios), navegue hasta la configuración \> de antiphishing contra la suplantación de \> identidad en la pestaña directiva &amp; de administración de amenazas del centro de seguridad y cumplimiento. Si nunca ha creado ninguna configuración antiphishing, tendrá que crear una:
   
-![Antiphishing: crear una nueva Directiva](media/9337ec91-270e-4fa7-9dfa-a51a2d1eb95e.jpg)
+![Anti-phishing: crear una directiva nueva](media/9337ec91-270e-4fa7-9dfa-a51a2d1eb95e.jpg)
   
 Si ya ha creado una, puede seleccionarla para modificarla:
   
-![Antiphishing: modificar directiva existente](media/75457a7c-882e-4984-80d1-21a12b42c53a.jpg)
+![Anti-phishing: modificar directiva existente](media/75457a7c-882e-4984-80d1-21a12b42c53a.jpg)
   
-Seleccione la Directiva que acaba de crear y continúe con los pasos descritos en [Obtenga más información sobre inteligencia de suplantación de identidad.](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf)
+Seleccione la Directiva que acaba de crear y continúe con los pasos descritos en [más información sobre inteligencia de](learn-about-spoof-intelligence.md)suplantación de identidad.
   
-![Habilitar o deshabilitar la suplantación de identidad](media/c49e2147-c954-443c-9144-1cbd139e1166.jpg)
+![Habilitar o deshabilitar la suplantación de identidad (phishing)](media/c49e2147-c954-443c-9144-1cbd139e1166.jpg)
   
 ![Habilitar o deshabilitar las sugerencias de seguridad contra la suplantación de identidad](media/eec7c407-31fc-4f73-8325-307d82d1fb53.jpg)
   
-Para crear una nueva Directiva a través de PowerShell: 
+Para crear una nueva directiva con PowerShell: 
   
-```
+```powershell
 $org = Get-OrganizationConfig
 $name = "My first anti-phishing policy for " + $org.Name
 # Note: The name should not exclude 64 characters, including spaces.
@@ -292,38 +293,38 @@ New-AntiphishRule -Name $name -AntiphishPolicy $name -RecipientDomainIs $domains
 
 A continuación, puede modificar los parámetros de la Directiva antiphishing con PowerShell, siguiendo la documentación que se encuentra en [set-AntiphishPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/Set-AntiPhishPolicy?view=exchange-ps). Puede especificar la $name como parámetro:
   
-```
+```powershell
 Set-AntiphishPolicy -Identity $name <fill in rest of parameters>
 ```
 
 Más adelante en 2018, en lugar de tener que crear una directiva predeterminada, se creará una para el ámbito de todos los destinatarios de la organización, de modo que no tenga que especificarla manualmente (las capturas de pantallas siguientes están sujetas a cambios antes de la implementación final).
   
-![Directiva predeterminada para antiphishing](media/1f27a0bf-e202-4e12-bbac-24baf013c8f9.jpg)
+![Directiva predeterminada para anti-phishing](media/1f27a0bf-e202-4e12-bbac-24baf013c8f9.jpg)
   
 A diferencia de una directiva que se crea, no se puede eliminar la directiva predeterminada, modificar su prioridad o elegir los usuarios, dominios o grupos a los que se va a asignar el ámbito.
   
-![Detalles de la directiva predeterminada antiphishing](media/30c21ceb-df52-4c93-aa65-f44a55dc1009.jpg)
+![Detalles de la directiva predeterminada contra la suplantación de identidad](media/30c21ceb-df52-4c93-aa65-f44a55dc1009.jpg)
   
-Para configurar la protección predeterminada a través de PowerShell:
+Para configurar la protección predeterminada con PowerShell:
   
-```
+```powershell
 $defaultAntiphishPolicy = Get-AntiphishPolicy | ? {$_.IsDefault -eq $true}
 Set-AntiphishPolicy -Identity $defaultAntiphishPolicy.Name -EnableAntispoofEnforcement <$true|$false>
 ```
 
-Solo debe deshabilitar la protección contra la suplantación de identidad (antifalsificación) si tiene otros servidores de correo o servidores delante de Office 365 (consulte casos legítimos para deshabilitar la suplantación de identidad (phishing) para obtener más información). 
+Solo debe deshabilitar la protección contra la suplantación de identidad (antifalsificación) si tiene otros servidores de correo o servidores delante de Office 365 (consulte casos legítimos para deshabilitar la suplantación de identidad (phishing) para obtener más información).
   
-```
+```powershell
 $defaultAntiphishPolicy = Get-AntiphishiPolicy | ? {$_.IsDefault $true}
 Set-AntiphishPolicy -Identity $defaultAntiphishPolicy.Name -EnableAntispoofEnforcement $false 
 
 ```
 > [!IMPORTANT]
-> Si el primer salto de la ruta de acceso de su correo electrónico es Office 365 y recibe demasiados mensajes de correo electrónico legítimo marcados como suplantación de identidad, primero debe configurar los remitentes que pueden enviar correos electrónicos falsos a su dominio (consulte la sección *"administrar los remitentes legítimos que envían u correo electrónico de nauthenticated "* ). Si sigue recibiendo demasiados falsos positivos (por ejemplo, mensajes legítimos marcados como falso), no se recomienda deshabilitar la protección contra la suplantación de identidad (phishing) por completo. En su lugar, se recomienda elegir básica en lugar de alta protección.                    Es mejor trabajar con falsos positivos que exponer la organización a correo electrónico falsificado que podría acabar imponiendo costos significativamente mayores a largo plazo.
+> Si el primer salto de la ruta de acceso de su correo electrónico es Office 365 y recibe demasiados mensajes de correo electrónico legítimo marcados como suplantación de identidad, primero debe configurar los remitentes que pueden enviar correos electrónicos falsos a su dominio (consulte la sección *"administrar los remitentes legítimos que envían u correo electrónico de nauthenticated "* ). Si sigue recibiendo demasiados falsos positivos (es decir, mensajes legítimos marcados como falso), no se recomienda deshabilitar la protección contra la suplantación de identidad. En su lugar, se recomienda elegir básica en lugar de alta protección. Es mejor trabajar con falsos positivos que exponer la organización a correo electrónico falsificado que podría acabar imponiendo costos significativamente mayores a largo plazo.
 
 ### <a name="managing-legitimate-senders-who-are-sending-unauthenticated-email"></a>Administración de remitentes legítimos que envían correo electrónico no autenticado
 
-Office 365 realiza un seguimiento de quién envía correo electrónico no autenticado a su organización. Si el servicio considera que el remitente no es legítimo, lo marcará como un error de *compauth* . Esto se clasificará como SIMULAdo, aunque depende de la Directiva contra la suplantación de identidad que se aplicó al mensaje. 
+Office 365 realiza un seguimiento de quién envía correo electrónico no autenticado a su organización. Si el servicio considera que el remitente no es legítimo, lo marcará como un error de *compauth* . Esto se clasificará como SIMULAdo, aunque depende de la Directiva contra la suplantación de identidad que se aplicó al mensaje.
   
 Sin embargo, como administrador, puede especificar los remitentes a los que se les permite enviar correo electrónico falso, lo que invalida la decisión de Office 365.
   
@@ -331,8 +332,8 @@ Sin embargo, como administrador, puede especificar los remitentes a los que se l
   
 Este método se puede usar para resolver la suplantación de identidad dentro de la organización y la suplantación de identidad entre dominios en los casos en que se posee o interactúa con varios inquilinos. También ayuda a resolver la suplantación de identidad entre dominios donde se envía a otros clientes dentro de Office 365 y también a terceros que se hospedan en otros proveedores.
   
-Para obtener más información, vea [clientes de Office 365](#customers-of-office-365). 
- 
+Para obtener más información, vea [clientes de Office 365](#customers-of-office-365).
+
 **Método 2: usar inteligencia simulada para configurar remitentes permitidos de correo electrónico no autenticado**
   
 También puede usar [inteligencia simulada](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf) para permitir que los remitentes transmitan mensajes sin autenticar a su organización. 
@@ -341,29 +342,29 @@ Para los dominios externos, el usuario suplantado es el dominio de la dirección
   
 Para permitir que este remitente envíe correo electrónico no autenticado, cambie el **no** a **sí**.
   
-![Configuración de los remitentes permitidos para la suplantación de identidad](media/d4334921-d820-4334-8217-788279701e94.jpg)
+![Configuración de los remitentes permitidos contra la suplantación de identidad](media/d4334921-d820-4334-8217-788279701e94.jpg)
   
-También puede usar PowerShell para permitir que el remitente específico suplante su dominio: 
+También puede usar PowerShell para permitir que el remitente específico suplante su dominio:
   
-```
+```powershell
 $file = "C:\My Documents\Summary Spoofed Internal Domains and Senders.csv"
 ```
 
-```
+```powershell
 Get-PhishFilterPolicy -Detailed -SpoofAllowBlockList -SpoofType External | Export-CSV $file
 ```
 
-![Obtener remitentes falseados a través de PowerShell](media/0e27ffcf-a5db-4c43-a19b-fa62326d5118.jpg)
+![Obtención de remitentes suplantados de PowerShell](media/0e27ffcf-a5db-4c43-a19b-fa62326d5118.jpg)
   
-En la imagen anterior, se han agregado saltos de línea adicionales para que esta captura de pantalla quepa, pero en realidad todos los valores aparecerán en una sola línea.
+En la imagen anterior, se han agregado saltos de línea adicionales para que esta captura de pantalla quepa. Normalmente, todos los valores aparecen en una sola línea.
   
 Edite el archivo y busque la línea correspondiente a outlook.com y bing.com, y cambie la entrada AllowedToSpoof de no a sí:
   
-![Establecer falso permitir a sí mediante PowerShell](media/62340452-62d3-4958-9ce9-afe5275a870d.jpg)
+![Establecer falso permitir en sí en PowerShell](media/62340452-62d3-4958-9ce9-afe5275a870d.jpg)
   
-Guarde el archivo y, a continuación, ejecute: 
+Guarde el archivo y, a continuación, ejecute:
   
-```
+```powershell
 $UpdateSpoofedSenders = Get-Content -Raw "C:\My Documents\Spoofed Senders.csv"
 Set-PhishFilterPolicy -Identity Default -SpoofAllowBlockList $UpdateSpoofedSenders
 ```
@@ -388,50 +389,50 @@ Una vez habilitada la Directiva contra la suplantación de identidad, puede usar
   
 ![Ver cuántos mensajes están marcados como phish](media/de25009a-44d4-4c5f-94ba-9c75cd9c64b3.jpg)
   
-Puede interactuar con los distintos informes para ver cuántos se marcaron como suplantación de identidad (phishing), incluidos los mensajes marcados como SIMULAdos. Para obtener más información, vea Introducción [a la inteligencia sobre amenazas de Office 365](https://support.office.com/article/get-started-with-office-365-threat-intelligence-38e9b67f-d188-490f-bc91-a1ae4b270441).
+Puede interactuar con los distintos informes para ver cuántos se marcaron como suplantación de identidad (phishing), incluidos los mensajes marcados como SIMULAdos. Para obtener más información, vea Introducción [a la inteligencia sobre amenazas de Office 365](get-started-with-ti.md).
   
-Todavía no puede dividir qué mensajes se marcaron debido a la suplantación frente a otros tipos de suplantación de identidad (suplantación de identidad general, dominio o suplantación de usuarios, etc.). Sin embargo, más adelante en 2018, podrá hacerlo a través del centro de seguridad &amp; y cumplimiento. Una vez que lo haga, puede usar este informe como punto de partida para identificar los dominios de envío que pueden ser legítimos marcados como falseados debido a errores de autenticación.
+Todavía no puede dividir qué mensajes se marcaron debido a la suplantación de identidad frente a otros tipos de suplantación de identidad (suplantación de identidad general, dominio o suplantación de usuarios, etc.). Sin embargo, más adelante, podrá hacerlo a través del centro de seguridad &amp; y cumplimiento. Una vez que lo haga, puede usar este informe como punto de partida para identificar los dominios de envío que pueden ser legítimos marcados como falseados debido a errores de autenticación.
   
 La siguiente captura de pantalla es una propuesta para la apariencia de estos datos, pero puede cambiarlos cuando se lancen:
   
 ![Ver informes de suplantación de identidad por tipo de detección](media/dd25d63f-152c-4c55-a07b-184ecda2de81.jpg)
   
-Para los clientes no ATP y E5, estos informes estarán disponibles más adelante en el 2018 en los informes de estado de protección contra amenazas (TPS), pero se retrasarán al menos 24 horas. Esta página se actualizará a medida que se integre en el &amp; centro de seguridad y cumplimiento.
+Para los clientes no ATP y E5, estos informes estarán disponibles más adelante en los informes de estado de protección contra amenazas (TPS), pero se retrasarán al menos 24 horas. Esta página se actualizará a medida que se integre en el &amp; centro de seguridad y cumplimiento.
   
 ### <a name="predicting-how-many-messages-will-be-marked-as-spoof"></a>PreDicción del número de mensajes que se marcarán como suplantación de identidad
 
-Más adelante, en el 2018, una vez que Office 365 actualice la configuración para permitirle desactivar la aplicación antisimulación, o bien con una aplicación básica o alta, tendrá la posibilidad de ver cómo cambiará la disposición de los mensajes en las distintas configuraciones. Es decir, si la suplantación de identidad está desActivada, podrá ver cuántos mensajes se detectarán como suPlantación de identidad si se convierte en básico; o, si es básico, podrá ver cuántos mensajes más se detectarán como suPlantación de identidad si lo convierte en alto.
+Una vez que Office 365 actualiza la configuración para permitirle desactivar la aplicación contra la suplantación de identidad (o con una aplicación básica o alta), tendrá la posibilidad de ver cómo cambiará la disposición del mensaje en las distintas configuraciones. Es decir, si la suplantación de identidad está desActivada, podrá ver cuántos mensajes se detectarán como suPlantación de identidad si se convierte en básico; o, si es básico, podrá ver cuántos mensajes más se detectarán como suPlantación de identidad si lo convierte en alto.
   
 Esta característica está actualmente en desarrollo. A medida que se definen más detalles, esta página se actualizará con capturas de pantallas del centro de seguridad y cumplimiento, y con ejemplos de PowerShell.
   
-![Informe "What if" para habilitar la antisimulación](media/fdd085ae-02c1-4327-a063-bfe9a32ff1eb.jpg)
+![Informe "What if" para habilitar la contra la suplantación de identidad](media/fdd085ae-02c1-4327-a063-bfe9a32ff1eb.jpg)
   
 ![Posible experiencia de usuario para permitir a un remitente falso](media/53f9f73e-fb01-47f3-9a6d-850c1aef5efe.jpg)
   
 ### <a name="understanding-how-spam-phishing-and-advanced-phishing-detections-are-combined"></a>Descripción de cómo se combinan el correo no deseado, el phishing y las detecciones avanzadas de suplantación de identidad
 
-Las organizaciones que usan Exchange Online, con o sin ATP, pueden especificar las acciones que se deben llevar a cabo cuando el servicio identifica mensajes como malware, correo no deseado, correo no deseado, suplantación de identidad (phishing) y masivo. Con las directivas antiphishing de ATP para los clientes de ATP y las directivas antiphishing para los clientes de EOP, y el hecho de que un mensaje puede alcanzar varios tipos de detección (por ejemplo, malware, phishing y usuario-suplantación), puede que haya cierta confusión con respecto a qué se aplica la Directiva. 
+Las organizaciones que usan Exchange Online, con o sin ATP, pueden especificar las acciones que se deben llevar a cabo cuando el servicio identifica mensajes como malware, correo no deseado, correo no deseado, suplantación de identidad (phishing) y masivo. Con las directivas antiphishing de ATP para los clientes de ATP y las directivas antiphishing para los clientes de EOP, y el hecho de que un mensaje puede alcanzar varios tipos de detección (por ejemplo, malware, phishing y usuario-suplantación), puede que haya cierta confusión con respecto a qué se aplica la Directiva.
   
-En general, la Directiva aplicada a un mensaje se identifica en el encabezado X-Forefront-antispam-rePort en la propiedad CAT (categoría). 
+En general, la Directiva aplicada a un mensaje se identifica en el encabezado X-Forefront-antispam-rePort en la propiedad CAT (categoría).
   
 |**Prioridad**|**Normativa**|**Categoría**|**¿Dónde se administra?**|**Se aplica a**|
 |:-----|:-----|:-----|:-----|:-----|
-|1  <br/> |Malware  <br/> |MALW  <br/> |[Directiva de malware](https://technet.microsoft.com/en-us/library/jj200745%28v=exchg.150%29.aspx) <br/> |Todas las organizaciones  <br/> |
-|segundo  <br/> |Suplantación  <br/> |PHSH  <br/> |[Directiva de filtro de contenido hospedado](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Todas las organizaciones  <br/> |
-|3  <br/> |Correo no deseado de alta confianza  <br/> |HSPM  <br/> |[Directiva de filtro de contenido hospedado](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Todas las organizaciones  <br/> |
-|4  <br/> |La suplantación  <br/> |SUPLANTACIÓN  <br/> |[Directiva contra la](https://go.microsoft.com/fwlink/?linkid=864553)suplantación de identidad, [inteligencia](https://support.office.com/article/Learn-more-about-spoof-intelligence-978c3173-3578-4286-aaf4-8a10951978bf) de suplantación <br/> |Todas las organizaciones  <br/> |
-|2,5  <br/> |Correo no deseado  <br/> |SPM  <br/> |[Directiva de filtro de contenido hospedado](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Todas las organizaciones  <br/> |
-|6   <br/> |Masiva  <br/> |MASIVA  <br/> |[Directiva de filtro de contenido hospedado](https://technet.microsoft.com/library/jj200684%28v=exchg.150%29.aspx) <br/> |Todas las organizaciones  <br/> |
-|7   <br/> |Suplantación de dominio  <br/> |DIMP  <br/> |[Directiva contra la suplantación de identidad](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |Organizaciones con ATP solamente  <br/> |
-|8   <br/> |Suplantación de usuario  <br/> |UIMP  <br/> |[Directiva contra la suplantación de identidad](https://go.microsoft.com/fwlink/?linkid=864553) <br/> |Organizaciones con ATP solamente <br/> |
-   
+|1  <br/> |Software  <br/> |MALW  <br/> |[Directiva de malware](configure-anti-malware-policies.md) <br/> |Todas las organizaciones  <br/> |
+|segundo  <br/> |Suplantación  <br/> |PHSH  <br/> |[Configurar las directivas de filtro de correo no deseado](configure-your-spam-filter-policies.md) <br/> |Todas las organizaciones  <br/> |
+|3  <br/> |Correo no deseado de alta confianza  <br/> |HSPM  <br/> |[Configurar las directivas de filtro de correo no deseado](configure-your-spam-filter-policies.md) <br/> |Todas las organizaciones  <br/> |
+|4  <br/> |Spoofing  <br/> |SUPLANTACIÓN  <br/> |[Directiva contra la](https://go.microsoft.com/fwlink/?linkid=864553)suplantación de identidad, [inteligencia](learn-about-spoof-intelligence.md) de suplantación <br/> |Todas las organizaciones  <br/> |
+|2,5  <br/> |Correo no deseado  <br/> |SPM  <br/> |[Configurar las directivas de filtro de correo no deseado](configure-your-spam-filter-policies.md) <br/> |Todas las organizaciones  <br/> |
+|6,5  <br/> |Masiva  <br/> |MASIVA  <br/> |[Configurar las directivas de filtro de correo no deseado](configure-your-spam-filter-policies.md) <br/> |Todas las organizaciones  <br/> |
+|0,7  <br/> |Suplantación de dominio  <br/> |DIMP  <br/> |[Configurar las directivas antiphishing y anti-phishing de Office 365 ATP](set-up-anti-phishing-policies.md) <br/> |Organizaciones con ATP solamente  <br/> |
+|8,5  <br/> |Suplantación de usuario  <br/> |UIMP  <br/> |[Configurar las directivas antiphishing y anti-phishing de Office 365 ATP](set-up-anti-phishing-policies.md) <br/> |Organizaciones con ATP solamente <br/> |
+
 Si tiene varias directivas antiphishing distintas, se aplicará la que tenga la prioridad más alta. Por ejemplo, supongamos que tiene dos directivas:
-  
+
 |**Normativa**|**Prioridad**|**Suplantación de usuario o dominio**|**Contra la suplantación de identidad**|
 |:-----|:-----|:-----|:-----|
-|A  <br/> |1  <br/> |Activado  <br/> |Desactivado  <br/> |
+|A  <br/> |1  <br/> |Activado  <br/> |Off  <br/> |
 |B  <br/> |segundo  <br/> |Off  <br/> |Activado  <br/> |
-   
+
 Si un mensaje entra y se identifica como la suplantación de identidad y la suplantación del usuario, y el mismo conjunto de usuarios está en el ámbito de la Directiva A y la Directiva B, el mensaje se trata como una falsa pero no se aplica ninguna acción puesto que la suplantación de identidad está desactivada y la suPLANTAción de identidad (spoofing) se ejecuta en una prioridad más alta (4) que la suplantación del usuario (8).
   
 Para que se apliquen otros tipos de directivas de suplantación de identidad, tendrá que ajustar la configuración de la persona a la que se aplican las distintas directivas.
@@ -466,7 +467,7 @@ Asegúrese de diferenciarse cuando el registro MX de un dominio de destinatario 
   
 Si no está seguro de si el dominio de destino ha sufrido o no la reescritura de destinatarios, a veces puede decirle que consulte los encabezados del mensaje.
   
-a) en primer lugar, mire los encabezados en el mensaje para el dominio del destinatario en el encabezado Authentication-Results: 
+a) en primer lugar, mire los encabezados en el mensaje para el dominio del destinatario en el encabezado Authentication-Results:
   
 ```
 Authentication-Results: spf=fail (sender IP is 1.2.3.4)
@@ -502,21 +503,21 @@ Recuerde que no desea deshabilitar la suplantación de identidad si el primer sa
   
 ### <a name="how-to-disable-anti-spoofing"></a>Cómo deshabilitar la suplantación de identidad (phishing)
 
-Si ya se ha creado una directiva contra suplantación de identidad, establezca el parámetro EnableAntispoofEnforcement en $false: 
+Si ya se ha creado una directiva contra suplantación de identidad, establezca el parámetro EnableAntispoofEnforcement en $false:
   
 ```
 $name = "<name of policy>"
-Set-AntiphishPolicy -Identity $name -EnableAntiSpoofEnforcement $false 
+Set-AntiphishPolicy -Identity $name -EnableAntiSpoofEnforcement $false
 
 ```
 
-Si no conoce el nombre de la Directiva (o las directivas) que debe deshabilitar, puede mostrarlas: 
+Si no conoce el nombre de la Directiva (o las directivas) que debe deshabilitar, puede mostrarlas:
   
 ```
 Get-AntiphishPolicy | fl Name
 ```
 
-Si no tiene ninguna directiva antiphishing existente, puede crear una y, a continuación, deshabilitarla (incluso si no tiene una directiva, no se aplica la suplantación de identidad; más adelante en 2018, se creará una directiva predeterminada y, a continuación, puede deshabilitarla en lugar de crear una) . Tendrá que hacerlo en varios pasos: 
+Si no tiene ninguna directiva antiphishing existente, puede crear una y, a continuación, deshabilitarla (incluso si no tiene una directiva, no se aplica la suplantación de identidad; más adelante en 2018, se creará una directiva predeterminada y, a continuación, puede deshabilitarla en lugar de crear una) . Tendrá que hacerlo en varios pasos:
   
 ```
 $org = Get-OrganizationConfig
@@ -532,12 +533,12 @@ New-AntiphishPolicy -Name $Name
 $domains = "domain1.com, domain2.com, domain3.com"
 # Next, create the anti-phishing rule, scope it to the anti-phishing rule
 New-AntiphishRule -Name $name -AntiphishPolicy -RecipientDomainIs $domains
-# Finally, scope the antiphishing policy to the domains
-Set-AntiphishPolicy -Identity $name -EnableAntispoofEnforcement $false 
+# Finally, scope the anti-phishing policy to the domains
+Set-AntiphishPolicy -Identity $name -EnableAntispoofEnforcement $false
 
 ```
 
-La desHabilitación de la suplantación de identidad solo está disponible a través de cmdlet (más adelante en el &amp; segundo trimestre de 2018 estará disponible en el centro de seguridad y cumplimiento). Si no tiene acceso a PowerShell, cree un vale de soporte técnico.
+La desHabilitación de la suplantación de identidad solo está disponible mediante cmdlet (más adelante estará &amp; disponible en el centro de seguridad y cumplimiento). Si no tiene acceso a PowerShell, cree un vale de soporte técnico.
   
 Recuerde que esto solo debe aplicarse a dominios que sufran un enrutamiento indirecto cuando se envíen a Office 365. Resista la tentación de deshabilitar la suplantación de identidad (phishing) debido a algunos falsos positivos, será mejor en el largo plazo para trabajar con ellos.
   
@@ -567,7 +568,7 @@ Por ejemplo, supongamos que su dirección de correo electrónico es el usuario @
   
 **Asunto:** Excelente visualización de Jays azul en la parte superior de Mt. Rainier esta semana 
   
-Nadie quiere consultar la vista de esta semana desde MT. Rainier?
+Cualquiera que quiera consultar la vista de esta semana desde MT. Rainier?
   
 Cuando la lista de correo electrónico recibe el mensaje, da formato al mensaje, modifica su contenido y lo reproduce al resto de los miembros de la lista de discusión que está formado por participantes de muchos de los distintos receptores de correo electrónico.
   
@@ -577,7 +578,7 @@ Cuando la lista de correo electrónico recibe el mensaje, da formato al mensaje,
   
 **Asunto:** [BIRDWATCHERS] Excelente visualización de Jays azul en la parte superior de Mt. Rainier esta semana 
   
-Nadie quiere consultar la vista de esta semana desde MT. Rainier?
+Cualquiera que quiera consultar la vista de esta semana desde MT. Rainier?
   
 ---
   
@@ -588,45 +589,45 @@ En el anterior, el mensaje reproducido tiene el mismo origen: Address (user @ co
 Si usted o alguien de su organización es un administrador de la lista de distribución de correo, es posible que pueda configurarlo para que pase las comprobaciones contra la suplantación de identidad.
   
 - Consulte las preguntas más frecuentes en DMARC.org: [he operado una lista de correo y quiero interoperar con DMARC, ¿qué debo hacer?](https://dmarc.org/wiki/FAQ#I_operate_a_mailing_list_and_I_want_to_interoperate_with_DMARC.2C_what_should_I_do.3F)
-    
+
 - Lea las instrucciones de esta entrada de blog: [sugerencia para operadores de listas de distribución de correo para interoperar con DMARC para evitar errores](https://blogs.msdn.microsoft.com/tzink/2017/03/22/a-tip-for-mailing-list-operators-to-interoperate-with-dmarc-to-avoid-failures/)
-    
+
 - Considere la posibilidad de instalar actualizaciones en el servidor de la lista de distribución de correo para admitir ARC, vea[https://arc-spec.org](https://arc-spec.org/)
-    
+
 Si no tiene la propiedad de la lista de distribución de correo:
   
 - Puede solicitar al encargado de mantenimiento de la lista de distribución que implemente una de las opciones anteriores (también deben tener la autenticación de correo electrónico configurada para el dominio desde el que se retransmite la lista de correo)
-    
+
 - Puede crear reglas de buzón en su cliente de correo electrónico para mover mensajes a la bandeja de entrada. También puede solicitar a los administradores de su organización que configuren reglas de permiso o reemplazos, tal como se describe en la sección Administración de remitentes legítimos que envían correo no autenticado
-    
+
 - Puede crear un vale de soporte técnico con Office 365 para crear una invalidación de la lista de correo para tratarla como legítima
-    
+
 ### <a name="other-scenarios"></a>Otros escenarios
 
 1. Si ninguno de los escenarios comunes anteriores se aplica a su situación, informe del mensaje como falso positivo a Microsoft. Para obtener más información, consulte la sección [¿Cómo puedo informar a Microsoft sobre los mensajes de correo no deseado o de correo no deseado?](#how-can-i-report-spam-or-non-spam-messages-back-to-microsoft) más adelante en este artículo. 
-    
+
 2. También puede ponerse en contacto con su administrador de correo electrónico que puede aumentarlo como un tíquet de soporte técnico de Microsoft. El equipo de ingeniería de Microsoft investigará por qué el mensaje se marcó como falso.
-    
+
 3. Además, si sabe quién es el remitente y está seguro de que no se ha falseado de forma malintencionada, puede responder al remitente que indica que está enviando mensajes desde un servidor de correo que no se autentica. En ocasiones, esto provoca que el remitente original se ponga en contacto con su administrador de TI para configurar los registros de autenticación de correo electrónico necesarios.
   
 Cuando hay suficientes remitentes que responden a los propietarios de dominio de que deben configurar los registros de autenticación de correo electrónico, se los revierten a emprender acciones. Aunque Microsoft también trabaja con los propietarios de dominios para publicar los registros necesarios, ayuda incluso más cuando los usuarios individuales lo solicitan.
-    
+
 4. Opcionalmente, agregue el remitente a la lista de remitentes seguros. Sin embargo, tenga en cuenta que si un phish imita la cuenta, se entregará en su buzón de correo. Por lo tanto, esta opción debe usarse con moderación.
-    
+
 ## <a name="how-senders-to-microsoft-should-prepare-for-anti-spoofing-protection"></a>Cómo deben prepararse los remitentes a Microsoft para la protección contra la suplantación de identidad
 
-Si es un administrador que actualmente envía mensajes a Microsoft, tanto en Office 365 como en Outlook.com, debe asegurarse de que el correo electrónico se ha autenticado correctamente; de lo contrario, se puede marcar como correo no deseado o phish. 
+Si es un administrador que actualmente envía mensajes a Microsoft, tanto en Office 365 como en Outlook.com, debe asegurarse de que el correo electrónico se ha autenticado correctamente; de lo contrario, se puede marcar como correo no deseado o phish.
   
 ### <a name="customers-of-office-365"></a>Clientes de Office 365
 
 Si es un cliente de Office 365 y usa Office 365 para enviar correo electrónico saliente:
   
-- Para sus dominios, [Configure SPF en Office 365 para ayudar a evitar la suplantación de identidad](https://docs.microsoft.com/office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing)
-    
-- Para los dominios principales, [use DKIM para validar el correo electrónico saliente enviado desde su dominio personalizado en Office 365](https://docs.microsoft.com/office365/SecurityCompliance/use-dkim-to-validate-outbound-email)
-    
-- [Considere la posibilidad de configurar registros de DMARC](https://docs.microsoft.com/office365/SecurityCompliance/use-dmarc-to-validate-email) para el dominio para determinar quiénes son los remitentes legítimos 
-    
+- Para sus dominios, [Configure SPF en Office 365 para ayudar a evitar la suplantación de identidad](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
+
+- Para los dominios principales, [use DKIM para validar el correo electrónico saliente enviado desde su dominio personalizado en Office 365](use-dkim-to-validate-outbound-email.md)
+
+- [Considere la posibilidad de configurar registros de DMARC](use-dmarc-to-validate-email.md) para el dominio para determinar quiénes son los remitentes legítimos
+
 Microsoft no proporciona instrucciones de implementación detalladas para cada uno de los SPF, DKIM y DMARC. Sin embargo, hay mucha información publicada en línea. También hay compañías de terceros dedicadas a ayudar a su organización a configurar los registros de autenticación de correo electrónico.
   
 ### <a name="administrators-of-domains-that-are-not-office-365-customers"></a>Administradores de dominios que no son clientes de Office 365
@@ -634,15 +635,15 @@ Microsoft no proporciona instrucciones de implementación detalladas para cada u
 Si es administrador de dominio pero no es un cliente de Office 365:
   
 - Debe configurar SPF para publicar las direcciones IP de envío del dominio y también configurar DKIM (si está disponible) para firmar digitalmente los mensajes. También puede considerar la configuración de registros de DMARC.
-    
+
 - Si tiene remitentes en masa que transmiten correo electrónico en su nombre, debe trabajar con ellos para enviar correo electrónico de forma tal que el dominio de envío de la dirección de: (si pertenece a usted) se alinee con el dominio que pasa SPF o DMARC.
-    
+
 - Si tiene servidores de correo locales, o envía desde un proveedor de software como servicio, o desde un servicio de hospedaje en la nube como Microsoft Azure, GoDaddy, Rackspace, Amazon Web Services o similar, debe asegurarse de que se agregan a su registro de SPF.
-    
+
 - Si es un dominio pequeño hospedado por un ISP, debe configurar su registro de SPF de acuerdo con las instrucciones que le proporcione su ISP. La mayoría de los ISP proporcionan estos tipos de instrucciones y se pueden encontrar en las páginas de soporte técnico de la compañía.
-    
+
 - Incluso si no ha tenido que publicar registros de autenticación de correo electrónico antes y ha funcionado bien, debe seguir publicando registros de autenticación de correo electrónico para enviar a Microsoft. Al hacerlo, le ayudará a luchar contra el phishing y reducirá la posibilidad de que usted u organizaciones a las que usted les envíe se produzcan phish.
-    
+
 ### <a name="what-if-you-dont-know-who-sends-email-as-your-domain"></a>¿Qué ocurre si no sabe quién envía el correo electrónico como su dominio?
 
 Muchos dominios no publican registros de SPF porque no saben quién son todos sus remitentes. Eso no es necesario para saber quiénes son todos ellos. En su lugar, debe empezar por publicar un registro SPF para los que conoce, sobre todo donde se encuentra el tráfico corporativo, y publicar una directiva de SPF neutro, todos:
@@ -657,16 +658,16 @@ Una vez que haya empezado con un registro de SPF con una directiva de reserva de
   
 ### <a name="what-if-you-are-the-owner-of-a-mailing-list"></a>¿Qué ocurre si es el propietario de una lista de distribución de correo?
 
-Consulte la sección [Common scenario #2: listas de discusión](#common-scenario-2---discussion-lists). 
+Consulte la sección [Common scenario #2: listas de discusión](#common-scenario-2---discussion-lists).
   
 ### <a name="what-if-you-are-an-infrastructure-provider-such-as-an-internet-service-provider-isp-email-service-provider-esp-or-cloud-hosting-service"></a>¿Qué sucede si es un proveedor de infraestructura como un proveedor de servicios de Internet (ISP), un proveedor de servicios de correo electrónico (ESP) o un servicio de hospedaje en la nube?
 
 Si hospeda el correo electrónico de un dominio y envía correo electrónico, o proporciona una infraestructura de hospedaje que pueda enviar correo electrónico, debe hacer lo siguiente:
   
 - Asegurarse de que los clientes tienen documentación en la que se detalla lo que se va a publicar en sus registros de SPF
-    
+
 - Considere la posibilidad de firmar las firmas de DKIM en el correo electrónico saliente incluso si el cliente no lo configura de forma explícita (inicie sesión con un dominio predeterminado). Incluso puede firmar de dos veces el correo electrónico con firmas de DKIM (una vez con el dominio del cliente si lo ha configurado y una segunda vez con la firma DKIM de la compañía).
-    
+
 No se garantiza la entrega a Microsoft, aunque se autentique el correo electrónico procedente de la plataforma, pero al menos se asegura de que Microsoft no es correo no deseado porque no está autenticado. Para obtener más información acerca de cómo Outlook.com filtra el correo electrónico, consulte la [Página de Outlook.com postmaster](https://postmaster.live.com/pm/postmaster.aspx).
   
 Para obtener más información sobre las prácticas recomendadas de los proveedores de servicios, vea [M3AAWG Mobile Messaging Best Practices for Service Providers](https://www.m3aawg.org/sites/default/files/M3AAWG-Mobile-Messaging-Best-Practices-Service-Providers-2015-08.pdf).
@@ -714,5 +715,3 @@ No, esta opción ya no es necesaria porque la característica contra la suplanta
 ### <a name="does-sender-rewriting-scheme-srs-help-fix-forwarded-email"></a>¿Ayuda el esquema de reescritura de remitentes (SRS) para corregir el correo reenviado?
 
 SRS solo corrige parcialmente el problema del correo electrónico reenviado. Al volver a escribir el correo SMTP desde, SRS puede asegurarse de que el mensaje reenviado pasa SPF en el siguiente destino. Sin embargo, dado que la suplantación de identidad se basa en la dirección de: en combinación con el dominio de firma de correo electrónico o de firma DKIM (u otras señales), no es suficiente evitar que el correo electrónico reenviado se marque como falseado.
-  
-

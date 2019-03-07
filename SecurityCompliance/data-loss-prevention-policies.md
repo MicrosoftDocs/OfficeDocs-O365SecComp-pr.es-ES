@@ -10,16 +10,17 @@ f1_keywords:
 - ms.o365.cc.DLPLandingPage
 ms.service: O365-seccomp
 localization_priority: Normal
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
 search.appverid:
 - MET150
 description: Con una directiva de prevención de pérdida de datos (DLP) en el &amp; centro de seguridad y cumplimiento de Office 365, puede identificar, supervisar y proteger automáticamente la información confidencial en Office 365.
-ms.openlocfilehash: 53f9e3b4fca296c35d4c07b912a9bd1d41e62fc8
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.openlocfilehash: 80416ba0a402e33ed8af6390d261d3224fa0be2f
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410875"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30455052"
 ---
 # <a name="overview-of-data-loss-prevention-policies"></a>Información general sobre directivas de prevención de pérdida de datos
 
@@ -505,7 +506,7 @@ Sin embargo, los informes DLP necesitan extraer datos de toda la oficina 365, in
     
 - [Qué incluyen las plantillas de directiva DLP](what-the-dlp-policy-templates-include.md)
     
-- [Qué buscan los tipos de información confidencial](what-the-sensitive-information-types-look-for.md)
+- [Información que buscan los tipos de información confidencial](what-the-sensitive-information-types-look-for.md)
     
 - [Qué buscan las funciones de DLP](what-the-dlp-functions-look-for.md)
     

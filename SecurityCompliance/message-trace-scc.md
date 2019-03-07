@@ -5,16 +5,16 @@ author: chrisda
 manager: serdars
 ms.audience: ITPro
 ms.topic: article
-ms.prod: office-online-server
+ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: Los administradores pueden usar el seguimiento de mensajes en el centro de seguridad & cumplimiento para averiguar qué sucedió con los mensajes.
-ms.openlocfilehash: 95682b02f50996594650ac5d3aebf18f795efd65
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: 9c427328972fb9c8d64a2847368f5be022974744
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341571"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30455352"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Seguimiento de mensajes en el centro de seguridad & cumplimiento
 
@@ -98,11 +98,11 @@ Puede dejar el valor predeterminado **todos** seleccionados o puede seleccionar 
 
 **Nota**: los valores **Pending (** **en cuarentena**) y **Filter (correo no deseado** ) solo están disponibles para las búsquedas de menos de 10 días. Además, puede haber un retraso de 5 a 10 minutos entre el estado de entrega real y notificado.
 
-#### <a name="message-id"></a>Id. del mensaje
+#### <a name="message-id"></a>IDENTIFICADOR de mensaje
 
 Se trata del identificador del mensaje de Internet (también conocido como el identificador de cliente) que se encuentra en el campo de encabezado **Message-ID:** en el encabezado del mensaje. Los usuarios pueden proporcionarle este valor para investigar mensajes específicos.
 
-Este valor es constante mientras dure el mensaje. Para los mensajes creados en Office 365 o Exchange, el valor tiene el formato `<GUID@ServerFQDN>`, incluidos los corchetes angulares\< \>(). Por ejemplo, `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`. Otros sistemas de mensajería pueden usar diferentes sintaxis o valores. Este valor debe ser único, pero no todos los sistemas de correo electrónico respetan estrictamente este requisito. Si el campo de encabezado **Message-ID:** no existe o está en blanco para los mensajes entrantes de orígenes externos, se asigna un valor arbitrario.
+Este valor es constante mientras dura el mensaje. Para los mensajes creados en Office 365 o Exchange, el valor tiene el formato `<GUID@ServerFQDN>`, incluidos los corchetes angulares\< \>(). Por ejemplo, `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`. Otros sistemas de mensajería pueden usar diferentes sintaxis o valores. Este valor debe ser único, pero no todos los sistemas de correo electrónico respetan estrictamente este requisito. Si el campo de encabezado **Message-ID:** no existe o está en blanco para los mensajes entrantes de orígenes externos, se asigna un valor arbitrario.
 
 Cuando use el **identificador de mensaje** para filtrar los resultados, asegúrese de incluir la cadena completa, incluidos los corchetes angulares.
 
@@ -200,7 +200,7 @@ Los detalles del seguimiento de mensajes contienen la siguiente información adi
 
    - **Defer**: la entrega del mensaje se pospuso y puede volver a intentarse más adelante.
 
-   - **Resuelto**: el mensaje se redirigió a una nueva dirección de destinatario basada en una búsqueda de Active Directory. Cuando esto ocurre, la dirección del destinatario original aparece en una fila independiente en el seguimiento de mensajes junto con el estado de entrega final del mensaje.
+   - **Resuelto**: el mensaje se redirigió a una nueva dirección de destinatario basada en una búsqueda de Active Directory. Cuando esto ocurre, la dirección del destinatario original aparece en una fila diferente en la información de seguimiento del mensaje junto con el estado de entrega final del mensaje.
 
    Tenga en cuenta que incluso un mensaje sin eventos entregado correctamente generará varias entradas de **eventos** en el seguimiento de mensajes.
 
@@ -278,7 +278,7 @@ Disponible (completado) los informes extendidos están disponibles en la secció
 
 - **internal_message_id**: un identificador de mensaje asignado por el servidor de Exchange online que está procesando actualmente el mensaje.
 
-- **recipient_address**: las direcciones de correo electrónico de los destinatarios del mensaje. Las direcciones de correo electrónico múltiples están separadas por el carácter de punto y coma (;).
+- **recipient_address**: las direcciones de correo electrónico de los destinatarios del mensaje. Si hay varias direcciones de correo electrónico, se separan por punto y coma (;).
 
 - **recipient_count**: el número total de destinatarios del mensaje.
 
@@ -298,13 +298,13 @@ Disponible (completado) los informes extendidos están disponibles en la secció
 
    - **MAILBOXRULE**: contiene el valor **internal_message_id** del mensaje entrante que hizo que la regla de la bandeja de entrada generara el mensaje saliente.
 
-   Para el resto de los tipos de eventos, este campo suele estar en blanco.
+   Para otros tipos de eventos, este campo suele estar en blanco.
 
 - **return_path**: dirección de correo electrónico de devolución especificada por el comando **mail from** que envió el mensaje. Aunque este campo nunca está vacío, puede tener el valor de la dirección del remitente null representado `<>`como.
 
 - **message_info**: información adicional sobre el mensaje. Por ejemplo:
 
-   - La fecha y hora de origen del mensaje en UTC `DELIVER` para `SEND` y eventos. La fecha y hora de origen es la hora en que el mensaje entró por primera vez en la organización de Exchange Online. La fecha y hora UTC se representa en el formato de fecha y hora ISO 8601 `yyyy-mm-ddThh:mm:ss.fffZ`:, `yyyy` donde = año `mm` , = mes `dd` , = día `T` , indica el comienzo del componente de hora `hh` , = hora `mm` , = minuto `ss` , = segundo `fff` , = fracciones de segundo e `Z` indica `Zulu`, que es otra forma de indicar UTC.
+   - La fecha y hora de origen del mensaje en UTC `DELIVER` para `SEND` y eventos. La fecha y hora de origen es la hora en que el mensaje entró por primera vez en la organización de Exchange Online. La fecha y hora UTC se representa en el formato de fecha y hora ISO 8601 `yyyy-mm-ddThh:mm:ss.fffZ`:, `yyyy` donde = año `mm` , = mes `dd` , = día `T` , indica el comienzo del componente de hora `hh` , = hora `mm` , = minuto `ss` , = segundo `fff` , = fracciones de segundo, e `Z` indica `Zulu`, que es otra forma de indicar UTC.
 
    - Errores de autenticación. Por ejemplo, es posible que vea el `11a` valor y el tipo de autenticación que se usó cuando se produjo el error de autenticación.
 
@@ -336,7 +336,7 @@ Un valor de **custom_data** que empieza `S:SFA` por es del agente de filtro de c
 |`DI=SJ`|El mensaje se envió a la carpeta de correo no deseado del destinatario.|
 |`DI=SN`|El mensaje se enrutó a través del grupo de entrega de mayor riesgo. Para obtener más información, consulte [grupo de entrega de alto riesgo para los mensajes salientes](https://technet.microsoft.com/library/jj200746.aspx).|
 |`DI=SO`|El mensaje se enrutó a través del grupo de entrega saliente normal.|
-|`SFS=[a]|SFS=[b]`|Indica que se coincidió con reglas de correo no deseado.|
+|"SFS = [a]|SFS = [b] '|Indica que se coincidió con reglas de correo no deseado.|
 |`IPV=CAL`|El mensaje se permitió a través de los filtros de correo no deseado porque la dirección IP estaba incluida en una lista de direcciones IP permitidas en el filtro de conexión.|
 |`H=<EHLOstring>`|La cadena HELO o EHLO del servidor de correo que se conecta.|
 |`PTR=<ReverseDNS>`|Registro PTR de la dirección IP de envío, también denominado dirección DNS inversa.|
@@ -351,7 +351,7 @@ Un valor de **custom_data** que empieza `S:AMA` por es del agente de filtro de m
 
 |**Valor**|**Descripción**|
 |:-----|:-----|
-|`AMA=SUM|v=1|`o`AMA=EV|v=1`|Se determinó que el mensaje contiene malware. `SUM` indica que el malware podría haber sido detectado por cualquier número de motores. `EV` indica que un motor específico detectó el malware. Cuando un motor detecta malware, se activan las acciones siguientes.|
+|' AMA = SUM|v=1|` or `AMA=EV|v = 1 '|Se determinó que el mensaje contiene malware. `SUM`indica que el malware podría haber sido detectado por cualquier número de motores. `EV`indica que un motor específico detectó el malware. Cuando un motor detecta el malware, se activan las acciones siguientes.|
 |`Action=r`|El mensaje se reemplazó.|
 |`Action=p`|El mensaje se omitió.|
 |`Action=d`|El mensaje se difirió.|
@@ -374,10 +374,10 @@ Un valor de **custom_data** que empieza`S:TRA` por es del agente de reglas de tr
 
 |**Valor**|**Descripción**|
 |:-----|:-----|
-|`ETR|ruleId=<guid>`|El identificador de regla coincidente.|
+|' ETR|AC. =<guid>`|El identificador de regla coincidente.|
 |`St=<datetime>`|La fecha y la hora en UTC cuando se produjo la coincidencia de regla.|
-|`Action=<ActionDefinition>`|La acción que se ha aplicado. Para obtener una lista de las acciones disponibles, consulte [mail Flow Rule Actions in Exchange Online](https://technet.microsoft.com/library/jj919237.aspx).|
-|`Mode=<Mode>`|El modo de la regla. Los valores válidos son:<br/>• **Exigir**: se exigirán todas las acciones de la regla. <br/>• **Pruebe las sugerencias de directiva:**: se enviarán todas las acciones de la sugerencia de Directiva, pero no se actuará sobre otras acciones de aplicación. <br/>• **Pruebe sin sugerencias de directiva**: las acciones se mostrarán en un archivo de registro, pero los remitentes no recibirán ninguna notificación y no se actuará sobre las acciones de aplicación.|
+|`Action=<ActionDefinition>`|La acción que se aplicó. Para obtener una lista de las acciones disponibles, consulte [mail Flow Rule Actions in Exchange Online](https://technet.microsoft.com/library/jj919237.aspx).|
+|`Mode=<Mode>`|El modo de la regla. Los valores válidos son: <br/>• **Exigir**: se exigirán todas las acciones de la regla. <br/>• **Pruebe las sugerencias de directiva:**: se enviarán todas las acciones de la sugerencia de Directiva, pero no se actuará sobre otras acciones de aplicación. <br/>• **Pruebe sin sugerencias de directiva**: las acciones se mostrarán en un archivo de registro, pero los remitentes no recibirán ninguna notificación y no se actuará sobre las acciones de aplicación.|
 
 Un valor de **custom_data** de ejemplo para un mensaje que coincide con las condiciones de una regla de flujo de correo tiene el siguiente aspecto:
 

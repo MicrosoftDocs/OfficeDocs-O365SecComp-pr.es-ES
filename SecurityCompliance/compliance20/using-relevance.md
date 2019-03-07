@@ -14,16 +14,20 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: f08fe644bfd4eaae27e1ef8718c54166417e53ae
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 6e94adc6e6b7fb7d8757b161ffdf01066cadac7a
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295833"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30454952"
 ---
 # <a name="use-the-relevance-module-to-analyze-data-in-advanced-ediscovery-preview"></a>Usar el módulo relevancia para analizar datos en la exhibición avanzada de documentos electrónicos (versión preliminar)
 
-En la exhibición avanzada de documentos electrónicos (versión preliminar), el módulo de relevancia incluye el entrenamiento de relevancia y la revisión de los archivos relacionados con un caso. El flujo de trabajo de relevancia se muestra y se describe de la siguiente manera:
+En la exhibición avanzada de documentos electrónicos (versión preliminar), el módulo de relevancia incluye el entrenamiento de relevancia y la revisión de los archivos relacionados con un caso. Para usar el flujo de trabajo de relevancia, vaya a Manage working set in a working set y haga clic en Mostrar relevancia. Hay un par de pasos que debe realizar antes de poder iniciar el flujo de trabajo:
+- Proceso: cada conjunto de carga agregado al conjunto de trabajo se mostrará como "contenedor" aquí. Debe procesar estos documentos para poder agregarlos al módulo de relevancia; Aquí también puede marcarlos como semilla o etiquetarse previamente para un problema específico.
+- Agregar a relevancia: en cargas \> de relevancia, puede agregar documentos que se han procesado en relevancia para que estén disponibles para su aprendizaje.
+
+El flujo de trabajo de relevancia se muestra y se describe de la siguiente manera:
   
 ![Flujo de trabajo de relevancia](../media/44c67dd2-7a20-40a9-b0ed-784364845c77.gif)
   

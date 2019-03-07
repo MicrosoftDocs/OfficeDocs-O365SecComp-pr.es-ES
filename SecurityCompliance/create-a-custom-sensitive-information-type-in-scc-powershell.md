@@ -7,18 +7,18 @@ ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
-ms.collection: M365-security-compliance
-ms. topic: article
+ms.collection:
+- M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 description: Aprenda a crear e importar un tipo de información confidencial personalizada para DLP en el Centro de seguridad y cumplimiento de Office 365.
-ms.openlocfilehash: bd85b28bab8201291070a72df799bbaf28acaa28
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.openlocfilehash: 03121a76a7c7cf21d0ae21138c43bca594a7839b
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410855"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30455132"
 ---
 # <a name="create-a-custom-sensitive-information-type-in-office-365-security--compliance-center-powershell"></a>Crear un tipo personalizado de información confidencial en PowerShell del Centro de seguridad y cumplimiento de Office 365
 

@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: bcc307cc08954dd3cc69e8905747393d79f97b04
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: fb4b36841394576c44667f9677507c5655179e45
+ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30297103"
+ms.lasthandoff: 03/06/2019
+ms.locfileid: "30455422"
 ---
 # <a name="collect-data-for-a-case-in-advanced-ediscovery-preview"></a>Recopilar datos para un caso en eDiscovery avanzado (versión preliminar)
 
@@ -27,7 +27,7 @@ Una vez que haya identificado los custodios y los orígenes de datos que sean de
 
 Después de ejecutar una búsqueda, podrá ver las estadísticas de los elementos recuperados, como las ubicaciones en las que la mayoría de los elementos coinciden con la consulta de búsqueda. También puede obtener una vista previa de un subconjunto de los resultados. Cuando haya identificado el conjunto de documentos que desea examinar con más detalle, puede Agregar los resultados de la búsqueda a un conjunto de trabajo para recopilar y procesar.
 
-## <a name="create-a-search"></a>Crear una búsqueda
+## <a name="create-a-search"></a>Create a search
 
 Si hace clic en **nueva búsqueda** en la ficha **búsquedas** , se iniciará un asistente que le guiará a través de la creación de una búsqueda. Para obtener información detallada sobre cómo crear una búsqueda, vea [crear una búsqueda para recopilar datos](create-search-to-collect-data.md).
 
@@ -40,8 +40,7 @@ Una vez completada la estimación de búsqueda, haga clic en la búsqueda para m
 
 - Resumen
 - Principales ubicaciones
-- Peticiones
-- Refinadores
+- Queries
 
 Para obtener más información acerca de las estadísticas de búsqueda, vea [estadísticas de búsqueda](search-statistics.md).
 
