@@ -12,12 +12,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 description: Use la búsqueda de contenido en el centro &amp; de seguridad y cumplimiento de Office 365 para realizar colecciones de destino. Una colección de destino significa que tiene la certeza de que los elementos que responden a un caso o los elementos con privilegios están ubicados en un buzón o carpeta de sitio específicos. Use el script de este artículo para obtener el identificador de carpeta o la ruta de acceso de las carpetas de sitio o de buzón de correo específicas que desea buscar.
-ms.openlocfilehash: 6c41069a268991553f03763ae80dea032d5db202
-ms.sourcegitcommit: 03054baf50c1dd5cd9ca6a9bd5d056f3db98f964
+ms.openlocfilehash: 1a2a104405cdbbbbbeba0bb62e302ae59638be07
+ms.sourcegitcommit: 9f38ba72eba0b656e507860ca228726e4199f7ec
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30354692"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "30475720"
 ---
 # <a name="use-content-search-in-office-365-for-targeted-collections"></a>Usar la búsqueda de contenido en Office 365 para colecciones dirigidas
 
@@ -27,7 +27,7 @@ La característica de búsqueda de contenido en el centro &amp; de seguridad y c
 
 - Debe ser miembro del grupo de roles eDiscovery Manager en el centro de seguridad &amp; y cumplimiento para ejecutar el script en el paso 1. Para obtener más información, consulte [asignar permisos de exhibición de documentos electrónicos &amp; en el centro de seguridad y cumplimiento de Office 365](assign-ediscovery-permissions.md).
     
-    Además, debe tener asignado el rol destinatarios de correo en su organización de Exchange Online. Esto es necesario para ejecutar el cmdlet **Get-MailboxFolderStatistics** , que se incluye en el script en el paso 1. De forma predeterminada, la función destinatarios de correo se asigna a los grupos de funciones administración de la organización y administración de destinatarios en Exchange Online. Para obtener más información acerca de la asignación de permisos en Exchange Online, consulte [Manage role Group Members](https://go.microsoft.com/fwlink/p/?linkid=692102). También puede crear un grupo de funciones personalizado, asignarle el rol destinatarios de correo y, a continuación, agregar los miembros que necesitan ejecutar el script en el paso 1. Para obtener más información, vea [Manage role Groups](https://go.microsoft.com/fwlink/p/?linkid=730688).
+    Además, debe tener asignado el rol destinatarios de correo en su organización de Exchange Online. Esto es necesario para ejecutar el cmdlet **Get-MailboxFolderStatistics** , que se incluye en el script en el paso 1. De forma predeterminada, la función destinatarios de correo se asigna a los grupos de funciones administración de la organización y administración de destinatarios en Exchange Online. Para obtener más información acerca de la asignación de permisos en Exchange Online, consulte [Manage role Group Members](https://go.microsoft.com/fwlink/p/?linkid=692102). También puede crear un grupo de funciones personalizado, asignarle el rol destinatarios de correo y, a continuación, agregar los miembros que necesitan ejecutar el script en el paso 1. Para obtener más información, consulte [Administrar grupos de roles](https://go.microsoft.com/fwlink/p/?linkid=730688).
     
 - Cada vez que ejecute el script en el paso 1, se creará una nueva sesión de PowerShell remoto. Por lo tanto, puede usar todas las sesiones de PowerShell remoto disponibles. Para evitar que esto suceda, puede ejecutar el siguiente comando para desconectar las sesiones remotas de PowerShell activas.
     
@@ -39,13 +39,13 @@ La característica de búsqueda de contenido en el centro &amp; de seguridad y c
     
 - El script incluye un tratamiento de errores mínimo. El objetivo principal de la secuencia de comandos es mostrar rápidamente una lista de identificadores de carpetas de buzones o rutas de sitios que se pueden usar en la sintaxis de la consulta de búsqueda de una búsqueda de contenido para realizar una colección de destino.
     
-- La secuencia de comandos de ejemplo proporcionada en este tema no es compatible con ningún servicio o programa de soporte estándar de Microsoft. El script de ejemplo se proporciona tal cual sin garantías de ningún tipo. Microsoft renuncia a todas las garantías implícitas, incluidas, entre otras, todas las garantías implícitas de comerciabilidad o de idoneidad para un propósito en particular. Todo el riesgo derivado del uso o el rendimiento de la secuencia de comandos de muestra y la documentación se conservan con usted. En ningún caso Microsoft, sus autores o cualquier otro implicado en la creación, la producción o la entrega de las secuencias de comandos serán responsables de cualquier daño (incluidos, entre otros, los daños causados por la pérdida de beneficios de negocio, la interrupción del negocio, la pérdida de información de la empresa u otra pérdida pecuniaria que surja del uso o la incapacidad para usar la documentación o los scripts de ejemplo, incluso si se ha notificado a Microsoft de la posibilidad de dichos daños.
+- La secuencia de comandos de ejemplo proporcionada en este tema no es compatible con ningún servicio o programa de soporte estándar de Microsoft. El script de ejemplo se proporciona tal cual sin garantías de ningún tipo. Además, Microsoft no se hace responsable de cualquier garantía implícita, incluyendo, de manera enunciativa pero no limitativa, cualquier garantía implícita de comercialización o de calidad para cualquier propósito. Todo el riesgo derivado del uso o el rendimiento de la secuencia de comandos de muestra y la documentación se conservan con usted. En ningún caso Microsoft, sus autores o cualquier persona involucrada en su creación, producción o entrega de los scripts será responsable de cualquier daño (incluidos, de manera enunciativa pero no limitativa, daños por pérdidas de beneficios de una empresa, interrupción de la actividad de una empresa, pérdidas de información de una empresa, o cualquier otro daño pecuniario), incluso si Microsoft supiera de la posibilidad de tales daños.
   
 ## <a name="step-1-run-the-script-to-get-a-list-of-folders-for-a-mailbox-or-site"></a>Paso 1: ejecutar el script para obtener una lista de las carpetas de un buzón de correo o sitio
 
 El script que se ejecuta en el primer paso devolverá una lista de carpetas de buzón de correo o carpetas de SharePoint o de OneDrive para la empresa, así como el identificador de carpeta o la ruta de acceso correspondientes para cada carpeta. Al ejecutar este script, se le pedirá la siguiente información.
   
-- **Dirección de correo electrónico o dirección URL del sitio** Escriba una dirección de correo electrónico del custodio para obtener una lista de los identificadores de carpetas y carpetas de buzones de Exchange. O bien, escriba la dirección URL de un sitio de SharePoint o un sitio de OneDrive para la empresa para devolver una lista de rutas de la ubicación del sitio especificado. A continuación se muestran algunos ejemplos: 
+- **Dirección de correo electrónico o dirección URL del sitio** Escriba una dirección de correo electrónico del custodio para obtener una lista de los identificadores de carpetas y carpetas de buzones de Exchange. O bien, escriba la dirección URL de un sitio de SharePoint o un sitio de OneDrive para la empresa para devolver una lista de rutas de la ubicación del sitio especificado. Estos son algunos ejemplos: 
     
   - **Exchange** -stacig@contoso.onmicrosoft.com 
     
@@ -188,6 +188,9 @@ Para mostrar una lista de las carpetas del buzón o los nombres de documentlink 
 ### <a name="script-output-for-mailbox-folders"></a>Salida de script para carpetas de buzón
 
 Si está obteniendo identificadores de carpeta de buzón de correo, el script se conecta a Exchange online mediante PowerShell remoto, ejecuta el cmdlet **Get-MailboxFolderStatisics** y, a continuación, muestra la lista de las carpetas del buzón especificado. Para cada carpeta del buzón, el script muestra el nombre de la carpeta en la columna **folderPath** y el identificador de la carpeta en la columna **FolderQuery** . Además, el script agrega el prefijo de **folderId** (que es el nombre de la propiedad Mailbox) al identificador de la carpeta. Dado que la propiedad **folderId** es una propiedad que se puede buscar, `folderid:<folderid>` usará en una consulta de búsqueda en el paso 2 para buscar en esa carpeta. 
+
+> [!IMPORTANT]
+> El script de este artículo incluye la lógica de codificación que convierte los valores de identificador de carpeta de 64 caracteres devueltos por **Get-MailboxFolderStatistics** en el mismo formato de 48 caracteres que se indexa para la búsqueda. Si solo ejecuta el cmdlet **Get-MailboxFolderStatistics** en PowerShell para obtener un identificador de carpeta (en lugar de ejecutar el script de este artículo), se producirá un error en una consulta de búsqueda que use ese valor de ID de carpeta. Tiene que ejecutar el script para obtener los identificadores de carpeta con formato correcto que se pueden usar en una búsqueda de contenido.
   
 A continuación, se muestra un ejemplo del resultado devuelto por el script para las carpetas de buzón de correo.
   
