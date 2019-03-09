@@ -1,5 +1,5 @@
 ---
-title: Analizar datos de casos con eDiscovery avanzado de Office 365
+title: Analizar datos de casos con Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -13,14 +13,15 @@ search.appverid:
 - MOE150
 ms.assetid: dce7a700-3b6e-435f-88ba-e4b82c0f2b26
 description: 'Obtenga información general sobre el proceso de análisis, que le permite establecer parámetros, opciones de ejecución y ver resultados, en la exhibición avanzada de documentos electrónicos de Office 365. '
-ms.openlocfilehash: a3e9bc84c09b40b9751dd985faaf0931c77fa37b
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 0329e64bc507c0ddc3158ac6ae189730b506bb49
+ms.sourcegitcommit: 07a4f9a8888756e05cd67ca24f6121b2a4e9f464
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30217470"
+ms.lasthandoff: 03/09/2019
+ms.locfileid: "30512645"
 ---
-# <a name="analyze-case-data-with-office-365-advanced-ediscovery"></a>Analizar datos de casos con eDiscovery avanzado de Office 365
+# <a name="analyze-case-data-with-office-365-advanced-ediscovery"></a>Analizar datos de casos con Office 365 Advanced eDiscovery
 
 > [!NOTE]
 > Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 

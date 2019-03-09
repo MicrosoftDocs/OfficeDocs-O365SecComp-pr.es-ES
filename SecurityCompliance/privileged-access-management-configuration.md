@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: Use este tema para obtener más información sobre cómo configurar la administración del acceso con privilegios en Office 365
-ms.openlocfilehash: af8058ff852bbf290084e42d1f4c72d6fcee0e27
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 3d186998006dd3cc59877b1571f50314af5bbce8
+ms.sourcegitcommit: 5eb664b6ecef94aef4018a75684ee4ae66c486bb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30221090"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30492829"
 ---
 # <a name="configuring-privileged-access-management-in-office-365"></a>Configuración de la administración del acceso con privilegios en Office 365
 
@@ -120,7 +120,7 @@ Puede crear y configurar hasta 30 directivas de acceso privilegiadas para su org
     
     **Tipo de directiva**: tarea, rol o grupo de roles
 
-    **Ámbito de directiva**: Exchange u Office 365
+    **Ámbito de directiva**: Exchange
 
     **Nombre de directiva**: Seleccione una de las directivas disponibles
 
@@ -258,7 +258,7 @@ Puede eliminar una directiva de acceso privilegiado si ya no la necesita en su o
 
 5. Seleccione la Directiva que desea eliminar y, a continuación, seleccione **quitar Directiva**.
 
-6. Seleccione **cerrar**.
+6. Seleccione **Cerrar**.
 
 ### <a name="using-exchange-management-powershell"></a>Uso de Exchange Management PowerShell
 

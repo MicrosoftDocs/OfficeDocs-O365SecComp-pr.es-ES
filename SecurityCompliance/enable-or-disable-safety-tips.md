@@ -1,24 +1,9 @@
 ---
-title: Habilitar o deshabilitar las sugerencias de seguridad en Office 365
-ms.author: krowley
-author: kccross
-manager: laurawi
-ms.date: 12/05/2018
-ms.audience: Admin
-ms.topic: article
-ms.service: O365-seccomp
-localization_priority: Normal
-search.appverid:
-- MET150
-ms.assetid: f09668bd-fe1a-4c01-89e3-e88c370e66c7
-description: Indica a Office 365 y a los administradores de EOP cómo habilitar y deshabilitar las sugerencias de seguridad en los mensajes de correo electrónico.
-ms.openlocfilehash: f4e85b45c1483111d9edeb39d00d3f2cbafbf3ab
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
-ms.translationtype: MT
-ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215560"
+title: "habilitar o deshabilitar las sugerencias de seguridad en Office 365" MS. Author: krowley Author: kccross Manager: laurawi ms. Date: 12/05/2018 ms. Audience: admin ms. topic: article ms. Service: o365-Administration localization_priority: búsqueda normal. appverid: 
+- MET150 ms. AssetID: f09668bd-fe1a-4c01-89e3-e88c370e66c7 ms. Collection:
+    - M365-Security-Compliance Description: "indica a Office 365 y a los administradores de EOP cómo habilitar y deshabilitar las sugerencias de seguridad en los mensajes de correo electrónico".
 ---
+
 # <a name="enable-or-disable-safety-tips-in-office-365"></a>Habilitar o deshabilitar las sugerencias de seguridad en Office 365
 
 Exchange Online Protection (EOP) agrega o marca una sugerencia de seguridad a los mensajes de correo electrónico que entrega. Estas sugerencias de seguridad proporcionan a los destinatarios una forma rápida y visual de determinar si un mensaje proviene de un remitente protegido seguro, si el mensaje ha sido marcado como correo no deseado por Office 365, si el mensaje contiene algo sospechoso, como una estafa de suplantación de identidad (phishing), o si las imágenes externas tienen se ha bloqueado. Office 365 y EOP: los administradores independientes pueden editar una configuración de directiva de correo no deseado para habilitar o deshabilitar las sugerencias de seguridad para que no se muestren en el correo electrónico en Outlook y en otros clientes de correo electrónico de escritorio. 
@@ -67,7 +52,7 @@ En este tema:
 
 Los administradores pueden usar Exchange Online PowerShell para habilitar o deshabilitar las sugerencias de seguridad. Use el cmdlet Set-HostedContentFilterPolicy para habilitar o deshabilitar las sugerencias de seguridad en una directiva de filtro de correo no deseado.
   
-1. Conéctese a Exchange Online PowerShell. Para obtener más información, vea [conectarse a Exchange Online PowerShell](http://go.microsoft.com/fwlink/p/?LinkId=396554).
+1. Conexión a PowerShell de Exchange Online. Para obtener más información, vea [conectarse a Exchange Online PowerShell](http://go.microsoft.com/fwlink/p/?LinkId=396554).
     
 2. Ejecute el cmdlet Set-HostedContentFilterPolicy para habilitar o deshabilitar las sugerencias de seguridad:
     

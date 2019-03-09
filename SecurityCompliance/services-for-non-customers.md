@@ -1,7 +1,7 @@
 ---
 title: Servicios de envío de correo de no clientes a Office 365
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 5/2/2016
 ms.audience: ITPro
@@ -12,13 +12,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 19fd3e0f-8dbf-4049-a810-2c8ee6cefd48
+ms.collection:
+- M365-security-compliance
 description: Para ayudar a mantener la confianza del usuario en el uso del correo electrónico, Microsoft ha puesto en marcha distintas políticas y tecnologías para ayudar a proteger a nuestros usuarios.
-ms.openlocfilehash: fca916f57ad1b7dc6ebcd13fabbea2f0971f5a00
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.openlocfilehash: 868f5491ae9433e115090567b40abcd39ef2ebf8
+ms.sourcegitcommit: 5eb664b6ecef94aef4018a75684ee4ae66c486bb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23002710"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30492799"
 ---
 # <a name="services-for-non-customers-sending-mail-to-office-365"></a>Servicios de envío de correo de no clientes a Office 365
   
@@ -61,6 +63,6 @@ Es un portal sin intervención del administrador que puede usar para quitarse de
 ## <a name="abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online"></a>Notificación de abusos y spam relativos a correos electrónicos no deseados procedentes de Exchange Online
 <a name="ReportOurJunk"> </a>
 
-En ocasiones, Office 365 se usa por terceros para enviar correo electrónico no deseado, en infracción de las condiciones de uso y la directiva. Si se recibe cualquier correo electrónico no deseado de Office 365, puede informar estos mensajes a [junk@office365.microsoft.com](mailto:junk@office365.microsoft.com). Adjunte los mensajes afectados, incluidos el encabezado del mensaje completo, en formato RFC 5322 o ARF. Outlook en los usuarios de web puede utilizar las herramientas integradas para el correo electrónico no deseado de informe. Para obtener información, vea [las estafas de suplantación de identidad en Outlook en la web y de correo electrónico no deseado de informe ](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md).
+A veces, algunos terceros usan Office 365 para enviar correo no deseado, lo que incumple nuestra política y condiciones de uso. Si recibe un correo electrónico no deseado de Office 365, puede informar de ello a través de [junk@office365.microsoft.com](mailto:junk@office365.microsoft.com). Adjunte los mensajes ofensivos, incluido el encabezado del mensaje completo, en formato RFC 5322 o ARF. Los usuarios de Outlook en la web pueden usar herramientas integradas para informar sobre correo electrónico no deseado. Para obtener más información, consulte [informar sobre correo no deseado y estafas de suplantación de identidad en Outlook en la web ](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md).
   
 

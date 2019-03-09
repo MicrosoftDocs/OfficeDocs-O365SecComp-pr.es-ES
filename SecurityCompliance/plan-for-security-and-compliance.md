@@ -13,12 +13,13 @@ search.appverid:
 - MET150
 ms.assetid: dc4f704c-6fcc-4cab-9a02-95a824e4fb57
 description: Página de aterrizaje para planear la seguridad y el cumplimiento
-ms.openlocfilehash: 71d814fbbc946fddbc57d4528f43b83589454e31
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.collection: M365-security-compliance
+ms.openlocfilehash: 4c653e20fbab8f93897b00589a00cb53b1e36963
+ms.sourcegitcommit: 07a4f9a8888756e05cd67ca24f6121b2a4e9f464
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218470"
+ms.lasthandoff: 03/09/2019
+ms.locfileid: "30512655"
 ---
 # <a name="plan-for-security-amp-compliance-in-office-365"></a>Planeación del &amp; cumplimiento de la seguridad en Office 365
 
@@ -38,7 +39,7 @@ Una vez configurada la suscripción de Office 365, tome nota del resultado inici
     
 ## <a name="step-3-plan-access-protection-for-identity-and-devices"></a>Paso 3: planear la protección de acceso para identidades y dispositivos
 
-Proteger el acceso a los datos y servicios de Office 365 es crucial para defenderse de los ciberataques y protegerse frente a la pérdida de datos.
+Proteger el acceso a los datos y servicios de Office 365 es crucial para defenderse contra ataques cibernéticos y protegerse contra la pérdida de datos.
   
 - [Proteger el acceso a datos y servicios de Office 365](protect-access-to-data-and-services.md)
     
@@ -58,7 +59,7 @@ El centro &amp; de seguridad y cumplimiento ofrece una vista única de los contr
   
 - [Vaya al centro de seguridad &amp; y cumplimiento de Office 365](go-to-the-securitycompliance-center.md)
     
-- [Permisos en el centro de seguridad &amp; y cumplimiento de Office 365](permissions-in-the-security-and-compliance-center.md)
+- [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
     
 - [Dar a los usuarios acceso al centro de &amp; seguridad y cumplimiento de Office 365](grant-access-to-the-security-and-compliance-center.md)
     
@@ -76,7 +77,7 @@ Configurar las opciones de seguridad y cumplimiento en estos centros de administ
   
 |**Suscripción**|**Dirección URL de administración**|**Paneles y centros de administración**|
 |:-----|:-----|:-----|
-|Office 365  <br/> |`https://portal.office.com`  <br/> | Centro de administración de Office 365  <br/>  Centro &amp; de seguridad y cumplimiento  <br/>  Centro de administración de Exchange  <br/>  Centro de administración de SharePoint y centro de administración de OneDrive para la empresa  <br/> |
+|Office 365  <br/> |`https://portal.office.com`  <br/> | Centro de administración de Office 365  <br/>  Security &amp; Compliance Center  <br/>  Centro de administración de Exchange  <br/>  Centro de administración de SharePoint y centro de administración de OneDrive para la empresa  <br/> |
 |Enterprise Mobility + Security  <br/> |`https://portal.azure.com`  <br/> | Azure Active Directory  <br/>  Administración de aplicaciones móviles de Microsoft  <br/>  Microsoft Intune  <br/> |
 |Enterprise Mobility + Security  <br/> |`https://portal.cloudappsecurity.com`  <br/> | Cloud App Security  <br/> |
    

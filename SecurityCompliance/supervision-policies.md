@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: Descripción de las directivas de supervisión en Office 365
-ms.openlocfilehash: f4eae6aebde130bdacdc45b419becc32953bffd2
-ms.sourcegitcommit: 5d6be2b208dbe28d5d5da057c60cf97729799c1b
+ms.openlocfilehash: 99957accb6a1f52f0e0a895fc96ef2b6ac0ac757
+ms.sourcegitcommit: 5eb664b6ecef94aef4018a75684ee4ae66c486bb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "30465477"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30492859"
 ---
 # <a name="supervision-policies-in-office-365"></a>Directivas de supervisión en Office 365
 
@@ -57,7 +57,8 @@ Creará directivas de supervisión en el centro de seguridad & cumplimiento. Est
 Antes de empezar a usar la supervisión, deberá determinar quién tendrá las comunicaciones revisadas. En la Directiva, usará direcciones de correo electrónico de usuario para identificar personas o grupos de personas para supervisar. Algunos ejemplos de estos grupos son los grupos de Office 365, las listas de distribución basadas en Exchange y los canales de Microsoft Teams. También puede excluir de la supervisión a determinados usuarios o grupos que están incluidos en un grupo supervisado o en una lista de grupos.
 
 > [!IMPORTANT]
-> Todos los usuarios supervisados por directivas de supervisión deben tener una licencia de Office 365 Enterprise E3 con el complemento de cumplimiento avanzado o incluirse en una suscripción a Office 365 Enterprise E5. Si no tiene un plan existente de Enterprise E5 y desea intentar la supervisión, puede [registrarse para obtener una versión de prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
+> Los usuarios supervisados por directivas de supervisión deben tener una licencia de cumplimiento de Microsoft 365 E5, una licencia de Office 365 Enterprise E3 con el complemento de cumplimiento avanzado o incluirse en una suscripción a Office 365 Enterprise E5.
+Si no tiene un plan existente de Enterprise E5 y desea intentar la supervisión, puede [registrarse para obtener una versión de prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
 
 ### <a name="reviewers"></a>Reviewers
 
@@ -153,9 +154,9 @@ La página de **Inicio** del panel incluye varias secciones para ayudarle a toma
 - Ver una lista de los revisores y revisar los equipos para la Directiva seleccionada
 - Consulte Qué plataformas de comunicación tienen contenido bajo supervisión para la Directiva.
 
-#### <a name="supervise-tab"></a>Pestaña de supervisión
+#### <a name="review-tab"></a>Pestaña revisión
 
-La pestaña de **supervisión** es donde los revisores pueden actuar y resolver los elementos identificados por la Directiva seleccionada. Aquí puede:
+La pestaña **revisar** es donde los revisores pueden realizar acciones y resolver los elementos identificados por la Directiva seleccionada. Aquí puede:
 
 - Filtrar por elementos pendientes, compatibles, no compatibles y cuestionables
 - Etiquete un solo elemento como compatible, no compatible o cuestionable. También puede grabar un comentario con el elemento para ayudar a aclarar la acción de etiquetado tomada.
