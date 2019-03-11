@@ -9,14 +9,16 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: Los administradores pueden usar el seguimiento de mensajes en el centro de seguridad & cumplimiento para averiguar qué sucedió con los mensajes.
-ms.openlocfilehash: 9c427328972fb9c8d64a2847368f5be022974744
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: 73d4aa6f9a12b8e1bf955dad09e4c4ca7290dae8
+ms.sourcegitcommit: 74ad22a5c6c3c9d9324f0f97070909e323a4e9cf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455352"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "30524094"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Seguimiento de mensajes en el centro de seguridad & cumplimiento
+
+## <a name="overview"></a>Información general
 
 Seguimiento de mensajes en el centro de seguridad de & cumplimiento sigue los mensajes de correo electrónico que viajan a través de la organización de Exchange Online. Puede determinar si el servicio ha recibido, rechazado, aplazado o entregado un mensaje. También muestra las acciones que se tomaron en el mensaje antes de que alcanzara su estado final.
 
@@ -54,7 +56,8 @@ Los valores predeterminados son **todos** los remitentes y **todos los destinata
 
 - **A estas personas**: haga clic en este campo para seleccionar uno o más destinatarios de la organización.
 
-También puede escribir las direcciones de correo electrónico de remitentes y destinatarios externos. Se admiten caracteres comodín`*@contoso.com` ( `scot?@contoso.com`o), pero no se pueden usar varias entradas comodín en el mismo campo al mismo tiempo.
+> [!NOTE]También puede escribir las direcciones de correo electrónico de remitentes y destinatarios externos. Se admiten caracteres comodín`*@contoso.com` ( `scot?@contoso.com`o), pero no se pueden usar varias entradas comodín en el mismo campo al mismo tiempo.
+> [!NOTE]Puede pegar varias listas de remitentes o destinatarios separados por punto y coma`;`(). Espacios (`\s`), retorno de carro`\r`() o líneas siguientes`\n`() se permiten.
 
 ### <a name="time-range"></a>Intervalo de tiempo
 

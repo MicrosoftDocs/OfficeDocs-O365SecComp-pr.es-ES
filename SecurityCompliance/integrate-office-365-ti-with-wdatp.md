@@ -1,5 +1,5 @@
 ---
-title: Integrar la inteligencia de amenazas de Office 365 con la protección contra amenazas avanzada de Windows Defender
+title: Integración de la protección contra amenazas avanzada de Office 365 con la protección contra amenazas avanzada de Windows Defender
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -15,16 +15,16 @@ ms.assetid: 414fa693-d7b7-4a1d-a387-ebc3b6a52889
 ms.collection:
 - M365-security-compliance
 description: Integrar la protección contra amenazas avanzada de Office 365 con la protección contra amenazas avanzada de Windows Defender para ver información más detallada acerca de la administración de amenazas.
-ms.openlocfilehash: 892d04152d6029c48a52d37c6235d45a8ba67b81
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: bbbb42c9d0f37ab33323b2fa1dd071bd5ee16829
+ms.sourcegitcommit: 74ad22a5c6c3c9d9324f0f97070909e323a4e9cf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30222819"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "30523984"
 ---
-# <a name="integrate-office-365-threat-intelligence-with-windows-defender-advanced-threat-protection"></a>Integrar la inteligencia de amenazas de Office 365 con la protección contra amenazas avanzada de Windows Defender
+# <a name="integrate-office-365-advanced-threat-protection-with-windows-defender-advanced-threat-protection"></a>Integración de la protección contra amenazas avanzada de Office 365 con la protección contra amenazas avanzada de Windows Defender
 
-Si forma parte del equipo de seguridad de su organización, puede integrar las características de protección contra amenazas avanzada de Office 365 y de inteligencia sobre amenazas con la protección contra amenazas avanzada de Windows Defender. Esto puede ayudarle a comprender rápidamente si los equipos de los usuarios están expuestos a riesgos cuando esté investigando amenazas en Office 365. Por ejemplo, una vez habilitada la integración, podrá ver una lista de las máquinas que usan los destinatarios de un mensaje de correo electrónico detectado, así como el número de alertas recientes que tienen esos equipos en la protección contra amenazas avanzada de Windows Defender.
+Si forma parte del equipo de seguridad de su organización, puede integrar la protección contra amenazas avanzada de Office 365 y las características de investigación y respuesta relacionadas con la protección contra amenazas avanzada de Windows Defender. Esto puede ayudarle a comprender rápidamente si los equipos de los usuarios están expuestos a riesgos cuando esté investigando amenazas en Office 365. Por ejemplo, una vez habilitada la integración, podrá ver una lista de las máquinas que usan los destinatarios de un mensaje de correo electrónico detectado, así como el número de alertas recientes que tienen esos equipos en la protección contra amenazas avanzada de Windows Defender.
   
 La siguiente imagen muestra la pestaña **dispositivos** que verá cuando tenga habilitada la integración de la protección contra amenazas avanzada de Windows Defender: 
   
@@ -34,15 +34,15 @@ En este ejemplo, puede ver que los destinatarios del mensaje de correo electrón
   
 ## <a name="requirements"></a>Requisitos
 
-- Su organización debe tener Office 365 Threat Intelligence y ATP de Windows Defender.
+- Su organización debe tener Office 365 Advanced Threat Protection Plan 2 (u Office 365 E5) y ATP de Windows Defender.
     
 - Debe ser administrador global de Office 365 o tener un rol de administrador de seguridad (como administrador de seguridad) asignado en [el &amp; centro de seguridad y cumplimiento](https://protection.office.com). (Consulte [permisos en el centro de seguridad &amp; y cumplimiento de Office 365](permissions-in-the-security-and-compliance-center.md))
     
-- Debe tener acceso a inteligencia sobre amenazas de Office 365 y al portal de protección contra amenazas avanzada de Windows Defender.
+- Debe tener acceso al explorador de amenazas de Office 365 en el centro de seguridad & cumplimiento y el portal de protección contra amenazas avanzada de Windows Defender.
     
-## <a name="to-integrate-office-365-threat-intelligence-with-windows-defender-atp"></a>Para integrar la inteligencia sobre amenazas de Office 365 con ATP de Windows Defender
+## <a name="to-integrate-office-365-advanced-threat-protection-with-windows-defender-atp"></a>Para integrar la protección contra amenazas avanzada de Office 365 con ATP de Windows Defender
 
-Integración de Office 365 Threat Intelligence con la protección contra amenazas avanzada de Windows Defender se configura mediante el centro de cumplimiento de Office 365 Security & y el portal de protección contra amenazas avanzada de Windows Defender.
+Integración de Office 365 avanzada protección contra amenazas con la protección contra amenazas avanzada de Windows Defender se configura mediante el centro de seguridad de Office 365 & cumplimiento y el portal de protección contra amenazas avanzada de Windows Defender.
   
 1. Como administrador global de Office 365 o administrador de seguridad, vaya a [https://protection.office.com](https://protection.office.com) e inicie sesión con su cuenta profesional o educativa para Office 365. 
     
@@ -57,7 +57,7 @@ Integración de Office 365 Threat Intelligence con la protección contra amenaza
   
 ## <a name="related-topics"></a>Temas relacionados
 
-[Inteligencia sobre amenazas de Office 365](office-365-ti.md)
+[Respuesta y investigación de amenazas de Office 365](office-365-ti.md)
   
 [Protección contra amenazas avanzada de Office 365](office-365-atp.md)
   

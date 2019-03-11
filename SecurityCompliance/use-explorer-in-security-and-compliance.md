@@ -1,9 +1,9 @@
 ---
-title: Usar el explorador en el &amp; centro de seguridad y cumplimiento
+title: Usar el explorador de amenazas en &amp; el centro de seguridad y cumplimiento
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 02/13/2019
+ms.date: 03/10/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,27 +15,27 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre el explorador (también denominado explorador de amenazas) &amp; en el centro de seguridad y cumplimiento.
-ms.openlocfilehash: 4a28626d0e643d7a7b96a34656e7678c71a86c66
-ms.sourcegitcommit: 1c73c2f83703af0a30a5b0633db00d8e0e6b39b5
+ms.openlocfilehash: 626d827712760aa0b7b6faf75d94f525cfe38dc2
+ms.sourcegitcommit: 74ad22a5c6c3c9d9324f0f97070909e323a4e9cf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "30241972"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "30524014"
 ---
-# <a name="use-explorer-in-the-security-amp-compliance-center"></a>Usar el explorador en el &amp; centro de seguridad y cumplimiento
+# <a name="use-threat-explorer-in-the-security-amp-compliance-center"></a>Usar el explorador de amenazas en &amp; el centro de seguridad y cumplimiento
 
-Si su organización tiene [Office 365 Threat Intelligence](office-365-ti.md)y dispone de los permisos necesarios, puede usar el explorador para identificar y analizar las amenazas. Por ejemplo, puede identificar y eliminar correo electrónico malintencionado que se entregó, o ver malware detectado por las características de seguridad de Office 365. Explorer (también conocido como explorador de amenazas) es un eficaz informe en tiempo real en el centro de &amp; seguridad y cumplimiento.
+Si su organización tiene [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md)y dispone de los permisos necesarios, puede usar el explorador de amenazas para identificar y analizar las amenazas. Por ejemplo, puede identificar y eliminar correo electrónico malintencionado que se entregó, o ver malware detectado por las características de seguridad de Office 365. El explorador de amenazas (también conocido como explorador) es una herramienta eficaz casi en tiempo real para ayudar a los equipos de operaciones de seguridad a investigar y &amp; responder a amenazas en el centro de seguridad y cumplimiento.
   
 ![Ir al explorador de \> administración de amenazas](media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
   
 Para usar el explorador, en el &amp; centro de seguridad y cumplimiento, vaya a **Threat Management** \> **Explorer**.
 
 > [!IMPORTANT]
-> A partir de febrero de 2019 y la implementación en los próximos meses, Office 365 Threat Intelligence se convierte en Office 365 Advanced Threat Protection Plan 2, con capacidades adicionales de protección contra amenazas. Para obtener más información, consulte [planes y precios](https://products.office.com/exchange/advance-threat-protection) de la protección contra amenazas avanzada de Office 365 y la [Descripción del servicio de protección contra amenazas avanzada de Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+> Office 365 Threat Intelligence ahora forma parte de Office 365 plan de protección contra amenazas avanzada 2, con capacidades de protección contra amenazas adicionales. Para obtener más información, consulte [planes y precios](https://products.office.com/exchange/advance-threat-protection) de la protección contra amenazas avanzada de Office 365 y la [Descripción del servicio de protección contra amenazas avanzada de Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
       
 ## <a name="explorer-overview"></a>Información general del explorador
 
-Explorer muestra información sobre malware sospechoso en el correo electrónico y los archivos de Office 365, así como otras amenazas de seguridad y riesgos para la organización. La primera vez que se abre el explorador, la vista predeterminada muestra las detecciones de malware desde el antivirus durante los últimos 7 días. El explorador también puede mostrar características de protección de seguridad en Office 365, incluidos [vínculos seguros](atp-safe-links.md) y [datos adjuntos seguros](atp-safe-attachments.md) , y se puede modificar para mostrar los datos de los últimos 30 días.
+El explorador muestra información sobre el malware y el phish sospechoso en el correo electrónico y los archivos de Office 365, así como otras amenazas de seguridad y riesgos para la organización. La primera vez que se abre el explorador, la vista predeterminada muestra las detecciones de malware de correo electrónico de los últimos 7 días. El explorador también puede mostrar características de protección de seguridad en Office 365, incluidos [vínculos seguros](atp-safe-links.md) y [datos adjuntos seguros](atp-safe-attachments.md) , y se puede modificar para mostrar los datos de los últimos 30 días. Si tiene un subcription de prueba para Office 365 Advanced Threat Protection Plan 2 u Office 365 E5, solo verá las detecciones y los datos de correo electrónico de los últimos 7 días.
   
 ![El explorador muestra información sobre el malware y los usuarios de destino](media/8e8c1582-d6f4-4521-8591-686a1cb01f7e.png)
   
@@ -43,7 +43,7 @@ Use el menú Ver para cambiar la información que se muestra.
   
 ![Menú Ver del explorador](media/2bb34f58-555f-4967-ba55-740334ef1f8e.png)
   
-El explorador tiene varias capacidades de filtrado y consulta que le permiten profundizar en los detalles, como los usuarios de destino más importantes, las familias de malware más importantes y mucho más. Cada tipo de informe ofrece varias formas de ver y explorar los datos.
+El explorador tiene varias capacidades de filtrado y consulta que le permiten profundizar en los detalles, como los usuarios de destino más importantes, las familias de malware principales, la tecnología de detección y mucho más. Cada tipo de informe ofrece varias formas de ver y explorar los datos.
 
 > [!IMPORTANT]
 > No use caracteres comodín, como un asterisco (*) o un signo de interrogación (?), con el explorador. Al buscar mensajes de correo electrónico en el campo asunto, el explorador realizará una coincidencia parcial y obtendrá resultados similares a una búsqueda con caracteres comodín.
@@ -93,7 +93,7 @@ Debajo del gráfico, vea más detalles sobre los mensajes de correo electrónico
 
 ## <a name="content--malware"></a>Malware \> de contenido
 
-Esta vista muestra los archivos que se identificaron como malintencionados en SharePoint Online, OneDrive para la empresa y Microsoft Teams.
+Esta vista muestra los archivos que se identificaron como malintencionados con la protección contra amenazas avanzada de Office 365 en SharePoint Online, OneDrive para la empresa y Microsoft Teams.
 
 Ver información por familia de malware, tecnología de detección (cómo se detectó el malware) y carga de trabajo (OneDrive, SharePoint o Teams). 
 
@@ -103,7 +103,7 @@ Debajo del gráfico, vea más detalles sobre archivos específicos, como nombre 
   
 ## <a name="new-click-to-filter-capabilities"></a>(Nueva) Capacidades de hacer clic y filtrar
 
-Nuevo en el explorador es la capacidad de hacer clic para filtrar. Desde el final del 2018 de mayo, cuando hace clic en un elemento de la leyenda, ese elemento se convierte en un filtro para el informe. Por ejemplo, supongamos que estamos viendo la vista de malware en el explorador:
+Nuevo en el explorador es la capacidad de hacer clic para filtrar. Cuando se hace clic en un elemento de la leyenda, ese elemento se convierte en un filtro para el informe. Por ejemplo, supongamos que estamos viendo la vista de malware en el explorador:
   
 ![Ir al explorador de \> administración de amenazas](media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
   
@@ -123,7 +123,7 @@ La capacidad de filtrar en un clic y navegar a detalles específicos puede ahorr
   
 ## <a name="how-do-i-get-explorer"></a>¿Cómo se obtiene el explorador?
 
-Explorer se incluye en la [inteligencia sobre amenazas de Office 365](office-365-ti.md). 
+Explorer se incluye en el [plan 2 de la protección contra amenazas avanzada de Office 365](office-365-ti.md). 
 
 Debe tener los permisos adecuados, como los que se han concedido a un administrador de seguridad o un lector de seguridad, para poder ver y usar el explorador. Para obtener más información, consulte perMissions [in the &amp; Office 365 Security Compliance Center](permissions-in-the-security-and-compliance-center.md).
   
@@ -131,7 +131,7 @@ Debe tener los permisos adecuados, como los que se han concedido a un administra
 
 [Informes y opiniones en el centro de seguridad &amp; y cumplimiento de Office 365](reports-and-insights-in-security-and-compliance.md)
   
-[Buscar e investigar el correo electrónico malintencionado que se entregó (inteligencia de amenazas de Office 365)](investigate-malicious-email-that-was-delivered.md)
+[Buscar e investigar correo electrónico malintencionado que se entregó (Office 365 Threat Invesitgation and Response)](investigate-malicious-email-that-was-delivered.md)
   
 [Protección contra correo electrónico no deseado y antimalware en Office 365](anti-spam-and-anti-malware-protection.md)
   

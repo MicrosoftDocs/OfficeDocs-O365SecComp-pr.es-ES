@@ -14,19 +14,19 @@ ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre los rastreadores de amenazas, incluidos los nuevos comentarios destacados, para ayudar a su organización a estar al tanto de los problemas de seguridad.
-ms.openlocfilehash: 072d64a056d88000ad615a896328b0144aef3d0f
-ms.sourcegitcommit: 1c73c2f83703af0a30a5b0633db00d8e0e6b39b5
+ms.openlocfilehash: 4cf3e13b7379e26deec90bbae2c4f9cf42fa91b7
+ms.sourcegitcommit: 74ad22a5c6c3c9d9324f0f97070909e323a4e9cf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "30241992"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "30524054"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>Rastreadores de amenazas: nuevos y destacables
 
-[Office 365 Threat Intelligence](office-365-ti.md) permite que el equipo de seguridad de su organización detecte y actúe en contra de las amenazas de Cybersecurity. A partir del 2018 de marzo y durante las próximas semanas, Office 365 Threat Intelligence incluirá nuevas características del rastreador de amenazas, incluidos los rastreadores dignos de ser interesantes. Lea este artículo para obtener información general sobre estas nuevas características y los pasos siguientes. 
+Las capacidades de [investigación y respuesta de amenazas de Office 365](office-365-ti.md) permiten que el equipo de seguridad de su organización Descubra y actúe en contra de las amenazas de Cybersecurity. Las capacidades de investigación y respuesta de amenazas de Office 365 incluyen características de seguimiento de amenazas, incluidos los seguimientos dignos de ser interesantes. Lea este artículo para obtener información general sobre estas nuevas características y los pasos siguientes. 
 
 > [!IMPORTANT]
-> A partir de febrero de 2019 y la implementación en los próximos meses, Office 365 Threat Intelligence se convierte en Office 365 Advanced Threat Protection Plan 2, con capacidades adicionales de protección contra amenazas. Para obtener más información, consulte [planes y precios](https://products.office.com/exchange/advance-threat-protection) de la protección contra amenazas avanzada de Office 365 y la [Descripción del servicio de protección contra amenazas avanzada de Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+> Office 365 Threat Intelligence ahora forma parte de Office 365 plan de protección contra amenazas avanzada 2, con capacidades de protección contra amenazas adicionales. Para obtener más información, consulte [planes y precios](https://products.office.com/exchange/advance-threat-protection) de la protección contra amenazas avanzada de Office 365 y la [Descripción del servicio de protección contra amenazas avanzada de Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
   
 ## <a name="what-are-threat-trackers"></a>¿Qué son los rastreadores de amenazas?
 
@@ -38,9 +38,9 @@ La mayoría de las páginas de Tracker incluyen números de tendencia que se act
   
 ![Ejemplo de información de la campaña en el explorador](media/e426f220-fdcb-4dd9-99a2-db97dbcf71d5.png)
   
-Los rastreadores son solo algunas de las numerosas características de gran calidad que obtiene con la [inteligencia sobre amenazas de Office 365](office-365-ti.md). Cuando estén disponibles, los nuevos rastreadores de amenazas [](threat-trackers.md#notey)incluirán los rastreadores, los rastreadores de [tendencias](threat-trackers.md#trending), [las consultas con seguimiento](threat-trackers.md#trackedq)y [las consultas guardadas](threat-trackers.md#savedq).
+Los rastreadores son sólo algunas de las muchas características de gran calidad que obtiene con [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md). Los rastreadores de [](threat-trackers.md#notey)amenazas incluyen rastreadores dignos dese, rastreadores de [tendencias](threat-trackers.md#trending), [consultas con seguimiento](threat-trackers.md#trackedq)y [consultas guardadas](threat-trackers.md#savedq).
   
-Para ver y usar los rastreadores de amenazas cuando estén disponibles para la organización, vaya al centro de &amp; seguridad y cumplimiento[https://protection.office.com](https://protection.office.com)() y elija Threat **Management** \> **Threat Tracker**.
+Para ver y usar los rastreadores de amenazas en su organización, vaya al centro &amp; de seguridad y[https://protection.office.com](https://protection.office.com)cumplimiento () y elija Threat **Management** \> **Threat Tracker**.
   
 > [!NOTE]
 > Para usar los rastreadores de amenazas, debe ser un administrador global de Office 365, un administrador de seguridad o un lector de seguridad. Consulte [permisos en el centro de seguridad &amp; y cumplimiento de Office 365](permissions-in-the-security-and-compliance-center.md). 
@@ -77,9 +77,9 @@ Siempre puede guardar una consulta de seguimiento de forma notable o cualquiera 
 
 Ya sea que esté revisando el correo electrónico, el contenido o las actividades de Office (próximamente), el explorador y los rastreadores funcionan conjuntamente para ayudarle a investigar y realizar un seguimiento de los riesgos y las amenazas de seguridad. Todos juntos, los rastreadores le proporcionan información para proteger a los usuarios de Office 365 resaltando los problemas nuevos, destacados y de búsqueda frecuente, lo que garantiza que su empresa estará mejor protegida mientras se desplaza a la nube.
   
-Cuando los encargados de las amenazas estén disponibles para usted, pruébelos y recuerde que siempre puede enviarnos sus comentarios sobre esta u otras características de seguridad de Office 365 haciendo clic en el botón **comentarios** en la esquina inferior derecha de la [información general de Office 365 Centro &amp; de seguridad y cumplimiento](https://support.office.com/article/a5f2fd18-b029-4257-b5a8-ae83e7768c85).
+Y recuerde que siempre puede enviarnos sus comentarios sobre esta u otras características de seguridad de Office 365 haciendo clic en el botón **comentarios** en la esquina inferior derecha de la [información general del centro &amp; de seguridad y cumplimiento de Office 365](https://support.office.com/article/a5f2fd18-b029-4257-b5a8-ae83e7768c85).
   
-![Centro de seguridad y cumplimiento de Office 365](media/86c330db-8132-4150-8475-220258fe04fb.png)
+![Office 365 Security &amp; Compliance Center](media/86c330db-8132-4150-8475-220258fe04fb.png)
   
 ## <a name="trackers-and-office-365-advanced-threat-protection"></a>Rastreadores y Office 365 protección contra amenazas avanzada
 
@@ -93,7 +93,7 @@ El filtro de nueva amenaza notable resalta los elementos que se detectaron recie
   
 ## <a name="next-steps"></a>Pasos siguientes
 
-- Si su organización todavía no tiene la inteligencia sobre amenazas de Office 365, consulte [¿Cómo obteneMos office 365 Threat Intelligence?](get-started-with-ti.md).
+- Si su organización no dispone ya de estas capacidades de investigación y respuesta de amenazas de Office 365, consulte [¿Cómo obtenemos las capacidades de investigación de amenazas y respuesta de office 365?](get-started-with-ti.md).
     
 - Asegúrese de que el equipo de seguridad tiene asignados los roles y permisos correctos. Debe ser un administrador global de Office 365 o tener el rol de administrador de seguridad o de búsqueda y dePuración &amp; asignado en el centro de seguridad y cumplimiento. Consulte [permisos en el centro de seguridad &amp; y cumplimiento de Office 365](permissions-in-the-security-and-compliance-center.md).
     

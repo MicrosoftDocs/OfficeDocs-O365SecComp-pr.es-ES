@@ -17,12 +17,12 @@ ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 ms.collection:
 - M365-security-compliance
 description: La depuración automática de cero horas (ZAP) es una característica de protección de correo electrónico que detecta los mensajes con correo no deseado o malware que ya se han entregado a los buzones de los usuarios y, a continuación, inofensivos en el contenido malintencionado. Cómo hace ZAP esto depende del tipo de contenido malintencionado detectado.
-ms.openlocfilehash: 84d9c1dc12c3caf0630d25a3980cdaea1830a4c0
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: b28de1b05843e3f5b0f6e7fc905c96f094c277f9
+ms.sourcegitcommit: 74ad22a5c6c3c9d9324f0f97070909e323a4e9cf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295643"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "30524024"
 ---
 # <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>Purga automática cero horas: protección contra correo no deseado y malware
 
@@ -44,7 +44,7 @@ Office 365 actualiza las firmas de malware y del motor de correo no deseado en t
 
 - En el caso del correo identificado como correo no deseado, ZAP mueve los mensajes no leídos a la carpeta de correo no deseado de los usuarios. 
 
-- En el caso del correo identificado como correo no deseado, ZAP mueve los mensajes a la carpeta de correo no deseado de los usuarios, independientemente de si se ha leído el correo electrónico.
+- En el caso del correo identificado como phish, ZAP mueve los mensajes a la carpeta de correo no deseado de los usuarios, independientemente de si el correo electrónico se ha leído.
 
 - Para el malware recién detectado, ZAP quita los datos adjuntos de los mensajes de correo electrónico, independientemente de si el correo electrónico se ha leído. 
   
@@ -76,7 +76,7 @@ En el siguiente ejemplo, se deshabilita ZAP para una directiva de filtro de cont
   Set-HostedContentFilterPolicy -Identity Test -ZapEnabled $false
 ```
 
-## <a name="faq"></a>Preguntas más frecuentes
+## <a name="faq"></a>Preguntas frecuentes
 
 ### <a name="what-happens-if-a-legitimate-message-is-moved-to-the-junk-mail-folder"></a>¿Qué sucede si un mensaje legítimo se mueve a la carpeta correo no deseado?
   
