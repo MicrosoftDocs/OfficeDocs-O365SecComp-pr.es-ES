@@ -14,12 +14,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: La prevención de pérdida de datos (DLP) en el &amp; centro de seguridad y cumplimiento de Office 365 incluye 80 tipos de información confidencial listos para que pueda usarlos en las directivas de DLP. Este tema enumera todos estos tipos de información confidencial y muestra lo que una directiva DLP busca al detectar cada uno de los tipos.
-ms.openlocfilehash: 55fa8b6855a9a5bf2c84f6555dd8c8227a2ad9cf
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: e9811b285e98a791570dc91e275cb5cead4f8bc9
+ms.sourcegitcommit: 6e8e2b43a4bea31c1e835c5b050824651c6a0094
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455272"
+ms.lasthandoff: 03/11/2019
+ms.locfileid: "30537647"
 ---
 # <a name="what-the-sensitive-information-types-look-for"></a>Qué buscan los tipos de información confidencial
 
@@ -27,7 +27,7 @@ La prevención de pérdida de datos (DLP) en el &amp; centro de seguridad y cump
   
 ## <a name="aba-routing-number"></a>Número de enrutamiento ABA
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 9 dígitos, que pueden tener un patrón con o sin formato
 
@@ -87,7 +87,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
    
 ## <a name="argentina-national-identity-dni-number"></a>Número de identidad nacional (DNI) de Argentina
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Ocho dígitos separados por puntos
 
@@ -136,7 +136,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
    
 ## <a name="australia-bank-account-number"></a>Número de cuenta bancaria de Australia
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 De 6 a 10 dígitos con o sin número de sucursal bancaria de estado
 
@@ -199,7 +199,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
    
 ## <a name="australia-drivers-license-number"></a>Número de licencia de conducción de Australia
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Nueve letras y dígitos
 
@@ -211,12 +211,12 @@ Nueve letras y dígitos:
 - Dos dígitos 
 - Cinco dígitos o letras (no distinguen entre mayúsculas y minúsculas)
 
-OR
+O
 
 - 1 o 2 letras opcionales (no distingue entre mayúsculas y minúsculas)  
 - 4-9 dígitos
 
-OR
+O
 
 - Nueve dígitos o letras (no distingue entre mayúsculas y minúsculas)
 
@@ -350,7 +350,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
    
 ## <a name="australia-medical-account-number"></a>Número de cuenta médica de Australia
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Entre 10 y 11 dígitos
 
@@ -412,7 +412,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
    
 ## <a name="australia-passport-number"></a>Número de pasaporte de Australia
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Una letra seguida de siete dígitos
 
@@ -483,7 +483,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
    
 ## <a name="australia-tax-file-number"></a>Número de archivo de impuestos de Australia
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Entre 8 y 9 dígitos
 
@@ -566,10 +566,479 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 - 7777777777
 - 8888888888
 - 9999999999
-   
+
+## <a name="azure-documentdb-auth-key"></a>Clave de autenticación de Azure DocumentDB
+
+### <a name="format"></a>Formato
+
+La cadena "DocumentDb" seguida de los caracteres y las cadenas que se describen en el patrón siguiente.
+
+### <a name="pattern"></a>Patrón
+
+- La cadena "DocumentDb"
+- Cualquier combinación de entre 3-200 letras minúsculas o mayúsculas, dígitos, símbolos, caracteres especiales o espacios
+- Un símbolo mayor que (>), un signo igual (=), una comilla (") o un apóstrofo (')
+- Cualquier combinación de 86 letras minúsculas o mayúsculas, dígitos, barra diagonal (/) o signo más (+)
+- Dos signos de igual (=)
+
+### <a name="checksum"></a>Suma de comprobación
+
+No
+
+### <a name="definition"></a>Definición
+
+Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+- La expresión regular CEP_Regex_AzureDocumentDBAuthKey encuentra contenido que coincide con el patrón.
+- La expresión regular CEP_CommonExampleKeywords no **** encuentra contenido que coincida con el patrón.
+
+```
+<!-- Azure Document DB Auth Key -->
+<Entity id="0f587d92-eb28-44a9-bd1c-90f2892b47aa" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="CEP_Regex_AzureDocumentDBAuthKey" />
+        <Any minMatches="0" maxMatches="0">
+            <Match idRef="CEP_CommonExampleKeywords" />
+          </Any>
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Palabras clave
+
+#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+
+(Tenga en cuenta que técnicamente, este tipo de información confidencial identifica estas palabras clave mediante una expresión regular, no una lista de palabras clave).
+
+- contoso
+- Fabrikam
+- Northwind
+- entorno
+- OneBox
+- localhost
+- 127.0.0.1
+- testacs. <!--no-hyperlink-->com
+- s-int.<!--no-hyperlink-->net
+
+## <a name="azure-iaas-database-connection-string-and-azure-sql-connection-string"></a>Cadena de conexión de base de datos IAAS de Azure y cadena de conexión SQL de Azure
+
+### <a name="format"></a>Formato
+
+La cadena "Server", "Server" o "Data Source" seguida de los caracteres y las cadenas que se describen en el siguiente patrón, incluida la cadena "CloudApp. Azure. <!--no-hyperlink-->com "o" CloudApp. Azure. <!--no-hyperlink-->net "o" Database. Windows. <!--no-hyperlink-->net "y la cadena" Password "o" Password "o" pwd ".
+
+### <a name="pattern"></a>Patrón
+
+- La cadena "servidor", "servidor" o "origen de datos"
+- 0-2 caracteres de espacio en blanco
+- Un signo igual (=)
+- 0-2 caracteres de espacio en blanco
+- Cualquier combinación de entre 1-200 letras minúsculas o mayúsculas, dígitos, símbolos, caracteres especiales o espacios
+- La cadena "CloudApp. Azure. <!--no-hyperlink-->com "," CloudApp. Azure. <!--no-hyperlink-->net "o" Database. Windows. <!--no-hyperlink-->net "
+- Cualquier combinación de entre 1-300 letras minúsculas o mayúsculas, dígitos, símbolos, caracteres especiales o espacios
+- La cadena "Password", "Password" o "pwd"
+- 0-2 caracteres de espacio en blanco
+- Un signo igual (=)
+- 0-2 caracteres de espacio en blanco
+- Uno o más caracteres que no son un punto y coma (;), Comillas (") o apóstrofe (')
+- Un punto y coma (;), Comillas (") o apóstrofe (')
+
+### <a name="checksum"></a>Suma de comprobación
+
+No
+
+### <a name="definition"></a>Definición
+
+Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+- La expresión regular CEP_Regex_AzureConnectionString encuentra contenido que coincide con el patrón.
+- La expresión regular CEP_CommonExampleKeywords no **** encuentra contenido que coincida con el patrón.
+
+```
+<!--Azure IAAS Database Connection String and Azure SQL Connection String-->
+<Entity id="ce1a126d-186f-4700-8c0c-486157b953fd" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="CEP_Regex_AzureConnectionString" />
+        <Any minMatches="0" maxMatches="0">
+            <Match idRef="CEP_CommonExampleKeywords" />
+        </Any>
+    </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Palabras clave
+
+#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+
+(Tenga en cuenta que técnicamente, este tipo de información confidencial identifica estas palabras clave mediante una expresión regular, no una lista de palabras clave).
+
+- contoso
+- Fabrikam
+- Northwind
+- entorno
+- OneBox
+- localhost
+- 127.0.0.1
+- testacs. <!--no-hyperlink-->com
+- s-int.<!--no-hyperlink-->net
+
+## <a name="azure-iot-connection-string"></a>Cadena de conexión de Azure IoT
+
+### <a name="format"></a>Formato
+
+La cadena "HostName" seguida de los caracteres y las cadenas que se describen en el patrón siguiente, incluidas las cadenas "Azure-Devices. <!--no-hyperlink-->net "y" SharedAccessKey ".
+
+### <a name="pattern"></a>Patrón
+
+- La cadena "HostName"
+- 0-2 caracteres de espacio en blanco
+- Un signo igual (=)
+- 0-2 caracteres de espacio en blanco
+- Cualquier combinación de entre 1-200 letras minúsculas o mayúsculas, dígitos, símbolos, caracteres especiales o espacios
+- La cadena "Azure-Devices. <!--no-hyperlink-->net "
+- Cualquier combinación de entre 1-200 letras minúsculas o mayúsculas, dígitos, símbolos, caracteres especiales o espacios
+- La cadena "SharedAccessKey"
+- 0-2 caracteres de espacio en blanco
+- Un signo igual (=)
+- 0-2 caracteres de espacio en blanco
+- Cualquier combinación de 43 letras minúsculas o mayúsculas, dígitos, barra diagonal (/) o signo más (+)
+- Un signo igual (=)
+
+### <a name="checksum"></a>Suma de comprobación
+
+No
+
+### <a name="definition"></a>Definición
+
+Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+- La expresión regular CEP_Regex_AzureIoTConnectionString encuentra contenido que coincide con el patrón.
+- La expresión regular CEP_CommonExampleKeywords no **** encuentra contenido que coincida con el patrón.
+
+```
+<!--Azure IoT Connection String-->
+<Entity id="0b34bec3-d5d6-4974-b7b0-dcdb5c90c29d" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="CEP_Regex_AzureIoTConnectionString" />
+        <Any minMatches="0" maxMatches="0">
+            <Match idRef="CEP_CommonExampleKeywords" />
+        </Any>
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Palabras clave
+
+#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+
+(Tenga en cuenta que técnicamente, este tipo de información confidencial identifica estas palabras clave mediante una expresión regular, no una lista de palabras clave).
+
+- contoso
+- Fabrikam
+- Northwind
+- entorno
+- OneBox
+- localhost
+- 127.0.0.1
+- testacs. <!--no-hyperlink-->com
+- s-int.<!--no-hyperlink-->net
+
+## <a name="azure-publish-setting-password"></a>Contraseña de configuración de publicación de Azure
+
+### <a name="format"></a>Formato
+
+La cadena "userpwd =" seguida de una cadena alfanumérica.
+
+### <a name="pattern"></a>Patrón
+
+- La cadena "userpwd ="
+- Cualquier combinación de 60 letras minúsculas o dígitos
+- Un signo de Comillas (")
+
+### <a name="checksum"></a>Suma de comprobación
+
+No
+
+### <a name="definition"></a>Definición
+
+Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+- La expresión regular CEP_Regex_AzurePublishSettingPasswords encuentra contenido que coincide con el patrón.
+- La expresión regular CEP_CommonExampleKeywords no **** encuentra contenido que coincida con el patrón.
+
+
+```
+<!--Azure Publish Setting Password-->
+<Entity id="75f4cc8a-a68e-49e5-89ce-fa8f03d286a5" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+       <IdMatch idRef="CEP_Regex_AzurePublishSettingPasswords" />
+       <Any minMatches="0" maxMatches="0">
+           <Match idRef="CEP_CommonExampleKeywords" />
+       </Any>
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Palabras clave
+
+#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+
+(Tenga en cuenta que técnicamente, este tipo de información confidencial identifica estas palabras clave mediante una expresión regular, no una lista de palabras clave).
+
+- contoso
+- Fabrikam
+- Northwind
+- entorno
+- OneBox
+- localhost
+- 127.0.0.1
+- testacs. <!--no-hyperlink-->com
+- s-int.<!--no-hyperlink-->net
+
+## <a name="azure-redis-cache-connection-string"></a>Cadena de conexión de la caché de Redis de Azure
+
+### <a name="format"></a>Formato
+
+La cadena "Redis. Cache. Windows. <!--no-hyperlink-->net "seguida de los caracteres y las cadenas que se describen en el patrón siguiente, incluida la cadena" Password "o" pwd ".
+
+### <a name="pattern"></a>Patrón
+
+- La cadena "Redis. Cache. Windows. <!--no-hyperlink-->net "
+- Cualquier combinación de entre 1-200 letras minúsculas o mayúsculas, dígitos, símbolos, caracteres especiales o espacios
+- La cadena "Password" o "pwd"
+- 0-2 caracteres de espacio en blanco
+- Un signo igual (=)
+- 0-2 caracteres de espacio en blanco
+- Cualquier combinación de 43 caracteres que sean letras minúsculas o mayúsculas, dígitos, barra diagonal (/) o signo más (+)
+- Un signo igual (=)
+
+### <a name="checksum"></a>Suma de comprobación
+
+No
+
+### <a name="definition"></a>Definición
+
+Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+- La expresión regular CEP_Regex_AzureRedisCacheConnectionString encuentra contenido que coincide con el patrón..
+- La expresión regular CEP_CommonExampleKeywords no **** encuentra contenido que coincida con el patrón.
+
+```
+<!--Azure Redis Cache Connection String-->
+<Entity id="095a7e6c-efd8-46d5-af7b-5298d53a49fc" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="CEP_Regex_AzureRedisCacheConnectionString" />
+        <Any minMatches="0" maxMatches="0">
+            <Match idRef="CEP_CommonExampleKeywords" />
+        </Any>
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Palabras clave
+
+#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+
+(Tenga en cuenta que técnicamente, este tipo de información confidencial identifica estas palabras clave mediante una expresión regular, no una lista de palabras clave).
+
+- contoso
+- Fabrikam
+- Northwind
+- entorno
+- OneBox
+- localhost
+- 127.0.0.1
+- testacs. <!--no-hyperlink-->com
+- s-int.<!--no-hyperlink-->net
+
+## <a name="azure-sas"></a>ASOCIACIONES de Microsoft Azure
+
+### <a name="format"></a>Formato
+
+La cadena "SIG" seguida de los caracteres y las cadenas que se describen en el patrón siguiente.
+
+### <a name="pattern"></a>Patrón
+
+- La cadena "SIG"
+- 0-2 caracteres de espacio en blanco
+- Un signo igual (=)
+- 0-2 caracteres de espacio en blanco
+- Cualquier combinación de entre 43-53 caracteres que sean letras minúsculas o mayúsculas, dígitos o el signo de porcentaje (%)
+- La cadena "% 3D"
+- Cualquier carácter que no sea una letra minúscula o mayúscula, un dígito o un signo de porcentaje (%)
+
+### <a name="checksum"></a>Suma de comprobación
+
+No
+
+### <a name="definition"></a>Definición
+
+Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+- La expresión regular CEP_Regex_AzureSAS encuentra contenido que coincide con el patrón.
+
+```
+<!--Azure SAS-->
+<Entity id="4d235014-e564-47f4-a6fb-6ebb4a826834" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="CEP_Regex_AzureSAS" />
+  </Pattern>
+</Entity>
+```
+
+## <a name="azure-service-bus-connection-string"></a>Cadena de conexión del bus de servicio de Azure
+
+### <a name="format"></a>Formato
+
+La cadena "EndPoint" seguida de los caracteres y las cadenas que se describen en el patrón siguiente, incluidas las cadenas "ServiceBus. Windows. <!--no-hyperlink-->net "y" SharedAccesKey ".
+
+### <a name="pattern"></a>Patrón
+
+- La cadena "EndPoint"
+- 0-2 caracteres de espacio en blanco
+- Un signo igual (=)
+- 0-2 caracteres de espacio en blanco
+- Cualquier combinación de entre 1-200 letras minúsculas o mayúsculas, dígitos, símbolos, caracteres especiales o espacios
+- La cadena "ServiceBus. Windows. <!--no-hyperlink-->net "
+- Cualquier combinación de entre 1-200 letras minúsculas o mayúsculas, dígitos, símbolos, caracteres especiales o espacios
+- La cadena "SharedAccessKey"
+- 0-2 caracteres de espacio en blanco
+- Un signo igual (=)
+- 0-2 caracteres de espacio en blanco
+- Cualquier combinación de 43 caracteres que sean letras minúsculas o mayúsculas, dígitos, barra diagonal (/) o signo más (+)
+- Un signo igual (=)
+
+### <a name="checksum"></a>Suma de comprobación
+
+No
+
+### <a name="definition"></a>Definición
+
+Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+- La expresión regular CEP_Regex_AzureServiceBusConnectionString encuentra contenido que coincide con el patrón..
+- La expresión regular CEP_CommonExampleKeywords no **** encuentra contenido que coincida con el patrón.
+
+```
+<!--Azure Service Bus Connection String-->
+<Entity id="b9a6578f-a83f-4fcd-bf44-2130bae49a6f" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="CEP_Regex_AzureServiceBusConnectionString" />
+        <Any minMatches="0" maxMatches="0">
+            <Match idRef="CEP_CommonExampleKeywords" />
+        </Any>
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Palabras clave
+
+#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+
+(Tenga en cuenta que técnicamente, este tipo de información confidencial identifica estas palabras clave mediante una expresión regular, no una lista de palabras clave).
+
+- contoso
+- Fabrikam
+- Northwind
+- entorno
+- OneBox
+- localhost
+- 127.0.0.1
+- testacs. <!--no-hyperlink-->com
+- s-int.<!--no-hyperlink-->net
+
+## <a name="azure-storage-account-key"></a>Clave de cuenta de almacenamiento de Azure
+
+### <a name="format"></a>Formato
+
+La cadena "DefaultEndpointsProtocol" seguida de los caracteres y las cadenas que se describen en el patrón siguiente, incluida la cadena "AccountKey".
+
+### <a name="pattern"></a>Patrón
+
+- La cadena "DefaultEndpointsProtocol"
+- 0-2 caracteres de espacio en blanco
+- Un signo igual (=)
+- 0-2 caracteres de espacio en blanco
+- Cualquier combinación de entre 1-200 letras minúsculas o mayúsculas, dígitos, símbolos, caracteres especiales o espacios
+- La cadena "AccountKey"
+- 0-2 caracteres de espacio en blanco
+- Un signo igual (=)
+- 0-2 caracteres de espacio en blanco
+- Cualquier combinación de 86 caracteres que sean letras minúsculas o mayúsculas, dígitos, barra diagonal (/) o signo más (+)
+- Dos signos de igual (=)
+
+### <a name="checksum"></a>Suma de comprobación
+
+No
+
+### <a name="definition"></a>Definición
+
+Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+- La expresión regular CEP_Regex_AzureStorageAccountKey encuentra contenido que coincide con el patrón.
+- La expresión regular CEP_AzureEmulatorStorageAccountFilter no **** encuentra contenido que coincida con el patrón.
+- La expresión regular CEP_CommonExampleKeywords no **** encuentra contenido que coincida con el patrón.
+
+```
+<!--Azure Storage Account Key-->
+<Entity id="c7bc98e8-551a-4c35-a92d-d2c8cda714a7" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="CEP_Regex_AzureStorageAccountKey" />
+        <Any minMatches="0" maxMatches="0">
+            <Match idRef="CEP_AzureEmulatorStorageAccountFilter" />
+            <Match idRef="CEP_CommonExampleKeywords" />
+        </Any>
+  </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Palabras clave
+
+#### <a name="cepazureemulatorstorageaccountfilter"></a>CEP_AzureEmulatorStorageAccountFilter
+
+(Tenga en cuenta que técnicamente, este tipo de información confidencial identifica estas palabras clave mediante una expresión regular, no una lista de palabras clave).
+
+- Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw = =
+
+#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+
+(Tenga en cuenta que técnicamente, este tipo de información confidencial identifica estas palabras clave mediante una expresión regular, no una lista de palabras clave).
+
+- contoso
+- Fabrikam
+- Northwind
+- entorno
+- OneBox
+- localhost
+- 127.0.0.1
+- testacs. <!--no-hyperlink-->com
+- s-int.<!--no-hyperlink-->net
+
+## <a name="azure-storage-account-key-generic"></a>Clave de cuenta de almacenamiento de Azure (Genérico)
+
+### <a name="format"></a>Formato
+
+Cualquier combinación de 86 letras minúsculas o mayúsculas, dígitos, la barra diagonal (/) o el signo más (+), precedido o seguido por los caracteres descritos en el patrón siguiente.
+
+### <a name="pattern"></a>Patrón
+
+- 0-1 del símbolo mayor que (>), apóstrofe ('), signo de igual (=), Comillas (") o almohadilla (#)
+- Cualquier combinación de 86 caracteres que sean letras minúsculas o mayúsculas, dígitos, la barra diagonal (/) o el signo más (+)
+- Dos signos de igual (=)
+
+
+### <a name="checksum"></a>Suma de comprobación
+
+No
+
+### <a name="definition"></a>Definición
+
+Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+- La expresión regular CEP_Regex_AzureStorageAccountKeyGeneric encuentra contenido que coincide con el patrón.
+
+```
+<!--Azure Storage Account Key (Generic)-->
+<Entity id="7ff41bd0-5419-4523-91d6-383b3a37f084" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="CEP_Regex_AzureStorageAccountKeyGeneric" />
+  </Pattern>
+</Entity>
+```
+
 ## <a name="belgium-national-number"></a>Número nacional de Bélgica
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 11 dígitos más delimitadores
 
@@ -579,7 +1048,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 - Seis dígitos y dos puntos con el formato AA.MM.DD para la fecha de nacimiento  
 - Un guión  
 - Tres dígitos secuenciales (impares para hombres, pares para mujeres)  
-- Un punto  
+- Un punto 
 - Dos dígitos que son un dígito de comprobación
 
 ### <a name="checksum"></a>Suma de comprobación
@@ -632,7 +1101,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
    
 ## <a name="brazil-cpf-number"></a>Número CPF de Brasil
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 11 dígitos incluido un dígito de control y que pueden tener o no formato
 
@@ -644,7 +1113,7 @@ Con formato
 - Tres dígitos 
 - Un punto  
 - Tres dígitos 
-- Un guion 
+- Un guión  
 - Dos dígitos que son dígitos de control
 
 Sin formato
@@ -694,7 +1163,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
    
 ## <a name="brazil-legal-entity-number-cnpj"></a>Número de entidad jurídica de Brasil (CNPJ)
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 14 dígitos que incluyen un número de registro, número de sucursal y dígitos de comprobación, además de delimitadores
 
@@ -764,7 +1233,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
    
 ## <a name="brazil-national-id-card-rg"></a>	Tarjeta de identificación nacional de Brasil (RG)
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Registro geral (formato anterior): nueve dígitos
 
@@ -822,7 +1291,7 @@ Cédula de Identidade identidad nacional identificador número de rregistro regi
    
 ## <a name="canada-bank-account-number"></a>Número de cuenta bancaria de Canadá
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Siete o doce dígitos
 
@@ -895,7 +1364,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
    
 ## <a name="canada-drivers-license-number"></a>Número de licencia de conductor de Canadá
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Varía según la provincia
 
@@ -1112,7 +1581,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
    
 ## <a name="canada-health-service-number"></a>Número de servicio de salud de Canadá
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 10 dígitos
 
@@ -1158,7 +1627,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
       
 ## <a name="canada-passport-number"></a>Número de pasaporte de Canadá
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Dos letras mayúsculas seguidas por seis dígitos
 
@@ -1225,7 +1694,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
    
 ## <a name="canada-personal-health-identification-number-phin"></a>Número de Identificación Personal de salud en Canadá (PHIN)
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Nueve dígitos
 
@@ -1294,14 +1763,14 @@ Se encuentran al menos dos palabras clave de Keyword_canada_phin o Keyword_canad
    
 ## <a name="canada-social-insurance-number"></a>Número de seguridad social de Canadá
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Nueve dígitos con guiones opcionales o espacios
 
 ### <a name="pattern"></a>Patrón
 
 Con formato
-- Tres dígitos  
+- Tres dígitos 
 - Un guion o un espacio 
 - Tres dígitos 
 - Un guion o un espacio 
@@ -1377,7 +1846,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
    
 ## <a name="chile-identity-card-number"></a>	Número de tarjeta de identidad de Chile
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 7-8 dígitos más delimitadores, un dígito de control o una letra
 
@@ -1439,7 +1908,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
    
 ## <a name="china-resident-identity-card-prc-number"></a>	Número de tarjeta de identidad de residente de China (PRC)
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 18 dígitos
 
@@ -1496,7 +1965,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
    
 ## <a name="credit-card-number"></a>Número de tarjeta de crédito
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 16 dígitos que pueden ser formateados o sin formato (dddddddddddddddd) y deben pasar la prueba Luhn.
 
@@ -1740,7 +2209,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
    
 ## <a name="croatia-identity-card-number"></a>Número de tarjeta de identidad de Croacia
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Nueve dígitos
 
@@ -1778,7 +2247,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
    
 ## <a name="croatia-personal-identification-oib-number"></a>Número de identificación personal de Croacia (OIB)
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 11 dígitos
 
@@ -1827,7 +2296,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
    
 ## <a name="czech-personal-identity-number"></a>Número de identidad personal en Checo
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Nueve dígitos con barra diagonal (formato antiguo) 10 dígitos con barra diagonal (nuevo formato) opcional
 
@@ -1836,7 +2305,7 @@ Nueve dígitos con barra diagonal (formato antiguo) 10 dígitos con barra diagon
 Nueve dígitos (formato antiguo):
 - Nueve dígitos
 
-OR
+O
 
 - Seis dígitos que representan la fecha de nacimiento
 - Una barra diagonal 
@@ -1845,7 +2314,7 @@ OR
 10 dígitos (nuevo formato):
 - 10 dígitos
 
-OR
+O
 
 - Seis dígitos que representan la fecha de nacimiento
 - Una barra diagonal  
@@ -1877,7 +2346,7 @@ Se supera la suma de comprobación.
    
 ## <a name="denmark-personal-identification-number"></a>Número de identificación personal de Dinamarca
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 10 dígitos que contienen un guión
 
@@ -1919,7 +2388,7 @@ Se supera la suma de comprobación.
    
 ## <a name="drug-enforcement-agency-dea-number"></a>Número de la Drug Enforcement Agency (DEA)
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Dos letras seguidas de siete dígitos
 
@@ -1956,7 +2425,7 @@ Ninguno
    
 ## <a name="eu-debit-card-number"></a>Tarjeta de débito de la UE
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 16 dígitos
 
@@ -2325,7 +2794,7 @@ Para obtener más información, vea [tipo de información confidencial de númer
   
 ## <a name="finland-national-id"></a>Identificación nacional de Finlandia
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Seis dígitos y un carácter que indican un siglo, más tres dígitos y un dígito de control
 
@@ -2377,7 +2846,7 @@ Palabras clave Keyword_finland_passport_number Passi de Passport
    
 ## <a name="france-drivers-license-number"></a>Número de licencia de conductor de Francia
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 12 dígitos
 
@@ -2426,7 +2895,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ## <a name="france-national-id-card-cni"></a>Tarjeta de identificación nacional de Francia (CNI)
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 12 dígitos
 
@@ -2458,7 +2927,7 @@ Ninguno
    
 ## <a name="france-passport-number"></a>Número de pasaporte de Francia
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Nueve dígitos y letras
 
@@ -2515,7 +2984,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
       
 ## <a name="france-social-security-number-insee"></a>Número de seguridad social de Francia (INSEE)
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 15 dígitos
 
@@ -2590,7 +3059,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
    
 ## <a name="german-drivers-license-number"></a>Número de licencia de conductor de Alemania
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Combinación de 11 dígitos y letras
 
@@ -2732,7 +3201,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
    
 ## <a name="german-passport-number"></a>Número de pasaporte de Alemania
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 10 dígitos o letras
 
@@ -2816,7 +3285,7 @@ bnationalit. t
    
 ## <a name="germany-identity-card-number"></a>Número de documento de identidad de Alemania
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Desde el 1 de noviembre de 2010: nueve letras y dígitos
 
@@ -2865,7 +3334,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
    
 ## <a name="greece-national-id-card"></a>Tarjeta de identificación nacional de Grecia
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Combinación de 7 u 8 letras y números más un guión
 
@@ -2912,7 +3381,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
    
 ## <a name="hong-kong-identity-card-hkid-number"></a>Número de tarjeta de identidad de Hong Kong (HKID)
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Combinación de 8 o 9 letras y números, más paréntesis opcionales alrededor del carácter final
 
@@ -2994,7 +3463,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
    
 ## <a name="india-permanent-account-number-pan"></a>Número de cuenta permanente de India (PAN)
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 10 letras o dígitos
 
@@ -3035,16 +3504,16 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
    
 ## <a name="india-unique-identification-aadhaar-number"></a>Número de identificación único (Aadhaar) de la India
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 12 dígitos que contienen espacios o guiones opcionales
 
 ### <a name="pattern"></a>Patrón
 
 12 dígitos:
-- Cuatro dígitos 
+- Cuatro dígitos  
 - Un guión o un espacio opcional  
-- Cuatro dígitos 
+- Cuatro dígitos  
 - Un guión o un espacio opcional  
 - El dígito final que es el dígito de control
 
@@ -3073,7 +3542,7 @@ Se supera la suma de comprobación.
    
 ## <a name="indonesia-identity-card-ktp-number"></a>Número de tarjeta de identidad (KTP) de Indonesia
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 16 dígitos que contienen puntos opcionales
 
@@ -3125,7 +3594,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
    
 ## <a name="international-banking-account-number-iban"></a>Número de cuenta bancaria internacional (IBAN)
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Código de país (dos letras) más dígitos de control (dos dígitos), más el número IBAN (hasta 30 caracteres)
 
@@ -3168,7 +3637,7 @@ Ninguno
    
 ## <a name="ip-address"></a>dirección IP
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 #### <a name="ipv4"></a>IPv4
 Patrón complejo que representa las versiones con formato (con puntos) y sin formato (sin puntos) de las direcciones IPv4
@@ -3232,7 +3701,7 @@ Para IPv6, una directiva DLP está segura al 95% de que este tipo de informació
    
 ## <a name="international-classification-of-diseases-icd-10-cm"></a>Clasificación Internacional de enfermedades (ICD-10-CM)
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Dictionary
 
@@ -3265,7 +3734,7 @@ Cualquier término del Diccionario de palabras clave de Dictionary_icd_10_cm, qu
    
 ## <a name="international-classification-of-diseases-icd-9-cm"></a>Clasificación Internacional de enfermedades (ICD-9-CM)
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Dictionary
 
@@ -3296,7 +3765,7 @@ Cualquier término del Diccionario de palabras clave de Dictionary_icd_9_cm, que
    
 ## <a name="ireland-personal-public-service-pps-number"></a>Número de servicio público personal (PPS) de Irlanda
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Formato antiguo (hasta el 31 de diciembre de 2012):
 - Siete dígitos seguidos por 1 o 2 letras  
@@ -3367,7 +3836,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
    
 ## <a name="israel-bank-account-number"></a>Número de cuenta bancaria de Israel
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 13 dígitos
 
@@ -3416,7 +3885,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
    
 ## <a name="israel-national-id"></a>Identificación nacional de Israel
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Nueve dígitos
 
@@ -3456,7 +3925,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
    
 ## <a name="italy-drivers-license-number"></a>Número de licencia de conductor de Italia
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Una combinación de 10 letras y dígitos
 
@@ -3499,7 +3968,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
    
 ## <a name="japan-bank-account-number"></a>Número de cuenta bancaria de Japón
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Siete u ocho dígitos
 
@@ -3614,7 +4083,7 @@ Otemachi
 
 ## <a name="japan-drivers-license-number"></a>Número de licencia de conductor de Japón
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 12 dígitos
 
@@ -3674,7 +4143,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
    
 ## <a name="japan-passport-number"></a>Número de pasaporte de Japón
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Dos letras seguidas de siete dígitos
 
@@ -3713,7 +4182,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
    
 ## <a name="japan-resident-registration-number"></a>Número de registro de residente de Japón
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 11 dígitos
 
@@ -3760,7 +4229,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
    
 ## <a name="japan-social-insurance-number-sin"></a>Número de Seguridad Social de Japón (SIN)
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 De 7 a 12 dígitos
 
@@ -3812,7 +4281,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ## <a name="japanese-residence-card-number"></a>Número de tarjeta de residencia japonés
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 12 letras y dígitos
 
@@ -3854,7 +4323,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
    
 ## <a name="malaysia-id-card-number"></a>Número de la tarjeta de identificación de Malasia
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 12 dígitos que contienen guiones opcionales
 
@@ -3920,7 +4389,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
    
 ## <a name="netherlands-citizens-service-bsn-number"></a>Número de servicio del ciudadano (BSN) de Países Bajos
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 8 o 9 dígitos que contienen espacios opcionales
 
@@ -3970,7 +4439,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
    
 ## <a name="new-zealand-ministry-of-health-number"></a>Número de Ministerio de salud de Nueva Zelanda
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Tres letras, un espacio (opcional) y cuatro dígitos
 
@@ -4012,7 +4481,7 @@ Keyword_nz_terms
    
 ## <a name="norway-identification-number"></a>Número de identificación de Noruega
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 11 dígitos
 
@@ -4064,7 +4533,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
    
 ## <a name="philippines-unified-multi-purpose-id-number"></a>Número de id. universal unificado de Filipinas
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 12 dígitos separados por guiones
 
@@ -4109,7 +4578,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
    
 ## <a name="poland-identity-card"></a>Tarjeta de identificación de Polonia
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Tres letras y seis dígitos
 
@@ -4152,7 +4621,7 @@ Se supera la suma de comprobación.
    
 ## <a name="poland-national-id-pesel"></a>Identificación nacional de Polonia (PESEL)
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 11 dígitos
 
@@ -4191,7 +4660,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
    
 ## <a name="poland-passport"></a>Pasaporte de Polonia
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Dos letras y siete dígitos
 
@@ -4232,7 +4701,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
    
 ## <a name="portugal-citizen-card-number"></a>Número de tarjeta del ciudadano de Portugal
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Ocho dígitos
 
@@ -4272,7 +4741,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
    
 ## <a name="saudi-arabia-national-id"></a>Identificación nacional de Arabia Saudí
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 10 dígitos
 
@@ -4314,7 +4783,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
    
 ## <a name="singapore-national-registration-identity-card-nric-number"></a>Número de tarjeta de identidad de registro nacional (NRIC) de Singapur
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Nueve letras y dígitos
 
@@ -4368,7 +4837,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
    
 ## <a name="south-africa-identification-number"></a>Número de identificación de Sudáfrica
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 13 dígitos que pueden contener espacios
 
@@ -4412,7 +4881,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
    
 ## <a name="south-korea-resident-registration-number"></a>Número de registro de residente de Corea del Sur
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 13 dígitos que contienen un guión
 
@@ -4466,7 +4935,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
    
 ## <a name="spain-social-security-number-ssn"></a>Número de seguridad social de España (NSS)
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 11 o 12 dígitos
 
@@ -4501,10 +4970,86 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 ### <a name="keywords"></a>Palabras clave
 
 Ninguno
-   
+
+## <a name="sql-server-connection-string"></a>Cadena de conexión de SQL Server
+
+### <a name="format"></a>Formato
+
+La cadena "User ID", "User ID", "UID" o "UserId" seguida de los caracteres y las cadenas que se describen en el patrón siguiente.
+
+### <a name="pattern"></a>Patrón
+
+- La cadena "User ID", "User ID", "UID" o "UserId"
+- Cualquier combinación de entre 1-200 letras minúsculas o mayúsculas, dígitos, símbolos, caracteres especiales o espacios
+- La cadena "Password" o "pwd" donde "pwd" no está precedida por una letra minúscula.
+- Un signo igual (=)
+- Cualquier carácter que no sea un signo de dólar ($), un símbolo de porcentaje (%), un símbolo mayor que (>), un símbolo de arroba (@), Comillas ("), punto y coma (;), llave izquierda ([) o corchete de apertura ({)
+- Cualquier combinación de 7-128 caracteres que no sean un punto y coma (;), barra diagonal (/) o comillas (")
+- Un punto y coma (;) o comillas (")
+
+### <a name="checksum"></a>Suma de comprobación
+
+No
+
+### <a name="definition"></a>Definición
+
+Una directiva DLP está segura al 85% de que este tipo de información confidencial se detecta si, en una proximidad de 300 caracteres:
+- La expresión regular CEP_Regex_SQLServerConnectionString encuentra contenido que coincide con el patrón.
+- **No** se encuentra una palabra clave de CEP_GlobalFilter.
+- La expresión regular CEP_PasswordPlaceHolder no **** encuentra contenido que coincida con el patrón.
+- La expresión regular CEP_CommonExampleKeywords no **** encuentra contenido que coincida con el patrón.
+
+```
+<!---SQL Server Connection String>
+<Entity id="e76b6205-d3cb-46f2-bd63-c90153f2f97d" patternsProximity="300" recommendedConfidence="85">
+  <Pattern confidenceLevel="85">
+        <IdMatch idRef="CEP_Regex_SQLServerConnectionString" />
+        <Any minMatches="0" maxMatches="0">
+            <Match idRef="CEP_GlobalFilter" />
+            <Match idRef="CEP_PasswordPlaceHolder" />
+            <Match idRef="CEP_CommonExampleKeywords" />
+        </Any>
+    </Pattern>
+</Entity>
+```
+
+### <a name="keywords"></a>Palabras clave
+
+#### <a name="cepglobalfilter"></a>CEP_GlobalFilter
+
+- Some-Password
+- somePassword
+- secretPassword
+- AdventureWorks
+
+#### <a name="ceppasswordplaceholder"></a>CEP_PasswordPlaceHolder
+
+(Tenga en cuenta que técnicamente, este tipo de información confidencial identifica estas palabras clave mediante una expresión regular, no una lista de palabras clave).
+
+- Password o pwd seguida de 0-2 espacios, un signo igual (=), 0-2 espacios y un asterisco (*)--o--
+- Password o pwd seguida de:
+    - Signo de igual (=)
+    - Símbolo menor que (<)
+    - Cualquier combinación de 1-200 caracteres que estén en mayúsculas o minúsculas, dígitos, un asterisco (*), un guión (-), un subrayado (_) o un carácter de espacio en blanco
+    - Símbolo mayor que (>)
+
+#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+
+(Tenga en cuenta que técnicamente, este tipo de información confidencial identifica estas palabras clave mediante una expresión regular, no una lista de palabras clave).
+
+- contoso
+- Fabrikam
+- Northwind
+- entorno
+- OneBox
+- localhost
+- 127.0.0.1
+- testacs. <!--no-hyperlink-->com
+- s-int.<!--no-hyperlink-->net
+
 ## <a name="sweden-national-id"></a>Identificación nacional de Suecia
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 10 o 12 dígitos y un delimitador opcional
 
@@ -4541,7 +5086,7 @@ No
    
 ## <a name="sweden-passport-number"></a>Número de pasaporte de Suecia
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Ocho dígitos
 
@@ -4611,7 +5156,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
    
 ## <a name="swift-code"></a>Código SWIFT
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Cuatro letras seguidas de 5 a 31 letras o dígitos
 
@@ -4681,7 +5226,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
    
 ## <a name="taiwan-national-id"></a>Identificación nacional de Taiwán
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Una letra  seguida de nueve dígitos
 
@@ -4734,7 +5279,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
    
 ## <a name="taiwan-passport-number"></a>	Número de pasaporte de Taiwán
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 - Número de pasaporte biométrico: nueve dígitos
 - Número de pasaporte no biométrico: nueve dígitos
@@ -4783,7 +5328,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
    
 ## <a name="taiwan-resident-certificate-arctarc-number"></a>Número de certificado de residente (ARC/TARC) de Taiwán
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 10 letras y dígitos
 
@@ -4833,7 +5378,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ## <a name="thai-population-identification-code"></a>Código de identificación de población tailandesa
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 13 dígitos
 
@@ -4882,7 +5427,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
   
 ## <a name="turkish-national-identification-number"></a>Número de identificación nacional de Turco
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 11 dígitos
 
@@ -4927,7 +5472,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ## <a name="uk-drivers-license-number"></a>Número de licencia de conductor de Reino Unido
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Combinación de 18 letras y dígitos en el formato especificado
 
@@ -4983,7 +5528,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
    
 ## <a name="uk-electoral-roll-number"></a>Número de registro electoral de Reino Unido
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Dos letras seguidas por entre 1 y 4 dígitos
 
@@ -5025,7 +5570,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
    
 ## <a name="uk-national-health-service-number"></a>Número de Servicio Nacional de Salud de Reino Unido
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 De 10 a 17 dígitos separados por espacios
 
@@ -5092,7 +5637,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
    
 ## <a name="uk-national-insurance-number-nino"></a>Número de seguro nacional de Reino Unido (NINO)
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 7 caracteres o 9 caracteres separados por espacios o guiones
 
@@ -5104,7 +5649,7 @@ Dos patrones posibles:
 - Seis dígitos
 - ' A ', ' B ', ' C ' o ' T ' (como el prefijo, solo se permiten determinados caracteres en el sufijo; no distingue entre mayúsculas y minúsculas)
 
-OR
+O
 
 - Dos letras
 - Un espacio o un guion
@@ -5167,7 +5712,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
    
 ## <a name="us--uk-passport-number"></a>Número de pasaporte EE. UU. / Reino Unido
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Nueve dígitos
 
@@ -5219,7 +5764,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
    
 ## <a name="us-bank-account-number"></a>Número de cuenta bancaria de EE. UU.
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Entre 8 y 17 dígitos
 
@@ -5281,7 +5826,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
    
 ## <a name="us-drivers-license-number"></a>Número de licencia de conductor de EE. UU.
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Depende del estado
 
@@ -5431,7 +5976,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
    
 ## <a name="us-individual-taxpayer-identification-number-itin"></a>Número de identificación de contribuyente individual (ITIN) de EE. UU.
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 Nueve dígitos que empiezan con un "9" y contienen un "7" u "8" como cuarto dígito; se puede optar por un formato con espacios o guiones
 
@@ -5524,7 +6069,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
    
 ## <a name="us-social-security-number-ssn"></a>Número de seguridad social (SSN) de EE. UU.
 
-### <a name="format"></a>Format
+### <a name="format"></a>Formato
 
 9 dígitos, que pueden ser un patrón con o sin formato
 
