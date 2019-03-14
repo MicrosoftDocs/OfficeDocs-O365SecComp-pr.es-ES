@@ -12,22 +12,22 @@ search.appverid:
 - MOE150
 ms.assetid: dd6d2417-49c4-4de6-9294-67fdabbf8532
 description: Puede integrar su servidor de SIEM con Office 365 Cloud App Security. Lea este artículo para obtener información general sobre cómo funciona y cómo configurarlo.
-ms.openlocfilehash: b4baeda3cb836c0b1aa528d29176bbf4321d1fe2
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 82b5e0e6467bd42acba3c40d67e4e0363a7e0f72
+ms.sourcegitcommit: 4abcc03497478abf1ae7fc84792f44360d8e59c1
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215880"
+ms.lasthandoff: 03/12/2019
+ms.locfileid: "30548590"
 ---
 # <a name="integrate-your-siem-server-with-office-365-cloud-app-security"></a>Integrar el servidor SIEM con Office 365 Cloud App Security
   
 |Evaluación * *\>**|Planeación * *\>**|Implementación * *\>**|Uso * * * *|
 |:-----|:-----|:-----|:-----|
-|[Empezar a evaluar](office-365-cas-overview.md) <br/> |[Empezar a planear](get-ready-for-office-365-cas.md) <br/> |Ya está aquí.  <br/> [Siguiente paso](utilization-activities-for-ocas.md) <br/> |[Empezar a usar](utilization-activities-for-ocas.md) <br/> |
+|[Empezar a evaluar](office-365-cas-overview.md) <br/> |[Empezar a planear](get-ready-for-office-365-cas.md) <br/> |Ya está aquí.  <br/> [Paso siguiente](utilization-activities-for-ocas.md) <br/> |[Empezar a usar](utilization-activities-for-ocas.md) <br/> |
    
 ## <a name="overview-and-prerequisites"></a>Información general y requisitos previos
 
-Puede integrar [Office 365 Cloud App Security](get-ready-for-office-365-cas.md) con su servidor de administración de eventos e información de seguridad (Siem) para habilitar el control centralizado de las alertas. Esto es especialmente ventajoso para las organizaciones que usan servicios en la nube y aplicaciones de servidor local. La integración con un servidor de SIEM permite que su equipo de seguridad Proteja mejor sus aplicaciones de Office 365 a la vez que mantiene un flujo de trabajo de seguridad usual mediante la automatización de determinados procedimientos de seguridad y la correlación entre eventos locales y basados en la nube.  
+Puede integrar [Office 365 Cloud App Security](get-ready-for-office-365-cas.md) con su servidor de administración de eventos e información de seguridad (Siem) para habilitar el control centralizado de las alertas. Esto es especialmente ventajoso para las organizaciones que usan servicios en la nube y aplicaciones de servidor local. Puede integrar el servidor de SIEM para extraer alertas y actividades de la seguridad de aplicaciones en la nube de Office 365 en el servidor de SIEM. La integración con un servidor de SIEM permite que su equipo de seguridad Proteja mejor sus aplicaciones de Office 365 a la vez que mantiene un flujo de trabajo de seguridad usual mediante la automatización de determinados procedimientos de seguridad y la correlación entre eventos locales y basados en la nube.  
   
 Cuando integre por primera vez su servidor de SIEM con Office 365 Cloud App Security, las alertas de los dos últimos días se reenvían al servidor de SIEM, así como todas las alertas desde entonces, según los filtros que seleccione. Además, si deshabilita esta característica durante un período prolongado, cuando vuelva a habilitarla, reenviará los últimos dos días de alertas y, a continuación, todas las alertas desde entonces.
 
@@ -81,8 +81,9 @@ Office 365 Cloud App Security es compatible actualmente con los siguientes servi
 6. En el paso **remoto de syslog** , especifique la dirección IP o el nombre de host del host de **syslog remoto** y el **número de Puerto syslog**. Seleccione TCP o UDP como protocolo syslog remoto. (Puede trabajar con el administrador de la red o con el administrador de seguridad para obtener estos detalles si no los tiene). A continuación, elija **siguiente**.<br/>![Especificar detalles de registro de registro remoto](media/ArcSightS1Syslog.png)
   
 7. En el paso **tipos de datos** , realice una de las acciones siguientes y, a continuación, haga clic en **siguiente**:
-    - Mantener la configuración predeterminada de **todas las alertas**<br/>O BIEN
-    - Haga clic en **todas las alertas**y, a continuación, elija **filtros específicos**. Defina filtros para seleccionar los tipos de alertas que desea enviar a su servidor de SIEM.<br/>![Tipo de datos paso del asistente](media/ArcSightS1ExportOptions.png)
+    - Mantener la configuración predeterminada de **todas las alertas**<br/>O
+    - Haga clic en **todas las alertas**y, a continuación, elija **filtros específicos**. Defina filtros para seleccionar los tipos de alertas que desea enviar a su servidor de SIEM.
+<br/>![Tipo de datos paso del asistente](media/ArcSightS1ExportOptions.png)
   
 8. En la pantalla Enhorabuena, copie el token y guárdelo para más tarde.<br/>![Pantalla del agente de SIEM creada](media/SIEMAgentFinished.png) 
 
@@ -155,10 +156,10 @@ Y este es otro ejemplo, esta vez en formato CEF:
 
 |Nombre del campo CEF  | Descripción  |
 |---------|---------|
-|inícielo     | marca de hora de alerta        |
-|centraliza     | marca de hora de alerta        |
+|start     | marca de hora de alerta        |
+|end     | marca de hora de alerta        |
 |RT     | marca de hora de alerta        |
-|msg     | Descripción de la alerta como se muestra en el portal de seguridad de aplicación de nube de Office 365        |
+|Enviado     | Descripción de la alerta como se muestra en el portal de seguridad de aplicación de nube de Office 365        |
 |suser     | usuario de asunto de alerta        |
 |destinationServiceName     | la aplicación de origen de la alerta, como Office 365, SharePoint o OneDrive        |
 |csLabel     | Varía (las etiquetas tienen distintos significados). Normalmente, las etiquetas se explican por sí mismas, como targetObjects.        |
@@ -184,7 +185,7 @@ Si pierde el token, puede volver a generar uno.
 
 2. Busque la fila del agente SIEM. 
 
-3. Haga clic en los puntos suspensivos y, a continuación, elija **Editar**. (Si edita el agente SIEM, no es necesario volver a ejecutar el archivo. jar; se actualiza automáticamente).<br/>![Para editar el agente de SIEM, elija los puntos suspensivos y, a continuación, elija Editar.](media/96d0b362-3e0c-4dff-b2b4-d7af5b1bfb91.png)
+3. Haga clic en los puntos suspensivos y, a continuación, elija **Editar**. (Si edita el agente SIEM, no es necesario volver a ejecutar el archivo. jar; se actualiza automáticamente). <br/>![Para editar el agente de SIEM, elija los puntos suspensivos y, a continuación, elija Editar.](media/96d0b362-3e0c-4dff-b2b4-d7af5b1bfb91.png)
   
 ### <a name="delete-a-siem-agent"></a>Eliminar un agente de SIEM
 

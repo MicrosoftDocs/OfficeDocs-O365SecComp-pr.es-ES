@@ -1,7 +1,7 @@
 ---
 title: Referencia Políticas, prácticas y directrices
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: 12/9/2016
 ms.audience: ITPro
@@ -12,13 +12,15 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: ff3f140b-b005-445f-bfe0-7bc3f328aaf0
-description: Microsoft ha desarrollado varias directivas, procedimientos y adoptadas varios procedimientos recomendados del sector para ayudar a proteger a nuestros usuarios de correo electrónico abusivo, no deseado o malintencionado.
-ms.openlocfilehash: e552128a06ce942383e7c5410508df61331fb874
-ms.sourcegitcommit: e9dca2d6a7838f98bb7eca127fdda2372cda402c
+ms.collection:
+- M365-security-compliance
+description: Microsoft ha desarrollado diversas directivas, procedimientos y adoptado varias prácticas recomendadas del sector para ayudar a proteger a nuestros usuarios de un correo electrónico abusivo, no deseado o malintencionado.
+ms.openlocfilehash: a7f29ed77b373ee2b66831e074fda16fcda30508
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "23003089"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30276370"
 ---
 # <a name="reference-policies-practices-and-guidelines"></a>Referencia: Políticas, prácticas y directrices
   
@@ -86,14 +88,14 @@ Microsoft trabaja activamente con los organismos de la industria y los proveedor
   
 - [Messaging Malware Mobile Anti-Abuse Working Group](https://www.m3aawg.org/)
     
-- [Alliance de confianza en línea](https://www.otalliance.org/resources)
+- [Alianza de confianza en línea](https://www.otalliance.org/resources)
     
 - [Email Sender &amp; Provider Coalition](http://www.espcoalition.org/)
     
 ## <a name="abuse-and-spam-reporting"></a>Informar sobre abusos y correo no deseado
 <a name="AbuseSpamReports"> </a>
 
-Para informar de correo electrónico ilegal, ofensivo, no deseado o malintencionado, [informe deseado las estafas de suplantación de identidad y de correo electrónico en Outlook en el web ](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md). Enviar estos tipos de comunicaciones es una infracción de la directiva de Microsoft y en los informes confirmados se llevará a cabo la acción adecuada.
+Para informar sobre correo electrónico ilegal, abusivo, no deseado o malintencionado, [Informe sobre correo no deseado y estafas de suplantación de identidad (phishing) en Outlook en la web ](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md). Enviar estos tipos de comunicaciones incumple la política de Microsoft y se tomarán las acciones necesarias sobre informes confirmados.
   
 ## <a name="law-enforcement"></a>Cumplimiento de la ley
 <a name="sectionSection7"> </a>

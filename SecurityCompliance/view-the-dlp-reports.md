@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con los informes de DLP en Office 365, puede ver rápidamente el número de coincidencias de directivas de DLP, invalidaciones o falsos positivos; ver si las tendencias están arriba o abajo con el tiempo; filtrar el informe de diferentes formas; y ver detalles adicionales seleccionando un punto en una línea del gráfico.
-ms.openlocfilehash: 6f97a29b5a80eeff60b13ba4467d44e3ef87b028
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: bd2bc63fa3e2ea08f44ddb3923786010c59e829f
+ms.sourcegitcommit: 173936324ea015d788703440924ec8a9fb0db88b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30454852"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30510227"
 ---
 # <a name="view-the-reports-for-data-loss-prevention"></a>Ver los informes de prevención de pérdida de datos
 
@@ -71,6 +71,16 @@ Los informes pueden mostrar información y recomendaciones en las que puede hace
   
 ![Hacer clic en un icono de información para ver los detalles y las acciones que se deben realizar](media/51782036-7299-4960-8175-75c2b1637159.png)
   
+## <a name="permissions-for-dlp-reports"></a>Permisos para informes de DLP
+
+Para ver los informes de DLP en el centro de seguridad & cumplimiento, debe tener asignado el:
+
+- Rol de **lector de seguridad** en el centro de administración de Exchange. De forma predeterminada, este rol se asigna a los grupos de roles administración de la organización y lector de seguridad en el centro de administración de Exchange.
+
+- **View-Only DLP Compliance Management** role en el centro de seguridad & cumplimiento. De forma predeterminada, este rol se asigna a los grupos de roles administrador de cumplimiento, administración de la organización, administrador de seguridad y lector de seguridad en el centro de seguridad & cumplimiento.
+
+- Rol **destinatarios con permiso de vista** en el centro de administración de Exchange. De forma predeterminada, este rol se asigna a los grupos de roles administración de cumplimiento, administración de la organización y administración de la organización de solo vista en el centro de administración de Exchange.
+
 ## <a name="find-the-cmdlets-for-the-dlp-reports"></a>Buscar los cmdlets para los informes de DLP
 
 Para usar la mayoría de los cmdlets del centro &amp; de seguridad y cumplimiento, debe:

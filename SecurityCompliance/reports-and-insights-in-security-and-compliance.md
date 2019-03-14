@@ -12,14 +12,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: e3e95f68-36e9-4256-bcca-78fe7fe5ea5d
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
 description: Obtenga información general sobre los informes y avialable en el centro de seguridad &amp; y cumplimiento.
-ms.openlocfilehash: 194a7198e05e6d13cada9712f884f232abe2a8d1
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 03b551a05d9e19be000ff9ba53e8afa11d8715f3
+ms.sourcegitcommit: 1c73c2f83703af0a30a5b0633db00d8e0e6b39b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30217220"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "30242162"
 ---
 # <a name="smart-reports-and-insights-in-the-office-365-security-amp-compliance-center"></a>Informes inteligentes y opiniones del centro de seguridad &amp; y cumplimiento de Office 365
 
@@ -47,8 +48,8 @@ Hay una amplia variedad de informes disponibles en el centro &amp; de seguridad 
   
 |**Tipo de información**|**Cómo llegar ahí**|**Dónde ir para obtener más información**|
 |:-----|:-----|:-----|
-|**Informes &amp; del centro de cumplimiento de seguridad** (todo hacia arriba)  <br/> Información y recomendaciones principales, así como vínculos a informes de &amp; cumplimiento de seguridad, como informes de prevención de pérdida de datos, etiquetas, informes de seguridad de correo electrónico, informes de protección contra amenazas avanzada, etc.  <br/> |En el centro &amp; de seguridad y cumplimiento, vaya a **informes** \> de **Panel** <br/> |[Supervisión de la seguridad y el cumplimiento en Office 365](monitor-security-and-compliance.md) <br/> |
-|**Prevención de pérdida de datos** <br/> Coincidencias de directivas de prevención de pérdida de datos, falsos positivos y reemplazos, y vínculos para crear o editar directivas  <br/> |En el centro &amp; de seguridad y cumplimiento, vaya a **Directiva** de **prevención** \> de pérdida de datos. <br/> |[Ver los informes de prevención de pérdida de datos](view-the-dlp-reports.md) <br/> |
+|**Informes &amp; del centro de cumplimiento de seguridad** (todo hacia arriba)  <br/> Información y recomendaciones principales, así como vínculos a informes de &amp; cumplimiento de seguridad, como informes de prevención de pérdida de datos, etiquetas, informes de seguridad de correo electrónico, informes de protección contra amenazas avanzada, etc.  <br/> |En el centro &amp; de seguridad y cumplimiento, vaya a **informes** \> de **Panel** <br/> |[Supervisar la seguridad y el cumplimiento en Office 365](monitor-security-and-compliance.md) <br/> |
+|**Prevención de pérdida de datos (DLP)** <br/> Coincidencias de directivas de prevención de pérdida de datos, falsos positivos y reemplazos, y vínculos para crear o editar directivas  <br/> |En el centro &amp; de seguridad y cumplimiento, vaya a **Directiva** de **prevención** \> de pérdida de datos. <br/> |[Ver los informes de prevención de pérdida de datos](view-the-dlp-reports.md) <br/> |
 |**Gobierno de datos** <br/> Información sobre cómo se aplican etiquetas, etiquetas clasificadas como registros, tendencias de etiquetas, etc.  <br/> |En el centro &amp; de seguridad y cumplimiento, vaya a **Panel** de **gobierno** \> de datos <br/> |[Ver los informes de gobierno de datos](view-the-data-governance-reports.md) <br/> |
 |**Panel de administración de amenazas** (también se conoce como el panel de seguridad y el panel de inteligencia sobre amenazas)  <br/> Detecciones de amenazas, tendencias de malware, usuarios de destino principales, detalles sobre los mensajes de correo electrónico enviados y recibidos, etc.  <br/> |En el centro &amp; de seguridad y cumplimiento, vaya a **Threat Management** \> **Dashboard** . <br/> |[Introducción al panel de seguridad](security-dashboard.md) <br/> |
 |**Explorador de amenazas** (también conocido como explorador)  <br/> Se ha detectado malware sospechoso en correo electrónico y archivos en Office 365  <br/> |En el centro &amp; de seguridad y cumplimiento, vaya a **Threat Management** \> **Explorer** <br/> |[Usar el explorador en el &amp; centro de seguridad y cumplimiento](use-explorer-in-security-and-compliance.md) <br/> |
@@ -72,7 +73,7 @@ Ahora que tiene una introducción a los informes y a la información, el siguien
     
 ## <a name="related-topics"></a>Temas relacionados
 
-[Supervisión de la seguridad y el cumplimiento en Office 365](monitor-security-and-compliance.md)
+[Supervisar la seguridad y el cumplimiento en Office 365](monitor-security-and-compliance.md)
   
 [Protección contra amenazas en Office 365](protect-against-threats.md)
   

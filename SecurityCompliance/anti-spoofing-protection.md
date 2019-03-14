@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: En este artículo se describe cómo Office 365 mitiga los ataques de suplantación de identidad (phishing) que usan dominios de remitente falsificados, es decir, dominios que se falsifican. Para ello, se analizan los mensajes y se bloquean los que no se pueden autenticar a través de los métodos de autenticación de correo electrónico estándar, ni de otras técnicas de reputación del remitente. Este cambio se implementó para reducir el número de ataques de suplantación de identidad a los que se exponen las organizaciones de Office 365.
-ms.openlocfilehash: 422bac2ad5fd0c58928d79467721204b20583fd7
-ms.sourcegitcommit: 5d6be2b208dbe28d5d5da057c60cf97729799c1b
+ms.openlocfilehash: 377bc75e7538dacab1180045ddfdeb1a2ac32a65
+ms.sourcegitcommit: 5eb664b6ecef94aef4018a75684ee4ae66c486bb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "30465487"
+ms.lasthandoff: 03/08/2019
+ms.locfileid: "30492879"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Protección contra suplantación de identidad en Office 365
 
@@ -415,7 +415,7 @@ Las organizaciones que usan Exchange Online, con o sin ATP, pueden especificar l
   
 En general, la Directiva aplicada a un mensaje se identifica en el encabezado X-Forefront-antispam-rePort en la propiedad CAT (categoría).
   
-|**Prioridad**|**Normativa**|**Categoría**|**¿Dónde se administra?**|**Se aplica a**|
+|**Prioridad**|**Directiva**|**Categoría**|**¿Dónde se administra?**|**Se aplica a**|
 |:-----|:-----|:-----|:-----|:-----|
 |1  <br/> |Software  <br/> |MALW  <br/> |[Directiva de malware](configure-anti-malware-policies.md) <br/> |Todas las organizaciones  <br/> |
 |segundo  <br/> |Suplantación  <br/> |PHSH  <br/> |[Configurar las directivas de filtro de correo no deseado](configure-your-spam-filter-policies.md) <br/> |Todas las organizaciones  <br/> |
@@ -428,7 +428,7 @@ En general, la Directiva aplicada a un mensaje se identifica en el encabezado X-
 
 Si tiene varias directivas antiphishing distintas, se aplicará la que tenga la prioridad más alta. Por ejemplo, supongamos que tiene dos directivas:
 
-|**Normativa**|**Prioridad**|**Suplantación de usuario o dominio**|**Contra la suplantación de identidad**|
+|**Directiva**|**Prioridad**|**Suplantación de usuario o dominio**|**Contra la suplantación de identidad**|
 |:-----|:-----|:-----|:-----|
 |A  <br/> |1  <br/> |Activado  <br/> |Off  <br/> |
 |B  <br/> |segundo  <br/> |Off  <br/> |Activado  <br/> |

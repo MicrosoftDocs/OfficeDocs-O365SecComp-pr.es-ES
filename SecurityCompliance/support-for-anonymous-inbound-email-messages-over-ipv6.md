@@ -1,7 +1,7 @@
 ---
 title: Compatibilidad para mensajes de correo electrónico entrante anónimos a través de IPv6
-ms.author: krowley
-author: kccross
+ms.author: tracyp
+author: MSFTTracyP
 manager: laurawi
 ms.date: ''
 ms.audience: ITPro
@@ -12,17 +12,19 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: b68df621-0a5f-4824-8abc-41e0c4fd1398
-description: Obtenga información sobre cómo configurar la compatibilidad con mensajes anónimos de orígenes de IPv6 para la protección en línea de Exchange y Exchange Online.
-ms.openlocfilehash: 0d324ce6e0ff0ff9104ef597176b09a5a319abc7
-ms.sourcegitcommit: 75b985b2574f4be70cf352498ea300b3d99dd338
+ms.collection:
+- M365-security-compliance
+description: Obtenga información sobre cómo configurar la compatibilidad con mensajes anónimos desde orígenes IPv6 para Exchange Online Protection y Exchange Online.
+ms.openlocfilehash: 229ee045d03b3fa4ccb7b4d5e59e1b2b7df6a7d7
+ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "26255815"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30276360"
 ---
 # <a name="support-for-anonymous-inbound-email-messages-over-ipv6"></a>Compatibilidad para mensajes de correo electrónico entrante anónimos a través de IPv6
 
-Exchange Online Protection (EOP) y Exchange Online admiten recibir mensajes de correo electrónico entrante anónimos a través de IPv6 communications de remitentes que no envíen mensajes a través de seguridad de capa de transporte (TLS). Puede participar en para recibir los mensajes a través de IPv6 solicitando esta funcionalidad de Microsoft Support abriendo el centro de administración de Office 365 en [https://portal.office.com/adminportal/home](https://portal.office.com/adminportal/home), haciendo clic en **soporte técnico**y, a continuación, haciendo clic en **nueva solicitud de servicio**). Si no participar en IPv6 se seguirá recibiendo los mensajes a través de IPv4.
+Exchange Online Protection (EOP) y Exchange Online permiten la recepción de mensajes de correo electrónico anónimos entrantes a través de comunicaciones IPv6 de remitentes que no envían mensajes a través de la Seguridad de capa de transporte (TLS). Puede optar por recibir mensajes a través de IPv6 solicitando esta funcionalidad del soporte técnico de Microsoft abriendo el centro de administración de Office [https://portal.office.com/adminportal/home](https://portal.office.com/adminportal/home)365 en, haciendo clic en **soporte técnico**y, a continuación, haciendo clic en **nueva solicitud de servicio**). Si decide no elegir IPv6, continuará recibiendo mensajes a través de IPv4.
   
 Los remitentes que transmiten mensajes al servicio a través de IPv6 deben cumplir las dos condiciones siguientes:
   
@@ -30,7 +32,7 @@ Los remitentes que transmiten mensajes al servicio a través de IPv6 deben cumpl
     
 2. El remitente debe pasar la verificación SPF (definida en la norma [RFC 7208](https://tools.ietf.org/html/rfc7208)) o la [verificación de DKIM](http://dkim.org/) (definida en la norma [RFC 6376](https://www.rfc-editor.org/rfc/rfc6376.txt)).
     
-Estos requisitos de la reunión es obligatoria independientemente de la configuración antes de optar en IPv6. Si se cumplen los requisitos de ambos, el mensaje se realizarán a través de filtrado de mensajes de correo electrónico normal proporcionado por el servicio. Si no se cumple uno u otro, se rechazará el mensaje con una de las siguientes 450 respuestas:
+Cumplir con estos requisitos es obligatorio independientemente de la configuración que se tenía antes de optar por IPv6. Si se cumplen ambos requisitos, el mensaje pasará los filtros de mensajes de correo electrónico normales que proporciona el servicio. Si no se cumple uno de los dos, el mensaje se rechaza con una de las siguientes respuestas 450:
   
 -  `450 4.7.25 Service unavailable, sending IPv6 address [2a01:111:f200:2004::240] must have reverse DNS record.`
     

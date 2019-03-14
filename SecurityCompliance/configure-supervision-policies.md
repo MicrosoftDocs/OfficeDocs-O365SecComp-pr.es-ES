@@ -17,19 +17,20 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: Configurar las directivas de revisión de supervisión para capturar las comunicaciones de los empleados para su revisión.
-ms.openlocfilehash: bb84520fed1eb5015d46c2c35931f786d29855e7
-ms.sourcegitcommit: 13c601ea11ce6a3c71036fdafda059061c6998d0
+ms.openlocfilehash: 2e321989934402b833d6190f65d696f4eb7919ca
+ms.sourcegitcommit: 547a05da067a8f66fdaccf1cc399afcf863f5a87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "30313176"
+ms.lasthandoff: 03/07/2019
+ms.locfileid: "30474161"
 ---
 # <a name="configure-supervision-policies-for-your-organization"></a>Configurar directivas de supervisión para su organización
 
 Usar directivas de supervisión para capturar las comunicaciones de los empleados para que las examinen los revisores externos o internos. Para obtener más información sobre cómo las directivas de supervisión pueden ayudarle a supervisar las comunicaciones en su organización, consulte [directivas de supervisión en Office 365](supervision-policies.md).
 
 > [!NOTE]
-> Los usuarios supervisados por directivas de supervisión deben tener una licencia de Office 365 Enterprise E3 con el complemento de cumplimiento avanzado o incluirse en una suscripción a Office 365 Enterprise E5. Si no tiene un plan existente de Enterprise E5 y desea intentar la supervisión, puede [registrarse para obtener una versión de prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
+> Los usuarios supervisados por directivas de supervisión deben tener una licencia de cumplimiento de Microsoft 365 E5, una licencia de Office 365 Enterprise E3 con el complemento de cumplimiento avanzado o incluirse en una suscripción a Office 365 Enterprise E5.
+Si no tiene un plan existente de Enterprise E5 y desea intentar la supervisión, puede [registrarse para obtener una versión de prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
   
 Siga estos pasos para configurar y usar la supervisión en su organización de Office 365:
   
@@ -79,7 +80,7 @@ En Contoso Financial International, se debe supervisar un muestreo de las comuni
 |**Configurar este grupo de distribución**|**Dirección del grupo (alias)**|**Descripción**|
 |:-----|:-----|:-----|
 |Todos los agentes de Estados Unidos | US_Brokers@Contoso.com | Este grupo incluye las direcciones de correo electrónico de todos los agentes en Estados Unidos que trabajan para Contoso. |
-| Todos los responsables de cumplimiento de Estados Unidos | US_Compliance@Contoso.com  | Este grupo incluye direcciones de correo electrónico para todos los responsables de cumplimiento basados en Estados Unidos que trabajan para contoso. Como este grupo es un subconjunto de todos los agentes basados en Estados Unidos, puede usar este alias para eximir a los agentes de cumplimiento de una directiva de supervisión. |
+| Todos los responsables de cumplimiento de Estados Unidos | US_Compliance@Contoso.com  | Este grupo incluye las direcciones de correo electrónico de todos los responsables de cumplimiento en Estados Unidos que trabajan para Contoso. Como este grupo es un subconjunto de todos los agentes basados en Estados Unidos, puede usar este alias para eximir a los agentes de cumplimiento de una directiva de supervisión. |
   
 <a name="MakeAvailable"> </a>
 
@@ -214,7 +215,7 @@ Para configurar la revisión para escritorio de Outlook o Outlook para la web, n
 
 A continuación, los revisores deberán ejecutar un par de comandos de PowerShell de Exchange Online para que puedan conectar Outlook al buzón de correo de supervisión.
   
-1. Conéctese a Exchange Online PowerShell. ¿ [Cómo puedo hacerlo?](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)
+1. Conexión a PowerShell de Exchange Online. [Pasos que seguir](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)
 
 2. Ejecute los siguientes comandos, donde *SupervisoryReview {GUID} @domain. onmicrosoft.com* es la dirección que copió en el paso 1 anterior y *User* es el nombre del revisor que se conectará al buzón de supervisión en el paso 3.
 

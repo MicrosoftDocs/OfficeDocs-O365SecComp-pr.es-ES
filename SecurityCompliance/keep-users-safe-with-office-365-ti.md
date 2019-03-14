@@ -15,12 +15,12 @@ ms.assetid: 3387bfc3-028a-42f4-8133-4cbecfaab812
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo las capacidades de investigación y respuesta de las amenazas de Office 365 pueden ayudar a su organización a detectar intrusiones y amenazas, y mitigar rápidamente y recuperarse de amenazas.
-ms.openlocfilehash: 4cb1355e841ee4b416bf5471872421b4c05433c5
-ms.sourcegitcommit: 74ad22a5c6c3c9d9324f0f97070909e323a4e9cf
+ms.openlocfilehash: 924ec3522b056b267f5e8af394f380aaff8392a2
+ms.sourcegitcommit: f25a667e4c7d11c43c87604d576f1e6d6155b14f
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 03/11/2019
-ms.locfileid: "30524034"
+ms.locfileid: "30536140"
 ---
 # <a name="keep-your-office-365-users-safe-with-office-365-threat-investigation-and-response-capabilities"></a>Mantener a los usuarios de Office 365 seguros con capacidades de investigación y respuesta de amenazas de Office 365
 
@@ -31,7 +31,7 @@ ms.locfileid: "30524034"
 La [respuesta y la investigación de amenazas de office 365](office-365-ti.md) es un conjunto de capacidades incluidas en su suscripción a Office 365 E5. Office 365 Threat Investigation and Response Capabilities han ayudado a Microsoft IT a reducir el tiempo promedio de resolución de incidencias de ingeniería social en un 80% y un mayor rendimiento del caso en un 37% al mes en comparación con los dos trimestres anteriores. 
 
 > [!IMPORTANT]
-> Office 365 Advanced Threat Protection y Threat Intelligence forman parte del plan 2 de la protección contra amenazas avanzada de Office 365, con capacidades de protección contra amenazas adicionales. Para obtener más información, consulte [planes y precios](https://products.office.com/exchange/advance-threat-protection) de la protección contra amenazas avanzada de Office 365 y la [Descripción del servicio de protección contra amenazas avanzada de Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+> La protección contra amenazas avanzada de Office 365 y la investigación y respuesta de amenazas (anteriormente conocida como Office 365 Threat Intelligence) ahora forman parte de Office 365 Advanced Threat Protection Plan 2, con capacidades adicionales de protección contra amenazas. Para obtener más información, consulte [planes y precios](https://products.office.com/exchange/advance-threat-protection) de la protección contra amenazas avanzada de Office 365 y la [Descripción del servicio de protección contra amenazas avanzada de Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
   
 Hemos agregado nuevas funcionalidades recientemente para ayudarle a detectar y recuperarse de amenazas. Este es un rápido paso por el modo en que las capacidades de investigación y respuesta de amenazas actualizadas pueden hacer que sea incluso más eficaz.
   
@@ -60,7 +60,7 @@ Si aún no tiene estas capacidades de investigación y respuesta de Office 365, 
 Las capacidades de investigación y respuesta de amenazas de Office 365 se alimentan con datos del gráfico de seguridad inteligente de Microsoft. El gráfico adquiere la última señal de amenazas de más de 1 mil millones dispositivos Windows, 450 mil millones inicios de sesión mensuales de Azure y 400 mil millones mensajes de correo electrónico mensuales en Office 365. Esta señal de amenaza sin rival es la que ofrece la gran visibilidad a un inquilino de cliente que es crucial para que los administradores y los analistas de seguridad tengan una visión completa de las amenazas que afectan a su organización. 
   
    
-## <a name="why-threat-intelligence"></a>¿Por qué inteligencia de amenazas?
+## <a name="why-use-office-365-threat-investigation-and-response-capabilities"></a>¿Por qué usar capacidades de investigación y respuesta de amenazas de Office 365?
 
 Gartner calcula que en 2017 se gastó por sola vez más de $90B en Cybersecurity. El SID Deshpande, el analista principal de investigación de Gartner, se ha citado como decir que "el cambio de la industria a la detección y la respuesta... envía un mensaje claro de que la prevención es inútil a menos que esté ligada a una capacidad de detección y respuesta. Threat investigtion and Response es una parte fundamental de la cartera de servicios de toda la empresa, y se puede consumir como un servicio independiente o como parte de Office 365 E5.
   

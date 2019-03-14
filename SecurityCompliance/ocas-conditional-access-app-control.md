@@ -6,22 +6,22 @@ manager: laurawi
 ms.reviewer: alesibov
 ms.audience: Admin
 ms.topic: reference
-ms.date: 02/14/2019
+ms.date: 02/27/2019
 ms.service: O365-seccomp
 localization_priority: Normal
 description: Detenga las infracciones y pérdidas en tiempo real con el control de aplicación de acceso condicional de seguridad de aplicación de Office 365 Cloud app.
-ms.openlocfilehash: 23c4b29e86eb8ba92cfa8a544d6484965ec6372b
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: d8370b1e02866db8f92ab7f6a46b06ddc3ed1055
+ms.sourcegitcommit: 866d8cab6bcfdd124516a8369e47ec797bc7cf8a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30217090"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "30312107"
 ---
 # <a name="protect-apps-with-office-365-cloud-app-security-conditional-access-app-control"></a>Proteger aplicaciones con el Control de aplicaciones de acceso condicional de Office 365 Cloud App Security
 
 |Evaluación * *\>**|Planeación * *\>**|Implementación * *\>**|Uso * * * *|
 |:-----|:-----|:-----|:-----|
-|[Empezar a evaluar](office-365-cas-overview.md) <br/> |[Empezar a planear](get-ready-for-office-365-cas.md) <br/> |Ya está aquí.  <br/> [Siguiente paso](ocas-deploy-conditional-access-app-control.md) <br/> |[Empezar a usar](utilization-activities-for-ocas.md) <br/> |
+|[Empezar a evaluar](office-365-cas-overview.md) <br/> |[Empezar a planear](get-ready-for-office-365-cas.md) <br/> |Ya está aquí.  <br/> [Paso siguiente](ocas-deploy-conditional-access-app-control.md) <br/> |[Empezar a usar](utilization-activities-for-ocas.md) <br/> |
 
 En el lugar de trabajo de hoy en día, a menudo no es suficiente saber lo que ocurre en su entorno de nube después del hecho. Desea detener las infracciones y las pérdidas en tiempo real, antes de que los empleados pongan en riesgo sus datos y su organización de forma intencionada o inadvertida. Es importante permitir que los usuarios de la organización hagan la mayor parte de los servicios y las herramientas disponibles en las aplicaciones en la nube, y les permitan poner en funcionamiento sus propios dispositivos. Al mismo tiempo, necesita herramientas para ayudar a proteger su organización contra pérdidas de datos y el robo de datos en tiempo real. Junto con Azure Active Directory, Office 365 Cloud App Security ofrece estas capacidades en una experiencia holística e integrada con el control de aplicación de acceso condicional.
 

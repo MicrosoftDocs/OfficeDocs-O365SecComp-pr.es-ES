@@ -12,14 +12,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 07e76024-0c80-40dc-8c48-1dd0d0f863cb
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
 description: Obtenga información sobre cómo activar ATP para SharePoint, OneDrive y Teams, incluido cómo establecer alertas para los archivos detectados.
-ms.openlocfilehash: 88eae37b0da3df75807436d66a5c80e0c40f82d8
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 30eb28bfc5156664656ca1c200f9e999661b3b0c
+ms.sourcegitcommit: 1c73c2f83703af0a30a5b0633db00d8e0e6b39b5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220400"
+ms.lasthandoff: 02/25/2019
+ms.locfileid: "30242152"
 ---
 # <a name="turn-on-office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Activar Office 365 ATP para SharePoint, OneDrive y Microsoft Teams
 
@@ -27,7 +28,7 @@ ms.locfileid: "30220400"
   
 Para definir (o editar) las directivas de ATP, debe tener asignado un rol apropiado. En la tabla siguiente se describen algunos ejemplos:
 
-|Rol  |Dónde y cómo se asigna  |
+|Role  |Dónde y cómo se asigna  |
 |---------|---------|
 |Administrador global de Office 365 |La persona que se registra para comprar Office 365 es un administrador global de forma predeterminada. (Consulte [acerca de los roles de administrador de Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) para obtener más información).         |
 |Administrador de seguridad |Centro de administración de Azure Active[https://aad.portal.azure.com](https://aad.portal.azure.com)Directory ()|
@@ -43,7 +44,7 @@ Para definir (o editar) las directivas de ATP, debe tener asignado un rol apropi
   
 3. Seleccione **Activar ATP para SharePoint, OneDrive y Microsoft Teams**.<br/>![Activar la protección contra amenazas avanzada para SharePoint Online, OneDrive para la empresa y Microsoft Teams](media/48cfaace-59cc-4e60-bf86-05ff6b99bdbf.png)
   
-4. Haga clic en **Guardar**.
+4. Haga clic en **Guardar **.
     
 5. Revise (y, según corresponda, Edit) las directivas de [datos adjuntos seguros](set-up-atp-safe-attachments-policies.md) de su organización y [las directivas de vínculos a prueba](set-up-atp-safe-links-policies.md)de errores.
     
@@ -73,13 +74,13 @@ Para recibir una notificación cuando se identificó un archivo en SharePoint On
     
 5. En la sección **enviar esta alerta cuando...** , haga lo siguiente: 
     
-    a. en la lista **actividades** , elija **malware detectado en el archivo**.
+    a. En la lista **actividades** , seleccione **malware detectado en el archivo**.
     
-    b. deje el campo **usuarios** vacío. 
+    b. Deje el campo **usuarios** vacío. 
     
 6. En la sección **enviar esta alerta a...** , seleccione uno o varios administradores globales, administradores de seguridad o lectores de seguridad que deben recibir una notificación cuando se detecte un archivo malintencionado. 
     
-7. Haga clic en **Guardar**.
+7. Haga clic en **Guardar **.
     
 Para obtener más información acerca de las alertas, consulte [crear alertas de actividad en &amp; el centro de seguridad y cumplimiento de Office 365](create-activity-alerts.md). 
   

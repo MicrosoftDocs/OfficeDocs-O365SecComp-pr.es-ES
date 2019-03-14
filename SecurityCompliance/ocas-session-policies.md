@@ -6,22 +6,22 @@ manager: laurawi
 ms.reviewer: alesibov
 ms.audience: Admin
 ms.topic: reference
-ms.date: 02/14/2019
+ms.date: 02/27/2019
 ms.service: O365-seccomp
 localization_priority: Normal
 description: Las directivas de sesión de seguridad de aplicación de nube de Office 365 permiten la supervisión en tiempo real de los usuarios, lo que le ofrece una visibilidad granular de las aplicaciones de Office 365 y la capacidad de realizar diferentes acciones según la Directiva que establezca para una sesión de usuario. En lugar de permitir o bloquear completamente el acceso, con el control de sesión puede permitir el acceso a la vez que supervisa la sesión o limitar actividades de sesión específicas mediante el uso de las funciones de proxy inverso del control de aplicación de acceso condicional.
-ms.openlocfilehash: a57b62073e93c95217a829f8aa381f4a585dacc5
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: e0e4b04ee8cc0f7a14adbc26b074a5f2947e44c2
+ms.sourcegitcommit: 866d8cab6bcfdd124516a8369e47ec797bc7cf8a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218610"
+ms.lasthandoff: 02/27/2019
+ms.locfileid: "30312097"
 ---
 # <a name="session-policies-in-office-365-cloud-app-security"></a>Directivas de sesión en Office 365 Cloud App Security
 
 |Evaluación * *\>**|Planeación * *\>**|Implementación * *\>**|Uso * * * *|
 |:-----|:-----|:-----|:-----|
-|[Empezar a evaluar](office-365-cas-overview.md) <br/> |[Empezar a planear](get-ready-for-office-365-cas.md) <br/> |Ya está aquí.  <br/> [Siguiente paso](ocas-access-policies.md) <br/> |[Empezar a usar](utilization-activities-for-ocas.md) <br/> |
+|[Empezar a evaluar](office-365-cas-overview.md) <br/> |[Empezar a planear](get-ready-for-office-365-cas.md) <br/> |Ya está aquí.  <br/> [Paso siguiente](ocas-access-policies.md) <br/> |[Empezar a usar](utilization-activities-for-ocas.md) <br/> |
 
 Las directivas de sesión de seguridad de aplicación de nube de Office 365 permiten la supervisión en tiempo real de los usuarios, lo que le ofrece una visibilidad granular de las aplicaciones de Office 365 y la capacidad de realizar diferentes acciones según la Directiva que establezca para una sesión de usuario. En lugar de permitir o bloquear completamente el acceso, con el control de sesión puede permitir el acceso a la vez que supervisa la sesión o limitar actividades de sesión específicas mediante el uso de las funciones de proxy inverso del control de aplicación de acceso condicional.
 

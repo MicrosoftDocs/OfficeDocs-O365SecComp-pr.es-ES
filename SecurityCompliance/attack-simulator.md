@@ -15,19 +15,19 @@ ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
 description: Como administrador global de Office 365, puede usar simulador de ataque para ejecutar escenarios de ataque realistas en su organización. Esto puede ayudarle a identificar y encontrar a los usuarios vulnerables antes de que un ataque real reconozca a su empresa.
-ms.openlocfilehash: 8cbe3c5c34bbc68fc89c8550d9711d953dced9b5
-ms.sourcegitcommit: 74ad22a5c6c3c9d9324f0f97070909e323a4e9cf
+ms.openlocfilehash: 1956dd2dda187b9d1d0147911dd278e8ae3650b3
+ms.sourcegitcommit: f25a667e4c7d11c43c87604d576f1e6d6155b14f
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 03/11/2019
-ms.locfileid: "30524064"
+ms.locfileid: "30536160"
 ---
 # <a name="attack-simulator-in-office-365"></a>Simulador de ataques en Office 365
 
 **Resumen** Si es un administrador global de Office 365 y su organización tiene [office 365 de investigación de amenazas y respuesta capabilties](office-365-ti.md), puede usar simulaDor de ataque para ejecutar escenarios de ataque realistas en su organización. Esto puede ayudarle a identificar y encontrar usuarios vulnerables antes de que un ataque real afecte a su conclusión. Lea este artículo para obtener más información.
 
 > [!IMPORTANT]
-> Office 365 Threat Intelligence ahora forma parte de Office 365 plan de protección contra amenazas avanzada 2, con capacidades de protección contra amenazas adicionales. Para obtener más información, consulte [planes y precios](https://products.office.com/exchange/advance-threat-protection) de la protección contra amenazas avanzada de Office 365 y la [Descripción del servicio de protección contra amenazas avanzada de Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+> La protección contra amenazas avanzada de Office 365 y la investigación y respuesta de amenazas (anteriormente conocida como inteligencia de amenazas) ahora forman parte de Office 365 plan de protección contra amenazas avanzada 2, con capacidades de protección contra amenazas adicionales. Para obtener más información, consulte [planes y precios](https://products.office.com/exchange/advance-threat-protection) de la protección contra amenazas avanzada de Office 365 y la [Descripción del servicio de protección contra amenazas avanzada de Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
   
 ## <a name="the-attacks"></a>Los ataques
 
@@ -137,7 +137,7 @@ Se han agregado nuevas características a simulador de ataque. Entre estos, incl
 
 Visite el [mapa de ruta de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap) para ver lo que se está desarrollando, lo que está implementando y lo que ya se ha iniciado.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Recursos adicionales
 
 [Desription del servicio de protección contra amenazas avanzada de Office 365](https://docs.microsoft.com/en-us/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
 

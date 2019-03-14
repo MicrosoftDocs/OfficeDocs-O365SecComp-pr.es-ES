@@ -14,12 +14,12 @@ ms.assetid: c7dee22c-9b5b-425c-91a9-d093204ff84e
 ms.collection:
 - M365-security-compliance
 description: Breve descripción de lo que los administradores de Exchange Online deben hacer para ver y configurar la configuración S/MIME en Outlook en la web en Exchange Online.
-ms.openlocfilehash: 74d2f37f0cabc0b49abdd78d2a10928b543fd615
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 005c3075ec8fe6255231ba7358e5b4cc22b92f1d
+ms.sourcegitcommit: 8b36bf7949f1769f1418d740293637d60e403f87
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295363"
+ms.lasthandoff: 02/28/2019
+ms.locfileid: "30339448"
 ---
 # <a name="configure-smime-settings-in-exchange-online-for-outlook-on-the-web"></a>Configurar la configuración S/MIME en Exchange Online para Outlook en la web
 
@@ -29,7 +29,9 @@ Para obtener información más detallada acerca de la sintaxis y los parámetros
 
 ## <a name="considerations-for-chrome"></a>Consideraciones sobre Chrome
 
-Para usar S/MIME en Outlook en la web en el explorador web Google Chrome, usted (u otro administrador) debe establecer y configurar la Directiva de cromo denominada **ExtensionInstallForcelist** para instalar la extensión S/MIME de Microsoft en Chrome. La Directiva debe usar la sintaxis: `<extension-id>;https://outlook.office.com/owa/SmimeCrxUpdate.ashx` por ejemplo: `maafgiompdekodanheihhgilkjchcakm;https://outlook.office.com/owa/SmimeCrxUpdate.ashx`. Este paso es un requisito previo para usar Chrome; no reemplaza el control S/MIME instalado por los usuarios. Para obtener más información sobre la directiva **ExtensionInstallForcelist** , consulte [ExtensionInstallForcelist](http://dev.chromium.org/administrators/policy-list-3#ExtensionInstallForcelist).
+Para usar S/MIME en Outlook en la web en el explorador web Google Chrome, usted (u otro administrador) debe establecer y configurar la Directiva de cromo denominada **ExtensionInstallForcelist** para instalar la extensión S/MIME de Microsoft en Chrome. La Directiva debe usar la sintaxis: `<extension-id>;https://outlook.office.com/owa/SmimeCrxUpdate.ashx` por ejemplo: `maafgiompdekodanheihhgilkjchcakm;https://outlook.office.com/owa/SmimeCrxUpdate.ashx`. Además, tenga en cuenta que la aplicación de esta directiva requiere equipos Unidos a un dominio, por lo que el uso de S/MIME en Chrome requiere equipos Unidos a un dominio de manera eficaz.
+
+Este paso es un requisito previo para usar Chrome; no reemplaza el control S/MIME instalado por los usuarios. Para obtener más información sobre la directiva **ExtensionInstallForcelist** , consulte [ExtensionInstallForcelist](http://dev.chromium.org/administrators/policy-list-3#ExtensionInstallForcelist).
 
 ## <a name="for-more-information"></a>Más información
 
