@@ -7,39 +7,40 @@ ms.date: 6/8/2018
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Priority
+localization_priority: Priority\
+ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: d104fb44-1c42-4541-89a6-1f67be22e4ad
 description: Obtenga información sobre cómo obtener acceso a Azure Active Directory, que se incluye en la suscripción de pago de Office 365 de su organización.
-ms.openlocfilehash: f5d6c80c02b28ff5f916a55a34ffc4cd869a8663
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 0a8ed74a0e135ae216f33401016a7321ad1a1adf
+ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30217670"
+ms.lasthandoff: 02/26/2019
+ms.locfileid: "30295603"
 ---
-# <a name="use-your-free-azure-active-directory-subscription-in-office-365"></a><span data-ttu-id="502b1-103">Usar su suscripción gratuita de Azure Active Directory en Office 365</span><span class="sxs-lookup"><span data-stu-id="502b1-103">Use your free Azure Active Directory subscription in Office 365</span></span>
+# <a name="use-your-free-azure-active-directory-subscription-in-office-365"></a><span data-ttu-id="b07a3-103">Usar su suscripción gratuita de Azure Active Directory en Office 365</span><span class="sxs-lookup"><span data-stu-id="b07a3-103">Use your free Azure Active Directory subscription in Office 365</span></span>
 
-<span data-ttu-id="502b1-p101">Si su organización tiene una suscripción de pago a Office 365, Microsoft Dynamics CRM Online, Enterprise Mobility Suite u otros servicios Microsoft, ya tiene una suscripción gratuita a Microsoft Azure Active Directory. Los administradores pueden usar Azure AD para crear y administrar cuentas de usuario y grupo. Para usar Azure AD, vaya a Azure Portal e inicie sesión con su cuenta de Office 365.</span><span class="sxs-lookup"><span data-stu-id="502b1-p101">If your organization has a paid subscription to Office 365, Microsoft Dynamics CRM Online, Enterprise Mobility Suite, or other Microsoft services, you have a free subscription to Microsoft Azure Active Directory. You and other admins can use Azure AD to create and manage user and group accounts. To use Azure AD, just go to the Azure portal and sign in using your Office 365 account.</span></span>
+<span data-ttu-id="b07a3-p101">Si su organización tiene una suscripción de pago a Office 365, Microsoft Dynamics CRM Online, Enterprise Mobility Suite u otros servicios Microsoft, ya tiene una suscripción gratuita a Microsoft Azure Active Directory. Los administradores pueden usar Azure AD para crear y administrar cuentas de usuario y grupo. Para usar Azure AD, vaya a Azure Portal e inicie sesión con su cuenta de Office 365.</span><span class="sxs-lookup"><span data-stu-id="b07a3-p101">If your organization has a paid subscription to Office 365, Microsoft Dynamics CRM Online, Enterprise Mobility Suite, or other Microsoft services, you have a free subscription to Microsoft Azure Active Directory. You and other admins can use Azure AD to create and manage user and group accounts. To use Azure AD, just go to the Azure portal and sign in using your Office 365 account.</span></span>
   
-## <a name="before-you-begin"></a><span data-ttu-id="502b1-107">Antes de empezar</span><span class="sxs-lookup"><span data-stu-id="502b1-107">Before you begin</span></span>
+## <a name="before-you-begin"></a><span data-ttu-id="b07a3-107">Antes de empezar</span><span class="sxs-lookup"><span data-stu-id="b07a3-107">Before you begin</span></span>
 
-<span data-ttu-id="502b1-p102">Use una sesión de exploración privada (no una sesión normal) para obtener acceso a Azure Portal (en el paso 1 siguiente), ya que esto impedirá que la credencial con la que inició la sesión se pase a Azure. Para abrir una sesión de Exploración de InPrivate en Internet Explorer o una sesión de exploración privada en Mozilla Firefox, presione CTRL+MAYÚS+P. Para abrir una sesión de exploración privada en Google Chrome (denominada ventana de incógnito), presione CTRL+MAYÚS+N.</span><span class="sxs-lookup"><span data-stu-id="502b1-p102">Use a private browsing session (not a regular session) to access the Azure portal (in step 1 below) because this will prevent the credential that you are currently logged on with from being passed to Azure. To open an InPrivate Browsing session in Internet Explorer or a Private Browsing session in Mozilla FireFox, just press CTRL+SHIFT+P. To open a private browsing session in Google Chrome (called an incognito window), press CTRL+SHIFT+N.</span></span>
+<span data-ttu-id="b07a3-p102">Use una sesión de exploración privada (no una sesión normal) para obtener acceso a Azure Portal (en el paso 1 siguiente), ya que esto impedirá que la credencial con la que inició la sesión se pase a Azure. Para abrir una sesión de Exploración de InPrivate en Internet Explorer o una sesión de exploración privada en Mozilla Firefox, presione CTRL+MAYÚS+P. Para abrir una sesión de exploración privada en Google Chrome (denominada ventana de incógnito), presione CTRL+MAYÚS+N.</span><span class="sxs-lookup"><span data-stu-id="b07a3-p102">Use a private browsing session (not a regular session) to access the Azure portal (in step 1 below) because this will prevent the credential that you are currently logged on with from being passed to Azure. To open an InPrivate Browsing session in Internet Explorer or a Private Browsing session in Mozilla FireFox, just press CTRL+SHIFT+P. To open a private browsing session in Google Chrome (called an incognito window), press CTRL+SHIFT+N.</span></span>
   
-## <a name="access-azure-active-directory"></a><span data-ttu-id="502b1-111">Obtener acceso a Azure Active Directory</span><span class="sxs-lookup"><span data-stu-id="502b1-111">Access Azure Active Directory</span></span>
+## <a name="access-azure-active-directory"></a><span data-ttu-id="b07a3-111">Obtener acceso a Azure Active Directory</span><span class="sxs-lookup"><span data-stu-id="b07a3-111">Access Azure Active Directory</span></span>
 
-1. <span data-ttu-id="502b1-112">Vaya a [portal.azure.com](https://portal.azure.com) e inicie sesión con su cuenta profesional o educativa de Office 365.</span><span class="sxs-lookup"><span data-stu-id="502b1-112">Go to [portal.azure.com](https://portal.azure.com) and sign in with your Office 365 work or student account.</span></span> 
+1. <span data-ttu-id="b07a3-112">Vaya a [portal.azure.com](https://portal.azure.com) e inicie sesión con su cuenta profesional o educativa de Office 365.</span><span class="sxs-lookup"><span data-stu-id="b07a3-112">Go to [portal.azure.com](https://portal.azure.com) and sign in with your Office 365 work or student account.</span></span> 
     
-2. <span data-ttu-id="502b1-113">En el panel de navegación izquierdo de Azure Portal, haga clic en **Azure Active Directory**.</span><span class="sxs-lookup"><span data-stu-id="502b1-113">In the left navigation pane in the Azure portal, click **Azure Active Directory**.</span></span>
+2. <span data-ttu-id="b07a3-113">En el panel de navegación izquierdo de Azure Portal, haga clic en **Azure Active Directory**.</span><span class="sxs-lookup"><span data-stu-id="b07a3-113">In the left navigation pane in the Azure portal, click **Azure Active Directory**.</span></span>
     
     ![En el panel de navegación izquierdo de Azure Portal, haga clic en Azure Active Directory.](media/97d2d72f-ac20-46ab-898c-851f6009b453.png)
   
-    <span data-ttu-id="502b1-115">Se mostrará el Centro de administración de **Azure Active Directory**.</span><span class="sxs-lookup"><span data-stu-id="502b1-115">The **Azure Active Directory** admin center is displayed.</span></span> 
+    <span data-ttu-id="b07a3-115">Se mostrará el Centro de administración de **Azure Active Directory**.</span><span class="sxs-lookup"><span data-stu-id="b07a3-115">The **Azure Active Directory** admin center is displayed.</span></span> 
     
-## <a name="more-information"></a><span data-ttu-id="502b1-116">Más información</span><span class="sxs-lookup"><span data-stu-id="502b1-116">More information</span></span>
+## <a name="more-information"></a><span data-ttu-id="b07a3-116">Más información</span><span class="sxs-lookup"><span data-stu-id="b07a3-116">More information</span></span>
 
-- <span data-ttu-id="502b1-p103">También puede obtener acceso al Centro de administración de **Azure Active Directory** desde el Centro de administración de Office 365. En el panel de navegación izquierdo del Centro de administración de Office 365, haga clic en **Centros de administración** \> **Azure Active Directory**.</span><span class="sxs-lookup"><span data-stu-id="502b1-p103">You can also access the **Azure Active Directory** admin center from the Office 365 admin center. In the left navigation pane of the Office 365 admin center , click **Admin centers** \> **Azure Active Directory**.</span></span>
+- <span data-ttu-id="b07a3-p103">También puede obtener acceso al Centro de administración de **Azure Active Directory** desde el Centro de administración de Office 365. En el panel de navegación izquierdo del Centro de administración de Office 365, haga clic en **Centros de administración** \> **Azure Active Directory**.</span><span class="sxs-lookup"><span data-stu-id="b07a3-p103">You can also access the **Azure Active Directory** admin center from the Office 365 admin center. In the left navigation pane of the Office 365 admin center , click **Admin centers** \> **Azure Active Directory**.</span></span>
     
-- <span data-ttu-id="502b1-119">Para obtener información sobre cómo administrar usuarios y grupos, así como realizar otras tareas de administración de directorio, vea [Administrar el directorio de Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-administer).</span><span class="sxs-lookup"><span data-stu-id="502b1-119">For information about managing users and groups and performing other directory management tasks, see [Manage your Azure AD directory](https://docs.microsoft.com/azure/active-directory/active-directory-administer).</span></span>
+- <span data-ttu-id="b07a3-119">Para obtener información sobre cómo administrar usuarios y grupos, así como realizar otras tareas de administración de directorio, vea [Administrar el directorio de Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-administer).</span><span class="sxs-lookup"><span data-stu-id="b07a3-119">For information about managing users and groups and performing other directory management tasks, see [Manage your Azure AD directory](https://docs.microsoft.com/azure/active-directory/active-directory-administer).</span></span>

@@ -178,14 +178,15 @@
 ### [ATP para SharePoint, OneDrive y Microsoft Teams](atp-for-spo-odb-and-teams.md).
 #### [Activar ATP para SharePoint, OneDrive y Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md).
 #### [Ver información sobre los archivos malintencionados](malicious-files-detected-in-spo-odb-or-teams.md)
-
-## [Funciones de la Inteligencia sobre amenazas](office-365-ti.md)
-### [Introducción a la inteligencia sobre amenazas](get-started-with-ti.md)
-### [Integrar la inteligencia de amenazas con la Protección contra amenazas avanzada de Windows Defender](integrate-office-365-ti-with-wdatp.md)
+### [Integrar ATP de Office 365 con la Protección contra amenazas avanzada de Windows Defender](integrate-office-365-ti-with-wdatp.md)
+### [Integración de SIEM con ATP de Office 365](siem-integration-with-office-365-ti.md)
+## [Investigación y respuesta de amenazas](office-365-ti.md)
+### [Introducción](get-started-with-ti.md)
+### [Rastreadores de amenazas](threat-trackers.md)
+### [Usar el explorador en el Centro de seguridad y cumplimiento](use-explorer-in-security-and-compliance.md)
+### [Ver informes de ATP](view-reports-for-atp.md)
 ### [Simulador de ataques en Office 365](attack-simulator.md)
-### [Integración de SIEM con la inteligencia sobre amenazas](siem-integration-with-office-365-ti.md)
-### [Mantener la seguridad de los usuarios con la inteligencia sobre amenazas](keep-users-safe-with-office-365-ti.md)
-
+### [Mantener la seguridad de los usuarios con la investigación y respuesta de amenazas](keep-users-safe-with-office-365-ti.md)
 ## [Supervisar y administrar el acceso a datos con Office 365 Cloud App Security](office-365-cas-overview.md)
 ### [Novedades de Cloud App Security](new-in-office-365-cas.md)
 #### [Actualizaciones durante 2018](new-in-office-365-cas-2018.md)
@@ -377,9 +378,6 @@
 # Supervisión de la seguridad y el cumplimiento
 ## [Directivas de alerta](alert-policies.md)
 ## [Informes inteligentes y reportes en el Centro de seguridad y cumplimiento](reports-and-insights-in-security-and-compliance.md)
-### [Rastreadores de amenazas](threat-trackers.md)
-### [Usar el explorador en el Centro de seguridad y cumplimiento](use-explorer-in-security-and-compliance.md)
-### [Ver informes de ATP](view-reports-for-atp.md)
 ### [Ver informes de seguridad de correo electrónico en el Centro de seguridad y cumplimiento](view-email-security-reports.md)
 ### [Tutorial: desde un informe detallado a un reporte](from-a-detailed-report-to-an-insight.md)
 ### [Tutorial: desde un reporte a un informe detallado](from-an-insight-to-a-detailed-report.md)
