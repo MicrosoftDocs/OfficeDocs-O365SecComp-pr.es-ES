@@ -3,7 +3,7 @@ title: Entrega dinámica y vista previa con datos adJuntos seguros de Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 01/08/2019
+ms.date: 03/12/2019
 ms.audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -15,16 +15,18 @@ ms.assetid: f16c9928-8e3d-4219-b994-271dc9a16272
 ms.collection:
 - M365-security-compliance
 description: Cuando configure las directivas de datos adjuntos seguros de ATP, elija la entrega dinámica para evitar retrasos en los mensajes y permitir a los usuarios obtener una vista previa de los datos adjuntos que se están analizando.
-ms.openlocfilehash: 1fb221d28a4089db8a4278903107c610d6825f5e
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: d27fa16f8d1d117aa56a2080eb020ab3638ca6fe
+ms.sourcegitcommit: f86383dcb9c52352661d51b22617f1809445beaa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218400"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30573514"
 ---
 # <a name="dynamic-delivery-and-previewing-with-office-365-atp-safe-attachments"></a>Entrega dinámica y vista previa con datos adJuntos seguros de Office 365 ATP
 
-**Resumen**: la entrega dinámica es una opción que se puede seleccionar para los [datos adjuntos seguros de ATP](atp-safe-attachments.md). Lea este artículo para obtener información sobre las capacidades de entrega y vista previa de datos adjuntos de ATP en los [datos adjuntos seguros de ATP en Office 365](atp-safe-attachments.md).
+## <a name="overview"></a>Información general
+
+La entrega dinámica es una opción que se puede seleccionar para los [datos adjuntos seguros de ATP](atp-safe-attachments.md). Lea este artículo para obtener información sobre las capacidades de entrega y vista previa de datos adjuntos de ATP en los [datos adjuntos seguros de ATP en Office 365](atp-safe-attachments.md).
 
 Cuando [se configuran directivas de datos adjuntos seguros ATP](set-up-atp-safe-attachments-policies.md) para la organización, hay varias opciones sobre cómo se administran los datos adjuntos de correo electrónico. Entre estos se incluyen **bloquear**, **reemplazar**y **entrega dinámica**. En función de cómo estén configuradas las directivas de datos adJuntos seguros de ATP, los destinatarios de correo electrónico podrían experimentar un retraso menor en la entrega de correo electrónico mientras se examinan los datos adjuntos. Para evitar retrasos en los mensajes, elija **entrega dinámica**.
   
@@ -51,7 +53,7 @@ Suponga que una organización está usando la entrega dinámica para la [Directi
   
 - Si un destinatario está cubierto por una directiva de datos adJuntos seguros de ATP mediante la opción de entrega dinámica, el destinatario verá el marcador de posición, con la capacidad de obtener una vista previa de los archivos compatibles.
     
-- Si un destinatario no está cubierto por una directiva de datos adJuntos seguros de ATP, el correo electrónico y los datos adjuntos pasarán, sin el análisis de datos adjuntos seguros de ATP o los marcadores de posición de datos adjuntos.
+- Si un destinatario no está cubierto por una directiva de datos adJuntos seguros de ATP, el correo electrónico y los datos adjuntos se recorrerán, sin ningún marcador seguro de datos adjuntos de ATP o marcadores de posición de datos adjuntos.
     
 ## <a name="whats-required-for-dynamic-delivery-to-work"></a>¿Qué se necesita para que funcione la entrega dinámica?
 
@@ -59,11 +61,11 @@ Suponga que una organización está usando la entrega dinámica para la [Directi
     
 - Las directivas deben definirse para los datos adJuntos seguros de ATP que usen la opción de entrega dinámica (consulte [configurar las directivas de datos adjuntos seguros de ATP en Office 365](set-up-atp-safe-attachments-policies.md))
     
-- El correo electrónico de su organización debe estar hospedado en Office 365
+- El correo electrónico de la organización debe estar hospedado en Office 365. Si bien [se puede usar la protección contra amenazas avanzada de Office 365 con cualquier agente de transferencia de correo SMTP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#requirements-for-office-365-advanced-threat-protection-atp) (como Exchange Server), la opción de entrega dinámica para datos adJuntos seguros de ATP requiere que el correo electrónico de la organización se hospede en Office 365. Si el correo electrónico no está hospedado en Office 365, elija otra [opción de directiva de datos adjuntos seguros de ATP](set-up-atp-safe-attachments-policies.md#step-3-learn-about-atp-safe-attachments-policy-options), como **bloquear**.
     
-## <a name="are-there-scenarios-for-which-dynamic-delivery-is-not-available"></a>¿Hay algún escenario para el que no esté disponible la entrega dinámica?
+## <a name="additional-considerations"></a>Consideraciones adicionales
 
-Hay algunos escenarios en los que no se admite la entrega dinámica. Entre ellas se incluyen las siguientes:
+Hay algunos escenarios en los que no se admite la entrega dinámica. Por ejemplo, los siguientes:
   
 - Mensajes de correo electrónico que están en carpetas públicas
     
@@ -79,3 +81,4 @@ Hay algunos escenarios en los que no se admite la entrega dinámica. Entre ellas
 
 - Mensajes cifrados con [extensiones seguras multipropósito al correo de Internet (S/MIME)](s-mime-for-message-signing-and-encryption.md))
 
+En los casos en los que no se admite la entrega dinámica, los datos adJuntos seguros de ATP no analizarán los mensajes de correo electrónico. Sin embargo, en función de la configuración de las [directivas de vínculos seguros de ATP](set-up-atp-safe-links-policies.md) , se comprobarán las direcciones URL de los mensajes de correo electrónico (y los archivos de Office).

@@ -13,12 +13,12 @@ ms.assetid: e313c489-ce5e-4015-aadf-981c697ab51f
 ms.collection:
 - M365-security-compliance
 description: El cifrado de mensajes de Office 365 permite a los usuarios de correo electrónico enviar mensajes cifrados a personas de fuera de su organización. Como administrador, puede habilitar el cifrado de mensajes de Office 365 mediante la creación de reglas de flujo de correo (también conocidas como reglas de transporte) que establezcan las condiciones para el cifrado.
-ms.openlocfilehash: 8ac06928f715ff52404afab024efa6834eaf4347
-ms.sourcegitcommit: 5eb664b6ecef94aef4018a75684ee4ae66c486bb
+ms.openlocfilehash: b59acbf84f5f737712639dde04d03f41bbafac89
+ms.sourcegitcommit: f86383dcb9c52352661d51b22617f1809445beaa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30492739"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "30573504"
 ---
 # <a name="enable-message-encryption-and-decryption-in-office-365"></a>Habilitar el cifrado y el descifrado de mensajes en Office 365
 
