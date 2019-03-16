@@ -1,7 +1,7 @@
 ---
 title: Ver los informes de prevención de pérdida de datos
-ms.author: stephow
-author: stephow-MSFT
+ms.author: deniseb
+author: denisebmsft
 manager: laurawi
 ms.date: 6/7/2018
 ms.audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con los informes de DLP en Office 365, puede ver rápidamente el número de coincidencias de directivas de DLP, invalidaciones o falsos positivos; ver si las tendencias están arriba o abajo con el tiempo; filtrar el informe de diferentes formas; y ver detalles adicionales seleccionando un punto en una línea del gráfico.
-ms.openlocfilehash: bd2bc63fa3e2ea08f44ddb3923786010c59e829f
-ms.sourcegitcommit: 173936324ea015d788703440924ec8a9fb0db88b
+ms.openlocfilehash: 447245f945bd777f56cca71320a72a9d9dd8720e
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30510227"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30639027"
 ---
 # <a name="view-the-reports-for-data-loss-prevention"></a>Ver los informes de prevención de pérdida de datos
 

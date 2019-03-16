@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: 'Obtenga información sobre el correo electrónico y las propiedades de archivo que puede buscar en los buzones de Exchange Online y en los sitios de SharePoint o de OneDrive para la empresa &amp; mediante la herramienta de búsqueda de contenido en el centro de seguridad y cumplimiento de Office 365.  '
-ms.openlocfilehash: 49236223392af94a5641a9b319d2168f53bbcc06
-ms.sourcegitcommit: 03054baf50c1dd5cd9ca6a9bd5d056f3db98f964
+ms.openlocfilehash: 478f0f7089046cea9a1650fc090e59fc056db8a9
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30354762"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30639167"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>Consultas de palabras clave y condiciones de búsqueda para la búsqueda de contenido
 
@@ -123,11 +123,14 @@ En la siguiente tabla se enumeran las propiedades de los contactos que se indiza
 
 ## <a name="searchable-sensitive-data-types"></a>Tipos de datos confidenciales que se pueden buscar
 
-Puede usar la característica de búsqueda de contenido en el &amp; centro de seguridad y cumplimiento para buscar datos confidenciales, como los números de tarjetas de crédito o los números de la seguridad social, que se almacenan en documentos en los sitios de SharePoint y OneDrive para la empresa. Para ello, use la `SensitiveType` propiedad y el nombre de un tipo de información confidencial en una consulta de palabra clave. Por ejemplo, la consulta `SensitiveType:"Credit Card Number"` devuelve documentos que contienen un número de tarjeta de crédito. La consulta `SensitiveType:"U.S. Social Security Number (SSN)"` devuelve documentos que contienen un número de la seguridad social de Estados Unidos. Para ver una lista de los tipos de datos confidenciales que puede buscar, vaya a **clasifications** \> **Sensitive Information Types** en el &amp; centro de seguridad y cumplimiento. O bien, puede usar el cmdlet **Get-DlpSensitiveInformationType** en el &amp; centro de seguridad y cumplimiento de PowerShell para mostrar una lista de tipos de información confidencial. 
+Puede usar la característica de búsqueda de contenido en el centro de seguridad & cumplimiento para buscar datos confidenciales, como los números de tarjetas de crédito o los números de la seguridad social, que se almacenan en documentos en los sitios de SharePoint y OneDrive para la empresa. Para ello, use la `SensitiveType` propiedad y el nombre de un tipo de información confidencial en una consulta de palabra clave. Por ejemplo, la consulta `SensitiveType:"Credit Card Number"` devuelve documentos que contienen un número de tarjeta de crédito. La consulta `SensitiveType:"U.S. Social Security Number (SSN)"` devuelve documentos que contienen un número de la seguridad social de Estados Unidos. Para ver una lista de los tipos de datos confidenciales que puede buscar, vaya a **clasifications** \> **Sensitive Information Types** en el &amp; centro de seguridad y cumplimiento. O bien, puede usar el cmdlet **Get-DlpSensitiveInformationType** en el &amp; centro de seguridad y cumplimiento de PowerShell para mostrar una lista de tipos de información confidencial. 
   
 También puede usar la `SensitiveType` propiedad para buscar el nombre de un tipo personalizado de información confidencial que usted (u otro administrador) creado para su organización. Tenga en cuenta que puede usar **** la columna Publisher en la página **tipos de información confidencial** en el centro de seguridad &amp; y cumplimiento (o la propiedad Publisher en PowerShell) para diferenciar entre los tipos de datos confidenciales integrados y personalizados **** tipos de información. Para obtener más información, vea [crear un tipo personalizado de información confidencial](create-a-custom-sensitive-information-type.md).
   
 Para obtener más información acerca de la creación `SensitiveType` de consultas mediante la propiedad, vea el [formulario a Query para buscar datos confidenciales almacenados en sitios](form-a-query-to-find-sensitive-data-stored-on-sites.md).
+
+> [!NOTE]
+> No puede usar tipos de datos confidenciales `SensitiveType` y la propiedad Search para buscar datos confidenciales en el resto de los buzones de Exchange Online. Sin embargo, puede usar las directivas de prevención de pérdida de datos (DLP) para proteger los datos confidenciales de correo electrónico en tránsito. Para obtener más información, vea [información general sobre las directivas de prevención de pérdida de datos](data-loss-prevention-policies.md) y [Buscar y buscar datos personales](search-for-and-find-personal-data.md).
   
 ## <a name="search-operators"></a>Operadores de búsqueda
 
@@ -192,7 +195,7 @@ Cree una condición usando las propiedades de correo cuando busque buzones o car
 |:-----|:-----|
 |Tipo de mensaje| El tipo de mensaje para buscar. Se trata de la misma propiedad que la propiedad de correo electrónico Tipo. Valores posibles:  <br/><br/>  contactos  <br/>  documentos  <br/>  correo electrónico  <br/>  externaldata  <br/>  faxes  <br/>  mensajería instantánea  <br/>  diarios  <br/>  reuniones  <br/>  Microsoft Teams  <br/>  notas  <br/>  entradas  <br/>  fuentes rss  <br/>  tareas  <br/>  correo de voz|
 |Participantes|Todos los campos de personas en un mensaje de correo electrónico. Estos campos son De, Para, CC y CCO.|
-|Type|La propiedad de clase de mensaje de un elemento de correo electrónico. Se trata de la misma propiedad que la propiedad de correo electrónico ItemClass. También es una condición de varios valores. Para seleccionar varias clases de mensaje, mantenga presionada la tecla **Ctrl** y, a continuación, haga clic en dos o más clases de mensajes en la lista desplegable que desea agregar a la condición. Cada clase de mensaje que seleccione en la lista estará conectada lógicamente mediante el operador **or** en la consulta de búsqueda correspondiente.  <br/> Para obtener una lista de las clases de mensaje (y el identificador de clase de mensaje correspondiente) que usa Exchange y que puede seleccionar en la lista de **clase de mensaje** , vea [tipos de elementos y clases de mensajes](https://go.microsoft.com/fwlink/?linkid=848143).|
+|Tipo|La propiedad de clase de mensaje de un elemento de correo electrónico. Se trata de la misma propiedad que la propiedad de correo electrónico ItemClass. También es una condición de varios valores. Para seleccionar varias clases de mensaje, mantenga presionada la tecla **Ctrl** y, a continuación, haga clic en dos o más clases de mensajes en la lista desplegable que desea agregar a la condición. Cada clase de mensaje que seleccione en la lista estará conectada lógicamente mediante el operador **or** en la consulta de búsqueda correspondiente.  <br/> Para obtener una lista de las clases de mensaje (y el identificador de clase de mensaje correspondiente) que usa Exchange y que puede seleccionar en la lista de **clase de mensaje** , vea [tipos de elementos y clases de mensajes](https://go.microsoft.com/fwlink/?linkid=848143).|
 |Received|La fecha en la que un destinatario recibió un mensaje de correo electrónico. Se trata de la misma propiedad que la propiedad de correo electrónico Recibido.|
 |Destinatarios|La persona a la que se envió un mensaje de correo electrónico. Se trata de la misma propiedad que la propiedad de correo electrónico Para.|
 |Remitente|El remitente de un mensaje de correo electrónico.|

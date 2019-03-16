@@ -1,7 +1,7 @@
 ---
 title: Introducción a las recomendaciones de la directiva DLP
-ms.author: stephow
-author: stephow-MSFT
+ms.author: deniseb
+author: denisebmsft
 manager: laurawi
 ms.date: 8/7/2017
 ms.audience: Admin
@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: Normal
 description: Esta recomendación basada en la información ayuda a su organización a mantener la seguridad del contenido confidencial cuando se almacena y se comparte en Office 365, ya que le informa cuando hay una brecha posible en la cobertura de la Directiva DLP. Verá esta recomendación en la Página principal del centro de seguridad &amp; y cumplimiento, si los documentos contienen alguno de los cinco tipos más comunes de información confidencial, pero no están protegidos por una directiva DLP.
-ms.openlocfilehash: aabd1e6b3ce8ea4754192bd7b6f80262d9e83cf7
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: 6edb6a28182cb72e66a649ac5eb0c1561c596091
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455122"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30638887"
 ---
 # <a name="get-started-with-dlp-policy-recommendations"></a>Introducción a las recomendaciones de la directiva DLP
 

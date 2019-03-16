@@ -8,25 +8,26 @@ ms.audience: ITPro
 ms.topic: article
 ms.collection:
 - o365_security_incident_response
-- Strat_O365_IP
+- M365-security-compliance
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo reconocer y corregir los ataques de las reglas de Outlook y de las inyecciones de formularios personalizados en Office 365
-ms.openlocfilehash: 214be3e8492c2896d2a4010c30768e41bc149078
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 59d45e50e15e3709c8a041ead59b8cc6e2a38306
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215240"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30656066"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks-in-office-365"></a>Detectar y corregir las reglas de Outlook y ataques de inserciones de formularios personalizados en Office 365
 
 **Resumen** Obtenga información sobre cómo reconocer y corregir los ataques de las reglas de Outlook y de las inyecciones de formularios personalizados en Office 365.
 
 ## <a name="what-is-the-outlook-rules-and-custom-forms-injection-attack"></a>¿Qué es el ataque de inserción de formularios personalizados y reglas de Outlook?
-Una vez que un atacante ha incumplido una cuenta en su arrendamiento y se incluye en, hay que probar y establecer una forma de seguir adelante o una forma de volver a ella una vez que se han descubierto y eliminado. Esto se denomina establecer un mecanismo de persistencia. Dos formas de hacerlo es aprovechando las reglas de Outlook o inyectando formularios personalizados en Outlook. En ambos casos, la regla o el formulario se sincronizan desde el servicio de nube hacia el cliente de escritorio, por lo que un formato completo y la reinstalación del software cliente no eliminan el mecanismo de inserción. Esto se debe a que, al volver a conectar el software de cliente de Outlook al buzón de la nube, se volverán a descargar las reglas y los formularios de la nube. Una vez que las reglas y los formularios están en su ubicación, el atacante los usa para ejecutar código remoto o personalizado, normalmente para instalar malware en el equipo local. A continuación, el malware vuelve a robar credenciales o realiza otras actividades ilícitas. La buena noticia es que si mantiene los clientes revisados a la versión más reciente, no es vulnerable a la amenaza como los valores predeterminados del cliente de Outlook actual bloquean ambos mecanismos. 
+Una vez que un atacante ha incumplido una cuenta en su arrendamiento y se incluye en, hay que probar y establecer una forma de seguir adelante o una forma de volver a ella una vez que se han descubierto y eliminado. Esto se denomina establecer un mecanismo de persistencia. Dos formas de hacerlo es aprovechando las reglas de Outlook o inyectando formularios personalizados en Outlook.
+En ambos casos, la regla o el formulario se sincronizan desde el servicio de nube hacia el cliente de escritorio, por lo que un formato completo y la reinstalación del software cliente no eliminan el mecanismo de inserción. Esto se debe a que, al volver a conectar el software de cliente de Outlook al buzón de la nube, se volverán a descargar las reglas y los formularios de la nube. Una vez que las reglas y los formularios están en su ubicación, el atacante los usa para ejecutar código remoto o personalizado, normalmente para instalar malware en el equipo local. A continuación, el malware vuelve a robar credenciales o realiza otras actividades ilícitas. La buena noticia es que si mantiene los clientes revisados a la versión más reciente, no es vulnerable a la amenaza como los valores predeterminados del cliente de Outlook actual bloquean ambos mecanismos. 
 
 Normalmente, los ataques siguen estos patrones:
 
@@ -116,7 +117,7 @@ Si encuentra algún indicio de alguno de estos ataques, la corrección es sencil
 4. Instale las versiones más actualizadas de Outlook.  Recuerde que la versión actual de Outlook bloquea ambos tipos de este ataque de forma predeterminada.
 5. Una vez que se hayan quitado todas las copias sin conexión del buzón de correo, restablezca la contraseña del usuario (use una alta calidad) y siga los pasos de [configurar la autenticación multifactor para los usuarios de Office 365](https://support.office.com/article/Set-up-multi-factor-authentication-for-Office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6) si la MFA no se ha habilitado todavía. Esto garantiza que las credenciales del usuario no se exponen a través de otros medios (como el phishing o la reutilización de contraseña).
 
-### <a name="using-powershell"></a>Uso de PowerShell
+### <a name="using-powershell"></a>Mediante PowerShell
 Hay dos cmdlets de PowerShell remoto que puede usar para quitar o deshabilitar reglas peligrosas. Solo tiene que seguir los pasos.
  
 Pasos para buzones de correo que están en un servidor de Exchange
@@ -140,7 +141,8 @@ Los atacantes solo usan las reglas y los formularios para aprovechar una vez que
 
 La mejor forma de proteger las cuentas de usuario y, especialmente sus cuentas de administrador, es [configurar la autenticación multifactor para los usuarios de Office 365](https://support.office.com/article/set-up-multi-factor-authentication-for-office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6).  También debe hacer lo siguiente:
 <ol>
-    <li>Supervisar cómo se <a href="https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports">obtiene acceso</a>a las cuentas de usuario y cómo se usan. No puede evitar la infracción inicial, pero reducirá la duración y el impacto de la infracción al detectarla antes. Puede usar <a href="https://support.office.com/article/overview-of-office-365-cloud-app-security-81f0ee9a-9645-45ab-ba56-de9cbccab475">las siguientes directivas de seguridad de aplicaciones de nube de Office 365</a> para supervisar sus cuentas y enviar alertas sobre actividad inusual.<ol type="a">
+    <li>Supervisar cómo se <a href="https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports">obtiene acceso</a>a las cuentas de usuario y cómo se usan. No puede evitar la infracción inicial, pero reducirá la duración y el impacto de la infracción al detectarla antes. Puede usar <a href="https://support.office.com/article/overview-of-office-365-cloud-app-security-81f0ee9a-9645-45ab-ba56-de9cbccab475">las siguientes directivas de seguridad de aplicaciones de nube de Office 365</a> para supervisar sus cuentas y enviar alertas sobre actividad inusual. 
+        <ol type="a">
             <li><b>Varios intentos erróneos de inicio de sesión</b> Esta directiva perfila el entorno y desencadena alertas cuando los usuarios realizan varias actividades de inicio de sesión fallidas en una sola sesión con respecto a la línea base aprendida, lo que podría indicar un intento de infracción.</li>
             <li><b>Recorrido imposible</b> - Esta directiva perfila el entorno y activa alertas cuando se detectan actividades del mismo usuario en diferentes ubicaciones dentro de un período de tiempo menor que el tiempo de viaje esperado entre las dos ubicaciones. Esto puede indicar que un usuario diferente usa las mismas credenciales. La detección de este comportamiento anómalo requiere un período inicial de aprendizaje de siete días durante el cual aprende el patrón de actividad de un nuevo usuario.</li>
             <li><b>Actividad suplantaDa inusual (por usuario)</b> - Esta directiva perfila el entorno y desencadena alertas cuando los usuarios realizan varias actividades suplantadas en una única sesión con respecto a la línea base aprendida, lo que podría indicar una infracción de intento.</li>

@@ -3,7 +3,7 @@ title: Usar notificaciones de correo no deseado para el usuario para liberar y n
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.date: 5/12/2018
+ms.date: 03/14/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,12 +16,12 @@ ms.assetid: 56de4ed5-b0aa-4195-9f46-033d7cc086bc
 ms.collection:
 - M365-security-compliance
 description: Si el administrador habilita las notificaciones para los usuarios, recibirá un mensaje de notificación que enumera los mensajes enviados a su buzón que se identificaron como correo no deseado, en masa o de suplantación de identidad. Puede liberar o informar de los mensajes después de recibir la notificación.
-ms.openlocfilehash: 7f68b70298fca7d8ed5f5e5b8dc9c727c3a6a6c1
-ms.sourcegitcommit: 5eb664b6ecef94aef4018a75684ee4ae66c486bb
+ms.openlocfilehash: de67987b0028102bdf61889ce54ca4215182e279
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30492729"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30638977"
 ---
 # <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages-in-office-365"></a>Usar notificaciones de correo no deseado para el usuario para liberar y notificar mensajes de correo en cuarentena en Office 365
 
@@ -40,12 +40,20 @@ El mensaje que recibe incluye el número de mensajes de correo no deseado en cua
     
 - **Tamaño** El tamaño del mensaje, en kilobytes (KB). 
     
-Actualmente, hay dos acciones que puede llevar a cabo con un mensaje en cuarentena:
-  
-- **Liberar a bandeja de entrada** Elija esta opción para enviar el mensaje a su bandeja de entrada, donde puede verlo. 
-    
-- **Informar como correo deseado** Elija esta opción para enviar una copia del mensaje a Microsoft para su análisis. El equipo de correo no deseado evalúa y analiza el mensaje, y, según de los resultados del análisis, ajusta las reglas de filtro de correo no deseado para permitir que el mensaje pase. 
-    
+Estas son las acciones que puede llevar a cabo con un mensaje en cuarentena:
+
+- **Obtenga una vista previa** del mensaje si desea obtener una vista previa del contenido o encabezado antes de llevar a cabo la acción.
+
+- **Descargue** el mensaje si desea revisar el mensaje y los datos adjuntos (si los hay) en el dispositivo antes de realizar la acción.
+
+- **Release** si el mensaje no es correo no deseado y desea que Office 365 envíe el mensaje al buzón de correo.
+
+- **Versión _AMP_ Permitir remitente** si el mensaje no es correo no deseado y desea que Office 365 agregue el remitente a la lista de remitentes seguros y destinatarios para futuros correos electrónicos. Tenga en cuenta que el administrador puede tener otras configuraciones de permitir o bloquear de toda la organización que invaliden la lista de remitentes seguros.
+
+- **Publique el informe de &**, si el mensaje no es correo no deseado y desea enviar el mensaje al buzón e identificarlo en Microsoft para su análisis.
+
+- **Bloquear** si desea que Office 365 agregue el remitente a la lista de remitentes bloqueados.
+
 Tenga en cuenta lo siguiente:
   
 - Los mensajes que se ponen en cuarentena debido a que coinciden con una regla de flujo de correo no se incluyen en los mensajes de usuario en cuarentena. Solo se enumeran los mensajes en cuarentena de correo no deseado.

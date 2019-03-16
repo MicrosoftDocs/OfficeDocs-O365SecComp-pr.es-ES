@@ -1,7 +1,7 @@
 ---
 title: Enviar notificaciones de correo electrónico y Mostrar sugerencias de directiva para directivas de DLP
-ms.author: stephow
-author: stephow-MSFT
+ms.author: deniseb
+author: denisebmsft
 manager: laurawi
 ms.date: 3/21/2018
 ms.audience: Admin
@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'Una sugerencia de directiva es una notificación o advertencia que aparece cuando alguien trabaja con contenido que entra en conflicto con una directiva DLP. Puede usar notificaciones de correo electrónico y sugerencias de directiva para aumentar el conocimiento y ayudar a los usuarios acerca de las directivas de la organización. También puede dar a los usuarios la opción de invalidar la Directiva, de modo que no se bloqueen si tienen una necesidad empresarial válida o si la Directiva está detectando un falso positivo. '
-ms.openlocfilehash: ad351a4f24ce566a47692c190b455e9e680882ca
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: b598b665de3d45846e221ea4c1b5c2f49a659c6b
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455192"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30639157"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Enviar notificaciones de correo electrónico y Mostrar sugerencias de directiva para directivas de DLP
 
@@ -90,7 +90,7 @@ Para cada regla en una directiva DLP, puede:
 - Personalizar el texto que se incluye en la notificación mediante HTML o tokens. Vea la sección siguiente para obtener más información.
     
 > [!NOTE]
->  Las notificaciones de correo electrónico solo pueden enviarse a destinatarios individuales, no a grupos ni a listas de distribución. > solo el nuevo contenido desencadenará una notificación de correo electrónico. La edición de contenido existente desencadenará las sugerencias de directiva, pero no una notificación por correo electrónico. 
+>  Las notificaciones de correo electrónico solo pueden enviarse a destinatarios individuales, no a grupos ni a listas de distribución. Tenga en cuenta que solo el contenido nuevo desencadenará una notificación por correo electrónico. La edición de contenido existente desencadenará las sugerencias de directiva, pero no una notificación por correo electrónico. 
   
 ![Opciones de notificación de correo electrónico](media/4e7b9500-2a78-44e6-9067-09f4bfd50301.png)
   

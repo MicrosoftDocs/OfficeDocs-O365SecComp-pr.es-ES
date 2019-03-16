@@ -14,19 +14,19 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 7559653c5c92b26535fb3a16ae7dbb442dc0ba97
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: ed252eca2b05f3d44e0c69e5b9649a4d7819e92c
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455412"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30639117"
 ---
 # <a name="document-metadata-fields"></a>Campos de metadatos del documento
 
 
 |**Nombre del campo** </br>|**Búsqueda y visualización en el conjunto de trabajo** |**Panel metadatos de archivo** |**Las** |
 |:-------------------------- |:---------------------------------------- |:------------------------|:------------------|
-|Etiquetas Case                  | Sí                                             |                         | Sí         |
+|Etiquetas Case                  | Sí (etiquetas)                                      |                         | Sí         |
 |Etiquetas de cumplimiento          |                                                 |                         | Sí         |
 |Ruta de acceso compuesta              |                                                 |                         | Sí         |
 |IDENTIFICADOR de contenedor               |                                                 |                         | Sí         |
@@ -37,11 +37,11 @@ ms.locfileid: "30455412"
 |Ruta de acceso compuesta con desduplicación      |                                                 |                         | Sí         |
 |Custodios de desduplicación         |                                                 |                         | Sí         |
 |Identificadores de archivo desduplicado           |                                                 |                         | Sí         |
-|Autores de documentos                |                                                 |                         | Sí         |
+|Autores de documentos                | Sí (autor) *                                   |                         | Sí         |
 |Comentarios de documento               |                                                 |                         | Sí         |
 |Compañía doc                |                                                 |                         | Sí         |
-|Fecha de documento creada           |                                                 |                         | Sí         |
-|Fecha de documento modificada          |                                                 |                         | Sí         |
+|Fecha de documento creada           | Sí (createdTime) *                              |                         | Sí         |
+|Fecha de documento modificada          | Sí (lastModifiedDate) *                         |                         | Sí         |
 |Palabras clave de documento               |                                                 |                         | Sí         |
 |Último documento guardado por          |                                                 |                         | Sí         |
 |Documento modificado por            |                                                 |                         | Sí         |
@@ -103,10 +103,10 @@ ms.locfileid: "30455412"
 |Ordena ET no vinculado     |                                                 |                         | Sí         |
 |Ordena ET ordenar incl.     |                                                 |                         | Sí         |
 |ND establecido                     |                                                 |                         | Sí         |
-|Autores de O365               |                                                 |                         | Sí         |
+|Autores de O365               | Sí (autor) *                                   |                         | Sí         |
 |O365 creado por            |                                                 |                         | Sí         |
-|Fecha de creación de O365          |                                                 |                         | Sí         |
-|Fecha de modificación de O365         |                                                 |                         | Sí         |
+|Fecha de creación de O365          | Sí (createdTime) *                              |                         | Sí         |
+|Fecha de modificación de O365         | Sí (lastModifiedDate) *                         |                         | Sí         |
 |O365 modificada por           |                                                 |                         | Sí         |
 |Nodo primario                |                                                 |                         | Sí         |
 |IDENTIFICADOR dinámico                   | Sí (pivotId)                                   |                         | Sí         |
@@ -117,3 +117,8 @@ ms.locfileid: "30455412"
 |Porcentaje de similitud         |                                                 |                         | Sí         |
 |Lista de temas                | Sí (themesList)                                |                         | Sí         |
 |Word count                 | Sí (wordCount)                                 |                         | Sí         |
+|Puntuación de relevancia (problema)    | Sí (relevanceScore_issueNum)                   |                         |             |
+|Percentiles de lectura (problema)    | Sí (readPercentile_issueNum)                   |                         |             |
+|Etiqueta de relevancia (problema)      | Sí (relevanceTag_issueNum)                     |                         |             |
+
+  \*En estos campos, si hay valores incrustados en los documentos, la búsqueda dará prioridad a esos valores; de lo contrario, intentará exponer valores desde O365.

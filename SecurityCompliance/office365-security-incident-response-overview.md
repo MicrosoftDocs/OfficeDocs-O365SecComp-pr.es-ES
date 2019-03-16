@@ -8,18 +8,18 @@ ms.audience: ITPro
 ms.topic: overview
 ms.collection:
 - o365_security_incident_response
-- Strat_O365_IP
+- M365-security-compliance
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 description: Esta solución le indica el aspecto que podrían tener los ataques cibernéticos más comunes en Office 365 y cómo responder a ellos.
-ms.openlocfilehash: ac0a61e31f50846547517d721456a5229a7fb64c
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: 13e57d914138edc44d0001781459852fba994f61
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223289"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30656026"
 ---
 # <a name="office-365-security-incident-response"></a>Respuesta a incidentes de seguridad de Office 365
 

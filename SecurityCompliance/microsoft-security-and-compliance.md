@@ -3,7 +3,7 @@ title: Prepárese para la seguridad y el cumplimiento de Microsoft 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 01/23/2019
+ms.date: 03/14/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -11,16 +11,16 @@ ms.collection:
 - M365-security-compliance
 localization_priority: Normal
 description: Prepárese para el nuevo centro de seguridad y cumplimiento de Microsoft 365
-ms.openlocfilehash: 662f953b9c9e60d2ce59fbde9de03cf973fa0b99
-ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
+ms.openlocfilehash: cdea0aabec39082ce9da0001cb148fe14454e5b7
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30357601"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30639057"
 ---
 # <a name="get-ready-for-the-new-microsoft-365-security-center-and-microsoft-365-compliance-center"></a>Prepararse para los nuevos Centro de seguridad de Microsoft 365 y Centro de cumplimiento de Microsoft 365
 
-**Nos complace anunciar el nuevo centro de seguridad de [microsoft 365](#microsoft-365-security-center) y el [centro de cumplimiento de Microsoft 365](#microsoft-365-compliance-center), que se implementa a partir del final del 2019 de enero y hasta el 2019 de marzo**. Lea este artículo para obtener información general sobre lo que viene, [qué se debe esperar](#what-to-expect)y las [licencias y los permisos necesarios](#required-licenses-and-permissions).
+**Nos complace anunciar el nuevo centro de seguridad de [Microsoft 365](#microsoft-365-security-center) y el [centro de cumplimiento de Microsoft 365](#microsoft-365-compliance-center), que se implementa a partir del final del 2019 de enero y hasta el 2019 de marzo**. Lea este artículo para obtener información general sobre lo que viene, [qué se debe esperar](#what-to-expect)y las [licencias y los permisos necesarios](#required-licenses-and-permissions).
 
 ## <a name="microsoft-365-security-center"></a>Centro de seguridad 365 de Microsoft
 
@@ -72,7 +72,11 @@ Una vez que se ha implementado esta actualización, si su organización tiene Mi
 
 ## <a name="required-licenses-and-permissions"></a>Permisos y licencias necesarios
 
-Para obtener el nuevo centro de seguridad 365 de Microsoft y el centro de cumplimiento de Microsoft 365, su organización debe tener una suscripción a Microsoft 365 E3 o E5, o un equivalente de licencia por volumen (que consta de Office 365 Enterprise E3 o E5, Enterprise Mobility + Security E3 o E5 y Windows 10 Enterprise E3/E5).
+### <a name="licenses"></a>Licencias
+
+Para obtener el nuevo centro de seguridad 365 de Microsoft y el centro de cumplimiento de Microsoft 365, su organización debe tener una suscripción a Microsoft 365 E3 o E5, o un equivalente de licencia por volumen (que consta de Office 365 Enterprise E3 o E5, Enterprise Mobility + Security E3 o E5 y Windows 10 Enterprise E3/E5). Para obtener más información acerca de estos planes, consulte [Discover the Microsoft 365 Enterprise Solution más adecuada para usted](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans).
+
+### <a name="roles-and-permissions"></a>Roles y permisos
 
 Los usuarios deben tener asignado el rol de administrador global, administrador de cumplimiento, administrador de seguridad o lector de seguridad en Azure Active Directory para tener acceso al nuevo centro de seguridad de Microsoft 365 o al centro de cumplimiento de Microsoft 365.
 
@@ -89,18 +93,18 @@ En la tabla siguiente se resume quién puede tener acceso a diversos portales en
 
 |Portal  |Global<br/>Administrador  |Seguridad <br/>Administrador<br>o<br>Seguridad<br>Lector |Cumplimiento<br/>Administrador  |
 |---------|---------|---------|---------|
-|[Centro de seguridad y cumplimiento de Office 365](https://protection.office.com) |Sí |Sí   |Sí |
+|[Centro de seguridad & cumplimiento de Office 365](https://protection.office.com) |Sí |Sí  |Sí |
 |[Centro de seguridad 365 de Microsoft](https://security.microsoft.com) |Sí  | Sí  | No        |
 |[Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com) | Sí | No | Sí |
-|[Administrador de cumplimiento](https://aka.ms/compliancemanager) |Sí | Sí  |Sí  |
+|[Administrador de cumplimiento](https://aka.ms/compliancemanager) |Sí | Sí |Sí  |
 |[Azure Information Protection](https://docs.microsoft.com/azure/information-protection) |Sí |Sí |No |
 |[Azure Security Center](https://docs.microsoft.com/azure/security-center/)  |Sí |Sí |No |
 |[Protección contra amenazas avanzada de Azure](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)  |Sí |Sí |No |
-|[Windows Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection?ocid=tia-260153000#windows-defender-atp) y [detección de puntos de conexión y respuesta](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/overview-endpoint-detection-response)     |Sí |Sí |No |
+|[ATP de Windows Defender](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection?ocid=tia-260153000#windows-defender-atp) |Sí |Sí |No |
 |[Protección de identidad](https://docs.microsoft.com/azure/active-directory/identity-protection)     |Sí |Sí |No |
-|[Administración de identidades con privilegios](https://docs.microsoft.com/azure/active-directory/privileged-identity-management)     |Sí |Sí |No |
-|[Intune](https://docs.microsoft.com/intune)     |Sí |Sí  |Sí |
-|[Cloud App Security](https://docs.microsoft.com/cloud-app-security/)     |Sí |Sí  |Sí |
+|[Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management)     |Sí |Sí |No |
+|[Intune](https://docs.microsoft.com/intune)     |Sí |Sí |Sí |
+|[Cloud App Security](https://docs.microsoft.com/cloud-app-security/)     |Sí |Sí |Sí |
 |[Puntuación segura](https://docs.microsoft.com/office365/securitycompliance/office-365-secure-score)     |Sí |Sí |No |
 |[Exchange](https://docs.microsoft.com/exchange/)     |Sí |Sí |Sí |
 

@@ -1,7 +1,7 @@
 ---
 title: Qué buscan las funciones de DLP
-ms.author: stephow
-author: stephow-MSFT
+ms.author: deniseb
+author: denisebmsft
 manager: laurawi
 ms.date: 6/18/2016
 ms.audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Los tipos de información confidencial buscan un patrón específico y corroborarlo asegurándose de que el formato es correcto, aplicando sumas de comprobación y buscando palabras clave relevantes u otra información. Parte de esta funcionalidad la realizan funciones internas. En este tema se explica lo que estas funciones buscan, para que comprenda mejor cómo funcionan los tipos de información confidencial predefinidos.
-ms.openlocfilehash: f64a4f174483b2aa57520991dcf85d13515074fb
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: d0aeb38001f42d9db2b124466b02746ee106b078
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30454972"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30638937"
 ---
 # <a name="what-the-dlp-functions-look-for"></a>Qué buscan las funciones de DLP
 
