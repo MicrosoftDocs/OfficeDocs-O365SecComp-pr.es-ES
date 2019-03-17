@@ -1,7 +1,7 @@
 ---
 title: Crear un tipo personalizado de información confidencial
-ms.author: stephow
-author: stephow-MSFT
+ms.author: deniseb
+author: denisebmsft
 manager: laurawi
 ms.audience: Admin
 ms.topic: article
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre cómo crear, modificar, quitar y probar tipos personalizados de información confidencial para DLP en la interfaz gráfica de usuario del Centro de seguridad y cumplimiento de Office 365.
-ms.openlocfilehash: 5e20fac290a7d06c843a0043d95669d9c7f7cd05
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: afc5479f08909020d04768c9ca9c20438472b92d
+ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455142"
+ms.lasthandoff: 03/16/2019
+ms.locfileid: "30639067"
 ---
 # <a name="create-a-custom-sensitive-information-type"></a>Crear un tipo personalizado de información confidencial
 
