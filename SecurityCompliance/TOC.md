@@ -106,7 +106,7 @@
 ### [Configurar las directivas de filtro de correo no deseado](configure-your-spam-filter-policies.md)
 ### [Configurar la directiva de filtro de conexión](configure-the-connection-filter-policy.md)
 ### [Configurar la directiva de correo no deseado saliente](configure-the-outbound-spam-policy.md)
-### [Quitar un usuario, un dominio o una dirección IP de una lista de bloqueados](removing-a-user-domain-or-ip-address-from-a-block-list-after-sending-spam-email.md)
+### [Quitar un usuario desde el Portal de usuarios restringidos después de enviar correo no deseado](removing-user-from-restricted-users-portal-after-spam.md)
 ### [Niveles de confianza del correo no deseado](spam-confidence-levels.md)
 #### [Use reglas de flujo de correo para establecer el nivel de confianza contra correo no deseado (SCL)](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)
 #### [Envío de mensajes de correo no deseado, mensajes seguros y mensajes de correo de suplantación de identidad (phishing) a Microsoft para su análisis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)
