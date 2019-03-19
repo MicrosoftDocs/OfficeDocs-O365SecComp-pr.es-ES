@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
 description: Este tema explica cómo configurar Microsoft Exchange Online Protection (EOP). Si ha llegado hasta aquí desde el asistente de dominios de Office 365, regrese al asistente para dominios de Office 365 si no desea usar Exchange Online Protection. Si está buscando más información sobre cómo configurar los conectores, consulte Configure mail flow using connectors in Office 365.
-ms.openlocfilehash: 6c9e3becf0f86deeee92ec7cf336bdbd950ac5e2
-ms.sourcegitcommit: f49ab866e21da83a0be6cb23ab7b6b4366a6a7ee
+ms.openlocfilehash: 96751f1f68e0b73c1d92b6868e99f4eb1c2739bf
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "25715906"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670615"
 ---
 # <a name="set-up-your-eop-service"></a>Configurar un servicio de EOP
 
@@ -38,13 +38,13 @@ Este tema explica cómo configurar Microsoft Exchange Online Protection (EOP). S
 > [!TIP]
 > ¿Tiene algún problema? Solicite ayuda en los foros de Exchange. Visite los foros en [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), o [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
   
-## <a name="how-do-you-do-this"></a>¿Cómo realiza esto?
+## <a name="how-do-you-do-this"></a>¿Cómo debe hacer esto?
 
-### <a name="step-1-use-the-office-365-admin-center-to-add-and-verify-your-domain"></a>Paso 1: Usar el Centro de administración de Office 365 para agregar y comprobar el dominio
+### <a name="step-1-use-the-microsoft-365-admin-center-to-add-and-verify-your-domain"></a>Paso 1: usar el centro de administración de Microsoft 365 para agregar y comprobar el dominio
 
-1. En el Centro de administración de Office 365, vaya a **Instalación** para agregar el dominio al servicio. 
+1. En el centro de administración de Microsoft 365, vaya a **configuración** para agregar el dominio al servicio. 
     
-    ¿No sabe dónde encontrar el Centro de administración de Office 365? Lea más información en [Sobre el centro de administración de Office 365](https://go.microsoft.com/fwlink/p/?LinkId=521888).
+    ¿No está seguro de dónde encontrar el centro de administración de Microsoft 365? Obtenga más información en [acerca del centro de administración de Microsoft 365](https://go.microsoft.com/fwlink/p/?LinkId=521888).
     
 2. Siga los pasos para agregar los registros DNS correspondientes a su proveedor de host DNS para comprobar la propiedad del dominio.
     
@@ -55,15 +55,15 @@ Este tema explica cómo configurar Microsoft Exchange Online Protection (EOP). S
 
 Antes de configurar el correo que circula hacia y desde el servicio EOP, se recomienda agregar los destinatarios al servicio. Hay varias maneras de hacerlo, tal y como se documenta en [Administrar usuarios de correo en EOP](manage-mail-users-in-eop.md). Además, si quiere habilitar el Bloqueo perimetral basado en directorios (DBEB) para aplicar la comprobación de destinatarios dentro del servicio después de agregarlos, debe establecer el tipo de dominio en Autoritativo. Para más información sobre DBEB, vea [Use Directory Based Edge Blocking to Reject Messages Sent to Invalid Recipients](http://technet.microsoft.com/library/ca7b7416-92ed-40ad-abdb-695be46ea2e4.aspx).
   
-### <a name="step-3-use-the-eac-to-set-up-mail-flow"></a>Paso 3: Usar el EAC para configurar el flujo de correo
+### <a name="step-3-use-the-eac-to-set-up-mail-flow"></a>Paso 3: Usar el EAC para configurar el flujo de correo
 
 Cree conectores en el Centro de administración de Exchange (EAC) que permitan el flujo de correo entre EOP y los servidores de correo locales. Para ver las instrucciones detalladas, consulte [Set up connectors to route mail between Office 365 and your own email servers](http://technet.microsoft.com/library/2e93fd60-a5ef-4e64-8e62-2b862b2d1033.aspx).
   
-#### <a name="how-do-you-know-this-task-worked"></a>¿Cómo sabe si esta tarea se ha completado correctamente?
+#### <a name="how-do-you-know-this-task-worked"></a>¿Cómo sabe si esta tarea funcionó?
 
 Use el analizador de conectividad remota para ejecutar una prueba que compruebe el flujo de correo entre el servicio y su entorno. Para más información, vea la sección "Usar Remote Conectivity Analyzer para probar la entrega del correo electrónico", en [Testing Mail Flow with the Remote Connectivity Analyzer](http://technet.microsoft.com/library/6c8c2964-d553-4329-8166-6e508dd63fa0.aspx).
   
-### <a name="step-4-allow-inbound-port-25-smtp-access"></a>Paso 4: Permitir el acceso SMTP entrante al puerto 25
+### <a name="step-4-allow-inbound-port-25-smtp-access"></a>Paso 4: Permitir el acceso SMTP entrante al puerto 25
 
 Después de configurar los conectores, espere 72 horas para que las actualizaciones de los registros DNS se propaguen. A continuación, restrinja el tráfico SMTP entrante del puerto 25 en sus servidores de correo o de firewall para aceptar correo solo de los centros de datos EOP, especialmente de las direcciones IP de la lista en [Direcciones de IP para Exchange Online Protection](exchange-online-protection-ip-addresses.md). Esto protege su entorno local al limitar el ámbito de los mensajes entrantes que puede recibir. Además, si tiene una configuración en su servidor de correo que controla las direcciones IP que se pueden conectar para retransmitir correo, actualice también esta configuración.
   
@@ -72,15 +72,15 @@ Después de configurar los conectores, espere 72 horas para que las actualizacio
   
 ### <a name="step-5-use-the-shell-to-ensure-that-spam-is-routed-to-each-users-junk-email-folder"></a>Paso 5: Usar el Shell para asegurarse de que el correo no deseado se enrute a la carpeta de correo electrónico no deseado de cada usuario
 
-Para asegurarse de que el correo electrónico de spam (no deseado) se enruta correctamente a la carpeta de correo electrónico no deseado de cada usuario, debe realizar un par de pasos de configuración. Los pasos se proporcionan en [asegurarse de que el correo no deseado se enrute a la carpeta de correo no deseado de cada usuario](../ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
+Para asegurarse de que el correo no deseado se enrute correctamente a la carpeta de correo no deseado de cada usuario, debe realizar varios pasos de configuración. Los pasos se proporcionan [para asegurarse de que el correo no deseado se enruta a la carpeta de correo no deseado de cada usuario](../ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
   
-Si no desea mover los mensajes a la carpeta de correo no deseado de cada usuario, es posible que elija otra acción mediante la edición de las directivas de filtro de contenido en el centro de administración de Exchange. Para obtener más información, vea [configurar sus directivas de filtro de correo no deseado](../configure-your-spam-filter-policies.md).
+Si no desea mover mensajes a la carpeta de correo no deseado de cada usuario, puede elegir otra acción si modifica las directivas de filtro de contenido en el centro de administración de Exchange. Para obtener más información, vea [Configurar las directivas de filtro de correo no deseado](../configure-your-spam-filter-policies.md).
   
-### <a name="step-6-use-the-office-365-admin-center-to-point-your-mx-record-to-eop"></a>Paso 6: Usar el Centro de administración de Office 365 para apuntar el registro MX a EOP
+### <a name="step-6-use-the-microsoft-365-admin-center-to-point-your-mx-record-to-eop"></a>Paso 6: usar el centro de administración de Microsoft 365 para apuntar el registro MX a EOP
 
 Siga los pasos de configuración de dominio de Office 365 para actualizar el registro MX de su dominio de forma que el correo entrante pase por EOP. Asegúrese de apuntar su registro MX directamente a EOP en lugar de tener un correo electrónico de retransmisión del servicio de filtro de terceros a EOP. Para más información, puede usar nuevamente como referencia el tema sobre [cómo crear registros DNS para Office 365](https://go.microsoft.com/fwlink/p/?LinkId=304219).
   
-#### <a name="how-do-you-know-this-task-worked"></a>¿Cómo sabe si esta tarea se ha completado correctamente?
+#### <a name="how-do-you-know-this-task-worked"></a>¿Cómo sabe si esta tarea funcionó?
 
 Use Remote Connectivity Analyzer para ejecutar una prueba que compruebe su registro MX. Para más información, vea la sección "Usar Remote Conectivity Analyzer para probar su registro MX y el conector saliente", en [Testing Mail Flow with the Remote Connectivity Analyzer](http://technet.microsoft.com/library/6c8c2964-d553-4329-8166-6e508dd63fa0.aspx). 
   

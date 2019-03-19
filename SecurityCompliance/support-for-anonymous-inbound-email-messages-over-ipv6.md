@@ -15,16 +15,16 @@ ms.assetid: b68df621-0a5f-4824-8abc-41e0c4fd1398
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo configurar la compatibilidad con mensajes anónimos desde orígenes IPv6 para Exchange Online Protection y Exchange Online.
-ms.openlocfilehash: 229ee045d03b3fa4ccb7b4d5e59e1b2b7df6a7d7
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: 328cef29b7f8b9637ece7aca729ad1d706351667
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276360"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670525"
 ---
 # <a name="support-for-anonymous-inbound-email-messages-over-ipv6"></a>Compatibilidad para mensajes de correo electrónico entrante anónimos a través de IPv6
 
-Exchange Online Protection (EOP) y Exchange Online permiten la recepción de mensajes de correo electrónico anónimos entrantes a través de comunicaciones IPv6 de remitentes que no envían mensajes a través de la Seguridad de capa de transporte (TLS). Puede optar por recibir mensajes a través de IPv6 solicitando esta funcionalidad del soporte técnico de Microsoft abriendo el centro de administración de Office [https://portal.office.com/adminportal/home](https://portal.office.com/adminportal/home)365 en, haciendo clic en **soporte técnico**y, a continuación, haciendo clic en **nueva solicitud de servicio**). Si decide no elegir IPv6, continuará recibiendo mensajes a través de IPv4.
+Exchange Online Protection (EOP) y Exchange Online permiten la recepción de mensajes de correo electrónico anónimos entrantes a través de comunicaciones IPv6 de remitentes que no envían mensajes a través de la Seguridad de capa de transporte (TLS). Puede optar por recibir mensajes a través de IPv6 si solicita esta funcionalidad del soporte técnico de Microsoft al abrir el centro de administración de [https://admin.microsoft.com/adminportal/home](https://admin.microsoft.com/adminportal/home)365 de Microsoft en, hacer clic en **soporte técnico**y, a continuación, hacer clic en **nueva solicitud de servicio**). Si decide no elegir IPv6, continuará recibiendo mensajes a través de IPv4.
   
 Los remitentes que transmiten mensajes al servicio a través de IPv6 deben cumplir las dos condiciones siguientes:
   
@@ -42,7 +42,7 @@ Si no ha optado por recibir mensajes a través de IPv6 y el remitente intenta fo
   
  `550 5.2.1 Service unavailable, [contoso.com] does not accept email over IPv6.`
   
-## <a name="for-more-information"></a>Más información
+## <a name="for-more-information"></a>Para obtener más información
 
 [Compatibilidad para la validación de mensajes firmados con DKIM](support-for-validation-of-dkim-signed-messages.md)
   

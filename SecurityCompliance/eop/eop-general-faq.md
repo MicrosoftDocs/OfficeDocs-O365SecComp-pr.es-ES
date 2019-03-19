@@ -11,12 +11,12 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 9dbff00a-474e-4452-aeb5-5be9a6b8c6d5
 description: 'En este tema se responden las preguntas generales más comunes acerca del servicio de filtrado de correo electrónico hospedado en la nube de Microsoft Exchange Online Protection (EOP). Para ver otros temas sobre preguntas frecuentes (P+F), visite los siguientes enlaces:'
-ms.openlocfilehash: 9a8ac96678e33623803e95998780b4544dec5a78
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 888cf338a3f1767ddd6ba01a2f0f60f2f8794e3e
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027387"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670455"
 ---
 # <a name="eop-general-faq"></a>Preguntas más frecuentes sobre EOP
 
@@ -26,13 +26,13 @@ En este tema se responden las preguntas generales más comunes acerca del servic
     
 - [Preguntas más frecuentes sobre administración delegada](delegated-administration-faq.md)
     
-- [Protección contra correo no deseado preguntas más frecuentes](../anti-spam-protection-faq.md)
+- [Preguntas más frecuentes sobre protección contra correo no deseado](../anti-spam-protection-faq.md)
     
 - [Listas de remitentes seguros y bloqueados en Exchange Online](../safe-sender-and-blocked-sender-lists-faq.md)
     
 - [Preguntas más frecuentes sobre la cuarentena](../quarantine-faq.md)
     
-- [Protección antimalware preguntas más frecuentes](../anti-malware-protection-faq-eop.md)
+- [Preguntas más frecuentes sobre protección contra malware](../anti-malware-protection-faq-eop.md)
     
 - [Message Trace FAQ](http://technet.microsoft.com/library/aa49e3f9-a5b1-4410-aac2-ddbbf3f5bfb2.aspx)
     
@@ -64,7 +64,7 @@ R. Office 365 es el nombre dado a una colección de productos y servicios a los 
   
  **P. ¿Dispone EOP de un portal de comunicación donde pueda obtener información sobre problemas conocidos y soluciones previstas? ¿Qué pasa con las nuevas características?**
   
-R. El Centro de administración de Office 365 contendrá parte de esta información. Si se ve afectado por un evento de nivel de servicio, debería aparecer una alerta de comunicación (que suele ir acompañada de un icono de campana) tras iniciar sesión en el Centro de administración de Office 365. Recomendamos leerla y tomar las medidas necesarias en los elementos que procedan.
+R. El centro de administración de Microsoft 365 tendrá parte de esta información. Si se ve afectado por un evento de nivel de servicio, debería ver una alerta de comunicación (que suele ir acompañada de un icono de campana) tras iniciar sesión en el centro de administración de Microsoft 365. Recomendamos leerla y tomar las medidas necesarias en los elementos que procedan.
   
 Con respecto a las nuevas características de EOP, la [Guía básica de Office 365 para empresa](https://office.microsoft.com/en-us/products/office-365-roadmap-FX104343353.aspx) es un buen recurso para encontrar información sobre nuevas y próximas características. También publicaremos artículos de blog sobre las nuevas características en el sitio web [Blogs de Office](https://go.microsoft.com/fwlink/p/?LinkId=392724). 
   

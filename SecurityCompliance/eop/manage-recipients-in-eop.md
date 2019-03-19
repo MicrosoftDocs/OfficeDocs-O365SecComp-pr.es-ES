@@ -10,21 +10,21 @@ ms.service: O365-seccomp
 ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 2921f544-8257-4bae-8e3a-ce9250e9f162
-description: Microsoft Exchange Online Protection (EOP) ofrece varias maneras de administrar los destinatarios de correo. Como administrador, puede realizar ciertas tareas de administración en el Centro de administración de Exchange (EAC) o utilizar Windows PowerShell y comprobar otras tareas de administración realizadas en el Centro de administración de Microsoft Office 365.
-ms.openlocfilehash: 55b28dcb107df85052ff623f653eecaaf88c7bda
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+description: Microsoft Exchange Online Protection (EOP) ofrece varias maneras de administrar los destinatarios de correo. Como administrador, puede realizar ciertas tareas de administración dentro del centro de administración de Exchange (EAC) o mediante Windows PowerShell remoto y comprobar otras tareas de administración realizadas en el centro de administración de Microsoft 365.
+ms.openlocfilehash: 52d423960444605382bd0314a5c12114fad755a2
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341661"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670406"
 ---
 # <a name="manage-recipients-in-eop"></a>Administrar destinatarios en EOP
 
-Microsoft Exchange Online Protection (EOP) ofrece varias maneras de administrar los destinatarios de correo. Como administrador, puede realizar ciertas tareas de administración en el Centro de administración de Exchange (EAC) o utilizar Windows PowerShell y comprobar otras tareas de administración realizadas en el Centro de administración de Microsoft Office 365.
+Microsoft Exchange Online Protection (EOP) ofrece varias maneras de administrar los destinatarios de correo. Como administrador, puede realizar ciertas tareas de administración dentro del centro de administración de Exchange (EAC) o mediante Windows PowerShell remoto y comprobar otras tareas de administración realizadas en el centro de administración de Microsoft 365.
   
 EOP admite los siguientes tipos de destinatarios:
   
-- **Usuarios de correo** Los usuarios de correo son destinatarios en los dominios administrados de EOP. Estos destinatarios tienen credenciales de inicio de sesión en la organización de Office 365, pero tienen direcciones de correo electrónico externas, lo que significa que los buzones de los destinatarios están fuera de la organización de la nube. Puede Agregar usuarios de correo para que puedan recibir correo y también puede crear reglas de flujo de correo (también conocidas como reglas de transporte) para usuarios específicos. También puede asignar roles a los usuarios de correo de su organización; los usuarios con privilegios de grupo de roles de administración pueden obtener acceso al centro de administración de Exchange (EAC) y realizar ciertas tareas de administración. Para obtener más información sobre los roles de usuario y cómo asignar los roles de usuario en EOP, consulte [Manage admin role Group Permissions in EOP](manage-admin-role-group-permissions-in-eop.md).
+- **Usuarios de correo** Los usuarios de correo son los destinatarios que hay en sus dominios administrados de EOP. Estos destinatarios disponen de las credenciales de inicio de sesión de su organización Office 365 pero tienen direcciones de correo electrónico externas, lo que significa que los buzones de los destinatarios están ubicados fuera de su organización basada en la nube. Puede Agregar usuarios de correo para que puedan recibir correo y también puede crear reglas de flujo de correo (también conocidas como reglas de transporte) para usuarios específicos. Además puede asignar roles a los usuarios de correo de su organización; los usuarios con privilegios de grupo de funciones de administración pueden acceder al Centro de administración de Exchange (EAC) y realizar determinadas tareas de administración. Para obtener más información sobre los roles de usuario y cómo asignar los roles de usuario en EOP, consulte [Manage admin role Group Permissions in EOP](manage-admin-role-group-permissions-in-eop.md).
     
     Para obtener más información sobre la administración de usuarios de correo en EOP, consulte [Administrar usuarios de correo en EOP](manage-mail-users-in-eop.md).
     

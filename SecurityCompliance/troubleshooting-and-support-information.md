@@ -15,12 +15,12 @@ ms.assetid: 5d9f75f5-bb7f-458c-ad30-5c8eae0b0e4e
 ms.collection:
 - M365-security-compliance
 description: En este tema se describen pasos de solución de problemas para usuarios finales y administradores, y se proporciona información acerca de cómo ponerse en contacto con el soporte técnico para obtener ayuda.
-ms.openlocfilehash: d9ff55350487b21325d9a95491fa6861fcc441fd
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: 43af048a457835ef16e36c8587f811cb0963bc97
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276000"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670485"
 ---
 # <a name="troubleshooting-and-support-information"></a>Solución de problemas e información de soporte técnico
 
@@ -45,7 +45,7 @@ De manera ocasional, puede experimentar problemas con Microsoft Office Outlook d
 Si el problema continúa, póngase en contacto con el administrador de TI.
   
 > [!TIP]
-> También puede enviar mensajes de correo no deseado directamente a Microsoft con la dirección de correo electrónico de [Junk@office365.microsoft.com](mailto:junk@office365.microsoft.com) y los mensajes falsos positivos mediante la dirección de correo electrónico [not_junk@office365.microsoft.com](mailto: not_junk@office365.microsoft.com) . Para obtener más información, vea enviar correo electrónico no deseado, mensajes de correo [no deseado y mensajes de estafa de suplantación de identidad a Microsoft para su análisis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md). 
+> También puede enviar mensajes de correo no deseado directamente a Microsoft a la dirección de correo electrónico [junk@office365.microsoft.com](mailto:junk@office365.microsoft.com), y mensajes falsos positivos a la dirección de correo electrónico [not_junk@office365.microsoft.com](mailto: not_junk@office365.microsoft.com). Para obtener más información, vea enviar correo electrónico no deseado, mensajes de correo [no deseado y mensajes de estafa de suplantación de identidad a Microsoft para su análisis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md). 
   
 ## <a name="troubleshooting-for-administrators"></a>Solución de problemas para administradores
 
@@ -87,9 +87,9 @@ Como administrador, puede tener problemas con usuarios que usen el complemento d
     
 ## <a name="support-information"></a>Información de soporte
 
-Si necesita ayuda para instalar, configurar o desinstalar el complemento, póngase en contacto con el soporte técnico mediante el vínculo nueva solicitud de servicio de la página soporte del centro de administración de Office 365. Para obtener opciones adicionales, como el envío de una solicitud de servicio a través de las opciones de teléfono y de autosoporte, consulte [ayuda y soporte técnico para EOP](eop/help-and-support-for-eop.md).
+Si necesita ayuda para instalar, configurar o desinstalar el complemento, póngase en contacto con el soporte técnico mediante el vínculo nueva solicitud de servicio de la página soporte del centro de administración de Microsoft 365. Para obtener opciones adicionales, como el envío de una solicitud de servicio a través de las opciones de teléfono y de autosoporte, consulte [ayuda y soporte técnico para EOP](eop/help-and-support-for-eop.md).
   
-## <a name="for-more-information"></a>Más información
+## <a name="for-more-information"></a>Para obtener más información
 
 [Habilitar el complemento de mensajes de informe](https://support.office.com/article/4250c4bc-6102-420b-9e0a-a95064837676)
   

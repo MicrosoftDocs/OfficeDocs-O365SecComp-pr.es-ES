@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
 description: Obtenga información sobre cómo automatizar las tareas de búsqueda de contenido como la creación de búsquedas y la ejecución de informes &amp; mediante scripts de PowerShell en el centro de seguridad y cumplimiento de Office 365.
-ms.openlocfilehash: c61a62c7b31d24346fd58b7562872a7c45d1c65d
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 740f3384e5d4f26e09512cc846ad8779bcbc31ef
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30213240"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670665"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>Crear, informar sobre y eliminar varias búsquedas de contenido
 
@@ -52,15 +52,15 @@ El archivo de valores separados por comas (CSV) que se crea en este paso contien
     ,https://contoso-my.sharepoint.com/personal/janets_contoso_onmicrosoft_com,,1/1/2015,
     ```
 
-    En la primera fila, o fila de encabezado, del archivo se enumeran los parámetros que usará el cmdlet **New-ComplianceSearch** (en el script en el paso 3) para crear nuevas búsquedas de contenido. Cada nombre de parámetro está separado por una coma. Asegúrese de que no hay ningún espacio en la fila de encabezado. Cada fila situada debajo de la fila de encabezado representa los valores de parámetro de cada búsqueda. Asegúrese de reemplazar los datos de marcador de posición en el archivo CSV con los datos reales. 
+    En la primera fila, o fila de encabezado, del archivo se enumeran los parámetros que usará el cmdlet **New-ComplianceSearch** (en el script en el paso 3) para crear nuevas búsquedas de contenido. Los nombres de los parámetros están separados por comas. Asegúrese de que no hay ningún espacio en la fila de encabezado. Cada fila situada debajo de la fila de encabezado representa los valores de parámetro de cada búsqueda. Asegúrese de reemplazar los datos de marcador de posición en el archivo CSV con los datos reales. 
     
 2. Abra el archivo. txt en Excel y, a continuación, use la información de la siguiente tabla para editar el archivo con la información de cada búsqueda. 
     
     |**Parámetro**|**Descripción**|
     |:-----|:-----|
     | `ExchangeLocation` <br/> |La dirección SMTP del buzón del usuario.  <br/> |
-    | `SharePointLocation` <br/> |La dirección URL del sitio de OneDrive para la empresa del usuario o la dirección URL de cualquier sitio de la organización. Para la dirección URL de los sitios de OneDrive para la empresa, ` https://<your organization>-my.sharepoint.com/personal/<user alias>_<your organization>_onmicrosoft_com `use este formato:. Por ejemplo, `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft_com`.<br/> |
-    | `ContentMatchQuery` <br/> |La consulta de búsqueda para la búsqueda. Para obtener más información acerca de la creación de una consulta de búsqueda, consulte [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).<br/> |
+    | `SharePointLocation` <br/> |La dirección URL del sitio de OneDrive para la empresa del usuario o la dirección URL de cualquier sitio de la organización. Para la dirección URL de los sitios de OneDrive para la empresa, ` https://<your organization>-my.sharepoint.com/personal/<user alias>_<your organization>_onmicrosoft_com `use este formato:. Por ejemplo,  `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft_com`.  <br/> |
+    | `ContentMatchQuery` <br/> |La consulta de búsqueda para la búsqueda. Para obtener más información acerca de la creación de una consulta de búsqueda, consulte [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).  <br/> |
     | `StartDate` <br/> |Para el correo electrónico, la fecha en o después de que un destinatario reciba un mensaje o que el remitente lo haya enviado. Para los documentos de los sitios de SharePoint o de OneDrive para la empresa, la fecha en o después de que se modificó por última vez un documento.  <br/> |
     | `EndDate` <br/> |Para el correo electrónico, la fecha en o antes de que un remitente haya enviado un mensaje. Para los documentos de los sitios de SharePoint o de OneDrive para la empresa, la fecha en o antes de que se modificó por última vez un documento.  <br/> |
    
@@ -98,7 +98,7 @@ Para ejecutar el script:
 
 1. Guarde el siguiente texto en un archivo de script de Windows PowerShell mediante un sufijo de nombre de archivo de. ps1; por ejemplo, `CreateSearches.ps1`. Guarde el archivo en la misma carpeta en la que guardó los demás archivos.
     
-  ```
+  ```Powershell
   # Get the Search Group ID and the location of the CSV input file
   $searchGroup = Read-Host 'Search Group ID'
   $csvFile = Read-Host 'Source CSV file'
@@ -175,7 +175,7 @@ Para ejecutar el script:
 
 2. En Windows PowerShell, vaya a la carpeta en la que guardó el script en el paso anterior y ejecute el script; por ejemplo:
     
-    ```
+    ```Powershell
     .\CreateSearches.ps1
     ```
 
@@ -195,7 +195,7 @@ Después de crear las búsquedas, el siguiente paso es ejecutar un script que mu
   
 1. Guarde el siguiente texto en un archivo de script de Windows PowerShell mediante un sufijo de nombre de archivo de. ps1; por ejemplo, `SearchReport.ps1`. Guarde el archivo en la misma carpeta en la que guardó los demás archivos.
     
-  ```
+  ```Powershell
   $searchGroup = Read-Host 'Search Group ID'
   $outputFile = Read-Host 'Enter a file name or file path to save the report to a .csv file. Leave blank to only display the report'
   $searches = Get-ComplianceSearch | ?{$_.Name -clike $searchGroup + "_*"}
@@ -250,7 +250,7 @@ Después de crear las búsquedas, el siguiente paso es ejecutar un script que mu
 
 2. En Windows PowerShell, vaya a la carpeta en la que guardó el script en el paso anterior y ejecute el script; por ejemplo:
     
-    ```
+    ```Powershell
     .\SearchReport.ps1
     ```
 
@@ -258,7 +258,7 @@ Después de crear las búsquedas, el siguiente paso es ejecutar un script que mu
     
 4. En la **ruta de acceso al archivo para guardar el informe en un archivo CSV (déjelo en blanco para mostrar simplemente el informe)** , escriba un nombre de archivo completo ruta de acceso del archivo (incluida la extensión de archivo. csv) Si desea guardar el informe en un archivo CSV. nombre del archivo CSV, incluida la extensión de archivo. csv. Por ejemplo, puede escribir `ContosoCaseReport.csv` para guardarla en el directorio actual o puede escribirla `C:\Users\admin\OneDrive for Business\ContosoCase\ContosoCaseReport.csv` para guardarla en una carpeta diferente. También puede dejar el mensaje en blanco para mostrar el informe, pero no guardarlo en un archivo. 
     
-5. Presione **entrar**.
+5. Presione **Entrar**.
     
     La secuencia de comandos muestra el progreso de la creación y ejecución de las búsquedas. Una vez finalizado el script, se muestra el informe. 
     
@@ -273,7 +273,7 @@ Como es posible que esté creando muchas búsquedas, este último script solo fa
   
 1. Guarde el siguiente texto en un archivo de script de Windows PowerShell mediante un sufijo de nombre de archivo de. ps1; por ejemplo, `DeleteSearches.ps1`. Guarde el archivo en la misma carpeta en la que guardó los demás archivos.
     
-  ```
+  ```Powershell
   # Delete all searches in a search group
   $searchGroup = Read-Host 'Search Group ID'
   Get-ComplianceSearch |
@@ -289,7 +289,7 @@ Como es posible que esté creando muchas búsquedas, este último script solo fa
 
 2. En Windows PowerShell, vaya a la carpeta en la que guardó el script en el paso anterior y ejecute el script; por ejemplo:
     
-    ```
+    ```Powershell
     .\DeleteSearches.ps1
     ```
 

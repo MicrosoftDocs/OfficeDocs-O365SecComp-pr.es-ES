@@ -11,19 +11,19 @@ ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 9d64867b-ebdb-4323-8e30-4560d76b4c97
 description: El cambio de requisitos empresariales a veces puede requerir dividir una organización de Microsoft Exchange Online Protection (EOP) (inquilino) en dos organizaciones separadas, combinar dos organizaciones en una, o mover sus dominios y opciones de configuración de EOP desde una organización hacia otra organización.
-ms.openlocfilehash: e2b030064ce180bd7eeebfb281751dc147dca899
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: 4cc3c7273a06374050f705f51d6b3d85fa8e037c
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341561"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670595"
 ---
 # <a name="move-domains-and-settings-from-one-eop-organization-to-another-eop-organization"></a>Mover dominios y opciones de configuración de una organización de EOP a otra organización de EOP
 
 El cambio de requisitos empresariales a veces puede requerir dividir una organización de Microsoft Exchange Online Protection (EOP) (inquilino) en dos organizaciones separadas, combinar dos organizaciones en una, o mover sus dominios y opciones de configuración de EOP desde una organización hacia otra organización. El movimiento desde una organización de EOP a una segunda organización de EOP puede ser todo un desafío, pero con unos pocos scripts básicos de Windows PowerShell remoto y un poco de preparación, esto se puede lograr con una ventana de mantenimiento relativamente pequeña. 
   
 > [!NOTE]
->  La configuración se puede mover de forma segura solo desde una organización de EOP independiente (estándar) a otra organización de EOP o a una organización de Exchange Enterprise CAL con servicios (EOP Premium) o de una organización de EOP Premium a otra organización de EOP Premium. Debido a que algunas características Premium no son compatibles con las organizaciones estándar de EOP, el traslado de una organización de EOP Premium a una organización estándar de EOP podría no ser correcta. > estas instrucciones son para organizaciones de solo filtrado de EOP. Hay otras consideraciones a tener en cuenta al cambiar de una organización de Exchange Online a otra organización de Exchange Online. Las organizaciones de Exchange Online quedan fuera del ámbito de estas instrucciones. 
+>  Las opciones de configuración se pueden mover de forma segura desde una organización de EOP independiente (Standard) a otra organización de EOP Standard o una organización de Exchange Enterprise CAL con Services (EOP Premium), o desde una organización de EOP Premium a otra organización de EOP Premium. Debido a que algunas características Premium no son compatibles con las organizaciones estándar de EOP, el traslado de una organización de EOP Premium a una organización estándar de EOP podría no ser correcta. >  Estas instrucciones son para las organizaciones de solo filtrado de EOP. Existen consideraciones adicionales al moverse desde una organización de Exchange Online hacia otra organización de Exchange Online. Las organizaciones de Exchange Online están fuera del alcance de estas instrucciones. 
   
 En el ejemplo siguiente, Contoso, Ltd. se ha fusionado con Contoso Suites. La imagen siguiente muestra el proceso de mover los dominios, los usuarios y grupos de correo, y la configuración desde la organización de EOP de origen (contoso.onmicrosoft.com) hacia la organización de EOP de destino (contososuites.onmicrosoft.com):
   
@@ -58,22 +58,22 @@ A continuación, puede recopilar todas las opciones de configuración y exportar
   
 Después de conectarse al Windows PowerShell remoto, cree un directorio llamado Export en una ubicación que sea fácil de encontrar y que sea fácil de cambiar a ese directorio. Por ejemplo:
   
-```
+```Powershell
 mkdir C:\EOP\Export
 ```
 
-```
+```Powershell
 cd C:\EOP\Export
 ```
 
-El siguiente script se puede usar para recopilar todos los usuarios de correo, grupos, configuraciones contra correo no deseado, configuraciones antimalware, conectores y reglas de flujo de correo en la organización de origen. Copie y pegue el texto siguiente en un editor de texto como el Bloc de notas, guarde el archivo como Source_EOP_Settings. PS1 en el directorio de exportación que acaba de crear y ejecute el siguiente comando:
+El siguiente script se puede usar para recopilar todos los usuarios de correo, grupos, configuraciones contra correo no deseado, configuraciones antimalware, conectores y reglas de flujo de correo en la organización de origen. Copie y pegue el texto siguiente en un editor de texto como el Bloc de notas, guarde el archivo como Source_EOP_Settings.ps1 en el directorio Export que acaba de crear y ejecute el siguiente comando:
   
-```
+```Powershell
 & "C:\EOP\Export\Source_EOP_Settings.ps1"
 
 ```
 
-```
+```Powershell
 #****************************************************************************
 # Export Domains
 #*****************************************************************************
@@ -141,7 +141,7 @@ Set-Content -Path ".TransportRules.xml" -Value $file.FileData -Encoding Byte
 
 Ejecute los siguientes comandos desde el directorio Export para actualizar los archivos .xml con la organización de destino. Reemplace contoso.onmicrosoft.com y contososuites.onmicrosoft.com con los nombres de organización de origen y de destino.
   
-```
+```Powershell
 $files = ls
 ForEach ($file in $files) { (Get-Content $file.Name) | Foreach-Object {$_ -replace 'contoso.onmicrosoft.com', 'contososuites.onmicrosoft.com'} | Set-Content $file.Name}
 ```
@@ -150,13 +150,13 @@ ForEach ($file in $files) { (Get-Content $file.Name) | Foreach-Object {$_ -repla
 
 Agregue dominios a la organización de destino mediante el siguiente script. Copie y pegue el texto en un editor de texto como el Bloc de notas, guarde el script como C:\EOP\Export\Add_Domains.ps1 y ejecute el siguiente comando:
   
-```
+```Powershell
 &amp; "C:\EOP\Export\Add_Domains.ps1"
 ```
 
 Estos dominios no estarán comprobados y no se pueden usar para enrutar correo, pero después de que se agregan los dominios, puede recopilar la información necesaria para comprobar los dominios y actualizar con el tiempo los registros MX para el nuevo inquilino.
   
-```
+```Powershell
 #***********************************************************************
 # Login to Azure Active Directory
 #*****************************************************************************
@@ -172,9 +172,9 @@ Foreach ($domain in $Domains) {
 
 ```
 
-Ahora, puede revisar y recopilar la información desde el centro de administración de Office 365 de la organización de destino para comprobar rápidamente los dominios cuando llegue el momento:
+Ahora, puede revisar y recopilar la información del centro de administración de 365 de Microsoft de la organización de destino para que pueda comprobar rápidamente los dominios cuando llegue el momento:
   
-1. Inicie sesión en el centro de administración de Office 365 en [https://portal.office.com](https://portal.office.com).
+1. Inicie sesión en el centro de administración de Microsoft [https://portal.office.com](https://portal.office.com)365 en.
     
 2. Haga clic en **Dominios**.
     
@@ -186,7 +186,7 @@ Ahora, puede revisar y recopilar la información desde el centro de administraci
     
 6. Agregue los registros TXT de comprobación a sus registros DNS. Esto le permite comprobar con más rapidez los dominios en la organización de origen después de que se quitan de la organización de destino. Para obtener más información sobre la configuración de DNS, consulte [Crear registros DNS para Office 365](https://go.microsoft.com/fwlink/p/?LinkId=304219).
     
-## <a name="step-3-force-senders-to-queue-mail"></a>Paso 3: forzar a los remitentes para que pongan en cola el correo
+## <a name="step-3-force-senders-to-queue-mail"></a>Paso 3: forzar a los remitentes para que pongan en cola el correo
 
 Mientras mueve los dominios de un inquilino a otro, deberá eliminar los dominios de la organización de origen y luego comprobarlos en la organización de destino. Durante este tiempo, no podrá enrutar correo a través de EOP.
   
@@ -203,11 +203,11 @@ Para obtener más información sobre la configuración de DNS, consulte [Crear r
 
 El siguiente script quita los usuarios, grupos y dominios del inquilino de origen mediante Windows PowerShell remoto de Active Directory de Azure. Copie y pegue el texto siguiente en un editor de texto como el Bloc de notas, guarde el archivo como C:\EOP\Export\Remove_Users_and_Groups.ps1 y ejecute el siguiente comando:
   
-```
-&amp; "C:\EOP\Export\Remove_Users_and_Groups.ps1"
+```Powershell
+& "C:\EOP\Export\Remove_Users_and_Groups.ps1"
 ```
 
-```
+```Powershell
 #*****************************************************************************
 # Login to Azure Active Directory
 #*****************************************************************************
@@ -243,23 +243,23 @@ Remove-MsolDomain -DomainName $Domain.Name -Force
 
 ## <a name="step-5-verify-domains-for-the-target-organization"></a>Paso 5: comprobar dominios para la organización de destino
 
-1. Inicie sesión en el centro de administración de Office 365 en [https://portal.office.com](https://portal.office.com).
+1. Inicie sesión en el centro de administración [https://portal.office.com](https://portal.office.com)de.
     
 2. Haga clic en **Dominios**.
     
 3. Haga clic en cada vínculo **Iniciar configuración** para el dominio de destino y continúe con el asistente para la instalación. 
     
-## <a name="step-6-add-mail-users-and-groups-to-the-target-organization"></a>Paso 6: agregar usuarios y grupos de correo a la organización de destino
+## <a name="step-6-add-mail-users-and-groups-to-the-target-organization"></a>Paso 6: agregar usuarios y grupos de correo a la organización de destino
 
 Un procedimiento recomendado para EOP es usar Azure Active Directory para sincronizar Active Directory local con el inquilino de destino. Para obtener más información sobre cómo hacer esto, consulte "Usar la sincronización de directorios para administrar usuarios de correo" en [Administrar usuarios de correo en EOP](manage-mail-users-in-eop.md). También puede usar el siguiente script para volver a crear los usuarios y grupos del inquilino de origen. Nota: no se pueden mover las contraseñas de los usuarios. Las nuevas contraseñas de usuarios se crean y se guardan en el archivo denominado UsersAndGroups.ps1. (Para obtener más información sobre cómo restablecer la contraseña, consulte [Restablecer una contraseña de usuario](https://office.microsoft.com/en-us/office365-suite-help/reset-a-user-s-password-HA102816058.aspx)).
   
 Para usar el script, copie y pegue el texto siguiente en un editor de texto como el Bloc de notas, guarde el archivo como C:\EOP\Export\Add_Users_and_Groups.ps1 y ejecute el siguiente comando:
   
-```
-&amp; "C:\EOP\Export\Add_Users_and_Groups.ps1"
+```Powershell
+& "C:\EOP\Export\Add_Users_and_Groups.ps1"
 ```
 
-```
+```Powershell
 #***********************************************************************
 # makeparam helper function
 #****************************************************************************
@@ -608,13 +608,13 @@ Puede ejecutar el siguiente script desde el directorio Export mientras tiene ses
   
 Copie y pegue el texto de script en un editor de texto como el Bloc de notas, guarde el archivo como C:\EOP\Export\Import_Settings.ps1 y ejecute el siguiente comando:
   
-```
-&amp; "C:\EOP\Export\Import_Settings.ps1"
+```Powershell
+& "C:\EOP\Export\Import_Settings.ps1"
 ```
 
 Este script importa los archivos .xml y crea un archivo de script de Windows PowerShell llamado Settings.ps1 que puede revisar, editar y, a continuación, ejecutar para recrear la protección y la configuración de flujo de correo.
   
-```
+```Powershell
 #***********************************************************************
 # makeparam helper function
 #****************************************************************************
@@ -924,8 +924,8 @@ if($HostedContentFilterPolicyCount -gt 0){
  
 ```
 
-## <a name="step-8-revert-your-dns-settings-to-stop-mail-queuing"></a>Paso 8: revertir la configuración de DNS para detener la cola de correo
+## <a name="step-8-revert-your-dns-settings-to-stop-mail-queuing"></a>Paso 8: revertir la configuración de DNS para detener la cola de correo
 
-Si elige establecer los registros MX en una dirección de correo electrónico no válida para hacer que los remitentes pongan en cola el correo durante la transición, deberá volver a establecerlos con el valor correcto como se especifica en el [Centro de administración de Office 365](https://portal.office.com). Para obtener más información sobre la configuración de DNS, consulte [Crear registros DNS para Office 365](https://go.microsoft.com/fwlink/p/?LinkId=304219).
+Si decidió establecer los registros MX en una dirección no válida para que los remitentes envíen correo durante la transición, tendrá que volver a configurarlos en el valor correcto, tal como se especifica en el [centro de administración](https://admin.microsoft.com). Para obtener más información sobre la configuración de DNS, consulte [Crear registros DNS para Office 365](https://go.microsoft.com/fwlink/p/?LinkId=304219).
   
 

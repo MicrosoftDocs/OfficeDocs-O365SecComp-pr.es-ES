@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: Use la búsqueda de contenido en el centro &amp; de seguridad y cumplimiento de Office 365 para buscar contenido en buzones de correo, sitios de SharePoint Online, cuentas de OneDrive, Microsoft Teams, grupos de Office 365 y conversaciones de Skype empresarial. Puede usar consultas de búsqueda de palabras clave y condiciones de búsqueda para restringir los resultados de la búsqueda. A continuación, puede obtener una vista previa y exportar los resultados de búsqueda. La búsqueda de contenido también es una herramienta eficaz para buscar contenido que pueda estar relacionado con una solicitud de sujeto de datos de RGPD.
-ms.openlocfilehash: b7ecfc68c143225f097508e2cca0e87b7ce250d6
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 22792e9513d0e9a7be468bb13db2e4286f9f140c
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296363"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670725"
 ---
 # <a name="content-search-in-office-365"></a>Búsqueda de contenido en Office 365
 
@@ -54,7 +54,7 @@ Para tener acceso a la página de **búsqueda de contenido** para ejecutar las b
     
     ![La nueva lista desplegable de búsqueda](media/76b25861-55c5-4f50-9d48-9e2be2d0d078.png)
   
-    Se puede elegir entre las opciones siguientes:
+    Use la pestaña Búsquedas DNS internas para especificar si desea usar los servidores DNS que están configurados en un adaptador de red instalado en este servidor o usar servidores DNS específicos al resolver las direcciones de servidores de correo para la entrega de correo interno. Los servidores DNS internos se usan para resolver direcciones IP para servidores de la organización.
     
   - **Búsqueda guiada** : esta opción inicia un asistente que le guía a través de la creación de la búsqueda. La interfaz de usuario para seleccionar ubicaciones de contenido y crear la consulta de búsqueda son las mismas que las de la nueva opción de **búsqueda** . 
     
@@ -70,7 +70,7 @@ Para tener acceso a la página de **búsqueda de contenido** para ejecutar las b
     
     ![Especificar palabras clave, condiciones y ubicaciones para la búsqueda](media/1e6de9dd-eac9-4e2a-819d-9740cf6c9106.png)
   
-- **Palabras clave para buscar** : escriba una consulta de búsqueda en el cuadro **palabras clave** . Puede especificar palabras clave, propiedades del mensaje, como las fechas de envío y recepción, o propiedades del documento, como nombres de archivo o la fecha en que se modificó por última vez un documento. Puede usar consultas más complejas que usen un operador booleano, como **and**, **or**, **Not**y **Near**. También puede buscar información confidencial (por ejemplo, los números de la seguridad social) en documentos o buscar documentos que se han compartido de forma externa. Si deja vacío el cuadro palabra clave, todo el contenido ubicado en las ubicaciones de contenido especificadas se incluirá en los resultados de la búsqueda.
+- **Palabras clave para buscar** : escriba una consulta de búsqueda en el cuadro **palabras clave** . Puede especificar palabras clave, propiedades del mensaje como la fecha de envío y de recepción, o propiedades del documento como nombres de archivo o la fecha de la última modificación de un documento. Puede usar consultas más complejas que usen un operador booleano, como **and**, **or**, **Not**y **Near**. También puede buscar información confidencial (por ejemplo, los números de la seguridad social) en documentos o buscar documentos que se han compartido de forma externa. Si deja vacío el cuadro palabra clave, todo el contenido ubicado en las ubicaciones de contenido especificadas se incluirá en los resultados de la búsqueda.
     
     Como alternativa, puede hacer clic en la casilla **Mostrar lista de palabras clave** y escribir una palabra clave en cada fila. Si hace esto, las palabras clave de cada fila están conectadas por un operador lógico ( **c:s**) que es similar en funcionalidad al operador **or** en la consulta de búsqueda que se crea. 
     
@@ -78,7 +78,7 @@ Para tener acceso a la página de **búsqueda de contenido** para ejecutar las b
 
     [!NOTE] Para ayudar a reducir los problemas causados por listas de palabras clave grandes, ahora está limitado a un máximo de 20 filas en la lista de palabras clave.
     
-- **Condiciones** : puede agregar condiciones de búsqueda para restringir una búsqueda y devolver un conjunto de resultados más refinado. Cada condición agrega una cláusula a la consulta de búsqueda que se crea y se ejecuta cuando se inicia la búsqueda. Una condición está conectada lógicamente a la consulta de palabras clave (especificada en el cuadro palabra clave) por un operador lógico ( **c:c**) que es similar en funcionalidad al operador **and** . Esto significa que los elementos deben cumplir con la consulta de palabra clave y una o más condiciones que se van a incluir en los resultados. Este es el modo en que las condiciones ayudan a restringir los resultados. Para obtener una lista y una descripción de las condiciones que puede usar en una consulta de búsqueda, consulte la sección "condiciones de búsqueda" en [consultas de palabras clave y condiciones de búsqueda para la búsqueda de contenido](keyword-queries-and-search-conditions.md#search-conditions).
+- **Condiciones** : puede agregar condiciones de búsqueda para restringir una búsqueda y devolver un conjunto de resultados más refinado. Cada condición agrega una cláusula a la consulta de búsqueda que se crea y se ejecuta cuando se inicia la búsqueda. Una condición está conectada lógicamente a la consulta de palabras clave (especificada en el cuadro palabra clave) por un operador lógico ( **c:c**) que es similar en funcionalidad al operador **and** . Esto significa que los elementos deben cumplir con la consulta de palabra clave y una o más condiciones que se van a incluir en los resultados. De esta manera, las condiciones permiten restringir los resultados. Para obtener una lista y una descripción de las condiciones que puede usar en una consulta de búsqueda, consulte la sección "condiciones de búsqueda" en [consultas de palabras clave y condiciones de búsqueda para la búsqueda de contenido](keyword-queries-and-search-conditions.md#search-conditions).
     
 - **Ubicaciones** : elija las ubicaciones de contenido en las que desea realizar la búsqueda.
     
@@ -98,14 +98,14 @@ Para tener acceso a la página de **búsqueda de contenido** para ejecutar las b
     
 9. Haga clic en **Guardar** para iniciar la búsqueda. 
     
-    Después de guardar y ejecutar la búsqueda, los resultados devueltos por la búsqueda se muestran en el panel de resultados. En función de la configuración de la vista previa, se mostrarán los resultados de la búsqueda o tendrá que hacer clic en **vista previa de resultados** para verlos. Vea la sección siguiente para obtener más información. 
+    Después de guardar y ejecutar la búsqueda, los resultados devueltos por la búsqueda se muestran en el panel de resultados. En función de la configuración de la vista previa, se mostrarán los resultados de la búsqueda o tendrá que hacer clic en **vista previa de resultados** para verlos. Consulte la siguiente sección para obtener más detalles. 
     
 Para tener acceso a esta búsqueda de contenido de nuevo o tener acceso a otras búsquedas de contenido en la página **búsqueda de contenido** , seleccione la búsqueda y, a continuación, haga clic en **abrir**. 
   
 Para borrar los resultados o crear una nueva búsqueda, haga ![clic en](media/O365-MDM-CreatePolicy-AddIcon.gif) agregar icono **nueva búsqueda**. 
 
   
-## <a name="preview-search-results"></a>Obtener una vista previa de los resultados de la búsqueda
+## <a name="preview-search-results"></a>Vista previa de los resultados de búsqueda
 
 Hay dos opciones de configuración para obtener una vista previa de los resultados de búsqueda. Una vez que haya ejecutado una nueva búsqueda o haya abierto una búsqueda existente, haga clic en * * resultados individuales * * para ver la siguiente configuración de vista previa: 
   
@@ -148,15 +148,15 @@ Para obtener información más detallada acerca de las estadísticas de búsqued
   
 ## <a name="export-search-results"></a>Exportar resultados de búsqueda
 
-Una vez ejecutada correctamente la búsqueda, puede exportar los resultados de la búsqueda a un equipo local. Cuando se exportan los resultados del correo electrónico, se pueden descargar en el equipo como archivos PST o como mensajes individuales (archivos. msg). Al exportar contenido desde sitios de SharePoint y OneDrive, se exportan copias de documentos nativos de Office. También hay otros documentos e informes que se incluyen con los resultados de la búsqueda exportados. También puede exportar el informe de resultados de búsqueda y no los elementos reales.
+Una vez ejecutada correctamente la búsqueda, puede exportar los resultados de la búsqueda a un equipo local. Cuando se exportan los resultados del correo electrónico, se pueden descargar en el equipo como archivos PST o como mensajes individuales (archivos. msg). Al exportar contenido desde sitios de SharePoint y OneDrive, se exportan copias de documentos nativos de Office. También existen documentos e informes adicionales que se incluyen con los resultados de búsqueda exportados. También puede exportar el informe de resultados de búsqueda y no los elementos reales.
   
 Para exportar los resultados de la búsqueda:
   
-1. En la página **búsqueda de contenido** del centro &amp; de seguridad y cumplimiento, haga clic en **abrir** y, a continuación, en la búsqueda para la que desea exportar los resultados de la búsqueda. 
+1. En la página **búsqueda de contenido** del centro &amp; de seguridad y cumplimiento, haga clic en la búsqueda para la que desea exportar los resultados de la búsqueda. 
     
 2. En la página emergente, haga clic ![en exportar resultados](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) de búsqueda **más**y, a continuación, haga clic en **exportar resultados**. Tenga en cuenta que también puede exportar un informe de resultados de búsqueda.
     
-3. Rellene las secciones en la página **Exportar resultados**. Asegúrese de usar la barra de desplazamiento para ver todas las opciones de exportación. 
+3. Complete las secciones de la página volar en los resultados de la **exportación** . Asegúrese de usar la barra de desplazamiento para ver todas las opciones de exportación. 
     
 Para obtener instrucciones más detalladas y sugerencias para la solución de problemas, consulte:
   
@@ -219,7 +219,7 @@ Tenga en cuenta lo siguiente cuando use la lista de palabras clave para crear un
   
 - También puede preparar una lista de palabras clave o frases de palabras clave en un archivo de Excel o en un archivo de texto sin formato y, a continuación, copiar y pegar la lista en la lista de palabras clave. Para ello, debe activar la casilla **Mostrar lista de palabras clave** . A continuación, haga clic en la primera fila de la lista de palabras clave y pegue la lista. Cada línea del archivo de texto o Excel se pegará en la fila independiente de la lista de palabras clave. 
     
-- Después de crear una consulta con la lista de palabras clave, es una buena idea comprobar la sintaxis de la consulta de búsqueda para que la consulta de búsqueda sea la deseada. En la consulta de búsqueda que se muestra en **consulta** en el panel de detalles, las palabras clave están separadas por el texto **(c:s)**. esto indica que las palabras clave están conectadas mediante un operador lógico similar en funcionalidad al operador **or** . De forma similar, si la consulta de búsqueda incluye condiciones, las palabras clave y las condiciones están separadas por el texto **(c:c)**. esto indica que las palabras clave están conectadas a las condiciones con un operador lógico similar en funcionalidad al **y** signo. Este es un ejemplo de la consulta de búsqueda (que se muestra en el panel de detalles) que se obtiene al usar la lista de palabras clave y una condición. 
+- Después de crear una consulta con la lista de palabras clave, es una buena idea comprobar la sintaxis de la consulta de búsqueda para que la consulta de búsqueda sea la deseada. En la consulta de búsqueda que se muestra en **consulta** en el panel de detalles, las palabras clave están separadas por el texto **(c:s)**. Esto indica que las palabras clave están conectadas por un operador lógico similar en funcionalidad al operador **or** . De forma similar, si la consulta de búsqueda incluye condiciones, las palabras clave y las condiciones están separadas por el texto **(c:c)**. Esto indica que las palabras clave están conectadas a las condiciones con un operador lógico similar en funcionalidad al operador **and** . Este es un ejemplo de la consulta de búsqueda (que se muestra en el panel de detalles) que se obtiene al usar la lista de palabras clave y una condición. 
     
     ![Ejemplo de la consulta que se crea al usar la lista de palabras clave y una condición](media/b463750c-57fa-4602-9fed-0d5a420db3ad.png)
   

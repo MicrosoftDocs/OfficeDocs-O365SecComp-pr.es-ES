@@ -15,12 +15,12 @@ ms.assetid: 97921f0e-832f-40c7-b56d-414faede5191
 ms.collection:
 - M365-security-compliance
 description: El Centro de administración de Exchange (EAC) es la consola de administración basada en web para Microsoft Exchange Online Protection (EOP).
-ms.openlocfilehash: 0d1e56b85afe6655b5c6d08df51d4607df92d1d5
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: d1e3ee90f3df20359634ae55286270b49d766324
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220470"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670435"
 ---
 # <a name="exchange-admin-center-in-exchange-online-protection"></a>Centro de administración de Exchange en Exchange Online Protection  
 
@@ -32,9 +32,9 @@ El Centro de administración de Exchange (EAC) es la consola de administración 
   
 ## <a name="accessing-the-eac"></a>Acceso a EAC
 
-En la mayoría de los casos, los clientes de EOP obtienen acceso al EAC a través del Centro de administración de Office 365. Encontrará un vínculo a EOP en el menú desplegable del icono **Administrador**, que está al lado del icono **Yo**. Haga clic en el icono **Administrador** y seleccione **Protección en línea de Exchange** en el menú desplegable para ir al EAC. 
+En la mayoría de los casos, los clientes de EOP obtendrán acceso al EAC a través del centro de administración 365 de Microsoft. Encontrará un vínculo a EOP en el menú desplegable del icono **Administrador**, que está al lado del icono **Yo**. Haga clic en el icono **Administrador** y seleccione **Protección en línea de Exchange** en el menú desplegable para ir al EAC. 
   
-También puede tener acceso a la página de inicio de sesión del EAC directamente a https://admin.protection.outlook.com/ecp/\<companydomain\>través de la siguiente dirección URL:. Por ejemplo, https://admin.protection.outlook.com/ecp/contoso.onmicrosoft.com. Después de especificar las credenciales de usuario, se le dirigirá directamente al EAC.
+You can also access the EAC sign in page directly via the following URL: https://admin.protection.outlook.com/ecp/\<companydomain\>. For example, https://admin.protection.outlook.com/ecp/contoso.onmicrosoft.com. After specifying your user credentials you will be taken directly into the EAC.
   
 ## <a name="common-user-interface-elements-in-the-eac"></a>Elementos comunes de la interfaz de usuario en EAC
 
@@ -56,7 +56,7 @@ Este es el primer nivel de navegación para la mayoría de las tareas que realiz
     
 5. **Flujo del correo** Aquí es donde se administran las reglas, los dominios aceptados y conectores, así como las ubicaciones en las que se realiza el seguimiento de mensajes. 
     
-### <a name="tabs"></a>Fichas
+### <a name="tabs"></a>Pestañas
 
 Las pestañas son el segundo nivel de navegación. Las áreas de características contienen varias pestañas y cada área representa a una característica.
   
@@ -79,7 +79,7 @@ Al hacer clic en la mayoría de las pestañas, verá una barra de herramientas. 
 
 Cuando seleccione una pestaña, en la mayoría de los casos verá la vista de lista. El límite de visualización de la vista de lista del EAC es de 10.000 objetos aproximadamente. Además, la paginación se incluye para que pueda paginar los resultados.
   
-### <a name="details-pane"></a>Panel de detalles
+### <a name="details-pane"></a>panel Detalles
 
 Cuando seleccione un objeto de la vista de lista, la información acerca del objeto se muestra en el panel de detalles. En algunos casos, el panel de detalles incluye tareas de administración.
   
@@ -181,7 +181,7 @@ Los siguientes idiomas están disponibles y son compatibles con Exchange Online 
     
 - Maratí
     
-- Noruego (Bokmål)
+- Noruego (Bokmal)
     
 - Noruego (Nynorsk)
     
