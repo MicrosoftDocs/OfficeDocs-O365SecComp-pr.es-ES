@@ -7,16 +7,15 @@ ms.date: 3/9/2015
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 206e6311-f96d-4c81-8ef2-171bcad4caa5
 description: Microsoft Exchange Online Protection proporciona características de cumplimiento y de directivas de mensajería que le ayudarán a administrar los datos del correo.
-ms.openlocfilehash: 1a084418cc6d66cd1ad8280b510bde5e630c7298
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: 3e966c03c40cbcce53a92d4052151241759bb85f
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341721"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693459"
 ---
 # <a name="messaging-policy-and-compliance-in-eop"></a>Cumplimiento y directivas de mensajería en EOP
 

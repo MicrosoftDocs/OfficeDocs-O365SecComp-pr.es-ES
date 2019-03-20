@@ -7,18 +7,17 @@ ms.date: 3/13/2015
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: c9c39ada-6100-4034-a479-8bd39d428498
 ms.collection:
 - M365-security-compliance
 description: La siguiente serie de vídeos le ayudará a configurar y usar el servicio de filtrado de correo electrónico hospedado en Exchange Online Protection (EOP).
-ms.openlocfilehash: 65568d21f6b4cb718526a9c9dcddfef2f58b1ca1
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: 1e8aadd173f4e30c528679347171230e83752af0
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341191"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693569"
 ---
 # <a name="videos-for-getting-started-with-eop"></a>Vídeos de introducción a EOP
 
@@ -27,7 +26,7 @@ La siguiente serie de vídeos le ayudará a configurar y usar el servicio de fil
 > [!NOTE]
 > Antes de iniciar las tareas descritas en los vídeos, se recomienda configurar el flujo del correo. Para obtener más información, consulte el tema [Configure mail flow using connectors in Office 365](http://technet.microsoft.com/library/854b5a50-4462-4836-a092-37e208d29624.aspx). 
   
-Estos vídeos están relacionados con la personalización de la configuración contra el correo no deseado para satisfacer las necesidades de su organización. Para el correo entrante que se transmite a través del servicio a su organización, esto incluye la creación de listas de remitentes seguros y bloqueados basada en direcciones IP y la configuración del filtro de contenido. También hay un vídeo que muestra cómo los administradores pueden buscar y liberar mensajes de correo no deseado filtrados por contenido o mensajes que coinciden con una regla de flujo de correo (también denominada regla de transporte) que se enviaron a la cuarentena, y también cómo notificar mensajes de correo no deseado para ayudarnos a mejorar el servicio.
+En estos vídeos, se describe cómo personalizar la configuración de filtro de correo electrónico no deseado para satisfacer las necesidades de su organización. Para el correo entrante a través del servicio a su organización, esto incluye la creación de un remitente seguro y listas de remitentes bloqueados según direcciones IP y la configuración de filtro de contenido. También hay un vídeo que muestra cómo los administradores pueden buscar y liberar mensajes de correo no deseado filtrados por contenido o mensajes que coinciden con una regla de flujo de correo (también denominada regla de transporte) que se enviaron a la cuarentena, y también cómo notificar mensajes de correo no deseado para ayudarnos a mejorar el servicio.
   
 - Configurar listas de direcciones IP bloqueadas y direcciones IP permitidas en EOP
     > [!VIDEO https://www.microsoft.com/videoplayer/embed/b2f5bea3-e1a7-44b3-b7e2-07fac0d0ca40?autoplay=false]

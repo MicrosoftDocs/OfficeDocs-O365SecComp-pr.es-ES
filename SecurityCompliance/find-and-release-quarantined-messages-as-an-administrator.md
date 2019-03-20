@@ -7,7 +7,6 @@ ms.date: 6/16/2017
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -15,12 +14,12 @@ ms.assetid: ab95bf17-bb09-4dd1-9990-ddd02ddecf05
 ms.collection:
 - M365-security-compliance
 description: En este tema se describe cómo los administradores de Exchange Online y Exchange Online Protection (EOP) pueden buscar, liberar e informar sobre los mensajes en cuarentena en el centro de administración de Exchange (EAC).
-ms.openlocfilehash: aec067169b343ed186d506ed33c29385a7dc6450
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: a973d3a3b1875ed1ba691f91c1c23373ac8d6694
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341791"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693229"
 ---
 # <a name="find-and-release-quarantined-messages-as-an-administrator"></a>Buscar y liberar mensajes en cuarentena como un administrador
 
@@ -39,11 +38,11 @@ Puede ver una lista de todos los mensajes en cuarentena o puede buscar mensajes 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 <a name="sectionSection0"> </a>
 
-- Debe tener permisos asignados para poder llevar a cabo este procedimiento o procedimientos. Para ver qué permisos necesita, consulte el entrada "cuarentena" en el tema [permisos de características de Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) . 
+- Deberá tener asignados permisos antes de poder llevar a cabo este procedimiento o procedimientos. Para ver qué permisos necesita, consulte el entrada "cuarentena" en el tema [permisos de características de Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) . 
     
 - Puede liberar o informar sobre varios mensajes a la vez en la página **cuarentena**. De forma alternativa, puede crear un script de Windows PowerShell remoto para realizar esta tarea. Use el cmdlet [Get-QuarantineMessage](http://technet.microsoft.com/library/88026da1-8dbc-49e7-80e8-112a32773c34.aspx) para buscar los mensajes y el cmdlet [Release-QuarantineMessage](http://technet.microsoft.com/library/4a3aa05c-238f-46f2-b8dd-b0e3c38eab3e.aspx) para liberarlos. 
     
-- Para obtener información acerca de los métodos abreviados de teclado aplicables a los procedimientos de este tema, consulte **Métodos abreviados de teclado en el Centro de administración de Exchange**.
+- Para obtener información acerca de los métodos abreviados de teclado aplicables a los procedimientos de este tema, consulte **Keyboard shortcuts in Exchange 2013**.
     
 > [!TIP]
 > ¿Tiene algún problema? Solicite ayuda en los foros de Exchange. Visite los foros en [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), o [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
@@ -70,7 +69,7 @@ En el centro de administración de Exchange (EAC), puede filtrar elementos en cu
 6. **Expira** Puede seleccionar que el mensaje se elimine de la cuarentena en las próximas 24 horas ( **Hoy**), en las próximas 48 horas ( **Próximos 2 días**), en la próxima semana ( **Próximos 7 días**), o puede seleccionar un intervalo de tiempo personalizado en el cual se eliminará el mensaje de la cuarentena.
     
     > [!IMPORTANT]
-    > De forma predeterminada, los mensajes en cuarentena de correo no deseado se mantienen en cuarentena durante 15 días, mientras que los mensajes en cuarentena que coinciden con una regla de flujo de correo se mantienen en cuarentena durante 7 días. Después de este período de tiempo, Office 365 elimina los mensajes y no se pueden recuperar. No se puede configurar el período de retención de los mensajes en cuarentena que coinciden con una regla de flujo de correo. Sin embargo, el período de retención de los mensajes de correo no deseado en cuarentena puede reducirse a través de la configuración **conservar el correo no deseado durante (días)** en las directivas de filtro de contenido. Para obtener más información, consulte [configurar las directivas de filtro de correo no deseado](configure-your-spam-filter-policies.md). 
+    > De forma predeterminada, los mensajes en cuarentena de correo no deseado se mantienen en cuarentena durante 15 días, mientras que los mensajes en cuarentena que coinciden con una regla de flujo de correo se mantienen en cuarentena durante 7 días. Finalizado este tiempo, Office 365 elimina estos mensajes y ya no se pueden recuperar. No se puede configurar el período de retención de los mensajes en cuarentena que coinciden con una regla de flujo de correo. Sin embargo, es posible reducir el período de retención de los mensajes de correo no deseado en cuarentena mediante la configuración **Mantener el correo no deseado durante (días)** en las directivas de filtro de contenido. Para obtener más información, vea [Configurar las directivas de filtro de correo no deseado](configure-your-spam-filter-policies.md). 
   
 7. **Tipo** Puede especificar si desea buscar mensajes en cuarentena que se hayan identificado como **correo no deseado**o si desea buscar los mensajes que coinciden con una regla de flujo de correo (**regla de transporte**).
     
@@ -145,7 +144,7 @@ Si desea liberar los mensajes dirigidos para sus destinatarios, tiene las opcion
   
 Haga clic en **Liberar el mensaje seleccionado y permitir el remitente** en la lista desplegable. 
     
-3. Se abrirá el cuadro de diálogo **liberar mensaje y permitir remitente** . Opcionalmente, puede elegir informar del mensaje a Microsoft y, a continuación, hacer clic en **liberar y permitir**. El mensaje se entregará a todos los destinatarios a los que se dirige y se permitirán todos los mensajes futuros de este remitente. Sin embargo, si este mensaje se ha puesto en cuarentena debido a una regla de flujo de correo o a un remitente bloqueado, el remitente seguirá bloqueado para futuros mensajes. 
+3. Se abrirá el cuadro de diálogo **liberar mensaje y permitir remitente**. Si lo desea, puede informar del mensaje a Microsoft; a continuación, haga clic en **liberar y permitir**. El mensaje se liberará para todos los destinatarios y se permitirán todos los mensajes que este remitente envíe en el futuro. Sin embargo, si este mensaje se ha puesto en cuarentena debido a una regla de flujo de correo o a un remitente bloqueado, el remitente seguirá bloqueado para futuros mensajes. 
     
 ### <a name="release-a-quarantined-message-to-specific-recipients-without-reporting-it-as-a-false-positive"></a>Liberar un mensaje en cuarentena para sus destinatarios sin identificarlo como falso positivo
 <a name="Releasequarantinedmessagetospecificrecipientswithoutreportingasfalsepositive"> </a>
@@ -193,7 +192,7 @@ Si hace clic en el icono **Actualizar**![Icono Actualizar](media/ITPro-EAC-Refre
   
 Si hace clic en el icono **Actualizar**![Icono Actualizar](media/ITPro-EAC-RefreshIcon.gif) para actualizar los datos y, a continuación, hace doble clic en el mensaje, verá que se ha liberado para los destinatarios previstos. 
   
-## <a name="for-more-information"></a>Más información
+## <a name="for-more-information"></a>Para obtener más información
 <a name="sectionSection4"> </a>
 
 [Preguntas más frecuentes sobre la cuarentena](quarantine-faq.md)

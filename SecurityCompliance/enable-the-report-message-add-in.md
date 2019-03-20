@@ -15,12 +15,12 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo habilitar el complemento de mensajes de informe para Outlook y Outlook en la web, para usuarios individuales o para toda la organización.
-ms.openlocfilehash: aba02855b514f0d631d332623d840f9c65911bd1
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.openlocfilehash: f2bb79c4c613fdb804d19226fb359124387a678f
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410905"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693389"
 ---
 # <a name="enable-the-report-message-add-in"></a>Habilitar el complemento de mensajes de informe
 
@@ -29,12 +29,12 @@ ms.locfileid: "30410905"
 
 ## <a name="overview"></a>Información general
 
-El complemento de mensajes de informe para Outlook y Outlook en la web permite a los usuarios informar fácilmente de correo no clasificado, ya sea seguro o malintencionado, a Microsoft y a sus filiales para su análisis. Microsoft usa estos envíos para mejorar la eficacia de las tecnologías de protección de correo electrónico. Además, si su organización usa la [protección contra amenazas avanzada](office-365-atp.md) de Office 365 o la [inteligencia sobre amenazas de Office 365](office-365-ti.md), el complemento de mensajes de informe proporciona al equipo de seguridad de su organización información útil que puede usar para revisar y actualizar directivas de seguridad. 
+El complemento de mensajes de informe para Outlook y Outlook en la web permite a los usuarios informar fácilmente de correo no clasificado, ya sea seguro o malintencionado, a Microsoft y a sus filiales para su análisis. Microsoft usa estos envíos para mejorar la eficacia de las tecnologías de protección de correo electrónico. Además, si su organización usa [Office 365 Advanced Threat Protection Plan 1](office-365-atp.md) o [plan 2](office-365-ti.md), el complemento de mensajes de informe proporciona al equipo de seguridad de su organización información útil que puede usar para revisar y actualizar las directivas de seguridad. 
 
 Por ejemplo, supongamos que las personas están notificando una gran cantidad de mensajes como suplantación de identidad. Esta información se Surfaces en el [Panel de seguridad](security-dashboard.md) y otros informes. El equipo de seguridad de su organización puede usar esta información como indicación de que es posible que sea necesario actualizar las directivas antiphishing. O bien, si los usuarios notifican un gran número de mensajes que se marcaron como correo no deseado mediante el complemento de mensajes de informe, es posible que el equipo de seguridad de la organización deba ajustar [las directivas contra correo no deseado](configure-the-anti-spam-policies.md). 
 
 El complemento de mensajes de informe funciona con su suscripción a Office 365 y los productos siguientes:
- - Outlook en la web
+ - Outlook en la Web
  - Outlook 2013 SP1
  - Outlook 2016
  - Outlook 2016 para Mac
@@ -142,7 +142,7 @@ Puede revisar y editar la configuración predeterminada para el complemento de m
     
 3. En la pantalla de mensaje de informe, revise y edite las opciones según corresponda para su organización.<br/>![Configuración del complemento de mensajes de informe](media/EditReportMessageAddIn.png)<br/> 
 
-## <a name="related-topics"></a>Related topics
+## <a name="related-topics"></a>Temas relacionados
 
 [Usar el complemento de mensajes de informe](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)
   

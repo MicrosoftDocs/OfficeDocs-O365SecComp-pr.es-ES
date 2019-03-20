@@ -1,5 +1,5 @@
 ---
-title: 'Ejecutar informe de grupo de roles de administrador en EOP '
+title: 'Ejecutar un informe de grupo de roles de administrador en EOP '
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -7,18 +7,17 @@ ms.date: 11/17/2014
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 23b47b57-0eec-46a3-a03b-366ea014ab31
 description: Cuando un administrador agrega o quita miembros de grupos de roles de administrador, Microsoft Exchange Online Protection (EOP) registra todas las ocurrencias.
-ms.openlocfilehash: 49311faa4ee54fafa1c05a2314ed2f9d74cbe5a5
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 752def771d95fcfbb3f7cbe0bc86a33b3967716d
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22027207"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30692719"
 ---
-# <a name="run-an-administrator-role-group-report-in-eop"></a>Ejecutar informe de grupo de roles de administrador en EOP 
+# <a name="run-an-administrator-role-group-report-in-eop"></a>Ejecutar un informe de grupo de roles de administrador en EOP 
 
  Cuando un administrador agrega o quita miembros de grupos de roles de administrador, Microsoft Exchange Online Protection (EOP) registra todas las ocurrencias. Si se ejecuta un informe de grupo de roles de administrador en el Centro de administración de Exchange, las entradas se muestran como resultados de búsqueda e incluyen los grupos de roles afectados, quién cambió la pertenencia a un grupo de roles y cuándo, y las pertenencias que se actualizaron. Use este informe para supervisar los cambios en los permisos administrativos asignados a los usuarios de la organización.
   
@@ -28,7 +27,7 @@ ms.locfileid: "22027207"
     
 - Deberá tener asignados permisos antes de poder llevar a cabo este procedimiento o procedimientos. Para ver qué permisos necesita, consulte el Sección "Informes" del tema [Permisos de características en EOP](feature-permissions-in-eop.md). 
     
-- Para obtener información acerca de los métodos abreviados de teclado aplicables a los procedimientos de este tema, consulte **Métodos abreviados de teclado en el Centro de administración de Exchange**.
+- Para obtener información acerca de los métodos abreviados de teclado aplicables a los procedimientos de este tema, consulte **Keyboard shortcuts in Exchange 2013**.
     
 > [!TIP]
 > ¿Tiene algún problema? Solicite ayuda en los foros de Exchange. Visite los foros en [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), o [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
@@ -47,7 +46,7 @@ Ejecute el informe de grupo de roles de administrador para ver los cambios hecho
     
 Si se encuentran cambios con los criterios especificados, aparecerán en el panel de resultados. Haga clic en un grupo de roles de los resultados de la búsqueda para ver los cambios en el panel de detalles.
   
-## <a name="how-do-you-know-this-worked"></a>¿Cómo saber si el proceso se ha completado correctamente?
+## <a name="how-do-you-know-this-worked"></a>¿Cómo saber si el proceso se completó correctamente?
 
 Si se ejecutó correctamente un informe de grupo de roles de administrador, los grupos de roles que cambiaron dentro del intervalo de fechas se muestran en el panel de resultados de la búsqueda. Si no hay resultados, entonces no se hicieron cambios a los grupos de funciones dentro del intervalo de fechas especificado. Si cree que debería haber resultados, cambie el intervalo de fechas y vuelva a ejecutar el informe.
   

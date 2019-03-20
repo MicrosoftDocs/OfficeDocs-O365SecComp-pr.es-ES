@@ -14,20 +14,32 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Este artículo contiene las notas de la versión para eDiscovery avanzado (versión preliminar).
-ms.openlocfilehash: d3ea9a8e6b7c0adac32d342d3504eba0e54bd66f
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 32a02c16fd30e740fcc6e1c99b46775b97590a28
+ms.sourcegitcommit: 15202bba32313534da2478b0cd215f32a10c9ef4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295013"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30684359"
 ---
 # <a name="release-notes-for-advanced-ediscovery-preview"></a>Notas de la versión para eDiscovery avanzado (versión preliminar)
 
 El programa de vista previa pública para eDiscovery avanzado es la forma de obtener acceso anticipado a la próxima funcionalidad y actualizaciones. Para obtener acceso anticipado a las características más recientes, simplemente cree y use un caso de exhibición avanzada de documentos electrónicos (versión preliminar) en el centro de seguridad & cumplimiento de Office 365. Consulte [Create a New Case](create-new-ediscovery-case.md).
 
+## <a name="known-issues"></a>Problemas conocidos
+
+**Microsoft Forms**
+
+- Los datos correspondientes a un formulario creado antes del 31 de enero de 2019 no se podrán buscar al usar la herramienta de búsqueda en la exhibición avanzada de documentos electrónicos (versión preliminar) para buscar buzones de custodios. Los formularios creados después de esta fecha estarán disponibles para su búsqueda.
+
+- Un formulario creado por un usuario puede seguir recibiendo respuestas incluso después de que se elimine el usuario que creó el formulario. Sin embargo, los datos correspondientes para las respuestas (que se produjeron después de que se eliminó el buzón de custodio) no se podrán buscar cuando se use la herramienta de búsqueda en eDiscovery avanzado (versión preliminar) para buscar buzones de correo de custodios.
+ 
+**Microsoft Sway**
+
+- Si un usuario edita un Sway justo antes de eliminar la cuenta de usuario para el propietario de ese Sway, es posible que los cambios no se puedan buscar al usar la herramienta de búsqueda en la exhibición avanzada de documentos electrónicos (versión preliminar) para buscar buzones de correo de custodios. Sway bloquea los cambios en un Sway tan pronto como recibe una señal de que la cuenta se eliminó. Sin embargo, hay una pequeña posibilidad de que se pueda editar un Sway antes de que se reciba esta señal.
+
 ## <a name="issues-fixed-in-this-release"></a>Problemas corregidos en esta versión
 
-- DCR: control de excepciones para los elementos no indexados y huérfanos
+- DCR: control de excepciones para elementos sin indexar y elementos huérfanos
 - DCR: mantener notificaciones
 - DCR: custodios en eDiscovery
 

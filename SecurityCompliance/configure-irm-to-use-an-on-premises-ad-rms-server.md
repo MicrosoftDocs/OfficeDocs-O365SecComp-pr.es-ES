@@ -7,7 +7,6 @@ ms.date: 12/13/2017
 ms.audience: End User
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -15,22 +14,22 @@ ms.assetid: 3ecde857-4b7c-451d-b4aa-9eeffc8a8c61
 ms.collection:
 - M365-security-compliance
 description: En este tema se muestra cómo configurar IRM para usar un servidor de AD RMS.
-ms.openlocfilehash: 19d353dc8aa0e02b564616aacdde31c0fffa0483
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 1da66c5afa37c96c061a4bf25c0858e4e71e2313
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215261"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693039"
 ---
 # <a name="configure-irm-to-use-an-on-premises-ad-rms-server"></a>Configurar IRM para usar un servidor de AD RMS local
   
-Para su uso con implementaciones locales, Information Rights Management (IRM) en Exchange online usa Active Directory Rights Management Services (AD RMS), una tecnología de protección de la información en Windows Server 2008 y versiones posteriores. La protección de IRM se aplica al correo electrónico aplicando una plantilla de directiva de permisos AD RMS a un mensaje de correo electrónico. Los derechos se adjuntan al propio mensaje para que la protección se produzca en línea o sin conexión, y dentro y fuera del firewall de la organización.
+Para su uso con implementaciones locales, Information Rights Management (IRM) en Exchange online usa Active Directory Rights Management Services (AD RMS), una tecnología de protección de la información en Windows Server 2008 y versiones posteriores. La protección de IRM se implanta en el correo electrónico mediante la aplicación de una plantilla de directiva de permisos de AD RMS a un mensaje de correo electrónico. Los derechos se adjuntan al propio mensaje para que la protección se produzca en línea o sin conexión, y dentro y fuera del firewall de la organización.
   
 En este tema se muestra cómo configurar IRM para usar un servidor de AD RMS. Para obtener información acerca del uso de las nuevas funciones de cifrado de mensajes de Office 365 con Azure Active Directory y Azure Rights Management, consulte las [preguntas más frecuentes sobre el cifrado de mensajes de office 365](https://support.office.com/article/0432dce9-d9b6-4e73-8a13-4a932eb0081e).
   
 Para obtener más información sobre IRM en Exchange Online, consulte [Information Rights Management en Exchange Online](information-rights-management-in-exchange-online.md).
   
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
 <a name="sectionSection0"> </a>
 
 - Tiempo estimado para finalizar esta tarea: 30 minutos
@@ -46,10 +45,10 @@ Para obtener más información sobre IRM en Exchange Online, consulte [Informati
 > [!TIP]
 > ¿Tiene algún problema? Solicite ayuda en los foros de Exchange. Visite los foros en [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), o [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
   
-## <a name="how-do-you-do-this"></a>¿Cómo realiza esto?
+## <a name="how-do-you-do-this"></a>¿Cómo debe hacer esto?
 <a name="sectionSection1"> </a>
 
-### <a name="step-1-use-the-ad-rms-console-to-export-a-trusted-publishing-domain-tpd-from-an-ad-rms-server"></a>Paso 1: Use la consola AD RMS para exportar un dominio de publicación de confianza (TPD) desde un servidor AD RMS
+### <a name="step-1-use-the-ad-rms-console-to-export-a-trusted-publishing-domain-tpd-from-an-ad-rms-server"></a>Paso 1: Use la consola AD RMS para exportar un dominio de publicación de confianza (TPD) desde un servidor AD RMS
 
 El primer paso es exportar un dominio de publicación de confianza (TPD) del servidor local AD RMS a un archivo XML. El dominio de publicación de confianza contiene las siguientes opciones de configuración que se necesitan para usar características RMS: 
   
@@ -93,15 +92,15 @@ Por ejemplo, el siguiente comando importa el dominio de publicación de confianz
 Import-RMSTrustedPublishingDomain -FileData $([byte[]](Get-Content -Encoding byte -Path C:\Users\Administrator\Desktop\ExportTPD.xml -ReadCount 0)) -Name "Exported TPD" -ExtranetLicensingUrl https://corp.contoso.com/_wmcs/licensing -IntranetLicensingUrl https://rmsserver/_wmcs/licensing
 ```
 
-Para información detallada sobre la sintaxis y los parámetros, vea [Import-RMSTrustedPublishingDomain](http://technet.microsoft.com/library/7c5e7a0f-9c9d-4863-bab8-bcc729cc16a6.aspx).
+Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [Import-RMSTrustedPublishingDomain](http://technet.microsoft.com/library/7c5e7a0f-9c9d-4863-bab8-bcc729cc16a6.aspx).
   
-#### <a name="how-do-you-know-this-step-worked"></a>¿Cómo saber si el paso ha funcionado?
+#### <a name="how-do-you-know-this-step-worked"></a>¿Cómo sabe si este paso funcionó?
 
 Para comprobar que el dominio de publicación de confianza se haya importado correctamente, ejecute el cmdlet **Get-RMSTrustedPublishingDomain** para recuperar los dominios de publicación de confianza de su organización de Exchange Online. Para obtener detalles, consulte los ejemplos en [Get-RMSTrustedPublishingDomain](http://technet.microsoft.com/library/69499195-f08f-41bd-b0ed-443688410b12.aspx).
   
 ### <a name="step-3-use-the-exchange-management-shell-to-distribute-an-ad-rms-rights-policy-template"></a>Paso 3: use el Shell de administración de Exchange para distribuir una plantilla de directiva de permisos AD RMS
 
-Después de importar el TPD, debe asegurarse de que se distribuya una plantilla de directiva de derechos de AD RMS. Una plantilla distribuida es visible para los usuarios de Outlook en la web (anteriormente conocido como Outlook Web App), que a su vez pueden aplicar las plantillas a un mensaje de correo electrónico.
+Después de importar el dominio de publicación de confianza, debe asegurarse de que la plantilla de directiva de permisos AD RMS esté distribuida. Una plantilla distribuida es visible para los usuarios de Outlook en la web (anteriormente conocido como Outlook Web App), que a su vez pueden aplicar las plantillas a un mensaje de correo electrónico.
   
 Para obtener una lista de todas las plantillas que incluye el TPD predeterminado, ejecute el comando siguiente:
   
@@ -109,7 +108,7 @@ Para obtener una lista de todas las plantillas que incluye el TPD predeterminado
 Get-RMSTemplate -Type All | fl
 ```
 
-Si el valor del parámetro _Type_ es `Archived`, la plantilla no es visible para los usuarios. Solo las plantillas distribuidas en el TPD predeterminado están disponibles en Outlook en la Web.
+Si el valor del parámetro  _Type_ es  `Archived`, la plantilla no está visible para los usuarios. Solo las plantillas distribuidas en el TPD predeterminado están disponibles en Outlook en la Web.
   
 Para distribuir una plantilla, ejecute el comando siguiente:
   
@@ -160,7 +159,7 @@ Para obtener información detallada acerca de la sintaxis y los parámetros, con
 
 Para comprobar que IRM se haya habilitado correctamente, ejecute el cmdlet [Get-IRMConfiguration](http://technet.microsoft.com/library/e1821219-fe18-4642-a9c2-58eb0aadd61a.aspx) para comprobar la configuración de IRM en la organización de Exchange Online. 
   
-## <a name="how-do-you-know-this-task-worked"></a>¿Cómo sabe si esta tarea se ha completado correctamente?
+## <a name="how-do-you-know-this-task-worked"></a>¿Cómo sabe si esta tarea funcionó?
 <a name="sectionSection2"> </a>
 
 Para comprobar si ha importado el TPD y ha habilitado IRM correctamente, haga lo siguiente:

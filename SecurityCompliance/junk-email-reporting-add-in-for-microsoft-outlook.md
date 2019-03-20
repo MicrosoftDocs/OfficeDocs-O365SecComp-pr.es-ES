@@ -7,18 +7,17 @@ ms.date: 1/14/2016
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 4650fec1-4ee3-4659-abbc-bf091718cb26
 ms.collection:
 - M365-security-compliance
 description: 'El complemento de notificación de correo no deseado para Microsoft Outlook permite a los usuarios de Exchange Online y de Exchange Online Protection notificar correo no deseado fácilmente a Microsoft para su análisis a fin de reducir el número de mensajes futuros de correo no deseado filtrados por el servicio y minimizar su impacto. Compatible con Microsoft Outlook 2013, Outlook 2010 u Outlook 2007, con Windows 7, Windows 8 o Windows 10, el complemento de notificación ofrece las siguientes ventajas:'
-ms.openlocfilehash: 2434edbf51523f80a8bcf3cb5c7ace5ff3369f4d
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: fd8db743daff164d18b4067004fcb23b48393d66
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276090"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693349"
 ---
 # <a name="junk-email-reporting-add-in-for-microsoft-outlook"></a>Complemento de notificación de correo no deseado de Microsoft Outlook
 

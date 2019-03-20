@@ -7,7 +7,6 @@ ms.date: 11/2/2017
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -15,12 +14,12 @@ ms.assetid: c33fd406-a4c8-4ac8-ad85-123996c5cded
 ms.collection:
 - M365-security-compliance
 description: 'Cuando se bloquea a un remitente en el servicio debido al envío de correo no deseado de salida, el administrador de dominio especificado al Configurar la directiva de correo no deseado saliente recibirá un correo electrónico de notificación similar al siguiente:'
-ms.openlocfilehash: 94af965505f7541600a6cd7937ae881226a2ac79
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: 04d8bde8e9cadd3525191a5bee7d368229e85056
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30275480"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30691811"
 ---
 # <a name="sample-notification-when-a-sender-is-blocked-sending-outbound-spam"></a>Notificación de muestra cuando se bloquea a un remitente para enviar correo no deseado de salida
 
@@ -32,7 +31,7 @@ Cuando se bloquea a un remitente en el servicio debido al envío de correo no de
   
  **Cuerpo:** Se trata de una respuesta automática desde el sistema de análisis de correo no deseado de Exchange Online Protection. 
   
-Se está poniéndose en contacto con usted porque hemos detectado grandes volúmenes de correo electrónico marcados como correo no deseado, u otros comportamientos sospechosos, que provienen de su organización. Las siguientes cuentas de correo electrónico han sido bloqueadas para enviar correo electrónico (pueden seguir recibiendo correo electrónico):
+Nos ponemos en contacto con usted porque hemos detectado volúmenes elevados de correo electrónico marcado como correo no deseado, u otros comportamientos sospechosos, procedentes de su organización. Las siguientes cuentas de correo electrónico han sido bloqueadas para enviar correo electrónico (pueden seguir recibiendo correo electrónico):
   
 \< *nombre de cuenta*  \> 
   

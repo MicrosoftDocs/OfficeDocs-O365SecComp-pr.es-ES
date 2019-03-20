@@ -15,12 +15,12 @@ ms.assetid: 3387bfc3-028a-42f4-8133-4cbecfaab812
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo las capacidades de investigación y respuesta de las amenazas de Office 365 pueden ayudar a su organización a detectar intrusiones y amenazas, y mitigar rápidamente y recuperarse de amenazas.
-ms.openlocfilehash: 924ec3522b056b267f5e8af394f380aaff8392a2
-ms.sourcegitcommit: f25a667e4c7d11c43c87604d576f1e6d6155b14f
+ms.openlocfilehash: 9ed20713cac07631e63b969efea402e8dbeb8f6d
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "30536140"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30692289"
 ---
 # <a name="keep-your-office-365-users-safe-with-office-365-threat-investigation-and-response-capabilities"></a>Mantener a los usuarios de Office 365 seguros con capacidades de investigación y respuesta de amenazas de Office 365
 
@@ -28,10 +28,10 @@ ms.locfileid: "30536140"
 
 ¿Sabe cuáles de los usuarios de Office 365 son atacados o que son peores en peligro? ¿Sabe cómo mitigar y recuperar los ataques que tienen como objetivo los usuarios? ¿Sabía que puede hacer exactamente esto con las funciones de seguridad que ya están disponibles en Office 365? 
   
-La [respuesta y la investigación de amenazas de office 365](office-365-ti.md) es un conjunto de capacidades incluidas en su suscripción a Office 365 E5. Office 365 Threat Investigation and Response Capabilities han ayudado a Microsoft IT a reducir el tiempo promedio de resolución de incidencias de ingeniería social en un 80% y un mayor rendimiento del caso en un 37% al mes en comparación con los dos trimestres anteriores. 
+[Office 365 Threat Investigation and Response](office-365-ti.md) es un conjunto de capacidades incluidas en su suscripción a Office 365 E5 (como parte de Office 365 Advanced Threat Protection Plan 2). Office 365 Threat Investigation and Response Capabilities han ayudado a Microsoft IT a reducir el tiempo promedio de resolución de incidencias de ingeniería social en un 80% y un mayor rendimiento del caso en un 37% al mes en comparación con los dos trimestres anteriores. 
 
 > [!IMPORTANT]
-> La protección contra amenazas avanzada de Office 365 y la investigación y respuesta de amenazas (anteriormente conocida como Office 365 Threat Intelligence) ahora forman parte de Office 365 Advanced Threat Protection Plan 2, con capacidades adicionales de protección contra amenazas. Para obtener más información, consulte [planes y precios](https://products.office.com/exchange/advance-threat-protection) de la protección contra amenazas avanzada de Office 365 y la [Descripción del servicio de protección contra amenazas avanzada de Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+> Las capacidades de investigación y respuesta de amenazas (anteriormente conocido como Office 365 Threat Intelligence) ahora forman parte de Office 365 plan de protección contra amenazas avanzada 2, junto con otras capacidades de protección contra amenazas. Para obtener más información, consulte [planes y precios](https://products.office.com/exchange/advance-threat-protection) de la protección contra amenazas avanzada de Office 365 y la [Descripción del servicio de protección contra amenazas avanzada de Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
   
 Hemos agregado nuevas funcionalidades recientemente para ayudarle a detectar y recuperarse de amenazas. Este es un rápido paso por el modo en que las capacidades de investigación y respuesta de amenazas actualizadas pueden hacer que sea incluso más eficaz.
   
@@ -51,7 +51,7 @@ Una vez que los administradores de seguridad han identificado algo sospechoso o 
   
  **Actualización:** Hemos agregado la capacidad de eliminar mensajes de correo electrónico (eliminación parcial o difícil) directamente del marco de incidentes. Los administradores anteriores solo podían mover correos a la carpeta de correo no deseado de un usuario, donde los usuarios podían recuperar el elemento. Con las capacidades de eliminación recién sueltas, ahora puede asegurarse de que se elimina un correo malintencionado o no deseado de forma permanente. 
   
-Si aún no tiene estas capacidades de investigación y respuesta de Office 365, [pruébelo ahora](https://aka.ms/tryo365threatintel3). Y [Obtenga más información acerca de las capacidades de investigación y respuesta de amenazas de Office 365](https://aka.ms/readmoreabouto365threatintel).
+Si aún no tiene estas funciones, [pruébelo ahora](https://aka.ms/tryo365threatintel3). Y [Obtenga más información acerca de las capacidades de investigación y respuesta de amenazas de Office 365](https://aka.ms/readmoreabouto365threatintel).
   
 ![Captura de pantalla de la lista de correo electrónico de corrección de incidentes](media/9d8452d3-d8d2-4b26-81f9-76396e08dd17.png)
   
@@ -66,7 +66,7 @@ Gartner calcula que en 2017 se gastó por sola vez más de $90B en Cybersecurity
   
 ## <a name="whats-next"></a>Siguiente
 
-- Obtenga más información sobre las capacidades de investigación y respuesta de amenazas de Office 365 en esta sesión grabada: [Manténgase al día de la Cyberattacks con office 365 Threat Intelligence](https://myignite.microsoft.com/videos/53723)
+- Obtenga más información sobre las capacidades de investigación y respuesta de amenazas de Office 365 en esta sesión grabada: [Manténgase al día de la Cyberattacks con Office 365](https://myignite.microsoft.com/videos/53723)
     
 - [Pruebe las capacidades de investigación y respuesta de amenazas de office 365 ahora](https://aka.ms/tryo365threatintel3) o inicie la versión de prueba de Office E5 hoy mismo. 
     

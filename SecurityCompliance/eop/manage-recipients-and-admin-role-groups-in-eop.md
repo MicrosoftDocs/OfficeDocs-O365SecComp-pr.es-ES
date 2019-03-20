@@ -7,16 +7,15 @@ ms.date: 3/9/2015
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 2041a048-8d78-4b76-a91f-43ea43a858bd
 description: Microsoft Exchange Online Protection (EOP) ofrece varias maneras de administrar los destinatarios de correo. Los siguientes temas y sus temas secundarios asociados proporcionan información y procedimientos de configuración para administrar destinatarios y asignar permisos de grupo de roles de administración.
-ms.openlocfilehash: d89544bd4e7b774a883fcb3068623eca59a68f6a
-ms.sourcegitcommit: 22bca85c3c6d946083d3784f72e886c068d49f4a
+ms.openlocfilehash: 431a3af4a573c32ef099e72786f26f32dc3288e8
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "22026607"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30691699"
 ---
 # <a name="manage-recipients-and-admin-role-groups-in-eop"></a>Administrar destinatarios y grupos de roles de administración en EOP
 
@@ -25,7 +24,7 @@ Microsoft Exchange Online Protection (EOP) ofrece varias maneras de administrar 
 |**Tema**|**Descripción**|
 |:-----|:-----|
 |[Administrar destinatarios en EOP](manage-recipients-in-eop.md) <br/> |Describe los tipos de destinatarios en EOP (usuarios de correo y grupos), cómo agregar, quitar y editar destinatarios, dónde encontrar los destinatarios en el EAC, y otros aspectos de la administración de destinatarios.  <br/> |
-|[Administrar permisos de grupo de roles de administrador de elevación de privilegios](manage-admin-role-group-permissions-in-eop.md) <br/> |Describe dónde encontrar una lista de roles de administración en el EAC, cómo agregar o quitar usuarios de un grupo de roles existente y qué permisos necesita para administrar características específicas de EOP.  <br/> |
+|[Administrar permisos de grupos de roles de administración en EOP](manage-admin-role-group-permissions-in-eop.md) <br/> |Describe dónde encontrar una lista de roles de administración en el EAC, cómo agregar o quitar usuarios de un grupo de roles existente y qué permisos necesita para administrar características específicas de EOP.  <br/> |
    
 ## <a name="for-more-information"></a>Más información
 

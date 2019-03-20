@@ -15,16 +15,16 @@ ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
 description: Como administrador global de Office 365, puede usar simulador de ataque para ejecutar escenarios de ataque realistas en su organización. Esto puede ayudarle a identificar y encontrar a los usuarios vulnerables antes de que un ataque real reconozca a su empresa.
-ms.openlocfilehash: 1956dd2dda187b9d1d0147911dd278e8ae3650b3
-ms.sourcegitcommit: f25a667e4c7d11c43c87604d576f1e6d6155b14f
+ms.openlocfilehash: e372fe3c4cc10c4f96836db394fbccd2f180145a
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "30536160"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693669"
 ---
 # <a name="attack-simulator-in-office-365"></a>Simulador de ataques en Office 365
 
-**Resumen** Si es un administrador global de Office 365 y su organización tiene [office 365 de investigación de amenazas y respuesta capabilties](office-365-ti.md), puede usar simulaDor de ataque para ejecutar escenarios de ataque realistas en su organización. Esto puede ayudarle a identificar y encontrar usuarios vulnerables antes de que un ataque real afecte a su conclusión. Lea este artículo para obtener más información.
+**Resumen** Si es un administrador global de Office 365 y su organización tiene [capacidades de investigación y respuesta de amenazas para office 365](office-365-ti.md), puede usar el simulaDor de ataques para ejecutar escenarios de ataque realistas en su organización. Esto puede ayudarle a identificar y encontrar usuarios vulnerables antes de que un ataque real afecte a su conclusión. Lea este artículo para obtener más información.
 
 > [!IMPORTANT]
 > La protección contra amenazas avanzada de Office 365 y la investigación y respuesta de amenazas (anteriormente conocida como inteligencia de amenazas) ahora forman parte de Office 365 plan de protección contra amenazas avanzada 2, con capacidades de protección contra amenazas adicionales. Para obtener más información, consulte [planes y precios](https://products.office.com/exchange/advance-threat-protection) de la protección contra amenazas avanzada de Office 365 y la [Descripción del servicio de protección contra amenazas avanzada de Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
@@ -56,7 +56,7 @@ Asegúrese de que usted y su organización cumplen con los siguientes requisitos
     
 - **La [autenticación multifactor](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication?view=o365-worldwide) (MFA) está activada, como mínimo, para la cuenta de administrador global de Office 365**. (Idealmente, la MFA está activada para todos los usuarios de la organización).
  
-- **su organización tiene [Office 365 Threat Intelligence](office-365-ti.md)**, con simulador de ataque visible en &amp; el centro de seguridad y cumplimiento (vaya a simulador de **ataque**de **administración** \> de amenazas)<br/>![Administración de amenazas: simulador de ataque](media/ThreatMgmt-AttackSimulator.png)
+- **su organización tiene [el Plan 2 de la protección contra amenazas avanzada de Office 365](office-365-ti.md)**, con el &amp; simulador de ataque visible en el centro de seguridad y cumplimiento (vaya a simulador de **ataque**de **administración** \> de amenazas)<br/>![Administración de amenazas: simulador de ataque](media/ThreatMgmt-AttackSimulator.png)
 
     
 ## <a name="display-name-spear-phishing-attack"></a>Nombre para mostrar: ataque de suplantación de identidad
@@ -137,7 +137,7 @@ Se han agregado nuevas características a simulador de ataque. Entre estos, incl
 
 Visite el [mapa de ruta de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap) para ver lo que se está desarrollando, lo que está implementando y lo que ya se ha iniciado.
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 
 [Desription del servicio de protección contra amenazas avanzada de Office 365](https://docs.microsoft.com/en-us/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
 

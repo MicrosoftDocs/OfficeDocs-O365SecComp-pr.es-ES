@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Solutions
 - SIEM
 description: 'Resumen: Lea este artículo para obtener información general sobre la integración del servidor SIEM con Microsoft 365.'
-ms.openlocfilehash: 3f906fb082ec2c1a026940d2b5701a3d1fbec393
-ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
+ms.openlocfilehash: 905f6fc9b6fd62748e25c27d6e5cdbedacc0f806
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30357501"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693649"
 ---
 # <a name="siem-server-integration-with-microsoft-365-services-and-applications"></a>Integración del servidor de SIEM con los servicios y aplicaciones de Microsoft 365
 
@@ -33,12 +33,12 @@ Un servidor de SIEM puede recibir datos de una amplia variedad de aplicaciones y
 
 | Servicio o aplicación de Microsoft 365 | Entradas del servidor SIEM | Recursos para obtener más información |
 | --- | --- | --- |
-| [Protección contra amenazas avanzada de Office 365](office-365-atp.md) <br/>   o   <br/>[Inteligencia sobre amenazas de Office 365](office-365-ti.md) | Registros de auditoría | [Integración de SIEM con Office 365 Threat Intelligence y protección contra amenazas avanzada](siem-integration-with-office-365-ti.md) |
+| [Protección contra amenazas avanzada de Office 365](office-365-atp.md) <br/>   o   <br/>[Inteligencia sobre amenazas de Office 365](office-365-ti.md) | Registros de auditoría | [Integración de SIEM con Office 365 protección contra amenazas avanzada](siem-integration-with-office-365-ti.md) |
 | [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) | Integración de registros | [Integración de SIEM con Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/siem) |
 | [Office 365 Cloud App Security](office-365-cas-overview.md) | Integración de registros | [Integrar el servidor SIEM con Office 365 Cloud App Security](integrate-your-siem-server-with-office-365-cas.md) |
 | [Protección contra amenazas avanzada de Windows Defender](https://docs.microsoft.com/windows/security/threat-protection/) | Integración de registros | [Extraer alertas a las herramientas de SIEM](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-siem-windows-defender-advanced-threat-protection) |
 | [Centro de seguridad de Azure](https://docs.microsoft.com/azure/security-center/security-center-intro) (Protección contra amenazas y detección de amenazas) | Alertas | [Exportación de datos de seguridad de Azure a SIEM-configuración de canalización-vista previa](https://docs.microsoft.com/azure/security-center/security-center-export-data-to-siem) |
-| [Protección de identidad de Azure Active Directory](https://docs.microsoft.com/azure/active-directory/identity-protection/overview) | Registros de auditoría | [Integración de los registros de auditoría de Azure Active Directory](https://docs.microsoft.com/azure/security/security-azure-log-integration-ad) |
+| [Azure Active Directory Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/overview) | Registros de auditoría | [Integración de los registros de auditoría de Azure Active Directory](https://docs.microsoft.com/azure/security/security-azure-log-integration-ad) |
 | [Análisis de amenazas avanzadas de Azure](https://docs.microsoft.com/azure/security/azure-threat-detection) | Integración de registros | [Referencia de registro SIEM de ATA](https://docs.microsoft.com/advanced-threat-analytics/cef-format-sa) |
 
 ## <a name="audit-logging-must-be-turned-on"></a>El registro de auditoría debe estar activado

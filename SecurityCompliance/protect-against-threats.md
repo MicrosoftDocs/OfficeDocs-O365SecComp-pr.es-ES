@@ -14,18 +14,18 @@ ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo Office 365 Enterprise puede ayudar a proteger a su organización frente a diversas amenazas, como la suplantación de identidad, malware, correo no deseado, intentos de suplantación de identidad (phishing) y acceso no autorizado a los datos.
-ms.openlocfilehash: da39421184deacdc19adf073f086a3d8a2021acd
-ms.sourcegitcommit: 5b5bbced1577701bdb6befc8ed252e9d9e776529
+ms.openlocfilehash: 1d6abe6bd9347a625c6e533737ffe4bb3b7cee7a
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "30245586"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693249"
 ---
 # <a name="protect-against-threats-in-office-365"></a>Protección contra amenazas en Office 365
 
 Con Office 365 Enterprise, puede ayudar a proteger su organización frente a una variedad de amenazas, como la suplantación de identidad, malware, correo no deseado, intentos de suplantación de identidad (phishing) y acceso no autorizado a los datos. Use los recursos de esta página para obtener información sobre las opciones de protección contra amenazas y las acciones que puede realizar.
 
-## <a name="malware"></a>Malware
+## <a name="malware"></a>Software
 
 - [Protección antimalware &amp; contra correo no deseado](anti-spam-and-anti-malware-protection.md)
     
@@ -39,7 +39,7 @@ Con Office 365 Enterprise, puede ayudar a proteger su organización frente a una
 
 - [Datos adJuntos seguros de ATP de Office 365](atp-safe-attachments.md)
 
-- [Vínculos seguros ATP de Office 365](atp-safe-links.md)
+- [Vínculos seguros de ATP de Office 365](atp-safe-links.md)
 
 ## <a name="anti-phishing"></a>Contra la suPlantación de identidad
 
@@ -72,7 +72,7 @@ Configure directivas para administrar la suplantación de identidad, proteger co
   
 - [Información sobre Office 365 ATP](office-365-atp.md)
 
-- [Obtener información general sobre la inteligencia sobre amenazas de Office 365](office-365-ti.md)
+- [Obtener información general sobre Office 365 ATP plan 2](office-365-ti.md)
     
 - [Configurar directivas antiphishing](set-up-anti-phishing-policies.md)
     

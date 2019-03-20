@@ -7,17 +7,16 @@ ms.date: 12/15/2016
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.collection: Ent_O365_Hybrid
 ms.assetid: a7203ebd-ffac-4a8d-a2d0-6c8a61c8eeb8
 description: Microsoft mantiene el compromiso de hacer más fácil para todos el uso de sus productos y servicios.
-ms.openlocfilehash: 2403ef4ec5a99202a45b40bf639193643b6ad02b
-ms.sourcegitcommit: 06d6e63225f912d0f3c6bb836c61eb11c1dbe97a
+ms.openlocfilehash: 271383361ee99f6959e81a1f38dea4b200c54fb5
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "30206383"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693109"
 ---
 # <a name="accessibility-for-people-with-disabilities"></a>Accesibilidad para personas con discapacidad
 
@@ -29,7 +28,7 @@ Las siguientes características de Microsoft Exchange lo hacen más accesible p
     
 - [Métodos abreviados en Outlook en la web](https://go.microsoft.com/fwlink/p/?LinkId=268079)
     
-Además, algunas utilidades y características de accesibilidad de Windows pueden beneficiar a los usuarios de Exchange con discapacidades. Además, los cambios de tamaño y color de Windows PowerShell proporcionan opciones de accesibilidad al usar el shell de administración de Exchange. Para obtener más información acerca de las opciones de accesibilidad de Windows PowerShell, consulte [Accessibility in Windows PowerShell 2,0 ISE](https://go.microsoft.com/fwlink/p/?LinkId=258240).
+Además, algunas características y utilidades de accesibilidad de Windows pueden resultar beneficiosas para usuarios de Exchange con discapacidades. Por su parte, los cambios en el tamaño y el color de Windows PowerShell ofrecen opciones de accesibilidad cuando se usa el Shell de administración de Exchange. Para obtener más información acerca de las opciones de accesibilidad de Windows PowerShell, consulte [Accessibility in Windows PowerShell 2,0 ISE](https://go.microsoft.com/fwlink/p/?LinkId=258240).
   
 ## <a name="accessibility-features-of-exchange-help"></a>Características de accesibilidad de la ayuda de Exchange
 
@@ -62,7 +61,7 @@ Además, puede obtener publicaciones adicionales de Microsoft de Learning Ally. 
   
 ||
 |:-----|
-|Learning Ally  <br/> 20 Roszel Road  <br/> Princeton, NJ 08540 (EE. UU.)    <br/> Número de teléfono en los Estados Unidos: (800) 221-4792  <br/> Sitio web: [Learning Ally](https://www.learningally.org/) <br/> |
+|Learning Ally  <br/> 20 Roszel Road  <br/> Princeton, NJ 08540 (EE. UU.)      <br/> Número de teléfono en los Estados Unidos: (800) 221-4792  <br/> Sitio web: [Learning Ally](https://www.learningally.org/) <br/> |
    
 ### <a name="customer-service-for-people-with-hearing-impairments"></a>Atención al cliente para personas con discapacidad auditiva
 
@@ -74,7 +73,7 @@ Si es sordo o tiene una capacidad auditiva limitada, puede obtener acceso comple
     
 Los servicios de soporte técnico de Microsoft están sujetos a los precios, términos y condiciones del sitio y el momento en que se usen dichos servicios. Para obtener más información, consulte [Soporte técnico de Microsoft](https://go.microsoft.com/fwlink/p/?linkId=18142).
   
-## <a name="for-more-information"></a>Más información
+## <a name="for-more-information"></a>Para obtener más información
 
 Para obtener más información acerca de cómo la tecnología accesible para equipos informáticos puede ayudar a personas con discapacidades, consulte [Accesibilidad de Microsoft](http://go.microsoft.com/fwlink/p/?linkId=18139). 
   

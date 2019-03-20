@@ -3,7 +3,7 @@ title: Introducción al panel de seguridad
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 02/07/2019
+ms.date: 03/19/2019
 ms.audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 ms.collection:
 - M365-security-compliance
 description: Use el nuevo panel de seguridad para revisar el estado de la protección contra amenazas de Office 365 y vea y actúe en alertas de seguridad.
-ms.openlocfilehash: 7a4535a0cc02a6ad046cadb99b8ebb94df5fd9fe
-ms.sourcegitcommit: 1c73c2f83703af0a30a5b0633db00d8e0e6b39b5
+ms.openlocfilehash: 83e75f1a38038f1c95697f4db3e7b1134d03779d
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "30241892"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30692759"
 ---
 # <a name="security-dashboard"></a>Panel de seguridad
 
@@ -78,20 +78,20 @@ El widget global Week Threat DETECTIONS muestra el número de amenazas que se de
 
 Las métricas se calculan como se describe en la siguiente tabla:
 
-|Métrica  |Cómo se calcula  |
+|Biometría  |Cómo se calcula  |
 |---------|---------|
 |Mensajes examinados |Número de mensajes de correo electrónico examinados multiplicado por el número de destinatarios |
 |Amenazas detenidas  |Número de mensajes de correo electrónico identificados como que contienen malware multiplicado por el número de destinatarios |
 |Bloqueado por [ATP](office-365-atp.md) |Número de mensajes de correo electrónico bloqueados por ATP multiplicado por el número de destinatarios |
 |Eliminado tras la entrega |Número de mensajes eliminados por [purga automática de cero horas](zero-hour-auto-purge.md) multiplicado por el número de destinatarios |
 
-## <a name="malware"></a>Malware
+## <a name="malware"></a>Software
 
 Los widgets de malware muestran detalles sobre las tendencias de malware y los tipos de familia de malware en los últimos siete (7) días.
 
 ![Tendencias de malware y tipos de familia](media/malwarewidgetatpe5.png)
  
-## <a name="insights"></a>Enfoques
+## <a name="insights"></a>Información
 
 Información no solo aspectos clave de la superficie que debe revisar también incluyen recomendaciones y acciones a tener en cuenta. 
 
@@ -99,9 +99,9 @@ Información no solo aspectos clave de la superficie que debe revisar también i
 
 Por ejemplo, es posible que vea que se están entregando mensajes de correo electrónico de suplantación de identidad porque algunos usuarios han deshabilitado las opciones de correo no deseado. Para obtener más información acerca de cómo funcionan las ideas, consulte rePorts [and Insights in the Office &amp; 365 Security Compliance Center](reports-and-insights-in-security-and-compliance.md).
   
-## <a name="threat-intelligence"></a>Inteligencia sobre amenazas
+## <a name="threat-investigation-and-response"></a>Investigación y respuesta de amenazas
 
-Si la suscripción de su organización incluye [capacidades de inteligencia de amenazas](office-365-ti.md), el panel de seguridad tiene una sección de inteligencia sobre **amenazas** que incluye herramientas avanzadas. El equipo de seguridad de su organización puede usar la información de esta sección para comprender las campañas emergentes, investigar las amenazas y administrar los incidentes. 
+Si la suscripción de su organización incluye [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md), el panel de seguridad tiene una sección que incluye herramientas avanzadas de investigación y respuesta de amenazas. El equipo de seguridad de su organización puede usar la información de esta sección para comprender las campañas emergentes, investigar las amenazas y administrar los incidentes. 
   
 ![La inteligencia sobre amenazas ayuda a comprender los ataques dirigidos a la organización](media/threatintelwidget.png)
   
@@ -112,7 +112,7 @@ Cerca de la parte inferior del panel de seguridad hay una sección **tendencias*
   
 ![La sección tendencias resume las tendencias del flujo de correo electrónico para la organización](media/trends.png)
   
-Y, si la suscripción de Office 365 de su organización incluye [capacidades de inteligencia de amenazas](office-365-ti.md), también tendrá un informe de alertas de administración de **amenazas reciente** en esta sección que permite al equipo de seguridad ver y realizar acciones en alertas de seguridad de alta prioridad. 
+Y, si la suscripción a Office 365 de su organización incluye [office 365 plan de protección contra amenazas avanzada 2](office-365-ti.md), también tendrá un informe de **alertas de administración de amenazas reciente** en esta sección que permite al equipo de seguridad ver y realizar acciones en alertas de seguridad de alta prioridad. 
 
 Para ver o acceder al widget de correo electrónico enviado y recibido, debe tener permisos para ver los informes de protección contra amenazas avanzada. Para obtener más información, consulte [¿Qué permisos se necesitan para ver los informes de ATP?](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports). 
 
@@ -126,6 +126,6 @@ Para ver o acceder al widget de alertas de administración de amenazas reciente,
   
 [Protección contra amenazas avanzada de Office 365](office-365-atp.md)
   
-[Inteligencia sobre amenazas de Office 365](office-365-ti.md)
+[Respuesta y investigación de amenazas de Office 365](office-365-ti.md)
   
 

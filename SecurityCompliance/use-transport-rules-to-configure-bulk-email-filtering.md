@@ -6,7 +6,6 @@ manager: laurawi
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -14,18 +13,18 @@ ms.assetid: 2889c82e-fab0-4e85-87b0-b001b2ccd4f7
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden aprender a usar reglas de flujo de correo en Exchange Online Protection para el filtrado masivo de correo electrónico.
-ms.openlocfilehash: b7144f16df3e7b9f90a24f1ac224ccb20287d918
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: 43f0af6fe41bc7f8f4a62d0d87dbd825fb868f7b
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30275690"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693289"
 ---
 # <a name="use-mail-flow-rules-to-configure-bulk-email-filtering-in-exchange-online-protection"></a>Usar reglas de flujo de correo para configurar el filtrado masivo de correo electrónico en Exchange Online Protection
 
 Puede establecer filtros de contenido en toda la empresa para el correo electrónico masivo y correo no deseado usando las directivas de filtro de contenido de correo electrónico no deseado predeterminadas. Consulte [Configurar las directivas de filtro de correo no deseado](configure-your-spam-filter-policies.md) y [Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/antispam-antimalware/Set-HostedContentFilterPolicy?view=exchange-ps) para obtener información sobre cómo configurar las directivas de filtro de contenido. 
   
-Si desea más opciones para filtrar los mensajes masivos, puede crear reglas de flujo de correo (también conocidas como reglas de transporte) para buscar patrones de texto o frases que se encuentran con frecuencia en los correos masivos. Cualquier mensaje que contenga estas características se marcará como correo no deseado. El uso de estas reglas puede ayudar a reducir la cantidad de correo electrónico masivo no deseado que recibe la organización.
+Si desea más opciones para filtrar los mensajes masivos, puede crear reglas de flujo de correo (también conocidas como reglas de transporte) para buscar patrones de texto o frases que se encuentran con frecuencia en los correos masivos. Todos los mensajes que contienen estas características se marcarán como correo no deseado. El uso de estas reglas puede ayudar a reducir la cantidad de correo electrónico masivo no deseado que una organización recibe.
 
 > [!IMPORTANT]
 > Antes de crear las reglas de flujo de correo documentadas en este tema, recomendamos que primero lea [cuál es la diferencia entre el correo electrónico no deseado y el correo electrónico masivo](what-s-the-difference-between-junk-email-and-bulk-email.md) y [los valores de nivel de queja masiva](bulk-complaint-level-values.md).<br>En los siguientes procedimientos se marca un mensaje como correo no deseado para toda la organización. Sin embargo, puede agregar otra condición para aplicar estas reglas solamente a destinatarios específicos en la organización. De este modo, la configuración agresiva de filtrado de correo masivo se puede aplicar a unos cuantos usuarios específicos, mientras que el resto de los usuarios (que en su mayor parte reciben el correo masivo por el que se suscribieron) no se verán afectados. 
@@ -66,7 +65,7 @@ Si desea más opciones para filtrar los mensajes masivos, puede crear reglas de 
     
    - `click (here to|the) unsubscribe`
     
-   La lista anterior no es un conjunto exhaustivo de expresiones regulares que se encuentran en los correos electrónicos masivos; se pueden agregar o quitar más según sea necesario. Sin embargo, es un buen punto de partida.<br>La búsqueda de palabras o patrones de texto en el asunto o en otros campos de encabezado del mensaje se produce *después* de que el mensaje se haya descodificado del método de codificación de transferencia de contenido MIME que se usó para transmitir el mensaje binario entre los servidores SMTP en texto ASCII. No puede usar las condiciones o excepciones para buscar los valores codificados (normalmente, Base64) codificados del asunto u otros campos de encabezado de los mensajes. 
+   La lista anterior no es un conjunto exhaustivo de expresiones regulares que se encuentran en los correos electrónicos masivos; se pueden agregar o quitar más según sea necesario. Pero es un buen punto de partida.<br>La búsqueda de palabras o patrones de texto en el asunto o en otros campos de encabezado del mensaje se produce *después* de que el mensaje se haya descodificado del método de codificación de transferencia de contenido MIME que se usó para transmitir el mensaje binario entre los servidores SMTP en texto ASCII. No puede usar condiciones ni excepciones para buscar los valores codificados sin formato (normalmente, Base64) del asunto o de otros campos del encabezado del mensaje. 
     
 6. En **Hacer lo siguiente**, seleccione **Modificar propiedades del mensaje** \> **establecer el nivel de confianza de correo no deseado (SCL)**.
     
@@ -118,7 +117,7 @@ Si desea más opciones para filtrar los mensajes masivos, puede crear reglas de 
     
    - `You are receiving this email because you are subscribed`
     
-   Esta lista no es un conjunto exhaustivo de frases que se encuentran en los correos electrónicos en masa; se pueden agregar o quitar más según sea necesario. Sin embargo, es un buen punto de partida.
+   Esta lista no es un conjunto exhaustivo de frases que se encuentran en los correos electrónicos en masa; se pueden agregar o quitar más según sea necesario. Pero es un buen punto de partida.
     
 6. En **Hacer lo siguiente**, seleccione **Modificar propiedades del mensaje** \> **establecer el nivel de confianza de correo no deseado (SCL)**.
     
@@ -132,7 +131,7 @@ Si desea más opciones para filtrar los mensajes masivos, puede crear reglas de 
 
 8. Guarde la regla.
 
-## <a name="for-more-information"></a>Más información
+## <a name="for-more-information"></a>Para obtener más información
 
 [¿Cuál es la diferencia entre correo electrónico no deseado y correo electrónico masivo?](what-s-the-difference-between-junk-email-and-bulk-email.md)
 

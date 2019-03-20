@@ -7,16 +7,15 @@ ms.date: 12/9/2016
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 81b75194-3b04-48da-8b81-951afbabedde
 description: El objetivo de este tema consiste en proporcionar los detalles sobre el proceso para cambiar a Protección en línea de Exchange (EOP) desde una aplicación de higiene de correo electrónico local o desde un servicio de protección basado en la nube, así como suministrar los recursos de ayuda necesarios para comenzar.
-ms.openlocfilehash: a1fa7b63dfc1e6eb193d458545722c4b5331bc48
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: 0923bf0060891536ac11c5f9fa773f74aed1463f
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30340761"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693419"
 ---
 # <a name="switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco-ironport"></a>Cambiar a EOP desde Google Postini, Barracuda Spam y Virus Firewall o Cisco IronPort
 
@@ -51,14 +50,14 @@ Puede que desee mover solo una parte de los buzones de correo a la nube debido a
   
 Si está pensando en implementar una configuración híbrida, la mejor referencia para comenzar la encontrará en [Exchange Server 2013 Hybrid Deployments](http://technet.microsoft.com/library/59e32000-4fcf-417f-a491-f1d8f9aeef9b.aspx). Además, es importante comprender las diversas formas de enrutar el correo en un escenario híbrido. En [Transport Routing in Exchange 2013 Hybrid Deployments](http://technet.microsoft.com/library/36c2cea3-2e2f-40ac-88bd-7e1b6bd27828.aspx) se explica cada uno de los tipos, para que pueda elegir el mejor escenario de enrutamiento en función de sus necesidades de negocio. 
   
-## <a name="migration-planning"></a>Diseño de la migración
+## <a name="migration-planning"></a>Planeación de la migración
 <a name="sectionSection3"> </a>
 
 Cuando decida cambiar a EOP, asegúrese de considerar las siguientes áreas:
   
-- **Reglas de filtros personalizados** Si tiene un filtro personalizado o reglas de directiva de negocio para detectar correo no deseado específico, le recomendamos que pruebe EOP con la configuración predeterminada durante un período, antes de migrar las reglas. EOP ofrece protección contra correo no deseado en el nivel de empresa con la configuración predeterminada, puede resultar que no es necesario migrar algunas de las reglas a EOP. Por supuesto, si tiene reglas que imponen directivas de negocio personalizadas específicas, puede crearlas. [Reglas de flujo de correo (reglas de transporte) en Exchange Online Protection](mail-flow-rules-transport-rules-0.md) proporciona instrucciones detalladas para crear reglas de flujo de correo en EOP. 
+- **Reglas de filtrado personalizadas** Si tiene reglas de directivas empresariales o de filtrado personalizadas para detectar correo no deseado específico, se recomienda que pruebe EOP con la configuración predeterminada durante un período antes de migrar sus propias reglas. EOP ofrece protección contra correo no deseado a nivel empresarial con la configuración predeterminada, por lo que quizá no sea necesario migrar todas sus reglas a EOP. Evidentemente, si tiene reglas que ejecutan ciertas directivas empresariales personalizadas, podrá crearlas. [Reglas de flujo de correo (reglas de transporte) en Exchange Online Protection](mail-flow-rules-transport-rules-0.md) proporciona instrucciones detalladas para crear reglas de flujo de correo en EOP. 
     
-- **Listas de direcciones IP permitidas y IP bloqueadas** Si tiene listas de permitidos por usuario y listas de bloqueados, deje tiempo para copiar las listas en EOP como parte del proceso de configuración. Para obtener más información acerca de las listas de IP admitidas y de IP bloqueadas, consulte [Configure the Connection Filter Policy](../configure-the-connection-filter-policy.md).
+- **Listas de direcciones IP permitidas y bloqueadas** Si tiene listas de permitidos y bloqueados por usuario, deje cierto tiempo para copiarlas a EOP como parte del proceso de instalación. Para obtener más información acerca de las listas de IP admitidas y de IP bloqueadas, consulte [Configure the Connection Filter Policy](../configure-the-connection-filter-policy.md).
     
 - **Comunicación segura** Si tiene un socio que necesita que se cifren los mensajes, se recomienda que realice las configuraciones convenientes en el centro de administración de Exchange. Para configurar este escenario, consulte [Create connectors for a secure mail channel using transport layer security (TLS)](http://technet.microsoft.com/library/1ce4d6a4-41ba-4d1e-9ca9-e826252c1041.aspx).
     

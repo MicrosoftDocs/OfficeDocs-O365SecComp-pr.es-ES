@@ -7,18 +7,17 @@ ms.date: 12/9/2016
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 ms.assetid: 8dcc752f-e22e-44ce-a104-4cc4d7e439f3
 ms.collection:
 - M365-security-compliance
 description: En esta articleSupported LanguagesInstall el informe de correo electrónico no deseado Add-inUninstall el complemento de notificación de correo no deseado Add-inFor más información
-ms.openlocfilehash: b29bd367ca168ff45d983796b8ae6e68ee9df297
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: ee7d1ef3f906c7c03433140c50c5c975f456cb08
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276310"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693019"
 ---
 # <a name="install-the-junk-email-reporting-add-in-for-microsoft-outlook"></a>Instalar el complemento de notificación de correo no deseado para Microsoft Outlook
   
@@ -26,7 +25,7 @@ En este tema se describe cómo instalar y desinstalar el complemento de notifica
   
 El complemento (para todos los idiomas admitidos) permite notificar el correo electrónico no deseado directamente desde la cinta de Outlook. La versión en inglés del complemento incluye opciones adicionales para notificar problemas relacionados con el correo electrónico a Microsoft, directamente desde la cinta de opciones:
   
--   Notificar los correos de suplantación de identidad (phishing) recibidos 
+-  Notificar los correos de suplantación de identidad (phishing) recibidos 
     
 - Notificar los correos electrónicos identificados incorrectamente como correo no deseado.
     

@@ -7,7 +7,6 @@ ms.date: 10/24/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-ms.custom: TN2DMC
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -15,12 +14,12 @@ ms.assetid: 6ae78c12-7bbe-44fa-ab13-c3768387d0e3
 ms.collection:
 - M365-security-compliance
 description: Para asegurarse de que el correo electrónico enviado por personas de confianza no está bloqueado, puede usar la Directiva de filtro de conexión para crear una lista de permitidos, también conocida como lista de remitentes seguros, de las direcciones IP en las que confía. También puede crear una lista de remitentes bloqueados.
-ms.openlocfilehash: 2b6cbb709eec6911e8aa83d560d5c00ad2a6e344
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.openlocfilehash: 5ca6ad6721ac03e5ae62b40dda219671bde3e1c1
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341611"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693549"
 ---
 # <a name="configure-the-connection-filter-policy"></a>Configurar la directiva de filtro de conexión
  
@@ -32,18 +31,18 @@ En el siguiente vídeo se muestran los pasos de configuración para la directiva
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/b2f5bea3-e1a7-44b3-b7e2-07fac0d0ca40?autoplay=false]
   
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
 <a name="sectionSection0"> </a>
 
-- Tiempo estimado para completarlo: 15 minutos
+- Tiempo estimado para finalizar: 15 minutos
     
-- Debe tener permisos asignados para poder llevar a cabo este procedimiento o procedimientos. Para ver qué permisos necesita, consulte el entrada "contra el correo electrónico no deseado" en el tema [permisos de características de Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) . 
+- Deberá tener asignados permisos antes de poder llevar a cabo este procedimiento o procedimientos. Para ver qué permisos necesita, consulte el entrada "contra el correo electrónico no deseado" en el tema [permisos de características de Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx) . 
     
-- Para obtener la dirección IP del remitente cuyos mensajes desea permitir o bloquear, puede comprobar el encabezado de Internet del mensaje. Busque el encabezado CIP como se describe en [anti-spam Message headers](anti-spam-message-headers.md). Para obtener información sobre cómo ver un encabezado de mensaje en varios clientes de correo electrónico, consulte [Message header Analyzer](https://go.microsoft.com/fwlink/p/?LinkId=306583). 
+- Para obtener la dirección IP del remitente cuyos mensajes quiere permitir o bloquear, consulte el encabezado de Internet del mensaje. Busque el encabezado CIP tal y como se describe en [Encabezados de mensajes de correo no deseado](anti-spam-message-headers.md). Para obtener información sobre cómo ver un encabezado de mensaje en varios clientes de correo electrónico, consulte [Message header Analyzer](https://go.microsoft.com/fwlink/p/?LinkId=306583). 
     
 - Los mensajes de correo electrónico enviados desde una dirección IP de la lista de IP bloqueadas se rechazan, no se marcan como correo no deseado y no se produce ningún filtro adicional.
     
-- El siguiente procedimiento de filtro de conexión también se puede llevar a cabo a través de PowerShell remoto. Use el cmdlet [Get-HostedConnectionFilterPolicy](http://technet.microsoft.com/library/bd751db2-3f26-495b-8e5a-4fcab53b17fd.aspx) para revisar la configuración y la opción [set-HostedConnectionFilterPolicy](http://technet.microsoft.com/library/ccb5731b-3fca-4d69-a91f-5049ea963fac.aspx) para editar la configuración de la Directiva de filtro de conexión. Para obtener información sobre cómo usar Windows PowerShell para conectarse a Exchange Online Protection, vea [conectarse a PowerShell de Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=627290). Para obtener información sobre cómo usar Windows PowerShell para conectarse a Exchange Online, vea [conectarse a Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
+- El siguiente procedimiento de filtro de conexión también se puede llevar a cabo mediante PowerShell remoto. Use el cmdlet [Get-HostedConnectionFilterPolicy](http://technet.microsoft.com/library/bd751db2-3f26-495b-8e5a-4fcab53b17fd.aspx) para revisar su configuración y [Set-HostedConnectionFilterPolicy](http://technet.microsoft.com/library/ccb5731b-3fca-4d69-a91f-5049ea963fac.aspx) para editar su configuración de directiva de filtro de conexión. Para obtener información sobre cómo usar Windows PowerShell para conectarse a Exchange Online Protection, vea [conectarse a PowerShell de Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkid=627290). Para obtener información sobre cómo usar Windows PowerShell para conectarse a Exchange Online, vea [Conexión a Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
     
 ## <a name="use-the-eac-to-edit-the-default-connection-filter-policy"></a>Usar el EAC para editar la directiva de filtro de conexión predeterminada
 <a name="sectionSection1"> </a>
@@ -59,11 +58,11 @@ Puede crear una lista de direcciones IP permitidas o una lista de direcciones IP
     > [!NOTE]
     >  Si agrega una dirección IP a ambas listas, se permitirá el correo electrónico enviado desde esa dirección IP. 
 
-    Especifique direcciones IP IPV4 con el formato NNN. nnn. nnn. nnn donde nnn es un número entre 0 y 255. También puede especificar intervalos de enrutamiento de interDominios sin clases (CIDR) con el formato NNN. nnn. nnn. nnn/RR, donde RR es un número entre 24 y 32. Para especificar intervalos fuera del intervalo de 24 a 32, consulte [consideraciones adicionales para configurar listas de direcciones IP permitidas](configure-the-connection-filter-policy.md#bkmk_addtionalconsiderationswhenconfiguringipallowlists). 
+    Especifique direcciones IP IPV4 con el formato NNN. nnn. nnn. nnn donde nnn es un número entre 0 y 255. También puede especificar intervalos de Enrutamiento de interdominios sin clases (CIDR) con el formato nnn.nnn.nnn.nnn/rr, donde rr es un número del 24 al 32. Para especificar intervalos fuera del intervalo de 24 al 32, vea [Consideraciones adicionales para configurar listas de direcciones IP permitidas](configure-the-connection-filter-policy.md#bkmk_addtionalconsiderationswhenconfiguringipallowlists). 
 
-    Puede especificar un máximo de 1273 entradas, donde una entrada es una dirección IP única o un intervalo CIDR de direcciones IP de/24 a/32. > si va a enviar mensajes con cifrado TLS, no se admiten direcciones IPv6 e intervalos de direcciones. 
+    Puede especificar un máximo de 1273 entradas; una entrada es una dirección IP única o un intervalo CIDR de direcciones IP de /24 a /32. >  Si va a enviar mensajes con cifrado TLS, tenga en cuenta que no se admiten direcciones IPv6 e intervalos de direcciones. 
   
-3. Opcionalmente, active la casilla de verificación **Habilitar lista segura** para evitar que algunos de los remitentes conocidos puedan perder correo electrónico. Su? Microsoft se suscribe a los orígenes de terceros de remitentes de confianza. El uso de esta lista segura significa que estos remitentes de confianza no se marcan por error como correo no deseado. Se recomienda seleccionar esta opción porque debe reducir el número de falsos positivos (correo correcto que se ha clasificado como correo no deseado) que recibe. 
+3. Opcionalmente, active la casilla **Habilitar lista segura** para impedir que se pierdan mensajes de determinados remitentes conocidos. ¿Cómo se hace? Microsoft se suscribe a fuentes de terceros de remitentes de confianza. El uso de esta lista segura significa que estos remitentes de confianza no se marcan por error como correo no deseado. Se recomienda seleccionar esta opción porque debe reducir el número de falsos positivos (correo correcto que se ha clasificado como correo no deseado) que recibe. 
     
 4. Haga clic en **Guardar**. En el panel a la derecha, aparece un resumen de la configuración predeterminada de directiva.
     
@@ -90,7 +89,7 @@ Para crear esta regla de flujo de correo, siga estos pasos.
     
 6. En el cuadro **Haga lo siguiente**, establezca la acción al elegir **Modificar propiedades del mensaje** y luego **Establecer el nivel de confianza contra correo no deseado (SCL)**. En el cuadro **Especificar SCL**, seleccione **Omitir filtrado contra correo no deseado** y haga clic en **Aceptar**.
     
-7. Si lo desea, puede realizar selecciones para auditar la regla, probarla, activar la regla durante un período de tiempo específico y otras selecciones. Se recomienda probar la regla durante un período antes de aplicarla. [Procedimientos para reglas de flujo de correo en Exchange Server](https://docs.microsoft.com/en-us/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rule-procedures) contiene más información acerca de estas selecciones. 
+7. Si lo desea, puede realizar selecciones para auditar la regla, probarla, activarla durante un período de tiempo específico y otras selecciones. Recomendamos probar la regla durante un tiempo antes de aplicarla. [Procedimientos para reglas de flujo de correo en Exchange Server](https://docs.microsoft.com/en-us/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rule-procedures) contiene más información acerca de estas selecciones. 
     
 8. Haga clic en **Guardar** para guardar la regla. La regla aparece en la lista de reglas. 
     
@@ -98,9 +97,9 @@ Después de crear y aplicar la regla, el servicio omite el filtrado de correo no
   
 ### <a name="scoping-an-ip-allow-list-exception-for-a-specific-domain"></a>Ámbito de una excepción de lista de direcciones IP permitidas para un dominio específico
 
-En general, se recomienda agregar las direcciones IP (o intervalos de direcciones IP) para todos los dominios que considere seguros para la lista de direcciones IP permitidas. Sin embargo, si no quiere que la entrada de la lista de direcciones IP permitidas se aplique a todos los dominios, puede crear una regla de flujo de correo (también denominada regla de transporte) que no sea un dominio específico. 
+En general, recomendamos agregar las direcciones IP (o los intervalos de direcciones IP) para todos los dominios que considere seguros para la lista de direcciones IP permitidas. Sin embargo, si no quiere que la entrada de la lista de direcciones IP permitidas se aplique a todos los dominios, puede crear una regla de flujo de correo (también denominada regla de transporte) que no sea un dominio específico. 
   
-Por ejemplo, supongamos que tiene tres dominios: ContosoA.com, ContosoB.com y ContosoC.com, y que desea agregar la dirección IP (por razones de simplicidad, usar 1.2.3.4) y omitir el filtrado solo para ContosoB.com de dominio. Crearía una lista de direcciones IP permitidas para 1.2.3.4, que establece el nivel de confianza contra correo no deseado (SCL) en-1 (lo que significa que se clasifica como correo no deseado) para todos los dominios. A continuación, puede crear una regla de flujo de correo que establezca el SCL para todos los dominios excepto ContosoB.com a 0. Esto hace que el mensaje se vuelva a examinar para todos los dominios asociados con la dirección IP, excepto ContosoB.com, que es el dominio que aparece como excepción en la regla. ContosoB.com todavía tiene un SCL de-1 que significa el filtrado por omisión, mientras que ContosoA.com y ContosoC.com tienen tendrán de 0, lo que significa que el filtro de contenido volverá a examinarlos.
+Por ejemplo, supongamos que tiene tres dominios: ContosoA.com, ContosoB.com y and ContosoC.com y desea agregar la dirección IP (para simplificar el proceso, usaremos la dirección 1.2.3.4) y omitir el filtrado solo para el dominio ContosoB.com. Para ello, deberá crear una lista de direcciones IP permitidas para la dirección 1.2.3.4, que establecerá el nivel de confianza contra correo no deseado (SCL) en -1 (lo que implica que no se clasificará como correo no deseado) para todos los dominios. A continuación, puede crear una regla de flujo de correo que establezca el SCL para todos los dominios excepto ContosoB.com a 0. De este modo, el mensaje se volverá a analizar para todos los dominios asociados a la dirección IP salvo para el dominio ContosoB.com, que es el dominio que figura como excepción en la regla. ContosoB.com seguirá teniendo un SCL de -1, con lo que se omitirá el filtrado, mientras que los dominios ContosoA.com y ContosoC.com tendrán un SCL de 0, lo que implica que el filtro analizará todo el contenido.
   
 Para ello, realice los siguientes pasos:
   
@@ -118,9 +117,9 @@ Para ello, realice los siguientes pasos:
     
 7. Haga clic en **Agregar excepción** y, dentro de **Excepto si**, seleccione **El remitente** y elija **El dominio es**. 
     
-8. En el cuadro **especificar dominio** , escriba el dominio para el que desea omitir el filtrado de correo no deseado, como **contosob.com**. Haga **** ![clic en agregar](media/ITPro-EAC-AddIcon.gif) icono para agregarlo para moverlo a la lista de frases. Repita este paso si desea agregar dominios adicionales como excepciones y haga clic en **Aceptar** cuando haya terminado. 
+8. En el cuadro **Especificar dominio**, escriba el dominio para el cual desee omitir el filtrado contra correo no deseado, como **contosob.com**. Haga **** ![clic en agregar](media/ITPro-EAC-AddIcon.gif) icono para agregarlo para moverlo a la lista de frases. Repita este paso si desea agregar dominios adicionales como excepciones y haga clic en **Aceptar** cuando finalice. 
     
-9. Si lo desea, puede realizar selecciones para auditar la regla, probarla, activar la regla durante un período de tiempo específico y otras selecciones. Se recomienda probar la regla durante un período antes de aplicarla. [Procedimientos para reglas de flujo de correo en Exchange Server](https://docs.microsoft.com/en-us/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rule-procedures) contiene más información acerca de estas selecciones. 
+9. Si lo desea, puede realizar selecciones para auditar la regla, probarla, activarla durante un período de tiempo específico y otras selecciones. Recomendamos probar la regla durante un tiempo antes de aplicarla. [Procedimientos para reglas de flujo de correo en Exchange Server](https://docs.microsoft.com/en-us/Exchange/policy-and-compliance/mail-flow-rules/mail-flow-rule-procedures) contiene más información acerca de estas selecciones. 
     
 10. Haga clic en **Guardar** para guardar la regla. La regla aparece en la lista de reglas. 
     
@@ -133,7 +132,7 @@ Después de crear y aplicar la regla, solo se omitirá el filtrado contra correo
 |:-----|
 |![El icono reducido de LinkedIn Learning](media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **¿Es la primera vez que usa Office 365?**         LinkedIn Learning pone a su disposición vídeos gratuitos de cursos de **Office 365 admins and IT pros**. |
    
-## <a name="for-more-information"></a>Más información
+## <a name="for-more-information"></a>Para obtener más información
 <a name="sectionSection4"> </a>
 
 [Listas de remitentes seguros y bloqueados en Exchange Online](safe-sender-and-blocked-sender-lists-faq.md)

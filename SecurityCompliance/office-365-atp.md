@@ -3,7 +3,7 @@ title: Protección contra amenazas avanzada de Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 02/20/2019
+ms.date: 03/19/2019
 ms.audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
 - M365-security-compliance
 description: Office 365 Advanced Threat Protection incluye datos adjuntos seguros, vínculos seguros, herramientas avanzadas contra la suplantación de identidad, herramientas de informes y capacidades de inteligencia de amenazas.
-ms.openlocfilehash: 33a98781c29a6ab8a44a69922afd976ce044c09d
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: ce4652e19f97cda6dbbea7df8083531ee0a0a1fc
+ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220010"
+ms.lasthandoff: 03/20/2019
+ms.locfileid: "30693059"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Protección contra amenazas avanzada de Office 365
 
@@ -35,7 +35,7 @@ Office 365 Advanced Threat Protection (ATP) protege a su organización frente a 
 
 - [Informes](#view-atp-reports): ver informes en tiempo real para supervisar el rendimiento de ATP en su organización. 
 
-- [Capacidades de inteligencia de amenazas](#utilize-threat-intelligence-capabilities): Use las herramientas de vanguardia para investigar, comprender, simular y evitar amenazas. 
+- [Capacidades de investigación y respuesta de amenazas](#use-threat-investigation-and-response-capabilities): Use las herramientas de vanguardia para investigar, comprender, simular y evitar amenazas. 
  
 
 ## <a name="configure-atp-policies"></a>Configurar las directivas de ATP
@@ -60,9 +60,9 @@ Office 365 ATP incluye un [Panel de informes](view-reports-for-atp.md) avanzado 
 
 Los informes se actualizan en tiempo real, lo que proporciona la información más reciente. Estos informes también proporcionan recomendaciones y le alertan de amenazas inminentes. Los informes predefinidos incluyen el informe de [Estado de protección contra amenazas](view-reports-for-atp.md#threat-protection-status-report), el informe de [tipos de archivo de ATP](view-reports-for-atp.md#atp-file-types-report), el informe de disposición de [mensajes ATP](view-reports-for-atp.md#atp-message-disposition-report) y más. 
 
-## <a name="utilize-threat-intelligence-capabilities"></a>Usar capacidades de inteligencia de amenazas
+## <a name="use-threat-investigation-and-response-capabilities"></a>Uso de capacidades de investigación y respuesta de amenazas
 
-Office 365 ATP incluye [las mejores herramientas de inteligencia sobre amenazas](office-365-ti.md) que permiten que el equipo de seguridad de su organización anticipe, comprenda y evite ataques malintencionados. 
+Office 365 ATP plan 2 incluye [las mejores herramientas de investigación y respuesta de amenazas](office-365-ti.md) que permiten que el equipo de seguridad de su organización anticipe, comprenda y evite ataques malintencionados. 
 
 - Los rastreadores de [amenazas](threat-trackers.md) proporcionan la última inteligencia sobre los problemas de Cybersecurity. Por ejemplo, puede ver información sobre el malware más reciente y tomar medidas preventivas antes de que se convierta en una amenaza real para su organización. Entre los rastreadores disponibles se incluyen los rastreadores dignos de [destacar](threat-trackers.md#noteworthy-trackers), los rastreadores de [tendencias](threat-trackers.md#trending-trackers), [las consultas con seguimiento](threat-trackers.md#tracked-queries)y [las consultas guardadas](threat-trackers.md#saved-queries).
 
@@ -78,9 +78,10 @@ Para acceder a las características de ATP en el centro de seguridad & cumplimie
 |---------|---------|
 |Administrador global de Office 365 |[Acerca de los roles de administrador de Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|
 |Administrador de seguridad |[Permisos de rol de administrador en Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
-|Administración de la organización de Exchange Online |[Permisos de Exchange Online](https://docs.microsoft.com/en-us/exchange/permissions-exo/permissions-exo) <br>y<br> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)|
+|Administración de la organización de Exchange Online |[Permisos en Exchange Online](https://docs.microsoft.com/en-us/exchange/permissions-exo/permissions-exo) <br>y<br> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)|
 
-Vea también:
+Para más información, visite:
+
 - [Permisos en el centro de seguridad & cumplimiento de Office 365](permissions-in-the-security-and-compliance-center.md) 
 
 - [Dar a los usuarios acceso al centro de cumplimiento de & de seguridad de Office 365](grant-access-to-the-security-and-compliance-center.md)
