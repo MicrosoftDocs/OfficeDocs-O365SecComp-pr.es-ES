@@ -88,12 +88,12 @@
 ### [Ver vídeos del equipo de gobierno de datos de Microsoft](https://go.microsoft.com/fwlink/?linkid=867039)
 
 # [Protección contra amenazas](protect-against-threats.md)
+## [Guía de inicio rápido: Configurar la Protección contra amenazas avanzada de Office 365](checklist-atp-setup.md)
 ## [Protección contra correo no deseado y malware](anti-spam-and-anti-malware-protection.md)
 ### [Información general sobre EOP](videos-for-getting-started-with-protecting-your-email.md)
 ### [Protección contra correo no deseado de Office 365](anti-spam-protection.md)
 ### [Cómo evitar que los mensajes reales se marquen como correo no deseado en Office 365](prevent-email-from-being-marked-as-spam.md)
 ### [Cómo reducir el correo no deseado en Office 365](reduce-spam-email.md)
-### [Evitar que los mensajes se marquen como correo no deseado en EOP y Office 365](prevent-email-from-being-marked-as-spam-0.md)
 ### [Controlar el correo no deseado saliente en Office 365](outbound-spam-controls.md)
 ### [Bloquear el correo no deseado con el filtro de correo no deseado de Office 365 para evitar problemas de negativos falsos](reduce-spam-email.md)
 ### [Purga automática cero horas: protección contra correo no deseado y malware](zero-hour-auto-purge.md)
@@ -369,7 +369,7 @@
 
 # [Buscar en el registro de auditoría](search-the-audit-log-in-security-and-compliance.md)
 ## [Activar o desactivar la búsqueda de registros de auditoría](turn-audit-log-search-on-or-off.md)
-## [Habilitar la auditoría de buzones de correo](enable-mailbox-auditing.md)
+## [Administrar la auditoría de buzones de correo](enable-mailbox-auditing.md)
 ## [Propiedades detalladas del registro de auditoría](detailed-properties-in-the-office-365-audit-log.md)
 ## [Usar el registro de auditoría para solucionar escenarios comunes](auditing-troubleshooting-scenarios.md)
 ## [Usar el uso compartido de auditoría en el registro de auditoría](use-sharing-auditing.md)
