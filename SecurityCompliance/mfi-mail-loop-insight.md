@@ -9,12 +9,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: cb801985-3c89-4979-9c18-17829a4cb563
 description: Los administradores pueden obtener información sobre la información sobre el bucle de correo en el panel del flujo de correo en el centro de seguridad & cumplimiento de Office 365.
-ms.openlocfilehash: babf102e7645de26d4af0a947319856468ccf755
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: 5fa7267d68183ea9f8117e420a769a2beaafdac1
+ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455242"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "30720300"
 ---
 # <a name="mail-loop-insight"></a>Reporte de bucle de correo
 
@@ -25,3 +25,7 @@ Un bucle de correo es incorrecto porque desperdicia recursos del sistema, consum
 Puede hacer clic en **Ver detalles** para ver los detalles en un panel de control flotante. También se identifican los escenarios de bucle más comunes y se proporcionan las acciones recomendadas (si están disponibles) para corregir el bucle.
 
 ![Panel flotante después de hacer clic en ver detalles en un bucle incorrecto información sobre el panel de flujo de correo](media/f7e21300-c62f-41ec-853f-4a2775cd8aa7.png)
+
+## <a name="see-also"></a>Vea también
+
+Para obtener más información acerca de otras indicaciones de flujo de correo en el panel de flujo de correo, consulte [mail Flow Insights en el centro de seguridad _AMP_ cumplimiento](mail-flow-insights.md).

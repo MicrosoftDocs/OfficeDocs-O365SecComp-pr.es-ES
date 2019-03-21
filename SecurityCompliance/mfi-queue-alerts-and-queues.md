@@ -9,12 +9,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
 description: Los administradores pueden obtener información sobre las alertas y las colas de la cola en el panel de flujo de correo en el centro de seguridad & cumplimiento de Office 365.
-ms.openlocfilehash: 6abfe9e8b3edfc6b0ca02e11a9713dcdb5c19b7c
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: 642aa672cda124873eb0b2ca8e9294e64325f55d
+ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30454872"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "30720310"
 ---
 # <a name="queue-alerts-and-queues"></a>Colas y alertas de cola
 
@@ -69,3 +69,7 @@ Incluso si el volumen de mensajes en cola no ha superado el umbral, puede seguir
 Al hacer clic en el número de mensajes en cola en las **colas**, los detalles de la cola y la orientación sobre cómo corregir el problema aparecerán en un panel flotante (el mismo control flotante que aparece después de hacer clic en **Ver cola** en detalles de una alerta de cola).
 
 ![Detalles de la cola](media/4eb088fe-5dd9-4bf4-b959-c1bb2545c515.png)
+
+## <a name="see-also"></a>Vea también
+
+Para obtener más información acerca de otras indicaciones de flujo de correo en el panel de flujo de correo, consulte [mail Flow Insights en el centro de seguridad _AMP_ cumplimiento](mail-flow-insights.md).

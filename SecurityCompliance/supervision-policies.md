@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: Descripción de las directivas de supervisión en Office 365
-ms.openlocfilehash: 99957accb6a1f52f0e0a895fc96ef2b6ac0ac757
-ms.sourcegitcommit: 5eb664b6ecef94aef4018a75684ee4ae66c486bb
+ms.openlocfilehash: c22abdf315b2301ae9c63b26f548eff302df8e2a
+ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30492859"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "30720280"
 ---
 # <a name="supervision-policies-in-office-365"></a>Directivas de supervisión en Office 365
 
@@ -99,7 +99,7 @@ Para obtener más información acerca de los detalles de información confidenci
 
 #### <a name="custom-keyword-dictionaries"></a>Diccionarios de palabras clave personalizados
 
-La configuración de diccionarios de palabras clave personalizados (o léxicos) puede proporcionar una administración sencilla de palabras clave específicas de la organización o del sector y puede admitir hasta 100.000 términos por Diccionario. Si es necesario, puede aplicar varios diccionarios de palabras clave personalizados a una sola directiva o tener un diccionario de palabras clave único por directiva. Estos diccionarios se asignan en una directiva de supervisión y pueden ser origen de un archivo (por ejemplo, una lista. csv o. txt) o de una lista que puede [escribir directamente en un cmdlet de PowerShell](create-a-keyword-dictionary.md).
+La configuración de diccionarios de palabras clave personalizados (o léxicos) puede proporcionar una administración sencilla de palabras clave específicas de la organización o del sector y puede admitir hasta 100.000 términos por Diccionario. Si es necesario, puede aplicar varios diccionarios de palabras clave personalizados a una sola directiva o tener un diccionario de palabras clave único por directiva. Estos diccionarios se asignan en una directiva de supervisión y pueden ser origen de un archivo (por ejemplo, una lista. csv o. txt) o de una lista que se puede [importar en el centro de cumplimiento](create-a-keyword-dictionary.md).
 
 #### <a name="conditional-settings"></a>Configuración condicional
 
@@ -249,16 +249,17 @@ Las siguientes actividades de directiva de supervisión se auditan y se pueden v
 
 |**Actividad**|**Comandos asociados**|
 |:-----|:-----|
-| Creación de una directiva | New-SupervisoryReviewPolicy <br> New-SupervisoryReviewRule |
-| Edición de una directiva | Set-SupervisoryReviewPolicy <br> Set-SupervisoryReviewRule |
-| Eliminación de una directiva| Remove-SupervisoryReviewPolicy |
+| Creación de una directiva | [New-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-supervisoryreviewpolicyv2) <br> [New-SupervisoryReviewRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-supervisoryreviewrule) |
+| Edición de una directiva | [Set-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-supervisoryreviewpolicyv2) <br> [Set-SupervisoryReviewRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-supervisoryreviewrule) |
+| Eliminación de una directiva| [Remove-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/remove-supervisoryreviewpolicyv2) |
+| Ver una directiva | [Get-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/get-supervisoryreviewpolicyv2) |
 
 Las auditorías se pueden recuperar con la función de búsqueda de registros de auditoría unificada o mediante el cmdlet [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) PowerShell.
 
 Por ejemplo, en el siguiente ejemplo se devuelven las actividades de todas las actividades de revisión de supervisión (directivas y reglas) y se enumera la información detallada de cada uno de los elementos siguientes:
 
 ```
-Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -RecordType DataGovernance -ResultSize 5000 | Where-Object {$_.Operations -like "*SupervisoryReview*"} | fl CreationDate,Operations,UserIds,AuditData 
+Search-UnifiedAuditLog -StartDate 3/1/2019 -EndDate ([System.DateTime]::Now) -RecordType DataGovernance -ResultSize 5000 | Where-Object {$_.Operations -like "*SupervisoryReview*"}  | fl CreationDate,Operations,UserIds,AuditData
 ```
 
 Además de la información proporcionada en los informes y registros de supervisión, también puede usar el cmdlet de PowerShell [Get-SupervisoryReviewActivity](https://docs.microsoft.com/powershell/module/exchange/reporting/get-supervisoryreviewactivity?view=exchange-ps) para obtener una lista detallada completa de todas las actividades de la Directiva de supervisión.

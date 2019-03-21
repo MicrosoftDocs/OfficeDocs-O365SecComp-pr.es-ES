@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f2738dec-41b0-43c4-b814-84c0a4e45c6d
 description: Los administradores pueden obtener información sobre el widget de flujo de correo entrante y saliente en el panel de flujo de correo en el centro de seguridad & cumplimiento de Office 365.
-ms.openlocfilehash: 98806a699909056b4295911a031bb7b14233ede5
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: b3e92228506267e674f2f428fab1ef54d5aee38e
+ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30454892"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "30720290"
 ---
 # <a name="outbound-and-inbound-mail-flow"></a>Flujo de correo entrante y saliente
 
@@ -48,3 +48,7 @@ La vista de **flujo de correo** muestra el volumen de mensajes a través del con
 Puede seleccionar la vista de **uso de TLS** de la lista desplegable para ver el desglose de la protección TLS para los mensajes a través del conector. Al igual que con el informe de **Informe General de TLS** , esta vista muestra el porcentaje de las diferentes versiones de TLS. Para las conexiones TLS 1,0, es necesario que el servidor de correo electrónico o el servidor de su compañero se actualice o se corrija para evitar problemas cuando la compatibilidad con TLS 1,0 está en desuso en Office 365. Para obtener más información, vea [información de referencia técnica sobre el cifrado en Office 365](https://support.office.com/article/862cbe93-4268-4ef9-ba79-277545ecf221).
 
 La información apunta a los conectores para ayudar a atraer la atención sobre posibles problemas de cifrado de TLS para el conector. La información es: **ningún TLS es superior al 25%** o **TLS 1,0 es superior al 50%**. Si ve esta información, debe investigar los servidores de correo electrónico que están asociados con el conector o ponerse en contacto con la organización asociada.
+
+## <a name="see-also"></a>Vea también
+
+Para obtener más información acerca de otras indicaciones de flujo de correo en el panel de flujo de correo, consulte [mail Flow Insights en el centro de seguridad _AMP_ cumplimiento](mail-flow-insights.md).
