@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Obtenga información sobre las formas más comunes de reducir el correo masivo y el correo no deseado en Office 365.
-ms.openlocfilehash: 5dac207393864f95f769ac205277b0c969f2fe32
-ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
+ms.openlocfilehash: d32cad18cf3972a667f2eb9a11b50d1b12e809a7
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30357551"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670565"
 ---
 # <a name="how-to-reduce-spam-email-in-office-365"></a>Reducir el correo no deseado en Office 365
 
@@ -56,6 +56,9 @@ Para impedir que se reciba demasiado correo no deseado, Exchange Online Protecti
 - **Bloquear inmediatamente un remitente** Si necesita bloquear de forma inmediata un remitente, puede hacerlo por dirección de correo electrónico, dominio o dirección IP. Vea [Usar el CAE (Centro de Administración de Exchange) para crear una regla de flujo de correo que bloquee los mensajes enviados desde un dominio o usuario](create-organization-wide-safe-sender-or-blocked-sender-lists-in-office-365.md#use-the-eac-to-create-a-mail-flow-rule-that-blocks-messages-sent-from-a-domain-or-user). Una entrada en una lista de permitidos del usuario final puede invalidar un bloque establecido por el administrador.
     
 - **Activar el complemento Denunciar mensaje para los usuarios** Es muy recomendable que [habilite el complemento Denunciar mensaje para los usuarios](enable-the-report-message-add-in.md). Como administrador, es posible que también pueda ver los comentarios que los usuarios envían y usar cualquier patrón para ajustar la configuración que pueda estar causando problemas.
+- **Habilitar [DKIM](use-dkim-to-validate-outbound-email.md)** para firmar todos los mensajes salientes e incrementar la seguridad de su dominio y espacio empresarial.
+ > [!TIP]
+> Después de habilitar DKIM, debe habilitar [DMARC](use-dkim-to-validate-outbound-email.md) ya que este registro validará si DKIM y SPF funcionan correctamente y, por lo general, los correos electrónicos falsificados no tienen la firma, dado que O365 administra su clave simétrica pública y privada.
     
 ### <a name="for-users"></a>Para usuarios
 

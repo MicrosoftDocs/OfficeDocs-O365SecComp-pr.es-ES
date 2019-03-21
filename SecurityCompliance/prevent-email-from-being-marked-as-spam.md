@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre cómo evitar los falsos positivos y evitar que el correo electrónico deseado se marque como no deseado en Office 365.
-ms.openlocfilehash: 31977cee26b894e915744b76e717b829bd540fc0
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: 65f7e927d64051e82a135234703e0c86123dab15
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455102"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30670655"
 ---
 # <a name="how-to-prevent-real-email-from-being-marked-as-spam-in-office-365"></a>Evitar que el correo electrónico real se marque como correo no deseado en Office 365
 
@@ -62,8 +62,12 @@ Para funcionar correctamente, Exchange Online Protection (EOP) necesita que los 
 - **Apuntar los registros DNS a Office 365** Para que EOP proporcione protección, los registros DNS del agente de intercambio de correo (MX) de todos los dominios tienen que apuntar a Office 365 (y únicamente a Office 365). Si los registros MX no apuntan a Office 365, EOP no proporcionará el filtrado de correo no deseado para los usuarios. Si quiere usar otro servicio o dispositivo para proporcionar filtrado de correo no deseado para su dominio, puede deshabilitar la protección contra correo no deseado en EOP. Para hacerlo, cree una regla de flujo de correo que establezca el valor de SCL en -1. Si posteriormente decide usar EOP, asegúrese de quitar esta regla de flujo de correo. 
     
 - **Activar el complemento Usar el mensaje de informe para los usuarios** Es muy recomendable que [habilite el complemento de mensaje de informe para los usuarios](enable-the-report-message-add-in.md). Como administrador, es posible que también pueda ver los comentarios que los usuarios envían y usar cualquier patrón para ajustar la configuración que pueda estar causando problemas.
+
+- **Asegúrese de que sus usuarios se encuentran dentro de los límites permitidos** para enviar y recibir correos electrónicos, como se muestra [aquí](https://docs.microsoft.com/es-ES/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits).
+
+ - **Vuelva a comprobar los niveles masivos** tal como se especifica [aquí](bulk-complaint-level-values.md)
     
-### <a name="for-users"></a>Para los usuarios
+### <a name="for-users"></a>Para usuarios
     
 - **Crear una lista de remitentes seguros** Los usuarios pueden agregar direcciones de remitentes de confianza a su lista de remitentes seguros en [Outlook](https://go.microsoft.com/fwlink/p/?LinkId=270065) o [Outlook en la Web](https://go.microsoft.com/fwlink/p/?LinkId=294862). Para empezar en Outlook en la Web, elija **Configuración**![ConfigureAPowerBIAnalysisServicesConnector_settingsIcon](media/24bd5467-c8d2-4936-9c37-a179bd0e21ec.png) \> **Opciones** \> **Bloquear o permitir**. El siguiente diagrama muestra un ejemplo de cómo agregar algo a una lista de remitentes seguros.
   
@@ -74,7 +78,7 @@ EOP respetará los Remitentes y destinatarios seguros de los usuarios, pero no l
 - **Deshabilitar el filtro SmartScreen en Outlook** Si usa el cliente para equipo de escritorio de Outlook, tendrá que deshabilitar la función de filtro SmartScreen, que se considera descontinuada. Si está habilitada, puede causar falsos positivos. Esto no es necesario si se ejecuta una versión actualizada del cliente de Outlook para equipo de escritorio.
 
 ## <a name="troubleshooting-a-message-ends-up-in-the-junk-folder-even-though-eop-marked-the-message-as-non-spam"></a>Solución de problemas: Un mensaje acaba en la carpeta de correo no deseado aunque EOP lo haya marcado como correo deseado
-<a name="TroubleshootingJunkEOPNonSpam"> </a>
+
 
 Si los usuarios tienen habilitada la opción de Outlook "Solo listas seguras: solo correo de personas o dominios de la lista de remitentes seguros o de la lista de destinatarios seguros se enviará a la Bandeja de entrada", todo el correo electrónico se enviará a la carpeta de correo no deseado a menos que el remitente esté incluido en la lista de remitentes seguros del destinatario. Esto ocurre independientemente de si EOP marca un mensaje como no deseado o si ha configurado una regla en EOP para marcar un mensaje como correo deseado.
   
@@ -90,7 +94,7 @@ Si observa el encabezado de un mensaje, es posible que incluya la marca SFV:SKN 
     
 2. Ejecute el siguiente comando para ver la configuración de correo no deseado del usuario:
     
-  ```
+  ```Powershell
   Get-MailboxJunkEmailConfiguration example@contoso.com | fl TrustedListsOnly,ContactsTrusted,TrustedSendersAndDomains
   ```
 
