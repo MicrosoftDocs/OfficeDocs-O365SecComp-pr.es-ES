@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: bf48e605dc321da4b7a9d5343d18f90fbb179073
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: f6db3c178e584c45cf282158c58fb5125dc41f3f
+ms.sourcegitcommit: cf9d9b545a7c153d314aa9c08c7fb16fcd785b3e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296733"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "30737680"
 ---
 # <a name="error-remediation-when-processing-data"></a>Corrección de errores al procesar los datos
 
@@ -62,8 +62,8 @@ Use el siguiente flujo de trabajo para corregir los archivos con errores en los 
 
     ![Preparación de la corrección de errores](../media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)
 
-     > [!NOTE]
-     > Si tiene problemas al ejecutar este comando, consulte https://go.microsoft.com/fwlink/?linkid=2038117 para obtener sugerencias para la solución de problemas.
+    > [!NOTE]
+    > Si se produce un error en el comando AzCopy proporcionado, vea para [solucionar problemas de azcopy en EDiscovery avanzado (vista previa)](troubleshooting-azcopy.md) .
 
 7. Después de descargar los archivos, puede corregirlos con una herramienta adecuada. Para los archivos protegidos con contraseña, hay varias herramientas de averiguación de contraseñas que puede usar. Si conoce las contraseñas de los archivos, puede abrirlas y quitar la protección con contraseña.
     > [!NOTE]
@@ -96,7 +96,7 @@ Cuando se cargan los archivos corregidos, se conservan los metadatos originales,
 - LoadId
 - ProcessingErrorMessage
 - ProcessingStatus
-- Text
+- Texto
 - WordCount
 - WorkingsetId
 
