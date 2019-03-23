@@ -1,5 +1,5 @@
 ---
-title: Puntuación segura de Microsoft
+title: Puntuación de seguridad de Microsoft
 description: Describe la puntuación segura de 365 de Microsoft, cómo se calculan los detalles y qué administradores de seguridad pueden esperar usarlos.
 keywords: seguridad, malware, Microsoft 365, M365, calificación segura, centro de seguridad, acciones de mejora
 ms.prod: w10
@@ -11,14 +11,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: de3abe7ca0e84efd2412984e172202d8f3962476
-ms.sourcegitcommit: 9d48b656406e916e93651352692c5c6bcbbd645f
+ms.openlocfilehash: 369d3edf02b26be466a6dc8eea3d872030bbbcd2
+ms.sourcegitcommit: ef27da3ea5340d6e7a2eaa1288e2e005ef8e4788
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "30203746"
+ms.lasthandoff: 03/23/2019
+ms.locfileid: "30789415"
 ---
-# <a name="microsoft-secure-score-preview"></a>Puntuación segura de Microsoft (versión preliminar)
+# <a name="microsoft-secure-score"></a>Puntuación de seguridad de Microsoft
+
+[!include[Prerelease�information](prerelease.md)]
 
 Con la puntuación segura de Microsoft en el centro de seguridad 365 de Microsoft, puede tener mayor visibilidad y control sobre la postura de seguridad de su organización. Desde un panel centralizado, puede supervisar y mejorar la seguridad de las identidades, los datos, las aplicaciones, los dispositivos y la infraestructura de Microsoft 365.
 

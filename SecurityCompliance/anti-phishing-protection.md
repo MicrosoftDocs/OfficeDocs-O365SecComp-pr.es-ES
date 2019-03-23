@@ -11,15 +11,16 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 75af74b2-c7ea-4556-a912-8c48e07271d3
+ms.custom: TopSMBIssues
 ms.collection:
 - M365-security-compliance
 description: Office 365 ofrece una amplia variedad de protección contra los ataques de suplantación de identidad de forma predeterminada y a través de ofertas adicionales como el antiphishing de ATP. En este tema se presentan los recursos en línea que se pueden usar para obtener información sobre cómo implementar las opciones y estrategias contra la suplantación de identidad (phishing) en Office 365.
-ms.openlocfilehash: 8248c90db6158cf6fc5f30871fc3bd7c5096d077
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: cceae7d316d89325fa37688995555c9e449ac422
+ms.sourcegitcommit: f6073deec39a18581ed12abef18728417a52cdf4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276060"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "30747576"
 ---
 # <a name="anti-phishing-protection-in-office-365"></a>Protección contra suplantación de identidad (phishing) en Office 365
 
