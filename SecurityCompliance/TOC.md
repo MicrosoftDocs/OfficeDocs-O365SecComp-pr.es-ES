@@ -166,7 +166,7 @@
 #### [Cifrado en Microsoft Dynamics 365](office-365-encryption-in-microsoft-dynamics-365.md)
 #### [Cifrado en Azure](office-365-azure-encryption.md)
 
-## [Protección contra amenazas avanzada (vínculos y datos adjuntos seguros)](office-365-atp.md)
+## [Protección contra amenazas avanzada](office-365-atp.md)
 ### [Vínculos seguros de ATP](atp-safe-links.md)
 #### [Configurar directivas de vínculos seguros de ATP](set-up-atp-safe-links-policies.md)
 #### [Configurar una lista personalizada de URL con "no reescribir"](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)
@@ -183,7 +183,10 @@
 ## [Investigación y respuesta de amenazas](office-365-ti.md)
 ### [Introducción](get-started-with-ti.md)
 ### [Rastreadores de amenazas](threat-trackers.md)
-### [Usar el explorador en el Centro de seguridad y cumplimiento](use-explorer-in-security-and-compliance.md)
+### [Explorador de amenazas](use-explorer-in-security-and-compliance.md)
+#### [Vistas del explorador de amenazas](threat-explorer-views.md)
+#### [Buscar e investigar el correo electrónico malintencionado que se ha entregado](investigate-malicious-email-that-was-delivered.md)
+### [Investigación y respuesta de amenazas](automated-investigation-response-office.md)
 ### [Ver informes de ATP](view-reports-for-atp.md)
 ### [Simulador de ataques en Office 365](attack-simulator.md)
 ### [Mantener la seguridad de los usuarios con la investigación y respuesta de amenazas](keep-users-safe-with-office-365-ti.md)
@@ -319,6 +322,7 @@
 #### [Límites de eDiscovery avanzado (versión preliminar)](compliance20/limits-ediscovery20.md)
 #### [Tipos de archivo admitidos](compliance20/supported-filetypes-ediscovery20.md)
 #### [Campos de metadatos del documento](compliance20/document-metadata-fields.md)
+#### [Solución de problemas de AzCopy](compliance20/troubleshooting-azcopy.md)
 
 ## [eDiscovery avanzado de Office 365](office-365-advanced-ediscovery.md)
 ### [Introducción a eDiscovery avanzado](quick-setup-for-advanced-ediscovery.md)

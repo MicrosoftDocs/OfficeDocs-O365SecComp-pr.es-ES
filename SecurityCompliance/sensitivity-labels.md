@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con las etiquetas de confidencialidad de Office 365, puede clasificar y ayudar a proteger el contenido confidencial, sin poner impedimentos a la productividad y la capacidad de colaboración de los usuarios. Puede usar etiquetas de confidencialidad para aplicar opciones de protección como encriptación o marcas de agua en el contenido con la etiqueta.
-ms.openlocfilehash: 05f53c508126962d36be3e131413d5a4314875a9
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: ceb3373f6de24d52f8e65c322a9e7eca4fe92618
+ms.sourcegitcommit: cf9d9b545a7c153d314aa9c08c7fb16fcd785b3e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455032"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "30737690"
 ---
 # <a name="overview-of-sensitivity-labels"></a>Información general de etiquetas de confidencialidad
 
@@ -35,6 +35,8 @@ Puede usar etiquetas de confidencialidad para:
 - **Proteger el contenido en las aplicaciones de Office en varios dispositivos y plataformas diferentes.** Las etiquetas de confidencialidad funcionan en aplicaciones de Office en Windows, Mac, iOS y Android. La compatibilidad con aplicaciones web de Office estará disponible próximamente.
     
 - **Evitar que el contenido confidencial salga de su organización en dispositivos con Windows** utilizando endpoint protection de Microsoft Intune. Después de aplicar una etiqueta de confidencialidad a un contenido que se encuentra en un dispositivo Windows, endpoint protection puede impedir que el contenido se copie en una aplicación de terceros, como Twitter o Gmail, o en un almacenamiento extraíble, como una unidad USB.
+
+- **Proteger el contenido en los servicios y aplicaciones de terceros** a través de Microsoft Cloud App Security Con Cloud App Security, puede detectar, clasificar, etiquetar y proteger el contenido en los servicios y aplicaciones de terceros, como SalesForce, Box o Dropbox, incluso si la aplicación o servicio de terceros no puede leer o no tiene compatibilidad con etiquetas de confidencialidad.
 
 - **Extender las etiquetas de confidencialidad a servicios y aplicaciones de terceros.** Con el SDK de Microsoft Information Protection, los servicios y aplicaciones de terceros en Windows, Mac y Linux pueden leer las etiquetas de confidencialidad y aplicar la opciones de protección. La compatibilidad con aplicaciones para iOS y Android estará disponible próximamente.
 
@@ -222,6 +224,19 @@ Para que las etiquetas de confidencialidad puedan usar WIP, primero debe realiza
 - Crear una directiva de Windows Information Protection (WIP) que se aplica a dispositivos de punto final. Puede hacer esto en cualquiera de estas ubicaciones:
     - [Crear una directiva de Windows Information Protection (WIP) con MDM usando Azure Portal para Microsoft Intune](https://docs.microsoft.com/es-ES/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure)
     - [Crear e implementar una directiva de Windows Information Protection (WIP) con System Center Configuration Manager](https://docs.microsoft.com/es-ES/windows/security/information-protection/windows-information-protection/create-wip-policy-using-sccm)
+
+## <a name="protect-content-in-third-party-apps-and-services-by-using-microsoft-cloud-app-security"></a>Proteger el contenido en los servicios y aplicaciones de terceros con Microsoft Cloud App Security
+
+Proteger el contenido en los servicios y aplicaciones de terceros con Cloud App Security (CAS). Con CAS, puede detectar, clasificar, etiquetar y proteger el contenido en los servicios y aplicaciones de terceros, como SalesForce, Box o Dropbox. Por ejemplo, Dropbox podría no entender una etiqueta de confidencialidad, pero CAS puede actuar y proteger el contenido con la etiqueta en esa ubicación.
+
+Para obtener más información, vea [Aplicar automáticamente etiquetas de clasificación de Azure Information Protection](https://docs.microsoft.com/es-ES/cloud-app-security/use-case-information-protection).
+
+### <a name="important-prerequisites"></a>Requisitos previos importantes
+
+Para que las etiquetas de confidencialidad puedan usar CAS, primero debe realizar los requisitos previos que se describen aquí: [Aplicar automáticamente etiquetas de clasificación de Azure Information Protection](https://docs.microsoft.com/es-ES/cloud-app-security/use-case-information-protection). En este tema se describen los siguientes requisitos previos:
+
+- [Habilitar Cloud App Security y Azure Information Protection](https://docs.microsoft.com/es-ES/cloud-app-security/azip-integration) para su espacio empresarial.
+- [Conectar la aplicación](https://docs.microsoft.com/es-ES/cloud-app-security/enable-instant-visibility-protection-and-governance-actions-for-your-apps) con Cloud App Security.
 
 ## <a name="extend-sensitivity-labels-to-third-party-apps-and-services-by-using-the-microsoft-information-protection-sdk"></a>Ampliar las etiquetas de confidencialidad a servicios y aplicaciones de terceros con el SDK de Microsoft Information Protection
 

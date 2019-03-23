@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de confidencialidad, puede restringir el acceso al contenido al que se aplique la etiqueta. Las etiquetas de confidencialidad pueden utilizar el cifrado para proteger el contenido.
-ms.openlocfilehash: c76fb44fa00edc141e5037b99258a9501e722d86
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: 6f8100ea0196cd1637bbad69757c9cc6e98f5bac
+ms.sourcegitcommit: cf9d9b545a7c153d314aa9c08c7fb16fcd785b3e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455342"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "30737700"
 ---
 # <a name="restrict-access-to-content-by-using-encryption-in-sensitivity-labels"></a>Restringir el acceso al contenido mediante el cifrado en las etiquetas de confidencialidad
 
@@ -47,7 +47,7 @@ La encriptación usa Azure Rights Management (Azure RMS). Azure RMS usa directiv
 Para empezar, solo tiene que cambiar **Encriptación** a **Activado** y, después, use las siguientes opciones para controlar quién puede acceder al correo o documentos a los que se aplica esta etiqueta. Puede:
 
 1. **Aplicar la encriptación a correo electrónico y documentos, o solo al correo.** Si elige solo correo, los mensajes con esta etiqueta se cifrarán en Outlook, pero los documentos con esta etiqueta no se cifrarán en otras aplicaciones, como Word o PowerPoint. 
-2. **Permitir que el acceso al contenido con la etiqueta expire**, ya sea en una fecha específica o tras un número determinado de días después de aplicar la etiqueta. Después de ese momento, los usuarios no podrán abrir el elemento con la etiqueta. Si especifica una fecha, se activará en la medianoche de esa fecha, en la zona horaria actual. 
+2. **Permitir que el acceso al contenido con la etiqueta expire**, ya sea en una fecha específica o tras un número determinado de días después de aplicar la etiqueta. Después de ese momento, los usuarios no podrán abrir el elemento con la etiqueta. Si especifica una fecha, se activará en la medianoche de esa fecha, en la zona horaria actual. (Tenga en cuenta que algunos clientes de correo electrónico pueden no aplicar la expiración y mostrar correos electrónicos una vez pasada dicha fecha, debido a otros mecanismos de almacenamiento en caché).
 3. **Permitir el acceso sin conexión** nunca, siempre o durante un número concreto de días después de aplicar la etiqueta. Si restringe el acceso sin conexión a nunca o a un número de días, cuando se alcance el umbral, los usuarios deberán volver a autenticarse y se registrará el acceso. Para obtener más información, vea la siguiente sección sobre la licencia de uso de administración de derechos.
 
 ![Configuración de cifrado en las etiquetas de confidencialidad](media/Sensitivity_Encryption_settings_for_sensitivity_label.png)
