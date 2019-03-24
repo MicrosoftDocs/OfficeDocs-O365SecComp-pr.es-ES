@@ -3,7 +3,7 @@ title: Diseño de un esquema de clasificación de datos personales
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
-ms.date: 2/7/2018
+ms.date: ''
 ms.audience: ITPro
 ms.topic: overview
 ms.collection:
@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Determine si su organización va a implementar etiquetas como parte de su plan de RGPD.
-ms.openlocfilehash: be700d0b055346822ddd63c3c250fad048a7fce8
-ms.sourcegitcommit: 15983a08a4ae9c2050344172c7e957830ce3867e
+ms.openlocfilehash: 79c68b8340209c3cc3e3a7081a4075c31a112e80
+ms.sourcegitcommit: ef27da3ea5340d6e7a2eaa1288e2e005ef8e4788
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30373871"
+ms.lasthandoff: 03/23/2019
+ms.locfileid: "30789445"
 ---
 # <a name="architect-a-classification-schema-for-personal-data"></a>Diseño de un esquema de clasificación de datos personales
 
@@ -45,13 +45,13 @@ Elija una de las siguientes opciones.
 
 -   En el futuro funcionarán con Cloud App Security para que pueda detectar información confidencial en otras aplicaciones SaaS.
 
-### <a name="option-2-use-sensitive-information-types--office-labels"></a>Opción 2: Usar tipos de información confidencial y etiquetas de Office
+### <a name="option-2-use-sensitive-information-types--retention-labels"></a>Opción 2: Usar tipos de información confidencial y etiquetas de retención
 
 -   Necesitará los tipos de información confidencial para aplicar automáticamente etiquetas a datos personales que están sujetos al RGPD, por lo que son un requisito previo.
 
--   Usar etiquetas de Office le permite incluir información personal que está sujeta al RGPD en un plan de gobierno de datos más amplio para su organización.
+-   Usar etiquetas de retención le permite incluir información personal que está sujeta al RGPD en un plan de gobierno de datos más amplio para su organización.
 
--   Más adelante, las etiquetas de Office convergerán con las etiquetas de Azure Information Protection en una clasificación y motor de etiquetado unificados.
+
 
 ## <a name="develop-a-label-schema-that-includes-personal-data"></a>Desarrollar un esquema de etiqueta que incluya datos personales
 
