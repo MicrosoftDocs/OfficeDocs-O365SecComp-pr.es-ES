@@ -3,13 +3,15 @@
 ## [Configurar su inquilino de Office 365 para aumentar la seguridad](tenant-wide-setup-for-increased-security.md)
 ## [Ir al Centro de seguridad y cumplimiento](go-to-the-securitycompliance-center.md)
 ## [Prepararse para los nuevos Centro de seguridad de Microsoft 365 y Centro de cumplimiento de Microsoft 365](microsoft-security-and-compliance.md)
+## [Centro de seguridad de Microsoft 365](overview-security-center.md)
+### [Puntuación de seguridad de Microsoft](microsoft-secure-score.md)
 ## [Puntuación segura de Office 365](office-365-secure-score.md)
-## [Puntuación de seguridad de Microsoft](microsoft-secure-score.md)
 ## [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md)
 ## [Proporcionar a los usuarios acceso al Centro de seguridad y cumplimiento](grant-access-to-the-security-and-compliance-center.md)
 ## [Introducción al Panel de seguridad](security-dashboard.md)
 ## [Usar su suscripción gratuita de Azure Active Directory](use-your-free-azure-ad-subscription-in-office-365.md)
 ## [Planificación de la seguridad y el cumplimiento en Office 365](plan-for-security-and-compliance.md)
+
 # Proteger el acceso a datos y servicios
 ## [Proteger el acceso a datos y servicios de Office 365](protect-access-to-data-and-services.md)
 
@@ -88,6 +90,8 @@
 ### [Ver vídeos del equipo de gobierno de datos de Microsoft](https://go.microsoft.com/fwlink/?linkid=867039)
 
 # [Protección contra amenazas](protect-against-threats.md)
+## [Captura de Microsoft 365](hunting.md)
+## [Comprender las últimas campañas de ataques con análisis de amenazas](latest-attack-campaigns.md)
 ## [Guía de inicio rápido: Configurar la Protección contra amenazas avanzada de Office 365](checklist-atp-setup.md)
 ## [Protección contra correo no deseado y malware](anti-spam-and-anti-malware-protection.md)
 ### [Información general sobre EOP](videos-for-getting-started-with-protecting-your-email.md)
@@ -380,6 +384,11 @@
 ## [Buscar actividades de eDiscovery en el registro de auditoría](search-for-ediscovery-activities-in-the-audit-log.md)
 
 # Supervisión de la seguridad y el cumplimiento
+## [Supervisión y creación de informes del Centro de seguridad de Microsoft 365](monitoring-and-reporting.md)
+### [Supervisar y notificar identidades en seguridad de Microsoft 365](monitor-and-report-identities.md)
+### [Supervisar los datos de seguridad de Microsoft 365](monitor-data.md)
+### [Supervisar los dispositivos de seguridad de Microsoft 365](monitor-devices.md)
+### [Supervisar las aplicaciones de seguridad de Microsoft 365](monitor-apps.md)
 ## [Directivas de alerta](alert-policies.md)
 ## [Informes inteligentes y reportes en el Centro de seguridad y cumplimiento](reports-and-insights-in-security-and-compliance.md)
 ### [Ver informes de seguridad de correo electrónico en el Centro de seguridad y cumplimiento](view-email-security-reports.md)
