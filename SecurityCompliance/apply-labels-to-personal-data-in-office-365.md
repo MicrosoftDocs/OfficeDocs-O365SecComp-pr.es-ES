@@ -3,7 +3,7 @@ title: Aplicar etiquetas a datos personales en Office 365
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
-ms.date: 2/7/2018
+ms.date: ''
 ms.audience: ITPro
 ms.topic: overview
 ms.collection:
@@ -16,38 +16,42 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Aprenda a usar etiquetas de Office como parte de su plan de protección RGPD.
-ms.openlocfilehash: 9474d4b911936bca2c06c9660578790578fba4a2
-ms.sourcegitcommit: 15983a08a4ae9c2050344172c7e957830ce3867e
+ms.openlocfilehash: e31cd420fe476ace8031fc2c6e52158762814c7a
+ms.sourcegitcommit: ef27da3ea5340d6e7a2eaa1288e2e005ef8e4788
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30373901"
+ms.lasthandoff: 03/23/2019
+ms.locfileid: "30789435"
 ---
 # <a name="apply-labels-to-personal-data-in-office-365"></a>Aplicar etiquetas a datos personales en Office 365
 
- Este tema puede serle útil si utiliza etiquetas de Office como parte de su plan de protección RGPD. Actualmente puede crear etiquetas en el Centro de seguridad y cumplimiento de Office 365 y en Azure Information Protection. Con el tiempo estas tecnologías se unirán en una experiencia de etiquetado y clasificación unificada y podrá hacer mucho más.
+ Use este tema si utiliza las etiquetas de clasificación como parte de su plan de protección de RGPD. 
 
-Si utiliza etiquetas para la protección de datos personales de Office 365, Microsoft le recomienda que empiece con las etiquetas de Office. Puede usar Gobierno de datos avanzado para aplicar automáticamente etiquetas basándose en tipos de información confidencial u otros criterios. También puede usar etiquetas de Office con la prevención de pérdida de datos para aplicar protección, y usarlas con eDiscovery y Búsqueda de contenido. Pronto podrá usar las etiquetas y tipos de información confidencial con Cloud App Security para supervisar datos personales en otras aplicaciones SaaS.
+Si utiliza etiquetas para la protección de datos personales de Office 365, Microsoft recomienda que empiece con [etiquetas de retención](labels.md). Con las etiquetas de retención, puede:
+- Usar el Gobierno de datos avanzado para aplicar automáticamente etiquetas con tipos de información confidencial u otros criterios.
+-  Usar etiquetas de retención con la prevención de pérdida de datos para aplicar la protección. 
+- Usar etiquetas con eDiscovery y Búsqueda de contenido. 
+- Usar etiquetas y tipos de información confidencial con Cloud App Security para supervisar los datos personales que residen en otras aplicaciones SaaS.
 
-Las etiquetas de Azure Information Protection actualmente se recomiendan para aplicar etiquetas a archivos locales, y en otros proveedores y servicios en la nube. También se recomiendan para los archivos de Office 365 que requieren el cifrado de Azure Rights Management (Azure RMS) para proteger datos, como archivos de secreto empresarial.
+Actualmente se recomiendan las [etiquetas de confidencialidad](sensitivity-labels.md) para la aplicación de etiquetas a archivos locales y en otros servicios en la nube y proveedores. Estas también se recomiendan para los archivos de Office 365 que requieren el cifrado de Azure Information Protection (AIP) para la protección de datos, como archivos de secreto comercial.
 
-En este momento, no se recomienda usar Azure Information Protection para aplicar el cifrado de Azure RMS a archivos de Office 365 con datos que están sujetos al RGPD. Los servicios de Office 365 actualmente no pueden leer archivos cifrados de RMS. Por lo tanto, el servicio no puede encontrar los datos confidenciales en estos archivos.
+En este momento, no se recomienda usar Azure Information Protection para aplicar el cifrado a archivos en Office 365 con datos que están sujetos al RGPD. Los servicios de Office 365 actualmente no pueden leer archivos cifrados AIP. Por lo tanto, el servicio no puede encontrar datos confidenciales en estos archivos.
 
-Pueden aplicarse las etiquetas de Azure Information Protection al correo en Exchange Online y estas son compatibles con la prevención de pérdida de datos de Office 365. Próximamente, la clasificación unificada y el motor de etiquetas permitirán usar las mismas etiquetas para correo electrónico y archivos, incluyendo etiquetar y proteger el correo electrónico en tránsito automáticamente.
+Pueden aplicarse etiquetas de confidencialidad a correo en Exchange Online que funcionan con la prevención de pérdida de datos de Office 365. 
 
 ![Etiquetas de Office 365 y de Azure Information Protection](Media/Apply-labels-to-personal-data-in-Office-365-image1.png)
 
+
 En la ilustración:
 
--   Use las etiquetas de Office 365 para los datos personales y archivos secretos empresariales muy regulados en SharePoint Online y OneDrive para la Empresa.
+-   Use las etiquetas de retención para los datos personales y archivos secretos empresariales muy regulados en SharePoint Online y OneDrive para la Empresa.
 
--   Use las etiquetas de Azure Information Protection (AIP) para archivos secretos empresariales muy regulados, correo electrónico de Exchange Online, archivos en otros servicios SaaS, archivos en centros de datos locales y archivos de otros proveedores en la nube.
+-   Use las etiquetas de confidencialidad para archivos secretos empresariales muy regulados, correo electrónico de Exchange Online, archivos en otros servicios SaaS, archivos en centros de datos locales y archivos de otros proveedores en la nube.
 
--   Próximamente: ambos tipos de etiquetas convergerán en una experiencia de clasificación y etiquetado unificada.
 
-## <a name="use-office-labels-and-sensitive-information-types-across-microsoft-365-for-information-protection"></a>Uso de etiquetas y tipos de información confidencial de Office en Microsoft 365 para la protección de información
+## <a name="use-retention-labels-and-sensitive-information-types-across-microsoft-365-for-information-protection"></a>Uso de etiquetas de retención y tipos de información confidencial en Microsoft 365 para la protección de información
 
-En la ilustración siguiente se muestra cómo pueden aprovecharse las etiquetas y los tipos de información confidencial de Office en las directivas de etiquetas, de prevención de pérdida de datos y de Cloud App Security.
+En la ilustración siguiente se muestra cómo pueden aprovecharse las etiquetas de retención y los tipos de información confidencial en las directivas de etiquetas, de prevención de pérdida de datos y de Cloud App Security.
 
 ![Etiquetas y tipos de información confidencial de Office](Media/Apply-labels-to-personal-data-in-Office-365-image2.png)
 
@@ -64,7 +68,7 @@ Por motivos de accesibilidad, en la tabla siguiente se incluyen los mismos ejemp
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left">Etiquetas de Office. Ejemplos: personal, público, datos de clientes, datos de recursos humanos, confidencial, extremadamente confidencial</td>
+<td align="left">Etiquetas de retención. Ejemplos: personal, público, datos de clientes, datos de recursos humanos, confidencial, extremadamente confidencial</td>
 <td align="left"><p>Aplicar automáticamente esta etiqueta...</p>
 <p>Datos de cliente</p>
 <p>...a documentos que coincidan con estos tipos de información confidencial...</p>
@@ -178,8 +182,8 @@ Cree etiquetas y directivas en el Centro de seguridad y cumplimiento.
 <p>Consulte <a href="https://support.office.com/en-ie/article/Give-users-access-to-the-Office-365-Security-Compliance-Center-2cfce2c8-20c5-47f9-afc4-24b059c1bd76">Proporcionar a los usuarios acceso al Centro de seguridad y cumplimiento de Office 365</a>.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>Cree etiquetas de Office.</p></td>
-<td align="left">Vaya a Clasificaciones en el Centro de seguridad y cumplimiento, elija Etiquetas y cree las etiquetas en su entorno.</td>
+<td align="left"><p>Crear etiquetas de retención.</p></td>
+<td align="left">Vaya a Clasificaciones en el Centro de seguridad y cumplimiento, elija Etiquetas de retención y cree las etiquetas en su entorno.</td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Cree directivas de aplicación automática para etiquetas.</p></td>
