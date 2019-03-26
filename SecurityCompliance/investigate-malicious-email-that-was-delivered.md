@@ -1,5 +1,5 @@
 ---
-title: Buscar e investigar el correo electrónico malintencionado que se entregó (inteligencia de amenazas de Office 365)
+title: Buscar y investigar correo electrónico malintencionado que se entregó (Office 365 de investigación y respuesta de amenazas
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -15,12 +15,12 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo usar la investigación de amenazas y las capacidades de respuesta para buscar y investigar correo electrónico malintencionado.
-ms.openlocfilehash: 167a587e16b464bcc7b45bca25e9f3adceda758c
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: d19833a5d2acf69b79cca7e58c5796d967337c9f
+ms.sourcegitcommit: a56128c7be5d59e976851c27301031e19fa1997d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692459"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "30732253"
 ---
 # <a name="find-and-investigate-malicious-email-that-was-delivered-office-365-advanced-threat-protection-plan-2"></a>Buscar e investigar correo electrónico malintencionado que se entregó (Office 365 Advanced Threat Protection Plan 2)
 
@@ -37,7 +37,7 @@ Asegúrese de que se cumplen los siguientes requisitos:
     
 - El [registro de auditoría de Office 365](turn-audit-log-search-on-or-off.md) está activado para su organización. 
     
-- Su organización tiene directivas definidas para protección contra correo electrónico no deseado, antimalware, antiphishing, etc. Consulte [Threat Management en el centro de seguridad &amp; y cumplimiento de Office 365](threat-management.md).
+- Su organización tiene directivas definidas para protección contra correo electrónico no deseado, antimalware, antiphishing, etc. Vea [protección contra amenazas avanzada de Office 365](office-365-atp.md).
     
 - Es un administrador global de Office 365 o bien tiene el rol de administrador de seguridad o de búsqueda y dePuración asignado en &amp; el centro de seguridad y cumplimiento. Consulte [permisos en el centro de seguridad &amp; y cumplimiento de Office 365](permissions-in-the-security-and-compliance-center.md).
     

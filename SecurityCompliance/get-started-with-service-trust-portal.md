@@ -1,5 +1,5 @@
 ---
-title: Empezar a trabajar con el Portal de confianza del servicio de Microsoft
+title: Introducción al portal de confianza de servicios de Microsoft
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -12,14 +12,14 @@ mscollection: M365-security-compliance
 ms.custom: Adm_O365
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
 description: Para los informes de cumplimiento normativo de Office 365, Azure y Dynamics 365, para ver auditorías de terceros, averiguar cómo Microsoft mantiene seguros los datos de los clientes y cómo se puede cumplir con ISO, HIPAA, NIST, FINRA, RGPD y FedRAMP cuando se usan estos servicios en línea.
-ms.openlocfilehash: e4b3d1497b2dcf3a079dbe60f742e902ab45544c
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: ff14f1b88dbde06dbfd17a87bb94c3f32ddff81b
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296693"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30647340"
 ---
-# <a name="get-started-with-the-microsoft-service-trust-portal"></a>Empezar a trabajar con el Portal de confianza del servicio de Microsoft
+# <a name="get-started-with-the-microsoft-service-trust-portal"></a>Introducción al portal de confianza de servicios de Microsoft
 
 El portal de confianza de servicios de Microsoft proporciona una variedad de contenido, herramientas y otros recursos sobre seguridad, privacidad y prácticas de cumplimiento de Microsoft.
   
@@ -84,12 +84,12 @@ Proporciona información de cumplimiento específica de la industria y de la reg
 
 - **Industrias** : proporciona páginas de aterrizaje específicas de la industria para obtener información y sobre cómo los servicios en la nube de Microsoft ayudan a la organización a cumplir los estándares y regulaciones de estos sectores:
 
-    - Education
+    - Educación
     - Servicios financieros
     - 365
     - Mantenimiento
     - Industria
-    - Comercial
+    - Merca
 
 - **Regions** : proporciona dictámenes legales sobre el cumplimiento de los servicios en la nube de Microsoft con diversas leyes de varios países. Los países específicos incluyen Australia, República Checa, Alemania, Polonia, Rumanía, España y Reino Unido.
   
@@ -112,7 +112,7 @@ Vínculos al [centro de confianza de Microsoft](https://www.microsoft.com/trustc
 
 Esta nueva característica le permite guardar (o *anclar*) documentos para que pueda obtener acceso rápidamente a ellos en la página mi biblioteca. También puede configurar notificaciones para que Microsoft le envíe un mensaje de correo electrónico cuando se actualicen los documentos de la mis bibliotecas. Para obtener más información, vea la sección [mi biblioteca](#my-library-1) de este artículo.
 
-### <a name="admin"></a>Administrador
+### <a name="admin"></a>Admin
 
 Funciones administrativas que solo están disponibles para la cuenta de administrador global. Esta opción solo está visible si ha iniciado sesión como administrador global.
   
@@ -139,7 +139,7 @@ Para enumerar controles a partir de evaluaciones en el administrador de cumplimi
   
 ## <a name="my-library"></a>Mi biblioteca
 
-Use la característica mi biblioteca para agregar documentos y recursos en el portal de confianza de servicios a la página mi biblioteca. Esto le permite acceder a los documentos que son relevantes para usted en un solo punto.  Para agregar un documento a mi biblioteca, haga clic en el menú **...** a la derecha de un documento y, a continuación, seleccione **Agregar a la biblioteca**. Puede agregar varios documentos a mi biblioteca haciendo clic en la casilla situada junto a uno o más documentos y, a continuación, hacer clic en **Guardar en la biblioteca** en la parte superior de la página.
+Use la característica mi biblioteca para agregar documentos y recursos en el portal de confianza de servicios a la página mi biblioteca. Esto le permite acceder a los documentos que son relevantes para usted en un solo punto.  Para agregar un documento a mi biblioteca, haga clic en el menú **...** a la derecha de un documento y, a continuación, seleccione **Guardar en la biblioteca**. Puede agregar varios documentos a mi biblioteca haciendo clic en la casilla situada junto a uno o más documentos y, a continuación, hacer clic en **Guardar en la biblioteca** en la parte superior de la página.
 
 Además, la característica de notificaciones le permite configurar mi biblioteca para que se le envíe un mensaje de correo electrónico siempre que Microsoft actualice un documento que haya agregado a mi biblioteca. Para configurar las notificaciones, vaya a mi biblioteca y haga clic en **configuración**de notificaciones. Puede elegir la frecuencia de las notificaciones y especificar una dirección de correo electrónico en la organización a la que enviar las notificaciones. Las notificaciones de correo electrónico incluyen vínculos a los documentos que se han actualizado y una breve descripción de la actualización.
 

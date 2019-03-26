@@ -1,7 +1,7 @@
 ---
 title: Qué buscan los tipos de información confidencial
-ms.author: stephow
-author: stephow-MSFT
+ms.author: deniseb
+author: denisebmsft
 manager: laurawi
 ms.date: 6/29/2018
 ms.audience: Admin
@@ -14,12 +14,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: La prevención de pérdida de datos (DLP) en el &amp; centro de seguridad y cumplimiento de Office 365 incluye 80 tipos de información confidencial listos para que pueda usarlos en las directivas de DLP. Este tema enumera todos estos tipos de información confidencial y muestra lo que una directiva DLP busca al detectar cada uno de los tipos.
-ms.openlocfilehash: e9811b285e98a791570dc91e275cb5cead4f8bc9
-ms.sourcegitcommit: 6e8e2b43a4bea31c1e835c5b050824651c6a0094
+ms.openlocfilehash: d161435c75149183289cfbfd6abe79d55e371e31
+ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "30537647"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "30639197"
 ---
 # <a name="what-the-sensitive-information-types-look-for"></a>Qué buscan los tipos de información confidencial
 
@@ -616,14 +616,14 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 - OneBox
 - localhost
 - 127.0.0.1
-- testacs. <!--no-hyperlink-->com
-- s-int.<!--no-hyperlink-->net
+- testacs.<!--no-hyperlink-->Puerto
+- s-int.<!--no-hyperlink-->ADO.net
 
 ## <a name="azure-iaas-database-connection-string-and-azure-sql-connection-string"></a>Cadena de conexión de base de datos IAAS de Azure y cadena de conexión SQL de Azure
 
 ### <a name="format"></a>Formato
 
-La cadena "Server", "Server" o "Data Source" seguida de los caracteres y las cadenas que se describen en el siguiente patrón, incluida la cadena "CloudApp. Azure. <!--no-hyperlink-->com "o" CloudApp. Azure. <!--no-hyperlink-->net "o" Database. Windows. <!--no-hyperlink-->net "y la cadena" Password "o" Password "o" pwd ".
+La cadena "Server", "Server" o "Data Source" seguida de los caracteres y las cadenas que se describen en el siguiente patrón, incluida la cadena "CloudApp. Azure.<!--no-hyperlink-->com "o" CloudApp. Azure.<!--no-hyperlink-->net "o" Database. Windows.<!--no-hyperlink-->net "y la cadena" Password "o" Password "o" pwd ".
 
 ### <a name="pattern"></a>Patrón
 
@@ -632,7 +632,7 @@ La cadena "Server", "Server" o "Data Source" seguida de los caracteres y las cad
 - Un signo igual (=)
 - 0-2 caracteres de espacio en blanco
 - Cualquier combinación de entre 1-200 letras minúsculas o mayúsculas, dígitos, símbolos, caracteres especiales o espacios
-- La cadena "CloudApp. Azure. <!--no-hyperlink-->com "," CloudApp. Azure. <!--no-hyperlink-->net "o" Database. Windows. <!--no-hyperlink-->net "
+- La cadena "CloudApp. Azure.<!--no-hyperlink-->com "," CloudApp. Azure.<!--no-hyperlink-->net "o" Database. Windows.<!--no-hyperlink-->ADO.net
 - Cualquier combinación de entre 1-300 letras minúsculas o mayúsculas, dígitos, símbolos, caracteres especiales o espacios
 - La cadena "Password", "Password" o "pwd"
 - 0-2 caracteres de espacio en blanco
@@ -676,14 +676,14 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 - OneBox
 - localhost
 - 127.0.0.1
-- testacs. <!--no-hyperlink-->com
-- s-int.<!--no-hyperlink-->net
+- testacs.<!--no-hyperlink-->Puerto
+- s-int.<!--no-hyperlink-->ADO.net
 
 ## <a name="azure-iot-connection-string"></a>Cadena de conexión de Azure IoT
 
 ### <a name="format"></a>Formato
 
-La cadena "HostName" seguida de los caracteres y las cadenas que se describen en el patrón siguiente, incluidas las cadenas "Azure-Devices. <!--no-hyperlink-->net "y" SharedAccessKey ".
+La cadena "HostName" seguida de los caracteres y las cadenas que se describen en el patrón siguiente, incluidas las cadenas "Azure-Devices.<!--no-hyperlink-->net "y" SharedAccessKey ".
 
 ### <a name="pattern"></a>Patrón
 
@@ -692,7 +692,7 @@ La cadena "HostName" seguida de los caracteres y las cadenas que se describen en
 - Un signo igual (=)
 - 0-2 caracteres de espacio en blanco
 - Cualquier combinación de entre 1-200 letras minúsculas o mayúsculas, dígitos, símbolos, caracteres especiales o espacios
-- La cadena "Azure-Devices. <!--no-hyperlink-->net "
+- La cadena "Azure-Devices.<!--no-hyperlink-->ADO.net
 - Cualquier combinación de entre 1-200 letras minúsculas o mayúsculas, dígitos, símbolos, caracteres especiales o espacios
 - La cadena "SharedAccessKey"
 - 0-2 caracteres de espacio en blanco
@@ -736,8 +736,8 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 - OneBox
 - localhost
 - 127.0.0.1
-- testacs. <!--no-hyperlink-->com
-- s-int.<!--no-hyperlink-->net
+- testacs.<!--no-hyperlink-->Puerto
+- s-int.<!--no-hyperlink-->ADO.net
 
 ## <a name="azure-publish-setting-password"></a>Contraseña de configuración de publicación de Azure
 
@@ -787,18 +787,18 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 - OneBox
 - localhost
 - 127.0.0.1
-- testacs. <!--no-hyperlink-->com
-- s-int.<!--no-hyperlink-->net
+- testacs.<!--no-hyperlink-->Puerto
+- s-int.<!--no-hyperlink-->ADO.net
 
 ## <a name="azure-redis-cache-connection-string"></a>Cadena de conexión de la caché de Redis de Azure
 
 ### <a name="format"></a>Formato
 
-La cadena "Redis. Cache. Windows. <!--no-hyperlink-->net "seguida de los caracteres y las cadenas que se describen en el patrón siguiente, incluida la cadena" Password "o" pwd ".
+La cadena "Redis. Cache. Windows.<!--no-hyperlink-->net "seguida de los caracteres y las cadenas que se describen en el patrón siguiente, incluida la cadena" Password "o" pwd ".
 
 ### <a name="pattern"></a>Patrón
 
-- La cadena "Redis. Cache. Windows. <!--no-hyperlink-->net "
+- La cadena "Redis. Cache. Windows.<!--no-hyperlink-->ADO.net
 - Cualquier combinación de entre 1-200 letras minúsculas o mayúsculas, dígitos, símbolos, caracteres especiales o espacios
 - La cadena "Password" o "pwd"
 - 0-2 caracteres de espacio en blanco
@@ -842,8 +842,8 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 - OneBox
 - localhost
 - 127.0.0.1
-- testacs. <!--no-hyperlink-->com
-- s-int.<!--no-hyperlink-->net
+- testacs.<!--no-hyperlink-->Puerto
+- s-int.<!--no-hyperlink-->ADO.net
 
 ## <a name="azure-sas"></a>ASOCIACIONES de Microsoft Azure
 
@@ -883,7 +883,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 
 ### <a name="format"></a>Formato
 
-La cadena "EndPoint" seguida de los caracteres y las cadenas que se describen en el patrón siguiente, incluidas las cadenas "ServiceBus. Windows. <!--no-hyperlink-->net "y" SharedAccesKey ".
+La cadena "EndPoint" seguida de los caracteres y las cadenas que se describen en el patrón siguiente, incluidas las cadenas "ServiceBus. Windows.<!--no-hyperlink-->net "y" SharedAccesKey ".
 
 ### <a name="pattern"></a>Patrón
 
@@ -892,7 +892,7 @@ La cadena "EndPoint" seguida de los caracteres y las cadenas que se describen en
 - Un signo igual (=)
 - 0-2 caracteres de espacio en blanco
 - Cualquier combinación de entre 1-200 letras minúsculas o mayúsculas, dígitos, símbolos, caracteres especiales o espacios
-- La cadena "ServiceBus. Windows. <!--no-hyperlink-->net "
+- La cadena "ServiceBus. Windows.<!--no-hyperlink-->ADO.net
 - Cualquier combinación de entre 1-200 letras minúsculas o mayúsculas, dígitos, símbolos, caracteres especiales o espacios
 - La cadena "SharedAccessKey"
 - 0-2 caracteres de espacio en blanco
@@ -936,8 +936,8 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 - OneBox
 - localhost
 - 127.0.0.1
-- testacs. <!--no-hyperlink-->com
-- s-int.<!--no-hyperlink-->net
+- testacs.<!--no-hyperlink-->Puerto
+- s-int.<!--no-hyperlink-->ADO.net
 
 ## <a name="azure-storage-account-key"></a>Clave de cuenta de almacenamiento de Azure
 
@@ -1002,8 +1002,8 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 - OneBox
 - localhost
 - 127.0.0.1
-- testacs. <!--no-hyperlink-->com
-- s-int.<!--no-hyperlink-->net
+- testacs.<!--no-hyperlink-->Puerto
+- s-int.<!--no-hyperlink-->ADO.net
 
 ## <a name="azure-storage-account-key-generic"></a>Clave de cuenta de almacenamiento de Azure (Genérico)
 
@@ -3511,9 +3511,9 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 ### <a name="pattern"></a>Patrón
 
 12 dígitos:
-- Cuatro dígitos  
+- Cuatro dígitos 
 - Un guión o un espacio opcional  
-- Cuatro dígitos  
+- Cuatro dígitos 
 - Un guión o un espacio opcional  
 - El dígito final que es el dígito de control
 
@@ -5044,8 +5044,8 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 - OneBox
 - localhost
 - 127.0.0.1
-- testacs. <!--no-hyperlink-->com
-- s-int.<!--no-hyperlink-->net
+- testacs.<!--no-hyperlink-->Puerto
+- s-int.<!--no-hyperlink-->ADO.net
 
 ## <a name="sweden-national-id"></a>Identificación nacional de Suecia
 

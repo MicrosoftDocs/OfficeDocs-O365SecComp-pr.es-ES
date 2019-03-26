@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Determine si su organización va a implementar etiquetas como parte de su plan de RGPD.
-ms.openlocfilehash: 79c68b8340209c3cc3e3a7081a4075c31a112e80
-ms.sourcegitcommit: ef27da3ea5340d6e7a2eaa1288e2e005ef8e4788
+ms.openlocfilehash: 6886adaa09599b32eb2f3084efdea06fd5794af0
+ms.sourcegitcommit: ae7ebae8801a69a825a363443e2676379197de19
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2019
-ms.locfileid: "30789445"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30800302"
 ---
 # <a name="architect-a-classification-schema-for-personal-data"></a>Diseño de un esquema de clasificación de datos personales
 
@@ -41,9 +41,9 @@ Elija una de las siguientes opciones.
 
 -   Estos son más fáciles de usar si su organización ya no tiene o no va a implementar un plan de gobierno de datos más amplio con etiquetas.
 
--   Estas funcionan con reglas DLP (como sucede con las etiquetas de Office).
+-   Estas funcionan con reglas DLP (como sucede con las etiquetas de retención).
 
--   En el futuro funcionarán con Cloud App Security para que pueda detectar información confidencial en otras aplicaciones SaaS.
+-   Los tipos de información confidencial funcionan con Cloud App Security para que pueda detectar información confidencial en otras aplicaciones SaaS.
 
 ### <a name="option-2-use-sensitive-information-types--retention-labels"></a>Opción 2: Usar tipos de información confidencial y etiquetas de retención
 

@@ -3,7 +3,7 @@ title: Respuesta y investigación de amenazas de Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 03/09/2019
+ms.date: 03/18/2019
 ms.audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
 ms.collection:
 - M365-security-compliance
 description: Descubra cómo las capacidades de inteligencia sobre amenazas de Office 365 Advanced Threat Protection pueden ayudarle a investigar amenazas contra su organización, responder a malware, phishing y otros ataques que Office 365 ha detectado en su nombre y buscar amenazas indicadores.
-ms.openlocfilehash: 3d7bc40c4d5bec0c218adf093655cbbccde07ff9
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: 6f7e6e0a49bb4035458af2e9d7e45fd954a1f9fc
+ms.sourcegitcommit: a56128c7be5d59e976851c27301031e19fa1997d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693509"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "30732273"
 ---
 # <a name="office-365-threat-investigation-and-response"></a>Respuesta y investigación de amenazas de Office 365
 
@@ -49,7 +49,7 @@ Esto es lo que significa todo esto:
 
 - **Si su organización tenía previamente la inteligencia sobre amenazas de office 365 (pero no la protección contra amenazas avanzada de office 365) como un complemento** a otra suscripción de Office 365, ahora tendrá Office 365 Advanced Threat Protection Plan 2 y esto incluye capacidades de investigación y respuesta de amenazas. 
 
-- **Si su organización tenía previamente la protección contra amenazas avanzada de office 365 (pero no la inteligencia de amenazas de office 365) como un complemento** para otra suscripción de Office 365, tendrá Office 365 Advanced Threat Protection Plan 1. Esto incluye el plan 1 de la protección contra amenazas avanzada de Office 365 (pero no la investigación de amenazas y las capacidades de respuesta).
+- **Si su organización tenía previamente la protección contra amenazas avanzada de office 365 (pero no la inteligencia de amenazas de office 365) como un complemento** a otra suscripción de Office 365, ahora tendrá Office 365 Advanced Threat Protection Plan 1. Esto incluye el plan 1 de la protección contra amenazas avanzada de Office 365 (pero no la investigación de amenazas y las capacidades de respuesta).
 
 Para obtener más información, consulte [planes y precios](https://products.office.com/exchange/advance-threat-protection) de la protección contra amenazas avanzada de Office 365 y la [Descripción del servicio de protección contra amenazas avanzada de Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#whats-new-in-office-365-advanced-threat-protection-atp)
 
@@ -60,14 +60,20 @@ Use los siguientes recursos para obtener más información acerca de las capacid
 - [Introducción a la investigación y respuesta de amenazas](get-started-with-ti.md) (incluye información sobre las funciones necesarias) 
     
 - [Obtenga información sobre los rastreadores de amenazas: nuevos y dignos](threat-trackers.md)
+
+- [Investigación y respuesta automatizadas (AIR) con Office 365 Threat Intelligence](automated-investigation-response-office.md)
+
+- [Usar el explorador de amenazas en &amp; el centro de seguridad y cumplimiento](use-explorer-in-security-and-compliance.md)
     
-- [Buscar e investigar correo electrónico malintencionado que se entregó](investigate-malicious-email-that-was-delivered.md)
+- [Buscar e investigar el correo electrónico malintencionado que se ha entregado](investigate-malicious-email-that-was-delivered.md)
     
 - [Usar el simulador de ataques](attack-simulator.md)
     
 - [Integración de la investigación de amenazas y respuesta con la protección contra amenazas avanzada de Windows Defender](integrate-office-365-ti-with-wdatp.md)
     
 ## <a name="related-topics"></a>Temas relacionados
+
+[Vistas del explorador de amenazas](threat-explorer-views.md)
 
 [Protección contra amenazas en Office 365](protect-against-threats.md)
   
