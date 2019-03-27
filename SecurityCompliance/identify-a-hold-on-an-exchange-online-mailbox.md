@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 description: Obtenga información sobre cómo identificar los distintos tipos de retenciones que se pueden colocar en un buzón de correo de Office 365. Estos tipos de retenciones incluyen la retención por juicio, las suspensiones de eDiscovery y las directivas de retención de Office 365. También puede determinar si se ha excluido a un usuario de una directiva de retención para toda la organización
-ms.openlocfilehash: 5b9e8437b688a5c1b35726834c3d80d07cc4ba50
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: fa037e4e4f6a0c4b419645bdc3242fdc3d6db7db
+ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296813"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30900159"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Cómo identificar el tipo de retención en un buzón de Exchange Online
 
@@ -38,9 +38,10 @@ Office 365 ofrece una serie de formas en que su organización puede evitar que e
 
     - **Directivas de retención de ubicación específicas** : son directivas que se asignan a las ubicaciones de contenido de usuarios específicos. Use el cmdlet **Get-Mailbox** en Exchange Online PowerShell para obtener información sobre las directivas de retención asignadas a buzones de correo específicos.
 
-    - **Directivas de retención de toda la organización** : son directivas que se asignan a todas las ubicaciones de contenido de la organización. Use el cmdlet **Get-OrganizationConfig** en Exchange Online PowerShell para obtener información sobre las directivas de retención de toda la organización. Para obtener más información, vea la sección "aplicar una directiva de retención a toda la organización o ubicaciones específicas" en [Overview of Office 365 Retention Policies](retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations).
+    - **Directivas de retención de toda la organización** : son directivas que se asignan a todas las ubicaciones de contenido de la organización. Use el cmdlet **Get-OrganizationConfig** en Exchange Online PowerShell para obtener información sobre las directivas de retención de toda la organización.
+  Para obtener más información, vea la sección "aplicar una directiva de retención a toda la organización o ubicaciones específicas" en [Overview of Office 365 Retention Policies](retention-policies.md#applying-a-retention-policy-to-an-entire-organization-or-specific-locations).
 
-- **Office 365 etiquetas de retención** : Si un usuario aplica una etiqueta de retención de Office 365 (una que esté configurada para conservar contenido o conservar y, a continuación, eliminar contenido) en *cualquier* carpeta o elemento de su buzón, se aplicará una retención en el buzón como si el buzón estuviera se coloca en retención por juicio o se asigna a una directiva de retención de Office 365. Para obtener más información, consulte la sección [identificar buzones en espera porque se ha aplicado una etiqueta de retención a una carpeta o elemento](#identifying-mailboxes-on-hold-because-a-label-has-been-applied-to-a-folder-or-item) de este artículo.
+- **Office 365 etiquetas de retención** : Si un usuario aplica una etiqueta de retención de Office 365 (una que esté configurada para conservar contenido o conservar y, a continuación, eliminar contenido) en *cualquier* carpeta o elemento de su buzón, se aplicará una retención en el buzón como si el buzón estuviera se coloca en retención por juicio o se asigna a una directiva de retención de Office 365. Para obtener más información, consulte la sección [identificar buzones en espera porque se ha aplicado una etiqueta de retención a una carpeta o elemento](#identifying-mailboxes-on-hold-because-a-retention-label-has-been-applied-to-a-folder-or-item) de este artículo.
 
 Para administrar buzones en retención, es posible que tenga que identificar el tipo de retención que se coloca en un buzón de correo para que pueda realizar tareas como cambiar la duración de la retención, quitar la retención temporal o permanentemente o excluir un buzón de una directiva de retención de Office 365. En estos casos, el primer paso es identificar el tipo de retención colocada en el buzón. Y debido a que se pueden colocar varias suspensiones (y distintos tipos de retenciones) en un único buzón, tendrá que identificar todas las suspensiones colocadas en un buzón de correo si desea quitar o cambiar dichas suspensiones.
 
@@ -72,8 +73,8 @@ En la tabla siguiente se describe cómo identificar distintos tipos de retencion
 |---------|---------|---------|
 |Retención por juicio     |    `True`     |     La retención por juicio está habilitada para un buzón ** de correo si la propiedad `True`LitigationHoldEnabled está establecida en.    |
 |conservación de exhibición de documentos electrónicos     |  `UniH7d895d48-7e23-4a8d-8346-533c3beac15d`       |   La *propiedad InPlaceHolds* contiene el GUID de cualquier suspensión asociado con un caso de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento. Puede decir que se trata de una retención de eDiscovery porque el GUID comienza `UniH` por el prefijo (lo que denota una retención unificada).      |
-|Retención en contexto     |     `c0ba3ce811b6432a8751430937152491` <br/> o <br/> `cld9c0a984ca74b457fbe4504bf7d3e00de`  |     La propiedad *InPlaceHolds* contiene el GUID de la retención local que está colocada en el buzón. Puede decir que se trata de una conservación local porque el GUID no se inicia con un prefijo o se inicia con el `cld` prefijo.     |
-|Directiva de retención de Office 365 aplicada específicamente al buzón de correo     |    `mbxcdbbb86ce60342489bff371876e7f224:1` <br/> o <br/> `skp127d7cf1076947929bf136b7a2a8c36f:3`     |     La propiedad InPlaceHolds contiene los GUID de cualquier directiva de retención de ubicación específica que se aplique al buzón. Puede identificar las directivas de retención porque el GUID se inicia `mbx` con el `skp` o el prefijo. El `skp` prefijo indica que la Directiva de retención se aplica a las conversaciones de Skype empresarial en el buzón de correo del usuario.    |
+|Retención en contexto     |     `c0ba3ce811b6432a8751430937152491` <br/> o bien <br/> `cld9c0a984ca74b457fbe4504bf7d3e00de`  |     La propiedad *InPlaceHolds* contiene el GUID de la retención local que está colocada en el buzón. Puede decir que se trata de una conservación local porque el GUID no se inicia con un prefijo o se inicia con el `cld` prefijo.     |
+|Directiva de retención de Office 365 aplicada específicamente al buzón de correo     |    `mbxcdbbb86ce60342489bff371876e7f224:1` <br/> o bien <br/> `skp127d7cf1076947929bf136b7a2a8c36f:3`     |     La propiedad InPlaceHolds contiene los GUID de cualquier directiva de retención de ubicación específica que se aplique al buzón. Puede identificar las directivas de retención porque el GUID se inicia `mbx` con el `skp` o el prefijo. El `skp` prefijo indica que la Directiva de retención se aplica a las conversaciones de Skype empresarial en el buzón de correo del usuario.    |
 |Excluido de una directiva de retención de Office 365 de toda la organización     |   `-mbxe9b52bf7ab3b46a286308ecb29624696`      |     Si un buzón se excluye de una directiva de retención de Office 365 de toda la organización, el GUID de la Directiva de retención en la que se excluye el buzón se muestra en la propiedad `-mbx` InPlaceHolds y se identifica por el prefijo.    |
 
 ### <a name="get-organizationconfig"></a>Get-OrganizationConfig
@@ -138,7 +139,7 @@ $CaseHold | FL Name,ExchangeLocation
 
 Para conectar con el PowerShell del centro de cumplimiento de & de seguridad, vea [Connect to Office 365 Security _AMP_ Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
 
-### <a name="in-place-holds"></a>Retenciones locales
+### <a name="in-place-holds"></a>Suspensiones locales
 
 Ejecute el siguiente comando en Exchange Online PowerShell para identificar la conservación local que se aplica al buzón. Use el GUID de la retención local que identificó en el paso 1. El comando muestra el nombre de la suspensión y una lista de los buzones a los que se aplica la retención.
 
@@ -195,7 +196,7 @@ Set-Mailbox <DN or Exchange GUID> -InactiveMailbox -RemoveDelayHoldApplied
 ```
 
 > [!TIP]
-> La mejor forma de especificar un buzón inactivo en el comando anterior es usar su nombre distintivo o el valor de GUID de Exchange. El uso de uno de estos valores ayuda a evitar la especificación accidental del buzón incorrecto. 
+> La mejor forma de especificar un buzón inactivo en el comando anterior es usar su nombre distintivo o el valor de GUID de Exchange. El uso de uno de estos valores ayuda a impedir que se especifique accidentalmente el buzón equivocado. 
 
 ## <a name="next-steps"></a>Pasos siguientes
 

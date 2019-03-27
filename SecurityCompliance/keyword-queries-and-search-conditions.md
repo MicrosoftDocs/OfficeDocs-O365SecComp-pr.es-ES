@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: 'Obtenga información sobre el correo electrónico y las propiedades de archivo que puede buscar en los buzones de Exchange Online y en los sitios de SharePoint o de OneDrive para la empresa &amp; mediante la herramienta de búsqueda de contenido en el centro de seguridad y cumplimiento de Office 365.  '
-ms.openlocfilehash: 478f0f7089046cea9a1650fc090e59fc056db8a9
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.openlocfilehash: ec8f5c049fbaaa6cc17049154774faa128d2f18d
+ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30639167"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30900209"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>Consultas de palabras clave y condiciones de búsqueda para la búsqueda de contenido
 
@@ -76,7 +76,7 @@ Para obtener una lista completa de las propiedades de SharePoint que se pueden b
   
 |**Propiedad**|**Descripción de la propiedad**|**Ejemplo**|**Resultados de la búsqueda devueltos por los ejemplos**|
 |:-----|:-----|:-----|:-----|
-|Author|El campo de autor de los documentos de Office, que persiste si se copia un documento. Por ejemplo, si un usuario crea un documento y lo envía por correo electrónico a otra persona que la carga a SharePoint, el documento seguirá conservando el autor original. Asegúrese de usar el nombre para mostrar del usuario para esta propiedad.|`author:"Garth Fort"`|Todos los documentos que se han creado por Juan Casanova.|
+|Autor|El campo de autor de los documentos de Office, que persiste si se copia un documento. Por ejemplo, si un usuario crea un documento y lo envía por correo electrónico a otra persona que la carga a SharePoint, el documento seguirá conservando el autor original. Asegúrese de usar el nombre para mostrar del usuario para esta propiedad.|`author:"Garth Fort"`|Todos los documentos que se han creado por Juan Casanova.|
 |ContentType|El tipo de contenido de SharePoint de un elemento, como elemento, documento o vídeo.|`contenttype:document`|Se devolverán todos los documentos.|
 |Created|La fecha en la que se crea un elemento.|`created\>=06/01/2016`|Todos los elementos creados el 1 de junio de 2016 o después.|
 |CreatedBy|La persona que creó o cargó un elemento. Asegúrese de usar el nombre para mostrar del usuario para esta propiedad.|`createdby:"Garth Fort"`|Todos los elementos creados o cargados por Juan Casanova.|
@@ -87,7 +87,7 @@ Para obtener una lista completa de las propiedades de SharePoint que se pueden b
 |LastModifiedTime|La fecha de la última modificación de un elemento.|`lastmodifiedtime>=05/01/2016`  <br/> `lastmodifiedtime>=05/10/2016 AND lastmodifiedtime<=06/1/2016`|El primer ejemplo devuelve los elementos que se cambiaron en o después del 1 de mayo de 2016. El segundo ejemplo devuelve los elementos modificados entre el 1 de mayo de 2016 y el 1 de junio de 2016.|
 |ModifiedBy|La última persona que modificó un elemento. Asegúrese de usar el nombre para mostrar del usuario para esta propiedad.|`modifiedby:"Garth Fort"`|Todos los elementos que Juan Casanova modificó por última vez.|
 |Path|Ruta de acceso (dirección URL) de un sitio específico en un sitio de SharePoint o de OneDrive para la empresa.  <br/> Para devolver los elementos que se encuentran en las carpetas del sitio que especifique para la propiedad Path, tiene que agregar\* o a la dirección URL del sitio especificado; por ejemplo,`path: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/> <br/> **Nota:** Usar la `Path` propiedad para buscar en ubicaciones de OneDrive no devolverá archivos multimedia, como archivos. png,. TIFF o. wav, en los resultados de la búsqueda. Use una propiedad de sitio diferente en la consulta de búsqueda para buscar archivos multimedia en las carpetas de OneDrive. <br/>|`path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/"`  <br/> `path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/*" AND filename:confidential`|El primer ejemplo devuelve todos los elementos del sitio de OneDrive para la empresa especificado. En el segundo ejemplo, se devuelven los documentos del sitio especificado (y las carpetas del sitio) que contienen la palabra "Confidential" en el nombre del archivo.|
-|SharedWithUsersOWSUser|Documentos que se han compartido con el usuario especificado y que se muestran en la página comPartidos **conmigo** en el sitio de OneDrive para la empresa del usuario. Se trata de documentos que otros usuarios de la organización han compartido explícitamente con el usuario especificado. Cuando se exportan documentos que coinciden con una consulta de búsqueda que usa la propiedad SharedWithUsersOWSUser, los documentos se exportan desde la ubicación de contenido original de la persona que compartió el documento con el usuario especificado. Para obtener más información, consulte [búsqueda de contenido de sitio compartido dentro de la organización](keyword-queries-and-search-conditions.md#internal).|`sharedwithusersowsuser:garthf`  <br/> `sharedwithusersowsuser:"garthf@contoso.com"`|Ambos ejemplos devuelven todos los documentos internos que se han compartido explícitamente con Juan Fort y que aparecen en la página comPartidos **conmigo** de la cuenta de OneDrive para la empresa de Juan Fort.|
+|SharedWithUsersOWSUser|Documentos que se han compartido con el usuario especificado y que se muestran en la página comPartidos **conmigo** en el sitio de OneDrive para la empresa del usuario. Se trata de documentos que otros usuarios de la organización han compartido explícitamente con el usuario especificado. Cuando se exportan documentos que coinciden con una consulta de búsqueda que usa la propiedad SharedWithUsersOWSUser, los documentos se exportan desde la ubicación de contenido original de la persona que compartió el documento con el usuario especificado. Para obtener más información, consulte [búsqueda de contenido de sitio compartido dentro de la organización](#searching-for-site-content-shared-within-your-organization).|`sharedwithusersowsuser:garthf`  <br/> `sharedwithusersowsuser:"garthf@contoso.com"`|Ambos ejemplos devuelven todos los documentos internos que se han compartido explícitamente con Juan Fort y que aparecen en la página comPartidos **conmigo** de la cuenta de OneDrive para la empresa de Juan Fort.|
 |Site|La dirección URL de un sitio o grupo de sitios de la organización.|`site:"https://contoso-my.sharepoint.com"`  <br/> `site:"https://contoso.sharepoint.com/sites/teams"`|El primer ejemplo devuelve elementos de los sitios de OneDrive para la empresa para todos los usuarios de la organización. El segundo ejemplo devuelve los elementos de todos los sitios del equipo.|
 |Size|El tamaño de un elemento, en bytes.|`size>=1`  <br/> `size:1..10000`|El primer ejemplo devuelve elementos mayores de 1 byte. El segundo ejemplo devuelve elementos que tienen un tamaño de entre 1 y 10 000 bytes.|
 |Título|El título del documento. La propiedad title es metadatos que se especifican en los documentos de Microsoft Office. Es diferente del nombre de archivo del documento.|`title:"communication plan"`|Cualquier documento que contenga la frase "plan de comunicación" en la propiedad Título de metadatos de un documento de Office.|
@@ -181,7 +181,7 @@ Cree una condición mediante propiedades comunes al buscar en buzones y sitios d
   
 |**Condición**|**Descripción**|
 |:-----|:-----|
-|Fecha|Para correo electrónico, la fecha en que un destinatario recibió un mensaje o en que un remitente envió un mensaje. Para los documentos, la fecha en que se modificó por última vez un documento.|
+|Date|Para correo electrónico, la fecha en que un destinatario recibió un mensaje o en que un remitente envió un mensaje. Para los documentos, la fecha en que se modificó por última vez un documento.|
 |Remitente/autor|Para correo electrónico, la persona que envió un mensaje. Para los documentos, la persona mencionada en el campo del autor de documentos de Office. Puede escribir más de un nombre, separados por comas. Dos o más valores están conectados de forma lógica por el operador de **OR**.|
 |Tamaño (en bytes)|Para los correos electrónicos y documentos, el tamaño del elemento (en bytes).|
 |Asunto/título|Para correo electrónico, el texto en la línea de asunto de un mensaje. Para los documentos, el título del documento. Como se ha explicado anteriormente, la propiedad title es metadatos especificados en los documentos de Microsoft Office. Puede escribir el nombre de más de un asunto o título, separados por comas. Dos o más valores están conectados de forma lógica por el operador de **OR**.|
@@ -209,7 +209,7 @@ Cree una condición con propiedades de documento al buscar documentos en sitios 
   
 |**Condición**|**Descripción**|
 |:-----|:-----|
-|Author|El campo de autor de los documentos de Office, que persiste si se copia un documento. Por ejemplo, si un usuario crea un documento y lo envía por correo electrónico a otra persona que la carga a SharePoint, el documento seguirá conservando el autor original.|
+|Autor|El campo de autor de los documentos de Office, que persiste si se copia un documento. Por ejemplo, si un usuario crea un documento y lo envía por correo electrónico a otra persona que la carga a SharePoint, el documento seguirá conservando el autor original.|
 |Título|El título del documento. La propiedad Título son metadatos que se especifican en los documentos de Office. Es diferente del nombre de archivo del documento.|
 |Created|La fecha en la que se creó el documento.|
 |Última modificación|La fecha en la que el documento se modificó por última vez.|

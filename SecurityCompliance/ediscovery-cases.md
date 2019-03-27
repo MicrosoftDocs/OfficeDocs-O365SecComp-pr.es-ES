@@ -15,22 +15,22 @@ search.appverid:
 - MET150
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
 description: Use el centro de seguridad &amp; y cumplimiento de Office 365 para crear y administrar casos de exhibición de documentos electrónicos en su organización. Puede asignar miembros al caso, poner ubicaciones de contenido en retención, ejecutar búsquedas de contenido asociadas con el caso y exportar los resultados de la búsqueda. También puede preparar datos de casos para un análisis más avanzado en la exhibición avanzada de documentos electrónicos.
-ms.openlocfilehash: 1265aa5f4d08f5bbbff4c52a50dd2fd8eacffd21
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 52ebc7f06bf9d60450d56b8591f7cfc184b4dbf6
+ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296853"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30900199"
 ---
 # <a name="ediscovery-cases-in-the-office-365-security-amp-compliance-center"></a>casos de eDiscovery en el centro de &amp; seguridad y cumplimiento de Office 365
 
 Puede usar casos de exhibición de documentos electrónicos en el &amp; centro de seguridad y cumplimiento de Office 365 para controlar quién puede crear, acceder y administrar casos de eDiscovery en su organización. Si su organización tiene una suscripción a Office 365 E5, también puede usar casos de exhibición de documentos electrónicos para analizar los resultados de la búsqueda con Office 365 Advanced eDiscovery.
   
-Un caso de exhibición de documentos electrónicos permite agregar miembros a un caso, controlar los tipos de acciones que pueden realizar determinados miembros de caso, poner una retención en las ubicaciones de contenido relevantes para un caso legal y asociar varias búsquedas de contenido con un solo caso. También puede exportar los resultados de cualquier búsqueda de contenido que esté asociado a un caso o preparar los resultados de búsqueda para analizarlos en la exhibición avanzada de documentos electrónicos. los casos de eDiscovery son una buena forma de limitar quién tiene acceso a las búsquedas de contenido y los resultados de búsqueda para un caso legal específico en su organización.
+Un caso de exhibición de documentos electrónicos permite agregar miembros a un caso, controlar qué tipos de acciones pueden realizar determinados miembros del caso, colocar una suspensión en ubicaciones de contenido relevantes a un proceso legal y asociar varias búsquedas de contenido con un solo caso. También puede exportar los resultados de cualquier búsqueda de contenido que esté asociado a un caso o preparar los resultados de búsqueda para analizarlos en la exhibición avanzada de documentos electrónicos. Los casos de exhibición de documentos electrónicos son una buena manera de limitar quién puede tener acceso a los resultados de búsqueda y a las búsquedas de contenido de un caso legal específico de la organización.
   
 Use el siguiente flujo de trabajo para configurar y usar casos de eDiscovery en &amp; el centro de seguridad y cumplimiento y la exhibición avanzada de documentos electrónicos.
 
-[Paso 1: Asignar permisos de exhibición de documentos electrónicos a posibles miembros del caso](#step-1-assign-ediscovery-permissions-to-potential-case-members)
+[Step 1: Assign eDiscovery permissions to potential case members](#step-1-assign-ediscovery-permissions-to-potential-case-members)
 
 [Paso 2: crear un nuevo caso](#step-2-create-a-new-case)
 
@@ -58,11 +58,11 @@ El primer paso consiste en asignar los permisos adecuados relacionados con eDisc
   
 - **Revisor** : este grupo de roles tiene los permisos más restrictivos relacionados con la exhibición de documentos electrónicos. El objetivo principal de este grupo de roles es permitir a los miembros ver y obtener acceso a los datos de caso en eDiscovery avanzado de Office 365. Los miembros de este grupo solo pueden ver y abrir la lista de los casos de la página de **eDiscovery** en &amp; el centro de seguridad y cumplimiento del que son miembros. Una vez que el usuario tiene acceso a un caso en el centro de seguridad & cumplimiento, puede hacer clic en **cambiar a eDiscovery avanzado** para acceder y analizar los datos del caso en la exhibición avanzada de documentos electrónicos. No pueden crear casos, agregar miembros a un caso, crear suspensiones, crear búsquedas, obtener una vista previa de los resultados de la búsqueda, exportar resultados de la búsqueda o preparar los resultados para la exhibición avanzada de documentos electrónicos. 
     
-- **Administrador de eDiscovery** : los miembros de este grupo de roles pueden crear y administrar casos de eDiscovery. Pueden agregar y quitar miembros, poner ubicaciones de contenido en suspensión, crear y editar búsquedas de contenido asociadas a un caso, exportar los resultados de una búsqueda de contenido y preparar los resultados de la búsqueda para analizarlos en la exhibición avanzada de documentos electrónicos. Hay dos sub-grupos en este grupo de roles. La diferencia entre estos subgrupos se basa en el ámbito.
+- **Administrador de eDiscovery** : los miembros de este grupo de roles pueden crear y administrar casos de eDiscovery. Pueden agregar y quitar miembros, poner ubicaciones de contenido en suspensión, crear y editar búsquedas de contenido asociadas a un caso, exportar los resultados de una búsqueda de contenido y preparar los resultados de la búsqueda para analizarlos en la exhibición avanzada de documentos electrónicos. Existen dos subgrupos en este grupo de roles. La diferencia entre estos subgrupos se basa en el ámbito.
     
   - **Administrador de exhibición** de documentos electrónicos: puede ver y administrar los casos de exhibición de documentos electrónicos que crean o de los que son miembros. Si otro administrador de exhibición de documentos electrónicos crea un caso pero no agrega un segundo administrador de eDiscovery como miembro de ese caso, el segundo administrador de eDiscovery no podrá ver ni abrir el **** caso en la página de &amp; exhibición de documentos electrónicos en el centro de seguridad y cumplimiento. los administradores de eDiscovery también pueden acceder a sus casos en eDiscovery avanzado para realizar tareas de análisis. 
     
-  - **Administrador de exhibición** de documentos electrónicos: puede realizar todas las tareas de administración de casos que puede realizar un administrador de exhibición de documentos electrónicos. Además, un administrador de eDiscovery puede:
+  - **Administrador de exhibición** de documentos electrónicos: puede realizar todas las tareas de administración de casos que puede realizar un administrador de exhibición de documentos electrónicos. Además, un administrador de exhibición de documentos electrónicos puede:
     
     - Ver todos los casos que se enumeran en la página **Exhibición de documentos electrónicos**. 
     
@@ -95,7 +95,7 @@ Para obtener más información acerca de los permisos de eDiscovery, consulte [a
 
 ## <a name="step-2-create-a-new-case"></a>Paso 2: crear un nuevo caso
 
-El siguiente paso es crear un nuevo caso de exhibición de documentos electrónicos. Debe ser miembro del grupo de roles eDiscovery Managers para poder crear casos de eDiscovery. Como se ha explicado anteriormente, después de crear un nuevo caso &amp; en el centro de seguridad y cumplimiento, usted (y otros miembros de mayúsculas y minúsculas) podrá tener acceso al mismo caso en eDiscovery avanzado si la organización tiene una suscripción a Office 365 E5.
+El siguiente paso es crear un nuevo caso de exhibición de documentos electrónicos. Debe ser miembro del grupo de roles Administrador de exhibición de documentos electrónicos para crear casos de exhibición de documentos electrónicos. Como se ha explicado anteriormente, después de crear un nuevo caso &amp; en el centro de seguridad y cumplimiento, usted (y otros miembros de mayúsculas y minúsculas) podrá tener acceso al mismo caso en eDiscovery avanzado si la organización tiene una suscripción a Office 365 E5.
   
 1. Vaya a [https://protection.office.com](https://protection.office.com).
     
@@ -144,7 +144,7 @@ Después de crear un nuevo caso, el siguiente paso consiste en Agregar miembros 
   
 ## <a name="step-4-place-content-locations-on-hold"></a>Paso 4: poner las ubicaciones de contenido en retención
 
-Puede usar un caso de exhibición de documentos electrónicos para crear suspensiones y conservar el contenido que pueda ser relevante para el caso. Puede retener una retención en los buzones y en los sitios de OneDrive para la empresa de las personas que son custodios en el caso. También puede poner una retención en el buzón de grupo, el sitio de SharePoint y el sitio de OneDrive para la empresa para un grupo de Office 365. De forma similar, puede poner una retención en el buzón de correo y el sitio asociados a Microsoft Teams. Cuando se colocan ubicaciones de contenido en retención, el contenido se conserva hasta que se quita la retención de la ubicación del contenido o hasta que se elimina la suspensión.
+Puede usar un caso de exhibición de documentos electrónicos para crear suspensiones con el fin de conservar el contenido que pueda ser relevante para el caso. Puede retener una retención en los buzones y en los sitios de OneDrive para la empresa de las personas que son custodios en el caso. También puede poner una retención en el buzón de grupo, el sitio de SharePoint y el sitio de OneDrive para la empresa para un grupo de Office 365. De forma similar, puede poner una retención en el buzón de correo y el sitio asociados a Microsoft Teams. Cuando se colocan ubicaciones de contenido en retención, el contenido se conserva hasta que se quita la retención de la ubicación del contenido o hasta que se elimina la suspensión.
 
 > [!NOTE]
 > Después de poner una ubicación de contenido en retención, la retención tarda hasta 24 horas en surtir efecto. 
@@ -170,7 +170,7 @@ Para crear una suspensión para un caso de exhibición de documentos electrónic
   
 4. En la página **suspensión** , haga ![clic en](media/ITPro-EAC-AddIcon.gif) agregar icono **crear**.
     
-5. En la página nombre de la **retención** , asigne un nombre a la retención. El nombre de la retención debe ser único en la organización. 
+5. En la página nombre de la **retención** , asigne un nombre a la retención. El nombre de la suspensión debe ser exclusivo en la organización. 
     
     ![Asigne un nombre único a la retención.](media/7e15ea63-abd1-4f14-a29c-7ecfb9571d2c.png)
   
@@ -182,19 +182,19 @@ Para crear una suspensión para un caso de exhibición de documentos electrónic
     
     ![Elegir las ubicaciones de contenido para colocar en suspensión](media/a59e4265-9151-4dbf-913f-6a4ab8db06b4.png)
   
-   a. **Exchange email** : haga clic en **elegir usuarios, grupos o equipos** y, a continuación, haga clic en **elegir usuarios, grupos o equipos** de nuevo. para especificar los buzones que se deben poner en retención. Use el cuadro de búsqueda para buscar los buzones de usuario y los grupos de distribución (para poner una retención en los buzones de los miembros del grupo) para ponerlos en retención. También puede poner una retención en el buzón asociado para un grupo de Office 365 o un equipo de Microsoft. Active la casilla de verificación usuario, grupo, equipo, haga clic en **elegir**y, a continuación, haga clic en **listo**.
+   a. **Correo electrónico de Exchange** : haga clic en **elegir usuarios, grupos o equipos** y, a continuación, haga clic en **elegir usuarios, grupos o equipos** de nuevo. para especificar los buzones que se deben poner en retención. Use el cuadro de búsqueda para buscar los buzones de usuario y los grupos de distribución (para poner una retención en los buzones de los miembros del grupo) para ponerlos en retención. También puede poner una retención en el buzón asociado para un grupo de Office 365 o un equipo de Microsoft. Active la casilla de verificación usuario, grupo, equipo, haga clic en **elegir**y, a continuación, haga clic en **listo**.
     
     > [!NOTE]
-    > Al hacer clic en **elegir usuarios, grupos o equipos** para especificar los buzones que se deben poner en espera, el selector de buzón mostrado está vacío. Esto se debe a su diseño para mejorar el rendimiento. Para agregar personas a esta lista, escriba un nombre (un mínimo de 3 caracteres) en el cuadro de búsqueda. 
+    > Al hacer clic en **elegir usuarios, grupos o equipos** para especificar los buzones que se deben poner en espera, el selector de buzón mostrado está vacío. Esto se ha diseñado así para mejorar el rendimiento. Para agregar personas a esta lista, escriba un nombre (un mínimo de 3 caracteres) en el cuadro de búsqueda. 
   
-   b. **sitios de SharePoint** : haga clic en **elegir sitios** y, a continuación, haga clic en **elegir sitios** de nuevo para especificar que los sitios de SharePoint y OneDrive para la empresa se retienen en suspensión. Escriba la dirección URL de cada sitio que quiera poner en retención. También puede Agregar la dirección URL del sitio de SharePoint para un grupo de Office 365 o un equipo de Microsoft. Haga clic en **elegir**y, a continuación, en **listo**.
+   b. **Sitios de SharePoint** : haga clic en **elegir sitios** y, a continuación, haga clic en **elegir sitios** de nuevo para especificar que los sitios de SharePoint y OneDrive para la empresa se retienen en suspensión. Escriba la dirección URL de cada sitio que quiere suspender. También puede Agregar la dirección URL del sitio de SharePoint para un grupo de Office 365 o un equipo de Microsoft. Haga clic en **elegir**y, a continuación, en **listo**.
     
     Consulte la sección [More Information](#more-information) para obtener sugerencias sobre cómo poner en espera grupos de Office 365 y Microsoft Teams. 
     
     > [!NOTE]
     > En el caso poco probable de que se cambie el nombre principal de usuario (UPN) de una persona, también se cambiará la dirección URL de su cuenta de OneDrive para incorporar el nuevo UPN. Si esto ocurre, tendrá que modificar la retención agregando la nueva dirección URL de OneDrive del usuario y quitando la antigua. 
   
-   c. **carpetas públicas de Exchange** : mueva el control](media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) de ![alternancia del conmutador de alternancia a la posición **todas** para poner todas las carpetas públicas en la organización de Exchange online en retención. Tenga en cuenta que no puede elegir carpetas públicas específicas que poner en retención. Deje el modificador de alternancia establecido en **ninguno** si no desea mantener una retención en las carpetas públicas.
+   c. **Carpetas públicas de Exchange** : mueva el control](media/963dfcd0-1765-4306-bcce-c3008c4406b9.png) de ![alternancia de alternancia a la posición **todas** para poner todas las carpetas públicas en la organización de Exchange online en retención. Tenga en cuenta que no puede elegir carpetas públicas específicas que poner en retención. Deje el modificador de alternancia establecido en **ninguno** si no desea mantener una retención en las carpetas públicas.
     
 9. Cuando haya acabado de agregar ubicaciones de contenido a la suspensión, haga clic en **siguiente**.
     
@@ -203,9 +203,9 @@ Para crear una suspensión para un caso de exhibición de documentos electrónic
     ![Crear una suspensión basada en consulta con condiciones](media/d587b58e-d05c-4ac0-b0fe-09019e4f1063.png)
   
     
-       a. en el cuadro bajo **palabras clave**, escriba una consulta de búsqueda en el cuadro para que solo se conserve el contenido que cumpla los criterios de búsqueda. Puede especificar palabras clave, propiedades de mensaje o propiedades de documento, como nombres de archivo. También puede usar consultas más complejas que usen un operador booleano, como **and**, **or**o **Not**. Si deja vacío el cuadro palabra clave, todo el contenido ubicado en las ubicaciones de contenido especificadas se colocará en retención.
+       a. En el cuadro debajo de **palabras clave**, escriba una consulta de búsqueda en el cuadro para que solo se coloque en retención el contenido que cumpla los criterios de búsqueda. Puede especificar palabras clave, propiedades de mensaje o propiedades de documento, como nombres de archivo. También puede usar consultas más complejas que usen un operador booleano, como **and**, **or**o **Not**. Si deja vacío el cuadro palabra clave, todo el contenido ubicado en las ubicaciones de contenido especificadas se colocará en retención.
     
-    b. Haga ![clic en](media/ITPro-EAC-AddIcon.gif) agregar icono **Agregar condiciones** para agregar una o más condiciones para restringir la consulta de búsqueda para la suspensión. Cada condición agrega una cláusula a la consulta de búsqueda de KQL que se crea y se ejecuta cuando se crea la suspensión. Por ejemplo, puede especificar un intervalo de fechas para que los documentos de correo electrónico o de sitio creados en el intervalo de fechas se coloquen en suspensión. Una condición está conectada lógicamente a la consulta de palabras clave (que se especifica en el cuadro palabra clave) por el operador **and** . Esto significa que los elementos deben cumplir con la consulta de palabras clave y la condición que se va a poner en retención.
+    b. Haga ![clic en](media/ITPro-EAC-AddIcon.gif) agregar icono **Agregar condiciones** para agregar una o más condiciones para restringir la consulta de búsqueda para la retención. Cada condición agrega una cláusula a la consulta de búsqueda de KQL que se crea y se ejecuta cuando se crea la suspensión. Por ejemplo, puede especificar un intervalo de fechas para que los documentos de correo electrónico o de sitio creados en el intervalo de fechas se coloquen en suspensión. Una condición se conecta lógicamente a la consulta de palabra clave (especificada en el cuadro de palabra clave) mediante el operador **AND**. Esto significa que los elementos deben cumplir con la consulta de palabras clave y la condición que se va a poner en retención.
 
     Para obtener más información acerca de la creación de una consulta de búsqueda y el uso de condiciones, consulte [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).
     
@@ -234,7 +234,7 @@ Tenga en cuenta lo siguiente en cuanto a la retención de estadísticas:
   
 ## <a name="step-5-create-and-run-a-content-search-associated-with-a-case"></a>Paso 5: crear y ejecutar una búsqueda de contenido asociada a un caso
 
-Una vez que se crea un caso de exhibición de documentos electrónicos y se colocan en suspensión los custodios relacionados con el caso, puede crear y ejecutar una o más búsquedas de contenido asociadas con el caso. Las búsquedas de contenido asociadas a un caso no se **** enumeran en la página &amp; de búsqueda del centro de seguridad y cumplimiento. Esto significa que solo se puede tener acceso a las búsquedas de contenido asociadas a un caso por parte de los miembros que también son miembros del grupo de roles eDiscovery Manager. 
+Después de haber creado un caso de exhibición de documentos electrónicos y que cualquier administrador relacionado con el caso se haya suspendido, puede crear y ejecutar una o varias búsquedas de contenido asociadas al caso. Las búsquedas de contenido asociadas a un caso no se **** enumeran en la página &amp; de búsqueda del centro de seguridad y cumplimiento. Esto significa que solo los miembros del caso que sean también miembros del grupo de roles Administrador de exhibición de documentos electrónicos pueden tener acceso a las búsquedas de contenido asociadas al caso. 
   
 1. En el Centro de seguridad y cumplimiento, haga clic en **Búsqueda e investigación** \> **eDiscovery** para mostrar la lista de casos en su organización. 
     
@@ -260,7 +260,7 @@ Una vez que se crea un caso de exhibición de documentos electrónicos y se colo
     
     Para obtener más información acerca del uso de la lista de palabras clave, vea [Building a Search Query](content-search.md#building-a-search-query).
     
-8. En **condiciones**, agregue condiciones a una consulta de búsqueda para restringir una búsqueda y devolver un conjunto de resultados más refinado. Cada condición agrega una cláusula a la consulta de búsqueda de KQL que se crea y se ejecuta cuando se inicia la búsqueda. Una condición está conectada lógicamente a la consulta de palabras clave (que se especifica en el cuadro palabra clave) por el operador **and** . Esto significa que los elementos deben cumplir con la consulta de palabras clave y la condición que se va a incluir en los resultados. Este es el modo en que las condiciones ayudan a restringir los resultados. 
+8. En **condiciones**, agregue condiciones a una consulta de búsqueda para restringir una búsqueda y devolver un conjunto de resultados más refinado. Con cada condición, se agrega una cláusula a la consulta de búsqueda KQL que se crea y se ejecuta al iniciar la búsqueda. Una condición está conectada de forma lógica con la consulta por palabra clave (especificada en el cuadro de palabra clave) mediante el operador **AND**. Eso significa que los elementos tienen que satisfacer la consulta de palabra clave y la condición para que se incluyan en los resultados. De esta manera, las condiciones permiten restringir los resultados. 
     
     Para obtener más información sobre cómo crear una consulta de búsqueda y el uso de las condiciones, consulte [Keyword queries for Content Search](keyword-queries-and-search-conditions.md).
     
@@ -270,7 +270,7 @@ Una vez que se crea un caso de exhibición de documentos electrónicos y se colo
   
     - **Todas las ubicaciones** : Seleccione esta opción para buscar en todas las ubicaciones de contenido de la organización. Si selecciona esta opción, puede elegir buscar todos los buzones de Exchange (que incluye los buzones de todos los grupos de Office 365 y Microsoft Teams), todos los sitios de SharePoint y OneDrive para la empresa (que incluye los sitios de todos los grupos de Office 365 y Microsoft Teams) y todas las carpetas públicas.
     
-    - **Todas las ubicaciones en suspensión** : Seleccione esta opción para buscar en todas las ubicaciones de contenido que se encuentran en espera en el caso. Si el caso contiene varias suspensiones, las ubicaciones de contenido de todas las suspensiones se buscarán cuando seleccione esta opción. Además, si se colocó una ubicación de contenido en una suspensión basada en consulta, solo se buscará en los elementos que están en espera cuando ejecute la búsqueda de contenido que está creando en este paso. Por ejemplo, si un usuario se colocó en la suspensión de casos basada en consultas y conserva los elementos que se enviaron o crearon antes de una fecha específica, solo se buscarían en esos elementos usando los criterios de búsqueda de la búsqueda de contenido. Esto se logra conectando la consulta de suspensión de casos y la consulta de búsqueda de contenido por un operador **and** . Consulte la sección [más información](ediscovery-cases.md#moreinfo_1) al final de este artículo para obtener más información sobre cómo buscar contenido de casos. 
+    - **Todas las ubicaciones en suspensión** : Seleccione esta opción para buscar en todas las ubicaciones de contenido que se encuentran en espera en el caso. Si el caso contiene varias suspensiones, las ubicaciones de contenido de todas las suspensiones se buscarán cuando seleccione esta opción. Además, si se colocó una ubicación de contenido en una suspensión basada en consulta, solo se buscará en los elementos que están en espera cuando ejecute la búsqueda de contenido que está creando en este paso. Por ejemplo, si un usuario se colocó en la suspensión de casos basada en consultas y conserva los elementos que se enviaron o crearon antes de una fecha específica, solo se buscarían en esos elementos usando los criterios de búsqueda de la búsqueda de contenido. Esto se logra conectando la consulta de suspensión de casos y la consulta de búsqueda de contenido por un operador **and** . Consulte la sección [más información](#more-information) al final de este artículo para obtener más información sobre cómo buscar contenido de casos. 
     
     - **Ubicaciones específicas** : Seleccione esta opción para seleccionar los buzones y sitios en los que desea buscar. Cuando seleccione esta opción y haga clic en **modificar**, aparecerá una lista de ubicaciones. Puede elegir buscar en cualquiera o todos los usuarios, grupos, equipos o ubicaciones de sitio.
     
@@ -282,9 +282,9 @@ Una vez que se crea un caso de exhibición de documentos electrónicos y se colo
     
       Tenga en cuenta lo siguiente al agregar ubicaciones de contenido a la búsqueda:
     
-      - Al hacer clic en **elegir usuarios, grupos o equipos** para especificar los buzones en los que se va a buscar, el selector de buzones que se muestra está vacío. Esto se debe a su diseño para mejorar el rendimiento. Para agregar destinatarios a esta lista, haga clic en **elegir usuarios, grupos o equipos**, escriba un nombre (un mínimo de 3 caracteres) en el cuadro de búsqueda, active la casilla de verificación situada junto al nombre y, a continuación, haga clic en **elegir**. 
+      - Al hacer clic en **elegir usuarios, grupos o equipos** para especificar los buzones en los que se va a buscar, el selector de buzones que se muestra está vacío. Esto se ha diseñado así para mejorar el rendimiento. Para agregar destinatarios a esta lista, haga clic en **elegir usuarios, grupos o equipos**, escriba un nombre (un mínimo de 3 caracteres) en el cuadro de búsqueda, active la casilla de verificación situada junto al nombre y, a continuación, haga clic en **elegir**. 
     
-      - Puede Agregar buzones inactivos, Office 365 grupos, Microsoft Teams y grupos de distribución a la lista de buzones para buscar. No se admiten los grupos de distribución dinámicos. Si agrega grupos de Office 365 o Microsoft Teams, se busca el buzón de grupo o de equipo; no se busca en los buzones de los miembros del grupo.
+      - Puede Agregar buzones inactivos, Office 365 grupos, Microsoft Teams y grupos de distribución a la lista de buzones para buscar. No se admiten grupos de distribución dinámicos. Si agrega grupos de Office 365 o Microsoft Teams, se busca el buzón de grupo o de equipo; no se busca en los buzones de los miembros del grupo.
     
       - Para agregar sitios, haga clic en **elegir sitios**, haga clic en **elegir sitios** de nuevo y, a continuación, escriba la dirección URL de cada sitio que desee buscar. También puede Agregar la dirección URL del sitio de SharePoint para los grupos de Office 365 y Microsoft Teams. 
     
@@ -296,15 +296,15 @@ Una vez que se crea un caso de exhibición de documentos electrónicos y se colo
     
 13. Escriba un nombre único para la búsqueda y haga clic en **Guardar** para iniciar la búsqueda. 
     
-    Se inicia la búsqueda. Después de un rato, se muestra una estimación de los resultados de la búsqueda en el panel de detalles. La estimación incluye el tamaño total y el número de elementos que coinciden con los criterios de búsqueda. La estimación de la búsqueda también incluye el número de elementos sin indexar en las ubicaciones de contenido en las que se realizó la búsqueda. El número de elementos sin indexar que no cumplen los criterios de búsqueda se incluirá en las estadísticas de búsqueda que se muestran en el panel de detalles. Si un elemento sin indizar coincide con la consulta de búsqueda (porque otras propiedades de mensaje o documento cumplen los criterios de búsqueda), no se incluirá en el número estimado de elementos sin indexar. Si un elemento sin indexar se excluye por los criterios de búsqueda, tampoco se incluirá en la estimación de los elementos sin indexar.
+    Se inicia la búsqueda. Después de un rato, se muestra una estimación de los resultados de la búsqueda en el panel de detalles. La estimación incluye el tamaño total y el número de elementos que coinciden con los criterios de búsqueda. La estimación de la búsqueda también incluye el número de elementos sin indexar en las ubicaciones de contenido en las que se realizó la búsqueda. El número de elementos no indexados que no cumplen los criterios de búsqueda se incluirán en las estadísticas de búsqueda que se muestran en el panel de detalles. Si un elemento sin indizar coincide con la consulta de búsqueda (porque otras propiedades de mensaje o documento cumplen los criterios de búsqueda), no se incluirá en el número estimado de elementos sin indexar. Si un elemento sin indexar se excluye por los criterios de búsqueda, tampoco se incluirá en la estimación de los elementos sin indexar.
     
-  Una vez completada la búsqueda, puede obtener una vista previa de los resultados de la búsqueda. Si es necesario, ****![haga clic en](media/O365-MDM-Policy-RefreshIcon.gif) actualizar icono de actualización para actualizar la información en el panel de detalles. 
+  Una vez finalizada la búsqueda, puede obtener una vista previa de los resultados de la búsqueda. Si es necesario, ****![haga clic en](media/O365-MDM-Policy-RefreshIcon.gif) actualizar icono de actualización para actualizar la información en el panel de detalles. 
     
 ## <a name="step-6-export-the-results-of-a-content-search-associated-with-a-case"></a>Paso 6: exportar los resultados de una búsqueda de contenido asociada a un caso
 
 Una vez ejecutada correctamente la búsqueda, puede exportar los resultados de la búsqueda. Al exportar los resultados de la búsqueda, los elementos del buzón se descargan en archivos PST o como mensajes individuales. Al exportar contenido de sitios de SharePoint y OneDrive para la empresa, se exportan copias de documentos nativos de Office y otros documentos. También se exporta un archivo de manifiesto (en formato XML) que contiene información sobre todos los resultados de búsqueda.
   
-Puede exportar los resultados de una [exportación con los resultados de una sola búsqueda asociada a un caso](ediscovery-cases.md#singlesearch_1) o puede exportar los resultados de la [exportación de los resultados de varias búsquedas asociadas a un caso](ediscovery-cases.md#multiplesearches_1).
+Puede exportar los resultados de una [sola búsqueda asociada a un caso](#export-the-results-of-a-single-search-associated-with-a-case) o puede exportar los resultados de [varias búsquedas asociadas a un caso](#export-the-results-of-multiple-searches-associated-with-a-case).
   
 ### <a name="export-the-results-of-a-single-search-associated-with-a-case"></a>Exportar los resultados de una sola búsqueda asociada a un caso
 
@@ -320,7 +320,7 @@ Puede exportar los resultados de una [exportación con los resultados de una sol
     
     ![Página de resultados de la exportación](media/ab0bb46d-310b-4374-8644-717146df6676.png)
   
-    El flujo de trabajo para exportar los resultados de una búsqueda de contenido asociada a un caso es el mismo que exportar los resultados de búsqueda para una búsqueda en la página **búsqueda de contenido** . Para obtener instrucciones paso a paso, consulte [exportar resultados de búsqueda de contenido desde el centro de &amp; seguridad y cumplimiento de Office 365](export-search-results.md).
+    El flujo de trabajo para exportar los resultados de una búsqueda de contenido asociada a un caso es el mismo que para exportar los resultados de búsqueda de una búsqueda en la página **Búsqueda de contenido**. Para obtener instrucciones paso a paso, consulte [exportar resultados de búsqueda de contenido desde el centro de &amp; seguridad y cumplimiento de Office 365](export-search-results.md).
     
     > [!NOTE]
     > Al exportar los resultados de búsqueda, tiene la opción de habilitar la desduplicación para que solo se exporte una copia de un mensaje de correo electrónico, aunque se hayan encontrado varias instancias del mismo mensaje en los buzones en los que se realizó la búsqueda. Para obtener más información acerca de la desduplicación y cómo se identifican los elementos duplicados, vea desduplicación [en resultados de la búsqueda de exhibición](de-duplication-in-ediscovery-search-results.md)de documentos electrónicos. 
@@ -360,7 +360,7 @@ Como alternativa a la exportación de los resultados de una sola búsqueda de co
     
 6. Haga ![clic en exportar](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **resultados**de búsqueda.
 
-7. En la página **exportar resultados** , asigne un nombre único a la exportación, seleccione Opciones de resultados y elija cómo se exportará el contenido. Haga clic en **exportar**.
+7. En la página **exportar resultados** , asigne un nombre único a la exportación, seleccione Opciones de resultados y elija cómo se exportará el contenido. Haga clic en **Exportar**.
     
     El flujo de trabajo para exportar los resultados de varias búsquedas de contenido asociadas a un caso es el mismo que exportar los resultados de la búsqueda para una sola búsqueda. Para obtener instrucciones paso a paso, consulte [exportar resultados de búsqueda de contenido desde el centro de &amp; seguridad y cumplimiento de Office 365](export-search-results.md).
     
@@ -463,7 +463,7 @@ Cuando se completa el caso legal o la investigación admitidos por un caso de ex
   
 - Si el caso contiene ubicaciones de contenido en suspensión, dichas suspensiones se desactivarán. Esto puede dar lugar a que el usuario o un proceso automatizado eliminen o purguen permanentemente el contenido, como una directiva de eliminación.
     
-- Si se cierra un caso, sólo se desactivan las suspensiones asociadas a ese caso. Si hay otras suspensiones en una ubicación de contenido (como una retención por juicio. una directiva de conservación o una retención de un caso de exhibición de documentos electrónicos distinto), estas se conservarán.
+- Si se cierra un caso, sólo se desactivan las suspensiones asociadas a ese caso. Si otras suspensiones se colocan en una ubicación de contenido (como una retención por juicio. una directiva de conservación o una retención de un caso de exhibición de documentos electrónicos diferente, se conservarán las suspensiones.
     
 - El caso todavía aparece en la página exhibición de documentos electrónicos del &amp; centro de seguridad y cumplimiento. Se conservan los detalles, las suspensiones, las búsquedas y los miembros de un caso cerrado.
     
@@ -517,7 +517,7 @@ Cuando vuelva a abrir un caso, las suspensiones que estuvieran en su ubicación 
   
 ## <a name="more-information"></a>Más información
 
-- **¿Hay algún límite para casos de eDiscovery o suspensiones asociados a un caso de exhibición de** documentos electrónicos? En la siguiente tabla se enumeran los límites de casos de eDiscovery y suspensiones de casos.
+- **¿Hay algún límite para casos de eDiscovery o suspensiones asociados a un caso de exhibición de documentos electrónicos?** En la siguiente tabla se enumeran los límites de casos de eDiscovery y suspensiones de casos.
     
   |**Descripción del límite**|**Límite**|
   |:-----|:-----|
@@ -526,13 +526,13 @@ Cuando vuelva a abrir un caso, las suspensiones que estuvieran en su ubicación 
   |Número máximo de buzones en una sola suspensión de casos  <br/> |1,000  <br/> |
   |Número máximo de sitios de SharePoint y OneDrive para la empresa en una sola suspensión de mayúsculas y minúsculas  <br/> |100  <br/> |
    
-- **¿Qué ocurre con los casos creados en la página Administración de casos en EDiscovery avanzado?** Puede obtener acceso a una lista de casos de eDiscovery avanzados más antiguos si hace clic en el vínculo **** que se encuentra en la &amp; parte inferior de la página eDiscovery en el centro de seguridad y cumplimiento. Sin embargo, para realizar cualquier trabajo en un caso anterior, debe ponerse en contacto con el soporte técnico de Office 365 y solicitar que se mueva el caso a un nuevo &amp; caso de exhibición de documentos electrónicos en el centro de seguridad y cumplimiento. 
+- **¿Qué ocurre con los casos creados en la página Administración de casos en eDiscovery avanzado?** Puede obtener acceso a una lista de casos de eDiscovery avanzados más antiguos si hace clic en el vínculo **** que se encuentra en la &amp; parte inferior de la página eDiscovery en el centro de seguridad y cumplimiento. Sin embargo, para realizar cualquier trabajo en un caso anterior, debe ponerse en contacto con el soporte técnico de Office 365 y solicitar que se mueva el caso a un nuevo &amp; caso de exhibición de documentos electrónicos en el centro de seguridad y cumplimiento. 
     
-- **¿Por qué crear un administrador de exhibición** de documentos electrónicos? Como se ha explicado anteriormente, un administrador de eDiscovery es miembro del grupo de roles eDiscovery Manager que puede ver y tener acceso a todos los casos de eDiscovery de su organización. Esta capacidad de tener acceso a todos los casos de eDiscovery tiene dos propósitos importantes:
+- **¿Por qué debería crear un administrador de exhibición de documentos electrónicos? ** Tal como se explicó anteriormente, un administrador de exhibición de documentos electrónicos es miembro del Grupo de roles de administrador de exhibición de documentos electrónicos, que puede ver y tener acceso a todos los casos de exhibición de documentos electrónicos de la organización. Esta capacidad para tener acceso a todos los casos de exhibición de documentos electrónicos tiene dos fines importantes:
     
-  - Si una persona que es el único miembro de un caso de exhibición de documentos electrónicos deja a su organización, nadie (incluidos los miembros del grupo de roles de administración de la organización u otro miembro del grupo de roles de eDiscovery Manager) puede tener acceso a ese caso de eDiscovery porque no son miembros. de un caso. En esta situación, no habría ninguna forma de obtener acceso a los datos en el caso. Pero como un administrador de eDiscovery puede tener acceso a todos los casos de eDiscovery de la organización, pueden ver el &amp; caso en el centro de seguridad y cumplimiento y agregarse a sí mismos o a otro administrador de eDiscovery como miembro del caso.
+  - Si un usuario es el único miembro de un caso de exhibición de documentos electrónicos y abandona la organización, ningún usuario (ni siquiera los miembros del grupo de roles Administración de la organización ni otro miembro del grupo de roles Administrador de exhibición de documentos electrónicos) puede tener acceso a ese caso de exhibición de documentos electrónicos, ya que no es miembro del caso. En esta situación, no habría ninguna manera de tener acceso a los datos del caso. Pero como un administrador de eDiscovery puede tener acceso a todos los casos de eDiscovery de la organización, pueden ver el &amp; caso en el centro de seguridad y cumplimiento y agregarse a sí mismos o a otro administrador de eDiscovery como miembro del caso.
     
-  - Dado que un administrador de eDiscovery puede ver y tener acceso a todos los casos de eDiscovery, puede auditar y supervisar todos los casos y las búsquedas de contenido asociadas. Esto puede ayudar a evitar cualquier uso incorrecto de búsquedas de contenido o casos de exhibición de documentos electrónicos. Y, dado que los administradores de eDiscovery pueden tener acceso a información potencialmente confidencial en los resultados de una búsqueda de contenido, debe limitar el número de usuarios que son administradores de eDiscovery.
+  - Dado que un administrador de eDiscovery puede ver y tener acceso a todos los casos de eDiscovery, puede auditar y supervisar todos los casos y las búsquedas de contenido asociadas. Esto puede ayudar a evitar el uso indebido de las búsquedas de contenido o los casos de exhibición de documentos electrónicos. Además, dado que los administradores de exhibición de documentos electrónicos pueden tener acceso a información potencialmente confidencial en los resultados de una búsqueda de contenido, hay que limitar el número de administradores de exhibición de documentos electrónicos.
     
     Por último, como se explicó anteriormente, los administradores de eDiscovery &amp; en el centro de seguridad y cumplimiento se agregan automáticamente como administradores en eDiscovery avanzado. Eso significa que una persona que es un administrador de eDiscovery puede realizar tareas administrativas en eDiscovery avanzado, como configurar usuarios, crear casos y agregar datos a los casos.
     
