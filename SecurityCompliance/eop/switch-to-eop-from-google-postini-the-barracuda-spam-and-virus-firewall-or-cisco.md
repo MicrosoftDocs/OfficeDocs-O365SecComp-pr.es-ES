@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 81b75194-3b04-48da-8b81-951afbabedde
 description: El objetivo de este tema consiste en proporcionar los detalles sobre el proceso para cambiar a Protección en línea de Exchange (EOP) desde una aplicación de higiene de correo electrónico local o desde un servicio de protección basado en la nube, así como suministrar los recursos de ayuda necesarios para comenzar.
-ms.openlocfilehash: 0923bf0060891536ac11c5f9fa773f74aed1463f
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: 0c33d89be5cb4ebf7719e6742532ebfc7a2e5c20
+ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693419"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30899959"
 ---
 # <a name="switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco-ironport"></a>Cambiar a EOP desde Google Postini, Barracuda Spam y Virus Firewall o Cisco IronPort
 
@@ -25,14 +25,13 @@ Si es la primera vez que usa EOP y desea leer una introducción sobre sus caract
   
 Antes de cambiarse a EOP, es importante que piense si desea hospedar los buzones de correo protegidos por EOP en la nube, con Exchange Online, de forma local o en un escenario híbrido. (Por "híbrido" se entiende que algunos buzones de correo están hospedados de forma local y otros en Exchange Online). Los pasos de configuración necesarios para cada uno de estos escenarios de hospedaje (en la nube, en local o híbrido) pueden ser diferentes. Estas son algunas consideraciones que le pueden ayudar a elegir la implementación adecuada:
   
-- **Protección EOP con buzones de correo locales** Este escenario resulta conveniente si ya cuenta con una infraestructura de hospedaje de correo que desea aprovechar, o bien debe mantener los buzones de correo en local por los requisitos de su compañía y desea implementar la protección de correo basada en la nube de EOP. En [Cambiar a EOP independiente](#BKMK_SwitchStandalone.md) se describe este escenario con más detalle. 
+- **Protección EOP con buzones de correo locales** Este escenario resulta conveniente si ya cuenta con una infraestructura de hospedaje de correo que desea aprovechar, o bien debe mantener los buzones de correo en local por los requisitos de su compañía y desea implementar la protección de correo basada en la nube de EOP. En [Cambiar a EOP independiente](#switch-to-eop-standalone) se describe este escenario con más detalle. 
     
 - **Protección EOP con buzones de correo de Exchange Online** Este escenario es ideal si desea hospedar la protección EOP y todos los buzones de correo en la nube. Además, le ayudará a reducir la complejidad, ya que no es necesario mantener servidores de mensajería locales. Este escenario se describe en [Cambiar a Exchange Online](switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco.md#BKMK_SwitchEXO). 
     
-- **Protección EOP con buzones de correo híbridos** Puede que desee implementar buzones de correo en la nube, pero debe mantener los buzones de algunos usuarios de forma local. Elija este escenario si desea hospedar algunos buzones de correo en local y otros en Exchange Online. En [Cambiar a una solución híbrida](#BKMK_SwitchHybrid.md) se describe este escenario. 
+- **Protección EOP con buzones de correo híbridos** Puede que desee implementar buzones de correo en la nube, pero debe mantener los buzones de algunos usuarios de forma local. Elija este escenario si desea hospedar algunos buzones de correo en local y otros en Exchange Online. En [Cambiar a una solución híbrida](#switch-to-a-hybrid-solution) se describe este escenario. 
     
 ## <a name="switch-to-eop-standalone"></a>Cambiar a EOP independiente
-<a name="BKMK_SwitchStandalone"> </a>
 
 Si actualmente hospeda sus buzones de correo en local y usa una aplicación de protección local o un servicio de protección de mensajería en la nube, puede cambiar a EOP para beneficiarse de sus características de protección y disponibilidad. Para configurar EOP en un escenario independiente, es decir, para hospedar los buzones de correo de forma local y usar EOP para proteger el correo electrónico, siga los pasos detallados en [Configurar un servicio de EOP](set-up-your-eop-service.md). En este tema se describen los pasos que hay que seguir para configurar la protección EOP. Entre ellos se incluye registrarse, agregar el dominio y configurar el flujo del correo con conectores.
   

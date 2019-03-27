@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: Descripción de las directivas de supervisión en Office 365
-ms.openlocfilehash: c22abdf315b2301ae9c63b26f548eff302df8e2a
-ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
+ms.openlocfilehash: db0dedbbb41eef334165a4bde65c45a52d14299a
+ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30720280"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30900099"
 ---
 # <a name="supervision-policies-in-office-365"></a>Directivas de supervisión en Office 365
 
@@ -73,7 +73,11 @@ Para simplificar la configuración, cree grupos para las personas que tendrán s
 Con las directivas de supervisión, puede elegir supervisar los mensajes en una o varias de las plataformas de comunicación siguientes:
 
 - **Correo electrónico de Exchange:** Los buzones que se hospedan en Exchange online como parte de su suscripción a Office 365 son aptos para la supervisión de mensajes. Los correos electrónicos y datos adjuntos que coinciden con las condiciones de la supervisión están disponibles instantáneamente para la supervisión y en los informes de supervisión. Los tipos de datos adjuntos compatibles para la supervisión son los mismos que los [tipos de archivo admitidos para las inspecciones de contenido de reglas de flujo de correo de Exchange](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection).
-- **Microsoft Teams:** Se pueden supervisar las comunicaciones de chat y los datos adjuntos asociados tanto en canales públicos y privados de Microsoft Teams como en chats individuales. Chats de Microsoft teams que cumplen las condiciones de directiva de supervisión se procesan una vez cada 24 horas y, a continuación, están disponibles para la supervisión y en los informes de supervisión.
+- **Microsoft Teams:** Se pueden supervisar las comunicaciones de chat y los datos adjuntos asociados tanto en canales públicos y privados de Microsoft Teams como en chats individuales. Chats de Microsoft teams que cumplen las condiciones de directiva de supervisión se procesan una vez cada 24 horas y, a continuación, están disponibles para la supervisión y en los informes de supervisión. Use las siguientes configuraciones de administración de grupos para supervisar de forma eficaz los chats de usuarios individuales y las comunicaciones de canal en Microsoft Teams:
+
+    - **Para la supervisión de chat de Microsoft Teams:** tendrá que asignar usuarios individuales o asignar un [grupo de distribución](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) a la Directiva de supervisión. Esto es para relaciones de usuario y chat entre 1 y 1 o entre 1 y muchos.
+    - **Para las comunicaciones de canal de Teams:** tendrá que asignar cada canal de equipo de Microsoft o grupo de Office 365 que quiera supervisar y que contenga un usuario específico para la Directiva de supervisión. Si agrega el mismo usuario a otros canales de Microsoft Teams o a otros grupos de Office 365, asegúrese de agregar estos nuevos canales y grupos a la Directiva de supervisión.
+
 - **Orígenes de terceros:** Puede supervisar las comunicaciones de orígenes de terceros (como en Facebook o DropBox) si ha importado estos datos en los buzones de Office 365 de la organización. [Obtenga información sobre cómo importar datos de terceros a Office 365](https://docs.microsoft.com/office365/securitycompliance/archiving-third-party-data).
 
 ### <a name="policy-settings"></a>Configuración de directivas

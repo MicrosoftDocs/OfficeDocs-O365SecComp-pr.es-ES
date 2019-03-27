@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 ms.assetid: ce9eb942-3589-42cb-88fd-1576ecb09c5c
 description: El RGPD otorga a los ciudadanos de la UE (denominados "interesados en los datos) derechos específicos sobre sus datos personales; Estos derechos incluyen la obtención de copias del mismo, la solicitud de cambios, la restricción del procesamiento, la eliminación o la recepción del mismo en un formato electrónico. Una solicitud formal de un sujeto de datos para realizar una acción en sus datos personales se denomina solicitud de interesado o DSR. Puede usar casos de DSR en el centro de seguridad &amp; y cumplimiento de Office 365 para administrar las investigaciones de los DSR de su organización.
-ms.openlocfilehash: fe702ab9050e76b6b8f00fbc8d2670505a030756
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: ae41daba4d11645848f8b2923eb3cbbaac2e65a4
+ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296593"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30900149"
 ---
 # <a name="manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-office-365-security-amp-compliance-center"></a>Administración de solicitudes del interesado de RGPD con la herramienta de casos de DSR en &amp; el centro de seguridad y cumplimiento de Office 365
 
@@ -56,7 +56,7 @@ Mediante el uso de la herramienta de caso DSR, puede:
     
 Este es el proceso de alto nivel para usar la herramienta de caso DSR para administrar investigaciones de DSR:
   
-[Paso 1: Asignar permisos de exhibición de documentos electrónicos a posibles miembros del caso](#step-1-assign-ediscovery-permissions-to-potential-case-members)
+[Step 1: Assign eDiscovery permissions to potential case members](#step-1-assign-ediscovery-permissions-to-potential-case-members)
 
 [Paso 2: crear un caso de DSR y agregar miembros](#step-2-create-a-dsr-case-and-add-members)
 
@@ -103,9 +103,9 @@ El siguiente paso es crear un caso DSR. Al crear un caso, puede optar por inicia
   
     En este punto, puede hacer una de estas dos cosas:
     
-    a. al hacer clic en **Mostrar resultados** de la búsqueda, se inicia la búsqueda. Esta es la selección predeterminada. La búsqueda integrada que se ejecuta cuando se selecciona esta opción y los resultados que se devuelven se explican en el paso 3.
+    a. Al hacer clic en **Mostrar los resultados** de la búsqueda se inicia la búsqueda. Ésa es la selección predeterminada. La búsqueda integrada que se ejecuta cuando se selecciona esta opción y los resultados que se devuelven se explican en el paso 3.
     
-    b. al hacer clic en **Finalizar** se cierra el nuevo caso de DSR sin iniciar la búsqueda integrada. Si selecciona esta opción, se mostrará el nuevo maletín DSR en la página **solicitudes de interesados** .
+    b. Al hacer clic en **Finalizar** se cierra el nuevo maletín DSR sin iniciar la búsqueda integrada. Si selecciona esta opción, se mostrará el nuevo maletín DSR en la página **solicitudes de interesados** .
     
 6. Haga clic en **Finalizar** para que pueda ir al nuevo caso de DSR y agregarle miembros. 
     
@@ -198,9 +198,9 @@ El equipo que use para exportar datos debe cumplir con los siguientes requisitos
     
     ![Configuración de las opciones de exportación](media/25416b79-57da-46a1-ae07-e640602a8fa4.png)
   
-    a. en **Opciones de salida**, seleccione la primera opción ( **todos los elementos, excluidos los que tienen los que tienen un formato no reconocido, están cifrados o no se indizaron por otros motivos**) para exportar solo los elementos indizados. El motivo por el que no desea exportar elementos parcialmente indizados de la búsqueda integrada es porque se exportarán los elementos parcialmente indizados de otros usuarios. Para exportar solo los elementos parcialmente indizados del titular de los datos, se recomienda crear una búsqueda independiente. Para obtener más información, vea [exportar elementos indexados parcialmente](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md#exportunindexeditems) en la sección "más información sobre el uso de la herramienta de casos de DSR".
+    a. En **Opciones de salida**, seleccione la primera opción ( **todos los elementos, excluidos los que tienen los que tienen un formato no reconocido, están cifrados o no se indizaron por otros motivos**) para exportar solo los elementos indizados. El motivo por el que no desea exportar elementos parcialmente indizados de la búsqueda integrada es porque se exportarán los elementos parcialmente indizados de otros usuarios. Para exportar solo los elementos parcialmente indizados del titular de los datos, se recomienda crear una búsqueda independiente. Para obtener más información, vea [exportar elementos indexados parcialmente](#exporting-partially-indexed-items) en la sección "más información sobre el uso de la herramienta de casos de DSR".
     
-    b. en **exportar contenido de Exchange como**, seleccione la tercera opción, **un archivo pst que contiene todos los mensajes en una sola carpeta**. Debido a que algunos de los resultados pueden ser para los elementos que se originaron en el buzón de otro usuario, esta opción solo muestra el elemento en una sola carpeta sin indicar el buzón real y es la mejor opción para usar cuando se desduplican los resultados según se recomienda en el siguiente elemento. . Esta opción también permite que el interesado Revise los elementos en orden cronológico (los elementos se ordenan por fecha de envío) sin tener que navegar por la estructura de carpetas del buzón original para cada elemento.
+    b. En **exportar contenido de Exchange como**, seleccione la tercera opción, **un archivo pst que contiene todos los mensajes en una sola carpeta**. Debido a que algunos de los resultados pueden ser para los elementos que se originaron en el buzón de otro usuario, esta opción solo muestra el elemento en una sola carpeta sin indicar el buzón real y es la mejor opción para usar cuando se desduplican los resultados según se recomienda en el siguiente elemento. . Esta opción también permite que el interesado Revise los elementos en orden cronológico (los elementos se ordenan por fecha de envío) sin tener que navegar por la estructura de carpetas del buzón original para cada elemento.
     
     c. Seleccione **Habilitar opción de** desduplicación para excluir los mensajes de correo electrónico duplicados. Se recomienda esta opción porque la búsqueda integrada busca en todos los buzones de la organización. Por lo tanto, si se encuentran varias copias del mismo mensaje en los buzones en los que se realizó la búsqueda, esta opción significa que solo se exportará una copia de un mensaje. Esta opción, en conjunto, la exportación de mensajes en un archivo PST en una sola carpeta da como resultado la mejor experiencia de usuario para las solicitudes de exportación de la DSR. Tenga en cuenta que el informe de exportación Results. csv mostrará todas las ubicaciones en las que se han encontrado mensajes duplicados.
     
@@ -214,7 +214,7 @@ El equipo que use para exportar datos debe cumplir con los siguientes requisitos
     
 7. Haga clic en el trabajo de exportación que acaba de crear para mostrar la página de desplegable exportar. Esta página muestra información sobre la búsqueda, como el tamaño y el número total de elementos que se van a exportar, y el porcentaje de los elementos que se han transferido a un área de almacenamiento de Azure. Haga clic en **Actualizar** para actualizar la información del estado de carga. 
     
-8. En **Exportar clave**, haga clic en **copiar al**portapapeles. Esta clave se utilizará en el paso 11 para descargar los resultados de la búsqueda.
+8. En **Clave de exportación**, haga clic en **Copiar al Portapapeles**. Esta clave se utilizará en el paso 11 para descargar los resultados de la búsqueda.
     
 9. Haga ![clic en exportar el](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) icono resultados de la búsqueda **Descargar resultados** en la parte superior de la página de desplegable de exportación. 
     
@@ -229,13 +229,13 @@ El equipo que use para exportar datos debe cumplir con los siguientes requisitos
   
 13. Haga clic en **Iniciar** para descargar los resultados de la búsqueda en el equipo. 
     
-    La **herramienta de exportación de exhibición** de documentos electrónicos muestra información de estado sobre el proceso de exportación, incluida una estimación del número (y tamaño) de los elementos restantes que se van a descargar. Una vez finalizado el proceso de exportación, puede tener acceso a los archivos en la ubicación en la que se descargaron. Para obtener más información acerca de los informes que se incluyeron al descargar los resultados de la búsqueda de contenido, consulte la sección [más información](export-search-results.md#more-information) en "exportar resultados de &amp; búsqueda de contenido desde el centro de seguridad y cumplimiento de Office 365". 
+    La **Herramienta de exportación de exhibición de documentos electrónicos** muestra información del estado acerca del proceso de exportación, incluida una estimación del número (y tamaño) de los elementos restantes que se van a descargar. Una vez finalizado el proceso de exportación, puede tener acceso a los archivos en la ubicación en la que se descargaron. Para obtener más información acerca de los informes que se incluyeron al descargar los resultados de la búsqueda de contenido, consulte la sección [más información](export-search-results.md#more-information) en "exportar resultados de &amp; búsqueda de contenido desde el centro de seguridad y cumplimiento de Office 365". 
     
 Una vez exportados los datos, los resultados de la búsqueda y los informes de exportación se encuentran en una carpeta con el mismo nombre que el caso del DSR. Los archivos PST que contienen elementos de buzón de correo se encuentran en una subcarpeta llamada **Exchange**. Los documentos y otros elementos de los sitios se encuentran en una subcarpeta denominada **SharePoint**. 
   
 ## <a name="optional-step-5-revise-the-built-in-search-query"></a>Opcional Paso 5: revisar la consulta de búsqueda integrada
 
-Después de ejecutar la búsqueda integrada, puede revisarla para reducir el ámbito para devolver menos resultados de búsqueda. Para ello, puede agregar condiciones a la consulta. Una condición está conectada lógicamente a la consulta de palabras clave por el operador **and** . Esto significa que debe devolverse en los resultados de la búsqueda, los elementos deben cumplir la consulta de palabra clave y las condiciones que se agreguen. De este modo, las condiciones ayudan a restringir los resultados. Si agrega dos o más condiciones únicas a una consulta de búsqueda (condiciones que especifican propiedades diferentes), las condiciones se conectan lógicamente mediante el operador **and** . Esto significa que solo se devuelven los elementos que cumplen todas las condiciones (además de la consulta de palabras clave). Si agrega varios valores (separados por comas o puntos y coma) a una única condición, esos valores están conectados por el operador **or** . Esto significa que se devuelven elementos si contienen alguno de los valores especificados para la propiedad en la condición. 
+Después de ejecutar la búsqueda integrada, puede revisarla para reducir el ámbito para devolver menos resultados de búsqueda. Para ello, puede agregar condiciones a la consulta. Una condición está conectada lógicamente a la consulta de palabras clave por el operador **and** . Esto significa que debe devolverse en los resultados de la búsqueda, los elementos deben cumplir la consulta de palabra clave y las condiciones que se agreguen. De este modo, las condiciones ayudan a restringir los resultados. Si agrega dos o más condiciones únicas a una consulta de búsqueda (condiciones que especifican propiedades diferentes), las condiciones se conectan lógicamente mediante el operador **and** . Esto significa que solo se devuelven los elementos que cumplen todas las condiciones (además de la consulta de palabras clave). Si agrega varios valores (separados por comas o puntos y coma) a una única condición, esos valores están conectados por el operador **or** . Eso significa que se devuelven los elementos que contengan cualquiera de los valores especificados para la propiedad en la condición. 
   
 A continuación se muestran algunos ejemplos de las condiciones que puede Agregar a la consulta de búsqueda integrada en un caso de DSR. El nombre de la propiedad real que se usa en una consulta de búsqueda se muestra entre paréntesis.
   
@@ -263,11 +263,11 @@ Para modificar las ubicaciones de contenido que se van a buscar:
     
     ![Página de control flotante de modificar ubicaciones](media/56c033f6-6735-46ba-abb2-a263a2b79836.png)
   
-    a. la sección alternar en **seleccionar todo** en el buzón de la parte superior de la página de flotante está seleccionada, lo que indica que se busca en todos los buzones. Para restringir el ámbito de la búsqueda, haga clic en el botón de alternancia para anular la selección y, a continuación, haga clic en **elegir usuarios, grupos o equipos** y elija buzones específicos para buscar.
+    a. La opción alternar de la sección **seleccionar todo** en el buzón de la parte superior de la página de flotante está seleccionada, lo que indica que se busca en todos los buzones. Para restringir el ámbito de la búsqueda, haga clic en el botón de alternancia para anular la selección y, a continuación, haga clic en **elegir usuarios, grupos o equipos** y elija buzones específicos para buscar.
     
-    b. la opción alternar en **seleccionar todo** en la sección sitios del centro de la página flotante está seleccionada, lo que indica que se busca en todos los sitios. Para restringir la búsqueda a los sitios seleccionados, desactive la opción alternar y, a continuación, haga clic en **elegir sitios**. Tendrá que agregar cada sitio específico que quiera buscar, incluida la cuenta de OneDrive del titular de los datos.
+    b. La opción alternar de la sección **seleccionar todo** de la sección sitios en la parte central de la página flotante está seleccionada, lo que indica que se busca en todos los sitios. Para restringir la búsqueda a los sitios seleccionados, desactive la opción alternar y, a continuación, haga clic en **elegir sitios**. Tendrá que agregar cada sitio específico que quiera buscar, incluida la cuenta de OneDrive del titular de los datos.
     
-    c. se selecciona la sección alternar carpetas públicas de Exchange, lo que significa que se busca en todas las carpetas públicas de Exchange. Tenga en cuenta que solo puede buscar en todas las carpetas públicas de Exchange o en ninguna de ellas. No puede elegir una búsqueda específica.
+    c. Se selecciona la sección alternar carpetas públicas de Exchange, que significa que se busca en todas las carpetas públicas de Exchange. Tenga en cuenta que solo puede buscar en todas las carpetas públicas de Exchange o en ninguna de ellas. No puede elegir una búsqueda específica.
     
 3. Si modifica las ubicaciones de contenido en la búsqueda integrada, haga clic en **Guardar &amp; ejecución** para volver a iniciar la búsqueda. 
   
@@ -297,10 +297,10 @@ Puede crear una búsqueda de contenido independiente (y asociarla con un caso de
   
 Al exportar datos de myanalytics y el servicio de itinerancia de Office, los datos se guardan en una carpeta independiente para cada aplicación que se encuentra en la carpeta **ApplicationDataRoot** , que se encuentra en una carpeta que es el nombre de la dirección de correo del interesado. Estos datos se exportan como archivos JSON, que son archivos de texto legibles, similares a los archivos XML o TXT, que se adjuntan a los mensajes de correo electrónico. Actualmente, estas carpetas se denominan con un identificador único global (GUID) que se asigna a myanalytics y al servicio de itinerancia de Office, que se enumeran en la siguiente tabla. En versiones futuras de la herramienta de casos DSR, el GUID se reemplazará por el nombre de la aplicación real. 
   
-|**Aplicación**|**GUID/nombre de carpeta**|
+|**Application**|**GUID/nombre de carpeta**|
 |:-----|:-----|
 |MyAnalytics  <br/> |3c896ded-22c5-450F-91f6-3d1ef0848f6e  <br/> |
-|Servicio de roaming de Office  <br/> |1caee58f-EB14-4a6b-9339-1fe2ddf6692b  <br/> |
+|Servicio de itinerancia de Office  <br/> |1caee58f-EB14-4a6b-9339-1fe2ddf6692b  <br/> |
    
  **Para buscar y exportar myanalytics y datos del servicio de itinerancia de Office:**
   
@@ -336,11 +336,11 @@ Al exportar datos de myanalytics y el servicio de itinerancia de Office, los dat
     
     ![Opciones de exportación al exportar los datos de uso del servicio de movilidad de Office y myanalytics](media/470a7d1e-eeae-4b42-95aa-15cb82ce2f68.png)
   
-    a. en **Opciones de salida**, seleccione la primera opción ( **todos los elementos, excluidos los que tienen los que tienen un formato no reconocido, están cifrados o no se indizaron por otros motivos**) para exportar solo los elementos indizados.
+    a. En **Opciones de salida**, seleccione la primera opción ( **todos los elementos, excluidos los que tienen los que tienen un formato no reconocido, están cifrados o no se indizaron por otros motivos**) para exportar solo los elementos indizados.
     
-    b. en **exportar contenido de Exchange como**, seleccione la segunda opción, **un archivo pst que contiene todos los mensajes**.
+    b. En **exportar contenido de Exchange como**, seleccione la segunda opción: **un archivo pst que contiene todos los mensajes**.
     
-    c. deje la opción de exportación restante desactivada.
+    c. Deje la opción de exportación restante desactivada.
     
 4. Una vez elegida la configuración de exportación, haga clic en **exportar**.
     
@@ -350,7 +350,7 @@ Al exportar datos de myanalytics y el servicio de itinerancia de Office, los dat
     
 6. Haga clic en el trabajo de exportación que acaba de crear para mostrar la página de desplegable exportar. 
     
-7. En **Exportar clave**, haga clic en **copiar al**portapapeles. Usará esta clave en el paso 10 para descargar los resultados de la búsqueda.
+7. En **Clave de exportación**, haga clic en **Copiar al Portapapeles**. Usará esta clave en el paso 10 para descargar los resultados de la búsqueda.
     
 8. Haga ![clic en exportar el](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) icono resultados de la búsqueda **Descargar resultados** en la parte superior de la página de desplegable de exportación. 
     
@@ -365,7 +365,7 @@ Al exportar datos de myanalytics y el servicio de itinerancia de Office, los dat
   
 12. Haga clic en **Iniciar** para descargar los resultados de la búsqueda en el equipo. 
     
-    La **herramienta de exportación de exhibición** de documentos electrónicos muestra información de estado sobre el proceso de exportación, incluida una estimación del número (y tamaño) de los elementos restantes que se van a descargar. Una vez finalizado el proceso de exportación, puede abrir el archivo PST de Exchange en Outlook y, a continuación, ir a la carpeta **ApplicationDataRoot** para tener acceso a las subcarpetas de myanalytics y itineranciaing Service. 
+    La **Herramienta de exportación de exhibición de documentos electrónicos** muestra información del estado acerca del proceso de exportación, incluida una estimación del número (y tamaño) de los elementos restantes que se van a descargar. Una vez finalizado el proceso de exportación, puede abrir el archivo PST de Exchange en Outlook y, a continuación, ir a la carpeta **ApplicationDataRoot** para tener acceso a las subcarpetas de myanalytics y itineranciaing Service. 
     
     Como se ha explicado anteriormente, los archivos JSON que contienen datos de uso se adjuntan a los mensajes. Para ver un archivo JSON, haga clic en un mensaje y, a continuación, abra el archivo JSON adjunto. 
   
@@ -425,4 +425,4 @@ Este es un proceso de alto nivel para buscar elementos que el interesado podría
 
   - Buscar en todas las carpetas públicas de Exchange
     
-  - Después de ejecutar la búsqueda y de que finalice, puede exportar y descargar los resultados de la búsqueda (como se describe en el [paso 4](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md#step4)). Use la siguiente configuración para exportar elementos parcialmente indizados. 
+  - Después de ejecutar la búsqueda y de que finalice, puede exportar y descargar los resultados de la búsqueda (como se describe en el [paso 4](#step-4-export-the-data)). Use la siguiente configuración para exportar elementos parcialmente indizados. 

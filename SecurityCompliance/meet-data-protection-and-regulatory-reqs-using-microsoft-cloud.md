@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: El Administrador de cumplimiento del Portal de confianza de servicios de Microsoft proporciona herramientas para realizar un seguimiento, implementar y administrar los controles que permitan a su organización alcanzar el cumplimiento con normas del sector de seguridad y protección de datos (como RGPD, ISO 27001 y 27018, e HIPAA) en relación con los Servicios en la nube de Microsoft, como Office 365 y Microsoft Azure. El Administrador de cumplimiento ayuda a la persona que supervisa la protección de datos y la estrategia de privacidad a administrar el proceso de evaluación de riesgos y cumplimiento de su organización.
-ms.openlocfilehash: cb12299dee5392cb75d41156a834a7190b8ade1b
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: bd61920967cfeacbefc09d1347203565617af5a1
+ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296843"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30900179"
 ---
 # <a name="use-compliance-manager-to-help-meet-data-protection-and-regulatory-requirements-when-using-microsoft-cloud-services"></a>Usar el Administrador de cumplimiento para satisfacer los requisitos normativos y de protección de datos al usar los Servicios en la nube de Microsoft
 
@@ -385,7 +385,7 @@ Algunos reglamentos exigen que una organización pueda eliminar los datos de his
   
 - [Buscar un usuario](#search-for-a-user)
 
-- [Exportar un informe de historial de datos de cuenta](#export-report-of-account-data-history)
+- [Exportar un informe de historial de datos de cuenta](#export-a-report-of-account-data-history)
 
 - [Reasignar acciones](#reassign-action-items)
 
@@ -511,9 +511,9 @@ Para agregar una evaluación al Administrador de cumplimiento:
   
 1. En el panel del Administrador de cumplimiento, haga clic en ![icono de agregar](media/ITPro-EAC-AddIcon.gif) **Agregar evaluación**. 
     
-2. En la ventana **Agregar una evaluación**, puede crear un grupo al que agregar la evaluación, o bien puede agregarlo a un grupo existente (el grupo integrado se denomina “Grupo inicial”). Según la opción que seleccione, escriba el nombre del nuevo grupo, o bien seleccione un grupo existente en la lista desplegable. Para obtener más información, vea [Agrupar evaluaciones](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#grouping).
+2. En la ventana **Agregar una evaluación**, puede crear un grupo al que agregar la evaluación, o bien puede agregarlo a un grupo existente (el grupo integrado se denomina “Grupo inicial”). Según la opción que seleccione, escriba el nombre del nuevo grupo, o bien seleccione un grupo existente en la lista desplegable. Para obtener más información, vea [Agrupar evaluaciones](#grouping-assessments).
     
-    Si crea un grupo, también puede copiar información de un grupo existente en la nueva evaluación. Esto equivale a cualquier información que se agregó en los campos “Detalles de la implementación” y “Plan de pruebas y respuesta de administración” de los controles administrados por el cliente de las evaluaciones del grupo desde el que vaya a copiar a los mismos controles administrados por el cliente (o controles relacionados) de la nueva evaluación. Si agrega una nueva evaluación a un grupo existente, la información común de las evaluaciones en ese grupo se copiará en la nueva evaluación. Para obtener más información, vea [Copiar información de evaluaciones existentes](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#copying).
+    Si crea un grupo, también puede copiar información de un grupo existente en la nueva evaluación. Esto equivale a cualquier información que se agregó en los campos “Detalles de la implementación” y “Plan de pruebas y respuesta de administración” de los controles administrados por el cliente de las evaluaciones del grupo desde el que vaya a copiar a los mismos controles administrados por el cliente (o controles relacionados) de la nueva evaluación. Si agrega una nueva evaluación a un grupo existente, la información común de las evaluaciones en ese grupo se copiará en la nueva evaluación. Para obtener más información, vea [Copiar información de evaluaciones existentes](#copying-information-from-existing-assessments).
     
 3. Haga clic en **Siguiente** y siga este procedimiento:
     
@@ -553,7 +553,7 @@ De forma similar, también se sincronizará la información de los controles adm
   
 1. En esta sección, se muestra información de resumen de la evaluación, como el nombre de la agrupación de evaluaciones, el producto, el nombre de la evaluación y el número de controles de evaluación.
     
-2. En esta sección, se muestran los controles del filtro de evaluación. Para obtener una explicación más detallada de cómo usar los controles del filtro de evaluación, vea la sección [Administrar el proceso de evaluación](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#managecomplianceprocess_1). 
+2. En esta sección, se muestran los controles del filtro de evaluación. Para obtener una explicación más detallada de cómo usar los controles del filtro de evaluación, vea la sección [Administrar el proceso de evaluación](#managing-the-assessment-process). 
     
 3. En esta sección, se muestran los servicios en la nube individuales que están dentro del ámbito de la evaluación.
     
@@ -561,7 +561,7 @@ De forma similar, también se sincronizará la información de los controles adm
     
 5. Esta sección contiene controles administrados por el cliente, que también se organizan por familias de controles. Haga clic en una familia de controles para expandirla y mostrar los controles individuales.
     
-6. Muestra el número total de controles en la familia de controles y cuántos de esos controles se evaluaron. Una función clave del Administrador de cumplimiento es el seguimiento del progreso de la organización en la evaluación de los controles administrados por el cliente. Para obtener más información, vea la sección [Información sobre la puntuación de cumplimiento](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#compliancescore). 
+6. Muestra el número total de controles en la familia de controles y cuántos de esos controles se evaluaron. Una función clave del Administrador de cumplimiento es el seguimiento del progreso de la organización en la evaluación de los controles administrados por el cliente. Para obtener más información, vea la sección [Información sobre la puntuación de cumplimiento](#understanding-the-compliance-score). 
 
 ## <a name="managing-the-assessment-process"></a>Administrar el proceso de evaluación
 

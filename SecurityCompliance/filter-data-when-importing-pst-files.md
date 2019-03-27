@@ -14,16 +14,16 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 26af16df-34cd-4f4a-b893-bc1d2e74039e
 description: 'Use la nueva característica de importación inteligente en el servicio de importación de Office 365 para filtrar los elementos que realmente se importan a los buzones de correo de destino. La importación inteligente le permite decidir de forma proactiva qué datos importar y qué dejar detrás. La importación inteligente también proporciona información sobre los datos que va a importar a Office 365. '
-ms.openlocfilehash: 6091f6cca75bffbb05bcd59f70cfae0dbdcb9040
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 60177908f48c6de28578f8d8ba6329fb1bf8cb47
+ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30297073"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30900039"
 ---
 # <a name="filter-data-when-importing-pst-files-to-office-365"></a>Filtrar datos al importar archivos PST a Office 365
 
-Use la nueva característica de importación inteligente en el servicio de importación de Office 365 para filtrar los elementos de los archivos PST que realmente se importan a los buzones de correo de destino. Esto es lo que funciona:
+Use la nueva característica de importación inteligente en el servicio de importación de Office 365 para filtrar los elementos de los archivos PST que realmente se importan a los buzones de correo de destino. Aquí se muestra cómo funciona:
   
 - Después de crear y enviar un trabajo de importación de PST, los archivos PST se cargan en un área de almacenamiento de Azure en la nube de Microsoft.
     
@@ -87,28 +87,28 @@ Después de crear un trabajo de importación de PST, siga estos pasos para filtr
   
     El gráfico de esta página muestra la cantidad de datos que se van a importar. La información sobre cada tipo de mensaje que se encuentra en los archivos PST se muestra en el gráfico. Puede desplazar el cursor sobre cada barra para mostrar información específica acerca de ese tipo de mensaje. También hay una lista desplegable con valores de antigüedad diferentes basados en el análisis de los archivos PST. Cuando selecciona una antigüedad en la lista desplegable, el gráfico se actualiza para mostrar la cantidad de datos que se importarán para la antigüedad seleccionada. 
     
-    b. para configurar filtros de suma para reducir la cantidad de datos que se importan, haga clic en **más opciones de filtrado**.
+    b. Para configurar los filtros de adición para reducir la cantidad de datos que se importan, haga clic en **más opciones de filtrado**.
     
     ![Configure los filtros de la página más opciones para recortar los datos que se importan](media/3f8d68c3-3fe2-4b4e-9488-b368b98fa9fe.png)
   
     Puede configurar estos filtros:
     
-      - **Edad** : Seleccione una antigüedad para que solo se importen los elementos que sean más recientes que la edad especificada. Consulte la sección [More Information](filter-data-when-importing-pst-files.md#moreinfo) para obtener una descripción de cómo Office 365 determina los depósitos de antigüedad para el filtro de **antigüedad** . 
+      - **Edad** : Seleccione una antigüedad para que solo se importen los elementos que sean más recientes que la edad especificada. Consulte la sección [More Information](#more-information) para obtener una descripción de cómo Office 365 determina los depósitos de antigüedad para el filtro de **antigüedad** . 
     
-      - **Tipo** : esta sección muestra todos los tipos de mensajes que se encontraron en los archivos PST para el trabajo de importación. Puede desactivar una casilla junto a un tipo de mensaje que quiera excluir. Tenga en cuenta que no puede excluir el otro tipo de mensaje. Consulte la sección [More Information](filter-data-when-importing-pst-files.md#moreinfo) para obtener una lista de los elementos de buzón que se incluyen en la otra categoría. 
+      - **Tipo** : esta sección muestra todos los tipos de mensajes que se encontraron en los archivos PST para el trabajo de importación. Puede desactivar una casilla junto a un tipo de mensaje que quiera excluir. Tenga en cuenta que no puede excluir el otro tipo de mensaje. Consulte la sección [More Information](#more-information) para obtener una lista de los elementos de buzón que se incluyen en la otra categoría. 
     
       - **Usuarios** : puede excluir los mensajes enviados o recibidos por personas específicas. Para excluir a las personas que aparecen en el campo de:, a: campo o al campo CC: de los mensajes, haga clic en **excluir usuarios** junto al tipo de destinatario. Escriba la dirección de correo electrónico (dirección SMTP) de la persona ****![, haga clic](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) en Agregar nuevo icono para agregarlas a la lista de usuarios excluidos para el tipo de destinatario y, a continuación, haga clic en **Guardar** para guardar la lista de usuarios excluidos. 
     
         > [!NOTE]
         > Office 365 no muestra datos que se deriven de la configuración del filtro de **personas** . Sin embargo, si establece este filtro para excluir los mensajes enviados o recibidos por personas específicas, dichos mensajes se excluirán durante el proceso de importación real. 
   
-    c. Haga clic en **aplicar** en la página **más opciones de filtrado** , volar hacia fuera para guardar la configuración del filtro. 
+    c. Haga clic en **aplicar** en la página **más opciones de filtrado** , volar hacia fuera, para guardar la configuración del filtro. 
     
     Los datos que se encuentran en la página **importar datos a Office 365** se actualizan en función de la configuración del filtro, incluida la cantidad total de datos que se importarán según la configuración del filtro. Tenga en cuenta que también se muestra un resumen de la configuración del filtro. Puede hacer clic en **Editar** junto a un filtro para cambiar la configuración si es necesario. 
     
     ![La información de datos se actualiza en función de la configuración del filtro.](media/897e20fb-3b13-44c3-9d56-9f330750f2a3.png)
   
-    d. Haga clic en **siguiente**.
+    d. Haga clic en **Siguiente**.
     
     Se muestra una página de estado que muestra la configuración del filtro. De nuevo, puede editar cualquiera de las opciones de configuración del filtro.
     
@@ -118,7 +118,7 @@ Después de crear un trabajo de importación de PST, siga estos pasos para filtr
     
     a. Haga clic en **no, deseo importar todo** para importar todos los datos de los archivos PST a Office 365 y, a continuación, haga clic en **siguiente**.
     
-    b. en la página **importar datos a Office 365** , haga clic en **importar datos** para iniciar la importación. Tenga en cuenta que se muestra la cantidad total de datos que se van a importar. 
+    b. En la página **importar datos a Office 365** , haga clic en **importar datos** para iniciar la importación. Tenga en cuenta que se muestra la cantidad total de datos que se van a importar. 
     
 6. En la página **importar** , haga clic en](media/165fb3ad-38a8-4dd9-9e76-296aefd96334.png) **Actualizar** ![actualización. El estado del trabajo de importación se muestra en la columna **Estado** . 
     
@@ -131,16 +131,16 @@ Después de crear un trabajo de importación de PST, siga estos pasos para filtr
     
 - En la siguiente tabla se enumeran los tipos de mensajes que se incluyen en la **otra** categoría del filtro **tipo** en la página **más opciones** (vea el paso 5B del procedimiento anterior). Actualmente, no puede excluir elementos de la categoría "Other" al importar archivos PST a Office 365. 
     
-    |**IDENTIFICADOR de clase de mensaje**|**Elementos de buzón que usan esta clase de mensaje**|
+    |**Id. de clase de mensajes**|**Elementos de buzón que usan esta clase de mensaje**|
     |:-----|:-----|
-    |IPM. Radiactividad  <br/> |Entradas del diario  <br/> |
-    |IPM. Documento  <br/> |Documentos y archivos (no adjuntos a un mensaje de correo electrónico)  <br/> |
+    |IPM.Activity  <br/> |Entradas del Diario  <br/> |
+    |IPM.Document  <br/> |Documentos y archivos (no adjuntos a un mensaje de correo electrónico)  <br/> |
     |IPM. Archivo  <br/> |(igual que IPM. Documento  <br/> |
-    |IPM. Note. IMC. Notification  <br/> |Informes enviados por Internet Mail Connect, que es la puerta de enlace de Exchange Server a Internet  <br/> |
+    |IPM. Note.IMC.Notification  <br/> |Informes enviados por Internet Mail Connect, que es la puerta de enlace de Exchange Server a Internet  <br/> |
     |IPM. Note. Microsoft. fax  <br/> |Mensajes de fax  <br/> |
     |IPM. Note. rules. OOF. template. Microsoft  <br/> |Mensajes de respuesta automática de fuera de la oficina  <br/> |
-    |IPM. Note. rules. ReplyTemplate. Microsoft  <br/> |Respuestas enviadas por una regla de bandeja de entrada  <br/> |
-    |IPM. OLE. Tipo  <br/> |Excepciones para una serie periódica  <br/> |
-    |IPM. ReCall. rePort  <br/> |Informes de recuperación de mensajes  <br/> |
-    |IPM. Modo  <br/> |Mensajes de correo remotos  <br/> |
-    |IPM. Denuncia  <br/> |Informes de estado de elementos  <br/> |
+    |IPM. Note.Rules.ReplyTemplate.Microsoft  <br/> |Respuestas enviadas por una regla de bandeja de entrada  <br/> |
+    |IPM.OLE.Class  <br/> |Excepciones para una serie periódica  <br/> |
+    |IPM. Recall.Report  <br/> |Informes de recuperación de mensajes  <br/> |
+    |IPM.Remote  <br/> |Mensajes de correo remotos  <br/> |
+    |IPM. Informe  <br/> |Informes de estado de elementos  <br/> |

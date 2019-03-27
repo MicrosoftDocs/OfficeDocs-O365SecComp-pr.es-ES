@@ -14,25 +14,25 @@ search.appverid:
 - MET150
 ms.assetid: f5caf497-5e8d-4b7a-bfff-d02942f38150
 description: Si ya no necesita conservar el contenido de un buzón inactivo de Office 365, puede eliminar el buzón inactivo de forma permanente quitando la retención. Después de quitar la retención, el buzón inactivo se marca para su eliminación y se elimina de forma permanente después de su procesamiento.
-ms.openlocfilehash: 6af107face519ac18d5b072d675e76f70dc4c4a6
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 51f3181e77db2f36976f01f349f1c628f1e67bcf
+ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295743"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30899989"
 ---
 # <a name="delete-an-inactive-mailbox-in-office-365"></a>Eliminar un buzón inactivo en Office 365
 
-Un buzón inactivo se usa para conservar el correo electrónico de un antiguo empleado después de que abandone la organización. Cuando ya no necesite conservar el contenido de un buzón inactivo, puede eliminar el buzón inactivo de forma permanente quitando la retención. Además, es posible que se coloquen varias retenciones en un buzón inactivo. Por ejemplo, un buzón inactivo se puede colocar en retención por juicio y en una o varias reTenciones locales. Además, se puede aplicar una directiva de retención de Office 365 (creada &amp; en el centro de seguridad de cumplimiento de Office 365) al buzón inactivo. Debe quitar todas las suspensiones y las directivas de retención de Office 365 de un buzón inactivo para eliminarlo. Después de quitar las directivas de retención y retención, el buzón inactivo se marca para su eliminación y se elimina de forma permanente después de su procesamiento.
+Un buzón inactivo se usa para conservar el correo electrónico de un antiguo empleado después de que este se va de la organización. Cuando ya no necesita conservar el contenido de un buzón inactivo, puede quitar su retención para eliminarlo de forma permanente. Además, es posible que varias retenciones se coloquen en un buzón inactivo. Por ejemplo, un buzón inactivo puede colocarse en retención de litigios y en una o varias retenciones locales. Además, se puede aplicar una directiva de retención de Office 365 (creada &amp; en el centro de seguridad de cumplimiento de Office 365) al buzón inactivo. Debe quitar todas las suspensiones y las directivas de retención de Office 365 de un buzón inactivo para eliminarlo. Después de quitar las directivas de retención y retención, el buzón inactivo se marca para su eliminación y se elimina de forma permanente después de su procesamiento.
   
 > [!IMPORTANT]
 > Hemos pospuesto la fecha límite del 1 de julio de 2017 para crear conservaciones locales con el fin de desactivar buzones, pero más adelante este año o a principios del año que viene ya no podrá crear conservaciones locales en Exchange Online. A partir de ese momento, solo podrán usarse retenciones por juicio y directivas de retención de Office 365 para crear buzones inactivos. Aun así, se seguirán admitiendo los buzones inactivos existentes que estén en conservación local y podrá seguir administrando las conservaciones locales de buzones inactivos. Esto incluye el cambio de la duración de las conservaciones locales y la eliminación de forma permanente de buzones inactivos al quitar la conservación local. 
   
-Consulte la sección [Más información](delete-an-inactive-mailbox.md#moreinfo) para ver una descripción de lo que sucede una vez que se quitan las retenciones de un buzón inactivo. 
+Consulte la sección [More information](#more-information) para ver una descripción de lo que sucede una vez que se quitan las retenciones de un buzón inactivo. 
   
 ## <a name="before-you-begin"></a>Antes de empezar
 
-- Debe usar Exchange Online PowerShell para quitar una retención por juicio de un buzón inactivo. No puede usar el centro de administración de Exchange (EAC). Para obtener instrucciones paso a paso, consulte [conectarse a Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=396554). Puede usar Exchange Online PowerShell o el EAC para quitar una retención local de un buzón inactivo. 
+- Debe usar Exchange Online PowerShell para quitar una retención por juicio de un buzón inactivo. No puede usar el Centro de administración de Exchange (EAC). Para obtener instrucciones paso a paso, consulte [conectarse a Exchange Online PowerShell](https://go.microsoft.com/fwlink/?linkid=396554). Puede usar Exchange Online PowerShell o el EAC para quitar una retención local de un buzón inactivo. 
     
 - Puede copiar el contenido de un buzón inactivo a otro buzón antes de quitar la retención y eliminar un buzón inactivo. Para obtener más información, consulte [restaurar un buzón inactivo en Office 365](restore-an-inactive-mailbox.md).
     
@@ -40,9 +40,9 @@ Consulte la sección [Más información](delete-an-inactive-mailbox.md#moreinfo)
     
 - Para obtener más información acerca de los buzones inactivos, consulte buzones inactivos [en Office 365](inactive-mailboxes-in-office-365.md).
     
-## <a name="step-1-identify-the-holds-on-an-inactive-mailbox"></a>Paso 1: identificar las retenciones en un buzón inactivo
+## <a name="step-1-identify-the-holds-on-an-inactive-mailbox"></a>Paso 1: identificar las retenciones en un buzón inactivo
 
-Como se mencionó anteriormente, una retención por juicio, una retención local o la Directiva de retención de Office 365 se puede colocar en un buzón inactivo. El primer paso es identificar las retenciones en un buzón inactivo.
+Como se mencionó anteriormente, una retención por juicio, una retención local o la Directiva de retención de Office 365 se puede colocar en un buzón inactivo. El primer paso es identificar las retenciones de un buzón inactivo.
   
 Ejecute el siguiente comando para mostrar la información de la retención de todos los buzones inactivos en su organización.
   
@@ -67,15 +67,15 @@ InPlaceHolds          : {c0ba3ce811b6432a8751430937152491, ba6f4ba25b62490aaaa25
 ```
 
 > [!TIP]
-> Si se colocan muchas reTenciones locales en un buzón inactivo, no se mostrarán todos los GUID de conservación local. Puede ejecutar el siguiente comando para mostrar todos los GUID de conservación local:`Get-Mailbox -InactiveMailboxOnly -Identity <identity of inactive mailbox> | Select-Object -ExpandProperty InPlaceHolds`
+> Si muchas retenciones locales se colocan en un buzón inactivo, no se mostrarán todos los GUID de retenciones locales. Puede ejecutar el siguiente comando para mostrar todos los GUID de conservación local:`Get-Mailbox -InactiveMailboxOnly -Identity <identity of inactive mailbox> | Select-Object -ExpandProperty InPlaceHolds`
   
-## <a name="step-2-remove-a-hold-from-an-inactive-mailbox"></a>Paso 2: Quitar una retención de un buzón inactivo
+## <a name="step-2-remove-a-hold-from-an-inactive-mailbox"></a>Paso 2: Quitar una retención de un buzón inactivo
 
 Tras identificar el tipo de retención que está colocada en el buzón inactivo (y si hay varias retenciones), el siguiente paso es quitar las retenciones del buzón. Como se mencionó anteriormente, tiene que quitar todas las retenciones para eliminar de forma permanente un buzón inactivo. 
   
-### <a name="remove-a-litigation-hold"></a>Quitar una retención por juicio
+### <a name="remove-a-litigation-hold"></a>Quitar una retención de litigios
 
-Como se mencionó anteriormente, tiene que usar Windows PowerShell para quitar una retención por juicio de un buzón inactivo. No puede usar el EAC. Ejecute el siguiente comando para quitar una retención por juicio.
+Como se mencionó anteriormente, tiene que usar Windows PowerShell para quitar una retención de litigios de un buzón inactivo. No puede usar el EAC. Ejecute el siguiente comando para quitar una retención de litigios.
   
 ```
 Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -LitigationHoldEnabled $false
@@ -97,25 +97,25 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
     
 #### <a name="use-the-eac-to-delete-an-in-place-hold"></a>Usar el EAC para eliminar una retención local
 
-1. Si conoce el nombre de la retención local que quiere eliminar, puede ir al siguiente paso. De lo contrario, ejecute el siguiente comando para obtener el nombre de la retención local que se coloca en el buzón inactivo que quiere eliminar de forma permanente. Use el GUID de retención local que obtuvo en [Paso 1: Identificar las retenciones en un buzón inactivo](delete-an-inactive-mailbox.md#step1).
+1. Si conoce el nombre de la retención local que quiere eliminar, puede ir al siguiente paso. De lo contrario, ejecute el siguiente comando para obtener el nombre de la retención local que se coloca en el buzón inactivo que quiere eliminar de forma permanente. Use el GUID de retención local que obtuvo en [Paso 1: Identificar las retenciones en un buzón inactivo](#step-1-identify-the-holds-on-an-inactive-mailbox).
     
 ```
   Get-MailboxSearch -InPlaceHoldIdentity <In-Place Hold GUID> | FL Name
 ```
 
-2. En el EAC, vaya a **conservación de exhibición &amp; de documentos electrónicos local de** **Administración** \> de cumplimiento.
+2. In the EAC, go to **Compliance management** \> **In-Place eDiscovery &amp; Hold**.
     
 3. Seleccione la conservación local que desea eliminar y, a continuación, haga clic en **Editar** ![icono](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)editar.
     
-4. En la página **de propiedades de &amp; la retención local de exhibición** de documentos electrónicos, haga clic en **conservación local**, desactive la casilla de verificación **poner el contenido que coincida con la consulta de búsqueda en los buzones seleccionados** y, a continuación, haga clic en **Guardar**.
+4. On the **In-Place eDiscovery &amp; Hold** properties page, click **In-Place Hold**, uncheck the **Place content matching the search query in selected mailboxes on hold** box, and then click **Save**.
     
-5. En la **Página conservación de exhibición &amp; de** documentos electrónicos local, vuelva a seleccionar la conservación local y, a continuación, haga](media/87565fbb-5147-4f22-9ed7-1c18ce664392.png)clic en **eliminar**![icono de eliminación.
+5. On the **In-Place eDiscovery &amp; Hold** page, select the In-Place Hold again, and then click **Delete**![Delete icon](media/87565fbb-5147-4f22-9ed7-1c18ce664392.png).
     
 6. En la advertencia, haga clic en **Sí** para eliminar la retención local. 
     
 #### <a name="use-exchange-online-powershell-to-delete-an-in-place-hold"></a>Usar Exchange Online PowerShell para eliminar una conservación local
 
-1. Cree una variable que contenga las propiedades de la retención local que quiera eliminar. Use el GUID de retención local que obtuvo en [Paso 1: Identificar las retenciones en un buzón inactivo](delete-an-inactive-mailbox.md#step1).
+1. Cree una variable que contenga las propiedades de la retención local que quiera eliminar. Use el GUID de retención local que obtuvo en [Paso 1: Identificar las retenciones en un buzón inactivo](#step-1-identify-the-holds-on-an-inactive-mailbox).
     
 ```
   $InPlaceHold = Get-MailboxSearch -InPlaceHoldIdentity <In-Place Hold GUID>
@@ -133,19 +133,19 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
   Remove-MailboxSearch $InPlaceHold.Name
 ```
 
-#### <a name="use-the-eac-to-remove-an-inactive-mailbox-from-an-in-place-hold"></a>Usar el EAC para quitar un buzón inactivo de una retención local.
+#### <a name="use-the-eac-to-remove-an-inactive-mailbox-from-an-in-place-hold"></a>Use el EAC para quitar un buzón inactivo de una retención local.
 
-1. Si conoce el nombre de la retención local que está colocada en el buzón inactivo, puede ir al siguiente paso. De lo contrario, ejecute el siguiente comando para obtener el nombre de la retención local colocada en el buzón. Use el GUID de retención local que obtuvo en [Paso 1: Identificar las retenciones en un buzón inactivo](delete-an-inactive-mailbox.md#step1).
+1. Si conoce el nombre de la retención local que está colocada en el buzón inactivo, puede ir al siguiente paso. De lo contrario, ejecute el siguiente comando para obtener el nombre de la retención local colocada en el buzón. Use el GUID de retención local que obtuvo en [Paso 1: Identificar las retenciones en un buzón inactivo](#step-1-identify-the-holds-on-an-inactive-mailbox).
     
 ```
   Get-MailboxSearch -InPlaceHoldIdentity <In-Place Hold GUID> | FL Name
 ```
 
-2. En el EAC, vaya a **conservación de exhibición &amp; de documentos electrónicos local de** **Administración** \> de cumplimiento.
+2. In the EAC, go to **Compliance management** \> **In-Place eDiscovery &amp; Hold**.
     
 3. Seleccione la retención local que está colocada en el buzón inactivo y, a continuación **** ![, haga clic](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)en Editar icono de edición.
     
-4. En la página **de propiedades de &amp; la retención local de exhibición de** documentos electrónicos, haga clic en **orígenes**.
+4. On the **In-Place eDiscovery &amp; Hold** properties page, click **Sources**.
     
 5. En la lista de buzones de origen, haga clic en el nombre del buzón inactivo que quiere quitar y después haga clic en **Quitar**![Icono de quitar](media/adf01106-cc79-475c-8673-065371c1897b.gif).
     
@@ -155,9 +155,9 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
     
 #### <a name="use-exchange-online-powershell-to-remove-an-inactive-mailbox-from-an-in-place-hold"></a>Usar Exchange Online PowerShell para quitar un buzón inactivo de una conservación local
 
-Si la conservación local contiene un gran número de buzones de origen, es posible que el buzón inactivo no aparezca en la página de **orígenes** en el EAC. Se muestran hasta 3.000 buzones de correo en la página **orígenes** al editar una conservación local. Si un buzón inactivo no aparece en la lista de la página **orígenes** , puede usar Exchange Online PowerShell para quitarlo de la conservación local. 
+Si la retención local contiene un gran número de buzones de origen, es posible que el buzón local no aparezca en la página **Orígenes** en el EAC. Hasta 3.000 buzones se muestran en la página **Orígenes** cuando edita una retención local. Si un buzón inactivo no aparece en la lista de la página **orígenes** , puede usar Exchange Online PowerShell para quitarlo de la conservación local. 
   
-1. Cree una variable que contenga las propiedades de la retención local colocada en el buzón inactivo. Use el GUID de retención local que obtuvo en [Paso 1: Identificar las retenciones en un buzón inactivo](delete-an-inactive-mailbox.md#step1).
+1. Cree una variable que contenga las propiedades de la retención local colocada en el buzón inactivo. Use el GUID de retención local que obtuvo en [Paso 1: Identificar las retenciones en un buzón inactivo](#step-1-identify-the-holds-on-an-inactive-mailbox).
     
 ```
   $InPlaceHold = Get-MailboxSearch -InPlaceHoldIdentity <In-Place Hold GUID>
@@ -169,7 +169,7 @@ Si la conservación local contiene un gran número de buzones de origen, es posi
   $InPlaceHold.Sources
 ```
 
-   **Nota:** La ** propiedad Sources de la retención local identifica los buzones de origen por sus propiedades *legacyExchangeDN* . Como esta propiedad identifica exclusivamente buzones inactivos, el uso ** de la propiedad Sources de la conservación local ayuda a evitar que se elimine el buzón equivocado. Esto también ayuda a evitar problemas si dos buzones tienen el mismo alias o la misma dirección SMTP. 
+   **Nota:** La ** propiedad Sources de la retención local identifica los buzones de origen por sus propiedades *legacyExchangeDN* . Como esta propiedad identifica exclusivamente los buzones inactivos, el uso de la propiedad *Sources* de la retención local ayuda a impedir que se elimine el buzón equivocado. También ayuda a evitar problemas si dos buzones tienen el mismo alias o dirección SMTP. 
    
 3. Quite el buzón inactivo de la lista de buzones de origen en la variable. Asegúrese de usar la propiedad **LegacyExchangeDN** del buzón inactivo devuelto por el comando en el paso anterior. 
     
@@ -209,9 +209,9 @@ Si la conservación local contiene un gran número de buzones de origen, es posi
     
 - **¿Un buzón inactivo se elimina de forma permanente inmediatamente después de quitar la retención?** Si la fecha de eliminación temporal para un buzón inactivo supera 30 días, el buzón no se eliminará permanentemente en cuanto se quite la retención. El buzón se marcará para su eliminación permanente y se eliminará la próxima vez que se procese. 
     
-- **¿Cómo afecta el período de retención de buzones eliminados temporalmente a los buzones inactivos?** Si la fecha de eliminación temporal para un buzón inactivo es más de 30 días antes de la fecha en que se eliminó la retención, el buzón se marca para su eliminación permanente. Pero si un buzón inactivo tiene una fecha de eliminación temporal de los últimos 30 días y quita la retención, puede recuperar el buzón hasta que expire el período de retención de buzones eliminados temporalmente. Para obtener más información, consulte [Delete or restore User mailboxes in Exchange Online](https://go.microsoft.com/fwlink/?linkid=856835). Una vez que expire el período de retención de buzones eliminados temporalmente, siga los procedimientos para recuperar un buzón inactivo. Para obtener más información, consulte [recuperar un buzón inactivo en Office 365](recover-an-inactive-mailbox.md).
+- **¿Cómo afecta a los buzones inactivos el período de retención de buzones eliminados temporalmente?** Si la fecha de eliminación temporal para un buzón inactivo es más de 30 días antes de la fecha en que se ha quitado la retención, el buzón se marca para su eliminación permanente. Pero si un buzón inactivo tiene una fecha de eliminación temporal en los últimos 30 días y se quita la retención, es posible recuperar el buzón hasta que expire el período de retención de buzones eliminados temporalmente. Para obtener más información, consulte [Delete or restore User mailboxes in Exchange Online](https://go.microsoft.com/fwlink/?linkid=856835). Una vez que expire el período de retención de buzones eliminados temporalmente, debe seguir los procedimientos para recuperar un buzón inactivo. Para obtener más información, consulte [recuperar un buzón inactivo en Office 365](recover-an-inactive-mailbox.md).
     
-- **¿Cómo se muestra la información sobre un buzón inactivo después de que se quite la retención?** Una vez que se quita una retención y el buzón inactivo se revierte a un buzón eliminado temporalmente, no se devolverá mediante el parámetro *InactiveMailboxOnly* con el cmdlet **Get-Mailbox** . Pero puede mostrar información sobre el buzón con el comando **Get-Mailbox-SoftDeletedMailbox** . Por ejemplo: 
+- **¿Cómo mostrar información sobre un buzón inactivo después de quitar la retención?** Una vez que se quita una retención y el buzón inactivo se revierte a un buzón eliminado temporalmente, no se devolverá mediante el parámetro *InactiveMailboxOnly* con el cmdlet **Get-Mailbox** . Pero puede mostrar información sobre el buzón mediante el comando **Get-Mailbox -SoftDeletedMailbox**. Por ejemplo: 
     
 ```
   Get-Mailbox -SoftDeletedMailbox -Identity pilarp | FL Name,Identity,LitigationHoldEnabled,In
