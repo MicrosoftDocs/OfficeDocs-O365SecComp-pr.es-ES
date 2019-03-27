@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Aprenda a usar etiquetas de Office como parte de su plan de protección RGPD.
-ms.openlocfilehash: e31cd420fe476ace8031fc2c6e52158762814c7a
-ms.sourcegitcommit: ef27da3ea5340d6e7a2eaa1288e2e005ef8e4788
+ms.openlocfilehash: 4167ace41c5d7534b7e90130c189e3c04e5c5100
+ms.sourcegitcommit: ae7ebae8801a69a825a363443e2676379197de19
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2019
-ms.locfileid: "30789435"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30800292"
 ---
 # <a name="apply-labels-to-personal-data-in-office-365"></a>Aplicar etiquetas a datos personales en Office 365
 
@@ -29,13 +29,14 @@ ms.locfileid: "30789435"
 
 Si utiliza etiquetas para la protección de datos personales de Office 365, Microsoft recomienda que empiece con [etiquetas de retención](labels.md). Con las etiquetas de retención, puede:
 - Usar el Gobierno de datos avanzado para aplicar automáticamente etiquetas con tipos de información confidencial u otros criterios.
--  Usar etiquetas de retención con la prevención de pérdida de datos para aplicar la protección. 
+- Usar etiquetas de retención con la prevención de pérdida de datos para aplicar la protección. 
 - Usar etiquetas con eDiscovery y Búsqueda de contenido. 
-- Usar etiquetas y tipos de información confidencial con Cloud App Security para supervisar los datos personales que residen en otras aplicaciones SaaS.
 
-Actualmente se recomiendan las [etiquetas de confidencialidad](sensitivity-labels.md) para la aplicación de etiquetas a archivos locales y en otros servicios en la nube y proveedores. Estas también se recomiendan para los archivos de Office 365 que requieren el cifrado de Azure Information Protection (AIP) para la protección de datos, como archivos de secreto comercial.
+Cloud App Security actualmente no admite etiquetas de retención, pero puede usar tipos de información confidencial de Office 365 con Cloud App Security para supervisar los datos personales que residen en otras aplicaciones SaaS.
 
-En este momento, no se recomienda usar Azure Information Protection para aplicar el cifrado a archivos en Office 365 con datos que están sujetos al RGPD. Los servicios de Office 365 actualmente no pueden leer archivos cifrados AIP. Por lo tanto, el servicio no puede encontrar datos confidenciales en estos archivos.
+Actualmente se recomiendan las [etiquetas de confidencialidad](sensitivity-labels.md) para la aplicación de etiquetas a archivos locales y en otros proveedores y servicios en la nube. Estas también se recomiendan para los archivos de Office 365 que requieren el cifrado de Azure Information Protection (AIP) para la protección de datos, como archivos de secreto comercial.
+
+En este momento, no se recomienda usar Azure Information Protection para aplicar el cifrado a archivos en Office 365 con datos que están sujetos al RGPD. Los servicios de Office 365 actualmente no pueden leer archivos cifrados AIP. Por ello, el servicio no puede encontrar datos confidenciales en dichos archivos.
 
 Pueden aplicarse etiquetas de confidencialidad a correo en Exchange Online que funcionan con la prevención de pérdida de datos de Office 365. 
 
@@ -45,7 +46,7 @@ Pueden aplicarse etiquetas de confidencialidad a correo en Exchange Online que f
 En la ilustración:
 
 -   Use las etiquetas de retención para los datos personales y archivos secretos empresariales muy regulados en SharePoint Online y OneDrive para la Empresa.
-
+-   Los tipos de información confidencial de Office 365 pueden usarse en Office 365 y con Cloud App Security para supervisar datos personales que residen en otras aplicaciones SaaS.
 -   Use las etiquetas de confidencialidad para archivos secretos empresariales muy regulados, correo electrónico de Exchange Online, archivos en otros servicios SaaS, archivos en centros de datos locales y archivos de otros proveedores en la nube.
 
 
@@ -78,8 +79,8 @@ Por motivos de accesibilidad, en la tabla siguiente se incluyen los mismos ejemp
 <p>...a documentos con esta etiqueta...</p>
 <p>Datos de cliente</p></td>
 <td align="left"><p>Enviar alerta cuando los archivos con estos atributos...</p>
-<p>&lt;atributo DCP predefinido o expresión personalizada&gt;</p>
-<p>...en cualquier aplicación de SaaS autorizada que se comparte fuera de la organización</p></td>
+<p>Elija uno o varios atributos: atributo PII predefinido, el tipo de información confidencial de Office 365, la etiqueta de confidencialidad (AIP), expresión personalizada</p>
+<p>. . . en cualquier aplicación de SaaS autorizada se comparten fuera de la organización</p><p>Nota: las etiquetas de retención actualmente no se admiten en Cloud App Security.</td>
 </tr>
 <tr class="even">
 <td align="left">Tipos de información confidencial. Ejemplos: número nacional de Bélgica, número de tarjeta de crédito, número de carnet de identidad de Croacia, documento de identidad nacional de Finlandia</td>
@@ -90,7 +91,7 @@ Por motivos de accesibilidad, en la tabla siguiente se incluyen los mismos ejemp
 <td align="left"><p>Aplicar esta protección...</p>
 <p>&lt;definir la protección&gt;</p>
 <p>...a documentos que coincidan con estos tipos de información confidencial&gt;</p></td>
-<td align="left">Nota: Los atributos que estarán disponibles próximamente para Cloud App Security incluyen los tipos de información confidencial y las etiquetas unificadas de Office 365 en Office 365 y Azure Information Protection.</td>
+<td align="left"></td>
 </tr>
 </tbody>
 </table>

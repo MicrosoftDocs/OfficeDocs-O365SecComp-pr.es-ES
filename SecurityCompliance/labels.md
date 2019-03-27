@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Las etiquetas de retención de Office 365 ayudan a realizar las acciones adecuadas en el contenido adecuado. Con las etiquetas de retención, puede clasificar los datos de su organización para administrarlos mejor y aplicar reglas de retención basadas en esa clasificación. También puede usar etiquetas de retención para implementar la administración de registros en Office 365.
-ms.openlocfilehash: c7a1ea3221de193db30a821e0449194ea761ebcf
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: 174be4cbb55b72a3bc8751460ff030b38238590e
+ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455312"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30900139"
 ---
 # <a name="overview-of-retention-labels"></a>Introducción a las etiquetas de retención
 
@@ -90,7 +90,7 @@ Es importante saber que solo se puede asignar una etiqueta de retención al cont
     
 - Si hay varias reglas que asignan una etiqueta de aplicación automática y el contenido cumple las condiciones de varias reglas, se asignará la etiqueta de retención de la regla más antigua.
     
-Las etiquetas asignadas manualmente se asignan de manera explícita; las etiquetas de aplicación automática se asignan de forma implícita; una etiqueta de retención explícita tiene precedencia sobre una etiqueta implícita. Para obtener más información, vea la sección siguiente [Los principios de retención o qué tiene precedencia](labels.md#principles).
+Las etiquetas asignadas manualmente se asignan de manera explícita; las etiquetas de aplicación automática se asignan de forma implícita; una etiqueta de retención explícita tiene precedencia sobre una etiqueta implícita. Para obtener más información, vea la sección siguiente [Los principios de retención o qué tiene precedencia](#the-principles-of-retention-or-what-takes-precedence).
 
 Toda la información de esta sección se aplica solo a las etiquetas de retención. Tenga en cuenta que un elemento de contenido puede tener una etiqueta de confidencialidad aplicada, además de una etiqueta de retención.
   
@@ -291,10 +291,10 @@ Consultas de ejemplos:
 
 - Exchange
     - asunto:"Finanzas trimestrales"
-    - destinatarios:garthf<!--nolink-->@contoso.com
+    - destinatarios: jorgem<!--nolink-->@contoso.com
 - SharePoint y OneDrive para la Empresa
     - contenttype:contract
-    - sitios: https<!--nolink-->: //contoso.sharepoint.com/sites/teams/procurement y contenttype:contract
+    - sitio:https<!--nolink-->://contoso.sharepoint.com/sites/teams/procurement AND contenttype:contract
 
 ![Editor de consultas](media/ac5b8e5e-7453-4ec7-905c-160df57298d3.png)
 
