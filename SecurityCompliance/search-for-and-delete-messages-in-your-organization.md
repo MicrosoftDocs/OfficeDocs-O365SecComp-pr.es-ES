@@ -15,18 +15,18 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Use la característica de búsqueda y depuración en el &amp; centro de seguridad y cumplimiento de Office 365 para buscar y eliminar un mensaje de correo electrónico de todos los buzones de la organización.
-ms.openlocfilehash: 15d67e42e4bdc63838f7ec1701d643391fa5c552
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 4c98e73f74867b933560f163e80e74fd7bbd2bc5
+ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296863"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30935165"
 ---
 # <a name="search-for-and-delete-email-messages-in-your-office-365-organization---admin-help"></a>Buscar y eliminar mensajes de correo electrónico de su organización de Office 365-ayuda para administradores
 
 **Este artículo está destinado a los administradores. ¿Está tratando de buscar elementos en el buzón que desea eliminar? Consulte [Buscar un mensaje o elemento con búsqueda instantánea](https://support.office.com/article/69748862-5976-47b9-98e8-ed179f1b9e4d)**|
    
-Puede usar la característica de búsqueda de contenido en Office 365 para buscar y eliminar un mensaje de correo electrónico de todos los buzones de la organización. Esto puede ayudarle a encontrar y eliminar correos electrónicos potencialmente peligrosos o de alto riesgo, como:
+Puede usar la característica de búsqueda de contenido en Office 365 para buscar y eliminar un mensaje de correo electrónico de todos los buzones de la organización. Esto puede ser útil para buscar y quitar correos electrónicos potencialmente peligrosos o de alto riesgo, como:
   
 - Mensajes que contienen virus o datos adjuntos peligrosos
     
@@ -41,9 +41,9 @@ Puede usar la característica de búsqueda de contenido en Office 365 para busca
 
 - Para crear y ejecutar una búsqueda de contenido, debe ser miembro del grupo de roles de **EDiscovery Manager** o tener asignado el rol de administración de **búsqueda de cumplimiento** . Para eliminar mensajes, debe ser miembro del grupo de roles de **Administración** de la organización o tener asignado el rol de administración de **búsqueda y** depuración. Para obtener información sobre cómo agregar usuarios a un grupo de roles, consulte [proporcionar a los usuarios acceso al centro de cumplimiento de & de seguridad de Office 365](grant-access-to-the-security-and-compliance-center.md).
     
-- Debe usar el PowerShell del centro de cumplimiento de & de seguridad para eliminar los mensajes. Consulte el [paso 2](#step-2-connect-to-security-amp-compliance-center-powershell) para obtener instrucciones sobre cómo conectarse.
+- Debe usar el PowerShell del centro de cumplimiento de & de seguridad para eliminar los mensajes. Consulte el [paso 2](#step-2-connect-to-security--compliance-center-powershell) para obtener instrucciones sobre cómo conectarse.
     
-- Se puede quitar un máximo de 10 elementos por buzón de correo al mismo tiempo. Como la capacidad para buscar y quitar mensajes está pensada como una herramienta de respuesta a incidentes, este límite ayuda a garantizar que los mensajes se eliminan rápidamente de los buzones. Esta característica no está pensada para limpiar los buzones de los usuarios. Para eliminar más de 10 elementos, puede usar el comando **Search-Mailbox-DeleteContent** en Exchange Online PowerShell. Consulte [Buscar y eliminar mensajes: ayuda para administradores](search-for-and-delete-messagesadmin-help.md).
+- Se puede quitar un máximo de 10 elementos por buzón de correo al mismo tiempo. Como la función de buscar y quitar mensajes está diseñada para ser una herramienta de respuesta a incidentes, este límite ayuda a garantizar que los mensajes se quitan rápidamente de los buzones. Esta característica no está diseñada para limpiar buzones de usuarios. Para eliminar más de 10 elementos, puede usar el comando **Search-Mailbox-DeleteContent** en Exchange Online PowerShell. Consulte [Buscar y eliminar mensajes: ayuda para administradores](search-for-and-delete-messagesadmin-help.md).
     
 - El número máximo de buzones en una búsqueda de contenido que puede eliminar elementos en mediante una acción de búsqueda y purga es de 50.000. Si la búsqueda de contenido (que creó en el [paso 1](#step-1-create-a-content-search-to-find-the-message-to-delete)) tiene más de 50.000 buzones de origen, se producirá un error en la acción de purga (que haya creado en el paso 3). Consulte la sección [More Information](#more-information) para ver una sugerencia sobre cómo realizar una operación de búsqueda y depuración en más de 50.000 buzones de correo. 
     
@@ -51,7 +51,7 @@ Puede usar la característica de búsqueda de contenido en Office 365 para busca
     
 ## <a name="step-1-create-a-content-search-to-find-the-message-to-delete"></a>Paso 1: Crear una búsqueda de contenido para buscar el mensaje que quiera eliminar
 
-El primer paso consiste en crear y ejecutar una búsqueda de contenido para buscar el mensaje que desea quitar de los buzones de la organización. Puede crear la búsqueda mediante el centro de seguridad &amp; y cumplimiento o mediante la ejecución de los cmdlets **New-compliancesearch** y **Start-ComplianceSearch** . Los mensajes que coinciden con la consulta para esta búsqueda se eliminarán mediante la ejecución del comando **New-ComplianceSearchAction-Purge** en el [paso 3](#step-3-delete-the-message). Para obtener información acerca de la creación de una búsqueda de contenido y la configuración de consultas de búsqueda, vea los siguientes temas: 
+El primer paso es crear y ejecutar una búsqueda de contenido para buscar el mensaje que quiera quitar de los buzones de la organización. Puede crear la búsqueda mediante el centro de seguridad &amp; y cumplimiento o mediante la ejecución de los cmdlets **New-compliancesearch** y **Start-ComplianceSearch** . Los mensajes que coinciden con la consulta para esta búsqueda se eliminarán mediante la ejecución del comando **New-ComplianceSearchAction-Purge** en el [paso 3](#step-3-delete-the-message). Para obtener información sobre cómo crear una búsqueda de contenido y configurar consultas de búsqueda, vea los temas siguientes: 
   
 - [Búsqueda de contenido en Office 365](content-search.md)
     
@@ -122,13 +122,13 @@ Para obtener más información, vea [New-ComplianceSearchAction](https://docs.mi
 
 - **¿Cómo se obtiene el estado de la operación de búsqueda y eliminación?**
 
-    Ejecute **Get-ComplianceSearchAction** para obtener el estado de la operación de eliminación. Tenga en cuenta que el objeto que se crea al ejecutar el cmdlet **New-ComplianceSearchAction** se denomina con este formato `<name of Content Search>_Purge`:. 
+    Ejecute el cmdlet **Get-ComplianceSearchAction** para obtener el estado de la operación de eliminación. Tenga en cuenta que el objeto que se crea al ejecutar el cmdlet **New-ComplianceSearchAction** se denomina con este formato `<name of Content Search>_Purge`:. 
     
-- **¿Qué ocurre después de eliminar un mensaje?**
+- **¿Qué sucede después de eliminar un mensaje?**
 
    Un mensaje que se elimina con el `New-ComplianceSearchAction -Purge -PurgeType HardDelete` comando se mueve a la carpeta purgas y el usuario no puede obtener acceso a él. Una vez que el mensaje se ha movido a la carpeta purga, el mensaje se conserva durante el período de retención de elementos eliminados si está habilitada la recuperación de un único elemento para el buzón. (En Office 365, la recuperación de un único elemento está habilitada de forma predeterminada cuando se crea un nuevo buzón). Una vez que expire el período de retención de elementos eliminados, el mensaje se marca para su eliminación permanente y se eliminará de Office 365 la próxima vez que el Asistente para carpetas administradas procese el buzón de correo. 
 
-   Si usa el `New-ComplianceSearchAction -Purge -PurgeType SoftDelete` comando, los mensajes se mueven a la carpeta eliminaciones de la carpeta elementos recuperables del usuario. No se ha purgado inmediatamente de Office 365. El usuario puede recuperar mensajes de la carpeta elementos eliminados durante el período de retención de elementos eliminados configurado para el buzón. Una vez que expire el período de retención (o si el usuario purga el mensaje antes de que expire), el mensaje se mueve a la carpeta purgas y el usuario ya no puede obtener acceso a él. Una vez en la carpeta purga, el mensaje se conserva durante el tiempo basado en el período de retención del elemento eliminado configurado para el buzón si la recuperación de elementos individuales está habilitada para el buzón. (En Office 365, la recuperación de un único elemento está habilitada de forma predeterminada cuando se crea un nuevo buzón). Una vez que expire el período de retención de elementos eliminados, el mensaje se marca para su eliminación permanente y se eliminará de Office 365 la próxima vez que el Asistente para carpetas administradas procese el buzón de correo. 
+   Si usa el `New-ComplianceSearchAction -Purge -PurgeType SoftDelete` comando, los mensajes se mueven a la carpeta eliminaciones de la carpeta elementos recuperables del usuario. No se ha purgado inmediatamente de Office 365. El usuario dispone de un plazo para recuperar los mensajes de la carpeta Elementos eliminados, que se basa en el período de retención de elementos eliminados configurado para el buzón. Una vez finalizado este período de retención (o si el usuario purga el mensaje antes de que expire), el mensaje se mueve a la carpeta Purgas y el usuario ya no puede acceder a él. Una vez en la carpeta purga, el mensaje se conserva durante el tiempo basado en el período de retención del elemento eliminado configurado para el buzón si la recuperación de elementos individuales está habilitada para el buzón. (En Office 365, la recuperación de un único elemento está habilitada de forma predeterminada cuando se crea un nuevo buzón). Una vez que expire el período de retención de elementos eliminados, el mensaje se marca para su eliminación permanente y se eliminará de Office 365 la próxima vez que el Asistente para carpetas administradas procese el buzón de correo. 
     
 - **¿Qué ocurre si tiene que eliminar un mensaje de más de 50.000 buzones de correo?**
 
@@ -144,4 +144,4 @@ Para obtener más información, vea [New-ComplianceSearchAction](https://docs.mi
     
 - **¿Por qué el flujo de trabajo de búsqueda y eliminación se divide entre los distintos grupos de roles del centro de seguridad & cumplimiento?**
 
-    Como se ha explicado anteriormente, una persona tiene que ser miembro del grupo de roles eDiscovery Manager o tener asignada la función de administración de búsqueda de cumplimiento para buscar en buzones. Para eliminar mensajes, una persona debe ser miembro del grupo de roles de administración de la organización o tener asignado el rol de administración de búsqueda y dePuración. Esto hace posible controlar quién puede buscar buzones de correo en la organización y quién puede eliminar mensajes. 
+    Como ya se explicó antes, para poder buscar en buzones es necesario pertenecer al grupo de roles de administrador de exhibición de documentos electrónicos o tener asignado el rol de administración de búsqueda de cumplimiento. Para eliminar mensajes, es necesario pertenecer al grupo de roles de administración de la organización o tener asignado el rol de administración de búsqueda y depuración. Esto permite controlar quién pueden buscar en los buzones de la organización y quién puede eliminar mensajes. 

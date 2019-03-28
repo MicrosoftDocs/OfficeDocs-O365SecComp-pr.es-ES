@@ -10,30 +10,30 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 55f31488-288a-473a-9b9e-831a11e3711a
 description: 'Use un script de PowerShell para crear una búsqueda de exhibición de documentos electrónicos local en Exchange online en función de una búsqueda creada en &amp; el centro de seguridad y cumplimiento de Office 365. '
-ms.openlocfilehash: fff50b7dcd89790c84bb2911f560ce1b061b8f17
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 03df28094f29ced5a299aeb4f2140c3c3b0eba8c
+ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216050"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30935255"
 ---
 # <a name="use-content-search-in-your-ediscovery-workflow"></a>Usar Búsqueda de contenido en el flujo de trabajo de eDiscovery
 
-La característica de búsqueda de contenido en el centro &amp; de seguridad y cumplimiento de Office 365 permite buscar en todos los buzones de la organización. A diferencia de la exhibición de documentos electrónicos local en Exchange Online (donde puede buscar hasta 10.000 buzones), no hay límites para el número de buzones de destino en una sola búsqueda. Para los escenarios que requieren realizar búsquedas en toda la organización, puede usar la búsqueda de contenido para buscar en todos los buzones. A continuación, puede usar las características de flujo de trabajo de la exhibición de documentos electrónicos local para realizar otras tareas relacionadas con la exhibición de documentos electrónicos, como colocar buzones en retención y exportar resultados de búsqueda. Por ejemplo, supongamos que debe buscar en todos los buzones para identificar custodios específicos que responden a un caso legal. Puede usar la búsqueda de contenido en el &amp; centro de seguridad y cumplimiento para buscar en todos los buzones de la organización para identificar los que responden al caso. A continuación, puede usar esa lista de buzones de correo de custodios como buzones de origen para una búsqueda de exhibición de documentos electrónicos local en Exchange Online. La exhibición de documentos electrónicos local también permite retener los buzones de origen, copiar los resultados de la búsqueda en un buzón de correo de detección y exportar los resultados de la búsqueda.
+La característica de búsqueda de contenido en el centro &amp; de seguridad y cumplimiento de Office 365 permite buscar en todos los buzones de la organización. A diferencia de la exhibición de documentos electrónicos local en Exchange Online (donde puede buscar hasta 10.000 buzones), no hay límites para el número de buzones de destino en una sola búsqueda. En los escenarios en los que necesite realizar búsquedas en toda la organización, puede usar Búsqueda de contenido para buscar en todos los buzones. A continuación, puede usar las características de flujo de trabajo de exhibición de documentos electrónicos local para realizar otras tareas relacionadas con la exhibición de documentos electrónicos, como colocar buzones en suspensión y exportar resultados de la búsqueda. Por ejemplo, supongamos que tiene que buscar en todos los buzones para identificar administradores específicos que responden a un caso jurídico. Puede usar la búsqueda de contenido en el &amp; centro de seguridad y cumplimiento para buscar en todos los buzones de la organización para identificar los que responden al caso. A continuación, puede usar esa lista de buzones de correo de custodios como buzones de origen para una búsqueda de exhibición de documentos electrónicos local en Exchange Online. El uso de la exhibición de documentos electrónicos local también permite poner en suspensión dichos buzones de origen, copiar los resultados de la búsqueda en un buzón de correo de detección y exportar los resultados de la búsqueda.
   
-En este tema se incluye un script que puede ejecutar para crear una búsqueda de exhibición de documentos electrónicos local en Exchange Online usando la lista de buzones de origen y la consulta de búsqueda de una &amp; búsqueda creada en el centro de seguridad y cumplimiento. A continuación se muestra un resumen del proceso:
+En este tema se incluye un script que puede ejecutar para crear una búsqueda de exhibición de documentos electrónicos local en Exchange Online usando la lista de buzones de origen y la consulta de búsqueda de una &amp; búsqueda creada en el centro de seguridad y cumplimiento. A continuación encontrará una descripción general del proceso:
   
 [Paso 1: Crear una Búsqueda de contenido para todos los buzones de la organización](#step-1-create-a-content-search-to-search-all-mailboxes-in-your-organization)
 
-[Paso 2: conectarse al centro de &amp; seguridad y cumplimiento y a Exchange online en una única sesión de PowerShell en remoto](#step-2-connect-to-the-security-amp-compliance-center-and-exchange-online-in-a-single-remote-powershell-session)
+[Paso 2: conectarse al centro de \& seguridad y cumplimiento y a Exchange online en una única sesión de PowerShell en remoto](#step-2-connect-to-the-security--compliance-center-and-exchange-online-in-a-single-remote-powershell-session)
   
 [Paso 3: Ejecutar el script para crear una búsqueda de eDiscovery local a partir de la búsqueda de contenido](#step-3-run-the-script-to-create-an-in-place-ediscovery-search-from-the-content-search)
 
-[Paso 4: Iniciar la búsqueda de exhibición de documentos electrónicos local](#step-4-start-the-in-place-ediscovery-search)
+[Step 4: Start the In-Place eDiscovery search](#step-4-start-the-in-place-ediscovery-search)
 
 ## <a name="step-1-create-a-content-search-to-search-all-mailboxes-in-your-organization"></a>Paso 1: Crear una Búsqueda de contenido para todos los buzones de la organización
 
-El primer paso es usar el centro de &amp; seguridad y cumplimiento (o PowerShell del centro de cumplimiento de &) para crear una búsqueda de contenido que busque en todos los buzones de la organización. No hay ningún límite para el número de buzones de correo para una sola búsqueda de contenido. Especifique una consulta de palabras clave adecuada (o una consulta para los tipos de información confidencial) para que la búsqueda devuelva solo los buzones de origen que sean relevantes para la investigación. Si es necesario, refine la consulta de búsqueda para restringir el ámbito de los resultados de búsqueda y los buzones de origen que se devuelven.
+El primer paso es usar el centro de &amp; seguridad y cumplimiento (o PowerShell del centro de cumplimiento de &) para crear una búsqueda de contenido que busque en todos los buzones de la organización. No existe un límite para el número de buzones de una búsqueda de contenido. Especifique una consulta de palabras clave adecuada (o una consulta de los tipos de información confidencial) para que la búsqueda devuelva solo los buzones de origen relevantes para la investigación. Si es necesario, restrinja la consulta de búsqueda para limitar el ámbito de los resultados de la búsqueda y los buzones de origen devueltos.
   
 > [!NOTE]
 > Si la búsqueda de contenido de origen no devuelve ningún resultado, no se creará un eDiscovery local al ejecutar el script en el paso 3. Revise la consulta de búsqueda y, después, vuelva a ejecutar la búsqueda de contenido para mostrar los resultados de la búsqueda. 
@@ -48,11 +48,11 @@ El primer paso es usar el centro de &amp; seguridad y cumplimiento (o PowerShell
     
 4. En **¿Dónde desea buscar?**, haga clic en **Buscar en todos los buzones** y, a continuación, haga clic en **Siguiente**.
     
-5. En el cuadro que **encontrará en ¿qué desea que busquemos?**, escriba una consulta de búsqueda en el cuadro. Puede especificar palabras clave, propiedades del mensaje, como las fechas de envío y recepción, o propiedades del documento, como nombres de archivo o la fecha en que se modificó por última vez un documento. Puede usar consultas más complejas que usen un operador booleano, como AND, OR, NOT o NEAR, o también puede buscar información confidencial (por ejemplo, los números de la seguridad social) en los mensajes. Para obtener más información acerca de la creación de consultas de búsqueda, consulte [Keyword queries for Content Search](keyword-queries-and-search-conditions.md).
+5. En **¿Qué desea buscar?**, escriba una consulta de búsqueda en el cuadro. Puede especificar palabras clave, propiedades del mensaje como la fecha de envío y de recepción, o propiedades del documento como nombres de archivo o la fecha de la última modificación de un documento. Puede usar consultas más complejas que usen un operador booleano, como AND, OR, NOT o NEAR, o también puede buscar información confidencial (por ejemplo, los números de la seguridad social) en los mensajes. Para obtener más información acerca de cómo crear consultas de búsqueda, consulte [Keyword queries for Content Search](keyword-queries-and-search-conditions.md).
     
 6. Haga clic en **Búsqueda** para guardar la configuración de la búsqueda e iniciar la búsqueda. 
     
-    Después de un rato, una estimación de los resultados de la búsqueda que se muestran en el panel de detalles. La estimación incluye el tamaño total y el número de elementos de los resultados de la búsqueda. Una vez completada la búsqueda, puede obtener una vista previa de los resultados de la búsqueda. Si es necesario, ****![haga clic en](media/O365-MDM-Policy-RefreshIcon.gif) actualizar icono de actualización para actualizar la información en el panel de detalles. 
+    Después de un rato, una estimación de los resultados de la búsqueda que se muestran en el panel de detalles. La estimación incluye el tamaño total y el número de elementos de los resultados de la búsqueda. Una vez finalizada la búsqueda, puede obtener una vista previa de los resultados de la búsqueda. Si es necesario, ****![haga clic en](media/O365-MDM-Policy-RefreshIcon.gif) actualizar icono de actualización para actualizar la información en el panel de detalles. 
     
 7.  Si es necesario, refine la consulta de búsqueda para restringir el alcance de los resultados de la búsqueda y, a continuación, reinicie la búsqueda. 
     
@@ -60,7 +60,7 @@ El primer paso es usar el centro de &amp; seguridad y cumplimiento (o PowerShell
 
 También puede usar el cmdlet **New-ComplianceSearch** para buscar en todos los buzones de la organización. El primer paso consiste en [conectarse a PowerShell del centro &amp; de seguridad y cumplimiento de Office 365](https://go.microsoft.com/fwlink/p/?LinkID=627084).
   
-Este es un ejemplo del uso de PowerShell para buscar en todos los buzones de la organización. La consulta de búsqueda devuelve todos los mensajes enviados entre el 1 de enero de 2015 y el 30 de junio de 2015 y que contienen la frase "Financial Report" en la línea de asunto. El primer comando crea la búsqueda y el segundo comando ejecuta la búsqueda. 
+Este es un ejemplo del uso de PowerShell para buscar en todos los buzones de la organización. La consulta de búsqueda devuelve todos los mensajes enviados entre el 1 de enero de 2015 y el 30 de junio de 2015 y que contienen la frase "informe financiero" en la línea del asunto. El primer comando crea la búsqueda y el segundo comando la ejecuta. 
   
 ```
 New-ComplianceSearch -Name "Search All-Financial Report" -ExchangeLocation all -ContentMatchQuery 'sent>=01/01/2015 AND sent<=06/30/2015 AND subject:"financial report"'
@@ -120,13 +120,13 @@ Para ayudarle a crear una búsqueda de contenido con un máximo de 1.000 buzones
     
     El script muestra el número de buzones de origen que contienen los resultados de la búsqueda.
     
-Si hay más de 1.000 buzones de origen, intente crear dos (o más) búsquedas de contenido. Por ejemplo, busque la mitad de los buzones de la organización en una búsqueda de contenido y la otra mitad en otra búsqueda de contenido. También puede cambiar los criterios de búsqueda para reducir el número de buzones que contienen los resultados de la búsqueda. Por ejemplo, puede incluir un intervalo de fechas o refinar la consulta de palabra clave.
+Si hay más de 1.000 buzones de origen, intente crear dos (o más) búsquedas de contenido. Por ejemplo, busque en la mitad de los buzones de la organización con una búsqueda de contenido y en la otra mitad con otra búsqueda de contenido. También puede cambiar los criterios de búsqueda para reducir el número de buzones que contengan los resultados de la búsqueda. Por ejemplo, puede incluir un intervalo de fechas o refinar la consulta de palabra clave.
   
-## <a name="step-2-connect-to-the-security-amp-compliance-center-and-exchange-online-in-a-single-remote-powershell-session"></a>Paso 2: conectarse al centro de &amp; seguridad y cumplimiento y a Exchange online en una única sesión de PowerShell en remoto
+## <a name="step-2-connect-to-the-security--compliance-center-and-exchange-online-in-a-single-remote-powershell-session"></a>Paso 2: conectarse al centro de \& seguridad y cumplimiento y a Exchange online en una única sesión de PowerShell en remoto
 
 El paso siguiente es conectar Windows PowerShell al centro de seguridad &amp; y cumplimiento y a la organización de Exchange Online. Esto es necesario porque el script que ejecutó en el paso 3 requiere acceso a los cmdlets de búsqueda de contenido &amp; en el centro de seguridad y cumplimiento y los cmdlets de exhibición de documentos electrónicos locales en Exchange Online.
   
-1. Guarde el siguiente texto en un archivo de script de Windows PowerShell mediante un sufijo de nombre de archivo de. ps1. Por ejemplo, puede guardarlo en un archivo denominado `ConnectEXO-CC.ps1`.
+1. Guarde el siguiente texto en un archivo de script de Windows PowerShell mediante un sufijo de nombre de archivo de .ps1. Por ejemplo, puede guardarlo en un archivo denominado `ConnectEXO-CC.ps1`.
     
     ```
     $UserCredential = Get-Credential
@@ -143,7 +143,7 @@ El paso siguiente es conectar Windows PowerShell al centro de seguridad &amp; y 
     .\ConnectEXO-CC.ps1
     ```
 
-¿Cómo saber si funcionó? Después de ejecutar el script, los cmdlets del centro &amp; de seguridad y cumplimiento de Exchange Online se importan a la sesión local de PowerShell. Si no recibe ningún error, se ha conectado correctamente. Una prueba rápida es ejecutar un cmdlet del &amp; centro de seguridad y cumplimiento (por ejemplo, **install-UnifiedCompliancePrerequisite** ) y un cmdlet de Exchange Online, como **Get-Mailbox**. 
+¿Cómo se sabe si se ha completado correctamente? Después de ejecutar el script, los cmdlets del centro &amp; de seguridad y cumplimiento de Exchange Online se importan a la sesión local de PowerShell. Si no se muestra ningún error, la conexión se habrá establecido correctamente. Una prueba rápida es ejecutar un cmdlet del &amp; centro de seguridad y cumplimiento (por ejemplo, **install-UnifiedCompliancePrerequisite** ) y un cmdlet de Exchange Online, como **Get-Mailbox**. 
   
 ## <a name="step-3-run-the-script-to-create-an-in-place-ediscovery-search-from-the-content-search"></a>Paso 3: Ejecutar el script para crear una búsqueda de eDiscovery local a partir de la búsqueda de contenido
 
@@ -161,11 +161,11 @@ Después de crear la sesión de PowerShell dual en el paso 2, el siguiente paso 
     
   - **Buzones de origen** : todos los buzones de la búsqueda de contenido que contienen los resultados de la búsqueda. 
     
-  - **Consulta de búsqueda** : la nueva búsqueda usa la consulta de búsqueda de la búsqueda de contenido. Si la búsqueda de contenido incluye todo el contenido (donde la consulta de búsqueda está en blanco), la nueva búsqueda también tendrá una consulta de búsqueda en blanco e incluirá todo el contenido que se encuentre en los buzones de correo de origen. 
+  - **Consulta de búsqueda** : la nueva búsqueda usa la consulta de búsqueda de la búsqueda de contenido. Si en la búsqueda de contenido se incluye todo el contenido (cuando la consulta de búsqueda está en blanco), la nueva búsqueda también tendrá una consulta de búsqueda en blanco donde se incluirá todo el contenido encontrado en los buzones de origen. 
     
-  - **Estimar solo la búsqueda** : la nueva búsqueda se marca como una búsqueda de solo estimación. No copiará los resultados de la búsqueda en un buzón de correo de detección después de iniciarlo. 
+  - **Estimar solo la búsqueda** : la nueva búsqueda se marca como una búsqueda de solo estimación. No se copiarán los resultados de búsqueda a un buzón de detección una vez que se haya iniciado. 
     
-1. Guarde el siguiente texto en un archivo de script de Windows PowerShell mediante un sufijo de nombre de archivo de PS1. Por ejemplo, puede guardarlo en un archivo denominado `CreateMBSearchFromComplianceSearch.ps1`.
+1. Guarde el siguiente texto en un archivo de script de Windows PowerShell mediante un sufijo de nombre de archivo de ps1. Por ejemplo, puede guardarlo en un archivo denominado `CreateMBSearchFromComplianceSearch.ps1`.
     
   ```
   [CmdletBinding()]
@@ -248,7 +248,7 @@ Después de crear la sesión de PowerShell dual en el paso 2, el siguiente paso 
 
 El script que se ejecuta en el paso 3 crea una nueva búsqueda de exhibición de documentos electrónicos local, pero no la inicia. El siguiente paso es iniciar la búsqueda para obtener una estimación de los resultados de búsqueda.
   
-1. En el centro de administración de Exchange (EAC), vaya a **conservación de exhibición &amp; de documentos electrónicos local de** **Administración** \> de cumplimiento.
+1. In the Exchange admin center (EAC), go to **Compliance management** \> **In-Place eDiscovery &amp; Hold**.
     
 2. En la vista de lista, seleccione la búsqueda de exhibición de documentos electrónicos local que se creó en el paso 3.
     
@@ -264,15 +264,15 @@ Después de crear e iniciar la búsqueda de exhibición de documentos electróni
   
 ### <a name="create-an-in-place-hold"></a>Crear una Conservación local
 
-1. En el EAC, vaya a **conservación de exhibición &amp; de documentos electrónicos local de** **Administración** \> de cumplimiento.
+1. In the EAC, go to **Compliance management** \> **In-Place eDiscovery &amp; Hold**.
     
 2. En la vista de lista, seleccione la búsqueda de exhibición de documentos electrónicos local que creó en el paso 3 y, a continuación](media/O365_MDM_CreatePolicy_EditIcon.gif), haga clic en **Editar** ![icono de edición.
     
 3. En la página **Conservación local**, active la casilla **Pausar el contenido que coincida con la consulta de búsqueda en los buzones seleccionados** y después seleccione una de las siguientes opciones: 
     
-  - **Retener** indefinidamente: elija esta opción para poner los elementos devueltos por la búsqueda en una retención indefinida. Los elementos en espera se conservarán hasta que quite el buzón de la búsqueda o quite la búsqueda. 
+  - **Retener** indefinidamente: elija esta opción para poner los elementos devueltos por la búsqueda en una retención indefinida. Los elementos en espera se conservarán hasta que quite el buzón de correo de la búsqueda o la búsqueda. 
     
-  - **Especificar el número de días que se conservarán los elementos relacionados con la fecha de recepción** : elija esta opción para retener elementos durante un período específico. La duración se calcula a partir de la fecha en que se recibe o se crea un elemento de buzón. 
+  - **Especificar el número de días que se conservarán los elementos relacionados con la fecha de recepción** : elija esta opción para retener elementos durante un período específico. La duración se calcula desde la fecha en que un elemento de buzón se recibe o se crea. 
     
 4. Haga clic en **Guardar** para crear la conservación local y reiniciar la búsqueda. 
     
@@ -280,7 +280,7 @@ Después de crear e iniciar la búsqueda de exhibición de documentos electróni
   
 ### <a name="copy-the-search-results"></a>Copiar los resultados de la búsqueda
 
-1. En el EAC, vaya a **conservación de exhibición &amp; de documentos electrónicos local de** **Administración** \> de cumplimiento.
+1. In the EAC, go to **Compliance management** \> **In-Place eDiscovery &amp; Hold**.
     
 2. En la vista de lista, seleccione la búsqueda de exhibición de documentos electrónicos local que ha creado en el paso 3.
     
@@ -290,7 +290,7 @@ Después de crear e iniciar la búsqueda de exhibición de documentos electróni
     
     - **Incluir elementos** que no se pueden buscar: Active esta casilla para incluir elementos de buzones que no se pudieron buscar (por ejemplo, mensajes con datos adjuntos de tipos de archivo que la búsqueda de Exchange no pudo indexar). 
     
-    - **Habilitación de** la desduplicación: Seleccione esta casilla para excluir los mensajes duplicados. Solo se copiará una única instancia de un mensaje en el buzón de correo de detección. 
+    - **Habilitación de** la desduplicación: Seleccione esta casilla para excluir los mensajes duplicados. Solo una instancia del mensaje se copiará en el buzón de correo de detección. 
     
     - **Habilitar registro completo** : Seleccione esta casilla para incluir un registro completo en los resultados de la búsqueda. 
     
@@ -306,7 +306,7 @@ Después de crear e iniciar la búsqueda de exhibición de documentos electróni
   
 ### <a name="export-the-search-results"></a>Exportar los resultados de la búsqueda
 
-1. En el EAC, vaya a **conservación de exhibición &amp; de documentos electrónicos local de** **Administración** \> de cumplimiento.
+1. In the EAC, go to **Compliance management** \> **In-Place eDiscovery &amp; Hold**.
     
 2. En la vista de lista, seleccione la búsqueda de exhibición de documentos electrónicos local que se creó en el paso 3 y luego haga clic en **Exportar a un archivo PST**.
     
@@ -316,8 +316,8 @@ Después de crear e iniciar la búsqueda de exhibición de documentos electróni
     
     - Haga clic en la casilla **Habilitar desduplicación** para excluir los mensajes duplicados. Solo se incluirá una instancia de cada mensaje en el archivo PST. 
     
-    - Haga clic en la casilla **Incluir elementos no aptos para la búsqueda** si quiere incluir los elementos del buzón que no pudieron buscar (por ejemplo, los mensajes con datos adjuntos de tipos de archivo que Exchange Search no pudo indizar). Los elementos no aptos para la búsqueda se exportan a un archivo PST independiente. 
+    - Haga clic en la casilla **Incluir elementos no aptos para la búsqueda** si quiere incluir los elementos del buzón que no pudieron buscar (por ejemplo, los mensajes con datos adjuntos de tipos de archivo que la búsqueda de Exchange no pudo indexar). Los elementos no aptos para la búsqueda se exportan a un archivo PST independiente. 
     
 4. Haga clic en **Inicio** para exportar los resultados de búsqueda a un archivo PST. 
     
-    Se mostrará una ventana con información de estado sobre el proceso de exportación.
+    Se mostrará una ventana con información acerca del estado del proceso de exportación.

@@ -1,9 +1,9 @@
 ---
-title: Prepárese para la seguridad y el cumplimiento de Microsoft 365
+title: El nuevo centro de seguridad 365 de Microsoft y el centro de cumplimiento de Microsoft 365 están disponibles para el público
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 03/14/2019
+ms.date: 03/27/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -11,48 +11,50 @@ ms.collection:
 - M365-security-compliance
 localization_priority: Normal
 description: Prepárese para el nuevo centro de seguridad y cumplimiento de Microsoft 365
-ms.openlocfilehash: cdea0aabec39082ce9da0001cb148fe14454e5b7
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.openlocfilehash: e67c3f61898187d87aa638cf2dab871a7b694c18
+ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30639057"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30935205"
 ---
-# <a name="get-ready-for-the-new-microsoft-365-security-center-and-microsoft-365-compliance-center"></a>Prepararse para los nuevos Centro de seguridad de Microsoft 365 y Centro de cumplimiento de Microsoft 365
+# <a name="the-new-microsoft-365-security-center-and-microsoft-365-compliance-center-are-now-generally-available"></a>El nuevo centro de seguridad 365 de Microsoft y el centro de cumplimiento de Microsoft 365 están disponibles para el público
 
-**Nos complace anunciar el nuevo centro de seguridad de [Microsoft 365](#microsoft-365-security-center) y el [centro de cumplimiento de Microsoft 365](#microsoft-365-compliance-center), que se implementa a partir del final del 2019 de enero y hasta el 2019 de marzo**. Lea este artículo para obtener información general sobre lo que viene, [qué se debe esperar](#what-to-expect)y las [licencias y los permisos necesarios](#required-licenses-and-permissions).
+**Nos complace anunciar que el nuevo [centro de seguridad 365 de Microsoft](#microsoft-365-security-center) y el [centro de cumplimiento de Microsoft 365](#microsoft-365-compliance-center)están disponibles para el público en**general. Lea este artículo para obtener información general sobre las novedades, [qué se debe esperar](#what-to-expect)y las [licencias y los permisos necesarios](#required-licenses-and-permissions).
 
-## <a name="microsoft-365-security-center"></a>Centro de seguridad 365 de Microsoft
+## <a name="microsoft-365-security-center"></a>Centro de seguridad de Microsoft 365
 
-El nuevo centro de seguridad de Microsoft 365 incluye un panel para ayudarle a administrar y supervisar la seguridad en las identidades, los datos, los dispositivos, las aplicaciones y la infraestructura. También podrá acceder fácilmente a la nueva calificación segura de Microsoft, nuevos informes de amenazas de dispositivos, nuevos informes de amenazas de identidad y a los informes de Cloud App Security. 
+El nuevo [centro de seguridad de Microsoft 365](overview-security-center.md) incluye un panel para ayudarle a administrar y supervisar la seguridad en las identidades, los datos, los dispositivos, las aplicaciones y la infraestructura. También podrá acceder fácilmente a la nueva [calificación segura de Microsoft](microsoft-secure-score.md), nuevos informes de amenazas de dispositivos, nuevos informes de amenazas de identidad y a los informes de Cloud App Security. 
 
-![Nuevo centro de seguridad 365 de Microsoft](media/m365-security-center.png)
+[![Nuevo centro de seguridad 365 de Microsoft](media/m365-security-center.png)](overview-security-center.md)
 
-Cuando use por primera vez el centro de seguridad 365 de Microsoft, verá información en la parte superior de la pantalla para ayudarle a empezar. También verá cómo desplazarse fácilmente a las características de seguridad que le interesan en explorar.
+Cuando use por primera vez el centro de seguridad 365 de Microsoft, verá información en la parte superior de la pantalla para ayudarle a empezar. También verá cómo desplazarse fácilmente a las características de seguridad que le interesan en explorar. Para obtener más información, consulte [Overview of the Microsoft 365 Security Center](overview-security-center.md).
 
-Una vez que el centro de seguridad de Microsoft 365 está habilitado para su inquilino, podrá obtener acceso [https://security.microsoft.com](https://security.microsoft.com)a él en. 
+Podrá obtener acceso al centro de seguridad 365 de Microsoft en [https://security.microsoft.com](https://security.microsoft.com). 
 
 > [!NOTE]
 > Debe tener asignado un rol válido de Azure Active Directory para obtener acceso al centro de seguridad de Microsoft 365. Para obtener más información, vea la sección [permisos y licencias necesarios](#required-licenses-and-permissions) (en este artículo).
 
 ## <a name="microsoft-365-compliance-center"></a>Centro de cumplimiento de Microsoft 365
 
-El nuevo centro de cumplimiento de Microsoft 365 le ofrece visibilidad del administrador de cumplimiento de Microsoft, que refleja su postura general de cumplimiento y le ofrece acciones recomendadas para ayudarle a configurar las opciones para cumplir con las obligaciones de cumplimiento complejas. Podrá acceder fácilmente a las etiquetas y directivas de confidencialidad y retención, prevención de pérdida de datos (DLP), gobierno de datos, exhibición de documentos electrónicos, solicitudes de sujetos de datos (interesado), administración de casos y Cloud App Security. Además, puede obtener información útil y aprovechar la automatización inteligente para reducir los riesgos de cumplimiento y proteger su información digital. 
+El nuevo [centro de cumplimiento de microsoft 365](microsoft-365-compliance-center.md) le proporciona visibilidad del administrador de cumplimiento de Microsoft, que refleja su postura general de cumplimiento y le ofrece acciones recomendadas para ayudarle a configurar las opciones para cumplir con el cumplimiento complejo. obligaciones. 
 
-![Centro de cumplimiento de Microsoft 365](media/m365-compliance-center.png)
+Podrá acceder fácilmente a las etiquetas y directivas de confidencialidad y retención, prevención de pérdida de datos (DLP), gobierno de datos, exhibición de documentos electrónicos, solicitudes de sujetos de datos (interesado), administración de casos y Cloud App Security. Además, puede obtener información útil y aprovechar la automatización inteligente para reducir los riesgos de cumplimiento y proteger su información digital. 
 
-Cuando use por primera vez el centro de cumplimiento de Microsoft 365, verá información en la parte superior de la pantalla para ayudarle a empezar. Verá cómo desplazarse fácilmente a las características de cumplimiento que tiene más interés en explorar.
+[![Centro de cumplimiento de Microsoft 365](media/m365-compliance-center.png)](microsoft-365-compliance-center.md)
 
-Una vez que el centro de cumplimiento de Microsoft 365 esté habilitado para su inquilino, tendrá acceso [https://compliance.microsoft.com](https://compliance.microsoft.com)a él en.  
+Cuando use por primera vez el centro de cumplimiento de Microsoft 365, verá información en la parte superior de la pantalla para ayudarle a empezar. Verá cómo desplazarse fácilmente a las características de cumplimiento que tiene más interés en explorar. Para obtener más información, vea [Bienvenido a su nuevo centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center.md).
+
+Tendrá acceso al centro de cumplimiento de Microsoft 365 en [https://compliance.microsoft.com](https://compliance.microsoft.com).  
 
 > [!NOTE]
 > Debe tener asignado un rol válido de Azure Active Directory para obtener acceso al centro de cumplimiento de Microsoft 365. Para obtener más información, vea la sección [permisos y licencias necesarios](#required-licenses-and-permissions) (en este artículo).
 
 ## <a name="what-to-expect"></a>Qué esperar
 
-### <a name="coming-soon"></a>Próximamente
+### <a name="general-availability"></a>Disponibilidad general
 
-El nuevo centro de seguridad 365 de Microsoft y el nuevo centro de cumplimiento de Microsoft 365 se están implementando a partir de enero y a partir de marzo de 2019. Debe tener acceso al nuevo centro de seguridad 365 de Microsoft y al centro de cumplimiento de Microsoft 365 dentro de este período de tiempo.
+El nuevo centro de seguridad 365 de Microsoft y el nuevo centro de cumplimiento de Microsoft 365 ahora están disponibles a finales de marzo de 2019. Si aún no lo ha hecho, debe tener acceso al nuevo centro de seguridad de Microsoft 365 y al centro de cumplimiento de Microsoft 365 muy pronto.
 
 ### <a name="easy-access"></a>Acceso sencillo
 
@@ -78,23 +80,20 @@ Para obtener el nuevo centro de seguridad 365 de Microsoft y el centro de cumpli
 
 ### <a name="roles-and-permissions"></a>Roles y permisos
 
-Los usuarios deben tener asignado el rol de administrador global, administrador de cumplimiento, administrador de seguridad o lector de seguridad en Azure Active Directory para tener acceso al nuevo centro de seguridad de Microsoft 365 o al centro de cumplimiento de Microsoft 365.
+Los usuarios deben tener asignados el administrador global, el administrador de cumplimiento, el administrador de datos de cumplimiento, el administrador de seguridad, el operador de seguridad o el rol de lector de seguridad en Azure Active Directory para tener acceso al nuevo centro de seguridad de Microsoft 365 o Centro de cumplimiento de Microsoft 365.
 
 - Los administradores globales pueden tener acceso al centro de seguridad y al centro de cumplimiento
 
-- Los administradores de cumplimiento pueden obtener acceso al centro de cumplimiento
+- Los administradores de cumplimiento y los administradores de datos de cumplimiento pueden obtener acceso al centro de cumplimiento
 
-- Los administradores de seguridad o los lectores de seguridad pueden obtener acceso al centro de seguridad
-
-> [!NOTE]
-> Los roles adicionales, incluidos el administrador de datos de cumplimiento y operador de seguridad, estarán disponibles próximamente.
+- Los administradores de seguridad, los operadores de seguridad y los lectores de seguridad pueden obtener acceso al centro de seguridad
 
 En la tabla siguiente se resume quién puede tener acceso a diversos portales en Azure, Office 365 y Windows:
 
-|Portal  |Global<br/>Administrador  |Seguridad <br/>Administrador<br>o<br>Seguridad<br>Lector |Cumplimiento<br/>Administrador  |
+|Portal |Administrador global |Administrador de seguridad, operador de seguridad o lector de seguridad|Administrador de cumplimiento de normas o administrador de datos de cumplimiento |
 |---------|---------|---------|---------|
-|[Centro de seguridad & cumplimiento de Office 365](https://protection.office.com) |Sí |Sí  |Sí |
-|[Centro de seguridad 365 de Microsoft](https://security.microsoft.com) |Sí  | Sí  | No        |
+|[Centro de seguridad y cumplimiento de Office 365](https://protection.office.com) |Sí |Sí  |Sí |
+|[Centro de seguridad de Microsoft 365](https://security.microsoft.com) |Sí  | Sí  | No        |
 |[Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com) | Sí | No | Sí |
 |[Administrador de cumplimiento](https://aka.ms/compliancemanager) |Sí | Sí |Sí  |
 |[Azure Information Protection](https://docs.microsoft.com/azure/information-protection) |Sí |Sí |No |

@@ -13,12 +13,12 @@ ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 ms.collection:
 - M365-security-compliance
 description: Cuando Exchange Online Protection examina un mensaje de correo entrante, inserta el encabezado **X-Forefront-Antispam-Report** en cada mensaje.
-ms.openlocfilehash: de5e1b16ac6c9e7515e23f083f2e938125c7e9cd
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: 92614b8cb6e1571c3d5438206f9dcd106579669a
+ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693579"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30936750"
 ---
 # <a name="anti-spam-message-headers"></a>Encabezados de mensajes de correo no deseado
 
@@ -28,7 +28,6 @@ Cuando Exchange Online Protection examina un mensaje de correo entrante, inserta
 > Para obtener información sobre cómo ver un encabezado de mensaje de correo electrónico en distintos clientes de correo electrónico, consulte [Message Header Analyzer (Analizador de encabezados de mensaje)](https://go.microsoft.com/fwlink/p/?LinkId=306583). Puede copiar y pegar el contenido del encabezado del mensaje en la herramienta [Analizador de encabezados de mensaje](https://testconnectivity.microsoft.com/?tabid=mha). Si selecciona un mensaje que está en cuarentena en el centro de administración de Exchange, el vínculo **Ver encabezado de mensaje** también le permite copiar y pegar fácilmente el texto del encabezado del mensaje en la herramienta. Cuando esté en la herramienta Analizador de encabezados de mensaje, haga clic en **Analizar encabezados** para recuperar la información del encabezado.
   
 ## <a name="x-forefront-antispam-report-message-header-fields"></a>Campos de encabezado de mensaje X-Forefront-Antispam-Report
-<a name="sectionSection0"> </a>
 
 Al obtener acceso a la información del encabezado del mensaje, busque **X-Forefront-Antispam-Report** y, a continuación, busque los siguientes campos. El resto de los campos de este encabezado los usa exclusivamente el equipo de Microsoft contra el correo no deseado con fines de diagnóstico.
 
@@ -38,7 +37,7 @@ Al obtener acceso a la información del encabezado del mensaje, busque **X-Foref
 |CTRY|El país desde el que el mensaje se conectó al servicio. Está determinado por la dirección IP de conexión, que puede no ser la misma que la dirección IP de envío original.|
 |LANG|El idioma en que se redactó el mensaje, que está definido por el código de país (por ejemplo, ru_RU indica ruso).|
 |SCL|El valor del nivel de confianza contra correo no deseado (SCL) del mensaje. Para obtener más información sobre cómo interpretar estos valores, consulte [Niveles de confianza de correo no deseado](spam-confidence-levels.md).  |
-|PCL|El valor del nivel de confianza de protección antiphishing (PCL) del mensaje. |
+|PCL|El valor del nivel de confianza de protección antiphishing (PCL) del mensaje.|
 |SRV:BULK|El mensaje se identificó como mensaje de correo masivo. Si la opción avanzada de filtrado de correo no deseado **Bloquear todos los mensajes de correo masivo** está habilitada, se marcará como correo no deseado. Si no lo está, solo se marcará como correo no deseado en el caso de que el resto de las reglas de filtrado determinen que el mensaje es correo no deseado.  |
 |SFV:SFE|Se omitió el filtrado y se permitió el mensaje porque se envió desde una dirección de una lista de remitentes seguros del individuo.|
 |SFV:BLK|Se omitió el filtrado y se bloqueó el mensaje porque se envió desde una dirección de una lista de remitentes bloqueados del individuo.  <br/> **Sugerencia**: para obtener más información acerca de cómo los usuarios finales pueden crear listas de remitentes seguros y bloqueados, vea [bloquear o permitir (configuración del correo electrónico no deseado)](https://go.microsoft.com/fwlink/p/?LinkId=294862) (Outlook en la web) e [información general sobre el filtro de correo no deseado](https://go.microsoft.com/fwlink/p/?LinkId=270065) (Outlook).|
@@ -58,7 +57,6 @@ Al obtener acceso a la información del encabezado del mensaje, busque **X-Foref
 |X-CustomSpam: [ASFOption]|El mensaje coincide con una opción avanzada de filtrado de correo no deseado. Por ejemplo, **X-CustomSpam: Vínculos de imagen a sitios remotos** indica que la opción **Vínculos de imagen a sitios remotos** de ASF coincidía. Para averiguar qué texto de encabezado X se agrega para cada opción de ASF específica, consulte [Opciones avanzadas de filtrado de correo no deseado](advanced-spam-filtering-asf-options.md).|
    
 ## <a name="x-microsoft-antispam-message-header-fields"></a>Campos de encabezado de mensaje X-Microsoft-Antispam
-<a name="sectionSection1"> </a>
 
 En la tabla siguiente se describen los campos más útiles del encabezado de mensaje **X-Microsoft-Antispam**. El resto de los campos de este encabezado los usa exclusivamente el equipo de Microsoft contra el correo no deseado con fines de diagnóstico.
   
@@ -68,16 +66,14 @@ En la tabla siguiente se describen los campos más útiles del encabezado de men
 |PCL|El nivel de confianza de protección antiphishing (PCL) del mensaje, que indica si se trata de un mensaje de suplantación de identidad. Este estado se puede devolver con uno de los siguientes valores numéricos: <br/>• **0-3**: es probable que el contenido del mensaje sea suplantación de identidad. <br/>• **4-8**: es probable que el contenido del mensaje sea suplantación de identidad. <br/>• **-9990**: (solo Exchange Online Protection) es probable que el contenido del mensaje sea suplantación de identidad.  <br/>  Los valores se usan para determinar qué medidas toma el cliente de correo electrónico en los mensajes. Por ejemplo, Outlook usa la marca PCL para bloquear el contenido de los mensajes sospechosos. Para obtener más información sobre la suplantación de identidad y sobre cómo Outlook procesa los mensajes de suplantación de identidad, consulte [Activar o desactivar los vínculos en los mensajes de correo](https://support.office.com/article/2D79B907-93B6-4774-82E6-1F0385CF20F8).|
    
 ## <a name="authentication-results-message-header"></a>Encabezado de mensaje Authentication-results
-<a name="sectionSection2"> </a>
 
 Office 365 graba los resultados de las comprobaciones de SPF, DKIM y DMARC en el encabezado de mensaje **Authentication-results** cuando nuestros servidores de correo reciben un mensaje de correo electrónico.
   
 ### <a name="check-stamp-syntax-and-examples"></a>Sintaxis y ejemplos de las marcas de verificación
-<a name="referenceSPFstamp"> </a>
 
 En los siguientes ejemplos de sintaxis se muestra una parte del texto de la marca que Office 365 aplica al encabezado del mensaje por cada correo electrónico que se somete a una comprobación de autenticación de correo electrónico cuando lo recibimos en nuestros servidores de correo. Esta marca se agrega al encabezado **Authentication-Results**.
   
- **Sintaxis: marca de verificación de SPF**
+**Sintaxis: marca de verificación de SPF**
   
 En cuanto a SPF, se aplica la siguiente sintaxis:
   
@@ -85,14 +81,14 @@ En cuanto a SPF, se aplica la siguiente sintaxis:
 spf=<pass (IP address)|fail (IP address)|softfail (reason)|neutral|none|temperror|permerror> smtp.mailfrom=<domain>
 ```
 
- **Ejemplos: marca de verificación de SPF**
+**Ejemplos: marca de verificación de SPF**
   
 ```
 spf=pass (sender IP is 192.168.0.1) smtp.mailfrom=contoso.com
 spf=fail (sender IP is 127.0.0.1) smtp.mailfrom=contoso.com
 ```
 
- **Sintaxis: marca de verificación de DKIM**
+**Sintaxis: marca de verificación de DKIM**
   
 En cuanto a DKIM, se aplica la siguiente sintaxis:
   
@@ -100,14 +96,14 @@ En cuanto a DKIM, se aplica la siguiente sintaxis:
 dkim=<pass|fail (reason)|none> header.d=<domain>
 ```
 
- **Ejemplos: marca de verificación de DKIM**
+**Ejemplos: marca de verificación de DKIM**
   
 ```
 dkim=pass (signature was verified) header.d=contoso.com
 dkim=fail (body hash did not verify) header.d=contoso.com
 ```
 
- **Sintaxis: marca de verificación de DMARC**
+**Sintaxis: marca de verificación de DMARC**
   
 En cuanto a DMARC, se aplica la siguiente sintaxis:
   
@@ -115,7 +111,7 @@ En cuanto a DMARC, se aplica la siguiente sintaxis:
 dmarc=<pass|fail|bestguesspass|none> action=<permerror|temperror|oreject|pct.quarantine|pct.reject> header.from=<domain>
 ```
 
- **Ejemplos: marca de verificación de DMARC**
+**Ejemplos: marca de verificación de DMARC**
   
 ```
 dmarc=pass action=none header.from=contoso.com
@@ -125,7 +121,6 @@ dmarc=fail action=oreject header.from=contoso.com
 ```
 
 ### <a name="authentication-results-message-header-fields-used-by-office-365-email-authentication"></a>Campos del encabezado de mensaje Authentication-results usados por la autenticación de correo electrónico de Office 365
-<a name="referenceSPFstamp"> </a>
 
 En esta tabla se describen los campos y los valores posibles para todas las comprobaciones de autenticación de correo electrónico.
   

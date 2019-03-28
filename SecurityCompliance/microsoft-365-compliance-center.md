@@ -3,83 +3,96 @@ title: Bienvenido al nuevo centro de cumplimiento de Microsoft 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 03/26/2019
+ms.date: 03/27/2019
 ms.audience: ITPro
 ms.topic: article
-ms.service: o365-administration
+ms.service: o365-seccomp
 localization_priority: Normal
 description: Obtenga información sobre el nuevo centro de cumplimiento de Microsoft 365, incluido lo que contiene, cómo obtenerlo y los pasos siguientes.
-ms.openlocfilehash: 5f407174037963102e771595122c6a13bba42b2c
-ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
+ms.openlocfilehash: b901b3cb185cfe8c22723ef0557c0eb3c09f31fc
+ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30868491"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30935185"
 ---
 # <a name="welcome-to-your-all-new-microsoft-365-compliance-center"></a>Bienvenido al nuevo centro de cumplimiento de Microsoft 365
 
 ## <a name="overview"></a>Información general
 
-Si está interesado en la postura de cumplimiento de la organización, le va a encantar el nuevo centro de cumplimiento de Microsoft 365. El centro de cumplimiento de Microsoft 365 proporciona acceso sencillo a los datos y las herramientas que necesita para administrar las necesidades de cumplimiento de su organización. Lea este artículo para familiarizarse con el centro de cumplimiento de Microsoft 365, cómo obtenerlo y los pasos siguientes.
+Si está interesado en la postura de cumplimiento de la organización, le va a encantar el nuevo [centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com). El centro de cumplimiento de Microsoft 365 proporciona acceso sencillo a los datos y las herramientas que necesita para administrar las necesidades de cumplimiento de su organización. Lea este artículo para familiarizarse con el centro de cumplimiento de Microsoft 365, cómo obtenerlo y los pasos siguientes.
 
 [![Centro de cumplimiento de Microsoft 365](media/m365-compliance-center.png)](https://compliance.microsoft.com)
 
-## <a name="welcome"></a>Bienvenida!
+## <a name="welcome-to-microsoft-365-compliance"></a>Bienvenido a Microsoft 365 cumplimiento normativo
 
-Cuando vaya a su centro de cumplimiento de Microsoft 365 por primera vez, se le saludará con el mensaje de bienvenida en la esquina superior derecha de la pantalla.
+Cuando vaya a su centro de cumplimiento de Microsoft 365 por primera vez, se le saludará con el siguiente mensaje de bienvenida:
 
 ![Introducción al centro de cumplimiento de 365 de Microsoft](media/m365-compliancecenter-welcomesteps.png)
 
-En esta sección encontrará algunos punteros sobre cómo empezar, con los siguientes pasos y una invitación para que le envíenos sus comentarios.
+El banner de bienvenida le proporciona algunos punteros sobre cómo empezar, con los siguientes pasos y una invitación para enviarnos sus comentarios.
 
-## <a name="assess"></a>Evaluación
+## <a name="the-assess-section"></a>La sección evaluar
 
-En la sección **evaluar** se muestra de un vistazo cómo está haciendo su organización con respecto a la protección de datos y el cumplimiento normativo.
+En la sección **evaluación** de la Página principal se muestra de un vistazo cómo está haciendo su organización con respecto a la protección de datos y el cumplimiento normativo.
 
 ![Sección evaluación en el centro de cumplimiento de Microsoft 365](media/m365-compliance-center-assess.png)
 
-Desde aquí, puede ir al [Administrador de cumplimiento](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md) para revisar o editar las configuraciones y, potencialmente, mejorar la puntuación general.
+Desde aquí, puede ir a la tarjeta de puntuación de cumplimiento de Microsoft, que le conduce al [Administrador de cumplimiento](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md), donde puede revisar o editar las configuraciones y, potencialmente, mejorar la puntuación de cumplimiento general.
 
-Verá widgets adicionales, como uno que muestra el cumplimiento de la aplicación en la nube de su organización y otro que muestra datos sobre los usuarios con archivos compartidos, con vínculos a [Cloud App Security](https://docs.microsoft.com/cloud-app-security/) u otras herramientas en las que puede explorar datos.
+Verá otras tarjetas como, por ejemplo, una que muestre el cumplimiento de aplicaciones en la nube de su organización y otra que muestre datos sobre los usuarios con archivos compartidos, con vínculos a [Cloud App Security](https://docs.microsoft.com/cloud-app-security/) u otras herramientas en las que puede explorar datos.
 
-## <a name="protect"></a>Proteger
+## <a name="the-protect-section"></a>La sección proteger
 
-La sección **proteger** contiene widgets que le proporcionan información de alto nivel sobre prevención de pérdida de datos (DLP), aplicaciones de terceros en uso, archivos compartidos, aplicaciones de TI de instantánea, etc. 
+La sección **proteger** de la Página principal contiene tarjetas que le proporcionan información de alto nivel sobre las etiquetas, prevención de pérdida de datos (DLP), aplicaciones de terceros en uso, archivos compartidos, aplicaciones de TI de instantánea, etc. 
 
 ![Proteger la sección en el centro de cumplimiento de Microsoft 365](media/m365-compliance-center-protect.png)
 
-Cada widget tiene un vínculo a un informe donde puede obtener más información.
+Cada tarjeta tiene un vínculo a un informe o información adicional donde puede obtener más información.
 
-## <a name="respond"></a>Respond
+## <a name="the-respond-section"></a>La sección responder
 
-Las superficies de la sección **responder** alertan que desea revisar y, potencialmente, emprender acciones.
+La sección **responder** de la Página principal muestra las alertas y las disposiciones pendientes que desea revisar y que podrían actuar.
 
 ![Sección responder en el centro de cumplimiento de Microsoft 365](media/m365-compliance-center-respond.png)
 
-Los widgets, como el widget de alertas activas, incluyen un vínculo a un informe en el que puede ver información más detallada, como gravedad, estado, categoría y más.
+Las tarjetas, como la tarjeta de alertas activas, incluyen un vínculo a una página donde puede ver información más detallada, como gravedad, estado, categoría y más.
 
 ![Detalles de alertas activas](media/m365-compliance-center-alerts-details.png) 
 
-## <a name="navigate"></a>Navigate
+## <a name="easy-navigation-to-more-compliance-features-and-capabilities"></a>Navegación sencilla a más características y capacidades de cumplimiento
 
-Además de los vínculos en widgets, encontrará un panel de navegación en la parte izquierda de la pantalla que le proporcionará un acceso sencillo a sus alertas, informes, directivas, soluciones de cumplimiento y mucho más. 
+Además de los vínculos de las tarjetas en la Página principal, encontrará un panel de navegación en la parte izquierda de la pantalla que le proporcionará un acceso sencillo a sus alertas, informes, directivas, soluciones de cumplimiento y mucho más. 
 
-![Navegación en el centro de cumplimiento de Microsoft 365](media/m365-compliance-center-leftnav.png)
+|  |  |
+|---------|---------|
+|![Navegación en el centro de cumplimiento de Microsoft 365](media/m365-compliance-center-leftnav.png)  |<br/><br/> Ir a **alertas** para ver y resolver [alertas](alerts.md)<br/><br/>Visite **Reports &** Reports para ver datos sobre el [uso y la retención de etiquetas](sensitivity-labels.md), coincidencias y invalidaciones de [directivas DLP](view-the-dlp-reports.md), [archivos](https://docs.microsoft.com/cloud-app-security/file-filters)compartidos, [aplicaciones de terceros en uso](https://docs.microsoft.com/cloud-app-security/discovered-apps)y mucho más.<br/><br/>ExPanda la sección **clasificación** para obtener acceso a las [etiquetas](labels.md), [las directivas de etiquetas](sensitivity-labels.md#what-label-policies-can-do), los [tipos de información confidencial](what-the-sensitive-information-types-look-for.md)y el análisis de las [etiquetas](view-label-activity-for-documents.md).<br/><br/>Vaya a **directivas** para ver las [alertas](alerts.md) y acceder a sus [DLP](data-loss-prevention-policies.md) y directivas de [retención](retention-policies.md) .<br/><br/> Use los vínculos de la sección **soluciones** para acceder a las soluciones de cumplimiento de la organización. Entre ellas se incluyen [eDiscovery](ediscovery.md), [supervisión](supervision-policies.md), [investigaciones de datos](compliance20/data-investigations-release-notes.md)y solicitudes de [interesados](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md).        |
+
 
 ## <a name="how-do-i-get-this"></a>¿Cómo obtengo esto?
 
-- Si aún no tiene el nuevo centro de cumplimiento de Microsoft 365, lo tendrá pronto. Ya está implementando el [nuevo centro de cumplimiento de Microsoft 365](microsoft-security-and-compliance.md#microsoft-365-compliance-center) .
+- Si aún no tiene el nuevo centro de cumplimiento de Microsoft 365, lo tendrá pronto. El [nuevo centro de cumplimiento de Microsoft 365](microsoft-security-and-compliance.md#microsoft-365-compliance-center) estará disponible por lo general a finales de marzo de 2019.
 
 - Para visitar el centro de cumplimiento de Microsoft 365, como administrador global o administrador de cumplimiento, [https://compliance.microsoft.com](https://compliance.microsoft.com) vaya a e inicie sesión. 
 
 - Para obtener más información acerca de los requisitos, consulte [licencias y permisos necesarios](microsoft-security-and-compliance.md#required-licenses-and-permissions).
 
+## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
+
+### <a name="why-am-i-taken-to-the-former-security--compliance-center-to-perform-some-tasks-such-as-defining-certain-policies"></a>¿Por qué me he dado al antiguo centro de cumplimiento de seguridad & para realizar algunas tareas, como la definición de determinadas directivas?
+
+Todavía estamos desarrollando el centro de cumplimiento de Microsoft 365 y agregaremos más funcionalidad y soluciones en los próximos meses. Mientras tanto, hay algunas tareas que deben realizarse en el centro de seguridad & cumplimiento. En estos casos, se le redirigirá automáticamente a la ubicación en la que puede realizar la tarea a mano, como la creación o edición de una directiva de supervisión.
+
+### <a name="why-dont-i-see-the-new-microsoft-365-compliance-center-yet"></a>¿Por qué no veo todavía el nuevo centro de cumplimiento de Microsoft 365?
+
+En primer lugar, asegúrese de que tiene las [licencias y los permisos](microsoft-security-and-compliance.md#required-licenses-and-permissions)adecuados. A continuación, inicie sesión [https://compliance.microsoft.com](https://compliance.microsoft.com)en. Si aún no ve el nuevo centro de cumplimiento, lo tendrá muy pronto.
+
 ## <a name="next-steps"></a>Pasos siguientes
 
-- **Revise su puntuación de cumplimiento de Microsoft**y use el administrador de cumplimiento para mejorar su puntuación. Para obtener más información sobre el administrador de cumplimiento, consulte [usar el administrador de cumplimiento como ayuda para cumplir los requisitos normativos y de protección de datos al usar los servicios en la nube de Microsoft](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md).
+- **Revise su puntuación de cumplimiento de Microsoft**y use el administrador de cumplimiento para mejorar su puntuación. Para obtener más información, vea [usar el administrador de cumplimiento para ayudar a cumplir los requisitos normativos y de protección de datos al usar los servicios en la nube de Microsoft](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md).
 
-- **Revise las directivas de prevención de pérdida de datos de la organización**y, si es necesario, realice los ajustes necesarios. Para obtener más información sobre DLP, vea [información general sobre las directivas de prevención de pérdida de datos](data-loss-prevention-policies.md). 
+- **Revise las directivas de prevención de pérdida de datos de la organización** y realice los ajustes necesarios según sea necesario. Para obtener más información sobre, consulte [información general sobre las directivas de prevención de pérdida de datos](data-loss-prevention-policies.md). 
 
-- **Familiarícese con y configure Microsoft Cloud App Security**. Para obtener ayuda, consulte [QuickStart: Introducción a Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security).  
+- **Familiarícese con y configure Microsoft Cloud App Security**. Consulte [QuickStart: Introducción a Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security).  
 
 - **Visite el centro de cumplimiento de Microsoft 365 con frecuencia**y asegúrese de revisar las alertas o los posibles riesgos que puedan surgir. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com) e inicie sesión.

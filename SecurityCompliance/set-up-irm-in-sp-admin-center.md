@@ -13,14 +13,16 @@ search.appverid:
 - MET150
 ms.assetid: 239ce6eb-4e81-42db-bf86-a01362fed65c
 description: Obtenga información sobre cómo usar IRM de SharePoint Online a través de Microsoft Azure Active Directory Rights Management Services (RMS) para proteger listas y bibliotecas de documentos de SharePoint.
-ms.openlocfilehash: a5ac2cf5f33f3957e4cf17660461ad2d719d7c83
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 6b68135720846a0e74f5b0272dc5f25272381284
+ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30217710"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30935135"
 ---
 # <a name="set-up-information-rights-management-irm-in-sharepoint-admin-center"></a>Set up Information Rights Management (IRM) in SharePoint admin center.
+
+## <a name="introduction"></a>Introducción
 
 En SharePoint Online, la protección de IRM se aplica a los archivos en el nivel de lista y biblioteca. Antes de que su organización pueda usar la protección IRM, primero debe configurar Rights Management. IRM se basa en el servicio Azure Rights Management de Azure Information Protection para cifrar y asignar restricciones de uso. Algunos planes de Office 365 incluyen Azure Rights Management, pero no todos. Para obtener más información, lea [cómo los servicios y las aplicaciones de Office admiten Azure Rights Management](https://docs.microsoft.com/azure/information-protection/understand-explore/office-apps-services-support).
   
@@ -32,7 +34,7 @@ Después de activar el servicio Rights Management, inicie sesión en el centro d
   
 1. Inicie sesión en Office 365 como administrador global o de SharePoint.
     
-2. Seleccione el icono del iniciador de aplicaciones ![El icono del iniciador de aplicaciones de Office 365](media/e5aee650-c566-4100-aaad-4cc2355d909f.png) en la esquina superior izquierda y elija **Administración** para abrir el centro de administración de Office 365. (Si no ve el icono de Administrador, no tiene permisos de administrador de Office 365 en su organización). 
+2. Seleccione el icono ![del iniciador de aplicaciones el icono del iniciador de aplicaciones en Office 365](media/e5aee650-c566-4100-aaad-4cc2355d909f.png) en la esquina superior izquierda y elija **Administrador** para abrir el centro de administración de Office 365. (If you don't see the Admin tile, you don't have Office 365 administrator permissions in your organization.) 
     
 3. En el panel izquierdo, elija **Centro** \> de administración de **SharePoint**.
     
@@ -63,13 +65,12 @@ SharePoint Online admite el cifrado de los siguientes tipos de archivo:
     
 - Formato de especificación de papel XML (XPS)
     
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 <a name="__toc220831191"> </a>
 
 Una vez que haya habilitado IRM para SharePoint Online, puede empezar a aplicar Rights Management a listas y bibliotecas. Para obtener más información, vea [aplicar Information Rights Management a una lista o biblioteca](apply-irm-to-a-list-or-library.md).
   
 El nuevo cliente de sincronización de OneDrive para Windows ahora admite la sincronización de bibliotecas de documentos de SharePoint protegidas por IRM y ubicaciones de OneDrive (siempre que la configuración de IRM de la biblioteca no esté configurada para expirar los derechos de acceso a documentos). Para obtener más información o para empezar a implementar el nuevo cliente de sincronización, vea [implementar el nuevo cliente de sincronización de OneDrive para Windows](https://support.office.com/article/3f3a511c-30c6-404a-98bf-76f95c519668).
   
-[Volver al principio](set-up-irm-in-sp-admin-center.md#__top)
-  
+[Principio de página](#introduction)  
 

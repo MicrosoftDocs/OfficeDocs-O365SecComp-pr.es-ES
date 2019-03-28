@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: c9b0ff0c-282b-4a44-b43f-cfc5b96557f9
 description: Edite el registro de Windows en el equipo local para deshabilitar los informes al exportar los resultados de una búsqueda de contenido desde &amp; el centro de confianza de seguridad de Office 365. La desHabilitación de estos informes puede acelerar el tiempo de descarga y ahorrar espacio en disco.
-ms.openlocfilehash: 0be2be18eaccb618a49e1b58a5c0e53d0a339d1e
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: f08f5e7143022591d38bda787301e71ae80fb3d3
+ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30213480"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30936720"
 ---
 # <a name="disable-reports-when-you-export-content-search-results-in-the-office-365-security-amp-compliance-center"></a>DesHabilitar los informes al exportar los resultados de la búsqueda de contenido &amp; en el centro de seguridad y cumplimiento de Office 365
 
@@ -97,7 +97,7 @@ Si ha deshabilitado los informes Results. csv y manifest. XML creando los archiv
   
 Los archivos Results. csv y manifest. XML contienen información adicional acerca del contenido que se exportó.
   
-- **Results. csv** un documento de Excel que contiene información acerca de cada elemento que se descarga como resultado de la búsqueda. Para el correo electrónico, el registro de resultados contiene información sobre cada mensaje, incluidos: 
+- **Results. csv** un documento de Excel que contiene información acerca de cada elemento que se descarga como resultado de la búsqueda. Para el correo electrónico, un registro de resultados contiene información acerca de cada mensaje, incluidos: 
     
   - La ubicación del mensaje en el buzón de origen (incluido si el mensaje se encuentra en el buzón de archivo o en el principal).
     

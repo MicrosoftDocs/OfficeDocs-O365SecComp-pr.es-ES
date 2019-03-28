@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: Este artículo describe cómo Office 365 reduce los ataques de phishing que usan dominios de remitentes falsificados, es decir, dominios suplantados. Para ello, analiza los mensajes y bloquea los que no pueden autenticarse mediante métodos de autenticación de correo electrónico estándar ni otras técnicas de reputación del remitente. Este cambio se implementó para reducir el número de ataques de phishing a los que se exponen las organizaciones de Office 365.
-ms.openlocfilehash: 8b308e4b5ce651632834884c12a4500989b43bf5
-ms.sourcegitcommit: f6073deec39a18581ed12abef18728417a52cdf4
+ms.openlocfilehash: 00cf4d6ba0fe7bc9bc081466d7b23a8a9b75631e
+ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "30747586"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30936800"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Protección contra la suplantación de identidad en Office 365
 

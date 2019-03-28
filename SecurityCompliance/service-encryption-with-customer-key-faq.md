@@ -12,18 +12,18 @@ search.appverid:
 - MET150
 ms.assetid: 41ae293a-bd5c-4083-acd8-e1a2b4329da6
 description: Además de la línea base, el cifrado de nivel de volumen que se habilita a través de BitLocker y el administrador de claves distribuidas (DKM), Office 365 ofrece una capa agregada de cifrado a nivel de aplicación para el contenido del cliente en Office 365, incluidos los datos de Exchange En línea, Skype empresarial, SharePoint Online y OneDrive para la empresa. Esto se denomina cifrado de servicio.
-ms.openlocfilehash: a9001db0f63183bf4694dfc880ab0940309d0375
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 5e1acca69ccdd8acb986acb4d7a302d4ca3fbe8a
+ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216510"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30936770"
 ---
 # <a name="service-encryption-with-customer-key-for-office-365-faq"></a>Preguntas más frecuentes sobre el cifrado de servicio con la clave de cliente para Office 365
 
 Además de la línea base, el cifrado de nivel de volumen que se habilita a través de BitLocker y el administrador de claves distribuidas (DKM), Office 365 ofrece una capa agregada de cifrado a nivel de aplicación para el contenido del cliente en Office 365, incluidos los datos de Exchange En línea, Skype empresarial, SharePoint Online y OneDrive para la empresa. Esto se denomina cifrado de servicio.
   
-La clave de cliente se basa en el cifrado del servicio y le permite proporcionar y controlar las claves que se usan para cifrar los datos en reposo en Office 365, tal como se describe en los [términos de servicios en línea (OST)](https://www.microsoft.com/en-us/Licensing/product-licensing/products.aspx). La clave de cliente ayuda a cumplir las obligaciones de cumplimiento, ya que controla las claves de cifrado que Office 365 usa para descifrar datos.
+La clave de cliente se basa en el cifrado del servicio y le permite proporcionar y controlar las claves que se usan para cifrar los datos en reposo en Office 365, tal como se describe en los [términos de servicios en línea (OST)](https://www.microsoft.com/en-us/Licensing/product-licensing/products.aspx). La clave de cliente le ayuda a llevar a cabo sus obligaciones de cumplimiento, ya que es usted quien controla las claves de cifrado que Office 365 usa para descifrar datos.
   
 Para proporcionar comentarios sobre la clave de cliente, incluida la documentación, envíe sus ideas, sugerencias y perspectivas a customerkeyfeedback@microsoft.com.
   
@@ -46,21 +46,21 @@ BYOK con Azure Information Protection para Exchange Online se ofrece en las capa
 ## <a name="does-office-365-message-encryption-and-bring-your-own-key-with-azure-information-protection-change-microsofts-approach-to-third-party-data-requests-such-as-subpoenas"></a>¿El cifrado de mensajes de Office 365 y ofrece su propia clave con Azure Information Protection cambian el enfoque de Microsoft a las solicitudes de datos de terceros, como las citacións?
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
 
-Dejan. El cifrado de mensajes de Office 365 y la opción de proporcionar y controlar sus propias claves de cifrado con la opción de traer su propia clave (BYOK) para Azure Information Protection (AIP) no se diseñó para responder a las inFormaciones de cumplimiento de la ley. El cifrado de mensajes de Office 365 con BYOK para AIP se diseñó para clientes centrados en el cumplimiento que necesitan cumplir sus obligaciones de cumplimiento interno o externo. Microsoft realiza muy en serio solicitudes de terceros para los datos de los clientes. Como proveedor de servicios en la nube, siempre proponemos la privacidad de los datos de clientes. En el caso de que recibamos una citación, siempre intentaremos redirigir a la tercera parte al cliente para obtener la información. (Lea el blog de Brad Martínez: [proteger los datos de clientes de la supervisión gubernamental](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)). Se publicará periódicamente información detallada de la solicitud que recibimos [aquí](https://www.microsoft.com/en-us/trustcenter/Privacy/govt-requests-for-data).
+No. El cifrado de mensajes de Office 365 y la opción de proporcionar y controlar sus propias claves de cifrado con la opción de traer su propia clave (BYOK) para Azure Information Protection (AIP) no se diseñó para responder a las inFormaciones de cumplimiento de la ley. El cifrado de mensajes de Office 365 con BYOK para AIP se diseñó para clientes centrados en el cumplimiento que necesitan cumplir sus obligaciones de cumplimiento interno o externo. Microsoft realiza muy en serio solicitudes de terceros para los datos de los clientes. Como proveedor de servicios en la nube, siempre proponemos la privacidad de los datos de clientes. En el caso de que recibamos una citación, siempre intentaremos redirigir a la tercera parte al cliente para obtener la información. (Lea el blog de Brad Martínez: [proteger los datos de clientes de la supervisión gubernamental](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)). Se publicará periódicamente información detallada de la solicitud que recibimos [aquí](https://www.microsoft.com/en-us/trustcenter/Privacy/govt-requests-for-data).
   
 Consulte el [centro de confianza de Microsoft](https://www.microsoft.com/en-us/trustcenter/default.aspx) sobre las solicitudes de datos de terceros y la "revelación de datos de clientes" en los [términos de servicios en línea (OST) ](https://www.microsoft.com/en-us/Licensing/product-licensing/products.aspx)para obtener más información.
   
 ## <a name="does-service-encryption-with-customer-key-change-microsofts-approach-to-third-party-data-requests-such-as-subpoenas"></a>¿El servicio de cifrado con clave de cliente cambia el enfoque de Microsoft a las solicitudes de datos de terceros, como las citacións?
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
 
-Dejan. La clave de cliente no se diseñó para responder a las inlas citacións legales. Se diseñó para los clientes regulados para cumplir con las obligaciones de cumplimiento interno o externo. Microsoft realiza muy en serio solicitudes de terceros para los datos de los clientes. Como proveedor de servicios en la nube, siempre proponemos la privacidad de los datos de clientes. En el caso de que recibamos una citación, siempre intentaremos redirigir a la tercera parte al cliente para obtener la información. (Lea el blog de Brad Martínez: [proteger los datos de clientes de la supervisión gubernamental](http://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)). Se publicará periódicamente información detallada de la solicitud que recibimos [aquí](https://www.microsoft.com/en-us/trustcenter/Privacy/govt-requests-for-data).
+No. La clave de cliente no se diseñó para responder a las inlas citacións legales. Se diseñó para los clientes regulados para cumplir con las obligaciones de cumplimiento interno o externo. Microsoft realiza muy en serio solicitudes de terceros para los datos de los clientes. Como proveedor de servicios en la nube, siempre proponemos la privacidad de los datos de clientes. En el caso de que recibamos una citación, siempre intentaremos redirigir a la tercera parte al cliente para obtener la información. (Lea el blog de Brad Martínez: [proteger los datos de clientes de la supervisión gubernamental](http://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)). Se publicará periódicamente información detallada de la solicitud que recibimos [aquí](https://www.microsoft.com/en-us/trustcenter/Privacy/govt-requests-for-data).
   
 Consulte el [centro de confianza de Microsoft](https://www.microsoft.com/en-us/trustcenter/Privacy/govt-requests-for-data) sobre las solicitudes de datos de terceros y la "revelación de datos de clientes" en los [términos de servicios en línea (OST)](https://www.microsoft.com/en-us/Licensing/product-licensing/products.aspx) para obtener más información. 
   
 ## <a name="is-fasttrack-support-available-for-implementing-customer-key"></a>¿Se encuentra disponible la compatibilidad de FastTrack para implementar la clave de cliente?
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
 
-Dejan. FastTrack solo se usa para recopilar información de configuración del servicio y del espacio empresarial que se requiere para registrarse en la clave de cliente. Las ofertas de clave de cliente se publican a través de FastTrack para que sea conveniente para los clientes y socios enviar la información necesaria con el mismo método y para facilitar el archivado de los datos que los clientes proporcionan en la oferta.
+No. FastTrack solo se usa para recopilar información de configuración del servicio y del espacio empresarial que se requiere para registrarse en la clave de cliente. Las ofertas de clave de cliente se publican a través de FastTrack para que sea conveniente para los clientes y socios enviar la información necesaria con el mismo método y para facilitar el archivado de los datos que los clientes proporcionan en la oferta.
   
 Si necesita más información sobre la documentación, póngase en contacto con los servicios de consultoría de Microsoft (MCS), el servicio de ingeniería de campo (PFE) de Premier o un socio de Microsoft para obtener ayuda.
   
@@ -84,7 +84,7 @@ La clave de disponibilidad es una clave raíz que se aprovisiona al crear una di
 ## <a name="can-i-assign-a-data-encryption-policy-before-migrating-a-mailbox-to-the-cloud"></a>¿Puedo asignar una directiva de cifrado de datos antes de migrar un buzón de correo a la nube?
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
 
-Afirma. Puede usar el cmdlet Set-MailUser de Windows PowerShell para asignar una directiva de cifrado de datos (DEP) al usuario antes de migrar el buzón a Office 365. Al hacerlo, el contenido del buzón se cifrará con el DEP asignado cuando se migre el contenido. Esto puede resultar más eficaz que asignar una DEP después de que ya se haya migrado el buzón de correo y, a continuación, esperar a que se produzca el cifrado, lo que puede tardar horas o posiblemente días. 
+Sí. Puede usar el cmdlet Set-MailUser de Windows PowerShell para asignar una directiva de cifrado de datos (DEP) al usuario antes de migrar el buzón a Office 365. Al hacerlo, el contenido del buzón se cifrará con el DEP asignado cuando se migre el contenido. Esto puede resultar más eficaz que asignar una DEP después de que ya se haya migrado el buzón de correo y, a continuación, esperar a que se produzca el cifrado, lo que puede tardar horas o posiblemente días. 
   
 ## <a name="how-do-i-verify-that-encryption-with-customer-key-is-activated-and-office-365-has-finished-encrypting-with-customer-key"></a>¿Cómo puedo comprobar que el cifrado con la clave de cliente está activado y que Office 365 ha terminado de cifrarse con la clave de cliente?
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
@@ -109,7 +109,7 @@ New-MoveRequest <alias>
 ## <a name="is-my-existing-data-stored-without-encryption-at-any-time-while-it-is-decrypted-or-encrypted-with-customer-key"></a>¿Mis datos existentes se almacenan sin cifrado en cualquier momento mientras se descifran o cifran con la clave de cliente?
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
 
-Dejan. Los datos siempre se cifran en reposo en el servicio de Office 365 con BitLocker y DKM. Para obtener más información, consulte la información de seguridad, privacidad y cumplimiento de Office 365, y [Cómo Exchange Online protege sus secretos de correo electrónico](https://support.office.com/article/989BA10C-F73F-4EFB-AD1B-AF3322E5F376).
+No. Los datos siempre se cifran en reposo en el servicio de Office 365 con BitLocker y DKM. Para obtener más información, consulte la información de seguridad, privacidad y cumplimiento de Office 365, y [Cómo Exchange Online protege sus secretos de correo electrónico](https://support.office.com/article/989BA10C-F73F-4EFB-AD1B-AF3322E5F376).
   
 ## <a name="if-i-no-longer-want-to-use-customer-managed-encryption-keys-can-i-switch-to-microsoft-managed-keys"></a>Si ya no deseo usar claves de cifrado administradas por el cliente, ¿puedo cambiar a claves administradas por Microsoft?
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
@@ -142,7 +142,7 @@ Office 365 usa la clave de disponibilidad tanto para la disponibilidad de servic
   
 ![](media/a760156b-737f-469a-80ab-c28b7a8b9160.png)
   
-Si las dos claves de Azure Key Vault de una única directiva de cifrado de datos (DEP) no están disponibles, Office 365 puede usar la clave Availability para cambiar a una nueva DEP. Office 365 determina si se debe usar la clave de disponibilidad para la disponibilidad del servicio de forma diferente en función de si un actividad iniciada por el usuario, por ejemplo, cuando un usuario descarga un correo electrónico al cliente de Outlook o una actividad iniciada por el sistema, como el contenido del buzón de índice o para búsquedas de eDiscovery, ha desencadenado el proceso.
+Si las claves de Azure Key Vault de una única directiva de cifrado de datos (DEP) no están disponibles, Office 365 puede usar la clave de disponibilidad para cambiar a una nueva DEP. Office 365 determina si se debe usar la clave de disponibilidad para la disponibilidad del servicio de forma diferente en función de si una actividad iniciada por el usuario, por ejemplo, cuando un usuario descarga el correo electrónico al cliente de Outlook o una actividad iniciada por el sistema, como la indización contenido del buzón de correo o para búsquedas de eDiscovery, ha desencadenado el proceso.
   
 Office 365 sigue este proceso como respuesta a acciones iniciadas por el usuario para determinar si se va a usar la clave de disponibilidad para los buzones de usuario:
   
@@ -215,14 +215,14 @@ Si la cadena BPOS_S_EquivioAnalytics existe, entonces el buzón tiene una licenc
 ## <a name="can-i-enable-customer-key-for-a-trial-subscription"></a>¿Puedo habilitar la clave de cliente para una suscripción de prueba?
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
 
-Dejan. Por definición, las suscripciones de prueba tienen una duración limitada. Las claves de cifrado que se hospedan en suscripciones de prueba se pueden perder al final de la duración de la prueba. Como Microsoft no impide que los clientes coloquen datos importantes de clientes en suscripciones de prueba, se prohíbe el uso de la clave de cliente con suscripciones de prueba.
+No. Por definición, las suscripciones de prueba tienen una duración limitada. Las claves de cifrado que se hospedan en suscripciones de prueba se pueden perder al final de la duración de la prueba. Como Microsoft no impide que los clientes coloquen datos importantes de clientes en suscripciones de prueba, se prohíbe el uso de la clave de cliente con suscripciones de prueba.
   
 ## <a name="how-much-will-using-customer-key-cost"></a>¿Cuánto va a usar el costo de clave de cliente?
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
 
 Además de las licencias necesarias para la clave de cliente, los clientes incurrirán en un costo por el uso de la bóveda de claves. [Detalles de precios de Azure Key Vault](https://azure.microsoft.com/en-us/pricing/details/key-vault/) describe el modelo de costos y le ayudará a realizar la estimación. No hay ninguna forma de predecir el coste exacto que incurrir a ningún cliente, ya que los patrones de uso varían. La experiencia ha demostrado que el costo es muy bajo y generalmente cae en el intervalo de $0,002 a $0,005 por usuario al mes, además del costo de las claves respaldadas por HSM. El costo también variará en función de la configuración de registro elegida por el cliente y la cantidad de almacenamiento de Azure usado para los registros de Azure Key Vault. 
   
-## <a name="for-more-information"></a>Más información
+## <a name="for-more-information"></a>Para obtener más información
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
 
 Para empezar con la clave de cliente, vea [controlar los datos en Office 365 mediante la clave de cliente](controlling-your-data-using-customer-key.md).
