@@ -21,6 +21,7 @@
 ## [Etiquetas de confidencialidad](sensitivity-labels.md)
 ### [Restringir el acceso al contenido mediante el cifrado en las etiquetas de confidencialidad](encryption-sensitivity-labels.md)
 ### [Aplicar una etiqueta de confidencialidad automáticamente al contenido](apply_sensitivity_label_automatically.md)
+### [Ver el uso de etiquetas con el análisis de etiquetas](label-analytics.md)
 ## [Evitar la pérdida de datos (DLP)](data-loss-prevention-policies.md)
 ### [Ver una descripción general ampliada de DLP](https://channel9.msdn.com/events/ignite/microsoft-ignite-orlando-2017/brk3111)
 ## Configurar DLP
@@ -86,8 +87,9 @@
 ### [Restaurar un buzón inactivo](restore-an-inactive-mailbox.md)
 ### [Eliminar un buzón inactivo](delete-an-inactive-mailbox.md)
 ## Monitorizar el gobierno de datos
-### [Ver los informes de gobierno de datos](view-the-data-governance-reports.md)
 ### [Ver la actividad de etiquetas de documentos](view-label-activity-for-documents.md)
+### [Ver el uso de etiquetas con el análisis de etiquetas](label-analytics.md)
+### [Ver los informes de gobierno de datos](view-the-data-governance-reports.md)
 ## Más información sobre el gobierno de datos
 ### [Ver vídeos del equipo de gobierno de datos de Microsoft](https://go.microsoft.com/fwlink/?linkid=867039)
 
