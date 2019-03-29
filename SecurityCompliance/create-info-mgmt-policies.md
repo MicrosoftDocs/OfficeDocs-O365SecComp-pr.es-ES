@@ -1,5 +1,5 @@
 ---
-title: Crear y aplicar directivas de administración de la información
+title: Crear y aplicar directivas de administración de información
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
@@ -17,14 +17,14 @@ ms.assetid: 8ccac9e4-3a50-49fa-a95b-d186032a6ee3
 ms.collection:
 - M365-security-compliance
 description: Las directivas de administración de la información permiten a su organización controlar el tiempo que se conservará el contenido, auditar lo que hacen los usuarios con el contenido y agregar códigos de barras o etiquetas a los documentos. Una Directiva puede ayudar a garantizar el cumplimiento de las regulaciones legales y gubernamentales o los procesos de negocio internos. Como administrador, puede configurar una directiva para controlar cómo realizar un seguimiento de los documentos y durante cuánto tiempo se conservan los documentos.
-ms.openlocfilehash: d4161ad3684a006f0e4b2b9e0e856ea0a8aa67fc
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 1d17dd8cadb721478831ab8fe77413c08f959f29
+ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214700"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30862572"
 ---
-# <a name="create-and-apply-information-management-policies"></a>Crear y aplicar directivas de administración de la información
+# <a name="create-and-apply-information-management-policies"></a>Crear y aplicar directivas de administración de información
 
 Las directivas de administración de la información permiten a su organización controlar el tiempo que se conservará el contenido, auditar lo que hacen los usuarios con el contenido y agregar códigos de barras o etiquetas a los documentos. Una Directiva puede ayudar a garantizar el cumplimiento de las regulaciones legales y gubernamentales o los procesos de negocio internos. Como administrador, puede configurar una directiva para controlar cómo realizar un seguimiento de los documentos y durante cuánto tiempo se conservan los documentos.
   
@@ -43,7 +43,7 @@ Para obtener más información, vea [Introducción a las directivas de administr
 
 Para asegurarse de que se aplica una directiva de información a todos los documentos de un tipo determinado dentro de una colección de sitios, considere la posibilidad de crear la Directiva en el nivel de colección de sitios y, posteriormente, aplicar la Directiva a los tipos de contenido. Se denominan directivas de colección de sitios. 
   
-1. en la página \> ****![principal de la colección de sitios, en el botón configuración de SharePoint 2016 de la barra de título. ](media/1c22d2d8-39e0-4930-82c6-c3eee44211d3.png) **sitio.** \>
+1. en la página \> ****![principal de la colección de sitios, en el botón configuración de SharePoint 2016 de la barra de título.](media/1c22d2d8-39e0-4930-82c6-c3eee44211d3.png) \> **Configuración del sitio**.
     
     En un sitio conectado a un grupo de SharePoint, haga clic en **configuración**, en **contenidos del sitio**y, a continuación, en **configuración del sitio**. 
     
@@ -66,7 +66,7 @@ Agregar una directiva de administración de información a un tipo de contenido 
   
  También puede Agregar una directiva de administración de información a un tipo de contenido específico de las listas. Esto tiene el efecto de aplicar la Directiva solo a los elementos de la lista que usan el tipo de contenido. 
   
-1. en la página \> ****![principal de la colección de sitios, en el botón configuración de SharePoint 2016 de la barra de título. ](media/1c22d2d8-39e0-4930-82c6-c3eee44211d3.png) **sitio.** \>
+1. en la página \> ****![principal de la colección de sitios, en el botón configuración de SharePoint 2016 de la barra de título.](media/1c22d2d8-39e0-4930-82c6-c3eee44211d3.png) \> **Configuración del sitio**.
     
     En un sitio conectado a un grupo de SharePoint, haga clic en **configuración**, en **contenidos del sitio**y, a continuación, en **configuración del sitio**. 
     
@@ -90,8 +90,8 @@ Agregar una directiva de administración de información a un tipo de contenido 
     
 ||||||**1.**|* * Elija * * Agregar una etapa de retención para registros... * * * *|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-||||||2.  <br/> | Seleccione una opción de período de retención para especificar Cuándo expirarán los documentos o elementos. Realice una de las siguientes acciones:<br/>  Para establecer la fecha de expiración en función de una propiedad de fecha, en **evento** \> **esta fase se basa en una propiedad de fecha del elemento**y, a continuación, selecciona la acción del documento o elemento (por ejemplo, creado o modificado) y el incremento de tiempo después de esta acción ( por ejemplo, el número de días, meses o años cuando desea que el elemento expire.  <br/>  Para usar una fórmula de retención personalizada para determinar la expiración, elija **establecer mediante una fórmula de retención personalizada instalada en este servidor**.  <br/> > [!NOTE]> esta opción solo está disponible si el administrador ha configurado una fórmula personalizada.           |
-||||||3.  <br/> |La opción **iniciar un flujo de trabajo** solo está disponible si está definiendo una directiva para una lista, biblioteca o tipo de contenido que ya tiene asociado un flujo de trabajo. A continuación, se le ofrecerá una selección de flujos de trabajo para elegir.<br/> |
+||||||2.  <br/> | Seleccione una opción de período de retención para especificar Cuándo expirarán los documentos o elementos. Siga uno de los procedimientos siguientes:  <br/>  Para establecer la fecha de expiración en función de una propiedad de fecha, en **evento** \> **esta fase se basa en una propiedad de fecha del elemento**y, a continuación, selecciona la acción del documento o elemento (por ejemplo, creado o modificado) y el incremento de tiempo después de esta acción ( por ejemplo, el número de días, meses o años cuando desea que el elemento expire.  <br/>  Para usar una fórmula de retención personalizada para determinar la expiración, elija **establecer mediante una fórmula de retención personalizada instalada en este servidor**.  <br/> > [!NOTE]> esta opción solo está disponible si el administrador ha configurado una fórmula personalizada.           |
+||||||3.  <br/> |La opción **iniciar un flujo de trabajo** solo está disponible si está definiendo una directiva para una lista, biblioteca o tipo de contenido que ya tiene asociado un flujo de trabajo. A continuación, se le ofrecerá una selección de flujos de trabajo para elegir.  <br/> |
 ||||||4.  <br/> |En la **** sección periodicidad, seleccione **repetir la acción de esta fase...** y especifique la frecuencia con la que desea que se repita la acción.  <br/> > [!NOTE]> esta opción solo está disponible si la acción seleccionada puede repetirse. Por ejemplo, no puede establecer la periodicidad para que la acción elimine de **forma permanente**.           |
 ||||||5.  <br/> |Elija **Aceptar**.  <br/> |
    
@@ -103,8 +103,8 @@ Agregar una directiva de administración de información a un tipo de contenido 
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
 ||||||**2.** <br/> |**Para solicitar a los usuarios que inserten estos códigos de barras en los documentos,** **elige** **Pedir a los usuarios que inserten un código de barras antes de guardar o imprimir** **.** <br/> |
 ||||||**3.** <br/> |**Elige** **OK** * * para aplicar la característica de auditoría a la Directiva. ** <br/> |
-|||||||La característica de directiva de auditoría permite a las organizaciones crear y analizar registros de auditoría para documentos y enumerar elementos como listas de tareas, listas de problemas, grupos de discusión y calendarios. Esta característica de directiva proporciona un registro de auditoría que registra los eventos, como cuando se ve, se modifica o se elimina el contenido.  <br/> |
-|||||||Cuando la auditoría está habilitada como parte de una directiva de administración de la información, los administradores pueden ver los datos de auditoría en los informes de uso de directivas que se basan en Microsoft Excel y que resumen el uso actual. Los administradores pueden usar estos informes para determinar cómo se usa la información dentro de la organización. Estos informes también pueden ayudar a las organizaciones a comprobar y documentar el cumplimiento de su normativa o a investigar posibles problemas.  <br/> |
+|||||||La característica de directiva de auditoría permite a las organizaciones crear y analizar registros de auditoría para documentos y enumerar elementos como listas de tareas, listas de problemas, grupos de discusión y calendarios. Esta característica de directiva proporciona un registro de auditoría que graba eventos, por ejemplo cuando se ve, se modifica o se elimina contenido.  <br/> |
+|||||||Cuando la auditoría está habilitada como parte de una directiva de administración de la información, los administradores pueden ver los datos de auditoría en los informes de uso de directivas que se basan en Microsoft Excel y que resumen el uso actual. Los administradores pueden usar estos informes para determinar cómo se usa la información en la organización. Estos informes también pueden ayudar a las organizaciones a comprobar y documentar el cumplimiento de su normativa o a investigar posibles problemas.  <br/> |
 |||||||El registro de auditoría graba la siguiente información: nombre del evento, fecha y hora del evento y nombre de sistema del usuario que realizó la acción.  <br/> |
    
 1. Cuando los códigos de barras se habilitan como parte de una directiva, se agregan a las propiedades del documento y se muestran en la zona del encabezado del documento al que se aplica el código de barras. Al igual que las etiquetas, los códigos de barras también se pueden quitar de un documento de forma manual. Puede especificar si se debe pedir a los usuarios que incluyan el código de barras al imprimir o guardar un elemento, o si el código de barras debe insertarse manualmente mediante la pestaña **Insertar** de 2010 programas de la versión de Office. 
@@ -124,11 +124,11 @@ Agregar una directiva de administración de información a un tipo de contenido 
     
 ||||||**1.**|* * Para requerir que los usuarios agreguen una etiqueta a un documento, elija **solicitar a los usuarios que inserten una etiqueta antes de guardar o imprimir**.  <br/> > [!NOTE]> si desea que las etiquetas sean opcionales, no active esta casilla de verificación.        **|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-||||||2.  <br/> |Para bloquear una etiqueta para que no se pueda cambiar una vez insertada, elija **impedir cambios en las etiquetas después**de que se hayan agregado.  <br/>  Esta opción impide que el texto de la etiqueta se actualice una vez que la etiqueta se haya insertado en un elemento dentro de una aplicación cliente como Word, Excel o PowerPoint. Si desea que la etiqueta se actualice cuando se actualicen las propiedades de este documento o elemento, no active esta casilla de verificación.<br/> |
+||||||2.  <br/> |Para bloquear una etiqueta para que no se pueda cambiar una vez insertada, elija **impedir cambios en las etiquetas después**de que se hayan agregado.  <br/>  Esta opción impide que el texto de la etiqueta se actualice una vez que la etiqueta se haya insertado en un elemento dentro de una aplicación cliente como Word, Excel o PowerPoint. Si desea que la etiqueta se actualice cuando se actualicen las propiedades del documento o elemento, no active esta casilla de verificación.  <br/> |
 ||||||3.  <br/> |En el cuadro formato de etiqueta, escriba el texto de la etiqueta tal como desea que se muestre. Las etiquetas pueden contener hasta 10 referencias de columna, cada una de las cuales puede tener una longitud de hasta 255 caracteres. Para crear el formato de la etiqueta, haga lo siguiente:  <br/> Escriba los nombres de las columnas que desea incluir en la etiqueta en el orden en que desea que aparezcan. Escriba los nombres de columna entre llaves ({}), como se muestra en el ejemplo de la página Editar Directiva.  <br/> Escriba palabras para identificar las columnas fuera de los corchetes, como se muestra en el ejemplo de la página Editar Directiva.  <br/> |
 ||||||4.  <br/> |Para agregar un salto de línea, escriba **\n** donde desea que aparezca el salto de línea.  <br/> |
-||||||5.  <br/> |Seleccione el tamaño de fuente y el estilo que desee y especifique si desea que la etiqueta esté situada a la izquierda, a la derecha o en el centro del documento.  <br/>  Seleccione una fuente y un estilo que estén disponibles en los equipos de los usuarios. El tamaño de la fuente afecta a la cantidad de texto que se puede mostrar en la etiqueta.  <br/> |
-||||||6.  <br/> |Escriba el alto y el ancho de la etiqueta. El alto de la etiqueta puede oscilar entre 0,25 pulgadas y 20 pulgadas y el ancho de la etiqueta puede oscilar entre 0,25 pulgadas y 20 pulgadas. El texto de la etiqueta siempre se centra verticalmente dentro de la imagen de la etiqueta.  <br/> |
+||||||5.  <br/> |Seleccione el tamaño de fuente y el estilo que desee y especifique si desea que la etiqueta esté situada a la izquierda, a la derecha o en el centro del documento.  <br/>  Seleccione una fuente y un estilo que estén disponibles en los equipos de los usuarios. El tamaño de la fuente afecta a la cantidad de texto que puede mostrarse en la etiqueta.  <br/> |
+||||||6.  <br/> |Escriba el alto y el ancho de la etiqueta. El alto de la etiqueta puede variar de 0,25 a 20 pulgadas ((0,63 cm. y 50,8 cm. respectivamente) y el ancho de la etiqueta puede variar de 0,.25 a 20 pulgadas (0,63 cm. y 50,8 cm. respectivamente). El texto de la etiqueta siempre se centra verticalmente en la imagen de la etiqueta.  <br/> |
 ||||||7.  <br/> |Elija **Actualizar** para obtener una vista previa del contenido de la etiqueta.  <br/> |
    
 1. Elija **Aceptar**.
@@ -162,7 +162,7 @@ Necesita al menos el permiso administrar listas para cambiar la configuración d
   
 4. En la página Configuración de la Directiva de administración de la información, asegúrese de que el origen de la retención de la lista o biblioteca esté establecido en bibliotecas y carpetas. 
   
-Si **tipo de contenido** aparece como origen, haga clic en **cambiar origen**y, a continuación, haga clic en **biblioteca y carpetas**. Se le advierte de que se omitirán las directivas de retención de tipo de contenido. Haga clic en **Aceptar**. 
+Si **tipo de contenido** aparece como origen, haga clic en **cambiar origen**y, a continuación, haga clic en **biblioteca y carpetas**. Se le advierte de que se omitirán las directivas de retención de tipo de contenido. Elija **Aceptar**. 
     
 5. En la página Editar Directiva, en **programación de retención basada en bibliotecas**, escriba una breve descripción de la Directiva que va a crear. 
     
@@ -170,7 +170,7 @@ Si **tipo de contenido** aparece como origen, haga clic en **cambiar origen**y, 
     
      Tenga en cuenta que, en registros, puede elegir definir distintas directivas de retención para los registros seleccionando la opción definir distintas fases de retención para los registros. 
     
-7. En el cuadro de diálogo Propiedades de fase, seleccione una opción de período de retención para especificar Cuándo expirarán los documentos o elementos. Realice una de las siguientes acciones:
+7. En el cuadro de diálogo Propiedades de fase, seleccione una opción de período de retención para especificar Cuándo expirarán los documentos o elementos. Siga uno de los procedimientos siguientes:
     
   - Para establecer la fecha de expiración en función de una propiedad de fecha, en **evento** \> **esta fase se basa en una propiedad de fecha del elemento**y, a continuación, selecciona la acción del documento o elemento (por ejemplo, creado o modificado) y el incremento de tiempo después de esta acción ( por ejemplo, el número de días, meses o años cuando desea que el elemento expire. 
     
@@ -195,7 +195,7 @@ Si **tipo de contenido** aparece como origen, haga clic en **cambiar origen**y, 
 
 Si ya se han creado directivas de administración de la información para su sitio como directivas de colección de sitios, puede aplicar una de las directivas a un tipo de contenido. De esta forma, puede aplicar la misma directiva a varios tipos de contenido en una colección de sitios que no comparten el mismo tipo de contenido primario.
   
- Si desea aplicar directivas a varios tipos de contenido en una colección de sitios y tiene configurado un servicio de metaDatos administrados, puede usar la publicación de tipo de contenido para publicar directivas de administración de la información en varias colecciones de sitios. Vea la sección [aplicar una directiva a los tipos de contenido en las colecciones de sitios](create-info-mgmt-policies.md#__apply_a_policy) para obtener más información. 
+ Si desea aplicar directivas a varios tipos de contenido en una colección de sitios y tiene configurado un servicio de metaDatos administrados, puede usar la publicación de tipo de contenido para publicar directivas de administración de la información en varias colecciones de sitios. Vea la sección [aplicar una directiva en las colecciones de sitios](#apply-a-policy-across-site-collections) para obtener más información. 
   
 1. Navegue hasta la lista o biblioteca que contiene el tipo de contenido al que desea aplicar una directiva.
     
@@ -267,6 +267,13 @@ La importación de una directiva de administración de la información permite a
     
 La Directiva importada ahora puede aplicarse a uno o varios tipos de contenido en el nivel de sitio o de lista. 
   
-[Las directivas de administración de la información permiten a su organización controlar el tiempo que se conservará el contenido, auditar lo que hacen los usuarios con el contenido y agregar códigos de barras o etiquetas a los documentos. Una Directiva puede ayudar a garantizar el cumplimiento de las regulaciones legales y gubernamentales o los procesos de negocio internos. Como administrador, puede configurar una directiva para controlar cómo realizar un seguimiento de los documentos y durante cuánto tiempo se conservan los documentos. Puede crear una directiva de administración de la información en tres ubicaciones distintas en la jerarquía del sitio, de la más amplia hasta la más restringida: cree una directiva para usarla en varios tipos de contenido dentro de una colección de sitios. Cree una directiva para un tipo de contenido de sitio. Cree una directiva para una lista o biblioteca. Para obtener más información, vea Introducción a las directivas de administración de la información.](create-info-mgmt-policies.md#__top)
+Las directivas de administración de la información permiten a su organización controlar el tiempo que se conservará el contenido, auditar lo que hacen los usuarios con el contenido y agregar códigos de barras o etiquetas a los documentos. Una Directiva puede ayudar a garantizar el cumplimiento de las regulaciones legales y gubernamentales o los procesos de negocio internos. Como administrador, puede configurar una directiva para controlar cómo realizar un seguimiento de los documentos y durante cuánto tiempo se conservan los documentos.
+
+Puede crear una directiva de administración de la información en tres ubicaciones distintas en la jerarquía del sitio, de la más amplia hasta el menor:
+- Cree una directiva para usarla en varios tipos de contenido dentro de una colección de sitios.
+- Cree una directiva para un tipo de contenido de sitio.
+- Cree una directiva para una lista o biblioteca.
+
+Para obtener más información, vea [Introducción a las directivas de administración de la información](intro-to-info-mgmt-policies.md).
   
 

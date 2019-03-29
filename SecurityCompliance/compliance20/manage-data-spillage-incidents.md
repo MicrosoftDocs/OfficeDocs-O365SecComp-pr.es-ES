@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: En este artículo se describe el uso de la herramienta nueva investigación de datos (vista previa) en el centro de seguridad de Office 365 Security & para administrar un incidente de derrame de datos.
-ms.openlocfilehash: d130983bc87ae5cbb962f9271d8b4b505db0e6f1
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 33943ee4367e01f413cfa7840c796d5197323185
+ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295813"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30862562"
 ---
 # <a name="manage-a-data-spillage-incident-in-microsoft-365"></a>Administrar un incidente de derrame de datos en Microsoft 365 
 
@@ -96,20 +96,20 @@ Para crear una investigación de datos:
  
 Si sabe qué usuarios desean buscar datos derramados, puede agregarlos como personas de interés para asignar sus orígenes de datos a la investigación y buscar rápidamente sus buzones de correo y su cuenta de OneDrive. Para agregar personas de interés a la investigación, haga clic en **personas de interés**y, a continuación, haga clic en **Agregar personas de interés**. 
 
-En la pestaña **búsquedas** , puede crear búsquedas para buscar los datos derramados. Usará la misma consulta de búsqueda que usó para buscar los datos derramados para eliminar los mismos mensajes en el [paso 4](##step-4:-permanently-delete-the-spilled-data). Para obtener más información acerca de la creación de búsquedas, vea [crear una búsqueda para recopilar datos](create-search-to-collect-data.md).
+En la pestaña **búsquedas** , puede crear búsquedas para buscar los datos derramados. Usará la misma consulta de búsqueda que usó para buscar los datos derramados para eliminar los mismos mensajes en el [paso 4](#step-4-permanently-delete-the-spilled-data). Para obtener más información acerca de la creación de búsquedas, vea [crear una búsqueda para recopilar datos](create-search-to-collect-data.md).
 
 Después de ejecutar la búsqueda, puede obtener una vista previa de los ejemplos de los resultados de búsqueda y ver las estadísticas de búsqueda para evaluar la efectividad de la consulta de búsqueda. Una vez que identifique los elementos que desea eliminar de Office 365, puede hacer clic en la pestaña **incidentes** y, a continuación, crear un incidente y agregar resultados de búsqueda que contengan dichos elementos. 
 
-Para ello, haga clic en la búsqueda que desea investigar. En la página flotante, haga clic en **Agregar resultados a incidente** y siga las instrucciones. A continuación, en la incidencia, puede revisar documentos individuales, investigar quién tenía acceso a los documentos y exportar los documentos. Para eliminar los documentos en lugar de revisarlos, vaya al [paso 4](##step-4:-permanently-delete-the-spilled-data). 
+Para ello, haga clic en la búsqueda que desea investigar. En la página flotante, haga clic en **Agregar resultados a incidente** y siga las instrucciones. A continuación, en la incidencia, puede revisar documentos individuales, investigar quién tenía acceso a los documentos y exportar los documentos. Para eliminar los documentos en lugar de revisarlos, vaya al [paso 4](#step-4-permanently-delete-the-spilled-data). 
 
 > [!IMPORTANT]
-> Las palabras clave que se usan en la consulta de búsqueda pueden contener los datos que se han derramado reales que se están buscando. Por ejemplo, si busca documentos que contengan un número de la seguridad social y lo usa como una palabra clave en la consulta de búsqueda, debe eliminar la consulta posteriormente para evitar más derrames. Puede eliminar la búsqueda o eliminar la investigación completa en el [paso 5](##step-5:-close-or-delete-investigation). 
+> Las palabras clave que se usan en la consulta de búsqueda pueden contener los datos que se han derramado reales que se están buscando. Por ejemplo, si busca documentos que contengan un número de la seguridad social y lo usa como una palabra clave en la consulta de búsqueda, debe eliminar la consulta posteriormente para evitar más derrames. Puede eliminar la búsqueda o eliminar la investigación completa en el [paso 5](#step-5-close-or-delete-the-investigation). 
 
 ## <a name="step-3-review-and-investigate"></a>Paso 3: revisar e investigar 
 
 En la investigación, vaya a **incidentes** y haga clic en el incidente que ha creado en el paso anterior. Una vez completado el trabajo de procesamiento y agregados los resultados de la búsqueda al incidente, puede revisar documentos individuales en su formato nativo, formato de texto o un formato casi nativo. Puede crear consultas adicionales para restringir aún más la lista de documentos y etiquetar los documentos para indicar los resultados de la investigación.
 
-Para agrupar documentos y obtener más ayuda para su revisión, haga clic en **administrar incidente**. En el mosaico **Analytics** , haga clic en **analizar**. De esta forma, se ejecutarán análisis avanzados, como la detección de duplicados, el procesamiento de correo electrónico y el análisis de temas. Para obtener más información, vea:
+Para agrupar documentos y obtener más ayuda para su revisión, haga clic en **administrar incidente**. En el mosaico **Analytics** , haga clic en **analizar**. De esta forma, se ejecutarán análisis avanzados, como la detección de duplicados, el procesamiento de correo electrónico y el análisis de temas. Para más información, visite:
 
 - [Detección de semiduplicados](near-duplicates.md)
 - [Subprocesos de correo electrónico](email-threading.md)

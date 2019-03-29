@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: Configurar las directivas de revisión de supervisión para capturar las comunicaciones de los empleados para su revisión.
-ms.openlocfilehash: 76a5e7152b609944eeb2fe1390e204e1463a673b
-ms.sourcegitcommit: 9a69ea604b415af4fef4964a19a09f3cead5a2ce
+ms.openlocfilehash: ce032a96131fdfb6f226dd25dfbb8e2de41c9931
+ms.sourcegitcommit: a79eb9907759d4cd849c3f948695a9ff890b19bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30701295"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30866396"
 ---
 # <a name="configure-supervision-policies-for-your-organization"></a>Configurar directivas de supervisión para su organización
 
@@ -71,6 +71,34 @@ Use el siguiente gráfico para ayudarle a configurar los grupos de su organizaci
 |Usuarios superVisados | Grupos de distribución <br> Grupos de Office 365 | Grupos de distribución dinámicos |
 | Reviewers | Grupos de seguridad habilitados para correo  | Grupos de distribución <br> Grupos de distribución dinámicos |
   
+Para administrar usuarios supervisados en grandes organizaciones empresariales, es posible que necesite supervisar a todos los usuarios a través de un grupo muy grande. Puede usar PowerShell para configurar un grupo de distribución para una directiva de supervisión global para el grupo asignado. Esto puede ayudarle a supervisar miles de usuarios con una sola directiva y mantener la Directiva de supervisión actualizada a medida que los empleados nuevos se unen a su organización.
+
+1. Cree un [grupo de distribución](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-distributiongroup?view=exchange-ps) dedicado para la Directiva de supervisión global con las siguientes propiedades. Asegúrese de que este grupo de distribución no se use para otros fines u otros servicios de Office 365.
+
+    - **MemberDepartRestriction = cerrado**. Esto garantiza que los usuarios no puedan quitarse a sí mismos del grupo de distribución.
+    - **MemberJoinRestriction = cerrado**. Esto garantiza que los usuarios no puedan agregarse a sí mismo al grupo de distribución.
+    - **ModerationEnabled = true**. Esto garantiza que todos los mensajes enviados a este grupo deben aprobarse y que el grupo no se está usando para comunicarse fuera de la configuración de la Directiva de supervisión.
+
+    ```
+    New-DistributionGroup -Name <your group name> -Alias <your group alias> -MemberDepartRestriction 'Closed' -MemberJoinRestriction 'Closed' -ModerationEnabled $true
+    ```
+2. Seleccione un [atributo personalizado de Exchange](https://docs.microsoft.com/Exchange/recipients/mailbox-custom-attributes?view=exchserver-2019&viewFallbackFrom=exchonline-ww) no usado para usarlo para realizar un seguimiento de los usuarios que se han agregado a la Directiva de supervisión en su organización.
+
+3. Ejecute el siguiente script de PowerShell en una programación recurrente para agregar usuarios a la Directiva de supervisión:
+
+    ```
+    $Mbx = (Get-Mailbox -RecipientTypeDetails UserMailbox -ResultSize Unlimited -Filter {CustomAttribute9 -eq $Null})
+    $i = 0
+    ForEach ($M in $Mbx) 
+    {
+      Write-Host "Adding" $M.DisplayName
+      Add-DistributionGroupMember -Identity <your group name> -Member $M.DistinguishedName -ErrorAction SilentlyContinue
+      Set-Mailbox -Identity $M.Alias -<your custom attribute name> SRAdded 
+      $i++
+    }
+    Write-Host $i "Mailboxes added to supervisory review distribution group."
+    ```
+
 Para obtener más información acerca de la configuración de grupos, vea:
 - [Crear y administrar grupos de distribución](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)
 - [Administrar grupos de seguridad habilitados para correo](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups)
@@ -192,7 +220,7 @@ Para configurar la revisión para escritorio de Outlook o Outlook para la web, n
 
 A continuación, los revisores deberán ejecutar un par de comandos de PowerShell de Exchange Online para que puedan conectar Outlook al buzón de correo de supervisión.
   
-1. Conexión a PowerShell de Exchange Online. [Pasos que seguir](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)
+1. Conéctese a Exchange Online PowerShell. [Pasos que seguir](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)
 
 2. Ejecute los siguientes comandos, donde *SupervisoryReview {GUID} @domain. onmicrosoft.com* es la dirección que copió en el paso 1 anterior y *User* es el nombre del revisor que se conectará al buzón de supervisión en el paso 3.
 

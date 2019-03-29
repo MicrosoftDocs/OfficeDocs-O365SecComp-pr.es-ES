@@ -14,12 +14,12 @@ ms.assetid: a097f5ca-eac0-44a4-bbce-365f35b79ed1
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre los rastreadores de amenazas, incluidos los nuevos comentarios destacados, para ayudar a su organización a estar al tanto de los problemas de seguridad.
-ms.openlocfilehash: 6870e8d613dbd5d72f20e96be9615712bac711a9
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: 4a12a1cfe68f8ebcfae640a65d0eca68e36fb04c
+ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693079"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30862532"
 ---
 # <a name="threat-trackers---new-and-noteworthy"></a>Rastreadores de amenazas: nuevos y destacables
 
@@ -38,7 +38,7 @@ La mayoría de las páginas de Tracker incluyen números de tendencia que se act
   
 ![Ejemplo de información de la campaña en el explorador](media/e426f220-fdcb-4dd9-99a2-db97dbcf71d5.png)
   
-Los rastreadores son sólo algunas de las muchas características de gran calidad que obtiene con [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md). Los rastreadores de [](threat-trackers.md#notey)amenazas incluyen rastreadores dignos dese, rastreadores de [tendencias](threat-trackers.md#trending), [consultas con seguimiento](threat-trackers.md#trackedq)y [consultas guardadas](threat-trackers.md#savedq).
+Los rastreadores son sólo algunas de las muchas características de gran calidad que obtiene con [Office 365 Advanced Threat Protection Plan 2](office-365-ti.md). Los rastreadores de amenazas incluyen [Noteworth](#noteworthy-trackers), rastreadores de [tendencias](#trending-trackers), [consultas de seguimiento](#tracked-queries)y [consultas guardadas](#saved-queries).
   
 Para ver y usar los rastreadores de amenazas en su organización, vaya al centro &amp; de seguridad y[https://protection.office.com](https://protection.office.com)cumplimiento () y elija Threat **Management** \> **Threat Tracker**.
   

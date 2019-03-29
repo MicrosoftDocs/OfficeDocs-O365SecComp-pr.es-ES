@@ -13,18 +13,18 @@ search.appverid:
 - MOE150
 ms.assetid: 5f02d20f-b9aa-4b2f-ad2d-506a4a3c4540
 description: 'Con Office 365 Cloud App Security, las acciones de gobierno que puede realizar son suspender o anular la suspensión de una cuenta de usuario. '
-ms.openlocfilehash: 3650a5304af0440dc537610994c4bd827f599989
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 10da1385f850fadf077b4e3f9e3a00e9e4629fdd
+ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215100"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30862452"
 ---
 # <a name="suspend-or-restore-a-user-account-in-office-365-cloud-app-security"></a>Suspender o restaurar una cuenta de usuario en Office 365 Cloud App Security
 
 |Evaluación * *\>**|Planeación * *\>**|Implementación * *\>**|Uso * * * *|
 |:-----|:-----|:-----|:-----|
-|[Empezar a evaluar](office-365-cas-overview.md) <br/> |[Empezar a planear](get-ready-for-office-365-cas.md) <br/> |[Iniciar la implementación](turn-on-office-365-cas.md) <br/> |Ya está aquí.  <br/> [Pasos siguientes](suspend-or-restore-an-account-in-ocas.md#nextsteps) <br/> |
+|[Empezar a evaluar](office-365-cas-overview.md) <br/> |[Empezar a planear](get-ready-for-office-365-cas.md) <br/> |[Iniciar la implementación](turn-on-office-365-cas.md) <br/> |Ya está aquí.  <br/> [Siguientes pasos](#next-steps)<br/> |
    
 SuPongamos que recibe una alerta de que una de las cuentas de usuario de su organización para Office 365 ha estado en peligro. O bien, supongamos que ha recibido una alerta que indica que hay algún error en una cuenta de usuario. Con Office 365 Cloud App Security, puede suspender una cuenta de usuario y restaurarla más tarde una vez que haya investigado las alertas que recibe.
   

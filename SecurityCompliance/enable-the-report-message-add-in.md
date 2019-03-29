@@ -3,7 +3,7 @@ title: Habilitar el complemento de mensajes de informe
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 03/05/2019
+ms.date: 03/26/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo habilitar el complemento de mensajes de informe para Outlook y Outlook en la web, para usuarios individuales o para toda la organización.
-ms.openlocfilehash: f2bb79c4c613fdb804d19226fb359124387a678f
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: 3c476a6e097307b1aabc3580b598bb91a4407731
+ms.sourcegitcommit: a79eb9907759d4cd849c3f948695a9ff890b19bf
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693389"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30866346"
 ---
 # <a name="enable-the-report-message-add-in"></a>Habilitar el complemento de mensajes de informe
 
@@ -67,7 +67,7 @@ Una vez instalado y habilitado el complemento, verá los iconos siguientes:
 ## <a name="get-and-enable-the-report-message-add-in-for-your-organization"></a>Obtener y habilitar el complemento de mensajes de informe para la organización
 
 > [!IMPORTANT]
-> Debe ser un administrador global de Office 365 o un administrador de Exchange Online para completar esta tarea. Además, Exchange debe estar configurado para usar la autenticación OAuth para obtener más información, consulte [requisitos de Exchange (Implementación centralizada de complementos)](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins&view=o365-worldwide#exchange-requirements). 
+> Debe ser un administrador global de Office 365 o un administrador de Exchange Online para completar esta tarea. Además, Exchange debe estar configurado para usar la autenticación OAuth para obtener más información, consulte [requisitos de Exchange (Implementación centralizada de complementos)](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins). 
 
 1. Vaya a la [Página servicios y](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns) complementos de & en el centro de administración de Microsoft 365.<br/>![Página servicios y complementos en el nuevo centro de administración de Microsoft 365](media/ServicesAddInsPageNewM365AdminCenter.png)<br/> 
     

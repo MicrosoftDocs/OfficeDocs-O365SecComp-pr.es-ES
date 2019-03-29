@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 40829b57-793c-4d41-b171-e9270129173d
 description: 'Para los administradores: Aprenda a importar de forma masiva los archivos PST de su organización a los buzones de correo de Office 365 copiando los archivos PST en una unidad de disco duro y, a continuación, se envíen a Microsoft. '
-ms.openlocfilehash: 9c1cbe17fd1c6e20b0df3bc295da527fa6af6c42
-ms.sourcegitcommit: 03054baf50c1dd5cd9ca6a9bd5d056f3db98f964
+ms.openlocfilehash: e6623e4b5a66b9c2e8eeb2cfe6c978115b6fdc9f
+ms.sourcegitcommit: fb50bf2f2c9d780c911f245a2f78c6bb5e357f67
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30354752"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30950477"
 ---
 # <a name="use-drive-shipping-to-import-your-organization-pst-files-to-office-365"></a>Usar el envío de unidades para importar los archivos PST de la organización a Office 365
 
@@ -86,16 +86,16 @@ Para conocer las preguntas más frecuentes sobre el uso del envío de unidades p
     
 - Es posible que la unidad de disco duro que envíe a Microsoft deba cruzar las fronteras internacionales. Si es el caso, usted es responsable de garantizar que la unidad de disco duro y los datos que contiene se importen o se exporten de acuerdo con la legislación vigente. Antes de enviar una unidad de disco duro, póngase en contacto con sus asesores para comprobar que la unidad y los datos se puedan enviar de forma legal al centro de datos de Microsoft identificado. De esta forma, se asegurará de que llega a Microsoft de forma puntual.
     
-- Este procedimiento implica copiar y guardar una clave de almacenamiento seguro y una clave de cifrado de BitLocker. Asegúrese de tomar precauciones para proteger estas claves de la misma manera que protegería las contraseñas u otra información relacionada con la seguridad. Por ejemplo, puede guardarlas en un documento de Microsoft Word protegido por contraseña o en una unidad USB cifrada. Consulte la sección [More Information](use-drive-shipping-to-import-pst-files-to-office-365.md#moreinfo) para ver un ejemplo de estas claves. 
+- Este procedimiento implica copiar y guardar una clave de almacenamiento seguro y una clave de cifrado de BitLocker. Asegúrese de tomar precauciones para proteger estas claves de la misma manera que protegería las contraseñas u otra información relacionada con la seguridad. Por ejemplo, puede guardarlas en un documento de Microsoft Word protegido por contraseña o en una unidad USB cifrada. Consulte la sección [More Information](#more-information) para ver un ejemplo de estas claves. 
     
-- Una vez que los archivos PST se importan a un buzón de correo de Office 365, la configuración de espera de retención del buzón de correo se activa durante un período de tiempo indefinido. Esto significa que la Directiva de retención asignada al buzón no se procesará hasta que desactive la suspensión de la retención o establezca una fecha para desactivar la retención. ¿Por qué hacemos esto? Si los mensajes importados a un buzón de correo son viejos, podrían eliminarse de forma permanente (purgarse) porque el período de retención ha expirado según la configuración de retención configurada para el buzón. Al colocar el buzón en suspensión de retención, el propietario del buzón podrá administrar estos mensajes recién importados o le dará tiempo para cambiar la configuración de retención del buzón. Consulte la sección [más información](use-drive-shipping-to-import-pst-files-to-office-365.md#moreinfo) para obtener sugerencias sobre cómo administrar la suspensión de la retención. 
+- Una vez que los archivos PST se importan a un buzón de correo de Office 365, la configuración de espera de retención del buzón de correo se activa durante un período de tiempo indefinido. Esto significa que la Directiva de retención asignada al buzón no se procesará hasta que desactive la suspensión de la retención o establezca una fecha para desactivar la retención. ¿Por qué hacemos esto? Si los mensajes importados a un buzón de correo son viejos, podrían eliminarse de forma permanente (purgarse) porque el período de retención ha expirado según la configuración de retención configurada para el buzón. Al colocar el buzón en suspensión de retención, el propietario del buzón podrá administrar estos mensajes recién importados o le dará tiempo para cambiar la configuración de retención del buzón. Consulte la sección [más información](#more-information) para obtener sugerencias sobre cómo administrar la suspensión de la retención. 
     
 - De forma predeterminada, el tamaño máximo de mensaje que puede recibir un buzón de correo de Office 365 es de 35 MB. Esto se debe a que el valor predeterminado de la propiedad *MaxReceiveSize* para un buzón se establece en 35 MB. Sin embargo, el límite del tamaño máximo de recepción de mensajes en Office 365 es de 150 MB. Por lo tanto, si importa un archivo PST que contiene un elemento superior a 35 MB, el servicio de importación de Office 365 cambiará automáticamente el valor de la propiedad *MaxReceiveSize* en el buzón de destino a 150 MB. Esto permite que los mensajes de hasta 150 MB se importen a los buzones de usuario. 
     
     > [!TIP]
     > Para identificar el tamaño de recepción de un buzón de correo, puede ejecutar este comando en Exchange Online PowerShell `Get-Mailbox <user mailbox> | FL MaxReceiveSize`:. 
   
-- Puede importar archivos PST a un buzón inactivo en Office 365. Para ello, especifique el GUID del buzón inactivo en el `Mailbox` parámetro del archivo de asignación de importaCIONES de PST. Consulte [paso 3: crear el archivo de asignación](use-drive-shipping-to-import-pst-files-to-office-365.md#step3) de importaciones de PST para obtener más información. 
+- Puede importar archivos PST a un buzón inactivo en Office 365. Para ello, especifique el GUID del buzón inactivo en el `Mailbox` parámetro del archivo de asignación de importaCIONES de PST. Consulte [paso 3: crear el archivo de asignación](#step-3-create-the-pst-import-mapping-file) de importaciones de PST para obtener más información. 
     
 - En una implementación híbrida de Exchange, puede importar archivos PST a un buzón de archivo basado en la nube para un usuario cuyo buzón principal es local. Para ello, realice lo siguiente en el archivo de asignación de importaciones de PST:
     
@@ -103,7 +103,7 @@ Para conocer las preguntas más frecuentes sobre el uso del envío de unidades p
     
   - Especifique el valor **true** en el `IsArchive` parámetro. 
     
-    Consulte [paso 3: crear el archivo de asignación](use-drive-shipping-to-import-pst-files-to-office-365.md#step3) de importaciones de PST para obtener más información. 
+    Consulte [paso 3: crear el archivo de asignación](#step-3-create-the-pst-import-mapping-file) de importaciones de PST para obtener más información. 
 
 ## <a name="step-1-download-the-secure-storage-key-and-pst-import-tool"></a>Paso 1: descargar la clave de almacenamiento seguro y la herramienta de importación de PST
 
@@ -308,7 +308,7 @@ El siguiente paso es crear el trabajo de importación de PST en el servicio de i
 El paso siguiente es enviar la unidad de disco duro a Microsoft y, a continuación, proporcionar el número de seguimiento para el envío y devolver la información de envío del trabajo de envío de la unidad. Una vez que Microsoft recibe la unidad, tardará entre 7 y 10 días laborables en el personal del centro de datos para cargar los archivos PST en el área de almacenamiento de Azure de su organización.
   
 > [!NOTE]
-> Si no proporciona el número de seguimiento y la información de envío de devolución en los 14 días siguientes a la creación del trabajo de importación, el trabajo de importación expirará. Si esto ocurre, tendrá que crear un nuevo trabajo de importación de envío de unidad (vea el [paso 4: crear un trabajo de importación de PST en Office 365](use-drive-shipping-to-import-pst-files-to-office-365.md#step4)) y volver a enviar el archivo de unidad y el archivo de asignación de importación de PST. 
+> Si no proporciona el número de seguimiento y la información de envío de devolución en los 14 días siguientes a la creación del trabajo de importación, el trabajo de importación expirará. Si esto ocurre, tendrá que crear un nuevo trabajo de importación de envío de unidad (vea el [paso 4: crear un trabajo de importación de PST en Office 365](#step-4-create-a-pst-import-job-in-office-365)) y volver a enviar el archivo de unidad y el archivo de asignación de importación de PST. 
   
 ### <a name="ship-the-hard-drive"></a>Enviar la unidad de disco duro
 
@@ -502,7 +502,7 @@ Para instalar el explorador de almacenamiento de Azure y conectarse a su área d
     
   - Después de un período de tiempo determinado, puede desactivar la suspensión de la retención mediante la `Set-Mailbox -RetentionHoldEnabled $false` ejecución del comando. Para obtener instrucciones, vea [poner un buzón de correo en suspensión de retención](https://go.microsoft.com/fwlink/p/?LinkId=544749).
     
-  - Puede configurar la suspensión de la retención para que esté desactivada en alguna fecha en el futuro. Para ello, ejecute el `Set-Mailbox -EndDateForRetentionHold <date>` comando. Por ejemplo, suponiendo que la fecha de hoy es el 1 de julio de 2016 y desea que la suspensión de la retención esté desactivada en 30 días, `Set-Mailbox -EndDateForRetentionHold 8/1/2016`ejecutaría el siguiente comando:. En este escenario, dejaría la propiedad *RentionHoldEnabled* establecida en *true* . Para obtener más información, vea [set-Mailbox](https://go.microsoft.com/fwlink/p/?LinkId=150317).
+  - Puede configurar la suspensión de la retención para que esté desactivada en alguna fecha en el futuro. Para ello, ejecute el `Set-Mailbox -EndDateForRetentionHold <date>` comando. Por ejemplo, suponiendo que la fecha de hoy es el 1 de junio de 2016 y desea que la suspensión de la retención esté desactivada en 30 días, `Set-Mailbox -EndDateForRetentionHold 7/1/2016`ejecutaría el siguiente comando:. En este escenario, dejaría la propiedad *RentionHoldEnabled* establecida en *true*. Para obtener más información, vea [set-Mailbox](https://go.microsoft.com/fwlink/p/?LinkId=150317).
     
   - Puede cambiar la configuración de la Directiva de retención asignada al buzón para que los elementos más antiguos que se hayan importado no se eliminen inmediatamente ni se muevan al buzón de archivo del usuario. Por ejemplo, puede alargar la antigüedad de retención de una directiva de eliminación o archivo asignada al buzón. En este escenario, se desactiva la suspensión de la retención en el buzón de correo después de cambiar la configuración de la Directiva de retención. Para obtener más información, consulte [configurar una directiva de archivo y eliminación para buzones en la organización de Office 365](set-up-an-archive-and-deletion-policy-for-mailboxes.md).
     

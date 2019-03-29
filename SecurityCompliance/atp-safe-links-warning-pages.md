@@ -14,12 +14,12 @@ ms.assetid: fc4e6ebb-5acc-4bc5-bad8-4f3407d1d3f4
 ms.collection:
 - M365-security-compliance
 description: Obtenga información general de las páginas de advertencia que puede ver cuando la protección contra amenazas avanzada de Office 365 está en funcionamiento.
-ms.openlocfilehash: 5bf6d436e319127fdd5aecd5c58e168a59333d25
-ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
+ms.openlocfilehash: e90951a010ff5de4d3b292259e9c4596b6cc8e89
+ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30357451"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30862582"
 ---
 # <a name="office-365-atp-safe-links-warning-pages"></a>Páginas de advertencia de vínculos seguros de ATP de Office 365
 
@@ -28,7 +28,7 @@ ms.locfileid: "30357451"
 
 [Protección contra amenazas avanzada de Office 365](office-365-atp.md) (ATP) ayuda a proteger la organización de los intentos de suplantación de identidad y malware mediante características como, por ejemplo, [vínculos seguros de ATP](atp-safe-links.md), [datos adjuntos seguros de ATP](atp-safe-attachments.md)y [protección contra la suplantación de identidad](anti-phishing-protection.md). Cuando se realiza la protección, se comprueban los vínculos (direcciones URL) de los mensajes de correo electrónico y documentos de Office. Si una dirección URL se identifica como sospechosa o malintencionada, es posible que se bloquee la apertura de la dirección URL al hacer clic en ella. En lugar de ir directamente al sitio, es posible que vea una página de advertencia en su lugar. 
   
-Lea este artículo para ver [ejemplos de páginas de advertencias](atp-safe-links-warning-pages.md#examples) que pueden aparecer, junto con [las actualizaciones recientes de las páginas de advertencia](atp-safe-links-warning-pages.md#updates).
+Lea este artículo para ver ejemplos de páginas de advertencias que pueden aparecer, junto con las actualizaciones recientes de las páginas de advertencia.
   
 ## <a name="examples-of-warning-pages"></a>Ejemplos de páginas de advertencia
 

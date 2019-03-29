@@ -15,12 +15,12 @@ ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo buscar y usar informes de seguridad de correo electrónico para su organización con Office 365 Enterprise. Los informes de seguridad de correo electrónico están &amp; disponibles en el centro de seguridad y cumplimiento.
-ms.openlocfilehash: bfd84948624beaa8ea9d2a37da2ecd186b5bd717
-ms.sourcegitcommit: 15202bba32313534da2478b0cd215f32a10c9ef4
+ms.openlocfilehash: 1a885661f5bf020c325ee2d9f084473ecb27c53a
+ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30684369"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30862512"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>Ver informes de seguridad de correo electrónico &amp; en el centro de seguridad y cumplimiento
 
@@ -29,24 +29,15 @@ Hay disponibles varios informes en el centro de [seguridad &amp; y cumplimiento]
 ![Panel en el que se ve cómo está funcionando la protección contra amenazas avanzada](media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
   
 Los informes de seguridad de correo electrónico incluyen lo siguiente:
-
 - [Informe](#encryption-report) de cifrado (Nueva)
-  
-- [Informe de estado de protección contra amenazas](view-email-security-reports.md#tps) 
-    
-- [Informe de detecciones de malware](view-email-security-reports.md#maldet)
-    
+- [Informe de estado de protección contra amenazas](#threat-protection-status-report) 
+- [Informe de detecciones de malware](#malware-detections-report)    
 - [Informe de malware principal](#top-malware-report)
-    
-- [Informe de remitentes y destinatarios principales](view-email-security-reports.md#topsenders)
-    
-- [Informe de correo falsificado](#spoof-mail-report)
-    
+- [Informe de remitentes y destinatarios principales](#top-senders-and-recipients-report)
+- [Informe de detecciones de suPlantación de identidad](#spoof-detections-report)
 - [Informe de detecciones de correo no deseado](#spam-detections-report)
-    
-- [Informe de correo electrónico enviado y recibido](view-email-security-reports.md#sentreceivedemail)
-
-- [Informe de mensajes notificados por el usuario](view-email-security-reports.md#userreported)
+- [Informe de correo electrónico enviado y recibido](#sent-and-received-email-report)
+- [Informe de mensajes notificados por el usuario](#user-reported-messages-report)
     
 ## <a name="encryption-report"></a>Informe de cifrado
 

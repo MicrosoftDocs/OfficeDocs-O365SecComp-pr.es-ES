@@ -1,5 +1,5 @@
 ---
-title: Ejecutar una búsqueda de contenido en el centro de &amp; seguridad y cumplimiento de Office 365
+title: 'Run a Content Search in the Office 365 Security &amp; Compliance Center '
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -12,14 +12,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 61852fd9-fe8a-4880-a339-cb19ed3bff4a
 description: 'Use la búsqueda de contenido en el centro &amp; de seguridad y cumplimiento de Office 365 para buscar en buzones de correo, sitios de SharePoint Online y ubicaciones de OneDrive para la empresa. '
-ms.openlocfilehash: 31db6f7b56e1866064e7a008ce4fd704b5333347
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: 255d53240d360557dc6ff1370c8112ceea676622
+ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223739"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30935325"
 ---
-# <a name="run-a-content-search-in-the-office-365-security-amp-compliance-center"></a>Ejecutar una búsqueda de contenido en el centro de &amp; seguridad y cumplimiento de Office 365
+# <a name="run-a-content-search-in-the-office-365-security-amp-compliance-center"></a>Run a Content Search in the Office 365 Security &amp; Compliance Center 
 
 Puede usar la herramienta de búsqueda de contenido de eDiscovery en el centro &amp; de seguridad y cumplimiento de Office 365 para buscar elementos como correo electrónico, documentos y conversaciones de mensajería instantánea en su organización de Office 365. Use esta herramienta para buscar elementos en estos servicios de Office 365:
   
@@ -33,21 +33,21 @@ Puede usar la herramienta de búsqueda de contenido de eDiscovery en el centro &
     
 - Grupos de Office 365
     
-La búsqueda de contenido es una nueva herramienta de búsqueda de eDiscovery con nuevas y mejoradas capacidades de escalabilidad y rendimiento. Use la búsqueda de contenido para ejecutar búsquedas de eDiscovery muy grandes. Puede buscar en todos los buzones de correo, en todas las carpetas públicas de Exchange y en todos los sitios de SharePoint Online y en las cuentas de OneDrive para la empresa en una sola búsqueda de contenido. No hay límites en el número de ubicaciones de contenido que se pueden buscar. Tampoco hay límites en el número de búsquedas que se pueden ejecutar al mismo tiempo. Después de ejecutar una búsqueda de contenido, el número de ubicaciones de contenido y el número estimado de resultados de la búsqueda se muestran en el panel de detalles de la página de **búsqueda de contenido** . Después de ejecutar una búsqueda, puede obtener una vista previa de los resultados, obtener estadísticas de palabras clave para una o más búsquedas, editar en masa las búsquedas de contenido y exportar los resultados a un equipo local. 
+La Búsqueda de contenido es una nueva herramienta de búsqueda de exhibición de documentos electrónicos con funcionalidades nuevas y mejoradas de escalado y rendimiento. Use la Búsqueda de contenido para ejecutar búsquedas muy grandes de exhibición de documentos electrónicos. Puede buscar en todos los buzones de correo, en todas las carpetas públicas de Exchange y en todos los sitios de SharePoint Online y en las cuentas de OneDrive para la empresa en una sola búsqueda de contenido. No hay límites en el número de ubicaciones de contenido que se pueden buscar. Tampoco existen límites con respecto al número de búsquedas que se pueden ejecutar al mismo tiempo. Después de ejecutar una búsqueda de contenido, el número de ubicaciones de contenido y el número estimado de resultados de la búsqueda se muestran en el panel de detalles de la página de **búsqueda de contenido** . Después de ejecutar una búsqueda, puede obtener una vista previa de los resultados, obtener estadísticas de palabras clave para una o más búsquedas, editar en masa las búsquedas de contenido y exportar los resultados a un equipo local. 
   
  **Contenido**
   
-[Crear una búsqueda](run-a-content-search-in-the-security-and-compliance-center.md#create)
+[Create a search](run-a-content-search-in-the-security-and-compliance-center.md#create)
   
 [Exportar resultados de la búsqueda](run-a-content-search-in-the-security-and-compliance-center.md#export)
   
-[Vista previa de los resultados de búsqueda](run-a-content-search-in-the-security-and-compliance-center.md#preview)
+[Preview search results](run-a-content-search-in-the-security-and-compliance-center.md#preview)
   
-[Actualizar los resultados de búsqueda](run-a-content-search-in-the-security-and-compliance-center.md#restart)
+[Actualizar los resultados de la búsqueda](run-a-content-search-in-the-security-and-compliance-center.md#restart)
   
-[Editar una búsqueda](run-a-content-search-in-the-security-and-compliance-center.md#edit)
+[Edit a search](run-a-content-search-in-the-security-and-compliance-center.md#edit)
   
-[Reintentar una búsqueda](run-a-content-search-in-the-security-and-compliance-center.md#retry)
+[Retry a search](run-a-content-search-in-the-security-and-compliance-center.md#retry)
   
 
   
@@ -57,7 +57,7 @@ La búsqueda de contenido es una nueva herramienta de búsqueda de eDiscovery co
     
 - Para tener acceso a la página de **búsqueda de contenido** y realizar búsquedas y obtener una vista previa de los resultados de la búsqueda, un administrador, un responsable de cumplimiento o un administrador de eDiscovery debe ser miembro &amp; del grupo de roles eDiscovery Manager en el cumplimiento de seguridad. Datacenter. No tiene que asignar permisos de búsqueda adicionales en los sitios de Exchange Online, SharePoint Online o OneDrive para la empresa. Para obtener más información, consulte [asignar permisos de exhibición de documentos electrónicos &amp; en el centro de seguridad y cumplimiento de Office 365](assign-ediscovery-permissions.md).
     
-- Se aplican límites a la búsqueda de contenido para mantener el mantenimiento y la calidad de los servicios proporcionados a las organizaciones de Office 365. En la mayoría de los casos, no puede modificar estos límites, pero debe conocerlos para que pueda tener en cuenta estos límites al planear, ejecutar y solucionar problemas de búsquedas. Para obtener más información, consulte [límites de búsqueda en el centro de &amp; seguridad y cumplimiento de Office 365](limits-for-content-search.md).
+- Se aplican límites a la búsqueda de contenido para mantener el mantenimiento y la calidad de los servicios proporcionados a las organizaciones de Office 365. En la mayoría de casos, estos límites no se pueden modificar, pero debe conocerlos para tenerlos en cuenta a la hora de planear, ejecutar y solucionar problemas de búsquedas. Para obtener más información, consulte [límites de búsqueda en el centro de &amp; seguridad y cumplimiento de Office 365](limits-for-content-search.md).
     
 - Consulte la sección para buscar horas estimadas en función del número de buzones de correo que se buscan en una sola búsqueda de contenido. 
     
@@ -71,7 +71,7 @@ La búsqueda de contenido es una nueva herramienta de búsqueda de eDiscovery co
     
 [Return to top](run-a-content-search-in-the-security-and-compliance-center.md#top)
   
-## <a name="create-a-search"></a>Crear una búsqueda
+## <a name="create-a-search"></a>Create a search
 <a name="create"> </a>
 
 1. Vaya a [https://protection.office.com](https://protection.office.com).
@@ -98,7 +98,7 @@ La búsqueda de contenido es una nueva herramienta de búsqueda de eDiscovery co
     
     **Buzones**
     
-  - Al hacer clic en **Agregar**![icono](media/ITPro-EAC-AddIcon.gif) para agregar para especificar los buzones que se van a buscar, el selector de buzón que se muestra está vacío. Esto se debe a su diseño para mejorar el rendimiento. Para agregar destinatarios a esta lista, escriba un nombre (con un mínimo de 3 caracteres) en el cuadro de búsqueda ****![y haga clic](media/5f6f9463-50e9-460b-8738-b67e759c2efc.gif)en el icono Buscar búsqueda.
+  - Al hacer clic en **Agregar**![icono](media/ITPro-EAC-AddIcon.gif) para agregar para especificar los buzones que se van a buscar, el selector de buzón que se muestra está vacío. Esto se ha diseñado así para mejorar el rendimiento. Para agregar destinatarios a esta lista, escriba un nombre (con un mínimo de 3 caracteres) en el cuadro de búsqueda ****![y haga clic](media/5f6f9463-50e9-460b-8738-b67e759c2efc.gif)en el icono Buscar búsqueda.
     
   - Puede Agregar buzones de correo inactivos y grupos de distribución a la lista de buzones para buscar. Para los grupos de distribución, se busca en los buzones de los miembros del grupo. Tenga en cuenta que no se admiten los grupos de distribución dinámicos.
     
@@ -126,7 +126,7 @@ La búsqueda de contenido es una nueva herramienta de búsqueda de eDiscovery co
     
     ![Crear una consulta de búsqueda con palabras clave y condiciones](media/1b7cf7b5-f1e1-471a-ad5c-48aad8435b00.png)
   
-1. En el cuadro que **encontrará en ¿qué desea que busquemos?**, escriba una consulta de búsqueda en el cuadro. Puede especificar palabras clave, propiedades del mensaje, como las fechas de envío y recepción, o propiedades del documento, como nombres de archivo o la fecha en que se modificó por última vez un documento. Puede usar consultas más complejas que usen un operador booleano, como **and**, **or**, **Not**, **Near**o **ONEAR**. También puede buscar información confidencial (por ejemplo, los números de la seguridad social) en documentos o buscar documentos que se han compartido de forma externa. Si deja vacío el cuadro palabra clave, todo el contenido ubicado en las ubicaciones de contenido especificadas se incluirá en los resultados de la búsqueda. 
+1. En **¿Qué desea buscar?**, escriba una consulta de búsqueda en el cuadro. Puede especificar palabras clave, propiedades del mensaje como la fecha de envío y de recepción, o propiedades del documento como nombres de archivo o la fecha de la última modificación de un documento. Puede usar consultas más complejas que usen un operador booleano, como **and**, **or**, **Not**, **Near**o **ONEAR**. También puede buscar información confidencial (por ejemplo, los números de la seguridad social) en documentos o buscar documentos que se han compartido de forma externa. Si deja vacío el cuadro palabra clave, todo el contenido ubicado en las ubicaciones de contenido especificadas se incluirá en los resultados de la búsqueda. 
     
 2. Puede hacer clic en la casilla **Mostrar lista de palabras clave** y escribir una palabra clave en cada fila. Si hace esto, las palabras clave de cada fila están conectadas mediante el operador **or** en la consulta de búsqueda que se crea. 
     
@@ -138,7 +138,7 @@ La búsqueda de contenido es una nueva herramienta de búsqueda de eDiscovery co
     
 3. Haga clic en **comprobar consulta si hay errores tipográficos** para comprobar la consulta en busca de caracteres no admitidos y para los operadores booleanos que podrían no estar en mayúsculas. Los caracteres no admitidos suelen estar ocultos y, por lo general, causan un error de búsqueda o devuelven resultados no deseados. Para obtener más información acerca de los caracteres no admitidos que se comprueban, vea [comprobar si hay errores en la consulta de búsqueda de contenido](check-your-content-search-query-for-errors.md).
     
-4. En **condiciones**, agregue condiciones a una consulta de búsqueda para restringir una búsqueda y devolver un conjunto de resultados más refinado. Cada condición agrega una cláusula a la consulta de búsqueda de KQL que se crea y se ejecuta cuando se inicia la búsqueda. Una condición está conectada lógicamente a la consulta de palabras clave (que se especifica en el cuadro palabra clave) por el operador **and** . Esto significa que los elementos deben cumplir con la consulta de palabras clave y la condición que se va a incluir en los resultados. Este es el modo en que las condiciones ayudan a restringir los resultados. 
+4. En **condiciones**, agregue condiciones a una consulta de búsqueda para restringir una búsqueda y devolver un conjunto de resultados más refinado. Con cada condición, se agrega una cláusula a la consulta de búsqueda KQL que se crea y se ejecuta al iniciar la búsqueda. Una condición está conectada de forma lógica con la consulta por palabra clave (especificada en el cuadro de palabra clave) mediante el operador **AND**. Eso significa que los elementos tienen que satisfacer la consulta de palabra clave y la condición para que se incluyan en los resultados. De esta manera, las condiciones permiten restringir los resultados. 
     
 ||
 |:-----|
@@ -154,7 +154,7 @@ La búsqueda de contenido es una nueva herramienta de búsqueda de eDiscovery co
     
 2. El número (y el tamaño total) de los elementos encontrados que coinciden con la consulta de búsqueda. Algunos ejemplos de tipos de elementos son los mensajes de correo electrónico, los elementos de calendario y los documentos. Si un elemento contiene varias instancias de una palabra clave que se está buscando, solo se cuenta una vez en el número total de elementos. Por ejemplo, si está buscando palabras "stock" o "TIP" y un mensaje de correo electrónico contiene tres instancias de la palabra "stock", solo se considera una vez en el campo **elementos** . 
     
-3. Número y tamaño total de los elementos sin indexar en las ubicaciones de contenido en las que se realizó la búsqueda. El número de elementos sin indexar que no cumplen los criterios de búsqueda se incluirá en las estadísticas de búsqueda que se muestran en el panel de detalles. Si un elemento sin indizar coincide con la consulta de búsqueda (porque otras propiedades de mensaje o documento cumplen los criterios de búsqueda), no se incluirá en el número estimado de elementos sin indexar. Sin embargo, si un elemento sin indexar se excluye por los criterios de búsqueda, no se incluirá en la estimación de los elementos sin indexar.
+3. Número y tamaño total de los elementos sin indexar en las ubicaciones de contenido en las que se realizó la búsqueda. El número de elementos no indexados que no cumplen los criterios de búsqueda se incluirán en las estadísticas de búsqueda que se muestran en el panel de detalles. Si un elemento sin indizar coincide con la consulta de búsqueda (porque otras propiedades de mensaje o documento cumplen los criterios de búsqueda), no se incluirá en el número estimado de elementos sin indexar. Sin embargo, si un elemento sin indexar se excluye por los criterios de búsqueda, no se incluirá en la estimación de los elementos sin indexar.
     
 4. Número de cada tipo de ubicación de contenido en la que se ha buscado. Para los buzones, tenga en cuenta que los buzones de archivo se incluyen en el número total de buzones en los que se realizó la búsqueda. En el ejemplo anterior, se han buscado cuatro buzones de usuario y el buzón de archivo de cada uno de estos usuarios está habilitado. Por este motivo, se citan ocho buzones en las estadísticas de búsqueda.
     
@@ -167,12 +167,12 @@ La búsqueda de contenido es una nueva herramienta de búsqueda de eDiscovery co
 ## <a name="export-search-results"></a>Exportar resultados de búsqueda
 <a name="export"> </a>
 
-Una vez ejecutada correctamente la búsqueda, puede exportar los resultados de la búsqueda a un equipo local. Cuando se exportan los resultados del correo electrónico, se descargan en el equipo como archivos PST. Al exportar contenido de sitios de SharePoint y OneDrive para la empresa, se exportan copias de documentos nativos de Office. También hay otros documentos e informes que se incluyen con los resultados de la búsqueda exportados. Para obtener más información, vea [exportar resultados de búsqueda desde el centro &amp; de seguridad y cumplimiento de Office 365](export-search-results.md).
+Una vez ejecutada correctamente la búsqueda, puede exportar los resultados de la búsqueda a un equipo local. Cuando exporta los resultados de correo electrónico, estos se descargan en su equipo como archivos PST. Al exportar contenido de sitios de SharePoint y OneDrive para la empresa, se exportan copias de documentos nativos de Office. También existen documentos e informes adicionales que se incluyen con los resultados de búsqueda exportados. Para obtener más información, vea [exportar resultados de búsqueda desde el centro &amp; de seguridad y cumplimiento de Office 365](export-search-results.md).
   
-## <a name="preview-search-results"></a>Obtener una vista previa de los resultados de la búsqueda
+## <a name="preview-search-results"></a>Vista previa de los resultados de búsqueda
 <a name="preview"> </a>
 
-Una vez completada correctamente la búsqueda, puede obtener una vista previa de los resultados de la búsqueda. Hay una serie de límites relacionados con la vista previa de los resultados de la búsqueda de contenido. Para obtener más información, consulte [límites de búsqueda en el centro de &amp; seguridad y cumplimiento de Office 365](limits-for-content-search.md). Tenga en cuenta que los elementos sin indexar no están disponibles para la vista previa.
+Una vez que la búsqueda ha finalizado correctamente, puede obtener una vista previa de los resultados. Hay una serie de límites relacionados con la vista previa de resultados de búsqueda de contenido. Para obtener más información, consulte [límites de búsqueda en el centro de &amp; seguridad y cumplimiento de Office 365](limits-for-content-search.md). Tenga en cuenta que los elementos sin indexar no están disponibles para la vista previa.
   
 1. En la página **búsqueda de contenido** , seleccione una búsqueda. 
     
@@ -187,7 +187,7 @@ Una vez completada correctamente la búsqueda, puede obtener una vista previa de
 4. Si no se admite un tipo de archivo para la vista previa o para descargar una copia de un documento, puede hacer clic en **Descargar archivo original** para descargarlo en el equipo local. Para las páginas Web. aspx, la dirección URL de la página se incluye aunque es posible que no tenga permisos para obtener acceso a la página. 
     
 > [!NOTE]
-> Si obtiene una vista previa de los resultados de búsqueda de una búsqueda que se ejecutó hace más de 7 días, se le pedirá que actualice los resultados de la búsqueda. La búsqueda se vuelve a ejecutar para obtener los resultados más actuales que coinciden con la consulta de búsqueda. 
+> Si realiza una vista previa de los resultados de búsqueda de una búsqueda que se ejecutó por última vez hace más de 7 días, se le pedirá que actualice los resultados de la búsqueda. La búsqueda se vuelve a ejecutar para obtener los resultados más actuales que coinciden con la consulta de búsqueda. 
   
 ### <a name="file-types-that-can-be-previewed"></a>Tipos de archivo que se pueden mostrar en vista previa
 
@@ -220,7 +220,7 @@ Al actualizar los resultados de una búsqueda de contenido existente, la consult
     
 2. En el panel de detalles, en **Resultados**, haga clic en **Actualizar resultados de la búsqueda**.
     
-    Se muestra un mensaje de estado que indica que se están recuperando los resultados. Una vez finalizada la búsqueda, la información actualizada se muestra en **resultados** en el panel de detalles. Tenga en cuenta que la fecha **** del campo buscado en el panel de detalles se actualiza a la fecha y hora actuales. Para actualizar la información de la lista de búsquedas de contenido, ****![haga clic en](media/O365-MDM-Policy-RefreshIcon.gif)actualizar icono de actualización.
+    Se muestra un mensaje de estado que indica que los resultados se van a recuperar. Una vez finalizada la búsqueda, la información actualizada aparece en **Resultados** en el panel de detalles. Tenga en cuenta que la fecha del campo **Buscado** del panel de detalles se actualiza a la fecha y la hora actuales. Para actualizar la información de la lista de búsquedas de contenido, ****![haga clic en](media/O365-MDM-Policy-RefreshIcon.gif)actualizar icono de actualización.
     
 [Return to top](run-a-content-search-in-the-security-and-compliance-center.md#top)
   
@@ -233,7 +233,7 @@ Puede cambiar los buzones de origen y la consulta de búsqueda de una búsqueda 
     
 2. En el panel de detalles, en **Consulta**, haga clic en **Editar búsqueda**.
     
-3. En la página **ubicaciones** , puede cambiar los buzones de correo, los grupos, los sitios de SharePoint o los sitios de OneDrive para la empresa que se van a buscar. También puede seleccionar (o cancelar la selección) para buscar en todas las carpetas públicas de Exchange. 
+3. En la página **ubicaciones** , puede cambiar los buzones de correo, los grupos, los sitios de SharePoint o los sitios de OneDrive para la empresa que se van a buscar. También puede seleccionar (o anular la selección) la búsqueda en todas las carpetas públicas de Exchange. 
     
 4. En la página **consulta** , puede editar la consulta de búsqueda. 
     
@@ -250,32 +250,32 @@ Si una búsqueda devuelve algún error, no es necesario volver a buscar en todas
     
 2. En el panel de detalles, en **Error**, haga clic en **Reintentar la búsqueda**.
     
-    Se muestra un mensaje de estado que indica que se están recuperando los resultados. Una vez completada la búsqueda, la información actualizada se muestra en **resultados** en el panel de detalles. Tenga en cuenta que la fecha **** del campo buscado en el panel de detalles se actualiza a la fecha y hora actuales. Para actualizar la información de la lista de búsquedas, haga ****![clic en actualizar](media/O365-MDM-Policy-RefreshIcon.gif)icono de actualización.
+    Se muestra un mensaje de estado que indica que los resultados se van a recuperar. Una vez finalizada la búsqueda, la información actualizada aparece en **Resultados** en el panel de detalles. Tenga en cuenta que la fecha del campo **Buscado** del panel de detalles se actualiza a la fecha y la hora actuales. Para actualizar la información de la lista de búsquedas, haga ****![clic en actualizar](media/O365-MDM-Policy-RefreshIcon.gif)icono de actualización.
     
-[Return to top](run-a-content-search-in-the-security-and-compliance-center.md#top)
+[Volver al principio](run-a-content-search-in-the-security-and-compliance-center.md#top)
   
 ## <a name="more-information"></a>Más información
 <a name="moreinfo"> </a>
 
 Aquí encontrará más información sobre las búsquedas de contenido.
   
-[Límites y rendimiento](run-a-content-search-in-the-security-and-compliance-center.md#limits)
+[Límites y rendimiento](#limits-and-performance)
   
-[Elementos sin indexar](run-a-content-search-in-the-security-and-compliance-center.md#unindexeditems)
+[Elementos sin indexar](#unindexed-items) 
+ 
+[Microsoft Teams y Office 365 grupos](#microsoft-teams-and-office-365-groups)
   
-[Microsoft Teams y Office 365 grupos](run-a-content-search-in-the-security-and-compliance-center.md#teams)
+[OneDrive para la Empresa](#onedrive-for-business)
   
-[OneDrive para la Empresa](run-a-content-search-in-the-security-and-compliance-center.md#onedrive)
+[Consultas de búsqueda](#search-queries)
   
-[Consultas de búsqueda](run-a-content-search-in-the-security-and-compliance-center.md#queries)
+[Buscar buzones inactivos](#searching-inactive-mailboxes)
   
-[Buscar buzones inactivos](run-a-content-search-in-the-security-and-compliance-center.md#inactivemailboxes)
+[Varios](#miscellaneous)
   
-[Varios](run-a-content-search-in-the-security-and-compliance-center.md#misc)
+[Return to top](#before-you-begin)
   
-[(Volver al principio)](run-a-content-search-in-the-security-and-compliance-center.md#top)
-  
- **Límites y rendimiento**
+### <a name="limits-and-performance"></a>Límites y rendimiento
   
 - Para obtener una descripción de los límites que se aplican a la característica de búsqueda de contenido, consulte [limits for Search &amp; in the Office 365 Security Compliance Center](limits-for-content-search.md).
     
@@ -290,15 +290,14 @@ Aquí encontrará más información sobre las búsquedas de contenido.
 |50.000  <br/> |20 minutos  <br/> |
 |100,000  <br/> |25 minutos  <br/> |
    
-
   
- **Elementos sin indexar**
+### <a name="unindexed-items"></a>Elementos sin indexar
   
-- Como se explicó anteriormente, los elementos sin indexar de las ubicaciones de contenido que se buscan se incluyen en los resultados de búsqueda estimados. Si un elemento sin indizar coincide con la consulta de búsqueda (porque otras propiedades de mensaje o documento cumplen los criterios de búsqueda), no se incluirá en el número estimado de elementos sin indexar. Si un elemento sin indexar se excluye por los criterios de búsqueda, tampoco se incluirá en el número estimado de elementos sin indexar. Para obtener más información, consulte [elementos sin indexar en la búsqueda de contenido](https://go.microsoft.com/fwlink/p/?LinkId=780739).
+- Como se explicó anteriormente, los elementos sin indexar de las ubicaciones de contenido que se buscan se incluyen en los resultados de búsqueda estimados. Si un elemento sin indizar coincide con la consulta de búsqueda (porque otras propiedades de mensaje o documento cumplen los criterios de búsqueda), no se incluirá en el número estimado de elementos sin indexar. Si un elemento sin indexar se excluye por los criterios de búsqueda, tampoco se incluirá en el número estimado de elementos sin indexar. Para obtener más información, consulte [Unindexed items in Content Search](https://go.microsoft.com/fwlink/p/?LinkId=780739).
     
 
   
- **Microsoft Teams y Office 365 grupos**
+### <a name="microsoft-teams-and-office-365-groups"></a>Microsoft Teams y Office 365 grupos
   
 - Microsoft Teams se basa en grupos de Office 365. Por lo tanto, las búsquedas son muy parecidas. Tenga en cuenta lo siguiente cuando busque contenido en Microsoft Teams y grupos de Office 365.
     
@@ -343,15 +342,12 @@ Aquí encontrará más información sobre las búsquedas de contenido.
     > [!NOTE]
     > La capacidad de buscar en el wiki un canal o un equipo de Microsoft (cuando se realiza una búsqueda en el sitio de SharePoint del equipo) se presentó el 22 de junio de 2017. Las páginas wiki que se guardaron o actualizaron en esa fecha o después están disponibles para su búsqueda. Las páginas wiki que se guardaron o actualizaron por última vez antes de esa fecha no están disponibles para la búsqueda. 
   
-
-  
- **OneDrive para la Empresa **
+### <a name="onedrive-for-business"></a>OneDrive para la Empresa
   
 - Para recopilar una lista de las direcciones URL de los sitios de OneDrive para la empresa de su organización, vea [crear una lista de todas las ubicaciones de onedrive en la organización](https://support.office.com/article/8e200cb2-c768-49cb-88ec-53493e8ad80a). El script de este artículo crea un archivo de texto que contiene una lista de todos los sitios de OneDrive para la empresa. Para ejecutar este script, tendrá que instalar y usar el shell de administración de SharePoint Online. Asegúrese de anexar la dirección URL para el dominio de mi sitio de la organización en cada sitio de OneDrive para la empresa que desee buscar. Este es el dominio que contiene todos los OneDrive para la empresa; por ejemplo, `https://contoso-my.sharepoint.com`. Este es un ejemplo de una dirección URL para el sitio de OneDrive para la empresa `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`de un usuario:.
     
 
-  
- **Consultas de búsqueda**
+### <a name="search-queries"></a>Consultas de búsqueda
   
 - Tenga en cuenta lo siguiente cuando use la lista de palabras clave para crear una consulta de búsqueda.
     
@@ -367,7 +363,7 @@ Aquí encontrará más información sobre las búsquedas de contenido.
   
   - También puede preparar una lista de palabras clave o frases de palabras clave en un archivo de Excel o en un archivo de texto sin formato y, a continuación, copiar y pegar la lista en la lista de palabras clave. Para ello, debe activar la casilla **Mostrar lista de palabras clave** . A continuación, haga clic en la primera fila de la lista de palabras clave y pegue la lista. Cada línea del archivo de texto o Excel se pegará en la fila independiente de la lista de palabras clave. 
     
-  - Después de crear una consulta con la lista de palabras clave, se recomienda comprobar la sintaxis de la consulta de búsqueda (en el panel de detalles de la búsqueda seleccionada) para que la consulta de búsqueda sea la deseada. En la consulta de búsqueda que se muestra en **consulta** en el panel de detalles, las palabras clave están separadas por el texto **(c:s)**. esto indica que las palabras clave están conectadas por el operador **or** . De forma similar, si la consulta de búsqueda incluye condiciones, las palabras clave y las condiciones están separadas por el texto **(c:c)**. esto indica que las palabras clave están conectadas a las condiciones por el operador **and** . Este es un ejemplo de la consulta de búsqueda (que se muestra en el panel de detalles) que se obtiene al usar la lista de palabras clave y una condición. 
+  - Después de crear una consulta con la lista de palabras clave, se recomienda comprobar la sintaxis de la consulta de búsqueda (en el panel de detalles de la búsqueda seleccionada) para que la consulta de búsqueda sea la deseada. En la consulta de búsqueda que se muestra en **consulta** en el panel de detalles, las palabras clave están separadas por el texto **(c:s)**. Esto indica que las palabras clave están conectadas por el operador **or** . De forma similar, si la consulta de búsqueda incluye condiciones, las palabras clave y las condiciones están separadas por el texto **(c:c)**. Esto indica que las palabras clave están conectadas a las condiciones por el operador **and** . Este es un ejemplo de la consulta de búsqueda (que se muestra en el panel de detalles) que se obtiene al usar la lista de palabras clave y una condición. 
     
     ![Ejemplo de la consulta que se crea al usar la lista de palabras clave y una condición](media/b463750c-57fa-4602-9fed-0d5a420db3ad.png)
   
@@ -384,8 +380,7 @@ Aquí encontrará más información sobre las búsquedas de contenido.
     Por ejemplo, para cambiar la configuración de idioma a chino, se usaría `zh-CN` para el valor de código de referencia cultural. Después de cambiar la configuración de idioma, tendrá que volver a ejecutar la búsqueda. Para obtener una lista de los posibles valores de código de referencia cultural, vea [CultureInfo (clase](https://go.microsoft.com/fwlink/p/?LinkID=184859)). Para las búsquedas de contenido, se recomienda usar códigos de referencia cultural de dos partes para el valor de la configuración de idioma; por ejemplo, `ja-JP` y no `ja`.
     
 
-  
- **Buscar buzones inactivos**
+### <a name="searching-inactive-mailboxes"></a>Buscar buzones inactivos
   
 Como se mencionó anteriormente, puede buscar buzones inactivos en una búsqueda de contenido. Estas son algunas de las cosas que debe tener en cuenta al buscar buzones inactivos.
   
@@ -401,14 +396,12 @@ Como se mencionó anteriormente, puede buscar buzones inactivos en una búsqueda
     
   - [Eliminar un buzón inactivo en Office 365](delete-an-inactive-mailbox.md)
     
-
-  
- **Varios**
+### <a name="miscellaneous"></a>Varios
   
 - Las búsquedas de contenido creadas en la página **búsqueda** de contenido &amp; en el centro de seguridad y cumplimiento no se muestran en la página **conservación de exhibición &amp; ** de documentos electrónicos local en el centro de administración de Exchange. Esto se debe a que la arquitectura de búsqueda de contenido y los objetos de &amp; búsqueda creados en el centro de seguridad y cumplimiento son completamente diferentes a la característica de exhibición de documentos electrónicos local en Exchange Online. 
     
     Por el mismo motivo, las búsquedas creadas en la página **búsqueda de contenido** no se muestran en la página **búsquedas** de un caso de &amp; exhibición de documentos electrónicos en el centro de seguridad y cumplimiento. 
     
-- ¿Cuál es la diferencia entre reiniciar y volver a intentar una búsqueda? Cuando se reinicia una búsqueda, todas las ubicaciones de contenido que se especifican en la búsqueda se vuelven a buscar en una nueva búsqueda de vista previa. Sin embargo, cuando se vuelve a intentar una búsqueda, solo se vuelven a buscar las ubicaciones de contenido en las que se produjo un error cuando se ejecutó la búsqueda por última vez.
+- ¿Cuál es la diferencia entre reiniciar y reintentar una búsqueda? Cuando se reinicia una búsqueda, todas las ubicaciones de contenido que se especifican en la búsqueda se vuelven a buscar en una nueva búsqueda de vista previa. Sin embargo, cuando se vuelve a intentar una búsqueda, solo se vuelven a buscar las ubicaciones de contenido en las que se produjo un error cuando se ejecutó la búsqueda por última vez.
    
 

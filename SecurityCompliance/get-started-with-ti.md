@@ -15,12 +15,12 @@ ms.assetid: 38e9b67f-d188-490f-bc91-a1ae4b270441
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre la investigación y respuesta de amenazas de Office 365 y cómo comenzar.
-ms.openlocfilehash: f30a3c8007d2643a67f59d9421496e9ae0bc6e8c
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: a04b39ecb11c33baa647bb9716af9ff12aed755e
+ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693139"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30862524"
 ---
 # <a name="get-started-with-threat-investigation-and-response-office-365-advanced-threat-protection-plan-2"></a>Introducción a la investigación y respuesta de amenazas (Office 365 Advanced Threat Protection Plan 2)
 
@@ -37,7 +37,7 @@ Las capacidades de investigación y respuesta de amenazas ayudan a impulsar la i
   
 ## <a name="get-acquainted-with-the-threat-dashboard-explorer-and-incidents"></a>Familiarizarse con el panel de amenazas, el explorador y los incidentes
 
-Estas capacidades de investigación y respuesta de amenazas en el &amp; centro de seguridad y cumplimiento, como un conjunto de herramientas y flujos de trabajo de respuesta, incluidos el [Panel de amenazas](get-started-with-ti.md#dashboard), el [Explorador de amenazas](get-started-with-ti.md#explorer), los [incidentes](get-started-with-ti.md#incidents), los [ataques Simulador](attack-simulator.md)e investigación automatizaDa _AMP_ Response.
+Estas capacidades de investigación y respuesta de amenazas en el &amp; centro de seguridad y cumplimiento, como un conjunto de herramientas y flujos de trabajo de respuesta, incluidos el [Panel de amenazas](#threat-dashboard), el [Explorador de amenazas](#threat-explorer), los [incidentes](get-started-with-ti.md#incidents), los [ataques Simulador](attack-simulator.md)e investigación automatizaDa _AMP_ Response.
   
 ### <a name="threat-dashboard"></a>Panel de amenazas
 

@@ -13,18 +13,18 @@ search.appverid:
 - MOE150
 ms.assetid: 2062c312-b1e4-4ce7-8cb2-ea39bc0dfdad
 description: Las aplicaciones de OAuth en Office 365 Cloud App Security ayudan a administrar las aplicaciones que los usuarios descargan para usar con datos de Office 365
-ms.openlocfilehash: 510cb64f2267c99b783f86a69f7b7a84db8d84dd
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 0d9916414d55abb73fd99eaf30c3b6df0648b191
+ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219830"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30862592"
 ---
 # <a name="manage-oauth-apps-using-office-365-cloud-app-security"></a>Administrar aplicaciones de OAuth con Office 365 Cloud App Security
 
 |Evaluación * *\>**|Planeación * *\>**|Implementación * *\>**|Uso * * * *|
 |:-----|:-----|:-----|:-----|
-|[Empezar a evaluar](office-365-cas-overview.md) <br/> |[Empezar a planear](get-ready-for-office-365-cas.md) <br/> |[Iniciar la implementación](turn-on-office-365-cas.md) <br/> |Ya está aquí.  <br/> [Pasos siguientes](manage-app-permissions-in-ocas.md#nextsteps) <br/> |
+|[Empezar a evaluar](office-365-cas-overview.md) <br/> |[Empezar a planear](get-ready-for-office-365-cas.md) <br/> |[Iniciar la implementación](turn-on-office-365-cas.md) <br/> |Ya está aquí.  <br/> [Siguientes pasos](#next-steps)<br/> |
    
 Las personas adoran aplicaciones y las descargan con frecuencia, especialmente las aplicaciones que los usuarios creen que ahorrarán tiempo al facilitar la obtención de información profesional o educativa. Sin embargo, algunas aplicaciones podrían ser un riesgo para la seguridad de la organización, en función de la información a la que tengan acceso y de cómo controlan dicha información. Con [Office 365 Cloud App Security](office-365-cas-overview.md), si es un administrador global o de seguridad, puede administrar las aplicaciones de OAuth para su organización. Puede ver las aplicaciones que usan los usuarios con datos de Office 365, los permisos que tienen las aplicaciones y mucho más. 
   
@@ -49,9 +49,9 @@ En la tabla siguiente se describen los controles y las opciones disponibles en l
 |Icono avanzado en la barra de consulta de la aplicación  <br/> ![Icono que indica la vista de consulta avanzada para la consulta](media/9958d832-2c81-45ed-a642-d926310ba6b6.png)|Seleccione esta opción para cambiar a la vista básica.  <br/> (Si ve **avanzado**, está usando la vista básica).  <br/> |
 |Icono de abrir o cerrar todos los detalles en la lista de aplicaciones  <br/> ![Haga clic en este icono para abrir o cerrar todos los detalles de todas las aplicaciones](media/018fa996-10e8-48ff-986e-55f2b69a5753.png)|Seleccione este icono para ver más o menos detalles sobre cada aplicación.  <br/> |
 |Icono exportar en la lista de aplicaciones  <br/> ![Haga clic en este icono para exportar un archivo CSV de todas las aplicaciones](media/98446851-fd96-4d09-9bb0-831db33090c1.png)|Seleccione este icono para exportar un archivo CSV que contenga una lista de aplicaciones, el número de usuarios de cada aplicación, los permisos asociados con la aplicación, el nivel de permisos, el estado de la aplicación y el nivel de uso de la comunidad.  <br/> |
-|Nombre  <br/> |Use esta para ver el nombre de una aplicación. Seleccione el nombre para ver más información, como su descripción, el sitio web de la aplicación y el identificador de aplicación.  <br/> |
+|Nombre  <br/> |Use esta para ver el nombre de una aplicación. Seleccione el nombre para ver más información, como su descripción, editor, sitio web de la aplicación e identificador de la aplicación.  <br/> |
 |Autorizado por  <br/> |Use esta para ver cuántos usuarios han autorizado una aplicación para tener acceso a su cuenta de Office 365. Seleccione el número para ver más información, como una lista de cuentas de usuario.  <br/> |
-|Nivel de permisos  <br/> ![Icono que indica el nivel de permisiions de una aplicación](media/aaebdd29-35b6-4c62-aef1-7c7817bd803d.png)|Use esta para ver cuánto acceso tiene una aplicación con los datos de Office 365. Los niveles de permisos indican **bajo**, **medio**o **alto**, donde **bajo** puede indicar que la aplicación solo tiene acceso al perfil y el nombre de un usuario. Seleccione el nivel para ver más información, como los permisos concedidos a la aplicación, el uso de la comunidad y la actividad relacionada en el [registro de gobierno](suspend-or-restore-an-account-in-ocas.md).<br/> |
+|Nivel de permisos  <br/> ![Icono que indica el nivel de permisiions de una aplicación](media/aaebdd29-35b6-4c62-aef1-7c7817bd803d.png)|Use esta para ver cuánto acceso tiene una aplicación con los datos de Office 365. Los niveles de permisos indican **bajo**, **medio**o **alto**, donde **bajo** puede indicar que la aplicación solo tiene acceso al perfil y el nombre de un usuario. Seleccione el nivel para ver más información, como los permisos concedidos a la aplicación, el uso de la comunidad y la actividad relacionada en el [registro de gobierno](suspend-or-restore-an-account-in-ocas.md).  <br/> |
 |Última autorización <br/> |Use esta para ver la fecha y la hora en que una aplicación de OAuth recibió la última autorización para obtener acceso a los datos de Office 365 de la organización. <br/>  |
 |Acciones<br/>![Aplicaciones de OAuth](media/OCAS-OAuthAppApproveBanReport.png)<br/> |Use esta opción para ver o marcar una aplicación como aprobada o prohibida, informar de una aplicación de OAuth a Microsoft o dejarla como indeterminada.  <br/> |
    
@@ -82,11 +82,11 @@ Si quiere enviar una aplicación de OAuth a Microsoft para su análisis, puede i
 
 2. Elija los puntos suspensivos verticales y, a continuación, elija **aplicación de informes...**.<br/>![Informar de una aplicación de OAuth](media/OCAS-MarkOAuthReported.png)<br/>
 
-3. En el cuadro de diálogo **informar de esta aplicación** , use la lista desplegable para indicar su preocupación. De forma predeterminada, **esta aplicación está** seleccionada como malintencionada. Sin embargo, puede elegir una de las otras opciones disponibles.<br/>![Informar de una aplicación de OAuth](media/OCAS-ReportOAuthApp.png)<br/>
+3. En el cuadro de diálogo **informar de esta aplicación** , use la lista desplegable para indicar su preocupación. De forma predeterminada, **esta aplicación está** seleccionada como malintencionada. Sin embargo, puede elegir una de las otras opciones disponibles. <br/>![Informar de una aplicación de OAuth](media/OCAS-ReportOAuthApp.png)<br/>
 
 4. Recomenda Mantenga la opción de ponerse en contacto con usted seleccionado y confirme (o modifique) la dirección de correo electrónico que aparece en la lista.
 
-5. Elija **Enviar**. 
+5. Choose **Submit**. 
     
 ## <a name="create-an-app-query"></a>Crear una consulta de aplicación
 

@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Con una directiva de prevención de pérdida de datos (DLP) en el &amp; centro de seguridad y cumplimiento de Office 365, puede identificar, supervisar y proteger automáticamente la información confidencial en Office 365.
-ms.openlocfilehash: 69ec5b2925d70c503655837af600f106379e1485
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.openlocfilehash: 7c776b3fd703ddb24d9d8195609384771858c7f5
+ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30639147"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30862542"
 ---
 # <a name="overview-of-data-loss-prevention-policies"></a>Información general sobre directivas de prevención de pérdida de datos
 
@@ -100,7 +100,7 @@ Las condiciones disponibles ahora pueden determinar si:
   
 - El contenido contiene un tipo de información confidencial.
     
-- El contenido contiene una etiqueta. Para obtener más información, vea la siguiente sección [uso de una etiqueta como condición en una directiva DLP](data-loss-prevention-policies.md#label).
+- El contenido contiene una etiqueta. Para obtener más información, vea la siguiente sección [uso de una etiqueta como condición en una directiva DLP](#using-a-label-as-a-condition-in-a-dlp-policy).
     
 - El contenido se comparte con personas de fuera o dentro de la organización.
     
@@ -506,10 +506,10 @@ Sin embargo, los informes DLP necesitan extraer datos de toda la oficina 365, in
     
 - [Qué incluyen las plantillas de directiva DLP](what-the-dlp-policy-templates-include.md)
     
-- [Información que buscan los tipos de información confidencial](what-the-sensitive-information-types-look-for.md)
+- [Qué buscan los tipos de información confidencial](what-the-sensitive-information-types-look-for.md)
     
 - [Qué buscan las funciones de DLP](what-the-dlp-functions-look-for.md)
     
-- [Crear un tipo de información confidencial personalizado](create-a-custom-sensitive-information-type.md)
+- [Crear un tipo personalizado de información confidencial](create-a-custom-sensitive-information-type.md)
     
 

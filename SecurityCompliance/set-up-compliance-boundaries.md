@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Use límites de cumplimiento para crear límites lógicos dentro de una organización de Office 365 que controlen las ubicaciones de contenido de usuario que puede buscar un administrador de exhibición de documentos electrónicos. Los límites de cumplimiento usan el filtrado de permisos de búsqueda (también denominados filtros de seguridad de cumplimiento) para controlar los buzones de correo, los sitios de SharePoint y las cuentas de OneDrive pueden ser buscados por usuarios específicos.
-ms.openlocfilehash: 2671711d5b37f9f0f8793bb528741dc7b6d05680
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: ea3c289c63d2ee777e88166a94bd9ed92abcbb26
+ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296433"
+ms.lasthandoff: 03/26/2019
+ms.locfileid: "30862442"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations-in-office-365"></a>Configurar los límites de cumplimiento para investigaciones de eDiscovery en Office 365.
 
@@ -101,7 +101,6 @@ Mediante el escenario de límites de cumplimiento de Contoso, es necesario crear
 
   
 ## <a name="step-4-create-a-search-permissions-filter-to-enforce-the-compliance-boundary"></a>Paso 4: crear un filtro de permisos de búsqueda para aplicar el límite de cumplimiento
-<a name="step4"> </a>
 
 Una vez que haya creado los grupos de roles para cada agencia, el siguiente paso consiste en crear los filtros de permisos de búsqueda que asocian cada grupo de funciones a su agencia específica y define el límite de cumplimiento en sí. Debe crear un filtro de permisos de búsqueda para cada agencia. Para obtener más información acerca de la creación de filtros de permisos de seguridad, vea [configurar el filtrado de permisos para búsqueda de contenido](permissions-filtering-for-content-search.md).
   
@@ -180,39 +179,40 @@ Tenga en cuenta las siguientes limitaciones al administrar casos de eDiscovery e
 
 ## <a name="searching-and-exporting-content-in-multi-geo-environments"></a>Búsqueda y exportación de contenido en entornos multiGeográfico
 
-Los filtros de permisos de búsqueda también permiten controlar dónde se enruta el contenido para la exportación y en qué centro de datos se pueden realizar búsquedas al buscar sitios de SharePoint y cuentas de OneDrive en un [entorno multigeográfico de SharePoint](https://go.microsoft.com/fwlink/?linkid=860840):
+Los filtros de permisos de búsqueda también permiten controlar dónde se enruta el contenido para la exportación y en qué centro de datos se puede buscar al buscar ubicaciones de contenido en un [entorno multigeográfico de SharePoint](https://go.microsoft.com/fwlink/?linkid=860840).
   
-- Exportar resultados de búsqueda de un centro de datos específico. Esto significa que puede especificar la ubicación del centro de datos desde la que se exportarán los resultados de la búsqueda.
+- **Exportar resultados** de la búsqueda: puede exportar los resultados de la búsqueda de los buzones de Exchange, los sitios de SharePoint y las cuentas de OneDrive desde un centro de información específico. Esto significa que puede especificar la ubicación del centro de recursos desde la que se exportarán los resultados de la búsqueda.
+
+    Use el parámetro **Region** para los cmdlets **New-ComplianceSecurityFilter** o **set-ComplianceSecurityFilter** para crear o cambiar el centro de recursos al que se redirigirá la exportación.
+  
+    |**Valor del parámetro**|**Ubicación del centro de recursos**|
+    |:-----|:-----|
+    |NAM  <br/> |Norteamérica (los centros de datos reales están en los Estados Unidos)  <br/> |
+    |EUR  <br/> |Europeos  <br/> |
+    |APC  <br/> |Asia Pacífico  <br/> |
+    |CAN <br/> |Canada
     
-- EnRutar búsquedas de sitios de SharePoint y cuentas de OneDrive a un centro de datos satélite. Esto significa que puede especificar la ubicación del centro de datos en la que se ejecutarán las búsquedas.
+- **Enrutar búsquedas de contenido** : puede enrutar las búsquedas de contenido de los sitios de SharePoint y las cuentas de OneDrive a un centro de datos satélite. Esto significa que puede especificar la ubicación del centro de recursos donde se ejecutarán las búsquedas.
     
-Use el parámetro **Region** para los cmdlets **New-ComplianceSecurityFilter** o **set-ComplianceSecurityFilter** para crear o cambiar el centro de recursos al que se redirigirá la exportación.
+    Use los siguientes valores para los valores de parámetro de **región** para controlar el centro de datos en el que se ejecutarán las búsquedas de contenido al buscar sitios de SharePoint y ubicaciones de OneDrive. Tenga en cuenta que en la tabla siguiente también se muestran las exportaciones del centro de recursos que se redirigirán. 
   
-|**Valor del parámetro**|**Ubicación del centro de datos**|
-|:-----|:-----|
-|NAM  <br/> |Norteamérica (los centros de datos reales están en Estados Unidos)  <br/> |
-|EUR  <br/> |Europeos  <br/> |
-|APC  <br/> |Asia Pacífico  <br/> |
-|CAN <br/> |Canadá
+    |**Valor del parámetro**|**Ubicaciones de enrutamiento de centro de recursos para la exportación**|
+    |:-----|:-----|
+    |NAM  <br/> |Infórmenos  <br/> |
+    |EUR  <br/> |Europeos  <br/> |
+    |APC  <br/> |Asia Pacífico  <br/> |
+    |CAN  <br/> |Infórmenos  <br/> |
+    |AUS  <br/> |Asia Pacífico  <br/> |
+    |KOR  <br/> |Centro de datos predeterminado de la organización  <br/> |
+    |GBR  <br/> |Europeos  <br/> |
+    |JPN  <br/> |Asia Pacífico  <br/> |
+    |IND  <br/> |Asia Pacífico  <br/> |
+    |LAM  <br/> |Infórmenos  <br/> |
    
-De forma similar, puede usar los siguientes valores para los valores de parámetros de **región** para controlar el centro de datos en el que se ejecutarán las búsquedas de contenido al buscar ubicaciones de SharePoint y OneDrive. Tenga en cuenta que la siguiente tabla también muestra qué exportaciones del centro de datos se redirigirán. 
+> [!NOTE]
+> Si no especifica el parámetro **Region** para un filtro de permisos de búsqueda, se buscará en la región de SharePoint predeterminada de las organizaciones y, a continuación, los resultados de la búsqueda se exportarán al centro de recursos más cercano. 
   
-|**Valor del parámetro**|**Ubicaciones de enrutamiento del centro de datos para la exportación**|
-|:-----|:-----|
-|NAM  <br/> |EE. UU.  <br/> |
-|EUR  <br/> |Europeos  <br/> |
-|APC  <br/> |Asia Pacífico  <br/> |
-|CAN  <br/> |EE. UU.  <br/> |
-|AUS  <br/> |Asia Pacífico  <br/> |
-|KOR  <br/> |Centro de datos predeterminado de la organización  <br/> |
-|GBR  <br/> |Europeos  <br/> |
-|JPN  <br/> |Asia Pacífico  <br/> |
-|IND  <br/> |Asia Pacífico  <br/> |
-|LAM  <br/> |EE. UU.  <br/> |
-   
- **Nota:** Si no especifica el parámetro region para un filtro de permisos de búsqueda, se buscará en la región de SharePoint predeterminada de organizaciones y, a continuación, los resultados de la búsqueda se exportarán al centro de datos más cercano. 
-  
-A continuación, se muestran ejemplos de cómo usar el parámetro **-Region** al crear filtros de permisos de búsqueda para límites de cumplimiento. Esto supone que la subsidiaria de Fourth Coffee se encuentra en Norteamérica y que Coho Winery está en Europa. 
+A continuación, se muestran ejemplos de cómo usar el parámetro **Region** al crear filtros de permisos de búsqueda para límites de cumplimiento. Esto supone que la subsidiaria de Fourth Coffee se encuentra en Norteamérica y que Coho Winery está en Europa. 
   
 ```
 New-ComplianceSecurityFilter -FilterName "Fourth Coffee Security Filter" -Users "Fourth Coffee eDiscovery Managers", "Fourth Coffee Investigators" -Filters "Mailbox_Department -eq 'FourthCoffee'", "Site_Department -eq 'FourthCoffee' -or Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'" -Action ALL -Region NAM
@@ -254,7 +254,7 @@ Un filtro de permisos de búsqueda tarda hasta tres días en aplicar el límite 
   
  **¿Puede un administrador de exhibición de documentos electrónicos ver contenido de dos límites de cumplimiento independientes?**
   
-Afirma. Esto puede hacerse agregando el usuario a los grupos de roles que tienen visibilidad en ambas agencias.
+Sí. Esto puede hacerse agregando el usuario a los grupos de roles que tienen visibilidad en ambas agencias.
   
  **¿Funcionan los filtros de permisos de búsqueda para las suspensiones de casos de eDiscovery, las directivas de retención de Office 365 o DLP?**
   

@@ -1,74 +1,53 @@
 ---
-title: Vídeos de introducción a EOP
+title: ¿Qué es EOP?
 ms.author: tracyp
-author: MSFTTracyP
+author: msfttracyp
+ms.reviewer: andypunt
 manager: laurawi
-ms.date: 3/13/2015
+ms.date: 2/25/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
+ms.custom: TN2DMC
 localization_priority: Normal
-ms.assetid: c9c39ada-6100-4034-a479-8bd39d428498
-ms.collection:
-- M365-security-compliance
-description: La siguiente serie de vídeos le ayudará a configurar y usar el servicio de filtrado de correo electrónico hospedado en Exchange Online Protection (EOP).
-ms.openlocfilehash: 1e8aadd173f4e30c528679347171230e83752af0
-ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
+search.appverid:
+- MET150
+ms.assetid: 393b0050-7c7e-49e6-a03d-b1e09fe4de9e
+description: Este documento introductorio le ayudará a comprender Exchange Online Protection (EOP) y una terminología importante. Esto es aplicable a los clientes de Office 365 que protegen buzones de correo hospedados en la nube de Exchange Online y a clientes independientes de EOP que protegen buzones locales como Exchange Server 2016.
+ms.openlocfilehash: f23f28b5c15c7057d1fd8ec77cce67bf1746410c
+ms.sourcegitcommit: fb50bf2f2c9d780c911f245a2f78c6bb5e357f67
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30926747"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "30950437"
 ---
-# <a name="videos-for-getting-started-with-eop"></a>Vídeos de introducción a EOP
+## <a name="what-is-exchange-online-protection-eop"></a>¿Qué es Exchange Online Protection (EOP)?
 
-La siguiente serie de vídeos le ayudará a configurar y usar el servicio de filtrado de correo electrónico hospedado en Exchange Online Protection (EOP).
-  
-> [!NOTE]
-> Antes de iniciar las tareas descritas en los vídeos, se recomienda configurar el flujo del correo. Para obtener más información, consulte el tema [Configure mail flow using connectors in Office 365](http://technet.microsoft.com/library/854b5a50-4462-4836-a092-37e208d29624.aspx). 
-  
-En estos vídeos, se describe cómo personalizar la configuración de filtro de correo electrónico no deseado para satisfacer las necesidades de su organización. Para el correo entrante a través del servicio a su organización, esto incluye la creación de un remitente seguro y listas de remitentes bloqueados según direcciones IP y la configuración de filtro de contenido. También hay un vídeo que muestra cómo los administradores pueden buscar y liberar mensajes de correo no deseado filtrados por contenido o mensajes que coinciden con una regla de flujo de correo (también denominada regla de transporte) que se enviaron a la cuarentena, y también cómo notificar mensajes de correo no deseado para ayudarnos a mejorar el servicio.
-  
-- Configurar listas de direcciones IP bloqueadas y direcciones IP permitidas en EOP
-    > [!VIDEO https://www.microsoft.com/videoplayer/embed/b2f5bea3-e1a7-44b3-b7e2-07fac0d0ca40?autoplay=false]
-  
-    Para más información, vea el tema [Configurar la directiva de filtro de conexión](../configure-the-connection-filter-policy.md). 
-    
-- Configurar el filtrado de contenido de correo no deseado en EOP
-    > [!VIDEO https://www.microsoft.com/videoplayer/embed/608be94c-d763-4c47-af94-99e7cb277713?autoplay=false]
-  
-    Para más información, vea el tema [Configurar las directivas de filtro de correo no deseado](../configure-your-spam-filter-policies.md). 
-    
-- Buscar y liberar mensajes en cuarentena
-    > [!VIDEO https://www.microsoft.com/videoplayer/embed/2a78346d-a3ab-4d70-a88e-0c9d562f7545?autoplay=false]
-  
-    Para más información, vea el tema [Buscar y liberar mensajes en cuarentena como un administrador](../find-and-release-quarantined-messages-as-an-administrator.md). 
-    
-También necesitará configurar la directiva de correos de salida no deseados porque necesitará supervisar si su organización está enviando coreo no deseado. Vea el vídeo de correo de salida no deseado para obtener más información.
-  
-- Configurar la directiva de correo no deseado saliente
-    > [!VIDEO https://www.microsoft.com/videoplayer/embed/1f20d655-0d3d-4141-9cae-e57f5a6cffe8?autoplay=false]
-  
-    Para más información, vea [Configurar la directiva de correo no deseado saliente](../configure-the-outbound-spam-policy.md).
-    
-EOP también tiene opciones de configuración sobre cómo administrar el malware que el servicio detecta. El vídeo sobre filtro antimalware describe este procedimiento.
-  
-- Configurar las directivas antimalware
-    > [!VIDEO https://www.microsoft.com/videoplayer/embed/12517702-ab48-4df8-a7ff-8eb02aa31724?autoplay=false]
-  
-    Para obtener más información, consulte el tema [Configure anti-malware Policies](../configure-anti-malware-policies.md) . 
-    
-Para filtrar y enrutar mensajes en función de condiciones específicas que establezca, según la Directiva o las regulaciones de la compañía, querrá ver el vídeo sobre cómo crear reglas de flujo de correo.
-  
-- Configurar reglas de flujo de correo de Exchange en EOP
-    > [!VIDEO https://www.microsoft.com/videoplayer/embed/7cdcd2cb-9382-4065-98e1-81257b32a189?autoplay=false]
-  
-    Para obtener más información, consulte el tema [reglas de flujo de correo (reglas de transporte) en Exchange Online Protection](mail-flow-rules-transport-rules-0.md) si usa EOP independiente o vea [reglas de flujo de correo (reglas de transporte) en Exchange Online](http://technet.microsoft.com/library/743bd525-0ca2-426d-b76c-b4a052bc8886.aspx) , si usa Exchange Online.
-    
-Si está interesado en configurar el servicio al ejecutar los scripts de la línea de comandos, el vídeo de PowerShell remoto le ayudará a comenzar.
-  
-- Usar PowerShell remoto en EOP
-    > [!VIDEO https://www.microsoft.com/videoplayer/embed/9cb28006-c2cb-45b6-b72e-eeed8767dee7?autoplay=false]
-  
-    Para obtener más información, consulte el tema [PowerShell en Exchange Online Protection](http://technet.microsoft.com/library/f7918a88-774a-405e-945b-bc2f5ee9f748.aspx) si usa EOP independiente, o consulte el tema [Exchange Online PowerShell](http://technet.microsoft.com/library/1cb603b0-2961-4afe-b879-b048fe0f64a2.aspx) si usa Exchange Online. 
-    
+Exchange Online Protection (EOP) es un servicio de filtrado de correo electrónico basado en la nube que ayuda a proteger la organización contra el correo no deseado y el malware. Si tiene buzones de correo en Office 365, estos se protegen automáticamente mediante EOP, ya que forma parte del servicio. Esto incluye a las organizaciones que tienen buzones de correo en Office 365 y local, lo que se conoce comúnmente como escenario híbrido. EOP independiente también está disponible para los clientes que no tienen buzones de correo en la nube pero que quieren proteger sus buzones locales. 
 
+EOP intenta filtrar el correo no deseado y mantener la bandeja de entrada sin contenido que los usuarios no desean ver. Normalmente, el correo no deseado se entrega a la carpeta de correo no deseado. Algunos usuarios desean comprobar que el filtrado está haciendo lo que desea, por lo que la carpeta de correo no deseado es una forma fácil de que los usuarios comprueben su propio contenido.  
+
+> [!TIP]
+> Lo más importante es que el correo electrónico no deseado o el correo no deseado se envíen automáticamente a la carpeta correo electrónico no deseado. El servicio hará lo necesario en función de cuál es el estado de configuración predeterminada o personalizada del administrador. Es decir, los usuarios no deben preocuparse por ver un gran número de mensajes de correo no deseado en la carpeta correo electrónico no deseado. Si los administradores prefieren mover todo el correo no deseado fuera de la vista, la cuarentena debe estar configurada. Para obtener más información, consulte el artículo [cuarentena de mensajes de correo electrónico en Office 365](../quarantine-email-messages.md) .
+
+## <a name="important-terms"></a>Términos importantes
+
+**Entrante:** Mensajes que entran en Office 365.
+
+**Saliente:** Mensajes que van a estar fuera de la oficina 365.
+
+**Interna:** Mensajes de alguien dentro de la organización a alguien dentro de la organización. Esto incluye a los clientes que están en escenarios híbridos y un buzón de correo puede estar local y el otro buzón de correo está en la nube.
+
+**Falso negativo (FN):** Correo no deseado y otros mensajes no deseados que se envían de forma incorrecta a la bandeja de entrada.
+
+**Falso positivo (FP):** Mensajes legítimos que se marcan de forma incorrecta como correo no deseado y se colocan en la carpeta de correo no deseado o en cuarentena.
+
+**Correo no deseado, también conocido como correo no deseado:** Esto viene en forma de publicidad comercial, cartas en cadena, correos políticos, etc. Este es el correo electrónico en el que los usuarios no se suscriben a y desde los remitentes de correo no deseado que intentan solicitar productos o intentar confirmar su fraude.
+
+**Phish:** La suPlantación de identidad (phishing) es un tipo especial de correo no deseado destinado a engañarle para que proporcione información personal con el propósito de confirmar el robo de identidad o el fraude. Este tipo de mensaje suele contener un vínculo o datos adjuntos malintencionados, pero no siempre.
+
+SuPlantación de **identidad:** La suPlantación de identidades es cuando los remitentes de correo no deseado falsifican el encabezado para que parezca que los mensajes se originaron en alguien o en algún lugar distinto del origen real. Esto puede ser correo no deseado, pero se usa con más frecuencia para phish a los usuarios.
+
+**Suplantación:** Este tipo de correo electrónico no deseado también es una forma de falsificar la dirección del remitente, pero se realiza modificando parte del nombre o del dominio para que tenga un aspecto similar al origen real. Por ejemplo, Bi11@micr0s0ft.com, donde "l" era realmente el número once y la "o" en Microsoft se reemplazó por el número cero.
+
+En **masa:** Normalmente, los usuarios solicitan correo masivo, aunque a veces las empresas venden información a otras compañías. Es habitual que los usuarios se suscriban intencionadamente para correo masivo (es decir, newletters), pero olvídese más adelante y piense que es correo no deseado. El correo masivo se convierte en correo no deseado cuando los remitentes masivos de correo envían más de un registro y los niveles de queja se hacen demasiado altos.
