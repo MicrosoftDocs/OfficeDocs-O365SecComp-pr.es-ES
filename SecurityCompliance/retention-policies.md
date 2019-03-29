@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con una directiva de retención, puede decidir de forma proactiva si quiere retener o eliminar contenido, ambos (retener y, a continuación, eliminar el contenido), aplicar una directiva única a la toda la organización o solo a determinadas ubicaciones o usuarios, o aplicar una directiva a todo el contenido o solo a aquel que cumpla ciertas condiciones.
-ms.openlocfilehash: 82125d13adfb42706a44feeaca3dfb85e06163f6
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: b07adf61f63e683de4f5868c227741dc957ffd68
+ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455452"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "30935305"
 ---
 # <a name="overview-of-retention-policies"></a>Introducción a las directivas de retención
 
@@ -244,7 +244,7 @@ Seguimos trabajando en el período de retención de Teams y vamos a agregar cara
     
 - **Las directivas para toda la organización no incluyen Teams** Si crea una directiva para toda la organización, no se incluye Teams porque requiere una directiva de retención diferente. 
     
-- **Teams no admite funciones avanzadas de retención** Al crear una directiva de retención, si elige [Configuración avanzada que aplica una directiva solo al contenido que cumple ciertas condiciones](retention-policies.md#advanced), no está disponible la ubicación de Teams. En la actualidad, la retención en Teams se aplica a todo el contenido de mensajes del chat y del canal.
+- **Teams no admite funciones avanzadas de retención** Al crear una directiva de retención, si elige [Configuración avanzada que aplica una directiva solo al contenido que cumple ciertas condiciones](#advanced-settings-that-apply-a-policy-only-to-content-that-meets-certain-conditions), no está disponible la ubicación de Teams. En la actualidad, la retención en Teams se aplica a todo el contenido de mensajes del chat y del canal.
     
 - **El contenido de Teams debe tener una antigüedad de 30 días para eliminarse** En la actualidad, no se admite la creación de una directiva para eliminar el contenido de equipos que tenga menos de 30 días. Si desea que esta directiva se aplique a contenido de Teams, especifique un período de retención igual o mayor que 30 días. 
     
@@ -252,7 +252,7 @@ Seguimos trabajando en el período de retención de Teams y vamos a agregar cara
     
 En Teams, los archivos compartidos en una conversación se almacenan en la cuenta de OneDrive del usuario que ha compartido un archivo. Los archivos que se cargan en canales se almacenan en el sitio de SharePoint para el equipo. Por lo tanto, para conservar o eliminar archivos de Teams, deberá crear una directiva de retención que se aplique a las ubicaciones de SharePoint y OneDrive. Si desea aplicar una directiva a los archivos de solo un grupo específico, puede elegir el sitio de SharePoint para Teams y las cuentas de OneDrive de usuarios de Teams.
   
-Una directiva de retención que se aplica a Teams puede usar [Bloqueo de conservación](retention-policies.md#locking).
+Una directiva de retención que se aplica a Teams puede usar [Bloqueo de conservación](#locking-a-retention-policy).
   
 ![Ubicaciones de Teams para mensajes de chat y de canal](media/127345da-e802-4b3a-afc7-6e354dc3f409.png)
   
