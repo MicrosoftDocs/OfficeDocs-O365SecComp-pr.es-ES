@@ -3,8 +3,8 @@ title: Información general sobre directivas de prevención de pérdida de datos
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 6/29/2018
-ms.audience: Admin
+ms.date: 3/29/2019
+ms.audience: ITPro
 ms.topic: conceptual
 f1_keywords:
 - ms.o365.cc.DLPLandingPage
@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Con una directiva de prevención de pérdida de datos (DLP) en el &amp; centro de seguridad y cumplimiento de Office 365, puede identificar, supervisar y proteger automáticamente la información confidencial en Office 365.
-ms.openlocfilehash: 7c776b3fd703ddb24d9d8195609384771858c7f5
-ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
+ms.openlocfilehash: 4117a99afc804fd397deb45087c5058077f9ff60
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30862542"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000023"
 ---
 # <a name="overview-of-data-loss-prevention-policies"></a>Información general sobre directivas de prevención de pérdida de datos
 
@@ -28,7 +28,7 @@ Para cumplir con los estándares de la empresa y las normativas del sector, las 
   
 Con una directiva DLP, puede:
   
-- **Identificar información confidencial en varias ubicaciones, como Exchange Online, SharePoint Online y OneDrive para la empresa.**
+- **Identificar información confidencial en varias ubicaciones, como Exchange Online, SharePoint Online, OneDrive para la empresa y Microsoft Teams.**
     
     Por ejemplo, puede identificar cualquier documento que contenga un número de tarjeta de crédito que esté almacenado en cualquier sitio de OneDrive para la empresa, o bien puede supervisar solo los sitios de OneDrive de personas específicas.
     
@@ -36,13 +36,13 @@ Con una directiva DLP, puede:
     
     Por ejemplo, puede identificar cualquier documento o correo electrónico que contenga un registro de mantenimiento compartido con personas de fuera de la organización y, a continuación, bloquear automáticamente el acceso a ese documento o impedir que se envíe el correo electrónico.
     
-- **Supervisar y proteger información confidencial en las versiones de escritorio de Excel 2016, PowerPoint 2016 y Word 2016.**
+- **Supervisar y proteger información confidencial en las versiones de escritorio de Excel, PowerPoint y Word.**
     
-    Al igual que en Exchange Online, SharePoint Online y OneDrive para la empresa, estos programas de escritorio de Office 2016 incluyen las mismas funciones para identificar información confidencial y aplicar directivas de DLP. DLP proporciona supervisión continua cuando las personas comparten contenido en estos programas de Office 2016.
+    Al igual que en Exchange Online, SharePoint Online y OneDrive para la empresa, estos programas de escritorio de Office incluyen las mismas capacidades para identificar información confidencial y aplicar directivas de DLP. DLP proporciona supervisión continua cuando las personas comparten contenido en estos programas de Office.
     
 - **Ayudar a los usuarios a aprender a cumplir sin interrumpir el flujo de trabajo.**
     
-    Puede educar a sus usuarios acerca de las directivas DLP y ayudar a que sigan manteniendo el cumplimiento normativo sin bloquear su trabajo. Por ejemplo, si un usuario intenta compartir un documento que contiene información confidencial, una directiva DLP puede enviarle una notificación por correo electrónico y mostrarle una sugerencia de directiva en el contexto de la biblioteca de documentos que le permite invalidar la directiva si tiene una justificación comercial. Las mismas sugerencias de directiva también aparecen en Outlook en la web, Outlook 2013 y versiones posteriores, Excel 2016, PowerPoint 2016 y Word 2016.
+    Puede educar a sus usuarios acerca de las directivas DLP y ayudar a que sigan manteniendo el cumplimiento normativo sin bloquear su trabajo. Por ejemplo, si un usuario intenta compartir un documento que contiene información confidencial, una directiva DLP puede enviarle una notificación por correo electrónico y mostrarle una sugerencia de directiva en el contexto de la biblioteca de documentos que le permite invalidar la directiva si tiene una justificación comercial. Las mismas sugerencias de directiva también aparecen en Outlook en la web, Outlook, Excel, PowerPoint y Word.
     
 - **Ver informes de DLP que muestran contenido que coincide con las directivas DLP de su organización.**
     
@@ -56,7 +56,7 @@ Las directivas de DLP se crean y se administran en la página prevención de pé
 
 Una directiva DLP contiene unas pocas cosas básicas:
   
-- Dónde proteger las **ubicaciones** de contenido como Exchange Online, SharePoint Online y los sitios de OneDrive para la empresa. 
+- Dónde proteger las **ubicaciones** de contenido como Exchange Online, SharePoint Online y OneDrive para la empresa, así como los canales y chats de Microsoft Teams. 
     
 - Cuándo y cómo proteger el contenido aplicando **reglas** compuestas de: 
     
@@ -72,7 +72,7 @@ Por ejemplo, podría tener una directiva DLP que ayude a detectar la presencia d
   
 ### <a name="locations"></a>Ubicaciones
 
-Una directiva DLP puede encontrar y proteger información confidencial en Office 365, independientemente de si la información se encuentra en Exchange Online, SharePoint Online o OneDrive para la empresa. Puede elegir fácilmente proteger todos los sitios de SharePoint o las cuentas de OneDrive, solo los sitios o cuentas específicos o todos los buzones. Tenga en cuenta que aún no es posible seleccionar solo los buzones de usuarios específicos.
+Una directiva DLP puede encontrar y proteger información confidencial en Office 365, independientemente de si la información se encuentra en Exchange Online, SharePoint Online, OneDrive para la empresa o Microsoft Teams. Puede elegir proteger el contenido de correo electrónico de Exchange, los canales y chats de Microsoft Teams, y todas las bibliotecas de SharePoint o de OneDrive, o seleccionar ubicaciones específicas para una directiva.
   
 ![Opciones de ubicaciones donde se puede aplicar una directiva DLP](media/ee50a61a-e867-4571-a150-3eec8d83650f.png)
   
@@ -148,11 +148,11 @@ El correo electrónico puede notificar a la persona que envió, compartió o mod
   
 Además de enviar una notificación por correo electrónico, una notificación de usuario muestra una sugerencia de directiva:
   
-- En Outlook 2013 y versiones posteriores y Outlook en la Web.
+- En Outlook y Outlook en la Web.
     
 - Para el documento en un sitio de SharePoint Online o de OneDrive para la empresa.
     
-- En Excel 2016, PowerPoint 2016 y Word 2016, cuando el documento se almacena en un sitio incluido en una directiva DLP.
+- En Excel, PowerPoint y Word, cuando el documento se almacena en un sitio incluido en una directiva DLP.
     
 La notificación de correo electrónico y la sugerencia de directiva explican por qué el contenido entra en conflicto con una directiva DLP. Si lo elige, la sugerencia de directiva y la notificación por correo electrónico pueden permitir que los usuarios invaliden una regla al informar de un falso positivo o proporcionar una justificación comercial. Esto puede ayudar a educar a los usuarios sobre las directivas DLP y aplicarlas sin impedir que los usuarios realicen su trabajo. La información sobre invalidaciones y falsos positivos también se registra para los informes (consulte a continuación sobre los informes de DLP) y se incluye en los informes de incidentes (sección siguiente), a fin de que el responsable de cumplimiento normativo pueda revisar periódicamente esta información.
   
@@ -428,13 +428,15 @@ DLP detecta información confidencial mediante un análisis profundo del conteni
 
 Después de crear una directiva DLP en el centro &amp; de seguridad y cumplimiento, se almacena en un almacén central de directivas y, a continuación, se sincroniza con los distintos orígenes de contenido, entre los que se incluyen:
   
-- Exchange Online y de ahí a Outlook en la web y Outlook 2013 y versiones posteriores
+- Exchange Online y de ahí a Outlook en la web y Outlook
     
 - Sitios de OneDrive para la Empresa
     
 - Sitios de SharePoint Online
     
-- Programas de escritorio de Office 2016 (Excel 2016, PowerPoint 2016 y Word 2016)
+- Programas de escritorio de Office (Excel, PowerPoint y Word)
+
+- Canales de Microsoft Teams y charlas
     
 Una vez que la Directiva se ha sincronizado en las ubicaciones adecuadas, comienza a evaluar el contenido y a aplicar las acciones.
   
@@ -444,26 +446,36 @@ En todos los sitios de SharePoint Online y los sitios de OneDrive para la empres
   
 Por este motivo, las directivas DLP buscan frecuentemente y en segundo plano coincidencias de directivas en los documentos. Puede considerarlo como una evaluación asincrónica de directiva.
   
-Así es cómo funciona. A medida que los usuarios agregan o cambian documentos en sus sitios, el motor de búsqueda analiza el contenido para que usted pueda encontrarlo más adelante. Mientras esto sucede, el contenido también se examina en busca de información confidencial y se comprueba si está compartido. Toda la información confidencial encontrada se almacena de forma segura en el índice de búsqueda, por lo que solo el equipo de cumplimiento puede tener acceso a ella, pero no a los usuarios típicos. Cada directiva DLP que haya activado se ejecuta en segundo plano (asincrónicamente), comprobando la búsqueda con frecuencia en busca de contenido que coincida con una directiva y aplicando acciones para protegerla de pérdidas accidentales.
+#### <a name="how-it-works"></a>Funcionamiento
+ 
+A medida que los usuarios agregan o cambian documentos en sus sitios, el motor de búsqueda analiza el contenido para que usted pueda encontrarlo más adelante. Mientras esto sucede, el contenido también se examina en busca de información confidencial y se comprueba si está compartido. Toda la información confidencial encontrada se almacena de forma segura en el índice de búsqueda, por lo que solo el equipo de cumplimiento puede tener acceso a ella, pero no a los usuarios típicos. Cada directiva DLP que haya activado se ejecuta en segundo plano (asincrónicamente), comprobando la búsqueda con frecuencia en busca de contenido que coincida con una directiva y aplicando acciones para protegerla de pérdidas accidentales.
   
 ![Diagrama que muestra cómo la Directiva DLP evalúa el contenido de forma asincrónica](media/bdf73099-039a-4909-ae89-ac12c41992ba.png)
   
 Por último, los documentos pueden entrar en conflicto con una directiva DLP, pero también pueden cumplir con una directiva DLP. Por ejemplo, si una persona agrega números de tarjeta de crédito a un documento, podría hacer que una directiva DLP bloquee el acceso al documento de forma automática. Pero si la persona elimina más adelante la información confidencial, la acción (en este caso, el bloqueo) se deshace automáticamente la próxima vez que se evalúa el documento con la directiva.
   
-La DLP evalúa cualquier contenido que se pueda indexar. Para obtener más información sobre los tipos de archivo que se rastrean de forma predeterminada, vea [extensiones de nombre de archivo y tipos de archivos analizados predeterminados en SharePoint Server 2013](https://go.microsoft.com/fwlink/p/?LinkID=627430).
+La DLP evalúa cualquier contenido que se pueda indexar. Para obtener más información sobre los tipos de archivo que se rastrean de forma predeterminada, vea [extensiones de nombre de archivo y tipos de archivos analizados predeterminados en SharePoint Server](https://docs.microsoft.com/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types).
   
-### <a name="policy-evaluation-in-exchange-online-outlook-2013-and-later-and-outlook-on-the-web"></a>Evaluación de la Directiva en Exchange Online, Outlook 2013 y versiones posteriores, y Outlook en la web
+### <a name="policy-evaluation-in-exchange-online-outlook-and-outlook-on-the-web"></a>Evaluación de la Directiva en Exchange Online, Outlook y Outlook en la web
 
-Cuando se crea una directiva DLP que incluye Exchange online como ubicación, la Directiva se sincroniza desde el centro de seguridad &amp; y cumplimiento de Office 365 a Exchange Online y, a continuación, desde Exchange Online a Outlook en la web y Outlook 2013 y versiones posteriores.
+Cuando se crea una directiva DLP que incluye Exchange online como ubicación, la Directiva se sincroniza desde el centro de seguridad &amp; y cumplimiento de Office 365 a Exchange Online y, a continuación, desde Exchange Online a Outlook en la web y Outlook.
   
-Cuando se redacta un mensaje en Outlook, el usuario puede ver las sugerencias de directiva a medida que se evalúa el contenido que se está creando en las directivas de DLP. Y después de enviar un mensaje, se evalúa en las directivas de DLP como una parte normal del flujo de correo, junto con las reglas de flujo de correo de Exchange (también conocidas como reglas de transporte) y las directivas de DLP creadas en el centro de administración de Exchange (consulte la siguiente sección para obtener más información). Las directivas de DLP examinan el mensaje y los datos adjuntos.
+Cuando se redacta un mensaje en Outlook, el usuario puede ver las sugerencias de directiva a medida que se evalúa el contenido que se está creando en las directivas de DLP. Y después de enviar un mensaje, se evalúa en las directivas DLP como una parte normal del flujo de correo, junto con las reglas de flujo de correo de Exchange (también conocidas como reglas de transporte) y las directivas de DLP creadas en el centro de administración de Exchange. Las directivas de DLP examinan el mensaje y los datos adjuntos.
   
-### <a name="policy-evaluation-in-the-office-2016-desktop-programs"></a>Evaluación de la directiva en los programas de escritorio de Office 2016
+### <a name="policy-evaluation-in-the-office-desktop-programs"></a>Evaluación de la Directiva en los programas de escritorio de Office
 
-Excel 2016, PowerPoint 2016 y Word 2016 incluyen la misma capacidad para identificar información confidencial y aplicar directivas DLP que SharePoint Online y OneDrive para la Empresa. Estos programas de Office 2016 sincronizan sus directivas de DLP directamente desde el almacén de directivas central y, a continuación, evalúan de forma continua el contenido con las directivas DLP cuando trabajan con documentos abiertos desde un sitio que se incluye en una directiva DLP.
+Excel, PowerPoint y Word incluyen la misma capacidad para identificar información confidencial y aplicar directivas de DLP como SharePoint Online y OneDrive para la empresa. Estos programas de Office sincronizan sus directivas de DLP directamente desde el almacén de directivas central y, a continuación, evalúan continuamente el contenido con las directivas DLP cuando trabajan con documentos abiertos desde un sitio que se incluye en una directiva DLP.
   
-La evaluación de directivas DLP en Office 2016 está diseñada para no afectar el rendimiento de los programas ni a la productividad de las personas que trabajan en el contenido. Si están trabajando en un documento de gran tamaño o el equipo del usuario está ocupado, la sugerencia de Directiva puede tardar unos segundos en aparecer.
-  
+La evaluación de la Directiva DLP en Office está diseñada para no afectar al rendimiento de los programas o a la productividad de los usuarios que trabajan en el contenido. Si están trabajando en un documento de gran tamaño o el equipo del usuario está ocupado, la sugerencia de Directiva puede tardar unos segundos en aparecer.
+
+### <a name="policy-evaluation-in-microsoft-teams"></a>Evaluación de directivas en Microsoft Teams
+ 
+Al crear una directiva DLP que incluya a Microsoft Teams como ubicación, la Directiva se sincroniza desde el centro de seguridad &amp; y cumplimiento de Office 365 a las cuentas de usuario y los canales y chats de Microsoft Teams. Según la configuración de las directivas de DLP, cuando alguien intente compartir información confidencial en un canal o chat de Microsoft Teams, el mensaje se puede bloquear o revocar. Además, los documentos que contengan información confidencial y que se compartan con invitados (usuarios externos) no se abrirán para esos usuarios.
+
+Por ejemplo, supongamos que alguien intenta compartir información confidencial en un canal o chat de Microsoft Teams con usuarios externos. SuPongamos que hay una directiva DLP definida para evitar esto. Con la protección, se eliminan los mensajes que contienen información confidencial enviada a los usuarios externos. Esto ocurre en segundos, y se realiza automáticamente, según la configuración de la Directiva DLP.
+
+Sugerencias de directivas envíe una notificación a los remitentes sobre los motivos por los que sus mensajes fueron bloqueados o revocados. Por ejemplo, es posible que se indique a un remitente que su mensaje contiene información de identificación personal (PII) que no se permite compartir con nadie, o que no se puede compartir un documento que contiene PII con personas de fuera de su organización. A continuación, el remitente puede editar su mensaje para que sea compatible con las directivas de DLP.
+ 
 ## <a name="permissions"></a>Permisos
 
 Los miembros del equipo de cumplimiento que crearán directivas de DLP necesitan permisos para &amp; el centro de seguridad y cumplimiento. De forma predeterminada, el administrador de espacios empresariales tendrá acceso a esta ubicación y puede conceder a los responsables de cumplimiento y &amp; otras personas acceso al centro de seguridad y cumplimiento, sin concederles todos los permisos de un administrador de inquilinos. Para ello, se recomienda:
@@ -482,19 +494,19 @@ Estos permisos son necesarios solo para crear y aplicar una directiva de DLP. La
 
 Para usar la mayoría de los cmdlets del centro &amp; de seguridad y cumplimiento, debe:
   
-1. [Conectarse al Centro de seguridad y cumplimiento de Office 365 mediante PowerShell remoto](http://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
+1. [Conectarse al Centro de seguridad y cumplimiento de Office 365 mediante PowerShell remoto](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps)
     
-2. Use cualquiera de estos [cmdlets del &amp; centro de seguridad y cumplimiento de Office 365](http://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)
+2. Usar cualquiera de estos [cmdlets de directiva y-Compliance-DLP](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/export-dlppolicycollection?view=exchange-ps)
     
-Sin embargo, los informes DLP necesitan extraer datos de toda la oficina 365, incluido Exchange Online. Por este motivo, los cmdlets para los informes DLP están disponibles en Exchange Online PowerShell, no en el PowerShell &amp; del centro de seguridad y cumplimiento. Por lo tanto, para usar los cmdlets para los informes de DLP, debe:
+Sin embargo, los informes DLP necesitan extraer datos de toda la oficina 365, incluido Exchange Online. Por este motivo, **los cmdlets para los informes DLP están disponibles en Exchange Online PowerShell, no en el PowerShell &amp; del centro de seguridad y cumplimiento**. Por lo tanto, para usar los cmdlets para los informes de DLP, debe:
   
-1. [Conectarse a Exchange Online con el PowerShell remoto](http://go.microsoft.com/fwlink/?LinkID=799773&amp;clcid=0x409)
+1. [Conectarse a Exchange Online con el PowerShell remoto](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)
     
 2. Use cualquiera de estos cmdlets para los informes de DLP:
     
-  - [Get-DlpDetectionsReport](http://go.microsoft.com/fwlink/?LinkID=799774&amp;clcid=0x409)
+  - [Get-DlpDetectionsReport](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/Get-DlpDetectionsReport?view=exchange-ps)
     
-  - [Get-DlpDetailReport](http://go.microsoft.com/fwlink/?LinkID=799775&amp;clcid=0x409)
+  - [Get-DlpDetailReport](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-dlp/Get-DlpDetailReport?view=exchange-ps)
     
 ## <a name="more-information"></a>Más información
 

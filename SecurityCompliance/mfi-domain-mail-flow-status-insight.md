@@ -8,14 +8,14 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
-description: Los administradores pueden obtener información sobre el conocimiento del estado del flujo de correo del dominio superior del panel de flujo de correo en el centro de seguridad & cumplimiento de Office 365.
+description: Los administradores pueden obtener información sobre el conocimiento del estado del flujo de correo del dominio superior del panel de flujo de correo en el centro de seguridad & cumplimiento.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 04aa986982465a4c66fbf99f517fb34622d65e19
-ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
+ms.openlocfilehash: baa69c3373623d4742d6d957a5022012fb60f7e7
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30723070"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000673"
 ---
 # <a name="top-domain-mail-flow-status-insight"></a>Información del estado del flujo de correo de dominio superior
 
@@ -24,7 +24,7 @@ ms.locfileid: "30723070"
 
 La información del **Estado del flujo de correo de dominio superior** le ofrece el estado actual de los dominios de su organización en términos de flujo de correo. Esta visión le ayudará a identificar y solucionar problemas de dominios que experimentan problemas de impacto en el ***flujo de correo*** (por ejemplo, no se puede recibir correo electrónico externo), en especial expiraciones de dominio o dominios con registros MX incorrectos.
 
-![Información sobre el estado del flujo de dominio superior del panel flujo de correo en el centro de seguridad & cumplimiento de Office 365](media/domain-mail-flow-status-selected.png)
+![La información más detallada sobre el estado del flujo del dominio en el panel del flujo de correo en el centro de seguridad & cumplimiento](media/domain-mail-flow-status-selected.png)
 
 Al hacer clic en **Ver detalles** en la visión, aparecerá un control flotante que muestra más detalles sobre el estado de cada dominio.
 

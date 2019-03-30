@@ -9,13 +9,13 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37125cdb-715d-42d0-b669-1a8efa140813
-description: Los administradores pueden obtener información sobre las reglas de flujo de correo lentas Insight en el panel del flujo de correo en el centro de seguridad & cumplimiento de Office 365.
-ms.openlocfilehash: e1ce23c94cd5260d8a7a7ebd99521a4a6f5c7b0a
-ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
+description: Los administradores pueden obtener información sobre las reglas de flujo de correo lentas Insight en el panel del flujo de correo en el centro de seguridad & cumplimiento.
+ms.openlocfilehash: ede12e14f287599cab0e5f39aaf71c38ed519276
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30720260"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999783"
 ---
 # <a name="slow-mail-flow-rules-insight"></a>Reporte de reglas de flujo de correo lento
 
@@ -29,7 +29,7 @@ Las reglas de flujo de correo ineficiente (también conocidas como reglas de tra
 
 La información le ayudará a identificar y ajustar las reglas de flujo de correo para ayudar a reducir los retrasos del flujo de correo.
 
-![Una lenta Introducción A las reglas de flujo de correo en el panel de flujo de correo en el centro de seguridad & cumplimiento de Office 365](media/1dd90faa-f065-4b10-8b47-d35dc127fc26.png)
+![Una baja velocidad de reglas de flujo de correo en el panel de flujo de correo en el centro de seguridad & cumplimiento](media/1dd90faa-f065-4b10-8b47-d35dc127fc26.png)
 
 Al hacer clic en **Ver detalles**, aparece un panel flotante donde puede revisar la regla. En el panel de flotante, también puede hacer clic en **Ver mensajes de muestra** para ver el tipo de mensajes que se ven afectados por la regla.
 

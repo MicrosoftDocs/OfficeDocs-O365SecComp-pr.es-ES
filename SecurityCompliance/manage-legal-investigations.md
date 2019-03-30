@@ -12,17 +12,17 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
-description: Use casos de exhibición de documentos electrónicos en &amp; el centro de seguridad y cumplimiento de Office 365 para administrar la investigación legal de su organización. Si tiene una suscripción a E5, puede analizar más datos de caso con las capacidades de análisis de texto, aprendizaje de la máquina y Codificación predictiva de eDiscovery avanzado.
-ms.openlocfilehash: b97bd99740e2db090df70af0c76070186f5b8ccf
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+description: Use casos de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento en Office 365 para administrar la investigación legal de su organización. Si tiene una suscripción a E5, puede analizar más datos de caso con las capacidades de análisis de texto, aprendizaje de la máquina y Codificación predictiva de eDiscovery avanzado.
+ms.openlocfilehash: 5bfa4719f2bb065a7064e7dc9d02778a4d032da8
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296903"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999923"
 ---
 # <a name="manage-legal-investigations-in-office-365"></a>Administración de investigaciones legales en Office 365
 
-Las organizaciones tienen muchas razones para responder a un caso legal en el que participan determinados ejecutivos u otros empleados de la organización. Esto puede implicar la rápida búsqueda y la retención de información específica de la investigación en el correo electrónico, los documentos, las conversaciones de mensajería instantánea y otras ubicaciones de contenido que usan los usuarios en sus tareas de trabajo cotidianas. Puede realizar estas y muchas otras actividades similares mediante las herramientas de caso de exhibición de documentos electrónicos del centro &amp; de seguridad y cumplimiento de Office 365.
+Las organizaciones tienen muchas razones para responder a un caso legal en el que participan determinados ejecutivos u otros empleados de la organización. Esto puede implicar la rápida búsqueda y la retención de información específica de la investigación en el correo electrónico, los documentos, las conversaciones de mensajería instantánea y otras ubicaciones de contenido que usan los usuarios en sus tareas de trabajo cotidianas. Puede realizar estas y muchas otras actividades similares usando las herramientas de caso de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento.
   
 [Administración de investigaciones legales con casos de eDiscovery](#manage-legal-investigations-with-ediscovery-cases)
   
@@ -46,7 +46,7 @@ los casos de eDiscovery le permiten controlar quién puede crear, acceder y admi
     
 ### <a name="use-scripts-for-advanced-scenarios"></a>Usar scripts para escenarios avanzados
 
-Al igual que en la sección anterior que enumeraba scripts para escenarios de búsqueda de contenido &amp; , también hemos creado algunos scripts de PowerShell del centro de cumplimiento de seguridad para ayudarle a administrar casos de eDiscovery.
+Al igual que en la sección anterior que enumeraba scripts para escenarios de búsqueda de contenido, también hemos creado algunos scripts de PowerShell del centro de cumplimiento de & de seguridad para ayudarle a administrar casos de eDiscovery.
   
 - [Crear un informe de suspensión de exhibición](create-a-report-on-holds-in-ediscovery-cases.md) de documentos electrónicos que contenga información sobre todas las retenciones asociadas con casos de eDiscovery en su organización 
     
@@ -54,18 +54,18 @@ Al igual que en la sección anterior que enumeraba scripts para escenarios de b�
   
 ## <a name="analyze-case-data-using-office-365-advanced-ediscovery"></a>Analizar datos de casos con Office 365 Advanced eDiscovery
 
-Office 365 Advanced eDiscovery se basa en la búsqueda de contenido y en las capacidades de eDiscovery descritas en las secciones anteriores. Después de crear un caso de exhibición de documentos electrónicos, poner ubicaciones de custodios en suspensión y recopilar datos que puedan responder al caso, puede seguir analizando los datos con el análisis de texto, el aprendizaje de la máquina y las capacidades de Codificación predictiva de Advanced. exhibición. Esto puede ayudar a su organización a procesar rápidamente miles de mensajes de correo electrónico, documentos y otros tipos de datos para encontrar los elementos que son más relevantes para un caso específico. Además, hemos Unificado la administración de casos y la exhibición avanzada de documentos electrónicos para que pueda administrar sin problemas el &amp; mismo caso en el centro de seguridad y cumplimiento.
+Office 365 Advanced eDiscovery se basa en la búsqueda de contenido y en las capacidades de eDiscovery descritas en las secciones anteriores. Después de crear un caso de exhibición de documentos electrónicos, poner ubicaciones de custodios en suspensión y recopilar datos que puedan responder al caso, puede seguir analizando los datos con el análisis de texto, el aprendizaje de la máquina y las capacidades de Codificación predictiva de Advanced. exhibición. Esto puede ayudar a su organización a procesar rápidamente miles de mensajes de correo electrónico, documentos y otros tipos de datos para encontrar los elementos que son más relevantes para un caso específico. Además, se ha unificado la administración de casos y la exhibición avanzada de documentos electrónicos, lo que permite administrar sin problemas el mismo caso en el centro de seguridad & cumplimiento.
   
 > [!NOTE]
 > Para analizar los datos de un usuario con la exhibición avanzada de documentos electrónicos, el usuario (el custodio de los datos) debe tener asignada una licencia de Office 365 E5. Como alternativa, se puede asignar una licencia independiente de eDiscovery avanzado a los usuarios con una licencia de Office 365 E1 o E3. Los administradores y los responsables de cumplimiento que se asignan a los casos y usan la exhibición avanzada de documentos electrónicos para analizar los datos no necesitan una licencia E5. 
   
 ### <a name="get-started"></a>Introducción
 
-La forma más rápida de empezar a usar eDiscovery avanzado es crear un caso y preparar los resultados de la búsqueda &amp; en el centro de seguridad y cumplimiento, cargar los resultados en la exhibición avanzada de documentos electrónicos y, a continuación, ejecutar el análisis rápido para analizar los datos de caso y, a continuación, exportar el resultados de la revisión externa.
+La manera más rápida de empezar con la exhibición avanzada de documentos electrónicos es crear un caso y preparar los resultados de la búsqueda en el centro de seguridad & cumplimiento, cargar los resultados en la exhibición avanzada de documentos electrónicos y, a continuación, ejecutar el análisis rápido para analizar los datos de caso y, a continuación, exportar los resultados para la revisión externa.
   
 - [Obtener información general rápida sobre](quick-setup-for-advanced-ediscovery.md) el flujo de trabajo de eDiscovery avanzado 
     
-- [Configure usuarios y casos](set-up-users-and-cases-in-advanced-ediscovery.md) para la exhibición avanzada de documentos electrónicos creando un caso, asignando permisos de exhibición de documentos electrónicos y agregando miembros de &amp; caso, todo mediante el centro de seguridad y cumplimiento 
+- [Configurar usuarios y casos](set-up-users-and-cases-in-advanced-ediscovery.md) para eDiscovery avanzado mediante la creación de un caso, la asignación de permisos de exhibición de documentos electrónicos y la adición de miembros de casos, todo mediante el centro de seguridad & cumplimiento 
     
 - [Preparar y cargar los datos de búsqueda](prepare-data-for-advanced-ediscovery.md) en el caso de eDiscovery avanzado 
     

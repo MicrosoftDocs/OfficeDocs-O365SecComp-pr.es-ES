@@ -14,14 +14,14 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Esta es una guía de inicio rápido que puede usar para asegurarse de que la protección contra amenazas avanzada de Office 365 (ATP) está configurada y configurada para su organización.
-ms.openlocfilehash: 5aecbdb63f30a620812de44907b29dcae838ba36
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: a071c626327aa7d0055df522e8fec5ebe41d6a83
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693308"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999403"
 ---
-# <a name="quick-start-guide-set-up-office-365-advanced-threat-protection"></a>Guía de inicio rápido: configurar la protección contra amenazas avanzada de Office 365
+# <a name="quick-start-guide-set-up-office-365-advanced-threat-protection"></a>Guía de inicio rápido: Configurar la Protección contra amenazas avanzada de Office 365
 
 Esta es una guía de inicio rápido que puede usar como una lista de comprobación para asegurarse de que la protección contra amenazas avanzada (ATP) de Office 365 está configurada para su organización. Si no está familiarizado con la protección contra amenazas en Office 365 o no está seguro de dónde empezar, use las siguientes instrucciones como punto de partida. 
 
@@ -44,7 +44,7 @@ Esta es una guía de inicio rápido que puede usar como una lista de comprobaci�
 
 ## <a name="part-1---anti-malware"></a>Parte 1: anti-malware
 
-1. en el [centro de seguridad & cumplimiento de Office 365](https://protection.office.com), elija**Anti-malware**de**directiva** > de **administración** > de amenazas.
+1. En el [centro de seguridad & cumplimiento](https://protection.office.com), elija**anti-malware**de**Directiva** > de **Administración** > de amenazas.
 2. Haga doble clic en la directiva **predeterminada** y, a continuación, elija **configuración**.
 3. Especifique las siguientes opciones de configuración:
     - En la sección **respuesta de detección de malware** , mantenga el valor predeterminado de **no**.
@@ -59,7 +59,7 @@ La protección de día cero se configura mediante directivas, como las directiva
 
 ### <a name="atp-safe-attachments-policies"></a>Directivas de datos adJuntos seguros de ATP
 
-1. en el [centro de seguridad & cumplimiento de Office 365](https://protection.office.com), seleccione la**directiva** > de **administración** > de amenazas datos adjuntos**seguros de ATP**.
+1. En el [centro de seguridad & cumplimiento](https://protection.office.com), seleccione la**Directiva** > de **Administración** > de amenazas datos adjuntos**seguros de ATP**.
 2. Seleccione la opción **Activar ATP para SharePoint, OneDrive y Microsoft Teams**.
 3. En la sección **proteger archivos adjuntos de correo electrónico** , haga**+** clic en el signo más ().
 4. Especifique las siguientes opciones de configuración:
@@ -76,7 +76,7 @@ Para obtener más información, consulte [configurar las directivas de datos adj
 
 Para configurar los vínculos seguros ATP, revise su directiva predeterminada y agregue una directiva.
 
-1. en el [centro de seguridad & cumplimiento de Office 365](https://protection.office.com), elija**vínculos seguros ATP**de la**directiva** > de **administración** > de amenazas.
+1. En el [centro de seguridad & cumplimiento](https://protection.office.com), seleccione**vínculos seguros ATP**de la**Directiva** > de **Administración** > de amenazas.
 2. Haga doble clic en la directiva **predeterminada** .
 3. En la sección **usar vínculos seguros en** , seleccione la opción **Office 365 ProPlus, Office para iOS y Android**y, a continuación, haga clic en **Guardar**.
 4. En la sección **directivas que se aplican a destinatarios específicos** , haga clic en**+** el signo más ().
@@ -94,7 +94,7 @@ Para obtener más información, consulte [configurar las directivas de vínculos
 
 ## <a name="part-3---anti-phishing"></a>Parte 3: contra la suplantación de identidad 
 
-1. en el [centro de seguridad & cumplimiento de Office 365](https://protection.office.com), elija la**directiva** > de **administración** > de amenazas**ATP anti-phishing**.
+1. En el [centro de seguridad & cumplimiento](https://protection.office.com), elija la**Directiva** > de **Administración** > de amenazas**ATP anti-phishing**.
 2. Haga clic en **directiva predeterminada**.
 3. En la **** sección suplantación, haga clic en **Editar**y, a continuación, especifique las siguientes opciones de configuración:
     -  En la pestaña **Agregar usuarios a proteger** , desactive la protección. A continuación, agregue usuarios, como los miembros del Consejo de su organización, su CEO, director financiero y otros líderes senior. (Puede escribir una dirección de correo electrónico individual o hacer clic en para mostrar una lista).
@@ -112,7 +112,7 @@ Para obtener más información acerca de las opciones de la Directiva antiphishi
 
 ## <a name="part-4---anti-spam"></a>Parte 4: contra el correo no deseado
 
-1. en el [centro de seguridad & cumplimiento de Office 365](https://protection.office.com), elija**Anti-spam**de la**directiva** > de **administración** > de amenazas.
+1. En el [centro de seguridad & cumplimiento](https://protection.office.com), seleccione**anti-spam**de la**Directiva** > de **Administración** > de amenazas.
 2. En la ficha **personalizado** , active la **Configuración personalizada** .
 3. ExPanda **directiva predeterminada de filtro de correo no deseado**, haga clic en **Editar Directiva**y especifique la siguiente configuración:
     - En la sección **correo electrónico no deseado y acciones en masa** , establezca el umbral en un valor de 5 o 6.

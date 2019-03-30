@@ -1,5 +1,5 @@
 ---
-title: Establecer opciones de analizar en eDiscovery avanzado de Office 365
+title: Establecer las opciones de análisis en Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -13,14 +13,14 @@ search.appverid:
 - MET150
 ms.assetid: f6cd6588-f6b6-424a-a9ab-3782b842faee
 description: 'Revise los pasos para configurar las opciones del proceso analizar en la exhibición avanzada de documentos electrónicos de Office 365, incluidos los subduplicados, los subprocesos de correo electrónico y los temas.  '
-ms.openlocfilehash: 12bbe4043803c165a58adac80b72d03afd48adc7
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 4689638f5cebe2ef17fcea5a13ff06edc29e5930
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218230"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30998533"
 ---
-# <a name="set-analyze-options-in-office-365-advanced-ediscovery"></a>Establecer opciones de analizar en eDiscovery avanzado de Office 365
+# <a name="set-analyze-options-in-office-365-advanced-ediscovery"></a>Establecer las opciones de análisis en Office 365 Advanced eDiscovery
 
 > [!NOTE]
 > Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -52,7 +52,7 @@ Abra **preparar \> ** la \> **instalación**de Analyze. Se muestra la siguiente 
   
 1. Para ver, agregar o editar los temas sugeridos, haga clic en **modificar**.
     
-2. En el panel **temas sugeridos** , haga clic en el](media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) icono **Agregar**![icono Agregar para agregar un tema. En el panel **Agregar tema sugerido** , agregue las palabras separadas por comas. 
+2. En el panel **temas sugeridos** , haga clic en el](media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) icono **Agregar** ![icono Agregar para agregar un tema. En el panel **Agregar tema sugerido** , agregue las palabras separadas por comas. 
     
 3. En **número de temas**, seleccione un valor para determinar el número de temas que la exhibición avanzada de documentos electrónicos intentará generar para estas palabras (el valor predeterminado es 1 tema).
     

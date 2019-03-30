@@ -12,12 +12,12 @@ ms.collection: M365-security-compliance
 search.appverid: MOE150
 ms.assetid: 82c97bb4-2b64-4edc-804d-cedbda525d22
 description: Use el archivo Results. csv o unindexed items. csv de una búsqueda de contenido existente para crear una búsqueda de lista de IDENTIFICADOres que devuelva un mensaje de correo electrónico específico. Las búsquedas de listas de IDENTIFICADOres se usan normalmente para devolver elementos de buzón parcialmente indizados.
-ms.openlocfilehash: 558a8512ed133995b2cc1d0d8b78fd7f08d11168
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: fc26f8dab11f1121deb11dd93b2cd0c70a1d629c
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296743"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999683"
 ---
 # <a name="prepare-a-csv-file-for-an-id-list-content-search-in-office-365"></a>Preparar un archivo CSV para una búsqueda de contenido de la lista de IDENTIFICADOres en Office 365
 
@@ -25,11 +25,11 @@ Puede buscar mensajes de correo electrónico específicos de buzones de correo y
   
 A continuación se muestra una introducción rápida del proceso para crear una búsqueda de lista de IDENTIFICADOres.
   
-1. Cree y ejecute una búsqueda de contenido nueva o guiada en el &amp; centro de seguridad y cumplimiento.
+1. Cree y ejecute una búsqueda de contenido nueva o guiada en el centro de seguridad & cumplimiento.
     
-2. Exportar los resultados de la búsqueda de contenido o exportar el informe de búsqueda de contenido. Para obtener más información, vea:
+2. Exportar los resultados de la búsqueda de contenido o exportar el informe de búsqueda de contenido. Para más información, visite:
     
-    - [Exportar resultados de búsqueda de contenido desde el centro &amp; de seguridad y cumplimiento de Office 365](export-search-results.md)
+    - [Exportar resultados de la búsqueda de contenido](export-search-results.md)
     
     - [Exportar un informe de búsqueda de contenido](export-a-content-search-report.md)
     
@@ -40,7 +40,7 @@ A continuación se muestra una introducción rápida del proceso para crear una 
 > [!NOTE]
 > Las búsquedas de listas de IDENTIFICADOres solo se admiten para elementos de buzón. No puede buscar documentos de SharePoint y OneDrive en una búsqueda de lista de ID. 
   
- **¿Por qué crear una búsqueda de lista de identificadores?** Si no puede determinar si un elemento responde a una solicitud de exhibición de documentos electrónicos en función de los metadatos de los archivos **Results. csv** o sin **indexar items. csv** , puede usar una búsqueda de lista de identificadores para buscar, obtener una vista previa y, a continuación, exportar el elemento para determinar si está responde al caso que está investigando. Las búsquedas de listas de IDENTIFICADOres se usan normalmente para buscar y devolver un conjunto específico de elementos sin indizar. 
+ **¿Por qué crear una búsqueda de lista de IDENTIFICADOres?** Si no puede determinar si un elemento responde a una solicitud de exhibición de documentos electrónicos en función de los metadatos de los archivos **Results. csv** o sin **indexar items. csv** , puede usar una búsqueda de lista de identificadores para buscar, obtener una vista previa y, a continuación, exportar el elemento para determinar si está responde al caso que está investigando. Las búsquedas de listas de IDENTIFICADOres se usan normalmente para buscar y devolver un conjunto específico de elementos sin indizar. 
   
 ## <a name="prepare-the-csv-file-for-an-id-list-search"></a>Preparar el archivo CSV para una búsqueda de lista de ID
 
@@ -76,7 +76,7 @@ El siguiente paso es crear una nueva búsqueda de contenido de la lista de IDENT
 > [!IMPORTANT]
 > Debe crear una búsqueda de lista de IDENTIFICADOres de más de 2 días después de exportar los resultados o el informe de una búsqueda de contenido. Si los resultados de la búsqueda o el informe en el que se exportó hace más de 2 días, debe volver a exportar los resultados de la búsqueda o informar para generar archivos. CSV actualizados. A continuación, puede preparar uno de los archivos CSV actualizados y utilizarlo para crear una búsqueda de lista de ID. 
   
-1. En el centro &amp; de seguridad y cumplimiento, vaya a búsqueda de \> **contenido**de **investigación de búsqueda &amp; ** .
+1. En el centro de seguridad & cumplimiento, vaya a búsqueda de **contenido**de **búsqueda** \> .
     
 2. En la **página Buscar** , haga clic en la flecha ![junto a](media/8ee52980-254b-440b-99a2-18d068de62d3.gif) agregar icono **nueva búsqueda**y, a continuación, haga clic en **Buscar por lista de identificadores**.
     

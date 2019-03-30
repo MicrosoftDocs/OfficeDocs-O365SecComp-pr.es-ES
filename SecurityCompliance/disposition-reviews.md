@@ -13,13 +13,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Cuando se crea una etiqueta de retención que conserva el contenido en Office 365, se puede optar por desencadenar una revisión de disposición al final del período de retención.
-ms.openlocfilehash: 5c55b842045eefd42745486c603e34f6498b3bac
-ms.sourcegitcommit: 07a4f9a8888756e05cd67ca24f6121b2a4e9f464
+description: Al crear una etiqueta de retención que conserva el contenido de Microsoft 365, puede optar por desencadenar una revisión de disposición al final del período de retención.
+ms.openlocfilehash: 1828f4055e9048260db7d16df8ad87db36438211
+ms.sourcegitcommit: 799a958fcac643f62dfac6fa04020f2f4758635c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "30512665"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30997266"
 ---
 # <a name="overview-of-disposition-reviews"></a>Información general sobre las revisiones de disposición
 
@@ -33,7 +33,7 @@ Cuando el contenido alcanza el final de su período de retención, existen vario
     
 - Devolver el contenido a los clientes o transferirlo a otra organización.
     
-Al crear una etiqueta de retención en Office 365, puede optar por desencadenar una revisión de disposición al final del período de retención. En una revisión de disposición:
+Cuando se crea una etiqueta de retención en el centro de cumplimiento de Microsoft 365, el centro de seguridad de Microsoft 365 o el centro de seguridad de Office 365 &, puede optar por desencadenar una revisión de disposición al finalizar el período de retención. En una revisión de disposición:
   
 - Las personas que elija reciben una notificación por correo electrónico de que tienen contenido que revisar. Estos revisores pueden ser usuarios individuales, grupos de seguridad o de distribución o grupos de Office 365. Tenga en cuenta que las notificaciones se envían cada semana.
     

@@ -14,12 +14,12 @@ search.appverid:
 ms.assetid: dc4f704c-6fcc-4cab-9a02-95a824e4fb57
 description: Página de aterrizaje para planear la seguridad y el cumplimiento
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 4c653e20fbab8f93897b00589a00cb53b1e36963
-ms.sourcegitcommit: 07a4f9a8888756e05cd67ca24f6121b2a4e9f464
+ms.openlocfilehash: b0c7af13a78499f3ee8af5b902bc4c8db85aca32
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "30512655"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30998493"
 ---
 # <a name="plan-for-security-amp-compliance-in-office-365"></a>Planeación del &amp; cumplimiento de la seguridad en Office 365
 
@@ -53,7 +53,7 @@ Revise y planifique las capacidades de protección de archivos organizadas por t
   
 [PDF](http://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.pdf) | [Visio](http://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.vsdx)
   
-## <a name="step-5-leverage-the-office-365-security-amp-compliance-center"></a>Paso 5: aprovechar el centro de seguridad &amp; y cumplimiento de Office 365
+## <a name="step-5-leverage-the-microsoft-365-security-amp-compliance-center"></a>Paso 5: aprovechar el centro de seguridad &amp; y cumplimiento de Microsoft 365
 
 El centro &amp; de seguridad y cumplimiento ofrece una vista única de los controles que va a usar para administrar el espectro de la seguridad de Office 365, incluida la administración de amenazas, el gobierno de datos y la búsqueda y la investigación. 
   
@@ -71,13 +71,13 @@ Use estas configuraciones recomendadas como punto de partida para escenarios de 
     
 - [Contoso en la nube de Microsoft](http://aka.ms/cloudarchcontoso)
     
-## <a name="office-365-admin-centers-and-dashboards"></a>Centros y paneles de administración de Office 365
+## <a name="microsoft-365-admin-centers-and-dashboards"></a>Paneles y centros de administración de Microsoft 365
 
 Configurar las opciones de seguridad y cumplimiento en estos centros de administración y paneles para proteger el entorno de Office 365
   
 |**Suscripción**|**Dirección URL de administración**|**Paneles y centros de administración**|
 |:-----|:-----|:-----|
-|Office 365  <br/> |`https://portal.office.com`  <br/> | Centro de administración de Office 365  <br/>  Security &amp; Compliance Center  <br/>  Centro de administración de Exchange  <br/>  Centro de administración de SharePoint y centro de administración de OneDrive para la empresa  <br/> |
+|Office 365  <br/> |`https://admin.microsoft.com`  <br/> | Centro de administración de 365 de Microsoft  <br/>  Security &amp; Compliance Center  <br/>  Centro de administración de Exchange  <br/>  Centro de administración de SharePoint y centro de administración de OneDrive para la empresa  <br/> |
 |Enterprise Mobility + Security  <br/> |`https://portal.azure.com`  <br/> | Azure Active Directory  <br/>  Administración de aplicaciones móviles de Microsoft  <br/>  Microsoft Intune  <br/> |
 |Enterprise Mobility + Security  <br/> |`https://portal.cloudappsecurity.com`  <br/> | Cloud App Security  <br/> |
    

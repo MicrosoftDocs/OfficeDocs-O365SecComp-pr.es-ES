@@ -13,19 +13,21 @@ ms.assetid: 2e3fcfc5-5604-4b88-ac0a-c5c45c03f1db
 ms.collection:
 - M365-security-compliance
 description: Cuando Exchange Online Protection examina un mensaje de correo entrante, inserta el encabezado **X-Forefront-Antispam-Report** en cada mensaje.
-ms.openlocfilehash: 92614b8cb6e1571c3d5438206f9dcd106579669a
-ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
+ms.openlocfilehash: 70322d49defe49517a75658b1e2084d520fd7ae8
+ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30936750"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "31004247"
 ---
 # <a name="anti-spam-message-headers"></a>Encabezados de mensajes de correo no deseado
 
 Cuando Exchange Online Protection examina un mensaje de correo entrante, inserta el encabezado **X-Forefront-Antispam-Report** en cada mensaje. Los campos de este encabezado pueden dar a los administradores información sobre el mensaje y la forma en que se procesó. Los campos del encabezado **X-Microsoft-Antispam** proporcionan información adicional sobre el correo masivo y la suplantación de identidad. Además de estos dos encabezados, Exchange Online Protection también inserta resultados de autenticación de correo electrónico para cada mensaje que procesa en el encabezado **Authentication-results**.
+
+Para obtener información sobre cómo ver un encabezado de mensaje de correo electrónico en distintos clientes de correo electrónico, consulte [Message Header Analyzer (Analizador de encabezados de mensaje)](https://go.microsoft.com/fwlink/p/?LinkId=306583). 
   
 > [!TIP]
-> Para obtener información sobre cómo ver un encabezado de mensaje de correo electrónico en distintos clientes de correo electrónico, consulte [Message Header Analyzer (Analizador de encabezados de mensaje)](https://go.microsoft.com/fwlink/p/?LinkId=306583). Puede copiar y pegar el contenido del encabezado del mensaje en la herramienta [Analizador de encabezados de mensaje](https://testconnectivity.microsoft.com/?tabid=mha). Si selecciona un mensaje que está en cuarentena en el centro de administración de Exchange, el vínculo **Ver encabezado de mensaje** también le permite copiar y pegar fácilmente el texto del encabezado del mensaje en la herramienta. Cuando esté en la herramienta Analizador de encabezados de mensaje, haga clic en **Analizar encabezados** para recuperar la información del encabezado.
+>  Puede copiar y pegar el contenido del encabezado del mensaje en la herramienta [analizador de mensajes](https://testconnectivity.microsoft.com/?tabid=mha) . Esta herramienta ayuda a analizar los encabezados y los pone en un formato más legible.
   
 ## <a name="x-forefront-antispam-report-message-header-fields"></a>Campos de encabezado de mensaje X-Forefront-Antispam-Report
 

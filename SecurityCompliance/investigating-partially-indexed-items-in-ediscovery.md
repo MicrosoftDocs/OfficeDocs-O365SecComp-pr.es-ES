@@ -12,16 +12,16 @@ ms.collection: M365-security-compliance
 search.appverid: MOE150
 ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 description: Los elementos parcialmente indizados (también llamado elementos sin indexar) son elementos de buzón de Exchange y documentos en sitios de SharePoint y OneDrive que, por algún motivo, no se han indizado completamente para la búsqueda de contenido. En este artículo, puede obtener información sobre por qué los elementos no se pueden indizar para la búsqueda y se devuelven como elementos parcialmente indizados, identificar errores de búsqueda de elementos parcialmente indizados y usar un script de PowerShell para determinar la exposición de su organización a un correo electrónico parcialmente indizado. elementos.
-ms.openlocfilehash: d8fec240964ad84b811221754060af3e342af01f
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: d6b1326498780a5d40e49ff22aa1ac7d16bee8e4
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295633"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000893"
 ---
 # <a name="investigating-partially-indexed-items-in-office-365-ediscovery"></a>Investigar elementos indizados parcialmente en eDiscovery de Office 365
 
-Una búsqueda de contenido que se ejecuta desde el centro de &amp; seguridad de cumplimiento de Office 365 incluye automáticamente los elementos parcialmente indizados en los resultados de búsqueda estimados al ejecutar una búsqueda. Los elementos indexados parcialmente son elementos de buzones de Exchange y documentos de sitios de SharePoint y OneDrive para la empresa que, por algún motivo, no se han indizado completamente para la búsqueda. La mayoría de los mensajes de correo electrónico y documentos de sitio se indizan correctamente porque entran dentro de los [límites de indización de los mensajes de correo electrónico](limits-for-content-search.md#indexing-limits-for-email-messages). Sin embargo, algunos elementos pueden superar estos límites de indización y se indizarán parcialmente. A continuación se muestran otros motivos por los que los elementos no se pueden indizar para la búsqueda y se devuelven como elementos parcialmente indizados cuando se ejecuta una búsqueda de contenido:
+Una búsqueda de contenido que se ejecuta desde el centro de seguridad & cumplimiento incluye automáticamente los elementos parcialmente indizados en los resultados de búsqueda estimados al ejecutar una búsqueda. Los elementos indexados parcialmente son elementos de buzones de Exchange y documentos de sitios de SharePoint y OneDrive para la empresa que, por algún motivo, no se han indizado completamente para la búsqueda. La mayoría de los mensajes de correo electrónico y documentos de sitio se indizan correctamente porque entran dentro de los [límites de indización de los mensajes de correo electrónico](limits-for-content-search.md#indexing-limits-for-email-messages). Sin embargo, algunos elementos pueden superar estos límites de indización y se indizarán parcialmente. A continuación se muestran otros motivos por los que los elementos no se pueden indizar para la búsqueda y se devuelven como elementos parcialmente indizados cuando se ejecuta una búsqueda de contenido:
   
 - Los mensajes de correo electrónico tienen un archivo adjunto de un tipo de archivo que no se puede indizar; en la mayoría de los casos, el tipo de archivo no se [reconoce o no se admite para](partially-indexed-items-in-content-search.md#file-types-not-indexed-for-search) la indización
     
@@ -37,7 +37,7 @@ Aunque varía, la mayoría de los clientes de la organización de Office 365 tie
   
 ## <a name="why-does-the-partially-indexed-item-count-change-for-a-search"></a>¿Por qué cambia el número de elementos parcialmente indizados para una búsqueda?
 
-Después de ejecutar una búsqueda de contenido en el centro de &amp; seguridad y cumplimiento de Office 365, el número total y el tamaño de los elementos parcialmente indizados en las ubicaciones en las que se realizó la búsqueda se muestran en las estadísticas de resultados de búsqueda que se muestran en las estadísticas detalladas de la búsqueda. Nota Estos se denominan *elementos* sin indexar en las estadísticas de búsqueda. Estas son algunas de las cosas que afectarán al número de elementos parcialmente indizados que se devuelven en los resultados de la búsqueda: 
+Después de ejecutar una búsqueda de contenido en el centro de seguridad & cumplimiento, el número total y el tamaño de los elementos parcialmente indizados en las ubicaciones en las que se realizó la búsqueda se muestran en las estadísticas de resultados de la búsqueda que se muestran en las estadísticas detalladas de la búsqueda. Nota Estos se denominan *elementos* sin indexar en las estadísticas de búsqueda. Estas son algunas de las cosas que afectarán al número de elementos parcialmente indizados que se devuelven en los resultados de la búsqueda: 
   
 - Si un elemento se indiza parcialmente y coincide con la consulta de búsqueda, se incluye tanto en el recuento como en el tamaño de los elementos de resultados de búsqueda y en los elementos parcialmente indizados. Sin embargo, cuando se exportan los resultados de esa misma búsqueda, el elemento solo se incluye con un conjunto de resultados de búsqueda; no se incluye como elemento parcialmente indizado.
     
@@ -122,7 +122,7 @@ Los pasos siguientes muestran cómo ejecutar un script de PowerShell que busca t
 
 ```
   write-host "**************************************************"
-  write-host "     Office 365 Security &amp; Compliance Center      " -foregroundColor yellow -backgroundcolor darkgreen
+  write-host "     Security & Compliance Center      " -foregroundColor yellow -backgroundcolor darkgreen
   write-host "   eDiscovery Partially Indexed Item Statistics   " -foregroundColor yellow -backgroundcolor darkgreen
   write-host "**************************************************"
   " " 
@@ -164,9 +164,9 @@ Los pasos siguientes muestran cómo ejecutar un script de PowerShell que busca t
   
 ```
    
-2. [Conéctese a PowerShell del &amp; centro de seguridad y cumplimiento de Office 365](https://go.microsoft.com/fwlink/p/?linkid=627084).
+2. [Conéctese a Security _AMP_ Compliance Center PowerShell](https://go.microsoft.com/fwlink/p/?linkid=627084).
     
-3. En PowerShell &amp; del centro de seguridad y cumplimiento, vaya a la carpeta en la que guardó el script en el paso 1 y, a continuación, ejecute el script. por ejemplo:
+3. En Security & Compliance Center PowerShell, vaya a la carpeta en la que guardó el script en el paso 1 y, a continuación, ejecute el script; por ejemplo:
 
     ```
     .\PartiallyIndexedItems.ps1

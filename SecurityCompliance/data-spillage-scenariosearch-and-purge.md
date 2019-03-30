@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: Use las herramientas de búsqueda y la exhibición de documentos electrónicos de Office 365 para administrar y responder a un incidente de derrame de datos en su organización.
-ms.openlocfilehash: 50fab420ae0769e4675c5b6ff31307fa195d3950
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 50078e3f22ede8a1af2a252a7a6f75710534c062
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296603"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000153"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>serie de soluciones de eDiscovery: escenario de derrame de datos: búsqueda y depuración
 
@@ -60,7 +60,7 @@ A continuación se describe cómo administrar un incidente de derrame de datos:
     
 ## <a name="optional-step-1-manage-who-can-access-the-case-and-set-compliance-boundaries"></a>Opcional Paso 1: administrar quién puede tener acceso al caso y establecer los límites de cumplimiento
 
-En función de su práctica organizativa, necesita controlar quién puede tener acceso al caso de eDiscovery usado para investigar un incidente de derrame de datos y configurar los límites de conformidad. La forma más sencilla de hacerlo es agregar investigadores como miembros de un grupo de roles existente en el centro de cumplimiento de & de seguridad de Office 365 y, a continuación, agregar el grupo de roles como miembro del caso de exhibición de documentos electrónicos. Para obtener información sobre los grupos de roles integrados de eDiscovery y cómo agregar miembros a un caso de exhibición de documentos electrónicos, consulte [asignar permisos de exhibición &amp; de documentos electrónicos en el centro de seguridad y cumplimiento de Office 365](assign-ediscovery-permissions.md).
+En función de su práctica organizativa, necesita controlar quién puede tener acceso al caso de eDiscovery usado para investigar un incidente de derrame de datos y configurar los límites de conformidad. La forma más sencilla de hacerlo es agregar investigadores como miembros de un grupo de roles existente en el centro de cumplimiento de & de seguridad y, a continuación, agregar el grupo de roles como miembro del caso de exhibición de documentos electrónicos. Para obtener información sobre los grupos de roles integrados de eDiscovery y cómo agregar miembros a un caso de exhibición de documentos electrónicos, consulte [asignar permisos de exhibición](assign-ediscovery-permissions.md)de documentos electrónicos.
   
 También puede crear un nuevo grupo de roles que se alinee con las necesidades de su organización. Por ejemplo, es posible que desee que un grupo de investigadores de derrames de datos de la organización obtenga acceso y colabore en todos los casos de derrame de datos. Para ello, cree un grupo de funciones "investigación de derramamiento de datos", asignando los roles apropiados (exportar, desCifrado RMS, revisión, vista previa, búsqueda de cumplimiento y administración de casos), agregando los investigadores del derrame de datos al grupo de roles y, a continuación, agregando el Grupo de roles como miembro del caso de la exhibición de documentos electrónicos de datos. Para obtener instrucciones detalladas sobre cómo hacerlo, consulte [configurar límites de cumplimiento para investigaciones de eDiscovery en Office 365](set-up-compliance-boundaries.md) . 
   
@@ -68,19 +68,19 @@ También puede crear un nuevo grupo de roles que se alinee con las necesidades d
 
 Un caso de exhibición de documentos electrónicos proporciona una forma efectiva de administrar la investigación de derrame de datos. Puede Agregar miembros al grupo de roles que ha creado en el paso 1, agregar el grupo de roles como miembro del nuevo caso de exhibición de documentos electrónicos, realizar búsquedas iterativas para buscar los datos derramados, exportar un informe para compartir, realizar un seguimiento del estado del caso y, a continuación, volver a consultar los detalles de la c ase si es necesario. Considere la posibilidad de establecer una Convención de nomenclatura para los casos de eDiscovery que se usa para los incidentes de derrame de datos y proporcionar toda la información que pueda con el nombre y la descripción del caso, de modo que pueda ubicar y hacer referencia a ella en el futuro si es necesario.
   
-Para crear un nuevo caso, puede usar la exhibición de documentos electrónicos &amp; en el centro de seguridad y cumplimiento. Consulte "crear un nuevo caso" en [los casos de eDiscovery en el centro de seguridad _AMP_ cumplimiento de Office 365](ediscovery-cases.md#step-2-create-a-new-case).
+Para crear un nuevo caso, puede usar la exhibición de documentos electrónicos en el centro de seguridad y cumplimiento. Vea "crear un nuevo caso" en [casos de exhibición](ediscovery-cases.md#step-2-create-a-new-case)de documentos electrónicos.
   
 ## <a name="step-3-search-for-the-spilled-data"></a>Paso 3: buscar los datos derramados
 
 Ahora que ha creado un caso y un acceso administrado, puede usar el caso para buscar de forma iterativa los datos derramados e identificar los buzones que contienen los datos derramados. Usará la misma consulta de búsqueda que usó para buscar los mensajes de correo electrónico para eliminar los mismos mensajes en el [paso 7](#step-7-permanently-delete-the-spilled-data).
   
-Para crear búsquedas de contenido asociadas a un caso de exhibición de documentos electrónicos, vea "crear y ejecutar una búsqueda de contenido asociada a un caso" en [casos de exhibición de documentos electrónicos en el centro de seguridad _AMP_ cumplimiento de Office 365](ediscovery-cases.md#step-5-create-and-run-a-content-search-associated-with-a-case).
+Para crear una búsqueda de contenido asociada a un caso de exhibición de documentos electrónicos, vea "crear y ejecutar una búsqueda de contenido asociada a un caso" en [casos de exhibición](ediscovery-cases.md#step-5-create-and-run-a-content-search-associated-with-a-case)de documentos electrónicos.
   
  **Importante:** Las palabras clave que se usan en la consulta de búsqueda pueden contener los datos que se han derramado reales que se están buscando. Por ejemplo, si busca documentos que contengan un número de la seguridad social y usa la palabra clave it as Search, debe eliminar la consulta posteriormente para evitar más derrames. Consulte [eliminar la consulta de búsqueda en el](#deleting-the-search-query) paso 8. 
   
 ## <a name="step-4-review-and-validate-case-findings"></a>Paso 4: revisar y validar las conclusiones de casos
 
-Después de crear una búsqueda de contenido, debe revisar y validar que los resultados de la búsqueda y comprobar que solo constan de los mensajes de correo electrónico que se deben eliminar. En una búsqueda de contenido, puede obtener una vista previa de un muestreo aleatorio de mensajes de correo electrónico de 1.000 sin exportar los resultados de la búsqueda para evitar una mayor derramación de datos. Puede obtener más información acerca de las limitaciones de la vista previa en [limits for Content Search &amp; en el centro de seguridad y cumplimiento de Office 365](limits-for-content-search.md).
+Después de crear una búsqueda de contenido, debe revisar y validar que los resultados de la búsqueda y comprobar que solo constan de los mensajes de correo electrónico que se deben eliminar. En una búsqueda de contenido, puede obtener una vista previa de un muestreo aleatorio de mensajes de correo electrónico de 1.000 sin exportar los resultados de la búsqueda para evitar una mayor derramación de datos. Puede obtener más información acerca de las limitaciones de la vista previa en [limits for Content Search](limits-for-content-search.md).
   
 Si tiene más de 1.000 buzones o más de 100 mensajes de correo electrónico por buzón de correo para revisar, puede dividir la búsqueda inicial en varias búsquedas mediante palabras clave o condiciones adicionales, como el intervalo de fechas o el remitente o el destinatario, y revisar los resultados de cada búsqueda. individualmente. Asegúrese de anotar todas las consultas de búsqueda que debe usar cuando elimine mensajes en el [paso 7](#step-7-permanently-delete-the-spilled-data).
 
@@ -116,11 +116,11 @@ Para obtener más información acerca de la exportación de informes, vea [expor
 
 Para investigar más a última vez que se ha compartido el correo electrónico con datos derramados, puede consultar los registros de seguimiento de mensajes con la información del remitente y la información del intervalo de fechas recopilada en el paso 4. Tenga en cuenta que el período de retención para el seguimiento de mensajes es de 30 días para los datos en tiempo real y de 90 días para los datos históricos.
   
-Puede usar el seguimiento de mensajes en el centro de seguridad & cumplimiento o usar los cmdlets correspondientes en Exchange Online PowerShell. Es importante tener en cuenta que el seguimiento de mensajes no ofrece ninguna garantía completa en cuanto a la integridad de los datos devueltos. Para obtener más información acerca del uso del seguimiento de mensajes, consulte: 
+Puede usar el seguimiento de mensajes en el centro de seguridad y cumplimiento o usar los cmdlets correspondientes en Exchange Online PowerShell. Es importante tener en cuenta que el seguimiento de mensajes no ofrece ninguna garantía completa en cuanto a la integridad de los datos devueltos. Para obtener más información acerca del uso del seguimiento de mensajes, consulte: 
   
-- [Seguimiento de mensajes en el centro de &amp; seguridad y cumplimiento de Office 365](https://support.office.com/article/3e64f99d-ac33-4aba-91c5-9cb4ca476803.aspx)
+- [Seguimiento de mensajes en el Centro de seguridad y cumplimiento](https://support.office.com/article/3e64f99d-ac33-4aba-91c5-9cb4ca476803.aspx)
     
-- [Nuevo seguimiento de mensajes en el centro &amp; de seguridad y cumplimiento de Office 365](https://blogs.technet.microsoft.com/exchange/2018/05/02/new-message-trace-in-office-365-security-compliance-center/)
+- [Nuevo seguimiento de mensajes en el centro de seguridad & cumplimiento](https://blogs.technet.microsoft.com/exchange/2018/05/02/new-message-trace-in-office-365-security-compliance-center/)
     
 ## <a name="step-6-prepare-the-mailboxes"></a>Paso 6: preparar los buzones
 
@@ -172,7 +172,7 @@ Con las ubicaciones de buzón que recopiló y preparó en el paso 6 y la consult
   
 1. [Conexión a PowerShell de Exchange Online](https://go.microsoft.com/fwlink/?linkid=396554).
     
-2. Ejecute el comando siguiente:
+2. Ejecute el siguiente comando:
     
     ```
     Search-Mailbox -Identity <mailbox identity> -SearchDumpster -DeleteContent $true -SearchQuery <search query>
@@ -206,7 +206,7 @@ Si ha cambiado la configuración de algún buzón en el paso 6 para preparar los
 
 Si las palabras clave de la consulta de búsqueda que ha creado y usado en el paso 3 contienen parte de todos los datos que se han derramado, debe eliminar la consulta de búsqueda para evitar una mayor derrame de datos.
   
-1. En el centro de seguridad & cumplimiento, abra el caso de exhibición de documentos electrónicos, vaya a la página de **búsqueda** y seleccione la búsqueda de contenido adecuada.
+1. En el centro de seguridad y cumplimiento, abra el caso de exhibición de documentos electrónicos, vaya a la página de **búsqueda** y seleccione la búsqueda de contenido adecuada.
     
 2. En la página flotante, haga clic en **eliminar**.
 
@@ -214,12 +214,12 @@ Si las palabras clave de la consulta de búsqueda que ha creado y usado en el pa
     
 ### <a name="auditing-the-data-spillage-investigation-process"></a>Auditoría del proceso de investigación del derrame de datos
 
-Puede buscar en el registro de auditoría de Office 365 las actividades de eDiscovery que se llevaron a cabo durante la investigación. También puede buscar en el registro de auditoría para devolver los registros de auditoría que se crearon cuando ejecutó el comando **Search-Mailbox-DeleteContent** para eliminar los datos derramados. Para obtener más información, vea:
+Puede buscar en el registro de auditoría de Office 365 las actividades de eDiscovery que se llevaron a cabo durante la investigación. También puede buscar en el registro de auditoría para devolver los registros de auditoría que se crearon cuando ejecutó el comando **Search-Mailbox-DeleteContent** para eliminar los datos derramados. Para más información, visite:
 
-- [Buscar en el registro de auditoría del Centro de seguridad y cumplimiento de Office 365](search-the-audit-log-in-security-and-compliance.md)
+- [Buscar en el registro de auditoría](search-the-audit-log-in-security-and-compliance.md)
 
-- [Buscar actividades de eDiscovery en el registro de auditoría de Office 365](search-for-ediscovery-activities-in-the-audit-log.md)
+- [Buscar actividades de eDiscovery en el registro de auditoría](search-for-ediscovery-activities-in-the-audit-log.md)
 
-- Consulte la sección "actividades auditadas-registro de auditoría de administración de Exchange" en [Buscar el registro de auditoría en el centro de seguridad _AMP_ cumplimiento de Office 365](search-the-audit-log-in-security-and-compliance.md#audited-activities) para obtener instrucciones sobre cómo buscar registros de auditoría relacionados con los cmdlets en Exchange Online.
+- Consulte la sección "actividades auditadas-registro de auditoría de administración de Exchange" en [Buscar el registro de auditoría](search-the-audit-log-in-security-and-compliance.md#audited-activities) para obtener instrucciones sobre cómo buscar registros de auditoría relacionados con los cmdlets en Exchange Online.
   
 

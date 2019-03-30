@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 description: Obtenga información sobre cómo identificar los distintos tipos de retenciones que se pueden colocar en un buzón de correo de Office 365. Estos tipos de retenciones incluyen la retención por juicio, las suspensiones de eDiscovery y las directivas de retención de Office 365. También puede determinar si se ha excluido a un usuario de una directiva de retención para toda la organización
-ms.openlocfilehash: fa037e4e4f6a0c4b419645bdc3242fdc3d6db7db
-ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
+ms.openlocfilehash: e0c1c54cedfc7494233f12f043bb6d033576eca8
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30900159"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001223"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Cómo identificar el tipo de retención en un buzón de Exchange Online
 
@@ -28,7 +28,7 @@ Office 365 ofrece una serie de formas en que su organización puede evitar que e
 
 - **Retención por juicio** : retenciones que se aplican a los buzones de usuario en Exchange Online.
 
-- **conservación de exhibición** de documentos electrónicos: suspensiones asociadas a un caso de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento. las suspensiones de eDiscovery se pueden aplicar a los buzones de correo de los usuarios y en el buzón de correo correspondiente para los grupos de Office 365 y Microsoft Teams.
+- **conservación de exhibición** de documentos electrónicos: suspensiones asociadas a un caso de exhibición de documentos electrónicos en el centro de seguridad y cumplimiento. las suspensiones de eDiscovery se pueden aplicar a los buzones de correo de los usuarios y en el buzón de correo correspondiente para los grupos de Office 365 y Microsoft Teams.
 
 - **Conservación local** : suspensiones que se aplican a los buzones de usuario mediante la herramienta de conservación de exhibición de documentos electrónicos & en el centro de administración de Exchange en Exchange Online.
 
@@ -53,7 +53,7 @@ Puede ejecutar los dos cmdlets siguientes en Exchange Online PowerShell para obt
 
 - **Get-OrganizationConfig** : Use este cmdlet para obtener los GUID de las directivas de retención de toda la organización.
 
-Para conectarse a Exchange Online PowerShell, consulte [conectarse a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
+Para conectarse al PowerShell de Exchange Online, consulte [Conectarse al PowerShell de Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps).
 
 ### <a name="get-mailbox"></a>Get-Mailbox
 
@@ -72,9 +72,9 @@ En la tabla siguiente se describe cómo identificar distintos tipos de retencion
 |Tipo de retención  |Valor de ejemplo  |Cómo identificar la retención  |
 |---------|---------|---------|
 |Retención por juicio     |    `True`     |     La retención por juicio está habilitada para un buzón ** de correo si la propiedad `True`LitigationHoldEnabled está establecida en.    |
-|conservación de exhibición de documentos electrónicos     |  `UniH7d895d48-7e23-4a8d-8346-533c3beac15d`       |   La *propiedad InPlaceHolds* contiene el GUID de cualquier suspensión asociado con un caso de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento. Puede decir que se trata de una retención de eDiscovery porque el GUID comienza `UniH` por el prefijo (lo que denota una retención unificada).      |
-|Retención en contexto     |     `c0ba3ce811b6432a8751430937152491` <br/> o bien <br/> `cld9c0a984ca74b457fbe4504bf7d3e00de`  |     La propiedad *InPlaceHolds* contiene el GUID de la retención local que está colocada en el buzón. Puede decir que se trata de una conservación local porque el GUID no se inicia con un prefijo o se inicia con el `cld` prefijo.     |
-|Directiva de retención de Office 365 aplicada específicamente al buzón de correo     |    `mbxcdbbb86ce60342489bff371876e7f224:1` <br/> o bien <br/> `skp127d7cf1076947929bf136b7a2a8c36f:3`     |     La propiedad InPlaceHolds contiene los GUID de cualquier directiva de retención de ubicación específica que se aplique al buzón. Puede identificar las directivas de retención porque el GUID se inicia `mbx` con el `skp` o el prefijo. El `skp` prefijo indica que la Directiva de retención se aplica a las conversaciones de Skype empresarial en el buzón de correo del usuario.    |
+|conservación de exhibición de documentos electrónicos     |  `UniH7d895d48-7e23-4a8d-8346-533c3beac15d`       |   La *propiedad InPlaceHolds* contiene el GUID de cualquier suspensión asociado con un caso de exhibición de documentos electrónicos en el centro de seguridad y cumplimiento. Puede decir que se trata de una retención de eDiscovery porque el GUID comienza `UniH` por el prefijo (lo que denota una retención unificada).      |
+|Retención en contexto     |     `c0ba3ce811b6432a8751430937152491` <br/> o <br/> `cld9c0a984ca74b457fbe4504bf7d3e00de`  |     La propiedad *InPlaceHolds* contiene el GUID de la retención local que está colocada en el buzón. Puede decir que se trata de una conservación local porque el GUID no se inicia con un prefijo o se inicia con el `cld` prefijo.     |
+|Directiva de retención de Office 365 aplicada específicamente al buzón de correo     |    `mbxcdbbb86ce60342489bff371876e7f224:1` <br/> o <br/> `skp127d7cf1076947929bf136b7a2a8c36f:3`     |     La propiedad InPlaceHolds contiene los GUID de cualquier directiva de retención de ubicación específica que se aplique al buzón. Puede identificar las directivas de retención porque el GUID se inicia `mbx` con el `skp` o el prefijo. El `skp` prefijo indica que la Directiva de retención se aplica a las conversaciones de Skype empresarial en el buzón de correo del usuario.    |
 |Excluido de una directiva de retención de Office 365 de toda la organización     |   `-mbxe9b52bf7ab3b46a286308ecb29624696`      |     Si un buzón se excluye de una directiva de retención de Office 365 de toda la organización, el GUID de la Directiva de retención en la que se excluye el buzón se muestra en la propiedad `-mbx` InPlaceHolds y se identifica por el prefijo.    |
 
 ### <a name="get-organizationconfig"></a>Get-OrganizationConfig
@@ -137,7 +137,7 @@ Get-ComplianceCase $CaseHold.CaseId | FL Name
 $CaseHold | FL Name,ExchangeLocation
 ```
 
-Para conectar con el PowerShell del centro de cumplimiento de & de seguridad, vea [Connect to Office 365 Security _AMP_ Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
+Para conectarse a Security & Compliance Center PowerShell, vea [Connect to Security _AMP_ Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
 
 ### <a name="in-place-holds"></a>Suspensiones locales
 

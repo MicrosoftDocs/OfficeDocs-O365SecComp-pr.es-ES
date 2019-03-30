@@ -1,9 +1,8 @@
 ---
-title: Exportar resultados en eDiscovery avanzado de Office 365
+title: Exportar resultados en Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,14 +12,14 @@ search.appverid:
 - MET150
 ms.assetid: a9951a07-10b3-48cb-b37a-0ffaa24931ad
 description: 'Obtenga información sobre cómo definir opciones para exportar resultados de eDiscovery avanzado de Office 365, incluido el procedimiento para especificar parámetros para un lote de exportación. '
-ms.openlocfilehash: 02314b0848d8e7bb37a7cb96fa4a721cf2622712
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: a2528c3eab0bc9c06a592b972a3bc602174458d3
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218100"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000913"
 ---
-# <a name="export-results-in-office-365-advanced-ediscovery"></a>Exportar resultados en eDiscovery avanzado de Office 365
+# <a name="export-results-in-office-365-advanced-ediscovery"></a>Exportar resultados en Office 365 Advanced eDiscovery
 
 > [!NOTE]
 > Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -180,13 +179,13 @@ Para obtener una descripción completa de los campos en el informe de exportaci�
 
 En la siguiente tabla se enumeran los archivos de salida que se generan al ejecutar un lote de exportación.
   
-|**Nombre del archivo**|**Tipo de archivo**|**Descripción**|
+|**Nombre de archivo**|**Tipo de archivo**|**Descripción**|
 |:-----|:-----|:-----|
 |Resumen de exportación  <br/> |CSV  <br/> |Un archivo de registro generado por la herramienta de exportación de exhibición de documentos electrónicos.  <br/> |
-|Paso  <br/> |txt  <br/> |Un archivo de registro generado por la herramienta de exportación de exhibición de documentos electrónicos.  <br/> |
+|Seguimiento  <br/> |txt  <br/> |Un archivo de registro generado por la herramienta de exportación de exhibición de documentos electrónicos.  <br/> |
 |Archivos de texto exTraídos  <br/> |Carpeta de archivos  <br/> |Carpeta que contiene los archivos de texto extraídos de los archivos exportados.  <br/> |
 |Archivos de entrada o nativos  <br/> |Carpeta de archivos  <br/> |Carpeta que contiene los archivos nativos y de entrada de los archivos exportados.  <br/> |
-|Exportar lista  <br/> |xlsx  <br/> |Metadatos de archivos exPortados en formato xlsx. Los campos de los archivos se encuentran en función de la plantilla que el usuario selecciona para exportar. Si es necesario, se crean varios archivos, cada uno de los cuales contiene 100 150K filas. Si un valor determinado contiene más caracteres de los que puede contener una celda de Excel (actualmente, el límite es de 32.767 caracteres), el valor se recortará hasta la longitud máxima permitida. Si se recorta un valor, el color de fondo de la celda es rojo para indicarlo al usuario. " Los participantes del correo electrónico "son un ejemplo de un campo que puede superar el límite de longitud, si el correo electrónico se envió a una distribución grande. Consulte [exportar campos de informe](export-report-fields-in-advanced-ediscovery.md) para obtener más información sobre los campos de salida.<br/> |
+|Exportar lista  <br/> |xlsx  <br/> |Metadatos de archivos exPortados en formato xlsx. Los campos de los archivos se encuentran en función de la plantilla que el usuario selecciona para exportar. Si es necesario, se crean varios archivos, cada uno de los cuales contiene 100 150K filas. Si un valor determinado contiene más caracteres de los que puede contener una celda de Excel (actualmente, el límite es de 32.767 caracteres), el valor se recortará hasta la longitud máxima permitida. Si se recorta un valor, el color de fondo de la celda es rojo para indicarlo al usuario. " Los participantes del correo electrónico "son un ejemplo de un campo que puede superar el límite de longitud, si el correo electrónico se envió a una distribución grande. Consulte [exportar campos de informe](export-report-fields-in-advanced-ediscovery.md) para obtener más información sobre los campos de salida.  <br/> |
 |Cargar archivo  <br/> |CSV  <br/> |Metadatos de archivos exPortados en formato CSV para cargar en una aplicación diferente. Los campos de los archivos se encuentran en función de la plantilla que el usuario selecciona para exportar.  <br/> |
 |Indicador de operación correcta  <br/> |txt  <br/> |Solo se crea al exportar a un BLOB de Azure de terceros. Si la exportación se realizó completamente, se creará el archivo. En caso de error, o parcialmente correcta, no se creará el archivo. El archivo se creará en la carpeta raíz, lo que permite el seguimiento automatizado en diferentes Estados de sesiones y lotes de exportación. Se trata de un archivo vacío. Su nombre es: TenantId_CaseId_ExternalCaseId_CaseName_ExportBatchId_SessionId_DateTime. txt.  <br/> |
    

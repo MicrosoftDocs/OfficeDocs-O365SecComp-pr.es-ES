@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: e2a789f2-9962-4960-9fd4-a00aa063559e
 description: 'Para administradores: Obtenga información sobre cómo habilitar el archivado de expansión automática en Office 365, que proporciona a los usuarios un almacenamiento ilimitado para sus buzones de Exchange Online. Puede habilitar el archivado de expansión automática para toda la organización o solo para usuarios específicos.'
-ms.openlocfilehash: 634807a687a8ccbb764a54300f338263f876b604
-ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
+ms.openlocfilehash: e41ebc0605b7e6ce2178791de27421a82e2b6cf6
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30670625"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000853"
 ---
 # <a name="enable-unlimited-archiving-in-office-365---admin-help"></a>Habilitar el archivado ilimitado en Office 365: ayuda de administración
 
@@ -31,20 +31,20 @@ Puede usar la característica archivado de ampliación automática de Exchange o
 
 - Debe ser un administrador global de la organización de Office 365 o miembro del grupo de funciones de administración de la organización de su organización de Exchange Online para habilitar el archivado de expansión automática para toda la organización o para usuarios específicos. Como alternativa, debe ser miembro de un grupo de roles que tenga asignado el rol destinatarios de correo para habilitar el archivado de expansión automática para usuarios específicos.
     
-- El buzón de archivo de un usuario debe estar habilitado para poder habilitar el archivado de expansión automática. A un usuario se le debe asignar una licencia de plan 2 de Exchange Online para habilitar el buzón de archivo. Si a un usuario se le asigna una licencia de Exchange Online plan 1, tendrá que asignarle una licencia de archivado de Exchange Online independiente para habilitar su buzón de archivo. Consulte [Habilitar buzones de archivo en el centro de &amp; seguridad y cumplimiento de Office 365](enable-archive-mailboxes.md).
+- El buzón de archivo de un usuario debe estar habilitado para poder habilitar el archivado de expansión automática. A un usuario se le debe asignar una licencia de plan 2 de Exchange Online para habilitar el buzón de archivo. Si a un usuario se le asigna una licencia de Exchange Online plan 1, tendrá que asignarle una licencia de archivado de Exchange Online independiente para habilitar su buzón de archivo. Consulte [Habilitar buzones de archivo en el centro de seguridad _AMP_ cumplimiento](enable-archive-mailboxes.md).
     
 - También puede usar PowerShell para habilitar los buzones de archivo. Consulte la sección [More Information](#more-information) para ver un ejemplo del comando de PowerShell que puede usar para habilitar buzones de archivo para todos los usuarios de la organización. 
     
 - El archivado de expansión automática también es compatible con los buzones compartidos. Para habilitar el archivo para un buzón compartido, se necesita una licencia de Exchange Online (plan 2) o una licencia de Exchange Online (plan 1) con una licencia de archivado de Exchange Online.
     
-- No puede usar el centro de administración de Exchange o &amp; el centro de seguridad y cumplimiento para habilitar el archivado de expansión automática. Debe usar Exchange Online PowerShell. Para conectarse a la organización de Exchange online mediante PowerShell remoto, vea [conectarse a Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
+- No puede usar el centro de administración de Exchange o el centro de seguridad & cumplimiento para habilitar el archivado de expansión automática. Debe usar Exchange Online PowerShell. Para conectarse a la organización de Exchange online mediante PowerShell remoto, vea [conectarse a Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
     
   
 ## <a name="enable-auto-expanding-archiving-for-your-entire-organization"></a>Habilitación del archivado de expansión automática para toda la organización
 
 Puede habilitar el archivado de expansión automática para toda la organización. Después de activarla, el archivado de expansión automática se habilitará para los buzones de usuario existentes y para los nuevos buzones de usuario que se creen. Al crear nuevos buzones de usuario, asegúrese de habilitar el buzón de archivo principal del usuario para que la característica de archivado de expansión automática funcione para el nuevo buzón de usuario.
   
-1. [Conexión a Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554)
+1. [Conectarse a Exchange Online mediante PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554)
     
 2. Ejecute el siguiente comando en Exchange Online PowerShell para habilitar el archivado de expansión automática para toda la organización.
 
@@ -64,7 +64,7 @@ Cuando habilita el archivado de expansión automática para un usuario específi
     
 Este espacio adicional se agrega para evitar los problemas de almacenamiento que puedan surgir antes de que se aprovisione el archivo de expansión automática. Tenga en cuenta que *no se* agrega espacio de almacenamiento adicional cuando habilita el archivado de expansión automática para toda la organización, tal como se describe en la sección anterior. 
   
-1. [Conexión a Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554)
+1. [Conectarse a Exchange Online mediante PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554)
     
 2. Ejecute el siguiente comando en Exchange Online PowerShell para habilitar el archivado de expansión automática para un usuario específico. Como se ha explicado anteriormente, el buzón de archivo del usuario (archivo principal) debe estar habilitado para poder activar el archivado de expansión automática para ese usuario.
     

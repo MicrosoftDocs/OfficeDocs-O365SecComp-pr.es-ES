@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
 description: 'Resumen: implemente un nuevo sitio de grupo aislado de SharePoint Online con estas instrucciones paso a paso.'
-ms.openlocfilehash: 6a552e7ce8982f3b7d943136907764385fa33115
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: e59c92ff488f82f4ea042364d742f7418da50167
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216610"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000192"
 ---
 # <a name="deploy-an-isolated-sharepoint-online-team-site"></a>Implementar un sitio de grupo de SharePoint Online aislado
 
@@ -87,7 +87,7 @@ Debe crear los siguientes grupos de acceso en Azure AD:
   
 Esta es la configuración resultante con los tres grupos de acceso al sitio.
   
-![Los tres grupos de acceso de su implementación de un sitio de SharePoint Online aislado.](media/c2557f61-478b-4494-95e9-d79fe5909e8b.png)
+![Los tres grupos de acceso para la implementación de un sitio de SharePoint Online aislado.](media/c2557f61-478b-4494-95e9-d79fe5909e8b.png)
   
 ### <a name="step-5-add-the-user-accounts-to-the-access-groups"></a>Paso 5. Agregar las cuentas de usuario a los grupos de acceso
 
@@ -161,7 +161,7 @@ En esta fase, se crea el sitio de SharePoint Online aislado y se configuran los 
   
 En primer lugar, cree el sitio de grupo de SharePoint Online con estos pasos.
   
-1. Inicie sesión en el portal de Office 365 con una cuenta que también se vaya a usar para administrar el sitio de grupo de SharePoint Online (un administrador de SharePoint Online). Para obtener ayuda, vea [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4) (Dónde iniciar sesión en Office 365).
+1. Inicie sesión en el centro de administración con una cuenta que también se usará para administrar el sitio de grupo de SharePoint Online (un administrador de SharePoint Online). Para obtener ayuda, vea [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4) (Dónde iniciar sesión en Office 365).
     
 2. En la lista de iconos, haga clic en **SharePoint**.
     
@@ -227,7 +227,7 @@ Esta es la configuración resultante con los tres grupos de SharePoint para el s
   
 Usted y los miembros del sitio, a través de la pertenencia a grupos en uno de los grupos de acceso, ahora pueden colaborar con los recursos del sitio.
   
-## <a name="next-step"></a>Siguiente paso
+## <a name="next-step"></a>Paso siguiente
 
 Cuando necesite cambiar la pertenencia al grupo de acceso al sitio o crear una carpeta de documentos con permisos personalizados, vea [administrar un sitio de grupo de SharePoint Online aislado](manage-an-isolated-sharepoint-online-team-site.md).
   

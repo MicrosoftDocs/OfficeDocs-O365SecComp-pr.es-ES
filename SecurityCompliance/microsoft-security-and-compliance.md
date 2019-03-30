@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: Normal
 description: Prepárese para el nuevo centro de seguridad y cumplimiento de Microsoft 365
-ms.openlocfilehash: e67c3f61898187d87aa638cf2dab871a7b694c18
-ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
+ms.openlocfilehash: 15e67b5bdd6aca8c5447abe2e4cd12fb15e36760
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30935205"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000693"
 ---
 # <a name="the-new-microsoft-365-security-center-and-microsoft-365-compliance-center-are-now-generally-available"></a>El nuevo centro de seguridad 365 de Microsoft y el centro de cumplimiento de Microsoft 365 están disponibles para el público
 
@@ -70,7 +70,7 @@ Una vez que se ha implementado esta actualización, si su organización tiene Mi
 - Vaya al centro de administración de 365 de Microsoft y, a continuación, vaya al nuevo centro de seguridad de Microsoft 365 y al centro de cumplimiento de Microsoft 365 (los vínculos están en centros de administración en el panel de navegación de la izquierda).
 
 > [!TIP]
-> Si usa el centro de seguridad & cumplimiento de Office 365 ([https://protection.office.com](http://protection.office.com)), podrá seguir configurando y administrando la configuración de Office 365 dentro del centro de cumplimiento de _AMP_ de seguridad de Office 365 existente. Las configuraciones se mantendrán en el centro de cumplimiento de Office 365 Security &, así como en el nuevo centro de seguridad de Microsoft 365 y el centro de cumplimiento de Microsoft 365.  
+> Si usa el centro de seguridad & cumplimiento de Office 365 ([https://protection.office.com](http://protection.office.com)), podrá seguir configurando y administrando la configuración de Office 365 en el centro de cumplimiento de _AMP_ de seguridad existente. Las configuraciones se mantendrán en el centro de seguridad & de seguridad existente, así como en el nuevo centro de seguridad 365 de Microsoft y el centro de cumplimiento de Microsoft 365.  
 
 ## <a name="required-licenses-and-permissions"></a>Permisos y licencias necesarios
 
@@ -92,7 +92,7 @@ En la tabla siguiente se resume quién puede tener acceso a diversos portales en
 
 |Portal |Administrador global |Administrador de seguridad, operador de seguridad o lector de seguridad|Administrador de cumplimiento de normas o administrador de datos de cumplimiento |
 |---------|---------|---------|---------|
-|[Centro de seguridad y cumplimiento de Office 365](https://protection.office.com) |Sí |Sí  |Sí |
+|[Centro de seguridad & cumplimiento](https://protection.office.com) |Sí |Sí  |Sí |
 |[Centro de seguridad de Microsoft 365](https://security.microsoft.com) |Sí  | Sí  | No        |
 |[Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com) | Sí | No | Sí |
 |[Administrador de cumplimiento](https://aka.ms/compliancemanager) |Sí | Sí |Sí  |

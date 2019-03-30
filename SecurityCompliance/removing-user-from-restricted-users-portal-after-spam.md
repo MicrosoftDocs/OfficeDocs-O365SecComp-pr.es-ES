@@ -16,12 +16,12 @@ ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 ms.collection:
 - M365-security-compliance
 description: Si un usuario envía mensajes de correo electrónico de forma continua desde Office 365 que se clasifican como correo no deseado, se les restringirá el envío de mensajes adicionales.
-ms.openlocfilehash: 9370df691bfe30498e32115d7c77dd5cf02556f1
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: a4f22b4d5192df202c1caa19714e8b5476dd8205
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692019"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30998503"
 ---
 # <a name="removing-a-user-from-the-restricted-users-portal-after-sending-spam-email"></a>Quitar un usuario desde el Portal de usuarios restringidos después de enviar correo no deseado
 
@@ -29,7 +29,7 @@ Si un usuario envía mensajes de correo electrónico de forma continua desde Off
 
 - No se pudo entregar el mensaje porque no se reconoció como remitente válido. La razón más común es que se sospecha que su dirección de correo electrónico envía correo no deseado y ya no se le permite enviar mensajes fuera de la organización. Póngase en contacto con su administrador de correo electrónico para obtener ayuda. El servidor remoto devolvió ' 550 5.1.8 acceso denegado, remitente de salida incorrecto '
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 <a name="sectionSection0"> </a>
 
 Tiempo estimado para finalizar: 5 minutos
@@ -40,7 +40,7 @@ El siguiente procedimiento también se puede llevar a cabo mediante PowerShell r
 
 ## <a name="remove-restrictions-for-a-blocked-office-365-email-account"></a>Quitar restricciones para una cuenta de correo electrónico de Office 365 no admitida
 
-Complete esta tarea en el centro de seguridad & cumplimiento (SCC) de Office 365. [Vaya al centro de cumplimiento de & de seguridad de Office 365](go-to-the-securitycompliance-center.md) para obtener más información sobre SCC. Debe estar en el grupo de roles administración de la **organización** o **Administrador de seguridad** para poder realizar estas funciones. [Vaya a permisos en el centro de seguridad _AMP_ cumplimiento de Office 365](permissions-in-the-security-and-compliance-center.md) para obtener más información sobre los grupos de roles de SCC.
+Complete esta tarea en el centro de seguridad & cumplimiento (SCC). [Vaya al centro de cumplimiento de seguridad &](go-to-the-securitycompliance-center.md) para obtener más información sobre SCC. Debe estar en el grupo de roles administración de la **organización** o **Administrador de seguridad** para poder realizar estas funciones. [Vaya a permisos en el centro de seguridad _AMP_ cumplimiento](permissions-in-the-security-and-compliance-center.md) para obtener más información sobre los grupos de roles de SCC.
 
 1. Con una cuenta profesional o educativa con privilegios de administrador global de Office 365, inicie sesión en el centro de seguridad y cumplimiento de Office 365 y, en la lista de la izquierda, expanda **Administración de amenazas**, elija **revisar**y, a continuación, seleccione **restringido Usuarios**de.
     
@@ -60,7 +60,7 @@ Complete esta tarea en el centro de seguridad & cumplimiento (SCC) de Office 365
 
 ## <a name="making-sure-admins-are-alerted-when-this-happens"></a>Asegurarse de que se advierte a los administradores cuando esto ocurre
 
-Los administradores de espacios empresariales también recibirán una alerta que indica que se ha restringido el envío de más mensajes salientes al usuario. Se trata de una alerta predeterminada que se proporciona para todos los inquilinos y que aparece en la página directivas de alerta de SCC, titulada "el usuario restringió el envío de correo electrónico". Vaya a [directivas de alerta en el centro de seguridad _AMP_ cumplimiento de Office 365](https://docs.microsoft.com/en-us/office365/securitycompliance/alert-policies) para obtener más información sobre la alerta.
+Los administradores de espacios empresariales también recibirán una alerta que indica que se ha restringido el envío de más mensajes salientes al usuario. Se trata de una alerta predeterminada que se proporciona para todos los inquilinos y que aparece en la página directivas de alerta de SCC, titulada "el usuario restringió el envío de correo electrónico". Vaya a [directivas de alerta en el centro de cumplimiento de & de seguridad](https://docs.microsoft.com/en-us/office365/securitycompliance/alert-policies) para obtener más información sobre la alerta.
 
 ## <a name="for-more-information"></a>Para obtener más información
 
@@ -70,4 +70,4 @@ Los administradores de espacios empresariales también recibirán una alerta que
 
 [Grupo de entrega de alto riesgo para mensajes salientes](high-risk-delivery-pool-for-outbound-messages.md)
 
-[Permisos en el centro de seguridad & cumplimiento de Office 365](permissions-in-the-security-and-compliance-center.md)
+[Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md)

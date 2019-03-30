@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Obtenga información sobre las capacidades de investigación y respuesta automatizadas en Office 365 Advanced Threat Protection.
-ms.openlocfilehash: 9c01121ed6389f4a9014fe1ee1298b0e840f06ab
-ms.sourcegitcommit: 1706b618c9ec63ed05aebb5f84a77b5bfb50734a
+ms.openlocfilehash: 223a28a7f63f101dd5644e433d72a3ddf6e5dc23
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "30792514"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000443"
 ---
 # <a name="automated-investigation-and-response-air-with-office-365"></a>Investigación y respuesta automatizadas (AIR) con Office 365
 
@@ -39,9 +39,9 @@ En la versión inicial de AIR en abril de 2019, las alertas generadas desde las 
 
 ***Nota**: a estas alertas se les ha asignado una gravedad de "información" en las directivas de alertas respectivas en el centro de seguridad & cumplimiento con las notificaciones de correo electrónico desactivadas. Se pueden activar a través de la configuración de la Directiva de alerta.
 
-para ver las alertas, en el centro de cumplimiento de & de seguridad de Office 365, elija **alertas** > **ver alertas**. Seleccione una alerta para ver sus detalles y, desde allí, use el vínculo **Ver investigación** para ir a la [investigación](#investigation-graph)correspondiente. Tenga en cuenta que las alertas informativas están ocultas en la vista de alertas de forma predeterminada. Para verlos, debe cambiar el filtrado de alertas para incluir alertas informativas.
+Para ver las alertas, en el centro de seguridad & cumplimiento, elija **alertas** > **Ver alertas**. Seleccione una alerta para ver sus detalles y, desde allí, use el vínculo **Ver investigación** para ir a la [investigación](#investigation-graph)correspondiente. Tenga en cuenta que las alertas informativas están ocultas en la vista de alertas de forma predeterminada. Para verlos, debe cambiar el filtrado de alertas para incluir alertas informativas.
 
-Si su organización administra sus alertas de seguridad a través de un sistema de administración de alertas, un sistema de administración de servicios o un sistema de administración de eventos e información de seguridad (SIEM), puede enviar alertas de Office 365 a ese sistema mediante una notificación por correo electrónico o mediante el [ API de actividad de administración 365 de Office](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). Las notificaciones de alerta de investigación a través del correo electrónico o la API incluirán vínculos para acceder a las alertas en el centro de seguridad & cumplimiento de Office 365, lo que permite al administrador de seguridad asignado navegar rápidamente a la investigación.
+Si su organización administra sus alertas de seguridad a través de un sistema de administración de alertas, un sistema de administración de servicios o un sistema de administración de eventos e información de seguridad (SIEM), puede enviar alertas de Office 365 a ese sistema mediante una notificación por correo electrónico o mediante el [ API de actividad de administración 365 de Office](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference). Las notificaciones de alerta de investigación a través del correo electrónico o la API incluirán vínculos para acceder a las alertas en el centro de seguridad & cumplimiento, lo que permite que el administrador de seguridad asignado navegue rápidamente a la investigación.
 
 ![Alertas que vinculan a investigaciones](media/air-alerts-page-details.png) 
 
@@ -121,7 +121,7 @@ De forma similar a las guías activadas por una alerta, las investigaciones auto
 
 ## <a name="get-started"></a>Introducción
 
-Para acceder a sus investigaciones, como administrador global de Office 365, administrador de seguridad o lector de seguridad, vaya al centro de seguridad de Office 365[https://protection.office.com](https://protection.office.com)_AMP_ Compliance Center () e inicie sesión. A continuación, siga uno de los procedimientos siguientes:
+Para acceder a sus investigaciones, como administrador global de Office 365, administrador de seguridad o lector de seguridad, vaya al centro de seguridad &[https://protection.office.com](https://protection.office.com)Compliance Center () e inicie sesión. A continuación, siga uno de los procedimientos siguientes:
 
 - En el panel de navegación izquierdo, vaya a **alertas** > **Ver alertas**, abra una de las alertas relacionadas con la investigación y, a continuación, haga clic en el vínculo **Ver investigación** en la parte inferior del control flotante de alerta. 
 

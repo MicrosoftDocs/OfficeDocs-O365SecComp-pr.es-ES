@@ -10,17 +10,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: df2d1e0f-b476-42c9-aade-4a260b24f193
-description: Use la herramienta de búsqueda de contenido eDiscovery en el centro &amp; de seguridad y cumplimiento de Office 365 para encontrar rápidamente el correo electrónico en buzoNes de Exchange, documentos en sitios de SharePoint y ubicaciones de OneDrive, y conversaciones de mensajería instantánea en Skype empresarial.
-ms.openlocfilehash: 255ddbde4488ab5e7d13872cea95398ed5fd4d75
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+description: Use la herramienta de búsqueda de contenido eDiscovery en el centro de seguridad & cumplimiento para encontrar rápidamente el correo electrónico en buzones de Exchange, documentos en sitios de SharePoint y ubicaciones de OneDrive, y conversaciones de mensajería instantánea en Skype empresarial.
+ms.openlocfilehash: fc0bea90ce9cbfc27f894985c7d3083756ab108a
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214540"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000973"
 ---
 # <a name="search-for-content-in-office-365"></a>Buscar contenido en Office 365
 
-Use la herramienta de búsqueda de contenido en &amp; el centro de seguridad y cumplimiento para encontrar rápidamente el correo electrónico en buzoNes de Exchange, documentos en sitios de SharePoint y ubicaciones de OneDrive, y conversaciones de mensajería instantánea en Skype empresarial. Puede usar la herramienta de búsqueda de contenido para buscar correos electrónicos, documentos y conversaciones de mensajería instantánea en las herramientas de colaboración de Office 365, como Microsoft Teams y Office 365 groups.
+Use la herramienta de búsqueda de contenido en el centro de seguridad & cumplimiento para encontrar rápidamente el correo electrónico en buzones de Exchange, documentos en sitios de SharePoint y ubicaciones de OneDrive, y conversaciones de mensajería instantánea en Skype empresarial. Puede usar la herramienta de búsqueda de contenido para buscar correos electrónicos, documentos y conversaciones de mensajería instantánea en las herramientas de colaboración de Office 365, como Microsoft Teams y Office 365 groups.
   
 ## <a name="search-for-content"></a>Buscar contenido
 
@@ -58,7 +58,7 @@ Después de ejecutar una búsqueda y redefinirla según sea necesario, el siguie
     
 ## <a name="learn-more-about-content-search"></a>Obtenga más información sobre la búsqueda de contenido
 
-La búsqueda de contenido es fácil de usar, pero también es una herramienta eficaz. En segundo plano, hay muchas cosas en marcha. Cuanto más conozca y comprenda su comportamiento y sus limitaciones, cuanto más le conviene, podrá usarla para las necesidades de búsqueda e investigación de su organización. Obtenga más información sobre:
+La búsqueda de contenido es fácil de usar, pero también es una herramienta eficaz. En segundo plano, hay muchas cosas en marcha. Cuanto más conozca y comprenda su comportamiento y sus limitaciones, cuanto más le conviene, podrá usarla para las necesidades de búsqueda e investigación de su organización. Obtenga información sobre:
   
 - [Elementos parcialmente indizados en Exchange y SharePoint](partially-indexed-items-in-content-search.md) , y cómo incluirlos o excluirlos cuando se exportan y se descargan los resultados de la búsqueda 
     
@@ -72,7 +72,7 @@ La búsqueda de contenido es fácil de usar, pero también es una herramienta ef
     
 ## <a name="use-scripts-for-advanced-scenarios"></a>Usar scripts para escenarios avanzados
 
-A veces tiene que realizar tareas de búsqueda de contenido más avanzadas, complejas y repetitivas. En estos casos, es más fácil y rápido usar comandos de PowerShell en el centro &amp; de seguridad y cumplimiento. Para facilitar esta tarea, hemos creado una serie de scripts de &amp; PowerShell del centro de cumplimiento de seguridad que le ayudarán a completar tareas complejas relacionadas con la búsqueda de contenido.
+A veces tiene que realizar tareas de búsqueda de contenido más avanzadas, complejas y repetitivas. En estos casos, es más fácil y rápido usar comandos de PowerShell en el centro de seguridad & cumplimiento. Para facilitar esta tarea, hemos creado una serie de scripts de PowerShell del centro de cumplimiento de & de seguridad que le ayudarán a completar tareas complejas relacionadas con la búsqueda de contenido.
   
 - [Buscar en carpetas de sitio y buzones específicas](use-content-search-for-targeted-collections.md) (denominada *colección de destino* ) cuando tiene la certeza de que los elementos que responden a un caso se encuentran en esa carpeta 
     

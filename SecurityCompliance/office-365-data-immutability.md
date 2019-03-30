@@ -7,19 +7,19 @@ ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Define y explica la inmutabilidad de datos o datos que se deben poder detectar y no se pueden destruir ni modificar.
-ms.openlocfilehash: 5d0deef04d879959238dbbcfe36bb98ed0159242
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: d3f02a088ede557a1e7308182b2ec6e378cd418e
+ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215570"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "31004157"
 ---
 # <a name="immutability-in-office-365"></a>Inmutabilidad en Office 365
 Para algunas organizaciones, el cumplimiento normativo, los requisitos de control interno o el riesgo por litigio requieren la preservación de correo electrónico y datos asociados en un formulario reconocible. Todos los datos del sistema deben ser detectables y no se puede destruir ni alterar ninguno de ellos. El término estándar de la industria para esto es "inmutabilidad". 
@@ -35,9 +35,9 @@ A través de la configuración de las características de directiva de conservac
 - Documentos compartidos durante reuniones en línea
 - Correos
 
-Además, Microsoft ha desarrollado características complementarias para permitir el [archivado de datos](https://support.office.com/article/Archiving-third-party-data-in-Office-365-0ce338d5-3666-4a18-86ab-c6910ff408cc) de otros orígenes mediante la integración con soluciones de administración y captura de datos de terceros. Una vez importados los datos de terceros, puede aplicar las características de cumplimiento de Office 365 a los datos, como la retención por juicio, la exhibición de documentos electrónicos y la retención en el lugar, la búsqueda de cumplimiento, el archivado local, la auditoría y las directivas de retención. Por ejemplo, cuando un buzón de correo se coloca en retención por juicio, se conservarán los datos de terceros. Puede buscar datos de terceros mediante la exhibición de documentos electrónicos local o la búsqueda de cumplimiento. O bien, puede aplicar directivas de archivado y retención a datos de terceros, como lo haría con los datos de Microsoft. En Resumen, el archivado de datos de terceros en Office 365 puede ayudar a su organización a cumplir con las directivas gubernamentales y regulatorias.
+Además, Microsoft ha desarrollado características complementarias para permitir el [archivado de datos](https://support.office.com/article/Archiving-third-party-data-in-Office-365-0ce338d5-3666-4a18-86ab-c6910ff408cc) de otros orígenes mediante la integración con soluciones de administración y captura de datos de terceros. Una vez importados los datos de terceros, puede aplicar las características de cumplimiento de Office 365 a los datos, como la retención por juicio, la exhibición de documentos electrónicos y la retención en el lugar, la búsqueda de cumplimiento, el archivado local, la auditoría y las directivas de retención. Por ejemplo, cuando un buzón se pone en Retención por juicio, se conservan los datos de terceros. Puede buscar datos de terceros mediante Exhibición de documentos electrónicos local o Búsqueda de cumplimiento. También puede aplicar las directivas de archivado y retención a los datos de terceros, del mismo modo que a los datos de Microsoft. En Resumen, el archivado de datos de terceros en Office 365 puede ayudar a su organización a cumplir con las directivas gubernamentales y regulatorias.
 
-El archivado en Office 365 proporciona el almacenamiento compatible con la norma 17a-4 de los valores y la Comisión de Exchange (SEC), y conserva los archivos permanentes de todos los datos recopilados en un formato no regrabable y que no se puede borrar mediante directivas de retención locales y directivas de conservación , incluido el bloqueo de conservación. Específicamente
+El archivado en Office 365 proporciona el almacenamiento compatible con la norma 17a-4 de los valores y la Comisión de Exchange (SEC), y conserva los archivos permanentes de todos los datos recopilados en un formato no regrabable y que no se puede borrar mediante directivas de retención locales y directivas de conservación , incluido el bloqueo de conservación. En particular:
 - Todos los registros que se almacenan con las directivas de retención indicadas anteriormente se conservan en un área de almacenamiento dedicada del ámbito del usuario ordinario. Además, solo los usuarios autorizados pueden tener acceso a estos registros y buscar en ellos, pero no pueden modificarlos ni borrarlos.
 - Los metaDatos de cada elemento incluyen una marca de tiempo que se usa en el cálculo de la duración de la retención. Las marcas de hora se aplican cuando se recibe o se crea un nuevo elemento y no se puede modificar ni quitar posteriormente de los metadatos.
 - El archivado en Office 365 permite a los usuarios combinar distintas directivas de retención y mantener acciones para crear directivas de retención granulares a fin de definir el tipo o la ubicación de los elementos que se conservarán inmutablemente y la duración de dicha conservación.

@@ -8,14 +8,14 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
-description: Los administradores pueden obtener información sobre la información sobre cómo solucionar el dominio del remitente en el panel del flujo de correo en el centro de seguridad & cumplimiento de Office 365.
+description: Los administradores pueden obtener información sobre la información sobre cómo solucionar el dominio del remitente en el panel de flujo de correo en el centro de seguridad & cumplimiento.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 6d98d2a2660c24a77db58215faa0de1a4a18ea1a
-ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
+ms.openlocfilehash: bd62d6d0b42edfd1eedf543d7d8bb68903c7c608
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30723067"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000313"
 ---
 # <a name="fix-sender-domain-insight"></a>Revisión del conocimiento del dominio del remitente
 
@@ -38,7 +38,7 @@ Los mensajes que no cumplen los criterios no se atribuirán a la organización y
 
 La introducción a la **solución de dominio del remitente** muestra el correo electrónico de su entorno local que no cumple los criterios, le ayuda a identificar las cuentas de usuario y equipos potencialmente comprometidos en su entorno de correo electrónico local y le ayuda a tomar acciones de corrección.
 
-![La información del dominio de remitentes Fix del panel flujo de correo en el centro de seguridad & cumplimiento de Office 365](media/sender-domain-insight-selected.png)
+![La información del dominio de remitentes Fix del panel flujo de correo del centro de seguridad & cumplimiento](media/sender-domain-insight-selected.png)
 
 Al hacer clic en **Ver detalles**, se le lleva a otro widget con más detalles como se muestra en el siguiente diagrama:
 

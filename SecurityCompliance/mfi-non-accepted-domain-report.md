@@ -8,14 +8,14 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
-description: Los administradores pueden obtener información sobre el informe de dominio no aceptado en el panel de flujo de correo en el centro de seguridad & cumplimiento de Office 365.
+description: Los administradores pueden obtener información sobre el informe de dominio no aceptado en el panel de flujo de correo en el centro de seguridad & cumplimiento.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f7fc54a4b1d31d724a95c5d8540b95034effbab4
-ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
+ms.openlocfilehash: a69a1e59241ea7b6680afe8608534dbf9460c269
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30723073"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30998993"
 ---
 # <a name="non-accepted-domain-report"></a>Informe de dominio no aceptado
 
@@ -26,7 +26,7 @@ De forma similar a la información del **dominio del remitente** , el servicio d
 
 Office 365 puede limitar estos mensajes si tenemos datos para probar que la intención de estos mensajes es malintencionada. Por lo tanto, es importante que comprenda lo que está sucediendo y que solucione el problema.
 
-![El informe de dominio no aceptado del panel flujo de correo en el centro de seguridad & cumplimiento de Office 365](media/non-accepted-domain-report-selected.png)
+![El informe de dominio no aceptado en el panel de flujo de correo en el centro de seguridad & cumplimiento](media/non-accepted-domain-report-selected.png)
 
 Al hacer clic en el widget, se le llevará al informe completo. En el informe completo, donde puede hacer clic en **Ver detalles** para ver la información de una tabla, tal como se muestra en el siguiente diagrama:
 

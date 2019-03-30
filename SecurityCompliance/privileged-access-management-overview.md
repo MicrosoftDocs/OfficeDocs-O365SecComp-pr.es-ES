@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: Use este tema para obtener más información acerca de la administración del acceso con privilegios en Office 365
-ms.openlocfilehash: d8b16d7dd73f99c15ec241963a58273966074318
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 2a464bacaa568515e470e29a0c9c45a91a79cf8e
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214930"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001253"
 ---
 # <a name="privileged-access-management-in-office-365"></a>Administración del acceso con privilegios en Office 365
 
@@ -45,23 +45,23 @@ La administración del acceso con privilegios en Office 365 puede definirse y te
 
 ## <a name="privileged-access-management-architecture-and-process-flow"></a>Arquitectura de administración del acceso privilegiado y flujo del proceso
 
-Cada uno de los siguientes flujos de proceso describe la arquitectura del acceso priveleged y cómo interactúa con el sustrato de Office 365, la auditoría de Office 365 y el espacio de ejecución de administración de Exchange.
+Cada uno de los siguientes flujos de proceso describe la arquitectura de acceso privilegiado y el modo en que interactúa con el sustrato de Office 365, la auditoría de Office 365 y el espacio de ejecución de administración de Exchange.
 
 ### <a name="step-1-configuring-a-privileged-access-policy"></a>Paso 1: configurar una directiva de acceso privilegiado
 
-Al configurar una directiva de acceso privilegiado con el centro de administración de Office 365 o PowerShell de administración de Exchange, puede crear y definir la Directiva y la característica de acceso privilegiado procesa los atributos de directiva en el sustrato de Office 365 y registra el actividad en el centro de seguridad y cumplimiento de Office 365. La Directiva está ahora habilitada y lista para administrar las solicitudes entrantes para aprobaciones.
+Al configurar una directiva de acceso privilegiado con el centro de administración de [Microsoft 365](https://admin.microsoft.com) o PowerShell de administración de Exchange, puede crear y definir la Directiva y la característica de acceso privilegiado procesa los atributos de directiva en el sustrato de Office 365 y registra la actividad en el centro de seguridad y cumplimiento de Office 365. La Directiva está ahora habilitada y lista para administrar las solicitudes entrantes para aprobaciones.
 
 ![Paso 1: creación de la Directiva](media/pam-step1-policy-creation.jpg)
 
 ### <a name="step-2-access-request"></a>Paso 2: solicitud de acceso
 
-Mediante el uso del centro de administración de Office 365 o de PowerShell de administración de Exchange, los usuarios pueden solicitar acceso a tareas elevadas o privilegiadas. La característica de acceso privilegiado envía la solicitud al sustrato de Office 365 para su procesamiento en la Directiva configurada de acceso a privilegios y registra el sctivity en los registros del centro de seguridad y cumplimiento de Office 365.
+Mediante el uso del centro de administración de [Microsoft 365](https://admin.microsoft.com) o de PowerShell de administración de Exchange, los usuarios pueden solicitar acceso a tareas elevadas o privilegiadas. La característica de acceso privilegiado envía la solicitud al sustrato de Office 365 para su procesamiento en la Directiva configurada de acceso a privilegios y registra la actividad en los registros del centro de seguridad y cumplimiento de Office 365.
 
 ![Paso 2: solicitud de acceso](media/pam-step2-access-request.jpg)
 
 ### <a name="step-3-access-approval"></a>Paso 3: aprobación de acceso
 
-Se genera una solicitud de aprobación y se notifica al grupo de aprobación por correo electrónico de la solicitud pendiente. Si se concede la aprobación, la solicitud de acceso privilegiado se procesa como una aprobación y la tarea está lista para completarse. Si se deniega la solicitud, la tarea se bloquea y no se concede acceso a reqeustor. El solicitante recibirá una notificación de la aprobación de la solicitud o de una denegación mediante un mensaje de correo electrónico.
+Se genera una solicitud de aprobación y se notifica al grupo de aprobación por correo electrónico de la solicitud pendiente. Si se concede la aprobación, la solicitud de acceso privilegiado se procesa como una aprobación y la tarea está lista para completarse. Si se deniega la solicitud, la tarea se bloquea y no se concede acceso al solicitante. El solicitante recibirá una notificación de la aprobación de la solicitud o de una denegación mediante un mensaje de correo electrónico.
 
 ![Paso 3: aprobación de acceso](media/pam-step3-access-approval.jpg)
 
@@ -84,7 +84,7 @@ Planeamos ofrecer esta característica en otras cargas de trabajo de Office 365 
 Estamos planeando aumentar el límite actual de 30 directivas de acceso con privilegios por organización de Office 365 en breve.
 
 ### <a name="do-i-need-to-be-a-global-admin-to-manage-privileged-access-in-office-365"></a>¿Es necesario ser administrador global para administrar el acceso con privilegios en Office 365?
-No, debe tener asignada la función de administración de roles de Exchange a las cuentas que administrarán el acceso privilegiado en Office 365. Sin embargo, el rol de administrador global incluye esta función de forma predeterminada y se puede usar para administrar el acceso privilegiado si no desea configurar el rol de administración de roles como un permiso de cuenta independiente. Los usuarios incluidos en un grupo de aprobadores no tienen que ser administrador global o tener el rol de administración de roles asignado para revisar y aprobar solicitudes. 
+No, debe tener asignada la función de administración de roles de Exchange a las cuentas que administrarán el acceso privilegiado en Office 365. Sin embargo, el rol de administrador global incluye esta función de forma predeterminada y se puede usar para administrar el acceso privilegiado si no desea configurar el rol de administración de roles como un permiso de cuenta independiente. Los usuarios incluidos en un grupo de aprobadores no tienen que ser administrador global o tener el rol de administración de roles asignado para revisar y aprobar solicitudes.
 
 ### <a name="how-is-privileged-access-management-in-office-365-related-to-customer-lockbox"></a>¿Cómo es la administración de acceso privilegiada en Office 365 relacionada con caja de caja del cliente?
 [Caja de caja del cliente](https://docs.microsoft.com/office365/admin/manage/customer-lockbox-requests) permite un nivel de control de acceso para que las organizaciones tengan acceso a los datos de su proveedor de servicios, por ejemplo, Microsoft. La administración de acceso con privilegios en Office 365 permite un control de acceso granular dentro de una organización para todas las tareas privilegiadas de Office 365.

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 40829b57-793c-4d41-b171-e9270129173d
 description: 'Para los administradores: Aprenda a importar de forma masiva los archivos PST de su organización a los buzones de correo de Office 365 copiando los archivos PST en una unidad de disco duro y, a continuación, se envíen a Microsoft. '
-ms.openlocfilehash: e6623e4b5a66b9c2e8eeb2cfe6c978115b6fdc9f
-ms.sourcegitcommit: fb50bf2f2c9d780c911f245a2f78c6bb5e357f67
+ms.openlocfilehash: d0e2c155c267939755a85f30f1ad234dc57cfe5f
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30950477"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999993"
 ---
 # <a name="use-drive-shipping-to-import-your-organization-pst-files-to-office-365"></a>Usar el envío de unidades para importar los archivos PST de la organización a Office 365
 
@@ -52,7 +52,7 @@ Para conocer las preguntas más frecuentes sobre el uso del envío de unidades p
 
 - Debe tener asignado el rol importación y exportación de buzones de correo en Exchange Online para importar archivos PST a los buzones de correo de Office 365. De forma predeterminada, este rol no está asignado a ningún grupo de roles en Exchange Online. You can add the Mailbox Import Export role to the Organization Management role group. Or you can create a new role group, assign the Mailbox Import Export role, and then add yourself as a member. Para obtener más información, vea las secciones "agregar un rol a un grupo de roles" o "crear un grupo de roles" en [Manage role Groups](https://go.microsoft.com/fwlink/p/?LinkId=730688).
     
-    Además, para crear trabajos de importación en el centro de &amp; seguridad y cumplimiento de Office 365, debe cumplirse una de las siguientes condiciones:
+    Además, para crear trabajos de importación en el centro de seguridad & cumplimiento, debe cumplirse una de las siguientes condiciones:
     
   - Debe tener asignado el rol destinatarios de correo en Exchange Online. By default, this role is assigned to the Organization Management and Recipient Management roles groups.
     
@@ -110,14 +110,14 @@ Para conocer las preguntas más frecuentes sobre el uso del envío de unidades p
 El primer paso consiste en descargar la clave de almacenamiento seguro y la herramienta que usará en el paso 2 para copiar los archivos PST en la unidad de disco duro.
   
 > [!IMPORTANT]
-> Tiene que usar la herramienta de importación/exportación de Azure versión 1 (WAimportExportV1) para importar archivos PST correctamente con el método de envío de unidad. La versión 2 de la herramienta de importación/exportación de Azure no es compatible y el uso de la misma provocará una preparación incorrecta del disco duro para el trabajo de importación. Asegúrese de descargar la herramienta de importación y exportación de Azure desde el &amp; centro de seguridad y cumplimiento siguiendo los procedimientos descritos en este paso. 
+> Tiene que usar la herramienta de importación/exportación de Azure versión 1 (WAimportExportV1) para importar archivos PST correctamente con el método de envío de unidad. La versión 2 de la herramienta de importación/exportación de Azure no es compatible y el uso de la misma provocará una preparación incorrecta del disco duro para el trabajo de importación. Asegúrese de descargar la herramienta de importación y exportación desde el centro de seguridad & cumplimiento siguiendo los procedimientos descritos en este paso. 
   
-1. Vaya a [https://protection.office.com/](https://protection.office.com/) e inicie sesión con las credenciales de una cuenta de administrador en la organización de Office 365. 
+1. Vaya a [https://compliance.microsoft.com/](https://compliance.microsoft.com/) e inicie sesión con las credenciales de una cuenta de administrador en la organización de Office 365. 
     
-2. En el panel izquierdo del centro de &amp; seguridad y cumplimiento, haga clic en **importación**de **gobierno** \> de datos.
+2. En el panel izquierdo del centro de seguridad & cumplimiento, haga clic en **importación**de **gobierno** \> de datos.
     
     > [!NOTE]
-    > Como se mencionó anteriormente, tiene que tener asignados los permisos adecuados para acceder a la página **importar** en &amp; el centro de seguridad y cumplimiento. 
+    > Como se mencionó anteriormente, tiene que tener asignados los permisos adecuados para acceder a la página **importar** en el centro de seguridad & cumplimiento. 
   
 3. En la página **importar** , haga ![clic en](media/ITPro-EAC-AddIcon.gif) agregar icono **nuevo trabajo de importación**.
     
@@ -141,7 +141,7 @@ El primer paso consiste en descargar la clave de almacenamiento seguro y la herr
     
 7. Haga clic en **Cancelar** para cerrar el asistente. 
     
-    Volverá a la página **importar** en el centro de seguridad &amp; y cumplimiento cuando cree el trabajo de importación en el paso 4. 
+    Regresará a la página **importar** en el centro de seguridad & cumplimiento cuando cree el trabajo de importación en el paso 4. 
 
 ## <a name="step-2-copy-the-pst-files-to-the-hard-drive"></a>Paso 2: copiar los archivos PST en la unidad de disco duro
 
@@ -242,14 +242,14 @@ Después de que el personal de centro de datos de Microsoft cargue los archivos 
 
 El siguiente paso es crear el trabajo de importación de PST en el servicio de importación en Office 365. Como se ha explicado anteriormente, enviará el archivo de asignación de importaciones de PST que creó en el paso 3. Después de crear el nuevo trabajo, el servicio de importación usará la información del archivo de asignación para importar los archivos PST al buzón de usuario especificado después de que se copien los archivos PST desde la unidad de disco duro al área de almacenamiento de Azure y cree e inicie el trabajo de importación.
   
-1. Vaya a [https://protection.office.com](https://protection.office.com) e inicie sesión con las credenciales de una cuenta de administrador en la organización de Office 365. 
+1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com) e inicie sesión con las credenciales de una cuenta de administrador en la organización de Office 365. 
     
-2. En el panel izquierdo del centro de &amp; seguridad y cumplimiento, haga clic en **gobierno de datos** y, a continuación, en **importar**.
+2. En el panel izquierdo del centro de seguridad & cumplimiento, haga clic en **gobierno de datos** y, a continuación, en **importar**.
     
 3. En la página **importar** , haga ![clic en](media/ITPro-EAC-AddIcon.gif) agregar icono **nuevo trabajo de importación**.
     
     > [!NOTE]
-    > Como se mencionó anteriormente, tiene que tener asignados los permisos adecuados para acceder a la página **importar** en &amp; el centro de seguridad y cumplimiento. 
+    > Como se mencionó anteriormente, tiene que tener asignados los permisos adecuados para acceder a la página **importar** en el centro de seguridad & cumplimiento. 
   
 4. Escriba un nombre para el trabajo de importación de PST y, a continuación, haga clic en **siguiente**. Use letras minúsculas, números, guiones y caracteres de subrayado. No puede usar letras mayúsculas ni incluir espacios en el nombre.
     
@@ -328,7 +328,7 @@ Tenga en cuenta lo siguiente a la hora de enviar las unidades de disco duro a Mi
 
 Cuando haya enviado la unidad de disco duro a Microsoft, lleve a cabo el procedimiento siguiente en la página Servicio de importación.
   
-1. Vaya a [https://protection.office.com](https://protection.office.com) e inicie sesión con las credenciales de una cuenta de administrador en la organización de Office 365. 
+1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com) e inicie sesión con las credenciales de una cuenta de administrador en la organización de Office 365. 
     
 2. En el panel izquierdo, haga clic en **gobierno de datos** y, a continuación, haga clic en **importar**.
     
@@ -354,7 +354,7 @@ Una vez que Microsoft recibe la unidad de disco duro, el estado del trabajo de i
   
 Una vez que se cargan los archivos PST en Azure, el estado cambia a **análisis en curso**. Esto indica que Office 365 está analizando los datos de los archivos PST (de forma segura y segura) para identificar la antigüedad de los elementos y los diferentes tipos de mensajes incluidos en los archivos PST. Cuando se completa el análisis y los datos están listos para importar, el estado del trabajo de importación cambia a **análisis completado**. En este punto, tiene la opción de importar todos los datos contenidos en los archivos PST o puede recortar los datos que se importan configurando filtros que controlan qué datos se importan.
   
-1. Vaya a [https://protection.office.com](https://protection.office.com) e inicie sesión con las credenciales de una cuenta de administrador en la organización de Office 365. 
+1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com) e inicie sesión con las credenciales de una cuenta de administrador en la organización de Office 365. 
     
 2. En el panel izquierdo, haga clic en**importación**de **gobierno** > de datos.
     
@@ -396,9 +396,9 @@ Para instalar el explorador de almacenamiento de Azure y conectarse a su área d
   
 1. Realice los siguientes pasos para obtener la dirección URL de la firma de acceso compartido (SAS) de su organización. Esta dirección URL es una combinación de la dirección URL de red para la ubicación de almacenamiento de Azure en la nube de Microsoft para su organización y una clave SAS. Esta clave le proporciona los permisos necesarios para obtener acceso a la ubicación de almacenamiento de Azure de su organización.
     
-1. Vaya a [https://protection.office.com/](https://protection.office.com/) e inicie sesión con las credenciales de una cuenta de administrador en la organización de Office 365. 
+1. Vaya a [https://compliance.microsoft.com/](https://compliance.microsoft.com/) e inicie sesión con las credenciales de una cuenta de administrador en la organización de Office 365. 
     
-2. En el panel izquierdo del centro de &amp; seguridad y cumplimiento, haga clic en **importación**de **gobierno** \> de datos.
+2. En el panel izquierdo del centro de seguridad & cumplimiento, haga clic en **importación**de **gobierno** \> de datos.
     
 3. En la página **importar** , haga ![clic en](media/ITPro-EAC-AddIcon.gif) agregar icono **nuevo trabajo de importación**.
     

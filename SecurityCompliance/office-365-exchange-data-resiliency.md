@@ -3,30 +3,29 @@ title: Resistencia de datos de Exchange de Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Una explicación de los diversos aspectos de la resistencia de datos en Exchange Online y Office 365.
-ms.openlocfilehash: 02395c9d87f9f75b260bac88e97db3df7d23e532
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 9e61efaf95d466fcb268e12317c7feab0701c062
+ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220410"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "31004237"
 ---
 # <a name="exchange-online-data-resiliency-in-office-365"></a>Resistencia de datos de Exchange online en Office 365
 
 ## <a name="introduction"></a>Introducción
 Hay dos tipos de daños que pueden afectar a una base de datos de Exchange: los daños físicos, que suelen deberse a problemas de hardware (en particular, del hardware de almacenamiento) y a los daños lógicos, que se producen debido a otros factores. Por lo general, hay dos tipos de daños lógicos que pueden producirse dentro de una base de datos de Exchange: 
 - **Daño lógico de base** de datos: la suma de comprobación de la página de la base de datos coincide, pero los datos de la página son incorrectos lógicamente. Esto puede ocurrir cuando el motor de base de datos (el motor de almacenamiento extensible (ESE)) intenta escribir una página de base de datos y, aunque el sistema operativo devuelve un mensaje de operación correcta, los datos nunca se escriben en el disco o se escriben en el lugar equivocado. Esto se conoce como un *vaciado perdido*. ESE incluye numerosas características y protecciones diseñadas para evitar daños físicos en una base de datos y otros escenarios de pérdida de datos. Para evitar que los vaciados perdidos pierdan datos, ESE incluye un mecanismo de detección de vaciado perdido en la base de datos junto con una característica (restauración de una sola página) para corregirlo. 
-- **Almacenar los daños lógicos** : los datos se agregan, eliminan o manipulan de una manera que el usuario no espera. Estos casos suelen estar causados por aplicaciones de terceros. Por lo general, solo se daña en el sentido de que el usuario lo ve como dañado. El almacén de Exchange considera que la transacción que ha generado los daños lógicos es una serie de operaciones MAPI válidas. Las características de [conservación local](https://docs.microsoft.com/exchange/security-and-compliance/create-or-remove-in-place-holds) de Exchange Online proporcionan protección para almacenar los daños lógicos (porque impide que un usuario o una aplicación eliminen el contenido de forma permanente). 
+- **Almacenar los daños lógicos** : los datos se agregan, eliminan o manipulan de una manera que el usuario no espera. Normalmente, estos casos son causados por aplicaciones de otros fabricantes. Solo se considera un daño, por lo general, porque el usuario lo ve como un daño. El almacén de Exchange considera que la transacción que produce los daños de lógica es una serie de operaciones MAPI válidas. Las características de [conservación local](https://docs.microsoft.com/exchange/security-and-compliance/create-or-remove-in-place-holds) de Exchange Online proporcionan protección para almacenar los daños lógicos (porque impide que un usuario o una aplicación eliminen el contenido de forma permanente). 
 
 Exchange Online realiza varias comprobaciones de coherencia en los archivos de registro replicados durante la inspección de registros y la reproducción de registros. Estas comprobaciones de coherencia impiden que el sistema replique los daños físicos. Por ejemplo, durante la inspección de registros, hay una comprobación de integridad física que comprueba el archivo de registro y valida que la suma de comprobación registrada en el archivo de registro coincida con la suma de comprobación generada en la memoria. Además, se examina el encabezado del archivo de registro para asegurarse de que la firma del archivo de registro registrada en el encabezado del registro coincide con la del archivo de registro. Durante la reproducción del registro, el archivo de registro sufre más análisis. Por ejemplo, el encabezado de la base de datos también contiene la firma del registro que se compara con la firma del archivo de registro para asegurarse de que coinciden. 
 
@@ -58,9 +57,9 @@ Exchange Online incluye dos características principales de resistencia de trans
 
 Con la redundancia de instantáneas, cada servidor de transporte de Exchange Online hace una copia de todos los mensajes que recibe antes de confirmar que recibe correctamente el mensaje al servidor de envío. Esto hace que todos los mensajes de la canalización de transporte sean redundantes mientras están en tránsito. Si Exchange Online determina que el mensaje original se perdió en el tránsito, se entrega una copia redundante del mensaje. 
 
-Red de seguridad es una cola de transporte que está asociada con el servicio de transporte en un servidor de buzones de correo. Esta cola almacena copias de los mensajes que el servidor ha procesado correctamente. Cuando una base de datos de buzones o un error del servidor requieren activar una copia obsoleta de la base de datos de buzones, los mensajes de la cola de seguridad de la red se reenvían automáticamente a la nueva copia activa de la base de datos de buzones. La red de seguridad también es redundante, lo que elimina el transporte como un punto único de error. Usa el concepto de una red de seguridad principal y una red de seguridad de instantáneas donde la red de seguridad principal no está disponible durante más de 12 horas, las solicitudes de reenvío se convierten en solicitudes de reenvío de instantánea y los mensajes se vuelven a entregar desde la red de seguridad de instantáneas.
+Red de seguridad es una cola de transporte que está asociada con el servicio de transporte en un servidor de buzones de correo. Esta cola almacena copias de mensajes correctamente procesados por el servidor. Cuando una base de datos de buzones o un error del servidor requieren activar una copia obsoleta de la base de datos de buzones, los mensajes de la cola de seguridad de la red se reenvían automáticamente a la nueva copia activa de la base de datos de buzones. La red de seguridad también es redundante, lo que elimina el transporte como un punto único de error. Usa el concepto de una red de seguridad principal y una red de seguridad de instantáneas donde la red de seguridad principal no está disponible durante más de 12 horas, las solicitudes de reenvío se convierten en solicitudes de reenvío de instantánea y los mensajes se vuelven a entregar desde la red de seguridad de instantáneas.
 
-Los reenvíos de mensajes desde la red de seguridad se inician automáticamente mediante el componente Active Manager del servicio de replicación de Microsoft Exchange que administra los Dag y las copias de bases de datos de buzones. No es necesario realizar ninguna acción manual para reenviar mensajes desde la red de seguridad. 
+Los reenvíos de mensajes desde la red de seguridad se inician automáticamente mediante el componente Active Manager del servicio de replicación de Microsoft Exchange que administra los Dag y las copias de bases de datos de buzones. No se requiere ninguna acción manual para reenviar mensajes desde la red de seguridad. 
 
 ## <a name="single-bit-correction"></a>Corrección de bits único 
 ESE incluye un mecanismo para detectar y resolver errores CRC de un solo bit (también conocidos como volteo de un bit) que son el resultado de errores de hardware (y, como tal, representan daños físicos). Cuando se producen estos errores, ESE los corrige automáticamente y registra un evento en el registro de eventos. 

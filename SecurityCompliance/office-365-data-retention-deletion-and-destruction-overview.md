@@ -6,19 +6,19 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Información general sobre las directivas de Microsoft para Office 365 relacionadas con la retención, eliminación y destrucción de datos.
-ms.openlocfilehash: 6aa272ece723aa83e15581062fd2348c508b04d5
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: fcae11f10278f1357a68ea3f9a1178da97322775
+ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219960"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "31004127"
 ---
 # <a name="data-retention-deletion-and-destruction-in-office-365"></a>Retención, eliminación y destrucción de datos en Office 365
 

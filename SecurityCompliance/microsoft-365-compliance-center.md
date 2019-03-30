@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: o365-seccomp
 localization_priority: Normal
 description: Obtenga información sobre el nuevo centro de cumplimiento de Microsoft 365, incluido lo que contiene, cómo obtenerlo y los pasos siguientes.
-ms.openlocfilehash: 00c9325b35c2dca5b474964e47683e94a77c97fe
-ms.sourcegitcommit: fb50bf2f2c9d780c911f245a2f78c6bb5e357f67
+ms.openlocfilehash: 76ddc27ad616f2cbf4ec3a97892e3baea92469ec
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30950447"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001043"
 ---
 # <a name="welcome-to-your-all-new-microsoft-365-compliance-center"></a>Bienvenido al nuevo centro de cumplimiento de Microsoft 365
 
@@ -83,7 +83,7 @@ Además de los vínculos de las tarjetas en la Página principal, encontrará un
 
 ### <a name="why-am-i-taken-to-the-office-365-security--compliance-center-to-perform-some-tasks-such-as-defining-certain-policies"></a>¿Por qué me he dado al centro de cumplimiento de Office 365 Security & para realizar algunas tareas, como la definición de determinadas directivas?
 
-Todavía estamos desarrollando el centro de cumplimiento de Microsoft 365 y agregaremos más funcionalidad y soluciones en los próximos meses. Mientras tanto, hay algunas tareas que deben realizarse en el centro de seguridad & cumplimiento de Office 365. En estos casos, se le redirigirá automáticamente a la ubicación en la que puede realizar la tarea a mano, como la creación o edición de una directiva de supervisión.
+Todavía estamos desarrollando el centro de cumplimiento de Microsoft 365 y agregaremos más funcionalidad y soluciones en los próximos meses. Mientras tanto, hay algunas tareas que deben realizarse en el centro de seguridad & cumplimiento. En estos casos, se le redirigirá automáticamente a la ubicación en la que puede realizar la tarea a mano, como la creación o edición de una directiva de supervisión.
 
 ### <a name="why-dont-i-see-the-new-microsoft-365-compliance-center-yet"></a>¿Por qué no veo todavía el nuevo centro de cumplimiento de Microsoft 365?
 

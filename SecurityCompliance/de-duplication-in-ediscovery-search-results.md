@@ -14,12 +14,12 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 5af334b6-a15d-4f73-97f8-1423457d9f6b
 description: Tiene la opción de desduplicar los resultados de la búsqueda de eDiscovery que se exportan para que solo se exporte una copia de un mensaje de correo electrónico, aunque se hayan encontrado varias instancias del mismo mensaje en diferentes buzones.
-ms.openlocfilehash: 7a4f156a68cafbffbb416c625e1e3ba432e6b069
-ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
+ms.openlocfilehash: b3810e3568bd2c7aa1628bcfcebbad5a87468ff8
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30936730"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999303"
 ---
 # <a name="de-duplication-in-ediscovery-search-results"></a>Desduplicación en los resultados de búsqueda de eDiscovery
 
@@ -66,7 +66,7 @@ Tenga en cuenta que los mensajes únicos también se pueden marcar como duplicad
 
 - La información de este artículo es aplicable al exportar resultados de búsqueda mediante una de las siguientes herramientas de eDiscovery:
     
-  - Búsqueda de contenido en el centro de &amp; seguridad y cumplimiento de Office 365
+  - Búsqueda de contenido en el centro de cumplimiento en Office 365
     
   - Exhibición de documentos electrónicos local en Exchange Online
     
@@ -74,9 +74,9 @@ Tenga en cuenta que los mensajes únicos también se pueden marcar como duplicad
     
 - Para obtener más información sobre cómo exportar los resultados de la búsqueda, consulte:
     
-  - [Exportar resultados de búsqueda desde el centro de &amp; seguridad y cumplimiento de Office 365](export-search-results.md)
+  - [Exportar búsqueda de contenido](export-search-results.md)
     
-  - [Exportar un informe de búsqueda de contenido desde el centro &amp; de seguridad y cumplimiento de Office 365](export-a-content-search-report.md)
+  - [Exportar un informe de búsqueda de contenido](export-a-content-search-report.md)
     
   - [Exportar los resultados de la búsqueda de exhibición de documentos electrónicos local a un archivo PST](https://go.microsoft.com/fwlink/p/?linkid=832671)
     

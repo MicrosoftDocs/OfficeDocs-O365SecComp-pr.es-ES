@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 35d0ecdb-7cb0-44be-ad5c-69df2f8f8b25
 description: 'Si un antiguo empleado vuelve a su organización, o si se contrata a un nuevo empleado para que realice las responsabilidades laborales de un empleado que ya no está en parte, puede recuperar el contenido del buzón inactivo en Office 365. Al recuperar un buzón inactivo, se convierte en un nuevo buzón que contiene el contenido del buzón inactivo. '
-ms.openlocfilehash: d5cdb07c7a7209f11021a8f4235280a6b27f216d
-ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
+ms.openlocfilehash: c7f942c518dcc74a4bdb37d67e27e8a63879ab46
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30900049"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999823"
 ---
 # <a name="recover-an-inactive-mailbox-in-office-365"></a>Recuperar un buzón inactivo en Office 365
 
@@ -69,7 +69,7 @@ Use el cmdlet **New-Mailbox** con el parámetro *InactiveMailbox* para recuperar
 
     La dirección SMTP principal para el buzón inactivo recuperado tendrá el mismo valor que el especificado por el parámetro *MicrosoftOnlineServicesID* . 
     
-Después de recuperar un buzón inactivo, también se crea una nueva cuenta de usuario de Office 365. Para activar la cuenta de usuario, se tiene que asignar una licencia. Para asignar una licencia en el centro de administración de Office 365, consulte [Asignar o cancelar la asignación de licencias de Office 365 para empresas](https://go.microsoft.com/fwlink/p/?LinkId=276798).
+Después de recuperar un buzón inactivo, también se crea una nueva cuenta de usuario de Office 365. Para activar la cuenta de usuario, se tiene que asignar una licencia. Para asignar una licencia en Centro de administración de Microsoft 365, consulte [Asignar o cancelar la asignación de licencias de Office 365 para empresas](https://go.microsoft.com/fwlink/p/?LinkId=276798).
   
 ## <a name="more-information"></a>Más información
 

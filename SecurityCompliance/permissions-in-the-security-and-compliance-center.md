@@ -3,7 +3,7 @@ title: Permissions in the Office 365 Security &amp; Compliance Center
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: 6/29/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El centro de seguridad &amp; y cumplimiento de Office 365 le permite conceder permisos a personas que realizan tareas de cumplimiento como la administración de dispositivos, prevención de pérdida de datos, eDiscovery, retención, etc. Estas personas solo pueden realizar las tareas a las que les dé acceso explícitamente. Para obtener acceso al &amp; centro de seguridad y cumplimiento, los usuarios deben ser un administrador global de Office 365 o miembro de uno &amp; o varios grupos de roles del centro de cumplimiento de seguridad.
-ms.openlocfilehash: 9b2692d2afd70be911581caff237e61d405cf10f
-ms.sourcegitcommit: 6a7cec7d1f0d3b8d71f313bfa22f44c827de2336
+ms.openlocfilehash: eba77fd6edcf41bac5eeebae3637707c2c5a7246
+ms.sourcegitcommit: 799a958fcac643f62dfac6fa04020f2f4758635c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "30798136"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30997086"
 ---
 # <a name="permissions-in-the-office-365-security-amp-compliance-center"></a>Permissions in the Office 365 Security &amp; Compliance Center
 

@@ -11,16 +11,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: bff73d5ecb7e71ae2cd8557d16879bb197e4ca66
-ms.sourcegitcommit: ef27da3ea5340d6e7a2eaa1288e2e005ef8e4788
+ms.openlocfilehash: e722a8fbe89a960466ff7995622cedc938075780
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2019
-ms.locfileid: "30791913"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30998723"
 ---
 # <a name="monitor-and-report-data-in-microsoft-365-security"></a>Supervisión e informes de datos en Microsoft 365 Security
-
-[!include[Prerelease�information](prerelease.md)]
 
 La categoría de **datos** ayuda a realizar un seguimiento de la actividad del usuario que podría llevar a la revelación no autorizada de datos. Estos son el retrabajo de los informes de directivas DLP de Office 365 DLP más un informe de coincidencia de directiva DLP de terceros.
 

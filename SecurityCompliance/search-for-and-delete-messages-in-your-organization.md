@@ -14,13 +14,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
-description: Use la característica de búsqueda y depuración en el &amp; centro de seguridad y cumplimiento de Office 365 para buscar y eliminar un mensaje de correo electrónico de todos los buzones de la organización.
-ms.openlocfilehash: 4c98e73f74867b933560f163e80e74fd7bbd2bc5
-ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
+description: Use la característica de búsqueda y depuración en el centro de seguridad & cumplimiento de Office 365 para buscar y eliminar un mensaje de correo electrónico de todos los buzones de la organización.
+ms.openlocfilehash: c6fa0d09852016b918375dbff5a19468886d86b3
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30935165"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000273"
 ---
 # <a name="search-for-and-delete-email-messages-in-your-office-365-organization---admin-help"></a>Buscar y eliminar mensajes de correo electrónico de su organización de Office 365-ayuda para administradores
 
@@ -39,7 +39,7 @@ Puede usar la característica de búsqueda de contenido en Office 365 para busca
   
 ## <a name="before-you-begin"></a>Antes de empezar
 
-- Para crear y ejecutar una búsqueda de contenido, debe ser miembro del grupo de roles de **EDiscovery Manager** o tener asignado el rol de administración de **búsqueda de cumplimiento** . Para eliminar mensajes, debe ser miembro del grupo de roles de **Administración** de la organización o tener asignado el rol de administración de **búsqueda y** depuración. Para obtener información sobre cómo agregar usuarios a un grupo de roles, consulte [proporcionar a los usuarios acceso al centro de cumplimiento de & de seguridad de Office 365](grant-access-to-the-security-and-compliance-center.md).
+- Para crear y ejecutar una búsqueda de contenido, debe ser miembro del grupo de roles de **EDiscovery Manager** o tener asignado el rol de administración de **búsqueda de cumplimiento** . Para eliminar mensajes, debe ser miembro del grupo de roles de **Administración** de la organización o tener asignado el rol de administración de **búsqueda y** depuración. Para obtener información sobre cómo agregar usuarios a un grupo de roles, vea [conceder acceso a los usuarios al centro de seguridad y cumplimiento](grant-access-to-the-security-and-compliance-center.md).
     
 - Debe usar el PowerShell del centro de cumplimiento de & de seguridad para eliminar los mensajes. Consulte el [paso 2](#step-2-connect-to-security--compliance-center-powershell) para obtener instrucciones sobre cómo conectarse.
     
@@ -51,7 +51,7 @@ Puede usar la característica de búsqueda de contenido en Office 365 para busca
     
 ## <a name="step-1-create-a-content-search-to-find-the-message-to-delete"></a>Paso 1: Crear una búsqueda de contenido para buscar el mensaje que quiera eliminar
 
-El primer paso es crear y ejecutar una búsqueda de contenido para buscar el mensaje que quiera quitar de los buzones de la organización. Puede crear la búsqueda mediante el centro de seguridad &amp; y cumplimiento o mediante la ejecución de los cmdlets **New-compliancesearch** y **Start-ComplianceSearch** . Los mensajes que coinciden con la consulta para esta búsqueda se eliminarán mediante la ejecución del comando **New-ComplianceSearchAction-Purge** en el [paso 3](#step-3-delete-the-message). Para obtener información sobre cómo crear una búsqueda de contenido y configurar consultas de búsqueda, vea los temas siguientes: 
+El primer paso es crear y ejecutar una búsqueda de contenido para buscar el mensaje que quiera quitar de los buzones de la organización. Puede crear la búsqueda mediante el centro de seguridad & cumplimiento o mediante la ejecución de los cmdlets **New-compliancesearch** y **Start-ComplianceSearch** . Los mensajes que coinciden con la consulta para esta búsqueda se eliminarán mediante la ejecución del comando **New-ComplianceSearchAction-Purge** en el [paso 3](#step-3-delete-the-message). Para obtener información sobre cómo crear una búsqueda de contenido y configurar consultas de búsqueda, vea los temas siguientes: 
   
 - [Búsqueda de contenido en Office 365](content-search.md)
     
@@ -76,7 +76,7 @@ El objetivo de la consulta de búsqueda es limitar los resultados de la búsqued
     
 - Obtenga una vista previa de los resultados de la búsqueda para comprobar que la búsqueda devolvió solo el mensaje (o los mensajes) que desea eliminar.
     
-- Use las estadísticas de estimación de búsqueda (que se muestran en el panel de detalles de &amp; la búsqueda en el centro de seguridad y cumplimiento o mediante el cmdlet [Get-ComplianceSearch](https://go.microsoft.com/fwlink/p/?LinkId=517934) ) para obtener un recuento del número total de resultados. 
+- Use las estadísticas de estimación de búsqueda (que se muestran en el panel de detalles de la búsqueda en el centro de seguridad & cumplimiento o mediante el cmdlet [Get-ComplianceSearch](https://go.microsoft.com/fwlink/p/?LinkId=517934) ) para obtener un recuento del número total de resultados. 
     
 Estos son dos ejemplos de consultas para buscar mensajes de correo electrónico sospechosos.
   
@@ -94,13 +94,13 @@ Estos son dos ejemplos de consultas para buscar mensajes de correo electrónico 
 
 ## <a name="step-2-connect-to-security--compliance-center-powershell"></a>Paso 2: conectarse al centro de seguridad & de cumplimiento de PowerShell
 
-El paso siguiente es conectarse a PowerShell del centro de cumplimiento de seguridad & para su organización. Para obtener instrucciones paso a paso, consulte [Connect to Office 365 Security &amp; Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+El paso siguiente es conectarse a PowerShell del centro de cumplimiento de seguridad & para su organización. Para obtener instrucciones paso a paso, consulte [Connect to Security _AMP_ Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
   
-Si su cuenta de Office 365 usa la autenticación multifactor (MFA) o la autenticación federada, no puede usar las instrucciones descritas en el tema anterior sobre cómo conectarse al centro de seguridad & Compliance Center PowerShell. En su lugar, vea las instrucciones del tema [Connect to Office 365 Security _AMP_ Compliance Center PowerShell Using multi-factor Authentication](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell).
+Si su cuenta de Office 365 usa la autenticación multifactor (MFA) o la autenticación federada, no puede usar las instrucciones descritas en el tema anterior sobre cómo conectarse al centro de seguridad & Compliance Center PowerShell. En su lugar, vea las instrucciones del tema [Connect to Security _AMP_ Compliance Center PowerShell Using multi-factor Authentication](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell).
   
 ## <a name="step-3-delete-the-message"></a>Paso 3: eliminar el mensaje
 
-Una vez que haya creado y perfeccionado una búsqueda de contenido para que se devuelva el mensaje que desea quitar y &amp; esté conectado a PowerShell del centro de cumplimiento de seguridad, el paso final consiste en ejecutar el cmdlet **New-ComplianceSearchAction** para eliminar el mensaje. Puede eliminar el mensaje de forma Soft o difícil. Un mensaje eliminado temporalmente se mueve a la carpeta elementos recuperables de un usuario y se conserva hasta que expira el período de retención de elementos eliminados. Los mensajes eliminados permanentemente se marcan para su eliminación permanente del buzón y se quitarán de forma permanente la próxima vez que el Asistente para carpetas administradas procese el buzón de correo. Si la recuperación de un único elemento está habilitada para el buzón, los elementos eliminados de forma permanente se quitarán permanentemente cuando expire el período de retención de elementos eliminados. Si un buzón se coloca en retención, los mensajes eliminados se conservan hasta que expira la duración de retención del elemento o hasta que se quite la retención del buzón.
+Una vez que haya creado y perfeccionado una búsqueda de contenido para que se devuelva el mensaje que desea quitar y esté conectado al centro de seguridad & Compliance Center PowerShell, el paso final consiste en ejecutar el cmdlet **New-ComplianceSearchAction** para eliminar el mensaje. Puede eliminar el mensaje de forma Soft o difícil. Un mensaje eliminado temporalmente se mueve a la carpeta elementos recuperables de un usuario y se conserva hasta que expira el período de retención de elementos eliminados. Los mensajes eliminados permanentemente se marcan para su eliminación permanente del buzón y se quitarán de forma permanente la próxima vez que el Asistente para carpetas administradas procese el buzón de correo. Si la recuperación de un único elemento está habilitada para el buzón, los elementos eliminados de forma permanente se quitarán permanentemente cuando expire el período de retención de elementos eliminados. Si un buzón se coloca en retención, los mensajes eliminados se conservan hasta que expira la duración de retención del elemento o hasta que se quite la retención del buzón.
   
 En el siguiente ejemplo, el comando eliminará temporalmente los resultados de la búsqueda devueltos por una búsqueda de contenido denominada "quitar mensaje de suPlantación de identidad (phishing)". 
 
@@ -142,6 +142,6 @@ Para obtener más información, vea [New-ComplianceSearchAction](https://docs.mi
 
     Una vez que el mensaje se purga y se mueve a la carpeta de purgas, el mensaje se conserva hasta que expira la duración de retención. Si la duración de retención es ilimitada, los elementos se conservan hasta que la retención se quita o se cambia la duración de retención.
     
-- **¿Por qué el flujo de trabajo de búsqueda y eliminación se divide entre los distintos grupos de roles del centro de seguridad & cumplimiento?**
+- **¿Por qué el flujo de trabajo de la búsqueda y la eliminación se divide entre los distintos grupos de roles del centro de seguridad y cumplimiento?**
 
     Como ya se explicó antes, para poder buscar en buzones es necesario pertenecer al grupo de roles de administrador de exhibición de documentos electrónicos o tener asignado el rol de administración de búsqueda de cumplimiento. Para eliminar mensajes, es necesario pertenecer al grupo de roles de administración de la organización o tener asignado el rol de administración de búsqueda y depuración. Esto permite controlar quién pueden buscar en los buzones de la organización y quién puede eliminar mensajes. 

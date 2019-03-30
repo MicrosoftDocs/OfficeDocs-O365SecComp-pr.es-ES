@@ -1,9 +1,8 @@
 ---
-title: Decisión según los resultados en eDiscovery avanzado de Office 365
+title: Decisión basada en los resultados de la exhibición avanzada de documentos electrónicos de Office 365
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,14 +12,14 @@ search.appverid:
 - MET150
 ms.assetid: aed65bcd-0a4f-43e9-b5e5-b98cc376bdf8
 description: 'Obtenga información sobre cómo la pestaña decidir en Office 365 Advanced eDiscovery proporciona datos que pueden ayudarle a determinar el tamaño correcto del conjunto de revisión de los archivos de casos. '
-ms.openlocfilehash: c4767e703d03ef5dbdb808332e873d22094d7bca
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: a9250a45129320517f96b9a335db95d164d2dae7
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216110"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999913"
 ---
-# <a name="decision-based-on-the-results-in-office-365-advanced-ediscovery"></a>Decisión según los resultados en eDiscovery avanzado de Office 365
+# <a name="decision-based-on-the-results-in-office-365-advanced-ediscovery"></a>Decisión basada en los resultados de la exhibición avanzada de documentos electrónicos de Office 365
 
 > [!NOTE]
 > Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 

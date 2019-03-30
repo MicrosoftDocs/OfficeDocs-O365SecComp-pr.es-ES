@@ -11,12 +11,12 @@ ms.service: exchange-online
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: Los trabajadores de la información en su organización tratan con diversos tipos de información confidencial durante un día normal. La creación de huella digital de documento facilita la protección de esta información al identificar los formularios estándar que se usan en toda la organización. En este tema se describen los conceptos relacionados con la creación de huellas digitales de documentos y cómo crear una mediante PowerShell.
-ms.openlocfilehash: bf28d1d901598337a5c9c18d80590b136c539d26
-ms.sourcegitcommit: a79eb9907759d4cd849c3f948695a9ff890b19bf
+ms.openlocfilehash: 2b8e4fd6b286f2c1a5c67863957f2b04fbef31b9
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30866356"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999143"
 ---
 # <a name="document-fingerprinting"></a>Creación de huella digital de documento
 
@@ -66,7 +66,7 @@ La huella digital de documento no detectará información confidencial en los si
     
 ## <a name="use-powershell-to-create-a-classification-rule-package-based-on-document-fingerprinting"></a>Usar PowerShell para crear un paquete de reglas de clasificación basado en la creación de huellas digitales de documentos
 
-Tenga en cuenta que actualmente puede crear una huella digital de documento solo con PowerShell en &amp; el centro de seguridad y cumplimiento. Para conectarse, vea [Connect to Office 365 Security _AMP_ Compliance Center PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+Tenga en cuenta que actualmente puede crear una huella digital de documento solo con PowerShell en &amp; el centro de seguridad y cumplimiento. Para conectarse, vea [Connect to Security _AMP_ Compliance Center PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
 DLP usa paquetes de reglas de clasificación para detectar contenido confidencial. Para crear un paquete de reglas de clasificación basado en una huella digital de documento, use los cmdlets **New-DlpFingerprint** y **New-DlpSensitiveInformationType** . Debido a que los resultados de **New-DlpFingerprint** no se almacenan fuera de la regla de clasificación de datos, siempre se ejecuta **New-DlpFingerprint** y **New-DlpSensitiveInformationType** o **set-DlpSensitiveInformationType** en el mismo Sesión de PowerShell. En el ejemplo siguiente se crea una huella digital de documento nueva a partir del archivo C:\My Documents\Contoso Employee Template.docx. La nueva huella digital se almacena como una variable para que se pueda usar con el cmdlet **New-DlpSensitiveInformationType** en la misma sesión de PowerShell. 
   

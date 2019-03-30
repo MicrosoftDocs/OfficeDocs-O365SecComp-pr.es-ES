@@ -1,5 +1,5 @@
 ---
-title: Administración de solicitudes del interesado de RGPD con la herramienta de casos de DSR en &amp; el centro de seguridad y cumplimiento de Office 365
+title: Administración de solicitudes del interesado de RGPD con la herramienta de casos de DSR en el centro de cumplimiento de & de seguridad
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,19 +14,19 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 ms.assetid: ce9eb942-3589-42cb-88fd-1576ecb09c5c
-description: El RGPD otorga a los ciudadanos de la UE (denominados "interesados en los datos) derechos específicos sobre sus datos personales; Estos derechos incluyen la obtención de copias del mismo, la solicitud de cambios, la restricción del procesamiento, la eliminación o la recepción del mismo en un formato electrónico. Una solicitud formal de un sujeto de datos para realizar una acción en sus datos personales se denomina solicitud de interesado o DSR. Puede usar casos de DSR en el centro de seguridad &amp; y cumplimiento de Office 365 para administrar las investigaciones de los DSR de su organización.
-ms.openlocfilehash: ae41daba4d11645848f8b2923eb3cbbaac2e65a4
-ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
+description: El RGPD otorga a los ciudadanos de la UE (denominados "interesados en los datos) derechos específicos sobre sus datos personales; Estos derechos incluyen la obtención de copias del mismo, la solicitud de cambios, la restricción del procesamiento, la eliminación o la recepción del mismo en un formato electrónico. Una solicitud formal de un sujeto de datos para realizar una acción en sus datos personales se denomina solicitud de interesado o DSR. Puede usar casos de DSR en el centro de cumplimiento de Office 365 y Microsoft 365 para administrar las investigaciones de los DSR de su organización.
+ms.openlocfilehash: d491a0098bfa27818d8a03ded3b2f86da54c0453
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30900149"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000113"
 ---
-# <a name="manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-office-365-security-amp-compliance-center"></a>Administración de solicitudes del interesado de RGPD con la herramienta de casos de DSR en &amp; el centro de seguridad y cumplimiento de Office 365
+# <a name="manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-security--compliance-center"></a>Administración de solicitudes del interesado de RGPD con la herramienta de casos de DSR en el centro de cumplimiento de & de seguridad
 
 El Reglamento de protección general de datos (RGPD) de la Unión Europea trata sobre la protección y la habilitación de los derechos de privacidad de los individuos en la Unión Europea (UE). El RGPD da a los usuarios de la Unión Europea (conocidos como sujetos de datos) el derecho a acceder, recuperar, corregir, borrar y restringir el procesamiento de sus datos personales. Según la RGPD, los datos personales se refieren a cualquier información relacionada con una persona física identificada o identificable. Una solicitud formal de una persona a su organización para realizar una acción en sus datos personales se conoce como una solicitud de interesado o un DSR. Para obtener información detallada acerca de la respuesta a interesado para datos en Office 365, vea la [Guía de solicitud de asunto de datos de office 365](https://go.microsoft.com/fwlink/?linkid=871169 ).
   
-Para administrar las investigaciones en respuesta a un DS1800 enviado por una persona de su organización, puede usar la herramienta de casos de DSR del centro de &amp; seguridad y cumplimiento de Office 365 para buscar contenido almacenado en:
+Para administrar las investigaciones en respuesta a un DS1800 enviado por una persona de su organización, puede usar la herramienta de casos de DSR del centro de cumplimiento de seguridad & para encontrar contenido almacenado en:
   
 - Cualquier buzón de usuario de la organización. Esto incluye conversaciones de Skype empresarial y chats uno a uno en Microsoft Teams
     
@@ -42,7 +42,7 @@ Mediante el uso de la herramienta de caso DSR, puede:
   
 - Crear un caso independiente para cada investigación de DSR.
     
-- Controlar quién tiene acceso al caso del DSR al agregar personas como miembros del caso; solo los miembros pueden tener acceso al caso y solo pueden ver sus casos en la lista de casos de la página **casos** de DSR &amp; en el centro de seguridad y cumplimiento. Además, puede asignar diferentes permisos a diferentes miembros del mismo caso. Por ejemplo, puede permitir que algunos miembros solo vean el caso y los resultados de la búsqueda y permitir que otros miembros creen búsquedas y exporten los resultados de la búsqueda. 
+- Controlar quién tiene acceso al caso del DSR al agregar personas como miembros del caso; solo los miembros pueden tener acceso al caso y solo pueden ver sus casos en la lista de casos de la página **casos de DSR** en el centro de seguridad & cumplimiento. Además, puede asignar diferentes permisos a diferentes miembros del mismo caso. Por ejemplo, puede permitir que algunos miembros solo vean el caso y los resultados de la búsqueda y permitir que otros miembros creen búsquedas y exporten los resultados de la búsqueda. 
     
 - Use la búsqueda integrada para buscar todo el contenido creado o cargado por un titular de datos específico.
     
@@ -73,20 +73,20 @@ Este es el proceso de alto nivel para usar la herramienta de caso DSR para admin
   
 ## <a name="step-1-assign-ediscovery-permissions-to-potential-case-members"></a>Paso 1: Asignar permisos de exhibición de documentos electrónicos a posibles miembros del caso
 
-De forma predeterminada, un administrador global de Office 365 puede tener acceso a la herramienta de &amp; caso DSR en el centro de seguridad y cumplimiento. Por diseño, otros usuarios, como un responsable de privacidad de datos, un administrador de recursos humanos u otras personas involucradas en investigaciones de DSR, no tienen acceso a la herramienta de caso DSR y deberán tener asignados los permisos adecuados para acceder a la herramienta. La forma más sencilla de hacerlo es ir a la página de **permisos** en el centro &amp; de seguridad y cumplimiento y agregar usuarios al grupo de roles eDiscovery Manager. Tenga en cuenta que también tiene que asignar estos permisos para que pueda agregarlos como miembros del caso DSR que cree en el paso 2. 
+De forma predeterminada, un administrador global de Office 365 puede tener acceso a la herramienta de caso DSR en el centro de seguridad & cumplimiento. Por diseño, otros usuarios, como un responsable de privacidad de datos, un administrador de recursos humanos u otras personas involucradas en investigaciones de DSR, no tienen acceso a la herramienta de caso DSR y deberán tener asignados los permisos adecuados para acceder a la herramienta. La forma más sencilla de hacerlo es ir a la página de **permisos** en el centro de seguridad & cumplimiento y agregar usuarios al grupo de roles eDiscovery Manager. Tenga en cuenta que también tiene que asignar estos permisos para que pueda agregarlos como miembros del caso DSR que cree en el paso 2. 
   
-Para obtener instrucciones paso a paso, consulte [asignar permisos de exhibición de documentos electrónicos en el &amp; centro de seguridad y cumplimiento de Office 365](assign-ediscovery-permissions.md).
+Para obtener instrucciones paso a paso, consulte [asignar permisos de exhibición de documentos electrónicos en el centro de seguridad _AMP_ cumplimiento de Office 365](assign-ediscovery-permissions.md).
   
 > [!NOTE]
-> De forma predeterminada, un administrador global de Office 365 (u otros miembros del grupo de roles de administración de &amp; la organización en el centro de seguridad y cumplimiento no tienen los permisos necesarios para exportar los resultados de la búsqueda de contenido (vea el paso 4 de este artículo). Para solucionar esto, un administrador puede agregarse a sí mismo como miembro del grupo de roles eDiscovery Manager. 
+> De forma predeterminada, un administrador global de Office 365 (u otros miembros del grupo de roles de administración de la organización en el centro de seguridad & cumplimiento no dispone de los permisos necesarios para exportar los resultados de la búsqueda de contenido (vea el paso 4 de este artículo). Para solucionar esto, un administrador puede agregarse a sí mismo como miembro del grupo de roles eDiscovery Manager. 
   
 ## <a name="step-2-create-a-dsr-case-and-add-members"></a>Paso 2: crear un caso de DSR y agregar miembros
 
 El siguiente paso es crear un caso DSR. Al crear un caso, puede optar por iniciar la búsqueda integrada o puede crear el caso sin iniciar la búsqueda. El siguiente procedimiento le indicará que cree el caso sin iniciar la búsqueda y, a continuación, le mostrará cómo agregar miembros al caso.
   
-1. Vaya a [https://protection.office.com](https://protection.office.com) e inicie sesión en Office 365 con su cuenta profesional o educativa. 
+1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com) e inicie sesión en Office 365 con su cuenta profesional o educativa. 
     
-2. En el centro &amp; de seguridad y cumplimiento, haga clic en **solicitudes de asunto**de datos ![de privacidad](media/ITPro-EAC-AddIcon.gif) **** \> de datos y luego haga clic en agregar icono **nuevo caso DSR**.
+2. En el centro de seguridad & cumplimiento, haga clic en **solicitudes de asunto de datos**de ![ **privacidad** \> de](media/ITPro-EAC-AddIcon.gif) datos y, a continuación, haga clic en agregar icono **nuevo caso DSR**.
     
 3. En la página flotante de **nuevo caso de DSR** , indique un nombre, escriba una descripción opcional y, a continuación, haga clic en **siguiente**. Tenga en cuenta que el nombre del caso debe ser único en su organización.
     
@@ -145,7 +145,7 @@ participants:"ina@contoso.com" OR author:"Ina Leonte" OR createdby:"Ina Leonte"
 
  **Para ejecutar la búsqueda integrada para un caso de DSR:**
   
-1. En el centro &amp; de seguridad y cumplimiento, haga clic en **solicitudes de asunto de datos**de privacidad \> de **datos** y, a continuación, haga clic en **abrir** junto al caso DSR que ha creado en el paso 2. 
+1. En el centro de seguridad & cumplimiento, haga clic en **solicitudes de asunto de datos**de privacidad \> de **datos** y, a continuación, haga clic en **abrir** junto al caso DSR que ha creado en el paso 2. 
     
     Haga clic en la ficha **búsqueda** en la parte superior de la página y, a continuación, haga clic en la casilla situada junto a la búsqueda integrada que se creó cuando creó el nuevo maletín DSR. Nota la búsqueda tiene el mismo nombre que el caso del DSR. 
     
@@ -164,10 +164,10 @@ Puede editar la consulta de búsqueda integrada, cambiar las ubicaciones de cont
 
 Después de ejecutar la búsqueda integrada, puede exportar los resultados de la búsqueda. Como alternativa, antes de exportar los datos, es posible que desee revisar la consulta para reducir el número de resultados de búsqueda. Consulte el paso 5 para obtener más información sobre cómo restringir los resultados de la búsqueda.
   
-Al exportar los resultados de la búsqueda, los elementos del buzón pueden descargarse en archivos PST o como mensajes individuales. Al exportar contenido de las cuentas de SharePoint y OneDrive, se exportan copias de documentos nativos de Office y otros documentos. También se incluye en los resultados de la búsqueda los archivos de resultados que contienen información sobre cada uno de los elementos que se exportan. Para obtener información más detallada acerca de la exportación, consulte [exportar resultados de búsqueda de contenido &amp; desde el centro de seguridad y cumplimiento de Office 365](export-search-results.md).
+Al exportar los resultados de la búsqueda, los elementos del buzón pueden descargarse en archivos PST o como mensajes individuales. Al exportar contenido de las cuentas de SharePoint y OneDrive, se exportan copias de documentos nativos de Office y otros documentos. También se incluye en los resultados de la búsqueda los archivos de resultados que contienen información sobre cada uno de los elementos que se exportan. Para obtener información más detallada acerca de la exportación, consulte [exportar resultados](export-search-results.md)de la búsqueda de contenido.
   
 > [!NOTE]
-> De forma predeterminada, un administrador global de Office 365 (u otros miembros del grupo de roles de administración de &amp; la organización en el centro de seguridad y cumplimiento) no dispone de los permisos necesarios para exportar los resultados de la búsqueda de contenido. Para solucionar esto, un administrador puede agregarse a sí mismo como miembro del grupo de roles eDiscovery Manager. 
+> De forma predeterminada, un administrador global de Office 365 (u otros miembros del grupo de roles de administración de la organización en el centro de seguridad & cumplimiento) no tiene los permisos necesarios para exportar los resultados de la búsqueda de contenido. Para solucionar esto, un administrador puede agregarse a sí mismo como miembro del grupo de roles eDiscovery Manager. 
   
 El equipo que use para exportar datos debe cumplir con los siguientes requisitos del sistema:
   
@@ -188,7 +188,7 @@ El equipo que use para exportar datos debe cumplir con los siguientes requisitos
   
  **Para exportar datos de la búsqueda integrada en un caso de DSR:**
   
-1. En el centro &amp; de seguridad y cumplimiento, haga clic en **solicitudes de asunto de datos**de privacidad \> de **datos** y, a continuación, haga clic en **abrir** junto al caso DSR del que desea exportar datos. 
+1. En el centro de seguridad & cumplimiento, haga clic en **solicitudes de asunto de datos**de privacidad \> de **datos** y, a continuación, haga clic en **abrir** junto al caso DSR del que desea exportar datos. 
     
 2. Haga clic en la ficha **búsqueda** en la parte superior de la página y, a continuación, haga clic en la casilla situada junto a la búsqueda integrada que se creó al crear el caso del DSR. O bien, haga clic en otra búsqueda para exportar datos de esa búsqueda. 
     
@@ -229,7 +229,7 @@ El equipo que use para exportar datos debe cumplir con los siguientes requisitos
   
 13. Haga clic en **Iniciar** para descargar los resultados de la búsqueda en el equipo. 
     
-    La **Herramienta de exportación de exhibición de documentos electrónicos** muestra información del estado acerca del proceso de exportación, incluida una estimación del número (y tamaño) de los elementos restantes que se van a descargar. Una vez finalizado el proceso de exportación, puede tener acceso a los archivos en la ubicación en la que se descargaron. Para obtener más información acerca de los informes que se incluyeron al descargar los resultados de la búsqueda de contenido, consulte la sección [más información](export-search-results.md#more-information) en "exportar resultados de &amp; búsqueda de contenido desde el centro de seguridad y cumplimiento de Office 365". 
+    La **Herramienta de exportación de exhibición de documentos electrónicos** muestra información del estado acerca del proceso de exportación, incluida una estimación del número (y tamaño) de los elementos restantes que se van a descargar. Una vez finalizado el proceso de exportación, puede tener acceso a los archivos en la ubicación en la que se descargaron. Para obtener más información acerca de los informes que se incluyeron al descargar los resultados de la búsqueda de contenido, consulte la sección [más información](export-search-results.md#more-information) en "exportar resultados de la búsqueda de contenido". 
     
 Una vez exportados los datos, los resultados de la búsqueda y los informes de exportación se encuentran en una carpeta con el mismo nombre que el caso del DSR. Los archivos PST que contienen elementos de buzón de correo se encuentran en una subcarpeta llamada **Exchange**. Los documentos y otros elementos de los sitios se encuentran en una subcarpeta denominada **SharePoint**. 
   
@@ -304,7 +304,7 @@ Al exportar datos de myanalytics y el servicio de itinerancia de Office, los dat
    
  **Para buscar y exportar myanalytics y datos del servicio de itinerancia de Office:**
   
-1. En el centro &amp; de seguridad y cumplimiento, haga clic en **solicitudes del interesado**de datos de **privacidad** \> de datos y, a continuación, haga clic en **abrir** junto al caso del DS1800 para el interesado al que desea exportar los datos de uso. 
+1. En el centro de seguridad & cumplimiento, haga clic en **solicitudes de asunto de datos**de privacidad \> de **datos** y, a continuación, haga clic en **abrir** junto al caso del DS1800 para el interesado al que desea exportar datos de uso. 
     
 2. Haga clic en la ficha **búsqueda** en la parte superior de la página y ![, a](media/ITPro-EAC-AddIcon.gif) continuación, haga clic en agregar icono de **búsqueda guiada**.
     

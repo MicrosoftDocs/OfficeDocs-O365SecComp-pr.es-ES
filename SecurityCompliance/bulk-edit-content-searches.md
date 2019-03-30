@@ -1,5 +1,5 @@
 ---
-title: Edición masiva de búsquedas de contenido en el centro &amp; de seguridad y cumplimiento de Office 365
+title: Edición masiva de búsquedas de contenido
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -10,23 +10,23 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 39e4654a-9588-41f6-892b-c33ab57bfbe2
-description: Use el editor de búsqueda en masa en el centro &amp; de seguridad y cumplimiento de Office 365 para cambiar rápidamente las ubicaciones de consulta y de contenido de una o más búsquedas de contenido.
-ms.openlocfilehash: ff96beacdde3192db65c5eb31d14649c6bed4afc
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+description: Use el editor de búsqueda en masa en el centro de seguridad y cumplimiento de Office 365 o Microsoft 365 para cambiar rápidamente las ubicaciones de consulta y de contenido de una o más búsquedas de contenido.
+ms.openlocfilehash: d372b6b1969e5b321cdea84981449241f3cec1c6
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214890"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001103"
 ---
-# <a name="bulk-edit-content-searches-in-the-office-365-security-amp-compliance-center"></a>Edición masiva de búsquedas de contenido en el centro &amp; de seguridad y cumplimiento de Office 365
+# <a name="bulk-edit-content-searches"></a>Edición masiva de búsquedas de contenido
 
-Puede usar el editor de búsqueda en masa en el centro de &amp; seguridad y cumplimiento de Office 365 para editar varias búsquedas de contenido al mismo tiempo. El uso de esta herramienta le permite cambiar rápidamente las ubicaciones de consultas y contenido para una o más búsquedas. A continuación, puede volver a ejecutar las búsquedas y obtener nuevos resultados de búsqueda estimados para las búsquedas revisadas. El editor también le permite copiar y pegar consultas y ubicaciones de contenido de un archivo de texto o de un archivo de Microsoft Excel. Esto significa que puede usar la herramienta de estadísticas de búsqueda para ver las estadísticas de una o más búsquedas, exportar las estadísticas a un archivo CSV donde puede editar las consultas y ubicaciones de contenido en Excel. A continuación, use el editor de búsqueda en masa para agregar las consultas revisadas y las ubicaciones de contenido a las búsquedas. Una vez que haya revisado una o más búsquedas, puede volver a iniciarlas y obtener nuevos resultados de búsqueda estimados.
+Puede usar el editor de búsqueda en masa en la herramienta de búsqueda de contenido para editar varias búsquedas al mismo tiempo. El uso de esta herramienta le permite cambiar rápidamente las ubicaciones de consultas y contenido para una o más búsquedas. A continuación, puede volver a ejecutar las búsquedas y obtener nuevos resultados de búsqueda estimados para las búsquedas revisadas. El editor también le permite copiar y pegar consultas y ubicaciones de contenido de un archivo de texto o de un archivo de Microsoft Excel. Esto significa que puede usar la herramienta de estadísticas de búsqueda para ver las estadísticas de una o más búsquedas, exportar las estadísticas a un archivo CSV donde puede editar las consultas y ubicaciones de contenido en Excel. A continuación, use el editor de búsqueda en masa para agregar las consultas revisadas y las ubicaciones de contenido a las búsquedas. Una vez que haya revisado una o más búsquedas, puede volver a iniciarlas y obtener nuevos resultados de búsqueda estimados.
   
 Para obtener más información acerca del uso de la herramienta de estadísticas de búsqueda, consulte [View keyword Statistics for Content Search Results](view-keyword-statistics-for-content-search.md).
   
 ## <a name="use-the-bulk-search-editor-to-change-queries"></a>Usar el editor de búsqueda en masa para cambiar las consultas
 
-1. En el centro &amp; de seguridad y cumplimiento, vaya a búsqueda de \> **contenido**de **investigación de búsqueda &amp; ** .
+1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com)y, a continuación, haga clic en buscar **contenido**de **búsqueda** \> .
     
 2. En la lista de búsquedas, seleccione una o más búsquedas y, a continuación **** ![, haga clic en el botón](media/1ddb3d18-2f00-4a7b-98a6-817ca5ec7014.png)editor de búsqueda en masa del editor de búsqueda masiva.
     
@@ -36,9 +36,9 @@ Para obtener más información acerca del uso de la herramienta de estadísticas
     
     ![La página editor de búsqueda en masa muestra las consultas de las búsquedas seleccionadas](media/189659af-cc78-4479-b0bc-a93decad2f6c.png)
   
-    a. la columna **búsqueda** muestra el nombre de la búsqueda de contenido. Como se mencionó anteriormente, puede editar la consulta para varias búsquedas. 
+    a. La columna **Buscar** muestra el nombre de la búsqueda de contenido. Como se mencionó anteriormente, puede editar la consulta para varias búsquedas. 
     
-    b. la columna **consulta** muestra la consulta de la búsqueda de contenido que aparece en la columna **búsqueda** . Si la consulta se ha creado mediante la característica lista de palabras clave, las palabras clave se separan con el texto * * `(c:s)` **. Esto indica que las palabras clave están conectadas por el operador **or** . Además, si la consulta incluye condiciones, las palabras clave y las condiciones están separadas por el texto * `(c:c)`* **. Esto indica que las palabras clave (o las fases de palabra clave) están conectadas a las condiciones por el operador **and** . Por ejemplo, en la captura de pantalla anterior, el para búsqueda ContosoSearch1, la consulta de KQL `customer (c:s) pricing(c:c)(date=2000-01-01..2016-09-30)` equivale a `(customer OR pricing) AND (date=2002-01-01..2016-09-30)`.
+    b. La columna **consulta** muestra la consulta de la búsqueda de contenido que aparece en la columna **búsqueda** . Si la consulta se ha creado mediante la característica lista de palabras clave, las palabras clave se separan con el texto * * `(c:s)` **. Esto indica que las palabras clave están conectadas por el operador **or** . Además, si la consulta incluye condiciones, las palabras clave y las condiciones están separadas por el texto * `(c:c)`* **. Esto indica que las palabras clave (o las fases de palabra clave) están conectadas a las condiciones por el operador **and** . Por ejemplo, en la captura de pantalla anterior, el para búsqueda ContosoSearch1, la consulta de KQL `customer (c:s) pricing(c:c)(date=2000-01-01..2016-09-30)` equivale a `(customer OR pricing) AND (date=2002-01-01..2016-09-30)`.
     
 3. Para editar una consulta, haga clic en la celda de la consulta que desea cambiar y realice una de las acciones siguientes. Tenga en cuenta que la celda está rodeada por un cuadro azul al hacer clic en ella.
     
@@ -60,7 +60,7 @@ Estas son algunas sugerencias para editar consultas con el editor de búsqueda e
   
 - Copie la consulta existente (usando **Ctrl C** ) en un archivo de texto. Edite la consulta en el archivo de texto y, a continuación, copie la consulta revisada y péguela (mediante **Ctrl V** ) en la celda de la página **consultas** . 
     
-- También puede copiar consultas de otras aplicaciones (como Microsoft Word o Microsoft Excel). Sin embargo, tenga en cuenta que podría agregar involuntariamente caracteres no admitidos a una consulta con el editor masivo de búsqueda. La mejor forma de evitar caracteres no admitidos es simplemente escribir la consulta en una celda de la página **consultas** . Como alternativa, puede copiar una consulta desde Word o Excel y, a continuación, pegarla en un archivo en un editor de texto sin formato, como el Bloc de notas de Microsoft. A continuación, guarde el archivo de texto y seleccione **ANSI** en la lista desplegable **codificación** . Esto quitará el formato y los caracteres no admitidos. A continuación, puede copiar y pegar la consulta desde el archivo de texto a la página **consultas** . 
+- También puede copiar consultas de otras aplicaciones (como Microsoft Word o Microsoft Excel). Sin embargo, tenga en cuenta que podría agregar involuntariamente caracteres no admitidos a una consulta con el editor masivo de búsqueda. La mejor forma de evitar caracteres no admitidos es simplemente escribir la consulta en una celda de la página **consultas** . De manera alternativa, puede copiar una consulta de Word o Excel y, después, pegarla en un archivo de un editor de texto sin formato, como Microsoft Notepad. A continuación, guarde el archivo de texto y seleccione **ANSI** en la lista desplegable **Codificación**. Esto quitará cualquier carácter no admitido y de formato. A continuación, puede copiar y pegar la consulta desde el archivo de texto a la página **consultas** . 
     
   
 ## <a name="use-the-bulk-search-editor-to-change-content-locations"></a>Usar el editor de búsqueda en masa para cambiar las ubicaciones de contenido
@@ -71,11 +71,11 @@ Estas son algunas sugerencias para editar consultas con el editor de búsqueda e
     
     ![Haga clic en habilitar el editor de ubicación en masa y, a continuación, en ubicaciones para agregar o quitar ubicaciones de contenido](media/a5a468ce-bd63-4c53-bc37-ff64cf769e59.png)
   
-    a. **buzones de correo para buscar en**esta sección se muestra una columna para cada búsqueda de contenido seleccionada y una fila para cada buzón de correo que se incluye en la búsqueda. Una marca de verificación indica que el buzón de correo se incluye en la búsqueda. Puede Agregar buzones adicionales a una búsqueda si escribe la dirección de correo electrónico del buzón en una fila en blanco y, a continuación, hace clic en la casilla de verificación de la búsqueda de contenido a la que desea agregarlo. O bien, puede quitar un buzón de una búsqueda desactivando la casilla.
+    a. **Buzones de correo para buscar** En esta sección se muestra una columna para cada búsqueda de contenido seleccionada y una fila para cada buzón de correo que se incluye en la búsqueda. Una marca de verificación indica que el buzón de correo se incluye en la búsqueda. Puede Agregar buzones adicionales a una búsqueda si escribe la dirección de correo electrónico del buzón en una fila en blanco y, a continuación, hace clic en la casilla de verificación de la búsqueda de contenido a la que desea agregarlo. O bien, puede quitar un buzón de una búsqueda desactivando la casilla.
     
-    b. **sitios de SharePoint para buscar**en esta sección se muestra una fila para cada sitio de SharePoint y OneDrive que se incluye en cada búsqueda de contenido seleccionada. Una marca de verificación indica que el sitio está incluido en la búsqueda. Puede Agregar sitios adicionales a una búsqueda si escribe la dirección URL del sitio en una fila en blanco y, a continuación, hace clic en la casilla de verificación de la búsqueda de contenido a la que desea agregarlo. O bien, puede quitar un sitio de una búsqueda desactivando la casilla.
+    b. **Sitios de SharePoint para buscar** En esta sección se muestra una fila para cada sitio de SharePoint y OneDrive que se incluye en cada búsqueda de contenido seleccionada. Una marca de verificación indica que el sitio está incluido en la búsqueda. Puede Agregar sitios adicionales a una búsqueda si escribe la dirección URL del sitio en una fila en blanco y, a continuación, hace clic en la casilla de verificación de la búsqueda de contenido a la que desea agregarlo. O bien, puede quitar un sitio de una búsqueda desactivando la casilla.
     
-    c. **otras opciones de búsqueda**esta sección indica si los elementos no indexados y las carpetas públicas se incluyen en la búsqueda. Para incluirlos, asegúrese de que la casilla está seleccionada. Para quitarlos, desactive la casilla.
+    c. **Otras opciones de búsqueda** En esta sección se indica si los elementos sin indexar y las carpetas públicas se incluyen en la búsqueda. Para incluirlos, asegúrese de que la casilla está seleccionada. Para quitarlos, desactive la casilla.
     
 2. Una vez que haya editado una o varias secciones en la página **ubicaciones** , haga clic en **Guardar**.
     

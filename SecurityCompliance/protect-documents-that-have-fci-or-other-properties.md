@@ -15,12 +15,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Muchas organizaciones disponen de un proceso para identificar y clasificar información confidencial mediante las propiedades de clasificación en la infraestructura de clasificación de archivos (FCI) de Windows Server, las propiedades del documento en SharePoint o las propiedades del documento aplicadas por un sistema de terceros. Si esto describe su organización, puede crear una directiva DLP en Office 365 que reconozca las propiedades que la FCI de Windows Server u otro sistema ha aplicado a documentos, de modo que se pueda aplicar la directiva DLP en documentos de Office con una FCI específica u otros valores de propiedad.
-ms.openlocfilehash: b1a5b438714a0c0b91d33a9544c0f26cbd12b4c9
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.openlocfilehash: ad643c77d477f6b9aaecb122010584510ea9bf7e
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30639087"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000583"
 ---
 # <a name="create-a-dlp-policy-to-protect-documents-with-fci-or-other-properties"></a>Crear una directiva DLP para proteger documentos con FCI u otras propiedades
 
@@ -50,7 +50,7 @@ Primero debe cargar un documento con la propiedad a la que desea hacer referenci
   
 ### <a name="step-2-create-a-managed-property"></a>Paso 2: Crear una propiedad administrada
 
-1. Inicie sesión en el Centro de administración de Office 365.
+1. Inicie sesión en el centro de administración de Microsoft 365.
     
 2. En el panel de navegación izquierdo, elija **centros** \> de administración **SharePoint**. Ahora está en el Centro de administración de SharePoint.
     

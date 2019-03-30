@@ -14,12 +14,12 @@ ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
 description: En este tema encontrará las preguntas frecuentes y sus correspondientes respuestas sobre la protección contra el correo no deseado. Las respuestas sirven para los clientes de Microsoft Exchange Online y de Exchange Online Protection (EOP).
-ms.openlocfilehash: 8ac5fff97828764524c8bfa1510549396d509866
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: fa2709c995ff9ef83213b86e079a778c61bef3a2
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692239"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000993"
 ---
 # <a name="anti-spam-protection-faq"></a>Preguntas más frecuentes sobre protección contra correo electrónico no deseado
 
@@ -71,7 +71,7 @@ P. Los mensajes de correo no deseado y los mensajes seguros se pueden enviar a M
   
  **P: ¿Puedo obtener informes de correo no deseado?**
   
-R. Sí, por ejemplo puede obtener un informe de detección de correo no deseado en el centro de administración de Office 365. Este informe muestra el volumen de correo no deseado como un recuento de mensajes únicos. Para obtener más información sobre los informes, consulte los siguientes vínculos:
+R. Sí, por ejemplo, puede obtener un informe de detección de correo no deseado en el centro de administración de Microsoft 365. Este informe muestra el volumen de correo no deseado como un recuento de mensajes únicos. Para obtener más información sobre los informes, consulte los siguientes vínculos:
   
 Clientes de Exchange Online: [supervisión, informes y seguimiento de mensajes en Exchange Online](http://technet.microsoft.com/library/87bdeeae-bd80-4a3b-95c5-62fbaf97c2e8.aspx)
   

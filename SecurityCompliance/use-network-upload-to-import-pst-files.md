@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 'Para los administradores: Obtenga información sobre cómo usar la carga de red para importar varios archivos PST a los buzones de usuario en Office 365.'
-ms.openlocfilehash: d7ef9d5f9f1d9fcf9ebdf31ffe42979482abc5e7
-ms.sourcegitcommit: fb50bf2f2c9d780c911f245a2f78c6bb5e357f67
+ms.openlocfilehash: d51fb39d994702099b53afa3058cdf8fafffd5a6
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30950457"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000163"
 ---
 # <a name="use-network-upload-to-import-your-organization-pst-files-to-office-365"></a>Use la carga de red para importar los archivos PST de su organización a Office 365
 
@@ -48,7 +48,7 @@ Tenga en cuenta que solo tiene que realizar el paso 1 una vez para importar los 
   
 - Debe tener asignado el rol importación y exportación de buzones de correo en Exchange Online para importar archivos PST a los buzones de correo de Office 365. De forma predeterminada, este rol no está asignado a ningún grupo de roles en Exchange Online. You can add the Mailbox Import Export role to the Organization Management role group. Or you can create a new role group, assign the Mailbox Import Export role, and then add yourself as a member. Para obtener más información, vea las secciones "agregar un rol a un grupo de roles" o "crear un grupo de roles" en [Manage role Groups](https://go.microsoft.com/fwlink/p/?LinkId=730688).
     
-    Además, para crear trabajos de importación en el centro de &amp; seguridad y cumplimiento de Office 365, debe cumplirse una de las siguientes condiciones:
+    Además, para crear trabajos de importación en el centro de seguridad & cumplimiento, debe cumplirse una de las siguientes condiciones:
     
   - Debe tener asignado el rol destinatarios de correo en Exchange Online. By default, this role is assigned to the Organization Management and Recipient Management roles groups.
     
@@ -89,12 +89,12 @@ El primer paso consiste en descargar e instalar la herramienta AzCopy de Azure, 
 > [!IMPORTANT]
 > Para importar archivos PST mediante el método de carga de red, se recomienda usar la versión de Azure AzCopy que se puede descargar en el paso 6B en el siguiente procedimiento.
   
-1. Vaya a [https://protection.office.com](https://protection.office.com) e inicie sesión con las credenciales de una cuenta de administrador en la organización de Office 365. 
+1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com) e inicie sesión con las credenciales de una cuenta de administrador en la organización de Office 365. 
     
-2. En el panel izquierdo del centro de &amp; seguridad y cumplimiento, haga clic en **importación**de **gobierno** \> de datos.
+2. En el panel izquierdo del centro de seguridad & cumplimiento, haga clic en **importación**de **gobierno** \> de datos.
     
     > [!NOTE]
-    > Debe tener asignados los permisos adecuados para acceder a la página **importar** en el centro &amp; de seguridad y cumplimiento. Vea la sección **antes de comenzar** para obtener más información. 
+    > Debe tener asignados los permisos adecuados para acceder a la página **importar** en el centro de seguridad & cumplimiento. Vea la sección **antes de comenzar** para obtener más información. 
     
 3. En la página **importar** , haga ![clic en](media/ITPro-EAC-AddIcon.gif) agregar icono **nuevo trabajo de importación**.
     
@@ -235,13 +235,13 @@ Una vez que los archivos PST se hayan cargado en la ubicación de almacenamiento
 
 El siguiente paso es crear el trabajo de importación de PST en el servicio de importación en Office 365. Como se ha explicado anteriormente, enviará el archivo de asignación de importaciones de PST que creó en el paso 4. Después de crear el nuevo trabajo, Office 365 analiza los datos de los archivos PST y, a continuación, le ofrece la oportunidad de filtrar los datos que se importan realmente a los buzones especificados en el archivo de asignación de importaciones de PST (vea el [paso 6](#step-6-filter-data-and-start-the-pst-import-job)).
   
-1. Vaya a [https://protection.office.com](https://protection.office.com) e inicie sesión con las credenciales de una cuenta de administrador en la organización de Office 365. 
+1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com) e inicie sesión con las credenciales de una cuenta de administrador en la organización de Office 365. 
     
-2. En el panel izquierdo del centro de &amp; seguridad y cumplimiento, haga clic en **gobierno de datos** y, a continuación, en **importar**.
+2. En el panel izquierdo del centro de seguridad & cumplimiento, haga clic en **gobierno de datos** y, a continuación, en **importar**.
     
 3. En la página **importar** , haga ![clic en](media/ITPro-EAC-AddIcon.gif) agregar icono **nuevo trabajo de importación**.
     
-    **Nota:** Debe tener asignados los permisos adecuados para tener acceso a la página **importar** en el &amp; centro de seguridad y cumplimiento para crear un nuevo trabajo de importación. Vea la sección **antes de comenzar** para obtener más información. 
+    **Nota:** Debe tener asignados los permisos adecuados para acceder a la página **importar** en el centro de seguridad & cumplimiento para crear un nuevo trabajo de importación. Vea la sección **antes de comenzar** para obtener más información. 
     
 4. Escriba un nombre para el trabajo de importación de PST y, a continuación, haga clic en **siguiente**. Use letras minúsculas, números, guiones y caracteres de subrayado. No puede usar letras mayúsculas ni incluir espacios en el nombre.
     
@@ -277,7 +277,7 @@ El siguiente paso es crear el trabajo de importación de PST en el servicio de i
 
 Después de crear el trabajo de importación en el paso 5, Office 365 analiza los datos de los archivos PST (de forma segura y segura) mediante la identificación de la antigüedad de los elementos y los distintos tipos de mensajes incluidos en los archivos PST. Cuando se completa el análisis y los datos están listos para importar, tiene la opción de importar todos los datos contenidos en los archivos PST o puede recortar los datos que se importan al establecer filtros que controlan qué datos se importan.
   
-1. En la página **importar** del centro de &amp; seguridad y cumplimiento, haga clic en **listo para importar a Office 365** para el trabajo de importación que ha creado en el paso 5. 
+1. En la página **importar** del centro de seguridad & cumplimiento, haga clic en **listo para importar a Office 365** para el trabajo de importación que ha creado en el paso 5. 
     
     ![Haga clic en listo para importar a Office 365 junto al trabajo de importación que ha creado.](media/5760aac3-300b-4e31-b894-253c42a4b82b.png)
   
@@ -311,7 +311,7 @@ A continuación, se muestra una ilustración y una descripción del proceso de c
   
 ![Flujo de trabajo del proceso de carga de red para importar archivos PST a Office 365](media/9e05a19e-1e7a-4f1f-82df-9118f51588c4.png)
   
-1. **Descargue la herramienta de importación de PST y la clave en una ubicación de almacenamiento de Azure privada** : el primer paso consiste en descargar la herramienta de línea de comandos de Azure AzCopy y una clave de acceso que se usa para cargar los archivos PST en una ubicación de almacenamiento de Azure en la nube de Microsoft. Puede obtenerlos en la página **importar** del centro de seguridad &amp; y cumplimiento de Office 365. La clave (denominada una clave de firma de acceso seguro (SAS) le proporciona los permisos necesarios para cargar archivos PST en una ubicación de almacenamiento seguro y privada de Azure. Esta clave de acceso es única para su organización y ayuda a impedir el acceso no autorizado a los archivos PST una vez que se cargan en la nube de Microsoft. Tenga en cuenta que la importación de archivos PST a Office 365 no requiere que la organización tenga una suscripción a Azure independiente. 
+1. **Descargue la herramienta de importación de PST y la clave en una ubicación de almacenamiento de Azure privada** : el primer paso consiste en descargar la herramienta de línea de comandos de Azure AzCopy y una clave de acceso que se usa para cargar los archivos PST en una ubicación de almacenamiento de Azure en la nube de Microsoft. Puede obtenerlos en la página **importar** en el centro de seguridad & cumplimiento. La clave (denominada una clave de firma de acceso seguro (SAS) le proporciona los permisos necesarios para cargar archivos PST en una ubicación de almacenamiento seguro y privada de Azure. Esta clave de acceso es única para su organización y ayuda a impedir el acceso no autorizado a los archivos PST una vez que se cargan en la nube de Microsoft. Tenga en cuenta que la importación de archivos PST a Office 365 no requiere que la organización tenga una suscripción a Azure independiente. 
     
 2. **Cargar los archivos PST en la ubicación de almacenamiento de Azure** : el siguiente paso consiste en usar la herramienta AzCopy. exe (descargada en el paso 1) para cargar y almacenar los archivos PST en una ubicación de almacenamiento de Azure que resida en el mismo centro de información regional de Microsoft donde se encuentra Office 365 se encuentra la organización. Para cargarlos, los archivos PST que desea importar a Office 365 deben encontrarse en un recurso compartido de archivos o en un servidor de archivos de la organización.
     
@@ -319,11 +319,11 @@ A continuación, se muestra una ilustración y una descripción del proceso de c
     
 3. **Crear un archivo de asignación** de importaciones de PST: una vez cargados los archivos PST en la ubicación de almacenamiento de Azure, el siguiente paso consiste en crear un archivo de valores separados por comas (CSV) que especifica a qué buzones de usuario se importarán los archivos PST, tenga en cuenta que un archivo pst se puede  se importa al buzón de correo principal de un usuario o a su buzón de archivo. El servicio de importación de Office 365 usará la información del archivo CSV para importar los archivos PST.
     
-4. **Crear un trabajo de importación de PST** : el siguiente paso consiste en crear un trabajo de importación de PST en la página &amp; **importar** del centro de seguridad y cumplimiento y enviar el archivo de asignación de importaciones de PST creado en el paso anterior. Después de crear el trabajo de importación, Office 365 analiza los datos de los archivos PST y, a continuación, le ofrece la oportunidad de establecer filtros que controlan qué datos se importan realmente a los buzones especificados en el archivo de asignación de importaciones de PST. 
+4. **Crear un trabajo de importación de PST** : el siguiente paso consiste en crear un trabajo de importación de PST en la página **importar** del centro de seguridad & cumplimiento y enviar el archivo de asignación de importaciones de PST creado en el paso anterior. Después de crear el trabajo de importación, Office 365 analiza los datos de los archivos PST y, a continuación, le ofrece la oportunidad de establecer filtros que controlan qué datos se importan realmente a los buzones especificados en el archivo de asignación de importaciones de PST. 
     
 5. **Filtrar los datos PST que se importarán a** los buzones: una vez que se ha creado e iniciado el trabajo de importación, Office 365 analiza los datos de los archivos PST (con seguridad y de forma segura) mediante la identificación de la antigüedad de los elementos y los distintos tipos de mensajes incluidos en los archivos PST. . Cuando se completa el análisis y los datos están listos para importar, tiene la opción de importar todos los datos contenidos en los archivos PST o puede recortar los datos que se importan al establecer filtros que controlan qué datos se importan.
     
-6. **Inicie el trabajo de importación de PST** : una vez iniciado el trabajo de importación, Office 365 usa la información del archivo de asignación de importaCIONES de PST para importar los archivos PST de la ubicación de Azure Storage a los buzones de usuario. La información de estado sobre el trabajo de importación (incluida la información sobre cada uno de los archivos PST **** que se importa) se &amp; muestra en la página importar del centro de seguridad y cumplimiento. Una vez finalizado el trabajo de importación, el estado del trabajo se establece en **completado**.
+6. **Inicie el trabajo de importación de PST** : una vez iniciado el trabajo de importación, Office 365 usa la información del archivo de asignación de importaCIONES de PST para importar los archivos PST de la ubicación de Azure Storage a los buzones de usuario. La información de estado sobre el trabajo de importación (incluida la información sobre cada uno de los archivos PST que se está importando) se muestra en la página **importar** del centro de seguridad & cumplimiento. Una vez finalizado el trabajo de importación, el estado del trabajo se establece en **completado**.
   
 ## <a name="more-information"></a>Más información
 

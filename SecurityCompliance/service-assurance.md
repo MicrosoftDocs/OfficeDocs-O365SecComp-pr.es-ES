@@ -1,5 +1,5 @@
 ---
-title: Garantía del servicio en el centro de &amp; seguridad y cumplimiento de Office 365
+title: Garantía del servicio en el centro de seguridad & cumplimiento
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -13,16 +13,16 @@ search.appverid:
 - BCS160
 ms.assetid: 47e8b964-4b09-44f7-a2d7-b8a06e8e389c
 description: Descargue auditorías de terceros, descubra cómo Microsoft mantiene seguros los datos de los clientes y sepa cómo se puede cumplir con ISO, HIPAA, FINRA y FedRAMP al usar Office 365.
-ms.openlocfilehash: 6596eadac1702f286d57b516e11334a06553af51
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 3c65014246de71e0288874299c591816b1a2ca5c
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30213940"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999453"
 ---
-# <a name="service-assurance-in-the-office-365-security-amp-compliance-center"></a>Garantía del servicio en el centro de &amp; seguridad y cumplimiento de Office 365
+# <a name="service-assurance-in-the-security--compliance-center"></a>Garantía del servicio en el centro de seguridad & cumplimiento
 
-Use garantía del servicio en el centro de &amp; seguridad y cumplimiento de Office 365 para obtener acceso a documentos que describen una variedad de temas, entre los que se incluyen: 
+Use el servicio de garantía del servicio en el centro de seguridad & cumplimiento para obtener acceso a documentos que describen una variedad de temas, entre los que se incluyen: 
   
 - Procedimientos de seguridad de Microsoft para datos de clientes que se almacenan en Office 365. 
     
@@ -47,20 +47,20 @@ También puede averiguar cómo Office 365 puede ayudar a los clientes a cumplir 
  De forma predeterminada, los **miembros de suscripción de O365** pueden obtener acceso a la sección Garantía del servicio en el centro de protección de Office365 si no se ha implementado el acceso basado en roles del servicio de seguridad en la suscripción. Garantía del servicio proporciona informes y documentos que describen los procedimientos de seguridad de Microsoft para los datos de clientes almacenados en Office 365. También proporciona informes de auditoría de terceros independientes en Office 365. 
   
 > [!NOTE]
-> Nota: Si su compañía ha implementado acceso basado en roles de garantía de servicio en su suscripción de Office 365 (que podría ser si se ha proporcionado acceso a informes personalizados a su organización) y necesita acceso a garantía del servicio, pero no está incluido en la parte izquierda panel del centro de &amp; seguridad y cumplimiento, pida al administrador de Office 365 que le agregue al grupo de roles de usuario de garantía del servicio en la página **permisos** . Para obtener más información, consulte incorporar otros usuarios o grupos de garantía del servicio. 
+> Nota: Si su compañía ha implementado acceso basado en roles de garantía de servicio en su suscripción de Office 365 (que podría ser si se ha proporcionado acceso a informes personalizados a su organización) y necesita acceso a garantía del servicio, pero no está incluido en la parte izquierda panel del centro de seguridad & cumplimiento, pida al administrador de Office 365 que le agregue al grupo de roles usuario de garantía del servicio en la página **permisos** . Para obtener más información, consulte incorporar otros usuarios o grupos de garantía del servicio. 
   
  **Acceso basado en roles de servicios de garantía de servicio: usuarios aprovisionados** Si su empresa ha implementado acceso basado en roles de garantía de servicios, puede proporcionar acceso al servicio de seguridad a todo el personal de seguridad y cumplimiento, incluidos los equipos de seguridad de la información, la administración de riesgos, el cumplimiento y los equipos de auditoría y el personal de su Organization. Para obtener más información, consulte [incorporar otros usuarios o grupos de garantía del servicio](service-assurance.md#addother).
   
-La garantía del servicio es accesible mediante el &amp; centro de seguridad y cumplimiento. Esta es la manera de acceder a.
+La garantía del servicio es accesible mediante el centro de seguridad & cumplimiento. Esta es la manera de acceder a.
   
-1. Vaya a [https://protection.office.com](https://protection.office.com).
+1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com).
     
 2. Inicie sesión en Office 365 con su cuenta profesional o educativa. 
     
 3. En el panel izquierdo, seleccione **garantía del servicio**. A continuación, [Elija la configuración regional y del sector](service-assurance.md#Chooseyourindustryregional) y [incorpore otros grupos o usuarios de garantía del servicio](service-assurance.md#addother).
     
     > [!NOTE]
-    > Si necesita tener acceso a garantía del servicio y no se incluye en el panel izquierdo del centro de seguridad &amp; y cumplimiento, solicite al administrador de Office 365 que le agregue al grupo de roles de usuario de garantía del servicio en la página **permisos** . 
+    > Si necesita acceso a la garantía del servicio y no se incluye en el panel izquierdo del centro de seguridad & cumplimiento, pida al administrador de Office 365 que le agregue al grupo de roles de usuario de garantía del servicio en la página **permisos** . 
   
 ## <a name="choose-your-industry-and-regional-settings"></a>Elegir la configuración regional y del sector
 <a name="Chooseyourindustryregional"> </a>
@@ -101,7 +101,7 @@ Seleccione el informe que desee descargar y seleccione **Guardar** para descarga
   
 |**Página de garantía del servicio**|**Contenido disponible**|**Descripción**|
 |:-----|:-----|:-----|
-|Informes de cumplimiento  <br/> | FedRamp  <br/>  Evaluación de GRC  <br/>  MÉTRICA  <br/>  SOC/SSAE  <br/> |Use los informes de cumplimiento de servicios para revisar las evaluaciones de auditoría realizadas por auditores independientes de terceros de las operaciones de entrega de servicio de Office 365.  <br/> |
+|Informes de cumplimiento  <br/> | FedRamp  <br/>  Evaluación de GRC  <br/>  ISO  <br/>  SOC/SSAE  <br/> |Use los informes de cumplimiento de servicios para revisar las evaluaciones de auditoría realizadas por auditores independientes de terceros de las operaciones de entrega de servicio de Office 365.  <br/> |
 |Documentos de confianza  <br/> | Preguntas más frecuentes y notas del producto  <br/>  Informes de administración de riesgos  <br/> |Use notas del producto, preguntas más frecuentes, informes de fin de año y otros recursos de Microsoft Confidential que están disponibles en el acuerdo de no divulgación para sus evaluaciones de riesgos y revisión.  <br/> |
 |Controles auditados  <br/> |Estándares y normativas globales que Office 365 ha implementado.  <br/> | Ayuda con la evaluación de riesgos cuando está evaluando, incorporando o usando los servicios de Office 365. Descubra lo siguiente:  <br/> <br/>-Cómo los controles de Office 365 cumplen los requisitos de seguridad, cumplimiento y privacidad.  <br/>-Acerca de la prueba de controles en Office 365, los resultados de estas pruebas y cuándo se completaron.  <br/> |
    
@@ -112,7 +112,7 @@ En función de su configuración específica, las opciones incluidas en la vista
 
 Para obtener acceso a los informes predeterminados que están disponibles en general en todas las suscripciones a la nube de Microsoft, no es necesario que implemente el modelo de acceso basado en roles de garantía de servicios y puede omitir este paso. Sin embargo, si se ha proporcionado a su organización acceso a los informes personalizados, agregue otros usuarios o grupos a los roles de garantía del servicio. Para agregar otros usuarios o grupos:
   
-1. En el centro &amp; de seguridad y cumplimiento, seleccione **permisos** en el panel izquierdo, tal y como se muestra en la siguiente captura de pantalla. 
+1. En el centro de seguridad & cumplimiento, seleccione **permisos** en el panel izquierdo, tal y como se muestra en la siguiente captura de pantalla. 
     
     ![Menú &amp; permisos de cumplimiento de seguridad](media/8b479ad4-5c91-4e4c-a1db-372d50526db6.png)
   
@@ -124,7 +124,7 @@ Para obtener acceso a los informes predeterminados que están disponibles en gen
     
     ![Usuario de garantía del servicio: elegir usuario](media/33f13ef6-1e10-4d49-af06-8e1ad5ffbfba.png)
   
-4. Cada usuario o grupo que haya agregado al rol de usuario de garantía del servicio puede encontrar ahora garantía del servicio y descargar informes y otros documentos &amp; en el centro de seguridad y cumplimiento.
+4. Cada usuario o grupo que agregó al rol de usuario de garantía del servicio puede encontrar ahora garantía del servicio y descargar informes y otros documentos en el centro de seguridad & cumplimiento.
     
 Vuelva a la página de **permisos** en cualquier momento para agregar más usuarios o quitar otros existentes. 
   

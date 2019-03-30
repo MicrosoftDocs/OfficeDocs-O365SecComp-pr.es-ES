@@ -3,7 +3,7 @@ title: Dar a los usuarios acceso al centro de &amp; seguridad y cumplimiento de 
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: 8/18/2017
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 f1_keywords:
@@ -16,16 +16,16 @@ search.appverid:
 - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: Los usuarios deben tener asignados permisos en el centro de &amp; seguridad y cumplimiento de Office 365 para que puedan administrar cualquiera de sus características de seguridad o cumplimiento.
-ms.openlocfilehash: 0a3f0d1ddde7d269a0f8f9596c5c3de14e94429d
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 08b3781ceb48b9a8d5933a075106d7bd3b9ab17d
+ms.sourcegitcommit: 799a958fcac643f62dfac6fa04020f2f4758635c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216310"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30997244"
 ---
 # <a name="give-users-access-to-the-office-365-security-amp-compliance-center"></a>Dar a los usuarios acceso al centro de &amp; seguridad y cumplimiento de Office 365
 
-Los usuarios deben tener asignados permisos en el centro de &amp; seguridad y cumplimiento de Office 365 para que puedan administrar cualquiera de sus características de seguridad o cumplimiento. Como administrador global de Office 365 o miembro del grupo de funciones OrganizationManagement en el centro &amp; de seguridad y cumplimiento, puede conceder estos permisos a los usuarios. Los usuarios solo podrán administrar las características de seguridad o cumplimiento a las que les dé acceso. 
+Los usuarios deben tener asignados permisos en el centro de &amp; seguridad y cumplimiento de Office 365 para que puedan administrar cualquiera de sus características de seguridad o cumplimiento. Como administrador global de Office 365 o miembro del grupo de funciones OrganizationManagement en el centro &amp; de seguridad y cumplimiento, puede conceder estos permisos a los usuarios. Los usuarios solo podrán administrar las características de seguridad o cumplimiento a las que les proporcione acceso. 
   
 Para obtener más información acerca de los distintos permisos que puede conceder a los &amp; usuarios en el centro de seguridad y cumplimiento, consulte [permisos &amp; en el centro de seguridad y cumplimiento de Office 365](permissions-in-the-security-and-compliance-center.md).
   
@@ -51,7 +51,7 @@ Para obtener más información acerca de los distintos permisos que puede conced
     
 6. Cuando haya seleccionado todos los usuarios que desee agregar al grupo de roles, haga clic en **agregar\> ** y, a continuación, en **Aceptar**.
     
-7. Haga clic en **Guardar** para guardar los cambios realizados en el grupo de funciones. 
+7. Haga clic en **Guardar** para guardar los cambios realizados en el grupo de roles. 
     
 ### <a name="how-do-you-know-this-worked"></a>¿Cómo saber si el proceso se ha completado correctamente?
 
@@ -76,7 +76,7 @@ Para obtener más información acerca de los distintos permisos que puede conced
   
 - _-Identity_ es el grupo de roles al que se agregará un miembro. 
     
-- _Member_ es el buzón, el grupo de seguridad universal (USG) o el equipo que se va a agregar al grupo de roles. Solo puede especificar un miembro cada vez. 
+- _Member_ es el buzón, el grupo de seguridad universal (USG) o el equipo que se va a agregar al grupo de roles. Solo se puede especificar un miembro cada vez. 
     
 Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [Add-RoleGroupMember](https://go.microsoft.com/fwlink/p/?LinkId=510859).
   

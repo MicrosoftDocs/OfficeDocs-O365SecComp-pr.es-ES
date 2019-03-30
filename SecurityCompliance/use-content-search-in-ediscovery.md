@@ -9,19 +9,19 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 55f31488-288a-473a-9b9e-831a11e3711a
-description: 'Use un script de PowerShell para crear una búsqueda de exhibición de documentos electrónicos local en Exchange online en función de una búsqueda creada en &amp; el centro de seguridad y cumplimiento de Office 365. '
-ms.openlocfilehash: 03df28094f29ced5a299aeb4f2140c3c3b0eba8c
-ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
+description: 'Use un script de PowerShell para crear una búsqueda de exhibición de documentos electrónicos local en Exchange online en función de una búsqueda creada en el centro de seguridad & cumplimiento. '
+ms.openlocfilehash: 2e4f1b3570ce2400472a0b2a9ddee886ffc4bab3
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30935255"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000033"
 ---
 # <a name="use-content-search-in-your-ediscovery-workflow"></a>Usar Búsqueda de contenido en el flujo de trabajo de eDiscovery
 
-La característica de búsqueda de contenido en el centro &amp; de seguridad y cumplimiento de Office 365 permite buscar en todos los buzones de la organización. A diferencia de la exhibición de documentos electrónicos local en Exchange Online (donde puede buscar hasta 10.000 buzones), no hay límites para el número de buzones de destino en una sola búsqueda. En los escenarios en los que necesite realizar búsquedas en toda la organización, puede usar Búsqueda de contenido para buscar en todos los buzones. A continuación, puede usar las características de flujo de trabajo de exhibición de documentos electrónicos local para realizar otras tareas relacionadas con la exhibición de documentos electrónicos, como colocar buzones en suspensión y exportar resultados de la búsqueda. Por ejemplo, supongamos que tiene que buscar en todos los buzones para identificar administradores específicos que responden a un caso jurídico. Puede usar la búsqueda de contenido en el &amp; centro de seguridad y cumplimiento para buscar en todos los buzones de la organización para identificar los que responden al caso. A continuación, puede usar esa lista de buzones de correo de custodios como buzones de origen para una búsqueda de exhibición de documentos electrónicos local en Exchange Online. El uso de la exhibición de documentos electrónicos local también permite poner en suspensión dichos buzones de origen, copiar los resultados de la búsqueda en un buzón de correo de detección y exportar los resultados de la búsqueda.
+La característica de búsqueda de contenido en el centro de seguridad & cumplimiento permite buscar en todos los buzones de la organización. A diferencia de la exhibición de documentos electrónicos local en Exchange Online (donde puede buscar hasta 10.000 buzones), no hay límites para el número de buzones de destino en una sola búsqueda. En los escenarios en los que necesite realizar búsquedas en toda la organización, puede usar Búsqueda de contenido para buscar en todos los buzones. A continuación, puede usar las características de flujo de trabajo de exhibición de documentos electrónicos local para realizar otras tareas relacionadas con la exhibición de documentos electrónicos, como colocar buzones en suspensión y exportar resultados de la búsqueda. Por ejemplo, supongamos que tiene que buscar en todos los buzones para identificar administradores específicos que responden a un caso jurídico. Puede usar la búsqueda de contenido en el centro de seguridad & cumplimiento para buscar en todos los buzones de la organización para identificar los que responden al caso. A continuación, puede usar esa lista de buzones de correo de custodios como buzones de origen para una búsqueda de exhibición de documentos electrónicos local en Exchange Online. El uso de la exhibición de documentos electrónicos local también permite poner en suspensión dichos buzones de origen, copiar los resultados de la búsqueda en un buzón de correo de detección y exportar los resultados de la búsqueda.
   
-En este tema se incluye un script que puede ejecutar para crear una búsqueda de exhibición de documentos electrónicos local en Exchange Online usando la lista de buzones de origen y la consulta de búsqueda de una &amp; búsqueda creada en el centro de seguridad y cumplimiento. A continuación encontrará una descripción general del proceso:
+En este tema se incluye un script que puede ejecutar para crear una búsqueda de exhibición de documentos electrónicos local en Exchange Online usando la lista de buzones de origen y la consulta de búsqueda de una búsqueda creada en el centro de seguridad & cumplimiento. A continuación encontrará una descripción general del proceso:
   
 [Paso 1: Crear una Búsqueda de contenido para todos los buzones de la organización](#step-1-create-a-content-search-to-search-all-mailboxes-in-your-organization)
 
@@ -33,16 +33,16 @@ En este tema se incluye un script que puede ejecutar para crear una búsqueda de
 
 ## <a name="step-1-create-a-content-search-to-search-all-mailboxes-in-your-organization"></a>Paso 1: Crear una Búsqueda de contenido para todos los buzones de la organización
 
-El primer paso es usar el centro de &amp; seguridad y cumplimiento (o PowerShell del centro de cumplimiento de &) para crear una búsqueda de contenido que busque en todos los buzones de la organización. No existe un límite para el número de buzones de una búsqueda de contenido. Especifique una consulta de palabras clave adecuada (o una consulta de los tipos de información confidencial) para que la búsqueda devuelva solo los buzones de origen relevantes para la investigación. Si es necesario, restrinja la consulta de búsqueda para limitar el ámbito de los resultados de la búsqueda y los buzones de origen devueltos.
+El primer paso consiste en usar el centro de seguridad & cumplimiento (o PowerShell de & de seguridad del centro de cumplimiento) para crear una búsqueda de contenido que busque en todos los buzones de la organización. No existe un límite para el número de buzones de una búsqueda de contenido. Especifique una consulta de palabras clave adecuada (o una consulta de los tipos de información confidencial) para que la búsqueda devuelva solo los buzones de origen relevantes para la investigación. Si es necesario, restrinja la consulta de búsqueda para limitar el ámbito de los resultados de la búsqueda y los buzones de origen devueltos.
   
 > [!NOTE]
 > Si la búsqueda de contenido de origen no devuelve ningún resultado, no se creará un eDiscovery local al ejecutar el script en el paso 3. Revise la consulta de búsqueda y, después, vuelva a ejecutar la búsqueda de contenido para mostrar los resultados de la búsqueda. 
   
-### <a name="use-the-security-amp-compliance-center-to-search-all-mailboxes"></a>Usar el centro &amp; de seguridad y cumplimiento para buscar en todos los buzones
+### <a name="use-the-security--compliance-center-to-search-all-mailboxes"></a>Usar el Centro de seguridad y cumplimiento para buscar en todos los buzones
 
-1. [Vaya al centro de seguridad &amp; y cumplimiento de Office 365](go-to-the-securitycompliance-center.md). 
+1. [Vaya al centro de seguridad _AMP_ cumplimiento](go-to-the-securitycompliance-center.md). 
     
-2. Haga clic en **investigación de búsqueda &amp; **, haga clic en **búsqueda de contenido**y, a continuación, haga clic en **nuevo** ![icono](media/O365-MDM-CreatePolicy-AddIcon.gif)agregar.
+2.  > Haga **** clic en buscar**contenido**búsqueda y, a continuación, haga clic en **nuevo** ![icono](media/O365-MDM-CreatePolicy-AddIcon.gif)agregar nuevo.
     
 3. En la página **Nueva búsqueda**, escriba un nombre para la búsqueda de contenido. 
     
@@ -58,7 +58,7 @@ El primer paso es usar el centro de &amp; seguridad y cumplimiento (o PowerShell
     
 ### <a name="use-security--compliance-center-powershell-to-search-all-mailboxes"></a>Usar el centro de seguridad & PowerShell para buscar en todos los buzones
 
-También puede usar el cmdlet **New-ComplianceSearch** para buscar en todos los buzones de la organización. El primer paso consiste en [conectarse a PowerShell del centro &amp; de seguridad y cumplimiento de Office 365](https://go.microsoft.com/fwlink/p/?LinkID=627084).
+También puede usar el cmdlet **New-ComplianceSearch** para buscar en todos los buzones de la organización. El primer paso consiste en [conectar con el PowerShell del centro de cumplimiento de & de seguridad](https://go.microsoft.com/fwlink/p/?LinkID=627084).
   
 Este es un ejemplo del uso de PowerShell para buscar en todos los buzones de la organización. La consulta de búsqueda devuelve todos los mensajes enviados entre el 1 de enero de 2015 y el 30 de junio de 2015 y que contienen la frase "informe financiero" en la línea del asunto. El primer comando crea la búsqueda y el segundo comando la ejecuta. 
   
@@ -124,7 +124,7 @@ Si hay más de 1.000 buzones de origen, intente crear dos (o más) búsquedas de
   
 ## <a name="step-2-connect-to-the-security--compliance-center-and-exchange-online-in-a-single-remote-powershell-session"></a>Paso 2: conectarse al centro de \& seguridad y cumplimiento y a Exchange online en una única sesión de PowerShell en remoto
 
-El paso siguiente es conectar Windows PowerShell al centro de seguridad &amp; y cumplimiento y a la organización de Exchange Online. Esto es necesario porque el script que ejecutó en el paso 3 requiere acceso a los cmdlets de búsqueda de contenido &amp; en el centro de seguridad y cumplimiento y los cmdlets de exhibición de documentos electrónicos locales en Exchange Online.
+El paso siguiente es conectar Windows PowerShell al centro de seguridad & cumplimiento y a la organización de Exchange Online. Esto es necesario porque el script que ejecutó en el paso 3 requiere acceso a los cmdlets de búsqueda de contenido en el centro de seguridad & cumplimiento y los cmdlets de exhibición de documentos electrónicos local en Exchange Online.
   
 1. Guarde el siguiente texto en un archivo de script de Windows PowerShell mediante un sufijo de nombre de archivo de .ps1. Por ejemplo, puede guardarlo en un archivo denominado `ConnectEXO-CC.ps1`.
     
@@ -143,7 +143,7 @@ El paso siguiente es conectar Windows PowerShell al centro de seguridad &amp; y 
     .\ConnectEXO-CC.ps1
     ```
 
-¿Cómo se sabe si se ha completado correctamente? Después de ejecutar el script, los cmdlets del centro &amp; de seguridad y cumplimiento de Exchange Online se importan a la sesión local de PowerShell. Si no se muestra ningún error, la conexión se habrá establecido correctamente. Una prueba rápida es ejecutar un cmdlet del &amp; centro de seguridad y cumplimiento (por ejemplo, **install-UnifiedCompliancePrerequisite** ) y un cmdlet de Exchange Online, como **Get-Mailbox**. 
+¿Cómo se sabe si se ha completado correctamente? Después de ejecutar el script, los cmdlets del centro de seguridad de & cumplimiento y Exchange Online se importan a la sesión local de PowerShell. Si no se muestra ningún error, la conexión se habrá establecido correctamente. Una prueba rápida es ejecutar un cmdlet del centro de cumplimiento de & de seguridad (por ejemplo, **install-UnifiedCompliancePrerequisite** ) y un cmdlet de Exchange Online, como **Get-Mailbox**. 
   
 ## <a name="step-3-run-the-script-to-create-an-in-place-ediscovery-search-from-the-content-search"></a>Paso 3: Ejecutar el script para crear una búsqueda de eDiscovery local a partir de la búsqueda de contenido
 

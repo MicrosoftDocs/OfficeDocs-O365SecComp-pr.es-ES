@@ -1,5 +1,5 @@
 ---
-title: Usar un script para agregar usuarios a una suspensión en un caso de exhibición de documentos electrónicos en &amp; el centro de seguridad y cumplimiento de Office 365
+title: Usar un script para agregar usuarios a una suspensión en un caso de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -13,17 +13,17 @@ search.appverid:
 - MED150
 - MBS150
 ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
-description: Ejecute un script para agregar rápidamente sitios de buzones de correo y OneDrive para la empresa a una nueva retención asociada a un caso de exhibición de documentos &amp; electrónicos en el centro de seguridad y cumplimiento de Office 365.
-ms.openlocfilehash: f71c82a830f029f8137a60d8329e30be0e7eeb46
-ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
+description: Ejecute un script para agregar rápidamente sitios de buzones de correo y OneDrive para la empresa a una nueva retención asociada a un caso de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento.
+ms.openlocfilehash: 992fddad3bfbc9f08855bd85d87b0edf92b3cdbe
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30935245"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001193"
 ---
-# <a name="use-a-script-to-add-users-to-a-hold-in-an-ediscovery-case-in-the-office-365-security-amp-compliance-center"></a>Usar un script para agregar usuarios a una suspensión en un caso de exhibición de documentos electrónicos en &amp; el centro de seguridad y cumplimiento de Office 365
+# <a name="use-a-script-to-add-users-to-a-hold-in-an-ediscovery-case-in-the-security--compliance-center"></a>Usar un script para agregar usuarios a una suspensión en un caso de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento
 
-El centro de seguridad &amp; y cumplimiento de Office 365 proporciona muchos cmdlets de Windows PowerShell que permiten automatizar las tareas que llevan mucho tiempo relacionadas con la creación y la administración de casos de eDiscovery. Actualmente, el uso de la herramienta de casos de &amp; eDiscovery en el centro de seguridad y cumplimiento para poner en retención un gran número de ubicaciones de contenido de custodios requiere tiempo y preparación. Por ejemplo, antes de crear una retención, tiene que recopilar la dirección URL de cada sitio de OneDrive para la empresa que quiera poner en retención. A continuación, para cada usuario que quiera poner en retención, tiene que agregar su buzón y su sitio de OneDrive para la empresa a la retención. En versiones futuras del centro de &amp; seguridad y cumplimiento, esto le resultará más sencillo. Hasta entonces, puede usar el script de este artículo para automatizar este proceso.
+El centro de seguridad & cumplimiento proporciona muchos cmdlets de Windows PowerShell que permiten automatizar tareas que llevan mucho tiempo relacionadas con la creación y la administración de casos de eDiscovery. Actualmente, el uso de la herramienta de casos de exhibición de documentos electrónicos en el centro de cumplimiento de seguridad & para poner un gran número de ubicaciones de contenido de custodios en retención lleva tiempo y preparación. Por ejemplo, antes de crear una retención, tiene que recopilar la dirección URL de cada sitio de OneDrive para la empresa que quiera poner en retención. A continuación, para cada usuario que quiera poner en retención, tiene que agregar su buzón y su sitio de OneDrive para la empresa a la retención. En futuras versiones del centro de seguridad & cumplimiento, esto le resultará más sencillo. Hasta entonces, puede usar el script de este artículo para automatizar este proceso.
   
 El script le pedirá el nombre del dominio de mi sitio de su organización (por ejemplo, **contoso** en la dirección https://contoso-my.sharepoint.com)URL, el nombre de un caso de eDiscovery existente, el nombre de la nueva retención asociada con el caso, una lista de direcciones de correo electrónico de los usuarios que desea poner en espera y una consulta de búsqueda para usar si desea crear una suspensión basada en consulta. A continuación, el script obtiene la dirección URL del sitio de OneDrive para la empresa para cada usuario de la lista, crea la nueva retención y, a continuación, agrega el buzón y el sitio de OneDrive para la empresa para cada usuario de la lista a la retención. El script también genera archivos de registro que contienen información sobre la nueva suspensión. 
   
@@ -37,9 +37,9 @@ Estos son los pasos para que esto suceda:
   
 ## <a name="before-you-begin"></a>Antes de empezar
 
-- Debe ser miembro del grupo de roles eDiscovery Manager en el centro de seguridad &amp; y cumplimiento y un administrador global de SharePoint Online para ejecutar el script en el paso 3. Para obtener más información, consulte [asignar permisos de exhibición de documentos electrónicos &amp; en el centro de seguridad y cumplimiento de Office 365](assign-ediscovery-permissions.md).
+- Debe ser miembro del grupo de roles eDiscovery Manager en el centro de seguridad & cumplimiento y un administrador global de SharePoint Online para ejecutar el script en el paso 3. Para obtener más información, vea [asignar permisos de exhibición de documentos electrónicos en el centro de seguridad _AMP_ cumplimiento de Office 365](assign-ediscovery-permissions.md).
     
-- Se puede Agregar un máximo de 1.000 buzones y sitios de 100 a una suspensión asociada a un caso de exhibición de documentos electrónicos &amp; en el centro de seguridad y cumplimiento. SuPoniendo que todos los usuarios que quiera poner en retención dispongan de un sitio de OneDrive para la empresa, puede Agregar un máximo de 100 usuarios a una suspensión mediante el script de este artículo. 
+- Se puede Agregar un máximo de 1.000 buzones y sitios de 100 a una suspensión asociada a un caso de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento. SuPoniendo que todos los usuarios que quiera poner en retención dispongan de un sitio de OneDrive para la empresa, puede Agregar un máximo de 100 usuarios a una suspensión mediante el script de este artículo. 
     
 - Asegúrese de guardar la lista de usuarios que ha creado en el paso 2 y el script en el paso 3 en la misma carpeta. Esto hará que sea más fácil ejecutar el script.
     
@@ -75,7 +75,7 @@ Después de ejecutar este comando, abra el archivo de texto y quite el encabezad
 
 Al ejecutar el script en este paso, se le pedirá la siguiente información. Asegúrese de que tiene esta información lista antes de ejecutar el script.
   
-- **Sus credenciales de usuario** : el script usará sus credenciales para conectarse al &amp; centro de seguridad y cumplimiento con PowerShell remoto. También usará estas credenciales para acceder a SharePoint Online y obtener las direcciones URL de OneDrive para la empresa para la lista de usuarios.
+- **Sus credenciales de usuario** : el script usará sus credenciales para conectarse al centro de cumplimiento de _AMP_ de seguridad con PowerShell remoto. También usará estas credenciales para acceder a SharePoint Online y obtener las direcciones URL de OneDrive para la empresa para la lista de usuarios.
     
 - **Nombre del dominio de mi sitio** : el dominio de mi sitio es el dominio que contiene todos los sitios de OneDrive para la empresa de su organización. Por ejemplo, si la dirección URL del dominio de mi sitio **https://contoso-my.sharepoint.com**es, debe especificar `contoso` cuando el script le pide el nombre de su dominio de mi sitio. 
     
@@ -85,7 +85,7 @@ Al ejecutar el script en este paso, se le pedirá la siguiente información. Ase
     
 - **Consulta de búsqueda para una retención basada en consulta** : puede crear una suspensión basada en consulta para que solo se coloque en retención el contenido que cumpla los criterios de búsqueda especificados. Para poner todo el contenido en espera, simplemente presione **entrar** cuando se le pida una consulta de búsqueda. 
     
-- **Si quiere activar o no la retención** , puede hacer que la secuencia de comandos vuelva a pasar la retención una vez creada o puede hacer que el script cree la retención sin habilitarla. Si la secuencia de comandos no se activa, puede activarla más adelante en el centro de seguridad &amp; y cumplimiento o mediante la ejecución de los siguientes comandos de PowerShell: 
+- **Si quiere activar o no la retención** , puede hacer que la secuencia de comandos vuelva a pasar la retención una vez creada o puede hacer que el script cree la retención sin habilitarla. Si no tiene la secuencia de comandos activa, puede activarla más adelante en el centro de seguridad & cumplimiento o mediante la ejecución de los siguientes comandos de PowerShell: 
     
   ```
   Set-CaseHoldPolicy -Identity <name of the hold> -Enabled $true
@@ -105,12 +105,12 @@ Una vez que haya recopilado la información que le pedirá el script, el paso fi
   #script begin
   " " 
   write-host "***********************************************"
-  write-host "   Office 365 Security &amp; Compliance Center   " -foregroundColor yellow -backgroundcolor darkgreen
+  write-host "   Security & Compliance Center   " -foregroundColor yellow -backgroundcolor darkgreen
   write-host "   eDiscovery cases - Add users to a hold   " -foregroundColor yellow -backgroundcolor darkgreen 
   write-host "***********************************************"
   " " 
   # Get user credentials &amp; Connect to Office 365 SCC, SPO
-  $credentials = Get-Credential -Message "Specify your credentials to connect to the Office 365 Security &amp; Compliance Center and SharePoint Online"
+  $credentials = Get-Credential -Message "Specify your credentials to connect to the Security & Compliance Center and SharePoint Online"
   $s = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri "https://ps.compliance.protection.outlook.com/powershell-liveid" -Credential $credentials -Authentication Basic -AllowRedirection -SessionOption (New-PSSessionOption -SkipCACheck -SkipCNCheck -SkipRevocationCheck)
   $a = Import-PSSession $s -AllowClobber
       if (!$s)
@@ -284,7 +284,7 @@ Una vez que haya recopilado la información que le pedirá el script, el paso fi
 
 4. Escriba la información que el script le pide.
     
-    El script se conecta a Security & Compliance Center PowerShell y, a continuación, crea la nueva retención en el caso de eDiscovery y agrega los buzones y OneDrive para la empresa para los usuarios de la lista. Puede ir al caso en la página **exhibición** de documentos electrónicos del centro &amp; de seguridad y cumplimiento para ver la nueva suspensión. 
+    El script se conecta a Security & Compliance Center PowerShell y, a continuación, crea la nueva retención en el caso de eDiscovery y agrega los buzones y OneDrive para la empresa para los usuarios de la lista. Puede ir al caso en la página **exhibición** de documentos electrónicos en el centro de seguridad & cumplimiento para ver la nueva suspensión. 
     
 Una vez finalizada la ejecución del script, se crean los siguientes archivos de registro y se guardan en la carpeta en la que se encuentra el script.
   

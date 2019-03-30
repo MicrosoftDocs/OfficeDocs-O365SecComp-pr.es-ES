@@ -1,5 +1,5 @@
 ---
-title: casos de eDiscovery en el centro de &amp; seguridad y cumplimiento de Office 365
+title: casos de eDiscovery en el centro de seguridad & cumplimiento
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,21 +14,21 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
-description: Use el centro de seguridad &amp; y cumplimiento de Office 365 para crear y administrar casos de exhibición de documentos electrónicos en su organización. Puede asignar miembros al caso, poner ubicaciones de contenido en retención, ejecutar búsquedas de contenido asociadas con el caso y exportar los resultados de la búsqueda. También puede preparar datos de casos para un análisis más avanzado en la exhibición avanzada de documentos electrónicos.
-ms.openlocfilehash: 52ebc7f06bf9d60450d56b8591f7cfc184b4dbf6
-ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
+description: Use el centro de seguridad & cumplimiento para crear y administrar casos de exhibición de documentos electrónicos en su organización. Puede asignar miembros al caso, poner ubicaciones de contenido en retención, ejecutar búsquedas de contenido asociadas con el caso y exportar los resultados de la búsqueda. También puede preparar datos de casos para un análisis más avanzado en la exhibición avanzada de documentos electrónicos.
+ms.openlocfilehash: 3c3d3fb6d4e2244554059e731b4585dd546ff52b
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30900199"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000733"
 ---
-# <a name="ediscovery-cases-in-the-office-365-security-amp-compliance-center"></a>casos de eDiscovery en el centro de &amp; seguridad y cumplimiento de Office 365
+# <a name="ediscovery-cases-in-the-security--compliance-center"></a>casos de eDiscovery en el centro de seguridad & cumplimiento
 
-Puede usar casos de exhibición de documentos electrónicos en el &amp; centro de seguridad y cumplimiento de Office 365 para controlar quién puede crear, acceder y administrar casos de eDiscovery en su organización. Si su organización tiene una suscripción a Office 365 E5, también puede usar casos de exhibición de documentos electrónicos para analizar los resultados de la búsqueda con Office 365 Advanced eDiscovery.
+Puede usar casos de eDiscovery en el centro de cumplimiento de Office 365 y Microsoft 365 para controlar quién puede crear, tener acceso y administrar casos de eDiscovery en su organización. Si su organización tiene una suscripción a Office 365 E5, también puede usar casos de exhibición de documentos electrónicos para analizar los resultados de la búsqueda con Office 365 Advanced eDiscovery.
   
 Un caso de exhibición de documentos electrónicos permite agregar miembros a un caso, controlar qué tipos de acciones pueden realizar determinados miembros del caso, colocar una suspensión en ubicaciones de contenido relevantes a un proceso legal y asociar varias búsquedas de contenido con un solo caso. También puede exportar los resultados de cualquier búsqueda de contenido que esté asociado a un caso o preparar los resultados de búsqueda para analizarlos en la exhibición avanzada de documentos electrónicos. Los casos de exhibición de documentos electrónicos son una buena manera de limitar quién puede tener acceso a los resultados de búsqueda y a las búsquedas de contenido de un caso legal específico de la organización.
   
-Use el siguiente flujo de trabajo para configurar y usar casos de eDiscovery en &amp; el centro de seguridad y cumplimiento y la exhibición avanzada de documentos electrónicos.
+Use el siguiente flujo de trabajo para configurar y usar casos de eDiscovery en el centro de seguridad & cumplimiento y en la exhibición avanzada de documentos electrónicos.
 
 [Step 1: Assign eDiscovery permissions to potential case members](#step-1-assign-ediscovery-permissions-to-potential-case-members)
 
@@ -54,13 +54,13 @@ Use el siguiente flujo de trabajo para configurar y usar casos de eDiscovery en 
   
 ## <a name="step-1-assign-ediscovery-permissions-to-potential-case-members"></a>Paso 1: Asignar permisos de exhibición de documentos electrónicos a posibles miembros del caso
 
-El primer paso consiste en asignar los permisos adecuados relacionados con eDiscovery a los usuarios para que pueda agregarlos a un caso de exhibición de documentos electrónicos en el paso 2. Debe ser miembro del grupo de roles de administración de la organización (o tener asignado el rol de administración de roles) en el centro &amp; de seguridad y cumplimiento de Office 365 para asignar permisos de exhibición de documentos electrónicos. En la lista siguiente se describen los grupos de roles relacionados con la &amp; exhibición de documentos electrónicos en el centro de seguridad y cumplimiento. 
+El primer paso consiste en asignar los permisos adecuados relacionados con eDiscovery a los usuarios para que pueda agregarlos a un caso de exhibición de documentos electrónicos en el paso 2. Debe ser miembro del grupo de roles de administración de la organización (o tener asignado el rol de administración de roles) en el centro de seguridad & de cumplimiento para asignar permisos de exhibición de documentos electrónicos. En la siguiente lista se describen los grupos de roles relacionados con la exhibición de documentos electrónicos en el centro de seguridad & cumplimiento. 
   
-- **Revisor** : este grupo de roles tiene los permisos más restrictivos relacionados con la exhibición de documentos electrónicos. El objetivo principal de este grupo de roles es permitir a los miembros ver y obtener acceso a los datos de caso en eDiscovery avanzado de Office 365. Los miembros de este grupo solo pueden ver y abrir la lista de los casos de la página de **eDiscovery** en &amp; el centro de seguridad y cumplimiento del que son miembros. Una vez que el usuario tiene acceso a un caso en el centro de seguridad & cumplimiento, puede hacer clic en **cambiar a eDiscovery avanzado** para acceder y analizar los datos del caso en la exhibición avanzada de documentos electrónicos. No pueden crear casos, agregar miembros a un caso, crear suspensiones, crear búsquedas, obtener una vista previa de los resultados de la búsqueda, exportar resultados de la búsqueda o preparar los resultados para la exhibición avanzada de documentos electrónicos. 
+- **Revisor** : este grupo de roles tiene los permisos más restrictivos relacionados con la exhibición de documentos electrónicos. El objetivo principal de este grupo de roles es permitir a los miembros ver y obtener acceso a los datos de caso en eDiscovery avanzado de Office 365. Los miembros de este grupo solo pueden ver y abrir la lista de los casos en la página de **exhibición** de documentos electrónicos en el centro de seguridad & cumplimiento del que son miembros. Una vez que el usuario tiene acceso a un caso en el centro de seguridad y cumplimiento, puede hacer clic en **cambiar a eDiscovery avanzado** para acceder y analizar los datos del caso en eDiscovery avanzado. No pueden crear casos, agregar miembros a un caso, crear suspensiones, crear búsquedas, obtener una vista previa de los resultados de la búsqueda, exportar resultados de la búsqueda o preparar los resultados para la exhibición avanzada de documentos electrónicos. 
     
 - **Administrador de eDiscovery** : los miembros de este grupo de roles pueden crear y administrar casos de eDiscovery. Pueden agregar y quitar miembros, poner ubicaciones de contenido en suspensión, crear y editar búsquedas de contenido asociadas a un caso, exportar los resultados de una búsqueda de contenido y preparar los resultados de la búsqueda para analizarlos en la exhibición avanzada de documentos electrónicos. Existen dos subgrupos en este grupo de roles. La diferencia entre estos subgrupos se basa en el ámbito.
     
-  - **Administrador de exhibición** de documentos electrónicos: puede ver y administrar los casos de exhibición de documentos electrónicos que crean o de los que son miembros. Si otro administrador de exhibición de documentos electrónicos crea un caso pero no agrega un segundo administrador de eDiscovery como miembro de ese caso, el segundo administrador de eDiscovery no podrá ver ni abrir el **** caso en la página de &amp; exhibición de documentos electrónicos en el centro de seguridad y cumplimiento. los administradores de eDiscovery también pueden acceder a sus casos en eDiscovery avanzado para realizar tareas de análisis. 
+  - **Administrador de exhibición** de documentos electrónicos: puede ver y administrar los casos de exhibición de documentos electrónicos que crean o de los que son miembros. Si otro administrador de exhibición de documentos electrónicos crea un caso pero no agrega un segundo administrador de eDiscovery como miembro de ese caso, el segundo administrador de eDiscovery no podrá ver ni abrir el caso en la página de **exhibición** de documentos electrónicos en el centro de seguridad & cumplimiento. los administradores de eDiscovery también pueden acceder a sus casos en eDiscovery avanzado para realizar tareas de análisis. 
     
   - **Administrador de exhibición** de documentos electrónicos: puede realizar todas las tareas de administración de casos que puede realizar un administrador de exhibición de documentos electrónicos. Además, un administrador de exhibición de documentos electrónicos puede:
     
@@ -75,15 +75,15 @@ El primer paso consiste en asignar los permisos adecuados relacionados con eDisc
 > [!IMPORTANT]
 > Si una persona no es miembro de uno de estos grupos de roles relacionados con la exhibición de documentos electrónicos, o no es miembro de un grupo de roles que tiene asignado el rol de revisor, no puede agregarlo como miembro de un caso de exhibición de documentos electrónicos. 
 
-Para obtener más información acerca de los permisos de eDiscovery, consulte [asignar permisos de exhibición &amp; de documentos electrónicos en el centro de seguridad y cumplimiento de Office 365](assign-ediscovery-permissions.md).
+Para obtener más información sobre los permisos de exhibición de documentos electrónicos, consulte [asignar permisos de exhibición](assign-ediscovery-permissions.md)de documentos electrónicos.
   
  **Para asignar permisos de exhibición de documentos electrónicos:**
   
-1. Vaya a [https://protection.office.com](https://protection.office.com).
+1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com).
     
 2. Inicie sesión en Office 365 con su cuenta profesional o educativa.
     
-3. En el centro &amp; de seguridad y cumplimiento, haga clic en **permisos**y, a continuación, realice una de las siguientes acciones en función de los permisos de exhibición de documentos electrónicos que desee asignar.
+3. En el centro de seguridad & cumplimiento, haga clic en **permisos**y, a continuación, realice una de las siguientes acciones en función de los permisos de exhibición de documentos electrónicos que desee asignar.
     
     - Para asignar permisos de revisor, seleccione el **** grupo de roles de revisor y, a continuación, junto a **miembros**, haga clic en **Editar**. Haga clic en **seleccionar miembros**, haga clic en **Editar**, ![haga clic en agregar icono](media/ITPro-EAC-AddIcon.gif) **Agregar**, seleccione el usuario que desea agregar al grupo de funciones de revisor y, a continuación, haga clic en **Agregar**.
     
@@ -95,13 +95,13 @@ Para obtener más información acerca de los permisos de eDiscovery, consulte [a
 
 ## <a name="step-2-create-a-new-case"></a>Paso 2: crear un nuevo caso
 
-El siguiente paso es crear un nuevo caso de exhibición de documentos electrónicos. Debe ser miembro del grupo de roles Administrador de exhibición de documentos electrónicos para crear casos de exhibición de documentos electrónicos. Como se ha explicado anteriormente, después de crear un nuevo caso &amp; en el centro de seguridad y cumplimiento, usted (y otros miembros de mayúsculas y minúsculas) podrá tener acceso al mismo caso en eDiscovery avanzado si la organización tiene una suscripción a Office 365 E5.
+El siguiente paso es crear un nuevo caso de exhibición de documentos electrónicos. Debe ser miembro del grupo de roles Administrador de exhibición de documentos electrónicos para crear casos de exhibición de documentos electrónicos. Como se ha explicado anteriormente, después de crear un nuevo caso en el centro de seguridad & cumplimiento, usted (y otros miembros de mayúsculas y minúsculas) podrá tener acceso al mismo caso en eDiscovery avanzado si la organización tiene una suscripción a Office 365 E5.
   
-1. Vaya a [https://protection.office.com](https://protection.office.com).
+1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com).
     
 2. Inicie sesión en Office 365 con su cuenta profesional o educativa.
     
-3. En el centro &amp; de seguridad y cumplimiento, haga clic en ** &amp; búsqueda** \> **** en exhibición ![de documentos electrónicos y, a continuación, en agregar icono](media/ITPro-EAC-AddIcon.gif) **crear un caso**.
+3. En el centro de seguridad & cumplimiento, **** \> haga clic en eDiscovery **eDiscovery**y ![, a](media/ITPro-EAC-AddIcon.gif) continuación, haga clic en agregar icono **crear un caso**.
     
 4. En la página **nuevo caso** , indique el caso como un nombre, escriba una descripción opcional y, a continuación, haga clic en **Guardar**. Tenga en cuenta que el nombre del caso debe ser único en su organización.
     
@@ -116,7 +116,7 @@ El siguiente paso es crear un nuevo caso de exhibición de documentos electróni
 
 Después de crear un nuevo caso, el siguiente paso consiste en Agregar miembros al caso. Como se ha explicado anteriormente, solo los usuarios que son miembros de los grupos de roles Reviewer o eDiscovery Manager pueden agregarse como miembros del caso. Tenga en cuenta que el administrador de eDiscovery que ha creado el caso se agrega automáticamente como miembro.
   
-1. En el Centro de seguridad y cumplimiento, haga clic en **Búsqueda e investigación** \> **eDiscovery** para mostrar la lista de casos en su organización. 
+1. En el centro de seguridad & cumplimiento, **** \> haga clic en eDiscovery **eDiscovery** para mostrar la lista de casos de su organización. 
     
 2. Haga clic en el nombre del caso al que desea agregar miembros.
     
@@ -160,7 +160,7 @@ Al crear una suspensión, tiene las siguientes opciones para limitar el contenid
   
 Para crear una suspensión para un caso de exhibición de documentos electrónicos:
   
-1. En el Centro de seguridad y cumplimiento, haga clic en **Búsqueda e investigación** \> **eDiscovery** para mostrar la lista de casos en su organización. 
+1. En el centro de seguridad & cumplimiento, **** \> haga clic en eDiscovery **eDiscovery** para mostrar la lista de casos de su organización. 
     
 2. Haga clic en **abrir** junto al caso en el que desea crear las suspensiones. 
     
@@ -234,9 +234,9 @@ Tenga en cuenta lo siguiente en cuanto a la retención de estadísticas:
   
 ## <a name="step-5-create-and-run-a-content-search-associated-with-a-case"></a>Paso 5: crear y ejecutar una búsqueda de contenido asociada a un caso
 
-Después de haber creado un caso de exhibición de documentos electrónicos y que cualquier administrador relacionado con el caso se haya suspendido, puede crear y ejecutar una o varias búsquedas de contenido asociadas al caso. Las búsquedas de contenido asociadas a un caso no se **** enumeran en la página &amp; de búsqueda del centro de seguridad y cumplimiento. Esto significa que solo los miembros del caso que sean también miembros del grupo de roles Administrador de exhibición de documentos electrónicos pueden tener acceso a las búsquedas de contenido asociadas al caso. 
+Después de haber creado un caso de exhibición de documentos electrónicos y que cualquier administrador relacionado con el caso se haya suspendido, puede crear y ejecutar una o varias búsquedas de contenido asociadas al caso. Las búsquedas de contenido asociadas a un caso no se enumeran en la página de **búsqueda** del centro de seguridad & cumplimiento. Esto significa que solo los miembros del caso que sean también miembros del grupo de roles Administrador de exhibición de documentos electrónicos pueden tener acceso a las búsquedas de contenido asociadas al caso. 
   
-1. En el Centro de seguridad y cumplimiento, haga clic en **Búsqueda e investigación** \> **eDiscovery** para mostrar la lista de casos en su organización. 
+1. En el centro de seguridad & cumplimiento, **** \> haga clic en eDiscovery **eDiscovery** para mostrar la lista de casos de su organización. 
     
 2. Haga clic en **abrir** junto al caso en el que desea crear una búsqueda de contenido. 
     
@@ -308,7 +308,7 @@ Puede exportar los resultados de una [sola búsqueda asociada a un caso](#export
   
 ### <a name="export-the-results-of-a-single-search-associated-with-a-case"></a>Exportar los resultados de una sola búsqueda asociada a un caso
 
-1. En el Centro de seguridad y cumplimiento, haga clic en **Búsqueda e investigación** \> **eDiscovery** para mostrar la lista de casos en su organización. 
+1. En el centro de seguridad & cumplimiento, **** \> haga clic en eDiscovery **eDiscovery** para mostrar la lista de casos de su organización. 
     
 2. Haga clic en **abrir** junto al caso en el que desea exportar la búsqueda. 
     
@@ -320,7 +320,7 @@ Puede exportar los resultados de una [sola búsqueda asociada a un caso](#export
     
     ![Página de resultados de la exportación](media/ab0bb46d-310b-4374-8644-717146df6676.png)
   
-    El flujo de trabajo para exportar los resultados de una búsqueda de contenido asociada a un caso es el mismo que para exportar los resultados de búsqueda de una búsqueda en la página **Búsqueda de contenido**. Para obtener instrucciones paso a paso, consulte [exportar resultados de búsqueda de contenido desde el centro de &amp; seguridad y cumplimiento de Office 365](export-search-results.md).
+    El flujo de trabajo para exportar los resultados de una búsqueda de contenido asociada a un caso es el mismo que para exportar los resultados de búsqueda de una búsqueda en la página **Búsqueda de contenido**. Para obtener instrucciones paso a paso, consulte [exportar resultados](export-search-results.md)de la búsqueda de contenido.
     
     > [!NOTE]
     > Al exportar los resultados de búsqueda, tiene la opción de habilitar la desduplicación para que solo se exporte una copia de un mensaje de correo electrónico, aunque se hayan encontrado varias instancias del mismo mensaje en los buzones en los que se realizó la búsqueda. Para obtener más información acerca de la desduplicación y cómo se identifican los elementos duplicados, vea desduplicación [en resultados de la búsqueda de exhibición](de-duplication-in-ediscovery-search-results.md)de documentos electrónicos. 
@@ -333,16 +333,16 @@ Puede exportar los resultados de una [sola búsqueda asociada a un caso](#export
     
 6. Haga clic en el trabajo de exportación que acaba de crear para mostrar la información de estado en el panel de detalles. Esta información incluye el porcentaje de elementos que se han transferido a un área de almacenamiento de Azure en la nube de Microsoft.
     
-    Una vez transferidos todos los elementos, haga clic en **Descargar resultados** para descargar los resultados de la búsqueda en el equipo local. Para obtener más información, consulte el paso 2 de [exportar resultados de búsqueda de contenido desde &amp; el centro de seguridad y cumplimiento de Office 365](export-search-results.md)
+    Una vez transferidos todos los elementos, haga clic en **Descargar resultados** para descargar los resultados de la búsqueda en el equipo local. Para obtener más información, consulte el paso 2 en [exportar resultados](export-search-results.md) de la búsqueda de contenido
     
 ### <a name="export-the-results-of-multiple-searches-associated-with-a-case"></a>Exportar los resultados de varias búsquedas asociadas a un caso
 
 Como alternativa a la exportación de los resultados de una sola búsqueda de contenido asociada a un caso, puede exportar los resultados de varias búsquedas desde el mismo caso en una sola exportación. Exportar los resultados de varias búsquedas es más rápido y sencillo que exportar los resultados una búsqueda cada vez.
   
 > [!NOTE]
-> No puede exportar los resultados de varias búsquedas si una de esas búsquedas se configuró para buscar en todo el contenido de caso. exportar solo los resultados de varias búsquedas de búsquedas asociadas a un caso de exhibición de documentos electrónicos. No puede exportar los resultados de varias búsquedas que aparecen en la página de **búsqueda** de contenido &amp; en el centro de seguridad y cumplimiento. 
+> No puede exportar los resultados de varias búsquedas si una de esas búsquedas se configuró para buscar en todo el contenido de caso. exportar solo los resultados de varias búsquedas de búsquedas asociadas a un caso de exhibición de documentos electrónicos. No puede exportar los resultados de varias búsquedas que aparecen en la página **búsqueda de contenido** en el centro de seguridad & cumplimiento. 
   
-1. En el Centro de seguridad y cumplimiento, haga clic en **Búsqueda e investigación** \> **eDiscovery** para mostrar la lista de casos en su organización. 
+1. En el centro de seguridad & cumplimiento, **** \> haga clic en eDiscovery **eDiscovery** para mostrar la lista de casos de su organización. 
     
 2. Haga clic en **abrir** junto al caso desde el que desea exportar los resultados de la búsqueda. 
     
@@ -362,7 +362,7 @@ Como alternativa a la exportación de los resultados de una sola búsqueda de co
 
 7. En la página **exportar resultados** , asigne un nombre único a la exportación, seleccione Opciones de resultados y elija cómo se exportará el contenido. Haga clic en **Exportar**.
     
-    El flujo de trabajo para exportar los resultados de varias búsquedas de contenido asociadas a un caso es el mismo que exportar los resultados de la búsqueda para una sola búsqueda. Para obtener instrucciones paso a paso, consulte [exportar resultados de búsqueda de contenido desde el centro de &amp; seguridad y cumplimiento de Office 365](export-search-results.md).
+    El flujo de trabajo para exportar los resultados de varias búsquedas de contenido asociadas a un caso es el mismo que exportar los resultados de la búsqueda para una sola búsqueda. Para obtener instrucciones paso a paso, consulte [exportar resultados](export-search-results.md)de la búsqueda de contenido.
     
     > [!NOTE]
     > Al exportar los resultados de búsqueda de varias búsquedas asociadas a un caso, también tiene la opción de habilitar la desduplicación para que solo se exporte una copia de un mensaje de correo electrónico, aunque se hayan encontrado varias instancias del mismo mensaje en el buzones de correo que se han buscado en una o varias de las búsquedas. Para obtener más información acerca de la desduplicación y cómo se identifican los elementos duplicados, vea desduplicación [en resultados de la búsqueda de exhibición](de-duplication-in-ediscovery-search-results.md)de documentos electrónicos. 
@@ -375,7 +375,7 @@ Como alternativa a la exportación de los resultados de una sola búsqueda de co
     
 8. Haga clic en el trabajo de exportación que acaba de crear para mostrar la información de estado en el panel de detalles. Esta información incluye el porcentaje de elementos que se han transferido a un área de almacenamiento de Azure en la nube de Microsoft.
     
-9. Una vez transferidos todos los elementos, haga clic en **Descargar resultados** para descargar los resultados de la búsqueda en el equipo local. Para obtener más información, consulte el paso 2 en [exportar resultados de la búsqueda del &amp; centro de seguridad y cumplimiento de Office 365](export-search-results.md)
+9. Una vez transferidos todos los elementos, haga clic en **Descargar resultados** para descargar los resultados de la búsqueda en el equipo local. Para obtener más información, vea el paso 2 en [exportar resultados](export-search-results.md)de la búsqueda de contenido.
     
 #### <a name="more-information-about-exporting-the-results-of-multiple-searches"></a>Más información sobre cómo exportar los resultados de varias búsquedas
 
@@ -404,7 +404,7 @@ Al preparar los resultados de búsqueda para la exhibición avanzada de document
 > [!NOTE]
 > Para analizar los datos de un usuario con la exhibición avanzada de documentos electrónicos, el usuario (el custodio de los datos) debe tener asignada una licencia de Office 365 E5. Como alternativa, se puede asignar una licencia independiente de eDiscovery avanzado a los usuarios con una licencia de Office 365 E1 o E3. Los administradores y los responsables de cumplimiento que se asignan a los casos y usan la exhibición avanzada de documentos electrónicos para analizar los datos no necesitan una licencia E5. 
   
-1. En el Centro de seguridad y cumplimiento, haga clic en **Búsqueda e investigación** \> **eDiscovery** para mostrar la lista de casos en su organización. 
+1. En el centro de seguridad & cumplimiento, **** \> haga clic en eDiscovery **eDiscovery** para mostrar la lista de casos de su organización. 
     
 2. Haga clic en **abrir** junto al caso en el que desea preparar los resultados de búsqueda para el análisis en la exhibición avanzada de documentos electrónicos. 
     
@@ -432,11 +432,11 @@ Al preparar los resultados de búsqueda para la exhibición avanzada de document
     
 ## <a name="step-8-go-to-the-case-in-advanced-ediscovery"></a>Paso 8: ir al caso en la exhibición avanzada de documentos electrónicos
 
-Después de crear un caso en el centro &amp; de seguridad y cumplimiento, puede ir al mismo caso en la exhibición avanzada de documentos electrónicos.
+Después de crear un caso en el centro de seguridad & cumplimiento, puede ir al mismo caso en la exhibición avanzada de documentos electrónicos.
   
 Para ir a un caso en eDiscovery avanzado:
   
-1. En el Centro de seguridad y cumplimiento, haga clic en **Búsqueda e investigación** \> **eDiscovery** para mostrar la lista de casos en su organización. 
+1. En el centro de seguridad & cumplimiento, **** \> haga clic en eDiscovery **eDiscovery** para mostrar la lista de casos de su organización. 
     
 2. Haga clic en **abrir** junto al caso al que desea ir en la exhibición avanzada de documentos electrónicos. 
     
@@ -448,14 +448,14 @@ Para ir a un caso en eDiscovery avanzado:
     
     ![Barra de progreso de eDiscorvery avanzada](media/4a84273d-765b-44b8-9006-c20e810ea393.png)
   
-    Estos contenedores representan los resultados de búsqueda que ha preparado para el análisis en la exhibición avanzada de documentos electrónicos en el paso 7. Tenga en cuenta que el nombre del contenedor tiene el mismo nombre que la búsqueda de contenido en el caso &amp; del centro de seguridad y cumplimiento. Los contenedores de la lista son los que ha preparado. Si un usuario diferente ha preparado los resultados de búsqueda para la exhibición avanzada de documentos electrónicos, los contenedores correspondientes no se incluirán en la lista.
+    Estos contenedores representan los resultados de búsqueda que ha preparado para el análisis en la exhibición avanzada de documentos electrónicos en el paso 7. Tenga en cuenta que el nombre del contenedor tiene el mismo nombre que la búsqueda de contenido en el caso del centro de seguridad & cumplimiento. Los contenedores de la lista son los que ha preparado. Si un usuario diferente ha preparado los resultados de búsqueda para la exhibición avanzada de documentos electrónicos, los contenedores correspondientes no se incluirán en la lista.
     
 4. Para cargar los datos de los resultados de búsqueda de un contenedor en el caso de la exhibición avanzada de documentos electrónicos, seleccione un contenedor y haga clic en **proceso**.
     
     Para obtener información sobre cómo procesar contenedores, consulte [ejecutar el módulo de proceso y cargar datos en la exhibición avanzada de documentos electrónicos de Office 365](run-the-process-module-and-load-data-in-advanced-ediscovery.md).
     
 > [!TIP]
-> Haga clic en **cambiar a eDiscovery** para volver al mismo caso en el centro &amp; de seguridad y cumplimiento. 
+> Haga clic en **cambiar a eDiscovery** para volver al mismo caso en el centro de seguridad & cumplimiento. 
   
 ## <a name="optional-step-9-close-a-case"></a>Opcional Paso 9: cerrar un caso
 
@@ -465,13 +465,13 @@ Cuando se completa el caso legal o la investigación admitidos por un caso de ex
     
 - Si se cierra un caso, sólo se desactivan las suspensiones asociadas a ese caso. Si otras suspensiones se colocan en una ubicación de contenido (como una retención por juicio. una directiva de conservación o una retención de un caso de exhibición de documentos electrónicos diferente, se conservarán las suspensiones.
     
-- El caso todavía aparece en la página exhibición de documentos electrónicos del &amp; centro de seguridad y cumplimiento. Se conservan los detalles, las suspensiones, las búsquedas y los miembros de un caso cerrado.
+- El caso sigue apareciendo en la página exhibición de documentos electrónicos del centro de seguridad & cumplimiento. Se conservan los detalles, las suspensiones, las búsquedas y los miembros de un caso cerrado.
     
 - Puede editar un caso después de cerrarlo. Por ejemplo, puede Agregar o quitar miembros, crear búsquedas, exportar resultados de búsqueda y preparar los resultados de búsqueda para el análisis en la exhibición avanzada de documentos electrónicos. La principal diferencia entre los casos activos y cerrados es que las suspensiones se desactivan cuando se cierra un caso.
     
 Para cerrar un caso:
   
-1. En el Centro de seguridad y cumplimiento, haga clic en **Búsqueda e investigación** \> **eDiscovery** para mostrar la lista de casos en su organización. 
+1. En el centro de seguridad & cumplimiento, **** \> haga clic en eDiscovery **eDiscovery** para mostrar la lista de casos de su organización. 
     
 2. Haga clic en el nombre del caso que desea cerrar.
     
@@ -495,7 +495,7 @@ Para cerrar un caso:
 
 Cuando vuelva a abrir un caso, las suspensiones que estuvieran en su ubicación cuando se cerró el caso no se restituyerán automáticamente. Después de volver a abrir el caso, tendrá que ir a la página de **retención** y activar las suspensiones anteriores. Para activar una retención, selecciónela y haga clic en **Activar** en el panel de detalles. 
   
-1. En el Centro de seguridad y cumplimiento, haga clic en **Búsqueda e investigación** \> **eDiscovery** para mostrar la lista de casos en su organización. 
+1. En el centro de seguridad & cumplimiento, **** \> haga clic en eDiscovery **eDiscovery** para mostrar la lista de casos de su organización. 
     
 2. Haga clic en el nombre del caso que desea volver a abrir.
     
@@ -526,15 +526,15 @@ Cuando vuelva a abrir un caso, las suspensiones que estuvieran en su ubicación 
   |Número máximo de buzones en una sola suspensión de casos  <br/> |1,000  <br/> |
   |Número máximo de sitios de SharePoint y OneDrive para la empresa en una sola suspensión de mayúsculas y minúsculas  <br/> |100  <br/> |
    
-- **¿Qué ocurre con los casos creados en la página Administración de casos en eDiscovery avanzado?** Puede obtener acceso a una lista de casos de eDiscovery avanzados más antiguos si hace clic en el vínculo **** que se encuentra en la &amp; parte inferior de la página eDiscovery en el centro de seguridad y cumplimiento. Sin embargo, para realizar cualquier trabajo en un caso anterior, debe ponerse en contacto con el soporte técnico de Office 365 y solicitar que se mueva el caso a un nuevo &amp; caso de exhibición de documentos electrónicos en el centro de seguridad y cumplimiento. 
+- **¿Qué ocurre con los casos creados en la página Administración de casos en eDiscovery avanzado?** Puede obtener acceso a una lista de casos de eDiscovery avanzados más antiguos si hace clic en el vínculo que se encuentra en la parte inferior de la página **eDiscovery** en el centro de seguridad & cumplimiento. Sin embargo, para realizar cualquier trabajo en un caso anterior, debe ponerse en contacto con el soporte técnico de Office 365 y solicitar que se mueva el caso a un nuevo caso de exhibición de documentos electrónicos en el centro de cumplimiento de seguridad &. 
     
 - **¿Por qué debería crear un administrador de exhibición de documentos electrónicos? ** Tal como se explicó anteriormente, un administrador de exhibición de documentos electrónicos es miembro del Grupo de roles de administrador de exhibición de documentos electrónicos, que puede ver y tener acceso a todos los casos de exhibición de documentos electrónicos de la organización. Esta capacidad para tener acceso a todos los casos de exhibición de documentos electrónicos tiene dos fines importantes:
     
-  - Si un usuario es el único miembro de un caso de exhibición de documentos electrónicos y abandona la organización, ningún usuario (ni siquiera los miembros del grupo de roles Administración de la organización ni otro miembro del grupo de roles Administrador de exhibición de documentos electrónicos) puede tener acceso a ese caso de exhibición de documentos electrónicos, ya que no es miembro del caso. En esta situación, no habría ninguna manera de tener acceso a los datos del caso. Pero como un administrador de eDiscovery puede tener acceso a todos los casos de eDiscovery de la organización, pueden ver el &amp; caso en el centro de seguridad y cumplimiento y agregarse a sí mismos o a otro administrador de eDiscovery como miembro del caso.
+  - Si un usuario es el único miembro de un caso de exhibición de documentos electrónicos y abandona la organización, ningún usuario (ni siquiera los miembros del grupo de roles Administración de la organización ni otro miembro del grupo de roles Administrador de exhibición de documentos electrónicos) puede tener acceso a ese caso de exhibición de documentos electrónicos, ya que no es miembro del caso. En esta situación, no habría ninguna manera de tener acceso a los datos del caso. Pero dado que un administrador de eDiscovery puede tener acceso a todos los casos de eDiscovery de la organización, puede ver el caso en el centro de seguridad & cumplimiento y agregarse a sí mismo o a otro administrador de eDiscovery como miembro del caso.
     
   - Dado que un administrador de eDiscovery puede ver y tener acceso a todos los casos de eDiscovery, puede auditar y supervisar todos los casos y las búsquedas de contenido asociadas. Esto puede ayudar a evitar el uso indebido de las búsquedas de contenido o los casos de exhibición de documentos electrónicos. Además, dado que los administradores de exhibición de documentos electrónicos pueden tener acceso a información potencialmente confidencial en los resultados de una búsqueda de contenido, hay que limitar el número de administradores de exhibición de documentos electrónicos.
     
-    Por último, como se explicó anteriormente, los administradores de eDiscovery &amp; en el centro de seguridad y cumplimiento se agregan automáticamente como administradores en eDiscovery avanzado. Eso significa que una persona que es un administrador de eDiscovery puede realizar tareas administrativas en eDiscovery avanzado, como configurar usuarios, crear casos y agregar datos a los casos.
+    Por último, como se explicó anteriormente, los administradores de eDiscovery en el centro de seguridad & cumplimiento se agregan automáticamente como administradores en eDiscovery avanzado. Eso significa que una persona que es un administrador de eDiscovery puede realizar tareas administrativas en eDiscovery avanzado, como configurar usuarios, crear casos y agregar datos a los casos.
     
 - **¿Cuáles son los requisitos de licencia para poner las ubicaciones de contenido en retención?** En general, las organizaciones requieren una suscripción a Office 365 E3 o una versión superior para poner las ubicaciones de contenido en suspensión. Para poner buzones en retención, se necesita una licencia de Exchange Online (plan 2) para el buzón que desea poner en retención.
     
@@ -574,7 +574,7 @@ Cuando vuelva a abrir un caso, las suspensiones que estuvieran en su ubicación 
   
   - Cuando se realiza una búsqueda en el buzón de un usuario, no se buscará ningún grupo de Office 365 o equipo de Microsoft del que el usuario sea miembro. De forma similar, cuando se coloca un grupo de Office 365 o una retención en Microsoft Team, solo el buzón de grupo y el sitio de grupo se colocan en retención; los buzones y los sitios de OneDrive para la empresa de los miembros del grupo no se colocan en suspensión a menos que los agregue explícitamente a la suspensión. Por lo tanto, si necesita tener un grupo de Office 365 o un equipo de Microsoft en espera por motivos legales, considere la posibilidad de agregar los buzones y los sitios de OneDrive para la empresa a los integrantes de grupo y de equipo en la misma retención.
     
-  - Para obtener una lista de los miembros de un grupo de Office 365 o de Microsoft Team, puede ver las propiedades de la página de **grupos principales \> ** en el centro de administración de Office 365. Como alternativa, puede ejecutar el siguiente comando en Exchange Online PowerShell: 
+  - Para obtener una lista de los miembros de un grupo de Office 365 o de Microsoft Team, puede ver las propiedades de la página de **grupos principales \> ** en el centro de administración de Microsoft 365. Como alternativa, puede ejecutar el siguiente comando en Exchange Online PowerShell: 
     
       ```
       Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress 

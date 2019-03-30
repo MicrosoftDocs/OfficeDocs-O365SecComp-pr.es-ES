@@ -1,5 +1,5 @@
 ---
-title: Usar análisis rápido en eDiscovery avanzado de Office 365
+title: Usar el análisis rápido en Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -13,14 +13,14 @@ search.appverid:
 - MET150
 ms.assetid: 50580099-3dc0-44a1-a9b6-5ca6d396316b
 description: Obtenga información sobre cómo ejecutar el modo de análisis rápido de Office 365 Advanced eDiscovery
-ms.openlocfilehash: e306aa03962c646ce4083b7385e527b523e86fd6
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: d8457587c9c1a1237ddc076ce803a46382a04ed8
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30217630"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000963"
 ---
-# <a name="use-express-analysis-in-office-365-advanced-ediscovery"></a>Usar análisis rápido en eDiscovery avanzado de Office 365
+# <a name="use-express-analysis-in-office-365-advanced-ediscovery"></a>Usar el análisis rápido en Office 365 Advanced eDiscovery
 
 > [!NOTE]
 > Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -101,18 +101,18 @@ Opcionalmente, puede establecer la **Configuración avanzada** para cambiar los 
     
   - Para exportar los resultados de los nuevos archivos que agregó a un caso existente, continúe con el lote actual. Para crear una sesión en el lote, seleccione el mismo número de lote y haga clic en **crear sesión de exportación** puede usar esta opción para exportar los mismos parámetros que el lote anterior, de forma incremental. 
     
-  - Para exportar a un nuevo lote, haga ****![clic en agregar](media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) icono Agregar y escriba un nuevo nombre en **nombre de lote** (o acepte el valor predeterminado) y una descripción en **Descripción del lote**. Haga clic en **Aceptar**.
+  - Para exportar a un nuevo lote, haga **** ![clic en agregar](media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) icono Agregar y escriba un nuevo nombre en **nombre de lote** (o acepte el valor predeterminado) y una descripción en **Descripción del lote**. Haga clic en **Aceptar**.
     
   - Para editar un nombre de lote o una descripción, seleccione el nombre en **lote de exportación**, haga](media/3d613660-7602-4df2-bdb9-14e9ca2f9cf2.png)clic en **Editar** ![icono Editar y, a continuación, modifique los campos.
     
     > [!NOTE]
     > Después de ejecutar sesiones para un lote de exportación, no se pueden eliminar. Además, solo algunos parámetros pueden editarse una vez ejecutada la primera sesión. 
   
-  - Para crear un lote de exportación duplicado ****![, elija duplicar lote de exportación cree un](media/3f6d5f59-e842-4946-a493-473528af0119.jpg) icono de exportación de lote duplicado y escriba un nombre y una descripción para el lote duplicado en el panel. 
+  - Para crear un lote de exportación duplicado **** ![, elija duplicar lote de exportación cree un](media/3f6d5f59-e842-4946-a493-473528af0119.jpg) icono de exportación de lote duplicado y escriba un nombre y una descripción para el lote duplicado en el panel. 
     
-  - Para eliminar un lote de exportación, elija **eliminar**![eliminar lote de exportación](media/92a9f8e0-d469-48da-addb-69365e7ffb6f.jpg).
+  - Para eliminar un lote de exportación, elija **eliminar** ![eliminar lote de exportación](media/92a9f8e0-d469-48da-addb-69365e7ffb6f.jpg).
     
-  - Para ver el historial de un lote, seleccione icono![](media/a80cc320-d96c-4d91-8884-75fe2cb147e2.jpg)de historial de vista de **historial por lotes**.
+  - Para ver el historial de un lote, seleccione icono ![](media/a80cc320-d96c-4d91-8884-75fe2cb147e2.jpg)de historial de vista de **historial por lotes** .
     
 2. En definir p? **opulation:** seleccione **incluir sólo los archivos** que superen la puntuación de recorte de relevancia o refinar el **lote de exportación** si desea ajustar la configuración del lote de exportación. Si selecciona **incluir sólo los archivos**de la puntuación de recorte de la relevancia, el **problema** está habilitado y, si la puntuación de relevancia del archivo es superior a la puntuación de corte para el problema seleccionado, el archivo se exportará. El archivo se exportará a menos que el filtro " **para revisión** " lo excluya. Si selecciona refinar **lote de exportación**, los botones de opción desduplicación y **filtrar por "para revisión"** están habilitados. **** Si elige desduplicación, los archivos duplicados se filtrarán de acuerdo con la Directiva definida: [nivel de caso (predeterminado): de cada conjunto de archivos duplicados en todo el caso, se desduplicarán todos los archivos menos uno. **** Nivel de custodio: de cada conjunto de archivos duplicados del mismo custodio, se desduplicarán todos menos un archivo. Hay disponible un registro de todos los archivos duplicados en la salida de la exportación. Si elige **filtrar por ' para revisión '** , seleccione **modificar en metadatos** para escribir la configuración del campo **' para revisión '**. Seleccione **incluir archivos de entrada**para incluir los archivos de origen en el contenido del paquete. Puede desactivar esta opción para acelerar el proceso de exportación. Tenga en cuenta que los archivos nativos se exportarán en cualquier caso.
     
@@ -126,7 +126,7 @@ Opcionalmente, puede establecer la **Configuración avanzada** para cambiar los 
     
 Elija **Aceptar**para guardar la configuración avanzada, **restaurar** los valores predeterminados para usar los valores predeterminados o **Cancelar** para cancelar la configuración avanzada. 
   
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 <a name="BK_AdvancedSettings"> </a>
 
 [eDiscovery avanzado de Office 365](office-365-advanced-ediscovery.md)

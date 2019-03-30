@@ -1,5 +1,5 @@
 ---
-title: Exportar resultados de búsqueda de contenido desde el centro de cumplimiento de & de seguridad de Office 365
+title: Exportar resultados de la búsqueda de contenido
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -17,17 +17,17 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
-description: 'ExPorte los resultados de búsqueda de una búsqueda de contenido en el centro de seguridad & cumplimiento de Office 365 a un equipo local. Los resultados de correo electrónico se exportan como archivos PST. El contenido de SharePoint y los sitios de OneDrive para la empresa se exportan como documentos de Office nativos. '
-ms.openlocfilehash: 1a94a7ed948de06bfc8f3f9a2dc9c8a5d26ca653
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+description: 'ExPorte los resultados de búsqueda de una búsqueda de contenido en el centro de seguridad & cumplimiento a un equipo local. Los resultados de correo electrónico se exportan como archivos PST. El contenido de SharePoint y los sitios de OneDrive para la empresa se exportan como documentos de Office nativos. '
+ms.openlocfilehash: f20ad17ba4573485199d72a260598e77bd224ece
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296573"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000473"
 ---
-# <a name="export-content-search-results-from-the-office-365-security--compliance-center"></a>Exportar resultados de búsqueda de contenido desde el centro de cumplimiento de & de seguridad de Office 365
+# <a name="export-content-search-results"></a>Exportar resultados de la búsqueda de contenido
 
-Después de que una búsqueda de contenido se haya ejecutado correctamente, puede exportar los resultados de la búsqueda a un equipo local. Cuando se exportan los resultados del correo electrónico, se descargan en el equipo como archivos PST. Al exportar contenido de sitios de SharePoint y OneDrive para la empresa, se exportan copias de documentos nativos de Office. Hay otros documentos e informes que se incluyen con los resultados de la búsqueda exportados.
+Después de que una búsqueda de contenido se haya ejecutado correctamente, puede exportar los resultados de la búsqueda a un equipo local. Cuando exporta los resultados de correo electrónico, estos se descargan en su equipo como archivos PST. Al exportar contenido de sitios de SharePoint y OneDrive para la empresa, se exportan copias de documentos nativos de Office. Existen documentos e informes adicionales que se incluyen con los resultados de búsqueda exportados.
   
 Además, los mensajes de correo electrónico cifrados con RMS que se incluyan en los resultados de una búsqueda de contenido se descifrarán cuando los exporte (como mensajes individuales). Esta capacidad de descifrado está habilitada de forma predeterminada para los miembros del grupo de roles eDiscovery Manager. Esto se debe a que el rol de administración desCifrar RMS se asigna a este grupo de roles. Consulte la sección [More Information](#more-information) para obtener información detallada sobre el descifrado de RMS al exportar resultados de búsqueda. 
   
@@ -35,11 +35,11 @@ Exportar los resultados de una búsqueda de contenido implica preparar los resul
   
 ## <a name="before-you-begin"></a>Antes de empezar
 
-- Para exportar los resultados de la búsqueda, debe tener asignado el rol de administración exportar en el centro &amp; de seguridad y cumplimiento de Office 365. Este rol se asigna al grupo de roles de eDiscovery Manager integrado. No está asignada de forma predeterminada al grupo de funciones de administración de la organización. Para obtener más información, consulte [asignar permisos de exhibición de documentos electrónicos &amp; en el centro de seguridad y cumplimiento de Office 365](assign-ediscovery-permissions.md).
+- Para exportar los resultados de la búsqueda, debe tener asignado el rol de administración exportar en el centro de seguridad & cumplimiento. Este rol se asigna al grupo de roles de administrador de exhibición de documentos electrónicos integrado. No se asigna de forma predeterminada al grupo de roles de administración de la organización. Para obtener más información, consulte [asignar permisos de exhibición](assign-ediscovery-permissions.md)de documentos electrónicos.
     
 - El equipo que use para exportar los resultados de búsqueda debe cumplir los siguientes requisitos del sistema:
     
-  - Versiones de 32 o 64 bits de Windows 7 y versiones posteriores
+  - Versiones de 32 o 64 bits de Windows 7 y versiones posteriores
     
   - Microsoft .NET Framework 4,7
     
@@ -47,7 +47,7 @@ Exportar los resultados de una búsqueda de contenido implica preparar los resul
     
      - Microsoft Edge
     
-        O BIEN
+        O
     
      - Microsoft Internet Explorer 10 y versiones posteriores
     
@@ -78,13 +78,13 @@ Exportar los resultados de una búsqueda de contenido implica preparar los resul
     
 ## <a name="step-1-prepare-search-results-for-export"></a>Paso 1: Preparar los resultados de búsqueda para la exportación
 
-El primer paso consiste en preparar los resultados de la búsqueda para la exportación. Al preparar los resultados, se cargan en una ubicación de almacenamiento de Azure en la nube de Microsoft. Tenga en cuenta que el contenido de los buzones de correo y los sitios se carga a una tasa máxima de 2 GB por hora.
+El primer paso es preparar los resultados de búsqueda para la exportación. Al preparar los resultados, se cargan en una ubicación de almacenamiento de Azure en la nube de Microsoft. Tenga en cuenta que el contenido de los buzones de correo y los sitios se carga a una tasa máxima de 2 GB por hora.
   
-1. Vaya a [https://protection.office.com](https://protection.office.com).
+1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com).
     
 2. Inicie sesión en Office 365 con su cuenta profesional o educativa.
     
-3. En el panel izquierdo del Centro de seguridad y cumplimiento, haga clic en **Búsqueda e investigación** \> **Búsqueda de contenido**.
+3. En el panel izquierdo del centro de seguridad & cumplimiento, haga clic en buscar **contenido**de **búsqueda** \> .
     
 4. En la página **búsqueda de contenido** , seleccione una búsqueda. 
     
@@ -126,7 +126,7 @@ El primer paso consiste en preparar los resultados de la búsqueda para la expor
     
 11. Haga clic en **Iniciar la exportación**.
     
-    Los resultados de la búsqueda se preparan para la descarga, lo que significa que se cargan en la ubicación de almacenamiento de Azure en la nube de Microsoft. Cuando los resultados de la búsqueda están listos para la descarga, el vínculo **Descargar resultados** exportados se muestra en **exportar resultados a un equipo** en el panel de detalles. 
+    Los resultados de la búsqueda se preparan para la descarga, lo que significa que se cargan en la ubicación de almacenamiento de Azure en la nube de Microsoft. Cuando los resultados de búsqueda están listos para la descarga, el vínculo **Descargar resultados exportados** se muestra en **Exportar resultados a un equipo** en el panel de detalles. 
   
 ## <a name="step-2-download-the-search-results"></a>Paso 2: Descargar los resultados de búsqueda
 
@@ -166,7 +166,7 @@ Como se ha explicado anteriormente, puede aumentar la velocidad de descarga conf
   
 1. Haga clic en **Iniciar** para descargar los resultados de la búsqueda en el equipo. 
     
-    La **herramienta de exportación de exhibición** de documentos electrónicos muestra información de estado sobre el proceso de exportación, incluida una estimación del número (y tamaño) de los elementos restantes que se van a descargar. Una vez finalizado el proceso de exportación, puede tener acceso a los archivos en la ubicación en la que se descargaron. 
+    La **Herramienta de exportación de exhibición de documentos electrónicos** muestra información del estado acerca del proceso de exportación, incluida una estimación del número (y tamaño) de los elementos restantes que se van a descargar. Una vez finalizado el proceso de exportación, puede tener acceso a los archivos en la ubicación en la que se descargaron. 
     
 
   
@@ -190,7 +190,7 @@ Aquí encontrará más información sobre cómo exportar los resultados de la b�
   
  ### <a name="export-limits"></a>Límites de exportación
   
-- La exportación de resultados de búsqueda &amp; desde el centro de seguridad y cumplimiento tiene los siguientes límites:
+- La exportación de resultados de búsqueda desde el centro de seguridad & cumplimiento tiene los siguientes límites:
     
   - Puede exportar un máximo de 2 TB de datos a partir de una sola búsqueda de contenido. Si los resultados de la búsqueda tienen más de 2 TB, considere la posibilidad de usar intervalos de fechas u otros tipos de filtros para reducir el tamaño total de los resultados de la búsqueda.
     
@@ -217,7 +217,7 @@ Aquí encontrará más información sobre cómo exportar los resultados de la b�
     
   - **Manifiesto** Un archivo de manifiesto (en formato XML) que contiene información sobre cada elemento incluido en los resultados de la búsqueda. 
     
-  - **Resultados** Un documento de Excel que contiene información acerca de cada elemento que se descarga como resultado de la búsqueda. Para el correo electrónico, el registro de resultados contiene información sobre cada mensaje, incluidos: 
+  - **Resultados** Un documento de Excel que contiene información acerca de cada elemento que se descarga como resultado de la búsqueda. Para el correo electrónico, un registro de resultados contiene información acerca de cada mensaje, incluidos: 
     
       - La ubicación del mensaje en el buzón de origen (incluido si el mensaje se encuentra en el buzón de archivo o en el principal).
         
@@ -254,7 +254,7 @@ Aquí encontrará más información sobre cómo exportar los resultados de la b�
   
 - Si está exportando elementos de buzón de una búsqueda de contenido que devuelve todos los elementos del buzón de correo en los resultados de la búsqueda (porque no se incluyen palabras clave en la consulta de búsqueda), los elementos indexados parcialmente no se copiarán en el archivo PST que contiene los elementos sin indexar. Esto se debe a que todos los elementos, incluidos los elementos parcialmente indizados, se incluyen automáticamente en los resultados de la búsqueda normales. Esto significa que los elementos parcialmente indizados se incluirán en un archivo PST (o en mensajes individuales) que contengan los otros elementos indizados.
     
-    Además, si exporta los elementos indizados y parcialmente indizados o si exporta sólo los elementos indizados de una búsqueda de contenido que devuelve todos los elementos, se descargará el mismo número de elementos. Esto ocurre aunque los resultados de búsqueda estimados para la búsqueda de contenido (que se muestran en las estadísticas &amp; de búsqueda en el centro de seguridad y cumplimiento) sigan incluyendo una estimación independiente del número de elementos parcialmente indizados. Por ejemplo, supongamos que la estimación de una búsqueda que incluye todos los elementos (sin palabras clave en la consulta de búsqueda) muestra que se han encontrado 1.000 elementos y que también se han encontrado 200 elementos indizados parcialmente. En este caso, los elementos 1.000 incluyen los elementos parcialmente indizados porque la búsqueda devuelve todos los elementos. Es decir, hay 1.000 total de elementos devueltos por la búsqueda y no 1.200 elementos (como cabría esperar). Si exporta los resultados de esta búsqueda y elige exportar los elementos indizados y parcialmente indizados (o solo los elementos indizados), se descargarán 1.000 elementos. Una vez más, esto se debe a que los elementos parcialmente indizados se incluyen con los resultados normales (indizados) cuando se usa una consulta de búsqueda en blanco para devolver todos los elementos. En este mismo ejemplo, si elige exportar sólo los elementos parcialmente indizados, solo se descargarán los elementos sin indexar 200.
+    Además, si exporta los elementos indizados y parcialmente indizados o si exporta sólo los elementos indizados de una búsqueda de contenido que devuelve todos los elementos, se descargará el mismo número de elementos. Esto ocurre aunque los resultados de búsqueda estimados para la búsqueda de contenido (que se muestran en las estadísticas de búsqueda en el centro de seguridad & cumplimiento) sigan incluyendo una estimación independiente del número de elementos parcialmente indizados. Por ejemplo, supongamos que la estimación de una búsqueda que incluye todos los elementos (sin palabras clave en la consulta de búsqueda) muestra que se han encontrado 1.000 elementos y que también se han encontrado 200 elementos indizados parcialmente. En este caso, los elementos 1.000 incluyen los elementos parcialmente indizados porque la búsqueda devuelve todos los elementos. Es decir, hay 1.000 total de elementos devueltos por la búsqueda y no 1.200 elementos (como cabría esperar). Si exporta los resultados de esta búsqueda y elige exportar los elementos indizados y parcialmente indizados (o solo los elementos indizados), se descargarán 1.000 elementos. Una vez más, esto se debe a que los elementos parcialmente indizados se incluyen con los resultados normales (indizados) cuando se usa una consulta de búsqueda en blanco para devolver todos los elementos. En este mismo ejemplo, si elige exportar sólo los elementos parcialmente indizados, solo se descargarán los elementos sin indexar 200.
     
     Tenga en cuenta también que en el ejemplo anterior (cuando exporte elementos indizados y indizados parcialmente o exporte sólo elementos indexados), el informe de **Resumen de exportación** incluido con los resultados de la búsqueda exportados mostraría 1.000 elementos estimados y 1.000 descargados elementos por los mismos motivos que se han descrito anteriormente. 
     
@@ -325,8 +325,8 @@ Aquí encontrará más información sobre cómo exportar los resultados de la b�
     
  ### <a name="miscellaneous"></a>Varios
   
-- Todos los resultados de la búsqueda y los informes de exportación se incluyen en una carpeta que tiene el mismo nombre que la búsqueda de contenido. Los mensajes de correo electrónico que se exportaron se encuentran en una carpeta llamada **Exchange**. Los documentos se encuentran en una carpeta llamada **SharePoint**. 
+- Todos los resultados de búsqueda y los informes de exportación se incluyen en una carpeta que tiene el mismo nombre que en la búsqueda de contenido. Los mensajes de correo electrónico que se exportaron se ubican en una carpeta denominada **Exchange**. Los documentos se ubican en una carpeta denominada **SharePoint**. 
     
-- Los metadatos del sistema de archivos para los documentos de los sitios de SharePoint y OneDrive para la empresa se mantienen cuando los documentos se exportan a su equipo local. Esto significa que las propiedades del documento, como las fechas de creación y de última modificación, no cambian cuando se exportan los documentos.
+- Los metadatos del sistema de archivos para los documentos de los sitios de SharePoint y OneDrive para la empresa se mantienen cuando los documentos se exportan a su equipo local. Eso significa que las propiedades del documento, como la fecha de creación y la fecha en la que se modificó por última vez, no cambian cuando se exportan los documentos.
 
 - Si los resultados de la búsqueda incluyen un elemento de lista de SharePoint que coincide con la consulta de búsqueda, todas las filas de la lista se exportarán además del elemento que coincida con la consulta de búsqueda. Esto incluye todos los datos adjuntos de la lista. El motivo es proporcionar un contexto para los elementos de lista que se devuelven en los resultados de la búsqueda. Además, tenga en cuenta que los elementos de lista y datos adjuntos adicionales pueden hacer que el recuento de elementos exportados sea diferente de la estimación original de los resultados de búsqueda.

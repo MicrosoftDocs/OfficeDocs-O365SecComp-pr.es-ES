@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Use límites de cumplimiento para crear límites lógicos dentro de una organización de Office 365 que controlen las ubicaciones de contenido de usuario que puede buscar un administrador de exhibición de documentos electrónicos. Los límites de cumplimiento usan el filtrado de permisos de búsqueda (también denominados filtros de seguridad de cumplimiento) para controlar los buzones de correo, los sitios de SharePoint y las cuentas de OneDrive pueden ser buscados por usuarios específicos.
-ms.openlocfilehash: ea3c289c63d2ee777e88166a94bd9ed92abcbb26
-ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
+ms.openlocfilehash: dc1cf770ab015ece5212d5257f1807596e0e36c7
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30862442"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001093"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations-in-office-365"></a>Configurar los límites de cumplimiento para investigaciones de eDiscovery en Office 365.
 
@@ -34,7 +34,7 @@ En este ejemplo, contoso LTD es una organización de Office 365 que consta de do
   
 - La funcionalidad de filtrado de permisos de búsqueda en la búsqueda de contenido controla las ubicaciones de contenido que los administradores y los investigadores de eDiscovery pueden buscar. Esto significa que los administradores de exhibición de documentos electrónicos y los investigadores de la cuarta agencia del café solo pueden buscar ubicaciones de contenido en la sede secundaria de Fourth Coffee. La misma restricción se aplica a la subsidiaria de Coho Winery.
     
-    Los grupos de roles controlan quién puede ver los casos de eDiscovery en &amp; el centro de seguridad y cumplimiento de Office 365. Esto significa que los administradores y los investigadores de eDiscovery solo pueden ver los casos de eDiscovery en su agencia.
+    Los grupos de roles controlan quién puede ver los casos de eDiscovery en el centro de seguridad & cumplimiento. Esto significa que los administradores y los investigadores de eDiscovery solo pueden ver los casos de eDiscovery en su agencia.
     
 - Los grupos de roles también controlan quién puede asignar miembros a un caso de exhibición de documentos electrónicos. Esto significa que los administradores de eDiscovery y los investigadores solo pueden asignar miembros a los casos a los que son miembros.
     
@@ -84,9 +84,9 @@ Una vez realizado el cambio de ingeniería y se sincronice el atributo con OneDr
   
 ## <a name="step-3-create-a-role-group-for-each-agency"></a>Paso 3: crear un grupo de roles para cada agencia
 
-El siguiente paso es crear los grupos de roles en el centro de seguridad &amp; y cumplimiento de Office 365 que se alinearán con sus agencias. Le recomendamos que cree un nuevo grupo de roles copiando el grupo integrado de eDiscovery, que agregue los miembros apropiados y quitando roles que puedan no ser aplicables a sus necesidades. Para obtener más información acerca de los roles relacionados con la exhibición de documentos electrónicos, consulte [asignar &amp; permisos de exhibición de documentos electrónicos en el centro de seguridad y cumplimiento de Office 365](assign-ediscovery-permissions.md).
+El siguiente paso es crear los grupos de roles en el centro de seguridad & cumplimiento que se alinearán con las agencias. Le recomendamos que cree un nuevo grupo de roles copiando el grupo integrado de eDiscovery, que agregue los miembros apropiados y quitando roles que puedan no ser aplicables a sus necesidades. Para obtener más información acerca de los roles relacionados con la exhibición de documentos electrónicos, consulte [asignar permisos de exhibición de documentos electrónicos en el centro de cumplimiento de Office 365 Security &](assign-ediscovery-permissions.md).
   
-Para crear los grupos de roles, vaya a la página de **permisos** en &amp; el centro de seguridad y cumplimiento y cree un grupo de roles para cada equipo en cada agencia que vaya a usar límites de cumplimiento y casos de exhibición de documentos electrónicos para administrar las investigaciones. 
+Para crear los grupos de roles, vaya a la página de **permisos** en el centro de seguridad & cumplimiento y cree un grupo de roles para cada equipo en cada agencia que vaya a usar límites de cumplimiento y casos de exhibición de documentos electrónicos para administrar las investigaciones. 
   
 Mediante el escenario de límites de cumplimiento de Contoso, es necesario crear cuatro grupos de roles y agregar los miembros apropiados a cada uno de ellos.
   
@@ -144,16 +144,16 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
 
 ## <a name="step-5-create-an-ediscovery-case-for-an-intra-agency-investigations"></a>Paso 5: crear un caso de exhibición de documentos electrónicos para investigaciones dentro de una agencia
 
-El último paso consiste en crear un nuevo caso de exhibición de documentos &amp; electrónicos en el centro de seguridad y cumplimiento y, a continuación, agregar el grupo de roles, que se creó en el paso 3, como miembro del caso. Esto da como resultado dos características importantes del uso de límites de cumplimiento:
+El último paso consiste en crear un nuevo caso de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento y, a continuación, agregar el grupo de roles, que ha creado en el paso 3, como miembro del caso. Esto da como resultado dos características importantes del uso de límites de cumplimiento:
   
-- Solo los miembros del grupo de funciones agregados al caso podrán ver y tener acceso al caso en el centro de &amp; seguridad y cumplimiento. Por ejemplo, si el grupo de funciones de Fourth Coffee es el único miembro de un caso, los miembros del grupo de roles de administradores de exhibición de documentos electrónicos de Fourth Coffee (o los miembros de cualquier otro grupo de roles) no podrán ver ni acceder al caso.
+- Solo los miembros del grupo de roles que se agreguen al caso podrán ver y acceder al caso en el centro de seguridad & cumplimiento. Por ejemplo, si el grupo de funciones de Fourth Coffee es el único miembro de un caso, los miembros del grupo de roles de administradores de exhibición de documentos electrónicos de Fourth Coffee (o los miembros de cualquier otro grupo de roles) no podrán ver ni acceder al caso.
     
 - Cuando un miembro del grupo de funciones asignado a un caso ejecuta una búsqueda asociada con el caso, solo podrá buscar en las ubicaciones de contenido de su agencia (definido por el filtro de permisos de búsqueda que creó en el paso 4).
 
 
 Para crear un nuevo caso y asignar miembros:
     
-1. Vaya a la página **exhibición** de documentos electrónicos &amp; en el centro de seguridad y cumplimiento y cree un nuevo caso. 
+1. Vaya a la página **exhibición** de documentos electrónicos en el centro de seguridad & cumplimiento y cree un nuevo caso. 
     
 2. En la lista de casos de eDiscovery, haga clic en el nombre del caso que acaba de crear.
     
@@ -188,7 +188,7 @@ Los filtros de permisos de búsqueda también permiten controlar dónde se enrut
     |**Valor del parámetro**|**Ubicación del centro de recursos**|
     |:-----|:-----|
     |NAM  <br/> |Norteamérica (los centros de datos reales están en los Estados Unidos)  <br/> |
-    |EUR  <br/> |Europeos  <br/> |
+    |EUR  <br/> |Europa  <br/> |
     |APC  <br/> |Asia Pacífico  <br/> |
     |CAN <br/> |Canada
     
@@ -199,12 +199,12 @@ Los filtros de permisos de búsqueda también permiten controlar dónde se enrut
     |**Valor del parámetro**|**Ubicaciones de enrutamiento de centro de recursos para la exportación**|
     |:-----|:-----|
     |NAM  <br/> |Infórmenos  <br/> |
-    |EUR  <br/> |Europeos  <br/> |
+    |EUR  <br/> |Europa  <br/> |
     |APC  <br/> |Asia Pacífico  <br/> |
     |CAN  <br/> |Infórmenos  <br/> |
     |AUS  <br/> |Asia Pacífico  <br/> |
     |KOR  <br/> |Centro de datos predeterminado de la organización  <br/> |
-    |GBR  <br/> |Europeos  <br/> |
+    |GBR  <br/> |Europa  <br/> |
     |JPN  <br/> |Asia Pacífico  <br/> |
     |IND  <br/> |Asia Pacífico  <br/> |
     |LAM  <br/> |Infórmenos  <br/> |
@@ -242,7 +242,7 @@ Tenga en cuenta lo siguiente cuando busque y Exporte contenido en entornos multi
 
  **Quién puede crear y administrar filtros de permisos de búsqueda (con los cmdlets New-ComplianceSecurityFilter y set-ComplianceSecurityFilter)?**
   
-Para crear, ver y modificar los filtros de permisos de búsqueda, debe ser miembro del grupo de roles de administración de la organización &amp; en el centro de seguridad y cumplimiento.
+Para crear, ver y modificar los filtros de permisos de búsqueda, debe ser miembro del grupo de roles de administración de la organización en el centro de seguridad & cumplimiento.
   
  **Si se asigna un administrador de exhibición de documentos electrónicos a más de un grupo de roles que abarque varias agencias, ¿cómo buscan contenido en una agencia u otra?**
   

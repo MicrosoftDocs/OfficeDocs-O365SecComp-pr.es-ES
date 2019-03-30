@@ -1,9 +1,8 @@
 ---
-title: Importar contenido que no sea de Office 365 para el análisis de eDiscovery avanzado
+title: Importar contenido no de Office 365 para el análisis avanzado de eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 5/25/2018
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,14 +12,14 @@ search.appverid:
 - MET150
 ms.assetid: 0ee60763-a30b-495b-8543-971c3384a801
 description: Pasos para importar contenido que no está almacenado en O365 en un BLOB de Azure para que se pueda analizar con AeD
-ms.openlocfilehash: 1019fa2e2429aeff8bd20bc3dfb266ab5fb25eaf
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 7b7694754b26951aa02930fd101631ba9060bc17
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30217070"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001173"
 ---
-# <a name="import-non-office-365-content-for-advanced-ediscovery-analysis"></a>Importar contenido que no sea de Office 365 para el análisis de eDiscovery avanzado
+# <a name="import-non-office-365-content-for-advanced-ediscovery-analysis"></a>Importar contenido no de Office 365 para el análisis avanzado de eDiscovery
 
 No todos los documentos que puede que necesite analizar con Office 365 Advanced eDiscovery residirán en Office 365. Con la característica de importación de contenido no de Office 365 en eDiscovery avanzado, puede cargar documentos que no vivan en Office 365 (excepto los archivos PST) en un caso vinculado al BLOB de almacenamiento de Azure y analizarlo con la exhibición avanzada de documentos electrónicos. Este procedimiento muestra cómo llevar los documentos que no son de Office 365 a eDiscovery avanzado para su análisis.
   
@@ -62,7 +61,7 @@ El uso de la característica cargar no de Office 365 tal y como se describe en e
     
 7. Construya la línea de comandos de AzCopy para cargar los archivos de la siguiente manera:
     
-    AzCopy/Source: " *ruta de acceso completa a la carpeta raíz en el equipo local* "/dest: " *dirección URL del contenedor hasta el* ?"/DestSAS: " *resto de la URL del contenedor del? al final* "/S. 
+    AzCopy/Source: " *ruta de acceso completa a la carpeta raíz en el equipo local* "/dest: " *dirección URL del contenedor hasta el? o sin incluir el?*  "/DestSAS:" *resto de la dirección URL del contenedor del? al final* "/S. 
     
     Por ejemplo, con estos valores: 
     

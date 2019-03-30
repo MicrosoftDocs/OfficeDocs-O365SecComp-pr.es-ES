@@ -12,16 +12,16 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
 description: Use la herramienta búsqueda de contenido eDiscovery para buscar elementos que se importaron a los buzones en Office 365 desde un origen de datos de terceros. Puede crear una consulta para buscar todos los elementos importados o crear una consulta para buscar determinados tipos de datos de terceros. En este artículo se enumeran los valores que se pueden usar en una consulta de palabras clave para buscar en los tipos de datos de terceros que se pueden importar a Office 365.
-ms.openlocfilehash: f1ab3cfc8dd866aa0d70014b22a301de2a65f3c5
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 361ead435d397464452c5b58ecf251a7322ced05
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296043"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999713"
 ---
 # <a name="use-content-search-to-search-third-party-data-that-was-imported-to-office-365"></a>Usar la búsqueda de contenido para buscar datos de terceros que se importaron a Office 365
 
-Puede usar la [herramienta de búsqueda de contenido eDiscovery](content-search.md) en el centro de &amp; seguridad y cumplimiento de Office 365 para buscar elementos que se importaron a los buzones en Office 365 desde un origen de datos de terceros. Puede crear una consulta para buscar en todos los elementos de datos de terceros importados o puede crear una consulta para buscar en elementos de datos específicos de terceros. Además, también puede crear una directiva de conservación basada en consultas o una conservación de exhibición de documentos electrónicos basada en consultas para conservar los datos de terceros en Office 365. 
+Puede usar la [herramienta de búsqueda de contenido eDiscovery](content-search.md) en el centro de seguridad & cumplimiento para buscar elementos que se importaron a los buzones en Office 365 desde un origen de datos de terceros. Puede crear una consulta para buscar en todos los elementos de datos de terceros importados o puede crear una consulta para buscar en elementos de datos específicos de terceros. Además, también puede crear una directiva de conservación basada en consultas o una conservación de exhibición de documentos electrónicos basada en consultas para conservar los datos de terceros en Office 365. 
   
 Para obtener más información acerca de la importación de datos de terceros y una lista de los tipos de datos de terceros que se pueden importar a Office 365, vea [archivar datos de terceros en office 365](archiving-third-party-data.md). 
   
@@ -55,11 +55,11 @@ En la siguiente tabla se enumeran los tipos de datos de terceros que se pueden b
   
 |**Tipo de datos de terceros**|**Valor de `itemclass:` la propiedad**|
 |:-----|:-----|
-|AIM  <br/> | `ipm.externaldata.AIM*` <br/> |
+|APUNTA  <br/> | `ipm.externaldata.AIM*` <br/> |
 |American Idol  <br/> | `ipm.externaldata.AmericanIdol*` <br/> |
 |AOL con cliente Pivot  <br/> | `ipm.externaldata.Pivot.IM` <br/> |
 |Apple Juice  <br/> | `ipm.externaldata.AppleJuice*` <br/> |
-|Ares  <br/> | `ipm.externaldata.Ares*` <br/> |
+|Áreas  <br/> | `ipm.externaldata.Ares*` <br/> |
 |Axs Encrypted  <br/> | `ipm.externaldata.AxsEncrypted*` <br/> |
 |Axs Exchange  <br/> | `ipm.externaldata.AxsExchange*` <br/> |
 |Axs Local Archive  <br/> | `ipm.externaldata.AxsLocalArchive*` <br/> |
@@ -74,8 +74,7 @@ En la siguiente tabla se enumeran los tipos de datos de terceros que se pueden b
 |PIN BlackBerry  <br/> | `ipm.externaldata.BlackBerryPIN*` <br/> |
 |SMS de BlackBerry  <br/> | `ipm.externaldata.BlackBerrySMS*` <br/> |
 |Bloomberg  <br/> | `ipm.externaldata.Bloomberg*` <br/> |
-|Bloomberg Mail
-  <br/> | `ipm.externaldata.BloombergMail*` <br/> |
+|Bloomberg Mail  <br/> | `ipm.externaldata.BloombergMail*` <br/> |
 |Bloomberg Messaging  <br/> | `ipm.externaldata.BloombergMessaging*` <br/> |
 |Cuadro  <br/> | `ipm.externaldata.Box*` <br/> |
 |Servidor de &amp; presencia de mensajería instantánea de Cisco  <br/> | `ipm.externaldata.Jabber.IM` <br/> |
@@ -85,11 +84,9 @@ En la siguiente tabla se enumeran los tipos de datos de terceros que se pueden b
 |Facebook  <br/> | `ipm.externaldata.Facebook*` <br/> |
 |FastTrack  <br/> | `ipm.externaldata.FastTrack*` <br/> |
 |FXConnect  <br/> | `ipm.externaldata.FXConnect.chat` <br/> |
-|Flickr
-  <br/> | `ipm.externaldata.Flickr*` <br/> |
+|Flickr  <br/> | `ipm.externaldata.Flickr*` <br/> |
 |Gnutella  <br/> | `ipm.externaldata.Gnutella*` <br/> |
-|Google+
-  <br/> | `ipm.externaldata.GooglePlus*` <br/> |
+|Google +  <br/> | `ipm.externaldata.GooglePlus*` <br/> |
 |Google Talk  <br/> | `ipm.externaldata.GoogleTalk*` <br/> |
 |GoToMyPC  <br/> | `ipm.externaldata.GoToMyPC*` <br/> |
 |HipChat  <br/> | `ipm.externaldata.HipChat*` <br/> |
@@ -98,16 +95,12 @@ En la siguiente tabla se enumeran los tipos de datos de terceros que se pueden b
 |Conexiones IBM  <br/> | `ipm.externaldata.Connections*` <br/> |
 |IBM SameTime  <br/> | `ipm.externaldata.Sametime*` <br/> |
 |Chat de ICE  <br/> | `ipm.externaldata.ICEChat.Chat` <br/> |
-|Indii Messenger
-  <br/> | `ipm.externaldata.Indii*` <br/> |
-|Instagram
-  <br/> | `ipm.externaldata.Instagram*` <br/> |
-|Instant Bloomberg
-  <br/> | `ipm.externaldata.InstantBloomberg*` <br/> |
+|Indii Messenger  <br/> | `ipm.externaldata.Indii*` <br/> |
+|Instagram  <br/> | `ipm.externaldata.Instagram*` <br/> |
+|Instant Bloomberg  <br/> | `ipm.externaldata.InstantBloomberg*` <br/> |
 |InvestEdge  <br/> | `ipm.externaldata.InvestEdge*` <br/> |
 |IRC  <br/> | `ipm.externaldata.IRC*` <br/> |
-|Jive
-  <br/> | `ipm.externaldata.Jive*` <br/> |
+|Jive  <br/> | `ipm.externaldata.Jive*` <br/> |
 |JiveApiRetention  <br/> | `ipm.externaldata.JiveApiRetention*` <br/> |
 |JXTA  <br/> | `ipm.externaldata.JXTA*` <br/> |
 |LinkedIn  <br/> | `ipm.externaldata.LinkedIn*` <br/> |
@@ -115,9 +108,9 @@ En la siguiente tabla se enumeran los tipos de datos de terceros que se pueden b
 |COMUNICACIONES UNIFICAdas de Microsoft  <br/> | `ipm.externaldata.MicrosoftUC*` <br/> |
 |Idea  <br/> | `ipm.externaldata.MindAlign*` <br/> |
 |Mobile Guard  <br/> | `ipm.externaldata.MobileGuard*` <br/> |
-|MSN  <br/> | `ipm.externaldata.MSN*` <br/> |
+|Fotos  <br/> | `ipm.externaldata.MSN*` <br/> |
 |MySpace  <br/> | `ipm.externaldata.MySpace*` <br/> |
-|NEONetwork  <br/> | `ipm.externaldata.NEONetwork*` <br/> |
+|Subred  <br/> | `ipm.externaldata.NEONetwork*` <br/> |
 |OpenNap  <br/> | `ipm.externaldata.OpenNap*` <br/> |
 |Pinterest  <br/> | `ipm.externaldata.Pinterest*` <br/> |
 |Pivot  <br/> | `ipm.externaldata.Pivot*` <br/> |
@@ -127,23 +120,18 @@ En la siguiente tabla se enumeran los tipos de datos de terceros que se pueden b
 |Skype Empresarial  <br/> | `ipm.externaldata.Skype*` <br/> |
 |Slack Enterprise Grid  <br/> | `ipm.externaldata.Slack.IM` <br/> |
 |SoftEther  <br/> | `ipm.externaldata.SoftEther*` <br/> |
-|
-Squawker
-  <br/> | `ipm.externaldata.Squawker*` <br/> |
-|Symphony
-  <br/> | `ipm.externaldata.Symphony*` <br/> |
+|Squawker  <br/> | `ipm.externaldata.Squawker*` <br/> |
+|Symphony  <br/> | `ipm.externaldata.Symphony*` <br/> |
 |Thomson Reuters  <br/> | `ipm.externaldata.Reuters*` <br/> |
-| Thomson Reuters Eikon Messenger
-  <br/> | `ipm.externaldata.ReutersEikon*` <br/> |
-|Tor  <br/> | `ipm.externaldata.Tor*` <br/> |
+| Thomson Reuters Eikon Messenger  <br/> | `ipm.externaldata.ReutersEikon*` <br/> |
+|Términos  <br/> | `ipm.externaldata.Tor*` <br/> |
 |TTT  <br/> | `ipm.externaldata.TTT*` <br/> |
 |Twitter  <br/> | `ipm.externaldata.Twitter*` <br/> |
-|UBS Chat
-  <br/> | `ipm.externaldata.UBS*` <br/> |
+|UBS Chat  <br/> | `ipm.externaldata.UBS*` <br/> |
 |Vimeo  <br/> | `ipm.externaldata.Vimeo*` <br/> |
 |WinMX  <br/> | `ipm.externaldata.WinMX*` <br/> |
 |Winny  <br/> | `ipm.externaldata.Winny*` <br/> |
 |Yahoo!  <br/> | `ipm.externaldata.Yahoo!*` <br/> |
 |Yammer  <br/> | `ipm.externaldata.Yammer*` <br/> |
 |YellowJacket  <br/> | `ipm.externaldata.YellowJacket*` <br/> |
-|Integrado  <br/> | `ipm.externaldata.YouTube*` <br/> |
+|YouTube  <br/> | `ipm.externaldata.YouTube*` <br/> |

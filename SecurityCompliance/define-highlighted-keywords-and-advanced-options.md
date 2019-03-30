@@ -1,9 +1,8 @@
 ---
-title: Definir las palabras clave resaltadas y las opciones avanzadas en eDiscovery avanzado de Office 365
+title: Definir palabras clave resaltadas y opciones avanzadas en la exhibición avanzada de documentos electrónicos de Office 365
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,14 +12,14 @@ search.appverid:
 - MET150
 ms.assetid: 03cc4387-2c7d-4058-8a44-0deefb58f011
 description: 'Obtenga información sobre cómo agregar palabras clave definidas por el usuario a relevancia para ayudarle a identificar los archivos relevantes mientras se etiquetan en Office 365 Advanced eDiscovery y para especificar los parámetros de costo.  '
-ms.openlocfilehash: e380f63691d30216a082a51aac406329a9d0159f
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: aec9efac91cc3fb48068fca9b6b7313f829f4fe2
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220660"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999343"
 ---
-# <a name="define-highlighted-keywords-and-advanced-options-in-office-365-advanced-ediscovery"></a>Definir las palabras clave resaltadas y las opciones avanzadas en eDiscovery avanzado de Office 365
+# <a name="define-highlighted-keywords-and-advanced-options-in-office-365-advanced-ediscovery"></a>Definir palabras clave resaltadas y opciones avanzadas en la exhibición avanzada de documentos electrónicos de Office 365
 
 > [!NOTE]
 > Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -68,7 +67,7 @@ Esta configuración afecta a los gráficos Track y decida en importancia.
     
     ![Parámetros de costo de configuración de relevancia](media/bab7b5b7-6297-4e7c-b0a6-ba5aa8b21787.png)
   
-3. Haga clic en **Guardar**. Se guarda la configuración seleccionada.
+3. Haga clic en **Guardar **. Se guarda la configuración seleccionada.
     
 ## <a name="see-also"></a>Vea también
 

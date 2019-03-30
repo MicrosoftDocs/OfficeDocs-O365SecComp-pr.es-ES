@@ -1,5 +1,5 @@
 ---
-title: DesHabilitar los informes al exportar los resultados de la búsqueda de contenido &amp; en el centro de seguridad y cumplimiento de Office 365
+title: Deshabilitar informes al exportar los resultados de búsqueda de contenido
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -10,17 +10,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: c9b0ff0c-282b-4a44-b43f-cfc5b96557f9
-description: Edite el registro de Windows en el equipo local para deshabilitar los informes al exportar los resultados de una búsqueda de contenido desde &amp; el centro de confianza de seguridad de Office 365. La desHabilitación de estos informes puede acelerar el tiempo de descarga y ahorrar espacio en disco.
-ms.openlocfilehash: f08f5e7143022591d38bda787301e71ae80fb3d3
-ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
+description: Edite el registro de Windows en el equipo local para deshabilitar los informes al exportar los resultados de una búsqueda de contenido desde el centro de seguridad & cumplimiento en Office 365. La desHabilitación de estos informes puede acelerar el tiempo de descarga y ahorrar espacio en disco.
+ms.openlocfilehash: 19d97bbc95be5db6540e6822721752ca62adebfc
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30936720"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30998770"
 ---
-# <a name="disable-reports-when-you-export-content-search-results-in-the-office-365-security-amp-compliance-center"></a>DesHabilitar los informes al exportar los resultados de la búsqueda de contenido &amp; en el centro de seguridad y cumplimiento de Office 365
+# <a name="disable-reports-when-you-export-content-search-results"></a>Deshabilitar informes al exportar los resultados de búsqueda de contenido
 
-Cuando usa la herramienta de exportación de exhibición de documentos electrónicos de Office 365 para exportar los resultados de una &amp; búsqueda de contenido en el centro de seguridad y cumplimiento, la herramienta crea y exporta automáticamente dos informes que contienen información adicional acerca del contenido exportado. Estos informes son el archivo Results. csv y el archivo manifest. XML (consulte la sección [preguntas más frecuentes sobre cómo deshabilitar los informes de exportación](#frequently-asked-questions-about-disabling-export-reports) de este tema para obtener descripciones detalladas de estos informes). Como estos archivos pueden ser muy grandes, puede acelerar el tiempo de descarga y ahorrar espacio en disco al impedir que se exporten estos archivos. Para ello, puede cambiar el registro de Windows en el equipo que usa para exportar los resultados de la búsqueda. Si desea incluir los informes más adelante, puede editar la configuración del registro. 
+Cuando usa la herramienta de exportación de exhibición de documentos electrónicos de Office 365 para exportar los resultados de una búsqueda de contenido en el centro de seguridad & cumplimiento, la herramienta crea y exporta automáticamente dos informes que contienen información adicional acerca del contenido exportado. Estos informes son el archivo Results. csv y el archivo manifest. XML (consulte la sección [preguntas más frecuentes sobre cómo deshabilitar los informes de exportación](#frequently-asked-questions-about-disabling-export-reports) de este tema para obtener descripciones detalladas de estos informes). Como estos archivos pueden ser muy grandes, puede acelerar el tiempo de descarga y ahorrar espacio en disco al impedir que se exporten estos archivos. Para ello, puede cambiar el registro de Windows en el equipo que usa para exportar los resultados de la búsqueda. Si desea incluir los informes más adelante, puede editar la configuración del registro. 
   
 ## <a name="create-registry-settings-to-disable-the-export-reports"></a>Crear una configuración del registro para deshabilitar los informes de exportación
 

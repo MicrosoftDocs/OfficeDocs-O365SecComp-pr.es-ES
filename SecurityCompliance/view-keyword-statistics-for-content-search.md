@@ -13,13 +13,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 9701a024-c52e-43f0-b545-9a53478aec04
-description: Use la característica estadísticas de búsqueda para mostrar y comparar estadísticas de varias búsquedas de contenido en el &amp; centro de seguridad y cumplimiento de Office 365. También puede configurar la lista de palabras clave al crear o editar una consulta de búsqueda para obtener estadísticas mejoradas que muestren el número de elementos que coinciden con cada palabra clave o frase de palabras clave.
-ms.openlocfilehash: 614f832ec737850986af334a390ffc0c4e88122d
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+description: Use la característica estadísticas de búsqueda para mostrar y comparar estadísticas de varias búsquedas de contenido en el centro de seguridad & cumplimiento. También puede configurar la lista de palabras clave al crear o editar una consulta de búsqueda para obtener estadísticas mejoradas que muestren el número de elementos que coinciden con cada palabra clave o frase de palabras clave.
+ms.openlocfilehash: 5e4cca18f6a50f2647265f02dab7ab3f20f513fc
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295733"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001133"
 ---
 # <a name="view-keyword-statistics-for-content-search-results"></a>Ver las estadísticas de palabras clave para resultados de búsqueda de contenido
 
@@ -33,7 +33,7 @@ También puede descargar las estadísticas de búsqueda y las estadísticas de p
 
 Para mostrar las estadísticas de las búsquedas de contenido:
   
-1. en el centro de seguridad &amp; y cumplimiento de Office 365, vaya a búsqueda de \> **contenido**de **investigación de búsqueda &amp; ** .
+1. En el centro de seguridad & cumplimiento, vaya a búsqueda de **contenido**de **búsqueda** \> .
     
 2. En la lista de búsquedas, seleccione una o más búsquedas y, a continuación ****![, haga clic en el](media/9bf56d43-25bf-4f53-a4be-f4d55102310c.png)botón estadísticas de búsqueda de estadísticas de búsqueda.
     
@@ -47,29 +47,29 @@ Para mostrar las estadísticas de las búsquedas de contenido:
     
     ![Resumen de las estadísticas de las búsquedas seleccionadas](media/abb663eb-b3d6-4f4c-a99f-55d20b0848af.png)
   
-    a. el nombre de la búsqueda de contenido. Como se mencionó anteriormente, puede mostrar y comparar las estadísticas de varias búsquedas.
+    a.  El nombre de la búsqueda de contenido. Como se mencionó anteriormente, puede mostrar y comparar las estadísticas de varias búsquedas.
     
-    b. el tipo de ubicación de contenido en la que se ha buscado. Cada fila muestra las estadísticas de los buzones de correo, los sitios y las carpetas públicas de la búsqueda especificada.
+    b. Tipo de ubicación de contenido en la que se ha buscado. Cada fila muestra las estadísticas de los buzones de correo, los sitios y las carpetas públicas de la búsqueda especificada.
     
-    c. el número de ubicaciones de contenido que contienen elementos que coinciden con la consulta de búsqueda. Para los buzones, esta estadística también incluye el número de buzones de archivo que contienen elementos que coinciden con la consulta de búsqueda.
+    c. El número de ubicaciones de contenido que contienen elementos que coinciden con la consulta de búsqueda. Para los buzones, esta estadística también incluye el número de buzones de archivo que contienen elementos que coinciden con la consulta de búsqueda.
     
-    d. el número total de elementos de todas las ubicaciones de contenido especificadas que coinciden con la consulta de búsqueda. Algunos ejemplos de tipos de elementos son los mensajes de correo electrónico, los elementos de calendario y los documentos. Si un elemento contiene varias instancias de una palabra clave que se está buscando, solo se cuenta una vez en el número total de elementos. Por ejemplo, si está buscando palabras "acciones" o "fraude" y un mensaje de correo electrónico contiene tres instancias de la palabra "cotización", solo se considera una vez en la columna **elementos** . 
+    d. El número total de elementos de todas las ubicaciones de contenido especificadas que coinciden con la consulta de búsqueda. Algunos ejemplos de tipos de elementos son los mensajes de correo electrónico, los elementos de calendario y los documentos. Si un elemento contiene varias instancias de una palabra clave que se está buscando, solo se cuenta una vez en el número total de elementos. Por ejemplo, si está buscando palabras "acciones" o "fraude" y un mensaje de correo electrónico contiene tres instancias de la palabra "cotización", solo se considera una vez en la columna **elementos** . 
     
-    e. el tamaño total de todos los elementos que se encontraron en la ubicación de contenido especificada y que coinciden con la consulta de búsqueda. 
+    e. Tamaño total de todos los elementos que se encontraron en la ubicación de contenido especificada y que coinciden con la consulta de búsqueda. 
     
-    **Peticiones**
+    **Queries**
     
     En esta página se muestran estadísticas sobre la consulta de búsqueda.
     
     ![Estadísticas de consultas de búsqueda para las búsquedas seleccionadas](media/dc817526-dfb9-43d3-a14c-4c58077eb7bb.png)
   
-    a. el nombre de la búsqueda de contenido para la que la fila contiene estadísticas de consulta.
+    a. El nombre de la búsqueda de contenido para la que la fila contiene estadísticas de consulta.
     
-    b. el tipo de ubicación de contenido al que se aplican las estadísticas de la consulta.
+    b. Tipo de ubicación de contenido a la que se aplican las estadísticas de la consulta.
     
-    c. esta columna indica con qué parte de la consulta de búsqueda se pueden aplicar las estadísticas. **Principal** indica la consulta de búsqueda completa. Si usa una lista de palabras clave al crear o editar una consulta de búsqueda, las estadísticas de cada componente de la consulta se incluyen en esta tabla. Vea la sección [obtener estadísticas de palabras clave para búsquedas de contenido](#get-keyword-statistics-for-content-searches) de este artículo para obtener más información. 
+    c. Esta columna indica con qué parte de la consulta de búsqueda se pueden aplicar las estadísticas. **Principal** indica la consulta de búsqueda completa. Si usa una lista de palabras clave al crear o editar una consulta de búsqueda, las estadísticas de cada componente de la consulta se incluyen en esta tabla. Vea la sección [obtener estadísticas de palabras clave para búsquedas de contenido](#get-keyword-statistics-for-content-searches) de este artículo para obtener más información. 
     
-    d. esta columna contiene la consulta de búsqueda real que ejecuta la herramienta de búsqueda de contenido. Tenga en cuenta que la herramienta agrega automáticamente algunos componentes adicionales a la consulta que cree. 
+    d. Esta columna contiene la consulta de búsqueda real que ejecuta la herramienta de búsqueda de contenido. Tenga en cuenta que la herramienta agrega automáticamente algunos componentes adicionales a la consulta que cree. 
 
     - Cuando busca todo el contenido de los buzones (sin especificar ninguna palabra clave), la consulta de palabra clave real es `size>=0` para que se devuelvan todos los elementos. 
     
@@ -80,11 +80,11 @@ Para mostrar las estadísticas de las búsquedas de contenido:
           **No IsOneNotePage: 1** : excluye todos los archivos de OneNote porque serían duplicados de cualquier documento que coincida con la consulta de búsqueda. 
 
     
-    e. el número de ubicaciones de contenido (especificadas por la columna * * Location Type * *) que contienen elementos que coinciden con la consulta de búsqueda que aparece en la columna **consulta** . 
+    e. El número de ubicaciones de contenido (especificadas por la columna * * Location Type * *) que contienen elementos que coinciden con la consulta de búsqueda enumerada en la columna **consulta** . 
     
-    f. el número de elementos (de la ubicación de contenido especificada) que coinciden con la consulta de búsqueda enumerada en la columna **consulta** . Como se explicó anteriormente, si un elemento contiene varias instancias de una palabra clave que se está buscando, solo se considera una vez en la columna this. 
+    f. El número de elementos (desde la ubicación de contenido especificada) que coinciden con la consulta de búsqueda enumerada en la columna **consulta** . Como se explicó anteriormente, si un elemento contiene varias instancias de una palabra clave que se está buscando, solo se considera una vez en la columna this. 
     
-    g. tamaño total de todos los elementos encontrados (en la ubicación de contenido especificada) que coinciden con la consulta de búsqueda en la columna de **consulta** . 
+    REG. Tamaño total de todos los elementos encontrados (en la ubicación de contenido especificada) que coinciden con la consulta de búsqueda en la columna de **consulta** . 
     
     **Principales ubicaciones**
     
@@ -92,23 +92,20 @@ Para mostrar las estadísticas de las búsquedas de contenido:
     
     ![Estadísticas sobre el número de elementos encontrados en las ubicaciones de contenido en las que se realizó la búsqueda](media/35a820b0-85d9-45d1-9a0c-c74bec803e67.png)
   
-    a. el nombre de la ubicación del contenido.
+    a. Nombre de la ubicación del contenido.
     
-    b. el tipo de ubicación de contenido al que se aplican las estadísticas de ubicación.
+    b. El tipo de ubicación de contenido a la que se aplican las estadísticas de ubicación.
     
-    c. hay columnas para cada búsqueda para la que está mostrando las estadísticas. Esta columna muestra el número (y el tamaño total) de los elementos que coinciden con la consulta de búsqueda en cada ubicación de contenido. Tenga en cuenta que cuando muestra las estadísticas de varias búsquedas, el "NA" de esta columna indica que la ubicación del contenido no se incluyó en esa búsqueda. 
+    c. Hay columnas para cada búsqueda para la que está mostrando las estadísticas. Esta columna muestra el número (y el tamaño total) de los elementos que coinciden con la consulta de búsqueda en cada ubicación de contenido. Tenga en cuenta que cuando muestra las estadísticas de varias búsquedas, el "NA" de esta columna indica que la ubicación del contenido no se incluyó en esa búsqueda. 
 
 ## <a name="get-keyword-statistics-for-content-searches"></a>Obtener estadísticas de palabras clave para búsquedas de contenido
 
 Como se explicó anteriormente, la página **consultas** muestra la consulta de búsqueda y el número (y tamaño) de los elementos que coinciden con la consulta. Si usa una lista de palabras clave al crear o editar una consulta de búsqueda, puede obtener estadísticas mejoradas que muestren cuántos elementos coinciden con cada palabra clave o frase de palabras clave. Esto puede ayudarle a identificar rápidamente qué partes de la consulta son las más eficaces (y menos) efectivas. Por ejemplo, si una palabra clave devuelve un gran número de elementos, puede optar por refinar la consulta de palabra clave para restringir los resultados de la búsqueda. Puede configurar una lista de palabras clave cuando crea o edita una búsqueda de contenido. 
 
 
-
-
-  
 Para crear una lista de palabras clave y ver las estadísticas de palabras clave para una búsqueda de contenido:
   
-1. en el centro de seguridad &amp; y cumplimiento de Office 365, vaya a búsqueda de \> **contenido**de **investigación de búsqueda &amp; ** .
+1. En el centro de seguridad & cumplimiento, vaya a búsqueda de **contenido**de **búsqueda** \> .
     
 2. En la lista de búsquedas de contenido, haga clic en y en una búsqueda y, a](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)continuación, haga clic en **Editar** ![icono Editar.
     
@@ -116,7 +113,7 @@ Para crear una lista de palabras clave y ver las estadísticas de palabras clave
     
     ![Haga clic en la casilla Mostrar lista de palabras clave y escriba una palabra clave en cada fila.](media/73ef46dd-3d5c-415d-b5e7-c3559caaafe2.png)
   
-    a. Active la casilla de verificación **Mostrar lista de palabras clave** . 
+    a. Haga clic en la casilla **Mostrar lista de palabras clave** . 
     
     b. Escriba una palabra clave o una fase de palabra clave en una fila de la tabla Keywords. Por ejemplo, escriba **presupuesto** en la primera fila y, a continuación, escriba **seguridad** en la segunda fila. 
     

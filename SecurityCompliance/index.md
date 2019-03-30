@@ -61,7 +61,7 @@ Si su organización necesita proteger sus datos o cumplir con los estándares le
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Más allá de 90 días</h3>
+                        <h3>Más de 90 días</h3>
                         <p>Estas son medidas de seguridad importantes que se basan en el trabajo anterior:<br>
                         - <a href="office-365-secure-score.md" target="_blank">Revisar la puntuación segura</a><br>
                         - <a href="https://docs.microsoft.com/windows-server/identity/securing-privileged-access/securing-privileged-access">Implementación de acceso seguro con privilegios</a><br>
@@ -90,8 +90,8 @@ Si su organización necesita proteger sus datos o cumplir con los estándares le
                     <div class="cardText">
                         <h3>Mantener la seguridad</h3>
                         <p><a href="security-roadmap.md">Plan de seguridad de Office 365</a></p>
-                        <p><a href="office-365-secure-score.md" target="_blank">Puntuación segura de Microsoft</a></p>
-                        <p><a href="https://protection.office.com" target="_blank">Centro de seguridad y cumplimiento de Office 365</a></p>
+                        <p><a href="office-365-secure-score.md" target="_blank">Puntuación de seguridad de Microsoft</a></p>
+                        <p><a href="https://protection.office.com" target="_blank">Centro de seguridad & cumplimiento</a></p>
                     </div>
                 </div>
             </div>

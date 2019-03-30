@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: d104fb44-1c42-4541-89a6-1f67be22e4ad
 description: Obtenga información sobre cómo obtener acceso a Azure Active Directory, que se incluye en la suscripción de pago de Office 365 de su organización.
-ms.openlocfilehash: 0a8ed74a0e135ae216f33401016a7321ad1a1adf
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
-ms.translationtype: HT
+ms.openlocfilehash: c49f6ca6aba109346ceea4558fe050b0cc561600
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295603"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001083"
 ---
 # <a name="use-your-free-azure-active-directory-subscription-in-office-365"></a>Usar su suscripción gratuita de Azure Active Directory en Office 365
 
@@ -41,6 +41,6 @@ Use una sesión de exploración privada (no una sesión normal) para obtener acc
     
 ## <a name="more-information"></a>Más información
 
-- También puede obtener acceso al Centro de administración de **Azure Active Directory** desde el Centro de administración de Office 365. En el panel de navegación izquierdo del Centro de administración de Office 365, haga clic en **Centros de administración** \> **Azure Active Directory**.
+- También puede obtener acceso al centro de administración de **Azure Active** Directory desde el centro de administración de Microsoft 365. en el panel de navegación izquierdo del centro de administración de Microsoft 365, haga clic en **centros** \> de administración de **Azure Active directory**.
     
 - Para obtener información sobre cómo administrar usuarios y grupos, así como realizar otras tareas de administración de directorio, vea [Administrar el directorio de Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-administer).

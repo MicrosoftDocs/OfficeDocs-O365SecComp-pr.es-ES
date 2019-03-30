@@ -11,13 +11,13 @@ ms.collection: M365-security-compliance
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
-description: Use la búsqueda de contenido en el centro &amp; de seguridad y cumplimiento de Office 365 para realizar colecciones de destino. Una colección de destino significa que tiene la certeza de que los elementos que responden a un caso o los elementos con privilegios están ubicados en un buzón o carpeta de sitio específicos. Use el script de este artículo para obtener el identificador de carpeta o la ruta de acceso de las carpetas de sitio o de buzón de correo específicas que desea buscar.
-ms.openlocfilehash: 4cfdb95ef65f94bc46b79265f986ed8d9ada04da
-ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
+description: Use la búsqueda de contenido en el centro de seguridad & cumplimiento para realizar colecciones de destino. Una colección de destino significa que tiene la certeza de que los elementos que responden a un caso o los elementos con privilegios están ubicados en un buzón o carpeta de sitio específicos. Use el script de este artículo para obtener el identificador de carpeta o la ruta de acceso de las carpetas de sitio o de buzón de correo específicas que desea buscar.
+ms.openlocfilehash: 06d1d4d213f0efd5a05badd9a0edef568ae15d75
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30900000"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001243"
 ---
 # <a name="use-content-search-in-office-365-for-targeted-collections"></a>Usar la búsqueda de contenido en Office 365 para colecciones dirigidas
 
@@ -56,7 +56,7 @@ El script que se ejecuta en el primer paso devolverá una lista de carpetas de b
     
   - **OneDrive para la empresa** - https://contoso-my.sharepoint.com/personal/stacig_contoso_onmicrosoft_com 
     
-- **Sus credenciales de usuario** : el script usará sus credenciales para conectarse a Exchange Online y &amp; al centro de seguridad y cumplimiento con PowerShell remoto. Como se ha explicado anteriormente, tiene que asignar los permisos adecuados para que este script se ejecute correctamente.
+- **Sus credenciales de usuario** : el script usará sus credenciales para conectarse a Exchange Online y el centro de seguridad & cumplimiento con PowerShell remoto. Como se ha explicado anteriormente, tiene que asignar los permisos adecuados para que este script se ejecute correctamente.
     
 Para mostrar una lista de las carpetas del buzón o los nombres de documentlink (ruta de acceso) del sitio:
   
@@ -66,7 +66,7 @@ Para mostrar una lista de las carpetas del buzón o los nombres de documentlink 
   #########################################################################################################
   # This PowerShell script will prompt you for:                             #
   #    * Admin credentials for a user who can run the Get-MailboxFolderStatistics cmdlet in Exchange    #
-  #      Online and who is an eDiscovery Manager in the Security &amp; Compliance Center.           #
+  #      Online and who is an eDiscovery Manager in the Security & Compliance Center.           #
   # The script will then:                                           #
   #    * If an email address is supplied: list the folders for the target mailbox.          #
   #    * If a SharePoint or OneDrive for Business site is supplied: list the documentlinks (folder paths) #
@@ -83,7 +83,7 @@ Para mostrar una lista de las carpetas del buzón o los nombres de documentlink 
   #########################################################################################################
   # Collect the target email address or SharePoint Url
   $addressOrSite = Read-Host "Enter an email address or a URL for a SharePoint or OneDrive for Business site"
-  # Authenticate with Exchange Online and the Security &amp; Compliance Center (Exchange Online Protection - EOP)
+  # Authenticate with Exchange Online and the Security & Compliance Center (Exchange Online Protection - EOP)
   if (!$credentials)
   {
       $credentials = Get-Credential
@@ -125,7 +125,7 @@ Para mostrar una lista de las carpetas del buzón o los nombres de documentlink 
       $searchActionName = "SPFoldersSearch_Preview"
       # List the folders for the SharePoint or OneDrive for Business Site
       $siteUrl = $addressOrSite
-      # Authenticate with the Security &amp; Compliance Center
+      # Authenticate with the Security & Compliance Center
       if (!$SccSession)
       {
           $SccSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Credential $credentials -Authentication Basic -AllowRedirection

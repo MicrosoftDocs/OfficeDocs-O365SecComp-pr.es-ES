@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: Obtenga información sobre el archivado de expansión automática en Office 365, que proporciona almacenamiento ilimitado de archivos para buzones de Exchange Online.
-ms.openlocfilehash: 4ed1260cdf348d0bd29d88952ab69d234f044c26
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 38fab68ee8e5c2bdd38bc60b08929bd6f6025e1b
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296653"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000793"
 ---
 # <a name="overview-of-unlimited-archiving-in-office-365"></a>Información general sobre el archivado ilimitado en Office 365
 
@@ -29,7 +29,7 @@ En Office 365, los buzones de archivo proporcionan a los usuarios espacio de alm
 Para obtener instrucciones paso a paso para activar el archivado de expansión automática, vea [Habilitar el archivado ilimitado en Office 365](enable-unlimited-archiving.md).
   
 > [!NOTE]
-> El archivado de expansión automática también admite buzones compartidos. Para habilitar el archivo para un buzón compartido, se necesita una licencia de Exchange Online (plan 2) o una licencia de Exchange Online (plan 1) con una licencia de archivado de Exchange Online. 
+> El archivado de expansión automática también es compatible con los buzones compartidos. Para habilitar el archivo para un buzón compartido, se necesita una licencia de Exchange Online (plan 2) o una licencia de Exchange Online (plan 1) con una licencia de archivado de Exchange Online. 
   
 ## <a name="how-auto-expanding-archiving-works"></a>Funcionamiento del archivado de expansión automática
 
@@ -97,7 +97,7 @@ En esta sección se explica la funcionalidad entre el archivado de expansión au
   
 - **eDiscovery** : cuando usa una herramienta de exhibición de documentos electrónicos de Office 365, como búsqueda de contenido o exhibición de documentos electrónicos local, también se busca en las áreas de almacenamiento adicionales de un archivo de expansión automática.
     
-- **Retención** : cuando coloca un buzón de correo en retención mediante el uso de herramientas como retención por juicio en Exchange online o eDiscovery Case retenciones y directivas de retención en el centro de seguridad & cumplimiento de Office 365, el contenido ubicado en un archivo de expansión automática también es colocado en suspensión.
+- **Retención** : cuando coloca un buzón de correo en retención mediante el uso de herramientas como retención por juicio en Exchange online o eDiscovery Case retenciones y directivas de retención en el centro de seguridad y cumplimiento, el contenido ubicado en un archivo de expansión automática también se coloca en retención.
     
 - **Administración de registros de mensajes (MRM)** : Si usa directivas de eliminación de MRM en Exchange Online para eliminar permanentemente los elementos de buzón expirados, los elementos expirados que se encuentran en el archivo de expansión automática también se eliminarán.
     

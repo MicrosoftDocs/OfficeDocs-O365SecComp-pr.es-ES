@@ -3,23 +3,22 @@ title: Controles de acceso administrativo en Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 'Resumen: información general sobre los controles de acceso administrativo de Office 365 y la categorización de datos.'
-ms.openlocfilehash: b23fcdcb6c790b3860a24a555424beb3bb99e4f4
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 90dd00049e7e3a9b9548530c42b1c21534cfd7fd
+ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216030"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "31004137"
 ---
 # <a name="administrative-access-controls-in-office-365"></a>Controles de acceso administrativo en Office 365 
 

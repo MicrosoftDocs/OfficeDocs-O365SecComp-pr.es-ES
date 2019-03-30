@@ -14,17 +14,17 @@ search.appverid:
 - MST160
 - MET150
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
-description: Use la herramienta de búsqueda de contenido en el centro &amp; de seguridad y cumplimiento de Office 365 para buscar y exportar datos de chat de Microsoft Teams (denominados 1xN chats) para usuarios locales en una implementación híbrida de Exchange.
-ms.openlocfilehash: b277557285df6944217b493bf0c5a11759f9d76b
-ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
+description: Use la herramienta de búsqueda de contenido en el centro de seguridad & cumplimiento para buscar y exportar datos de chat de Microsoft Teams (denominados 1xN chats) para usuarios locales en una implementación híbrida de Exchange.
+ms.openlocfilehash: 0c68023fdd4e1c9e06596937247270861cdbd2b3
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30935235"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000013"
 ---
 # <a name="searching-cloud-based-mailboxes-for-on-premises-users-in-office-365"></a>Buscar buzones de correo basados en la nube para usuarios locales en Office 365
 
-Si su organización tiene una implementación híbrida de Exchange y ha habilitado Microsoft Teams, los usuarios pueden usar la aplicación de chat de Microsoft Teams para mensajería instantánea. En el caso del usuario basado en la nube, los datos de chat de Microsoft Teams (también denominados chats 1xN) se guardan en el buzón de correo basado en la nube principal. Cuando un usuario local usa la aplicación de chat de equipo, su buzón principal se encuentra local. Para superar esta limitación, Microsoft ha lanzado una nueva característica en la que se crea un área de almacenamiento basada en la nube (denominada buzón basado en la nube para usuarios locales) para almacenar los datos de chat de Teams para los usuarios locales. Esto le permite usar la herramienta de búsqueda de contenido en el centro &amp; de seguridad y cumplimiento de Office 365 para buscar y exportar los datos de chat de Microsoft Teams para los usuarios locales. 
+Si su organización tiene una implementación híbrida de Exchange y ha habilitado Microsoft Teams, los usuarios pueden usar la aplicación de chat de Microsoft Teams para mensajería instantánea. En el caso del usuario basado en la nube, los datos de chat de Microsoft Teams (también denominados chats 1xN) se guardan en el buzón de correo basado en la nube principal. Cuando un usuario local usa la aplicación de chat de equipo, su buzón principal se encuentra local. Para superar esta limitación, Microsoft ha lanzado una nueva característica en la que se crea un área de almacenamiento basada en la nube (denominada buzón basado en la nube para usuarios locales) para almacenar los datos de chat de Teams para los usuarios locales. Esto le permite usar la herramienta de búsqueda de contenido en el centro de seguridad & cumplimiento para buscar y exportar los datos de chat de Microsoft Teams para los usuarios locales. 
   
 Estos son los requisitos y la limitación para configurar y configurar y buscar buzones de correo basados en la nube para los usuarios locales:
   
@@ -38,7 +38,7 @@ Estos son los requisitos y la limitación para configurar y configurar y buscar 
   
 ## <a name="how-it-works"></a>Funcionamiento
 
-Si un usuario habilitado para Microsoft Teams tiene un buzón de correo local y su cuenta de usuario/identidad se ha sincronizado en la nube, Microsoft crea un buzón de correo basado en la nube para almacenar los datos de chat de 1xN Teams. Una vez que los datos de chat de Microsoft Teams se almacenan en el buzón basado en la nube, se indizan para la búsqueda. Esto le permite usar la búsqueda de contenido (y las búsquedas asociadas con casos de eDiscovery) para buscar, obtener una vista previa y exportar los datos de chat de Microsoft Teams a los usuarios locales. también puede usar ** \*** los cmdlets de ComplianceSearch en el PowerShell del &amp; centro de seguridad y cumplimiento de Office 365 para buscar los datos de chat de microsoft teams para los usuarios locales. 
+Si un usuario habilitado para Microsoft Teams tiene un buzón de correo local y su cuenta de usuario/identidad se ha sincronizado en la nube, Microsoft crea un buzón de correo basado en la nube para almacenar los datos de chat de 1xN Teams. Una vez que los datos de chat de Microsoft Teams se almacenan en el buzón basado en la nube, se indizan para la búsqueda. Esto le permite usar la búsqueda de contenido (y las búsquedas asociadas con casos de eDiscovery) para buscar, obtener una vista previa y exportar los datos de chat de Microsoft Teams a los usuarios locales. También puede usar ** \*** los cmdlets de ComplianceSearch en el PowerShell del centro de cumplimiento de & de seguridad para buscar los datos de chat de Microsoft Teams para los usuarios locales. 
   
 En el gráfico siguiente se muestra el flujo de trabajo de cómo los datos de chat de Teams para usuarios locales están disponibles para la búsqueda, la vista previa y la exportación.
   
@@ -48,7 +48,7 @@ Además de esta nueva capacidad, puede usar la búsqueda de contenido para busca
 
 ## <a name="filing-a-request-with-microsoft-support-to-enable-this-feature"></a>Presentación de una solicitud con el soporte técnico de Microsoft para habilitar esta característica
 
-Debe archivar una solicitud con soporte técnico de Microsoft para que su organización pueda usar la interfaz gráfica de usuario &amp; del centro de seguridad y cumplimiento para buscar los datos de chat de Microsoft Teams en los buzones de correo basados en la nube para los usuarios locales. Tenga en cuenta que esta característica está disponible en PowerShell &amp; del centro de seguridad y cumplimiento de Office 365. No tiene que enviar una solicitud de soporte técnico para usar PowerShell para buscar los datos de chat de Microsoft Teams para los usuarios locales. 
+Debe archivar una solicitud con soporte técnico de Microsoft para que su organización pueda usar la interfaz gráfica de usuario en el centro de seguridad & cumplimiento para buscar los datos de chat de Microsoft Teams en los buzones de correo basados en la nube para los usuarios locales. Tenga en cuenta que esta característica está disponible en el PowerShell del centro de cumplimiento de & de seguridad. No tiene que enviar una solicitud de soporte técnico para usar PowerShell para buscar los datos de chat de Microsoft Teams para los usuarios locales. 
   
 Incluya la siguiente información cuando envíe la solicitud a soporte técnico de Microsoft:
   
@@ -62,7 +62,7 @@ Una vez realizado el cambio de ingeniería, el soporte técnico de Microsoft le 
   
 ### <a name="what-happens-after-this-feature-is-enabled"></a>¿Qué ocurre después de habilitar esta característica?
 
-Una vez implementada esta característica en la organización de Office 365, se realizan los siguientes cambios en la búsqueda de contenido y en las búsquedas asociadas a un &amp; caso de exhibición de documentos electrónicos en el centro de seguridad y cumplimiento:
+Una vez implementada esta característica en la organización de Office 365, se realizan los siguientes cambios en la búsqueda de contenido y en las búsquedas asociadas a un caso de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento:
   
 - La casilla **agregar contenido de aplicación de Office a los usuarios locales** se agrega en las **ubicaciones** en la búsqueda de contenido. 
     
@@ -74,9 +74,9 @@ Una vez implementada esta característica en la organización de Office 365, se 
   
 ## <a name="searching-for-teams-chat-content-in-cloud-based-mailboxes-for-on-premises-users"></a>Búsqueda de contenido de chat de Microsoft Teams en buzones de correo basados en la nube para usuarios locales
 
-Una vez habilitada la característica, puede usar la búsqueda de contenido en el &amp; centro de seguridad y cumplimiento para buscar los datos de chat de Microsoft Teams en los buzones de correo basados en la nube para los usuarios locales. 
+Una vez habilitada la característica, puede usar la búsqueda de contenido en el centro de seguridad & cumplimiento para buscar los datos de chat de Microsoft Teams en los buzones de correo basados en la nube para los usuarios locales. 
   
-1. En el centro &amp; de seguridad y cumplimiento, vaya a búsqueda de \> **contenido** de **investigación de búsqueda &amp; ** .
+1. En el centro de seguridad & cumplimiento, vaya a búsqueda de **contenido** de **búsqueda** \> .
     
 2. En la página **Buscar** , haga ![clic en](media/8ee52980-254b-440b-99a2-18d068de62d3.gif) agregar icono **nueva búsqueda**.
     
@@ -100,13 +100,13 @@ Una vez habilitada la característica, puede usar la búsqueda de contenido en e
     
     - [Vista previa de los resultados de búsqueda](content-search.md#preview-search-results)
     
-    - [Exportar resultados de búsqueda de contenido desde el centro &amp; de seguridad y cumplimiento de Office 365](export-search-results.md)
+    - [Exportar resultados de la búsqueda de contenido](export-search-results.md)
     
 ## <a name="using-powershell-to-search-for-teams-chat-data-in-cloud-based-mailboxes-for-on-premises-users"></a>Uso de PowerShell para buscar datos de chat de Microsoft Teams en buzones de correo basados en la nube para usuarios locales
 
-Puede usar los cmdlets **New-compliancesearch** y **set-ComplianceSearch** en el PowerShell del centro de &amp; seguridad y cumplimiento de Office 365 para buscar en el buzón de correo basado en la nube para los usuarios locales. Como se ha explicado anteriormente, no tiene que enviar una solicitud de soporte técnico para usar PowerShell para buscar los datos de chat de Microsoft Teams para los usuarios locales. 
+Puede usar los cmdlets **New-compliancesearch** y **set-ComplianceSearch** en el PowerShell del centro de cumplimiento de & de seguridad para buscar en el buzón basado en la nube para los usuarios locales. Como se ha explicado anteriormente, no tiene que enviar una solicitud de soporte técnico para usar PowerShell para buscar los datos de chat de Microsoft Teams para los usuarios locales. 
   
-1. [Conéctese a PowerShell del &amp; centro de seguridad y cumplimiento de Office 365](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+1. [Conéctese a Security _AMP_ Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
     
 2. Ejecute el siguiente comando de PowerShell para crear un nuevo contenido que busque en los buzones de correo basados en la nube de los usuarios locales.
     

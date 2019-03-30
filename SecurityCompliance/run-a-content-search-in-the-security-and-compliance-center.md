@@ -1,5 +1,5 @@
 ---
-title: 'Run a Content Search in the Office 365 Security &amp; Compliance Center '
+title: Ejecutar una búsqueda de contenido en el Centro de seguridad y cumplimiento
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -11,17 +11,17 @@ f1_keywords:
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 61852fd9-fe8a-4880-a339-cb19ed3bff4a
-description: 'Use la búsqueda de contenido en el centro &amp; de seguridad y cumplimiento de Office 365 para buscar en buzones de correo, sitios de SharePoint Online y ubicaciones de OneDrive para la empresa. '
-ms.openlocfilehash: 255d53240d360557dc6ff1370c8112ceea676622
-ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
+description: 'Use la búsqueda de contenido en el centro de seguridad & cumplimiento para buscar en buzones de correo, sitios de SharePoint Online y ubicaciones de OneDrive para la empresa. '
+ms.openlocfilehash: 780a9eacc94985cf1f59993a1d5c2816474b8cb5
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30935325"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000283"
 ---
-# <a name="run-a-content-search-in-the-office-365-security-amp-compliance-center"></a>Run a Content Search in the Office 365 Security &amp; Compliance Center 
+# <a name="run-a-content-search-in-the-security--compliance-center"></a>Ejecutar una búsqueda de contenido en el Centro de seguridad y cumplimiento
 
-Puede usar la herramienta de búsqueda de contenido de eDiscovery en el centro &amp; de seguridad y cumplimiento de Office 365 para buscar elementos como correo electrónico, documentos y conversaciones de mensajería instantánea en su organización de Office 365. Use esta herramienta para buscar elementos en estos servicios de Office 365:
+Puede usar la herramienta de búsqueda de contenido eDiscovery en el centro de seguridad & cumplimiento para buscar elementos como correo electrónico, documentos y conversaciones de mensajería instantánea en su organización de Office 365. Use esta herramienta para buscar elementos en estos servicios de Office 365:
   
 - Buzones de correo y carpetas públicas de Exchange Online
     
@@ -55,9 +55,9 @@ La Búsqueda de contenido es una nueva herramienta de búsqueda de exhibición d
 
 - Para obtener información y orientación acerca de la creación de consultas de búsqueda y el uso de operadores de búsqueda booleanos, vea [consultas de palabras clave y condiciones de búsqueda para la búsqueda de contenido](keyword-queries-and-search-conditions.md). Este artículo también contiene información sobre la búsqueda de tipos de información confidencial y la búsqueda de contenido compartido con personas de dentro y fuera de la organización.
     
-- Para tener acceso a la página de **búsqueda de contenido** y realizar búsquedas y obtener una vista previa de los resultados de la búsqueda, un administrador, un responsable de cumplimiento o un administrador de eDiscovery debe ser miembro &amp; del grupo de roles eDiscovery Manager en el cumplimiento de seguridad. Datacenter. No tiene que asignar permisos de búsqueda adicionales en los sitios de Exchange Online, SharePoint Online o OneDrive para la empresa. Para obtener más información, consulte [asignar permisos de exhibición de documentos electrónicos &amp; en el centro de seguridad y cumplimiento de Office 365](assign-ediscovery-permissions.md).
+- Para tener acceso a la página de **búsqueda de contenido** para realizar búsquedas y obtener una vista previa de los resultados de la búsqueda, un administrador, un responsable de cumplimiento o un administrador de exhibición de documentos electrónicos debe ser miembro del grupo de roles eDiscovery Manager en el centro de seguridad & cumplimiento. No tiene que asignar permisos de búsqueda adicionales en los sitios de Exchange Online, SharePoint Online o OneDrive para la empresa. Para obtener más información, vea [asignar permisos de exhibición de documentos electrónicos en el centro de seguridad _AMP_ cumplimiento de Office 365](assign-ediscovery-permissions.md).
     
-- Se aplican límites a la búsqueda de contenido para mantener el mantenimiento y la calidad de los servicios proporcionados a las organizaciones de Office 365. En la mayoría de casos, estos límites no se pueden modificar, pero debe conocerlos para tenerlos en cuenta a la hora de planear, ejecutar y solucionar problemas de búsquedas. Para obtener más información, consulte [límites de búsqueda en el centro de &amp; seguridad y cumplimiento de Office 365](limits-for-content-search.md).
+- Se aplican límites a la búsqueda de contenido para mantener el mantenimiento y la calidad de los servicios proporcionados a las organizaciones de Office 365. En la mayoría de casos, estos límites no se pueden modificar, pero debe conocerlos para tenerlos en cuenta a la hora de planear, ejecutar y solucionar problemas de búsquedas. Para obtener más información, consulte [limits for Search in the Security _AMP_ Compliance Center](limits-for-content-search.md).
     
 - Consulte la sección para buscar horas estimadas en función del número de buzones de correo que se buscan en una sola búsqueda de contenido. 
     
@@ -74,11 +74,11 @@ La Búsqueda de contenido es una nueva herramienta de búsqueda de exhibición d
 ## <a name="create-a-search"></a>Create a search
 <a name="create"> </a>
 
-1. Vaya a [https://protection.office.com](https://protection.office.com).
+1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com).
     
 2. Inicie sesión en Office 365 con su cuenta profesional o educativa.
     
-3. En el panel izquierdo del Centro de seguridad y cumplimiento, haga clic en **Búsqueda e investigación** \> **Búsqueda de contenido**.
+3. En el panel izquierdo del centro de seguridad & cumplimiento, haga clic en buscar **contenido**de **búsqueda** \> .
     
 4. Haga clic en **Nueva**![Icono Agregar](media/O365-MDM-CreatePolicy-AddIcon.gif).
     
@@ -102,7 +102,7 @@ La Búsqueda de contenido es una nueva herramienta de búsqueda de exhibición d
     
   - Puede Agregar buzones de correo inactivos y grupos de distribución a la lista de buzones para buscar. Para los grupos de distribución, se busca en los buzones de los miembros del grupo. Tenga en cuenta que no se admiten los grupos de distribución dinámicos.
     
-  - Para obtener una lista de los buzones inactivos en su organización, ejecute el `Get-Mailbox -InactiveMailboxOnly` comando en Exchange Online PowerShell. Como alternativa, puede ir a **retención** de **gobierno** \> de datos en el &amp; centro de seguridad y cumplimiento y ****![, a continuación, hacer](media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \> clic en más barra de navegación para los **buzones**inactivos.
+  - Para obtener una lista de los buzones inactivos en su organización, ejecute el `Get-Mailbox -InactiveMailboxOnly` comando en Exchange Online PowerShell. Como alternativa, puede ir a **retención** de **gobierno** \> de datos en el centro de seguridad & cumplimiento y, a continuación, hacer clic](media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \> en **más**![barra de navegación para los **buzones**inactivos.
     
   - También puede Agregar el buzón de correo que está asociado con un grupo de Office 365 o un equipo de Microsoft. En este caso, solo se busca en el buzón de grupo o de equipo; no se busca en los buzones de los miembros del equipo o del grupo. Para realizar búsquedas, deberá agregarlas específicamente a la búsqueda.
     
@@ -167,12 +167,12 @@ La Búsqueda de contenido es una nueva herramienta de búsqueda de exhibición d
 ## <a name="export-search-results"></a>Exportar resultados de búsqueda
 <a name="export"> </a>
 
-Una vez ejecutada correctamente la búsqueda, puede exportar los resultados de la búsqueda a un equipo local. Cuando exporta los resultados de correo electrónico, estos se descargan en su equipo como archivos PST. Al exportar contenido de sitios de SharePoint y OneDrive para la empresa, se exportan copias de documentos nativos de Office. También existen documentos e informes adicionales que se incluyen con los resultados de búsqueda exportados. Para obtener más información, vea [exportar resultados de búsqueda desde el centro &amp; de seguridad y cumplimiento de Office 365](export-search-results.md).
+Una vez ejecutada correctamente la búsqueda, puede exportar los resultados de la búsqueda a un equipo local. Cuando exporta los resultados de correo electrónico, estos se descargan en su equipo como archivos PST. Al exportar contenido de sitios de SharePoint y OneDrive para la empresa, se exportan copias de documentos nativos de Office. También existen documentos e informes adicionales que se incluyen con los resultados de búsqueda exportados. Para obtener más información, vea [exportar resultados de búsqueda desde el centro de seguridad _AMP_ cumplimiento](export-search-results.md).
   
 ## <a name="preview-search-results"></a>Vista previa de los resultados de búsqueda
 <a name="preview"> </a>
 
-Una vez que la búsqueda ha finalizado correctamente, puede obtener una vista previa de los resultados. Hay una serie de límites relacionados con la vista previa de resultados de búsqueda de contenido. Para obtener más información, consulte [límites de búsqueda en el centro de &amp; seguridad y cumplimiento de Office 365](limits-for-content-search.md). Tenga en cuenta que los elementos sin indexar no están disponibles para la vista previa.
+Una vez que la búsqueda ha finalizado correctamente, puede obtener una vista previa de los resultados. Hay una serie de límites relacionados con la vista previa de resultados de búsqueda de contenido. Para obtener más información, consulte [limits for Search in the Security _AMP_ Compliance Center](limits-for-content-search.md). Tenga en cuenta que los elementos sin indexar no están disponibles para la vista previa.
   
 1. En la página **búsqueda de contenido** , seleccione una búsqueda. 
     
@@ -277,7 +277,7 @@ Aquí encontrará más información sobre las búsquedas de contenido.
   
 ### <a name="limits-and-performance"></a>Límites y rendimiento
   
-- Para obtener una descripción de los límites que se aplican a la característica de búsqueda de contenido, consulte [limits for Search &amp; in the Office 365 Security Compliance Center](limits-for-content-search.md).
+- Para obtener una descripción de los límites que se aplican a la característica de búsqueda de contenido, consulte [limits for Search in the Security _AMP_ Compliance Center](limits-for-content-search.md).
     
 - Microsoft recopila información de rendimiento para las búsquedas de contenido ejecutadas por todas las organizaciones de Office 365. Aunque la complejidad de la consulta de búsqueda puede influir en las horas de búsqueda, el factor más importante que afecta a la duración de las búsquedas es el número de buzones buscados. Aunque Microsoft no proporciona un acuerdo de nivel de servicio para los tiempos de búsqueda, en la tabla siguiente se enumeran los tiempos de búsqueda promedio de una búsqueda de contenido basada en el número de buzones que se incluyen en la búsqueda.
     
@@ -319,7 +319,7 @@ Aquí encontrará más información sobre las búsquedas de contenido.
   
   - Cuando se realiza una búsqueda en el buzón de un usuario, no se buscará en ningún grupo de Microsoft Teams u Office 365 del que el usuario sea miembro. De forma similar, cuando busca un grupo de Microsoft Teams o 365 de Office, solo se busca en el buzón de grupo y en el sitio de grupo que especifique; los buzones y las cuentas de OneDrive para la empresa de los miembros del grupo no se buscan a menos que los agregue explícitamente a la búsqueda.
     
-  - Para obtener una lista de los miembros de un equipo de Microsoft o de un grupo de Office 365, puede ver las propiedades de la página de **grupos principales \> ** en el centro de administración de Office 365. Como alternativa, puede ejecutar el siguiente comando en Exchange Online PowerShell: 
+  - Para obtener una lista de los miembros de un equipo de Microsoft o de un grupo de Office 365, puede ver las propiedades de la página de **grupos principales \> ** en el centro de administración de Microsoft 365. Como alternativa, puede ejecutar el siguiente comando en Exchange Online PowerShell: 
     
   ```
   Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress 
@@ -367,11 +367,11 @@ Aquí encontrará más información sobre las búsquedas de contenido.
     
     ![Ejemplo de la consulta que se crea al usar la lista de palabras clave y una condición](media/b463750c-57fa-4602-9fed-0d5a420db3ad.png)
   
-  - Si tiene una consulta de búsqueda que contiene palabras clave para caracteres que no son ingleses (como caracteres chinos), es posible que tenga que usar el cmdlet **set-ComplianceSearch** para configurar la propiedad de idioma para la búsqueda de contenido. Al crear una búsqueda de contenido con la interfaz gráfica de usuario &amp; en el centro de seguridad y cumplimiento, el idioma predeterminado es neutro. 
+  - Si tiene una consulta de búsqueda que contiene palabras clave para caracteres que no son ingleses (como caracteres chinos), es posible que tenga que usar el cmdlet **set-ComplianceSearch** para configurar la propiedad de idioma para la búsqueda de contenido. Al crear una búsqueda de contenido con la interfaz gráfica de usuario en el centro de seguridad & cumplimiento, el idioma predeterminado es neutro. 
     
     ¿Cómo se puede conocer si es necesario cambiar la configuración de idioma para una búsqueda de contenido? Si algunas ubicaciones de contenido contienen caracteres que no son del alfabeto inglés que está buscando, pero la búsqueda no devuelve resultados, la configuración de idioma puede ser la causa.
     
-    Para cambiar la configuración de idioma de una búsqueda de contenido existente, ejecute el siguiente comando &amp; en Security Compliance Center PowerShell:
+    Para cambiar la configuración de idioma de una búsqueda de contenido existente, ejecute el siguiente comando en Security & Compliance Center PowerShell:
     
   ```
   Set-ComplianceSearch <name of content search> -Language <culture code value>
@@ -398,9 +398,9 @@ Como se mencionó anteriormente, puede buscar buzones inactivos en una búsqueda
     
 ### <a name="miscellaneous"></a>Varios
   
-- Las búsquedas de contenido creadas en la página **búsqueda** de contenido &amp; en el centro de seguridad y cumplimiento no se muestran en la página **conservación de exhibición &amp; ** de documentos electrónicos local en el centro de administración de Exchange. Esto se debe a que la arquitectura de búsqueda de contenido y los objetos de &amp; búsqueda creados en el centro de seguridad y cumplimiento son completamente diferentes a la característica de exhibición de documentos electrónicos local en Exchange Online. 
+- Las búsquedas de contenido creadas en la página **búsqueda de contenido** en el centro de seguridad & cumplimiento no se muestran en la página **conservación de &amp; exhibición** de documentos electrónicos local en el centro de administración de Exchange. Esto se debe a que la arquitectura de búsqueda de contenido y los objetos de búsqueda creados en el centro de seguridad & de cumplimiento son completamente diferentes a la característica de exhibición de documentos electrónicos local en Exchange Online. 
     
-    Por el mismo motivo, las búsquedas creadas en la página **búsqueda de contenido** no se muestran en la página **búsquedas** de un caso de &amp; exhibición de documentos electrónicos en el centro de seguridad y cumplimiento. 
+    Por el mismo motivo, las búsquedas creadas en la página **búsqueda de contenido** no se muestran en la página **búsquedas** de un caso de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento. 
     
 - ¿Cuál es la diferencia entre reiniciar y reintentar una búsqueda? Cuando se reinicia una búsqueda, todas las ubicaciones de contenido que se especifican en la búsqueda se vuelven a buscar en una nueva búsqueda de vista previa. Sin embargo, cuando se vuelve a intentar una búsqueda, solo se vuelven a buscar las ubicaciones de contenido en las que se produjo un error cuando se ejecutó la búsqueda por última vez.
    

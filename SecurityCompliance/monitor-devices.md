@@ -1,5 +1,5 @@
 ---
-title: Supervisar dispositivos en la seguridad de Microsoft 365
+title: Supervisar los dispositivos de seguridad de Microsoft 365
 description: Describe cómo puede mantener los dispositivos protegidos, actualizarse y detectar posibles amenazas en la organización.
 keywords: seguridad, malware, Microsoft 365, M365, centro de seguridad, monitor, informe, dispositivos
 ms.prod: w10
@@ -11,16 +11,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 43d074a9d42703b60b7b8eb17bdaf83a9360ce2d
-ms.sourcegitcommit: ef27da3ea5340d6e7a2eaa1288e2e005ef8e4788
+ms.openlocfilehash: fea3f35e0fca3ccc8148d93b7a535c98dd2d32b9
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2019
-ms.locfileid: "30791942"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000533"
 ---
-# <a name="monitor-devices-in-microsoft-365-security"></a>Supervisar dispositivos en la seguridad de Microsoft 365
-
-[!include[Prerelease�information](prerelease.md)]
+# <a name="monitor-devices-in-microsoft-365-security"></a>Supervisar los dispositivos de seguridad de Microsoft 365
 
 Mantenga los dispositivos protegidos, actualizados y detecte posibles amenazas en el centro de seguridad de Microsoft 365.
 

@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 97e9c3d9-df89-458e-924b-369becee5532
 description: Use la página Alertas de Office 365 Cloud App Security para ver posibles problemas y emprender acciones. Puede omitir o resolver las alertas y, si es necesario, suspender una cuenta de usuario.
-ms.openlocfilehash: 701d80c3f890115c6c403fff21d2d0444d71c95a
-ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
+ms.openlocfilehash: ddef10293fca7b722a13babdca5c05bbe2398cb3
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30862472"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000043"
 ---
 # <a name="review-and-take-action-on-alerts-in-office-365-cloud-app-security"></a>Revisar y realizar acciones sobre alertas en Office 365 Cloud App Security
   
@@ -37,7 +37,7 @@ Puede usar la página de alertas de Office 365 Cloud App Security para ver posib
 2. En la barra de navegación en la parte superior de la pantalla, elija **alertas**.<br/>![En la página Alertas, puede ver las alertas que se han desencadenado y las acciones que se han llevado a cabo.](media/3b53d4c9-4b13-435d-8547-8c0f9ae6b914.png)
  
 > [!NOTE]
-> las alertas de Cloud App security también están visibles en el centro de cumplimiento de & de seguridad de Office 365 (vaya a **alertas** > **ver alertas**. Sin embargo, en este momento, debe resolver estas alertas en el portal de Cloud App Security y en el centro de cumplimiento de & de seguridad de Office 365. Para obtener más información, consulte [visualización de alertas de Cloud App Security](alert-policies.md#viewing-cloud-app-security-alerts)). 
+> Las alertas de Cloud App Security también están visibles en el centro de seguridad & cumplimiento (vaya a **alertas** > **Ver alertas**. Sin embargo, en este momento, debe resolver estas alertas en el portal de Cloud App Security y en el centro de seguridad & cumplimiento. Para obtener más información, consulte [visualización de alertas de Cloud App Security](alert-policies.md#viewing-cloud-app-security-alerts)). 
  
 ## <a name="review-and-handle-alerts"></a>Revisar y controlar las alertas
 

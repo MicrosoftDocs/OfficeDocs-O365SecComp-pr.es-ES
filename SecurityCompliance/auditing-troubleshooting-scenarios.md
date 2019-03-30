@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Puede usar la herramienta de búsqueda de registros de auditoría de Office 365 para ayudarle a solucionar problemas comunes, como investigar una cuenta en peligro o averiguar quién ha configurado el reenvío de correo para un buzón.
-ms.openlocfilehash: bf07df7ef0767e525ca3e6ff7f5ce4c637880b80
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 506a7c05c8fb88be00e52421341148699d2a74b0
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296773"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999633"
 ---
 # <a name="search-the-office-365-audit-log-to-troubleshoot-common-scenarios"></a>Buscar en el registro de auditoría de 365 de Office para solucionar escenarios comunes
 
@@ -32,7 +32,7 @@ En este artículo se describe cómo usar la herramienta de búsqueda de registro
 
 ## <a name="using-the-office-365-audit-log-search-tool"></a>Uso de la herramienta de búsqueda de registros de auditoría de Office 365
 
-Cada uno de los escenarios de solución de problemas descritos en este artículo se basa en el uso de la herramienta de búsqueda de registros de auditoría en el centro de seguridad & cumplimiento de Office 365. En esta sección se enumeran los permisos necesarios para buscar en el registro de auditoría y se describen los pasos para obtener acceso y ejecutar las búsquedas de registros de auditoría. En cada sección de escenario se proporcionan instrucciones específicas sobre cómo configurar una consulta de búsqueda de registros de auditoría y qué buscar en la información detallada de los registros de auditoría que coinciden con los criterios de búsqueda.
+Cada uno de los escenarios de solución de problemas descritos en este artículo se basa en el uso de la herramienta de búsqueda de registros de auditoría en el centro de seguridad y cumplimiento de Office 365. En esta sección se enumeran los permisos necesarios para buscar en el registro de auditoría y se describen los pasos para obtener acceso y ejecutar las búsquedas de registros de auditoría. En cada sección de escenario se proporcionan instrucciones específicas sobre cómo configurar una consulta de búsqueda de registros de auditoría y qué buscar en la información detallada de los registros de auditoría que coinciden con los criterios de búsqueda.
 
 ### <a name="permissions-required-to-use-the-audit-log-search-tool"></a>Permisos necesarios para usar la herramienta de búsqueda de registros de auditoría
 
@@ -40,13 +40,13 @@ Debe tener asignado el rol registros de auditoría con permiso de vista o regist
 
 ### <a name="running-audit-log-searches"></a>Ejecución de búsquedas de registro de auditoría
 
-En esta sección se describen los conceptos básicos para crear y ejecutar búsquedas de registros de auditoría. Siga estas instrucciones como punto de partida para cada escenario de solución de problemas de este artículo. Para obtener instrucciones detalladas paso a paso, consulte [Buscar el registro de auditoría en el centro de seguridad _AMP_ cumplimiento de Office 365 ](search-the-audit-log-in-security-and-compliance.md#step-1-run-an-audit-log-search).
+En esta sección se describen los conceptos básicos para crear y ejecutar búsquedas de registros de auditoría. Siga estas instrucciones como punto de partida para cada escenario de solución de problemas de este artículo. Para obtener instrucciones detalladas paso a paso, consulte [Buscar en el registro de auditoría](search-the-audit-log-in-security-and-compliance.md#step-1-run-an-audit-log-search).
 
-1. Vaya a [https://protection.office.com](https://protection.office.com).
+1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com).
   
 2. Inicie sesión en Office 365 con su cuenta profesional o educativa.
 
-3. En el panel izquierdo del centro de seguridad & cumplimiento, haga clic en buscar en el > **registro de auditoría**de **investigación &**.
+3. En el panel izquierdo del centro de seguridad y cumplimiento, haga clic en búsqueda de**registros de auditoría**de **búsqueda** > .
     
     Se muestra la página de **búsqueda de registros de auditoría** . 
     
@@ -54,13 +54,13 @@ En esta sección se describen los conceptos básicos para crear y ejecutar búsq
   
 4. Puede configurar los siguientes criterios de búsqueda. Tenga en cuenta que cada escenario de solución de problemas de este artículo le recomendará una guía específica para configurar estos campos.
     
-    a. **actividades** : haga clic en la lista desplegable para mostrar las actividades que puede buscar. Después de ejecutar la búsqueda, solo se muestran los registros de auditoría de las actividades seleccionadas. Al seleccionar **Mostrar resultados para todas las actividades** , se mostrarán los resultados de todas las actividades que cumplan los otros criterios de búsqueda. También tendrá que dejar este campo en blanco en algunos de los escenarios de solución de problemas.
+    a. **Actividades** : haga clic en la lista desplegable para mostrar las actividades que puede buscar. Después de ejecutar la búsqueda, solo se muestran los registros de auditoría de las actividades seleccionadas. Al seleccionar **Mostrar resultados para todas las actividades** , se mostrarán los resultados de todas las actividades que cumplan los otros criterios de búsqueda. También tendrá que dejar este campo en blanco en algunos de los escenarios de solución de problemas.
     
-    b. **fecha de inicio** y **fecha** de finalización: Seleccione un intervalo de fechas y horas para mostrar los eventos que se produjeron dentro de ese período. Los últimos siete días están seleccionados de forma predeterminada. La fecha y la hora se presentan en formato de hora universal coordinada (UTC). El intervalo de fechas máximo que puede especificar es de 90 días.
+    b. Fecha de **Inicio** y **fecha** de finalización: Seleccione un intervalo de fechas y horas para mostrar los eventos que se produjeron dentro de ese período. Los últimos siete días están seleccionados de forma predeterminada. La fecha y la hora se presentan en formato de hora universal coordinada (UTC). El intervalo de fechas máximo que puede especificar es de 90 días.
 
-    c. **usuarios** : haga clic en este cuadro y, a continuación, seleccione uno o más usuarios para los que mostrar los resultados de la búsqueda. Los registros de auditoría para la actividad seleccionada realizada por los usuarios que seleccione en este cuadro se muestran en la lista de resultados. Deje este cuadro en blanco para devolver las entradas de todos los usuarios (y las cuentas de servicio) de su organización.
+    c. **Usuarios** : haga clic en este cuadro y, a continuación, seleccione uno o más usuarios para los que desea mostrar los resultados de la búsqueda. Los registros de auditoría para la actividad seleccionada realizada por los usuarios que seleccione en este cuadro se muestran en la lista de resultados. Deje este cuadro en blanco para devolver las entradas de todos los usuarios (y las cuentas de servicio) de su organización.
     
-    d. **archivo, carpeta o sitio** : escriba parte o todo el nombre de un archivo o una carpeta para buscar actividades relacionadas con el archivo de la carpeta que contiene la palabra clave especificada. También puede especificar una dirección URL de un archivo o una carpeta. Si usa una dirección URL, asegúrese de escribir la ruta de acceso completa de la dirección URL o, si solo escribe una parte de la dirección URL, no incluya ningún carácter o espacio especial. Deje este cuadro en blanco para devolver las entradas de todos los archivos y carpetas de la organización. Tenga en cuenta que este campo se deja en blanco en todos los escenarios de solución de problemas de este artículo.
+    d. **Archivo, carpeta o** tipo de sitio todo o parte del nombre de un archivo o carpeta para buscar actividades relacionadas con el archivo de la carpeta que contiene la palabra clave especificada. También puede especificar una dirección URL de un archivo o una carpeta. Si usa una dirección URL, asegúrese de escribir la ruta de acceso completa de la dirección URL o, si solo escribe una parte de la dirección URL, no incluya ningún carácter o espacio especial. Deje este cuadro en blanco para devolver las entradas de todos los archivos y carpetas de la organización. Tenga en cuenta que este campo se deja en blanco en todos los escenarios de solución de problemas de este artículo.
     
 5. Haga clic en **Buscar** para ejecutar la búsqueda con los criterios de búsqueda. 
     
@@ -113,13 +113,13 @@ En este punto, tiene que mirar los detalles de cada registro de auditoría para 
 
 ![Información detallada del registro de auditoría](media/emailforwarding2.png)
 
-a. en el campo **objectId** , se muestra el alias del buzón de correo en el que se ha configurado el reenvío de correo electrónico. Este buzón también se muestra en la columna de **elementos** de la página de resultados de búsqueda.
+a. En el campo **objectId** , se muestra el alias del buzón de correo en el que se ha configurado el reenvío de correo electrónico. Este buzón también se muestra en la columna de **elementos** de la página de resultados de búsqueda.
 
-b. en el campo **parámetros** , el valor *ForwardingSmtpAddress* indica que el correo electrónico reenviado se ha establecido en el buzón. En este ejemplo, el correo se envía a la dirección de correo electrónico mike@contoso.com, que está fuera de la organización alpinehouse.onmicrosoft.com.
+b. En el campo **parámetros** , el valor *ForwardingSmtpAddress* indica que el correo electrónico reenviado se ha establecido en el buzón. En este ejemplo, el correo se envía a la dirección de correo electrónico mike@contoso.com, que está fuera de la organización alpinehouse.onmicrosoft.com.
 
-c. el valor *true* del parámetro *DeliverToMailboxAndForward* indica que una copia del mensaje se entrega a SARAD@alpinehouse.onmicrosoft.com *y* se reenvía a la dirección de correo electrónico especificada por el *ForwardingSmtpAddress *parámetro, que en este ejemplo es Mike@contoso.com. Si el valor del parámetro *DeliverToMailboxAndForward* está establecido en *false*, el correo electrónico sólo se reenvía a la dirección especificada por el parámetro *ForwardingSmtpAddress* . No se entrega al buzón especificado en el campo **objectId** .
+c. El valor *true* del parámetro *DeliverToMailboxAndForward* indica que una copia del mensaje se entrega a SARAD@alpinehouse.onmicrosoft.com *y* se reenvía a la dirección de correo electrónico especificada por el *ForwardingSmtpAddress *parámetro, que en este ejemplo es Mike@contoso.com. Si el valor del parámetro *DeliverToMailboxAndForward* está establecido en *false*, el correo electrónico sólo se reenvía a la dirección especificada por el parámetro *ForwardingSmtpAddress* . No se entrega al buzón especificado en el campo **objectId** .
 
-d. el campo **userid** indica el usuario que ha configurado el reenvío de correo electrónico en el buzón especificado en el campo **objectId** . Este usuario también se muestra en la columna **usuario** de la página de resultados de búsqueda. En este caso, parece que el propietario del buzón estableció el reenvío de correo electrónico en su buzón.
+d. El campo **userid** indica el usuario que ha configurado el reenvío de correo electrónico en el buzón especificado en el campo **objectId** . Este usuario también se muestra en la columna **usuario** de la página de resultados de búsqueda. En este caso, parece que el propietario del buzón estableció el reenvío de correo electrónico en su buzón.
 
 Si determina que no se debe establecer el reenvío de correo electrónico en el buzón, puede quitarlo ejecutando el siguiente comando en Exchange Online PowerShell:
 
@@ -131,7 +131,9 @@ Consulte el artículo [set-Mailbox](https://docs.microsoft.com/powershell/module
 
 ## <a name="determining-if-a-user-deleted-email-items"></a>Determinar si un usuario eliminó elementos de correo electrónico
 
-Antes de guardar los registros de auditoría sobre los elementos de correo electrónico eliminados en el registro de auditoría de Office 365, se debe habilitar la auditoría de buzones para cada buzón de usuario de la organización. Además, las acciones de buzón de SoftDelete y HardDelete deben estar habilitadas para la auditoría. Para obtener instrucciones, consulte [Habilitar la auditoría de buzones de correo en Office 365](enable-mailbox-auditing.md). Si la auditoría de buzones de correo ya está habilitada para los usuarios, siga estos pasos para buscar en el registro de auditoría eventos relacionados con elementos de correo electrónico eliminados.
+A partir de enero de 2019, Microsoft activa el registro de auditoría de buzones de correo de forma predeterminada para todas las organizaciones de Office 365 y Microsoft. Esto significa que determinadas acciones realizadas por los propietarios de los buzones de correo se registran automáticamente y que los registros de auditoría de buzón correspondientes estarán disponibles cuando los busque en el registro de auditoría de buzones de correo. Antes de que se activara la auditoría de buzones de correo de forma predeterminada, tenía que habilitarla manualmente para cada buzón de usuario de la organización. 
+
+Las acciones de buzón de correo registradas de forma predeterminada incluyen las acciones de buzón SoftDelete y HardDelete realizadas por los propietarios de buzones. Esto significa que puede usar los pasos siguientes para buscar en el registro de auditoría eventos relacionados con elementos de correo electrónico eliminados. Para obtener más información acerca de la auditoría de buzones de correo de forma predeterminada, consulte [Manage Mailbox Auditing](enable-mailbox-auditing.md).
 
 Esta es la manera de configurar una consulta de búsqueda de registros de auditoría para este escenario:
 
@@ -139,7 +141,7 @@ Esta es la manera de configurar una consulta de búsqueda de registros de audito
 
 - **Mensajes eliminados de la carpeta elementos eliminados** : esta actividad corresponde a la acción de auditoría del buzón de **SoftDelete** . Esta actividad también se registra cuando un usuario elimina permanentemente un elemento seleccionándolo y presionando **Mayús + Supr**. Una vez que un elemento se elimina de forma permanente, el usuario puede recuperarlo hasta que expire el período de retención de elementos eliminados.
 
-- **Mensajes purgados del buzón de correo** : esta actividad corresponde a la acción de auditoría del buzón de **HardDelete** . Este registro se registra cuando un usuario purga un elemento de la carpeta elementos recuperables. Los administradores pueden usar la herramienta de búsqueda de contenido en el centro de seguridad & cumplimiento de Office 365 para buscar y recuperar los elementos purgados hasta que el período de retención de elementos eliminados expire o sea más largo si el buzón de correo del usuario está en espera.
+- **Mensajes purgados del buzón de correo** : esta actividad corresponde a la acción de auditoría del buzón de **HardDelete** . Este registro se registra cuando un usuario purga un elemento de la carpeta elementos recuperables. Los administradores pueden usar la herramienta de búsqueda de contenido en el centro de seguridad y cumplimiento para buscar y recuperar los elementos purgados hasta que expire el período de retención de elementos eliminados si el buzón de correo del usuario está en suspensión.
 
 Fecha de **Inicio** y **fecha** de finalización: Seleccione un intervalo de fechas que sea aplicable a su investigación.
 
@@ -187,10 +189,10 @@ Después de ejecutar la búsqueda, se muestran todos los registros de auditoría
 
 ![Registro de auditoría para nueva regla de bandeja de entrada](media/NewInboxRuleRecord.png)
 
-a. en el campo **objectId** , se muestra el nombre completo de la regla de bandeja de entrada. Este nombre incluye el alias del buzón de correo del usuario (por ejemplo, Sara) y el nombre de la regla de bandeja de entrada (por ejemplo, "mover mensajes desde el administrador").
+a. En el campo **objectId** , se muestra el nombre completo de la regla de bandeja de entrada. Este nombre incluye el alias del buzón de correo del usuario (por ejemplo, Sara) y el nombre de la regla de bandeja de entrada (por ejemplo, "mover mensajes desde el administrador").
 
-b. en el campo **parámetros** , se muestra la condición de la regla de la bandeja de entrada. En este ejemplo, la condición se especifica mediante el parámetro *from* . El valor definido para el parámetro *from* indica que la regla de la bandeja de entrada actúa en el correo electrónico enviado por admin@alpinehouse.onmicrosoft.com. Para obtener una lista completa de los parámetros que se pueden usar para definir las condiciones de las reglas de la bandeja de entrada, consulte el artículo [New-InboxRule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-inboxrule) .
+b. En el campo **parámetros** , se muestra la condición de la regla de la bandeja de entrada. En este ejemplo, la condición se especifica mediante el parámetro *from* . El valor definido para el parámetro *from* indica que la regla de la bandeja de entrada actúa en el correo electrónico enviado por admin@alpinehouse.onmicrosoft.com. Para obtener una lista completa de los parámetros que se pueden usar para definir las condiciones de las reglas de la bandeja de entrada, consulte el artículo [New-InboxRule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-inboxrule) .
 
-c. el parámetro *MoveToFolder* especifica la acción para la regla de bandeja de entrada; en este ejemplo, los mensajes recibidos desde admin@alpinehouse.onmicrosoft.com se mueven a la carpeta denominada *AdminSearch*. Consulte también el artículo [New-InboxRule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-inboxrule) para obtener una lista completa de los parámetros que se pueden usar para definir la acción de una regla de bandeja de entrada.
+c. El parámetro *MoveToFolder* especifica la acción para la regla de bandeja de entrada; en este ejemplo, los mensajes recibidos desde admin@alpinehouse.onmicrosoft.com se mueven a la carpeta denominada *AdminSearch*. Consulte también el artículo [New-InboxRule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-inboxrule) para obtener una lista completa de los parámetros que se pueden usar para definir la acción de una regla de bandeja de entrada.
 
-d. el campo **userid** indica el usuario que creó la regla de bandeja de entrada especificada en el campo **objectId** . Este usuario también se muestra en la columna **usuario** de la página de resultados de búsqueda.
+d. El campo **userid** indica el usuario que creó la regla de bandeja de entrada especificada en el campo **objectId** . Este usuario también se muestra en la columna **usuario** de la página de resultados de búsqueda.

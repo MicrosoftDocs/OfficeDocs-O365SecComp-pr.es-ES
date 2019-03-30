@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: Use este tema para obtener más información sobre cómo configurar la administración del acceso con privilegios en Office 365
-ms.openlocfilehash: 3d186998006dd3cc59877b1571f50314af5bbce8
-ms.sourcegitcommit: 5eb664b6ecef94aef4018a75684ee4ae66c486bb
+ms.openlocfilehash: 9d0f5955eb2fd67d245bad3e7a9b1b89769bd947
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2019
-ms.locfileid: "30492829"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31001153"
 ---
 # <a name="configuring-privileged-access-management-in-office-365"></a>Configuración de la administración del acceso con privilegios en Office 365
 
@@ -58,13 +58,13 @@ Una vez concedida la aprobación, el usuario que realiza la solicitud puede ejec
 
 ## <a name="step-1---create-an-approvers-group"></a>Paso 1: crear un grupo de aprobadores
 
-1. Inicie sesión en el [centro de administración de Microsoft 365](https://portal.office.com) con las credenciales de una cuenta de administrador en la organización.
+1. Inicie sesión en el [centro de administración de Microsoft 365](https://admin.microsoft.com) con las credenciales de una cuenta de administrador en la organización.
 
 2. En el centro de administración, vaya a **grupos** > **Agregar un grupo**.
 
 3. Seleccione el tipo de grupo **grupo de seguridad habilitado para correo** y, a continuación, complete los campos **nombre**, **dirección de correo electrónico del grupo**y **Descripción** para el nuevo grupo.
 
-4. Guarde el grupo. El grupo puede tardar unos minutos en configurarse y aparecer completamente en el centro de administración de Office 365.
+4. Guarde el grupo. Puede tardar unos minutos para que el grupo esté totalmente configurado y aparezca en el centro de administración de 365 de Microsoft.
 
 5. Seleccione el grupo del nuevo aprobador y seleccione **Editar** para agregar usuarios al grupo.
 
@@ -76,7 +76,7 @@ Una vez concedida la aprobación, el usuario que realiza la solicitud puede ejec
 
 ### <a name="using-the-microsoft-365-admin-center"></a>Uso del centro de administración de 365 de Microsoft
 
-1. Inicie sesión en el [centro de administración de Microsoft 365](https://portal.office.com) con las credenciales de una cuenta de administrador en la organización.
+1. Inicie sesión en el [centro de administración de Microsoft 365](https://admin.microsoft.com) con las credenciales de una cuenta de administrador en la organización.
 
 2. En el centro de administración, vaya a **configuración > seguridad** > de**privilegios**de privacidad &.
 
@@ -108,7 +108,7 @@ Puede crear y configurar hasta 30 directivas de acceso privilegiadas para su org
 
 ### <a name="using-the-microsoft-365-admin-center"></a>Uso del centro de administración de 365 de Microsoft
 
-1. Inicie sesión en el [centro de administración de Microsoft 365](https://portal.office.com) con las credenciales de una cuenta de administrador en la organización.
+1. Inicie sesión en el [centro de administración de Microsoft 365](https://admin.microsoft.com) con las credenciales de una cuenta de administrador en la organización.
 
 2. En el centro de administración, vaya a **configuración** > **seguridad &** > **acceso privilegiado a**la privacidad.
 
@@ -152,7 +152,7 @@ Las solicitudes de acceso con privilegios son válidas durante un máximo de 24 
 
 #### <a name="using-the-microsoft-365-admin-center"></a>Uso del centro de administración de 365 de Microsoft
 
-1. Inicie sesión en el [centro de administración de Microsoft 365](https://portal.office.com) con sus credenciales.
+1. Inicie sesión en el [centro de administración de Microsoft 365](https://admin.microsoft.com) con sus credenciales.
 
 2. En el centro de administración, vaya a **configuración** > **seguridad &** > **acceso privilegiado a**la privacidad.
 
@@ -187,7 +187,7 @@ Después de crear una solicitud de aprobación, el estado de la solicitud de ele
 
 #### <a name="using-the-microsoft-365-admin-center"></a>Uso del centro de administración de 365 de Microsoft
 
-1. Inicie sesión en el [centro de administración de Microsoft 365](https://portal.office.com) con sus credenciales.
+1. Inicie sesión en el [centro de administración de Microsoft 365](https://admin.microsoft.com) con sus credenciales.
 
 2. En el centro de administración, vaya a **configuración** > **seguridad &** > **acceso privilegiado a**la privacidad.
 
@@ -211,7 +211,7 @@ Cuando se crea una solicitud de aprobación, los miembros del grupo aprobador re
 
 #### <a name="using-the-microsoft-365-admin-center"></a>Uso del centro de administración de 365 de Microsoft
 
-1. Inicie sesión en el [centro de administración de Microsoft 365](https://portal.office.com) con sus credenciales.
+1. Inicie sesión en el [centro de administración de Microsoft 365](https://admin.microsoft.com) con sus credenciales.
 
 2. En el centro de administración, vaya a **configuración** > **seguridad &** > **acceso privilegiado a**la privacidad.
 
@@ -248,7 +248,7 @@ Puede eliminar una directiva de acceso privilegiado si ya no la necesita en su o
 
 ### <a name="using-the-microsoft-365-admin-center"></a>Uso del centro de administración de 365 de Microsoft
 
-1. Inicie sesión en el [centro de administración de Microsoft 365](https://portal.office.com) con las credenciales de una cuenta de administrador en la organización.
+1. Inicie sesión en el [centro de administración de Microsoft 365](https://admin.microsoft.com) con las credenciales de una cuenta de administrador en la organización.
 
 2. En el centro de administración, vaya a **configuración** > **seguridad &** > **acceso privilegiado a**la privacidad.
 
@@ -274,7 +274,7 @@ Si es necesario, puede deshabilitar la administración del acceso con privilegio
 
 ### <a name="using-the-microsoft-365-admin-center"></a>Uso del centro de administración de 365 de Microsoft
 
-1. Inicie sesión en el [centro de administración de Microsoft 365](https://portal.office.com) con las credenciales de una cuenta de administrador en la organización.
+1. Inicie sesión en el [centro de administración de Microsoft 365](https://admin.microsoft.com) con las credenciales de una cuenta de administrador en la organización.
 
 2. En el centro de administración, vaya a **configuración** > **seguridad &** > **acceso privilegiado a**la privacidad.
 
