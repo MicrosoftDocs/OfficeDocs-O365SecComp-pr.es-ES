@@ -18,12 +18,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: 'Resumen: recomendaciones de configuración para proteger archivos en SharePoint Online y Office 365.'
-ms.openlocfilehash: 12f25fcc487b91c493b4eb3b2e1d0373daa9b171
-ms.sourcegitcommit: ef27da3ea5340d6e7a2eaa1288e2e005ef8e4788
+ms.openlocfilehash: 3e41a46d244f88110b87426fe975b3f72e376984
+ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2019
-ms.locfileid: "30789395"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30955233"
 ---
 # <a name="secure-sharepoint-online-sites-and-files"></a>Protección de archivos y sitios de SharePoint Online
 
@@ -120,7 +120,7 @@ En la tabla siguiente se resume la configuración para cada uno de los sitios de
 |Sitio de grupo público o privado  <br/> |Público  <br/> |Private  <br/> |Private  <br/> |Private  <br/> |
 |¿Quién tiene acceso?  <br/> |Todos los usuarios de la organización, incluidos los usuarios B2B y usuarios invitados.  <br/> |Solo los miembros del sitio. Otros usuarios pueden pedir acceso.  <br/> |Solo los miembros del sitio. Otros usuarios pueden pedir acceso.  <br/> |Solo los miembros. Otros usuarios no pueden pedir acceso.  <br/> |
 |Controles de uso compartido en el nivel de sitio  <br/> |Uso compartido permitido con cualquier usuario. Configuración predeterminada.  <br/> |Uso compartido permitido con cualquier usuario. Configuración predeterminada.  <br/> |Los miembros no pueden compartir el acceso al sitio.  <br/> Los usuarios que no son miembros pueden pedir acceso al sitio, pero estas solicitudes deben ser supervisadas por un administrador del sitio.  <br/> |Los miembros no pueden compartir el acceso al sitio.  <br/> Los usuarios que no son miembros no pueden pedir acceso al sitio o al contenido.  <br/> |
-|Controles de acceso a dispositivos en el nivel de sitio  <br/> |Sin controles adicionales.  <br/> |Sin controles adicionales.  <br/> |Pronto se incorporarán controles de nivel de sitio, que impiden a los usuarios descargar archivos en dispositivos no compatibles o que no están unidos a ningún dispositivo. Esto permite solamente el acceso de explorador desde los demás dispositivos.  <br/> |Pronto se incorporarán controles de nivel de sitio, que bloquean la descarga de archivos en dispositivos no compatibles o que no están unidos a ningún dominio.  <br/> |
+|Controles de acceso a dispositivos en el nivel de sitio  <br/> |Sin controles adicionales.  <br/> |Sin controles adicionales.  <br/> |Impide a los usuarios descargar archivos en dispositivos no compatibles o que no están unidos a ningún dispositivo. Esto permite solamente el acceso de explorador desde los demás dispositivos.  <br/> |Impedir quela descarga de archivos en dispositivos de dominios no combinados o no compatibles.  <br/> |
 |Etiquetas de retención  <br/> |Interno público  <br/> |Private  <br/> |Confidencial  <br/> |Extremadamente confidencial  <br/> |
 |Directivas DLP  <br/> |||Advierten a los usuarios cuando se envían archivos etiquetados como Confidenciales fuera de la organización.  <br/> Para bloquear el uso compartido externo de tipos de datos confidenciales, como números de tarjeta de crédito u otros datos personales, puede configurar directivas DLP adicionales para estos tipos de datos (incluidos los tipos de datos personalizados que configure).  <br/> |Impiden a los usuarios enviar archivos etiquetados como Extremadamente confidencial fuera de la organización. Permiten a los usuarios anular esto si proporcionan una justificación que incluya el nombre del usuario con el que van a compartir el archivo.  <br/> |
 |Etiquetas de confidencialidad  <br/> ||||Use las etiquetas de confidencialidad para cifrar y conceder permisos a los archivos automáticamente. Las etiquetas de confidencialidad usan Azure Information Protection para cifrar archivos. Esta protección viaja con los archivos en caso de que estos se pierdan.  <br/> Office 365 no puede leer los archivos cifrados con Azure Information Protection. Además, las directivas DLP solo funcionan con los metadatos (incluidas las etiquetas), pero no con los contenidos de sus archivos (como los números de tarjetas de crédito dentro de los archivos).  <br/> |

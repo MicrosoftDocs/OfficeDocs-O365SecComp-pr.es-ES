@@ -3,7 +3,7 @@ title: Protección contra la suplantación de identidad en Office 365
 ms.author: tracyp
 author: MSFTtracyp
 manager: laurawi
-ms.date: 3/6/2019
+ms.date: 03/29/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: Este artículo describe cómo Office 365 reduce los ataques de phishing que usan dominios de remitentes falsificados, es decir, dominios suplantados. Para ello, analiza los mensajes y bloquea los que no pueden autenticarse mediante métodos de autenticación de correo electrónico estándar ni otras técnicas de reputación del remitente. Este cambio se implementó para reducir el número de ataques de phishing a los que se exponen las organizaciones de Office 365.
-ms.openlocfilehash: 00cf4d6ba0fe7bc9bc081466d7b23a8a9b75631e
-ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
+ms.openlocfilehash: 533444d323728d2f238da409256f6547a5c8d209
+ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30936800"
+ms.lasthandoff: 03/30/2019
+ms.locfileid: "31004267"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Protección contra la suplantación de identidad en Office 365
 
@@ -410,34 +410,6 @@ Esta característica está actualmente en desarrollo. A medida de que se vayan d
   
 ![Posible experiencia de usuario al permitir a un remitente falsificado](media/53f9f73e-fb01-47f3-9a6d-850c1aef5efe.jpg)
   
-### <a name="understanding-how-spam-phishing-and-advanced-phishing-detections-are-combined"></a>Comprender cómo se combinan las detecciones de spam, phishing o phishing avanzado
-
-Las organizaciones que usan Exchange Online, con o sin ATP, pueden especificar las medidas que tomar cuando el servicio identifica mensajes como malware, spam, spam de alta confianza, phishing y masivo. Es posible que se cree cierta confusión en cuanto a qué directiva se aplica debido a las directivas contra suplantación de identidad de ATP para los clientes de ATP, las directivas contra suplantación de identidad para los clientes de EOP y el hecho de que un mensaje incluir varios tipos de detección (por ejemplo, malware, suplantación de identidad y suplantación del usuario).
-  
-En general, la directiva que se aplica a un mensaje se identifica en el encabezado X-Forefront-Antispam-Report en la propiedad CAT (categoría).
-  
-|**Prioridad**|**Directiva**|**Categoría**|**¿Dónde se administra?**|**Se aplica a**|
-|:-----|:-----|:-----|:-----|:-----|
-|1  <br/> |Malware  <br/> |MALW  <br/> |[Directiva de malware](configure-anti-malware-policies.md) <br/> |Todas las organizaciones  <br/> |
-|2  <br/> |Phishing  <br/> |PHSH  <br/> |[Configurar las directivas de filtro de correo no deseado](configure-your-spam-filter-policies.md) <br/> |Todas las organizaciones  <br/> |
-|3  <br/> |Correo no deseado de alta confianza  <br/> |HSPM  <br/> |[Configurar las directivas de filtro de correo no deseado](configure-your-spam-filter-policies.md) <br/> |Todas las organizaciones  <br/> |
-|4  <br/> |Suplantación  <br/> |SPOOF  <br/> |[Directiva contra suplantación de identidad](https://go.microsoft.com/fwlink/?linkid=864553), [Inteligencia ante la suplantación de identidad](learn-about-spoof-intelligence.md) <br/> |Todas las organizaciones  <br/> |
-|5  <br/> |Correo no deseado  <br/> |SPM  <br/> |[Configurar las directivas de filtro de correo no deseado](configure-your-spam-filter-policies.md) <br/> |Todas las organizaciones  <br/> |
-|6  <br/> |Masivo  <br/> |BULK  <br/> |[Configurar las directivas de filtro de correo no deseado](configure-your-spam-filter-policies.md) <br/> |Todas las organizaciones  <br/> |
-|7  <br/> |Suplantación de dominio  <br/> |DIMP  <br/> |[Configurar directivas contra suplantación de identidad y directivas contra suplantación de identidad de ATP de Office 365](set-up-anti-phishing-policies.md) <br/> |Organizaciones con solo ATP  <br/> |
-|8  <br/> |Suplantación de usuario  <br/> |UIMP  <br/> |[Configurar directivas contra suplantación de identidad y directivas contra suplantación de identidad de ATP de Office 365](set-up-anti-phishing-policies.md) <br/> |Organizaciones con solo ATP <br/> |
-
-Si tiene varias directivas contra suplantación de identidad diferentes, se aplicará la opción con la prioridad más alta. Por ejemplo, supongamos que tiene dos directivas:
-
-|**Directiva**|**Prioridad**|**Suplantación de usuario/dominio**|**Directiva contra la suplantación**|
-|:-----|:-----|:-----|:-----|
-|A  <br/> |1  <br/> |Activada  <br/> |Desactivada  <br/> |
-|B  <br/> |2  <br/> |Desactivada  <br/> |Activada  <br/> |
-
-Si un mensaje llega y se identifica como la suplantación de identidad y de usuario, y el mismo conjunto de usuarios tiene como ámbito la directiva A y la directiva B, el mensaje se considera una suplantación pero no se aplica ninguna acción porque la suplantación está desactivada y SPOOF se ejecuta con una prioridad más alta (4) que la suplantación de usuario (8).
-  
-Para aplicar otros tipos de directivas contra suplantación de identidad, necesitará ajustar la configuración para determinar a quién se aplican las varias directivas.
-  
 ### <a name="legitimate-scenarios-to-disable-anti-spoofing"></a>Escenarios legítimos para deshabilitar la protección contra la suplantación
 
 La protección contra la suplantación protege mejor a los clientes de los ataques de phishing y, por tanto, no se recomienda deshabilitarla. Si la deshabilita, puede resolver algunos falsos positivos a corto plazo, pero a largo plazo estará expuesto a más riesgos. Configurar la autenticación del lado del remitente o hacer ajustes en las políticas de phishing, generalmente son eventos únicos o requieren un mantenimiento mínimo y periódico. Pero, recuperarse de ataques de phishing en los que se han expuesto datos o se han puesto en riesgo los activos es mucho más peligroso.
@@ -546,18 +518,8 @@ Recuerde que debe aplicarse a los dominios que se someten a un enrutamiento indi
 ### <a name="information-for-individual-users"></a>Información para usuarios individuales
 
 Los usuarios individuales tienen una interacción limitada con la sugerencia de seguridad contra la suplantación. Pero, hay varias cosas que puede realizar para solucionar escenarios comunes.
-  
-### <a name="common-scenario-1---mailbox-forwarding"></a>Escenario común n.º 1: reenvío del buzón
-
-Si usa otro servicio de correo electrónico y reenvía el correo electrónico a Office 365 u Outlook.com, es posible que su correo electrónico se marque como suplantación de identidad y reciba una sugerencia de seguridad roja. Office 365 y Outlook.com planean abordar esto automáticamente cuando el reenviador es de Outlook.com, Office 365, Gmail o cualquier otro servicio que use el [protocolo ARC](https://arc-spec.org). Pero, hasta que la corrección se implemente, los usuarios deben usar la característica de cuentas conectadas para importar sus mensajes directamente, en lugar de usar la opción de reenvío.
-  
-Para configurar las cuentas conectadas en Office 365, seleccione el icono de engranaje en la esquina superior derecha de la interfaz web de Office 365 \> Correo \> Correo \> Cuentas \> Cuentas conectadas.
-  
-![Office 365: opción de cuentas conectadas](media/e8e841ca-8861-4d83-8506-2a0858c51010.jpg)
-  
-En Outlook.com, la ruta es el icono de engranaje \> Opciones \> Correo \> Cuentas \> Cuentas conectadas.
-  
-### <a name="common-scenario-2---discussion-lists"></a>Escenario común n.º 2: listas de discusión
+ 
+### <a name="common-scenario-1---discussion-lists"></a>Escenario común n.º 1: listas de discusión
 
 Se sabe que las listas de discusión tienen problemas con la protección contra la suplantación debido a la forma en que reenvían el mensaje y modifican su contenido, pero conservan la dirección De: original.
   
@@ -659,7 +621,7 @@ Una vez que haya iniciado un registro SPF con una directiva de reserva de ?all, 
   
 ### <a name="what-if-you-are-the-owner-of-a-mailing-list"></a>¿Qué ocurre si es el propietario de una lista de distribución de correo?
 
-Vea la sección [Escenario común n.º 2: listas de discusión](#common-scenario-2---discussion-lists).
+Vea la sección [Escenario común n.º 1: listas de discusión](#common-scenario-1---discussion-lists).
   
 ### <a name="what-if-you-are-an-infrastructure-provider-such-as-an-internet-service-provider-isp-email-service-provider-esp-or-cloud-hosting-service"></a>¿Qué ocurre si es un proveedor de infraestructura como un proveedor de servicios de Internet (ISP), un proveedor de servicio de correo electrónico (ESP) o servicio de hospedaje en la nube?
 

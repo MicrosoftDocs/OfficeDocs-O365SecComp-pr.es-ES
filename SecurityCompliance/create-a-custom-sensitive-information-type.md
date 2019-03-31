@@ -12,13 +12,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Obtenga información sobre cómo crear, modificar, quitar y probar tipos personalizados de información confidencial para DLP en la interfaz gráfica de usuario del Centro de seguridad y cumplimiento de Office 365.
-ms.openlocfilehash: afc5479f08909020d04768c9ca9c20438472b92d
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+description: Obtenga información sobre cómo crear, modificar, quitar y probar tipos personalizados de información confidencial para DLP en la interfaz gráfica de usuario del Centro de seguridad y cumplimiento.
+ms.openlocfilehash: de7bbc8ee624fe9468dc64a9811db31d529984bf
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30639067"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999093"
 ---
 # <a name="create-a-custom-sensitive-information-type"></a>Crear un tipo personalizado de información confidencial
 
@@ -42,11 +42,11 @@ Estas son las partes básicas de un tipo personalizado de información confidenc
 
     ![Opciones de precisión de coincidencia y recuento de instancias](media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
 
-Para crear tipos personalizados de información confidencial en el Centro de seguridad y cumplimiento de Office 365, use una de estas opciones:
+Para crear tipos personalizados de información confidencial en el Centro de seguridad y cumplimiento, use una de estas opciones:
 
 - **Interfaz de usuario**: este método es más sencillo y rápido, pero tiene menos opciones de configuración que si usa PowerShell. En el resto de este tema, se describen estos procedimientos.
 
-- **PowerShell**: para usar este método, primero tiene que crear un archivo XML (denominado _paquete de reglas_) que contiene uno o más tipos de información confidencial y, después, usará PowerShell para importar el paquete de reglas (importar el paquete de reglas es complicado en comparación con la creación del paquete de reglas). Este método es mucho más complejo que si se usa la interfaz de usuario, pero ofrece más opciones de configuración. Para obtener instrucciones, vea [Crear un tipo personalizado de información confidencial en PowerShell del Centro de seguridad y cumplimiento de Office 365](create-a-custom-sensitive-information-type-in-scc-powershell.md).
+- **PowerShell**: para usar este método, primero tiene que crear un archivo XML (denominado _paquete de reglas_) que contiene uno o más tipos de información confidencial y, después, usará PowerShell para importar el paquete de reglas (importar el paquete de reglas es complicado en comparación con la creación del paquete de reglas). Este método es mucho más complejo que si se usa la interfaz de usuario, pero ofrece más opciones de configuración. Para obtener instrucciones, vea [Crear un tipo personalizado de información confidencial en PowerShell del Centro de seguridad y cumplimiento](create-a-custom-sensitive-information-type-in-scc-powershell.md).
 
 En la tabla siguiente, se describen las principales diferencias:
 
@@ -58,9 +58,9 @@ En la tabla siguiente, se describen las principales diferencias:
 |Los tipos de información confidencial personalizados se agregan al paquete de reglas denominado Microsoft.SCCManaged.CustomRulePack|Puede crear hasta 10 paquetes de reglas que contengan tipos de información confidencial.|
 |La coincidencia de patrones necesita la detección del patrón principal y todas las evidencias complementarias (se usa el operador AND implícito).|La coincidencia de patrones necesita la detección del patrón principal y una cantidad configurable de evidencias complementarias (pueden usarse los operadores AND y OR implícitos).|
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
-- Para abrir el Centro de seguridad y cumplimiento, vea [Ir al Centro de seguridad y cumplimiento de Office 365](go-to-the-securitycompliance-center.md).
+- Para abrir el Centro de seguridad y cumplimiento, vea [Ir al Centro de seguridad y cumplimiento](go-to-the-securitycompliance-center.md).
 
 - Para usar los tipos personalizados de información confidencial, es necesario estar familiarizado con el uso de expresiones regulares (regex). Para obtener más información sobre el motor Boost.RegEx (anteriormente denominado RegEx++) usado para procesar el texto, vea [Boost.Regex 5.1.3](https://www.boost.org/doc/libs/1_68_0/libs/regex/doc/html/).
 

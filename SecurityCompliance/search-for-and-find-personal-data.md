@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo buscar y encontrar datos personales en Office 365.
-ms.openlocfilehash: 3fa35b168d9a7e89ead437cba33637b478bb34c7
-ms.sourcegitcommit: 15983a08a4ae9c2050344172c7e957830ce3867e
+ms.openlocfilehash: 3c2981116e2abb3518a132084a697618ef3261cc
+ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30373881"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30955183"
 ---
 # <a name="search-for-and-find-personal-data"></a>Buscar y encontrar datos personales
 
@@ -72,13 +72,12 @@ Si es necesario, agregue parámetros a la consulta para reducir los falsos posit
 </tbody>
 </table>
 
-Próximamente, podrá crear y modificar tipos de información confidencial en una nueva interfaz de usuario en el Centro de seguridad y cumplimiento. Puede ver los resultados coincidentes dinámicamente y ajustar los tipos de información confidencial para satisfacer sus necesidades.
 
 ## <a name="search-for-sensitive-information-types-using-content-search"></a>Buscar tipos de información confidencial con la Búsqueda de contenido
 
 Comience a buscar información personal mediante los tipos de información confidencial que se incluyen con Office 365. Se muestran en el Centro de seguridad y cumplimiento en Clasificación.
 
-Este tema contiene una lista de tipos de información confidencial actuales que se aplican a los ciudadanos de la Unión Europea. Úselos como punto de partida. Compruebe el Centro de seguridad y cumplimiento para ver si hay adiciones que pueden ayudarle con el cumplimiento del RGPD.
+Este tema contiene una lista de algunos tipos de información confidencial que se aplican a los ciudadanos de la Unión Europea. Consulte el centro de seguridad o en el centro de cumplimiento para agregar nuevos tipos que pueden ayudarle con el cumplimiento del RGPD.
 
 Consulte este artículo: [Qué buscan los tipos de información confidencial](https://support.office.com/es-ES/article/What-the-sensitive-information-types-look-for-fd505979-76be-4d9f-b459-abef3fc9e86b).
 

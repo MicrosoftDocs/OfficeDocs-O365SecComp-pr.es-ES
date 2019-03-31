@@ -18,12 +18,12 @@ search.appverid:
 ms.custom: ''
 ms.assetid: ''
 description: Aprenda a modificar o crear nuevos tipos de información confidencial de Office 365 para RGPD.
-ms.openlocfilehash: c55828572760485eb1d197178d918aee7acaa0b6
-ms.sourcegitcommit: 15983a08a4ae9c2050344172c7e957830ce3867e
+ms.openlocfilehash: 6810a6b6d9b0ea34ab11cc778c32a76d556d7a17
+ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30373941"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30955223"
 ---
 # <a name="customize-or-create-a-new-sensitive-information-type"></a>Personalizar o crear un nuevo tipo de información confidencial
 
@@ -37,7 +37,7 @@ En este artículo se proporcionan tres ejemplos para ilustrar cómo modificar o 
 
 Consulte también:
 
-- [Crear un tipo personalizado de información confidencial en PowerShell del Centro de seguridad y cumplimiento de Office 365](create-a-custom-sensitive-information-type-in-scc-powershell.md)
+- [Crear un tipo de información confidencial personalizado con PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md)
 
 - [Personalizar un tipo de información confidencial integrado](customize-a-built-in-sensitive-information-type.md)
 
@@ -143,7 +143,7 @@ Use estos recursos para formular y optimizar consultas con KQL:
 
 -   [Referencia de la sintaxis del lenguaje de consultas de palabras clave (KQL) (DMC)](https://docs.microsoft.com/es-ES/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
--   [Ejecutar una búsqueda de contenido en el Centro de seguridad y cumplimiento de Office 365](https://support.office.com/es-ES/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a) 
+-   [Ejecutar una búsqueda de contenido](https://support.office.com/es-ES/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a) 
 
 La Búsqueda de contenido proporciona otro recurso para ayudarle a desarrollar consultas KQL y tipos de información confidencial: palabras clave. ¿Por qué usar la lista de palabras clave? Puede obtener estadísticas que muestran cuántos elementos coinciden con cada palabra clave. Esto puede ayudarle a identificar rápidamente qué palabras clave son las más (y menos) eficaces. Para obtener más información acerca de las estadísticas de búsqueda, consulte [Ver las estadísticas de palabra clave de resultados de búsqueda de contenido](https://support.office.com/es-ES/article/View-keyword-statistics-for-Content-Search-results-9701a024-c52e-43f0-b545-9a53478aec04).
 

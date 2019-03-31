@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 0e22bcf3-bad3-42a4-b44f-276e0cf4790f
 description: 'Resumen: Cree suscripciones de evaluación de Office 365 y Enterprise Mobility + Security (EMS) que incluyan usuarios y grupos en un entorno de desarrollo y prueba para una campaña política.'
-ms.openlocfilehash: 098ae2c3005e0c6ba7939c52260b1a2c49dc557e
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: 0b2bf64a408eeee457dfc6c2ac8565e91c927f72
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223709"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "31000143"
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>Configurar grupos y usuarios en un entorno de desarrollo y prueba de campaña política
 
@@ -36,9 +36,9 @@ Siga primero las instrucciones de la **fase 2** del [entorno de desarrollo y pr
   
 Después, inscríbase en la suscripción de evaluación de EMS E5 y la agregará a la misma organización de la suscripción de evaluación de Office 365.
   
-1. Si es necesario, inicie sesión en el portal de Office 365 con las credenciales de la cuenta de administrador global de la suscripción de evaluación. Para obtener ayuda, vea [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4) (Dónde iniciar sesión en Office 365).
+1. Si es necesario, inicie sesión en el centro de administración con las credenciales de la cuenta de administrador global de la suscripción de evaluación. Para obtener ayuda, vea [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4) (Dónde iniciar sesión en Office 365).
     
-2. Haga clic en el icono **Administrador**.
+2. Haga clic en el icono **Administración**.
     
 3. En la pestaña **Centro de administración de Office** del explorador, en el panel de navegación izquierdo, haga clic en **Facturación > Servicios de compra**.
     
@@ -50,7 +50,7 @@ Después, inscríbase en la suscripción de evaluación de EMS E5 y la agregará
     
 Después, habilite la licencia de EMS E5 para la cuenta de administrador global.
   
-1. En el panel de navegación izquierdo de la pestaña **Centro de administración de Office 365** del explorador, haga clic en **Usuarios > Usuarios activos**.
+1. En la pestaña **Centro de administración de Microsoft 365** del explorador, en el panel de navegación izquierdo, haga clic en **Usuarios > Usuarios activos**.
     
 2. Haga clic en la cuenta de administrador global y, después, en **Editar** para **Licencias de productos**.
     

@@ -3,7 +3,7 @@ title: Restringir el acceso al contenido mediante el cifrado en las etiquetas de
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: 10/22/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de confidencialidad, puede restringir el acceso al contenido al que se aplique la etiqueta. Las etiquetas de confidencialidad pueden utilizar el cifrado para proteger el contenido.
-ms.openlocfilehash: 6f8100ea0196cd1637bbad69757c9cc6e98f5bac
-ms.sourcegitcommit: cf9d9b545a7c153d314aa9c08c7fb16fcd785b3e
+ms.openlocfilehash: 69deeed69a5b2970d387c30b01a062c6c068c567
+ms.sourcegitcommit: 799a958fcac643f62dfac6fa04020f2f4758635c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30737700"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30997046"
 ---
 # <a name="restrict-access-to-content-by-using-encryption-in-sensitivity-labels"></a>Restringir el acceso al contenido mediante el cifrado en las etiquetas de confidencialidad
 
@@ -36,7 +36,7 @@ Cuando se encripta un documento o correo electrónico, el acceso al contenido es
 - Permanece encriptado independientemente de dónde resida, dentro o fuera de su organización, incluso si cambia el nombre del archivo.
 - Se encripta tanto en reposo (por ejemplo, en una cuenta de OneDrive) como y en tránsito (por ejemplo, un correo electrónico enviado).
 
-La configuración de encriptado está disponible en el Centro de seguridad y cumplimiento de Office 365 > página **Etiquetas** > pestaña **Confidencialidad** > **Crear una etiqueta**.
+La configuración de cifrado está disponible cuando se crea una etiqueta de confidencialidad en el Centro de cumplimiento de Microsoft 365, Centro de seguridad de Microsoft 365 o el Centro de seguridad y cumplimiento de Office 365.
 
 ## <a name="how-encryption-works"></a>Cómo funciona la encriptación
 

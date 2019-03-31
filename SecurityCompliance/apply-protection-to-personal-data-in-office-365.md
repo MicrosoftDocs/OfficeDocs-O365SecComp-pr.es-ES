@@ -16,16 +16,16 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo usar las directivas DLP para proteger datos personales en Office 365.
-ms.openlocfilehash: c0b78611a81452ecd8cb8993842c26f6012bb736
-ms.sourcegitcommit: 15983a08a4ae9c2050344172c7e957830ce3867e
+ms.openlocfilehash: af4af4fd8a80b1f1ad34919ed1380f4fed7d9461
+ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30373951"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30955253"
 ---
 # <a name="apply-protection-to-personal-data-in-office-365"></a>Aplicar protección a los datos personales de Office 365
 
-La protección de información personal en Office 365 incluye el uso de funciones de prevención de pérdida de datos. Con las directivas de prevención de pérdida de datos (DLP) del Centro de seguridad y cumplimiento de Office 365, puede identificar, supervisar y proteger automáticamente información confidencial en todo Office 365.
+La protección de información personal en Office 365 implica el uso de funciones de prevención de pérdida de datos. Con una directiva de prevención de pérdida de datos (DLP) del centro cumplimiento puede identificar, supervisar y proteger automáticamente información confidencial en todo Office 365.
 
 En este tema se describe cómo se usan las DLP para proteger los datos personales. Este tema también muestra otras capacidades de protección que pueden usarse para cumplir el RGPD, incluyendo la configuración de permisos en bibliotecas de SharePoint y el uso de directivas de acceso de dispositivo.
 

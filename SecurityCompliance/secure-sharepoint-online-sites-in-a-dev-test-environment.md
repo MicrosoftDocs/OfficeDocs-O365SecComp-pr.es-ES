@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 06af70f3-e7dc-4ee2-a385-fb4d61a5e93b
 description: 'Resumen: cree sitios de grupo de SharePoint Online en un entorno de desarrollo y pruebas, que pueden ser públicos, privados, confidenciales o extremadamente confidenciales.'
-ms.openlocfilehash: eb3b2012a36743e8c34453399b02b91f3595ec6c
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.openlocfilehash: 902582e198cb24ed4cce9b8b1e73dfbf3ae9dd52
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30223639"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999983"
 ---
 # <a name="secure-sharepoint-online-sites-in-a-devtest-environment"></a>Protección de sitios de SharePoint Online en un entorno de desarrollo y pruebas
 
@@ -40,9 +40,9 @@ Siga primero las instrucciones de la **fase 2** del [entorno de desarrollo y pr
   
 Después, regístrese en la suscripción de prueba de EMS y agréguela a la misma organización de la suscripción de prueba de Office 365.
   
-1. Si es necesario, inicie sesión en el portal de Office 365 con las credenciales de la cuenta de administrador global de la suscripción de evaluación. Para obtener ayuda, vea [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4) (Dónde iniciar sesión en Office 365).
+1. Si es necesario, inicie sesión en el centro de administración con las credenciales de la cuenta de administrador global de la suscripción de evaluación. Para obtener ayuda, vea [Dónde iniciar sesión en Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
-2. Haga clic en el icono **Administrador**.
+2. Haga clic en el icono **Administración**.
     
 3. En la pestaña **Centro de administración de Office** del explorador, en el panel de navegación izquierdo, haga clic en **Facturación > Servicios de compra**.
     
@@ -54,7 +54,7 @@ Después, regístrese en la suscripción de prueba de EMS y agréguela a la mism
     
 Después, habilite la licencia de Enterprise Mobility + Security E5 para la cuenta de administrador global.
   
-1. En la pestaña **Centro de administración de Office 365** del explorador, en el panel de navegación izquierdo, haga clic en **Usuarios > Usuarios activos**.
+1. En la pestaña **Centro de administración de Microsoft 365** del explorador, en el panel de navegación izquierdo, haga clic en **Usuarios > Usuarios activos**.
     
 2. Haga clic en la cuenta de administrador global y, después, en **Editar** para **Licencias de productos**.
     
@@ -195,7 +195,7 @@ Después, siga estos pasos para comprobar que la asignación de licencias basada
 
 En esta fase, se crean las etiquetas para los diferentes niveles de seguridad de las carpetas de documentos de sitios de grupo de SharePoint Online.
   
-1. Si es necesario, use una instancia privada del explorador de Internet e inicie sesión en el portal de Office 365 con la cuenta de administrador global de la suscripción de evaluación de Office 365 E5. Para obtener ayuda, vea [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4) (Dónde iniciar sesión en Office 365).
+1. Si es necesario, use una instancia privada del explorador de Internet e inicie sesión en el centro de administración con la cuenta de administrador global de la suscripción de evaluación de Office 365 E5. Para obtener ayuda, vea [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4) (Dónde iniciar sesión en Office 365).
     
 2. En la pestaña **Inicio de Microsoft Office**, haga clic en el icono **Administrador**.
     
@@ -243,7 +243,7 @@ En esta fase se crean y configuran los cuatro tipos de sitios de grupo de ShareP
 
 Para crear un sitio de grupo público de línea base de SharePoint Online, haga lo siguiente:
   
-1. Si es necesario, use un explorador en el equipo local e inicie sesión en el portal de Office 365 con la cuenta de administrador global. Para obtener ayuda, vea [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4) (Dónde iniciar sesión en Office 365).
+1. Si es necesario, use un explorador en el equipo local e inicie sesión en el centro de administración con la cuenta de administrador global. Para obtener ayuda, vea [Dónde iniciar sesión en Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
 2. En la lista de iconos, haga clic en **SharePoint**.
     
@@ -277,7 +277,7 @@ Esta es el resultado de la configuración.
 
 Para crear un sitio de grupo de SharePoint Online privado como línea base para un proyecto dentro de la organización, siga este procedimiento:
   
-1. Si es necesario, use un explorador en el equipo local e inicie sesión en el portal de Office 365 con la cuenta de administrador global. Para obtener ayuda, vea [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4) (Dónde iniciar sesión en Office 365).
+1. Si es necesario, use un explorador en el equipo local e inicie sesión en el centro de administración con la cuenta de administrador global. Para obtener ayuda, vea [Dónde iniciar sesión en Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
 2. En la lista de iconos, haga clic en **SharePoint**.
     
@@ -311,7 +311,7 @@ Esta es el resultado de la configuración.
 
 Para crear un sitio de grupo de SharePoint Online aislado que tenga el nivel confidencial para recursos de campañas de marketing, siga este procedimiento:
   
-1. Abra un explorador en el equipo local e inicie sesión en el portal de Office 365 con la cuenta de administrador global. Para obtener ayuda, vea [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4) (Dónde iniciar sesión en Office 365).
+1. Abra un explorador en el equipo local e inicie sesión en el centro de administración con la cuenta de administrador global. Para obtener ayuda, vea [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4) (Dónde iniciar sesión en Office 365).
     
 2. En la lista de iconos, haga clic en **SharePoint**.
     
@@ -427,7 +427,7 @@ Esta es el resultado de la configuración.
 
 Para crear un sitio de grupo aislado de SharePoint Online que tenga el nivel extremadamente confidencial para recursos estratégicos de empresa dirigido a los directores ejecutivos de la organización, haga lo siguiente:
   
-1. Si es necesario, use un explorador en el equipo local e inicie sesión en el portal de Office 365 con la cuenta de administrador global. Para obtener ayuda, vea [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4) (Dónde iniciar sesión en Office 365).
+1. Si es necesario, use un explorador en el equipo local e inicie sesión en el centro de administración con la cuenta de administrador global. Para obtener ayuda, vea [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4) (Dónde iniciar sesión en Office 365).
     
 2. En la lista de iconos, haga clic en **SharePoint**.
     
@@ -491,9 +491,9 @@ Después, configure la carpeta de documentos del sitio de grupo Estrategia de em
     
 Después, configure una directiva de DLP que impida a los usuarios compartir un documento en un sitio de grupo de SharePoint Online con la etiqueta Extremadamente confidencial, que incluye el sitio Estrategia de empresa, fuera de la organización.
   
-1. Si fuera necesario, use un explorador en el equipo local e inicie sesión en el portal de Office 365 con una cuenta que tenga el rol Administrador de seguridad o Administrador de la compañía. Para obtener ayuda, vea [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4) (Dónde iniciar sesión en Office 365).
+1. Si fuera necesario, use un explorador en el equipo local e inicie sesión en el centro de administración con una cuenta que tenga el rol Administrador de seguridad o Administrador de la compañía. Para obtener ayuda, vea [Dónde iniciar sesión en Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
-2. En la pestaña **Inicio de Microsoft Office** del explorador, haga clic en el icono de **Seguridad y cumplimiento**.
+2. En la pestaña **Inicio de Microsoft Office** del explorador, haga clic en el icono **Seguridad y cumplimiento**.
     
 3. En la nueva pestaña **Seguridad y cumplimiento** del explorador, haga clic en **Prevención de pérdida de datos > Directiva**.
     
@@ -531,13 +531,13 @@ Después, configure una directiva de DLP que impida a los usuarios compartir un 
     
 19. En el panel **Do you want to turn on the policy or test things out first?** (¿Desea activar la directiva o probarla primero?), haga clic en **Yes, turn it on right away** (Sí, activarla inmediatamente) y luego en **Siguiente**.
     
-20. En el panel **Revise su configuración**, haga clic en **Crear** y, después, en **Cerrar**.
+20. En el panel **Revise su configuración**, haga clic en **Crear** y luego en **Cerrar**.
     
-Después, siga las instrucciones de [Activar Azure RMS con el Centro de administración de Office 365](https://docs.microsoft.com/information-protection/deploy-use/activate-office365).
+Después, siga las instrucciones de [Activar Azure RMS con el Centro de administración de Microsoft 365](https://docs.microsoft.com/information-protection/deploy-use/activate-office365).
   
 Después, siga estos pasos para configurar Azure Information Protection con una nueva directiva con ámbito y la subetiqueta de protección y permisos para el grupo de directivos:
   
-1. Inicie sesión en el portal de Office 365 con una cuenta que tenga el rol Administrador de seguridad o Administrador de la compañía. Para obtener ayuda, vea [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4) (Dónde iniciar sesión en Office 365).
+1. Inicie sesión en el centro de administración con una cuenta que tenga el rol Administrador de seguridad o Administrador de la compañía. Para obtener ayuda, vea [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4) (Dónde iniciar sesión en Office 365).
     
 2. En una pestaña independiente del explorador, vaya a Azure Portal ([https://portal.azure.com](https://portal.azure.com)).
     
@@ -577,11 +577,11 @@ Después, siga estos pasos para configurar Azure Information Protection con una 
 
 20. Haga clic en **Agregar o quitar etiquetas**. En el panel **Directiva: Agregar o quitar etiquetas**, seleccione **Directivos** y, después, haga clic en **Aceptar**.   
 
-21. Haga clic en **Aceptar**y, después, haga clic en **Guardar**.
+21. Haga clic en **Guardar**y después en **Aceptar**.
     
-Para proteger un documento con Azure Information Protection y la nueva etiqueta, [necesita instalar el cliente de Azure Information Protection](https://docs.microsoft.com/information-protection/rms-client/install-client-app) en un equipo de prueba, instalar Office desde el portal de Office 365 y, después, iniciar sesión desde Microsoft Word con una cuenta del grupo **Directivos** de la suscripción de prueba.
+Para proteger un documento con Azure Information Protection y la nueva etiqueta, [necesita instalar el cliente de Azure Information Protection](https://docs.microsoft.com/information-protection/rms-client/install-client-app) en un equipo de prueba, instalar Office desde el centro de administración y, después, iniciar sesión desde Microsoft Word con una cuenta del grupo **Directivos** de la suscripción de prueba.
   
-Esta es el resultado de la configuración.
+Esta es la configuración resultante.
   
 ![Protección de nivel extremadamente confidencial de un sitio de grupo de SharePoint Online aislado de Estrategia de la compañía.](media/c22695f9-50a1-4abf-a0dd-344b0c92cf94.png)
   
