@@ -429,7 +429,7 @@
 ### [Crear sitios de grupo en un entorno de desarrollo y prueba de campaña política](create-team-sites-in-a-political-campaign-dev-test-environment.md)
 ## [Protección de archivos y sitios de SharePoint Online](secure-sharepoint-online-sites-and-files.md)
 ### [Implementar sitios de SharePoint Online con tres niveles de protección](deploy-sharepoint-online-sites-for-three-tiers-of-protection.md)
-### [Proteger archivos de SharePoint Online con DLP y etiquetas de Office 365](protect-sharepoint-online-files-with-office-365-labels-and-dlp.md)
+### [Proteger archivos de SharePoint Online con DLP y etiquetas de retención](protect-sharepoint-online-files-with-office-365-labels-and-dlp.md)
 ### [Proteger archivos de SharePoint Online con Azure Information Protection](protect-sharepoint-online-files-with-azure-information-protection.md)
 ## [Sitios de grupo de SharePoint Online aislados](isolated-sharepoint-online-team-sites.md)
 ### [Diseñar un sitio de grupo de SharePoint Online aislado](design-an-isolated-sharepoint-online-team-site.md)
