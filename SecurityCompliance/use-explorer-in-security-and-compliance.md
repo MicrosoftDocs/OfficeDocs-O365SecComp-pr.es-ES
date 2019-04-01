@@ -3,7 +3,7 @@ title: Usar el explorador de amenazas en &amp; el centro de seguridad y cumplimi
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 03/28/2019
+ms.date: 03/31/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre el explorador (también denominado explorador de amenazas) &amp; en el centro de seguridad y cumplimiento.
-ms.openlocfilehash: e6177970edc67c8b9e1c0ae6144f4c37f116012f
-ms.sourcegitcommit: 787a0fef671e5dc6f5e805b580321b2edbfad8e9
+ms.openlocfilehash: c782e5962164b7d35947befe526c20f7dc0943d5
+ms.sourcegitcommit: 691370682825a7601bd4b77d0a8c4b51ed15682f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30989615"
+ms.lasthandoff: 03/31/2019
+ms.locfileid: "31014019"
 ---
 # <a name="use-threat-explorer-in-the-security-amp-compliance-center"></a>Usar el explorador de amenazas en &amp; el centro de seguridad y cumplimiento
 
@@ -47,18 +47,22 @@ El informe se actualiza para mostrar el malware de resultados detectado en el co
 
 ## <a name="view-data-about-phishing-urls-and-click-verdict"></a>Ver datos sobre direcciones URL de suplantación de identidad y hacer clic en veredicto
 
-SuPongamos que desea ver los intentos de suplantación de identidad mediante direcciones URL en el correo electrónico, incluida una lista de direcciones URL que se han permitido, bloqueado y reemplazado. Para ello, use la vista de [correo electrónico _GT_ phish](threat-explorer-views.md#email--phish) de Explorer.
+SuPongamos que desea ver los intentos de suplantación de identidad mediante direcciones URL en el correo electrónico, incluida una lista de direcciones URL que se han permitido, bloqueado y reemplazado.  La identificación de las direcciones URL en las que se hizo clic requiere [vínculos seguros de ATP](atp-safe-links.md). (Asegúrese de que ha configurado y aplicado [las directivas de vínculos seguros ATP](set-up-atp-safe-links-policies.md) a sus usuarios para la protección en tiempo de clic y el registro de los veredictos en vínculos seguros de ATP). Para revisar direcciones URL de phish en mensajes y hacer clic en direcciones URL en mensajes de Phish, use el [correo electrónico > de phish](threat-explorer-views.md#email--phish) vista de Explorer.
 
 1. En el centro de seguridad & cumplimiento[https://protection.office.com](https://protection.office.com)(), elija **Threat Management** > **Explorer**.
 2. En el **menú Ver** , elija**phishing**de **correo electrónico** > .<br/>![Menú Ver para el explorador](media/ExplorerViewEmailPhishMenu.png)<br/>
 3. Haga clic en **remitente**y, a continuación, elija **direcciones URL** > ,**haga clic en veredicto**.
 4. Seleccione una o más opciones, como **bloqueada** y **bloque**invalidado y, a continuación, haga clic en el botón **Actualizar** para aplicar ese filtro.<br/>![Direcciones URL y haga clic en veredictos](media/ThreatExplorerEmailPhishClickVerdictOptions.png)<br/>
 
-El informe se actualiza para mostrar las direcciones URL de suplantación de identidad (phishing) detectadas en correo electrónico que se bloquearon (o visitaron a pesar de una advertencia), junto con el estado de entrega del correo electrónico Desde aquí, puede realizar análisis adicionales. Por ejemplo, debajo del gráfico, puede ver las direcciones URL principales que se bloquearon en el correo electrónico de su organización. 
+El informe se actualiza para mostrar dos tablas de direcciones URL diferentes en la ficha dirección URL siguiente:
+1. Las **direcciones URL principales** son las que se encuentran en los mensajes que se han filtrado y la acción de entrega de correo electrónico se recuento para cada dirección URL. En la vista correo phish, esta lista normalmente contendrá direcciones URL legítimas. Los atacantes incluyen una mezcla de direcciones URL buenas y incorrectas en sus mensajes para intentar entregarlos, pero hacen que los vínculos malintencionados sean más interesantes para el usuario hacer clic en. La tabla de direcciones URL se ordena por recuento de correo electrónico total (Nota: esta columna no se muestra para simplificar la vista).
+2. Los **clics principales** son las direcciones URL contenidas en vínculos seguros en las que se hizo clic, ordenadas por número total de clics (esta columna tampoco se muestra para simplificar la vista). Número total de recuentos por columna indique los vínculos seguros haga clic en recuento de veredictos para cada dirección URL con clic. En la vista de correo electrónico phish, estos serán vínculos sospechosos o malintencionados, pero podrían incluir direcciones URL limpias que se encuentren en mensajes de suplantación dese. Los clics de dirección URL en vínculos desajustados no se mostrarán aquí.
+
+Las dos tablas URL muestran las direcciones URL principales en los correos electrónicos de suplantación de identidad (phishing) por estado de entrega y muestran los clics de dirección URL que se bloquearon (o visitaron a pesar de una advertencia) para que pueda comprender los posibles vínculos no válidos que los usuarios han recibido e interactúan con los usuarios. Desde aquí, puede realizar análisis adicionales. Por ejemplo, debajo del gráfico, puede ver las direcciones URL principales en los correos electrónicos que se bloquearon en el entorno de su organización. 
 
 ![URL del explorador que se bloquearon](media/ExplorerPhishClickVerdictURLs.png) 
 
-Seleccione una dirección URL para ver información más detallada.
+Seleccione una dirección URL para ver información más detallada. Tenga en cuenta que en el cuadro de diálogo de URL flotante, se quita el filtrado en los correos electrónicos para mostrarle la vista completa de la exposición de la URL en su entorno. Esto le permite filtrar los correos electrónicos en el explorador a los que le interesa, encontrar direcciones URL específicas que son posibles amenazas y, a continuación, ampliar la comprensión de la exposición de URL en su entorno (a través del cuadro de diálogo de detalles de URL) sin tener que agregar filtros de URL al Vista del explorador.
 
 ## <a name="review-email-messages-reported-by-users"></a>Revisar los mensajes de correo electrónico enviados por los usuarios
 
