@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Las etiquetas de retención de Office 365 ayudan a realizar las acciones adecuadas en el contenido adecuado. Con las etiquetas de retención, puede clasificar los datos de su organización para administrarlos mejor y aplicar reglas de retención basadas en esa clasificación. También puede usar etiquetas de retención para implementar la administración de registros en Office 365.
-ms.openlocfilehash: 174be4cbb55b72a3bc8751460ff030b38238590e
-ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
+ms.openlocfilehash: 50b002236bb57094f170d4b796ee20c0268fbdd1
+ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30900139"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30955243"
 ---
 # <a name="overview-of-retention-labels"></a>Introducción a las etiquetas de retención
 
@@ -384,11 +384,13 @@ Una etiqueta de retención puede exigir acciones de retención en el contenido. 
   
 Para obtener más información, vea [Usar una etiqueta como una condición en una directiva DLP](data-loss-prevention-policies.md#using-a-label-as-a-condition-in-a-dlp-policy).
   
-## <a name="using-the-label-activity-explorer-and-the-data-governance-reports"></a>Usar el Explorador de actividad de etiquetas y los informes de gobierno de datos
+## <a name="monitor-retention-labels"></a>Supervisar etiquetas de retención.
 
 Después de publicar o aplicar automáticamente las etiquetas de retención, puede comprobar que se hayan aplicado en el contenido según lo previsto. Para supervisar las etiquetas de retención, puede usar el:
   
 - **Explorador de actividad de etiquetas**. Con el explorador (que se muestra abajo), puede buscar y visualizar rápidamente la actividad de etiquetas de retención de todo el contenido en SharePoint y OneDrive para la Empresa en los últimos 30 días. Para obtener más información, vea [Ver actividad de etiquetas para documentos](view-label-activity-for-documents.md).
+
+- Página de **Análisis de etiquetas** En el Centro de cumplimiento de Microsoft 365 y el Centro de seguridad de Microsoft 365, puede ver rápidamente las etiquetas principales y dónde se aplican También puede ver todo el contenido con una etiqueta específica. Para obtener más información, vea [Ver el uso de etiquetas con el análisis de etiquetas](label-analytics.md).
     
 - **Informes de gobierno de datos**. Con estos informes, puede ver rápidamente actividades y tendencias de etiquetas de retención de todo el contenido en Exchange, SharePoint y OneDrive para la Empresa en los últimos 90 días. Para obtener más información, vea [Ver los informes de gobierno de datos](view-the-data-governance-reports.md).
     

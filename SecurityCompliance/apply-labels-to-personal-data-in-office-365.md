@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Aprenda a usar etiquetas de Office como parte de su plan de protección RGPD.
-ms.openlocfilehash: 4167ace41c5d7534b7e90130c189e3c04e5c5100
-ms.sourcegitcommit: ae7ebae8801a69a825a363443e2676379197de19
+ms.openlocfilehash: 32f94e02dac81abaef46ef5495701e5037ff8c6b
+ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30800292"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30955203"
 ---
 # <a name="apply-labels-to-personal-data-in-office-365"></a>Aplicar etiquetas a datos personales en Office 365
 
@@ -167,7 +167,7 @@ Asegúrese de que su plan para implementar etiquetas incluye:
 
 ## <a name="create-labels-and-auto-apply-label-policies"></a>Crear etiquetas y aplicar directivas de etiqueta automáticamente
 
-Cree etiquetas y directivas en el Centro de seguridad y cumplimiento.
+Crear etiquetas y directivas en el centro de seguridad o el centro de cumplimiento.
 
 <table>
 <thead>
@@ -179,12 +179,12 @@ Cree etiquetas y directivas en el Centro de seguridad y cumplimiento.
 <tbody>
 <tr class="odd">
 <td align="left"><p>Conceda permisos a los miembros de su equipo de cumplimiento.</p></td>
-<td align="left"><p>Los miembros de su equipo de cumplimiento que vayan a crear etiquetas necesitan permisos para usar el Centro de seguridad y cumplimiento. Vaya a los permisos en el Centro de seguridad y cumplimiento y modifique los miembros del grupo Administrador de cumplimiento.</p>
-<p>Consulte <a href="https://support.office.com/en-ie/article/Give-users-access-to-the-Office-365-Security-Compliance-Center-2cfce2c8-20c5-47f9-afc4-24b059c1bd76">Proporcionar a los usuarios acceso al Centro de seguridad y cumplimiento de Office 365</a>.</p></td>
+<td align="left"><p>Los miembros de su equipo de cumplimiento que vayan a crear etiquetas necesitan permisos para usar el centro de seguridad y/o el centro de cumplimiento. Vaya a los permisos en el centro de seguridad o el centro de cumplimiento y modifique los miembros del grupo Administrador de cumplimiento.</p>
+<p>Vea <a href="https://support.office.com/en-ie/article/Give-users-access-to-the-Office-365-Security-Compliance-Center-2cfce2c8-20c5-47f9-afc4-24b059c1bd76">Proporcionar acceso a los usuarios al centro de seguridad y/o el centro de cumplimiento</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Crear etiquetas de retención.</p></td>
-<td align="left">Vaya a Clasificaciones en el Centro de seguridad y cumplimiento, elija Etiquetas de retención y cree las etiquetas en su entorno.</td>
+<td align="left">Vaya a Clasificaciones en el centro de seguridad o el centro de cumplimiento, elija Etiquetas de retención y cree las etiquetas para su entorno.</td>
 </tr>
 <tr class="odd">
 <td align="left"><p>Cree directivas de aplicación automática para etiquetas.</p></td>

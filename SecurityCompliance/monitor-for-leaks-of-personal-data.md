@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Obtenga información sobre las tres herramientas que puede usar para supervisar pérdidas de datos personales.
-ms.openlocfilehash: 1923aa00f4ababb66ff8c915a8c3d7a99ff1cd04
-ms.sourcegitcommit: 15983a08a4ae9c2050344172c7e957830ce3867e
+ms.openlocfilehash: d9b48589ace06186d5f177d1b90f02f8657637bd
+ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30373891"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30955213"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>Supervisar pérdidas de datos personales
 
@@ -57,7 +57,7 @@ Puede usar los informes DLP para lo siguiente:
 
 Además, puede usar los informes DLP para ajustar las directivas DLP a medida que las ejecuta en modo de prueba.
 
-Los informes DLP están en el Centro de seguridad y Cumplimiento. Vaya a Informes \> Ver informes. En Prevención de pérdida de datos (DLP), vaya a Coincidencias de regla y directiva DLP o a Falsos positivos y reemplazos de DLP.
+Los informes DLP están en el centro de seguridad y el centro de cumplimiento. Vaya a Informes \> Ver informes. En Prevención de pérdida de datos (DLP), elija Coincidencias de regla y directiva DLP o Falsos positivos y reemplazos de DLP.
 
 Para obtener más información, consulte [Ver los informes de prevención de pérdida de datos](https://support.office.com/es-ES/article/View-the-reports-for-data-loss-prevention-41eb4324-c513-4fa5-91c8-8fbd8aaba83b).
 
@@ -67,9 +67,9 @@ Para obtener más información, consulte [Ver los informes de prevención de pé
 
 El registro de auditoría de Office 365 contiene eventos de Exchange Online, SharePoint Online, OneDrive para la Empresa, Azure Active Directory, Microsoft Teams, Power BI, Sway y otros servicios de Office 365.
 
-El Centro de seguridad y cumplimiento de Office 365 ofrece dos formas de supervisar e informar en el registro de auditoría de Office 365:
+El centro de seguridad y el centro de cumplimiento ofrecen dos formas de supervisar e informar en el registro de auditoría de Office 365:
 
--   Configurar directivas de alerta ver alertas y supervisar tendencias: use la nueva directiva de alerta y el panel de herramientas de alerta en el Centro de seguridad y cumplimiento de Office 365.
+-   Configurar directivas de alerta, ver alertas y supervisar tendencias: use la directiva de alerta y el panel de herramientas de alerta en el centro de seguridad o el centro de cumplimiento.
 
 -   Buscar el registro de auditoría directamente: busque todos los eventos en un intervalo de fechas especificado, o puede filtrar los resultados basándose en criterios específicos, como la acción, el usuario que la realizó o el objeto de destino.
 
@@ -81,14 +81,14 @@ Existen soluciones que se adhieren a los Registros de auditoría unificados medi
 
 Más información sobre las directivas de alerta y buscar en el registro de auditoría:
 
--   [Directivas de alerta en el Centro de seguridad y cumplimiento de Office 365](https://support.office.com/es-ES/article/Alert-policies-in-the-Office-365-Security-Compliance-Center-8927B8B9-C5BC-45A8-A9F9-96C732E58264)
+-   [Directivas de alerta en los centros de seguridad y cumplimiento de Microsoft 365](https://support.office.com/es-ES/article/Alert-policies-in-the-Office-365-Security-Compliance-Center-8927B8B9-C5BC-45A8-A9F9-96C732E58264)
 
 -   [Buscar en el registro de auditoría de actividad de usuario y administración de Office 365](https://support.office.com/es-ES/article/Search-the-audit-log-for-user-and-admin-activity-in-Office-365-57CA5138-0AE0-4D34-BD40-240441EF2FB6) (introducción)
 
 -   [Activar o desactivar la búsqueda de registros de auditoría de Office 365](https://support.office.com/es-ES/article/Turn-Office-365-audit-log-search-on-or-off-e893b19a-660c-41f2-9074-d3631c95a014)
 
 -   
-  [Buscar en el registro de auditoría del Centro de seguridad y cumplimiento de Office 365](https://support.office.com/en-us/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c?ui=en-US&rs=en-US&ad=US)
+  [Buscar en el registro de auditoría](https://support.office.com/en-us/article/Search-the-audit-log-in-the-Office-365-Security-Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c?ui=en-US&rs=en-US&ad=US)
 
 -   
   [Search-UnifiedAuditLog](https://technet.microsoft.com/en-us/library/mt238501(v=exchg.160).aspx) (cmdlet) 
