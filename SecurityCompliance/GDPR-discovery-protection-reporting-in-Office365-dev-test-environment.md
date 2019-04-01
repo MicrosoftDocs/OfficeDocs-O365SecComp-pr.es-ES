@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: Aquí se detallan las capacidades del RGPD en Office 365.
-ms.openlocfilehash: d4d4113f6d78069a150e13c32ab192571671d986
-ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
+ms.openlocfilehash: aea1fec29da352285a59ac9286fc053ca10ec746
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 03/29/2019
-ms.locfileid: "30955283"
+ms.locfileid: "31001263"
 ---
 # <a name="gdpr-discovery-protection-and-reporting-in-the-office-365-devtest-environment"></a>RGPD: Informes, protección y detección de en el entorno de desarrollo y pruebas de Office 365
 
@@ -98,7 +98,7 @@ En esta fase, creará un tipo de información confidencial personalizado para la
 
 Contoso siempre hace referencia a los clientes usando un CCN en la correspondencia interna, la correspondencia externa, los documentos y otros formularios. En dicha empresa se necesita un tipo de información confidencial personalizado que permita detectar el uso de CCN en el contenido de Office 365 para, así, poder poner en marcha medidas de protección en el uso de esta información de identificación personal.
 
-1. Siga las instrucciones del tema [Conectarse al PowerShell del Centro de seguridad y cumplimiento de Office 365 usando la autenticación multifactor](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell?view=exchange-ps) y conéctese al Centro de seguridad y cumplimiento con el UPN de su cuenta de administrador global.
+1. Siga las instrucciones del tema [Conectarse al PowerShell del Centro de seguridad y cumplimiento usando la autenticación multifactor](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell?view=exchange-ps) y conéctese al Centro de seguridad y cumplimiento con el UPN de su cuenta de administrador global.
 2. Ejecute los siguientes comandos de PowerShell.
 
      ```

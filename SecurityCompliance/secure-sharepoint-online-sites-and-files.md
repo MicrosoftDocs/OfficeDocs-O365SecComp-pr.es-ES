@@ -18,12 +18,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: 'Resumen: recomendaciones de configuración para proteger archivos en SharePoint Online y Office 365.'
-ms.openlocfilehash: 3e41a46d244f88110b87426fe975b3f72e376984
-ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
+ms.openlocfilehash: cc31d6633b41fe8bcec57794247718c44c0fc555
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 03/29/2019
-ms.locfileid: "30955233"
+ms.locfileid: "30999383"
 ---
 # <a name="secure-sharepoint-online-sites-and-files"></a>Protección de archivos y sitios de SharePoint Online
 
@@ -125,7 +125,7 @@ En la tabla siguiente se resume la configuración para cada uno de los sitios de
 |Directivas DLP  <br/> |||Advierten a los usuarios cuando se envían archivos etiquetados como Confidenciales fuera de la organización.  <br/> Para bloquear el uso compartido externo de tipos de datos confidenciales, como números de tarjeta de crédito u otros datos personales, puede configurar directivas DLP adicionales para estos tipos de datos (incluidos los tipos de datos personalizados que configure).  <br/> |Impiden a los usuarios enviar archivos etiquetados como Extremadamente confidencial fuera de la organización. Permiten a los usuarios anular esto si proporcionan una justificación que incluya el nombre del usuario con el que van a compartir el archivo.  <br/> |
 |Etiquetas de confidencialidad  <br/> ||||Use las etiquetas de confidencialidad para cifrar y conceder permisos a los archivos automáticamente. Las etiquetas de confidencialidad usan Azure Information Protection para cifrar archivos. Esta protección viaja con los archivos en caso de que estos se pierdan.  <br/> Office 365 no puede leer los archivos cifrados con Azure Information Protection. Además, las directivas DLP solo funcionan con los metadatos (incluidas las etiquetas), pero no con los contenidos de sus archivos (como los números de tarjetas de crédito dentro de los archivos).  <br/> |
    
-Para conocer los pasos para implementar los cuatro tipos distintos de sitios de grupo de SharePoint Online en esta solución, vea [Implementar sitios de SharePoint Online para tres niveles de protección](deploy-sharepoint-online-sites-for-three-tiers-of-protection.md). Para conocer los pasos para crear un entorno de desarrollo y pruebas, vea [Proteger sitios de SharePoint Online en un entorno de desarrollo y pruebas](secure-sharepoint-online-sites-in-a-dev-test-environment.md). 
+Para consultar los pasos necesarios para la implementación de los cuatro tipos diferentes de sitios de grupo de SharePoint Online en esta solución, consulte [Implementar sitios de SharePoint Online con tres niveles de protección](deploy-sharepoint-online-sites-for-three-tiers-of-protection.md). 
   
 ## <a name="office-365-retention-labels"></a>Etiquetas de retención de Office 365
 
@@ -186,7 +186,3 @@ Para consultar los pasos necesarios para configurar Azure Information Protection
   
 [Adopción de la nube y soluciones híbridas](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
   
-[Proteger sitios de SharePoint Online en un entorno de desarrollo y pruebas](secure-sharepoint-online-sites-in-a-dev-test-environment.md)
-
-
-

@@ -3,7 +3,7 @@ title: Introducción a las directivas de retención
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: 11/16/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con una directiva de retención, puede decidir de forma proactiva si quiere retener o eliminar contenido, ambos (retener y, a continuación, eliminar el contenido), aplicar una directiva única a la toda la organización o solo a determinadas ubicaciones o usuarios, o aplicar una directiva a todo el contenido o solo a aquel que cumpla ciertas condiciones.
-ms.openlocfilehash: b07adf61f63e683de4f5868c227741dc957ffd68
-ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
+ms.openlocfilehash: 55680f16e92d33c2cbf612b6aabae1f51778f93a
+ms.sourcegitcommit: 799a958fcac643f62dfac6fa04020f2f4758635c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30935305"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30997146"
 ---
 # <a name="overview-of-retention-policies"></a>Introducción a las directivas de retención
 
@@ -31,7 +31,7 @@ Para la mayoría de las organizaciones, el volumen y la complejidad de los datos
     
 - **Ayudar a su organización a compartir los conocimientos de manera eficaz y ser más ágil** al asegurarse de que los usuarios trabajan solo con contenido actualizado y relevante para ellos. 
     
-Una directiva de retención en Office 365 puede ayudarle a lograr todos estos objetivos. Administrar el contenido suele requerir dos acciones:
+Una directiva de retención puede ayudarle a lograr todos estos objetivos. Administrar el contenido suele requerir dos acciones:
   
 - **Conservar** contenido para que no pueda eliminarse de forma permanente antes del fin del período de retención. 
     
@@ -49,10 +49,10 @@ Cuando el contenido está sujeto a una directiva de retención, las personas pue
   
 Por último, algunas organizaciones podrían tener que cumplir con regulaciones, como la regla 17a-4 de la SEC (Comisión de intercambio y valores), lo que requiere que, después de activar una directiva de retención, esta no se pueda desactivar ni hacer menos restrictiva. Para cumplir este requisito, puede usar el Bloqueo de conservación. Después de que se haya bloqueado una directiva, ninguna persona puede desactivarla ni hacerla menos restrictiva, ni siquiera el administrador.
   
-Las directivas de retención se crean y se administran en la página **Retención** del Centro de seguridad y cumplimiento de Office 365. 
-  
-![Página Retención en el Centro de seguridad y cumplimiento](media/107fc33a-6a29-44d1-85e4-0efef0544147.png)
-  
+Crear y administrar directivas de retención en:
+
+- La página de **Directivas** en el Centro de cumplimiento de Microsoft 365.
+- La página de **Retención** bajo **Gobierno de datos** en el Centro de seguridad y cumplimiento de Office 365
   
 ## <a name="how-a-retention-policy-works-with-content-in-place"></a>Funcionamiento de una directiva de retención local
 
@@ -322,7 +322,7 @@ Por último, una etiqueta o directiva de retención no puede eliminar ningún co
 
 Una sola directiva de retención se puede aplicar con facilidad a toda la organización y a ubicaciones en Office 365, incluidos Exchange Online, SharePoint Online, OneDrive para la Empresa y grupos de Office 365. Si necesita retener o eliminar contenido en cualquier parte de Office 365, le recomendamos que use una directiva de retención. También se pueden usar etiquetas con la configuración de retención: para obtener más información, vea [Información general de etiquetas](labels.md).
   
-A continuación, se muestran otras características que se han utilizado anteriormente para retener o eliminar contenido en Office 365. Estas características seguirán funcionando en paralelo con las directivas de retención creadas en el Centro de seguridad y cumplimiento. Pero en el futuro, para el gobierno de datos, le recomendamos que use una directiva de retención o etiquetas en lugar de estas características. Una directiva de retención es la única característica que puede conservar y eliminar contenido en Office 365.
+Hay otras características que se han utilizado anteriormente para retener o eliminar contenido en Office 365. Se muestran a continuación. Estas características seguirán funcionando en paralelo con las directivas de retención y las etiquetas de retención. Pero en adelante, para el gobierno de datos, se recomienda usar directivas de retención o etiquetas en lugar de estas características. Una directiva de retención es la única característica que puede conservar y eliminar contenido en Office 365.
   
 ### <a name="exchange-online"></a>Exchange Online
 
@@ -346,15 +346,15 @@ A continuación, se muestran otras características que se han utilizado anterio
     
 - [Directivas de administración de información](intro-to-info-mgmt-policies.md) (solo eliminación) 
     
-Tenga en cuenta que si anteriormente usaba cualquiera de las retenciones de eDiscovery para el gobierno de datos, debe usar en su lugar una directiva de retención para el cumplimiento proactivo. Debe usar una retención creada en el Centro de seguridad y cumplimiento solo para eDiscovery.
+Tenga en cuenta que, si anteriormente usaba cualquiera de las retenciones de eDiscovery con el propósito del gobierno de datos, deberá usar en su lugar una directiva de retención para el cumplimiento proactivo. Debería usar una retención solo para eDiscovery.
   
 ### <a name="retention-policies-override-information-management-policies"></a>Las directivas de retención prevalecen sobre las de administración de la información
 
-En los sitios de SharePoint, puede que use [directivas de administración de información](intro-to-info-mgmt-policies.md) para retener el contenido. Si aplica una directiva de retención creada en el Centro de seguridad y cumplimiento a un sitio que ya usa directivas de tipo de contenido o directivas de administración de información para una lista o biblioteca, estas se ignoran mientras la directiva de retención esté en vigor. 
+En los sitios de SharePoint, es posible que use [directivas de administración de la información](intro-to-info-mgmt-policies.md) para conservar contenido. Si aplica una directiva de retención a un sitio que ya usa directivas de tipo de contenido o directivas de administración de información para una lista o biblioteca, dichas directivas se ignorarán mientras la directiva de retención esté activa. 
   
 ## <a name="what-happened-to-preservation-policies"></a>¿Qué ha ocurrido con las directivas de conservación?
 
-Si utilizaba directivas de conservación, estas se han convertido automáticamente en directivas de retención que usan solo la acción de retener: la directiva no elimina el contenido. La directiva de conservación seguirá funcionando y conservando el contenido sin necesidad de ningún cambio. Puede encontrar estas directivas en la página **Retención** del Centro de seguridad y cumplimiento. Puede editar una directiva de conservación para cambiar el período de retención, pero no puede realizar otros cambios, como agregar o quitar ubicaciones. 
+Si estaba utilizando una directiva de conservación, esa directiva se ha convertido automáticamente en una directiva de retención que usa solo la acción de retener: la directiva no elimina el contenido. La directiva de conservación seguirán funcionando y conservando el contenido sin necesidad de aplicar ningún cambio. Puede encontrar estas directivas en la página **Directivas** en el Centro de cumplimiento de Microsoft 365 o en la página **Retención** bajo **Gobierno de datos** en el Centro de seguridad y cumplimiento. Puede editar una directiva de conservación para cambiar el periodo de retención, pero no puede realizar otros cambios, como agregar o quitar ubicaciones. 
   
 ## <a name="permissions"></a>Permisos
 
