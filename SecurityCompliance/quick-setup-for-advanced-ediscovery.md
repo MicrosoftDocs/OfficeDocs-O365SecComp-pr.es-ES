@@ -13,16 +13,16 @@ search.appverid:
 - MET150
 ms.assetid: d7ccd944-9698-41c7-a21b-677dc62973c4
 description: 'Obtenga información sobre cómo obtener acceso a eDiscovery avanzado de Office 365 desde el Centro de seguridad y cumplimiento de Office 365, así como revisar el flujo de trabajo típico para usar eDiscovery avanzado.  '
-ms.openlocfilehash: 69c3b7d281576462ed49bb5bf6306002eab63ba5
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 18ba3de9bd8b314eddef90252be532256f0b85a5
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218750"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999773"
 ---
 # <a name="quick-setup-for-office-365-advanced-ediscovery"></a>Configuración rápida de eDiscovery avanzado de Office 365
 
-En esta sección de configuración, se muestra cómo un administrador de eDiscovery del Centro de seguridad y cumplimiento de Office 365 puede empezar a usar eDiscovery avanzado. Se da por hecho un conocimiento práctico de ambas herramientas.
+En esta sección de configuración, se muestra cómo un administrador de eDiscovery del Centro de seguridad y cumplimiento de Microsoft 365 puede empezar a usar eDiscovery avanzado. Se da por hecho un conocimiento práctico de ambas herramientas.
   
 > [!NOTE]
 > Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 

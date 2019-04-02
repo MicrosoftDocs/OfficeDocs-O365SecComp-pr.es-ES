@@ -3,7 +3,7 @@ title: Introducción a las etiquetas de retención
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: 6/22/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Las etiquetas de retención de Office 365 ayudan a realizar las acciones adecuadas en el contenido adecuado. Con las etiquetas de retención, puede clasificar los datos de su organización para administrarlos mejor y aplicar reglas de retención basadas en esa clasificación. También puede usar etiquetas de retención para implementar la administración de registros en Office 365.
-ms.openlocfilehash: 50b002236bb57094f170d4b796ee20c0268fbdd1
-ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
+ms.openlocfilehash: e13c73e95a2b8bc25df0031a9bd94da4feb54b23
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 03/29/2019
-ms.locfileid: "30955243"
+ms.locfileid: "31000823"
 ---
 # <a name="overview-of-retention-labels"></a>Introducción a las etiquetas de retención
 
@@ -60,10 +60,9 @@ Con las etiquetas de retención, puede:
     
 - **Implementar la administración de registros en todo Office 365**, tanto en correos electrónicos como en documentos. Puede usar una etiqueta de retención para clasificar contenido como un registro. Cuando ocurra esto, la etiqueta no se puede cambiar ni quitar, y el contenido no se puede editar ni eliminar. 
     
-Las etiquetas de retención se crean y se administran en la página **Retención** de la página **Etiquetas** en el Centro de seguridad y cumplimiento de Office 365. 
+Las etiquetas de retención se crean en la página **Labels** > pestaña **Retención** en el Centro de cumplimiento de Microsoft 365, el Centro de seguridad de Microsoft 365 o el Centro de seguridad y cumplimiento de Office 365. 
   
-![Pestaña Retención en la página Etiquetas](media/Retention_tab_on_Labels_page.png)
- 
+
 ## <a name="how-retention-labels-work-with-label-policies"></a>Funcionamiento de las etiquetas de retención con directivas de etiquetas
 
 El proceso para que los usuarios de su organización puedan usar etiquetas de retención para clasificar contenido se divide en dos pasos: primero, se crean las etiquetas y, después, se publican en las ubicaciones seleccionadas. Al publicar etiquetas de retención, se crea una directiva de etiquetas.
@@ -98,7 +97,7 @@ Toda la información de esta sección se aplica solo a las etiquetas de retenci�
 
 Al publicar o aplicar automáticamente etiquetas de retención, no surten efecto inmediatamente:
   
-1. Primero, la directiva de etiquetas tiene que sincronizarse desde el Centro de seguridad y cumplimiento con las ubicaciones en la directiva.
+1. Primero, la directiva de etiquetas tiene que sincronizarse desde el centro de administración con las ubicaciones en la directiva.
     
 2. Después, puede que la ubicación necesite algún tiempo hasta que las etiquetas manuales estén disponibles para los usuarios finales o para que se apliquen automáticamente las etiquetas al contenido. El tiempo necesario depende de la ubicación y del tipo de etiqueta.
     
@@ -110,7 +109,7 @@ Si publica etiquetas de retención en SharePoint o OneDrive, puede que tarden un
   
 ### <a name="auto-apply-retention-labels"></a>Aplicar automáticamente etiquetas de retención
 
-Si aplica automáticamente etiquetas de retención a contenido que coincida con condiciones específicas, estas pueden tardar hasta siete días en aplicarse a todo el contenido que coincida con las condiciones.
+Si aplica automáticamente etiquetas de retención a contenido que coincida con condiciones específicas, estas pueden tardar hasta siete días en aplicarse a todo el contenido existente que coincida con las condiciones. Pero tenga en cuenta que, una vez que se implementan las etiquetas de retención, se aplican al nuevo contenido rápidamente, normalmente en 15 minutos o menos.
   
 ![Diagrama de cuándo entran en vigor las etiquetas de aplicación automática](media/b8c00657-477a-4ade-b914-e643ef97a10d.png)
   
@@ -398,9 +397,7 @@ Después de publicar o aplicar automáticamente las etiquetas de retención, pue
   
 ## <a name="using-content-search-to-find-all-content-with-a-specific-retention-label-applied-to-it"></a>Usar Búsqueda de contenido para encontrar todo el contenido que tenga aplicada una etiqueta de retención específica
 
-Después de asignar etiquetas de retención a contenido (ya sea por los usuarios o aplicadas automáticamente), puede usar Búsqueda de contenido en el Centro de seguridad y cumplimiento para encontrar todo el contenido clasificado con una etiqueta de retención específica.
-  
-![Página Búsqueda de contenido](media/564d5dfe-285a-4a7e-800e-907b12a1b273.png)
+Después de asignar etiquetas de retención a contenido (ya sea por los usuarios o aplicadas automáticamente), puede usar Búsqueda de contenido para encontrar todo el contenido clasificado con una etiqueta de retención específica.
   
 Al crear una búsqueda de contenido, seleccione la condición **Etiqueta de cumplimiento** y, después, escriba el nombre completo de la etiqueta o una parte del nombre de la etiqueta y use un comodín. Para obtener más información, vea [Consultas de palabras clave y condiciones de búsqueda para Búsqueda de contenido](keyword-queries-and-search-conditions.md).
   
@@ -434,7 +431,7 @@ Por último, una etiqueta o directiva de retención no puede eliminar de forma p
 
 Las etiquetas de retención se pueden publicar fácilmente para toda la organización, así como su contenido, en Office 365, incluidos Exchange, SharePoint, OneDrive y Grupos de Office 365. Si necesita clasificar contenido o administrar registros en cualquier lugar en Office 365, le recomendamos que use etiquetas de retención.
   
-Hay otras características que se han usado anteriormente para clasificar contenido o administra registros en Office 365. Estas se indican abajo. Estas características seguirán funcionando en paralelo con las etiquetas de retención creadas en el Centro de seguridad y cumplimiento. Tenga en cuenta que, aunque hay casos en los que la implementación de etiquetas de retención es distinta en comparación con las características anteriores, la evolución de las etiquetas de retención dirigirá el futuro de la administración de registros en todo Office 365. Por tanto, a partir de ahora, para el gobierno de datos le recomendamos que use etiquetas de retención en lugar de estas características.
+Hay otras características que ya se han usado para clasificar contenido o administrar registros en Office 365. Se muestran a continuación. Estas características seguirán funcionando en paralelo con las etiquetas de retención. Tenga en cuenta que, aunque en algunos casos la implementación de etiquetas de retención difiere de las características anteriores, la evolución de las etiquetas de retención determinará el futuro de la administración de registros en Office 365. Por lo tanto, en adelante, se recomienda usar etiquetas de retención para el gobierno de datos en lugar de estas características.
   
 ### <a name="exchange-online"></a>Exchange Online
 

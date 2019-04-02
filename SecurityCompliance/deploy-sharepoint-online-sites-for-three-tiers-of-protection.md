@@ -3,7 +3,7 @@ title: Implementar sitios de SharePoint Online con tres niveles de protección
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/14/2018
+ms.date: 03/29/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 1e8e3cfd-b878-4088-b941-9940363a5fae
 description: 'Resumen: Cree y configure sitios de grupo de SharePoint Online con distintos niveles de protección de la información.'
-ms.openlocfilehash: c39b1d85241c2d21c196e0c2c7f0d5c70149de5c
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 69da99c29d3527285547ed824e45fb7aa31e1910
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220310"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999263"
 ---
 # <a name="deploy-sharepoint-online-sites-for-three-tiers-of-protection"></a>Implementar sitios de SharePoint Online con tres niveles de protección
 
@@ -38,7 +38,7 @@ La protección de base de referencia incluye sitios de grupo públicos y privado
 
 Para crear un sitio de grupo de SharePoint Online de línea base con acceso y permisos públicos, haga lo siguiente:
   
-1. Inicie sesión en el portal de Office 365 con una cuenta que también se vaya a usar para administrar el sitio de grupo de SharePoint Online (un administrador de SharePoint Online). Para obtener ayuda, vea [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4) (Dónde iniciar sesión en Office 365).
+1. Inicie sesión en el centro de administración con una cuenta que también se vaya a usar para administrar el sitio de grupo de SharePoint Online (un administrador de SharePoint Online). Para obtener ayuda, vea [Dónde iniciar sesión en Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
 2. En la lista de iconos, haga clic en **SharePoint**.
     
@@ -62,7 +62,7 @@ Esta es la configuración resultante.
 
 Para crear un sitio de grupo de SharePoint Online de línea base con acceso y permisos privados, haga lo siguiente:
   
-1. Inicie sesión en el portal de Office 365 con una cuenta que también se vaya a usar para administrar el sitio de grupo de SharePoint Online (un administrador de SharePoint Online). Para obtener ayuda, vea [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4) (Dónde iniciar sesión en Office 365).
+1. Inicie sesión en el centro de administración con una cuenta que también se vaya a usar para administrar el sitio de grupo de SharePoint Online (un administrador de SharePoint Online). Para obtener ayuda, vea [Dónde iniciar sesión en Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
 2. En la lista de iconos, haga clic en **SharePoint**.
     
@@ -126,7 +126,7 @@ Para obtener los pasos detallados, vea la **fase 1** de [Implementar un sitio de
   
 Luego cree el sitio de grupo de SharePoint Online con estos pasos.
   
-1. Inicie sesión en el portal de Office 365 con una cuenta que también se vaya a usar para administrar el sitio de grupo de SharePoint Online (un administrador de SharePoint Online). Para obtener ayuda, vea [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4) (Dónde iniciar sesión en Office 365).
+1. Inicie sesión en el centro de administración con una cuenta que también se vaya a usar para administrar el sitio de grupo de SharePoint Online (un administrador de SharePoint Online). Para obtener ayuda, vea [Dónde iniciar sesión en Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
 2. En la lista de iconos, haga clic en **SharePoint**.
     
@@ -144,7 +144,7 @@ Luego cree el sitio de grupo de SharePoint Online con estos pasos.
     
 Después, desde el nuevo sitio de grupo de SharePoint Online, configure los permisos con estos pasos.
   
-1. Determine el nombre principal de usuario (UPN) del administrador de TI o de otra persona que vaya a ser responsable de responder a las solicitudes de acceso al sitio y de dirigirlas (belindan@contoso.com es un ejemplo de UPN). Escriba ese UPN aquí: ![](./media/Common-Images/TableLine.png).
+1. Determine el nombre principal de usuario (UPN) del administrador de TI o de otra persona que vaya a ser responsable de responder a las solicitudes de acceso al sitio y de dirigirlas (belindan@contoso.com es un ejemplo de UPN). 
     
 2. En la barra de herramientas, haga clic en el icono de configuración y, luego, en **Permisos del sitio**.
     
@@ -264,8 +264,7 @@ Los miembros del sitio, a través de la pertenencia a grupos en uno de los grupo
   
 ## <a name="next-step"></a>Paso siguiente
 
-[Proteger archivos de SharePoint Online con Azure Information Protection](protect-sharepoint-online-files-with-azure-information-protection.md)
-
+[Proteger archivos de SharePoint Online con DLP y etiquetas de Office 365](protect-sharepoint-online-files-with-office-365-labels-and-dlp.md)
 
 ## <a name="see-also"></a>Recursos adicionales
 
@@ -274,7 +273,3 @@ Los miembros del sitio, a través de la pertenencia a grupos en uno de los grupo
 [Instrucciones de seguridad de Microsoft para campañas políticas, organizaciones sin ánimo de lucro y otras organizaciones ágiles](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   
 [Adopción de la nube y soluciones híbridas](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
-
-
-
-

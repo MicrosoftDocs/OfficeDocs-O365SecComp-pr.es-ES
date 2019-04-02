@@ -3,7 +3,7 @@ title: Protección de archivos de SharePoint Online con Azure Information Protec
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 08/08/2018
+ms.date: 03/29/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: 5b9c8e41-25d2-436d-89bb-9aecb9ec2b80
 description: 'Resumen: aplique Azure Information Protection para proteger los archivos en un sitio de grupo de SharePoint Online altamente confidencial.'
-ms.openlocfilehash: 8876de7133721fb1768752fa6482e34f9451c116
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 4be30059192bb954a1c2d07d34ece76bb339d7dc
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220990"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999123"
 ---
 # <a name="protect-sharepoint-online-files-with-azure-information-protection"></a>Protección de archivos de SharePoint Online con Azure Information Protection
 
@@ -36,14 +36,15 @@ Usar Azure Information Protection para los archivos de SharePoint Online no es r
 
 Algunas notas importantes sobre esta solución:
 - Cuando se aplica el cifrado de Azure Information Protection a los archivos almacenados en Office 365, el servicio no puede procesar el contenido de estos archivos. No funcionan algunas características de colaboración, como la coautoría, eDiscovery, la búsqueda y Delve. Las directivas de prevención de pérdida de datos (DLP) solo pueden trabajar con los metadatos (incluidas las etiquetas de Office 365), pero no con el contenido de estos archivos (por ejemplo, números de tarjeta de crédito incluidos en los archivos).
+
 - Esta solución requiere que un usuario seleccione la etiqueta que aplica la protección de Azure Information Protection. Si necesita cifrado automático y que SharePoint sea capaz de indexar y comprobar los archivos, puede usar Information Rights Management (IRM) en SharePoint Online. Al configurar una biblioteca de SharePoint para IRM, los archivos se cifrarán automáticamente cuando se descarguen para su edición. IRM de SharePoint incluye limitaciones que podrían influir en su decisión. Para obtener más información, consulte [Configurar Information Rights Management (IRM) en el Centro de administración de SharePoint](https://support.office.com/article/Set-up-Information-Rights-Management-IRM-in-SharePoint-admin-center-239CE6EB-4E81-42DB-BF86-A01362FED65C).
 
 ## <a name="admin-setup"></a>Configuración de administración
-Primero, siga las instrucciones que se indican en [Activar Azure RMS desde el Centro de administración de Office 365](https://docs.microsoft.com/information-protection/deploy-use/activate-office365) para su suscripción de Office 365.
+Primero, siga las instrucciones que se indican en [Activar Azure RMS desde el Centro de administración de Microsoft 365](https://docs.microsoft.com/information-protection/deploy-use/activate-office365) para su suscripción de Office 365.
   
 Después, siga estos pasos para configurar Azure Information Protection con una nueva directiva con ámbito y una subetiqueta para la protección y los permisos relacionados con el sitio de grupo de SharePoint Online altamente confidencial.
   
-1. Inicie sesión en el portal de Office 365 con una cuenta que tenga el rol Administrador de seguridad o Administrador de la compañía. Para obtener ayuda, vea [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4) (Dónde iniciar sesión en Office 365).
+1. Inicie sesión en el centro de administración con una cuenta que tenga el rol de Administrador de seguridad o Administrador de la compañía. Para obtener ayuda, vea [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4) (Dónde iniciar sesión en Office 365).
     
 2. En una pestaña independiente del explorador, vaya a Azure Portal ([https://portal.azure.com](https://portal.azure.com)).
     
@@ -104,19 +105,13 @@ Cuando se complete la instalación, los usuarios ejecutarán y, después, inicia
 ## <a name="adding-permissions-for-external-users"></a>Agregar permisos para usuarios externos
 Hay dos maneras de conceder a los usuarios externos el acceso a archivos protegidos con Azure Information Protection. En ambos casos, los usuarios externos necesitan tener una cuenta de Azure AD. Si los usuarios externos no son miembros de una organización que usa Azure AD, pueden obtener una cuenta de Azure AD como usuario individual a través de esta página de suscripción: [https://aka.ms/aip-signup](https://aka.ms/aip-signup).
 
- - Agregar usuarios externos a un grupo de Azure AD que se usa para configurar la protección para una etiqueta. Primero, tendrá que agregar la cuenta como usuario B2B en el directorio. Puede tardar un par de horas con [Caché de pertenencia al grupo por Azure Rights Management](https://docs.microsoft.com/azure/information-protection/plan-design/prepare#group-membership-caching-by-azure-information-protection).  
+ - Agregar usuarios externos a un grupo de Azure AD que se usa para configurar la protección de una etiqueta. Primero debe agregar la cuenta como un usuario B2B en el directorio. Puede que el [almacenamiento en caché de pertenencia al grupo de Azure Rights Management](https://docs.microsoft.com/azure/information-protection/plan-design/prepare#group-membership-caching-by-azure-information-protection) tarde un par de horas.  
  - Agregar usuarios externos directamente a la protección de etiqueta. Puede agregar todos los usuarios de una organización (por ejemplo, Fabrikam.com), un usuario o un grupo de Azure AD (como un grupo de finanzas dentro de una organización). Puede agregar, por ejemplo, un grupo de reguladores externo para la protección de una etiqueta.
 
 ## <a name="see-also"></a>Consulte también
 
 [Protección de archivos y sitios de SharePoint Online](secure-sharepoint-online-sites-and-files.md)
   
-[Proteger sitios de SharePoint Online en un entorno de desarrollo y pruebas](secure-sharepoint-online-sites-in-a-dev-test-environment.md)
-  
-[Guía de seguridad de Microsoft para campañas políticas, ONG y otras organizaciones ágiles](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
+[Instrucciones de seguridad de Microsoft para campañas políticas, organizaciones sin ánimo de lucro y otras organizaciones ágiles](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   
 [Adopción de la nube y soluciones híbridas](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
-
-
-
-

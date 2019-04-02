@@ -1,5 +1,5 @@
 ---
-title: Crear un tipo personalizado de información confidencial en PowerShell del Centro de seguridad y cumplimiento de Office 365
+title: Crear un tipo personalizado de información confidencial en PowerShell del Centro de seguridad y cumplimiento
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -12,15 +12,15 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Aprenda a crear e importar un tipo de información confidencial personalizada para DLP en el Centro de seguridad y cumplimiento de Office 365.
-ms.openlocfilehash: bf917ac40f98ec19332aac90f2d954d44b9a834d
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+description: Aprenda a crear e importar un tipo de información confidencial personalizada para DLP en el Centro de seguridad y cumplimiento.
+ms.openlocfilehash: 7a21b62ddaf4d24793d4479d0d6270a18cc50532
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30639127"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999843"
 ---
-# <a name="create-a-custom-sensitive-information-type-in-office-365-security--compliance-center-powershell"></a>Crear un tipo personalizado de información confidencial en PowerShell del Centro de seguridad y cumplimiento de Office 365
+# <a name="create-a-custom-sensitive-information-type-in-security--compliance-center-powershell"></a>Crear un tipo personalizado de información confidencial en PowerShell del Centro de seguridad y cumplimiento
 
 Prevención de pérdida de datos (DLP) de Office 365 incluye muchos [tipos de información confidencial](what-the-sensitive-information-types-look-for.md) integrados preparados para usarlos en las directivas DLP. Estos tipos integrados pueden ayudar a identificar y proteger números de tarjeta de crédito, cuentas bancarias, números de pasaporte y mucho más. 
   
@@ -329,7 +329,7 @@ Para cargar un paquete de reglas, siga este procedimiento:
   
 1. Guárdelo como un archivo .xml con codificación Unicode.
     
-2. [Conectarse a PowerShell del Centro de seguridad y cumplimiento de Office 365](http://go.microsoft.com/fwlink/p/?LinkID=799771)
+2. [Conectarse a PowerShell del Centro de seguridad y cumplimiento](http://go.microsoft.com/fwlink/p/?LinkID=799771)
     
 3. Utilice la sintaxis siguiente:
 
@@ -419,7 +419,7 @@ En PowerShell del Centro de seguridad y cumplimiento, hay dos métodos para quit
 
 - **Quitar un paquete de reglas personalizado y todos los tipos de información confidencial que contiene**: este método se documenta en esta sección.
 
-1. [Conectarse a PowerShell del Centro de seguridad y cumplimiento de Office 365](http://go.microsoft.com/fwlink/p/?LinkID=799771)
+1. [Conectarse a PowerShell del Centro de seguridad y cumplimiento](http://go.microsoft.com/fwlink/p/?LinkID=799771)
 
 2. Para quitar un paquete de reglas personalizado, use la siguiente sintaxis:
 
@@ -469,7 +469,7 @@ Crear un tipo personalizado de información confidencial en PowerShell del Centr
 
 3. Importe el archivo XML actualizado en el paquete de reglas existentes.
 
-Para conectarse a PowerShell del Centro de seguridad y cumplimiento, vea [Conectarse a PowerShell del Centro de seguridad y cumplimiento de Office 365](http://go.microsoft.com/fwlink/p/?LinkID=799771).
+Para conectarse a PowerShell del Centro de seguridad y cumplimiento, vea [Conectarse a PowerShell del Centro de seguridad y cumplimiento](http://go.microsoft.com/fwlink/p/?LinkID=799771).
 
 #### <a name="step-1-export-the-existing-rule-package-to-an-xml-file"></a>Paso 1: exportar el paquete de reglas existentes a un archivo XML
 
