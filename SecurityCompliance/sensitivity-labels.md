@@ -3,7 +3,7 @@ title: Información general de etiquetas de confidencialidad
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: 10/22/2018
+ms.date: ''
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -12,19 +12,19 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Con las etiquetas de confidencialidad de Office 365, puede clasificar y ayudar a proteger el contenido confidencial, sin poner impedimentos a la productividad y la capacidad de colaboración de los usuarios. Puede usar etiquetas de confidencialidad para aplicar opciones de protección como encriptación o marcas de agua en el contenido con la etiqueta.
-ms.openlocfilehash: ceb3373f6de24d52f8e65c322a9e7eca4fe92618
-ms.sourcegitcommit: cf9d9b545a7c153d314aa9c08c7fb16fcd785b3e
+description: Con las etiquetas de confidencialidad, puede clasificar y ayudar a proteger el contenido confidencial, sin poner impedimentos a la productividad y la capacidad de colaboración de los usuarios. Puede usar etiquetas de confidencialidad para aplicar opciones de protección como encriptación o marcas de agua en el contenido con la etiqueta.
+ms.openlocfilehash: f8442bc9fbeb32cb71fb46c4e5a54c9e1f0dce4b
+ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30737690"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "30999743"
 ---
 # <a name="overview-of-sensitivity-labels"></a>Información general de etiquetas de confidencialidad
 
 Para realizar su trabajo, los usuarios de su organización necesitan colaborar con otros usuarios, tanto dentro como fuera de la organización. Esto significa que el contenido ya no permanece detrás de un firewall: se mueve por todas partes, pasando por dispositivos, aplicaciones y servicios. Y cuando se mueve, quiere que sea de una forma segura y protegida que cumpla las directivas de cumplimiento y de empresa de su organización.
 
-Con las etiquetas de confidencialidad en Office 365, puede clasificar y ayudar a proteger el contenido confidencial, sin poner impedimentos a la productividad y la capacidad de colaboración de los usuarios.
+Con las etiquetas de confidencialidad, puede clasificar y ayudar a proteger el contenido confidencial, sin poner impedimentos a la productividad y la capacidad de colaboración de los usuarios.
 
 ![Etiqueta de confidencialidad de la barra de estado y la cinta de opciones de Excel](media/Sensitivity_label_in_Excel.png)
 
@@ -44,11 +44,9 @@ Puede usar etiquetas de confidencialidad para:
     
 En todos estos casos, las etiquetas de confidencialidad de Office 365 pueden ayudarle a realizar las acciones adecuadas en el contenido adecuado. Con las etiquetas de confidencialidad, puede clasificar los datos de su organización para administrarlos mejor y aplicar configuraciones de protección basadas en esa clasificación.
   
-Las etiquetas de confidencialidad se crean en el Centro de seguridad y cumplimiento de Office 365. El centro de seguridad y cumplimiento ahora es el único lugar para configurar las etiquetas y directivas de confidencialidad en Azure Information Protection y Office 365. Estas etiquetas de confidencialidad pueden usarse con Azure Information Protection, aplicaciones de Office y servicios de Office 365.
+Las etiquetas de confidencialidad se crean en el Centro de cumplimiento de Microsoft 365, en el Centro de seguridad de Microsoft 365 o en el Centro de seguridad y cumplimiento de Office 365. Estas etiquetas de confidencialidad las pueden usar Azure Information Protection, las aplicaciones de Office y los servicios de Office 365.
 
-Para los clientes de Azure Information Protection, se pueden usar las etiquetas de Azure Information Protection en el centro de seguridad y cumplimiento, y las etiquetas se sincronizarán con Azure Portal en caso de que quiera añadir opciones adicionales o avanzadas. **Las etiquetas de Azure Information Protection y las etiquetas de confidencialidad de Office 365 son totalmente compatibles entre sí.** Esto significa que, por ejemplo, si tiene contenido con la etiqueta de Azure Information Protection, no tendrá que volver a clasificar o añadir etiquetas a su contenido.
-
-![Pestaña de confidencialidad en la página del Centro de seguridad y cumplimiento](media/Sensitivity_label_tab_on_Labels_page.png)
+Para los clientes de Azure Information Protection, puede usar las etiquetas de Azure Information Protection en los otros centros de administración y las etiquetas se sincronizarán con Azure Portal en caso de que decida realizar una configuración adicional o avanzada. **Las etiquetas de Azure Information Protection y etiquetas de confidencialidad de Office 365 son totalmente compatibles entre sí.** Esto significa que, por ejemplo, si tiene contenido con la etiqueta de Azure Information Protection, no tendrá que volver a clasificar o cambiar las etiquetas de su contenido.
 
 ## <a name="what-a-sensitivity-label-is"></a>Qué es una etiqueta de confidencialidad
 
@@ -84,13 +82,13 @@ Después de aplicar una etiqueta de confidencialidad a un documento o correo ele
     ![Aviso para asignar una etiqueta necesaria](media/Sensitivity_label_Prompt_for_required_label.png)
 
 
-Todas estas opciones están disponibles cuando se crea una etiqueta en el Centro de seguridad y cumplimiento.
+Todas estas opciones están disponibles cuando se crea una etiqueta de confidencialidad.
 
 ![Opciones al crear una etiqueta de confidencialidad](media/Sensitivity_label_create_options.png)
 
 ### <a name="label-priority-order-matters"></a>Prioridad de etiqueta (el orden importa)
 
-Al crear las etiquetas de confidencialidad en el Centro de cumplimiento y seguridad, aparecen en una lista en la pestaña **Confidencialidad** en la página **Etiquetas**. En esta lista, el orden de las etiquetas es importante, ya que refleja su prioridad. Lo ideal es que la etiqueta de confidencialidad más restrictiva, como Altamente confidencial, aparezca en la parte **inferior** de la lista y que la etiqueta de confidencialidad menos restrictiva, como Público, aparezca en la parte **superior**.
+Cuando se crean etiquetas de confidencialidad, estas aparecen en una lista en la pestaña **Confidencialidad** en la página **Etiquetas**. En esta lista, el orden de las etiquetas es importante, ya que refleja su prioridad. Quiere que la etiqueta de confidencialidad más restrictiva, como la Extremadamente confidencial, aparezca en la **parte inferior** de la lista y la etiqueta de confidencialidad menos restrictiva, como la Pública, aparezca en la **parte superior**.
 
 Un documento o correo electrónico puede tener solo una etiqueta de confidencialidad única aplicada. Si necesita que los usuarios proporcionen una justificación para cambiar la etiqueta a una clasificación inferior, el orden de la lista determina qué es una clasificación inferior.
 
@@ -108,9 +106,9 @@ Las subetiquetas son simplemente una forma de presentar etiquetas a los usuarios
 
 ### <a name="editing-or-deleting-a-sensitivity-label"></a>Modificar o eliminar una etiqueta de confidencialidad
 
-Si elimina una etiqueta de confidencialidad en el Centro de seguridad y cumplimiento, tenga en cuenta que no se quita la etiqueta del contenido y cualquier configuración de protección se seguirá aplicando al contenido.
+Si elimina una etiqueta de confidencialidad, tenga en cuenta que no se quita la etiqueta del contenido y cualquier configuración de protección se seguirá aplicando al contenido.
 
-Si edita una etiqueta de confidencialidad en el Centro de seguridad y cumplimiento, la versión de la etiqueta que se aplicó al contenido es la que se aplica a ese contenido.
+Si edita una etiqueta de confidencialidad, la versión de la etiqueta que se aplicó al contenido es la que se aplica a ese contenido.
 
 ## <a name="what-label-policies-can-do"></a>Qué pueden hacer las directivas de etiqueta
 
@@ -120,7 +118,7 @@ Con una directiva de etiqueta, puede:
 
 - **Elegir qué usuarios y grupos ven las etiquetas.** Las etiquetas pueden publicarse en cualquier grupo de seguridad habilitado para correo electrónico, grupo de distribución, grupo de Office 365 o grupo de distribución dinámico.
 
-- **Aplicar una etiqueta predeterminada** a todos los nuevos documentos y correos electrónicos creados por los usuarios y grupos incluidos en la directiva de etiqueta. Esta etiqueta predeterminada puede establecer un nivel base de configuración de protección que desee aplicar a todo su contenido. (Tenga en cuenta que un )
+- **Aplicar una etiqueta predeterminada** a todos los nuevos documentos y correos electrónicos creados por los usuarios y grupos incluidos en la directiva de etiqueta. Esta etiqueta predeterminada puede establecer un nivel base de configuración de protección que desee aplicar a todo su contenido.
 
 - **Requerir una justificación para cambiar una etiqueta.** Si el contenido está marcado como Confidencial y un usuario desea quitar esa etiqueta o reemplazarla con una clasificación inferior, como una etiqueta denominada Público, puede hacer que el usuario necesite proporcionar una justificación para realizar esta acción. Estas justificaciones estarán disponibles para que el administrador las revise. Actualmente estamos trabajando en un informe en el que los administradores puedan ver las justificaciones de los usuarios.
 
@@ -197,7 +195,7 @@ Los usuarios de Azure Information Protection actualmente pueden clasificar y eti
 - Mantener las etiquetas existentes de Azure Information Protection en documentos y correos electrónicos.
 - Mantener la configuración de etiquetas existente de Azure Information Protection.
 
-Si usa etiquetas de Azure Information Protection, por ahora se recomienda evitar la creación de etiquetas nuevas en el Centro de seguridad y cumplimiento hasta que se haya completado la migración. El [tema de migración de Azure Information Protection](https://docs.microsoft.com/es-ES/azure/information-protection/configure-policy-migrate-labels) tiene información importante y algunas advertencias específicas. Si todavía no está listo para migrar los espacios empresariales de producción a las etiquetas de confidencialidad, no hay ningún motivo de preocupación: por el momento, los usuarios pueden seguir usando el cliente de Azure Information Protection y los administradores pueden seguir usando Azure Portal para la administración.
+Si está utilizando etiquetas de Azure Information Protection, por ahora se recomienda evitar crear nuevas etiquetas en otros centros de administración hasta que haya completado la migración. El [tema sobre migración de Azure Information Protection](https://docs.microsoft.com/es-ES/azure/information-protection/configure-policy-migrate-labels) contiene información importante, así como advertencias específicas. Si no está preparado para migrar sus espacios empresariales de producción a etiquetas de confidencialidad, no hay motivo de preocupación. De momento, los usuarios pueden seguir usado el cliente de Azure Information Protection y los administradores, Azure Portal para las tareas de administración.
 
 ## <a name="protect-content-on-windows-devices-by-using-endpoint-protection-in-microsoft-intune"></a>Proteger el contenido en dispositivos Windows utilizando endpoint protection de Microsoft Intune
 
@@ -252,6 +250,6 @@ Para obtener más información sobre el SDK de Microsoft Information Protection,
 
 Los miembros de su equipo de cumplimiento normativo que vayan a crear etiquetas de confidencialidad necesitan permisos del Centro de seguridad y cumplimiento. De forma predeterminada, el administrador de espacios empresariales tendrá acceso a esta ubicación y puede proporcionar acceso a los responsables de cumplimiento y otros usuarios para el Centro de seguridad y cumplimiento sin darles todos los permisos de un administrador de espacios empresariales. Para ello, se recomienda ir a la página **Permisos** del Centro de seguridad y cumplimiento, editar el grupo de roles **Administrador de cumplimiento** y agregar miembros al mismo.
 
-Para obtener más información, vea Conceder acceso a los usuarios al Centro de seguridad y cumplimiento de Office 365.
+Para más información, vea [Conceder acceso a los usuarios para el Centro de seguridad y cumplimiento de Office 365](grant-access-to-the-security-and-compliance-center.md).
 
 Estos permisos solo son necesarios para crear y aplicar una directiva de etiquetas. La aplicación de directivas no necesita acceso al contenido.
