@@ -11,12 +11,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: a0acaf9560b814fe8e87751d3a8f4b6d13b3864a
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+search.appverid: met150
+ms.openlocfilehash: 37a5c6805579ecb9b03e6bd8f95562fe4c3e9521
+ms.sourcegitcommit: 8213c353954b92f5c3979bee4aa049da0fd28a18
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000603"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "31043231"
 ---
 # <a name="overview-of-the-microsoft-365-security-center"></a>Información general sobre el centro de seguridad de Microsoft 365
 
