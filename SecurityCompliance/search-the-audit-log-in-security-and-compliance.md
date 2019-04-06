@@ -1,5 +1,5 @@
 ---
-title: Buscar en el registro de auditoría del Centro de seguridad y cumplimiento de Office 365
+title: Buscar el registro de auditoría en el centro de seguridad & cumplimiento
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,15 +14,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
-description: 'Use el centro de cumplimiento de & de seguridad de Office 365 para buscar en el registro de auditoría unificado para ver la actividad del usuario y del administrador de la organización de Office 365. '
-ms.openlocfilehash: 8cb8650315c19714960aba7551902780e38a554b
-ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
+description: 'Use el centro de seguridad & cumplimiento para buscar en el registro de auditoría unificado para ver la actividad del usuario y del administrador de la organización de Office 365. '
+ms.openlocfilehash: d593c7d5403f658175850a66a55603dab2b60d42
+ms.sourcegitcommit: e24f70699021c4f4ba56508ad0afb6f65010c357
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30935355"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "31479686"
 ---
-# <a name="search-the-audit-log-in-the-office-365-security--compliance-center"></a>Buscar el registro de auditoría en el centro de seguridad & cumplimiento de Office 365
+# <a name="search-the-audit-log-in-the-security--compliance-center"></a>Buscar el registro de auditoría en el centro de seguridad & cumplimiento
 
 ## <a name="introduction"></a>Introducción
 
@@ -43,7 +43,7 @@ ms.locfileid: "30935355"
     
 - Actividad de usuario y administrador en Sway
     
-- actividades de eDiscovery en el centro de seguridad & cumplimiento de Office 365
+- actividades de eDiscovery en el centro de seguridad y cumplimiento
     
 - Actividad de usuario y administrador en Power BI
     
@@ -66,15 +66,15 @@ ms.locfileid: "30935355"
 
 Asegúrese de leer los siguientes elementos antes de comenzar a buscar en el registro de auditoría de Office 365.
   
-- Usted (u otro administrador) deben activar primero el registro de auditoría antes de empezar a buscar en el registro de auditoría de Office 365. Para activarla, haga clic en **iniciar grabación de usuario y actividad de administrador** en la página de búsqueda de registros &amp; de **Auditoría** en el centro de seguridad y cumplimiento. (Si no ve este vínculo, ya se ha activado la auditoría en su organización). Una vez activado, se muestra un mensaje que indica que se está preparando el registro de auditoría y que puede ejecutar una búsqueda en un par de horas tras la finalización de la preparación. Solo tiene que hacer esto una vez. 
+- Usted (u otro administrador) deben activar primero el registro de auditoría antes de empezar a buscar en el registro de auditoría de Office 365. Para activarla, solo tiene que hacer clic en **iniciar grabación de la actividad de usuario y de administrador** en la página de búsqueda de registros de **Auditoría** en el centro de seguridad & cumplimiento. (Si no ve este vínculo, ya se ha activado la auditoría en su organización). Una vez activado, se muestra un mensaje que indica que se está preparando el registro de auditoría y que puede ejecutar una búsqueda en un par de horas tras la finalización de la preparación. Solo tiene que hacer esto una vez. 
     
     > [!NOTE]
     > Estamos en proceso de activar la auditoría de forma predeterminada. Hasta entonces, puede activarla como se ha descrito anteriormente. 
   
-- Debe tener asignado el rol registros de auditoría con permiso de vista o registros de auditoría en Exchange Online para buscar en el registro de auditoría de 365 de Office. De forma predeterminada, estos roles se asignan a los grupos de roles administración de cumplimiento y administración de la organización en la página **permisos** del centro de administración de Exchange. Para conceder a un usuario la capacidad de buscar el registro de auditoría de Office 365 con el nivel mínimo de privilegios, puede crear un grupo de roles personalizado en Exchange Online, agregar el rol registros de auditoría con permiso de vista o registros de auditoría y, a continuación, agregar el usuario como miembro del nuevo grupo de roles. Para obtener más información, vea [administrar grupos de roles en Exchange Online](https://go.microsoft.com/fwlink/p/?LinkID=730688).
+- Debe tener asignado el rol registros de auditoría con permiso de vista o registros de auditoría en Exchange Online para buscar en el registro de auditoría de 365 de Office. De forma predeterminada, estos roles se asignan a los grupos de roles administración de cumplimiento y administración de la organización en la página **permisos** del centro de administración de Exchange. Tenga en cuenta que los administradores globales de Office 365 y Microsoft 365 se agregan automáticamente como miembros del grupo de funciones de administración de la organización en Exchange Online. Para conceder a un usuario la capacidad de buscar el registro de auditoría de Office 365 con el nivel mínimo de privilegios, puede crear un grupo de roles personalizado en Exchange Online, agregar el rol registros de auditoría con permiso de vista o registros de auditoría y, a continuación, agregar el usuario como miembro del nuevo grupo de roles. Para obtener más información, vea [administrar grupos de roles en Exchange Online](https://go.microsoft.com/fwlink/p/?LinkID=730688).
     
     > [!IMPORTANT]
-    > Si asigna a un usuario el rol registros de auditoría con permiso de vista o registros de **** auditoría en la página permisos &amp; del centro de seguridad y cumplimiento, no podrán buscar en el registro de auditoría de Office 365. Debe asignar los permisos en Exchange Online. Esto se debe a que el cmdlet subyacente usado para buscar en el registro de auditoría es un cmdlet de Exchange Online. 
+    > Si asigna a un usuario el rol registros de auditoría con permiso de vista o registros de auditoría en la página **permisos** del centro de seguridad & cumplimiento, estos no podrán buscar en el registro de auditoría de Office 365. Debe asignar los permisos en Exchange Online. Esto se debe a que el cmdlet subyacente usado para buscar en el registro de auditoría es un cmdlet de Exchange Online. 
   
 - Cuando un usuario o administrador realiza una actividad auditada, se genera un registro de auditoría y se almacena en el registro de auditoría de Office 365 para la organización. El período de tiempo durante el que se conserva un registro de auditoría (y que se pueden buscar en el registro de auditoría) depende de la suscripción a Office 365 y, específicamente, del tipo de licencia asignado a un usuario específico.
 
@@ -99,7 +99,7 @@ Asegúrese de leer los siguientes elementos antes de comenzar a buscar en el reg
 
     Para obtener más información, vea [desactivar la búsqueda de registros de auditoría en Office 365](turn-audit-log-search-on-or-off.md).
     
-- Como se mencionó anteriormente, el cmdlet subyacente usado para buscar en el registro de auditoría es un cmdlet de Exchange Online, que es **Search-UnifiedAuditLog**. Esto significa que puede usar este cmdlet para buscar en el registro de auditoría de Office 365 en lugar de usar la página de búsqueda de &amp; registros de **Auditoría** en el centro de seguridad y cumplimiento. Debe ejecutar este cmdlet en PowerShell remoto conectado a su organización de Exchange Online. Para obtener más información, vea [Search-UnifiedAuditLog](https://go.microsoft.com/fwlink/p/?linkid=834776).
+- Como se mencionó anteriormente, el cmdlet subyacente usado para buscar en el registro de auditoría es un cmdlet de Exchange Online, que es **Search-UnifiedAuditLog**. Esto significa que puede usar este cmdlet para buscar en el registro de auditoría de Office 365 en lugar de usar la página de **búsqueda de registros de auditoría** en el centro de seguridad & cumplimiento. Debe ejecutar este cmdlet en PowerShell remoto conectado a su organización de Exchange Online. Para obtener más información, vea [Search-UnifiedAuditLog](https://go.microsoft.com/fwlink/p/?linkid=834776).
     
 - Si desea descargar datos del registro de auditoría de Office 365 mediante programación, le recomendamos que use la API de actividad de administración de Office 365 en lugar de usar un script de PowerShell. La API de actividad de administración 365 de Office es un servicio Web REST que puede usar para desarrollar soluciones de operaciones, seguridad y supervisión de cumplimiento para su organización. Para obtener más información, vea referencia de la [API de actividad de administración 365 de Office](https://go.microsoft.com/fwlink/?linkid=852309).
     
@@ -120,13 +120,13 @@ Asegúrese de leer los siguientes elementos antes de comenzar a buscar en el reg
     |Microsoft Stream  <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
     |Microsoft Teams  <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
     |Power BI  <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-    |Security &amp; Compliance Center  <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
+    |Centro de seguridad y cumplimiento  <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
     |SharePoint Online y OneDrive para la Empresa  <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
     |Sway  <br/> ||![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
     |Workplace Analytics<br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> || 
     |Yammer  <br/> ||![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> |
    
-- Azure Active Directory (Azure AD) es el servicio de directorio para Office 365. El registro de auditoría unificada contiene las actividades de usuario, grupo, aplicación, dominio y directorio realizadas en el centro de administración de Office 365 o en el portal de administración de Azure. Para obtener una lista completa de los eventos de Azure AD, consulte [eventos de informes de auditoría de Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkID=616549).
+- Azure Active Directory (Azure AD) es el servicio de directorio para Office 365. El registro de auditoría unificada contiene actividades de usuario, grupo, aplicación, dominio y directorio realizadas en el centro de administración de Microsoft 365 o en el portal de administración de Azure. Para obtener una lista completa de los eventos de Azure AD, consulte [eventos de informes de auditoría de Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkID=616549).
     
 - Los registros de auditoría de Exchange Online constan de dos tipos de eventos: eventos de administración de Exchange (acciones realizadas por los administradores) y eventos de buzón de correo (acciones realizadas por los usuarios en los buzones de correo). Tenga en cuenta que la auditoría de buzones de correo no está habilitada de forma predeterminada. Debe estar habilitado para cada buzón de usuario antes de que los eventos de buzón se puedan buscar en el registro de auditoría de Office 365. Para obtener más información acerca de la auditoría de buzones y las acciones de auditoría de buzones que se registran, consulte [Habilitar la auditoría de buzones de correo en Office 365](enable-mailbox-auditing.md).
     
@@ -147,14 +147,14 @@ Este es el proceso para realizar búsquedas en el registro de auditoría en Offi
   
 ### <a name="step-1-run-an-audit-log-search"></a>Paso 1: ejecutar una búsqueda de registros de auditoría
 
-1. Vaya a [https://protection.office.com](https://protection.office.com).
+1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com).
     
     > [!TIP]
-    > Use una sesión de exploración privada (no una sesión regular) para tener acceso al centro de &amp; seguridad y cumplimiento de Office 365, ya que esto impedirá que se usen las credenciales con las que ha iniciado sesión actualmente. Para abrir una sesión de exploración inPrivate en Internet Explorer o Microsoft Edge, solo tiene que presionar CTRL + MAYÚS + P. Para abrir una sesión de exploración privada en Google Chrome (denominada ventana incógnito), presione CTRL + MAYÚS + N. 
+    > Use una sesión de exploración privada (no una sesión regular) para acceder al centro de cumplimiento de seguridad &, ya que esto impedirá que las credenciales con las que haya iniciado sesión actualmente se usen. Para abrir una sesión de exploración inPrivate en Internet Explorer o Microsoft Edge, solo tiene que presionar CTRL + MAYÚS + P. Para abrir una sesión de exploración privada en Google Chrome (denominada ventana incógnito), presione CTRL + MAYÚS + N. 
   
 2. Inicie sesión en Office 365 con su cuenta profesional o educativa.
     
-3. En el panel izquierdo del centro de &amp; seguridad y cumplimiento, haga clic en ** &amp; investigación**y búsqueda y, a continuación, en **búsqueda de registros de auditoría**.
+3. En el panel izquierdo del centro de seguridad & cumplimiento, haga clic en **Buscar**y, a continuación, en **búsqueda de registros de auditoría**.
     
     Se muestra la página de **búsqueda de registros de auditoría** . 
     
@@ -288,7 +288,7 @@ Puede exportar los resultados de una búsqueda de registro de auditoría a un ar
 
 ## <a name="audited-activities"></a>Actividades auditadas
 
-En las tablas de esta sección se describen las actividades que se auditan en Office 365. Puede buscar estos eventos buscando en el registro de auditoría del centro de seguridad & cumplimiento.
+En las tablas de esta sección se describen las actividades que se auditan en Office 365. Puede buscar estos eventos buscando en el registro de auditoría del centro de seguridad y cumplimiento.
   
 Estas tablas agrupan actividades relacionadas o las actividades de un servicio de Office 365 específico. Las tablas incluyen el nombre descriptivo que se muestra en la lista desplegable **actividades** y el nombre de la operación correspondiente que aparece en la información detallada de un registro de auditoría y del archivo CSV cuando se exportan los resultados de la búsqueda. Para obtener descripciones de la información detallada, consulte [propiedades detalladas en el registro de auditoría de Office 365](detailed-properties-in-the-office-365-audit-log.md).
   
@@ -310,7 +310,7 @@ Haga clic en uno de los siguientes vínculos para ir a una tabla específica.
   
 En la tabla siguiente se describen las actividades de archivo y página en SharePoint Online y OneDrive para la empresa.
   
-|**Nombre descriptivo**|**Operation**|**Descripción**|
+|**Nombre descriptivo**|**Operación**|**Descripción**|
 |:-----|:-----|:-----|
 |Archivo de acceso  <br/> |FileAccessed  <br/> |La cuenta del sistema o el usuario obtiene acceso a un archivo.  <br/> |
 |(ninguno)  <br/> |FileAccessedExtended  <br/> |Esto está relacionado con la actividad "archivo de acceso (FileAccessed)". Se registra un evento FileAccessedExtended cuando la misma persona obtiene acceso continuamente a un archivo durante un período de tiempo prolongado (hasta 3 horas). La finalidad del registro de eventos FileAccessedExtended es reducir el número de eventos FileAccessed que se registran cuando se obtiene acceso a un archivo de forma continua. Esto ayuda a reducir el ruido de varios registros de FileAccessed para lo que es esencialmente la misma actividad de usuario y le permite centrarse en el evento FileAccessed inicial (y más importante).  <br/> |
@@ -340,7 +340,7 @@ En la tabla siguiente se describen las actividades de archivo y página en Share
   
 En la siguiente tabla se describen las actividades de la carpeta en SharePoint Online y OneDrive para la empresa.
   
-|**Nombre descriptivo**|**Operation**|**Descripción**|
+|**Nombre descriptivo**|**Operación**|**Descripción**|
 |:-----|:-----|:-----|
 |Carpeta copiada  <br/> |FolderCopied  <br/> |El usuario copia una carpeta de un sitio a otra ubicación en SharePoint o en OneDrive para la empresa.  <br/> |
 |Carpeta creada  <br/> |FolderCreated  <br/> |El usuario crea una carpeta en un sitio.  <br/> |
@@ -360,7 +360,7 @@ En la tabla siguiente se describen las actividades de uso compartido de usuarios
 > [!NOTE]
 > Los usuarios pueden ser *miembros* o *invitados* en función de la propiedad UserType del objeto de usuario. Un miembro suele ser un empleado y, normalmente, un invitado es un colaborador externo a su organización. Cuando un usuario acepta una invitación para uso compartido (y aún no forma parte de la organización), se crea una cuenta de invitado para ellas en el directorio de la organización. Una vez que el usuario Guest tenga una cuenta en el directorio, es posible que los recursos se compartan directamente con ellos (sin necesidad de una invitación). 
   
-|**Nombre descriptivo**|**Operation**|**Descripción**|
+|**Nombre descriptivo**|**Operación**|**Descripción**|
 |:-----|:-----|:-----|
 |Solicitud de acceso aceptada  <br/> |AccessRequestAccepted  <br/> |Se aceptó una solicitud de acceso a un sitio, una carpeta o un documento y se concedió acceso al usuario que lo solicita.  <br/> |
 |Invitación para uso compartido aceptada  <br/> |SharingInvitationAccepted  <br/> |El usuario (miembro o invitado) ha aceptado una invitación para uso compartido y se le ha concedido acceso a un recurso. Este evento incluye información acerca del usuario al que se invitó y la dirección de correo electrónico que se usó para aceptar la invitación (podrían ser diferentes). Esta actividad suele ir acompañada de un segundo evento que describe cómo se ha concedido acceso al usuario al recurso, por ejemplo, agregar el usuario a un grupo que tiene acceso al recurso.  <br/> |
@@ -398,7 +398,7 @@ En la tabla siguiente se describen las actividades de uso compartido de usuarios
   
 En la siguiente tabla se enumeran las actividades de sincronización de archivos en SharePoint Online y OneDrive para la empresa.
   
-|**Nombre descriptivo**|**Operation**|**Descripción**|
+|**Nombre descriptivo**|**Operación**|**Descripción**|
 |:-----|:-----|:-----|
 |Equipo permitido para sincronizar archivos  <br/> |ManagedSyncClientAllowed  <br/> |El usuario establece una relación de sincronización con un sitio correctamente. La relación de sincronización es correcta porque el equipo del usuario es miembro de un dominio que se ha agregado a la lista de dominios (denominada *lista de destinatarios seguros* ) que puede tener acceso a las bibliotecas de documentos de la organización.  <br/> Para obtener más información sobre esta característica, vea [Usar cmdlets de Windows PowerShell para habilitar la sincronización de OneDrive para los dominios que están en la lista de destinatarios seguros](https://go.microsoft.com/fwlink/p/?LinkID=534609).  <br/> |
 |El equipo bloqueado de la sincronización de archivos  <br/> |UnmanagedSyncClientBlocked  <br/> |El usuario intenta establecer una relación de sincronización con un sitio de un equipo que no es miembro del dominio de la organización o que es miembro de un dominio que no se ha agregado a la lista de dominios (denominada *lista de destinatarios seguros)* que puede tener acceso al documento bibliotecas de la organización. La relación de sincronización no se permite y el equipo del usuario queda bloqueado para sincronizar, descargar o cargar archivos en una biblioteca de documentos.  <br/> Para obtener más información sobre esta característica, vea [Usar cmdlets de Windows PowerShell para habilitar la sincronización de OneDrive para los dominios que están en la lista de destinatarios seguros](https://go.microsoft.com/fwlink/p/?LinkID=534609).  <br/> |
@@ -412,10 +412,10 @@ En la siguiente tabla se enumeran las actividades de sincronización de archivos
   
 En la siguiente tabla se enumeran los eventos que son el resultado de las tareas de administración de sitios en SharePoint Online.
   
-|**Nombre descriptivo**|**Operation**|**Descripción**|
+|**Nombre descriptivo**|**Operación**|**Descripción**|
 |:-----|:-----|:-----|
 |Agente de usuario exento agregado  <br/> |ExemptUserAgentSet  <br/> |Un administrador global o de SharePoint agrega un agente de usuario a la lista de agentes de usuario exentos en el centro de administración de SharePoint.  <br/> |
-|Se agregó el administrador de la colección de sitios  <br/> |SiteCollectionAdminAdded  <br/> |El propietario o el administrador de la colección de sitios agrega una persona como administrador de la colección de sitios de un sitio. Los administradores de colección de sitios tienen permisos de control total para la colección de sitios y todos los subsitios. Esta actividad también se registra cuando un administrador se concede a sí mismo acceso a la cuenta de OneDrive de un usuario (editando el perfil de usuario en el centro de administración de SharePoint o [mediante el centro de administración de Office 365](https://docs.microsoft.com/office365/admin/add-users/get-access-to-and-back-up-a-former-user-s-data#part-1---get-access-to-the-former-employees-onedrive-for-business-documents)). <br/> |
+|Se agregó el administrador de la colección de sitios  <br/> |SiteCollectionAdminAdded  <br/> |El propietario o el administrador de la colección de sitios agrega una persona como administrador de la colección de sitios de un sitio. Los administradores de colección de sitios tienen permisos de control total para la colección de sitios y todos los subsitios. Esta actividad también se registra cuando un administrador se concede a sí mismo acceso a la cuenta de OneDrive de un usuario (editando el perfil de usuario en el centro de administración de SharePoint o mediante [el centro de administración de Microsoft 365](https://docs.microsoft.com/office365/admin/add-users/get-access-to-and-back-up-a-former-user-s-data#part-1---get-access-to-the-former-employees-onedrive-for-business-documents)). <br/> |
 |(ninguno)  <br/> |SiteCollectionAdminRemoved <br/> |El propietario o el administrador de la colección de sitios quita a una persona como administrador de la colección de sitios de un sitio. Esta actividad también se registra cuando un administrador se quita de la lista de administradores de la colección de sitios de la cuenta de OneDrive de un usuario (editando el perfil de usuario en el centro de administración de SharePoint).  Tenga en cuenta que para devolver esta actividad en los resultados de la búsqueda del registro de auditoría, tiene que buscar todas las actividades. <br/> |
 |Usuario o grupo agregado a un grupo de SharePoint  <br/> |AddedToGroup  <br/> |El usuario agregó un miembro o un invitado a un grupo de SharePoint. Esto puede haber sido una acción intencionada o el resultado de otra actividad, como un evento de uso compartido.  <br/> |
 |Usuario permitido para crear grupos  <br/> |AllowGroupCreationSet  <br/> |El administrador o el propietario del sitio agrega un nivel de permisos a un sitio que permite que un usuario asignado a ese permiso cree un grupo para ese sitio.  <br/> |
@@ -450,7 +450,7 @@ En la siguiente tabla se enumeran los eventos que son el resultado de las tareas
   
 En la siguiente tabla se enumeran las actividades que puede registrar el registro de auditoría de buzones de correo. Se registran las actividades de buzón realizadas por el propietario del buzón, un usuario delegado o un administrador. De forma predeterminada, la auditoría de buzones de correo en Office 365 no está activada. El registro de auditoría de buzones debe estar activado para cada buzón antes de que se registre la actividad del buzón de correo. Para obtener más información, consulte [Habilitar la auditoría de buzones de correo en Office 365](https://go.microsoft.com/fwlink/p/?LinkID=626109).
   
-|**Nombre descriptivo**|**Operation**|**Descripción**|
+|**Nombre descriptivo**|**Operación**|**Descripción**|
 |:-----|:-----|:-----|
 |Se agregaron permisos de delegado de buzón  <br/> |Add-MailboxPermission  <br/> |Un administrador ha asignado el permiso de buzón de correo de FullAccess a un usuario (conocido como delegado) al buzón de otra persona. El permiso FullAccess permite al delegado abrir el buzón de la otra persona y leer y administrar el contenido del buzón.  <br/> |
 |Mensaje clasificado como registro  <br/> |ApplyRecordLabel<br/> |Un mensaje se clasificó como un registro. Esto ocurre cuando una etiqueta de retención que clasifica el contenido como un registro se aplica de forma manual o automática a un mensaje.<br/> |
@@ -475,7 +475,7 @@ En la siguiente tabla se enumeran las actividades que puede registrar el registr
   
 En la siguiente tabla se enumeran las actividades de usuario y administrador en Sway. Sway es una aplicación de Office 365 que ayuda a los usuarios a recopilar, dar formato y compartir ideas, historias y presentaciones en un lienzo interactivo basado en Web. Para obtener más información, consulte [preguntas más frecuentes acerca de Sway: ayuda de administración](https://support.office.com/article/446380fa-25bf-47b2-996c-e12cb2f9d075).
   
-|**Nombre descriptivo**|**Operation**|**Descripción**|
+|**Nombre descriptivo**|**Operación**|**Descripción**|
 |:-----|:-----|:-----|
 |Se cambió el nivel de recurso compartido de Sway  <br/> |SwayChangeShareLevel  <br/> |El usuario cambia el nivel de uso compartido de un Sway. Este evento captura al usuario que cambia el ámbito de uso compartido asociado a un Sway; por ejemplo, público en comparación con la organización.  <br/> |
 |Sway creado  <br/> |SwayCreate  <br/> |El usuario crea un Sway.  <br/> |
@@ -486,19 +486,19 @@ En la siguiente tabla se enumeran las actividades de usuario y administrador en 
 |Duplicación de Sway habilitada  <br/> |EnableDuplication  <br/> |El usuario habilita la duplicación de un Sway; la capacidad de un usuario para habilitar la duplicación de un Sway está habilitada de forma predeterminada.  <br/> |
 |Uso compartido de Sway revocado  <br/> |SwayRevokeShare  <br/> |El usuario deja de compartir un Sway al revocar el acceso a él. Revocar el acceso cambia los vínculos asociados a un Sway.  <br/> |
 |Sway compartido  <br/> |SwayShare  <br/> |El usuario tiene previsto compartir un Sway. Este evento captura la acción del usuario de hacer clic en un destino compartido específico dentro del menú compartir de Sway. El evento no indica si el usuario ha completado la acción compartir.  <br/> |
-|Uso compartido externo de Sway desActivado  <br/> |SwayExternalSharingOff  <br/> |El administrador deshabilita el uso compartido externo de Sway para toda la organización mediante el centro de administración de Office 365.  <br/> |
-|Se ha activado el uso compartido externo de Sway  <br/> |SwayExternalSharingOn  <br/> |El administrador habilita el uso compartido externo de Sway para toda la organización mediante el centro de administración de Office 365.  <br/> |
-|Servicio de Sway desActivado  <br/> |SwayServiceOff  <br/> |El administrador deshabilita Sway para toda la organización mediante el centro de administración de Office 365.  <br/> |
-|Servicio de Sway activado  <br/> |SwayServiceOn  <br/> |El administrador habilita Sway para toda la organización mediante el centro de administración de Office 365 (el servicio de Sway está habilitado de forma predeterminada).  <br/> |
+|Uso compartido externo de Sway desActivado  <br/> |SwayExternalSharingOff  <br/> |El administrador deshabilita el uso compartido externo de Sway para toda la organización mediante el centro de administración de Microsoft 365.  <br/> |
+|Se ha activado el uso compartido externo de Sway  <br/> |SwayExternalSharingOn  <br/> |El administrador habilita el uso compartido externo de Sway para toda la organización mediante el centro de administración 365 de Microsoft.  <br/> |
+|Servicio de Sway desActivado  <br/> |SwayServiceOff  <br/> |El administrador deshabilita Sway para toda la organización mediante el centro de administración de Microsoft 365.  <br/> |
+|Servicio de Sway activado  <br/> |SwayServiceOn  <br/> |El administrador habilita Sway para toda la organización mediante el centro de administración de Microsoft 365 (el servicio de Sway está habilitado de forma predeterminada).  <br/> |
 |Sway visto  <br/> |SwayView  <br/> |El usuario ve un Sway.  <br/> |
 ||||
 
   
 ### <a name="user-administration-activities"></a>Actividades de administración de usuarios
   
-En la tabla siguiente se enumeran las actividades de administración de usuarios que se registran cuando un administrador agrega o cambia una cuenta de usuario mediante el centro de administración de Office 365 o el portal de administración de Azure.
+En la tabla siguiente se enumeran las actividades de administración de usuarios que se registran cuando un administrador agrega o cambia una cuenta de usuario mediante el centro de administración de Microsoft 365 o el portal de administración de Azure.
   
-|**Actividad**|**Operation**|**Descripción**|
+|**Actividad**|**Operación**|**Descripción**|
 |:-----|:-----|:-----|
 |Usuario agregado  <br/> |Agregar usuario  <br/> |Se ha creado una cuenta de usuario de Office 365.  <br/> |
 |Licencia de usuario modificada  <br/> |Cambiar la licencia de usuario  <br/> |La licencia asignada a un usuario lo que ha cambiado. Para ver qué licencias han cambiado, consulte la actividad de **usuario actualizada** correspondiente.  <br/> |
@@ -512,9 +512,9 @@ En la tabla siguiente se enumeran las actividades de administración de usuarios
   
 ### <a name="azure-ad-group-administration-activities"></a>Actividades de administración de grupos de Azure AD
   
-En la siguiente tabla se enumeran las actividades de administración de grupos que se registran cuando un administrador o un usuario crea o cambia un grupo de Office 365 o cuando un administrador crea un grupo de seguridad mediante el centro de administración de Office 365 o el portal de administración de Azure. Para obtener más información acerca de los grupos en Office 365, vea [ver, crear y eliminar grupos en el centro de administración de office 365](https://support.office.com/article/a6360120-2fc4-46af-b105-6a04dc5461c7).
+En la siguiente tabla se enumeran las actividades de administración de grupos que se registran cuando un administrador o un usuario crea o cambia un grupo de Office 365 o cuando un administrador crea un grupo de seguridad mediante el centro de administración de Microsoft 365 o el portal de administración de Azure. Para obtener más información acerca de los grupos en Office 365, vea [ver, crear y eliminar grupos en el centro de administración de Microsoft 365](https://support.office.com/article/a6360120-2fc4-46af-b105-6a04dc5461c7).
   
-|**Nombre descriptivo**|**Operation**|**Descripción**|
+|**Nombre descriptivo**|**Operación**|**Descripción**|
 |:-----|:-----|:-----|
 |Grupo agregado  <br/> |Agregar grupo  <br/> |Se ha creado un grupo.  <br/> |
 |Miembro agregado a grupo  <br/> |Agregar miembro a grupo  <br/> |Se ha agregado un miembro a un grupo.  <br/> |
@@ -527,7 +527,7 @@ En la siguiente tabla se enumeran las actividades de administración de grupos q
   
 En la siguiente tabla se enumeran las actividades de administración de aplicaciones que se registran cuando un administrador agrega o cambia una aplicación que está registrada en Azure AD. Todas las aplicaciones que se basan en Azure AD para la autenticación deben estar registradas en el directorio.
   
-|**Nombre descriptivo**|**Operation**|**Descripción**|
+|**Nombre descriptivo**|**Operación**|**Descripción**|
 |:-----|:-----|:-----|
 |Entrada de delegación agregada  <br/> |Agregar entrada de delegación  <br/> |Un permiso de autenticación se ha creado o concedido a una aplicación en Azure AD.  <br/> |
 |Entidad de servicio agregada  <br/> |Agregar entidad de servicio  <br/> |Se ha registrado una aplicación en Azure AD. Una aplicación se representa mediante una entidad de servicio en el directorio.  <br/> |
@@ -540,9 +540,9 @@ En la siguiente tabla se enumeran las actividades de administración de aplicaci
 
 ### <a name="role-administration-activities"></a>Actividades de administración de roles
   
-En la siguiente tabla se enumeran las actividades de administración de roles de Azure AD que se registran cuando un administrador administra roles de administrador en el centro de administración de Office 365 o en el portal de administración de Azure.
+En la siguiente tabla se enumeran las actividades de administración de roles de Azure AD que se registran cuando un administrador administra roles de administrador en el centro de administración de Microsoft 365 o en el portal de administración de Azure.
   
-|**Nombre descriptivo**|**Operation**|**Descripción**|
+|**Nombre descriptivo**|**Operación**|**Descripción**|
 |:-----|:-----|:-----|
 |Agregar miembro a rol  <br/> |Agregar un miembro de rol a un rol  <br/> |Se agregó un usuario a un rol de administrador en Office 365.  <br/> |
 |Se ha quitado un usuario de un rol de directorio  <br/> |Quitar un miembro de rol del rol  <br/> |Se ha quitado un usuario del rol de administrador de Office 365.  <br/> |
@@ -551,9 +551,9 @@ En la siguiente tabla se enumeran las actividades de administración de roles de
    
 ### <a name="directory-administration-activities"></a>Actividades de administración de directorios
   
-En la siguiente tabla se enumeran las actividades relacionadas con el dominio y el directorio de Azure AD que se registran cuando un administrador administra su organización de Office 365 en el centro de administración de Office 365 o en el portal de administración de Azure.
+En la siguiente tabla se enumeran las actividades relacionadas con el dominio y el directorio de Azure AD que se registran cuando un administrador administra su organización de Office 365 en el centro de administración de Microsoft 365 o en el portal de administración de Azure.
   
-|**Nombre descriptivo**|**Operation**|**Descripción**|
+|**Nombre descriptivo**|**Operación**|**Descripción**|
 |:-----|:-----|:-----|
 |Dominio agregado a la compañía  <br/> |Agregar dominio a la compañía  <br/> |Se agregó un dominio a la organización de Office 365.  <br/> |
 |Se agregó un partner al directorio  <br/> |Agregar Partner a la empresa  <br/> |Se agregó un partner (administrador delegado) a su organización de Office 365.  <br/> |
@@ -571,7 +571,7 @@ En la siguiente tabla se enumeran las actividades relacionadas con el dominio y 
    
 ### <a name="ediscovery-activities"></a>actividades de eDiscovery
   
-La búsqueda de contenido y las actividades relacionadas con la exhibición de documentos electrónicos que se realizan en Office 365 Security & Compliance Center o mediante la ejecución de los cmdlets de Windows PowerShell correspondientes se registran en el registro de auditoría de Office 365. Esto incluye las siguientes actividades:
+La búsqueda de contenido y las actividades relacionadas con la exhibición de documentos electrónicos que se realizan en el centro de seguridad y cumplimiento o mediante la ejecución de los cmdlets de PowerShell correspondientes se registran en el registro de auditoría. Esto incluye las siguientes actividades:
   
 - Creación y administración de casos de eDiscovery
     
@@ -598,7 +598,7 @@ Tenga en cuenta que el registro de auditoría para Power BI no está habilitado 
 
 Workplace Analytics proporciona información sobre cómo los grupos colaboran en la organización de Office 365. En la siguiente tabla se enumeran las actividades realizadas por los usuarios que tienen asignado el rol de administrador o los roles de Analista en Workplace Analytics. Los usuarios a los que se ha asignado el rol de Analista tienen acceso total a todas las características del servicio y usan el producto para realizar el análisis. Los usuarios que tienen asignado el rol de administrador pueden configurar las opciones de privacidad y los valores predeterminados del sistema, y pueden preparar, cargar y comprobar los datos de la organización en el análisis de área de trabajo. Para obtener más información, consulte [Workplace Analytics](https://docs.microsoft.com/en-us/workplace-analytics/index-orig).
 
-|**Nombre descriptivo**|**Operation**|**Descripción**|
+|**Nombre descriptivo**|**Operación**|**Descripción**|
 |:-----|:-----|:-----|
 |Vínculo OData accesible <br/> |AccessedOdataLink <br/> |El analista ha tenido acceso al vínculo OData para una consulta.|
 |Consulta cancelada <br/> |CanceledQuery <br/> |Analista ha cancelado una consulta en ejecución.|
@@ -620,7 +620,7 @@ En la siguiente tabla se enumeran las actividades de usuario y de administrador 
     
 - [Ayuda de Microsoft Teams](https://support.office.com/article/23156c0c-2c6e-49dd-8b7b-7c564b76508c)
     
-|**Nombre descriptivo**|**Operation**|**Descripción**|
+|**Nombre descriptivo**|**Operación**|**Descripción**|
 |:-----|:-----|:-----|
 |Se agregó un bot a Team  <br/> |BotAddedToTeam  <br/> |Un usuario agrega un bot a un equipo.  <br/> |
 |Canal agregado  <br/> |ChannelAdded  <br/> |Un usuario agrega un canal a un equipo.  <br/> |
@@ -628,7 +628,7 @@ En la siguiente tabla se enumeran las actividades de usuario y de administrador 
 |Miembros agregados al equipo  <br/> |MemberAdded  <br/> |Un propietario del equipo agrega miembros a un equipo.  <br/> |
 |Pestaña agregado  <br/> |TabAdded  <br/> |Un usuario agrega una ficha a un canal.  <br/> |
 |Configuración de canal cambiada  <br/> |ChannelSettingChanged  <br/> | La operación ChannelSettingChanged se registra cuando un miembro del equipo realiza las siguientes actividades. Para cada una de estas actividades, se muestra una descripción de la opción modificada (que se muestra en paréntesis a continuación) en la columna **elemento** de los resultados de la búsqueda del registro de auditoría.  <br/> <br/>-Cambia el nombre de un canal de equipo ( **nombre de canal**).  <br/>  <br/>-Cambia la descripción de un canal de equipo ( **Descripción del canal**).  <br/> |
-|Configuración de la organización modificada  <br/> |TeamsTenantSettingChanged  <br/> | La operación TeamsTenantSettingChanged se registra cuando un administrador global realiza las siguientes actividades (mediante el centro de administración de Office 365); Tenga en cuenta que estas actividades afectan a la configuración de Microsoft Teams para toda la organización. Para obtener más información, consulte [configuración de administrador de Microsoft Teams](https://support.office.com/article/3966a3f5-7e0f-4ea9-a402-41888f455ba2).  <br/>  Para cada una de estas actividades, se muestra una descripción de la opción modificada (que se muestra en paréntesis a continuación) en la columna **elemento** de los resultados de la búsqueda del registro de auditoría.  <br/><br/>-Habilita o deshabilita Microsoft Teams para la organización ( **Microsoft Teams**).  <br/><br/>-Habilita o deshabilita la interoperabilidad entre Microsoft Teams y Skype empresarial para la organización (interoperabilidad de **Skype empresarial**).<br/><br/>-Habilita o deshabilita la vista de organigrama en los clientes de Microsoft Teams ( **vista organigrama**).  <br/><br/>-Habilita o deshabilita la posibilidad de que los miembros del equipo programen reuniones privadas ( **programación de reuniones privadas**).  <br/><br/>-Habilita o deshabilita la posibilidad de que los miembros del equipo programen reuniones de canal ( **programación de reuniones de canal**).  <br/><br/>-Habilita o deshabilita las llamadas de vídeo en las reuniones de Microsoft Teams ( **vídeo para reuniones de Skype**).  <br/><br/>-Habilita o deshabilita el uso compartido de la pantalla en Microsoft Teams meetups para la organización ( **uso compartido de pantalla para reuniones de Skype**).  <br/><br/>-Habilita o deshabilita la capacidad de agregar imágenes animadas (llamadas Giphy) a las conversaciones de Microsoft Teams ( **imágenes animadas**).  <br/><br/>-Cambia la configuración de clasificación de contenido para la organización ( **clasificación del contenido**). La clasificación de contenido restringe el tipo de imagen animada que se puede mostrar en las conversaciones.  <br/><br/>-Habilita o deshabilita la posibilidad de que los miembros del equipo agreguen imágenes personalizables (denominadas memes personalizados) desde Internet a las conversaciones del equipo ( **imágenes personalizables de Internet**).  <br/><br/>-Habilita o deshabilita la posibilidad de que los miembros del equipo agreguen imágenes editables (denominadas adhesivos) a las conversaciones del equipo ( **imágenes editables**).<br/><br/>-Habilita o deshabilita que la capacidad de los miembros del equipo use bots en los canales y chats de Microsoft Teams ( **bots de toda la organización**).<br/><br/>-Habilita bots específicos para Microsoft Teams; Esto no incluye T-bot, que es el bot de ayuda de Microsoft teams que está disponible cuando los bots están habilitados para la organización ( **bots individuales**).  <br/><br/>-Habilita o deshabilita la posibilidad de que los integrantes del grupo agreguen extensiones o pestañas ( **extensiones o pestañas**).  <br/><br/>-Habilita o deshabilita la carga del lado de los bots patentados para Microsoft Teams ( **carga de la parte de los bots**).  <br/><br/>-Habilita o deshabilita la posibilidad de que los usuarios envíen mensajes de correo electrónico a un canal de Microsoft Teams ( **correo electrónico de canal**).  <br/> |
+|Configuración de la organización modificada  <br/> |TeamsTenantSettingChanged  <br/> | La operación TeamsTenantSettingChanged se registra cuando un administrador global realiza las siguientes actividades (a través del centro de administración de Microsoft 365); Tenga en cuenta que estas actividades afectan a la configuración de Microsoft Teams para toda la organización. Para obtener más información, consulte [configuración de administrador de Microsoft Teams](https://support.office.com/article/3966a3f5-7e0f-4ea9-a402-41888f455ba2).  <br/>  Para cada una de estas actividades, se muestra una descripción de la opción modificada (que se muestra en paréntesis a continuación) en la columna **elemento** de los resultados de la búsqueda del registro de auditoría.  <br/><br/>-Habilita o deshabilita Microsoft Teams para la organización ( **Microsoft Teams**).  <br/><br/>-Habilita o deshabilita la interoperabilidad entre Microsoft Teams y Skype empresarial para la organización (interoperabilidad de **Skype empresarial**).<br/><br/>-Habilita o deshabilita la vista de organigrama en los clientes de Microsoft Teams ( **vista organigrama**).  <br/><br/>-Habilita o deshabilita la posibilidad de que los miembros del equipo programen reuniones privadas ( **programación de reuniones privadas**).  <br/><br/>-Habilita o deshabilita la posibilidad de que los miembros del equipo programen reuniones de canal ( **programación de reuniones de canal**).  <br/><br/>-Habilita o deshabilita las llamadas de vídeo en las reuniones de Microsoft Teams ( **vídeo para reuniones de Skype**).  <br/><br/>-Habilita o deshabilita el uso compartido de la pantalla en Microsoft Teams meetups para la organización ( **uso compartido de pantalla para reuniones de Skype**).  <br/><br/>-Habilita o deshabilita la capacidad de agregar imágenes animadas (llamadas Giphy) a las conversaciones de Microsoft Teams ( **imágenes animadas**).  <br/><br/>-Cambia la configuración de clasificación de contenido para la organización ( **clasificación del contenido**). La clasificación de contenido restringe el tipo de imagen animada que se puede mostrar en las conversaciones.  <br/><br/>-Habilita o deshabilita la posibilidad de que los miembros del equipo agreguen imágenes personalizables (denominadas memes personalizados) desde Internet a las conversaciones del equipo ( **imágenes personalizables de Internet**).  <br/><br/>-Habilita o deshabilita la posibilidad de que los miembros del equipo agreguen imágenes editables (denominadas adhesivos) a las conversaciones del equipo ( **imágenes editables**).<br/><br/>-Habilita o deshabilita que la capacidad de los miembros del equipo use bots en los canales y chats de Microsoft Teams ( **bots de toda la organización**).<br/><br/>-Habilita bots específicos para Microsoft Teams; Esto no incluye T-bot, que es el bot de ayuda de Microsoft teams que está disponible cuando los bots están habilitados para la organización ( **bots individuales**).  <br/><br/>-Habilita o deshabilita la posibilidad de que los integrantes del grupo agreguen extensiones o pestañas ( **extensiones o pestañas**).  <br/><br/>-Habilita o deshabilita la carga del lado de los bots patentados para Microsoft Teams ( **carga de la parte de los bots**).  <br/><br/>-Habilita o deshabilita la posibilidad de que los usuarios envíen mensajes de correo electrónico a un canal de Microsoft Teams ( **correo electrónico de canal**).  <br/> |
 |Se ha cambiado el rol de miembros en el equipo  <br/> |MemberRoleChanged  <br/> |Un propietario del equipo cambia el rol de los miembros de un equipo. Los siguientes valores indican el tipo de rol asignado al usuario.  <br/><br/><br/> **1** : indica el rol de propietario.<br/>**2** -indica el rol del miembro. <br/>**3** -indica el rol invitado. <br/>La propiedad Members también incluye el nombre de su organización y la dirección de correo electrónico del miembro.  <br/> |
 |Configuración de equipo modificada  <br/> |TeamSettingChanged  <br/> | La operación TeamSettingChanged se registra cuando un propietario del equipo realiza las siguientes actividades. Para cada una de estas actividades, se muestra una descripción de la opción modificada (que se muestra en paréntesis a continuación) en la columna **elemento** de los resultados de la búsqueda del registro de auditoría.  <br/><br/>: Cambia el tipo de acceso de un equipo. Los equipos pueden establecerse como privados o públicos ( **tipo de acceso de equipo**). Cuando un equipo es privado (la configuración predeterminada), los usuarios solo pueden obtener acceso al equipo mediante invitación. Cuando un equipo es público, es detectable por cualquier persona.  <br/><br/>: Cambia la clasificación de la información de un equipo ( **clasificación del equipo**).  <br/>  Por ejemplo, los datos de equipo pueden clasificarse como alto impacto en la empresa, impacto empresarial medio o impacto empresarial bajo.<br/><br/>-Cambia el nombre de un equipo ( **nombre del equipo**).  <br/><br/>-Cambia la descripción del equipo ( **Descripción del equipo**). <br/><br/>-Cambios realizados en cualquiera de las opciones de configuración del equipo. El propietario de un equipo puede tener acceso a esta configuración en un cliente de Teams haciendo clic con el botón secundario en un equipo, haciendo clic en **administrar equipo**y, a continuación, en la pestaña **configuración** . Para estas actividades, el nombre de la opción modificada se muestra en la columna **elemento** de los resultados de la búsqueda de registros de auditoría.  <br/> |
 |Equipo creado  <br/> |TeamCreated  <br/> |Un usuario crea un nuevo equipo.  <br/> |
@@ -647,7 +647,7 @@ En la siguiente tabla se enumeran las actividades de usuario y de administrador 
   
 En la siguiente tabla se enumeran las actividades de usuario y de administrador de Yammer que se registran en el registro de auditoría de Office 365. Para devolver actividades relacionadas con Yammer desde el registro de auditoría de Office 365, debe seleccionar **Mostrar resultados para todas las actividades** en la lista **actividades** . Use los cuadros intervalo de fechas y la lista **usuarios** para restringir los resultados de la búsqueda. 
   
-|**Nombre descriptivo**|**Operation**|**Descripción**|
+|**Nombre descriptivo**|**Operación**|**Descripción**|
 |:-----|:-----|:-----|
 |Directiva de retención de datos cambiada  <br/> |SoftDeleteSettingsUpdated  <br/> |El administrador verificado actualiza la configuración de la Directiva de retención de datos de red en eliminación o eliminación temporal. Solo los administradores verificados pueden realizar esta operación.  <br/> |
 |Configuración de red cambiada  <br/> |NetworkConfigurationUpdated  <br/> |El administrador de red o verificado cambia la configuración de la red de Yammer. Esto incluye establecer el intervalo para exportar datos y habilitar el chat.  <br/> |
@@ -670,7 +670,7 @@ En la siguiente tabla se enumeran las actividades de usuario y de administrador 
    
 ### <a name="microsoft-flow-activities"></a>Actividades de Microsoft Flow
 
-Puede buscar en el registro de auditoría actividades de Microsoft Flow. Estas actividades incluyen la creación, edición y eliminación de flujos y el cambio de los permisos de flujo. Para obtener información sobre la auditoría de actividades de flujo, vea el blog [eventos de auditoría de Microsoft Flow ahora disponibles en el centro de seguridad _AMP_ cumplimiento de Office 365](https://flow.microsoft.com/blog/security-and-compliance-center).
+Puede buscar en el registro de auditoría actividades de Microsoft Flow. Estas actividades incluyen la creación, edición y eliminación de flujos y el cambio de los permisos de flujo. Para obtener información sobre la auditoría de actividades de flujo, vea el blog [eventos de auditoría de Microsoft Flow ahora disponibles en el centro de seguridad _AMP_ cumplimiento](https://flow.microsoft.com/blog/security-and-compliance-center).
 
 ### <a name="microsoft-powerapps"></a>Microsoft PowerApps
 
@@ -731,7 +731,7 @@ Además, tenga en cuenta que la duración del período de retención de los regi
 
 Sí. La API de actividad de administración 365 de Office se usa para capturar los registros de auditoría mediante programación.  Para empezar, vea Introducción [a las API de administración de Office 365](https://docs.microsoft.com/office/office-365-management-api/get-started-with-office-365-management-apis).
 
-**¿Hay otras formas de obtener registros de auditoría que no sean el centro de seguridad de Office 365 & cumplimiento o la API de actividad de administración de Office 365?**
+**¿Hay otras formas de obtener registros de auditoría que no sean el uso del centro de seguridad y cumplimiento o la API de actividad de administración de Office 365?**
 
 No. Estas son las dos formas de obtener datos del servicio de auditoría de Office 365. 
 

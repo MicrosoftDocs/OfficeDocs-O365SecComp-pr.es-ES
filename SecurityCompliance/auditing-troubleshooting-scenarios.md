@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Puede usar la herramienta de búsqueda de registros de auditoría de Office 365 para ayudarle a solucionar problemas comunes, como investigar una cuenta en peligro o averiguar quién ha configurado el reenvío de correo para un buzón.
-ms.openlocfilehash: 506a7c05c8fb88be00e52421341148699d2a74b0
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: bd0483f2b2e209dc0cbd2b03eda928fd8d44d7b0
+ms.sourcegitcommit: e24f70699021c4f4ba56508ad0afb6f65010c357
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999633"
+ms.lasthandoff: 04/05/2019
+ms.locfileid: "31479666"
 ---
 # <a name="search-the-office-365-audit-log-to-troubleshoot-common-scenarios"></a>Buscar en el registro de auditoría de 365 de Office para solucionar escenarios comunes
 
@@ -36,17 +36,13 @@ Cada uno de los escenarios de solución de problemas descritos en este artículo
 
 ### <a name="permissions-required-to-use-the-audit-log-search-tool"></a>Permisos necesarios para usar la herramienta de búsqueda de registros de auditoría
 
-Debe tener asignado el rol registros de auditoría con permiso de vista o registros de auditoría en Exchange Online para buscar en el registro de auditoría de 365 de Office. De forma predeterminada, estos roles se asignan a los grupos de roles administración de cumplimiento y administración de la organización en la página **permisos** del centro de administración de Exchange. Para obtener más información, vea [administrar grupos de roles en Exchange Online](https://go.microsoft.com/fwlink/p/?LinkID=730688).
+Debe tener asignado el rol registros de auditoría con permiso de vista o registros de auditoría en Exchange Online para buscar en el registro de auditoría de 365 de Office. De forma predeterminada, estos roles se asignan a los grupos de roles administración de cumplimiento y administración de la organización en la página **permisos** del centro de administración de Exchange. Tenga en cuenta que los administradores globales de Office 365 y Microsoft 365 se agregan automáticamente como miembros del grupo de funciones de administración de la organización en Exchange Online. Para obtener más información, vea [administrar grupos de roles en Exchange Online](https://go.microsoft.com/fwlink/p/?LinkID=730688).
 
 ### <a name="running-audit-log-searches"></a>Ejecución de búsquedas de registro de auditoría
 
 En esta sección se describen los conceptos básicos para crear y ejecutar búsquedas de registros de auditoría. Siga estas instrucciones como punto de partida para cada escenario de solución de problemas de este artículo. Para obtener instrucciones detalladas paso a paso, consulte [Buscar en el registro de auditoría](search-the-audit-log-in-security-and-compliance.md#step-1-run-an-audit-log-search).
 
-1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com).
-  
-2. Inicie sesión en Office 365 con su cuenta profesional o educativa.
-
-3. En el panel izquierdo del centro de seguridad y cumplimiento, haga clic en búsqueda de**registros de auditoría**de **búsqueda** > .
+1. Vaya a [https://protection.office.com/unifiedauditlog](https://protection.office.com/unifiedauditlog) e inicie sesión con su cuenta profesional o educativa.
     
     Se muestra la página de **búsqueda de registros de auditoría** . 
     
@@ -70,7 +66,7 @@ En esta sección se describen los conceptos básicos para crear y ejecutar búsq
 
     - [Ver los resultados de la búsqueda](search-the-audit-log-in-security-and-compliance.md#step-2-view-the-search-results)
     - [Filtrar resultados de la búsqueda](search-the-audit-log-in-security-and-compliance.md#step-3-filter-the-search-results)
-    - [Exportar resultados de la búsqueda](search-the-audit-log-in-security-and-compliance.md#step-4-export-the-search-results-to-a-file)
+    - [Exportar resultados de búsqueda](search-the-audit-log-in-security-and-compliance.md#step-4-export-the-search-results-to-a-file)
 
 ## <a name="finding-the-ip-address-of-the-computer-used-to-access-a-compromised-account"></a>Buscar la dirección IP del equipo usado para obtener acceso a una cuenta en peligro
 
@@ -115,9 +111,9 @@ En este punto, tiene que mirar los detalles de cada registro de auditoría para 
 
 a. En el campo **objectId** , se muestra el alias del buzón de correo en el que se ha configurado el reenvío de correo electrónico. Este buzón también se muestra en la columna de **elementos** de la página de resultados de búsqueda.
 
-b. En el campo **parámetros** , el valor *ForwardingSmtpAddress* indica que el correo electrónico reenviado se ha establecido en el buzón. En este ejemplo, el correo se envía a la dirección de correo electrónico mike@contoso.com, que está fuera de la organización alpinehouse.onmicrosoft.com.
+b. En el campo **parámetros** , el valor *ForwardingSmtpAddress* indica que el correo electrónico reenviado se ha establecido en el buzón. En este ejemplo, el correo se envía a la dirección mike@contoso.comde correo electrónico, que está fuera de la organización alpinehouse.onmicrosoft.com.
 
-c. El valor *true* del parámetro *DeliverToMailboxAndForward* indica que una copia del mensaje se entrega a SARAD@alpinehouse.onmicrosoft.com *y* se reenvía a la dirección de correo electrónico especificada por el *ForwardingSmtpAddress *parámetro, que en este ejemplo es Mike@contoso.com. Si el valor del parámetro *DeliverToMailboxAndForward* está establecido en *false*, el correo electrónico sólo se reenvía a la dirección especificada por el parámetro *ForwardingSmtpAddress* . No se entrega al buzón especificado en el campo **objectId** .
+c. El valor *true* del parámetro *DeliverToMailboxAndForward* indica que una copia del mensaje se entrega a sarad@alpinehouse.onmicrosoft.com *y* se reenvía a la dirección de correo electrónico especificada por el parámetro *ForwardingSmtpAddress* , que en este ejemplo es mike@contoso.com. Si el valor del parámetro *DeliverToMailboxAndForward* está establecido en *false*, el correo electrónico sólo se reenvía a la dirección especificada por el parámetro *ForwardingSmtpAddress* . No se entrega al buzón especificado en el campo **objectId** .
 
 d. El campo **userid** indica el usuario que ha configurado el reenvío de correo electrónico en el buzón especificado en el campo **objectId** . Este usuario también se muestra en la columna **usuario** de la página de resultados de búsqueda. En este caso, parece que el propietario del buzón estableció el reenvío de correo electrónico en su buzón.
 
@@ -191,8 +187,8 @@ Después de ejecutar la búsqueda, se muestran todos los registros de auditoría
 
 a. En el campo **objectId** , se muestra el nombre completo de la regla de bandeja de entrada. Este nombre incluye el alias del buzón de correo del usuario (por ejemplo, Sara) y el nombre de la regla de bandeja de entrada (por ejemplo, "mover mensajes desde el administrador").
 
-b. En el campo **parámetros** , se muestra la condición de la regla de la bandeja de entrada. En este ejemplo, la condición se especifica mediante el parámetro *from* . El valor definido para el parámetro *from* indica que la regla de la bandeja de entrada actúa en el correo electrónico enviado por admin@alpinehouse.onmicrosoft.com. Para obtener una lista completa de los parámetros que se pueden usar para definir las condiciones de las reglas de la bandeja de entrada, consulte el artículo [New-InboxRule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-inboxrule) .
+b. En el campo **parámetros** , se muestra la condición de la regla de la bandeja de entrada. En este ejemplo, la condición se especifica mediante el parámetro *from* . El valor definido para el parámetro *from* indica que la regla de la bandeja de entrada actúa admin@alpinehouse.onmicrosoft.comen el correo electrónico enviado por. Para obtener una lista completa de los parámetros que se pueden usar para definir las condiciones de las reglas de la bandeja de entrada, consulte el artículo [New-InboxRule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-inboxrule) .
 
-c. El parámetro *MoveToFolder* especifica la acción para la regla de bandeja de entrada; en este ejemplo, los mensajes recibidos desde admin@alpinehouse.onmicrosoft.com se mueven a la carpeta denominada *AdminSearch*. Consulte también el artículo [New-InboxRule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-inboxrule) para obtener una lista completa de los parámetros que se pueden usar para definir la acción de una regla de bandeja de entrada.
+c. El parámetro *MoveToFolder* especifica la acción para la regla de bandeja de entrada; en este ejemplo, los mensajes recibidos admin@alpinehouse.onmicrosoft.com desde se mueven a la carpeta denominada *AdminSearch*. Consulte también el artículo [New-InboxRule](https://docs.microsoft.com/powershell/module/exchange/mailboxes/new-inboxrule) para obtener una lista completa de los parámetros que se pueden usar para definir la acción de una regla de bandeja de entrada.
 
 d. El campo **userid** indica el usuario que creó la regla de bandeja de entrada especificada en el campo **objectId** . Este usuario también se muestra en la columna **usuario** de la página de resultados de búsqueda.
