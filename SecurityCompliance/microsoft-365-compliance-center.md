@@ -1,22 +1,22 @@
 ---
-title: Bienvenido al nuevo centro de cumplimiento de Microsoft 365
+title: Información general sobre el nuevo centro de cumplimiento de Microsoft 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 03/28/2019
+ms.date: 04/09/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-seccomp
 localization_priority: Normal
 description: Obtenga información sobre el nuevo centro de cumplimiento de Microsoft 365, incluido lo que contiene, cómo obtenerlo y los pasos siguientes.
-ms.openlocfilehash: d627174fce26be9f200f9fdc4f48f0946a8caf69
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.openlocfilehash: ae608d1aafb803fabe6ed1eba3804b9921bac7b2
+ms.sourcegitcommit: 48b77ec6fb499175507fc08f11dc9f5efe6c4858
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31026321"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "31518390"
 ---
-# <a name="welcome-to-your-all-new-microsoft-365-compliance-center"></a>Bienvenido al nuevo centro de cumplimiento de Microsoft 365
+# <a name="overview-of-the-all-new-microsoft-365-compliance-center"></a>Información general sobre el nuevo centro de cumplimiento de Microsoft 365
 
 ## <a name="overview"></a>Información general
 
@@ -24,7 +24,7 @@ Si está interesado en la postura de cumplimiento de la organización, le va a e
 
 Lea este artículo para familiarizarse con el centro de cumplimiento de Microsoft 365, [Cómo obtenerlo](#how-do-i-get-this), las [preguntas más](#frequently-asked-questions)frecuentes y los [pasos siguientes](#next-steps).
 
-[![Centro de cumplimiento de Microsoft 365](media/m365-compliance-center.png)](https://compliance.microsoft.com)
+[![MCentro de cumplimiento de icrosoft 365](media/m365-compliance-center.png)](https://compliance.microsoft.com)
 
 ## <a name="welcome-to-microsoft-365-compliance"></a>Bienvenido a Microsoft 365 cumplimiento normativo
 
@@ -83,11 +83,15 @@ Además de los vínculos de las tarjetas en la Página principal, encontrará un
 
 ### <a name="why-am-i-taken-to-the-office-365-security--compliance-center-to-perform-some-tasks-such-as-defining-certain-policies"></a>¿Por qué me he dado al centro de cumplimiento de Office 365 Security & para realizar algunas tareas, como la definición de determinadas directivas?
 
-Todavía estamos desarrollando el centro de cumplimiento de Microsoft 365 y agregaremos más funcionalidad y soluciones en los próximos meses. Mientras tanto, hay algunas tareas que deben realizarse en el centro de seguridad & cumplimiento. En estos casos, se le redirigirá automáticamente a la ubicación en la que puede realizar la tarea a mano, como la creación o edición de una directiva de supervisión.
+Todavía estamos desarrollando el centro de cumplimiento de Microsoft 365 y agregaremos más funcionalidad y soluciones en los próximos meses. Mientras tanto, hay algunas tareas que deben realizarse en el centro de seguridad & cumplimiento de Office 365 ([https://protection.office.com](https://protection.office.com)). En estos casos, se le redirigirá automáticamente a la ubicación en la que puede realizar la tarea a mano, como la creación o edición de una directiva de supervisión.
 
 ### <a name="why-dont-i-see-the-new-microsoft-365-compliance-center-yet"></a>¿Por qué no veo todavía el nuevo centro de cumplimiento de Microsoft 365?
 
-En primer lugar, asegúrese de que tiene las [licencias y los permisos](microsoft-security-and-compliance.md#required-licenses-and-permissions)adecuados. A continuación, inicie sesión [https://compliance.microsoft.com](https://compliance.microsoft.com)en. Si aún no ve el nuevo centro de cumplimiento, lo tendrá muy pronto.
+En primer lugar, asegúrese de que tiene las [licencias y los permisos](microsoft-security-and-compliance.md#required-licenses-and-permissions)adecuados. A continuación, inicie sesión [https://compliance.microsoft.com](https://compliance.microsoft.com)en. Si aún no ve el nuevo centro de cumplimiento, lo tendrá pronto.
+
+### <a name="i-cant-find-some-of-my-compliance-settings-what-do-i-do"></a>No encuentro algunas de las opciones de configuración de cumplimiento. What do I do?
+
+Todavía estamos agregando funcionalidad al centro de cumplimiento de Microsoft 365. Si no encuentra algo, como la búsqueda de registros de auditoría, intente navegar al centro de cumplimiento de & de seguridad de[https://protection.office.com](https://protection.office.com)Office 365 (). La configuración se guardará en el centro de cumplimiento de Office 365 Security & y en el nuevo centro de cumplimiento de Microsoft 365 automáticamente.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

@@ -3,7 +3,7 @@ title: El nuevo centro de seguridad 365 de Microsoft y el centro de cumplimiento
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 03/27/2019
+ms.date: 04/09/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: Normal
 description: Prepárese para el nuevo centro de seguridad y cumplimiento de Microsoft 365
-ms.openlocfilehash: 15e67b5bdd6aca8c5447abe2e4cd12fb15e36760
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 36159872bb42230523fac0a2d006fbb35eac18c6
+ms.sourcegitcommit: 48b77ec6fb499175507fc08f11dc9f5efe6c4858
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000693"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "31518380"
 ---
 # <a name="the-new-microsoft-365-security-center-and-microsoft-365-compliance-center-are-now-generally-available"></a>El nuevo centro de seguridad 365 de Microsoft y el centro de cumplimiento de Microsoft 365 están disponibles para el público
 
@@ -41,7 +41,7 @@ El nuevo [centro de cumplimiento de microsoft 365](microsoft-365-compliance-cent
 
 Podrá acceder fácilmente a las etiquetas y directivas de confidencialidad y retención, prevención de pérdida de datos (DLP), gobierno de datos, exhibición de documentos electrónicos, solicitudes de sujetos de datos (interesado), administración de casos y Cloud App Security. Además, puede obtener información útil y aprovechar la automatización inteligente para reducir los riesgos de cumplimiento y proteger su información digital. 
 
-[![Centro de cumplimiento de Microsoft 365](media/m365-compliance-center.png)](microsoft-365-compliance-center.md)
+[![MCentro de cumplimiento de icrosoft 365](media/m365-compliance-center.png)](microsoft-365-compliance-center.md)
 
 Cuando use por primera vez el centro de cumplimiento de Microsoft 365, verá información en la parte superior de la pantalla para ayudarle a empezar. Verá cómo desplazarse fácilmente a las características de cumplimiento que tiene más interés en explorar. Para obtener más información, vea [Bienvenido a su nuevo centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center.md).
 
@@ -52,25 +52,24 @@ Tendrá acceso al centro de cumplimiento de Microsoft 365 en [https://compliance
 
 ## <a name="what-to-expect"></a>Qué esperar
 
-### <a name="general-availability"></a>Disponibilidad general
+### <a name="available-now"></a>¡ Ya está disponible!
 
-El nuevo centro de seguridad 365 de Microsoft y el nuevo centro de cumplimiento de Microsoft 365 ahora están disponibles a finales de marzo de 2019. Si aún no lo ha hecho, debe tener acceso al nuevo centro de seguridad de Microsoft 365 y al centro de cumplimiento de Microsoft 365 muy pronto.
+El nuevo centro de seguridad 365 de Microsoft y el nuevo centro de cumplimiento de Microsoft 365 ahora están disponibles para los clientes de Microsoft 365 a finales de marzo de 2019. 
+
+Si tiene otra suscripción, como un plan independiente que incluya el centro de cumplimiento de Office 365 Security &, tendrá acceso al nuevo centro de seguridad de Microsoft 365 y al centro de cumplimiento de Microsoft 365 en breve. Para obtener más información, vea el [mapa de ruta de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap).
 
 ### <a name="easy-access"></a>Acceso sencillo
 
-Con la mejor navegación, las soluciones integradas y una experiencia simplificada, podrá ver y obtener acceso a la información que más le interesa y aprovechar las ventajas de las eficaces soluciones de seguridad y cumplimiento de Microsoft 365.
+Con la mejor navegación, las soluciones integradas y una experiencia simplificada, podrá ver y obtener acceso a la información que más le interesa y aprovechar las ventajas de las eficaces soluciones de seguridad y cumplimiento de Microsoft 365. Y, mientras se agregan más funcionalidad y soluciones en los próximos meses, el centro de cumplimiento () de Office[https://protection.microsoft.com](https://protection.microsoft.com)365 Security & () sigue estando disponible.
 
 ### <a name="smooth-transition"></a>Transición suave
 
-Puede esperar una transición suave a los nuevos centros. Una vez que se ha implementado completamente este cambio, tenemos previsto retirar el antiguo centro de cumplimiento de &[https://protection.microsoft.com](https://protection.microsoft.com)de seguridad de Microsoft 365 (). La experiencia del administrador cambiará, pero esto no afectará a las configuraciones de seguridad y cumplimiento actuales.
-
-Una vez que se ha implementado esta actualización, si su organización tiene Microsoft 365 Enterprise E3 o E5, los administradores de seguridad y cumplimiento pueden:
+Puede esperar una transición suave a los nuevos centros. Finalmente, se retirará el anterior Centro de cumplimiento[https://protection.microsoft.com](https://protection.microsoft.com)de Microsoft 365 Security & (). Aunque la experiencia del administrador cambiará, esto no afectará a las configuraciones de seguridad y cumplimiento actuales. Si su organización tiene Microsoft 365 Enterprise E3 o E5, los administradores de seguridad y cumplimiento pueden:
 
 - Ir directamente a [https://security.microsoft.com](https://security.microsoft.com) y [https://compliance.microsoft.com](https://compliance.microsoft.com); <br>o  
-- Vaya al centro de administración de 365 de Microsoft y, a continuación, vaya al nuevo centro de seguridad de Microsoft 365 y al centro de cumplimiento de Microsoft 365 (los vínculos están en centros de administración en el panel de navegación de la izquierda).
+- Vaya al centro de administración de 365 de[https://admin.microsoft.com](https://admin.microsoft.com)Microsoft () y navegue desde allí (en el panel de navegación, haga clic en **Mostrar todo**y, a continuación, elija **seguridad** o **cumplimiento**).
 
-> [!TIP]
-> Si usa el centro de seguridad & cumplimiento de Office 365 ([https://protection.office.com](http://protection.office.com)), podrá seguir configurando y administrando la configuración de Office 365 en el centro de cumplimiento de _AMP_ de seguridad existente. Las configuraciones se mantendrán en el centro de seguridad & de seguridad existente, así como en el nuevo centro de seguridad 365 de Microsoft y el centro de cumplimiento de Microsoft 365.  
+Además, puede seguir configurando y administrando la configuración del centro de cumplimiento de & de seguridad[https://protection.office.com](http://protection.office.com)de Office 365 (). La configuración se mantendrá en el centro de cumplimiento de Office 365 Security & y en el nuevo centro de seguridad Microsoft 365 y en el centro de cumplimiento de Microsoft 365.  
 
 ## <a name="required-licenses-and-permissions"></a>Permisos y licencias necesarios
 
@@ -92,7 +91,7 @@ En la tabla siguiente se resume quién puede tener acceso a diversos portales en
 
 |Portal |Administrador global |Administrador de seguridad, operador de seguridad o lector de seguridad|Administrador de cumplimiento de normas o administrador de datos de cumplimiento |
 |---------|---------|---------|---------|
-|[Centro de seguridad & cumplimiento](https://protection.office.com) |Sí |Sí  |Sí |
+|[Centro de seguridad y cumplimiento](https://protection.office.com) |Sí |Sí  |Sí |
 |[Centro de seguridad de Microsoft 365](https://security.microsoft.com) |Sí  | Sí  | No        |
 |[Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com) | Sí | No | Sí |
 |[Administrador de cumplimiento](https://aka.ms/compliancemanager) |Sí | Sí |Sí  |
@@ -109,5 +108,10 @@ En la tabla siguiente se resume quién puede tener acceso a diversos portales en
 
 ## <a name="additional-resources"></a>Recursos adicionales
 
+[Centro de seguridad de Microsoft 365](overview-security-center.md)
+
+[Centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center.md)
+
 [Plan de desarrollo de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap)
 
+[Descripción del servicio del centro de cumplimiento de & de seguridad de Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)
