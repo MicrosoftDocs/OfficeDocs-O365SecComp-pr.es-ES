@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
 description: 'Resumen: Aplique directivas de etiquetas de retención y de prevención de pérdida de datos (DLP) a sitios de grupo de SharePoint Online con distintos niveles de protección de la información.'
-ms.openlocfilehash: be9fe776353af4c420a93e38a0906eeb674ef8a7
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 81173e96ce6e67ee3b513abce4424686abe79e02
+ms.sourcegitcommit: 19d27ff836ee7fa1f8a4e761e04d928f13f4bfd8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999163"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31745262"
 ---
 # <a name="protect-sharepoint-online-files-with-retention-labels-and-dlp"></a>Proteger archivos de SharePoint Online con DLP y etiquetas de retención
 
@@ -45,7 +45,7 @@ Hay tres fases para crear y luego asignar etiquetas de retención a sitios de gr
 
 En esta fase se determinan los nombres de las etiquetas de retención para los cuatro niveles de protección de la información aplicados a los sitios de grupo de SharePoint Online. En la siguiente tabla se indican los nombres recomendados para cada nivel.
   
-|**Nivel de protección de sitio de grupo de SharePoint Online**|**Nombre de etiqueta**|
+|**Nivel de protección de sitio de grupo de SharePoint Online**|**Nombre de la etiqueta**|
 |:-----|:-----|
 |Base de referencia-Público  <br/> |Interno público  <br/> |
 |Base de referencia-Privado  <br/> |Private  <br/> |
@@ -56,9 +56,9 @@ En esta fase se determinan los nombres de las etiquetas de retención para los c
 
 En esta fase se crean y luego se publican las etiquetas determinadas para los diferentes niveles de protección de la información.
   
-1. Inicie sesión en el [portal de seguridad de Microsoft 365](https://security.microsoft.com) con una cuenta que tenga el rol Administrador de seguridad o Administrador de la compañía.
+1. Inicie sesión en el [portal de cumplimiento de Microsoft 365](https://compliance.microsoft.com) con una cuenta que tenga el rol de administrador de seguridad o administrador de la empresa.
     
-2. En la pestaña **Inicio: Seguridad de Microsoft 365** del explorador, haga clic en **Clasificaciones > Etiquetas**.
+2. En la pestaña **Inicio: Cumplimiento de Microsoft 365** del explorador, haga clic en **Clasificaciones > Etiquetas**.
     
 3. Haga clic en **Etiquetas de retención > Crear una etiqueta**.
     
@@ -70,7 +70,7 @@ En esta fase se crean y luego se publican las etiquetas determinadas para los di
     
 7. En el panel **Revise su configuración**, haga clic en **Crear la etiqueta**.
     
-8. Para las otras etiquetas, haga clic en **Crear una etiqueta**, y, después, repita los pasos del 4 al 7.
+8. Para las otras etiquetas, haga clic en **Crear una etiqueta**, y, después, repita los pasos del 3 al 7 según sea necesario.
     
 
 ### <a name="publish-your-new-labels"></a>Publicar las nuevas etiquetas
@@ -217,13 +217,13 @@ Esta es la configuración resultante para los sitios de grupo extremadamente con
   
 ## <a name="next-step"></a>Paso siguiente
 
-[Proteger archivos de SharePoint Online con Azure Information Protection](protect-sharepoint-online-files-with-azure-information-protection.md)
+[Protección de archivos de SharePoint Online con Azure Information Protection](protect-sharepoint-online-files-with-azure-information-protection.md)
     
 ## <a name="see-also"></a>Vea también
 
 [Protección de archivos y sitios de SharePoint Online](secure-sharepoint-online-sites-and-files.md)
   
-[Instrucciones de seguridad de Microsoft para campañas políticas, organizaciones sin ánimo de lucro y otras organizaciones ágiles](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
+[Guía de seguridad de Microsoft para campañas políticas, ONG y otras organizaciones ágiles](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   
 [Adopción de la nube y soluciones híbridas](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
 
