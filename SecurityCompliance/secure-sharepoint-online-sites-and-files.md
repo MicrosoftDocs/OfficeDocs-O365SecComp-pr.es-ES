@@ -18,12 +18,12 @@ ms.custom:
 - Ent_Architecture
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: 'Resumen: recomendaciones de configuración para proteger archivos en SharePoint Online y Office 365.'
-ms.openlocfilehash: cc31d6633b41fe8bcec57794247718c44c0fc555
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 5dd9866096f4fea4fbb578e39f6b017f5cc898a2
+ms.sourcegitcommit: 19d27ff836ee7fa1f8a4e761e04d928f13f4bfd8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999383"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31745282"
 ---
 # <a name="secure-sharepoint-online-sites-and-files"></a>Protección de archivos y sitios de SharePoint Online
 
@@ -41,9 +41,9 @@ Las configuraciones que se explican en este artículo concuerdan con las recomen
     
 Para más información sobre estos niveles y capacidades recomendadas para cada nivel, vea los siguientes recursos. 
   
-- [Protección de identidades y dispositivos para Office 365](https://docs.microsoft.com/office365/enterprise/microsoft-cloud-it-architecture-resources#BKMK_O365IDP)
+- [Protección de identidades y dispositivos para Office 365](https://docs.microsoft.com/office365/enterprise/microsoft-cloud-it-architecture-resources#BKMK_O365IDP)
     
-- [Soluciones de protección de archivos en Office 365](https://docs.microsoft.com/office365/enterprise/microsoft-cloud-it-architecture-resources#BKMK_O365fileprotect)
+- [Soluciones de protección de archivos en Office 365](https://docs.microsoft.com/office365/enterprise/microsoft-cloud-it-architecture-resources#BKMK_O365fileprotect)
     
 ## <a name="capability-overview"></a>Introducción a las capacidades
 
@@ -115,8 +115,8 @@ En la tabla siguiente se resume la configuración para cada uno de los sitios de
   
 ||||||
 |:-----|:-----|:-----|:-----|:-----|
-||**Protección de base de referencia n.º 1** <br/> |**Protección de base de referencia n.º 2** <br/> |**Protección confidencial** <br/> |**Extremadamente confidencial** <br/> |
-|Descripción  <br/> |Colaboración y detección abierta dentro de la organización.  <br/> |Grupo y sitio privado con uso compartido permitido fuera del grupo.  <br/> |Sitio aislado, en el que se definen niveles de acceso según la pertenencia a grupos específicos. Solo se permite el uso compartido a los miembros del sitio. DLP avisa a los usuarios cuando intentan enviar archivos fuera de la organización.  <br/> |Sitio aislado + cifrado de archivos y permisos con Azure Information Protection. DLP impide a los usuarios enviar archivos fuera de la organización.  <br/> |
+||**Protección de referencia #1** <br/> |**Protección de referencia #2** <br/> |**Protección confidencial** <br/> |**Extremadamente confidencial** <br/> |
+|Description  <br/> |Colaboración y detección abierta dentro de la organización.  <br/> |Grupo y sitio privado con uso compartido permitido fuera del grupo.  <br/> |Sitio aislado, en el que se definen niveles de acceso según la pertenencia a grupos específicos. Solo se permite el uso compartido a los miembros del sitio. DLP avisa a los usuarios cuando intentan enviar archivos fuera de la organización.  <br/> |Sitio aislado + cifrado de archivos y permisos con Azure Information Protection. DLP impide a los usuarios enviar archivos fuera de la organización.  <br/> |
 |Sitio de grupo público o privado  <br/> |Público  <br/> |Private  <br/> |Private  <br/> |Private  <br/> |
 |¿Quién tiene acceso?  <br/> |Todos los usuarios de la organización, incluidos los usuarios B2B y usuarios invitados.  <br/> |Solo los miembros del sitio. Otros usuarios pueden pedir acceso.  <br/> |Solo los miembros del sitio. Otros usuarios pueden pedir acceso.  <br/> |Solo los miembros. Otros usuarios no pueden pedir acceso.  <br/> |
 |Controles de uso compartido en el nivel de sitio  <br/> |Uso compartido permitido con cualquier usuario. Configuración predeterminada.  <br/> |Uso compartido permitido con cualquier usuario. Configuración predeterminada.  <br/> |Los miembros no pueden compartir el acceso al sitio.  <br/> Los usuarios que no son miembros pueden pedir acceso al sitio, pero estas solicitudes deben ser supervisadas por un administrador del sitio.  <br/> |Los miembros no pueden compartir el acceso al sitio.  <br/> Los usuarios que no son miembros no pueden pedir acceso al sitio o al contenido.  <br/> |
@@ -180,9 +180,14 @@ Hay dos maneras de conceder a los usuarios externos el acceso a archivos protegi
 
 Para consultar los pasos necesarios para configurar Azure Information Protection en esta solución, vea [Protección de archivos de SharePoint Online con Azure Information Protection](protect-sharepoint-online-files-with-azure-information-protection.md).
   
-## <a name="see-also"></a>Vea también
 
-[Instrucciones de seguridad de Microsoft para campañas políticas, organizaciones sin ánimo de lucro y otras organizaciones ágiles](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
+## <a name="next-step"></a>Siguiente paso
+
+Amplíe esta información como una prueba de concepto con [Sitios seguros de SharePoint Online en un entorno de desarrollo/pruebas](secure-sharepoint-online-sites-in-a-dev-test-environment.md).
+
+## <a name="see-also"></a>Consulte también
+
+[Guía de seguridad de Microsoft para campañas políticas, ONG y otras organizaciones Ágil](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md)
   
 [Adopción de la nube y soluciones híbridas](https://docs.microsoft.com/office365/enterprise/cloud-adoption-and-hybrid-solutions)
   
