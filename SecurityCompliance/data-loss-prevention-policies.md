@@ -3,7 +3,7 @@ title: Información general sobre directivas de prevención de pérdida de datos
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 3/29/2019
+ms.date: 04/11/2019
 ms.audience: ITPro
 ms.topic: conceptual
 f1_keywords:
@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Con una directiva de prevención de pérdida de datos (DLP) en el &amp; centro de seguridad y cumplimiento de Office 365, puede identificar, supervisar y proteger automáticamente la información confidencial en Office 365.
-ms.openlocfilehash: 4117a99afc804fd397deb45087c5058077f9ff60
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: da8acd8904ac6a9b1945c8f794bad84a0adc64fb
+ms.sourcegitcommit: 94e9eeab8134a9c4d9004cc16de7da227a0e5cc0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000023"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31784111"
 ---
 # <a name="overview-of-data-loss-prevention-policies"></a>Información general sobre directivas de prevención de pérdida de datos
 
@@ -56,13 +56,13 @@ Las directivas de DLP se crean y se administran en la página prevención de pé
 
 Una directiva DLP contiene unas pocas cosas básicas:
   
-- Dónde proteger las **ubicaciones** de contenido como Exchange Online, SharePoint Online y OneDrive para la empresa, así como los canales y chats de Microsoft Teams. 
+- Dónde proteger el contenido: **ubicaciones** como Exchange Online, SharePoint Online y los sitios de OneDrive para la empresa, así como chats y canales de Microsoft Teams. 
     
 - Cuándo y cómo proteger el contenido aplicando **reglas** compuestas de: 
     
-  - **Condiciones** que el contenido debe cumplir antes de que se aplique la regla: por ejemplo, solo se busca contenido que incluya números de la seguridad social que se hayan compartido con personas de fuera de la organización. 
+  - **Condiciones** que debe cumplir el contenido antes de que se aplique la regla. Por ejemplo, una regla puede estar configurada para buscar únicamente contenido que incluya números de la seguridad social que se hayan compartido con personas fuera de la organización. 
     
-  - **Acciones** que desea que la regla realice automáticamente cuando se encuentra contenido que coincide con las condiciones. Por ejemplo, bloquear el acceso al documento y enviar una notificación por correo electrónico al usuario y al responsable de cumplimiento normativo. 
+  - **Acciones** que desea que realice la regla automáticamente cuando se encuentre contenido que coincida con las condiciones. Por ejemplo, una regla se puede configurar para bloquear el acceso a un documento y enviar una notificación por correo electrónico al usuario y al responsable de cumplimiento. 
     
 Puede usar una regla para satisfacer un requisito de protección específico y después usar una directiva DLP para agrupar los requisitos de protección comunes, como todas las reglas necesarias para cumplir una normativa específica.
   
@@ -204,7 +204,7 @@ Por ejemplo, la Directiva integrada de **HIPAA de Estados Unidos** tiene una reg
   
 - de los identificadores de **PII** de grupo (al menos un número de SSN **o** número de DEA) 
     
-    **AND**
+    **Y**
     
 - de los **términos médicos** del grupo (al menos una palabra clave ICD-9-cm **o** una palabra clave ICD-10-cm) 
     
@@ -212,10 +212,14 @@ Por ejemplo, la Directiva integrada de **HIPAA de Estados Unidos** tiene una reg
   
 ## <a name="the-priority-by-which-rules-are-processed"></a>La prioridad mediante la que se procesan las reglas
 
-Cuando se crean reglas en una directiva, a cada regla se le asigna una prioridad en el orden en el que se crea, es decir, la regla que se crea primero tiene prioridad, la segunda regla creada tiene la segunda prioridad, y así sucesivamente. Después de crear una regla, no se puede cambiar su prioridad, excepto eliminarla y volver a crearla.
+Cuando se crean reglas en una directiva, a cada regla se le asigna una prioridad en el orden en el que se crea, es decir, la regla que se crea primero tiene prioridad, la segunda regla creada tiene la segunda prioridad, y así sucesivamente. 
   
 ![Reglas en orden de prioridad](media/f7dc06bf-bc6f-485c-bcdb-606edbcf6565.png)
   
+Una vez que haya configurado más de una directiva de DLP, puede cambiar la prioridad de una o varias directivas. Para ello, seleccione una directiva, elija **Editar Directiva**y use la lista **prioridad** para especificar su prioridad.
+
+![Establecer la prioridad de una directiva](media/dlp-set-policy-priority.png)
+
 Cuando el contenido se evalúa según las reglas, las reglas se procesan en orden de prioridad. Si el contenido coincide con varias reglas, las reglas se procesan en orden de prioridad y se aplica la acción más restrictiva. Por ejemplo, si el contenido coincide con todas las reglas siguientes, se aplica la regla 3 porque es la regla más restrictiva y más restrictiva:
   
 - Regla 1: solo notifica a los usuarios
@@ -244,7 +248,7 @@ Una vez que los usuarios crean y activan sus directivas de DLP, algunas veces se
   
 - Demasiado contenido que **no es** información confidencial coincide con las reglas, es decir, hay demasiados falsos positivos. 
     
-- Demasiado poco contenido que **es** información confidencial coincide con las reglas, es decir, las acciones de protección no se aplican a la información confidencial. 
+- Hay muy poco contenido que **es** información confidencial que coincide con las reglas. Es decir, las acciones de protección no se aplican a la información confidencial. 
     
 Para solucionar estos problemas, puede ajustar las reglas ajustando el recuento de instancias y la precisión de coincidencia para que el contenido sea más difícil o más fácil de coincidir con las reglas. Cada tipo de información confidencial que se usa en una regla tiene un recuento de instancias y una precisión de coincidencia.
   
@@ -403,6 +407,10 @@ Si va a crear directivas de DLP con un gran impacto potencial, le recomendamos s
 Una directiva DLP se puede desactivar en cualquier momento, lo que afecta a todas las reglas de la directiva. Sin embargo, cada regla también se puede desactivar individualmente si se activa o desactiva su estado en el editor de reglas.
   
 ![Opciones para desactivar una regla de una directiva](media/f7b258ff-1b8b-4127-b580-83c6492f2bef.png)
+
+También puede cambiar la prioridad de varias reglas de una directiva. Para ello, abra una directiva para editarla. En una fila de una regla, elija los puntos suspensivos (**...**) y, a continuación, elija una opción, como **bajar** o **traer al final**.
+
+![Establecer la prioridad de la regla](media/dlp-set-rule-priority.png)
   
 ## <a name="dlp-reports"></a>Informes de DLP
 
@@ -500,7 +508,7 @@ Para usar la mayoría de los cmdlets del centro &amp; de seguridad y cumplimient
     
 Sin embargo, los informes DLP necesitan extraer datos de toda la oficina 365, incluido Exchange Online. Por este motivo, **los cmdlets para los informes DLP están disponibles en Exchange Online PowerShell, no en el PowerShell &amp; del centro de seguridad y cumplimiento**. Por lo tanto, para usar los cmdlets para los informes de DLP, debe:
   
-1. [Conectarse a Exchange Online con el PowerShell remoto](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)
+1. [Conectarse a Exchange Online mediante PowerShell remoto](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)
     
 2. Use cualquiera de estos cmdlets para los informes de DLP:
     
