@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: 'ExPorte los resultados de búsqueda de una búsqueda de contenido en el centro de seguridad & cumplimiento a un equipo local. Los resultados de correo electrónico se exportan como archivos PST. El contenido de SharePoint y los sitios de OneDrive para la empresa se exportan como documentos de Office nativos. '
-ms.openlocfilehash: f20ad17ba4573485199d72a260598e77bd224ece
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 5d1baa57f466a5ef7657d92b517660e35b0036e8
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000473"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31814061"
 ---
 # <a name="export-content-search-results"></a>Exportar resultados de la búsqueda de contenido
 
@@ -80,7 +80,7 @@ Exportar los resultados de una búsqueda de contenido implica preparar los resul
 
 El primer paso es preparar los resultados de búsqueda para la exportación. Al preparar los resultados, se cargan en una ubicación de almacenamiento de Azure en la nube de Microsoft. Tenga en cuenta que el contenido de los buzones de correo y los sitios se carga a una tasa máxima de 2 GB por hora.
   
-1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com).
+1. Vaya a [https://protection.office.com](https://protection.office.com).
     
 2. Inicie sesión en Office 365 con su cuenta profesional o educativa.
     

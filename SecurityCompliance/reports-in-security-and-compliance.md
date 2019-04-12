@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 7acd33ce-1ec8-49fb-b625-43bac7b58c5a
 description: 'Use el centro de seguridad & cumplimiento para obtener varios informes para su organización de SharePoint Online y Exchange Online, además de informes de Azure Active Directory.  '
-ms.openlocfilehash: e336ddb500ced25fc17ebf4edfb680e410bae172
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: b902ce8e44e20fdb9e5fc22189ca07b6168be329
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999063"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31813921"
 ---
 # <a name="reports-in-the-security--compliance-center"></a>Informes en el Centro de seguridad y cumplimiento
 
@@ -37,7 +37,7 @@ Necesita los siguientes permisos para ver informes en el centro de seguridad & c
   
  **Para abrir la página ver informes en el centro de seguridad & cumplimiento:**
   
-1. Vaya a [https://compliance.microsoft.com/#/viewreports](https://compliance.microsoft.com/#/viewreports).
+1. Vaya a [https://protection.office.com/#/viewreports](https://protection.office.com/#/viewreports).
     
 2. Inicie sesión en Office 365 con las credenciales de una cuenta de usuario en su organización de Office 365.
     
@@ -51,7 +51,7 @@ En la página **ver informes** , puede ver los siguientes tipos de informes:
 
 En la tabla siguiente se describen los informes en la sección **Auditoría** de la página **ver informes** en el centro de seguridad & cumplimiento. 
   
-|**Informe**|**Descripción**|
+|**Informe**|**Descripción**|
 |:-----|:-----|
 |**Informe de registro de auditoría de Office 365** <br/> |Puede buscar en el registro de auditoría de Office 365 la actividad de usuario y de administrador de su organización de Office 365. El informe contiene entradas actividad de usuario y administrador de Exchange Online, SharePoint Online, OneDrive para la empresa y Azure Active Directory, que es el servicio de directorio para Office 365. Para obtener más información, vea [Buscar en el registro de auditoría en el Office 365](search-the-audit-log-in-security-and-compliance.md).  <br/> |
 |**Informes de Azure AD** <br/> |Para buscar actividad de inicio de sesión sospechoso o inusual en su organización de Office 365, puede usar los informes de actividad y de inicio de sesión en Microsoft Azure. También puede ver eventos en el registro de auditoría de Azure AD. Para ver los informes en Azure, solo tiene que hacer clic en **ver informes de Azure ad**. Para más información, visite: <br/><br/>[Use su suscripción gratuita de Azure Active Directory en Office 365](use-your-free-azure-ad-subscription-in-office-365.md). <br/> [Ver los informes de acceso y uso](http://go.microsoft.com/fwlink/p/?LinkId=506902).  <br/> |

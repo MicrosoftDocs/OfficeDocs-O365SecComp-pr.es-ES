@@ -3,7 +3,7 @@ title: 'Purga automática cero horas: protección contra correo no deseado y mal
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.date: 12/05/2018
+ms.date: 04/11/2019
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -17,12 +17,12 @@ ms.assetid: 96deb75f-64e8-4c10-b570-84c99c674e15
 ms.collection:
 - M365-security-compliance
 description: La depuración automática de cero horas (ZAP) es una característica de protección de correo electrónico que detecta los mensajes con correo no deseado o malware que ya se han entregado a los buzones de los usuarios y, a continuación, inofensivos en el contenido malintencionado. Cómo hace ZAP esto depende del tipo de contenido malintencionado detectado.
-ms.openlocfilehash: 7a357b50a75012408d6958ce528fddf8c203540a
-ms.sourcegitcommit: e24f70699021c4f4ba56508ad0afb6f65010c357
+ms.openlocfilehash: 507cd6af5320a3b925841786136d518c996e4d29
+ms.sourcegitcommit: 86ff2eba1d57b9d5288840788529e69ad9d836b6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "31479636"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31818607"
 ---
 # <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>Purga automática cero horas: protección contra correo no deseado y malware
 
@@ -48,7 +48,7 @@ Office 365 actualiza las firmas de malware y del motor de correo no deseado en t
 
 - Para el malware recién detectado, ZAP quita los datos adjuntos de los mensajes de correo electrónico, independientemente de si el correo electrónico se ha leído.
   
-La acción ZAP es fluida para el usuario del buzón de correo; no se notifica si se mueve un mensaje de correo electrónico.
+La acción ZAP es fluida para el usuario del buzón de correo; no se notifica si se mueve un mensaje de correo electrónico. El mensaje no debe tener más de 2 días.
   
 Las listas de permitidos, [las reglas de flujo de correo](https://go.microsoft.com/fwlink/p/?LinkId=722755)y las reglas de usuario final o los filtros adicionales tienen prioridad sobre Zap.
   
@@ -89,7 +89,10 @@ ZAP no mueve los mensajes a cuarentena de la bandeja de entrada en este momento.
 ### <a name="what-if-i-have-a-custom-mail-flow-rule-block-allow-rule"></a>¿Qué ocurre si tengo una regla de flujo de correo personalizada (regla de bloqueo/permiso)?
   
 Las reglas creadas por los administradores (reglas de flujo de correo) o las reglas de bloqueo y permiso tienen prioridad. Estos mensajes se excluyen de los criterios de la característica, por lo que el flujo de correo seguirá la acción de regla (bloquear/permitir regla).
-  
+
+### <a name="what-if-a-message-is-moved-to-another-folder-eg-inbox-rule"></a>¿Qué ocurre si un mensaje se mueve a otra carpeta (por ejemplo, una regla de bandeja de entrada)?
+ZAP sigue funcionando en este caso, a menos que el mensaje se haya eliminado o esté en correo no deseado.
+
 ## <a name="related-topics"></a>Temas relacionados
 
 [Protección contra correo no deseado en Office 365](anti-spam-protection.md)

@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 61852fd9-fe8a-4880-a339-cb19ed3bff4a
 description: 'Use la búsqueda de contenido en el centro de seguridad & cumplimiento para buscar en buzones de correo, sitios de SharePoint Online y ubicaciones de OneDrive para la empresa. '
-ms.openlocfilehash: 780a9eacc94985cf1f59993a1d5c2816474b8cb5
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 4c3d9cc024a495ff8464e1117d5f46c13c1b9a08
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000283"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31814081"
 ---
 # <a name="run-a-content-search-in-the-security--compliance-center"></a>Ejecutar una búsqueda de contenido en el Centro de seguridad y cumplimiento
 
@@ -39,7 +39,7 @@ La Búsqueda de contenido es una nueva herramienta de búsqueda de exhibición d
   
 [Create a search](run-a-content-search-in-the-security-and-compliance-center.md#create)
   
-[Exportar resultados de la búsqueda](run-a-content-search-in-the-security-and-compliance-center.md#export)
+[Exportar resultados de búsqueda](run-a-content-search-in-the-security-and-compliance-center.md#export)
   
 [Preview search results](run-a-content-search-in-the-security-and-compliance-center.md#preview)
   
@@ -47,7 +47,7 @@ La Búsqueda de contenido es una nueva herramienta de búsqueda de exhibición d
   
 [Edit a search](run-a-content-search-in-the-security-and-compliance-center.md#edit)
   
-[Retry a search](run-a-content-search-in-the-security-and-compliance-center.md#retry)
+[Reintentar una búsqueda](run-a-content-search-in-the-security-and-compliance-center.md#retry)
   
 
   
@@ -69,12 +69,12 @@ La Búsqueda de contenido es una nueva herramienta de búsqueda de exhibición d
     
     Consulte la sección para obtener sugerencias sobre cómo buscar contenido en grupos de Office 365 y Microsoft Teams. 
     
-[Return to top](run-a-content-search-in-the-security-and-compliance-center.md#top)
+[Volver al principio](run-a-content-search-in-the-security-and-compliance-center.md#top)
   
 ## <a name="create-a-search"></a>Create a search
 <a name="create"> </a>
 
-1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com).
+1. Vaya a [https://protection.office.com](https://protection.office.com).
     
 2. Inicie sesión en Office 365 con su cuenta profesional o educativa.
     
@@ -169,7 +169,7 @@ La Búsqueda de contenido es una nueva herramienta de búsqueda de exhibición d
 
 Una vez ejecutada correctamente la búsqueda, puede exportar los resultados de la búsqueda a un equipo local. Cuando exporta los resultados de correo electrónico, estos se descargan en su equipo como archivos PST. Al exportar contenido de sitios de SharePoint y OneDrive para la empresa, se exportan copias de documentos nativos de Office. También existen documentos e informes adicionales que se incluyen con los resultados de búsqueda exportados. Para obtener más información, vea [exportar resultados de búsqueda desde el centro de seguridad _AMP_ cumplimiento](export-search-results.md).
   
-## <a name="preview-search-results"></a>Vista previa de los resultados de búsqueda
+## <a name="preview-search-results"></a>Obtener una vista previa de los resultados de la búsqueda
 <a name="preview"> </a>
 
 Una vez que la búsqueda ha finalizado correctamente, puede obtener una vista previa de los resultados. Hay una serie de límites relacionados con la vista previa de resultados de búsqueda de contenido. Para obtener más información, consulte [limits for Search in the Security _AMP_ Compliance Center](limits-for-content-search.md). Tenga en cuenta que los elementos sin indexar no están disponibles para la vista previa.
@@ -209,7 +209,7 @@ Además, se admiten los siguientes tipos de contenedor de archivos. Puede ver la
     
 - . gzip
     
-[Return to top](run-a-content-search-in-the-security-and-compliance-center.md#top)
+[Volver al principio](run-a-content-search-in-the-security-and-compliance-center.md#top)
   
 ## <a name="update-search-results"></a>Actualizar los resultados de búsqueda
 <a name="restart"> </a>
@@ -222,7 +222,7 @@ Al actualizar los resultados de una búsqueda de contenido existente, la consult
     
     Se muestra un mensaje de estado que indica que los resultados se van a recuperar. Una vez finalizada la búsqueda, la información actualizada aparece en **Resultados** en el panel de detalles. Tenga en cuenta que la fecha del campo **Buscado** del panel de detalles se actualiza a la fecha y la hora actuales. Para actualizar la información de la lista de búsquedas de contenido, ****![haga clic en](media/O365-MDM-Policy-RefreshIcon.gif)actualizar icono de actualización.
     
-[Return to top](run-a-content-search-in-the-security-and-compliance-center.md#top)
+[Volver al principio](run-a-content-search-in-the-security-and-compliance-center.md#top)
   
 ## <a name="edit-a-search"></a>Editar una búsqueda
 <a name="edit"> </a>
@@ -273,7 +273,7 @@ Aquí encontrará más información sobre las búsquedas de contenido.
   
 [Varios](#miscellaneous)
   
-[Return to top](#before-you-begin)
+[Volver al principio](#before-you-begin)
   
 ### <a name="limits-and-performance"></a>Límites y rendimiento
   
@@ -353,11 +353,11 @@ Aquí encontrará más información sobre las búsquedas de contenido.
     
   - Debe activar la casilla de verificación **Mostrar lista de palabras clave** y, a continuación, escribir cada palabra clave en una fila separada para crear una consulta de búsqueda en la que el operador **or** Conecte las palabras clave (o frases de palabra clave) de cada fila. Si sólo pega una lista de palabras clave en el cuadro palabra clave o presiona la tecla **entrar** después de escribir una palabra clave, no se conectará al operador **or** . Este es un ejemplo incorrecto y correcto de adición de una lista de palabras clave. 
     
-    **Correctas**
+    **Incorrecto**
     
     ![La forma incorrecta de aplicar formato a una lista de palabras clave (pegando la lista en el cuadro palabra clave)](media/fb54e3df-232a-439a-b3d7-27a60ec76a4c.png)
   
-    **Corregi**
+    **Correcto**
     
     ![La forma correcta de dar formato a una lista de palabras clave (seleccionando CheckBox y, a continuación, lista de pegado)](media/5d511a7b-c1f9-499c-bffe-e075bfc9adec.png)
   

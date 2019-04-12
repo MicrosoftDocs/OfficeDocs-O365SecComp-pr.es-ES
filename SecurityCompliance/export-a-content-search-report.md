@@ -18,29 +18,29 @@ search.appverid:
 - MBS150
 - MET150
 ms.assetid: 5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9
-description: En lugar de exportar los resultados reales de una búsqueda de contenido en el centro de &amp; seguridad y cumplimiento de Office 365, puede exportar un informe de resultados de búsqueda. El informe contiene un resumen de los resultados de la búsqueda y un documento con información detallada sobre cada elemento que se exportará.
-ms.openlocfilehash: d98f70d4f38f524de8751aecb197d0f85ee7f088
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+description: En lugar de exportar los resultados reales de una búsqueda de contenido en el centro de seguridad & cumplimiento en Office 365, puede simplemente exportar un informe de resultados de búsqueda. El informe contiene un resumen de los resultados de la búsqueda y un documento con información detallada sobre cada elemento que se exportará.
+ms.openlocfilehash: 57c8a9be5c53998570f6ff15a49df69e27745e26
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295983"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31813931"
 ---
 # <a name="export-a-content-search-report"></a>Exportar un informe de búsqueda de contenido
 
-En lugar de exportar el conjunto completo de resultados de búsqueda de una búsqueda de contenido en el centro &amp; de seguridad y cumplimiento de Office 365 (y desde una búsqueda de contenido asociada a un caso de exhibición de documentos electrónicos), puede exportar los mismos informes que se generan al exportar los resultados de la búsqueda.
+En lugar de exportar el conjunto completo de resultados de búsqueda de una búsqueda de contenido en el centro de seguridad & cumplimiento (y desde una búsqueda de contenido asociada a un caso de exhibición de documentos electrónicos), puede exportar los mismos informes que se generan al exportar la búsqueda obtener.
   
 Al exportar un informe, se descarga en una carpeta que tiene el mismo nombre que la búsqueda de contenido, pero que se anexa con *_ReportsOnly* . Por ejemplo, si la búsqueda de contenido se denomina *ContosoCase0815* , el informe se descarga en una carpeta denominada *ContosoCase0815_ReportsOnly* . Para obtener una lista de los documentos que se incluyen en el informe, consulte [what's included in the Report](#whats-included-in-the-report).
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-- Para exportar un informe de búsqueda de contenido, debe tener asignado el rol de administración de búsqueda de cumplimiento en el &amp; centro de seguridad y cumplimiento de Office 365. Este rol se asigna a los grupos de roles integrados administrador de eDiscovery y administración de la organización. No está asignada de forma predeterminada al grupo de funciones de administración de la organización. Para obtener más información, consulte [asignar permisos de exhibición de documentos electrónicos &amp; en el centro de seguridad y cumplimiento de Office 365](assign-ediscovery-permissions.md).
+- Para exportar un informe de búsqueda de contenido, debe tener asignado el rol de administración de búsqueda de cumplimiento en el centro de seguridad & cumplimiento. Este rol se asigna a los grupos de roles integrados administrador de eDiscovery y administración de la organización. No se asigna de forma predeterminada al grupo de roles de administración de la organización. Para obtener más información, consulte [asignar permisos de exhibición](assign-ediscovery-permissions.md)de documentos electrónicos.
     
 - Al exportar un informe, los datos se almacenan temporalmente en un área de almacenamiento única de Windows Azure en la nube de Microsoft antes de descargarlos en el equipo local. asegúrese de que su organización puede conectarse al extremo en Azure, que es ** \*. blob.core.windows.net** (el carácter comodín representa un identificador único para la exportación). Los datos de los resultados de la búsqueda se eliminan del área de Azure Storage dos semanas después de su creación. 
     
 - El equipo que use para exportar los resultados de búsqueda debe cumplir los siguientes requisitos del sistema:
     
-  - Versiones de 32 o 64 bits de Windows 7 y versiones posteriores
+  - Versiones de 32 o 64 bits de Windows 7 y versiones posteriores
     
   - Microsoft .NET Framework 4,7
     
@@ -48,7 +48,7 @@ Al exportar un informe, se descarga en una carpeta que tiene el mismo nombre que
     
     - Microsoft Edge
     
-      o
+      o bien
     
     - Microsoft Internet Explorer 10 y versiones posteriores
     
@@ -56,7 +56,7 @@ Al exportar un informe, se descarga en una carpeta que tiene el mismo nombre que
 
 - Si el tamaño total estimado de los resultados devueltos por una búsqueda de&nbsp;contenido supera los 20 TB, se producirá un error al exportar el informe. Para exportar correctamente el informe, intente restringir el ámbito y vuelva a ejecutar la búsqueda para que el tamaño estimado de los resultados sea inferior a&nbsp;20 TB.
 
-- La exportación de informes de búsqueda de contenido cuenta con el número máximo de exportaciones que se ejecutan al mismo tiempo y el número máximo de exportaciones que puede ejecutar un solo usuario. Para obtener más información acerca de los límites de exportación, consulte [exportar resultados de búsqueda de contenido desde el centro de cumplimiento de & de seguridad de Office 365](export-search-results.md#export-limits).
+- La exportación de informes de búsqueda de contenido cuenta con el número máximo de exportaciones que se ejecutan al mismo tiempo y el número máximo de exportaciones que puede ejecutar un solo usuario. Para obtener más información acerca de los límites de exportación, consulte [exportar resultados](export-search-results.md#export-limits)de la búsqueda de contenido.
 
 ## <a name="generate-and-download-a-content-search-report"></a>Generar y descargar un informe de búsqueda de contenido
 
@@ -70,14 +70,14 @@ El primer paso consiste en preparar el informe para descargarlo en la exportaci�
     
 2. Inicie sesión en Office 365 con su cuenta profesional o educativa.
     
-3. En el panel izquierdo del Centro de seguridad y cumplimiento, haga clic en **Búsqueda e investigación** \> **Búsqueda de contenido**.
+3. En el panel izquierdo del centro de seguridad & cumplimiento, haga clic en buscar **contenido**de **búsqueda** \> .
     
 4. En la página **búsqueda de contenido** , seleccione una búsqueda. 
     
 5. En el panel de detalles, en **exportar informe a un equipo**, haga clic en **generar informe**.
     
     > [!NOTE]
-    > Si los resultados de una búsqueda son anteriores a 7 días, se le pedirá que actualice los resultados de la búsqueda. Si esto ocurre, cancele la exportación, haga clic en **Actualizar resultados de búsqueda** en el panel de detalles de la búsqueda seleccionada y, a continuación, vuelva a iniciar la exportación del informe después de que se actualicen los resultados. 
+    > Si los resultados de una búsqueda son de hace más de 7 días, se le solicitará que actualice los resultados de búsqueda. Si esto ocurre, cancele la exportación, haga clic en **Actualizar resultados de búsqueda** en el panel de detalles de la búsqueda seleccionada y, a continuación, vuelva a iniciar la exportación del informe después de que se actualicen los resultados. 
   
 6. En la página **exportar un informe** , en **incluir estos elementos de la búsqueda**, elija una de las siguientes opciones:
     
@@ -96,7 +96,7 @@ El primer paso consiste en preparar el informe para descargarlo en la exportaci�
     El informe de resultados de búsqueda está preparado para la descarga, lo que significa que los documentos del informe se cargarán en el área de almacenamiento de Azure en la nube de Microsoft. Cuando el informe está listo para la descarga, el vínculo de **descarga del informe** se muestra en **exportar informe a un equipo** en el panel de detalles. 
     
 > [!NOTE]
-> También puede exportar un informe para una búsqueda de contenido que esté asociada a un caso de exhibición de documentos electrónicos. Para ello, vaya a la \> **exhibición**de documentos electrónicos de **investigación de &amp; búsqueda** , seleccione un caso y](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)haga clic en **Editar** ![icono de edición. En la página **búsquedas** , seleccione una búsqueda y, a continuación, haga clic en **exportar** ![los resultados](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) \> de la búsqueda exportar **un informe**. 
+> También puede exportar un informe para una búsqueda de contenido que esté asociada a un caso de exhibición de documentos electrónicos. Para **** \> ello, vaya a eDiscovery **eDiscovery**, seleccione un caso y haga clic en **Editar** ![icono](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)de edición. En la página **búsquedas** , seleccione una búsqueda y, a continuación, haga clic en **exportar** ![los resultados](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) \> de la búsqueda exportar **un informe**. 
   
 ## <a name="step-2-download-the-report"></a>Paso 2: descargar el informe
 
@@ -110,13 +110,13 @@ El siguiente paso es descargar el informe desde el área de almacenamiento de Az
     
     - El tamaño total estimado de los elementos que se descargarán.
     
-    - Si se exportarán o no indexados. Los elementos sin indexar son elementos que tienen un formato reconocido, están cifrados o no se indizaron por otros motivos.
+    - Si los elementos indexados o sin indexar se exportarán. Los elementos sin indexar son elementos que tienen un formato reconocido, están cifrados o no se indexaron por otros motivos.
     
     - Si las versiones de los documentos de SharePoint se descargarán o no.
     
     - El estado del proceso de exportación del informe. Puede iniciar la descarga del informe incluso si no se ha completado la preparación del informe.
     
-2. En **Exportar clave**, haga clic en **copiar al**portapapeles. Esta clave se utilizará en el paso 5 para descargar el informe.
+2. En **Clave de exportación**, haga clic en **Copiar al Portapapeles**. Esta clave se utilizará en el paso 5 para descargar el informe.
     
     > [!IMPORTANT]
     > Dado que cualquiera puede instalar e iniciar la herramienta de exportación de exhibición de documentos electrónicos y, a continuación, usar esta clave para descargar el informe de búsqueda, asegúrese de tomar precauciones para proteger esta clave igual que lo haría con las contraseñas u otra información relacionada con la seguridad. 
@@ -131,10 +131,10 @@ El siguiente paso es descargar el informe desde el área de almacenamiento de Az
     
 7. Haga clic en **Iniciar** para descargar los resultados de la búsqueda en el equipo. 
     
-    La **herramienta de exportación de exhibición** de documentos electrónicos muestra información de estado sobre el proceso de exportación, incluida una estimación del número (y tamaño) de los elementos restantes que se van a descargar. Una vez finalizado el proceso de exportación, puede tener acceso a los archivos en la ubicación en la que se descargaron. 
+    La **Herramienta de exportación de exhibición de documentos electrónicos** muestra información del estado acerca del proceso de exportación, incluida una estimación del número (y tamaño) de los elementos restantes que se van a descargar. Una vez finalizado el proceso de exportación, puede tener acceso a los archivos en la ubicación en la que se descargaron. 
     
 > [!NOTE]
-> Puede descargar el informe para una búsqueda de contenido que esté asociada con un caso de exhibición de documentos electrónicos. Para ello, vaya a la \> **exhibición**de documentos electrónicos de **investigación de &amp; búsqueda** , seleccione un caso y](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)haga clic en **Editar** ![icono de edición. En la página **exportaciones** , seleccione una exportación de informe y, a continuación, haga clic en **Descargar Informe** en el panel de detalles. 
+> Puede descargar el informe para una búsqueda de contenido que esté asociada con un caso de exhibición de documentos electrónicos. Para **** \> ello, vaya a eDiscovery **eDiscovery**, seleccione un caso y haga clic en **Editar** ![icono](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)de edición. En la página **exportaciones** , seleccione una exportación de informe y, a continuación, haga clic en **Descargar Informe** en el panel de detalles. 
   
 ## <a name="whats-included-in-the-report"></a>Contenido incluido en el informe
 
@@ -147,7 +147,7 @@ Cuando se genera y se exporta un informe sobre los resultados de una búsqueda d
   
 - **Manifest** -un archivo de manifiesto (en formato XML) que contiene información sobre cada elemento incluido en los resultados de la búsqueda. 
     
-- **Resultados** : un documento de Excel que contiene una fila con información sobre cada elemento indizado que se exportará con los resultados de la búsqueda. Para el correo electrónico, el registro de resultados contiene información sobre cada mensaje, incluidos: 
+- **Resultados** : un documento de Excel que contiene una fila con información sobre cada elemento indizado que se exportará con los resultados de la búsqueda. Para el correo electrónico, un registro de resultados contiene información acerca de cada mensaje, incluidos: 
     
   - La ubicación del mensaje en el buzón de origen (incluido si el mensaje se encuentra en el buzón de archivo o en el principal).
     

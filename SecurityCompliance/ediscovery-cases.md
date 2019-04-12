@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
 description: Use el centro de seguridad & cumplimiento para crear y administrar casos de exhibición de documentos electrónicos en su organización. Puede asignar miembros al caso, poner ubicaciones de contenido en retención, ejecutar búsquedas de contenido asociadas con el caso y exportar los resultados de la búsqueda. También puede preparar datos de casos para un análisis más avanzado en la exhibición avanzada de documentos electrónicos.
-ms.openlocfilehash: 3c3d3fb6d4e2244554059e731b4585dd546ff52b
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: cd7e7f9dba947ef28b27faf9df7b9e927ca73bd5
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000733"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31814111"
 ---
 # <a name="ediscovery-cases-in-the-security--compliance-center"></a>casos de eDiscovery en el centro de seguridad & cumplimiento
 
@@ -30,7 +30,7 @@ Un caso de exhibición de documentos electrónicos permite agregar miembros a un
   
 Use el siguiente flujo de trabajo para configurar y usar casos de eDiscovery en el centro de seguridad & cumplimiento y en la exhibición avanzada de documentos electrónicos.
 
-[Step 1: Assign eDiscovery permissions to potential case members](#step-1-assign-ediscovery-permissions-to-potential-case-members)
+[Paso 1: Asignar permisos de exhibición de documentos electrónicos a posibles miembros del caso](#step-1-assign-ediscovery-permissions-to-potential-case-members)
 
 [Paso 2: crear un nuevo caso](#step-2-create-a-new-case)
 
@@ -79,7 +79,7 @@ Para obtener más información sobre los permisos de exhibición de documentos e
   
  **Para asignar permisos de exhibición de documentos electrónicos:**
   
-1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com).
+1. Vaya a [https://protection.office.com](https://protection.office.com).
     
 2. Inicie sesión en Office 365 con su cuenta profesional o educativa.
     
@@ -97,7 +97,7 @@ Para obtener más información sobre los permisos de exhibición de documentos e
 
 El siguiente paso es crear un nuevo caso de exhibición de documentos electrónicos. Debe ser miembro del grupo de roles Administrador de exhibición de documentos electrónicos para crear casos de exhibición de documentos electrónicos. Como se ha explicado anteriormente, después de crear un nuevo caso en el centro de seguridad & cumplimiento, usted (y otros miembros de mayúsculas y minúsculas) podrá tener acceso al mismo caso en eDiscovery avanzado si la organización tiene una suscripción a Office 365 E5.
   
-1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com).
+1. Vaya a [https://protection.office.com](https://protection.office.com).
     
 2. Inicie sesión en Office 365 con su cuenta profesional o educativa.
     
@@ -528,7 +528,7 @@ Cuando vuelva a abrir un caso, las suspensiones que estuvieran en su ubicación 
    
 - **¿Qué ocurre con los casos creados en la página Administración de casos en eDiscovery avanzado?** Puede obtener acceso a una lista de casos de eDiscovery avanzados más antiguos si hace clic en el vínculo que se encuentra en la parte inferior de la página **eDiscovery** en el centro de seguridad & cumplimiento. Sin embargo, para realizar cualquier trabajo en un caso anterior, debe ponerse en contacto con el soporte técnico de Office 365 y solicitar que se mueva el caso a un nuevo caso de exhibición de documentos electrónicos en el centro de cumplimiento de seguridad &. 
     
-- **¿Por qué debería crear un administrador de exhibición de documentos electrónicos? ** Tal como se explicó anteriormente, un administrador de exhibición de documentos electrónicos es miembro del Grupo de roles de administrador de exhibición de documentos electrónicos, que puede ver y tener acceso a todos los casos de exhibición de documentos electrónicos de la organización. Esta capacidad para tener acceso a todos los casos de exhibición de documentos electrónicos tiene dos fines importantes:
+- **¿Por qué crear un administrador de eDiscovery?** Tal como se explicó anteriormente, un administrador de exhibición de documentos electrónicos es miembro del Grupo de roles de administrador de exhibición de documentos electrónicos, que puede ver y tener acceso a todos los casos de exhibición de documentos electrónicos de la organización. Esta capacidad para tener acceso a todos los casos de exhibición de documentos electrónicos tiene dos fines importantes:
     
   - Si un usuario es el único miembro de un caso de exhibición de documentos electrónicos y abandona la organización, ningún usuario (ni siquiera los miembros del grupo de roles Administración de la organización ni otro miembro del grupo de roles Administrador de exhibición de documentos electrónicos) puede tener acceso a ese caso de exhibición de documentos electrónicos, ya que no es miembro del caso. En esta situación, no habría ninguna manera de tener acceso a los datos del caso. Pero dado que un administrador de eDiscovery puede tener acceso a todos los casos de eDiscovery de la organización, puede ver el caso en el centro de seguridad & cumplimiento y agregarse a sí mismo o a otro administrador de eDiscovery como miembro del caso.
     

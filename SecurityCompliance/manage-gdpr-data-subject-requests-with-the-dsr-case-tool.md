@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 ms.assetid: ce9eb942-3589-42cb-88fd-1576ecb09c5c
 description: El RGPD otorga a los ciudadanos de la UE (denominados "interesados en los datos) derechos específicos sobre sus datos personales; Estos derechos incluyen la obtención de copias del mismo, la solicitud de cambios, la restricción del procesamiento, la eliminación o la recepción del mismo en un formato electrónico. Una solicitud formal de un sujeto de datos para realizar una acción en sus datos personales se denomina solicitud de interesado o DSR. Puede usar casos de DSR en el centro de cumplimiento de Office 365 y Microsoft 365 para administrar las investigaciones de los DSR de su organización.
-ms.openlocfilehash: d491a0098bfa27818d8a03ded3b2f86da54c0453
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: a131da86350fc288c1c9af371d28464230b742d6
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000113"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31814031"
 ---
 # <a name="manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-security--compliance-center"></a>Administración de solicitudes del interesado de RGPD con la herramienta de casos de DSR en el centro de cumplimiento de & de seguridad
 
@@ -56,7 +56,7 @@ Mediante el uso de la herramienta de caso DSR, puede:
     
 Este es el proceso de alto nivel para usar la herramienta de caso DSR para administrar investigaciones de DSR:
   
-[Step 1: Assign eDiscovery permissions to potential case members](#step-1-assign-ediscovery-permissions-to-potential-case-members)
+[Paso 1: Asignar permisos de exhibición de documentos electrónicos a posibles miembros del caso](#step-1-assign-ediscovery-permissions-to-potential-case-members)
 
 [Paso 2: crear un caso de DSR y agregar miembros](#step-2-create-a-dsr-case-and-add-members)
 
@@ -84,7 +84,7 @@ Para obtener instrucciones paso a paso, consulte [asignar permisos de exhibició
 
 El siguiente paso es crear un caso DSR. Al crear un caso, puede optar por iniciar la búsqueda integrada o puede crear el caso sin iniciar la búsqueda. El siguiente procedimiento le indicará que cree el caso sin iniciar la búsqueda y, a continuación, le mostrará cómo agregar miembros al caso.
   
-1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com) e inicie sesión en Office 365 con su cuenta profesional o educativa. 
+1. Vaya a [https://protection.office.com](https://protection.office.com) e inicie sesión en Office 365 con su cuenta profesional o educativa. 
     
 2. En el centro de seguridad & cumplimiento, haga clic en **solicitudes de asunto de datos**de ![ **privacidad** \> de](media/ITPro-EAC-AddIcon.gif) datos y, a continuación, haga clic en agregar icono **nuevo caso DSR**.
     
@@ -297,7 +297,7 @@ Puede crear una búsqueda de contenido independiente (y asociarla con un caso de
   
 Al exportar datos de myanalytics y el servicio de itinerancia de Office, los datos se guardan en una carpeta independiente para cada aplicación que se encuentra en la carpeta **ApplicationDataRoot** , que se encuentra en una carpeta que es el nombre de la dirección de correo del interesado. Estos datos se exportan como archivos JSON, que son archivos de texto legibles, similares a los archivos XML o TXT, que se adjuntan a los mensajes de correo electrónico. Actualmente, estas carpetas se denominan con un identificador único global (GUID) que se asigna a myanalytics y al servicio de itinerancia de Office, que se enumeran en la siguiente tabla. En versiones futuras de la herramienta de casos DSR, el GUID se reemplazará por el nombre de la aplicación real. 
   
-|**Application**|**GUID/nombre de carpeta**|
+|**Aplicación**|**GUID/nombre de carpeta**|
 |:-----|:-----|
 |MyAnalytics  <br/> |3c896ded-22c5-450F-91f6-3d1ef0848f6e  <br/> |
 |Servicio de itinerancia de Office  <br/> |1caee58f-EB14-4a6b-9339-1fe2ddf6692b  <br/> |

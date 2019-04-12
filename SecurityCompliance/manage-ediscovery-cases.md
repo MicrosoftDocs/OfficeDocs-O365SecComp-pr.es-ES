@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9a00b9ea-33fd-4772-8ea6-9d3c65e829e6
 description: Use el centro de seguridad & cumplimiento para crear suspensiones de eDiscovery y para tener acceso y administrar casos de eDiscovery en su organización.
-ms.openlocfilehash: 84cb7eeab55e157f42146f6a0586d32542584680
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 209f31187ad01ffa3e06cf8a5825c4538715fc7d
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000453"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31814141"
 ---
 # <a name="manage-ediscovery-cases-in-the-security--compliance-center"></a>Administrar casos de exhibición de documentos electrónicos en el Centro de seguridad y cumplimiento
 
@@ -25,7 +25,7 @@ Un caso de exhibición de documentos electrónicos permite agregar miembros a un
   
 Use el siguiente flujo de trabajo para configurar y usar casos de eDiscovery en el centro de seguridad & cumplimiento y en la exhibición avanzada de documentos electrónicos.
   
-[Step 1: Assign eDiscovery permissions to potential case members](manage-ediscovery-cases.md#step1_1)
+[Paso 1: Asignar permisos de exhibición de documentos electrónicos a posibles miembros del caso](manage-ediscovery-cases.md#step1_1)
   
 [Paso 2: crear un nuevo caso](manage-ediscovery-cases.md#step2_1)
   
@@ -73,7 +73,7 @@ El primer paso consiste en asignar los permisos adecuados relacionados con eDisc
   
  **Para asignar permisos de exhibición de documentos electrónicos:**
   
-1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com).
+1. Vaya a [https://protection.office.com](https://protection.office.com).
     
 2. Inicie sesión en Office 365 con su cuenta profesional o educativa.
     
@@ -94,7 +94,7 @@ El primer paso consiste en asignar los permisos adecuados relacionados con eDisc
 
 El siguiente paso es crear un nuevo caso de exhibición de documentos electrónicos. Debe ser miembro del grupo de roles Administrador de exhibición de documentos electrónicos para crear casos de exhibición de documentos electrónicos. Como se ha explicado anteriormente, después de crear un nuevo caso en el centro de seguridad & cumplimiento, usted (y otros miembros de mayúsculas y minúsculas) podrá tener acceso al mismo caso en eDiscovery avanzado si la organización tiene una suscripción a Office 365 E5.
   
-1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com).
+1. Vaya a [https://protection.office.com](https://protection.office.com).
     
 2. Inicie sesión en Office 365 con su cuenta profesional o educativa.
     

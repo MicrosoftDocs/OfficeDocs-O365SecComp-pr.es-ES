@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 description: Cree directivas de alerta en el centro de seguridad y cumplimiento en Office 365 y en Microsoft 365 para supervisar las amenazas potenciales, la pérdida de datos y el problema con los permisos. A continuación, puede ver y administrar las alertas que se generan cuando los usuarios realizan actividades que cumplen las condiciones de una directiva de alertas.
-ms.openlocfilehash: 137f90668f4f8c78d30a01af8f50278d973bf1cb
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 4770738dd94aaec3fcc776ff7601d99d8d806ace
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000723"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31814131"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>Directivas de alerta en el centro de seguridad y cumplimiento
 
@@ -47,7 +47,7 @@ A continuación, se presenta una introducción rápida sobre cómo funcionan las
 
 Una directiva de alertas se compone de un conjunto de reglas y condiciones que definen la actividad de usuario o de administrador que generará una alerta, una lista de usuarios que desencadenarán la alerta si realizan la actividad y el umbral que define cuántas veces tiene que producirse la actividad antes de un n se desencadena la alerta. También puede clasificar la Directiva y asignarle un nivel de gravedad. Estas dos opciones de configuración ayudan a administrar las directivas de alerta (y las alertas que se desencadenan cuando se cumplen las condiciones de la Directiva) porque se puede filtrar en estas opciones cuando se administran directivas y se ven alertas en el centro de seguridad y cumplimiento. Por ejemplo, puede ver las alertas que coinciden con las condiciones de la misma categoría o ver alertas con el mismo nivel de gravedad.
   
-Para ver y crear directivas de alerta, vaya [https://compliance.microsoft.com](https://compliance.microsoft.com) a y, a continuación, haga clic en **directivas**de alertas de **alertas** \> . 
+Para ver y crear directivas de alerta, vaya [https://protection.office.com](https://protection.office.com) a y, a continuación, haga clic en **directivas**de alertas de **alertas** \> . 
   
 ![En el centro de seguridad y cumplimiento, haga clic en alertas y, a continuación, en directivas de alerta para ver y crear directivas de alerta.](media/09ebd451-8e84-44e1-aefc-63e70bba4d97.png)
   
@@ -100,7 +100,7 @@ En la tabla siguiente se enumeran y describen las directivas de alertas predeter
 
 La tabla también indica los planes de Office 365 Enterprise y Office 365 US Government, necesarios para cada uno. Tenga en cuenta que hay disponibles algunas directivas de alerta predeterminadas si su organización tiene la suscripción complementaria correspondiente además de una suscripción a E1/G1 o E3/G3. 
   
-|**Directiva de alertas predeterminada**|**Descripción**|**Category**|**Suscripción de Office 365 Enterprise**|
+|**Directiva de alertas predeterminada**|**Descripción**|**Categoría**|**Suscripción de Office 365 Enterprise**|
 |:-----|:-----|:-----|:-----|
 |**Se ha detectado un clic en una dirección URL potencialmente malintencionada** <br/> |Genera una alerta cuando un usuario protege a un usuario de [Office 365 ATP los vínculos seguros](https://docs.microsoft.com/office365/securitycompliance/atp-safe-links) de la organización hace clic en un vínculo malintencionado. Este evento se desencadena cuando Office 365 ATP identifica los cambios en la dirección URL o cuando los usuarios invalidan las páginas de vínculos seguros de ATP de Office 365 (en función de la Directiva de vínculos seguros de Office 365 ATP de la organización). Esta directiva de alerta tiene una configuración de gravedad **alta** . Para Office 365 ATP P2, E5, G5 clientes, esta alerta activa automáticamente la [investigación y respuesta automatizada de office 365](https://go.microsoft.com/fwlink/?linkid=2084737).  Para obtener más información sobre los eventos que desencadenan esta alerta, consulte [configurar las directivas de vínculos seguros de Office 365 ATP](https://docs.microsoft.com/office365/securitycompliance/set-up-atp-safe-links-policies).  <br/> |Administración de amenazas <br/> |Suscripción complementaria E5/G5 o la P2 de Office 365 ATP  <br/> |
 |**Creación de una regla de reenvío/redireccionamiento** <br/> |Genera una alerta cuando una persona de la organización crea una regla de bandeja de entrada para su buzón que reenvía o redirige los mensajes a otra cuenta de correo electrónico. Esta directiva solo realiza un seguimiento de las reglas de la bandeja de entrada que se crean con Outlook en la web (anteriormente conocido como Outlook Web App) o Exchange Online PowerShell. Esta directiva tiene una configuración de gravedad **baja** . Para obtener más información sobre el uso de reglas de la bandeja de entrada para reenviar y redirigir correo electrónico en Outlook en la web, vea [usar reglas en Outlook en la web para reenviar mensajes automáticamente a otra cuenta](https://support.office.com/article/1433e3a0-7fb0-4999-b536-50e05cb67fed).  <br/> |Administración de amenazas <br/> |E1/G1, E3/G3 o E5/G5  <br/> |
@@ -126,7 +126,7 @@ Tenga en cuenta que la actividad inusual supervisada por algunas de las directiv
 
 Cuando una actividad realizada por los usuarios de la organización coincide con la configuración de una directiva de alerta, se genera una alerta y se muestra en la página **Ver alertas** del centro de seguridad y cumplimiento, en función de la configuración de una directiva de alerta, un correo electrónico la notificación también se envía a una lista de usuarios especificados cuando se desencadena una alerta. Para cada alerta, el panel de la página **Ver alertas** muestra el nombre de la Directiva de alerta correspondiente, la gravedad y la categoría de la alerta (definida en la Directiva de alerta) y el número de veces que se ha producido una actividad que ha dado lugar a que la alerta se genera Este valor se basa en la configuración de umbral de la Directiva de alerta. El panel también muestra el estado de cada alerta. Consulte la sección [Administrar alertas](#managing-alerts) para obtener más información sobre el uso de la propiedad status para administrar las alertas. 
   
-Para ver las alertas, vaya [https://compliance.microsoft.com](https://compliance.microsoft.com) a y, a continuación, haga clic en **alertas** \> **Ver alertas**. 
+Para ver las alertas, vaya [https://protection.office.com](https://protection.office.com) a y, a continuación, haga clic en **alertas** \> **Ver alertas**. 
   
 ![En seguridad y cumplimiento, haga clic en alertas y, a continuación, haga clic en ver alertas para ver las alertas](media/ec5ea59b-bf61-459f-8b65-970ab4bb8bcc.png)
   
@@ -149,7 +149,7 @@ Puede usar los siguientes filtros para ver un subconjunto de todas las alertas e
 > [!NOTE]
 > La funcionalidad que se describe en esta sección se implementará en las organizaciones que comienzan el 20 de febrero de 2019 y se completará en todo el mundo a finales de marzo de 2019.
 
-Los permisos de control de acceso de base de roles (RBAC) asignados a los usuarios de la organización determinan las alertas que puede ver un usuario en la página **Ver alertas** . ¿Cómo se consigue? Las funciones de administración asignadas a los usuarios (según su pertenencia a grupos de roles en el centro de seguridad & cumplimiento) determinan las categorías de alertas que puede ver un usuario en la página **Ver alertas** . Estos son algunos ejemplos:
+Los permisos de control de acceso de base de roles (RBAC) asignados a los usuarios de la organización determinan las alertas que puede ver un usuario en la página **Ver alertas** . ¿Cómo se consigue? Las funciones de administración asignadas a los usuarios (según su pertenencia a grupos de roles en el centro de seguridad & cumplimiento) determinan las categorías de alertas que puede ver un usuario en la página **Ver alertas** . Aquí le mostramos otros ejemplos:
 
 - Los miembros del grupo de roles de administración de registros solo pueden ver las alertas generadas por las directivas de alertas que tienen asignada la categoría **gobierno de datos** .
 
@@ -172,7 +172,7 @@ Para ver a qué categoría se asigna una directiva de alerta predeterminada, con
 |Administración de dispositivos<br/>|         |         |         |         |         |         |
 |Administración de disposición<br/>|         |         |         |         |         |         |
 |Administración de cumplimiento de DLP<br/>|         |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|         |         |         |         |
-|Exportar<br/>|         |         |         |         |         |         |
+|Export<br/>|         |         |         |         |         |         |
 |Retención<br/>|         |         |         |         |         |         |
 |Administrar alertas<br/>|         |         |         |         |         |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |Configuración de la organización|         |         |         |         |         |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|

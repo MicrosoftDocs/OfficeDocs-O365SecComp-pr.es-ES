@@ -17,12 +17,12 @@ search.appverid:
 - BCS160
 ms.assetid: ec3587e4-7b4a-40fb-8fb8-8aa05aeae2ce
 description: Crear una directiva de archivado y eliminación en Office 365 que mueva automáticamente elementos al buzón de archivo de un usuario.
-ms.openlocfilehash: 87e155869c6740dd839c09e3e31e0cb819dc5d37
-ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
+ms.openlocfilehash: d1dafb145564e6db7e0df7505cff09d10a72e3af
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30935275"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31814021"
 ---
 # <a name="set-up-an-archive-and-deletion-policy-for-mailboxes-in-your-office-365-organization"></a>Configurar una directiva de archivo y eliminación para los buzones de la organización de Office 365
 
@@ -64,7 +64,7 @@ El primer paso consiste en habilitar el buzón de archivo para cada usuario de l
 2. Sign in to Office 365 using your global administrator account.
     
     
-3. En el centro &amp; de seguridad y cumplimiento, vaya a **archivo**de **gobierno** \> de datos.
+3. En el centro de seguridad & cumplimiento, vaya a **archivo**de **gobierno** \> de datos.
     
     Se muestra una lista de los buzones de correo de la organización y si el buzón de archivo correspondiente está habilitado o deshabilitado. 
     
@@ -85,7 +85,7 @@ El primer paso consiste en habilitar el buzón de archivo para cada usuario de l
     
     ![La lista de buzones con el buzón de archivo habilitado](media/61a7cb97-1bed-4808-aa5f-b6b761cfa8de.png)
   
-8. Deje abierto el &amp; centro de seguridad y cumplimiento. Lo usará en el paso siguiente.
+8. Deje abierto el centro de seguridad & cumplimiento. Lo usará en el paso siguiente.
     
 ## <a name="step-2-create-new-retention-tags-for-the-archive-and-deletion-policies"></a>Paso 2: crear nuevas etiquetas de retención para las directivas de archivo y eliminación
 
@@ -99,11 +99,11 @@ En este paso, creará las tres etiquetas de retención personalizadas descritas 
     
 Para crear nuevas etiquetas de retención, debe usar el centro de administración de Exchange (EAC) en su organización de Exchange Online.
   
-1. En el centro &amp; de seguridad y cumplimiento, haga clic en el iniciador de aplicaciones en la esquina superior izquierda y, a continuación, en el icono **Administración** . 
+1. En el centro de seguridad & cumplimiento, haga clic en el iniciador de aplicaciones en la esquina superior izquierda y, a continuación, haga clic en el icono **Administración** . 
     
-2. En el panel de navegación izquierdo del centro de administración de Office 365, haga clic en **centros de administración**y, a continuación, en **Exchange**.
+2. En el panel de navegación izquierdo del centro de administración de Microsoft 365, haga clic en **centros de administración**y, a continuación, en **Exchange**.
     
-    ![Screenshot shows the Office 365 admin center with the Admin centers option expanded and Exchange selected.](media/47399df2-0bc4-42e2-b183-07750a46bc68.png)
+    ![Captura de pantalla que muestra el centro de administración de Microsoft 365 con la opción centros de administración expandida y Exchange seleccionada.](media/47399df2-0bc4-42e2-b183-07750a46bc68.png)
   
 3. En el EAC, vaya a **** \> **etiquetas de retención** de administración de cumplimiento.
     

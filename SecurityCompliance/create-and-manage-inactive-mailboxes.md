@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
 description: Puede crear un buzón inactivo en Office 365 aplicando una directiva de retención de Office 365 o retención al buzón de correo y, a continuación, eliminando la cuenta de usuario de Office 365 correspondiente. Los elementos de un buzón inactivo se conservan durante toda la Directiva de retención o retención que se le aplicó antes de que se desactivara. Para eliminar de forma permanente un buzón inactivo, solo tiene que quitar la Directiva de retención o retención.
-ms.openlocfilehash: a04447778c8083c96b77776c36984743d618a711
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: ad874d2f21afaa86fa7fa5a18dc827dfa1b90574
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001063"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31813981"
 ---
 # <a name="create-and-manage-inactive-mailboxes-in-office-365"></a>Crear y administrar buzones inactivos en Office 365
 
@@ -52,7 +52,7 @@ Si ya se ha colocado una retención en un buzón, o si ya se le ha aplicado una 
   
 Para consultar los procedimientos detallados para poner un buzón en retención por juicio o aplicar una directiva de retención de Office 365, vea:
   
-- [Place a mailbox on Litigation Hold](https://go.microsoft.com/fwlink/?linkid=856286)
+- [Poner un buzón en retención por juicio](https://go.microsoft.com/fwlink/?linkid=856286)
     
 - [Introducción a las directivas de retención en Office 365](retention-policies.md)
     
@@ -71,9 +71,9 @@ Después de poner el buzón en retención o de aplicarle una directiva de retenc
 
 Para ver una lista de los buzones inactivos en su organización:
   
-1. Vaya a [https://compliance.microsoft.com/](https://compliance.microsoft.com/) e inicie sesión con las credenciales de una cuenta de administrador en la organización de Office 365. 
+1. Vaya a [https://protection.office.com](https://protection.office.com) e inicie sesión con las credenciales de una cuenta de administrador en la organización de Office 365. 
     
-2. Haga clic en **retención**de **gobierno** \> de datos.
+2. Haga clic en**retención**de **gobierno** > de datos.
     
 3. En la página **retención** , haga clic en **más**![elipses](media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif)de la barra de navegación y, a continuación, en buzones inactivos. ****
     

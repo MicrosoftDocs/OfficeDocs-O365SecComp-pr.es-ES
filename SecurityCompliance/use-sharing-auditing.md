@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
 description: 'El uso compartido es una actividad clave en SharePoint Online y OneDrive para la empresa. Ahora, los administradores pueden usar la auditoría de uso compartido en el registro de auditoría de Office 365 para determinar cómo se usa el uso compartido en su organización. '
-ms.openlocfilehash: 919592bff43379b552b83258c7b22b7eddb14e7a
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 08b511acdf74edac5b2d595d1b60bdd84d630918
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219890"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31813951"
 ---
 # <a name="use-sharing-auditing-in-the-office-365-audit-log"></a>Auditar el uso compartido para buscar recursos compartidos con usuarios externos
 
@@ -69,17 +69,17 @@ Cuando el usuario de destino acepta la invitación para compartir que se le env�
   
 ## <a name="how-to-identify-resources-shared-with-external-users"></a>Identificación de recursos compartidos con usuarios externos
 
-Un requisito común para los administradores es crear una lista de todos los recursos que se han compartido con usuarios fuera de la organización. Mediante el uso de la auditoría de uso compartido en Office 365, los administradores ahora pueden generar esta lista. Esta es la manera de hacerlo.
+Un requisito común para los administradores es crear una lista de todos los recursos que se han compartido con usuarios fuera de la organización. Mediante el uso de la auditoría de uso compartido en Office 365, los administradores ahora pueden generar esta lista. Aquí se muestra cómo hacerlo.
   
 ### <a name="step-1-search-for-sharing-events-and-export-the-results-to-a-csv-file"></a>Paso 1: buscar eventos de uso compartido y exportar los resultados a un archivo CSV
 
-El primer paso es buscar eventos de uso compartido en el registro de auditoría de Office 365. Para obtener más información (incluidos los permisos necesarios) sobre cómo buscar en el registro de auditoría, vea [Buscar el registro de auditoría &amp; en el centro de seguridad y cumplimiento de Office 365](search-the-audit-log-in-security-and-compliance.md).
+El primer paso es buscar eventos de uso compartido en el registro de auditoría de Office 365. Para obtener más información (incluidos los permisos necesarios) sobre cómo buscar en el registro de auditoría, vea [Buscar en el registro de auditoría del centro de seguridad _AMP_ cumplimiento](search-the-audit-log-in-security-and-compliance.md).
   
 1. Vaya a [https://protection.office.com](https://protection.office.com).
     
 2. Inicie sesión en Office 365 con su cuenta profesional o educativa.
     
-3. En el panel izquierdo del centro de &amp; seguridad y cumplimiento, haga clic en ** &amp; investigación**y búsqueda y, a continuación, en **búsqueda de registros de auditoría**.
+3. En el panel izquierdo del centro de seguridad & cumplimiento, haga clic en búsqueda de**registros de auditoría**de **búsqueda**  > .
     
     Se muestra la página de **búsqueda de registros de auditoría** . 
     
@@ -105,7 +105,7 @@ El paso siguiente es filtrar el archivo CSV para los eventos **SharingSet** y **
   
 1. En Excel 2016, abra un libro en blanco.
     
-2. Haga clic en la pestaña **Datos**. 
+2. Haga clic en la pestaña **datos** . 
     
 3. Haga clic en **nueva consulta** \> **desde archivo** \> **CSV**.
     

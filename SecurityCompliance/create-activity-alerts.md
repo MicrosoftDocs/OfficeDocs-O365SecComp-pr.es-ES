@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
 description: Agregue y administre alertas de actividad en el centro de seguridad y cumplimiento para que Office 365 le envíe notificaciones por correo electrónico cuando los usuarios realicen actividades específicas en Office 365.
-ms.openlocfilehash: 2bbd5b02ec9497b798c948ac58e5e6ac1501bbc4
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: d71763d4633c3396afdf58400e9cb7b8b8a468e8
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999663"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31813991"
 ---
 # <a name="create-activity-alerts-in-the-office-365"></a>Crear alertas de actividad en el Office 365
 
@@ -43,7 +43,7 @@ Puede crear una alerta de actividad que le envíe una notificación por correo e
     
 ## <a name="create-an-activity-alert"></a>Crear una alerta de actividad
 
-1. Vaya a [https://compliance.microsoft.com/#/managealerts](https://compliance.microsoft.com/#/managealerts).
+1. Vaya a [https://protection.office.com/managealerts](https://protection.office.com/managealerts).
     
 2. Inicie sesión en Office 365 con su cuenta profesional o educativa.
     
@@ -82,7 +82,7 @@ Puede crear una alerta de actividad que le envíe una notificación por correo e
 
 Puede desactivar una alerta de actividad para que no se envíe una notificación de correo electrónico. Después de desactivar la alerta de actividad, sigue apareciendo en la lista de alertas de actividad de la organización, y todavía puede ver sus propiedades.
   
-1. Vaya a [https://compliance.microsoft.com/#/managealerts](https://compliance.microsoft.com/#/managealerts).
+1. Vaya a [https://protection.office.com/managealerts](https://protection.office.com/managealerts).
     
 2. Inicie sesión en Office 365 con su cuenta profesional o educativa.
     
@@ -111,7 +111,7 @@ Para volver a activar una alerta de actividad, repita estos pasos y haga clic en
     |:-----|:-----|:-----|
     |Ve un documento en un sitio.  <br/> |Archivo de acceso  <br/> |Actividades de archivos y carpetas  <br/> |
     |Modifica o modifica un documento.  <br/> |Archivo modificado  <br/> |Actividades de archivos y carpetas  <br/> |
-    |Comparte un documento con un usuario de fuera de la organización.  <br/> |Compartir archivo, carpeta o sitio  <br/> Y  <br/> Invitación para uso compartido creada  <br/> Para obtener más información, vea [usar la auditoría de uso compartido en el registro de auditoría de Office 365](use-sharing-auditing.md).  <br/> |Actividades de solicitud de acceso y uso compartido  <br/> |
+    |Comparte un documento con un usuario de fuera de la organización.  <br/> |Compartir archivo, carpeta o sitio  <br/> And  <br/> Invitación para uso compartido creada  <br/> Para obtener más información, vea [usar la auditoría de uso compartido en el registro de auditoría de Office 365](use-sharing-auditing.md).  <br/> |Actividades de solicitud de acceso y uso compartido  <br/> |
     |Carga o descarga un documento.  <br/> |Archivo cargado  <br/> Y/o  <br/> Archivo desCargado  <br/> |Actividades de archivos y carpetas  <br/> |
     |Cambia los permisos de acceso a un sitio.  <br/> |Permisos de sitio modificados  <br/> |Actividades de administración del sitio  <br/> |
 
@@ -120,7 +120,7 @@ Para volver a activar una alerta de actividad, repita estos pasos y haga clic en
     |**Cuando un usuario hace esto...**|**Crear una alerta para esta actividad**|**Grupo de actividad**|
     |:-----|:-----|:-----|
     |Elimina de forma permanente (purga) un mensaje de correo electrónico de su buzón.  <br/> |Mensajes purgados del buzón  <br/> | Actividades de buzón de Exchange  <br/> |
-    |Envía un mensaje de correo electrónico desde un buzón compartido.  <br/> |Mensaje enviado con los permisos enviar como  <br/> Y  <br/> Mensaje enviado con los permisos enviar en nombre de  <br/> | Actividades de buzón de Exchange  <br/> |
+    |Envía un mensaje de correo electrónico desde un buzón compartido.  <br/> |Mensaje enviado con los permisos enviar como  <br/> And  <br/> Mensaje enviado con los permisos enviar en nombre de  <br/> | Actividades de buzón de Exchange  <br/> |
    
 - También puede usar los cmdlets **New-ActivityAlert** y **set-ActivityAlert** en el PowerShell del centro de cumplimiento de & de seguridad para crear y editar alertas de actividad. Tenga en cuenta lo siguiente si usa estos cmdlets para crear o editar alertas de actividad: 
     

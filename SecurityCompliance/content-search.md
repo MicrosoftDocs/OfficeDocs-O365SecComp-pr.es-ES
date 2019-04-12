@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: Use la herramienta de búsqueda de contenido en el centro de cumplimiento de Office 365 o Microsoft 365 para buscar contenido en buzones de correo, sitios de SharePoint Online, cuentas de OneDrive, Microsoft Teams, grupos de Office 365 y conversaciones de Skype empresarial. Puede usar consultas de búsqueda de palabras clave y condiciones de búsqueda para restringir los resultados de la búsqueda. A continuación, puede obtener una vista previa y exportar los resultados de búsqueda. La búsqueda de contenido también es una herramienta eficaz para buscar contenido que pueda estar relacionado con una solicitud de sujeto de datos de RGPD.
-ms.openlocfilehash: c9cbf135ce44f26322ca3a6972e0d8a7b749fc8c
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 67b32dcc6efcc096b9952be41380a8dc3700a668
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001023"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31814071"
 ---
 # <a name="content-search-in-office-365"></a>Búsqueda de contenido en Office 365
 
@@ -44,7 +44,7 @@ Después de ejecutar una búsqueda de contenido, el número de ubicaciones de co
 
 Para tener acceso a la página de **búsqueda de contenido** para ejecutar las búsquedas y obtener una vista previa de los resultados de la búsqueda, el administrador, el responsable de cumplimiento o el administrador de eDiscovery deben ser miembros del grupo de roles eDiscovery Manager en el centro de seguridad & cumplimiento. Para obtener más información, consulte [asignar permisos de exhibición](assign-ediscovery-permissions.md)de documentos electrónicos.
   
-1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com) e inicie sesión con su dirección de correo electrónico y contraseña de Office 365.
+1. Vaya a [https://protection.office.com](https://protection.office.com) e inicie sesión con su dirección de correo electrónico y contraseña de Office 365.
     
 2. Haga clic en búsqueda de **contenido**de **búsqueda** \> .
     
@@ -207,11 +207,11 @@ Tenga en cuenta lo siguiente cuando use la lista de palabras clave para crear un
   
 - Debe activar la casilla de verificación **Mostrar lista de palabras clave** y, a continuación, escribir cada palabra clave en una fila separada para crear una consulta de búsqueda en la que el operador **or** Conecte las palabras clave (o frases de palabra clave) de cada fila. Si sólo pega una lista de palabras clave en el cuadro palabra clave o presiona la tecla **entrar** después de escribir una palabra clave, no se conectará al operador **or** . Este es un ejemplo incorrecto y correcto de adición de una lista de palabras clave. 
     
-    **Correctas**
+    **Incorrecto**
     
     ![La forma incorrecta de aplicar formato a una lista de palabras clave (pegando la lista en el cuadro palabra clave)](media/fb54e3df-232a-439a-b3d7-27a60ec76a4c.png)
   
-    **Corregi**
+    **Correcto**
     
     ![La forma correcta de dar formato a una lista de palabras clave (seleccionando CheckBox y, a continuación, lista de pegado)](media/5d511a7b-c1f9-499c-bffe-e075bfc9adec.png)
   

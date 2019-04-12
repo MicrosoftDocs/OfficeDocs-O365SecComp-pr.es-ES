@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Use el centro de seguridad & cumplimiento para buscar en el registro de auditoría unificado para ver la actividad del usuario y del administrador de la organización de Office 365. '
-ms.openlocfilehash: d593c7d5403f658175850a66a55603dab2b60d42
-ms.sourcegitcommit: e24f70699021c4f4ba56508ad0afb6f65010c357
+ms.openlocfilehash: d7dc3849a0a12c52979c46b9ac16cfb0a7cd1f3d
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/05/2019
-ms.locfileid: "31479686"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31814181"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Buscar el registro de auditoría en el centro de seguridad & cumplimiento
 
@@ -133,7 +133,7 @@ Asegúrese de leer los siguientes elementos antes de comenzar a buscar en el reg
 - El registro de auditoría para Power BI no está habilitado de forma predeterminada. Para buscar actividades de Power BI en el registro de auditoría de Office 365, tiene que habilitar la auditoría en el portal de administración de Power BI. Para obtener instrucciones, consulte la sección "registros de auditoría" en el [portal de administración de Power BI](https://docs.microsoft.com/power-bi/service-admin-portal#audit-logs).
     
     
-## <a name="search-the-audit-log"></a>Buscar en el registro de auditoría
+## <a name="search-the-audit-log"></a>Búsquedas en el registro de auditoría
 
 Este es el proceso para realizar búsquedas en el registro de auditoría en Office 365.
   
@@ -147,7 +147,7 @@ Este es el proceso para realizar búsquedas en el registro de auditoría en Offi
   
 ### <a name="step-1-run-an-audit-log-search"></a>Paso 1: ejecutar una búsqueda de registros de auditoría
 
-1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com).
+1. Vaya a [https://protection.office.com](https://protection.office.com).
     
     > [!TIP]
     > Use una sesión de exploración privada (no una sesión regular) para acceder al centro de cumplimiento de seguridad &, ya que esto impedirá que las credenciales con las que haya iniciado sesión actualmente se usen. Para abrir una sesión de exploración inPrivate en Internet Explorer o Microsoft Edge, solo tiene que presionar CTRL + MAYÚS + P. Para abrir una sesión de exploración privada en Google Chrome (denominada ventana incógnito), presione CTRL + MAYÚS + N. 
@@ -310,7 +310,7 @@ Haga clic en uno de los siguientes vínculos para ir a una tabla específica.
   
 En la tabla siguiente se describen las actividades de archivo y página en SharePoint Online y OneDrive para la empresa.
   
-|**Nombre descriptivo**|**Operación**|**Descripción**|
+|**Nombre descriptivo**|**Operación**|**Descripción**|
 |:-----|:-----|:-----|
 |Archivo de acceso  <br/> |FileAccessed  <br/> |La cuenta del sistema o el usuario obtiene acceso a un archivo.  <br/> |
 |(ninguno)  <br/> |FileAccessedExtended  <br/> |Esto está relacionado con la actividad "archivo de acceso (FileAccessed)". Se registra un evento FileAccessedExtended cuando la misma persona obtiene acceso continuamente a un archivo durante un período de tiempo prolongado (hasta 3 horas). La finalidad del registro de eventos FileAccessedExtended es reducir el número de eventos FileAccessed que se registran cuando se obtiene acceso a un archivo de forma continua. Esto ayuda a reducir el ruido de varios registros de FileAccessed para lo que es esencialmente la misma actividad de usuario y le permite centrarse en el evento FileAccessed inicial (y más importante).  <br/> |
@@ -340,7 +340,7 @@ En la tabla siguiente se describen las actividades de archivo y página en Share
   
 En la siguiente tabla se describen las actividades de la carpeta en SharePoint Online y OneDrive para la empresa.
   
-|**Nombre descriptivo**|**Operación**|**Descripción**|
+|**Nombre descriptivo**|**Operación**|**Descripción**|
 |:-----|:-----|:-----|
 |Carpeta copiada  <br/> |FolderCopied  <br/> |El usuario copia una carpeta de un sitio a otra ubicación en SharePoint o en OneDrive para la empresa.  <br/> |
 |Carpeta creada  <br/> |FolderCreated  <br/> |El usuario crea una carpeta en un sitio.  <br/> |
@@ -360,7 +360,7 @@ En la tabla siguiente se describen las actividades de uso compartido de usuarios
 > [!NOTE]
 > Los usuarios pueden ser *miembros* o *invitados* en función de la propiedad UserType del objeto de usuario. Un miembro suele ser un empleado y, normalmente, un invitado es un colaborador externo a su organización. Cuando un usuario acepta una invitación para uso compartido (y aún no forma parte de la organización), se crea una cuenta de invitado para ellas en el directorio de la organización. Una vez que el usuario Guest tenga una cuenta en el directorio, es posible que los recursos se compartan directamente con ellos (sin necesidad de una invitación). 
   
-|**Nombre descriptivo**|**Operación**|**Descripción**|
+|**Nombre descriptivo**|**Operación**|**Descripción**|
 |:-----|:-----|:-----|
 |Solicitud de acceso aceptada  <br/> |AccessRequestAccepted  <br/> |Se aceptó una solicitud de acceso a un sitio, una carpeta o un documento y se concedió acceso al usuario que lo solicita.  <br/> |
 |Invitación para uso compartido aceptada  <br/> |SharingInvitationAccepted  <br/> |El usuario (miembro o invitado) ha aceptado una invitación para uso compartido y se le ha concedido acceso a un recurso. Este evento incluye información acerca del usuario al que se invitó y la dirección de correo electrónico que se usó para aceptar la invitación (podrían ser diferentes). Esta actividad suele ir acompañada de un segundo evento que describe cómo se ha concedido acceso al usuario al recurso, por ejemplo, agregar el usuario a un grupo que tiene acceso al recurso.  <br/> |
@@ -398,7 +398,7 @@ En la tabla siguiente se describen las actividades de uso compartido de usuarios
   
 En la siguiente tabla se enumeran las actividades de sincronización de archivos en SharePoint Online y OneDrive para la empresa.
   
-|**Nombre descriptivo**|**Operación**|**Descripción**|
+|**Nombre descriptivo**|**Operación**|**Descripción**|
 |:-----|:-----|:-----|
 |Equipo permitido para sincronizar archivos  <br/> |ManagedSyncClientAllowed  <br/> |El usuario establece una relación de sincronización con un sitio correctamente. La relación de sincronización es correcta porque el equipo del usuario es miembro de un dominio que se ha agregado a la lista de dominios (denominada *lista de destinatarios seguros* ) que puede tener acceso a las bibliotecas de documentos de la organización.  <br/> Para obtener más información sobre esta característica, vea [Usar cmdlets de Windows PowerShell para habilitar la sincronización de OneDrive para los dominios que están en la lista de destinatarios seguros](https://go.microsoft.com/fwlink/p/?LinkID=534609).  <br/> |
 |El equipo bloqueado de la sincronización de archivos  <br/> |UnmanagedSyncClientBlocked  <br/> |El usuario intenta establecer una relación de sincronización con un sitio de un equipo que no es miembro del dominio de la organización o que es miembro de un dominio que no se ha agregado a la lista de dominios (denominada *lista de destinatarios seguros)* que puede tener acceso al documento bibliotecas de la organización. La relación de sincronización no se permite y el equipo del usuario queda bloqueado para sincronizar, descargar o cargar archivos en una biblioteca de documentos.  <br/> Para obtener más información sobre esta característica, vea [Usar cmdlets de Windows PowerShell para habilitar la sincronización de OneDrive para los dominios que están en la lista de destinatarios seguros](https://go.microsoft.com/fwlink/p/?LinkID=534609).  <br/> |
@@ -412,7 +412,7 @@ En la siguiente tabla se enumeran las actividades de sincronización de archivos
   
 En la siguiente tabla se enumeran los eventos que son el resultado de las tareas de administración de sitios en SharePoint Online.
   
-|**Nombre descriptivo**|**Operación**|**Descripción**|
+|**Nombre descriptivo**|**Operación**|**Descripción**|
 |:-----|:-----|:-----|
 |Agente de usuario exento agregado  <br/> |ExemptUserAgentSet  <br/> |Un administrador global o de SharePoint agrega un agente de usuario a la lista de agentes de usuario exentos en el centro de administración de SharePoint.  <br/> |
 |Se agregó el administrador de la colección de sitios  <br/> |SiteCollectionAdminAdded  <br/> |El propietario o el administrador de la colección de sitios agrega una persona como administrador de la colección de sitios de un sitio. Los administradores de colección de sitios tienen permisos de control total para la colección de sitios y todos los subsitios. Esta actividad también se registra cuando un administrador se concede a sí mismo acceso a la cuenta de OneDrive de un usuario (editando el perfil de usuario en el centro de administración de SharePoint o mediante [el centro de administración de Microsoft 365](https://docs.microsoft.com/office365/admin/add-users/get-access-to-and-back-up-a-former-user-s-data#part-1---get-access-to-the-former-employees-onedrive-for-business-documents)). <br/> |
@@ -450,15 +450,15 @@ En la siguiente tabla se enumeran los eventos que son el resultado de las tareas
   
 En la siguiente tabla se enumeran las actividades que puede registrar el registro de auditoría de buzones de correo. Se registran las actividades de buzón realizadas por el propietario del buzón, un usuario delegado o un administrador. De forma predeterminada, la auditoría de buzones de correo en Office 365 no está activada. El registro de auditoría de buzones debe estar activado para cada buzón antes de que se registre la actividad del buzón de correo. Para obtener más información, consulte [Habilitar la auditoría de buzones de correo en Office 365](https://go.microsoft.com/fwlink/p/?LinkID=626109).
   
-|**Nombre descriptivo**|**Operación**|**Descripción**|
+|**Nombre descriptivo**|**Operación**|**Descripción**|
 |:-----|:-----|:-----|
 |Se agregaron permisos de delegado de buzón  <br/> |Add-MailboxPermission  <br/> |Un administrador ha asignado el permiso de buzón de correo de FullAccess a un usuario (conocido como delegado) al buzón de otra persona. El permiso FullAccess permite al delegado abrir el buzón de la otra persona y leer y administrar el contenido del buzón.  <br/> |
 |Mensaje clasificado como registro  <br/> |ApplyRecordLabel<br/> |Un mensaje se clasificó como un registro. Esto ocurre cuando una etiqueta de retención que clasifica el contenido como un registro se aplica de forma manual o automática a un mensaje.<br/> |
-|Mensajes copiados a otra carpeta  <br/> |Copiar  <br/> |Un mensaje se copió en otra carpeta.  <br/> |
+|Mensajes copiados a otra carpeta  <br/> |Copy  <br/> |Un mensaje se copió en otra carpeta.  <br/> |
 |Elemento de buzón creado  <br/> |Crear  <br/> |Se crea un elemento en la carpeta calendario, contactos, notas o tareas del buzón de correo; por ejemplo, se crea una nueva convocatoria de reunión. Tenga en cuenta que no se audita la creación, el envío o la recepción de un mensaje. Además, no se audita la creación de una carpeta de buzón de correo.  <br/> |
 |Nueva regla de bandeja de entrada creada en Outlook Web App  <br/> |NewInboxRule<br/> |<br/> |
 |Mensajes eliminados de la carpeta elementos eliminados  <br/> |SoftDelete  <br/> |Un mensaje se eliminó permanentemente o se eliminó de la carpeta Elementos eliminados. Estos elementos se mueven a la carpeta elementos recuperables. Los mensajes también se mueven a la carpeta elementos recuperables cuando un usuario lo selecciona y presiona **Mayús + Supr**.  <br/> |
-|Mensajes movidos a otra carpeta  <br/> |Mover  <br/> |Un mensaje se movió a otra carpeta.  <br/> |
+|Mensajes movidos a otra carpeta  <br/> |Move  <br/> |Un mensaje se movió a otra carpeta.  <br/> |
 |Mensajes movidos a la carpeta elementos eliminados  <br/> |MoveToDeletedItems  <br/> |Un mensaje se eliminó y se movió a la carpeta Elementos eliminados.  <br/> |
 |Permiso de carpeta modificada  <br/> |UpdateFolderPermissions  <br/> |Se ha cambiado un permiso de carpeta. Los permisos de carpeta controlan qué usuarios de la organización pueden tener acceso a las carpetas de buzón y los mensajes de la carpeta.  <br/> |
 |Mensajes purgados del buzón  <br/> |HardDelete  <br/> |Se purgó un mensaje de la carpeta elementos recuperables (eliminado permanentemente del buzón).  <br/> |
@@ -466,7 +466,7 @@ En la siguiente tabla se enumeran las actividades que puede registrar el registr
 |Mensaje enviado con los permisos enviar como  <br/> |SendAs  <br/> |Un mensaje se envió mediante el permiso SendAs. Esto significa que otro usuario envió el mensaje como si procediera del propietario del buzón.  <br/> |
 |Mensaje enviado con los permisos enviar en nombre de  <br/> |SendOnBehalf  <br/> |Un mensaje se envió mediante el permiso SendOnBehalf. Esto significa que otro usuario envió el mensaje en nombre del propietario del buzón. El mensaje indica el destinatario en nombre de quien se envió el mensaje y quién lo envió realmente.  <br/> |
 |Acceso de delegado actualizado a la carpeta de calendario  <br/> |UpdateCalendarDelegation  <br/> |Se asignó una delegación de calendario a un buzón. La delegación de calendario da a otra persona en la misma organización permisos para administrar el calendario del propietario del buzón.  <br/> |
-|Mensaje actualizado  <br/> |Actualizar  <br/> |Se cambió un mensaje o sus propiedades.  <br/> |
+|Mensaje actualizado  <br/> |Update  <br/> |Se cambió un mensaje o sus propiedades.  <br/> |
 |Usuario que ha iniciado sesión en el buzón  <br/> |MailboxLogin  <br/> |El usuario inició sesión en su buzón.  <br/> |
 |(ninguno)  <br/> |UpdateInboxRules  <br/> |Se ha agregado, quitado o cambiado una regla de bandeja de entrada. Las reglas de la bandeja de entrada se usan para procesar mensajes en la bandeja de entrada del usuario en función de las condiciones especificadas y emprender acciones cuando se cumplen las condiciones de una regla, como mover un mensaje a una carpeta especificada o eliminar un mensaje.  <br/> Para devolver entradas para actividades de reglas de la bandeja de entrada, debe seleccionar **Mostrar resultados para todas las actividades** en la lista **actividades** . Use los cuadros intervalo de fechas y la lista **usuarios** para restringir los resultados de la búsqueda.  <br/> |
 ||||
@@ -475,7 +475,7 @@ En la siguiente tabla se enumeran las actividades que puede registrar el registr
   
 En la siguiente tabla se enumeran las actividades de usuario y administrador en Sway. Sway es una aplicación de Office 365 que ayuda a los usuarios a recopilar, dar formato y compartir ideas, historias y presentaciones en un lienzo interactivo basado en Web. Para obtener más información, consulte [preguntas más frecuentes acerca de Sway: ayuda de administración](https://support.office.com/article/446380fa-25bf-47b2-996c-e12cb2f9d075).
   
-|**Nombre descriptivo**|**Operación**|**Descripción**|
+|**Nombre descriptivo**|**Operación**|**Descripción**|
 |:-----|:-----|:-----|
 |Se cambió el nivel de recurso compartido de Sway  <br/> |SwayChangeShareLevel  <br/> |El usuario cambia el nivel de uso compartido de un Sway. Este evento captura al usuario que cambia el ámbito de uso compartido asociado a un Sway; por ejemplo, público en comparación con la organización.  <br/> |
 |Sway creado  <br/> |SwayCreate  <br/> |El usuario crea un Sway.  <br/> |
@@ -498,7 +498,7 @@ En la siguiente tabla se enumeran las actividades de usuario y administrador en 
   
 En la tabla siguiente se enumeran las actividades de administración de usuarios que se registran cuando un administrador agrega o cambia una cuenta de usuario mediante el centro de administración de Microsoft 365 o el portal de administración de Azure.
   
-|**Actividad**|**Operación**|**Descripción**|
+|**Actividad**|**Operación**|**Descripción**|
 |:-----|:-----|:-----|
 |Usuario agregado  <br/> |Agregar usuario  <br/> |Se ha creado una cuenta de usuario de Office 365.  <br/> |
 |Licencia de usuario modificada  <br/> |Cambiar la licencia de usuario  <br/> |La licencia asignada a un usuario lo que ha cambiado. Para ver qué licencias han cambiado, consulte la actividad de **usuario actualizada** correspondiente.  <br/> |
@@ -514,7 +514,7 @@ En la tabla siguiente se enumeran las actividades de administración de usuarios
   
 En la siguiente tabla se enumeran las actividades de administración de grupos que se registran cuando un administrador o un usuario crea o cambia un grupo de Office 365 o cuando un administrador crea un grupo de seguridad mediante el centro de administración de Microsoft 365 o el portal de administración de Azure. Para obtener más información acerca de los grupos en Office 365, vea [ver, crear y eliminar grupos en el centro de administración de Microsoft 365](https://support.office.com/article/a6360120-2fc4-46af-b105-6a04dc5461c7).
   
-|**Nombre descriptivo**|**Operación**|**Descripción**|
+|**Nombre descriptivo**|**Operación**|**Descripción**|
 |:-----|:-----|:-----|
 |Grupo agregado  <br/> |Agregar grupo  <br/> |Se ha creado un grupo.  <br/> |
 |Miembro agregado a grupo  <br/> |Agregar miembro a grupo  <br/> |Se ha agregado un miembro a un grupo.  <br/> |
@@ -527,7 +527,7 @@ En la siguiente tabla se enumeran las actividades de administración de grupos q
   
 En la siguiente tabla se enumeran las actividades de administración de aplicaciones que se registran cuando un administrador agrega o cambia una aplicación que está registrada en Azure AD. Todas las aplicaciones que se basan en Azure AD para la autenticación deben estar registradas en el directorio.
   
-|**Nombre descriptivo**|**Operación**|**Descripción**|
+|**Nombre descriptivo**|**Operación**|**Descripción**|
 |:-----|:-----|:-----|
 |Entrada de delegación agregada  <br/> |Agregar entrada de delegación  <br/> |Un permiso de autenticación se ha creado o concedido a una aplicación en Azure AD.  <br/> |
 |Entidad de servicio agregada  <br/> |Agregar entidad de servicio  <br/> |Se ha registrado una aplicación en Azure AD. Una aplicación se representa mediante una entidad de servicio en el directorio.  <br/> |
@@ -542,7 +542,7 @@ En la siguiente tabla se enumeran las actividades de administración de aplicaci
   
 En la siguiente tabla se enumeran las actividades de administración de roles de Azure AD que se registran cuando un administrador administra roles de administrador en el centro de administración de Microsoft 365 o en el portal de administración de Azure.
   
-|**Nombre descriptivo**|**Operación**|**Descripción**|
+|**Nombre descriptivo**|**Operación**|**Descripción**|
 |:-----|:-----|:-----|
 |Agregar miembro a rol  <br/> |Agregar un miembro de rol a un rol  <br/> |Se agregó un usuario a un rol de administrador en Office 365.  <br/> |
 |Se ha quitado un usuario de un rol de directorio  <br/> |Quitar un miembro de rol del rol  <br/> |Se ha quitado un usuario del rol de administrador de Office 365.  <br/> |
@@ -553,7 +553,7 @@ En la siguiente tabla se enumeran las actividades de administración de roles de
   
 En la siguiente tabla se enumeran las actividades relacionadas con el dominio y el directorio de Azure AD que se registran cuando un administrador administra su organización de Office 365 en el centro de administración de Microsoft 365 o en el portal de administración de Azure.
   
-|**Nombre descriptivo**|**Operación**|**Descripción**|
+|**Nombre descriptivo**|**Operación**|**Descripción**|
 |:-----|:-----|:-----|
 |Dominio agregado a la compañía  <br/> |Agregar dominio a la compañía  <br/> |Se agregó un dominio a la organización de Office 365.  <br/> |
 |Se agregó un partner al directorio  <br/> |Agregar Partner a la empresa  <br/> |Se agregó un partner (administrador delegado) a su organización de Office 365.  <br/> |
@@ -598,7 +598,7 @@ Tenga en cuenta que el registro de auditoría para Power BI no está habilitado 
 
 Workplace Analytics proporciona información sobre cómo los grupos colaboran en la organización de Office 365. En la siguiente tabla se enumeran las actividades realizadas por los usuarios que tienen asignado el rol de administrador o los roles de Analista en Workplace Analytics. Los usuarios a los que se ha asignado el rol de Analista tienen acceso total a todas las características del servicio y usan el producto para realizar el análisis. Los usuarios que tienen asignado el rol de administrador pueden configurar las opciones de privacidad y los valores predeterminados del sistema, y pueden preparar, cargar y comprobar los datos de la organización en el análisis de área de trabajo. Para obtener más información, consulte [Workplace Analytics](https://docs.microsoft.com/en-us/workplace-analytics/index-orig).
 
-|**Nombre descriptivo**|**Operación**|**Descripción**|
+|**Nombre descriptivo**|**Operación**|**Descripción**|
 |:-----|:-----|:-----|
 |Vínculo OData accesible <br/> |AccessedOdataLink <br/> |El analista ha tenido acceso al vínculo OData para una consulta.|
 |Consulta cancelada <br/> |CanceledQuery <br/> |Analista ha cancelado una consulta en ejecución.|
@@ -620,7 +620,7 @@ En la siguiente tabla se enumeran las actividades de usuario y de administrador 
     
 - [Ayuda de Microsoft Teams](https://support.office.com/article/23156c0c-2c6e-49dd-8b7b-7c564b76508c)
     
-|**Nombre descriptivo**|**Operación**|**Descripción**|
+|**Nombre descriptivo**|**Operación**|**Descripción**|
 |:-----|:-----|:-----|
 |Se agregó un bot a Team  <br/> |BotAddedToTeam  <br/> |Un usuario agrega un bot a un equipo.  <br/> |
 |Canal agregado  <br/> |ChannelAdded  <br/> |Un usuario agrega un canal a un equipo.  <br/> |
@@ -647,7 +647,7 @@ En la siguiente tabla se enumeran las actividades de usuario y de administrador 
   
 En la siguiente tabla se enumeran las actividades de usuario y de administrador de Yammer que se registran en el registro de auditoría de Office 365. Para devolver actividades relacionadas con Yammer desde el registro de auditoría de Office 365, debe seleccionar **Mostrar resultados para todas las actividades** en la lista **actividades** . Use los cuadros intervalo de fechas y la lista **usuarios** para restringir los resultados de la búsqueda. 
   
-|**Nombre descriptivo**|**Operación**|**Descripción**|
+|**Nombre descriptivo**|**Operación**|**Descripción**|
 |:-----|:-----|:-----|
 |Directiva de retención de datos cambiada  <br/> |SoftDeleteSettingsUpdated  <br/> |El administrador verificado actualiza la configuración de la Directiva de retención de datos de red en eliminación o eliminación temporal. Solo los administradores verificados pueden realizar esta operación.  <br/> |
 |Configuración de red cambiada  <br/> |NetworkConfigurationUpdated  <br/> |El administrador de red o verificado cambia la configuración de la red de Yammer. Esto incluye establecer el intervalo para exportar datos y habilitar el chat.  <br/> |

@@ -13,12 +13,12 @@ search.appverid:
 - BCS160
 ms.assetid: 47e8b964-4b09-44f7-a2d7-b8a06e8e389c
 description: Descargue auditorías de terceros, descubra cómo Microsoft mantiene seguros los datos de los clientes y sepa cómo se puede cumplir con ISO, HIPAA, FINRA y FedRAMP al usar Office 365.
-ms.openlocfilehash: 3c65014246de71e0288874299c591816b1a2ca5c
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: d0cb03a7f5cbc34bdce238155372c9e031a95033
+ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999453"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "31813961"
 ---
 # <a name="service-assurance-in-the-security--compliance-center"></a>Garantía del servicio en el centro de seguridad & cumplimiento
 
@@ -53,7 +53,7 @@ También puede averiguar cómo Office 365 puede ayudar a los clientes a cumplir 
   
 La garantía del servicio es accesible mediante el centro de seguridad & cumplimiento. Esta es la manera de acceder a.
   
-1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com).
+1. Vaya a [https://protection.office.com](https://protection.office.com).
     
 2. Inicie sesión en Office 365 con su cuenta profesional o educativa. 
     
@@ -99,7 +99,7 @@ Seleccione el informe que desee descargar y seleccione **Guardar** para descarga
 > [!NOTE]
 > Los informes y documentos de garantía del servicio están disponibles para su descarga durante al menos doce meses después de su publicación o hasta que esté disponible una nueva versión del documento. 
   
-|**Página de garantía del servicio**|**Contenido disponible**|**Descripción**|
+|**Página de garantía del servicio**|**Contenido disponible**|**Descripción**|
 |:-----|:-----|:-----|
 |Informes de cumplimiento  <br/> | FedRamp  <br/>  Evaluación de GRC  <br/>  ISO  <br/>  SOC/SSAE  <br/> |Use los informes de cumplimiento de servicios para revisar las evaluaciones de auditoría realizadas por auditores independientes de terceros de las operaciones de entrega de servicio de Office 365.  <br/> |
 |Documentos de confianza  <br/> | Preguntas más frecuentes y notas del producto  <br/>  Informes de administración de riesgos  <br/> |Use notas del producto, preguntas más frecuentes, informes de fin de año y otros recursos de Microsoft Confidential que están disponibles en el acuerdo de no divulgación para sus evaluaciones de riesgos y revisión.  <br/> |
