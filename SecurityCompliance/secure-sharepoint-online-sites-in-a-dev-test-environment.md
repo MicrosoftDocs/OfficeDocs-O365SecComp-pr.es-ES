@@ -3,7 +3,7 @@ title: Protección de sitios de SharePoint Online en un entorno de desarrollo y 
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 12/12/2018
+ms.date: 04/09/2019
 ms.audience: ITPro
 ms.topic: article
 ms.collection:
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 06af70f3-e7dc-4ee2-a385-fb4d61a5e93b
 description: 'Resumen: cree sitios de grupo de SharePoint Online en un entorno de desarrollo y pruebas, que pueden ser públicos, privados, confidenciales o extremadamente confidenciales.'
-ms.openlocfilehash: 902582e198cb24ed4cce9b8b1e73dfbf3ae9dd52
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: e1d5e6f98679e2efb4d5048009971d88f90181e8
+ms.sourcegitcommit: 19d27ff836ee7fa1f8a4e761e04d928f13f4bfd8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999983"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "31745312"
 ---
 # <a name="secure-sharepoint-online-sites-in-a-devtest-environment"></a>Protección de sitios de SharePoint Online en un entorno de desarrollo y pruebas
 
@@ -34,23 +34,21 @@ Con este entorno de prueba y desarrollo podrá experimentar con los comportamien
   
 ## <a name="phase-1-create-your-devtest-environment"></a>Fase 1: Crear el entorno de prueba y desarrollo
 
-En esta fase se obtienen suscripciones de evaluación para Office 365 y Enterprise Mobility + Security para una organización ficticia.
+En esta fase se obtienen suscripciones de prueba para Office 365 y Enterprise Mobility + Security (EMS) para una organización ficticia.
   
 Siga primero las instrucciones de la **fase 2** del [entorno de desarrollo y prueba de Office 365](https://docs.microsoft.com/office365/enterprise/office-365-dev-test-environment).
   
 Después, regístrese en la suscripción de prueba de EMS y agréguela a la misma organización de la suscripción de prueba de Office 365.
   
-1. Si es necesario, inicie sesión en el centro de administración con las credenciales de la cuenta de administrador global de la suscripción de evaluación. Para obtener ayuda, vea [Dónde iniciar sesión en Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Si es necesario, inicie sesión en el [Centro de administración de Microsoft 365](https://admin.microsoft.com) con las credenciales de la cuenta de administrador global de la suscripción de prueba.
     
-2. Haga clic en el icono **Administración**.
+2. En el panel de navegación izquierdo, haga clic en **Facturación > Servicios de compra**.
     
-3. En la pestaña **Centro de administración de Office** del explorador, en el panel de navegación izquierdo, haga clic en **Facturación > Servicios de compra**.
+3. En la página **Servicios de compra**, busque el elemento **Enterprise Mobility + Security E5**. Mantenga el puntero del mouse sobre ese elemento y haga clic en **Iniciar prueba gratuita**.
     
-4. En la página **Servicios de compra**, busque el elemento **Enterprise Mobility + Security E5**. Mantenga el puntero del mouse sobre ese elemento y haga clic en **Iniciar prueba gratuita**.
+4. En la página **Confirmar pedido**, haga clic en **Probar ahora**.
     
-5. En la página **Confirmar pedido**, haga clic en **Probar ahora**.
-    
-6. En la página **Recibo del pedido**, haga clic en **Continuar**.
+5. En la página **Recibo del pedido**, haga clic en **Continuar**.
     
 Después, habilite la licencia de Enterprise Mobility + Security E5 para la cuenta de administrador global.
   
@@ -122,7 +120,7 @@ Después, configure la asignación automática de licencias para que se asignen 
     
 6. Cierre la pestaña Azure Portal del explorador.
     
-Después, necesita [conectarse al módulo de PowerShell de Azure Active Directory V2](https://go.microsoft.com/fwlink/?linkid=842218).
+Después conéctese al módulo de PowerShell de Azure Active Directory para Graph como se indica en el artículo [Connect with the Azure Active Directory PowerShell for Graph module ](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module).
   
 Rellene el nombre de la organización, la ubicación y una contraseña común; después, ejecute los siguientes comandos desde el símbolo del sistema de PowerShell o el entorno de scripts integrado (ISE) para crear cuentas de usuario y agregarlas a sus respectivos grupos:
   
@@ -179,7 +177,7 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADUser | Where { $_.DisplayName -e
 ```
 
 > [!NOTE]
-> Se usa una contraseña común para automatizar y facilitar la configuración de un entorno de prueba y desarrollo. No se recomienda para suscripciones de producción. 
+> Se usa una contraseña común para automatizar y facilitar la configuración de un entorno de prueba y desarrollo. Evidentemente, esto no se recomienda en el caso de suscripciones de producción. 
   
 Después, siga estos pasos para comprobar que la asignación de licencias basada en grupos funcione correctamente.
   
@@ -191,34 +189,35 @@ Después, siga estos pasos para comprobar que la asignación de licencias basada
     
 4. En el panel que muestra las propiedades de la cuenta de usuario **CEO**, compruebe que se le han asignado las licencias **Enterprise Mobility + Security E5** y **Office 365 Enterprise E5** (en **Licencias de productos**).
     
-## <a name="phase-3-create-office-365-labels"></a>Fase 3: Crear etiquetas de Office 365
+## <a name="phase-3-create-office-365-retention-labels"></a>Fase 3: crear etiquetas de retención de Office 365
 
-En esta fase, se crean las etiquetas para los diferentes niveles de seguridad de las carpetas de documentos de sitios de grupo de SharePoint Online.
-  
-1. Si es necesario, use una instancia privada del explorador de Internet e inicie sesión en el centro de administración con la cuenta de administrador global de la suscripción de evaluación de Office 365 E5. Para obtener ayuda, vea [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4) (Dónde iniciar sesión en Office 365).
+En esta fase, se crean las etiquetas de retención para los diferentes niveles de seguridad de las carpetas de documentos de sitios de grupo de SharePoint Online.
+
+
+1. Inicie sesión en el [portal de cumplimiento de Microsoft 365](https://compliance.microsoft.com) con su cuenta de administrador global.
     
-2. En la pestaña **Inicio de Microsoft Office**, haga clic en el icono **Administrador**.
+2. En la pestaña **Inicio: cumplimiento de Microsoft 365** del navegador, haga clic en **Clasificaciones > Etiquetas**.
     
-3. En la nueva pestaña **Centro de administración de Office** del explorador, haga clic en **Centros de administración Seguridad &amp; Cumplimiento**.
+3. Haga clic en **Etiquetas de retención > Crear una etiqueta**.
     
-4. En la nueva pestaña **Inicio - Seguridad y cumplimiento** del explorador, haga clic en **Clasificaciones > Etiquetas**.
+4. En el panel **Nombre de la etiqueta**, escriba **Público interno** en **el espacio provisto**, y después haga clic en **Siguiente**.
+
+5. En el panel **descriptores de plan de archivos**, haga clic en **Siguiente**.
     
-5. En el panel **Inicio > Etiquetas**, haga clic en la pestaña **Retención** y, después, haga clic en **Crear una etiqueta**.
+6. En el panel **Configuración de etiqueta**, si es necesario, marque **Retención** como **Activada** y haga clic en **Siguiente**.
     
-6. En el panel **Nombre de la etiqueta**, escriba **Interno público** y, después, haga clic en **Siguiente**.
+7. En el panel **Revise su configuración**, haga clic en **Crear la etiqueta**.
     
-7. En el panel **Configuración de etiquetas**, haga clic en **Siguiente**.
-    
-8. En el panel **Revise su configuración**, haga clic en **Crear esta etiqueta** y luego en **Cerrar**.
-    
-9. Repita los pasos del 5 al 8 para estas etiquetas adicionales:
+8. Para las otras etiquetas, haga clic en **Crear una etiqueta**, y después repita los pasos del 3 al 7.
+
+9. Repita los pasos del 3 al 8 para etiquetas adicionales con los siguientes nombres:
     
   - Private
     
   - Confidencial
     
   - Extremadamente confidencial
-    
+  
 10. En el panel **Inicio > Etiquetas**, haga clic para **Publish labels** (Publicar etiquetas).
     
 11. En el panel **Elegir etiquetas para publicar**, haga clic en **Elegir etiquetas para publicar**.
@@ -243,7 +242,7 @@ En esta fase se crean y configuran los cuatro tipos de sitios de grupo de ShareP
 
 Para crear un sitio de grupo público de línea base de SharePoint Online, haga lo siguiente:
   
-1. Si es necesario, use un explorador en el equipo local e inicie sesión en el centro de administración con la cuenta de administrador global. Para obtener ayuda, vea [Dónde iniciar sesión en Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Si es necesario, inicie sesión en el [portal de Office 365](https://portal.office.com) con las credenciales de la cuenta de administrador global de la suscripción de prueba.
     
 2. En la lista de iconos, haga clic en **SharePoint**.
     
@@ -269,15 +268,11 @@ Después configure la carpeta de documentos del sitio de grupo en toda la organi
     
 4. En **Configuración: Aplicar etiqueta**, seleccione **Interno público** y haga clic en **Guardar**.
     
-Esta es el resultado de la configuración.
-  
-![Protección de nivel de línea base del sitio de grupo de SharePoint Online público de toda la organización.](media/25c86847-a38d-49ad-bb5f-c7c04206b6dc.png)
-  
 ### <a name="project-1-team-site"></a>Sitio de grupo Proyecto 1
 
 Para crear un sitio de grupo de SharePoint Online privado como línea base para un proyecto dentro de la organización, siga este procedimiento:
   
-1. Si es necesario, use un explorador en el equipo local e inicie sesión en el centro de administración con la cuenta de administrador global. Para obtener ayuda, vea [Dónde iniciar sesión en Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Si es necesario, inicie sesión en el [portal de Office 365](https://portal.office.com) con las credenciales de la cuenta de administrador global de la suscripción de prueba.
     
 2. En la lista de iconos, haga clic en **SharePoint**.
     
@@ -303,15 +298,12 @@ Después, configure la carpeta de documentos del sitio de grupo Proyecto 1 para 
     
 4. En **Configuración: Aplicar etiqueta**, seleccione **Privado** y haga clic en **Guardar**.
     
-Esta es el resultado de la configuración.
-  
-![Protección de nivel de línea base del sitio de grupo de SharePoint Online privado Proyecto1.](media/ecd96376-b5dc-4042-9cbd-b3765507ace7.png)
-  
 ### <a name="marketing-campaigns-team-site"></a>Sitio de grupo Campañas de marketing
 
 Para crear un sitio de grupo de SharePoint Online aislado que tenga el nivel confidencial para recursos de campañas de marketing, siga este procedimiento:
-  
-1. Abra un explorador en el equipo local e inicie sesión en el centro de administración con la cuenta de administrador global. Para obtener ayuda, vea [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4) (Dónde iniciar sesión en Office 365).
+
+ 
+1. Si es necesario, inicie sesión en el [portal de Office 365](https://portal.office.com) con las credenciales de la cuenta de administrador global de la suscripción de prueba.
     
 2. En la lista de iconos, haga clic en **SharePoint**.
     
@@ -378,12 +370,12 @@ Después, configure la carpeta de documentos del sitio de grupo Campañas de mar
 4. En **Configuración: Aplicar etiqueta**, seleccione **Confidencial** y, después, haga clic en **Guardar**.
     
 Luego configure una directiva de prevención de pérdida de datos (DLP) que notifique a los usuarios cada vez que compartan un documento en un sitio de grupo de SharePoint Online con la etiqueta Confidencial, que incluye el sitio Campañas de marketing, fuera de la organización.
-  
-1. En la pestaña **Inicio de Microsoft Office** del explorador, haga clic en el icono de **Seguridad y cumplimiento**.
+
+1. Inicie sesión en el [portal de cumplimiento de Microsoft 365](https://compliance.microsoft.com/) con su cuenta de administrador global.
     
-2. En la nueva pestaña **Seguridad y cumplimiento** del explorador, haga clic en **Prevención de pérdida de datos > Directiva**.
+2. En la nueva pestaña **cumplimiento de Microsoft 365** del explorador, haga clic en **Directivas  > Prevención de pérdida de datos**.
     
-3. En el panel **Prevención de pérdida de datos**, haga clic en **+ Crear una directiva**.
+3. En el panel **Inicio > Prevención de pérdida de datos**, haga clic en **Crear una directiva**.
     
 4. En el panel **Start with a template or create a custom policy** (Empezar con una plantilla o crear una directiva personalizada), haga clic en **Personalizada** y luego en **Siguiente**.
     
@@ -391,43 +383,39 @@ Luego configure una directiva de prevención de pérdida de datos (DLP) que noti
     
 6. En el panel **Elegir ubicaciones**, haga clic en **Let me choose specific locations** (Permitir elegir ubicaciones concretas) y luego en **Siguiente**.
     
-7. En la lista de ubicaciones, deshabilite las ubicaciones **Correo electrónico de Exchange** y **Cuentas de OneDrive** y haga clic en **Siguiente**.
+7. En la lista de ubicaciones, deshabilite las ubicaciones **Correo electrónico de Exchange**, **Cuentas de OneDrive** y **mensajes de chat y de canal de Teams** y, después, haga clic en **Siguiente**.
     
-8. En el panel **Customize the types of sensitive info you want to protect** (Personalizar los tipos de información confidencial que quiere proteger), haga clic en **Editar**.
+8. En el panel **Personalizar los tipos de información confidencial que quiere proteger**, haga clic en **Editar**.
     
-9. En el panel **Choose the types of content to protect** (Elegir los tipos de contenido que se va a proteger), haga clic en **Agregar** en el cuadro desplegable y luego en **Etiquetas**.
+9. En el panel **Choose the types of content to protect** (Elegir los tipos de contenido que se va a proteger), haga clic en **Agregar** en el cuadro desplegable y luego en **Etiquetas de retención**.
     
-10. En el panel **Etiquetas**, haga clic en **+ Agregar**, seleccione la etiqueta **Confidencial**, haga clic en **Agregar** y luego en **Listo**.
+10. En el panel **Etiquetas de retención**, haga clic en **Agregar**, seleccione la etiqueta **Confidencial**, haga clic en **Agregar** y luego en **Listo**.
     
 11. En el panel **Choose the types of content to protect** (Elegir los tipos de contenido que se va a proteger), haga clic en **Guardar**.
     
-12. En el panel **Customize the types of sensitive info you want to protect** (Personalizar los tipos de información confidencial que quiere proteger), haga clic en **Siguiente**.
-    
+12. En el panel **Personalizar los tipos de información confidencial que quiere proteger**, haga clic en **Siguiente**.
+
 13. En el panel **What do you want to do if we detect sensitive info?** (¿Qué quiere hacer si se detecta información confidencial?), haga clic en **Customize the tip and email** (Personalizar la sugerencia y el correo electrónico).
     
-14. En el panel **Customize policy tips and email notifications** (Personalizar sugerencias de directiva y notificaciones de correo electrónico), haga clic en **Customize the policy tip text** (Personalizar el texto de la sugerencia de directiva).
+14. En el panel **Personalizar sugerencias de directiva y notificaciones de correo electrónico**, haga clic en **Personalizar el texto de la sugerencia de directiva**.
     
-15. En el cuadro de texto, escriba o pegue lo siguiente:
+15. En el cuadro de texto, escriba o pegue una de las siguientes sugerencias, dependiendo de si ha implementado Azure Information Protection para proteger los archivos más confidenciales:
     
   - Para compartir con un usuario de fuera de la organización, descargue el archivo y luego ábralo. Haga clic en Archivo, Proteger documento y Cifrar con contraseña y, luego, especifique una contraseña segura. Envíe la contraseña en un correo electrónico diferente u otro medio de comunicación.
     
 16. Haga clic en **Aceptar**.
     
-17. En el panel **What do you want to do if we detect sensitive info?** (¿Qué quiere hacer si se detecta información confidencial?), desactive la casilla **Block people from sharing, and restrict access to shared content** (Evitar que los usuarios puedan compartir y restringir el acceso al contenido compartido) y haga clic en **Siguiente**.
+17. En el panel **¿Qué quiere hacer si se detecta información confidencial?**, haga clic en **Siguiente**.
     
 18. En el panel **Do you want to turn on the policy or test things out first?** (¿Desea activar la directiva o probarla primero?), haga clic en **Yes, turn it on right away** (Sí, activarla inmediatamente) y luego en **Siguiente**.
     
 19. En el panel **Revise su configuración**, haga clic en **Crear** y, después, en **Cerrar**.
-    
-Esta es el resultado de la configuración.
-  
-![Protección de nivel confidencial del sitio de grupo de SharePoint Online aislado Campañas de marketing.](media/33992bd5-96ee-4bfb-9ecf-c8a6736dd100.png)
   
 ### <a name="company-strategy-team-site"></a>Sitio de grupo Estrategia de la compañía
 
 Para crear un sitio de grupo aislado de SharePoint Online que tenga el nivel extremadamente confidencial para recursos estratégicos de empresa dirigido a los directores ejecutivos de la organización, haga lo siguiente:
   
-1. Si es necesario, use un explorador en el equipo local e inicie sesión en el centro de administración con la cuenta de administrador global. Para obtener ayuda, vea [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4) (Dónde iniciar sesión en Office 365).
+1. Si es necesario, inicie sesión en el [portal de Office 365](https://portal.office.com) con las credenciales de la cuenta de administrador global de la suscripción de prueba.
     
 2. En la lista de iconos, haga clic en **SharePoint**.
     
@@ -491,53 +479,52 @@ Después, configure la carpeta de documentos del sitio de grupo Estrategia de em
     
 Después, configure una directiva de DLP que impida a los usuarios compartir un documento en un sitio de grupo de SharePoint Online con la etiqueta Extremadamente confidencial, que incluye el sitio Estrategia de empresa, fuera de la organización.
   
-1. Si fuera necesario, use un explorador en el equipo local e inicie sesión en el centro de administración con una cuenta que tenga el rol Administrador de seguridad o Administrador de la compañía. Para obtener ayuda, vea [Dónde iniciar sesión en Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Inicie sesión en el [portal de cumplimiento de Microsoft 365](https://compliance.microsoft.com/) con su administrador global.
     
-2. En la pestaña **Inicio de Microsoft Office** del explorador, haga clic en el icono **Seguridad y cumplimiento**.
+2. En la nueva pestaña **cumplimiento de Microsoft 365** del explorador, haga clic en **Directivas  > Prevención de pérdida de datos**.
     
-3. En la nueva pestaña **Seguridad y cumplimiento** del explorador, haga clic en **Prevención de pérdida de datos > Directiva**.
+3. En el panel **Inicio > Prevención de pérdida de datos**, haga clic en **Crear una directiva**.
     
-4. En el panel **Prevención de pérdida de datos**, haga clic en **+ Crear una directiva**.
+4. En el panel **Start with a template or create a custom policy** (Empezar con una plantilla o crear una directiva personalizada), haga clic en **Personalizada** y luego en **Siguiente**.
     
-5. En el panel **Start with a template or create a custom policy** (Empezar con una plantilla o crear una directiva personalizada), haga clic en **Personalizada** y luego en **Siguiente**.
+5. En el panel **Escriba un nombre para la directiva**, escriba **Sitios de grupo de SharePoint Online de etiqueta Extremadamente confidencial** en **Nombre** y haga clic en **Siguiente**.
     
-6. En el panel **Escriba un nombre para la directiva**, escriba **Sitios de grupo de SharePoint Online de etiqueta Extremadamente confidencial** en **Nombre** y haga clic en **Siguiente**.
+6. En el panel **Elegir ubicaciones**, haga clic en **Let me choose specific locations** (Permitir elegir ubicaciones concretas) y luego en **Siguiente**.
     
-7. En el panel **Elegir ubicaciones**, haga clic en **Let me choose specific locations** (Permitir elegir ubicaciones concretas) y luego en **Siguiente**.
+7. En la lista de ubicaciones, deshabilite las ubicaciones **Correo electrónico de Exchange**, **Cuentas de OneDrive** y **mensajes de chat y de canal de Teams** y, después, haga clic en **Siguiente**.
     
-8. En la lista de ubicaciones, deshabilite las ubicaciones **Correo electrónico de Exchange** y **Cuentas de OneDrive** y haga clic en **Siguiente**.
+8. En el panel **Personalizar los tipos de información confidencial que quiere proteger**, haga clic en **Editar**.
     
-9. En el panel **Customize the types of sensitive info you want to protect** (Personalizar los tipos de información confidencial que quiere proteger), haga clic en **Editar**.
+9. En el panel **Choose the types of content to protect** (Elegir los tipos de contenido que se va a proteger), haga clic en **Agregar** en el cuadro desplegable y luego en **Etiquetas de retención**.
     
-10. En el panel **Choose the types of content to protect** (Elegir los tipos de contenido que se va a proteger), haga clic en **Agregar** en el cuadro desplegable y luego en **Etiquetas**.
+10. En el panel **Etiquetas de retención**, haga clic en **Agregar**, seleccione la etiqueta **Extremadamente confidencial**, haga clic en **Agregar** y luego en **Listo**.
     
-11. En el panel **Etiquetas**, haga clic en **+ Agregar**, seleccione la etiqueta **Extremadamente confidencial**, haga clic en **Agregar** y luego en **Listo**.
+11. En el panel **Choose the types of content to protect** (Elegir los tipos de contenido que se va a proteger), haga clic en **Guardar**.
     
-12. En el panel **Choose the types of content to protect** (Elegir los tipos de contenido que se va a proteger), haga clic en **Guardar**.
+12. En el panel **Personalizar los tipos de información confidencial que quiere proteger**, haga clic en **Siguiente**.
+
+13. En el panel **What do you want to do if we detect sensitive info?** (¿Qué quiere hacer si se detecta información confidencial?), haga clic en **Customize the tip and email** (Personalizar la sugerencia y el correo electrónico).
     
-13. En el panel **Customize the types of sensitive info you want to protect** (Personalizar los tipos de información confidencial que quiere proteger), haga clic en **Siguiente**.
+14. En el panel **Personalizar sugerencias de directiva y notificaciones de correo electrónico**, haga clic en **Personalizar el texto de la sugerencia de directiva**.
     
-14. En el panel **What do you want to do if we detect sensitive info?** (¿Qué quiere hacer si se detecta información confidencial?), haga clic en **Customize the tip and email** (Personalizar la sugerencia y el correo electrónico).
-    
-15. En el panel **Customize policy tips and email notifications** (Personalizar sugerencias de directiva y notificaciones de correo electrónico), haga clic en **Customize the policy tip text** (Personalizar el texto de la sugerencia de directiva).
-    
-16. En el cuadro de texto, escriba o pegue lo siguiente:
+15. En el cuadro de texto, escriba o pegue una de las siguientes sugerencias, dependiendo de si ha implementado Azure Information Protection para proteger los archivos más confidenciales:
     
   - Para compartir con un usuario de fuera de la organización, descargue el archivo y luego ábralo. Haga clic en Archivo, Proteger documento y Cifrar con contraseña y, luego, especifique una contraseña segura. Envíe la contraseña en un correo electrónico diferente u otro medio de comunicación.
     
-17. Haga clic en **Aceptar**.
+16. Haga clic en **Aceptar**.
     
-18. En el panel **¿Qué quiere hacer si se detecta información confidencial?**, haga clic en **Siguiente**.
+17. En el panel **¿Qué quiere hacer si se detecta información confidencial?**, haga clic en **Siguiente**.
     
-19. En el panel **Do you want to turn on the policy or test things out first?** (¿Desea activar la directiva o probarla primero?), haga clic en **Yes, turn it on right away** (Sí, activarla inmediatamente) y luego en **Siguiente**.
+18. En el panel **Do you want to turn on the policy or test things out first?** (¿Desea activar la directiva o probarla primero?), haga clic en **Yes, turn it on right away** (Sí, activarla inmediatamente) y luego en **Siguiente**.
     
-20. En el panel **Revise su configuración**, haga clic en **Crear** y luego en **Cerrar**.
+19. En el panel **Revise su configuración**, haga clic en **Crear** y luego en **Cerrar**.
+   
     
 Después, siga las instrucciones de [Activar Azure RMS con el Centro de administración de Microsoft 365](https://docs.microsoft.com/information-protection/deploy-use/activate-office365).
   
 Después, siga estos pasos para configurar Azure Information Protection con una nueva directiva con ámbito y la subetiqueta de protección y permisos para el grupo de directivos:
   
-1. Inicie sesión en el centro de administración con una cuenta que tenga el rol Administrador de seguridad o Administrador de la compañía. Para obtener ayuda, vea [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4) (Dónde iniciar sesión en Office 365).
+1. De ser preciso, inicie sesión en el [Centro de administración de Microsoft 365](https://admin.microsoft.com) con su cuenta de administrador global.
     
 2. En una pestaña independiente del explorador, vaya a Azure Portal ([https://portal.azure.com](https://portal.azure.com)).
     
@@ -580,10 +567,6 @@ Después, siga estos pasos para configurar Azure Information Protection con una 
 21. Haga clic en **Guardar**y después en **Aceptar**.
     
 Para proteger un documento con Azure Information Protection y la nueva etiqueta, [necesita instalar el cliente de Azure Information Protection](https://docs.microsoft.com/information-protection/rms-client/install-client-app) en un equipo de prueba, instalar Office desde el centro de administración y, después, iniciar sesión desde Microsoft Word con una cuenta del grupo **Directivos** de la suscripción de prueba.
-  
-Esta es la configuración resultante.
-  
-![Protección de nivel extremadamente confidencial de un sitio de grupo de SharePoint Online aislado de Estrategia de la compañía.](media/c22695f9-50a1-4abf-a0dd-344b0c92cf94.png)
   
 Ahora está listo para crear documentos en estos cuatro sitios y probar el acceso a ellos con diferentes cuentas de usuario de la suscripción de evaluación.
   
