@@ -310,11 +310,12 @@
 #### [Agregar los resultados de búsqueda a un conjunto de trabajo](compliance20/add-data-to-working-set.md)
 
 ### [Revisar los datos de casos](compliance20/reviewing-data-in-working-set.md)
+#### [Ver documentos de un conjunto de trabajo](compliance20/view-documents-in-working-set.md)
+#### [Consultar los datos de un conjunto de trabajo](compliance20/working-set-search.md)
 #### [Administrar conjuntos de trabajo](compliance20/managing-working-sets.md)
+#### [Agregar datos a otro conjunto de trabajo](compliance20/add-data-to-working-set-from-another-working-set.md)
 #### [Administrar conjuntos de carga](compliance20/manage-load-sets.md)
 #### [Cargar datos que no son de Office 365 a un conjunto de trabajo](compliance20/load-non-office365-data.md)
-#### [Consultar los datos de un conjunto de trabajo](compliance20/working-set-search.md)
-#### [Ver documentos de un conjunto de trabajo](compliance20/view-documents-in-working-set.md)
 #### [Etiquetar documentos en un conjunto de trabajo](compliance20/tagging-documents.md)
 
 ### [Analizar datos de casos](compliance20/analyzing-data-in-working-set.md)
