@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 description: Use el centro de seguridad & cumplimiento en Office 365 para habilitar los buzones de archivo para que admitan los requisitos de retención, exhibición de documentos electrónicos y conservación de mensajes de la organización.
-ms.openlocfilehash: d363943910d970576976d8386196b450dd5694f3
-ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
+ms.openlocfilehash: 334af008f6eb8baedff1239ed1692a0ad73acdb6
+ms.sourcegitcommit: d3e3ce391130f209f4d63c2528e1da8342cd732f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31813971"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "31901948"
 ---
 # <a name="enable-archive-mailboxes-in-the-security--compliance-center"></a>Habilitar buzones de archivo en el centro de seguridad & cumplimiento
   
@@ -37,7 +37,7 @@ Debe tener asignado el rol destinatarios de correo en Exchange Online para habil
   
 ## <a name="enable-an-archive-mailbox"></a>Habilitación de un buzón de archivo
   
-1. Vaya a [https://protection.office.com](https://protection.office.com).
+1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com).
     
 2. Inicie sesión en Office 365 con su cuenta profesional o educativa.
     
@@ -68,7 +68,7 @@ Tenga en cuenta que la Directiva de archivo predeterminada asignada a los buzone
   
 Para deshabilitar un buzón de archivo:
   
-1. Vaya a [https://protection.office.com](https://protection.office.com).
+1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com).
     
 2. Inicie sesión en Office 365 con su cuenta profesional o educativa.
     
@@ -141,6 +141,6 @@ Ejecute el siguiente comando para deshabilitar el buzón de archivo para todos l
     
   - [Etiquetas de retención y directivas de retención](https://go.microsoft.com/fwlink/?LinkId=404424)
     
-  - [Directiva de retención predeterminada en Exchange Online ](https://go.microsoft.com/fwlink/?linkid=839418)
+  - [Directiva de retención predeterminada en Exchange Online](https://go.microsoft.com/fwlink/?linkid=839418)
     
   - [Configurar una directiva de archivo y eliminación para los buzones de la organización de Office 365](set-up-an-archive-and-deletion-policy-for-mailboxes.md)
