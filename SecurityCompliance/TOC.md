@@ -13,6 +13,12 @@
 ## [Usar su suscripción gratuita de Azure Active Directory](use-your-free-azure-ad-subscription-in-office-365.md)
 ## [Planificación de la seguridad y el cumplimiento en Office 365](plan-for-security-and-compliance.md)
 ## [Taller de aprendizaje de director de seguridad de la información (CISO) ](ciso-workshop.md)
+### [Módulo 1: referencia de ciberseguridad de Microsoft](ciso-workshop-module-1.md)
+### [Módulo 2: administración de seguridad](ciso-workshop-module-2.md)
+### [Modulo 3: administración de identidad y acceso](ciso-workshop-module-3.md)
+### [Módulo 4a: estrategia de protección contra amenazas, parte I](ciso-workshop-module-4a.md)
+### [Módulo 4b: estrategia de protección contra amenazas, parte II](ciso-workshop-module-4b.md)
+### [Módulo 5: protección de la información](ciso-workshop-module-5.md)
 
 # Proteger el acceso a datos y servicios
 ## [Proteger el acceso a datos y servicios de Office 365](protect-access-to-data-and-services.md)
