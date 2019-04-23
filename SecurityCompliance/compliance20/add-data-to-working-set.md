@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: d053d236faed0ff35504207d6dd1beb33928acd3
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.openlocfilehash: 7830b483190a69e6055fae369580064c5df42f49
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295083"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958291"
 ---
 # <a name="add-search-results-to-a-working-set"></a>Agregar los resultados de búsqueda a un conjunto de trabajo
 
@@ -34,3 +34,15 @@ A continuación, puede optar por agregar a un conjunto de trabajo existente o a 
 ![Selección de un conjunto de trabajo](../media/e8c6ab51-da8d-4c39-9b21-26bfdf453fb9.png)
 
 Agregar datos a un conjunto de trabajo es un proceso de ejecución larga, puede realizar el seguimiento del progreso en la ficha trabajos o en la columna *Estado del conjunto de trabajo* en la ficha *búsquedas* .  El proceso incluye la recopilación de elementos de Office 365 y, finalmente, la indización de & de recopilación.  Una vez que se haya completado el procesamiento del conjunto de trabajo, haga clic en la ficha *conjuntos* de trabajo para desplazarse hasta el conjunto de trabajo y, a continuación, haga clic en el conjunto de trabajo.  A continuación, puede continuar con la búsqueda, la revisión, el etiquetado y la exportación de los datos relevantes.
+
+## <a name="adding-a-sample-to-a-working-set"></a>Adición de un ejemplo a un conjunto de trabajo
+
+Si desea validar los resultados de la búsqueda más thorougly antes de recopilar todos los documentos que ha recuperado la búsqueda, puede Agregar un ejemplo aleatorio de los resultados de la búsqueda a un conjunto de trabajo en lugar de agregarlo todo.
+
+Para agregar un ejemplo a un conjunto de trabajo, empiece seleccionando una búsqueda, en el control flotante de resultados de la búsqueda, haga clic en botón de *muestra* .
+
+A continuación, puede elegir el parámetro de su muestreo. Hay dos opciones:
+- Intervalo y nivel de confianza: se elegirá el tamaño de muestra para cumplir los parámetros estadísticos especificados.
+- Porcentaje: el tamaño de muestra se determinará en función del número de elementos que ha devuelto la búsqueda y el parámetro elegido.
+
+Por último, elija el conjunto de trabajo al que desea agregar el ejemplo. Desde allí, puede comprobar el estado del proceso de la misma manera que lo haría para agregar una búsqueda completa en un conjunto de trabajo. 

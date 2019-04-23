@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: 47e8b964-4b09-44f7-a2d7-b8a06e8e389c
 description: Descargue auditorías de terceros, descubra cómo Microsoft mantiene seguros los datos de los clientes y sepa cómo se puede cumplir con ISO, HIPAA, FINRA y FedRAMP al usar Office 365.
 ms.openlocfilehash: d0cb03a7f5cbc34bdce238155372c9e031a95033
-ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31813961"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958231"
 ---
 # <a name="service-assurance-in-the-security--compliance-center"></a>Garantía del servicio en el centro de seguridad & cumplimiento
 
@@ -99,7 +99,7 @@ Seleccione el informe que desee descargar y seleccione **Guardar** para descarga
 > [!NOTE]
 > Los informes y documentos de garantía del servicio están disponibles para su descarga durante al menos doce meses después de su publicación o hasta que esté disponible una nueva versión del documento. 
   
-|**Página de garantía del servicio**|**Contenido disponible**|**Descripción**|
+|**Página de garantía del servicio**|**Contenido disponible**|**Descripción**|
 |:-----|:-----|:-----|
 |Informes de cumplimiento  <br/> | FedRamp  <br/>  Evaluación de GRC  <br/>  ISO  <br/>  SOC/SSAE  <br/> |Use los informes de cumplimiento de servicios para revisar las evaluaciones de auditoría realizadas por auditores independientes de terceros de las operaciones de entrega de servicio de Office 365.  <br/> |
 |Documentos de confianza  <br/> | Preguntas más frecuentes y notas del producto  <br/>  Informes de administración de riesgos  <br/> |Use notas del producto, preguntas más frecuentes, informes de fin de año y otros recursos de Microsoft Confidential que están disponibles en el acuerdo de no divulgación para sus evaluaciones de riesgos y revisión.  <br/> |

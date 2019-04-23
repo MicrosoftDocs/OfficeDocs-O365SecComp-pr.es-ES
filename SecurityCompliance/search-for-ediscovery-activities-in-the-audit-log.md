@@ -13,11 +13,11 @@ search.appverid: MOE150
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
 description: Obtenga información sobre cómo buscar en el registro de auditoría de Office 365 eventos que se registran cuando los administradores de cumplimiento realizan tareas de caso de exhibición de documentos electrónicos y de búsqueda de contenido en el centro de seguridad & cumplimiento.
 ms.openlocfilehash: 62c58d123367fd5ee6778034716bc1deb5afc1e2
-ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31814101"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958721"
 ---
 # <a name="search-for-ediscovery-activities-in-the-office-365-audit-log"></a>Buscar actividades de eDiscovery en el registro de auditoría de Office 365
 
@@ -73,7 +73,7 @@ En la tabla siguiente se describen las actividades relacionadas con la exhibici�
 > [!NOTE]
 > Las actividades de eDiscovery descritas en esta sección proporcionan información similar a las actividades del cmdlet de exhibición de documentos electrónicos que se describen en la siguiente sección. Le recomendamos que use las actividades de eDiscovery descritas en esta sección, ya que aparecerán en los resultados de la búsqueda del registro de auditoría en 30 minutos. Las actividades del cmdlet eDiscovery tardan hasta 24 horas en aparecer en los resultados de la búsqueda de registros de auditoría. 
   
-|**Nombre descriptivo**|**Operación**|**Cmdlet correspondiente**|**Descripción**|
+|**Nombre descriptivo**|**Operation**|**Cmdlet correspondiente**|**Descripción**|
 |:-----|:-----|:-----|:-----|
 |Se agregó un miembro al caso de eDiscovery  <br/> |CaseMemberAdded  <br/> |Add-ComplianceCaseMember  <br/> |Se ha agregado un usuario como miembro de un caso de exhibición de documentos electrónicos. Como miembro de un caso, un usuario puede realizar varias tareas relacionadas con casos en función de si se les han asignado los permisos necesarios.  <br/> |
 |Búsqueda de contenido modificada  <br/> |SearchUpdated  <br/> |Set-ComplianceSearch  <br/> |Se ha cambiado una búsqueda de contenido existente. Los cambios pueden incluir la adición o eliminación de ubicaciones de contenido o la edición de la consulta de búsqueda.  <br/> |
@@ -119,7 +119,7 @@ Como se mencionó anteriormente, las actividades de cmdlet de eDiscovery tardan 
 > [!TIP]
 > Los cmdlets de la columna **Operation** de la tabla siguiente están vinculados al tema de la ayuda de cmdlet correspondiente en TechNet. Vaya al tema de ayuda del cmdlet para obtener una descripción de los parámetros disponibles para cada cmdlet. El parámetro y el valor de parámetro que se usaron con un cmdlet se incluyen en la entrada del registro de auditoría para cada actividad de cmdlet de eDiscovery que se registra. 
   
-|**Nombre descriptivo**|**Operación (cmdlet)**|**Descripción**|
+|**Nombre descriptivo**|**Operación (cmdlet)**|**Descripción**|
 |:-----|:-----|:-----|
 |Suspensión creada en caso de exhibición de documentos electrónicos  <br/> |[New-CaseHoldPolicy](https://go.microsoft.com/fwlink/p/?LinkId=823813) <br/> |Se ha creado una suspensión para un caso de exhibición de documentos electrónicos. Una suspensión se puede crear con o sin especificar un origen de contenido. Si se especifican los orígenes de contenido, se identificarán en la entrada del registro de auditoría.  <br/> |
 |Eliminación de la retención del caso de eDiscovery  <br/> |[Remove-CaseHoldPolicy](https://go.microsoft.com/fwlink/p/?LinkId=823814) <br/> |Se eliminó una suspensión asociada a un caso de exhibición de documentos electrónicos. Al eliminar una retención, se liberan todas las ubicaciones de contenido de la suspensión. Eliminar la retención también da como resultado la eliminación de las reglas de suspensión de casos asociadas con la retención (consulte **Remove-CaseHoldRule** a continuación).  <br/> |
@@ -172,7 +172,7 @@ En la tabla siguiente se describen las propiedades que se incluyen al hacer clic
 |ObjectType  <br/> |El tipo de objeto de exhibición de documentos electrónicos que el usuario ha creado, eliminado o modificado; por ejemplo, una acción de búsqueda de contenido (vista previa, exportación o purga), un caso de exhibición de documentos electrónicos o una búsqueda de contenido.  <br/> |
 |Operación  <br/> |El nombre de la operación que corresponde a la actividad de exhibición de documentos electrónicos que se realizó.  <br/> |
 |OrganizationId  <br/> |El GUID de la organización de Office 365.  <br/> |
-|Parámetros  <br/> |El nombre y el valor de los parámetros que se usaron con el cmdlet correspondiente.  <br/> |
+|Parameters  <br/> |El nombre y el valor de los parámetros que se usaron con el cmdlet correspondiente.  <br/> |
 |PublicFolderLocations  <br/> |Las ubicaciones de carpetas públicas en Exchange online que se incluyen en una búsqueda de contenido o se colocan en suspensión en un caso de exhibición de documentos electrónicos.  <br/> |
 |Consulta  <br/> |La consulta de búsqueda asociada a la actividad, como una búsqueda de contenido o una suspensión basada en consulta.  <br/> |
 |RecordType  <br/> |El tipo de operación indicado por el registro. El valor **18** indica un evento relacionado con una actividad enumerada en la sección [actividades del cmdlet de exhibición](#ediscovery-cmdlet-activities) de documentos electrónicos. Un valor de **24** indica un evento relacionado con una actividad enumerada en la sección [Cómo buscar y ver actividades de eDiscovery](#how-to-search-for-and-view-ediscovery-activities) .  <br/> |

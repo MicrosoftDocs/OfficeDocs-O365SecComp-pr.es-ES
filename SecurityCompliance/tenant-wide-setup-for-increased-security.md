@@ -15,12 +15,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 description: Le guía por la configuración recomendada para la configuración de todos los inquilinos que afectan a la seguridad de su entorno de Office 365. Las necesidades de seguridad pueden requerir más o menos seguridad. Use estas recomendaciones como punto de partida.
-ms.openlocfilehash: 26f7bebd1eab1f43da356786bdef5f3fff860053
-ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
+ms.openlocfilehash: 91471f5e4b16f6950b1f74d747ebce3f802e4890
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30955273"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958541"
 ---
 # <a name="configure-your-office-365-tenant-for-increased-security"></a>Configurar su inquilino de Office 365 para aumentar la seguridad
 
@@ -65,7 +65,7 @@ Muchos de los controles de seguridad y protección en el centro de administraci�
   
 |Área * * * *|Incluye una directiva predeterminada * * * *|Recomendación * * * *|
 |:-----|:-----|:-----|
-|**Flujo de correo** (reglas de flujo de correo, también conocidas como reglas de transporte)|No|Agregue una regla de flujo de correo para ayudar a proteger contra ransomware. Consulte "Cómo usar las reglas de transporte de Exchange para realizar un seguimiento o bloquear los correos electrónicos con extensiones de archivo usadas por ransomware" en este blog: [How To Deal with ransomware](https://blogs.technet.microsoft.com/office365security/how-to-deal-with-ransomware/).  <br><br/> Cree una regla de flujo de correo para impedir el reenvío automático de correo electrónico a dominios externos. Para obtener más información, consulte [mitigaTing Client external forwardIng rules with Secure score](https://blogs.technet.microsoft.com/office365security/mitigating-client-external-forwarding-rules-with-secure-score/). <br/><br/> Más información: [reglas de flujo de correo (reglas de transporte) en Exchange Online](https://technet.microsoft.com/en-us/library/jj919238%28v=exchg.150%29.aspx)|
+|**Flujo de correo** (reglas de flujo de correo, también conocidas como reglas de transporte)|No|Agregue una regla de flujo de correo para ayudar a proteger contra ransomware. Consulte "Cómo usar las reglas de transporte de Exchange para realizar un seguimiento o bloquear los correos electrónicos con extensiones de archivo usadas por ransomware" en este blog: [How To Deal with ransomware](https://blogs.technet.microsoft.com/office365security/how-to-deal-with-ransomware/). <br><br/> Vea estos temas: <br/>•[Protéjase contra ransomware](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data?view=o365-worldwide#ransomware)<br/>•[Malware y protección contra ransomware en Office 365](office-365-malware-and-ransomware-protection.md)<br/><br/>  Cree una regla de flujo de correo para impedir el reenvío automático de correo electrónico a dominios externos. Para obtener más información, consulte [mitigaTing Client external forwardIng rules with Secure score](https://blogs.technet.microsoft.com/office365security/mitigating-client-external-forwarding-rules-with-secure-score/). <br/><br/> Más información: [reglas de flujo de correo (reglas de transporte) en Exchange Online](https://technet.microsoft.com/en-us/library/jj919238%28v=exchg.150%29.aspx)|
 |**Habilitar la autenticación moderna**|No|La autenticación moderna en Office 365 es un requisito previo para usar multi-factor Authentication (MFA). Se recomienda MFA para proteger el acceso a los recursos en la nube, incluido el correo electrónico. <br/><br/> Vea estos temas:  <br/>• [Habilitar o deshabilitar la autenticación moderna en Exchange Online](https://support.office.com/article/58018196-f918-49cd-8238-56f57f38d662) <br/>• [Skype empresarial online: habilitar el inquilino para la autenticación moderna](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) <br/><br/> La autenticación moderna está habilitada de forma predeterminada para los clientes de Office 2016, SharePoint Online y OneDrive para la empresa. <br/><br/> Más información: [using office 365 Modern Authentication With Office clients](https://support.office.com/article/776c0036-66fd-41cb-8928-5495c0f9168a)|
    
 ## <a name="configure-tenant-wide-sharing-policies-in-sharepoint-admin-center"></a>Configurar directivas de uso compartido en todo el espacio empresarial en el centro de administración de SharePoint

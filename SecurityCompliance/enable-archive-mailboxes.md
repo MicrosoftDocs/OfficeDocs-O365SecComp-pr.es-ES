@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 description: Use el centro de seguridad & cumplimiento en Office 365 para habilitar los buzones de archivo para que admitan los requisitos de retención, exhibición de documentos electrónicos y conservación de mensajes de la organización.
-ms.openlocfilehash: 334af008f6eb8baedff1239ed1692a0ad73acdb6
-ms.sourcegitcommit: d3e3ce391130f209f4d63c2528e1da8342cd732f
+ms.openlocfilehash: d363943910d970576976d8386196b450dd5694f3
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "31901948"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958311"
 ---
 # <a name="enable-archive-mailboxes-in-the-security--compliance-center"></a>Habilitar buzones de archivo en el centro de seguridad & cumplimiento
   
@@ -37,7 +37,7 @@ Debe tener asignado el rol destinatarios de correo en Exchange Online para habil
   
 ## <a name="enable-an-archive-mailbox"></a>Habilitación de un buzón de archivo
   
-1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com).
+1. Vaya a [https://protection.office.com](https://protection.office.com).
     
 2. Inicie sesión en Office 365 con su cuenta profesional o educativa.
     
@@ -68,7 +68,7 @@ Tenga en cuenta que la Directiva de archivo predeterminada asignada a los buzone
   
 Para deshabilitar un buzón de archivo:
   
-1. Vaya a [https://compliance.microsoft.com](https://compliance.microsoft.com).
+1. Vaya a [https://protection.office.com](https://protection.office.com).
     
 2. Inicie sesión en Office 365 con su cuenta profesional o educativa.
     

@@ -16,11 +16,11 @@ search.appverid:
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: Asigne los permisos necesarios para realizar tareas relacionadas con la exhibición de documentos electrónicos mediante el centro de seguridad & cumplimiento.
 ms.openlocfilehash: 958dd3f41bb9e578c80608d738fc735f5063148d
-ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31814051"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958601"
 ---
 # <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>Asignar permisos de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento
 
@@ -72,7 +72,7 @@ En la página **permisos** del centro de seguridad & cumplimiento, también pued
 
 En la siguiente tabla se enumeran los roles RBAC relacionados con la exhibición de documentos electrónicos en el centro de cumplimiento de seguridad & y se indican los grupos de roles integrados a los que cada rol está asignado de forma predeterminada. 
     
-|**Role**|**Administrador de cumplimiento**|**Administrador de eDiscovery & administrador**|**Administración de la organización**|**Reviewer**|
+|**Rol**|**Administrador de cumplimiento**|**Administrador de eDiscovery & administrador**|**Administración de organizaciones**|**Reviewer**|
 |:-----|:-----:|:-----:|:-----:|:-----:|
 |Administración de casos <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
 |Búsqueda de cumplimiento <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
@@ -113,7 +113,7 @@ Este rol permite a los usuarios poner contenido en buzones de correo, carpetas p
 Para obtener más información acerca de las suspensiones, consulte:
 
 - [casos de eDiscovery](ediscovery-cases.md) 
-- [Introducción a las directivas de retención](retention-policies.md)
+- [Información general sobre las directivas de retención](retention-policies.md)
 
 ### <a name="preview"></a>Vista previa
 
@@ -134,7 +134,7 @@ Este rol permite a los usuarios realizar la eliminación masiva de datos que coi
 
 ## <a name="more-information"></a>Más información
 
-- **¿Por qué crear un administrador de eDiscovery?** Tal como se explicó anteriormente, un administrador de exhibición de documentos electrónicos es miembro del Grupo de roles de administrador de exhibición de documentos electrónicos, que puede ver y tener acceso a todos los casos de exhibición de documentos electrónicos de la organización. Esta capacidad para tener acceso a todos los casos de exhibición de documentos electrónicos tiene dos fines importantes: 
+- **¿Por qué debería crear un administrador de exhibición de documentos electrónicos? ** Tal como se explicó anteriormente, un administrador de exhibición de documentos electrónicos es miembro del Grupo de roles de administrador de exhibición de documentos electrónicos, que puede ver y tener acceso a todos los casos de exhibición de documentos electrónicos de la organización. Esta capacidad para tener acceso a todos los casos de exhibición de documentos electrónicos tiene dos fines importantes: 
     
   - Si un usuario es el único miembro de un caso de exhibición de documentos electrónicos y abandona la organización, ningún usuario (ni siquiera los miembros del grupo de roles Administración de la organización ni otro miembro del grupo de roles Administrador de exhibición de documentos electrónicos) puede tener acceso a ese caso de exhibición de documentos electrónicos, ya que no es miembro del caso. En esta situación, no habría ninguna manera de tener acceso a los datos del caso. Pero como un administrador de eDiscovery puede acceder a todos los casos de eDiscovery de la organización, pueden ver el caso y agregarse a sí mismos o a otro administrador de eDiscovery como miembro del caso.
     

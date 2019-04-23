@@ -3,7 +3,7 @@ title: Entrega dinámica y vista previa con datos adJuntos seguros de Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 03/12/2019
+ms.date: 04/19/2019
 ms.audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: f16c9928-8e3d-4219-b994-271dc9a16272
 ms.collection:
 - M365-security-compliance
 description: Cuando configure las directivas de datos adjuntos seguros de ATP, elija la entrega dinámica para evitar retrasos en los mensajes y permitir a los usuarios obtener una vista previa de los datos adjuntos que se están analizando.
-ms.openlocfilehash: d27fa16f8d1d117aa56a2080eb020ab3638ca6fe
-ms.sourcegitcommit: f86383dcb9c52352661d51b22617f1809445beaa
+ms.openlocfilehash: 567b5f0c5bc75123169073bf5dc33de191187846
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30573514"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958571"
 ---
 # <a name="dynamic-delivery-and-previewing-with-office-365-atp-safe-attachments"></a>Entrega dinámica y vista previa con datos adJuntos seguros de Office 365 ATP
 
@@ -81,4 +81,4 @@ Hay algunos escenarios en los que no se admite la entrega dinámica. Por ejemplo
 
 - Mensajes cifrados con [extensiones seguras multipropósito al correo de Internet (S/MIME)](s-mime-for-message-signing-and-encryption.md))
 
-En los casos en los que no se admite la entrega dinámica, los datos adJuntos seguros de ATP no analizarán los mensajes de correo electrónico. Sin embargo, en función de la configuración de las [directivas de vínculos seguros de ATP](set-up-atp-safe-links-policies.md) , se comprobarán las direcciones URL de los mensajes de correo electrónico (y los archivos de Office).
+- En los casos en los que no se admite la entrega dinámica, los datos adJuntos seguros de ATP no analizarán los mensajes de correo electrónico. Sin embargo, se comprobará la entrega de mensajes de correo electrónico con datos adjuntos que contengan direcciones URL, en función de la configuración de las [directivas de vínculos seguros de ATP](set-up-atp-safe-links-policies.md) . En estos casos, se comprueban las direcciones URL de los mensajes de correo electrónico y los archivos de Office.

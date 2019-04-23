@@ -12,18 +12,18 @@ ms.collection: M365-security-compliance
 search.appverid: MOE150
 ms.assetid: c4c8f689-9d52-4e80-ae4b-1411ee9efc43
 description: Obtenga información sobre cómo configurar el registro de Windows para aumentar el rendimiento de los datos al descargar resultados de búsqueda y datos de búsqueda del centro de seguridad & cumplimiento y la exhibición avanzada de documentos electrónicos en Office 365.
-ms.openlocfilehash: 36a4f1766f3ac0108d1829c93cfca63bc5cf09f5
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 10eff929d6b668d5e2bc22d8ee7f223da4943326
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000923"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958631"
 ---
 # <a name="increase-the-download-speed-when-exporting-ediscovery-search-results-from-office-365"></a>Aumentar la velocidad de descarga al exportar resultados de búsqueda de exhibición de documentos electrónicos de Office 365
 
 Cuando usa la herramienta de exportación de exhibición de documentos electrónicos de Office 365 para descargar los resultados de una búsqueda de contenido en el centro de seguridad & cumplimiento o descargar datos desde Office 365 Advanced eDiscovery, la herramienta inicia un determinado número de operaciones de exportación simultáneas para descargar los datos en el equipo local. De forma predeterminada, el número de operaciones simultáneas se establece en 8 veces el número de núcleos en el equipo que está usando para descargar los datos. Por ejemplo, si tiene un equipo con dos núcleos (es decir, dos unidades de procesamiento central en un chip), el número predeterminado de operaciones de exportación simultáneas es 16. Para aumentar el rendimiento de la transferencia de datos y acelerar el proceso de descarga, puede aumentar el número de operaciones simultáneas configurando una configuración del registro de Windows en el equipo que use para descargar los resultados de la búsqueda. Para acelerar el proceso de descarga, se recomienda comenzar con una configuración de 24 operaciones simultáneas.
   
-Si descarga los resultados de la búsqueda en una red de ancho de banda bajo, aumentar esta configuración puede tener un impacto negativo. Como alternativa, es posible que pueda aumentar la configuración a más de 24 operaciones simultáneas en una red de ancho de banda alto (el número máximo de operaciones simultáneas es 512). Después de configurar este valor del registro, es posible que tenga que cambiarlo para encontrar el número óptimo de operaciones simultáneas para su entorno.
+Si descarga los resultados de la búsqueda en una red de ancho de banda bajo, aumentar esta configuración puede tener un impacto negativo. Como alternativa, es posible que pueda aumentar la configuración a más de 24 operaciones simultáneas en una red de ancho de banda alto (el número máximo de operaciones simultáneas es 48). Después de configurar este valor del registro, es posible que tenga que cambiarlo para encontrar el número óptimo de operaciones simultáneas para su entorno.
   
 ## <a name="create-a-registry-setting-to-change-the-number-of-concurrent-operations-when-exporting-data"></a>Crear una configuración del registro para cambiar el número de operaciones simultáneas al exportar datos
 

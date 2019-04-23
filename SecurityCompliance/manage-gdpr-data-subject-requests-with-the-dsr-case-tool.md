@@ -16,11 +16,11 @@ ms.collection:
 ms.assetid: ce9eb942-3589-42cb-88fd-1576ecb09c5c
 description: El RGPD otorga a los ciudadanos de la UE (denominados "interesados en los datos) derechos específicos sobre sus datos personales; Estos derechos incluyen la obtención de copias del mismo, la solicitud de cambios, la restricción del procesamiento, la eliminación o la recepción del mismo en un formato electrónico. Una solicitud formal de un sujeto de datos para realizar una acción en sus datos personales se denomina solicitud de interesado o DSR. Puede usar casos de DSR en el centro de cumplimiento de Office 365 y Microsoft 365 para administrar las investigaciones de los DSR de su organización.
 ms.openlocfilehash: a131da86350fc288c1c9af371d28464230b742d6
-ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31814031"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958711"
 ---
 # <a name="manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-security--compliance-center"></a>Administración de solicitudes del interesado de RGPD con la herramienta de casos de DSR en el centro de cumplimiento de & de seguridad
 
@@ -56,7 +56,7 @@ Mediante el uso de la herramienta de caso DSR, puede:
     
 Este es el proceso de alto nivel para usar la herramienta de caso DSR para administrar investigaciones de DSR:
   
-[Paso 1: Asignar permisos de exhibición de documentos electrónicos a posibles miembros del caso](#step-1-assign-ediscovery-permissions-to-potential-case-members)
+[Step 1: Assign eDiscovery permissions to potential case members](#step-1-assign-ediscovery-permissions-to-potential-case-members)
 
 [Paso 2: crear un caso de DSR y agregar miembros](#step-2-create-a-dsr-case-and-add-members)
 

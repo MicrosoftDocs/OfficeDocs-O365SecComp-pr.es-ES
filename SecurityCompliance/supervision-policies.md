@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: Descripción de las directivas de supervisión en Office 365
-ms.openlocfilehash: db0dedbbb41eef334165a4bde65c45a52d14299a
-ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
+ms.openlocfilehash: 550f37ad4aa8af9e6bc1d3fd8b799c72c37f2067
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30900099"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958562"
 ---
 # <a name="supervision-policies-in-office-365"></a>Directivas de supervisión en Office 365
 
@@ -50,7 +50,7 @@ Las directivas de supervisión pueden ayudar a supervisar las comunicaciones en 
 
 ### <a name="supervision-policy"></a>Directiva de supervisión
 
-Creará directivas de supervisión en el centro de seguridad & cumplimiento. Estas directivas definen qué comunicaciones y usuarios están sujetos a revisión en su organización, define las condiciones personalizadas que deben cumplir las comunicaciones y especifica quién debe realizar revisiones. Los usuarios incluidos en el grupo de roles revisión de supervisión pueden configurar directivas y cualquier persona con este rol asignado puede tener acceso a la página supervisión en Gobierno de datos en el centro de seguridad & cumplimiento de Office 365.
+Creará directivas de supervisión en el centro de cumplimiento. Estas directivas definen qué comunicaciones y usuarios están sujetos a revisión en su organización, define las condiciones personalizadas que deben cumplir las comunicaciones y especifica quién debe realizar revisiones. Los usuarios incluidos en el grupo de roles revisión de supervisión pueden configurar directivas y cualquier persona con este rol asignado puede tener acceso a la página supervisión en el centro de cumplimiento.
 
 ### <a name="supervised-users"></a>Usuarios superVisados
 
@@ -62,7 +62,7 @@ Si no tiene un plan existente de Enterprise E5 y desea intentar la supervisión,
 
 ### <a name="reviewers"></a>Reviewers
 
-Cuando se crea una directiva de supervisión, también se determina quién realizará las revisiones de los mensajes de los usuarios supervisados. En la Directiva, usará direcciones de correo electrónico de usuario para identificar personas o grupos de personas para revisar las comunicaciones supervisadas.
+Cuando se crea una directiva de supervisión, también se determina quién realizará las revisiones de los mensajes de los usuarios supervisados. En la Directiva, usará direcciones de correo electrónico de usuario para identificar personas o grupos de personas para revisar las comunicaciones supervisadas. Todos los revisores deben tener buzones hospedados en Exchange Online.
 
 ### <a name="groups-for-supervised-users-and-reviewers"></a>Grupos de usuarios supervisados y revisores
 
@@ -139,7 +139,7 @@ Si especifica varias condiciones, Office 365 usa todas las condiciones para dete
 
 #### <a name="review-percentage"></a>Porcentaje de revisión
 
-Puede especificar un porcentaje de todas las comunicaciones regidas por una directiva de supervisión si desea reducir la cantidad de contenido que se va a revisar. Seleccione de forma aleatoria la cantidad de contenido del porcentaje total que coincide con las condiciones que ha elegido. Si desea que los revisores revisen todos los elementos, puede escribir **100%** en una directiva de supervisión.
+Si desea reducir la cantidad de contenido que se va a revisar, puede especificar un porcentaje de todas las comunicaciones regidas por una directiva de supervisión. Seleccione de forma aleatoria la cantidad de contenido del porcentaje total que coincide con las condiciones que ha elegido. Si desea que los revisores revisen todos los elementos, puede escribir **100%** en una directiva de supervisión.
 
 ## <a name="monitoring--managing"></a>Supervisión & administración
 
@@ -147,7 +147,7 @@ Supervisar los resultados de las directivas de supervisión y aplicar una etique
 
 ### <a name="supervision-policy-dashboard"></a>Panel de directivas de supervisión
 
-La forma más sencilla de administrar los resultados de la Directiva de supervisión y resolver los elementos pendientes es usar el panel de directivas de supervisión. Este panel permite a los revisores ver rápidamente los elementos que se deben revisar, realizar acciones en un elemento y revisar los resultados de los elementos revisados y reparados anteriormente para cada directiva de supervisión. puede obtener acceso al panel directiva de supervisión en el centro de seguridad de Office 365 & en **supervisión** > *de la directiva* > personalizada**abierta**.
+La forma más sencilla de administrar los resultados de la Directiva de supervisión y resolver los elementos pendientes es usar el panel de directivas de supervisión. Este panel permite a los revisores ver rápidamente los elementos que se deben revisar, realizar acciones en un elemento y revisar los resultados de los elementos revisados y reparados anteriormente para cada directiva de supervisión. Puede tener acceso al panel Directiva de supervisión en el centro de cumplimiento al **supervisar** > *la Directiva* > personalizada**abierta**.
 
 #### <a name="dashboard-home"></a>Página principal del panel
 
@@ -181,7 +181,7 @@ Si los revisores prefieren no usar el panel de supervisión en Office 365, tambi
 
 #### <a name="outlook-on-the-web"></a>Outlook en la Web
 
-Los usuarios designados como revisores en una directiva de supervisión pueden usar Outlook en la web para revisar los elementos de supervisión y resolverlos. El complemento de supervisión se instala automáticamente en Outlook en la web para todos los revisores que ha especificado en la Directiva. La organización no necesita realizar ninguna configuración adicional para que las carpetas compartidas de directivas estén disponibles para los revisores configurados.
+Los usuarios designados como revisores en una directiva de supervisión pueden usar Outlook en la web para revisar los elementos de supervisión y resolverlos. El complemento de supervisión se instala automáticamente en Outlook en la web para todos los revisores que ha especificado en la Directiva. No se necesita ninguna configuración adicional para que las carpetas compartidas de directivas de supervisión estén disponibles para los revisores configurados.
 
 Con Outlook en la web, los revisores pueden:
 
@@ -206,12 +206,12 @@ Con Outlook, los revisores pueden:
 Use los informes de supervisión para ver la actividad de revisión en el nivel de directiva y revisor. Para cada Directiva, también puede ver estadísticas activas en el estado actual de la actividad de revisión. Puede usar los informes de supervisión para:
   
 - Compruebe que las directivas funcionan según lo previsto.
-- Averigüe cuántas comunicaciones se están identificando para su revisión.
+- Averigüe cuántas comunicaciones se identifican para su revisión.
 - Averigüe cuántas comunicaciones no son compatibles y cuáles son las que pasan una revisión. Esta información puede ayudarle a decidir si debe ajustar las directivas o cambiar el número de revisores.
 
 ### <a name="view-the-supervision-report"></a>Ver el informe de supervisión
 
-1. Inicie sesión en el [centro de seguridad _AMP_ cumplimiento](https://protection.office.com/) con las credenciales de una cuenta de administrador en la organización de Office 365 que tenga permisos para ver informes de supervisión.
+1. Inicie sesión en el [centro de cumplimiento](https://compliance.microsoft.com) con las credenciales de una cuenta de administrador en la organización que tenga permisos para ver informes de supervisión.
 2. Vaya a la **** \> **consola** de informes o a la **supervisión**. Verá un widget de informes de supervisión con un resumen de la actividad de la Directiva de supervisión actual.
 3. Seleccione el widget de **supervisión** para abrir la página informe detallado.
 
@@ -220,7 +220,7 @@ Use los informes de supervisión para ver la actividad de revisión en el nivel 
   
 ### <a name="how-to-use-the-report"></a>Uso del informe
 
-Cuando una directiva de supervisión identifica un mensaje de comunicación para revisión, el correo electrónico se entrega a la carpeta de supervisión del revisor en Outlook y en Outlook en la web (anteriormente conocido como Outlook Web App). Este informe muestra el nombre de cada directiva y el número de comunicaciones en cada fase del proceso de revisión.
+Cuando una directiva de supervisión identifica un mensaje de comunicación para revisión, el correo electrónico se entrega a la carpeta de supervisión del revisor en Outlook y en Outlook en la web (anteriormente conocido como Outlook Web App). Este informe enumera cada directiva y el número de comunicaciones en cada fase del proceso de revisión.
   
 Use el informe para:
   
@@ -247,9 +247,9 @@ Este es un desglose de los valores que puede ver en la columna **tipo de etiquet
 
 ## <a name="auditing"></a>Auditoría
 
-En algunos casos, deberá proporcionar información a auditores de cumplimiento normativos o de cumplimiento para probar la supervisión de las comunicaciones y las actividades de los empleados. Esto puede ser un resumen de todas las actividades de supervisión asociadas con una directiva definida o cada vez que se cambia o se actualiza una directiva de supervisión. Las directivas de supervisión tienen pistas de auditoría integradas para disponer de una preparación completa de las auditorías internas o externas. Se puede demostrar la prueba de los procedimientos de supervisión con un historial de auditoría detallado de cada acción supervisada por las directivas de supervisión.
+En algunos casos, debe proporcionar información a auditores de cumplimiento normativos o de cumplimiento para probar la supervisión de las comunicaciones y las actividades de los empleados. Esto puede ser un resumen de todas las actividades de supervisión asociadas con una directiva definida o cada vez que se cambia o se actualiza una directiva de supervisión. Las directivas de supervisión tienen pistas de auditoría integradas para disponer de una preparación completa de las auditorías internas o externas. Se puede demostrar la prueba de los procedimientos de supervisión con un historial de auditoría detallado de cada acción supervisada por las directivas de supervisión.
 
-Las siguientes actividades de directiva de supervisión se auditan y se pueden ver con los registros de auditoría de Office 365 unificados:
+Las siguientes actividades de directiva de supervisión se auditan y están disponibles en los registros de auditoría de Office 365 unificados:
 
 |**Actividad**|**Comandos asociados**|
 |:-----|:-----|
@@ -258,7 +258,7 @@ Las siguientes actividades de directiva de supervisión se auditan y se pueden v
 | Eliminación de una directiva| [Remove-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/remove-supervisoryreviewpolicyv2) |
 | Ver una directiva | [Get-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/get-supervisoryreviewpolicyv2) |
 
-Las auditorías se pueden recuperar con la función de búsqueda de registros de auditoría unificada o mediante el cmdlet [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) PowerShell.
+Las actividades de auditoría se ven con la función de búsqueda de registros de auditoría unificada o con el cmdlet [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) PowerShell.
 
 Por ejemplo, en el siguiente ejemplo se devuelven las actividades de todas las actividades de revisión de supervisión (directivas y reglas) y se enumera la información detallada de cada uno de los elementos siguientes:
 

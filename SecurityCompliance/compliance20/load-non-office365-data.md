@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 7a27da4b8932d9bef268de897d9a992d8b87bdef
-ms.sourcegitcommit: cf9d9b545a7c153d314aa9c08c7fb16fcd785b3e
+ms.openlocfilehash: 2ac12cf8c447e3341724d9e853da0f32b7c232fb
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30737670"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958701"
 ---
 # <a name="load-non-office-365-data-into-a-working-set"></a>Cargar datos que no son de Office 365 a un conjunto de trabajo
 
@@ -47,19 +47,21 @@ El uso de la característica cargar no de Office 365 tal y como se describe en e
 
    Donde abraham.mcmahon@contoso.com, jewell.gordon@contoso.com y staci.gonzalez@contoso.com son direcciones SMTP de custodios en el caso.
 
+![Estructura de carpetas de carga de datos no de Office 365](../media/3f2dde84-294e-48ea-b44b-7437bd25284c.png)
+
 - Una cuenta que sea un administrador de eDiscovery o un administrador de exhibición de documentos electrónicos herramientas de almacenamiento de Microsoft Azure instaladas en un equipo que tenga acceso a la estructura de carpetas de contenido no Office 365.
 
 - Instale AzCopy, que puede hacer desde aquí:https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy
 
 ## <a name="upload-non-office-365-content-into-advanced-ediscovery"></a>Cargar contenido no de Office 365 en eDiscovery avanzado
 
-1. Como administrador de eDiscovery o administrador de exhibición de documentos electrónicos, abra eDiscovery avanzado y, a continuación, el caso en el que se cargarán los datos que no son de Office 365.  Haga clic en la ficha **conjuntos de trabajo** y, a continuación, seleccione el conjunto de trabajo en el que desea cargar los datos que no son de Office 365.  Si todavía no ha creado un conjunto de trabajo, puede hacerlo ahora.  Por último, haga clic en **administrar el conjunto de trabajo** y, a continuación, **Ver cargas** en la sección de datos que no son de Office 365
+1. Como administrador de eDiscovery o administrador de exhibición de documentos electrónicos, abra eDiscovery avanzado y, a continuación, el caso en el que se cargarán los datos que no son de Office 365.  Haga clic en la ficha **conjuntos de trabajo** y, a continuación, seleccione el conjunto de trabajo en el que desea cargar los datos que no son de Office 365.  Si todavía no ha creado un conjunto de trabajo, puede hacerlo ahora.  Por último, haga clic en **administrar conjunto de trabajos** y, a continuación, **Ver cargas** en la sección de datos que no son de Office 365.
 
 2. Haga clic en el botón **cargar archivos** para iniciar el Asistente para importación de datos no perteneciente a Office 365.
 
 ![Cargar archivos](../media/574f4059-4146-4058-9df3-ec97cf28d7c7.png)
 
-3. El primer paso del asistente simplemente prepara un BLOB seguro de Azure para los archivos que se van a cargar.  Una vez que se compelted la preparación, haga clic en el botón **cargar archivos** .
+3. El primer paso del asistente simplemente prepara un BLOB seguro de Azure para los archivos que se van a cargar.  Una vez completada la preparación, haga clic en el botón **cargar archivos** .
 
 ![Importación no de Office 365-preparación](../media/0670a347-a578-454a-9b3d-e70ef47aec57.png)
  

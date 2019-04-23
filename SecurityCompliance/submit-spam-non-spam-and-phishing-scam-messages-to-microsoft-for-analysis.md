@@ -3,7 +3,7 @@ title: Envío de mensajes de correo no deseado, mensajes seguros y mensajes de c
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.date: 6/11/2018
+ms.date: 04/19/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 ms.collection:
 - M365-security-compliance
 description: 'Usted y sus usuarios pueden enviar mensajes de correo no deseado falsos negativos y falsos positivos a Microsoft para su análisis. '
-ms.openlocfilehash: 471d497a952345da673ce6b3a6f7e9e78bf9b94d
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: 75943a923195b522113690d5e176777e47d026d4
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693629"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958681"
 ---
 # <a name="submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis"></a>Envío de mensajes de correo no deseado, mensajes seguros y mensajes de correo de suplantación de identidad (phishing) a Microsoft para su análisis
 
@@ -33,11 +33,11 @@ Puede resultar frustrante cuando los usuarios de la organización reciben mensaj
 
 Si recibe un mensaje que pasa por los filtros de correo no deseado y debe clasificarse como correo no deseado o como una estafa de suplantación de identidad, puede enviar el mensaje "falso negativo" al análisis de correo no deseado de Microsoft y a Microsoft phishing Analysis Teams, según corresponda. Los analistas revisarán el mensaje y lo agregarán a los filtros de todo el servicio si cumple con los criterios de clasificación. 
   
-Para obtener más información sobre la configuración de correo electrónico no deseado que se aplica a toda la organización, vea [Bloquee el spam de correo electrónico con el filtro de correo basura de Office 365 para evitar problemas de negativos falsos](https://go.microsoft.com/fwlink/p/?LinkId=534225). Este artículo contiene sugerencias para ayudar a evitar falsos negativos.
+Para obtener más información sobre la configuración de correo electrónico no deseado que se aplica a toda la organización, vea [Bloquee el spam de correo electrónico con el filtro de correo basura de Office 365 para evitar problemas de negativos falsos](reduce-spam-email.md). Este artículo contiene sugerencias para ayudar a evitar falsos negativos.
   
 Puede enviar mensajes de correo no deseado de las maneras siguientes:
   
-- Para los usuarios de Outlook y Outlook en la web, use el complemento de mensajes de informe para Microsoft Outlook. Para obtener información sobre cómo instalar y usar esta herramienta, consulte [Habilitar el complemento de mensajes de informe](https://support.office.com/article/4250c4bc-6102-420b-9e0a-a95064837676). 
+- Para los usuarios de Outlook y Outlook en la web, use el complemento de mensajes de informe para Microsoft Outlook. Para obtener información sobre cómo instalar y usar esta herramienta, consulte [Habilitar el complemento de mensajes de informe](enable-the-report-message-add-in.md). 
         
 - También puede usar el correo electrónico para enviar mensajes a Microsoft que deben clasificarse como estafas de suplantación de identidad (spam) o suplantación de identidad (phishing), como se describe en el siguiente procedimiento.
     
@@ -66,7 +66,7 @@ Para enviar un mensaje de correo no deseado o de suplantación de identidad (phi
 
 Si un mensaje se identificó incorrectamente como correo no deseado, puede enviar el mensaje "falso positivo" al equipo de análisis de correo no deseado de Microsoft. Los analistas evaluarán y analizarán el mensaje. Según los resultados del análisis, se podrían ajustar las reglas de filtro de contenido de correo no deseado de todo el sistema a fin de permitir que pase el mensaje.
   
-Los administradores pueden revisar más información de configuración de correo no deseado que se aplica a toda la organización. Vea [Cómo ayudar a garantizar que un mensaje no se marque como correo no deseado](https://go.microsoft.com/fwlink/p/?LinkId=534224). Esta información es útil si tiene control de nivel de administrador y desea evitar falsos positivos.
+Los administradores pueden revisar más información de configuración de correo no deseado que se aplica a toda la organización. Vea [Cómo ayudar a garantizar que un mensaje no se marque como correo no deseado](prevent-email-from-being-marked-as-spam.md). Esta información es útil si tiene control de nivel de administrador y desea evitar falsos positivos.
   
 Puede enviar mensajes seguros de las maneras siguientes:
   
@@ -82,7 +82,7 @@ Puede enviar mensajes seguros de las maneras siguientes:
     
   - Los usuarios pueden liberar sus propios mensajes de correo no deseado en cuarentena e identificarlos como falsos positivos a través de los siguientes canales: 
     
-  - la interfaz de usuario del centro de administración de Exchange (EAC). Para más información, vea [Find and Release Quarantined Messages (End Users)](http://technet.microsoft.com/library/e439b560-827a-4807-abd3-6b861c1ff786.aspx).
+  - la interfaz de usuario del centro de administración de Exchange (EAC). Para más información, vea [Find and Release Quarantined Messages (End Users)](find-and-release-quarantined-messages-as-a-user.md).
     
   - Mensajes de notificación de correo no deseado para el usuario final (si están habilitados por el administrador). 
     
@@ -118,10 +118,10 @@ La evaluación del correo no deseado es un proceso continuo que se aplica indepe
 ## <a name="for-more-information"></a>Más información
 <a name="sectionSection4"> </a>
 
-[Protección contra correo no deseado y malware](http://technet.microsoft.com/library/93c6c227-7442-4293-b64d-ec8f15c928db.aspx)
+[Protección contra correo no deseado y malware](anti-spam-and-anti-malware-protection.md)
   
-[Cómo ayudar a garantizar que un mensaje no se marque como correo no deseado](https://go.microsoft.com/fwlink/p/?LinkId=534224)
+[Cómo ayudar a garantizar que un mensaje no se marque como correo no deseado](prevent-email-from-being-marked-as-spam.md)
   
-[Bloquear el correo no deseado con el filtro de correo no deseado de Office 365 para evitar problemas de negativos falsos](https://go.microsoft.com/fwlink/p/?LinkId=534225)
+[Bloquear el correo no deseado con el filtro de correo no deseado de Office 365 para evitar problemas de negativos falsos](reduce-spam-email.md)
   
 

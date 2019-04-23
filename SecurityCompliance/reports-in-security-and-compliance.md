@@ -12,11 +12,11 @@ localization_priority: Normal
 ms.assetid: 7acd33ce-1ec8-49fb-b625-43bac7b58c5a
 description: 'Use el centro de seguridad & cumplimiento para obtener varios informes para su organización de SharePoint Online y Exchange Online, además de informes de Azure Active Directory.  '
 ms.openlocfilehash: b902ce8e44e20fdb9e5fc22189ca07b6168be329
-ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31813921"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958271"
 ---
 # <a name="reports-in-the-security--compliance-center"></a>Informes en el Centro de seguridad y cumplimiento
 
@@ -51,7 +51,7 @@ En la página **ver informes** , puede ver los siguientes tipos de informes:
 
 En la tabla siguiente se describen los informes en la sección **Auditoría** de la página **ver informes** en el centro de seguridad & cumplimiento. 
   
-|**Informe**|**Descripción**|
+|**Informe**|**Descripción**|
 |:-----|:-----|
 |**Informe de registro de auditoría de Office 365** <br/> |Puede buscar en el registro de auditoría de Office 365 la actividad de usuario y de administrador de su organización de Office 365. El informe contiene entradas actividad de usuario y administrador de Exchange Online, SharePoint Online, OneDrive para la empresa y Azure Active Directory, que es el servicio de directorio para Office 365. Para obtener más información, vea [Buscar en el registro de auditoría en el Office 365](search-the-audit-log-in-security-and-compliance.md).  <br/> |
 |**Informes de Azure AD** <br/> |Para buscar actividad de inicio de sesión sospechoso o inusual en su organización de Office 365, puede usar los informes de actividad y de inicio de sesión en Microsoft Azure. También puede ver eventos en el registro de auditoría de Azure AD. Para ver los informes en Azure, solo tiene que hacer clic en **ver informes de Azure ad**. Para más información, visite: <br/><br/>[Use su suscripción gratuita de Azure Active Directory en Office 365](use-your-free-azure-ad-subscription-in-office-365.md). <br/> [Ver los informes de acceso y uso](http://go.microsoft.com/fwlink/p/?LinkId=506902).  <br/> |

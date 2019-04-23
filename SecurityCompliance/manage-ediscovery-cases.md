@@ -11,11 +11,11 @@ localization_priority: Normal
 ms.assetid: 9a00b9ea-33fd-4772-8ea6-9d3c65e829e6
 description: Use el centro de seguridad & cumplimiento para crear suspensiones de eDiscovery y para tener acceso y administrar casos de eDiscovery en su organización.
 ms.openlocfilehash: 209f31187ad01ffa3e06cf8a5825c4538715fc7d
-ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31814141"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958551"
 ---
 # <a name="manage-ediscovery-cases-in-the-security--compliance-center"></a>Administrar casos de exhibición de documentos electrónicos en el Centro de seguridad y cumplimiento
 
@@ -25,7 +25,7 @@ Un caso de exhibición de documentos electrónicos permite agregar miembros a un
   
 Use el siguiente flujo de trabajo para configurar y usar casos de eDiscovery en el centro de seguridad & cumplimiento y en la exhibición avanzada de documentos electrónicos.
   
-[Paso 1: Asignar permisos de exhibición de documentos electrónicos a posibles miembros del caso](manage-ediscovery-cases.md#step1_1)
+[Step 1: Assign eDiscovery permissions to potential case members](manage-ediscovery-cases.md#step1_1)
   
 [Paso 2: crear un nuevo caso](manage-ediscovery-cases.md#step2_1)
   

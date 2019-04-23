@@ -14,12 +14,12 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 26af16df-34cd-4f4a-b893-bc1d2e74039e
 description: 'Use la nueva característica de importación inteligente en el servicio de importación de Office 365 para filtrar los elementos que realmente se importan a los buzones de correo de destino. La importación inteligente le permite decidir de forma proactiva qué datos importar y qué dejar detrás. La importación inteligente también proporciona información sobre los datos que va a importar a Office 365. '
-ms.openlocfilehash: 33a29c74e3d57a90ae552f6dee72047943698cab
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 41910fe02b2ffaf95252ca41b0120f76c7619dc0
+ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999483"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "31958591"
 ---
 # <a name="filter-data-when-importing-pst-files-to-office-365"></a>Filtrar datos al importar archivos PST a Office 365
 
@@ -59,7 +59,7 @@ En el gráfico siguiente se muestra el proceso de importación inteligente y se 
 
 Después de crear un trabajo de importación de PST, siga estos pasos para filtrar los datos antes de importarlos a Office 365.
   
-1. Vaya a [https://compliance.microsoft.com/](https://compliance.microsoft.com/) e inicie sesión con las credenciales de una cuenta de administrador en la organización de Office 365. 
+1. Vaya a [https://protection.office.com/](https://protection.office.com/) e inicie sesión con las credenciales de una cuenta de administrador en la organización de Office 365. 
     
 2. Haga clic en **importación**de **gobierno** \> de datos.
     
