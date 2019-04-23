@@ -254,7 +254,7 @@
 ### [Usar búsqueda de contenido para buscar datos de terceros](use-content-search-to-search-third-party-data-that-was-imported.md)
 ### [Usar Búsqueda de contenido en el flujo de trabajo de eDiscovery](use-content-search-in-ediscovery.md)
 ### [Comprobar errores en la consulta de búsqueda de contenido](check-your-content-search-query-for-errors.md)
-### [Conservar los destinatarios CCO de la búsqueda de contenido](https://docs.microsoft.com/exchange/policy-and-compliance/holds/preserve-bcc-recipients-and-group-members)
+### [Conservar los destinatarios CCO de la búsqueda de contenido](preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md)
 ## Comprender la búsqueda de contenido
 ### [Límites de búsqueda de contenido](limits-for-content-search.md)
 ### [Elementos parcialmente indizados en la búsqueda de contenido](partially-indexed-items-in-content-search.md)
@@ -286,6 +286,7 @@
 ### [Eliminar elementos de la carpeta de elementos recuperables de buzones en retención en la nube](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md)
 ### [Aumentar la cuota de elementos recuperables para los buzones de correo en retención](increase-the-recoverable-quota-for-mailboxes-on-hold.md)
 ### [Cómo identificar el tipo de retención en un buzón de Exchange Online](identify-a-hold-on-an-exchange-online-mailbox.md)
+### [Preservar CCO y los destinatarios del grupo de distribución expandido](preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md)
 
 ## [eDiscovery avanzado (versión preliminar) de Microsoft 365](compliance20/overview-ediscovery-20.md)
 ### [Notas de la versión](compliance20/release-notes-ediscovery20.md)
@@ -314,13 +315,14 @@
 #### [Estadísticas de búsqueda](compliance20/search-statistics.md)
 #### [Agregar los resultados de búsqueda a un conjunto de trabajo](compliance20/add-data-to-working-set.md)
 
+### [Administrar espacios de trabajo](compliance20/managing-working-sets.md)
+#### [Cargar datos que no son de Office 365 a un conjunto de trabajo](compliance20/load-non-office365-data.md)
+#### [Agregar datos a otro espacio de trabajo](compliance20/add-data-to-working-set-from-another-working-set.md)
+#### [Administrar conjuntos de carga](compliance20/manage-load-sets.md)
+
 ### [Revisar los datos de casos](compliance20/reviewing-data-in-working-set.md)
 #### [Ver documentos de un espacio de trabajo](compliance20/view-documents-in-working-set.md)
 #### [Consultar los datos de un espacio de trabajo](compliance20/working-set-search.md)
-#### [Administrar espacios de trabajo](compliance20/managing-working-sets.md)
-#### [Agregar datos a otro espacio de trabajo](compliance20/add-data-to-working-set-from-another-working-set.md)
-#### [Administrar conjuntos de carga](compliance20/manage-load-sets.md)
-#### [Cargar datos que no son de Office 365 a un conjunto de trabajo](compliance20/load-non-office365-data.md)
 #### [Etiquetar documentos en un conjunto de trabajo](compliance20/tagging-documents.md)
 
 ### [Analizar datos de casos](compliance20/analyzing-data-in-working-set.md)
@@ -580,7 +582,6 @@
 ### [Inteligencia de flujo de correo en Office 365](mail-flow-intelligence-in-office-365.md)
 ## Retenciones de buzón
 ### [Crear una retención por juicio](create-a-litigation-hold.md)
-### [Conservar los destinatarios de grupos de distribución expandidos y CCO para la exhibición de documentos electrónicos](preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md)
 ### [Colocar una conservación local en un buzón eliminado temporalmente](put-an-in-place-hold-on-a-soft-deleted-mailbox.md)
 ## [Cuarentena](quarantine.md)
 ### [Buscar y liberar mensajes en cuarentena como administrador](find-and-release-quarantined-messages-as-an-administrator.md)
