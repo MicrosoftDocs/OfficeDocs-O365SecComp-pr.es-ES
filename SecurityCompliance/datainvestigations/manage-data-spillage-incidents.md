@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: En este artículo se describe el uso de la nueva herramienta de investigaciones de datos (vista previa) en el centro de seguridad & cumplimiento para administrar un incidente de derrame de datos.
 ms.openlocfilehash: 93a98a4e01df011b789ba2453734f093ad8c19d6
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31030539"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258828"
 ---
 # <a name="manage-a-data-spillage-incident-in-microsoft-365"></a>Administrar un incidente de derrame de datos en Microsoft 365
 
@@ -111,7 +111,7 @@ En la investigación, vaya a **evidence** (ficha) y haga clic en el conjunto de 
 
 Para agrupar documentos y obtener más ayuda para su revisión, haga clic en **administrar evidencias**. En el mosaico **Analytics** , haga clic en **analizar**. De esta forma, se ejecutarán análisis avanzados, como la detección de duplicados, el procesamiento de correo electrónico y el análisis de temas. Para más información, visite:
 
-- [Ejecutar análisis para investigar con mayor rapidez](run-analytics-to-investigate-faster.md)
+- [Ejecutar el análisis para investigar más rápido](run-analytics-to-investigate-faster.md)
 - [Detección de semiduplicados](near-duplicates.md)
 - [Subprocesos de correo electrónico](email-threading.md)
 - [Temas](themes.md)
