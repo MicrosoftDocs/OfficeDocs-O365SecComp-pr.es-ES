@@ -17,11 +17,11 @@ search.appverid:
 - MET150
 description: Determine si su organización va a implementar etiquetas como parte de su plan de RGPD.
 ms.openlocfilehash: 6886adaa09599b32eb2f3084efdea06fd5794af0
-ms.sourcegitcommit: ae7ebae8801a69a825a363443e2676379197de19
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30800302"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32243478"
 ---
 # <a name="architect-a-classification-schema-for-personal-data"></a>Diseño de un esquema de clasificación de datos personales
 

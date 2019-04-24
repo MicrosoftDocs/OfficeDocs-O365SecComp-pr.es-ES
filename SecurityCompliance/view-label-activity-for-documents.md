@@ -14,11 +14,11 @@ search.appverid:
 - MET150
 description: Con el Explorador de actividad de etiquetas en el Centro de seguridad y cumplimiento de Office 365, puede buscar y visualizar rápidamente actividades de etiquetas de todo el contenido en SharePoint OneDrive para la Empresa en los últimos 30 días. Estos son datos en tiempo real que le ofrecen una vista clara de lo que ocurre en el espacio empresarial.
 ms.openlocfilehash: 55888ff2ef8118389a88955a8f4e047170606524
-ms.sourcegitcommit: 799a958fcac643f62dfac6fa04020f2f4758635c
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30997116"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32267353"
 ---
 # <a name="view-label-activity-for-documents"></a>Ver la actividad de etiquetas de documentos
 

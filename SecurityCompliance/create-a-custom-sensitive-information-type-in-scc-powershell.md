@@ -14,11 +14,11 @@ search.appverid:
 - MET150
 description: Aprenda a crear e importar un tipo de información confidencial personalizada para DLP en el Centro de seguridad y cumplimiento.
 ms.openlocfilehash: 7a21b62ddaf4d24793d4479d0d6270a18cc50532
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999843"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32259178"
 ---
 # <a name="create-a-custom-sensitive-information-type-in-security--compliance-center-powershell"></a>Crear un tipo personalizado de información confidencial en PowerShell del Centro de seguridad y cumplimiento
 

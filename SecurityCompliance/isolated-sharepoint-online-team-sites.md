@@ -16,11 +16,11 @@ ms.custom:
 ms.assetid: 71250a04-fd2d-4c3c-a32b-b8a838b19a54
 description: 'Resumen: obtenga información sobre los usos de sitios de grupo de SharePoint Online aislados.'
 ms.openlocfilehash: 17e6fffc72a366d2cbb2c96e2b6bc812d0670e94
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214010"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32253928"
 ---
 # <a name="isolated-sharepoint-online-team-sites"></a>Sitios de grupo de SharePoint Online aislados
 

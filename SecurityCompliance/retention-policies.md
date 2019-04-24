@@ -15,11 +15,11 @@ search.appverid:
 - MET150
 description: Con una directiva de retención, puede decidir de forma proactiva si quiere retener o eliminar contenido, ambos (retener y, a continuación, eliminar el contenido), aplicar una directiva única a la toda la organización o solo a determinadas ubicaciones o usuarios, o aplicar una directiva a todo el contenido o solo a aquel que cumpla ciertas condiciones.
 ms.openlocfilehash: 55680f16e92d33c2cbf612b6aabae1f51778f93a
-ms.sourcegitcommit: 799a958fcac643f62dfac6fa04020f2f4758635c
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30997146"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265222"
 ---
 # <a name="overview-of-retention-policies"></a>Introducción a las directivas de retención
 

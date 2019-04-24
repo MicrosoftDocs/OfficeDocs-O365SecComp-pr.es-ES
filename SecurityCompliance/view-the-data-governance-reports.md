@@ -14,11 +14,11 @@ search.appverid:
 - MET150
 description: Con los informes de gobierno de datos del Centro de seguridad y cumplimiento de Office 365, puede ver rápidamente si las etiquetas se aplican en el contenido del modo previsto.
 ms.openlocfilehash: 5374b54c87aaf79f70be733d626171b196639725
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410885"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32266999"
 ---
 # <a name="view-the-data-governance-reports"></a>Ver los informes de gobierno de datos
 

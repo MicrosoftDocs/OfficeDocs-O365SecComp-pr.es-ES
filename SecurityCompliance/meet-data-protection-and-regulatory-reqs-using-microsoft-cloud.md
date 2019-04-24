@@ -1,7 +1,7 @@
 ---
 title: Usar el Administrador de cumplimiento para satisfacer los requisitos normativos y de protección de datos al usar los Servicios en la nube de Microsoft
-ms.author: markjjo
-author: markjjo
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.audience: Admin
 ms.topic: article
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: El Administrador de cumplimiento del Portal de confianza de servicios de Microsoft proporciona herramientas para realizar un seguimiento, implementar y administrar los controles que permitan a su organización alcanzar el cumplimiento con normas del sector de seguridad y protección de datos (como RGPD, ISO 27001 y 27018, e HIPAA) en relación con los Servicios en la nube de Microsoft, como Office 365 y Microsoft Azure. El Administrador de cumplimiento ayuda a la persona que supervisa la protección de datos y la estrategia de privacidad a administrar el proceso de evaluación de riesgos y cumplimiento de su organización.
-ms.openlocfilehash: bd61920967cfeacbefc09d1347203565617af5a1
-ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
+ms.openlocfilehash: 4f1806b72b2f4fdbf98ffea66b22e39eab03f101
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30900179"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32268351"
 ---
 # <a name="use-compliance-manager-to-help-meet-data-protection-and-regulatory-requirements-when-using-microsoft-cloud-services"></a>Usar el Administrador de cumplimiento para satisfacer los requisitos normativos y de protección de datos al usar los Servicios en la nube de Microsoft
 

@@ -15,11 +15,11 @@ search.appverid:
 - MET150
 description: Las etiquetas de retención de Office 365 ayudan a realizar las acciones adecuadas en el contenido adecuado. Con las etiquetas de retención, puede clasificar los datos de su organización para administrarlos mejor y aplicar reglas de retención basadas en esa clasificación. También puede usar etiquetas de retención para implementar la administración de registros en Office 365.
 ms.openlocfilehash: e13c73e95a2b8bc25df0031a9bd94da4feb54b23
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000823"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32255198"
 ---
 # <a name="overview-of-retention-labels"></a>Introducción a las etiquetas de retención
 

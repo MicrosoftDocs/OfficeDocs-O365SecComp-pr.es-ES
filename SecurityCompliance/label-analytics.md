@@ -15,11 +15,11 @@ search.appverid:
 - MET150
 description: Después de crear sus etiquetas de retención y de confidencialidad, le interesará ver cómo se utilizan en el espacio empresarial. Con el análisis de etiquetas en el Centro de cumplimiento de Microsoft 365 y el Centro de seguridad de Microsoft 365, puede ver rápidamente las etiquetas que más se usan y dónde se aplican
 ms.openlocfilehash: d0289eb79dca04262ef61d58a8e622ae6d7cbe93
-ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30994906"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32254598"
 ---
 # <a name="view-label-usage-with-label-analytics"></a>Ver el uso de etiquetas con el análisis de etiquetas
 

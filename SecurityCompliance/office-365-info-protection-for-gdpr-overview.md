@@ -17,11 +17,11 @@ search.appverid:
 - MET150
 description: Obtenga información general de Office 365 Information Protection para RGPD. Aprenda a descubrir, clasificar, proteger y vigilar los datos personales.
 ms.openlocfilehash: 5f10b8c19a2a0d3fe5ace8bcfe8cf6f64c30308f
-ms.sourcegitcommit: 15983a08a4ae9c2050344172c7e957830ce3867e
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "30373861"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262752"
 ---
 # <a name="overview-of-office-365-information-protection-for-gdpr"></a>Información general de Information Protection de Office 365 para RGPD
 

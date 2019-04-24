@@ -14,11 +14,11 @@ search.appverid:
 - MET150
 description: Cohasset Associates ha validado que, cuando Exchange Online y el Centro de seguridad y cumplimiento se configuran según las recomendaciones, cumplen con los requisitos de almacenamiento relevantes de las normas CFTC 1.31(c)-(d), FINRA 4511 y SEC 17a-4. Puede descargar la evaluación.
 ms.openlocfilehash: 7558770f5a777667bd0e986a3156b39a91f0336e
-ms.sourcegitcommit: 799a958fcac643f62dfac6fa04020f2f4758635c
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30997076"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32263772"
 ---
 # <a name="use-exchange-online-and-the-security--compliance-center-to-comply-with-sec-rule-17a-4"></a>Usar Exchange Online y el Centro de seguridad y cumplimiento para cumplir con la norma SEC 17a-4
 
