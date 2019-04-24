@@ -15,11 +15,11 @@ ms.custom:
 ms.assetid: d1795031-beef-49ea-a6fc-5da5450d320d
 description: 'Resumen: Configure un sitio de grupo de SharePoint Online que esté aislado del resto de la organización en su entorno para desarrollo y pruebas de Office 365.'
 ms.openlocfilehash: 56c10b1a3871014f26a4d2fd98d9b4139d19ac47
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000233"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32254378"
 ---
 # <a name="isolated-sharepoint-online-team-site-devtest-environment"></a>Sitio de grupo de SharePoint Online aislado en su entorno para desarrollo y pruebas
 
@@ -175,7 +175,7 @@ Para crear un sitio de grupo de SharePoint Online para ProyectoX, siga estos pas
     
 13. En el cuadro de diálogo **Compartir**, escriba **Miembros del ProyectoX**, seleccione esta opción y, a continuación, haga clic en **Compartir**.
     
-14. Haga clic en el botón Atrás del explorador.
+14. Haga clic en el botón Volver del explorador.
     
 15. Haga clic en la opción **Propietarios del ProyectoX** de la lista.
     

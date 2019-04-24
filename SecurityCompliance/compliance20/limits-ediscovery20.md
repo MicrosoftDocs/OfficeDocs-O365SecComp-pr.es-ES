@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: ''
-ms.openlocfilehash: 2611205a41b9113c0ca30f787c119806d75f35c8
-ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
+ms.openlocfilehash: ff0be77e0fd6e35c6f0536f8bcfe9384c27d6b58
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30357361"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32243801"
 ---
 # <a name="limits-in-advanced-ediscovery-preview"></a>Límites de eDiscovery avanzado (versión preliminar)
 
@@ -25,25 +25,33 @@ En este artículo se describen los límites de Advanced eDiscovery (versión pre
 
 ## <a name="case-limits"></a>Límites de casos
 
+En la siguiente tabla se enumeran los límites de los casos en eDiscovery avanzado (versión preliminar).
+
+|**Descripción del límite**|**Límite**|
+  |:-----|:-----|
+  |Número máximo de casos.  <br/> |50  <br/> |
+  |Número total de documentos que se pueden agregar a un caso (para todos los conjuntos de trabajo en el caso).  <br/> |1 millón  <br/> |
+  |Tamaño total de archivo por carga.  <br/> |100 GB  <br/> |
+  |Tamaño máximo de un solo archivo.   <br/> |100 MB <sup>1</sup> <br/> |
+  |Número máximo de caracteres extraídos de un solo archivo.  <br/> |10 millones <sup>1</sup> <br/> |
+  |Profundidad de los elementos insertados en un documento.  <br/> |25 <sup>1</sup> <br/> |
+|||
+ > [!NOTE]
+> <sup>1</sup> todos los elementos que superen un solo límite de archivos se mostrarán como errores de procesamiento. 
+
 ## <a name="indexing-limits"></a>Límites de indexación
+
+Contenido disponible próximamente.
 
 ## <a name="search-limits"></a>Límites de búsqueda
 
-## <a name="working-set-limits"></a>Límites del conjunto de trabajo
-
-En la siguiente tabla se enumeran los límites de los conjuntos de trabajo en eDiscovery avanzado (versión preliminar).  Los elementos que excedan los máximos de un solo archivo se mostrarán como errores de procesamiento.
-    
-  |**Descripción del límite**|**Límite**|
-  |:-----|:-----|
-  |Número máximo de conjuntos de trabajo  <br/> |50  <br/> |
-  |Número total de documentos que se pueden recopilar en un caso (para todos los conjuntos de trabajo en el caso)  <br/> |1 millón  <br/> |
-  |Tamaño total de archivo por carga  <br/> |100 GB  <br/> |
-  |Tamaño máximo de un solo archivo   <br/> |100 MB  <br/> |
-  |Número máximo de caracteres extraídos de un único archivo  <br/> |10 millones  <br/> |
-  |Profundidad de los elementos insertados en un documento  <br/> |IVA  <br/> |
-  
+Contenido disponible próximamente.
 
 ## <a name="export-limits"></a>Límites de exportación
 
+Contenido disponible próximamente.
+
 ## <a name="download-limits"></a>Límites de descarga
+
+Contenido disponible próximamente.
 

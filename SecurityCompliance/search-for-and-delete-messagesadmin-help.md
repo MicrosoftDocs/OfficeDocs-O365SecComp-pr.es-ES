@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: 8c36bb03-e716-4fdd-9958-4aa7a2a1db42
 description: Los administradores pueden usar el cmdlet Search-Mailbox para buscar en buzones de usuario y, después, eliminar mensajes de un buzón.
 ms.openlocfilehash: abf7e7f39fe719ecc6c23565e284c01aed8822ee
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693489"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260988"
 ---
 # <a name="search-for-and-delete-messages---admin-help"></a>Buscar y eliminar mensajes: Ayuda para administradores
   

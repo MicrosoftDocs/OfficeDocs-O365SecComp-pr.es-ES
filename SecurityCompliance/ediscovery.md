@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: 143b3ab8-8cb0-4036-a5fc-6536d837bfce
 description: Office 365 ofrece varias herramientas de eDiscovery distintas que puede usar para buscar y conservar contenido que se encuentra en diferentes ubicaciones, como buzones de Exchange, sitios de SharePoint y OneDrive para la empresa, grupos de Office 365 y conversaciones de Skype empresarial.
 ms.openlocfilehash: 51ef4e744f2347fe3cdaff757131baf0c5fe83bf
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999763"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256808"
 ---
 # <a name="ediscovery-in-office-365"></a>Exhibición de documentos electrónicos en Office 365
 
@@ -76,7 +76,7 @@ La tabla siguiente contiene vínculos a temas que le ayudarán a usar casos de e
    
 [Return to top](ediscovery.md#top)
   
-## <a name="office-365-advanced-ediscovery"></a>Exhibición de documentos electrónicos avanzada de Office 365
+## <a name="office-365-advanced-ediscovery"></a>eDiscovery avanzado de Office 365
 <a name="advancedediscovery"> </a>
 
 La tabla siguiente contiene vínculos a temas que le ayudarán a obtener información sobre la herramienta eDiscovery avanzado en Office 365 y a usarla.

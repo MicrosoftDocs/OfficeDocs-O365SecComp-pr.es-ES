@@ -16,11 +16,11 @@ search.appverid:
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Use la característica de búsqueda y depuración en el centro de seguridad & cumplimiento de Office 365 para buscar y eliminar un mensaje de correo electrónico de todos los buzones de la organización.
 ms.openlocfilehash: c6fa0d09852016b918375dbff5a19468886d86b3
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000273"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265352"
 ---
 # <a name="search-for-and-delete-email-messages-in-your-office-365-organization---admin-help"></a>Buscar y eliminar mensajes de correo electrónico de su organización de Office 365-ayuda para administradores
 

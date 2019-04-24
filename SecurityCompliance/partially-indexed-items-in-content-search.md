@@ -20,11 +20,11 @@ search.appverid:
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
 description: 'Obtenga información sobre los elementos sin indexar en Exchange y SharePoint que puede incluir en una búsqueda de contenido ejecutada a través del centro de seguridad & cumplimiento. '
 ms.openlocfilehash: da51788b3f017811756c3c07294bf6e2712e2e2c
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999223"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262322"
 ---
 # <a name="partially-indexed-items-in-content-search-in-office-365"></a>Elementos parcialmente indizados en la búsqueda de contenido en Office 365
 

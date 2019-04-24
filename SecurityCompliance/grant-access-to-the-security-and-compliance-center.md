@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: Los usuarios deben tener asignados permisos en el centro de &amp; seguridad y cumplimiento de Office 365 para que puedan administrar cualquiera de sus características de seguridad o cumplimiento.
 ms.openlocfilehash: 08b3781ceb48b9a8d5933a075106d7bd3b9ab17d
-ms.sourcegitcommit: 799a958fcac643f62dfac6fa04020f2f4758635c
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30997244"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32253978"
 ---
 # <a name="give-users-access-to-the-office-365-security-amp-compliance-center"></a>Dar a los usuarios acceso al centro de &amp; seguridad y cumplimiento de Office 365
 

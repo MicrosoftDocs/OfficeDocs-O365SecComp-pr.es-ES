@@ -1,9 +1,8 @@
 ---
-title: Exportar campos de resultados en eDiscovery avanzado de Office 365
+title: Exportar campos de informe en Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 9/14/2017
 ms.audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
@@ -13,14 +12,14 @@ search.appverid:
 - MET150
 ms.assetid: 840a5aff-ecd0-4e56-ad22-fe99bc143687
 description: Describe todos los campos que se incluyen en la exportación de informes para eDiscovery avanzada.
-ms.openlocfilehash: a910fa94a1361e48099ef5792ce93d5934fdccc5
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 36443f6aac70392603acfe6702bcc4fe7a4f4bf3
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216660"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32255468"
 ---
-# <a name="export-report-fields-in-office-365-advanced-ediscovery"></a>Exportar campos de resultados en eDiscovery avanzado de Office 365
+# <a name="export-report-fields-in-office-365-advanced-ediscovery"></a>Exportar campos de informe en Office 365 Advanced eDiscovery
 
 > [!NOTE]
 > Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -31,14 +30,14 @@ En este tema se describen los campos de informe de importación de exhibición d
 
 En la tabla siguiente se enumeran los campos de cada plantilla de exportación.
   
-|**Exportar nombre de campo**|**Grupo**|**Descripción**|**Disponible en plantilla estándar**|**Disponible en todas las plantillas**|
+|**Exportar nombre de campo**|**Group**|**Descripción**|**Disponible en plantilla estándar**|**Disponible en todas las plantillas**|
 |:-----|:-----|:-----|:-----|:-----|
 |Row_number  <br/> |General  <br/> |Número de fila.  <br/> |Sí  <br/> |Sí  <br/> |
 |File_ID  <br/> |General  <br/> |IDENTIFICADOR de archivo.  <br/> |Sí  <br/> |Sí  <br/> |
-|File_class  <br/> |Proceso  <br/> |Clase File.  <br/> |Sí  <br/> |Sí  <br/> |
-|Family_ID  <br/> |Proceso  <br/> |Identificador numérico que se usa para agrupar archivos (por lo general, instancia de correo electrónico y sus datos adjuntos).  <br/> |Sí  <br/> |Sí  <br/> |
-|For_review  <br/> |Proceso  <br/> |Marca para indicar que el campo se incluirá en la exportación para revisión.  <br/> |Sí  <br/> |Sí  <br/> |
-|Native_file_name  <br/> |Proceso  <br/> |Nombre de archivo nativo, sin referencia a la carpeta y la extensión.  <br/> |Sí  <br/> |Sí  <br/> |
+|File_class  <br/> |Procesamiento  <br/> |Clase File.  <br/> |Sí  <br/> |Sí  <br/> |
+|Family_ID  <br/> |Procesamiento  <br/> |Identificador numérico que se usa para agrupar archivos (por lo general, instancia de correo electrónico y sus datos adjuntos).  <br/> |Sí  <br/> |Sí  <br/> |
+|For_review  <br/> |Procesamiento  <br/> |Marca para indicar que el campo se incluirá en la exportación para revisión.  <br/> |Sí  <br/> |Sí  <br/> |
+|Native_file_name  <br/> |Procesamiento  <br/> |Nombre de archivo nativo, sin referencia a la carpeta y la extensión.  <br/> |Sí  <br/> |Sí  <br/> |
 |Administradores  <br/> |General  <br/> |Custodio del archivo.  <br/> |Sí  <br/> |Sí  <br/> |
 |Set_ID  <br/> |Analizar  <br/> |Identificador "ND set" o "email set".  <br/> |Sí  <br/> |Sí  <br/> |
 |Inclusive_type  <br/> |Correo electrónico  <br/> |Indica si el archivo es inclusivo, de acuerdo con los siguientes valores: 0-no inclusive, 1-inclusivo, 2-inclusivo menos, 3-copia inclusiva.  <br/> |Sí  <br/> |Sí  <br/> |
@@ -65,45 +64,45 @@ En la tabla siguiente se enumeran los campos de cada plantilla de exportación.
 |Email_action  <br/> |Correo electrónico  <br/> |Values: según el asunto del correo electrónico: "forward" (para "FW:"), "Reply" (para "RE:") u "Other" (otro texto de asunto).  <br/> |Sí  <br/> |Sí  <br/> |
 |Meeting_Start_Date/hora  <br/> ||Fecha y hora en que se inició un elemento de reunión.  <br/> |Sí  <br/> |Sí  <br/> |
 |Meeting_End_Date/hora  <br/> ||Fecha y hora de finalización de un elemento de reunión.  <br/> |Sí  <br/> |Sí  <br/> |
-|File_relevance_score  <br/> |Coordinación  <br/> |Puntuación de relevancia (0-100). Por problema.  <br/> |Sí  <br/> |Sí  <br/> |
-|Family_relevance_score  <br/> |Coordinación  <br/> |Puntuación de relevancia de familia máxima (0-100). Por problema.  <br/> |Sí  <br/> |Sí  <br/> |
-|Relevance_tag  <br/> |Coordinación  <br/> |Etiquetado del archivo, si el archivo se ha etiquetado manualmente en relevancia. Por problema.  <br/> |Sí  <br/> |Sí  <br/> |
-|Relevance_load_group  <br/> |Coordinación  <br/> |Grupo de carga de relevancia, del archivo especificado, con un campo por problema.  <br/> |Sí  <br/> |Sí  <br/> |
-|Normalized_relevance_score  <br/> |Coordinación  <br/> |Puntuación de relevancia normalizada (0-100), que es comparable entre problemas y cargas.  <br/> |Sí  <br/> |Sí  <br/> |
-|Marked_as_seed  <br/> |Coordinación  <br/> |Etiquetado del archivo, si se estableció como un archivo de inicialización en relevancia por problema o categoría.  <br/> |Sí  <br/> |Sí  <br/> |
-|Marked_as_pre-etiquetada  <br/> |Coordinación  <br/> |Etiquetado del archivo, si se estableció con una etiqueta predefinida en la relevancia por problema/categoría.  <br/> |Sí  <br/> |Sí  <br/> |
-|Relevance_status_description  <br/> |Coordinación  <br/> |Descripción del estado de relevancia.  <br/> |Sí  <br/> |Sí  <br/> |
-|Comentario  <br/> |General  <br/> |Comentario escrito por el usuario.  <br/> |Sí  <br/> |Sí  <br/> |
-|Export_input_path  <br/> |Proceso  <br/> |Exportar ruta de acceso de entrada.  <br/> |Sí  <br/> |Sí  <br/> |
+|File_relevance_score  <br/> |Relevancia  <br/> |Puntuación de relevancia (0-100). Por problema.  <br/> |Sí  <br/> |Sí  <br/> |
+|Family_relevance_score  <br/> |Relevancia  <br/> |Puntuación de relevancia de familia máxima (0-100). Por problema.  <br/> |Sí  <br/> |Sí  <br/> |
+|Relevance_tag  <br/> |Relevancia  <br/> |Etiquetado del archivo, si el archivo se ha etiquetado manualmente en relevancia. Por problema.  <br/> |Sí  <br/> |Sí  <br/> |
+|Relevance_load_group  <br/> |Relevancia  <br/> |Grupo de carga de relevancia, del archivo especificado, con un campo por problema.  <br/> |Sí  <br/> |Sí  <br/> |
+|Normalized_relevance_score  <br/> |Relevancia  <br/> |Puntuación de relevancia normalizada (0-100), que es comparable entre problemas y cargas.  <br/> |Sí  <br/> |Sí  <br/> |
+|Marked_as_seed  <br/> |Relevancia  <br/> |Etiquetado del archivo, si se estableció como un archivo de inicialización en relevancia por problema o categoría.  <br/> |Sí  <br/> |Sí  <br/> |
+|Marked_as_pre-etiquetada  <br/> |Relevancia  <br/> |Etiquetado del archivo, si se estableció con una etiqueta predefinida en la relevancia por problema/categoría.  <br/> |Sí  <br/> |Sí  <br/> |
+|Relevance_status_description  <br/> |Relevancia  <br/> |Descripción del estado de relevancia.  <br/> |Sí  <br/> |Sí  <br/> |
+|Comment  <br/> |General  <br/> |Comentario escrito por el usuario.  <br/> |Sí  <br/> |Sí  <br/> |
+|Export_input_path  <br/> |Procesamiento  <br/> |Exportar ruta de acceso de entrada.  <br/> |Sí  <br/> |Sí  <br/> |
 |Pivot_ID  <br/> |Duplicados Near  <br/> |IDENTIFICADOR de tabla dinámica del archivo.  <br/> |Sí  <br/> |Sí  <br/> |
-|Family_size  <br/> |Proceso  <br/> |Número de archivos en una familia.  <br/> |Sí  <br/> |Sí  <br/> |
-|Native_type  <br/> |Proceso  <br/> |Tipo de archivo nativo. Por ejemplo, hoja de cálculo o presentación.  <br/> |Sí  <br/> |Sí  <br/> |
-|Native_MD5  <br/> |Proceso  <br/> |Valor hash MD5 del archivo nativo.  <br/> |Sí  <br/> |Sí  <br/> |
-|Native_size  <br/> |Proceso  <br/> |Tamaño de archivo nativo.  <br/> |Sí  <br/> |Sí  <br/> |
-|Native_extension  <br/> |Proceso  <br/> |Extensión de archivo nativa.  <br/> |Sí  <br/> |Sí  <br/> |
+|Family_size  <br/> |Procesamiento  <br/> |Número de archivos en una familia.  <br/> |Sí  <br/> |Sí  <br/> |
+|Native_type  <br/> |Procesamiento  <br/> |Tipo de archivo nativo. Por ejemplo, hoja de cálculo o presentación.  <br/> |Sí  <br/> |Sí  <br/> |
+|Native_MD5  <br/> |Procesamiento  <br/> |Valor hash MD5 del archivo nativo.  <br/> |Sí  <br/> |Sí  <br/> |
+|Native_size  <br/> |Procesamiento  <br/> |Tamaño de archivo nativo.  <br/> |Sí  <br/> |Sí  <br/> |
+|Native_extension  <br/> |Procesamiento  <br/> |Extensión de archivo nativa.  <br/> |Sí  <br/> |Sí  <br/> |
 |Doc_date_modified  <br/> |Propiedades del documento  <br/> |Fecha en que se modificó el archivo nativo, tomado de los metadatos del archivo.  <br/> |Sí  <br/> |Sí  <br/> |
 |Doc_date_created  <br/> |Propiedades del documento  <br/> |Fecha en que se creó el archivo nativo, tomado de los metadatos del archivo.  <br/> |Sí  <br/> |Sí  <br/> |
 |Doc_modified_by  <br/> |Propiedades del documento  <br/> |Usuario que modificó el archivo nativo, tomado de los metadatos del archivo.  <br/> |Sí  <br/> |Sí  <br/> |
 |O365_date_modified  <br/> |Propiedades del documento  <br/> |Fecha en que se modificó el archivo nativo, tomado de los campos de SharePoint o Exchange.  <br/> |Sí  <br/> |Sí  <br/> |
 |O365_date_created  <br/> |Propiedades del documento  <br/> |Fecha en que se creó el archivo nativo, tomado de los campos de SharePoint o de Exchange.  <br/> |Sí  <br/> |Sí  <br/> |
 |O365_modified_by  <br/> |Propiedades del documento  <br/> |Usuario que modificó por última vez el archivo nativo, tomado de los campos de SharePoint o Exchange.  <br/> |Sí  <br/> |Sí  <br/> |
-|Compound_path  <br/> |Proceso  <br/> |Ruta de acceso al archivo nativo, incluido su origen compuesto.  <br/> |Sí  <br/> |Sí  <br/> |
-|Input_path  <br/> |Proceso  <br/> |Ruta de acceso del archivo de entrada.  <br/> |Sí  <br/> |Sí  <br/> |
-|Input_date_modified  <br/> |Proceso  <br/> |Fecha en que se modificó el archivo de entrada por última vez.  <br/> |Sí  <br/> |Sí  <br/> |
+|Compound_path  <br/> |Procesamiento  <br/> |Ruta de acceso al archivo nativo, incluido su origen compuesto.  <br/> |Sí  <br/> |Sí  <br/> |
+|Input_path  <br/> |Procesamiento  <br/> |Ruta de acceso del archivo de entrada.  <br/> |Sí  <br/> |Sí  <br/> |
+|Input_date_modified  <br/> |Procesamiento  <br/> |Fecha en que se modificó el archivo de entrada por última vez.  <br/> |Sí  <br/> |Sí  <br/> |
 |ND_ET_sort_excl_attach  <br/> |Analizar  <br/> |Concatenación de los conjuntos de correo electrónico y ND configurados para revisión. "D" se agrega como prefijo a los conjuntos de ND y "E" se agrega a email ssets.  <br/> |Sí  <br/> |Sí  <br/> |
 |ND_ET_sort_incl_attach  <br/> |Analizar  <br/> |La concatenación de un conjunto de correo electrónico y el de ND para revisión se agregan como prefijo a los conjuntos de ND y se agrega ' E ' a los conjuntos de correo electrónico. Además, cada correo electrónico de un Email_set va seguido de los datos adjuntos correspondientes.  <br/> |Sí  <br/> |Sí  <br/> |
 |Deduped_custodians  <br/> |General  <br/> |Custodios de archivos de desduplicación  <br/> |Sí  <br/> |Sí  <br/> |
 |Deduped_file_IDs  <br/> |General  <br/> |Identificadores de archivos de desduplicación  <br/> |Sí  <br/> |Sí  <br/> |
 |Deduped_paths  <br/> |General  <br/> |Rutas de archivos de desduplicación  <br/> |Sí  <br/> |Sí  <br/> |
 |File_key  <br/> |General  <br/> |Identificador interno para uso futuro.  <br/> |Sí  <br/> |Sí  <br/> |
-|Export_native_path  <br/> |Proceso  <br/> |Ruta de acceso al archivo nativo en el paquete de exportación.  <br/> |Sí  <br/> |Sí  <br/> |
-|Extracted_text_path  <br/> |Proceso  <br/> |Ruta de acceso del archivo extraído.  <br/> |Sí  <br/> |Sí  <br/> |
-|Process_batch  <br/> |Proceso  <br/> |Identificador de lote del lote de importación.  <br/> |Sí  <br/> |Sí  <br/> |
-|Process_status_ID  <br/> |Proceso  <br/> |Identificador que representa el estado de fase de proceso.  <br/> |Sí  <br/> |Sí  <br/> |
-|Process_status_description  <br/> |Proceso  <br/> |Descripción del estado de fase de proceso: descripción correcta o error.  <br/> |Sí  <br/> |Sí  <br/> |
-|Export_status_ID  <br/> |Proceso  <br/> |IDENTIFICADOR del estado de exportación.  <br/> |Sí  <br/> |Sí  <br/> |
-|Export_status_description  <br/> |Proceso  <br/> |Descripción del estado de exportación; Descripción de éxito o error.  <br/> |Sí  <br/> |Sí  <br/> |
-|Read_percent  <br/> |Coordinación  <br/> |% De lectura (0-100). Por problema.  <br/> |Sí  <br/> |Sí  <br/> |
+|Export_native_path  <br/> |Procesamiento  <br/> |Ruta de acceso al archivo nativo en el paquete de exportación.  <br/> |Sí  <br/> |Sí  <br/> |
+|Extracted_text_path  <br/> |Procesamiento  <br/> |Ruta de acceso del archivo extraído.  <br/> |Sí  <br/> |Sí  <br/> |
+|Process_batch  <br/> |Procesamiento  <br/> |Identificador de lote del lote de importación.  <br/> |Sí  <br/> |Sí  <br/> |
+|Process_status_ID  <br/> |Procesamiento  <br/> |Identificador que representa el estado de fase de proceso.  <br/> |Sí  <br/> |Sí  <br/> |
+|Process_status_description  <br/> |Procesamiento  <br/> |Descripción del estado de fase de proceso: descripción correcta o error.  <br/> |Sí  <br/> |Sí  <br/> |
+|Export_status_ID  <br/> |Procesamiento  <br/> |IDENTIFICADOR del estado de exportación.  <br/> |Sí  <br/> |Sí  <br/> |
+|Export_status_description  <br/> |Procesamiento  <br/> |Descripción del estado de exportación; Descripción de éxito o error.  <br/> |Sí  <br/> |Sí  <br/> |
+|Read_percent  <br/> |Relevancia  <br/> |% De lectura (0-100). Por problema.  <br/> |Sí  <br/> |Sí  <br/> |
 |Doc_author  <br/> |Propiedades del documento  <br/> |Propiedades del documento: autor.  <br/> |No  <br/> |Sí  <br/> |
 |Doc_comments  <br/> |Propiedades del documento  <br/> |Propiedades del documento: Comentarios.  <br/> |No  <br/> |Sí  <br/> |
 |Doc_keywords  <br/> |Propiedades del documento  <br/> |Propiedades del documento: Palabras clave.  <br/> |No  <br/> |Sí  <br/> |
@@ -118,18 +117,18 @@ En la tabla siguiente se enumeran los campos de cada plantilla de exportación.
 |Email_recipients  <br/> |Correo electrónico  <br/> |Nombre y/o direcciones de los destinatarios de correo electrónico (para, CC y CCO).  <br/> |No  <br/> |Sí  <br/> |
 |Email_security  <br/> |Correo electrónico  <br/> |Propiedad de seguridad del correo electrónico.  <br/> |No  <br/> |Sí  <br/> |
 |Email_sensitivity  <br/> |Correo electrónico  <br/> |Propiedad Sensitivity email.  <br/> |No  <br/> |Sí  <br/> |
-|Export_batch  <br/> |Proceso  <br/> |Último nombre del lote de exportación del archivo.  <br/> |No  <br/> |Sí  <br/> |
-|Export_session  <br/> |Proceso  <br/> |Último identificador de sesión de exportación del archivo, incluida la fecha.  <br/> |No  <br/> |Sí  <br/> |
-|Extracted_text_length  <br/> |Proceso  <br/> |Longitud de caracteres del archivo de texto exTraído.  <br/> |No  <br/> |Sí  <br/> |
-|Family_duplicate_set  <br/> |Proceso  <br/> |Identificador numérico de las familias que son duplicados de texto exactos (respectivamente, todos los miembros de las familias son duplicados exactos).  <br/> |No  <br/> |Sí  <br/> |
-|Has_Text  <br/> |Proceso  <br/> |Indica si hay un texto en el archivo: 0-no; 1: sí.  <br/> |No  <br/> |Sí  <br/> |
-|Input_file_ID  <br/> |Proceso  <br/> |IDENTIFICADOR del archivo de entrada desde el que se ha extraído el archivo.  <br/> |No  <br/> |Sí  <br/> |
-|Native_SHA_256  <br/> |Proceso  <br/> |El valor hash de SHA-256 del archivo nativo.  <br/> |No  <br/> |Sí  <br/> |
+|Export_batch  <br/> |Procesamiento  <br/> |Último nombre del lote de exportación del archivo.  <br/> |No  <br/> |Sí  <br/> |
+|Export_session  <br/> |Procesamiento  <br/> |Último identificador de sesión de exportación del archivo, incluida la fecha.  <br/> |No  <br/> |Sí  <br/> |
+|Extracted_text_length  <br/> |Procesamiento  <br/> |Longitud de caracteres del archivo de texto exTraído.  <br/> |No  <br/> |Sí  <br/> |
+|Family_duplicate_set  <br/> |Procesamiento  <br/> |Identificador numérico de las familias que son duplicados de texto exactos (respectivamente, todos los miembros de las familias son duplicados exactos).  <br/> |No  <br/> |Sí  <br/> |
+|Has_Text  <br/> |Procesamiento  <br/> |Indica si hay un texto en el archivo: 0-no; 1: sí.  <br/> |No  <br/> |Sí  <br/> |
+|Input_file_ID  <br/> |Procesamiento  <br/> |IDENTIFICADOR del archivo de entrada desde el que se ha extraído el archivo.  <br/> |No  <br/> |Sí  <br/> |
+|Native_SHA_256  <br/> |Procesamiento  <br/> |El valor hash de SHA-256 del archivo nativo.  <br/> |No  <br/> |Sí  <br/> |
 |O365_authors  <br/> |Propiedades del documento  <br/> |Usuarios que modificaron el archivo nativo, tomando como parte de los campos de SharePoint o Exchange.  <br/> |No  <br/> |Sí  <br/> |
 |O365_created_by  <br/> |Propiedades del documento  <br/> |Usuario que ha creado un archivo nativo, tomado de los campos de SharePoint o de Exchange.  <br/> |No  <br/> |Sí  <br/> |
 |Parent_node  <br/> |Correo electrónico  <br/> |Relaciona un nodo de un subproceso de correo electrónico con el nodo primario más cercano que no es un vínculo que falta.  <br/> |No  <br/> |Sí  <br/> |
 |Set_order_inclusives_first  <br/> |Correo electrónico  <br/> |Mensajes de correo electrónico y datos adjuntos: contador orden cronológico (inclusive en primer lugar). Documentos: pivotes primero y resto por puntuación de similitud, descendente.  <br/> |No  <br/> |Sí  <br/> |
-|Tagged_By  <br/> |Coordinación  <br/> |Usuario que etiquetó el archivo en relevancia para el problema específico.  <br/> |No  <br/> |Sí  <br/> |
+|Tagged_By  <br/> |Relevancia  <br/> |Usuario que etiquetó el archivo en relevancia para el problema específico.  <br/> |No  <br/> |Sí  <br/> |
 |Word_count  <br/> |Analizar  <br/> |Número de palabras del documento.  <br/> |No  <br/> |Sí  <br/> |
 |||||||||||
 ||||||

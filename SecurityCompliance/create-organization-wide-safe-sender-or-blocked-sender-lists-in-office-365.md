@@ -13,11 +13,11 @@ search.appverid:
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 description: Si desea asegurarse de que recibe el correo de un remitente determinado, ya que confía en ellos y sus mensajes, puede ajustar la lista de permitidos en una directiva de filtro de correo no deseado en el centro de administración de Exchange.
 ms.openlocfilehash: 765660ba8c0c9ab384368a0f0c4cd194e4ff2bc6
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693279"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258178"
 ---
 # <a name="create-organization-wide-safe-sender-or-blocked-sender-lists-in-office-365"></a>Crear listas de remitentes bloqueados o seguros para toda la organización en Office 365
   
@@ -67,7 +67,7 @@ Para otras tareas de administración relacionadas con las reglas de flujo de cor
 - Para obtener información acerca de los métodos abreviados de teclado aplicables a los procedimientos de este tema, consulte **Métodos abreviados de teclado en el Centro de administración de Exchange**.
     
 > [!TIP]
-> ¿Tiene algún problema? Solicite ayuda en los foros de Exchange. Visite los foros en [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542)o [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
+> ¿Problemas? Solicite ayuda en los foros de Exchange. Visite los foros en [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612), [Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542)o [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
   
 ## <a name="use-the-eac-to-create-a-mail-flow-rule-to-bypass-spam-filtering-for-a-domain-or-user"></a>Usar el EAC para crear una regla de flujo de correo para omitir el filtrado de correo no deseado para un dominio o usuario
 

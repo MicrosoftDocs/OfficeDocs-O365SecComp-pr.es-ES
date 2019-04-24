@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: ¿Recibe un mensaje de error cuando intenta enviar un correo electrónico a un destinatario cuya dirección de correo electrónico está en Office 365? Si cree que no debería recibir este mensaje de error, use el portal de eliminación de la lista para quitarse de la lista de remitentes bloqueados de Office 365.
 ms.openlocfilehash: b63459fe7c3a16486210a7f35de6f5fc23a19b30
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692659"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32243891"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-list"></a>Usar el portal de eliminación de la lista para quitarse de la lista de remitentes bloqueados de Office 365
 

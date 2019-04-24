@@ -12,11 +12,11 @@ ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: df2d1e0f-b476-42c9-aade-4a260b24f193
 description: Use la herramienta de búsqueda de contenido eDiscovery en el centro de seguridad & cumplimiento para encontrar rápidamente el correo electrónico en buzones de Exchange, documentos en sitios de SharePoint y ubicaciones de OneDrive, y conversaciones de mensajería instantánea en Skype empresarial.
 ms.openlocfilehash: fc0bea90ce9cbfc27f894985c7d3083756ab108a
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000973"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261358"
 ---
 # <a name="search-for-content-in-office-365"></a>Buscar contenido en Office 365
 

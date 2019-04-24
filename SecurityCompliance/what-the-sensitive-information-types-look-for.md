@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: La prevención de pérdida de datos (DLP) en el &amp; centro de seguridad y cumplimiento de Office 365 incluye 80 tipos de información confidencial listos para que pueda usarlos en las directivas de DLP. Este tema enumera todos estos tipos de información confidencial y muestra lo que una directiva DLP busca al detectar cada uno de los tipos.
 ms.openlocfilehash: d161435c75149183289cfbfd6abe79d55e371e31
-ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30639197"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32266876"
 ---
 # <a name="what-the-sensitive-information-types-look-for"></a>Qué buscan los tipos de información confidencial
 
@@ -1079,7 +1079,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - Identidad
 - Registro
 - Determinación 
-- Id. 
+- ID 
 - Identiteitskaart
 - Registratie nummer 
 - Identificatie nummer 
@@ -1220,7 +1220,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - Entidades jurídicas 
 - Estado de registro 
 - Empresa 
-- Company
+- Empresa
 - CNPJ 
 - Cadastro Nacional da Pessoa Jurídica 
 - Cadastro Geral de Contribuintes 
@@ -1759,7 +1759,7 @@ Se encuentran al menos dos palabras clave de Keyword_canada_phin o Keyword_canad
 - New Brunswick
 - Nova Scotia
 - Prince Edward Island
-- Canadá
+- Canada
    
 ## <a name="canada-social-insurance-number"></a>Número de seguridad social de Canadá
 
@@ -1895,7 +1895,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 - Número de identificación nacional 
 - tarjeta de identidad 
-- Id. 
+- ID 
 - Determinación 
 - Rol Único Nacional 
 - REALIZAR 
@@ -3325,7 +3325,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 #### <a name="keywordgermanyidcard"></a>Keyword_germany_id_card
 
 - tarjeta de identidad
-- Id.
+- ID
 - Determinación
 - Personalausweis
 - Identifizierungsnummer
@@ -4876,7 +4876,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 #### <a name="keywordsouthafricaidentificationnumber"></a>Keyword_south_africa_identification_number
 
 - tarjeta de identidad
-- Id.
+- ID
 - Determinación 
    
 ## <a name="south-korea-resident-registration-number"></a>Número de registro de residente de Corea del Sur
@@ -5877,7 +5877,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 - DISTRIBUCIÓN 
 - CDL 
 - CDLS 
-- Id. 
+- ID 
 - Falta 
 - LISTAS 
 - DISTRIBUCIÓN 

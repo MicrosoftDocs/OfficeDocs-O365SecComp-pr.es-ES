@@ -11,11 +11,11 @@ ms.collection: M365-security-compliance
 localization_priority: Normal
 description: En este tema se muestra qué busca una directiva de prevención de pérdida de datos (DLP) cuando detecta el número de la seguridad social de la UE o el tipo de información confidencial del identificador equivalente. Este tipo de información confidencial define distintos patrones, palabras clave y otras pruebas para cada país.
 ms.openlocfilehash: c0c808eafa52209c79f3b4e8a2113f587fd8a771
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410805"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32255558"
 ---
 # <a name="eu-social-security-number-or-equivalent-id"></a>Número de la seguridad social de la UE o identificador equivalente
 
@@ -23,7 +23,7 @@ En este tema se muestra qué busca una directiva de prevención de pérdida de d
   
 ## <a name="austria"></a>Austria
 
-### <a name="format"></a>Dé
+### <a name="format"></a>Formato
 
 10 dígitos en el formato especificado
   
@@ -98,7 +98,7 @@ versicherungsnummer
   
 ## <a name="belgium"></a>Bélgica
 
-### <a name="format"></a>Dé
+### <a name="format"></a>Formato
 
 11 dígitos sin espacios ni delimitadores
   
@@ -175,7 +175,7 @@ numéronational #
   
 ## <a name="croatia"></a>Croacia
 
-### <a name="format"></a>Dé
+### <a name="format"></a>Formato
 
 11 dígitos sin espacios y delimitadores
   
@@ -250,7 +250,7 @@ osobni identifikacijski broj
   
 ## <a name="czech-republic"></a>Chequia
 
-### <a name="format"></a>Dé
+### <a name="format"></a>Formato
 
 Diez dígitos y una barra diagonal inversa en el patrón especificado
   
@@ -327,7 +327,7 @@ rodne cislo
   
 ## <a name="denmark"></a>Dinamarca
 
-### <a name="format"></a>Dé
+### <a name="format"></a>Formato
 
 Diez dígitos y un guión en el patrón especificado
   
@@ -398,7 +398,7 @@ personnummer
   
 ## <a name="finland"></a>Finlandia
 
-### <a name="format"></a>Dé
+### <a name="format"></a>Formato
 
 Una combinación de 11 caracteres en el formato especificado
   
@@ -509,7 +509,7 @@ Para obtener más información, consulte la sección "tarjeta de identificación
   
 ## <a name="hungary"></a>Hungría
 
-### <a name="format"></a>Dé
+### <a name="format"></a>Formato
 
 Nueve dígitos sin espacios y delimitadores
   
@@ -594,7 +594,7 @@ Para obtener más información, consulte la sección "número de la seguridad so
   
 ## <a name="sweden"></a>Suecia
 
-### <a name="format"></a>Dé
+### <a name="format"></a>Formato
 
 12 dígitos sin espacios y delimitadores
   

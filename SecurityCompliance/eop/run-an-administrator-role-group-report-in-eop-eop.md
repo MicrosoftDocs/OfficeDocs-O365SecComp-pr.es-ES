@@ -11,11 +11,11 @@ localization_priority: Normal
 ms.assetid: 23b47b57-0eec-46a3-a03b-366ea014ab31
 description: Cuando un administrador agrega o quita miembros de grupos de roles de administrador, Microsoft Exchange Online Protection (EOP) registra todas las ocurrencias.
 ms.openlocfilehash: 752def771d95fcfbb3f7cbe0bc86a33b3967716d
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692719"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256188"
 ---
 # <a name="run-an-administrator-role-group-report-in-eop"></a>Ejecutar un informe de grupo de roles de administrador en EOP 
 
@@ -46,7 +46,7 @@ Ejecute el informe de grupo de roles de administrador para ver los cambios hecho
     
 Si se encuentran cambios con los criterios especificados, aparecerán en el panel de resultados. Haga clic en un grupo de roles de los resultados de la búsqueda para ver los cambios en el panel de detalles.
   
-## <a name="how-do-you-know-this-worked"></a>¿Cómo saber si el proceso se completó correctamente?
+## <a name="how-do-you-know-this-worked"></a>¿Cómo saber si el proceso se ha completado correctamente?
 
 Si se ejecutó correctamente un informe de grupo de roles de administrador, los grupos de roles que cambiaron dentro del intervalo de fechas se muestran en el panel de resultados de la búsqueda. Si no hay resultados, entonces no se hicieron cambios a los grupos de funciones dentro del intervalo de fechas especificado. Si cree que debería haber resultados, cambie el intervalo de fechas y vuelva a ejecutar el informe.
   

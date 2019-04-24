@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: Como administrador global de Office 365, puede usar simulador de ataque para ejecutar escenarios de ataque realistas en su organización. Esto puede ayudarle a identificar y encontrar a los usuarios vulnerables antes de que un ataque real reconozca a su empresa.
 ms.openlocfilehash: 88e71fe2db0ed9149ab84bb99e8b04910afdc265
-ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30862462"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32249734"
 ---
 # <a name="attack-simulator-in-office-365"></a>Simulador de ataques en Office 365
 
@@ -127,7 +127,7 @@ Un ataque de fuerza bruta contra una organización se suele usar después de que
     
 ## <a name="new-features-in-attack-simulator"></a>Nuevas características en el simulador de ataques
 
-Se han agregado nuevas características a simulador de ataque. Entre estos, incluyen los siguientes:
+Se han agregado nuevas características a simulador de ataque. Entre ellos se incluyen:
 
 - **Capacidades avanzadas de generación de informes**. Podrá ver datos como el tiempo más rápido (o más lento) para abrir un mensaje de correo electrónico de simulación de ataque, el tiempo más rápido o más lento para hacer clic en un vínculo del mensaje, y más.
 

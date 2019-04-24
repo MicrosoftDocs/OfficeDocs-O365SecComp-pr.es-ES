@@ -11,11 +11,11 @@ search.appverid:
 - MET150
 description: Como administrador de Office 365, puede revocar determinados mensajes de correo electrónico cifrados con el cifrado de mensajes de Office 365.
 ms.openlocfilehash: 75b5e46e25f447ddac0de5a7911d0df8385da6b9
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214900"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264832"
 ---
 # <a name="office-365-message-encryption-email-revocation"></a>Revocación del correo electrónico de cifrado de mensajes de Office 365
 
@@ -69,7 +69,7 @@ Para comprobar si puede revocar un mensaje de correo electrónico determinado, s
      Get-OMEMessageStatus -MessageId "<messagieid>" | ft -a  Subject, IsRevocable
      ```
 
-   Esto devuelve el asunto del mensaje y si el mensaje es revocable. Por ejemplo,
+   Esto devuelve el asunto del mensaje y si el mensaje es revocable. For example,
 
      ```text
      Subject IsRevocable
@@ -81,7 +81,7 @@ Para comprobar si puede revocar un mensaje de correo electrónico determinado, s
 
 Una vez que conozca el identificador de mensaje del correo electrónico que desea revocar y haya comprobado que el mensaje es revocable, puede revocar el correo electrónico con el cmdlet Set-OMEMessageRevocation.
 
-1. [Conexión a PowerShell de Exchange Online](https://aka.ms/exopowershell).
+1. [Conexión al PowerShell de Exchange Online](https://aka.ms/exopowershell).
 
 2. Ejecute el cmdlet Set-OMEMessageRevocation de la siguiente manera:
 

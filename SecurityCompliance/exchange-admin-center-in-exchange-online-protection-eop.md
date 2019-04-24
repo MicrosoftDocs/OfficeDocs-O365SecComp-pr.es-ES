@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: El Centro de administración de Exchange (EAC) es la consola de administración basada en web para Microsoft Exchange Online Protection (EOP).
 ms.openlocfilehash: 983f6fe6b9f1592115e524315c9e52e08fed5101
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693449"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256008"
 ---
 # <a name="exchange-admin-center-in-exchange-online-protection"></a>Centro de administración de Exchange en Exchange Online Protection  
 
@@ -126,7 +126,7 @@ Los siguientes idiomas están disponibles y son compatibles con Exchange Online 
     
 - Neerlandés
     
-- Holandés
+- Neerlandés
     
 - Inglés
     
@@ -134,7 +134,7 @@ Los siguientes idiomas están disponibles y son compatibles con Exchange Online 
     
 - Filipino (Filipinas)
     
-- Finlandés
+- Finés
     
 - Francés
     
@@ -200,7 +200,7 @@ Los siguientes idiomas están disponibles y son compatibles con Exchange Online 
     
 - Serbio (cirílico, Serbia)
     
-- Serbio (Latín)
+- Serbio (latino)
     
 - Eslovaco
     

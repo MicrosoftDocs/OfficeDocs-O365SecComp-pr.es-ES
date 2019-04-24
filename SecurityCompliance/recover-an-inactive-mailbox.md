@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: 35d0ecdb-7cb0-44be-ad5c-69df2f8f8b25
 description: 'Si un antiguo empleado vuelve a su organización, o si se contrata a un nuevo empleado para que realice las responsabilidades laborales de un empleado que ya no está en parte, puede recuperar el contenido del buzón inactivo en Office 365. Al recuperar un buzón inactivo, se convierte en un nuevo buzón que contiene el contenido del buzón inactivo. '
 ms.openlocfilehash: c7f942c518dcc74a4bdb37d67e27e8a63879ab46
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999823"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261548"
 ---
 # <a name="recover-an-inactive-mailbox-in-office-365"></a>Recuperar un buzón inactivo en Office 365
 

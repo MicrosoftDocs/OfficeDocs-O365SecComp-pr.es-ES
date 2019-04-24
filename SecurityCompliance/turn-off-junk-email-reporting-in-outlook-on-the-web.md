@@ -12,24 +12,24 @@ ms.collection:
 - M365-security-compliance
 description: Como administrador de Office 365, puede desactivar la posibilidad de que los usuarios notifiquen el correo electrónico como correo no deseado.
 ms.openlocfilehash: f3e8a8cf837e7923d3c7241852ab2acd375492b8
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692559"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264172"
 ---
 # <a name="turn-off-junk-email-reporting-in-outlook-on-the-web"></a>Desactivar la creación de informes de correo no deseado en Outlook en la web
 
 Puede enviar mensajes de correo no deseado, de suplantación de identidad (phishing) y de correo no deseado a Microsoft para su análisis con la opción de informes de correo no deseado de Outlook en la web (anteriormente conocido como Outlook Web App), tal como se describe en [informes de correo no deseado y estafas de suplantación de identidad en Outlook en la web ](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md). Si no quiere usar estas opciones, los administradores pueden desactivarlas mediante el cmdlet [set-OwaMailboxPolicy](http://technet.microsoft.com/library/530166f7-ab42-4609-ba73-9b5a39b567be.aspx) . 
   
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 <a name="sectionSection0"> </a>
 
 - Tiempo estimado para finalizar: 5 minutos
     
 - Deberá tener asignados permisos antes de poder llevar a cabo este procedimiento o procedimientos. Para ver qué permisos necesita, consulte el entrada "directivas de buzones de correo de Outlook en la web" en el tema [Outlook on the Web](http://technet.microsoft.com/library/57eca42a-5a7f-4c65-89f0-7a84f2dbea19.aspx#OutlookWebApp) Permissions. 
 
-- Para conectarse a Exchange Online PowerShell, consulte [conectarse a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+- Para conectarse al PowerShell de Exchange Online, consulte [Conectarse al PowerShell de Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 
 ## <a name="turn-off-junk-phishing-and-not-junk-reporting-to-microsoft"></a>Desactivar los informes de correo no deseado, phishing y no deseados en Microsoft
 <a name="sectionSection1"> </a>

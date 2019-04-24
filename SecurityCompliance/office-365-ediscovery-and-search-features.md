@@ -14,11 +14,11 @@ ms.collection:
 - M365-security-compliance
 description: Información general sobre la característica de exhibición de documentos electrónicos y otras características de búsqueda en Office 365 para auditar el uso y la transparencia.
 ms.openlocfilehash: a7a4412e116fe0cbb28ae1ac193178ac7e3097a3
-ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31004167"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262812"
 ---
 # <a name="ediscovery-and-search-features"></a>Características de búsqueda y eDiscovery 
 
@@ -43,7 +43,7 @@ En la tabla siguiente se detalla parte de la información que se muestra en los 
 | ClientIP | Dirección IPv4 o IPv6 del dispositivo que se usó cuando se registró la actividad. |
 | CreationTime | Fecha y hora en la hora universal coordinada (UTC) cuando el usuario llevó a cabo la actividad. |
 | EventSource | Identifica que se ha producido un evento. Los valores posibles son SharePoint y ObjectModel. |
-| Id. | IDENTIFICADOR de la entrada de informe. El identificador identifica de forma única la entrada del informe. |
+| ID | IDENTIFICADOR de la entrada de informe. El identificador identifica de forma única la entrada del informe. |
 | Operación | Nombre del usuario o actividad, que corresponde al valor seleccionado en la actividad mostrar resultados para este usuario. |
 | OrganizationId | GUID para el servicio Office 365 de la organización en el que se produjo el evento. |
 | UserAgent | Información sobre el explorador del usuario como lo proporciona el explorador. |

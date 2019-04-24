@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: La característica datos adJuntos seguros proporciona comprobación del tiempo de los datos adjuntos de correo electrónico. Usar datos adJuntos seguros para proteger a su organización de archivos malintencionados envíe o reciba mensajes de correo electrónico.
 ms.openlocfilehash: 933a533a6deb52a41d1412e319c6fb6840046390
-ms.sourcegitcommit: 77e45ce4c9b992ec64420f90946bec6077fc73ad
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "31476828"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32250970"
 ---
 # <a name="office-365-atp-safe-attachments"></a>Datos adJuntos seguros de ATP de Office 365
 
@@ -30,7 +30,7 @@ Los datos adJuntos seguros de ATP (junto con [vínculos seguros ATP](atp-safe-li
   
 La protección ATP también se puede ampliar a archivos en SharePoint Online, OneDrive para la empresa y Microsoft Teams. Para obtener más información, consulte [protección contra amenazas avanzada de Office 365 para SharePoint, OneDrive y Microsoft Teams](atp-for-spo-odb-and-teams.md).
 
-## <a name="how-it-works"></a>Funcionamiento
+## <a name="how-it-works"></a>Cómo funciona
 
 La característica de datos adJuntos seguros de ATP comprueba los datos adjuntos del correo electrónico de las personas de su organización. Cuando se implementa una directiva de datos adJuntos seguros de ATP y alguien que cubre esa Directiva ve su correo electrónico en Office 365, se comprueban los datos adjuntos del correo electrónico y se realizan las acciones adecuadas, según las directivas de datos adJuntos seguros de ATP. Según cómo se hayan definido las directivas, los usuarios pueden seguir trabajando sin saber nunca que se les enviaron archivos malintencionados.
   

@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: 9701a024-c52e-43f0-b545-9a53478aec04
 description: Use la característica estadísticas de búsqueda para mostrar y comparar estadísticas de varias búsquedas de contenido en el centro de seguridad & cumplimiento. También puede configurar la lista de palabras clave al crear o editar una consulta de búsqueda para obtener estadísticas mejoradas que muestren el número de elementos que coinciden con cada palabra clave o frase de palabras clave.
 ms.openlocfilehash: 5e4cca18f6a50f2647265f02dab7ab3f20f513fc
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001133"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32267440"
 ---
 # <a name="view-keyword-statistics-for-content-search-results"></a>Ver las estadísticas de palabras clave para resultados de búsqueda de contenido
 

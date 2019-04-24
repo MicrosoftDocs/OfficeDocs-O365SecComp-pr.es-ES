@@ -1,5 +1,5 @@
 ---
-title: Preparar datos para eDiscovery avanzado de Office 365
+title: Preparar datos para Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -12,15 +12,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 2fb94c23-1846-4a0e-994d-da6d02445f15
-description: 'Obtenga información sobre cómo usar el centro de &amp; seguridad y cumplimiento de Office 365 para preparar datos de Office 365 para su análisis con Office 365 Advanced eDiscovery. '
-ms.openlocfilehash: 8ede0f0cb97e1b49297b66fb2b929b3cb292ed52
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+description: 'Obtenga información sobre cómo usar el centro de &amp; seguridad y cumplimiento de Microsoft 365 para preparar datos de Office 365 para el análisis con Office 365 Advanced eDiscovery. '
+ms.openlocfilehash: d9d81c145a86075affd76761eb6dcff0f84a1eac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218800"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265512"
 ---
-# <a name="prepare-data-for-office-365-advanced-ediscovery"></a>Preparar datos para eDiscovery avanzado de Office 365
+# <a name="prepare-data-for-office-365-advanced-ediscovery"></a>Preparar datos para Office 365 Advanced eDiscovery
 
 En este tema se describe cómo cargar los resultados de una búsqueda de contenido en un caso en eDiscovery avanzado. 
   
@@ -29,7 +29,7 @@ En este tema se describe cómo cargar los resultados de una búsqueda de conteni
   
 ## <a name="step-1-prepare-office-365-data-for-advanced-ediscovery"></a>Paso 1: preparar los datos de Office 365 para la exhibición avanzada de documentos electrónicos
 
-Para analizar datos con la exhibición avanzada de documentos electrónicos, puede usar los resultados de una búsqueda de contenido que se ejecuta en &amp; el centro de seguridad y cumplimiento de Office 365 (que aparece en la &amp; página búsqueda de **contenido** en el centro de seguridad y cumplimiento de Office 365) o en una búsqueda. asociado a un caso de exhibición de documentos electrónicos **** (incluido en la página &amp; eDiscovery del centro de seguridad y cumplimiento). 
+Para analizar datos con la exhibición avanzada de documentos electrónicos, puede usar los resultados de una búsqueda de contenido que se ejecuta en &amp; el centro de seguridad y cumplimiento de Microsoft 365 (que aparece en la &amp; página búsqueda de **contenido** en el centro de seguridad y cumplimiento de Microsoft 365) o en un búsqueda asociada a un caso de exhibición de documentos electrónicos **** (que se muestra en &amp; la página eDiscovery del centro de seguridad y cumplimiento). 
   
 Para obtener los pasos detallados sobre cómo preparar los resultados de búsqueda para analizarlos en la exhibición avanzada de documentos electrónicos, vea [preparar los resultados de la búsqueda para Office 365 Advanced eDiscovery](prepare-search-results-for-advanced-ediscovery.md).
   

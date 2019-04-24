@@ -3,7 +3,7 @@ title: El nuevo centro de seguridad 365 de Microsoft y el centro de cumplimiento
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 04/09/2019
+ms.date: 04/22/2019
 ms.audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: Normal
 description: Prepárese para el nuevo centro de seguridad y cumplimiento de Microsoft 365
-ms.openlocfilehash: 36159872bb42230523fac0a2d006fbb35eac18c6
-ms.sourcegitcommit: 48b77ec6fb499175507fc08f11dc9f5efe6c4858
+ms.openlocfilehash: a64c64756f0c4588efcc6e467316b90aa1aabc3f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31518380"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265502"
 ---
 # <a name="the-new-microsoft-365-security-center-and-microsoft-365-compliance-center-are-now-generally-available"></a>El nuevo centro de seguridad 365 de Microsoft y el centro de cumplimiento de Microsoft 365 están disponibles para el público
 
@@ -41,7 +41,7 @@ El nuevo [centro de cumplimiento de microsoft 365](microsoft-365-compliance-cent
 
 Podrá acceder fácilmente a las etiquetas y directivas de confidencialidad y retención, prevención de pérdida de datos (DLP), gobierno de datos, exhibición de documentos electrónicos, solicitudes de sujetos de datos (interesado), administración de casos y Cloud App Security. Además, puede obtener información útil y aprovechar la automatización inteligente para reducir los riesgos de cumplimiento y proteger su información digital. 
 
-[![MCentro de cumplimiento de icrosoft 365](media/m365-compliance-center.png)](microsoft-365-compliance-center.md)
+[![Centro de cumplimiento de Microsoft 365](media/m365-compliance-center.png)](microsoft-365-compliance-center.md)
 
 Cuando use por primera vez el centro de cumplimiento de Microsoft 365, verá información en la parte superior de la pantalla para ayudarle a empezar. Verá cómo desplazarse fácilmente a las características de cumplimiento que tiene más interés en explorar. Para obtener más información, vea [Bienvenido a su nuevo centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center.md).
 
@@ -87,11 +87,13 @@ Los usuarios deben tener asignados el administrador global, el administrador de 
 
 - Los administradores de seguridad, los operadores de seguridad y los lectores de seguridad pueden obtener acceso al centro de seguridad
 
+ Para obtener más información acerca de estos roles, consulte perMissions [in the Office 365 Security _AMP_ Compliance Center](permissions-in-the-security-and-compliance-center.md).
+ 
 En la tabla siguiente se resume quién puede tener acceso a diversos portales en Azure, Office 365 y Windows:
 
 |Portal |Administrador global |Administrador de seguridad, operador de seguridad o lector de seguridad|Administrador de cumplimiento de normas o administrador de datos de cumplimiento |
 |---------|---------|---------|---------|
-|[Centro de seguridad y cumplimiento](https://protection.office.com) |Sí |Sí  |Sí |
+|[Centro de seguridad & cumplimiento](https://protection.office.com) |Sí |Sí  |Sí |
 |[Centro de seguridad de Microsoft 365](https://security.microsoft.com) |Sí  | Sí  | No        |
 |[Centro de cumplimiento de Microsoft 365](https://compliance.microsoft.com) | Sí | No | Sí |
 |[Administrador de cumplimiento](https://aka.ms/compliancemanager) |Sí | Sí |Sí  |
@@ -115,3 +117,5 @@ En la tabla siguiente se resume quién puede tener acceso a diversos portales en
 [Plan de desarrollo de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap)
 
 [Descripción del servicio del centro de cumplimiento de & de seguridad de Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)
+
+Para proporcionar comentarios sobre Microsoft 365 Security Center y Microsoft 365 Compliance Center, como ideas para nuevas características, visite los [comentarios de los clientes de Microsoft Office 365](https://office365.uservoice.com) .

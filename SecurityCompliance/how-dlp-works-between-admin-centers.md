@@ -1,5 +1,5 @@
 ---
-title: Cómo funciona DLP entre el centro de seguridad & cumplimiento y el centro de administración de Exchange
+title: Funcionamiento de DLP entre el Centro de seguridad y cumplimiento y el Centro de administración de Exchange
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -16,13 +16,13 @@ search.appverid:
 ms.assetid: a7e4342a-a0a1-4b43-b166-3d7eecf5d2fd
 description: Obtenga información sobre cómo DLP en el centro de cumplimiento de & de seguridad trabaja con DLP y reglas de flujo de correo (reglas de transporte) en el centro de administración de Exchange.
 ms.openlocfilehash: 66dceb447e02eb01810997c23644c76f68795844
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30639007"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32254938"
 ---
-# <a name="how-dlp-works-between-the-security--compliance-center-and-exchange-admin-center"></a>Cómo funciona DLP entre el centro de seguridad & cumplimiento y el centro de administración de Exchange
+# <a name="how-dlp-works-between-the-security--compliance-center-and-exchange-admin-center"></a>Funcionamiento de DLP entre el Centro de seguridad y cumplimiento y el Centro de administración de Exchange
 
 En Office 365, puede crear una directiva de prevención de pérdida de datos (DLP) en dos centros de administración diferentes:
   

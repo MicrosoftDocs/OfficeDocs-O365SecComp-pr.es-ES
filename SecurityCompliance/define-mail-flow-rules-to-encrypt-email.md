@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: Los administradores pueden aprender a crear reglas de flujo de correo (reglas de transporte) para cifrar y descifrar mensajes mediante el cifrado de mensajes de Office 365.
 ms.openlocfilehash: 1f5b0ff9be5994f036d2367d0b15744c24f2bbe0
-ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30357561"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257708"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages-in-office-365"></a>Definir reglas de flujo de correo para cifrar mensajes de correo electrónico en Office 365
 
@@ -53,11 +53,11 @@ Puede definir reglas de flujo de correo para desencadenar el cifrado de mensajes
 
 5. En **nombre**, escriba un nombre para la regla, como cifrar correo para DrToniRamos@hotmail.com.
 
-6. En **Aplicar esta regla si** seleccione una condición y especifique un valor si es necesario. Por ejemplo, para cifrar los mensajes que se dirigen a DrToniRamos@hotmail.com:
+6. En **aplicar esta regla si** selecciona una condición, escriba un valor si es necesario. Por ejemplo, para cifrar los mensajes dirigidos a DrToniRamos@hotmail.com:
 
-   1. En **Aplicar esta regla si**, seleccione **el destinatario es**.
+   1. En **aplicar esta regla si**, seleccione **el destinatario es**.
 
-   2. Seleccione un nombre existente en la lista de contactos o escriba una nueva dirección de correo electrónico en el cuadro **Comprobar nombres**.
+   2. Seleccione un nombre existente de la lista de contactos o escriba una nueva dirección de correo electrónico en el cuadro **Comprobar nombres** .
 
       - Para seleccionar un nombre existente, selecciónelo en la lista y, a continuación, haga clic en **Aceptar**.
 
@@ -111,11 +111,11 @@ Si todavía no ha movido su organización de Office 365 a las nuevas capacidades
 
 5. En **nombre**, escriba un nombre para la regla, como cifrar correo para DrToniRamos@hotmail.com.
 
-6. En **Aplicar esta regla si** seleccione una condición y especifique un valor si es necesario. Por ejemplo, para cifrar los mensajes que se dirigen a DrToniRamos@hotmail.com:
+6. En **aplicar esta regla si** selecciona una condición, escriba un valor si es necesario. Por ejemplo, para cifrar los mensajes dirigidos a DrToniRamos@hotmail.com:
 
-   1. En **Aplicar esta regla si**, seleccione **el destinatario es**.
+   1. En **aplicar esta regla si**, seleccione **el destinatario es**.
 
-   2. Seleccione un nombre existente en la lista de contactos o escriba una nueva dirección de correo electrónico en el cuadro **Comprobar nombres**.
+   2. Seleccione un nombre existente de la lista de contactos o escriba una nueva dirección de correo electrónico en el cuadro **Comprobar nombres** .
 
       - Para seleccionar un nombre existente, selecciónelo en la lista y, a continuación, haga clic en **Aceptar**.
 
@@ -133,7 +133,7 @@ Si todavía no ha movido su organización de Office 365 a las nuevas capacidades
 
 ### <a name="use-exchange-online-powershell-to-create-a-mail-flow-rule-for-encrypting-email-messages-without-the-new-ome-capabilities"></a>Usar Exchange Online PowerShell para crear una regla de flujo de correo para cifrar mensajes de correo electrónico sin las nuevas funciones OME
 
-1. Conéctese a Exchange Online PowerShell. Para obtener más información, vea [conectarse a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+1. Conexión al PowerShell de Exchange Online. Para obtener más información, vea [Conexión a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 
 2. Cree una regla con el cmdlet **New-TransportRule** y establezca el parámetro _ApplyOME_ en `$true`.
 
@@ -151,7 +151,7 @@ Si todavía no ha movido su organización de Office 365 a las nuevas capacidades
 
    - El parámetro _SentToScope_ especifica la ubicación de los destinatarios del mensaje. En este ejemplo, el buzón de correo del destinatario está en hotmail y no forma parte de la organización de Office 365, `NotInOrganization` por lo que se usa el valor.
 
-   Para obtener la sintaxis detallada e información sobre los parámetros, consulte [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/New-TransportRule).
+   Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/New-TransportRule).
 
 ### <a name="remove-encryption-from-email-replies-encrypted-without-the-new-ome-capabilities"></a>Quitar el cifrado de las respuestas de correo electrónico cifradas sin las nuevas funciones OME
 
@@ -177,7 +177,7 @@ Cuando los usuarios de correo electrónico envían mensajes cifrados, los destin
 
 #### <a name="use-exchange-online-powershell-to-create-a-rule-to-remove-encryption-from-email-replies-encrypted-without-the-new-ome-capabilities"></a>Usar Exchange Online PowerShell para crear una regla para quitar el cifrado de las respuestas de correo electrónico cifradas sin las nuevas funciones de OME
 
-1. Conéctese a Exchange Online PowerShell. Para obtener más información, vea [conectarse a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
+1. Conexión al PowerShell de Exchange Online. Para obtener más información, vea [Conexión a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell).
 
 2. Cree una regla con el cmdlet **New-TransportRule** y establezca el parámetro _RemoveOME_ en `$true`.
 
@@ -199,7 +199,7 @@ Cuando los usuarios de correo electrónico envían mensajes cifrados, los destin
 
      - La dirección de correo electrónico del destinatario está en un dominio aceptado que está configurado como un dominio autoritativo o un dominio de retransmisión interno en su organización, _y_ el mensaje se ha enviado o recibido a través de una conexión autenticada.
 
-Para obtener la sintaxis detallada e información sobre los parámetros, consulte [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/New-TransportRule).
+Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [New-TransportRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/New-TransportRule).
 
 ## <a name="related-topics"></a>Temas relacionados
 

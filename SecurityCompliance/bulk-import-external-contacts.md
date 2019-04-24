@@ -13,12 +13,12 @@ search.appverid:
 - MOP150
 ms.assetid: bed936bc-0969-4a6d-a7a5-66305c14e958
 description: Obtenga información sobre cómo los administradores pueden usar Exchange Online PowerShell y un archivo CSV para importar de forma masiva contactos externos a la lista global de direcciones.
-ms.openlocfilehash: f95adcd54ebf2194536a199bca6fecf417064882
-ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
+ms.openlocfilehash: 2948332d7cdf2d1364b2b563f94efdb3e8d0672d
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30862502"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32244513"
 ---
 # <a name="bulk-import-external-contacts-to-exchange-online"></a>Importación masiva de contactos externos a Exchange Online
 
@@ -91,7 +91,7 @@ El siguiente paso es usar el archivo CSV que creó en el paso 1 y PowerShell par
     Los contactos importados aparecerán en la libreta de direcciones compartida en Outlook y Outlook en la Web.
     
     > [!NOTE]
-    > también puede ver los contactos en el centro de administración de Office 365 yendo a **** \> **contactos**de usuarios. 
+    > también puede ver los contactos en el centro de administración de Microsoft 365 yendo a **los** \> **contactos**de los usuarios. 
 
 ## <a name="step-3-add-information-to-the-properties-of-the-external-contacts"></a>Paso 3: agregar información a las propiedades de los contactos externos
 
@@ -134,7 +134,7 @@ Puede repetir los pasos del 1 al paso 3 para agregar nuevos contactos externos e
   
 ## <a name="hide-external-contacts-from-the-shared-address-book"></a>Ocultar contactos externos de la dirección compartida book>
 
-Es posible que algunas empresas solo usen contactos externos para que puedan agregarse como miembros de los grupos de distribución. En este escenario, es posible que quiera ocultar los contactos externos de la libreta de direcciones compartida. A continuación se explica cómo hacerlo:
+Es posible que algunas empresas solo usen contactos externos para que puedan agregarse como miembros de los grupos de distribución. En este escenario, es posible que quiera ocultar los contactos externos de la libreta de direcciones compartida. A continuación se describe cómo:
   
 1.  Conecte PowerShell a la organización de Exchange Online. Para obtener instrucciones paso a paso, consulte [conectarse a Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554).
     

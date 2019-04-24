@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: En este artículo se describe la herramienta nueva investigación de datos (versión preliminar) en Microsoft 365.
 ms.openlocfilehash: 11ba4d0870461695d327577396ccd535ac4340e1
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31030537"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257728"
 ---
 # <a name="overview-of-data-investigations-preview-in-microsoft-365"></a>Información general sobre las investigaciones de datos (versión preliminar) en Microsoft 365
 
@@ -43,9 +43,9 @@ Use la pestaña **evidencia** para investigar los datos que ha recopilado desde 
 
 También puede ejecutar análisis avanzados en la evidencia que recopila. Esto puede proporcionarle temas generales y organizar las pruebas por parte de los subprocesos de correo electrónico, los duplicados exactos y los duplicados Near para facilitar su investigación. Puede revisar documentos en la vista Texto extraído o en el formato de archivo nativo, y etiquetarlos con resultados de la investigación. Para más información, visite:
 
-  - [Revisar datos en evidencia](review-data-in-evidence.md)
+  - [Revisar los datos como evidencia](review-data-in-evidence.md)
 
-  - [Ejecutar análisis para investigar con mayor rapidez](run-analytics-to-investigate-faster.md)
+  - [Ejecutar el análisis para investigar más rápido](run-analytics-to-investigate-faster.md)
 
 
 ## <a name="managing-people-of-interest"></a>Administración de personas de interés

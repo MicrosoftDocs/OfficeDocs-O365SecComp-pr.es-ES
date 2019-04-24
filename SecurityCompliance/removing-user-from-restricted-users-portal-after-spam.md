@@ -17,11 +17,11 @@ ms.collection:
 - M365-security-compliance
 description: Si un usuario envía mensajes de correo electrónico de forma continua desde Office 365 que se clasifican como correo no deseado, se les restringirá el envío de mensajes adicionales.
 ms.openlocfilehash: a4f22b4d5192df202c1caa19714e8b5476dd8205
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30998503"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264942"
 ---
 # <a name="removing-a-user-from-the-restricted-users-portal-after-sending-spam-email"></a>Quitar un usuario desde el Portal de usuarios restringidos después de enviar correo no deseado
 
@@ -62,7 +62,7 @@ Complete esta tarea en el centro de seguridad & cumplimiento (SCC). [Vaya al cen
 
 Los administradores de espacios empresariales también recibirán una alerta que indica que se ha restringido el envío de más mensajes salientes al usuario. Se trata de una alerta predeterminada que se proporciona para todos los inquilinos y que aparece en la página directivas de alerta de SCC, titulada "el usuario restringió el envío de correo electrónico". Vaya a [directivas de alerta en el centro de cumplimiento de & de seguridad](https://docs.microsoft.com/en-us/office365/securitycompliance/alert-policies) para obtener más información sobre la alerta.
 
-## <a name="for-more-information"></a>Para obtener más información
+## <a name="for-more-information"></a>Más información
 
 [Responder a una cuenta de correo electrónico en peligro](responding-to-a-compromised-email-account.md)
 

@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: 2cba47b3-f09e-4911-9207-ac056fcb9db7
 description: La versión anterior de Office 365 cifrado de mensajes depende de Microsoft Azure Rights Management (anteriormente conocido como Windows Azure Active Directory Rights Management).
 ms.openlocfilehash: 89b86035f57699457c86fefb49888b8428f4e01c
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214380"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32266892"
 ---
 # <a name="set-up-azure-rights-management-for-the-previous-version-of-office-365-message-encryption"></a>Configurar Azure Rights Management para la versión anterior del Cifrado de mensajes de Office 365
 
@@ -36,7 +36,7 @@ El cifrado de mensajes de Office 365 (OME), incluido el IRM, depende de Azure Ri
 
 - Si no tiene una suscripción de Azure RMS para Exchange online o Exchange Online Protection, debe comprar una suscripción y activarla primero.
 
-    Para obtener información sobre cómo comprar una suscripción a Azure Rights Management, vea [Azure Rights Management](https://portal.office.com/Signup/MainSignUp15.aspx?&amp;OfferId=9DF77AF9-DAAE-4d51-8E0E-EEEADD4866B8&amp;dl=RIGHTSMANAGEMENT). En la siguiente sección se proporciona información sobre cómo activar Azure Rights Management.
+    Para obtener información sobre cómo comprar una suscripción a Azure Rights Management, vea [Azure Rights Management](https://portal.office.com/Signup/MainSignUp15.aspx?&amp;OfferId=9DF77AF9-DAAE-4d51-8E0E-EEEADD4866B8&amp;dl=RIGHTSMANAGEMENT). En la sección siguiente encontrará información sobre cómo activar Azure Rights Management.
 
 - Si tiene Azure Rights Management pero no está configurado para Exchange online o Exchange Online Protection, en este artículo se explica cómo activar Azure Rights Management y, a continuación, se describe la mejor forma de configurar OME para trabajar con Azure Rights Management.
 
@@ -107,14 +107,14 @@ Un TPD es un archivo XML que contiene información sobre la configuración de la
   Set-IRMConfiguration -InternalLicensingEnabled $true
   ```
 
-8. Para comprobar que ha importado correctamente el TPD y que ha habilitado Azure Rights Management, use el cmdlet test-IRMConfiguration para probar la funcionalidad de Azure Rights Management. Para obtener más información, consulte "ejemplo 1" en [Test-IRMConfiguration](https://technet.microsoft.com/library/dd979798%28v=exchg.150%29.aspx).
+8. Para comprobar que ha importado correctamente el TPD y que ha habilitado Azure Rights Management, use el cmdlet test-IRMConfiguration para probar la funcionalidad de Azure Rights Management. Para obtener más información, vea "Ejemplo 1" en [Test-IRMConfiguration](https://technet.microsoft.com/library/dd979798%28v=exchg.150%29.aspx).
     
 ## <a name="i-have-the-previous-version-of-ome-set-up-with-active-directory-rights-management-not-azure-information-protection-what-do-i-do"></a>Tengo la versión anterior de OME configurada con Active Directory Rights Management, no Azure Information Protection, ¿qué hago?
 <a name="importTPDs"> </a>
 
 Puede seguir usando las reglas de flujo de correo de cifrado de mensajes de Office 365 existentes con Active Directory Rights Management, pero no puede configurar ni usar las nuevas funciones de OME. En su lugar, debe migrar a Azure Information Protection. Para obtener información sobre la migración y qué significa para su organización, vea [migrar de AD RMS a Azure Information Protection](https://docs.microsoft.com/information-protection/deploy-use/prepare-environment-adrms).
   
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 <a name="importTPDs"> </a>
 
 Una vez que haya completado la instalación de Azure Rights Management, si desea habilitar las nuevas capacidades de OME, vea [set up New Office 365 Message Encryption Capabilities Built on of Azure Information Protection.](https://support.office.com/article/7ff0c040-b25c-4378-9904-b1b50210d00e)

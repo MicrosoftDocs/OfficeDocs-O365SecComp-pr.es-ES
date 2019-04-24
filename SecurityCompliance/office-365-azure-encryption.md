@@ -15,11 +15,11 @@ ms.collection:
 - Strat_O365_Enterprise
 description: 'Resumen: una explicación del cifrado en Azure.'
 ms.openlocfilehash: b8980b3979ada9ac02232065a27a7891936aa945
-ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30357581"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265882"
 ---
 # <a name="office-365-encryption-in-azure"></a>Office 365 cifrado en Azure
 
@@ -49,4 +49,4 @@ Algunos servicios de Office 365 usan Azure para almacenar datos. Por ejemplo, Sh
 
 ## <a name="azure-key-vault"></a>Azure Key Vault
 
-La administración de claves segura no es solo fundamental para los procedimientos recomendados de cifrado; también es esencial para proteger los datos en la nube. [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/key-vault-whatis) le permite cifrar claves y secretos pequeños como contraseñas que usan claves almacenadas en módulos de seguridad de hardware (HSM). Azure Key Vault es la solución recomendada por Microsoft para administrar y controlar el acceso a las claves de cifrado que usan los servicios en la nube. Los permisos para las claves de acceso se pueden asignar a los servicios o a los usuarios con cuentas de Azure Active Directory. Azure Key Vault libera a las organizaciones de la necesidad de configurar, aplicar revisiones y mantener los HSM y el software de administración de claves. Con Azure Key Vault, Microsoft nunca ve que sus claves y aplicaciones no tienen acceso directo a ellas; mantener el control. También puede importar o generar claves en HSM. las organizaciones que tienen una suscripción que incluye Azure Information Protection pueden configurar el inquilino de Azure Information Protection para que use una clave administrada por el cliente y que [incorpore su propia clave](https://docs.microsoft.com/information-protection/plan-design/byok-price-restrictions) (BYOK)) y [Registre su uso](https://docs.microsoft.com/information-protection/deploy-use/log-analyze-usage).
+La administración de claves segura no es solo fundamental para los procedimientos recomendados de cifrado; también es esencial para proteger los datos en la nube. [Azure Key Vault](https://docs.microsoft.com/azure/key-vault/key-vault-whatis) le permite cifrar claves y secretos pequeños como contraseñas que usan claves almacenadas en módulos de seguridad de hardware (HSM). Azure Key Vault es la solución recomendada por Microsoft para administrar y controlar el acceso a las claves de cifrado que usan los servicios en la nube. Los permisos para las claves de acceso se pueden asignar a los servicios o a los usuarios con cuentas de Azure Active Directory. Azure Key Vault libera a las organizaciones de la necesidad de configurar, aplicar revisiones y mantener los HSM y el software de administración de claves. Con Azure Key Vault, Microsoft nunca ve que sus claves y aplicaciones no tienen acceso directo a ellas; mantener el control. También puede importar o generar claves en HSM. Las organizaciones que tienen una suscripción que incluye Azure Information Protection pueden configurar el espacio empresarial de Azure Information Protection para usar una clave administrada por el cliente, [introducir su propia clave](https://docs.microsoft.com/information-protection/plan-design/byok-price-restrictions) (BYOK)) y [registrar su uso](https://docs.microsoft.com/information-protection/deploy-use/log-analyze-usage).

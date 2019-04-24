@@ -13,11 +13,11 @@ search.appverid:
 ms.assetid: 0ee60763-a30b-495b-8543-971c3384a801
 description: Pasos para importar contenido que no está almacenado en O365 en un BLOB de Azure para que se pueda analizar con AeD
 ms.openlocfilehash: 7b7694754b26951aa02930fd101631ba9060bc17
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001173"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256578"
 ---
 # <a name="import-non-office-365-content-for-advanced-ediscovery-analysis"></a>Importar contenido no de Office 365 para el análisis avanzado de eDiscovery
 

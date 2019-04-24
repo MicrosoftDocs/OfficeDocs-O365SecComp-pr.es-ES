@@ -1,5 +1,5 @@
 ---
-title: Ejecutar análisis para investigar con mayor rapidez
+title: Ejecutar el análisis para investigar más rápido
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,13 +15,13 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 9516035fb6c758fdff1852249fff2815f19af559
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31030499"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257618"
 ---
-# <a name="run-analytics-to-investigate-faster"></a>Ejecutar análisis para investigar con mayor rapidez
+# <a name="run-analytics-to-investigate-faster"></a>Ejecutar el análisis para investigar más rápido
 
 Cuando una colección de evidencias es grande, puede ser difícil revisarlas todas. Un conjunto de evidencias suele incluir varias copias de los mismos mensajes de correo electrónico o de documentos similares. Las investigaciones de datos (versión preliminar) proporcionan una serie de herramientas de análisis que pueden ayudarle a reducir el volumen de documentos que deben revisarse sin que se pierda información. Para obtener más información acerca de estas funciones, consulte:
 

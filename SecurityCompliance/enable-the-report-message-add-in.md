@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo habilitar el complemento de mensajes de informe para Outlook y Outlook en la web, para usuarios individuales o para toda la organización.
 ms.openlocfilehash: 3c476a6e097307b1aabc3580b598bb91a4407731
-ms.sourcegitcommit: a79eb9907759d4cd849c3f948695a9ff890b19bf
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30866346"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257548"
 ---
 # <a name="enable-the-report-message-add-in"></a>Habilitar el complemento de mensajes de informe
 

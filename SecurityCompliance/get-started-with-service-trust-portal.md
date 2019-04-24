@@ -13,11 +13,11 @@ ms.custom: Adm_O365
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
 description: Para los informes de cumplimiento normativo de Office 365, Azure y Dynamics 365, para ver auditorías de terceros, averiguar cómo Microsoft mantiene seguros los datos de los clientes y cómo se puede cumplir con ISO, HIPAA, NIST, FINRA, RGPD y FedRAMP cuando se usan estos servicios en línea.
 ms.openlocfilehash: ff14f1b88dbde06dbfd17a87bb94c3f32ddff81b
-ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30647340"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32254338"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Introducción al portal de confianza de servicios de Microsoft
 
@@ -118,7 +118,7 @@ Funciones administrativas que solo están disponibles para la cuenta de administ
   
  La página de **configuración** le permite asignar el acceso basado en roles al administrador de cumplimiento. Para obtener más información, consulte la sección sobre el control de acceso basado en permisos y roles en [use el administrador de cumplimiento como ayuda para cumplir los requisitos normativos y de protección de datos al usar los servicios en la nube de Microsoft](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#permissions-and-role-based-access-control).
   
-### <a name="search"></a>Buscar
+### <a name="search"></a>Buscar 
 
 Haga clic en la lupa de la esquina superior derecha de la página portal de confianza de servicios para expandir el cuadro, escriba los términos de búsqueda y presione **entrar**.
 

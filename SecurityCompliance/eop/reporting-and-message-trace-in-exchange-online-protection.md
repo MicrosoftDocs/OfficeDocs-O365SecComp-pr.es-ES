@@ -11,11 +11,11 @@ localization_priority: Normal
 ms.assetid: f40253f2-50a1-426e-9979-be74ba74cb61
 description: Microsoft Exchange Online Protection (EOP) ofrece muchos informes distintos que le permitirán averiguar el estado general y el mantenimiento de la organización. También hay herramientas para ayudarle a solucionar problemas de eventos específicos (por ejemplo, un mensaje que no llegue a sus destinatarios) e informes de auditoría para ayudar con los requisitos de cumplimiento normativo. La tabla siguiente describe los informes y las herramientas de solución de problemas disponibles para los administradores de EOP.
 ms.openlocfilehash: fcefa14991d074f1f4459007c16dd7f4df1cedd1
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000953"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256278"
 ---
 # <a name="reporting-and-message-trace-in-exchange-online-protection"></a>Informes y seguimiento de mensajes en Exchange Online Protection
 

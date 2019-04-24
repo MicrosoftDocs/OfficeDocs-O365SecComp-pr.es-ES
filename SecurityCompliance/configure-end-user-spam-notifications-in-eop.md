@@ -14,11 +14,11 @@ ms.collection:
 - M365-security-compliance
 description: Las notificaciones de correo no deseado para el usuario final se pueden configurar en la directiva de filtro de contenido de toda la compañía, o bien en las directivas de filtro de contenido personalizadas que se aplican a los dominios.
 ms.openlocfilehash: 09ddd7fd2800e4038e354e53da53320184da3e77
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692579"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32259628"
 ---
 # <a name="configure-end-user-spam-notifications-in-eop"></a>Configurar notificaciones de correo no deseado para el usuario final en EOP
   
@@ -43,7 +43,7 @@ Después de recibir un mensaje de notificación, los usuarios finales pueden ele
 
 **Bloquear** si desea que Office 365 agregue el remitente a la lista de remitentes bloqueados.
   
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 <a name="sectionSection0"> </a>
 
 Tiempo estimado para finalizar: 5 minutos
@@ -77,7 +77,7 @@ Para obtener información acerca de los métodos abreviados de teclado aplicable
   
 ![Regla de transporte para probar las notificaciones de correo no deseado de usuario final](media/EOP-ESN-testspecificusers.jpg)
   
-## <a name="for-more-information"></a>Para obtener más información
+## <a name="for-more-information"></a>Más información
 
 [Configurar las directivas de filtro de correo no deseado](configure-your-spam-filter-policies.md)
   

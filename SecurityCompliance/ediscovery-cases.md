@@ -16,11 +16,11 @@ search.appverid:
 ms.assetid: 8dd335ab-29d0-41c3-8dd8-9f7c7481e60c
 description: Use el centro de seguridad & cumplimiento para crear y administrar casos de exhibición de documentos electrónicos en su organización. Puede asignar miembros al caso, poner ubicaciones de contenido en retención, ejecutar búsquedas de contenido asociadas con el caso y exportar los resultados de la búsqueda. También puede preparar datos de casos para un análisis más avanzado en la exhibición avanzada de documentos electrónicos.
 ms.openlocfilehash: 5f31153e70495dc28ee276c36e9edfc67638956e
-ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31958531"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258038"
 ---
 # <a name="ediscovery-cases-in-the-security--compliance-center"></a>casos de eDiscovery en el centro de seguridad & cumplimiento
 

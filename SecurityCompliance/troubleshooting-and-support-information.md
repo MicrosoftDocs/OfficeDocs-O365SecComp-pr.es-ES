@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: En este tema se describen pasos de solución de problemas para usuarios finales y administradores, y se proporciona información acerca de cómo ponerse en contacto con el soporte técnico para obtener ayuda.
 ms.openlocfilehash: bea2ad502f24d63874bfa954e6d67c73dc44d98d
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693659"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32259848"
 ---
 # <a name="troubleshooting-and-support-information"></a>Solución de problemas e información de soporte técnico
 
@@ -88,7 +88,7 @@ Como administrador, puede tener problemas con usuarios que usen el complemento d
 
 Si necesita ayuda para instalar, configurar o desinstalar el complemento, póngase en contacto con el soporte técnico mediante el vínculo nueva solicitud de servicio de la página soporte del centro de administración de Microsoft 365. Para obtener opciones adicionales, como el envío de una solicitud de servicio a través de las opciones de teléfono y de autosoporte, consulte [ayuda y soporte técnico para EOP](eop/help-and-support-for-eop.md).
   
-## <a name="for-more-information"></a>Para obtener más información
+## <a name="for-more-information"></a>Más información
 
 [Habilitar el complemento de mensajes de informe](https://support.office.com/article/4250c4bc-6102-420b-9e0a-a95064837676)
   

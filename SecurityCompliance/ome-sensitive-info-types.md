@@ -14,11 +14,11 @@ search.appverid:
 ms.collection: Strat_O365_Enterprise
 description: 'Resumen: la Directiva de cifrado de mensajes de Office 365 para tipos de información confidencial ahora está disponible.'
 ms.openlocfilehash: 99cb7a9f94c9cf4036c11b74a5208ddf0e819ceb
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30213986"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261268"
 ---
 # <a name="office-365-message-encryption-policy-for-sensitive-information"></a>Directiva de cifrado de mensajes de Office 365 para información confidencial
 
@@ -50,7 +50,7 @@ Ejecutar los siguientes comandos en PowerShell cree una regla de flujo de correo
 - Número de enrutamiento ABA
 - Número de tarjeta de crédito
 - Número de la Agencia para la imPosición de drogas (DEA)
-- Número de pasaporte de Estados Unidos/Reino Unido
+- ESTADOS UNIDOS/REINO UNIDO passport number
 - Número de cuenta bancaria de Estados Unidos
 - Número de identificación de contribuyente individual (ITIN) de EE. UU.
 - Número de seguridad social (SSN) de EE. UU.

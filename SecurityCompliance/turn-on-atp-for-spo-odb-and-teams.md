@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo activar ATP para SharePoint, OneDrive y Teams, incluido cómo establecer alertas para los archivos detectados.
 ms.openlocfilehash: 30eb28bfc5156664656ca1c200f9e999661b3b0c
-ms.sourcegitcommit: 1c73c2f83703af0a30a5b0633db00d8e0e6b39b5
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "30242152"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264312"
 ---
 # <a name="turn-on-office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Activar Office 365 ATP para SharePoint, OneDrive y Microsoft Teams
 

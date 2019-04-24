@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: En este artículo se describe la nueva versión de eDiscovery avanzado (versión preliminar) en Microsoft 365.
 ms.openlocfilehash: 2296f4ee1867cacc90eada9e5f12888a8ea0d242
-ms.sourcegitcommit: 13c601ea11ce6a3c71036fdafda059061c6998d0
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "30313156"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32252488"
 ---
 # <a name="overview-of-advanced-ediscovery-preview-in-microsoft-365"></a>Introducción a la exhibición avanzada de documentos electrónicos (versión preliminar) en Microsoft 365
 
@@ -57,7 +57,7 @@ Para obtener más información acerca del flujo de trabajo de un extremo a otro 
 
 ![Pestañas en eDiscovery avanzado (versión preliminar), siga el flujo de trabajo de EDRM](../media/aedisco-homepage-1.png)
 
-## <a name="managing-custodians"></a>Administrar los administradores
+## <a name="managing-custodians"></a>Administración de custodios
 
 Use la **** ficha custodios para agregar y administrar las personas que ha identificado como personas de interés en el caso. Al agregar custodios, puede realizar rápidamente acciones relacionadas con el custodio, como colocar una retención legal en orígenes de datos de custodios, como su buzón de correo y su cuenta de OneDrive, comunicarse con custodios y buscar orígenes de datos de custodios para recopilar contenido eso es relevante para el caso. A medida que avanza el caso, es fácil agregar custodios nuevos o liberar los custodios del caso. Para obtener más información, consulte [work with custodios in Advanced eDiscovery (Preview)](managing-custodians.md).
 
@@ -79,7 +79,7 @@ Use la ficha **búsquedas** para crear búsquedas para buscar en los orígenes d
 
 ## <a name="reviewing-and-analyzing-case-data"></a>Revisión y análisis de datos de casos
 
-Use la ficha **conjuntos de trabajo** para revisar y analizar el contenido que ha recopilado desde el sistema activo y que se ha agregado a un conjunto de trabajo. Un *conjunto de trabajo* es una colección estática de esos datos (en otras palabras, una copia sin conexión de datos) de datos de Private (y, si procede, datos no de Private) que haya recopilado en la fase anterior del flujo de trabajo de eDiscovery. Cuando se agregan resultados de búsqueda a un conjunto de trabajo, se desencadena un proceso que extrae los archivos de los contenedores, extrae los metadatos y extrae el texto. Cuando se completa este proceso, el sistema crea un nuevo índice de todos los datos recopilados de los custodios y agregados al conjunto de trabajo. Una vez agregados los datos al conjunto de trabajo, puede ejecutar consultas adicionales para restringir los datos de mayúsculas y minúsculas, ver datos como texto o en el formato de archivo nativo, y anotar, censurar y etiquetar documentos en el conjunto de trabajo. Además, puede realizar análisis avanzados, como identificar la duplicación de documentos, los subprocesos de correo electrónico y los temas. Una vez que haya seleccionado los datos solo para lo que sea relevante para el caso, puede descargar los documentos directamente o exportarlos junto con los metadatos de archivo, las anotaciones y cualquier etiqueta. Para obtener más información, vea:
+Use la ficha **conjuntos de trabajo** para revisar y analizar el contenido que ha recopilado desde el sistema activo y que se ha agregado a un conjunto de trabajo. Un *conjunto de trabajo* es una colección estática de esos datos (en otras palabras, una copia sin conexión de datos) de datos de Private (y, si procede, datos no de Private) que haya recopilado en la fase anterior del flujo de trabajo de eDiscovery. Cuando se agregan resultados de búsqueda a un conjunto de trabajo, se desencadena un proceso que extrae los archivos de los contenedores, extrae los metadatos y extrae el texto. Cuando se completa este proceso, el sistema crea un nuevo índice de todos los datos recopilados de los custodios y agregados al conjunto de trabajo. Una vez agregados los datos al conjunto de trabajo, puede ejecutar consultas adicionales para restringir los datos de mayúsculas y minúsculas, ver datos como texto o en el formato de archivo nativo, y anotar, censurar y etiquetar documentos en el conjunto de trabajo. Además, puede realizar análisis avanzados, como identificar la duplicación de documentos, los subprocesos de correo electrónico y los temas. Una vez que haya seleccionado los datos solo para lo que sea relevante para el caso, puede descargar los documentos directamente o exportarlos junto con los metadatos de archivo, las anotaciones y cualquier etiqueta. Para más información, visite:
 
   - [Revisar los datos de casos en eDiscovery avanzado (versión preliminar)](reviewing-data-in-working-set.md)
   - [Analizar datos en un conjunto de trabajo en eDiscovery avanzado (versión preliminar)](analyzing-data-in-working-set.md)
@@ -88,10 +88,10 @@ Use la ficha **conjuntos de trabajo** para revisar y analizar el contenido que h
 
 Después de exportar los datos de un conjunto de trabajo, use la pestaña **exportaciones** para administrar un trabajo de exportación y descargar datos de un conjunto de trabajo. Cuando se exporta un conjunto de trabajo, los datos se cargan en una ubicación de almacenamiento de Azure y, a continuación, se pueden descargar en un equipo local. Puede obtener la clave de evaluación de almacenamiento y ubicación necesaria para descargar los datos exportados en la ficha **exportaciones** . Para obtener más información, vea [exportar datos de casos en EDiscovery avanzado (versión preliminar)](exporting-data-ediscover20.md).
 
-## <a name="managing-jobs"></a>Administrar trabajos
+## <a name="managing-jobs"></a>Administración de trabajos
 
 Use la ficha **trabajos** para supervisar procesos de ejecución prolongada para las tareas relacionadas con casos que haya iniciado. Por ejemplo, los trabajos incluyen los relacionados con la nueva indexación, búsquedas y exportaciones. Por ejemplo, puede crear una nueva búsqueda en la ficha **búsquedas** que incluya un gran número de orígenes de datos. El estado de este proceso de búsqueda se muestra en la pestaña **trabajos** . Para obtener más información, vea [Manage Jobs in Advanced eDiscovery (Preview)](managing-jobs-ediscovery20.md).
 
-## <a name="configuring-case-settings"></a>Configurar los ajustes de casos
+## <a name="configuring-case-settings"></a>Configuración de los casos
 
 Use la pestaña **configuración** para establecer la configuración de casos. Esto incluye agregar miembros a un caso, cerrar o eliminar un caso y configurar el comportamiento de búsqueda y análisis. Para obtener más información, vea [Configure Case Settings in Advanced eDiscovery (Preview)](configuring-case-settings-ediscovery20.md).

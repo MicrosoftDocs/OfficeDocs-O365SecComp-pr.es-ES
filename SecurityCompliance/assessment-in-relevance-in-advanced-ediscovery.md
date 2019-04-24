@@ -1,5 +1,5 @@
 ---
-title: Comprender la evaluación de relevancia en eDiscovery avanzado de Office 365
+title: Descripción de la evaluación en relevancia en Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,13 +14,13 @@ search.appverid:
 ms.assetid: 1d33d4fb-91ed-41c0-b72e-5a26eca3a2a7
 description: Obtenga información general sobre la fase de evaluación y su rol a la hora de determinar la riqueza de los problemas durante la formación de relevancia en la exhibición avanzada de documentos electrónicos de Office 365.
 ms.openlocfilehash: 1ddaa7ef37f762d7b63bb6c0c51193ff382b8d6b
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30212980"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32250207"
 ---
-# <a name="understand-assessment-in-relevance-in-office-365-advanced-ediscovery"></a>Comprender la evaluación de relevancia en eDiscovery avanzado de Office 365
+# <a name="understand-assessment-in-relevance-in-office-365-advanced-ediscovery"></a>Descripción de la evaluación en relevancia en Office 365 Advanced eDiscovery
 
 > [!NOTE]
 > Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 

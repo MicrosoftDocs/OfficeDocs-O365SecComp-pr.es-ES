@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
 description: 'Resumen: implemente un nuevo sitio de grupo aislado de SharePoint Online con estas instrucciones paso a paso.'
-ms.openlocfilehash: e59c92ff488f82f4ea042364d742f7418da50167
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.openlocfilehash: 4cb60cd55f526592cb469d80a061375a4f556afe
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000192"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257028"
 ---
 # <a name="deploy-an-isolated-sharepoint-online-team-site"></a>Implementar un sitio de grupo de SharePoint Online aislado
 
@@ -83,7 +83,7 @@ Debe crear los siguientes grupos de acceso en Azure AD:
 6. Repita los pasos 3-5 para los grupos adicionales.
     
 > [!NOTE]
-> Debe usar el portal de Azure para crear los grupos para que tengan habilitadas las características de Office. Si un sitio aislado de SharePoint Online se configura más adelante como un sitio extremadamente confidencial con una etiqueta de Azure Information Protection (AIP) para cifrar archivos y asignar permisos a grupos específicos, los grupos permitidos deben haberse creado con las características de Office. preparado. No puede cambiar la configuración de las características de Office de un grupo de Azure AD una vez creado. 
+> Debe usar el portal de Azure para crear los grupos para que tengan habilitadas las características de Office. Si un sitio aislado de SharePoint Online se configura más adelante como un sitio extremadamente confidencial con una etiqueta de Azure Information Protection para cifrar archivos y asignar permisos a grupos específicos, los grupos permitidos deben haberse creado con las características de Office habilitadas. No puede cambiar la configuración de las características de Office de un grupo de Azure AD una vez creado. 
   
 Esta es la configuración resultante con los tres grupos de acceso al sitio.
   
@@ -105,7 +105,7 @@ Si administra cuentas de usuario y grupos a través de Office 365, puede usar el
   
 En el centro de administración de Office, inicie sesión con una cuenta de usuario que tenga asignado el rol de administrador de la cuenta de usuario o de administrador de la compañía y use grupos para agregar las cuentas de usuario y los grupos adecuados a los grupos de acceso apropiados.
   
-Para PowerShell, primero [Conéctese con el módulo de PowerShell Azure Active Directory V2](https://go.microsoft.com/fwlink/?linkid=842218).
+Para PowerShell, primero [Conéctese con el módulo Azure Active Directory PowerShell para Graph](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module).
   
 A continuación, use el siguiente bloque de comandos para agregar una cuenta de usuario individual a un grupo de acceso:
   
@@ -161,7 +161,7 @@ En esta fase, se crea el sitio de SharePoint Online aislado y se configuran los 
   
 En primer lugar, cree el sitio de grupo de SharePoint Online con estos pasos.
   
-1. Inicie sesión en el centro de administración con una cuenta que también se usará para administrar el sitio de grupo de SharePoint Online (un administrador de SharePoint Online). Para obtener ayuda, vea [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4) (Dónde iniciar sesión en Office 365).
+1. Inicie sesión en el centro de administración con una cuenta que también se vaya a usar para administrar el sitio de grupo de SharePoint Online (un administrador de SharePoint Online). Para obtener ayuda, vea [Dónde iniciar sesión en Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
 2. En la lista de iconos, haga clic en **SharePoint**.
     
@@ -173,9 +173,9 @@ En primer lugar, cree el sitio de grupo de SharePoint Online con estos pasos.
     
 6. En **Descripción del sitio de grupo,** escriba una descripción opcional del propósito del sitio.
     
-7. En **Configuración de privacidad**, seleccione **Private - only members can access this site** (Privado: solo los miembros tienen acceso a este sitio) y haga clic en **Siguiente**.
+7. En **Configuración de privacidad**, seleccione **Privado: solo los miembros pueden obtener acceso a este sitio** y, después, haga clic en **Siguiente**.
     
-8. En el panel **Who do you want to add?** (Usuarios que quiere agregar), haga clic en **Finalizar**.
+8. En el panel **Usuarios que quiere agregar**, haga clic en **Finalizar**.
     
 Después, desde el nuevo sitio de grupo de SharePoint Online, configure los permisos.
   
@@ -193,7 +193,7 @@ Después, desde el nuevo sitio de grupo de SharePoint Online, configure los perm
     
 7. En el cuadro de diálogo **compartir** , escriba el nombre del grupo de acceso de los miembros del sitio, selecciónelo y, a continuación, haga clic en **compartir**.
     
-8. Haga clic en el botón Atrás del explorador.
+8. Haga clic en el botón Volver del explorador.
     
 9. Haga ** \<** clic en propietarios de name> de sitio en la lista.
     
@@ -201,7 +201,7 @@ Después, desde el nuevo sitio de grupo de SharePoint Online, configure los perm
     
 11. En el cuadro de diálogo **compartir** , escriba el nombre del grupo de acceso de administradores del sitio, selecciónelo y, a continuación, haga clic en **compartir**.
     
-12. Haga clic en el botón Atrás del explorador.
+12. Haga clic en el botón Volver del explorador.
     
 13. Haga clic ** \<en el sitio name> visitantes** de la lista.
     
@@ -227,7 +227,7 @@ Esta es la configuración resultante con los tres grupos de SharePoint para el s
   
 Usted y los miembros del sitio, a través de la pertenencia a grupos en uno de los grupos de acceso, ahora pueden colaborar con los recursos del sitio.
   
-## <a name="next-step"></a>Paso siguiente
+## <a name="next-step"></a>Siguiente paso
 
 Cuando necesite cambiar la pertenencia al grupo de acceso al sitio o crear una carpeta de documentos con permisos personalizados, vea [administrar un sitio de grupo de SharePoint Online aislado](manage-an-isolated-sharepoint-online-team-site.md).
   

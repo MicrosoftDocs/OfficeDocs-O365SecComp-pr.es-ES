@@ -12,11 +12,11 @@ localization_priority: Normal
 ms.assetid: 7acd33ce-1ec8-49fb-b625-43bac7b58c5a
 description: 'Use el centro de seguridad & cumplimiento para obtener varios informes para su organización de SharePoint Online y Exchange Online, además de informes de Azure Active Directory.  '
 ms.openlocfilehash: b902ce8e44e20fdb9e5fc22189ca07b6168be329
-ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31958271"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264902"
 ---
 # <a name="reports-in-the-security--compliance-center"></a>Informes en el Centro de seguridad y cumplimiento
 

@@ -12,11 +12,11 @@ search.appverid:
 ms.collection: Strat_O365_Enterprise
 description: 'Resumen: comprenda la resistencia de los datos en Microsoft Office 365.'
 ms.openlocfilehash: 385bb936de2c0cfcb478f0b20d2f7367d5b55ff4
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30275700"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262392"
 ---
 # <a name="office-365-service-encryption"></a>Cifrado de servicio de Office 365
 
@@ -31,6 +31,7 @@ El cifrado de servicio ofrece varias ventajas. Por ejemplo,:
 - mejora la capacidad de Office 365 para satisfacer las demandas de los clientes que tienen requisitos de cumplimiento relacionados con el cifrado.
 
 ## <a name="customer-key"></a>Clave del cliente
-Mediante el uso de la clave de cliente, puede generar sus propias claves criptográficas mediante el uso de un HSM local o un almacén de claves de Azure. Independientemente de cómo se genere la clave, los clientes usan Azure Key Vault para controlar y administrar las claves criptográficas que usa Office 365. Una vez que las claves se almacenan en Azure Key Vault, se pueden asignar a cargas de trabajo como Exchange Online y SharePoint Online, y usarlas como la raíz de la cadena de claves que se usa para cifrar los archivos y los datos de los buzones. Una de las otras ventajas de usar la clave de cliente es controlar la capacidad de Microsoft para procesar datos de clientes. Esta capacidad existe para que un cliente que quiera quitar datos de Office 365 (como cuando un cliente termina el servicio con Microsoft o quita una parte de los datos almacenados en la nube) puede hacerlo y usar la clave de cliente como control técnico para asegurarse de que no hay nadie , incluido Microsoft, puede tener acceso a los datos o procesarlos. Esto es adicional (y un complemento) a la característica de caja de caja del cliente que se puede usar para controlar el acceso a los datos de los clientes por parte del personal de Microsoft.
+Mediante el uso de la clave de cliente, puede generar sus propias claves criptográficas mediante el uso de un HSM local o un almacén de claves de Azure. Independientemente de cómo se genere la clave, los clientes usan Azure Key Vault para controlar y administrar las claves criptográficas que usa Office 365. Una vez que las claves se almacenan en Azure Key Vault, se pueden asignar a cargas de trabajo como Exchange Online y SharePoint Online, y usarlas como la raíz de la cadena de claves que se usa para cifrar los archivos y los datos de los buzones.
+Una de las otras ventajas de usar la clave de cliente es controlar la capacidad de Microsoft para procesar datos de clientes. Esta capacidad existe para que un cliente que quiera quitar datos de Office 365 (como cuando un cliente termina el servicio con Microsoft o quita una parte de los datos almacenados en la nube) puede hacerlo y usar la clave de cliente como control técnico para asegurarse de que no hay nadie , incluido Microsoft, puede tener acceso a los datos o procesarlos. Esto es adicional (y un complemento) a la característica de caja de caja del cliente que se puede usar para controlar el acceso a los datos de los clientes por parte del personal de Microsoft.
 
 Para obtener información sobre cómo configurar la clave de cliente de Office 365 para Exchange Online, Skype empresarial, SharePoint Online y OneDrive para la empresa, vea [controlar los datos en Office 365 mediante la clave de cliente](https://support.office.com/article/Controlling-your-data-in-Office-365-using-Customer-Key-f2cd475a-e592-46cf-80a3-1bfb0fa17697). Para obtener más información, consulte la [clave de cliente de las preguntas más frecuentes de Office 365](https://support.office.com/article/Customer-Key-for-Office-365-FAQ-41ae293a-bd5c-4083-acd8-e1a2b4329da6)y [administrar y controlar los datos para satisfacer las necesidades de cumplimiento con la clave de cliente](https://techcommunity.microsoft.com/t5/Microsoft-Ignite-Content-2017/Manage-and-control-your-data-to-help-meet-compliance-needs-with/td-p/117580).

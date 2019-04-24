@@ -14,18 +14,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: e5f7c6d0f0932041ef92591afcb59ad836cae0e4
-ms.sourcegitcommit: 19d27ff836ee7fa1f8a4e761e04d928f13f4bfd8
+ms.openlocfilehash: 9898e3c4861da8dbd90168622395981f34aaa510
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31745292"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32240905"
 ---
 # <a name="manage-jobs-in-advanced-ediscovery-preview"></a>Administrar trabajos en la exhibición avanzada de documentos electrónicos (versión preliminar)
 
 Esta es una lista de los trabajos (que suelen ser procesos de larga ejecución) cuyo seguimiento se realiza en la ficha **trabajos** de un caso en eDiscovery avanzado (versión preliminar). Estas tareas se desencadenan por acciones del usuario al usar y administrar casos.
 
-| Tipo de trabajo           | Description     |
+| Tipo de trabajo           | Descripción     |
 | :----------------- | :----------     |
 |Adición de datos a un conjunto de trabajo | Un usuario agrega los resultados de una búsqueda a un conjunto de trabajo.  Para obtener más información, vea [Agregar resultados de búsqueda a un conjunto de trabajo](add-data-to-working-set.md). |
 |Adición de datos a otro conjunto de trabajo | Un usuario agrega documentos de un conjunto de trabajo a un conjunto de trabajo diferente en el mismo caso.|
@@ -41,3 +41,17 @@ Esta es una lista de los trabajos (que suelen ser procesos de larga ejecución) 
 |Ejecución de análisis | Un usuario analiza los datos de un conjunto de trabajo mediante la ejecución de herramientas avanzadas de análisis de exhibición de documentos electrónicos, como detección de duplicados, análisis de subprocesos de correo electrónico y análisis de temas. Para obtener más información, vea [analizar datos en un conjunto de trabajo](analyzing-data-in-working-set.md). | 
 |Etiquetando documentos | Este trabajo se desencadena cuando un usuario hace clic en **iniciar trabajo de etiquetado** en el **Panel etiquetado** al revisar los documentos de un conjunto de trabajo. Un usuario puede iniciar este trabajo después de etiquetar los documentos en un conjunto de trabajo y, a continuación, seleccionarlos de forma masiva en el panel ver documento. Para obtener más información, vea [etiquetar documentos en un conjunto de trabajo](tagging-documents.md). | 
 |||
+
+
+## <a name="job-status"></a>Estado del trabajo
+
+En la tabla siguiente se describen los distintos Estados de los trabajos.
+
+| Estado           | Descripción     |
+| :----------------- | :----------     |
+| Submitted | Se ha creado un nuevo trabajo.  La fecha y la hora en las que se envió el trabajo se muestran en la columna **creado** de la ficha **trabajos** . |
+| Error de envío | Error en el envío del trabajo.  Intente volver a ejecutar la acción que desencadenó el trabajo. |
+| En curso | El trabajo está en curso, puede supervisar el progreso del trabajo en la pestaña **trabajos** . |
+| Se ejecuta correctamente | El trabajo se ha completado correctamente. La fecha y la hora en que se completó el trabajo se muestran en la columna **completado** de la ficha **trabajos** . |
+| Parcialmente correcta | El trabajo se ha realizado parcialmente correctamente. |
+| Failed | Error en el trabajo.  Intente volver a ejecutar la acción que desencadenó el trabajo. Si se produce un error en el trabajo por segunda vez, le recomendamos que se ponga en contacto con el soporte técnico de Microsoft y proporcione la información de soporte técnico del trabajo. |

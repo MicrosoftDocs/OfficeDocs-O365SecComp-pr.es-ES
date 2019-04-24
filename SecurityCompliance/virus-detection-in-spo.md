@@ -17,11 +17,11 @@ ms.collection:
 - M365-security-compliance
 description: Office 365 puede ayudarle a proteger su entorno del malware detectando virus en los archivos que los usuarios cargan en SharePoint Online. Los archivos se examinan en busca de virus una vez cargados. Si se detecta que un archivo está infectado, se establece una propiedad para que los usuarios no puedan descargar ni sincronizar el archivo.
 ms.openlocfilehash: d4f18c84935d9c6e1d3f135bbda6c40737956ae7
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276240"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32266834"
 ---
 # <a name="virus-detection-in-sharepoint-online"></a>Detección de virus en SharePoint Online
 

@@ -15,11 +15,11 @@ search.appverid:
 - MET150
 description: Los tipos de información confidencial buscan un patrón específico y corroborarlo asegurándose de que el formato es correcto, aplicando sumas de comprobación y buscando palabras clave relevantes u otra información. Parte de esta funcionalidad la realizan funciones internas. En este tema se explica lo que estas funciones buscan, para que comprenda mejor cómo funcionan los tipos de información confidencial predefinidos.
 ms.openlocfilehash: d0aeb38001f42d9db2b124466b02746ee106b078
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30638937"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32266922"
 ---
 # <a name="what-the-dlp-functions-look-for"></a>Qué buscan las funciones de DLP
 

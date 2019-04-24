@@ -1,5 +1,5 @@
 ---
-title: Establecer la opción de omitir el texto para analizar en eDiscovery avanzado de Office 365
+title: Establecer la opción omitir texto para analizar en Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,13 +14,13 @@ search.appverid:
 ms.assetid: 44055727-56e8-42d7-9dc3-fb942f3901cc
 description: 'Obtenga información sobre cómo definir la regla para omitir texto específico cuando use los módulos Analyze y Process en Office 365 Advanced eDiscovery.  '
 ms.openlocfilehash: 3a4c1d17a9a56d3018509a8dcfd6b49abb951676
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214250"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260838"
 ---
-# <a name="set-ignore-text-option-for-analyze-in-office-365-advanced-ediscovery"></a>Establecer la opción de omitir el texto para analizar en eDiscovery avanzado de Office 365
+# <a name="set-ignore-text-option-for-analyze-in-office-365-advanced-ediscovery"></a>Establecer la opción omitir texto para analizar en Office 365 Advanced eDiscovery
 
 > [!NOTE]
 > Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 

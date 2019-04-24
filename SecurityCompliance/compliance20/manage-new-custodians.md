@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 6a21240f71c64f244ee42c3d3a2ed9d75381edaa
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30454942"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32241873"
 ---
 # <a name="manage-custodians-in-an-advanced-ediscovery-preview-case"></a>Administrar los custodios en un caso de eDiscovery avanzado (vista previa)
 

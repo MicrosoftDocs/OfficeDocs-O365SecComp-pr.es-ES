@@ -16,11 +16,11 @@ search.appverid:
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Use límites de cumplimiento para crear límites lógicos dentro de una organización de Office 365 que controlen las ubicaciones de contenido de usuario que puede buscar un administrador de exhibición de documentos electrónicos. Los límites de cumplimiento usan el filtrado de permisos de búsqueda (también denominados filtros de seguridad de cumplimiento) para controlar los buzones de correo, los sitios de SharePoint y las cuentas de OneDrive pueden ser buscados por usuarios específicos.
 ms.openlocfilehash: b23c6d0c96874fb7e6205de6bf8a7f4eb00e4254
-ms.sourcegitcommit: 691370682825a7601bd4b77d0a8c4b51ed15682f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/31/2019
-ms.locfileid: "31014029"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264672"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations-in-office-365"></a>Configurar los límites de cumplimiento para investigaciones de eDiscovery en Office 365.
 
@@ -56,7 +56,7 @@ El primer paso es elegir un atributo de Azure Active Directory que se usará par
   
 Esta es una lista de atributos de usuario de Azure Active Directory que puede usar para los límites de cumplimiento:
   
-- Company
+- Empresa
     
 - CustomAttribute1-CustomAttribute15
     

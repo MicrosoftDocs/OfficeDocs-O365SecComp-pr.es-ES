@@ -3,23 +3,22 @@ title: Aislamiento de inquilino de Office 365 en la búsqueda de Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 'Resumen: una explicación del aislamiento de inquilinos en Office 365 Search.'
-ms.openlocfilehash: fa9ba75f6ae5b0b89e3565ffb0e6f022ab36f81b
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 5254ffe2e6b92c6ba100a9e45b35b456ead1b000
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216870"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262602"
 ---
 # <a name="tenant-isolation-in-office-365-search"></a>Aislamiento de inquilino en búsqueda de Office 365
 La búsqueda de SharePoint Online usa un modelo de separación de inquilinos que equilibra la eficiencia de las estructuras de datos compartidos con protección frente a la pérdida de información entre los inquilinos. Con este modelo, se evita que las características de búsqueda de:

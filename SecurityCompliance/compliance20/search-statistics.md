@@ -15,18 +15,19 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: a2234d0a0e94e3fbb15f8fac8f6e49cc7b26cfb2
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295663"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32240972"
 ---
 # <a name="search-statistics"></a>Estadísticas de búsqueda
 
 Una forma de validar los resultados de la búsqueda es ver las estadísticas de los resultados para asegurarse de que se ajustan a sus expectativas. Una vez finalizada la búsqueda, se muestran las estadísticas de alto nivel en el control flotante de detalles de búsqueda:
 - Número y volumen de los elementos recuperados por la búsqueda
 - Número y volumen de elementos parcialmente indizados o sin indexar que se encontraron en las ubicaciones de búsqueda
-- Número de buzones y ubicaciones que se han buscado. Para ver estadísticas más detalladas, haga clic en "estadísticas" en el control flotante de detalles de búsqueda.
+- Número de buzones y ubicaciones que se han buscado.
+Para ver estadísticas más detalladas, haga clic en "estadísticas" en el control flotante de detalles de búsqueda.
 
 ## <a name="summary"></a>Resumen
 
@@ -43,7 +44,7 @@ En la vista de ubicaciones superiores, verá las ubicaciones individuales con m�
 - Número de elementos que coinciden con las condiciones de búsqueda
 - Volumen total de elementos que coinciden con las condiciones de búsqueda.
 
-## <a name="queries"></a>Peticiones
+## <a name="queries"></a>Queries
 
 Si ha usado (c:s) palabra clave o filas de palabra clave en la consulta, puede ver el desglose de la consulta en la vista consultas por tipo de ubicación. Para cada tipo de ubicación, verá:
 

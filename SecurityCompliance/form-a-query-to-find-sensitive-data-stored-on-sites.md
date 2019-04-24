@@ -15,11 +15,11 @@ search.appverid:
 - MET150
 description: Con la prevención de pérdida de datos (DLP) en SharePoint Online, puede detectar documentos que contengan datos confidenciales en todo el espacio empresarial. Una vez detectados los documentos, puede trabajar con los propietarios de documentos para proteger los datos. Este tema puede ayudarle a formar una consulta para buscar datos confidenciales.
 ms.openlocfilehash: 8ecce920810d52fadb311c6c4925c9fa4b6fb2b1
-ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30900059"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32255548"
 ---
 # <a name="form-a-query-to-find-sensitive-data-stored-on-sites"></a>Crear una consulta para buscar datos confidenciales almacenados en los sitios
 

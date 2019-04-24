@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: Configure las directivas de vínculos seguros para proteger a su organización de vínculos malintencionados en archivos de Word, Excel, PowerPoint y Visio, así como en mensajes de correo electrónico.
 ms.openlocfilehash: d02866b7ab9a4da30a14aa0c55a42935926e99e3
-ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30862482"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32267059"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Configurar directivas de vínculos seguros de Office 365 ATP
 

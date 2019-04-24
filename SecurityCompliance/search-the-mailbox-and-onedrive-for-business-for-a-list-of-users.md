@@ -13,11 +13,11 @@ search.appverid: MOE150
 ms.assetid: 5f4f8206-2d6a-4cb2-bbc6-7a0698703cc0
 description: Use la búsqueda de contenido y el script de este artículo para buscar en los sitios buzones y OneDrive para la empresa un grupo de usuarios.
 ms.openlocfilehash: 2f0954bf7822ca6c82165ad20b2c732ab0594257
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001283"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260938"
 ---
 # <a name="use-content-search-to-search-the-mailbox-and-onedrive-for-business-site-for-a-list-of-users"></a>Usar búsqueda de contenido para buscar una lista de usuarios en el buzón y el sitio de OneDrive para la Empresa
 

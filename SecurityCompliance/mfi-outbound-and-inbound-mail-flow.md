@@ -9,19 +9,19 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f2738dec-41b0-43c4-b814-84c0a4e45c6d
-description: Los administradores pueden obtener información sobre el widget de flujo de correo entrante y saliente en el panel de flujo de correo en el centro de seguridad & cumplimiento de Office 365.
-ms.openlocfilehash: b3e92228506267e674f2f428fab1ef54d5aee38e
-ms.sourcegitcommit: fec1010e405f14e792d650aee0312b78fced3343
+description: Los administradores pueden obtener información sobre el widget de flujo de correo entrante y saliente en el panel de flujo de correo en el centro de seguridad & cumplimiento.
+ms.openlocfilehash: 89408618e7c5b3c921382b3efa0257f263509b6d
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30720290"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32252228"
 ---
 # <a name="outbound-and-inbound-mail-flow"></a>Flujo de correo entrante y saliente
 
 El widget de **flujo de correo entrante y** saliente combina la información del **Informe de conector** y el anterior **Informe de información general de TLS** en un único punto.
 
-![El informe de flujo de correo entrante y saliente en el panel de flujo de correo en el centro de seguridad & cumplimiento de Office 365](media/2c591d1c-bad6-4b72-890e-f8fdfd4f447a.png)
+![El informe de flujo de correo entrante y saliente en el panel de flujo de correo en el centro de seguridad & cumplimiento](media/2c591d1c-bad6-4b72-890e-f8fdfd4f447a.png)
 
 La información del widget está relacionada con los conectores y la protección de mensajes TLS en Office 365. Para obtener más información, vea estos temas:
 
@@ -33,7 +33,7 @@ La información del widget está relacionada con los conectores y la protección
 
 El widget de **flujo de correo entrante y** saliente muestra el cifrado TLS que se usa para la conexión cuando los mensajes se entregan a y desde la organización de Office 365. Las conexiones que se establecen con otros servicios de correo electrónico se cifran mediante TLS cuando se ofrece TLS por ambas partes. El widget ofrece una instantánea de la última semana del flujo de correo. Al hacer clic en **Ver detalles**, el control flotante de **mensaje protegido en tránsito (por TLS)** muestra la protección de TLS para los mensajes que entran y salen de la organización.
 
-![El control flotante mensajes protegidos en tránsito (por TLS) en el centro de seguridad & cumplimiento de Office 365](media/825aa74c-413d-4141-8e3c-dfe68ae78eed.png)
+![El control flotante de mensajes protegidos en tránsito (por TLS) en el centro de seguridad & cumplimiento](media/825aa74c-413d-4141-8e3c-dfe68ae78eed.png)
 
 Actualmente, TLS 1,2 es la versión más segura de TLS que ofrece Office 365. A menudo, necesitará conocer el cifrado de TLS que se usa para las auditorías de cumplimiento. Probablemente no tiene una relación directa con la mayoría de los servidores de correo electrónico de origen y de destino (no es propietario de ellos, ni tampoco Microsoft), por lo que no tiene muchas opciones para mejorar el cifrado de TLS que usan dichos servidores.
 

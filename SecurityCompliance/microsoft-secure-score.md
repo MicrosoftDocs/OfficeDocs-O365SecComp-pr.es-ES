@@ -13,11 +13,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.openlocfilehash: fa76e2edd3f66595a47fb511881f15c07b441c77
-ms.sourcegitcommit: 8213c353954b92f5c3979bee4aa049da0fd28a18
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "31043251"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32252341"
 ---
 # <a name="microsoft-secure-score"></a>Puntuación de seguridad de Microsoft
 
@@ -25,7 +25,7 @@ Con la puntuación segura de Microsoft en el centro de seguridad 365 de Microsof
 
 La puntuación segura de Microsoft le ofrece una visualización sólida, la integración con otros productos de Microsoft, la comparación de sus puntuaciones con otras empresas, el filtrado por categoría y mucho más. Con la herramienta, puede completar acciones de mejora de la seguridad dentro de su organización y realizar un seguimiento del historial de su puntuación. La puntuación también puede reflejar Cuándo las soluciones de terceros han tratado las acciones de mejora recomendadas.  
 
-## <a name="how-it-works"></a>Funcionamiento
+## <a name="how-it-works"></a>Cómo funciona
 
 Se le proporcionan puntos para configurar las características de seguridad recomendadas, realizar tareas relacionadas con la seguridad (como ver informes) o solucionar la acción de mejora con una aplicación o un software de terceros. Algunas acciones se puntuan para su finalización parcial, como la habilitación de la autenticación multifactor (MFA) para los usuarios. La seguridad siempre debe equilibrarse con la facilidad de uso y no todas las recomendaciones funcionarán para su entorno.
 

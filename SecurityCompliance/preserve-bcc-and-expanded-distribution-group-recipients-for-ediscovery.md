@@ -11,15 +11,15 @@ localization_priority: Normal
 ms.assetid: eb8ddf15-0080-457e-9d83-e73e193da334
 description: La retención local, la retención por juicio y las directivas de retención de Office 365 le permiten conservar el contenido de los buzones para cumplir los requisitos de eDiscovery y cumplimiento normativo.
 ms.openlocfilehash: fcf5567bc50f25ce51d8d569d772559a376703d0
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999523"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261688"
 ---
 # <a name="preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery"></a>Conservar los destinatarios de grupos de distribución expandidos y CCO para la exhibición de documentos electrónicos
   
-La conservación local, la retención por juicio y [las directivas de retención de Office 365](http://go.microsoft.com/fwlink/?LinkID=827811) (creadas en el centro de seguridad & cumplimiento) le permiten conservar el contenido de los buzones para cumplir los requisitos de cumplimiento normativo y eDiscovery. La información sobre los destinatarios a los que se dirige directamente en los campos Para y CC de un mensaje se incluye en todos los mensajes de forma predeterminada, pero la organización puede requerir la capacidad de buscar y reproducir detalles sobre todos los destinatarios de un mensaje. Incluye: 
+La conservación local, la retención por juicio y [las directivas de retención de Office 365](http://go.microsoft.com/fwlink/?LinkID=827811) (creadas en el centro de seguridad & cumplimiento) le permiten conservar el contenido de los buzones para cumplir los requisitos de cumplimiento normativo y eDiscovery. La información sobre los destinatarios a los que se dirige directamente en los campos Para y CC de un mensaje se incluye en todos los mensajes de forma predeterminada, pero la organización puede requerir la capacidad de buscar y reproducir detalles sobre todos los destinatarios de un mensaje. Esto incluye: 
   
 - **Destinatarios a los que se dirigió mediante el campo CCO de un mensaje:** los destinatarios CCO se almacenan en el mensaje en el buzón de correo del remitente, pero no se incluyen en los encabezados del mensaje que se entrega a los destinatarios. 
     

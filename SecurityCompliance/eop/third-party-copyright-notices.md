@@ -12,11 +12,11 @@ ms.collection: Ent_O365_Hybrid
 ms.assetid: e94f1244-acb8-4ddd-b54e-5cc37f903bbf
 description: Avisos de derechos de autor de terceros para varias ofertas de Microsoft
 ms.openlocfilehash: b270f50e72e63f19ed8780ae50a7647d5d3bdc19
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30691869"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32255668"
 ---
 # <a name="third-party-copyright-notices"></a>Avisos de derechos de autor de terceros
 

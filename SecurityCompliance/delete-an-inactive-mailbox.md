@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: f5caf497-5e8d-4b7a-bfff-d02942f38150
 description: Si ya no necesita conservar el contenido de un buzón inactivo de Office 365, puede eliminar el buzón inactivo de forma permanente quitando la retención. Después de quitar la retención, el buzón inactivo se marca para su eliminación y se elimina de forma permanente después de su procesamiento.
 ms.openlocfilehash: f1aa29b0e40d02e4b6450202c0b2a34ae3075677
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001073"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257118"
 ---
 # <a name="delete-an-inactive-mailbox-in-office-365"></a>Eliminar un buzón inactivo en Office 365
 

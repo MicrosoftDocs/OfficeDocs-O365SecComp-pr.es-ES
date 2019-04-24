@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: 'Para ayudar a evitar la suplantación de identidad (phishing), Office 365 y Outlook.com requieren ahora el cumplimiento de RFC para de: addresses.'
 ms.openlocfilehash: e540e56a7a40d13a92719865fccefefa61de47c2
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30276150"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32253938"
 ---
 # <a name="how-office-365-validates-the-from-address-to-prevent-phishing"></a>Cómo Office 365 valida la dirección from para evitar la suplantación de identidad
 
@@ -152,7 +152,7 @@ En el caso de las direcciones de: que incluyen un valor para el nombre para most
   From: "Office 365" <sender@contoso.com>
   ```
 
-- Válido. La dirección de correo electrónico no se incluye entre corchetes angulares:
+- No válido. La dirección de correo electrónico no se incluye entre corchetes angulares:
     
   ```
   From: Office 365 sender@contoso.com
@@ -164,25 +164,25 @@ En el caso de las direcciones de: que incluyen un valor para el nombre para most
   From: Office 365 <sender@contoso.com>
   ```
 
-- Válido. Todo se encierra entre comillas, no solo el nombre para mostrar:
+- No válido. Todo se encierra entre comillas, no solo el nombre para mostrar:
     
   ```
   From: "Office 365 <sender@contoso.com>"
   ```
 
-- Válido. No hay paréntesis angulares alrededor de la dirección de correo electrónico:
+- No válido. No hay paréntesis angulares alrededor de la dirección de correo electrónico:
     
   ```
   From: "Office 365 <sender@contoso.com>" sender@contoso.com
   ```
 
-- Válido. No hay ningún espacio entre el nombre para mostrar y el corchete angular izquierdo:
+- No válido. No hay ningún espacio entre el nombre para mostrar y el corchete angular izquierdo:
     
   ```
   From: Office 365<sender@contoso.com>
   ```
 
-- Válido. No hay ningún espacio entre el comillas de cierre que rodea el nombre para mostrar y el corchete angular de apertura.
+- No válido. No hay ningún espacio entre el comillas de cierre que rodea el nombre para mostrar y el corchete angular de apertura.
     
   ```
   From: "Office 365"<sender@contoso.com>

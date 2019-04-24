@@ -15,11 +15,11 @@ search.appverid:
 - MET150
 description: Esta solución le indica el aspecto que podrían tener los ataques cibernéticos más comunes en Office 365 y cómo responder a ellos.
 ms.openlocfilehash: 13e57d914138edc44d0001781459852fba994f61
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30656026"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262362"
 ---
 # <a name="office-365-security-incident-response"></a>Respuesta a incidentes de seguridad de Office 365
 
@@ -47,11 +47,11 @@ Consulte esta sección mensualmente, ya que se agregarán más artículos a lo l
 
 - [Responder a una cuenta de correo electrónico en peligro en Office 365](responding-to-a-compromised-email-account.md)
 
-## <a name="secure-office-365-like-a-cybersecurity-pro"></a>Proteger Office 365 como un Cybersecurity Pro
-Su suscripción a Office 365 incluye un eficaz conjunto de capacidades de seguridad que puede usar para proteger sus datos y sus usuarios.  Use el [plan de desarrollo de seguridad de Office 365: principales prioridades de los primeros 30 días, 90 días y más allá](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352) de implementar los procedimientos recomendados de Microsoft para proteger su inquilino de Office 365.
-- Tareas que se deben realizar en los primeros 30 días.  Estos tienen un efecto inmediato y tienen un impacto bajo para los usuarios.
-- Tareas que se deben realizar en 90 días. Estos requieren un poco más de tiempo para planear e implementar, pero mejorar de manera significativa su postura de seguridad
-- Más allá de 90 días. Estas mejoras se basan en el trabajo de los primeros 90 días.
+## <a name="secure-office-365-like-a-cybersecurity-pro"></a>Proteger Office 365 como un profesional de ciberseguridad
+Su suscripción a Office 365 incluye un potente conjunto de capacidades de seguridad que puede usar para proteger sus datos y los usuarios.  Use el [Plan de seguridad de Office 365: principales prioridades para los primeros 30 días, 90 días y en adelante](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352) para implementar las prácticas recomendadas de Microsoft para proteger su espacio empresarial de Office 365.
+- Tareas a realizar en los primeros 30 días.  Estas tienen un efecto inmediato y de bajo impacto para los usuarios.
+- Tareas para llevar a cabo en 90 días. Estos requieren un poco más de tiempo para planear e implementar, pero mejorar de manera significativa su postura de seguridad
+- Más de 90 días. Estas mejoras se crean en el trabajo de los 90 primeros días.
 
 
 

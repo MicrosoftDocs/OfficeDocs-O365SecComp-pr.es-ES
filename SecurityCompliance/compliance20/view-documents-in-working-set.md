@@ -13,25 +13,23 @@ search.appverid:
 - MET150
 description: ''
 ms.openlocfilehash: 1502308fab4f27ed9e93e1dff204bdddf6ae726e
-ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30357461"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32241603"
 ---
 # <a name="view-documents-in-a-working-set"></a>Ver documentos de un conjunto de trabajo
 
 La exhibición avanzada de documentos electrónicos (vista previa) muestra contenido a través de varios visores cada uno con fines distintos. Se pueden usar los distintos visores haciendo clic en cualquier documento dentro de un conjunto de trabajo. Los visores que se proporcionan actualmente son:
 
-- Metadatos de archivo  
-
+- Metadatos de archivo
 - Vista nativa
 - Vista de texto
 - Vista de anotar
 - Vista convertida
 
-## <a name="file-metadata"></a>Metadatos de archivo  
-
+## <a name="file-metadata"></a>Metadatos de archivo
 
 Este panel puede activarse o desactivarse para mostrar varios metadatos asociados con el documento. Aunque la cuadrícula de resultados de búsqueda se puede personalizar para Mostrar metadatos específicos, hay casos en los que el desplazamiento horizontal puede resultar difícil mientras se revisan los datos. El panel metadatos de archivo permite al usuario alternar una vista dentro del visor.
 

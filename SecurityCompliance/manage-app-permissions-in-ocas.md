@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: 2062c312-b1e4-4ce7-8cb2-ea39bc0dfdad
 description: Las aplicaciones de OAuth en Office 365 Cloud App Security ayudan a administrar las aplicaciones que los usuarios descargan para usar con datos de Office 365
 ms.openlocfilehash: 0d9916414d55abb73fd99eaf30c3b6df0648b191
-ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30862592"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260238"
 ---
 # <a name="manage-oauth-apps-using-office-365-cloud-app-security"></a>Administrar aplicaciones de OAuth con Office 365 Cloud App Security
 
@@ -43,7 +43,7 @@ En este artículo se describe dónde dirigirse a administrar aplicaciones de OAu
 
 En la tabla siguiente se describen los controles y las opciones disponibles en la página Administrar aplicaciones de OAuth.
   
-|**Elemento**|**Descripción**|
+|**Item**|**Descripción**|
 |:-----|:-----|
 |Icono básico en la barra de consulta de la aplicación  <br/> ![Icono que indica la vista de consulta básica para la consulta](media/a459bc51-e86b-43d5-a0ee-661b9fb4afc9.png)|Seleccione esta opción para cambiar a la vista avanzada.  <br/> (Si ve **Basic**, está usando la vista avanzada)  <br/> |
 |Icono avanzado en la barra de consulta de la aplicación  <br/> ![Icono que indica la vista de consulta avanzada para la consulta](media/9958d832-2c81-45ed-a642-d926310ba6b6.png)|Seleccione esta opción para cambiar a la vista básica.  <br/> (Si ve **avanzado**, está usando la vista básica).  <br/> |

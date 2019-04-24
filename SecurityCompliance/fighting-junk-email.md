@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: El plan de seguridad para el correo electrónico de Microsoft incluye un enfoque sin igual que abarca diferentes productos. En las plataformas de correo electrónico de Microsoft se aplica tecnología de Exchange Online Protection (EOP) de filtrado de correo no deseado y protección contra suplantación de identidad para proporcionar a los usuarios las últimas herramientas e innovaciones contra el correo no deseado y la suplantación de identidad en toda la red. El objetivo de EOP es ofrecer un servicio de correo electrónico completo y práctico que ayude a detectar el correo no deseado, las amenazas de correo electrónico fraudulento (phishing) y los virus, y que proteja a los usuarios de todo ello.
 ms.openlocfilehash: 510b04d3f111c269d5f8579abcc809ddc283636b
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692859"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32255448"
 ---
 # <a name="fighting-junk-email-sent-to-office-365"></a>Lucha contra el correo no deseado enviado a Office 365
 

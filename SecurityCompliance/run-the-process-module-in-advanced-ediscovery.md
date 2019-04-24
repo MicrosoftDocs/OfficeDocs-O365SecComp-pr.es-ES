@@ -1,5 +1,5 @@
 ---
-title: Ejecutar el módulo de proceso en eDiscovery avanzado de Office 365
+title: Ejecutar el módulo de proceso en Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,13 +14,13 @@ search.appverid:
 ms.assetid: dbc1e251-0596-443b-ac9b-f398ba955b73
 description: 'Obtenga información sobre las directrices para preparar archivos de casos de Office 365 datos para analizar con Office 365 Advanced eDiscovery.  '
 ms.openlocfilehash: 19d50bda21f752ec7c22fe52b6fa7272592de128
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216120"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261038"
 ---
-# <a name="run-the-process-module-in-office-365-advanced-ediscovery"></a>Ejecutar el módulo de proceso en eDiscovery avanzado de Office 365
+# <a name="run-the-process-module-in-office-365-advanced-ediscovery"></a>Ejecutar el módulo de proceso en Office 365 Advanced eDiscovery
 
 Los archivos de casos se cargan en la exhibición avanzada de documentos electrónicos durante el **proceso**de **preparación** \> . 
   
@@ -39,7 +39,7 @@ Los archivos de casos se cargan en la exhibición avanzada de documentos electr�
     
 - **Tipo de archivo y nombre**:
     
-  - EDiscovery avanzado puede procesar archivos de distintos formatos y extraer archivos nativos cargados en un formato estándar, como \*. TXT, HTML o. XML. el procesamiento de archivos de texto es más rápido que los archivos nativos. Los archivos de texto exTraídos se almacenan en la carpeta Case.
+  - EDiscovery avanzado puede procesar archivos de distintos formatos y extraer archivos nativos cargados en un formato estándar, como \*. TXT, HTML o. XML. El procesamiento de archivos de texto es más rápido que los archivos nativos. Los archivos de texto exTraídos se almacenan en la carpeta Case.
     
   - No cargue archivos que no se puedan extraer, como archivos del sistema o imágenes gráficas. Estos archivos pueden retrasar el procesamiento.
     

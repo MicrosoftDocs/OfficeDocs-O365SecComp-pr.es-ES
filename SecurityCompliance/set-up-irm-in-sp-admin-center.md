@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: 239ce6eb-4e81-42db-bf86-a01362fed65c
 description: Obtenga información sobre cómo usar IRM de SharePoint Online a través de Microsoft Azure Active Directory Rights Management Services (RMS) para proteger listas y bibliotecas de documentos de SharePoint.
 ms.openlocfilehash: 6b68135720846a0e74f5b0272dc5f25272381284
-ms.sourcegitcommit: 54a2cbe5d13f448e0c28655bdf88deb9e5434cac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30935135"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260778"
 ---
 # <a name="set-up-information-rights-management-irm-in-sharepoint-admin-center"></a>Set up Information Rights Management (IRM) in SharePoint admin center.
 

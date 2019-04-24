@@ -1,5 +1,5 @@
 ---
-title: Información sobre el flujo de correo en el centro de seguridad & cumplimiento
+title: Reportes de flujo de Correo en el Centro de seguridad y cumplimiento
 ms.author: chrisda
 author: chrisda
 manager: serdars
@@ -10,13 +10,13 @@ localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: Los administradores pueden obtener información sobre el panel del flujo de correo en el centro de seguridad & cumplimiento.
 ms.openlocfilehash: 1e18bcb381a6b557d3141c0c17b8433cfcd00049
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455152"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32252398"
 ---
-# <a name="mail-flow-insights-in-the-security--compliance-center"></a>Información sobre el flujo de correo en el centro de seguridad & cumplimiento
+# <a name="mail-flow-insights-in-the-security--compliance-center"></a>Reportes de flujo de Correo en el Centro de seguridad y cumplimiento
 
 Los administradores pueden usar el panel de flujo de correo en el centro de seguridad & cumplimiento para descubrir tendencias, información y emprender acciones para corregir problemas relacionados con el flujo de correo en su organización de Office 365.
 

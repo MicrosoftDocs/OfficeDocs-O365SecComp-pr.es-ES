@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 82c6cb419ce00aca0d636083aa41a3384cb6bb01
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31030532"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257038"
 ---
 # <a name="view-the-audit-activity-of-people-of-interest"></a>Ver la actividad de auditoría de personas de interés
 

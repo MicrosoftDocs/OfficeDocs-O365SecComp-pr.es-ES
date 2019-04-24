@@ -14,11 +14,11 @@ search.appverid:
 ms.collection: M365-security-compliance
 description: Obtenga información sobre las capacidades de investigación y respuesta automatizadas en Office 365 Advanced Threat Protection.
 ms.openlocfilehash: 223a28a7f63f101dd5644e433d72a3ddf6e5dc23
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000443"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32249946"
 ---
 # <a name="automated-investigation-and-response-air-with-office-365"></a>Investigación y respuesta automatizadas (AIR) con Office 365
 
@@ -82,7 +82,7 @@ Cada paso de alto nivel incluye varios pasos secundarios que se ejecutan para pr
 
 Cuando un usuario de la organización envía un mensaje de correo electrónico y lo notifica a Microsoft mediante el [complemento de mensajes de informe para Outlook o Outlook Web Access](enable-the-report-message-add-in.md), el informe también se envía al sistema y es visible en el explorador en la vista notificada por el usuario. Este mensaje de usuario ha informado ahora de una alerta informativa basada en el sistema, que inicia automáticamente la guía de la investigación.
 
-Durante la fase de investigación raíz, se evalúan varios aspectos del correo electrónico. Entre estos, incluyen los siguientes:
+Durante la fase de investigación raíz, se evalúan varios aspectos del correo electrónico. Entre ellos se incluyen:
 - Una determinación del tipo de amenaza que podría ser;
 - Quién lo envió;
 - Dónde se envió el correo electrónico desde (infraestructura de envío);
@@ -145,7 +145,7 @@ La página investigaciones automatizadas muestra las investigaciones de su organ
 
 ![Página principal de investigación para AIR](media/air-maininvestigationpage.png) 
   
-Puede:
+Podrá:
 - Vaya directamente a una investigación (seleccione un **identificador de investigación**).
 - Aplicar filtros. Elija entre el **tipo de investigación**, **el intervalo de tiempo**, el **Estado**o una combinación de estos.
 - ExPorte los datos a un archivo CSV.
@@ -170,7 +170,7 @@ Al abrir una investigación específica, verá la página gráfico de investigac
 
 ![Página de gráfico de investigación de aire](media/air-investigationgraphpage.png)
 
-Puede:
+Podrá:
 - Obtenga información general visual de la investigación actual.
 - Ver un resumen de la duración de la investigación.
 - Seleccione un nodo de la visualización para ver los detalles de ese nodo.
@@ -182,7 +182,7 @@ En la pestaña **alertas** de una investigación, puede ver las alertas relevant
 
 ![Página de alertas de AIR](media/air-investigationalertspage.png)
 
-Puede:
+Podrá:
 - Obtenga información general visual de la alerta desencadenadora actual y de cualquier alerta asociada.
 - Seleccione una alerta de la lista para abrir una página emergente que muestre los detalles de la alerta completa.
 
@@ -215,7 +215,7 @@ Como ejemplo, considere el siguiente escenario. El primer clúster de tres mensa
 
 ![Página de investigación de correo electrónico de AIR](media/air-investigationemailpage.png)
 
-Puede:
+Podrá:
 - Obtenga información general visual de los resultados y amenazas de clúster actuales encontrados.
 - Haga clic en una entidad de clúster o en una lista de amenazas para abrir una página emergente que muestre los detalles de alerta completos.
 - Para investigar más detalladamente el clúster de correo electrónico, haga clic en el vínculo "abrir en el explorador" que se encuentra en la parte superior de la pestaña "detalles del clúster de correo electrónico"
@@ -232,7 +232,7 @@ Por ejemplo, en la siguiente imagen, AIR ha identificado indicadores de peligro 
 
 ![Página de usuarios de investigación de aire](media/air-investigationuserspage.png)
 
-Puede:
+Podrá:
 - Obtenga una introducción visual de los resultados de usuario identificados y los riesgos encontrados.
 - Seleccione un usuario para abrir una página emergente que muestre todos los detalles de la alerta.
 
@@ -244,7 +244,7 @@ En la pestaña **máquinas** , puede ver todos los equipos identificados como pa
 
 Como parte de la investigación, AIR correlaciona las amenazas de correo electrónico en los dispositivos. Por ejemplo, una investigación pasa un hash de archivo malintencionado a [ATP de Windows Defender](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) para investigar. Esto permite la investigación automatizada de las máquinas pertinentes para los usuarios, para ayudar a garantizar que las amenazas se dirijan en la nube y en los extremos. 
 
-Puede:
+Podrá:
 - Obtenga información general visual de las amenazas y los equipos actuales encontrados.
 - Seleccione un equipo para abrir una vista en la investigación de [ATP de Windows Defender](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection) relacionada en el centro de seguridad ATP de Windows Defender.
 
@@ -256,7 +256,7 @@ Aquí, puede ver las entidades investigadas y los detalles de los tipos de entid
 
 ![Página de entidades de investigación de aire](media/air-investigationentitiespage.png)
 
-Puede:
+Podrá:
 - Obtenga información general visual de las entidades de investigación y las amenazas encontradas.
 - Seleccione una entidad para abrir una página emergente que muestre los detalles de la entidad relacionada.
 
@@ -268,7 +268,7 @@ En la pestaña **registro** , puede ver todos los pasos de la guía que se han p
 
 ![Página de registro de investigación de aire](media/air-investigationlogpage.png)
 
-Puede:
+Podrá:
 - Vea una descripción general visual de los pasos de la guía realizados.
 - ExPorte los resultados a un archivo CSV.
 - Filtrar la vista.
@@ -281,7 +281,7 @@ Acciones Capture los pasos que Microsoft recomienda realizar al final de una inv
 
 ![Página de acción de investigaciones de aire](media/air-investigationactionspage.png)
 
-Puede:
+Podrá:
 - Obtenga información general visual de las acciones recomendadas de la guía.
 - Seleccione una sola acción o varias acciones.
 - Aprobar o rechazar acciones recomendadas con comentarios.

@@ -1,5 +1,5 @@
 ---
-title: Exhibición de documentos electrónicos avanzada de Office 365
+title: eDiscovery avanzado de Office 365
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -13,13 +13,13 @@ search.appverid:
 ms.assetid: fd53438a-a760-45f6-9df4-861b50161ae4
 description: Obtenga información sobre cómo Office 365 Advanced eDiscovery puede ayudarle a analizar datos dentro de Office 365, a racionalizar las revisiones de documentos y a tomar decisiones para la exhibición de documentos electrónicos eficaz.
 ms.openlocfilehash: 203d3bfa627064704b4123a757db94bc3478b7bc
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000653"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262962"
 ---
-# <a name="office-365-advanced-ediscovery"></a>Exhibición de documentos electrónicos avanzada de Office 365
+# <a name="office-365-advanced-ediscovery"></a>eDiscovery avanzado de Office 365
 
 > [!NOTE]
 > Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -30,7 +30,7 @@ EDiscovery avanzado simplifica y acelera el proceso de revisión de documentos m
   
  **¿Por qué eDiscovery avanzado?** Office 365 Advanced eDiscovery se basa en el conjunto existente de capacidades de eDiscovery en Office 365. Por ejemplo, puede usar la característica de búsqueda en el centro de seguridad &amp; y cumplimiento de Office 365 para realizar una búsqueda inicial de todos los orígenes de contenido de su organización para identificar y recopilar los datos que pueden ser relevantes para un caso legal específico. A continuación, puede realizar análisis sobre esos datos mediante la aplicación del análisis de texto, el aprendizaje de la máquina y las capacidades de codificación de relevancia/predictivo de eDiscovery avanzado. Esto puede ayudar a su organización a procesar rápidamente miles de mensajes de correo electrónico, documentos y otros tipos de datos para encontrar los elementos que son más relevantes para un caso específico. El conjunto de datos reducido se puede exportar fuera de Office 365 para revisarlo más adelante. 
   
-## <a name="office-365-advanced-ediscovery"></a>Exhibición de documentos electrónicos avanzada de Office 365
+## <a name="office-365-advanced-ediscovery"></a>eDiscovery avanzado de Office 365
 
 En los siguientes temas se describe la configuración y el uso de las características y los módulos avanzados de eDiscovery:
   

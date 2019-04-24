@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo configurar la compatibilidad con mensajes anónimos desde orígenes IPv6 para Exchange Online Protection y Exchange Online.
 ms.openlocfilehash: 5d87dc929d2d67681b21eb46a4aaa52ca32caff9
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693359"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260258"
 ---
 # <a name="support-for-anonymous-inbound-email-messages-over-ipv6"></a>Compatibilidad para mensajes de correo electrónico entrante anónimos a través de IPv6
 
@@ -41,7 +41,7 @@ Si no ha optado por recibir mensajes a través de IPv6 y el remitente intenta fo
   
  `550 5.2.1 Service unavailable, [contoso.com] does not accept email over IPv6.`
   
-## <a name="for-more-information"></a>Para obtener más información
+## <a name="for-more-information"></a>Más información
 
 [Compatibilidad para la validación de mensajes firmados con DKIM](support-for-validation-of-dkim-signed-messages.md)
   

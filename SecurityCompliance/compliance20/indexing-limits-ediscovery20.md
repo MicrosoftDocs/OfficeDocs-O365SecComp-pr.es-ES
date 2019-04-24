@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: ccafedc476e495d075ece878023a4a297b9d5061
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295223"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256288"
 ---
 # <a name="indexing-limits-in-advanced-ediscovery-preview"></a>Límites de indización en la exhibición avanzada de documentos electrónicos (versión preliminar)
 

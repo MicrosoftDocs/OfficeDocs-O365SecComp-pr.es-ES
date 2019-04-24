@@ -13,11 +13,11 @@ search.appverid: MOE150
 ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
 description: Use la herramienta búsqueda de contenido eDiscovery para buscar elementos que se importaron a los buzones en Office 365 desde un origen de datos de terceros. Puede crear una consulta para buscar todos los elementos importados o crear una consulta para buscar determinados tipos de datos de terceros. En este artículo se enumeran los valores que se pueden usar en una consulta de palabras clave para buscar en los tipos de datos de terceros que se pueden importar a Office 365.
 ms.openlocfilehash: 361ead435d397464452c5b58ecf251a7322ced05
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999713"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32263782"
 ---
 # <a name="use-content-search-to-search-third-party-data-that-was-imported-to-office-365"></a>Usar la búsqueda de contenido para buscar datos de terceros que se importaron a Office 365
 

@@ -1,5 +1,5 @@
 ---
-title: Buscar en el registro de auditoría actividades de usuarios y administradores de Office 365
+title: Buscar en el registro de auditoría la actividad de usuario y de administrador en Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -13,13 +13,13 @@ search.appverid: MOE150
 ms.assetid: 57ca5138-0ae0-4d34-bd40-240441ef2fb6
 description: 'El registro de auditoría de Office 365 es un registro de auditoría unificado. ¿Por qué un registro de auditoría unificado? Como los eventos de la mayoría de los servicios de Office 365 a los que está suscrito la organización se registran en un único registro de auditoría que puede buscar. Esto significa que puede buscar actividades de usuario y de administrador en estos servicios:'
 ms.openlocfilehash: d964a1404dd022ba9b56e5d86766c5fc6eabf10a
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296523"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265862"
 ---
-# <a name="search-the-audit-log-for-user-and-admin-activity-in-office-365"></a>Buscar en el registro de auditoría actividades de usuarios y administradores de Office 365
+# <a name="search-the-audit-log-for-user-and-admin-activity-in-office-365"></a>Buscar en el registro de auditoría la actividad de usuario y de administrador en Office 365
 
 El registro de auditoría de Office 365 es un registro de auditoría unificado. ¿Por qué un registro de auditoría unificado? Como los eventos de la mayoría de los servicios de Office 365 a los que está suscrito la organización se registran en un único registro de auditoría que puede buscar. Esto significa que puede buscar actividades de usuario y de administrador en estos servicios: 
   
@@ -42,7 +42,7 @@ Hay algunas cosas que debe hacer antes de poder buscar en el registro de auditor
     
 - [Habilitar la auditoría](enable-mailbox-auditing.md) de buzones de correo para que pueda buscar eventos relacionados con buzones de correo; como cuando un usuario inicia sesión en su buzón o depura elementos de la carpeta elementos recuperables 
     
- ## <a name="search-the-audit-log"></a>Buscar en el registro de auditoría
+ ## <a name="search-the-audit-log"></a>Búsquedas en el registro de auditoría
   
 Después de activar la auditoría, puede buscar cientos de tipos individuales de eventos de varios servicios de Office 365.
   

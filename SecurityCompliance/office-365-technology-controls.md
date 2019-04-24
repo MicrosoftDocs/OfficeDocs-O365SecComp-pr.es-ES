@@ -3,23 +3,22 @@ title: Controles de tecnología de Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 'Resumen: información general sobre las prácticas de control de tecnología de Microsoft para Office 365.'
-ms.openlocfilehash: 77dee44ec648ea2aa1dab61776089bf7d9e2580a
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: a8dcb65880fc729fc067b2f2bcf25c7db76dbca9
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220380"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262342"
 ---
 # <a name="office-365-technology-controls"></a>Controles de tecnología de Office 365 
 
@@ -34,7 +33,7 @@ Lockbox procesa solicitudes de permisos que conceden a los ingenieros la capacid
 
 La caja de caja de cliente de Office 365 puede ayudarle a cumplir con las obligaciones de cumplimiento, como las que se encuentran en FedRAMP e HIPAA, si necesita procedimientos en su ubicación para la autorización explícita de acceso a datos. En la instancia rara, cuando un ingeniero de servicios de Microsoft necesita tener acceso a los datos, sólo tiene que conceder acceso a los datos necesarios para resolver el problema y durante un período de tiempo limitado. Las acciones llevadas a cabo por el ingeniero de soporte se registran con fines de auditoría y son accesibles a través de la [API de actividad de administración de Office 365](https://msdn.microsoft.com/library/office/dn707383.aspx) y el [centro de seguridad y cumplimiento](http://protection.office.com/). La caja de seguridad del cliente inserta el cliente en el proceso de aprobación de la liquidación y les proporciona la capacidad de controlar la autorización de Microsoft Access a su contenido de Exchange online o de SharePoint Online para las operaciones de servicio.
 
->**Nota**: las cajas de caja de clientes están disponibles en [Office 365 Enterprise E5](https://products.office.com/business/office-365-enterprise-e5-business-software) y como una compra de complemento, pero debe realizarse una acción manual en el centro de administración de Office 365 (en configuración del servicio | Caja de caja del cliente) para habilitarla. Para obtener más información, consulte [Office 365 Customer Lockbox](https://support.office.com/article/Office-365-Customer-Lockbox-Requests-36f9cdd1-e64c-421b-a7e4-4a54d16440a2)requests.
+>**Nota**: las cajas de caja de clientes están disponibles en [Office 365 Enterprise E5](https://products.office.com/business/office-365-enterprise-e5-business-software) y como una compra de complemento, pero debe realizarse una acción manual en el centro de administración de Microsoft 365 (en configuración del servicio | Caja de caja del cliente) para habilitarla. Para obtener más información, consulte [Solicitudes de caja de seguridad del cliente de Office 365](https://support.office.com/article/Office-365-Customer-Lockbox-Requests-36f9cdd1-e64c-421b-a7e4-4a54d16440a2).
 
 Todas las solicitudes de servicio de Exchange Online y SharePoint Online se controlan mediante el sistema de liquidación. Y con caja de caja del cliente, cualquier operación de servicio que requiera el acceso a estos servicios con la exposición a los datos de los clientes pasa por el proceso de aprobación de la liquidación y, a continuación, permite al cliente aprobar o rechazar la solicitud a partir de ese momento.
  

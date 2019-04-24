@@ -14,16 +14,16 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: La configuración básica del filtro de correo no deseado incluye seleccionar la acción que se va a realizar en los mensajes identificados como correo no deseado y elegir si se deben filtrar los mensajes escritos en idiomas específicos o enviados desde países o regiones específicos.
-ms.openlocfilehash: 9cfccc3602758de2426940cea1c6abd91871d7c2
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.openlocfilehash: 5773256e18e1910405bcc04a1869f631734447a4
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693479"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258818"
 ---
 # <a name="configure-your-spam-filter-policies"></a>Configurar las directivas de filtro de correo no deseado
   
-La configuración básica del filtro de correo no deseado incluye seleccionar la acción que se debe realizar en los mensajes identificados como correo no deseado. La configuración de la Directiva de filtro de correo no deseado solo se aplica a los mensajes entrantes. Puede editar la Directiva de filtro de correo no deseado predeterminada para configurar las opciones del filtro de correo no deseado en toda la compañía y crear directivas personalizadas de filtro de correo no deseado y, a continuación, aplicarlas a usuarios, grupos o dominios específicos de la organización. Las directivas personalizadas siempre tienen prioridad sobre la predeterminada. Puede cambiar el orden en el que se ejecutan las directivas personalizadas cambiando la prioridad de cada directiva personalizada; sin embargo, solo se aplicará la Directiva de prioridad más alta si hay varias directivas que cumplan los criterios establecidos. 
+La configuración básica del filtro de correo no deseado incluye seleccionar la acción que se debe realizar en los mensajes identificados como correo no deseado. La configuración de la Directiva de filtro de correo no deseado solo se aplica a los mensajes entrantes. Puede editar la Directiva de filtro de correo no deseado predeterminada para configurar las opciones del filtro de correo no deseado en toda la compañía y crear directivas personalizadas de filtro de correo no deseado y, a continuación, aplicarlas a usuarios, grupos o dominios específicos de la organización. Las directivas personalizadas siempre tienen prioridad sobre la predeterminada. Puede cambiar el orden en el que se ejecutan las directivas personalizadas cambiando la prioridad de cada directiva personalizada; sin embargo, solo se aplicará la Directiva de prioridad más alta si hay varias directivas que cumplan los criterios establecidos.
   
 > [!IMPORTANT]
 > Para clientes independientes de Exchange Online Protection (EOP): de forma predeterminada, los filtros de correo no deseado de EOP envían mensajes detectados como correo no deseado a la carpeta de correo no deseado de cada destinatario. Sin embargo, para asegurarse de que la acción **mover mensaje a la carpeta correo no deseado** funciona con los buzones locales, debe configurar las reglas de flujo de correo de Exchange (también conocidas como reglas de transporte) en los servidores locales para detectar los encabezados de correo no deseado que agrega EOP. Para más información, consulte [Asegurarse de que el correo no deseado se enruta a la carpeta de correo no deseado de cada usuario](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). 
@@ -147,7 +147,7 @@ XJS*C4JDBQADN1.NSBN3*2IDNEN*GTUBE-STANDARD-ANTI-UBE-TEST-EMAIL*C.34X
 
 Puede habilitar las opciones avanzadas de filtrado de correo no deseado si quiere usar un filtrado de correo no deseado más agresivo. Para obtener información sobre la configuración genérica de correo no deseado que se aplica a toda la organización, consulte [Usar listas seguras y otras técnicas para evitar el marcado erróneo de mensajes como correo no deseado](https://go.microsoft.com/fwlink/p/?LinkId=534224) o [Bloquear el correo no deseado con el filtro de correo no deseado de Office 365 para evitar los problemas de falso negativo](https://go.microsoft.com/fwlink/p/?LinkId=534225). Esta información es útil si tiene control de nivel de administrador y quiere evitar falsos positivos o falsos negativos.
    
-## <a name="for-more-information"></a>Para obtener más información
+## <a name="for-more-information"></a>Más información
 <a name="sectionSection6"> </a>
 
 [Configurar la directiva de filtro de conexión](configure-the-connection-filter-policy.md)

@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: Cuando configure las directivas de datos adjuntos seguros de ATP, elija la entrega dinámica para evitar retrasos en los mensajes y permitir a los usuarios obtener una vista previa de los datos adjuntos que se están analizando.
 ms.openlocfilehash: 567b5f0c5bc75123169073bf5dc33de191187846
-ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31958571"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257228"
 ---
 # <a name="dynamic-delivery-and-previewing-with-office-365-atp-safe-attachments"></a>Entrega dinámica y vista previa con datos adJuntos seguros de Office 365 ATP
 

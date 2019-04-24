@@ -1,5 +1,5 @@
 ---
-title: Configurar cargas para agregar archivos importados en eDiscovery avanzado de Office 365
+title: Configurar cargas para agregar archivos importados en la exhibición avanzada de documentos electrónicos de Office 365
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,20 +14,20 @@ search.appverid:
 ms.assetid: 0e0a9d04-294f-4f54-8bf1-b32d81345126
 description: 'Revise los pasos para agregar archivos importados a la última carga definida, o lote, de archivos antes de realizar el aprendizaje de relevancia en eDiscovery avanzado de Office 365.  '
 ms.openlocfilehash: 8c5101628b468719f8aa4f81a4c73cbbb226105f
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215990"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260748"
 ---
-# <a name="set-up-loads-to-add-imported-files-in-office-365-advanced-ediscovery"></a>Configurar cargas para agregar archivos importados en eDiscovery avanzado de Office 365
+# <a name="set-up-loads-to-add-imported-files-in-office-365-advanced-ediscovery"></a>Configurar cargas para agregar archivos importados en la exhibición avanzada de documentos electrónicos de Office 365
 
 > [!NOTE]
 > Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
   
 En eDiscovery avanzado, una carga es un nuevo lote de archivos que se agregan a un caso. De forma predeterminada, se define una carga y se agregan todos los archivos importados. Antes de realizar la formación de relevancia, los archivos importados deben agregarse a la carga. 
   
-Tenga en cuenta los siguientes escenarios:
+Considere los escenarios siguientes:
   
 - Se sabe que los archivos nuevos son similares a los archivos anteriores cargados en la base de datos de casos o la carga anterior de archivos fue un conjunto aleatorio de la colección de archivos. En este caso, agregue los archivos importados a la carga de archivos actual.
     
@@ -96,7 +96,7 @@ Las cargas graduales y la funcionalidad de puesta en marcha varían de la siguie
     
 2. En cargar **Administración**, haga clic **+** en el icono para agregar una carga. Se muestra un mensaje de confirmación. 
     
-3. Haga clic en **sí** para continuar. Se muestra el cuadro de diálogo **Agregar nueva carga** . 
+3. Haga clic en **Sí** para continuar. Se muestra el cuadro de diálogo **Agregar nueva carga** . 
     
     > [!NOTE]
     > Solo se puede Agregar una nueva carga si se han realizado acciones con la carga anterior. 

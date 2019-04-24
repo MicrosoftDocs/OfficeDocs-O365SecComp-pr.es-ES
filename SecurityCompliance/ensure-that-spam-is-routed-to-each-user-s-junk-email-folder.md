@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: Los administradores pueden obtener información sobre cómo enrutar correo no deseado a las carpetas de correo no deseado del usuario en Exchange Online Protection.
 ms.openlocfilehash: 30b115b5d7f8f02767e3e380b672341765052a9c
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692819"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256668"
 ---
 # <a name="ensure-that-spam-is-routed-to-each-users-junk-email-folder"></a>Asegurarse de que el correo no deseado se enruta a la carpeta de correo no deseado de cada usuario
 

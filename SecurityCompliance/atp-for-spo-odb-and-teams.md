@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: Amplíe la protección contra amenazas avanzada de Office 365 a los archivos de SharePoint Online, OneDrive para la empresa y Microsoft Teams para permitir una colaboración más segura para su organización.
 ms.openlocfilehash: 55bd613cd89819906773d663deb6278f804cb9de
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692449"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32249660"
 ---
 # <a name="office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Office 365 ATP para SharePoint, OneDrive y Microsoft Teams
 
@@ -28,7 +28,7 @@ ms.locfileid: "30692449"
 
 Los usuarios comparten archivos de forma regular y colaboran con SharePoint, OneDrive y Microsoft Teams. Con [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP), su organización puede colaborar de forma más segura. ATP ayuda a detectar y bloquear archivos identificados como malintencionados en los sitios de grupo y las bibliotecas de documentos.  
   
-## <a name="how-it-works"></a>Funcionamiento
+## <a name="how-it-works"></a>Cómo funciona
 
 Cuando un archivo en SharePoint Online, OneDrive para la empresa y Microsoft Teams se ha identificado como malintencionado, ATP se integra directamente con los almacenes de archivos para bloquear el archivo. La imagen siguiente muestra un ejemplo de un archivo malintencionado detectado en una biblioteca.
   

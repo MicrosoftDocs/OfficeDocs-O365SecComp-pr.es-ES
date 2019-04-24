@@ -3,23 +3,22 @@ title: Controles de acceso empresarial de Office 365 Yammer
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 'Resumen: un breve resumen sobre los controles de acceso empresarial de Yammer en el entorno de producción.'
-ms.openlocfilehash: 76b62e7ea026a52d822e5a213461e930b1d595e3
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 61598235a010aaa1c578c449cb054073212a41f9
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30217890"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262352"
 ---
 # <a name="yammer-enterprise-access-controls"></a>Controles de acceso de Yammer Enterprise 
 

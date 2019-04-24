@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: c9e7160f-2c34-4bd0-a548-5ddcc862eaef
 description: ¿Alguna vez se ha preguntado cómo proteger su organización realmente en Office 365? La puntuación segura está aquí para ayudar. La puntuación segura analiza la seguridad de la organización en función de las actividades habituales y la configuración de seguridad de Office 365 y asigna una puntuación.
 ms.openlocfilehash: dd0dc87910853eba9f2ec3ec6752e857462b46e5
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220360"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262492"
 ---
 # <a name="office-365-secure-score"></a>Puntuación segura de Office 365
 
@@ -36,7 +36,7 @@ El widget incluye un vínculo a su panel de calificaciones seguras.
 
 ![Panel de calificaciones seguras](media/SecureScore-WelcomeScreen.png)
   
-## <a name="how-it-works"></a>Funcionamiento
+## <a name="how-it-works"></a>Cómo funciona
 
 La puntuación segura determina qué servicios de Office 365 está usando (como OneDrive, SharePoint y Exchange), a continuación, compara la configuración y las actividades con una línea base establecida por Microsoft. Obtendrá una puntuación según el grado de alineación de la organización con los procedimientos recomendados de seguridad. También obtendrá recomendaciones sobre los pasos que puede realizar para mejorar la puntuación de su organización. 
   

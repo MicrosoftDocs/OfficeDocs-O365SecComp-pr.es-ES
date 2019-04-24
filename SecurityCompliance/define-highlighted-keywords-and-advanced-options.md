@@ -13,11 +13,11 @@ search.appverid:
 ms.assetid: 03cc4387-2c7d-4058-8a44-0deefb58f011
 description: 'Obtenga información sobre cómo agregar palabras clave definidas por el usuario a relevancia para ayudarle a identificar los archivos relevantes mientras se etiquetan en Office 365 Advanced eDiscovery y para especificar los parámetros de costo.  '
 ms.openlocfilehash: aec9efac91cc3fb48068fca9b6b7313f829f4fe2
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999343"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257098"
 ---
 # <a name="define-highlighted-keywords-and-advanced-options-in-office-365-advanced-ediscovery"></a>Definir palabras clave resaltadas y opciones avanzadas en la exhibición avanzada de documentos electrónicos de Office 365
 

@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: Para ayudar a mantener la confianza del usuario en el uso del correo electrónico, Microsoft ha puesto en marcha distintas políticas y tecnologías para ayudar a proteger a nuestros usuarios.
 ms.openlocfilehash: 540610fc3d1b53692688c729b714c839bf436e24
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692399"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260878"
 ---
 # <a name="services-for-non-customers-sending-mail-to-office-365"></a>Servicios de envío de correo de no clientes a Office 365
   

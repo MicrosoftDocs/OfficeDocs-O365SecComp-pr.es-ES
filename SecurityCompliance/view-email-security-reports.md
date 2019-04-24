@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo buscar y usar informes de seguridad de correo electrónico para su organización con Office 365 Enterprise. Los informes de seguridad de correo electrónico están &amp; disponibles en el centro de seguridad y cumplimiento.
 ms.openlocfilehash: 1a885661f5bf020c325ee2d9f084473ecb27c53a
-ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30862512"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32268004"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>Ver informes de seguridad de correo electrónico &amp; en el centro de seguridad y cumplimiento
 

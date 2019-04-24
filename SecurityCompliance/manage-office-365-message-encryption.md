@@ -14,11 +14,11 @@ ms.collection:
 - M365-security-compliance
 description: Una vez que haya terminado de configurar el cifrado de mensajes de Office 365 (OME), puede personalizar la configuración de la implementación de varias maneras. Por ejemplo, puede configurar si desea habilitar códigos de paso de una sola vez, mostrar el botón proteger en Outlook en la web y más. Las tareas de este artículo describen cómo hacerlo.
 ms.openlocfilehash: 7b5297ae42d3efa071408540863c6ff7dbdee407
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30275980"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32259818"
 ---
 # <a name="manage-office-365-message-encryption"></a>Administrar el cifrado de mensajes de Office 365
 
@@ -109,7 +109,7 @@ De forma predeterminada, el botón **proteger** de Outlook en la web no está ha
 
 ## <a name="enable-service-side-decryption-of-email-messages-for-ios-mail-app-users"></a>Habilitar el descifrado del servicio de mensajes de correo electrónico para los usuarios de la aplicación de correo de iOS
 
-La aplicación de correo de iOS no puede descifrar mensajes protegidos con el cifrado de mensajes de Office 365. Como administrador de Office 365, puede aplicar el descifrado del servicio para los mensajes que se entregan a la aplicación de correo de iOS. Cuando elige hacerlo, el servicio envía una copia descifrada del mensaje al dispositivo iOS. El mensaje se almacena descifrado en el dispositivo cliente. El mensaje también retiene información sobre los derechos de uso, aunque la aplicación de correo de iOS no aplica derechos de uso del lado cliente al usuario. Esto significa que el usuario puede copiar o imprimir el mensaje incluso si no tenía originalmente los derechos necesarios. Sin embargo, si el usuario intenta completar una acción que requiere el servidor de correo de Office 365, como reenviar el mensaje, el servidor no permitirá la acción si el usuario no tuvo originalmente el permiso de uso. Sin embargo, los usuarios finales pueden solucionar la restricción de uso no reEnviar el mensaje a partir de una cuenta distinta en su aplicación de correo de iOS. independientemente de si se configura el descifrado del servicio de correo, los datos adjuntos al correo cifrado y con derechos protegidos no se puede ver en la aplicación de correo de iOS.
+La aplicación de correo de iOS no puede descifrar mensajes protegidos con el cifrado de mensajes de Office 365. Como administrador de Office 365, puede aplicar el descifrado del servicio para los mensajes que se entregan a la aplicación de correo de iOS. Cuando elige hacerlo, el servicio envía una copia descifrada del mensaje al dispositivo iOS. El mensaje se almacena descifrado en el dispositivo cliente. El mensaje también retiene información sobre los derechos de uso, aunque la aplicación de correo de iOS no aplica derechos de uso del lado cliente al usuario. Esto significa que el usuario puede copiar o imprimir el mensaje incluso si no tenía originalmente los derechos necesarios. Sin embargo, si el usuario intenta completar una acción que requiere el servidor de correo de Office 365, como reenviar el mensaje, el servidor no permitirá la acción si el usuario no tuvo originalmente el permiso de uso. Sin embargo, los usuarios finales pueden solucionar la restricción de uso no reEnviar el mensaje a partir de una cuenta diferente en su aplicación de correo de iOS. Independientemente de si configura el descifrado del lado del servicio del correo, los datos adjuntos a correo cifrado y protegido con derechos no se pueden ver en la aplicación de correo de iOS.
   
 Si opta por no permitir que se envíen mensajes descifrados a los usuarios de la aplicación de correo de iOS, los usuarios recibirán un mensaje que indica que no tienen derechos para ver el mensaje. De forma predeterminada, el descifrado del servicio de mensajes de correo electrónico no está habilitado.
   

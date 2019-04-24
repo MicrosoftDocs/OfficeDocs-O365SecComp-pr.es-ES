@@ -14,38 +14,46 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 2e76203fa8f57f9e228919ec6abb1144f3cb48c5
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.openlocfilehash: a6240692916d1b38ccbdae272fcd7a9b4292b376
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31030524"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258743"
 ---
-# <a name="data-investigations-limits"></a>Límites de investigaciones de datos
+# <a name="data-investigations-preview-limits"></a>Límites de investigaciones de datos (vista previa)
 
-En este artículo se describen los límites de las investigaciones de datos.
+En este artículo se describen los límites de las investigaciones de datos (versión preliminar).
 
-## <a name="investigatino-limits"></a>Límites de Investigatino
+## <a name="investigation-limits"></a>Límites de investigación
 
-## <a name="indexing-limits"></a>Límites de indexación
-
-## <a name="search-limits"></a>Límites de búsqueda
-
-## <a name="incident-limits"></a>Límites de incidentes
-
-En la tabla siguiente se enumeran los límites de incidentes en las investigaciones de datos.  Los elementos que excedan los máximos de un solo archivo se mostrarán como errores de procesamiento.
+En la siguiente tabla se enumeran los límites para las investigaciones en las investigaciones de datos (versión preliminar). 
     
   |**Descripción del límite**|**Límite**|
   |:-----|:-----|
-  |Número máximo de incidentes  <br/> |50  <br/> |
-  |Número total de documentos que se pueden recopilar en un incidente (para todos los incidentes de la investigación)  <br/> |1 millón  <br/> |
-  |Tamaño total de archivo por carga  <br/> |100 GB  <br/> |
-  |Tamaño máximo de un solo archivo   <br/> |100 MB  <br/> |
-  |Número máximo de caracteres extraídos de un único archivo  <br/> |10 millones  <br/> |
-  |Profundidad de los elementos insertados en un documento  <br/> |IVA  <br/> |
-  
+  |Número máximo de investigaciones.  <br/> |50  <br/> |
+  |Número total de documentos que se pueden agregar a una investigación (para todos los conjuntos de evidencias de la investigación).  <br/> |1 millón  <br/> |
+  |Tamaño total de archivo por carga.  <br/> |100 GB  <br/> |
+  |Tamaño máximo de un solo archivo.   <br/> |100 MB <sup>1</sup> <br/> |
+  |Número máximo de caracteres extraídos de un solo archivo.  <br/> |10 millones <sup>1</sup> <br/> |
+  |Profundidad de los elementos insertados en un solo archivo.  <br/> |25 <sup>1</sup> <br/> |
+|||
+> [!NOTE]
+><sup>1</sup> todos los elementos que superen un solo límite de archivos se mostrarán como errores de procesamiento.
+
+## <a name="indexing-limits"></a>Límites de indexación
+
+Contenido disponible próximamente.
+
+## <a name="search-limits"></a>Límites de búsqueda
+
+Contenido disponible próximamente.
 
 ## <a name="export-limits"></a>Límites de exportación
 
+Contenido disponible próximamente.
+
 ## <a name="download-limits"></a>Límites de descarga
+
+Contenido disponible próximamente.
 

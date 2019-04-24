@@ -15,18 +15,18 @@ ms.collection:
 - M365-security-compliance
 description: Como administrador de Exchange, puede aplicar la personalización de marca de su organización a los mensajes de correo electrónico cifrados de la organización y el contenido del portal de cifrado.
 ms.openlocfilehash: b15bb058d68d0f1783d2a689fff180a2bf48023e
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341711"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32242666"
 ---
 # <a name="add-your-organizations-brand-to-your-encrypted-messages"></a>Agregar la marca de su organización a los mensajes cifrados
 
 Como administrador de Exchange online o Exchange Online Protection, puede aplicar la personalización de marca de la empresa para personalizar la apariencia de los mensajes de correo electrónico de cifrado de mensajes de Office 365 de la organización y el contenido del portal de cifrado. Con los cmdlets de Windows PowerShell Get-OMEConfiguration y set-OMEConfiguration, puede personalizar los siguientes aspectos de la experiencia de visualización para los destinatarios de los mensajes de correo electrónico cifrados:
   
 - Texto de introducción del correo electrónico que contiene el mensaje cifrado
-- Texto de aviso de declinación de responsabilidades del correo electrónico que contiene el mensaje cifrado
+- Texto de declinación de responsabilidades del correo electrónico que contiene el mensaje cifrado
 - Texto que aparece en el portal de OME
 - Logotipo que aparece en el portal de mensajes de correo electrónico y OME
 - Color de fondo en el portal de mensajes de correo electrónico y OME
@@ -59,7 +59,7 @@ Puede crear plantillas de personalización de marca para su organización en Win
    ```powershell
    New-OMEConfiguration -Identity <OMEConfigurationIdParameter>
    ```
-   Por ejemplo,
+   For example,
 
    ```powershell
    New-OMEConfiguration -Identity <Branding template 1>
@@ -69,27 +69,27 @@ Puede crear plantillas de personalización de marca para su organización en Win
 |**Para personalizar esta característica de la experiencia de cifrado**|**Use estos comandos**|
 |:-----|:-----|
 |Color de fondo|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -BackgroundColor "<Hexadecimal color code>"` <br/> **Ejemplo:** <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -BackgroundColor "#ffffff"`|
-|Logotipo|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <Byte[]>` <br/> **Ejemplo:** <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -Image (Get-Content "C:\Temp\contosologo.png" -Encoding byte)` <br/> Formatos de archivo compatibles: .png, .jpg, .bmp o .tiff  <br/> Tamaño óptimo del archivo de logotipo: inferior a 40 KB  <br/> Tamaño óptimo de la imagen de logotipo: 170 x 70 píxeles|
+|Logotipo|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <Byte[]>` <br/> **Ejemplo:** <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -Image (Get-Content "C:\Temp\contosologo.png" -Encoding byte)` <br/> Formatos de archivo compatibles: .png, .jpg, .bmp o .tiff  <br/> Tamaño óptimo del archivo de logotipo: menos de 40 KB  <br/> Tamaño óptimo de la imagen de logotipo: 170 píxeles|
 |Texto junto al nombre y la dirección de correo electrónico del remitente|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -IntroductionText "<String up to 1024 characters>"` <br/> **Ejemplo:** <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -IntroductionText "has sent you a secure message."`|
 |Texto que aparece en el botón "leer mensaje"|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -ReadButtonText "<String up to 1024 characters>"` <br/> **Ejemplo:** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -ReadButtonText "Read Secure Message."`|
 |Texto que aparece por debajo del botón "leer mensaje"|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -EmailText "<String up to 1024 characters>"` <br/> **Ejemplo:** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -EmailText "Encrypted message from ContosoPharma secure messaging system."`|
-|Aviso de declinación de responsabilidades en el correo electrónico que contiene el mensaje cifrado|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -DisclaimerText "<Disclaimer statement. String of up to 1024 characters.>"` <br/> **Ejemplo:** <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -DisclaimerText "This message is confidential for the use of the addressee only."`|
+|Declaración de declinación de responsabilidades en el correo electrónico que contiene el mensaje cifrado|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -DisclaimerText "<Disclaimer statement. String of up to 1024 characters.>"` <br/> **Ejemplo:** <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -DisclaimerText "This message is confidential for the use of the addressee only."`|
 |Texto que aparece en la parte superior del portal de visualización de correo cifrado|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -PortalText "<Text for your portal. String of up to 128 characters.>"` <br/> **Ejemplo:** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -PortalText "ContosoPharma secure email portal."`|
 |Para habilitar o deshabilitar la autenticación con un código de paso único para esta plantilla personalizada|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -OTPEnabled <$true|$false>` <br/> **Ejemplos:** <br/>Para habilitar los códigos de acceso de una sola vez para esta plantilla personalizada <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -OTPEnabled $true` <br/> Para deshabilitar los códigos de acceso de un solo uso para esta plantilla personalizada <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -OTPEnabled $false`|
 |Para habilitar o deshabilitar la autenticación con identidades de Microsoft, Google o Yahoo para esta plantilla personalizada|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -SocialIdSignIn <$true|$false>` <br/> **Ejemplos:** <br/>Para habilitar identificadores sociales para esta plantilla personalizada <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -SocialIdSignIn $true` <br/> Para deshabilitar los identificadores sociales de esta plantilla personalizada <br/>  `Set-OMEConfiguration -Identity "Branding Template 1" -SocialIdSignIn $false`|
 
 ## <a name="to-remove-brand-customizations-from-the-ome-portal-and-email-messages-encrypted-by-ome"></a>Para quitar personalizaciones de marca del portal de OME y mensajes de correo electrónico cifrados por OME
   
-1. [Conexión a PowerShell de Exchange Online](https://aka.ms/exopowershell).
+1. [Conexión al PowerShell de Exchange Online](https://aka.ms/exopowershell).
 
 2. Use el cmdlet **set-OMEConfiguration** como se describe en [set-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/Set-OMEConfiguration). Para quitar las personalizaciones de marca de la organización de los valores de DisclaimerText, EmailText y PortalText, establezca el valor en una cadena vacía `""`. Para todos los valores de imagen, como el logotipo, establezca el `"$null"`valor en.
 
 **Opciones de personalización de cifrado**
 
-**Para hacer que esta característica de la experiencia de cifrado vuelva a los valores de texto e imagen predeterminados**|**Use estos comandos**|
+**Para revertir esta característica de la experiencia de cifrado de nuevo a la imagen y el texto predeterminados**|**Use estos comandos**|
 |:-----|:-----|
-|Texto predeterminado que acompaña a los mensajes de correo electrónico cifrado  <br/> El texto predeterminado aparece por encima de las instrucciones para ver los mensajes cifrados|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -EmailText "<empty string>"` <br/> **Ejemplo:** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -EmailText ""`|
-|Aviso de declinación de responsabilidades en el correo electrónico que contiene el mensaje cifrado|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> DisclaimerText "<empty string>"` <br/> **Ejemplo:** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -DisclaimerText ""`|
+|Texto predeterminado que acompaña a los mensajes de correo electrónico cifrados  <br/> El texto predeterminado aparece por encima de las instrucciones para ver los mensajes cifrados|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -EmailText "<empty string>"` <br/> **Ejemplo:** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -EmailText ""`|
+|Declaración de declinación de responsabilidades en el correo electrónico que contiene el mensaje cifrado|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> DisclaimerText "<empty string>"` <br/> **Ejemplo:** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -DisclaimerText ""`|
 |Texto que aparece en la parte superior del portal de visualización de correo cifrado|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -PortalText "<empty string>"` <br/> **Ejemplo de volver a su valor predeterminado:** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -PortalText ""`|
 |Logotipo|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <"$null">` <br/> **Ejemplo de volver a su valor predeterminado:** <br/>  `Set-OMEConfiguration -Identity "OME configuration" -Image $null`|
 |Color de fondo|`Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -BackgroundColor <"$null">` <br/> **Ejemplo de volver a su valor predeterminado:** <br/>  `Set-OMEConfiguration -Identity "OME configuration" -BackgroundColor $null`|

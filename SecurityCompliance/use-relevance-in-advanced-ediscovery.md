@@ -1,5 +1,5 @@
 ---
-title: Usar el módulo de relevancia en eDiscovery avanzado de Office 365
+title: Usar el módulo relevancia en Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,13 +14,13 @@ search.appverid:
 ms.assetid: 5d671821-d188-42da-a9ce-9cfe92beedfd
 description: 'Obtenga información sobre el módulo relevancia en Office 365 Advanced eDiscovery, incluido un flujo de trabajo y directrices, y pasos para la revisión del archivo y el aprendizaje.  '
 ms.openlocfilehash: ad44066c8b00bccacf1f4fe2088aa84096c4db84
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30217460"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32263792"
 ---
-# <a name="use-the-relevance-module-in-office-365-advanced-ediscovery"></a>Usar el módulo de relevancia en eDiscovery avanzado de Office 365
+# <a name="use-the-relevance-module-in-office-365-advanced-ediscovery"></a>Usar el módulo relevancia en Office 365 Advanced eDiscovery
 
 > [!NOTE]
 > Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 

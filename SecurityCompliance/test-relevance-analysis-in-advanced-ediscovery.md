@@ -1,5 +1,5 @@
 ---
-title: Probar análisis de relevancia en eDiscovery avanzado de Office 365
+title: Análisis de relevancia de pruebas en Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,13 +14,13 @@ search.appverid:
 ms.assetid: 1b092f7c-ea55-44f5-b419-63f3458fd7e0
 description: 'Obtenga información sobre cómo usar la pestaña prueba tras el cálculo por lotes en Office 365 Advanced eDiscovery para probar, comparar y validar la calidad general de procesamiento.  '
 ms.openlocfilehash: 735a6d8088b4696e2ebc348db435a11914bd0b10
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215840"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32259988"
 ---
-# <a name="test-relevance-analysis-in-office-365-advanced-ediscovery"></a>Probar análisis de relevancia en eDiscovery avanzado de Office 365
+# <a name="test-relevance-analysis-in-office-365-advanced-ediscovery"></a>Análisis de relevancia de pruebas en Office 365 Advanced eDiscovery
 
 > [!NOTE]
 > Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 

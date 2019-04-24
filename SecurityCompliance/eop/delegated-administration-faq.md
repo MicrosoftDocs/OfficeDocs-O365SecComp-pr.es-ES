@@ -11,11 +11,11 @@ localization_priority: Normal
 ms.assetid: d6a87ce8-2c22-433a-b430-5eab14f6afdc
 description: En este tema se proporcionan las preguntas más frecuentes y sus respuestas para los socios y distribuidores de Microsoft que desean realizar tareas de administración delegada de Office 365, incluida la capacidad de administrar Exchange Online Protection (EOP) para otros inquilinos (empresas).
 ms.openlocfilehash: 41f2e8f0ed48273ff1934ca4f2306f29f92b1ff1
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30691739"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256198"
 ---
 # <a name="delegated-administration-faq"></a>Preguntas más frecuentes sobre administración delegada
 

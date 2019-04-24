@@ -10,11 +10,11 @@ ms.service: o365-seccomp
 localization_priority: Normal
 description: Obtenga información sobre el nuevo centro de cumplimiento de Microsoft 365, incluido lo que contiene, cómo obtenerlo y los pasos siguientes.
 ms.openlocfilehash: ae608d1aafb803fabe6ed1eba3804b9921bac7b2
-ms.sourcegitcommit: 48b77ec6fb499175507fc08f11dc9f5efe6c4858
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "31518390"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265592"
 ---
 # <a name="overview-of-the-all-new-microsoft-365-compliance-center"></a>Información general sobre el nuevo centro de cumplimiento de Microsoft 365
 
@@ -24,7 +24,7 @@ Si está interesado en la postura de cumplimiento de la organización, le va a e
 
 Lea este artículo para familiarizarse con el centro de cumplimiento de Microsoft 365, [Cómo obtenerlo](#how-do-i-get-this), las [preguntas más](#frequently-asked-questions)frecuentes y los [pasos siguientes](#next-steps).
 
-[![MCentro de cumplimiento de icrosoft 365](media/m365-compliance-center.png)](https://compliance.microsoft.com)
+[![Centro de cumplimiento de Microsoft 365](media/m365-compliance-center.png)](https://compliance.microsoft.com)
 
 ## <a name="welcome-to-microsoft-365-compliance"></a>Bienvenido a Microsoft 365 cumplimiento normativo
 
@@ -68,7 +68,7 @@ Además de los vínculos de las tarjetas en la Página principal, encontrará un
 
 |  |  |
 |---------|---------|
-|![Navegación en el centro de cumplimiento de Microsoft 365](media/m365-compliance-center-leftnav.png)  |<br/><br/> Ir a **alertas** para ver y resolver [alertas](alerts.md)<br/><br/>Visite **Reports &** Reports para ver datos sobre el [uso y la retención de etiquetas](sensitivity-labels.md), coincidencias y invalidaciones de [directivas DLP](view-the-dlp-reports.md), [archivos](https://docs.microsoft.com/cloud-app-security/file-filters)compartidos, [aplicaciones de terceros en uso](https://docs.microsoft.com/cloud-app-security/discovered-apps)y mucho más.<br/><br/>ExPanda la sección **clasificación** para obtener acceso a las [etiquetas](labels.md), [las directivas de etiquetas](sensitivity-labels.md#what-label-policies-can-do), los [tipos de información confidencial](what-the-sensitive-information-types-look-for.md)y el análisis de las [etiquetas](view-label-activity-for-documents.md).<br/><br/>Vaya a **directivas** para ver las [alertas](alerts.md) y acceder a sus [DLP](data-loss-prevention-policies.md) y directivas de [retención](retention-policies.md) .<br/><br/> Use los vínculos de la sección **soluciones** para acceder a las soluciones de cumplimiento de la organización. Entre estos, incluyen los siguientes: <br/>[Disposiciones > del gobierno de datos](disposition-reviews.md)<br/>[eDiscovery (versión preliminar)](compliance20/overview-ediscovery-20.md)<br/>[Supervisión](supervision-policies.md)<br/>[Investigaciones de datos](datainvestigations/overview-data-investigations.md)<br/>[Solicitudes de interesados](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)        |
+|![Navegación en el centro de cumplimiento de Microsoft 365](media/m365-compliance-center-leftnav.png)  |<br/><br/> Ir a **alertas** para ver y resolver [alertas](alerts.md)<br/><br/>Visite **Reports &** Reports para ver datos sobre el [uso y la retención de etiquetas](sensitivity-labels.md), coincidencias y invalidaciones de [directivas DLP](view-the-dlp-reports.md), [archivos](https://docs.microsoft.com/cloud-app-security/file-filters)compartidos, [aplicaciones de terceros en uso](https://docs.microsoft.com/cloud-app-security/discovered-apps)y mucho más.<br/><br/>ExPanda la sección **clasificación** para obtener acceso a las [etiquetas](labels.md), [las directivas de etiquetas](sensitivity-labels.md#what-label-policies-can-do), los [tipos de información confidencial](what-the-sensitive-information-types-look-for.md)y el análisis de las [etiquetas](view-label-activity-for-documents.md).<br/><br/>Vaya a **directivas** para ver las [alertas](alerts.md) y acceder a sus [DLP](data-loss-prevention-policies.md) y directivas de [retención](retention-policies.md) .<br/><br/> Use los vínculos de la sección **soluciones** para acceder a las soluciones de cumplimiento de la organización. Entre ellos se incluyen: <br/>[Disposiciones > del gobierno de datos](disposition-reviews.md)<br/>[eDiscovery (versión preliminar)](compliance20/overview-ediscovery-20.md)<br/>[Supervisión](supervision-policies.md)<br/>[Investigaciones de datos](datainvestigations/overview-data-investigations.md)<br/>[Solicitudes de interesados](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)        |
 
 
 ## <a name="how-do-i-get-this"></a>¿Cómo obtengo esto?

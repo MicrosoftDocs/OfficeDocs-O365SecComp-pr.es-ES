@@ -18,11 +18,11 @@ search.appverid:
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
 description: Puede activar la característica de búsqueda de registros de auditoría en el centro de seguridad & cumplimiento. Si cambia de opinión, puede desactivar la opción en cualquier momento. Cuando la búsqueda de registros de auditoría está desactivada, los administradores no pueden buscar en el registro de auditoría de Office 365 la actividad de usuario y de administrador de su organización.
 ms.openlocfilehash: 0619b19f9dc6e8bdc21e26275f02a81948b40bf4
-ms.sourcegitcommit: 69d0c739a2f3b4a335b42182a2c7267ef554eb76
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "31389714"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265392"
 ---
 # <a name="turn-office-365-audit-log-search-on-or-off"></a>Activar o desactivar la búsqueda de registros de auditoría de Office 365
 
@@ -59,7 +59,7 @@ Puede usar el centro de seguridad & cumplimiento o PowerShell para activar la b�
     
 ### <a name="use-powershell-to-turn-on-audit-log-search"></a>Usar PowerShell para activar la búsqueda de registros de auditoría
 
-1. [Conexión a Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkID=396554)
+1. [Conectarse a Exchange Online mediante PowerShell](https://go.microsoft.com/fwlink/p/?LinkID=396554)
     
 2. Ejecute el siguiente comando de PowerShell para activar la búsqueda de registros de auditoría en Office 365.
     
@@ -73,7 +73,7 @@ Puede usar el centro de seguridad & cumplimiento o PowerShell para activar la b�
 
 Debe usar PowerShell remoto conectado a su organización de Exchange Online para desactivar la búsqueda de registros de auditoría. De forma similar a activar la búsqueda de registros de auditoría, debe tener asignado el rol registros de auditoría en Exchange Online para desactivar la búsqueda de registros de auditoría.
   
-1. [Conexión a Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?LinkID=396554)
+1. [Conectarse a Exchange Online mediante PowerShell](https://go.microsoft.com/fwlink/p/?LinkID=396554)
     
 2. Ejecute el siguiente comando de PowerShell para desactivar la búsqueda de registros de auditoría en Office 365.
     

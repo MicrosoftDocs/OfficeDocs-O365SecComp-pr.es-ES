@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: 'Resumen: Este artículo describe cómo Office 365 usa el registro TXT para el marco de directivas de remitente (SPF) en DNS para asegurarse de que los sistemas de correo electrónico de destino confían en los mensajes enviados desde su dominio personalizado. Esto se aplica al correo saliente enviado desde Office 365. Los mensajes enviados desde Office 365 a un destinatario dentro de Office 365 siempre pasarán SPF.'
 ms.openlocfilehash: 5abe892eae4840b44a606f4004eb3b66a94accdc
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693599"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256568"
 ---
 # <a name="how-office-365-uses-sender-policy-framework-spf-to-prevent-spoofing"></a>Cómo Office 365 usa el marco de directivas de remitente (SPF) para evitar la suplantación de identidad
 
@@ -241,7 +241,7 @@ Al incluir dominios de terceros en el registro TXT SPF, debe confirmar con el te
 
 Puede usar nslookup para ver los registros DNS, incluido el registro TXT SPF. O bien, si lo prefiere, hay varias herramientas disponibles, gratuitas y en línea que puede usar para ver el contenido del registro TXT SPF. Puede determinar cuántas búsquedas DNS requiere el registro al observar el registro TXT SPF y seguir la cadena de instrucciones Include y redireccionamientos. Algunas herramientas en línea incluso harán un recuento y le mostrarán estas búsquedas. Realizar un seguimiento de este número le ayudará a evitar que los mensajes enviados desde su organización desencadenen un error permanente, denominado un permerror, desde el servidor de recepción.
   
-## <a name="for-more-information"></a>Para obtener más información
+## <a name="for-more-information"></a>Más información
 <a name="SPFTroubleshoot"> </a>
 
 ¿Necesita ayuda para agregar el registro TXT SPF? Hay [instrucciones paso a paso](https://office.microsoft.com/en-us/office365-suite-help/create-dns-records-for-office-365-HA102851099.aspx?CTT=5&amp;origin=HA102818404) para actualizar registros SPF (TXT) en varios registradores de dominios conocidos. Los [Encabezados de mensajes de correo no deseado](anti-spam-message-headers.md) incluyen la sintaxis y los campos de encabezado que usa Office 365 para efectuar comprobaciones de SPF. 

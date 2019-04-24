@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: Use la administración de amenazas para ayudar a controlar y administrar el acceso de dispositivos móviles a los datos de la organización, proteger la organización contra la pérdida de datos y ayudar a proteger los mensajes entrantes y salientes del software malintencionado y el correo no deseado. También se usa la administración de amenazas para proteger la reputación del dominio y para determinar si los remitentes se falsifican de su dominio de una mala parte de las cuentas.
 ms.openlocfilehash: 9c6c39b7edc008c4a44146fac8076897e705b5f5
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693179"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32259958"
 ---
 # <a name="threat-management-in-the-office-365-security-amp-compliance-center"></a>Threat management in the Office 365 Security &amp; Compliance Center
 

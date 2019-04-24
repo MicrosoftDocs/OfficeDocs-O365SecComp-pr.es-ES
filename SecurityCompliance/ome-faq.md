@@ -13,11 +13,11 @@ search.appverid:
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: ¿Tiene alguna pregunta sobre cómo funcionan las nuevas capacidades de protección de mensajes en Office 365? Compruebe si hay una respuesta aquí.
 ms.openlocfilehash: 2c140ef476b5fe19ef3655b062a3f197d36222e7
-ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30936790"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261298"
 ---
 # <a name="office-365-message-encryption-faq"></a>Preguntas más frecuentes sobre el cifrado de mensajes de Office 365
 

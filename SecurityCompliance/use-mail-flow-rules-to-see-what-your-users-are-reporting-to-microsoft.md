@@ -14,11 +14,11 @@ ms.collection:
 - M365-security-compliance
 description: Puede crear una regla de flujo de correo de Exchange para evitar que los usuarios envíen mensajes de correo electrónico a Microsoft para su análisis y usarlos en sus propios procesos de seguridad.
 ms.openlocfilehash: 3552899c2fb471624234625331492edcd8421da6
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692649"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264282"
 ---
 # <a name="use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft"></a>Usar reglas de flujo de correo para ver lo que los usuarios reportan a Microsoft
 

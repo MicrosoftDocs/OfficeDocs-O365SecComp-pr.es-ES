@@ -1,5 +1,5 @@
 ---
-title: Aprendizaje de relevancia y etiquetas en eDiscovery avanzado de Office 365
+title: Aprendizaje de la etiqueta y la relevancia en Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,13 +14,13 @@ search.appverid:
 ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
 description: 'Obtenga información sobre los pasos para etiquetar y, a continuación, trabaje con una muestra de aprendizaje de 40 archivos durante la fase de formación de relevancia de Office 365 Advanced eDiscovery.  '
 ms.openlocfilehash: e8c9c02d72a756565f6fe59011a6788f592463eb
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30221070"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260428"
 ---
-# <a name="tagging-and-relevance-training-in-office-365-advanced-ediscovery"></a>Aprendizaje de relevancia y etiquetas en eDiscovery avanzado de Office 365
+# <a name="tagging-and-relevance-training-in-office-365-advanced-ediscovery"></a>Aprendizaje de la etiqueta y la relevancia en Office 365 Advanced eDiscovery
 
 > [!NOTE]
 > Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -48,7 +48,7 @@ Una vez completada la evaluación en la exhibición avanzada de documentos elect
 |:-----|:-----|:-----|:-----|
 |R  <br/> |Metabolito  <br/> |Z  <br/> |Mayús + Z  <br/> |
 |Nº  <br/> |No relevante  <br/> |X  <br/> |Mayús + X  <br/> |
-|Avanzar  <br/> |Avanzar  <br/> |C  <br/> |Mayús + A  <br/> |
+|Skip  <br/> |Skip  <br/> |C  <br/> |Mayús + A  <br/> |
    
   - Cuando hay varios problemas para un archivo, después de marcar un problema, la selección se mueve al siguiente problema (si lo hay). 
     
@@ -66,7 +66,7 @@ Una vez completada la evaluación en la exhibición avanzada de documentos elect
     
     Los archivos omitidos no se tendrán en cuenta para la formación de relevancia y la puntuación de relevancia.
     
-3. Los comentarios de texto libre, asociados a un archivo, se pueden ver y editar a través de la opción **Comentario** en la lista desplegable panel izquierdo. opcional 
+3. Los comentarios de texto libre, asociados a un archivo, se pueden ver y editar a través de la opción **Comentario** en la lista desplegable panel izquierdo. (opcional) 
     
 4. Las directrices para la etiquetación se pueden ver seleccionando la opción **pautas de etiquetado** en la lista desplegable del panel izquierdo. 
     

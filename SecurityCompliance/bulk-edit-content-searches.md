@@ -12,11 +12,11 @@ search.appverid: MOE150
 ms.assetid: 39e4654a-9588-41f6-892b-c33ab57bfbe2
 description: Use el editor de búsqueda en masa en el centro de seguridad y cumplimiento de Office 365 o Microsoft 365 para cambiar rápidamente las ubicaciones de consulta y de contenido de una o más búsquedas de contenido.
 ms.openlocfilehash: 3a484ad689b1c638e0e14ed1643edea0f2f56c09
-ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31813941"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32243871"
 ---
 # <a name="bulk-edit-content-searches"></a>Edición masiva de búsquedas de contenido
 

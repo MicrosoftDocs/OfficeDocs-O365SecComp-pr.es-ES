@@ -14,11 +14,11 @@ ms.collection:
 - M365-security-compliance
 description: Modo en que Microsoft defiende sus servicios en la nube contra ataques por denegación de servicio (DoS).
 ms.openlocfilehash: 784e17d4b80ac990c903c96f92cd6b96f194439b
-ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31004187"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262852"
 ---
 # <a name="defending-microsoft-cloud-services-against-denial-of-service-attacks"></a>Defensa de los servicios en la nube de Microsoft contra ataques por denegación de servicio
 

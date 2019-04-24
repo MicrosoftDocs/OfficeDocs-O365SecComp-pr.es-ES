@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: e9e34d112cb84c27fec35e752eb2bfcbfe3136a3
-ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31958241"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32243448"
 ---
 # <a name="add-data-to-a-working-set-from-another-working-set"></a>Agregar datos a un conjunto de trabajo desde otro conjunto de trabajo
 En algunos casos, puede ser necesario dividir una parte de los documentos de un conjunto de trabajo y trabajar con ellos de forma individual en otro conjunto de trabajo.  Esto es especialmente útil si ha seleccionado contenido en un conjunto de trabajo y desea ejecutar análisis en el subconjunto de datos.

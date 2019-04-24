@@ -11,17 +11,17 @@ localization_priority: Normal
 ms.assetid: 125834f4-1024-4325-ad5a-d2573cfb005e
 description: En Microsoft Exchange Online Protection, puede usar el Centro de administración de Exchange (EAC) para convertir a un usuario en miembro de un o varios grupos de roles para asignarle permisos para hacer ciertas tareas administrativas. También puede quitar a un usuario de uno o varios grupos de roles usando el EAC.
 ms.openlocfilehash: aed32c8a9224bc60ef3e4a1ac9be9d797e61bda8
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693429"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256148"
 ---
 # <a name="manage-admin-role-group-permissions-in-eop"></a>Administrar permisos de grupos de roles de administración en EOP
   
 En Microsoft Exchange Online Protection, puede usar el Centro de administración de Exchange (EAC) para convertir a un usuario en miembro de un o varios grupos de roles para asignarle permisos para hacer ciertas tareas administrativas. También puede quitar a un usuario de uno o varios grupos de roles usando el EAC.
   
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 
 - Tiempo estimado para finalizar: 5-10 minutos
     
@@ -62,7 +62,7 @@ En Microsoft Exchange Online Protection, puede usar el Centro de administración
     > [!NOTE]
     > Puede que los usuarios tengan que cerrar la sesión e iniciarla de nuevo para ver los cambios en sus permisos administrativos después de agregar o quitar miembros de ese grupo de roles. 
   
-## <a name="for-more-information"></a>Para obtener más información
+## <a name="for-more-information"></a>Más información
 
 [Permisos de características en EOP](feature-permissions-in-eop.md)
   

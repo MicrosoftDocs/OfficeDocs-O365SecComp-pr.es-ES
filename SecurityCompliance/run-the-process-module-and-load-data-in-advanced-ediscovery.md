@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: c87bb0e5-301c-4d1d-958e-aabeb7990f44
 description: 'Obtenga información sobre cómo usar el centro de &amp; seguridad y cumplimiento de Office 365 para obtener acceso a eDiscovery avanzado de Office 365 y ejecutar el módulo de proceso para un caso.  '
 ms.openlocfilehash: 95c73c034ed2ffa1c45f9aacd8463c497a842859
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30217610"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261418"
 ---
 # <a name="run-the-process-module-and-load-data-in-office-365-advanced-ediscovery"></a>Ejecutar el módulo de proceso y cargar datos en eDiscovery avanzado de Office 365
 

@@ -16,11 +16,11 @@ search.appverid:
 ms.assetid: a85e1c87-a48e-4715-bfa9-d5275cde67b0
 description: 'Para los administradores: Elimine los elementos de la carpeta elementos recuperables de un usuario para un buzón de correo de Exchange Online, incluso si el buzón se encuentra en retención legal. Esta es una forma eficaz de eliminar datos que se han derramado accidentalmente en Office 365.'
 ms.openlocfilehash: 7badd45f582e4d5fef4cb5708c504573da0aba50
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000083"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256878"
 ---
 # <a name="delete-items-in-the-recoverable-items-folder-of-cloud-based-mailboxes-on-hold---admin-help"></a>Eliminar elementos de la carpeta elementos recuperables de buzones de correo basados en la nube en suspensión-ayuda de administración
 
@@ -67,7 +67,7 @@ El primer paso consiste en recopilar propiedades seleccionadas del buzón de des
     
 Además, debe obtener la configuración de acceso de cliente de buzones de correo para que pueda deshabilitarla temporalmente de modo que el propietario (u otros usuarios) no pueda obtener acceso al buzón durante este procedimiento. Por último, puede obtener el tamaño actual y el número de elementos en la carpeta elementos recuperables. Después de eliminar los elementos de la carpeta elementos recuperables en el paso 5, usará esta información para comprobar que los elementos se quitaron realmente.
   
-1. [Conexión a PowerShell de Exchange Online](https://go.microsoft.com/fwlink/?linkid=396554). Asegúrese de usar un nombre de usuario y una contraseña para una cuenta de administrador a la que se haya asignado el rol de administración adecuado en Exchange Online. 
+1. [Conexión al PowerShell de Exchange Online](https://go.microsoft.com/fwlink/?linkid=396554). Asegúrese de usar un nombre de usuario y una contraseña para una cuenta de administrador a la que se haya asignado el rol de administración adecuado en Exchange Online. 
     
 2. Ejecute el siguiente comando para obtener información sobre la recuperación de elementos individuales y el período de retención de elementos eliminados.
 
@@ -346,7 +346,7 @@ Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems -Archive | 
   
 ## <a name="step-6-revert-the-mailbox-to-its-previous-state"></a>Paso 6: revertir el buzón a su estado anterior
 
-El último paso consiste en revertir el buzón a la configuración anterior. Esto significa restablecer las propiedades que cambió en el paso 2 y volver a aplicar las suspensiones que quitó en el paso 3. Incluye:
+El último paso consiste en revertir el buzón a la configuración anterior. Esto significa restablecer las propiedades que cambió en el paso 2 y volver a aplicar las suspensiones que quitó en el paso 3. Esto incluye:
   
 - Cambiar el período de retención de elementos eliminados de nuevo a su valor anterior. Como alternativa, puede dejar este conjunto en 30 días, el valor máximo en Exchange Online.
     

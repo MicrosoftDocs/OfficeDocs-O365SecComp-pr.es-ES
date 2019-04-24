@@ -13,11 +13,11 @@ search.appverid:
 ms.assetid: f87cb016-7876-4317-ae3c-9169b311ff8a
 description: Con el cifrado de mensajes de Office 365, su organización puede enviar y recibir mensajes de correo electrónico cifrados entre usuarios de dentro y fuera de la organización. El cifrado de mensajes de correo electrónico ayuda a garantizar que solo los destinatarios deseados puedan ver el contenido de los mensajes.
 ms.openlocfilehash: 06c43bcb3364b83114e2d7b1a2ef0273858cffb0
-ms.sourcegitcommit: 895f67531f2b4afe46c7487ca5b44555ca791bae
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "31836814"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261318"
 ---
 # <a name="office-365-message-encryption"></a>Cifrado de mensajes de Office 365
 

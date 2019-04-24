@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 6d639df4f7afaa3a55e31bd75cd3e35104593ddd
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31030497"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258398"
 ---
 # <a name="create-a-new-investigation-in-data-investigations-preview"></a>Crear una nueva investigación en las investigaciones de datos (versión preliminar)
 

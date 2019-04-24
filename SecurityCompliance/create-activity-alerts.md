@@ -16,11 +16,11 @@ search.appverid:
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
 description: Agregue y administre alertas de actividad en el centro de seguridad y cumplimiento para que Office 365 le envíe notificaciones por correo electrónico cuando los usuarios realicen actividades específicas en Office 365.
 ms.openlocfilehash: d71763d4633c3396afdf58400e9cb7b8b8a468e8
-ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31813991"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258698"
 ---
 # <a name="create-activity-alerts-in-the-office-365"></a>Crear alertas de actividad en el Office 365
 

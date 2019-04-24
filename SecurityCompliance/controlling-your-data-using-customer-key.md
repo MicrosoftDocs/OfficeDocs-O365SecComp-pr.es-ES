@@ -15,15 +15,15 @@ ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo configurar la clave de cliente de Office 365 para Exchange Online, Skype empresarial, SharePoint Online y OneDrive para la empresa. Con la clave de cliente, puede controlar las claves de cifrado de la organización y, después, configurar Office 365 para usarlas y cifrar los datos en reposo en los centros de datos de Microsoft.
 ms.openlocfilehash: 219ddb94727cd2b708f734a77a8397b3bc3f1064
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296673"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258358"
 ---
 # <a name="controlling-your-data-in-office-365-using-customer-key"></a>Controlar los datos en Office 365 con la clave de cliente
 
-Con la clave de cliente, puede controlar las claves de cifrado de la organización y, después, configurar Office 365 para usarlas y cifrar los datos en reposo en los centros de datos de Microsoft. Es decir, la clave de cliente permite a los clientes agregar una capa de cifrado que les pertenece, con sus claves. Los datos en reposo incluyen datos de Exchange Online y Skype empresarial que se almacenan en buzones de correo y archivos que se almacenan en SharePoint Online y OneDrive para la empresa.
+Con la clave de cliente, puede controlar las claves de cifrado de la organización y, después, configurar Office 365 para usarlas y cifrar los datos en reposo en los centros de datos de Microsoft. Es decir, la clave de cliente permite a los clientes agregar una capa de cifrado que les pertenece, con sus claves. Los datos en reposo incluyen datos de Exchange Online y Skype Empresarial que se almacenan en buzones y archivos en SharePoint Online y OneDrive para la Empresa.
   
 Debe configurar Azure antes de poder usar la clave de cliente de Office 365. En este tema se describen los pasos que debe seguir para crear y configurar los recursos necesarios de Azure y, a continuación, se proporcionan los pasos para configurar la clave de cliente en Office 365. Una vez completada la configuración de Azure, determine qué directivas y, por lo tanto, qué claves asignar a los buzones de correo y los archivos de su organización. Los buzones de correo y los archivos para los que no se asigna una directiva usarán directivas de cifrado controladas y administradas por Microsoft. Para obtener más información acerca de la clave de cliente o para obtener una introducción general, consulte la [clave de cliente de preguntas más frecuentes sobre Office 365](service-encryption-with-customer-key-faq.md).
   
@@ -103,7 +103,7 @@ Complete estas tareas en Azure Key Vault para configurar la clave de cliente de 
 Se requieren dos suscripciones de Azure para la clave de cliente. Como práctica recomendada, Microsoft recomienda crear nuevas suscripciones de Azure para usarlas con la clave de cliente. Las claves de Azure Key Vault solo se pueden autorizar para aplicaciones en el mismo inquilino de Azure Active Directory (AAD), debe crear las nuevas suscripciones con el mismo inquilino de Azure AD que se usa con la organización de Office 365 donde se asignará la DEPs. Por ejemplo, con su cuenta profesional o educativa con privilegios de administrador global en su organización de Office 365. Para obtener los pasos detallados, consulte [registrarse para Azure como organización](https://azure.microsoft.com/en-us/documentation/articles/sign-up-organization/).
   
 > [!IMPORTANT]
-> La clave de cliente requiere dos claves para cada directiva de cifrado de datos (DEP). Para ello, debe crear dos suscripciones de Azure. Como procedimiento recomendado, Microsoft recomienda que los miembros de la organización se configuren como una clave en cada suscripción. Además, estas suscripciones de Azure solo deben usarse para administrar claves de cifrado para Office 365. Esto protege a su organización en caso de que uno de sus operadores elimine accidentalmente, de forma intencionada, o de una mala administración de las claves de las que es responsable.<br/> Le recomendamos que configure nuevas suscripciones de Azure que solo se usan para administrar recursos de Azure Key Vault para usarlas con la clave de cliente. No hay ningún límite práctico en el número de suscripciones de Azure que puede crear para su organización. Siga estos procedimientos recomendados para minimizar el impacto de los errores humanos mientras ayuda a administrar los recursos usados por la clave de cliente. 
+> La clave de cliente requiere dos claves para cada directiva de cifrado de datos (DEP). Para ello, debe crear dos suscripciones de Azure. Como procedimiento recomendado, Microsoft recomienda que los miembros de la organización se configuren como una clave en cada suscripción. Además, estas suscripciones de Azure solo deben usarse para administrar claves de cifrado para Office 365. Esto protege a su organización en caso de que uno de sus operadores elimine accidentalmente, de forma intencionada, o de una mala administración de las claves de las que es responsable. <br/> Le recomendamos que configure nuevas suscripciones de Azure que solo se usan para administrar recursos de Azure Key Vault para usarlas con la clave de cliente. No hay ningún límite práctico en el número de suscripciones de Azure que puede crear para su organización. Siga estos procedimientos recomendados para minimizar el impacto de los errores humanos mientras ayuda a administrar los recursos usados por la clave de cliente. 
   
 ### <a name="submit-a-request-to-activate-customer-key-for-office-365"></a>Enviar una solicitud para activar la clave de cliente de Office 365
 <a name="FastTrack"> </a>
@@ -290,7 +290,7 @@ Donde:
   
 - Si piensa proteger la clave con un HSM, asegúrese de especificar **HSM** como el valor del parámetro _Destination_ ; de lo contrario, especifique el **software**.
     
-Por ejemplo,
+For example,
   
 ```
 Add-AzureKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -Name Contoso-O365EX-NA-VaultA1-Key001 -Destination Software -KeyOps wrapKey,unwrapKey
@@ -581,7 +581,7 @@ Si ya existe una clave con el mismo nombre en el almacén de claves, se producir
 Tanto la clave de Azure como la clave de cliente no requieren las claves de desplazamiento. Además, es prácticamente imposible poner en peligro las claves que están protegidas con HSM. Incluso si una clave raíz estaba en posesión de un actor malintencionado, no hay ningún medio viable de usarlo para descifrar datos, ya que solo el código de Office 365 sabe cómo usarlo. Sin embargo, la clave de cliente admite la rotación de una clave.
   
 > [!CAUTION]
-> Haga solo una clave de cifrado que use con la clave de cliente cuando exista una razón técnica clara o cuando un requisito de cumplimiento exija que tenga que hacer roll? a la clave. Además, no elimine las claves que estén asociadas a directivas. Al revertir las claves, habrá contenido cifrado con las claves anteriores. Por ejemplo, los buzones activos se volverán a cifrar con frecuencia, los buzones inactivos, desconectados y deshabilitados pueden seguir cifrados con las claves anteriores. SharePoint Online realiza una copia de seguridad del contenido para restauración y recuperación, por lo que es posible que todavía haya contenido archivado con claves antiguas.<br/> Para garantizar la seguridad de sus datos, SharePoint Online permitirá que no haya más de una operación Roll Key en curso a la vez. Si desea aplicar ambas claves en un almacén de claves, tendrá que esperar a que se complete completamente la primera operación de rotación de clave. Nuestra recomendación es escalonar las operaciones de roll Key en diferentes intervalos, de modo que no se trata de un problema. 
+> Haga solo una clave de cifrado que use con la clave de cliente cuando exista una razón técnica clara o cuando un requisito de cumplimiento exija que tenga que hacer roll? a la clave. Además, no elimine las claves que estén asociadas a directivas. Al revertir las claves, habrá contenido cifrado con las claves anteriores. Por ejemplo, los buzones activos se volverán a cifrar con frecuencia, los buzones inactivos, desconectados y deshabilitados pueden seguir cifrados con las claves anteriores. SharePoint Online realiza una copia de seguridad del contenido para restauración y recuperación, por lo que es posible que todavía haya contenido archivado con claves antiguas. <br/> Para garantizar la seguridad de sus datos, SharePoint Online permitirá que no haya más de una operación Roll Key en curso a la vez. Si desea aplicar ambas claves en un almacén de claves, tendrá que esperar a que se complete completamente la primera operación de rotación de clave. Nuestra recomendación es escalonar las operaciones de roll Key en diferentes intervalos, de modo que no se trata de un problema. 
   
 Cuando se gira una clave, se solicita una nueva versión de una clave existente. Para solicitar una nueva versión de una clave existente, use el mismo cmdlet, [Add-AzureKeyVaultKey](https://docs.microsoft.com/powershell/module/AzureRM.KeyVault/Add-AzureKeyVaultKey), con la misma sintaxis que usó para crear la clave en primer lugar.
   

@@ -13,17 +13,17 @@ search.appverid:
 ms.assetid: aac65513-e75e-4c82-a668-9a6604dd9f9d
 description: Revisar los informes de detección de aplicaciones en Office 365 Cloud App Security puede ayudarle a obtener más información sobre cómo los usuarios de su organización usan aplicaciones en la nube. Una vez que haya creado los informes de detección de aplicaciones con archivos de registro de los firewalls y servidores proxy, revise los resultados en el panel de detección de aplicaciones.
 ms.openlocfilehash: f50ad372450b2a1404829eeb6f6964c1d954dccd
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216260"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264992"
 ---
 # <a name="review-app-discovery-findings-in-office-365-cloud-app-security"></a>Revisar los resultados de la detección de aplicaciones en Office 365 Cloud App Security
   
 |Evaluación * *\>**|Planeación * *\>**|Implementación * *\>**|Uso * * * *|
 |:-----|:-----|:-----|:-----|
-|[Empezar a evaluar](office-365-cas-overview.md) <br/> |[Empezar a planear](get-ready-for-office-365-cas.md) <br/> |[Iniciar la implementación](turn-on-office-365-cas.md) <br/> |Ya está aquí.  <br/> [Pasos siguientes](#next-steps) <br/> |
+|[Empezar a evaluar](office-365-cas-overview.md) <br/> |[Empezar a planear](get-ready-for-office-365-cas.md) <br/> |[Iniciar la implementación](turn-on-office-365-cas.md) <br/> |Ya está aquí.  <br/> [Siguientes pasos](#next-steps) <br/> |
    
 El panel de detección en la nube funciona con los registros de tráfico web de la organización para proporcionar información detallada sobre el uso de aplicaciones en la nube. Si es administrador global, administrador de seguridad o lector de seguridad y su organización ha [creado informes de detección de aplicaciones en Office 365 Cloud App Security](create-app-discovery-reports-in-ocas.md), puede usar el panel de detección en la nube para conocer la forma en que los usuarios de su organización usan Office 365 y otras aplicaciones en la nube. (El panel de detección en la nube también se conoce como detección de aplicaciones de productividad).
   
@@ -81,7 +81,7 @@ Puede excluir determinados usuarios del sistema o direcciones IP para poder cent
     
 4. Especifique los usuarios o las direcciones IP y, en el cuadro **comentarios** , escriba información sobre los motivos por los que se excluyen los usuarios o las direcciones IP. 
     
-5. Elija **Agregar**.
+5. Seleccione **Agregar**.
     
 ## <a name="next-steps"></a>Pasos siguientes
 

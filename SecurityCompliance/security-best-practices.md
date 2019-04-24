@@ -20,11 +20,11 @@ ms.collection:
 - Strat_O365_IP
 description: Minimice la posibilidad de que se produzca una infracción de datos o una cuenta en peligro; para ello, siga estos procedimientos recomendados.
 ms.openlocfilehash: bd4b911cd5972b7d6dc9b55c17e375d326b1d571
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31026341"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264642"
 ---
 # <a name="security-best-practices-for-office-365"></a>Procedimientos recomendados de seguridad para Office 365
 

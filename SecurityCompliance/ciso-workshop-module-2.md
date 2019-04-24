@@ -11,11 +11,11 @@ ms.collection:
 - M365-security-compliance
 description: Obtenga más información sobre los principios de seguridad y las recomendaciones para modernizar la seguridad de su organización.
 ms.openlocfilehash: d802f6ad1af1cd818dffeba32c5b8c101636da61
-ms.sourcegitcommit: d3e3ce391130f209f4d63c2528e1da8342cd732f
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "31908313"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32244091"
 ---
 # <a name="ciso-workshop-module-2-security-management"></a>Módulo 2 del taller de CISO: administración de la seguridad 
 

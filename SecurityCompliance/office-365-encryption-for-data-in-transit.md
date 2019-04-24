@@ -15,11 +15,11 @@ ms.collection:
 - Strat_O365_Enterprise
 description: 'Resumen: breve explicación de cómo Microsoft cifra los datos en tránsito.'
 ms.openlocfilehash: ba1317a0a2a685d0f3ac2216939d04e402503e49
-ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30357611"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262802"
 ---
 # <a name="office-365-encryption-for-data-in-transit"></a>Office 365 cifrado para los datos en tránsito
 

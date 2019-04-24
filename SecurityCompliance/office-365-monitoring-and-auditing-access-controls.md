@@ -3,23 +3,22 @@ title: Controles de acceso de supervisión y auditoría de Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 'Resumen: Resumen de los diversos controles de acceso de supervisión y auditoría disponibles en Office 365.'
-ms.openlocfilehash: 91d78ba3de41554755a7c19799eb1f7b25933b05
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 753acd1a0bd0d3b4a834263071d431b63836f399
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30217740"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262542"
 ---
 # <a name="monitoring-and-auditing-access-controls-in-office-365"></a>Supervisión y auditoría de controles de acceso en Office 365
 

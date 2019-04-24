@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: e2a789f2-9962-4960-9fd4-a00aa063559e
 description: 'Para administradores: Obtenga información sobre cómo habilitar el archivado de expansión automática en Office 365, que proporciona a los usuarios un almacenamiento ilimitado para sus buzones de Exchange Online. Puede habilitar el archivado de expansión automática para toda la organización o solo para usuarios específicos.'
 ms.openlocfilehash: e41ebc0605b7e6ce2178791de27421a82e2b6cf6
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000853"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256848"
 ---
 # <a name="enable-unlimited-archiving-in-office-365---admin-help"></a>Habilitar el archivado ilimitado en Office 365: ayuda de administración
 

@@ -3,7 +3,7 @@ title: Archivado de datos de terceros en Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 9/5/2017
+ms.date: ''
 ms.audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 description: Los administradores pueden importar datos de terceros desde plataformas de medios sociales, plataformas de mensajería instantánea y plataformas de colaboración de documentos a los buzones de la organización de Office 365. Esto le permite archivar datos de Facebook, Twitter y orígenes de datos en Office 365. A continuación, puede aplicar las características de cumplimiento de Office 365 (por ejemplo, directivas de retención legal, búsqueda de contenido y retención) a datos de terceros.
-ms.openlocfilehash: 06ac436b1583187e89cb7f1beb26411ba02becec
-ms.sourcegitcommit: 86ff2eba1d57b9d5288840788529e69ad9d836b6
+ms.openlocfilehash: 6e5f40328c54a6f2c97cb6cfe14a1bc5727ae087
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31818617"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32249620"
 ---
 # <a name="archiving-third-party-data-in-office-365"></a>Archivado de datos de terceros en Office 365
 
@@ -505,7 +505,7 @@ Estos son los pasos para crear y configurar un buzón de datos de terceros para 
     
     - Coloque el buzón de datos de la tercera persona en retención por juicio. También puede aplicar una directiva de retención de Office 365 en el centro de seguridad y cumplimiento. Colocar este buzón en retención conservará elementos de datos de terceros (indefinidamente o durante un tiempo especificado) y evitará que se purguen del buzón. Consulte uno de los siguientes temas:
     
-      - [Poner un buzón en retención por juicio](https://go.microsoft.com/fwlink/p/?LinkId=404420)
+      - [Crear una retención por juicio](create-a-litigation-hold.md)
     
       - [Introducción a las directivas de retención en Office 365](retention-policies.md)
     
@@ -521,7 +521,7 @@ El paso siguiente es configurar los buzones de usuario para que admitan los dato
     
 2. Coloque los buzones de usuario en retención por juicio o aplique una directiva de retención de Office 365; Consulte uno de los siguientes temas: 
     
-    - [Poner un buzón en retención por juicio](https://go.microsoft.com/fwlink/p/?LinkId=404420)
+    - [Crear una retención por juicio](create-a-litigation-hold.md)
     
     - [Introducción a las directivas de retención en Office 365](retention-policies.md)
     
@@ -567,13 +567,13 @@ Para revocar el consentimiento de un conector de datos de terceros, puede elimin
     
     |**Propiedad del mensaje**|**¿Es obligatoria?**|**Descripción**|**Valor de ejemplo**|
     |:-----|:-----|:-----|:-----|
-    |**TRAVÉS** <br/> |Sí  <br/> |El usuario que originalmente ha creado o enviado el elemento en el origen de datos de terceros. El conector del asociado intentará asignar el identificador de usuario del elemento de origen (por ejemplo, un controlador de Twitter) a una cuenta de usuario de Office 365 para todos los participantes (usuarios de los campos de y a). Una copia del mensaje se importará al buzón de cada participante. Si ninguno de los participantes del elemento se puede asignar a una cuenta de usuario de Office 365, el elemento se importará al buzón de archivado de otro fabricante en Office 365.  <br/> <br/> El participante que se identifica como remitente del elemento debe tener un buzón activo en la organización de Office 365 a la que se va a importar el elemento. Si el remitente no tiene un buzón activo, se devolverá el siguiente error:<br/><br/>  `One or more messages in the Request failed to be delivered to either From or Sender email address. You will need to resend your entire Request. Error: The request failed. The remote server returned an error: (401) Unauthorized.`  | `bob@contoso.com` <br/> |
-    |**HASTA** <br/> |Sí  <br/> |El usuario que ha recibido un elemento, si es aplicable a un elemento del origen de datos.  <br/> | `bob@contoso.com` <br/> |
+    |**FROM** <br/> |Sí  <br/> |El usuario que originalmente ha creado o enviado el elemento en el origen de datos de terceros. El conector del asociado intentará asignar el identificador de usuario del elemento de origen (por ejemplo, un controlador de Twitter) a una cuenta de usuario de Office 365 para todos los participantes (usuarios de los campos de y a). Una copia del mensaje se importará al buzón de cada participante. Si ninguno de los participantes del elemento se puede asignar a una cuenta de usuario de Office 365, el elemento se importará al buzón de archivado de otro fabricante en Office 365.  <br/> <br/> El participante que se identifica como remitente del elemento debe tener un buzón activo en la organización de Office 365 a la que se va a importar el elemento. Si el remitente no tiene un buzón activo, se devolverá el siguiente error:<br/><br/>  `One or more messages in the Request failed to be delivered to either From or Sender email address. You will need to resend your entire Request. Error: The request failed. The remote server returned an error: (401) Unauthorized.`  | `bob@contoso.com` <br/> |
+    |**TO** <br/> |Sí  <br/> |El usuario que ha recibido un elemento, si es aplicable a un elemento del origen de datos.  <br/> | `bob@contoso.com` <br/> |
     |**TITULAR** <br/> |No  <br/> |El asunto del elemento de origen.  <br/> | `"Mega deals with Contoso coming your way! #ContosoHolidayDeals"` <br/> |
     |**OBSOLET** <br/> |Sí  <br/> |La fecha en la que el elemento originalmente se ha creado o publicado en el origen de datos del cliente; por ejemplo, la fecha en la que se ha publicado un mensaje en Twitter.  <br/> | `01 NOV 2015` <br/> |
     |**CUERPO** <br/> |No  <br/> |El contenido del mensaje o la publicación. En el caso de algunos orígenes de datos, el contenido de esta propiedad podría ser el mismo que el contenido de la propiedad **SUBJECT**. Durante el proceso de importación, el conector asociado intentará mantener en la medida de lo posible la fidelidad total desde el origen de contenido. Si es posible, los archivos, los gráficos u otro contenido del cuerpo del elemento de origen se incluyen en esta propiedad. Si no es así, el contenido del elemento de origen se incluye en la propiedad **ATTACHMENT**. El contenido de esta propiedad dependerá del conector del asociado y de la capacidad de la plataforma de origen.  <br/> | `Author: bob@contoso.com` <br/>  `Date: 10 DEC 2014` <br/>  `Tweet: "Mega deals with Contoso coming your way! #ContosoHolidayDeals"` <br/>  `Date: 01 NOV 2015` <br/> |
     |**DATOS adjuntos** <br/> |No  <br/> |Si un elemento del origen de datos (como un Tweet en Twitter o una conversación de mensajería instantánea) tiene un archivo adjunto o incluye imágenes, la conexión del asociado intentará primero incluir datos adjuntos en la propiedad **Body** . Si esto no es posible, se agrega a la propiedad * * ATTACHMENT * *. Otros ejemplos de datos adjuntos son los "Me gusta" de Facebook, los metadatos del origen del contenido y las respuestas a un mensaje o una publicación.  <br/> | `image.gif` <br/> |
-    |**MESSAGECLASS** <br/> |Sí  <br/> | Se trata de una propiedad de varios valores, que se crea y rellena con el conector de asociado. El formato de esta propiedad es `IPM.NOTE.Source.Event`. (Esta propiedad debe comenzar con `IPM.NOTE`; este formato es similar al de la `IPM.NOTE.X` clase de mensaje). Esta propiedad incluye la siguiente información:  <br/><br/>`Source` : Indica el origen de datos de terceros; por ejemplo, Twitter, Facebook o BlackBerry.  <br/> <br/>  `Event` : Indica el tipo de actividad que se realizó en el origen de datos de terceros que generó los elementos; por ejemplo, un Tweet en Twitter o un post en Facebook. Los eventos son específicos del origen de datos.  <br/> <br/>  Un objetivo de esta propiedad es filtrar elementos específicos en función del origen de datos en el que un elemento se originó o basó, o bien en función del tipo de evento. Por ejemplo, en una búsqueda de exhibición de documentos electrónicos podría crear una consulta de búsqueda para encontrar todos los tweets publicados por un usuario concreto.  <br/> | `IPM.NOTE.Twitter.Tweet` <br/> |
+    |**MESSAGECLASS** <br/> |Sí  <br/> | Se trata de una propiedad de varios valores, que se crea y rellena con el conector de asociado. El formato de esta propiedad es `IPM.NOTE.Source.Event`. (Esta propiedad debe comenzar con `IPM.NOTE`; este formato es similar al de la `IPM.NOTE.X` clase de mensaje). Esta propiedad incluye la siguiente información:  <br/><br/>`Source`: Indica el origen de datos de terceros; por ejemplo, Twitter, Facebook o BlackBerry.  <br/> <br/>  `Event`: Indica el tipo de actividad que se realizó en el origen de datos de terceros que generó los elementos; por ejemplo, un Tweet en Twitter o un post en Facebook. Los eventos son específicos del origen de datos.  <br/> <br/>  Un objetivo de esta propiedad es filtrar elementos específicos en función del origen de datos en el que un elemento se originó o basó, o bien en función del tipo de evento. Por ejemplo, en una búsqueda de exhibición de documentos electrónicos podría crear una consulta de búsqueda para encontrar todos los tweets publicados por un usuario concreto.  <br/> | `IPM.NOTE.Twitter.Tweet` <br/> |
    
 - Cuando los elementos se importan correctamente a los buzones de Office 365, un identificador único se devuelve al autor de la llamada como parte de la respuesta HTTP. Este identificador, llamado `x-IngestionCorrelationID`, se puede usar para solucionar problemas posteriores de los asociados para el seguimiento de elementos de un extremo a otro. Se recomienda que los asociados capturen esta información y la registren según corresponda en su extremo. A continuación se incluye un ejemplo de una respuesta HTTP que muestra este identificador:
 
@@ -599,5 +599,5 @@ Para revocar el consentimiento de un conector de datos de terceros, puede elimin
     
   - [Búsqueda de contenido en Office 365](content-search.md)
     
-  - [Consultas de palabras clave y condiciones de búsqueda para la búsqueda de contenido](keyword-queries-and-search-conditions.md)
+  - [Consultas de palabras clave y condiciones de búsqueda para la búsqueda de contenido](keyword-queries-and-search-conditions.md).
  

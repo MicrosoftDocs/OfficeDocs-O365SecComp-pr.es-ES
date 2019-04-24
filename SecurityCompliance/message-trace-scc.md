@@ -1,5 +1,5 @@
 ---
-title: Seguimiento de mensajes en el centro de seguridad & cumplimiento
+title: Seguimiento de mensajes en el Centro de seguridad y cumplimiento
 ms.author: chrisda
 author: chrisda
 manager: serdars
@@ -10,13 +10,13 @@ localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: Los administradores pueden usar el seguimiento de mensajes en el centro de seguridad & cumplimiento para averiguar qué sucedió con los mensajes.
 ms.openlocfilehash: ebfc8d5e19bbc45c32ad65451f3f850662f358b4
-ms.sourcegitcommit: f86383dcb9c52352661d51b22617f1809445beaa
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "30573554"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265662"
 ---
-# <a name="message-trace-in-the-security--compliance-center"></a>Seguimiento de mensajes en el centro de seguridad & cumplimiento
+# <a name="message-trace-in-the-security--compliance-center"></a>Seguimiento de mensajes en el Centro de seguridad y cumplimiento
 
 ## <a name="overview"></a>Información general
 
@@ -325,7 +325,7 @@ Varios **** agentes de Exchange Online `AGENTINFO` usan el campo custom_data par
 
 Un valor de **custom_data** que empieza `S:SFA` por es del agente de filtro de correo no deseado. Los detalles de la clave se describen en la tabla siguiente:
 
-|**Valor**|**Descripción**|
+|**Value**|**Descripción**|
 |:-----|:-----|
 |`SFV=NSPM`|El mensaje se marcó como correo seguro y se envió a los destinatarios correspondientes.|
 |`SFV=SPM`|El filtro de contenido marcó el mensaje como correo no deseado.|
@@ -352,7 +352,7 @@ Un valor de **custom_data** de ejemplo para un mensaje que se filtra para correo
 
 Un valor de **custom_data** que empieza `S:AMA` por es del agente de filtro de malware. Los detalles de la clave se describen en la tabla siguiente:
 
-|**Valor**|**Descripción**|
+|**Value**|**Descripción**|
 |:-----|:-----|
 |`AMA=SUM|v=1|` o `AMA=EV|v=1`|Se determinó que el mensaje contiene malware. `SUM`indica que el malware podría haber sido detectado por cualquier número de motores. `EV`indica que un motor específico detectó el malware. Cuando un motor detecta el malware, se activan las acciones siguientes.|
 |`Action=r`|El mensaje se reemplazó.|
@@ -375,7 +375,7 @@ Un valor de **custom_data** de ejemplo para un mensaje que contiene malware tien
 
 Un valor de **custom_data** que empieza`S:TRA` por es del agente de reglas de transporte para las reglas de flujo de correo (también conocidas como reglas de transporte). Los detalles de la clave se describen en la tabla siguiente:
 
-|**Valor**|**Descripción**|
+|**Value**|**Descripción**|
 |:-----|:-----|
 |`ETR|ruleId=<guid>`|El identificador de regla coincidente.|
 |`St=<datetime>`|La fecha y la hora en UTC cuando se produjo la coincidencia de regla.|

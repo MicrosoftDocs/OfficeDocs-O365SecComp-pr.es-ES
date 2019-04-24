@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: A cada mensaje de correo electrónico que pasa por el filtrado de correo no deseado se le asigna una puntuación de correo no deseado. La puntuación se asigna a una clasificación de nivel de confianza contra correo no deseado (SCL) individual y se marca en un encabezado X. El servicio realiza acciones en los mensajes según la interpretación de la confianza contra correo no deseado de las clasificaciones de SCL. La tabla siguiente muestra cómo las distintas clasificaciones de SCL se interpretan en los filtros y la acción predeterminada que se realiza en los mensajes entrantes por cada clasificación.
 ms.openlocfilehash: 48ca02bf3f6549c5acc1147ea477b9d22f1c76e1
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692769"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260678"
 ---
 # <a name="spam-confidence-levels"></a>Niveles de confianza de correo no deseado
 

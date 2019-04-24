@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: Use la herramienta de búsqueda de contenido en el centro de cumplimiento de Office 365 o Microsoft 365 para buscar contenido en buzones de correo, sitios de SharePoint Online, cuentas de OneDrive, Microsoft Teams, grupos de Office 365 y conversaciones de Skype empresarial. Puede usar consultas de búsqueda de palabras clave y condiciones de búsqueda para restringir los resultados de la búsqueda. A continuación, puede obtener una vista previa y exportar los resultados de búsqueda. La búsqueda de contenido también es una herramienta eficaz para buscar contenido que pueda estar relacionado con una solicitud de sujeto de datos de RGPD.
 ms.openlocfilehash: 67b32dcc6efcc096b9952be41380a8dc3700a668
-ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31814071"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264122"
 ---
 # <a name="content-search-in-office-365"></a>Búsqueda de contenido en Office 365
 
@@ -207,11 +207,11 @@ Tenga en cuenta lo siguiente cuando use la lista de palabras clave para crear un
   
 - Debe activar la casilla de verificación **Mostrar lista de palabras clave** y, a continuación, escribir cada palabra clave en una fila separada para crear una consulta de búsqueda en la que el operador **or** Conecte las palabras clave (o frases de palabra clave) de cada fila. Si sólo pega una lista de palabras clave en el cuadro palabra clave o presiona la tecla **entrar** después de escribir una palabra clave, no se conectará al operador **or** . Este es un ejemplo incorrecto y correcto de adición de una lista de palabras clave. 
     
-    **Incorrecto**
+    **Correctas**
     
     ![La forma incorrecta de aplicar formato a una lista de palabras clave (pegando la lista en el cuadro palabra clave)](media/fb54e3df-232a-439a-b3d7-27a60ec76a4c.png)
   
-    **Correcto**
+    **Corregi**
     
     ![La forma correcta de dar formato a una lista de palabras clave (seleccionando CheckBox y, a continuación, lista de pegado)](media/5d511a7b-c1f9-499c-bffe-e075bfc9adec.png)
   

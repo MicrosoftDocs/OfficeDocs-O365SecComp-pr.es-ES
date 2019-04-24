@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo configurar una lista de direcciones URL bloqueadas para su organización mediante la protección contra amenazas avanzada de Office 365. Las direcciones URL bloqueadas se aplicarán a los mensajes de correo electrónico y documentos de Office de acuerdo con las directivas de vínculos seguros de ATP.
 ms.openlocfilehash: c5444e644a35688ea626004fbc6865df4ae645f9
-ms.sourcegitcommit: 1c73c2f83703af0a30a5b0633db00d8e0e6b39b5
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "30241922"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264532"
 ---
 # <a name="set-up-a-custom-blocked-urls-list-using-office-365-atp-safe-links"></a>Configurar una lista de direcciones URL bloqueadas personalizadas con los vínculos seguros de Office 365 ATP
 
@@ -41,7 +41,7 @@ Lea este artículo para obtener información sobre cómo configurar la lista de 
 
 Para editar (o definir) las directivas de ATP, debe tener asignado uno de los roles descritos en la siguiente tabla: 
 
-|Rol  |Dónde y cómo se asigna  |
+|Role  |Dónde y cómo se asigna  |
 |---------|---------|
 |Administrador global de Office 365 |La persona que se registra para comprar Office 365 es un administrador global de forma predeterminada. (Consulte [acerca de los roles de administrador de Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) para obtener más información).         |
 |Administrador de seguridad |Centro de administración de Azure Active[https://aad.portal.azure.com](https://aad.portal.azure.com)Directory ()|
@@ -76,7 +76,7 @@ Mientras agrega direcciones URL a la lista, tenga en cuenta los siguientes punto
     
 |**Entrada de ejemplo**|**Qué hace**|
 |:-----|:-----|
-|`contoso.com`o`*contoso.com*`  <br/> |Bloquea el dominio, los subdominios y las rutas de los `https://www.contoso.com`, `http://sub.contoso.com`como, y`http://contoso.com/abc`  <br/> |
+|`contoso.com` o `*contoso.com*`  <br/> |Bloquea el dominio, los subdominios y las rutas de los `https://www.contoso.com`, `http://sub.contoso.com`como, y`http://contoso.com/abc`  <br/> |
 |`http://contoso.com/a`  <br/> |Bloquea un sitio `http://contoso.com/a` , pero no otros subtrazados adicionales como`http://contoso.com/a/b`  <br/> |
 |`http://contoso.com/a*`  <br/> |Bloquea un sitio `http://contoso.com/a` y subrutas adicionales como`http://contoso.com/a/b`  <br/> |
 |`http://toys.contoso.com*`  <br/> |Bloquea un subdominio ("juguetes" en este caso), pero permite hacer clic en otras direcciones URL de `http://contoso.com` dominio `http://home.contoso.com`(como o).  <br/> |

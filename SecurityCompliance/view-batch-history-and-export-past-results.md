@@ -1,5 +1,5 @@
 ---
-title: Ver el historial del lote y exportar resultados pasados en eDiscovery avanzado de Office 365
+title: Ver el historial del lote y exportar los resultados anteriores en eDiscovery avanzado de Office 365
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,13 +14,13 @@ search.appverid:
 ms.assetid: 35d52b41-75ab-4144-9edf-31e11453bd5d
 description: 'Aprenda a ver información detallada sobre las sesiones de lote de exportación seleccionadas y cómo deshacer la última sesión de exportación en Office 365 Advanced eDiscovery.  '
 ms.openlocfilehash: a55f299669c2a404ee176153aa766210a3141199
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30214950"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32243528"
 ---
-# <a name="view-batch-history-and-export-past-results-in-office-365-advanced-ediscovery"></a>Ver el historial del lote y exportar resultados pasados en eDiscovery avanzado de Office 365
+# <a name="view-batch-history-and-export-past-results-in-office-365-advanced-ediscovery"></a>Ver el historial del lote y exportar los resultados anteriores en eDiscovery avanzado de Office 365
 
 > [!NOTE]
 > Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 
@@ -55,7 +55,7 @@ El cuadro de diálogo historial de exportación proporciona información detalla
     
 2. Haga clic en **examinar** para seleccionar la ubicación de destino para almacenar los archivos de exportación descargados en un equipo local. 
     
-3. Haga clic en **iniciar**. Los archivos de exportación se descargan en el equipo local. 
+3. Haga clic en  **Iniciar **. Los archivos de exportación se descargan en el equipo local. 
     
 ## <a name="see-also"></a>Vea también
 

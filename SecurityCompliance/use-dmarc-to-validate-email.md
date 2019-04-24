@@ -14,11 +14,11 @@ ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo configurar la autenticación de mensajes basada en dominio, la creación de informes y la conformidad (DMARC) para validar los mensajes enviados desde su organización de Office 365.
 ms.openlocfilehash: de92825726225549fda1b0dc57d737763f273043
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693409"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32263732"
 ---
 # <a name="use-dmarc-to-validate-email-in-office-365"></a>Usar DMARC para validar el correo electrónico en Office 365
 
@@ -224,7 +224,7 @@ contoso.com     3600   IN  MX  10 contoso-com.mail.protection.outlook.com
 
 Todo el correo electrónico o la mayor parte se enrutará primero a mail.contoso.com, ya que es el MX principal, y luego el correo se enrutará a EOP. En algunos casos, ni siquiera podría marcar EOP como registro MX y solo podría enlazar conectores para enrutar el correo electrónico. EOP no tiene que ser la primera entrada para que se realice la validación de DMARC. Solo garantiza la validación, ya que no se puede garantizar que todos los servidores locales o que no sean de O365 realizarán comprobaciones de DMARC.  DMARC se puede aplicar a un dominio de un cliente (no al del servidor) cuando se configura el registro TXT de DMARC, pero el servidor receptor no puede realmente realizar la obligatoriedad de hacerlo.  Si configura EOP como el servidor de recepción, EOP realiza la aplicación de DMARC.
   
-## <a name="for-more-information"></a>Para obtener más información
+## <a name="for-more-information"></a>Más información
 <a name="sectionSection8"> </a>
 
 ¿Quiere más información sobre DMARC? Estos recursos lo pueden ayudar.

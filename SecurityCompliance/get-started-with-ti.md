@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre la investigación y respuesta de amenazas de Office 365 y cómo comenzar.
 ms.openlocfilehash: fd038f706ccb3df68b98f02593e43091484ec0c6
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30998883"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32254209"
 ---
 # <a name="get-started-with-threat-investigation-and-response-office-365-advanced-threat-protection-plan-2"></a>Introducción a la investigación y respuesta de amenazas (Office 365 Advanced Threat Protection Plan 2)
 

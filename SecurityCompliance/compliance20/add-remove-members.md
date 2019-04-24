@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: aaec95ec4bb8e55d1ed1c7d9552ee7215ba5ec14
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30294783"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32242893"
 ---
 # <a name="add-or-remove-members-from-a-case"></a>Agregar o quitar miembros de un caso
 
@@ -31,7 +31,8 @@ Puede Agregar o quitar miembros para administrar quién puede tener acceso al ca
  
 3. Haga clic en **Actualizar**.
  
-4. En **administrar miembros**, haga clic en agregar icono Agregar para agregar miembros al caso. También puede optar por agregar un grupo de funciones al caso. En **administrar grupos de roles**, haga clic en agregar icono Agregar.  Tenga en cuenta que los grupos de roles controlan el permiso de acceso al caso. Esto significa que solo puede asignar revisor, administrador de exhibición de documentos electrónicos o grupos de roles personalizados con el rol de administración de casos.
+4. En **administrar miembros**, haga clic en agregar icono Agregar para agregar miembros al caso. También puede optar por agregar un grupo de funciones al caso. En **administrar grupos de roles**, haga clic en agregar icono Agregar. 
+    Tenga en cuenta que los grupos de roles controlan el permiso de acceso al caso. Esto significa que solo puede asignar revisor, administrador de exhibición de documentos electrónicos o grupos de roles personalizados con el rol de administración de casos.
  
 5. En la lista de personas o grupos de roles que se pueden agregar como miembros del caso, haga clic en la casilla situada junto a los nombres de los grupos de personas o roles que desea agregar.
 

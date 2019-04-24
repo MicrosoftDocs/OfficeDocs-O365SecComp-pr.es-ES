@@ -1,5 +1,5 @@
 ---
-title: Ver resultados del módulo de proceso en eDiscovery avanzado de Office 365
+title: Ver los resultados del módulo de proceso en Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,13 +14,13 @@ search.appverid:
 ms.assetid: c6f016cb-409f-4ae9-911c-1395cf0c86ea
 description: 'Obtenga información sobre cómo encontrar los resultados de un módulo de proceso en la exhibición avanzada de documentos de Office 365, incluido el estado de la tarea y el resumen del proceso.  '
 ms.openlocfilehash: 0393cde78e559036d92b9ac48245afafc974a8b2
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218060"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32267200"
 ---
-# <a name="view-process-module-results-in-office-365-advanced-ediscovery"></a>Ver resultados del módulo de proceso en eDiscovery avanzado de Office 365
+# <a name="view-process-module-results-in-office-365-advanced-ediscovery"></a>Ver los resultados del módulo de proceso en Office 365 Advanced eDiscovery
 
 Una vez iniciado el **proceso** de **preparación** \> , puede ver el progreso y los resultados. 
   

@@ -13,11 +13,11 @@ search.appverid: MOE150
 ms.assetid: 82c97bb4-2b64-4edc-804d-cedbda525d22
 description: Use el archivo Results. csv o unindexed items. csv de una búsqueda de contenido existente para crear una búsqueda de lista de IDENTIFICADOres que devuelva un mensaje de correo electrónico específico. Las búsquedas de listas de IDENTIFICADOres se usan normalmente para devolver elementos de buzón parcialmente indizados.
 ms.openlocfilehash: fc26f8dab11f1121deb11dd93b2cd0c70a1d629c
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999683"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265472"
 ---
 # <a name="prepare-a-csv-file-for-an-id-list-content-search-in-office-365"></a>Preparar un archivo CSV para una búsqueda de contenido de la lista de IDENTIFICADOres en Office 365
 

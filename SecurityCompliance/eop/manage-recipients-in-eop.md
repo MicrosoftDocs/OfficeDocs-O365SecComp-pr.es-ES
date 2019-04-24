@@ -11,11 +11,11 @@ localization_priority: Normal
 ms.assetid: 2921f544-8257-4bae-8e3a-ce9250e9f162
 description: Microsoft Exchange Online Protection (EOP) ofrece varias maneras de administrar los destinatarios de correo. Como administrador, puede realizar ciertas tareas de administración dentro del centro de administración de Exchange (EAC) o mediante Windows PowerShell remoto y comprobar otras tareas de administración realizadas en el centro de administración de Microsoft 365.
 ms.openlocfilehash: 1d9436cf02538ab5c69e0e68d20eda1af5b0a5cd
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30691689"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256618"
 ---
 # <a name="manage-recipients-in-eop"></a>Administrar destinatarios en EOP
 

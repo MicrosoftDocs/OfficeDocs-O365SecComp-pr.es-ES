@@ -15,24 +15,24 @@ ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
 description: Si su organización envía una gran cantidad de correo masivo marcado como correo no deseado, puede bloquear el envío de correo electrónico con Office 365. Lea este artículo para obtener más información sobre por qué ocurre esto y lo que puede hacer al respecto.
-ms.openlocfilehash: 476e1ddff73493881708e050fb7834e6bd6b272a
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 9261c61d472554ae7d2f3d4134514d23b600ee87
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30217340"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258218"
 ---
-# <a name="controlling-outbound-spam-in-office-365"></a>Controlar el correo no deseado saliente en Office 365
+# <a name="control-outbound-spam-in-office-365"></a>Controlar el correo no deseado saliente en Office 365
 
 Tenemos que administrar el correo no deseado de salida en serio porque nuestro es un servicio compartido.  Hay muchos clientes detrás de un grupo compartido de recursos, donde si un cliente envía correo no deseado saliente, puede degradar la reputación IP saliente del servicio y afecta a la entrega correcta del correo electrónico para otros clientes. No es justo para el cliente A si el cliente B contra correo electrónico no deseado y varios blocklists IP de terceros enumeran la dirección IP que usa.
 
 ## <a name="what-admins-can-do-to-control-outbound-spam"></a>Qué pueden hacer los administradores para controlar el correo no deseado saliente
 
-- **Habilitar las notificaciones cuando una cuenta envía correo no deseado o se cierra**. Los administradores pueden obtener CCO cada vez que un mensaje se marca como correo no deseado saliente y se envía a través del grupo de alto riesgo. Mediante la supervisión de este buzón, un administrador puede detectar si tiene una cuenta en peligro en su red o si el filtro de correo no deseado marca de forma errónea su correo electrónico como correo no deseado.  Puede encontrar más información sobre cómo configurar la Directiva de correo no deseado saliente [aquí](configure-the-outbound-spam-policy.md).
+- **Habilitar las notificaciones cuando una cuenta envía correo no deseado o se cierra**. Los administradores pueden obtener CCO cada vez que un mensaje se marca como correo no deseado saliente y se envía a través del grupo de alto riesgo. Mediante la supervisión de este buzón, un administrador puede detectar si tiene una cuenta en peligro en su red o si el filtro de correo no deseado marca de forma errónea su correo electrónico como correo no deseado. [Aquí](configure-the-outbound-spam-policy.md)puede encontrar más información sobre cómo configurar la Directiva de correo no deseado saliente.
  
 - **Revise manualmente las reclamaciones de correo no deseado de proveedores de correo electrónico de**terceros. Muchos servicios de correo electrónico de terceros como Outlook.com, Yahoo y AOL proporcionan un bucle de comentarios en el que si algún usuario del servicio marca un correo electrónico de nuestro servicio como correo no deseado, el mensaje se envía y se envía a nosotros para que lo revisen. Para obtener más información acerca de la compatibilidad de remitentes para Outlook.com, haga clic [aquí](https://sendersupport.olc.protection.outlook.com/pm/services.aspx).
 
-## <a name="what-eop-does-to-control-outbound-spam"></a>Qué hace EOP para controlar el correo no deseado saliente 
+## <a name="what-eop-does-to-control-outbound-spam"></a>Qué hace EOP para controlar el correo no deseado saliente
 
 1. **Segregación de tráfico saliente en grupos de direcciones IP independientes**. Todos los mensajes que envían clientes salientes a través del servicio se examinan en busca de correo no deseado. Si el mensaje es correo no deseado, se enruta a través del grupo de entrega de alto riesgo. Este grupo de direcciones IP contiene notificaciones de estado no entregadas y correo no deseado. No se garantiza la entrega al destinatario previsto, ya que muchas terceras partes no aceptarán correo electrónico porque la calidad del correo electrónico que emite.<br/><br/>Al dividir el tráfico de este modo, se garantiza que el correo electrónico de menor calidad (correo no deseado, NDR de reenvío masivo) no se arrastra hacia abajo la reputación de los grupos de correo electrónico salientes normales. El grupo de alto riesgo suele tener una reputación baja en muchos receptores por Internet, aunque no es universal. 
 
@@ -57,7 +57,7 @@ El grupo de trabajo de mensajería, móviles y contra el abuso de malware (MAAWG
   
 ## <a name="for-more-information"></a>Más información
 
-[Notificación de muestra cuando se bloquea a un remitente para enviar correo no deseado de salida](sample-notification-when-a-sender-is-blocked-sending-outbound-spam.md)
+[Notificación de muestra cuando se bloquea a un remitente que envía correo no deseado saliente](sample-notification-when-a-sender-is-blocked-sending-outbound-spam.md)
 
 [Protección contra correo no deseado de Office 365](anti-spam-protection.md)
 

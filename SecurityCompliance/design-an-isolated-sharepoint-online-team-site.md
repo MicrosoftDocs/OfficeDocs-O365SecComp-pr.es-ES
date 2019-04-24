@@ -15,11 +15,11 @@ ms.custom: Ent_Solutions
 ms.assetid: 775a4e9e-3135-4a48-b32f-bbdd9f2bd0aa
 description: 'Resumen: paso a paso del proceso de diseño de sitios de grupo de SharePoint Online aislados.'
 ms.openlocfilehash: 09748fcc22a4a48efc4346ff75a225db612a0ef4
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216160"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257194"
 ---
 # <a name="design-an-isolated-sharepoint-online-team-site"></a>Diseñar un sitio de grupo de SharePoint Online aislado
 
@@ -51,7 +51,7 @@ El conjunto de permisos específicos que determina lo que un miembro de un grupo
   
 Estos son los grupos de SharePoint y los niveles de permisos predeterminados.
   
-![Los grupos y niveles de permisos predeterminados de SharePoint de un sitio de SharePoint Online.](media/3f892ab4-6479-42f0-a505-1ba0ef94b9c6.png)
+![Los grupos de SharePoint y los niveles de permisos predeterminados para un sitio de SharePoint Online.](media/3f892ab4-6479-42f0-a505-1ba0ef94b9c6.png)
   
 ## <a name="phase-2-assign-permissions-to-users-with-access-groups"></a>Fase 2: asignar permisos a los usuarios con grupos de acceso
 
@@ -101,7 +101,7 @@ Al diseñar los tres grupos de acceso, tenga en cuenta lo siguiente:
     
 Este es un ejemplo de los grupos de SharePoint y los grupos de acceso para un sitio aislado denominado ProyectoX.
   
-![Un ejemplo del uso de grupos de acceso de un sitio de SharePoint Online denominado ProjectX.](media/13afe542-9ffd-4671-9f48-210a0e2a502a.png)
+![Un ejemplo del uso de grupos de acceso para un sitio de SharePoint Online denominado ProyectoX.](media/13afe542-9ffd-4671-9f48-210a0e2a502a.png)
   
 ## <a name="phase-3-use-nested-azure-ad-groups"></a>Fase 3: usar grupos anidados de Azure AD
 
@@ -124,7 +124,7 @@ Para usar grupos anidados de Azure AD:
   
 Este es un ejemplo de grupos de Azure AD anidados para el grupo de acceso a los miembros del ProyectoX.
   
-![Un ejemplo del uso de los grupos de acceso anidados para el grupo de acceso de los miembros del sitio ProjectX.](media/2abca710-bf9e-4ce8-9bcd-a8e128264fb1.png)
+![Un ejemplo del uso de grupos de acceso anidados para el grupo de acceso de los miembros del sitio del ProyectoX.](media/2abca710-bf9e-4ce8-9bcd-a8e128264fb1.png)
   
 Debido a que todas las cuentas de usuario de los equipos de clientes potenciales de investigación, ingeniería y proyecto tienen como objetivo ser miembros del sitio, es más fácil agregar sus grupos de Azure AD al grupo de acceso de los miembros del ProyectoX.
   

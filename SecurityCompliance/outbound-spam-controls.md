@@ -14,16 +14,19 @@ ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
 description: Si su organización envía una gran cantidad de correo masivo marcado como correo no deseado, puede bloquear el envío de correo electrónico con Office 365. Lea este artículo para obtener más información sobre por qué ocurre esto y lo que puede hacer al respecto.
-ms.openlocfilehash: 2cfcb7016b0c0d11117f6d78af2632229c70aa1d
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.openlocfilehash: 0fcbe0c7b9d1bd340e2ab2feb5edec8283ecaf9a
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30275930"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262312"
 ---
 # <a name="controlling-outbound-spam-in-office-365"></a>Controlar el correo no deseado saliente en Office 365
 
-Tenemos que administrar el correo no deseado de salida en serio porque nuestro es un servicio compartido.  Hay muchos clientes detrás de un grupo compartido de recursos, donde si un cliente envía correo no deseado saliente, puede degradar la reputación IP saliente del servicio y afecta a la entrega correcta del correo electrónico para otros clientes. No es justo para el cliente A si el cliente B contra correo electrónico no deseado y varios blocklists IP de terceros enumeran la dirección IP que usa.
+Tenemos que administrar el correo no deseado de salida en serio porque nuestro es un servicio compartido.  Hay muchos clientes detrás de un grupo compartido de recursos, donde si un cliente envía correo no deseado saliente, puede degradar la reputación IP saliente del servicio y afecta a la entrega correcta del correo electrónico para otros clientes.
+
+> [!IMPORTANT]
+> La notificación para cuando un remitente está restringido ahora forma parte de la plataforma de alertas del centro de cumplimiento de & de seguridad (SCC). En lugar de usar los métodos descritos a continuación para enviar notificaciones, la lista de usuarios a los que se les avisa puede encontrarse en la alerta "el usuario restringió el envío de correo electrónico". Empiece a usar la [Página directivas de alerta](https://sip.protection.office.com/alertpolicies) en el centro de seguridad & cumplimiento para configurar la alerta, ya que el método anterior se quitará en el futuro. Obtenga información sobre la nueva [experiencia de usuarios restringidos](https://docs.microsoft.com/en-us/Office365/SecurityCompliance/removing-user-from-restricted-users-portal-after-spam). "
 
 ## <a name="what-admins-can-do-to-control-outbound-spam"></a>Qué pueden hacer los administradores para controlar el correo no deseado saliente
 
@@ -54,13 +57,13 @@ Es difícil alcanzar un equilibrio entre los clientes que quieren enviar un gran
 
 a. **Enviar el correo electrónico masivo a través de sus propios servidores de correo locales**. Esto significa que el cliente tendrá que mantener su propia infraestructura de correo electrónico para este tipo de correo electrónico.
 
-b. **usar un correo electrónico masivo de terceros para enviar la comunicación masiva**. Hay varios destinatarios de correo electrónico masivo de terceros cuyo único negocio es enviar correo electrónico masivo. Pueden trabajar con los clientes para asegurarse de que tienen buenas prácticas de correo electrónico y tienen recursos dedicados a su aplicación. 
+b. **Use un correo electrónico masivo de terceros para enviar la comunicación masiva**. Hay varios destinatarios de correo electrónico masivo de terceros cuyo único negocio es enviar correo electrónico masivo. Pueden trabajar con los clientes para asegurarse de que tienen buenas prácticas de correo electrónico y tienen recursos dedicados a su aplicación. 
 
 El grupo de trabajo de mensajería, móviles y contra el abuso de malware (MAAWG) publica [aquí](http://www.maawg.org/about/roster)su lista de pertenencia. Hay varios proveedores de correo electrónico masivo en la lista que se conocen como ciudadanos de Internet responsables. 
   
 ## <a name="for-more-information"></a>Más información
 
-[Notificación de muestra cuando se bloquea a un remitente para enviar correo no deseado de salida](sample-notification-when-a-sender-is-blocked-sending-outbound-spam.md)
+[Notificación de muestra cuando se bloquea a un remitente que envía correo no deseado saliente](sample-notification-when-a-sender-is-blocked-sending-outbound-spam.md)
 
 [Protección contra correo no deseado de Office 365](anti-spam-protection.md)
 

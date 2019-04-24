@@ -19,11 +19,11 @@ search.appverid:
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: 'ExPorte los resultados de búsqueda de una búsqueda de contenido en el centro de seguridad & cumplimiento a un equipo local. Los resultados de correo electrónico se exportan como archivos PST. El contenido de SharePoint y los sitios de OneDrive para la empresa se exportan como documentos de Office nativos. '
 ms.openlocfilehash: 5d1baa57f466a5ef7657d92b517660e35b0036e8
-ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31958651"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32255518"
 ---
 # <a name="export-content-search-results"></a>Exportar resultados de la búsqueda de contenido
 

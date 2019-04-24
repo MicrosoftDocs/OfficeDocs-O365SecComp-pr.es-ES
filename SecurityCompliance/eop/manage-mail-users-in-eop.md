@@ -11,11 +11,11 @@ localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: La definición de usuarios de correo es una parte importante de la administración del servicio de Protección en línea de Exchange (EOP).
 ms.openlocfilehash: 2e266d4dd31c3bd614c1b4f8afa17ca747890385
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692619"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256458"
 ---
 # <a name="manage-mail-users-in-eop"></a>Administrar usuarios de correo en EOP
 

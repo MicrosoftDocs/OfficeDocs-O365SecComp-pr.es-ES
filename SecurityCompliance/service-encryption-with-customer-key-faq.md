@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 41ae293a-bd5c-4083-acd8-e1a2b4329da6
 description: Además de la línea base, el cifrado de nivel de volumen que se habilita a través de BitLocker y el administrador de claves distribuidas (DKM), Office 365 ofrece una capa agregada de cifrado a nivel de aplicación para el contenido del cliente en Office 365, incluidos los datos de Exchange En línea, Skype empresarial, SharePoint Online y OneDrive para la empresa. Esto se denomina cifrado de servicio.
-ms.openlocfilehash: 5e1acca69ccdd8acb986acb4d7a302d4ca3fbe8a
-ms.sourcegitcommit: 8a65a29aa3bfe5dcad0ff152a7cd795e02877dd9
+ms.openlocfilehash: 8515354d716df22fa124c03e18c36914d27102f4
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30936770"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32266952"
 ---
 # <a name="service-encryption-with-customer-key-for-office-365-faq"></a>Preguntas más frecuentes sobre el cifrado de servicio con la clave de cliente para Office 365
 
@@ -46,7 +46,7 @@ BYOK con Azure Information Protection para Exchange Online se ofrece en las capa
 ## <a name="does-office-365-message-encryption-and-bring-your-own-key-with-azure-information-protection-change-microsofts-approach-to-third-party-data-requests-such-as-subpoenas"></a>¿El cifrado de mensajes de Office 365 y ofrece su propia clave con Azure Information Protection cambian el enfoque de Microsoft a las solicitudes de datos de terceros, como las citacións?
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
 
-No. El cifrado de mensajes de Office 365 y la opción de proporcionar y controlar sus propias claves de cifrado con la opción de traer su propia clave (BYOK) para Azure Information Protection (AIP) no se diseñó para responder a las inFormaciones de cumplimiento de la ley. El cifrado de mensajes de Office 365 con BYOK para AIP se diseñó para clientes centrados en el cumplimiento que necesitan cumplir sus obligaciones de cumplimiento interno o externo. Microsoft realiza muy en serio solicitudes de terceros para los datos de los clientes. Como proveedor de servicios en la nube, siempre proponemos la privacidad de los datos de clientes. En el caso de que recibamos una citación, siempre intentaremos redirigir a la tercera parte al cliente para obtener la información. (Lea el blog de Brad Martínez: [proteger los datos de clientes de la supervisión gubernamental](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)). Se publicará periódicamente información detallada de la solicitud que recibimos [aquí](https://www.microsoft.com/en-us/trustcenter/Privacy/govt-requests-for-data).
+No. El cifrado de mensajes de Office 365 y la opción de proporcionar y controlar sus propias claves de cifrado con la opción traer su propia clave (BYOK) para Azure Information Protection no ha sido diseñada para responder a las citaciónes de aplicación de la ley. El cifrado de mensajes de Office 365 con BYOK para AIP se diseñó para clientes centrados en el cumplimiento que necesitan cumplir sus obligaciones de cumplimiento interno o externo. Microsoft realiza muy en serio solicitudes de terceros para los datos de los clientes. Como proveedor de servicios en la nube, siempre proponemos la privacidad de los datos de clientes. En el caso de que recibamos una citación, siempre intentaremos redirigir a la tercera parte al cliente para obtener la información. (Lea el blog de Brad Martínez: [proteger los datos de clientes de la supervisión gubernamental](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)). Se publicará periódicamente información detallada de la solicitud que recibimos [aquí](https://www.microsoft.com/en-us/trustcenter/Privacy/govt-requests-for-data).
   
 Consulte el [centro de confianza de Microsoft](https://www.microsoft.com/en-us/trustcenter/default.aspx) sobre las solicitudes de datos de terceros y la "revelación de datos de clientes" en los [términos de servicios en línea (OST) ](https://www.microsoft.com/en-us/Licensing/product-licensing/products.aspx)para obtener más información.
   
@@ -222,7 +222,7 @@ No. Por definición, las suscripciones de prueba tienen una duración limitada. 
 
 Además de las licencias necesarias para la clave de cliente, los clientes incurrirán en un costo por el uso de la bóveda de claves. [Detalles de precios de Azure Key Vault](https://azure.microsoft.com/en-us/pricing/details/key-vault/) describe el modelo de costos y le ayudará a realizar la estimación. No hay ninguna forma de predecir el coste exacto que incurrir a ningún cliente, ya que los patrones de uso varían. La experiencia ha demostrado que el costo es muy bajo y generalmente cae en el intervalo de $0,002 a $0,005 por usuario al mes, además del costo de las claves respaldadas por HSM. El costo también variará en función de la configuración de registro elegida por el cliente y la cantidad de almacenamiento de Azure usado para los registros de Azure Key Vault. 
   
-## <a name="for-more-information"></a>Para obtener más información
+## <a name="for-more-information"></a>Más información
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
 
 Para empezar con la clave de cliente, vea [controlar los datos en Office 365 mediante la clave de cliente](controlling-your-data-using-customer-key.md).

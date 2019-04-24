@@ -18,11 +18,11 @@ ms.collection:
 - M365-security-compliance
 description: Las directivas de administración de la información permiten a su organización controlar el tiempo que se conservará el contenido, auditar lo que hacen los usuarios con el contenido y agregar códigos de barras o etiquetas a los documentos. Una Directiva puede ayudar a garantizar el cumplimiento de las regulaciones legales y gubernamentales o los procesos de negocio internos. Como administrador, puede configurar una directiva para controlar cómo realizar un seguimiento de los documentos y durante cuánto tiempo se conservan los documentos.
 ms.openlocfilehash: 1d17dd8cadb721478831ab8fe77413c08f959f29
-ms.sourcegitcommit: 1658be51e2c21ed23bc4467a98af74300a45b975
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30862572"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258858"
 ---
 # <a name="create-and-apply-information-management-policies"></a>Crear y aplicar directivas de administración de información
 

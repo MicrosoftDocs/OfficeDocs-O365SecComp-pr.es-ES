@@ -12,11 +12,11 @@ search.appverid:
 ms.assetid: 22f5adad-1bc0-460d-94a9-8732929f5b99
 description: En eDiscovery avanzado, el módulo de búsqueda y etiquetado le permite buscar, obtener una vista previa y organizar los documentos en su caso. Actualmente, este módulo está en versión beta.
 ms.openlocfilehash: 58913a01f30b4169470592f5fc271e3ce785ac5d
-ms.sourcegitcommit: a80bd8626720fabdf592b84e4424cd3a83d08280
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30222969"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261378"
 ---
 # <a name="search-and-tagging"></a>Búsqueda y etiquetado
 
@@ -35,22 +35,22 @@ En la siguiente tabla se enumeran las propiedades que se pueden buscar con una c
 |:-----|:-----|
 |**caselabel** <br/> | Nombre de la etiqueta creada o aplicada cuando se etiqueta un documento. <br/> |
 |**custodio** <br/> | El custodio asociado a un documento; sujeta a limitaciones. <br/> |
-|**obsolet** <br/> | Fecha de envío del correo electrónico; fecha de modificación de los documentos del sitio. <br/> |
+|**date** <br/> | Fecha de envío del correo electrónico; fecha de modificación de los documentos del sitio. <br/> |
 |**ID** <br/> | IDENTIFICADOR de archivo dentro del caso. <br/> |
 |**filetype** <br/> | La extensión de archivo nativa. <br/> |
 |**fileclass** <br/> | Correo electrónico, documento o datos adjuntos. <br/> |
 |**senderauthor** <br/> | El remitente del correo electrónico; el autor de los documentos del sitio. <br/> |
-|**tamaño** <br/> | El tamaño del archivo en KB. <br/> |
+|**size** <br/> | El tamaño del archivo en KB. <br/> |
 |**subjecttitle** <br/> | El asunto del correo electrónico; el título de los documentos del sitio. <br/> |
-|**cco** <br/> | El campo CCO de un correo electrónico. <br/> |
+|**bcc** <br/> | El campo CCO de un correo electrónico. <br/> |
 |**cc** <br/> | El campo CC de un correo electrónico. <br/> |
-|**participante** <br/> | La dirección de correo electrónico de todos los participantes en una conversación de correo electrónico, incluidos los vínculos que faltan. <br/> |
-|**Obtenido** <br/> | La fecha en que se recibió un correo electrónico. <br/> |
-|**destinatarios** <br/> | Destinatarios de un correo electrónico, incluidos en los campos para, CC o CCO. <br/> |
-|**remitente** <br/> | El remitente de un correo electrónico. <br/> |
+|**participants** <br/> | La dirección de correo electrónico de todos los participantes en una conversación de correo electrónico, incluidos los vínculos que faltan. <br/> |
+|**received** <br/> | La fecha en que se recibió un correo electrónico. <br/> |
+|**recipients** <br/> | Destinatarios de un correo electrónico, incluidos en los campos para, CC o CCO. <br/> |
+|**sender** <br/> | El remitente de un correo electrónico. <br/> |
 |**LastModifiedDate** <br/> | Fecha de la última modificación de un documento del sitio. <br/> |
-|**envia** <br/> | Fecha de envío de un correo electrónico. <br/> |
-|**hasta** <br/> | El destinatario que aparece en el campo para de un correo electrónico. <br/> |
+|**sent** <br/> | Fecha de envío de un correo electrónico. <br/> |
+|**to** <br/> | El destinatario que aparece en el campo para de un correo electrónico. <br/> |
 |**crea** <br/> | El autor de un documento de sitio. <br/> |
 |**title** <br/> | El título de un documento de sitio. <br/> |
 |**dominanttheme**\* <br/> | El tema dominante de un elemento. <br/> |

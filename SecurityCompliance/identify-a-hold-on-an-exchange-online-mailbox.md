@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 description: Obtenga información sobre cómo identificar los distintos tipos de retenciones que se pueden colocar en un buzón de correo de Office 365. Estos tipos de retenciones incluyen la retención por juicio, las suspensiones de eDiscovery y las directivas de retención de Office 365. También puede determinar si se ha excluido a un usuario de una directiva de retención para toda la organización
 ms.openlocfilehash: e0c1c54cedfc7494233f12f043bb6d033576eca8
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001223"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32253894"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Cómo identificar el tipo de retención en un buzón de Exchange Online
 

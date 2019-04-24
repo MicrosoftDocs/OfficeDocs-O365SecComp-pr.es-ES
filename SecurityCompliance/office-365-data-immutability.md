@@ -3,7 +3,6 @@ title: Inmutabilidad de datos 365 de Office
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +13,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Define y explica la inmutabilidad de datos o datos que se deben poder detectar y no se pueden destruir ni modificar.
-ms.openlocfilehash: d3f02a088ede557a1e7308182b2ec6e378cd418e
-ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
+ms.openlocfilehash: b23a62dd95ec2ca554997fc667d89e6979e5b747
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31004157"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262872"
 ---
 # <a name="immutability-in-office-365"></a>Inmutabilidad en Office 365
 Para algunas organizaciones, el cumplimiento normativo, los requisitos de control interno o el riesgo por litigio requieren la preservación de correo electrónico y datos asociados en un formulario reconocible. Todos los datos del sistema deben ser detectables y no se puede destruir ni alterar ninguno de ellos. El término estándar de la industria para esto es "inmutabilidad". 

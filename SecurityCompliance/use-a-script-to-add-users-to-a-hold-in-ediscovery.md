@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
 description: Ejecute un script para agregar rápidamente sitios de buzones de correo y OneDrive para la empresa a una nueva retención asociada a un caso de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento.
 ms.openlocfilehash: 992fddad3bfbc9f08855bd85d87b0edf92b3cdbe
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001193"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32263982"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-an-ediscovery-case-in-the-security--compliance-center"></a>Usar un script para agregar usuarios a una suspensión en un caso de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento
 

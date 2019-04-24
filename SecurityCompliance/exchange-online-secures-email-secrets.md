@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: Además del centro de confianza de Office 365, que proporciona información de seguridad, privacidad y cumplimiento para Office 365, es posible que quiera saber cómo Office 365 ayuda a proteger secretos que proporcione en sus centros de datos. Usamos una tecnología denominada administrador de claves distribuidas (DKM).
 ms.openlocfilehash: ba4c661899273f5e07c2468631298f5500d0e32f
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218080"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32255488"
 ---
 # <a name="how-exchange-online-secures-your-email-secrets"></a>Cómo Exchange Online protege su información confidencial de correo electrónico
 
@@ -34,7 +34,6 @@ El administrador de claves distribuidas (DKM) es una funcionalidad de cliente qu
 Para depuración, solución de problemas o fines de auditoria, un administrador del centro de datos debe solicitar acceso con privilegios elevados para obtener credenciales temporales que forman parte del grupo de seguridad. Este proceso requiere varios niveles de aprobación legal. Si se concede acceso, toda la actividad se registra y se audita. Además, solo se otorga acceso durante un determinado intervalo de tiempo, que caduca automáticamente una vez concluido.
   
 Para brindar protección adicional, la tecnología del DKM incluye sustitución de claves y archivado automáticos. Esto también garantiza el acceso al contenido anterior sin tener que recurrir a la misma clave de forma indefinida.
-
   
 ## <a name="where-does-exchange-online-make-use-of-dkm"></a>¿De qué forma Exchange Online usa el DKM?
 
@@ -42,7 +41,7 @@ Microsoft usa el DKM para cifrar la información confidencial en centros de dato
   
 - Credenciales de cuentas de correo electrónico de cuentas conectadas. Las cuentas conectadas son cuentas de terceros, como las de Hotmail, Gmail y Yahoo!.
     
-- Claves raíz del servicio Rights Management (RMS). Estas son claves de cliente que se importan de Azure RMS o de las implementaciones de RMS de servicios de dominio de Active Directory locales del cliente que se usan para cifrar y descifrar correos electrónicos con RMS o el cifrado de mensajes de Office 365 (OME).
+- Claves raíz de Rights Management service (RMS). Estas son claves de cliente que se importan de Azure RMS o de las implementaciones de RMS de servicios de dominio de Active Directory locales del cliente que se usan para cifrar y descifrar correos electrónicos con RMS o el cifrado de mensajes de Office 365 (OME).
     
 ## <a name="related-topics"></a>Temas relacionados
 

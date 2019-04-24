@@ -15,14 +15,13 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 0f5a98a7ba7a62e3b77794b38e444006a340cb49
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295373"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32243203"
 ---
 # <a name="configure-search-and-analytics-settings"></a>Establecer la configuración de búsqueda y análisis
-
 
 ## <a name="near-duplicates-and-email-threading"></a>Duplicación cercana y subprocesamiento de correo electrónico
 
@@ -34,7 +33,8 @@ En esta sección, puede establecer parámetros para la detección de duplicados,
 
 - Ocultar duplicados de manera predeterminada: Si esta configuración está activada, se aplicará un filtro para ocultar los documentos duplicados en el conjunto de trabajo de forma predeterminada. Si es necesario, el filtro se puede quitar manualmente en el conjunto de trabajo.
 
-- Número mínimo o máximo de palabras: las próximas duplicaciones y el procesamiento de correo electrónico se ejecutarán solo en los documentos que tengan al menos el número mínimo de palabras y el número máximo de palabras como máximo. Para obtener más información, vea cerca de la [detección](near-duplicates.md) de duplicados y el [procesamiento de correo electrónico](email-threading.md).
+- Número mínimo o máximo de palabras: las próximas duplicaciones y el procesamiento de correo electrónico se ejecutarán solo en los documentos que tengan al menos el número mínimo de palabras y el número máximo de palabras como máximo.
+Para obtener más información, vea cerca de la [detección](near-duplicates.md) de duplicados y el [procesamiento de correo electrónico](email-threading.md).
 
 ## <a name="themes"></a>Temas
 

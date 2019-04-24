@@ -14,11 +14,11 @@ ms.collection:
 - M365-security-compliance
 description: Los administradores pueden aprender a usar reglas de flujo de correo en Exchange Online Protection para el filtrado masivo de correo electrónico.
 ms.openlocfilehash: 43f0af6fe41bc7f8f4a62d0d87dbd825fb868f7b
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693289"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32267019"
 ---
 # <a name="use-mail-flow-rules-to-configure-bulk-email-filtering-in-exchange-online-protection"></a>Usar reglas de flujo de correo para configurar el filtrado masivo de correo electrónico en Exchange Online Protection
 
@@ -31,7 +31,7 @@ Si desea más opciones para filtrar los mensajes masivos, puede crear reglas de 
   
 ## <a name="create-a-mail-flow-rule-to-filter-bulk-email-messages-based-on-text-patterns"></a>Crear una regla de flujo de correo para filtrar mensajes de correo electrónico masivo en función de patrones de texto
 
-1. En el Centro de administración de Exchange (EAC), vaya a **Flujo de correo** \> **Reglas**.
+1. En el Centro de administración de Exchange (EAC), vaya a **Flujo de correo**\>** Reglas**.
     
 2. Haga **** ![clic en agregar](media/ITPro-EAC-AddIcon.gif) icono Agregar y, a continuación, seleccione **crear una nueva regla**.
     
@@ -131,7 +131,7 @@ Si desea más opciones para filtrar los mensajes masivos, puede crear reglas de 
 
 8. Guarde la regla.
 
-## <a name="for-more-information"></a>Para obtener más información
+## <a name="for-more-information"></a>Más información
 
 [¿Cuál es la diferencia entre correo electrónico no deseado y correo electrónico masivo?](what-s-the-difference-between-junk-email-and-bulk-email.md)
 

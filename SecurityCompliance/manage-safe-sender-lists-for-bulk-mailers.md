@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: 'Si quiere usar listas de remitentes seguros, debe saber que Exchange Online Protection (EOP) y Outlook llevan a cabo el procesamiento de manera diferente. El servicio respeta los remitentes y los dominios seguros al inspeccionar la dirección RFC 5321.MailFrom y la dirección RFC 5322.From, mientras que Outlook agrega la dirección RFC 5322.From a la lista de remitentes seguros de un usuario. (Nota: El servicio inspecciona tanto la dirección 5321.MailFrom como la dirección 5322.From en busca de remitentes y dominios bloqueados).'
 ms.openlocfilehash: 006c2b9520f1e1f71f5ec745baaf84f906f31eb4
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692879"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32259658"
 ---
 # <a name="manage-safe-sender-lists-for-bulk-mailers"></a>Administrar listas de remitentes seguros para troyanos de envío masivo de correo electrónico
 

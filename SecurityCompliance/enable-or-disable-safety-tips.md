@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: Indica a Office 365 y a los administradores de EOP cómo habilitar y deshabilitar las sugerencias de seguridad en los mensajes de correo electrónico.
 ms.openlocfilehash: 9be9c4cd7fc8e94208aac2ad8812c93a3465f58b
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693439"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256968"
 ---
 # <a name="enable-or-disable-safety-tips-in-office-365"></a>Habilitar o deshabilitar las sugerencias de seguridad en Office 365
 
@@ -69,7 +69,7 @@ En este tema:
 
 Los administradores pueden usar Exchange Online PowerShell para habilitar o deshabilitar las sugerencias de seguridad. Use el cmdlet Set-HostedContentFilterPolicy para habilitar o deshabilitar las sugerencias de seguridad en una directiva de filtro de correo no deseado.
   
-1. Conexión a PowerShell de Exchange Online. Para obtener más información, vea [conectarse a Exchange Online PowerShell](http://go.microsoft.com/fwlink/p/?LinkId=396554).
+1. Conexión al PowerShell de Exchange Online. Para obtener más información, vea [conectarse a Exchange Online PowerShell](http://go.microsoft.com/fwlink/p/?LinkId=396554).
     
 2. Ejecute el cmdlet Set-HostedContentFilterPolicy para habilitar o deshabilitar las sugerencias de seguridad:
     
@@ -93,7 +93,7 @@ Donde:
 
 Para obtener más información sobre este cmdlet, vea [set-HostedContentFilterPolicy](https://technet.microsoft.com/library/jj200781.aspx).
     
-## <a name="still-need-help"></a>¿Aún necesita ayuda?
+## <a name="still-need-help"></a>¿Sigue necesitando ayuda?
 <a name="pshellsafetytip"> </a>
 
 Si ha deshabilitado las sugerencias de seguridad, pero sigue apareciendo en los mensajes de correo electrónico, compruebe lo siguiente:

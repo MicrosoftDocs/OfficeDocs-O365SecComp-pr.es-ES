@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo usar la investigación de amenazas y las capacidades de respuesta para buscar y investigar correo electrónico malintencionado.
 ms.openlocfilehash: d19833a5d2acf69b79cca7e58c5796d967337c9f
-ms.sourcegitcommit: a56128c7be5d59e976851c27301031e19fa1997d
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30732253"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32254668"
 ---
 # <a name="find-and-investigate-malicious-email-that-was-delivered-office-365-advanced-threat-protection-plan-2"></a>Buscar e investigar correo electrónico malintencionado que se entregó (Office 365 Advanced Threat Protection Plan 2)
 

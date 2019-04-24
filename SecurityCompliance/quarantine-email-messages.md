@@ -17,11 +17,11 @@ ms.collection:
 - M365-security-compliance
 description: Puede configurar una cuarentena para los mensajes de correo electrónico entrantes en Office 365 donde los mensajes de correo electrónico entrantes que se filtraron como correo no deseado, masivo, correo de suplantación de identidad (phishing) y malware se pueden conservar para una revisión posterior.
 ms.openlocfilehash: 37d573dda0065ce00b0b838bad56c5d9b1979477
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30275770"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32266835"
 ---
 # <a name="quarantine-email-messages-in-office-365"></a>Cuarentena de mensajes de correo electrónico en Office 365
 

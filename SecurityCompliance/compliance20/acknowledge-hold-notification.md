@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 048c85c7b8d77b9c7d3b9527640648b9ebe463d0
-ms.sourcegitcommit: 5d6be2b208dbe28d5d5da057c60cf97729799c1b
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "30465457"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32243645"
 ---
 # <a name="acknowledge-a-hold-notification"></a>Confirmar una notificación de retención 
 Al responder a una solicitud o investigación reguladora, es posible que deba informar a los custodios de su obligación de conservar la información almacenada electrónicamente (ESI), así como cualquier material que pueda ser relevante para un asunto legal activo o inminente. Una vez enviado, los equipos jurídicos deben saber que cada custodio ha recibido, leído y comprendido, y ha aceptado cumplir con las instrucciones indicadas.

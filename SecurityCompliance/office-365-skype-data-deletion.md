@@ -3,23 +3,22 @@ title: Eliminación de datos de Skype empresarial para Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Explicación de la eliminación de datos en Skype empresarial.
-ms.openlocfilehash: 77ead8b8c2251ce21f9a0c0db9e29d5d48829760
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: ca48a4bc57cdba7301a51cc6404a7d402166ffb0
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30221150"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261308"
 ---
 # <a name="skype-for-business-data-deletion-in-office-365"></a>Eliminación de datos de Skype empresarial en Office 365
 
@@ -29,11 +28,11 @@ Todo el archivado de Skype Empresarial se considera "archivado de nivel de usuar
 
 Los siguientes tipos de contenido no se archivan en Skype empresarial: 
 - Transferencias de archivos de punto a punto
-- Audio/vídeo para conferencias y mensajes instantáneos de punto a punto
+- Audio y vídeo para conferencias y mensajes instantáneos de punto a punto
 - Uso compartido de aplicaciones para conferencias y mensajes instantáneos de punto a punto
 - Anotaciones de conferencias 
 
-## <a name="meeting-content-retention"></a>Conservación del contenido de la reunión
+## <a name="meeting-content-retention"></a>Retención del contenido de la reunión
 Los clientes que usan Skype empresarial pueden cargar contenido en una reunión de Skype empresarial como datos adjuntos, como presentaciones de PowerPoint, archivos de OneNote y otros archivos. El período de retención para el contenido que se ha cargado en una reunión es el siguiente:
 - **Reunión única** : el contenido se conserva durante 15 días a partir del momento en que la última persona abandona la reunión.
 - **Reunión recurrente** : el contenido se conserva durante 15 días después de que la última persona abandone la última sesión de la reunión. El temporizador de retención se reinicia si alguien se une a la misma sesión de reunión en 15 días. Por ejemplo, supongamos que una reunión de Skype empresarial está programada para realizarse semanalmente durante un año y se carga un archivo en la reunión durante la primera instancia. Si al menos una persona se une a la sesión de reunión cada semana, el archivo se conserva en los servidores de Skype empresarial online durante todo el año más 15 días después de que la última persona abandone la última reunión de la serie.
@@ -43,13 +42,13 @@ Los clientes que usan Skype empresarial pueden cargar contenido en una reunión 
 > Si un usuario está deshabilitado o sin licencia (por ejemplo, si **msRTCSIP-userEnabled** está establecido en *false*) y, a continuación, vuelve a estar habilitado o con licencia, no se conservará el contenido de la reunión.
 
 ## <a name="meeting-expiration"></a>Expiración de la reunión
-Los usuarios pueden acceder a una reunión específica después de que haya finalizado, respetando los siguientes períodos de expiración:
+Los usuarios pueden tener acceso a una reunión específica una vez finalizada la reunión, siempre que se cumplan los siguientes períodos de tiempo de expiración:
 - **Reunión única** : la reunión expira 14 días después de la hora de finalización programada de la reunión.
 - **Reunión periódica con fecha** de finalización: la reunión expira 14 días después de la hora de finalización programada de la última ocurrencia de la reunión.
 - **Reunirse ahora** : reunión expira después de 8 horas.
 
 ## <a name="whiteboard-collaboration"></a>Colaboración en pizarra
-Todos los participantes verán las anotaciones realizadas en las pizarras. Al guardar una pizarra, la pizarra y todas las anotaciones se almacenarán en un servidor de Skype empresarial, y se conservará en el servidor de acuerdo con las directivas de expiración del contenido de la reunión establecidas por el administrador.
+Las anotaciones que se hagan en las pizarras podrán verlas todos los participantes. Al guardar una pizarra, la pizarra y todas las anotaciones se almacenarán en un servidor de Skype empresarial, y se conservará en el servidor de acuerdo con las directivas de expiración del contenido de la reunión establecidas por el administrador.
 
 ## <a name="audio-test-service"></a>Servicio de prueba de audio
 Una muestra breve (aproximadamente 5 segundos) de la voz se graba durante la llamada de servicio de prueba de audio. La muestra de voz se usa para comprobar o comprobar la calidad de sonido de la llamada de Skype empresarial en función de la calidad de la grabación. Cuando finaliza la llamada del servicio de prueba de audio, se elimina la muestra de voz.

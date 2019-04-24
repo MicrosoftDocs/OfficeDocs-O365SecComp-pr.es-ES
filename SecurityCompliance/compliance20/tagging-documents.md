@@ -14,22 +14,22 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 1183264f64a74e50f750ee13618f7532ffe04eb7
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: 510a10386ea51c0397408450f9fc700e9ce6db9c
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455162"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32241146"
 ---
 # <a name="tag-documents-in-a-working-set"></a>Etiquetar documentos en un conjunto de trabajo
 
-La organización de contenido en un conjunto de trabajo es importante para completar varios flujos de trabajo en el proceso de exhibición de documentos electrónicos. Incluye:
+La organización de contenido en un conjunto de trabajo es importante para completar varios flujos de trabajo en el proceso de exhibición de documentos electrónicos. Esto incluye:
 
--  La selección de contenido innecesario.
+-  Selección de contenido innecesario
 
-- Identificación del contenido relevante.
+- Identificación del contenido relevante
  
--  Identificar el contenido que debe ser revisado por un experto o un abogado.
+-  Identificación de contenido que debe ser revisado por un experto o un abogado
 
 Cuando expertos, abogados u otros usuarios revisan el contenido de un conjunto de trabajo, se pueden capturar sus opiniones relacionadas con el contenido mediante el uso de etiquetas. Por ejemplo, si la intención es deseleccionar contenido innecesario, un usuario puede etiquetar documentos con una etiqueta como "sin respuesta". Una vez que se ha revisado y etiquetado el contenido, se puede crear una búsqueda de espacio de trabajo para excluir cualquier Contenido etiquetado como "sin respuesta", lo que elimina este contenido de los pasos siguientes en el flujo de trabajo de eDiscovery. El panel de etiquetas se puede personalizar para cada caso, de modo que las etiquetas puedan admitir el flujo de trabajo de revisión previsto.
 

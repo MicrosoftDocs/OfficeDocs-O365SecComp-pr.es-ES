@@ -14,11 +14,11 @@ ms.collection:
 - M365-security-compliance
 description: Como administrador de Exchange Online o Exchange Online Protection (EOP), puede ayudar a garantizar que un mensaje de correo que pasa a través del servicio no se marque como correo no deseado. Una forma de hacerlo es crear listas de remitentes bloqueados y de remitentes seguros para las personas de su organización.
 ms.openlocfilehash: 11ae38733418bb0842732978512698ca6a6274fd
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692229"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261028"
 ---
 # <a name="safe-sender-and-blocked-sender-lists-in-exchange-online"></a>Listas de remitentes seguros y bloqueados en Exchange Online
 

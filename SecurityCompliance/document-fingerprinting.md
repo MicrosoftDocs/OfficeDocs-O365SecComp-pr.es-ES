@@ -12,11 +12,11 @@ ms.collection: M365-security-compliance
 localization_priority: Normal
 description: Los trabajadores de la información en su organización tratan con diversos tipos de información confidencial durante un día normal. La creación de huella digital de documento facilita la protección de esta información al identificar los formularios estándar que se usan en toda la organización. En este tema se describen los conceptos relacionados con la creación de huellas digitales de documentos y cómo crear una mediante PowerShell.
 ms.openlocfilehash: 2b8e4fd6b286f2c1a5c67863957f2b04fbef31b9
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999143"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256908"
 ---
 # <a name="document-fingerprinting"></a>Creación de huella digital de documento
 
@@ -50,7 +50,7 @@ La plantilla de patente contiene los campos en blanco "título de patente", "inv
 
 Por ejemplo, es posible que quiera configurar una directiva DLP que impida a los empleados normales enviar mensajes salientes que contengan patentes. DLP usará la huella digital de patentes para detectar las patentes y bloquearlas. Como alternativa, es posible que desee que el departamento legal pueda enviar patentes a otras organizaciones porque tiene una necesidad empresarial de hacerlo. Puede permitir que departamentos específicos envíen información confidencial mediante la creación de excepciones para los departamentos de la Directiva DLP o puede permitirles invalidar una sugerencia de directiva con una justificación empresarial.
   
-### <a name="supported-file-types"></a>Tipos de archivo admitidos
+### <a name="supported-file-types"></a>Tipos de archivo compatibles
 
 La huella digital de documento admite los mismos tipos de archivo que son compatibles con las reglas de flujo de correo (también conocidas como reglas de transporte). Para obtener una lista de los tipos de archivo admitidos, consulte [tipos de archivos admitidos para la inspección del contenido de reglas de flujo de correo](https://docs.microsoft.com/en-us/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection). Una nota rápida sobre los tipos de archivo: ni las reglas de flujo de correo ni la huella digital de documento admiten el tipo de archivo. dotx, lo que puede resultar confuso porque es un archivo de plantilla en Word. Cuando ve la palabra "plantilla" en este y otros temas de creación de huella digital de documento, se refiere a un documento que se ha establecido como formulario estándar, no al tipo de archivo de plantilla.
   

@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: Descubra cómo las capacidades de inteligencia sobre amenazas de Office 365 Advanced Threat Protection pueden ayudarle a investigar amenazas contra su organización, responder a malware, phishing y otros ataques que Office 365 ha detectado en su nombre y buscar amenazas indicadores.
 ms.openlocfilehash: 6f7e6e0a49bb4035458af2e9d7e45fd954a1f9fc
-ms.sourcegitcommit: a56128c7be5d59e976851c27301031e19fa1997d
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30732273"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265402"
 ---
 # <a name="office-365-threat-investigation-and-response"></a>Respuesta y investigación de amenazas de Office 365
 

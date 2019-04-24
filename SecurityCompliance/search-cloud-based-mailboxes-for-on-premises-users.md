@@ -16,11 +16,11 @@ search.appverid:
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: Use la herramienta de búsqueda de contenido en el centro de seguridad & cumplimiento para buscar y exportar datos de chat de Microsoft Teams (denominados 1xN chats) para usuarios locales en una implementación híbrida de Exchange.
 ms.openlocfilehash: 0c68023fdd4e1c9e06596937247270861cdbd2b3
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000013"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261018"
 ---
 # <a name="searching-cloud-based-mailboxes-for-on-premises-users-in-office-365"></a>Buscar buzones de correo basados en la nube para usuarios locales en Office 365
 
@@ -36,7 +36,7 @@ Estos son los requisitos y la limitación para configurar y configurar y buscar 
     
  **Nota:** Las conversaciones del canal de Teams siempre se almacenan en el buzón de correo basado en la nube que está asociado al equipo. Esto significa que puede usar la búsqueda de contenido para buscar conversaciones de canal sin tener que archivar una solicitud de soporte técnico. Para obtener más información sobre las conversaciones del canal de búsqueda en Teams, consulte [searchIng Microsoft Teams and Office 365 Groups](content-search.md#searching-microsoft-teams-and-office-365-groups).
   
-## <a name="how-it-works"></a>Funcionamiento
+## <a name="how-it-works"></a>Cómo funciona
 
 Si un usuario habilitado para Microsoft Teams tiene un buzón de correo local y su cuenta de usuario/identidad se ha sincronizado en la nube, Microsoft crea un buzón de correo basado en la nube para almacenar los datos de chat de 1xN Teams. Una vez que los datos de chat de Microsoft Teams se almacenan en el buzón basado en la nube, se indizan para la búsqueda. Esto le permite usar la búsqueda de contenido (y las búsquedas asociadas con casos de eDiscovery) para buscar, obtener una vista previa y exportar los datos de chat de Microsoft Teams a los usuarios locales. También puede usar ** \*** los cmdlets de ComplianceSearch en el PowerShell del centro de cumplimiento de & de seguridad para buscar los datos de chat de Microsoft Teams para los usuarios locales. 
   

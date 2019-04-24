@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: Las opciones avanzadas de filtrado de correo no deseado dan a los administradores la capacidad de inspeccionar distintos atributos de contenido de un mensaje. La presencia de dichos atributos en el mensaje ya sea aumenta la puntuación de correo no deseado del mensaje (lo cual aumenta la probabilidad de que se identifique como correo no deseado) o lo marca como correo no deseado. Las opciones de ASF se centran en propiedades de mensaje específicas, tales como las etiquetas HTML y el redireccionamiento de direcciones URL, las cuales se encuentran comúnmente en los mensajes de correo no deseado.
 ms.openlocfilehash: 0fad573c29c440d69e27b1e70810bf2fc67be164
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692889"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32242488"
 ---
 # <a name="advanced-spam-filtering-options"></a>Opciones avanzadas de filtrado de correo no deseado
 

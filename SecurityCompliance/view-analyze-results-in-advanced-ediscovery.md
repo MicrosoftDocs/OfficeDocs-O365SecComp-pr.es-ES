@@ -1,5 +1,5 @@
 ---
-title: Ver los resultados de análisis en eDiscovery avanzado de Office 365
+title: Ver los resultados de ANALYZE en Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,13 +14,13 @@ search.appverid:
 ms.assetid: 5974f3c2-89fe-4c5f-ac7b-57f214437f7e
 description: 'Comprenda dónde ver los resultados del proceso de análisis en la exhibición avanzada de documentos electrónicos de Office 365, incluidas las definiciones de las opciones de tarea mostradas.  '
 ms.openlocfilehash: 990bcbb3c6626521d40f7ce057c764200d5047b5
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218830"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32267120"
 ---
-# <a name="view-analyze-results-in-office-365-advanced-ediscovery"></a>Ver los resultados de análisis en eDiscovery avanzado de Office 365
+# <a name="view-analyze-results-in-office-365-advanced-ediscovery"></a>Ver los resultados de ANALYZE en Office 365 Advanced eDiscovery
 
 > [!NOTE]
 > Para usar eDiscovery avanzado, su organización necesita una suscripción de Office 365 E3 con el complemento Cumplimiento avanzado, o bien una suscripción de E5. Si no tiene ese plan y quiere probar eDiscovery avanzado, puede [registrarse para una prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279). 

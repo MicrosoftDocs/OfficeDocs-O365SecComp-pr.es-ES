@@ -13,11 +13,11 @@ search.appverid:
 ms.assetid: 2c956776-0016-4be6-b4cd-133a237f4a9e
 description: Las personas suelen usar el correo para intercambiar información confidencial, como datos financieros, contratos legales, información confidencial de productos, informes y proyecciones de ventas, información de historial médico o información sobre clientes y empleados. Por ello, los buzones de correo pueden convertirse en repositorios para cantidades grandes de información posiblemente confidencial y la filtración de información puede convertirse en una seria amenaza para las organizaciones.
 ms.openlocfilehash: aef3acaba6b0efe4550958ce1d98add371069648
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692349"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32253988"
 ---
 # <a name="information-rights-management-in-exchange-online"></a>Information Rights Management en Exchange Online
 

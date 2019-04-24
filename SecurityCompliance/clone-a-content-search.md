@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: 7b40eeaa-544c-4534-b89b-9f79998e374c
 description: Use el script de Windows PowerShell de este artículo para clonar rápidamente una búsqueda de contenido existente en el centro de cumplimiento de Office 365 o Microsoft 365. Cuando se clona una búsqueda, se crea una nueva búsqueda (con un nombre nuevo) que contiene las mismas propiedades que la búsqueda original. A continuación, puede editar la nueva búsqueda (cambiando la palabra clave consulta o el intervalo de fechas) y, a continuación, ejecutarla.
 ms.openlocfilehash: b08ccb6fbaf2dc9d92e0814fe9f92ea77c731147
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31001203"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32243351"
 ---
 # <a name="clone-a-content-search"></a>Clonar una búsqueda de contenido
 

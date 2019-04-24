@@ -17,11 +17,11 @@ search.appverid:
 ms.assetid: 28c86a1c-e4dd-4aad-a2a6-c768a21cb352
 description: 'Las principales recomendaciones del equipo de Cybersecurity de Microsoft para implementar las funciones de seguridad para proteger el entorno de Office 365. '
 ms.openlocfilehash: ba74827c34a869ee11553f02d9085b6f015b2d9d
-ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30955173"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260928"
 ---
 # <a name="office-365-security-roadmap---top-priorities-for-the-first-30-days-90-days-and-beyond"></a>Guía básica de seguridad de Office 365: principales prioridades de los primeros 30 días, 90 días y versiones posteriores
 
@@ -58,7 +58,7 @@ Estas tareas pueden realizarse rápidamente y tienen un impacto menor para los u
   
 |||
 |:-----|:-----|
-|Área  <br/> |Tareas  <br/> |
+|Área  <br/> |Tasks  <br/> |
 |Administración de seguridad  <br/> |• Compruebe la puntuación segura y tome nota del resultado actual ( [https://securescore.office.com](https://securescore.office.com)).  <br/>  • Active el registro de auditoría para Office 365. Consulte [Buscar en el registro de auditoría](search-the-audit-log-in-security-and-compliance.md).  <br/> • [Configure el inquilino de Office 365 para mejorar la seguridad](tenant-wide-setup-for-increased-security.md) .  <br/>  • Revise de forma regular los paneles e informes en el centro de seguridad y la seguridad de aplicaciones en la nube de Microsoft 365.  <br/> |
 |Protección contra amenazas  <br/> |[Conecte Office 365 a Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security) para iniciar la supervisión con las directivas de detección de amenazas predeterminadas para comportamientos anómalos. Se necesitan siete días para crear una línea base para la detección de anomalías.  <br><br/>  Implemente la protección de las cuentas de administrador:  <br/> • Use cuentas de administrador dedicadas para la actividad de administración.  <br/>  • Exigir la autenticación multifactor (MFA) para las cuentas de administrador.  <br/>  • Use un [dispositivo de Windows 10 altamente seguro](https://docs.microsoft.com/windows-hardware/design/device-experiences/oem-highly-secure) para la actividad de administración.  <br/> |
 |Administración de identidad y acceso  <br/> |• [Habilite Azure Active Directory Identity Protection](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection-enable).  <br/> • Para entornos de identidades federados, exija la seguridad de las cuentas (longitud de la contraseña, antigüedad, complejidad, etc.).  <br/> |

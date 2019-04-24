@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: Vea cómo funciona el nuevo conocimiento de inteligencia de TI de suplantación.
 ms.openlocfilehash: 4303b8f2524e6722e7febbbd06ab9daa853ed802
-ms.sourcegitcommit: 686bc9a8f7a7b6810a096f07d36751d10d334409
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30275920"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32267266"
 ---
 # <a name="walkthrough-spoof-intelligence-insight"></a>Tutorial: información sobre inteligencia de inteligencia de suplantación
 
@@ -59,7 +59,7 @@ En cualquier caso, los dominios suplantados que se muestran en la información s
   
 Un *par de dominios* es una combinación de la dirección "de:" y la infraestructura de envío. 
   
-- La dirección "de" es la dirección que muestra la dirección de de su aplicación de correo. Esta dirección identifica al autor del correo electrónico. Es decir, el buzón de la persona o el sistema responsable de escribir el mensaje. A veces, se denomina dirección 5322. from.
+- La dirección "de" es la dirección que muestra la dirección de de su aplicación de correo. Esta dirección identifica al autor del correo electrónico. Es decir, el buzón de la persona o el sistema responsable de escribir el mensaje. A veces, recibe la denominación dirección 5322.From.
     
 - La infraestructura de envío o remitente es el dominio de la organización del registro PTR de la dirección IP de envío. Si la dirección IP de envío no tiene registro PTR, el remitente se identifica mediante la IP de envío con la máscara de subred 255.255.255.0 en la notación CIDR (/24). Por ejemplo, si la dirección IP es 192.168.100.100, la dirección IP completa del remitente es 192.168.100.100/24.
     
@@ -89,7 +89,7 @@ Esto modifica la combinación única de par de dominios del dominio falso y de l
   
 ## <a name="related-topics"></a>Temas relacionados
 
-[Obtenga más información sobre la inteligencia de suplantación de identidad](learn-about-spoof-intelligence.md)
+[Obtener más información sobre la inteligencia de suplantación de identidad](learn-about-spoof-intelligence.md)
   
 [Protección contra suplantación de identidad en Office 365](anti-spoofing-protection.md)
   

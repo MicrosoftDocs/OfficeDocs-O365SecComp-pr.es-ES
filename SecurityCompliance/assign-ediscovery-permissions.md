@@ -16,11 +16,11 @@ search.appverid:
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: Asigne los permisos necesarios para realizar tareas relacionadas con la exhibición de documentos electrónicos mediante el centro de seguridad & cumplimiento.
 ms.openlocfilehash: 958dd3f41bb9e578c80608d738fc735f5063148d
-ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31958601"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32250180"
 ---
 # <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>Asignar permisos de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento
 

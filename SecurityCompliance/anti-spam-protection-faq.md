@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: En este tema encontrará las preguntas frecuentes y sus correspondientes respuestas sobre la protección contra el correo no deseado. Las respuestas sirven para los clientes de Microsoft Exchange Online y de Exchange Online Protection (EOP).
 ms.openlocfilehash: fa2709c995ff9ef83213b86e079a778c61bef3a2
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000993"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32242498"
 ---
 # <a name="anti-spam-protection-faq"></a>Preguntas más frecuentes sobre protección contra correo electrónico no deseado
 

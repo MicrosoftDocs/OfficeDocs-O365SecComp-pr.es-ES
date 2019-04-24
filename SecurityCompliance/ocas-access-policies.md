@@ -11,17 +11,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 description: Las directivas de acceso de Office 365 Cloud App Security permiten la supervisión y el control en tiempo real del acceso a las aplicaciones en la nube en función del usuario, la ubicación, el dispositivo y la aplicación. Puede crear directivas de acceso para cualquier dispositivo, incluidos los dispositivos que no están Unidos a un dominio y que Windows Intune no administra mediante la implementación de certificados de cliente en dispositivos administrados o mediante el uso de certificados existentes, como certificados MDM de terceros. Por ejemplo, puede implementar certificados de cliente en dispositivos administrados y, a continuación, bloquear el acceso desde dispositivos sin un certificado.
 ms.openlocfilehash: 5e8b8fa293420bc9ff3616daf288b8e02a2eb768
-ms.sourcegitcommit: 866d8cab6bcfdd124516a8369e47ec797bc7cf8a
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "30312087"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32263012"
 ---
 # <a name="access-policies-in-office-365-cloud-app-security"></a>Directivas de acceso en Office 365 Cloud App Security
 
 |Evaluación * *\>**|Planeación * *\>**|Implementación * *\>**|Uso * * * *|
 |:-----|:-----|:-----|:-----|
-|[Empezar a evaluar](office-365-cas-overview.md) <br/> |[Empezar a planear](get-ready-for-office-365-cas.md) <br/> |Ya está aquí.  <br/> [Paso siguiente](group-your-ip-addresses-in-ocas.md) <br/> |[Empezar a usar](utilization-activities-for-ocas.md) <br/> |
+|[Empezar a evaluar](office-365-cas-overview.md) <br/> |[Empezar a planear](get-ready-for-office-365-cas.md) <br/> |Ya está aquí.  <br/> [Siguiente paso](group-your-ip-addresses-in-ocas.md) <br/> |[Empezar a usar](utilization-activities-for-ocas.md) <br/> |
 
 Las directivas de acceso de Office 365 Cloud App Security permiten la supervisión y el control en tiempo real del acceso a las aplicaciones en la nube en función del usuario, la ubicación, el dispositivo y la aplicación. Puede crear directivas de acceso para cualquier dispositivo, incluidos los dispositivos que no están Unidos a un dominio y que Windows Intune no administra mediante la implementación de certificados de cliente en dispositivos administrados o mediante el uso de certificados existentes, como certificados MDM de terceros. Por ejemplo, puede implementar certificados de cliente en dispositivos administrados y, a continuación, bloquear el acceso desde dispositivos sin un certificado.
 

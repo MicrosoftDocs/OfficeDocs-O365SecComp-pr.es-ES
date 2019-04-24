@@ -13,11 +13,11 @@ search.appverid:
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: Use las herramientas de búsqueda y la exhibición de documentos electrónicos de Office 365 para administrar y responder a un incidente de derrame de datos en su organización.
 ms.openlocfilehash: 50078e3f22ede8a1af2a252a7a6f75710534c062
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000153"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258968"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>serie de soluciones de eDiscovery: escenario de derrame de datos: búsqueda y depuración
 
@@ -170,7 +170,7 @@ Asegúrese de revertir el buzón a configuraciones previas después de comprobar
 
 Con las ubicaciones de buzón que recopiló y preparó en el paso 6 y la consulta de búsqueda que se creó y perfeccionó en el paso 3 para buscar mensajes de correo electrónico que contengan los datos derramados, ahora puede eliminar de forma permanente los datos derramados. Como se ha explicado anteriormente, debe tener asignado el rol importación y exportación de buzones de correo en Exchange Online para eliminar mensajes mediante el siguiente procedimiento.
   
-1. [Conexión a PowerShell de Exchange Online](https://go.microsoft.com/fwlink/?linkid=396554).
+1. [Conexión al PowerShell de Exchange Online](https://go.microsoft.com/fwlink/?linkid=396554).
     
 2. Ejecute el siguiente comando:
     

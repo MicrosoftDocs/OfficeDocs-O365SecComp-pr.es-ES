@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre dónde ver información sobre los archivos malintencionados detectados en SharePoint, OneDrive o Teams, y cómo tomar medidas en esos archivos.
 ms.openlocfilehash: f5304f78ddec884748dd7d1090e2a7895044d045
-ms.sourcegitcommit: 1c73c2f83703af0a30a5b0633db00d8e0e6b39b5
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "30241902"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32259838"
 ---
 # <a name="view-information-about-malicious-files-detected-in-sharepoint-onedrive-or-microsoft-teams"></a>Ver información sobre los archivos malintencionados detectados en SharePoint, OneDrive o Microsoft Teams
 

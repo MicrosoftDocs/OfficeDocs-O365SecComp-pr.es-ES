@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: 'Como usuario de Office 365, puede administrar sus propios mensajes de correo no deseado en cuarentena de dos maneras: respondiendo a las notificaciones de correo no deseado que se le envían directamente (si el administrador ha configurado esta característica) o mediante la característica de cuarentena de correo &amp; no deseado en el cumplimiento de seguridad Datacenter.'
 ms.openlocfilehash: acbf862f05a9282a26444b738400d29c03d07f1f
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215000"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32255208"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-office-365"></a>Buscar y liberar mensajes en cuarentena como un usuario en Office 365
 
@@ -61,7 +61,7 @@ Si tiene muchos elementos en cuarentena, puede reducir el número a un conjunto 
     
   - **Identificador de mensaje** Use esta para seleccionar un mensaje específico cuando conoce el identificador del mensaje. 
     
-    Por ejemplo, si un usuario envía un mensaje específico o está destinado a un usuario de su organización, pero nunca llegó a su destino, puede buscar el mensaje mediante un seguimiento de mensajes (consulte [ejecutar un seguimiento de mensajes y ver los resultados](https://go.microsoft.com/fwlink/?LinkId=799737)). Si descubre que el mensaje se envió a la cuarentena, quizá porque coincidía con una regla de flujo de correo o se identificó como correo no deseado, puede encontrar fácilmente este mensaje en cuarentena especificando su identificador de mensaje. Asegúrese de incluir la cadena de identificador de mensaje completa. Esto puede incluir corchetes angulares\<\>(), por ejemplo:
+    Por ejemplo, si un usuario envía un mensaje específico o está destinado a un usuario de su organización, pero nunca llegó a su destino, puede buscar el mensaje mediante un seguimiento de mensajes (consulte [ejecutar un seguimiento de mensajes y ver los resultados](https://go.microsoft.com/fwlink/?LinkId=799737)). Si descubre que el mensaje se envió a la cuarentena, quizá porque coincidía con una regla de flujo de correo o se identificó como correo no deseado, puede encontrar fácilmente este mensaje en cuarentena especificando su identificador de mensaje. Asegúrese de incluir la cadena completa de Id. de mensaje. Esto puede incluir corchetes angulares\<\>(), por ejemplo:
     
     \<79239079-d95a-483a-aacf-e954f592a0f6@XYZPR00BM0200.contoso.com\>
     
@@ -108,7 +108,7 @@ Puede obtener incluso más detalles sobre el mensaje eligiendo una de las siguie
 
 Después de seleccionar un mensaje o un grupo de mensajes, tiene varias opciones para administrar los mensajes en cuarentena.
   
-- No hacer nada. Si decide no hacer nada, el mensaje será eliminado automáticamente por Office 365 automáticamente tras la expiración. Recuerde que, cuando Office 365 elimina un mensaje de la cuarentena, no puede recuperarlo.
+- No ejecutar ninguna acción. Si decide no hacer nada, el mensaje será eliminado automáticamente por Office 365 automáticamente tras la expiración. Recuerde que, cuando Office 365 elimina un mensaje de la cuarentena, no puede recuperarlo.
     
 - **Liberar mensaje** Liberar un mensaje en cuarentena (o un conjunto de mensajes) para que el mensaje se envíe a su buzón de correo. Al liberar un mensaje, tiene la opción de informar al mensaje a Microsoft para que lo analice. 
     

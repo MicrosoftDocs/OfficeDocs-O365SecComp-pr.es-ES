@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 016b87388a17bc5cb01eb1a90d88aedb6e2e133c
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295753"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32243773"
 ---
 # <a name="close-or-delete-a-case"></a>Cerrar o eliminar un caso
 
@@ -27,7 +27,7 @@ Cuando se completa el caso legal o la investigación admitidos por un caso de ex
 
 - Si el caso contiene ubicaciones de contenido en suspensión, dichas suspensiones se desactivarán. Esto puede dar lugar a que el usuario o un proceso automatizado eliminen o purguen permanentemente el contenido, como una directiva de eliminación.
 
-- Si se cierra un caso, sólo se desactivan las suspensiones asociadas a ese caso. Si hay otras suspensiones en una ubicación de contenido (como una retención por juicio. una directiva de conservación o una retención de un caso de exhibición de documentos electrónicos distinto), estas se conservarán.
+- Si se cierra un caso, sólo se desactivan las suspensiones asociadas a ese caso. Si otras suspensiones se colocan en una ubicación de contenido (como una retención por juicio. una directiva de conservación o una retención de un caso de exhibición de documentos electrónicos diferente, se conservarán las suspensiones.
 
 - El caso sigue apareciendo en la página exhibición de documentos electrónicos del centro de seguridad & cumplimiento. Se conservan los detalles, las suspensiones, las búsquedas y los miembros de un caso cerrado.
 

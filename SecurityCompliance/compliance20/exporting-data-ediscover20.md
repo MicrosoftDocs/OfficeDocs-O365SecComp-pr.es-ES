@@ -14,21 +14,23 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: efdadd2769bf2b812d3642184fc7fd4ae1cbc8c2
-ms.sourcegitcommit: 9f38ba72eba0b656e507860ca228726e4199f7ec
+ms.openlocfilehash: 0798cb66729b215a50b21a29494183f7eed5d1d6
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "30475690"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256178"
 ---
 # <a name="export-case-data-in-advanced-ediscovery-preview"></a>Exportar datos de casos en eDiscovery avanzado (versión preliminar)
 
-La exportación se realiza dentro de un conjunto de trabajo para proporcionar una visibilidad completa de los elementos que se exportan desde un espacio empresarial. Hay tres métodos independientes para exportar el contenido:
+Hay tres formas de exportar datos de un conjunto de trabajo:
 
-Download: permite a un usuario descargar un pequeño conjunto de archivos nativos a través del explorador.
+**Descarga** : se usa para descargar (mediante un explorador) un pequeño conjunto de archivos nativos. Este es el más rápido que se ha exportado un pequeño conjunto de datos.
 
-Export – Customize Export para incluir contenido adicional, incluido un archivo de metadatos, grabado en archivos de texto y archivos censurados.
+**Exportar** : se usa para personalizar los datos que se exportan, incluida la exportación de archivos de metadatos, archivos nativos, archivos de texto y documentos censurados que se guardaron en un archivo PDF. Una vez que los datos exportados se cargan en la ubicación de Azure Storage, tiene que descargarlos en un equipo local. Para más información, visite: 
 
-Espacio de trabajo: permite a un usuario exportar el contenido de un conjunto de trabajo a otro conjunto de trabajo.
+   - [Exportar documentos desde un conjunto de trabajo](export-documents-from-working-set.md)
 
-Una vez finalizada la exportación, el contenido se coloca en un BLOB de Microsoft Azure. Se puede obtener acceso al contenido mediante la información de la pestaña exportaciones. Para obtener más información, \[consulte Link to download Export Jobs\]
+   - [Descargar trabajos de exportación](download-export-jobs.md)
+
+**Agregar a otro conjunto de trabajo** : Use esta para copiar los datos de un conjunto de trabajo a un conjunto de trabajo diferente. Para obtener más información, vea [Agregar datos de un conjunto de trabajo a otro conjunto de trabajo](add-data-to-working-set-from-another-working-set.md). 

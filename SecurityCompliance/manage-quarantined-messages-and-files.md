@@ -17,11 +17,11 @@ ms.collection:
 - M365-security-compliance
 description: 'Como administrador, puede ver, liberar e informar de mensajes falsos positivos en cuarentena en Office 365. Puede configurar directivas para que Office 365 filtre mensajes y los envíe a la cuarentena por varias razones: debido a que se identificaron como correo no deseado, en masa, con suplantación de identidad (phishing) o porque coincidieron con una regla de flujo de correo. '
 ms.openlocfilehash: c2a6fff9f6b4d93900174426e2230284695ff3bf
-ms.sourcegitcommit: 48fa456981b5c52ab8aeace173c8366b9f36723b
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/28/2019
-ms.locfileid: "30341731"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32251997"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-administrator-in-office-365"></a>Administrar archivos y mensajes en cuarentena como un administrador en Office 365
 
@@ -91,7 +91,8 @@ En función de la configuración, es posible que haya muchos archivos y mensajes
     
 2. En **ordenar resultados por**, seleccione el filtro o los filtros que desea usar para la búsqueda en las listas desplegables. Las opciones varían en función de si se está buscando archivos o mensajes. Los caracteres comodín no se admiten en los campos de búsqueda en este momento.<br/><br/>Para los archivos y los mensajes, puede elegir filtrar por la fecha en la que se envió el mensaje o el archivo a cuarentena. Puede especificar la fecha o un intervalo de fechas, incluida la hora. También puede filtrar los resultados de la búsqueda por la fecha de caducidad en la que se eliminará el archivo o mensaje de la cuarentena, o puede usar una combinación de filtros. Para buscar por fecha de expiración, elija **filtro avanzado**. En **fecha**de expiración, puede seleccionar mensajes que se eliminarán de la cuarentena en las próximas 24 horas ( **hoy**), en el siguiente 48 horas ( **próximos 2 días**), en la próxima semana ( **próximos 7 días**), o puede seleccionar un intervalo de tiempo personalizado.<br/><br/>Para los mensajes, tiene las siguientes opciones adicionales:
     
-      - **Identificador del mensaje**. Use esta información para identificar un mensaje específico cuando conoce el identificador del mensaje.<br/><br/>Por ejemplo, si un usuario envía un mensaje específico o está destinado a un usuario de su organización, pero nunca llegó a su destino, puede buscar el mensaje mediante un seguimiento de mensajes (consulte [ejecutar un seguimiento de mensajes y ver los resultados](https://go.microsoft.com/fwlink/?LinkId=799737)). Si descubre que el mensaje se envió a la cuarentena, quizá porque coincidía con una regla de flujo de correo o se identificó como correo no deseado, puede encontrar fácilmente este mensaje en cuarentena especificando su identificador de mensaje. Asegúrese de incluir la cadena de identificador de mensaje completa. Esto puede incluir corchetes angulares\<\>(), por ejemplo:<br/>
+      - **Identificador del mensaje**. Use esta información para identificar un mensaje específico cuando conoce el identificador del mensaje.<br/><br/>
+    Por ejemplo, si un usuario envía un mensaje específico o está destinado a un usuario de su organización, pero nunca llegó a su destino, puede buscar el mensaje mediante un seguimiento de mensajes (consulte [ejecutar un seguimiento de mensajes y ver los resultados](https://go.microsoft.com/fwlink/?LinkId=799737)). Si descubre que el mensaje se envió a la cuarentena, quizá porque coincidía con una regla de flujo de correo o se identificó como correo no deseado, puede encontrar fácilmente este mensaje en cuarentena especificando su identificador de mensaje. Asegúrese de incluir la cadena de identificador de mensaje completa. Esto puede incluir corchetes angulares\<\>(), por ejemplo:<br/>
     `<79239079-d95a-483a-aacf-e954f592a0f6@XYZPR00BM0200.contoso.com>`
     
       - **Dirección de correo electrónico del remitente**. Elija filtrar por una sola dirección de correo electrónico del remitente. 
@@ -110,7 +111,7 @@ Al seleccionar un elemento que se muestra en la lista de cuarentena, verá un re
     
 - **Dirección del remitente**. Quién envió el mensaje. 
     
-- **Recibido**. La fecha y la hora en que se recibió el mensaje. 
+- **Recibido**. La fecha y la hora en las que se recibió el mensaje. 
     
 - **Asunto**. Texto de la línea de asunto del mensaje. 
     
@@ -155,7 +156,7 @@ Al seleccionar un elemento que se muestra en la lista de cuarentena, verá un re
 
 Después de seleccionar un mensaje o un grupo de mensajes, tiene varias opciones para administrar los mensajes en cuarentena.
   
-- No hacer nada. Si decide no hacer nada, el mensaje será eliminado automáticamente por Office 365 automáticamente tras la expiración. De forma predeterminada, los mensajes de correo no deseado, masivos, de malware, de suplantación de identidad (phishing) y mensajes en cuarentena porque coinciden con una regla de flujo de correo se mantienen en cuarentena durante 30 días. Cuando Office 365 elimina un mensaje de la cuarentena, no puede recuperarlo. Si lo desea, puede cambiar el período de retención de los mensajes en cuarentena configurando la opción **conservar el correo no deseado durante (días)** en las directivas contra correo no deseado. Para obtener más información, vea [configuración del período de retención de cuarentena](manage-quarantined-messages-and-files.md#BKMK_ModQuarantineTime) en este artículo. 
+- No ejecutar ninguna acción. Si decide no hacer nada, el mensaje será eliminado automáticamente por Office 365 automáticamente tras la expiración. De forma predeterminada, los mensajes de correo no deseado, masivos, de malware, de suplantación de identidad (phishing) y mensajes en cuarentena porque coinciden con una regla de flujo de correo se mantienen en cuarentena durante 30 días. Cuando Office 365 elimina un mensaje de la cuarentena, no puede recuperarlo. Si lo desea, puede cambiar el período de retención de los mensajes en cuarentena configurando la opción **conservar el correo no deseado durante (días)** en las directivas contra correo no deseado. Para obtener más información, vea [configuración del período de retención de cuarentena](manage-quarantined-messages-and-files.md#BKMK_ModQuarantineTime) en este artículo. 
     
 - **Ver el encabezado del mensaje** Elija este vínculo para ver el texto del encabezado del mensaje. Para analizar el encabezado en profundidad, copie el texto del encabezado del mensaje en el portapapeles y, a continuación, elija **analizador de encabezados de mensajes de Microsoft** para ir al analizador de conectividad remota (haga clic con el botón secundario del mouse (ratón) y elija **abrir en una nueva pestaña** si no desea salir de Office 365 para completar esta tarea). Pegue el encabezado del mensaje en la página en la sección analizador de encabezados de mensaje y elija **analizar encabezados**.
     

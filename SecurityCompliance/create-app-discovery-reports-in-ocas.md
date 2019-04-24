@@ -14,17 +14,17 @@ search.appverid:
 ms.assetid: 3e68e691-1fc4-4d3e-a2c0-d3134eb64055
 description: Cree informes con Office 365 Cloud App Security que le permita conocer cómo los usuarios de su organización usan Office 365 y otras aplicaciones.
 ms.openlocfilehash: 23165a52a09e5bcde46ee3ab2110dc17d0faf7f4
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220300"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32259648"
 ---
 # <a name="create-app-discovery-reports-using-office-365-cloud-app-security"></a>Crear informes de detección de aplicaciones con Office 365 Cloud App Security
 
 |Evaluación * *\>**|Planeación * *\>**|Implementación * *\>**|Uso * * * *|
 |:-----|:-----|:-----|:-----|
-|[Empezar a evaluar](office-365-cas-overview.md) <br/> |[Empezar a planear](get-ready-for-office-365-cas.md) <br/> |[Iniciar la implementación](turn-on-office-365-cas.md) <br/> |Ya está aquí.  <br/> [Pasos siguientes](#next-steps) <br/> |
+|[Empezar a evaluar](office-365-cas-overview.md) <br/> |[Empezar a planear](get-ready-for-office-365-cas.md) <br/> |[Iniciar la implementación](turn-on-office-365-cas.md) <br/> |Ya está aquí.  <br/> [Siguientes pasos](#next-steps) <br/> |
    
 Office 365 Cloud App Security ayuda a los administradores globales, a los administradores de seguridad y a los lectores de seguridad a obtener información sobre los servicios de nube que usan los usuarios de una organización. Por ejemplo, puede ver dónde los usuarios almacenan y colaboran en documentos y cuántos datos se cargan en aplicaciones o servicios que se encuentran fuera de Office 365.
   

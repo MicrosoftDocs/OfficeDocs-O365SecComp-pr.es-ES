@@ -1,5 +1,5 @@
 ---
-title: Revisar datos en evidencia
+title: Revisar los datos de pruebas
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,104 +14,92 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 279d2117a69e889f9e605e0ab211c03c5842a59d
-ms.sourcegitcommit: 2c5834235c32b2616e1813ce24eeb3419a09629f
+ms.openlocfilehash: e84f05fa1a7356952b62f2f4adc3b7d0f1ddc94e
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "31030528"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258048"
 ---
-# <a name="review-data-in-evidence"></a>Revisar datos en evidencia
+# <a name="review-the-data-in-evidence"></a>Revisar los datos de pruebas
 
-**Evidence** es una instantánea de los resultados de búsqueda que ha recopilado. Cuando se agregan resultados de búsqueda a Evidence, se desencadena un proceso para extraer archivos, metadatos y texto. A continuación, el sistema crea un nuevo índice de todos los datos y agrega a **prueba**. 
+Los datos de un conjunto de evidencias en una investigación de datos son una instantánea de los resultados de búsqueda que se recopilaron y se agregaron al conjunto de evidencias. Cuando se agregan resultados de búsqueda a la evidencia, se desencadena un proceso para extraer los archivos, los metadatos y el texto de los elementos devueltos por la búsqueda. A continuación, la herramienta de investigación de datos (vista previa) crea un nuevo índice (por un proceso denominado " *indizaCión avanzada*") de todos los datos y agrega a un conjunto de evidencias en la pestaña **evidencia** . 
 
-Para cualquier incidente que tenga en cuenta el tiempo, esto le permite incluir rápidamente el entorno al eliminar datos en las ubicaciones originales mientras investiga la evidencia que se ha vuelto a crear en un entorno en cuarentena. Una vez recopilada la evidencia, puede revisar documentos individuales en su formato nativo, formato de texto o un formato casi nativo. Además, puede ejecutar consultas para restringir los datos por intervalo de tiempo, tipos de archivo, propietarios de datos y muchas otras tarjetas de condición. Mediante el uso de las tarjetas de condición de autor/remitente/destinatario, puede examinar rápidamente quién está implicado en el derrame y si ha habido recursos compartidos externos. Para más información, visite:
+Para las investigaciones sensibles al tiempo, esto permite incluir rápidamente el entorno al eliminar los datos reales derramados o malintencionados que se encuentran en el origen de datos original, a la vez que permite investigar la evidencia que se ha vuelto a crear en un entorno en cuarentena, que en este caso son los datos copiados al conjunto de evidencias. Una vez recopilada y agregada la evidencia al conjunto de evidencias, puede revisar documentos individuales en su formato nativo, formato de texto o un formato casi nativo que puede usar para anotar y censurar documentos. Además, puede ejecutar consultas para restringir el conjunto de datos por intervalo de tiempo, tipos de archivo, propietarios de datos y muchas otras propiedades y condiciones de búsqueda. Por ejemplo, mediante el uso de las condiciones de autor, remitente o destinatario, puede identificar rápidamente a las personas involucradas en el incidente y si los datos de la organización se han compartido con usuarios externos. Para obtener más información acerca de la búsqueda en datos en un conjunto de evidencias, vea [consultar los datos en evidencias](evidence-query.md).
 
-  - [Consultar los datos en evidencia](evidence-query.md)
-
-Para agrupar documentos y obtener más ayuda para su revisión, haga clic en **administrar evidencias**. En el mosaico **Analytics** , haga clic en **analizar**. De esta forma, se ejecutarán análisis avanzados, como la detección de duplicados, el procesamiento de correo electrónico y el análisis de temas. Posteriormente, puede ver los temas generales de los datos y también organizar los documentos por conversaciones de correo electrónico, duplicados exactos y duplicados cercanos para facilitar su investigación. Para más información, visite:
-
-  - [Ejecutar análisis para investigar con mayor rapidez](run-analytics-to-investigate-faster.md)
+Para agrupar documentos y obtener más ayuda para su revisión, seleccione un conjunto de evidencias en la pestaña **evidencia** y, a continuación, haga clic en **administrar evidencias**. En el mosaico **Analytics** , haga clic en recompilar **análisis para todo el conjunto**. De esta forma, se ejecutarán análisis avanzados, como la detección de duplicados, el procesamiento de correo electrónico y el análisis de temas. Posteriormente, puede ver los temas generales de los datos y también organizar los documentos por correo electrónico, casi duplicados y duplicados exactos para ayudarle en su investigación. Para obtener más información, vea [ejecutar análisis para investigar con mayor rapidez](run-analytics-to-investigate-faster.md).
 
 ## <a name="view-documents-in-evidence"></a>Ver documentos en prueba
 
-La investigación de datos (versión preliminar) muestra el contenido a través de varios visores cada uno con fines distintos. Se pueden usar los distintos visores haciendo clic en cualquier documento en **evidencia**. Los visores que se proporcionan actualmente son:
+Las investigaciones de datos (versión preliminar) le permiten mostrar contenido en varios visores distintos, con un propósito diferente para cada visor. Estos visores son los siguientes:
 
 - Metadatos de archivo
 - Vista nativa
 - Vista de texto
 - Vista de anotar
-- Vista convertida
+
+Para tener acceso a cualquiera de estos visores, seleccione un documento en un conjunto de evidencias.
 
 ## <a name="file-metadata"></a>Metadatos de archivo
 
-Este panel puede activarse o desactivarse para mostrar varios metadatos asociados con el documento. Aunque la cuadrícula de resultados de búsqueda se puede personalizar para Mostrar metadatos específicos, hay casos en los que el desplazamiento horizontal puede resultar difícil mientras se revisan los datos. El panel metadatos de archivo permite al usuario alternar una vista dentro del visor.
+Esta vista muestra varias propiedades de metadatos asociadas con el documento seleccionado. Puede activar y desactivar esta vista haciendo clic en metadatos del **archivo**. Al revisar un documento, puede ver los metadatos del archivo y seguir cambiando entre los distintos visores.
 
-![Panel metadatos de archivo
-](../media/Reviewimage2.png)
+A continuación, se muestra un ejemplo de los metadatos de archivo para un documento. Para obtener más información acerca de los campos de metadatos, vea [Document Metadata Fields in Data investigaciones (Preview)](document-metadata-fields.md).
+
+![Panel metadatos de archivo](../media/Reviewimage2.png)
 
 ## <a name="native-view"></a>Vista nativa
 
-El visor nativo muestra la vista más completa de un documento. Admite cientos de tipos de archivo y está destinado a mostrar la experiencia más auténtica posible a la experiencia nativa. Para los archivos de Microsoft Office, por ejemplo, el visor aprovecha Office online para mostrar contenido como comentarios del documento, fórmulas de Excel, filas o columnas ocultas, notas de PowerPoint, etc. Para obtener más información acerca de los visores de Office Online, \[visite aquí necesita vínculo\]
+El visor nativo muestra la vista más exacta de un documento en su formato nativo. La vista nativa es compatible con cientos de tipos de archivo y está destinada a mostrar documentos en la experiencia nativa más real posible. Para los archivos de Microsoft Office, el visor nativo usa Office online. Esto le permite ver contenido como comentarios en diferentes documentos de Office, fórmulas y filas o columnas ocultas en Excel y la vista de notas en PowerPoint.
 
 ![Vista nativa
 ](../media/Reviewimage3.png)
 
 ## <a name="text-view"></a>Vista de texto
 
-El visor de texto proporciona una vista del texto extraído de un archivo. Ignora las imágenes incrustadas y el formato, pero será una vista eficaz si un usuario intenta comprender el contenido rápidamente. La vista de texto también incluye otras características:
+El visor de texto proporciona una vista del texto extraído de un archivo. Omite las imágenes incrustadas y el formato, pero esta vista es muy útil si está intentando revisar y comprender rápidamente el contenido de un documento. La vista de texto también incluye estas características:
 
-  - El contador de línea hace que sea más fácil hacer referencia a partes específicas de un documento
+  - Un contador de línea que hace que sea más fácil hacer referencia a partes específicas de un documento.
 
-  - Buscar el resaltado de referencias que resaltará los términos dentro del documento, así como la barra de desplazamiento
+  - Buscar el resaltado de referencias que resalta los términos en el documento y en la barra de desplazamiento
 
-  - La vista de diferencias proporciona una vista de comparación que resalta las diferencias textuales al ver documentos con duplicados Near
+  - Una vista de diferencias proporciona una vista de comparación que resalta las diferencias de texto al ver los documentos mediante el panel de **duplicaDos Near** .
+
+**Ejemplo de contador de línea y resaltado de búsqueda en el texto y en la barra de desplazamiento**
 
 ![Vista de texto
 ](../media/Reviewimage4.png)
+
+**Ejemplo de la vista diff**
 
 ![Vista de diferencias
 ](../media/Reviewimage5.png)
 
 ## <a name="annotate-view"></a>Vista de anotar
 
-La vista anotar proporciona características que permiten a los usuarios aplicar marcas en un documento durante la investigación, incluidos:
+La vista anotar proporciona características que permiten aplicar marcado a un documento durante el proceso de revisión; Esto incluye estas herramientas:
 
-  - Redacciones de área: los usuarios pueden dibujar un cuadro en el documento con el fin de ocultar contenido confidencial.
+  - **Redacciones de área** : puede dibujar un cuadro opaco en el documento que oculte el contenido confidencial.
 
-  - Lápiz: los usuarios pueden dibujarse en un documento de forma gratuita para atraer la atención sobre determinadas partes de un documento.
+  - **Lápiz** : puede liberar a mano un documento para atraer la atención a determinadas partes del contenido
 
-  - Seleccionar anotaciones: los usuarios pueden seleccionar anotaciones en un documento para poder eliminar
+  - **Seleccionar anotaciones** : puede seleccionar y eliminar anotaciones en un documento.
 
-  - Alternar transparencia de anotación: hace que las anotaciones sean semitransparentes para poder ver el contenido detrás de la anotación
+  - **Alternar transparencia de anotación** : puede alternar la transparencia de las anotaciones (entre opaco y semitransparente) para poder ver el contenido detrás de la anotación. Esto incluye alternar la transparencia de las anotaciones de lápiz y las redacciones.
 
-  - Página anterior: se desplaza a la página anterior
+La vista anotar también proporciona las siguientes funciones de navegación:
 
-  - Página siguiente: se desplaza a la página siguiente.
+  - **Página anterior**, **página siguiente**y **vaya a** los controles de navegación de páginas que se van a usar para documentos de varias páginas.
 
-  - Ir a la página: el usuario puede escribir un número de página específico para navegar
+  - **Zoom** : aumenta o disminuye el tamaño de los documentos en la vista anotar.
 
-  - Zoom: establece el nivel de zoom para la vista anotar
+  - **Girar** : girar documentos en el sentido de las agujas del reloj.
 
-  - Girar: el usuario puede girar el documento en sentido horario
+  - **Buscar** : busca palabras clave en un documento y, a continuación, usa los controles anterior y siguiente para ver los aciertos (resaltados) en el documento.
 
-  - Buscar: el usuario puede buscar en un documento y desplazarse a los distintos aciertos dentro del documento
-    
-    ![Vista de anotar
-    ](../media/Reviewimage1.png)
+**Ejemplo de la vista anotar**
 
-Tenga en cuenta que estas anotaciones se encuentran en datos recopilados como evidencia, no en su ubicación original en el sistema activo. 
+![Vista de anotar](../media/Reviewimage1.png)
 
-## <a name="more-information"></a>Más información
-
-En la siguiente tabla se enumeran los límites de evidencia en las investigaciones de datos (versión preliminar).  Los elementos que excedan los máximos de un solo archivo se mostrarán como errores de procesamiento.
-    
-  |**Descripción del límite**|**Límite**|
-  |:-----|:-----|
-  |Número máximo de colecciones de evidencias  <br/> |50  <br/> |
-  |Número total de documentos que se pueden recopilar en un caso (para todas las colecciones de evidencias en la investigación)  <br/> |1 millón  <br/> |
-  |Tamaño total de archivo por carga  <br/> |100 GB  <br/> |
-  |Tamaño máximo de un solo archivo   <br/> |100 MB  <br/> |
-  |Número máximo de caracteres extraídos de un único archivo  <br/> |10 millones  <br/> |
-  |Profundidad de los elementos insertados en un documento  <br/> |IVA  <br/> |
-  
+> [!NOTE]
+> Las anotaciones se aplican a una copia del documento que se agregó al conjunto de evidencias. No se han anotado los documentos originales en el servicio activo.

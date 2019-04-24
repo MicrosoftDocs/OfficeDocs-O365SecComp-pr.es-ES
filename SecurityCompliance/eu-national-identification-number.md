@@ -11,11 +11,11 @@ ms.collection: M365-security-compliance
 localization_priority: Normal
 description: En este tema se muestra qué busca una directiva de prevención de pérdida de datos (DLP) cuando detecta el tipo de información confidencial de número de identificación nacional de la UE. Este tipo de información confidencial define distintos patrones, palabras clave y otras pruebas para cada país.
 ms.openlocfilehash: afae2c3fa54fe5fcd93990cdf5797f5517c46202
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410975"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32255648"
 ---
 # <a name="eu-national-identification-number"></a>Número de identificación nacional de la UE
 
@@ -23,7 +23,7 @@ En este tema se muestra qué busca una directiva de prevención de pérdida de d
   
 ## <a name="austria"></a>Austria
 
-### <a name="format"></a>Dé
+### <a name="format"></a>Formato
 
 Una combinación de letras, dígitos y caracteres especiales de 24 caracteres
   
@@ -77,7 +77,7 @@ Para obtener más información, consulte la sección "número nacional de Bélgi
   
 ## <a name="bulgaria"></a>Bulgaria
 
-### <a name="format"></a>Dé
+### <a name="format"></a>Formato
 
 Diez dígitos sin espacios y delimitadores
   
@@ -165,7 +165,7 @@ Para obtener más información, consulte la sección "número de identidad de Cr
   
 ## <a name="cyprus"></a>Chipre
 
-### <a name="format"></a>Dé
+### <a name="format"></a>Formato
 
 Diez dígitos sin espacios y delimitadores
   
@@ -219,7 +219,7 @@ Para obtener más información, vea la sección sobre el número de identificaci
   
 ## <a name="estonia"></a>Estonia
 
-### <a name="format"></a>Dé
+### <a name="format"></a>Formato
 
 11 dígitos sin espacios y delimitadores
   
@@ -304,7 +304,7 @@ Para obtener más información, consulte la sección "tarjeta de identificación
   
 ## <a name="hungary"></a>Hungría
 
-### <a name="format"></a>Dé
+### <a name="format"></a>Formato
 
 11 dígitos
   
@@ -362,7 +362,7 @@ személyazonosító igazolvány
   
 ## <a name="ireland"></a>Irlanda
 
-### <a name="format"></a>Dé
+### <a name="format"></a>Formato
 
 Una combinación de Letras de nueve caracteres, dígitos y un espacio en el patrón especificado
   
@@ -439,7 +439,7 @@ uimh. PSP
   
 ## <a name="italy"></a>Italia
 
-### <a name="format"></a>Dé
+### <a name="format"></a>Formato
 
 Una combinación de letras y dígitos de 16 caracteres en el patrón especificado
   
@@ -521,7 +521,7 @@ Codice fiscal
   
 ## <a name="italy"></a>Italia
 
-### <a name="format"></a>Dé
+### <a name="format"></a>Formato
 
 11 dígitos y un guión en el formato especificado
   
@@ -585,7 +585,7 @@ roles kods
   
 ## <a name="lithuania"></a>Lituania
 
-### <a name="format"></a>Dé
+### <a name="format"></a>Formato
 
 11 dígitos sin espacios y delimitadores
   
@@ -658,7 +658,7 @@ asmens kodas.
   
 ## <a name="luxemburg"></a>Luxemburgo
 
-### <a name="format"></a>Dé
+### <a name="format"></a>Formato
 
 11 dígitos sin espacios y delimitadores
   
@@ -735,7 +735,7 @@ eindeutigeid #
   
 ## <a name="malta"></a>Malta
 
-### <a name="format"></a>Dé
+### <a name="format"></a>Formato
 
 Siete dígitos seguidos de una letra
   
@@ -800,7 +800,7 @@ numru ta ' Identità uniku
   
 ## <a name="netherlands"></a>Países Bajos
 
-### <a name="format"></a>Dé
+### <a name="format"></a>Formato
 
 Nueve dígitos sin espacios ni delimitadores
   
@@ -873,7 +873,7 @@ Para obtener más información, consulte la sección "número de tarjeta de ciud
   
 ## <a name="romania"></a>Rumania
 
-### <a name="format"></a>Dé
+### <a name="format"></a>Formato
 
 13 dígitos sin espacios y delimitadores
   
@@ -954,7 +954,7 @@ numărpersonalunic #
   
 ## <a name="slovakia"></a>Eslovaquia
 
-### <a name="format"></a>Dé
+### <a name="format"></a>Formato
 
 Diez dígitos que contienen una barra diagonal inversa
   
@@ -1023,7 +1023,7 @@ rodne cislo
   
 ## <a name="slovenia"></a>Eslovenia
 
-### <a name="format"></a>Dé
+### <a name="format"></a>Formato
 
 13 dígitos sin espacios ni delimitadores
   
@@ -1094,7 +1094,7 @@ emšo
   
 ## <a name="spain"></a>España
 
-### <a name="format"></a>Dé
+### <a name="format"></a>Formato
 
 Siete dígitos seguidos de un carácter
   

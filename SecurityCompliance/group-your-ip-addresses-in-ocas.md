@@ -14,17 +14,17 @@ search.appverid:
 ms.assetid: b5e1471c-1ad6-4bc5-9e75-ce791aee283c
 description: Para identificar fácilmente los conjuntos de direcciones IP que va a usar en Office 365 Cloud App Security, como las direcciones IP de la oficina física, puede configurar grupos de intervalos de direcciones IP.
 ms.openlocfilehash: b8f5c1dd46b2e3990d53a65881d12ca8f3961b16
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220450"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32254868"
 ---
 # <a name="group-your-ip-addresses-to-simplify-management-in-office-365-cloud-app-security"></a>Agrupar las direcciones IP para simplificar la administración en Office 365 Cloud App Security
   
 |Evaluación * *\>**|Planeación * *\>**|Implementación * *\>**|Uso * * * *|
 |:-----|:-----|:-----|:-----|
-|[Empezar a evaluar](office-365-cas-overview.md) <br/> |[Empezar a planear](get-ready-for-office-365-cas.md) <br/> |Ya está aquí.  <br/> [Pasos siguientes](#next-steps) <br/> |[Empezar a usar](utilization-activities-for-ocas.md) <br/> |
+|[Empezar a evaluar](office-365-cas-overview.md) <br/> |[Empezar a planear](get-ready-for-office-365-cas.md) <br/> |Ya está aquí.  <br/> [Siguientes pasos](#next-steps) <br/> |[Empezar a usar](utilization-activities-for-ocas.md) <br/> |
    
 Para identificar fácilmente los conjuntos de direcciones IP que va a usar en Office 365 Cloud App Security, como las direcciones IP de la oficina física, puede configurar grupos de intervalos de direcciones IP. La definición de estos intervalos le permite etiquetar y clasificarlos, y luego puede usar etiquetas y categorías para personalizar la forma en que se muestran y se investigan las alertas y los registros de actividad.
   
@@ -45,11 +45,11 @@ Cada grupo de intervalos IP se puede etiquetar con los nombres de etiqueta que e
     
 |**Campo o lista**|**Qué hacer**|
 |:-----|:-----|
-|**Nombre** <br/> |Use este campo para administrar la configuración y el intervalo de direcciones IP. (No verá este valor en los registros de actividades).  <br/> |
+|**Name** <br/> |Use este campo para administrar la configuración y el intervalo de direcciones IP. (No verá este valor en los registros de actividades).  <br/> |
 |**Intervalos de direcciones IP** <br/> |Especifique un rango con la notación de prefijo de red (también conocida como notación CIDR). Por ejemplo, 192.168.1.0/27 incluye el intervalo de valores 192.168.1.0 a 192.168.1.31 (inclusive).  <br/> |
 |**Ubicación** y **ISP registrados** <br/> |Especifique la ubicación y el proveedor de servicios de Internet (ISP) para el intervalo de direcciones IP. Esto reemplaza los campos públicos definidos para las direcciones, lo que resulta útil para casos como, por ejemplo, una dirección IP que se considera públicamente en Irlanda pero que, en realidad, se encuentra en Estados Unidos.  <br/> |
 |**Tags** <br/> |Use etiquetas para asignar un nombre a los grupos de direcciones IP. (A diferencia del campo nombre, verá etiquetas en los registros de actividad). Escriba la palabra o frase que desea usar para una etiqueta. Puede Agregar tantas etiquetas como desee para cada intervalo de direcciones IP. Si ya ha configurado una etiqueta y desea agregar este intervalo de direcciones IP, selecciónela en la lista de etiquetas actuales que aparecen al empezar a escribir.  <br/> |
-|**Categoría** <br/> | Asigne categorías a las etiquetas para que sea más fácil reconocer las actividades que provienen de determinadas direcciones IP. Elija una de las siguientes opciones:<br/> **Administrativo** Todas las direcciones IP de los administradores.  <br/> **Proveedor de nube** La dirección IP de su proxy en la nube.  <br/> **Empresa** Todas las direcciones IP de la red interna, las sucursales y las direcciones de itinerancia de Wi-Fi.  <br/> **Peligroso** Las direcciones IP que considere arriesgadas, como las direcciones IP sospechosas que ha visto anteriormente, direcciones IP en las redes de la competencia, etc. De forma predeterminada, las categorías de riesgo incluyen dos etiquetas IP: **proxy anónimo** y **Tor** <br/> **VPN** Cualquier dirección IP que usen los trabajadores remotos.  <br/> |
+|**Categoría** <br/> | Asigne categorías a las etiquetas para que sea más fácil reconocer las actividades que provienen de determinadas direcciones IP. Seleccione una de las opciones siguientes:  <br/> **Administrativo** Todas las direcciones IP de los administradores.  <br/> **Proveedor de nube** La dirección IP de su proxy en la nube.  <br/> **Empresa** Todas las direcciones IP de la red interna, las sucursales y las direcciones de itinerancia de Wi-Fi.  <br/> **Peligroso** Las direcciones IP que considere arriesgadas, como las direcciones IP sospechosas que ha visto anteriormente, direcciones IP en las redes de la competencia, etc. De forma predeterminada, las categorías de riesgo incluyen dos etiquetas IP: **proxy anónimo** y **Tor** <br/> **VPN** Cualquier dirección IP que usen los trabajadores remotos.  <br/> |
    
 7. Elija **Guardar**.
     

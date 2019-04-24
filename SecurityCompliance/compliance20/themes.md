@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 7c9d1a52acef48d96816fefbb1c836032d262b93
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30454682"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32240982"
 ---
 # <a name="themes"></a>Temas
 ¿Cómo escribe un documento un usuario? Por lo general, comienzan con una o más ideas que quieren transmitir en el documento y se redactan con palabras que se alinean con las ideas. Cuanto más frecuente sea la idea, más frecuentes serán las palabras relacionadas con dicha idea. Esto informa de cómo los usuarios también usan los documentos; lo más importante para obtener información sobre cómo leer un documento son las ideas que el documento está tratando de transmitir, así como las ideas en las que aparecen y las relaciones entre las ideas.

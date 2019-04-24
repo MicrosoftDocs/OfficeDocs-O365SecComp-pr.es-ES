@@ -14,11 +14,11 @@ ms.collection:
 - M365-security-compliance
 description: Información general sobre los ataques de denegación de servicio (DoS).
 ms.openlocfilehash: a7e67fcc87867190f345c5dad14e38a473420eab
-ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31004077"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262822"
 ---
 # <a name="defending-against-denial-of-service-attacks-in-office-365"></a>Defensa contra ataques por denegación de servicio en Office 365
 

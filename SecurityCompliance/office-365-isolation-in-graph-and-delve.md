@@ -14,11 +14,11 @@ ms.collection:
 - M365-security-compliance
 description: 'Resumen: explicación del aislamiento de inquilinos en Office Graph y en Delve.'
 ms.openlocfilehash: 22bcf581c26ea4e334539a81861ff4dee68967ef
-ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31004207"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262612"
 ---
 # <a name="tenant-isolation-in-the-office-graph-and-delve"></a>Aislamiento del inquilino en Office Graph y Delve
 

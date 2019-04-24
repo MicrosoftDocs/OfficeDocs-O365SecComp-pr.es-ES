@@ -18,11 +18,11 @@ ms.collection:
 - M365-security-compliance
 description: Incluso si planea hospedar algunos o todos los buzones de correo locales, aún puede proteger los buzones con Exchange Online Protection (EOP). Para configurar conectores, la cuenta debe ser de un administrador global de Office 365 o un administrador de la compañía de Exchange (el grupo de roles de administración de la organización). Para obtener información sobre cómo se relacionan los permisos de Office 365 con los permisos de Exchange, consulte asignación de roles de administrador en Office 365 operado por 21Vianet. Si todos los buzones de Exchange son locales, siga estos pasos para configurar el servicio de EOP.
 ms.openlocfilehash: 4331bf5574122efb50bb9dda9c7c0386df5683f7
-ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30670505"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261558"
 ---
 # <a name="protect-on-premises-mailboxes-with-exchange-online-protection"></a>Proteger buzones locales con Exchange Online Protection
 

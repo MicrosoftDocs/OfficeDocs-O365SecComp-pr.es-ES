@@ -17,11 +17,11 @@ search.appverid:
 - MET150
 description: 'Una sugerencia de directiva es una notificación o advertencia que aparece cuando alguien trabaja con contenido que entra en conflicto con una directiva DLP. Puede usar notificaciones de correo electrónico y sugerencias de directiva para aumentar el conocimiento y ayudar a los usuarios acerca de las directivas de la organización. También puede dar a los usuarios la opción de invalidar la Directiva, de modo que no se bloqueen si tienen una necesidad empresarial válida o si la Directiva está detectando un falso positivo. '
 ms.openlocfilehash: b598b665de3d45846e221ea4c1b5c2f49a659c6b
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30639157"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32263972"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Enviar notificaciones de correo electrónico y Mostrar sugerencias de directiva para directivas de DLP
 
@@ -211,7 +211,7 @@ Actualmente, Outlook 2013 y versiones posteriores admiten la visualización de s
 - Contenido contiene
 - El contenido se comparte
 
-Actualmente estamos trabajando en soporte para mostrar sugerencias de directiva para condiciones adicionales. Entre estos, incluyen los siguientes:
+Actualmente estamos trabajando en soporte para mostrar sugerencias de directiva para condiciones adicionales. Entre ellos se incluyen:
 
 - No se pudo analizar el contenido de los datos adjuntos de correo electrónico
 - No se completó el análisis del contenido de los datos adjuntos de correo
@@ -291,6 +291,6 @@ Puede personalizar el texto de las sugerencias de directiva independientemente d
     
 - [Qué incluyen las plantillas de directiva DLP](what-the-dlp-policy-templates-include.md)
     
-- [Información que buscan los tipos de información confidencial](what-the-sensitive-information-types-look-for.md)
+- [Qué buscan los tipos de información confidencial](what-the-sensitive-information-types-look-for.md)
     
 

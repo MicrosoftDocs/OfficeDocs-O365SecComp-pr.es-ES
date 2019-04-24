@@ -11,11 +11,11 @@ localization_priority: Normal
 ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: Siga estos procedimientos recomendados para Exchange Online Protection (EOP) con el fin de evitar errores comunes de configuración y prepararse para usar esta característica sin problemas.
 ms.openlocfilehash: 3b8cf41be41e199017dcff7fd3762711402d8ca2
-ms.sourcegitcommit: c0d4fe3e43e22353f30034567ade28330266bcf7
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "30900189"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256648"
 ---
 # <a name="best-practices-for-configuring-eop"></a>Procedimientos recomendados para configurar EOP
   
@@ -97,7 +97,7 @@ Para una mayor protección, también le recomendamos que bloquee algunas o todas
 
 Solucionar problemas generales y tendencias mediante el uso de los informes del centro de administración. Para encontrar datos específicos en un punto único sobre un mensaje, use la herramienta de seguimiento de mensajes. Para más información sobre informes, vea [Informes y seguimiento de mensajes en Exchange Online Protection](reporting-and-message-trace-in-exchange-online-protection.md). Para más información sobre la herramienta de seguimiento de mensajes, vea [Trace an Email Message](http://technet.microsoft.com/library/0c83cde6-5b09-4106-8587-c200cdc59094.aspx).
   
-## <a name="for-more-information"></a>Para obtener más información
+## <a name="for-more-information"></a>Más información
 
 [Preguntas más frecuentes sobre EOP](eop-general-faq.md)
   

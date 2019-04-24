@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: En este tema se muestra cómo configurar IRM para usar un servidor de AD RMS.
 ms.openlocfilehash: 1da66c5afa37c96c061a4bf25c0858e4e71e2313
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693039"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32259578"
 ---
 # <a name="configure-irm-to-use-an-on-premises-ad-rms-server"></a>Configurar IRM para usar un servidor de AD RMS local
   
@@ -29,7 +29,7 @@ En este tema se muestra cómo configurar IRM para usar un servidor de AD RMS. Pa
   
 Para obtener más información sobre IRM en Exchange Online, consulte [Information Rights Management en Exchange Online](information-rights-management-in-exchange-online.md).
   
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 <a name="sectionSection0"> </a>
 
 - Tiempo estimado para finalizar esta tarea: 30 minutos

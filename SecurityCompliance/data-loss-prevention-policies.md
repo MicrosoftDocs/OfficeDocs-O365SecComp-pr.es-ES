@@ -16,11 +16,11 @@ search.appverid:
 - MET150
 description: Con una directiva de prevención de pérdida de datos (DLP) en el &amp; centro de seguridad y cumplimiento de Office 365, puede identificar, supervisar y proteger automáticamente la información confidencial en Office 365.
 ms.openlocfilehash: da8acd8904ac6a9b1945c8f794bad84a0adc64fb
-ms.sourcegitcommit: 94e9eeab8134a9c4d9004cc16de7da227a0e5cc0
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31784111"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262302"
 ---
 # <a name="overview-of-data-loss-prevention-policies"></a>Información general sobre directivas de prevención de pérdida de datos
 
@@ -204,7 +204,7 @@ Por ejemplo, la Directiva integrada de **HIPAA de Estados Unidos** tiene una reg
   
 - de los identificadores de **PII** de grupo (al menos un número de SSN **o** número de DEA) 
     
-    **Y**
+    **AND**
     
 - de los **términos médicos** del grupo (al menos una palabra clave ICD-9-cm **o** una palabra clave ICD-10-cm) 
     
@@ -454,7 +454,7 @@ En todos los sitios de SharePoint Online y los sitios de OneDrive para la empres
   
 Por este motivo, las directivas DLP buscan frecuentemente y en segundo plano coincidencias de directivas en los documentos. Puede considerarlo como una evaluación asincrónica de directiva.
   
-#### <a name="how-it-works"></a>Funcionamiento
+#### <a name="how-it-works"></a>Cómo funciona
  
 A medida que los usuarios agregan o cambian documentos en sus sitios, el motor de búsqueda analiza el contenido para que usted pueda encontrarlo más adelante. Mientras esto sucede, el contenido también se examina en busca de información confidencial y se comprueba si está compartido. Toda la información confidencial encontrada se almacena de forma segura en el índice de búsqueda, por lo que solo el equipo de cumplimiento puede tener acceso a ella, pero no a los usuarios típicos. Cada directiva DLP que haya activado se ejecuta en segundo plano (asincrónicamente), comprobando la búsqueda con frecuencia en busca de contenido que coincida con una directiva y aplicando acciones para protegerla de pérdidas accidentales.
   
@@ -508,7 +508,7 @@ Para usar la mayoría de los cmdlets del centro &amp; de seguridad y cumplimient
     
 Sin embargo, los informes DLP necesitan extraer datos de toda la oficina 365, incluido Exchange Online. Por este motivo, **los cmdlets para los informes DLP están disponibles en Exchange Online PowerShell, no en el PowerShell &amp; del centro de seguridad y cumplimiento**. Por lo tanto, para usar los cmdlets para los informes de DLP, debe:
   
-1. [Conectarse a Exchange Online mediante PowerShell remoto](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)
+1. [Conectarse a Exchange Online con el PowerShell remoto](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell?view=exchange-ps)
     
 2. Use cualquiera de estos cmdlets para los informes de DLP:
     

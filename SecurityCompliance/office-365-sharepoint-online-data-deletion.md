@@ -6,19 +6,19 @@ manager: laurawi
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Una explicación de la eliminación de datos en SharePoint Online.
-ms.openlocfilehash: 6d4989bc4b503309ba50237a164bffebaff1e7af
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 3b49174a3ef97445061bdf33f15ea76e84161175
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218430"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262372"
 ---
 # <a name="sharepoint-online-data-deletion-in-office-365"></a>Eliminación de datos de SharePoint Online en Office 365
 

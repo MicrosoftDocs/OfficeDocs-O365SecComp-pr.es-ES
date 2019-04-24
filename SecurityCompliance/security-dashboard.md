@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: Use el nuevo panel de seguridad para revisar el estado de la protección contra amenazas de Office 365 y vea y actúe en alertas de seguridad.
 ms.openlocfilehash: 83e75f1a38038f1c95697f4db3e7b1134d03779d
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692759"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261118"
 ---
 # <a name="security-dashboard"></a>Panel de seguridad
 
@@ -85,7 +85,7 @@ Las métricas se calculan como se describe en la siguiente tabla:
 |Bloqueado por [ATP](office-365-atp.md) |Número de mensajes de correo electrónico bloqueados por ATP multiplicado por el número de destinatarios |
 |Eliminado tras la entrega |Número de mensajes eliminados por [purga automática de cero horas](zero-hour-auto-purge.md) multiplicado por el número de destinatarios |
 
-## <a name="malware"></a>Software
+## <a name="malware"></a>Malware
 
 Los widgets de malware muestran detalles sobre las tendencias de malware y los tipos de familia de malware en los últimos siete (7) días.
 

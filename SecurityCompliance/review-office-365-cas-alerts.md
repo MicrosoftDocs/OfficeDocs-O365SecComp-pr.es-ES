@@ -13,11 +13,11 @@ search.appverid:
 ms.assetid: 97e9c3d9-df89-458e-924b-369becee5532
 description: Use la página Alertas de Office 365 Cloud App Security para ver posibles problemas y emprender acciones. Puede omitir o resolver las alertas y, si es necesario, suspender una cuenta de usuario.
 ms.openlocfilehash: ddef10293fca7b722a13babdca5c05bbe2398cb3
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000043"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261488"
 ---
 # <a name="review-and-take-action-on-alerts-in-office-365-cloud-app-security"></a>Revisar y realizar acciones sobre alertas en Office 365 Cloud App Security
   

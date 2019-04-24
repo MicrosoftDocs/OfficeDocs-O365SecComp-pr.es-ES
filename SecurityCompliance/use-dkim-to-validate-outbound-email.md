@@ -14,11 +14,11 @@ ms.collection:
 - M365-security-compliance
 description: 'Resumen: Este artículo describe cómo usa DomainKeys Identified Mail (DKIM) con Office 365 para asegurarse de que los sistemas de correo electrónico de destino confían en los mensajes enviados desde su dominio personalizado.'
 ms.openlocfilehash: fc2a509aacdaac0aeef22696d85512f91957502f
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693469"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32263752"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain-in-office-365"></a>Usar DKIM para validar el correo electrónico saliente enviado desde su dominio personalizado en Office 365
 
@@ -152,9 +152,9 @@ Una vez que haya publicado los registros CNAME en DNS, está preparado para habi
     
 #### <a name="to-enable-dkim-signing-for-your-custom-domain-by-using-powershell"></a>Para habilitar la firma DKIM para su dominio personalizado mediante PowerShell
 
-1. [Conexión a PowerShell de Exchange Online](https://technet.microsoft.com/library/jj984289.aspx).
+1. [Conexión al PowerShell de Exchange Online](https://technet.microsoft.com/library/jj984289.aspx).
     
-2. Ejecute el comando siguiente:
+2. Ejecute el siguiente comando:
     
     ```
     New-DkimSigningConfig -DomainName <domain> -Enabled $true
@@ -203,7 +203,7 @@ Deshabilitar la directiva de firmas no deshabilita DKIM completamente. Después 
   
 ### <a name="to-disable-the-dkim-signing-policy-by-using-windows-powershell"></a>Para deshabilitar la directiva de firmas DKIM mediante Windows PowerShell
 
-1. [Conexión a PowerShell de Exchange Online](https://technet.microsoft.com/library/jj984289.aspx).
+1. [Conexión al PowerShell de Exchange Online](https://technet.microsoft.com/library/jj984289.aspx).
     
 2. Ejecute uno de los siguientes comandos para cada dominio para el que quiera deshabilitar la firma DKIM.
     

@@ -16,11 +16,11 @@ search.appverid:
 - MET150
 description: 'La forma más sencilla y habitual de empezar a trabajar con directivas de DLP es usar una de las plantillas incluidas en Office 365. '
 ms.openlocfilehash: 7ebb2a77e8f1f9fa47882fcbb758b34cd40daee9
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30639107"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258598"
 ---
 # <a name="create-a-dlp-policy-from-a-template"></a>Crear una directiva DLP a partir de una plantilla
 
@@ -167,7 +167,7 @@ Estos son los distintos Estados y su significado.
 |**Pruebas, sin notificaciones** <br/> |La Directiva está en modo de prueba. Las acciones de una regla no se aplican, pero las coincidencias de Directiva se recopilan y se pueden ver mediante los informes de DLP. Las notificaciones sobre coincidencias de directivas no se envían a los destinatarios especificados.  <br/> |
 |**On** <br/> |La directiva está activa y se exige. La directiva se implementó correctamente en todos sus orígenes de contenido.  <br/> |
 |**Desactivando...** <br/> |La directiva se está quitando de los orígenes de contenido que incluye. La directiva todavía puede estar activa y exigirse en algunos orígenes. La desactivación de una Directiva puede tardar hasta 45 minutos.  <br/> |
-|**Off** <br/> |La directiva no está activa y no se exige. Se guarda la configuración de la directiva (orígenes, palabras clave, duración, etc.).  <br/> |
+|**Desactivada** <br/> |La directiva no está activa y no se exige. Se guarda la configuración de la directiva (orígenes, palabras clave, duración, etc.).  <br/> |
 |**Eliminando...** <br/> |La directiva está en proceso de eliminación. La directiva no está activa y no se exige.  <br/> |
    
 ## <a name="turn-off-a-dlp-policy"></a>Desactivar una directiva DLP

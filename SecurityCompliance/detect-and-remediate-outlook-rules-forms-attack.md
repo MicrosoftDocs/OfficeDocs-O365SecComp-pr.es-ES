@@ -15,11 +15,11 @@ search.appverid:
 - MET150
 description: Obtenga información sobre cómo reconocer y corregir los ataques de las reglas de Outlook y de las inyecciones de formularios personalizados en Office 365
 ms.openlocfilehash: 59d45e50e15e3709c8a041ead59b8cc6e2a38306
-ms.sourcegitcommit: 8657e003ab1ff49113f222d1ee8400eff174cb54
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2019
-ms.locfileid: "30656066"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256868"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks-in-office-365"></a>Detectar y corregir las reglas de Outlook y ataques de inserciones de formularios personalizados en Office 365
 
@@ -175,11 +175,11 @@ Busque la clave EnableUnsafeClientMailRules. Si está y se establece en 1, la re
 
 Los clientes con instalaciones de Exchange locales deben considerar el bloqueo de versiones anteriores de Outlook que no tienen revisiones disponibles. Encontrará más información sobre este proceso en el artículo [configure Outlook Client blocking](https://technet.microsoft.com/en-us/library/dd335207(v=exchg.150).aspx).
 
-## <a name="secure-office-365-like-a-cybersecurity-pro"></a>Proteger Office 365 como un Cybersecurity Pro
-Su suscripción a Office 365 incluye un eficaz conjunto de capacidades de seguridad que puede usar para proteger sus datos y sus usuarios.  Use el [plan de desarrollo de seguridad de Office 365: principales prioridades de los primeros 30 días, 90 días y más allá](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352) de implementar los procedimientos recomendados de Microsoft para proteger su inquilino de Office 365.
-- Tareas que se deben realizar en los primeros 30 días.  Estos tienen un efecto inmediato y tienen un impacto bajo para los usuarios.
-- Tareas que se deben realizar en 90 días. Estos requieren un poco más de tiempo para planear e implementar, pero mejoran considerablemente su postura de seguridad.
-- Más allá de 90 días. Estas mejoras se basan en el trabajo de los primeros 90 días.
+## <a name="secure-office-365-like-a-cybersecurity-pro"></a>Proteger Office 365 como un profesional de ciberseguridad
+Su suscripción a Office 365 incluye un potente conjunto de capacidades de seguridad que puede usar para proteger sus datos y los usuarios.  Use el [Plan de seguridad de Office 365: principales prioridades para los primeros 30 días, 90 días y en adelante](https://support.office.com/article/Office-365-security-roadmap-Top-priorities-for-the-first-30-days-90-days-and-beyond-28c86a1c-e4dd-4aad-a2a6-c768a21cb352) para implementar las prácticas recomendadas de Microsoft para proteger su espacio empresarial de Office 365.
+- Tareas a realizar en los primeros 30 días.  Estas tienen un efecto inmediato y de bajo impacto para los usuarios.
+- Tareas para llevar a cabo en 90 días. Estas tareas necesitan un poco más de tiempo para planearlas e implementarlas, pero mejoran considerablemente el nivel de seguridad.
+- Más de 90 días. Estas mejoras se crean en el trabajo de los 90 primeros días.
 
 ## <a name="see-also"></a>Vea también:
 - [Reglas](https://silentbreaksecurity.com/malicious-outlook-rules/) malintencionadas de Outlook por SilentBreak Security post about rules vector proporciona una revisión detallada de las reglas de Outlook. 

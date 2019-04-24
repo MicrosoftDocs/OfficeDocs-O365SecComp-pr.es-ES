@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 3f273152d4242e8ce3f9990dc01927edf105f3dc
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296293"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32251978"
 ---
 # <a name="export-limits-in-advanced-ediscovery-preview"></a>Límites de exportación en la exhibición avanzada de documentos electrónicos (versión preliminar)
 

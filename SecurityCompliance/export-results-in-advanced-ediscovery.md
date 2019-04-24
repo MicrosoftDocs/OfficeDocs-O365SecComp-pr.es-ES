@@ -13,11 +13,11 @@ search.appverid:
 ms.assetid: a9951a07-10b3-48cb-b37a-0ffaa24931ad
 description: 'Obtenga información sobre cómo definir opciones para exportar resultados de eDiscovery avanzado de Office 365, incluido el procedimiento para especificar parámetros para un lote de exportación. '
 ms.openlocfilehash: a2528c3eab0bc9c06a592b972a3bc602174458d3
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000913"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32255878"
 ---
 # <a name="export-results-in-office-365-advanced-ediscovery"></a>Exportar resultados en Office 365 Advanced eDiscovery
 

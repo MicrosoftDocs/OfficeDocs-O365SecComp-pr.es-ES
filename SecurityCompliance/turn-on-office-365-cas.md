@@ -1,5 +1,5 @@
 ---
-title: Activar Office 365 Cloud App Security
+title: Activar la seguridad de aplicación de nube de Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
@@ -13,19 +13,19 @@ search.appverid:
 ms.assetid: ba919c73-d021-404d-9850-eec57e78678c
 description: Lea este artículo para obtener información sobre cómo activar la seguridad de aplicaciones en la nube de Office 365, con la tecnología Cloud App Security en Microsoft Azure.
 ms.openlocfilehash: 1227545b1e4d1521dc1820342f09aabdf16ec2c6
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220370"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264132"
 ---
-# <a name="turn-on-office-365-cloud-app-security"></a>Activar Office 365 Cloud App Security
+# <a name="turn-on-office-365-cloud-app-security"></a>Activar la seguridad de aplicación de nube de Office 365
   
 |Evaluación * *\>**|Planeación * *\>**|Implementación * *\>**|Uso * * * *|
 |:-----|:-----|:-----|:-----|
 |[Empezar a evaluar](office-365-cas-overview.md) <br/> |[Empezar a planear](get-ready-for-office-365-cas.md) <br/> |Ya está aquí.  <br/> [Siguiente paso](activity-policies-and-alerts.md) <br/> |[Empezar a usar](utilization-activities-for-ocas.md) <br/> |
   
-## <a name="turn-on-office-365-cloud-app-security"></a>Activar Office 365 Cloud App Security
+## <a name="turn-on-office-365-cloud-app-security"></a>Activar la seguridad de aplicación de nube de Office 365
 
 > [!IMPORTANT]
 > Debe ser administrador global o administrador de seguridad para realizar la siguiente tarea. Para obtener más información, consulte perMissions [in the &amp; Office 365 Security Compliance Center](permissions-in-the-security-and-compliance-center.md). Para que Office 365 Cloud App Security funcione correctamente, el **registro de auditoría debe estar activado** para su entorno de Office 365. Para obtener más información, consulte [activar o desactivar la búsqueda de registros de auditoría de Office 365](turn-audit-log-search-on-or-off.md). 

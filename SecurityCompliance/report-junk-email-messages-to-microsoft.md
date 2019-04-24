@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: 'El complemento de notificación de correo no deseado de Microsoft para Microsoft Office Outlook permite notificar mensajes de correo no deseado de varias formas:'
 ms.openlocfilehash: 7e50143acd6efeb3d47ad0fa04d6d9b57a5ca161
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692679"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32265032"
 ---
 # <a name="report-junk-email-messages-to-microsoft"></a>Informar a Microsoft sobre mensajes de correo electrónico no deseado
 

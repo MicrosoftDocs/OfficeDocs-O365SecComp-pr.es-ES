@@ -14,11 +14,11 @@ ms.collection:
 - M365-security-compliance
 description: Información general sobre las directivas de Microsoft para Office 365 relacionadas con la retención, eliminación y destrucción de datos.
 ms.openlocfilehash: fcae11f10278f1357a68ea3f9a1178da97322775
-ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31004127"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262842"
 ---
 # <a name="data-retention-deletion-and-destruction-in-office-365"></a>Retención, eliminación y destrucción de datos en Office 365
 

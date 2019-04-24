@@ -13,11 +13,11 @@ search.appverid:
 ms.assetid: 55e8d858-f278-482b-a198-2e62d6a2e6e5
 description: Es posible que su organización tenga que conservar los documentos durante un período de tiempo debido a los requisitos de cumplimiento, legales u otros requisitos empresariales. Sin embargo, si la organización guarda documentos más tiempo del necesario, se crea un riesgo legal innecesario. Con una directiva de eliminación de documentos, puede reducir el riesgo de forma proactiva eliminando los documentos de un sitio después de un período de tiempo específico (por ejemplo, puede eliminar documentos de los sitios de OneDrive para la empresa de los usuarios cinco años después de que se crearon los documentos).
 ms.openlocfilehash: 2a6b1c29986020ebd63f6ddb960f0d28ba348b3e
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30998703"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257608"
 ---
 # <a name="overview-of-document-deletion-policies"></a>Información general sobre las directivas de eliminación de documentos
 

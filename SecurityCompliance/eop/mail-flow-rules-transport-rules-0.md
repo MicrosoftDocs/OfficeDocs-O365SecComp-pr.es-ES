@@ -11,11 +11,11 @@ localization_priority: Normal
 ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
 description: Puede usar reglas de flujo de correo (reglas de transporte) para identificar y realizar acciones en mensajes que fluyen a través de la organización de Office 365.
 ms.openlocfilehash: 379886788a4fa411d70830c702dd8850e8118b32
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693259"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256638"
 ---
 # <a name="mail-flow-rules-transport-rules-in-exchange-online-protection"></a>Reglas de flujo de correo (reglas de transporte) en Exchange Online Protection
 
@@ -121,10 +121,10 @@ Hay varios tipos de mensajes que pasan a través de una organización. En la tab
     
 - Después de crear o modificar una regla de flujo de correo, esta puede tardar hasta 30 minutos en aplicarse a los mensajes.
     
-## <a name="for-more-information"></a>Para obtener más información
+## <a name="for-more-information"></a>Más información
   
 [Usar reglas de flujo de correo para inspeccionar datos adjuntos de mensajes en Exchange Online](http://technet.microsoft.com/library/874d1c78-a8ec-4938-b388-d3208c2fa971.aspx)
   
 [Cifrado de correo electrónico en Office 365](https://support.office.com/article/c0d87cbe-6d65-4c03-88ad-5216ea5564e8)
   
-[Límites de reglas del diario, transporte y bandeja de entrada](https://go.microsoft.com/fwlink/p/?LinkId=324584)
+[Límites de las reglas de la Bandeja de entrada, del diario y de transporte](https://go.microsoft.com/fwlink/p/?LinkId=324584)

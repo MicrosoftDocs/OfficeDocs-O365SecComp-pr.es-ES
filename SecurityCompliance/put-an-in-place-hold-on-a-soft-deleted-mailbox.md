@@ -11,11 +11,11 @@ search.appverid: ''
 ms.assetid: 421f72bd-dd43-4be1-82f5-0ae9ac43bd00
 description: Obtenga información sobre cómo crear una conservación local en un buzón eliminado temporalmente para que se convierta en inactivo y se conserve su contenido. Después, puede usar las herramientas de Microsoft eDiscovery para buscar el buzón inactivo.
 ms.openlocfilehash: f5ac31b4bfd993bf384aa17ba5f71de937cec720
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999513"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261608"
 ---
 # <a name="put-an-in-place-hold-on-a-soft-deleted-mailbox-in-exchange-online"></a>Colocar una conservación local en un buzón eliminado temporalmente en Exchange Online
 

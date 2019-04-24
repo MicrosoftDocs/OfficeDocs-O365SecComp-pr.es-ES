@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: 367f25d3-10a0-4a91-bdae-70ebb7a79c98
 description: Definir directivas de actividad con Office 365 Cloud App Security para configurar las alertas que se desencadenen cuando se produzcan actividades específicas o se produzcan con demasiada frecuencia. Mediante la configuración de directivas para desencadenar alertas, puede recibir notificaciones sobre actividades específicas y supervisarlas.
 ms.openlocfilehash: cfa58182ea35551ca3a3807c23e09c9f87c7be82
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30219770"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32242736"
 ---
 # <a name="activity-policies-and-alerts-in-office-365-cloud-app-security"></a>Directivas de actividad y alertas en Office 365 Cloud App Security
 

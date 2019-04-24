@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: Cuando configure las directivas de vínculos seguros de ATP, puede incluir una lista de direcciones URL de "do-not-Rewrite" para permitir que algunos usuarios de la organización visiten los sitios que incluya en la lista.
 ms.openlocfilehash: 006dab44054f9cb707bb13d158588ab6606fab5c
-ms.sourcegitcommit: 1c73c2f83703af0a30a5b0633db00d8e0e6b39b5
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "30241982"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264462"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-office-365-atp-safe-links"></a>Configurar una lista de direcciones URL de do-not-Rewrite personalizada con los vínculos seguros de Office 365 ATP
 
@@ -37,7 +37,7 @@ La protección de vínculos seguros de ATP usa varias listas, incluidas la lista
 
 Para editar (o definir) las directivas de ATP, debe tener asignado uno de los roles descritos en la siguiente tabla:
 
-|Rol  |Dónde y cómo se asigna  |
+|Role  |Dónde y cómo se asigna  |
 |---------|---------|
 |Administrador global de Office 365 |La persona que se registra para comprar Office 365 es un administrador global de forma predeterminada. (Consulte [acerca de los roles de administrador de Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) para obtener más información).         |
 |Administrador de seguridad |Centro de administración de Azure Active[https://aad.portal.azure.com](https://aad.portal.azure.com)Directory ()|

@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: En este tema se describe cómo los administradores de Exchange Online y Exchange Online Protection (EOP) pueden buscar, liberar e informar sobre los mensajes en cuarentena en el centro de administración de Exchange (EAC).
 ms.openlocfilehash: a973d3a3b1875ed1ba691f91c1c23373ac8d6694
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693229"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32255278"
 ---
 # <a name="find-and-release-quarantined-messages-as-an-administrator"></a>Buscar y liberar mensajes en cuarentena como un administrador
 
@@ -192,7 +192,7 @@ Si hace clic en el icono **Actualizar**![Icono Actualizar](media/ITPro-EAC-Refre
   
 Si hace clic en el icono **Actualizar**![Icono Actualizar](media/ITPro-EAC-RefreshIcon.gif) para actualizar los datos y, a continuación, hace doble clic en el mensaje, verá que se ha liberado para los destinatarios previstos. 
   
-## <a name="for-more-information"></a>Para obtener más información
+## <a name="for-more-information"></a>Más información
 <a name="sectionSection4"> </a>
 
 [Preguntas más frecuentes sobre la cuarentena](quarantine-faq.md)

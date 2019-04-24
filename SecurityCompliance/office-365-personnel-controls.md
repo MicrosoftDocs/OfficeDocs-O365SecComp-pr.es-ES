@@ -3,23 +3,22 @@ title: Controles de personal de Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.date: 8/21/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: None
+localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 'Resumen: información general sobre los procedimientos de filtrado de personal de Microsoft para Office 365.'
-ms.openlocfilehash: e7b7659447217adc2a5b7c001df0994e82180b3b
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: b69c219ef6b405734035d74ce10195ea8cddf401
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216220"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262422"
 ---
 # <a name="office-365-personnel-controls"></a>Controles de personal de Office 365 
 
@@ -51,7 +50,7 @@ Para asegurarse de que solo el personal aprobado tiene acceso a los datos de los
 
 Dentro de los entornos de servicios en la nube de Microsoft, el acceso está restringido en función de la función de la persona y el tipo de datos implicados, tal como se describe en la tabla siguiente. El personal cualificado o no cualificado ubicado físicamente fuera de los Estados Unidos no puede tener acceso a los datos del cliente dentro de una nube de Estados Unidos. El acceso a los entornos de la nube nacional está restringido para que el personal de Microsoft no tenga acceso técnico a los datos de los clientes o sistemas que contienen datos de clientes, sin la aprobación del operador de terceros o del administrador de confianza de datos.
 
-| Rol | Acceso a los datos de clientes | Acceso a los datos del sistema |
+| Role | Acceso a los datos de clientes | Acceso a los datos del sistema |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------|---------------------------------|
 | Personal cualificado físicamente en los Estados Unidos | Permitido | Permitido |
 | Personal cualificado físicamente fuera de los Estados Unidos | No se permite | Permitido |
@@ -70,7 +69,8 @@ Cuando la legislación local lo permite, el Departamento de seguridad global de 
 - Confirmación de identidad de una identificación emitida por el gobierno
 - Comprobación de crédito cuando sea necesario
 
-Es posible que sea necesario realizar revisiones periódicas o comprobaciones de antecedentes adicionales para determinadas funciones de administración, seguridad u otros roles, incluidos pero no limitados a los empleados de Estados Unidos en las funciones que requieran acceso a los datos de los clientes. Para el personal contingente, el contrato con el tercero especifica los requisitos de filtrado de Microsoft que debe llevar a cabo un tercero. Para las comprobaciones de antecedentes, la compañía de terceros es responsable de suministrar a Microsoft la comprobación de que se ha realizado una comprobación de fondo. Los resultados de la comprobación de fondo se suelen recibir por correo electrónico del Departamento de recursos humanos de un tercero. Los empleados internacionales del personal de contratos pueden estar exentos del proceso de detección en segundo plano debido a las leyes en países que prohíben comprobaciones de antecedentes.
+Es posible que sea necesario realizar revisiones periódicas o comprobaciones de antecedentes adicionales para determinadas funciones de administración, seguridad u otros roles, incluidos pero no limitados a los empleados de Estados Unidos en las funciones que requieran acceso a los datos de los clientes.
+Para el personal contingente, el contrato con el tercero especifica los requisitos de filtrado de Microsoft que debe llevar a cabo un tercero. Para las comprobaciones de antecedentes, la compañía de terceros es responsable de suministrar a Microsoft la comprobación de que se ha realizado una comprobación de fondo. Los resultados de la comprobación de fondo se suelen recibir por correo electrónico del Departamento de recursos humanos de un tercero. Los empleados internacionales del personal de contratos pueden estar exentos del proceso de detección en segundo plano debido a las leyes en países que prohíben comprobaciones de antecedentes.
 
 ## <a name="microsoft-employment-screening"></a>Filtrado de empleo de Microsoft
 A partir de 2004, Microsoft ha requerido que los usuarios pasen una pantalla de registro penal de siete años para felonies y misdemeanors, y para comprobar su historial educativo y de empleo, como parte de la detección previa al empleo en Estados Unidos para empleados y en prácticas.

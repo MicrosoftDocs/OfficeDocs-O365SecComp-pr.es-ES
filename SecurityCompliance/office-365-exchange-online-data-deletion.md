@@ -14,11 +14,11 @@ ms.collection:
 - M365-security-compliance
 description: Cómo se administran las eliminaciones de datos flexibles y nítidas en Exchange Online.
 ms.openlocfilehash: 977beb41469e0015e22aea6750cfd657d9ee3b39
-ms.sourcegitcommit: 1261a37c414111f869df5791548a768d853fda60
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "31004197"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32262692"
 ---
 # <a name="exchange-online-data-deletion-in-office-365"></a>Eliminación de datos de Exchange online en Office 365
 En Exchange Online, hay dos tipos de eliminaciones: eliminaciones de software y eliminaciones de hardware. Esto se aplica tanto a los buzones de correo como a los elementos de un buzón.

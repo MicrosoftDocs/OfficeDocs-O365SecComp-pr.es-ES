@@ -13,11 +13,11 @@ search.appverid: MOE150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 description: Use la búsqueda de contenido en el centro de seguridad & cumplimiento para realizar colecciones de destino. Una colección de destino significa que tiene la certeza de que los elementos que responden a un caso o los elementos con privilegios están ubicados en un buzón o carpeta de sitio específicos. Use el script de este artículo para obtener el identificador de carpeta o la ruta de acceso de las carpetas de sitio o de buzón de correo específicas que desea buscar.
 ms.openlocfilehash: 3d9a82926a08b3f7f1f245146e70d79617e7a413
-ms.sourcegitcommit: 6c9340e4eb221bf81472ff3f1ae25ae21aaf5297
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31814001"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264032"
 ---
 # <a name="use-content-search-in-office-365-for-targeted-collections"></a>Usar la búsqueda de contenido en Office 365 para colecciones dirigidas
 
@@ -50,7 +50,7 @@ El script que se ejecuta en el primer paso devolverá una lista de carpetas de b
   
 - **Dirección de correo electrónico o dirección URL del sitio** Escriba una dirección de correo electrónico del custodio para obtener una lista de los identificadores de carpetas y carpetas de buzones de Exchange. O bien, escriba la dirección URL de un sitio de SharePoint o un sitio de OneDrive para la empresa para devolver una lista de rutas de la ubicación del sitio especificado. Aquí le mostramos otros ejemplos: 
     
-  - **Exchange** :stacig@contoso.onmicrosoft.com 
+  - **Exchange** -stacig@contoso.onmicrosoft.com 
     
   - **SharePoint** - https://contoso.sharepoint.com/sites/marketing 
     

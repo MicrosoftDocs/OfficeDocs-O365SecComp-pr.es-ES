@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: 60ffd80b-4376-419d-b6e4-a72029b9907c
 description: 'Obtenga información sobre cómo configurar roles de usuario, crear casos y asignar usuarios a los casos en Office 365 Advanced eDiscovery.  '
 ms.openlocfilehash: 5a22e0683e49ebdaf8391e092aeb101386e0636b
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999273"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260708"
 ---
 # <a name="set-up-users-and-cases-in-office-365-advanced-ediscovery"></a>Configurar usuarios y casos en la exhibición de documentos electrónicos avanzada de Office 365
 

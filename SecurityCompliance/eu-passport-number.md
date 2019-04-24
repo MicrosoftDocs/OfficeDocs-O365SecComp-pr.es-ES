@@ -11,11 +11,11 @@ ms.collection: M365-security-compliance
 localization_priority: Normal
 description: En este tema se muestra qué busca una directiva de prevención de pérdida de datos (DLP) cuando detecta el tipo de información confidencial de número de pasaporte de la UE. Este tipo de información confidencial define distintos patrones, palabras clave y otras pruebas para cada país.
 ms.openlocfilehash: 3ab92e87607f41cffa8c15f1179a4eef5369cb29
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410935"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256828"
 ---
 # <a name="eu-passport-number"></a>Número de pasaporte de la UE
 
@@ -23,7 +23,7 @@ En este tema se muestra qué busca una directiva de prevención de pérdida de d
   
 ## <a name="austria"></a>Austria
 
-### <a name="format"></a>Dé
+### <a name="format"></a>Formato
 
 Una letra seguida de un espacio opcional y siete dígitos
   
@@ -68,7 +68,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
    
 ## <a name="belgium"></a>Bélgica
 
-### <a name="format"></a>Dé
+### <a name="format"></a>Formato
 
 Dos letras seguidas de seis dígitos sin espacios ni delimitadores
   
@@ -107,7 +107,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
    
 ## <a name="bulgaria"></a>Bulgaria
 
-### <a name="format"></a>Dé
+### <a name="format"></a>Formato
 
 Nueve dígitos sin espacios y delimitadores
   
@@ -146,7 +146,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
    
 ## <a name="croatia"></a>Croacia
 
-### <a name="format"></a>Dé
+### <a name="format"></a>Formato
 
 Nueve dígitos sin espacios y delimitadores
   
@@ -185,7 +185,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
    
 ## <a name="cyprus"></a>Chipre
 
-### <a name="format"></a>Dé
+### <a name="format"></a>Formato
 
 Una letra seguida de 6-8 dígitos sin espacios ni delimitadores
   
@@ -224,7 +224,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
    
 ## <a name="czech-republic"></a>Chequia
 
-### <a name="format"></a>Dé
+### <a name="format"></a>Formato
 
 Ocho dígitos sin espacios ni delimitadores
   
@@ -263,7 +263,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
    
 ## <a name="denmark"></a>Dinamarca
 
-### <a name="format"></a>Dé
+### <a name="format"></a>Formato
 
 Nueve dígitos sin espacios y delimitadores
   
@@ -302,7 +302,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
    
 ## <a name="estonia"></a>Estonia
 
-### <a name="format"></a>Dé
+### <a name="format"></a>Formato
 
 Una letra seguida de siete dígitos sin espacios ni delimitadores
   
@@ -353,7 +353,7 @@ Para obtener más información, consulte la sección "número de pasaporte de Al
   
 ## <a name="greece"></a>Grecia
 
-### <a name="format"></a>Dé
+### <a name="format"></a>Formato
 
 Dos letras seguidas de siete dígitos sin espacios ni delimitadores
   
@@ -392,7 +392,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
    
 ## <a name="hungary"></a>Hungría
 
-### <a name="format"></a>Dé
+### <a name="format"></a>Formato
 
 Dos letras seguidas por seis u siete dígitos sin espacios ni delimitadores
   
@@ -431,7 +431,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
    
 ## <a name="ireland"></a>Irlanda
 
-### <a name="format"></a>Dé
+### <a name="format"></a>Formato
 
 Dos letras o dígitos seguidos de siete dígitos sin espacios ni delimitadores
   
@@ -474,7 +474,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
    
 ## <a name="italy"></a>Italia
 
-### <a name="format"></a>Dé
+### <a name="format"></a>Formato
 
 Dos letras o dígitos seguidos de siete dígitos sin espacios ni delimitadores
   
@@ -517,7 +517,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
    
 ## <a name="latvia"></a>Letonia
 
-### <a name="format"></a>Dé
+### <a name="format"></a>Formato
 
 Dos letras o dígitos seguidos de siete dígitos sin espacios ni delimitadores
   
@@ -560,7 +560,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
    
 ## <a name="lithuania"></a>Lituania
 
-### <a name="format"></a>Dé
+### <a name="format"></a>Formato
 
 Ocho dígitos o letras sin espacios ni delimitadores
   
@@ -599,7 +599,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
    
 ## <a name="luxemburg"></a>Luxemburgo
 
-### <a name="format"></a>Dé
+### <a name="format"></a>Formato
 
 Ocho dígitos o letras sin espacios ni delimitadores
   
@@ -638,7 +638,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
    
 ## <a name="malta"></a>Malta
 
-### <a name="format"></a>Dé
+### <a name="format"></a>Formato
 
 Siete dígitos sin espacios ni delimitadores
   
@@ -677,7 +677,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
    
 ## <a name="netherlands"></a>Países Bajos
 
-### <a name="format"></a>Dé
+### <a name="format"></a>Formato
 
 Nueve letras o dígitos sin espacios ni delimitadores
   
@@ -720,7 +720,7 @@ Para obtener más información, consulte la sección "número de pasaporte de Po
   
 ## <a name="portugal"></a>Portugal
 
-### <a name="format"></a>Dé
+### <a name="format"></a>Formato
 
 Una letra seguida de seis dígitos sin espacios ni delimitadores
   
@@ -763,7 +763,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
    
 ## <a name="romania"></a>Rumania
 
-### <a name="format"></a>Dé
+### <a name="format"></a>Formato
 
 Ocho o nueve dígitos sin espacios y delimitadores
   
@@ -802,7 +802,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
    
 ## <a name="slovakia"></a>Eslovaquia
 
-### <a name="format"></a>Dé
+### <a name="format"></a>Formato
 
 Un dígito o letra seguido de siete dígitos sin espacios ni delimitadores
   
@@ -841,7 +841,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
    
 ## <a name="slovenia"></a>Eslovenia
 
-### <a name="format"></a>Dé
+### <a name="format"></a>Formato
 
 Dos letras seguidas de siete dígitos sin espacios ni delimitadores
   
@@ -886,7 +886,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
    
 ## <a name="spain"></a>España
 
-### <a name="format"></a>Dé
+### <a name="format"></a>Formato
 
 Una combinación de letras y números de ocho o nueve caracteres sin espacios ni delimitadores
   

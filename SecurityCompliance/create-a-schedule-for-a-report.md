@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo configurar una programación para un informe en el centro &amp; de seguridad y cumplimiento.
 ms.openlocfilehash: 2c385dad023febef4ad8b36b8f92f66cbb5b082e
-ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30357391"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258728"
 ---
 # <a name="create-a-schedule-for-a-report-in-the-security-amp-compliance-center"></a>Crear una programación para un informe en el centro &amp; de seguridad y cumplimiento
 

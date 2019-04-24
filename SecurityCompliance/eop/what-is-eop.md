@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: 393b0050-7c7e-49e6-a03d-b1e09fe4de9e
 description: Este documento introductorio le ayudará a comprender Exchange Online Protection (EOP) y una terminología importante. Esto es aplicable a los clientes de Office 365 que protegen buzones de correo hospedados en la nube de Exchange Online y a clientes independientes de EOP que protegen buzones locales como Exchange Server 2016.
 ms.openlocfilehash: f23f28b5c15c7057d1fd8ec77cce67bf1746410c
-ms.sourcegitcommit: fb50bf2f2c9d780c911f245a2f78c6bb5e357f67
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "30950437"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256478"
 ---
 ## <a name="what-is-exchange-online-protection-eop"></a>¿Qué es Exchange Online Protection (EOP)?
 

@@ -12,21 +12,21 @@ search.appverid:
 - SPO160
 - MOE150
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
-description: Obtenga información sobre cómo automatizar las tareas de búsqueda de contenido como la creación de búsquedas y la ejecución de informes &amp; mediante scripts de PowerShell en el centro de seguridad y cumplimiento de Office 365.
-ms.openlocfilehash: 740f3384e5d4f26e09512cc846ad8779bcbc31ef
-ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
+description: Aprenda a automatizar las tareas de búsqueda de contenido como la creación de búsquedas y la ejecución de informes a través de scripts de PowerShell en el centro de seguridad & cumplimiento en Office 365.
+ms.openlocfilehash: 96d10e274cd83a4785170239302d55e74d40ca84
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30670665"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258458"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>Crear, informar sobre y eliminar varias búsquedas de contenido
 
- La creación e informes rápidos de búsquedas de detección suelen ser un paso importante en la exhibición de documentos electrónicos y las investigaciones cuando está intentando obtener información sobre los datos subyacentes y la riqueza y calidad de las búsquedas. Para ayudarle, el centro de seguridad &amp; y cumplimiento ofrece un conjunto de cmdlets de Windows PowerShell para automatizar las tareas de búsqueda de contenido que llevan mucho tiempo. Estos scripts proporcionan una forma rápida y sencilla de crear un número de búsquedas y, a continuación, ejecutan informes de los resultados de búsqueda estimados que pueden ayudarle a determinar la cantidad de datos en cuestión. También puede usar los scripts para crear diferentes versiones de las búsquedas para comparar los resultados que produce cada uno. Estos scripts pueden ayudarle a identificar y deseleccionar sus datos de forma rápida y eficaz. 
+ La creación e informes rápidos de búsquedas de detección suelen ser un paso importante en la exhibición de documentos electrónicos y las investigaciones cuando está intentando obtener información sobre los datos subyacentes y la riqueza y calidad de las búsquedas. Para ayudarle, el centro de seguridad & cumplimiento de PowerShell ofrece un conjunto de cmdlets para automatizar las tareas de búsqueda de contenido que llevan mucho tiempo. Estos scripts proporcionan una forma rápida y sencilla de crear un número de búsquedas y, a continuación, ejecutan informes de los resultados de búsqueda estimados que pueden ayudarle a determinar la cantidad de datos en cuestión. También puede usar los scripts para crear diferentes versiones de las búsquedas para comparar los resultados que produce cada uno. Estos scripts pueden ayudarle a identificar y deseleccionar sus datos de forma rápida y eficaz. 
   
 ## <a name="before-you-begin"></a>Antes de empezar
 
-- Debe ser miembro del grupo de roles eDiscovery Manager en el centro de seguridad &amp; y cumplimiento para ejecutar los scripts que se describen en este tema. 
+- Debe ser miembro del grupo de roles eDiscovery Manager en el centro de seguridad & cumplimiento para ejecutar los scripts que se describen en este tema. 
     
 - Para recopilar una lista de las direcciones URL de los sitios de OneDrive para la empresa de su organización que puede Agregar al archivo CSV en el paso 1, vea [crear una lista de todas las ubicaciones de OneDrive en la organización](https://support.office.com/article/Create-a-list-of-all-OneDrive-locations-in-your-organization-8e200cb2-c768-49cb-88ec-53493e8ad80a). 
     
@@ -68,7 +68,7 @@ El archivo de valores separados por comas (CSV) que se crea en este paso contien
   
 ## <a name="step-2-connect-to-security--compliance-center-powershell"></a>Paso 2: conectarse al centro de seguridad & de cumplimiento de PowerShell
 
-El siguiente paso es conectar Windows PowerShell al centro de seguridad &amp; y cumplimiento de la organización.
+El siguiente paso es conectar con el PowerShell del centro de cumplimiento de & de seguridad de su organización.
   
 1. Guarde el siguiente texto en un archivo de script de Windows PowerShell mediante un sufijo de nombre de archivo de. ps1; por ejemplo, `ConnectSCC.ps1`. Guarde el archivo en la misma carpeta en la que guardó el archivo CSV en el paso 1.
     
@@ -77,7 +77,7 @@ El siguiente paso es conectar Windows PowerShell al centro de seguridad &amp; y 
     $UserCredential = Get-Credential 
     $Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Credential $UserCredential -Authentication Basic -AllowRedirection 
     Import-PSSession $Session -AllowClobber -DisableNameChecking 
-    $Host.UI.RawUI.WindowTitle = $UserCredential.UserName + " (Office 365 Security &amp; Compliance Center)" 
+    $Host.UI.RawUI.WindowTitle = $UserCredential.UserName + " (Security & Compliance Center)" 
     ```
 
 2. En el equipo local, abra Windows PowerShell, vaya a la carpeta en la que se encuentra el script creado en el paso anterior y, a continuación, ejecute el script. por ejemplo:

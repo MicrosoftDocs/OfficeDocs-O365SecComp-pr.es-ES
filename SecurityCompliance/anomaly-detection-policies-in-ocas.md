@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: 88935b4e-dcb1-47f1-8aca-1bf8fb069db6
 description: 'Las directivas de detección de anomalías de Office 365 Cloud App Security usan algoritmos integrados para ayudar a detectar posibles problemas. Debe tener al menos una directiva de detección de anomalías, que puede ajustar (cuando la crea) mediante filtros. '
 ms.openlocfilehash: 5308af139a46dad0793ed7eedacab0aee62dcc6c
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30220680"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32242883"
 ---
 # <a name="anomaly-detection-policies-in-office-365-cloud-app-security"></a>Directivas de detección de anomalías en Office 365 Cloud App Security
 

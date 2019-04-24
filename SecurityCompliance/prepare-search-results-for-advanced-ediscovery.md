@@ -14,17 +14,17 @@ ms.collection:
 - M365-security-compliance
 search.appverid: MOE150
 ms.assetid: 0b6fac2d-8627-4b05-9df0-03609db6248b
-description: Obtenga información sobre cómo preparar los resultados de una búsqueda de contenido en el centro &amp; de seguridad y cumplimiento de Office 365 para un análisis más avanzado con la herramienta Advanced eDiscovery.
-ms.openlocfilehash: de96e06dcbb5ae9a3cbf80b66f976e6ffdfd5b0e
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+description: Obtenga información sobre cómo preparar los resultados de una búsqueda de contenido en el centro de seguridad & cumplimiento en Office 365 para un análisis más avanzado con la herramienta de exhibición de documentos electrónicos avanzada.
+ms.openlocfilehash: 772ef8e24613a0fb872f0c397d7ea80bdad16e4b
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30296923"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261982"
 ---
 # <a name="prepare-search-results-for-office-365-advanced-ediscovery"></a>Preparar los resultados de búsqueda para la exhibición avanzada de documentos electrónicos de Office 365
 
-Una vez que se ejecuta correctamente una búsqueda asociada a un caso de exhibición de &amp; documentos electrónicos en el centro de seguridad y cumplimiento de Office 365, puede preparar los resultados de la búsqueda para un análisis más avanzado con Office 365 Advanced eDiscovery, que le permite analizar grandes conjuntos de datos no estructurados y reducir la cantidad de datos que son relevantes para un caso legal. Las características avanzadas de eDiscovery incluyen:
+Una vez que se ha ejecutado correctamente una búsqueda asociada a un caso de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento, puede preparar los resultados de la búsqueda para un análisis más avanzado con Office 365 Advanced eDiscovery, que le permitirá analizar conjuntos de datos grandes y sin estructurar. y reducir la cantidad de datos que son relevantes para un caso legal. Las características avanzadas de eDiscovery incluyen:
   
 - **Reconocimiento óptico de caracteres** : al preparar los resultados de la búsqueda para la exhibición avanzada de documentos electrónicos, la funcionalidad de reconocimiento óptico de caracteres (OCR) extrae automáticamente el texto de las imágenes e incluye esto con los resultados de la búsqueda que se cargan en EDiscovery avanzado para el análisis. OCR es compatible con archivos sueltos, datos adjuntos de correo electrónico e imágenes incrustadas. Esto le permite aplicar las capacidades de análisis de texto de eDiscovery avanzado (casi duplicados, subprocesamiento de correo electrónico, temas y codificación de predicción) al contenido de texto de los archivos de imagen. EDiscovery avanzado el OCR admite los siguientes formatos para los archivos de imagen:
 
@@ -36,9 +36,9 @@ Una vez que se ejecuta correctamente una búsqueda asociada a un caso de exhibic
     
 - **Detección de casi duplicados** : le permite estructurar la revisión de los datos de forma más eficaz, por lo que una persona revisa un grupo de documentos similares. Esto ayuda a evitar que varios revisores tengan que ver diferentes versiones del mismo documento. 
     
-- **Subprocesamiento de correo electrónico** : le ayuda a identificar los mensajes únicos en un subproceso de correo electrónico para que pueda centrarse solo en la nueva información de cada mensaje. En una cadena de correo electrónico, el segundo mensaje contiene el primer mensaje. Del mismo modo, los mensajes posteriores contienen todos los mensajes anteriores. El subprocesamiento de correo electrónico elimina la necesidad de revisar todos los mensajes en un hilo de correo electrónico. 
+- **Subprocesamiento de correo electrónico** : le ayuda a identificar los mensajes únicos en un subproceso de correo electrónico para que pueda centrarse solo en la nueva información de cada mensaje. En un subproceso de correo electrónico, el segundo mensaje contiene el primer mensaje. Del mismo modo, los mensajes posteriores contienen todos los mensajes anteriores. El subprocesamiento de correo electrónico elimina la necesidad de revisar todos los mensajes en un hilo de correo electrónico. 
     
-- **Temas** : Ayude a obtener información valiosa sobre sus datos más allá de las estadísticas de búsqueda de palabras clave. Los temas ayudan a las investigaciones mediante la agrupación de documentos relacionados para que pueda ver los documentos en contexto. Al usar los temas, puede ver los temas relacionados de un conjunto de documentos, determinar cualquier solapamiento y, a continuación, identificar las secciones cruzadas de los datos relacionados. 
+- **Temas** : Ayude a obtener información valiosa sobre sus datos más allá de las estadísticas de búsqueda de palabras clave. Los temas ayudan a las investigaciones agrupando documentos relacionados de forma que pueda ver los documentos en contexto. Al usar los temas, puede ver los temas relacionados de un conjunto de documentos, determinar cualquier solapamiento y, a continuación, identificar las secciones cruzadas de los datos relacionados. 
     
 - **Codificación predictiva** : le permite entrenar al sistema sobre lo que está buscando, permitiéndole tomar decisiones (sobre si algo es relevante o no) en un pequeño conjunto de documentos. EDiscovery avanzado aplicará ese aprendizaje (en función de las instrucciones) al analizar todos los documentos del conjunto de datos. Basándose en ese aprendizaje, la exhibición avanzada de documentos electrónicos proporciona una clasificación de relevancia para que pueda decidir qué documentos se deben revisar en función del documento que sea más probable que sea relevante para el caso. 
     
@@ -48,13 +48,13 @@ Una vez que se ejecuta correctamente una búsqueda asociada a un caso de exhibic
 
 - Para analizar los datos de un usuario con la exhibición avanzada de documentos electrónicos, el usuario (el custodio de los datos) debe tener asignada una licencia de Office 365 E5. Como alternativa, se puede asignar una licencia independiente de eDiscovery avanzado a los usuarios con una licencia de Office 365 E1 o E3. Los administradores y los responsables de cumplimiento que se asignan a los casos y usan la exhibición avanzada de documentos electrónicos para analizar los datos no necesitan una licencia E5. 
     
-- Debe ser administrador de exhibición de documentos electrónicos o administrador de exhibición de documentos electrónicos en &amp; el centro de seguridad y cumplimiento de Office 365 para preparar los resultados de búsqueda para la exhibición avanzada de documentos electrónicos. Un administrador de exhibición de documentos electrónicos es miembro del grupo de roles eDiscovery Manager. Un administrador de eDiscovery también es miembro del grupo de roles eDiscovery Manager, pero se le han asignado privilegios de exhibición de documentos electrónicos adicionales. Para obtener instrucciones sobre cómo asignar permisos de administrador de eDiscovery, vea el paso 1 de [los casos de eDiscovery en el centro de seguridad _AMP_ cumplimiento de Office 365](ediscovery-cases.md#step-1-assign-ediscovery-permissions-to-potential-case-members).
+- Debe ser administrador de exhibición de documentos electrónicos o administrador de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento para preparar los resultados de búsqueda para la exhibición avanzada de documentos electrónicos. Un administrador de exhibición de documentos electrónicos es un miembro del grupo de roles de administrador de exhibición de documentos electrónicos. Un administrador de exhibición de documentos electrónicos también es miembro del grupo de roles de administrador de exhibición de documentos electrónicos, pero se le han asignado privilegios de exhibición de documentos electrónicos adicionales. Para obtener instrucciones sobre cómo asignar permisos de administrador de eDiscovery, vea el paso 1 en [casos de eDiscovery](ediscovery-cases.md#step-1-assign-ediscovery-permissions-to-potential-case-members).
     
 ## <a name="step-1-prepare-search-results-for-advanced-ediscovery"></a>Paso 1: preparar los resultados de búsqueda para la exhibición avanzada de documentos electrónicos
 
 Puede preparar los resultados de una búsqueda asociada a un caso de exhibición de documentos electrónicos. Al preparar los resultados de búsqueda para la exhibición avanzada de documentos electrónicos, los datos se cargan y se almacenan temporalmente en un área de almacenamiento única de Windows Azure en la nube de Microsoft. En este punto, la funcionalidad OCR extrae el texto de las imágenes de los resultados de búsqueda. En el [paso 2](#step-2-add-the-search-results-data-to-the-case-in-advanced-ediscovery), este texto y los demás datos de los resultados de la búsqueda se cargan en el caso de la exhibición avanzada de documentos electrónicos.
   
-1. En el Centro de seguridad y cumplimiento, haga clic en **Búsqueda e investigación** \> **eDiscovery** para mostrar la lista de casos en su organización. 
+1. En el centro de seguridad & cumplimiento, **** \> haga clic en eDiscovery **eDiscovery** para mostrar la lista de casos de su organización. 
     
 2. Haga clic en **abrir** junto al caso en el que desea preparar los resultados de búsqueda para el análisis en la exhibición avanzada de documentos electrónicos. 
     
@@ -69,7 +69,7 @@ Puede preparar los resultados de una búsqueda asociada a un caso de exhibición
     
     - Elija si desea preparar elementos indexados, elementos indexados y sin indexar o solo elementos sin indexar para el análisis en la exhibición avanzada de documentos electrónicos.
     
-    - Elija si desea incluir todas las versiones de los documentos que se encuentran en SharePoint que cumplen los criterios de búsqueda. Esta opción solo aparece si los orígenes de contenido de la búsqueda incluyen sitios.
+    - Elija si desea incluir todas las versiones de los documentos que se encuentran en SharePoint que cumplen los criterios de búsqueda. Esta opción solo aparece si los orígenes de contenido para la búsqueda incluyen sitios.
     
     - Especifique si desea que un mensaje de notificación se envíe (o se copie) a un usuario cuando se complete el proceso de preparación y los datos estén listos para ser procesados en eDiscovery avanzado.
     
@@ -82,12 +82,12 @@ Puede preparar los resultados de una búsqueda asociada a un caso de exhibición
 ## <a name="step-2-add-the-search-results-data-to-the-case-in-advanced-ediscovery"></a>Paso 2: agregar los datos de los resultados de la búsqueda al caso en eDiscovery avanzado
 <a name="step2"> </a>
 
-Una vez finalizada la preparación, el siguiente paso es ir a la exhibición avanzada de documentos electrónicos y cargar los datos de los resultados de la búsqueda (que se han cargado en un área de almacenamiento de Azure en la nube de Microsoft) en el caso de la exhibición avanzada de documentos electrónicos. Como se ha explicado anteriormente, para tener acceso a eDiscovery avanzado, debe ser administrador de &amp; eDiscovery en el centro de seguridad y cumplimiento o un administrador en eDiscovery avanzado.
+Una vez finalizada la preparación, el siguiente paso es ir a la exhibición avanzada de documentos electrónicos y cargar los datos de los resultados de la búsqueda (que se han cargado en un área de almacenamiento de Azure en la nube de Microsoft) en el caso de la exhibición avanzada de documentos electrónicos. Como se ha explicado anteriormente, para tener acceso a eDiscovery avanzado, debe ser administrador de eDiscovery en el centro de seguridad & cumplimiento o un administrador en eDiscovery avanzado.
   
 > [!NOTE]
-> El tiempo que tardan los datos del centro de &amp; cumplimiento de seguridad en estar disponible para agregar a un caso en eDiscovery avanzado varía en función del tamaño de los resultados de la búsqueda de exhibición de documentos electrónicos. 
+> El tiempo que tardan los datos del centro de seguridad & cumplimiento disponible para agregar a un caso en eDiscovery avanzado varía en función del tamaño de los resultados de la búsqueda de exhibición de documentos electrónicos. 
   
-1. En el Centro de seguridad y cumplimiento, haga clic en **Búsqueda e investigación** \> **eDiscovery** para mostrar la lista de casos en su organización. 
+1. En el centro de seguridad & cumplimiento, **** \> haga clic en eDiscovery **eDiscovery** para mostrar la lista de casos de su organización. 
     
 2. Haga clic en **abrir** junto al caso en el que desea cargar datos en la exhibición avanzada de documentos electrónicos. 
     
@@ -99,7 +99,7 @@ Una vez finalizada la preparación, el siguiente paso es ir a la exhibición ava
     
     ![El caso se muestra en la exhibición avanzada de documentos electrónicos](media/8036e152-70dc-4bb7-9379-61c1ed8326b4.png)
   
-     Estos contenedores representan los resultados de búsqueda que ha preparado para el análisis en la exhibición avanzada de documentos electrónicos en el paso 1. Tenga en cuenta que el nombre del contenedor tiene el mismo nombre que la búsqueda en el caso del centro &amp; de seguridad y cumplimiento. Los contenedores de la lista son los que ha preparado. Si un usuario diferente ha preparado los resultados de búsqueda para la exhibición avanzada de documentos electrónicos, los contenedores correspondientes no se incluirán en la lista. 
+     Estos contenedores representan los resultados de búsqueda que ha preparado para el análisis en la exhibición avanzada de documentos electrónicos en el paso 1. Tenga en cuenta que el nombre del contenedor tiene el mismo nombre que la búsqueda en el caso del centro de seguridad & cumplimiento. Los contenedores de la lista son los que ha preparado. Si un usuario diferente ha preparado los resultados de búsqueda para la exhibición avanzada de documentos electrónicos, los contenedores correspondientes no se incluirán en la lista. 
     
 4. Para cargar los datos de resultados de búsqueda de un contenedor en el caso de eDiscovery avanzado, seleccione un contenedor y, a continuación, haga clic en **procesar**.
     

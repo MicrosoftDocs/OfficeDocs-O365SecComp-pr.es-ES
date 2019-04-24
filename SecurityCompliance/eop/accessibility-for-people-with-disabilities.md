@@ -12,11 +12,11 @@ ms.collection: Ent_O365_Hybrid
 ms.assetid: a7203ebd-ffac-4a8d-a2d0-6c8a61c8eeb8
 description: Microsoft mantiene el compromiso de hacer más fácil para todos el uso de sus productos y servicios.
 ms.openlocfilehash: 271383361ee99f6959e81a1f38dea4b200c54fb5
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693109"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32257048"
 ---
 # <a name="accessibility-for-people-with-disabilities"></a>Accesibilidad para personas con discapacidad
 
@@ -73,7 +73,7 @@ Si es sordo o tiene una capacidad auditiva limitada, puede obtener acceso comple
     
 Los servicios de soporte técnico de Microsoft están sujetos a los precios, términos y condiciones del sitio y el momento en que se usen dichos servicios. Para obtener más información, consulte [Soporte técnico de Microsoft](https://go.microsoft.com/fwlink/p/?linkId=18142).
   
-## <a name="for-more-information"></a>Para obtener más información
+## <a name="for-more-information"></a>Más información
 
 Para obtener más información acerca de cómo la tecnología accesible para equipos informáticos puede ayudar a personas con discapacidades, consulte [Accesibilidad de Microsoft](http://go.microsoft.com/fwlink/p/?linkId=18139). 
   

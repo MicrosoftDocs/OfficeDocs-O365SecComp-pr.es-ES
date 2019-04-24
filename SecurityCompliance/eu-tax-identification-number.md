@@ -11,11 +11,11 @@ ms.collection: M365-security-compliance
 localization_priority: Normal
 description: En este tema se muestra qué busca una directiva de prevención de pérdida de datos (DLP) cuando detecta el tipo de información confidencial de número de identificación de impuestos de la UE. Este tipo de información confidencial define distintos patrones, palabras clave y otras pruebas para cada país.
 ms.openlocfilehash: 4914ff078695519c2a298190d82c86a6abebceb9
-ms.sourcegitcommit: ed822a776d3419853453583e882f3c61ca26d4b2
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "30410915"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32255528"
 ---
 # <a name="eu-tax-identification-number"></a>Número de identificación fiscal de la UE
 
@@ -23,7 +23,7 @@ En este tema se muestra qué busca una directiva de prevención de pérdida de d
   
 ## <a name="austria"></a>Austria
 
-### <a name="format"></a>Dé
+### <a name="format"></a>Formato
 
 Nueve dígitos con guión opcional y barra diagonal
   
@@ -88,7 +88,7 @@ steuernummer
   
 ## <a name="belgium"></a>Bélgica
 
-### <a name="format"></a>Dé
+### <a name="format"></a>Formato
 
 11 dígitos sin espacios y delimitadores
   
@@ -150,7 +150,7 @@ numéro d'identification fiscal
   
 ## <a name="bulgaria"></a>Bulgaria
 
-### <a name="format"></a>Dé
+### <a name="format"></a>Formato
 
 Diez dígitos sin espacios y delimitadores
   
@@ -221,7 +221,7 @@ identificador униформ
   
 ## <a name="croatia"></a>Croacia
 
-### <a name="format"></a>Dé
+### <a name="format"></a>Formato
 
 11 dígitos sin espacios ni delimitadores
   
@@ -280,7 +280,7 @@ porezni broj
   
 ## <a name="cyprus"></a>Chipre
 
-### <a name="format"></a>Dé
+### <a name="format"></a>Formato
 
 Ocho dígitos y una letra en el patrón especificado
   
@@ -347,7 +347,7 @@ verticales
   
 ## <a name="czech-republic"></a>Chequia
 
-### <a name="format"></a>Dé
+### <a name="format"></a>Formato
 
 Nueve o diez dígitos con una barra diagonal inversa opcional
   
@@ -401,7 +401,7 @@ Osobní číslo
   
 ## <a name="denmark"></a>Dinamarca
 
-### <a name="format"></a>Dé
+### <a name="format"></a>Formato
 
 Diez dígitos que contienen un guión
   
@@ -464,7 +464,7 @@ identificador de patinaje
   
 ## <a name="estonia"></a>Estonia
 
-### <a name="format"></a>Dé
+### <a name="format"></a>Formato
 
 11 dígitos sin espacios ni delimitadores
   
@@ -529,7 +529,7 @@ isikukood
   
 ## <a name="finland"></a>Finlandia
 
-### <a name="format"></a>Dé
+### <a name="format"></a>Formato
 
 Una combinación de 11 caracteres de dígitos, letras y más y un signo menos
   
@@ -620,7 +620,7 @@ Kansallinen Tunnus numero
   
 ## <a name="france"></a>Francia
 
-### <a name="format"></a>Dé
+### <a name="format"></a>Formato
 
 13 dígitos para personas y nueve dígitos para entidades
   
@@ -677,7 +677,7 @@ numéro d'identification fiscal
   
 ## <a name="germany"></a>Alemania
 
-### <a name="format"></a>Dé
+### <a name="format"></a>Formato
 
 11 dígitos sin espacios y delimitadores
   
@@ -748,7 +748,7 @@ steueridentifikationsnummer
   
 ## <a name="greece"></a>Grecia
 
-### <a name="format"></a>Dé
+### <a name="format"></a>Formato
 
 Nueve dígitos sin espacios y delimitadores
   
@@ -816,7 +816,7 @@ aφμ αριθμός
   
 ## <a name="hungary"></a>Hungría
 
-### <a name="format"></a>Dé
+### <a name="format"></a>Formato
 
 Diez dígitos sin espacios ni delimitadores
   
@@ -895,7 +895,7 @@ adóhatóság szám
   
 ## <a name="ireland"></a>Irlanda
 
-### <a name="format"></a>Dé
+### <a name="format"></a>Formato
 
 Siete dígitos seguidos de una letra sin espacios ni delimitadores
   
@@ -966,7 +966,7 @@ uimhir aitheantais phearsanta
   
 ## <a name="italy"></a>Italia
 
-### <a name="format"></a>Dé
+### <a name="format"></a>Formato
 
 16 letras y dígitos en el patrón especificado
   
@@ -1041,7 +1041,7 @@ Codice fiscal
   
 ## <a name="latvia"></a>Letonia
 
-### <a name="format"></a>Dé
+### <a name="format"></a>Formato
 
 11 dígitos sin espacios ni delimitadores
   
@@ -1114,7 +1114,7 @@ nodokļu identifikācija numurs
   
 ## <a name="lithuania"></a>Lituania
 
-### <a name="format"></a>Dé
+### <a name="format"></a>Formato
 
 11 dígitos sin espacios ni delimitadores
   
@@ -1181,7 +1181,7 @@ mokesčių identifikavimas número
   
 ## <a name="luxemburg"></a>Luxemburgo
 
-### <a name="format"></a>Dé
+### <a name="format"></a>Formato
 
 13 dígitos sin espacios ni delimitadores
   
@@ -1252,7 +1252,7 @@ steueridentifikationsnummer
   
 ## <a name="malta"></a>Malta
 
-### <a name="format"></a>Dé
+### <a name="format"></a>Formato
 
 Para los nacionales de Maltés: 7 dígitos y una letra en el patrón especificado
   
@@ -1329,7 +1329,7 @@ numru ta ' identifikazzjoni TAT-taxxa
   
 ## <a name="netherlands"></a>Países Bajos
 
-### <a name="format"></a>Dé
+### <a name="format"></a>Formato
 
 Nueve dígitos sin espacios ni delimitadores
   
@@ -1420,7 +1420,7 @@ Nederlandse de la última identificatie
   
 ## <a name="poland"></a>Polonia
 
-### <a name="format"></a>Dé
+### <a name="format"></a>Formato
 
 Once dígitos sin espacios ni delimitadores
   
@@ -1505,7 +1505,7 @@ numeridentyfikacjipodatkowej #
   
 ## <a name="portugal"></a>Portugal
 
-### <a name="format"></a>Dé
+### <a name="format"></a>Formato
 
 Nueve dígitos sin espacios ni delimitadores
   
@@ -1566,7 +1566,7 @@ número de identificação fiscal
   
 ## <a name="romania"></a>Rumania
 
-### <a name="format"></a>Dé
+### <a name="format"></a>Formato
 
 13 dígitos sin espacios ni delimitadores
   
@@ -1622,7 +1622,7 @@ numărul de identificare fiscală
   
 ## <a name="slovakia"></a>Eslovaquia
 
-### <a name="format"></a>Dé
+### <a name="format"></a>Formato
 
 10 dígitos sin espacios ni delimitadores
   
@@ -1688,7 +1688,7 @@ daňové číslo súboru
   
 ## <a name="slovenia"></a>Eslovenia
 
-### <a name="format"></a>Dé
+### <a name="format"></a>Formato
 
 Ocho dígitos sin espacios ni delimitadores
   
@@ -1761,7 +1761,7 @@ davčna številka
   
 ## <a name="spain"></a>España
 
-### <a name="format"></a>Dé
+### <a name="format"></a>Formato
 
 Siete u ocho dígitos y una o dos letras en el patrón especificado
   
@@ -1884,7 +1884,7 @@ cifnúmero #
   
 ## <a name="sweden"></a>Suecia
 
-### <a name="format"></a>Dé
+### <a name="format"></a>Formato
 
 Diez dígitos y un símbolo en el patrón especificado
   
@@ -1967,7 +1967,7 @@ personnummer
   
 ## <a name="uk"></a>LIBRA
 
-### <a name="format"></a>Dé
+### <a name="format"></a>Formato
 
 Referencia fiscal única (UTR): 10 dígitos sin espacios y delimitadores
   

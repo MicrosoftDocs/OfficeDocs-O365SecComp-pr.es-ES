@@ -13,11 +13,11 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.openlocfilehash: 0a0bcbde7daa79aabda30013fca2560384545feb
-ms.sourcegitcommit: 8213c353954b92f5c3979bee4aa049da0fd28a18
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "31043221"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32263132"
 ---
 # <a name="monitor-and-report-security-status-in-microsoft-365-security-center"></a>Supervisión y notificación del estado de seguridad en el centro de seguridad 365 de Microsoft
 

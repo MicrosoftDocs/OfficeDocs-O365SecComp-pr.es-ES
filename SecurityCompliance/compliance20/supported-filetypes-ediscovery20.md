@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: 7955debee750019d60b8016d736ba50f1ff70bce
-ms.sourcegitcommit: cf9d9b545a7c153d314aa9c08c7fb16fcd785b3e
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "30737710"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32240895"
 ---
 # <a name="supported-file-types-in-advanced-ediscovery-preview"></a>Tipos de archivo admitidos en eDiscovery avanzado (versión preliminar)
 

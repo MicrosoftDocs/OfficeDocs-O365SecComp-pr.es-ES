@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: fe6ab3a1e1108e9ab2e4fc201357b72a77453d38
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295723"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32240955"
 ---
 # <a name="manage-holds-in-advanced-ediscovery-preview"></a>Administrar suspensiones en la exhibición avanzada de documentos electrónicos (versión preliminar)
 
@@ -56,7 +56,7 @@ Para crear una suspensión para un caso de exhibición avanzada de documentos el
   
 4. En la **** pestaña suspensiones, haga clic en **crear**.
   
-5. En la página nombre de la **retención** , asigne un nombre a la retención. El nombre de la retención debe ser único en la organización.
+5. En la página nombre de la **retención** , asigne un nombre a la retención. El nombre de la suspensión debe ser exclusivo en la organización.
  
 6. Opcional En el cuadro **Descripción** , agregue una descripción de la suspensión.
   
@@ -64,19 +64,19 @@ Para crear una suspensión para un caso de exhibición avanzada de documentos el
   
 8. Elija las ubicaciones de contenido que desea poner en retención. Puede poner buzones de correo, sitios y carpetas públicas en retención.
 
-   a. **Exchange email** : haga clic en **elegir usuarios, grupos o equipos** y, a continuación, haga clic en **elegir usuarios, grupos o Teams** de nuevo para especificar los buzones que se deben poner en retención. Use el cuadro de búsqueda para buscar los buzones de usuario y los grupos de distribución (para poner una retención en los buzones de los miembros del grupo) para ponerlos en retención. También puede poner una retención en el buzón asociado para un grupo de Office 365 o un equipo de Microsoft. Active la casilla de verificación usuario, grupo, equipo, haga clic en **elegir**y, a continuación, haga clic en **listo**.
+   a. **Correo electrónico de Exchange** : haga clic en **elegir usuarios, grupos o equipos** y, a continuación, haga clic en **elegir usuarios, grupos o Teams** de nuevo para especificar los buzones que se deben poner en retención. Use el cuadro de búsqueda para buscar los buzones de usuario y los grupos de distribución (para poner una retención en los buzones de los miembros del grupo) para ponerlos en retención. También puede poner una retención en el buzón asociado para un grupo de Office 365 o un equipo de Microsoft. Active la casilla de verificación usuario, grupo, equipo, haga clic en **elegir**y, a continuación, haga clic en **listo**.
  
     > [!NOTE]
-    > Al hacer clic en **elegir usuarios, grupos o equipos** para especificar los buzones que se deben poner en espera, el selector de buzón mostrado está vacío. Esto se debe a su diseño para mejorar el rendimiento. Para agregar personas a esta lista, escriba un nombre (un mínimo de 3 caracteres) en el cuadro de búsqueda.
+    > Al hacer clic en **elegir usuarios, grupos o equipos** para especificar los buzones que se deben poner en espera, el selector de buzón mostrado está vacío. Esto se ha diseñado así para mejorar el rendimiento. Para agregar personas a esta lista, escriba un nombre (un mínimo de 3 caracteres) en el cuadro de búsqueda.
 
-    b. **sitios de SharePoint** : haga clic en **elegir sitios** y, a continuación, haga clic en **elegir sitios** de nuevo para especificar que los sitios de SharePoint y OneDrive para la empresa se retienen en suspensión. Escriba la dirección URL de cada sitio que quiera poner en retención. También puede Agregar la dirección URL del sitio de SharePoint para un grupo de Office 365 o un equipo de Microsoft. Haga clic en **elegir**y, a continuación, en **listo**.
+    b. **Sitios de SharePoint** : haga clic en **elegir sitios** y, a continuación, haga clic en **elegir sitios** de nuevo para especificar que los sitios de SharePoint y OneDrive para la empresa se retienen en suspensión. Escriba la dirección URL de cada sitio que quiere suspender. También puede Agregar la dirección URL del sitio de SharePoint para un grupo de Office 365 o un equipo de Microsoft. Haga clic en **elegir**y, a continuación, en **listo**.
     
      Consulte la sección **preguntas más frecuentes** para obtener sugerencias sobre cómo poner en espera grupos de Office 365 y Microsoft Teams.
 
     > [!NOTE]
     > En el caso poco probable de que haya cambiado el nombre principal de usuario (UPN) de una persona, la dirección URL de su cuenta de OneDrive también se cambiará para incorporar el nuevo UPN. Si esto ocurre, tendrá que modificar la retención agregando la nueva dirección URL de OneDrive del usuario y quitando la antigua.
 
-     c. **carpetas públicas de Exchange** : mueva el conmutador de alternancia a la posición todas para poner todas las carpetas públicas de la organización de Exchange online en retención. Tenga en cuenta que no puede elegir carpetas públicas específicas que poner en retención. Deje el modificador de alternancia establecido en **ninguno** si no desea mantener una retención en las carpetas públicas.
+     c. **Carpetas públicas de Exchange** : mueva el conmutador de alternancia a la posición todas para poner todas las carpetas públicas de la organización de Exchange online en retención. Tenga en cuenta que no puede elegir carpetas públicas específicas que poner en retención. Deje el modificador de alternancia establecido en **ninguno** si no desea mantener una retención en las carpetas públicas.
 
 9. Cuando haya acabado de agregar ubicaciones de contenido a la suspensión, haga clic en **siguiente**.
   
@@ -84,7 +84,7 @@ Para crear una suspensión para un caso de exhibición avanzada de documentos el
     
     - En el cuadro debajo de **palabras clave**, escriba una consulta de búsqueda en el cuadro para que solo se coloque en retención el contenido que cumpla los criterios de búsqueda. Puede especificar palabras clave, propiedades de mensaje o propiedades de documento, como nombres de archivo. También puede usar consultas más complejas que usen un operador booleano, como AND, OR o NOT. Si deja vacío el cuadro palabra clave, todo el contenido ubicado en las ubicaciones de contenido especificadas se colocará en retención.
 
-    - Haga clic en **Agregar** condiciones para agregar una o más condiciones para restringir la consulta de búsqueda para la retención. Cada condición agrega una cláusula a la consulta de búsqueda de KQL que se crea y se ejecuta cuando se crea la suspensión. Por ejemplo, puede especificar un intervalo de fechas para que los documentos de correo electrónico o de sitio creados en el intervalo de fechas se coloquen en suspensión. Una condición está conectada lógicamente a la consulta de palabras clave (que se especifica en el cuadro palabra clave) por el operador AND. Esto significa que los elementos deben cumplir con la consulta de palabras clave y la condición que se va a poner en retención.
+    - Haga clic en **Agregar** condiciones para agregar una o más condiciones para restringir la consulta de búsqueda para la retención. Cada condición agrega una cláusula a la consulta de búsqueda de KQL que se crea y se ejecuta cuando se crea la suspensión. Por ejemplo, puede especificar un intervalo de fechas para que los documentos de correo electrónico o de sitio creados en el intervalo de fechas se coloquen en suspensión. Una condición se conecta lógicamente a la consulta de palabra clave (especificada en el cuadro de palabra clave) mediante el operador AND. Esto significa que los elementos deben cumplir con la consulta de palabras clave y la condición que se va a poner en retención.
 
      Para obtener más información acerca de la creación de una consulta de búsqueda y el uso de condiciones, consulte [Keyword queries and search conditions for Content Search](https://docs.microsoft.com/en-us/office365/SecurityCompliance/keyword-queries-and-search-conditions).
 

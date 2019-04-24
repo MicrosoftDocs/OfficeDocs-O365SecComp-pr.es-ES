@@ -11,17 +11,17 @@ ms.service: O365-seccomp
 localization_priority: Normal
 description: Siga estos pasos para configurar las aplicaciones de Azure AD Office 365 para que se controlen con el control de aplicación de acceso condicional de seguridad de aplicación de nube de Office 365.
 ms.openlocfilehash: 72be95b3213b90cfe60d851d0852d465cdbe6ef9
-ms.sourcegitcommit: 866d8cab6bcfdd124516a8369e47ec797bc7cf8a
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "30312077"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32263122"
 ---
 # <a name="deploy-conditional-access-app-control-for-office-365-apps"></a>Implementar el Control de aplicaciones de acceso condicional para las aplicaciones de Office 365
 
 |Evaluación * *\>**|Planeación * *\>**|Implementación * *\>**|Uso * * * *|
 |:-----|:-----|:-----|:-----|
-|[Empezar a evaluar](office-365-cas-overview.md) <br/> |[Empezar a planear](get-ready-for-office-365-cas.md) <br/> |Ya está aquí.  <br/> [Paso siguiente](ocas-session-policies.md) <br/> |[Empezar a usar](utilization-activities-for-ocas.md) <br/> |
+|[Empezar a evaluar](office-365-cas-overview.md) <br/> |[Empezar a planear](get-ready-for-office-365-cas.md) <br/> |Ya está aquí.  <br/> [Siguiente paso](ocas-session-policies.md) <br/> |[Empezar a usar](utilization-activities-for-ocas.md) <br/> |
 
 Siga estos pasos para configurar las aplicaciones de Azure AD Office 365 para que se controlen con el control de aplicación de acceso condicional de seguridad de aplicación de nube de Office 365.
 

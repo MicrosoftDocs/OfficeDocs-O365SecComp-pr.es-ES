@@ -15,11 +15,11 @@ search.appverid: MOE150
 ms.assetid: 5af334b6-a15d-4f73-97f8-1423457d9f6b
 description: Tiene la opción de desduplicar los resultados de la búsqueda de eDiscovery que se exportan para que solo se exporte una copia de un mensaje de correo electrónico, aunque se hayan encontrado varias instancias del mismo mensaje en diferentes buzones.
 ms.openlocfilehash: b3810e3568bd2c7aa1628bcfcebbad5a87468ff8
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999303"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32258088"
 ---
 # <a name="de-duplication-in-ediscovery-search-results"></a>Desduplicación en los resultados de búsqueda de eDiscovery
 

@@ -16,11 +16,11 @@ search.appverid:
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 description: El registro de auditoría de buzones de correo está activado de forma predeterminada en Microsoft 365 (también denominado auditoría de buzones de correo predeterminada o auditoría de buzones de correo de forma predeterminada). Esto significa que determinadas acciones realizadas por los propietarios de buzones de correo, los delegados y los administradores se registran automáticamente en un registro de auditoría de buzones de correo, donde puede buscar actividades realizadas en el buzón.
 ms.openlocfilehash: 38632798aedfa34ee7568a7038d5ff906888619c
-ms.sourcegitcommit: 19d27ff836ee7fa1f8a4e761e04d928f13f4bfd8
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31745322"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256988"
 ---
 # <a name="manage-mailbox-auditing"></a>Administrar la auditoría de buzones de correo
   
@@ -104,15 +104,15 @@ En la siguiente tabla se enumeran las acciones de buzón que se registran de for
 
 Estas son las descripciones de estas acciones de buzón. 
 
-|Acción del buzón|Description|
+|Acción del buzón|Descripción|
 |:---------|:---------|
-|**Crear** <br/> |Se ha creado un elemento en la carpeta calendario, contactos, notas o tareas del buzón de correo; por ejemplo, se crea una nueva convocatoria de reunión. Tenga en cuenta que no se audita la creación, el envío o la recepción de un mensaje. Además, no se audita la creación de una carpeta de buzón de correo.  <br/> |
+|**Create** <br/> |Se ha creado un elemento en la carpeta calendario, contactos, notas o tareas del buzón de correo; por ejemplo, se crea una nueva convocatoria de reunión. Tenga en cuenta que no se audita la creación, el envío o la recepción de un mensaje. Además, no se audita la creación de una carpeta de buzón de correo.  <br/> |
 |**HardDelete** <br/> |Un mensaje se purgó de la carpeta Elementos recuperables.  <br/> |
 |**MoveToDeletedItems** <br/> |Un mensaje se eliminó y se movió a la carpeta Elementos eliminados.  <br/> |
 |**SendAs** <br/> |Un mensaje se envió mediante el permiso SendAs. Esto significa que otro usuario envió el mensaje como si procediera del propietario del buzón.  <br/> |
 |**SendOnBehalf** <br/> |Un mensaje se envió mediante el permiso SendOnBehalf. Esto significa que otro usuario envió el mensaje en nombre del propietario del buzón. El mensaje indica el destinatario en nombre de quien se envió el mensaje y quién lo envió realmente.  <br/> |
 |**SoftDelete** <br/> |Un mensaje se eliminó permanentemente o se eliminó de la carpeta Elementos eliminados. Los elementos eliminados de forma temporal se mueven a la carpeta Elementos recuperables.  <br/> |
-|**Update** <br/> |Se cambió un mensaje o sus propiedades.  <br/> |
+|**Actualización** <br/> |Se cambió un mensaje o sus propiedades.  <br/> |
 |**UpdateCalendarDelegation** <br/> |Se asignó una delegación de calendario a un buzón. La delegación de calendario da a otra persona en la misma organización permisos para administrar el calendario del propietario del buzón.  <br/> |
 |**UpdateFolderPermissions** <br/> |Se ha cambiado un permiso de carpeta. Los permisos de carpeta controlan qué usuarios de la organización pueden tener acceso a las carpetas de un buzón de correo y los mensajes que se encuentran en dichas carpetas.  <br/> |
 |**UpdateInboxRules** <br/> |Se ha agregado, quitado o cambiado una regla de bandeja de entrada. Las reglas de la bandeja de entrada se usan para procesar mensajes en la bandeja de entrada del usuario en función de las condiciones especificadas y emprender acciones cuando se cumplen las condiciones de una regla, como mover un mensaje a una carpeta especificada o eliminar un mensaje.  <br/> |
@@ -268,10 +268,10 @@ Un valor de **true** indica que se omite el registro de auditoría de buzones pa
   
 En la tabla siguiente se resumen las acciones que se auditan para cada tipo de inicio de sesión de usuario. En la tabla, un asterisco ( **\*** ) indica que la acción se registra de forma predeterminada. **No** indica que no se puede registrar una acción para ese tipo de inicio de sesión. Tenga en cuenta que un administrador al que se haya asignado el permiso Acceso total en el buzón de un usuario se considera usuario delegado. 
   
-|**Acción**|**Descripción**|**Admin**|**Delegado**|**Owner**|
+|**Acción**|**Descripción**|**Administrador**|**Delegado**|**Propietario**|
 |:-----|:-----|:-----|:-----|:-----|
-|**Copy** <br/> |Un mensaje se copió en otra carpeta.  <br/> |Sí  <br/> |No  <br/> |No  <br/> |
-|**Crear** <br/> |Se crea un elemento en la carpeta calendario, contactos, notas o tareas del buzón de correo; por ejemplo, se crea una nueva convocatoria de reunión. Tenga en cuenta que no se audita la creación, el envío o la recepción de un mensaje. Además, no se audita la creación de una carpeta de buzón de correo.  <br/> |Sí\*  <br/> |Sí\*  <br/> |Sí  <br/> |
+|**Copiar** <br/> |Un mensaje se copió en otra carpeta.  <br/> |Sí  <br/> |No  <br/> |No  <br/> |
+|**Create** <br/> |Se crea un elemento en la carpeta calendario, contactos, notas o tareas del buzón de correo; por ejemplo, se crea una nueva convocatoria de reunión. Tenga en cuenta que no se audita la creación, el envío o la recepción de un mensaje. Además, no se audita la creación de una carpeta de buzón de correo.  <br/> |Sí\*  <br/> |Sí\*  <br/> |Sí  <br/> |
 |**FolderBind**\** <br/> |Se tuvo acceso a una carpeta de buzón de correo. Esta acción también se registra cuando el administrador o un delegado abren el buzón de correo.  <br/> |Sí  <br/> |Sí  <br/> |No  <br/> |
 |**HardDelete** <br/> |Un mensaje se purgó de la carpeta Elementos recuperables.  <br/> |Sí\*  <br/> |Sí\*  <br/> |Sí\*  <br/> |
 |**MailboxLogin** <br/> |El usuario ha iniciado sesión en su buzón.  <br/> |No  <br/> |No  <br/> |Sí  <br/> |
@@ -281,7 +281,7 @@ En la tabla siguiente se resumen las acciones que se auditan para cada tipo de i
 |**SendAs** <br/> |Un mensaje se envió mediante el permiso SendAs. Esto significa que otro usuario envió el mensaje como si procediera del propietario del buzón.  <br/> |Sí\*  <br/> |Sí\*  <br/> |No  <br/> |
 |**SendOnBehalf** <br/> |Un mensaje se envió mediante el permiso SendOnBehalf. Esto significa que otro usuario envió el mensaje en nombre del propietario del buzón. El mensaje indica el destinatario en nombre de quien se envió el mensaje y quién lo envió realmente.  <br/> |Sí\*  <br/> |Sí\*  <br/> |No  <br/> |
 |**SoftDelete** <br/> |Un mensaje se eliminó permanentemente o se eliminó de la carpeta Elementos eliminados. Los elementos eliminados de forma temporal se mueven a la carpeta Elementos recuperables.  <br/> |Sí\*  <br/> |Sí\*  <br/> |Sí\*  <br/> |
-|**Update** <br/> |Se cambió un mensaje o sus propiedades.  <br/> |Sí\*  <br/> |Sí\*  <br/> |Sí\*  <br/> |
+|**Actualizar** <br/> |Se cambió un mensaje o sus propiedades.  <br/> |Sí\*  <br/> |Sí\*  <br/> |Sí\*  <br/> |
 |**UpdateCalendarDelegation** <br/> |Se asignó una delegación de calendario a un buzón. La delegación de calendario da a otra persona de la organización permisos para administrar el calendario del propietario del buzón.  <br/> |Sí\*  <br/> |No  <br/> |Sí\*  <br/> |
 |**UpdateFolderPermissions** <br/> |Se ha cambiado un permiso de carpeta. Los permisos de carpeta controlan qué usuarios de la organización pueden tener acceso a las carpetas de un buzón de correo y los mensajes que se encuentran en dichas carpetas.  <br/> |Sí\*  <br/> |Sí\*  <br/> |Sí\*  <br/> |
 |**UpdateInboxRules** <br/> |Se ha agregado, quitado o cambiado una regla de bandeja de entrada. Las reglas de la bandeja de entrada se usan para procesar mensajes en la bandeja de entrada del usuario en función de las condiciones especificadas y emprender acciones cuando se cumplen las condiciones de una regla, como mover un mensaje a una carpeta especificada o eliminar un mensaje.  <br/> |Sí\*  <br/> |Sí\*  <br/> |Sí\*  <br/> |

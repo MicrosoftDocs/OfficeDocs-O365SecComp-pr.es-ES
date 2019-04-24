@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: Para asegurarse de que el correo electrónico enviado por personas de confianza no está bloqueado, puede usar la Directiva de filtro de conexión para crear una lista de permitidos, también conocida como lista de remitentes seguros, de las direcciones IP en las que confía. También puede crear una lista de remitentes bloqueados.
 ms.openlocfilehash: 5ca6ad6721ac03e5ae62b40dda219671bde3e1c1
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693549"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32259018"
 ---
 # <a name="configure-the-connection-filter-policy"></a>Configurar la directiva de filtro de conexión
  
@@ -31,7 +31,7 @@ En el siguiente vídeo se muestran los pasos de configuración para la directiva
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/b2f5bea3-e1a7-44b3-b7e2-07fac0d0ca40?autoplay=false]
   
-## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de empezar?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 <a name="sectionSection0"> </a>
 
 - Tiempo estimado para finalizar: 15 minutos
@@ -132,7 +132,7 @@ Después de crear y aplicar la regla, solo se omitirá el filtrado contra correo
 |:-----|
 |![El icono reducido de LinkedIn Learning](media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **¿Es la primera vez que usa Office 365?**         LinkedIn Learning pone a su disposición vídeos gratuitos de cursos de **Office 365 admins and IT pros**. |
    
-## <a name="for-more-information"></a>Para obtener más información
+## <a name="for-more-information"></a>Más información
 <a name="sectionSection4"> </a>
 
 [Listas de remitentes seguros y bloqueados en Exchange Online](safe-sender-and-blocked-sender-lists-faq.md)

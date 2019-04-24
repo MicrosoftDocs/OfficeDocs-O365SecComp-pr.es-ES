@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: 'Resumen: En este artículo se describe cómo actualizar un registro de servicio de nombre de dominio (DNS) para poder utilizar un marco de directivas de remitente (SPF) con su dominio personalizado en Office 365. SPF permite validar el correo electrónico saliente enviado desde su dominio personalizado.'
 ms.openlocfilehash: 039a09e7dac307ead156eac47699edbd2350b304
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692839"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260718"
 ---
 # <a name="set-up-spf-in-office-365-to-help-prevent-spoofing"></a>Configurar SPF en Office 365 para ayudar a evitar la suplantación de identidad
 

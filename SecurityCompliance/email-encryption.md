@@ -16,11 +16,11 @@ ms.collection:
 - M365-security-compliance
 description: Comparar las opciones de cifrado en Office 365, incluido el cifrado de mensajes de Office (OME), S/MIME, Information Rights Management (IRM) y obtener información acerca de la seguridad de la capa de transporte (TLS).
 ms.openlocfilehash: 18f3d5098557f65a0738254b57882689c013d677
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30692469"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256798"
 ---
 # <a name="email-encryption-in-office-365"></a>Cifrado de correo electrónico en Office 365
 
@@ -87,7 +87,7 @@ Para obtener más información sobre las opciones de cifrado de correo electrón
   
 [Cifrado de mensajes de Office 365 (OME)](ome.md)
   
- **FOR**
+ **IRM**
   
 [Information Rights Management en Exchange Online](https://technet.microsoft.com/en-us/library/jj983436%28v=exchg.150%29.aspx)
   

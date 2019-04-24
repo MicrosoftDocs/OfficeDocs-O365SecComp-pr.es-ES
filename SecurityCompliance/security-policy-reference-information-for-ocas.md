@@ -14,11 +14,11 @@ search.appverid:
 ms.assetid: aef6c88f-7f47-40ef-9503-2b400e3bc6fd
 description: Obtenga ayuda con las directivas de actividad y detección de anomalías de Office 365.
 ms.openlocfilehash: db44b6cbf5b8c2783cba9862107120d2c33c1559
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30215620"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264632"
 ---
 # <a name="security-policy-reference-information-for-office-365-cloud-app-security"></a>Información de referencia de la Directiva de seguridad para Office 365 Cloud App Security
   

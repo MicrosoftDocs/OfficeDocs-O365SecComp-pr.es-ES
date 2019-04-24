@@ -11,11 +11,11 @@ localization_priority: Normal
 ms.assetid: 9d64867b-ebdb-4323-8e30-4560d76b4c97
 description: El cambio de requisitos empresariales a veces puede requerir dividir una organización de Microsoft Exchange Online Protection (EOP) (inquilino) en dos organizaciones separadas, combinar dos organizaciones en una, o mover sus dominios y opciones de configuración de EOP desde una organización hacia otra organización.
 ms.openlocfilehash: 976594a3f28f2d120270dfabbf708ecb5815ad5c
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693639"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256308"
 ---
 # <a name="move-domains-and-settings-from-one-eop-organization-to-another-eop-organization"></a>Mover dominios y opciones de configuración de una organización de EOP a otra organización de EOP
 

@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: Si envía un gran volumen de correo electrónico de dominio no registrado, corre el riesgo de que se bloquee el correo electrónico. Lea este artículo para obtener más información.
 ms.openlocfilehash: 21c403c8072902565f63048782b06c531cdbceb0
-ms.sourcegitcommit: b688d67935edb036658bb5aa1671328498d5ddd3
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "30670545"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32263992"
 ---
 # <a name="unregistered-domain-email-what-you-need-to-know"></a>Correo electrónico de dominio no registrado: lo que debe saber
 
@@ -48,7 +48,7 @@ Hay varias cosas que debe hacer si se bloquea para enviar desde dominios no regi
 
 4. Una vez hecho, deberá llamar al soporte técnico de Microsoft y pedirle que desbloquee el espacio empresarial para enviar de nuevo desde dominios no registrados.  Proporcionarle el código de error es útil, pero tendrá que probar que su entorno está protegido y que el correo no deseado no se enviará de nuevo. Puede encontrar más información sobre cómo abrir un caso de soporte [aquí](https://support.office.com/en-us/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b#ID0EAADAAA=online).
   
-## <a name="for-more-information"></a>Para obtener más información
+## <a name="for-more-information"></a>Más información
 
 [Protección contra correo no deseado de Office 365](anti-spam-protection.md)
 

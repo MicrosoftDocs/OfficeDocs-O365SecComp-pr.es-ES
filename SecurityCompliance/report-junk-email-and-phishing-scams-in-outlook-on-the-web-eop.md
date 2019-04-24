@@ -15,11 +15,11 @@ ms.collection:
 - M365-security-compliance
 description: Los usuarios de Microsoft Outlook en la web pueden informar de las estafas de suplantación de identidad (spam) o de suplantación de identidad mediante las opciones integradas de informes de correo electrónico. También puede informar a Microsoft de si un correo electrónico se identificó de forma incorrecta como correo no deseado (correo no deseado).
 ms.openlocfilehash: 089792ab8e46f4b200a2d98781cd378c2666c35f
-ms.sourcegitcommit: 0f93b37c39d807dec91f118aa671a3430c47a9ac
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "30693319"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32261598"
 ---
 # <a name="report-junk-email-and-phishing-scams-in-outlook-on-the-web"></a>Informar sobre correo no deseado y estafas de suplantación de identidad (phishing) en Outlook en la web 
 

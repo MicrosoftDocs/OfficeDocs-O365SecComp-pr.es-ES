@@ -14,17 +14,17 @@ search.appverid:
 ms.assetid: 290b02bf-a988-4fb9-88b2-34e408216ac8
 description: Office 365 Cloud App Security funciona con registros de tráfico web de una amplia gama de proveedores. Lea este artículo para obtener más información sobre los registros de tráfico web y los orígenes de datos compatibles para Office 365 Cloud App Security.
 ms.openlocfilehash: 67246ded0e3d39c81b5b906f753b91298309d1d8
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30218110"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32266855"
 ---
 # <a name="web-traffic-logs-and-data-sources-for-office-365-cloud-app-security"></a>Orígenes de datos y registros de tráfico Web para Office 365 Cloud App Security
   
 |Evaluación * *\>**|Planeación * *\>**|Implementación * *\>**|Uso * * * *|
 |:-----|:-----|:-----|:-----|
-|[Empezar a evaluar](office-365-cas-overview.md) <br/> |[Empezar a planear](get-ready-for-office-365-cas.md) <br/> |[Iniciar la implementación](turn-on-office-365-cas.md) <br/> |Ya está aquí.  <br/> [Pasos siguientes](#next-steps) <br/> |
+|[Empezar a evaluar](office-365-cas-overview.md) <br/> |[Empezar a planear](get-ready-for-office-365-cas.md) <br/> |[Iniciar la implementación](turn-on-office-365-cas.md) <br/> |Ya está aquí.  <br/> [Siguientes pasos](#next-steps) <br/> |
   
 Puede usar una amplia variedad de archivos de registro de tráfico web y orígenes de datos con Office 365 Cloud App Security. Sin embargo, los archivos de registro de tráfico web deben incluir información específica y tener el formato de una determinada manera para que funcionen con los informes de detección de aplicaciones de Cloud App Security y el panel de detección en la nube. Use este artículo como guía de referencia para los registros de tráfico web y los orígenes de datos que va a usar con Office 365 Cloud App Security.
   
@@ -84,7 +84,7 @@ En la tabla siguiente se resume la información de los registros de tráfico web
 |                 Juniper de Juniper                  |          No          | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> |
 |                  McAfee SWG                  | <strong>Sí</strong> |          No          |          No          | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> |
 |                    MS TMG                    | <strong>Sí</strong> |          No          | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> |
-|              Redes palo alto              |          No          | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> |
+|              Palo Alto Networks              |          No          | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> |
 |                    Sophos                    | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> | <strong>Sí</strong> |          No          |
 |                Squid (común)                | <strong>Sí</strong> |          No          | <strong>Sí</strong> | <strong>Sí</strong> |          No          | <strong>Sí</strong> |
 |                Squid (nativo)                | <strong>Sí</strong> |          No          | <strong>Sí</strong> | <strong>Sí</strong> |          No          | <strong>Sí</strong> |
@@ -130,7 +130,7 @@ Office 365 Cloud App Security es compatible con los siguientes firewalls y servi
 
 Después de cargar los archivos de registro de tráfico web, compruebe el registro de gobierno para ver si se ha producido algún error. Si hay errores, use la información de la siguiente tabla para resolver esos errores.
   
-|**Error**|**Descripción**|**Solución**|
+|**Error**|**Descripción**|**Resolución**|
 |:-----|:-----|:-----|
 |Tipo de archivo no admitido  <br/> |El archivo cargado no es un archivo de registro válido. Por ejemplo, un archivo de imagen.  <br/> |Cargue un archivo de texto, ZIP o gzip que se exportó directamente desde el servidor de seguridad o el proxy.  <br/> |
 |Error interno  <br/> |Se detectó un error interno en el recurso.  <br/> |Haga clic en **Reintentar** para volver a ejecutar la tarea.  <br/> |
@@ -138,7 +138,7 @@ Después de cargar los archivos de registro de tráfico web, compruebe el regist
 Compruebe que el registro no esté dañado. Comparar y hacer coincidir el formato del archivo de registro con el formato de muestra que se muestra en la página de carga. |
 |Las transacciones tienen más de 90 días de antigüedad  <br/> |Todas las transacciones tienen más de 90 días de antigüedad y, por lo tanto, se omiten.  <br/> |ExPorte un nuevo registro con eventos recientes y vuelva a cargarlo.  <br/> |
 |No hay transacciones para catalogar aplicaciones en la nube  <br/> |En el registro no se encuentra ninguna transacción a ninguna aplicación en la nube reconocida.  <br/> |Compruebe que el registro contiene información de tráfico saliente.  <br/> |
-|Tipo de registro no admitido  <br/> |Al seleccionar **origen de datos = otro (no admitido)**, no se analiza el registro. En su lugar, se envía para revisión al equipo técnico de [Microsoft Cloud App Security](https://aka.ms/whatiscas) .<br/> |El equipo técnico de [Microsoft Cloud App Security](https://aka.ms/whatiscas) crea un analizador dedicado para cada origen de datos. Los orígenes de datos más populares ya se admiten. Cuando se carga un origen de datos no admitido, se revisa y se agrega a la lista de posibles analizadores de orígenes de datos nuevos.<br/> Cuando se agrega un analizador nuevo a la característica, se incluye una notificación en las notas de la versión de seguridad de aplicaciones en la nube de Microsoft.  <br/> |
+|Tipo de registro no admitido  <br/> |Al seleccionar **origen de datos = otro (no admitido)**, no se analiza el registro. En su lugar, se envía para revisión al equipo técnico de [Microsoft Cloud App Security](https://aka.ms/whatiscas) .  <br/> |El equipo técnico de [Microsoft Cloud App Security](https://aka.ms/whatiscas) crea un analizador dedicado para cada origen de datos. Los orígenes de datos más populares ya se admiten. Cuando se carga un origen de datos no admitido, se revisa y se agrega a la lista de posibles analizadores de orígenes de datos nuevos.  <br/> Cuando se agrega un analizador nuevo a la característica, se incluye una notificación en las notas de la versión de seguridad de aplicaciones en la nube de Microsoft.  <br/> |
    
 ## <a name="next-steps"></a>Pasos siguientes
 
