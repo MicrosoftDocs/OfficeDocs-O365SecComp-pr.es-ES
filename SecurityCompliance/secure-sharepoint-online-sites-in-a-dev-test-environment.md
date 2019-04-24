@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 06af70f3-e7dc-4ee2-a385-fb4d61a5e93b
 description: 'Resumen: cree sitios de grupo de SharePoint Online en un entorno de desarrollo y pruebas, que pueden ser públicos, privados, confidenciales o extremadamente confidenciales.'
-ms.openlocfilehash: e1d5e6f98679e2efb4d5048009971d88f90181e8
-ms.sourcegitcommit: 19d27ff836ee7fa1f8a4e761e04d928f13f4bfd8
+ms.openlocfilehash: 8598c73c07c5e6bca1c429c30cd88772d8ca6697
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "31745312"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32260958"
 ---
 # <a name="secure-sharepoint-online-sites-in-a-devtest-environment"></a>Protección de sitios de SharePoint Online en un entorno de desarrollo y pruebas
 
@@ -208,9 +208,7 @@ En esta fase, se crean las etiquetas de retención para los diferentes niveles d
     
 7. En el panel **Revise su configuración**, haga clic en **Crear la etiqueta**.
     
-8. Para las otras etiquetas, haga clic en **Crear una etiqueta**, y después repita los pasos del 3 al 7.
-
-9. Repita los pasos del 3 al 8 para etiquetas adicionales con los siguientes nombres:
+8. Repita los pasos del 3 al 7 para etiquetas adicionales con los siguientes nombres:
     
   - Private
     
@@ -218,21 +216,21 @@ En esta fase, se crean las etiquetas de retención para los diferentes niveles d
     
   - Extremadamente confidencial
   
-10. En el panel **Inicio > Etiquetas**, haga clic para **Publish labels** (Publicar etiquetas).
+9. En el panel **Inicio > Etiquetas**, haga clic para **Publish labels** (Publicar etiquetas).
     
-11. En el panel **Elegir etiquetas para publicar**, haga clic en **Elegir etiquetas para publicar**.
+10. En el panel **Elegir etiquetas para publicar**, haga clic en **Elegir etiquetas para publicar**.
     
-12. En el panel de **elección de etiquetas**, haga clic en **Agregar** y seleccione las cuatro etiquetas.
+11. En el panel de **elección de etiquetas**, haga clic en **Agregar** y seleccione las cuatro etiquetas.
     
-13. Haga clic en **Listo**.
+12. Haga clic en **Listo**.
     
-14. En el panel **Elegir etiquetas para publicar**, haga clic en **Siguiente**.
+13. En el panel **Elegir etiquetas para publicar**, haga clic en **Siguiente**.
     
-15. En el panel **Seleccionar ubicaciones**, haga clic en **Siguiente**.
+14. En el panel **Seleccionar ubicaciones**, haga clic en **Siguiente**.
     
-16. En el panel **Escriba un nombre para la directiva**, escriba **Organización de ejemplo** en **Nombre** y haga clic en **Siguiente**.
+15. En el panel **Escriba un nombre para la directiva**, escriba **Organización de ejemplo** en **Nombre** y haga clic en **Siguiente**.
     
-17. En el panel **Revise la configuración**, haga clic en **Publicar etiquetas** y, después, en **Cerrar**.
+16. En el panel **Revise la configuración**, haga clic en **Publicar etiquetas** y, después, en **Cerrar**.
     
 ## <a name="phase-4-create-your-sharepoint-online-team-sites"></a>Fase 4: Crear los sitios de grupo de SharePoint Online
 
