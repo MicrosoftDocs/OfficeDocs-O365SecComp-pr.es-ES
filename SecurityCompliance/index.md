@@ -1,6 +1,6 @@
 ---
-title: Office 365 seguridad y cumplimiento
-description: 'Si su organización necesita proteger sus datos o cumplir con los estándares legales o normativos, está en el punto correcto. Aquí puede obtener información sobre la seguridad y el cumplimiento en Office 365'
+title: Seguridad y cumplimiento de Office 365
+description: Si su organización necesita proteger sus datos o cumplir con los estándares legales o normativos, está en el punto correcto. Aquí puede obtener información sobre la seguridad y el cumplimiento en Office 365
 services: office-365-security-compliance
 author: robmazz
 manager: laurawi
@@ -11,8 +11,14 @@ ms.devlang: na
 ms.topic: landing-page
 ms.date: 12/27/2018
 ms.author: robmazz
+ms.openlocfilehash: 737d3a1b979b420e7f9bd24f056a4d5abf7a9906
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256508"
 ---
-# <a name="office-365-security-and-compliance"></a>Office 365 seguridad y cumplimiento
+# <a name="office-365-security-and-compliance"></a>Seguridad y cumplimiento de Office 365
 
 Si su organización necesita proteger sus datos o cumplir con los estándares legales o normativos, está en el punto correcto. Las áreas que aparecen a continuación son su primera parada para conocer la seguridad y el cumplimiento en Office 365.
 

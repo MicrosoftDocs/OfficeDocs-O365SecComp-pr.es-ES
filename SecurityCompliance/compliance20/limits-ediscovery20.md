@@ -12,38 +12,46 @@ search.appverid:
 - MOE150
 - MET150
 description: ''
-ms.openlocfilehash: 2611205a41b9113c0ca30f787c119806d75f35c8
-ms.sourcegitcommit: 7adfd8eda038cf25449bdf3df78b5e2fcc1999e7
+ms.openlocfilehash: ff0be77e0fd6e35c6f0536f8bcfe9384c27d6b58
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "30357361"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32243801"
 ---
-# <a name="limits-in-advanced-ediscovery-preview"></a><span data-ttu-id="02c2b-102">Límites de eDiscovery avanzado (versión preliminar)</span><span class="sxs-lookup"><span data-stu-id="02c2b-102">Limits in Advanced eDiscovery (Preview)</span></span>
+# <a name="limits-in-advanced-ediscovery-preview"></a><span data-ttu-id="8614b-102">Límites de eDiscovery avanzado (versión preliminar)</span><span class="sxs-lookup"><span data-stu-id="8614b-102">Limits in Advanced eDiscovery (Preview)</span></span>
 
-<span data-ttu-id="02c2b-103">En este artículo se describen los límites de Advanced eDiscovery (versión preliminar).</span><span class="sxs-lookup"><span data-stu-id="02c2b-103">This article describes the limits in Advanced eDiscovery (Preview).</span></span>
+<span data-ttu-id="8614b-103">En este artículo se describen los límites de Advanced eDiscovery (versión preliminar).</span><span class="sxs-lookup"><span data-stu-id="8614b-103">This article describes the limits in Advanced eDiscovery (Preview).</span></span>
 
-## <a name="case-limits"></a><span data-ttu-id="02c2b-104">Límites de casos</span><span class="sxs-lookup"><span data-stu-id="02c2b-104">Case limits</span></span>
+## <a name="case-limits"></a><span data-ttu-id="8614b-104">Límites de casos</span><span class="sxs-lookup"><span data-stu-id="8614b-104">Case limits</span></span>
 
-## <a name="indexing-limits"></a><span data-ttu-id="02c2b-105">Límites de indexación</span><span class="sxs-lookup"><span data-stu-id="02c2b-105">Indexing limits</span></span>
+<span data-ttu-id="8614b-105">En la siguiente tabla se enumeran los límites de los casos en eDiscovery avanzado (versión preliminar).</span><span class="sxs-lookup"><span data-stu-id="8614b-105">The following table lists the limits for cases in Advanced eDiscovery (Preview).</span></span>
 
-## <a name="search-limits"></a><span data-ttu-id="02c2b-106">Límites de búsqueda</span><span class="sxs-lookup"><span data-stu-id="02c2b-106">Search limits</span></span>
-
-## <a name="working-set-limits"></a><span data-ttu-id="02c2b-107">Límites del conjunto de trabajo</span><span class="sxs-lookup"><span data-stu-id="02c2b-107">Working set limits</span></span>
-
-<span data-ttu-id="02c2b-p101">En la siguiente tabla se enumeran los límites de los conjuntos de trabajo en eDiscovery avanzado (versión preliminar).  Los elementos que excedan los máximos de un solo archivo se mostrarán como errores de procesamiento.</span><span class="sxs-lookup"><span data-stu-id="02c2b-p101">The following table lists the limits for working sets in Advanced eDiscovery (Preview).  Any items that exceed the single file maximums will show up as processing errors.</span></span>
-    
-  |<span data-ttu-id="02c2b-110">**Descripción del límite**</span><span class="sxs-lookup"><span data-stu-id="02c2b-110">**Description of limit**</span></span>|<span data-ttu-id="02c2b-111">**Límite**</span><span class="sxs-lookup"><span data-stu-id="02c2b-111">**Limit**</span></span>|
+|<span data-ttu-id="8614b-106">**Descripción del límite**</span><span class="sxs-lookup"><span data-stu-id="8614b-106">**Description of limit**</span></span>|<span data-ttu-id="8614b-107">**Límite**</span><span class="sxs-lookup"><span data-stu-id="8614b-107">**Limit**</span></span>|
   |:-----|:-----|
-  |<span data-ttu-id="02c2b-112">Número máximo de conjuntos de trabajo</span><span class="sxs-lookup"><span data-stu-id="02c2b-112">Maximum number of working sets</span></span>  <br/> |<span data-ttu-id="02c2b-113">50</span><span class="sxs-lookup"><span data-stu-id="02c2b-113">50</span></span>  <br/> |
-  |<span data-ttu-id="02c2b-114">Número total de documentos que se pueden recopilar en un caso (para todos los conjuntos de trabajo en el caso)</span><span class="sxs-lookup"><span data-stu-id="02c2b-114">Total number of documents that can be ingested into a case (for all working sets in the case)</span></span>  <br/> |<span data-ttu-id="02c2b-115">1 millón</span><span class="sxs-lookup"><span data-stu-id="02c2b-115">1 million</span></span>  <br/> |
-  |<span data-ttu-id="02c2b-116">Tamaño total de archivo por carga</span><span class="sxs-lookup"><span data-stu-id="02c2b-116">Total file size per load</span></span>  <br/> |<span data-ttu-id="02c2b-117">100 GB</span><span class="sxs-lookup"><span data-stu-id="02c2b-117">100 GB</span></span>  <br/> |
-  |<span data-ttu-id="02c2b-118">Tamaño máximo de un solo archivo</span><span class="sxs-lookup"><span data-stu-id="02c2b-118">Maximum size of single file</span></span>   <br/> |<span data-ttu-id="02c2b-119">100 MB</span><span class="sxs-lookup"><span data-stu-id="02c2b-119">100 MB</span></span>  <br/> |
-  |<span data-ttu-id="02c2b-120">Número máximo de caracteres extraídos de un único archivo</span><span class="sxs-lookup"><span data-stu-id="02c2b-120">Maximum number of characters extracted from a single file</span></span>  <br/> |<span data-ttu-id="02c2b-121">10 millones</span><span class="sxs-lookup"><span data-stu-id="02c2b-121">10 million</span></span>  <br/> |
-  |<span data-ttu-id="02c2b-122">Profundidad de los elementos insertados en un documento</span><span class="sxs-lookup"><span data-stu-id="02c2b-122">Depth of embedded items in a document</span></span>  <br/> |<span data-ttu-id="02c2b-123">IVA</span><span class="sxs-lookup"><span data-stu-id="02c2b-123">25</span></span>  <br/> |
-  
+  |<span data-ttu-id="8614b-108">Número máximo de casos.</span><span class="sxs-lookup"><span data-stu-id="8614b-108">Maximum number of cases.</span></span>  <br/> |<span data-ttu-id="8614b-109">50</span><span class="sxs-lookup"><span data-stu-id="8614b-109">50</span></span>  <br/> |
+  |<span data-ttu-id="8614b-110">Número total de documentos que se pueden agregar a un caso (para todos los conjuntos de trabajo en el caso).</span><span class="sxs-lookup"><span data-stu-id="8614b-110">Total number of documents that can be added to a case (for all working sets in the case).</span></span>  <br/> |<span data-ttu-id="8614b-111">1 millón</span><span class="sxs-lookup"><span data-stu-id="8614b-111">1 million</span></span>  <br/> |
+  |<span data-ttu-id="8614b-112">Tamaño total de archivo por carga.</span><span class="sxs-lookup"><span data-stu-id="8614b-112">Total file size per load.</span></span>  <br/> |<span data-ttu-id="8614b-113">100 GB</span><span class="sxs-lookup"><span data-stu-id="8614b-113">100 GB</span></span>  <br/> |
+  |<span data-ttu-id="8614b-114">Tamaño máximo de un solo archivo.</span><span class="sxs-lookup"><span data-stu-id="8614b-114">Maximum size of single file.</span></span>   <br/> |<span data-ttu-id="8614b-115">100 MB <sup>1</sup></span><span class="sxs-lookup"><span data-stu-id="8614b-115">100 MB <sup>1</sup></span></span> <br/> |
+  |<span data-ttu-id="8614b-116">Número máximo de caracteres extraídos de un solo archivo.</span><span class="sxs-lookup"><span data-stu-id="8614b-116">Maximum number of characters extracted from a single file.</span></span>  <br/> |<span data-ttu-id="8614b-117">10 millones <sup>1</sup></span><span class="sxs-lookup"><span data-stu-id="8614b-117">10 million <sup>1</sup></span></span> <br/> |
+  |<span data-ttu-id="8614b-118">Profundidad de los elementos insertados en un documento.</span><span class="sxs-lookup"><span data-stu-id="8614b-118">Depth of embedded items in a document.</span></span>  <br/> |<span data-ttu-id="8614b-119">25 <sup>1</sup></span><span class="sxs-lookup"><span data-stu-id="8614b-119">25 <sup>1</sup></span></span> <br/> |
+|||
+ > [!NOTE]
+> <span data-ttu-id="8614b-120"><sup>1</sup> todos los elementos que superen un solo límite de archivos se mostrarán como errores de procesamiento.</span><span class="sxs-lookup"><span data-stu-id="8614b-120"><sup>1</sup> Any items that exceed a single file limit will show up as processing errors.</span></span> 
 
-## <a name="export-limits"></a><span data-ttu-id="02c2b-124">Límites de exportación</span><span class="sxs-lookup"><span data-stu-id="02c2b-124">Export limits</span></span>
+## <a name="indexing-limits"></a><span data-ttu-id="8614b-121">Límites de indexación</span><span class="sxs-lookup"><span data-stu-id="8614b-121">Indexing limits</span></span>
 
-## <a name="download-limits"></a><span data-ttu-id="02c2b-125">Límites de descarga</span><span class="sxs-lookup"><span data-stu-id="02c2b-125">Download limits</span></span>
+<span data-ttu-id="8614b-122">Contenido disponible próximamente.</span><span class="sxs-lookup"><span data-stu-id="8614b-122">Content coming soon.</span></span>
+
+## <a name="search-limits"></a><span data-ttu-id="8614b-123">Límites de búsqueda</span><span class="sxs-lookup"><span data-stu-id="8614b-123">Search limits</span></span>
+
+<span data-ttu-id="8614b-124">Contenido disponible próximamente.</span><span class="sxs-lookup"><span data-stu-id="8614b-124">Content coming soon.</span></span>
+
+## <a name="export-limits"></a><span data-ttu-id="8614b-125">Límites de exportación</span><span class="sxs-lookup"><span data-stu-id="8614b-125">Export limits</span></span>
+
+<span data-ttu-id="8614b-126">Contenido disponible próximamente.</span><span class="sxs-lookup"><span data-stu-id="8614b-126">Content coming soon.</span></span>
+
+## <a name="download-limits"></a><span data-ttu-id="8614b-127">Límites de descarga</span><span class="sxs-lookup"><span data-stu-id="8614b-127">Download limits</span></span>
+
+<span data-ttu-id="8614b-128">Contenido disponible próximamente.</span><span class="sxs-lookup"><span data-stu-id="8614b-128">Content coming soon.</span></span>
 

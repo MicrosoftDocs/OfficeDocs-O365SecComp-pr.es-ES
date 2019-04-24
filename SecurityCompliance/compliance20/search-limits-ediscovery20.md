@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: ''
 description: ''
 ms.openlocfilehash: b46a8fe7e1b3406e3e039380ec8a3e814ac1ee62
-ms.sourcegitcommit: baf23be44f1ed5abbf84f140b5ffa64fce605478
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "30295323"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32240935"
 ---
-# <a name="search-limits-in-advanced-ediscovery-preview"></a><span data-ttu-id="65fa1-102">Límites de búsqueda en la exhibición avanzada de documentos electrónicos (versión preliminar)</span><span class="sxs-lookup"><span data-stu-id="65fa1-102">Search limits in Advanced eDiscovery (Preview)</span></span>
+# <a name="search-limits-in-advanced-ediscovery-preview"></a><span data-ttu-id="08405-102">Límites de búsqueda en la exhibición avanzada de documentos electrónicos (versión preliminar)</span><span class="sxs-lookup"><span data-stu-id="08405-102">Search limits in Advanced eDiscovery (Preview)</span></span>
 
-<span data-ttu-id="65fa1-103">Contenido disponible próximamente.</span><span class="sxs-lookup"><span data-stu-id="65fa1-103">Content coming soon.</span></span>
+<span data-ttu-id="08405-103">Contenido disponible próximamente.</span><span class="sxs-lookup"><span data-stu-id="08405-103">Content coming soon.</span></span>

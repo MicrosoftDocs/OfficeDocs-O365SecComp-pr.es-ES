@@ -14,21 +14,23 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: efdadd2769bf2b812d3642184fc7fd4ae1cbc8c2
-ms.sourcegitcommit: 9f38ba72eba0b656e507860ca228726e4199f7ec
+ms.openlocfilehash: 0798cb66729b215a50b21a29494183f7eed5d1d6
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "30475690"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256178"
 ---
-# <a name="export-case-data-in-advanced-ediscovery-preview"></a><span data-ttu-id="36d31-102">Exportar datos de casos en eDiscovery avanzado (versión preliminar)</span><span class="sxs-lookup"><span data-stu-id="36d31-102">Export case data in Advanced eDiscovery (Preview)</span></span>
+# <a name="export-case-data-in-advanced-ediscovery-preview"></a><span data-ttu-id="168a8-102">Exportar datos de casos en eDiscovery avanzado (versión preliminar)</span><span class="sxs-lookup"><span data-stu-id="168a8-102">Export case data in Advanced eDiscovery (Preview)</span></span>
 
-<span data-ttu-id="36d31-103">La exportación se realiza dentro de un conjunto de trabajo para proporcionar una visibilidad completa de los elementos que se exportan desde un espacio empresarial.</span><span class="sxs-lookup"><span data-stu-id="36d31-103">Exporting is accomplished within a working set in order to provide full visibility into what is being exported from a tenant.</span></span> <span data-ttu-id="36d31-104">Hay tres métodos independientes para exportar el contenido:</span><span class="sxs-lookup"><span data-stu-id="36d31-104">There are three separate methods to export content:</span></span>
+<span data-ttu-id="168a8-103">Hay tres formas de exportar datos de un conjunto de trabajo:</span><span class="sxs-lookup"><span data-stu-id="168a8-103">There are three ways to export data from a working set:</span></span>
 
-<span data-ttu-id="36d31-105">Download: permite a un usuario descargar un pequeño conjunto de archivos nativos a través del explorador.</span><span class="sxs-lookup"><span data-stu-id="36d31-105">Download – allows a user to download a small set of native files via the browser.</span></span>
+<span data-ttu-id="168a8-104">**Descarga** : se usa para descargar (mediante un explorador) un pequeño conjunto de archivos nativos.</span><span class="sxs-lookup"><span data-stu-id="168a8-104">**Download** – Use to download (by using a browser) a small set of native files.</span></span> <span data-ttu-id="168a8-105">Este es el más rápido que se ha exportado un pequeño conjunto de datos.</span><span class="sxs-lookup"><span data-stu-id="168a8-105">This is the quickest was to export a small set of data.</span></span>
 
-<span data-ttu-id="36d31-106">Export – Customize Export para incluir contenido adicional, incluido un archivo de metadatos, grabado en archivos de texto y archivos censurados.</span><span class="sxs-lookup"><span data-stu-id="36d31-106">Export – customize export to include additional content including a metadata file, burned in redacted files and text files.</span></span>
+<span data-ttu-id="168a8-106">**Exportar** : se usa para personalizar los datos que se exportan, incluida la exportación de archivos de metadatos, archivos nativos, archivos de texto y documentos censurados que se guardaron en un archivo PDF.</span><span class="sxs-lookup"><span data-stu-id="168a8-106">**Export** – Use to customize what data is exported, including the export of metadata files, native files, text files, and redacted documents that have been saved to a PDF file.</span></span> <span data-ttu-id="168a8-107">Una vez que los datos exportados se cargan en la ubicación de Azure Storage, tiene que descargarlos en un equipo local.</span><span class="sxs-lookup"><span data-stu-id="168a8-107">After exported data is uploaded Azure storage location, you have to download it to a local computer.</span></span> <span data-ttu-id="168a8-108">Para más información, visite:</span><span class="sxs-lookup"><span data-stu-id="168a8-108">For more information, see:</span></span> 
 
-<span data-ttu-id="36d31-107">Espacio de trabajo: permite a un usuario exportar el contenido de un conjunto de trabajo a otro conjunto de trabajo.</span><span class="sxs-lookup"><span data-stu-id="36d31-107">Working Set – allows a user to export content from one working set to another working set.</span></span>
+   - [<span data-ttu-id="168a8-109">Exportar documentos desde un conjunto de trabajo</span><span class="sxs-lookup"><span data-stu-id="168a8-109">Export documents from a working set</span></span>](export-documents-from-working-set.md)
 
-<span data-ttu-id="36d31-108">Una vez finalizada la exportación, el contenido se coloca en un BLOB de Microsoft Azure.</span><span class="sxs-lookup"><span data-stu-id="36d31-108">Once export is complete, the content is placed in a Microsoft Azure blob.</span></span> <span data-ttu-id="36d31-109">Se puede obtener acceso al contenido mediante la información de la pestaña exportaciones. Para obtener más información, \[consulte Link to download Export Jobs\]</span><span class="sxs-lookup"><span data-stu-id="36d31-109">The content can be reached by using the information in the Exports tab. For more information, see \[link to download export jobs\]</span></span>
+   - [<span data-ttu-id="168a8-110">Descargar trabajos de exportación</span><span class="sxs-lookup"><span data-stu-id="168a8-110">Download export jobs</span></span>](download-export-jobs.md)
+
+<span data-ttu-id="168a8-111">**Agregar a otro conjunto de trabajo** : Use esta para copiar los datos de un conjunto de trabajo a un conjunto de trabajo diferente.</span><span class="sxs-lookup"><span data-stu-id="168a8-111">**Add to another working set** – Use to copy data from one working set to a different working set.</span></span> <span data-ttu-id="168a8-112">Para obtener más información, vea [Agregar datos de un conjunto de trabajo a otro conjunto de trabajo](add-data-to-working-set-from-another-working-set.md).</span><span class="sxs-lookup"><span data-stu-id="168a8-112">For more information, see [Add data from one working set to another working set](add-data-to-working-set-from-another-working-set.md).</span></span> 
