@@ -13,17 +13,17 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Con las etiquetas en Office 365, puede hacer que un período de retención se base en el momento en que se produzca un tipo específico de evento. El evento desencadena el inicio del período de retención y se exigirán las acciones de retención de etiqueta en todo el contenido que tenga aplicada una etiqueta para ese tipo de evento. La retención controlada por eventos suele usarse como parte de un proceso de administración de registros.
-ms.openlocfilehash: ceb4b2fde10e43235d8d310243fe56cce1a2b240
-ms.sourcegitcommit: a79eb9907759d4cd849c3f948695a9ff890b19bf
+description: Con las etiquetas de retención en Office 365, puede hacer que un período de retención se base en el momento en que se produzca un tipo específico de evento. El evento desencadena el inicio del período de retención y se exigirán las acciones de retención de etiqueta en todo el contenido que tenga aplicada una etiqueta de retención para ese tipo de evento. La retención controlada por eventos suele usarse como parte de un proceso de administración de registros.
+ms.openlocfilehash: d03abdc43a62d703fdebdb4cf9571dfbab9d744b
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "30866366"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32256448"
 ---
 # <a name="overview-of-event-driven-retention"></a>Información general sobre la retención controlada por eventos
 
-Al conservar contenido, el período de retención suele basarse en la antigüedad del contenido (por ejemplo, puede conservar documentos durante siete años después de su creación y eliminarlos cuando transcurra ese período). Pero, con las etiquetas en Office 365, también puede hacer que un período de retención se base en el momento en que se produzca un tipo específico de evento. El evento desencadena el inicio del período de retención y se exigirán las acciones de retención de etiqueta en todo el contenido que tenga aplicada una etiqueta para ese tipo de evento.
+Al conservar contenido, el período de retención suele basarse en la antigüedad del contenido (por ejemplo, puede conservar documentos durante siete años después de su creación y eliminarlos cuando transcurra ese período). Pero, con las etiquetas de retención en Office 365, también puede hacer que un período de retención se base en el momento en que se produzca un tipo específico de evento. El evento desencadena el inicio del período de retención y se exigirán las acciones de retención de etiqueta en todo el contenido que tenga aplicada una etiqueta de retención para ese tipo de evento.
   
 Por ejemplo, puede usar etiquetas con la retención controlada por eventos para:
   
@@ -77,7 +77,7 @@ Este es el flujo de trabajo general para la retención controlada por eventos. A
   
 ### <a name="step-1-create-a-label-whose-retention-period-is-based-on-an-event"></a>Paso 1: Crear una etiqueta cuyo período de retención se base en un evento
 
-En el Centro de seguridad y cumplimiento, en el panel de navegación izquierdo, en **Clasificaciones**, seleccione **Etiquetas** \> **Crear una etiqueta**.
+En el Centro de cumplimiento de Microsoft 365, Centro de seguridad de Microsoft 365 o el centro de seguridad y cumplimiento de Office 365, en el panel de navegación izquierdo, elija **Clasificaciones** > **Etiquetas** >  pestaña **Etiquetas de retención** > **Crear una etiqueta**.
   
 Al crear la etiqueta, active la retención y, después, seleccione la opción que se muestra abajo para conservar o eliminar el contenido basándose en un evento. Esto quiere decir que la configuración de retención no se aplicará hasta el paso 5, cuando cree un evento en la página **Eventos**. 
   
@@ -103,7 +103,7 @@ Tenga en cuenta que, después de seleccionar un tipo de evento y crear la etique
   
 ### <a name="step-3-publish-or-auto-apply-the-label"></a>Paso 3: Publicar o aplicar automáticamente una etiqueta
 
-Al igual que cualquier etiqueta, necesita publicar o aplicar automáticamente una etiqueta basada en eventos para que se aplique en el contenido (de forma manual o automática). Para hacerlo, vaya a la página **Etiquetas**. Tenga en cuenta que las etiquetas que clasifican contenido como registro solo pueden publicarse y aplicarse de forma manual en el contenido; no se pueden aplicar automáticamente en el contenido. 
+Al igual que cualquier etiqueta, necesita publicar o aplicar automáticamente una etiqueta basada en eventos para que se aplique en el contenido (de forma manual o automática). Para hacerlo, vaya a la página **Etiquetas** o **Directivas de etiquetas**. Tenga en cuenta que las etiquetas que clasifican contenido como registro solo pueden publicarse y aplicarse de forma manual en el contenido. 
   
 ![Opciones para publicar o aplicar automáticamente una etiqueta](media/c9232c54-bbc0-40d2-abc2-122d5d1e70af.png)
   
@@ -149,7 +149,7 @@ Por último, seleccione la fecha en que se produjo el evento; esta fecha se usar
   
 ## <a name="use-content-search-to-find-all-content-with-a-specific-label-or-asset-id"></a>Usar Búsqueda de contenido para encontrar todo el contenido que tenga aplicada una etiqueta o id. de activo específicos
 
-Después de asignar etiquetas a contenido (ya sea por los usuarios o aplicadas automáticamente), puede usar Búsqueda de contenido en el Centro de seguridad y cumplimiento para encontrar todo el contenido clasificado con un id. de activo específico.
+Después de asignar etiquetas a contenido, puede usar la búsqueda de contenido para encontrar todo el contenido clasificado con una etiqueta específica o que contiene un id. de activo específico.
   
 Al crear una búsqueda de contenido:
   
@@ -167,11 +167,9 @@ Para obtener más información, vea [Conceder acceso a los usuarios al Centro de
   
 ## <a name="automate-events-by-using-powershell"></a>Automatizar eventos con PowerShell
 
-En el Centro de seguridad y cumplimiento de Office 365, solo se pueden crear eventos de forma manual (no se puede desencadenar automáticamente un evento cuando se produzca). Pero puede usar un script de PowerShell para automatizar la retención basada en eventos desde sus aplicaciones empresariales.
-  
-Actualmente, trabajamos con API para que pueda conectar sus aplicaciones empresariales (como aplicaciones financieras, de recursos humanos o CRM) a la retención controlada por eventos. Por ejemplo, podrá conectar su sistema de recursos humanos a la retención controlada por eventos de forma que, cuando un empleado abandone la organización, se desencadene automáticamente un evento de ese tipo de evento.
-  
-Hasta entonces, estos son los cmdlet de PowerShell disponibles para la retención controlada por eventos:
+En el centro de administración, solo puede crear eventos manualmente. No es posible desencadenar automáticamente un evento cuando se produce. Sin embargo, puede usar una API de Rest para desencadenar eventos automáticamente. Para obtener más información, vea [Automatizar la retención basada en eventos](automate-event-driven-retention.md).
+
+También puede usar un script de PowerShell para automatizar la retención basada en eventos desde sus aplicaciones empresariales. Estos son los cmdlets de PowerShell disponibles para la retención controlada por eventos:
   
 - [Get-ComplianceRetentionEventType](https://go.microsoft.com/fwlink/?linkid=873002)
     
