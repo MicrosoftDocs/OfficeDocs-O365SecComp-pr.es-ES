@@ -10,11 +10,11 @@ localization_priority: Normal
 ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
 description: Los administradores pueden obtener información sobre las alertas de cola y las colas del panel del flujo de correo en el centro de seguridad & cumplimiento.
 ms.openlocfilehash: 490665bb6b062c5a0b93c988adea9eeb9827cb86
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30998613"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32267724"
 ---
 # <a name="queue-alerts-and-queues"></a>Colas y alertas de cola
 
@@ -70,6 +70,6 @@ Al hacer clic en el número de mensajes en cola en las **colas**, los detalles d
 
 ![Detalles de la cola](media/4eb088fe-5dd9-4bf4-b959-c1bb2545c515.png)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Recursos adicionales
 
 Para obtener más información acerca de otras indicaciones de flujo de correo en el panel de flujo de correo, consulte [mail Flow Insights en el centro de seguridad _AMP_ cumplimiento](mail-flow-insights.md).

@@ -15,11 +15,11 @@ search.appverid:
 ms.assetid: 97e06a7a-ef9a-4ce8-baea-18b9e20449a3
 description: Si un nuevo empleado u otro usuario necesita tener acceso al contenido de un buzón inactivo en Office 365, puede restaurar (o combinar) el contenido del buzón inactivo en un buzón existente.
 ms.openlocfilehash: 1b80cf5bf9361959f1622b7b42f5c7598609539c
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30999313"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32264932"
 ---
 # <a name="restore-an-inactive-mailbox-in-office-365"></a>Restaurar un buzón inactivo en Office 365
 

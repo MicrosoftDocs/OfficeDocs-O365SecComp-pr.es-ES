@@ -18,11 +18,11 @@ ms.collection:
 - M365-security-compliance
 description: La depuración automática de cero horas (ZAP) es una característica de protección de correo electrónico que detecta los mensajes con correo no deseado o malware que ya se han entregado a los buzones de los usuarios y, a continuación, inofensivos en el contenido malintencionado. Cómo hace ZAP esto depende del tipo de contenido malintencionado detectado.
 ms.openlocfilehash: 507cd6af5320a3b925841786136d518c996e4d29
-ms.sourcegitcommit: 86ff2eba1d57b9d5288840788529e69ad9d836b6
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "31818607"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32266912"
 ---
 # <a name="zero-hour-auto-purge---protection-against-spam-and-malware"></a>Purga automática cero horas: protección contra correo no deseado y malware
 
@@ -95,6 +95,6 @@ ZAP sigue funcionando en este caso, a menos que el mensaje se haya eliminado o e
 
 ## <a name="related-topics"></a>Temas relacionados
 
-[Protección contra correo no deseado en Office 365](anti-spam-protection.md)
+[Protección contra correo no deseado de Office 365](anti-spam-protection.md)
   
-[Bloquear el correo no deseado con el filtro contra correo no deseado de Office 365 para evitar problemas de falsos negativos](reduce-spam-email.md)
+[Bloquear el correo no deseado con el filtro de correo no deseado de Office 365 para evitar problemas de negativos falsos](reduce-spam-email.md)

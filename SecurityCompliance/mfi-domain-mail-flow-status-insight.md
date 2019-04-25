@@ -11,11 +11,11 @@ ms.assetid: ''
 description: Los administradores pueden obtener información sobre el conocimiento del estado del flujo de correo del dominio superior del panel de flujo de correo en el centro de seguridad & cumplimiento.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.openlocfilehash: baa69c3373623d4742d6d957a5022012fb60f7e7
-ms.sourcegitcommit: e7a776a04ef6ed5e287a33cfdc36aa2d72862b55
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "31000673"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32267049"
 ---
 # <a name="top-domain-mail-flow-status-insight"></a>Información del estado del flujo de correo de dominio superior
 
@@ -34,6 +34,6 @@ Una x de color rojo para un dominio indica que se ha cambiado el registro MX y q
 
 ![El control flotante de detalles en la información del estado del flujo superior del dominio](media/domain-mail-flow-status-flyout.png)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Recursos adicionales
 
 Para obtener más información acerca de otras indicaciones de flujo de correo en el panel de flujo de correo, consulte [mail Flow Insights en el centro de seguridad _AMP_ cumplimiento](mail-flow-insights-v2.md).
