@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Aprenda a usar etiquetas de Office como parte de su plan de protección RGPD.
-ms.openlocfilehash: 32f94e02dac81abaef46ef5495701e5037ff8c6b
-ms.sourcegitcommit: 54d58da1777eb83adb82826d1bb1adb94903c8e1
+ms.openlocfilehash: a5ffcca94ea98a3d6426dc60fae0f6cb98d0029d
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "30955203"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32244181"
 ---
 # <a name="apply-labels-to-personal-data-in-office-365"></a>Aplicar etiquetas a datos personales en Office 365
 

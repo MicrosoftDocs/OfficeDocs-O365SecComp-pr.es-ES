@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En este tema se explica cómo configurar los flujos de procesos empresariales para automatizar la retención mediante eventos con la API de REST de Microsoft 365.
-ms.openlocfilehash: 55bfdccea07b6aaa9227974b43b1b20adcf97ff5
-ms.sourcegitcommit: 6aa82374eef09d2c1921f93bda3eabeeb28aadeb
+ms.openlocfilehash: 99ece368cbda5318556d1f3863fa07ee11a1d003
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "30455092"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32251106"
 ---
 # <a name="automate-event-based-retention"></a>Retención automática basada en eventos
 
@@ -50,18 +50,18 @@ Esta sección describe lo que es necesario realizar antes de retener contenido.
 
 Identifica las diferentes funciones en una organización que realizan tareas de administración de registros que serían responsables de una retención eficaz y eficiente de los documentos empresariales.
 
-  | **Rol**| **Función**|
+  | **Rol**| **Rol**|
   | - | - |
-  | Administración del Centro de seguridad y cumplimiento | Crea tipos de eventos de retención, etiquetas de retención y repositorios de registros en SharePoint |
+  | Administración | Crea tipos de eventos de retención, etiquetas de retención y repositorios de registros en SharePoint |
   | Administrador de registros                                  | Proporciona detalles de cumplimiento y guías de políticas de retención y programaciones de retención   |
   | Administrador del sistema (empresa)                          | Configura y administra sistemas externos para que funcionen con Microsoft 365                       |
   | Trabajador de información                               | Administra el ciclo de vida de los procesos de su empresa (Recursos Humanos, Finanzas, TI, etc.)                 |
 
 ### <a name="set-up-the-security--compliance-center"></a>Configuración del Centro de seguridad y cumplimiento
   
-1. La administración del cumplimiento crea un tipo de evento, como el final de una relación laboral, la finalización del contrato o el final de fabricación del producto (consulta el proceso paso a paso en el artículo [Retención de eventos](https://docs.microsoft.com/es-ES/office365/securitycompliance/event-driven-retention)
+1. La administración del cumplimiento crea un tipo de evento, como el final de una relación laboral, la finalización del contrato o el final de fabricación del producto (consulta el proceso paso a paso en el artículo [Retención de eventos](https://docs.microsoft.com/es-ES/office365/securitycompliance/event-driven-retention)).
     
-1. La administración de cumplimiento crea una etiqueta de retención basada en un evento y asocia la etiqueta con un tipo de evento
+1. La administración de cumplimiento crea una etiqueta de retención basada en un evento y asocia la etiqueta con un tipo de evento.
     
 1. Hay 4 tipos de desencadenadores para las etiquetas de retención:
             
@@ -73,7 +73,7 @@ Identifica las diferentes funciones en una organización que realizan tareas de 
                 
     1. Basado en eventos
     
-1. La administración del cumplimiento publica la etiqueta
+1. La administración del cumplimiento publica la etiqueta de retención.
 
 ### <a name="set-up-sharepoint"></a>Configurar SharePoint
    
@@ -93,7 +93,7 @@ Para crear un repositorio de registros, la administración del cumplimiento:
 
 Existen dos formas de desencadenar la retención basada en eventos:
 
-- **Con la interfaz de usuario del Centro de cumplimiento y seguridad** Este es un proceso que puede usarse para conservar menos contenido por vez o cuando la frecuencia que activa la retención es ocasional (mensual o anual). Para obtener más información sobre este método, consulta [Introducción a la retención basada en eventos](event-driven-retention.md). Sin embargo, esta forma de activar la retención puede requerir demasiado tiempo y ser propensa a errores, por lo que se reduce la escalabilidad. Por lo tanto, una solución perfecta y automatizada para activar la retención puede mejorar la seguridad y el cumplimiento de datos.
+- **Con la interfaz de usuario del Centro de administración** Este es un proceso que puede usarse para conservar menos contenido por vez o cuando la frecuencia que activa la retención es ocasional (mensual o anual). Para obtener más información sobre este método, consulte [Introducción a la retención basada en eventos](event-driven-retention.md). Sin embargo, esta forma de activar la retención puede requerir demasiado tiempo y ser propensa a errores, por lo que se reduce la escalabilidad. Por lo tanto, una solución perfecta y automatizada para activar la retención puede mejorar la seguridad y el cumplimiento de datos.
 
 - **Con una API de REST de M365** Este proceso puede usarse cuando se deben retener grandes cantidades de contenido a la vez o cuando la frecuencia para activar la retención es asidua (diaria o semanal). El flujo detecta cuando un evento se ejecuta en el sistema de línea de negocio y crea automáticamente un evento relacionado en el Centro de seguridad y cumplimiento. No es necesario crear manualmente un evento en la interfaz de usuario cada vez que se produce un evento.
 
@@ -135,11 +135,11 @@ Por lo tanto, un proceso automatizado para activar estos relojes de retención d
 
   - Administración de SCC inicia
 
-  - sesión en el Centro de seguridad y cumplimiento.
+  - Inicia sesión en el Centro de seguridad y cumplimiento.
 
-  - La administración de SCC crea tipos de eventos relacionados con el empleado como “Desvinculación del empleado”, “Contratación del empleados” en el Centro de seguridad y cumplimiento.
+  - La administración de SCC crea tipos de eventos relacionados con el empleado como “Desvinculación del empleado”, “Contratación del empleados”.
 
-  - La administración de SCC crea la etiqueta de "Retención de empleados" en el Centro de seguridad y cumplimiento.
+  - La administración de SCC crea la etiqueta de "Retención de empleados".
 
   - Esta etiqueta de "Retención de empleados" se publica y se aplican manual o automáticamente a los archivos de empleado en SharePoint.
 
@@ -433,9 +433,9 @@ Un sistema de administración de relaciones de cliente (CRM) puede trabajar con 
 
   - La administración de SSC inicia sesión en el Centro de seguridad y cumplimiento.
 
-  - La administración de SCC crea tipos de eventos relacionados con el contrato como eventos de "Creación del contrato" y "Expiración del contrato" en el Centro de seguridad y cumplimiento.
+  - La administración de SCC crea tipos de eventos relacionados con el contrato como eventos de "Creación del contrato" y "Expiración del contrato".
 
-  - La administración de SCC crea la etiqueta "Expiración del contrato" en el Centro de seguridad y cumplimiento.
+  - La administración de SCC crea la etiqueta "Expiración del contrato".
 
   - Esta etiqueta de "Expiración del contrato" se publica y se aplican de forma manual o automática a los archivos del contrato en SharePoint.
 
@@ -461,9 +461,9 @@ Un sistema de planeación de recursos empresariales (ERP) puede trabajar con Mic
 
   - La administración de SSC inicia sesión en el Centro de seguridad y cumplimiento.
 
-  - La administración de SCC crea tipos de eventos relacionados con el empleado como "Inicio de fabricación del producto" y "Final de fabricación del producto" en el Centro de seguridad y cumplimiento.
+  - La administración de SCC crea tipos de eventos relacionados con el empleado como "Inicio de fabricación del producto" y "Final de fabricación del producto".
 
-  - La administración de SCC crea la etiqueta "Final de fabricación del producto" en el Centro de seguridad y cumplimiento.
+  - La administración de SCC crea la etiqueta "Final de fabricación del producto".
 
   - Esta etiqueta de "Final de fabricación del producto" se publica y se aplica de forma manual o automática a los archivos del producto en SharePoint
 
