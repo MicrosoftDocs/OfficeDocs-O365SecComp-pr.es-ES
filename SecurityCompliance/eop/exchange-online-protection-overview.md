@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 description: Microsoft Protección de Exchange Online (EOP) es un servicio de filtro de correo electrónico basado en nube que ayuda a proteger su organización contra correo no deseado y malware, e incluye características para proteger a su organización contra incumplimiento de directivas de mensajería.
-ms.openlocfilehash: c8450d5204635788a044538d701e23f4f77d1e0f
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: a0b736eb9773ace87f32f1272b3f4326532206d2
+ms.sourcegitcommit: eca85431f4e57878a8c160b7620adf5c44ef40e6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256168"
+ms.lasthandoff: 04/25/2019
+ms.locfileid: "33306584"
 ---
 # <a name="exchange-online-protection-overview"></a>Información general de Exchange Online Protection
 
@@ -25,9 +25,11 @@ Estas son las principales formas en las que se puede usar EOP para la protecció
   
 - **En un escenario independiente** EOP proporciona protección de correo electrónico basada en la nube para su entorno local de Microsoft Exchange Server 2013, versiones heredadas de Exchange Server o para cualquier otra solución de correo SMTP local. 
     
-- **Como parte de Microsoft Exchange Online**: de manera predeterminada, EOP protege los buzones de Microsoft Exchange Online hospedados en la nube. 
+- **Como parte de Microsoft Exchange Online**: de manera predeterminada, EOP protege los buzones de Microsoft Exchange Online hospedados en la nube. Consulte [proteger contra amenazas](../protect-against-threats.md) para ayudarle a configurar estas capacidades de Exchange Online. 
     
 - **En una implementación híbrida**: EOP se puede configurar para que proteja el entorno de mensajería y controle el enrutamiento del correo cuando se tiene una mezcla de buzones locales y en la nube. 
+
+Estos artículos de Exchange Online Protection se aplican a entornos híbridos y locales. 
     
 ## <a name="how-eop-works"></a>Cómo funciona EOP
 
