@@ -16,12 +16,12 @@ search.appverid:
 ms.custom: ''
 ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: 'Resumen: Cree sitios de grupo de SharePoint Online públicos, privados, confidenciales o extremadamente confidenciales en el entorno de desarrollo y prueba de una campaña política.'
-ms.openlocfilehash: 7e28034955a54fe7c2013dcaaf606c24c4089e75
-ms.sourcegitcommit: f57b4001ef1327f0ea622e716a4d7d78f1769b49
+ms.openlocfilehash: 29220c83eb207d58586b39d101e7139dc6ddf94a
+ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "30216270"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "32259188"
 ---
 # <a name="create-team-sites-in-a-political-campaign-devtest-environment"></a>Crear sitios de grupo en un entorno de desarrollo y prueba de campaña política
 
@@ -37,7 +37,7 @@ En primer lugar, siga las instrucciones de [Configurar grupos y usuarios en un e
 
 En esta fase se crean las etiquetas para los diferentes niveles de seguridad de las carpetas de documentos de sitios de grupo de SharePoint Online.
   
-1. Si es necesario, inicie sesión en el portal de Office 365 con las credenciales de la cuenta de administrador global de la suscripción de evaluación. Para obtener ayuda, vea [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4) (Dónde iniciar sesión en Office 365).
+1. Si es necesario, inicie sesión en el centro de administración con las credenciales de la cuenta de administrador global de la suscripción de evaluación. Para obtener ayuda, vea [Dónde iniciar sesión en Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
     
 2. En la pestaña **Inicio de Microsoft Office**, haga clic en el icono **Administrador**.
     
@@ -85,7 +85,7 @@ En esta fase se crean y configuran los sitios de grupo de SharePoint Online para
 
 Para crear un sitio de grupo público de línea base de SharePoint Online, haga lo siguiente:
   
-1. Si es necesario, use un explorador en el equipo local e inicie sesión en el portal de Office 365 ([https://portal.office.com](https://portal.office.com)) con la cuenta de administrador global.
+1. Si es necesario, use un explorador en el equipo local e inicie sesión en el centro de administración ([https://admin.microsoft.com](https://admin.microsoft.com)) con la cuenta de administrador global.
     
 2. En la lista de iconos, haga clic en **SharePoint**.
     
@@ -115,7 +115,7 @@ Después, configure la carpeta de documentos del sitio de grupo Toda la campaña
 
 Para crear un sitio de grupo privado de línea base de SharePoint Online para un proyecto dentro de la organización, haga lo siguiente:
   
-1. Si es necesario, use un explorador en el equipo local e inicie sesión en el portal de Office 365 ([https://portal.office.com](https://portal.office.com)) con la cuenta de administrador global.
+1. Si es necesario, use un explorador en el equipo local e inicie sesión en el centro de administración ([https://admin.microsoft.com](https://admin.microsoft.com)) con la cuenta de administrador global.
     
 2. En la lista de iconos, haga clic en **SharePoint**.
     
@@ -145,7 +145,7 @@ Después, configure la carpeta de documentos del sitio de grupo Proyecto de camp
 
 Para crear un sitio de grupo aislado de SharePoint Online de nivel confidencial para recursos de marketing de la campaña, haga lo siguiente:
   
-1. Abra un explorador en el equipo local e inicie sesión en el portal de Office 365 ([https://portal.office.com](https://portal.office.com)) con la cuenta de administrador global.
+1. Abra un explorador en el equipo local e inicie sesión en el centro de administración ([https://admin.microsoft.com](https://admin.microsoft.com)) con la cuenta de administrador global.
     
 2. En la lista de iconos, haga clic en **SharePoint**.
     
@@ -257,7 +257,7 @@ Después, configure una directiva de prevención de pérdida de datos (DLP) que 
 
 Para crear un sitio de grupo aislado de SharePoint Online de nivel extremadamente confidencial para recursos estratégicos de la campaña, haga lo siguiente:
   
-1. Si es necesario, use un explorador en el equipo local e inicie sesión en el portal de Office 365 ([https://portal.office.com](https://portal.office.com)) con la cuenta de administrador global.
+1. Si es necesario, use un explorador en el equipo local e inicie sesión en el centro de administración ([https://admin.microsoft.com](https://admin.microsoft.com)) con la cuenta de administrador global.
     
 2. En la lista de iconos, haga clic en **SharePoint**.
     
@@ -321,9 +321,9 @@ Después, configure la carpeta de documentos del sitio de grupo Estrategia de la
     
 Después, configure una directiva DLP que bloquee a los usuarios cuando compartan un documento en un sitio de grupo de SharePoint Online con la etiqueta Extremadamente confidencial fuera de la organización. Esta directiva DLP se aplicará a los recursos del sitio Estrategia de la campaña.
   
-1. En caso necesario, use un explorador en el equipo local e inicie sesión en el portal de Office 365 ([https://portal.office.com](https://portal.office.com)) con una cuenta que tenga el rol Administrador de seguridad o Administrador de la compañía.
+1. Si fuera necesario, use un explorador en el equipo local e inicie sesión en el centro de administración ([https://admin.microsoft.com](https://admin.microsoft.com)) con una cuenta que tenga el rol Administrador de seguridad o Administrador de la compañía.
     
-2. En la pestaña **Inicio de Microsoft Office** del explorador, haga clic en el icono **Seguridad y cumplimiento**.
+2. En la pestaña **Inicio de Microsoft Office** del explorador, haga clic en el icono de **Seguridad y cumplimiento**.
     
 3. En la nueva pestaña **Seguridad y cumplimiento** del explorador, haga clic en **Prevención de pérdida de datos > Directiva**.
     
@@ -363,11 +363,11 @@ Después, configure una directiva DLP que bloquee a los usuarios cuando comparta
     
 20. En el panel **Revise su configuración**, haga clic en **Crear** y luego en **Cerrar**.
     
-Siga las instrucciones de [Activación de Azure Rights Management desde el Centro de administración de Office 365](https://docs.microsoft.com/information-protection/deploy-use/activate-office365).
+Siga las instrucciones de [Activate Azure RMS with the Microsoft 365 admin center](https://docs.microsoft.com/information-protection/deploy-use/activate-office365) (Activación de Azure RMS con el Centro de administración de Microsoft 365).
   
 Después, siga estos pasos para configurar Azure Information Protection con una nueva directiva con ámbito y la subetiqueta de protección y permisos:
   
-1. Inicie sesión en el portal de Office 365 con una cuenta que tenga el rol Administrador de seguridad o Administrador de la compañía. Para obtener ayuda, vea [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4) (Dónde iniciar sesión en Office 365).
+1. Inicie sesión en el centro de administración con una cuenta que tenga el rol de Administrador de seguridad o Administrador de la compañía. Para obtener ayuda, vea [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4) (Dónde iniciar sesión en Office 365).
     
 2. En una pestaña independiente del explorador, vaya a Azure Portal ([https://portal.azure.com](https://portal.azure.com)).
     
@@ -411,7 +411,7 @@ Después, siga estos pasos para configurar Azure Information Protection con una 
   
 Ahora ya puede crear documentos en estos cuatro sitios y probar el acceso a ellos con diferentes cuentas de usuario. 
   
-Para proteger un documento con Azure Information Protection y esta nueva etiqueta, debe [instalar el cliente de Azure Information Protection](https://docs.microsoft.com/information-protection/rms-client/install-client-app) en un equipo de prueba, instalar Office desde el portal de Office 365 y luego iniciar sesión desde Microsoft Word con una cuenta del grupo **Personal directivo y estratégico** de la suscripción de evaluación.
+Para proteger un documento con Azure Information Protection y esta nueva etiqueta, debe [instalar el cliente de Azure Information Protection](https://docs.microsoft.com/information-protection/rms-client/install-client-app) en un equipo de prueba, instalar Office desde el Centro de administración y luego iniciar sesión desde Microsoft Word con una cuenta del grupo **Personal directivo y estratégico** de la suscripción de evaluación.
   
 ## <a name="see-also"></a>Vea también
 
