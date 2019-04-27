@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Con una directiva de prevención de pérdida de datos (DLP) en el &amp; centro de seguridad y cumplimiento de Office 365, puede identificar, supervisar y proteger automáticamente la información confidencial en Office 365.
-ms.openlocfilehash: da8acd8904ac6a9b1945c8f794bad84a0adc64fb
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: fedb48c20720a7eaa66cd0ea7d2184dd3dc4df55
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32262302"
+ms.lasthandoff: 04/26/2019
+ms.locfileid: "33362058"
 ---
 # <a name="overview-of-data-loss-prevention-policies"></a>Información general sobre directivas de prevención de pérdida de datos
 
@@ -78,7 +78,7 @@ Una directiva DLP puede encontrar y proteger información confidencial en Office
   
 Tenga en cuenta que si elige incluir o excluir sitios de SharePoint específicos o cuentas de OneDrive, una directiva DLP no puede contener más de 100 estas inclusiones y exclusiones. Aunque este límite exista, comprenda que puede superar este límite aplicando una directiva de toda la organización o una directiva que se aplique a ubicaciones completas.
   
-### <a name="rules"></a>Reglas
+### <a name="rules"></a>Rules
 
 Las reglas son el cumplimiento de los requisitos empresariales en el contenido de la organización. Una directiva contiene una o más reglas, y cada regla consta de las condiciones y acciones. Para cada regla, cuando se cumplen las condiciones, las acciones se realizan automáticamente. Las reglas se ejecutan secuencialmente, comenzando por la regla de mayor prioridad en cada Directiva.
   
@@ -478,11 +478,7 @@ La evaluación de la Directiva DLP en Office está diseñada para no afectar al 
 
 ### <a name="policy-evaluation-in-microsoft-teams"></a>Evaluación de directivas en Microsoft Teams
  
-Al crear una directiva DLP que incluya a Microsoft Teams como ubicación, la Directiva se sincroniza desde el centro de seguridad &amp; y cumplimiento de Office 365 a las cuentas de usuario y los canales y chats de Microsoft Teams. Según la configuración de las directivas de DLP, cuando alguien intente compartir información confidencial en un canal o chat de Microsoft Teams, el mensaje se puede bloquear o revocar. Además, los documentos que contengan información confidencial y que se compartan con invitados (usuarios externos) no se abrirán para esos usuarios.
-
-Por ejemplo, supongamos que alguien intenta compartir información confidencial en un canal o chat de Microsoft Teams con usuarios externos. SuPongamos que hay una directiva DLP definida para evitar esto. Con la protección, se eliminan los mensajes que contienen información confidencial enviada a los usuarios externos. Esto ocurre en segundos, y se realiza automáticamente, según la configuración de la Directiva DLP.
-
-Sugerencias de directivas envíe una notificación a los remitentes sobre los motivos por los que sus mensajes fueron bloqueados o revocados. Por ejemplo, es posible que se indique a un remitente que su mensaje contiene información de identificación personal (PII) que no se permite compartir con nadie, o que no se puede compartir un documento que contiene PII con personas de fuera de su organización. A continuación, el remitente puede editar su mensaje para que sea compatible con las directivas de DLP.
+Al crear una directiva DLP que incluya a Microsoft Teams como ubicación, la Directiva se sincroniza desde el centro de seguridad &amp; y cumplimiento de Office 365 a las cuentas de usuario y los canales y chats de Microsoft Teams. Según la configuración de las directivas de DLP, cuando alguien intente compartir información confidencial en un canal o chat de Microsoft Teams, el mensaje se puede bloquear o revocar. Además, los documentos que contengan información confidencial y que se compartan con invitados (usuarios externos) no se abrirán para esos usuarios. Para obtener más información, consulte [prevención de pérdida de datos y Microsoft Teams](dlp-microsoft-teams.md).
  
 ## <a name="permissions"></a>Permisos
 
@@ -526,10 +522,10 @@ Sin embargo, los informes DLP necesitan extraer datos de toda la oficina 365, in
     
 - [Qué incluyen las plantillas de directiva DLP](what-the-dlp-policy-templates-include.md)
     
-- [Qué buscan los tipos de información confidencial](what-the-sensitive-information-types-look-for.md)
+- [Información que buscan los tipos de información confidencial](what-the-sensitive-information-types-look-for.md)
     
 - [Qué buscan las funciones de DLP](what-the-dlp-functions-look-for.md)
     
-- [Crear un tipo personalizado de información confidencial](create-a-custom-sensitive-information-type.md)
+- [Crear un tipo de información confidencial personalizado](create-a-custom-sensitive-information-type.md)
     
 
