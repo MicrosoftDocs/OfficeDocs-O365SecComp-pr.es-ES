@@ -16,11 +16,11 @@ search.appverid:
 - MET150
 description: Los administradores pueden obtener información sobre los permisos que están disponibles en el centro de seguridad & cumplimiento de Office 365.
 ms.openlocfilehash: 4d5fb942ea613b7b732d1150de497b1992dbd717
-ms.sourcegitcommit: 81e86658c9c890a2fd0c36f73f1c94941cc74775
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32439344"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33402978"
 ---
 # <a name="permissions-in-the-office-365-security--compliance-center"></a>Permisos en el Centro de seguridad y cumplimiento de Office 365
 
@@ -93,7 +93,7 @@ Tenga en cuenta que los siguientes roles no se asignan al grupo de roles adminis
 
 |**Rol**|**Descripción**|**Asignaciones de grupo de roles preDeterminadas**|
 |:-----|:-----|:-----|
-|**Registros de auditoría**|Active y configure la auditoría para la organización de Office 365, vea los informes de auditoría de la organización y, a continuación, exporte estos informes a un archivo.|Administración de la organización <br/><br/> Administración de registros <br/><br/> Administrador de seguridad|
+|**Registros de auditoría**|Active y configure la auditoría para la organización de Office 365, vea los informes de auditoría de la organización y, a continuación, exporte estos informes a un archivo.|Administración de la organización <br/><br/> Records Management <br/><br/> Administrador de seguridad|
 |**Administración de casos**|Crear, editar, eliminar y controlar el acceso a casos de eDiscovery.|Administrador de cumplimiento <br/><br/> Administrador de exhibición de documentos electrónicos <br/><br/> Administración de la organización|
 |**Comunicación**|Crear, editar, eliminar y controlar el acceso a la comunicación.|Administrador de exhibición de documentos electrónicos|
 |**Administrador de cumplimiento**|Ver y editar la configuración y los informes de las características de cumplimiento.|Administrador de cumplimiento <br/><br/> Administrador de datos de cumplimiento <br/><br/> Administración de la organización|
@@ -109,8 +109,8 @@ Tenga en cuenta que los siguientes roles no se asignan al grupo de roles adminis
 |**Administrar alertas**|Ver y editar la configuración y los informes de las alertas.|Administrador de cumplimiento <br/><br/> Administrador de datos de cumplimiento <br/><br/> Administración de la organización <br/><br/> Administrador de seguridad <br/><br/> Operador de seguridad|
 |**Configuración de la organización**|Ejecute, vea y exporte informes de auditoría y administre directivas de cumplimiento para DLP, dispositivos y conservación.|Administrador de cumplimiento <br/><br/> Administrador de datos de cumplimiento <br/><br/> Administración de la organización|
 |**Preview**|Ver una lista de los elementos que se devuelven en las búsquedas de contenido y abrir cada elemento de la lista para ver su contenido.|Administrador de exhibición de documentos electrónicos|
-|**RecordManagement**|Ver y editar la configuración y los informes de la característica de administración de registros.|Administrador de cumplimiento <br/><br/> Administrador de datos de cumplimiento <br/><br/> Administración de la organización <br/><br/> Administración de registros|
-|**Administración de retención**|Administrar directivas de retención.|Administración de registros <br/><br/> Administrador de cumplimiento <br/><br/> Administrador de datos de cumplimiento <br/><br/> Administración de la organización|
+|**RecordManagement**|Ver y editar la configuración y los informes de la característica de administración de registros.|Administrador de cumplimiento <br/><br/> Administrador de datos de cumplimiento <br/><br/> Administración de la organización <br/><br/> Records Management|
+|**Administración de retención**|Administrar directivas de retención.|Records Management <br/><br/> Administrador de cumplimiento <br/><br/> Administrador de datos de cumplimiento <br/><br/> Administración de la organización|
 |**Revisar**|Use la exhibición avanzada de documentos electrónicos de Office 365 para realizar un seguimiento, etiquetar, analizar y probar documentos que se les asignan.|Administrador de exhibición de documentos electrónicos <br/><br/> Reviewer|
 |**DesCifrado de RMS**|DesCifrar el contenido protegido por RMS al exportar resultados de búsqueda.|Administrador de exhibición de documentos electrónicos|
 |**Administración de funciones**|Administre la pertenencia al grupo de roles y cree o elimine grupos de roles personalizados.|Administración de la organización|

@@ -10,18 +10,18 @@ ms.date: 02/27/2019
 ms.service: O365-seccomp
 localization_priority: Normal
 description: Siga estos pasos para configurar las aplicaciones de Azure AD Office 365 para que se controlen con el control de aplicación de acceso condicional de seguridad de aplicación de nube de Office 365.
-ms.openlocfilehash: 72be95b3213b90cfe60d851d0852d465cdbe6ef9
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 74cc415220282491694bf417a6761fd43a6d3521
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32263122"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33402948"
 ---
 # <a name="deploy-conditional-access-app-control-for-office-365-apps"></a>Implementar el Control de aplicaciones de acceso condicional para las aplicaciones de Office 365
 
 |Evaluación * *\>**|Planeación * *\>**|Implementación * *\>**|Uso * * * *|
 |:-----|:-----|:-----|:-----|
-|[Empezar a evaluar](office-365-cas-overview.md) <br/> |[Empezar a planear](get-ready-for-office-365-cas.md) <br/> |Ya está aquí.  <br/> [Siguiente paso](ocas-session-policies.md) <br/> |[Empezar a usar](utilization-activities-for-ocas.md) <br/> |
+|[Empezar a evaluar](office-365-cas-overview.md) <br/> |[Empezar a planear](get-ready-for-office-365-cas.md) <br/> |Ya está aquí.  <br/> [Paso siguiente](ocas-session-policies.md) <br/> |[Empezar a usar](utilization-activities-for-ocas.md) <br/> |
 
 Siga estos pasos para configurar las aplicaciones de Azure AD Office 365 para que se controlen con el control de aplicación de acceso condicional de seguridad de aplicación de nube de Office 365.
 
@@ -50,7 +50,7 @@ Siga estos pasos para configurar las aplicaciones de Azure AD Office 365 para qu
 
 6. Agregue las **asignaciones** de condición aplicables o conceda **los controles** (opcional).
 
-> ![Acceso condicional de Azure AD](media/image1.png)
+> ![Acceso condicional de Azure AD](media/OCASimage1.png)
 
 ## <a name="step-2-sign-in-with-a-user-scoped-to-the-policy-in-the-apps"></a>Paso 2: iniciar sesión con un usuario en el ámbito de la Directiva en las aplicaciones 
 
@@ -72,7 +72,7 @@ para configurar una directiva avanzada, cree una directiva de [acceso](ocas-acc
 
 3. Una vez cargado el certificado, puede crear directivas de acceso y directivas de sesión basadas en la **etiqueta de dispositivo** y el **certificado de cliente válido**.
 
-![IDENTIFICADOR de dispositivo de control de aplicación de acceso condicional](media/image2.png)
+![IDENTIFICADOR de dispositivo de control de aplicación de acceso condicional](media/OCASimage2.png)
 
 > [!NOTE]
 > Solo se solicita un certificado a un usuario si la sesión coincide con una directiva que usa el filtro de certificado de cliente válido.

@@ -11,11 +11,11 @@ localization_priority: Normal
 ms.assetid: 1270a65f-ddc3-4430-b500-4d3a481efb1e
 description: Microsoft Protección de Exchange Online (EOP) es un servicio de filtro de correo electrónico basado en nube que ayuda a proteger su organización contra correo no deseado y malware, e incluye características para proteger a su organización contra incumplimiento de directivas de mensajería.
 ms.openlocfilehash: a0b736eb9773ace87f32f1272b3f4326532206d2
-ms.sourcegitcommit: eca85431f4e57878a8c160b7620adf5c44ef40e6
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/25/2019
-ms.locfileid: "33306584"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33402888"
 ---
 # <a name="exchange-online-protection-overview"></a>Información general de Exchange Online Protection
 

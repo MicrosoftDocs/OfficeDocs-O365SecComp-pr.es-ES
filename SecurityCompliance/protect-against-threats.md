@@ -14,12 +14,12 @@ ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 ms.collection:
 - M365-security-compliance
 description: Use este artículo como guía para configurar las características de protección contra amenazas ahora.
-ms.openlocfilehash: 065071999130f209d63bcafc09ad72daceceac04
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 646ec220bf4649472d4ab885824010bc32ea862c
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261638"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33402988"
 ---
 # <a name="protect-against-threats-in-office-365"></a>Protección contra amenazas en Office 365
 
@@ -30,14 +30,19 @@ Office 365 incluye una variedad de características de protección contra amenaz
 
 ## <a name="requirements"></a>Requisitos
 
-### <a name="licenses"></a>Licencias
+### <a name="subscriptions"></a>Suscripciones
 
-Las características de protección contra amenazas se incluyen en todas las suscripciones de Office 365; sin embargo, algunas suscripciones incluyen características más avanzadas, como las de la protección contra amenazas avanzada de Office 365. En este artículo se incluyen requisitos de suscripción para cada área de protección.
+Las características de protección contra amenazas se incluyen en todas las suscripciones de Office 365; sin embargo, algunas suscripciones incluyen características más avanzadas. En la siguiente tabla se enumeran las características de protección que se incluyen en este artículo junto con los requisitos mínimos de suscripción.<br/>
 
-Para obtener más información sobre las características y subsriptions de la protección contra amenazas, vea los siguientes recursos:
-- [Descripción del servicio de Protección contra amenazas avanzada de Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
-- [Descripción del servicio Exchange Online Protection](https://docs.microsoft.com/en-us/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)
-- [Centro de seguridad y cumplimiento de Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)
+|Tipo de protección  |Requisito de suscripción  |
+|---------|---------|
+|Protección contra malware    | [Protección en línea de Exchange](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description) EOP        |
+|Protección frente a direcciones URL y archivos malintencionados en correo electrónico y documentos de Office    | [Office 365 ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)        |
+|Protección contra suplantación de identidad    | [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description)      |
+|Protección contra suplantación de identidad avanzada    | [Protección contra amenazas avanzada de Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)   |
+|Protección contra correo no deseado     | [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description)       |
+|Purgado automático de cero horas (para correo electrónico)    | [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description) EOP        |
+|Registro de auditoría (se usa con fines de informes)    | [Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description)        |
 
 ### <a name="roles-and-permissions"></a>Roles y permisos
 
@@ -51,9 +56,9 @@ Debe tener asignado un rol apropiado para configurar directivas en el [centro de
 
 Para obtener más información, consulte perMissions [in the &amp; Office 365 Security Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-## <a name="part-1---anti-malware"></a>Parte 1: anti-malware
+## <a name="part-1---anti-malware-protection"></a>Parte 1: protección contra malware
 
-La [protección contra malware](anti-malware-protection.md) está disponible en las suscripciones que incluyen [Exchange Online Protection](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description) (EOP). 
+La [protección contra malware](anti-malware-protection.md) está disponible en las suscripciones que incluyen [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description) (EOP). 
 
 1. En el [centro de seguridad & cumplimiento](https://protection.office.com), elija**anti-malware**de**Directiva** > de **Administración** > de amenazas.
 
@@ -69,9 +74,9 @@ La [protección contra malware](anti-malware-protection.md) está disponible en 
 
 Para obtener más información acerca de las opciones de directiva antimalware, vea [Configure anti-malware Policies](configure-anti-malware-policies.md).
 
-## <a name="part-2---zero-day-protection"></a>Parte 2: protección de día cero
+## <a name="part-2---protection-from-malicious-urls-and-files"></a>Parte 2: protección frente a direcciones URL y archivos malintencionados
 
-La protección de día cero está disponible en las suscripciones que incluyen la [protección contra amenazas avanzada de Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) (ATP) y se configuran mediante las directivas de [datos adjuntos seguros de ATP](atp-safe-attachments.md) y [vínculos seguros ATP](atp-safe-links.md) .
+La protección del tiempo de clic de los archivos y las direcciones URL malintencionadas está disponible en las suscripciones que incluyen [Office 365 ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) (ATP) y se configuran mediante las directivas de [datos adjuntos seguros de ATP](atp-safe-attachments.md) y [vínculos seguros ATP](atp-safe-links.md) .
 
 ### <a name="atp-safe-attachments-policies"></a>Directivas de datos adJuntos seguros de ATP
 
@@ -97,9 +102,7 @@ Para configurar los [datos adjuntos seguros de ATP](atp-safe-attachments.md), de
 
 6. (**Paso adicional recomendado**) Como administrador global o administrador de SharePoint Online, ejecute el cmdlet **[set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant?view=sharepoint-ps)** con el parámetro **DisallowInfectedFileDownload** establecido en *true* para su entorno de Office 365. (Esto impide que los usuarios abran, muevan, copien o compartan archivos que se detectan como malintencionados.)  
 
-Para más información, consulte: 
-- [Configurar las directivas de datos adJuntos seguros de Office 365 ATP](set-up-atp-safe-attachments-policies.md)
-- [Activar Office 365 ATP para SharePoint, OneDrive y Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md)
+Para obtener más información, consulte [configurar las directivas de datos adjuntos seguros de office 365 ATP](set-up-atp-safe-attachments-policies.md) y [activar Office 365 ATP para SharePoint, OneDrive y Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md).
 
 ### <a name="atp-safe-links-policies"></a>Directivas de vínculos seguros de ATP
 
@@ -133,7 +136,7 @@ Para configurar [vínculos seguros ATP](atp-safe-links.md), revise y edite su di
 
 Para obtener más información, consulte [configurar las directivas de vínculos seguros de Office 365 ATP](set-up-atp-safe-links-policies.md). 
 
-## <a name="part-3---anti-phishing"></a>Parte 3: contra la suplantación de identidad 
+## <a name="part-3---anti-phishing-protection"></a>Parte 3: protección contra la suplantación de identidad
 
 [La protección contra suplantación de identidad (phishing)](anti-phishing-protection.md) está disponible en las suscripciones que incluyen [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description). La protección contra suplantación de identidad avanzada está disponible en [ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). El siguiente procedimiento describe cómo configurar una directiva contra la suplantación de identidad ATP. Los pasos son similares a la configuración de una directiva contra la suplantación de identidad (sin ATP).
 
@@ -165,7 +168,7 @@ Para obtener más información, consulte [configurar las directivas de vínculos
 
 Para obtener más información sobre las opciones de la Directiva antiphishing, consulte [set up anti-phishing Policies](set-up-anti-phishing-policies.md).
 
-## <a name="part-4---anti-spam"></a>Parte 4: contra el correo no deseado
+## <a name="part-4---anti-spam-protection"></a>Parte 4: protección contra correo no deseado
 
 [La protección contra correo no deseado](anti-spam-protection.md) está disponible en las suscripciones que incluyen [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description).
 
@@ -183,9 +186,11 @@ Para obtener más información sobre las opciones de la Directiva antiphishing, 
 
 Para obtener más información sobre las opciones de la Directiva contra correo no deseado, consulte [configurar las directivas contra correo no deseado](configure-the-anti-spam-policies.md).
 
-## <a name="part-5---service-wide-settings"></a>Parte 5: configuración de todo el servicio
+## <a name="part-5---additional-settings-to-configure"></a>Parte 5: configuración adicional para configurar
 
-### <a name="zero-hour-auto-purge"></a>Purga automática de cero horas
+Además de configurar la protección contra malware, archivos y direcciones URL malintencionadas, suplantación de identidad (phishing) y correo no deseado, le recomendamos que configure las opciones de configuración de registro de auditoría y de purga automática de cero horas.
+
+### <a name="zero-hour-auto-purge-for-email"></a>Purgado automático de cero horas para correo electrónico
 
 [Purga automática de cero horas](zero-hour-auto-purge.md) (ZAP) está disponible en las suscripciones que incluyen [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description). Esta protección está activada de forma predeterminada; sin embargo, deben cumplirse las siguientes condiciones para que la protección esté en vigor:
 
@@ -195,35 +200,18 @@ Para obtener más información sobre las opciones de la Directiva contra correo 
 
 Para obtener más información, consulte depuración [automática de cero horas-protección contra correo no deseado y malware](zero-hour-auto-purge.md).
 
-### <a name="audit-logging"></a>Registro de auditoría
+### <a name="audit-logging-for-reporting-and-investigation"></a>Registro de auditoría para informes e investigación
 
 El registro de auditoría está disponible en las suscripciones que incluyen [Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description). Para poder ver los datos de los informes de protección contra amenazas, como el [Panel de seguridad](security-dashboard.md), los informes de [seguridad de correo electrónico](view-email-security-reports.md)y el [Explorador](use-explorer-in-security-and-compliance.md), el registro de auditoría debe estar activado para su organización. Para obtener más información, consulte [activar o desactivar la búsqueda de registros de auditoría de Office 365](turn-audit-log-search-on-or-off.md).
 
 ## <a name="post-setup-tasks"></a>Tareas posteriores a la instalación
 
-### <a name="watch-for-new-features-and-service-updates"></a>Vea las nuevas características y actualizaciones de servicio
+Una vez que haya configurado las características de protección contra amenazas, asegúrese de supervisar cómo funcionan estas características, revise y revise las directivas según sea necesario, y vea las nuevas características y actualizaciones de servicio.
 
-- [Configurar las opciones estándar o de lanzamiento de destino](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide)
+|Qué hacer  |Recursos para obtener más información  |
+|---------|---------|
+|Ver cómo funcionan las características de protección contra amenazas en su organización al ver los informes    |[Panel de seguridad](security-dashboard.md)<br/>[Informes de seguridad de correo electrónico](view-email-security-reports.md)<br/>[Informes para Office 365 ATP](view-reports-for-atp.md)<br/>[Explorador de amenazas](use-explorer-in-security-and-compliance.md)    |
+|Revisar y revisar periódicamente las directivas de protección contra amenazas según sea necesario    |[Puntuación segura](microsoft-secure-score.md)<br/>[Informes inteligentes y perspectivas](reports-and-insights-in-security-and-compliance.md)<br/>[Características de respuesta y investigación de amenazas de Office 365](keep-users-safe-with-office-365-ti.md)          |
+|Vea las nuevas características y actualizaciones de servicio     |[Opciones de versión estándar y de destino](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide)<br/>[Centro de mensajes](https://docs.microsoft.com/office365/admin/manage/message-center?view=o365-worldwide)<br/>[Plan de desarrollo de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection)<br/>[DeScripciones de servicio](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library)         |
 
-- [Ir a su centro de mensajes para ver anuncios de características](https://docs.microsoft.com/office365/admin/manage/message-center?view=o365-worldwide) 
 
-- [Visite el plan de desarrollo de Microsoft 365 para ver el estado de las nuevas características](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection)
-
-- [Revisión de las deScripciones del servicio de Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library)
-
-### <a name="see-how-threat-protection-features-are-working-for-your-organization"></a>Vea cómo funcionan las características de protección contra amenazas en su organización
-
-- [Visitar el panel de seguridad](security-dashboard.md)
-
-- [Ver los informes de Office 365 ATP](view-reports-for-atp.md), incluido el [Explorador](use-explorer-in-security-and-compliance.md)
-
-- [Ver los informes de seguridad de correo electrónico](view-email-security-reports.md)
-
-### <a name="periodically-review-and-revise-your-threat-protection-policies"></a>Revisar y revisar periódicamente las directivas de protección contra amenazas
-
-- [Revisar la puntuación segura](microsoft-secure-score.md)
-
-- [Usar los informes y la información inteligentes en el centro de &amp; seguridad y cumplimiento](reports-and-insights-in-security-and-compliance.md) 
-
-- [Mantener a los usuarios seguros con las características de respuesta y investigación de amenazas de Office 365](keep-users-safe-with-office-365-ti.md) 
- 

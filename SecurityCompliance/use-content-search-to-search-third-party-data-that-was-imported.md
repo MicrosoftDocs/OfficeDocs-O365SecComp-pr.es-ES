@@ -12,18 +12,18 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
 description: Use la herramienta búsqueda de contenido eDiscovery para buscar elementos que se importaron a los buzones en Office 365 desde un origen de datos de terceros. Puede crear una consulta para buscar todos los elementos importados o crear una consulta para buscar determinados tipos de datos de terceros. En este artículo se enumeran los valores que se pueden usar en una consulta de palabras clave para buscar en los tipos de datos de terceros que se pueden importar a Office 365.
-ms.openlocfilehash: 361ead435d397464452c5b58ecf251a7322ced05
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: c71472b5e6d9b992196780aba55e3775823447ab
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32263782"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33402908"
 ---
 # <a name="use-content-search-to-search-third-party-data-that-was-imported-to-office-365"></a>Usar la búsqueda de contenido para buscar datos de terceros que se importaron a Office 365
 
 Puede usar la [herramienta de búsqueda de contenido eDiscovery](content-search.md) en el centro de seguridad & cumplimiento para buscar elementos que se importaron a los buzones en Office 365 desde un origen de datos de terceros. Puede crear una consulta para buscar en todos los elementos de datos de terceros importados o puede crear una consulta para buscar en elementos de datos específicos de terceros. Además, también puede crear una directiva de conservación basada en consultas o una conservación de exhibición de documentos electrónicos basada en consultas para conservar los datos de terceros en Office 365. 
   
-Para obtener más información acerca de la importación de datos de terceros y una lista de los tipos de datos de terceros que se pueden importar a Office 365, vea [archivar datos de terceros en office 365](archiving-third-party-data.md). 
+Para obtener más información acerca de la importación de datos de terceros y una lista de los tipos de datos de terceros que se pueden importar a Office 365, vea [trabajar con un partner para archivar datos de terceros en office 365](work-with-partner-to-archive-third-party-data.md). 
   
 ## <a name="creating-a-query-to-search-all-third-party-data"></a>Crear una consulta para buscar en todos los datos de terceros
 
@@ -33,7 +33,7 @@ Para buscar (o poner en espera) cualquier tipo de datos de terceros que haya imp
 kind:externaldata AND subject:contoso
 ```
 
-En el ejemplo anterior de consulta de palabra clave se incluye la propiedad Subject. Para obtener una lista de otras propiedades de elementos de datos de terceros que se pueden incluir en una consulta de palabras clave, vea la sección "más información" en [archivar datos de terceros en Office 365](archiving-third-party-data.md#more-information).
+En el ejemplo anterior de consulta de palabra clave se incluye la propiedad Subject. Para obtener una lista de otras propiedades de elementos de datos de terceros que pueden incluirse en una consulta de palabras clave, vea la sección "más información" en [trabajar con un partner para archivar datos de terceros en Office 365](work-with-partner-to-archive-third-party-data.md#more-information).
   
 Al crear consultas para buscar y conservar datos de terceros, también puede usar las condiciones para restringir los resultados de la búsqueda. Para obtener más información acerca de la creación de consultas de búsqueda de contenido, vea [consultas de palabras clave y condiciones de búsqueda para la búsqueda de contenido](keyword-queries-and-search-conditions.md).
   

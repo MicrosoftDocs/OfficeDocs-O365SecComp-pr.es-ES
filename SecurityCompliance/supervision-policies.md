@@ -18,11 +18,11 @@ search.appverid:
 ms.assetid: d14ae7c3-fcb0-4a03-967b-cbed861bb086
 description: Descripción de las directivas de supervisión en Office 365
 ms.openlocfilehash: 091f5b1f31fcf59162df6ded6a6b07fb501834c7
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32260328"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33403048"
 ---
 # <a name="supervision-policies-in-office-365"></a>Directivas de supervisión en Office 365
 
@@ -111,7 +111,7 @@ Las condiciones que elija para la Directiva se aplican a las comunicaciones de l
 
 La siguiente tabla explica más sobre cada condición.
   
-|**Condition**|**Cómo usar esta condición**|
+|**Condición**|**Cómo usar esta condición**|
 |:-----|:-----|
 | Se recibe el mensaje desde cualquiera de estos dominios  <br><br> No se recibe el mensaje desde ninguno de estos dominios | Para aplicar la Directiva cuando se incluyan o excluyan determinados dominios en un mensaje recibido, escriba cada dominio y separe varios dominios con una coma. Cada dominio que escriba se aplica por separado (solo uno de estos dominios debe aplicarse para que la Directiva se aplique al mensaje). |
 | El mensaje se envía a cualquiera de estos dominios  <br><br> El mensaje no se envía a ninguno de estos dominios | Para aplicar la Directiva cuando se incluyan o excluyan determinados dominios en un mensaje enviado, escriba cada dominio y separe varios dominios con una coma. Cada dominio que escriba se aplicará por separado (solo uno de estos dominios debe aplicarse para que la Directiva se aplique al mensaje). |

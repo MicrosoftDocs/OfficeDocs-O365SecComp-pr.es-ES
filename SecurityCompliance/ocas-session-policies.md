@@ -10,18 +10,18 @@ ms.date: 02/27/2019
 ms.service: O365-seccomp
 localization_priority: Normal
 description: Las directivas de sesión de seguridad de aplicación de nube de Office 365 permiten la supervisión en tiempo real de los usuarios, lo que le ofrece una visibilidad granular de las aplicaciones de Office 365 y la capacidad de realizar diferentes acciones según la Directiva que establezca para una sesión de usuario. En lugar de permitir o bloquear completamente el acceso, con el control de sesión puede permitir el acceso a la vez que supervisa la sesión o limitar actividades de sesión específicas mediante el uso de las funciones de proxy inverso del control de aplicación de acceso condicional.
-ms.openlocfilehash: e0e4b04ee8cc0f7a14adbc26b074a5f2947e44c2
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 8abc7753543d5147ce8c48c1784a6795143f9105
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32263042"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33403038"
 ---
 # <a name="session-policies-in-office-365-cloud-app-security"></a>Directivas de sesión en Office 365 Cloud App Security
 
 |Evaluación * *\>**|Planeación * *\>**|Implementación * *\>**|Uso * * * *|
 |:-----|:-----|:-----|:-----|
-|[Empezar a evaluar](office-365-cas-overview.md) <br/> |[Empezar a planear](get-ready-for-office-365-cas.md) <br/> |Ya está aquí.  <br/> [Siguiente paso](ocas-access-policies.md) <br/> |[Empezar a usar](utilization-activities-for-ocas.md) <br/> |
+|[Empezar a evaluar](office-365-cas-overview.md) <br/> |[Empezar a planear](get-ready-for-office-365-cas.md) <br/> |Ya está aquí.  <br/> [Paso siguiente](ocas-access-policies.md) <br/> |[Empezar a usar](utilization-activities-for-ocas.md) <br/> |
 
 Las directivas de sesión de seguridad de aplicación de nube de Office 365 permiten la supervisión en tiempo real de los usuarios, lo que le ofrece una visibilidad granular de las aplicaciones de Office 365 y la capacidad de realizar diferentes acciones según la Directiva que establezca para una sesión de usuario. En lugar de permitir o bloquear completamente el acceso, con el control de sesión puede permitir el acceso a la vez que supervisa la sesión o limitar actividades de sesión específicas mediante el uso de las funciones de proxy inverso del control de aplicación de acceso condicional.
 
@@ -117,7 +117,7 @@ El control de aplicación de acceso condicional registra los registros de tráfi
 
 1. Vaya a la configuración COG y haga clic en **control de aplicación de acceso condicional**.
 
-2. En el lado derecho de la tabla, haga clic en el botón exportar.<br>![botón exportar](media/image3.png)<br>
+2. En el lado derecho de la tabla, haga clic en el botón exportar.<br>![botón exportar](media/OCASimage3.png)<br>
 
 3. Seleccione el rango del informe y haga clic en **exportar**. Este proceso puede tardar cierto tiempo.
 
@@ -125,7 +125,7 @@ El control de aplicación de acceso condicional registra los registros de tráfi
 
 1. Una vez preparado el informe, vaya a **configuración** y luego a **informes**exportados.
 
-2. En la tabla, seleccione el informe relevante de la lista de **registros de tráfico de control de aplicaciones de acceso condicional**y haga clic en descargar.<br>![botón Descargar](media/image4.png)<br>
+2. En la tabla, seleccione el informe relevante de la lista de **registros de tráfico de control de aplicaciones de acceso condicional**y haga clic en descargar.<br>![botón Descargar](media/OCASimage4.png)<br>
 
 ## <a name="block-all-downloads"></a>Bloquear todas las descargas
 

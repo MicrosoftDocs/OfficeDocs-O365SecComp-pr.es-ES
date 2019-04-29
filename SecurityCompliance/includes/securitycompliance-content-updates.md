@@ -175,7 +175,7 @@
 | 3/20/2019 | [Informe de clientes de autenticación SMTP](/Office365/SecurityCompliance/mfi-smtp-auth-clients-report) | agregado |
 | 3/21/2019 | [Investigación y respuesta automatizadas (AIR) con Office 365 Threat Intelligence](/Office365/SecurityCompliance/automated-investigation-response-office) | agregado |
 | 3/21/2019 | [Buscar y investigar correo electrónico malintencionado que se entregó (Office 365 de investigación y respuesta de amenazas](/Office365/SecurityCompliance/investigate-malicious-email-that-was-delivered) | modificado |
-| 3/21/2019 | [Respuesta y investigación de amenazas de Office 365](/Office365/SecurityCompliance/office-365-ti) | modificado |
+| 3/21/2019 | [Investigación y respuesta de amenazas de Office 365](/Office365/SecurityCompliance/office-365-ti) | modificado |
 | 3/21/2019 | [Vistas del explorador de amenazas](/Office365/SecurityCompliance/threat-explorer-views) | agregado |
 | 3/21/2019 | [Usar el explorador de amenazas en &amp; el centro de seguridad y cumplimiento](/Office365/SecurityCompliance/use-explorer-in-security-and-compliance) | modificado |
 | 3/21/2019 | [Restringir el acceso al contenido mediante el cifrado en las etiquetas de confidencialidad](/Office365/SecurityCompliance/encryption-sensitivity-labels) | modificado |
@@ -216,7 +216,7 @@
 | 3/26/2019 | [Bienvenido al nuevo centro de cumplimiento de Microsoft 365](/Office365/SecurityCompliance/microsoft-365-compliance-center) | agregado |
 | 3/26/2019 | [Configurar los límites de cumplimiento para investigaciones de eDiscovery en Office 365](/Office365/SecurityCompliance/set-up-compliance-boundaries). | modificado |
 | 3/26/2019 | [Páginas de advertencia de vínculos seguros de ATP de Office 365](/Office365/SecurityCompliance/atp-safe-links-warning-pages) | modificado |
-| 3/26/2019 | [Vínculos seguros de ATP de Office 365](/Office365/SecurityCompliance/atp-safe-links) | modificado |
+| 3/26/2019 | [Vínculos seguros de Protección contra amenazas avanzada de Office 365](/Office365/SecurityCompliance/atp-safe-links) | modificado |
 | 3/26/2019 | [Simulador de ataques en Office 365](/Office365/SecurityCompliance/attack-simulator) | modificado |
 | 3/26/2019 | [Importación masiva de contactos externos a Exchange Online](/Office365/SecurityCompliance/bulk-import-external-contacts) | modificado |
 | 3/26/2019 | [Administrar un incidente de derrame de datos en Microsoft 365](/Office365/SecurityCompliance/compliance20/manage-data-spillage-incidents) | modificado |
@@ -363,7 +363,7 @@
 | 3/29/2019 | [Configurar grupos y usuarios en un entorno de desarrollo y prueba de campaña política](/Office365/SecurityCompliance/configure-groups-and-users-for-a-political-campaign-dev-test-environment) | modificado |
 | 3/29/2019 | [Búsqueda de contenido en Office 365](/Office365/SecurityCompliance/content-search) | modificado |
 | 3/29/2019 | [Crear un tipo personalizado de información confidencial en el centro de seguridad & cumplimiento de PowerShell](/Office365/SecurityCompliance/create-a-custom-sensitive-information-type-in-scc-powershell) | modificado |
-| 3/29/2019 | [Crear un tipo personalizado de información confidencial](/Office365/SecurityCompliance/create-a-custom-sensitive-information-type) | modificado |
+| 3/29/2019 | [Crear un tipo de información confidencial personalizado](/Office365/SecurityCompliance/create-a-custom-sensitive-information-type) | modificado |
 | 3/29/2019 | [Crear un informe sobre suspensiones en casos de eDiscovery en Office 365](/Office365/SecurityCompliance/create-a-report-on-holds-in-ediscovery-cases) | modificado |
 | 3/29/2019 | [Crear alertas de actividad en el Office 365](/Office365/SecurityCompliance/create-activity-alerts) | modificado |
 | 3/29/2019 | [Crear y administrar buzones inactivos en Office 365](/Office365/SecurityCompliance/create-and-manage-inactive-mailboxes) | modificado |
@@ -485,7 +485,7 @@
 | 3/29/2019 | [Actividades de uso después de implementar Office 365 Cloud App Security](/Office365/SecurityCompliance/utilization-activities-for-ocas) | modificado |
 | 3/29/2019 | [Ver las estadísticas de palabras clave para resultados de búsqueda de contenido](/Office365/SecurityCompliance/view-keyword-statistics-for-content-search) | modificado |
 | 3/29/2019 | [Encabezados de mensajes de correo no deseado](/Office365/SecurityCompliance/anti-spam-message-headers) | modificado |
-| 3/29/2019 | Seguridad y cumplimiento de Office 365 | eliminación |
+| 3/29/2019 | Office 365 seguridad y cumplimiento | eliminación |
 | 3/29/2019 | [Controles de acceso administrativo en Office 365](/Office365/SecurityCompliance/office-365-administrative-access-controls-overview) | modificado |
 | 3/29/2019 | [Office 365 principales principios de defensa contra ataques por denegación de servicio](/Office365/SecurityCompliance/office-365-core-principles-of-defense-against-dos-attacks) | modificado |
 | 3/29/2019 | [Office 365 destrucción de datos](/Office365/SecurityCompliance/office-365-data-destruction) | modificado |
@@ -710,17 +710,17 @@
 | 4/16/2019 | [Taller Director de seguridad de la información (CISO)-módulo 4A – estrategia de protección contra amenazas](/Office365/SecurityCompliance/ciso-workshop-module-4a) | modificado |
 | 4/16/2019 | [Taller Director de seguridad de la información (CISO)-módulo 4B – estrategia de protección contra amenazas](/Office365/SecurityCompliance/ciso-workshop-module-4b) | modificado |
 | 4/16/2019 | [Taller Director de seguridad de la información (CISO)-módulo 5: protección de la información](/Office365/SecurityCompliance/ciso-workshop-module-5) | modificado |
-| 4/17/2019 | [Configurar directivas de supervisión para su organización](/Office365/SecurityCompliance/configure-supervision-policies) | modificado |
-| 4/17/2019 | [Directivas de supervisión en Office 365](/Office365/SecurityCompliance/supervision-policies) | modificado |
-| 4/17/2019 | [Taller Director de seguridad de la información (CISO), módulo 1: Microsoft Cybersecurity briefing](/Office365/SecurityCompliance/ciso-workshop-module-1) | modificado |
-| 4/17/2019 | [Taller Director de seguridad de la información (CISO), módulo 2: administración de seguridad](/Office365/SecurityCompliance/ciso-workshop-module-2) | modificado |
-| 4/17/2019 | [Taller Director de seguridad de la información (CISO), módulo 3: identidad y administración de acceso](/Office365/SecurityCompliance/ciso-workshop-module-3) | modificado |
-| 4/17/2019 | [Taller Chief Information Security Officer (CISO), módulo 4A: estrategia de protección contra amenazas](/Office365/SecurityCompliance/ciso-workshop-module-4a) | modificado |
-| 4/17/2019 | [Taller Director de seguridad de la información (CISO), módulo 4B: estrategia de protección contra amenazas](/Office365/SecurityCompliance/ciso-workshop-module-4b) | modificado |
-| 4/17/2019 | [Taller Director de seguridad de la información (CISO), módulo 5: protección de la información](/Office365/SecurityCompliance/ciso-workshop-module-5) | modificado |
-| 4/17/2019 | [Taller sobre el director de seguridad de la información (CISO)](/Office365/SecurityCompliance/ciso-workshop) | modificado |
-| 4/17/2019 | [Configuración de la administración del acceso con privilegios en Office 365](/Office365/SecurityCompliance/privileged-access-management-configuration) | modificado |
-| 4/17/2019 | [Administración del acceso con privilegios en Office 365](/Office365/SecurityCompliance/privileged-access-management-overview) | modificado |
+| 17/4/2019 | [Configurar directivas de supervisión para su organización](/Office365/SecurityCompliance/configure-supervision-policies) | modificado |
+| 17/4/2019 | [Directivas de supervisión en Office 365](/Office365/SecurityCompliance/supervision-policies) | modificado |
+| 17/4/2019 | [Taller Director de seguridad de la información (CISO), módulo 1: Microsoft Cybersecurity briefing](/Office365/SecurityCompliance/ciso-workshop-module-1) | modificado |
+| 17/4/2019 | [Taller Director de seguridad de la información (CISO), módulo 2: administración de seguridad](/Office365/SecurityCompliance/ciso-workshop-module-2) | modificado |
+| 17/4/2019 | [Taller Director de seguridad de la información (CISO), módulo 3: identidad y administración de acceso](/Office365/SecurityCompliance/ciso-workshop-module-3) | modificado |
+| 17/4/2019 | [Taller Chief Information Security Officer (CISO), módulo 4A: estrategia de protección contra amenazas](/Office365/SecurityCompliance/ciso-workshop-module-4a) | modificado |
+| 17/4/2019 | [Taller Director de seguridad de la información (CISO), módulo 4B: estrategia de protección contra amenazas](/Office365/SecurityCompliance/ciso-workshop-module-4b) | modificado |
+| 17/4/2019 | [Taller Director de seguridad de la información (CISO), módulo 5: protección de la información](/Office365/SecurityCompliance/ciso-workshop-module-5) | modificado |
+| 17/4/2019 | [Taller sobre el director de seguridad de la información (CISO)](/Office365/SecurityCompliance/ciso-workshop) | modificado |
+| 17/4/2019 | [Configuración de la administración del acceso con privilegios en Office 365](/Office365/SecurityCompliance/privileged-access-management-configuration) | modificado |
+| 17/4/2019 | [Administración del acceso con privilegios en Office 365](/Office365/SecurityCompliance/privileged-access-management-overview) | modificado |
 | 4/18/2019 | [Configurar su inquilino de Office 365 para aumentar la seguridad](/Office365/SecurityCompliance/tenant-wide-setup-for-increased-security) | modificado |
 | 4/18/2019 | [Configurar directivas de supervisión para su organización](/Office365/SecurityCompliance/configure-supervision-policies) | modificado |
 | 4/18/2019 | [Directivas de supervisión en Office 365](/Office365/SecurityCompliance/supervision-policies) | modificado |
@@ -748,4 +748,4 @@
 | 4/19/2019 | [Usar la carga en la red para importar archivos PST con cifrado RMS en Office 365](/Office365/SecurityCompliance/use-network-upload-to-import-rms-encrypted-pst-files) | modificado |
 | 4/19/2019 | [Auditar el uso compartido para buscar recursos compartidos con usuarios externos](/Office365/SecurityCompliance/use-sharing-auditing) | modificado |
 | 4/19/2019 | [Envío de mensajes de correo no deseado, mensajes seguros y mensajes de correo de suplantación de identidad (phishing) a Microsoft para su análisis](/Office365/SecurityCompliance/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis) | modificado |
-| 4/19/2019 | [Entrega dinámica y vista previa con datos adJuntos seguros de Office 365 ATP](/Office365/SecurityCompliance/dynamic-delivery-and-previewing) | Fecha de modificación |
+| 4/19/2019 | [Entrega dinámica y vista previa con datos adJuntos seguros de Office 365 ATP](/Office365/SecurityCompliance/dynamic-delivery-and-previewing) | modificado |

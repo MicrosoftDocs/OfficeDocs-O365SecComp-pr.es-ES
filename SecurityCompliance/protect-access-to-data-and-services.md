@@ -1,5 +1,5 @@
 ---
-title: Proteger el acceso de los usuarios y los dispositivos
+title: Proteger el acceso de usuario y de dispositivo
 ms.author: bcarter
 author: brendacarter
 manager: laurawi
@@ -14,13 +14,13 @@ search.appverid:
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
 description: Página de aterrizaje para proteger el acceso a los datos y servicios de O365
 ms.openlocfilehash: e1b529a641d25f82521c40d0df9d091e0ebb5d90
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265232"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33403008"
 ---
-# <a name="protect-user-and-device-access"></a>Proteger el acceso de los usuarios y los dispositivos
+# <a name="protect-user-and-device-access"></a>Proteger el acceso de usuario y de dispositivo
 
 Proteger el acceso a los datos y servicios de Office 365 es crucial para defenderse contra ataques cibernéticos y protegerse contra la pérdida de datos. Se pueden aplicar las mismas protecciones a otras aplicaciones SaaS en su entorno e incluso a aplicaciones locales publicadas con el proxy de aplicación de Azure Active Directory.
   
@@ -40,7 +40,7 @@ Proteger las cuentas de administrador con autenticación multifactor y acceso co
 A continuación, configure la administración del acceso con privilegios en Office 365. La administración de acceso privilegiado permite un control de acceso granular sobre las tareas de administración con privilegios en Office 365. Puede ayudar a proteger su organización de las infracciones que puedan usar las cuentas de administrador con privilegios existentes con acceso permanente a los datos confidenciales o a las opciones de configuración fundamentales.
 
 - [Información general sobre la administración del acceso con privilegios](privileged-access-management-overview.md)
-- [Configurar la administración del acceso con privilegios](privileged-access-management-configuration.md)
+- [Configurar Privileged Access Management](privileged-access-management-configuration.md)
 
 Otra recomendación es usar estaciones de trabajo configuradas específicamente para el trabajo administrativo. Se trata de dispositivos dedicados que solo se usan para tareas administrativas. Consulte [proteger el acceso privilegiado](https://docs.microsoft.com/en-us/windows-server/identity/securing-privileged-access/securing-privileged-access).
 

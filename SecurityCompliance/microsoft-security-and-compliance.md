@@ -12,11 +12,11 @@ ms.collection:
 localization_priority: Normal
 description: Prepárese para el nuevo centro de seguridad y cumplimiento de Microsoft 365
 ms.openlocfilehash: a64c64756f0c4588efcc6e467316b90aa1aabc3f
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265502"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33402998"
 ---
 # <a name="the-new-microsoft-365-security-center-and-microsoft-365-compliance-center-are-now-generally-available"></a>El nuevo centro de seguridad 365 de Microsoft y el centro de cumplimiento de Microsoft 365 están disponibles para el público
 
@@ -102,13 +102,13 @@ En la tabla siguiente se resume quién puede tener acceso a diversos portales en
 |[Protección contra amenazas avanzada de Azure](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp)  |Sí |Sí |No |
 |[ATP de Windows Defender](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection?ocid=tia-260153000#windows-defender-atp) |Sí |Sí |No |
 |[Protección de identidad](https://docs.microsoft.com/azure/active-directory/identity-protection)     |Sí |Sí |No |
-|[Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management)     |Sí |Sí |No |
+|[Administración de identidades con privilegios](https://docs.microsoft.com/azure/active-directory/privileged-identity-management)     |Sí |Sí |No |
 |[Intune](https://docs.microsoft.com/intune)     |Sí |Sí |Sí |
 |[Cloud App Security](https://docs.microsoft.com/cloud-app-security/)     |Sí |Sí |Sí |
 |[Puntuación segura](https://docs.microsoft.com/office365/securitycompliance/office-365-secure-score)     |Sí |Sí |No |
 |[Exchange](https://docs.microsoft.com/exchange/)     |Sí |Sí |Sí |
 
-## <a name="additional-resources"></a>Recursos adicionales
+## <a name="additional-resources"></a>Otros recursos
 
 [Centro de seguridad de Microsoft 365](overview-security-center.md)
 

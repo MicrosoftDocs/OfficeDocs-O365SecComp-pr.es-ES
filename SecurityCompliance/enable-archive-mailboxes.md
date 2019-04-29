@@ -8,7 +8,7 @@ ms.topic: article
 f1_keywords:
 - ms.o365.cc.ArchivingHelp
 ms.service: O365-seccomp
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 description: Use el centro de seguridad & cumplimiento en Office 365 para habilitar los buzones de archivo para que admitan los requisitos de retención, exhibición de documentos electrónicos y conservación de mensajes de la organización.
-ms.openlocfilehash: d363943910d970576976d8386196b450dd5694f3
-ms.sourcegitcommit: f0e3c9de0b545081a4d264f74559b941f6c71410
+ms.openlocfilehash: f4f02e5107526f2f45b0a46579e0676b791f0dd1
+ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "31958311"
+ms.lasthandoff: 04/28/2019
+ms.locfileid: "33402928"
 ---
 # <a name="enable-archive-mailboxes-in-the-security--compliance-center"></a>Habilitar buzones de archivo en el centro de seguridad & cumplimiento
   
@@ -127,9 +127,11 @@ Ejecute el siguiente comando para deshabilitar el buzón de archivo para todos l
 
 ## <a name="more-information"></a>Más información
   
+- Cuando se habilita un buzón de archivo, los usuarios pueden almacenar mensajes en su buzón de archivo. Los usuarios pueden tener acceso a sus buzones de archivo mediante Microsoft Outlook y Outlook en la Web. Mediante cualquiera de estas aplicaciones cliente, los usuarios pueden visualizar mensajes en su buzón de archivo y mover o copiar mensajes entre su buzón de correo principal y el buzón de archivo. Los usuarios también pueden recuperar elementos eliminados de la carpeta de Elementos recuperables en su buzón de archivo mediante la herramienta Recuperar elementos eliminados.
+
+   Para obtener una lista de licencias de Outlook que admiten el archivado local, consulte [requisitos de licencia de Outlook para las características de Exchange](https://support.office.com/article/outlook-license-requirements-for-exchange-features-46b6b7c5-c3ca-43e5-8424-1e2807917c99).
+
 - Los buzones de archivo le ayudan a usted y a sus usuarios a cumplir los requisitos de retención, exhibición de documentos electrónicos y conservación de la organización. Por ejemplo, puede usar la Directiva de retención de Exchange de su organización para mover el contenido de los buzones de correo al buzón de archivo de los usuarios. Cuando use la herramienta de búsqueda de contenido en el centro de seguridad & cumplimiento para buscar contenido específico en el buzón de un usuario, también se buscará en el buzón de archivo del usuario. Y, al poner una retención por juicio o aplicar una directiva de retención de Office 365 en el buzón de un usuario, también se conservan los elementos del buzón de archivo.
-  
-- Cuando se habilita un buzón de archivo, los usuarios pueden almacenar mensajes en su buzón de archivo. Los usuarios pueden tener acceso a sus buzones de archivo mediante Microsoft Outlook y Outlook en la Web. Mediante cualquiera de estas aplicaciones cliente, los usuarios pueden visualizar mensajes en su buzón de archivo y mover o copiar mensajes entre su buzón de correo principal y el buzón de archivo. Los usuarios también pueden recuperar elementos eliminados de la carpeta de Elementos recuperables en su buzón de archivo mediante la herramienta Recuperar elementos eliminados. 
   
 - Una vez habilitados los buzones de archivo, su organización puede aprovechar la Directiva de retención de Exchange predeterminada (también denominada Directiva de administración de registros de mensajes o de MRM) que se asigna automáticamente a todos los buzones. Cuando se habilita un buzón de archivo, la Directiva de retención de Exchange predeterminada hace lo siguiente automáticamente: 
   
