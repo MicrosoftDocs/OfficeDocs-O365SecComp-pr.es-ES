@@ -24,7 +24,7 @@
 ## [Administración del acceso con privilegios](privileged-access-management-overview.md)
 ## [Configurar la administración del acceso con privilegios](privileged-access-management-configuration.md)
 
-# Proteger la información
+# [Proteger la información](protect-information.md)
 ## [Etiquetas de confidencialidad](sensitivity-labels.md)
 ### [Restringir el acceso al contenido mediante el cifrado en las etiquetas de confidencialidad](encryption-sensitivity-labels.md)
 ### [Aplicar una etiqueta de confidencialidad automáticamente al contenido](apply_sensitivity_label_automatically.md)
@@ -33,18 +33,19 @@
 ## [Evitar la pérdida de datos (DLP)](data-loss-prevention-policies.md)
 ### [DLP y Microsoft Teams](dlp-microsoft-teams.md)
 ### [Ver una descripción general ampliada de DLP](https://channel9.msdn.com/events/ignite/microsoft-ignite-orlando-2017/brk3111)
-## Configurar DLP
-### [Introducción a las recomendaciones de la directiva DLP](get-started-with-dlp-policy-recommendations.md)
-### [Introducción a la directiva predeterminada de DLP](get-started-with-the-default-dlp-policy.md)
-### [Crear una directiva DLP a partir de una plantilla](create-a-dlp-policy-from-a-template.md)
-### [Crear, probar y optimizar una directiva DLP](create-test-tune-dlp-policy.md)
-### [Usar notificaciones y sugerencias de directiva en directivas DLP](use-notifications-and-policy-tips.md)
-### [Qué incluyen las plantillas de directiva DLP](what-the-dlp-policy-templates-include.md)
-### [Crear una directiva DLP para proteger documentos con FCI u otras propiedades](protect-documents-that-have-fci-or-other-properties.md)
-### [Ver los informes DLP](view-the-dlp-reports.md)
-### [Crear una consulta para buscar datos confidenciales almacenados en los sitios](form-a-query-to-find-sensitive-data-stored-on-sites.md)
-### [Funcionamiento de DLP entre el Centro de seguridad y cumplimiento y el Centro de administración de Exchange](how-dlp-works-between-admin-centers.md)
-## Utilizar los tipos de información confidencial
+### Configurar DLP
+#### [Introducción a las recomendaciones de la directiva DLP](get-started-with-dlp-policy-recommendations.md)
+#### [Introducción a la directiva predeterminada de DLP](get-started-with-the-default-dlp-policy.md)
+#### [Crear una directiva DLP a partir de una plantilla](create-a-dlp-policy-from-a-template.md)
+#### [Crear, probar y optimizar una directiva DLP](create-test-tune-dlp-policy.md)
+#### [Usar notificaciones y sugerencias de directiva en directivas DLP](use-notifications-and-policy-tips.md)
+#### [Qué incluyen las plantillas de directiva DLP](what-the-dlp-policy-templates-include.md)
+#### [Crear una directiva DLP para proteger documentos con FCI u otras propiedades](protect-documents-that-have-fci-or-other-properties.md)
+#### [Ver los informes DLP](view-the-dlp-reports.md)
+#### [Crear una consulta para buscar datos confidenciales almacenados en los sitios](form-a-query-to-find-sensitive-data-stored-on-sites.md)
+#### [Funcionamiento de DLP entre el Centro de seguridad y cumplimiento y el Centro de administración de Exchange](how-dlp-works-between-admin-centers.md)
+
+## Tipos de información confidencial
 ### [Qué buscan los tipos de información confidencial](what-the-sensitive-information-types-look-for.md)
 ### [Qué buscan las funciones de DLP](what-the-dlp-functions-look-for.md)
 ### [Ver una descripción general ampliada de personalización de DLP](https://go.microsoft.com/fwlink/?linkid=852306)
@@ -54,6 +55,19 @@
 ### [Crear un diccionario de palabras clave](create-a-keyword-dictionary.md)
 ### [Creación de huella digital de documento](document-fingerprinting.md)
 
+## [Cifrado de mensajes de Office 365 (OME)](ome.md)
+### [Cifrado de correo electrónico en Office 365](email-encryption.md)
+### [Comparar versiones de OME](ome-version-comparison.md)
+### [Configurar las nuevas capacidades de cifrado de mensajes de Office 365](set-up-new-message-encryption-capabilities.md)
+### [Definir reglas de flujo de correo para cifrar mensajes de correo electrónico en Office 365](define-mail-flow-rules-to-encrypt-email.md)
+### [Administrar el cifrado de mensajes de Office 365](manage-office-365-message-encryption.md)
+### [Preguntas más frecuentes sobre el cifrado de mensajes de Office 365](ome-faq.md)
+### [Revocar el correo electrónico cifrado por el cifrado de mensajes de Office 365](revoke-ome-encrypted-mail.md)
+### [Agregar la marca de su organización a los mensajes cifrados](add-your-organization-brand-to-encrypted-messages.md)
+### [Información heredada para el cifrado de mensajes de Office 365](legacy-information-for-message-encryption.md)
+### [Configurar Azure Rights Management para la versión anterior del Cifrado de mensajes de Office 365](set-up-azure-rms-for-previous-version-message-encryption.md)
+#### [Declaración de privacidad del Portal Visor de mensajes protegidos de Office 365](protected-message-viewer-portal-privacy-statement.md)
+
 # Administración de registros
 ## [Administrador del plan de archivos](file-plan-manager.md)
 ## [Etiquetas de retención](labels.md)
@@ -62,7 +76,6 @@
 ## [Acerca de la retención basada en eventos](event-driven-retention.md)
 ### [Retención automática basada en eventos](automate-event-driven-retention.md)
 ## [Revisiones para eliminación](disposition-reviews.md)
-## [Directivas de retención](retention-policies.md)
 ## Supervisar la administración de registros
 ### [Ver los informes de gobierno de datos](view-the-data-governance-reports.md)
 ### [Ver la actividad de etiquetas de documentos](view-label-activity-for-documents.md)
@@ -181,36 +194,6 @@
 ### [Protección contra suplantación de identidad en Office 365](anti-spoofing-protection.md)
 #### [Obtener más información sobre la inteligencia de suplantación de identidad](learn-about-spoof-intelligence.md)
 #### [Identificar mensajes sospechosos en Outlook.com y Outlook en la Web](unverified-sender-feature.md)
-
-## [Cifrado en Office 365](encryption.md)
-### [Configurar el cifrado en Office 365 Enterprise](set-up-encryption.md)
-### [Cifrado de correo electrónico en Office 365](email-encryption.md)
-### [Cifrado de mensajes de Office 365 (OME)](ome.md)
-#### [Comparar versiones de OME](ome-version-comparison.md)
-#### [Configurar las nuevas capacidades de cifrado de mensajes de Office 365](set-up-new-message-encryption-capabilities.md)
-#### [Definir reglas de flujo de correo para cifrar mensajes de correo electrónico en Office 365](define-mail-flow-rules-to-encrypt-email.md)
-#### [Administrar el cifrado de mensajes de Office 365](manage-office-365-message-encryption.md)
-#### [Preguntas más frecuentes sobre el cifrado de mensajes de Office 365](ome-faq.md)
-#### [Revocar el correo electrónico cifrado por el cifrado de mensajes de Office 365](revoke-ome-encrypted-mail.md)
-#### [Agregar la marca de su organización a los mensajes cifrados](add-your-organization-brand-to-encrypted-messages.md)
-#### [Información heredada para el cifrado de mensajes de Office 365](legacy-information-for-message-encryption.md)
-#### [Configurar Azure Rights Management para la versión anterior del Cifrado de mensajes de Office 365](set-up-azure-rms-for-previous-version-message-encryption.md)
-#### [Declaración de privacidad del Portal Visor de mensajes protegidos de Office 365](protected-message-viewer-portal-privacy-statement.md)
-### [Information Rights Management](information-rights-management-in-exchange-online.md)
-#### [Information Rights Management en Exchange Online](information-rights-management-in-exchange-online.md)
-#### [Configurar IRM para usar un servidor de AD RMS local](configure-irm-to-use-an-on-premises-ad-rms-server.md)
-### [S/MIME](s-mime-for-message-signing-and-encryption.md)
-#### [S/MIME para la firma y cifrado de mensajes](s-mime-for-message-signing-and-encryption.md)
-#### [Configurar S/MIME para Outlook en la Web](configure-s-mime-settings-for-outlook-web-app.md)
-#### [Enviar y recibir correo electrónico cifrado y firmado con S/MIME](send-and-receive-s-mime-signed-and-encrypted-email.md)
-#### [Sincronizar certificados de usuario con Office 365 para S/MIME](sync-user-certificates-to-office-365-for-s-mime.md)
-#### [Configurar una colección de certificados virtuales para validar S/MIME](set-up-virtual-certificate-collection-to-validate-s-mime.md)
-### [Cómo Exchange Online protege su información confidencial de correo electrónico](exchange-online-secures-email-secrets.md)
-### [Controlar los datos en Office 365 con la clave de cliente](controlling-your-data-using-customer-key.md)
-### [Preguntas más frecuentes sobre el cifrado de servicio con la clave de cliente para Office 365](service-encryption-with-customer-key-faq.md)
-### [Información de referencia técnica sobre el cifrado en Office 365](technical-reference-details-about-encryption.md)
-### [Cómo Exchange Online usa TLS para proteger las conexiones de correo electrónico en Office 365](exchange-online-uses-tls-to-secure-email-connections.md)
-
 
 ## [Supervisar y administrar el acceso a datos con Office 365 Cloud App Security](office-365-cas-overview.md)
 ### [Novedades de Cloud App Security](new-in-office-365-cas.md)
@@ -491,7 +474,14 @@
 
 # Soluciones de cumplimiento normativo
 ## [Portal de confianza del servicio de Microsoft](get-started-with-service-trust-portal.md)
-## [Administrador de cumplimiento](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
+## [Administrador de cumplimiento (Clásico)](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md)
+## [Administrador de cumplimiento (Versión preliminar)](compliance-manager-overview.md)
+### [Novedades del Administrador de cumplimiento (Versión preliminar)](compliance-manager-release-notes.md)
+### [Trabajar con el Administrador de cumplimiento (Versión preliminar)](working-with-compliance-manager.md)
+### [Metodología de puntuación de cumplimiento (Versión preliminar)](compliance-score-methodology.md)
+## Clave del cliente
+### [Controlar los datos en Office 365 con la clave de cliente](controlling-your-data-using-customer-key.md)
+### [Preguntas más frecuentes sobre el cifrado de servicio con la clave de cliente para Office 365](service-encryption-with-customer-key-faq.md)
 ## [Herramienta de solicitudes de interesados RGPD](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)
 ## [Information Protection de Office 365 para RGPD](office-365-information-protection-for-gdpr.md)
 ### [Introducción: Protección de Office 365 para RGPD](office-365-info-protection-for-gdpr-overview.md)
@@ -552,6 +542,9 @@
 ### [Características de cifrado administradas por el cliente](office-365-customer-managed-encryption-features.md)
 ### [Riesgos y protección de cifrado](office-365-encryption-risks-and-protections.md)
 ### [Cifrado para Skype Empresarial, OneDrive para la Empresa, SharePoint Online y Exchange Online](office-365-encryption-for-skype-onedrive-sharepoint-and-exchange.md)
+### [Cómo Exchange Online protege su información confidencial de correo electrónico](exchange-online-secures-email-secrets.md)
+### [Cómo Exchange Online usa TLS para proteger las conexiones de correo electrónico en Office 365](exchange-online-uses-tls-to-secure-email-connections.md)
+### [Información de referencia técnica sobre el cifrado en Office 365](technical-reference-details-about-encryption.md)
 ### [BitLocker y Administrador de claves distribuidas (DKM) para el cifrado](office-365-bitlocker-and-distributed-key-manager-for-encryption.md)
 ### [Cifrado en Microsoft Dynamics 365](office-365-encryption-in-microsoft-dynamics-365.md)
 ### [Cifrado en Azure](office-365-azure-encryption.md)
@@ -565,6 +558,9 @@
 ### [Aislamiento del inquilino en Office Graph y Delve](office-365-isolation-in-graph-and-delve.md)
 
 # Funciones de seguridad híbridas
+## [Cifrado de correo de Exchange Online con AD RMS](information-rights-management-in-exchange-online.md)
+### [Configurar IRM para usar un servidor de AD RMS local](configure-irm-to-use-an-on-premises-ad-rms-server.md)
+
 ## [Exchange Online Protection](eop/exchange-online-protection-overview.md)
 ### [Características de EOP](eop/eop-features.md)
 ### [Permisos de características en EOP](eop/feature-permissions-in-eop.md)
@@ -607,6 +603,15 @@
 #### [Accesibilidad para personas con discapacidad](eop/accessibility-for-people-with-disabilities.md)
 #### [Enviar correo a Office 365](sending-mail-to-office-365.md)
 #### [Servicios para no clientes](services-for-non-customers.md)
+
+# Características de seguridad y cumplimiento heredadas
+## [S/MIME](s-mime-for-message-signing-and-encryption.md)
+### [S/MIME para la firma y cifrado de mensajes](s-mime-for-message-signing-and-encryption.md)
+### [Configurar S/MIME para Outlook en la Web](configure-s-mime-settings-for-outlook-web-app.md)
+### [Enviar y recibir correo electrónico cifrado y firmado con S/MIME](send-and-receive-s-mime-signed-and-encrypted-email.md)
+### [Sincronizar certificados de usuario con Office 365 para S/MIME](sync-user-certificates-to-office-365-for-s-mime.md)
+### [Configurar una colección de certificados virtuales para validar S/MIME](set-up-virtual-certificate-collection-to-validate-s-mime.md)
+
 # [Office 365 Enterprise](https://docs.microsoft.com/Office365/Enterprise)
 # [Office 365 para empresas](https://docs.microsoft.com/office365/admin/admin-home)
 # [Microsoft 365](https://docs.microsoft.com/microsoft-365/)
