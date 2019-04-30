@@ -13,16 +13,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Use el botón Reintentar para resolver búsquedas de contenido que tienen errores de ubicación de contenido.
-ms.openlocfilehash: 8334ec053e86e48f99955af2d56e511a2df5c25a
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 0963bccfe88a74b82ec3155469ca6d892bf2f7d8
+ms.sourcegitcommit: 72e8a74b55fe7f56b50e30ff10a635734b5a3220
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261508"
+ms.lasthandoff: 04/30/2019
+ms.locfileid: "33472385"
 ---
 # <a name="retry-a-content-search-to-resolve-a-content-location-error"></a>Volver a intentar una búsqueda de contenido para resolver un error de ubicación de contenido
 
-Cuando usa la búsqueda de contenido en el centro de seguridad y cumplimiento para buscar en un gran número de buzones (por ejemplo, buscar 100.000 buzones o más en una sola búsqueda de contenido), es posible que obtenga errores de búsqueda similares a los siguientes:
+Cuando usa la búsqueda de contenido en el centro de seguridad y cumplimiento para buscar en un gran número de buzones, es posible que obtenga errores de búsqueda similares a los siguientes:
 
 ```
 Error
