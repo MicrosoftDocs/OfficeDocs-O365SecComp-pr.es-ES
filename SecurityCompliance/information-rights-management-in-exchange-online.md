@@ -1,5 +1,5 @@
 ---
-title: Information Rights Management en Exchange Online
+title: Cifrado de correo de Exchange Online con AD RMS
 ms.author: krowley
 author: kccross
 manager: laurawi
@@ -11,19 +11,19 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 2c956776-0016-4be6-b4cd-133a237f4a9e
-description: Las personas suelen usar el correo para intercambiar información confidencial, como datos financieros, contratos legales, información confidencial de productos, informes y proyecciones de ventas, información de historial médico o información sobre clientes y empleados. Por ello, los buzones de correo pueden convertirse en repositorios para cantidades grandes de información posiblemente confidencial y la filtración de información puede convertirse en una seria amenaza para las organizaciones.
-ms.openlocfilehash: aef3acaba6b0efe4550958ce1d98add371069648
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: Puede configurar IRM de Exchange Online para usar el servicio de Active Directory Rights Management (AD RMS) local, si es necesario, para satisfacer los requisitos de la organización. Esta opción es poco frecuente. Si no tiene ningún requisito para usar AD RMS, use el cifrado de mensajes de Office en su lugar.
+ms.openlocfilehash: 423c6008a55539123b76225458a39c4f98e7725d
+ms.sourcegitcommit: 696c1ed6b270be3f9da7395b49a7d8fec98e6db0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32253988"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "33470390"
 ---
-# <a name="information-rights-management-in-exchange-online"></a>Information Rights Management en Exchange Online
+# <a name="exchange-online-mail-encryption-with-ad-rms"></a>Cifrado de correo de Exchange Online con AD RMS
 
-Las personas suelen usar el correo para intercambiar información confidencial, como datos financieros, contratos legales, información confidencial de productos, informes y proyecciones de ventas, información de historial médico o información sobre clientes y empleados. Por ello, los buzones de correo pueden convertirse en repositorios para cantidades grandes de información posiblemente confidencial y la filtración de información puede convertirse en una seria amenaza para las organizaciones.
-  
-Para ayudar a evitar la filtración de información, Exchange Online incluye la función Information Rights Management (IRM), que ofrece protección en línea y sin conexión para los mensajes de correo y los datos adjuntos. La protección de IRM pueden aplicarla los usuarios en Microsoft Outlook o Outlook en la web, y los administradores pueden aplicarla mediante reglas de protección de transporte o reglas de protección de Outlook. IRM le ayuda tanto a usted como a los usuarios a controlar quién puede consultar, reenviar, imprimir o copiar información confidencial del correo.
+Para ayudar a evitar la filtración de información, Exchange Online incluye la función Information Rights Management (IRM), que ofrece protección en línea y sin conexión para los mensajes de correo y los datos adjuntos. Puede configurar IRM de Exchange Online para usar el servicio de Active Directory Rights Management (AD RMS) local, si es necesario, para satisfacer los requisitos de la organización. Esta opción es poco frecuente. Si no tiene ningún requisito para usar AD RMS, use el cifrado de [mensajes de Office](ome.md) en su lugar. 
+
+La protección de IRM pueden aplicarla los usuarios en Microsoft Outlook o Outlook en la web, y los administradores pueden aplicarla mediante reglas de protección de transporte o reglas de protección de Outlook. IRM le ayuda tanto a usted como a los usuarios a controlar quién puede consultar, reenviar, imprimir o copiar información confidencial del correo.
   
 ## <a name="changes-to-how-irm-works-with-office-365-message-encryption-ome-and-azure-active-directory"></a>Cambios en el funcionamiento de IRM con Office 365 cifrado de mensajes (OME) y Azure Active Directory
 
