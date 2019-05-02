@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
 description: 'Obtenga información sobre los elementos sin indexar en Exchange y SharePoint que puede incluir en una búsqueda de contenido ejecutada a través del centro de seguridad & cumplimiento. '
-ms.openlocfilehash: da51788b3f017811756c3c07294bf6e2712e2e2c
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 22eca4e56c21783db348f6569b73257a9cc53dab
+ms.sourcegitcommit: 0baa79a6e6fb72be488556607bc8c441642981a7
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32262322"
+ms.lasthandoff: 05/02/2019
+ms.locfileid: "33527658"
 ---
 # <a name="partially-indexed-items-in-content-search-in-office-365"></a>Elementos parcialmente indizados en la búsqueda de contenido en Office 365
 
@@ -71,18 +71,13 @@ De forma similar, los mensajes con datos adjuntos de archivo parcialmente indiza
   
 Para obtener una lista de las propiedades de correo electrónico y documentos que puede buscar mediante la característica de búsqueda en el centro de seguridad & cumplimiento, vea [consultas de palabras clave y condiciones de búsqueda para la búsqueda de contenido](keyword-queries-and-search-conditions.md).
   
-
-  
 ## <a name="partially-indexed-items-included-in-the-search-results"></a>Elementos parcialmente indizados incluidos en los resultados de la búsqueda
-<a name="unindexeditemsresults"> </a>
 
-Es posible que su organización tenga que identificar y realizar análisis adicionales en elementos parcialmente indizados para determinar qué son, qué contienen y si son relevantes para una investigación específica. Como se ha explicado anteriormente, los elementos parcialmente indizados en las ubicaciones de contenido que se buscan se incluyen automáticamente con los resultados de búsqueda estimados. Tiene la opción de incluir estos elementos parcialmente indizados al exportar los resultados de la búsqueda o preparar los resultados de la búsqueda para la exhibición avanzada de documentos electrónicos. Para incluir elementos parcialmente indizados cuando exporte resultados de búsqueda o los prepara para la exhibición avanzada de documentos electrónicos, seleccione una de las opciones para incluir elementos que tienen un formato no reconocido, están cifrados o no se indizaron por otros motivos.
+Es posible que su organización tenga que identificar y realizar análisis adicionales en elementos parcialmente indizados para determinar qué son, qué contienen y si son relevantes para una investigación específica. Como se ha explicado anteriormente, los elementos parcialmente indizados en las ubicaciones de contenido que se buscan se incluyen automáticamente con los resultados de búsqueda estimados. Tiene la opción de incluir estos elementos parcialmente indizados al exportar los resultados de la búsqueda o preparar los resultados de la búsqueda para la exhibición avanzada de documentos electrónicos.
   
 Tenga en cuenta lo siguiente sobre los elementos parcialmente indizados:
   
-- Cuando se ejecuta una búsqueda de contenido, el número total y el tamaño de los elementos parcialmente indizados (devuelto por la consulta de búsqueda) se muestran en las estadísticas de búsqueda en el panel de detalles, con la etiqueta "elementos sin indexar".
-    
-- Cuando se exportan los resultados de la búsqueda y se incluyen los elementos parcialmente indizados, los elementos de Exchange indizados parcialmente se exportan a un archivo PST independiente para cada buzón en el que se encuentran, o como mensajes individuales si se selecciona la opción para descargar elementos de Exchange como mensaje. los elementos de SharePoint parcialmente indizados se exportan a una carpeta denominada no **rastreable**.
+- Cuando se ejecuta una búsqueda de contenido, el número total y el tamaño de los elementos de Exchange parcialmente indizados (devueltos por la consulta de búsqueda) se muestran en las estadísticas de búsqueda en el panel de detalles y se etiquetan como **elementos indizados**. Tenga en cuenta que las estadísticas de los elementos parcialmente indizados mostrados en el panel de detalles no incluyen elementos parcialmente indizados en SharePoint o OneDrive.
     
 - Si la búsqueda desde la que está exportando resultados es una búsqueda de ubicaciones de contenido específicas o de todas las ubicaciones de contenido de su organización, solo se exportarán los elementos sin indexar de las ubicaciones de contenido que contienen elementos que coinciden con los criterios de búsqueda. In other words, if no search results are found in a mailbox or site, then any unindexed items in that mailbox or site won't be exported. El motivo es que exportar los elementos parcialmente indizados de muchos lugares de la organización puede aumentar la probabilidad de errores de exportación y aumentar el tiempo que se tarda en exportar y descargar los resultados de la búsqueda.
     
@@ -91,6 +86,17 @@ Tenga en cuenta lo siguiente sobre los elementos parcialmente indizados:
 - Si elige incluir todos los elementos del buzón de correo en los resultados de la búsqueda o si una consulta de búsqueda no especifica ninguna palabra clave o solo especifica un intervalo de fechas, es posible que no se copien los elementos parcialmente indizados en el archivo PST que contiene los elementos parcialmente indizados. Esto se debe a que todos los elementos, incluidos los elementos parcialmente indizados, se incluirán automáticamente en los resultados de la búsqueda normales.
     
 - Los elementos indexados parcialmente no están disponibles para la vista previa. Tiene que exportar los resultados de la búsqueda para ver los elementos parcialmente indizados devueltos por la búsqueda.
+
+Además, cuando se exportan los resultados de la búsqueda y se incluyen los elementos parcialmente indizados en la exportación, los elementos parcialmente indizados de los elementos de SharePoint se exportan a una carpeta denominada no **rastreable**. Cuando se exportan elementos de Exchange parcialmente indizados, estos se exportan de forma diferente en función de si los elementos parcialmente indizados coinciden con la consulta de búsqueda y la configuración de la configuración de exportación. 
+
+En la tabla siguiente se muestra el comportamiento de exportación de los elementos indexados y los elementos indizados parcialmente, y si cada uno de ellos está incluido o no para las distintas opciones de configuración de exportación.
+
+|**Exportar configuración**|**Elementos indizados que coinciden con la consulta de búsqueda**|**Elementos parcialmente indizados que coinciden con la consulta de búsqueda**|**Elementos parcialmente indizados que no coinciden con la consulta de búsqueda**|
+|:-----|:-----|:-----|:-----|
+|Exportar solo los elementos indexados  <br/> |Exported<br/> |Exportado (incluido con los elementos indizados que se exportan)<br/>  |No se exporta <br/>|
+|Exportar sólo los elementos parcialmente indizados  <br/> |No se exporta  <br/> |Exportado (como elementos parcialmente indizados)<br/> |Exportado (como elementos parcialmente indizados)|
+|Exportar elementos indexados y parcialmente indizados  <br/> |Exported<br/> |Exportado (incluido con los elementos indizados que se exportan)<br/>  |Exportado (como elementos parcialmente indizados)<br/>|
+||||
 
 ## <a name="partially-indexed-items-excluded-from-the-search-results"></a>Elementos parcialmente indizados excluidos de los resultados de la búsqueda
 
@@ -117,12 +123,11 @@ Para obtener una lista de los límites de indización de documentos de SharePoin
 |Salida máxima del analizador  <br/> |2 millones de caracteres  <br/> |La cantidad máxima de salida de texto del analizador que se indiza. Por ejemplo, si el analizador extrajo 8 millones caracteres de un documento, solo se indizarán los primeros 2 millones de caracteres.  <br/> |
 |Tokens de anotación máximos  <br/> |2 millones  <br/> |Cuando se indiza un mensaje de correo electrónico, se anota cada palabra con diferentes instrucciones de procesamiento que especifican cómo debe indizarse esa palabra. Cada conjunto de instrucciones de procesamiento se denomina token de anotación. Para mantener la calidad de servicio en Office 365, hay un límite de 2 millones de tokens de anotación para un mensaje de correo electrónico.  <br/> |
 |Tamaño máximo del cuerpo en el índice  <br/> |67 millones caracteres  <br/> |El número total de caracteres en el cuerpo de un mensaje de correo electrónico y todos sus datos adjuntos. Cuando se indiza un mensaje de correo electrónico, todo el texto del cuerpo del mensaje y en todos los datos adjuntos se concatena en una sola cadena. El tamaño máximo de esta cadena indizada es de 67 millones caracteres.  <br/> |
-|Número máximo de tokens únicos en el cuerpo  <br/> |1 millón  <br/> |Como se ha explicado anteriormente, los tokens son el resultado de extraer texto del contenido, quitar los signos de puntuación y espacios y, a continuación, dividirlo en palabras (llamadas tokens) que se almacenan en el índice. Por ejemplo, la frase `"cat, mouse, bird, dog, dog"` contiene 5 tokens. Pero solo 4 son tokens únicos. Hay un límite de 1 millón tokens únicos por mensaje de correo electrónico, lo que ayuda a evitar que el índice sea demasiado grande con tokens aleatorios.  <br/> |
+|Número máximo de tokens únicos en el cuerpo  <br/> |1 millón  <br/> |Como se ha explicado anteriormente, los tokens son el resultado de extraer texto del contenido, quitar los signos de puntuación y espacios y, a continuación, dividirlo en palabras (llamadas tokens) que se almacenan en el índice. Por ejemplo, la frase `"cat, mouse, bird, dog, dog"` contiene 5 tokens. Pero solo 4 son tokens únicos. Hay un límite de 1 millón tokens únicos por mensaje de correo electrónico, lo que ayuda a evitar que el índice sea demasiado grande con tokens aleatorios.  <br/> |
    
 
   
 ## <a name="more-information-about-partially-indexed-items"></a>Más información acerca de los elementos parcialmente indizados
-<a name="moreinfo"> </a>
 
 - Como se mencionó anteriormente, debido a que las propiedades Message y Document y sus metadatos se indizan, una búsqueda de palabra clave puede devolver resultados si la palabra clave aparece en los metadatos indizados. En cambio, la misma búsqueda de palabra clave podría no devolver el mismo elemento si la palabra clave solo aparece en el contenido de un elemento con un tipo de archivo no admitido. En este caso, el elemento se devolvería como un elemento parcialmente indizado.
     
@@ -136,7 +141,7 @@ Para obtener una lista de los límites de indización de documentos de SharePoin
     
 - Los mensajes protegidos con Information Rights Management (IRM) se indexan y se incluyen en los resultados de la búsqueda si coinciden con la consulta de búsqueda.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Ver también
 
 [Investigar elementos indizados parcialmente en eDiscovery de Office 365](investigating-partially-indexed-items-in-ediscovery.md)
 
