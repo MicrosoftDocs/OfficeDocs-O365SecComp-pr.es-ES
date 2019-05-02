@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 description: Cree directivas de alerta en el centro de seguridad y cumplimiento en Office 365 y en Microsoft 365 para supervisar las amenazas potenciales, la pérdida de datos y el problema con los permisos. A continuación, puede ver y administrar las alertas que se generan cuando los usuarios realizan actividades que cumplen las condiciones de una directiva de alertas.
-ms.openlocfilehash: e88c3657a03b3cb0ca27b9ae7489e37e986e8199
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 7d7ef6f1f9737a0da3787b093d499a0833885eff
+ms.sourcegitcommit: 4ce350f8f3eb597587945a8ac9b33e9793440c64
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32243111"
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "33516508"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>Directivas de alerta en el centro de seguridad y cumplimiento
 
@@ -35,7 +35,7 @@ A continuación, se presenta una introducción rápida sobre cómo funcionan las
   
 ![Información general sobre cómo funcionan las directivas de alertas](media/e02a622d-b429-448b-8107-dd1a4770b4e0.png)
   
-1. Un administrador de su organización crea, configura y activa una directiva de alertas mediante la página **directivas de alerta** en el centro de seguridad y cumplimiento. También puede crear directivas de alerta con el cmdlet **New-ProtectionAlert** en PowerShell. Para crear directivas de alerta, debe tener asignado el rol configuración de la organización o la función administrar alertas en el centro de seguridad & cumplimiento.
+1. Un administrador de su organización crea, configura y activa una directiva de alertas mediante la página **directivas de alerta** en el centro de seguridad y cumplimiento. También puede crear directivas de alerta con el cmdlet **New-ProtectionAlert** en Security _AMP_ Compliance Center PowerShell. Para crear directivas de alerta, debe tener asignado el rol administrar alertas o la configuración de la organización en el centro de seguridad y cumplimiento.  
     
 2. Un usuario realiza una actividad que coincide con las condiciones de una directiva de alerta. En el caso de ataques de malware, los mensajes de correo electrónico infectados que se envían a los usuarios de su organización activarán una alerta.
     
@@ -92,7 +92,7 @@ Una directiva de alertas consta de los siguientes valores y condiciones.
   
 - **Notificaciones de correo electrónico** : puede configurar la Directiva para que las notificaciones de correo electrónico se envíen (o no se envíen) a una lista de usuarios cuando se desencadene una alerta. También puede establecer un límite de notificación diario para que una vez que se haya alcanzado el número máximo de notificaciones, no se envíen más notificaciones para la alerta durante ese día. En otras notificaciones de correo electrónico, usted u otros administradores pueden ver las alertas desencadenadas por una directiva en la página **Ver alertas** . Considere la posibilidad de habilitar notificaciones de correo electrónico para directivas de alerta de una categoría específica o que tengan una configuración de gravedad más alta. 
   
-## <a name="default-alert-policies"></a>Directivas de alertas preDeterminadas
+## <a name="default-alert-policies"></a>Directivas de alertas predeterminadas
 
 Office 365 proporciona directivas de alerta integradas que ayudan a identificar los permisos de administrador de Exchange, la actividad de malware y los riesgos de gobierno de datos. En la página **directivas de alerta** , el nombre de estas directivas integradas están en negrita y el tipo de Directiva se define como **sistema**. Estas directivas están activadas de forma predeterminada. Puede desactivar estas directivas (o volver a iniciarla), configurar una lista de destinatarios a los que enviar notificaciones por correo electrónico y establecer un límite de notificación diario. No se pueden editar las demás opciones de configuración de estas directivas.
   
@@ -117,7 +117,7 @@ La tabla también indica los planes de Office 365 Enterprise y Office 365 US Gov
 |**Volumen inusual de uso compartido de archivos externos** <br/> |Genera una alerta cuando se comparte un número inusualmente grande de archivos en SharePoint o OneDrive con usuarios fuera de la organización. Esta directiva tiene una configuración de gravedad **media** .  <br/> |Gobierno de datos<br/> |E5/G5, Office 365 ATP P2 o suscripción de complemento de cumplimiento avanzado  <br/> |
 |**Volumen inusual de eliminación de archivo** <br/> |Genera una alerta cuando se elimina un número inusualmente grande de archivos en SharePoint o OneDrive en un breve período de tiempo. Esta directiva tiene una configuración de gravedad **media** .  <br/> |Gobierno de datos <br/> |E5/G5, Office 365 ATP P2 o suscripción de complemento de cumplimiento avanzado  <br/> |
 |**Aumento inusual de correo electrónico notificado como phish** <br/> |Genera una alerta cuando hay un aumento significativo en el número de personas de la organización mediante el complemento de mensajes de informe en Outlook para notificar los mensajes como phishing mail. Esta directiva tiene una configuración de gravedad **alta** . Para obtener más información sobre este complemento, vea [use the Report Message Add-in](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).  <br/> |Administración de amenazas<br/> |Suscripción complementaria E5/G5 o la P2 de Office 365 ATP  <br/> |
-|**El usuario restringió el envío de correo electrónico** <br/> |Genera una alerta cuando una persona de la organización tiene restringido el envío de correo saliente. Normalmente, esto se produce cuando una cuenta está en peligro y el usuario aparece en la página **usuarios restringidos** en el centro de seguridad & cumplimiento. (Para obtener acceso a esta página, vaya a **Threat Management > Review >** reStricted users). Esta directiva tiene una configuración de gravedad **alta** . Para obtener más información acerca de los usuarios restringidos, consulte [quitar un usuario, un dominio o una dirección IP de una lista de bloqueados después de enviar correo no deseado](https://docs.microsoft.com/office365/securitycompliance/removing-a-user-domain-or-ip-address-from-a-block-list-after-sending-spam-email).  <br/> |Administración de amenazas<br/> |E1/G1, E3/G3 o E5/G5  <br/> |
+|**El usuario restringió el envío de correo electrónico** <br/> |Genera una alerta cuando una persona de la organización tiene restringido el envío de correo saliente. Normalmente, esto se produce cuando una cuenta está en peligro y el usuario aparece en la página **usuarios restringidos** en el centro de seguridad & cumplimiento. (Para obtener acceso a esta página, vaya a **Threat Management > Review >** Restricted users). Esta directiva tiene una configuración de gravedad **alta** . Para obtener más información acerca de los usuarios restringidos, consulte [quitar un usuario, un dominio o una dirección IP de una lista de bloqueados después de enviar correo no deseado](https://docs.microsoft.com/office365/securitycompliance/removing-a-user-domain-or-ip-address-from-a-block-list-after-sending-spam-email).  <br/> |Administración de amenazas<br/> |E1/G1, E3/G3 o E5/G5  <br/> |
 |||||
    
 Tenga en cuenta que la actividad inusual supervisada por algunas de las directivas integradas se basa en el mismo proceso que la configuración del umbral de alerta que se describió anteriormente. Office 365 establece un valor de línea base que define la frecuencia normal para la actividad "normal". A continuación, se desencadenan alertas cuando la frecuencia de las actividades a las que hace referencia la Directiva de alerta integrada supera en gran medida el valor de línea base.
@@ -146,9 +146,6 @@ Puede usar los siguientes filtros para ver un subconjunto de todas las alertas e
 
 ## <a name="rbac-permissions-required-to-view-alerts"></a>Permisos de RBAC necesarios para ver las alertas
 
-> [!NOTE]
-> La funcionalidad que se describe en esta sección se implementará en las organizaciones que comienzan el 20 de febrero de 2019 y se completará en todo el mundo a finales de marzo de 2019.
-
 Los permisos de control de acceso de base de roles (RBAC) asignados a los usuarios de la organización determinan las alertas que puede ver un usuario en la página **Ver alertas** . ¿Cómo se consigue? Las funciones de administración asignadas a los usuarios (según su pertenencia a grupos de roles en el centro de seguridad & cumplimiento) determinan las categorías de alertas que puede ver un usuario en la página **Ver alertas** . Aquí le mostramos otros ejemplos:
 
 - Los miembros del grupo de roles de administración de registros solo pueden ver las alertas generadas por las directivas de alertas que tienen asignada la categoría **gobierno de datos** .
@@ -172,7 +169,7 @@ Para ver a qué categoría se asigna una directiva de alerta predeterminada, con
 |Administración de dispositivos<br/>|         |         |         |         |         |         |
 |Administración de disposición<br/>|         |         |         |         |         |         |
 |Administración de cumplimiento de DLP<br/>|         |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|         |         |         |         |
-|Export<br/>|         |         |         |         |         |         |
+|Exportar<br/>|         |         |         |         |         |         |
 |Retención<br/>|         |         |         |         |         |         |
 |Administrar alertas<br/>|         |         |         |         |         |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |Configuración de la organización|         |         |         |         |         |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
@@ -180,9 +177,9 @@ Para ver a qué categoría se asigna una directiva de alerta predeterminada, con
 |Administración de registros <br/>|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|         |         |         |         |         |
 |Administración de retención <br/>| ![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|         |         |         |         |         |
 |Revisar <br/>|         |         |         |         |         |         |
-|DesCifrado de RMS<br/>|         |         |         |         |         |         |
+|Descifrado de RMS<br/>|         |         |         |         |         |         |
 |Administración de funciones<br/>|         |         |         |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|         |         |
-|Búsqueda y dePuración<br/>|         |         |         |         |         |         |
+|Búsqueda y depuración<br/>|         |         |         |         |         |         |
 |Administrador de seguridad<br/>||![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)| | ![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)| ![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |Lector de seguridad<br/>|         |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)| | ![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)| ![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)
 |Vista de garantía del servicio<br/>|         |         |         |         |         |         |
@@ -193,7 +190,7 @@ Para ver a qué categoría se asigna una directiva de alerta predeterminada, con
 |Ver-solo administrar alertas<br/>|         |         |         |         |         |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 |Destinatarios con permiso de vista<br/>|         |         |  ![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)       |         ||         |
 |Administración de registros de solo vista<br/>|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|         |         |         |         |         |
-|View-Only reTention Management<br/>|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|         |         |         |         |         |
+|View-Only Retention Management<br/>|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|         |         |         |         |         |
 |         |         |         |         |         |         |
 
 **Sugerencia:** Para ver los roles asignados a cada uno de los grupos de roles predeterminados, ejecute los siguientes comandos en Security & Compliance Center PowerShell: 
