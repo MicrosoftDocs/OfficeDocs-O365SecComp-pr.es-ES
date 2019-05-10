@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de confidencialidad, puede restringir el acceso al contenido al que se aplique la etiqueta. Las etiquetas de confidencialidad pueden utilizar el cifrado para proteger el contenido.
-ms.openlocfilehash: 69deeed69a5b2970d387c30b01a062c6c068c567
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 41e1a9f1c789d555b1b5db3204b13f3279a6b56a
+ms.sourcegitcommit: d17ef25bf2a638c867cd399fff6c961ffeccaba4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32257278"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33628335"
 ---
 # <a name="restrict-access-to-content-by-using-encryption-in-sensitivity-labels"></a>Restringir el acceso al contenido mediante el cifrado en las etiquetas de confidencialidad
 
@@ -113,6 +113,26 @@ El emisor de administración de derechos siempre obtiene permisos de control tot
 - El emisor de administración de derechos puede seguir abriendo un documento después de que se revoque.
 
 Para obtener más información, vea [Emisor de administración de derechos y propietario de administración de derechos](https://docs.microsoft.com/es-ES/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner).
+
+## <a name="what-happens-to-existing-encryption-when-a-labels-applied"></a>Qué sucede con el cifrado existente al aplicar una etiqueta
+
+Antes de aplicar una etiqueta de confidencialidad al contenido, es posible que un usuario haya cifrado ya el contenido aplicando otra opción de configuración de protección. Por ejemplo, un usuario puede haber aplicado:
+
+- La opción **no reenviar**.
+- Protección personalizada mediante el uso del cliente de etiquetado unificado de Azure Information Protection.
+- Una plantilla de servicio de Azure Rights Management (RMS) que cifra el contenido pero no está asociada con una etiqueta.
+
+Esta tabla describe qué ocurre con el cifrado existente al aplicar una etiqueta de confidencialidad a ese contenido.
+<br/>
+<br/>
+
+| |**El usuario aplica una etiqueta de confidencialidad con cifrado desactivado.**|**El usuario aplica una etiqueta de confidencialidad con cifrado activado.**|**El usuario aplica una etiqueta con Quitar la protección**<sup>1</sup>|
+|:-----|:-----|:-----|:-----|
+|**No reenviar**|Email: la protección de correo se quita.<br/>Documento: se conserva la protección del documento.|Se aplica la etiqueta de protección.|**No reenviar** se quita.|
+|**Protección personalizada**<sup>1</sup>.|Se conserva la protección.|Se aplica la etiqueta de protección.|La protección personalizada se quita.|
+|**Plantilla de Azure RMS**|Se conserva la protección.|Se aplica la etiqueta de protección.|La protección personalizada se quita.|
+
+<sup>1</sup> Esto es compatible únicamente con el cliente de etiquetado de Azure Information Protection.
 
 ## <a name="storing-encrypted-content-in-onedrive-and-sharepoint"></a>Almacenar contenido cifrado en OneDrive y SharePoint
 

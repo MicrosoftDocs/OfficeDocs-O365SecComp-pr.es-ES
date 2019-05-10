@@ -1,5 +1,5 @@
 ---
-title: Identificación de mensajes sospechosos en Outlook.com y Outlook en la web
+title: Remitente no verificado
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
@@ -13,14 +13,14 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Para evitar que los mensajes de suplantación de identidad lleguen a su buzón, Outlook.com y Outlook en la web Compruebe que el remitente es quien dice ser y marcar los mensajes sospechosos como correo no deseado.
-ms.openlocfilehash: edba30bb2ac0f9dc6ebc12db957a518de0c1b543
-ms.sourcegitcommit: 9907bebc5f225032f681c4952de0b0be2df278ac
+ms.openlocfilehash: 5d4315afb33964e7c466384366b7315287cf6298
+ms.sourcegitcommit: d24f50347c671cf5d2d8afec2f80d37d18af8b5d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33345930"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "33867853"
 ---
-# <a name="identify-suspicious-messages-in-outlookcom-and-outlook-on-the-web"></a>Identificación de mensajes sospechosos en Outlook.com y Outlook en la web
+# <a name="unverified-sender"></a>Remitente no verificado
 
 Para evitar que los mensajes de suplantación de identidad lleguen a su buzón, Outlook.com y Outlook en la web Compruebe que el remitente es quien dice ser y marcar los mensajes sospechosos como correo no deseado.
 
@@ -31,9 +31,25 @@ Para evitar que los mensajes de suplantación de identidad lleguen a su buzón, 
 
 Outlook.com y Outlook en la web muestran indicadores cuando no se puede identificar el remitente de un mensaje o su identidad es diferente de la que se ve en la dirección de remitente.
 
+## <a name="how-to-manage-which-messages-receive-the-unverified-sender-treatment"></a>Cómo administrar qué mensajes reciben el tratamiento de remitentes no comprobados 
+
+Si es un cliente de Office 365, puede administrar esta característica a través del centro de seguridad & cumplimiento. 
+
+- En el centro de seguridad & cumplimiento de Office 365, los administradores de espacios empresariales pueden activar o desactivar la característica a través de la protección contra la suplantación de identidad (phishing) en la Directiva ANTIPHISH. Además, puede administrarse mediante el cmdlet "Set-AntiPhishPolicy". Para obtener más información, consulte protección contra la suplantación de identidad en Office 365 y set-AntiPhishPolicy.
+
+    ![Edición de remitentes no autenticados en la interfaz gráfica.](media/unverified-sender-article-editing-unauthenticated-senders.jpg)
+
+- Si un administrador ha identificado un falso positivo y un remitente no debe recibir el tratamiento de remitente no verificado, puede realizar una de las siguientes acciones para agregar el remitente a la lista de permitidos de falsificación de inteligencia de identidad:
+        
+    - Agregue el par de dominios mediante el conocimiento de inteligencia de ti falso. Para obtener más información, consulte Walkthrough: suplantar inteligencia Insight
+                
+    - Agregue el par de dominios mediante el cmdlet PhishFilterPolicy. Para obtener más información, vea Set-PhishFilterPolicy y protección contra la suplantación de identidad en Office 365
+
+Además, no se aplica el tratamiento de remitente no verificado si se entregó en la bandeja de entrada a través de una lista de permitidos del administrador, incluidas las reglas de transporte de correo electrónico (ETR), la lista de dominios seguros (Directiva contra correo no deseado), la lista de remitentes seguros o un usuario ha establecido este usuario como un "remitente seguro" en su entrada.
+
 ### <a name="you-see-a--in-the-sender-image"></a>Ve un '? ' en la imagen del remitente
 
-Cuando Outlook.com y Outlook en la web no pueden comprobar la identidad del remitente mediante técnicas de autenticación de correo electrónico, muestran un '? ' en la foto del remitente.
+Cuando Outlook.com y Outlook en la web no pueden comprobar la identidad del remitente mediante técnicas de autenticación de correo electrónico, muestran un '? ' en la foto del remitente. 
 
 ![El mensaje no pasó la comprobación](media/message-did-not-pass-verification.jpg)
 

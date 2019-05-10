@@ -1,5 +1,5 @@
 ---
-title: Campos de metadatos del documento en eDiscovery avanzado (versión preliminar)
+title: Campos de metadatos del documento en eDiscovery avanzado
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,23 +14,21 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: b9caf390e3ee0c10a35fa12cc68fcb0638987dcb
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 75550d48a474fc6429a780d0a03d28745e20e1f7
+ms.sourcegitcommit: 865b3dc071150b20bf3967e1263fc54e75898284
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32251858"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "33835060"
 ---
-# <a name="document-metadata-fields-in-advanced-ediscovery-preview"></a>Campos de metadatos del documento en eDiscovery avanzado (versión preliminar)
+# <a name="document-metadata-fields-in-advanced-ediscovery"></a>Campos de metadatos del documento en eDiscovery avanzado
 
-En la siguiente tabla se enumeran los campos de metadatos de los documentos de un conjunto de trabajo en un caso en eDiscovery avanzado (versión preliminar). La tabla indica el nombre del campo de metadatos, si el campo se puede buscar cuando se ejecuta una consulta en un conjunto de trabajo, si el campo está presente cuando se visualizan los metadatos de archivo de un documento seleccionado en un conjunto de trabajo y si el campo se incluye cuando se exportan los documentos. 
-
-En la siguiente tabla se enumeran los campos de metadatos de los documentos de un conjunto de trabajo en un caso en eDiscovery avanzado (versión preliminar). La tabla indica el nombre del campo de metadatos, si el campo se puede buscar cuando se ejecuta una consulta en un conjunto de trabajo, si el campo está presente cuando se visualizan los metadatos de archivo de un documento seleccionado en un conjunto de trabajo y si el campo se incluye cuando se exportan los documentos. 
+En la tabla de este artículo se enumeran los campos de metadatos de los documentos en un conjunto de revisión en un caso en eDiscovery avanzado. La tabla indica el nombre del campo de metadatos, si el campo se puede buscar al ejecutar una consulta en un conjunto de revisiones, si el campo está presente cuando se ven los metadatos de un documento seleccionado en un conjunto de revisiones y si el campo se incluye cuando documentos a re exportó. 
 
 > [!NOTE]
-> Los valores entre paréntesis en la columna **búsquedas en el conjunto de trabajo** son el nombre de la propiedad que se puede buscar. Los valores que aparecen entre paréntesis en la columna **de metadatos de archivo visibles** es el nombre de la propiedad que se muestra cuando está viendo los metadatos de archivo.
+> Los valores entre paréntesis en la columna **búsquedas en el conjunto de revisiones** es el nombre de la propiedad que se puede buscar. Los valores que aparecen entre paréntesis en la columna **de metadatos de archivo visibles** es el nombre de la propiedad que se muestra cuando está viendo los metadatos de archivo.
 
-|**Nombre del campo** </br>|**Se pueden buscar en el conjunto de trabajo** |**Visible en los metadatos de archivo** |**Exported** |
+|**Nombre de campo** </br>|**Se pueden buscar en el conjunto de revisión** |**Visible en los metadatos de archivo** |**Exported** |
 |:-------------------------- |:---------------------------------------- |:------------------------|:------------------|
 |Etiquetas Case                  | Sí (etiquetas)                                      |                         | Sí         |
 |Etiquetas de cumplimiento          |                                                 |                         | Sí         |
@@ -82,8 +80,8 @@ En la siguiente tabla se enumeran los campos de metadatos de los documentos de u
 |Correo electrónico a                   | Sí (para)                                        |                         | Sí         |
 |Código de error                 | Sí (processingStatus)                          |                         | Sí         |
 |Exportar ruta de acceso nativa         |                                                 |                         | Sí         |
-|Longitud de texto exTraída      |                                                 |                         | Sí         |
-|Ruta de acceso del texto exTraído        |                                                 |                         | Sí         |
+|Longitud de texto extraída      |                                                 |                         | Sí         |
+|Ruta de acceso del texto extraído        |                                                 |                         | Sí         |
 |IDENTIFICADOR de familia                  | Sí (familyId)                                  |   Sí (FamilyId)        | Sí         |
 |Tamaño de la familia                |                                                 |                         | Sí         |
 |Clase File                 | Sí (fileClass)                                 |   Sí (clase de archivo)      | Sí         |

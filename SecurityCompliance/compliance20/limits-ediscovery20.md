@@ -1,5 +1,5 @@
 ---
-title: Límites de eDiscovery avanzado (vista previa)
+title: Límites avanzados de eDiscovery
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -12,32 +12,32 @@ search.appverid:
 - MOE150
 - MET150
 description: ''
-ms.openlocfilehash: ff0be77e0fd6e35c6f0536f8bcfe9384c27d6b58
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 0c5213a49744b997037b084f33dce1ab47df05bf
+ms.sourcegitcommit: 865b3dc071150b20bf3967e1263fc54e75898284
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32243801"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "33834949"
 ---
-# <a name="limits-in-advanced-ediscovery-preview"></a>Límites de eDiscovery avanzado (versión preliminar)
+# <a name="limits-in-advanced-ediscovery"></a>Límites de eDiscovery avanzado
 
-En este artículo se describen los límites de Advanced eDiscovery (versión preliminar).
+En este artículo se describen los límites de la exhibición avanzada de documentos electrónicos.
 
 ## <a name="case-limits"></a>Límites de casos
 
-En la siguiente tabla se enumeran los límites de los casos en eDiscovery avanzado (versión preliminar).
+En la siguiente tabla se enumeran los límites de los casos en eDiscovery avanzado.
 
 |**Descripción del límite**|**Límite**|
   |:-----|:-----|
   |Número máximo de casos.  <br/> |50  <br/> |
-  |Número total de documentos que se pueden agregar a un caso (para todos los conjuntos de trabajo en el caso).  <br/> |1 millón  <br/> |
-  |Tamaño total de archivo por carga.  <br/> |100 GB  <br/> |
+  |Número total de documentos que se pueden agregar a un caso (para todos los conjuntos de revisión en el caso).  <br/> |1 millón  <br/> |
+  |Tamaño total de archivo por conjunto de carga.  <br/> |100 GB  <br/> |
   |Tamaño máximo de un solo archivo.   <br/> |100 MB <sup>1</sup> <br/> |
   |Número máximo de caracteres extraídos de un solo archivo.  <br/> |10 millones <sup>1</sup> <br/> |
-  |Profundidad de los elementos insertados en un documento.  <br/> |25 <sup>1</sup> <br/> |
+  |Profundidad máxima de elementos incrustados en un documento.  <br/> |25 <sup>1</sup> <br/> |
 |||
  > [!NOTE]
-> <sup>1</sup> todos los elementos que superen un solo límite de archivos se mostrarán como errores de procesamiento. 
+> <sup>1</sup> cualquier elemento que supere un solo límite de archivo se mostrará como un error de procesamiento. 
 
 ## <a name="indexing-limits"></a>Límites de indexación
 

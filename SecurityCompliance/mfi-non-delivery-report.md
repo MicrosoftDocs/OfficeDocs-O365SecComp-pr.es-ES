@@ -9,18 +9,14 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: Los administradores pueden obtener información sobre el informe de no entrega en el panel de flujo de correo en el centro de seguridad & cumplimiento.
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 21d9b08330ddb5832600431f0d60179c7a157177
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: d4b34b5801f663a1028a23cf3a1f897d56a2239b
+ms.sourcegitcommit: e05e83212e7ca4e84f2ddb0de0297895b995338d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32267175"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "33868608"
 ---
 # <a name="non-delivery-report"></a>Informe de no entrega
-
-> [!NOTE]
-> Las características descritas en este tema no se han implementado en todas las organizaciones de Office 365 y están sujetas a cambios.
 
 El **Informe de no entrega** muestra los códigos de error más encontrados en los informes de no entrega (también conocidos como NDR o mensajes de devolución) para los usuarios de su organización. Este informe tiene como objetivo mostrar los detalles de NDR, de modo que pueda solucionar problemas.
 

@@ -9,34 +9,30 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: Los administradores pueden obtener información sobre el panel del flujo de correo en el centro de seguridad & cumplimiento.
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 4af35fea640c1f4c43464d1adf2e4a9f3b4f780d
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 80aa6b773d63b6c98293fa2787d38ad393e67b37
+ms.sourcegitcommit: e05e83212e7ca4e84f2ddb0de0297895b995338d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32252118"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "33868628"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>Reportes de flujo de Correo en el Centro de seguridad y cumplimiento
-
-> [!NOTE]
-> Las características descritas en este tema no se han implementado en todas las organizaciones de Office 365 y están sujetas a cambios.
 
 Los administradores pueden usar el panel de flujo de correo en el centro de seguridad & cumplimiento para descubrir tendencias, información y emprender acciones para corregir problemas relacionados con el flujo de correo en su organización de Office 365.
 
 La información, los informes y los widgets que están disponibles en el panel del flujo de correo son:
 
-- [Informe de mapa de flujo de correo](mfi-mail-flow-map-report.md) (Este informe es nuevo y actualmente se está implementando en Office 365.)
+- [Informe de mapa de flujo de correo](mfi-mail-flow-map-report.md)
 
-- [Información del estado del flujo de correo del dominio](mfi-domain-mail-flow-status-insight.md) (Esta visión es nueva y actualmente se está implementando en Office 365.)
+- [Información del estado del flujo de correo del dominio](mfi-domain-mail-flow-status-insight.md)
 
-- [Informe de clientes de autenticación SMTP](mfi-smtp-auth-clients-report.md) (Este informe es nuevo y actualmente se está implementando en Office 365.)
+- [Informe de clientes de autenticación SMTP](mfi-smtp-auth-clients-report.md)
 
-- [Información del dominio del remitente](mfi-sender-domain-insight.md) (Esta visión es nueva y actualmente se está implementando en Office 365.)
+- [Información del dominio del remitente](mfi-sender-domain-insight.md)
 
-- [Informe de no entrega](mfi-non-delivery-report.md) (Este informe es nuevo y actualmente se está implementando en Office 365.)
+- [Informe de no entrega](mfi-non-delivery-report.md)
 
-- [Informe de dominio no aceptado](mfi-non-accepted-domain-report.md) (Este informe es nuevo y actualmente se está implementando en Office 365.)
+- [Informe de dominio no aceptado](mfi-non-accepted-domain-report.md)
 
 - [Flujo de correo entrante y saliente](mfi-outbound-and-inbound-mail-flow.md)
 
@@ -72,6 +68,6 @@ Para obtener información sobre cómo asignar a los usuarios roles del centro de
 
 1. Vaya al centro de seguridad & cumplimiento en [https://protection.office.com](https://protection.office.com).
 
-2. ExPanda **flujo de correo** y seleccione **Panel**.
+2. Expanda **flujo de correo** y seleccione **Panel**.
 
    ![Panel flujo de correo en el centro de seguridad & cumplimiento de Office 365](media/mail-flow-dashboard-v2.png)
