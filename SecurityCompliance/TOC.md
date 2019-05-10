@@ -5,7 +5,6 @@
 ### [Centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center.md)
 ### [Centro de seguridad de Microsoft 365](overview-security-center.md)
 ### [Puntuación de seguridad de Microsoft](microsoft-secure-score.md)
-### [Puntuación segura de Office 365](office-365-secure-score.md)
 ## [Ir al Centro de seguridad y cumplimiento](go-to-the-securitycompliance-center.md)
 ### [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md)
 ### [Proporcionar a los usuarios acceso al Centro de seguridad y cumplimiento](grant-access-to-the-security-and-compliance-center.md)
@@ -71,68 +70,13 @@
 #### [Información heredada para el cifrado de mensajes de Office 365](legacy-information-for-message-encryption.md)
 #### [Configurar Azure Rights Management para la versión anterior del Cifrado de mensajes de Office 365](set-up-azure-rms-for-previous-version-message-encryption.md)
 
-# Administración de registros
-## [Administrador del plan de archivos](file-plan-manager.md)
-## [Etiquetas de retención](labels.md)
-### [Cumplir con la norma SEC 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
-### [Crear y publicar etiquetas de retención con PowerShell](https://docs.microsoft.com/es-ES/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
-## [Acerca de la retención basada en eventos](event-driven-retention.md)
-### [Retención automática basada en eventos](automate-event-driven-retention.md)
-## [Revisiones para eliminación](disposition-reviews.md)
-## Supervisar la administración de registros
-### [Ver los informes de gobierno de datos](view-the-data-governance-reports.md)
-### [Ver la actividad de etiquetas de documentos](view-label-activity-for-documents.md)
-### [Ver el uso de etiquetas con el análisis de etiquetas](label-analytics.md)
-## Más información sobre la administración de registros
-### [Ver vídeos del equipo de gobierno de datos de Microsoft](https://go.microsoft.com/fwlink/?linkid=867039)
-
-# Administrar el gobierno de datos
-## [Importar datos](importing-pst-files-to-office-365.md)
-### [Usar la carga en la red para importar archivos PST](use-network-upload-to-import-pst-files.md)
-### [Usar el envío de unidades para importar los archivos PST](use-drive-shipping-to-import-pst-files-to-office-365.md)
-### [Usar la herramienta de recopilación de PST para buscar, copiar y eliminar archivos PST](find-copy-and-delete-pst-files-in-your-organization.md)
-### [Filtrar datos al importar archivos PST](filter-data-when-importing-pst-files.md)
-### [Usar la carga en la red para importar archivos PST con cifrado RMS](use-network-upload-to-import-rms-encrypted-pst-files.md)
-### [Preguntas más frecuentes sobre la importación de archivos PST](faqimporting-pst-files-to-office-365.md)
-### [Archivado de datos de terceros en Office 365](archiving-third-party-data.md)
-#### [Usar conectores de ejemplo para archivar datos de terceros](archive-third-party-data-with-sample-connector.md)
-#### [Trabajar con un socio para archivar datos de terceros](work-with-partner-to-archive-third-party-data.md)
-## Almacenar datos
-### [Habilitar buzones de archivo](enable-archive-mailboxes.md)
-### [Información general sobre el archivado ilimitado](unlimited-archiving.md)
-### [Habilitar el archivado ilimitado](enable-unlimited-archiving.md)
-### [Configurar una directiva de archivo y eliminación para buzones de correo](set-up-an-archive-and-deletion-policy-for-mailboxes.md)
-## Conservar datos
-### [Directivas de retención](retention-policies.md)
-### [Administrador del plan de archivos](file-plan-manager.md)
-### [Etiquetas de retención](labels.md)
-### [Cumplir con la norma SEC 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
-### [Crear y publicar etiquetas de retención con PowerShell](https://docs.microsoft.com/es-ES/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
-### [Acerca de la retención basada en eventos](event-driven-retention.md)
-### [Retención automática basada en eventos](automate-event-driven-retention.md)
-## [Eliminar datos](disposition-reviews.md)
-## [Supervisar las comunicaciones](supervision-policies.md)
-### [Configurar directivas de supervisión para su organización](configure-supervision-policies.md)
-## [Administrar buzones inactivos](inactive-mailboxes-in-office-365.md)
-### [Crear y administrar buzones inactivos](create-and-manage-inactive-mailboxes.md)
-### [Cambiar la duración de retención para un buzón inactivo](change-the-hold-duration-for-an-inactive-mailbox.md)
-### [Recuperar un buzón inactivo](recover-an-inactive-mailbox.md)
-### [Restaurar un buzón inactivo](restore-an-inactive-mailbox.md)
-### [Eliminar un buzón inactivo](delete-an-inactive-mailbox.md)
-## Monitorizar el gobierno de datos
-### [Ver la actividad de etiquetas de documentos](view-label-activity-for-documents.md)
-### [Ver el uso de etiquetas con el análisis de etiquetas](label-analytics.md)
-### [Ver los informes de gobierno de datos](view-the-data-governance-reports.md)
-## Más información sobre el gobierno de datos
-### [Ver vídeos del equipo de gobierno de datos de Microsoft](https://go.microsoft.com/fwlink/?linkid=867039)
-
 # [Protección contra amenazas](protect-against-threats.md)
 
 ## [Captura de Microsoft 365](hunting.md)
 
 ## [Comprender las últimas campañas de ataques con análisis de amenazas](latest-attack-campaigns.md)
 
-## [Protección contra amenazas avanzada](office-365-atp.md)
+## [Protección contra amenazas avanzada de Office 365](office-365-atp.md)
 ### [Vínculos seguros de ATP](atp-safe-links.md)
 #### [Configurar directivas de vínculos seguros de ATP](set-up-atp-safe-links-policies.md)
 #### [Configurar una lista personalizada de URL con "no reescribir"](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)
@@ -226,6 +170,66 @@
 ### [Preguntas más frecuentes sobre cuarentena para Office 365](quarantine-faq.md)
 ### [Usar notificaciones de correo no deseado para el usuario para liberar y notificar mensajes de correo en cuarentena en Office 365](use-spam-notifications-to-release-and-report-quarantined-messages.md)
 
+# Respuesta a incidentes de seguridad
+## [Respuesta a incidentes de seguridad de Office 365](office365-security-incident-response-overview.md)
+## [Detectar y solucionar la concesión de consentimiento ilegal en Office 365](detect-and-remediate-illicit-consent-grants.md)
+## [Detectar y corregir las reglas de Outlook y ataques de inserciones de formularios personalizados en Office 365](detect-and-remediate-outlook-rules-forms-attack.md)
+## [Responder a una cuenta de correo electrónico en peligro en Office 365](responding-to-a-compromised-email-account.md)
+
+# Administración de registros
+## [Administrador del plan de archivos](file-plan-manager.md)
+## [Etiquetas de retención](labels.md)
+### [Cumplir con la norma SEC 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
+### [Crear y publicar etiquetas de retención con PowerShell](https://docs.microsoft.com/es-ES/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+## [Acerca de la retención basada en eventos](event-driven-retention.md)
+### [Retención automática basada en eventos](automate-event-driven-retention.md)
+## [Revisiones para eliminación](disposition-reviews.md)
+## Supervisar la administración de registros
+### [Ver los informes de gobierno de datos](view-the-data-governance-reports.md)
+### [Ver la actividad de etiquetas de documentos](view-label-activity-for-documents.md)
+### [Ver el uso de etiquetas con el análisis de etiquetas](label-analytics.md)
+## Más información sobre la administración de registros
+### [Ver vídeos del equipo de gobierno de datos de Microsoft](https://go.microsoft.com/fwlink/?linkid=867039)
+
+# Administrar el gobierno de datos
+## [Importar datos](importing-pst-files-to-office-365.md)
+### [Usar la carga en la red para importar archivos PST](use-network-upload-to-import-pst-files.md)
+### [Usar el envío de unidades para importar los archivos PST](use-drive-shipping-to-import-pst-files-to-office-365.md)
+### [Usar la herramienta de recopilación de PST para buscar, copiar y eliminar archivos PST](find-copy-and-delete-pst-files-in-your-organization.md)
+### [Filtrar datos al importar archivos PST](filter-data-when-importing-pst-files.md)
+### [Usar la carga en la red para importar archivos PST con cifrado RMS](use-network-upload-to-import-rms-encrypted-pst-files.md)
+### [Preguntas más frecuentes sobre la importación de archivos PST](faqimporting-pst-files-to-office-365.md)
+### [Archivado de datos de terceros en Office 365](archiving-third-party-data.md)
+#### [Usar conectores de ejemplo para archivar datos de terceros](archive-third-party-data-with-sample-connector.md)
+#### [Trabajar con un socio para archivar datos de terceros](work-with-partner-to-archive-third-party-data.md)
+## Almacenar datos
+### [Habilitar buzones de archivo](enable-archive-mailboxes.md)
+### [Información general sobre el archivado ilimitado](unlimited-archiving.md)
+### [Habilitar el archivado ilimitado](enable-unlimited-archiving.md)
+### [Configurar una directiva de archivo y eliminación para buzones de correo](set-up-an-archive-and-deletion-policy-for-mailboxes.md)
+## Conservar datos
+### [Directivas de retención](retention-policies.md)
+### [Administrador del plan de archivos](file-plan-manager.md)
+### [Etiquetas de retención](labels.md)
+### [Cumplir con la norma SEC 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
+### [Crear y publicar etiquetas de retención con PowerShell](https://docs.microsoft.com/es-ES/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+### [Acerca de la retención basada en eventos](event-driven-retention.md)
+### [Retención automática basada en eventos](automate-event-driven-retention.md)
+## [Eliminar datos](disposition-reviews.md)
+## [Supervisar las comunicaciones](supervision-policies.md)
+### [Configurar directivas de supervisión para su organización](configure-supervision-policies.md)
+## [Administrar buzones inactivos](inactive-mailboxes-in-office-365.md)
+### [Crear y administrar buzones inactivos](create-and-manage-inactive-mailboxes.md)
+### [Cambiar la duración de retención para un buzón inactivo](change-the-hold-duration-for-an-inactive-mailbox.md)
+### [Recuperar un buzón inactivo](recover-an-inactive-mailbox.md)
+### [Restaurar un buzón inactivo](restore-an-inactive-mailbox.md)
+### [Eliminar un buzón inactivo](delete-an-inactive-mailbox.md)
+## Monitorizar el gobierno de datos
+### [Ver la actividad de etiquetas de documentos](view-label-activity-for-documents.md)
+### [Ver el uso de etiquetas con el análisis de etiquetas](label-analytics.md)
+### [Ver los informes de gobierno de datos](view-the-data-governance-reports.md)
+## Más información sobre el gobierno de datos
+### [Ver vídeos del equipo de gobierno de datos de Microsoft](https://go.microsoft.com/fwlink/?linkid=867039)
 
 # [Buscar contenido](search-for-content.md)
 ## [Usar búsqueda de contenido](content-search.md)
@@ -506,13 +510,6 @@
 ### [RGPD para Project Server](gdpr-for-project-server.md)
 ### [RGPD para Office Web Apps Server y Office Online Server](gdpr-for-office-online-server.md)
 ### [RGPD para uso compartido de archivos de Windows Server local](gdpr-for-on-premises-file-shares.md)
-
-# Respuesta a incidentes de seguridad
-
-## [Respuesta a incidentes de seguridad de Office 365](office365-security-incident-response-overview.md)
-## [Detectar y solucionar la concesión de consentimiento ilegal en Office 365](detect-and-remediate-illicit-consent-grants.md)
-## [Detectar y corregir las reglas de Outlook y ataques de inserciones de formularios personalizados en Office 365](detect-and-remediate-outlook-rules-forms-attack.md)
-## [Responder a una cuenta de correo electrónico en peligro en Office 365](responding-to-a-compromised-email-account.md)
 
 # Garantía de servicio
 ## [Garantía del servicio en el Centro de seguridad y cumplimiento de Office 365](service-assurance.md)
