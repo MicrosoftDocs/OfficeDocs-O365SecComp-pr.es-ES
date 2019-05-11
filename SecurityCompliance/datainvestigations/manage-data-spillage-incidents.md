@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: En este artículo se describe el uso de la nueva herramienta de investigaciones de datos (vista previa) en el centro de seguridad & cumplimiento para administrar un incidente de derrame de datos.
-ms.openlocfilehash: 93a98a4e01df011b789ba2453734f093ad8c19d6
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: eef273bd1690845be61b6aec5918dcc0870ed6b2
+ms.sourcegitcommit: 09fd88272187f82b6e635af83edabea08c2cc49c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258828"
+ms.lasthandoff: 05/11/2019
+ms.locfileid: "33884768"
 ---
 # <a name="manage-a-data-spillage-incident-in-microsoft-365"></a>Administrar un incidente de derrame de datos en Microsoft 365
 
@@ -34,7 +34,10 @@ En este artículo se proporciona una lista de instrucciones sobre cómo eliminar
 
 ## <a name="scenario"></a>Escenario
 
-Se le informa de un incidente de derrame de datos donde un empleado ha compartido sin saberlo un documento altamente confidencial con varias personas a través del correo electrónico. Desea evaluar rápidamente quién recibió este documento, tanto dentro como fuera de la organización. Una vez que haya investigado el incidente, tiene previsto compartir sus hallazgos con otros investigadores para revisar y, a continuación, eliminar de forma permanente los datos derramados de Office 365. Una vez completada la investigación, desea quitar todas las evidencias. 
+Se le informa de un incidente de derrame de datos donde un empleado ha compartido sin saberlo un documento altamente confidencial con varias personas a través del correo electrónico. Desea evaluar rápidamente quién recibió este documento, tanto dentro como fuera de la organización. Una vez que haya investigado el incidente, tiene previsto compartir sus hallazgos con otros investigadores para revisar y, a continuación, eliminar de forma permanente los datos derramados de la organización de Office 365. Una vez completada la investigación, desea quitar todas las evidencias. 
+
+> [!IMPORTANT]
+> Aunque podrá quitar de forma permanente los datos derramados de su propia organización, los datos que se hayan derramado fuera de la organización no se pueden quitar con estas capacidades.
 
 ## <a name="workflow"></a>Flujo de trabajo
 
@@ -57,7 +60,7 @@ Este es el flujo de trabajo para usar investigaciones de datos (versión prelimi
 
 - Para crear una investigación, debe ser miembro del grupo de roles de administrador de cumplimiento en el centro de seguridad & cumplimiento.
 
-- Para eliminar mensajes, debe ser miembro de un grupo de roles en el centro de seguridad & cumplimiento que tiene asignada la función de búsqueda y purga. De forma predeterminada, este rol se asigna al grupo de funciones de administración de la organización. Para obtener información sobre cómo agregar usuarios a un grupo de roles, consulte perMissions [in the Security _AMP_ Compliance Center](../permissions-in-the-security-and-compliance-center.md). 
+- Para eliminar mensajes, debe ser miembro de un grupo de roles en el centro de seguridad & cumplimiento que tiene asignada la función de búsqueda y purga. De forma predeterminada, este rol se asigna al grupo de funciones de administración de la organización. Para obtener información sobre cómo agregar usuarios a un grupo de roles, consulte Permissions [in the Security _AMP_ Compliance Center](../permissions-in-the-security-and-compliance-center.md). 
 
 - Para controlar los buzones de usuario y las cuentas de OneDrive que puede buscar un investigador, su organización puede configurar límites de cumplimiento. Para obtener más información, configure los [límites de cumplimiento para las investigaciones de eDiscovery](../set-up-compliance-boundaries.md). 
 
@@ -109,7 +112,7 @@ Para ello, haga clic en la búsqueda que desea investigar. En la página de cont
 
 En la investigación, vaya a **evidence** (ficha) y haga clic en el conjunto de pruebas que creó en el paso anterior. Una vez completado el trabajo de procesamiento y agregados los resultados de la búsqueda a la evidencia, puede revisar los documentos individuales en su formato nativo, formato de texto o un formato casi nativo. Puede crear consultas adicionales para restringir la lista de documentos y etiquetar los documentos para indicar los resultados de la investigación. Para obtener más información, vea [Review Data in Evidence](review-data-in-evidence.md) .
 
-Para agrupar documentos y obtener más ayuda para su revisión, haga clic en **administrar evidencias**. En el mosaico **Analytics** , haga clic en **analizar**. De esta forma, se ejecutarán análisis avanzados, como la detección de duplicados, el procesamiento de correo electrónico y el análisis de temas. Para más información, visite:
+Para agrupar documentos y obtener más ayuda para su revisión, haga clic en **administrar evidencias**. En el mosaico **Analytics** , haga clic en **analizar**. De esta forma, se ejecutarán análisis avanzados, como la detección de duplicados, el procesamiento de correo electrónico y el análisis de temas. Para obtener más información, vea:
 
 - [Ejecutar el análisis para investigar más rápido](run-analytics-to-investigate-faster.md)
 - [Detección de semiduplicados](near-duplicates.md)
