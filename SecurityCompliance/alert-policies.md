@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 description: Cree directivas de alerta en el centro de seguridad y cumplimiento en Office 365 y en Microsoft 365 para supervisar las amenazas potenciales, la pérdida de datos y el problema con los permisos. A continuación, puede ver y administrar las alertas que se generan cuando los usuarios realizan actividades que cumplen las condiciones de una directiva de alertas.
-ms.openlocfilehash: 7d7ef6f1f9737a0da3787b093d499a0833885eff
-ms.sourcegitcommit: 4ce350f8f3eb597587945a8ac9b33e9793440c64
+ms.openlocfilehash: 57b30a3c7202940ebb5422d7ef392e93c5351bfb
+ms.sourcegitcommit: c7989a8ead235aaebb2503abbde598f2c26c0056
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33516508"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "33979506"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>Directivas de alerta en el centro de seguridad y cumplimiento
 
@@ -229,7 +229,8 @@ Una vez que se han generado y mostrado las alertas en la página **Ver alertas**
     
 ## <a name="viewing-cloud-app-security-alerts"></a>Visualización de alertas de Cloud App Security
   
-Las alertas que se desencadenan con Office 365 Cloud App Security Policies ahora se muestran en la página **Ver alertas** del centro de seguridad y cumplimiento. Esto incluye las alertas que se desencadenan por las directivas y alertas de actividad que se desencadenan con las directivas de detección de anomalías en Office 365 Cloud App Security. Esto significa que puede ver todas las alertas en el centro de seguridad y cumplimiento. Tenga en cuenta que la seguridad de la aplicación de nube de Office 365 solo está disponible para las organizaciones con una suscripción a Office 365 Enterprise E5 o Office 365 US Government G5. Para obtener más información, vea [información general sobre Office 365 Cloud App Security](office-365-cas-overview.md).
+Las alertas que se desencadenan con Office 365 Cloud App Security Policies ahora se muestran en la página **Ver alertas** del centro de seguridad y cumplimiento. Esto incluye las alertas que se desencadenan por las directivas y alertas de actividad que se desencadenan con las directivas de detección de anomalías en Office 365 Cloud App Security. Esto significa que puede ver todas las alertas en el centro de seguridad y cumplimiento. Tenga en cuenta que la seguridad de la aplicación de nube de Office 365 solo está disponible para las organizaciones con una suscripción a Office 365 Enterprise E5 o Office 365 US Government G5. Para obtener más información, consulte [Overview of Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security
+).
 
 Además, las organizaciones que tienen Microsoft Cloud App Security como parte de una suscripción a Enterprise Mobility + Security E5 o como un servicio independiente también pueden ver las alertas de Cloud App Security relacionadas con los servicios y aplicaciones de Office 365 en la &? n de seguridad. Centro de cumplimiento.
 
@@ -237,7 +238,7 @@ Para mostrar solo alertas de Cloud App Security en el centro de seguridad y cump
 
 ![Usar el filtro de origen para mostrar solo alertas de Cloud App Security](media/FilterCASAlerts.png)
 
-Al igual que una alerta desencadenada por una directiva de alerta del centro de seguridad y cumplimiento, puede hacer clic en una alerta de Cloud App Security para mostrar una página de control flotante con detalles sobre la alerta. La alerta incluye un vínculo para ver los detalles y administrar la alerta en Cloud App Security portal y un vínculo a la Directiva de seguridad de la aplicación de nube correspondiente que activó la alerta. Consulte [revisar y emprender acciones sobre las alertas de Office 365 Cloud App Security](review-office-365-cas-alerts.md).
+Al igual que una alerta desencadenada por una directiva de alerta del centro de seguridad y cumplimiento, puede hacer clic en una alerta de Cloud App Security para mostrar una página de control flotante con detalles sobre la alerta. La alerta incluye un vínculo para ver los detalles y administrar la alerta en Cloud App Security portal y un vínculo a la Directiva de seguridad de la aplicación de nube correspondiente que activó la alerta. Consulte [supervisar alertas en Cloud App Security](https://docs.microsoft.com/cloud-app-security/monitor-alerts).
 
 ![Detalles de alertas contienen vínculos al portal de Cloud App Security](media/CASAlertDetail.png)
 

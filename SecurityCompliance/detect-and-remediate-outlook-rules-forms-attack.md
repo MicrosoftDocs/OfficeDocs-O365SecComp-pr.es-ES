@@ -14,12 +14,12 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Obtenga información sobre cómo reconocer y corregir los ataques de las reglas de Outlook y de las inyecciones de formularios personalizados en Office 365
-ms.openlocfilehash: 59d45e50e15e3709c8a041ead59b8cc6e2a38306
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 2189ff7abd640d9c87b97df35ec2b9cd44c74061
+ms.sourcegitcommit: c7989a8ead235aaebb2503abbde598f2c26c0056
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256868"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "33979496"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks-in-office-365"></a>Detectar y corregir las reglas de Outlook y ataques de inserciones de formularios personalizados en Office 365
 
@@ -141,11 +141,11 @@ Los atacantes solo usan las reglas y los formularios para aprovechar una vez que
 
 La mejor forma de proteger las cuentas de usuario y, especialmente sus cuentas de administrador, es [configurar la autenticación multifactor para los usuarios de Office 365](https://support.office.com/article/set-up-multi-factor-authentication-for-office-365-users-8f0454b2-f51a-4d9c-bcde-2c48e41621c6).  También debe hacer lo siguiente:
 <ol>
-    <li>Supervisar cómo se <a href="https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports">obtiene acceso</a>a las cuentas de usuario y cómo se usan. No puede evitar la infracción inicial, pero reducirá la duración y el impacto de la infracción al detectarla antes. Puede usar <a href="https://support.office.com/article/overview-of-office-365-cloud-app-security-81f0ee9a-9645-45ab-ba56-de9cbccab475">las siguientes directivas de seguridad de aplicaciones de nube de Office 365</a> para supervisar sus cuentas y enviar alertas sobre actividad inusual. 
+    <li>Supervisar cómo se <a href="https://docs.microsoft.com/azure/active-directory/active-directory-view-access-usage-reports">obtiene acceso</a>a las cuentas de usuario y cómo se usan. No puede evitar la infracción inicial, pero reducirá la duración y el impacto de la infracción al detectarla antes. Puede usar <a href="https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security">las siguientes directivas de seguridad de aplicaciones de nube de Office 365</a> para supervisar sus cuentas y enviar alertas sobre actividad inusual. 
         <ol type="a">
             <li><b>Varios intentos erróneos de inicio de sesión</b> Esta directiva perfila el entorno y desencadena alertas cuando los usuarios realizan varias actividades de inicio de sesión fallidas en una sola sesión con respecto a la línea base aprendida, lo que podría indicar un intento de infracción.</li>
             <li><b>Recorrido imposible</b> - Esta directiva perfila el entorno y activa alertas cuando se detectan actividades del mismo usuario en diferentes ubicaciones dentro de un período de tiempo menor que el tiempo de viaje esperado entre las dos ubicaciones. Esto puede indicar que un usuario diferente usa las mismas credenciales. La detección de este comportamiento anómalo requiere un período inicial de aprendizaje de siete días durante el cual aprende el patrón de actividad de un nuevo usuario.</li>
-            <li><b>Actividad suplantaDa inusual (por usuario)</b> - Esta directiva perfila el entorno y desencadena alertas cuando los usuarios realizan varias actividades suplantadas en una única sesión con respecto a la línea base aprendida, lo que podría indicar una infracción de intento.</li>
+            <li><b>Actividad suplantada inusual (por usuario)</b> - Esta directiva perfila el entorno y desencadena alertas cuando los usuarios realizan varias actividades suplantadas en una única sesión con respecto a la línea base aprendida, lo que podría indicar una infracción de intento.</li>
         </ol>
     </li>
     <li>Aproveche una herramienta como la <a href="https://securescore.office.com/">puntuación segura de Office 365</a> para administrar los comportamientos y las configuraciones de seguridad de la cuenta. 

@@ -15,12 +15,12 @@ ms.assetid: 2bb4e7c0-5f7f-4144-b647-cc6a956aaa53
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre las alertas que puede establecer para ayudar con la seguridad en Office 365.
-ms.openlocfilehash: e02e78b091c7e5e2347c90c14a99cf838b4482b4
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 51a53961a5a6e575986c6a5192a6980052d015a4
+ms.sourcegitcommit: c7989a8ead235aaebb2503abbde598f2c26c0056
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32242568"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "33979486"
 ---
 # <a name="alerts-in-the-office-365-security-amp-compliance-center"></a>Alerts in the Office 365 Security &amp; Compliance Center
 
@@ -55,6 +55,6 @@ En la tabla siguiente se describen las herramientas disponibles en **alertas** d
 |**Herramienta**|**Descripción**|
 |:-----|:-----|
 |[Administrar alertas](create-activity-alerts.md) <br/> |Use alertas de actividad para enviar notificaciones de correo electrónico a usted mismo o a otros administradores cuando los usuarios realizan actividades específicas en Office 365. Las alertas de actividad son similares a la búsqueda de eventos en el registro de auditoría de Office 365, excepto que se le enviará un mensaje de correo electrónico cuando se produzca un evento en el que se haya creado una alerta.  <br/> |
-|[Administración de alertas avanzadas](office-365-cas-overview.md) <br/> |Use la característica **Administrar alertas avanzadas** de Office 365 Cloud App Security para configurar directivas que puedan alertar sobre actividades sospechosas y anómalas en Office 365. Una vez que se le haya notificado, puede investigar situaciones que puedan ser problemáticas y, si es necesario, tomar medidas para solucionar los problemas de seguridad.  <br/> |
+|[Administración de alertas avanzadas](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) <br/> |Use la característica **Administrar alertas avanzadas** de Office 365 Cloud App Security para configurar directivas que puedan alertar sobre actividades sospechosas y anómalas en Office 365. Una vez que se le haya notificado, puede investigar situaciones que puedan ser problemáticas y, si es necesario, tomar medidas para solucionar los problemas de seguridad.  <br/> |
    
 
