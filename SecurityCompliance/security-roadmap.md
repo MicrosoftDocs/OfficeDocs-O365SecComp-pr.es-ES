@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 28c86a1c-e4dd-4aad-a2a6-c768a21cb352
 description: 'Las principales recomendaciones del equipo de Cybersecurity de Microsoft para implementar las funciones de seguridad para proteger el entorno de Office 365. '
-ms.openlocfilehash: ba74827c34a869ee11553f02d9085b6f015b2d9d
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: d6ac885d2517a7933df52b34124654784012c677
+ms.sourcegitcommit: 7be8617ce75909f0fa1a2f6e72749e2ef4bb2d3e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32260928"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "34088823"
 ---
 # <a name="office-365-security-roadmap---top-priorities-for-the-first-30-days-90-days-and-beyond"></a>Guía básica de seguridad de Office 365: principales prioridades de los primeros 30 días, 90 días y versiones posteriores
 
@@ -46,7 +46,7 @@ Estas recomendaciones de plan de desarrollo se almacenan en tres fases en un ord
 |:-----|:-----|
 | |Resultados
 |30 días|Configuración rápida:  <br/> • Protecciones de administración básicas  <br/> • Registro y análisis  <br/> • Protecciones de identidad básicas  <br/> Configuración de inquilino  <br/>  Preparar las partes interesadas  <br/> |
-|90 días|Protecciones avanzadas:  <br/> • Cuentas de administrador  <br/>  • Cuentas &amp; de usuario de datos  <br/>  Visibilidad del cumplimiento, la amenaza y las necesidades de los usuarios  <br/>  Adaptación e implementación de directivas y protecciones predeterminadas  <br/> |
+|90 días|Protecciones avanzadas:  <br/> • Cuentas de administrador  <br/>  • Cuentas &amp; de usuario de datos  <br/>  Visibilidad del cumplimiento, la amenaza y las necesidades de los usuarios  <br/>  Adaptación e implementación de directivas y protecciones predeterminadas  <br/> |
 |Más allá|Ajustar y refinar directivas y controles clave  <br/> Ampliar las protecciones a las dependencias locales  <br/> Integración con procesos de seguridad y negocios (legal, amenaza interna, etc.)  <br/> |
   
 
@@ -58,7 +58,7 @@ Estas tareas pueden realizarse rápidamente y tienen un impacto menor para los u
   
 |||
 |:-----|:-----|
-|Área  <br/> |Tasks  <br/> |
+|Área  <br/> |Tareas  <br/> |
 |Administración de seguridad  <br/> |• Compruebe la puntuación segura y tome nota del resultado actual ( [https://securescore.office.com](https://securescore.office.com)).  <br/>  • Active el registro de auditoría para Office 365. Consulte [Buscar en el registro de auditoría](search-the-audit-log-in-security-and-compliance.md).  <br/> • [Configure el inquilino de Office 365 para mejorar la seguridad](tenant-wide-setup-for-increased-security.md) .  <br/>  • Revise de forma regular los paneles e informes en el centro de seguridad y la seguridad de aplicaciones en la nube de Microsoft 365.  <br/> |
 |Protección contra amenazas  <br/> |[Conecte Office 365 a Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security) para iniciar la supervisión con las directivas de detección de amenazas predeterminadas para comportamientos anómalos. Se necesitan siete días para crear una línea base para la detección de anomalías.  <br><br/>  Implemente la protección de las cuentas de administrador:  <br/> • Use cuentas de administrador dedicadas para la actividad de administración.  <br/>  • Exigir la autenticación multifactor (MFA) para las cuentas de administrador.  <br/>  • Use un [dispositivo de Windows 10 altamente seguro](https://docs.microsoft.com/windows-hardware/design/device-experiences/oem-highly-secure) para la actividad de administración.  <br/> |
 |Administración de identidad y acceso  <br/> |• [Habilite Azure Active Directory Identity Protection](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection-enable).  <br/> • Para entornos de identidades federados, exija la seguridad de las cuentas (longitud de la contraseña, antigüedad, complejidad, etc.).  <br/> |
@@ -87,8 +87,8 @@ Se trata de medidas de seguridad importantes que se basan en el trabajo anterior
 |Área  <br/> |Tarea  <br/> |
 |Administración de seguridad  <br/> |• Seguir planificando las acciones siguientes mediante la calificación [https://securescore.office.com](https://securescore.office.com)segura ().  <br/>  • Continúe revisando regularmente los paneles e informes en el centro de seguridad 365 de Microsoft, la seguridad de aplicaciones en la nube y las herramientas SIEM.  <br/>  • Seguir buscando e implementando actualizaciones de software.  <br/>  • Integre la exhibición de documentos electrónicos en sus procesos de respuesta legal y amenaza.  <br/> |
 |Protección contra amenazas  <br/> | • Implemente el [acceso con privilegios seguros](https://docs.microsoft.com/windows-server/identity/securing-privileged-access/securing-privileged-access) (Spa) para los componentes de identidad de local (AD, AD FS).  <br/>  • Use Cloud App Security para supervisar las amenazas internas.  <br/>  • Descubra la información sobre el uso de SaaS de TI mediante Cloud App Security.  <br/> |
-|Administración de identidad y acceso  <br/> | • Refinar las directivas de protección de la información:  <br/>  • Azure Information Protection y la prevención de pérdida de datos (DLP) de Office 365.  <br/>  • Directivas y alertas de Cloud App Security.  <br/> |
-|Protección de la información  <br/> | • Perfeccione las directivas y los procesos operativos.  <br/>  • Use Azure AD Identity Protection para identificar amenazas de Insider.  <br/> |
+|Administración de identidad y acceso  <br/> | • Perfeccione las directivas y los procesos operativos.  <br/>  • Use Azure AD Identity Protection para identificar amenazas de Insider.  |
+|Protección de la información  <br/> | Refinar directivas de protección de la información:  <br/>  • Microsoft 365 y Office 365 las etiquetas de confidencialidad y prevención de pérdida de datos (DLP), o Azure Information Protection.  <br/>  • Directivas y alertas de Cloud App Security.  <br/> |
    
 Consulte también: [Cómo mitigar la cyberattacks rápida como Petya y WannaCrypt](https://cloudblogs.microsoft.com/microsoftsecure/2018/02/21/how-to-mitigate-rapid-cyberattacks-such-as-petya-and-wannacrypt/). 
   
