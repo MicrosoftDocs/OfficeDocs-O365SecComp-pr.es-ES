@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 03/05/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,16 +15,16 @@ ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
 description: Como administrador global de Office 365, puede usar simulador de ataque para ejecutar escenarios de ataque realistas en su organización. Esto puede ayudarle a identificar y encontrar a los usuarios vulnerables antes de que un ataque real reconozca a su empresa.
-ms.openlocfilehash: 88e71fe2db0ed9149ab84bb99e8b04910afdc265
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: a39259cdcc47e2c881b3977aa570b1f221f0b2bd
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32249734"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077626"
 ---
 # <a name="attack-simulator-in-office-365"></a>Simulador de ataques en Office 365
 
-**Resumen** Si es un administrador global de Office 365 y su organización tiene [capacidades de investigación y respuesta de amenazas para office 365](office-365-ti.md), puede usar el simulaDor de ataques para ejecutar escenarios de ataque realistas en su organización. Esto puede ayudarle a identificar y encontrar usuarios vulnerables antes de que un ataque real afecte a su conclusión. Lea este artículo para obtener más información.
+**Resumen** Si es un administrador global de Office 365 y su organización tiene [capacidades de investigación y respuesta de amenazas para office 365](office-365-ti.md), puede usar el simulador de ataques para ejecutar escenarios de ataque realistas en su organización. Esto puede ayudarle a identificar y encontrar usuarios vulnerables antes de que un ataque real afecte a su conclusión. Lea este artículo para obtener más información.
 
 > [!IMPORTANT]
 > La protección contra amenazas avanzada de Office 365 y la investigación y respuesta de amenazas (anteriormente conocida como inteligencia de amenazas) ahora forman parte de Office 365 plan de protección contra amenazas avanzada 2, con capacidades de protección contra amenazas adicionales. Para obtener más información, consulte [planes y precios](https://products.office.com/exchange/advance-threat-protection) de la protección contra amenazas avanzada de Office 365 y la [Descripción del servicio de protección contra amenazas avanzada de Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
@@ -54,12 +54,12 @@ Asegúrese de que usted y su organización cumplen con los siguientes requisitos
     
 - **La [autenticación multifactor](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication?view=o365-worldwide) (MFA) está activada, como mínimo, para la cuenta de administrador global de Office 365**. (Idealmente, la MFA está activada para todos los usuarios de la organización).
  
-- **su organización tiene [el Plan 2 de la protección contra amenazas avanzada de Office 365](office-365-ti.md)**, con el &amp; simulador de ataque visible en el centro de seguridad y cumplimiento (vaya a simulador de **ataque**de **administración** \> de amenazas)<br/>![Administración de amenazas: simulador de ataque](media/ThreatMgmt-AttackSimulator.png)
+- **Su organización tiene [el plan 2 de la protección contra amenazas avanzada de Office 365](office-365-ti.md)**, con el &amp; simulador de ataque visible en el centro de seguridad y cumplimiento (vaya a simulador de **ataque**de **Administración** \> de amenazas)<br/>![Administración de amenazas: simulador de ataque](media/ThreatMgmt-AttackSimulator.png)
 
     
 ## <a name="display-name-spear-phishing-attack"></a>Nombre para mostrar: ataque de suplantación de identidad
 
-La suPlantación de identidad (phishing) es un término genérico para un conjunto amplio de ataques que se clasifican como un ataque de tipo de ingeniería social. Este ataque se centra en la suplantación de identidad (phishing), un ataque más objetivo destinado a un grupo específico de personas o una organización. Normalmente, se trata de un ataque personalizado con algún reconocimiento realizado y con un nombre para mostrar que generará confianza en el destinatario, como un mensaje de correo electrónico que parece que proviene de un ejecutivo de la organización.
+La suplantación de identidad (phishing) es un término genérico para un conjunto amplio de ataques que se clasifican como un ataque de tipo de ingeniería social. Este ataque se centra en la suplantación de identidad (phishing), un ataque más objetivo destinado a un grupo específico de personas o una organización. Normalmente, se trata de un ataque personalizado con algún reconocimiento realizado y con un nombre para mostrar que generará confianza en el destinatario, como un mensaje de correo electrónico que parece que proviene de un ejecutivo de la organización.
   
 Este ataque se centra en permitirle manipular a la que parece que el mensaje se ha originado cambiando el nombre para mostrar y la dirección de origen. Cuando los ataques de "Spear-phishing" son correctos, los delincuentes pueden obtener acceso a las credenciales de los usuarios.
   
@@ -75,13 +75,13 @@ Puede crear el editor HTML enriquecido directamente en el propio campo **del cue
   
 3. Especifique los destinatarios de destino. Puede tratarse de personas o grupos de la organización. Cada destinatario de destino debe tener un buzón de Exchange Online para que el ataque tenga éxito. <br/>![Selección de destinatarios](media/faf8c2e0-6175-4cd7-8265-0c8e727f4d0f.jpg)
   
-4. Configure los detalles del correo de suPlantación de identidad. <br/>![Configuración de detalles de correo electrónico](media/f043608f-f8ce-4aae-be28-86e8ecc524a9.jpg)<br/>El formato HTML puede ser tan complejo o básico como las necesidades de la campaña. Como el formato de correo electrónico es HTML, puede insertar imágenes y texto para mejorar la increíble. Tiene control sobre la apariencia que tendrá el mensaje recibido en el cliente de correo electrónico de recepción.
+4. Configure los detalles del correo de suplantación de identidad. <br/>![Configuración de detalles de correo electrónico](media/f043608f-f8ce-4aae-be28-86e8ecc524a9.jpg)<br/>El formato HTML puede ser tan complejo o básico como las necesidades de la campaña. Como el formato de correo electrónico es HTML, puede insertar imágenes y texto para mejorar la increíble. Tiene control sobre la apariencia que tendrá el mensaje recibido en el cliente de correo electrónico de recepción.
     
 5. Especifique el texto para el campo **de (nombre)** . Este es el campo que se muestra en el **nombre para mostrar** en el cliente de correo electrónico de recepción. 
     
 6. Especifique el texto o el campo **de** . Se trata del campo que muestra la dirección de correo electrónico del remitente en el cliente de correo electrónico de recepción. <br/>Puede escribir un espacio de nombres de correo electrónico existente dentro de la organización (al hacerlo, la dirección de correo electrónico se resolverá realmente en el cliente receptor, lo que facilitará un modelo de confianza muy alto) o puede escribir una dirección de correo electrónico externa. La dirección de correo electrónico que especifique no tiene que existir realmente, pero necesita seguir el formato de una dirección SMTP válida, como usuario @ nombreDeDominio. extensión. 
   
-7. Mediante el selector de lista desplegable, seleccione una dirección URL del servidor de inicio de sesión de suPlantación de identidad (phishing) que refleje el tipo de contenido que tendrá en el ataque. Se proporcionan varias URL con temas que puede elegir, como la entrega de documentos, técnicas, nóminas, etc. De hecho, se trata de la URL a la que se pide a los usuarios de destino que haga clic.
+7. Mediante el selector de lista desplegable, seleccione una dirección URL del servidor de inicio de sesión de suplantación de identidad (phishing) que refleje el tipo de contenido que tendrá en el ataque. Se proporcionan varias URL con temas que puede elegir, como la entrega de documentos, técnicas, nóminas, etc. De hecho, se trata de la URL a la que se pide a los usuarios de destino que haga clic.
     
 8. Especificar una dirección URL de la página de aterrizaje personalizada. Al usar esto, se redirigirá a los usuarios a una dirección URL que especifique al final de un ataque realizado correctamente. Si tiene un entrenamiento de conciencia interno, por ejemplo, puede especificarlo aquí.
     

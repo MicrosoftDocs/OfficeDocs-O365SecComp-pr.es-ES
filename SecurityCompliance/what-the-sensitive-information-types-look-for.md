@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 6/29/2018
-ms.audience: Admin
+audience: Admin
 search.appverid: MET150
 ms.topic: reference
 f1_keywords:
@@ -14,12 +14,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: La prevención de pérdida de datos (DLP) en el &amp; centro de seguridad y cumplimiento de Office 365 incluye 80 tipos de información confidencial listos para que pueda usarlos en las directivas de DLP. Este tema enumera todos estos tipos de información confidencial y muestra lo que una directiva DLP busca al detectar cada uno de los tipos.
-ms.openlocfilehash: d161435c75149183289cfbfd6abe79d55e371e31
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: dc2958af5b64f9e9318faab5d55ed340404f1857
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32266876"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077556"
 ---
 # <a name="what-the-sensitive-information-types-look-for"></a>Qué buscan los tipos de información confidencial
 
@@ -72,15 +72,15 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - aba routing #
 - aba routing number
 - ABA
-- abarouting #
+- abarouting#
 - aba number
 - abaroutingnumber
 - american bank association routing #
 - american bank association routing number
-- americanbankassociationrouting #
+- americanbankassociationrouting#
 - americanbankassociationroutingnumber
 - bank routing number
-- bankrouting #
+- bankrouting#
 - bankroutingnumber
 - routing transit number
 - RTN 
@@ -279,18 +279,18 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - Driver's Lics
 - Driver's Licence
 - Driver's Licences
-- DriverLic #
-- DriverLics #
-- DriverLicence #
-- DriverLicences #
+- DriverLic#
+- DriverLics#
+- DriverLicence#
+- DriverLicences#
 - Driver Lic#
 - Driver Lics#
 - Driver Licence#
 - Driver Licences#
-- DriversLic #
-- DriversLics #
-- DriversLicence #
-- DriversLicences #
+- DriversLic#
+- DriversLics#
+- DriversLicence#
+- DriversLicences#
 - Drivers Lic#
 - Drivers Lics#
 - Drivers Licence#
@@ -303,10 +303,10 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - Driver' Lics#
 - Driver' Licence#
 - Driver' Licences#
-- Driver'sLic #
-- Driver'sLics #
-- Driver'sLicence #
-- Driver'sLicences #
+- Driver'sLic#
+- Driver'sLics#
+- Driver'sLicence#
+- Driver'sLicences#
 - Driver's Lic#
 - Driver's Lics#
 - Driver's Licence#
@@ -331,20 +331,20 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - Driver'sLicenses
 - Driver's License
 - Permisos de conducción
-- DriverLicense #
-- DriverLicenses #
+- DriverLicense#
+- DriverLicenses#
 - Driver License#
 - Driver Licenses#
-- DriversLicense #
-- DriversLicenses #
+- DriversLicense#
+- DriversLicenses#
 - Drivers License#
 - Drivers Licenses#
 - Conducción
 - Conducción
 - Driver' License#
 - Driver' Licenses#
-- Driver'sLicense #
-- Driver'sLicenses #
+- Driver'sLicense#
+- Driver'sLicenses#
 - Driver's License#
 - Driver's Licenses#
    
@@ -462,7 +462,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - Passeport n °
 - Passeport Non
 - Passeport #
-- Passeport #
+- Passeport#
 - PasseportNon
 - Passeportn °
 
@@ -613,7 +613,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 - Fabrikam
 - Northwind
 - entorno
-- OneBox
+- onebox
 - localhost
 - 127.0.0.1
 - testacs.<!--no-hyperlink-->Puerto
@@ -673,7 +673,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 - Fabrikam
 - Northwind
 - entorno
-- OneBox
+- onebox
 - localhost
 - 127.0.0.1
 - testacs.<!--no-hyperlink-->Puerto
@@ -733,7 +733,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 - Fabrikam
 - Northwind
 - entorno
-- OneBox
+- onebox
 - localhost
 - 127.0.0.1
 - testacs.<!--no-hyperlink-->Puerto
@@ -784,7 +784,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 - Fabrikam
 - Northwind
 - entorno
-- OneBox
+- onebox
 - localhost
 - 127.0.0.1
 - testacs.<!--no-hyperlink-->Puerto
@@ -839,7 +839,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 - Fabrikam
 - Northwind
 - entorno
-- OneBox
+- onebox
 - localhost
 - 127.0.0.1
 - testacs.<!--no-hyperlink-->Puerto
@@ -933,7 +933,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 - Fabrikam
 - Northwind
 - entorno
-- OneBox
+- onebox
 - localhost
 - 127.0.0.1
 - testacs.<!--no-hyperlink-->Puerto
@@ -999,7 +999,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 - Fabrikam
 - Northwind
 - entorno
-- OneBox
+- onebox
 - localhost
 - 127.0.0.1
 - testacs.<!--no-hyperlink-->Puerto
@@ -1089,7 +1089,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - Carte d’identité 
 - numéro d'immatriculation
 - numéro d'identification
-- Identité 
+- identité 
 - indicación 
 - Identifikation
 - Identifizierung
@@ -1220,7 +1220,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - Entidades jurídicas 
 - Estado de registro 
 - Empresa 
-- Empresa
+- Company
 - CNPJ 
 - Cadastro Nacional da Pessoa Jurídica 
 - Cadastro Geral de Contribuintes 
@@ -1441,7 +1441,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywordprovincenamedriverslicensename"></a>Keyword_ [province_name] _drivers_license_name
+#### <a name="keywordprovincenamedriverslicensename"></a>Keyword_[province_name]_drivers_license_name
 
 - La abreviatura de la provincia, por ejemplo, AB
 - El nombre de la provincia, por ejemplo, Alberta
@@ -1520,25 +1520,25 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - LISTAS
 - DISTRIBUCIÓN 
 - CDL 
-- CDLS # 
-- DriverLic # 
-- DriverLics # 
-- DriverLicense # 
-- DriverLicenses # 
-- DriverLicence # 
-- DriverLicences # 
+- CDLS# 
+- DriverLic# 
+- DriverLics# 
+- DriverLicense# 
+- DriverLicenses# 
+- DriverLicence# 
+- DriverLicences# 
 - Driver Lic#
 - Driver Lics# 
 - Driver License# 
 - Driver Licenses# 
 - Driver License# 
 - Driver Licences# 
-- DriversLic # 
-- DriversLics # 
-- DriversLicense # 
-- DriversLicenses # 
-- DriversLicence # 
-- DriversLicences # 
+- DriversLic# 
+- DriversLics# 
+- DriversLicense# 
+- DriversLicenses# 
+- DriversLicence# 
+- DriversLicences# 
 - Drivers Lic# 
 - Drivers Lics# 
 - Drivers License# 
@@ -1557,12 +1557,12 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - Driver' Licenses# 
 - Driver' Licence# 
 - Driver' Licences# 
-- Driver'sLic # 
-- Driver'sLics # 
-- Driver'sLicense # 
-- Driver'sLicenses # 
-- Driver'sLicence # 
-- Driver'sLicences # 
+- Driver'sLic# 
+- Driver'sLics# 
+- Driver'sLicense# 
+- Driver'sLicenses# 
+- Driver'sLicence# 
+- Driver'sLicences# 
 - Driver's Lic# 
 - Driver's Lics# 
 - Driver's License# 
@@ -1683,12 +1683,12 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - パスポート
 - パスポート番号
 - パスポートのNum
-- パスポート #
+- パスポート＃
 - Numéro de passeport
 - Passeport n °
 - Passeport Non
 - Passeport #
-- Passeport #
+- Passeport#
 - PasseportNon
 - Passeportn °
    
@@ -1759,7 +1759,7 @@ Se encuentran al menos dos palabras clave de Keyword_canada_phin o Keyword_canad
 - New Brunswick
 - Nova Scotia
 - Prince Edward Island
-- Canada
+- Canadá
    
 ## <a name="canada-social-insurance-number"></a>Número de seguridad social de Canadá
 
@@ -2014,10 +2014,10 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 
 - card verification
 - card identification number
-- CVN
+- cvn
 - cid
-- CVC2
-- CVV2
+- cvc2
+- cvv2
 - pin block
 - security code
 - security number
@@ -2032,7 +2032,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 - prüfziffer
 - prufziffer
 - sicherheits Kode
-- Sicherheitscode
+- sicherheitscode
 - sicherheitsnummer
 - verfalldatum
 - codice di verifica
@@ -2049,7 +2049,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 - código de seguranca
 - campos. segurança
 - COD. DQO SEGURANCA. segurança
-- campos. SEGURANCA
+- campos. seguranca
 - cód segurança
 - Bacalao SEGURANCA contra reembolso de segurança
 - cód seguranca
@@ -2089,7 +2089,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 - master cards
 - diner's Club
 - diners club
-- DinersClub
+- dinersclub
 - discover card
 - detectar tarjeta
 - discover cards
@@ -2107,10 +2107,10 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 - date d'exp
 - date expiration
 - bank card
-- Bankcard
+- bankcard
 - card number
 - card num
-- cardNumber
+- cardnumber
 - cardnumbers
 - card numbers
 - crédito
@@ -2122,13 +2122,13 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 - card holders
 - titulares de la titular
 - check card
-- Checkcard
+- checkcard
 - check cards
 - checkcards
 - debit card
 - debitcard
 - debit cards
-- DebitCards
+- debitcards
 - atm card
 - atmcard
 - atm cards
@@ -2144,7 +2144,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 - nº de la carte
 - nº de carte
 - kreditkarte
-- Karte
+- karte
 - karteninhaber
 - karteninhabers
 - kreditkarteninhaber
@@ -2154,7 +2154,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 - kartennr 
 - kartennummer
 - kreditkartennummer
-- Kreditkarten-Nummer
+- kreditkarten-nummer
 - carta di credito
 - carta credito
 - cobro
@@ -2175,7 +2175,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 - tarjeta débito
 - tarjeta de débito
 - nº de tarjeta
-- dejan. de tarjeta
+- No. de tarjeta
 - no de tarjeta
 - numero de tarjeta
 - número de tarjeta
@@ -2204,8 +2204,8 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 - Nº. do cartão
 - no do cartão
 - no do cartao
-- dejan. do cartão
-- dejan. do cartao 
+- No. do cartão
+- No. do cartao 
    
 ## <a name="croatia-identity-card-number"></a>Número de tarjeta de identidad de Croacia
 
@@ -2491,7 +2491,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 - atmcards 
 - atmkaart 
 - atmkaarten 
-- Bancontact 
+- bancontact 
 - bank card 
 - bankkaart 
 - card holder 
@@ -2503,7 +2503,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 - cardano numerico 
 - titular 
 - titulares de la titular 
-- cardNumber 
+- cardnumber 
 - cardnumbers 
 - carta bianca 
 - carta credito 
@@ -2527,7 +2527,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 - CCN 
 - check card 
 - check cards 
-- Checkcard
+- checkcard
 - checkcards 
 - chequekaart 
 - Logic 
@@ -2543,10 +2543,10 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 - debit card 
 - debit cards 
 - debitcard 
-- DebitCards 
+- debitcards 
 - debito automatico 
 - diners club 
-- DinersClub 
+- dinersclub 
 - advierte 
 - discover card 
 - discover cards 
@@ -2562,19 +2562,19 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 - japanese card bureau 
 - japanse kaartdienst 
 - JCB 
-- Kaart 
+- kaart 
 - kaart num 
 - kaartaantal 
 - kaartaantallen 
 - kaarthouder 
 - kaarthouders 
-- Karte  
+- karte  
 - karteninhaber 
 - karteninhabers
 - kartennr 
 - kartennummer 
 - kreditkarte 
-- Kreditkarten-Nummer 
+- kreditkarten-nummer 
 - kreditkarteninhaber 
 - kreditkarteninstitut 
 - kreditkartennummer 
@@ -2591,9 +2591,9 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 - no de tarjeta 
 - no do cartao 
 - no do cartão 
-- dejan. de tarjeta 
-- dejan. do cartao 
-- dejan. do cartão 
+- No. de tarjeta 
+- No. do cartao 
+- No. do cartão 
 - nr carta 
 - Nº. cobro 
 - numeri di scheda 
@@ -2646,7 +2646,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 - tarjetahabiente 
 - tipo della scheda 
 - ufficio giapponese della 
-- Scheda 
+- scheda 
 - v pay 
 - v-Pay 
 - régimen 
@@ -2654,7 +2654,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 - visa electron 
 - a 
 - visum 
-- VPay   
+- vpay   
 
 #### <a name="keywordcardsecuritytermsdict"></a>Keyword_card_security_terms_dict
 
@@ -2667,7 +2667,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 - cod segurança 
 - cod sicurezza 
 - COD. seg 
-- COD. SEGURANCA 
+- COD. seguranca 
 - COD. segurança 
 - COD. sicurezza 
 - codice di sicurezza 
@@ -2678,15 +2678,15 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 - crittogramma 
 - criptograma 
 - cryptogramme 
-- CV2 
-- CVC 
-- CVC2 
-- CVN 
+- cv2 
+- cvc 
+- cvc2 
+- cvn 
 - CVV 
-- CVV2 
+- cvv2 
 - cód seguranca 
 - cód segurança 
-- campos. SEGURANCA 
+- campos. seguranca 
 - campos. segurança 
 - Código 
 - código de seguranca 
@@ -2699,13 +2699,13 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 - kreditkartenprufnummer 
 - kreditkartenprüfnummer 
 - kwestieaantal 
-- dejan. dell'edizione 
-- dejan. di sicurezza 
+- No. dell'edizione 
+- No. di sicurezza 
 - numero de securite 
 - numero de verificacao 
 - numero dell'edizione 
 - numero di identificazione della 
-- Scheda 
+- scheda 
 - numero di sicurezza 
 - numero van veiligheid 
 - numéro de sécurité 
@@ -2719,7 +2719,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 - security no 
 - security number 
 - sicherheits kode 
-- Sicherheitscode 
+- sicherheitscode 
 - sicherheitsnummer 
 - speldblok 
 - veiligheid nr 
@@ -2977,7 +2977,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - Passeport n °
 - Passeport Non
 - Passeport #
-- Passeport #
+- Passeport#
 - PasseportNon
 - Passeportn °
 
@@ -3042,10 +3042,10 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 - national identification
 - numéro d'identité
 - no d'identité
-- dejan. d'identité
+- No. d'identité
 - numero d'identite
 - no d'identite
-- dejan. d'identite
+- No. d'identite
 - social security number
 - social security code
 - social insurance number
@@ -4057,23 +4057,23 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - 口座番号の確認 
 - 銀行口座番号 
 - 銀行口座 
-- 銀行口座 # 
+- 銀行口座＃ 
 - 銀行の勘定番号 
-- 銀行のacct # 
+- 銀行のacct＃ 
 - 銀行の勘定いいえ 
 - 銀行口座番号
 - 普通預金口座番号 
 - 預金口座 
-- 貯蓄口座 # 
+- 貯蓄口座＃ 
 - 貯蓄勘定の数 
-- 貯蓄勘定 # 
+- 貯蓄勘定＃ 
 - 貯蓄勘定番号 
 - 普通預金口座番号 
 - 引き落とし口座番号 
 - 口座番号 
-- 口座番号 # 
+- 口座番号＃ 
 - デビットのacct番号 
-- デビット勘定 # 
+- デビット勘定＃ 
 - デビットACCTの番号 
 - デビット口座番号 
 
@@ -4132,7 +4132,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - state id 
 - state identification 
 - state identification number 
-- 低所得国 # 
+- 低所得国＃ 
 - 免許証 
 - 状態ID
 - 状態の識別 
@@ -4178,7 +4178,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - パスポート 
 - パスポート番号 
 - パスポートのNum 
-- パスポート # 
+- パスポート＃ 
    
 ## <a name="japan-resident-registration-number"></a>Número de registro de residente de Japón
 
@@ -4221,8 +4221,8 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - Resident Register No. 
 - Residents Basic Registry No. 
 - Basic Resident Register No. 
-- 住民登録番号 、 登録番号をレジデント 
-- 住民基本登録番号 、 登録番号 
+- 住民登録番号、登録番号をレジデント 
+- 住民基本登録番号、登録番号 
 - 住民基本レジストリ番号を常駐 
 - 登録番号を常駐住民基本台帳登録番号 
 
@@ -4372,19 +4372,19 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 - documento de identidad
 - k/p
 - k/p no
-- Kad akuan diri
+- kad akuan diri
 - Kad aplikasi digital
 - Kad pengenalan Malasia
 - PK
 - KP no
 - mykad
-- MYKAS
+- mykas
 - mykid
 - mypr
 - mytentera
 - tarjeta de identidad de Malasia
 - tarjeta de identidad malasio
-- NRIC
+- nric
 - tarjeta de identificación personal
    
 ## <a name="netherlands-citizens-service-bsn-number"></a>Número de servicio del ciudadano (BSN) de Países Bajos
@@ -5018,7 +5018,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 #### <a name="cepglobalfilter"></a>CEP_GlobalFilter
 
 - Some-Password
-- somePassword
+- somepassword
 - secretPassword
 - AdventureWorks
 
@@ -5041,7 +5041,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 - Fabrikam
 - Northwind
 - entorno
-- OneBox
+- onebox
 - localhost
 - 127.0.0.1
 - testacs.<!--no-hyperlink-->Puerto
@@ -5145,12 +5145,12 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - パスポート 
 - パスポート番号 
 - パスポートのNum 
-- パスポート # 
+- パスポート＃ 
 - Numéro de passeport 
 - Passeport n ° 
 - Passeport Non 
 - Passeport # 
-- Passeport # 
+- Passeport# 
 - PasseportNon 
 - Passeportn ° 
    
@@ -5196,7 +5196,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - iso 9362 
 - iso9362 
 - rápido\# 
-- Swiftcode 
+- swiftcode 
 - swiftnumber 
 - swiftroutingnumber 
 - swift code 
@@ -5208,7 +5208,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - BIC\# 
 - bank identifier code 
 - 標準化 9362 
-- 迅速 # 
+- 迅速＃ 
 - SWIFTコード 
 - SWIFT番号 
 - 迅速なルーティング番号 
@@ -5753,12 +5753,12 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - パスポート 
 - パスポート番号 
 - パスポートのNum 
-- パスポート # 
+- パスポート＃ 
 - Numéro de passeport 
 - Passeport n ° 
 - Passeport Non 
 - Passeport # 
-- Passeport # 
+- Passeport# 
 - PasseportNon 
 - Passeportn ° 
    
@@ -5882,7 +5882,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 - LISTAS 
 - DISTRIBUCIÓN 
 - CDL 
-- CDLS # 
+- CDLS# 
 - IDENTIFICADOR
 - Falta 
 - ID number 
@@ -5931,18 +5931,18 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 - id cards 
 - identification card 
 - identification cards 
-- DriverLic # 
-- DriverLics # 
-- DriverLicense # 
-- DriverLicenses # 
+- DriverLic# 
+- DriverLics# 
+- DriverLicense# 
+- DriverLicenses# 
 - Driver Lic# 
 - Driver Lics# 
 - Driver License# 
 - Driver Licenses# 
-- DriversLic # 
-- DriversLics # 
-- DriversLicense # 
-- DriversLicenses # 
+- DriversLic# 
+- DriversLics# 
+- DriversLicense# 
+- DriversLicenses# 
 - Drivers Lic# 
 - Drivers Lics# 
 - Drivers License# 
@@ -5955,10 +5955,10 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 - Driver' Lics# 
 - Driver' License# 
 - Driver' Licenses# 
-- Driver'sLic # 
-- Driver'sLics # 
-- Driver'sLicense # 
-- Driver'sLicenses # 
+- Driver'sLic# 
+- Driver'sLics# 
+- Driver'sLicense# 
+- Driver'sLicenses# 
 - Driver's Lic# 
 - Driver's Lics# 
 - Driver's License# 
@@ -5969,7 +5969,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 - identification cards# 
 
 
-#### <a name="keywordstatenamedriverslicensename"></a>Keyword_ [state_name] _drivers_license_name
+#### <a name="keywordstatenamedriverslicensename"></a>Keyword_[state_name]_drivers_license_name
 
 - Abreviatura del estado (por ejemplo, "NY") 
 - Nombre del estado (por ejemplo, "New York")    
@@ -6054,13 +6054,13 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - / 
 - social security 
 - tax payer 
-- ITINs 
+- itins 
 - taxi 
 - individual taxpayer 
 
 #### <a name="keyworditincollaborative"></a>Keyword_itin_collaborative
 
-- License 
+- Licencia 
 - LISTAS 
 - NACIMIENTO 
 - Fecha de nacimiento 

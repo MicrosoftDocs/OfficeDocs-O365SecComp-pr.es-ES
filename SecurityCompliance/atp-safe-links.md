@@ -1,9 +1,9 @@
 ---
-title: Vínculos seguros de ATP de Office 365
+title: Vínculos seguros de Protección contra amenazas avanzada de Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.date: 03/05/2019
 ms.topic: overview
 f1_keywords:
@@ -22,14 +22,14 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: La característica de vínculos seguros proporciona la comprobación del tiempo de clic de los hipervínculos en los documentos de Office y en los mensajes de correo electrónico. Use vínculos seguros para proteger a su organización del phishing y otros ataques.
-ms.openlocfilehash: 7dacb4184ff0b99887b2aa5f3fe2e65cd58c5b6b
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: fa70440a5192600821ac5d627baf630c3243716a
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32249560"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077546"
 ---
-# <a name="office-365-atp-safe-links"></a>Vínculos seguros de ATP de Office 365
+# <a name="office-365-atp-safe-links"></a>Vínculos seguros de Protección contra amenazas avanzada de Office 365
 
 ## <a name="overview-of-office-365-atp-safe-links"></a>Información general sobre los vínculos seguros de ATP de Office 365
 
@@ -70,9 +70,9 @@ En un nivel alto, aquí se muestra cómo funciona la protección de vínculos se
     
 ## <a name="how-atp-safe-links-works-with-urls-in-office-documents"></a>Cómo funciona el vínculo seguro ATP con direcciones URL en documentos de Office
 
-En un nivel alto, aquí se muestra cómo funciona la protección de vínculos seguros de ATP para las direcciones URL en Office 365 proPlus Applications (versiones actuales de Word, Excel y PowerPoint en Windows o Mac, aplicaciones de Office en dispositivos iOS o Android, Visio en Windows, OneNote online y Office Online):
+En un nivel alto, aquí se muestra cómo funciona la protección de vínculos seguros de ATP para las direcciones URL en Office 365 ProPlus Applications (versiones actuales de Word, Excel y PowerPoint en Windows o Mac, aplicaciones de Office en dispositivos iOS o Android, Visio en Windows, OneNote online y Office Online):
   
-1. Los usuarios han instalado Office 365 proPlus en su equipo, smartphone o tableta. (O bien, están usando Office online en su explorador).
+1. Los usuarios han instalado Office 365 ProPlus en su equipo, smartphone o tableta. (O bien, están usando Office online en su explorador).
     
 2. Un usuario abre un Word, Excel, PowerPoint o Visio y inicia sesión en Office 365 Enterprise con su cuenta profesional o educativa. El documento contiene direcciones URL.
     
@@ -126,7 +126,7 @@ En la tabla siguiente se describen algunos escenarios de ejemplo en los que la p
   
 |**Escenario de ejemplo**|**¿Se aplica la protección de vínculos seguros ATP en este caso?**|
 |:-----|:-----|
-|Jean es miembro de un grupo que tiene directivas de vínculos seguros de ATP que abarcan direcciones URL en correo electrónico y documentos de Office. Jean abre una presentación de PowerPoint enviada por alguien y, a continuación, hace clic en una dirección URL de la presentación.  <br/> |Sí. Las directivas de vínculos seguros de ATP que se definen se aplican al grupo de Jean, el correo electrónico de Jean y los documentos de Word, Excel, PowerPoint o Visio que Jean abre, siempre que Jean inicie sesión y use Office 365 proPlus en dispositivos Windows, iOS o Android.  <br/> |
+|Jean es miembro de un grupo que tiene directivas de vínculos seguros de ATP que abarcan direcciones URL en correo electrónico y documentos de Office. Jean abre una presentación de PowerPoint enviada por alguien y, a continuación, hace clic en una dirección URL de la presentación.  <br/> |Sí. Las directivas de vínculos seguros de ATP que se definen se aplican al grupo de Jean, el correo electrónico de Jean y los documentos de Word, Excel, PowerPoint o Visio que Jean abre, siempre que Jean inicie sesión y use Office 365 ProPlus en dispositivos Windows, iOS o Android.  <br/> |
 |En la organización de Carlos, ningún administrador global ni de seguridad ha definido todavía ninguna directiva de vínculos seguros de ATP. Chris recibe un correo electrónico que contiene una dirección URL a un sitio Web malintencionado. Carlos no sabe que la dirección URL es malintencionada y hace clic en el vínculo.  <br/> |No. La directiva predeterminada que cubre las direcciones URL para todos los usuarios de la organización debe definirse en orden para que la protección esté en su ubicación.  <br/> |
 |En la organización de Pat, ningún administrador global ni de seguridad ha definido o modificado ninguna directiva de vínculos seguros de ATP. Pat abre un documento de Word y hace clic en una dirección URL en el archivo.  <br/> |No. Debe definirse una directiva que incluya documentos de Office para que la protección esté en su ubicación. Consulte [configurar las directivas de vínculos seguros de ATP en Office 365](set-up-atp-safe-links-policies.md).  <br/> |
 |La organización de Lee tiene una directiva de vínculos seguros de `http://tailspintoys.com` ATP que se muestra como un sitio web bloqueado. Lee recibe un mensaje de correo electrónico que contiene una `http://tailspintoys.com/aboutus/trythispage`dirección URL para. Lee hace clic en la dirección URL.  <br/> |Depende de si todo el sitio y todas sus subpáginas están incluidos en la lista de direcciones URL bloqueadas. Consulte [configurar una lista de direcciones URL bloqueadas personalizadas mediante vínculos seguros de ATP](set-up-a-custom-blocked-urls-list-wtih-atp.md).  <br/> |

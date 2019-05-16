@@ -3,7 +3,7 @@ title: Activar Office 365 ATP para SharePoint, OneDrive y Microsoft Teams
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.date: 02/06/2019
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: 07e76024-0c80-40dc-8c48-1dd0d0f863cb
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo activar ATP para SharePoint, OneDrive y Teams, incluido cómo establecer alertas para los archivos detectados.
-ms.openlocfilehash: 30eb28bfc5156664656ca1c200f9e999661b3b0c
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 6b7403ceff810d96c677fc6af7673547424346b8
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32264312"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077246"
 ---
 # <a name="turn-on-office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Activar Office 365 ATP para SharePoint, OneDrive y Microsoft Teams
 
@@ -40,7 +40,7 @@ Para definir (o editar) las directivas de ATP, debe tener asignado un rol apropi
   
 1. Vaya a [https://protection.office.com](https://protection.office.com)e inicie sesión con su cuenta profesional o educativa.
     
-2. en el centro de navegación &amp; izquierdo de Office 365 Security Compliance Center, en **administración de amenazas**, seleccione **directiva** \> de datos adjuntos **seguros**. <br/>![En el centro &amp; de seguridad y cumplimiento, elija \> Directiva de administración de amenazas](media/08849c91-f043-4cd1-a55e-d440c86442f2.png)
+2. En el centro de navegación &amp; izquierdo de Office 365 Security Compliance Center, en **Administración de amenazas**, seleccione **Directiva** \> de datos adjuntos **seguros**. <br/>![En el centro &amp; de seguridad y cumplimiento, elija \> Directiva de administración de amenazas](media/08849c91-f043-4cd1-a55e-d440c86442f2.png)
   
 3. Seleccione **Activar ATP para SharePoint, OneDrive y Microsoft Teams**.<br/>![Activar la protección contra amenazas avanzada para SharePoint Online, OneDrive para la empresa y Microsoft Teams](media/48cfaace-59cc-4e60-bf86-05ff6b99bdbf.png)
   
@@ -64,7 +64,7 @@ Para obtener más información acerca de la experiencia del usuario cuando un ar
 
 Para recibir una notificación cuando se identificó un archivo en SharePoint Online, OneDrive para la empresa o Microsoft Teams como malintencionado, puede configurar una alerta.
   
-1. en el [centro de seguridad &amp; y cumplimiento de Office 365](https://protection.office.com), elija **alertas** \> **administrar alertas**.
+1. En el [centro de seguridad &amp; y cumplimiento de Office 365](https://protection.office.com), elija **alertas** \> **Administrar alertas**.
     
 2. Elija **nueva Directiva de alerta**.
     
@@ -84,7 +84,7 @@ Para recibir una notificación cuando se identificó un archivo en SharePoint On
     
 Para obtener más información acerca de las alertas, consulte [crear alertas de actividad en &amp; el centro de seguridad y cumplimiento de Office 365](create-activity-alerts.md). 
   
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 1. [Ver información sobre los archivos malintencionados detectados en SharePoint, OneDrive o Microsoft Teams](malicious-files-detected-in-spo-odb-or-teams.md)
     

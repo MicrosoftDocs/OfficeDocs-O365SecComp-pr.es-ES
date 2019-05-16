@@ -1,10 +1,10 @@
 ---
-title: Enviar notificaciones de correo electrónico y Mostrar sugerencias de directiva para directivas de DLP
+title: Enviar notificaciones de email y mostrar sugerencias para directivas DLP
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 3/21/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.UnifiedDLPRuleNotifyUser
@@ -16,14 +16,14 @@ search.appverid:
 - MOE150
 - MET150
 description: 'Una sugerencia de directiva es una notificación o advertencia que aparece cuando alguien trabaja con contenido que entra en conflicto con una directiva DLP. Puede usar notificaciones de correo electrónico y sugerencias de directiva para aumentar el conocimiento y ayudar a los usuarios acerca de las directivas de la organización. También puede dar a los usuarios la opción de invalidar la Directiva, de modo que no se bloqueen si tienen una necesidad empresarial válida o si la Directiva está detectando un falso positivo. '
-ms.openlocfilehash: b598b665de3d45846e221ea4c1b5c2f49a659c6b
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 487d3704b471b10ec876b0df3022d33d13583763
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32263972"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077366"
 ---
-# <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Enviar notificaciones de correo electrónico y Mostrar sugerencias de directiva para directivas de DLP
+# <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Enviar notificaciones de email y mostrar sugerencias para directivas DLP
 
 Puede usar una directiva de prevención de pérdida de datos (DLP) para identificar, supervisar y proteger información confidencial en Office 365. Desea que las personas de la organización que trabajan con esta información confidencial sigan siendo compatibles con las directivas de DLP, pero no desea bloquearlas sin necesidad de que se realice su trabajo. Aquí es donde pueden ayudarle las notificaciones de correo electrónico y las sugerencias de directivas.
   
@@ -65,7 +65,7 @@ Al crear una directiva DLP, las notificaciones de correo electrónico y las suge
     
 6. Para elegir las ubicaciones que desea que proteja la Directiva DLP, realice una de las siguientes acciones:
     
-  - elija **todas las ubicaciones en Office 365** \> **siguiente**.
+  - Elija **todas las ubicaciones en Office 365** \> **siguiente**.
     
   - Elija **permitirme elegir ubicaciones** \> específicas a **continuación**.
     
@@ -118,7 +118,7 @@ También puede usar los siguientes tokens para ayudar a personalizar la notifica
 |:-----|:-----|
 |%% AppliedActions%%  <br/> |Acciones aplicadas al contenido.  <br/> |
 |%% ContentURL%%  <br/> |Dirección URL del documento en el sitio de SharePoint Online o el sitio de OneDrive para la empresa.  <br/> |
-|%% MatchedConditions%%  <br/> |Las condiciones que coinciden con el contenido. Use este token para informar a los usuarios de posibles problemas con el contenido.  <br/> |
+|%%MatchedConditions%%  <br/> |Las condiciones que coinciden con el contenido. Use este token para informar a los usuarios de posibles problemas con el contenido.  <br/> |
    
 ![Mensaje de notificación que muestra dónde aparecen los tokens](media/cd3f36b3-40db-4f30-99e4-190750bd1955.png)
   
@@ -216,7 +216,7 @@ Actualmente estamos trabajando en soporte para mostrar sugerencias de directiva 
 - No se pudo analizar el contenido de los datos adjuntos de correo electrónico
 - No se completó el análisis del contenido de los datos adjuntos de correo
 - La extensión del archivo adjunto es
-- Los datos adJuntos están protegidos con contraseña
+- Los datos adjuntos están protegidos con contraseña
 - La propiedad de documento es
 - El dominio del destinatario es
 - La dirección IP del remitente es

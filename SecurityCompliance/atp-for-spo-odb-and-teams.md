@@ -3,7 +3,7 @@ title: Office 365 ATP para SharePoint, OneDrive y Microsoft Teams
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.date: 03/19/2019
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: 26261670-db33-4c53-b125-af0662c34607
 ms.collection:
 - M365-security-compliance
 description: Amplíe la protección contra amenazas avanzada de Office 365 a los archivos de SharePoint Online, OneDrive para la empresa y Microsoft Teams para permitir una colaboración más segura para su organización.
-ms.openlocfilehash: 55bd613cd89819906773d663deb6278f804cb9de
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 9a1c4d3f7eca335b1668f8fc0947387cc9d496f3
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32249660"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077616"
 ---
 # <a name="office-365-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Office 365 ATP para SharePoint, OneDrive y Microsoft Teams
 
@@ -52,7 +52,7 @@ Para obtener más información, consulte [activar Office 365 ATP para SharePoint
     
 - Los archivos que se identifican como malintencionados en SharePoint Online, OneDrive para la empresa o Microsoft Teams se mostrarán en los [informes de la protección contra amenazas avanzada de office 365](view-reports-for-atp.md) y en el explorador de amenazas (parte de [Office 365 plan de protección contra amenazas avanzada 2](office-365-ti.md) ).
     
-- ATP forma parte de la estrategia de protección contra amenazas global de su organización, que incluye protección contra correo electrónico no deseado y antimalware, así como vínculos seguros y datos adJuntos seguros. Para obtener más información, consulte [proteger contra amenazas en Office 365](protect-against-threats.md).
+- ATP forma parte de la estrategia de protección contra amenazas global de su organización, que incluye protección contra correo electrónico no deseado y antimalware, así como vínculos seguros y datos adjuntos seguros. Para obtener más información, consulte [proteger contra amenazas en Office 365](protect-against-threats.md).
     
 - Un administrador de SharePoint Online puede determinar si se va a permitir que los usuarios descarguen archivos que se detectan como malintencionados. Para ello, ejecute el cmdlet de PowerShell Set-SPOTenant con un parámetro DisallowInfectedFileDownload (consulte [activar Office 365 ATP para SharePoint, OneDrive y Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md)).
     
@@ -70,7 +70,7 @@ Si forma parte del equipo de seguridad de Office 365 de su organización y tiene
     
 - La **descarga de un archivo** permite descargar y analizar el archivo en busca de falsos positivos. 
     
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 1. [Activar Office 365 ATP para SharePoint, OneDrive y Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md)
     

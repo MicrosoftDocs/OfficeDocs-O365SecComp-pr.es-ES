@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 6/29/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: reference
 f1_keywords:
 - ms.o365.cc.DLPNewPolicyFromTemplate
@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: La prevención de pérdida de datos (DLP) en el &amp; centro de seguridad y cumplimiento de Office 365 incluye plantillas de directivas listas para usar que abordan requisitos de cumplimiento comunes, como ayudarle a proteger la información confidencial sujeta a la ley de seguros de salud de Estados Unidos ( HIPAA), Ley de Estados Unidos de Gramm-Leach-Bliley (GLBA) o ley de Patriot de Estados Unidos. En este tema se enumeran todas las plantillas de directivas, los tipos de información confidencial que buscan y las condiciones y acciones predeterminadas.
-ms.openlocfilehash: 0031b5415db2f1c4a9497bcfbc5226da250b01b6
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 505d544d68002bc82eafd85c51b4db4328ba9853
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32266845"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077156"
 ---
 # <a name="what-the-dlp-policy-templates-include"></a>Qué incluyen las plantillas de directiva DLP
 
@@ -283,7 +283,7 @@ La prevención de pérdida de datos (DLP) en el &amp; centro de seguridad y cump
 
 |**Nombre de la regla**|**Condiciones <br/> (incluidos los tipos de información confidencial)**|**Actions**|
 |:-----|:-----|:-----|
-|El contenido coincide con HIPAA de EE.  <br/> | Contiene cualquiera de los siguientes datos confidenciales:  <br/>  Número de la seguridad social de Estados Unidos (SSN): recuento mínimo 1, recuento máximo cualquiera  <br/>  Número de la Agencia para la imPosición de drogas (DEA): recuento mínimo 1, recuento máximo cualquiera  <br/> **AND** <br/>  El contenido contiene cualquiera de estos términos:  <br/>  Clasificación Internacional de enfermedades (ICD-9-CM): recuento mínimo 1, recuento máximo cualquiera  <br/>  Clasificación Internacional de enfermedades (ICD-10-CM): recuento mínimo 1, recuento máximo cualquiera  <br/>  El contenido se comparte con:  <br/>  Personas ajenas a mi organización  <br/> |Enviar una notificación  <br/> |
+|El contenido coincide con HIPAA de EE.  <br/> | Contiene cualquiera de los siguientes datos confidenciales:  <br/>  Número de la seguridad social de Estados Unidos (SSN): recuento mínimo 1, recuento máximo cualquiera  <br/>  Número de la Agencia para la imposición de drogas (DEA): recuento mínimo 1, recuento máximo cualquiera  <br/> **AND** <br/>  El contenido contiene cualquiera de estos términos:  <br/>  Clasificación Internacional de enfermedades (ICD-9-CM): recuento mínimo 1, recuento máximo cualquiera  <br/>  Clasificación Internacional de enfermedades (ICD-10-CM): recuento mínimo 1, recuento máximo cualquiera  <br/>  El contenido se comparte con:  <br/>  Personas ajenas a mi organización  <br/> |Enviar una notificación  <br/> |
    
 ## <a name="us-patriot-act"></a>Ley Patriota de los EE.UU.
 

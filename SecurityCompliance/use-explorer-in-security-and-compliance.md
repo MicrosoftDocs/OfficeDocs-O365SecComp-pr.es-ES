@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 03/31/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre el explorador (también denominado explorador de amenazas) &amp; en el centro de seguridad y cumplimiento.
-ms.openlocfilehash: c782e5962164b7d35947befe526c20f7dc0943d5
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 30f3759b6eb35508a9de8c03abb72562417aa04f
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32264752"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077336"
 ---
 # <a name="use-threat-explorer-in-the-security-amp-compliance-center"></a>Usar el explorador de amenazas en &amp; el centro de seguridad y cumplimiento
 
@@ -36,7 +36,7 @@ Explorer es una herramienta eficaz y en tiempo real cercana para ayudar a los eq
 
 ## <a name="see-malware-detected-in-email-by-technology"></a>Ver malware detectado en correo electrónico por tecnología
 
-SuPongamos que desea ver el malware que se detectó en el correo electrónico y la tecnología de Office 365. Para ello, use la vista [email _GT_ malware](threat-explorer-views.md#email--malware) View of Explorer.
+Supongamos que desea ver el malware que se detectó en el correo electrónico y la tecnología de Office 365. Para ello, use la vista [email _GT_ malware](threat-explorer-views.md#email--malware) View of Explorer.
 
 1. En el centro de seguridad & cumplimiento[https://protection.office.com](https://protection.office.com)(), elija **Threat Management** > **Explorer**.
 2. En el **menú Ver** , elija**malware**de **correo electrónico** > .<br/>![Menú Ver para el explorador](media/ExplorerViewEmailMalwareMenu.png)<br/>
@@ -47,7 +47,7 @@ El informe se actualiza para mostrar el malware de resultados detectado en el co
 
 ## <a name="view-data-about-phishing-urls-and-click-verdict"></a>Ver datos sobre direcciones URL de suplantación de identidad y hacer clic en veredicto
 
-SuPongamos que desea ver los intentos de suplantación de identidad mediante direcciones URL en el correo electrónico, incluida una lista de direcciones URL que se han permitido, bloqueado y reemplazado.  La identificación de las direcciones URL en las que se hizo clic requiere [vínculos seguros de ATP](atp-safe-links.md). (Asegúrese de que ha configurado y aplicado [las directivas de vínculos seguros ATP](set-up-atp-safe-links-policies.md) a sus usuarios para la protección en tiempo de clic y el registro de los veredictos en vínculos seguros de ATP). Para revisar direcciones URL de phish en mensajes y hacer clic en direcciones URL en mensajes de Phish, use el [correo electrónico > de phish](threat-explorer-views.md#email--phish) vista de Explorer.
+Supongamos que desea ver los intentos de suplantación de identidad mediante direcciones URL en el correo electrónico, incluida una lista de direcciones URL que se han permitido, bloqueado y reemplazado.  La identificación de las direcciones URL en las que se hizo clic requiere [vínculos seguros de ATP](atp-safe-links.md). (Asegúrese de que ha configurado y aplicado [las directivas de vínculos seguros ATP](set-up-atp-safe-links-policies.md) a sus usuarios para la protección en tiempo de clic y el registro de los veredictos en vínculos seguros de ATP). Para revisar direcciones URL de phish en mensajes y hacer clic en direcciones URL en mensajes de Phish, use el [correo electrónico > de phish](threat-explorer-views.md#email--phish) vista de Explorer.
 
 1. En el centro de seguridad & cumplimiento[https://protection.office.com](https://protection.office.com)(), elija **Threat Management** > **Explorer**.
 2. En el **menú Ver** , elija**phishing**de **correo electrónico** > .<br/>![Menú Ver para el explorador](media/ExplorerViewEmailPhishMenu.png)<br/>
@@ -66,7 +66,7 @@ Seleccione una dirección URL para ver información más detallada. Tenga en cue
 
 ## <a name="review-email-messages-reported-by-users"></a>Revisar los mensajes de correo electrónico enviados por los usuarios
 
-SuPongamos que desea ver los mensajes de correo electrónico que los usuarios de la organización han notificado como correo no deseado, correo no deseado o suPlantación de identidad mediante el [complemento de mensajes de informe para Outlook y Outlook en la web](enable-the-report-message-add-in.md). Para ello, use la vista de [correo electrónico >](threat-explorer-views.md#email--user-reported) del explorador notificado por el usuario.
+Supongamos que desea ver los mensajes de correo electrónico que los usuarios de la organización han notificado como correo no deseado, correo no deseado o suplantación de identidad mediante el [complemento de mensajes de informe para Outlook y Outlook en la web](enable-the-report-message-add-in.md). Para ello, use la vista de [correo electrónico >](threat-explorer-views.md#email--user-reported) del explorador notificado por el usuario.
 
 1. En el centro de seguridad & cumplimiento[https://protection.office.com](https://protection.office.com)(), elija **Threat Management** > **Explorer**.
 2. En el menú **Ver** , elija **correo electrónico** > notificado por el**usuario**.<br/>![Menú Ver para el explorador](media/ExplorerViewMenuEmailUserReported.png)<br/>

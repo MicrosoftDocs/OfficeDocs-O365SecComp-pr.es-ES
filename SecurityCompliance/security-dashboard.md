@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 03/19/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,18 +15,18 @@ ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 ms.collection:
 - M365-security-compliance
 description: Use el nuevo panel de seguridad para revisar el estado de la protección contra amenazas de Office 365 y vea y actúe en alertas de seguridad.
-ms.openlocfilehash: 83e75f1a38038f1c95697f4db3e7b1134d03779d
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 46f11a4e5693cf243ff72acd6d87406c34af247a
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261118"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077226"
 ---
 # <a name="security-dashboard"></a>Panel de seguridad
 
 ## <a name="overview"></a>Información general
 
-El [Centro &amp; de seguridad y cumplimiento](go-to-the-securitycompliance-center.md) permite que su organización administre el cumplimiento y la protección de datos. SuPoniendo que tiene los permisos necesarios, el panel de seguridad le permite revisar el estado de la protección contra amenazas, así como ver y actuar en alertas de seguridad. 
+El [Centro &amp; de seguridad y cumplimiento](go-to-the-securitycompliance-center.md) permite que su organización administre el cumplimiento y la protección de datos. Suponiendo que tiene los permisos necesarios, el panel de seguridad le permite revisar el estado de la protección contra amenazas, así como ver y actuar en alertas de seguridad. 
   
 Vea el vídeo para obtener información general y lea este artículo para obtener más información.
   
@@ -34,10 +34,10 @@ Vea el vídeo para obtener información general y lea este artículo para obtene
   
 Dependiendo de lo que incluya la suscripción de Office 365 de la organización, el panel de seguridad incluye varios widgets, como Resumen de administración de amenazas, estado de la protección contra amenazas, detecciones de amenazas semanales globales, malware y más, tal y como se describe en la siguientes secciones.
   
-para ver el panel de seguridad, en [el centro de &amp; seguridad y cumplimiento de Office 365](go-to-the-securitycompliance-center.md), vaya a **panel**de **administración** \> de amenazas.
+Para ver el panel de seguridad, en [el centro de &amp; seguridad y cumplimiento de Office 365](go-to-the-securitycompliance-center.md), vaya a **Panel**de **Administración** \> de amenazas.
   
 > [!NOTE]
-> Debe ser un administrador global de Office 365, un administrador de seguridad o un lector de seguridad para ver el panel de seguridad. Algunos widgets requieren permisos adicionales para ver. Para obtener más información, consulte perMissions [in the &amp; Office 365 Security Compliance Center](permissions-in-the-security-and-compliance-center.md). 
+> Debe ser un administrador global de Office 365, un administrador de seguridad o un lector de seguridad para ver el panel de seguridad. Algunos widgets requieren permisos adicionales para ver. Para obtener más información, consulte Permissions [in the &amp; Office 365 Security Compliance Center](permissions-in-the-security-and-compliance-center.md). 
   
 ## <a name="threat-management-summary"></a>Resumen de administración de amenazas
 
@@ -50,7 +50,7 @@ La información que verá en el Resumen de administración de amenazas depende d
 
 |Office 365 Enterprise E3  |Office 365 Enterprise E5  |
 |---------|---------|
-|Mensajes de malware bloqueados<br/>Mensajes de suPlantación bloqueados<br>Mensajes notificados por los usuarios<br><br><br><br> |Mensajes de malware bloqueados<br>Mensajes de suPlantación bloqueados<br>Mensajes notificados por los usuarios<br>Malware de cero días bloqueado<br>Mensajes de suplantación de identidad avanzada detectados<br>URL malIntencionadas bloqueadas |
+|Mensajes de malware bloqueados<br/>Mensajes de suplantación bloqueados<br>Mensajes notificados por los usuarios<br><br><br><br> |Mensajes de malware bloqueados<br>Mensajes de suplantación bloqueados<br>Mensajes notificados por los usuarios<br>Malware de cero días bloqueado<br>Mensajes de suplantación de identidad avanzada detectados<br>URL malintencionadas bloqueadas |
 
 Para ver o acceder al widget de Resumen de administración de amenazas, debe tener permisos para ver los informes de protección contra amenazas avanzada. Para obtener más información, consulte [¿Qué permisos se necesitan para ver los informes de ATP?](view-reports-for-atp.md#what-permissions-are-needed-to-view-the-atp-reports). 
 
@@ -97,7 +97,7 @@ Información no solo aspectos clave de la superficie que debe revisar también i
 
 ![Información inteligente](media/smartinsights.png)
 
-Por ejemplo, es posible que vea que se están entregando mensajes de correo electrónico de suplantación de identidad porque algunos usuarios han deshabilitado las opciones de correo no deseado. Para obtener más información acerca de cómo funcionan las ideas, consulte rePorts [and Insights in the Office &amp; 365 Security Compliance Center](reports-and-insights-in-security-and-compliance.md).
+Por ejemplo, es posible que vea que se están entregando mensajes de correo electrónico de suplantación de identidad porque algunos usuarios han deshabilitado las opciones de correo no deseado. Para obtener más información acerca de cómo funcionan las ideas, consulte Reports [and Insights in the Office &amp; 365 Security Compliance Center](reports-and-insights-in-security-and-compliance.md).
   
 ## <a name="threat-investigation-and-response"></a>Investigación y respuesta de amenazas
 

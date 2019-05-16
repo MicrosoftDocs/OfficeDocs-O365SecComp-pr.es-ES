@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 6/1/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.assetid: a74f637b-3710-4c41-b70f-b5a812929a81
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo configurar una programación para un informe en el centro &amp; de seguridad y cumplimiento.
-ms.openlocfilehash: 2c385dad023febef4ad8b36b8f92f66cbb5b082e
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: cd7856a55f6d3442d96941012d5d06bf93c3d9d7
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258728"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077606"
 ---
 # <a name="create-a-schedule-for-a-report-in-the-security-amp-compliance-center"></a>Crear una programación para un informe en el centro &amp; de seguridad y cumplimiento
 
