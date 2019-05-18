@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 9537cf743b89da7167ce3a37a5915027f4eb717a
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 2e2077fa5ee5333a563470d5bcbb140364bc0ba2
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32260698"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150782"
 ---
 # <a name="advanced-indexing-of-data-for-an-investigation"></a>Indización avanzada de datos para una investigación
 
-El contenido del sistema activo se puede indizar parcialmente por una serie de motivos, como la existencia de imágenes, tipos de archivo no admitidos o cuando se encuentran límites de tamaño de archivo de indización. Cuando se trata de un derrame de datos de riesgo alto, desea asegurarse de que la búsqueda capturó todos los datos que desea investigar. Cuando se agrega una persona de interés a una investigación de datos, cualquier contenido de Office 365 que se consideró tal y como se consideraba parcialmente indizada se vuelve a procesar para que sea posible realizar búsquedas por completo. Este proceso se denomina *indizaCión avanzada*. 
+El contenido del sistema activo se puede indizar parcialmente por una serie de motivos, como la existencia de imágenes, tipos de archivo no admitidos o cuando se encuentran límites de tamaño de archivo de indización. Cuando se trata de un derrame de datos de riesgo alto, desea asegurarse de que la búsqueda capturó todos los datos que desea investigar. Cuando se agrega una persona de interés a una investigación de datos, cualquier contenido de Office 365 que se consideró tal y como se consideraba parcialmente indizada se vuelve a procesar para que sea posible realizar búsquedas por completo. Este proceso se denomina *indización avanzada*. 
 
 Para obtener más información acerca de la compatibilidad de procesamiento en Office 365 y elementos parcialmente indizados, vea:
 

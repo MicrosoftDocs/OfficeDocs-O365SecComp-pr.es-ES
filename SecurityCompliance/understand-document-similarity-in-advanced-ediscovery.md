@@ -4,7 +4,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 4d4cb381-4c9a-4165-a455-609d525c7a88
 description: 'Revise cómo el valor de similitud de documentos, el nivel mínimo de semejanza entre dos archivos que se consideran casi duplicados, funciona en eDiscovery avanzado de Office 365. '
-ms.openlocfilehash: eb8f07ceedb10bd0152693dd1e82a28797d86a5a
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: ce9c2e6ea1d40c82b7a124c9d4d64ce915d266b0
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32264162"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156382"
 ---
 # <a name="understand-document-similarity-in-office-365-advanced-ediscovery"></a>Comprender la similitud de documentos en Office 365 Advanced eDiscovery
 
@@ -43,7 +43,7 @@ Los niveles de semejanza se ilustran de la siguiente manera:
   
 ![Similitud de documentos](media/3907ea7d-e28a-4027-8fc3-be090dd39144.gif)
   
-SuPongamos que ya se ha insertado otro documento, x1. La semejanza entre x1 y E3 es de 87%. De forma similar, la semejanza entre x1 y F1 es de 92%. Como resultado, EquiSet-1, EquiSet-2 y x1 se combinan ahora en un conjunto ND.
+Supongamos que ya se ha insertado otro documento, x1. La semejanza entre x1 y E3 es de 87%. De forma similar, la semejanza entre x1 y F1 es de 92%. Como resultado, EquiSet-1, EquiSet-2 y x1 se combinan ahora en un conjunto ND.
   
 ![Similitud de documentos](media/d140d347-33d5-475a-af04-594a0f2ab13d.gif)
   

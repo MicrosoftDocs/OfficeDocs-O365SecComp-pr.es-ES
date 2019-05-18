@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 4/13/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8f20ca4f-a908-46ec-99e6-9890d269ecf2
 description: 'Comprenda por qué los resultados de búsqueda reales y estimados pueden variar en las búsquedas ejecutadas con herramientas de eDiscovery en Office 365. '
-ms.openlocfilehash: d3a34a58f9bd8213922824e34a77742f5cd4c36b
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: dfa6895f464e1a10f30bd642ef6b11e0869a7e5d
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32257808"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153362"
 ---
 # <a name="differences-between-estimated-and-actual-ediscovery-search-results-in-office-365"></a>Diferencias entre los resultados de búsqueda de exhibición de documentos electrónicos Estimado y real en Office 365
 

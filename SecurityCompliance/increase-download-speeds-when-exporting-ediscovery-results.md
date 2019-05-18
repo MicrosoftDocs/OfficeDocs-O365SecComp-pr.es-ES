@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 6/14/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,12 +12,12 @@ ms.collection: M365-security-compliance
 search.appverid: MOE150
 ms.assetid: c4c8f689-9d52-4e80-ae4b-1411ee9efc43
 description: Obtenga información sobre cómo configurar el registro de Windows para aumentar el rendimiento de los datos al descargar resultados de búsqueda y datos de búsqueda del centro de seguridad & cumplimiento y la exhibición avanzada de documentos electrónicos en Office 365.
-ms.openlocfilehash: 10eff929d6b668d5e2bc22d8ee7f223da4943326
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 44f595e6beffcc3d6789ad7b6f70ad77a48381cb
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256518"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152582"
 ---
 # <a name="increase-the-download-speed-when-exporting-ediscovery-search-results-from-office-365"></a>Aumentar la velocidad de descarga al exportar resultados de búsqueda de exhibición de documentos electrónicos de Office 365
 

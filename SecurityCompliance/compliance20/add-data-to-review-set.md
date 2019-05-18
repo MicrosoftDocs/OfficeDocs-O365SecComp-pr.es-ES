@@ -1,10 +1,10 @@
 ---
-title: Agregar resultados de búsqueda a un conjunto de revisión
+title: Agregar los resultados de búsqueda a un conjunto de revisión
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: fc32836026d1a2c449e73a28eafc2f5a631a1705
-ms.sourcegitcommit: 4ce350f8f3eb597587945a8ac9b33e9793440c64
+ms.openlocfilehash: 4de390972672509422e055cd3fd6a9f65d54a7ba
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33527292"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155242"
 ---
-# <a name="add-search-results-to-a-review-set"></a>Agregar resultados de búsqueda a un conjunto de revisión
+# <a name="add-search-results-to-a-review-set"></a>Agregar los resultados de búsqueda a un conjunto de revisión
 
 Cuando esté satisfecho con los resultados de una búsqueda y esté listo para revisar y analizar los resultados de la búsqueda, puede agregarlos a un conjunto de revisión en el caso. La copia de los datos originales en el conjunto de revisión también facilita el proceso de revisión y análisis al proporcionarle herramientas avanzadas de análisis como detección de temas, detección de casi duplicados y identificación de subprocesos de correo electrónico. También puede agregar datos de orígenes de datos que no sean de Office 365 a un conjunto de revisión, de modo que pueda revisar los datos además de los datos que recopila de Office 365.
 

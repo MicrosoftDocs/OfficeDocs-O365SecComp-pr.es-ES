@@ -3,18 +3,18 @@ title: Seguimiento de mensajes en el Centro de seguridad y cumplimiento
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: Los administradores pueden usar el seguimiento de mensajes en el centro de seguridad & cumplimiento para averiguar qué sucedió con los mensajes.
-ms.openlocfilehash: ebfc8d5e19bbc45c32ad65451f3f850662f358b4
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 0db1780057172fe1a6a6c1f7a334fbbd2220df30
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265662"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158682"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Seguimiento de mensajes en el Centro de seguridad y cumplimiento
 

@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 6/29/2018
-ms.audience: End User
+audience: End User
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 - MOP150
 ms.assetid: bed936bc-0969-4a6d-a7a5-66305c14e958
 description: Obtenga información sobre cómo los administradores pueden usar Exchange Online PowerShell y un archivo CSV para importar de forma masiva contactos externos a la lista global de direcciones.
-ms.openlocfilehash: 2948332d7cdf2d1364b2b563f94efdb3e8d0672d
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 08fe7666f03c7fe60555133292be9e27a9ffa413
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32244513"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152212"
 ---
 # <a name="bulk-import-external-contacts-to-exchange-online"></a>Importación masiva de contactos externos a Exchange Online
 
@@ -60,7 +60,7 @@ El primer paso consiste en crear un archivo CSV que contenga información sobre 
   
 2. Abra el archivo CSV en Microsoft Excel para editar el archivo CSV porque es mucho más fácil usar Excel para editar el archivo CSV.
     
-3. Cree una fila para cada contacto que desee importar a Exchange Online. ReLlenar tantas celdas como sea posible. Esta información se mostrará en la libreta de direcciones compartida para cada contacto. 
+3. Cree una fila para cada contacto que desee importar a Exchange Online. Rellenar tantas celdas como sea posible. Esta información se mostrará en la libreta de direcciones compartida para cada contacto. 
     
     > [!IMPORTANT]
     >  Las siguientes propiedades (que son los primeros cuatro elementos de la fila de encabezado) son necesarias para crear un contacto externo y deben rellenarse en el archivo CSV: **ExternalEmailAddress**, **Name**, **FirstName**, **LastName**. El comando de PowerShell que ejecutó en el paso 2 usará los valores de estas propiedades para crear los contactos. 
@@ -91,7 +91,7 @@ El siguiente paso es usar el archivo CSV que creó en el paso 1 y PowerShell par
     Los contactos importados aparecerán en la libreta de direcciones compartida en Outlook y Outlook en la Web.
     
     > [!NOTE]
-    > también puede ver los contactos en el centro de administración de Microsoft 365 yendo a **los** \> **contactos**de los usuarios. 
+    > También puede ver los contactos en el centro de administración de Microsoft 365 yendo a **los** \> **contactos**de los usuarios. 
 
 ## <a name="step-3-add-information-to-the-properties-of-the-external-contacts"></a>Paso 3: agregar información a las propiedades de los contactos externos
 

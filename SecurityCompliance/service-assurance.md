@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 6/29/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 - BCS160
 ms.assetid: 47e8b964-4b09-44f7-a2d7-b8a06e8e389c
 description: Descargue auditorías de terceros, descubra cómo Microsoft mantiene seguros los datos de los clientes y sepa cómo se puede cumplir con ISO, HIPAA, FINRA y FedRAMP al usar Office 365.
-ms.openlocfilehash: d0cb03a7f5cbc34bdce238155372c9e031a95033
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: e346b84d17c2ca95b6a51ff870b18d5ff408b87c
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261198"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158832"
 ---
 # <a name="service-assurance-in-the-security--compliance-center"></a>Garantía del servicio en el centro de seguridad & cumplimiento
 
@@ -103,7 +103,7 @@ Seleccione el informe que desee descargar y seleccione **Guardar** para descarga
 |:-----|:-----|:-----|
 |Informes de cumplimiento  <br/> | FedRamp  <br/>  Evaluación de GRC  <br/>  ISO  <br/>  SOC/SSAE  <br/> |Use los informes de cumplimiento de servicios para revisar las evaluaciones de auditoría realizadas por auditores independientes de terceros de las operaciones de entrega de servicio de Office 365.  <br/> |
 |Documentos de confianza  <br/> | Preguntas más frecuentes y notas del producto  <br/>  Informes de administración de riesgos  <br/> |Use notas del producto, preguntas más frecuentes, informes de fin de año y otros recursos de Microsoft Confidential que están disponibles en el acuerdo de no divulgación para sus evaluaciones de riesgos y revisión.  <br/> |
-|Controles auditados  <br/> |Estándares y normativas globales que Office 365 ha implementado.  <br/> | Ayuda con la evaluación de riesgos cuando está evaluando, incorporando o usando los servicios de Office 365. Descubra lo siguiente:  <br/> <br/>-Cómo los controles de Office 365 cumplen los requisitos de seguridad, cumplimiento y privacidad.  <br/>-Acerca de la prueba de controles en Office 365, los resultados de estas pruebas y cuándo se completaron.  <br/> |
+|Controles auditados  <br/> |Estándares y normativas globales que Office 365 ha implementado.  <br/> | Ayuda con la evaluación de riesgos cuando está evaluando, incorporando o usando los servicios de Office 365. Descúbrelo:  <br/> <br/>-Cómo los controles de Office 365 cumplen los requisitos de seguridad, cumplimiento y privacidad.  <br/>-Acerca de la prueba de controles en Office 365, los resultados de estas pruebas y cuándo se completaron.  <br/> |
    
 En función de su configuración específica, las opciones incluidas en la vista pueden tener algunas diferencias.
   

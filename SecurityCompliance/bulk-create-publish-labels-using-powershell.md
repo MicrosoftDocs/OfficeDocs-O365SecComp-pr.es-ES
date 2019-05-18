@@ -3,7 +3,7 @@ title: Crear y publicar etiquetas de retención de forma masiva con PowerShell
 ms.author: stephow
 author: stephow-msft
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En Office 365, puede usar etiquetas para implementar una programación de retención en su organización. Como administrador de registros o responsable de cumplimiento normativo, puede que tenga que crear y publicar cientos de etiquetas. Puede hacerlo mediante la interfaz de usuario del Centro de seguridad y cumplimiento, pero crear etiquetas de una en una es laborioso e ineficiente. Si usa el script y los archivos .csv que se proporcionan a continuación, puede crear y publicar de forma masiva etiquetas y directivas de etiquetas. Primero, creará una lista de las etiquetas y una lista de las directivas de etiquetas en Excel y, después, creará de forma masiva las etiquetas y las directivas de etiquetas en esas listas con PowerShell. Esto permite crear y publicar al mismo tiempo y con mayor facilidad todas las etiquetas que necesita la programación de retención.
-ms.openlocfilehash: f787171e0b463b09f99698c37ac0bf5c516fad8f
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 09d1a1d2fa6faa333f9b53a7928abdc7409073b6
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32244141"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152112"
 ---
 # <a name="bulk-create-and-publish-retention-labels-by-using-powershell"></a>Crear y publicar etiquetas de retención de forma masiva con PowerShell
 

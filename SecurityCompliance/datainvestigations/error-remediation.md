@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: b78a8e45ffb0833dec5116ff637cd0930387ebfe
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: bca6967fd99696ffb4b610105e448011b9837be4
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258868"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150862"
 ---
 # <a name="error-remediation-when-processing-data-for-an-investigation"></a>Corrección de errores al procesar datos para una investigación
 

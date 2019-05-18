@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 3aa37a6778947934759eb652a9367559b9ef838b
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 2d7c3ae16b573af7351abda19edebde7ad7491b8
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32257288"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150592"
 ---
 # <a name="use-the-relevance-module-to-analyze-data-in-evidence"></a>Usar el módulo relevancia para analizar datos en evidencias
 
@@ -79,7 +79,7 @@ A continuación, se encuentra una descripción general de las directrices para l
     
   - Las palabras clave que se definieron en las listas de palabras clave se mostrarán en colores para ayudar al usuario a identificar los archivos relevantes al etiquetar.
     
-- **Cálculo del lote**: los archivos que el experto etiquetó como R/NR recibirán una puntuación de 0 o 100. Esto se aplica a las etiquetas realizadas antes del cálculo por lotes. Si el experto ha cambiado el problema a inActivo tras el cálculo del lote y ha seguido el etiquetado de este problema, los nuevos resultados etiquetados no serán 100/0, sino la puntuación original.
+- **Cálculo del lote**: los archivos que el experto etiquetó como R/NR recibirán una puntuación de 0 o 100. Esto se aplica a las etiquetas realizadas antes del cálculo por lotes. Si el experto ha cambiado el problema a inactivo tras el cálculo del lote y ha seguido el etiquetado de este problema, los nuevos resultados etiquetados no serán 100/0, sino la puntuación original.
     
 - **Problemas y modo de muestreo**: los problemas suelen estar desactivados cuando se completa el trabajo en ellos (el entrenamiento de relevancia está estabilizado y se ha realizado el cálculo del lote), cuando se cancelan los problemas o cuando otro usuario está trabajando en los problemas.
     

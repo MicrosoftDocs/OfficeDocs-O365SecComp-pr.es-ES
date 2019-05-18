@@ -3,7 +3,7 @@ title: Administrador de cumplimiento de Microsoft y el RGPD
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: None
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El administrador de cumplimiento de Microsoft es una herramienta gratuita de evaluación de riesgos basada en flujos de trabajo en el portal de confianza de servicios de Microsoft. El administrador de cumplimiento le permite realizar un seguimiento, asignar y comprobar actividades de cumplimiento normativo relacionadas con los servicios en la nube de Microsoft.
-ms.openlocfilehash: 10579edea5a36686b8b19cafd9d3d6e148cfdcd3
-ms.sourcegitcommit: 696c1ed6b270be3f9da7395b49a7d8fec98e6db0
+ms.openlocfilehash: a082d069aced13aa9260a1a856d942c4feb7dd4b
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "33473222"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152102"
 ---
 # <a name="microsoft-compliance-manager-and-the-gdpr"></a>Administrador de cumplimiento de Microsoft y el RGPD
 

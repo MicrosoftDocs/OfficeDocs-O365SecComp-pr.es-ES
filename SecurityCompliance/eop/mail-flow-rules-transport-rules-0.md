@@ -4,18 +4,18 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 4/29/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
 description: Puede usar reglas de flujo de correo (reglas de transporte) para identificar y realizar acciones en mensajes que fluyen a través de la organización de Office 365.
-ms.openlocfilehash: 379886788a4fa411d70830c702dd8850e8118b32
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 73f5668be76a20af7474f6de06d50e278057fd06
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256638"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153152"
 ---
 # <a name="mail-flow-rules-transport-rules-in-exchange-online-protection"></a>Reglas de flujo de correo (reglas de transporte) en Exchange Online Protection
 

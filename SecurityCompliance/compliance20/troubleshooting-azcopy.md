@@ -1,10 +1,10 @@
 ---
-title: Solucionar problemas de AzCopy en eDiscovery avanzado (versión preliminar)
+title: Solucionar problemas de AzCopy en eDiscovery avanzado
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-seccomp
 localization_priority: Normal
@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 9711bee4ec9a61510b47568df37dfd3135e1e00c
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 2c8378cf7b9bd21f901b1babbebdcb0b69a8ed73
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32241086"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151522"
 ---
-# <a name="troubleshoot-azcopy-in-advanced-ediscovery-preview"></a>Solucionar problemas de AzCopy en eDiscovery avanzado (versión preliminar)
+# <a name="troubleshoot-azcopy-in-advanced-ediscovery"></a>Solucionar problemas de AzCopy en eDiscovery avanzado
 
-Al cargar datos y documentos que no son de Office 365 para la corrección de errores en eDiscovery avanzado (versión preliminar), la interfaz de usuario suministra un comando AzCopy de Azure que contiene parámetros con la ubicación en la que se almacenan los archivos que desea cargar y Azure Ubicación de almacenamiento en la que se cargarán los archivos. Para cargar los documentos, copie este comando y, a continuación, ejecútelo en un símbolo del sistema en el equipo local.  La captura de pantalla siguiente muestra un ejemplo de un comando AzCopy:
+Al cargar datos o documentos que no son de Office 365 para la corrección de errores en eDiscovery avanzado, la interfaz de usuario proporciona un comando de Azure AzCopy que contiene parámetros con la ubicación en la que se almacenan los archivos que desea cargar y el almacenamiento de Azure Ubicación en la que se cargarán los archivos. Para cargar los documentos, copie este comando y, a continuación, ejecútelo en un símbolo del sistema en el equipo local.  La captura de pantalla siguiente muestra un ejemplo de un comando AzCopy:
 
 ![Cargar archivos que no son de Office 365](../media/46ba68f6-af11-4e70-bb91-5fc7973516e3.png)
 

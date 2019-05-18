@@ -4,18 +4,18 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Los administradores pueden configurar un conector nativo para importar datos de terceros desde orígenes de datos como las páginas empresariales de Facebook, las páginas de la compañía de LinkedIn y el modo Instant Bloomberg. Esto le permite archivar datos de orígenes de datos de terceros en Office 365 para poder usar las características de cumplimiento, como la retención legal, la búsqueda de contenido y las directivas de retención, para administrar el gobierno de los datos de terceros de la organización.
-ms.openlocfilehash: e38194265fe8a511fe71b252b7d2c02904c09e89
-ms.sourcegitcommit: 5bd7a97aeab1c89e0a3660ba7bdb3200224107a1
+ms.openlocfilehash: 7a71eac07d3d3260809f90cd2e470c32c44e9dda
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "34104196"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152192"
 ---
 # <a name="use-a-sample-connector-to-archive-facebook-data-in-office-365-preview"></a>Usar un conector de ejemplo para archivar datos de Facebook en Office 365 (versión preliminar)
 

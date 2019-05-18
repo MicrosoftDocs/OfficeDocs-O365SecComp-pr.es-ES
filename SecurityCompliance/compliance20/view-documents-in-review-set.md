@@ -1,9 +1,9 @@
 ---
-title: Ver documentos en un conjunto de revisión
+title: Ver documentos de un conjunto de revisión
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,14 +12,14 @@ search.appverid:
 - MOE150
 - MET150
 description: ''
-ms.openlocfilehash: 65b55f60e1b57b34dbdc7dd62f0a4b373f73a96b
-ms.sourcegitcommit: 4ce350f8f3eb597587945a8ac9b33e9793440c64
+ms.openlocfilehash: 0e986510ca49cfbfd77ab6f4d43220df1ebf35c5
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/01/2019
-ms.locfileid: "33527273"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151552"
 ---
-# <a name="view-documents-in-a-review-set"></a>Ver documentos en un conjunto de revisión
+# <a name="view-documents-in-a-review-set"></a>Ver documentos de un conjunto de revisión
 
 EDiscovery avanzado muestra contenido a través de varios visores cada uno con fines distintos. Se pueden usar los distintos visores haciendo clic en cualquier documento dentro de un conjunto de revisión. Los visores que se proporcionan actualmente son:
 

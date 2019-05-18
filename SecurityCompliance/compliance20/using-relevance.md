@@ -1,10 +1,10 @@
 ---
-title: Usar el módulo relevancia para analizar datos en la exhibición avanzada de documentos electrónicos (versión preliminar)
+title: Usar el módulo relevancia para analizar datos en eDiscovery avanzado
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,17 +14,19 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 6e94adc6e6b7fb7d8757b161ffdf01066cadac7a
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: ae0546edbc9cb95808ba1843f835eab7dc460f0b
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32242130"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151502"
 ---
-# <a name="use-the-relevance-module-to-analyze-data-in-advanced-ediscovery-preview"></a>Usar el módulo relevancia para analizar datos en la exhibición avanzada de documentos electrónicos (versión preliminar)
+# <a name="use-the-relevance-module-to-analyze-data-in-advanced-ediscovery"></a>Usar el módulo relevancia para analizar datos en eDiscovery avanzado
 
-En la exhibición avanzada de documentos electrónicos (versión preliminar), el módulo de relevancia incluye el entrenamiento de relevancia y la revisión de los archivos relacionados con un caso. Para usar el flujo de trabajo de relevancia, vaya a Manage working set in a working set y haga clic en Mostrar relevancia. Hay un par de pasos que debe realizar antes de poder iniciar el flujo de trabajo:
-- Proceso: cada conjunto de carga agregado al conjunto de trabajo se mostrará como "contenedor" aquí. Debe procesar estos documentos para poder agregarlos al módulo de relevancia; Aquí también puede marcarlos como semilla o etiquetarse previamente para un problema específico.
+En la exhibición avanzada de documentos electrónicos, el módulo de relevancia incluye el entrenamiento de relevancia y la revisión de los archivos relacionados con un caso. Para usar el flujo de trabajo de relevancia, vaya a administrar revisión establecido en un conjunto de revisión y haga clic en Mostrar relevancia. Hay un par de pasos que debe realizar antes de poder iniciar el flujo de trabajo:
+
+- Proceso: cada conjunto de carga agregado al conjunto de revisión se mostrará como un "contenedor" aquí. Debe procesar estos documentos para poder agregarlos al módulo de relevancia; Aquí también puede marcarlos como semilla o etiquetarse previamente para un problema específico.
+
 - Agregar a relevancia: en cargas \> de relevancia, puede agregar documentos que se han procesado en relevancia para que estén disponibles para su aprendizaje.
 
 El flujo de trabajo de relevancia se muestra y se describe de la siguiente manera:
@@ -39,7 +41,7 @@ El flujo de trabajo de relevancia se muestra y se describe de la siguiente maner
     
 - **Ciclos de formación y seguimiento**
     
-  - **Tag**: Advanced eDiscovery (Preview) aprende los criterios de relevancia específicos de cada problema en función de la revisión iterativa del experto y el etiquetado de archivos individuales.
+  - **Tag**: Advanced eDiscovery aprende los criterios de relevancia específicos de cada problema en función de la revisión iterativa del experto y el etiquetado de archivos individuales.
     
   - **Track**: calcule y muestre los resultados temporales de la formación de relevancia mientras supervisa la validez estadística del proceso. 
     
@@ -47,9 +49,9 @@ El flujo de trabajo de relevancia se muestra y se describe de la siguiente maner
     
 - **Decida**: los resultados del análisis aplicado a todo el caso se muestran tras el cálculo del lote y se muestran los datos usados para realizar las decisiones de revisión del documento.
     
-- **Prueba**: se pueden probar los resultados para comprobar la validez y la eficacia del procesamiento de eDiscovery avanzado (vista previa).
+- **Prueba**: se pueden probar los resultados para comprobar la validez y la eficacia del procesamiento avanzado de eDiscovery.
 
-- **Buscar**: una vez que se ha completado el flujo de trabajo de relevancia, puede usar el resultado como, por ejemplo, el percentil de lectura de un documento para su problema al ejecutar una consulta en el conjunto de trabajo.
+- **Buscar**: una vez que se ha completado el flujo de trabajo de relevancia, puede usar el resultado como, por ejemplo, el percentil de lectura de un documento para su problema al ejecutar una consulta dentro del conjunto de revisión.
     
 ## <a name="guidelines-for-relevance-training-and-review"></a>Directrices para la revisión y el aprendizaje de relevancia
 
@@ -67,7 +69,7 @@ A continuación, se encuentra una descripción general de las directrices para l
      
   - Omitir el texto aplicado a la relevancia se quitará en el contenido del archivo que se muestra en la vista de texto en relevancia. Si los valores de omitir texto se definieron después de que ya se haya iniciado el entrenamiento de relevancia, el nuevo texto omitido se aplicará a los archivos de ejemplo creados a partir del punto en que se definió. La característica omitir texto debe usarse con cuidado, ya que su uso puede reducir el rendimiento del análisis de archivos
     
-  - Use la opción **omitir etiquetado** solo cuando sea necesario. La exhibición avanzada de documentos electrónicos (vista previa) no se basa en archivos omitidos. En la evaluación, si es difícil distinguir si un archivo es relevante, es mejor marcar como relevante (R) o no relevante (NR) siempre que sea posible, en lugar de seleccionar **SKIP**. Cuando la exhibición avanzada de documentos electrónicos (versión preliminar) evalúa el aprendizaje, puede ver cómo se procesaron estos tipos de archivos.
+  - Use la opción **omitir etiquetado** solo cuando sea necesario. La exhibición avanzada de documentos electrónicos no realiza un entrenamiento basado en archivos omitidos. En la evaluación, si es difícil distinguir si un archivo es relevante, es mejor marcar como relevante (R) o no relevante (NR) siempre que sea posible, en lugar de seleccionar **SKIP**. Cuando la exhibición avanzada de documentos electrónicos evalúa el aprendizaje, puede ver cómo se procesaron estos tipos de archivos.
     
   - Incluso los archivos con una cantidad muy pequeña de texto extraído deben etiquetarse en el aprendizaje como R/NR, en lugar de "omitir", cuando sea posible. 
     
@@ -83,7 +85,7 @@ A continuación, se encuentra una descripción general de las directrices para l
     
   - Las palabras clave que se definieron en las listas de palabras clave se mostrarán en colores para ayudar al usuario a identificar los archivos relevantes al etiquetar.
     
-- **Cálculo del lote**: los archivos que el experto etiquetó como R/NR recibirán una puntuación de 0 o 100. Esto se aplica a las etiquetas realizadas antes del cálculo por lotes. Si el experto ha cambiado el problema a inActivo tras el cálculo del lote y ha seguido el etiquetado de este problema, los nuevos resultados etiquetados no serán 100/0, sino la puntuación original.
+- **Cálculo del lote**: los archivos que el experto etiquetó como R/NR recibirán una puntuación de 0 o 100. Esto se aplica a las etiquetas realizadas antes del cálculo por lotes. Si el experto ha cambiado el problema a inactivo tras el cálculo del lote y ha seguido el etiquetado de este problema, los nuevos resultados etiquetados no serán 100/0, sino la puntuación original.
     
 - **Problemas y modo de muestreo**: los problemas suelen estar desactivados cuando se completa el trabajo en ellos (el entrenamiento de relevancia está estabilizado y se ha realizado el cálculo del lote), cuando se cancelan los problemas o cuando otro usuario está trabajando en los problemas.
     
@@ -144,4 +146,4 @@ Es posible aceptar o invalidar las opciones de procesamiento avanzado de paso po
   
 [Prueba del análisis de relevancia](../test-relevance-analysis-in-advanced-ediscovery.md)
 
-[Consulta dentro del espacio de trabajo](working-set-search.md)
+[Consultar los datos de un conjunto de revisión](review-set-search.md)

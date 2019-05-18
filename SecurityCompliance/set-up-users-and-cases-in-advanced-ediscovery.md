@@ -4,7 +4,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 60ffd80b-4376-419d-b6e4-a72029b9907c
 description: 'Obtenga información sobre cómo configurar roles de usuario, crear casos y asignar usuarios a los casos en Office 365 Advanced eDiscovery.  '
-ms.openlocfilehash: 5a22e0683e49ebdaf8391e092aeb101386e0636b
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 5eb019afcf57b6df17fd42f3058deb0f6b7229f5
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32260708"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156472"
 ---
 # <a name="set-up-users-and-cases-in-office-365-advanced-ediscovery"></a>Configurar usuarios y casos en la exhibición de documentos electrónicos avanzada de Office 365
 
@@ -33,7 +33,7 @@ Antes de configurar casos y usuarios en la exhibición avanzada de documentos el
   
 - Para analizar los datos de un usuario con la exhibición avanzada de documentos electrónicos, el usuario (el custodio de los datos) debe tener asignada una licencia de Office 365 E5. Como alternativa, se puede asignar una licencia independiente de eDiscovery avanzado a los usuarios con una licencia de Office 365 E1 o E3. Los administradores y los responsables de cumplimiento que se asignan a los casos y usan la exhibición avanzada de documentos electrónicos para analizar los datos no necesitan una licencia E5. 
     
-- Debe ser miembro del grupo de roles eDiscovery Manager en el centro de seguridad &amp; y cumplimiento de Office 365 para crear un caso de exhibición de documentos electrónicos y agregarle miembros. Para agregarse al grupo de roles de eDiscovery Manager en &amp; el centro de seguridad y cumplimiento, debe ser administrador global de la organización de Office 365. Si no es un administrador global, deberá solicitar a un administrador global que le agregue al grupo de roles eDiscovery Manager. Para más información, visite:
+- Debe ser miembro del grupo de roles eDiscovery Manager en el centro de seguridad &amp; y cumplimiento de Office 365 para crear un caso de exhibición de documentos electrónicos y agregarle miembros. Para agregarse al grupo de roles de eDiscovery Manager en &amp; el centro de seguridad y cumplimiento, debe ser administrador global de la organización de Office 365. Si no es un administrador global, deberá solicitar a un administrador global que le agregue al grupo de roles eDiscovery Manager. Para obtener más información, vea:
     
   - [Permisos en el centro de seguridad &amp; y cumplimiento de 365 de Microsoft](permissions-in-the-security-and-compliance-center.md)
     

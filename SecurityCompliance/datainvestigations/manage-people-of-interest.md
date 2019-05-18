@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: d06dde60ae75cfea1bf1d79f445b613d20a76363
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: e374509dccd235ef689609acc1c4f99db6594d4c
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32257678"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150712"
 ---
 # <a name="manage-people-of-interest-in-data-investigations-preview"></a>Administrar personas de interés en investigaciones de datos (versión preliminar)
 
@@ -28,7 +28,7 @@ Las investigaciones de datos suelen incluir a personas de interés. Normalmente 
 
 ## <a name="add-people-of-interest"></a>Agregar personas de interés
 
-En la pestaña **personas de interés** , puede Agregar personas de interés y descubrir sus orígenes de datos, como los buzoNes de Exchange o el sitio de OneDrive para la empresa, que puede usar para limitar la búsqueda. Cuando el objetivo es que los usuarios de interés, las búsquedas sean más exactas y precisas, ya que la herramienta vuelve a procesar los datos no indizados, como imágenes o tipos de archivo no admitidos. También puede ver su información de contacto, la información de ubicación y los registros de actividad que puede usar para iniciar las comunicaciones o investigar sus actividades. 
+En la pestaña **personas de interés** , puede Agregar personas de interés y descubrir sus orígenes de datos, como los buzones de Exchange o el sitio de OneDrive para la empresa, que puede usar para limitar la búsqueda. Cuando el objetivo es que los usuarios de interés, las búsquedas sean más exactas y precisas, ya que la herramienta vuelve a procesar los datos no indizados, como imágenes o tipos de archivo no admitidos. También puede ver su información de contacto, la información de ubicación y los registros de actividad que puede usar para iniciar las comunicaciones o investigar sus actividades. 
 
 Para agregar personas de interés a una investigación:
 

@@ -3,18 +3,18 @@ title: Informe de clientes de autenticación SMTP
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: Los administradores pueden obtener información sobre el informe de clientes de autenticación SMTP en el panel de flujo de correo en el centro de seguridad & cumplimiento.
-ms.openlocfilehash: df0ef74a3ffd7ae8d36e5d1092b3e23304e1df78
-ms.sourcegitcommit: e05e83212e7ca4e84f2ddb0de0297895b995338d
+ms.openlocfilehash: fde5be59e2b8a86b2bac6fc793293d8887670746
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "33868558"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158602"
 ---
 # <a name="smtp-auth-clients-report"></a>Informe de clientes de autenticación SMTP
 

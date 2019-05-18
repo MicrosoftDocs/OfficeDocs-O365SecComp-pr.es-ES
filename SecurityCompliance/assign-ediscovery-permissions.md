@@ -3,7 +3,7 @@ title: Asignar permisos de exhibición de documentos electrónicos en el centro 
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
 description: Asigne los permisos necesarios para realizar tareas relacionadas con la exhibición de documentos electrónicos mediante el centro de seguridad & cumplimiento.
-ms.openlocfilehash: 958dd3f41bb9e578c80608d738fc735f5063148d
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 5a9036908d97a62897b7d52b875a46008a7a337c
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32250180"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152182"
 ---
 # <a name="assign-ediscovery-permissions-in-the-security--compliance-center"></a>Asignar permisos de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento
 
@@ -59,9 +59,9 @@ El grupo de roles principal relacionado con la exhibición de documentos electr�
     
 4. En la página flotante del **Administrador de exhibición** de documentos electrónicos, realice una de las siguientes acciones en función de los permisos de exhibición de documentos electrónicos que desee asignar. 
     
-  - **Para convertir un usuario en Administrador de exhibición** de documentos electrónicos Junto a **Administrador de exhibición**de documentos electrónicos, haga clic en **Editar**. En **administradores de exhibición**de documentos electrónicos seleccionados, haga clic ![en **Editar**y en agregar icono](media/ITPro-EAC-AddIcon.gif) **Agregar**. Seleccione el usuario (o usuarios) que desea agregar como administrador de exhibición de documentos electrónicos y, a continuación, haga clic en **Agregar**. Cuando haya terminado de agregar usuarios, haga clic en **listo**. A continuación, en la página de edición seleccionar el control flotante de **eDiscovery Manager** , haga clic en **Guardar** para guardar los cambios en la perTenencia al administrador de eDiscovery. 
+  - **Para convertir un usuario en Administrador de exhibición** de documentos electrónicos Junto a **Administrador de exhibición**de documentos electrónicos, haga clic en **Editar**. En **administradores de exhibición**de documentos electrónicos seleccionados, haga clic ![en **Editar**y en agregar icono](media/ITPro-EAC-AddIcon.gif) **Agregar**. Seleccione el usuario (o usuarios) que desea agregar como administrador de exhibición de documentos electrónicos y, a continuación, haga clic en **Agregar**. Cuando haya terminado de agregar usuarios, haga clic en **listo**. A continuación, en la página de edición seleccionar el control flotante de **eDiscovery Manager** , haga clic en **Guardar** para guardar los cambios en la pertenencia al administrador de eDiscovery. 
     
-  - **Para convertir un usuario en Administrador de exhibición** de documentos electrónicos Junto a **Administrador de exhibición**de documentos electrónicos, haga clic en **Editar**. En **administradores de eDiscovery seleccionados**, haga clic en **Editar**y, ![a continuación](media/ITPro-EAC-AddIcon.gif) , haga clic en agregar icono **Agregar**. Seleccione el usuario (o usuarios) que desea agregar como administrador de exhibición de documentos electrónicos y, a continuación, haga clic en **Agregar**. Cuando haya terminado de agregar usuarios, haga clic en **listo**. A continuación, en la página de **edición de elegir administrador de exhibición** de documentos electrónicos, haga clic en **Guardar** para guardar los cambios en la perTenencia del administrador de exhibición de documentos electrónicos. 
+  - **Para convertir un usuario en Administrador de exhibición** de documentos electrónicos Junto a **Administrador de exhibición**de documentos electrónicos, haga clic en **Editar**. En **administradores de eDiscovery seleccionados**, haga clic en **Editar**y, ![a continuación](media/ITPro-EAC-AddIcon.gif) , haga clic en agregar icono **Agregar**. Seleccione el usuario (o usuarios) que desea agregar como administrador de exhibición de documentos electrónicos y, a continuación, haga clic en **Agregar**. Cuando haya terminado de agregar usuarios, haga clic en **listo**. A continuación, en la página de **edición de elegir administrador de exhibición** de documentos electrónicos, haga clic en **Guardar** para guardar los cambios en la pertenencia del administrador de exhibición de documentos electrónicos. 
     
 > [!NOTE]
 > También puede usar el cmdlet **Add-eDiscoveryCaseAdmin** para que un usuario sea administrador de exhibición de documentos electrónicos. Sin embargo, al usuario se le debe asignar el rol de administración de casos antes de que pueda usar este cmdlet para convertirlo en Administrador de exhibición de documentos electrónicos. Para obtener más información, vea [Add-eDiscoveryCaseAdmin](https://go.microsoft.com/fwlink/p/?LinkID=798217). 
@@ -76,12 +76,12 @@ En la siguiente tabla se enumeran los roles RBAC relacionados con la exhibición
 |:-----|:-----:|:-----:|:-----:|:-----:|
 |Administración de casos <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
 |Búsqueda de cumplimiento <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
-|Export <br/> | <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
+|Exportar <br/> | <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
 |Retención <br/>  |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |
 |Vista previa <br/>  | <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> | <br/> |
 |Revisar <br/>  | <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> | <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |
-|DesCifrado de RMS <br/>  ||![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |||
-|Búsqueda y dePuración <br/> | <br/> | <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> | <br/> | 
+|Descifrado de RMS <br/>  ||![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png) <br/> |||
+|Búsqueda y depuración <br/> | <br/> | <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> | <br/> | 
 ||||
   
 En las secciones siguientes se describe cada uno de los roles RBAC relacionados con la exhibición de documentos electrónicos que aparecen en la tabla anterior.
@@ -100,7 +100,7 @@ De forma similar, los usuarios que tienen asignado el rol de búsqueda de cumpli
 
 Para obtener más información, consulte [búsqueda de contenido en Office 365](content-search.md). 
 
-### <a name="export"></a>Export
+### <a name="export"></a>Exportar
 
 El rol permite a los usuarios exportar los resultados de una búsqueda de contenido a un equipo local. También les permite preparar los resultados de búsqueda para el análisis en eDiscovery avanzado. 
 
@@ -123,11 +123,11 @@ Este rol permite a los usuarios ver una lista de elementos devueltos de una bús
 
 Esta función permite a los usuarios acceder a datos de casos en la exhibición avanzada de documentos electrónicos de Office 365. El objetivo principal de este rol es proporcionar a los usuarios acceso a la exhibición avanzada de documentos electrónicos. Los usuarios que tienen asignado este rol pueden ver y abrir la lista de casos en la página de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento del que son miembros. Una vez que el usuario tiene acceso a un caso en el centro de seguridad & cumplimiento, puede hacer clic en **cambiar a eDiscovery avanzado** para acceder y analizar los datos del caso en la exhibición avanzada de documentos electrónicos. Este rol no permite al usuario obtener una vista previa de los resultados de una búsqueda de contenido asociada con el caso o para realizar otras tareas de búsqueda de contenido o de administración de casos.
 
-### <a name="rms-decrypt"></a>DesCifrado de RMS
+### <a name="rms-decrypt"></a>Descifrado de RMS
 
 Este rol permite a los usuarios descifrar mensajes de correo electrónico cifrados con RMS al exportar resultados de búsqueda o preparar resultados de búsqueda para analizarlos en eDiscovery avanzado. Para obtener más información acerca del descifrado de los resultados de búsqueda durante la exportación, consulte [exportar resultados de búsqueda de contenido](export-search-results.md).
 
-### <a name="search-and-purge"></a>Búsqueda y dePuración
+### <a name="search-and-purge"></a>Búsqueda y depuración
 
 Este rol permite a los usuarios realizar la eliminación masiva de datos que coinciden con los criterios de una búsqueda de contenido. Para obtener más información, vea [Buscar y eliminar mensajes de correo electrónico en la organización de Office 365](search-for-and-delete-messages-in-your-organization.md). 
 

@@ -4,7 +4,7 @@ ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Priority
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Las etiquetas de retención de Office 365 ayudan a realizar las acciones adecuadas en el contenido adecuado. Con las etiquetas de retención, puede clasificar los datos de su organización para administrarlos mejor y aplicar reglas de retención basadas en esa clasificación. También puede usar etiquetas de retención para implementar la administración de registros en Office 365.
-ms.openlocfilehash: e13c73e95a2b8bc25df0031a9bd94da4feb54b23
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: b6e0263b02c6395d7f8d9ccb68d04b82aa84fe29
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255198"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154352"
 ---
 # <a name="overview-of-retention-labels"></a>Introducción a las etiquetas de retención
 
@@ -279,12 +279,14 @@ Puede aplicar automáticamente etiquetas a contenido que cumpla determinadas con
 
 Para obtener más información sobre la sintaxis de consultas, vea:
 
-- [Referencia de la sintaxis del lenguaje de consultas de palabras clave (KQL)](https://docs.microsoft.com/es-ES/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
+- 
+  [Referencia de la sintaxis del lenguaje de consultas de palabras clave (KQL)](https://docs.microsoft.com/es-ES/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
 Las etiquetas basadas en consultas usan el índice de búsqueda para identificar el contenido. Para obtener más información sobre las propiedades de búsqueda válidas, vea:
 
 - [Consultas de palabras clave y condiciones de búsqueda para la búsqueda de contenido](keyword-queries-and-search-conditions.md).
-- [Información general sobre las propiedades administradas y rastreadas en SharePoint Server](https://docs.microsoft.com/es-ES/SharePoint/technical-reference/crawled-and-managed-properties-overview)
+- 
+  [Información general sobre las propiedades administradas y rastreadas en SharePoint Server](https://docs.microsoft.com/es-ES/SharePoint/technical-reference/crawled-and-managed-properties-overview)
 
 Consultas de ejemplos:
 

@@ -3,7 +3,7 @@ title: Configurar notificaciones de correo no deseado para el usuario final en E
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ ms.assetid: bfc91c73-a955-40e1-a95f-ad466624339a
 ms.collection:
 - M365-security-compliance
 description: Puede configurar notificaciones de correo no deseado para el usuario final para la directiva predeterminada de filtro de correo no deseado de toda la compañía o para directivas personalizadas de filtro de correo no deseado que se aplican a dominios.
-ms.openlocfilehash: 33eb3eca1556507af22a6888a4455944ac51f0cf
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: c56aa3d5bbc771641f9082095c930c66dc8cee96
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32259598"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153892"
 ---
 # <a name="configure-end-user-spam-notifications-in-exchange-online"></a>Configurar notificaciones de correo no deseado para el usuario final en Exchange Online
 

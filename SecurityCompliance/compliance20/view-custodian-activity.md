@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,35 +14,39 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: defc89f1d54238e62f947fd197e7a866380ee601
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: f4bac6ae7a51b01ff6f9b303bb5c2f4911bdb53d
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32241052"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153912"
 ---
 # <a name="view-custodian-audit-activity"></a>Ver actividad de auditoría de custodios
 
-¿Necesita saber si un usuario ha visto un documento específico o ha purgado un elemento de su buzón? La exhibición avanzada de documentos electrónicos (versión preliminar) ahora está integrada con la herramienta de búsqueda de registros de auditoría existente en el centro de seguridad & cumplimiento. Con esta experiencia insertada, puede usar la herramienta de administración de custodios de eDiscovery avanzado (preView) para facilitar la investigación mediante el fácil acceso y la búsqueda en la actividad de custodios en su caso.
+¿Necesita saber si un usuario ha visto un documento específico o ha purgado un elemento de su buzón? La exhibición avanzada de documentos electrónicos ya está integrada con la herramienta de búsqueda de registros de auditoría existente en el centro de seguridad & cumplimiento. Con esta experiencia insertada, puede usar la herramienta de administración de custodios de eDiscovery avanzada para facilitar su investigación al acceder fácilmente y buscar en la actividad para los custodios en su caso.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Debe tener asignado el rol registros de auditoría con permiso de vista o registros de auditoría en Exchange Online para buscar en el registro de auditoría de 365 de Office. De forma predeterminada, estos roles se asignan a los grupos de roles administración de cumplimiento y administración de la organización en la página permisos del centro de administración de Exchange. Para dar a un usuario la capacidad de buscar el registro de auditoría de eDiscovery avanzado (vista previa) con el nivel mínimo de privilegios, puede crear un grupo de roles personalizado en Exchange Online, agregar el rol registros de auditoría con permiso de vista o registros de auditoría y, a continuación, agregar el usuario como miembro del nuevo rol gr Oup. Para obtener más información, vea Administrar grupos de roles en Exchange Online.
+Debe tener asignado el rol registros de auditoría con permiso de vista o registros de auditoría en Exchange Online para buscar en el registro de auditoría de 365 de Office. De forma predeterminada, estos roles se asignan a los grupos de roles administración de cumplimiento y administración de la organización en la página permisos del centro de administración de Exchange. Para dar a un usuario la capacidad de buscar el registro de auditoría de eDiscovery avanzado con el nivel mínimo de privilegios, puede crear un grupo de roles personalizado en Exchange Online, agregar el rol registros de auditoría con permiso de vista o registros de auditoría y, a continuación, agregar el usuario como miembro del nuevo grupo de roles. Para obtener más información, vea Administrar grupos de roles en Exchange Online.
 
 > [!IMPORTANT]
 > Si asigna a un usuario el rol registros de auditoría con permiso de vista o registros de auditoría en la página permisos del centro de seguridad & cumplimiento, estos no podrán buscar en el registro de auditoría de Office 365. Debe asignar los permisos en Exchange Online. Esto se debe a que el cmdlet subyacente usado para buscar en el registro de auditoría es un cmdlet de Exchange Online.
 
-## <a name="step-1-create-an-advanced-ediscovery-preview-audit-log-search"></a>Paso 1: crear una búsqueda avanzada de registros de auditoría de eDiscovery (vista previa)
+## <a name="step-1-search-the-audit-log-for-activities-performed-by-a-custodian"></a>Paso 1: buscar en el registro de auditoría las actividades realizadas por un custodio
 
-   1. Seleccione un caso existente en el **centro de seguridad _AMP_ cumplimiento de _GT_ Advanced eDiscovery (versión preliminar)**.
+1. Vaya a **eDiscovery _GT_ Advanced eDiscovery** y abra el caso.
+  
+2. Haga clic **** en la ficha custodios.
+  
+3. Seleccione un custodio de la lista y, a continuación, haga clic en **ver actividad** de custodios en la página de control flotante.
+
+    Se muestra la página de búsqueda de actividades de custodio. Nota el custodio que seleccionó en el paso anterior se muestra en el cuadro desplegable **custodio** . Puede seleccionar custodios diferentes en el cuadro desplegable, pero solo puede buscar actividades para un custodio a la vez.
+
+    ![Página de búsqueda de actividades de custodio](../media/AeDCustodianActivities1.png)
    
-   2. Navegue a la **** pestaña custodios y seleccione un custodio.
-   
-   3. Una vez que haya seleccionado un custodio, haga clic en  ![Ver la actividad de custodio](../media/ViewCustodianActivity.PNG)  en el panel de detalles.
-   
-   4. Configure los siguientes criterios de búsqueda:
+4. Configure los siguientes criterios de búsqueda:
       
-      a. **Actividades** : haga clic en la lista desplegable para mostrar las actividades que puede buscar. Después de ejecutar la búsqueda, solo se muestran los registros de auditoría de las actividades seleccionadas. Al seleccionar **Mostrar resultados para todas las actividades** , se mostrarán los resultados de todas las actividades que cumplan los otros criterios de búsqueda.
+   a. **Actividades** : haga clic en la lista desplegable para mostrar las actividades que puede buscar. Después de ejecutar la búsqueda, solo se muestran los registros de auditoría de las actividades seleccionadas. Al seleccionar **Mostrar resultados para todas las actividades** , se mostrarán los resultados de todas las actividades realizadas por el custodio que coinciden con los demás criterios de búsqueda.
 
       ![Lista de actividades](../media/CustodianActivityAudit.PNG)
       
@@ -103,4 +107,4 @@ Puede exportar los resultados de una búsqueda de registro de auditoría a un ar
 
 3. Después de seleccionar una opción de exportación, se muestra un mensaje en la parte inferior de la ventana donde se le pide que abra el archivo CSV, que lo guarde en la carpeta downloads o lo guarde en una carpeta específica
 
-Para obtener más información acerca de cómo ver, filtrar o exportar los resultados de la búsqueda de registros de auditoría, vea [Buscar en el registro de auditoría en el centro de seguridad _AMP_ cumplimiento de Office 365](../search-the-audit-log-in-security-and-compliance.md).
+Para obtener más información acerca de cómo ver, filtrar o exportar los resultados de la búsqueda de registros de auditoría, vea [Buscar en el registro de auditoría en el centro de seguridad _AMP_ cumplimiento](../search-the-audit-log-in-security-and-compliance.md).

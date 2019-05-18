@@ -3,7 +3,7 @@ title: Administrar el cifrado de mensajes de Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Una vez que haya terminado de configurar el cifrado de mensajes de Office 365 (OME), puede personalizar la configuración de la implementación de varias maneras. Por ejemplo, puede configurar si desea habilitar códigos de paso de una sola vez, mostrar el botón proteger en Outlook en la web y más. Las tareas de este artículo describen cómo hacerlo.
-ms.openlocfilehash: 1afaaea3cd744878630598acd3f02dc7dc70e9cb
-ms.sourcegitcommit: 865b3dc071150b20bf3967e1263fc54e75898284
+ms.openlocfilehash: 5c498c648fb28e6538bfc2fde8bdf50e8e02cbfc
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "33834929"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155752"
 ---
 # <a name="manage-office-365-message-encryption"></a>Administrar el cifrado de mensajes de Office 365
 

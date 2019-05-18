@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: En este artículo se describe la herramienta nueva investigación de datos (versión preliminar) en Microsoft 365.
-ms.openlocfilehash: 648f223c136007e88a3beb6b58e692b758b5d27f
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 200b1c6c08d0fdb1c4af5da59fa75836b4b1fab3
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258988"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150902"
 ---
 # <a name="release-notes-for-data-investigations-preview-in-microsoft-365"></a>Notas de la versión para investigaciones de datos (versión preliminar) en Microsoft 365
 
@@ -39,7 +39,7 @@ Puede usar la nueva herramienta de investigaciones de datos (vista previa) en en
 
 - **Censurar, etiquetar y anotar** : censurar texto, aplicar etiquetas y crear anotaciones mientras revisa documentos.
   
-- **IndizaCión avanzada** : si hay elementos parcialmente indizados, se volverán a indexar a petición para que todos los datos estén disponibles para la búsqueda.
+- **Indización avanzada** : si hay elementos parcialmente indizados, se volverán a indexar a petición para que todos los datos estén disponibles para la búsqueda.
 
 - **Corrección** de errores: corregir o descargar errores de procesamiento. Esto incluye compatibilidad con la corrección para tipos de archivo grandes, archivos protegidos con contraseña y otros problemas relacionados con los errores de indización. 
 

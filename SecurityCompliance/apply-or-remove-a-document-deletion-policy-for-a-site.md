@@ -4,7 +4,7 @@ ms.author: stephow
 author: stephow-msft
 manager: laurawi
 ms.date: 6/29/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: e3e92668-f9b2-46ee-8e5e-c623870588b6
 description: Las organizaciones suelen estar sujetas a normas de cumplimiento, leyes u otras regulaciones que las obligan a conservar sus documentos durante un período de tiempo. Sin embargo, conservar los documentos durante más tiempo de lo necesario puede exponer a la organización a riesgos de carácter legal. Por esta razón, su organización puede haber creado una directiva de eliminación de documentos para el sitio como, por ejemplo, en el caso de que los documentos empresariales de carácter general deban eliminarse cinco años después de su creación.
-ms.openlocfilehash: c00298a177ac405181ab2b2d9642b631e60a8a92
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: c826d6c9e163e79c4e72510e3362328ae902c80c
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32243311"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152292"
 ---
 # <a name="apply-or-remove-a-document-deletion-policy-for-a-site"></a>Aplicar o quitar una directiva de eliminación de documentos de un sitio
 
@@ -75,7 +75,7 @@ Como propietario del sitio o propietario de la colección de sitios, su organiza
     > [!NOTE]
     > El vínculo **directivas de eliminación de documentos** no aparecerá a menos que se hayan asignado directivas a la colección de sitios. Además, el vínculo no aparece inmediatamente después de que las directivas se hayan asignado al sitio: puede tardar hasta 24 horas desde el momento en que se asignan las directivas cuando aparece el vínculo **directivas de eliminación de documentos** . 
   
-3. Siga uno de los procedimientos siguientes:
+3. Realice una de las acciones siguientes:
     
   - **Para aplicar una directiva** Seleccione una directiva \> Seleccione una regla en esa directiva \> **Guardar**.
     

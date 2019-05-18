@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: e84f05fa1a7356952b62f2f4adc3b7d0f1ddc94e
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 781b0b749390b36ecdf391bff1089d6180e7c3d2
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258048"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150672"
 ---
 # <a name="review-the-data-in-evidence"></a>Revisar los datos de pruebas
 
-Los datos de un conjunto de evidencias en una investigación de datos son una instantánea de los resultados de búsqueda que se recopilaron y se agregaron al conjunto de evidencias. Cuando se agregan resultados de búsqueda a la evidencia, se desencadena un proceso para extraer los archivos, los metadatos y el texto de los elementos devueltos por la búsqueda. A continuación, la herramienta de investigación de datos (vista previa) crea un nuevo índice (por un proceso denominado " *indizaCión avanzada*") de todos los datos y agrega a un conjunto de evidencias en la pestaña **evidencia** . 
+Los datos de un conjunto de evidencias en una investigación de datos son una instantánea de los resultados de búsqueda que se recopilaron y se agregaron al conjunto de evidencias. Cuando se agregan resultados de búsqueda a la evidencia, se desencadena un proceso para extraer los archivos, los metadatos y el texto de los elementos devueltos por la búsqueda. A continuación, la herramienta de investigación de datos (vista previa) crea un nuevo índice (por un proceso denominado " *indización avanzada*") de todos los datos y agrega a un conjunto de evidencias en la pestaña **evidencia** . 
 
 Para las investigaciones sensibles al tiempo, esto permite incluir rápidamente el entorno al eliminar los datos reales derramados o malintencionados que se encuentran en el origen de datos original, a la vez que permite investigar la evidencia que se ha vuelto a crear en un entorno en cuarentena, que en este caso son los datos copiados al conjunto de evidencias. Una vez recopilada y agregada la evidencia al conjunto de evidencias, puede revisar documentos individuales en su formato nativo, formato de texto o un formato casi nativo que puede usar para anotar y censurar documentos. Además, puede ejecutar consultas para restringir el conjunto de datos por intervalo de tiempo, tipos de archivo, propietarios de datos y muchas otras propiedades y condiciones de búsqueda. Por ejemplo, mediante el uso de las condiciones de autor, remitente o destinatario, puede identificar rápidamente a las personas involucradas en el incidente y si los datos de la organización se han compartido con usuarios externos. Para obtener más información acerca de la búsqueda en datos en un conjunto de evidencias, vea [consultar los datos en evidencias](evidence-query.md).
 
@@ -63,7 +63,7 @@ El visor de texto proporciona una vista del texto extraído de un archivo. Omite
 
   - Buscar el resaltado de referencias que resalta los términos en el documento y en la barra de desplazamiento
 
-  - Una vista de diferencias proporciona una vista de comparación que resalta las diferencias de texto al ver los documentos mediante el panel de **duplicaDos Near** .
+  - Una vista de diferencias proporciona una vista de comparación que resalta las diferencias de texto al ver los documentos mediante el panel de **duplicados Near** .
 
 **Ejemplo de contador de línea y resaltado de búsqueda en el texto y en la barra de desplazamiento**
 

@@ -4,18 +4,18 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 12/9/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 125834f4-1024-4325-ad5a-d2573cfb005e
 description: En Microsoft Exchange Online Protection, puede usar el Centro de administración de Exchange (EAC) para convertir a un usuario en miembro de un o varios grupos de roles para asignarle permisos para hacer ciertas tareas administrativas. También puede quitar a un usuario de uno o varios grupos de roles usando el EAC.
-ms.openlocfilehash: aed32c8a9224bc60ef3e4a1ac9be9d797e61bda8
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 35f248bce26d28c8ab7465ff983629eb01db407b
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256148"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150162"
 ---
 # <a name="manage-admin-role-group-permissions-in-eop"></a>Administrar permisos de grupos de roles de administración en EOP
   

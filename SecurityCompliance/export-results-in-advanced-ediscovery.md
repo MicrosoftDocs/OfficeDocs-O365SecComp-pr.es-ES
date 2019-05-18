@@ -3,7 +3,7 @@ title: Exportar resultados en Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: a9951a07-10b3-48cb-b37a-0ffaa24931ad
 description: 'Obtenga información sobre cómo definir opciones para exportar resultados de eDiscovery avanzado de Office 365, incluido el procedimiento para especificar parámetros para un lote de exportación. '
-ms.openlocfilehash: a2528c3eab0bc9c06a592b972a3bc602174458d3
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: ad11ac742f3157811523164c7e4d063e1d101343
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255878"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152932"
 ---
 # <a name="export-results-in-office-365-advanced-ediscovery"></a>Exportar resultados en Office 365 Advanced eDiscovery
 
@@ -52,7 +52,7 @@ Puede ejecutar varias sesiones de exportación en un lote de exportación para g
   
 Para poder exportar con un conjunto de parámetros diferente, primero debe crear un nuevo lote. La primera sesión del nuevo lote producirá los resultados de los archivos procesados en el caso hasta el momento, de si estos archivos se importaron y procesaron en una o varias importaciones. Cada lote recalcula las tablas dinámicas, la similitud, los inclusivos, etc. Las sesiones usan los parámetros definidos para el lote y no recalculan las tablas dinámicas, similitudes, inclusivas, etc. para cada ejecución de sesión.
   
-Por ejemplo, supongamos que se ha importado un caso y se han analizado sus datos. Para recuperar los resultados Near-duplicados y subProcesos de correo electrónico para los datos incrementales, haga clic en **crear sesión de exportación** en el mismo lote que se usó previamente para exportar datos. 
+Por ejemplo, supongamos que se ha importado un caso y se han analizado sus datos. Para recuperar los resultados Near-duplicados y subprocesos de correo electrónico para los datos incrementales, haga clic en **crear sesión de exportación** en el mismo lote que se usó previamente para exportar datos. 
   
 ## <a name="set-up-batch-export-parameters"></a>Configurar parámetros de exportación de lote
 <a name="BK_SetUpExport"> </a>
@@ -183,10 +183,10 @@ En la siguiente tabla se enumeran los archivos de salida que se generan al ejecu
 |:-----|:-----|:-----|
 |Resumen de exportación  <br/> |CSV  <br/> |Un archivo de registro generado por la herramienta de exportación de exhibición de documentos electrónicos.  <br/> |
 |Seguimiento  <br/> |txt  <br/> |Un archivo de registro generado por la herramienta de exportación de exhibición de documentos electrónicos.  <br/> |
-|Archivos de texto exTraídos  <br/> |Carpeta de archivos  <br/> |Carpeta que contiene los archivos de texto extraídos de los archivos exportados.  <br/> |
+|Archivos de texto extraídos  <br/> |Carpeta de archivos  <br/> |Carpeta que contiene los archivos de texto extraídos de los archivos exportados.  <br/> |
 |Archivos de entrada o nativos  <br/> |Carpeta de archivos  <br/> |Carpeta que contiene los archivos nativos y de entrada de los archivos exportados.  <br/> |
-|Exportar lista  <br/> |xlsx  <br/> |Metadatos de archivos exPortados en formato xlsx. Los campos de los archivos se encuentran en función de la plantilla que el usuario selecciona para exportar. Si es necesario, se crean varios archivos, cada uno de los cuales contiene 100 150K filas. Si un valor determinado contiene más caracteres de los que puede contener una celda de Excel (actualmente, el límite es de 32.767 caracteres), el valor se recortará hasta la longitud máxima permitida. Si se recorta un valor, el color de fondo de la celda es rojo para indicarlo al usuario. " Los participantes del correo electrónico "son un ejemplo de un campo que puede superar el límite de longitud, si el correo electrónico se envió a una distribución grande. Consulte [exportar campos de informe](export-report-fields-in-advanced-ediscovery.md) para obtener más información sobre los campos de salida.  <br/> |
-|Cargar archivo  <br/> |CSV  <br/> |Metadatos de archivos exPortados en formato CSV para cargar en una aplicación diferente. Los campos de los archivos se encuentran en función de la plantilla que el usuario selecciona para exportar.  <br/> |
+|Exportar lista  <br/> |xlsx  <br/> |Metadatos de archivos exportados en formato xlsx. Los campos de los archivos se encuentran en función de la plantilla que el usuario selecciona para exportar. Si es necesario, se crean varios archivos, cada uno de los cuales contiene 100 150K filas. Si un valor determinado contiene más caracteres de los que puede contener una celda de Excel (actualmente, el límite es de 32.767 caracteres), el valor se recortará hasta la longitud máxima permitida. Si se recorta un valor, el color de fondo de la celda es rojo para indicarlo al usuario. " Los participantes del correo electrónico "son un ejemplo de un campo que puede superar el límite de longitud, si el correo electrónico se envió a una distribución grande. Consulte [exportar campos de informe](export-report-fields-in-advanced-ediscovery.md) para obtener más información sobre los campos de salida.  <br/> |
+|Cargar archivo  <br/> |CSV  <br/> |Metadatos de archivos exportados en formato CSV para cargar en una aplicación diferente. Los campos de los archivos se encuentran en función de la plantilla que el usuario selecciona para exportar.  <br/> |
 |Indicador de operación correcta  <br/> |txt  <br/> |Solo se crea al exportar a un BLOB de Azure de terceros. Si la exportación se realizó completamente, se creará el archivo. En caso de error, o parcialmente correcta, no se creará el archivo. El archivo se creará en la carpeta raíz, lo que permite el seguimiento automatizado en diferentes Estados de sesiones y lotes de exportación. Se trata de un archivo vacío. Su nombre es: TenantId_CaseId_ExternalCaseId_CaseName_ExportBatchId_SessionId_DateTime. txt.  <br/> |
    
 ## <a name="see-also"></a>Vea también

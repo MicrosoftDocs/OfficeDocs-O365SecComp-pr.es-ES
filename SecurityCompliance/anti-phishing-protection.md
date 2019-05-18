@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 10/11/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.custom: TopSMBIssues
 ms.collection:
 - M365-security-compliance
 description: Office 365 ofrece una amplia variedad de protección contra los ataques de suplantación de identidad de forma predeterminada y a través de ofertas adicionales como el antiphishing de ATP. En este tema se presentan los recursos en línea que se pueden usar para obtener información sobre cómo implementar las opciones y estrategias contra la suplantación de identidad (phishing) en Office 365.
-ms.openlocfilehash: cceae7d316d89325fa37688995555c9e449ac422
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: a002002967e3e529cada587f9b0bd29fa867e06e
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32242588"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155672"
 ---
 # <a name="anti-phishing-protection-in-office-365"></a>Protección contra suplantación de identidad (phishing) en Office 365
 
@@ -36,7 +36,7 @@ Lo más importante que puede hacer para proteger su entorno es educar a los usua
   
 Para las organizaciones de Office 365 con Office Enterprise E5, puede usar anti-phishing de ATP en &amp; el centro de seguridad y cumplimiento. ATP anti-phishing aplica un conjunto de modelos de aprendizaje automático junto con algoritmos de detección de suplantación a los mensajes entrantes para proporcionar protección para los ataques de suplantación de identidad (phishing) y de consumo. La protección contra el phishing de ATP protege a su organización de acuerdo con las directivas establecidas por los administradores globales o de seguridad de Office 365. Para obtener más información, consulte [ATP anti-phishing Capabilities in office 365](atp-anti-phishing.md) y [set up anti-phishing policies in Office 365](set-up-anti-phishing-policies.md).
   
-Para obtener más información acerca de cómo Office 365 está configurado de forma predeterminada para protegerle de ataques de suplantación de identidad (phishing), vea [Cómo office 365 valida la dirección de: para evitar la suplantaCión de identidad](how-office-365-validates-the-from-address.md).
+Para obtener más información acerca de cómo Office 365 está configurado de forma predeterminada para protegerle de ataques de suplantación de identidad (phishing), vea [Cómo office 365 valida la dirección de: para evitar la suplantación de identidad](how-office-365-validates-the-from-address.md).
   
 ## <a name="related-topics"></a>Temas relacionados
 

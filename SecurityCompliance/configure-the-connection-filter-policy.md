@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 10/24/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: 6ae78c12-7bbe-44fa-ab13-c3768387d0e3
 ms.collection:
 - M365-security-compliance
 description: Para asegurarse de que el correo electrónico enviado por personas de confianza no está bloqueado, puede usar la Directiva de filtro de conexión para crear una lista de permitidos, también conocida como lista de remitentes seguros, de las direcciones IP en las que confía. También puede crear una lista de remitentes bloqueados.
-ms.openlocfilehash: 5ca6ad6721ac03e5ae62b40dda219671bde3e1c1
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 5d19898b6baf01c7348b434f3caced202507c4d8
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32259018"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151302"
 ---
 # <a name="configure-the-connection-filter-policy"></a>Configurar la directiva de filtro de conexión
  

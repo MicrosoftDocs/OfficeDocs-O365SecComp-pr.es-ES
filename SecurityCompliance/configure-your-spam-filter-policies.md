@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 12/05/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
 description: La configuración básica del filtro de correo no deseado incluye seleccionar la acción que se va a realizar en los mensajes identificados como correo no deseado y elegir si se deben filtrar los mensajes escritos en idiomas específicos o enviados desde países o regiones específicos.
-ms.openlocfilehash: 5773256e18e1910405bcc04a1869f631734447a4
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 740da796d0e2215076bfe38120f98e349099a758
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258818"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151332"
 ---
 # <a name="configure-your-spam-filter-policies"></a>Configurar las directivas de filtro de correo no deseado
   

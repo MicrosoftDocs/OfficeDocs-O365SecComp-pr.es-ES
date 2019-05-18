@@ -4,7 +4,7 @@ ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de retención que conserva el contenido de Microsoft 365, puede optar por desencadenar una revisión de disposición al final del período de retención.
-ms.openlocfilehash: 1828f4055e9048260db7d16df8ad87db36438211
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 6d4a8993efb3046e7f79f4e76a921921abf6d3e6
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32257368"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153432"
 ---
 # <a name="overview-of-disposition-reviews"></a>Información general sobre las revisiones de disposición
 
@@ -130,6 +130,6 @@ Puede filtrar estas vistas por etiqueta de retención o intervalo de tiempo. Par
 
 Además, puede exportar los elementos en cualquiera de las vistas como un archivo. csv que se puede abrir en Excel.
   
-![Datos de disposición exPortados en Excel](media/08e3bc09-b132-47b4-a051-a590b697e725.png)
+![Datos de disposición exportados en Excel](media/08e3bc09-b132-47b4-a051-a590b697e725.png)
   
 

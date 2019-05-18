@@ -4,7 +4,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 4/23/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.collection:
 - o365_security_incident_response
@@ -14,19 +14,19 @@ localization_priority: Normal
 search.appverid:
 - MET150
 description: Aprenda a reconocer y corregir el consentimiento ilícito concede un ataque en Office 365.
-ms.openlocfilehash: 658183b3e5a3089425312ee14c6663485e0543ce
-ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
+ms.openlocfilehash: 5e89e6cb39c04b708ffe0a49a2cd41d6a775e4a4
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33402958"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150285"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants-in-office-365"></a>Detectar y solucionar la concesión de consentimiento ilegal en Office 365
 
 **Resumen**  Aprenda a reconocer y corregir el consentimiento ilícito concede un ataque en Office 365.
 
 ## <a name="what-is-the-illicit-consent-grant-attack-in-office-365"></a>¿Cuál es el ataque de concesión de consentimiento ilícito en Office 365?
-En un ataque de consentimiento ilícito, el atacante crea una aplicación registrada de Azure que solicita acceso a datos como la información de contacto, el correo electrónico o los documentos. A continuación, el atacante engaña a un usuario final para que conceda a esa aplicación el consentimiento para obtener acceso a sus datos mediante un ataque de suplantación de identidad o insertando código ilícito en un sitio web de confianza. Una vez que se ha concedido el consentimiento de la aplicación ilícita, tiene acceso de nivel de cuenta a los datos sin necesidad de una cuenta de la organización. Los pasos de corrección normales, como restablecer las contraseñas de las cuentas infringidas o requerir la autenticación multiFactor (MFA) en las cuentas, no son eficaces contra este tipo de ataque, ya que son aplicaciones de terceros y son externas a la organización. Estos ataques aprovechan un modelo de interacción que presupone que la entidad que llama a la información es la automatización y no es una persona.
+En un ataque de consentimiento ilícito, el atacante crea una aplicación registrada de Azure que solicita acceso a datos como la información de contacto, el correo electrónico o los documentos. A continuación, el atacante engaña a un usuario final para que conceda a esa aplicación el consentimiento para obtener acceso a sus datos mediante un ataque de suplantación de identidad o insertando código ilícito en un sitio web de confianza. Una vez que se ha concedido el consentimiento de la aplicación ilícita, tiene acceso de nivel de cuenta a los datos sin necesidad de una cuenta de la organización. Los pasos de corrección normales, como restablecer las contraseñas de las cuentas infringidas o requerir la autenticación multifactor (MFA) en las cuentas, no son eficaces contra este tipo de ataque, ya que son aplicaciones de terceros y son externas a la organización. Estos ataques aprovechan un modelo de interacción que presupone que la entidad que llama a la información es la automatización y no es una persona.
 
 ## <a name="what-does-an-illicit-consent-grant-attack-look-like-in-office-365"></a>¿Qué aspecto tiene un ataque ilegal de concesión de consentimiento en Office 365?
 Debe buscar en el **registro de auditoría** de Office 365 para encontrar signos, también denominados "indicadores de peligro" (IOC) de este ataque. Para las organizaciones con muchas aplicaciones registradas en Azure y una base de usuarios grande, el procedimiento recomendado es revisar las concesiones de consentimiento de las organizaciones cada semana.
@@ -83,7 +83,7 @@ La forma más sencilla de comprobar el ataque de consentimiento ilícito es ejec
 4. Conéctese a su directorio mediante el cmdlet [Connect-AzureAD](https://docs.microsoft.com/powershell/module/azuread/connect-azuread?view=azureadps-2.0) .
 5. Ejecute esta línea de comandos de PowerShell de la siguiente manera:`Get-AzureADPSPermissions.ps1 | Export-csv -path "Permissions.csv" -NoTypeInformation`
 
-La secuencia de comandos genera un archivo denominado perMissions. csv. Siga estos pasos para buscar concesiones de permisos de aplicaciones ilícitas: 
+La secuencia de comandos genera un archivo denominado Permissions. csv. Siga estos pasos para buscar concesiones de permisos de aplicaciones ilícitas: 
 1. En la columna ConsentType (Column G), busque el valor "AllPrinciples". El permiso AllPrincipals permite a la aplicación cliente obtener acceso al contenido de todo el inquilino. Las aplicaciones nativas de Office 365 necesitan este permiso para funcionar correctamente. Todas las aplicaciones que no sean de Microsoft con este permiso deben revisarse con cuidado.
 2.  En la columna permiso (columna F), revise los permisos que tiene cada aplicación delegada en el contenido. Busque el permiso "leer" y "escribir" o "*. All "permiso y revise estos detenidamente porque es posible que no sean apropiados.
 3.  Revise los usuarios específicos que tienen permisos concedidos. Si los usuarios de alto impacto o alto impacto tienen concedidos inadecuados, debe investigar más.

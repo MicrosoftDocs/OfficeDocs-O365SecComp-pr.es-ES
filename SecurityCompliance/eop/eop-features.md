@@ -4,18 +4,18 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 12/9/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 599b8048-1056-457b-aae4-c063138fd319
 description: La tabla siguiente proporciona una lista de las características que están disponibles en el servicio de filtrado de correo hospedado Exchange Online Protection.
-ms.openlocfilehash: 8eb6eafb7214938af302852e2726af3fcdbd44d3
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 9d408aed63027915b6d2ff3466bc629fa2a51236
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256698"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150352"
 ---
 # <a name="eop-features"></a>Características de EOP
 

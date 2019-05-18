@@ -3,17 +3,17 @@ title: RGPD para servidores de Office
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: pamgreen
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
 description: Obtenga información sobre cómo cumplir los requisitos de RGPD en los servidores de Office locales.
-ms.openlocfilehash: 9b1c7eb4313d1c33e273b6ac0d494c2359c40f00
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 3c6c7aa30d4d55262cef1edabc528d6644b340c1
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255768"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150112"
 ---
 # <a name="gdpr-for-office-on-premises-servers"></a>RGPD para servidores locales de Office
 
@@ -31,7 +31,7 @@ El Reglamento general de protección de datos (RGPD) presenta requisitos para qu
 
 -   [Uso compartido de archivos locales](gdpr-for-on-premises-file-shares.md)
 
-Para obtener más información sobre el RGPD y cómo puede ayudarle Microsoft, consulte el [Centro de confianza de Microsoft](https://www.microsoft.com/es-ES/TrustCenter/Privacy/gdpr/default.aspx).
+Para obtener más información sobre el RGPD y cómo puede ayudarle Microsoft, consulte el [Centro de confianza de Microsoft](https://www.microsoft.com/en-us/TrustCenter/Privacy/gdpr/default.aspx).
 
 Antes de realizar cualquier trabajo con los datos locales, consulte con sus equipos legales y de cumplimiento para buscar orientación y obtener información sobre los métodos de clasificación existentes para trabajar con datos personales y esquemas. Microsoft ofrece recomendaciones para desarrollar y ampliar esquemas de clasificación en el Kit de herramientas de detección de datos de RGPD de Microsoft en [http://aka.ms/gdprpartners](<http://aka.ms/gdprpartners>). Este kit de herramientas también describe métodos para mover datos locales a la nube donde puede usar funciones de gobierno de datos más complejas, si así lo desea. Los artículos de esta sección proporcionan recomendaciones para datos que se pretende que permanezcan en un entorno local.
 

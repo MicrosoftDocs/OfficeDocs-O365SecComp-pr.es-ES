@@ -3,7 +3,7 @@ title: Metodología de puntuación de cumplimiento
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El administrador de cumplimiento de Microsoft es una herramienta gratuita de evaluación de riesgos basada en flujos de trabajo en el portal de confianza de servicios de Microsoft. El administrador de cumplimiento le permite realizar un seguimiento, asignar y comprobar actividades de cumplimiento normativo relacionadas con los servicios en la nube de Microsoft.
-ms.openlocfilehash: 120aede52d67375f60145412f5d210509ac57581
-ms.sourcegitcommit: 696c1ed6b270be3f9da7395b49a7d8fec98e6db0
+ms.openlocfilehash: 5d59ef322fc9b5686d16230cb59ae141cd338090
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "33473221"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155262"
 ---
 # <a name="compliance-score-methodology-preview"></a>Metodología de puntuación de cumplimiento (versión preliminar)
 

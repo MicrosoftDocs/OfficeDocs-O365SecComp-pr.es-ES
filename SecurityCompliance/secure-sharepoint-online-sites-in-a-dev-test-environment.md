@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 04/09/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.collection:
 - Ent_O365
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 06af70f3-e7dc-4ee2-a385-fb4d61a5e93b
 description: 'Resumen: cree sitios de grupo de SharePoint Online en un entorno de desarrollo y pruebas, que pueden ser públicos, privados, confidenciales o extremadamente confidenciales.'
-ms.openlocfilehash: 8598c73c07c5e6bca1c429c30cd88772d8ca6697
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 743a008a1d445d63054888499a0a805e546a1a4c
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32260958"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158822"
 ---
 # <a name="secure-sharepoint-online-sites-in-a-devtest-environment"></a>Protección de sitios de SharePoint Online en un entorno de desarrollo y pruebas
 

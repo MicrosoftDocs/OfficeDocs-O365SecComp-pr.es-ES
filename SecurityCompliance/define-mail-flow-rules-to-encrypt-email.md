@@ -3,7 +3,7 @@ title: Definir reglas de flujo de correo para cifrar mensajes de correo electró
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden aprender a crear reglas de flujo de correo (reglas de transporte) para cifrar y descifrar mensajes mediante el cifrado de mensajes de Office 365.
-ms.openlocfilehash: 1f5b0ff9be5994f036d2367d0b15744c24f2bbe0
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 624219c3d974c0a9ab8004bb7b606264c5d0f8ee
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32257708"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150652"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages-in-office-365"></a>Definir reglas de flujo de correo para cifrar mensajes de correo electrónico en Office 365
 
@@ -67,7 +67,7 @@ Puede definir reglas de flujo de correo para desencadenar el cifrado de mensajes
 
    Por ejemplo, para aplicar la regla solo si el destinatario está fuera de **** la organización, seleccione **Agregar condición** y, a continuación, seleccione **el destinatario es externo o interno** \> **fuera de la organización** \> .
 
-8. Para habilitar el cifrado con las nuevas capacidades de OME, desde **haga lo siguiente**, seleccione **modificar la seguridad de los mensajes** y, a continuación, elija aplicar el cifraDo de **mensajes de Office 365 y la protección de derechos**. Seleccione una plantilla RMS de la lista, elija **Guardar**y, después, haga clic en **Aceptar**.
+8. Para habilitar el cifrado con las nuevas capacidades de OME, desde **haga lo siguiente**, seleccione **modificar la seguridad de los mensajes** y, a continuación, elija aplicar el cifrado de **mensajes de Office 365 y la protección de derechos**. Seleccione una plantilla RMS de la lista, elija **Guardar**y, después, haga clic en **Aceptar**.
   
   La lista de plantillas incluye todas las plantillas y opciones predeterminadas, así como las plantillas personalizadas que haya creado para su uso por parte de Office 365. Si la lista está vacía, asegúrese de haber configurado el cifrado de mensajes de Office 365 con las nuevas funciones, tal como se describe en [set up New Office 365 Message Encryption Capabilities](set-up-new-message-encryption-capabilities.md). Para obtener información sobre las plantillas predeterminadas, vea [Configuring and Managing templates for Azure Information Protection](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-templates). Para obtener información sobre **** la opción no reenviar, vea la opción no reenviar [para los correos electrónicos](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails). Para obtener información sobre la opción **solo cifrar** , vea la [opción cifrar solo para los correos electrónicos](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails).
 
@@ -85,7 +85,7 @@ Puede definir reglas de flujo de correo para desencadenar el cifrado de mensajes
 
 5. En la lista de reglas de flujo de correo, seleccione la regla que desea modificar para usar las nuevas funciones de OME y **** ![, a continuación](media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif), elija Editar icono Editar.
 
-6. Para habilitar el cifrado con las nuevas capacidades de OME, desde **haga lo siguiente**, elija **modificar la seguridad de los mensajes** y, a continuación, elija aplicar el cifraDo de **mensajes de Office 365 y la protección de derechos**. Seleccione una plantilla RMS de la lista, elija **Guardar** y, a continuación, elija **Aceptar**.
+6. Para habilitar el cifrado con las nuevas capacidades de OME, desde **haga lo siguiente**, elija **modificar la seguridad de los mensajes** y, a continuación, elija aplicar el cifrado de **mensajes de Office 365 y la protección de derechos**. Seleccione una plantilla RMS de la lista, elija **Guardar** y, a continuación, elija **Aceptar**.
 
    La lista de plantillas incluye todas las plantillas y opciones predeterminadas, así como las plantillas personalizadas que haya creado para su uso por parte de Office 365. Si la lista está vacía, asegúrese de haber configurado el cifrado de mensajes de Office 365 con las nuevas funciones, tal y como se describe en [configurar nuevas capacidades de cifrado de mensajes de office 365 que se basan en Azure Information Protection](set-up-new-message-encryption-capabilities.md). Para obtener información sobre las plantillas predeterminadas, vea [Configuring and Managing templates for Azure Information Protection](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-templates). Para obtener información sobre **** la opción no reenviar, vea la opción no reenviar [para los correos electrónicos](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails). Para obtener información sobre la opción **solo cifrar** , vea la [opción cifrar solo para los correos electrónicos](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails).
 
@@ -173,7 +173,7 @@ Cuando los usuarios de correo electrónico envían mensajes cifrados, los destin
 
 7. En **hacer lo siguiente**, seleccione **modificar la seguridad** \> **de los mensajes Quite la versión anterior de OME**.
 
-8. Seleccione **Guardar**.
+8. Haga clic en **Guardar**.
 
 #### <a name="use-exchange-online-powershell-to-create-a-rule-to-remove-encryption-from-email-replies-encrypted-without-the-new-ome-capabilities"></a>Usar Exchange Online PowerShell para crear una regla para quitar el cifrado de las respuestas de correo electrónico cifradas sin las nuevas funciones de OME
 

@@ -3,7 +3,7 @@ title: Exportar campos de informe en Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 840a5aff-ecd0-4e56-ad22-fe99bc143687
 description: Describe todos los campos que se incluyen en la exportación de informes para eDiscovery avanzada.
-ms.openlocfilehash: 36443f6aac70392603acfe6702bcc4fe7a4f4bf3
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 3e73cc1c106dfa98bd35f84c352fc89d0e45b74d
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255468"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154481"
 ---
 # <a name="export-report-fields-in-office-365-advanced-ediscovery"></a>Exportar campos de informe en Office 365 Advanced eDiscovery
 
@@ -119,7 +119,7 @@ En la tabla siguiente se enumeran los campos de cada plantilla de exportación.
 |Email_sensitivity  <br/> |Correo electrónico  <br/> |Propiedad Sensitivity email.  <br/> |No  <br/> |Sí  <br/> |
 |Export_batch  <br/> |Procesamiento  <br/> |Último nombre del lote de exportación del archivo.  <br/> |No  <br/> |Sí  <br/> |
 |Export_session  <br/> |Procesamiento  <br/> |Último identificador de sesión de exportación del archivo, incluida la fecha.  <br/> |No  <br/> |Sí  <br/> |
-|Extracted_text_length  <br/> |Procesamiento  <br/> |Longitud de caracteres del archivo de texto exTraído.  <br/> |No  <br/> |Sí  <br/> |
+|Extracted_text_length  <br/> |Procesamiento  <br/> |Longitud de caracteres del archivo de texto extraído.  <br/> |No  <br/> |Sí  <br/> |
 |Family_duplicate_set  <br/> |Procesamiento  <br/> |Identificador numérico de las familias que son duplicados de texto exactos (respectivamente, todos los miembros de las familias son duplicados exactos).  <br/> |No  <br/> |Sí  <br/> |
 |Has_Text  <br/> |Procesamiento  <br/> |Indica si hay un texto en el archivo: 0-no; 1: sí.  <br/> |No  <br/> |Sí  <br/> |
 |Input_file_ID  <br/> |Procesamiento  <br/> |IDENTIFICADOR del archivo de entrada desde el que se ha extraído el archivo.  <br/> |No  <br/> |Sí  <br/> |

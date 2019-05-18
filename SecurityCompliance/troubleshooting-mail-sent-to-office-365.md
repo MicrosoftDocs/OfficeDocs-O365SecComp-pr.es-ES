@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 5/2/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: troubleshooting
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: f4caa4e1-e414-4b21-8822-31c08064c059
 ms.collection:
 - M365-security-compliance
 description: En este artículo se proporciona información para solucionar problemas destinada a los remitentes que están teniendo problemas al intentar enviar correo electrónico a bandejas de entrada de Office 365 y prácticas recomendadas para el envío de correo masivo a clientes de Office 365.
-ms.openlocfilehash: ac465e7ef42b9cfeb2587481202fab1b5adb5f75
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: ecb5c407c793fa93bf6f64589531bb3cff3c3494
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265912"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158222"
 ---
 # <a name="troubleshooting-mail-sent-to-office-365"></a>Correo de solución de problemas enviado a Office 365
 

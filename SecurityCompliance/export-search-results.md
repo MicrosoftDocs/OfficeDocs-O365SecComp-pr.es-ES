@@ -3,7 +3,7 @@ title: Exportar resultados de la búsqueda de contenido
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.CustomizeExport
@@ -17,19 +17,19 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
-description: 'ExPorte los resultados de búsqueda de una búsqueda de contenido en el centro de seguridad & cumplimiento a un equipo local. Los resultados de correo electrónico se exportan como archivos PST. El contenido de SharePoint y los sitios de OneDrive para la empresa se exportan como documentos de Office nativos. '
-ms.openlocfilehash: 5d1baa57f466a5ef7657d92b517660e35b0036e8
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: 'Exporte los resultados de búsqueda de una búsqueda de contenido en el centro de seguridad & cumplimiento a un equipo local. Los resultados de correo electrónico se exportan como archivos PST. El contenido de SharePoint y los sitios de OneDrive para la empresa se exportan como documentos de Office nativos. '
+ms.openlocfilehash: deb777125f75f30a3d98d090c4427de8c5388800
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255518"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154552"
 ---
 # <a name="export-content-search-results"></a>Exportar resultados de la búsqueda de contenido
 
 Después de que una búsqueda de contenido se haya ejecutado correctamente, puede exportar los resultados de la búsqueda a un equipo local. Cuando exporta los resultados de correo electrónico, estos se descargan en su equipo como archivos PST. Al exportar contenido de sitios de SharePoint y OneDrive para la empresa, se exportan copias de documentos nativos de Office. Existen documentos e informes adicionales que se incluyen con los resultados de búsqueda exportados.
   
-Además, los mensajes de correo electrónico cifrados con RMS que se incluyan en los resultados de una búsqueda de contenido se descifrarán cuando los exporte (como mensajes individuales). Esta capacidad de descifrado está habilitada de forma predeterminada para los miembros del grupo de roles eDiscovery Manager. Esto se debe a que el rol de administración desCifrar RMS se asigna a este grupo de roles. Consulte la sección [More Information](#more-information) para obtener información detallada sobre el descifrado de RMS al exportar resultados de búsqueda. 
+Además, los mensajes de correo electrónico cifrados con RMS que se incluyan en los resultados de una búsqueda de contenido se descifrarán cuando los exporte (como mensajes individuales). Esta capacidad de descifrado está habilitada de forma predeterminada para los miembros del grupo de roles eDiscovery Manager. Esto se debe a que el rol de administración descifrar RMS se asigna a este grupo de roles. Consulte la sección [More Information](#more-information) para obtener información detallada sobre el descifrado de RMS al exportar resultados de búsqueda. 
   
 Exportar los resultados de una búsqueda de contenido implica preparar los resultados y, a continuación, descargarlos en un equipo local.
   
@@ -55,7 +55,7 @@ Exportar los resultados de una búsqueda de contenido implica preparar los resul
     
 - Cuando descargue los resultados de la búsqueda (descritos en el paso 2), puede aumentar la velocidad de descarga configurando una configuración del registro de Windows en el equipo que use para exportar los resultados de la búsqueda. Para obtener más información, consulte [aumentar la velocidad de descarga al exportar resultados de la búsqueda de exhibición de documentos electrónicos de Office 365](increase-download-speeds-when-exporting-ediscovery-results.md).
     
-- Cuando se exportan los resultados de búsqueda, los datos se almacenan temporalmente en una ubicación de almacenamiento de Microsoft Azure única en la nube de Microsoft antes de descargarlos en el equipo local. asegúrese de que su organización puede conectarse al extremo en Azure, que es ** \*. blob.core.windows.net** (el carácter comodín representa un identificador único para la exportación). Los datos de los resultados de la búsqueda se eliminan de la ubicación de almacenamiento de Azure dos semanas después de su creación. 
+- Cuando se exportan los resultados de búsqueda, los datos se almacenan temporalmente en una ubicación de almacenamiento de Microsoft Azure única en la nube de Microsoft antes de descargarlos en el equipo local. Asegúrese de que su organización puede conectarse al extremo en Azure, que es ** \*. BLOB.Core.Windows.net** (el carácter comodín representa un identificador único para la exportación). Los datos de los resultados de la búsqueda se eliminan de la ubicación de almacenamiento de Azure dos semanas después de su creación. 
     
 - Si su organización usa un servidor proxy para comunicarse con Internet, debe definir la configuración del servidor proxy en el equipo que use para exportar los resultados de la búsqueda (para que la herramienta de exportación pueda ser autenticada por el servidor proxy). Para ello, abra el archivo *Machine. config* en la ubicación que coincida con su versión de Windows. 
     
@@ -301,7 +301,7 @@ Aquí encontrará más información sobre cómo exportar los resultados de la b�
     
 - No puede obtener una vista previa de un mensaje de correo electrónico cifrado con RMS. Para ver un mensaje cifrado, tiene que exportarlo.
     
-- Si necesita impedir que alguien descifre mensajes cifrados con RMS, tendrá que crear un grupo de roles personalizado (copiando el grupo de roles integrado eDiscovery Manager) y, a continuación, quitar el rol de administración desCifrado de RMS del grupo de roles personalizado. A continuación, agregue la persona que no desea que descifre los mensajes como miembro del grupo de roles personalizado.
+- Si necesita impedir que alguien descifre mensajes cifrados con RMS, tendrá que crear un grupo de roles personalizado (copiando el grupo de roles integrado eDiscovery Manager) y, a continuación, quitar el rol de administración descifrado de RMS del grupo de roles personalizado. A continuación, agregue la persona que no desea que descifre los mensajes como miembro del grupo de roles personalizado.
   
  ### <a name="filenames-of-exported-items"></a>Nombres de archivo de los elementos exportados
   

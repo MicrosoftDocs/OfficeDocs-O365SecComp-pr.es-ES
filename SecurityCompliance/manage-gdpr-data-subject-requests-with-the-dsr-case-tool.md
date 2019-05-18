@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 5/25/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 ms.assetid: ce9eb942-3589-42cb-88fd-1576ecb09c5c
 description: El RGPD otorga a los ciudadanos de la UE (denominados "interesados en los datos) derechos específicos sobre sus datos personales; Estos derechos incluyen la obtención de copias del mismo, la solicitud de cambios, la restricción del procesamiento, la eliminación o la recepción del mismo en un formato electrónico. Una solicitud formal de un sujeto de datos para realizar una acción en sus datos personales se denomina solicitud de interesado o DSR. Puede usar casos de DSR en el centro de cumplimiento de Office 365 y Microsoft 365 para administrar las investigaciones de los DSR de su organización.
-ms.openlocfilehash: a131da86350fc288c1c9af371d28464230b742d6
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 644a604959d4063e5e7bd994bc9dfb57f8642081
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32259928"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155812"
 ---
 # <a name="manage-gdpr-data-subject-requests-with-the-dsr-case-tool-in-the-security--compliance-center"></a>Administración de solicitudes del interesado de RGPD con la herramienta de casos de DSR en el centro de cumplimiento de & de seguridad
 
@@ -297,10 +297,10 @@ Puede crear una búsqueda de contenido independiente (y asociarla con un caso de
   
 Al exportar datos de myanalytics y el servicio de itinerancia de Office, los datos se guardan en una carpeta independiente para cada aplicación que se encuentra en la carpeta **ApplicationDataRoot** , que se encuentra en una carpeta que es el nombre de la dirección de correo del interesado. Estos datos se exportan como archivos JSON, que son archivos de texto legibles, similares a los archivos XML o TXT, que se adjuntan a los mensajes de correo electrónico. Actualmente, estas carpetas se denominan con un identificador único global (GUID) que se asigna a myanalytics y al servicio de itinerancia de Office, que se enumeran en la siguiente tabla. En versiones futuras de la herramienta de casos DSR, el GUID se reemplazará por el nombre de la aplicación real. 
   
-|**Aplicación**|**GUID/nombre de carpeta**|
+|**Application**|**GUID/nombre de carpeta**|
 |:-----|:-----|
-|MyAnalytics  <br/> |3c896ded-22c5-450F-91f6-3d1ef0848f6e  <br/> |
-|Servicio de itinerancia de Office  <br/> |1caee58f-EB14-4a6b-9339-1fe2ddf6692b  <br/> |
+|MyAnalytics  <br/> |3c896ded-22c5-450f-91f6-3d1ef0848f6e  <br/> |
+|Servicio de itinerancia de Office  <br/> |1caee58f-eb14-4a6b-9339-1fe2ddf6692b  <br/> |
    
  **Para buscar y exportar myanalytics y datos del servicio de itinerancia de Office:**
   

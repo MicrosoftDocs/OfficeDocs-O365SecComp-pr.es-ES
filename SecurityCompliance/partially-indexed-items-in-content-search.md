@@ -3,8 +3,8 @@ title: Elementos parcialmente indizados en la búsqueda de contenido en Office 3
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 5/11/2018
-ms.audience: Admin
+ms.date: ''
+audience: Admin
 ms.topic: conceptual
 f1_keywords:
 - ms.o365.cc.UnindexedItemsLearnMore
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
 description: 'Obtenga información sobre los elementos sin indexar en Exchange y SharePoint que puede incluir en una búsqueda de contenido ejecutada a través del centro de seguridad & cumplimiento. '
-ms.openlocfilehash: 22eca4e56c21783db348f6569b73257a9cc53dab
-ms.sourcegitcommit: 0baa79a6e6fb72be488556607bc8c441642981a7
+ms.openlocfilehash: 7a5baa37abbade64ac77ed288afbb5389ac2295f
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/02/2019
-ms.locfileid: "33527658"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157452"
 ---
 # <a name="partially-indexed-items-in-content-search-in-office-365"></a>Elementos parcialmente indizados en la búsqueda de contenido en Office 365
 
@@ -141,7 +141,7 @@ Para obtener una lista de los límites de indización de documentos de SharePoin
     
 - Los mensajes protegidos con Information Rights Management (IRM) se indexan y se incluyen en los resultados de la búsqueda si coinciden con la consulta de búsqueda.
 
-## <a name="see-also"></a>Ver también
+## <a name="see-also"></a>Vea también
 
 [Investigar elementos indizados parcialmente en eDiscovery de Office 365](investigating-partially-indexed-items-in-ediscovery.md)
 

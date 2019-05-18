@@ -4,18 +4,18 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 10/12/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9a00b9ea-33fd-4772-8ea6-9d3c65e829e6
 description: Use el centro de seguridad & cumplimiento para crear suspensiones de eDiscovery y para tener acceso y administrar casos de eDiscovery en su organización.
-ms.openlocfilehash: 209f31187ad01ffa3e06cf8a5825c4538715fc7d
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 026bd31145dc73261012a9cde1b6befd19ddba4d
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32253128"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155862"
 ---
 # <a name="manage-ediscovery-cases-in-the-security--compliance-center"></a>Administrar casos de exhibición de documentos electrónicos en el Centro de seguridad y cumplimiento
 

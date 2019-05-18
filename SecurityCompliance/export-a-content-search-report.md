@@ -3,7 +3,7 @@ title: Exportar un informe de búsqueda de contenido
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.CustomizeExportReport
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 5c8c1db6-d8ac-4dbb-8a7a-f65d452169b9
 description: En lugar de exportar los resultados reales de una búsqueda de contenido en el centro de seguridad & cumplimiento en Office 365, puede simplemente exportar un informe de resultados de búsqueda. El informe contiene un resumen de los resultados de la búsqueda y un documento con información detallada sobre cada elemento que se exportará.
-ms.openlocfilehash: 57c8a9be5c53998570f6ff15a49df69e27745e26
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 8e33a7ba236e0890fc5985aa9a00cba904a40793
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255658"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154612"
 ---
 # <a name="export-a-content-search-report"></a>Exportar un informe de búsqueda de contenido
 
@@ -36,7 +36,7 @@ Al exportar un informe, se descarga en una carpeta que tiene el mismo nombre que
 
 - Para exportar un informe de búsqueda de contenido, debe tener asignado el rol de administración de búsqueda de cumplimiento en el centro de seguridad & cumplimiento. Este rol se asigna a los grupos de roles integrados administrador de eDiscovery y administración de la organización. No se asigna de forma predeterminada al grupo de roles de administración de la organización. Para obtener más información, consulte [asignar permisos de exhibición](assign-ediscovery-permissions.md)de documentos electrónicos.
     
-- Al exportar un informe, los datos se almacenan temporalmente en un área de almacenamiento única de Windows Azure en la nube de Microsoft antes de descargarlos en el equipo local. asegúrese de que su organización puede conectarse al extremo en Azure, que es ** \*. blob.core.windows.net** (el carácter comodín representa un identificador único para la exportación). Los datos de los resultados de la búsqueda se eliminan del área de Azure Storage dos semanas después de su creación. 
+- Al exportar un informe, los datos se almacenan temporalmente en un área de almacenamiento única de Windows Azure en la nube de Microsoft antes de descargarlos en el equipo local. Asegúrese de que su organización puede conectarse al extremo en Azure, que es ** \*. BLOB.Core.Windows.net** (el carácter comodín representa un identificador único para la exportación). Los datos de los resultados de la búsqueda se eliminan del área de Azure Storage dos semanas después de su creación. 
     
 - El equipo que use para exportar los resultados de búsqueda debe cumplir los siguientes requisitos del sistema:
     

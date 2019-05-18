@@ -1,10 +1,10 @@
 ---
-title: Notas de la versión para eDiscovery avanzado (versión preliminar)
+title: Notas de la versión para eDiscovery avanzado
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,29 +13,29 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Este artículo contiene las notas de la versión para eDiscovery avanzado (versión preliminar).
-ms.openlocfilehash: 32a02c16fd30e740fcc6e1c99b46775b97590a28
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: Este artículo contiene las notas de la versión para eDiscovery avanzado.
+ms.openlocfilehash: f3d26b1c84746581ccf32e1d4aada079fc21dfb3
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32240945"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154892"
 ---
-# <a name="release-notes-for-advanced-ediscovery-preview"></a>Notas de la versión para eDiscovery avanzado (versión preliminar)
+# <a name="release-notes-for-advanced-ediscovery"></a>Notas de la versión para eDiscovery avanzado
 
-El programa de vista previa pública para eDiscovery avanzado es la forma de obtener acceso anticipado a la próxima funcionalidad y actualizaciones. Para obtener acceso anticipado a las características más recientes, simplemente cree y use un caso de exhibición avanzada de documentos electrónicos (versión preliminar) en el centro de seguridad & cumplimiento de Office 365. Consulte [Create a New Case](create-new-ediscovery-case.md).
+El programa de vista previa pública para eDiscovery avanzado es la forma de obtener acceso anticipado a la próxima funcionalidad y actualizaciones. Para obtener acceso anticipado a las características más recientes, simplemente cree y use un caso de exhibición avanzada de documentos electrónicos en el centro de seguridad & cumplimiento. Consulte [Create a New Case](create-new-ediscovery-case.md).
 
 ## <a name="known-issues"></a>Problemas conocidos
 
 **Microsoft Forms**
 
-- Los datos correspondientes a un formulario creado antes del 31 de enero de 2019 no se podrán buscar al usar la herramienta de búsqueda en la exhibición avanzada de documentos electrónicos (versión preliminar) para buscar buzones de custodios. Los formularios creados después de esta fecha estarán disponibles para su búsqueda.
+- Los datos correspondientes a un formulario creado antes del 31 de enero de 2019 no se podrán buscar si se usa la herramienta de búsqueda en eDiscovery avanzado para buscar buzones de correo de custodios. Los formularios creados después de esta fecha estarán disponibles para su búsqueda.
 
-- Un formulario creado por un usuario puede seguir recibiendo respuestas incluso después de que se elimine el usuario que creó el formulario. Sin embargo, los datos correspondientes para las respuestas (que se produjeron después de que se eliminó el buzón de custodio) no se podrán buscar cuando se use la herramienta de búsqueda en eDiscovery avanzado (versión preliminar) para buscar buzones de correo de custodios.
+- Un formulario creado por un usuario puede seguir recibiendo respuestas incluso después de que se elimine el usuario que creó el formulario. Sin embargo, los datos correspondientes para las respuestas (que se produjeron después de que se eliminó el buzón de custodios) no se podrán buscar cuando se use la herramienta de búsqueda en eDiscovery avanzado para buscar buzones de correo de custodios.
  
 **Microsoft Sway**
 
-- Si un usuario edita un Sway justo antes de eliminar la cuenta de usuario para el propietario de ese Sway, es posible que los cambios no se puedan buscar al usar la herramienta de búsqueda en la exhibición avanzada de documentos electrónicos (versión preliminar) para buscar buzones de correo de custodios. Sway bloquea los cambios en un Sway tan pronto como recibe una señal de que la cuenta se eliminó. Sin embargo, hay una pequeña posibilidad de que se pueda editar un Sway antes de que se reciba esta señal.
+- Si un usuario edita un Sway justo antes de eliminar la cuenta de usuario para el propietario de ese Sway, es posible que estos cambios no se puedan buscar cuando use la herramienta de búsqueda en eDiscovery avanzado para buscar buzones de correo de custodios. Sway bloquea los cambios en un Sway tan pronto como recibe una señal de que la cuenta se eliminó. Sin embargo, hay una pequeña posibilidad de que se pueda editar un Sway antes de que se reciba esta señal.
 
 ## <a name="issues-fixed-in-this-release"></a>Problemas corregidos en esta versión
 
@@ -45,7 +45,7 @@ El programa de vista previa pública para eDiscovery avanzado es la forma de obt
 
 ## <a name="whats-new"></a>Novedades
 
-- **La navegación rediseñada en el centro de seguridad _AMP_ cumplimiento del** -Advanced EDiscovery (versión preliminar) tiene un aspecto nuevo. Use la exhibición avanzada de documentos electrónicos (versión preliminar) para administrar más el flujo de trabajo de casos.
+- **La navegación rediseñada en el centro de seguridad _AMP_ cumplimiento del** -Advanced eDiscovery tiene una nueva apariencia. Use la exhibición avanzada de documentos electrónicos para administrar más el flujo de trabajo de casos.
 
 - **Administración de casos** : hay compatibilidad adicional para nuevos tipos de casos. También puede seleccionar y guardar sus casos de reciente y favoritos. Seguimiento y supervisión de la actividad en y a través de los casos con nuevos paneles.
 
@@ -57,19 +57,19 @@ El programa de vista previa pública para eDiscovery avanzado es la forma de obt
 
 - **Portal de custodia** : nuevo portal para los custodios para acceder a sus avisos de espera activos.
 
-- **IndizaCión profunda** : vuelva a rastrear los elementos indexados parcialmente a petición.
+- **Indización profunda** : vuelva a rastrear los elementos indexados parcialmente a petición.
 
 - **Corrección** de errores: corregir o descargar errores de procesamiento; Esto incluye compatibilidad con la corrección para tipos de archivo grandes, archivos protegidos con contraseña y mucho más. 
 
 - **Mejoras en la búsqueda** : cree una búsqueda identificando los custodios o las ubicaciones.
 
-- **Conjuntos de trabajo** : administre, realice un seguimiento y audite conjuntos de documentos estáticos.
+- **Revisión** de los conjuntos: administrar, realizar un seguimiento y auditar conjuntos de documentos estáticos.
 
-- **Revisión** : Use una vista nativa, de texto y casi nativa para revisar los documentos agregados al conjunto de trabajo.
+- **Revisión** : Use una vista nativa, de texto y casi nativa para revisar los documentos agregados a su conjunto de revisión.
 
 - **Censurar, etiquetar y anotar** : censurar texto, aplicar etiquetas y crear anotaciones mientras revisa documentos.
   
-- **Revisión con tecnología de análisis**: aproveche el análisis de eDiscovery para buscar, buscar y deshacer resultados en un conjunto de trabajo.
+- **Revisión con tecnología de análisis**: aproveche el análisis de eDiscovery avanzado para buscar, buscar y deshacer resultados dentro de un conjunto de revisión.
 
 - **Trabajos** : seguimiento del estado de los procesos de ejecución prolongada.
 

@@ -4,18 +4,18 @@ ms.author: chrisda
 author: chrisda
 manager: serdars
 ms.date: 8/7/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f2738dec-41b0-43c4-b814-84c0a4e45c6d
 description: Los administradores pueden obtener información sobre el widget de flujo de correo entrante y saliente en el panel de flujo de correo en el centro de seguridad & cumplimiento.
-ms.openlocfilehash: 89408618e7c5b3c921382b3efa0257f263509b6d
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 629599f6a71c1b871abb819ae4cdd339ffa5e56b
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32252228"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158732"
 ---
 # <a name="outbound-and-inbound-mail-flow"></a>Flujo de correo entrante y saliente
 

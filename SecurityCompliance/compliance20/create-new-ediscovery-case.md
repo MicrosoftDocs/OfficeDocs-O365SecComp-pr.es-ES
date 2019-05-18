@@ -1,10 +1,10 @@
 ---
-title: Crear un nuevo caso en la exhibición avanzada de documentos electrónicos (versión preliminar)
+title: Crear un nuevo caso en eDiscovery avanzado
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,14 +14,14 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: b06c377c4841bce16e0121177665d1884497eaaa
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: afd5fe71bfc78f5a28fe9bd57ce305650337f331
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32244111"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151962"
 ---
-# <a name="create-a-new-case-in-advanced-ediscovery-preview"></a>Crear un nuevo caso en la exhibición avanzada de documentos electrónicos (versión preliminar)    
+# <a name="create-a-new-case-in-advanced-ediscovery"></a>Crear un nuevo caso en eDiscovery avanzado  
 
 1. Vaya a [https://protection.office.com](https://protection.office.com).
     
@@ -29,7 +29,7 @@ ms.locfileid: "32244111"
     
 3. En el centro de seguridad & cumplimiento, haga clic en exhibición de documentos electrónicos **_GT_ Advanced eDiscovery**.
  
-4. En la página exhibición avanzada de documentos electrónicos **(vista previa)** , haga clic en **crear un caso**.
+4. En la página **exhibición avanzada** de documentos electrónicos, haga clic en **crear un caso**.
     
 5. En la página nuevo elemento emergente de **exhibición** de documentos electrónicos, indique un nombre (obligatorio) y, a continuación, escriba un número de caso y una descripción opcionales. Tenga en cuenta que el nombre del caso debe ser único en su organización.
 
@@ -37,11 +37,11 @@ ms.locfileid: "32244111"
 
     - Haga clic en **sí** para crear el caso y mostrar la página de **configuración** en el nuevo caso. Esto permite agregar miembros al caso.
     
-    - Haga clic en **no** para crear el caso sólo y mostrarlo en la lista de casos de la página de exhibición avanzada de documentos electrónicos **(vista previa)** . Si elige esta opción, se agregará como el único miembro del caso y se usará la configuración predeterminada de búsqueda y análisis. Puede Agregar miembros o cambiar la configuración en cualquier momento después de crear el caso.
+    - Haga clic en **no** para crear el caso sólo y mostrarlo en la lista de casos de la página de **exhibición avanzada** de documentos electrónicos. Si elige esta opción, se agregará como el único miembro del caso y se usará la configuración predeterminada de búsqueda y análisis. Puede Agregar miembros o cambiar la configuración en cualquier momento después de crear el caso.
 
 7. Haga clic en **Guardar** para crear el caso.
 
-    El nuevo caso se muestra en la lista de casos de la página de exhibición avanzada de documentos electrónicos **(vista previa)** . 
+    El nuevo caso se muestra en la lista de casos de la página **exhibición avanzada** de documentos electrónicos. 
 
 8. Para abrir un caso, haga clic en el nombre del caso. 
 

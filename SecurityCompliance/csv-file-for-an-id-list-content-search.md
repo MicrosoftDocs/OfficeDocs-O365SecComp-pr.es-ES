@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 3/21/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,12 +12,12 @@ ms.collection: M365-security-compliance
 search.appverid: MOE150
 ms.assetid: 82c97bb4-2b64-4edc-804d-cedbda525d22
 description: Use el archivo Results. csv o unindexed items. csv de una búsqueda de contenido existente para crear una búsqueda de lista de IDENTIFICADOres que devuelva un mensaje de correo electrónico específico. Las búsquedas de listas de IDENTIFICADOres se usan normalmente para devolver elementos de buzón parcialmente indizados.
-ms.openlocfilehash: fc26f8dab11f1121deb11dd93b2cd0c70a1d629c
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 4b28032761961dcac03a15de216e29253f4ab430
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265472"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151152"
 ---
 # <a name="prepare-a-csv-file-for-an-id-list-content-search-in-office-365"></a>Preparar un archivo CSV para una búsqueda de contenido de la lista de IDENTIFICADOres en Office 365
 
@@ -27,7 +27,7 @@ A continuación se muestra una introducción rápida del proceso para crear una 
   
 1. Cree y ejecute una búsqueda de contenido nueva o guiada en el centro de seguridad & cumplimiento.
     
-2. Exportar los resultados de la búsqueda de contenido o exportar el informe de búsqueda de contenido. Para más información, visite:
+2. Exportar los resultados de la búsqueda de contenido o exportar el informe de búsqueda de contenido. Para obtener más información, vea:
     
     - [Exportar resultados de la búsqueda de contenido](export-search-results.md)
     

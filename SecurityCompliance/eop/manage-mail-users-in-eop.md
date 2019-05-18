@@ -4,18 +4,18 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 12/9/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: La definición de usuarios de correo es una parte importante de la administración del servicio de Protección en línea de Exchange (EOP).
-ms.openlocfilehash: 2e266d4dd31c3bd614c1b4f8afa17ca747890385
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 769ab13f99d7faae42bbdbed5b2b95bd37cfd55e
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256458"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150242"
 ---
 # <a name="manage-mail-users-in-eop"></a>Administrar usuarios de correo en EOP
 

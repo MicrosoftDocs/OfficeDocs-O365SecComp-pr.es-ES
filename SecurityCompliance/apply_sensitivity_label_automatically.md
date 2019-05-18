@@ -3,7 +3,7 @@ title: Aplicar automáticamente una etiqueta de confidencialidad al contenido
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.service: O365-seccomp
 localization_priority: Priority
 ms.collection:
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de confidencialidad, puede asignar automáticamente una etiqueta a un documento o correo electrónico, o bien puede pedir a los usuarios que seleccionen la etiqueta recomendada.
-ms.openlocfilehash: 0c5f37f945816d77ca57c0770b0f3a8a0bad5f2b
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 5b80107835c3ef684bb0b0964ba56fb75d4d15ae
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32243171"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152262"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Aplicar automáticamente una etiqueta de confidencialidad al contenido
 

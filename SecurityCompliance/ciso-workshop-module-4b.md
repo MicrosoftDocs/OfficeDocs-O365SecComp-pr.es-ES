@@ -3,19 +3,19 @@ title: 'Taller Director de seguridad de la información (CISO), módulo 4B: estr
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: tutorial
 ms.service: o365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Obtenga más información sobre los principios de seguridad y las recomendaciones para modernizar la seguridad de su organización.
-ms.openlocfilehash: bbe28d89280826202c9d338827ac2b1469c8a632
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: f5b296351ed0fe076f22c148487ed1044da3ae4f
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32243371"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152142"
 ---
 # <a name="ciso-workshop-module-4b-threat-protection-strategy"></a>CISO Workshop Module 4B: estrategia de protección contra amenazas 
 

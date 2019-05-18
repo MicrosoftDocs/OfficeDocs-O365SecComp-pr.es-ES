@@ -3,7 +3,7 @@ title: Administrar la auditoría de buzones de correo
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,232 +15,292 @@ search.appverid:
 - MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 description: El registro de auditoría de buzones de correo está activado de forma predeterminada en Microsoft 365 (también denominado auditoría de buzones de correo predeterminada o auditoría de buzones de correo de forma predeterminada). Esto significa que determinadas acciones realizadas por los propietarios de buzones de correo, los delegados y los administradores se registran automáticamente en un registro de auditoría de buzones de correo, donde puede buscar actividades realizadas en el buzón.
-ms.openlocfilehash: 38632798aedfa34ee7568a7038d5ff906888619c
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 8e5901586b6ee8e34d3e71b0b256f9aa7c86c7de
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256988"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154782"
 ---
 # <a name="manage-mailbox-auditing"></a>Administrar la auditoría de buzones de correo
-  
-A partir de enero 2019, Microsoft activa el registro de auditoría de buzones de correo de forma predeterminada para todas las organizaciones de Microsoft 365. Esto significa que se registran automáticamente determinadas acciones realizadas por los propietarios de buzones de correo, los delegados y los administradores, y los registros de auditoría de buzones correspondientes estarán disponibles cuando los busque en el registro de auditoría de buzones de correo. Antes de que se activara la auditoría de buzones de correo de forma predeterminada, tenía que habilitarla manualmente para cada buzón de usuario de la organización. 
+
+A partir de enero 2019, Microsoft activa el registro de auditoría de buzones de correo de forma predeterminada para todas las organizaciones de Microsoft 365. Esto significa que se registran automáticamente determinadas acciones realizadas por los propietarios de buzones de correo, los delegados y los administradores, y los registros de auditoría de buzones correspondientes estarán disponibles cuando los busque en el registro de auditoría de buzones de correo. Antes de que se activara la auditoría de buzones de correo de forma predeterminada, tenía que habilitarla manualmente para cada buzón de usuario de la organización.
 
 Estas son algunas de las ventajas de la auditoría de buzones de correo de forma predeterminada:
 
-- La auditoría se habilitará de forma predeterminada al crear un nuevo buzón. No tendrá que habilitarlo manualmente para los nuevos usuarios. 
+- La auditoría se habilita automáticamente cuando se crea un nuevo buzón de correo. No es necesario habilitarlo manualmente para los nuevos usuarios.
 
-- No tendrá administrar las acciones de buzón de correo que se auditan. Un conjunto definido de acciones de buzón se audita de forma predeterminada para cada tipo de inicio de sesión. Estos [tipos de inicio de sesión](#mailbox-actions-logged-by-default) son propietario, delegado y administrador.
+- No es necesario administrar las acciones de buzón de correo que se auditan. De forma predeterminada, se audita un conjunto predefinido de acciones de buzón para cada tipo de inicio de sesión (Administrador, delegado y propietario).
 
-- Las nuevas acciones de buzón de correo que Microsoft publica se auditarán de forma predeterminada. Cuando Microsoft lance una nueva acción de buzón (especialmente para ayudar a proteger su organización y ayudar con las investigaciones forenses), se agregará automáticamente a la lista de acciones de buzón auditada de forma predeterminada. Esto significa que no es necesario agregar nuevas acciones a la lista de acciones de buzón de correo realizadas por los propietarios, los delegados o los administradores. 
+- Cuando Microsoft lanza una nueva acción de buzón (especialmente acciones que ayudan a proteger la organización y ayuda con las investigaciones forenses), la acción se agrega automáticamente a la lista de acciones de buzón de correo que se auditan de forma predeterminada. Esto significa que no es necesario supervisar agregar nuevas acciones en los buzones de correo.
 
-- Asegúrese de que está auditando las mismas acciones para todos los buzones de correo para que tenga una directiva de auditoría de buzones de correo coherente en toda la organización.
+- Tiene una directiva de auditoría de buzones de correo coherente en toda la organización (porque está auditando las mismas acciones para todos los buzones de correo).
 
 > [!TIP]
-> Lo más importante que debe recordar es que, con la publicación de la auditoría de buzones de correo en de forma predeterminada, no tiene que hacer nada para administrar la auditoría de buzones de correo. Sin embargo, si desea obtener más información, cambiar el comportamiento de la configuración predeterminada o desactivarla a la vez, este artículo puede serle útil.
+> Lo importante que debe recordar sobre la publicación de la auditoría de buzones de forma predeterminada es: no es necesario realizar ninguna acción para administrar la auditoría de buzones de correo. Sin embargo, para obtener más información, personalizar la auditoría de buzones de correo de la configuración predeterminada o desactivarla a la vez, este tema puede ayudarle.
 
 ## <a name="verify-mailbox-auditing-on-by-default-is-turned-on"></a>Comprobar que la auditoría de buzones de correo está activada de forma predeterminada
 
 Para comprobar que la auditoría de buzones de correo está activada de forma predeterminada para su organización, ejecute el siguiente comando en [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell):
 
 ```
-Get-OrganizationConfig | FL AuditDisabled
-``` 
+Get-OrganizationConfig | Format-List AuditDisabled
+```
 
-Un valor de **false** indica que la auditoría de buzones de correo está habilitada de forma predeterminada para su organización. 
+El valor **false** indica que la auditoría de buzones de correo está habilitada de forma predeterminada para la organización. Este valor de organización de activado de forma predeterminada invalida la configuración de auditoría de buzones de correo en determinados buzones. Por ejemplo, si la auditoría de buzones de correo está deshabilitada para un buzón de correo (la propiedad *AuditEnabled* es **false** en el buzón), las acciones de buzón predeterminadas se auditarán para el buzón, ya que la auditoría de buzones activada de forma predeterminada para el Organization.
 
-Cuando la auditoría de buzones de correo está activada de forma predeterminada (cuando la propiedad *AuditDisabled* está establecida en **false**), la configuración de la organización invalidará la configuración de auditoría de buzones de correo para un buzón específico. Por ejemplo, si la propiedad *AuditEnabled* de un buzón se establece en **false**, pero la auditoría de buzones de correo está habilitada de forma predeterminada para su organización, se auditarán las acciones del buzón predeterminadas para ese buzón. Si la auditoría de buzones de correo se deshabilitó explícitamente para un buzón específico y desea deshabilitarla, puede configurar el desvío de la auditoría de buzones para el propietario del buzón y otros usuarios a los que se les ha delegado acceso al buzón. Para obtener más información, vea la sección omitir el [registro de auditoría](#bypass-mailbox-audit-logging) de buzones en este artículo.
+Para mantener la auditoría de buzones de correo deshabilitada para buzones específicos, configure el desvío de auditoría de buzón para el propietario del buzón y otros usuarios a los que se les ha delegado acceso al buzón. Para obtener más información, vea la sección omitir el [registro de auditoría](#bypass-mailbox-audit-logging) de buzones en este tema.
 
 > [!NOTE]
-> Cuando la auditoría de buzones de correo está activada de forma predeterminada, la propiedad *AuditEnabled* de un buzón no cambiará a **true** si se estableció actualmente en **false**. Es decir, la auditoría de buzones activada de forma predeterminada omite la propiedad *AuditEnabled* de un buzón de correo.
+> Cuando la auditoría de buzones de correo está activada de forma predeterminada para la organización, la propiedad *AuditEnabled* de los buzones afectados no cambiará de **falso** a **verdadero**. Es decir, la auditoría de buzones activada de forma predeterminada omite la propiedad *AuditEnabled* en los buzones de correo.
 
 ## <a name="supported-mailbox-types"></a>Tipos de buzones admitidos
 
 En la siguiente tabla se muestran los tipos de buzones actualmente compatibles con la auditoría de buzones de correo de forma predeterminada:
 
-|Tipo de buzón|Compatible|No admitido|
+|**Tipo de buzón**|**Admitido**|**No admitido**|
 |:---------|:---------:|:---------:|
-|Buzones de usuario    |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)       |         |
-|Buzones compartidos    |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)        |       |
-|Buzones de grupo de Office 365    |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)         |         |
-|Buzones de recursos    |      |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)        |
-|Buzones de carpetas públicas    |       |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)  |
-||||
+|Buzones de usuario|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+|Buzones compartidos|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+|Buzones de grupo de Office 365|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+|Buzones de recursos||![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|Buzones de carpetas públicas||![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
 
-## <a name="mailbox-actions-logged-by-default"></a>Acciones de buzón registradas de forma predeterminada
+## <a name="logon-types-and-mailbox-actions"></a>Tipos de inicio de sesión y acciones de buzón
 
-De forma predeterminada, se registra un conjunto de acciones de buzón para cada uno de los siguientes tipos de inicio de sesión:  
+Los tipos de inicio de sesión clasifican al usuario que llevó a cabo las acciones auditadas en el buzón. En la siguiente lista se describen los tipos de inicio de sesión que se usan en el registro de auditoría de buzones:
 
-   - **Owner** -el propietario del buzón. 
-   
-   - **Delegado** : otro usuario al que se ha asignado el permiso sendas, SendOnBehalf o FullAccess al buzón de una persona. Tenga en cuenta que un administrador al que se haya asignado el permiso FullAccess en el buzón de un usuario también se considera un usuario delegado.
-   
-    - **Admin** : se considera que un tipo de inicio de sesión de administrador tiene acceso a los buzones de correo solo en los siguientes escenarios:
-    
-       - Cuando se busca un buzón de correo con una de las siguientes herramientas de eDiscovery de Microsoft: 
+- **Owner**: el propietario del buzón (la cuenta que está asociada con el buzón de correo).
 
-         - Búsqueda de contenido en el centro de cumplimiento.
-       
-         -  eDiscovery o exhibición avanzada de documentos electrónicos en el centro de cumplimiento.
-       
-         - Exhibición de documentos electrónicos local en Exchange Online.
-       - Cuando se usa [Microsoft Exchange Server MAPI editor](https://go.microsoft.com/fwlink/p/?linkId=204086) para obtener acceso al buzón.     
+- **Delegado**:
 
-En la siguiente tabla se enumeran las acciones de buzón que se registran de forma predeterminada para cada tipo de inicio de sesión.
+  - Un usuario al que se le haya asignado el permiso sendas, SendOnBehalf o FullAccess a otro buzón de correo.
 
-|Acciones de administración|Acciones de delegado|Acciones del propietario|
-|:---------|:---------|:---------|
-|Crear    |Crear       | HardDelete        |
-|HardDelete    |HardDelete        |MoveToDeletedItems       |
-|MoveToDeletedItems    |MoveToDeletedItems         |SoftDelete         |
-|SendAs    |SendAs      |    Update     |
-|SendOnBehalf    |SendOnBehalf       |UpdateCalendarDelegation        |
-|SoftDelete     |SoftDelete      | UpdateFolderPermissions        |
-|Update    |Update       |UpdateInboxRules         |
-|UpdateCalendarDelegation    | UpdateFolderPermissions        |         |
-|UpdateFolderPermissions     | UpdateInboxRules        |         |
-|UpdateInboxRules     |         |         |
-||||
+  - Un administrador al que se haya asignado el permiso FullAccess en el buzón de un usuario.
 
-Estas son las descripciones de estas acciones de buzón. 
+- **Administrador**:
 
-|Acción del buzón|Descripción|
-|:---------|:---------|
-|**Create** <br/> |Se ha creado un elemento en la carpeta calendario, contactos, notas o tareas del buzón de correo; por ejemplo, se crea una nueva convocatoria de reunión. Tenga en cuenta que no se audita la creación, el envío o la recepción de un mensaje. Además, no se audita la creación de una carpeta de buzón de correo.  <br/> |
-|**HardDelete** <br/> |Un mensaje se purgó de la carpeta Elementos recuperables.  <br/> |
-|**MoveToDeletedItems** <br/> |Un mensaje se eliminó y se movió a la carpeta Elementos eliminados.  <br/> |
-|**SendAs** <br/> |Un mensaje se envió mediante el permiso SendAs. Esto significa que otro usuario envió el mensaje como si procediera del propietario del buzón.  <br/> |
-|**SendOnBehalf** <br/> |Un mensaje se envió mediante el permiso SendOnBehalf. Esto significa que otro usuario envió el mensaje en nombre del propietario del buzón. El mensaje indica el destinatario en nombre de quien se envió el mensaje y quién lo envió realmente.  <br/> |
-|**SoftDelete** <br/> |Un mensaje se eliminó permanentemente o se eliminó de la carpeta Elementos eliminados. Los elementos eliminados de forma temporal se mueven a la carpeta Elementos recuperables.  <br/> |
-|**Actualización** <br/> |Se cambió un mensaje o sus propiedades.  <br/> |
-|**UpdateCalendarDelegation** <br/> |Se asignó una delegación de calendario a un buzón. La delegación de calendario da a otra persona en la misma organización permisos para administrar el calendario del propietario del buzón.  <br/> |
-|**UpdateFolderPermissions** <br/> |Se ha cambiado un permiso de carpeta. Los permisos de carpeta controlan qué usuarios de la organización pueden tener acceso a las carpetas de un buzón de correo y los mensajes que se encuentran en dichas carpetas.  <br/> |
-|**UpdateInboxRules** <br/> |Se ha agregado, quitado o cambiado una regla de bandeja de entrada. Las reglas de la bandeja de entrada se usan para procesar mensajes en la bandeja de entrada del usuario en función de las condiciones especificadas y emprender acciones cuando se cumplen las condiciones de una regla, como mover un mensaje a una carpeta especificada o eliminar un mensaje.  <br/> |
-|||
+  - El buzón de correo se busca con una de las siguientes herramientas de eDiscovery de Microsoft:
 
-Para obtener una lista completa de las acciones de buzón de correo, incluidas las que están disponibles pero que no se incluyen en el conjunto de acciones predeterminadas, vea la sección [acciones de auditoría](#mailbox-auditing-actions) de buzones de este artículo.
+    - Búsqueda de contenido en el centro de cumplimiento.
+
+    - eDiscovery o exhibición avanzada de documentos electrónicos en el centro de cumplimiento.
+
+    - Exhibición de documentos electrónicos local en Exchange Online.
+
+  - Se obtiene acceso al buzón con [Microsoft Exchange Server MAPI editor](https://go.microsoft.com/fwlink/p/?linkId=204086).
+
+### <a name="mailbox-actions-for-user-mailboxes-and-shared-mailboxes"></a>Acciones de buzón de correo para buzones de usuario y buzones compartidos
+
+En la tabla siguiente se describen las acciones de buzón de correo que están disponibles en el registro de auditoría de buzones para buzones de usuario y buzones compartidos.
+
+- Una marca de verificación ( ![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)) indica que la acción del buzón se puede registrar para el tipo de inicio de sesión (no todas las acciones están disponibles para todos los tipos de inicio de sesión).
+
+- Un asterisco ( <sup>\*</sup> ) después de la marca de verificación indica que la acción del buzón se registra de forma predeterminada para el tipo de inicio de sesión.
+
+- Recuerde que un administrador con permiso de acceso total a un buzón de correo se considera un delegado.
+
+|**Acción del buzón**|**Descripción**|**Administrador**|**Delegado**|**Propietario**|
+|:---------|:---------|:---------:|:---------:|:---------:|
+|**AddFolderPermissions**|**Nota**: aunque este valor se acepta como una acción de buzón de correo, ya está incluido en la acción **UpdateFolderPermissions** y no se audita por separado. Es decir, no use este valor.||||
+|**ApplyRecord**|Un elemento se etiqueta como registro.|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|**Copiar**|Un mensaje se copió en otra carpeta.|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
+|**Create**|Se ha creado un elemento en la carpeta calendario, contactos, notas o tareas del buzón de correo (por ejemplo, se crea una nueva convocatoria de reunión). Tenga en cuenta que no se audita la creación, el envío o la recepción de un mensaje. Además, no se audita la creación de una carpeta de buzón de correo.|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|**FolderBind**|Se tuvo acceso a una carpeta de buzón de correo. Esta acción también se registra cuando el administrador o un delegado abren el buzón de correo.<br/><br/> **Nota**: los registros de auditoría para las acciones de enlace de carpeta realizadas por los delegados están consolidados. Se genera un registro de auditoría para el acceso a la carpeta individual en un período de 24 horas.|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)||
+|**HardDelete**|Un mensaje se purgó de la carpeta Elementos recuperables.|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
+|**MailboxLogin**|El usuario ha iniciado sesión en su buzón. |||![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|**MessageBind**|**Nota**: esta acción se ha dejado de estar en desuso de Exchange Online y ya no está disponible para agregarla a la lista de acciones de buzón de administración.<br/><br/> Un mensaje se consultó en el panel de vista previa o se abrió.|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|||
+|**ModifyFolderPermissions**|**Nota**: aunque este valor se acepta como una acción de buzón de correo, ya está incluido en la acción **UpdateFolderPermissions** y no se audita por separado. Es decir, no use este valor.||||
+|**Mover**|Un mensaje se movió a otra carpeta.|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|**MoveToDeletedItems**|Un mensaje se eliminó y se movió a la carpeta Elementos eliminados.|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
+|**RecordDelete**|Un elemento etiquetado como registro se eliminó de forma Soft (se movió a la carpeta elementos recuperables). Los elementos etiquetados como registros no se pueden eliminar de forma permanente (se purgan de la carpeta elementos recuperables).|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)|
+|**RemoveFolderPermissions**|**Nota**: aunque este valor se acepta como una acción de buzón de correo, ya está incluido en la acción **UpdateFolderPermissions** y no se audita por separado. Es decir, no use este valor.||||
+|**SendAs**|Un mensaje se envió mediante el permiso SendAs. Esto significa que otro usuario envió el mensaje como si procediera del propietario del buzón.|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||
+|**SendOnBehalf**|Un mensaje se envió mediante el permiso SendOnBehalf. Esto significa que otro usuario envió el mensaje en nombre del propietario del buzón. El mensaje indica el destinatario en nombre de quien se envió el mensaje y quién lo envió realmente.|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||
+|**SoftDelete**|Un mensaje se eliminó permanentemente o se eliminó de la carpeta Elementos eliminados. Los elementos eliminados de forma temporal se mueven a la carpeta Elementos recuperables.|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
+|**Update**|Se cambió un mensaje o sus propiedades.|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
+|**UpdateCalendarDelegation**|Se asignó una delegación de calendario a un buzón. La delegación de calendario da a otra persona en la misma organización permisos para administrar el calendario del propietario del buzón.|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
+|**UpdateFolderPermissions**|Se ha cambiado un permiso de carpeta. Los permisos de carpeta controlan qué usuarios de la organización pueden tener acceso a las carpetas de un buzón de correo y los mensajes que se encuentran en dichas carpetas.|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
+|**UpdateInboxRules**|Se ha agregado, quitado o cambiado una regla de bandeja de entrada. Las reglas de la bandeja de entrada se usan para procesar mensajes en la bandeja de entrada del usuario en función de las condiciones especificadas y emprender acciones cuando se cumplen las condiciones de una regla, como mover un mensaje a una carpeta especificada o eliminar un mensaje.|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 
 > [!IMPORTANT]
-> Si ha configurado explícitamente las acciones de buzón de correo para auditar cualquier tipo de inicio de sesión antes de auditar el buzón de correo activado de forma predeterminada para la organización, la configuración existente del buzón de correo tendrá prioridad y no se sobrescribirá con el buzón predeterminado acciones descritas en esta sección. Si en cualquier momento desea volver a las acciones predeterminadas del buzón de correo, puede hacerlo ejecutando el comando **set-Mailbox-DefaultAuditSet** . Para obtener más información acerca de cómo hacerlo, consulte la sección [restaurar las acciones del buzón de correo](#restore-the-default-mailbox-actions) predeterminadas de este artículo.
+> Si ha personalizado las acciones de buzón de correo para auditar cualquier tipo de inicio de sesión *antes* de que la auditoría de buzones de correo esté habilitada de forma predeterminada en la organización, la configuración personalizada se conserva en el buzón y las acciones predeterminadas del buzón de correo no las sobrescriben como describe en esta sección. Para revertir las acciones de auditoría del buzón a sus valores predeterminados (lo que puede hacer en cualquier momento), vea la sección [restaurar acciones del buzón predeterminado](#restore-the-default-mailbox-actions) más adelante en este tema.
+
+### <a name="mailbox-actions-for-office-365-group-mailboxes"></a>Acciones de buzón para los buzones de grupo de Office 365
+
+La auditoría de buzones de correo de forma predeterminada incorpora el registro de auditoría de buzones a los buzones de grupo de Office 365, pero no se puede personalizar lo que se está registrando (no se pueden agregar ni quitar acciones de buzón que se registran para cualquier tipo de inicio de sesión).
+
+En la tabla siguiente se describen las acciones de buzón que se registran de forma predeterminada en los buzones de grupo de Office 365 para cada tipo de inicio de sesión.
+
+Recuerde que un administrador con permiso de acceso total a un buzón de grupo de Office 365 se considera un delegado.
+
+|**Acción del buzón**|**Descripción**|**Administrador**|**Delegado**|**Propietario**|
+|:---------|:---------|:---------:|:---------:|:---------:|
+|**Create**|Creación de un elemento de calendario. Tenga en cuenta que no se audita la creación, el envío o la recepción de un mensaje.|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||
+|**HardDelete**|Un mensaje se purgó de la carpeta Elementos recuperables.|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
+|**MoveToDeletedItems**|Un mensaje se eliminó y se movió a la carpeta Elementos eliminados.|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
+|**SendAs**|Un mensaje se envió mediante el permiso SendAs.|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||
+|**SendOnBehalf**|Un mensaje se envió mediante el permiso SendOnBehalf. |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>||
+|**SoftDelete**|Un mensaje se eliminó permanentemente o se eliminó de la carpeta Elementos eliminados. Los elementos eliminados de forma temporal se mueven a la carpeta Elementos recuperables.|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
+|**Update**|Se cambió un mensaje o sus propiedades.|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)<sup>\*</sup>|
 
 ### <a name="verify-that-default-mailbox-actions-are-being-logged-for-each-logon-type"></a>Compruebe que se registran las acciones predeterminadas del buzón para cada tipo de inicio de sesión
 
-Con la publicación de la auditoría de buzones de correo activada de forma predeterminada, se ha agregado una nueva propiedad de buzón denominada *DefaultAuditSet* . Esta propiedad indica si las acciones predeterminadas del buzón (administradas por Microsoft) se están auditando para cada tipo de inicio de sesión de un buzón especificado. Puede ejecutar el siguiente comando para mostrar los valores de esta propiedad:
+La auditoría de buzones de correo en de forma predeterminada agrega una nueva propiedad *DefaultAuditSet* a todos los buzones. El valor de esta propiedad indica si las acciones del buzón de correo predeterminadas (administradas por Microsoft) se están auditando en el buzón.
+
+Para mostrar el valor de los buzones de usuario o los buzones \<compartidos, reemplace MailboxIdentity\> por el nombre, el alias, la dirección de correo electrónico o el nombre principal de usuario (username) del buzón y ejecute el siguiente comando en Exchange Online PowerShell:
 
 ```
-Get-Mailbox <username> | FL DefaultAuditSet
+Get-Mailbox -Identity <MailboxIdentity> | Format-List DefaultAuditSet
 ```
 
-Un valor de `Admin, Delegate, Owner` indica que las acciones predeterminadas del buzón de los tres tipos de inicio de sesión se están auditando y que un administrador de la organización *no ha* cambiado las acciones de ningún tipo de inicio de sesión. Nota: este es el estado predeterminado después de que la auditoría de buzones de correo está activada de forma predeterminada en la organización. 
-
-Si un administrador de su organización ha cambiado las acciones de buzón de correo que se auditan para un tipo de inicio de sesión (usando el cmdlet **set-Mailbox** con los parámetros *AuditAdmin*, *AuditDelegate*o *AuditOwner* ), el valor de la propiedad *DefaultAuditSet* será diferente del valor predeterminado. Por ejemplo, un valor de `Owner` indica que las acciones del buzón de correo predeterminadas para el propietario del buzón de correo se están auditando `Delegate` y `Admin` que las acciones y los cambios se han modificado. Si no se muestran valores para la propiedad *DefaultAuditSet* (también denominada valor *null* ), se han cambiado las acciones de buzón de los tres tipos de inicio de sesión.
-
-Vea la sección [cambiar o restaurar acciones de buzón registradas de forma predeterminada](#change-or-restore-mailbox-actions-logged-by-default) en este artículo para obtener más información acerca de cómo cambiar las acciones de buzón de correo que se auditan.
-
-### <a name="display-a-list-of-mailbox-actions-logged-by-default"></a>Mostrar una lista de acciones de buzón registradas de forma predeterminada
-
-Puede ejecutar los siguientes comandos en Exchange Online PowerShell para mostrar la lista de acciones de buzón de correo que actualmente se usan para un buzón de correo para cada tipo de inicio de sesión:
-
-**Acciones del propietario**
+Para mostrar el valor en los buzones de grupo de Office \<365\> , reemplace MailboxIdentity por el nombre, el alias o la dirección de correo electrónico del buzón compartido y ejecute el siguiente comando en Exchange Online PowerShell:
 
 ```
-Get-Mailbox <username> | Select-Object -ExpandProperty AuditOwner
+Get-Mailbox -Identity <MailboxIdentity> -GroupMailbox | Format-List DefaultAuditSet
 ```
 
-**Acciones de delegado**
+El valor `Admin, Delegate, Owner` indica:
+
+- Las acciones predeterminadas de buzón para los tres tipos de inicio de sesión se están auditando. Tenga en cuenta que este es el único valor que verá en buzones de grupo de Office 365.
+
+- Un administrador *no ha* cambiado las acciones del buzón auditado para ningún tipo de inicio de sesión en un buzón de usuario o un buzón compartido. Nota: este es el estado predeterminado después de que la auditoría de buzones de correo está activada de forma predeterminada en la organización.
+
+Si un administrador ha cambiado alguna vez las acciones de buzón de correo que se auditan para un tipo de inicio de sesión (mediante los parámetros *AuditAdmin*, *AuditDelegate*o *AuditOwner* en el cmdlet **set-Mailbox** ), el valor de la propiedad será diferente.
+
+Por ejemplo, el valor `Owner` de la propiedad *DefaultAuditSet* en un buzón de usuario o un buzón compartido indica lo siguiente:
+
+- Se están auditando las acciones predeterminadas del buzón para el propietario del buzón.
+
+- Las acciones de buzón auditado para `Delegate` los `Admin` tipos de inicio de sesión y y se han cambiado de las acciones predeterminadas.
+
+Un valor en blanco para la propiedad *DefaultAuditSet* indica que las acciones de buzón de los tres tipos de inicio de sesión se han cambiado en el buzón de usuario o en un buzón compartido.
+
+Para obtener más información, vea la sección [cambiar o restaurar acciones del buzón registradas de forma predeterminada](#change-or-restore-mailbox-actions-logged-by-default) en este tema.
+
+### <a name="display-the-mailbox-actions-that-are-being-logged-on-mailboxes"></a>Mostrar las acciones del buzón que se registran en los buzones
+
+Para ver las acciones de buzón de correo que se están registrando en ese momento en buzones de \<usuario\> o en buzones compartidos, reemplace MailboxIdentity por el nombre, el alias, la dirección de correo electrónico o el nombre principal de usuario (username) del buzón y ejecute uno o varios de los siguientes elementos comandos en Exchange Online PowerShell.
+
+> [!NOTE]
+> Aunque puede Agregar el `-GroupMailbox` conmutador a los siguientes comandos **Get-Mailbox** para los buzones de grupo de Office 365, no cree los valores que ve. Las acciones de buzones de correo predeterminadas y estáticas que se auditan para los buzones de grupo de Office 365 se describen en la sección [acciones de buzón para office 365 Group mailboxes](#mailbox-actions-for-office-365-group-mailboxes) anteriormente en este tema.
+
+#### <a name="owner-actions"></a>Acciones del propietario
 
 ```
-Get-Mailbox <username> | Select-Object -ExpandProperty AuditDelegate
+Get-Mailbox -Identity <MailboxIdentity> | Select-Object -ExpandProperty AuditOwner
 ```
 
-**Acciones de administración**
+#### <a name="delegate-actions"></a>Acciones de delegado
 
 ```
-Get-Mailbox <username> | Select-Object -ExpandProperty AuditAdmin
+Get-Mailbox -Identity <MailboxIdentity> | Select-Object -ExpandProperty AuditDelegate
+```
+
+#### <a name="admin-actions"></a>Acciones de administración
+
+```
+Get-Mailbox -Identity <MailboxIdentity> | Select-Object -ExpandProperty AuditAdmin
 ```
 
 ## <a name="change-or-restore-mailbox-actions-logged-by-default"></a>Cambiar o restaurar acciones de buzón registradas de forma predeterminada
 
-Como se ha explicado anteriormente, una de las ventajas clave de la auditoría de buzones de correo de forma predeterminada es que no es necesario administrar las acciones de buzones de correo que se auditan. Microsoft lo hace por usted y automáticamente agregará nuevas acciones de buzón de correo que se auditarán de forma predeterminada cuando se publiquen. Sin embargo, es posible que su organización tenga motivos para auditar un conjunto de acciones de buzón que sean distintas de las predeterminadas. En esta sección se muestra cómo cambiar las acciones de buzón de correo que se auditan para cada uno de los tipos de inicio de sesión y cómo volver a las acciones predeterminadas administradas por Microsoft.
+Como se ha explicado anteriormente, una de las principales ventajas de tener la auditoría de buzones de correo activada de forma predeterminada es: no es necesario administrar las acciones de buzones de correo que se auditan. Microsoft hace esto por usted y se agregarán automáticamente nuevas acciones de buzón de correo para que se audirán de forma predeterminada a medida que se publican.
+
+Sin embargo, es posible que se requiera que la organización audite un conjunto diferente de acciones de buzón de correo de los buzones de usuario y los buzones compartidos. Los procedimientos de esta sección muestran cómo cambiar las acciones de buzón de correo que se auditan para cada tipo de inicio de sesión y cómo volver a las acciones predeterminadas administradas por Microsoft.
 
 > [!IMPORTANT]
-> Si realiza algún cambio en las acciones de buzón de un usuario que se registra de forma predeterminada (tal como se describe en la siguiente sección), cualquier acción nueva de buzón de correo que Microsoft haya lanzado no será auditada para esos buzones. Tendrá que agregar explícitamente una nueva acción de buzón a la lista de acciones auditadas para un tipo de inicio de sesión.
+> Si usa los procedimientos siguientes para personalizar las acciones de buzón de correo que han iniciado sesión en los buzones de usuario o los buzones compartidos, las nuevas acciones de buzón predeterminadas que Microsoft publica no se auditarán automáticamente en esos buzones. Tendrá que agregar manualmente las acciones de buzón de correo nuevas a la lista personalizada de acciones.
 
 ### <a name="change-the-mailbox-actions-to-audit"></a>Cambiar las acciones de buzón de correo para auditar
 
-Puede usar el cmdlet **set-Mailbox** con los parámetros *AuditAdmin*, *AuditDelegate*o *AuditOwner* para cambiar las acciones de buzón de correo que se auditan, según el tipo de inicio de sesión. Como estos parámetros relacionados con la auditoría son parámetros de varios valores (lo que significa que pueden tener más de un valor), hay dos maneras diferentes de cambiarlos.
+Puede usar los parámetros *AuditAdmin*, *AuditDelegate*o *AuditOwner* en el cmdlet **set-Mailbox** para cambiar las acciones de buzón de correo que se auditan para los buzones de usuario y los buzones compartidos (acciones auditadas para el grupo de Office 365 los buzones no se pueden personalizar).
 
-- Puede especificar varias acciones de buzón de correo que sobrescriban las acciones existentes mediante la siguiente sintaxis `action1,action2,...actionN`:.
+Puede usar dos métodos diferentes para especificar las acciones del buzón:
 
-- Puede Agregar o quitar una o varias acciones de buzón de correo sin que ello afecte a los registros existentes mediante `@{Add="action1","value2"}` la `@{Remove="action1","action2"}`siguiente sintaxis: o.
+- *Reemplazar* (sobrescribir) las acciones del buzón existentes con esta sintaxis: `action1,action2,...actionN`.
 
-Independientemente del método que use para cambiar las acciones de buzón de correo que se auditan, las acciones de buzón auditadas de forma predeterminada (para el tipo de inicio de sesión que ha modificado) dejarán de ser administradas por Microsoft. Además, el valor del tipo de inicio de sesión que ha modificado no se mostrará en el parámetro de buzón *DefaultAuditSet* [descrito anteriormente](#verify-that-default-mailbox-actions-are-being-logged-for-each-logon-type).
+- *Agregue o quite* acciones de buzón sin que ello afecte a otros valores existentes con `@{Add="action1","action2",..."actionN"}` esta `@{Remove="action1","action2",..."actionN"}`sintaxis: o.
 
-A continuación se muestran algunos ejemplos de cómo usar uno de estos métodos para cambiar las acciones de buzón de correo para auditar en cada uno de los diferentes tipos de inicio de sesión. 
-
-En este ejemplo se cambian las acciones del buzón de administrador al sobrescribir las acciones predeterminadas con SoftDelete y HardDelete. 
+En este ejemplo se cambian las acciones de buzón de administrador para el buzón denominado "Gabriela Laureano" al sobrescribir las acciones predeterminadas con SoftDelete y HardDelete.
 
 ```
-Set-Mailbox <username> -AuditAdmin HardDelete,SoftDelete
+Set-Mailbox -Identity "Gabriela Laureano" -AuditAdmin HardDelete,SoftDelete
 ```
 
-En este ejemplo se agrega la acción de propietario MailboxLogin. 
+En este ejemplo se agrega la acción de propietario MailboxLogin al buzón laura@contoso.onmicrosoft.com.
 
 ```
-Set-Mailbox <username> -AuditOwner @{Add="MailboxLogin"}
+Set-Mailbox -Identity laura@contoso.onmicrosoft.com -AuditOwner @{Add="MailboxLogin"}
 ```
 
-En este ejemplo se quita la acción de delegado MoveToDeletedItems.
+En este ejemplo se quita la acción de delegado MoveToDeletedItems del buzón de discusión de grupo.
 
 ```
-Set-Mailbox <username> -AuditDelegate @{Remove="MoveToDeletedItems"}
+Set-Mailbox -Identity "Team Discussion" -AuditDelegate @{Remove="MoveToDeletedItems"}
 ```
 
-#### <a name="checking-the-defaultauditset-property"></a>Comprobación de la propiedad DefaultAuditSet
+Independientemente del método que use, la personalización de las acciones de buzón auditado en los buzones de usuario o los buzones compartidos tiene los siguientes resultados:
 
-Después de cambiar las acciones predeterminadas de buzón de correo para un tipo de inicio de sesión, la propiedad *DefaultAuditSet* del buzón se actualizará automáticamente para reflejar este cambio. Por ejemplo, si se ejecuta `Get-Mailbox <username> | FL DefaultAuditSet` después de la primera vez que se agrega o quita una acción del propietario del buzón, el comando solo devolverá un valor de `Admin, Delegate`. Esto indica que se han cambiado las acciones predeterminadas del buzón de correo, lo que significa que todas las nuevas acciones de propietario del buzón que Microsoft ha lanzado no se agregarán automáticamente a este buzón. Lo mismo se aplica para cambiar las acciones de buzón para el tipo de inicio de sesión de administrador o delegado.
+- Para el tipo de inicio de sesión personalizado, Microsoft ya no administra las acciones del buzón auditado.
+
+- El tipo de inicio de sesión que ha personalizado ya no se muestra en el valor de la propiedad *DefaultAuditSet* para el buzón como [se ha descrito anteriormente](#verify-that-default-mailbox-actions-are-being-logged-for-each-logon-type).
 
 ### <a name="restore-the-default-mailbox-actions"></a>Restaurar las acciones del buzón predeterminadas
 
-Si ha realizado cambios en las acciones de buzón de correo que se auditan para un tipo de inicio de sesión, puede restaurar las acciones predeterminadas del `Set-Mailbox -DefaultAuditSet` buzón de correo que se auditan al ejecutar el comando. Al hacerlo, se producirán las siguientes acciones:
-
-- La lista actual de acciones de buzón se reemplazará por las acciones de buzón predeterminadas para el tipo de inicio de sesión adecuado.
- 
-- Las nuevas acciones de buzón de correo que Microsoft ha lanzado se agregarán automáticamente a la lista del tipo de inicio de sesión adecuado.
-
-- La [propiedad de buzón DefaultAuditSet](#checking-the-defaultauditset-property) se actualizará para incluir el tipo de inicio de sesión adecuado.
-
-Para restaurar las acciones del buzón de correo predeterminadas para todos los tipos de inicio de sesión, ejecute el siguiente comando:
+Si ha personalizado las acciones de buzón de correo que se auditan en un buzón de usuario o un buzón compartido, puede restaurar las acciones del buzón de correo predeterminadas para uno o todos los tipos de inicio de sesión con esta sintaxis:
 
 ```
-Set-Mailbox <username> -DefaultAuditSet Admin,Delegate,Owner
+Set-Mailbox -Identity <MailboxIdentity> -DefaultAuditSet <Admin | Delegate | Owner>
 ```
 
-Puede usar este comando para restaurar las acciones del buzón de correo predeterminadas para cualquiera de los tipos de inicio de sesión (mediante los valores de **Administrador**, **delegado**o **propietario** para el parámetro *DefaultAuditSet* ).
+Puede especificar varios valores de *DefaultAuditSet* separados por comas.
+
+**Nota**: los siguientes procedimientos no se aplican a los buzones de grupo de Office 365 (están limitados a las acciones predeterminadas como se describe [aquí](#mailbox-actions-for-office-365-group-mailboxes)).
+
+En este ejemplo se restauran las acciones predeterminadas del buzón auditado para todos los tipos de inicio de sesión en el buzón mark@contoso.onmicrosoft.com.
+
+```
+Set-Mailbox -Identity mark@contoso.onmicrosoft.com -DefaultAuditSet Admin,Delegate,Owner
+```
+
+En este ejemplo se restauran las acciones de buzón auditado predeterminadas para el tipo de inicio de sesión de administrador en el buzón chris@contoso.onmicrosoft.com, pero se conservan las acciones de buzón auditado personalizadas para los tipos de inicio de sesión de delegado y propietario.
+
+```
+Set-Mailbox -Identity chris@contoso.onmicrosoft.com -DefaultAuditSet Admin
+```
+
+La restauración de las acciones predeterminadas del buzón auditado para un tipo de inicio de sesión tiene los siguientes resultados:
+
+- La lista actual de acciones del buzón se reemplaza por las acciones predeterminadas del buzón para el tipo de inicio de sesión.
+
+- Las nuevas acciones de buzón de correo que Microsoft publica se agregan automáticamente a la lista de acciones auditadas para el tipo de inicio de sesión.
+
+- El valor de la propiedad *DefaultAuditSet* del buzón se actualiza para incluir el tipo de inicio de sesión restaurado.
 
 ## <a name="turn-off-mailbox-auditing-on-by-default-for-your-organization"></a>Desactivar la auditoría de buzones de correo en la organización de forma predeterminada
 
-Si por algún motivo su organización decide que no desea auditar las acciones de buzón de correo, puede desactivar la auditoría de buzones de correo de forma predeterminada para toda la organización ejecutando el siguiente comando en Exchange Online PowerShell:
+Puede desactivar la auditoría de buzones de correo de forma predeterminada para toda la organización ejecutando el siguiente comando en Exchange Online PowerShell:
 
 ```
 Set-OrganizationConfig -AuditDisabled $true
 ```
 
-Cuando la auditoría de buzones de correo está desactivada de forma predeterminada (la propiedad *AuditDisabled* se establece en **true**) para la organización, se producirán las siguientes acciones:
+La desactivación de la auditoría de buzones de correo de de forma predeterminada tiene los siguientes resultados:
 
 - La auditoría de buzones de correo está deshabilitada para su organización.
 
-- No se auditarán las acciones del buzón (a partir del momento en que la auditoría está deshabilitada para la organización), incluso si la propiedad *AuditEnabled* de un buzón se establece en **true**.
+- Desde el momento en que deshabilitó la auditoría de buzones de correo de forma predeterminada, no se audita ninguna acción de buzón, incluso si la auditoría está habilitada en un buzón (la propiedad *AuditEnabled* del buzón es **true**).
 
-- La auditoría de buzones de correo no se habilitará para nuevos buzones y se omitirá la configuración de la propiedad *AuditEnabled* en un buzón nuevo (o existente) en **true** .
+- La auditoría de buzones de correo no está habilitada para nuevos buzones y se omitirá la configuración de la propiedad *AuditEnabled* en un buzón nuevo o existente a **true** .
 
-- Se omitirá cualquier configuración de Asociación de omisión de auditoría de buzones (configurada con el cmdlet **set-MailboxAuditBypassAssociation** ).
+- Se omiten las opciones de Asociación de omisión de auditoría de buzones (configuradas mediante el cmdlet **set-MailboxAuditBypassAssociation** ).
 
-- Los registros de auditoría de buzón de correo existentes se conservarán hasta que expire el límite de antigüedad del registro de auditoría para el registro.
+- Los registros de auditoría de buzones de correo existentes se conservan hasta que expira el límite de antigüedad del registro de auditoría para el registro.
 
 ### <a name="turn-on-mailbox-auditing-on-by-default"></a>Activar la auditoría de buzones de correo de forma predeterminada
 
-Para volver a activar la auditoría de buzones de correo para su organización, simplemente ejecute el siguiente comando en Exchange Online PowerShell:
+Para volver a activar la auditoría de buzones de correo para su organización, ejecute el siguiente comando en Exchange Online PowerShell:
 
 ```
 Set-OrganizationConfig -AuditDisabled $false
@@ -248,67 +308,59 @@ Set-OrganizationConfig -AuditDisabled $false
 
 ## <a name="bypass-mailbox-audit-logging"></a>Omisión del registro de auditoría de buzones
 
-Actualmente, no puede deshabilitar la auditoría de buzones de correo específicos cuando la auditoría de buzones de correo está activada de forma predeterminada en la organización. Por ejemplo, se omite el establecimiento de la propiedad de buzón *AuditEnabled* en **false** .  Sin embargo, puede seguir usando el cmdlet **set-MailboxAuditBypassAssociation** de PowerShell de Exchange Online para evitar que se registren las acciones de buzón de correo realizadas por determinados usuarios. Al omitir la auditoría de buzones de correo, las acciones de buzón de correo realizadas por un usuario específico no se auditan, independientemente del buzón de correo en el que se realicen dichas acciones. Si omite la auditoría de buzones de correo para un usuario específico, no se registrarán las acciones del propietario del buzón realizadas por dicho usuario. Y si al mismo usuario se le asignan permisos para el buzón de otro usuario (o un buzón compartido), las acciones de delegado realizadas por el primer usuario tampoco se registrarán.
+Actualmente, no puede deshabilitar la auditoría de buzones de correo específicos cuando la auditoría de buzones de correo está activada de forma predeterminada en la organización. Por ejemplo, se omite el establecimiento de la propiedad de buzón *AuditEnabled* en **false** .
 
-Para omitir el registro de auditoría de buzones de correo para un usuario específico, ejecute el siguiente comando:
+Sin embargo, puede seguir usando el cmdlet **set-MailboxAuditBypassAssociation** de PowerShell de Exchange Online para ** evitar que se registren todas las acciones de buzón de correo de los usuarios especificados, independientemente de dónde se produzcan las acciones. Por ejemplo:
+
+- No se registran las acciones del propietario del buzón realizadas por los usuarios omitidos.
+
+- Las acciones de delegado realizadas por los usuarios omitidos en los buzones de otros usuarios (incluidos los buzones compartidos) no se registran.
+
+- Las acciones de administración realizadas por los usuarios omitidos no se registran.
+
+Para omitir el registro de auditoría de buzones de \<correo\> de un usuario específico, reemplace MailboxIdentity por el nombre, la dirección de correo electrónico, el alias o el nombre principal de usuario (username) del usuario y ejecute el siguiente comando:
 
 ```
-Set-MailboxAuditBypassAssociation -Identity <username> -AuditByPassEnabled $true
+Set-MailboxAuditBypassAssociation -Identity <MailboxIdentity> -AuditByPassEnabled $true
 ```
 
 Para comprobar que la auditoría se omite para el usuario especificado, ejecute el siguiente comando:
 
 ```
-Get-MailboxAuditBypassAssociation -Identity <username> | FL AuditByPassEnabled
+Get-MailboxAuditBypassAssociation -Identity <MailboxIdentity> | Format-List AuditByPassEnabled
 ```
 
-Un valor de **true** indica que se omite el registro de auditoría de buzones para ese usuario.
-
-## <a name="mailbox-auditing-actions"></a>Acciones de auditoría de buzones
-  
-En la tabla siguiente se resumen las acciones que se auditan para cada tipo de inicio de sesión de usuario. En la tabla, un asterisco ( **\*** ) indica que la acción se registra de forma predeterminada. **No** indica que no se puede registrar una acción para ese tipo de inicio de sesión. Tenga en cuenta que un administrador al que se haya asignado el permiso Acceso total en el buzón de un usuario se considera usuario delegado. 
-  
-|**Acción**|**Descripción**|**Administrador**|**Delegado**|**Propietario**|
-|:-----|:-----|:-----|:-----|:-----|
-|**Copiar** <br/> |Un mensaje se copió en otra carpeta.  <br/> |Sí  <br/> |No  <br/> |No  <br/> |
-|**Create** <br/> |Se crea un elemento en la carpeta calendario, contactos, notas o tareas del buzón de correo; por ejemplo, se crea una nueva convocatoria de reunión. Tenga en cuenta que no se audita la creación, el envío o la recepción de un mensaje. Además, no se audita la creación de una carpeta de buzón de correo.  <br/> |Sí\*  <br/> |Sí\*  <br/> |Sí  <br/> |
-|**FolderBind**\** <br/> |Se tuvo acceso a una carpeta de buzón de correo. Esta acción también se registra cuando el administrador o un delegado abren el buzón de correo.  <br/> |Sí  <br/> |Sí  <br/> |No  <br/> |
-|**HardDelete** <br/> |Un mensaje se purgó de la carpeta Elementos recuperables.  <br/> |Sí\*  <br/> |Sí\*  <br/> |Sí\*  <br/> |
-|**MailboxLogin** <br/> |El usuario ha iniciado sesión en su buzón.  <br/> |No  <br/> |No  <br/> |Sí  <br/> |
-|**MessageBind**\*** <br/> |Un mensaje se consultó en el panel de vista previa o se abrió.  <br/> |Sí  <br/> |No  <br/> |No  <br/> |
-|**Mover** <br/> |Un mensaje se movió a otra carpeta.  <br/> |Sí  <br/> |Sí  <br/> |Sí  <br/> |
-|**MoveToDeletedItems** <br/> |Un mensaje se eliminó y se movió a la carpeta Elementos eliminados.  <br/> |Sí\*  <br/> |Sí\*  <br/> |Sí\*  <br/> |
-|**SendAs** <br/> |Un mensaje se envió mediante el permiso SendAs. Esto significa que otro usuario envió el mensaje como si procediera del propietario del buzón.  <br/> |Sí\*  <br/> |Sí\*  <br/> |No  <br/> |
-|**SendOnBehalf** <br/> |Un mensaje se envió mediante el permiso SendOnBehalf. Esto significa que otro usuario envió el mensaje en nombre del propietario del buzón. El mensaje indica el destinatario en nombre de quien se envió el mensaje y quién lo envió realmente.  <br/> |Sí\*  <br/> |Sí\*  <br/> |No  <br/> |
-|**SoftDelete** <br/> |Un mensaje se eliminó permanentemente o se eliminó de la carpeta Elementos eliminados. Los elementos eliminados de forma temporal se mueven a la carpeta Elementos recuperables.  <br/> |Sí\*  <br/> |Sí\*  <br/> |Sí\*  <br/> |
-|**Actualizar** <br/> |Se cambió un mensaje o sus propiedades.  <br/> |Sí\*  <br/> |Sí\*  <br/> |Sí\*  <br/> |
-|**UpdateCalendarDelegation** <br/> |Se asignó una delegación de calendario a un buzón. La delegación de calendario da a otra persona de la organización permisos para administrar el calendario del propietario del buzón.  <br/> |Sí\*  <br/> |No  <br/> |Sí\*  <br/> |
-|**UpdateFolderPermissions** <br/> |Se ha cambiado un permiso de carpeta. Los permisos de carpeta controlan qué usuarios de la organización pueden tener acceso a las carpetas de un buzón de correo y los mensajes que se encuentran en dichas carpetas.  <br/> |Sí\*  <br/> |Sí\*  <br/> |Sí\*  <br/> |
-|**UpdateInboxRules** <br/> |Se ha agregado, quitado o cambiado una regla de bandeja de entrada. Las reglas de la bandeja de entrada se usan para procesar mensajes en la bandeja de entrada del usuario en función de las condiciones especificadas y emprender acciones cuando se cumplen las condiciones de una regla, como mover un mensaje a una carpeta especificada o eliminar un mensaje.  <br/> |Sí\*  <br/> |Sí\*  <br/> |Sí\*  <br/> |
-   
-> [!NOTE]
-> <sup>\*</sup>Se audita de forma predeterminada cuando está habilitada la auditoría de buzones de correo predeterminada para el tipo de inicio de sesión. <br/><br/>  <sup>\*\*</sup>Se consolidan los registros de auditoría para las acciones de enlace de carpeta realizadas por los delegados. Se genera un registro de auditoría para el acceso a la carpeta individual en un período de 24 horas. <br/><br/> La acción MessageBind ha quedado en desuso en Exchange Online y ya no está disponible para agregarla a la lista de acciones de buzón para el tipo de inicio de sesión de administrador. <sup> \* \* \* </sup> 
+El valor **true** indica que el registro de auditoría de buzones de correo se omite para el usuario.
 
 ## <a name="more-information"></a>Más información
 
-- De forma predeterminada, las entradas del registro de auditoría de buzones se conservan durante 90 días y después se eliminan. Puede cambiar el límite de antigüedad de las entradas del registro de auditoría mediante el comando **set-Mailbox-AuditLogAgeLimit** en Exchange Online PowerShell. Tenga en cuenta que aumentar el límite de antigüedad predeterminado para los registros de auditoría de buzones de correo no afecta al límite de duración de 90 días para los registros de registro de auditoría de buzones en el registro de auditoría de Microsoft 365. Por ejemplo, si aumenta el límite de antigüedad para las entradas de registro de auditoría de buzones a 365 días, se podrá buscar en el registro de auditoría de Microsoft 365 solo durante 90 días después de que se haya producido el evento correspondiente. En este caso, tendría que buscar en el registro de auditoría del buzón del usuario los registros de más de 90 días. Para obtener más información acerca de la búsqueda de registros de auditoría de buzones, consulte [Search-MailboxAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-mailboxauditlog).
+- De forma predeterminada, los registros de registro de auditoría de buzones se conservan durante 90 días antes de su eliminación. Puede cambiar el límite de antigüedad de las entradas del registro de auditoría mediante el uso del parámetro *AuditLogAgeLimit* en el cmdlet **set-Mailbox** de Exchange Online PowerShell. Sin embargo, aumentar este valor no permite buscar eventos que superen los 90 días en el registro de auditoría de Microsoft 365.
 
-- Si ha cambiado la propiedad *AuditLogAgeLimit* de un buzón antes de auditar el buzón de correo activada de manera predeterminada para la organización, no se cambiará el límite de antigüedad del registro de auditoría existente para ese buzón; es decir, la auditoría de buzones de correo de forma predeterminada no afecta al límite de antigüedad actual para los registros de auditoría de buzón.
+  Si aumenta el límite de antigüedad, debe usar el cmdlet [Search-MailboxAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-mailboxauditlog) en Exchange Online PowerShell para buscar en el registro de auditoría del buzón del usuario registros de más de 90 días.
 
-- Los registros de registro de auditoría de buzones de correo se ** almacenan en una subcarpeta (denominada Audits) en la carpeta elementos recuperables del buzón de correo de cada usuario. Tenga en cuenta lo siguiente en lo que se refiere a los registros de auditoría de buzón de correo y la carpeta elementos recuperables.
-   
-    - Los registros de auditoría de buzones de correo tienen en cuenta la cuota de almacenamiento de la carpeta elementos recuperables, que es 30 de manera predeterminada (la cuota de advertencia es de 20 GB). Tenga en cuenta que la cuota de almacenamiento de la carpeta elementos recuperables se ha incrementado automáticamente de 100 GB (cuota de advertencia de 90 MB) cuando se coloca una retención en un buzón o el buzón se asigna a una directiva de retención en el centro de cumplimiento.
+- Si ha cambiado la propiedad *AuditLogAgeLimit* de un buzón antes de auditar el buzón de correo activado de forma predeterminada para la organización, el límite de antigüedad del registro de auditoría existente del buzón no cambia. Es decir, la auditoría de buzones de correo de forma predeterminada no afecta al límite de antigüedad actual para los registros de auditoría de buzón.
 
-    - Los registros de auditoría de buzones de correo también cuentan en el [límite de carpetas para la carpeta elementos recuperables](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#mailbox-folder-limits). El número máximo de elementos (que son registros de auditoría en este caso) que se pueden almacenar en la subcarpeta Audits es de 3 millones elementos. 
+- Para cambiar el valor de *AuditLogAgeLimit* en un buzón de grupo de Office 365, debe incluir `-GroupMailbox` el conmutador en el comando **set-Mailbox** .
 
-      > [!NOTE]
-      > Es improbable que la auditoría de buzones de correo que se produzca de forma predeterminada afecte a la cuota de almacenamiento o el límite de la carpeta de elementos recuperables. 
+- Los registros de registro de auditoría de buzones de correo se ** almacenan en una subcarpeta (denominada Audits) en la carpeta elementos recuperables del buzón de correo de cada usuario. Tenga en cuenta lo siguiente en lo que se refiere a los registros de auditoría de buzones de correo y la carpeta elementos recuperables:
 
-    - Puede ejecutar el siguiente comando en Exchange Online PowerShell para mostrar el tamaño y el número de elementos en la subcarpeta Audits de la carpeta elementos recuperables: 
-       ```
-       Get-MailboxFolderStatistics <username> -FolderScope RecoverableItems | Where-Object {$_.Name -eq 'Audits'} | FL FolderPath,FolderSize,ItemsInFolder
-       ```
+  - Los registros de auditoría de buzones de correo tienen en cuenta la cuota de almacenamiento de la carpeta elementos recuperables, que es 30 de manera predeterminada (la cuota de advertencia es de 20 GB). La cuota de almacenamiento aumenta automáticamente a 100 GB (con una cuota de advertencia de 90 GB) cuando:
 
-     - No se puede tener acceso directamente a un registro de auditoría en la carpeta elementos recuperables; en su lugar, use el cmdlet **Search-MailboxAuditLog** o busque en el registro de auditoría de Microsoft 365 para buscar y ver registros de auditoría de buzón de correo.
+    - Se guarda una retención en un buzón.
 
-- Si un buzón se coloca en suspensión o se asigna a una directiva de retención en el centro de cumplimiento, las entradas del registro de auditoría se conservan durante la duración definida por la propiedad *AuditLogAgeLimit* del buzón (que se establece en 90 días de forma predeterminada). Para conservar los registros de auditoría más tiempo para los buzones en retención, debe aumentar el período de retención aumentando el valor de la propiedad *AuditLogAgeLimit* .
+    - El buzón se asigna a una directiva de retención en el centro de cumplimiento.
+
+  - Los registros de auditoría de buzón también cuentan en el [límite de carpetas de la carpeta elementos recuperables](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#mailbox-folder-limits). Se puede almacenar un máximo de 3 millones elementos (registros de auditoría) en la subcarpeta auditorías.
+
+    > [!NOTE]
+    > Es improbable que la auditoría de buzones de correo que se produzca de forma predeterminada afecte a la cuota de almacenamiento o el límite de la carpeta de elementos recuperables.
+
+    - Puede ejecutar el siguiente comando en Exchange Online PowerShell para mostrar el tamaño y el número de elementos en la subcarpeta Audits de la carpeta elementos recuperables:
+
+      ```
+      Get-MailboxFolderStatistics -Identity <MailboxIdentity> -FolderScope RecoverableItems | Where-Object {$_.Name -eq 'Audits'} | Format-List FolderPath,FolderSize,ItemsInFolder
+      ```
+
+    - No se puede tener acceso directamente a un registro de auditoría en la carpeta elementos recuperables; en su lugar, use el cmdlet **Search-MailboxAuditLog** o busque en el registro de auditoría de Microsoft 365 para buscar y ver registros de auditoría de buzón de correo.
+
+- Si un buzón se coloca en suspensión o se asigna a una directiva de retención en el centro de cumplimiento, las entradas del registro de auditoría se conservan durante el tiempo definido por la propiedad *AuditLogAgeLimit* del buzón (90 días de forma predeterminada). Para conservar los registros de auditoría más largas para los buzones en retención, debe aumentar el valor de *AuditLogAgeLimit* del buzón.

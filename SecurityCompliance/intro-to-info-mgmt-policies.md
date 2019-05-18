@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 5/16/2014
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.assetid: 63a0b501-ba59-44b7-a35c-999f3be057b2
 ms.collection:
 - M365-security-compliance
 description: Una directiva de administración de información es un conjunto de reglas para un tipo de contenido. Las directivas de administración de información permiten a las organizaciones controlar y hacer un seguimiento de cosas como cuánto tiempo se mantiene el contenido o qué acciones pueden realizar los usuarios con ese contenido. Las directivas de administración de información pueden ayudar a las organizaciones a cumplir normas legales o gubernamentales, o simplemente pueden forzar la aplicación de procesos empresariales internos.
-ms.openlocfilehash: 23662c555dfc19b2fc83b0364d93724e922c7c97
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: a19b773a8944fa29c06b29e1928cb88e96cf5a7f
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32254268"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152612"
 ---
 # <a name="introduction-to-information-management-policies"></a>Introduction to information management policies (Introducción a las directivas de administración de la información)
 
@@ -48,7 +48,7 @@ Las organizaciones también pueden crear e implementar características de direc
 ## <a name="locations-to-use-an-information-management-policy"></a>Ubicaciones para usar una directiva de administración de la información
 <a name="__toc340213528"> </a>
 
-Para implementar una directiva de administración de la información, debe agregarla a una lista, biblioteca o tipo de contenido en un sitio. La ubicación en la que se crea o agrega una directiva de administración de la información afecta a la amplitud con la que se aplica la Directiva o la frecuencia con que se puede usar. Podrá:
+Para implementar una directiva de administración de la información, debe agregarla a una lista, biblioteca o tipo de contenido en un sitio. La ubicación en la que se crea o agrega una directiva de administración de la información afecta a la amplitud con la que se aplica la Directiva o la frecuencia con que se puede usar. Puede:
   
  **Crear una directiva de colección de sitios y, a continuación, agregar esta directiva a un tipo de contenido, lista o biblioteca** Puede crear una directiva de colección de sitios en la lista de directivas en el sitio de nivel superior de una colección de sitios. Después de crear una directiva de colección de sitios, puede exportarla para que los administradores de otras colecciones de sitios puedan importarla en su lista de directivas. La creación de una directiva de colección de sitios que se puede exportar permite estandarizar las directivas de administración de la información en todos los sitios de la organización. 
   

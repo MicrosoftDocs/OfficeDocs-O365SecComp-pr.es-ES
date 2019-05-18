@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 5/16/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.assetid: 8ccac9e4-3a50-49fa-a95b-d186032a6ee3
 ms.collection:
 - M365-security-compliance
 description: Las directivas de administración de la información permiten a su organización controlar el tiempo que se conservará el contenido, auditar lo que hacen los usuarios con el contenido y agregar códigos de barras o etiquetas a los documentos. Una Directiva puede ayudar a garantizar el cumplimiento de las regulaciones legales y gubernamentales o los procesos de negocio internos. Como administrador, puede configurar una directiva para controlar cómo realizar un seguimiento de los documentos y durante cuánto tiempo se conservan los documentos.
-ms.openlocfilehash: 1d17dd8cadb721478831ab8fe77413c08f959f29
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 43a39b316f5c1e77ef9576324518dfe228ff35a6
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258858"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151242"
 ---
 # <a name="create-and-apply-information-management-policies"></a>Crear y aplicar directivas de administración de información
 
@@ -43,7 +43,7 @@ Para obtener más información, vea [Introducción a las directivas de administr
 
 Para asegurarse de que se aplica una directiva de información a todos los documentos de un tipo determinado dentro de una colección de sitios, considere la posibilidad de crear la Directiva en el nivel de colección de sitios y, posteriormente, aplicar la Directiva a los tipos de contenido. Se denominan directivas de colección de sitios. 
   
-1. en la página \> ****![principal de la colección de sitios, en el botón configuración de SharePoint 2016 de la barra de título.](media/1c22d2d8-39e0-4930-82c6-c3eee44211d3.png) \> **Configuración del sitio**.
+1. En la página \> ****![principal de la colección de sitios, en el botón configuración de SharePoint 2016 de la barra de título.](media/1c22d2d8-39e0-4930-82c6-c3eee44211d3.png) \> **Configuración del sitio**.
     
     En un sitio conectado a un grupo de SharePoint, haga clic en **configuración**, en **contenidos del sitio**y, a continuación, en **configuración del sitio**. 
     
@@ -66,7 +66,7 @@ Agregar una directiva de administración de información a un tipo de contenido 
   
  También puede Agregar una directiva de administración de información a un tipo de contenido específico de las listas. Esto tiene el efecto de aplicar la Directiva solo a los elementos de la lista que usan el tipo de contenido. 
   
-1. en la página \> ****![principal de la colección de sitios, en el botón configuración de SharePoint 2016 de la barra de título.](media/1c22d2d8-39e0-4930-82c6-c3eee44211d3.png) \> **Configuración del sitio**.
+1. En la página \> ****![principal de la colección de sitios, en el botón configuración de SharePoint 2016 de la barra de título.](media/1c22d2d8-39e0-4930-82c6-c3eee44211d3.png) \> **Configuración del sitio**.
     
     En un sitio conectado a un grupo de SharePoint, haga clic en **configuración**, en **contenidos del sitio**y, a continuación, en **configuración del sitio**. 
     
@@ -90,7 +90,7 @@ Agregar una directiva de administración de información a un tipo de contenido 
     
 ||||||**1.**|* * Elija * * Agregar una etapa de retención para registros... * * * *|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-||||||2.  <br/> | Seleccione una opción de período de retención para especificar Cuándo expirarán los documentos o elementos. Siga uno de los procedimientos siguientes:  <br/>  Para establecer la fecha de expiración en función de una propiedad de fecha, en **evento** \> **esta fase se basa en una propiedad de fecha del elemento**y, a continuación, selecciona la acción del documento o elemento (por ejemplo, creado o modificado) y el incremento de tiempo después de esta acción ( por ejemplo, el número de días, meses o años cuando desea que el elemento expire.  <br/>  Para usar una fórmula de retención personalizada para determinar la expiración, elija **establecer mediante una fórmula de retención personalizada instalada en este servidor**.  <br/> > [!NOTE]> esta opción solo está disponible si el administrador ha configurado una fórmula personalizada.           |
+||||||2.  <br/> | Seleccione una opción de período de retención para especificar Cuándo expirarán los documentos o elementos. Realice una de las acciones siguientes:  <br/>  Para establecer la fecha de expiración en función de una propiedad de fecha, en **evento** \> **esta fase se basa en una propiedad de fecha del elemento**y, a continuación, selecciona la acción del documento o elemento (por ejemplo, creado o modificado) y el incremento de tiempo después de esta acción ( por ejemplo, el número de días, meses o años cuando desea que el elemento expire.  <br/>  Para usar una fórmula de retención personalizada para determinar la expiración, elija **establecer mediante una fórmula de retención personalizada instalada en este servidor**.  <br/> > [!NOTE]> esta opción solo está disponible si el administrador ha configurado una fórmula personalizada.           |
 ||||||3.  <br/> |La opción **iniciar un flujo de trabajo** solo está disponible si está definiendo una directiva para una lista, biblioteca o tipo de contenido que ya tiene asociado un flujo de trabajo. A continuación, se le ofrecerá una selección de flujos de trabajo para elegir.  <br/> |
 ||||||4.  <br/> |En la **** sección periodicidad, seleccione **repetir la acción de esta fase...** y especifique la frecuencia con la que desea que se repita la acción.  <br/> > [!NOTE]> esta opción solo está disponible si la acción seleccionada puede repetirse. Por ejemplo, no puede establecer la periodicidad para que la acción elimine de **forma permanente**.           |
 ||||||5.  <br/> |Elija **Aceptar**.  <br/> |
@@ -170,7 +170,7 @@ Si **tipo de contenido** aparece como origen, haga clic en **cambiar origen**y, 
     
      Tenga en cuenta que, en registros, puede elegir definir distintas directivas de retención para los registros seleccionando la opción definir distintas fases de retención para los registros. 
     
-7. En el cuadro de diálogo Propiedades de fase, seleccione una opción de período de retención para especificar Cuándo expirarán los documentos o elementos. Siga uno de los procedimientos siguientes:
+7. En el cuadro de diálogo Propiedades de fase, seleccione una opción de período de retención para especificar Cuándo expirarán los documentos o elementos. Realice una de las acciones siguientes:
     
   - Para establecer la fecha de expiración en función de una propiedad de fecha, en **evento** \> **esta fase se basa en una propiedad de fecha del elemento**y, a continuación, selecciona la acción del documento o elemento (por ejemplo, creado o modificado) y el incremento de tiempo después de esta acción ( por ejemplo, el número de días, meses o años cuando desea que el elemento expire. 
     
@@ -195,7 +195,7 @@ Si **tipo de contenido** aparece como origen, haga clic en **cambiar origen**y, 
 
 Si ya se han creado directivas de administración de la información para su sitio como directivas de colección de sitios, puede aplicar una de las directivas a un tipo de contenido. De esta forma, puede aplicar la misma directiva a varios tipos de contenido en una colección de sitios que no comparten el mismo tipo de contenido primario.
   
- Si desea aplicar directivas a varios tipos de contenido en una colección de sitios y tiene configurado un servicio de metaDatos administrados, puede usar la publicación de tipo de contenido para publicar directivas de administración de la información en varias colecciones de sitios. Vea la sección [aplicar una directiva en las colecciones de sitios](#apply-a-policy-across-site-collections) para obtener más información. 
+ Si desea aplicar directivas a varios tipos de contenido en una colección de sitios y tiene configurado un servicio de metadatos administrados, puede usar la publicación de tipo de contenido para publicar directivas de administración de la información en varias colecciones de sitios. Vea la sección [aplicar una directiva en las colecciones de sitios](#apply-a-policy-across-site-collections) para obtener más información. 
   
 1. Navegue hasta la lista o biblioteca que contiene el tipo de contenido al que desea aplicar una directiva.
     
@@ -221,7 +221,7 @@ Si ya se han creado directivas de administración de la información para su sit
 ## <a name="apply-a-policy-across-site-collections"></a>Aplicar una directiva en las colecciones de sitios
 <a name="__toc260646789"> </a>
 
-Compartir tipos de contenido entre colecciones de sitios mediante una aplicación de servicio de metaDatos administrados para configurar la publicación de tipo de contenido. La publicación de tipo de contenido ayuda a administrar el contenido y los metadatos de manera coherente en los sitios, ya que los tipos de contenido se pueden crear y actualizar de forma centralizada, y las actualizaciones se pueden publicar en varias colecciones de sitios o aplicaciones Web de suscripción.
+Compartir tipos de contenido entre colecciones de sitios mediante una aplicación de servicio de metadatos administrados para configurar la publicación de tipo de contenido. La publicación de tipo de contenido ayuda a administrar el contenido y los metadatos de manera coherente en los sitios, ya que los tipos de contenido se pueden crear y actualizar de forma centralizada, y las actualizaciones se pueden publicar en varias colecciones de sitios o aplicaciones Web de suscripción.
   
 ## <a name="create-a-template-from-an-existing-policy-to-use-across-site-collections"></a>Crear una plantilla a partir de una directiva existente para usarla en las colecciones de sitios
 <a name="__toc262125409"> </a>

@@ -1,10 +1,10 @@
 ---
-title: Etiquetar documentos en un conjunto de trabajo
+title: Etiquetar documentos en un conjunto de revisión
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 510a10386ea51c0397408450f9fc700e9ce6db9c
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: a3b588f4b8e24783cd0d7198ea995f0fd6c8ae3e
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32241146"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154032"
 ---
-# <a name="tag-documents-in-a-working-set"></a>Etiquetar documentos en un conjunto de trabajo
+# <a name="tag-documents-in-a-review-set"></a>Etiquetar documentos en un conjunto de revisión
 
-La organización de contenido en un conjunto de trabajo es importante para completar varios flujos de trabajo en el proceso de exhibición de documentos electrónicos. Esto incluye:
+La organización de contenido en un conjunto de revisión es importante para completar varios flujos de trabajo en el proceso de exhibición de documentos electrónicos. Esto incluye:
 
 -  Selección de contenido innecesario
 
@@ -31,11 +31,11 @@ La organización de contenido en un conjunto de trabajo es importante para compl
  
 -  Identificación de contenido que debe ser revisado por un experto o un abogado
 
-Cuando expertos, abogados u otros usuarios revisan el contenido de un conjunto de trabajo, se pueden capturar sus opiniones relacionadas con el contenido mediante el uso de etiquetas. Por ejemplo, si la intención es deseleccionar contenido innecesario, un usuario puede etiquetar documentos con una etiqueta como "sin respuesta". Una vez que se ha revisado y etiquetado el contenido, se puede crear una búsqueda de espacio de trabajo para excluir cualquier Contenido etiquetado como "sin respuesta", lo que elimina este contenido de los pasos siguientes en el flujo de trabajo de eDiscovery. El panel de etiquetas se puede personalizar para cada caso, de modo que las etiquetas puedan admitir el flujo de trabajo de revisión previsto.
+Cuando expertos, abogados u otros usuarios revisan el contenido de un conjunto de revisión, se pueden capturar sus opiniones relacionadas con el contenido mediante el uso de etiquetas. Por ejemplo, si la intención es deseleccionar contenido innecesario, un usuario puede etiquetar documentos con una etiqueta como "sin respuesta". Una vez que se ha revisado y etiquetado el contenido, se puede crear una búsqueda de conjunto de revisión para excluir cualquier Contenido etiquetado como "sin respuesta", lo que elimina este contenido de los pasos siguientes en el flujo de trabajo de eDiscovery. El panel de etiquetas se puede personalizar para cada caso, de modo que las etiquetas puedan admitir el flujo de trabajo de revisión previsto.
 
 ## <a name="tag-types"></a>Tipos de etiquetas
 
-La exhibición avanzada de documentos electrónicos (versión preliminar) proporciona dos tipos de etiquetas:
+La exhibición avanzada de documentos electrónicos proporciona dos tipos de etiquetas:
 
 - **Etiquetas de opción única** : limita a los usuarios a seleccionar una sola etiqueta dentro de un grupo. Esto puede ser útil para asegurarse de que los usuarios no seleccionan etiquetas conflictivas como "receptivo" y "sin respuesta". 
 
@@ -43,7 +43,7 @@ La exhibición avanzada de documentos electrónicos (versión preliminar) propor
 
 ## <a name="tag-structure"></a>Estructura de etiquetas
 
-Además de los tipos de etiqueta, la estructura de las etiquetas que se organizan en el panel etiqueta se puede usar para que los documentos de etiquetado sean más intuitivos. Las etiquetas se agrupan por secciones. La búsqueda del conjunto de trabajo admite la capacidad de buscar por etiqueta y por sección de etiqueta. Esto significa que puede crear una búsqueda de conjunto de trabajo para recuperar documentos etiquetados con cualquier etiqueta en una sección.
+Además de los tipos de etiqueta, la estructura de las etiquetas que se organizan en el panel etiqueta se puede usar para que los documentos de etiquetado sean más intuitivos. Las etiquetas se agrupan por secciones. revisión Set Search admite la capacidad de buscar por etiqueta y por etiqueta. Esto significa que puede crear una búsqueda de conjunto de revisión para recuperar documentos etiquetados con cualquier etiqueta en una sección.
 
 ![Secciones de etiquetas en el panel etiqueta](../media/Tagtypes.png)
 
@@ -57,7 +57,7 @@ Hay varias formas de aplicar una etiqueta al contenido.
 
 ### <a name="tagging-a-single-document"></a>Etiquetado de un solo documento
 
-Al ver un documento en un conjunto de trabajo, puede mostrar las etiquetas que puede usar una revisión haciendo clic en **Panel de codificación**.
+Al ver un documento en un conjunto de revisiones, puede mostrar las etiquetas que puede usar una revisión haciendo clic en **Panel de codificación**.
 
 ![Haga clic en el panel de etiquetas para mostrar el panel de etiquetas](../media/Singledoctag.png)
 

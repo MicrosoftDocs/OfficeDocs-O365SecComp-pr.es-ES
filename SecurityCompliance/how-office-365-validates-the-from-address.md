@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyp
 manager: laurawi
 ms.date: 10/11/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.assetid: eef8408b-54d3-4d7d-9cf7-ad2af10b2e0e
 ms.collection:
 - M365-security-compliance
 description: 'Para ayudar a evitar la suplantación de identidad (phishing), Office 365 y Outlook.com requieren ahora el cumplimiento de RFC para de: addresses.'
-ms.openlocfilehash: e540e56a7a40d13a92719865fccefefa61de47c2
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 2721b66b18016269c8e4cc3684814faa402cec58
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32253938"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154292"
 ---
 # <a name="how-office-365-validates-the-from-address-to-prevent-phishing"></a>Cómo Office 365 valida la dirección from para evitar la suplantación de identidad
 

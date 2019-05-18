@@ -4,7 +4,7 @@ ms.author: brendonb
 author: brendonb
 manager: laurawi
 ms.date: 8/5/2016
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 f1_keywords:
 - O365M_APNCertMDM
@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: 522b43f4-a2ff-46f6-962a-dd4f47e546a7
 description: Para administrar dispositivos iOS como iPad y iPhone en la administración de dispositivos móviles para Office 365, siga estos pasos para crear primero un certificado de APNs.
-ms.openlocfilehash: 5f82690f0add5f1aae95a089d9cdfc0b320ae596
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 17dae3e02520cdac2b1381039844d1657b12c4eb
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258648"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153762"
 ---
 # <a name="create-an-apns-certificate-for-ios-devices"></a>Crear un certificado de APNs para dispositivos iOS
 
@@ -67,7 +67,7 @@ Para ello, siga los pasos del vínculo **configurar** en la página del portal. 
     
     ![Haga clic en el botón Examinar para seleccionar el certificado de APNS que ha descargado de Apple.](media/afe2849d-af23-4c55-9009-d8f25edaf6c0.png)
   
-7. Select **Finish**.
+7. Seleccione **Finalizar**.
     
 Volver a **seguridad del &amp; centro** \> de cumplimiento de seguridad **directivas** \> de **Administración** \> de dispositivos administre la **configuración** para completar la configuración. 
   

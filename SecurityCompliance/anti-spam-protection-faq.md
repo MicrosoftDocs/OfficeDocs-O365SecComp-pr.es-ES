@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 12/9/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,19 +14,19 @@ ms.assetid: c534a35d-b121-45da-9d0a-ce738ce51fce
 ms.collection:
 - M365-security-compliance
 description: En este tema encontrará las preguntas frecuentes y sus correspondientes respuestas sobre la protección contra el correo no deseado. Las respuestas sirven para los clientes de Microsoft Exchange Online y de Exchange Online Protection (EOP).
-ms.openlocfilehash: fa2709c995ff9ef83213b86e079a778c61bef3a2
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 9ea57d34e14697a0dec9005a7377f320ac53ed81
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32242498"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152382"
 ---
 # <a name="anti-spam-protection-faq"></a>Preguntas más frecuentes sobre protección contra correo electrónico no deseado
 
 En este tema encontrará las preguntas frecuentes y sus correspondientes respuestas sobre la protección contra el correo no deseado. Las respuestas sirven para los clientes de Microsoft Exchange Online y de Exchange Online Protection (EOP). 
   
 > [!TIP]
-> Para obtener preguntas y respuestas sobre las listas de remitentes seguros y bloqueados, vea [listas de remiteNtes seguros y bloqueados en Exchange Online](safe-sender-and-blocked-sender-lists-faq.md). Para ver las preguntas y sus correspondientes respuestas sobre la cuarentena, consulte [Preguntas más frecuentes sobre la cuarentena](quarantine-faq.md). 
+> Para obtener preguntas y respuestas sobre las listas de remitentes seguros y bloqueados, vea [listas de remitentes seguros y bloqueados en Exchange Online](safe-sender-and-blocked-sender-lists-faq.md). Para ver las preguntas y sus correspondientes respuestas sobre la cuarentena, consulte [Preguntas más frecuentes sobre la cuarentena](quarantine-faq.md). 
   
  **P: De manera predeterminada, ¿qué sucede con un mensaje de correo no deseado detectado?**
   

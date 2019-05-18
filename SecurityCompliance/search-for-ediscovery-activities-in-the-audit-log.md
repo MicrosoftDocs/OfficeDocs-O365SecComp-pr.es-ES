@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 10/24/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
@@ -12,12 +12,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
 description: Obtenga información sobre cómo buscar en el registro de auditoría de Office 365 eventos que se registran cuando los administradores de cumplimiento realizan tareas de caso de exhibición de documentos electrónicos y de búsqueda de contenido en el centro de seguridad & cumplimiento.
-ms.openlocfilehash: 62c58d123367fd5ee6778034716bc1deb5afc1e2
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 7be0cbd5a6cbdad0158228b808802200034265d5
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32260968"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158812"
 ---
 # <a name="search-for-ediscovery-activities-in-the-office-365-audit-log"></a>Buscar actividades de eDiscovery en el registro de auditoría de Office 365
 
@@ -73,7 +73,7 @@ En la tabla siguiente se describen las actividades relacionadas con la exhibici�
 > [!NOTE]
 > Las actividades de eDiscovery descritas en esta sección proporcionan información similar a las actividades del cmdlet de exhibición de documentos electrónicos que se describen en la siguiente sección. Le recomendamos que use las actividades de eDiscovery descritas en esta sección, ya que aparecerán en los resultados de la búsqueda del registro de auditoría en 30 minutos. Las actividades del cmdlet eDiscovery tardan hasta 24 horas en aparecer en los resultados de la búsqueda de registros de auditoría. 
   
-|**Nombre descriptivo**|**Operation**|**Cmdlet correspondiente**|**Descripción**|
+|**Nombre descriptivo**|**Operación**|**Cmdlet correspondiente**|**Descripción**|
 |:-----|:-----|:-----|:-----|
 |Se agregó un miembro al caso de eDiscovery  <br/> |CaseMemberAdded  <br/> |Add-ComplianceCaseMember  <br/> |Se ha agregado un usuario como miembro de un caso de exhibición de documentos electrónicos. Como miembro de un caso, un usuario puede realizar varias tareas relacionadas con casos en función de si se les han asignado los permisos necesarios.  <br/> |
 |Búsqueda de contenido modificada  <br/> |SearchUpdated  <br/> |Set-ComplianceSearch  <br/> |Se ha cambiado una búsqueda de contenido existente. Los cambios pueden incluir la adición o eliminación de ubicaciones de contenido o la edición de la consulta de búsqueda.  <br/> |
@@ -95,9 +95,9 @@ En la tabla siguiente se describen las actividades relacionadas con la exhibici�
 |Caso de exhibición de documentos electrónicos eliminado  <br/> |CaseRemoved  <br/> |Remove-ComplianceCase  <br/> |Se eliminó un caso de exhibición de documentos electrónicos. Tenga en cuenta que cualquier retención asociada con el caso debe quitarse antes de que se pueda eliminar el caso.  <br/> |
 |Filtro de permisos de búsqueda eliminados  <br/> |SearchPermissionRemoved  <br/> |Remove-ComplianceSecurityFilter  <br/> |Se eliminó un filtro de permisos de búsqueda.  <br/> |
 |Consulta de búsqueda eliminada para la suspensión de casos de eDiscovery  <br/> |HoldRemoved  <br/> |Remove-CaseHoldRule  <br/> |Se ha eliminado una retención basada en consulta asociada a un caso de exhibición de documentos electrónicos. La eliminación de la consulta de la retención suele ser el resultado de eliminar una suspensión. Cuando se elimina una consulta de suspensión o de retención, se sueltan las ubicaciones de contenido en suspensión.  <br/> |
-|Exportación de la búsqueda de contenido desCargada  <br/> |SearchExportDownloaded  <br/> |N/D  <br/> |Un usuario ha descargado los resultados de una búsqueda de contenido en su equipo local. Tenga en cuenta que es necesario iniciar una **exportación iniciada de la actividad de búsqueda de contenido** para poder descargar los resultados de la búsqueda.  <br/> |
+|Exportación de la búsqueda de contenido descargada  <br/> |SearchExportDownloaded  <br/> |N/D  <br/> |Un usuario ha descargado los resultados de una búsqueda de contenido en su equipo local. Tenga en cuenta que es necesario iniciar una **exportación iniciada de la actividad de búsqueda de contenido** para poder descargar los resultados de la búsqueda.  <br/> |
 |Vista previa de los resultados de la búsqueda de contenido  <br/> |SearchPreviewed  <br/> |N/D  <br/> |Un usuario ha dado la vista previa de los resultados de una búsqueda de contenido.  <br/> |
-|Resultados dePurados de la búsqueda de contenido  <br/> |SearchResultsPurged  <br/> |New-ComplianceSearchAction  <br/> |Un usuario purgó los resultados de una búsqueda de contenido mediante la ejecución del comando **New-ComplianceSearchAction-Purge** .  <br/> |
+|Resultados depurados de la búsqueda de contenido  <br/> |SearchResultsPurged  <br/> |New-ComplianceSearchAction  <br/> |Un usuario purgó los resultados de una búsqueda de contenido mediante la ejecución del comando **New-ComplianceSearchAction-Purge** .  <br/> |
 |Análisis quitado de la búsqueda de contenido  <br/> |RemovedSearchResultsSentToZoom  <br/> |Remove-ComplianceSearchAction  <br/> |Se eliminó una acción de preparación de búsqueda de contenido (para preparar los resultados de búsqueda para Office 365 Advanced eDiscovery). Si la acción de preparación fue de menos de dos semanas de antigüedad, los resultados de la búsqueda que se prepararon para eDiscovery avanzado se eliminaron del área de almacenamiento de Microsoft Azure. Si la acción de preparación era anterior a dos semanas, este evento indica que solo se eliminó la acción de preparación correspondiente.  <br/> |
 |Se ha quitado la búsqueda de exportación de contenido  <br/> |RemovedSearchExported  <br/> |Remove-ComplianceSearchAction  <br/> |Se eliminó una acción de exportación de búsqueda de contenido. Si la acción de exportación era anterior a dos semanas, los resultados de la búsqueda que se cargaron en el área de almacenamiento de Microsoft Azure se eliminaron. Si la acción de exportación era anterior a dos semanas, este evento indica que solo se eliminó la acción de exportación correspondiente.  <br/> |
 |Miembro quitado del caso de eDiscovery  <br/> |CaseMemberRemoved  <br/> |Remove-ComplianceCaseMember  <br/> |Un usuario se quitó como miembro de un caso de exhibición de documentos electrónicos.  <br/> |
@@ -167,12 +167,12 @@ En la tabla siguiente se describen las propiedades que se incluyen al hacer clic
 |Exclusiones  <br/> |Ubicaciones de buzones o sitios que se excluyen de una búsqueda de contenido o una retención en un caso de exhibición de documentos electrónicos.  <br/> |
 |ExtendedProperties  <br/> |Propiedades adicionales de una búsqueda de contenido, una acción de búsqueda de contenido o una retención en un caso de exhibición de documentos electrónicos, como el GUID del objeto y el cmdlet correspondiente y los parámetros del cmdlet que se usaron cuando se realizó la actividad.  <br/> |
 |Id  <br/> |IDENTIFICADOR de la entrada de informe. El identificador identifica de forma única la entrada del registro de auditoría.  <br/> |
-|NonPIIParameters  <br/> |Una lista de los parámetros (sin valores) que se usaron con el cmdlet identificado en la propiedad Operation. Los parámetros que aparecen en esta propiedad son los mismos que los que aparecen en la propiedad paraMeters.  <br/> |
+|NonPIIParameters  <br/> |Una lista de los parámetros (sin valores) que se usaron con el cmdlet identificado en la propiedad Operation. Los parámetros que aparecen en esta propiedad son los mismos que los que aparecen en la propiedad parameters.  <br/> |
 |ObjectId  <br/> |GUID o nombre del objeto (por ejemplo, una búsqueda de contenido o un caso de exhibición de documentos electrónicos) que ha creado, cambiado o eliminado la actividad enumerada en la propiedad Operation. Este objeto también se identifica en la columna elemento de los resultados de la búsqueda de registros de auditoría.  <br/> |
 |ObjectType  <br/> |El tipo de objeto de exhibición de documentos electrónicos que el usuario ha creado, eliminado o modificado; por ejemplo, una acción de búsqueda de contenido (vista previa, exportación o purga), un caso de exhibición de documentos electrónicos o una búsqueda de contenido.  <br/> |
 |Operación  <br/> |El nombre de la operación que corresponde a la actividad de exhibición de documentos electrónicos que se realizó.  <br/> |
 |OrganizationId  <br/> |El GUID de la organización de Office 365.  <br/> |
-|Parameters  <br/> |El nombre y el valor de los parámetros que se usaron con el cmdlet correspondiente.  <br/> |
+|Parámetros  <br/> |El nombre y el valor de los parámetros que se usaron con el cmdlet correspondiente.  <br/> |
 |PublicFolderLocations  <br/> |Las ubicaciones de carpetas públicas en Exchange online que se incluyen en una búsqueda de contenido o se colocan en suspensión en un caso de exhibición de documentos electrónicos.  <br/> |
 |Consulta  <br/> |La consulta de búsqueda asociada a la actividad, como una búsqueda de contenido o una suspensión basada en consulta.  <br/> |
 |RecordType  <br/> |El tipo de operación indicado por el registro. El valor **18** indica un evento relacionado con una actividad enumerada en la sección [actividades del cmdlet de exhibición](#ediscovery-cmdlet-activities) de documentos electrónicos. Un valor de **24** indica un evento relacionado con una actividad enumerada en la sección [Cómo buscar y ver actividades de eDiscovery](#how-to-search-for-and-view-ediscovery-activities) .  <br/> |

@@ -1,10 +1,10 @@
 ---
-title: Recopilar datos para un caso en eDiscovery avanzado (versión preliminar)
+title: Recopilar datos para un caso en eDiscovery avanzado
 ms.author: esclee
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,18 +14,18 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: fb4b36841394576c44667f9677507c5655179e45
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 8e67c3c8a693e627bade9e581f0f1e246bf6802a
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32242558"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151894"
 ---
-# <a name="collect-data-for-a-case-in-advanced-ediscovery-preview"></a>Recopilar datos para un caso en eDiscovery avanzado (versión preliminar)
+# <a name="collect-data-for-a-case-in-advanced-ediscovery"></a>Recopilar datos para un caso en eDiscovery avanzado
 
-Una vez que haya identificado los custodios y los orígenes de datos que sean de interés para su caso, es el momento de identificar el conjunto de documentos en los que profundizar. Puede usar la herramienta de búsqueda en la exhibición avanzada de documentos electrónicos (versión preliminar) para identificarlos de las instalaciones y las que no son de custodia en Office 365.
+Una vez que haya identificado los custodios y los orígenes de datos que sean de interés para su caso, es el momento de identificar el conjunto de documentos en los que profundizar. Puede usar la herramienta de búsqueda en la exhibición avanzada de documentos electrónicos para identificarlos de las instalaciones y las que no son de custodia en Office 365.
 
-Después de ejecutar una búsqueda, podrá ver las estadísticas de los elementos recuperados, como las ubicaciones en las que la mayoría de los elementos coinciden con la consulta de búsqueda. También puede obtener una vista previa de un subconjunto de los resultados. Cuando haya identificado el conjunto de documentos que desea examinar con más detalle, puede Agregar los resultados de la búsqueda a un conjunto de trabajo para recopilar y procesar.
+Después de ejecutar una búsqueda, podrá ver las estadísticas de los elementos recuperados, como las ubicaciones en las que la mayoría de los elementos coinciden con la consulta de búsqueda. También puede obtener una vista previa de un subconjunto de los resultados. Cuando haya identificado el conjunto de documentos que desea examinar con más detalle, puede Agregar los resultados de la búsqueda a un conjunto de revisión para recopilar y procesar.
 
 ## <a name="create-a-search"></a>Create a search
 
@@ -34,7 +34,7 @@ Si hace clic en **nueva búsqueda** en la ficha **búsquedas** , se iniciará un
 Una vez creada la búsqueda, se muestra una página de control flotante con los detalles. Tenga en cuenta que los botones **estadísticas** y **vista previa** aparecen inicialmente atenuados porque la búsqueda todavía no se ha completado. Puede realizar un seguimiento del progreso de la búsqueda en la ficha **búsquedas** .
 
 ## <a name="view-search-results-and-statistics"></a>Ver los resultados de la búsqueda y las estadísticas
-Hay dos componentes de una búsqueda de contenido: Statistics (Estimations) y preView. Cuando se completen todos estos componentes, verá que el estado mostrado en las columnas correspondientes de la ficha **búsquedas** cambia desde **enviado** a **en curso** a **completado**.
+Hay dos componentes de una búsqueda de contenido: Statistics (Estimations) y Preview. Cuando se completen todos estos componentes, verá que el estado mostrado en las columnas correspondientes de la ficha **búsquedas** cambia desde **enviado** a **en curso** a **completado**.
 
 Una vez completada la estimación de búsqueda, haga clic en la búsqueda para mostrar la página de control flotante, que mostrará algunas estadísticas de alto nivel sobre los resultados de la búsqueda. En este momento, el botón **estadísticas** estará activo. Puede hacer clic en él para ver las estadísticas de búsqueda, como:
 
@@ -46,6 +46,6 @@ Para obtener más información acerca de las estadísticas de búsqueda, vea [es
 
 Una vez completada la vista previa, el botón **vista previa** estará activo. Haga clic en él para obtener una vista previa de un subconjunto muestreado de los resultados.
 
-## <a name="adding-search-results-to-a-working-set"></a>Adición de resultados de búsqueda a un conjunto de trabajo
+## <a name="adding-search-results-to-a-review-set"></a>Adición de resultados de búsqueda a un conjunto de revisión
 
-Cuando esté listo para recopilar y procesar los resultados completos de una búsqueda, puede hacerlo si lo agrega a un conjunto de trabajo. Para obtener más información, consulte [Agregar datos a un conjunto de trabajo](add-data-to-working-set.md). 
+Cuando esté listo para recopilar y procesar los resultados completos de una búsqueda, puede hacerlo agregándolo a un conjunto de revisión. Para obtener más información, consulte [Agregar datos a un conjunto de revisión](add-data-to-review-set.md). 

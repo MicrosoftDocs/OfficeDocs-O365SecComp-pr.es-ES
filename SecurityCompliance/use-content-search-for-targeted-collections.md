@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
@@ -12,12 +12,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 description: Use la búsqueda de contenido en el centro de seguridad & cumplimiento para realizar colecciones de destino. Una colección de destino significa que tiene la certeza de que los elementos que responden a un caso o los elementos con privilegios están ubicados en un buzón o carpeta de sitio específicos. Use el script de este artículo para obtener el identificador de carpeta o la ruta de acceso de las carpetas de sitio o de buzón de correo específicas que desea buscar.
-ms.openlocfilehash: 3d9a82926a08b3f7f1f245146e70d79617e7a413
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 476478f3f4d5c2d1992989eac790068f28ba747f
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32264032"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156312"
 ---
 # <a name="use-content-search-in-office-365-for-targeted-collections"></a>Usar la búsqueda de contenido en Office 365 para colecciones dirigidas
 
@@ -231,9 +231,9 @@ Después de ejecutar el script para recopilar una lista de identificadores de ca
     
 6. Haga clic en **Siguiente**.
     
-7. En el cuadro palabra clave de la página **¿qué desea que busquemos?** , pegue el `folderid:<folderid>` valor `documentlink:<path>` o deVuelto por el script en el paso 1. 
+7. En el cuadro palabra clave de la página **¿qué desea que busquemos?** , pegue el `folderid:<folderid>` valor `documentlink:<path>` o devuelto por el script en el paso 1. 
     
-    Por ejemplo, en la siguiente captura de pantalla se buscará cualquier elemento de la subcarpeta dePuraciones en la carpeta elementos recuperables del usuario (el valor de la `folderid` propiedad de la subcarpeta purgas se muestra en la captura de pantalla del paso 1):
+    Por ejemplo, en la siguiente captura de pantalla se buscará cualquier elemento de la subcarpeta depuraciones en la carpeta elementos recuperables del usuario (el valor de la `folderid` propiedad de la subcarpeta purgas se muestra en la captura de pantalla del paso 1):
     
     ![Pegue el folderId o documentlink en el cuadro de palabras clave de la consulta de búsqueda](media/84057516-b663-48a4-a78f-8032a8f8da80.png)
   

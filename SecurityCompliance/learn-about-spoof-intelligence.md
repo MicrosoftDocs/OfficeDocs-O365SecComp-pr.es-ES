@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 10/22/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.assetid: 978c3173-3578-4286-aaf4-8a10951978bf
 ms.collection:
 - M365-security-compliance
 description: Use inteligencia de identidad en el &amp; centro de seguridad y cumplimiento en la página Configuración contra correo no deseado para revisar todos los remitentes que suplantan dominios que forman parte de la organización o suplantación de dominios externos. La inteligencia de identidad está disponible como parte de Office 365 Enterprise E5 o por separado como parte de la protección contra amenazas avanzada y de Exchange Online Protection.
-ms.openlocfilehash: 0d18b5f011597266a3a975d49722e88b411c52d8
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: d75c2efc2314b3227c65ec31ef1e0a0d6f931c13
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32252288"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155942"
 ---
 # <a name="learn-more-about-spoof-intelligence"></a>Obtener más información sobre la inteligencia de suplantación de identidad
 
@@ -48,7 +48,7 @@ Los dominios externos suelen enviar correo electrónico falso y muchos de estos 
     
 Necesita una forma de asegurarse de que el correo enviado por los suplantadores de identidad legítima no se quede atrapado en los filtros de correo no deseado en Office 365 o en los sistemas de correo electrónico externos. Normalmente, Office 365 trata estos mensajes de correo electrónico como correo no deseado. Como administrador de Office 365, tiene la posibilidad de evitar esto configurando filtros falsos en el centro de &amp; seguridad y cumplimiento. Si es el propietario del dominio, puede configurar SPF, DKIM y DMARC para permitir estos remitentes.
   
-Por otra parte, los usuarios malintencionados malintencionados, los remitentes que están suplantando su dominio o dominios externos para enviar correo no deseado o de suplantación de identidad (phishing), deben estar bloqueados. La suPlantación de identidad también es una forma común para que los phish obtengan las credenciales del usuario. Office 365 tiene una protección de suplantación integrada para ayudar a proteger a su organización de los remitentes de estos correos electrónicos malintencionados. La protección contra la suPlantación de identidad de los dominios de su organización siempre está activada para todos los clientes de Office 365 y la protección de suplantación de dominio externa está activada de forma predeterminada para los clientes de la protección contra amenazas avanzada y los clientes de EOP de octubre de 2018 también. Para reforzar aún más esta protección, díganos qué remitentes están autorizados a suplantar los dominios de su organización y enviar correo electrónico en su nombre, y si se permite que los dominios externos suplante. Los mensajes de correo electrónico enviados por un remitente que no autorice se tratarán como correo no deseado o suplantación de identidad en Office 365. No deje de mirar a los remitentes que falsifican su dominio y nos ayudan a mejorar la inteligencia &amp; de la identidad mediante el centro de seguridad y cumplimiento.
+Por otra parte, los usuarios malintencionados malintencionados, los remitentes que están suplantando su dominio o dominios externos para enviar correo no deseado o de suplantación de identidad (phishing), deben estar bloqueados. La suplantación de identidad también es una forma común para que los phish obtengan las credenciales del usuario. Office 365 tiene una protección de suplantación integrada para ayudar a proteger a su organización de los remitentes de estos correos electrónicos malintencionados. La protección contra la suplantación de identidad de los dominios de su organización siempre está activada para todos los clientes de Office 365 y la protección de suplantación de dominio externa está activada de forma predeterminada para los clientes de la protección contra amenazas avanzada y los clientes de EOP de octubre de 2018 también. Para reforzar aún más esta protección, díganos qué remitentes están autorizados a suplantar los dominios de su organización y enviar correo electrónico en su nombre, y si se permite que los dominios externos suplante. Los mensajes de correo electrónico enviados por un remitente que no autorice se tratarán como correo no deseado o suplantación de identidad en Office 365. No deje de mirar a los remitentes que falsifican su dominio y nos ayudan a mejorar la inteligencia &amp; de la identidad mediante el centro de seguridad y cumplimiento.
   
 ## <a name="managing-spoof-intelligence-in-the-security-amp-compliance-center"></a>Administración de inteligencia de identidad en &amp; el centro de seguridad y cumplimiento
 <a name="Managespooflist"> </a>
@@ -60,7 +60,7 @@ Puede revisar los remitentes que están suplantando su dominio o dominios extern
 |**Parámetro**|**Descripción**|
 |:-----|:-----|
 |Remitente  <br/> |También se denomina remitente real. Suele ser el dominio desde el que se origina el correo electrónico de suplantación de identidad. Office 365 determina el dominio del registro DNS de puntero (PTR) de la dirección IP de envío que está suplantando la identidad de su organización. Si no se encuentra ningún dominio, el informe muestra la dirección IP del remitente en su lugar.  <br/> |
-|Usuario suPlantado  <br/> |La cuenta de usuario que el remitente suplantará.  <br/> Solo pestaña **interna** . Este campo contiene una sola dirección de correo electrónico o, si el remitente imita varias cuentas de usuario, contiene **más de una**.  <br/> Sólo la pestaña **externa** . Los dominios externos solo contienen un dominio de envío y no contienen una dirección de correo electrónico completa.  <br/> **Sugerencia! Para administradores avanzados.** El usuario suplantado es la dirección de (5322. from), que también es la dirección que se muestra como dirección from por el cliente de correo. A veces, se denomina la dirección header. from. SPF no comprueba la validez de esta dirección.           |
+|Usuario suplantado  <br/> |La cuenta de usuario que el remitente suplantará.  <br/> Solo pestaña **interna** . Este campo contiene una sola dirección de correo electrónico o, si el remitente imita varias cuentas de usuario, contiene **más de una**.  <br/> Sólo la pestaña **externa** . Los dominios externos solo contienen un dominio de envío y no contienen una dirección de correo electrónico completa.  <br/> **Sugerencia! Para administradores avanzados.** El usuario suplantado es la dirección de (5322. from), que también es la dirección que se muestra como dirección from por el cliente de correo. A veces, se denomina la dirección header. from. SPF no comprueba la validez de esta dirección.           |
 |Número de mensajes  <br/> |El número de mensajes de correo enviados por el remitente a su organización en nombre del remitente o los remitentes suplantados que se han identificado en los últimos 30 días.  <br/> |
 |Número de quejas del usuario  <br/> |Quejas enviadas por los usuarios contra este remitente por parte de los usuarios en los últimos 30 días. Las quejas suelen estar en forma de envíos de correo no deseado a Microsoft.  <br/> |
 |Resultado de autenticación  <br/> |Este valor se **pasa** si el remitente ha superado las comprobaciones de autenticación del remitente de Exchange Online Protection (EOP), como SPF o DKIM, **produjo un error** si el remitente no supera las **** comprobaciones de autenticación de remitentes de EOP, o se desconoce si el resultado de estas comprobaciones no es válida.  <br/> |

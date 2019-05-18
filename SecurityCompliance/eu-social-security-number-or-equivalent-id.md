@@ -4,18 +4,18 @@ ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: 8/17/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: En este tema se muestra qué busca una directiva de prevención de pérdida de datos (DLP) cuando detecta el número de la seguridad social de la UE o el tipo de información confidencial del identificador equivalente. Este tipo de información confidencial define distintos patrones, palabras clave y otras pruebas para cada país.
-ms.openlocfilehash: c0c808eafa52209c79f3b4e8a2113f587fd8a771
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: b42a8d927e18f813eb6ef6d1d55b2de15ea9dcd5
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255558"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154492"
 ---
 # <a name="eu-social-security-number-or-equivalent-id"></a>Número de la seguridad social de la UE o identificador equivalente
 
@@ -88,11 +88,11 @@ código de seguro
   
 número de código de seguro
   
-socialsecurityno #
+socialsecurityno#
   
 sozialversicherungsnummer
   
-Soziale Sicherheit kein
+soziale sicherheit kein
   
 versicherungsnummer
   
@@ -145,7 +145,7 @@ número nacional
   
 social security number
   
-nationalnumber #
+nationalnumber#
   
 SSN
   
@@ -153,13 +153,13 @@ SSN
   
 nationalnumber
   
-BNN #
+bnn#
   
-BNN
+bnn
   
 número de identificación personal
   
-personalidnumber #
+personalidnumber#
   
 numéro nacional
   
@@ -169,9 +169,9 @@ numéro d'assuré
   
 Nacional del identificador
   
-identifiantnational #
+identifiantnational#
   
-numéronational #
+numéronational#
   
 ## <a name="croatia"></a>Croacia
 
@@ -228,7 +228,7 @@ national identification number
   
 social security number
   
-nationalnumber #
+nationalnumber#
   
 SSN
   
@@ -236,13 +236,13 @@ SSN
   
 nationalnumber
   
-BNN #
+bnn#
   
-BNN
+bnn
   
 número de identificación personal
   
-personalidnumber #
+personalidnumber#
   
 OIB
   
@@ -307,7 +307,7 @@ número de identificación personal
   
 social security number
   
-nationalnumber #
+nationalnumber#
   
 SSN
   
@@ -317,7 +317,7 @@ número nacional
   
 número de identificación personal
   
-personalidnumber #
+personalidnumber#
   
 rč
   
@@ -380,7 +380,7 @@ national identification number
   
 social security number
   
-nationalnumber #
+nationalnumber#
   
 SSN
   
@@ -390,7 +390,7 @@ número nacional
   
 número de identificación personal
   
-personalidnumber #
+personalidnumber#
   
 CPR-Nummer
   
@@ -461,7 +461,7 @@ número de identidad
   
 número de identificación nacional finlandesa
   
-personalidnumber #
+personalidnumber#
   
 national identification number
   
@@ -479,19 +479,19 @@ henkilötunnus
   
 yksilöllinen henkilökohtainen tunnistenumero
   
-Ainutlaatuinen henkilökohtainen Tunnus
+ainutlaatuinen henkilökohtainen tunnus
   
 identiteetti numero
   
-Suomen Kansallinen henkilötunnus
+suomen kansallinen henkilötunnus
   
-henkilötunnusnumero #
+henkilötunnusnumero#
   
 kansallisen tunnistenumero
   
 tunnusnumero
   
-Kansallinen Tunnus numero
+kansallinen tunnus numero
   
 hetu
   
@@ -556,15 +556,15 @@ social security number
   
 NúmeroSeguridadSocial
   
-hssn #
+hssn#
   
 socialsecuritynno
   
 hssn
   
-Taj
+taj
   
-Taj #
+taj#
   
 SSN
   
@@ -576,13 +576,13 @@ n.º de seguridad social
   
 közösségi adószám
   
-Általános forgalmi adó szám
+általános forgalmi adó szám
   
 hozzáadottérték adó
   
 áfa szám
   
-Magyar áfa szám
+magyar áfa szám
   
 ## <a name="portugal"></a>Portugal
 
@@ -608,7 +608,7 @@ Para obtener más información, consulte la sección "número de la seguridad so
     
   - El último dígito del número de serie indica el sexo por la asignación de un número impar para macho y un número par para hembras
     
-  - Hasta 1990, la asignación de número de serie que se corresponde con el condado en el que nació el portador del número o (si nació antes de 1947) donde estuvo viviendo, de acuerdo con los registros fiscales, el 1 de enero de 1947, con un código especial (por lo general, 9 como el séptimo dígito) para Immigrants 
+  - Hasta 1990, la asignación de número de serie que se corresponde con el condado en el que nació el portador del número o (si nació antes de 1947) donde estuvo viviendo, de acuerdo con los registros fiscales, el 1 de enero de 1947, con un código especial (por lo general, 9 como el séptimo dígito) para immigrants 
     
 - Un dígito de control
     
@@ -667,9 +667,9 @@ personnummer
   
 identifikationsnumret
   
-personnummer #
+personnummer#
   
-identifikationsnumret #
+identifikationsnumret#
   
 ## <a name="see-also"></a>Vea también
 

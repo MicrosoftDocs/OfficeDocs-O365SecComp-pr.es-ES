@@ -4,7 +4,7 @@ ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Priority
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de confidencialidad, puede restringir el acceso al contenido al que se aplique la etiqueta. Las etiquetas de confidencialidad pueden utilizar el cifrado para proteger el contenido.
-ms.openlocfilehash: 41e1a9f1c789d555b1b5db3204b13f3279a6b56a
-ms.sourcegitcommit: d17ef25bf2a638c867cd399fff6c961ffeccaba4
+ms.openlocfilehash: 20d547a66309382c3ae3229540a23cd47e18460c
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33628335"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153272"
 ---
 # <a name="restrict-access-to-content-by-using-encryption-in-sensitivity-labels"></a>Restringir el acceso al contenido mediante el cifrado en las etiquetas de confidencialidad
 

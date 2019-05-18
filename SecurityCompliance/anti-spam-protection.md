@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 6/29/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre la configuración y los filtros contra correo no deseado que le ayudarán a evitar el correo no deseado en Exchange Online y Office 365. ¿Obtengo mucho correo no deseado en Office 365? Puede personalizar los filtros de correo no deseado y la configuración de la Directiva contra correo no deseado.
-ms.openlocfilehash: 253ef10ac98b10377252a7a43fa306dd5a0ea90a
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 64048e2621082edae21285df8b8fd1bcbd2e7c4a
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32242518"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152332"
 ---
 # <a name="office-365-email-anti-spam-protection"></a>Protección contra spam para el correo electrónico de Office 365
 
@@ -61,7 +61,7 @@ Para obtener más información, consulte el tema [Configure Spam Filter Policies
 
 - **DomainKeys Identified Mail (DKIM)**: DKIM le permite adjuntar una firma digital a los mensajes de correo electrónico en el encabezado del mensaje de los correos electrónicos que envía. Los sistemas de correo electrónico que reciben correo electrónico de su dominio usan esta firma digital para determinar si el correo electrónico entrante que reciben es legítimo. Para obtener información sobre DKIM y Office 365, vea [usar DKIM para validar el correo electrónico saliente enviado desde su dominio en Office 365](https://technet.microsoft.com/library/mt695945%28v=exchg.150%29.aspx).
 
-- **Autenticación de mensajes basada en dominio, informes y cumplimiento (dMarc)**: dMarc ayuda a los sistemas de correo a determinar qué hacer con los mensajes que no superen las comprobaCIONES de SPF o DKIM y proporciona otro nivel de confianza para los asociados de correo electrónico. Para obtener información sobre cómo configurar DMARC, vea [usar dMarc para validar el correo electrónico en Office 365](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx).
+- **Autenticación de mensajes basada en dominio, informes y cumplimiento (dMarc)**: dMarc ayuda a los sistemas de correo a determinar qué hacer con los mensajes que no superen las comprobaciones de SPF o DKIM y proporciona otro nivel de confianza para los asociados de correo electrónico. Para obtener información sobre cómo configurar DMARC, vea [usar dMarc para validar el correo electrónico en Office 365](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx).
 
 Si está preocupado por el correo no deseado, la suplantación de identidad (phishing) y la suplantación de identidad en Office 365, use SPF, DKIM y DMARC conjuntamente para evitar el correo no deseado y la suplantación de identidad.
   

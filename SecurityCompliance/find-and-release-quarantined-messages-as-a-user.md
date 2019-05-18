@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 5/19/2018
-ms.audience: Consumer/IW
+audience: Consumer/IW
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.assetid: efff08ec-68ff-4099-89b7-266e3c4817be
 ms.collection:
 - M365-security-compliance
 description: 'Como usuario de Office 365, puede administrar sus propios mensajes de correo no deseado en cuarentena de dos maneras: respondiendo a las notificaciones de correo no deseado que se le envían directamente (si el administrador ha configurado esta característica) o mediante la característica de cuarentena de correo &amp; no deseado en el cumplimiento de seguridad Datacenter.'
-ms.openlocfilehash: acbf862f05a9282a26444b738400d29c03d07f1f
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: ec4ebff4de0d1de44d7838bbf5baee46227ffe4d
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255208"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152822"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-office-365"></a>Buscar y liberar mensajes en cuarentena como un usuario en Office 365
 

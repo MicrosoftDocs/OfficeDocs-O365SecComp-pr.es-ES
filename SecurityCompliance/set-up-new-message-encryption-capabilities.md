@@ -3,8 +3,8 @@ title: Configurar las nuevas capacidades de cifrado de mensajes de Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 4/12/2019
-ms.audience: ITPro
+ms.date: 4/30/2019
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Nuevas capacidades de cifrado de mensajes de Office 365 basadas en Azure Information Protection, su organización puede usar la comunicación de correo electrónico protegida con personas de dentro y fuera de la organización. Las nuevas capacidades de OME funcionan con otras organizaciones de Office 365, Outlook.com, gmail y otros servicios de correo electrónico.
-ms.openlocfilehash: ea8756d08b1c172c433d6cd8ad1752c4c7ad64e9
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 415e598a28033271b115aff639fb1ddd7a6345af
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32260758"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156512"
 ---
 # <a name="set-up-new-office-365-message-encryption-capabilities"></a>Configurar las nuevas capacidades de cifrado de mensajes de Office 365
 
@@ -44,7 +44,7 @@ Azure RMS también se activa automáticamente en la mayoría de los planes elegi
 >[!IMPORTANT]
 >Si usa Active Directory Rights Management Service (AD RMS) con Exchange Online, debe [migrar a Azure Information Protection para](https://docs.microsoft.com/en-us/azure/information-protection/migrate-from-ad-rms-to-azure-rms) poder usar las nuevas funcionalidades de OME. OME no es compatible con AD RMS.  
 
-Para más información, visite:
+Para obtener más información, vea:
 
 - [¿Qué suscripciones necesito para usar las nuevas capacidades de OME?](ome-faq.md#what-subscriptions-do-i-need-to-use-the-new-ome-capabilities) para comprobar si el plan de suscripción incluye Azure Information Protection (que incluye la funcionalidad de Azure RMS).
 - [Azure Information Protection](https://azure.microsoft.com/en-us/services/information-protection/) para obtener información sobre cómo comprar una suscripción elegible.  
@@ -70,7 +70,7 @@ Puede comprobar que el inquilino de Office 365 está configurado correctamente p
 
 2. Ejecute el cmdlet Get-IRMConfiguration.
 
-     Debe ver un valor de $True para el parámetro AzureRMSEnabled, que indica que OME está configurado en el espacio empresarial. Si no es así, use set-IRMConfiguration para establecer el valor de AzureRMSEnabled en $True para habilitar OME.
+     Debe ver un valor de $True para el parámetro AzureRMSLicensingEnabled, que indica que OME está configurado en el espacio empresarial. Si no es así, use set-IRMConfiguration para establecer el valor de AzureRMSLicensingEnabled en $True para habilitar OME.
 
 3. Ejecute el cmdlet test-IRMConfiguration con la siguiente sintaxis:
 
@@ -131,5 +131,5 @@ Para actualizar las reglas existentes para usar las nuevas capacidades de OME:
     - Seleccione **modificar la seguridad de los mensajes**.
     - Seleccione **aplicar el cifrado de mensajes de Office 365 y la protección de derechos**.
     - Seleccione una plantilla RMS de la lista.
-    - Seleccione **Guardar**.
+    - Haga clic en **Guardar**.
     - Seleccione **Aceptar**.

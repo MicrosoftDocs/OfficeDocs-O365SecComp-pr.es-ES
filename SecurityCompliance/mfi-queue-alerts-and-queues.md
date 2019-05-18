@@ -3,18 +3,18 @@ title: Colas y alertas de cola
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
 description: Los administradores pueden obtener información sobre las alertas de cola y las colas del panel del flujo de correo en el centro de seguridad & cumplimiento.
-ms.openlocfilehash: 490665bb6b062c5a0b93c988adea9eeb9827cb86
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 149a1d82b3627037db2ab5c6e1427c79a49535bd
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32267724"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158762"
 ---
 # <a name="queue-alerts-and-queues"></a>Colas y alertas de cola
 
@@ -26,7 +26,7 @@ Cuando los mensajes no se pueden enviar desde la organización de Office 365 a l
 
 - Ha habido cambios en la red o en el firewall en su entorno local.
 
-Office 365 seguirá reintentando la entrega durante 48 horas. TransCurridos 48 horas, los mensajes expirarán y se devolverán a los remitentes en informes de no entrega (también conocidos como NDR o mensajes de devolución).
+Office 365 seguirá reintentando la entrega durante 48 horas. Transcurridos 48 horas, los mensajes expirarán y se devolverán a los remitentes en informes de no entrega (también conocidos como NDR o mensajes de devolución).
 
 Si el volumen de correo electrónico en cola supera el umbral predefinido (el valor predeterminado es de 2000 mensajes), las alertas estarán disponibles en el panel de flujo de correo en las **alertas recientes**y los administradores recibirán una notificación por correo electrónico (a su dirección de correo electrónico alternativa) . Para configurar el umbral de alerta, el límite de notificaciones diarias y los destinatarios de la alerta, consulte la sección **personalizar colas de alertas** a continuación.
 
@@ -70,6 +70,6 @@ Al hacer clic en el número de mensajes en cola en las **colas**, los detalles d
 
 ![Detalles de la cola](media/4eb088fe-5dd9-4bf4-b959-c1bb2545c515.png)
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 
 Para obtener más información acerca de otras indicaciones de flujo de correo en el panel de flujo de correo, consulte [mail Flow Insights en el centro de seguridad _AMP_ cumplimiento](mail-flow-insights.md).

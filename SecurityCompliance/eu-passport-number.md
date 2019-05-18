@@ -4,18 +4,18 @@ ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: 8/16/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: En este tema se muestra qué busca una directiva de prevención de pérdida de datos (DLP) cuando detecta el tipo de información confidencial de número de pasaporte de la UE. Este tipo de información confidencial define distintos patrones, palabras clave y otras pruebas para cada país.
-ms.openlocfilehash: 3ab92e87607f41cffa8c15f1179a4eef5369cb29
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: fa3be04dec0f71a2568e046abd6b0af3e20181c5
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256828"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152972"
 ---
 # <a name="eu-passport-number"></a>Número de pasaporte de la UE
 
@@ -181,7 +181,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 | |
 |**Keywords_croatia_eu_passport_number**|
 |:-----|
-|passport number  <br/> número de pasaporte de croata  <br/> n.º de pasaporte  <br/> Broj putovnice  <br/> |
+|passport number  <br/> número de pasaporte de croata  <br/> n.º de pasaporte  <br/> broj putovnice  <br/> |
    
 ## <a name="cyprus"></a>Chipre
 
@@ -513,7 +513,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 | |
 |**Keywords_italy_eu_passport_number**|
 |:-----|
-|número de pasaporte Italiano  <br/> Repubblica Italiana Passaporto  <br/> Passaporto  <br/> Passaporto italiana  <br/> passport number  <br/> italiana Passaporto numero  <br/> Passaporto numero  <br/> numéro passeport Italien  <br/> numéro passeport  <br/> |
+|número de pasaporte Italiano  <br/> repubblica italiana passaporto  <br/> passaporto  <br/> passaporto italiana  <br/> passport number  <br/> italiana passaporto numero  <br/> passaporto numero  <br/> numéro passeport italien  <br/> numéro passeport  <br/> |
    
 ## <a name="latvia"></a>Letonia
 
@@ -556,7 +556,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 | |
 |**Keywords_latvia_eu_passport_number**|
 |:-----|
-|passport number  <br/> número de pasaporte de letón  <br/> n.º de pasaporte  <br/> Pase numurs  <br/> |
+|passport number  <br/> número de pasaporte de letón  <br/> n.º de pasaporte  <br/> pase numurs  <br/> |
    
 ## <a name="lithuania"></a>Lituania
 
@@ -712,7 +712,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 | |
 |**Keywords_netherlands_eu_passport_number**|
 |:-----|
-|número de pasaporte holandés  <br/> passport number  <br/> número de pasaporte de Holanda  <br/> Nederlanden paspoort Nummer  <br/> paspoort  <br/> Nederlanden paspoortnummer  <br/> paspoortnummer  <br/> |
+|número de pasaporte holandés  <br/> passport number  <br/> número de pasaporte de Holanda  <br/> nederlanden paspoort nummer  <br/> paspoort  <br/> nederlanden paspoortnummer  <br/> paspoortnummer  <br/> |
    
 ## <a name="poland"></a>Polonia
 
@@ -837,7 +837,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 | |
 |**Keywords_slovakia_eu_passport_number**|
 |:-----|
-|passport number  <br/> número de pasaporte de eslovaco  <br/> n.º de pasaporte  <br/> číslo Pasu  <br/> |
+|passport number  <br/> número de pasaporte de eslovaco  <br/> n.º de pasaporte  <br/> číslo pasu  <br/> |
    
 ## <a name="slovenia"></a>Eslovenia
 
@@ -927,7 +927,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 | |
 |**Keywords_spain_eu_passport_number**|
 |:-----|
-|usuarios  <br/> pasaporte de España  <br/> libro de Passport  <br/> passport number  <br/> n.º de pasaporte  <br/> libreta pasaporte  <br/> número pasaporte  <br/> España pasaporte  <br/> pasaporte  <br/> |
+|usuarios  <br/> pasaporte de España  <br/> libro de Passport  <br/> passport number  <br/> n.º de pasaporte  <br/> libreta pasaporte  <br/> número pasaporte  <br/> españa pasaporte  <br/> pasaporte  <br/> |
    
 ## <a name="sweden"></a>Suecia
 

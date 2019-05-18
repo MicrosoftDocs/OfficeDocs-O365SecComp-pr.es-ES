@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 8/2/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Obtenga información sobre cómo Exchange Online y Office 365 usan la seguridad de la capa de transporte (TLS) y la confidencialidad directa (FS) para proteger las comunicaciones de correo electrónico. Obtenga también información sobre el certificado emitido por Microsoft para Exchange Online.
-ms.openlocfilehash: e80f477c807f3a7ad5f751e0987b191024c816d9
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: f23b71984302639835537beb757e9089f44ee0c9
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255638"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152882"
 ---
 # <a name="how-exchange-online-uses-tls-to-secure-email-connections-in-office-365"></a>Empleo de TLS por parte de Exchange Online para proteger las conexiones de correo electrónico en Office 365
 
@@ -62,7 +62,7 @@ En la tabla siguiente se describe la información del certificado usada por Exch
 |**Atributo**|**Valor**|
 |:-----|:-----|
 |Emisor raíz de la autoridad de certificado  <br/> |CA raíz GlobalSign – R1 <br/> |
-|Nombre del certificado  <br/> |mail.Protection.Outlook.com  <br/> |
+|Nombre del certificado  <br/> |mail.protection.outlook.com  <br/> |
 |Organización  <br/> |Microsoft Corporation  <br/> |
 |Unidad de organización  <br/> |  <br/> |
 |Nivel de la clave de certificado  <br/> |2048  <br/> |
@@ -76,7 +76,7 @@ Para ayudar a garantizar una transición sin problemas, seguiremos proporcionand
 |**Atributo**|**Valor**|
 |:-----|:-----|
 |Emisor raíz de la autoridad de certificado  <br/> |Baltimore CyberTrust Root  <br/> |
-|Nombre del certificado  <br/> |mail.Protection.Outlook.com  <br/> |
+|Nombre del certificado  <br/> |mail.protection.outlook.com  <br/> |
 |Organización  <br/> |Microsoft Corporation  <br/> |
 |Unidad de organización  <br/> |Microsoft Corporation  <br/> |
 |Nivel de la clave de certificado  <br/> |2048  <br/> |
@@ -91,9 +91,9 @@ El nuevo certificado requiere la conexión a los puntos de conexión de la nueva
   `certutil -URL http://crl.globalsign.com/gsorganizationvalsha2g3.crl`
 2. En la ventana que aparece, elija **recuperar**.
 3. Cuando la utilidad completa la comprobación, devuelve un estado. Si el estado muestra **correcto**, su servidor de correo puede validar correctamente el nuevo certificado. Si no es así, debe determinar la causa del error de las conexiones. Lo más probable es que necesite actualizar la configuración de un firewall. La lista completa de los puntos de conexión que deben tener acceso son:
-    - OCSP.GlobalSign.com
-     - CRL.GlobalSign.com
-     - Secure.GlobalSign.com   
+    - ocsp.globalsign.com
+     - crl.globalsign.com
+     - secure.globalsign.com   
 
 Normalmente, las actualizaciones se reciben automáticamente en los certificados raíz a través de Windows Update. Sin embargo, algunas implementaciones tienen seguridad adicional en vigor que impide que se realicen estas actualizaciones automáticamente. En estas implementaciones bloqueadas en las que Windows Update no puede actualizar automáticamente los certificados raíz, debe asegurarse de que el certificado de CA raíz correcto está instalado mediante la realización de estos pasos:
 1.  Conéctese a su servidor local de Exchange mediante Windows PowerShell y, a continuación, ejecute el siguiente comando:  

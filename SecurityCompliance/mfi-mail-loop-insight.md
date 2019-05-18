@@ -3,18 +3,18 @@ title: Reporte de bucle de correo
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: cb801985-3c89-4979-9c18-17829a4cb563
 description: Los administradores pueden obtener información sobre la información sobre el bucle de correo en el panel del flujo de correo en el centro de seguridad & cumplimiento.
-ms.openlocfilehash: 7229f8ebfc9ca1a46d91acc210199a3a6002c01e
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: eddd65bb02fb0ca0d64b0cf9e35a7e40c29e47c5
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32267089"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158672"
 ---
 # <a name="mail-loop-insight"></a>Reporte de bucle de correo
 
@@ -26,6 +26,6 @@ Puede hacer clic en **Ver detalles** para ver los detalles en un panel de contro
 
 ![Panel flotante después de hacer clic en ver detalles en un bucle incorrecto información sobre el panel de flujo de correo](media/f7e21300-c62f-41ec-853f-4a2775cd8aa7.png)
 
-## <a name="see-also"></a>Recursos adicionales
+## <a name="see-also"></a>Vea también
 
 Para obtener más información acerca de otras indicaciones de flujo de correo en el panel de flujo de correo, consulte [mail Flow Insights en el centro de seguridad _AMP_ cumplimiento](mail-flow-insights.md).

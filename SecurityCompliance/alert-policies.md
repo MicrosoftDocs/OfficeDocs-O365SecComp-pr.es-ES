@@ -3,7 +3,7 @@ title: Directivas de alerta en el centro de seguridad y cumplimiento
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8927b8b9-c5bc-45a8-a9f9-96c732e58264
 description: Cree directivas de alerta en el centro de seguridad y cumplimiento en Office 365 y en Microsoft 365 para supervisar las amenazas potenciales, la pérdida de datos y el problema con los permisos. A continuación, puede ver y administrar las alertas que se generan cuando los usuarios realizan actividades que cumplen las condiciones de una directiva de alertas.
-ms.openlocfilehash: 57b30a3c7202940ebb5422d7ef392e93c5351bfb
-ms.sourcegitcommit: c7989a8ead235aaebb2503abbde598f2c26c0056
+ms.openlocfilehash: d4d163a483f47f7b4d785d43a0554e5d7670d24a
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "33979506"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152512"
 ---
 # <a name="alert-policies-in-the-security-and-compliance-center"></a>Directivas de alerta en el centro de seguridad y cumplimiento
 

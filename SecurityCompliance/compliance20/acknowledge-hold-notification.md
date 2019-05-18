@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,17 +14,17 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 048c85c7b8d77b9c7d3b9527640648b9ebe463d0
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: eb29ff34d663cf43af4a9a4b1e966a282d16eaf2
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32243645"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151952"
 ---
 # <a name="acknowledge-a-hold-notification"></a>Confirmar una notificación de retención 
 Al responder a una solicitud o investigación reguladora, es posible que deba informar a los custodios de su obligación de conservar la información almacenada electrónicamente (ESI), así como cualquier material que pueda ser relevante para un asunto legal activo o inminente. Una vez enviado, los equipos jurídicos deben saber que cada custodio ha recibido, leído y comprendido, y ha aceptado cumplir con las instrucciones indicadas.
 
-Para ayudar a reducir el tiempo, el coste y el esfuerzo de seguir con sus custodios, la exhibición avanzada de documentos electrónicos (vista previa) le permite enviar y realizar un seguimiento de las notificaciones de retención legal a través del correo electrónico. Además de los avisos de correo electrónico, cada custodio también tendrá acceso a un portal de cumplimiento individualizado, lo que permitirá que los custodios se mantengan informados de los cambios en el estado de su obligación.
+Para ayudar a reducir el tiempo, el coste y el esfuerzo de seguir con sus custodios, la exhibición avanzada de documentos electrónicos le permite enviar y realizar un seguimiento de las notificaciones de retención legal a través del correo electrónico. Además de los avisos de correo electrónico, cada custodio también tendrá acceso a un portal de cumplimiento individualizado, lo que permitirá que los custodios se mantengan informados de los cambios en el estado de su obligación.
 
 ## <a name="email-notifications"></a>Notificaciones por correo electrónico
 Una vez que se haya emitido una notificación de retención legal, cada custodio recibirá un correo electrónico único y personalizado que incluirá el aviso de suspensión legal definido y las instrucciones agregadas. 

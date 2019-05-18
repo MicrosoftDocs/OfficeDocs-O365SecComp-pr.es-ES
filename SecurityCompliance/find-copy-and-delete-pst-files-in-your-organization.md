@@ -3,7 +3,7 @@ title: Usar la herramienta de recopilación de PST para buscar, copiar y elimina
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -11,12 +11,12 @@ ms.collection: ''
 search.appverid: MOE150
 ms.assetid: 7a150c84-049c-4a9c-8c91-22355b35f2a7
 description: Use la herramienta de recopilación de Microsoft PST para buscar en la red de su organización para obtener un inventario de los archivos PST que están dispersos en toda la organización. Después de encontrar los archivos PST, puede usar la herramienta de recopilación de PST para copiarlos en una ubicación central para poder importarlos a Office 365.
-ms.openlocfilehash: 87e13ec8a4c58f848ac2ff7a430a7532942ece74
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 000da8aec988e85f935a96aabe9faa48932aaeaa
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255358"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152782"
 ---
 # <a name="use-the-pst-collection-tool-to-find-copy-and-delete-pst-files-in-your-organization"></a>Usar la herramienta de recopilación de PST para buscar, copiar y eliminar archivos PST en la organización
 
@@ -112,7 +112,7 @@ Después de ejecutar correctamente la herramienta de recopilación de PST en el 
 - **\>__ JobName encontrar\<DateTimeStamp\>. csv: el archivo CSV contiene una fila por cada \<** archivo pst encontrado. La información de cada PST incluye el equipo en el que se encontró el archivo PST, la ubicación completa de la ruta de acceso al archivo PST, el propietario del archivo PST y el tamaño (en kilobytes, KB) del archivo PST. Este archivo se crea en la carpeta especificada por el `LogLocation` parámetro. 
     
     > [!TIP]
-    > Use la herramienta autoSuma en Excel para calcular el tamaño total (en KB) de todos los archivos PST que aparecen en el archivo CSV. A continuación, puede usar una calculadora de conversión para convertir el tamaño total en megabytes (MB) o en gigabytes (GB). 
+    > Use la herramienta Autosuma en Excel para calcular el tamaño total (en KB) de todos los archivos PST que aparecen en el archivo CSV. A continuación, puede usar una calculadora de conversión para convertir el tamaño total en megabytes (MB) o en gigabytes (GB). 
   
 - **\>__ JobName Find\<DateTimeStamp\>. xml: el archivo XML contiene información sobre los valores de parámetro que se usan cuando se ejecutó la herramienta en el \<** modo de búsqueda. Este archivo también contiene información sobre cada archivo PST encontrado. Los datos de este archivo se usan al ejecutar volver a ejecutar la herramienta para que el mismo trabajo bloquee, recopile o elimine los archivos PST que se encontraron. Este archivo se crea en la carpeta especificada por el `ConfigurationLocation` parámetro. 
     

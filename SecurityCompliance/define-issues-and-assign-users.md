@@ -3,7 +3,7 @@ title: Definir problemas y asignar usuarios en Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 48d37ee7-05bd-4cb8-9723-a8959ad23fbe
 description: Obtenga información sobre cómo agregar o editar un problema, incluida la asignación de usuarios a él, o cómo eliminar un problema para un caso de exhibición de documentos electrónicos en Office 365 Advanced eDiscovery.
-ms.openlocfilehash: 80ea6e2579b8bc68b70e2181d9c986c91c890836
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: a7dad3cce54a3162cedf3c14e521f5e8fe966acf
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32257758"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150692"
 ---
 # <a name="define-issues-and-assign-users-in-office-365-advanced-ediscovery"></a>Definir problemas y asignar usuarios en Office 365 Advanced eDiscovery
 

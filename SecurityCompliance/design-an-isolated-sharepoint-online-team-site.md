@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 775a4e9e-3135-4a48-b32f-bbdd9f2bd0aa
 description: 'Resumen: paso a paso del proceso de diseño de sitios de grupo de SharePoint Online aislados.'
-ms.openlocfilehash: 09748fcc22a4a48efc4346ff75a225db612a0ef4
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 04634052354de47a09aa3b13e2c82d97be22f4d2
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32257194"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150322"
 ---
 # <a name="design-an-isolated-sharepoint-online-team-site"></a>Diseñar un sitio de grupo de SharePoint Online aislado
 
@@ -43,7 +43,7 @@ El conjunto de permisos específicos que determina lo que un miembro de un grupo
   
 |**Grupo de SharePoint**|**Nivel de permisos**|
 |:-----|:-----|
-|\<Miembros de name> de sitio  <br/> |Editar  <br/> |
+|\<Miembros de name> de sitio  <br/> |Edit  <br/> |
 |\<Visitantes del sitio name>  <br/> |Lectura  <br/> |
 |\<Propietarios de name> de sitios  <br/> |Control total  <br/> |
    
@@ -83,7 +83,7 @@ Para los sitios de grupo de SharePoint Online aislados, la estructura de grupo r
   
 |**Grupo de SharePoint**|**Grupo de acceso basado en Azure AD**|**Nivel de permisos**|
 |:-----|:-----|:-----|
-|\<Miembros de name> de sitio  <br/> |\<Miembros de name> de sitio  <br/> |Editar  <br/> |
+|\<Miembros de name> de sitio  <br/> |\<Miembros de name> de sitio  <br/> |Edit  <br/> |
 |\<Visitantes del sitio name>  <br/> |\<Visores de name> de sitio  <br/> |Lectura  <br/> |
 |\<Propietarios de name> de sitios  <br/> |\<Administradores de name> de sitios  <br/> |Control total  <br/> |
    
@@ -128,7 +128,7 @@ Este es un ejemplo de grupos de Azure AD anidados para el grupo de acceso a los 
   
 Debido a que todas las cuentas de usuario de los equipos de clientes potenciales de investigación, ingeniería y proyecto tienen como objetivo ser miembros del sitio, es más fácil agregar sus grupos de Azure AD al grupo de acceso de los miembros del ProyectoX.
   
-## <a name="next-step"></a>Siguiente paso
+## <a name="next-step"></a>Paso siguiente
 
 Cuando esté listo para crear y configurar un sitio aislado en producción, vea [implementar un sitio de grupo de SharePoint Online aislado](deploy-an-isolated-sharepoint-online-team-site.md).
   

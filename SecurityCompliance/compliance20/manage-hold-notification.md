@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: fa83a90448250a91d6c2ccbf43588ee18e00619c
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 0b1b20a8b41803a945bc9f5c39cd0618c420b0c0
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32241267"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151742"
 ---
 # <a name="manage-hold-notifications"></a>Administrar las notificaciones de retención
 
-Una vez que haya iniciado el flujo de trabajo de la notificación de retención legal, puede aprovechar la exhibición avanzada de documentos electrónicos (vista previa) para realizar un seguimiento del estado de sus comunicaciones. La pestaña comunicaciones muestra todas las notificaciones de retención en el caso de la exhibición avanzada de documentos electrónicos (versión preliminar). Aquí puede ver los detalles, como el número de custodios que se han asignado o que han confirmado el aviso.
+Una vez que haya iniciado el flujo de trabajo de la notificación de retención legal, puede aprovechar la exhibición avanzada de documentos electrónicos para realizar un seguimiento del estado de las comunicaciones. La pestaña comunicaciones exhibe todas las notificaciones de retención en el caso de eDiscovery avanzado. Aquí puede ver los detalles, como el número de custodios que se han asignado o que han confirmado el aviso.
 
 ## <a name="view-communication-details"></a>Ver detalles de comunicación
 
@@ -42,7 +42,7 @@ En el control flotante comunicación de detalles, puede obtener una vista previa
 En ocasiones, los custodios pierden el seguimiento de sus correos electrónicos en su trabajo cotidiano. O bien, para un litigio de larga duración, un custodio puede ponerse en contacto con usted y pedirle que vuelva a enviar un aviso. Mientras administra el flujo de trabajo en torno a los avisos de suspensión legal, es posible que deba volver a enviar un aviso para volver a colocarlo en la "parte superior del buzón de un usuario".
 
 Puede volver a enviar un aviso de suspensión a su custodio:
-1. Navegue a un caso dentro de **seguridad y cumplimiento de _GT_ Advanced eDiscovery (versión preliminar)**.
+1. Desplácese a un caso dentro de **seguridad y cumplimiento _GT_ EDiscovery avanzado**.
 2. Una vez que haya seleccionado un caso, vaya a la pestaña **comunicaciones** .
 3. Para volver a enviar un aviso de suspensión legal a un custodio, seleccione la comunicación y haga clic en la opción **volver a enviar** .
 4. Si un custodio todavía no ha reconocido su notificación de retención, se reiniciará el flujo de aviso y escalado. Si un custodio ya ha confirmado el aviso de retenciones, el custodio recibirá una copia del aviso de retenciones inicial.
@@ -58,7 +58,7 @@ A medida que avanza el caso, es posible que se necesiten custodios para conserva
 
 Para actualizar el contenido del aviso de suspensión inicial:
 
-1. Navegue a un caso dentro de **seguridad y cumplimiento de _GT_ Advanced eDiscovery (versión preliminar)**.
+1. Desplácese a un caso dentro de **seguridad y cumplimiento _GT_ EDiscovery avanzado**.
 2. Una vez que haya seleccionado un caso, vaya a la pestaña **comunicaciones** .
 3. Seleccione el aviso de retención que quiera actualizar y haga clic en **Editar**.
 4. En Editar flujo de trabajo, seleccione **definir contenido del portal** y actualizar el contenido del aviso. 

@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 3b144fbf5f00f3dbb017ac176c75677970f2f7f2
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 12b86f3e63d69fbd64304f1ed46cff25daffa8ff
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258188"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150772"
 ---
 # <a name="manage-jobs-in-data-investigations-preview"></a>Administrar trabajos en investigaciones de datos (versión preliminar)
 
@@ -37,7 +37,7 @@ Esta es una lista de los trabajos (que suelen ser procesos de larga duración) c
 |Preparación de datos para la exportación | Un usuario exporta documentos de un conjunto de evidencias. Una vez finalizado el proceso de exportación, pueden descargar los datos exportados en un equipo local. Para obtener más información, vea [exportar datos de una investigación](export-data.md). | 
 |Preparación para la resolución de errores |Cuando un usuario selecciona un archivo y crea un nuevo corrección de errores en la vista de errores en la ficha **procesamiento** de una investigación, el primer paso del proceso es cargar el archivo que tiene el error de procesamiento en una ubicación de almacenamiento de Azure en la nube de Microsoft. Este trabajo realiza un seguimiento del progreso del proceso de carga. Para obtener más información acerca del flujo de trabajo de corrección de errores, consulte [corrección de errores al procesar datos para una investigación](error-remediation.md).| 
 |Preparación de la vista previa de búsqueda | Una vez que un usuario crea y ejecuta una nueva búsqueda (o vuelve a ejecutar una búsqueda existente), la herramienta de búsqueda prepara un subconjunto de elementos de muestra (que coinciden con la consulta de búsqueda) en los que se puede obtener una vista previa. La vista previa de los resultados de búsqueda puede ayudarle a determinar la eficacia de la búsqueda.  Para obtener más información, vea [buscar datos en una investigación](search-for-data.md). | 
-|Volver a indizar datos de personas de interés | Cuando se agrega una persona de interés a una investigación, todos los elementos parcialmente indizados de los orígenes de datos seleccionados del interés se vuelven a indizar mediante un proceso denominado *indizaCión avanzada*. Este trabajo también se desencadena cuando se hace clic en **Actualizar índice** en la vista índice en la ficha **procesamiento** de una investigación. Para obtener más información, vea [indizaCión avanzada de datos para una investigación](index-data-people-of-interest.md).
+|Volver a indizar datos de personas de interés | Cuando se agrega una persona de interés a una investigación, todos los elementos parcialmente indizados de los orígenes de datos seleccionados del interés se vuelven a indizar mediante un proceso denominado *indización avanzada*. Este trabajo también se desencadena cuando se hace clic en **Actualizar índice** en la vista índice en la ficha **procesamiento** de una investigación. Para obtener más información, vea [indización avanzada de datos para una investigación](index-data-people-of-interest.md).
 |Ejecución de análisis | Un usuario analiza los datos de un conjunto de evidencias mediante la ejecución de herramientas de análisis, como la detección de duplicados, el análisis de subprocesos de correo electrónico y el análisis de temas. Para obtener más información, vea [ejecutar análisis para investigar con mayor rapidez](run-analytics-to-investigate-faster.md). | 
 |Etiquetando documentos | Este trabajo se desencadena cuando un usuario hace clic en **iniciar trabajo de etiquetado** en el **Panel etiquetado** al revisar los documentos de un conjunto de evidencias. Un usuario puede iniciar este trabajo después de etiquetar los documentos en un conjunto de evidencias y, a continuación, seleccionarlos de forma masiva en el panel ver documento. Para obtener más información, vea [etiquetar documentos en evidencia](tag-documents.md). | 
 |||

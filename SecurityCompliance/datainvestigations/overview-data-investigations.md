@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: En este artículo se describe la herramienta nueva investigación de datos (versión preliminar) en Microsoft 365.
-ms.openlocfilehash: 11ba4d0870461695d327577396ccd535ac4340e1
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 1e7621d577d8d08fd27dc7e20e6b8e7a3491236f
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32257728"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150682"
 ---
 # <a name="overview-of-data-investigations-preview-in-microsoft-365"></a>Información general sobre las investigaciones de datos (versión preliminar) en Microsoft 365
 
@@ -41,7 +41,7 @@ Use la ficha **búsquedas** para crear búsquedas para buscar el Office 365 para
 
 Use la pestaña **evidencia** para investigar los datos que ha recopilado desde el servicio activo, que en este caso es Office 365. Los datos del conjunto de evidencias son una instantánea de los resultados de búsqueda que ha recopilado. Cuando se agregan resultados de búsqueda como evidencia, se desencadena un proceso para extraer archivos, metadatos y texto. Cuando se completa este proceso, la herramienta de investigaciones de datos crea un nuevo índice de todos los datos y lo agrega a un conjunto de evidencias. Para cualquier investigación que tenga en cuenta el tiempo, esto le permite incluir rápidamente el entorno mediante la eliminación de datos ubicados en las ubicaciones de contenido originales (en el servicio activo) mientras se investiga la evidencia recopilada en un entorno en cuarentena. Una vez recopilada la evidencia, puede ejecutar consultas adicionales para restringir los datos por intervalo de tiempo, tipos de archivo, propietarios de datos y otros tipos de condiciones. Por ejemplo, mediante el uso de las condiciones de autor, remitente y destinatario, puede identificar rápidamente a los usuarios que han participado en la reescritura de datos y si alguno de los datos derramados se ha compartido con personas fuera de la organización.
 
-También puede ejecutar análisis avanzados en la evidencia que recopila. Esto puede proporcionarle temas generales y organizar las pruebas por parte de los subprocesos de correo electrónico, los duplicados exactos y los duplicados Near para facilitar su investigación. Puede revisar documentos en la vista Texto extraído o en el formato de archivo nativo, y etiquetarlos con resultados de la investigación. Para más información, visite:
+También puede ejecutar análisis avanzados en la evidencia que recopila. Esto puede proporcionarle temas generales y organizar las pruebas por parte de los subprocesos de correo electrónico, los duplicados exactos y los duplicados Near para facilitar su investigación. Puede revisar documentos en la vista Texto extraído o en el formato de archivo nativo, y etiquetarlos con resultados de la investigación. Para obtener más información, vea:
 
   - [Revisar los datos como evidencia](review-data-in-evidence.md)
 
@@ -54,7 +54,7 @@ Use la ficha **personas de interés** para agregar y administrar las personas qu
 
 ## <a name="indexing-the-data-of-people-of-interest"></a>Indización de los datos de personas de interés
 
-Agregar una persona de interés a una investigación vuelve a indizar los elementos parcialmente indizados de los orígenes de datos de la persona. Este proceso se denomina *indizaCión avanzada*. La indización avanzada vuelve a procesar datos como imágenes y tipos de archivo no admitidos para que estos datos se puedan detectar completamente cuando se ejecutan búsquedas para recopilar datos para una investigación. Use la ficha **procesamiento** para supervisar el estado de la indización avanzada y corregir los errores de procesamiento que puedan producirse mediante un proceso denominado *corrección de errores*. Para obtener más información, vea [corrección de errores al procesar datos para una investigación](error-remediation.md).
+Agregar una persona de interés a una investigación vuelve a indizar los elementos parcialmente indizados de los orígenes de datos de la persona. Este proceso se denomina *indización avanzada*. La indización avanzada vuelve a procesar datos como imágenes y tipos de archivo no admitidos para que estos datos se puedan detectar completamente cuando se ejecutan búsquedas para recopilar datos para una investigación. Use la ficha **procesamiento** para supervisar el estado de la indización avanzada y corregir los errores de procesamiento que puedan producirse mediante un proceso denominado *corrección de errores*. Para obtener más información, vea [corrección de errores al procesar datos para una investigación](error-remediation.md).
 
 ## <a name="exporting-data"></a>Exportar datos
 

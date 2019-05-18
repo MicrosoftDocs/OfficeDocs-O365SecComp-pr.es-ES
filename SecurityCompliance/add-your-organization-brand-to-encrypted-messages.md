@@ -3,43 +3,55 @@ title: Agregar la marca de organización a los mensajes cifrados
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
+ms.date: 4/30/2019
 search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7a29260d-2959-42aa-8916-feceff6ee51d
 ms.collection:
+- Strat_O365_IP
 - M365-security-compliance
-description: Como administrador de Exchange, puede aplicar la personalización de marca de su organización a los mensajes de correo electrónico cifrados de la organización y el contenido del portal de cifrado.
-ms.openlocfilehash: b15bb058d68d0f1783d2a689fff180a2bf48023e
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: Como administrador global de Office 365, puede aplicar la personalización de marca de su organización a los mensajes de correo electrónico cifrados de la organización y al contenido del portal de cifrado.
+ms.openlocfilehash: 6b51aefc10c0070749fcf4bc8c2d56c7ff7a3ef3
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32242666"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152472"
 ---
 # <a name="add-your-organizations-brand-to-your-encrypted-messages"></a>Agregar la marca de su organización a los mensajes cifrados
 
 Como administrador de Exchange online o Exchange Online Protection, puede aplicar la personalización de marca de la empresa para personalizar la apariencia de los mensajes de correo electrónico de cifrado de mensajes de Office 365 de la organización y el contenido del portal de cifrado. Con los cmdlets de Windows PowerShell Get-OMEConfiguration y set-OMEConfiguration, puede personalizar los siguientes aspectos de la experiencia de visualización para los destinatarios de los mensajes de correo electrónico cifrados:
   
 - Texto de introducción del correo electrónico que contiene el mensaje cifrado
+
 - Texto de declinación de responsabilidades del correo electrónico que contiene el mensaje cifrado
+
 - Texto que aparece en el portal de OME
+
 - Logotipo que aparece en el portal de mensajes de correo electrónico y OME
+
 - Color de fondo en el portal de mensajes de correo electrónico y OME
 
 También puede volver a la apariencia predeterminada en cualquier momento.
 
-Si desea tener más control, puede crear varias plantillas para los mensajes de correo electrónico cifrados que se originan en la organización. Mediante el uso de estas plantillas, puede controlar algo más que la apariencia de los mensajes de correo electrónico, pero también controlar partes de la experiencia del usuario final. Por ejemplo, puede especificar si desea o no que los destinatarios de correo que tengan esta plantilla aplicada y que usen cuentas de Google, Yahoo y Microsoft puedan usar estas cuentas para iniciar sesión en el portal de cifrado de mensajes de Office 365. Puede usar plantillas para cumplir varios casos de uso, como:
+ Si desea tener más control, puede usar el cifrado de mensajes avanzado de Office 365 y crear varias plantillas para los mensajes de correo electrónico cifrados que se originan en la organización. Mediante el uso de estas plantillas, puede controlar algo más que la apariencia de los mensajes de correo electrónico, pero también controlar partes de la experiencia del usuario final. Por ejemplo, puede especificar si desea o no que los destinatarios de correo que tengan esta plantilla aplicada y que usen cuentas de Google, Yahoo y Microsoft puedan usar estas cuentas para iniciar sesión en el portal de cifrado de mensajes de Office 365. Puede usar plantillas para cumplir varios casos de uso, como:
 
 - Plantillas para cada departamento, como finanzas, ventas, etc.
+
 - Plantillas para diferentes productos
+
 - Plantillas para diferentes regiones geográficas o países
 
-Una vez que haya creado las plantillas, puede aplicarlas a los correos electrónicos cifrados mediante las reglas de flujo de correo de Exchange. Se pueden revocar todos los mensajes de personalización de marca con estas plantillas.
+- Si desea permitir que se revoquen los mensajes de correo electrónico
+
+- Si desea que los mensajes enviados a destinatarios externos expiren después de un número determinado de días.
+
+Una vez que haya creado las plantillas, puede aplicarlas a los correos electrónicos cifrados mediante las reglas de flujo de correo de Exchange. Si tiene el cifrado de mensajes avanzado de Office 365, puede revocar cualquier correo electrónico de personalización de marca mediante estas plantillas.
   
 ||
 |:-----|
@@ -59,11 +71,13 @@ Puede crear plantillas de personalización de marca para su organización en Win
    ```powershell
    New-OMEConfiguration -Identity <OMEConfigurationIdParameter>
    ```
+
    For example,
 
    ```powershell
    New-OMEConfiguration -Identity <Branding template 1>
    ```
+
 3. Defina las personalizaciones para la plantilla que acaba de definir con el cmdlet Set-OMEConfiguration tal como se describe en [set-OMEConfiguration](https://docs.microsoft.com/powershell/module/exchange/encryption-and-certificates/Set-OMEConfiguration) o use la siguiente tabla para obtener instrucciones.
 
 |**Para personalizar esta característica de la experiencia de cifrado**|**Use estos comandos**|
@@ -99,6 +113,7 @@ Puede crear plantillas de personalización de marca para su organización en Win
 Una vez que haya creado una plantilla de personalización de marca, puede crear reglas de flujo de correo de Exchange para aplicar esa marca personalizada según ciertas condiciones. Dicha regla aplicará la personalización de marca personalizada en los siguientes escenarios:
 
 - Si el usuario ha cifrado el correo electrónico manualmente desde los clientes de Outlook o Outlook en la web (anteriormente conocido como Outlook Web App)
+
 - Si el correo electrónico se cifró automáticamente mediante una regla de flujo de correo de Exchange o una directiva de prevención de pérdida de datos de Office 365
 
 Para obtener información sobre cómo crear una regla de flujo de correo de Exchange que aplique cifrado, vea [definir reglas de flujo de correo para cifrar mensajes de correo electrónico en Office 365](define-mail-flow-rules-to-encrypt-email.md).
@@ -120,6 +135,7 @@ Para obtener información sobre cómo crear una regla de flujo de correo de Exch
      - Mensajes de correo electrónico cifrados enviados a un dominio en particular
 
 7. En **hacer lo siguiente**, seleccione **modificar la seguridad** > de mensajes aplicar personalización de**marca personalizada a los mensajes OME**. A continuación, en la lista desplegable, seleccione una plantilla de personalización de marca de las que ha creado.
+
 8. Opcional Si desea que la regla de flujo de correo también aplique el cifrado además de la personalización de marca, desde **haga lo siguiente**, seleccione **modificar la seguridad de los mensajes** y, a continuación, elija aplicar el cifrado de **mensajes de Office 365 y la protección de derechos**. Seleccione una plantilla RMS de la lista, elija **Guardar**y, después, haga clic en **Aceptar**.
   
      La lista de plantillas incluye todas las plantillas y opciones predeterminadas, así como las plantillas personalizadas que haya creado para su uso por parte de Office 365. Si la lista está vacía, asegúrese de haber configurado el cifrado de mensajes de Office 365 con las nuevas funciones, tal como se describe en [set up New Office 365 Message Encryption Capabilities](set-up-new-message-encryption-capabilities.md). Para obtener información sobre las plantillas predeterminadas, vea [Configuring and Managing templates for Azure Information Protection](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-templates). Para obtener información sobre **** la opción no reenviar, vea la opción no reenviar [para los correos electrónicos](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails). Para obtener información sobre la opción **solo cifrar** , vea la [opción cifrar solo para los correos electrónicos](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails).

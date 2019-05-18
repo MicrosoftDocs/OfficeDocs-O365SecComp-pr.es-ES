@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: e45400726537a3b1ebadcc3d828d9cb8110e2100
-ms.sourcegitcommit: 09fd88272187f82b6e635af83edabea08c2cc49c
+ms.openlocfilehash: 33e2603aaeb4505768e76149b76dc18648250a52
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2019
-ms.locfileid: "33884758"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151942"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>Campos de metadatos del documento en eDiscovery avanzado
 
@@ -35,7 +35,7 @@ En la siguiente tabla se enumeran los campos de metadatos de los documentos en u
 | CC | Cc | Email_cc | CC | Campo CC para para tipos de mensaje.  Format es **displayName \<SMTPAddress>**. |
 | Etiquetas de cumplimiento | ComplianceLabels | Compliance_labels | Etiquetas de cumplimiento | Etiquetas de cumplimiento aplicadas en Office 365. |
 | Ruta de acceso compuesta | CompoundPath | Compound_path | Ruta de acceso compuesta | Ruta de acceso legible que describe el origen del elemento. |
-| Contenido | Contenido |  |  | Texto extraído del elemento. |
+| Content | Content |  |  | Texto extraído del elemento. |
 | Cuerpo de la conversación | Cuerpo de la conversación |  | Cuerpo de la conversación | Cuerpo de la conversación del elemento. |
 | Tema de conversación | Tema de conversación |  | Tema de conversación | Tema de conversación del elemento. |
 | IDENTIFICADOR de conversación | ConversationId | Conversation_ID | IDENTIFICADOR de conversación | Identificador de la conversación del mensaje. |
@@ -141,7 +141,7 @@ En la siguiente tabla se enumeran los campos de metadatos de los documentos en u
 | Se etiquetan por el número de caso 1 |  | Tagged_by_Case_issue_1 |  | Usuario que etiquetó este documento por el problema de caso 1 en relevancia. |
 | Tags | Tags | Tags | Tags | Etiquetas aplicadas en un conjunto de revisión. |
 | Lista de temas | ThemesList | Themes_list | Lista de temas | Lista de temas tal y como se calcula para el análisis. |
-| Título | Título | Doc_title | El título | Título de los metadatos del documento. |
+| Título | Título | Doc_title | Title | Título de los metadatos del documento. |
 | To | To | Email_to | To | Campo para para para tipos de mensaje.  El formato **es\<DisplayName SmtpAddress>** |
 | Único en el conjunto de correo electrónico | UniqueInEmailSet |  | Único en el conjunto de correo electrónico | False si hay un duplicado de los datos adjuntos en su conjunto de correo electrónico. |
 | Se corrigió | WasRemediated | Was_Remediated | Se corrigió | True si el elemento se ha corregido; en caso contrario, false. |

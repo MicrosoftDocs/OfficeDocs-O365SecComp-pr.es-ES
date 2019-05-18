@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 12/05/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: f09668bd-fe1a-4c01-89e3-e88c370e66c7
 ms.collection:
 - M365-security-compliance
 description: Indica a Office 365 y a los administradores de EOP cómo habilitar y deshabilitar las sugerencias de seguridad en los mensajes de correo electrónico.
-ms.openlocfilehash: 9be9c4cd7fc8e94208aac2ad8812c93a3465f58b
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: a782c9a1eca874c2aa2128b6129257067c63219a
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256968"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154762"
 ---
 # <a name="enable-or-disable-safety-tips-in-office-365"></a>Habilitar o deshabilitar las sugerencias de seguridad en Office 365
 
@@ -56,9 +56,9 @@ En este tema:
     
     ![Esta captura de pantalla muestra la configuración de directiva de filtro contra correo no deseado personalizada desactivada.](media/94f900ad-b556-4a31-a3ac-acfcd72e71b8.png)
   
-7. ExPanda la Directiva de correo no deseado que desea modificar y, a continuación, elija **Editar Directiva**. Por ejemplo, seleccione la flecha abajo junto a **Directiva de filtro de correo no deseado predeterminada**. O bien, si lo desea, puede crear una nueva Directiva eligiendo **Agregar una directiva**.
+7. Expanda la Directiva de correo no deseado que desea modificar y, a continuación, elija **Editar Directiva**. Por ejemplo, seleccione la flecha abajo junto a **Directiva de filtro de correo no deseado predeterminada**. O bien, si lo desea, puede crear una nueva Directiva eligiendo **Agregar una directiva**.
     
-8. ExPanda **correo no deseado y** acciones en masa. 
+8. Expanda **correo no deseado y** acciones en masa. 
     
 9. Para habilitar las sugerencias de seguridad, en **sugerencias de seguridad**, active la casilla **de verificación activado** . Para deshabilitar las sugerencias de seguridad, desactive la casilla **de verificación activado** . 
     

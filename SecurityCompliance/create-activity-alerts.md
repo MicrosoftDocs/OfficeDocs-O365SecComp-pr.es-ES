@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 11/7/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
 description: Agregue y administre alertas de actividad en el centro de seguridad y cumplimiento para que Office 365 le envíe notificaciones por correo electrónico cuando los usuarios realicen actividades específicas en Office 365.
-ms.openlocfilehash: d71763d4633c3396afdf58400e9cb7b8b8a468e8
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 1b09b191f82d8dd589fe2e5f650f42f67a846da2
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258698"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151312"
 ---
 # <a name="create-activity-alerts-in-the-office-365"></a>Crear alertas de actividad en el Office 365
 
@@ -58,7 +58,7 @@ Puede crear una alerta de actividad que le envíe una notificación por correo e
     
     a. **Nombre** : escriba un nombre para la alerta. Los nombres de alerta deben ser únicos dentro de la organización.
     
-    b. **Descripción** (Opcional): se describe la alerta, como las actividades y los usuarios de los que se realiza un seguimiento, así como los usuarios a los que se envían notificaciones por correo electrónico. Las deScripciones proporcionan una forma rápida y sencilla de describir el propósito de la alerta a otros administradores.
+    b. **Descripción** (Opcional): se describe la alerta, como las actividades y los usuarios de los que se realiza un seguimiento, así como los usuarios a los que se envían notificaciones por correo electrónico. Las descripciones proporcionan una forma rápida y sencilla de describir el propósito de la alerta a otros administradores.
     
     c. **Tipo de alerta** : Asegúrese de que está seleccionada la opción **personalizada** . 
 
@@ -112,7 +112,7 @@ Para volver a activar una alerta de actividad, repita estos pasos y haga clic en
     |Ve un documento en un sitio.  <br/> |Archivo de acceso  <br/> |Actividades de archivos y carpetas  <br/> |
     |Modifica o modifica un documento.  <br/> |Archivo modificado  <br/> |Actividades de archivos y carpetas  <br/> |
     |Comparte un documento con un usuario de fuera de la organización.  <br/> |Compartir archivo, carpeta o sitio  <br/> And  <br/> Invitación para uso compartido creada  <br/> Para obtener más información, vea [usar la auditoría de uso compartido en el registro de auditoría de Office 365](use-sharing-auditing.md).  <br/> |Actividades de solicitud de acceso y uso compartido  <br/> |
-    |Carga o descarga un documento.  <br/> |Archivo cargado  <br/> Y/o  <br/> Archivo desCargado  <br/> |Actividades de archivos y carpetas  <br/> |
+    |Carga o descarga un documento.  <br/> |Archivo cargado  <br/> Y/o  <br/> Archivo descargado  <br/> |Actividades de archivos y carpetas  <br/> |
     |Cambia los permisos de acceso a un sitio.  <br/> |Permisos de sitio modificados  <br/> |Actividades de administración del sitio  <br/> |
 
     En la tabla siguiente se enumeran algunas actividades comunes relacionadas con el correo electrónico en Exchange Online.

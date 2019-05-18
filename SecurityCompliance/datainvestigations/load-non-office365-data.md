@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: f5478d89d71db22e710b5d5fcab397ae8d6aee56
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 3258ff4d5bf079a73837038135c3a1c69eb2fe26
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32259568"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150812"
 ---
 # <a name="load-non-office-365-data-into-evidence"></a>Cargar datos que no son de Office 365 en pruebas
 

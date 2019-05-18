@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: c4a7c479d730d5256efabe9120960b1590094779
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 41e551850b47bec88f6dd8353c6db02048255e74
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258128"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150912"
 ---
 # <a name="document-metadata-fields-in-data-investigations-preview"></a>Campos de metadatos de documento en investigaciones de datos (versión preliminar)
 
@@ -28,7 +28,7 @@ En la siguiente tabla se enumeran los campos de metadatos de los documentos de u
 > [!NOTE]
 > Los valores entre paréntesis en la columna **búsquedas en el conjunto de evidencias** son el nombre de la propiedad que se puede buscar. Los valores que aparecen entre paréntesis en la columna **de metadatos de archivo visibles** es el nombre de la propiedad que se muestra cuando está viendo los metadatos de archivo.
 
-|**Nombre del campo** </br>|**Se pueden buscar en el conjunto de evidencias** |**Visible en los metadatos de archivo** |**Exported** |
+|**Nombre de campo** </br>|**Se pueden buscar en el conjunto de evidencias** |**Visible en los metadatos de archivo** |**Exported** |
 |:-------------------------- |:---------------------------------------- |:------------------------|:------------------|
 |Etiquetas Case                  | Sí (etiquetas)                                      |                         | Sí         |
 |Etiquetas de cumplimiento          |                                                 |                         | Sí         |
@@ -80,8 +80,8 @@ En la siguiente tabla se enumeran los campos de metadatos de los documentos de u
 |Correo electrónico a                   | Sí (para)                                        |                         | Sí         |
 |Código de error                 | Sí (processingStatus)                          |                         | Sí         |
 |Exportar ruta de acceso nativa         |                                                 |                         | Sí         |
-|Longitud de texto exTraída      |                                                 |                         | Sí         |
-|Ruta de acceso del texto exTraído        |                                                 |                         | Sí         |
+|Longitud de texto extraída      |                                                 |                         | Sí         |
+|Ruta de acceso del texto extraído        |                                                 |                         | Sí         |
 |IDENTIFICADOR de familia                  | Sí (familyId)                                  |   Sí (FamilyId)        | Sí         |
 |Tamaño de la familia                |                                                 |                         | Sí         |
 |Clase File                 | Sí (fileClass)                                 |   Sí (clase de archivo)      | Sí         |

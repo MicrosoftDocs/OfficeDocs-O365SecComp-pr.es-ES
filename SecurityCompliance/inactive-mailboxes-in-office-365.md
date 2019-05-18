@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 1fbd74e8-7a60-4157-afe8-fe79f05d2038
 description: Obtenga información sobre cómo conservar el contenido de los buzones de correo para los antiguos empleados al convertir el buzón en un buzón inactivo. Para ello, puede colocar el buzón en retención por juicio o aplicar una directiva de retención de Office 365 al buzón y, a continuación, quitar la cuenta de Office 365 correspondiente.
-ms.openlocfilehash: 19cd2bafc1f4bf0b6aa3b4c0332a3588ace3e5d8
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 58bcc888af0d1ae92cf9d86e116fe287e7c2316c
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256528"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152722"
 ---
 # <a name="overview-of-inactive-mailboxes-in-office-365"></a>Información general sobre los buzones inactivos en Office 365
 
@@ -29,7 +29,7 @@ Es posible que su organización tenga que conservar el correo electrónico de lo
   
 ## <a name="what-are-inactive-mailboxes"></a>¿Qué son los buzones inactivos?
 
-Cuando un empleado deja la organización (o pasa por un período de ausencia extendido), puede quitar su cuenta de Office 365. Los datos del buzón del empleado se conservan durante 30 días después de quitar la cuenta. Durante este período, puede recuperar los datos del buzón de correo eliminando la cuenta. TransCurrido el plazo de 30 días, los datos se eliminan de forma permanente.
+Cuando un empleado deja la organización (o pasa por un período de ausencia extendido), puede quitar su cuenta de Office 365. Los datos del buzón del empleado se conservan durante 30 días después de quitar la cuenta. Durante este período, puede recuperar los datos del buzón de correo eliminando la cuenta. Transcurrido el plazo de 30 días, los datos se eliminan de forma permanente.
   
 Pero si su organización necesita conservar el contenido de los buzones de correo para los antiguos empleados, puede convertir el buzón en un buzón inactivo colocando el buzón en retención por juicio o aplicando una directiva de retención de Office 365 al buzón en el centro de seguridad & cumplimiento y, a continuación, quita la cuenta de Office 365 correspondiente. El contenido de un buzón inactivo se conserva durante toda la retención por juicio que se aplica en el buzón o el período de retención de la Directiva de retención de Office 365 que se le ha aplicado antes de que se elimine el buzón. Todavía puede recuperar la cuenta de usuario correspondiente durante un período de 30 días. Sin embargo, después de 30 días, el buzón inactivo se conserva en Office 365 hasta que se quite la Directiva de retención o retención. 
   

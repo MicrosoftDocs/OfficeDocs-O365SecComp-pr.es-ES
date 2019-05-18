@@ -4,18 +4,18 @@ ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: 8/17/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: En este tema se muestra qué busca una directiva de prevención de pérdida de datos (DLP) cuando detecta el tipo de información confidencial del número de licencia de conductor de la UE. Este tipo de información confidencial define distintos patrones, palabras clave y otras pruebas para cada país.
-ms.openlocfilehash: be9497c325866a670dff8d82b5170f4ca947c4ad
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: f1a95ecbaf6b6d1ac189290dd6d076cfd91ab30f
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255778"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152982"
 ---
 # <a name="eu-drivers-license-number"></a>Número de permiso de conducción de la UE
 
@@ -59,7 +59,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 | |
 |**Keywords_austria_eu_driver's_license_number**|
 |:-----|
-|listas  <br/> driver license  <br/> número de licencia de conductor  <br/> permiso de conducir  <br/> Lic de drivers.  <br/> drivers license  <br/> driver's licence  <br/> driver's license  <br/> número de permiso de conducción  <br/> número de permiso de conducción  <br/>  número de licencia de conducir  <br/> dlno #  <br/> fuhrerschein  <br/> fuhrerschein Republik Osterreich  <br/> |
+|listas  <br/> driver license  <br/> número de licencia de conductor  <br/> permiso de conducir  <br/> Lic de drivers.  <br/> drivers license  <br/> driver's licence  <br/> driver's license  <br/> número de permiso de conducción  <br/> número de permiso de conducción  <br/>  número de licencia de conducir  <br/> dlno#  <br/> fuhrerschein  <br/> fuhrerschein republik osterreich  <br/> |
    
 ## <a name="belgium"></a>Bélgica
 
@@ -99,7 +99,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 | |
 |**Keywords__belgium_eu_driver's_license_number**|
 |:-----|
-|listas  <br/> driver license  <br/> número de licencia de conductor  <br/> permiso de conducir  <br/> Lic de drivers.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> número de permiso de conducción  <br/> número de permiso de conducción  <br/> dlno #  <br/> rijbewijs  <br/> rijbewijsnummer  <br/> führerscheinnummer  <br/> fuhrerscheinnummer  <br/> fuehrerscheinnummer  <br/> Führerschein-NR  <br/> fuehrerschein-NR  <br/> fuehrerschein-NR  <br/> |
+|listas  <br/> driver license  <br/> número de licencia de conductor  <br/> permiso de conducir  <br/> Lic de drivers.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> número de permiso de conducción  <br/> número de permiso de conducción  <br/> dlno#  <br/> rijbewijs  <br/> rijbewijsnummer  <br/> führerscheinnummer  <br/> fuhrerscheinnummer  <br/> fuehrerscheinnummer  <br/> Führerschein-NR  <br/> fuehrerschein-NR  <br/> fuehrerschein-NR  <br/> |
    
 ## <a name="bulgaria"></a>Bulgaria
 
@@ -139,7 +139,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 | |
 |**Keywords_bulgaria_eu_driver's_license_number**|
 |:-----|
-|listas  <br/> driver license  <br/> número de licencia de conductor  <br/> permiso de conducir  <br/> Lic de drivers.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> número de permiso de conducción  <br/> número de permiso de conducción  <br/> número de licencia de conducir  <br/> dlno #  <br/> свидетелство за управление на мпс  <br/> свидетелство за управление на моторно превозно средство  <br/> сумпс  <br/> шофьорска книжка  <br/> |
+|listas  <br/> driver license  <br/> número de licencia de conductor  <br/> permiso de conducir  <br/> Lic de drivers.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> número de permiso de conducción  <br/> número de permiso de conducción  <br/> número de licencia de conducir  <br/> dlno#  <br/> свидетелство за управление на мпс  <br/> свидетелство за управление на моторно превозно средство  <br/> сумпс  <br/> шофьорска книжка  <br/> |
    
 ## <a name="croatia"></a>Croacia
 
@@ -179,7 +179,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 | |
 |**Keywords_croatia_eu_driver's_license_number**|
 |:-----|
-|listas  <br/> driver license  <br/> número de licencia de conductor  <br/> permiso de conducir  <br/> Lic de drivers.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> número de permiso de conducción  <br/> número de permiso de conducción  <br/> número de licencia de conducir  <br/> dlno #  <br/> vozačka Dozvola  <br/> |
+|listas  <br/> driver license  <br/> número de licencia de conductor  <br/> permiso de conducir  <br/> Lic de drivers.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> número de permiso de conducción  <br/> número de permiso de conducción  <br/> número de licencia de conducir  <br/> dlno#  <br/> vozačka dozvola  <br/> |
    
 ## <a name="cyprus"></a>Chipre
 
@@ -218,7 +218,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 | |
 |**Keywords_cyprus_eu_driver's_license_number**|
 |:-----|
-|listas  <br/> driver license  <br/> número de licencia de conductor  <br/> permiso de conducir  <br/> Lic de drivers.  <br/> drivers license  <br/> drivers licence  <br/> número de permiso de conducción  <br/> número de permiso de conducción  <br/> número de licencia de conducir  <br/> dlno #  <br/> άδεια οδήγησης  <br/> |
+|listas  <br/> driver license  <br/> número de licencia de conductor  <br/> permiso de conducir  <br/> Lic de drivers.  <br/> drivers license  <br/> drivers licence  <br/> número de permiso de conducción  <br/> número de permiso de conducción  <br/> número de licencia de conducir  <br/> dlno#  <br/> άδεια οδήγησης  <br/> |
    
 ## <a name="czech-republic"></a>Chequia
 
@@ -264,7 +264,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 | |
 |**Keywords_czech_republic_eu_driver's_license_number**|
 |:-----|
-|listas  <br/> driver license  <br/> número de licencia de conductor  <br/> permiso de conducir  <br/> Lic de drivers.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> número de permiso de conducción  <br/> número de permiso de conducción  <br/> número de permiso de conducción  <br/> número de licencia de conducir  <br/> dlno #  <br/> řidičský prúkaz  <br/> |
+|listas  <br/> driver license  <br/> número de licencia de conductor  <br/> permiso de conducir  <br/> Lic de drivers.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> número de permiso de conducción  <br/> número de permiso de conducción  <br/> número de permiso de conducción  <br/> número de licencia de conducir  <br/> dlno#  <br/> řidičský prúkaz  <br/> |
    
 ## <a name="denmark"></a>Dinamarca
 
@@ -304,7 +304,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 | |
 |**Keywords_denmark_eu_driver's_license_number**|
 |:-----|
-|listas  <br/> driver license  <br/> número de licencia de conductor  <br/> permiso de conducir  <br/> Lic de drivers.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> número de permiso de conducción  <br/> número de permiso de conducción  <br/> número de licencia de conducir  <br/> dlno #  <br/> kørekort  <br/> kørekortnummer  <br/> |
+|listas  <br/> driver license  <br/> número de licencia de conductor  <br/> permiso de conducir  <br/> Lic de drivers.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> número de permiso de conducción  <br/> número de permiso de conducción  <br/> número de licencia de conducir  <br/> dlno#  <br/> kørekort  <br/> kørekortnummer  <br/> |
    
 ## <a name="estonia"></a>Estonia
 
@@ -347,7 +347,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 | |
 |**Keywords_estonia_eu_driver's_license_number**|
 |:-----|
-|listas  <br/> driver license  <br/> número de licencia de conductor  <br/> número de licencia de conductor  <br/> permiso de conducir  <br/> Lic de drivers.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> número de permiso de conducción  <br/> número de licencia de conducir  <br/> dlno #  <br/> permis de conduire  <br/> |
+|listas  <br/> driver license  <br/> número de licencia de conductor  <br/> número de licencia de conductor  <br/> permiso de conducir  <br/> Lic de drivers.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> número de permiso de conducción  <br/> número de licencia de conducir  <br/> dlno#  <br/> permis de conduire  <br/> |
    
 ## <a name="finland"></a>Finlandia
 
@@ -392,7 +392,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 | |
 |**Keywords_finland_eu_driver's_license_number**|
 |:-----|
-|listas  <br/> driver license  <br/> número de licencia de conductor  <br/> permiso de conducir  <br/> Lic de drivers.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> número de permiso de conducción  <br/> número de permiso de conducción  <br/> número de licencia de conducir  <br/> dlno #  <br/> ajokortti  <br/> |
+|listas  <br/> driver license  <br/> número de licencia de conductor  <br/> permiso de conducir  <br/> Lic de drivers.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> número de permiso de conducción  <br/> número de permiso de conducción  <br/> número de licencia de conducir  <br/> dlno#  <br/> ajokortti  <br/> |
    
 ## <a name="france"></a>Francia
 
@@ -439,7 +439,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 | |
 |**Keywords_greece_eu_driver's_license_number**|
 |:-----|
-|Biblioteca  <br/> driver license  <br/> número de licencia de conductor  <br/> permiso de conducir  <br/> Lic de drivers.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> número de permiso de conducción  <br/> número de permiso de conducción  <br/> número de licencia de conducir  <br/> dlno #  <br/> δεια οδήγησης  <br/> Adeia odigisis  <br/> |
+|Biblioteca  <br/> driver license  <br/> número de licencia de conductor  <br/> permiso de conducir  <br/> Lic de drivers.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> número de permiso de conducción  <br/> número de permiso de conducción  <br/> número de licencia de conducir  <br/> dlno#  <br/> δεια οδήγησης  <br/> Adeia odigisis  <br/> |
    
 ## <a name="hungary"></a>Hungría
 
@@ -482,7 +482,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 | |
 |**Keywords_hungary_eu_driver's_license_number**|
 |:-----|
-|listas  <br/> driver license  <br/> número de licencia de conductor  <br/> permiso de conducir  <br/> Lic de drivers.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> número de permiso de conducción  <br/> número de permiso de conducción  <br/> número de licencia de conducir  <br/> dlno #  <br/> vezetoi engedely  <br/> |
+|listas  <br/> driver license  <br/> número de licencia de conductor  <br/> permiso de conducir  <br/> Lic de drivers.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> número de permiso de conducción  <br/> número de permiso de conducción  <br/> número de licencia de conducir  <br/> dlno#  <br/> vezetoi engedely  <br/> |
    
 ## <a name="ireland"></a>Irlanda
 
@@ -525,7 +525,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 | |
 |**Keywords_ireland_eu_driver's_license_number**|
 |:-----|
-|listas  <br/> driver license  <br/> número de licencia de conductor  <br/> permiso de conducir  <br/> Lic de drivers.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> número de permiso de conducción  <br/> número de permiso de conducción  <br/> número de licencia de conducir  <br/> dlno #  <br/> ceadúnas tiomána  <br/> |
+|listas  <br/> driver license  <br/> número de licencia de conductor  <br/> permiso de conducir  <br/> Lic de drivers.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> número de permiso de conducción  <br/> número de permiso de conducción  <br/> número de licencia de conducir  <br/> dlno#  <br/> ceadúnas tiomána  <br/> |
    
 ## <a name="italy"></a>Italia
 
@@ -572,7 +572,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 | |
 |**Keywords_latvia_eu_driver's_license_number**|
 |:-----|
-|listas  <br/> driver license  <br/> número de licencia de conductor  <br/> permiso de conducir  <br/> Lic de drivers.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> número de permiso de conducción  <br/> número de permiso de conducción  <br/> número de licencia de conducir  <br/> dlno #  <br/> autovadītāja apliecība  <br/> |
+|listas  <br/> driver license  <br/> número de licencia de conductor  <br/> permiso de conducir  <br/> Lic de drivers.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> número de permiso de conducción  <br/> número de permiso de conducción  <br/> número de licencia de conducir  <br/> dlno#  <br/> autovadītāja apliecība  <br/> |
    
 ## <a name="lithuania"></a>Lituania
 
@@ -611,7 +611,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 | |
 |**Keywords_lithuania_eu_driver's_license_number**|
 |:-----|
-|listas  <br/> driver license  <br/> número de licencia de conductor  <br/> permiso de conducir  <br/> Lic de drivers.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> número de permiso de conducción  <br/> número de permiso de conducción  <br/> número de licencia de conducir  <br/> dlno #  <br/> vairuotojo pažymėjimas  <br/> |
+|listas  <br/> driver license  <br/> número de licencia de conductor  <br/> permiso de conducir  <br/> Lic de drivers.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> número de permiso de conducción  <br/> número de permiso de conducción  <br/> número de licencia de conducir  <br/> dlno#  <br/> vairuotojo pažymėjimas  <br/> |
    
 ## <a name="luxemburg"></a>Luxemburgo
 
@@ -650,7 +650,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 | |
 |**Keywords_luxemburg_eu_driver's_license_number**|
 |:-----|
-|listas  <br/> driver license  <br/> número de licencia de conductor  <br/> permiso de conducir  <br/> Lic de drivers.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> número de permiso de conducción  <br/> número de permiso de conducción  <br/> número de licencia de conducir  <br/> dlno #  <br/> fahrerlaubnis  <br/> |
+|listas  <br/> driver license  <br/> número de licencia de conductor  <br/> permiso de conducir  <br/> Lic de drivers.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> número de permiso de conducción  <br/> número de permiso de conducción  <br/> número de licencia de conducir  <br/> dlno#  <br/> fahrerlaubnis  <br/> |
    
 ## <a name="malta"></a>Malta
 
@@ -699,7 +699,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 | |
 |**Keywords_malta_eu_driver's_license_number**|
 |:-----|
-|listas  <br/> driver license  <br/> número de licencia de conductor  <br/> permiso de conducir  <br/> Lic de drivers.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> número de permiso de conducción  <br/> número de permiso de conducción  <br/> número de licencia de conducir  <br/> dlno #  <br/> liċenzja sewqan  <br/> |
+|listas  <br/> driver license  <br/> número de licencia de conductor  <br/> permiso de conducir  <br/> Lic de drivers.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> número de permiso de conducción  <br/> número de permiso de conducción  <br/> número de licencia de conducir  <br/> dlno#  <br/> liċenzja sewqan  <br/> |
    
 ## <a name="netherlands"></a>Países Bajos
 
@@ -738,7 +738,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 | |
 |**Keywords_netherlands_eu_driver's_license_number**|
 |:-----|
-|listas  <br/> driver license  <br/> número de licencia de conductor  <br/> permiso de conducir  <br/> Lic de drivers.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> número de permiso de conducción  <br/> número de permiso de conducción  <br/> número de licencia de conducir  <br/> dlno #  <br/> permis de conduire  <br/> rijbewijs  <br/> rijbewijsnummer  <br/> |
+|listas  <br/> driver license  <br/> número de licencia de conductor  <br/> permiso de conducir  <br/> Lic de drivers.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> número de permiso de conducción  <br/> número de permiso de conducción  <br/> número de licencia de conducir  <br/> dlno#  <br/> permis de conduire  <br/> rijbewijs  <br/> rijbewijsnummer  <br/> |
    
 ## <a name="poland"></a>Polonia
 
@@ -787,7 +787,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 | |
 |**Keywords_poland_eu_driver's_license_number**|
 |:-----|
-|listas  <br/> driver license  <br/> número de licencia de conductor  <br/> permiso de conducir  <br/> Lic de drivers.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> número de permiso de conducción  <br/> número de permiso de conducción  <br/> número de licencia de conducir  <br/> dlno #  <br/> Prawo jazdy  <br/> |
+|listas  <br/> driver license  <br/> número de licencia de conductor  <br/> permiso de conducir  <br/> Lic de drivers.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> número de permiso de conducción  <br/> número de permiso de conducción  <br/> número de licencia de conducir  <br/> dlno#  <br/> prawo jazdy  <br/> |
    
 ## <a name="portugal"></a>Portugal
 
@@ -836,7 +836,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 | |
 |**Keywords_portugal_eu_driver's_license_number**|
 |:-----|
-|listas  <br/> driver license  <br/> número de licencia de conductor  <br/> permiso de conducir  <br/> Lic de drivers.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> número de permiso de conducción  <br/> número de permiso de conducción  <br/> número de licencia de conducir  <br/> dlno #  <br/> Carteira de motorista  <br/> |
+|listas  <br/> driver license  <br/> número de licencia de conductor  <br/> permiso de conducir  <br/> Lic de drivers.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> número de permiso de conducción  <br/> número de permiso de conducción  <br/> número de licencia de conducir  <br/> dlno#  <br/> Carteira de motorista  <br/> |
    
 ## <a name="romania"></a>Rumania
 
@@ -879,7 +879,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 | |
 |**Keywords_romania_eu_driver's_license_number**|
 |:-----|
-|listas  <br/> driver license  <br/> número de licencia de conductor  <br/> permiso de conducir  <br/> Lic de drivers.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> número de permiso de conducción  <br/> número de permiso de conducción  <br/> número de licencia de conducir  <br/> dlno #  <br/> Perm de conducere  <br/> |
+|listas  <br/> driver license  <br/> número de licencia de conductor  <br/> permiso de conducir  <br/> Lic de drivers.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> número de permiso de conducción  <br/> número de permiso de conducción  <br/> número de licencia de conducir  <br/> dlno#  <br/> Perm de conducere  <br/> |
    
 ## <a name="slovakia"></a>Eslovaquia
 
@@ -922,7 +922,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 | |
 |**Keywords_slovakia_eu_driver's_license_number**|
 |:-----|
-|listas  <br/> driver license  <br/> número de licencia de conductor  <br/> permiso de conducir  <br/> Lic de drivers.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> número de permiso de conducción  <br/> número de permiso de conducción  <br/> número de licencia de conducir  <br/> dlno #  <br/> vodičský preukaz  <br/> |
+|listas  <br/> driver license  <br/> número de licencia de conductor  <br/> permiso de conducir  <br/> Lic de drivers.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> número de permiso de conducción  <br/> número de permiso de conducción  <br/> número de licencia de conducir  <br/> dlno#  <br/> vodičský preukaz  <br/> |
    
 ## <a name="slovenia"></a>Eslovenia
 
@@ -961,7 +961,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 | |
 |**Keywords_slovenia_eu_driver's_license_number**|
 |:-----|
-|listas  <br/> driver license  <br/> número de licencia de conductor  <br/> permiso de conducir  <br/> Lic de drivers.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> número de permiso de conducción  <br/> número de permiso de conducción  <br/> número de licencia de conducir  <br/> dlno #  <br/> vozniško dovoljenje  <br/> |
+|listas  <br/> driver license  <br/> número de licencia de conductor  <br/> permiso de conducir  <br/> Lic de drivers.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> número de permiso de conducción  <br/> número de permiso de conducción  <br/> número de licencia de conducir  <br/> dlno#  <br/> vozniško dovoljenje  <br/> |
    
 ## <a name="spain"></a>España
 
@@ -1004,7 +1004,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 | |
 |**Keywords_spain_eu_driver's_license_number**|
 |:-----|
-|dlno #  <br/> listas  <br/> Lic de drivers.  <br/> permiso de conducir  <br/> driver license  <br/> drivers licence  <br/> drivers license  <br/> driver's licence  <br/> driver's license  <br/> driving licence  <br/> driving license  <br/> número de licencia de conductor  <br/> número de licencia de conductor  <br/> número de licencia de drivers  <br/> número de licencia de drivers  <br/> número de permiso de conducción  <br/> número de permiso de conducción  <br/> número de permiso de conducción  <br/> número de licencia de conducir  <br/> permiso de conducción  <br/> número de permiso de conducir  <br/> permisos de conducción  <br/> permisos conducción  <br/> número de licencia conducir  <br/> número de cuaderno de conducir  <br/> número conducir de cuaderno  <br/> licenciar conducir  <br/> número de permisos de conducir  <br/> número de permisos conducir  <br/> número permisos conducir  <br/> permisos conducir  <br/> licencia de manejo  <br/> el cuaderno de conducir  <br/> conducir del cuaderno  <br/> |
+|dlno#  <br/> listas  <br/> Lic de drivers.  <br/> permiso de conducir  <br/> driver license  <br/> drivers licence  <br/> drivers license  <br/> driver's licence  <br/> driver's license  <br/> driving licence  <br/> driving license  <br/> número de licencia de conductor  <br/> número de licencia de conductor  <br/> número de licencia de drivers  <br/> número de licencia de drivers  <br/> número de permiso de conducción  <br/> número de permiso de conducción  <br/> número de permiso de conducción  <br/> número de licencia de conducir  <br/> permiso de conducción  <br/> número de permiso de conducir  <br/> permisos de conducción  <br/> permisos conducción  <br/> número de licencia conducir  <br/> número de cuaderno de conducir  <br/> número conducir de cuaderno  <br/> licenciar conducir  <br/> número de permisos de conducir  <br/> número de permisos conducir  <br/> número permisos conducir  <br/> permisos conducir  <br/> licencia de manejo  <br/> el cuaderno de conducir  <br/> conducir del cuaderno  <br/> |
    
 ## <a name="sweden"></a>Suecia
 
@@ -1049,7 +1049,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 | |
 |**Keywords_sweden_eu_driver's_license_number**|
 |:-----|
-|listas  <br/> driver license  <br/> número de licencia de conductor  <br/> permiso de conducir  <br/> Lic de drivers.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> número de permiso de conducción  <br/> número de permiso de conducción  <br/> número de licencia de conducir  <br/> dlno #  <br/> körkort  <br/> |
+|listas  <br/> driver license  <br/> número de licencia de conductor  <br/> permiso de conducir  <br/> Lic de drivers.  <br/> drivers license  <br/> drivers licence  <br/> driver's license  <br/> número de permiso de conducción  <br/> número de permiso de conducción  <br/> número de licencia de conducir  <br/> dlno#  <br/> körkort  <br/> |
    
 ## <a name="uk"></a>LIBRA
 

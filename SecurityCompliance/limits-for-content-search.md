@@ -3,7 +3,7 @@ title: Límites de búsqueda de contenido en el centro de seguridad & cumplimien
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 78fe3147-1979-4c41-83bb-aeccf244368d
 description: 'Obtenga información sobre los límites en vigor para la característica de búsqueda de contenido en el centro de seguridad & cumplimiento en Office 365, como el número máximo de búsquedas simultáneas. '
-ms.openlocfilehash: 715c64433ad78197411aff465c7a08baf2f71eb8
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 6933fcb2a7b54c3617b2c01d54fa50fa4955ead2
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32252028"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155912"
 ---
 # <a name="limits-for-content-search-in-the-security--compliance-center"></a>Límites de búsqueda de contenido en el centro de seguridad & cumplimiento
 
@@ -37,7 +37,7 @@ En la siguiente tabla se enumeran los límites de búsqueda en el centro de segu
 |:-----|:-----|
 |El número máximo de buzones o sitios en los que se puede buscar en una sola búsqueda de contenido  <br/> |Sin límite  <br/> |
 |El número máximo de búsquedas de contenido que se pueden ejecutar al mismo tiempo en la organización.  <br/> |Sin límite  <br/> |
-|El número máximo de búsquedas de contenido que un solo usuario puede iniciar al mismo tiempo. Tenga en cuenta que es muy probable que este límite se alcance cuando el usuario intenta iniciar varias búsquedas mediante el comando **Get-compliancesearch \| Start-Compliancesearch** en Security & Compliance Center PowerShell.  <br/> |metros  <br/> |
+|El número máximo de búsquedas de contenido que un solo usuario puede iniciar al mismo tiempo. Tenga en cuenta que es muy probable que este límite se alcance cuando el usuario intenta iniciar varias búsquedas mediante el comando **Get-compliancesearch \| Start-Compliancesearch** en Security & Compliance Center PowerShell.  <br/> |10   <br/> |
 |El número máximo de elementos por buzón de usuario que se muestran en la página de vista previa al previsualizar los resultados de la búsqueda de contenido.  <br/> |100  <br/> |
 |El número máximo de elementos encontrados en todos los buzones de usuario que se muestran en la página de vista previa al previsualizar los resultados de la búsqueda de contenido. Se muestran los elementos más recientes.  <br/> |1,000  <br/> |
 |El número máximo de buzones de usuario de los que se puede obtener una vista previa de los resultados de búsqueda. Si hay más de 1000 buzones que contienen contenido que coincide con la consulta de búsqueda, solo estarán disponibles los primeros 1000 buzones con la mayoría de resultados de búsqueda para la vista previa.  <br/> |1,000  <br/> |
@@ -69,7 +69,7 @@ En la tabla siguiente se describen los límites de indización que podrían dar 
 |Salida máxima del analizador  <br/> |2 millones de caracteres  <br/> |La cantidad máxima de salida de texto del analizador que se indiza. Por ejemplo, si el analizador extrajo 8 millones caracteres de un documento, solo se indizarán los primeros 2 millones de caracteres.  <br/> |
 |Tokens de anotación máximos  <br/> |2 millones  <br/> |Cuando se indiza un mensaje de correo electrónico, se anota cada palabra con diferentes instrucciones de procesamiento que especifican cómo debe indizarse esa palabra. Cada conjunto de instrucciones de procesamiento se denomina token de anotación. Para mantener la calidad de servicio en Office 365, hay un límite de 2 millones de tokens de anotación para un mensaje de correo electrónico.  <br/> |
 |Tamaño máximo del cuerpo en el índice  <br/> |67 millones caracteres  <br/> |El número total de caracteres en el cuerpo de un mensaje de correo electrónico y todos sus datos adjuntos. Cuando se indiza un mensaje de correo electrónico, todo el texto del cuerpo del mensaje y en todos los datos adjuntos se concatena en una sola cadena. El tamaño máximo de esta cadena indizada es de 67 millones caracteres.  <br/> |
-|Número máximo de tokens únicos en el cuerpo  <br/> |1 millón  <br/> |Como se ha explicado anteriormente, los tokens son el resultado de extraer texto del contenido, quitar los signos de puntuación y espacios y, a continuación, dividirlo en palabras (llamadas tokens) que se almacenan en el índice. Por ejemplo, la frase `"cat, mouse, bird, dog, dog"` contiene 5 tokens. Pero solo 4 son tokens únicos. Hay un límite de 1 millón tokens únicos por mensaje de correo electrónico, lo que ayuda a evitar que el índice sea demasiado grande con tokens aleatorios.  <br/> |
+|Número máximo de tokens únicos en el cuerpo  <br/> |1 millón  <br/> |Como se ha explicado anteriormente, los tokens son el resultado de extraer texto del contenido, quitar los signos de puntuación y espacios y, a continuación, dividirlo en palabras (llamadas tokens) que se almacenan en el índice. Por ejemplo, la frase `"cat, mouse, bird, dog, dog"` contiene 5 tokens. Pero solo 4 son tokens únicos. Hay un límite de 1 millón tokens únicos por mensaje de correo electrónico, lo que ayuda a evitar que el índice sea demasiado grande con tokens aleatorios.  <br/> |
   
 ## <a name="more-information"></a>Más información
 

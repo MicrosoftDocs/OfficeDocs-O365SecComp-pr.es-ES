@@ -3,18 +3,18 @@ title: Informe de mensajes reenviados automáticamente
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: b5543faa-44fa-44c5-8180-fb835e7e452d
 description: Los administradores pueden obtener información sobre el informe de mensajes reenviados automáticamente en el panel de flujo de correo en el centro de seguridad & cumplimiento de Office 365.
-ms.openlocfilehash: a7556dd98e1381fe59a2a911dbfa27132f1aa44d
-ms.sourcegitcommit: e05e83212e7ca4e84f2ddb0de0297895b995338d
+ms.openlocfilehash: 81d6235e549b6eed792d069e66c69da1d40103ff
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "33868618"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158662"
 ---
 # <a name="auto-forwarded-messages-report"></a>Informe de mensajes reenviados automáticamente
 

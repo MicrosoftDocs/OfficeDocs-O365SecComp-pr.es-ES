@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 6/29/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
 description: Puede crear un buzón inactivo en Office 365 aplicando una directiva de retención de Office 365 o retención al buzón de correo y, a continuación, eliminando la cuenta de usuario de Office 365 correspondiente. Los elementos de un buzón inactivo se conservan durante toda la Directiva de retención o retención que se le aplicó antes de que se desactivara. Para eliminar de forma permanente un buzón inactivo, solo tiene que quitar la Directiva de retención o retención.
-ms.openlocfilehash: ad874d2f21afaa86fa7fa5a18dc827dfa1b90574
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 1a2eb5a998de7f31bcf531aacf22dca51c71acb8
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258908"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151232"
 ---
 # <a name="create-and-manage-inactive-mailboxes-in-office-365"></a>Crear y administrar buzones inactivos en Office 365
 

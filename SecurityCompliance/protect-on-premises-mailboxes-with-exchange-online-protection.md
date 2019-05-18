@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 6/1/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.assetid: c5e95951-da67-4ec7-92c5-982abd477e69
 ms.collection:
 - M365-security-compliance
 description: Incluso si planea hospedar algunos o todos los buzones de correo locales, aún puede proteger los buzones con Exchange Online Protection (EOP). Para configurar conectores, la cuenta debe ser de un administrador global de Office 365 o un administrador de la compañía de Exchange (el grupo de roles de administración de la organización). Para obtener información sobre cómo se relacionan los permisos de Office 365 con los permisos de Exchange, consulte asignación de roles de administrador en Office 365 operado por 21Vianet. Si todos los buzones de Exchange son locales, siga estos pasos para configurar el servicio de EOP.
-ms.openlocfilehash: 4331bf5574122efb50bb9dda9c7c0386df5683f7
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 20fa94a356823e624fcb42dc493d555cec3fe523
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261558"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156942"
 ---
 # <a name="protect-on-premises-mailboxes-with-exchange-online-protection"></a>Proteger buzones locales con Exchange Online Protection
 
@@ -85,6 +85,6 @@ Si tiene buzones de Exchange local y uno o más buzones en la nube en Exchange O
   
 Puede elegir un escenario híbrido para aprovechar el correo electrónico basado en la nube para la mayoría de los empleados. Puede hacer esto mientras hospeda también algunos buzones de correo locales; por ejemplo, para el departamento legal. 
   
-Una configuración híbrida puede ser compleja, pero tiene muchas ventajas. Para obtener más información sobre la configuración de escenarios híbridos con Exchange, vea [configurIng Exchange Hybrid Deployment Features with Office 365 operated by 21Vianet](https://support.office.com/article/26e7cc26-c980-4cc5-a082-c333de544b6d).
+Una configuración híbrida puede ser compleja, pero tiene muchas ventajas. Para obtener más información sobre la configuración de escenarios híbridos con Exchange, vea [Configuring Exchange Hybrid Deployment Features with Office 365 operated by 21Vianet](https://support.office.com/article/26e7cc26-c980-4cc5-a082-c333de544b6d).
   
 

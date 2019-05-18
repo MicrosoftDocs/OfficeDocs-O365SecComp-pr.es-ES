@@ -3,7 +3,7 @@ title: Inteligencia de flujo de correo en Office 365
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -11,16 +11,16 @@ search.appverid:
 - MET150
 ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: Los administradores pueden obtener información sobre los códigos de error asociados a la entrega de mensajes con conectores en Office 365 (también conocido como inteligencia de flujo de correo).
-ms.openlocfilehash: d9ddfdf7c54c8dc709c3d5ae03d9fbd76a153f7e
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 224940b84480b694188bd3047829d4896cc2584e
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32252508"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155872"
 ---
 # <a name="mail-flow-intelligence-in-office-365"></a>Inteligencia de flujo de correo en Office 365
 
-Normalmente, se usa un conector para enrutar mensajes de correo electrónico de la organización de Office 365 a su entorno de correo electrónico local. También puede usar un conector para enrutar los mensajes de Office 365 a una organización asociada. Cuando Office 365 no puede entregar estos mensajes a través del conector, se ponen en cola en Office 365. Office 365 seguirá reintentando la entrega para cada mensaje durante 48 horas. TransCurridos 48 horas, el mensaje en cola expirará y el mensaje se devolverá al remitente original en un informe de no entrega (también conocido como un mensaje NDR o de devolución).
+Normalmente, se usa un conector para enrutar mensajes de correo electrónico de la organización de Office 365 a su entorno de correo electrónico local. También puede usar un conector para enrutar los mensajes de Office 365 a una organización asociada. Cuando Office 365 no puede entregar estos mensajes a través del conector, se ponen en cola en Office 365. Office 365 seguirá reintentando la entrega para cada mensaje durante 48 horas. Transcurridos 48 horas, el mensaje en cola expirará y el mensaje se devolverá al remitente original en un informe de no entrega (también conocido como un mensaje NDR o de devolución).
 
 Office 365 genera un error cuando no se puede entregar un mensaje con un conector. Los errores más comunes y sus soluciones se describen en este tema. Colectivamente, los errores de cola y de notificación para los mensajes no entregados que se envían a través de conectores se conocen como _inteligencia de flujo de correo_.
 

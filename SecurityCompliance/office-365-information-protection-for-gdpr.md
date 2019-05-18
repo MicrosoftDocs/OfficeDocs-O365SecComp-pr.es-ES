@@ -4,7 +4,7 @@ ms.author: bcarter
 author: brendacarter
 manager: laurawi
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.collection:
 - Ent_O365
@@ -15,12 +15,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Esta solución muestra cómo proteger datos confidenciales que se almacenan en servicios de Office 365.
-ms.openlocfilehash: fb66eb36a08883b63267349b50d2f17b15eeef03
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 70683351de9749d11a7271c1b9b9b743543a7ae2
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32262712"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158722"
 ---
 # <a name="office-365-information-protection-for-gdpr"></a>Information Protection de Office 365 para RGPD
 

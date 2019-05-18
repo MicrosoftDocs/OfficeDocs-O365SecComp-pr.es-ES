@@ -4,7 +4,7 @@ ms.author: bcarter
 author: brendacarter
 manager: laurawi
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.collection:
 - Ent_O365
@@ -17,12 +17,12 @@ search.appverid:
 ms.custom: Strat_O365_Enterprise
 ms.assetid: 10d1004b-42b6-4e2b-aaa2-18ddd9118f64
 description: 'Resumen: instrucciones de planeamiento e implementación para organizaciones rápidas con un mayor perfil de amenaza.'
-ms.openlocfilehash: 99539c2480aef3329f517fc855776f1bae463904
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: ce8b48b1ecc7405dcd5499340a038851766396eb
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261348"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158572"
 ---
 # <a name="microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-organizations"></a>Guía de seguridad de Microsoft para campañas políticas, ONG y otras organizaciones ágiles
 

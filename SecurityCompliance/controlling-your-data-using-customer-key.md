@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 8/1/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: f2cd475a-e592-46cf-80a3-1bfb0fa17697
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo configurar la clave de cliente de Office 365 para Exchange Online, Skype empresarial, SharePoint Online y OneDrive para la empresa. Con la clave de cliente, puede controlar las claves de cifrado de la organización y, después, configurar Office 365 para usarlas y cifrar los datos en reposo en los centros de datos de Microsoft.
-ms.openlocfilehash: 219ddb94727cd2b708f734a77a8397b3bc3f1064
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 839d0b56b3748e2ab4ccecc30a084447f22131aa
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258358"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153722"
 ---
 # <a name="controlling-your-data-in-office-365-using-customer-key"></a>Controlar los datos en Office 365 con la clave de cliente
 
@@ -126,7 +126,7 @@ Para enviar una oferta para activar la clave de cliente, siga estos pasos:
     
 5. En la página Detalles de la **oferta** , elija **crear solicitud**.
     
-6. ReLlene todos los detalles aplicables y la información solicitada en el formulario de oferta. Preste especial atención a las selecciones de los funcionarios de su organización a los que desea conceder autorización para aprobar la destrucción permanente e irreversible de claves de cifrado y datos. Una vez que haya completado el formulario, elija **Enviar**.
+6. Rellene todos los detalles aplicables y la información solicitada en el formulario de oferta. Preste especial atención a las selecciones de los funcionarios de su organización a los que desea conceder autorización para aprobar la destrucción permanente e irreversible de claves de cifrado y datos. Una vez que haya completado el formulario, elija **Enviar**.
     
     Este proceso puede tardar hasta cinco días hábiles una vez que se haya notificado a Microsoft de la solicitud.
     
@@ -304,7 +304,7 @@ Algunas organizaciones prefieren este enfoque para establecer la procedencia de 
     
 - El conjunto de herramientas incluye atestación de Thales que el mundo de seguridad de la clave de Azure también se generó en un HSM auténtico fabricado por Thales. Esta atestación le demuestra que Microsoft también usa hardware de Thales genuino.
     
-Consulte a su grupo de seguridad para determinar si se requieren las atestaciones anteriores. Para obtener instrucciones detalladas para crear una clave local e importarla en el almacén de claves, consulte [How to generaTE HSM-Protected Keys for Azure Key Vault](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/). Use las instrucciones de Azure para crear una clave en cada almacén de clave.
+Consulte a su grupo de seguridad para determinar si se requieren las atestaciones anteriores. Para obtener instrucciones detalladas para crear una clave local e importarla en el almacén de claves, consulte [How to generate HSM-Protected Keys for Azure Key Vault](https://azure.microsoft.com/documentation/articles/key-vault-hsm-protected-keys/). Use las instrucciones de Azure para crear una clave en cada almacén de clave.
   
 ### <a name="check-the-recovery-level-of-your-keys"></a>Comprobar el nivel de recuperación de las claves
 <a name="CheckKeyRecoveryLevel"> </a>

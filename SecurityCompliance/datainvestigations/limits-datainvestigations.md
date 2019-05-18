@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: a6240692916d1b38ccbdae272fcd7a9b4292b376
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: ff11d03adf8afb0ce76151ff67a238cce342f9df
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258743"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34150742"
 ---
 # <a name="data-investigations-preview-limits"></a>Límites de investigaciones de datos (vista previa)
 
@@ -32,8 +32,8 @@ En la siguiente tabla se enumeran los límites para las investigaciones en las i
   |**Descripción del límite**|**Límite**|
   |:-----|:-----|
   |Número máximo de investigaciones.  <br/> |50  <br/> |
-  |Número total de documentos que se pueden agregar a una investigación (para todos los conjuntos de evidencias de la investigación).  <br/> |1 millón  <br/> |
-  |Tamaño total de archivo por carga.  <br/> |100 GB  <br/> |
+  |Número total de documentos que se pueden agregar a una investigación (para todos los conjuntos de evidencias de la investigación).  <br/> |1 millón  <br/> |
+  |Tamaño total de archivo por carga.  <br/> |100 GB  <br/> |
   |Tamaño máximo de un solo archivo.   <br/> |100 MB <sup>1</sup> <br/> |
   |Número máximo de caracteres extraídos de un solo archivo.  <br/> |10 millones <sup>1</sup> <br/> |
   |Profundidad de los elementos insertados en un solo archivo.  <br/> |25 <sup>1</sup> <br/> |

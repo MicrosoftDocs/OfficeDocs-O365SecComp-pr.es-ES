@@ -4,7 +4,7 @@ ms.author: bcarter
 author: brendacarter
 manager: laurawi
 ms.date: 2/7/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.collection:
 - Ent_O365
@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Obtenga información general de Office 365 Information Protection para RGPD. Aprenda a descubrir, clasificar, proteger y vigilar los datos personales.
-ms.openlocfilehash: 5f10b8c19a2a0d3fe5ace8bcfe8cf6f64c30308f
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 0231951aa4fde3075dc525707fc7cac98e8f7a45
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32262752"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152492"
 ---
 # <a name="overview-of-office-365-information-protection-for-gdpr"></a>Información general de Information Protection de Office 365 para RGPD
 

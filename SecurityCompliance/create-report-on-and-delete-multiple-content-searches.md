@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 6/26/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
 description: Aprenda a automatizar las tareas de búsqueda de contenido como la creación de búsquedas y la ejecución de informes a través de scripts de PowerShell en el centro de seguridad & cumplimiento en Office 365.
-ms.openlocfilehash: 96d10e274cd83a4785170239302d55e74d40ca84
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 75caf75d576ac4a24779de15f5b05cb7fe8fa724
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258458"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151182"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>Crear, informar sobre y eliminar varias búsquedas de contenido
 
@@ -59,7 +59,7 @@ El archivo de valores separados por comas (CSV) que se crea en este paso contien
     |**Parámetro**|**Descripción**|
     |:-----|:-----|
     | `ExchangeLocation` <br/> |La dirección SMTP del buzón del usuario.  <br/> |
-    | `SharePointLocation` <br/> |La dirección URL del sitio de OneDrive para la empresa del usuario o la dirección URL de cualquier sitio de la organización. Para la dirección URL de los sitios de OneDrive para la empresa, ` https://<your organization>-my.sharepoint.com/personal/<user alias>_<your organization>_onmicrosoft_com `use este formato:. Por ejemplo,  `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft_com`.  <br/> |
+    | `SharePointLocation` <br/> |La dirección URL del sitio de OneDrive para la empresa del usuario o la dirección URL de cualquier sitio de la organización. Para la dirección URL de los sitios de OneDrive para la empresa, ` https://<your organization>-my.sharepoint.com/personal/<user alias>_<your organization>_onmicrosoft_com `use este formato:. Por ejemplo, `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft_com`.  <br/> |
     | `ContentMatchQuery` <br/> |La consulta de búsqueda para la búsqueda. Para obtener más información acerca de la creación de una consulta de búsqueda, consulte [Keyword queries and search conditions for Content Search](keyword-queries-and-search-conditions.md).  <br/> |
     | `StartDate` <br/> |Para el correo electrónico, la fecha en o después de que un destinatario reciba un mensaje o que el remitente lo haya enviado. Para los documentos de los sitios de SharePoint o de OneDrive para la empresa, la fecha en o después de que se modificó por última vez un documento.  <br/> |
     | `EndDate` <br/> |Para el correo electrónico, la fecha en o antes de que un remitente haya enviado un mensaje. Para los documentos de los sitios de SharePoint o de OneDrive para la empresa, la fecha en o antes de que se modificó por última vez un documento.  <br/> |

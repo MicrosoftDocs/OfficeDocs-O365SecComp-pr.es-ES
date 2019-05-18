@@ -3,18 +3,18 @@ title: Información del estado del flujo de correo de dominio superior
 ms.author: chrisda
 author: chrisda
 manager: serdars
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: Los administradores pueden obtener información sobre el conocimiento del estado del flujo de correo del dominio superior del panel de flujo de correo en el centro de seguridad & cumplimiento.
-ms.openlocfilehash: 851ef1438f111a36f69563670bbd0835a9956edc
-ms.sourcegitcommit: e05e83212e7ca4e84f2ddb0de0297895b995338d
+ms.openlocfilehash: c339769c65b2b1cec3d187873e71e5f1e283ccc7
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "33868598"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158652"
 ---
 # <a name="top-domain-mail-flow-status-insight"></a>Información del estado del flujo de correo de dominio superior
 

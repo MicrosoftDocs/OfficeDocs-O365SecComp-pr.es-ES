@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 7/2/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.assetid: 3bdb5c4e-94fc-4741-b02f-4e7cc3c54aa1
 ms.collection:
 - M365-security-compliance
 description: Puede usar Information Rights Management (IRM) para ayudar a controlar y proteger los archivos que se descargan de listas o bibliotecas.
-ms.openlocfilehash: ae07136cf128f167695f667cc8a149492287f498
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 3c350a3648b77992dd8e86ee47498efc327b2af8
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32244041"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34152342"
 ---
 # <a name="apply-information-rights-management-irm-to-a-list-or-library"></a>Aplicar Information Rights Management (IRM) a una lista o biblioteca
 

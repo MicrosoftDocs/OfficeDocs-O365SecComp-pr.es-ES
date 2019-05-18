@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 12/9/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: 97921f0e-832f-40c7-b56d-414faede5191
 ms.collection:
 - M365-security-compliance
 description: El Centro de administración de Exchange (EAC) es la consola de administración basada en web para Microsoft Exchange Online Protection (EOP).
-ms.openlocfilehash: 983f6fe6b9f1592115e524315c9e52e08fed5101
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 01158ae75d96cf86b1f02aaabbd00eedec0e3722
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256008"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153012"
 ---
 # <a name="exchange-admin-center-in-exchange-online-protection"></a>Centro de administración de Exchange en Exchange Online Protection  
 

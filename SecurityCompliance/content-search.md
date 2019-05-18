@@ -3,7 +3,7 @@ title: Búsqueda de contenido en Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: Use la herramienta de búsqueda de contenido en el centro de cumplimiento de Office 365 o Microsoft 365 para buscar contenido en buzones de correo, sitios de SharePoint Online, cuentas de OneDrive, Microsoft Teams, grupos de Office 365 y conversaciones de Skype empresarial. Puede usar consultas de búsqueda de palabras clave y condiciones de búsqueda para restringir los resultados de la búsqueda. A continuación, puede obtener una vista previa y exportar los resultados de búsqueda. La búsqueda de contenido también es una herramienta eficaz para buscar contenido que pueda estar relacionado con una solicitud de sujeto de datos de RGPD.
-ms.openlocfilehash: 67b32dcc6efcc096b9952be41380a8dc3700a668
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 4661f724a646eaaf522485726b2cb0475483e56b
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32264122"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153932"
 ---
 # <a name="content-search-in-office-365"></a>Búsqueda de contenido en Office 365
 
