@@ -1,10 +1,10 @@
 ---
-title: Ver documentos de un conjunto de trabajo
+title: Ver documentos de un conjunto de revisión
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,13 +14,13 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: dd708554e9b89c8f1057cffb1bcbaddb302cb253
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 4ee4c2eb92ee9ca5c155ecfccf3b391e86a03696
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32242538"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34151882"
 ---
-# <a name="view-documents-in-a-working-set"></a><span data-ttu-id="b6c12-102">Ver documentos de un conjunto de trabajo</span><span class="sxs-lookup"><span data-stu-id="b6c12-102">View documents in a working set</span></span>
+# <a name="view-documents-in-a-review-set"></a><span data-ttu-id="e9ab6-102">Ver documentos de un conjunto de revisión</span><span class="sxs-lookup"><span data-stu-id="e9ab6-102">View documents in a review set</span></span>
 
-<span data-ttu-id="b6c12-103">Contenido disponible próximamente.</span><span class="sxs-lookup"><span data-stu-id="b6c12-103">Content coming soon.</span></span>
+<span data-ttu-id="e9ab6-103">Contenido disponible próximamente.</span><span class="sxs-lookup"><span data-stu-id="e9ab6-103">Content coming soon.</span></span>

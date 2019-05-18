@@ -1,10 +1,10 @@
 ---
-title: Límites de búsqueda en la exhibición avanzada de documentos electrónicos (versión preliminar)
+title: Límites de búsqueda en eDiscovery avanzado
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,13 +14,13 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: b46a8fe7e1b3406e3e039380ec8a3e814ac1ee62
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: a9e7aedc8493459c93812a131bfa4cadc22bcedc
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32240935"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153962"
 ---
-# <a name="search-limits-in-advanced-ediscovery-preview"></a><span data-ttu-id="08405-102">Límites de búsqueda en la exhibición avanzada de documentos electrónicos (versión preliminar)</span><span class="sxs-lookup"><span data-stu-id="08405-102">Search limits in Advanced eDiscovery (Preview)</span></span>
+# <a name="search-limits-in-advanced-ediscovery"></a><span data-ttu-id="0f8d2-102">Límites de búsqueda en eDiscovery avanzado</span><span class="sxs-lookup"><span data-stu-id="0f8d2-102">Search limits in Advanced eDiscovery</span></span>
 
-<span data-ttu-id="08405-103">Contenido disponible próximamente.</span><span class="sxs-lookup"><span data-stu-id="08405-103">Content coming soon.</span></span>
+<span data-ttu-id="0f8d2-103">Contenido disponible próximamente.</span><span class="sxs-lookup"><span data-stu-id="0f8d2-103">Content coming soon.</span></span>
