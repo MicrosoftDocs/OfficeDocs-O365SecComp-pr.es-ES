@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,13 +14,13 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 28336f633967ce61ef2cb00b45170e34d600f839
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 33d617930e66c12f5e1355150e328d8640f8f3a4
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32241012"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154942"
 ---
-# <a name="manage-load-sets"></a><span data-ttu-id="c1efc-102">Administrar conjuntos de carga</span><span class="sxs-lookup"><span data-stu-id="c1efc-102">Manage load sets</span></span>
+# <a name="manage-load-sets"></a><span data-ttu-id="6f794-102">Administrar conjuntos de carga</span><span class="sxs-lookup"><span data-stu-id="6f794-102">Manage load sets</span></span>
 
-<span data-ttu-id="c1efc-103">Contenido disponible próximamente.</span><span class="sxs-lookup"><span data-stu-id="c1efc-103">Content coming soon.</span></span>
+<span data-ttu-id="6f794-103">Contenido disponible próximamente.</span><span class="sxs-lookup"><span data-stu-id="6f794-103">Content coming soon.</span></span>
