@@ -3,7 +3,7 @@ title: 'escenario de derrame de datos de series de soluciones de eDiscovery: bú
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: Use las herramientas de búsqueda y la exhibición de documentos electrónicos de Office 365 para administrar y responder a un incidente de derrame de datos en su organización.
-ms.openlocfilehash: 50078e3f22ede8a1af2a252a7a6f75710534c062
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: b06dea5449d655cfe66072b3607f40c3bb7362da
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32258968"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153802"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>serie de soluciones de eDiscovery: escenario de derrame de datos: búsqueda y depuración
 
@@ -54,7 +54,7 @@ A continuación se describe cómo administrar un incidente de derrame de datos:
     
 - Para crear un caso, debe ser miembro del grupo de roles de administrador de eDiscovery o ser miembro de un grupo de roles personalizado que tenga asignado el rol de administración de casos. Si no es miembro, solicite a un administrador de 365 de Office que [le agregue al grupo de roles eDiscovery Manager](assign-ediscovery-permissions.md).
     
-- Para eliminar datos que se han derramado en la organización, debe usar el comando [Search-Mailbox-DeleteContent](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Search-Mailbox?view=exchange-ps) en Exchange Online PowerShell. Además, para usar el parámetro *DeleteContent* , también debe ser miembro de un grupo de roles en Exchange online que tenga asignada la función de importación y exportación de buzoNes de correo. Consulte la sección "agregar un rol a un grupo de roles" en [Manage role Groups](https://technet.microsoft.com/library/jj657480%28v=exchg.150%29.aspx).
+- Para eliminar datos que se han derramado en la organización, debe usar el comando [Search-Mailbox-DeleteContent](https://docs.microsoft.com/powershell/module/exchange/mailboxes/Search-Mailbox?view=exchange-ps) en Exchange Online PowerShell. Además, para usar el parámetro *DeleteContent* , también debe ser miembro de un grupo de roles en Exchange online que tenga asignada la función de importación y exportación de buzones de correo. Consulte la sección "agregar un rol a un grupo de roles" en [Manage role Groups](https://technet.microsoft.com/library/jj657480%28v=exchg.150%29.aspx).
     
 - Para buscar las actividades de eDiscovery del registro de auditoría de Office 365 en el paso 8, la auditoría debe estar activada para su organización. Puede buscar actividades que se han realizado en los últimos 90 días. Para obtener más información acerca de cómo habilitar y usar la auditoría, vea la sección [auditar el proceso de investigación del derrame de datos](#auditing-the-data-spillage-investigation-process) en el paso 8. 
     
@@ -62,7 +62,7 @@ A continuación se describe cómo administrar un incidente de derrame de datos:
 
 En función de su práctica organizativa, necesita controlar quién puede tener acceso al caso de eDiscovery usado para investigar un incidente de derrame de datos y configurar los límites de conformidad. La forma más sencilla de hacerlo es agregar investigadores como miembros de un grupo de roles existente en el centro de cumplimiento de & de seguridad y, a continuación, agregar el grupo de roles como miembro del caso de exhibición de documentos electrónicos. Para obtener información sobre los grupos de roles integrados de eDiscovery y cómo agregar miembros a un caso de exhibición de documentos electrónicos, consulte [asignar permisos de exhibición](assign-ediscovery-permissions.md)de documentos electrónicos.
   
-También puede crear un nuevo grupo de roles que se alinee con las necesidades de su organización. Por ejemplo, es posible que desee que un grupo de investigadores de derrames de datos de la organización obtenga acceso y colabore en todos los casos de derrame de datos. Para ello, cree un grupo de funciones "investigación de derramamiento de datos", asignando los roles apropiados (exportar, desCifrado RMS, revisión, vista previa, búsqueda de cumplimiento y administración de casos), agregando los investigadores del derrame de datos al grupo de roles y, a continuación, agregando el Grupo de roles como miembro del caso de la exhibición de documentos electrónicos de datos. Para obtener instrucciones detalladas sobre cómo hacerlo, consulte [configurar límites de cumplimiento para investigaciones de eDiscovery en Office 365](set-up-compliance-boundaries.md) . 
+También puede crear un nuevo grupo de roles que se alinee con las necesidades de su organización. Por ejemplo, es posible que desee que un grupo de investigadores de derrames de datos de la organización obtenga acceso y colabore en todos los casos de derrame de datos. Para ello, cree un grupo de funciones "investigación de derramamiento de datos", asignando los roles apropiados (exportar, descifrado RMS, revisión, vista previa, búsqueda de cumplimiento y administración de casos), agregando los investigadores del derrame de datos al grupo de roles y, a continuación, agregando el Grupo de roles como miembro del caso de la exhibición de documentos electrónicos de datos. Para obtener instrucciones detalladas sobre cómo hacerlo, consulte [configurar límites de cumplimiento para investigaciones de eDiscovery en Office 365](set-up-compliance-boundaries.md) . 
   
 ## <a name="step-2-create-an-ediscovery-case"></a>Paso 2: crear un caso de exhibición de documentos electrónicos
 
@@ -214,7 +214,7 @@ Si las palabras clave de la consulta de búsqueda que ha creado y usado en el pa
     
 ### <a name="auditing-the-data-spillage-investigation-process"></a>Auditoría del proceso de investigación del derrame de datos
 
-Puede buscar en el registro de auditoría de Office 365 las actividades de eDiscovery que se llevaron a cabo durante la investigación. También puede buscar en el registro de auditoría para devolver los registros de auditoría que se crearon cuando ejecutó el comando **Search-Mailbox-DeleteContent** para eliminar los datos derramados. Para más información, visite:
+Puede buscar en el registro de auditoría de Office 365 las actividades de eDiscovery que se llevaron a cabo durante la investigación. También puede buscar en el registro de auditoría para devolver los registros de auditoría que se crearon cuando ejecutó el comando **Search-Mailbox-DeleteContent** para eliminar los datos derramados. Para obtener más información, vea:
 
 - [Buscar en el registro de auditoría](search-the-audit-log-in-security-and-compliance.md)
 

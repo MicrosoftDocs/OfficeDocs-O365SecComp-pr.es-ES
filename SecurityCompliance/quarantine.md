@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 6/16/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: e9eecdde-dcc2-4283-a820-98d1e740e4f
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre la cuarentena hospedada para Exchange Online y Exchange Online Protection.
-ms.openlocfilehash: 7a92704c7a3cf978ed028b094cac9f6c9ed4b47b
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: b27cf5a6ef6e9dc7140763e1970804e501e720e6
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265672"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156822"
 ---
 # <a name="quarantine"></a>Cuarentena
 

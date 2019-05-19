@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,20 +14,20 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 82c6cb419ce00aca0d636083aa41a3384cb6bb01
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 9efb9d92681eb8eac30aa9335e8d521c3350a36e
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32257038"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153622"
 ---
 # <a name="view-the-audit-activity-of-people-of-interest"></a>Ver la actividad de auditoría de personas de interés
 
-¿Necesita saber si un usuario ha visto un documento específico o ha purgado un elemento de su buzón? Las investigaciones de datos (versión preliminar) se integran ahora con la herramienta de búsqueda de registros de auditoría existente en el centro de seguridad & cumplimiento. Con esta experiencia insertada, puede usar la herramienta de investigación de datos (preView) para la administración de intereses para facilitar la investigación mediante el fácil acceso y la búsqueda de la actividad de personas de interés dentro de la investigación.
+¿Necesita saber si un usuario ha visto un documento específico o ha purgado un elemento de su buzón? Las investigaciones de datos (versión preliminar) se integran ahora con la herramienta de búsqueda de registros de auditoría existente en el centro de seguridad & cumplimiento. Con esta experiencia insertada, puede usar la herramienta de investigación de datos (Preview) para la administración de intereses para facilitar la investigación mediante el fácil acceso y la búsqueda de la actividad de personas de interés dentro de la investigación.
 
 ## <a name="before-you-begin"></a>Antes de empezar
 
-Debe tener asignado el rol registros de auditoría con permiso de vista o registros de auditoría en Exchange Online para buscar en el registro de auditoría de 365 de Office. De forma predeterminada, estos roles se asignan a los grupos de roles administración de cumplimiento y administración de la organización en la página permisos del centro de administración de Exchange. Para dar a un usuario la capacidad de buscar el registro de auditoría de investigaciones de datos (vista previa) con el nivel mínimo de privilegios, puede crear un grupo de roles personalizado en Exchange Online, agregar el rol registros de auditoría con permiso de vista o registros de auditoría y, a continuación, agregar el usuario como miembro del nuevo rol gr Oup. Para obtener más información, vea Administrar grupos de roles en Exchange Online.
+Debe tener asignado el rol registros de auditoría con permiso de vista o registros de auditoría en Exchange Online para buscar en el registro de auditoría de 365 de Office. De forma predeterminada, estos roles se asignan a los grupos de roles administración de cumplimiento y administración de la organización en la página permisos del centro de administración de Exchange. Para dar a un usuario la capacidad de buscar el registro de auditoría de investigaciones de datos (vista previa) con el nivel mínimo de privilegios, puede crear un grupo de roles personalizado en Exchange Online, agregar el rol registros de auditoría con permiso de vista o registros de auditoría y, a continuación, agregar el usuario como miembro del nuevo rol gr oup. Para obtener más información, vea Administrar grupos de roles en Exchange Online.
 
 > [!IMPORTANT]
 > Si asigna a un usuario el rol registros de auditoría con permiso de vista o registros de auditoría en la página permisos del centro de seguridad & cumplimiento, estos no podrán buscar en el registro de auditoría de Office 365. Debe asignar los permisos en Exchange Online. Esto se debe a que el cmdlet subyacente usado para buscar en el registro de auditoría es un cmdlet de Exchange Online.

@@ -3,10 +3,11 @@ title: Protección contra amenazas en Office 365
 ms.author: tracyp
 author: msfttracyp
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
 localization_priority: Normal
+ms.date: 4/30/2019
 search.appverid:
 - MOE150
 - MET150
@@ -14,12 +15,12 @@ ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 ms.collection:
 - M365-security-compliance
 description: Use este artículo como guía para configurar las características de protección contra amenazas ahora.
-ms.openlocfilehash: 646ec220bf4649472d4ab885824010bc32ea862c
-ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
+ms.openlocfilehash: 1697904dac69e3b634c0f853fbd48c5a5b5257d8
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33402988"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157302"
 ---
 # <a name="protect-against-threats-in-office-365"></a>Protección contra amenazas en Office 365
 
@@ -54,7 +55,7 @@ Debe tener asignado un rol apropiado para configurar directivas en el [centro de
 |Administrador de seguridad |[Permisos de rol de administrador en Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
 |Administración de la organización de Exchange Online |[Permisos en Exchange Online](https://docs.microsoft.com/en-us/exchange/permissions-exo/permissions-exo) <br>y<br> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)|
 
-Para obtener más información, consulte perMissions [in the &amp; Office 365 Security Compliance Center](permissions-in-the-security-and-compliance-center.md).
+Para obtener más información, consulte Permissions [in the &amp; Office 365 Security Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 ## <a name="part-1---anti-malware-protection"></a>Parte 1: protección contra malware
 
@@ -65,9 +66,9 @@ La [protección contra malware](anti-malware-protection.md) está disponible en 
 2. Haga doble clic en la directiva **predeterminada** y, a continuación, elija **configuración**.
 
 3. Especifique las siguientes opciones de configuración:
-    
+
     - En la sección **respuesta de detección de malware** , mantenga el valor predeterminado de **no**.
-   
+
     - En la sección **filtro de tipos de datos adjuntos comunes** , elija **activado**.
 
 4. Haga clic en **Guardar **.
@@ -78,9 +79,9 @@ Para obtener más información acerca de las opciones de directiva antimalware, 
 
 La protección del tiempo de clic de los archivos y las direcciones URL malintencionadas está disponible en las suscripciones que incluyen [Office 365 ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) (ATP) y se configuran mediante las directivas de [datos adjuntos seguros de ATP](atp-safe-attachments.md) y [vínculos seguros ATP](atp-safe-links.md) .
 
-### <a name="atp-safe-attachments-policies"></a>Directivas de datos adJuntos seguros de ATP
+### <a name="atp-safe-attachments-policies"></a>Directivas de datos adjuntos seguros de ATP
 
-Para configurar los [datos adjuntos seguros de ATP](atp-safe-attachments.md), debe definir al menos una directiva de datos adJuntos seguros ATP. 
+Para configurar los [datos adjuntos seguros de ATP](atp-safe-attachments.md), debe definir al menos una directiva de datos adjuntos seguros ATP. 
 
 1. En el [centro de seguridad & cumplimiento](https://protection.office.com), seleccione la**Directiva** > de **Administración** > de amenazas datos adjuntos**seguros de ATP**.
 
@@ -146,7 +147,7 @@ Para obtener más información, consulte [configurar las directivas de vínculos
 
 3. En la **** sección suplantación, haga clic en **Editar**y, a continuación, especifique las siguientes opciones de configuración:
 
-    -  En la pestaña **Agregar usuarios a proteger** , desactive la protección. A continuación, agregue usuarios, como los miembros del Consejo de su organización, su CEO, director financiero y otros líderes senior. (Puede escribir una dirección de correo electrónico individual o hacer clic en para mostrar una lista).
+    - En la pestaña **Agregar usuarios a proteger** , desactive la protección. A continuación, agregue usuarios, como los miembros del Consejo de su organización, su CEO, director financiero y otros líderes senior. (Puede escribir una dirección de correo electrónico individual o hacer clic en para mostrar una lista).
 
     - En la pestaña **Agregar dominios para proteger** , Active **incluir automáticamente los dominios que posea**. Si tiene dominios personalizados, agréguelos también.
 
@@ -158,7 +159,7 @@ Para obtener más información, consulte [configurar las directivas de vínculos
 
 4. En la **** sección suplantación, haga clic en **Editar**y, a continuación, especifique las siguientes opciones de configuración:
 
-    - En la pestaña **configuración de filtro** de suplantaCión de identidad, asegúrese de que está activada la protección contra la suplantación de identidad.
+    - En la pestaña **configuración de filtro** de suplantación de identidad, asegúrese de que está activada la protección contra la suplantación de identidad.
 
     - En la ficha **acciones** , elija Mover mensaje a las carpetas de correo no deseado de los destinatarios.
 
@@ -176,7 +177,7 @@ Para obtener más información sobre las opciones de la Directiva antiphishing, 
 
 2. En la ficha **personalizado** , active la **Configuración personalizada** .
 
-3. ExPanda **directiva predeterminada de filtro de correo no deseado**, haga clic en **Editar Directiva**y especifique la siguiente configuración:
+3. Expanda **directiva predeterminada de filtro de correo no deseado**, haga clic en **Editar Directiva**y especifique la siguiente configuración:
 
     - En la sección **correo electrónico no deseado y acciones en masa** , establezca el umbral en un valor de 5 o 6.
 
@@ -212,6 +213,4 @@ Una vez que haya configurado las características de protección contra amenazas
 |---------|---------|
 |Ver cómo funcionan las características de protección contra amenazas en su organización al ver los informes    |[Panel de seguridad](security-dashboard.md)<br/>[Informes de seguridad de correo electrónico](view-email-security-reports.md)<br/>[Informes para Office 365 ATP](view-reports-for-atp.md)<br/>[Explorador de amenazas](use-explorer-in-security-and-compliance.md)    |
 |Revisar y revisar periódicamente las directivas de protección contra amenazas según sea necesario    |[Puntuación segura](microsoft-secure-score.md)<br/>[Informes inteligentes y perspectivas](reports-and-insights-in-security-and-compliance.md)<br/>[Características de respuesta y investigación de amenazas de Office 365](keep-users-safe-with-office-365-ti.md)          |
-|Vea las nuevas características y actualizaciones de servicio     |[Opciones de versión estándar y de destino](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide)<br/>[Centro de mensajes](https://docs.microsoft.com/office365/admin/manage/message-center?view=o365-worldwide)<br/>[Plan de desarrollo de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection)<br/>[DeScripciones de servicio](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library)         |
-
-
+|Vea las nuevas características y actualizaciones de servicio     |[Opciones de versión estándar y de destino](https://docs.microsoft.com/office365/admin/manage/release-options-in-office-365?view=o365-worldwide)<br/>[Centro de mensajes](https://docs.microsoft.com/office365/admin/manage/message-center?view=o365-worldwide)<br/>[Plan de desarrollo de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=advanced%2Cthreat%2Cprotection)<br/>[Descripciones de servicio](https://docs.microsoft.com/office365/servicedescriptions/office-365-service-descriptions-technet-library)         |

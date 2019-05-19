@@ -4,7 +4,7 @@ ms.author: bcarter
 author: brendacarter
 manager: laurawi
 ms.date: 4/17/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
 description: Página de aterrizaje para proteger el acceso a los datos y servicios de O365
-ms.openlocfilehash: e1b529a641d25f82521c40d0df9d091e0ebb5d90
-ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
+ms.openlocfilehash: 0b693d9b259a671f0e2a3e45747f81e1020d7487
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33403008"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156872"
 ---
 # <a name="protect-user-and-device-access"></a>Proteger el acceso de usuario y de dispositivo
 
@@ -40,7 +40,7 @@ Proteger las cuentas de administrador con autenticación multifactor y acceso co
 A continuación, configure la administración del acceso con privilegios en Office 365. La administración de acceso privilegiado permite un control de acceso granular sobre las tareas de administración con privilegios en Office 365. Puede ayudar a proteger su organización de las infracciones que puedan usar las cuentas de administrador con privilegios existentes con acceso permanente a los datos confidenciales o a las opciones de configuración fundamentales.
 
 - [Información general sobre la administración del acceso con privilegios](privileged-access-management-overview.md)
-- [Configurar Privileged Access Management](privileged-access-management-configuration.md)
+- [Configurar la administración del acceso con privilegios](privileged-access-management-configuration.md)
 
 Otra recomendación es usar estaciones de trabajo configuradas específicamente para el trabajo administrativo. Se trata de dispositivos dedicados que solo se usan para tareas administrativas. Consulte [proteger el acceso privilegiado](https://docs.microsoft.com/en-us/windows-server/identity/securing-privileged-access/securing-privileged-access).
 

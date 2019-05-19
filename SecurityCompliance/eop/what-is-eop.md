@@ -5,7 +5,7 @@ author: msfttracyp
 ms.reviewer: andypunt
 manager: laurawi
 ms.date: 2/25/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.custom: TN2DMC
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 393b0050-7c7e-49e6-a03d-b1e09fe4de9e
 description: Este documento introductorio le ayudará a comprender Exchange Online Protection (EOP) y una terminología importante. Esto es aplicable a los clientes de Office 365 que protegen buzones de correo hospedados en la nube de Exchange Online y a clientes independientes de EOP que protegen buzones locales como Exchange Server 2016.
-ms.openlocfilehash: f23f28b5c15c7057d1fd8ec77cce67bf1746410c
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: cbd286321301cecc8084040dc7538fce12d84466
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256478"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154482"
 ---
 ## <a name="what-is-exchange-online-protection-eop"></a>¿Qué es Exchange Online Protection (EOP)?
 
@@ -44,9 +44,9 @@ EOP intenta filtrar el correo no deseado y mantener la bandeja de entrada sin co
 
 **Correo no deseado, también conocido como correo no deseado:** Esto viene en forma de publicidad comercial, cartas en cadena, correos políticos, etc. Este es el correo electrónico en el que los usuarios no se suscriben a y desde los remitentes de correo no deseado que intentan solicitar productos o intentar confirmar su fraude.
 
-**Phish:** La suPlantación de identidad (phishing) es un tipo especial de correo no deseado destinado a engañarle para que proporcione información personal con el propósito de confirmar el robo de identidad o el fraude. Este tipo de mensaje suele contener un vínculo o datos adjuntos malintencionados, pero no siempre.
+**Phish:** La suplantación de identidad (phishing) es un tipo especial de correo no deseado destinado a engañarle para que proporcione información personal con el propósito de confirmar el robo de identidad o el fraude. Este tipo de mensaje suele contener un vínculo o datos adjuntos malintencionados, pero no siempre.
 
-SuPlantación de **identidad:** La suPlantación de identidades es cuando los remitentes de correo no deseado falsifican el encabezado para que parezca que los mensajes se originaron en alguien o en algún lugar distinto del origen real. Esto puede ser correo no deseado, pero se usa con más frecuencia para phish a los usuarios.
+Suplantación de **identidad:** La suplantación de identidades es cuando los remitentes de correo no deseado falsifican el encabezado para que parezca que los mensajes se originaron en alguien o en algún lugar distinto del origen real. Esto puede ser correo no deseado, pero se usa con más frecuencia para phish a los usuarios.
 
 **Suplantación:** Este tipo de correo electrónico no deseado también es una forma de falsificar la dirección del remitente, pero se realiza modificando parte del nombre o del dominio para que tenga un aspecto similar al origen real. Por ejemplo, Bi11@micr0s0ft.com, donde "l" era realmente el número once y la "o" en Microsoft se reemplazó por el número cero.
 

@@ -4,7 +4,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: c87bb0e5-301c-4d1d-958e-aabeb7990f44
 description: 'Obtenga información sobre cómo usar el centro de &amp; seguridad y cumplimiento de Office 365 para obtener acceso a eDiscovery avanzado de Office 365 y ejecutar el módulo de proceso para un caso.  '
-ms.openlocfilehash: 95c73c034ed2ffa1c45f9aacd8463c497a842859
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 89a4be9bf56f35d9d9cbd88494bcae5a5a10fe7a
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261418"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157022"
 ---
 # <a name="run-the-process-module-and-load-data-in-office-365-advanced-ediscovery"></a>Ejecutar el módulo de proceso y cargar datos en eDiscovery avanzado de Office 365
 
@@ -63,12 +63,12 @@ Realice los siguientes pasos para ejecutar el proceso.
     > [!NOTE]
     > Una vez que haya establecido **** los archivos como inicialización, no podrá marcarlos como **etiquetados previamente**. 
   
-  - En la sección **archivos etiquetaDos previamente** : 
+  - En la sección **archivos etiquetados previamente** : 
     
     Elija **marcar como archivos etiquetados previamente** para marcar el contenedor como archivos etiquetados previamente. También tiene que asignarlos por problema desde la lista desplegable **para problema** . Elija **relevante** o **no relevante** en la lista desplegable de **etiquetas** . 
     
     > [!NOTE]
-    > Una vez que haya establecido los archivos como **etiquetaDos previamente**, no podrá marcarlos como **inicialización**. 
+    > Una vez que haya establecido los archivos como **etiquetados previamente**, no podrá marcarlos como **inicialización**. 
   
   - En la sección **etiquetado de correo electrónico** . establecer qué parte de un correo electrónico procesado se marcará como semilla o preetiquetada. 
     

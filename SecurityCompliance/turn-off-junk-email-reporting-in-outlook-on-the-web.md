@@ -3,7 +3,7 @@ title: Desactivar la creación de informes de correo no deseado en Outlook en la
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -11,12 +11,12 @@ ms.assetid: 8d57fe9e-57b8-4884-9317-80b380804b4a
 ms.collection:
 - M365-security-compliance
 description: Como administrador de Office 365, puede desactivar la posibilidad de que los usuarios notifiquen el correo electrónico como correo no deseado.
-ms.openlocfilehash: f3e8a8cf837e7923d3c7241852ab2acd375492b8
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: a33e43444225cd3c23bc5d40cbf8581d19df2489
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32264172"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156292"
 ---
 # <a name="turn-off-junk-email-reporting-in-outlook-on-the-web"></a>Desactivar la creación de informes de correo no deseado en Outlook en la web
 

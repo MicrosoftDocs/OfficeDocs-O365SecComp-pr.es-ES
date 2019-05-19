@@ -3,7 +3,7 @@ title: Definir palabras clave resaltadas y opciones avanzadas en la exhibición 
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 03cc4387-2c7d-4058-8a44-0deefb58f011
 description: 'Obtenga información sobre cómo agregar palabras clave definidas por el usuario a relevancia para ayudarle a identificar los archivos relevantes mientras se etiquetan en Office 365 Advanced eDiscovery y para especificar los parámetros de costo.  '
-ms.openlocfilehash: aec9efac91cc3fb48068fca9b6b7313f829f4fe2
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 4542e80e5324a35df2e7dc8e7e0cf09f37ae1ef4
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32257098"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34153392"
 ---
 # <a name="define-highlighted-keywords-and-advanced-options-in-office-365-advanced-ediscovery"></a>Definir palabras clave resaltadas y opciones avanzadas en la exhibición avanzada de documentos electrónicos de Office 365
 

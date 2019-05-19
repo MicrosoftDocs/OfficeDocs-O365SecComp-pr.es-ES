@@ -4,7 +4,7 @@ ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 12/15/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 79a61003-4905-4ba8-9e8a-16def7add37c
 description: 'Resumen: administre el sitio de grupo de SharePoint Online aislado con estos procedimientos.'
-ms.openlocfilehash: f8531c4922f6ee6a86e32e646692825e71fafec2
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 1670c806c799cdbd9ffa6d3c45568a3342b88815
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32251998"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155822"
 ---
 # <a name="manage-an-isolated-sharepoint-online-team-site"></a>Administrar un sitio de grupo de SharePoint Online aislado
 
@@ -149,7 +149,7 @@ En algunos casos, un subconjunto de las personas que trabajan en el sitio aislad
   
 Para crear una subcarpeta de documentos con permisos personalizados, haga lo siguiente:
   
-1. Inicie sesión en Office 365 con una cuenta que sea miembro del grupo de administradores de acceso para el sitio. Para obtener ayuda, vea [Dónde iniciar sesión en Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Inicie sesión en Office 365 con una cuenta que sea miembro del grupo de administradores de acceso para el sitio. Para obtener ayuda, vea [Where to sign in to Office 365](https://support.office.com/Article/Where-to-sign-in-to-Office-365-e9eb7d51-5430-4929-91ab-6157c5a050b4) (Dónde iniciar sesión en Office 365).
     
 2. Vaya al sitio de grupo aislado y haga clic en **documentos**.
     
@@ -177,9 +177,9 @@ Para crear una subcarpeta de documentos con permisos personalizados, haga lo sig
     
 14. Actualice la página web para ver los nuevos resultados.
     
-15. en **grupos** en el panel de navegación izquierdo, haga clic en el ** \<grupo name> visitantes** y use los pasos 11-14 para especificar el conjunto de cuentas de usuario que pueden ver los archivos de la subcarpeta (según sea necesario).
+15. En **grupos** en el panel de navegación izquierdo, haga clic en el ** \<grupo name> visitantes** y use los pasos 11-14 para especificar el conjunto de cuentas de usuario que pueden ver los archivos de la subcarpeta (según sea necesario).
     
-16. en **grupos** en el panel de navegación izquierdo, ** \<** haga clic en el grupo propietarios de name> de sitios y use los pasos 11-14 para especificar el conjunto de cuentas de usuario que pueden administrar los permisos de la subcarpeta (según sea necesario).
+16. En **grupos** en el panel de navegación izquierdo, ** \<** haga clic en el grupo propietarios de name> de sitios y use los pasos 11-14 para especificar el conjunto de cuentas de usuario que pueden administrar los permisos de la subcarpeta (según sea necesario).
     
 17. Cierre la pestaña **personas y grupos** del explorador.
     

@@ -4,18 +4,18 @@ ms.author: chrisda
 author: chrisda
 manager: serdars
 ms.date: 12/18/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f40253f2-50a1-426e-9979-be74ba74cb61
 description: Microsoft Exchange Online Protection (EOP) ofrece muchos informes distintos que le permitirán averiguar el estado general y el mantenimiento de la organización. También hay herramientas para ayudarle a solucionar problemas de eventos específicos (por ejemplo, un mensaje que no llegue a sus destinatarios) e informes de auditoría para ayudar con los requisitos de cumplimiento normativo. La tabla siguiente describe los informes y las herramientas de solución de problemas disponibles para los administradores de EOP.
-ms.openlocfilehash: fcefa14991d074f1f4459007c16dd7f4df1cedd1
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 0dcacec586408bf98ad4c67c11ae3bde3a8e9315
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256278"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154622"
 ---
 # <a name="reporting-and-message-trace-in-exchange-online-protection"></a>Informes y seguimiento de mensajes en Exchange Online Protection
 
@@ -33,10 +33,10 @@ Microsoft Exchange Online Protection (EOP) ofrece muchos informes distintos que 
 
 Consulte los recursos siguientes para obtener más información:
 
-- [Office 365 rePorts en el centro de administración: Office 365 grupos](https://go.microsoft.com/fwlink/p/?linkid=861610) 
-- [Office 365 rePorts en el centro de administración: actividad de correo electrónico](https://go.microsoft.com/fwlink/p/?linkid=859706) 
-- [Office 365 rePorts en el centro de administración: uso de aplicaciones de correo electrónico](https://go.microsoft.com/fwlink/p/?linkid=859707)
-- [Office 365 rePorts en el centro de administración: uso de buzones](https://go.microsoft.com/fwlink/p/?linkid=859708)
+- [Office 365 Reports en el centro de administración: Office 365 grupos](https://go.microsoft.com/fwlink/p/?linkid=861610) 
+- [Office 365 Reports en el centro de administración: actividad de correo electrónico](https://go.microsoft.com/fwlink/p/?linkid=859706) 
+- [Office 365 Reports en el centro de administración: uso de aplicaciones de correo electrónico](https://go.microsoft.com/fwlink/p/?linkid=859707)
+- [Office 365 Reports en el centro de administración: uso de buzones](https://go.microsoft.com/fwlink/p/?linkid=859708)
 
 ## <a name="security-amp-compliance-reports-in-the-microsoft-365-admin-center"></a>Informes &amp; de cumplimiento de seguridad en el centro de administración de Microsoft 365
 
@@ -78,8 +78,8 @@ En la tabla siguiente se describe cuándo están disponibles los informes y los 
 ||||
 |:-----|:-----|:-----|
 |**Tipo de informe** <br/> |**Datos disponibles (período retrospectivo)** <br/> |**Latencia** <br/> |
-|Informes de Resumen de protección de correo  <br/> |90 días  <br/> |La agregación de datos de mensajes se completa casi por completo en 24-48 horas. Se pueden producir algunos pequeños cambios agregados incrementales durante un período de hasta 5 días.  <br/> |
-|Informes de detalles de protección de correo  <br/> |90 días  <br/> |Para los datos detallados que tienen menos de 7 días de antigüedad, los datos deberían aparecer en un plazo de 24 horas, pero puede que no estén completos hasta que transcurran 48 horas. Se pueden producir algunos pequeños cambios incrementales durante un período de hasta 5 días.  <br/> Para ver informes detallados de los mensajes que tienen más de 7 días de antigüedad, los resultados pueden tardar hasta unas cuantas horas.  <br/> |
+|Informes de Resumen de protección de correo  <br/> |90 días  <br/> |La agregación de datos de mensajes se completa casi por completo en 24-48 horas. Se pueden producir algunos pequeños cambios agregados incrementales durante un período de hasta 5 días.  <br/> |
+|Informes de detalles de protección de correo  <br/> |90 días  <br/> |Para los datos detallados que tienen menos de 7 días de antigüedad, los datos deberían aparecer en un plazo de 24 horas, pero puede que no estén completos hasta que transcurran 48 horas. Se pueden producir algunos pequeños cambios incrementales durante un período de hasta 5 días.  <br/> Para ver informes detallados de los mensajes que tienen más de 7 días de antigüedad, los resultados pueden tardar hasta unas cuantas horas.  <br/> |
 |Datos de seguimiento de mensajes  <br/> |90 días  <br/> |Cuando se ejecuta un seguimiento de mensajes para mensajes con antigüedad menor a 7 días, los mensajes deberían aparecer en un plazo de 5 a 30 minutos.  <br/> Cuando se ejecuta un seguimiento de mensajes para mensajes con antigüedad mayor a 7 días, los resultados pueden tardar hasta unas cuantas horas.  <br/> |
    
 > [!NOTE]

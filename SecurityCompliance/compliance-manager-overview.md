@@ -3,7 +3,7 @@ title: Información general del administrador de cumplimiento de Microsoft
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El administrador de cumplimiento de Microsoft es una herramienta gratuita de evaluación de riesgos basada en flujos de trabajo en el portal de confianza de servicios de Microsoft. El administrador de cumplimiento le permite realizar un seguimiento, asignar y comprobar actividades de cumplimiento normativo relacionadas con los servicios en la nube de Microsoft.
-ms.openlocfilehash: a2f59eac63f8bbef98da09c2149e49ec32e56b77
-ms.sourcegitcommit: 696c1ed6b270be3f9da7395b49a7d8fec98e6db0
+ms.openlocfilehash: e7c8afd3a9b2e0514e0df7df0f10871b0a7ca329
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "33473232"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155292"
 ---
 # <a name="microsoft-compliance-manager-preview"></a>Administrador de cumplimiento de Microsoft (versión preliminar)
 
@@ -97,7 +97,7 @@ Los controles administrados por el cliente en evaluaciones también tienen funci
 
 Por ejemplo, un funcionario de cumplimiento de su organización asigna un elemento de acción a un administrador de TI con la responsabilidad y los permisos necesarios para llevar a cabo la acción recomendada. El administrador de ti carga pruebas de las tareas de implementación (capturas de seguridad de la configuración o de la configuración de la Directiva) y asigna el elemento de acción al responsable de cumplimiento cuando se completa. El responsable de cumplimiento evalúa la prueba recopilada, comprueba la implementación del control y registra la fecha de implementación y los resultados de las pruebas en el administrador de cumplimiento.
 
-### <a name="shared-management-controls"></a>Controles de administración comPartidos
+### <a name="shared-management-controls"></a>Controles de administración compartidos
 
 Un control compartido hace referencia a cualquier control en el que Microsoft y los clientes compartan responsabilidades para la implementación. Por ejemplo, los controles relacionados con el filtrado de personal, la administración de cuentas y contraseñas y el cifrado requieren acciones por parte de Microsoft y los clientes.
 
@@ -134,7 +134,7 @@ Las plantillas preconfiguradas incluidas con el administrador de cumplimiento so
 - [NIST Cybersecurity Framework (CSF)](https://www.nist.gov/cyberframework)
 - [Cloud Security Alliance (CSA) Cloud control Matrix (CCM) 3.0.1](https://cloudsecurityalliance.org/working-groups/cloud-controls-matrix/#_overview)
 - [Instituciones financieras federales centro de examen (FFIEC) folleto de seguridad de la información](https://ithandbook.ffiec.gov/it-booklets/information-security.aspx) 
-- [](https://www.hhs.gov/hipaa/for-professionals/index.html) / [Tecnología](https://www.hhs.gov/hipaa/for-professionals/special-topics/hitech-act-enforcement-interim-final-rule/index.html) HIPAA
+- [](https://www.hhs.gov/hipaa/for-professionals/index.html) / [tecnología](https://www.hhs.gov/hipaa/for-professionals/special-topics/hitech-act-enforcement-interim-final-rule/index.html) HIPAA
 - [Moderado FedRAMP](https://www.fedramp.gov/documents/)
 - [RGPD de la Unión Europea](https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679&from=EN)
 
@@ -157,5 +157,5 @@ Empiece a [trabajar con el administrador de cumplimiento](working-with-complianc
 
 ## <a name="resources"></a>Recursos
 
-- [Guía interActiva: evaluación y mejora de los controles de protección de datos con el administrador de cumplimiento](https://content.cloudguides.com/guides/Compliance%20Manager)
+- [Guía interactiva: evaluación y mejora de los controles de protección de datos con el administrador de cumplimiento](https://content.cloudguides.com/guides/Compliance%20Manager)
 - [Comunidad tecnológica de seguridad, privacidad y cumplimiento de Microsoft](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/ct-p/SecurityPrivacyCompliance)

@@ -4,19 +4,19 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 12/30/2016
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: c9b0ff0c-282b-4a44-b43f-cfc5b96557f9
-description: Edite el registro de Windows en el equipo local para deshabilitar los informes al exportar los resultados de una búsqueda de contenido desde el centro de seguridad & cumplimiento en Office 365. La desHabilitación de estos informes puede acelerar el tiempo de descarga y ahorrar espacio en disco.
-ms.openlocfilehash: 19d97bbc95be5db6540e6822721752ca62adebfc
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: Edite el registro de Windows en el equipo local para deshabilitar los informes al exportar los resultados de una búsqueda de contenido desde el centro de seguridad & cumplimiento en Office 365. La deshabilitación de estos informes puede acelerar el tiempo de descarga y ahorrar espacio en disco.
+ms.openlocfilehash: f6abcf8afe70bc6ce04f0f9343e28879f7fed885
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256858"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154832"
 ---
 # <a name="disable-reports-when-you-export-content-search-results"></a>Deshabilitar informes al exportar los resultados de búsqueda de contenido
 

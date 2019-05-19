@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 12/20/2017
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 8c36bb03-e716-4fdd-9958-4aa7a2a1db42
 description: Los administradores pueden usar el cmdlet Search-Mailbox para buscar en buzones de usuario y, después, eliminar mensajes de un buzón.
-ms.openlocfilehash: abf7e7f39fe719ecc6c23565e284c01aed8822ee
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: a097b39aa179ed18c3d5426eeeacff204d48ee9b
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32260988"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158492"
 ---
 # <a name="search-for-and-delete-messages---admin-help"></a>Buscar y eliminar mensajes: Ayuda para administradores
   
@@ -42,7 +42,7 @@ Como una protección adicional, primero puede copiar los mensajes en otro buzón
     
 - Si el buzón desde el cual desea eliminar los mensajes tiene la recuperación de un solo elemento habilitada, primero debe deshabilitar la función. Para obtener más información, consulte [Habilitar o deshabilitar la recuperación de elementos individuales de un buzón de correo](http://technet.microsoft.com/library/2e7f1bcd-8395-45ad-86ce-22868bd46af0.aspx).
     
-- Si el buzón del que desea eliminar los mensajes está en espera, le recomendamos que se ponga en contacto con su departamento jurídico o de administración de registros antes de eliminar la espera y eliminar el contenido del buzón. Después de obtener la aprobación, siga los pasos que se indican en el tema [Clean up the recoverAble items Folder](http://technet.microsoft.com/library/82c310f8-de2f-46f2-8e1a-edb6055d6e69.aspx).
+- Si el buzón del que desea eliminar los mensajes está en espera, le recomendamos que se ponga en contacto con su departamento jurídico o de administración de registros antes de eliminar la espera y eliminar el contenido del buzón. Después de obtener la aprobación, siga los pasos que se indican en el tema [Clean up the Recoverable items Folder](http://technet.microsoft.com/library/82c310f8-de2f-46f2-8e1a-edb6055d6e69.aspx).
     
 - Puede buscar en un máximo de 10 000 buzones con el cmdlet **Search-Mailbox**. Si es Exchange Online de una organización y tiene más de 10 000 buzones, puede usar la característica Búsqueda de cumplimiento (o el cmdlet **New-ComplianceSearch** correspondiente) para buscar en un número ilimitado de buzones. Después, puede usar el cmdlet **New-ComplianceSearchAction** para eliminar los mensajes encontrados por una búsqueda de cumplimiento. Para obtener más información, vea [Buscar y eliminar mensajes de correo electrónico de la organización de Office 365](https://go.microsoft.com/fwlink/p/?LinkId=786856).
     

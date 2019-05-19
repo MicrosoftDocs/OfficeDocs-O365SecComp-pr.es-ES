@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 1/4/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: None
@@ -14,12 +14,12 @@ ms.assetid: 5986b9e1-c824-4f8f-9b7d-a2b0ae2a7fe9
 ms.collection:
 - M365-security-compliance
 description: Si todavía no ha movido su organización de Office 365 a las nuevas capacidades de OME, pero ya ha implementado OME, la información de este artículo se aplica a su organización. Microsoft recomienda que cree un plan para cambiar a las nuevas funciones de OME en cuanto sea razonable para su organización. Para obtener instrucciones, vea configurar las nuevas funciones de cifrado de mensajes de Office 365 basadas en Azure Information Protection. Si desea obtener más información sobre cómo funcionan las nuevas funciones en primer lugar, consulte Office 365 Message Encryption. En el resto de este artículo se hace referencia al comportamiento OME antes de la publicación de las nuevas capacidades de OME.
-ms.openlocfilehash: 03e2cb9c1f7d447f2fcf222382fcc2366faf0658
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: aaba63364cf469f66a213ba791fc48ba29a69384
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32252088"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155922"
 ---
 # <a name="legacy-information-for-office-365-message-encryption"></a>Información heredada para el cifrado de mensajes de Office 365
 
@@ -197,7 +197,7 @@ Cuando se envía una respuesta cifrada desde el portal de cifrado o a través de
   
  **P. soy un suscriptor de Exchange Hosted Encryption (EHE). ¿Dónde puedo obtener más información sobre la actualización al cifrado de mensajes de Office 365?**
   
-Todos los clientes de EHE se han actualizado a Cifrado de mensajes de Office 365. Para obtener más información, visite el [centro de actualización de Exchange hostEd Encryption](http://go.microsoft.com/fwlink/p/?LinkID=511077).
+Todos los clientes de EHE se han actualizado a Cifrado de mensajes de Office 365. Para obtener más información, visite el [centro de actualización de Exchange Hosted Encryption](http://go.microsoft.com/fwlink/p/?LinkID=511077).
   
  **P. ¿es necesario que abra las direcciones URL, las direcciones IP o los puertos del firewall de mi organización para que admitan el cifrado de mensajes de Office 365?**
   
@@ -217,6 +217,6 @@ No hay un informe que muestre si se ha visto un mensaje cifrado, pero hay dispon
   
  **P. ¿Qué hace Microsoft con la información que proporciono a través del Portal OME y la aplicación Visor OME?**
   
-La [declaración de privacidad del portal de cifraDo de Office 365 Messaging](protected-message-viewer-portal-privacy-statement.md) proporciona información detallada sobre lo que Microsoft hace y qué no hace con la información privada. 
+La [declaración de privacidad del portal de cifrado de Office 365 Messaging](protected-message-viewer-portal-privacy-statement.md) proporciona información detallada sobre lo que Microsoft hace y qué no hace con la información privada. 
   
 

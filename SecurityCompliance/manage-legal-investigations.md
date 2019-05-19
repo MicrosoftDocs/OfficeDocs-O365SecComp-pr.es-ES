@@ -3,7 +3,7 @@ title: Administración de investigaciones legales en Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 description: Use casos de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento en Office 365 para administrar la investigación legal de su organización. Si tiene una suscripción a E5, puede analizar más datos de caso con las capacidades de análisis de texto, aprendizaje de la máquina y Codificación predictiva de eDiscovery avanzado.
-ms.openlocfilehash: 5bfa4719f2bb065a7064e7dc9d02778a4d032da8
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 6f5b7bc7b1c8d672efe60629b1ccf1315c8b74dd
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32252098"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155732"
 ---
 # <a name="manage-legal-investigations-in-office-365"></a>Administración de investigaciones legales en Office 365
 

@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 10/27/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
@@ -12,12 +12,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
 description: Use la herramienta búsqueda de contenido eDiscovery para buscar elementos que se importaron a los buzones en Office 365 desde un origen de datos de terceros. Puede crear una consulta para buscar todos los elementos importados o crear una consulta para buscar determinados tipos de datos de terceros. En este artículo se enumeran los valores que se pueden usar en una consulta de palabras clave para buscar en los tipos de datos de terceros que se pueden importar a Office 365.
-ms.openlocfilehash: c71472b5e6d9b992196780aba55e3775823447ab
-ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
+ms.openlocfilehash: 4a611ed04cc102aad4d978a379efbf46a0bd70e2
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33402908"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156212"
 ---
 # <a name="use-content-search-to-search-third-party-data-that-was-imported-to-office-365"></a>Usar la búsqueda de contenido para buscar datos de terceros que se importaron a Office 365
 
@@ -27,7 +27,7 @@ Para obtener más información acerca de la importación de datos de terceros y 
   
 ## <a name="creating-a-query-to-search-all-third-party-data"></a>Crear una consulta para buscar en todos los datos de terceros
 
-Para buscar (o poner en espera) cualquier tipo de datos de terceros que haya importado a Office 365, puede usar el `kind:externaldata` par propiedad-valor del mensaje en el cuadro palabra clave para una búsqueda de contenido o al crear una suspensión basada en consulta. Por ejemplo, para buscar elementos que se han importado de cualquier origen de datos de terceros y que contienen la palabra "Contoso" en la propiedad subJect del elemento importado, debe utilizar la siguiente consulta: 
+Para buscar (o poner en espera) cualquier tipo de datos de terceros que haya importado a Office 365, puede usar el `kind:externaldata` par propiedad-valor del mensaje en el cuadro palabra clave para una búsqueda de contenido o al crear una suspensión basada en consulta. Por ejemplo, para buscar elementos que se han importado de cualquier origen de datos de terceros y que contienen la palabra "Contoso" en la propiedad Subject del elemento importado, debe utilizar la siguiente consulta: 
   
 ```
 kind:externaldata AND subject:contoso
@@ -45,7 +45,7 @@ En lugar de buscar en todos los tipos de datos de terceros, puede crear consulta
 itemclass:ipm.externaldata.<third-party data type>* 
 ```
 
-Por ejemplo, para buscar únicamente datos de Facebook que contengan la palabra "Contoso" en la propiedad subJect, debe utilizar la siguiente consulta:
+Por ejemplo, para buscar únicamente datos de Facebook que contengan la palabra "Contoso" en la propiedad Subject, debe utilizar la siguiente consulta:
   
 ```
 itemclass:ipm.externaldata.Facebook* AND subject:contoso
@@ -66,7 +66,7 @@ En la siguiente tabla se enumeran los tipos de datos de terceros que se pueden b
 |Marcador de posición de AXS  <br/> | `ipm.externaldata.AxsPlaceHolder*` <br/> |
 |Axs Signed  <br/> | `ipm.externaldata.AxsSigned*` <br/> |
 |Bazaarvoice  <br/> | `ipm.externaldata.Bazaarvoice*` <br/> |
-|BearShare  <br/> | `ipm.externaldata.Bearshare*` <br/> |
+|Bearshare  <br/> | `ipm.externaldata.Bearshare*` <br/> |
 |BitTorrent  <br/> | `ipm.externaldata.BitTorrent*` <br/> |
 |BlackBerry  <br/> | `ipm.externaldata.Blackberry*` <br/> |
 |Registros de llamadas de BlackBerry  <br/> | `ipm.externaldata.BlackBerryCall*` <br/> |
@@ -105,7 +105,7 @@ En la siguiente tabla se enumeran los tipos de datos de terceros que se pueden b
 |JXTA  <br/> | `ipm.externaldata.JXTA*` <br/> |
 |LinkedIn  <br/> | `ipm.externaldata.LinkedIn*` <br/> |
 |MFTP  <br/> | `ipm.externaldata.MFTP*` <br/> |
-|COMUNICACIONES UNIFICAdas de Microsoft  <br/> | `ipm.externaldata.MicrosoftUC*` <br/> |
+|Comunicaciones unificadas de Microsoft  <br/> | `ipm.externaldata.MicrosoftUC*` <br/> |
 |Idea  <br/> | `ipm.externaldata.MindAlign*` <br/> |
 |Mobile Guard  <br/> | `ipm.externaldata.MobileGuard*` <br/> |
 |Fotos  <br/> | `ipm.externaldata.MSN*` <br/> |

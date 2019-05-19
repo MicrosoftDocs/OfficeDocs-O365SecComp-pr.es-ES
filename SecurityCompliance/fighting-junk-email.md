@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 12/9/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: 5fd7d05b-96db-456f-81d6-1ac0e5bff530
 ms.collection:
 - M365-security-compliance
 description: El plan de seguridad para el correo electrónico de Microsoft incluye un enfoque sin igual que abarca diferentes productos. En las plataformas de correo electrónico de Microsoft se aplica tecnología de Exchange Online Protection (EOP) de filtrado de correo no deseado y protección contra suplantación de identidad para proporcionar a los usuarios las últimas herramientas e innovaciones contra el correo no deseado y la suplantación de identidad en toda la red. El objetivo de EOP es ofrecer un servicio de correo electrónico completo y práctico que ayude a detectar el correo no deseado, las amenazas de correo electrónico fraudulento (phishing) y los virus, y que proteja a los usuarios de todo ello.
-ms.openlocfilehash: 510b04d3f111c269d5f8579abcc809ddc283636b
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 9ef8433279137a91a52f6a149844eff9c567150c
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255448"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154522"
 ---
 # <a name="fighting-junk-email-sent-to-office-365"></a>Lucha contra el correo no deseado enviado a Office 365
 
@@ -45,7 +45,7 @@ EOP cuenta con reglas internas establecidas para administrar los mensajes de cor
   
 #### <a name="eop-filters"></a>Filtros de EOP
 
-Además de las tecnologías de filtrado contra correo no deseado, EOP ofrece a cada administrador del sistema la capacidad de establecer niveles de filtrado para personalizar la entrega de correo electrónico en su cuenta. Los administradores pueden agregar con facilidad un remitente o un nombre de dominio a la lista de remitentes y dominios seguros de modo que el correo electrónico de ese remitente o dominio nunca se trate como correo no deseado, independientemente del contenido del mensaje. Para obtener más información, vea [listas de remiteNtes seguros y bloqueados en Exchange Online](safe-sender-and-blocked-sender-lists-faq.md).
+Además de las tecnologías de filtrado contra correo no deseado, EOP ofrece a cada administrador del sistema la capacidad de establecer niveles de filtrado para personalizar la entrega de correo electrónico en su cuenta. Los administradores pueden agregar con facilidad un remitente o un nombre de dominio a la lista de remitentes y dominios seguros de modo que el correo electrónico de ese remitente o dominio nunca se trate como correo no deseado, independientemente del contenido del mensaje. Para obtener más información, vea [listas de remitentes seguros y bloqueados en Exchange Online](safe-sender-and-blocked-sender-lists-faq.md).
   
 ### <a name="phishing-protection"></a>Protección contra suplantación (phishing)
 

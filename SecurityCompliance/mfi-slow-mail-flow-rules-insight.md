@@ -4,18 +4,18 @@ ms.author: chrisda
 author: chrisda
 manager: serdars
 ms.date: 5/3/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 37125cdb-715d-42d0-b669-1a8efa140813
 description: Los administradores pueden obtener información sobre las reglas de flujo de correo lentas Insight en el panel del flujo de correo en el centro de seguridad & cumplimiento.
-ms.openlocfilehash: ede12e14f287599cab0e5f39aaf71c38ed519276
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 1adbae56bfcf022250b66bac2f3bfd01a7f13234
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32267236"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158592"
 ---
 # <a name="slow-mail-flow-rules-insight"></a>Reporte de reglas de flujo de correo lento
 

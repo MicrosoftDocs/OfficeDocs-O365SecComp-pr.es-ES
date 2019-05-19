@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 5/29/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 84a595b8-cd77-4f66-ac52-57a33ddd4773
 description: Obtenga información sobre cómo usar la carga de red para importar archivos PST cifrados con RMS en buzones de usuario en Office 365.
-ms.openlocfilehash: 46f77f3fe173da23e08284884bb85c69ab53f710
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: e14c5a7260bc8b2092075dd2ab711f4da2d3b9c2
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32263722"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158002"
 ---
 # <a name="use-network-upload-to-import-rms-encrypted-pst-files-to-office-365"></a>Usar la carga en la red para importar archivos PST con cifrado RMS en Office 365
 
@@ -70,7 +70,7 @@ Para obtener más información acerca de cómo importar datos a Office 365, vea 
     
 - Este procedimiento implica copiar y guardar una copia de una clave de cifrado, una clave de almacenamiento y un número de direcciones URL y de claves de identificación. Esta información se usará en el paso 5 para cifrar y cargar los archivos PST. Asegúrese de tomar precauciones para protegerlos de la misma manera que protegería las contraseñas u otra información relacionada con la seguridad. Por ejemplo, puede guardarlos en un documento de Microsoft Word protegido por contraseña o en una unidad USB cifrada. Consulte la sección [Más información](#more-information) para ver un ejemplo de las claves, los identificadores y las direcciones URL. 
     
-- Puede importar archivos PST a un buzón inactivo en Office 365. Para ello, especifique el GUID del buzón inactivo en el `Mailbox` parámetro del archivo de asignación de importaCIONES de PST. Consulte el [paso 7](#step-7-create-the-pst-import-mapping-file) para obtener más información. 
+- Puede importar archivos PST a un buzón inactivo en Office 365. Para ello, especifique el GUID del buzón inactivo en el `Mailbox` parámetro del archivo de asignación de importaciones de PST. Consulte el [paso 7](#step-7-create-the-pst-import-mapping-file) para obtener más información. 
     
 - En una implementación híbrida de Exchange, puede importar archivos PST a un buzón de archivo basado en la nube para un usuario cuyo buzón principal es local. Para ello, realice lo siguiente en el archivo de asignación de importaciones de PST:
     
@@ -229,7 +229,7 @@ Ahora que ha configurado Azure RMS y ha obtenido los identificadores necesarios 
     
 4. En la página **Importar**, haga clic en **Ir al servicio de importación**.
     
-5. en la página **importar datos a Office 365** , haga clic en **nuevo** ![icono](media/ITPro-EAC-AddIcon.gif)agregar trabajo y, a continuación, haga clic en **cargar mensajes de correo electrónico (archivos PST)**.
+5. En la página **importar datos a Office 365** , haga clic en **nuevo** ![icono](media/ITPro-EAC-AddIcon.gif)agregar trabajo y, a continuación, haga clic en **cargar mensajes de correo electrónico (archivos PST)**.
     
 6. En la página **cargar archivos a través de la red** , en el paso 2, haga clic en **Mostrar la dirección URL de carga de red SAS**.
     
@@ -385,7 +385,7 @@ El último paso consiste en crear el trabajo de importación de PST en el servic
     
 4. En la página **Importar**, haga clic en **Ir al servicio de importación**.
     
-5. en la página **importar datos a Office 365** , haga clic en **nuevo**![icono](media/ITPro-EAC-AddIcon.gif)agregar trabajo y, a continuación, haga clic en **cargar mensajes de correo electrónico (archivos PST)**.
+5. En la página **importar datos a Office 365** , haga clic en **nuevo**![icono](media/ITPro-EAC-AddIcon.gif)agregar trabajo y, a continuación, haga clic en **cargar mensajes de correo electrónico (archivos PST)**.
     
 6. En la página **Cargar archivos a través de la red**, marque las casillas **Terminé de cargar mis archivos** y **Tengo acceso al archivo de asignación** y haga clic en **Siguiente**.  
     

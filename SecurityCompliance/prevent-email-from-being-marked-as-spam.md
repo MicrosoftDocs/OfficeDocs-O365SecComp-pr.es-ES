@@ -4,7 +4,7 @@ ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: 6/7/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre cómo evitar los falsos positivos y evitar que el correo electrónico deseado se marque como no deseado en Office 365.
-ms.openlocfilehash: ecce497269030945457344122a9a218105369be2
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: c49bd519adf6c66f7f8c6c97fb7a24a0c7f85a99
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261248"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157482"
 ---
 # <a name="how-to-prevent-real-email-from-being-marked-as-spam-in-office-365"></a>Evitar que el correo electrónico real se marque como correo no deseado en Office 365
 
@@ -45,7 +45,8 @@ En el encabezado, busque los siguientes encabezados y valores.
     
 - **SFV:SKB** Indica que el mensaje se marcó como correo no deseado porque coincidía con una lista de bloqueados en la directiva de filtro contra correo no deseado. 
     
-- **SFV:BULK** Indica que el valor de nivel de quejas masivas (BCL) que se encuentran en el encabezado X-Microsoft-Antispam está por encima del umbral de correo masivo que se estableció para el filtro de contenido. El correo masivo es el correo electrónico al que puede que los usuarios se suscribieran, pero se sigue considerando correo no deseado. En el encabezado de mensaje, busque la propiedad BCL (nivel de confianza en masa) en el encabezado X-Microsoft-Antispam. Si el valor de BCL es inferior al umbral establecido en el filtro de correo no deseado, puede ajustar el umbral para que, en su lugar, marque estos tipos de mensajes masivos como correo no deseado. Diferentes usuarios tienen distintas tolerancias y preferencias para la [administración del correo masivo](https://docs.microsoft.com/es-ES/office365/SecurityCompliance/bulk-complaint-level-values). Puede crear distintas directivas o reglas para diferentes preferencias de usuario.
+- 
+  **SFV:BULK** Indica que el valor de nivel de quejas masivas (BCL) que se encuentran en el encabezado X-Microsoft-Antispam está por encima del umbral de correo masivo que se estableció para el filtro de contenido. El correo masivo es el correo electrónico al que puede que los usuarios se suscribieran, pero se sigue considerando correo no deseado. En el encabezado de mensaje, busque la propiedad BCL (nivel de confianza en masa) en el encabezado X-Microsoft-Antispam. Si el valor de BCL es inferior al umbral establecido en el filtro de correo no deseado, puede ajustar el umbral para que, en su lugar, marque estos tipos de mensajes masivos como correo no deseado. Diferentes usuarios tienen distintas tolerancias y preferencias para la [administración del correo masivo](https://docs.microsoft.com/es-ES/office365/SecurityCompliance/bulk-complaint-level-values). Puede crear distintas directivas o reglas para diferentes preferencias de usuario.
     
 - **CAT:SPOOF** o **CAT:PHISH** Indica que el mensaje parece suplantado, lo que significa que el origen del mensaje no se puede validar y podría ser sospechoso. Si es válido, el remitente tendrá que asegurarse de que tiene una configuración correcta de los registros SPF y DKIM. Para obtener más información, vea el encabezado Authentication-Results. Aunque puede resultar difícil conseguir que todos los remitentes usen métodos de autenticación de correo electrónico adecuados, omitir estas comprobaciones puede ser muy peligroso y se considera una de las principales causas de peligro. 
     
@@ -63,7 +64,8 @@ Para funcionar correctamente, Exchange Online Protection (EOP) necesita que los 
     
 - **Activar el complemento Usar el mensaje de informe para los usuarios** Es muy recomendable que [habilite el complemento de mensaje de informe para los usuarios](enable-the-report-message-add-in.md). Como administrador, es posible que también pueda ver los comentarios que los usuarios envían y usar cualquier patrón para ajustar la configuración que pueda estar causando problemas.
 
-- **Asegúrese de que sus usuarios se encuentran dentro de los límites permitidos** para enviar y recibir correos electrónicos, como se muestra [aquí](https://docs.microsoft.com/es-ES/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits).
+- 
+  **Asegúrese de que sus usuarios se encuentran dentro de los límites permitidos** para enviar y recibir correos electrónicos, como se muestra [aquí](https://docs.microsoft.com/es-ES/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits).
 
  - **Vuelva a comprobar los niveles masivos** tal como se especifica [aquí](bulk-complaint-level-values.md)
     
@@ -82,7 +84,7 @@ EOP respetará los Remitentes y destinatarios seguros de los usuarios, pero no l
 
 Si los usuarios tienen habilitada la opción de Outlook "Solo listas seguras: solo correo de personas o dominios de la lista de remitentes seguros o de la lista de destinatarios seguros se enviará a la Bandeja de entrada", todo el correo electrónico se enviará a la carpeta de correo no deseado a menos que el remitente esté incluido en la lista de remitentes seguros del destinatario. Esto ocurre independientemente de si EOP marca un mensaje como no deseado o si ha configurado una regla en EOP para marcar un mensaje como correo deseado.
   
-También puede deshabilitar la opción Solo listas seguras para los usuarios de Outlook siguiendo las instrucciones en [Outlook: configuración de directiva para deshabilitar la interfaz de usuario de correo electrónico no deseado y el mecanismo de filtrado](https://support.microsoft.com/es-ES/kb/2180568).
+También puede deshabilitar la opción Solo listas seguras para los usuarios de Outlook siguiendo las instrucciones en [Outlook: configuración de directiva para deshabilitar la interfaz de usuario de correo electrónico no deseado y el mecanismo de filtrado](https://support.microsoft.com/en-us/kb/2180568).
   
 Si ve el mensaje en Outlook en la Web, habrá un aviso de seguridad amarillo que indica que el mensaje está en la carpeta de correo no deseado porque el remitente no está en la lista de remitentes seguros del destinatario.
   

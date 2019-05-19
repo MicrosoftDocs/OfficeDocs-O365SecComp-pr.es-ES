@@ -4,7 +4,7 @@ ms.author: bcarter
 author: brendacarter
 manager: laurawi
 ms.date: 4/26/2019
-ms.audience: Admin
+audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
 description: Página de aterrizaje para proteger la información
-ms.openlocfilehash: 696684778604f4259166bdc3059944285833cba1
-ms.sourcegitcommit: 4eb4ca899adcf4d86501530f875eb49af8cdaeb7
+ms.openlocfilehash: 77b4332ae4c5450f7464af660e3cda82ddbe18a5
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "34083183"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157242"
 ---
 # <a name="protect-information"></a>Proteger la información
 

@@ -4,7 +4,7 @@ ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Priority
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con las etiquetas de confidencialidad, puede clasificar y ayudar a proteger el contenido confidencial, sin poner impedimentos a la productividad y la capacidad de colaboración de los usuarios. Puede usar etiquetas de confidencialidad para aplicar opciones de protección como encriptación o marcas de agua en el contenido con la etiqueta.
-ms.openlocfilehash: f8442bc9fbeb32cb71fb46c4e5a54c9e1f0dce4b
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 21b325454c659d72e27349ede9015a0f4bde6dcb
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265842"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155982"
 ---
 # <a name="overview-of-sensitivity-labels"></a>Información general de etiquetas de confidencialidad
 
@@ -75,7 +75,7 @@ Después de aplicar una etiqueta de confidencialidad a un documento o correo ele
     ![Marca de agua y encabezado aplicados a un documento](media/Sensitivity_label_watermark_header.png)
 
 - 
-  **Evitar la pérdida de datos** activando endpoint protection en Intune. Si se descarga el contenido confidencial, puede ayudar a evitar la pérdida de datos desde dispositivos Windows. Por ejemplo, no puede copiar contenido a Dropbox, Gmail o una unidad USB. Antes de que las etiquetas de confidencialidad puedan usar Windows Information Protection (WIP), primero debe crear una directiva de protección de aplicaciones en Azure Portal. Para obtener más información, vea [Cómo Windows Information Protection protege los archivos con una etiqueta de confidencialidad](https://docs.microsoft.com/en-us/windows/security/information-protection/windows-information-protection/how-wip-works-with-labels?branch=vsts17546553).
+  **Evitar la pérdida de datos** activando endpoint protection en Intune. Si se descarga el contenido confidencial, puede ayudar a evitar la pérdida de datos desde dispositivos Windows. Por ejemplo, no puede copiar contenido a Dropbox, Gmail o una unidad USB. Antes de que las etiquetas de confidencialidad puedan usar Windows Information Protection (WIP), primero debe crear una directiva de protección de aplicaciones en Azure Portal. Para obtener más información, vea [Cómo Windows Information Protection protege los archivos con una etiqueta de confidencialidad](https://docs.microsoft.com/es-ES/windows/security/information-protection/windows-information-protection/how-wip-works-with-labels?branch=vsts17546553).
 
 - **Aplicar la etiqueta automáticamente al contenido que contenga información confidencial.** Puede elegir el tipo de información confidencial que desee etiquetar y la etiqueta se puede aplicar automáticamente o, si lo prefiere, puede pedir a los usuarios que apliquen una etiqueta específica. Si recomienda una etiqueta, el aviso muestra el texto que elija. Para obtener más información, vea [Aplicar una etiqueta de contenido sensible automáticamente](apply_sensitivity_label_automatically.md).
 
@@ -185,8 +185,10 @@ En aplicaciones de Office en dispositivos con Android, las etiquetas de confiden
 
 ### <a name="more-information-on-sensitivity-labels-in-office-apps"></a>Obtener más información sobre las etiquetas de confidencialidad en aplicaciones de Office
 
-- [Aplicar etiquetas de confidencialidad en sus documentos y correo electrónico en Office](https://support.office.com/es-ES/article/apply-sensitivity-labels-to-your-documents-and-email-within-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
-- [Problemas conocidos al aplicar etiquetas de confidencialidad en sus archivos de Office](https://support.office.com/es-ES/article/known-issues-when-you-apply-sensitivity-labels-to-your-office-files-b169d687-2bbd-4e21-a440-7da1b2743edc)
+- 
+  [Aplicar etiquetas de confidencialidad en sus documentos y correo electrónico en Office](https://support.office.com/es-ES/article/apply-sensitivity-labels-to-your-documents-and-email-within-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
+- 
+  [Problemas conocidos al aplicar etiquetas de confidencialidad en sus archivos de Office](https://support.office.com/es-ES/article/known-issues-when-you-apply-sensitivity-labels-to-your-office-files-b169d687-2bbd-4e21-a440-7da1b2743edc)
 
 ## <a name="how-sensitivity-labels-work-with-existing-azure-information-protection-labels"></a>Cómo funcionan las etiquetas de confidencialidad con etiquetas existentes de Azure Information Protection
 
@@ -215,13 +217,16 @@ Y si un usuario intenta guardar contenido con la etiqueta en una unidad USB, apa
 
 ### <a name="important-prerequisites"></a>Requisitos previos importantes
 
-Para que las etiquetas de confidencialidad puedan usar WIP, primero debe realizar los requisitos previos que se describen aquí: [Cómo Windows Information Protection protege los archivos con una etiqueta de confidencialidad](https://docs.microsoft.com/en-us/windows/security/information-protection/windows-information-protection/how-wip-works-with-labels?branch=vsts17546553). En este tema se describen los siguientes requisitos previos:
+Para que las etiquetas de confidencialidad puedan usar WIP, primero debe realizar los requisitos previos que se describen aquí: [Cómo Windows Information Protection protege los archivos con una etiqueta de confidencialidad](https://docs.microsoft.com/es-ES/windows/security/information-protection/windows-information-protection/how-wip-works-with-labels?branch=vsts17546553). En este tema se describen los siguientes requisitos previos:
 
 - Asegúrese de que está ejecutando Windows 10, versión 1809 o posterior.
-- [Configurar la Protección contra amenazas avanzada de Windows Defender (WDATP)](https://docs.microsoft.com/es-ES/windows/security/threat-protection/windows-defender-atp/get-started), que analiza el contenido de una etiqueta y aplica la protección WIP correspondiente. ATP realiza algunas acciones independientemente de WIP, como informar sobre anomalías.
+- 
+  [Configurar la Protección contra amenazas avanzada de Windows Defender (WDATP)](https://docs.microsoft.com/es-ES/windows/security/threat-protection/windows-defender-atp/get-started), que analiza el contenido de una etiqueta y aplica la protección WIP correspondiente. ATP realiza algunas acciones independientemente de WIP, como informar sobre anomalías.
 - Crear una directiva de Windows Information Protection (WIP) que se aplica a dispositivos de punto final. Puede hacer esto en cualquiera de estas ubicaciones:
-    - [Crear una directiva de Windows Information Protection (WIP) con MDM usando Azure Portal para Microsoft Intune](https://docs.microsoft.com/es-ES/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure)
-    - [Crear e implementar una directiva de Windows Information Protection (WIP) con System Center Configuration Manager](https://docs.microsoft.com/es-ES/windows/security/information-protection/windows-information-protection/create-wip-policy-using-sccm)
+    - 
+  [Crear una directiva de Windows Information Protection (WIP) con MDM usando Azure Portal para Microsoft Intune](https://docs.microsoft.com/es-ES/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure)
+    - 
+  [Crear e implementar una directiva de Windows Information Protection (WIP) con System Center Configuration Manager](https://docs.microsoft.com/es-ES/windows/security/information-protection/windows-information-protection/create-wip-policy-using-sccm)
 
 ## <a name="protect-content-in-third-party-apps-and-services-by-using-microsoft-cloud-app-security"></a>Proteger el contenido en los servicios y aplicaciones de terceros con Microsoft Cloud App Security
 
@@ -233,8 +238,10 @@ Para obtener más información, vea [Aplicar automáticamente etiquetas de clasi
 
 Para que las etiquetas de confidencialidad puedan usar CAS, primero debe realizar los requisitos previos que se describen aquí: [Aplicar automáticamente etiquetas de clasificación de Azure Information Protection](https://docs.microsoft.com/es-ES/cloud-app-security/use-case-information-protection). En este tema se describen los siguientes requisitos previos:
 
-- [Habilitar Cloud App Security y Azure Information Protection](https://docs.microsoft.com/es-ES/cloud-app-security/azip-integration) para su espacio empresarial.
-- [Conectar la aplicación](https://docs.microsoft.com/es-ES/cloud-app-security/enable-instant-visibility-protection-and-governance-actions-for-your-apps) con Cloud App Security.
+- 
+  [Habilitar Cloud App Security y Azure Information Protection](https://docs.microsoft.com/es-ES/cloud-app-security/azip-integration) para su espacio empresarial.
+- 
+  [Conectar la aplicación](https://docs.microsoft.com/es-ES/cloud-app-security/enable-instant-visibility-protection-and-governance-actions-for-your-apps) con Cloud App Security.
 
 ## <a name="extend-sensitivity-labels-to-third-party-apps-and-services-by-using-the-microsoft-information-protection-sdk"></a>Ampliar las etiquetas de confidencialidad a servicios y aplicaciones de terceros con el SDK de Microsoft Information Protection
 

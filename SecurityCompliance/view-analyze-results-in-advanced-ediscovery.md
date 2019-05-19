@@ -4,7 +4,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 5974f3c2-89fe-4c5f-ac7b-57f214437f7e
 description: 'Comprenda dónde ver los resultados del proceso de análisis en la exhibición avanzada de documentos electrónicos de Office 365, incluidas las definiciones de las opciones de tarea mostradas.  '
-ms.openlocfilehash: 990bcbb3c6626521d40f7ce057c764200d5047b5
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 092daa506316b5eb1ef1f5c466055b29e350dc18
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32267120"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157862"
 ---
 # <a name="view-analyze-results-in-office-365-advanced-ediscovery"></a>Ver los resultados de ANALYZE en Office 365 Advanced eDiscovery
 
@@ -50,9 +50,9 @@ Las tareas mostradas pueden variar en función de las opciones seleccionadas.
 - **Estado**de la tarea: esta línea se muestra después de la finalización de la tarea. Mientras se ejecutan las tareas, se muestra la duración de ejecución.
     
 > [!NOTE]
-> Los resultados del análisis de casi duplicados y subProcesos de correo electrónico (ND y ED) se aplican al número de documentos que se van a procesar. No incluye los archivos duplicados exActos. 
+> Los resultados del análisis de casi duplicados y subprocesos de correo electrónico (ND y ED) se aplican al número de documentos que se van a procesar. No incluye los archivos duplicados exactos. 
   
-## <a name="view-near-duplicates-and-email-threads-status"></a>Ver el estado de subProcesos Near-duplicados y correo electrónico
+## <a name="view-near-duplicates-and-email-threads-status"></a>Ver el estado de subprocesos Near-duplicados y correo electrónico
 
 Los resultados de la población de **destino** muestran el número de documentos, mensajes de correo electrónico, datos adjuntos y errores en el rellenado de destino. 
   

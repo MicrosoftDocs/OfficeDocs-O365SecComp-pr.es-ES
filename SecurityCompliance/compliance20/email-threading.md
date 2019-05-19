@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: ca4823ecfc06ddc0ef6f6840ad55fec492ac472c
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 7bfae202886d4c1af5914f4b49d0e4d528b8975d
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32243811"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155052"
 ---
 # <a name="email-threading"></a>Subprocesos de correo electrónico
 
@@ -27,7 +27,7 @@ Considere una conversación de correo electrónico que ha estado ocurriendo dura
 
 ## <a name="what-does-email-threading-do"></a>¿Qué hace la función de subprocesos de correo electrónico?
 
-La creación de subprocesos de correo electrónico analiza cada correo electrónico y lo construye en mensajes individuales; cada correo electrónico es una cadena de mensajes individuales. A continuación, analiza todos los correos electrónicos en el conjunto de trabajo para determinar si un correo electrónico tiene contenido único o si la cadena está contenida por completo en un correo electrónico diferente. En los mensajes de correo electrónico finales se dividen en cuatro categorías:
+La creación de subprocesos de correo electrónico analiza cada correo electrónico y lo construye en mensajes individuales; cada correo electrónico es una cadena de mensajes individuales. A continuación, analiza todos los correos electrónicos en el conjunto de revisión para determinar si un correo electrónico tiene contenido único o si la cadena está contenida por completo en un correo electrónico diferente. En los mensajes de correo electrónico finales se dividen en cuatro categorías:
 
 - **Ambos inclusive**: el último mensaje del correo electrónico tiene contenido único y el correo electrónico tiene todos los datos adjuntos que se incluyeron en otros mensajes de correo electrónico cuyo contenido está incluido por completo en este correo.
 

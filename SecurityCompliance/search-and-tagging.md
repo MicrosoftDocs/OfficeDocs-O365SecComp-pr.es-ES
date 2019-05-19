@@ -3,7 +3,7 @@ title: Búsqueda y etiquetado
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -11,12 +11,12 @@ search.appverid:
 - MET150
 ms.assetid: 22f5adad-1bc0-460d-94a9-8732929f5b99
 description: En eDiscovery avanzado, el módulo de búsqueda y etiquetado le permite buscar, obtener una vista previa y organizar los documentos en su caso. Actualmente, este módulo está en versión beta.
-ms.openlocfilehash: 58913a01f30b4169470592f5fc271e3ce785ac5d
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: b3e660e6dca014323cfd06f10c14747751aeb386
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261378"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158542"
 ---
 # <a name="search-and-tagging"></a>Búsqueda y etiquetado
 
@@ -55,8 +55,8 @@ En la siguiente tabla se enumeran las propiedades que se pueden buscar con una c
 |**title** <br/> | El título de un documento de sitio. <br/> |
 |**dominanttheme**\* <br/> | El tema dominante de un elemento. <br/> |
 |**themeslist**\* <br/> | Temas asociados a un elemento. <br/> |
-|**readpercentile_ [issuenum]**\*\* <br/> | El percentil de lectura de un elemento, para el problema definido por [issuenum]. <br/> |
-|**relevancescore_ [issuenum]**\*\* <br/> | La puntuación de relevancia de un elemento para el problema definido por [issuenum]. <br/> |
+|**readpercentile_[issuenum]**\*\* <br/> | El percentil de lectura de un elemento, para el problema definido por [issuenum]. <br/> |
+|**relevancescore_[issuenum]**\*\* <br/> | La puntuación de relevancia de un elemento para el problema definido por [issuenum]. <br/> |
 |**relevancetag_ [tagName]**\*\* <br/> | Si un elemento se ha etiquetado manualmente para la relevancia, la etiqueta definida por [tagName]. <br/> |
 |||
 

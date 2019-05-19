@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 6/21/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 35d0ecdb-7cb0-44be-ad5c-69df2f8f8b25
 description: 'Si un antiguo empleado vuelve a su organización, o si se contrata a un nuevo empleado para que realice las responsabilidades laborales de un empleado que ya no está en parte, puede recuperar el contenido del buzón inactivo en Office 365. Al recuperar un buzón inactivo, se convierte en un nuevo buzón que contiene el contenido del buzón inactivo. '
-ms.openlocfilehash: c7f942c518dcc74a4bdb37d67e27e8a63879ab46
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: be7935472363e406a978c09f926776e69c3024fe
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261548"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156922"
 ---
 # <a name="recover-an-inactive-mailbox-in-office-365"></a>Recuperar un buzón inactivo en Office 365
 
@@ -32,7 +32,7 @@ Un buzón inactivo (que es un tipo de buzón eliminado temporalmente) se usa par
 Consulte la sección [Más información](#more-information) para obtener más detalles sobre las diferencias entre la recuperación y restauración de un buzón inactivo, así como para obtener una descripción de lo que sucede cuando se recupera un buzón inactivo.
   
 > [!NOTE]
-> Hemos pospuesto la fecha límite para crear reTenciones locales nuevas para convertir un buzón en inactivo. Pero en algún momento en el futuro, no podrá crear nuevas reTenciones locales en Exchange Online. En ese momento, solo se pueden usar las suspensiones por juicio y las directivas de retención de Office 365 para crear un buzón inactivo. No obstante, se seguirán admitiendo los buzones inactivos existentes que estén en conservación local y podrá seguir administrando las conservaciones locales de buzones inactivos. Esto incluye el cambio de la duración de las conservaciones locales y la eliminación de forma permanentemente de buzones inactivos al quitar la conservación local. 
+> Hemos pospuesto la fecha límite para crear retenciones locales nuevas para convertir un buzón en inactivo. Pero en algún momento en el futuro, no podrá crear nuevas retenciones locales en Exchange Online. En ese momento, solo se pueden usar las suspensiones por juicio y las directivas de retención de Office 365 para crear un buzón inactivo. No obstante, se seguirán admitiendo los buzones inactivos existentes que estén en conservación local y podrá seguir administrando las conservaciones locales de buzones inactivos. Esto incluye el cambio de la duración de las conservaciones locales y la eliminación de forma permanentemente de buzones inactivos al quitar la conservación local. 
   
 ## <a name="before-you-begin"></a>Antes de empezar
 
@@ -85,7 +85,7 @@ Después de recuperar un buzón inactivo, también se crea una nueva cuenta de u
     
   - El período de recuperación de un solo elemento (definido por la propiedad de buzón **RetainDeletedItemsFor** ) se establece en 30 días. Normalmente, cuando se crea un nuevo buzón en Exchange Online, este período de retención se establece en 14 días. Si establece esto en el valor máximo de 30 días, tendrá más tiempo para recuperar los datos que se han eliminado (o depurado) de forma permanente del buzón inactivo. También puede deshabilitar la recuperación de un solo elemento o volver a establecer el período de recuperación de un solo elemento en el valor predeterminado de 14 días. Para obtener más información, consulte [Enable or disable single item recovery for a mailbox](https://go.microsoft.com/fwlink/?linkid=856769).
     
-  - La suspensión de retención está habilitada y la duración de la suspensión de retención se establece en 30 días. Esto significa que la Directiva de retención de Exchange predeterminada y todas las directivas de retención de Office 365 de toda la organización o de Exchange que se asignan al nuevo buzón no se procesarán durante 30 días. Esto proporciona al empleado que vuelve o al nuevo propietario del buzón inactivo recuperado el tiempo suficiente para administrar los mensajes antiguos. De lo contrario, la Directiva de retención de Exchange u Office 365 puede eliminar elementos de buzón antiguos (o mover elementos al buzón de archivo, si está habilitado) que han expirado según la configuración establecida para las directivas de retención de Exchange u Office 365. TransCurrido el plazo de 30 días, la suspensión de **** la retención se establece en **false**y el Asistente para carpeta administrada comienza a procesar las directivas asignadas al buzón de correo. Si no necesita este tiempo adicional, solo puede quitar la suspensión de retención. Como alternativa, puede aumentar la duración de la suspensión de retención mediante el comando **Set-Mailbox -EndDateForRetentionHold**. Para obtener más información, consulte [Place a mailbox on retention hold](https://go.microsoft.com/fwlink/?linkid=856300).
+  - La suspensión de retención está habilitada y la duración de la suspensión de retención se establece en 30 días. Esto significa que la Directiva de retención de Exchange predeterminada y todas las directivas de retención de Office 365 de toda la organización o de Exchange que se asignan al nuevo buzón no se procesarán durante 30 días. Esto proporciona al empleado que vuelve o al nuevo propietario del buzón inactivo recuperado el tiempo suficiente para administrar los mensajes antiguos. De lo contrario, la Directiva de retención de Exchange u Office 365 puede eliminar elementos de buzón antiguos (o mover elementos al buzón de archivo, si está habilitado) que han expirado según la configuración establecida para las directivas de retención de Exchange u Office 365. Transcurrido el plazo de 30 días, la suspensión de **** la retención se establece en **false**y el Asistente para carpeta administrada comienza a procesar las directivas asignadas al buzón de correo. Si no necesita este tiempo adicional, solo puede quitar la suspensión de retención. Como alternativa, puede aumentar la duración de la suspensión de retención mediante el comando **Set-Mailbox -EndDateForRetentionHold**. Para obtener más información, consulte [Place a mailbox on retention hold](https://go.microsoft.com/fwlink/?linkid=856300).
     
 - **Si necesita conservar el estado original del buzón inactivo, coloque una retención en el buzón recuperado.** Para evitar que el nuevo propietario del buzón o la Directiva de retención eliminen permanentemente los mensajes del buzón inactivo recuperado, puede poner el buzón en retención por juicio para obtener más información, vea [poner un buzón de correo en](https://go.microsoft.com/fwlink/?linkid=856286)retención por juicio.
     

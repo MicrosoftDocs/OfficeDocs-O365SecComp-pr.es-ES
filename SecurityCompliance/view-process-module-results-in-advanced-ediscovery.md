@@ -4,7 +4,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: c6f016cb-409f-4ae9-911c-1395cf0c86ea
 description: 'Obtenga información sobre cómo encontrar los resultados de un módulo de proceso en la exhibición avanzada de documentos de Office 365, incluido el estado de la tarea y el resumen del proceso.  '
-ms.openlocfilehash: 0393cde78e559036d92b9ac48245afafc974a8b2
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 4bbdbf68f71e3459ff2ddcd8ba3fb33e52f16825
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32267200"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157802"
 ---
 # <a name="view-process-module-results-in-office-365-advanced-ediscovery"></a>Ver los resultados del módulo de proceso en Office 365 Advanced eDiscovery
 
@@ -39,7 +39,7 @@ Las tareas mostradas pueden variar en función de las opciones de proceso selecc
     
 - **Calcular firmas**: calcula las firmas digitales MD5.
     
-- **Extracción de compuestos**: extrae archivos internos o contenidos de forma recursiva de archivos compuestos (por ejemplo, PST, zip, MSG). Los archivos exTraídos se almacenan en la carpeta Case del caso.
+- **Extracción de compuestos**: extrae archivos internos o contenidos de forma recursiva de archivos compuestos (por ejemplo, PST, zip, MSG). Los archivos extraídos se almacenan en la carpeta Case del caso.
     
 - **Sincronización de base de datos**: proceso de base de datos interno.
     
@@ -75,7 +75,7 @@ Los paneles presentan una representación gráfica de las estadísticas del arch
     
     Si se produce un **** error en la marcación de los archivos de inicialización, también se indica. 
     
-- Si se agregaron archivos **etiquetaDos previamente** , el número de archivos predefinidos se enumera por problema que se definió para los archivos. 
+- Si se agregaron archivos **etiquetados previamente** , el número de archivos predefinidos se enumera por problema que se definió para los archivos. 
     
     Si se produce un error **en** la marcación de archivos predefinidos, también se indica. 
     

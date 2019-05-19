@@ -3,7 +3,7 @@ title: Tutorial suplantación de información sobre inteligencia
 ms.author: tracyp
 author: MSFTTracyP
 ms.date: 7/30/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,20 +14,20 @@ ms.assetid: 59a3ecaf-15ed-483b-b824-d98961d88bdd
 ms.collection:
 - M365-security-compliance
 description: Vea cómo funciona el nuevo conocimiento de inteligencia de TI de suplantación.
-ms.openlocfilehash: 4303b8f2524e6722e7febbbd06ab9daa853ed802
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: cdfdf90779137455e0b74cea5fe41aee7b1b26e5
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32267266"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156072"
 ---
 # <a name="walkthrough-spoof-intelligence-insight"></a>Tutorial: información sobre inteligencia de inteligencia de suplantación
 
-Mediante el uso de la información de inteligencia de inteligencia de suPlantación, puede determinar rápidamente qué remitentes le envían de forma legítima un correo no autenticado. Al permitirles enviar mensajes suplantados, puede reducir el riesgo de que los falsos positivos vayan a sus usuarios.
+Mediante el uso de la información de inteligencia de inteligencia de suplantación, puede determinar rápidamente qué remitentes le envían de forma legítima un correo no autenticado. Al permitirles enviar mensajes suplantados, puede reducir el riesgo de que los falsos positivos vayan a sus usuarios.
   
-Además, también puede usar el monitor de inteligencia de suPlantación de identidad (spoofing) y administrar pares de dominios permitidos para proporcionar un nivel adicional de seguridad y evitar que lleguen mensajes no seguros a su organización.
+Además, también puede usar el monitor de inteligencia de suplantación de identidad (spoofing) y administrar pares de dominios permitidos para proporcionar un nivel adicional de seguridad y evitar que lleguen mensajes no seguros a su organización.
   
-Puede usar el conocimiento de inteligencia de simulación en el &amp; centro de seguridad y cumplimiento si su cuenta profesional o educativa tiene permisos de administrador global, administrador de seguridad o lector de seguridad de Office 365. Para obtener más información, consulte perMissions [in the &amp; Office 365 Security Compliance Center](permissions-in-the-security-and-compliance-center.md).
+Puede usar el conocimiento de inteligencia de simulación en el &amp; centro de seguridad y cumplimiento si su cuenta profesional o educativa tiene permisos de administrador global, administrador de seguridad o lector de seguridad de Office 365. Para obtener más información, consulte Permissions [in the &amp; Office 365 Security Compliance Center](permissions-in-the-security-and-compliance-center.md).
   
 Si no está familiarizado con [los informes y la información del centro de seguridad &amp; y cumplimiento de Office 365](reports-and-insights-in-security-and-compliance.md), es posible que le resulte útil ver cómo puede navegar fácilmente desde un panel hasta una perspectiva y las acciones recomendadas.
   
@@ -41,7 +41,7 @@ Este es uno de los diversos tutoriales del centro &amp; de seguridad y cumplimie
     
 2. En el centro &amp; de seguridad y cumplimiento, vaya a **Threat Management** \> **Dashboard.**
     
-3. En la **** fila Insights, busque la información de inteligencia de inteligencia de suplantación. Si ha habilitado inteligencia de suplantación de identidad, la información tiene el derecho **de tener un derecho de dominio falsificado que no ha superado la autenticación de los últimos 30 días**. Si no ha habilitado la protección contra la suplantación de identidad, la información le pedirá que lo haga mediante el título **Habilitar la protección contra**la suplantaCión de identidad. 
+3. En la **** fila Insights, busque la información de inteligencia de inteligencia de suplantación. Si ha habilitado inteligencia de suplantación de identidad, la información tiene el derecho **de tener un derecho de dominio falsificado que no ha superado la autenticación de los últimos 30 días**. Si no ha habilitado la protección contra la suplantación de identidad, la información le pedirá que lo haga mediante el título **Habilitar la protección contra**la suplantación de identidad. 
     
 ## <a name="about-the-insight-on-the-dashboard"></a>Información sobre el panel
 
@@ -75,7 +75,7 @@ Un *par de dominios* es una combinación de la dirección "de:" y la infraestruc
 
 1. En el análisis de inteligencia de suplantación de identidad, haga clic en cualquiera de los pares de dominios (alta, moderada o rescatada).
   
-Aparece la página suPlantar **visión de inteligencia empresarial** , que muestra una lista de remitentes que envían correo no autenticado a su organización. La información de esta página le ayudará a determinar si los mensajes falsos están autorizados o no o si necesita realizar alguna otra acción. Puede ordenar la información por número de mensajes, fecha de la última detección de la suplantación de identidad, etc. (Por ejemplo, haga clic en encabezados de columna, como **número de mensajes** o **última**vista). 
+Aparece la página suplantar **visión de inteligencia empresarial** , que muestra una lista de remitentes que envían correo no autenticado a su organización. La información de esta página le ayudará a determinar si los mensajes falsos están autorizados o no o si necesita realizar alguna otra acción. Puede ordenar la información por número de mensajes, fecha de la última detección de la suplantación de identidad, etc. (Por ejemplo, haga clic en encabezados de columna, como **número de mensajes** o **última**vista). 
     
 2. Seleccione un elemento de la tabla para abrir un panel de detalles que contenga información enriquecida sobre el par de dominios, incluido por qué lo hemos capturado, lo que debe hacer, un resumen de dominio, datos WhoIs sobre el remitente y mensajes de correo electrónico similares que hemos visto en su espacio empresarial del mismo remitente. Desde aquí, también puede Agregar o quitar el par de dominios de la lista de remitentes seguros de **AllowedToSpoof** . 
   

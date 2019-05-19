@@ -3,7 +3,7 @@ title: Configuración de la administración del acceso con privilegios en Office
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: Use este tema para obtener más información sobre cómo configurar la administración del acceso con privilegios en Office 365
-ms.openlocfilehash: e086e93c268fe4de627bef30d3ac7aed8e6b1f98
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 46bfeaf0c73c4598fcdaa65d654201620396600c
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265242"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157422"
 ---
 # <a name="configuring-privileged-access-management-in-office-365"></a>Configuración de la administración del acceso con privilegios en Office 365
 
@@ -193,7 +193,7 @@ Después de crear una solicitud de aprobación, el estado de la solicitud de ele
 
 3. Seleccione **Administrar directivas y solicitudes de acceso**.
 
-4. Seleccione **Ver** para filtrar las solicitudes enviadas por estado **pendiente**, **aprobado**, deNegado o de caja de **caja del cliente** . ****
+4. Seleccione **Ver** para filtrar las solicitudes enviadas por estado **pendiente**, **aprobado**, denegado o de caja de **caja del cliente** . ****
 
 #### <a name="in-exchange-management-powershell"></a>En Exchange Management PowerShell
 
@@ -268,9 +268,9 @@ Para eliminar una directiva de acceso privilegiada, ejecute el siguiente comando
 Remove-ElevatedAccessApprovalPolicy -Identity <identity GUID of the policy you want to delete>
 ```
 
-## <a name="disable-privileged-access-in-office-365"></a>DesHabilitar el acceso privilegiado en Office 365
+## <a name="disable-privileged-access-in-office-365"></a>Deshabilitar el acceso privilegiado en Office 365
 
-Si es necesario, puede deshabilitar la administración del acceso con privilegios para su organización. La desHabilitación del acceso con privilegios no elimina ninguna directiva de aprobación o grupo de aprobador asociado.
+Si es necesario, puede deshabilitar la administración del acceso con privilegios para su organización. La deshabilitación del acceso con privilegios no elimina ninguna directiva de aprobación o grupo de aprobador asociado.
 
 ### <a name="in-the-microsoft-365-admin-center"></a>En el centro de administración de Microsoft 365
 

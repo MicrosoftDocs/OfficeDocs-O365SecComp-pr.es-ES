@@ -3,7 +3,7 @@ title: Configurar los límites de cumplimiento para investigaciones de eDiscover
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Use límites de cumplimiento para crear límites lógicos dentro de una organización de Office 365 que controlen las ubicaciones de contenido de usuario que puede buscar un administrador de exhibición de documentos electrónicos. Los límites de cumplimiento usan el filtrado de permisos de búsqueda (también denominados filtros de seguridad de cumplimiento) para controlar los buzones de correo, los sitios de SharePoint y las cuentas de OneDrive pueden ser buscados por usuarios específicos.
-ms.openlocfilehash: b23c6d0c96874fb7e6205de6bf8a7f4eb00e4254
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: ab9fae4dcae04bc79c94f5a5138dfd56cc551414
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32264672"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156582"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations-in-office-365"></a>Configurar los límites de cumplimiento para investigaciones de eDiscovery en Office 365.
 
@@ -56,7 +56,7 @@ El primer paso es elegir un atributo de Azure Active Directory que se usará par
   
 Esta es una lista de atributos de usuario de Azure Active Directory que puede usar para los límites de cumplimiento:
   
-- Empresa
+- Company
     
 - CustomAttribute1-CustomAttribute15
     
@@ -179,7 +179,7 @@ Tenga en cuenta las siguientes limitaciones al administrar casos de eDiscovery e
     
 - Los filtros de permisos de búsqueda no se aplican a las carpetas públicas de Exchange.
 
-## <a name="searching-and-exporting-content-in-multi-geo-environments"></a>Búsqueda y exportación de contenido en entornos multiGeográfico
+## <a name="searching-and-exporting-content-in-multi-geo-environments"></a>Búsqueda y exportación de contenido en entornos multigeográfico
 
 Los filtros de permisos de búsqueda también permiten controlar dónde se enruta el contenido para la exportación y en qué centro de datos se puede buscar al buscar ubicaciones de contenido en un [entorno multigeográfico de SharePoint](https://go.microsoft.com/fwlink/?linkid=860840).
   
@@ -192,7 +192,7 @@ Los filtros de permisos de búsqueda también permiten controlar dónde se enrut
     |NAM  <br/> |Norteamérica (los centros de datos reales están en los Estados Unidos)  <br/> |
     |EUR  <br/> |Europa  <br/> |
     |APC  <br/> |Asia Pacífico  <br/> |
-    |CAN <br/> |Canada
+    |CAN <br/> |Canadá
     
 - **Enrutar búsquedas de contenido** : puede enrutar las búsquedas de contenido de los sitios de SharePoint y las cuentas de OneDrive a un centro de datos satélite. Esto significa que puede especificar la ubicación del centro de recursos donde se ejecutarán las búsquedas.
     

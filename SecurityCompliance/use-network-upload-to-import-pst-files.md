@@ -3,7 +3,7 @@ title: Use la carga de red para importar los archivos PST de su organización a 
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 'Para los administradores: Obtenga información sobre cómo usar la carga de red para importar varios archivos PST a los buzones de usuario en Office 365.'
-ms.openlocfilehash: 73123d5f36a01b31cfc38e6404bd400bb722fb36
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: fb64eecdbeac40aa597d17459f06525b8859fb1f
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32264272"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156172"
 ---
 # <a name="use-network-upload-to-import-your-organization-pst-files-to-office-365"></a>Use la carga de red para importar los archivos PST de su organización a Office 365
 
@@ -65,7 +65,7 @@ Tenga en cuenta que solo tiene que realizar el paso 1 una vez para importar los 
     
 - Este procedimiento implica copiar y guardar una copia de una dirección URL que contiene una clave de acceso. Esta información se usará en el paso 2 para cargar los archivos PST y, en el paso 3, si desea ver una lista de los archivos PST cargados en Office 365. Asegúrese de tomar precauciones para proteger esta dirección URL, como lo haría con las contraseñas u otra información relacionada con la seguridad. Por ejemplo, puede guardarla en un documento de Microsoft Word protegido con contraseña o en una unidad USB cifrada. Consulte la sección [More Information](#more-information) para ver un ejemplo de esta clave y URL combinadas. 
     
-- Puede importar archivos PST a un buzón inactivo en Office 365. Para ello, especifique el GUID del buzón inactivo en el `Mailbox` parámetro del archivo de asignación de importaCIONES de PST. Consulte el paso 4 de la ficha **instrucciones** de este tema para obtener información. 
+- Puede importar archivos PST a un buzón inactivo en Office 365. Para ello, especifique el GUID del buzón inactivo en el `Mailbox` parámetro del archivo de asignación de importaciones de PST. Consulte el paso 4 de la ficha **instrucciones** de este tema para obtener información. 
     
 - En una implementación híbrida de Exchange, puede importar archivos PST a un buzón de archivo basado en la nube para un usuario cuyo buzón principal es local. Para ello, realice lo siguiente en el archivo de asignación de importaciones de PST:
     
@@ -292,7 +292,7 @@ Después de crear el trabajo de importación en el paso 5, Office 365 analiza lo
     
     ![Puede recortar los datos de los archivos PST o importarlos todos](media/287fc030-99e9-417b-ace7-f64617ea5d4e.png)
   
-3. Siga uno de los procedimientos siguientes:
+3. Realice una de las acciones siguientes:
     
     a. Para recortar los datos que se van a importar, haga clic en **sí, deseo filtrarlos antes**de importarlos.
     
@@ -326,7 +326,7 @@ A continuación, se muestra una ilustración y una descripción del proceso de c
     
 5. **Filtrar los datos PST que se importarán a** los buzones: una vez que se ha creado e iniciado el trabajo de importación, Office 365 analiza los datos de los archivos PST (con seguridad y de forma segura) mediante la identificación de la antigüedad de los elementos y los distintos tipos de mensajes incluidos en los archivos PST. . Cuando se completa el análisis y los datos están listos para importar, tiene la opción de importar todos los datos contenidos en los archivos PST o puede recortar los datos que se importan al establecer filtros que controlan qué datos se importan.
     
-6. **Inicie el trabajo de importación de PST** : una vez iniciado el trabajo de importación, Office 365 usa la información del archivo de asignación de importaCIONES de PST para importar los archivos PST de la ubicación de Azure Storage a los buzones de usuario. La información de estado sobre el trabajo de importación (incluida la información sobre cada uno de los archivos PST que se está importando) se muestra en la página **importar** del centro de seguridad & cumplimiento. Una vez finalizado el trabajo de importación, el estado del trabajo se establece en **completado**.
+6. **Inicie el trabajo de importación de PST** : una vez iniciado el trabajo de importación, Office 365 usa la información del archivo de asignación de importaciones de PST para importar los archivos PST de la ubicación de Azure Storage a los buzones de usuario. La información de estado sobre el trabajo de importación (incluida la información sobre cada uno de los archivos PST que se está importando) se muestra en la página **importar** del centro de seguridad & cumplimiento. Una vez finalizado el trabajo de importación, el estado del trabajo se establece en **completado**.
   
 ## <a name="more-information"></a>Más información
 

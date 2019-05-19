@@ -3,7 +3,7 @@ title: Administración del acceso con privilegios en Office 365
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: Ent_Solutions
 ms.assetid: ''
 description: Use este tema para obtener más información acerca de la administración del acceso con privilegios en Office 365
-ms.openlocfilehash: e03b615971b90e8443f73c3ec8c4cd3febe90450
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 7547568d6ea2a13de5391d5a827df2921833838c
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261879"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157332"
 ---
 # <a name="privileged-access-management-in-office-365"></a>Administración del acceso con privilegios en Office 365
 
@@ -41,7 +41,7 @@ Se define la administración del acceso con privilegios en Office 365 y se aplic
 
 - **Habilitación de la administración de acceso privilegiada en Office 365 mientras se está usando Azure ad privileged Identity Management:** Agregar una administración de acceso privilegiada en Office 365 proporciona otra capa granular de capacidades de protección y auditoría para el acceso privilegiado a los datos de Office 365.
 
-- **Habilitación de la administración de identidadEs privilegiada de Azure ad mientras se usa la administración de acceso con privilegios en Office 365:**  Al agregar la administración de identidades privilegiada de Azure AD a la administración de acceso privilegiada en Office 365, se puede extender el acceso privilegiado a los datos fuera de Office 365 que se definen principalmente por los roles de usuario o la identidad.  
+- **Habilitación de la administración de identidades privilegiada de Azure ad mientras se usa la administración de acceso con privilegios en Office 365:**  Al agregar la administración de identidades privilegiada de Azure AD a la administración de acceso privilegiada en Office 365, se puede extender el acceso privilegiado a los datos fuera de Office 365 que se definen principalmente por los roles de usuario o la identidad.  
 
 ## <a name="privileged-access-management-architecture-and-process-flow"></a>Arquitectura de administración del acceso privilegiado y flujo del proceso
 
@@ -94,4 +94,4 @@ Inicie [la configuración de la organización para la administración del acceso
 
 ## <a name="learn-more"></a>Más información
 
-[Guía interActiva: supervise y controle las tareas de administrador con privilegios de administración de acceso](https://content.cloudguides.com/en-us/guides/Privileged%20Access%20Management)
+[Guía interactiva: supervise y controle las tareas de administrador con privilegios de administración de acceso](https://content.cloudguides.com/en-us/guides/Privileged%20Access%20Management)

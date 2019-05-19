@@ -4,7 +4,7 @@ ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
 ms.date: 6/8/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con los informes de gobierno de datos del Centro de seguridad y cumplimiento de Office 365, puede ver rápidamente si las etiquetas se aplican en el contenido del modo previsto.
-ms.openlocfilehash: 5374b54c87aaf79f70be733d626171b196639725
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: d6537c7c2c6f4bda9aad105ea5882e245a430f4c
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32266999"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157752"
 ---
 # <a name="view-the-data-governance-reports"></a>Ver los informes de gobierno de datos
 

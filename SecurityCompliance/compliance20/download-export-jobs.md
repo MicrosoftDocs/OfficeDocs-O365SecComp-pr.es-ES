@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 904bc5f8a6d6cef937d55336e8f383957713769a
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 56ed8eac259974b43ca0cd26b2bd0c339a5fc05b
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32251938"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155152"
 ---
 # <a name="download-export-jobs"></a>Descargar trabajos de exportación
 
@@ -47,6 +47,6 @@ Todos los datos exportados se agregan a un BLOB de Microsoft Azure. Esto proporc
 
 ![](../media/AzureStorageConnect4.png)
 
-Esto agregará la exportación como un objeto en las cuentas de almacenamiento, los servicios de datos adJuntos de SAS o los contenedores de blobs. Podrá explorar la exportación y descargar todas o parte de la exportación.
+Esto agregará la exportación como un objeto en las cuentas de almacenamiento, los servicios de datos adjuntos de SAS o los contenedores de blobs. Podrá explorar la exportación y descargar todas o parte de la exportación.
 
 ![](../media/AzureStorageConnect5.png)

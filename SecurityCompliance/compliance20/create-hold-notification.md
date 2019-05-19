@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: acfa0c635b361426542e91a55c8d75c315bfb831
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: efd5dfdee48e892b5fa3fb018a9655c10d9a325e
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32242823"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155162"
 ---
 # <a name="create-a-legal-hold-notice"></a>Crear un aviso de suspensión legal
 
-Mediante el uso de comunicaciones por custodios de eDiscovery avanzado (versión preliminar), las organizaciones pueden administrar su flujo de trabajo a partir de la comunicación con los custodios. Mediante la herramienta de comunicaciones, los equipos legales pueden enviar, recopilar y realizar un seguimiento sistemático de las notificaciones de retención legal. El proceso de creación flexible también permite a Microsoft Teams personalizar el flujo de trabajo de notificaciones de retención y el contenido de los avisos que se envían a los custodios. 
+Mediante el uso de comunicaciones de custodios avanzadas de eDiscovery, las organizaciones pueden administrar su flujo de trabajo para comunicarse con los custodios. Mediante la herramienta de comunicaciones, los equipos legales pueden enviar, recopilar y realizar un seguimiento sistemático de las notificaciones de retención legal. El proceso de creación flexible también permite a Microsoft Teams personalizar el flujo de trabajo de notificaciones de retención y el contenido de los avisos que se envían a los custodios. 
 
 ![Página de comunicaciones](../media/CommunicationPage.PNG)
 
@@ -35,7 +35,7 @@ El primer paso es especificar los detalles adecuados para los avisos de suspensi
 
 ![Página de comunicación de nombres](../media/NameCommunication.PNG)
 
-1. En el centro de seguridad & cumplimiento, vaya a **eDiscovery _GT_ Advanced eDiscovery (versión preliminar)** para mostrar la lista de casos de su organización.
+1. En el centro de seguridad & cumplimiento, vaya a **eDiscovery _GT_ Advanced eDiscovery** para mostrar la lista de casos de su organización.
    
 2. Haga clic en la pestaña **comunicaciones** y, a continuación, en **nueva comunicación**.
    
@@ -49,7 +49,7 @@ El primer paso es especificar los detalles adecuados para los avisos de suspensi
 
 ## <a name="step-2-define-the-portal-content"></a>Paso 2: definir el contenido del portal
 
-A continuación, puede crear y agregar el contenido del aviso de suspensión. En la página **definir contenido del portal** del Asistente para **crear una comunicación** , especifique el contenido del aviso de retención. Este contenido se anexará automáticamente a los avisos de emisión, reEmisión, aviso y reAsignación de responsabilidades. Además, este contenido aparecerá en el portal de cumplimiento de la custodio. 
+A continuación, puede crear y agregar el contenido del aviso de suspensión. En la página **definir contenido del portal** del Asistente para **crear una comunicación** , especifique el contenido del aviso de retención. Este contenido se anexará automáticamente a los avisos de emisión, reemisión, aviso y reasignación de responsabilidades. Además, este contenido aparecerá en el portal de cumplimiento de la custodio. 
 
 ![Página de contenido del portal](../media/PortalContent.PNG)
 
@@ -68,7 +68,7 @@ Para crear el contenido del portal:
 
 Una vez que haya definido el contenido del aviso de retención, puede configurar los flujos de trabajo para enviar y administrar el proceso de notificación. Las notificaciones son mensajes de correo electrónico que se envían a notificar y realizar un seguimiento con custodios. Todos los custodios que se agreguen a la comunicación recibirán la misma notificación. 
 
-Para configurar y enviar un aviso de retención, debe incluir notificaciones de emisión, reEmisión y publicación.
+Para configurar y enviar un aviso de retención, debe incluir notificaciones de emisión, reemisión y publicación.
 
 ### <a name="issuance-notification"></a>Notificación de emisión 
 
@@ -125,7 +125,7 @@ Para crear una notificación de versión:
 
 De manera opcional, puede simplificar el flujo de trabajo para seguir con los administradores que no responden mediante la creación y programación de notificaciones automatizadas de reaviso y reasignación de incidencias.
 
-![Página aviso/reMisión](../media/ReminderEscalations.PNG)
+![Página aviso/remisión](../media/ReminderEscalations.PNG)
 
 ### <a name="reminders"></a>Avisos
 

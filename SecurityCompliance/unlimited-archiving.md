@@ -3,7 +3,7 @@ title: Información general sobre el archivado ilimitado en Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: Obtenga información sobre el archivado de expansión automática en Office 365, que proporciona almacenamiento ilimitado de archivos para buzones de Exchange Online.
-ms.openlocfilehash: 38fab68ee8e5c2bdd38bc60b08929bd6f6025e1b
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 9b63bcd7cbf8c1cef8df336553debdbf7af2ba12
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265952"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158072"
 ---
 # <a name="overview-of-unlimited-archiving-in-office-365"></a>Información general sobre el archivado ilimitado en Office 365
 
@@ -50,7 +50,7 @@ A continuación se muestra una introducción rápida del proceso.
 
 ## <a name="what-gets-moved-to-the-additional-archive-storage-space"></a>¿Qué se mueve al espacio de almacenamiento adicional del archivo?
 
-Para hacer un uso eficaz del almacenamiento de archivos de expansión automática, las carpetas pueden moverse. Office 365 determina qué carpetas se mueven cuando se agrega almacenamiento adicional al archivo. Cuando se mueve una carpeta, se crea automáticamente una subcarpeta en la carpeta original en la parte de archivo de la lista de carpetas de Outlook. Esta nueva subcarpeta apunta a los elementos que se movieron. la convención de nomenclatura que Office 365 usa para asignar un nombre a esta carpeta es ** \<el nombre\>de carpeta _yyyy (creado en mmm dd, yyyy h_mm)**, donde: 
+Para hacer un uso eficaz del almacenamiento de archivos de expansión automática, las carpetas pueden moverse. Office 365 determina qué carpetas se mueven cuando se agrega almacenamiento adicional al archivo. Cuando se mueve una carpeta, se crea automáticamente una subcarpeta en la carpeta original en la parte de archivo de la lista de carpetas de Outlook. Esta nueva subcarpeta apunta a los elementos que se movieron. La Convención de nomenclatura que Office 365 usa para asignar un nombre a esta carpeta es ** \<el nombre\>de carpeta _yyyy (creado en MMM DD, YYYY h_mm)**, donde: 
   
 - **yyyy** es el año en que se recibieron los mensajes de la carpeta. 
     

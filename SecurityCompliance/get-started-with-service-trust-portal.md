@@ -3,7 +3,7 @@ title: Introducción al portal de confianza de servicios de Microsoft
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,12 +12,12 @@ mscollection: M365-security-compliance
 ms.custom: Adm_O365
 ms.assetid: f30e2353-0bd6-41ed-8347-eea1fb8d2662
 description: Para los informes de cumplimiento normativo de Office 365, Azure y Dynamics 365, para ver auditorías de terceros, averiguar cómo Microsoft mantiene seguros los datos de los clientes y cómo se puede cumplir con ISO, HIPAA, NIST, FINRA, RGPD y FedRAMP cuando se usan estos servicios en línea.
-ms.openlocfilehash: ff14f1b88dbde06dbfd17a87bb94c3f32ddff81b
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 80dd054787957941353cbb76489fc7063d17a416
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32254338"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154442"
 ---
 # <a name="get-started-with-the-microsoft-service-trust-portal"></a>Introducción al portal de confianza de servicios de Microsoft
 
@@ -84,7 +84,7 @@ Proporciona información de cumplimiento específica de la industria y de la reg
 
 - **Industrias** : proporciona páginas de aterrizaje específicas de la industria para obtener información y sobre cómo los servicios en la nube de Microsoft ayudan a la organización a cumplir los estándares y regulaciones de estos sectores:
 
-    - Educación
+    - Education
     - Servicios financieros
     - 365
     - Mantenimiento
@@ -118,7 +118,7 @@ Funciones administrativas que solo están disponibles para la cuenta de administ
   
  La página de **configuración** le permite asignar el acceso basado en roles al administrador de cumplimiento. Para obtener más información, consulte la sección sobre el control de acceso basado en permisos y roles en [use el administrador de cumplimiento como ayuda para cumplir los requisitos normativos y de protección de datos al usar los servicios en la nube de Microsoft](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#permissions-and-role-based-access-control).
   
-### <a name="search"></a>Buscar 
+### <a name="search"></a>Buscar
 
 Haga clic en la lupa de la esquina superior derecha de la página portal de confianza de servicios para expandir el cuadro, escriba los términos de búsqueda y presione **entrar**.
 
@@ -153,7 +153,7 @@ Los paquetes de inicio son un conjunto de Microsoft-creados de documentación so
 
 - **Paquete de inicio de evaluación** : después de la evaluación, use las listas de comprobación y otras instrucciones de este paquete de inicio para ayudar a su organización a evaluar los riesgos relacionados con la seguridad, el cumplimiento y la privacidad.
 
-- **AudiTe Pack de inicio** : usuario este paquete de inicio para obtener instrucciones sobre el uso de controles de auditoría y otras herramientas para ayudar a guiar la implementación de los servicios en la nube de Microsoft de una manera que ayude a reducir la exposición de la organización al riesgo.
+- **Audite Pack de inicio** : usuario este paquete de inicio para obtener instrucciones sobre el uso de controles de auditoría y otras herramientas para ayudar a guiar la implementación de los servicios en la nube de Microsoft de una manera que ayude a reducir la exposición de la organización al riesgo.
 
 Para acceder a estos paquetes de inicio, vaya a **Service Trust Portal _GT_ Industries _AMP_ Regions _GT_ Industry Solutions _GT_ Financial Services**. Puede abrir o descargar documentos desde un paquete de inicio o guardarlos en mi biblioteca.
 

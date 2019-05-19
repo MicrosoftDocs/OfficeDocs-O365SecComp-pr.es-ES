@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 40829b57-793c-4d41-b171-e9270129173d
 description: 'Para los administradores: Aprenda a importar de forma masiva los archivos PST de su organización a los buzones de correo de Office 365 copiando los archivos PST en una unidad de disco duro y, a continuación, se envíen a Microsoft. '
-ms.openlocfilehash: 5f04cc0a29fce7b607920253adb10aefb640c914
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 4e386dc94928b674565a1d096cdb75aad9a3e22e
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32264812"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158042"
 ---
 # <a name="use-drive-shipping-to-import-your-organization-pst-files-to-office-365"></a>Usar el envío de unidades para importar los archivos PST de la organización a Office 365
 
@@ -95,7 +95,7 @@ Para conocer las preguntas más frecuentes sobre el uso del envío de unidades p
     > [!TIP]
     > Para identificar el tamaño de recepción de un buzón de correo, puede ejecutar este comando en Exchange Online PowerShell `Get-Mailbox <user mailbox> | FL MaxReceiveSize`:. 
   
-- Puede importar archivos PST a un buzón inactivo en Office 365. Para ello, especifique el GUID del buzón inactivo en el `Mailbox` parámetro del archivo de asignación de importaCIONES de PST. Consulte [paso 3: crear el archivo de asignación](#step-3-create-the-pst-import-mapping-file) de importaciones de PST para obtener más información. 
+- Puede importar archivos PST a un buzón inactivo en Office 365. Para ello, especifique el GUID del buzón inactivo en el `Mailbox` parámetro del archivo de asignación de importaciones de PST. Consulte [paso 3: crear el archivo de asignación](#step-3-create-the-pst-import-mapping-file) de importaciones de PST para obtener más información. 
     
 - En una implementación híbrida de Exchange, puede importar archivos PST a un buzón de archivo basado en la nube para un usuario cuyo buzón principal es local. Para ello, realice lo siguiente en el archivo de asignación de importaciones de PST:
     
@@ -370,7 +370,7 @@ Una vez que se cargan los archivos PST en Azure, el estado cambia a **análisis 
     
     ![Puede recortar los datos de los archivos PST o importarlos todos](media/287fc030-99e9-417b-ace7-f64617ea5d4e.png)
   
-6. Siga uno de los procedimientos siguientes:
+6. Realice una de las acciones siguientes:
     
     a. Para recortar los datos que se van a importar, haga clic en **sí, deseo filtrarlos antes**de importarlos.
     

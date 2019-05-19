@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyp
 manager: laurawi
 ms.date: 09/05/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -16,12 +16,12 @@ ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
 ms.collection:
 - M365-security-compliance
 description: 'Como administrador, puede ver, liberar e informar de mensajes falsos positivos en cuarentena en Office 365. Puede configurar directivas para que Office 365 filtre mensajes y los envíe a la cuarentena por varias razones: debido a que se identificaron como correo no deseado, en masa, con suplantación de identidad (phishing) o porque coincidieron con una regla de flujo de correo. '
-ms.openlocfilehash: c2a6fff9f6b4d93900174426e2230284695ff3bf
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: aa469a1f0efa2265014593134d2b7865a59dd89f
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32251997"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155702"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-administrator-in-office-365"></a>Administrar archivos y mensajes en cuarentena como un administrador en Office 365
 
@@ -197,11 +197,11 @@ Puede configurar cuánto tiempo los mensajes y archivos permanecerán en cuarent
   
 3. Elija **personalizado** para mostrar la ficha **Configuración personalizada** . 
     
-4. ExPanda la fila **Directiva de filtro de correo no deseado predeterminada (siempre activa)** . 
+4. Expanda la fila **Directiva de filtro de correo no deseado predeterminada (siempre activa)** . 
     
 5. Elija **Editar Directiva**. La configuración de la Directiva de filtro de correo no deseado predeterminada aparece en una página nueva.
     
-6. ExPanda **correo no deseado y acciones en masa**.
+6. Expanda **correo no deseado y acciones en masa**.
     
 7. En **cuarentena**, en el cuadro de texto **conservar el correo no deseado durante (días)** , escriba la cantidad de tiempo que desea que Office 365 conserve los mensajes y archivos en cuarentena. El valor predeterminado es 30 días. Este es también el máximo. 
     

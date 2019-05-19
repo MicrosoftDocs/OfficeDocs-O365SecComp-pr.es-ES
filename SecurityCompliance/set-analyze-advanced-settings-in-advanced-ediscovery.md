@@ -4,7 +4,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: a797682f-ad85-4c08-a354-3850ba2237ee
 description: 'Obtenga información acerca de cómo configurar opciones avanzadas, como casi duplicados, subprocesos de correo electrónico y temas, para el proceso de análisis en la exhibición avanzada de documentos electrónicos de Office 365. '
-ms.openlocfilehash: d8dfb9f3ecfcda0f267dfccdc716eda40fe450b2
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 2302d44ae8985f820e1fa0f0428f1c9c5ef762fc
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32260868"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158552"
 ---
 # <a name="set-analyze-advanced-settings-in-office-365-advanced-ediscovery"></a>Establecer la configuración avanzada de ANALYZE en Office 365 Advanced eDiscovery
 

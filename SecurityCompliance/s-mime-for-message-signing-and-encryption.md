@@ -4,7 +4,7 @@ ms.author: chrisda
 author: chrisda
 manager: serdars
 ms.date: ''
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 887c710b-0ec6-4ff0-8065-5f05f74afef3
 description: Los administradores pueden aprender a usar S/MIME en Exchange Online.
-ms.openlocfilehash: 7c7225efce247928e19946e695c19931f198ae32
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 570e306ea1c781344bed120f1dd467d31a4a4fe6
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261388"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157002"
 ---
 # <a name="smime-for-message-signing-and-encryption-in-exchange-online"></a>S/MIME para la firma y el cifrado de mensajes en Exchange Online
 
@@ -41,7 +41,7 @@ Los pasos que debe seguir para configurar S/MIME con cada uno de estos extremos 
 
 - Publique el certificado de usuario en una cuenta local de AD DS en los atributos **UserSMIMECertificate** y **UserCertificate** .
 
-- Para las organizaciones de Exchange Online, sincronice los certificados de usuario de AD DS a Azure Active Directory mediante una versión adecuada de dirSync. Estos certificados se sincronizarán desde Azure Active Directory a directorio de Exchange Online y se usarán al cifrar un mensaje a un destinatario.
+- Para las organizaciones de Exchange Online, sincronice los certificados de usuario de AD DS a Azure Active Directory mediante una versión adecuada de DirSync. Estos certificados se sincronizarán desde Azure Active Directory a directorio de Exchange Online y se usarán al cifrar un mensaje a un destinatario.
 
 - Crear una colección virtual de certificados para validar S/MIME. Outlook en la web usa esta información para validar la firma de un correo electrónico y garantizar que se ha firmado con un certificado de confianza.
 
@@ -59,7 +59,7 @@ La configuración de S/MIME para Exchange Online con Outlook en la web implica l
 
 ## <a name="related-message-encryption-technologies"></a>Tecnologías de cifrado de mensajes relacionadas
 
-A medida que la seguridad de los mensajes se vuelve más importante, los administradores deben comprender los principios y conceptos de la mensajería segura. Esta comprensión es especialmente importante debido a la creciente variedad de tecnologías relacionadas con la protección (incluido S/MIME) que están disponibles. Para obtener más información acerca de S/MIME y cómo funciona en el contexto del correo electrónico, consulte [understandIng s/MIME](https://go.microsoft.com/fwlink/?LinkID=393948). Una variedad de tecnologías de cifrado funcionan en conjunto para proporcionar protección a los mensajes en reposo y en tránsito. S/MIME puede funcionar simultáneamente con las siguientes tecnologías, pero no depende de ellas:
+A medida que la seguridad de los mensajes se vuelve más importante, los administradores deben comprender los principios y conceptos de la mensajería segura. Esta comprensión es especialmente importante debido a la creciente variedad de tecnologías relacionadas con la protección (incluido S/MIME) que están disponibles. Para obtener más información acerca de S/MIME y cómo funciona en el contexto del correo electrónico, consulte [Understanding s/MIME](https://go.microsoft.com/fwlink/?LinkID=393948). Una variedad de tecnologías de cifrado funcionan en conjunto para proporcionar protección a los mensajes en reposo y en tránsito. S/MIME puede funcionar simultáneamente con las siguientes tecnologías, pero no depende de ellas:
 
 - **Seguridad de la capa de transporte (TLS)** cifra el túnel o la ruta entre los servidores de correo electrónico para ayudar a evitar la supervisión y el espionaje.
 

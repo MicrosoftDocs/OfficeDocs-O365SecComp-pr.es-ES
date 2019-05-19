@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: 6838203a500a4fe600d8186a4b848beed0730665
-ms.sourcegitcommit: 865b3dc071150b20bf3967e1263fc54e75898284
+ms.openlocfilehash: ee5f2257e73467c50a0ecc296d8d3b70b7c3d0f8
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "33835070"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155192"
 ---
 # <a name="set-up-attorney-client-privilege-detection-preview-in-advanced-ediscovery"></a>Configurar un abogado-detección de privilegios de cliente (versión preliminar) en eDiscovery avanzado
 
@@ -65,7 +65,7 @@ Al analizar el conjunto de revisión, también se ejecutará la detección de pr
 
 ### <a name="step-2-create-a-smart-tag-group-with-attorney-client-privilege-detection-model"></a>Paso 2: crear un grupo de etiquetas inteligentes con un modelo de detección de privilegios de clientes de abogados
 
-Una de las principales formas en que puede consumir los resultados de la detección de privilegios de clientes de abogados en el proceso de revisión consiste en usar un grupo de etiquetas inteligentes. Los grupos de etiquetas inteligentes toman los resultados de un modelo de ML y muestran los resultados del modelo en línea junto a las etiquetas, de modo que puede consumir fácilmente los resultados del modelo cuando sea relevante y usar las etiquetas en el proceso de revisión como lo haría con cualquier otra etiqueta del panel de etiquetado.
+Una de las principales formas en que puede consumir los resultados de la detección de privilegios de clientes de abogados en el proceso de revisión consiste en usar un grupo de etiquetas inteligentes. Los grupos de etiquetas inteligentes toman los resultados de un modelo de ML y muestran los resultados del modelo en línea junto a las etiquetas, de modo que puede consumir fácilmente los resultados del modelo cuando sea relevante y usar las etiquetas en el proceso de revisión como lo haría con cualquier otra etiqueta del panel de etiquetado. Para obtener más información, consulte [Configurar etiquetas inteligentes para la revisión asistida por ml en EDiscovery avanzado](smart-tags.md) .
 
 - En "administrar etiquetas", haga clic en "agregar sección de etiquetas inteligentes".
 

@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 12/9/2016
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: ceeda109-6c24-4270-bd09-a36959417276
 ms.collection:
 - M365-security-compliance
 description: Como administrador de Exchange Online o Exchange Online Protection (EOP), puede ayudar a garantizar que un mensaje de correo que pasa a través del servicio no se marque como correo no deseado. Vea la versión actualizada de las sugerencias y los procedimientos para realizar esto en Impedir que el correo electrónico falso positivo se marque como correo no deseado con una lista de IP seguras u otras técnicas.
-ms.openlocfilehash: bfd0ea72facbf5675e47177c7757ff5fe168ffe7
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: fc441242a9c90be8733cebf49bc5d6f5ccae1aaa
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255218"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154252"
 ---
 # <a name="how-to-help-ensure-that-a-message-isnt-marked-as-spam"></a>Cómo ayudar a garantizar que un mensaje no se marque como correo no deseado
 

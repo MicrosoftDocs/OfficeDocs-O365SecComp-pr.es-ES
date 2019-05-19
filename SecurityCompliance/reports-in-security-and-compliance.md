@@ -3,7 +3,7 @@ title: Informes en el Centro de seguridad y cumplimiento
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 f1_keywords:
 - ms.o365.cc.AuditingHelp
@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 7acd33ce-1ec8-49fb-b625-43bac7b58c5a
 description: 'Use el centro de seguridad & cumplimiento para obtener varios informes para su organización de SharePoint Online y Exchange Online, además de informes de Azure Active Directory.  '
-ms.openlocfilehash: b902ce8e44e20fdb9e5fc22189ca07b6168be329
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 979eb59ed0adf115b9cdda4cd99f97845e9b4b4c
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32264902"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157234"
 ---
 # <a name="reports-in-the-security--compliance-center"></a>Informes en el Centro de seguridad y cumplimiento
 
@@ -54,7 +54,7 @@ En la tabla siguiente se describen los informes en la sección **Auditoría** de
 |**Informe**|**Descripción**|
 |:-----|:-----|
 |**Informe de registro de auditoría de Office 365** <br/> |Puede buscar en el registro de auditoría de Office 365 la actividad de usuario y de administrador de su organización de Office 365. El informe contiene entradas actividad de usuario y administrador de Exchange Online, SharePoint Online, OneDrive para la empresa y Azure Active Directory, que es el servicio de directorio para Office 365. Para obtener más información, vea [Buscar en el registro de auditoría en el Office 365](search-the-audit-log-in-security-and-compliance.md).  <br/> |
-|**Informes de Azure AD** <br/> |Para buscar actividad de inicio de sesión sospechoso o inusual en su organización de Office 365, puede usar los informes de actividad y de inicio de sesión en Microsoft Azure. También puede ver eventos en el registro de auditoría de Azure AD. Para ver los informes en Azure, solo tiene que hacer clic en **ver informes de Azure ad**. Para más información, visite: <br/><br/>[Use su suscripción gratuita de Azure Active Directory en Office 365](use-your-free-azure-ad-subscription-in-office-365.md). <br/> [Ver los informes de acceso y uso](http://go.microsoft.com/fwlink/p/?LinkId=506902).  <br/> |
+|**Informes de Azure AD** <br/> |Para buscar actividad de inicio de sesión sospechoso o inusual en su organización de Office 365, puede usar los informes de actividad y de inicio de sesión en Microsoft Azure. También puede ver eventos en el registro de auditoría de Azure AD. Para ver los informes en Azure, solo tiene que hacer clic en **ver informes de Azure ad**. Para obtener más información, vea: <br/><br/>[Use su suscripción gratuita de Azure Active Directory en Office 365](use-your-free-azure-ad-subscription-in-office-365.md). <br/> [Ver los informes de acceso y uso](http://go.microsoft.com/fwlink/p/?LinkId=506902).  <br/> |
 |**Informes de auditoría de Exchange** <br/> | Puede usar la funcionalidad de auditoría de Office 365 para realizar un seguimiento de los cambios realizados en la configuración de Exchange Online por parte de los administradores de la organización. También se registran los cambios realizados en la organización de Exchange Online por un administrador del centro de datos de Microsoft o por un administrador delegado. Para Exchange Online, el registro de auditoría de administrador está habilitado de forma predeterminada, por lo que no tiene que hacer nada para activarlo. Exchange Online también proporciona un registro de auditoría de buzones de correo para permitirle realizar un seguimiento del acceso a los buzones por parte de alguien que no sea el propietario del buzón. Tiene que habilitar el registro de auditoría de buzones de correo para cada buzón en el que quiera realizar un seguimiento del acceso de no propietarios.  <br/>  Tanto para el proceso de registro de auditoría del administrador como de los buzones, puede ejecutar informes de auditoría para ver las entradas del registro de auditoría. También puede exportar los registros de auditoría del administrador y de los buzones que se le envían en un plazo de 24 horas en un archivo XML adjunto al mensaje de correo electrónico. <br/><br/>Para obtener más información acerca de la exportación de registros de auditoría, consulte:  <br/><br/> [Exportar registros de auditoría de buzones](http://go.microsoft.com/fwlink/p/?LinkID=404104) <br/> [Ver y exportar el registro de auditoría de administración del centro de administración de información](http://go.microsoft.com/fwlink/p/?LinkId=404109) <br/> [Buscar los informes de cambios del grupo de roles o auditorías de administrador](http://go.microsoft.com/fwlink/p/?LinkId=404105) <br/>   [Informes de auditoría de Exchange](http://go.microsoft.com/fwlink/p/?LinkID=395232).  <br/> |
    
 ## <a name="supervisory-review-report"></a>Informe de revisión de supervisión

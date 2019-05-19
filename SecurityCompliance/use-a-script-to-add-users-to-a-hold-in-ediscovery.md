@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 1/23/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MBS150
 ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
 description: Ejecute un script para agregar rápidamente sitios de buzones de correo y OneDrive para la empresa a una nueva retención asociada a un caso de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento.
-ms.openlocfilehash: 992fddad3bfbc9f08855bd85d87b0edf92b3cdbe
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: c680e584a6f729b3d6d0d74b84ddd0e03da6dc9a
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32263982"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156232"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-an-ediscovery-case-in-the-security--compliance-center"></a>Usar un script para agregar usuarios a una suspensión en un caso de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento
 
@@ -39,7 +39,7 @@ Estos son los pasos para que esto suceda:
 
 - Debe ser miembro del grupo de roles eDiscovery Manager en el centro de seguridad & cumplimiento y un administrador global de SharePoint Online para ejecutar el script en el paso 3. Para obtener más información, vea [asignar permisos de exhibición de documentos electrónicos en el centro de seguridad _AMP_ cumplimiento de Office 365](assign-ediscovery-permissions.md).
     
-- Se puede Agregar un máximo de 1.000 buzones y sitios de 100 a una suspensión asociada a un caso de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento. SuPoniendo que todos los usuarios que quiera poner en retención dispongan de un sitio de OneDrive para la empresa, puede Agregar un máximo de 100 usuarios a una suspensión mediante el script de este artículo. 
+- Se puede Agregar un máximo de 1.000 buzones y sitios de 100 a una suspensión asociada a un caso de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento. Suponiendo que todos los usuarios que quiera poner en retención dispongan de un sitio de OneDrive para la empresa, puede Agregar un máximo de 100 usuarios a una suspensión mediante el script de este artículo. 
     
 - Asegúrese de guardar la lista de usuarios que ha creado en el paso 2 y el script en el paso 3 en la misma carpeta. Esto hará que sea más fácil ejecutar el script.
     

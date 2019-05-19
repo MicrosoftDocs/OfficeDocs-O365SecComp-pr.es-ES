@@ -1,9 +1,9 @@
 ---
-title: Trabajar con el administrador de cumplimiento de Microsoft
+title: Trabajar con el administrador de cumplimiento de Microsoft (versión preliminar)
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,14 +12,14 @@ search.appverid:
 - MOE150
 - MET150
 description: El administrador de cumplimiento de Microsoft es una herramienta gratuita de evaluación de riesgos basada en flujos de trabajo en el portal de confianza de servicios de Microsoft. El administrador de cumplimiento le permite realizar un seguimiento, asignar y comprobar actividades de cumplimiento normativo relacionadas con los servicios en la nube de Microsoft.
-ms.openlocfilehash: ec01bc8cbf1a1b59353d2f0840baa539e1331ef4
-ms.sourcegitcommit: 696c1ed6b270be3f9da7395b49a7d8fec98e6db0
+ms.openlocfilehash: 6a6cc7cc51b911feddf21cfc107bc5c85bb959ba
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "33473244"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157872"
 ---
-# <a name="work-with-microsoft-compliance-manager"></a>Trabajar con el administrador de cumplimiento de Microsoft
+# <a name="work-with-microsoft-compliance-manager-preview"></a>Trabajar con el administrador de cumplimiento de Microsoft (versión preliminar)
 
 > [!IMPORTANT]
 > El administrador de cumplimiento de Microsoft es un panel y una herramienta de administración que proporciona un resumen de la protección de datos y las recomendaciones de Stature y recomendaciones para mejorar el cumplimiento y la protección de datos. Las acciones del cliente que se proporcionan en el administrador de cumplimiento son recomendaciones; para evaluar la efectividad de estas recomendaciones en su entorno de reglamentación respectivo antes de la implementación, depende de su organización. Las recomendaciones que se encuentran en el administrador de cumplimiento no deben interpretarse como una garantía de cumplimiento.
@@ -166,7 +166,7 @@ De un vistazo, puede ver el título, el propietario, la categoría, el cumplimie
 #### <a name="enable-or-disable-secure-score-integration"></a>Habilitar o deshabilitar la integración de la puntuación segura
 
 1. Seleccione los puntos suspensivos (...) de la acción que desea modificar y seleccione **Editar**.
-2. Alterne el conmutador de la actualización continua de puntuación segura en activado o desActivado para habilitar o deshabilitar la supervisión continua mediante la puntuación segura.
+2. Alterne el conmutador de la actualización continua de puntuación segura en activado o desactivado para habilitar o deshabilitar la supervisión continua mediante la puntuación segura.
 3. Haga clic en **Guardar**.
 
 #### <a name="add-a-customer-action"></a>Adición de una acción de cliente
@@ -224,7 +224,7 @@ Al crear una evaluación, tiene la opción de copiar la información de un grupo
 
 - Detalles de la implementación
 - Información adicional del plan de &
-- Documentos
+- Documents
 
 #### <a name="copy-information-from-an-existing-assessment-to-a-new-assessment"></a>Copiar información de una evaluación existente a una nueva evaluación
   
@@ -285,7 +285,7 @@ Para las evaluaciones, se muestra el panel de información de controles:
 
 - Una lista desplegable de **Grupo** para seleccionar el grupo que se va a ver (cuando se usan varios grupos).
 - Un cuadro desplegable de **evaluación** para seleccionar qué evaluación desea ver.
-- MetaDatos sobre la evaluación seleccionada, que incluye:
+- Metadatos sobre la evaluación seleccionada, que incluye:
     - Un indicador de progreso para **los controles evaluados** que muestra el número de controles calculados sobre el número total de controles.
     - La **puntuación de cumplimiento** actual para la evaluación, que se muestra como un porcentaje.
     - Detalles sobre la **certificación** y el **producto** usados en la evaluación.

@@ -4,7 +4,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 3/15/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 ms.assetid: dc4f704c-6fcc-4cab-9a02-95a824e4fb57
 description: Página de aterrizaje para planear la seguridad y el cumplimiento
 ms.collection: M365-security-compliance
-ms.openlocfilehash: b0c7af13a78499f3ee8af5b902bc4c8db85aca32
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: c125bd36494e26d9603b565dc5154b975604f2b3
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265872"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157512"
 ---
 # <a name="plan-for-security-amp-compliance-in-office-365"></a>Planeación del &amp; cumplimiento de la seguridad en Office 365
 
@@ -35,7 +35,7 @@ Oriente a sí mismo a las capacidades de protección de la información en el p�
 
 Una vez configurada la suscripción de Office 365, tome nota del resultado inicial. Puntuación segura proporciona sugerencias de configuración de Office 365 que puede llevar a cabo para aumentar su puntuación. El objetivo es conocer las oportunidades que puede tomar para proteger su entorno, lo que no afectará negativamente a la productividad de los usuarios.
   
-- [Introducción a la puntuación segura de Office 365](office-365-secure-score.md)
+- [Introducción a la puntuación segura de Office 365](microsoft-secure-score.md)
     
 ## <a name="step-3-plan-access-protection-for-identity-and-devices"></a>Paso 3: planear la protección de acceso para identidades y dispositivos
 
@@ -75,7 +75,7 @@ Use estas configuraciones recomendadas como punto de partida para escenarios de 
 
 Configurar las opciones de seguridad y cumplimiento en estos centros de administración y paneles para proteger el entorno de Office 365
   
-|**Suscripción**|**Dirección URL de administración**|**Paneles y centros de administración**|
+|**Scription**|**Dirección URL de administración**|**Paneles y centros de administración**|
 |:-----|:-----|:-----|
 |Office 365  <br/> |`https://admin.microsoft.com`  <br/> | Centro de administración de 365 de Microsoft  <br/>  Security &amp; Compliance Center  <br/>  Centro de administración de Exchange  <br/>  Centro de administración de SharePoint y centro de administración de OneDrive para la empresa  <br/> |
 |Enterprise Mobility + Security  <br/> |`https://portal.azure.com`  <br/> | Azure Active Directory  <br/>  Administración de aplicaciones móviles de Microsoft  <br/>  Microsoft Intune  <br/> |

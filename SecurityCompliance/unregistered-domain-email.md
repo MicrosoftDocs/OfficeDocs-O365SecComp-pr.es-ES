@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 10/17/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Si envía un gran volumen de correo electrónico de dominio no registrado, corre el riesgo de que se bloquee el correo electrónico. Lea este artículo para obtener más información.
-ms.openlocfilehash: 21c403c8072902565f63048782b06c531cdbceb0
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 207b71ab7e144af9709e7485d61c936e07271a11
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32263992"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156302"
 ---
 # <a name="unregistered-domain-email-what-you-need-to-know"></a>Correo electrónico de dominio no registrado: lo que debe saber
 

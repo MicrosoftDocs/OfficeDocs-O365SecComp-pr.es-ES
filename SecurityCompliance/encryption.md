@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 1/3/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Con Office 365, el contenido está cifrado en reposo y en tránsito, usando el cifrado, los protocolos y las tecnologías más seguros disponibles. Obtenga información general sobre el cifrado en Office 365.
-ms.openlocfilehash: 7a73d3d3b24e28f8795ec93ac05dbc383b525906
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 3cd72b3caf26c18ca6836490bc3cd48c2977863b
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256678"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154722"
 ---
 # <a name="encryption-in-office-365"></a>Cifrado en Office 365
 
@@ -80,5 +80,3 @@ Vea los siguientes recursos para obtener más información:
 [Planeación de las capacidades de protección de la información y la seguridad de Office 365](https://support.office.com/article/3d4ac4a1-3920-4ff9-918f-011f3ce60408)
   
 [Seguridad y cumplimiento en Office 365 para empresas: ayuda para administradores](https://support.office.com/article/7fe448f7-49bd-4d3e-919d-0a6d1cf675bb)
-  
-

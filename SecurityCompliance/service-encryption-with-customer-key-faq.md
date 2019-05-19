@@ -4,7 +4,7 @@ ms.author: krowley
 author: kccross
 manager: laurawi
 ms.date: 7/31/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 41ae293a-bd5c-4083-acd8-e1a2b4329da6
 description: Además de la línea base, el cifrado de nivel de volumen que se habilita a través de BitLocker y el administrador de claves distribuidas (DKM), Office 365 ofrece una capa agregada de cifrado a nivel de aplicación para el contenido del cliente en Office 365, incluidos los datos de Exchange En línea, Skype empresarial, SharePoint Online y OneDrive para la empresa. Esto se denomina cifrado de servicio.
-ms.openlocfilehash: 8515354d716df22fa124c03e18c36914d27102f4
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 8b15369571e3a6c021ae0c7337782a0d64436297
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32266952"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156652"
 ---
 # <a name="service-encryption-with-customer-key-for-office-365-faq"></a>Preguntas más frecuentes sobre el cifrado de servicio con la clave de cliente para Office 365
 
@@ -114,7 +114,7 @@ No. Los datos siempre se cifran en reposo en el servicio de Office 365 con BitLo
 ## <a name="if-i-no-longer-want-to-use-customer-managed-encryption-keys-can-i-switch-to-microsoft-managed-keys"></a>Si ya no deseo usar claves de cifrado administradas por el cliente, ¿puedo cambiar a claves administradas por Microsoft?
 <a name="DiffCustomerKeyandBYOKAzureIP"> </a>
 
- **Exchange Online y Skype empresarial:** Aún no. Esto será compatible una vez que el cifrado de servicios en Office 365 con claves administradas por Microsoft se implemente en general. Esperamos realizar esta implementación en el servicio después de liberar el cifrado del servicio con la clave de cliente. 
+ **Exchange Online y Skype empresarial:** Todavía no. Esto será compatible una vez que el cifrado de servicios en Office 365 con claves administradas por Microsoft se implemente en general. Esperamos realizar esta implementación en el servicio después de liberar el cifrado del servicio con la clave de cliente. 
   
  **SharePoint Online y OneDrive para la empresa:** Afirma. Puede optar por volver a usar claves administradas por Microsoft por separado para cada geográfico (si usa la característica multigeográfico) o para todos sus datos si se encuentra en una sola geo. 
   
@@ -179,7 +179,7 @@ Cuando un cliente se mueve a claves administradas por el cliente, Office 365 cre
   
 Office 365 sigue este proceso para acceder a un BLOB que tiene datos de archivos de clientes:
   
-1. DesCifre la TIK con la clave de cliente.
+1. Descifre la TIK con la clave de cliente.
     
 2. Use la TIK descifrada para descifrar una clave de sitio.
     

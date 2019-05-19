@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 6/26/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.ComplianceSearch
@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 61852fd9-fe8a-4880-a339-cb19ed3bff4a
 description: 'Use la búsqueda de contenido en el centro de seguridad & cumplimiento para buscar en buzones de correo, sitios de SharePoint Online y ubicaciones de OneDrive para la empresa. '
-ms.openlocfilehash: 4c3d9cc024a495ff8464e1117d5f46c13c1b9a08
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: cebdbf7808534b82085affa16c06ac1929b3fd8d
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261788"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157102"
 ---
 # <a name="run-a-content-search-in-the-security--compliance-center"></a>Ejecutar una búsqueda de contenido en el Centro de seguridad y cumplimiento
 
@@ -265,8 +265,7 @@ Aquí encontrará más información sobre las búsquedas de contenido.
  
 [Microsoft Teams y Office 365 grupos](#microsoft-teams-and-office-365-groups)
   
-
-  [OneDrive para la Empresa](#onedrive-for-business)
+[OneDrive para la Empresa](#onedrive-for-business)
   
 [Consultas de búsqueda](#search-queries)
   

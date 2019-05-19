@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,14 +14,15 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 0f5a98a7ba7a62e3b77794b38e444006a340cb49
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 5aa83f4f736c239b1cdfe940f27cfaa4b981ff64
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32243203"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155122"
 ---
 # <a name="configure-search-and-analytics-settings"></a>Establecer la configuración de búsqueda y análisis
+
 
 ## <a name="near-duplicates-and-email-threading"></a>Duplicación cercana y subprocesamiento de correo electrónico
 
@@ -31,7 +32,7 @@ En esta sección, puede establecer parámetros para la detección de duplicados,
 
 - Umbral: Si el nivel de similitud de dos documentos está por encima del umbral, se colocarán en el mismo conjunto Near duplicado.
 
-- Ocultar duplicados de manera predeterminada: Si esta configuración está activada, se aplicará un filtro para ocultar los documentos duplicados en el conjunto de trabajo de forma predeterminada. Si es necesario, el filtro se puede quitar manualmente en el conjunto de trabajo.
+- Ocultar duplicados de manera predeterminada: Si esta configuración está activada, se aplicará un filtro para ocultar los documentos duplicados en el conjunto de revisiones de forma predeterminada. Si es necesario, el filtro se puede quitar manualmente en la revisión establecida.
 
 - Número mínimo o máximo de palabras: las próximas duplicaciones y el procesamiento de correo electrónico se ejecutarán solo en los documentos que tengan al menos el número mínimo de palabras y el número máximo de palabras como máximo.
 Para obtener más información, vea cerca de la [detección](near-duplicates.md) de duplicados y el [procesamiento de correo electrónico](email-threading.md).
@@ -47,7 +48,7 @@ En esta sección, puede establecer parámetros para los temas.
 
 ## <a name="optical-character-recognition-ocr"></a>Reconocimiento óptico de caracteres (OCR)
 
-Cuando esta opción está activada, OCR se ejecutará en las imágenes que se insertan en los conjuntos de trabajo para que se puedan buscar.
+Cuando esta opción está activada, OCR se ejecutará en las imágenes que se insertan en los conjuntos de revisiones para que puedan buscarse.
 
 ## <a name="ignore-text"></a>Omitir texto
 

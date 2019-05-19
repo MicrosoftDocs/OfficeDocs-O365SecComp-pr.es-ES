@@ -3,21 +3,24 @@ title: Cifrado de mensajes de Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 6/6/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
+ms.date: 4/30/2019
 search.appverid:
 - MET150
+ms.collection:
+- Strat_O365_IP
+- M365-security-compliance
 ms.assetid: f87cb016-7876-4317-ae3c-9169b311ff8a
 description: Con el cifrado de mensajes de Office 365, su organización puede enviar y recibir mensajes de correo electrónico cifrados entre usuarios de dentro y fuera de la organización. El cifrado de mensajes de correo electrónico ayuda a garantizar que solo los destinatarios deseados puedan ver el contenido de los mensajes.
-ms.openlocfilehash: 04a7cc23b7a9c4218a719c172544147b3daedd7a
-ms.sourcegitcommit: 696c1ed6b270be3f9da7395b49a7d8fec98e6db0
+ms.openlocfilehash: d9716d3021f4190f1679a5d387e9378b60586154
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/29/2019
-ms.locfileid: "33470410"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157592"
 ---
 # <a name="office-365-message-encryption"></a>Cifrado de mensajes de Office 365
 
@@ -25,29 +28,6 @@ Las personas suelen usar el correo para intercambiar información confidencial, 
 
 Con el cifrado de mensajes de Office 365, su organización puede enviar y recibir mensajes de correo electrónico cifrados entre usuarios de dentro y fuera de la organización. El cifrado de mensajes de Office 365 funciona con Outlook.com, Yahoo!, gmail y otros servicios de correo electrónico. El cifrado de mensajes de correo electrónico ayuda a garantizar que solo los destinatarios deseados puedan ver el contenido de los mensajes.
   
-Este artículo forma parte de una amplia serie de artículos sobre el cifrado de mensajes de Office 365. Use la tabla siguiente para encontrar rápidamente la información que necesita.
-  
-|||
-|:-----|:-----|
-|Lea este artículo...  <br/> |Si es...  <br/> |
-|[Obtenga información sobre los mensajes protegidos en Office 365](https://support.office.com/article/2baf3ac7-12db-40a4-8af7-1852204b4b67.aspx) <br/> |Un usuario final que desea obtener más información sobre cómo funcionan los mensajes cifrados y qué opciones están disponibles para usted.  <br/> |
-|[¿Cómo se abre un mensaje protegido?](https://support.office.com/article/1157a286-8ecc-4b1e-ac43-2a608fbf3098.aspx) <br/> |Un usuario final que desea leer un mensaje protegido que se le ha enviado. Este artículo incluye información sobre cómo leer mensajes en varias versiones de Outlook y desde distintas cuentas de correo electrónico, incluidas las de fuera de Office 365 como gmail y Yahoo! cuenta.  <br/> |
-|[Enviar, ver y responder mensajes cifrados en Outlook](https://support.office.com/article/eaa43495-9bbb-4fca-922a-df90dee51980.aspx) <br/> |Un usuario final que desea enviar, ver o responder a un mensaje cifrado desde Outlook. Incluso si no es miembro de una organización de Office 365, seguirá recibiendo la notificación de los mensajes cifrados que se le envíen en Outlook. Use este artículo para obtener instrucciones sobre cómo ver y responder a los mensajes cifrados enviados desde Office 365.  <br/> |
-|[Enviar un mensaje cifrado o firmado digitalmente](https://support.office.com/article/a18ecf7f-a7ac-4edd-b02e-687b05eff547) <br/> |Un usuario final que desea enviar, ver o responder a mensajes cifrados con Outlook para Mac. En este artículo también se trata el uso de métodos de cifrado distintos de OME, como S/MIME.  <br/> |
-|[Ver mensajes cifrados en su dispositivo Android](https://support.office.com/article/83d60f17-2305-407a-a762-7d518401fdeb) <br/> |Un usuario final que ha recibido un mensaje cifrado con el cifrado de mensajes de Office 365 en su dispositivo Android, puede usar la aplicación de visor gratuita OME para ver el mensaje y enviar una respuesta cifrada. En este artículo se explica cómo hacerlo.  <br/> |
-|[Ver mensajes cifrados en su iPhone o iPad](https://support.office.com/article/4d631321-0d26-4bcc-a483-d294dd0b1caf) <br/> |Un usuario final que ha recibido un mensaje cifrado con el cifrado de mensajes de Office 365 en su iPhone o iPad, puede usar la aplicación gratuita visor de OME para ver el mensaje y enviar una respuesta cifrada. En este artículo se explica cómo hacerlo.  <br/> |
-|Office 365 cifrado de mensajes (OME) (este artículo)  <br/> |Un administrador de Office 365 o Exchange Online Protection que quiera saber dónde puede encontrar recursos adicionales.  <br/> |
-|[Comparar versiones de OME](ome-version-comparison.md)  <br/> |Un administrador de Office 365 o Exchange Online Protection que desee conocer las diferencias entre el cifrado de mensajes de Office 365 heredado y las nuevas funciones de OME, así como la forma en que pueden trabajar juntos.  <br/> |
-|[Preguntas más frecuentes sobre el cifrado de mensajes de Office 365](ome-faq.md) <br/> |Un administrador de Office 365 o Exchange Online Protection que desea obtener respuestas a las preguntas más frecuentes, incluidas las licencias y una comparación entre las nuevas capacidades y los OME heredados.  <br/> |
-|[Configurar las nuevas capacidades de cifrado de mensajes de Office 365](set-up-new-message-encryption-capabilities.md) <br/> |Un administrador de Office 365 o Exchange Online Protection que quiera aprender a configurar las nuevas capacidades de cifrado de mensajes de Office 365 para su organización de Office 365.  <br/> |
-|[Definir reglas de flujo de correo para cifrar mensajes de correo electrónico en Office 365](define-mail-flow-rules-to-encrypt-email.md) <br/> |Un administrador de Office 365 o Exchange Online Protection que ya haya configurado el cifrado de mensajes de Office 365 y que esté listo para definir reglas de flujo de correo para cifrar automáticamente los mensajes de correo electrónico enviados desde su organización.  <br/> |
-|[Administrar el cifrado de mensajes de Office 365](manage-office-365-message-encryption.md) <br/> |Un administrador de Office 365 o Exchange Online Protection que ya haya configurado el cifrado de mensajes de Office 365 y quiera configurar opciones opcionales para OME.  <br/> |
-|[Agregar la marca de su organización a los mensajes cifrados](add-your-organization-brand-to-encrypted-messages.md) <br/> |Un administrador de Office 365 o Exchange Online Protection que quiera aplicar la personalización de marca de la empresa para personalizar la apariencia de los mensajes de correo electrónico de cifrado de mensajes de Office 365 de la organización y el contenido del portal OME.  <br/> |
-|[Revocación del correo electrónico de cifrado de mensajes de Office 365](revoke-ome-encrypted-mail.md) <br/> |Un administrador de Office 365 o Exchange Online Protection que quiera revocar un correo electrónico cifrado mediante el cifrado de mensajes de Office 365.  <br/> |
-|Office 365 cifrado de mensajes en la [Descripción del servicio de cumplimiento y Directiva de mensajes](https://technet.microsoft.com/en-us/library/5c43c8eb-f8f7-4b5a-a743-b1dab7dc2fc8#bkmk_O365_MessageEncryption) <br/> |Buscar una descripción detallada de la característica de cifrado de mensajes de Office 365, incluidas las SKU admitidas, disponibles en Office 365.  <br/> |
-|[Información heredada para el cifrado de mensajes de Office 365](legacy-information-for-message-encryption.md) <br/> |Un administrador de Office 365 o Exchange Online Protection que ya haya configurado el cifrado de mensajes de Office 365 y desee información sobre cómo OME trabajó antes de la publicación de las nuevas funciones. Aunque no se puede configurar una nueva implementación mediante OME sin las nuevas capacidades, Microsoft sigue admitiendo las implementaciones existentes. <br/> |
-||
-
 El resto de este artículo se aplica a las nuevas capacidades de OME.
   
 ## <a name="how-office-365-message-encryption-works"></a>Cómo funciona el cifrado de mensajes de Office 365
@@ -68,10 +48,18 @@ Los destinatarios de los mensajes cifrados que reciben mensajes cifrados o prote
   
 Los usuarios finales que lean el correo cifrado o protegido por derechos en clientes que no sean Outlook también usan el portal OME para ver los mensajes cifrados y protegidos por derechos que reciben.
 
-Además, si el remitente del correo protegido está en GCC High y el destinatario está fuera de GCC High, incluidos los usuarios comerciales de Office 365, los usuarios de Outlook.com y los usuarios de otros proveedores de correo electrónico, como gmail, el destinatario recibe un correo de contenedor que redirige a el portal de OME donde el destinatario puede leer y responder al mensaje. De lo contrario, si el remitente y el destinatario están ambos en el entorno de GCC High, los destinatarios que usan clientes de Outlook para leer el correo reciben experiencias de lectura nativas de primera clase para el correo cifrado y protegido por derechos incluso si no están en la misma organización. como remitente.
+Además, si el remitente del correo protegido está en GCC High y el destinatario está fuera de GCC High, incluidos los usuarios comerciales de Office 365, los usuarios de Outlook.com y los usuarios de otros proveedores de correo electrónico, como gmail, el destinatario recibe un correo de contenedor que redirige a el portal de OME donde el destinatario puede leer y responder al mensaje. De lo contrario, si el remitente y el destinatario están ambos en el entorno de GCC High, los destinatarios que usan clientes de Outlook para leer el correo reciben experiencias de lectura nativas de primera clase para el correo cifrado y protegido por derechos incluso si no están en la misma organización. como remitente. Para obtener más información acerca de la experiencia diferente en GCC High, vea [Compare Versions of OME](ome-version-comparison.md).
   
 Hemos aumentado los límites de tamaño de los mensajes y datos adjuntos que puede cifrar mediante OME. Para obtener más información acerca de los límites, consulte [límites de Exchange Online](https://technet.microsoft.com/en-us/library/exchange-online-limits.aspx).
-  
+
+## <a name="how-office-365-advanced-message-encryption-works-on-top-of-ome"></a>Cómo funciona el cifrado avanzado de mensajes de Office 365 en OME
+
+El cifrado de mensajes avanzado de Office 365 le permite crear varias plantillas de personalización de marca para ajustar el control sobre el correo del destinatario y crear experiencias de personalización de marca personalizadas para admitir una estructura organizativa diversa.
+
+El cifrado de mensajes avanzado en Office 365 ayuda a cumplir las obligaciones de cumplimiento que requieren un control más flexible del acceso del destinatario externo a los correos electrónicos cifrados. Con el cifrado avanzado de mensajes en Office 365, como administrador, puede controlar los mensajes de correo electrónico confidenciales que se comparten fuera de la organización con directivas automáticas que detectan los tipos de información confidencial (por ejemplo, PII, identificadores financieros o de salud) o palabras clave para mejorar protección al expirar el acceso a través de un portal web seguro a los correos electrónicos cifrados. Además, como administrador, puede controlar más los correos electrónicos cifrados a los que se accede externamente a través de un portal web de Office 365, revocando el acceso a un correo electrónico en cualquier momento.
+
+La revocación de mensajes y la expiración solo funcionan para los correos electrónicos que los usuarios envían a los destinatarios fuera de la organización de Office 365. Además, los destinatarios deben acceder al correo electrónico a través del portal web. Para asegurarse de que el destinatario use el portal para recibir correo electrónico, configure una plantilla de personalización de marca personalizada que aplique el contenedor. A continuación, se aplica la plantilla de personalización de marca en una regla de flujo de correo. Para obtener más información acerca del cifrado de mensajes avanzado, consulte [Office 365 Advanced Message Encryption](https://ome-advanced-message-encryption.md).
+
 ## <a name="defining-rules-for-office-365-message-encryption"></a>Definición de reglas para el cifrado de mensajes de Office 365
 
 Una forma de habilitar las nuevas funciones de Office 365 Message Encryption es para los administradores de Exchange Online y Exchange Online Protection para que puedan definir reglas de flujo de correo. Estas reglas determinan en qué condiciones se deben cifrar los mensajes de correo electrónico. Cuando se establece una acción de cifrado para una regla, los mensajes que coinciden con las condiciones de la regla se cifran antes de enviarse.
@@ -80,6 +68,10 @@ Las reglas de flujo de correo son flexibles, lo que permite combinar condiciones
   
 Para obtener más información acerca de cómo crear reglas de flujo de correo para aprovechar las nuevas capacidades de OME, consulte [definir reglas para el cifrado de mensajes de Office 365](define-mail-flow-rules-to-encrypt-email.md).
   
+## <a name="get-started-with-the-new-ome-capabilities"></a>Introducción a las nuevas funciones de OME
+
+Si está listo para empezar a usar las nuevas funciones de OME dentro de su organización, vea [set up New Office 365 Message Encryption Capabilities](set-up-new-message-encryption-capabilities.md).
+
 ## <a name="sending-viewing-and-replying-to-encrypted-email-messages"></a>Enviar, ver y responder mensajes de correo electrónico cifrado
 
 Con el cifrado de mensajes de Office 365, los usuarios pueden enviar correo electrónico cifrado desde Outlook y Outlook en la Web. Además, los administradores pueden configurar reglas de flujo de correo en Office 365 para cifrar automáticamente los correos electrónicos en función de la coincidencia de palabras clave u otras condiciones.
@@ -88,10 +80,13 @@ Los destinatarios de los mensajes cifrados que están en Office 365 organizacion
   
 Para obtener instrucciones detalladas sobre cómo enviar y ver mensajes cifrados, eche un vistazo a estos artículos:
   
-- [¿Cómo se abre un mensaje protegido?](https://support.office.com/article/1157a286-8ecc-4b1e-ac43-2a608fbf3098.aspx)
-
-- [Enviar, ver y responder mensajes cifrados en Outlook](https://support.office.com/article/eaa43495-9bbb-4fca-922a-df90dee51980.aspx)
-
-## <a name="get-started-with-the-new-ome-capabilities"></a>Introducción a las nuevas funciones de OME
-
-Si está listo para empezar a usar las nuevas funciones de OME dentro de su organización, vea [set up New Office 365 Message Encryption Capabilities](set-up-new-message-encryption-capabilities.md).
+|||
+|:-----|:-----|
+|Lea este artículo...  <br/> |Si es...  <br/> |
+|[Obtenga información sobre los mensajes protegidos en Office 365](https://support.office.com/article/2baf3ac7-12db-40a4-8af7-1852204b4b67.aspx) <br/> |Un usuario final que desea obtener más información sobre cómo funcionan los mensajes cifrados y qué opciones están disponibles para usted.  <br/> |
+|[¿Cómo se abre un mensaje protegido?](https://support.office.com/article/1157a286-8ecc-4b1e-ac43-2a608fbf3098.aspx) <br/> |Un usuario final que desea leer un mensaje protegido que se le ha enviado. Este artículo incluye información sobre cómo leer mensajes en varias versiones de Outlook y desde distintas cuentas de correo electrónico, incluidas las de fuera de Office 365 como gmail y Yahoo! cuenta.  <br/> |
+|[Enviar, ver y responder mensajes cifrados en Outlook](https://support.office.com/article/eaa43495-9bbb-4fca-922a-df90dee51980.aspx) <br/> |Un usuario final que desea enviar, ver o responder a un mensaje cifrado desde Outlook. Incluso si no es miembro de una organización de Office 365, seguirá recibiendo la notificación de los mensajes cifrados que se le envíen en Outlook. Use este artículo para obtener instrucciones sobre cómo ver y responder a los mensajes cifrados enviados desde Office 365.  <br/> |
+|[Enviar un mensaje cifrado o firmado digitalmente](https://support.office.com/article/a18ecf7f-a7ac-4edd-b02e-687b05eff547) <br/> |Un usuario final que desea enviar, ver o responder a mensajes cifrados con Outlook para Mac. En este artículo también se trata el uso de métodos de cifrado distintos de OME, como S/MIME.  <br/> |
+|[Ver mensajes cifrados en su dispositivo Android](https://support.office.com/article/83d60f17-2305-407a-a762-7d518401fdeb) <br/> |Un usuario final que ha recibido un mensaje cifrado con el cifrado de mensajes de Office 365 en su dispositivo Android, puede usar la aplicación de visor gratuita OME para ver el mensaje y enviar una respuesta cifrada. En este artículo se explica cómo hacerlo.  <br/> |
+|[Ver mensajes cifrados en su iPhone o iPad](https://support.office.com/article/4d631321-0d26-4bcc-a483-d294dd0b1caf) <br/> |Un usuario final que ha recibido un mensaje cifrado con el cifrado de mensajes de Office 365 en su iPhone o iPad, puede usar la aplicación gratuita visor de OME para ver el mensaje y enviar una respuesta cifrada. En este artículo se explica cómo hacerlo.  <br/> |
+||

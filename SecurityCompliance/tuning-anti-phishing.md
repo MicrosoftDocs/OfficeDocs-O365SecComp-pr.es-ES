@@ -4,19 +4,19 @@ ms.author: chrisda
 author: chrisda
 manager: serdars
 ms.date: ''
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 description: Los administradores pueden aprender a identificar los motivos por los que se obtienen los mensajes de suplantación de identidad (phishing) y cómo hacerlo para evitar más mensajes de suplantación de identidad en el futuro.
-ms.openlocfilehash: c3025267ad8e01c18de618c85127dfe1077a16aa
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: b17cdc6ec6cfc07642a6a40657009b46b83f1559
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32264322"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156352"
 ---
 # <a name="tune-anti-phishing-protection-in-office-365"></a>Ajuste de la protección contra la suplantación de identidad en Office 365
 
@@ -52,7 +52,7 @@ En concreto, debe comprobar el campo de encabezado **X-Forefront-antispam-Report
 
 ## <a name="best-practices-to-stay-protected"></a>Procedimientos recomendados para mantener la protección
 
-- De manera mensual, ejecute la [puntuación segura de office 365](office-365-secure-score.md) para evaluar la configuración de seguridad de la organización de Office 365.
+- En una base mensual, ejecute [calificación segura](microsoft-secure-score.md) para evaluar la configuración de seguridad de la organización de Office 365.
 
 - Revise periódicamente el [Informe de inteligencia simulada](learn-about-spoof-intelligence.md) y [habilite la protección contra la suplantación de identidad en la Directiva contra la suplantación de identidad (phishing)](learn-about-spoof-intelligence.md#configuring-the-anti-spoofing-policy) para **poner en cuarentena** los mensajes sospechosos en lugar de entregarlos en la carpeta de correo no deseado del usuario.
 
@@ -78,4 +78,4 @@ En concreto, debe comprobar el campo de encabezado **X-Forefront-antispam-Report
 
 - La autenticación multifactor (MFA) es una forma realmente eficaz de evitar cuentas comprometidas. Debe considerar seriamente habilitar MFA para todos los usuarios. Para un enfoque por fases, empiece por habilitar la MFA para los usuarios más confidenciales (administradores, ejecutivos, etc.) antes de habilitar MFA para todos los usuarios. Para obtener instrucciones, vea [set up multi-factor Authentication](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication).
 
-- Los intrusos suelen usar las reglas de reEnvío a los destinatarios externos para extraer datos. Use la información sobre la **revisión de reglas** de reenvío de buzones en la [calificación segura de Office 365](office-365-secure-score.md) para buscar e incluso impedir el reenvío de reglas a destinatarios externos. Para obtener más información, consulte [mitigaTing Client external forwardIng rules with Secure score](https://blogs.technet.microsoft.com/office365security/mitigating-client-external-forwarding-rules-with-secure-score/).
+- Los intrusos suelen usar las reglas de reenvío a los destinatarios externos para extraer datos. Use la información de reglas de reenvío de **buzón de correo de revisión** de la [puntuación segura de Microsoft](microsoft-secure-score.md) para buscar e incluso impedir el reenvío de reglas a destinatarios externos. Para obtener más información, consulte [Mitigating Client external Forwarding Rules with Secure score](https://blogs.technet.microsoft.com/office365security/mitigating-client-external-forwarding-rules-with-secure-score/).

@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: scotv
 ms.date: 10/6/2016
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.assetid: fb4f8e49-0468-4be2-8fa6-99501f1ad9d5
 ms.collection:
 - M365-security-compliance
 description: Presenta sugerencias de seguridad para los mensajes de correo filtrados por el filtro de correo no deseado de EOP y Office 365.
-ms.openlocfilehash: d85eb0bde24220fbbfc12e7b5f01acec69571dee
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: b5501459a56dcff322dfdfa05d019d7fb626f369
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261468"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156992"
 ---
 # <a name="safety-tips-in-email-messages-in-office-365"></a>Sugerencias de seguridad en los mensajes de correo electrónico en Office 365
 

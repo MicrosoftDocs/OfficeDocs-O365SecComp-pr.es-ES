@@ -4,7 +4,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 35d52b41-75ab-4144-9edf-31e11453bd5d
 description: 'Aprenda a ver información detallada sobre las sesiones de lote de exportación seleccionadas y cómo deshacer la última sesión de exportación en Office 365 Advanced eDiscovery.  '
-ms.openlocfilehash: a55f299669c2a404ee176153aa766210a3141199
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: e4e84dc4115c7ec718112c8c38e20b306427c5c0
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32243528"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157892"
 ---
 # <a name="view-batch-history-and-export-past-results-in-office-365-advanced-ediscovery"></a>Ver el historial del lote y exportar los resultados anteriores en eDiscovery avanzado de Office 365
 
@@ -41,11 +41,11 @@ El cuadro de diálogo historial de exportación proporciona información detalla
     
     ![Exportar historial por lotes](media/04c5b75c-348c-491d-b4fe-716659333890.png)
   
-3. Si es necesario revertir una sesión anterior, haga clic en **deshacer la última sesión**. La reVersión se puede realizar varias veces, lo que cancela la última sesión.
+3. Si es necesario revertir una sesión anterior, haga clic en **deshacer la última sesión**. La reversión se puede realizar varias veces, lo que cancela la última sesión.
     
 4. Si desea descargar datos en cualquier momento desde una sesión de lote de exportación ejecutada anteriormente, haga **** clic en ![el icono de descarga icono](media/de69b920-a6ac-4ddb-b93e-e1cc5888e6c4.gif) de descarga de historial por lotes junto al lote de exportación deseado que se va a exportar. 
     
-5. Cuando aparezca el cuadro de diálogo **firma de acceso compartido** , haga clic en **copiar al** portapapeles para copiar los datos de la sesión de exportación en el equipo local y, a continuación, haga clic en **cerrar**. Se muestra el cuadro &amp; de diálogo de la **herramienta de exportación EDiscovery** del centro de seguridad y cumplimiento de Office 365. 
+5. Cuando aparezca el cuadro de diálogo **firma de acceso compartido** , haga clic en **copiar al** portapapeles para copiar los datos de la sesión de exportación en el equipo local y, a continuación, haga clic en **cerrar**. Se muestra el cuadro &amp; de diálogo de la **herramienta de exportación eDiscovery** del centro de seguridad y cumplimiento de Office 365. 
     
     ![Cuadro de diálogo Exportar exhibición de documentos electrónicos](media/01f79d2d-6da0-45e6-9c6f-ab12347572cb.gif)
   

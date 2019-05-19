@@ -3,7 +3,7 @@ title: Controlar el correo no deseado saliente en Office 365
 ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: 6a601501-a6a8-4559-b2e7-56b59c96a586
 ms.collection:
 - M365-security-compliance
 description: Si su organización envía una gran cantidad de correo masivo marcado como correo no deseado, puede bloquear el envío de correo electrónico con Office 365. Lea este artículo para obtener más información sobre por qué ocurre esto y lo que puede hacer al respecto.
-ms.openlocfilehash: 0fcbe0c7b9d1bd340e2ab2feb5edec8283ecaf9a
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 742006374b76156ffc2ffe6b158ef5e0ac890ebe
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32262312"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157602"
 ---
 # <a name="controlling-outbound-spam-in-office-365"></a>Controlar el correo no deseado saliente en Office 365
 
@@ -42,7 +42,7 @@ Al dividir el tráfico de este modo, se garantiza que el correo electrónico de 
 
 2. **Supervisión de la reputación de IP**. Office 365 consulta varios blocklists IP de terceros y genera alertas si alguna de nuestras IP de salida se enumeran en ellas. Esto nos permite reaccionar rápidamente cuando el correo no deseado ha provocado una degradación de nuestra reputación. Cuando se genera una alerta, tenemos documentación interna que no depende de los pasos que se deben tomar para devolverse a la lista. 
 
-3. La desHabilitación **de cuentas infractoras cuando envían demasiado correo electrónico marcado como correo no deseado**. Aunque segregan el correo no deseado y el no spam en dos grupos de direcciones IP salientes independientes, las cuentas de correo electrónico no pueden enviar indefinidamente el correo no deseado. Supervisamos qué cuentas envían correo no deseado y, si supera un límite no divulgado, se bloquea la cuenta para enviar correo no deseado.
+3. La deshabilitación **de cuentas infractoras cuando envían demasiado correo electrónico marcado como correo no deseado**. Aunque segregan el correo no deseado y el no spam en dos grupos de direcciones IP salientes independientes, las cuentas de correo electrónico no pueden enviar indefinidamente el correo no deseado. Supervisamos qué cuentas envían correo no deseado y, si supera un límite no divulgado, se bloquea la cuenta para enviar correo no deseado.
 
 Un solo mensaje marcado como correo no deseado puede ser un error de clasificación por el motor de correo no deseado y también conocido como falso positivo. Lo enviamos a través del grupo de alto riesgo para darle la oportunidad de salir; sin embargo, un gran número de mensajes en un breve período de tiempo es indicativo de un problema y, cuando esto ocurre, se impide que la cuenta envíe más correo electrónico. Existen distintos umbrales para las cuentas de correo electrónico individuales y para todo el espacio empresarial.
 

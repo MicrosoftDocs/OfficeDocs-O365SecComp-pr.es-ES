@@ -4,7 +4,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: laurawi
 ms.date: 6/7/2018
-ms.audience: Admin
+audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
 localization_priority: Priority
@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Obtenga información sobre las formas más comunes de reducir el correo masivo y el correo no deseado en Office 365.
-ms.openlocfilehash: d32cad18cf3972a667f2eb9a11b50d1b12e809a7
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 7c2ea48c4244d2b86f01c89decd4add006f21a5c
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261528"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157352"
 ---
 # <a name="how-to-reduce-spam-email-in-office-365"></a>Reducir el correo no deseado en Office 365
 
@@ -45,13 +45,15 @@ Para impedir que se reciba demasiado correo no deseado, Exchange Online Protecti
 
 - **Apuntar los registros DNS a Office 365** Para que EOP proporcione protección, los registros DNS del agente de intercambio de correo (MX) de todos los dominios tienen que apuntar a Office 365 (y únicamente a Office 365). Vea [Crear registros DNS para Office 365 al administrar los registros DNS](https://support.office.com/article/b0f3fdca-8a80-4e8e-9ef3-61e8a2a9ab23).
     
-- **Habilitar la regla de correo no deseado en todos los buzones** De forma predeterminada, la acción de filtrado de correo no deseado se establece en **Mover el mensaje a la carpeta de correo no deseado**. Si esta es la acción de directiva contra correo no deseado preferida y actual, cada buzón también [necesita tener habilitada la regla de correo masivo](https://support.office.com/es-ES/article/overview-of-the-junk-email-filter-5ae3ea8e-cf41-4fa0-b02a-3b96e21de089). Para comprobarlo, ejecute el cmdlet Get-MailboxJunkEmailConfiguration en uno o más buzones. Por ejemplo, para comprobar esto en todos los buzones, ejecute lo siguiente: Get-MailboxJunkEmailConfiguration -Identity \* | Where {$_.Enabled -eq $false}
+- 
+  **Habilitar la regla de correo no deseado en todos los buzones** De forma predeterminada, la acción de filtrado de correo no deseado se establece en **Mover el mensaje a la carpeta de correo no deseado**. Si esta es la acción de directiva contra correo no deseado preferida y actual, cada buzón también [necesita tener habilitada la regla de correo masivo](https://support.office.com/es-ES/article/overview-of-the-junk-email-filter-5ae3ea8e-cf41-4fa0-b02a-3b96e21de089). Para comprobarlo, ejecute el cmdlet Get-MailboxJunkEmailConfiguration en uno o más buzones. Por ejemplo, para comprobar esto en todos los buzones, ejecute lo siguiente: Get-MailboxJunkEmailConfiguration -Identity \* | Where {$_.Enabled -eq $false}
     
     Al ver el resultado, el valor de la propiedad Enable tiene que ser True. Si está establecida en False, ejecute Set-MailboxJunkEmailConfiguration para cambiarla a True.
     
 - **Crear reglas de flujo del correo en un servidor Exchange local** Si usa Exchange Online Protection, pero los buzones se encuentran en un servidor Exchange local, tendrá que crear un par de reglas de flujo del correo en el servidor Exchange local. Vea las [instrucciones para EOP solo](https://docs.microsoft.com/previous-versions/exchange-server/exchange-150/jj900470(v=exchg.150)).
     
-- **Marcar correo masivo como correo no deseado** El correo masivo es el correo electrónico al que puede que los usuarios se suscribieran, pero se sigue considerando correo no deseado. En el encabezado de mensaje, busque la propiedad BCL (nivel de confianza en masa) en el encabezado X-Microsoft-Antispam. Si el valor de BCL es inferior al umbral establecido en el filtro de correo no deseado, puede ajustar el umbral para que, en su lugar, marque estos tipos de mensajes masivos como correo no deseado. Diferentes usuarios tienen distintas tolerancias y preferencias para la [administración del correo masivo](https://docs.microsoft.com/es-ES/office365/SecurityCompliance/bulk-complaint-level-values). Puede crear distintas directivas o reglas para diferentes preferencias de usuario. 
+- 
+  **Marcar correo masivo como correo no deseado** El correo masivo es el correo electrónico al que puede que los usuarios se suscribieran, pero se sigue considerando correo no deseado. En el encabezado de mensaje, busque la propiedad BCL (nivel de confianza en masa) en el encabezado X-Microsoft-Antispam. Si el valor de BCL es inferior al umbral establecido en el filtro de correo no deseado, puede ajustar el umbral para que, en su lugar, marque estos tipos de mensajes masivos como correo no deseado. Diferentes usuarios tienen distintas tolerancias y preferencias para la [administración del correo masivo](https://docs.microsoft.com/es-ES/office365/SecurityCompliance/bulk-complaint-level-values). Puede crear distintas directivas o reglas para diferentes preferencias de usuario. 
     
 - **Bloquear inmediatamente un remitente** Si necesita bloquear de forma inmediata un remitente, puede hacerlo por dirección de correo electrónico, dominio o dirección IP. Vea [Usar el CAE (Centro de Administración de Exchange) para crear una regla de flujo de correo que bloquee los mensajes enviados desde un dominio o usuario](create-organization-wide-safe-sender-or-blocked-sender-lists-in-office-365.md#use-the-eac-to-create-a-mail-flow-rule-that-blocks-messages-sent-from-a-domain-or-user). Una entrada en una lista de permitidos del usuario final puede invalidar un bloque establecido por el administrador.
     

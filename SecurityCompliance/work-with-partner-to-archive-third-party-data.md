@@ -4,18 +4,18 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Su organización puede trabajar con un socio de Microsoft para configurar un conector personalizado para importar datos de terceros desde orígenes de datos como Salesforce chatter, Yahoo Messenger o Yammer. Esto le permite archivar datos de orígenes de datos de terceros en Office 365 para poder usar las características de cumplimiento de Office 365, como directivas de retención, búsqueda de contenido y retención legal para administrar el gobierno de los datos de terceros de la organización.
-ms.openlocfilehash: dce015438c9764f66e98936df9454cba73fd8472
-ms.sourcegitcommit: 63a10dc5ffa9d709fac437d3fc9e554b1bcd826f
+ms.openlocfilehash: 9bc8dddfed4b9721237f06ecf03c1ca41df091d6
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/25/2019
-ms.locfileid: "33308268"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34156002"
 ---
 # <a name="work-with-a-partner-to-archive-third-party-data-in-office-365"></a>Trabajar con un partner para archivar datos de terceros en Office 365
 
@@ -47,7 +47,7 @@ En la siguiente ilustración y descripción se explica cómo funciona el proceso
     
 4. Los elementos se importan al buzón de un usuario específico o a un buzón global de datos de terceros. Que un elemento se importe al buzón de un usuario específico o al buzón de datos de terceros depende de los criterios siguientes:
     
-    a. **Elementos que tienen un identificador de usuario que se corresponde con una cuenta de usuario de Office 365** : Si el conector del asociado puede asignar el identificador de usuario del elemento del origen de datos de terceros a un identificador de usuario específico en Office 365, el **** elemento se copia en la carpeta purgas del REC del usuario. carpeta de elementos que se van a retener. Los usuarios no pueden acceder a los elementos de esta carpeta. Sin embargo, puede usar las herramientas de Office 365 eDiscovery para buscar elementos en la carpeta dePuraciones.
+    a. **Elementos que tienen un identificador de usuario que se corresponde con una cuenta de usuario de Office 365** : Si el conector del asociado puede asignar el identificador de usuario del elemento del origen de datos de terceros a un identificador de usuario específico en Office 365, el **** elemento se copia en la carpeta purgas del REC del usuario. carpeta de elementos que se van a retener. Los usuarios no pueden acceder a los elementos de esta carpeta. Sin embargo, puede usar las herramientas de Office 365 eDiscovery para buscar elementos en la carpeta depuraciones.
     
     b. **Elementos que no tienen un identificador de usuario correspondiente a una cuenta de usuario de office 365** : Si el conector del asociado no puede asignar el identificador de usuario de un elemento a un identificador de usuario específico en Office 365, el elemento se copia en la carpeta **bandeja de entrada** del buzón de datos de terceros. La importación de elementos a la Bandeja de entrada permite que usted u otra persona de la organización inicie sesión en el buzón de correo de terceros para ver y administrar estos elementos, y ver si es necesario realizar ajustes en la configuración del conector asociado.
  
@@ -330,7 +330,7 @@ La [acti](https://www.actiance.com) ? a admite los siguientes orígenes de datos
     
 - Facebook (páginas)
     
-- FactSet
+- Factset
     
 - FXConnect
     
@@ -553,7 +553,7 @@ Para revocar el consentimiento de un conector de datos de terceros, puede elimin
     |:-----|:-----|:-----|:-----|
     |**FROM** <br/> |Sí  <br/> |El usuario que originalmente ha creado o enviado el elemento en el origen de datos de terceros. El conector del asociado intentará asignar el identificador de usuario del elemento de origen (por ejemplo, un controlador de Twitter) a una cuenta de usuario de Office 365 para todos los participantes (usuarios de los campos de y a). Una copia del mensaje se importará al buzón de cada participante. Si ninguno de los participantes del elemento se puede asignar a una cuenta de usuario de Office 365, el elemento se importará al buzón de archivado de otro fabricante en Office 365.  <br/> <br/> El participante que se identifica como remitente del elemento debe tener un buzón activo en la organización de Office 365 a la que se va a importar el elemento. Si el remitente no tiene un buzón activo, se devolverá el siguiente error:<br/><br/>  `One or more messages in the Request failed to be delivered to either From or Sender email address. You will need to resend your entire Request. Error: The request failed. The remote server returned an error: (401) Unauthorized.`  | `bob@contoso.com` <br/> |
     |**TO** <br/> |Sí  <br/> |El usuario que ha recibido un elemento, si es aplicable a un elemento del origen de datos.  <br/> | `bob@contoso.com` <br/> |
-    |**TITULAR** <br/> |No  <br/> |El asunto del elemento de origen.  <br/> | `"Mega deals with Contoso coming your way! #ContosoHolidayDeals"` <br/> |
+    |**Asunto** <br/> |No  <br/> |El asunto del elemento de origen.  <br/> | `"Mega deals with Contoso coming your way! #ContosoHolidayDeals"` <br/> |
     |**OBSOLET** <br/> |Sí  <br/> |La fecha en la que el elemento originalmente se ha creado o publicado en el origen de datos del cliente; por ejemplo, la fecha en la que se ha publicado un mensaje en Twitter.  <br/> | `01 NOV 2015` <br/> |
     |**CUERPO** <br/> |No  <br/> |El contenido del mensaje o la publicación. En el caso de algunos orígenes de datos, el contenido de esta propiedad podría ser el mismo que el contenido de la propiedad **SUBJECT**. Durante el proceso de importación, el conector asociado intentará mantener en la medida de lo posible la fidelidad total desde el origen de contenido. Si es posible, los archivos, los gráficos u otro contenido del cuerpo del elemento de origen se incluyen en esta propiedad. Si no es así, el contenido del elemento de origen se incluye en la propiedad **ATTACHMENT**. El contenido de esta propiedad dependerá del conector del asociado y de la capacidad de la plataforma de origen.  <br/> | `Author: bob@contoso.com` <br/>  `Date: 10 DEC 2014` <br/>  `Tweet: "Mega deals with Contoso coming your way! #ContosoHolidayDeals"` <br/>  `Date: 01 NOV 2015` <br/> |
     |**DATOS adjuntos** <br/> |No  <br/> |Si un elemento del origen de datos (como un Tweet en Twitter o una conversación de mensajería instantánea) tiene un archivo adjunto o incluye imágenes, la conexión del asociado intentará primero incluir datos adjuntos en la propiedad **Body** . Si esto no es posible, se agrega a la propiedad * * ATTACHMENT * *. Otros ejemplos de datos adjuntos son los "Me gusta" de Facebook, los metadatos del origen del contenido y las respuestas a un mensaje o una publicación.  <br/> | `image.gif` <br/> |
@@ -573,9 +573,9 @@ Para revocar el consentimiento de un conector de datos de terceros, puede elimin
  
 - Puede usar la herramienta de búsqueda de contenido en el centro de seguridad y cumplimiento para buscar elementos que se importaron a los buzones en Office 365 desde un origen de datos de terceros. Para buscar específicamente estos elementos importados, puede usar los siguientes pares de valores y propiedades de mensaje en el cuadro palabra clave para una búsqueda de contenido.
     
-  - **`kind:externaldata`**-Use este par propiedad-valor para buscar todos los tipos de datos de terceros. Por ejemplo, para buscar elementos que se importaron de un origen de datos de terceros y contenían la palabra "Contoso" en la propiedad subJect del elemento importado, usaría la palabra `kind:externaldata AND subject:contoso`clave Query.
+  - **`kind:externaldata`**-Use este par propiedad-valor para buscar todos los tipos de datos de terceros. Por ejemplo, para buscar elementos que se importaron de un origen de datos de terceros y contenían la palabra "Contoso" en la propiedad Subject del elemento importado, usaría la palabra `kind:externaldata AND subject:contoso`clave Query.
     
-  - **`itemclass:ipm.externaldata.<third-party data type>`**-Use este par Property-Value solo para buscar un tipo de datos de terceros. Por ejemplo, para buscar únicamente datos de Facebook que contengan la palabra "Contoso" en la propiedad subJect, usaría la `itemclass:ipm.externaldata.Facebook* AND subject:contoso`consulta de palabra clave. 
+  - **`itemclass:ipm.externaldata.<third-party data type>`**-Use este par Property-Value solo para buscar un tipo de datos de terceros. Por ejemplo, para buscar únicamente datos de Facebook que contengan la palabra "Contoso" en la propiedad Subject, usaría la `itemclass:ipm.externaldata.Facebook* AND subject:contoso`consulta de palabra clave. 
 
   Para obtener una lista completa de los valores que se van a usar para los tipos `itemclass` de datos de terceros para la propiedad, consulte [use Content Search to Search a data de terceros importado a Office 365](use-content-search-to-search-third-party-data-that-was-imported.md)
     

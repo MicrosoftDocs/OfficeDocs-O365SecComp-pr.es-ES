@@ -4,7 +4,7 @@ ms.author: chrfox
 author: chrfox
 manager: laurawi
 ms.date: 9/14/2017
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
 description: 'Obtenga información sobre los pasos para etiquetar y, a continuación, trabaje con una muestra de aprendizaje de 40 archivos durante la fase de formación de relevancia de Office 365 Advanced eDiscovery.  '
-ms.openlocfilehash: e8c9c02d72a756565f6fe59011a6788f592463eb
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 82380acc2ea90a600a3dd14f58c6d9bf0a06a1a6
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32260428"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158352"
 ---
 # <a name="tagging-and-relevance-training-in-office-365-advanced-ediscovery"></a>Aprendizaje de la etiqueta y la relevancia en Office 365 Advanced eDiscovery
 
@@ -41,7 +41,7 @@ Una vez completada la evaluación en la exhibición avanzada de documentos elect
     
     Los iconos que indican la existencia de comentarios, etiquetas y archivos de familia se muestran en la vista de archivo en una barra situada encima del archivo.
     
-2. DeTermine la relevancia del archivo para el problema de caso y etiquete el archivo con los botones de iconos de opción de etiquetado o con los métodos abreviados de teclado, como se muestra en la siguiente tabla:
+2. Determine la relevancia del archivo para el problema de caso y etiquete el archivo con los botones de iconos de opción de etiquetado o con los métodos abreviados de teclado, como se muestra en la siguiente tabla:
     
 | |
 |**Opción de etiquetado**|**Descripción**|**Método abreviado de teclado**|**Para varios problemas-método abreviado de teclado de etiqueta masiva**|

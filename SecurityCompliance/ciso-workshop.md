@@ -3,19 +3,19 @@ title: Taller sobre el director de seguridad de la información (CISO)
 ms.author: robmazz
 author: robmazz
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: tutorial
 ms.service: o365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Obtenga más información sobre los principios de seguridad y las recomendaciones para modernizar la seguridad de su organización.
-ms.openlocfilehash: 62f1150b0f72550de11ebfbf5562d92d585d52d2
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 95bfc90211b90e129e6b208ab09b6123c61ccaae
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32242688"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34155312"
 ---
 # <a name="chief-information-security-officer-ciso-workshop-training"></a>Formación del taller Chief Information Security Office (CISO)
 

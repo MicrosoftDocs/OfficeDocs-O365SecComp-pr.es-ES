@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: 6/22/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 6057daa8-6372-4e77-a636-7ea599a76128
 description: Obtenga información sobre cómo identificar los distintos tipos de retenciones que se pueden colocar en un buzón de correo de Office 365. Estos tipos de retenciones incluyen la retención por juicio, las suspensiones de eDiscovery y las directivas de retención de Office 365. También puede determinar si se ha excluido a un usuario de una directiva de retención para toda la organización
-ms.openlocfilehash: e0c1c54cedfc7494233f12f043bb6d033576eca8
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 29ae9d7ba8be2bf0064c163605aee9ad8fd5fd07
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32253894"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34154202"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Cómo identificar el tipo de retención en un buzón de Exchange Online
 
@@ -47,7 +47,7 @@ Para administrar buzones en retención, es posible que tenga que identificar el 
 
 ## <a name="step-1-obtaining-the-guid-for-holds-placed-on-a-mailbox"></a>Paso 1: obtener el GUID de las suspensiones colocadas en un buzón
 
-Puede ejecutar los dos cmdlets siguientes en Exchange Online PowerShell para obtener el GUID de las suspensiones que se colocan en un buzón. Después de obtener un GUID, úselo para identificar la suspensión específica en el paso 2. Tenga en cuenta que las reTenciones por juicio no se identifican mediante un GUID. Las suspensiones por juicio están habilitadas o deshabilitadas para un buzón de correo.
+Puede ejecutar los dos cmdlets siguientes en Exchange Online PowerShell para obtener el GUID de las suspensiones que se colocan en un buzón. Después de obtener un GUID, úselo para identificar la suspensión específica en el paso 2. Tenga en cuenta que las retenciones por juicio no se identifican mediante un GUID. Las suspensiones por juicio están habilitadas o deshabilitadas para un buzón de correo.
 
 - **Get-Mailbox** -use este cmdlet para determinar si la retención por juicio está habilitada para un buzón y para obtener los GUID de las suspensiones de eDiscovery, las conservaciones locales y las directivas de retención de Office 365 que se asignan específicamente a un buzón. El resultado de este cmdlet también indicará si un buzón se ha excluido explícitamente de una directiva de retención para toda la organización.
 
@@ -139,7 +139,7 @@ $CaseHold | FL Name,ExchangeLocation
 
 Para conectarse a Security & Compliance Center PowerShell, vea [Connect to Security _AMP_ Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
 
-### <a name="in-place-holds"></a>Suspensiones locales
+### <a name="in-place-holds"></a>Retenciones locales
 
 Ejecute el siguiente comando en Exchange Online PowerShell para identificar la conservación local que se aplica al buzón. Use el GUID de la retención local que identificó en el paso 1. El comando muestra el nombre de la suspensión y una lista de los buzones a los que se aplica la retención.
 
@@ -174,7 +174,7 @@ Para obtener más información acerca de las etiquetas de retención, vea [Overv
 
 ## <a name="managing-mailboxes-on-delay-hold"></a>Administración de buzones de correo en suspensión de retardo
 
-Una vez que se quita cualquier tipo de retención de un buzón, el valor de la propiedad de buzón *DelayHoldApplied* se establece en **true**. Esto ocurre la próxima vez que el Asistente para carpeta administrada procesa el buzón de correo y detecta que se ha quitado una suspensión. Esto se denomina retenciones y significa que la eliminación real de la retención se retrasa durante 30 días para impedir que los datos se eliminen (purguen) de forma permanente del buzón. ** Esto proporciona a los administradores una oportunidad para buscar o recuperar los elementos del buzón que se purgarán después de que se elimine realmente la retención. Cuando se coloca una retención en el buzón, el buzón sigue considerándose en espera durante un período de tiempo ilimitado, como si el buzón estuviera en retención por juicio. TransCurrido el plazo de 30 días, la retención en espera se completa y Office 365 intentará quitar la retención retrasada automáticamente (estableciendo la propiedad *DelayHoldApplied* en **false**) para que la retención se elimine realmente. Después de la propiedad *DelayHoldApplied* en **false**, los elementos marcados para su eliminación se purgarán la próxima vez que el Asistente para carpetas administradas procese el buzón de correo.
+Una vez que se quita cualquier tipo de retención de un buzón, el valor de la propiedad de buzón *DelayHoldApplied* se establece en **true**. Esto ocurre la próxima vez que el Asistente para carpeta administrada procesa el buzón de correo y detecta que se ha quitado una suspensión. Esto se denomina retenciones y significa que la eliminación real de la retención se retrasa durante 30 días para impedir que los datos se eliminen (purguen) de forma permanente del buzón. ** Esto proporciona a los administradores una oportunidad para buscar o recuperar los elementos del buzón que se purgarán después de que se elimine realmente la retención. Cuando se coloca una retención en el buzón, el buzón sigue considerándose en espera durante un período de tiempo ilimitado, como si el buzón estuviera en retención por juicio. Transcurrido el plazo de 30 días, la retención en espera se completa y Office 365 intentará quitar la retención retrasada automáticamente (estableciendo la propiedad *DelayHoldApplied* en **false**) para que la retención se elimine realmente. Después de la propiedad *DelayHoldApplied* en **false**, los elementos marcados para su eliminación se purgarán la próxima vez que el Asistente para carpetas administradas procese el buzón de correo.
 
 Para ver el valor de la propiedad *DelayHoldApplied* de un buzón, ejecute el siguiente comando en Exchange Online PowerShell.
 
@@ -198,7 +198,7 @@ Set-Mailbox <DN or Exchange GUID> -InactiveMailbox -RemoveDelayHoldApplied
 > [!TIP]
 > La mejor forma de especificar un buzón inactivo en el comando anterior es usar su nombre distintivo o el valor de GUID de Exchange. El uso de uno de estos valores ayuda a impedir que se especifique accidentalmente el buzón equivocado. 
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Después de identificar las suspensiones que se aplican a un buzón de correo, puede realizar tareas como cambiar la duración de la retención, quitar temporalmente o permanentemente la retención o, en el caso de las directivas de retención de Office 365, excluir un buzón inactivo de la Directiva. Para obtener más información acerca de cómo realizar tareas relacionadas con las suspensiones, consulte uno de los siguientes temas:
 

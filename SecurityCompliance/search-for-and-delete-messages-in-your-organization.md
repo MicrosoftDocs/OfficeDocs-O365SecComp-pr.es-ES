@@ -3,7 +3,7 @@ title: Buscar y eliminar mensajes de correo electrónico de su organización de 
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Use la característica de búsqueda y depuración en el centro de seguridad & cumplimiento de Office 365 para buscar y eliminar un mensaje de correo electrónico de todos los buzones de la organización.
-ms.openlocfilehash: c6fa0d09852016b918375dbff5a19468886d86b3
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: f654b643a5f1e4feac6e32a67843b2a6a9563bd0
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265352"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34158482"
 ---
 # <a name="search-for-and-delete-email-messages-in-your-office-365-organization---admin-help"></a>Buscar y eliminar mensajes de correo electrónico de su organización de Office 365-ayuda para administradores
 
@@ -102,13 +102,13 @@ Si su cuenta de Office 365 usa la autenticación multifactor (MFA) o la autentic
 
 Una vez que haya creado y perfeccionado una búsqueda de contenido para que se devuelva el mensaje que desea quitar y esté conectado al centro de seguridad & Compliance Center PowerShell, el paso final consiste en ejecutar el cmdlet **New-ComplianceSearchAction** para eliminar el mensaje. Puede eliminar el mensaje de forma Soft o difícil. Un mensaje eliminado temporalmente se mueve a la carpeta elementos recuperables de un usuario y se conserva hasta que expira el período de retención de elementos eliminados. Los mensajes eliminados permanentemente se marcan para su eliminación permanente del buzón y se quitarán de forma permanente la próxima vez que el Asistente para carpetas administradas procese el buzón de correo. Si la recuperación de un único elemento está habilitada para el buzón, los elementos eliminados de forma permanente se quitarán permanentemente cuando expire el período de retención de elementos eliminados. Si un buzón se coloca en retención, los mensajes eliminados se conservan hasta que expira la duración de retención del elemento o hasta que se quite la retención del buzón.
   
-En el siguiente ejemplo, el comando eliminará temporalmente los resultados de la búsqueda devueltos por una búsqueda de contenido denominada "quitar mensaje de suPlantación de identidad (phishing)". 
+En el siguiente ejemplo, el comando eliminará temporalmente los resultados de la búsqueda devueltos por una búsqueda de contenido denominada "quitar mensaje de suplantación de identidad (phishing)". 
 
 ```
 New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeType SoftDelete
 ```
 
-Para eliminar de forma permanente los elementos devueltos por la búsqueda de contenido "quitar mensaje de suPlantación de identidad", ejecute este comando:
+Para eliminar de forma permanente los elementos devueltos por la búsqueda de contenido "quitar mensaje de suplantación de identidad", ejecute este comando:
 
 ```
 New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeType HardDelete

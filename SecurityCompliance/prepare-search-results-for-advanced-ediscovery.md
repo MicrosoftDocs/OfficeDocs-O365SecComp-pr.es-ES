@@ -3,7 +3,7 @@ title: Preparar los resultados de búsqueda para la exhibición avanzada de docu
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 f1_keywords:
 - ms.o365.cc.CustomizeExportWithZoom
@@ -15,12 +15,12 @@ ms.collection:
 search.appverid: MOE150
 ms.assetid: 0b6fac2d-8627-4b05-9df0-03609db6248b
 description: Obtenga información sobre cómo preparar los resultados de una búsqueda de contenido en el centro de seguridad & cumplimiento en Office 365 para un análisis más avanzado con la herramienta de exhibición de documentos electrónicos avanzada.
-ms.openlocfilehash: 772ef8e24613a0fb872f0c397d7ea80bdad16e4b
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 244fae317964261ad1eeadbdca2d4dffeda0a23a
+ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261982"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "34157472"
 ---
 # <a name="prepare-search-results-for-office-365-advanced-ediscovery"></a>Preparar los resultados de búsqueda para la exhibición avanzada de documentos electrónicos de Office 365
 
@@ -103,16 +103,16 @@ Una vez finalizada la preparación, el siguiente paso es ir a la exhibición ava
     
 4. Para cargar los datos de resultados de búsqueda de un contenedor en el caso de eDiscovery avanzado, seleccione un contenedor y, a continuación, haga clic en **procesar**.
     
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Siguientes pasos
 
 Una vez que se agregan los resultados de una búsqueda de exhibición de documentos electrónicos a un caso, el siguiente paso consiste en usar las herramientas avanzadas de eDiscovery para analizar los datos e identificar el contenido que responde a un caso legal específico. Para obtener información sobre el uso de la exhibición avanzada de documentos electrónicos, vea [Office 365 Advanced eDiscovery](office-365-advanced-ediscovery.md).
   
 ## <a name="more-information"></a>Más información
 
-Los mensajes de correo electrónico cifrados con RMS que se incluyan en los resultados de la búsqueda se descifrarán cuando los prepare para el análisis en la exhibición avanzada de documentos electrónicos. Esta capacidad de descifrado está habilitada de forma predeterminada para los miembros del grupo de roles eDiscovery Manager. Esto se debe a que el rol de administración desCifrar RMS se asigna a este grupo de roles. Tenga en cuenta lo siguiente en lo que se recifran los mensajes de correo electrónico:
+Los mensajes de correo electrónico cifrados con RMS que se incluyan en los resultados de la búsqueda se descifrarán cuando los prepare para el análisis en la exhibición avanzada de documentos electrónicos. Esta capacidad de descifrado está habilitada de forma predeterminada para los miembros del grupo de roles eDiscovery Manager. Esto se debe a que el rol de administración descifrar RMS se asigna a este grupo de roles. Tenga en cuenta lo siguiente en lo que se recifran los mensajes de correo electrónico:
   
 - Actualmente, esta capacidad de descifrado no incluye contenido cifrado de sitios de SharePoint y OneDrive para la empresa. Cuando se exportan, solo se descifrarán los mensajes de correo electrónico cifrados con RMS.
     
 - Si un mensaje de correo electrónico cifrado con RMS tiene datos adjuntos (como un documento u otro mensaje de correo electrónico) que también están cifrados, solo se descifrará el mensaje de correo electrónico de nivel superior.
     
-- Si necesita impedir que un usuario descifre mensajes cifrados con RMS al preparar los resultados de búsqueda para analizarlos en eDiscovery avanzado, tendrá que crear un grupo de roles personalizado (copiando el grupo de roles integrado eDiscovery Manager) y, a continuación, quitar el RMS DesCifrar el rol de administración del grupo de roles personalizado. A continuación, agregue la persona que no desea que descifre los mensajes como miembro del grupo de roles personalizado.
+- Si necesita impedir que un usuario descifre mensajes cifrados con RMS al preparar los resultados de búsqueda para analizarlos en eDiscovery avanzado, tendrá que crear un grupo de roles personalizado (copiando el grupo de roles integrado eDiscovery Manager) y, a continuación, quitar el RMS Descifrar el rol de administración del grupo de roles personalizado. A continuación, agregue la persona que no desea que descifre los mensajes como miembro del grupo de roles personalizado.
