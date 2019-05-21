@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 03/25/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,16 +13,16 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Obtenga información sobre las capacidades de investigación y respuesta automatizadas en Office 365 Advanced Threat Protection.
-ms.openlocfilehash: 223a28a7f63f101dd5644e433d72a3ddf6e5dc23
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: af567fc7bf532fde5854e3e2ee3785ca69c3c7ed
+ms.sourcegitcommit: b7c17e1079da4e60404d704864ccbc08f8e4dbb8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32249946"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "34250323"
 ---
 # <a name="automated-investigation-and-response-air-with-office-365"></a>Investigación y respuesta automatizadas (AIR) con Office 365
 
-La investigación y respuesta automatizada (AIR) (próximamente en las [capacidades de investigación y respuesta de amenazas de Office 365](office-365-ti.md)) le permite ejecutar la investigación y la corrección automáticas para las amenazas bien conocidas que ya existen en el mercado. Lea este artículo para obtener información general sobre AIR y cómo puede ayudar a su organización y a los equipos de operaciones de seguridad a mitigar las amenazas de forma más eficaz y eficiente. 
+La investigación y la respuesta automatizadas (que actualmente se encuentran en la versión preliminar pública como una de las muchas [capacidades de investigación y respuesta de amenazas de Office 365](office-365-ti.md)) le permiten ejecutar la investigación y la corrección automáticas para las amenazas bien conocidas que existen actualmente. Lea este artículo para obtener información general sobre AIR y cómo puede ayudar a su organización y a los equipos de operaciones de seguridad a mitigar las amenazas de forma más eficaz y eficiente. 
 
 Para obtener más información acerca de Cuándo estarán disponibles las características de AIR, consulte el [plan de desarrollo de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap).
 
@@ -98,7 +98,7 @@ A continuación, se ejecutan varios pasos de investigación y de búsqueda de am
 - Se buscan mensajes de correo electrónico similares en otros clústeres de correo electrónico.
 - La señal se comparte con otras plataformas, como [ATP de Windows Defender](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection).
 - Se determina si algún usuario ha hecho clic en cualquier vínculo malintencionado en mensajes de correo electrónico sospechosos.
-- Una comprobación se realiza a través de Office 365 Exchange Online Protection ([EOP](eop/exchange-online-protection-eop.md)) Y de la protección contra amenazas avanzada ([ATP](office-365-atp.md)) de Office 365 para ver si hay otros mensajes similares detectados por los usuarios.
+- Una comprobación se realiza a través de Office 365 Exchange Online Protection ([EOP](eop/exchange-online-protection-eop.md)) y de la protección contra amenazas avanzada ([ATP](office-365-atp.md)) de Office 365 para ver si hay otros mensajes similares detectados por los usuarios.
 - Se realiza una comprobación para ver si un usuario se ha puesto en peligro. Esta comprobación aprovecha las señales en [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security) y [Azure Active Directory](https://docs.microsoft.com/azure/active-directory), correlacionando las anomalías de actividad de usuario relacionadas. 
 
 Durante la fase de caza, los riesgos y las amenazas se asignan a varios pasos de caza. 
@@ -145,24 +145,24 @@ La página investigaciones automatizadas muestra las investigaciones de su organ
 
 ![Página principal de investigación para AIR](media/air-maininvestigationpage.png) 
   
-Podrá:
+Puede:
 - Vaya directamente a una investigación (seleccione un **identificador de investigación**).
 - Aplicar filtros. Elija entre el **tipo de investigación**, **el intervalo de tiempo**, el **Estado**o una combinación de estos.
-- ExPorte los datos a un archivo CSV.
+- Exporte los datos a un archivo CSV.
 
 El estado de la investigación indica el progreso del análisis y las acciones. A medida que se ejecuta la investigación, el estado cambiará para indicar si se han encontrado amenazas, así como indicar si se han aprobado las acciones. 
 - **Iniciando**: la investigación se pone en cola para comenzar pronto
 - En **ejecución**: la investigación se ha iniciado y está llevando a cabo el análisis
 - **No se han encontrado amenazas**: la investigación ha completado el análisis y no se han encontrado amenazas
-- **FinalizaDo por el sistema**: la investigación no se cerró y caducó después de 7 días
+- **Finalizado por el sistema**: la investigación no se cerró y caducó después de 7 días
 - **Acción pendiente**: la investigación detectó amenazas con acciones recomendadas
 - **Amenazas encontradas**: la investigación detectó amenazas, pero las amenazas no tienen acciones disponibles en el aire
 - **Corregido**: el investgation ha finalizado y se ha corregido completamente (todas las acciones se han aprobado)
-- **CorregiDo parcialmente**: la investigación ha finalizado y algunas de las acciones recomendadas se han aprobado
-- **FinalizaDo por el usuario**: un administrador terminó la investigación
+- **Corregido parcialmente**: la investigación ha finalizado y algunas de las acciones recomendadas se han aprobado
+- **Finalizado por el usuario**: un administrador terminó la investigación
 - **Error**: se ha producido un error durante la investigación que ha evitado que se alcance una conclusión en amenazas
 - **Puesta en cola por límite**: la investigación está esperando el análisis debido a las limitaciones del procesamiento del sistema (para proteger el rendimiento del servicio)
-- **FinalizaDa por limitación**: la investigación no se pudo completar en el tiempo suficiente debido a las limitaciones de procesamiento del sistema y el volumen de investigación. Puede volver a desencadenar la investigación seleccionando el correo electrónico en el explorador y seleccionando la acción investigar.
+- **Finalizada por limitación**: la investigación no se pudo completar en el tiempo suficiente debido a las limitaciones de procesamiento del sistema y el volumen de investigación. Puede volver a desencadenar la investigación seleccionando el correo electrónico en el explorador y seleccionando la acción investigar.
 
 ### <a name="investigation-graph"></a>Gráfico de investigación
 
@@ -170,7 +170,7 @@ Al abrir una investigación específica, verá la página gráfico de investigac
 
 ![Página de gráfico de investigación de aire](media/air-investigationgraphpage.png)
 
-Podrá:
+Puede:
 - Obtenga información general visual de la investigación actual.
 - Ver un resumen de la duración de la investigación.
 - Seleccione un nodo de la visualización para ver los detalles de ese nodo.
@@ -182,7 +182,7 @@ En la pestaña **alertas** de una investigación, puede ver las alertas relevant
 
 ![Página de alertas de AIR](media/air-investigationalertspage.png)
 
-Podrá:
+Puede:
 - Obtenga información general visual de la alerta desencadenadora actual y de cualquier alerta asociada.
 - Seleccione una alerta de la lista para abrir una página emergente que muestre los detalles de la alerta completa.
 
@@ -215,7 +215,7 @@ Como ejemplo, considere el siguiente escenario. El primer clúster de tres mensa
 
 ![Página de investigación de correo electrónico de AIR](media/air-investigationemailpage.png)
 
-Podrá:
+Puede:
 - Obtenga información general visual de los resultados y amenazas de clúster actuales encontrados.
 - Haga clic en una entidad de clúster o en una lista de amenazas para abrir una página emergente que muestre los detalles de alerta completos.
 - Para investigar más detalladamente el clúster de correo electrónico, haga clic en el vínculo "abrir en el explorador" que se encuentra en la parte superior de la pestaña "detalles del clúster de correo electrónico"
@@ -232,7 +232,7 @@ Por ejemplo, en la siguiente imagen, AIR ha identificado indicadores de peligro 
 
 ![Página de usuarios de investigación de aire](media/air-investigationuserspage.png)
 
-Podrá:
+Puede:
 - Obtenga una introducción visual de los resultados de usuario identificados y los riesgos encontrados.
 - Seleccione un usuario para abrir una página emergente que muestre todos los detalles de la alerta.
 
@@ -244,7 +244,7 @@ En la pestaña **máquinas** , puede ver todos los equipos identificados como pa
 
 Como parte de la investigación, AIR correlaciona las amenazas de correo electrónico en los dispositivos. Por ejemplo, una investigación pasa un hash de archivo malintencionado a [ATP de Windows Defender](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) para investigar. Esto permite la investigación automatizada de las máquinas pertinentes para los usuarios, para ayudar a garantizar que las amenazas se dirijan en la nube y en los extremos. 
 
-Podrá:
+Puede:
 - Obtenga información general visual de las amenazas y los equipos actuales encontrados.
 - Seleccione un equipo para abrir una vista en la investigación de [ATP de Windows Defender](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection) relacionada en el centro de seguridad ATP de Windows Defender.
 
@@ -256,7 +256,7 @@ Aquí, puede ver las entidades investigadas y los detalles de los tipos de entid
 
 ![Página de entidades de investigación de aire](media/air-investigationentitiespage.png)
 
-Podrá:
+Puede:
 - Obtenga información general visual de las entidades de investigación y las amenazas encontradas.
 - Seleccione una entidad para abrir una página emergente que muestre los detalles de la entidad relacionada.
 
@@ -268,9 +268,9 @@ En la pestaña **registro** , puede ver todos los pasos de la guía que se han p
 
 ![Página de registro de investigación de aire](media/air-investigationlogpage.png)
 
-Podrá:
+Puede:
 - Vea una descripción general visual de los pasos de la guía realizados.
-- ExPorte los resultados a un archivo CSV.
+- Exporte los resultados a un archivo CSV.
 - Filtrar la vista.
 
 ### <a name="recommended-actions"></a>Acciones recomendadas
@@ -281,11 +281,11 @@ Acciones Capture los pasos que Microsoft recomienda realizar al final de una inv
 
 ![Página de acción de investigaciones de aire](media/air-investigationactionspage.png)
 
-Podrá:
+Puede:
 - Obtenga información general visual de las acciones recomendadas de la guía.
 - Seleccione una sola acción o varias acciones.
 - Aprobar o rechazar acciones recomendadas con comentarios.
-- ExPorte los resultados a un archivo CSV.
+- Exporte los resultados a un archivo CSV.
 - Filtrar la vista.
 
 ## <a name="how-to-get-air"></a>Cómo obtener aire
