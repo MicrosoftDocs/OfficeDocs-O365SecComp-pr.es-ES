@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Para evitar que los mensajes de suplantación de identidad lleguen a su buzón, Outlook.com y Outlook en la web Compruebe que el remitente es quien dice ser y marcar los mensajes sospechosos como correo no deseado.
-ms.openlocfilehash: ad94a2953b6fd53612b2fc15038a7157e97f3b39
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 92458a93a4da3e449061e4d2a4ba312d635c42cc
+ms.sourcegitcommit: 7f00f765e8fa674ce1c8c66f5b89b6bea45e13ac
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157992"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "34341628"
 ---
 # <a name="unverified-sender"></a>Remitente no verificado
 
@@ -55,26 +55,6 @@ Cuando Outlook.com y Outlook en la web no pueden comprobar la identidad del remi
 
 No todos los mensajes que no se autentican son malintencionados. Sin embargo, debe tener cuidado al interactuar con los mensajes que no se autentican si no reconoce al remitente. O bien, si reconoce a un remitente que normalmente no tiene un '? ' en la imagen del remitente, pero, de repente, lo empieza a ver, es posible que se trate de una firma en la que se está suplantando el remitente.
 
-### <a name="the-senders-address-is-different-than-what-appears-in-the-from-address"></a>La dirección del remitente es diferente de la que aparece en la dirección de
-
-Con frecuencia, la dirección de correo electrónico que ve en un mensaje es diferente de la que aparece en la dirección de. En ocasiones, los phish atacantes intentan engañarle para que el remitente sea una persona distinta de la real.
-
-Cuando Outlook.com y Outlook en la Web detectan una diferencia entre la dirección real del remitente y la dirección de la dirección de, muestran el remitente real mediante la etiqueta Via, que se subraya.
-
-![texto alternativo de remitente no comprobado](media/unverified-sender-feature1.png)
-
-En este ejemplo, el dominio `suspicious.com` de envío está autenticado, pero el remitente ha `unknown@contoso.com` puesto en la dirección de remitente.
-
-No todos los mensajes con una etiqueta Via son sospechosos. Sin embargo, si no reconoce un mensaje con una etiqueta Via, debe tener cuidado a la hora de interactuar con él.
-
-En Outlook.com y el nuevo Outlook en la web, puede desplazar el cursor sobre el nombre o la dirección del remitente en la lista de mensajes para ver su dirección de correo electrónico, sin necesidad de abrir el mensaje.
-
-![Introducción a OneDrive](media/get-started-with-onedrive-message.png)
-
-¿Cómo saber si está usando el nuevo Outlook en la web? Vea los siguientes ejemplos:
-
-![Outlook vs Office 365](media/outlook-vs-outlook365.png)
-
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 
 ### <a name="what-criteria-does-outlookcom-and-outlook-on-the-web-use-to-add-the--and-the-via-properties"></a>¿Qué criterios usa Outlook.com y Outlook en la web para agregar las propiedades "?" y "Via"?
@@ -83,11 +63,7 @@ Para el '? ' en la imagen del remitente: Outlook.com requiere que el mensaje pas
 
 Para la etiqueta Via: Si el dominio de la dirección de es diferente del dominio de la firma DKIM o del correo SMTP de, Outlook.com muestra el dominio en uno de estos dos campos (prefiriendo la firma DKIM).
 
-### <a name="can-i-override-these-properties-with-ip-allows-exchange-transport-rule-allows-or-safe-senders"></a>¿Puedo invalidar estas propiedades con permitir IP, la regla de transporte de Exchange permite o los remitentes seguros?
-
-No puede invalidar estas propiedades.
-
-### <a name="how-do-i-remove-these-properties"></a>¿Cómo Quito estas propiedades?
+### <a name="how-do-i-remove-the-"></a>¿Cómo quito el "?"
 
 Para el '? ' en la imagen del remitente: como remitente, debe autenticar el mensaje con SPF o DKIM.
 

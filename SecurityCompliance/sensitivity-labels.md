@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con las etiquetas de confidencialidad, puede clasificar y ayudar a proteger el contenido confidencial, sin poner impedimentos a la productividad y la capacidad de colaboración de los usuarios. Puede usar etiquetas de confidencialidad para aplicar opciones de protección como encriptación o marcas de agua en el contenido con la etiqueta.
-ms.openlocfilehash: 21b325454c659d72e27349ede9015a0f4bde6dcb
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 63470a4375c1a3cc1420b64725d6741aa8e95af4
+ms.sourcegitcommit: 28d5972adef5bbe1377d89ff9962c531f5f08dbf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155982"
+ms.lasthandoff: 05/19/2019
+ms.locfileid: "34166935"
 ---
 # <a name="overview-of-sensitivity-labels"></a>Información general de etiquetas de confidencialidad
 
@@ -94,6 +94,8 @@ Un documento o correo electrónico puede tener solo una etiqueta de confidencial
 
 ![Opción para crear una subetiqueta](media/Sensitivity_label_sublabel_options.png)
 
+Tenga en cuenta que, además de la prioridad de las etiquetas, el orden de las directivas también es importante: consulte [esta sección más adelante](#sensitivity-label-priority-order-matters).
+
 ### <a name="sublabels-grouping-labels"></a>Subetiquetas (agrupación de etiquetas)
 
 Con las subetiquetas, puede agrupar una o varias etiquetas bajo una etiqueta principal que el usuario ve en la aplicación de Office. Por ejemplo, en Confidencial, su organización puede usar varias etiquetas distintas para determinados tipos dentro de esa clasificación. En este ejemplo, la etiqueta principal Confidencial es simplemente una etiqueta de texto sin ninguna configuración de protección y, como contiene subetiquetas, no se puede aplicar al contenido. En su lugar, los usuarios deben elegir Confidencial para ver las subetiquetas y, a continuación, pueden elegir una subetiqueta para que se aplique al contenido.
@@ -136,6 +138,24 @@ Con una directiva de etiqueta, puede:
     ![Vínculo para obtener más información en la cinta o botón de confidencialidad](media/Sensitivity_label_learn_more.png)
 
 Después de crear una directiva de etiqueta y asignar etiquetas de confidencialidad a usuarios y grupos, dichos usuarios podrán ver esas etiquetas disponibles en las aplicaciones de Office en una hora o menos.
+
+### <a name="label-policy-priority-order-matters"></a>Prioridad de etiquetas de directivas (el orden importa)
+
+Para que los usuarios dispongan de sus etiquetas de confidencialidad, puede publicarlas en una directiva de etiqueta de confidencialidad, que se muestra en una lista en la pestaña de **Directivas de confidencialidad** en la página **Directivas de etiqueta**. Al igual que las etiquetas de confidencialidad (consulte [la sección anterior](#sensitivity-label-priority-order-matters)), el orden de las directivas de etiqueta de confidencialidad es importante, puesto que refleja su prioridad. La directiva de etiqueta de menor prioridad se muestra en la parte **superior**, mientras que la directiva de mayor prioridad se muestra en la parte **inferior**.
+
+Una directiva de etiqueta consiste en lo siguiente:
+
+- Un conjunto de etiquetas.
+- El alcance de la directiva de etiqueta, es decir, los usuarios y grupos incluidos en la directiva.
+- La configuración de la directiva de etiqueta arriba descrita (etiqueta predeterminada, justificación, etiqueta obligatoria y vínculo de ayuda).
+
+Puede incluir un usuario en varias directivas de etiqueta: este usuario verá todas las etiquetas de confidencialidad de estas directivas. Sin embargo, el usuario solo verá la configuración de directiva de la directiva de etiqueta de mayor prioridad.
+
+Si un usuario o grupo de su organización no ve una opción para la directiva de etiqueta prevista, como una etiqueta predeterminada u obligatoria, compruebe el orden de las directivas de etiqueta de confidencialidad. Para cambiar el orden de las directivas de etiqueta, seleccione una directiva de etiqueta de carácter > seleccione los puntos suspensivos a la derecha > **Mover abajo** o **Mover arriba**.
+
+![Opción Mover en la página de directivas de etiquetas de confidencialidad](media/sensitivity-label-policy-priority.png)
+
+Tenga en cuenta que, si bien la prioridad es importante en las directivas de etiqueta de confidencialidad, esta **no** afecta a las directivas de etiqueta de retención. Como se explica en [Principios de retención o qué tiene prioridad](labels.md#the-principles-of-retention-or-what-takes-precedence), el contenido puede estar sujeto a diferentes directivas de retención.
 
 ## <a name="how-to-get-started"></a>Como comenzar
 
