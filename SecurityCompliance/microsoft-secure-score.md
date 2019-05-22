@@ -9,15 +9,18 @@ ms.author: ellevin
 author: levinec
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
 ms.topic: article
-search.appverid: met150
-ms.openlocfilehash: fa76e2edd3f66595a47fb511881f15c07b441c77
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+search.appverid:
+- MOE150
+- MET150
+ms.openlocfilehash: 1c47ec8e75fb712900fd1e459b7cfd73bb071ac4
+ms.sourcegitcommit: 1021ab534b3bc3c8684e42f67d11711f6765567e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32252341"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "34334548"
 ---
 # <a name="microsoft-secure-score"></a>Puntuación de seguridad de Microsoft
 
@@ -79,6 +82,10 @@ Al hacer clic en una acción de mejora, aparece una volar hacia fuera. Para comp
 Puede ver un gráfico de la puntuación de su organización con el tiempo en la ficha **historial** . Esta vista incluye la media global, la media de la industria y un recuento de asientos similar, junto con todas las acciones realizadas en el intervalo de tiempo seleccionado. También puede personalizar un intervalo de fechas y filtrar por categoría.
 
 La puntuación se calcula una vez al día (alrededor de 1:00 A.M. PST). Si realiza un cambio en una acción medida, la puntuación se actualizará automáticamente el día siguiente. También es importante tener en cuenta que otros portales muestran partes de la puntuación segura de Microsoft (como el centro de seguridad de Windows Defender). Si completa una acción de mejora y la puntuación aumenta en estos portales, la puntuación actualizada puede tardar hasta 24 horas en mostrarse en el centro de seguridad de Microsoft 365.  
+
+## <a name="how-controls-are-scored"></a>Cómo se puntuan los controles
+
+Los controles se pueden puntuar de dos formas. Algunas se puntuan de una manera binaria: obtiene un 100% de la puntuación si tiene la característica o la configuración configurada según nuestra recomendación. Otras calificaciones se calculan como un porcentaje de la configuración total. Por ejemplo, si los Estados de la recomendación de mejora le proporcionarán 30 puntos si protege a todos los usuarios con el MFA y solo tiene 5 de 100 usuarios totales protegidos, se le asignará una puntuación parcial de 2 puntos (5 protegidos/100 en total * 30 máx PTS = puntuación parcial de 2 PTO) . 
 
 ## <a name="risk-awareness"></a>Conocimiento de riesgos
 
