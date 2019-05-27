@@ -100,7 +100,7 @@
 #### [Mantener la seguridad de los usuarios con la investigación y respuesta de amenazas](keep-users-safe-with-office-365-ti.md)
 #### [Buscar e investigar el correo electrónico malintencionado que se ha entregado](investigate-malicious-email-that-was-delivered.md)
 ### [Investigación y respuesta de amenazas](automated-investigation-response-office.md)
-### [Explorador de amenazas](use-explorer-in-security-and-compliance.md)
+### [El explorador de amenazas y detecciones en tiempo real](threat-explorer.md)
 #### [Vistas del explorador de amenazas](threat-explorer-views.md)
 ### [Rastreadores de amenazas](threat-trackers.md)
 ### [Simulador de ataques en Office 365](attack-simulator.md)
@@ -164,6 +164,7 @@
 ## [Responder a una cuenta de correo electrónico en peligro en Office 365](responding-to-a-compromised-email-account.md)
 
 # Administración de registros
+## [Administración de registros](records-management.md)
 ## Plan de archivos
 ### [Administrador del plan de archivos](file-plan-manager.md)
 ### [Etiquetas de retención](labels.md)
