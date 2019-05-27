@@ -15,12 +15,12 @@ ms.collection:
 search.appverid: MET150
 ms.assetid: 8d274fe3-db51-4107-ba64-865e7155b355
 description: Le guía por la configuración recomendada para la configuración de todos los inquilinos que afectan a la seguridad de su entorno de Office 365. Las necesidades de seguridad pueden requerir más o menos seguridad. Use estas recomendaciones como punto de partida.
-ms.openlocfilehash: d5e84bfe5994d1f17ddc75bcb1141fb4f4beace3
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: bac2592fcfefaeb150497cddf134679f9429c656
+ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158262"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34408255"
 ---
 # <a name="configure-your-office-365-tenant-for-increased-security"></a>Configurar su inquilino de Office 365 para aumentar la seguridad
 
@@ -53,9 +53,9 @@ Visite estos informes y paneles para obtener más información sobre el estado d
   
 |Panel * * * *|****Descripción****|
 |:-----|:-----|
-|Panel de administración de amenazas  <br/> |En la sección Administración de amenazas del centro de seguridad, use este panel para ver las amenazas que ya se han tratado y como una herramienta útil para informar a los responsables de la toma de decisiones empresariales sobre las capacidades de investigación y respuesta de las amenazas que ya se han realizado para proteger su empresa.  <br/> |
-|Explorador de amenazas  <br/> |También se encuentra en la sección Administración de amenazas del centro de seguridad. Si está investigando o experimentando un ataque contra su inquilino de Office 365, use el explorador de amenazas para analizar las amenazas. Threat Explorer muestra el volumen de ataques a lo largo del tiempo y puede analizar estos datos por familias de amenazas, la infraestructura de los intrusos y mucho más. También puede marcar cualquier correo electrónico sospechoso para la lista de incidentes.  <br/> |
-|Informes: panel  <br/> |En la sección informes del centro de seguridad, vea informes de auditoría para sus organizaciones de SharePoint Online y Exchange Online. También puede obtener acceso a los informes de inicio de sesión de usuario de Azure Active Directory (Azure AD), informes de actividad de usuario y el registro de auditoría de Azure AD desde la página ver informes.  <br/> |
+|[Panel de administración de amenazas](security-dashboard.md)  <br/> |En la sección **Administración de amenazas** del centro de seguridad, use este panel para ver las amenazas que ya se han tratado y como una herramienta útil para informar a los responsables de las decisiones empresariales sobre las capacidades de investigación y respuesta de las amenazas que ya han listo para proteger su empresa.  <br/> |
+|[Explorador de amenazas (o detecciones en tiempo real)](threat-explorer.md)  <br/> |También se encuentra en la sección **Administración de amenazas** del centro de seguridad. Si está investigando o experimentando un ataque contra su espacio empresarial de Office 365, use el explorador (o detecciones en tiempo real) para analizar las amenazas. Explorer (y el informe de detecciones en tiempo real) le muestra el volumen de ataques a lo largo del tiempo, y puede analizar estos datos por familias de amenazas, la infraestructura de los intrusos y mucho más. También puede marcar cualquier correo electrónico sospechoso para la lista de incidentes.  <br/> |
+|Informes: panel  <br/> |En la sección **informes** del centro de seguridad, vea informes de auditoría para sus organizaciones de SharePoint Online y Exchange Online. También puede obtener acceso a los informes de inicio de sesión de usuario de Azure Active Directory (Azure AD), informes de actividad de usuario y el registro de auditoría de Azure AD desde la página **ver informes** .  <br/> |
    
 ![Panel del centro de seguridad](media/870ab776-36d2-49c7-b615-93b2bc42fce5.png)
   

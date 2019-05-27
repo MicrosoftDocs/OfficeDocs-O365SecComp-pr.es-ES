@@ -1,46 +1,44 @@
 ---
-title: Vistas del explorador de amenazas
+title: Vistas en el explorador de amenazas y detecciones en tiempo real
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 03/18/2019
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: ''
 ms.collection:
 - M365-security-compliance
-description: Obtenga información sobre los distintos tipos de vistas disponibles en el explorador (también denominado explorador de amenazas) como parte de Office 365 Advanced Threat Protection Plan 2.
-ms.openlocfilehash: bcfa044db6844d9459b3dd62d9ced1cd37a999ec
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: Obtenga información sobre los distintos tipos de vistas disponibles en el explorador de amenazas y las detecciones en tiempo real.
+ms.openlocfilehash: 14cdbbd602e53615abec12bedbac2f16be40111f
+ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32260648"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34408325"
 ---
-# <a name="threat-explorer-views"></a>Vistas del explorador de amenazas
-
-[Threat Explorer](use-explorer-in-security-and-compliance.md) es una herramienta eficaz, casi en tiempo real, que ayuda a los equipos de operaciones de seguridad a investigar y &amp; responder a amenazas en el centro de seguridad y cumplimiento. El explorador muestra información sobre el malware y el phish sospechoso en el correo electrónico y los archivos de Office 365, así como otras amenazas de seguridad y riesgos para la organización. 
-
-La primera vez que se abre el explorador, la vista predeterminada muestra las detecciones de malware de correo electrónico de los últimos 7 días. 
+# <a name="views-in-threat-explorer-and-real-time-detections"></a>Vistas en el explorador de amenazas y detecciones en tiempo real
 
 ![Explorador de amenazas](media/ThreatExplorerFirstOpened.png)
 
-El explorador también puede mostrar características de protección de seguridad en Office 365, incluidos [vínculos seguros](atp-safe-links.md) y [datos adjuntos seguros](atp-safe-attachments.md) , y se puede modificar para mostrar los datos de los últimos 30 días. 
+[Explorador de amenazas](use-explorer-in-security-and-compliance.md) (y el informe de detecciones en tiempo real) es una herramienta eficaz, casi en tiempo real, que ayuda a los equipos de operaciones de seguridad a investigar &amp; y responder a amenazas en el centro de seguridad y cumplimiento. Explorer (y el informe de detecciones en tiempo real) muestra información sobre el malware y el phish sospechoso en el correo electrónico y los archivos de Office 365, así como otras amenazas de seguridad y riesgos para la organización. 
 
-> [!NOTE]
-> Si tiene una suscripción de prueba de Office 365 Advanced Threat Protection Plan 2 u Office 365 E5, solo verá las detecciones y los datos de correo electrónico de los últimos 7 días.
-  
+- Si tiene [Office 365 Advanced Threat Protection](office-365-atp.md) (ATP) Plan 2, entonces tiene Explorer.
+- Si tiene Office 365 ATP plan 1, tendrá detecciones en tiempo real.
+
+La primera vez que se abre el explorador (o el informe de detecciones en tiempo real), la vista predeterminada muestra las detecciones de malware de correo electrónico de los últimos 7 días. Este informe también puede Mostrar detecciones de ATP, como direcciones URL malintencionadas detectadas por [vínculos seguros](atp-safe-links.md)y archivos malintencionados detectados por [datos adjuntos seguros](atp-safe-attachments.md). Este informe se puede modificar para Mostrar datos de los últimos 30 días (a menos que esté usando una suscripción de prueba). Las suscripciones de prueba incluirán datos sólo para los últimos siete días.
+
 Use el menú **Ver** para cambiar la información que se muestra. La información sobre herramientas ayuda a determinar la vista que se va a usar.
   
 ![Menú Ver del explorador de amenazas](media/ThreatExplorerViewMenu.png)
 
-Una vez que haya seleccionado una vista, puede aplicar filtros y configurar consultas para realizar más análisis. En las siguientes secciones se proporciona una breve introducción a las distintas vistas disponibles en el explorador.  
+Una vez que haya seleccionado una vista, puede aplicar filtros y configurar consultas para realizar más análisis. En las siguientes secciones se proporciona una breve introducción a las distintas vistas disponibles en el explorador (o en detecciones en tiempo real).  
 
 ## <a name="email--malware"></a>Correo electrónico > malware
 
-Para ver este informe, en el explorador, elija **Ver** > **malware**de**correo electrónico** > . Esta vista muestra información sobre los mensajes de correo electrónico que se identificaron como que contenían malware.  
+Para ver este informe, en explorador (o detecciones en tiempo real), elija **Ver** > **malware**de**correo electrónico** > . Esta vista muestra información sobre los mensajes de correo electrónico que se identificaron como que contenían malware.  
 
 ![Ver datos sobre el correo electrónico identificado como malware](media/ExplorerEmailMalwareMenu.png) 
 
@@ -56,7 +54,7 @@ Debajo del gráfico, vea más detalles sobre mensajes específicos. Al seleccion
 
 ## <a name="email--phish"></a>Correo electrónico > phish
 
-Para ver este informe, en el explorador, elija **Ver** > **phishing**de**correo electrónico** > . Esta vista muestra los mensajes de correo electrónico identificados como intentos de suplantación de identidad.  
+Para ver este informe, en explorador (o detecciones en tiempo real), elija **Ver** > **phishing**de**correo electrónico** > . Esta vista muestra los mensajes de correo electrónico identificados como intentos de suplantación de identidad.  
 
 ![Ver datos sobre correo electrónico identificado como intentos de suplantación de identidad](media/ThreatExplorerEmailPhish.png) 
 
@@ -76,7 +74,7 @@ Cuando se selecciona un elemento de la lista, como una dirección URL detectada,
 
 ## <a name="email--user-reported"></a>_GT_ de correo electrónico notificado por el usuario
 
-Para ver este informe, en el explorador, elija **Ver** > **correo electrónico** > **del usuario notificado**. Esta vista muestra el correo electrónico que los usuarios han notificado como correo electrónico no deseado, no deseado o de suplantación de identidad. 
+Para ver este informe, en el explorador (o en detecciones en tiempo real), elija **Ver** > **correo electrónico** > **del usuario notificado**. Esta vista muestra el correo electrónico que los usuarios han notificado como correo electrónico no deseado, no deseado o de suplantación de identidad. 
 
 ![Mensajes de correo electrónico notificados por los usuarios](media/ThreatExplorerEmailUserReportedViewOptions.png) 
 
@@ -107,7 +105,7 @@ Debajo del gráfico, vea más detalles sobre los mensajes de correo electrónico
 
 ## <a name="content--malware"></a>Malware > de contenido
 
-Para ver este informe, en el explorador, elija **Ver** > **** > **malware**de contenido. Esta vista muestra los archivos que se identificaron como malintencionados con la [protección contra amenazas avanzada de Office 365 en SharePoint Online, OneDrive para la empresa y Microsoft Teams](atp-for-spo-odb-and-teams.md).
+Para ver este informe, en explorador (o detecciones en tiempo real), elija **Ver** > **** > **malware**de contenido. Esta vista muestra los archivos que se identificaron como malintencionados con la [protección contra amenazas avanzada de Office 365 en SharePoint Online, OneDrive para la empresa y Microsoft Teams](atp-for-spo-odb-and-teams.md).
 
 Ver información por familia de malware, tecnología de detección (cómo se detectó el malware) y carga de trabajo (OneDrive, SharePoint o Teams). 
 
@@ -117,15 +115,15 @@ Debajo del gráfico, vea más detalles sobre archivos específicos, como nombre 
   
 ## <a name="click-to-filter-capabilities"></a>Capacidades de hacer clic y filtrar
 
-Con el explorador, puede aplicar un filtro en un clic. Haga clic en un elemento de la leyenda y ese elemento se convertirá en un filtro para el informe. Por ejemplo, supongamos que estamos viendo la vista de malware en el explorador:
+Con el explorador (y las detecciones en tiempo real), puede aplicar un filtro en un clic. Haga clic en un elemento de la leyenda y ese elemento se convertirá en un filtro para el informe. Por ejemplo, supongamos que estamos viendo la vista de malware en el explorador:
   
 ![Ir al explorador de \> administración de amenazas](media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
   
-Al hacer clic en **detonaCiones ATP** en este gráfico, se obtiene una vista similar a la siguiente: 
+Al hacer clic en **detonaciones ATP** en este gráfico, se obtiene una vista similar a la siguiente: 
   
 ![El explorador está filtrado para mostrar solo los resultados de detonaciones de ATP](media/7241d7dd-27bc-467d-9db8-6e806c49df14.png)
   
-En esta vista, ahora miramos los datos de los archivos que se han enumerado con datos adJuntos [seguros de ATP de Office 365](atp-safe-attachments.md). Debajo del gráfico, podemos ver los detalles sobre los mensajes de correo electrónico específicos que tienen datos adjuntos detectados por los datos adJuntos seguros de ATP.
+En esta vista, ahora miramos los datos de los archivos que se han enumerado con datos adjuntos [seguros de ATP de Office 365](atp-safe-attachments.md). Debajo del gráfico, podemos ver los detalles sobre los mensajes de correo electrónico específicos que tienen datos adjuntos detectados por los datos adjuntos seguros de ATP.
   
 ![Detalles específicos sobre los mensajes de correo electrónico con datos adjuntos detectados](media/c91fb05c-d1d4-4085-acc6-f7008a415c2a.png)
   
@@ -137,7 +135,7 @@ La capacidad de filtrar en un clic y navegar a detalles específicos puede ahorr
 
 ## <a name="queries-and-filters"></a>Consultas y filtros
 
-Explorer tiene varios filtros y capacidades de consulta eficaces que le permiten profundizar en los detalles, como los usuarios de destino más importantes, las familias de malware principales, la tecnología de detección y mucho más. Cada tipo de informe ofrece varias formas de ver y explorar los datos.
+El explorador (y el informe de detecciones en tiempo real) tienen varios filtros y capacidades de consulta eficaces que le permiten profundizar en los detalles, como los usuarios de destino más importantes, las familias de malware principales, la tecnología de detección y mucho más. Cada tipo de informe ofrece varias formas de ver y explorar los datos.
 
 > [!IMPORTANT]
-> No use caracteres comodín, como un asterisco (*) o un signo de interrogación (?), en la barra de consulta para Explorer. Al buscar mensajes de correo electrónico en el campo asunto, el explorador realizará una coincidencia parcial y obtendrá resultados similares a una búsqueda con caracteres comodín.
+> No use caracteres comodín, como un asterisco (*) o un signo de interrogación (?), en la barra de consulta para el explorador (o detecciones en tiempo real). Al buscar mensajes de correo electrónico en el campo Subject, el explorador (o detecciones en tiempo real) realizará una coincidencia parcial y los resultados de rendimiento similares a una búsqueda comodín.

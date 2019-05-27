@@ -3,8 +3,8 @@ title: Ver informes de seguridad de correo electrónico &amp; en el centro de se
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 05/13/2019
-ms.audience: ITPro
+ms.date: 05/21/2019
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,13 +14,13 @@ search.appverid:
 ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
-description: Obtenga información sobre cómo buscar y usar informes de seguridad de correo electrónico para su organización con Office 365 Enterprise. Los informes de seguridad de correo electrónico están &amp; disponibles en el centro de seguridad y cumplimiento.
-ms.openlocfilehash: 4271f26c0d8a0a9a5bd4085e38daaabcc375512c
-ms.sourcegitcommit: 7ad5618db6004757599d8b7c153fdb6ab3ba3f6e
+description: Obtenga información sobre cómo buscar y usar informes de seguridad de correo electrónico para su organización. Los informes de seguridad de correo electrónico están &amp; disponibles en el centro de seguridad y cumplimiento.
+ms.openlocfilehash: 1dc009260e80c2aca1c5107d1c5f116ec63dd94f
+ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "33970261"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34408415"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>Ver informes de seguridad de correo electrónico &amp; en el centro de seguridad y cumplimiento
 
@@ -65,7 +65,7 @@ Use este informe permite que el equipo de seguridad y cumplimiento de la organiz
 
 ## <a name="threat-protection-status-report"></a>Informe de estado de protección contra amenazas
 
-El informe de **Estado de protección contra amenazas** es un informe inteligente que muestra el correo electrónico malintencionado detectado y bloqueado por Exchange Online Protection. Este informe muestra información sobre el correo electrónico identificado como malware o como un intento de suplantación de identidad. 
+El informe de **Estado de protección contra amenazas** es un informe inteligente que muestra el correo electrónico malintencionado detectado y bloqueado por Exchange Online Protection. Este informe es útil para ver el correo electrónico identificado como malware o un intento de suplantación de identidad (phishing) a lo largo del tiempo (hasta 90 días) y permite a los administradores de seguridad identificar las tendencias o determinar si las directivas necesitan ajustes.
 
 > [!NOTE]
 > Un informe de estado de protección contra amenazas está disponible para los clientes que tengan [Office 365 ATP](office-365-atp.md) o [Exchange Online Protection](eop/exchange-online-protection-eop.md) (EOP); sin embargo, la información que se muestra en el informe de estado de la protección contra amenazas para los clientes de ATP probablemente contendrá distintos datos de los que pueden ver los clientes de EOP. Por ejemplo, los clientes de EOP pueden ver información sobre malware detectado en el correo electrónico, pero no información sobre [los archivos malintencionados detectados en SharePoint Online, OneDrive o Microsoft Teams](atp-for-spo-odb-and-teams.md), una capacidad específica para ATP. ([Obtenga más información sobre los informes de ATP](view-reports-for-atp.md)).
@@ -74,7 +74,9 @@ Para ver este informe, en el [Centro &amp; de seguridad y cumplimiento](https://
   
 ![Informe de estado de protección contra amenazas](media/0ff86e12-c2b2-4d89-92a5-cefb054dc070.png)
   
-Al abrir por primera vez el informe de estado de protección contra amenazas, el informe muestra los datos de los últimos siete días de forma predeterminada; sin embargo, puede hacer clic en **filtros** y cambiar el intervalo de fechas de hasta 90 días de detalle. Este informe es útil para ver la eficacia y el impacto de las características de la [protección de Exchange Online](eop/eop-features.md)de su organización, así como para las tendencias a largo plazo. 
+Al abrir por primera vez el informe de estado de protección contra amenazas, el informe muestra los datos de los últimos siete días de forma predeterminada; sin embargo, puede hacer clic en **filtros** y cambiar el intervalo de fechas de hasta 90 días de detalle. (Si usa una suscripción de prueba, es posible que se limite a 30 días de datos).
+
+Este informe es útil para ver la eficacia y el impacto de las características de la [protección de Exchange Online](eop/eop-features.md)de su organización, así como para las tendencias a largo plazo. 
   
 ![Filtros del informe de estado de protección contra amenazas](media/ab6b6b8d-e97a-4c3a-8fb1-c4940dcb7a07.png)
   

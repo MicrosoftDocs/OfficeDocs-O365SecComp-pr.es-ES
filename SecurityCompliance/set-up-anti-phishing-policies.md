@@ -12,12 +12,12 @@ ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 ms.collection:
 - M365-security-compliance
 description: Protección contra suplantación de identidad (phishing), con protección completa como parte de la protección básica y protección contra amenazas avanzada de Office 365 en Office 365 Exchange Online Protection, puede ayudar a proteger su organización de ataques malintencionados basados en suplantación de identidad. y otros ataques de suplantación de identidad.
-ms.openlocfilehash: cabcc4ab6401f2ebfdbf0c849df4da6a7691b6b8
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: ebe1d4322151c1828f662ca0bf1bd495e808093d
+ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077216"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34408375"
 ---
 # <a name="set-up-office-365-atp-anti-phishing-and-anti-phishing-policies"></a>Configurar directivas contra suplantación de identidad y directivas contra suplantación de identidad de ATP de Office 365
 
@@ -142,8 +142,8 @@ Puede eliminar las directivas personalizadas que haya creado mediante el centro 
 
 Una vez que se hayan implementado las directivas antiphishing, podrá ver cómo funcionan las características de protección contra amenazas en su organización al ver los informes. Vea los siguientes recursos para obtener más información:
 
-- [Ver informes sobre la protección contra amenazas avanzada de Office 365](view-reports-for-atp.md) o [ver los informes de seguridad de correo electrónico](view-email-security-reports.md)
+- [Ver informes para Office 365 ATP](view-reports-for-atp.md) o [ver informes de seguridad de correo electrónico](view-email-security-reports.md)
 
-- [Usar el explorador (también conocido como explorador de amenazas)](use-explorer-in-security-and-compliance.md)
+- [Usar el explorador de amenazas (o detecciones en tiempo real)](threat-explorer.md)
 
 Manténgase al tanto de las nuevas características que llegarán a ATP. visite el [plan de desarrollo de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=O365) y obtenga información sobre [las nuevas características que se agregan a ATP](office-365-atp.md#new-features-in-office-365-atp).

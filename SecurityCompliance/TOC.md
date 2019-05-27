@@ -100,7 +100,7 @@
 #### [Mantener la seguridad de los usuarios con la investigación y respuesta de amenazas](keep-users-safe-with-office-365-ti.md)
 #### [Buscar e investigar el correo electrónico malintencionado que se ha entregado](investigate-malicious-email-that-was-delivered.md)
 ### [Investigación y respuesta de amenazas](automated-investigation-response-office.md)
-### [Explorador de amenazas](use-explorer-in-security-and-compliance.md)
+### [El explorador de amenazas y detecciones en tiempo real](threat-explorer.md)
 #### [Vistas del explorador de amenazas](threat-explorer-views.md)
 ### [Rastreadores de amenazas](threat-trackers.md)
 ### [Simulador de ataques en Office 365](attack-simulator.md)
@@ -164,11 +164,11 @@
 ## [Responder a una cuenta de correo electrónico en peligro en Office 365](responding-to-a-compromised-email-account.md)
 
 # Administración de registros
+## [Administración de registros](records-management.md)
 ## Plan de archivos
 ### [Administrador del plan de archivos](file-plan-manager.md)
 ### [Etiquetas de retención](labels.md)
-### 
-  [Crear y publicar etiquetas de retención con PowerShell](https://docs.microsoft.com/es-ES/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+### [Crear y publicar etiquetas de retención con PowerShell](https://docs.microsoft.com/es-ES/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
 ### [Ver el uso de etiquetas con el análisis de etiquetas](label-analytics.md)
 ### [Ver la actividad de etiquetas de documentos](view-label-activity-for-documents.md)
 ### [Ver los informes de gobierno de datos](view-the-data-governance-reports.md)
@@ -201,8 +201,7 @@
 ### [Administrador del plan de archivos](file-plan-manager.md)
 ### [Etiquetas de retención](labels.md)
 ### [Cumplir con la norma SEC 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
-### 
-  [Crear y publicar etiquetas de retención con PowerShell](https://docs.microsoft.com/es-ES/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+### [Crear y publicar etiquetas de retención con PowerShell](https://docs.microsoft.com/es-ES/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
 ### [Acerca de la retención basada en eventos](event-driven-retention.md)
 ### [Retención automática basada en eventos](automate-event-driven-retention.md)
 ## [Eliminar datos](disposition-reviews.md)

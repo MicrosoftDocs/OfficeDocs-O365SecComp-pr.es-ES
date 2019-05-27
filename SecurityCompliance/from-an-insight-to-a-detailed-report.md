@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 6/4/2018
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.assetid: f3724c6c-ec64-4a24-ba71-bfd68020d4d2
 ms.collection:
 - M365-security-compliance
 description: Consulte Cómo puede pasar de una visión a un informe detallado en el centro de &amp; cumplimiento de seguridad a través de un ejemplo de prevención de pérdida de datos.
-ms.openlocfilehash: 101aeec71e724204018dee8d12d6c74a120578bf
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: f87902551aa75e761cb297e127a14aab047d748e
+ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32255418"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34408295"
 ---
 # <a name="walkthrough---from-an-insight-to-a-detailed-report"></a>Tutorial: desde un reporte a un informe detallado
 
@@ -38,7 +38,7 @@ Vamos a examinar el flujo del panel para obtener información sobre un informe d
   
 3. Al seleccionar un elemento de la lista, se abre un panel en el que se pueden ver más detalles sobre el elemento. (Haga clic en un elemento).<br/>![Detalles de una visión seleccionada](media/dcbb389f-23b0-4031-b789-4a49068af85a.png)<br/>Vemos las acciones recomendadas que debemos tener en cuenta, como la revisión de las directivas. ([Obtenga más información sobre las directivas de prevención de pérdida de datos](data-loss-prevention-policies.md)).
     
-4. También tenemos un vínculo para ver más detalles. (Haga clic en **ver actividad relacionada en el explorador**).<br/>Esto nos lleva a un tipo de informe denominado [Explorer](use-explorer-in-security-and-compliance.md) (también conocido como explorador de amenazas), donde podemos aplicar filtros y profundizar en detalles específicos.<br/>![Vista de explorador con más detalles sobre un conocimiento seleccionado](media/3ad15b15-7158-44b7-beda-013351bd868e.png)
+4. También tenemos un vínculo para ver más detalles. (Haga clic en **ver actividad relacionada en el explorador**).<br/>Esto nos lleva a un tipo de informe denominado [Explorador de amenazas (y detecciones en tiempo real)](threat-explorer.md), donde podemos aplicar filtros y profundizar en detalles específicos.<br/>![Vista de explorador con más detalles sobre un conocimiento seleccionado](media/3ad15b15-7158-44b7-beda-013351bd868e.png)
   
 De esta forma, podemos desplazarse fácilmente de una perspectiva a sus detalles subyacentes y tomar decisiones más informadas sobre prevención de pérdida de datos para una organización.
   

@@ -15,12 +15,12 @@ ms.assetid: 3387bfc3-028a-42f4-8133-4cbecfaab812
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo las capacidades de investigación y respuesta de las amenazas de Office 365 pueden ayudar a su organización a detectar intrusiones y amenazas, y mitigar rápidamente y recuperarse de amenazas.
-ms.openlocfilehash: 51d776fe2ed5957016028451c1f7dcd1812973c3
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: 6cd1a2add3300dad6d869de82d1a1616298fc635
+ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077266"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "34408285"
 ---
 # <a name="keep-your-office-365-users-safe-with-office-365-threat-investigation-and-response-capabilities"></a>Mantener a los usuarios de Office 365 seguros con capacidades de investigación y respuesta de amenazas de Office 365
 
@@ -37,7 +37,7 @@ Hemos agregado nuevas funcionalidades recientemente para ayudarle a detectar y r
   
 ## <a name="detect-intrusions-and-threats"></a>Detectar intrusiones y amenazas
 
-[Explorador](use-explorer-in-security-and-compliance.md) (también conocido como explorador de amenazas) ayuda a los administradores y analistas de seguridad a identificar y comprender las amenazas activas en su empresa, ya que la configuración de seguridad más compleja puede eludirse con configuraciones de usuario aparentemente inocuas, como Safe listas blancas de remitentes. Explorer ayuda a los administradores globales o de seguridad de Office 365 a determinar rápidamente si los usuarios han estado comprometidos con amenazas como malware o phish. Esto ayuda a priorizar qué usuarios están más expuestos para una amenaza y la respuesta necesaria. 
+[Explorador de amenazas (o detecciones en tiempo real)](threat-explorer.md) (también conocido como explorador de amenazas) ayuda a los administradores y analistas de seguridad a identificar y comprender las amenazas activas en su empresa, ya que la configuración de seguridad más compleja puede eludirse con configuraciones de usuario aparentemente inocuas, como Safe listas blancas de remitentes. Explorer ayuda a los administradores globales o de seguridad de Office 365 a determinar rápidamente si los usuarios han estado comprometidos con amenazas como malware o phish. Esto ayuda a priorizar qué usuarios están más expuestos para una amenaza y la respuesta necesaria. 
   
 El explorador también ayuda a los administradores a navegar por las relaciones entre los usuarios y el correo. ¿Conoce un correo determinado que fue malo? Buscarla para ver qué usuarios recibieron el correo y, a continuación, seguir la serie de eventos y ver lo que los usuarios han hecho a su vez.
 
