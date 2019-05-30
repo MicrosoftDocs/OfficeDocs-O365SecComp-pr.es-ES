@@ -3,20 +3,20 @@ title: El nuevo centro de seguridad 365 de Microsoft y el centro de cumplimiento
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 04/22/2019
-ms.audience: ITPro
+ms.date: 05/29/2019
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
 localization_priority: Normal
 description: Prepárese para el nuevo centro de seguridad y cumplimiento de Microsoft 365
-ms.openlocfilehash: a64c64756f0c4588efcc6e467316b90aa1aabc3f
-ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
+ms.openlocfilehash: 9af224f72fc55e6981cf75c6c5596bde6645f75a
+ms.sourcegitcommit: 6eb51931242d07abde2e37f1bd57d13bc724f0de
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2019
-ms.locfileid: "33402998"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34547905"
 ---
 # <a name="the-new-microsoft-365-security-center-and-microsoft-365-compliance-center-are-now-generally-available"></a>El nuevo centro de seguridad 365 de Microsoft y el centro de cumplimiento de Microsoft 365 están disponibles para el público
 
@@ -62,6 +62,8 @@ Si tiene otra suscripción, como un plan independiente que incluya el centro de 
 
 Con la mejor navegación, las soluciones integradas y una experiencia simplificada, podrá ver y obtener acceso a la información que más le interesa y aprovechar las ventajas de las eficaces soluciones de seguridad y cumplimiento de Microsoft 365. Y, mientras se agregan más funcionalidad y soluciones en los próximos meses, el centro de cumplimiento () de Office[https://protection.microsoft.com](https://protection.microsoft.com)365 Security & () sigue estando disponible.
 
+Para obtener acceso al centro de cumplimiento de & de seguridad de Office 365, en el panel de navegación de la parte izquierda de la pantalla, elija **más recursos**. A continuación, en **Office 365 Security & Compliance Center**, elija **abrir**.
+
 ### <a name="smooth-transition"></a>Transición suave
 
 Puede esperar una transición suave a los nuevos centros. Finalmente, se retirará el anterior Centro de cumplimiento[https://protection.microsoft.com](https://protection.microsoft.com)de Microsoft 365 Security & (). Aunque la experiencia del administrador cambiará, esto no afectará a las configuraciones de seguridad y cumplimiento actuales. Si su organización tiene Microsoft 365 Enterprise E3 o E5, los administradores de seguridad y cumplimiento pueden:
@@ -87,7 +89,7 @@ Los usuarios deben tener asignados el administrador global, el administrador de 
 
 - Los administradores de seguridad, los operadores de seguridad y los lectores de seguridad pueden obtener acceso al centro de seguridad
 
- Para obtener más información acerca de estos roles, consulte perMissions [in the Office 365 Security _AMP_ Compliance Center](permissions-in-the-security-and-compliance-center.md).
+ Para obtener más información acerca de estos roles, consulte Permissions [in the Office 365 Security _AMP_ Compliance Center](permissions-in-the-security-and-compliance-center.md).
  
 En la tabla siguiente se resume quién puede tener acceso a diversos portales en Azure, Office 365 y Windows:
 

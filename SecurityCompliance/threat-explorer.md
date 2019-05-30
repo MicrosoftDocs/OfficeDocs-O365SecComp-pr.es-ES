@@ -15,16 +15,16 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre el explorador (y las detecciones en tiempo real) &amp; en el centro de seguridad y cumplimiento.
-ms.openlocfilehash: 62ba70cb62b0c92cf65d77dfaf3eb7306e93fa98
-ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
+ms.openlocfilehash: 030f866c5e86daa3dc543bddae7152e19f377d3b
+ms.sourcegitcommit: 6c0fcb82178a4ac26375545f328389a6852a81be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "34415741"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "34490536"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Explorador de amenazas (y detecciones en tiempo real)
 
-Si su organización tiene [office 365 Advanced Threat Protection](office-365-atp.md) (Office 365 ATP) y dispone de los [permisos necesarios](#required-licenses-and-permissions), tiene tanto exploradores **** como detecciones en **tiempo real** (anteriormente informes en tiempo real; [consulte what's New ](#new-features-in-real-time-detections)!). En el centro de seguridad & cumplimiento, vaya a **Administración de amenazas**y, a continuación, elija **Explorador** o **detecciones en tiempo real**. 
+Si su organización tiene [office 365 Advanced Threat Protection](office-365-atp.md) (Office 365 ATP) y dispone de los [permisos necesarios](#required-licenses-and-permissions), tendrá un **Explorador** o detecciones en **tiempo real** (anteriormente informes en *tiempo real* , [consulte ](#new-features-in-real-time-detections)novedades). En el centro de seguridad & cumplimiento, vaya a **Administración de amenazas**y, a continuación, elija **Explorador** o **detecciones en tiempo real**. 
 
 |Con el plan ATP 2, verá:  |Con el plan ATP 1, verá:  |
 |---------|---------|

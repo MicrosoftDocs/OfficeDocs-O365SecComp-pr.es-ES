@@ -3,18 +3,18 @@ title: Información general sobre el nuevo centro de cumplimiento de Microsoft 3
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 04/09/2019
-ms.audience: ITPro
+ms.date: 05/29/2019
+audience: ITPro
 ms.topic: article
 ms.service: o365-seccomp
 localization_priority: Normal
 description: Obtenga información sobre el nuevo centro de cumplimiento de Microsoft 365, incluido lo que contiene, cómo obtenerlo y los pasos siguientes.
-ms.openlocfilehash: ae608d1aafb803fabe6ed1eba3804b9921bac7b2
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 149058d6204b7ad9d33fe656a8176609cfda5991
+ms.sourcegitcommit: 6eb51931242d07abde2e37f1bd57d13bc724f0de
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32265592"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34547934"
 ---
 # <a name="overview-of-the-all-new-microsoft-365-compliance-center"></a>Información general sobre el nuevo centro de cumplimiento de Microsoft 365
 
@@ -68,7 +68,7 @@ Además de los vínculos de las tarjetas en la Página principal, encontrará un
 
 |  |  |
 |---------|---------|
-|![Navegación en el centro de cumplimiento de Microsoft 365](media/m365-compliance-center-leftnav.png)  |<br/><br/> Ir a **alertas** para ver y resolver [alertas](alerts.md)<br/><br/>Visite **Reports &** Reports para ver datos sobre el [uso y la retención de etiquetas](sensitivity-labels.md), coincidencias y invalidaciones de [directivas DLP](view-the-dlp-reports.md), [archivos](https://docs.microsoft.com/cloud-app-security/file-filters)compartidos, [aplicaciones de terceros en uso](https://docs.microsoft.com/cloud-app-security/discovered-apps)y mucho más.<br/><br/>ExPanda la sección **clasificación** para obtener acceso a las [etiquetas](labels.md), [las directivas de etiquetas](sensitivity-labels.md#what-label-policies-can-do), los [tipos de información confidencial](what-the-sensitive-information-types-look-for.md)y el análisis de las [etiquetas](view-label-activity-for-documents.md).<br/><br/>Vaya a **directivas** para ver las [alertas](alerts.md) y acceder a sus [DLP](data-loss-prevention-policies.md) y directivas de [retención](retention-policies.md) .<br/><br/> Use los vínculos de la sección **soluciones** para acceder a las soluciones de cumplimiento de la organización. Entre ellos se incluyen: <br/>[Disposiciones > del gobierno de datos](disposition-reviews.md)<br/>[eDiscovery (versión preliminar)](compliance20/overview-ediscovery-20.md)<br/>[Supervisión](supervision-policies.md)<br/>[Investigaciones de datos](datainvestigations/overview-data-investigations.md)<br/>[Solicitudes de interesados](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)        |
+|![Navegación en el centro de cumplimiento de Microsoft 365](media/m365-compliance-center-leftnav.png)  |<br/><br/> Ir a **alertas** para ver y resolver [alertas](alerts.md)<br/><br/>Visite **Reports &** Reports para ver datos sobre el [uso y la retención de etiquetas](sensitivity-labels.md), coincidencias y invalidaciones de [directivas DLP](view-the-dlp-reports.md), [archivos](https://docs.microsoft.com/cloud-app-security/file-filters)compartidos, [aplicaciones de terceros en uso](https://docs.microsoft.com/cloud-app-security/discovered-apps)y mucho más.<br/><br/>Expanda la sección **clasificación** para obtener acceso a las [etiquetas](labels.md), [las directivas de etiquetas](sensitivity-labels.md#what-label-policies-can-do), los [tipos de información confidencial](what-the-sensitive-information-types-look-for.md)y el análisis de las [etiquetas](view-label-activity-for-documents.md).<br/><br/>Vaya a **directivas** para ver las [alertas](alerts.md) y acceder a sus [DLP](data-loss-prevention-policies.md) y directivas de [retención](retention-policies.md) .<br/><br/> Use los vínculos de la sección **soluciones** para acceder a las soluciones de cumplimiento de la organización. Entre ellos se incluyen: <br/>[Disposiciones > del gobierno de datos](disposition-reviews.md)<br/>[eDiscovery (versión preliminar)](compliance20/overview-ediscovery-20.md)<br/>[Supervisión](supervision-policies.md)<br/>[Investigaciones de datos](datainvestigations/overview-data-investigations.md)<br/>[Solicitudes de interesados](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)        |
 
 
 ## <a name="how-do-i-get-this"></a>¿Cómo obtengo esto?
@@ -89,9 +89,14 @@ Todavía estamos desarrollando el centro de cumplimiento de Microsoft 365 y agre
 
 En primer lugar, asegúrese de que tiene las [licencias y los permisos](microsoft-security-and-compliance.md#required-licenses-and-permissions)adecuados. A continuación, inicie sesión [https://compliance.microsoft.com](https://compliance.microsoft.com)en. Si aún no ve el nuevo centro de cumplimiento, lo tendrá pronto.
 
-### <a name="i-cant-find-some-of-my-compliance-settings-what-do-i-do"></a>No encuentro algunas de las opciones de configuración de cumplimiento. What do I do?
+### <a name="some-of-my-compliance-features-are-not-available-in-the-microsoft-365-compliance-center-what-do-i-do"></a>Algunas de mis características de cumplimiento no están disponibles en el centro de cumplimiento de Microsoft 365. What do I do?
 
-Todavía estamos agregando funcionalidad al centro de cumplimiento de Microsoft 365. Si no encuentra algo, como la búsqueda de registros de auditoría, intente navegar al centro de cumplimiento de & de seguridad de[https://protection.office.com](https://protection.office.com)Office 365 (). La configuración se guardará en el centro de cumplimiento de Office 365 Security & y en el nuevo centro de cumplimiento de Microsoft 365 automáticamente.
+Todavía estamos agregando funcionalidad al centro de cumplimiento de Microsoft 365. Si no encuentra algo, como la búsqueda de registros de auditoría, use el centro de cumplimiento de Office 365[https://protection.office.com](https://protection.office.com)Security & (). La configuración se guardará en el centro de cumplimiento de Office 365 Security & y en el nuevo centro de cumplimiento de Microsoft 365 automáticamente.
+
+Para ir allí, en el centro de cumplimiento de Microsoft 365, en el panel de navegación de la parte izquierda de la pantalla, elija **más recursos**y, a continuación, en **Office 365 Security & Compliance Center**, elija **abrir**.
+
+![Más recursos](media/MoreResourcesShowAll.png)
+
 
 ## <a name="next-steps"></a>Pasos siguientes
 

@@ -14,18 +14,22 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: En este artículo se describe la herramienta nueva investigación de datos (versión preliminar) en Microsoft 365.
-ms.openlocfilehash: 1e7621d577d8d08fd27dc7e20e6b8e7a3491236f
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 2b125d8f1dc24337804ea0461039aba824c42b8a
+ms.sourcegitcommit: 6eb51931242d07abde2e37f1bd57d13bc724f0de
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34150682"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34547915"
 ---
 # <a name="overview-of-data-investigations-preview-in-microsoft-365"></a>Información general sobre las investigaciones de datos (versión preliminar) en Microsoft 365
 
 La reescritura de datos se produce cuando un documento que contiene contenido confidencial, confidencial o malintencionado se suelta en un entorno que no es de confianza. Cuando se detecta una reescritura de datos, es importante que contenga rápidamente el entorno, evalúe el tamaño y las ubicaciones del derrame, examine las actividades de los usuarios que lo rodean y, a continuación, elimine los datos derramados del servicio. Mediante la herramienta nueva investigación de datos (versión preliminar), puede buscar datos confidenciales, malintencionados o mal colocados en Office 365, investigar qué ha sucedido y realizar las acciones adecuadas para corregir el derrame.  
 
 En este artículo se describe el uso de las funciones de la nueva herramienta de investigaciones de datos (vista previa) para tratar un escenario de derrame de datos.
+
+## <a name="permissions"></a>Permisos
+
+Para tener acceso a una investigación de datos y realizarla, debe ser miembro del grupo de funciones de investigador de datos. Para obtener más información, vea [asignar permisos para investigaciones de datos](permissions.md).
 
 ## <a name="data-investigations-preview-workflow"></a>Flujo de trabajo de investigaciones de datos (vista previa) 
 

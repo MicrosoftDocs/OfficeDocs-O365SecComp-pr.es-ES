@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Use el centro de seguridad & cumplimiento para buscar en el registro de auditoría unificado para ver la actividad del usuario y del administrador de la organización de Office 365. '
-ms.openlocfilehash: 4760d36a587dd1aad0463dcddc19400e8138135c
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: d8a674785c982b19b04b5bd14cd941dde7a86f61
+ms.sourcegitcommit: 6c0fcb82178a4ac26375545f328389a6852a81be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158792"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "34490496"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Buscar el registro de auditoría en el centro de seguridad & cumplimiento
 
@@ -115,7 +115,6 @@ Asegúrese de leer los siguientes elementos antes de comenzar a buscar en el reg
     |eDiscovery  <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
     |Exchange Online  <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
     |Microsoft Flow  <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
-    |Microsoft Forms  <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
     |Microsoft Project  <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
     |Microsoft Stream  <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/>| |
     |Microsoft Teams  <br/> |![Marca de verificación](media/f3b4c351-17d9-42d9-8540-e48e01779b31.png)           <br/> ||
@@ -405,7 +404,7 @@ En la siguiente tabla se enumeran las actividades de sincronización de archivos
 |Archivos descargados en el equipo  <br/> |FileSyncDownloadedFull  <br/> |El usuario establece una relación de sincronización y descarga archivos correctamente por primera vez en su equipo desde una biblioteca de documentos.  <br/> |
 |Cambios de archivo descargados en el equipo  <br/> |FileSyncDownloadedPartial  <br/> |El usuario descarga correctamente los cambios en los archivos de una biblioteca de documentos. Esta actividad indica que los cambios realizados en los archivos de la biblioteca de documentos se descargaron en el equipo del usuario. Solo se descargaron los cambios porque el usuario ha descargado anteriormente la biblioteca de documentos (como indica la actividad de los **archivos descargados en el equipo** ).  <br/> |
 |Archivos cargados en la biblioteca de documentos  <br/> |FileSyncUploadedFull  <br/> |El usuario establece una relación de sincronización y carga archivos correctamente por primera vez desde su equipo a una biblioteca de documentos.  <br/> |
-|Cambios en archivos cargados en la biblioteca de documentos  <br/> |FileSyncUploadedPartial  <br/> |El usuario carga correctamente los cambios en los archivos de una biblioteca de documentos. Este evento indica que cualquier cambio realizado en la versión local de un archivo de una biblioteca de documentos se carga correctamente en dicha biblioteca. Solo se descargan los cambios porque el usuario cargó anteriormente esos archivos (según se indica en la actividad * * archivos cargados en la biblioteca de documentos * *).  <br/> |
+|Cambios en archivos cargados en la biblioteca de documentos  <br/> |FileSyncUploadedPartial  <br/> |El usuario carga correctamente los cambios en los archivos de una biblioteca de documentos. Este evento indica que cualquier cambio realizado en la versión local de un archivo de una biblioteca de documentos se carga correctamente en dicha biblioteca. Solo se cargan los cambios porque los archivos cargados anteriormente por el usuario (como indica la actividad de los **archivos cargados en la biblioteca de documentos** ).  <br/> |
 ||||
   
 ### <a name="site-administration-activities"></a>Actividades de administración del sitio

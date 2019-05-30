@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Los administradores pueden configurar un conector nativo para importar y archivar datos de Twitter a Office 365. Una vez que estos datos se han importado a Office 365, puede usar las características de cumplimiento, como las directivas de retención legal, búsqueda de contenido y retención, para administrar el gobierno de los datos de Twitter de la organización.
-ms.openlocfilehash: 01c77436fc346a30a3d2cafeac731bf091296632
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 4d3bce8418ef2fa62c40d221549e6e089dee9647
+ms.sourcegitcommit: 6c0fcb82178a4ac26375545f328389a6852a81be
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34150542"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "34490555"
 ---
 # <a name="deploy-a-connector-to-archive-twitter-data-in-office-365"></a>Implementar un conector para archivar datos de Twitter en Office 365
 
@@ -193,10 +193,10 @@ La aplicación de desarrollo de Twitter ya está lista para usarse.
 
 4. En **detalles de configuración**, especifique las siguientes opciones de configuración 
 
-   - **Identificador** de la aplicación de Twitter: el identificador de la aplicación de Twitter que creó en el paso 5.
-   - **Secreto** de la aplicación de Twitter: clave secreta de la API para la aplicación de Twitter que creó en el paso 5.
-   - **Token de cliente de Twitter** : el token de acceso que creó en el paso 5.
-   - El **secreto de token de cliente de Twitter** : el secreto de token de acceso que creó en el paso 5.
+   - **Clave de API de Twitter** : el identificador de la aplicación de Twitter que creó en el paso 5.
+   - **Clave secreta** de la API de Twitter: clave secreta de la API para la aplicación de Twitter que creó en el paso 5.
+   - **Token de acceso de Twitter** : el token de acceso que creó en el paso 5.
+   - El **secreto de token de acceso de Twitter** es el secreto de token de acceso que creó en el paso 5.
    - **Identificador** de la aplicación de AAD: el identificador de aplicación de la aplicación de Azure Active Directory que creó en el paso 2.
    - **Secreto de la aplicación AAD** : el valor del secreto APISecretKey que creó en el paso 4.
    - **URI de la aplicación AAD** : el URI de la aplicación AAD obtenido en el paso 2; por ejemplo, https://microsoft.onmicrosoft.com/2688yu6n-12q3-23we-e3ee-121111123213.

@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: bca6967fd99696ffb4b610105e448011b9837be4
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: f8e253a3d38f0f4846485e3b88ea09914d9978ce
+ms.sourcegitcommit: 6eb51931242d07abde2e37f1bd57d13bc724f0de
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34150862"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34547955"
 ---
 # <a name="error-remediation-when-processing-data-for-an-investigation"></a>Corrección de errores al procesar datos para una investigación
 
@@ -40,7 +40,7 @@ Use el siguiente flujo de trabajo para corregir los archivos con errores en los 
 
     ![Corrección de errores](../media/8c2faf1a-834b-44fc-b418-6a18aed8b81a.png)
 
-    La sesión de corrección de errores comenzará a partir de una etapa de preparación en la que los archivos con errores se moverán a una ubicación segura de Azure que se descargará.
+    La sesión de corrección de errores comenzará, a partir de una fase de preparación, en la que los archivos con errores se copian en una ubicación segura de Azure para que se puedan descargar.
 
     ![Preparación de la corrección de errores](../media/390572ec-7012-47c4-a6b6-4cbb5649e8a8.png)
 
@@ -63,17 +63,18 @@ Use el siguiente flujo de trabajo para corregir los archivos con errores en los 
     ![Preparación de la corrección de errores](../media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)
 
      > [!NOTE]
-     > Si tiene problemas al ejecutar este comando, consulte https://go.microsoft.com/fwlink/?linkid=2038117 para obtener sugerencias para la solución de problemas.
+     > Si tiene problemas al ejecutar este comando, consulte [solucionar problemas de AzCopy en EDiscovery avanzado](../compliance20/troubleshooting-azcopy.md).
 
 7. Después de descargar los archivos, puede corregirlos con una herramienta adecuada. Para los archivos protegidos con contraseña, hay varias herramientas de averiguación de contraseñas que puede usar. Si conoce las contraseñas de los archivos, puede abrirlas y quitar la protección con contraseña.
-    > [!NOTE]
+    
+   > [!NOTE]
     > Es importante que mantenga intactos la estructura de directorios y los nombres de archivo de los archivos corregidos.  Todas las convenciones de nomenclatura usadas en los archivos y carpetas descargados hacen posible asociar los archivos de remdiated con el original.
 
 8. Ahora, vuelva a investigaciones de datos (versión preliminar) y haga clic en **siguiente: cargar archivos**.  Se desplazará al siguiente paso en el que ahora puede cargar los archivos.
 
     ![Cargar archivos](../media/af3d8617-1bab-4ecd-8de0-22e53acba240.png)
 
-9. Especifique la ubicación de los archivos corregidos en el cuadro **de texto Ruta de acceso a la ubicación del archivo** y, a continuación, haga clic en **copiar a clibpboard**.
+9. Especifique la ubicación de los archivos corregidos en el cuadro **de texto Ruta de acceso a la ubicación del archivo** y, a continuación, haga clic en **copiar al**portapapeles.
 
 10. Pegue el comando en un símbolo del sistema de Windows y presione **entrar** para cargar los archivos.
 
@@ -87,12 +88,9 @@ Use el siguiente flujo de trabajo para corregir los archivos con errores en los 
 
 Cuando se cargan los archivos corregidos, se conservan los metadatos originales, con la excepción de los siguientes campos: 
 
-- DocumentExtractedUrl
 - ExtractedTextSize
 - HasText
 - IsErrorRemediate
-- IsParentExtractedUrl
-- ItemExtractedUrl
 - LoadId
 - ProcessingErrorMessage
 - ProcessingStatus
