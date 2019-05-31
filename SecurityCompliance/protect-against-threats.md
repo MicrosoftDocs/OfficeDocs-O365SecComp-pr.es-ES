@@ -15,12 +15,12 @@ ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 ms.collection:
 - M365-security-compliance
 description: Use este artículo como guía para configurar las características de protección contra amenazas ahora.
-ms.openlocfilehash: a9a2baccb4709b3e8d77f620281458d51ed0583a
-ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
+ms.openlocfilehash: 6700e2714ea607f675b487204404d53c1d51db93
+ms.sourcegitcommit: 424a614141c1f19a1c84a67ec2d71dd3d7ef6694
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "34408395"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "34590583"
 ---
 # <a name="protect-against-threats-in-office-365"></a>Protección contra amenazas en Office 365
 
@@ -42,7 +42,7 @@ Las características de protección contra amenazas se incluyen en todas las sus
 |Protección contra suplantación de identidad    | [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description)      |
 |Protección contra suplantación de identidad avanzada    | [Office 365 ATP](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)   |
 |Protección contra correo no deseado     | [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description)       |
-|Purgado automático de cero horas (para correo electrónico)    | [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description) EOP        |
+|Purgado automático de cero horas (para correo electrónico)    | [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description)        |
 |Registro de auditoría (se usa con fines de informes)    | [Exchange Online](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description)        |
 
 ### <a name="roles-and-permissions"></a>Roles y permisos
