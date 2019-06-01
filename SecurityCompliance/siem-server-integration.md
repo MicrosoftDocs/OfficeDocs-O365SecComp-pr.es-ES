@@ -14,18 +14,18 @@ ms.custom:
 - Ent_Solutions
 - SIEM
 description: 'Resumen: Lea este artículo para obtener información general sobre la integración del servidor SIEM con Microsoft 365.'
-ms.openlocfilehash: f1911aabaccb7a6c2a56bbd5ff37e396730db72a
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: 05b6e980ae8c6a6b5d32fb3428748468dd861902
+ms.sourcegitcommit: 4fedeb06a6e7796096fc6279cfb091c7b89d484d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077526"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34652583"
 ---
 # <a name="siem-server-integration-with-microsoft-365-services-and-applications"></a>Integración del servidor de SIEM con los servicios y aplicaciones de Microsoft 365
 
 ## <a name="overview"></a>Información general
 
-Si su organización usa un servidor de administración de eventos e información de seguridad (SIEM), o si tiene previsto obtener un servidor de SIEM en breve, es posible que se pregunte cómo se integrará con el 365 de Microsoft, incluido Office 365 Enterprise. Si necesita un servidor de SIEM depende de muchos factores, como los requisitos de seguridad de la organización. Microsoft 365 ofrece una amplia variedad de características de seguridad; sin embargo, si su organización tiene contenido y aplicaciones locales y en la nube (como en el caso de una implementación de nube híbrida), puede considerar la posibilidad de agregar un servidor SIEM para una protección adicional. O bien, si su organización tiene unos requisitos de seguridad especialmente estrictos que debe cumplir, puede considerar la posibilidad de agregar un servidor SIEM a su entorno.
+Si su organización usa un servidor de administración de eventos e información de seguridad (SIEM) o si tiene previsto obtener un servidor de SIEM en breve, es posible que se pregunte cómo se integrará con Microsoft 365, incluido Office 365 E5. Si necesita un servidor de SIEM depende de muchos factores, como los requisitos de seguridad de la organización. Microsoft 365 ofrece una amplia variedad de características de seguridad; sin embargo, si su organización tiene contenido y aplicaciones locales y en la nube (como en el caso de una implementación de nube híbrida), puede considerar la posibilidad de agregar un servidor SIEM para una protección adicional. O bien, si su organización tiene unos requisitos de seguridad especialmente estrictos que debe cumplir, puede considerar la posibilidad de agregar un servidor SIEM a su entorno.
 
 ## <a name="siem-server-integration-microsoft-365"></a>Integración del servidor de SIEM Microsoft 365
 
@@ -45,7 +45,7 @@ Un servidor de SIEM puede recibir datos de una amplia variedad de aplicaciones y
 
 Asegúrese de que el registro de auditoría esté activado antes de configurar la integración del servidor SIEM. 
 
-- En SharePoint Online, OneDrive para la empresa y Azure Active Directory, [el registro de auditoría está activado en el centro de seguridad _AMP_ cumplimiento](https://docs.microsoft.com/office365/securitycompliance/turn-audit-log-search-on-or-off).
+- En SharePoint Online, OneDrive para la empresa y Azure Active Directory, [el registro de auditoría está activado en el centro de seguridad & cumplimiento](https://docs.microsoft.com/office365/securitycompliance/turn-audit-log-search-on-or-off).
 
 - Para Exchange Online, el [registro de auditoría está activado con Windows PowerShell](https://docs.microsoft.com/office365/securitycompliance/enable-mailbox-auditing).
  
