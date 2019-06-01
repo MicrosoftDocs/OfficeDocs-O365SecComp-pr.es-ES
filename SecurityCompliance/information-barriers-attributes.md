@@ -1,0 +1,93 @@
+---
+title: Atributos para directivas de barrera de información
+ms.author: deniseb
+author: denisebmsft
+manager: laurawi
+ms.date: 05/31/2019
+ms.audience: ITPro
+ms.topic: article
+ms.service: O365-seccomp
+ms.collection:
+- M365-security-compliance
+localization_priority: None
+description: Use este artículo como referencia para los diversos atributos que puede usar en las directivas de barrera de información.
+ms.openlocfilehash: e72e37950442974897de479c7c11f0053a578d1c
+ms.sourcegitcommit: 4fedeb06a6e7796096fc6279cfb091c7b89d484d
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34668344"
+---
+# <a name="attributes-for-information-barrier-policies-preview"></a><span data-ttu-id="c5e5d-103">Atributos de las directivas de barrera de información (vista previa)</span><span class="sxs-lookup"><span data-stu-id="c5e5d-103">Attributes for information barrier policies (Preview)</span></span>
+
+<span data-ttu-id="c5e5d-104">Algunos atributos de Azure Active Directory pueden usarse para segmentar usuarios.</span><span class="sxs-lookup"><span data-stu-id="c5e5d-104">Certain attributes in Azure Active Directory can be used to segment users.</span></span> <span data-ttu-id="c5e5d-105">A continuación, los segmentos se usan como filtros para las directivas de barrera de información.</span><span class="sxs-lookup"><span data-stu-id="c5e5d-105">Segments are then used as filters for information barrier policies.</span></span> <span data-ttu-id="c5e5d-106">Por ejemplo, puede usar **Department** para definir segmentos de usuarios por departamento dentro de la organización (suponiendo que no hay empleados que trabajen en dos departamentos al mismo tiempo).</span><span class="sxs-lookup"><span data-stu-id="c5e5d-106">For example, you might use **Department** to define segments of users by department within your organization (assuming no single employee works for two departments at the same time).</span></span> 
+
+<span data-ttu-id="c5e5d-107">En este artículo se proporciona una lista de atributos que se pueden usar.</span><span class="sxs-lookup"><span data-stu-id="c5e5d-107">This article provides a list of attributes that can be used.</span></span> <span data-ttu-id="c5e5d-108">Para obtener más información acerca de las barreras de información, vea los siguientes recursos:</span><span class="sxs-lookup"><span data-stu-id="c5e5d-108">To learn more about information barriers, see the following resources:</span></span>
+- [<span data-ttu-id="c5e5d-109">Barreras de la información (versión preliminar)</span><span class="sxs-lookup"><span data-stu-id="c5e5d-109">Information barriers (Preview)</span></span>](information-barriers.md)
+- [<span data-ttu-id="c5e5d-110">Definir directivas para las barreras de información en Microsoft Teams (versión preliminar)</span><span class="sxs-lookup"><span data-stu-id="c5e5d-110">Define policies for information barriers in Microsoft Teams (Preview)</span></span>](information-barriers-policies.md)
+
+## <a name="how-to-use-attributes-in-information-barrier-policies"></a><span data-ttu-id="c5e5d-111">Cómo usar atributos en las directivas de barrera de información</span><span class="sxs-lookup"><span data-stu-id="c5e5d-111">How to use attributes in information barrier policies</span></span>
+
+<span data-ttu-id="c5e5d-112">Los atributos que se enumeran en este artículo pueden usarse para definir (o editar) segmentos de usuarios.</span><span class="sxs-lookup"><span data-stu-id="c5e5d-112">The attributes listed in this article can be used to define (or edit) segments of users.</span></span> <span data-ttu-id="c5e5d-113">Los segmentos se usan como parámetros (UserGroupFilter) en las directivas de barrera de información, como se muestra en los siguientes ejemplos:</span><span class="sxs-lookup"><span data-stu-id="c5e5d-113">Segments are used as parameters (UserGroupFilter) in information barrier policies, as shown in the following examples:</span></span>
+
+|<span data-ttu-id="c5e5d-114">Ejemplo</span><span class="sxs-lookup"><span data-stu-id="c5e5d-114">Example</span></span>  |<span data-ttu-id="c5e5d-115">Cmdlet</span><span class="sxs-lookup"><span data-stu-id="c5e5d-115">Cmdlet</span></span>  |
+|---------|---------|
+|<span data-ttu-id="c5e5d-116">Definir un segmento denominado Segment1 con el atributo Department</span><span class="sxs-lookup"><span data-stu-id="c5e5d-116">Define a segment called Segment1 using the Department attribute</span></span>     | `New-OrganizationSegment -Name "Segment1" -UserGroupFilter "Department -eq 'Department1'"`        |
+|<span data-ttu-id="c5e5d-117">Defina un segmento denominado segmenta mediante el atributo memberOf (suponga que este atributo contiene nombres de grupo, como "BlueGroup")</span><span class="sxs-lookup"><span data-stu-id="c5e5d-117">Define a segment called SegmentA using the MemberOf attribute (suppose this attribute contains group names, such as "BlueGroup")</span></span>     | `New-OrganizationSegment -Name "SegmentA" -UserGroupFilter "MemberOf -eq 'BlueGroup'"`        |
+|<span data-ttu-id="c5e5d-118">Definir un segmento denominado DayTraders mediante ExtensionAttribute1 (suponga que este atributo contiene cargos, como "DayTrader")</span><span class="sxs-lookup"><span data-stu-id="c5e5d-118">Define a segment called DayTraders using ExtensionAttribute1 (suppose this attribute contains job titles, such as "DayTrader")</span></span>|`New-OrganizationSegment -Name "DayTraders" -UserGroupFilter "ExtensionAttribute1 -eq 'DayTrader'"` |
+
+<span data-ttu-id="c5e5d-119">Al definir segmentos, use el mismo atributo para todos los segmentos.</span><span class="sxs-lookup"><span data-stu-id="c5e5d-119">When you define segments, use the same attribute for all your segments.</span></span> <span data-ttu-id="c5e5d-120">Por ejemplo, si define algunos segmentos usando *Departamento*, defina todos los segmentos mediante *Departamento*.</span><span class="sxs-lookup"><span data-stu-id="c5e5d-120">For example, if you define some segments using *Department*, define all of the segments using *Department*.</span></span> <span data-ttu-id="c5e5d-121">No defina algunos segmentos con *Department* y otros con *memberOf*.</span><span class="sxs-lookup"><span data-stu-id="c5e5d-121">Don't define some segments using *Department* and others using *MemberOf*.</span></span> <span data-ttu-id="c5e5d-122">Asegúrese de que los segmentos no se superponen; cada usuario debe asignarse exactamente a un segmento.</span><span class="sxs-lookup"><span data-stu-id="c5e5d-122">Make sure your segments do not overlap; each user should be assigned to exactly one segment.</span></span> 
+
+<span data-ttu-id="c5e5d-123">Para obtener más información, vea [definir segmentos con PowerShell](information-barriers-policies.md#define-segments-using-powershell).</span><span class="sxs-lookup"><span data-stu-id="c5e5d-123">To learn more, see [Define segments using PowerShell](information-barriers-policies.md#define-segments-using-powershell).</span></span>
+
+## <a name="reference"></a><span data-ttu-id="c5e5d-124">Referencia</span><span class="sxs-lookup"><span data-stu-id="c5e5d-124">Reference</span></span>
+
+<span data-ttu-id="c5e5d-125">En la tabla siguiente se enumeran los atributos que puede usar con barreras de la información.</span><span class="sxs-lookup"><span data-stu-id="c5e5d-125">The following table lists the attributes that you can use with information barriers.</span></span>
+
+|<span data-ttu-id="c5e5d-126">Nombre de propiedad de Azure Active Directory (nombre para mostrar LDAP)</span><span class="sxs-lookup"><span data-stu-id="c5e5d-126">Azure Active Directory property name (LDAP display name)</span></span>  |<span data-ttu-id="c5e5d-127">Nombre de la propiedad de Exchange</span><span class="sxs-lookup"><span data-stu-id="c5e5d-127">Exchange property name</span></span>  |
+|---------|---------|
+|<span data-ttu-id="c5e5d-128">Patrocina</span><span class="sxs-lookup"><span data-stu-id="c5e5d-128">Co</span></span>       | <span data-ttu-id="c5e5d-129">Patrocina</span><span class="sxs-lookup"><span data-stu-id="c5e5d-129">Co</span></span>        |
+|<span data-ttu-id="c5e5d-130">Company</span><span class="sxs-lookup"><span data-stu-id="c5e5d-130">Company</span></span>     |<span data-ttu-id="c5e5d-131">Company</span><span class="sxs-lookup"><span data-stu-id="c5e5d-131">Company</span></span>         |
+|<span data-ttu-id="c5e5d-132">Departamento</span><span class="sxs-lookup"><span data-stu-id="c5e5d-132">Department</span></span>     |<span data-ttu-id="c5e5d-133">Departamento</span><span class="sxs-lookup"><span data-stu-id="c5e5d-133">Department</span></span>         |
+|<span data-ttu-id="c5e5d-134">ExtensionAttribute1</span><span class="sxs-lookup"><span data-stu-id="c5e5d-134">ExtensionAttribute1</span></span> |<span data-ttu-id="c5e5d-135">CustomAttribute1</span><span class="sxs-lookup"><span data-stu-id="c5e5d-135">CustomAttribute1</span></span>  |
+|<span data-ttu-id="c5e5d-136">ExtensionAttribute2</span><span class="sxs-lookup"><span data-stu-id="c5e5d-136">ExtensionAttribute2</span></span> |<span data-ttu-id="c5e5d-137">CustomAttribute2</span><span class="sxs-lookup"><span data-stu-id="c5e5d-137">CustomAttribute2</span></span>  |
+|<span data-ttu-id="c5e5d-138">ExtensionAttribute3</span><span class="sxs-lookup"><span data-stu-id="c5e5d-138">ExtensionAttribute3</span></span> |<span data-ttu-id="c5e5d-139">CustomAttribute3</span><span class="sxs-lookup"><span data-stu-id="c5e5d-139">CustomAttribute3</span></span>  |
+|<span data-ttu-id="c5e5d-140">ExtensionAttribute4</span><span class="sxs-lookup"><span data-stu-id="c5e5d-140">ExtensionAttribute4</span></span> |<span data-ttu-id="c5e5d-141">CustomAttribute4</span><span class="sxs-lookup"><span data-stu-id="c5e5d-141">CustomAttribute4</span></span>  |
+|<span data-ttu-id="c5e5d-142">ExtensionAttribute5</span><span class="sxs-lookup"><span data-stu-id="c5e5d-142">ExtensionAttribute5</span></span> |<span data-ttu-id="c5e5d-143">CustomAttribute5</span><span class="sxs-lookup"><span data-stu-id="c5e5d-143">CustomAttribute5</span></span>  |
+|<span data-ttu-id="c5e5d-144">ExtensionAttribute6</span><span class="sxs-lookup"><span data-stu-id="c5e5d-144">ExtensionAttribute6</span></span> |<span data-ttu-id="c5e5d-145">CustomAttribute6</span><span class="sxs-lookup"><span data-stu-id="c5e5d-145">CustomAttribute6</span></span>  |
+|<span data-ttu-id="c5e5d-146">ExtensionAttribute7</span><span class="sxs-lookup"><span data-stu-id="c5e5d-146">ExtensionAttribute7</span></span> |<span data-ttu-id="c5e5d-147">CustomAttribute7</span><span class="sxs-lookup"><span data-stu-id="c5e5d-147">CustomAttribute7</span></span>  |
+|<span data-ttu-id="c5e5d-148">ExtensionAttribute8</span><span class="sxs-lookup"><span data-stu-id="c5e5d-148">ExtensionAttribute8</span></span> |<span data-ttu-id="c5e5d-149">CustomAttribute8</span><span class="sxs-lookup"><span data-stu-id="c5e5d-149">CustomAttribute8</span></span>  |
+|<span data-ttu-id="c5e5d-150">ExtensionAttribute9</span><span class="sxs-lookup"><span data-stu-id="c5e5d-150">ExtensionAttribute9</span></span> |<span data-ttu-id="c5e5d-151">CustomAttribute9</span><span class="sxs-lookup"><span data-stu-id="c5e5d-151">CustomAttribute9</span></span>  |
+|<span data-ttu-id="c5e5d-152">ExtensionAttribute10</span><span class="sxs-lookup"><span data-stu-id="c5e5d-152">ExtensionAttribute10</span></span> |<span data-ttu-id="c5e5d-153">CustomAttribute10</span><span class="sxs-lookup"><span data-stu-id="c5e5d-153">CustomAttribute10</span></span>  |
+|<span data-ttu-id="c5e5d-154">ExtensionAttribute11</span><span class="sxs-lookup"><span data-stu-id="c5e5d-154">ExtensionAttribute11</span></span> |<span data-ttu-id="c5e5d-155">CustomAttribute11</span><span class="sxs-lookup"><span data-stu-id="c5e5d-155">CustomAttribute11</span></span>  |
+|<span data-ttu-id="c5e5d-156">ExtensionAttribute12</span><span class="sxs-lookup"><span data-stu-id="c5e5d-156">ExtensionAttribute12</span></span> |<span data-ttu-id="c5e5d-157">CustomAttribute12</span><span class="sxs-lookup"><span data-stu-id="c5e5d-157">CustomAttribute12</span></span>  |
+|<span data-ttu-id="c5e5d-158">ExtensionAttribute13</span><span class="sxs-lookup"><span data-stu-id="c5e5d-158">ExtensionAttribute13</span></span> |<span data-ttu-id="c5e5d-159">CustomAttribute13</span><span class="sxs-lookup"><span data-stu-id="c5e5d-159">CustomAttribute13</span></span>  |
+|<span data-ttu-id="c5e5d-160">ExtensionAttribute14</span><span class="sxs-lookup"><span data-stu-id="c5e5d-160">ExtensionAttribute14</span></span> |<span data-ttu-id="c5e5d-161">CustomAttribute14</span><span class="sxs-lookup"><span data-stu-id="c5e5d-161">CustomAttribute14</span></span>  |
+|<span data-ttu-id="c5e5d-162">ExtensionAttribute15</span><span class="sxs-lookup"><span data-stu-id="c5e5d-162">ExtensionAttribute15</span></span> |<span data-ttu-id="c5e5d-163">CustomAttribute15</span><span class="sxs-lookup"><span data-stu-id="c5e5d-163">CustomAttribute15</span></span>  |
+|<span data-ttu-id="c5e5d-164">MSExchExtensionCustomAttribute1</span><span class="sxs-lookup"><span data-stu-id="c5e5d-164">MSExchExtensionCustomAttribute1</span></span> |<span data-ttu-id="c5e5d-165">ExtensionCustomAttribute1</span><span class="sxs-lookup"><span data-stu-id="c5e5d-165">ExtensionCustomAttribute1</span></span> |
+|<span data-ttu-id="c5e5d-166">MSExchExtensionCustomAttribute2</span><span class="sxs-lookup"><span data-stu-id="c5e5d-166">MSExchExtensionCustomAttribute2</span></span> |<span data-ttu-id="c5e5d-167">ExtensionCustomAttribute2</span><span class="sxs-lookup"><span data-stu-id="c5e5d-167">ExtensionCustomAttribute2</span></span> |
+|<span data-ttu-id="c5e5d-168">MSExchExtensionCustomAttribute3</span><span class="sxs-lookup"><span data-stu-id="c5e5d-168">MSExchExtensionCustomAttribute3</span></span> |<span data-ttu-id="c5e5d-169">ExtensionCustomAttribute3</span><span class="sxs-lookup"><span data-stu-id="c5e5d-169">ExtensionCustomAttribute3</span></span> |
+|<span data-ttu-id="c5e5d-170">MSExchExtensionCustomAttribute4</span><span class="sxs-lookup"><span data-stu-id="c5e5d-170">MSExchExtensionCustomAttribute4</span></span> |<span data-ttu-id="c5e5d-171">ExtensionCustomAttribute4</span><span class="sxs-lookup"><span data-stu-id="c5e5d-171">ExtensionCustomAttribute4</span></span> |
+|<span data-ttu-id="c5e5d-172">MSExchExtensionCustomAttribute5</span><span class="sxs-lookup"><span data-stu-id="c5e5d-172">MSExchExtensionCustomAttribute5</span></span> |<span data-ttu-id="c5e5d-173">ExtensionCustomAttribute5</span><span class="sxs-lookup"><span data-stu-id="c5e5d-173">ExtensionCustomAttribute5</span></span> |
+|<span data-ttu-id="c5e5d-174">MailNickname</span><span class="sxs-lookup"><span data-stu-id="c5e5d-174">MailNickname</span></span> |<span data-ttu-id="c5e5d-175">Alias</span><span class="sxs-lookup"><span data-stu-id="c5e5d-175">Alias</span></span> |
+|<span data-ttu-id="c5e5d-176">PhysicalDeliveryOfficeName</span><span class="sxs-lookup"><span data-stu-id="c5e5d-176">PhysicalDeliveryOfficeName</span></span> |<span data-ttu-id="c5e5d-177">Office</span><span class="sxs-lookup"><span data-stu-id="c5e5d-177">Office</span></span> |
+|<span data-ttu-id="c5e5d-178">PostalCode</span><span class="sxs-lookup"><span data-stu-id="c5e5d-178">PostalCode</span></span> |<span data-ttu-id="c5e5d-179">PostalCode</span><span class="sxs-lookup"><span data-stu-id="c5e5d-179">PostalCode</span></span> |
+|<span data-ttu-id="c5e5d-180">ProxyAddresses</span><span class="sxs-lookup"><span data-stu-id="c5e5d-180">ProxyAddresses</span></span> |<span data-ttu-id="c5e5d-181">EmailAddresses</span><span class="sxs-lookup"><span data-stu-id="c5e5d-181">EmailAddresses</span></span> |
+|<span data-ttu-id="c5e5d-182">StreetAddress</span><span class="sxs-lookup"><span data-stu-id="c5e5d-182">StreetAddress</span></span> |<span data-ttu-id="c5e5d-183">StreetAddress</span><span class="sxs-lookup"><span data-stu-id="c5e5d-183">StreetAddress</span></span> |
+|<span data-ttu-id="c5e5d-184">TargetAddress</span><span class="sxs-lookup"><span data-stu-id="c5e5d-184">TargetAddress</span></span> |<span data-ttu-id="c5e5d-185">ExternalEmailAddress</span><span class="sxs-lookup"><span data-stu-id="c5e5d-185">ExternalEmailAddress</span></span> |
+|<span data-ttu-id="c5e5d-186">UsageLocation</span><span class="sxs-lookup"><span data-stu-id="c5e5d-186">UsageLocation</span></span> |<span data-ttu-id="c5e5d-187">UsageLocation</span><span class="sxs-lookup"><span data-stu-id="c5e5d-187">UsageLocation</span></span> |
+|<span data-ttu-id="c5e5d-188">UserPrincipalName</span><span class="sxs-lookup"><span data-stu-id="c5e5d-188">UserPrincipalName</span></span>  |<span data-ttu-id="c5e5d-189">UserPrincipalName</span><span class="sxs-lookup"><span data-stu-id="c5e5d-189">UserPrincipalName</span></span>  |
+|<span data-ttu-id="c5e5d-190">Correo</span><span class="sxs-lookup"><span data-stu-id="c5e5d-190">Mail</span></span>   |<span data-ttu-id="c5e5d-191">WindowsEmailAddress</span><span class="sxs-lookup"><span data-stu-id="c5e5d-191">WindowsEmailAddress</span></span>    |
+|<span data-ttu-id="c5e5d-192">Descripción</span><span class="sxs-lookup"><span data-stu-id="c5e5d-192">Description</span></span>    |<span data-ttu-id="c5e5d-193">Descripción</span><span class="sxs-lookup"><span data-stu-id="c5e5d-193">Description</span></span>    |
+|<span data-ttu-id="c5e5d-194">MemberOf</span><span class="sxs-lookup"><span data-stu-id="c5e5d-194">MemberOf</span></span>   |<span data-ttu-id="c5e5d-195">MemberOfGroup</span><span class="sxs-lookup"><span data-stu-id="c5e5d-195">MemberOfGroup</span></span>  |
+
+## <a name="related-topics"></a><span data-ttu-id="c5e5d-196">Temas relacionados</span><span class="sxs-lookup"><span data-stu-id="c5e5d-196">Related topics</span></span>
+
+[<span data-ttu-id="c5e5d-197">Definir directivas para las barreras de información en Microsoft Teams (versión preliminar)</span><span class="sxs-lookup"><span data-stu-id="c5e5d-197">Define policies for information barriers in Microsoft Teams (Preview)</span></span>](information-barriers-policies.md)
+
+[<span data-ttu-id="c5e5d-198">Solución de problemas de las barreras de la información (versión preliminar)</span><span class="sxs-lookup"><span data-stu-id="c5e5d-198">Troubleshooting information barriers (Preview)</span></span>](information-barriers-troubleshooting.md)
+
+[<span data-ttu-id="c5e5d-199">Barreras de la información (versión preliminar)</span><span class="sxs-lookup"><span data-stu-id="c5e5d-199">Information barriers (Preview)</span></span>](information-barriers.md)
+
+
+
