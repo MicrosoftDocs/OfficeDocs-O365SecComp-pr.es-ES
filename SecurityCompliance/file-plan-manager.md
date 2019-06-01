@@ -13,17 +13,17 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
-description: 'El administrador del plan de archivos proporciona funciones avanzadas de administración para las directivas de retención y proporciona una forma integrada para recorrer las etiquetas y la actividad de etiquetas de contenido para todo su ciclo de vida: incluyendo la creación, colaboración, declaración de registro, retención y por último disposición.'
-ms.openlocfilehash: 377589ab0a8fd2f4c5e73a21eac3988091fa3ed3
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+description: 'El administrador del plan de archivos proporciona funciones avanzadas de administración para las etiquetas de retención, directivas de etiquetas de retención y proporciona una forma integrada para recorrer las etiquetas y la actividad de etiquetas de contenido para todo su ciclo de vida: incluyendo la creación, colaboración, declaración de registro, retención y, por último, eliminación.'
+ms.openlocfilehash: b7d80ff6a7f78e592462fe2723a87383e046015f
+ms.sourcegitcommit: 6eb51931242d07abde2e37f1bd57d13bc724f0de
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152902"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "34547975"
 ---
 # <a name="overview-of-file-plan-manager"></a>Información general sobre el administrador del plan de archivos
 
-El administrador del plan de archivos proporciona funciones avanzadas de administración para las directivas de retención y proporciona una forma integrada para recorrer las etiquetas y la actividad de etiquetas de contenido para todo su ciclo de vida: incluyendo la creación, colaboración, declaración de registro, retención y por último disposición.
+El administrador del plan de archivos proporciona funciones avanzadas de administración para las etiquetas de retención, directivas de etiquetas de retención y proporciona una forma integrada para recorrer las etiquetas y la actividad de etiquetas de contenido para todo su ciclo de vida: incluyendo la creación, colaboración, declaración de registro, retención y, por último, eliminación.
 
 ![Página del plan de archivos](media/file-plan-page.png)
 
@@ -50,7 +50,7 @@ Estas etiquetas de retención se configuran solo para retener el contenido, no e
 Puede determinar quién ha abierto el administrador del plan de archivos y desencadenado la experiencia de primera ejecución. Para ello, revise el registro de auditoría de las actividades **Directiva de retención creada** y **Configuración de retención para una directiva de retención creada**.
 
 > [!NOTE]
-> Debido a los comentarios de los clientes, hemos eliminado la característica que crea las etiquetas de retención predeterminadas y la directiva de etiquetas mencionadas anteriormente. Solo verá esta directiva y estas etiquetas si usó el administrador del plan de archivos antes del 11 de abril de 2019.
+> Debido a los comentarios de los clientes, hemos eliminado la característica que crea las etiquetas de retención predeterminadas y la directiva de etiquetas de retención mencionadas anteriormente. Solo verá las etiquetas de retención y la directiva de etiqueta de retención si abrió el administrador del plan de archivos antes del 11 de abril de 2019.
 
 ## <a name="navigating-your-file-plan"></a>Navegar por el plan de archivos
 
@@ -83,9 +83,9 @@ En la pestaña **Etiquetas del plan de archivos**, están disponibles la siguien
 
 ![Configuración de etiqueta en el plan de archivos](media/file-plan-label-columns.png)
 
-### <a name="label-file-plan-descriptors-columns"></a>Columnas de descriptores del plan de archivos de las etiquetas
+### <a name="retention-label-file-plan-descriptors-columns"></a>Columnas de descriptores del plan de archivos de las etiquetas de retención
 
-Ahora puede incluir más información en la configuración de las etiquetas de retención. Insertar descriptores del plan de archivos en las etiquetas mejorará la administración y la organización de su plan de archivos.
+Ahora puede incluir más información en la configuración de las etiquetas de retención. Insertar descriptores del plan de archivos en las etiquetas de retención mejorará la administración y la organización de su plan de archivos.
 
 Para comenzar, el administrador del plan de archivos proporciona algunos valores de fábrica para: función o departamento, categoría, tipo de autoridad y aprovisionamiento o cita. Puede agregar nuevos archivos valores descriptores del plan de archivos al crear o editar una etiqueta de retención.
 
@@ -97,7 +97,7 @@ Esta es una vista de las columnas de descriptores del plan de archivos en la pes
 
 ![file-plan-descriptors-on-labels-tab.png](media/file-plan-descriptors-on-labels-tab.png)
 
-## <a name="export-labels-out-of-your-file-plan"></a>Exportar etiquetas del plan de archivos
+## <a name="export-all-existing-retention-labels-to-analyze-andor-perform-offline-reviews"></a>Exportar todas las etiquetas de retención existentes para analizar y/o realizar revisiones sin conexión
 
 Desde el administrador del plan de archivos, puede exportar los detalles de todas las etiquetas de retención a un archivo .csv para facilitar el revisiones de cumplimiento periódicas con partes interesadas del gobierno de datos de su organización.
 
@@ -109,11 +109,11 @@ Se abrirá un archivo *.csv que contiene todas las etiquetas de retención exist
 
 ![Archivo CSV que muestra todas las etiquetas de retención](media/file-plan-csv-file.png)
 
-## <a name="import-labels-into-your-file-plan"></a>Importar etiquetas en el plan de archivos
+## <a name="import-retention-labels-into-your-file-plan"></a>Importar las etiquetas de retención en el plan de archivos
 
-Desde el administrador del plan de archivos, puede importar en masa nuevas etiquetas así como modificar las etiquetas de retención existentes.
+Desde el administrador del plan de archivos, puede importar en masa nuevas etiquetas de retención así como modificar las etiquetas de retención existentes.
 
-Para importar nuevas etiquetas de retención y realizar actualizaciones en etiquetas de retención existentes, vaya a **Administrador del plan de archivos** \> **Acciones del plan de archivos** \> **Importar etiquetas**.
+Para importar nuevas etiquetas de retención y actualizar las etiquetas de retención existentes, vaya a **Administrador del plan de archivos** \> **Acciones del plan de archivos** \> **Importar etiquetas**.
 
 ![Opción para importar el plan de archivos](media/file-plan-import-labels-option.png)
 
@@ -123,7 +123,7 @@ Descargue una plantilla en blanco (o empiece desde una exportación de su plan a
 
 ![Plantilla en blanco del plan de archivos abierta en Excel](media/file-plan-blank-template.png)
 
-Rellene la plantilla (próximamente publicaremos la información de referencia acerca de los valores válidos para las entradas).
+Rellene la plantilla (disponible próximamente: información de referencia sobre combinaciones de valores válidas para una sola etiqueta de retención).
 
 ![Plantilla del plan de archivos con información rellenada](media/file-plan-filled-out-template.png)
 
@@ -131,7 +131,9 @@ Cargue la plantilla rellenada y el administrador del plan de archivos validará 
 
 ![Estadísticas de importación del plan de archivos](media/file-plan-import-statistics.png)
 
-Una vez completada la importación, vuelva al administrador del plan de archivos para asignar nuevas etiquetas a las directivas nuevas o existentes.
+En caso de que se produzca un error de validación, la importación del plan de archivo seguirá validando todas las entradas del archivo de importación y mostrará todos los errores que hacen referencia a los números de línea/fila en el archivo de importación. Copie los resultados de error mostrados para que pueda volver fácilmente al archivo de importación y corregir los errores. 
+
+Una vez completada la importación, vuelva al administrador del plan de archivos para asociar las nuevas etiquetas de retención a las directivas de etiquetas de retención nuevas o existentes.
 
 ![Opción para publicar etiquetas](media/file-plan-publish-labels-option.png)
 
