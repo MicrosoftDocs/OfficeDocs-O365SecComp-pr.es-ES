@@ -77,19 +77,20 @@
 #### [Configurar Azure Rights Management para la versión anterior del Cifrado de mensajes de Office 365](set-up-azure-rms-for-previous-version-message-encryption.md)
 
 # Administración de registros
-## [Administrador del plan de archivos](file-plan-manager.md)
-## [Etiquetas de retención](labels.md)
-### [Cumplir con la norma SEC 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
+## [Administración de registros](records-management.md)
+## Plan de archivos
+### [Administrador del plan de archivos](file-plan-manager.md)
+### [Etiquetas de retención](labels.md)
 ### [Crear y publicar etiquetas de retención con PowerShell](https://docs.microsoft.com/es-ES/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
-## [Acerca de la retención basada en eventos](event-driven-retention.md)
-### [Retención automática basada en eventos](automate-event-driven-retention.md)
-## [Revisiones para eliminación](disposition-reviews.md)
-## Supervisar la administración de registros
-### [Ver los informes de gobierno de datos](view-the-data-governance-reports.md)
-### [Ver la actividad de etiquetas de documentos](view-label-activity-for-documents.md)
 ### [Ver el uso de etiquetas con el análisis de etiquetas](label-analytics.md)
+### [Ver la actividad de etiquetas de documentos](view-label-activity-for-documents.md)
+### [Ver los informes de gobierno de datos](view-the-data-governance-reports.md)
+## Eventos
+### [Acerca de la retención basada en eventos](event-driven-retention.md)
+### [Retención automática basada en eventos](automate-event-driven-retention.md)
+## [Disposición](disposition-reviews.md)
 ## Más información sobre la administración de registros
-### [Ver vídeos del equipo de gobierno de datos de Microsoft](https://go.microsoft.com/fwlink/?linkid=867039)
+### [Ver vídeos sobre la administración de registros](https://go.microsoft.com/fwlink/?linkid=867039)
 
 # Administrar el gobierno de datos
 ## [Importar datos](importing-pst-files-to-office-365.md)
@@ -223,21 +224,6 @@
 ## [Detectar y solucionar la concesión de consentimiento ilegal en Office 365](detect-and-remediate-illicit-consent-grants.md)
 ## [Detectar y corregir las reglas de Outlook y ataques de inserciones de formularios personalizados en Office 365](detect-and-remediate-outlook-rules-forms-attack.md)
 ## [Responder a una cuenta de correo electrónico en peligro en Office 365](responding-to-a-compromised-email-account.md)
-# Administración de registros
-## [Administración de registros](records-management.md)
-## Plan de archivos
-### [Administrador del plan de archivos](file-plan-manager.md)
-### [Etiquetas de retención](labels.md)
-### [Crear y publicar etiquetas de retención con PowerShell](https://docs.microsoft.com/es-ES/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
-### [Ver el uso de etiquetas con el análisis de etiquetas](label-analytics.md)
-### [Ver la actividad de etiquetas de documentos](view-label-activity-for-documents.md)
-### [Ver los informes de gobierno de datos](view-the-data-governance-reports.md)
-## Eventos
-### [Acerca de la retención basada en eventos](event-driven-retention.md)
-### [Retención automática basada en eventos](automate-event-driven-retention.md)
-## [Disposición](disposition-reviews.md)
-## Más información sobre la administración de registros
-### [Ver vídeos sobre la administración de registros](https://go.microsoft.com/fwlink/?linkid=867039)
 
 # Administrar el gobierno de datos
 ## [Importar datos](importing-pst-files-to-office-365.md)
