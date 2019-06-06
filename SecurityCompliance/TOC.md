@@ -76,41 +76,64 @@
 #### [Información heredada para el cifrado de mensajes de Office 365](legacy-information-for-message-encryption.md)
 #### [Configurar Azure Rights Management para la versión anterior del Cifrado de mensajes de Office 365](set-up-azure-rms-for-previous-version-message-encryption.md)
 
+# Administración de registros
+## [Administrador del plan de archivos](file-plan-manager.md)
+## [Etiquetas de retención](labels.md)
+### [Cumplir con la norma SEC 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
+### [Crear y publicar etiquetas de retención con PowerShell](https://docs.microsoft.com/es-ES/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+## [Acerca de la retención basada en eventos](event-driven-retention.md)
+### [Retención automática basada en eventos](automate-event-driven-retention.md)
+## [Revisiones para eliminación](disposition-reviews.md)
+## Supervisar la administración de registros
+### [Ver los informes de gobierno de datos](view-the-data-governance-reports.md)
+### [Ver la actividad de etiquetas de documentos](view-label-activity-for-documents.md)
+### [Ver el uso de etiquetas con el análisis de etiquetas](label-analytics.md)
+## Más información sobre la administración de registros
+### [Ver vídeos del equipo de gobierno de datos de Microsoft](https://go.microsoft.com/fwlink/?linkid=867039)
+
+# Administrar el gobierno de datos
+## [Importar datos](importing-pst-files-to-office-365.md)
+### [Usar la carga en la red para importar archivos PST](use-network-upload-to-import-pst-files.md)
+### [Usar el envío de unidades para importar los archivos PST](use-drive-shipping-to-import-pst-files-to-office-365.md)
+### [Usar la herramienta de recopilación de PST para buscar, copiar y eliminar archivos PST](find-copy-and-delete-pst-files-in-your-organization.md)
+### [Filtrar datos al importar archivos PST](filter-data-when-importing-pst-files.md)
+### [Usar la carga en la red para importar archivos PST con cifrado RMS](use-network-upload-to-import-rms-encrypted-pst-files.md)
+### [Preguntas más frecuentes sobre la importación de archivos PST](faqimporting-pst-files-to-office-365.md)
+### [Archivado de datos de terceros en Office 365](archiving-third-party-data.md)
+#### [Usar un conector de muestra para archivar datos de Facebook en Office 365 (versión preliminar)](archive-facebook-data-with-sample-connector.md)
+#### [Usar un conector de ejemplo para archivar datos de Twitter](archive-twitter-data-with-sample-connector.md)
+#### [Trabajar con un socio para archivar datos de terceros](work-with-partner-to-archive-third-party-data.md)
+## Almacenar datos
+### [Habilitar buzones de archivo](enable-archive-mailboxes.md)
+### [Información general sobre el archivado ilimitado](unlimited-archiving.md)
+### [Habilitar el archivado ilimitado](enable-unlimited-archiving.md)
+### [Configurar una directiva de archivo y eliminación para buzones de correo](set-up-an-archive-and-deletion-policy-for-mailboxes.md)
+## Conservar datos
+### [Directivas de retención](retention-policies.md)
+### [Administrador del plan de archivos](file-plan-manager.md)
+### [Etiquetas de retención](labels.md)
+### [Cumplir con la norma SEC 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
+### [Crear y publicar etiquetas de retención con PowerShell](https://docs.microsoft.com/es-ES/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+### [Acerca de la retención basada en eventos](event-driven-retention.md)
+### [Retención automática basada en eventos](automate-event-driven-retention.md)
+## [Eliminar datos](disposition-reviews.md)
+## [Supervisar las comunicaciones](supervision-policies.md)
+### [Configurar directivas de supervisión para su organización](configure-supervision-policies.md)
+## [Administrar buzones inactivos](inactive-mailboxes-in-office-365.md)
+### [Crear y administrar buzones inactivos](create-and-manage-inactive-mailboxes.md)
+### [Cambiar la duración de retención para un buzón inactivo](change-the-hold-duration-for-an-inactive-mailbox.md)
+### [Recuperar un buzón inactivo](recover-an-inactive-mailbox.md)
+### [Restaurar un buzón inactivo](restore-an-inactive-mailbox.md)
+### [Eliminar un buzón inactivo](delete-an-inactive-mailbox.md)
+## Monitorizar el gobierno de datos
+### [Ver la actividad de etiquetas de documentos](view-label-activity-for-documents.md)
+### [Ver el uso de etiquetas con el análisis de etiquetas](label-analytics.md)
+### [Ver los informes de gobierno de datos](view-the-data-governance-reports.md)
+## Más información sobre el gobierno de datos
+### [Ver vídeos del equipo de gobierno de datos de Microsoft](https://go.microsoft.com/fwlink/?linkid=867039)
+
 # [Protección contra amenazas](protect-against-threats.md)
-
-## [Captura de Microsoft 365](hunting.md)
-
-## [Comprender las últimas campañas de ataques con análisis de amenazas](latest-attack-campaigns.md)
-
-## [Protección contra amenazas avanzada de Office 365](office-365-atp.md)
-### [Vínculos seguros de ATP](atp-safe-links.md)
-#### [Configurar directivas de vínculos seguros de ATP](set-up-atp-safe-links-policies.md)
-#### [Configurar una lista personalizada de URL con "no reescribir"](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)
-#### [Configurar una lista personalizada de URL bloqueadas](set-up-a-custom-blocked-urls-list-wtih-atp.md)
-#### [Páginas de advertencia de vínculos seguros de ATP](atp-safe-links-warning-pages.md)
-### [Datos adjuntos seguros ATP](atp-safe-attachments.md)
-#### [Configurar directivas de datos adjuntos seguros de ATP](set-up-atp-safe-attachments-policies.md)
-#### [Entrega dinámica y vista previa](dynamic-delivery-and-previewing.md)
-### [ATP para SharePoint, OneDrive y Microsoft Teams](atp-for-spo-odb-and-teams.md).
-#### [Activar ATP para SharePoint, OneDrive y Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md).
-#### [Ver información sobre los archivos malintencionados](malicious-files-detected-in-spo-odb-or-teams.md)
-### [Ver informes de ATP](view-reports-for-atp.md)
-### [Investigación y respuesta de amenazas](office-365-ti.md)
-#### [Introducción](get-started-with-ti.md)
-#### [Mantener la seguridad de los usuarios con la investigación y respuesta de amenazas](keep-users-safe-with-office-365-ti.md)
-#### [Buscar e investigar el correo electrónico malintencionado que se ha entregado](investigate-malicious-email-that-was-delivered.md)
-### [Investigación y respuesta de amenazas](automated-investigation-response-office.md)
-### [El explorador de amenazas y detecciones en tiempo real](threat-explorer.md)
-#### [Vistas del explorador de amenazas](threat-explorer-views.md)
-### [Rastreadores de amenazas](threat-trackers.md)
-### [Simulador de ataques en Office 365](attack-simulator.md)
-### [Integrar ATP de Office 365 con la Protección contra amenazas avanzada de Windows Defender](integrate-office-365-ti-with-wdatp.md)
-### [Integración de SIEM con ATP de Office 365](siem-integration-with-office-365-ti.md)
-
-## [Ajustar protección contra suplantación de identidad](tuning-anti-phishing.md)
-
 ## [Protección contra correo no deseado y malware](anti-spam-and-anti-malware-protection.md)
-### [¿Qué es EOP?](eop/what-is-eop.md)
 ### [Protección contra correo no deseado de Office 365](anti-spam-protection.md)
 ### [Cómo evitar que los mensajes reales se marquen como correo no deseado en Office 365](prevent-email-from-being-marked-as-spam.md)
 ### [Cómo se combinan las directivas y las protecciones](how-policies-and-protections-are-combined.md)
@@ -123,7 +146,8 @@
 ### [Administrar listas de remitentes seguros para troyanos de envío masivo de correo electrónico](manage-safe-sender-lists-for-bulk-mailers.md)
 ### [Configurar directivas antimalware](configure-anti-malware-policies.md)
 ### [Configurar las directivas contra correo no deseado](configure-the-anti-spam-policies.md)
-### [Crear listas de remitentes bloqueados o seguros para toda la organización en Office 365](create-organization-wide-safe-sender-or-blocked-sender-lists-in-office-365.md)
+### [Crear-listas-de-remitentes-a-bloquear-en-Office-365](Create-block-sender-lists-in-office-365.md)
+### [Crear-listas-de-remitentes-seguros-en-Office-365](Create-safe-sender-lists-in-office-365.md)
 ### [Configurar las directivas de filtro de correo no deseado](configure-your-spam-filter-policies.md)
 ### [Configurar la directiva de filtro de conexión](configure-the-connection-filter-policy.md)
 ### [Configurar la directiva de correo no deseado saliente](configure-the-outbound-spam-policy.md)
@@ -134,35 +158,71 @@
 #### [Enviar malware y no malware a Microsoft para su análisis](submitting-malware-and-non-malware-to-microsoft-for-analysis.md)
 #### [Usar el portal de eliminación de la lista para quitarse de la lista de remitentes bloqueados de Office 365](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md)
 #### [Encabezados de mensajes de correo no deseado](anti-spam-message-headers.md)
-### Autenticación y validación de correo electrónico
-#### [Cómo Office 365 usa SPF para evitar la suplantación de identidad](how-office-365-uses-spf-to-prevent-spoofing.md)
-#### [Configurar SPF en Office 365 para ayudar a evitar la suplantación de identidad](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
-#### [Usar DKIM para validar el correo electrónico saliente](use-dkim-to-validate-outbound-email.md)
-#### [Compatibilidad para la validación de mensajes firmados con DKIM](support-for-validation-of-dkim-signed-messages.md)
-#### [Compatibilidad para mensajes de correo electrónico entrante anónimos a través de IPv6](support-for-anonymous-inbound-email-messages-over-ipv6.md)
-#### [Usar DMARC para validar el correo electrónico](use-dmarc-to-validate-email.md)
-### [Protección contra suplantación de identidad (phishing) en Office 365](anti-phishing-protection.md)
-#### [Funciones de ATP contra suplantación de identidad en Office 365](atp-anti-phishing.md)
-#### [Configurar directivas contra suplantación de identidad y directivas contra suplantación de identidad de ATP](set-up-anti-phishing-policies.md)
-#### [Cómo Office 365 valida la dirección del remitente para evitar la suplantación de identidad](how-office-365-validates-the-from-address.md)
-### [Protección contra suplantación de identidad en Office 365](anti-spoofing-protection.md)
-#### [Obtener más información sobre la inteligencia de suplantación de identidad](learn-about-spoof-intelligence.md)
-#### [Identificar mensajes sospechosos en Outlook.com y Outlook en la Web](unverified-sender-feature.md)
-
-## [Supervisar y administrar el acceso a datos con Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)
-
+## [Protección contra suplantación de identidad (phishing) en Office 365](anti-phishing-protection.md)
+### [Ajustar protección contra suplantación de identidad](tuning-anti-phishing.md)
+### [Funciones de ATP contra suplantación de identidad en Office 365](atp-anti-phishing.md)
+### [Configurar directivas contra suplantación de identidad y directivas contra suplantación de identidad de ATP](set-up-anti-phishing-policies.md)
+### [Cómo Office 365 valida la dirección del remitente para evitar la suplantación de identidad](how-office-365-validates-the-from-address.md)
+## [Protección contra suplantación de identidad en Office 365](anti-spoofing-protection.md)
+### [Obtener más información sobre la inteligencia de suplantación de identidad](learn-about-spoof-intelligence.md)
+## [¿Qué es EOP?](eop/what-is-eop.md)
+### [Compatibilidad para mensajes de correo electrónico entrante anónimos a través de IPv6](support-for-anonymous-inbound-email-messages-over-ipv6.md)
 ## [Cuarentena de mensajes de correo electrónico en Office 365](quarantine-email-messages.md)
 ### [Administrar archivos y mensajes en cuarentena como administrador](manage-quarantined-messages-and-files.md)
 ### [Buscar y liberar mensajes en cuarentena como usuario](find-and-release-quarantined-messages-as-a-user.md)
 ### [Preguntas más frecuentes sobre cuarentena para Office 365](quarantine-faq.md)
 ### [Usar notificaciones de correo no deseado para el usuario para liberar y notificar mensajes de correo en cuarentena en Office 365](use-spam-notifications-to-release-and-report-quarantined-messages.md)
+### [Usar notificaciones de correo no deseado para el usuario para liberar y notificar mensajes de correo en cuarentena en Office 365](use-spam-notifications-to-release-and-report-quarantined-messages.md)
+## Autenticación y validación de correo electrónico
+### [Cómo Office 365 usa SPF para evitar la suplantación de identidad](how-office-365-uses-spf-to-prevent-spoofing.md)
+### [Configurar SPF en Office 365 para ayudar a evitar la suplantación de identidad](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
+### [Usar DKIM para validar el correo electrónico saliente](use-dkim-to-validate-outbound-email.md)
+### [Compatibilidad para la validación de mensajes firmados con DKIM](support-for-validation-of-dkim-signed-messages.md)
+### [Usar DMARC para validar el correo electrónico](use-dmarc-to-validate-email.md)
+## [Informes inteligentes y reportes en el Centro de seguridad y cumplimiento](reports-and-insights-in-security-and-compliance.md) 
+### [Ver información sobre los archivos malintencionados](malicious-files-detected-in-spo-odb-or-teams.md)
+### [Ver informes de seguridad de correo electrónico en el Centro de seguridad y cumplimiento](view-email-security-reports.md)
+### [Tutorial: desde un informe detallado a un reporte](from-a-detailed-report-to-an-insight.md)
+### [Tutorial: desde un reporte a un informe detallado](from-an-insight-to-a-detailed-report.md)
+### [Tutorial: desde un panel o a un reporte](from-a-dashboard-to-an-insight.md)
+# [Protección contra amenazas avanzada](office-365-atp.md)
+## Tareas de configuración de ATP para administradores
+### Tareas de configuración de administrador global
+#### [Configurar directivas de vínculos seguros de ATP](set-up-atp-safe-links-policies.md)
+#### [Configurar directivas de datos adjuntos seguros de ATP](set-up-atp-safe-attachments-policies.md)
+#### [Configurar una lista personalizada de URL con "no reescribir"](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)
+#### [Configurar una lista personalizada de URL bloqueadas](set-up-a-custom-blocked-urls-list-wtih-atp.md)
+### Tareas de configuración de administrador de roles
+#### [Activar ATP para SharePoint, OneDrive y Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md).
+#### [ATP para SharePoint, OneDrive y Microsoft Teams](atp-for-spo-odb-and-teams.md).
+## Administración de la seguridad: ATP posterior a la configuración
+## [Comprensión de las últimas campañas de ataques con análisis de amenazas](latest-attack-campaigns.md)
+## [Búsqueda en Microsoft 365 ATP](hunting.md)
+## [Ver y leer los informes de ATP](view-reports-for-atp.md)
+## [Qué significan las páginas de advertencia de vínculos seguros de ATP](atp-safe-links-warning-pages.md)
+## [Usar rastreadores de amenazas](threat-trackers.md)
+## [Usar el simulador de ataques en Office 365](attack-simulator.md)
+## [Mantener la seguridad de los usuarios con la investigación y respuesta de amenazas](keep-users-safe-with-office-365-ti.md)
+## [Buscar e investigar el correo electrónico malintencionado que se ha entregado](investigate-malicious-email-that-was-delivered.md)
+## [Explorador de amenazas (y detecciones en tiempo real)](threat-explorer.md)
+### [Vistas del explorador de amenazas](threat-explorer-views.md)
+## Integración para mayor seguridad
+### [Integrar ATP de Office 365 con la Protección contra amenazas avanzada de Windows Defender](integrate-office-365-ti-with-wdatp.md)
+### [Integración de SIEM con ATP de Office 365](siem-integration-with-office-365-ti.md)
+## Cómo funciona ATP
+### [Cómo funcionan los Vínculos seguros de ATP](how-atp-safe-links-works.md)
+### [Detalles de vista previa y entrega dinámica](dynamic-delivery-and-previewing.md)
+## [Cómo funcionan los datos adjuntos seguros de ATP](how-atp-safe-attachments-works.md)
+### [Sobre Investigación y respuesta de amenazas](office-365-ti.md)
+### [Cómo funciona la Investigación y respuesta de amenazas](get-started-with-ti.md)
+### [Cómo funciona la Investigación y respuesta de amenazas automatizada](automated-investigation-response-office.md)
+### [Identificar mensajes sospechosos en Outlook.com y Outlook en la Web](unverified-sender-feature.md)
 
 # Respuesta a incidentes de seguridad
 ## [Respuesta a incidentes de seguridad de Office 365](office365-security-incident-response-overview.md)
 ## [Detectar y solucionar la concesión de consentimiento ilegal en Office 365](detect-and-remediate-illicit-consent-grants.md)
 ## [Detectar y corregir las reglas de Outlook y ataques de inserciones de formularios personalizados en Office 365](detect-and-remediate-outlook-rules-forms-attack.md)
 ## [Responder a una cuenta de correo electrónico en peligro en Office 365](responding-to-a-compromised-email-account.md)
-
 # Administración de registros
 ## [Administración de registros](records-management.md)
 ## Plan de archivos
@@ -256,7 +316,6 @@
 # [Administración de investigaciones legales](manage-legal-investigations.md)
 
 ## [Solución de eDiscovery avanzado de Microsoft 365](compliance20/overview-ediscovery-20.md)
-### [Notas de la versión](compliance20/release-notes-ediscovery20.md)
 ### [Crear un nuevo caso](compliance20/create-new-ediscovery-case.md)
 
 ### [Trabajar con administradores](compliance20/managing-custodians.md)
@@ -291,6 +350,7 @@
 #### [Ver documentos de un conjunto de revisión](compliance20/view-documents-in-review-set.md)
 #### [Consultar los datos de un conjunto de revisión](compliance20/review-set-search.md)
 #### [Etiquetar documentos en un conjunto de revisión](compliance20/tagging-documents.md)
+#### [Configurar la detección de privilegios abogado-cliente](compliance20/attorney-privilege-detection.md)
 
 ### [Analizar datos de casos](compliance20/analyzing-data-in-review-set.md)
 #### [Detección de semiduplicados](compliance20/near-duplicates.md)
@@ -310,6 +370,7 @@
 #### [Establecer la configuración de búsqueda y análisis](compliance20/configure-search-analytics-settings.md)
 
 ### Referencia de eDiscovery avanzado
+#### [Notas de la versión](compliance20/release-notes-ediscovery20.md)
 #### [Límites de eDiscovery avanzado](compliance20/limits-ediscovery20.md)
 #### [Tipos de archivo admitidos](compliance20/supported-filetypes-ediscovery20.md)
 #### [Campos de metadatos del documento](compliance20/document-metadata-fields.md)
@@ -384,6 +445,7 @@
 ## [Notas de la versión](datainvestigations/data-investigations-release-notes.md)
 ## [Administrar un incidente de pérdidas de datos](datainvestigations/manage-data-spillage-incidents.md)
 ## [Crear una nueva investigación](datainvestigations/create-new-investigation.md)
+## [Asignar permisos para investigaciones de datos](datainvestigations/permissions.md)
  
 ## [Buscar datos en una investigación](datainvestigations/search-for-data.md)
 ### [Crear consultas de búsqueda](datainvestigations/build-search-queries.md)
@@ -436,11 +498,6 @@
 ### [Supervisar los dispositivos de seguridad de Microsoft 365](monitor-devices.md)
 ### [Supervisar las aplicaciones de seguridad de Microsoft 365](monitor-apps.md)
 ## [Directivas de alerta](alert-policies.md)
-## [Informes inteligentes y reportes en el Centro de seguridad y cumplimiento](reports-and-insights-in-security-and-compliance.md)
-### [Ver informes de seguridad de correo electrónico en el Centro de seguridad y cumplimiento](view-email-security-reports.md)
-### [Tutorial: desde un informe detallado a un reporte](from-a-detailed-report-to-an-insight.md)
-### [Tutorial: desde un reporte a un informe detallado](from-an-insight-to-a-detailed-report.md)
-### [Tutorial: desde un panel o a un reporte](from-a-dashboard-to-an-insight.md)
 ### [Crear una programación para un informe](create-a-schedule-for-a-report.md)
 ### [Administrar la programación para varios informes](manage-schedules-for-multiple-reports.md)
 ### [Configurar y descargar un informe personalizado](set-up-and-download-a-custom-report.md)
@@ -486,6 +543,11 @@
 ### [Novedades del Administrador de cumplimiento (Versión preliminar)](compliance-manager-release-notes.md)
 ### [Trabajar con el Administrador de cumplimiento (Versión preliminar)](working-with-compliance-manager.md)
 ### [Metodología de puntuación de cumplimiento (Versión preliminar)](compliance-score-methodology.md)
+## [Barreras de información (vista previa)](information-barriers.md)
+### [Definir directivas de barreras de información (vista previa)](information-barriers-policies.md)
+### [Atributos para las directivas de barreras de información (vista previa)](information-barriers-attributes.md)
+### [Solución de problemas de barreras de información (vista previa)](information-barriers-troubleshooting.md)
+
 ## Clave del cliente
 ### [Controlar los datos en Office 365 con la clave de cliente](controlling-your-data-using-customer-key.md)
 ### [Preguntas más frecuentes sobre el cifrado de servicio con la clave de cliente para Office 365](service-encryption-with-customer-key-faq.md)
