@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Use el botón Reintentar para resolver búsquedas de contenido que tienen errores de ubicación de contenido.
-ms.openlocfilehash: ab6f33e00a057ccd9ee7b80e0499b2838855ac83
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 91c656a05111391ad93e03946cf367133f2c25a2
+ms.sourcegitcommit: ff1d18aaddde2048f1cf88338c916295cf8c354e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157072"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "34748573"
 ---
 # <a name="retry-a-content-search-to-resolve-a-content-location-error"></a>Volver a intentar una búsqueda de contenido para resolver un error de ubicación de contenido
 
@@ -34,7 +34,7 @@ User1@contoso.com: Problem in processing the request. Please try again later. If
 User2@contoso.com: Application error occurred. Please try again later. (CS012-002)
 ```
 
-Estos errores (con códigos de error de CS008-009 y CS012-002) indican que la búsqueda de contenido no pudo buscar ubicaciones de contenido específicas; en este ejemplo, no se han buscado dos buzones. Estos errores se muestran en la página flotante de detalles de estado de la búsqueda de contenido.
+Estos errores (con códigos de error de CS001-002, CS003-002, CS008-009, CS012-002 y otros errores de la forma CS0XX-0XX) indican que la búsqueda de contenido no pudo buscar ubicaciones de contenido específicas; en este ejemplo, no se han buscado dos buzones. Estos errores se muestran en la página flotante de detalles de estado de la búsqueda de contenido.
 
 ## <a name="cause-of-content-location-errors"></a>Causa de errores de ubicación de contenido
 

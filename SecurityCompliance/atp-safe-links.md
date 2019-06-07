@@ -22,12 +22,12 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: La característica de vínculos seguros proporciona la comprobación del tiempo de clic de los hipervínculos en los documentos de Office y en los mensajes de correo electrónico. Use vínculos seguros para proteger a su organización del phishing y otros ataques.
-ms.openlocfilehash: 1be7db8ad96a5fd0b46500288e674946e763385a
-ms.sourcegitcommit: 4fedeb06a6e7796096fc6279cfb091c7b89d484d
+ms.openlocfilehash: 4f1449fb97ad8d8f263073c917eed2c399bf4f22
+ms.sourcegitcommit: ff1d18aaddde2048f1cf88338c916295cf8c354e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34652533"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "34748583"
 ---
 # <a name="office-365-atp-safe-links"></a>Vínculos seguros de Protección contra amenazas avanzada de Office 365
 
@@ -40,7 +40,7 @@ Los vínculos seguros de Office 365 ATP (parte de la [protección contra amenaza
   
 Una vez que se hayan implementado las directivas de vínculos seguros de ATP, los administradores globales de Office 365, los administradores de seguridad y los lectores de seguridad podrán [ver los informes de la protección contra amenazas avanzada](view-reports-for-atp.md). La información de estos informes puede ayudar a su equipo de seguridad a tomar medidas adicionales para proteger su organización o investigar los incidentes de seguridad.
 
-A medida que [se agregan nuevas características a ATP](office-365-atp.md#new-features-in-office-365-atp), el equipo de seguridad de Office 365 puede Agregar o editar [las directivas de vínculos seguros de ATP](set-up-atp-safe-links-policies.md)de la organización. Además, es posible que observe cambios y mejoras como, por ejemplo, [las páginas de advertencia](atp-safe-links-warning-pages.md) recientemente revisadas y la representación de vínculos nativos en Outlook.
+A medida que [se agregan nuevas características a ATP](office-365-atp.md#new-features-in-office-365-atp), el equipo de seguridad de Office 365 puede Agregar o editar [las directivas de vínculos seguros de ATP](set-up-atp-safe-links-policies.md)de la organización. Además, es posible que observe cambios y mejoras como, por ejemplo, [las páginas de advertencia](atp-safe-links-warning-pages.md) recientemente revisadas y la representación de vínculos nativos en Outlook (introducida en Office 365 ProPlus versión 1809).
          
 ## <a name="how-to-get-atp-safe-links-protection"></a>Cómo obtener protección de vínculos seguros de ATP
 
