@@ -10,7 +10,6 @@
 ## [Ir al Centro de seguridad y cumplimiento](go-to-the-securitycompliance-center.md)
 ### [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md)
 ### [Proporcionar a los usuarios acceso al Centro de seguridad y cumplimiento](grant-access-to-the-security-and-compliance-center.md)
-## [Introducción al Panel de seguridad](security-dashboard.md)
 ## [Usar su suscripción gratuita de Azure Active Directory](use-your-free-azure-ad-subscription-in-office-365.md)
 ## [Planificación de la seguridad y el cumplimiento en Office 365](plan-for-security-and-compliance.md)
 ## [Taller de aprendizaje de director de seguridad de la información (CISO) ](ciso-workshop.md)
@@ -81,7 +80,8 @@
 ## Plan de archivos
 ### [Administrador del plan de archivos](file-plan-manager.md)
 ### [Etiquetas de retención](labels.md)
-### [Crear y publicar etiquetas de retención con PowerShell](https://docs.microsoft.com/es-ES/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+### 
+  [Crear y publicar etiquetas de retención con PowerShell](https://docs.microsoft.com/es-ES/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
 ### [Ver el uso de etiquetas con el análisis de etiquetas](label-analytics.md)
 ### [Ver la actividad de etiquetas de documentos](view-label-activity-for-documents.md)
 ### [Ver los informes de gobierno de datos](view-the-data-governance-reports.md)
@@ -101,7 +101,7 @@
 ### [Usar la carga en la red para importar archivos PST con cifrado RMS](use-network-upload-to-import-rms-encrypted-pst-files.md)
 ### [Preguntas más frecuentes sobre la importación de archivos PST](faqimporting-pst-files-to-office-365.md)
 ### [Archivado de datos de terceros en Office 365](archiving-third-party-data.md)
-#### [Usar un conector de muestra para archivar datos de Facebook en Office 365 (versión preliminar)](archive-facebook-data-with-sample-connector.md)
+#### [Usar un conector de ejemplo para archivar datos de Facebook en Office 365 (versión preliminar)](archive-facebook-data-with-sample-connector.md)
 #### [Usar un conector de ejemplo para archivar datos de Twitter](archive-twitter-data-with-sample-connector.md)
 #### [Trabajar con un socio para archivar datos de terceros](work-with-partner-to-archive-third-party-data.md)
 ## Almacenar datos
@@ -114,7 +114,8 @@
 ### [Administrador del plan de archivos](file-plan-manager.md)
 ### [Etiquetas de retención](labels.md)
 ### [Cumplir con la norma SEC 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
-### [Crear y publicar etiquetas de retención con PowerShell](https://docs.microsoft.com/es-ES/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+### 
+  [Crear y publicar etiquetas de retención con PowerShell](https://docs.microsoft.com/es-ES/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
 ### [Acerca de la retención basada en eventos](event-driven-retention.md)
 ### [Retención automática basada en eventos](automate-event-driven-retention.md)
 ## [Eliminar datos](disposition-reviews.md)
@@ -180,12 +181,19 @@
 ### [Usar DKIM para validar el correo electrónico saliente](use-dkim-to-validate-outbound-email.md)
 ### [Compatibilidad para la validación de mensajes firmados con DKIM](support-for-validation-of-dkim-signed-messages.md)
 ### [Usar DMARC para validar el correo electrónico](use-dmarc-to-validate-email.md)
-## [Informes inteligentes y reportes en el Centro de seguridad y cumplimiento](reports-and-insights-in-security-and-compliance.md) 
+## [Informes inteligentes y reportes en el Centro de seguridad y cumplimiento](reports-and-insights-in-security-and-compliance.md)
+### [Introducción al Panel de seguridad](security-dashboard.md) 
+#### [Tutorial: desde un informe detallado a un reporte](from-a-detailed-report-to-an-insight.md)
+#### [Tutorial: desde un reporte a un informe detallado](from-an-insight-to-a-detailed-report.md)
+#### [Tutorial: desde un panel o a un reporte](from-a-dashboard-to-an-insight.md)
+#### [Crear una programación para un informe](create-a-schedule-for-a-report.md)
+#### [Administrar la programación para varios informes](manage-schedules-for-multiple-reports.md)
+#### [Configurar y descargar un informe personalizado](set-up-and-download-a-custom-report.md)
+#### [Descargar informes existentes](download-existing-reports.md)
+### [Habilitar o deshabilitar las sugerencias de seguridad en Office 365](enable-or-disable-safety-tips.md)
 ### [Ver información sobre los archivos malintencionados](malicious-files-detected-in-spo-odb-or-teams.md)
 ### [Ver informes de seguridad de correo electrónico en el Centro de seguridad y cumplimiento](view-email-security-reports.md)
-### [Tutorial: desde un informe detallado a un reporte](from-a-detailed-report-to-an-insight.md)
-### [Tutorial: desde un reporte a un informe detallado](from-an-insight-to-a-detailed-report.md)
-### [Tutorial: desde un panel o a un reporte](from-a-dashboard-to-an-insight.md)
+
 # [Protección contra amenazas avanzada](office-365-atp.md)
 ## Tareas de configuración de ATP para administradores
 ### Tareas de configuración de administrador global
@@ -194,8 +202,8 @@
 #### [Configurar una lista personalizada de URL con "no reescribir"](set-up-a-custom-do-not-rewrite-urls-list-with-atp.md)
 #### [Configurar una lista personalizada de URL bloqueadas](set-up-a-custom-blocked-urls-list-wtih-atp.md)
 ### Tareas de configuración de administrador de roles
-#### [Activar ATP para SharePoint, OneDrive y Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md).
-#### [ATP para SharePoint, OneDrive y Microsoft Teams](atp-for-spo-odb-and-teams.md).
+#### [Activar ATP para SharePoint, OneDrive y Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md)
+#### [ATP para SharePoint, OneDrive y Microsoft Teams](atp-for-spo-odb-and-teams.md)
 ## Administración de la seguridad: ATP posterior a la configuración
 ## [Comprensión de las últimas campañas de ataques con análisis de amenazas](latest-attack-campaigns.md)
 ## [Búsqueda en Microsoft 365 ATP](hunting.md)
@@ -212,10 +220,10 @@
 ### [Integración de SIEM con ATP de Office 365](siem-integration-with-office-365-ti.md)
 ## Cómo funciona ATP
 ### [Cómo funcionan los Vínculos seguros de ATP](how-atp-safe-links-works.md)
-### [Detalles de vista previa y entrega dinámica](dynamic-delivery-and-previewing.md)
-## [Cómo funcionan los datos adjuntos seguros de ATP](how-atp-safe-attachments-works.md)
-### [Sobre Investigación y respuesta de amenazas](office-365-ti.md)
+### [Cómo funcionan los datos adjuntos seguros de ATP](how-atp-safe-attachments-works.md)
+#### [Detalles de vista previa y entrega dinámica](dynamic-delivery-and-previewing.md)
 ### [Cómo funciona la Investigación y respuesta de amenazas](get-started-with-ti.md)
+#### [Sobre Investigación y respuesta de amenazas](office-365-ti.md)
 ### [Cómo funciona la Investigación y respuesta de amenazas automatizada](automated-investigation-response-office.md)
 ### [Identificar mensajes sospechosos en Outlook.com y Outlook en la Web](unverified-sender-feature.md)
 
@@ -247,7 +255,8 @@
 ### [Administrador del plan de archivos](file-plan-manager.md)
 ### [Etiquetas de retención](labels.md)
 ### [Cumplir con la norma SEC 17a-4](use-exchange-online-to-comply-with-sec-rule-17a-4.md)
-### [Crear y publicar etiquetas de retención con PowerShell](https://docs.microsoft.com/es-ES/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
+### 
+  [Crear y publicar etiquetas de retención con PowerShell](https://docs.microsoft.com/es-ES/office365/securitycompliance/bulk-create-publish-labels-using-powershell)
 ### [Acerca de la retención basada en eventos](event-driven-retention.md)
 ### [Retención automática basada en eventos](automate-event-driven-retention.md)
 ## [Eliminar datos](disposition-reviews.md)
@@ -269,7 +278,7 @@
 
 # [Buscar contenido](search-for-content.md)
 ## [Usar búsqueda de contenido](content-search.md)
-### [Consultas de palabras clave y condiciones de búsqueda para la búsqueda de contenido](keyword-queries-and-search-conditions.md).
+### [Consultas de palabras clave y condiciones de búsqueda para la búsqueda de contenido](keyword-queries-and-search-conditions.md)
 ### [Ver las estadísticas de palabras clave para resultados de búsqueda de contenido](view-keyword-statistics-for-content-search.md)
 ### [Exportar resultados de la búsqueda de contenido](export-search-results.md)
 ### [Exportar un informe de búsqueda de contenido](export-a-content-search-report.md)
@@ -416,7 +425,7 @@
 ### [Crear un informe de suspensiones en casos de eDiscovery](create-a-report-on-holds-in-ediscovery-cases.md)
 
 ## [Asignar permisos de eDiscovery](assign-ediscovery-permissions.md)
-## [Configurar los límites de cumplimiento para investigaciones de eDiscovery en Office 365](set-up-compliance-boundaries.md).
+## [Configurar los límites de cumplimiento para investigaciones de eDiscovery en Office 365](set-up-compliance-boundaries.md)
 ## [Serie de soluciones de eDiscovery: escenario de pérdidas de datos: búsqueda y purga](data-spillage-scenariosearch-and-purge.md)
 
 ## Administrar suspensiones
@@ -484,11 +493,6 @@
 ### [Supervisar los dispositivos de seguridad de Microsoft 365](monitor-devices.md)
 ### [Supervisar las aplicaciones de seguridad de Microsoft 365](monitor-apps.md)
 ## [Directivas de alerta](alert-policies.md)
-### [Crear una programación para un informe](create-a-schedule-for-a-report.md)
-### [Administrar la programación para varios informes](manage-schedules-for-multiple-reports.md)
-### [Configurar y descargar un informe personalizado](set-up-and-download-a-custom-report.md)
-### [Descargar informes existentes](download-existing-reports.md)
-## [Habilitar o deshabilitar las sugerencias de seguridad en Office 365](enable-or-disable-safety-tips.md)
 
 # Flujo de correo
 ## [Habilitar el complemento de mensajes de informe](enable-the-report-message-add-in.md)
