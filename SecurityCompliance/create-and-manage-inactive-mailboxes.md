@@ -3,7 +3,7 @@ title: Crear y administrar buzones inactivos en Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/29/2018
+ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 296a02bd-ebde-4022-900e-547acf38ddd7
 description: Puede crear un buzón inactivo en Office 365 aplicando una directiva de retención de Office 365 o retención al buzón de correo y, a continuación, eliminando la cuenta de usuario de Office 365 correspondiente. Los elementos de un buzón inactivo se conservan durante toda la Directiva de retención o retención que se le aplicó antes de que se desactivara. Para eliminar de forma permanente un buzón inactivo, solo tiene que quitar la Directiva de retención o retención.
-ms.openlocfilehash: 1a2eb5a998de7f31bcf531aacf22dca51c71acb8
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: e07b062f6b77f18589334b141e38edddc5ea18c5
+ms.sourcegitcommit: f88f14999aeb70ecf265cd98eb09a3304b150be8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34151232"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "34768955"
 ---
 # <a name="create-and-manage-inactive-mailboxes-in-office-365"></a>Crear y administrar buzones inactivos en Office 365
 
@@ -36,7 +36,7 @@ Office 365 hace posible que conserve el contenido de los buzones de correo elimi
     
 - La licencia asociada al buzón de Exchange Online eliminado estará disponible después de que se elimine la cuenta de usuario de Office 365 correspondiente. A continuación, puede [asignar licencias a usuarios en Office 365 para empresas](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc) a otro usuario. 
     
-- Si no se aplica una retención por juicio o una directiva de retención de Office 365 en un buzón antes de eliminarlo, su contenido no se conservará y no podrá detectarse. Aun así, el buzón eliminado se puede recuperar en un plazo de 30 días a partir de su eliminación, pero el buzón junto con su contenido se eliminará permanentemente transcurrido dicho plazo, si no se recupera.
+- Si una retención por juicio o una directiva de retención de Office 365 (que está configurada para conservar o conservar y, a continuación, eliminar contenido) no se aplica a un buzón de correo antes de su eliminación, el contenido del buzón no se conservará ni se podrá detectar. Aun así, el buzón eliminado se puede recuperar en un plazo de 30 días a partir de su eliminación, pero el buzón junto con su contenido se eliminará permanentemente transcurrido dicho plazo, si no se recupera.
     
 - For more information about Litigation Hold, see [In-Place Hold and Litigation Hold](https://go.microsoft.com/fwlink/p/?LinkId=846124). Para obtener más información acerca de las directivas de retención de Office 365, vea [información general sobre las directivas de retención en office 365](retention-policies.md).
   
@@ -46,7 +46,7 @@ El hecho de que un buzón esté inactivo implica dos pasos: 1) colocar el buzón
   
 ### <a name="step-1-place-a-mailbox-on-litigation-hold-or-apply-an-office-365-retention-policy"></a>Paso 1: poner un buzón en retención por juicio o aplicar una directiva de retención de Office 365
 
-Si se coloca un buzón en retención por juicio o si se aplica una directiva de retención de Office 365, se conserva el contenido del buzón antes de eliminarlo. Ambos tipos de retenciones conservarán todo el contenido del buzón, incluidos los elementos eliminados y las versiones originales de elementos modificados. Los elementos eliminados y modificados se conservan en el buzón inactivo durante un período de tiempo especificado o hasta que se elimine permanentemente el buzón inactivo mediante la eliminación de la retención o la directiva de retención aplicada a los buzones inactivos.
+Poner un buzón en retención por juicio o aplicar una directiva de retención de Office 365 (que está configurado para conservar o conservar y, a continuación, eliminar contenido) conserva el contenido en el buzón antes de que se elimine. Ambos tipos de retenciones conservarán todo el contenido del buzón, incluidos los elementos eliminados y las versiones originales de elementos modificados. Los elementos eliminados y modificados se conservan en el buzón inactivo durante un período de tiempo especificado o hasta que se elimine permanentemente el buzón inactivo mediante la eliminación de la retención o la directiva de retención aplicada a los buzones inactivos.
   
 Si ya se ha colocado una retención en un buzón, o si ya se le ha aplicado una directiva de retención de Office 365, lo único que hay que hacer es eliminar la cuenta de usuario de Office 365 correspondiente, como se explica en el paso 2.
   

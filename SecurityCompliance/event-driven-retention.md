@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con las etiquetas de retención en Office 365, puede hacer que un período de retención se base en el momento en que se produzca un tipo específico de evento. El evento desencadena el inicio del período de retención y se exigirán las acciones de retención de etiqueta en todo el contenido que tenga aplicada una etiqueta de retención para ese tipo de evento. La retención controlada por eventos suele usarse como parte de un proceso de administración de registros.
-ms.openlocfilehash: 6d4d9a1af20e16453343dd2b68b87b033c46e324
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 0b8b82038ef00e135b759b4b818a1bb4bd559cf7
+ms.sourcegitcommit: 34b37d83944dce0a05aa1aacc0d4f7bec55e959f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34154632"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "34728627"
 ---
 # <a name="overview-of-event-driven-retention"></a>Información general sobre la retención controlada por eventos
 
@@ -103,7 +103,7 @@ Tenga en cuenta que, después de seleccionar un tipo de evento y crear la etique
   
 ### <a name="step-3-publish-or-auto-apply-the-label"></a>Paso 3: Publicar o aplicar automáticamente una etiqueta
 
-Al igual que cualquier etiqueta, necesita publicar o aplicar automáticamente una etiqueta basada en eventos para que se aplique en el contenido (de forma manual o automática). Para hacerlo, vaya a la página **Etiquetas** o **Directivas de etiquetas**. Tenga en cuenta que las etiquetas que clasifican contenido como registro solo pueden publicarse y aplicarse de forma manual en el contenido. 
+Al igual que cualquier etiqueta, necesita publicar o aplicar automáticamente una etiqueta basada en eventos para que se aplique en el contenido (de forma manual o automática). Para hacerlo, vaya a la página **Etiquetas** o **Directivas de etiquetas**. 
   
 ![Opciones para publicar o aplicar automáticamente una etiqueta](media/c9232c54-bbc0-40d2-abc2-122d5d1e70af.png)
   
