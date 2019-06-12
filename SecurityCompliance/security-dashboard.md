@@ -3,7 +3,6 @@ title: Introducción al panel de seguridad
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 03/19/2019
 audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
@@ -15,12 +14,12 @@ ms.assetid: fe0b9b8f-faa9-44ff-8095-4d1b2f507b74
 ms.collection:
 - M365-security-compliance
 description: Use el nuevo panel de seguridad para revisar el estado de la protección contra amenazas de Office 365 y vea y actúe en alertas de seguridad.
-ms.openlocfilehash: 46f11a4e5693cf243ff72acd6d87406c34af247a
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: 78e6a67ace757cca9d25086c601ab4b4437c7bf8
+ms.sourcegitcommit: 5a93c2f3df35d06a59a7fbaff5c91f7afde11781
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077226"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34857670"
 ---
 # <a name="security-dashboard"></a>Panel de seguridad
 
@@ -30,7 +29,7 @@ El [Centro &amp; de seguridad y cumplimiento](go-to-the-securitycompliance-cente
   
 Vea el vídeo para obtener información general y lea este artículo para obtener más información.
   
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/3540b1f8-62d2-47fa-a07d-d7ad76f55b0f?autoplay=false]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1VV3o]
   
 Dependiendo de lo que incluya la suscripción de Office 365 de la organización, el panel de seguridad incluye varios widgets, como Resumen de administración de amenazas, estado de la protección contra amenazas, detecciones de amenazas semanales globales, malware y más, tal y como se describe en la siguientes secciones.
   
@@ -45,10 +44,10 @@ El widget de Resumen de administración de amenazas le indica de un vistazo cóm
 
 ![Panel de seguridad: widget de Resumen de administración de amenazas](media/SecDash-ThreatMgmtSummary.png)
 
-La información que verá en el Resumen de administración de amenazas depende de lo que incluya la suscripción. En la tabla siguiente se describe la información que se incluye para Office 365 Enterprise E3 y Office 365 Enterprise E5.
+La información que verá en el Resumen de administración de amenazas depende de lo que incluya la suscripción. En la tabla siguiente se describe la información que se incluye para Office 365 E3 y Office 365 E5.
 
 
-|Office 365 Enterprise E3  |Office 365 Enterprise E5  |
+|Office 365 E3  |Office 365 E5  |
 |---------|---------|
 |Mensajes de malware bloqueados<br/>Mensajes de suplantación bloqueados<br>Mensajes notificados por los usuarios<br><br><br><br> |Mensajes de malware bloqueados<br>Mensajes de suplantación bloqueados<br>Mensajes notificados por los usuarios<br>Malware de cero días bloqueado<br>Mensajes de suplantación de identidad avanzada detectados<br>URL malintencionadas bloqueadas |
 

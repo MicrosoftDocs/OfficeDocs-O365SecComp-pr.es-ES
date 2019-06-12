@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Solutions
 - SIEM
 description: 'Resumen: Lea este artículo para obtener información general sobre la integración del servidor SIEM con Microsoft 365.'
-ms.openlocfilehash: 05b6e980ae8c6a6b5d32fb3428748468dd861902
-ms.sourcegitcommit: 4fedeb06a6e7796096fc6279cfb091c7b89d484d
+ms.openlocfilehash: cfa9c6c3ae501515f61799fdd480fc569918935f
+ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34652583"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34852694"
 ---
 # <a name="siem-server-integration-with-microsoft-365-services-and-applications"></a>Integración del servidor de SIEM con los servicios y aplicaciones de Microsoft 365
 
@@ -36,7 +36,7 @@ Un servidor de SIEM puede recibir datos de una amplia variedad de aplicaciones y
 | [Protección contra amenazas avanzada de Office 365](office-365-atp.md) <br/>   o   <br/>[Inteligencia sobre amenazas de Office 365](office-365-ti.md) | Registros de auditoría | [Integración de SIEM con Office 365 protección contra amenazas avanzada](siem-integration-with-office-365-ti.md) |
 | [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) | Integración de registros | [Integración de SIEM con Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/siem) |
 | [Office 365 Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) | Integración de registros | [Integrar el servidor de SIEM con Cloud App Security](https://docs.microsoft.com/cloud-app-security/siem) |
-| [Protección contra amenazas avanzada de Windows Defender](https://docs.microsoft.com/windows/security/threat-protection/) | Integración de registros | [Extraer alertas a las herramientas de SIEM](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-siem-windows-defender-advanced-threat-protection) |
+| [Protección contra amenazas de Microsoft](https://docs.microsoft.com/windows/security/threat-protection/) | Integración de registros | [Extraer alertas a las herramientas de SIEM](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-siem) |
 | [Centro de seguridad de Azure](https://docs.microsoft.com/azure/security-center/security-center-intro) (Protección contra amenazas y detección de amenazas) | Alertas | [Exportación de datos de seguridad de Azure a SIEM-configuración de canalización-vista previa](https://docs.microsoft.com/azure/security-center/security-center-export-data-to-siem) |
 | [Azure Active Directory Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/overview) | Registros de auditoría | [Integración de los registros de auditoría de Azure Active Directory](https://docs.microsoft.com/azure/security/security-azure-log-integration-ad) |
 | [Análisis de amenazas avanzadas de Azure](https://docs.microsoft.com/azure/security/azure-threat-detection) | Integración de registros | [Referencia de registro SIEM de ATA](https://docs.microsoft.com/advanced-threat-analytics/cef-format-sa) |

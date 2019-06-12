@@ -1,5 +1,5 @@
 ---
-title: Supervisar y notificar el estado de la aplicación en Microsoft 365 Security
+title: Supervisión e informes de aplicaciones en el centro de seguridad 365 de Microsoft
 description: Describe cómo puede obtener más información sobre el uso de aplicaciones en la nube en la organización.
 keywords: seguridad, malware, Microsoft 365, M365, Security Center, monitor, Report, apps
 ms.prod: w10
@@ -12,21 +12,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 33a10996ceaf3023d5aee58aaabf3fef54372c30
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 2641b90fd6f055352c5305d63ad98a54eb1ee483
+ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32263362"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34852664"
 ---
-# <a name="monitor-and-report-app-status-in-microsoft-365-security"></a>Supervisar y notificar el estado de la aplicación en Microsoft 365 Security
-
+# <a name="app-monitoring-and-reporting-in-microsoft-365-security-center"></a>Supervisión e informes de aplicaciones en el centro de seguridad 365 de Microsoft
 
 Estos informes proporcionan más información sobre cómo se usan las aplicaciones en la nube en la organización, incluidos los tipos de aplicaciones, su nivel de riesgo y las alertas.
 
 ## <a name="monitor-email-accounts-at-risk"></a>Supervisar las cuentas de correo electrónico en riesgo
 
-La **protección de correo electrónico** muestra las cuentas de correo electrónico en riesgo. Puede hacer clic en una cuenta para investigar más en el centro de seguridad de Windows Defender.
+La **protección de correo electrónico** muestra las cuentas de correo electrónico en riesgo. Puede hacer clic en una cuenta para investigar más en el centro de seguridad de Microsoft defender.
 
 ![Tarjeta de protección de correo electrónico](./media/security-docs/email-protection.png)
 

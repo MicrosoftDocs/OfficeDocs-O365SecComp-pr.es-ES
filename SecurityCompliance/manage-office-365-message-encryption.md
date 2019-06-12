@@ -15,16 +15,16 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Una vez que haya terminado de configurar el cifrado de mensajes de Office 365 (OME), puede personalizar la configuración de la implementación de varias maneras. Por ejemplo, puede configurar si desea habilitar códigos de paso de una sola vez, mostrar el botón proteger en Outlook en la web y más. Las tareas de este artículo describen cómo hacerlo.
-ms.openlocfilehash: 5c498c648fb28e6538bfc2fde8bdf50e8e02cbfc
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: f19556f88783eed86bd33a7fdcbd1efae18c3ef3
+ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155752"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34852534"
 ---
 # <a name="manage-office-365-message-encryption"></a>Administrar el cifrado de mensajes de Office 365
 
-Una vez que haya terminado de configurar el cifrado de mensajes de Office 365 (OME), puede personalizar la configuración de la implementación de varias maneras. Por ejemplo, puede configurar si desea habilitar códigos de paso de una sola vez, mostrar el botón **proteger** en Outlook en la web y más. Las tareas de este artículo describen cómo hacerlo.
+Una vez que haya terminado de configurar el cifrado de mensajes de Office 365 (OME), puede personalizar la configuración de la implementación de varias maneras. Por ejemplo, puede configurar si desea habilitar códigos de paso de una sola vez, Mostrar **** el botón cifrar en Outlook en la web y más. Las tareas de este artículo describen cómo hacerlo.
 
 ## <a name="manage-whether-google-yahoo-and-microsoft-account-recipients-can-use-these-accounts-to-sign-in-to-the-office-365-message-encryption-portal"></a>Administrar si los destinatarios de cuentas de Google, Yahoo y Microsoft pueden usar estas cuentas para iniciar sesión en el portal de cifrado de mensajes de Office 365
 
@@ -78,11 +78,11 @@ Si el destinatario de un mensaje cifrado por OME no usa Outlook, independienteme
    Set-OMEConfiguration -Identity "OME Configuration" -OTPEnabled $true
    ```
 
-## <a name="manage-the-display-of-the-protect-button-in-outlook-on-the-web"></a>Administrar la presentación del botón proteger en Outlook en la web
+## <a name="manage-the-display-of-the-encrypt-button-in-outlook-on-the-web"></a>Administrar la presentación del botón cifrar en Outlook en la web
 
-El botón **proteger** de Outlook en la web está deshabilitado al configurar OME. Como administrador, puede administrar si se muestra este botón a los usuarios finales.
+Como administrador, puede administrar si se muestra este botón a los usuarios finales.
   
-### <a name="to-manage-whether-the-protect-button-appears-in-outlook-on-the-web"></a>Para administrar si el botón proteger aparece en Outlook en la web
+### <a name="to-manage-whether-the-encrypt-button-appears-in-outlook-on-the-web"></a>Para administrar si el botón cifrar aparece en Outlook en la web
   
 1. Use una cuenta profesional o educativa que tenga permisos de administrador global en su organización de Office 365 e inicie una sesión de Windows PowerShell y conéctese a Exchange Online. Para obtener instrucciones, vea [conectarse a Exchange Online PowerShell](https://aka.ms/exopowershell).
 
@@ -92,13 +92,13 @@ El botón **proteger** de Outlook en la web está deshabilitado al configurar OM
    Set-IRMConfiguration -SimplifiedClientAccessEnabled <$true|$false>
    ```
 
-   Por ejemplo, para deshabilitar el botón **proteger** :
+   Por ejemplo, para deshabilitar **** el botón cifrar:
 
    ```powershell
    Set-IRMConfiguration -SimplifiedClientAccessEnabled $false
    ```
 
-   Para habilitar el botón **proteger** :
+   Para habilitar el **** botón cifrar:
 
    ```powershell
    Set-IRMConfiguration -SimplifiedClientAccessEnabled $true
@@ -226,7 +226,7 @@ Esperamos que no se encuentre, pero, si es necesario, deshabilitar las nuevas ca
   
 1. Con una cuenta profesional o educativa que tenga permisos de administrador global en su organización de Office 365, inicie una sesión de Windows PowerShell y conéctese a Exchange Online. Para obtener instrucciones, vea [conectarse a Exchange Online PowerShell](https://aka.ms/exopowershell).
 
-2. Si ha habilitado el botón **proteger** en Outlook en la web, deshabilítelo mediante la ejecución del cmdlet Set-IRMConfiguration con el parámetro SimplifiedClientAccessEnabled. De lo contrario, omita este paso.
+2. Si ha habilitado **** el botón cifrar en Outlook en la web, deshabilítelo mediante la ejecución del cmdlet Set-IRMConfiguration con el parámetro SimplifiedClientAccessEnabled. De lo contrario, omita este paso.
 
    ```powershell
    Set-IRMConfiguration -SimplifiedClientAccessEnabled $false

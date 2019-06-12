@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Obtenga información sobre las capacidades de investigación y respuesta automatizadas en Office 365 Advanced Threat Protection.
-ms.openlocfilehash: af567fc7bf532fde5854e3e2ee3785ca69c3c7ed
-ms.sourcegitcommit: b7c17e1079da4e60404d704864ccbc08f8e4dbb8
+ms.openlocfilehash: bb992a4ebd9bf10f2659929bab4357117ea1c254
+ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "34250323"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34852624"
 ---
 # <a name="automated-investigation-and-response-air-with-office-365"></a>Investigación y respuesta automatizadas (AIR) con Office 365
 
@@ -96,7 +96,7 @@ Una vez completada la investigación raíz, la guía proporciona una lista de la
 A continuación, se ejecutan varios pasos de investigación y de búsqueda de amenazas:
 
 - Se buscan mensajes de correo electrónico similares en otros clústeres de correo electrónico.
-- La señal se comparte con otras plataformas, como [ATP de Windows Defender](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection).
+- La señal se comparte con otras plataformas, como [ATP de Microsoft defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection).
 - Se determina si algún usuario ha hecho clic en cualquier vínculo malintencionado en mensajes de correo electrónico sospechosos.
 - Una comprobación se realiza a través de Office 365 Exchange Online Protection ([EOP](eop/exchange-online-protection-eop.md)) y de la protección contra amenazas avanzada ([ATP](office-365-atp.md)) de Office 365 para ver si hay otros mensajes similares detectados por los usuarios.
 - Se realiza una comprobación para ver si un usuario se ha puesto en peligro. Esta comprobación aprovecha las señales en [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security) y [Azure Active Directory](https://docs.microsoft.com/azure/active-directory), correlacionando las anomalías de actividad de usuario relacionadas. 
@@ -121,7 +121,7 @@ De forma similar a las guías activadas por una alerta, las investigaciones auto
 
 ## <a name="get-started"></a>Introducción
 
-Para acceder a sus investigaciones, como administrador global de Office 365, administrador de seguridad o lector de seguridad, vaya al centro de seguridad &[https://protection.office.com](https://protection.office.com)Compliance Center () e inicie sesión. A continuación, siga uno de los procedimientos siguientes:
+Para acceder a sus investigaciones, como administrador global de Office 365, administrador de seguridad o lector de seguridad, vaya al centro de seguridad &[https://protection.office.com](https://protection.office.com)cumplimiento () e inicie sesión. A continuación, siga uno de los procedimientos siguientes:
 
 - En el panel de navegación izquierdo, vaya a **alertas** > **Ver alertas**, abra una de las alertas relacionadas con la investigación y, a continuación, haga clic en el vínculo **Ver investigación** en la parte inferior del control flotante de alerta. 
 
@@ -242,11 +242,12 @@ En la pestaña **máquinas** , puede ver todos los equipos identificados como pa
 
 ![Página de la máquina de investigación de aire](media/air-investigationmachinepage.png)
 
-Como parte de la investigación, AIR correlaciona las amenazas de correo electrónico en los dispositivos. Por ejemplo, una investigación pasa un hash de archivo malintencionado a [ATP de Windows Defender](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection) para investigar. Esto permite la investigación automatizada de las máquinas pertinentes para los usuarios, para ayudar a garantizar que las amenazas se dirijan en la nube y en los extremos. 
+Como parte de la investigación, AIR correlaciona las amenazas de correo electrónico en los dispositivos. Por ejemplo, una investigación pasa un hash de archivo malintencionado entre en [Microsoft defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection
+) para investigar. Esto permite la investigación automatizada de las máquinas pertinentes para los usuarios, para ayudar a garantizar que las amenazas se dirijan en la nube y en los extremos. 
 
 Puede:
 - Obtenga información general visual de las amenazas y los equipos actuales encontrados.
-- Seleccione un equipo para abrir una vista en la investigación de [ATP de Windows Defender](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection) relacionada en el centro de seguridad ATP de Windows Defender.
+- Seleccione un equipo para abrir una vista en la investigación de [ATP de Microsoft defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) relacionada en el centro de seguridad de Microsoft defender.
 
 ### <a name="entity-investigation"></a>Investigación de entidades
 

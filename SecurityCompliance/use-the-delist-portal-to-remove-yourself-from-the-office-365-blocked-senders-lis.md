@@ -14,12 +14,12 @@ ms.assetid: 0bcecdd4-3343-4cc0-9e58-e19d4de515e8
 ms.collection:
 - M365-security-compliance
 description: ¿Recibe un mensaje de error cuando intenta enviar un correo electrónico a un destinatario cuya dirección de correo electrónico está en Office 365? Si cree que no debería recibir este mensaje de error, use el portal de eliminación de la lista para quitarse de la lista de remitentes bloqueados de Office 365.
-ms.openlocfilehash: 7ad7ac050829f2014d2c16dd39ad67fb2e91a1ec
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: d63d8ffcd72789d8b8a7b7b825248ee8d0cc64a7
+ms.sourcegitcommit: 5a93c2f3df35d06a59a7fbaff5c91f7afde11781
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157852"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34857640"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-list"></a>Usar el portal de eliminación de la lista para quitarse de la lista de remitentes bloqueados de Office 365
 
@@ -54,4 +54,6 @@ _IP address_ es la dirección IP del equipo en el que se ejecuta el servidor de 
     Después de quitar la dirección IP de la lista de remitentes bloqueados, los mensajes de correo electrónico que procedan de esa dirección IP se entregarán a los destinatarios que usen Office 365. Por lo tanto, asegúrese de que el correo electrónico enviado desde esa dirección IP no es ofensivo ni malintencionado; de lo contrario, es posible que se vuelva a bloquear la dirección IP.
     
     > [!NOTE]
-    > La eliminación de las restricciones puede tardar hasta 1 hora.
+    > Puede tardar hasta 24 horas o los resultados pueden variar ampliamente antes de que se eliminen las restricciones.
+    
+Obtenga información sobre [Cómo evitar que el correo electrónico real se marque como correo no deseado en office 365 y cómo controlar el](prevent-email-from-being-marked-as-spam.md ) [correo no deseado saliente en Office 365](outbound-spam-controls.md) para evitar que IP quede en la lista negra.

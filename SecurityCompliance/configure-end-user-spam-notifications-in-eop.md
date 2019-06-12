@@ -13,12 +13,12 @@ ms.assetid: e9947db5-1dd1-4493-872d-7362b24c7ba0
 ms.collection:
 - M365-security-compliance
 description: Las notificaciones de correo no deseado para el usuario final se pueden configurar en la directiva de filtro de contenido de toda la compañía, o bien en las directivas de filtro de contenido personalizadas que se aplican a los dominios.
-ms.openlocfilehash: 07bca81f06a347bbce5e997e570553f85deb5c1d
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 66d5cd5fe9456c57c62a3c15710ce84d2e2d6631
+ms.sourcegitcommit: 5a93c2f3df35d06a59a7fbaff5c91f7afde11781
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34151462"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34857650"
 ---
 # <a name="configure-end-user-spam-notifications-in-eop"></a>Configurar notificaciones de correo no deseado para el usuario final en EOP
   
@@ -37,9 +37,9 @@ Después de recibir un mensaje de notificación, los usuarios finales pueden ele
 
 **Release** si el mensaje no es correo no deseado y desea que Office 365 envíe el mensaje al buzón de correo.
 
-**Versión _AMP_ Permitir remitente** si el mensaje no es correo no deseado y desea que Office 365 agregue el remitente a la lista de remitentes seguros y destinatarios para futuros correos electrónicos. Tenga en cuenta que el administrador puede tener otras configuraciones de permitir o bloquear de toda la organización que invaliden la lista de remitentes seguros.
+**Versión & Permitir remitente** si el mensaje no es correo no deseado y desea que Office 365 agregue el remitente a la lista de remitentes seguros y destinatarios para futuros correos electrónicos. Tenga en cuenta que el administrador puede tener otras configuraciones de permitir o bloquear de toda la organización que invaliden la lista de remitentes seguros.
 
-**Publique el informe de &**, si el mensaje no es correo no deseado y desea enviar el mensaje al buzón e identificarlo en Microsoft para su análisis.
+**Libere & Informe**, si el mensaje no es correo no deseado y desea enviar el mensaje al buzón de correo y notificarlo a Microsoft para su análisis.
 
 **Bloquear** si desea que Office 365 agregue el remitente a la lista de remitentes bloqueados.
   
@@ -54,7 +54,7 @@ Para obtener información acerca de los métodos abreviados de teclado aplicable
   
 ## <a name="use-the-eac-to-configure-end-user-spam-notifications"></a>Usar el EAC para configurar las notificaciones de correo no deseado para el usuario final
 
-1. En el Centro de administración de Exchange (EAC), vaya a **Protección** \> **Filtro de contenido**.
+1. En el centro de administración de Exchange (EAC), vaya al filtro de **protección** > de**correo no deseado**.
     
 2. Seleccione la directiva de filtro de contenido para la que quiera habilitar notificaciones de correo no deseado para el usuario final (están deshabilitadas de forma predeterminada).
     
