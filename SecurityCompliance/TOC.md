@@ -100,7 +100,7 @@
 ### [Usar la carga en la red para importar archivos PST con cifrado RMS](use-network-upload-to-import-rms-encrypted-pst-files.md)
 ### [Preguntas más frecuentes sobre la importación de archivos PST](faqimporting-pst-files-to-office-365.md)
 ### [Archivado de datos de terceros en Office 365](archiving-third-party-data.md)
-#### [Usar un conector de ejemplo para archivar datos de Facebook en Office 365 (versión preliminar)](archive-facebook-data-with-sample-connector.md)
+#### [Usar un conector de ejemplo para archivar datos de Facebook](archive-facebook-data-with-sample-connector.md)
 #### [Usar un conector de ejemplo para archivar datos de Twitter](archive-twitter-data-with-sample-connector.md)
 #### [Trabajar con un socio para archivar datos de terceros](work-with-partner-to-archive-third-party-data.md)
 ## Almacenar datos
@@ -153,6 +153,7 @@
 ### [Configurar la directiva de correo no deseado saliente](configure-the-outbound-spam-policy.md)
 ### [Quitar un usuario desde el Portal de usuarios restringidos después de enviar correo no deseado](removing-user-from-restricted-users-portal-after-spam.md)
 ### [Niveles de confianza del correo no deseado](spam-confidence-levels.md)
+### [Corrección de código de error 5.7.7 XX en Exchange Online](fix-error-code-5-7-7xx-in-exchange-online.md)
 #### [Use reglas de flujo de correo para establecer el nivel de confianza contra correo no deseado (SCL)](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)
 #### [Envío de mensajes de correo no deseado, mensajes seguros y mensajes de correo de suplantación de identidad (phishing) a Microsoft para su análisis](submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis.md)
 #### [Enviar malware y no malware a Microsoft para su análisis](submitting-malware-and-non-malware-to-microsoft-for-analysis.md)
@@ -204,7 +205,7 @@
 #### [ATP para SharePoint, OneDrive y Microsoft Teams](atp-for-spo-odb-and-teams.md)
 ## Administración de la seguridad: ATP posterior a la configuración
 ## [Comprensión de las últimas campañas de ataques con análisis de amenazas](latest-attack-campaigns.md)
-## [Búsqueda en Microsoft 365 ATP](hunting.md)
+## [Búsqueda en Microsoft 365](hunting.md)
 ## [Ver y leer los informes de ATP](view-reports-for-atp.md)
 ## [Qué significan las páginas de advertencia de vínculos seguros de ATP](atp-safe-links-warning-pages.md)
 ## [Usar rastreadores de amenazas](threat-trackers.md)
@@ -214,7 +215,7 @@
 ## [Explorador de amenazas (y detecciones en tiempo real)](threat-explorer.md)
 ### [Vistas del explorador de amenazas](threat-explorer-views.md)
 ## Integración para mayor seguridad
-### [Integrar ATP de Office 365 con la Protección contra amenazas avanzada de Windows Defender](integrate-office-365-ti-with-wdatp.md)
+### [Integrar Office 365 ATP con Microsoft Defender ATP](integrate-office-365-ti-with-wdatp.md)
 ### [Integración de SIEM con ATP de Office 365](siem-integration-with-office-365-ti.md)
 ## Cómo funciona ATP
 ### [Cómo funcionan los Vínculos seguros de ATP](how-atp-safe-links-works.md)
@@ -484,11 +485,12 @@
 ## [Buscar actividades de eDiscovery en el registro de auditoría](search-for-ediscovery-activities-in-the-audit-log.md)
 
 # Supervisión de la seguridad y el cumplimiento
-## [Supervisión y creación de informes del Centro de seguridad de Microsoft 365](monitoring-and-reporting.md)
-### [Supervisar y notificar identidades en seguridad de Microsoft 365](monitor-and-report-identities.md)
-### [Supervisar los datos de seguridad de Microsoft 365](monitor-data.md)
-### [Supervisar los dispositivos de seguridad de Microsoft 365](monitor-devices.md)
-### [Supervisar las aplicaciones de seguridad de Microsoft 365](monitor-apps.md)
+## Centro de seguridad de Microsoft 365
+### [Seguir y ver informes](monitoring-and-reporting.md)
+### [Seguimiento de estado y generación de informes](monitor-and-report-identities.md)
+### [Supervisión e informes de datos](monitor-data.md)
+### [Supervisión e informes de dispositivo](monitor-devices.md)
+### [Supervisión e informes de aplicaciones](monitor-apps.md)
 ## [Directivas de alerta](alert-policies.md)
 
 # Flujo de correo
