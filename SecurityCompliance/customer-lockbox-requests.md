@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre las solicitudes de caja de caja del cliente que le permiten controlar cómo un ingeniero de soporte técnico de Microsoft puede tener acceso a los datos cuando se tiene un problema.
-ms.openlocfilehash: 2f15201cb4c49a22d7789ffafcdd94b5266bcdd4
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: f3cfdec6521cd5fe0bcb7007b27ce128ae3b2a1d
+ms.sourcegitcommit: 62447503300376aa95dd05fb5276f93a9f6a20b6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34153842"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "34927583"
 ---
 # <a name="customer-lockbox-in-office-365"></a>Caja de caja de cliente en Office 365
 
@@ -78,7 +78,7 @@ Un administrador de Office 365 puede activar los controles de caja de caja del c
 
 1. Vaya a [https://admin.microsoft.com](https://admin.microsoft.com) e inicie sesión con su cuenta profesional o educativa.
 
-2. Haga clic en **configuración _GT_ seguridad & privacidad**.
+2. Haga clic en **configuración > privacidad & seguridad**.
 
     ![Edición de la configuración de la caja de opciones del cliente en el centro de administración](media/CustomerLockbox2.png)
 
@@ -93,7 +93,7 @@ Un administrador de Office 365 puede activar los controles de caja de caja del c
 
 1. Vaya a [https://admin.microsoft.com](https://admin.microsoft.com) e inicie sesión con su cuenta profesional o educativa.
 
-2. Haga clic en **admitir _GT_ cliente de solicitudes de Lockbox**.
+2. Haga clic en **soporte > solicitudes de caja de caja del cliente**.
 
     ![Haga clic en soporte técnico y en solicitudes de caja de caja del cliente](media/CustomerLockbox5.png)
 
@@ -111,7 +111,7 @@ Un administrador de Office 365 puede activar los controles de caja de caja del c
 
 ## <a name="auditing-customer-lockbox-requests"></a>Auditoría de solicitudes de caja de comprobación del cliente 
 
-Los registros de auditoría que corresponden a las solicitudes de caja de seguridad del cliente se registran en el registro de auditoría de Office 365 y se puede tener acceso a ellos mediante la [herramienta de búsqueda de registros de auditoría](https://docs.microsoft.com/office365/securitycompliance/search-the-audit-log-in-security-and-compliance) del centro de seguridad de Office 365 & cumplimiento. Las acciones relacionadas con un cliente que aceptan o deniegan una solicitud de caja de control del cliente y las acciones realizadas por los ingenieros de Microsoft (cuando se aprueban las solicitudes de acceso) se registran en el registro de auditoría de Office 365. Puede buscar y revisar estos registros de auditoría.
+Los registros de auditoría que corresponden a las solicitudes de caja de seguridad del cliente se registran en el registro de auditoría de Office 365 y se puede tener acceso a ellos mediante la [herramienta de búsqueda de registros de auditoría](https://docs.microsoft.com/office365/securitycompliance/search-the-audit-log-in-security-and-compliance) del centro de seguridad & cumplimiento de Office 365. Las acciones relacionadas con un cliente que aceptan o deniegan una solicitud de caja de control del cliente y las acciones realizadas por los ingenieros de Microsoft (cuando se aprueban las solicitudes de acceso) se registran en el registro de auditoría de Office 365. Puede buscar y revisar estos registros de auditoría.
 
 > [!NOTE]
 > Debe tener asignado el rol registros de auditoría con permiso de vista o registros de auditoría en Exchange Online para buscar en el registro de auditoría de 365 de Office. Para obtener más información, vea [Buscar en el registro de auditoría del Centro de seguridad y cumplimiento de Office 365](https://docs.microsoft.com/en-us/office365/securitycompliance/search-the-audit-log-in-security-and-compliance#before-you-begin).
@@ -124,7 +124,7 @@ Esta es la manera de crear una consulta de búsqueda de registro de auditoría p
   
 2. Inicie sesión en Office 365 con su cuenta profesional o educativa.
 
-3. En el panel izquierdo del centro de seguridad & cumplimiento, haga clic en buscar en el > **registro de auditoría**de **investigación &**.
+3. En el panel izquierdo del centro de seguridad & cumplimiento, haga clic en buscar en el**registro de auditoría**de **& investigación** > .
 
     Se muestra la página de **búsqueda de registros de auditoría** .
 
@@ -264,7 +264,7 @@ La fuente de actividades del centro de cumplimiento contiene actividades de regi
 
 Las solicitudes de caja de caja de cliente tienen una duración predeterminada de 12 horas. Si no responde a una solicitud en un plazo de 12 horas, la solicitud expirará.
 
-#### <a name="what-does-microsoft-when-a-customer-rejects-a-customer-lockbox-request"></a>¿Qué sucede Microsoft cuando un cliente rechaza una solicitud de caja de caja del cliente?
+#### <a name="what-does-microsoft-do-when-a-customer-rejects-a-customer-lockbox-request"></a>¿Qué hace Microsoft cuando un cliente rechaza una solicitud de caja de caja del cliente?
 
 Si un cliente rechaza una solicitud de caja de caja del cliente, no se produce ningún acceso al contenido del cliente. Si un usuario de su organización sigue experimentando un problema de servicio que requiere que Microsoft tenga acceso al contenido del cliente para resolver el problema, el problema del servicio puede persistir y Microsoft lo informará al usuario.
 

@@ -3,7 +3,7 @@ title: Simulador de ataques en Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 03/05/2019
+ms.date: 06/13/2019
 audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
@@ -15,19 +15,19 @@ ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
 description: Como administrador global de Office 365, puede usar simulador de ataque para ejecutar escenarios de ataque realistas en su organización. Esto puede ayudarle a identificar y encontrar a los usuarios vulnerables antes de que un ataque real reconozca a su empresa.
-ms.openlocfilehash: a39259cdcc47e2c881b3977aa570b1f221f0b2bd
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: 938a8f944fee22fb16b87923d7608b3bfcfee0fb
+ms.sourcegitcommit: 62447503300376aa95dd05fb5276f93a9f6a20b6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077626"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "34927573"
 ---
 # <a name="attack-simulator-in-office-365"></a>Simulador de ataques en Office 365
 
-**Resumen** Si es un administrador global de Office 365 y su organización tiene [capacidades de investigación y respuesta de amenazas para office 365](office-365-ti.md), puede usar el simulador de ataques para ejecutar escenarios de ataque realistas en su organización. Esto puede ayudarle a identificar y encontrar usuarios vulnerables antes de que un ataque real afecte a su conclusión. Lea este artículo para obtener más información.
+**Resumen** Si es un administrador global de Office 365 o un administrador de seguridad y su organización tiene [capacidades de investigación y respuesta de amenazas de office 365](office-365-ti.md), puede usar simulador de ataque para ejecutar escenarios de ataque realistas en su organización. Esto puede ayudarle a identificar y encontrar usuarios vulnerables antes de que un ataque real afecte a su conclusión. Lea este artículo para obtener más información.
 
 > [!IMPORTANT]
-> La protección contra amenazas avanzada de Office 365 y la investigación y respuesta de amenazas (anteriormente conocida como inteligencia de amenazas) ahora forman parte de Office 365 plan de protección contra amenazas avanzada 2, con capacidades de protección contra amenazas adicionales. Para obtener más información, consulte [planes y precios](https://products.office.com/exchange/advance-threat-protection) de la protección contra amenazas avanzada de Office 365 y la [Descripción del servicio de protección contra amenazas avanzada de Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+> La protección contra amenazas avanzada de Office 365 y la investigación y la respuesta de amenazas (anteriormente conocida como inteligencia de amenazas) forman parte de Office 365 de la protección contra amenazas avanzada 2, junto con otras capacidades de protección contra amenazas. Para obtener más información, consulte [planes y precios](https://products.office.com/exchange/advance-threat-protection) de la protección contra amenazas avanzada de Office 365 y la [Descripción del servicio de protección contra amenazas avanzada de Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
   
 ## <a name="the-attacks"></a>Los ataques
 
@@ -37,11 +37,8 @@ Actualmente hay disponibles tres tipos de simulaciones de ataque:
 - [Ataque rociado de contraseñas](#password-spray-attack)
 - [Ataque de fuerza bruta con contraseña](#brute-force-password-attack)
     
-Para que un ataque se inicie correctamente, use la autenticación multifactor en la cuenta que está usando para ejecutar ataques simulados. Además, debe ser un administrador global de Office 365.
-  
-> [!NOTE]
-> La compatibilidad con el acceso condicional estará disponible próximamente. 
-  
+Para que un ataque se inicie correctamente, asegúrese de que la cuenta que usa para ejecutar ataques simulados esté usando la autenticación multifactor. Además, debe ser un administrador global de Office 365 o un administrador de seguridad. (Para obtener más información acerca de los roles y los permisos, consulte Permissions [in the Office 365 Security & Compliance Center](permissions-in-the-security-and-compliance-center.md)).
+    
 Para tener acceso al simulador de ataques &amp; , en el centro de seguridad y cumplimiento, elija simulador de **ataques**de **Administración** \> de amenazas.
   
 ## <a name="before-you-begin"></a>Antes de comenzar...
@@ -50,13 +47,12 @@ Asegúrese de que usted y su organización cumplen con los siguientes requisitos
       
 - **El correo electrónico de la organización se hospeda en Exchange Online**. (El simulador de ataque no está disponible para los servidores de correo electrónico locales).
     
-- **Es un administrador global de Office 365**
+- **Es administrador global de Office 365 o administrador de seguridad**
     
-- **La [autenticación multifactor](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication?view=o365-worldwide) (MFA) está activada, como mínimo, para la cuenta de administrador global de Office 365**. (Idealmente, la MFA está activada para todos los usuarios de la organización).
+- **El [acceso condicional/autenticación multifactor](https://docs.microsoft.com/office365/admin/security-and-compliance/set-up-multi-factor-authentication?view=o365-worldwide) está activado para al menos la cuenta de administrador global de Office 365 y los administradores de seguridad**. (Idealmente, el acceso condicional/autenticación multifactor está activado para todos los usuarios de la organización).
  
 - **Su organización tiene [el plan 2 de la protección contra amenazas avanzada de Office 365](office-365-ti.md)**, con el &amp; simulador de ataque visible en el centro de seguridad y cumplimiento (vaya a simulador de **ataque**de **Administración** \> de amenazas)<br/>![Administración de amenazas: simulador de ataque](media/ThreatMgmt-AttackSimulator.png)
 
-    
 ## <a name="display-name-spear-phishing-attack"></a>Nombre para mostrar: ataque de suplantación de identidad
 
 La suplantación de identidad (phishing) es un término genérico para un conjunto amplio de ataques que se clasifican como un ataque de tipo de ingeniería social. Este ataque se centra en la suplantación de identidad (phishing), un ataque más objetivo destinado a un grupo específico de personas o una organización. Normalmente, se trata de un ataque personalizado con algún reconocimiento realizado y con un nombre para mostrar que generará confianza en el destinatario, como un mensaje de correo electrónico que parece que proviene de un ejecutivo de la organización.
@@ -127,11 +123,17 @@ Un ataque de fuerza bruta contra una organización se suele usar después de que
     
 ## <a name="new-features-in-attack-simulator"></a>Nuevas características en el simulador de ataques
 
-Se han agregado nuevas características a simulador de ataque. Entre ellos se incluyen:
+Las nuevas características se han agregado recientemente a simulador de ataque. Entre ellos se incluyen:
 
-- **Capacidades avanzadas de generación de informes**. Podrá ver datos como el tiempo más rápido (o más lento) para abrir un mensaje de correo electrónico de simulación de ataque, el tiempo más rápido o más lento para hacer clic en un vínculo del mensaje, y más.
+- **Capacidades avanzadas de generación de informes**. La capacidad de ver datos como el tiempo más rápido (o más lento) para abrir un mensaje de correo electrónico de simulación de ataques, el tiempo más rápido o más lento para hacer clic en un vínculo del mensaje y más visualizaciones.
 
-- **Editor de plantillas de correo electrónico**. Puede crear una plantilla de correo electrónico personalizada y reutilizable que puede usar para simulaciones de ataque futuras.
+- **Editor de plantillas de correo electrónico**. La capacidad de crear una plantilla de correo electrónico personalizada y reutilizable es que puede usar para simulaciones de ataque futuras.
+
+- **Importación de destinatarios CSV**. La capacidad de usar un archivo CSV para importar la lista de destinatarios de destino en lugar de usar el selector de la libreta de direcciones.
+
+**Pronto estarán disponibles más características nuevas en el simulador de ataque**. Entre ellos se incluyen:
+
+- **Carga**de los datos adjuntos simulación de phishing. La capacidad de usar un archivo adjunto como carga útil para la simulación de suplantación de identidad en vez de una dirección URL.
 
 Visite el [mapa de ruta de Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap) para ver lo que se está desarrollando, lo que está implementando y lo que ya se ha iniciado.
 

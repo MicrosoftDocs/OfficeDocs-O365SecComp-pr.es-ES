@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 8c36bb03-e716-4fdd-9958-4aa7a2a1db42
 description: Los administradores pueden usar el cmdlet Search-Mailbox para buscar en buzones de usuario y, después, eliminar mensajes de un buzón.
-ms.openlocfilehash: a097b39aa179ed18c3d5426eeeacff204d48ee9b
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 1288679c7abb643c020d5b1a2a08ae64b7cb403f
+ms.sourcegitcommit: d20defdcf2ac643f0c8c1f2761b0b7f4f4090e5c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158492"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "34957422"
 ---
 # <a name="search-for-and-delete-messages---admin-help"></a>Buscar y eliminar mensajes: Ayuda para administradores
   
@@ -48,7 +48,7 @@ Como una protección adicional, primero puede copiar los mensajes en otro buzón
     
 - Si incluye una consulta de búsqueda (utilizando el parámetro  *SearchQuery*  ), el cmdlet **Search-Mailbox** devolverá un máximo de 10 000 elementos en los resultados de búsqueda. Por tanto, si incluye una consulta de búsqueda, es posible que deba ejecutar el comando **Search-Mailbox** varias veces para eliminar más de 10 000 elementos. 
     
-- También se explorará el buzón de archivo del usuario cuando se ejecuta el cmdlet **Search-Mailbox**. Asimismo, se eliminarán los elementos del buzón principal del archivo al usar el cmdlet **Search-Mailbox** con el cambio  _DeleteContent_. Para evitarlo, puede incluir el cambio  *DoNotIncludeArchive*  . Además, se recomienda no usar el modificador _DeleteContent_ para eliminar los mensajes de los buzones de Exchange online que tienen habilitado el archivado de expansión automática porque se puede producir una pérdida de datos inesperada. 
+- También se explorará el buzón de archivo del usuario cuando se ejecuta el cmdlet **Search-Mailbox**. Asimismo, se eliminarán los elementos del buzón principal del archivo al usar el cmdlet **Search-Mailbox** con el cambio  _DeleteContent_. Para evitarlo, puede incluir el cambio  *DoNotIncludeArchive*  .
     
 ## <a name="search-messages-and-log-the-search-results"></a>Buscar mensajes y registrar los resultados de la búsqueda
 
