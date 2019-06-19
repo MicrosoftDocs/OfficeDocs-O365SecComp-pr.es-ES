@@ -13,16 +13,16 @@ search.appverid:
 - MOE150
 ms.assetid: 143b3ab8-8cb0-4036-a5fc-6536d837bfce
 description: Office 365 ofrece varias herramientas de eDiscovery distintas que puede usar para buscar y conservar contenido que se encuentra en diferentes ubicaciones, como buzones de Exchange, sitios de SharePoint y OneDrive para la empresa, grupos de Office 365 y conversaciones de Skype empresarial.
-ms.openlocfilehash: 300de1a767e9ab3f6be81974a704506d367d68b4
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 80d22cf45412727c32a3557ac6b04ca68c9d17ce
+ms.sourcegitcommit: 3ffd188a7fd547ae343ccf14361c1e4300f88de0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34153322"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "35059528"
 ---
 # <a name="ediscovery-in-office-365"></a>Exhibición de documentos electrónicos en Office 365
 
-La exhibición de documentos electrónicos, o eDiscovery, es el proceso de identificación y entrega de información electrónica que se puede usar como prueba en casos legales. Puede usar la exhibición de documentos electrónicos en Office 365 para buscar contenido en buzones de Exchange Online, grupos de Office 365, Microsoft Teams, SharePoint Online y OneDrive para la empresa, y conversaciones de Skype empresarial. Puede buscar en buzones y sitios en la misma búsqueda de exhibición de documentos electrónicos mediante la herramienta de búsqueda de contenido en el centro de seguridad & cumplimiento. Además, puede usar casos de eDiscovery en el centro de seguridad & cumplimiento para identificar, mantener y exportar contenido encontrado en buzones y sitios. Si su organización tiene una suscripción a Office 365 E5, puede analizar el contenido con Office 365 Advanced eDiscovery.
+La exhibición de documentos electrónicos, o eDiscovery, es el proceso de identificación y entrega de información electrónica que se puede usar como prueba en casos legales. Puede usar la exhibición de documentos electrónicos en Office 365 para buscar contenido en buzones de Exchange Online, grupos de Office 365, Microsoft Teams, SharePoint Online y OneDrive para la empresa, y conversaciones de Skype empresarial. Puede buscar buzones y sitios en la misma búsqueda de exhibición de documentos electrónicos mediante la herramienta de búsqueda de contenido en el centro de seguridad & cumplimiento. Además, puede usar casos de eDiscovery en el centro de seguridad & cumplimiento para identificar, mantener y exportar contenido encontrado en buzones y sitios. Si su organización tiene una suscripción a Office 365 E5, puede analizar el contenido con Office 365 Advanced eDiscovery.
   
 Office 365 proporciona las siguientes herramientas de eDiscovery:
   
@@ -69,7 +69,7 @@ La tabla siguiente contiene vínculos a temas que le ayudarán a usar casos de e
 |**Tema**|**Descripción**|
 |:-----|:-----|
 |[Administrar casos de eDiscovery en el centro de seguridad & cumplimiento](manage-ediscovery-cases.md) <br/> |Obtenga información sobre cómo crear y administrar casos de eDiscovery en el centro de seguridad & cumplimiento.  <br/> |
-|[Asignar permisos de exhibición de documentos electrónicos en el Office??? 365 seguridad & centro de cumplimiento](assign-ediscovery-permissions.md) <br/> |Obtenga información sobre cómo asignar permisos de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento. Puede asignar permisos para permitir a los usuarios crear casos de eDiscovery, crear suspensiones asociadas a un caso de exhibición de documentos electrónicos, ejecutar búsquedas de contenido, obtener una vista previa de los resultados de la búsqueda y exportar los resultados de la búsqueda.  <br/> |
+|[Asignar permisos de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento de Office 365](assign-ediscovery-permissions.md) <br/> |Obtenga información sobre cómo asignar permisos de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento. Puede asignar permisos para permitir a los usuarios crear casos de eDiscovery, crear suspensiones asociadas a un caso de exhibición de documentos electrónicos, ejecutar búsquedas de contenido, obtener una vista previa de los resultados de la búsqueda y exportar los resultados de la búsqueda.  <br/> |
 |[Crear un informe sobre suspensiones en casos de eDiscovery en Office 365](create-a-report-on-holds-in-ediscovery-cases.md) <br/> |Aprenda a usar el script de Windows PowerShell de este artículo para generar un informe que contenga información sobre todas las suspensiones asociadas con casos de eDiscovery en el centro de seguridad & cumplimiento.  <br/> |
 |[Usar un script para agregar usuarios a una suspensión en un caso de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento](use-a-script-to-add-users-to-a-hold-in-ediscovery.md) <br/> |Obtenga información sobre cómo usar el script de Windows PowerShell de este artículo para agregar rápidamente los sitios de buzones de correo y OneDrive para la empresa para una lista de usuarios a una nueva retención asociada a un caso de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento.  <br/> |
 |[Buscar actividades de eDiscovery en el registro de auditoría de Office 365](search-for-ediscovery-activities-in-the-audit-log.md) <br/> |Obtenga información sobre cómo buscar en el registro de auditoría de Office 365 actividades relacionadas con la creación y la administración de casos de eDiscovery y búsquedas de contenido.  <br/> |
