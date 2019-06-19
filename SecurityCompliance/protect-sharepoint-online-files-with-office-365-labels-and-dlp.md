@@ -3,7 +3,7 @@ title: Proteger archivos de SharePoint Online con DLP y etiquetas de retención
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 03/29/2019
+ms.date: 06/18/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Solutions
 ms.assetid: c9f837af-8d71-4df1-a285-dedb1c5618b3
 description: 'Resumen: Aplique directivas de etiquetas de retención y de prevención de pérdida de datos (DLP) a sitios de grupo de SharePoint Online con distintos niveles de protección de la información.'
-ms.openlocfilehash: 118911f6430c9ae79dec1fa4a32cd0ba8fa536da
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 72912cce6c6856b048df420a8d449d3d710ed40e
+ms.sourcegitcommit: 3ffd188a7fd547ae343ccf14361c1e4300f88de0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34156902"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "35059558"
 ---
 # <a name="protect-sharepoint-online-files-with-retention-labels-and-dlp"></a>Proteger archivos de SharePoint Online con DLP y etiquetas de retención
 
@@ -205,7 +205,7 @@ Ahora siga estos pasos para configurar una directiva de DLP que impida a los usu
     
 16. Haga clic en **Aceptar**.
     
-17. En el panel **¿Qué quiere hacer si se detecta información confidencial?**, haga clic en **Siguiente**.
+17. En el panel **¿Qué desea hacer si detectamos información confidencial?**, en **Detectar cuando una cantidad específica de información confidencial se comparte al mismo tiempo**, haga clic en **Restringir acceso o encriptar el contenido**, y luego haga clic en **Siguiente**.
     
 18. En el panel **Do you want to turn on the policy or test things out first?** (¿Desea activar la directiva o probarla primero?), haga clic en **Yes, turn it on right away** (Sí, activarla inmediatamente) y luego en **Siguiente**.
     
@@ -215,7 +215,7 @@ Esta es la configuración resultante para los sitios de grupo extremadamente con
   
 ![Directiva de DLP de un sitio de grupo aislado de SharePoint Online que utiliza la etiqueta de retención Extremadamente confidencial.](media/f705d3d0-23c9-4333-8b70-ad3b91f835ea.png)
   
-## <a name="next-step"></a>Paso siguiente
+## <a name="next-step"></a>Siguiente paso
 
 [Proteger archivos de SharePoint Online con Azure Information Protection](protect-sharepoint-online-files-with-azure-information-protection.md)
     
