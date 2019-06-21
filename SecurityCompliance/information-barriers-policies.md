@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Obtenga información sobre cómo definir directivas para las barreras de la información en Microsoft Teams.
-ms.openlocfilehash: fb162e380fa467cf3e832bd7bbdafcde136b1db6
-ms.sourcegitcommit: 087cf1a022b13c46e207270d6837f09a9752c972
+ms.openlocfilehash: fd091ce213159363a11d9dce378e38f55e132c89
+ms.sourcegitcommit: b00c8fe1827d24f055a3076c10f284ff9ee3e04b
 ms.translationtype: MT
 ms.contentlocale: es-ES
 ms.lasthandoff: 06/20/2019
-ms.locfileid: "35083868"
+ms.locfileid: "35113254"
 ---
 # <a name="define-policies-for-information-barriers-preview"></a>Definir directivas para las barreras de información (vista previa)
 
@@ -134,7 +134,7 @@ Una vez que haya definido los segmentos, continúe con la definición de las dir
 
 ### <a name="using-equals-and-not-equals-in-segment-definitions"></a>Usar "igual" y "no es igual" en definiciones de segmentos
 
-En el primer ejemplo, se ha definido un segmento que incluye la lógica, *Department es igual a hr*. También puede definir segmentos con el parámetro "no es igual a", tal como se muestra en el ejemplo siguiente:
+En el primer ejemplo, se ha definido un segmento tal que "Departamento es igual a HR". Ese segmento incluyó un parámetro "equivale a". También puede definir segmentos con el parámetro "no es igual a", tal como se muestra en el ejemplo siguiente:
 
 Consta`New-OrganizationSegment -Name "segmentname" -UserGroupFilter "attribute -ne 'attributevalue'"`
 
