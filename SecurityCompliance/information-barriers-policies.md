@@ -3,7 +3,7 @@ title: Definir directivas de barrera de información
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 06/19/2019
+ms.date: 06/21/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Obtenga información sobre cómo definir directivas para las barreras de la información en Microsoft Teams.
-ms.openlocfilehash: fd091ce213159363a11d9dce378e38f55e132c89
-ms.sourcegitcommit: b00c8fe1827d24f055a3076c10f284ff9ee3e04b
+ms.openlocfilehash: 4f63d79f59741f74d2ac8167a8cd86717c6f9ec4
+ms.sourcegitcommit: c603a07d24c4c764bdcf13f9354b3b4b7a76f656
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "35113254"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "35131384"
 ---
 # <a name="define-policies-for-information-barriers-preview"></a>Definir directivas para las barreras de información (vista previa)
 
@@ -264,7 +264,9 @@ Si, después de empezar a aplicar directivas de barrera de información, desea d
 
     Consta`Stop-InformationBarrierPoliciesApplication -Identity GUID`
 
-    Ejemplo: `InformationBarrierPoliciesApplication -Identity 46237888-12ca-42e3-a541-3fcb7b5231d1`
+    Ejemplo: `Stop-InformationBarrierPoliciesApplication -Identity 46237888-12ca-42e3-a541-3fcb7b5231d1`
+
+    En este ejemplo, estamos deteniendo que se apliquen las directivas de barrera de información.
 
 ## <a name="edit-a-segment-or-a-policy"></a>Edición de un segmento o una directiva
 

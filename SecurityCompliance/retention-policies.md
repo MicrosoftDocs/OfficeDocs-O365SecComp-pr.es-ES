@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con una directiva de retención, puede decidir de forma proactiva si quiere retener o eliminar contenido, ambos (retener y, a continuación, eliminar el contenido), aplicar una directiva única a la toda la organización o solo a determinadas ubicaciones o usuarios, o aplicar una directiva a todo el contenido o solo a aquel que cumpla ciertas condiciones.
-ms.openlocfilehash: 43948106c69f2a49ce36631acc9d14365d8a2eb9
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 8abb14550df526d702854e43ae1e25496bf390d4
+ms.sourcegitcommit: c603a07d24c4c764bdcf13f9354b3b4b7a76f656
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34156972"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "35131404"
 ---
 # <a name="overview-of-retention-policies"></a>Introducción a las directivas de retención
 
@@ -78,11 +78,14 @@ Esto es aplicable al contenido existente en el momento de aplicar la directiva d
   
 Tenga en cuenta que un usuario recibirá un error si intenta eliminar una biblioteca, lista, carpeta o sitio sujeto a una directiva de retención. Un usuario puede eliminar una carpeta si primero mueve o elimina los archivos que contiene que están sujetos a la directiva. Tenga en cuenta también que la biblioteca de conservación de documentos se crea cuando es necesario copiar el primer elemento a la biblioteca, y no al crear la directiva de retención. Por lo tanto, para probar la directiva, primero debe editar o eliminar un documento sujeto a la directiva en un sitio y, a continuación, ir a la biblioteca de conservación de documentos para ver la copia retenida.
   
-![Diagrama del flujo de retención en SharePoint y OneDrive](media/858702f8-5a09-4464-86d0-3b16fed800f3.png)
+![Diagrama del ciclo de vida de contenido en SharePoint y OneDrive](Retention_Diagram_of_retention_flow_in_sites.png)
   
 Cuando se asigna una directiva de retención a una cuenta de OneDrive o un sitio de SharePoint, el contenido puede seguir una de estas dos rutas:
   
-1. **Si el contenido se ha modificado o eliminado** durante el período de retención, se crea una copia en la biblioteca de conservación de documentos del contenido original tal como era cuando se asignó la directiva de retención. Allí, se ejecuta un trabajo de temporizador de forma periódica que identifica los elementos cuyo período de retención ha expirado y estos se eliminan de forma permanente en los siete días siguientes al fin del período de retención. 
+1. **Si el contenido se ha modificado o eliminado** durante el periodo de retención, se crea en la biblioteca de conservación de documentos una copia del contenido original tal como era cuando se asignó la directiva de retención. Allí se ejecuta de forma periódica un trabajo de temporizador que identifica los elementos cuyo periodo de retención ha caducado. Estos elementos se mueven a la Papelera de reciclaje de segundo nivel, donde se eliminarán permanentemente 93 días después. Tenga en cuenta que la Papelera de reciclaje de segundo nivel no es visible para los usuarios finales (solo la Papelera de reciclaje de primer nivel), pero los administradores de la colección de sitios pueden ver y restaurar el contenido desde allí.
+
+    > [!NOTE]
+    > Recientemente, hemos cambiado la forma de eliminar contenido de la biblioteca de conservación de documentos. Para ayudar a evitar la pérdida accidental de datos, ya no se elimina permanentemente el contenido de la biblioteca de conservación de documentos. Ahora solo eliminamos de forma permanentemente el contenido de la Papelera de reciclaje. Todo el contenido de la biblioteca de conservación de documentos pasa por la Papelera de reciclaje de segundo nivel.
     
 2. **Si el contenido no se ha modificado o eliminado** durante el período de retención, se mueve a la Papelera de reciclaje de primer nivel al final del período de retención. Si un usuario elimina el contenido desde allí o vacía esta Papelera de reciclaje (lo que también se conoce como purgar), el documento se mueve a la Papelera de reciclaje de segundo nivel. Un período de retención de 93 días abarca las papeleras de reciclaje de primer y segundo nivel. Al final de esos 93 días, el documento se elimina permanentemente donde se encuentre, ya sea la Papelera de reciclaje de primer o segundo nivel. Tenga en cuenta que la Papelera de reciclaje no está indexada y, por tanto, las búsquedas no encuentran contenido en ella. Esto significa que una retención de eDiscovery no localizará ningún contenido en la Papelera de reciclaje para poder retenerlo. 
     
@@ -102,7 +105,7 @@ Si un usuario deja la organización y su buzón está incluido en una directiva 
   
 Cuando se asigna una directiva de retención a un buzón o una carpeta pública, el contenido puede seguir una de estas dos rutas:
   
-1. **Si el elemento se ha modificado o eliminado de forma permanente** por parte del usuario (con MAYÚS+SUPR o eliminándolo de Elementos eliminados) durante el período de retención, el elemento se mueve (o copia, en el caso de la edición) a la carpeta Elementos recuperables. Allí se ejecuta un proceso de forma periódica que identifica los elementos cuyo período de retención ha expirado y estos se eliminan permanentemente en un plazo de 14 días al finalizar el período de retención. Tenga en cuenta que 14 días es la configuración predeterminada, pero es posible configurar hasta 30 días. 
+1. **Si el elemento se ha modificado o eliminado de forma permanente** por parte del usuario (con MAYÚS+SUPR o eliminándolo de Elementos eliminados) durante el período de retención, el elemento se mueve (o copia, en el caso de la edición) a la carpeta Elementos recuperables. Allí se ejecuta un proceso de forma periódica que identifica los elementos cuyo período de retención ha expirado y estos se eliminan permanentemente en un plazo de 14 días al finalizar el período de retención. Tenga en cuenta que 14 días es la configuración predeterminada, pero es posible configurar hasta 30 días.
     
 2. **Si el elemento no se ha modificado o eliminado** durante el período de retención, el mismo proceso se ejecuta periódicamente en todas las carpetas del buzón para identificar los elementos cuyo período de retención ha expirado y estos se eliminan de forma permanente en un plazo de 14 días al final del período de retención. Tenga en cuenta que 14 días es la configuración predeterminada, pero es posible configurar hasta 30 días. 
     
@@ -260,7 +263,8 @@ Una directiva de retención que se aplica a Teams puede usar [Bloqueo de conserv
 Con PowerShell, puede excluir determinados tipos de elementos de Exchange de una directiva de retención. Por ejemplo, puede excluir mensajes de correo de voz, conversaciones de mensajería instantánea y otros contenidos de Skype Empresarial Online en los buzones. También puede excluir calendario, notas y elementos de la tarea. Esta función está disponible solo mediante PowerShell, no en la interfaz de usuario cuando se crea una directiva de retención.
   
 Para ello, utilice el parámetro `ExcludedItemClasses` de los cmdlets `New-RetentionComplianceRule` y `Set-RetentionComplianceRule`. Para obtener más información sobre PowerShell, vea la sección siguiente [Buscar los cmdlets de PowerShell para directivas de retención](#find-the-powershell-cmdlets-for-retention-policies).
-  
+
+
 ## <a name="locking-a-retention-policy"></a>Bloquear una directiva de retención
 Algunas organizaciones podrían tener que cumplir con las reglas que definen los organismos reguladores, como la regla 17a-4 de la SEC (Comisión de intercambio y valores), lo que requiere que, después de activar una directiva de retención, esta no se pueda desactivar ni hacer menos restrictiva. Con el Bloqueo de retención, puede bloquear una directiva de modo que ninguna persona pueda desactivarla ni hacerla menos restrictiva, ni siquiera el administrador.
   
@@ -294,6 +298,24 @@ La directiva de retención aparece ahora con un bloqueo de retención. Si ejecut
 
 ![Directiva bloqueada con todos los parámetros visibles en PowerShell](media/retention-policy-preservation-lock-locked-policy.PNG)
   
+## <a name="releasing-a-retention-policy"></a>Publicar una directiva de retención
+
+Puede desactivar o eliminar una directiva de retención en cualquier momento. Al hacerlo, el contenido de SharePoint o de OneDrive que se retiene se elimina de forma inmediata y permanente. A partir de ahora, y para evitar pérdidas accidentales de datos, existe un período de gracia de 30 días durante el cual la expiración del contenido para esa Directiva no se produce en la Biblioteca de conservación de documentos, de modo que puede restaurar desde allí el contenido si lo ve necesario. También puede activar la Directiva de retención durante el período de gracia y no se eliminará ningún contenido para esa Directiva. Este período de gracia se puede configurar con PowerShell.
+
+En primer lugar, [conéctese a PowerShell del Centro de seguridad y cumplimiento de Office 365](http://go.microsoft.com/fwlink/p/?LinkID=799771).
+
+Luego ejecute este script de PowerShell. Puede establecer la propiedad `ip_tenantGracePeriodInDays` en la configuración de suscripción del espacio empresarial con cualquier valor entre 0-100 días. Si se establece en 0, no hay período de gracia y las directivas de retención se publicarán de inmediato. 
+
+`
+$siteSubscription = Get-SPSiteSubscription -Identity 
+$siteSubScriptionId 
+$siteSubSettingsMgr = [Microsoft.SharePoint.SPSiteSubscriptionSettingsManager]::Local
+$properties = $siteSubSettingsMgr.GetProperties($siteSubscription)
+$properties.SetValue("ip_tenantGracePeriodInDays",  30)
+`
+
+Este periodo de gracia de 30 días en SharePoint y OneDrive corresponde a la retención de retraso de 30 días de Exchange. Para obtener más información, consulte [Gestionar buzón con una retención de retraso](https://docs.microsoft.com/es-ES/office365/securitycompliance/identify-a-hold-on-an-exchange-online-mailbox#managing-mailboxes-on-delay-hold).
+
 ## <a name="the-principles-of-retention-or-what-takes-precedence"></a>Los principios de retención o qué tiene precedencia
 
 Es posible (o incluso probable) que se apliquen varias directivas de retención a contenido, cada una con una acción (conservar, eliminar o ambas) y un período de retención. ¿Qué tiene precedencia? En general, puede estar seguro de que el contenido conservado por una directiva no se puede eliminar de forma permanente con otra directiva.
