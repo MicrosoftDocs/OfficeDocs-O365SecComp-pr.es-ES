@@ -3,7 +3,7 @@ title: Definir directivas de barrera de información
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 06/21/2019
+ms.date: 06/24/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Obtenga información sobre cómo definir directivas para las barreras de la información en Microsoft Teams.
-ms.openlocfilehash: 4f63d79f59741f74d2ac8167a8cd86717c6f9ec4
-ms.sourcegitcommit: c603a07d24c4c764bdcf13f9354b3b4b7a76f656
+ms.openlocfilehash: f6a570675130410acc702ef9f8ca99bf87b7501b
+ms.sourcegitcommit: 7c48ce016fa9f45a3813467f7c5a2fd72f9b8f49
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "35131384"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "35203739"
 ---
 # <a name="define-policies-for-information-barriers-preview"></a>Definir directivas para las barreras de información (vista previa)
 
@@ -29,20 +29,6 @@ En este artículo se describe cómo planear, definir, implementar y administrar 
 > [!TIP]
 > En este artículo se incluye un [escenario de ejemplo](#example-contosos-departments-segments-and-policies) y un libro de [Excel](https://github.com/MicrosoftDocs/OfficeDocs-O365SecComp/raw/public/SecurityCompliance/media/InfoBarriers-PowerShellGenerator.xlsx) descargable para ayudarle a planear y definir las directivas de barrera de información.
 
-## <a name="concepts-of-information-barrier-policies"></a>Conceptos de las directivas de barrera de información
-
-Es útil conocer los conceptos subyacentes de las directivas de barrera de información:
-
-- **Los atributos** de la cuenta de usuario se definen en Azure Active Directory (o Exchange Online). Estos atributos pueden incluir Departamento, puesto, ubicación, nombre del equipo y otros detalles del perfil del trabajo. 
-
-- Los **segmentos** son conjuntos de usuarios que se definen en el centro de seguridad & cumplimiento de Office 365 con un **atributo de cuenta de usuario**seleccionado. (Consulte la [lista de atributos admitidos](information-barriers-attributes.md)). 
-
-- **Las directivas de barrera de información** determinan límites de comunicación o restricciones. Al definir directivas de barrera de información, puede elegir entre dos tipos de directivas:
-    - Las directivas "bloquear" impiden que un segmento se comunique con otro segmento.
-    - Las directivas "permitir" permiten que un segmento se comunique con determinados otros segmentos.
-
-- La **aplicación de directivas** se realiza una vez que se han definido todas las directivas de barrera de información y está listo para aplicarlas a la organización.
-
 ## <a name="the-work-flow-at-a-glance"></a>El flujo de trabajo de un vistazo
 
 |Fase    |Qué implica  |
@@ -51,7 +37,7 @@ Es útil conocer los conceptos subyacentes de las directivas de barrera de infor
 |[Parte 1: segmentar usuarios en la organización](#part-1-segment-users)     |-Determine qué directivas se necesitan<br/>-Hacer una lista de segmentos para definir<br/>-Identificación de los atributos que se van a usar<br/>-Definir segmentos en términos de filtros de Directiva        |
 |[Parte 2: definir las directivas de la barrera de información](#part-2-define-information-barrier-policies)     |-Definir las directivas (no aplicar todavía)<br/>-Elegir entre dos tipos (bloquear o permitir) |
 |[Parte 3: aplicar directivas de barrera de información](#part-3-apply-information-barrier-policies)     |-Establecer directivas en el estado activo<br/>-Ejecutar la aplicación de la Directiva<br/>-Ver estado de la Directiva         |
-|(Según sea necesario) [Edición de un segmento o una directiva](#edit-a-segment-or-a-policy)     |-Editar un segmento<br/>-Editar o quitar una directiva<br/>-Ejecutar la aplicación de la Directiva<br/>-Ver estado de la Directiva         |
+|(Según sea necesario) [Edición de un segmento o una directiva](information-barriers-edit-segments-policies.md.md)    |-Editar un segmento<br/>-Editar o quitar una directiva<br/>-Volver a ejecutar la aplicación de Directiva<br/>-Ver estado de la Directiva         |
 |(Según sea necesario) [Solución de problemas](information-barriers-troubleshooting.md)|-Realizar una acción cuando las cosas no funcionan como se esperaba|
 
 ## <a name="prerequisites"></a>Requisitos previos
@@ -113,38 +99,44 @@ Determine qué atributos de los datos del directorio de la organización va a us
 
 ### <a name="define-segments-using-powershell"></a>Definir segmentos con PowerShell
 
-La definición de segmentos no afecta a los usuarios; solo establece la etapa de las directivas de barrera de información que se van a definir y aplicar.
-
-Para definir un segmento de la organización, use el cmdlet **New-OrganizationSegment** con el parámetro **UserGroupFilter** que corresponda al [atributo](information-barriers-attributes.md) que desee usar.
-
-Consta`New-OrganizationSegment -Name "segmentname" -UserGroupFilter "attribute -eq 'attributevalue'"`
-
-Ejemplo: `New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"`
-
-En este ejemplo, un segmento denominado *HR* se define con *HR*, un valor en el atributo *Department* . La parte "-EQ" del cmdlet hace referencia a "es igual a".
-
-Repita este proceso para cada segmento que desee definir.
-
-Después de ejecutar cada cmdlet, debe ver una lista de detalles sobre el nuevo segmento. Los detalles incluyen el tipo de segmento, quién lo creó o modificó por última vez, etc. 
-
 > [!IMPORTANT]
 > Asegúrese de **que los segmentos no**se superponen. Cada usuario que se verá afectado por obstáculos en cuanto a la información debe pertenecer a un único segmento (y solo uno). Ningún usuario debe pertenecer a dos o más segmentos. (Vea [ejemplo: segmentos definidos por contoso](#contosos-defined-segments) en este artículo).
 
-Una vez que haya definido los segmentos, continúe con la definición de las directivas de barrera de información.
+La definición de segmentos no afecta a los usuarios; solo establece la etapa de las directivas de barrera de información que se van a definir y aplicar.
+
+1. Use el cmdlet **New-OrganizationSegment** con el parámetro **UserGroupFilter** que corresponda al [atributo](information-barriers-attributes.md) que desee usar.
+    
+    Consta`New-OrganizationSegment -Name "segmentname" -UserGroupFilter "attribute -eq 'attributevalue'"`
+    
+    Ejemplo: `New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"`
+    
+    En este ejemplo, un segmento denominado *HR* se define con *HR*, un valor en el atributo *Department* . La parte del cmdlet **-EQ** hace referencia a "es igual a". (Alternativamente, puede usar **-ne** para que signifique "no es igual a". Consulte [uso de "igual" y "no es igual a" en definiciones de segmentos](#using-equals-and-not-equals-in-segment-definitions).)
+
+    Después de ejecutar cada cmdlet, debe ver una lista de detalles sobre el nuevo segmento. Los detalles incluyen el tipo de segmento, quién lo creó o modificó por última vez, etc. 
+
+2. Repita este proceso para cada segmento que desee definir.
+
+Una vez que haya definido los segmentos, continúe con la [definición de las directivas de barrera de información](#part-2-define-information-barrier-policies).
 
 ### <a name="using-equals-and-not-equals-in-segment-definitions"></a>Usar "igual" y "no es igual" en definiciones de segmentos
 
-En el primer ejemplo, se ha definido un segmento tal que "Departamento es igual a HR". Ese segmento incluyó un parámetro "equivale a". También puede definir segmentos con el parámetro "no es igual a", tal como se muestra en el ejemplo siguiente:
+En el siguiente ejemplo, se define un segmento para que "Department Equals HR". 
 
-Consta`New-OrganizationSegment -Name "segmentname" -UserGroupFilter "attribute -ne 'attributevalue'"`
+**Ejemplo**: `New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"`
 
-Ejemplo: `New-OrganizationSegment -Name "NotSales" -UserGroupFilter "Department -ne 'Sales'"`
+Observe que la definición de segmento incluye un parámetro "es igual a" denotado como **-EQ**. 
 
-En este ejemplo, se ha definido un segmento denominado NotSales que incluye a todos los usuarios que no están en ventas. La parte "-NE" del cmdlet se refiere a "no es igual a".
+También puede definir segmentos con el parámetro "no es igual a", que se indica como **-ne**, como se muestra en el ejemplo siguiente:
 
-Además, puede definir un segmento con los parámetros "igual" y "no es igual a".
+**Sintaxis**:`New-OrganizationSegment -Name "segmentname" -UserGroupFilter "attribute -ne 'attributevalue'"`
 
-Ejemplo: `New-OrganizationSegment -Name "LocalFTE" -UserGroupFilter "Location -eq 'Local'" and "Position -ne 'Temporary'"`
+**Ejemplo**: `New-OrganizationSegment -Name "NotSales" -UserGroupFilter "Department -ne 'Sales'"`
+
+En este ejemplo, se ha definido un segmento denominado *NotSales* que incluye a todos los usuarios que no están en *ventas*. La parte **-ne** del cmdlet hace referencia a "no es igual a".
+
+Además de definir los segmentos con "igual" o "no es igual a", puede definir un segmento con los parámetros "igual" y "no es igual a".
+
+**Ejemplo**: `New-OrganizationSegment -Name "LocalFTE" -UserGroupFilter "Location -eq 'Local'" and "Position -ne 'Temporary'"`
 
 En este ejemplo, se ha definido un segmento denominado *LocalFTE* que incluye personas que se encuentran de forma local y cuyas posiciones no aparecen como *temporales*.
 
@@ -250,117 +242,6 @@ Con PowerShell, puede ver el estado de las cuentas de usuario, los segmentos, la
 |La aplicación de directiva de barrera de información más reciente     | Use el cmdlet **Get-InformationBarrierPoliciesApplicationStatus** . <p>Consta`Get-InformationBarrierPoliciesApplicationStatus`<p>    Esto mostrará información sobre si la aplicación de la Directiva se completó, produjo un error o está en curso.       |
 |Todas las aplicaciones de directiva de barrera de información|Utilizados`Get-InformationBarrierPoliciesApplicationStatus -All $true`<p>Esto mostrará información sobre si la aplicación de la Directiva se completó, produjo un error o está en curso.|
 
-## <a name="stop-a-policy-application"></a>Detención de una aplicación de Directiva
-
-Si, después de empezar a aplicar directivas de barrera de información, desea detener la aplicación de estas directivas, use el siguiente procedimiento. Tenga en cuenta que el proceso tardará aproximadamente 30-35 minutos en comenzar.
-
-1. Para ver el estado de la aplicación de directiva de barrera de información más reciente, use el cmdlet **Get-InformationBarrierPoliciesApplicationStatus** .
-
-    Consta`Get-InformationBarrierPoliciesApplicationStatus`
-
-    Anote el GUID de la aplicación.
-
-2. Use el cmdlet **Stop-InformationBarrierPoliciesApplication** con un parámetro Identity.
-
-    Consta`Stop-InformationBarrierPoliciesApplication -Identity GUID`
-
-    Ejemplo: `Stop-InformationBarrierPoliciesApplication -Identity 46237888-12ca-42e3-a541-3fcb7b5231d1`
-
-    En este ejemplo, estamos deteniendo que se apliquen las directivas de barrera de información.
-
-## <a name="edit-a-segment-or-a-policy"></a>Edición de un segmento o una directiva
-
-### <a name="edit-a-segment"></a>Edición de un segmento
-
-1. Para ver todos los segmentos existentes, use el cmdlet **Get-OrganizationSegment** .
-    
-    Consta`Get-OrganizationSegment`
-
-    Verá una lista de segmentos y detalles para cada uno, como tipo de segmento, su valor UserGroupFilter, que lo creó o modificó por última vez, GUID, etc.
-
-    > [!TIP]
-    > Imprime o guarda la lista de segmentos para hacer referencia a ellos más adelante. Por ejemplo, si desea editar un segmento, necesitará conocer su nombre o identificar el valor (que se usa con el parámetro Identity).
-
-2. Para editar un segmento, use el cmdlet **set-OrganizationSegment** con el parámetro **Identity** y los detalles pertinentes. 
-
-    Consta`Set-OrganizationSegment -Identity GUID -UserGroupFilter "attribute -eq 'attributevalue'"`
-
-    Ejemplo: `Set-OrganizationSegment -Identity c96e0837-c232-4a8a-841e-ef45787d8fcd -UserGroupFilter "Department -eq 'HRDept'"`
-
-    En este ejemplo, para el segmento que tiene el GUID *c96e0837-c232-4a8a-841E-ef45787d8fcd*, se actualizó el nombre del Departamento a "HRDept".
-
-Cuando haya terminado de editar segmentos para su organización, puede seguir definiendo [](#part-2-define-information-barrier-policies) o [editando](#edit-a-policy) las directivas de la barrera de información.
-
-### <a name="edit-a-policy"></a>Editar una directiva
-
-1. Para ver una lista de las directivas de barrera de información actuales, use el cmdlet **Get-InformationBarrierPolicy** .
-
-    Consta`Get-InformationBarrierPolicy`
-
-    En la lista de resultados, identifique la Directiva que desea cambiar. Anote el GUID y el nombre de la Directiva.
-
-2. Use el cmdlet **set-InformationBarrierPolicy** con un parámetro **Identity** y especifique los cambios que desea realizar.
-
-    Ejemplo: Supongamos que se ha definido una directiva para bloquear el segmento de *investigación* para que no pueda comunicarse con los segmentos de *ventas* y *marketing* . La Directiva se definió mediante este cmdlet:`New-InformationBarrierPolicy -Name "Research-SalesMarketing" -AssignedSegment "Research" -SegmentsBlocked "Sales","Marketing"`
-    
-    Supongamos que queremos cambiarla para que las personas del segmento de *investigación* solo puedan comunicarse con los usuarios del segmento de *recursos humanos* . Para realizar este cambio, usamos este cmdlet:`Set-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c93772471 -SegmentsAllowed "HR"`
-
-    En este ejemplo, hemos cambiado "SegmentsBlocked" por "SegmentsAllowed" y hemos especificado el segmento de *recursos humanos* .
-
-3. Cuando termine de editar una directiva, asegúrese de aplicar los cambios. (Consulte [aplicar directivas de barrera de información](#part-3-apply-information-barrier-policies)).
-
-### <a name="remove-a-policy"></a>Quitar una directiva
-
-1. Para ver una lista de las directivas de barrera de información actuales, use el cmdlet **Get-InformationBarrierPolicy** .
-
-    Consta`Get-InformationBarrierPolicy`
-
-    En la lista de resultados, identifique la Directiva que desea quitar. Anote el GUID y el nombre de la Directiva. Asegúrese de que la Directiva está establecida en estado inactivo.
-
-2. Use el cmdlet **Remove-InformationBarrierPolicy** con un parámetro Identity.
-
-    Consta`Remove-InformationBarrierPolicy -Identity GUID`
-
-    Ejemplo: Supongamos que queremos quitar una directiva que tenga GUID *43c37853-ea10-4b90-a23d-ab8c93772471*. Para ello, usamos este cmdlet:
-    
-    `Remove-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c93772471`
-
-    Cuando se le pida, confirme el cambio.
-
-3. Repita los pasos 1-2 para cada directiva que desee quitar.
-
-4. Cuando haya terminado de quitar directivas, aplique los cambios. Para ello, use el cmdlet **Start-InformationBarrierPoliciesApplication** .
-
-    Consta`Start-InformationBarrierPoliciesApplication`
-
-    Se aplican los cambios, usuario por usuario, para la organización. Si su organización es grande, puede tardar 24 horas (o más) en completarse este proceso.
-
-### <a name="set-a-policy-to-inactive-status"></a>Definir un estado inactivo de una directiva
-
-1. Para ver una lista de las directivas de barrera de información actuales, use el cmdlet **Get-InformationBarrierPolicy** .
-
-    Consta`Get-InformationBarrierPolicy`
-
-    En la lista de resultados, identifique la Directiva que desea cambiar (o quitar). Anote el GUID y el nombre de la Directiva.
-
-2. Para establecer el estado de la Directiva como inactivo, use el cmdlet **set-InformationBarrierPolicy** con un parámetro Identity y el parámetro State establecido en INACTIVE.
-
-    Consta`Set-InformationBarrierPolicy -Identity GUID -State Inactive`
-
-    `Set-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c9377247 -State Inactive`
-
-    En este ejemplo, se establece una directiva de barrera de información que tiene un GUID *43c37853-ea10-4b90-a23d-ab8c9377247* en un estado inactivo.
-
-3. Para aplicar los cambios, use el cmdlet **Start-InformationBarrierPoliciesApplication** .
-
-    Consta`Start-InformationBarrierPoliciesApplication`
-
-    Se aplican los cambios, usuario por usuario, para la organización. Si su organización es grande, puede tardar 24 horas (o más) en completarse este proceso. (Como regla general, tarda aproximadamente una hora en procesar las cuentas de usuario de 5.000).
-
-En este punto, se establecen una o varias directivas de barrera de información en estado inactivo. Desde aquí, puede realizar una de las siguientes acciones:
-- Mantenlo tal cual (el estado de una directiva establecida en inactivo no tiene efecto sobre los usuarios)
-- [Editar una directiva](#edit-a-policy) 
-- [Quitar una directiva](#remove-a-policy)
 
 ## <a name="example-contosos-departments-segments-and-policies"></a>Ejemplo: departamentos, segmentos y directivas de Contoso
 
@@ -414,6 +295,8 @@ Con segmentos y directivas definidos, contoso aplica las directivas mediante la 
 Cuando finaliza, contoso cumple con los requisitos legales y del sector.
 
 ## <a name="related-articles"></a>Artículos relacionados
+
+[Editar o quitar directivas de barrera de información (vista previa)](information-barriers-edit-segments-policies.md.md)
 
 [Obtener información general sobre las barreras de la información](information-barriers.md)
 
