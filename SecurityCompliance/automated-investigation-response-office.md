@@ -3,7 +3,7 @@ title: Investigación y respuesta automatizadas (AIR) con Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 03/25/2019
+ms.date: 06/25/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Obtenga información sobre las capacidades de investigación y respuesta automatizadas en Office 365 Advanced Threat Protection.
-ms.openlocfilehash: bb992a4ebd9bf10f2659929bab4357117ea1c254
-ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
+ms.openlocfilehash: 4d611d9549ed3f5cda06274ea9209cdc6350ba7b
+ms.sourcegitcommit: bac1b5be5db381e6f8d8f652cff1f8ef4d7f6330
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "34852624"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "35233337"
 ---
 # <a name="automated-investigation-and-response-air-with-office-365"></a>Investigación y respuesta automatizadas (AIR) con Office 365
 
@@ -37,7 +37,8 @@ En la versión inicial de AIR en abril de 2019, las alertas generadas desde las 
 3. Mensajes de correo electrónico que contienen malware quitados después de la entrega *
 4. Mensajes de correo electrónico que contienen direcciones URL de phish quitadas después de la entrega *
 
-***Nota**: a estas alertas se les ha asignado una gravedad de "información" en las directivas de alertas respectivas en el centro de seguridad & cumplimiento con las notificaciones de correo electrónico desactivadas. Se pueden activar a través de la configuración de la Directiva de alerta.
+> [!NOTE]
+> A estas alertas se les ha asignado una gravedad de "información" en las directivas de alertas respectivas en el centro de seguridad & cumplimiento con las notificaciones de correo electrónico desactivadas. Se pueden activar a través de la configuración de la Directiva de alerta.
 
 Para ver las alertas, en el centro de seguridad & cumplimiento, elija **alertas** > **Ver alertas**. Seleccione una alerta para ver sus detalles y, desde allí, use el vínculo **Ver investigación** para ir a la [investigación](#investigation-graph)correspondiente. Tenga en cuenta que las alertas informativas están ocultas en la vista de alertas de forma predeterminada. Para verlos, debe cambiar el filtrado de alertas para incluir alertas informativas.
 
@@ -56,18 +57,14 @@ Las guías de seguridad que recibirá con AIR están diseñadas para enfrentarse
 
 Como parte del aire, las guías de seguridad se implementan en fases
 
-- **Fase 1 (abril de 2019)**: las guías incluyen recomendaciones para acciones que los administradores de seguridad revisan y aprueban. 
+- **Fase 1 (abril de 2019)**: las guías incluyen recomendaciones para acciones que los administradores de seguridad revisan y aprueban. La fase 1 incluirá las guías siguientes:
+    - Mensaje de phish notificado por el usuario
+    - Dirección URL haga clic en cambiar veredicto 
+    - Malware detectado después de la entrega (ZAP de malware)
+    - Phish detectado tras entrega tras entrega (ZAP de Phish)
+    - Investigaciones manuales de correo electrónico (mediante el explorador de amenazas)
 
-- **Fase 2 (después del 2019 de junio)**: las mejoras de la guía, además de los administradores de seguridad, tendrán la opción de configurar las guías de seguridad para realizar algunas acciones automáticamente sin interacción administrativa.
-
-La fase 1 incluirá las guías siguientes:
-- Mensaje de phish notificado por el usuario
-- Dirección URL haga clic en cambiar veredicto 
-- Malware detectado después de la entrega (ZAP de malware)
-- Phish detectado tras entrega tras entrega (ZAP de Phish)
-- Investigaciones manuales de correo electrónico (mediante el explorador de amenazas)
-
-Hay varias guías planeadas para la fase 2.
+- **Fase 2 (segunda mitad de 2019)**: varias nuevas guías y mejoras en la guía, además de la opción de los administradores de seguridad para configurar las guías de seguridad para que realicen algunas acciones automáticamente sin interacción administrativa. 
 
 ### <a name="playbooks-include-investigation-and-recommendations"></a>Las guías incluyen investigación y recomendaciones
 
