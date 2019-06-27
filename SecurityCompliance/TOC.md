@@ -27,7 +27,7 @@
 # [Proteger la información](protect-information.md)
 ## [Etiquetas de confidencialidad](sensitivity-labels.md)
 ### [Restringir el acceso al contenido mediante el cifrado en las etiquetas de confidencialidad](encryption-sensitivity-labels.md)
-### [Aplicar una etiqueta de confidencialidad automáticamente al contenido](apply_sensitivity_label_automatically.md)
+### [Aplicar una etiqueta de confidencialidad automáticamente al contenido](apply-sensitivity-label-automatically.md)
 ### [Ver el uso de etiquetas con el análisis de etiquetas](label-analytics.md)
 
 ## [Evitar la pérdida de datos (DLP)](data-loss-prevention-policies.md)
@@ -331,7 +331,7 @@
 #### [Corrección de errores al procesar los datos](compliance20/error-remediation.md)
 
 ### [Recopilar datos para un caso](compliance20/collecting-data-for-ediscovery.md)
-#### [Crear una búsqueda para recopilar datos](compliance20/create-search-to-collect-data.md)
+#### [Crear una búsqueda](compliance20/create-search-to-collect-data.md)
 #### [Crear consultas de búsqueda](compliance20/building-search-queries.md)
 #### [Estadísticas de búsqueda](compliance20/search-statistics.md)
 #### [Agregar los resultados de búsqueda a un conjunto de revisión](compliance20/add-data-to-review-set.md)
@@ -538,6 +538,8 @@
 ### [Definir directivas de barreras de información (vista previa)](information-barriers-policies.md)
 ### [Atributos para las directivas de barreras de información (vista previa)](information-barriers-attributes.md)
 ### [Solución de problemas de barreras de información (vista previa)](information-barriers-troubleshooting.md)
+### [Editar directivas de barreras de información (vista previa)](information-barriers-edit-segments-policies.md.md)
+
 
 ## Clave del cliente
 ### [Controlar los datos en Office 365 con la clave de cliente](controlling-your-data-using-customer-key.md)
