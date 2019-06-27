@@ -12,12 +12,12 @@ ms.assetid: 5a6f2d7f-d998-4f31-b4f5-f7cbf6f38578
 ms.collection:
 - M365-security-compliance
 description: Protección contra suplantación de identidad (phishing), con protección completa como parte de la protección básica y protección contra amenazas avanzada de Office 365 en Office 365 Exchange Online Protection, puede ayudar a proteger su organización de ataques malintencionados basados en suplantación de identidad. y otros ataques de suplantación de identidad.
-ms.openlocfilehash: ebe1d4322151c1828f662ca0bf1bd495e808093d
-ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
+ms.openlocfilehash: f73c4404c2ff2f347bc770176e5b6b25e03af88c
+ms.sourcegitcommit: 1c254108c522d0cb44023565268b5041d07748aa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "34408375"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35279458"
 ---
 # <a name="set-up-office-365-atp-anti-phishing-and-anti-phishing-policies"></a>Configurar directivas contra suplantación de identidad y directivas contra suplantación de identidad de ATP de Office 365
 
@@ -37,6 +37,9 @@ Qué hacer:
 2. Obtenga información acerca de las opciones de la Directiva antiphishing de ATP y contra phishing.
 
 3. Configurar una directiva antiphishing o una directiva contra la suplantación de identidad ATP.
+
+>[!IMPORTANT]
+> Para obtener información sobre cómo se aplican varias tecnologías, vea [cómo se combinan las directivas y las protecciones](https://docs.microsoft.com/office365/securitycompliance/how-policies-and-protections-are-combined).
 
 ## <a name="review-the-prerequisites"></a>Revisión de los requisitos previos
 
@@ -138,7 +141,7 @@ Puede eliminar las directivas personalizadas que haya creado mediante el centro 
 
 5. En la página que aparece, elija **eliminar Directiva**. Espere hasta 30 minutos para que los cambios se extiendan a todos los centros de seguridad de Office 365.
 
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Una vez que se hayan implementado las directivas antiphishing, podrá ver cómo funcionan las características de protección contra amenazas en su organización al ver los informes. Vea los siguientes recursos para obtener más información:
 

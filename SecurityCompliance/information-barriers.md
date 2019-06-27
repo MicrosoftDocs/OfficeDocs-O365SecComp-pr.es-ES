@@ -3,20 +3,20 @@ title: Introducción a las barreras de información
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 06/13/2019
-ms.audience: ITPro
+ms.date: 06/26/2019
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Usar barreras de la información para garantizar el cumplimiento de la comunicación mediante Microsoft Teams en su organización.
-ms.openlocfilehash: a2c202d08f1de60f92f13b2ac4c2b9d3c7f900e8
-ms.sourcegitcommit: eeb51470d8996e93fac28d7f12c6117e2aeb0cf0
+ms.openlocfilehash: 6565fc28d70ac6ff9a6f4df6edc75b89d19ae29a
+ms.sourcegitcommit: 1c254108c522d0cb44023565268b5041d07748aa
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34935942"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "35279478"
 ---
 # <a name="information-barriers-preview"></a>Barreras de la información (versión preliminar)
 
@@ -34,7 +34,7 @@ Las barreras de la información están ahora en versión preliminar, comenzando 
 Para todos estos escenarios de ejemplo (y más), se pueden definir directivas de barrera de información para impedir o permitir las comunicaciones en Microsoft Teams. Estas directivas pueden impedir que los usuarios llamen o chatean con ellos que no deben, o bien permitir que los usuarios se comuniquen solo con grupos específicos en Microsoft Teams. Con las directivas de barrera de información en vigor, cada vez que los usuarios que están cubiertos por estas directivas intentan comunicarse con otros usuarios de Microsoft Teams, se realizan comprobaciones para evitar (o permitir) la comunicación (según las directivas de la barrera de información definida). Para obtener más información sobre la experiencia del usuario con barreras de información, consulte [barreras de la información en Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams).
 
 > [!NOTE]
-> Las barreras de la información no se aplican a las comunicaciones de correo electrónico ni al uso compartido de archivos a través de SharePoint Online o OneDrive.
+> Las barreras de información no se aplican a las comunicaciones de correo electrónico o al uso compartido de archivos a través de SharePoint Online o OneDrive. Además, las barreras de información son independientes de los [límites de cumplimiento](set-up-compliance-boundaries.md).
 
 ## <a name="required-licenses-and-permissions"></a>Permisos y licencias necesarios
 
@@ -55,6 +55,20 @@ Para [definir o editar directivas de barrera de información](information-barrie
 - Administrador de obstáculos de la información
 
 Debe estar familiarizado con los cmdlets de PowerShell para poder definir, validar o editar directivas de barrera de información. Aunque proporcionamos varios ejemplos de cmdlets de PowerShell en la [información de procedimientos](information-barriers-policies.md), necesitará conocer más detalles, como parámetros, para su organización.
+
+## <a name="concepts-of-information-barrier-policies"></a>Conceptos de las directivas de barrera de información
+
+Es útil conocer los conceptos subyacentes de las directivas de barrera de información:
+
+- **Los atributos** de la cuenta de usuario se definen en Azure Active Directory (o Exchange Online). Estos atributos pueden incluir Departamento, puesto, ubicación, nombre del equipo y otros detalles del perfil del trabajo. 
+
+- Los **segmentos** son conjuntos de usuarios que se definen en el centro de seguridad & cumplimiento de Office 365 con un **atributo de cuenta de usuario**seleccionado. (Consulte la [lista de atributos admitidos](information-barriers-attributes.md)). 
+
+- **Las directivas de barrera de información** determinan límites de comunicación o restricciones. Al definir directivas de barrera de información, puede elegir entre dos tipos de directivas:
+    - Las directivas "bloquear" impiden que un segmento se comunique con otro segmento.
+    - Las directivas "permitir" permiten que un segmento se comunique con determinados otros segmentos.
+
+- La **aplicación de directivas** se realiza una vez que se han definido todas las directivas de barrera de información y está listo para aplicarlas a la organización.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
