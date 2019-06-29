@@ -3,42 +3,52 @@ title: Atributos para directivas de barrera de información
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 05/31/2019
-ms.audience: ITPro
+ms.date: 06/28/2019
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Use este artículo como referencia para los diversos atributos que puede usar en las directivas de barrera de información.
-ms.openlocfilehash: e72e37950442974897de479c7c11f0053a578d1c
-ms.sourcegitcommit: 4fedeb06a6e7796096fc6279cfb091c7b89d484d
+ms.openlocfilehash: 896b87a3ccc696d3a8193e37237fe555d326ca52
+ms.sourcegitcommit: 011bfa60cafdf47900aadf96a17eb275efa877c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34668344"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "35394315"
 ---
 # <a name="attributes-for-information-barrier-policies-preview"></a>Atributos de las directivas de barrera de información (vista previa)
 
-Algunos atributos de Azure Active Directory pueden usarse para segmentar usuarios. A continuación, los segmentos se usan como filtros para las directivas de barrera de información. Por ejemplo, puede usar **Department** para definir segmentos de usuarios por departamento dentro de la organización (suponiendo que no hay empleados que trabajen en dos departamentos al mismo tiempo). 
+Algunos atributos de Azure Active Directory pueden usarse para segmentar usuarios. Una vez que se han definido los segmentos, estos segmentos se pueden usar como filtros para las directivas de barrera de información. Por ejemplo, puede usar **Department** para definir segmentos de usuarios por departamento dentro de la organización (suponiendo que no hay empleados que trabajen en dos departamentos al mismo tiempo). 
 
-En este artículo se proporciona una lista de atributos que se pueden usar. Para obtener más información acerca de las barreras de información, vea los siguientes recursos:
+En este artículo se describe cómo usar atributos con barreras de información y se proporciona una lista de atributos que se pueden usar. Para obtener más información acerca de las barreras de información, vea los siguientes recursos:
 - [Barreras de la información (versión preliminar)](information-barriers.md)
 - [Definir directivas para las barreras de información en Microsoft Teams (versión preliminar)](information-barriers-policies.md)
+- [Edición (o eliminación) de directivas de barrera de información (versión preliminar)](information-barriers-edit-segments-policies.md.md)
 
 ## <a name="how-to-use-attributes-in-information-barrier-policies"></a>Cómo usar atributos en las directivas de barrera de información
 
-Los atributos que se enumeran en este artículo pueden usarse para definir (o editar) segmentos de usuarios. Los segmentos se usan como parámetros (UserGroupFilter) en las directivas de barrera de información, como se muestra en los siguientes ejemplos:
+Los atributos que se enumeran en este artículo pueden usarse para definir o editar segmentos de usuarios. Los segmentos definidos actúan como parámetros (denominados valores *UserGroupFilter* ) en [las directivas de barrera de información](information-barriers-policies.md).
 
-|Ejemplo  |Cmdlet  |
-|---------|---------|
-|Definir un segmento denominado Segment1 con el atributo Department     | `New-OrganizationSegment -Name "Segment1" -UserGroupFilter "Department -eq 'Department1'"`        |
-|Defina un segmento denominado segmenta mediante el atributo memberOf (suponga que este atributo contiene nombres de grupo, como "BlueGroup")     | `New-OrganizationSegment -Name "SegmentA" -UserGroupFilter "MemberOf -eq 'BlueGroup'"`        |
-|Definir un segmento denominado DayTraders mediante ExtensionAttribute1 (suponga que este atributo contiene cargos, como "DayTrader")|`New-OrganizationSegment -Name "DayTraders" -UserGroupFilter "ExtensionAttribute1 -eq 'DayTrader'"` |
+1. Determine qué atributo desea usar para definir segmentos. (Consulte la sección [referencia](#reference) de este artículo).
 
-Al definir segmentos, use el mismo atributo para todos los segmentos. Por ejemplo, si define algunos segmentos usando *Departamento*, defina todos los segmentos mediante *Departamento*. No defina algunos segmentos con *Department* y otros con *memberOf*. Asegúrese de que los segmentos no se superponen; cada usuario debe asignarse exactamente a un segmento. 
+2. Asegúrese de que las cuentas de usuario tengan valores rellenados para los atributos que seleccionó en el paso 1. Ver los detalles de la cuenta de usuario y, si es necesario, editar cuentas de usuario para incluir valores de atributo. 
 
-Para obtener más información, vea [definir segmentos con PowerShell](information-barriers-policies.md#define-segments-using-powershell).
+    Para hacerlo con PowerShell, vea [Configure User Account Properties with Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/configure-user-account-properties-with-office-365-powershell).
+
+    Para hacer esto en Azure Active Directory, vea [Agregar o actualizar la información de Perfil de un usuario con Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal).
+
+3. [Defina segmentos con PowerShell](information-barriers-policies.md#define-segments-using-powershell), de manera similar a los siguientes ejemplos:
+
+    |Ejemplo  |Cmdlet  |
+    |---------|---------|
+    |Definir un segmento denominado Segment1 con el atributo Department     | `New-OrganizationSegment -Name "Segment1" -UserGroupFilter "Department -eq 'Department1'"`        |
+    |Defina un segmento denominado segmenta mediante el atributo memberOf (suponga que este atributo contiene nombres de grupo, como "BlueGroup")     | `New-OrganizationSegment -Name "SegmentA" -UserGroupFilter "MemberOf -eq 'BlueGroup'"`        |
+    |Definir un segmento denominado DayTraders mediante ExtensionAttribute1 (suponga que este atributo contiene cargos, como "DayTrader")|`New-OrganizationSegment -Name "DayTraders" -UserGroupFilter "ExtensionAttribute1 -eq 'DayTrader'"` |
+
+    > [!TIP]
+    > Al definir segmentos, use el mismo atributo para todos los segmentos. Por ejemplo, si define algunos segmentos usando *Departamento*, defina todos los segmentos mediante *Departamento*. No defina algunos segmentos con *Department* y otros con *memberOf*. Asegúrese de que los segmentos no se superponen; cada usuario debe asignarse exactamente a un segmento. 
 
 ## <a name="reference"></a>Referencia
 

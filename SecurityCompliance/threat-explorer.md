@@ -3,7 +3,7 @@ title: Explorador de amenazas (y detecciones en tiempo real)
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 05/22/2019
+ms.date: 06/20/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre el explorador (y las detecciones en tiempo real) &amp; en el centro de seguridad y cumplimiento.
-ms.openlocfilehash: 030f866c5e86daa3dc543bddae7152e19f377d3b
-ms.sourcegitcommit: 6c0fcb82178a4ac26375545f328389a6852a81be
+ms.openlocfilehash: 3d2eab30b97655b692ed1bfe089b6a79834fd110
+ms.sourcegitcommit: 011bfa60cafdf47900aadf96a17eb275efa877c4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "34490536"
+ms.lasthandoff: 06/29/2019
+ms.locfileid: "35394355"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Explorador de amenazas (y detecciones en tiempo real)
 
@@ -42,24 +42,39 @@ Con este informe, puede:
 
 ## <a name="new-features-in-real-time-detections"></a>Nuevas características en detecciones en tiempo real
 
-Para los clientes de Office 365 ATP plan 1, el informe de detecciones en *tiempo real* se denominaba anteriormente *informes en tiempo real*. Además del cambio de nombre, se están implementando varias características y mejoras nuevas:
+El explorador/detección en tiempo real agrega nuevos campos nuevos diseñados para proporcionarle una imagen más completa de dónde se encuentran los correos electrónicos. Parte del objetivo de este cambio es facilitar la búsqueda para los operadores de seguridad, pero el resultado neto es conocer la ubicación de los correos electrónicos con problemas de un vistazo.
 
-- En la vista phish, puede ver más detalles sobre las URL detectadas a través de los [vínculos seguros ATP](atp-safe-links.md). Los nuevos detalles y capacidades incluyen:
-  - Direcciones URL en mensajes de correo electrónico
-  - Filtrado basado en la información de dirección URL
-  - Información de dirección URL que se muestra en los gráficos de datos
-  - Tiempo de clic en datos sobre los clics en los mensajes
+¿Cómo se hace esto? El estado de entrega ahora se divide en dos columnas:
 
-- Siempre que haya un cambio en una dirección URL haga clic en veredicto, verá una alerta. Hacer clic en los veredictos pueden cambiar cuando la reputación de la dirección URL cambia después de la detonación o cuando un usuario que está protegido por vínculos seguros de ATP invalida una [Advertencia de vínculos seguros de ATP](atp-safe-links-warning-pages.md).  
- 
-Estas mejoras permiten a los administradores de seguridad de su organización ver más detalles que antes. Los administradores de seguridad pueden ver información sobre los dominios de dirección URL, las direcciones URL perdidas, los veredictos y más y, a continuación, ajustar las directivas de ATP de Office 365 correctamente.
+- Acción de entrega: ¿Cuál es el estado de este correo electrónico?
+- Ubicación de entrega: ¿Dónde se distribuyó este correo electrónico como resultado?
 
-> [!NOTE]
-> Aunque estas características se encuentran en versión preliminar, los datos de URL estarán disponibles durante un número limitado de días. 
+La acción de entrega es la acción que se realiza en un correo electrónico debido a las directivas o detecciones existentes. Estas son las posibles acciones que puede realizar un correo electrónico:
+
+|Pronuncia  |Correo electrónico no deseado  |Blocked  |Sustitui  |
+|---------|---------|---------|---------|
+|El correo electrónico se entregó a la bandeja de entrada o a la carpeta de un usuario y el usuario puede acceder a él directamente.    | El correo electrónico se envió a la carpeta de correo no deseado o a la carpeta eliminada del usuario y el usuario tiene acceso a los mensajes de correo electrónico de esas carpetas.       | Los correos electrónicos que se han puesto en cuarentena, que no se han podido realizar o se han perdido. El usuario no tiene acceso completamente a esto.     | Cualquier correo electrónico en el que se reemplacen archivos adjuntos malintencionados por archivos. txt que indiquen que los datos adjuntos eran malintencionados.     |
+
+Y esto es lo que el usuario puede ver y lo que no puede:
+
+|Accesible para los usuarios finales  |Inaccesibles para los usuarios finales  |
+|---------|---------|
+|Pronuncia     | Blocked        |
+|Correo electrónico no deseado     | Sustitui        |
+
+Ubicación de entrega muestra los resultados de las directivas y detecciones que se ejecutan después de la entrega. Está vinculado a una acción de entrega. Este campo se agregó para proporcionar información sobre la acción tomada cuando se encuentra un mensaje problemático. Estos son los valores de possilbe de la ubicación de entrega:
+
+1. Bandeja de entrada o carpeta: el correo electrónico se encuentra en la bandeja de entrada o en una carpeta (según las reglas de correo electrónico).
+2. Local o externa: el buzón de correo no existe en la nube pero es local.
+3. Carpeta de correo no deseado: el correo electrónico en la carpeta de correo no deseado de un usuario.
+4. Carpeta elementos eliminados: el correo electrónico de la carpeta elementos eliminados de un usuario.
+5. Cuarentena: el correo electrónico en cuarentena y no se encuentra en el buzón de un usuario.
+6. Failed – el correo electrónico no pudo llegar al buzón.
+7. Perdido: el correo electrónico se pierde en algún lugar del flujo de correo.
 
 ## <a name="see-malware-detected-in-email-by-technology"></a>Ver malware detectado en correo electrónico por tecnología
 
-Supongamos que desea ver el malware detectado en el correo electrónico con la tecnología de Office 365. Para ello, use la vista [email _GT_ malware](threat-explorer-views.md#email--malware) View of Explorer (o detección en tiempo real).
+Supongamos que desea ver el malware detectado en el correo electrónico con la tecnología de Office 365. Para ello, use la vista [Email > malware](threat-explorer-views.md#email--malware) de Explorer (o detecciones en tiempo real).
 
 1. En el centro de seguridad & cumplimiento[https://protection.office.com](https://protection.office.com)(), elija **Threat Management** > **Explorer** (o **detecciones en tiempo real**). (En este ejemplo se usa el explorador).
 
@@ -75,7 +90,7 @@ El informe se actualiza para mostrar el malware de resultados detectado en el co
 
 Supongamos que desea ver los intentos de suplantación de identidad mediante direcciones URL en el correo electrónico, incluida una lista de direcciones URL que se han permitido, bloqueado y reemplazado. La identificación de las direcciones URL en las que se hizo clic requiere que se configuren los [vínculos seguros de ATP](atp-safe-links.md) . Asegúrese de haber configurado [las directivas de vínculos seguros de ATP](set-up-atp-safe-links-policies.md) para la protección del tiempo de clic y el registro de los veredictos de clics por medio de vínculos seguros de ATP. 
 
-Para revisar las direcciones URL de phish en mensajes y hacer clic en direcciones URL en mensajes de Phish, use el [correo electrónico _GT_ phish](threat-explorer-views.md#email--phish) View of Explorer (o detección en tiempo real).
+Para revisar direcciones URL de phish en mensajes y hacer clic en direcciones URL en mensajes de Phish, use la vista de [correo electrónico > phish](threat-explorer-views.md#email--phish) de detecciones en tiempo real.
 
 1. En el centro de seguridad & cumplimiento[https://protection.office.com](https://protection.office.com)(), elija **Threat Management** > **Explorer** (o **detecciones en tiempo real**). (En este ejemplo se usa el explorador).
 
@@ -99,7 +114,7 @@ Para revisar las direcciones URL de phish en mensajes y hacer clic en direccione
 
 ## <a name="review-email-messages-reported-by-users"></a>Revisar los mensajes de correo electrónico enviados por los usuarios
 
-Supongamos que desea ver los mensajes de correo electrónico que los usuarios de la organización han notificado como correo no deseado, correo no deseado o suplantación de identidad mediante el [complemento de mensajes de informe para Outlook y Outlook en la web](enable-the-report-message-add-in.md). Para ello, use la vista de [correo electrónico >](threat-explorer-views.md#email--user-reported) del explorador (o detecciones en tiempo real) que ha notificado al usuario.
+Supongamos que desea ver los mensajes de correo electrónico que los usuarios de la organización han notificado como correo no deseado, correo no deseado o suplantación de identidad mediante el [complemento de mensajes de informe para Outlook y Outlook en la web](enable-the-report-message-add-in.md). Para ello, use el [correo electrónico >](threat-explorer-views.md#email--user-reported) vista notificada por el usuario de explorador (o detecciones en tiempo real).
 
 1. En el centro de seguridad & cumplimiento[https://protection.office.com](https://protection.office.com)(), elija **Threat Management** > **Explorer** (o **detecciones en tiempo real**). (En este ejemplo se usa el explorador).
 
@@ -132,6 +147,7 @@ Además de los escenarios descritos en este artículo, tiene muchas más opcione
 Debe tener [Office 365 ATP](office-365-atp.md) para obtener detecciones de Internet Explorer o en tiempo real.
 - Explorer se incluye en el plan 2 de ATP de Office 365. 
 - El informe de detecciones en tiempo real se incluye en el plan 1 de ATP de Office 365.
+- Planee la asignación de licencias para todos los usuarios que ATP deban proteger. (El explorador o las detecciones en tiempo real mostrarán los datos de detección de los usuarios con licencia).
 
 Para ver y usar el explorador o las detecciones en tiempo real, debe tener los permisos adecuados, como los que se han concedido a un administrador de seguridad o un lector de seguridad. 
 
