@@ -1,5 +1,5 @@
 ---
-title: Seguridad y cumplimiento de Office 365
+title: Office 365 seguridad y cumplimiento
 description: Si su organización necesita proteger sus datos o cumplir con los estándares legales o normativos, está en el punto correcto. Aquí puede obtener información sobre la seguridad y el cumplimiento en Office 365
 services: office-365-security-compliance
 author: robmazz
@@ -11,14 +11,14 @@ ms.devlang: na
 ms.topic: landing-page
 ms.date: 12/27/2018
 ms.author: robmazz
-ms.openlocfilehash: 737d3a1b979b420e7f9bd24f056a4d5abf7a9906
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 1d5f3ef4c21a8771479f232f7347889b31b5fce2
+ms.sourcegitcommit: aa60a6cdf83c67576e858668d1182cd4fffeb5e0
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256508"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "33622230"
 ---
-# <a name="office-365-security-and-compliance"></a>Seguridad y cumplimiento de Office 365
+# <a name="office-365-security-and-compliance"></a>Office 365 seguridad y cumplimiento
 
 Si su organización necesita proteger sus datos o cumplir con los estándares legales o normativos, está en el punto correcto. Las áreas que aparecen a continuación son su primera parada para conocer la seguridad y el cumplimiento en Office 365.
 
@@ -34,7 +34,7 @@ Si su organización necesita proteger sus datos o cumplir con los estándares le
                     </div>
                     <div class="cardText">
                         <h3>Introducción: primeros 30 días</h3>
-                <p>Estas tareas básicas de seguridad y cumplimiento se pueden llevar a cabo rápidamente y tienen un impacto bajo para los usuarios: <br> - <a href="office-365-secure-score.md" target="_blank">Comprobar puntuación segura</a> <br> - <a href="search-the-audit-log-in-security-and-compliance.md">Activar el registro de auditoría</a> <br> - <a href="tenant-wide-setup-for-increased-security.md">Configurar la seguridad del espacio empresarial</a> <br> - <a href="https://docs.microsoft.com/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security">Conectar Cloud App Security</a> <br> - <a href="https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection-enable">Habilitar la protección de identidad de Azure AD</a> <br> - <a href="https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files">Proteger los archivos y sitios de SharePoint</a> <br> - <a href="configure-supervision-policies.md">Habilitación de una directiva de gobierno de datos</a> </p>
+                <p>Estas tareas básicas de seguridad y cumplimiento se pueden llevar a cabo rápidamente y tienen un impacto bajo para los usuarios: <br> - <a href="microsoft-secure-score.md" target="_blank">Comprobar puntuación segura</a> <br> - <a href="search-the-audit-log-in-security-and-compliance.md">Activar el registro de auditoría</a> <br> - <a href="tenant-wide-setup-for-increased-security.md">Configurar la seguridad del espacio empresarial</a> <br> - <a href="https://docs.microsoft.com/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security">Conectar Cloud App Security</a> <br> - <a href="https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection-enable">Habilitar la protección de identidad de Azure AD</a> <br> - <a href="https://docs.microsoft.com/office365/enterprise/secure-sharepoint-online-sites-and-files">Proteger los archivos y sitios de SharePoint</a> <br> - <a href="configure-supervision-policies.md">Habilitación de una directiva de gobierno de datos</a> </p>
                     </div>
                 </div>
             </div>
@@ -67,9 +67,9 @@ Si su organización necesita proteger sus datos o cumplir con los estándares le
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Más de 90 días</h3>
+                        <h3>Más allá de 90 días</h3>
                         <p>Estas son medidas de seguridad importantes que se basan en el trabajo anterior:<br>
-                        - <a href="office-365-secure-score.md" target="_blank">Revisar la puntuación segura</a><br>
+                        - <a href="microsoft-secure-score.md" target="_blank">Revisar la puntuación segura</a><br>
                         - <a href="https://docs.microsoft.com/windows-server/identity/securing-privileged-access/securing-privileged-access">Implementación de acceso seguro con privilegios</a><br>
                         - <a href="https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection">Usar Azure AD Identity Protection</a><br>
                         - <a href="protect-against-threats.md">Refinar directivas de protección</a><br></p>
@@ -96,7 +96,7 @@ Si su organización necesita proteger sus datos o cumplir con los estándares le
                     <div class="cardText">
                         <h3>Mantener la seguridad</h3>
                         <p><a href="security-roadmap.md">Plan de seguridad de Office 365</a></p>
-                        <p><a href="office-365-secure-score.md" target="_blank">Puntuación de seguridad de Microsoft</a></p>
+                        <p><a href="microsoft-secure-score.md" target="_blank">Puntuación de seguridad de Microsoft</a></p>
                         <p><a href="https://protection.office.com" target="_blank">Centro de seguridad & cumplimiento</a></p>
                     </div>
                 </div>
