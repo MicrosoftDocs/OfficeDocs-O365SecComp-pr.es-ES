@@ -3,8 +3,8 @@ title: Prevención de pérdida de datos y Microsoft Teams
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 04/26/2019
-ms.audience: ITPro
+ms.date: 07/01/2019
+audience: ITPro
 ms.topic: conceptual
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -13,14 +13,17 @@ ms.collection:
 search.appverid:
 - MET150
 description: Ahora puede aplicar directivas de DLP a chats y canales de Microsoft Teams. Lea este artículo para obtener más información sobre cómo funciona.
-ms.openlocfilehash: 712729972942d98afb5b3898ad357114ce1a6bae
-ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
+ms.openlocfilehash: 3792fd6919749510ea20d4ff84b0249b16165a9f
+ms.sourcegitcommit: cc1b0281fa594cbb7c09f3e419df21aec9557831
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33367309"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35417402"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>Prevención de pérdida de datos y Microsoft Teams
+
+> [!NOTE]
+> Las funciones de prevención de pérdida de datos se han agregado recientemente a Microsoft Teams en Office 365 E5 y Office 365 Advanced Compliance. Para obtener más información acerca de la disponibilidad de características, consulte [office 365 service descriptions: office 365 Security & Compliance Center](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center).
 
 ## <a name="overview-of-dlp-for-microsoft-teams"></a>Información general de DLP para Microsoft Teams
 
@@ -28,7 +31,10 @@ Recientemente, se ampliaron las capacidades de [prevención de pérdida de datos
 
 - **Ejemplo 1: proteger la información confidencial en los mensajes**. Suponga que alguien intenta compartir información confidencial en un canal o chat de Microsoft Teams con invitados (usuarios externos). Si tiene definida una directiva DLP para evitar esto, se eliminan los mensajes con información confidencial que se envían a los usuarios externos. Esto sucede automáticamente y en segundos, según la configuración de la Directiva DLP.
 
-- **Ejemplo 2: protección de información confidencial en documentos**. Suponga que alguien intenta compartir un documento con invitados en un canal o chat de Microsoft Teams, y que el documento contiene información confidencial. Si tiene definida una directiva DLP para evitar esto, el documento no se abrirá para esos usuarios. Tenga en cuenta que, en este caso, la Directiva DLP debe incluir SharePoint y OneDrive para que la protección esté en su ubicación.
+    > [!NOTE]
+    > DLP para Microsoft Teams bloquea contenido confidencial cuando se comparte con usuarios que tienen [acceso de invitado](https://docs.microsoft.com/MicrosoftTeams/guest-access) en equipos y canales, y con usuarios que tienen [acceso externo](https://docs.microsoft.com/MicrosoftTeams/manage-external-access) en reuniones y sesiones de chat. Si está usando [Microsoft Teams junto con Skype empresarial](https://docs.microsoft.com/microsoftteams/migration-interop-guidance-for-teams-with-skype), tenga en cuenta que DLP para Teams no bloquea mensajes en sesiones de interoperabilidad o de chats federados.
+
+- **Ejemplo 2: protección de información confidencial en documentos**. Suponga que alguien intenta compartir un documento con invitados en un canal o chat de Microsoft Teams, y que el documento contiene información confidencial. Si tiene definida una directiva DLP para evitar esto, el documento no se abrirá para esos usuarios. Tenga en cuenta que, en este caso, la Directiva DLP debe incluir SharePoint y OneDrive para que la protección esté en su ubicación. (Este es un ejemplo de DLP para SharePoint que se muestra en Microsoft Teams).
 
 ## <a name="policy-tips-help-educate-users"></a>Las sugerencias de directivas ayudan a los usuarios
 
@@ -50,7 +56,7 @@ El vínculo **¿Qué es esto?** abre un [artículo](data-loss-prevention-policie
 
 ### <a name="to-customize-policy-tips"></a>Para personalizar las sugerencias de Directiva
 
-Para realizar esta tarea, debe tener asignado un rol que tenga permisos para editar directivas de DLP. Para obtener más información, [](data-loss-prevention-policies.md#permissions)consulte Permissions.
+Para realizar esta tarea, debe tener asignado un rol que tenga permisos para editar directivas de DLP. Para obtener más información vea [Permisos](data-loss-prevention-policies.md#permissions).
 
 1. Vaya al centro de cumplimiento de & de seguridad de[https://protection.office.com](https://protection.office.com)Office 365 () e inicie sesión.
 
@@ -70,7 +76,7 @@ Espere aproximadamente una hora para que los cambios funcionen en el centro de d
  
 ## <a name="add-microsoft-teams-as-a-location-to-existing-dlp-policies"></a>Agregar Microsoft Teams como ubicación a las directivas de DLP existentes
 
-Para realizar esta tarea, debe tener asignado un rol que tenga permisos para editar directivas de DLP. Para obtener más información, [](data-loss-prevention-policies.md#permissions)consulte Permissions.
+Para realizar esta tarea, debe tener asignado un rol que tenga permisos para editar directivas de DLP. Para obtener más información vea [Permisos](data-loss-prevention-policies.md#permissions).
 
 1. Vaya al centro de cumplimiento de & de seguridad de[https://protection.office.com](https://protection.office.com)Office 365 () e inicie sesión.
 
@@ -80,7 +86,7 @@ Para realizar esta tarea, debe tener asignado un rol que tenga permisos para edi
 
 4. En la columna **Estado** , active la Directiva para **los mensajes de chat y de canal**de Microsoft Teams.<br/>![DLP para los chats y canales de Microsoft Teams](media/dlp-teams-addteamschatschannels.png)<br/>
 
-5. ConServe la configuración predeterminada de todas las cuentas o especifique las cuentas que se van a incluir o excluir.
+5. Conserve la configuración predeterminada de todas las cuentas o especifique las cuentas que se van a incluir o excluir.
 
 6. Haga clic en **Guardar **.
 
@@ -88,7 +94,7 @@ Espere aproximadamente una hora para que los cambios funcionen en el centro de d
 
 ## <a name="define-a-new-dlp-policy-for-microsoft-teams"></a>Definir una nueva Directiva de DLP para Microsoft Teams
 
-Para realizar esta tarea, debe tener asignado un rol que tenga permisos para editar directivas de DLP. Para obtener más información, [](data-loss-prevention-policies.md#permissions)consulte Permissions.
+Para realizar esta tarea, debe tener asignado un rol que tenga permisos para editar directivas de DLP. Para obtener más información vea [Permisos](data-loss-prevention-policies.md#permissions).
 
 1. Vaya al centro de cumplimiento de & de seguridad de[https://protection.office.com](https://protection.office.com)Office 365 () e inicie sesión.
 
