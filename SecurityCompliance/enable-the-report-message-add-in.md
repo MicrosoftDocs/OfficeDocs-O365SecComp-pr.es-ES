@@ -4,7 +4,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: laurawi
 ms.date: 03/26/2019
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -15,12 +15,12 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo habilitar el complemento de mensajes de informe para Outlook y Outlook en la web, para usuarios individuales o para toda la organización.
-ms.openlocfilehash: 3c476a6e097307b1aabc3580b598bb91a4407731
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: d74772502f5ffd7e274574075604c2fc0c235f30
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32257548"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077956"
 ---
 # <a name="enable-the-report-message-add-in"></a>Habilitar el complemento de mensajes de informe
 
@@ -38,7 +38,7 @@ El complemento de mensajes de informe funciona con su suscripción a Office 365 
  - Outlook 2013 SP1
  - Outlook 2016
  - Outlook 2016 para Mac
- - Outlook incluido con Office 365 proPlus
+ - Outlook incluido con Office 365 ProPlus
 
 El explorador Web existente debería ser suficiente para que funcione el complemento de mensajes de informe; sin embargo, si observa que el complemento no está disponible o no funciona como se esperaba, pruebe con otro explorador.
   
@@ -50,7 +50,7 @@ Si es un administrador global de Office 365 o un administrador de Exchange Onlin
 
 1. En [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps), busque el [complemento de mensajes de informe](https://appsource.microsoft.com/product/office/wa104381180).
     
-2. Elija **obtenerLO ahora**.<br/>![Mensaje de informe: obtenerlo ahora](media/ReportMessageGETITNOW.png)<br/> 
+2. Elija **obtenerlo ahora**.<br/>![Mensaje de informe: obtenerlo ahora](media/ReportMessageGETITNOW.png)<br/> 
     
 3. Revise las condiciones de uso y la Directiva de privacidad. Después, elija **Continuar**. 
     
@@ -69,7 +69,7 @@ Una vez instalado y habilitado el complemento, verá los iconos siguientes:
 > [!IMPORTANT]
 > Debe ser un administrador global de Office 365 o un administrador de Exchange Online para completar esta tarea. Además, Exchange debe estar configurado para usar la autenticación OAuth para obtener más información, consulte [requisitos de Exchange (Implementación centralizada de complementos)](https://docs.microsoft.com/office365/admin/manage/centralized-deployment-of-add-ins). 
 
-1. Vaya a la [Página servicios y](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns) complementos de & en el centro de administración de Microsoft 365.<br/>![Página servicios y complementos en el nuevo centro de administración de Microsoft 365](media/ServicesAddInsPageNewM365AdminCenter.png)<br/> 
+1. Vaya a la [Página servicios & complementos](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns) en el centro de administración de Microsoft 365.<br/>![Página servicios y complementos en el nuevo centro de administración de Microsoft 365](media/ServicesAddInsPageNewM365AdminCenter.png)<br/> 
     
 2. Elija **+ implementar complemento**.<br/>![Elija implementar complemento](media/ServicesAddIns-ChooseDeployAddIn.png)<br/> 
     
@@ -131,12 +131,12 @@ Consulte [usar el complemento de mensajes de informe](https://support.office.com
 
 ## <a name="review-or-edit-settings-for-the-report-message-add-in"></a>Revisión o edición de la configuración del complemento de mensajes de informe
 
-Puede revisar y editar la configuración predeterminada para el complemento de mensajes de informe en la [Página servicios y](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns)complementos de &. 
+Puede revisar y editar la configuración predeterminada para el complemento de mensajes de informe en la [Página de servicios & complementos](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns). 
 
 > [!IMPORTANT]
 > Debe ser un administrador global de Office 365 o un administrador de Exchange Online para completar esta tarea.
     
-1. Vaya a la [Página servicios y](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns) complementos de & en el centro de administración de Microsoft 365.<br/>![Página servicios y complementos en el nuevo centro de administración de Microsoft 365](media/ServicesAddInsPageNewM365AdminCenter.png)<br/>
+1. Vaya a la [Página servicios & complementos](https://admin.microsoft.com/AdminPortal/Home#/Settings/ServicesAndAddIns) en el centro de administración de Microsoft 365.<br/>![Página servicios y complementos en el nuevo centro de administración de Microsoft 365](media/ServicesAddInsPageNewM365AdminCenter.png)<br/>
 
 2. Busque y seleccione el complemento de mensajes de informe.<br/>![Buscar y seleccionar el complemento de mensajes de informe](media/FindReportMessageAddIn.png)<br/> 
     

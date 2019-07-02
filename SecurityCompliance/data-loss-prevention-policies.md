@@ -1,10 +1,10 @@
 ---
-title: Información general sobre directivas de prevención de pérdida de datos
+title: Información general sobre prevención de pérdida de datos
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 04/11/2019
-ms.audience: ITPro
+ms.date: 05/03/2019
+audience: ITPro
 ms.topic: conceptual
 f1_keywords:
 - ms.o365.cc.DLPLandingPage
@@ -14,21 +14,24 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: Con una directiva de prevención de pérdida de datos (DLP) en el &amp; centro de seguridad y cumplimiento de Office 365, puede identificar, supervisar y proteger automáticamente la información confidencial en Office 365.
-ms.openlocfilehash: fedb48c20720a7eaa66cd0ea7d2184dd3dc4df55
-ms.sourcegitcommit: e23b84ef4eee9cccec7205826b71ddfe9aaac2f8
+description: Con una directiva de prevención de pérdida de datos (DLP) &amp; en el centro de seguridad y cumplimiento, puede identificar, supervisar y proteger automáticamente la información confidencial en Office 365.
+ms.openlocfilehash: 0199d43a7232b41dbbf1a5c67ab77ebe69d47a84
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2019
-ms.locfileid: "33362058"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077856"
 ---
-# <a name="overview-of-data-loss-prevention-policies"></a>Información general sobre directivas de prevención de pérdida de datos
+# <a name="overview-of-data-loss-prevention"></a>Información general sobre prevención de pérdida de datos
 
-Para cumplir con los estándares de la empresa y las normativas del sector, las organizaciones deben proteger información confidencial e impedir su divulgación involuntaria. Entre los ejemplos de información confidencial cuya fuga fuera de la organización tal vez quiera evitar se incluyen datos financieros o información de identificación personal (PII), tales como números de tarjeta de crédito, números de seguridad social o registros médicos. Con una directiva de prevención de pérdida de datos (DLP) en el &amp; centro de seguridad y cumplimiento de Office 365, puede identificar, supervisar y proteger automáticamente la información confidencial en Office 365.
+> [!NOTE]
+> Las funciones de prevención de pérdida de datos se han agregado recientemente a Microsoft Teams en Office 365 E5 y Office 365 Advanced Compliance. Para obtener más información acerca de la disponibilidad de características, consulte [office 365 service descriptions: office 365 Security & Compliance Center](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center).
+
+Para cumplir con las normas empresariales y las regulaciones del sector, las organizaciones deben proteger la información confidencial e impedir su divulgación involuntaria. La información confidencial puede incluir datos financieros o información de identificación personal (PII), como números de tarjetas de crédito, números de seguridad social o registros de mantenimiento. Con una directiva de prevención de pérdida de datos (DLP) en el &amp; centro de seguridad y cumplimiento de Office 365, puede identificar, supervisar y proteger automáticamente la información confidencial en Office 365.
   
 Con una directiva DLP, puede:
   
-- **Identificar información confidencial en varias ubicaciones, como Exchange Online, SharePoint Online, OneDrive para la empresa y Microsoft Teams.**
+- **Identificar información confidencial en varias ubicaciones, como Exchange Online, SharePoint Online, OneDrive para la Empresa y Microsoft Teams.**
     
     Por ejemplo, puede identificar cualquier documento que contenga un número de tarjeta de crédito que esté almacenado en cualquier sitio de OneDrive para la empresa, o bien puede supervisar solo los sitios de OneDrive de personas específicas.
     
@@ -44,7 +47,7 @@ Con una directiva DLP, puede:
     
     Puede educar a sus usuarios acerca de las directivas DLP y ayudar a que sigan manteniendo el cumplimiento normativo sin bloquear su trabajo. Por ejemplo, si un usuario intenta compartir un documento que contiene información confidencial, una directiva DLP puede enviarle una notificación por correo electrónico y mostrarle una sugerencia de directiva en el contexto de la biblioteca de documentos que le permite invalidar la directiva si tiene una justificación comercial. Las mismas sugerencias de directiva también aparecen en Outlook en la web, Outlook, Excel, PowerPoint y Word.
     
-- **Ver informes de DLP que muestran contenido que coincide con las directivas DLP de su organización.**
+- **Ver informes de DLP con contenido que coincida con las directivas DLP de su organización.**
     
     Para evaluar si la organización está cumpliendo con una directiva DLP, puede ver cuántas coincidencias tienen la directiva y la regla a lo largo del tiempo. Si una directiva DLP permite a los usuarios invalidar una sugerencia de directiva e informar de un falso positivo, también puede ver qué han informado los usuarios.
     
@@ -68,7 +71,7 @@ Puede usar una regla para satisfacer un requisito de protección específico y d
   
 Por ejemplo, podría tener una directiva DLP que ayude a detectar la presencia de información sujeta a la Ley de transferencia y responsabilidad de seguros de salud (HIPAA). Esta directiva de DLP puede ayudarle a proteger los datos de HIPAA (el What) en todos los sitios de SharePoint Online y todos los sitios de OneDrive para la empresa (el Where) mediante la búsqueda de cualquier documento que contenga esta información confidencial que se comparte con personas de fuera de la organización (el condiciones) y, a continuación, bloquear el acceso al documento y enviar una notificación (las acciones). Estos requisitos se almacenan como reglas individuales y se agrupan juntos como una directiva DLP para simplificar la administración y los informes.
   
-![El diagrama muestra que la directiva DLP contiene ubicaciones y reglas](media/c006860c-2d00-42cb-aaa4-5b5638d139f7.png)
+![El diagrama muestra que la Directiva DLP contiene ubicaciones y reglas](media/c006860c-2d00-42cb-aaa4-5b5638d139f7.png)
   
 ### <a name="locations"></a>Ubicaciones
 
@@ -76,9 +79,9 @@ Una directiva DLP puede encontrar y proteger información confidencial en Office
   
 ![Opciones de ubicaciones donde se puede aplicar una directiva DLP](media/ee50a61a-e867-4571-a150-3eec8d83650f.png)
   
-Tenga en cuenta que si elige incluir o excluir sitios de SharePoint específicos o cuentas de OneDrive, una directiva DLP no puede contener más de 100 estas inclusiones y exclusiones. Aunque este límite exista, comprenda que puede superar este límite aplicando una directiva de toda la organización o una directiva que se aplique a ubicaciones completas.
+Si elige incluir o excluir sitios de SharePoint específicos o cuentas de OneDrive, una directiva DLP no puede contener más de 100 de inclusiones y exclusiones. Aunque este límite exista, puede superar este límite aplicando una directiva de toda la organización o una directiva que se aplique a ubicaciones completas.
   
-### <a name="rules"></a>Rules
+### <a name="rules"></a>Reglas
 
 Las reglas son el cumplimiento de los requisitos empresariales en el contenido de la organización. Una directiva contiene una o más reglas, y cada regla consta de las condiciones y acciones. Para cada regla, cuando se cumplen las condiciones, las acciones se realizan automáticamente. Las reglas se ejecutan secuencialmente, comenzando por la regla de mayor prioridad en cada Directiva.
   
@@ -90,9 +93,9 @@ Estos son los componentes de una regla, que se explican a continuación.
   
 #### <a name="conditions"></a>Condiciones
 
-Las condiciones son importantes porque determinan los tipos de información que está buscando y cuándo realizar una acción. Por ejemplo, puede optar por omitir el contenido que contiene números de pasaporte, a menos que el contenido contenga más de diez números y que se comparta con personas de fuera de la organización.
+Las condiciones son importantes porque determinan los tipos de información que está buscando y cuándo realizar una acción. Por ejemplo, puede optar por omitir el contenido que contiene números de pasaporte, a menos que el contenido contenga más de 10 números y que se comparta con personas de fuera de la organización.
   
-Las condiciones se centran en el **contenido**, por ejemplo, los tipos de información confidencial que está buscando y en el **contexto**, como con quién se comparte el documento. Puede usar condiciones para asignar distintas acciones a diferentes niveles de riesgo (por ejemplo, el contenido confidencial compartido internamente puede ser menor riesgo y requerir menos acciones que el contenido confidencial compartido con personas de fuera de la organización). 
+Las condiciones se centran en el **contenido**, por ejemplo, los tipos de información confidencial que está buscando y en el **contexto**, como con quién se comparte el documento. Puede usar condiciones para asignar distintas acciones a distintos niveles de riesgo. Por ejemplo, el contenido confidencial compartido internamente puede ser menor riesgo y requerir menos acciones que el contenido confidencial que se comparte con personas de fuera de la organización. 
   
 ![Lista que muestra las condiciones de DLP disponibles](media/0fa43f90-d007-4506-ae93-43e8424fe103.png)
   
@@ -130,11 +133,11 @@ Cuando el contenido coincide con una condición en una regla, puede aplicar acci
   
 Con las acciones ahora disponibles, puede:
   
-- **Restringir el acceso al contenido** Para el contenido del sitio, esto significa que los permisos para el documento están restringidos para todos los usuarios excepto el administrador de la colección de sitios primaria, el propietario del documento y la persona que modificó por última vez el documento. Estas personas pueden quitar la información confidencial del documento o realizar otras acciones correctivas. Cuando el documento cumple la normativa, los permisos originales se restauran automáticamente. Cuando se bloquea el acceso a un documento, el documento aparece con un icono de sugerencia de directiva especial en la biblioteca del sitio. 
+- **Restringir el acceso al contenido** Para el contenido del sitio, esto significa que los permisos para el documento están restringidos para todos los usuarios excepto el administrador de la colección de sitios primaria, el propietario del documento y la persona que modificó por última vez el documento. Estas personas pueden quitar la información confidencial del documento o realizar otras acciones correctivas. Cuando el documento está en cumplimiento, los permisos originales se restauran automáticamente. Cuando se bloquea el acceso a un documento, el documento aparece con un icono de sugerencia de directiva especial en la biblioteca del sitio. 
     
     ![Sugerencia de directiva que muestra que el acceso al documento está bloqueado](media/b6cefed3-d212-43d7-8534-4b92b26ebd50.png)
   
-    En el caso del contenido de correo electrónico, esta acción impide que se envíe el mensaje. Según cómo esté configurada la regla DLP, el remitente verá un NDR o (si la regla usa una notificación), una sugerencia de directiva o una notificación de correo electrónico.
+    En el caso del contenido de correo electrónico, esta acción impide que se envíe el mensaje. Según la configuración de la regla DLP, el remitente ve un NDR o (si la regla usa una notificación), una sugerencia de directiva o una notificación de correo electrónico.
     
     ![ADVERTENCIA de que los destinatarios no autorizados deben quitarse del mensaje](media/302f9994-912d-41e7-861f-8a4539b3c285.png)
   
@@ -172,7 +175,7 @@ A menudo, la Directiva de DLP tiene un requisito sencillo, como para identificar
   
 Por ejemplo, para identificar el contenido sujeto a la ley de seguros de salud de Estados Unidos (HIPAA), debe buscar:
   
-- Contenido que contiene tipos específicos de información confidencial, como un número de la seguridad social de Estados Unidos o un número de agencia de imPosición de drogas (DEA).
+- Contenido que contiene tipos específicos de información confidencial, como un número de la seguridad social de Estados Unidos o un número de agencia de imposición de drogas (DEA).
     
     Y
     
@@ -212,7 +215,7 @@ Por ejemplo, la Directiva integrada de **HIPAA de Estados Unidos** tiene una reg
   
 ## <a name="the-priority-by-which-rules-are-processed"></a>La prioridad mediante la que se procesan las reglas
 
-Cuando se crean reglas en una directiva, a cada regla se le asigna una prioridad en el orden en el que se crea, es decir, la regla que se crea primero tiene prioridad, la segunda regla creada tiene la segunda prioridad, y así sucesivamente. 
+Cuando se crean reglas en una directiva, a cada regla se le asigna una prioridad en el orden en que se crea (es decir, la regla creada primero tiene la prioridad First, la segunda regla creada tiene la segunda prioridad, y así sucesivamente). 
   
 ![Reglas en orden de prioridad](media/f7dc06bf-bc6f-485c-bcdb-606edbcf6565.png)
   
@@ -236,7 +239,7 @@ Cuando el contenido se evalúa según las reglas, las reglas se procesan en orde
     
 En este ejemplo, tenga en cuenta que las coincidencias de todas las reglas se registran en los registros de auditoría y se muestran en los informes de DLP, aunque solo se aplica la regla más restrictiva.
   
-Con respecto a las sugerencias de Directiva, tenga en cuenta que:
+En relación con las sugerencias de Directiva, tenga en cuenta que:
   
 - Solo se mostrará la sugerencia de directiva de la regla más alta prioridad, que es la más restrictiva. Por ejemplo, una sugerencia de directiva de una regla que bloquea el acceso al contenido se mostrará por encima de una sugerencia de directiva de una regla que simplemente envía una notificación. Esto impide que las personas vean una cascada de sugerencias de directiva.
     
@@ -254,7 +257,7 @@ Para solucionar estos problemas, puede ajustar las reglas ajustando el recuento 
   
 ### <a name="instance-count"></a>Número de instancias
 
-El recuento de instancias significa simplemente el número de repeticiones de un tipo específico de información confidencial que debe estar presente para que el contenido cumpla la regla. Por ejemplo, el contenido coincidirá con la regla que se muestra a continuación si se encuentra entre 1 y 9 exclusivos de Estados Unidos o Reino Unido. se identifican los números de pasaporte.
+El recuento de instancias significa simplemente el número de repeticiones de un tipo específico de información confidencial que debe estar presente para que el contenido cumpla la regla. Por ejemplo, el contenido coincide con la regla que se muestra a continuación si se encuentra entre 1 y 9 únicos estadounidenses o Reino Unido. se identifican los números de pasaporte.
   
 Tenga en cuenta que el recuento de instancias incluye solo coincidencias **únicas** para los tipos de información confidencial y palabras clave. Por ejemplo, si un correo electrónico contiene 10 ocurrencias del mismo número de tarjeta de crédito, los 10 repeticiones contarán como una única instancia de un número de tarjeta de crédito. 
   
@@ -314,7 +317,7 @@ Puede crear una etiqueta y, a continuación:
   
 - **Publíquelo** para que los usuarios finales puedan ver y aplicar manualmente la etiqueta al contenido. 
     
-- **AplicarLa automáticamente** al contenido que coincida con las condiciones que elija. 
+- **Aplicarla automáticamente** al contenido que coincida con las condiciones que elija. 
     
 Para obtener más información acerca de las etiquetas, vea [información general sobre las etiquetas de retención](labels.md).
   
@@ -326,7 +329,7 @@ Después de crear una etiqueta, puede usarla como condición en las directivas d
     
 - Publicó una etiqueta denominada " **registro de impuestos**" para que su administrador de registros pueda aplicar manualmente la etiqueta al contenido que debe clasificarse como un registro. Si usa esta etiqueta como condición en su Directiva DLP, puede buscar contenido con esta etiqueta junto con otros tipos de información confidencial, como ITINs o SSN; aplicar acciones de protección al registro de **impuestos**etiquetado de contenido; y obtenga informes detallados sobre la Directiva DLP de los informes de DLP y los datos del registro de auditoría. 
     
-- Publicó una etiqueta denominada **Director Ejecutivo sensible al equipo** para los buzoNes de Exchange y las cuentas de OneDrive de un grupo de ejecutivos. Si usa esta etiqueta como condición en la Directiva DLP, puede aplicar acciones de retención y protección en el mismo subconjunto de contenido y usuarios. 
+- Publicó una etiqueta denominada **Director Ejecutivo sensible al equipo** para los buzones de Exchange y las cuentas de OneDrive de un grupo de ejecutivos. Si usa esta etiqueta como condición en la Directiva DLP, puede aplicar acciones de retención y protección en el mismo subconjunto de contenido y usuarios. 
     
 Mediante el uso de etiquetas como condición en las reglas de DLP, puede aplicar selectivamente acciones de protección en un conjunto específico de contenido, ubicaciones o usuarios.
   
@@ -334,7 +337,7 @@ Mediante el uso de etiquetas como condición en las reglas de DLP, puede aplicar
 
 ### <a name="support-for-sensitivity-labels-is-coming"></a>La compatibilidad con las etiquetas de confidencialidad viene
 
-Tenga en cuenta que actualmente puede usar solo una etiqueta de retención como condición, no como [etiqueta](sensitivity-labels.md)de confidencialidad. Actualmente estamos trabajando en soporte para usar una etiqueta de confidencialidad en esta condición.
+Actualmente, puede usar solo una etiqueta de retención como condición, no como [etiqueta](sensitivity-labels.md)de confidencialidad. Actualmente estamos trabajando en soporte para usar una etiqueta de confidencialidad en esta condición.
   
 ### <a name="how-this-feature-relates-to-other-features"></a>Cómo se relaciona esta característica con otras características
 
@@ -522,10 +525,10 @@ Sin embargo, los informes DLP necesitan extraer datos de toda la oficina 365, in
     
 - [Qué incluyen las plantillas de directiva DLP](what-the-dlp-policy-templates-include.md)
     
-- [Información que buscan los tipos de información confidencial](what-the-sensitive-information-types-look-for.md)
+- [Qué buscan los tipos de información confidencial](what-the-sensitive-information-types-look-for.md)
     
 - [Qué buscan las funciones de DLP](what-the-dlp-functions-look-for.md)
     
-- [Crear un tipo de información confidencial personalizado](create-a-custom-sensitive-information-type.md)
+- [Crear un tipo personalizado de información confidencial](create-a-custom-sensitive-information-type.md)
     
 

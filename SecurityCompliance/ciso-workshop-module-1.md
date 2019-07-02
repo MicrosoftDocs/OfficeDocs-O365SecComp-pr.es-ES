@@ -10,12 +10,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Obtenga más información sobre los principios de seguridad y las recomendaciones para modernizar la seguridad de su organización.
-ms.openlocfilehash: 35f3feca7597eb3e80076eccc36e00debd754d01
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 90844018e12a165e57b41153cb2042967ffee641
+ms.sourcegitcommit: 6bb40cf53374eaaae8da0a469f0248b1163184a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152162"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "34767321"
 ---
 # <a name="ciso-workshop-module-1-microsoft-cybersecurity-briefing"></a>Módulo 1 del taller de CISO: Informe sobre Microsoft Cybersecurity
 
@@ -40,17 +40,17 @@ Este módulo incluye información general sobre la higiene crítica de la seguri
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtVXF]
 
-## <a name="part-5-microsoft-cybersecurity-reference-architecture-2430"></a>Parte 5: arquitectura de referencia de Microsoft Cybersecurity (24:30)
+## <a name="part-5-microsoft-cybersecurity-reference-architecture-2114"></a>Parte 5: arquitectura de referencia de Microsoft Cybersecurity (21:14)
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtQL2]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE36ldf]
 
 ## <a name="part-6-reference-architecture-for-identity-and-access-725"></a>Parte 6: arquitectura de referencia para Identity and Access (7:25)
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtITd]
 
-## <a name="part-7-reference-architecture-for-security-operations-center-739"></a>Parte 7: arquitectura de referencia para el centro de operaciones de seguridad (7:39)
+## <a name="part-7-reference-architecture-for-security-operations-center-937"></a>Parte 7: arquitectura de referencia para el centro de operaciones de seguridad (9:37)
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtYM6]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE36dlc]
 
 ## <a name="part-8-reference-architecture-for-pc-and-mobile-devices-452"></a>Parte 8: arquitectura de referencia para dispositivos móviles y de PC (4:52)
 

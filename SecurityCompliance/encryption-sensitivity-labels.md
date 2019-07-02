@@ -3,7 +3,6 @@ title: Restringir el acceso al contenido mediante el cifrado en las etiquetas de
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de confidencialidad, puede restringir el acceso al contenido al que se aplique la etiqueta. Las etiquetas de confidencialidad pueden utilizar el cifrado para proteger el contenido.
-ms.openlocfilehash: 20d547a66309382c3ae3229540a23cd47e18460c
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: c550b9d0a3ffb9e41f36b4630a80e1a1584a257f
+ms.sourcegitcommit: 044003455eb36071806c9f008ac631d54c64dde6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34153272"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "35199797"
 ---
 # <a name="restrict-access-to-content-by-using-encryption-in-sensitivity-labels"></a>Restringir el acceso al contenido mediante el cifrado en las etiquetas de confidencialidad
 
@@ -50,7 +49,7 @@ Para empezar, solo tiene que cambiar **Encriptación** a **Activado** y, despué
 2. **Permitir que el acceso al contenido con la etiqueta expire**, ya sea en una fecha específica o tras un número determinado de días después de aplicar la etiqueta. Después de ese momento, los usuarios no podrán abrir el elemento con la etiqueta. Si especifica una fecha, se activará en la medianoche de esa fecha, en la zona horaria actual. (Tenga en cuenta que algunos clientes de correo electrónico pueden no aplicar la expiración y mostrar correos electrónicos una vez pasada dicha fecha, debido a otros mecanismos de almacenamiento en caché).
 3. **Permitir el acceso sin conexión** nunca, siempre o durante un número concreto de días después de aplicar la etiqueta. Si restringe el acceso sin conexión a nunca o a un número de días, cuando se alcance el umbral, los usuarios deberán volver a autenticarse y se registrará el acceso. Para obtener más información, vea la siguiente sección sobre la licencia de uso de administración de derechos.
 
-![Configuración de cifrado en las etiquetas de confidencialidad](media/Sensitivity_Encryption_settings_for_sensitivity_label.png)
+![Configuración de cifrado en las etiquetas de confidencialidad](media/Sensitivity-Encryption-settings-for-sensitivity-label.png)
 
 ### <a name="rights-management-use-license-for-offline-access"></a>Licencia de uso de administración de derechos para el acceso sin conexión
 
@@ -71,7 +70,7 @@ Es un proceso de dos pasos sencillos:
 1. Primero agrega usuarios o grupos a los que se asignarán permisos para el contenido con la etiqueta.
 2. Después elige qué permisos obtienen los usuarios para el contenido con la etiqueta.
 
-![Opciones para asignar permisos a usuarios](media/Sensitivity_Assign_permissions_settings.png)
+![Opciones para asignar permisos a usuarios](media/Sensitivity-Assign-permissions-settings.png)
 
 ### <a name="add-users-or-groups"></a>Agregar usuarios o grupos
 
@@ -94,13 +93,13 @@ Al elegir qué permisos permitir para los usuarios o grupos, puede seleccionar e
 
 Para obtener más información sobre cada permiso específico, consulte [Derechos y descripciones de uso](https://docs.microsoft.com/es-ES/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions).  
 
-![Opciones para elegir permisos predefinidos o personalizados](media/Sensitivity_Choose_permissions_settings.png)
+![Opciones para elegir permisos predefinidos o personalizados](media/Sensitivity-Choose-permissions-settings.png)
 
 Tenga en cuenta que la misma etiqueta puede conceder diferentes permisos a diferentes usuarios. Por ejemplo, una sola etiqueta puede asignar a algunos usuarios como revisor y a otros usuarios como coautor, como se muestra a continuación.
 
 Para ello, agregue usuarios o grupos, asigne sus permisos y guarde las opciones de configuración. Luego repita estos pasos, agregue usuarios y asigne permisos para guardar la configuración de nuevo. Puede hacerlo tantas veces como sea necesario para definir permisos diferentes para distintos usuarios.
 
-![Usuarios distintos con permisos diferentes](media/Sensitivity_Multiple_users_permissions.png)
+![Usuarios distintos con permisos diferentes](media/Sensitivity-Multiple-users-permissions.png)
 
 ### <a name="rights-management-issuer-user-applying-the-sensitivity-label-always-has-full-control"></a>El emisor de administración de derechos (el usuario que aplica la etiqueta de confidencialidad) siempre tiene control total
 

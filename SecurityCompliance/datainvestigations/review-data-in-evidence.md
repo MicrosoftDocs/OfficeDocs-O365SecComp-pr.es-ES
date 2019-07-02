@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 781b0b749390b36ecdf391bff1089d6180e7c3d2
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: a5c1c578f8d45cf7b95629e8053911d93b5b8583
+ms.sourcegitcommit: 6bb40cf53374eaaae8da0a469f0248b1163184a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34150672"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "34767341"
 ---
 # <a name="review-the-data-in-evidence"></a>Revisar los datos de pruebas
 
@@ -50,7 +50,7 @@ A continuación, se muestra un ejemplo de los metadatos de archivo para un docum
 
 ## <a name="native-view"></a>Vista nativa
 
-El visor nativo muestra la vista más exacta de un documento en su formato nativo. La vista nativa es compatible con cientos de tipos de archivo y está destinada a mostrar documentos en la experiencia nativa más real posible. Para los archivos de Microsoft Office, el visor nativo usa Office online. Esto le permite ver contenido como comentarios en diferentes documentos de Office, fórmulas y filas o columnas ocultas en Excel y la vista de notas en PowerPoint.
+El visor nativo muestra la vista más exacta de un documento en su formato nativo. La vista nativa es compatible con cientos de tipos de archivo y está destinada a mostrar documentos en la experiencia nativa más real posible. Para los archivos de Microsoft Office, el visor nativo usa la versión Web de las aplicaciones de Office. Esto le permite ver contenido como comentarios en diferentes documentos de Office, fórmulas y filas o columnas ocultas en Excel y la vista de notas en PowerPoint.
 
 ![Vista nativa
 ](../media/Reviewimage3.png)

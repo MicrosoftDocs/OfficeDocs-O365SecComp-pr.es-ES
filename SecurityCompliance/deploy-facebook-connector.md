@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: Los administradores pueden configurar un conector nativo para importar y archivar las páginas de empresa de Facebook a Office 365. Una vez que estos datos se han importado a Office 365, puede usar las características de cumplimiento, como las directivas de retención legal, búsqueda de contenido y retención, para administrar el gobierno de los datos de Facebook de la organización.
-ms.openlocfilehash: b0ec46cea2dd5722633e7fc302cdd0d03cd5d56d
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 1f5b0f241616cc95e79e80d054a8782f97c5887b
+ms.sourcegitcommit: 3699da2cad6e6a2002083e2884e32393dacab0ca
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34150562"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34694742"
 ---
 # <a name="deploy-a-connector-to-archive-facebook-data-in-office-365"></a>Implementar un conector para archivar datos de Facebook en Office 365
 
@@ -24,7 +24,7 @@ Este artículo contiene el proceso paso a paso para implementar un conector que 
 
 ## <a name="step-1-download-the-package"></a>Paso 1: descargar el paquete
 
-Descargue el paquete precompilado de la sección de versiones en el repositorio de <https://github.com/Microsoft/m365-sample-connector-csharp-aspnet/releases>GitHub en at. En la versión más reciente, descargue el archivo zip denominado **SampleConnector. zip**. Este archivo comprimido se cargará en Azure en el paso 4.
+Descargue el paquete precompilado de la sección de versiones en el repositorio <https://github.com/Microsoft/m365-sample-connector-csharp-aspnet/releases>de github en. En la versión más reciente, descargue el archivo zip denominado **SampleConnector. zip**. Carga este archivo zip en Azure en el paso 4.
 
 ## <a name="step-2-create-an-app-in-azure-active-directory"></a>Paso 2: crear una aplicación en Azure Active Directory
 
@@ -44,7 +44,7 @@ Descargue el paquete precompilado de la sección de versiones en el repositorio 
 
    ![](media/FBCimage4.png)
 
-5. Copie el identificador de la **aplicación (cliente)** y el **directorio (inquilino)** y guárdelos en un archivo de texto u otra ubicación segura. Deberá usar estos identificadores en pasos posteriores.
+5. Copie el identificador de la **aplicación (cliente)** y el **directorio (inquilino)** y guárdelos en un archivo de texto u otra ubicación segura. Estos identificadores se usan en pasos posteriores.
 
    ![](media/FBCimage5.png)
 
@@ -60,11 +60,11 @@ Descargue el paquete precompilado de la sección de versiones en el repositorio 
 
     ![](media/FBCimage8.png)
 
-9. Copie el valor del secreto y guárdelo en un archivo de texto u otra ubicación de almacenamiento. Este es el secreto de la aplicación de AAD que usará en pasos posteriores.
+9. Copie el valor del secreto y guárdelo en un archivo de texto u otra ubicación de almacenamiento. Este es el secreto de la aplicación de AAD que se usa en pasos posteriores.
 
    ![](media/FBCimage9.png)
 
-10. Vaya al **manifiesto** y copie identifieruris a (que también se denomina el URI de la aplicación AAD), tal y como se resalta en la siguiente captura de pantalla. Copie el URI de la aplicación de AAD en un archivo de texto u otra ubicación de almacenamiento. Lo usará en el paso 6.
+10. Vaya al **manifiesto** y copie identifieruris a (que también se denomina el URI de la aplicación AAD), tal y como se resalta en la siguiente captura de pantalla. Copie el URI de la aplicación de AAD en un archivo de texto u otra ubicación de almacenamiento. Se usa en el paso 6.
 
    ![](media/FBCimage10.png)
 
@@ -102,7 +102,7 @@ Descargue el paquete precompilado de la sección de versiones en el repositorio 
 
     ![](media/FBCimage18.png)
 
-9. Copiar una **cadena de conexión** y guardarla en un archivo de texto u otra ubicación de almacenamiento. Para crear un recurso de aplicación Web, deberá usar esto.
+9. Copiar una **cadena de conexión** y guardarla en un archivo de texto u otra ubicación de almacenamiento. Se usa al crear un recurso de aplicación Web.
 
     ![](media/FBCimage19.png)
 
@@ -112,17 +112,17 @@ Descargue el paquete precompilado de la sección de versiones en el repositorio 
 
    ![](media/FBCimage20.png)
 
-2. Rellene los detalles (como se muestra a continuación) y, a continuación, cree la aplicación Web. Tenga en cuenta que el nombre que escriba en el cuadro Nombre de la **aplicación** se usará para crear la dirección URL de Azure App Service; por ejemplo fbconnector.azurewebsites.net.
+2. Rellene los detalles (como se muestra a continuación) y, a continuación, cree la aplicación Web. Tenga en cuenta que el nombre que escriba en el cuadro Nombre de la **aplicación** se usa para crear la dirección URL de Azure App Service; por ejemplo, fbconnector.azurewebsites.net.
 
    ![](media/FBCimage21.png)
 
-3. Vaya al recurso de la aplicación web que acaba de crear y haga clic en configuración de la **aplicación** en el panel de navegación izquierdo. En configuración de la aplicación, haga clic en Agregar nuevo valor y agregue las tres opciones siguientes. Use los valores (que copió en el archivo de texto de los pasos anteriores): 
+3. Vaya al recurso de la aplicación web que acaba de crear y haga clic en configuración de la **aplicación** en el panel de navegación izquierdo. En configuración de la aplicación, haga clic en Agregar nuevo valor y agregue las tres opciones siguientes: Use los valores (que copió en el archivo de texto de los pasos anteriores): 
 
-    - **APISecretKey** : puede escribir cualquier valor como secreto. Se usará para acceder a la aplicación web del conector en el paso 7.
+    – **APISecretKey** : puede escribir cualquier valor como secreto. Se usa para obtener acceso a la aplicación web del conector en el paso 7.
 
-    - **StorageAccountConnectionString** : el URI de la cadena de conexión que copió después de crear la cuenta de almacenamiento de Azure en el paso 3.
+    – * * StorageAccountConnectionString: el URI de la cadena de conexión que copió después de crear la cuenta de almacenamiento de Azure en el paso 3.
 
-    - **tenantId** : el identificador de inquilino de su organización de Office 365 que copió después de crear la aplicación de conector de Facebook en Azure Active Directory en el paso 2.
+    – **tenantId** : el identificador de inquilino de su organización de Office 365 que copió después de crear la aplicación de conector de Facebook en Azure Active Directory en el paso 2.
 
     ![](media/FBCimage22.png)
 
@@ -132,13 +132,13 @@ Descargue el paquete precompilado de la sección de versiones en el repositorio 
 
 5. El último paso consiste en cargar el código fuente de la aplicación conector a Azure que ha descargado en el paso 1. En un explorador Web, vaya a https://<AzureAppResourceName>. scm.azurewebsites.net/ZipDeployUi. Por ejemplo, si el nombre del recurso de la aplicación de Azure (que se menciona en el paso 2 de esta sección) es **FBconnector**, entonces tendría https://fbconnector.scm.azurewebsites.net/ZipDeployUique hacerlo. 
 
-6. Arrastre y coloque el SampleConnector. zip (descargado en el paso 1) en esta página. Una vez que se cargan los archivos y la implementación se realiza correctamente, la página será similar a la siguiente captura de pantalla.
+6. Arrastre y coloque el SampleConnector. zip (descargado en el paso 1) en esta página. Una vez que se cargan los archivos y la implementación se realiza correctamente, la página tendrá un aspecto similar al de la siguiente captura de pantalla:
 
    ![](media/FBCimage24.png)
 
 ## <a name="step-5-register-the-facebook-app"></a>Paso 5: registrar la aplicación de Facebook
 
-1. Vaya a <https://developers.facebook.com> , inicie sesión con las credenciales de la cuenta de las páginas de empresa de Facebook de su organización y, a continuación, haga clic en **Agregar nueva aplicación**.
+1. Vaya a <https://developers.facebook.com>, inicie sesión con las credenciales de la cuenta de las páginas de empresa de Facebook de su organización y, a continuación, haga clic en **Agregar nueva aplicación**.
 
    ![](media/FBCimage25.png)
 
@@ -162,7 +162,7 @@ Descargue el paquete precompilado de la sección de versiones en el repositorio 
 
    ![](media/FBCimage30.png)
 
-7. En el panel de navegación izquierdo, en **Inicio de sesión de Facebook**, haga clic en **configuración**y agregue el URI de redireccionamiento de OAuth en el cuadro URI de redireccionamiento **válido de OAuth** ; Use el formato ** \<connectorserviceuri>/views/FacebookOAuth**, donde el valor de connectorserviceuri es la dirección URL de Azure App Service para su organización; por ejemplo https://fbconnector.azurewebsites.net.
+7. En el panel de navegación izquierdo, en **Inicio de sesión de Facebook**, haga clic en **configuración**y agregue el URI de redireccionamiento de OAuth en el cuadro válidos URI de redirección de **OAuth** . Use el formato ** \<connectorserviceuri>/views/facebookoauth**, donde el valor de connectorserviceuri es la dirección URL de Azure App Service para su organización; por ejemplo, https://fbconnector.azurewebsites.net.
 
    ![](media/FBCimage31.png)
 
@@ -206,7 +206,7 @@ Descargue el paquete precompilado de la sección de versiones en el repositorio 
 
 ## <a name="step-6-configure-the-connector-web-app"></a>Paso 6: configurar la aplicación web del conector
 
-1. Vaya a https://\<AzureAppResourceName>. azurewebsites. net (donde AzureAppResourceName es el nombre del recurso de la aplicación de Azure que ha nombrado en el paso 4), por ejemplo, si el nombre es https://fbconnector.azurewebsites.net **FBconnector**, vaya a. La Página principal de la aplicación será similar a la siguiente captura de pantalla.
+1. Vaya a https://\<AzureAppResourceName>. azurewebsites.net (donde AzureAppResourceName es el nombre del recurso de la aplicación de Azure que ha nombrado en el paso 4), por ejemplo, si el nombre es https://fbconnector.azurewebsites.net **FBconnector**, vaya a. La Página principal de la aplicación será similar a la siguiente captura de pantalla:
 
 
    ![](media/FBCimage41.png)
@@ -224,11 +224,11 @@ Descargue el paquete precompilado de la sección de versiones en el repositorio 
 
    - **Identificador** de la aplicación de Facebook: el identificador de la aplicación de Facebook que obtuvo en el paso 5.
    - **Secreto** de la aplicación de Facebook: el secreto de la aplicación de Facebook que obtuvo en el paso 5.
-   - **Token de comprobación** de webhooks de Facebook: el token de comprobación que ha creado en el paso 5.
-   - **Identificador** de la aplicación de AAD: el identificador de aplicación de la aplicación de Azure Active Directory que creó en el paso 2.
-   - **Secreto de la aplicación AAD** : el valor del secreto APISecretKey que creó en el paso 4.
-   - **URI de la aplicación AAD** : el URI de la aplicación AAD obtenido en el paso 2; por ejemplo, https://microsoft.onmicrosoft.com/2688yu6n-12q3-23we-e3ee-121111123213.
-   - **Clave de instrumentación de App Insights** : Deje este cuadro en blanco.
+   – **Token de comprobación** de webhooks de Facebook: el token de comprobación que ha creado en el paso 5.
+   : **Identificador de la aplicación AAD** : el identificador de aplicación de la aplicación de Azure Active Directory que creó en el paso 2.
+   – **Secreto de la aplicación AAD** : el valor del secreto APISecretKey que creó en el paso 4.
+   – **URI de la aplicación AAD** : el URI de la aplicación AAD obtenido en el paso 2; por ejemplo, https://microsoft.onmicrosoft.com/2688yu6n-12q3-23we-e3ee-121111123213.
+   : **Clave de instrumentación de App Insights** : Deje este cuadro en blanco.
 
 5. Haga clic en **Guardar** para guardar la configuración del conector.
 
@@ -244,9 +244,9 @@ Descargue el paquete precompilado de la sección de versiones en el repositorio 
 
 3.  En la página **Agregar aplicación de conector** , escriba la siguiente información y, a continuación, haga clic en **validar conector**.
 
-    - En el primer cuadro, escriba un nombre para el conector, como **Facebook**.
-    - En el segundo cuadro, escriba o pegue el valor de APISecretKey que agregó en el paso 4.
-    - En el tercer cuadro, escriba o pegue la dirección URL de Azure App Service; por ejemplo **https://fbconnector.azurewebsites.net**.
+    : En el primer cuadro, escriba un nombre para el conector, como **Facebook**.
+    : En el segundo cuadro, escriba o pegue el valor de la APISecretKey que agregó en el paso 4.
+    – En el tercer cuadro, escriba o pegue la dirección URL de Azure App Service; por ejemplo **https://fbconnector.azurewebsites.net**.
  
     Una vez validado correctamente el conector, haga clic en **siguiente**.
     
@@ -277,7 +277,7 @@ Descargue el paquete precompilado de la sección de versiones en el repositorio 
 
     ![](media/FBCimage52.png)
 
-10. Haga clic en **Finalizar** para salir de la instalación de la aplicación del servicio conector.
+10. Haga clic en **preparar** para salir de la instalación de la aplicación del servicio conector.
 
     ![](media/FBCimage53.png)
 

@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Use el centro de seguridad & cumplimiento para buscar en el registro de auditoría unificado para ver la actividad del usuario y del administrador de la organización de Office 365. '
-ms.openlocfilehash: cb44dd3d7c87928b325a72e783feea85e252dc49
-ms.sourcegitcommit: 6eb51931242d07abde2e37f1bd57d13bc724f0de
+ms.openlocfilehash: 6f27929da0a802e99c2b6373ba7ae9791776c67e
+ms.sourcegitcommit: b00c8fe1827d24f055a3076c10f284ff9ee3e04b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34547995"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "35113294"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Buscar el registro de auditoría en el centro de seguridad & cumplimiento
 
@@ -31,9 +31,6 @@ ms.locfileid: "34547995"
 - Actividad de los usuarios en SharePoint Online y OneDrive para la empresa
     
 - Actividad de los usuarios en Exchange Online (registro de auditoría de buzones de Exchange)
-    
-    > [!IMPORTANT]
-    > El registro de auditoría de buzones debe estar activado para cada buzón de usuario antes de que se registre la actividad de usuario en Exchange Online. Para obtener más información, consulte [Habilitar la auditoría de buzones de correo en Office 365](enable-mailbox-auditing.md).
   
 - Actividad de administración en SharePoint Online
     
@@ -74,7 +71,7 @@ Asegúrese de leer los siguientes elementos antes de comenzar a buscar en el reg
 - Debe tener asignado el rol registros de auditoría con permiso de vista o registros de auditoría en Exchange Online para buscar en el registro de auditoría de 365 de Office. De forma predeterminada, estos roles se asignan a los grupos de roles administración de cumplimiento y administración de la organización en la página **permisos** del centro de administración de Exchange. Tenga en cuenta que los administradores globales de Office 365 y Microsoft 365 se agregan automáticamente como miembros del grupo de funciones de administración de la organización en Exchange Online. Para conceder a un usuario la capacidad de buscar el registro de auditoría de Office 365 con el nivel mínimo de privilegios, puede crear un grupo de roles personalizado en Exchange Online, agregar el rol registros de auditoría con permiso de vista o registros de auditoría y, a continuación, agregar el usuario como miembro del nuevo grupo de roles. Para obtener más información, vea [administrar grupos de roles en Exchange Online](https://go.microsoft.com/fwlink/p/?LinkID=730688).
     
     > [!IMPORTANT]
-    > Si asigna a un usuario el rol registros de auditoría con permiso de vista o registros de auditoría en la página **permisos** del centro de seguridad & cumplimiento, estos no podrán buscar en el registro de auditoría de Office 365. Debe asignar los permisos en Exchange Online. Esto se debe a que el cmdlet subyacente usado para buscar en el registro de auditoría es un cmdlet de Exchange Online. 
+    > Si asigna a un usuario el rol registros de auditoría con permiso de vista o registros de auditoría en la página **permisos** del centro de seguridad & cumplimiento, no podrán buscar en el registro de auditoría de Office 365. Debe asignar los permisos en Exchange Online. Esto se debe a que el cmdlet subyacente usado para buscar en el registro de auditoría es un cmdlet de Exchange Online. 
   
 - Cuando un usuario o administrador realiza una actividad auditada, se genera un registro de auditoría y se almacena en el registro de auditoría de Office 365 para la organización. El período de tiempo durante el que se conserva un registro de auditoría (y que se pueden buscar en el registro de auditoría) depende de la suscripción a Office 365 y, específicamente, del tipo de licencia asignado a un usuario específico.
 
@@ -101,7 +98,7 @@ Asegúrese de leer los siguientes elementos antes de comenzar a buscar en el reg
     
 - Como se mencionó anteriormente, el cmdlet subyacente usado para buscar en el registro de auditoría es un cmdlet de Exchange Online, que es **Search-UnifiedAuditLog**. Esto significa que puede usar este cmdlet para buscar en el registro de auditoría de Office 365 en lugar de usar la página de **búsqueda de registros de auditoría** en el centro de seguridad & cumplimiento. Debe ejecutar este cmdlet en PowerShell remoto conectado a su organización de Exchange Online. Para obtener más información, vea [Search-UnifiedAuditLog](https://go.microsoft.com/fwlink/p/?linkid=834776).
     
-- Si desea descargar datos del registro de auditoría de Office 365 mediante programación, le recomendamos que use la API de actividad de administración de Office 365 en lugar de usar un script de PowerShell. La API de actividad de administración 365 de Office es un servicio Web REST que puede usar para desarrollar soluciones de operaciones, seguridad y supervisión de cumplimiento para su organización. Para obtener más información, vea referencia de la [API de actividad de administración 365 de Office](https://go.microsoft.com/fwlink/?linkid=852309).
+- Si desea descargar datos del registro de auditoría de Office 365 mediante programación, le recomendamos que use la API de actividad de administración de Office 365 en lugar de usar un script de PowerShell. La API de actividad de administración 365 de Office es un servicio Web REST que puede usar para desarrollar soluciones de operaciones, seguridad y supervisión de cumplimiento para su organización. Para obtener más información, vea referencia de la [API de actividad de administración 365 de Office](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference).
     
 - Puede tardar hasta 30 minutos o hasta 24 horas después de que se produzca un evento para que la entrada del registro de auditoría correspondiente se muestre en los resultados de la búsqueda. En la tabla siguiente se muestra el tiempo que tardan los distintos servicios en Office 365.
     
@@ -149,7 +146,7 @@ Este es el proceso para realizar búsquedas en el registro de auditoría en Offi
 1. Vaya a [https://protection.office.com](https://protection.office.com).
     
     > [!TIP]
-    > Use una sesión de exploración privada (no una sesión regular) para acceder al centro de cumplimiento de seguridad &, ya que esto impedirá que las credenciales con las que haya iniciado sesión actualmente se usen. Para abrir una sesión de exploración InPrivate en Internet Explorer o Microsoft Edge, solo tiene que presionar CTRL + MAYÚS + P. Para abrir una sesión de exploración privada en Google Chrome (denominada ventana incógnito), presione CTRL + MAYÚS + N. 
+    > Use una sesión de exploración privada (no una sesión regular) para obtener acceso al centro de seguridad & cumplimiento, ya que esto impedirá que se usen las credenciales con las que ha iniciado sesión actualmente. Para abrir una sesión de exploración InPrivate en Internet Explorer o Microsoft Edge, solo tiene que presionar CTRL + MAYÚS + P. Para abrir una sesión de exploración privada en Google Chrome (denominada ventana incógnito), presione CTRL + MAYÚS + N. 
   
 2. Inicie sesión en Office 365 con su cuenta profesional o educativa.
     
@@ -266,12 +263,12 @@ Puede exportar los resultados de una búsqueda de registro de auditoría a un ar
     
 2. Haga clic en **exportar resultados** y seleccione una de las siguientes opciones: 
     
-  - **Guardar los resultados cargados** Elija esta opción para exportar sólo las entradas que se muestran en **resultados** en la página búsqueda de registros de auditoría * *. El archivo CSV que se descarga contiene las mismas columnas (y datos) que se muestran en la página (fecha, usuario, actividad, elemento y detalles). Una columna adicional (con el nombre **más**) se incluye en el archivo CSV que contiene más información de la entrada del registro de auditoría. Como está exportando los mismos resultados que se cargan (y visibles) en la página de **búsqueda de registros de auditoría** , se exporta un máximo de 5.000 entradas. 
+     - **Guardar resultados cargados** : elija esta opción para exportar sólo las entradas que se muestran en **resultados** en la página de búsqueda de **registros de auditoría** . El archivo CSV que se descarga contiene las mismas columnas (y datos) que se muestran en la página (fecha, usuario, actividad, elemento y detalles). Una columna adicional (con el nombre **más**) se incluye en el archivo CSV que contiene más información de la entrada del registro de auditoría. Como está exportando los mismos resultados que se cargan (y visibles) en la página de **búsqueda de registros de auditoría** , se exporta un máximo de 5.000 entradas. 
     
-  - **Descargar todos los resultados** Elija esta opción para exportar todas las entradas del registro de auditoría de Office 365 que cumplan los criterios de búsqueda. Para un conjunto grande de resultados de búsqueda, elija esta opción para descargar todas las entradas del registro de auditoría además de los resultados de 5.000 que se pueden mostrar en la página de **búsqueda de registros de auditoría** . Con esta opción se descargan los datos sin procesar del registro de auditoría en un archivo CSV y se incluye información adicional de la entrada del registro de auditoría en una columna denominada **AuditData**. La descarga del archivo puede tardar más tiempo si elige esta opción de exportación, ya que es posible que el archivo sea mucho mayor que el que se ha descargado si elige la otra opción.
+     - **Descargar todos los resultados** : elija esta opción para exportar todas las entradas del registro de auditoría de Office 365 que cumplan los criterios de búsqueda. Para un conjunto grande de resultados de búsqueda, elija esta opción para descargar todas las entradas del registro de auditoría además de los resultados de 5.000 que se pueden mostrar en la página de **búsqueda de registros de auditoría** . Con esta opción se descargan los datos sin procesar del registro de auditoría en un archivo CSV y se incluye información adicional de la entrada del registro de auditoría en una columna denominada **AuditData**. La descarga del archivo puede tardar más tiempo si elige esta opción de exportación, ya que es posible que el archivo sea mucho mayor que el que se ha descargado si elige la otra opción.
     
-    > [!IMPORTANT]
-    > Puede descargar un máximo de 50.000 entradas en un archivo CSV desde una sola búsqueda de registro de auditoría. Si se descargan 50.000 entradas en el archivo CSV, probablemente se da por hecho que hay más de 50.000 eventos que cumplen los criterios de búsqueda. Para exportar más de este límite, pruebe a usar un intervalo de fechas para reducir el número de entradas del registro de auditoría. Es posible que deba ejecutar varias búsquedas con intervalos de fecha más pequeños para exportar más de 50.000 entradas. 
+       > [!IMPORTANT]
+       > Puede descargar un máximo de 50.000 entradas en un archivo CSV desde una sola búsqueda de registro de auditoría. Si se descargan 50.000 entradas en el archivo CSV, probablemente se da por hecho que hay más de 50.000 eventos que cumplen los criterios de búsqueda. Para exportar más de este límite, pruebe a usar un intervalo de fechas para reducir el número de entradas del registro de auditoría. Es posible que deba ejecutar varias búsquedas con intervalos de fecha más pequeños para exportar más de 50.000 entradas. 
   
 3. Después de seleccionar una opción de exportación, se muestra un mensaje en la parte inferior de la ventana en el que se le pregunta si desea abrir el archivo CSV, guardarlo en la carpeta descargas o guardarlo en una carpeta específica.
 
@@ -301,13 +298,13 @@ Haga clic en uno de los siguientes vínculos para ir a una tabla específica.
 ||||
 |:-----|:-----|:-----|
 |[Actividades de archivo y página](#file-and-page-activities)<br/> |[Actividades de carpeta](#folder-activities)<br/> |[Actividades de lista de SharePoint](#sharepoint-list-activities)<br/>|
-|[Actividades de solicitud de acceso y uso compartido](#sharing-and-access-request-activities)<br/> |[Actividades de sincronización](#synchronization-activities)<br/> |[Actividades de administración del sitio](#site-administration-activities)<br/> |
-|[Actividades de buzón de Exchange](#exchange-mailbox-activities)<br/> |[Actividades de Sway](#sway-activities) <br/> |[Actividades de administración de usuarios](#user-administration-activities) <br/> |
-|[Actividades de administración de grupos de Azure AD](#azure-ad-group-administration-activities) <br/> |[Actividades de administración de aplicaciones](#application-administration-activities) <br/> |[Actividades de administración de roles](#role-administration-activities) <br/> |
-|[Actividades de administración de directorios](#directory-administration-activities) <br/>|[actividades de eDiscovery](#ediscovery-activities) <br/> |[Actividades avanzadas de eDiscovery](#advanced-ediscovery-activities)<br/> |
-|[Actividades de Power BI](#power-bi-activities) <br/> |[Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)<br/>|[Actividades de Microsoft Teams](#microsoft-teams-activities) <br/> |
-|[Actividades de Yammer](#yammer-activities) <br/> |[Actividades de Microsoft Flow](#microsoft-flow-activities) <br/>|[Actividades de Microsoft PowerApps](#microsoft-powerapps)<br/>|
-|[Actividades de Microsoft Stream](#microsoft-stream-activities) <br/>|[Actividades de administración de Exchange](#exchange-admin-audit-log)<br/>|
+|[Actividades de solicitud de acceso y uso compartido](#sharing-and-access-request-activities)<br/> |[Actividades de sincronización](#synchronization-activities)<br/> |[Actividades de permisos del sitio](#site-permissions-activities)<br/> |
+|[Actividades de administración del sitio](#site-administration-activities)<br/> |[Actividades de buzón de Exchange](#exchange-mailbox-activities)<br/> |[Actividades de Sway](#sway-activities) <br/> |
+|[Actividades de administración de usuarios](#user-administration-activities) <br/> |[Actividades de administración de grupos de Azure AD](#azure-ad-group-administration-activities) <br/> |[Actividades de administración de aplicaciones](#application-administration-activities) <br/> |
+|[Actividades de administración de roles](#role-administration-activities) <br/> |[Actividades de administración de directorios](#directory-administration-activities) <br/>|[actividades de eDiscovery](#ediscovery-activities) <br/> |
+|[Actividades avanzadas de eDiscovery](#advanced-ediscovery-activities)<br/> |[Actividades de Power BI](#power-bi-activities) <br/> |[Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)<br/>|
+|[Actividades de Microsoft Teams](#microsoft-teams-activities) <br/> |[Actividades de Yammer](#yammer-activities) <br/> |[Actividades de Microsoft Flow](#microsoft-flow-activities) <br/>|
+|[Actividades de Microsoft PowerApps](#microsoft-powerapps)<br/>|[Actividades de Microsoft Stream](#microsoft-stream-activities) <br/>|[Actividades de administración de Exchange](#exchange-admin-audit-log)<br/>|
 ||||
   
 ### <a name="file-and-page-activities"></a>Actividades de archivo y página
@@ -318,12 +315,16 @@ En la tabla siguiente se describen las actividades de archivo y página en Share
 |:-----|:-----|:-----|
 |Archivo de acceso  <br/> |FileAccessed  <br/> |La cuenta del sistema o el usuario obtiene acceso a un archivo.  <br/> |
 |(ninguno)  <br/> |FileAccessedExtended  <br/> |Esto está relacionado con la actividad "archivo de acceso (FileAccessed)". Se registra un evento FileAccessedExtended cuando la misma persona obtiene acceso continuamente a un archivo durante un período de tiempo prolongado (hasta 3 horas). La finalidad del registro de eventos FileAccessedExtended es reducir el número de eventos FileAccessed que se registran cuando se obtiene acceso a un archivo de forma continua. Esto ayuda a reducir el ruido de varios registros de FileAccessed para lo que es esencialmente la misma actividad de usuario y le permite centrarse en el evento FileAccessed inicial (y más importante).  <br/> |
+|Etiqueta de directiva de cumplimiento cambiada<br/> |ComplianceSettingChanged<br/> |Una etiqueta de retención se ha aplicado o quitado de un documento. Este evento se desencadena cuando se aplica una etiqueta de retención de forma manual o automática a un mensaje.<br/> |
+|Estado de registro cambiado a bloqueado<br/> |LockRecord<br/> |Se bloqueó el estado del registro de una etiqueta de retención que clasifica un documento como registro. Esto significa que el documento no se puede modificar ni eliminar. Solo los usuarios asignados al menos permiso de colaborador para un sitio pueden cambiar el estado del registro de un documento.<br/> |
+|Estado de registro cambiado a desbloqueado<br/> |UnlockRecord<br/> |El estado del registro de una etiqueta de retención que clasifica un documento como un registro se desbloqueó. Esto significa que el documento se puede modificar o eliminar. Solo los usuarios asignados al menos permiso de colaborador para un sitio pueden cambiar el estado del registro de un documento.<br/><br/> |
 |Archivo protegido  <br/> |FileCheckedIn  <br/> |El usuario protege un documento que ha desprotegido de una biblioteca de documentos.  <br/> |
 |Archivo desprotegido  <br/> |FileCheckedOut  <br/> |El usuario desprotege un documento ubicado en una biblioteca de documentos. Los usuarios pueden extraer del repositorio y modificar documentos que se han compartido con ellos.  <br/> |
 |Archivo copiado  <br/> |FileCopied  <br/> |El usuario copia un documento de un sitio. El archivo copiado puede guardarse en otra carpeta del sitio.  <br/> |
 |Archivo eliminado  <br/> |FileDeleted  <br/> |El usuario elimina un documento de un sitio.  <br/> |
 |Archivo eliminado de la papelera de reciclaje  <br/> |FileDeletedFirstStageRecycleBin  <br/> |El usuario elimina un archivo de la papelera de reciclaje de un sitio.  <br/> |
 |Archivo eliminado de la papelera de reciclaje de la segunda etapa  <br/> |FileDeletedSecondStageRecycleBin  <br/> |El usuario elimina un archivo de la papelera de reciclaje de segundo nivel de un sitio.  <br/> |
+|Etiqueta de directiva de cumplimiento de registros eliminados<br/> |ComplianceRecordDelete<br/> |Se ha eliminado un documento que se clasificó como un registro. Un documento se considera un registro cuando se aplica al documento una etiqueta de retención que clasifica el contenido como un registro. <br/> |
 |Discrepancia de sensibilidad de documento detectada <br/>|DocumentSensitivityMismatchDetected<br/>|El usuario carga un documento clasificado con una etiqueta de confidencialidad que tiene una prioridad mayor que la etiqueta de confidencialidad que se aplica al sitio en el que se carga el documento. Nota Este evento no se desencadena si la etiqueta de confidencialidad aplicada a un sitio tiene una prioridad mayor que la etiqueta de confidencialidad aplicada a un documento que se carga en el sitio. Para obtener más información acerca de la prioridad de la etiqueta de confidencialidad, consulte la sección "prioridad de etiqueta" en [Overview of Sensitivity](sensitivity-labels.md#label-priority-order-matters)Labels.<br/>|
 |Malware detectado en el archivo  <br/> |FileMalwareDetected  <br/> |El motor antivirus de SharePoint detecta malware en un archivo.  <br/> |
 |Desprotección de archivo descartado  <br/> |FileCheckOutDiscarded  <br/> |El usuario descarta (o deshace) un archivo desprotegido. Eso significa que cualquier cambio que haya realizado en el archivo cuando estaba desprotegido se descarta y no se guarda en la versión del documento en la biblioteca de documentos.  <br/> |
@@ -398,12 +399,12 @@ En la tabla siguiente se describen las actividades de uso compartido de usuarios
   
 |**Nombre descriptivo**|**Operation**|**Descripción**|
 |:-----|:-----|:-----|
+|Nivel de permisos agregado a la colección de sitios  <br/> |PermissionLevelAdded  <br/> |Se ha agregado un nivel de permisos a una colección de sitios.  <br/> |
 |Solicitud de acceso aceptada  <br/> |AccessRequestAccepted  <br/> |Se aceptó una solicitud de acceso a un sitio, una carpeta o un documento y se concedió acceso al usuario que lo solicita.  <br/> |
 |Invitación para uso compartido aceptada  <br/> |SharingInvitationAccepted  <br/> |El usuario (miembro o invitado) ha aceptado una invitación para uso compartido y se le ha concedido acceso a un recurso. Este evento incluye información acerca del usuario al que se invitó y la dirección de correo electrónico que se usó para aceptar la invitación (podrían ser diferentes). Esta actividad suele ir acompañada de un segundo evento que describe cómo se ha concedido acceso al usuario al recurso, por ejemplo, agregar el usuario a un grupo que tiene acceso al recurso.  <br/> |
-|Nivel de permisos agregado a la colección de sitios  <br/> |PermissionLevelAdded  <br/> |Se ha agregado un nivel de permisos a una colección de sitios.  <br/> |
 |Invitación de uso compartido bloqueada  <br/> |SharingInvitationBlocked  <br/> | Una invitación de uso compartido enviada por un usuario en la organización está bloqueada debido a una directiva de uso compartido externo que permite o deniega el uso compartido externo en función del dominio del usuario de destino. En este caso, se bloqueó la invitación para uso compartido porque:  <br/>  El dominio del usuario de destino no está incluido en la lista de dominios permitidos.  <br/>  O bien  <br/>  El dominio del usuario de destino se incluye en la lista de dominios bloqueados.  <br/>  Para obtener más información sobre cómo permitir o bloquear el uso compartido externo en función de los dominios, consulte [dominios restringidos compartidos en SharePoint Online y OneDrive para la empresa](https://support.office.com/article/5d7589cd-0997-4a00-a2ba-2320ec49c4e9).  <br/> |
-|Vínculo creado a partir de la compañía  <br/> |CompanyLinkCreated  <br/> |El usuario ha creado un vínculo a toda la empresa para un recurso. los vínculos de toda la empresa solo los pueden usar los miembros de la organización. Los invitados no pueden usarlos.  <br/> |
 |Solicitud de acceso creada  <br/> |AccessRequestCreated  <br/> |El usuario solicita acceso a un sitio, una carpeta o un documento para los que no tiene permisos de acceso.  <br/> |
+|Vínculo creado a partir de la compañía  <br/> |CompanyLinkCreated  <br/> |El usuario ha creado un vínculo a toda la empresa para un recurso. los vínculos de toda la empresa solo los pueden usar los miembros de la organización. Los invitados no pueden usarlos.  <br/> |
 |Vínculo anónimo creado  <br/> |AnonymousLinkCreated  <br/> |El usuario ha creado un vínculo anónimo a un recurso. Cualquier usuario con este vínculo puede tener acceso al recurso sin tener que autenticarse.  <br/> |
 |Vínculo seguro creado  <br/> |SecureLinkCreated  <br/> |Se ha creado un vínculo de uso compartido seguro para este elemento.  <br/> |
 |Invitación para uso compartido creada  <br/> |SharingInvitationCreated  <br/> |El usuario ha compartido un recurso en SharePoint Online o OneDrive para la empresa con un usuario que no se encuentra en el directorio de su organización.  <br/> |
@@ -503,27 +504,32 @@ En la siguiente tabla se enumeran los eventos que son el resultado de las tareas
   
 ### <a name="exchange-mailbox-activities"></a>Actividades de buzón de Exchange
   
-En la siguiente tabla se enumeran las actividades que puede registrar el registro de auditoría de buzones de correo. Se registran las actividades de buzón realizadas por el propietario del buzón, un usuario delegado o un administrador. De forma predeterminada, la auditoría de buzones de correo en Office 365 no está activada. El registro de auditoría de buzones debe estar activado para cada buzón antes de que se registre la actividad del buzón de correo. Para obtener más información, consulte [Habilitar la auditoría de buzones de correo en Office 365](https://go.microsoft.com/fwlink/p/?LinkID=626109).
+En la siguiente tabla se enumeran las actividades que puede registrar el registro de auditoría de buzones de correo. Las actividades de buzón realizadas por el propietario del buzón, un usuario delegado o un administrador se registran automáticamente en el registro de auditoría de Office 365 hasta 90 días. Tenga en cuenta que es posible que un administrador desactive el registro de auditoría de buzones de correo para todos los usuarios de su organizatin. En este caso, no se registra ninguna acción de buzón de correo para ningún usuario. Para obtener más información, vea [Manage Mailbox Auditing](enable-mailbox-auditing.md).
+
+ También puede buscar actividades de buzón de correo con el cmdlet [Search-MailboxAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-mailboxauditlog) en Exchange Online PowerShell. 
   
 |**Nombre descriptivo**|**Operation**|**Descripción**|
 |:-----|:-----|:-----|
-|Se agregaron permisos de delegado de buzón  <br/> |Add-MailboxPermission  <br/> |Un administrador ha asignado el permiso de buzón de correo de FullAccess a un usuario (conocido como delegado) al buzón de otra persona. El permiso FullAccess permite al delegado abrir el buzón de la otra persona y leer y administrar el contenido del buzón.  <br/> |
-|Mensaje clasificado como registro  <br/> |ApplyRecordLabel<br/> |Un mensaje se clasificó como un registro. Esto ocurre cuando una etiqueta de retención que clasifica el contenido como un registro se aplica de forma manual o automática a un mensaje.<br/> |
+|Se agregaron permisos de delegado de buzón  <br/> |AddMailboxPermissions  <br/> |Un administrador ha asignado el permiso de buzón de correo de FullAccess a un usuario (conocido como delegado) al buzón de otra persona. El permiso FullAccess permite al delegado abrir el buzón de la otra persona y leer y administrar el contenido del buzón.  <br/> |
+|Se agregó o quitó un usuario con acceso delegado a la carpeta calendario<br/> |UpdateCalendarDelegation<br/> |Se ha agregado o quitado un usuario como delegado en el calendario del buzón de otro usuario. La delegación de calendario da a otra persona en la misma organización permisos para administrar el calendario del propietario del buzón. <br/> |
+|Permisos agregados a la carpeta<br/> |AddFolderPermissions<br/> |Se ha agregado un permiso de carpeta. Los permisos de carpeta controlan qué usuarios de la organización pueden tener acceso a las carpetas de un buzón de correo y los mensajes que se encuentran en dichas carpetas.<br/> |
 |Mensajes copiados a otra carpeta  <br/> |Copy  <br/> |Un mensaje se copió en otra carpeta.  <br/> |
 |Elemento de buzón creado  <br/> |Crear  <br/> |Se crea un elemento en la carpeta calendario, contactos, notas o tareas del buzón de correo; por ejemplo, se crea una nueva convocatoria de reunión. Tenga en cuenta que no se audita la creación, el envío o la recepción de un mensaje. Además, no se audita la creación de una carpeta de buzón de correo.  <br/> |
-|Nueva regla de bandeja de entrada creada en Outlook Web App  <br/> |NewInboxRule<br/> |Un usuario ha creado una nueva regla de bandeja de entrada en Outlook Web App (OWA).<br/> |
+|Nueva regla de bandeja de entrada creada en Outlook Web App  <br/> |NewInboxRule<br/> |Un propietario de buzón u otro usuario con acceso al buzón ha creado una nueva regla de bandeja de entrada en Outlook Web App.<br/> |
 |Mensajes eliminados de la carpeta elementos eliminados  <br/> |SoftDelete  <br/> |Un mensaje se eliminó permanentemente o se eliminó de la carpeta Elementos eliminados. Estos elementos se mueven a la carpeta elementos recuperables. Los mensajes también se mueven a la carpeta elementos recuperables cuando un usuario lo selecciona y presiona **Mayús + Supr**.  <br/> |
+|Mensaje etiquetado como registro  <br/> |ApplyRecordLabel<br/> |Un mensaje se clasificó como un registro. Esto ocurre cuando una etiqueta de retención que clasifica el contenido como un registro se aplica de forma manual o automática a un mensaje.<br/> |
 |Mensajes movidos a otra carpeta  <br/> |Move  <br/> |Un mensaje se movió a otra carpeta.  <br/> |
 |Mensajes movidos a la carpeta elementos eliminados  <br/> |MoveToDeletedItems  <br/> |Un mensaje se eliminó y se movió a la carpeta Elementos eliminados.  <br/> |
 |Permiso de carpeta modificada  <br/> |UpdateFolderPermissions  <br/> |Se ha cambiado un permiso de carpeta. Los permisos de carpeta controlan qué usuarios de la organización pueden tener acceso a las carpetas de buzón y los mensajes de la carpeta.  <br/> |
+|Regla de bandeja de entrada modificada desde Outlook Web App<br/> |SetInboxRule<br/> |Un propietario de buzón u otro usuario con acceso al buzón de correo modificó una regla de la bandeja de entrada mediante Outlook Web App.<br/> |
 |Mensajes purgados del buzón  <br/> |HardDelete  <br/> |Se purgó un mensaje de la carpeta elementos recuperables (eliminado permanentemente del buzón).  <br/> |
 |Permisos de delegado de buzón quitados  <br/> |Remove-MailboxPermission  <br/> |Un administrador quitó el permiso FullAccess (que se asignó a un delegado) desde el buzón de una persona. Una vez quitado el permiso FullAccess, el delegado no puede abrir el buzón de correo de la otra persona ni tener acceso a ningún contenido del mismo.  <br/> |
+|Permisos quitados de la carpeta<br/> |RemoveFolderPermissions<br/> |Se ha quitado un permiso de carpeta. Los permisos de carpeta controlan qué usuarios de la organización pueden tener acceso a las carpetas de un buzón de correo y los mensajes que se encuentran en dichas carpetas.<br/> |
 |Mensaje enviado con los permisos enviar como  <br/> |SendAs  <br/> |Un mensaje se envió mediante el permiso SendAs. Esto significa que otro usuario envió el mensaje como si procediera del propietario del buzón.  <br/> |
 |Mensaje enviado con los permisos enviar en nombre de  <br/> |SendOnBehalf  <br/> |Un mensaje se envió mediante el permiso SendOnBehalf. Esto significa que otro usuario envió el mensaje en nombre del propietario del buzón. El mensaje indica el destinatario en nombre de quien se envió el mensaje y quién lo envió realmente.  <br/> |
-|Acceso de delegado actualizado a la carpeta de calendario  <br/> |UpdateCalendarDelegation  <br/> |Se asignó una delegación de calendario a un buzón. La delegación de calendario da a otra persona en la misma organización permisos para administrar el calendario del propietario del buzón.  <br/> |
+|Reglas de bandeja de entrada actualizadas desde el cliente de Outlook<br/> |UpdateInboxRules<br/> |Un propietario de buzón u otro usuario con acceso al buzón de correo modificó una regla de la bandeja de entrada en el cliente de Outlook.<br/> |
 |Mensaje actualizado  <br/> |Update  <br/> |Se cambió un mensaje o sus propiedades.  <br/> |
 |Usuario que ha iniciado sesión en el buzón  <br/> |MailboxLogin  <br/> |El usuario inició sesión en su buzón.  <br/> |
-|(ninguno)  <br/> |UpdateInboxRules  <br/> |Se ha agregado, quitado o cambiado una regla de bandeja de entrada. Las reglas de la bandeja de entrada se usan para procesar mensajes en la bandeja de entrada del usuario en función de las condiciones especificadas y emprender acciones cuando se cumplen las condiciones de una regla, como mover un mensaje a una carpeta especificada o eliminar un mensaje.  <br/> Para devolver entradas para actividades de reglas de la bandeja de entrada, debe seleccionar **Mostrar resultados para todas las actividades** en la lista **actividades** . Use los cuadros intervalo de fechas y la lista **usuarios** para restringir los resultados de la búsqueda.  <br/> |
 ||||
 
 ### <a name="sway-activities"></a>Actividades de Sway
@@ -756,7 +762,7 @@ En la siguiente tabla se enumeran las actividades de usuario y de administrador 
    
 ### <a name="microsoft-flow-activities"></a>Actividades de Microsoft Flow
 
-Puede buscar en el registro de auditoría actividades de Microsoft Flow. Estas actividades incluyen la creación, edición y eliminación de flujos y el cambio de los permisos de flujo. Para obtener información sobre la auditoría de actividades de flujo, vea el blog [eventos de auditoría de Microsoft Flow ahora disponibles en el centro de seguridad _AMP_ cumplimiento](https://flow.microsoft.com/blog/security-and-compliance-center).
+Puede buscar en el registro de auditoría actividades de Microsoft Flow. Estas actividades incluyen la creación, edición y eliminación de flujos y el cambio de los permisos de flujo. Para obtener información sobre la auditoría de actividades de flujo, vea el blog [eventos de auditoría de Microsoft Flow ahora disponibles en el centro de seguridad & cumplimiento](https://flow.microsoft.com/blog/security-and-compliance-center).
 
 ### <a name="microsoft-powerapps"></a>Microsoft PowerApps
 

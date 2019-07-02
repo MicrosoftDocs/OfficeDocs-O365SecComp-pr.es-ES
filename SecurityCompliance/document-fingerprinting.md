@@ -3,20 +3,19 @@ title: Creación de huella digital de documento
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: ''
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 search.appverid: MET150
 ms.service: exchange-online
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: Los trabajadores de la información en su organización tratan con diversos tipos de información confidencial durante un día normal. La creación de huella digital de documento facilita la protección de esta información al identificar los formularios estándar que se usan en toda la organización. En este tema se describen los conceptos relacionados con la creación de huellas digitales de documentos y cómo crear una mediante PowerShell.
-ms.openlocfilehash: 2b8e4fd6b286f2c1a5c67863957f2b04fbef31b9
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 56f67d1e3948ed66defa10a0815a4fdf87a13cb1
+ms.sourcegitcommit: 044003455eb36071806c9f008ac631d54c64dde6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32256908"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "35199556"
 ---
 # <a name="document-fingerprinting"></a>Creación de huella digital de documento
 
@@ -44,7 +43,7 @@ El siguiente ejemplo muestra qué sucede si crea una huella digital de documento
   
 **Ejemplo de documento de patente que coincide con una huella digital de documento de una plantilla de patente**
 
-![Document_Fingerprinting_diagram. png](media/Document_Fingerprinting_diagram.png)
+![Document-Fingerprinting-diagram. png](media/Document-Fingerprinting-diagram.png)
   
 La plantilla de patente contiene los campos en blanco "título de patente", "inventoras" y "Descripción" y descripciones para cada uno de esos campos, que es la palabra pattern. Al cargar la plantilla de patentes original, se encuentra en uno de los tipos de archivo admitidos y en texto sin formato. DLP convierte este patrón de palabras en una huella digital de documento, que es un pequeño archivo XML Unicode que contiene un valor de hash único que representa el texto original y la huella digital se guarda como una clasificación de datos en Active Directory. (Como medida de seguridad, el documento original no se almacena en el servicio; solo se almacena el valor hash y no se puede reconstruir el documento original a partir del valor hash). La huella digital de patente se convierte en un tipo de información confidencial que puede asociar con una directiva de DLP. Después de asociar la huella digital con una directiva DLP, DLP detecta los mensajes de correo electrónico salientes que contienen documentos que coinciden con la huella digital de patente y se ocupan de ellos según la Directiva de la organización. 
 
@@ -66,7 +65,7 @@ La huella digital de documento no detectará información confidencial en los si
     
 ## <a name="use-powershell-to-create-a-classification-rule-package-based-on-document-fingerprinting"></a>Usar PowerShell para crear un paquete de reglas de clasificación basado en la creación de huellas digitales de documentos
 
-Tenga en cuenta que actualmente puede crear una huella digital de documento solo con PowerShell en &amp; el centro de seguridad y cumplimiento. Para conectarse, vea [Connect to Security _AMP_ Compliance Center PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
+Tenga en cuenta que actualmente puede crear una huella digital de documento solo con PowerShell en &amp; el centro de seguridad y cumplimiento. Para conectarse, vea [Connect to Security & Compliance Center PowerShell](https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell).
 
 DLP usa paquetes de reglas de clasificación para detectar contenido confidencial. Para crear un paquete de reglas de clasificación basado en una huella digital de documento, use los cmdlets **New-DlpFingerprint** y **New-DlpSensitiveInformationType** . Debido a que los resultados de **New-DlpFingerprint** no se almacenan fuera de la regla de clasificación de datos, siempre se ejecuta **New-DlpFingerprint** y **New-DlpSensitiveInformationType** o **set-DlpSensitiveInformationType** en el mismo Sesión de PowerShell. En el ejemplo siguiente se crea una huella digital de documento nueva a partir del archivo C:\My Documents\Contoso Employee Template.docx. La nueva huella digital se almacena como una variable para que se pueda usar con el cmdlet **New-DlpSensitiveInformationType** en la misma sesión de PowerShell. 
   

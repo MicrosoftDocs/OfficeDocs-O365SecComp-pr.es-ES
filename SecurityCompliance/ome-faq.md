@@ -12,12 +12,12 @@ search.appverid:
 - MET150
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: ¿Tiene alguna pregunta sobre cómo funcionan las nuevas capacidades de protección de mensajes en Office 365? Compruebe si hay una respuesta aquí.
-ms.openlocfilehash: fa23e92952ecb5cd5a2cfc2ace5234324d48a1cc
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 1625ecd3f2c7991e2726539bcfa0c772d1ffea59
+ms.sourcegitcommit: 803baca9f99a6691fb41a3308e799752e4d8f20c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157572"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "35222264"
 ---
 # <a name="office-365-message-encryption-faq"></a>Preguntas más frecuentes sobre el cifrado de mensajes de Office 365
 
@@ -136,7 +136,7 @@ Afirma! Para obtener información sobre cómo personalizar los mensajes de corre
   
 ## <a name="are-there-any-reporting-capabilities-or-insights-for-encrypted-emails"></a>¿Hay información o capacidades de informes para los correos electrónicos cifrados?
 
-No en este momento, pero lo estará próximamente.
+Hay un informe de cifrado en el centro de seguridad y cumplimiento. Consulte [ver informes de seguridad de correo electrónico en el centro de seguridad & cumplimiento.](view-email-security-reports.md)
   
 ## <a name="can-i-use-message-encryption-with-compliance-features-such-as-ediscovery"></a>¿Puedo usar el cifrado de mensajes con características de cumplimiento como la exhibición de documentos electrónicos?
 

@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 8e67c3c8a693e627bade9e581f0f1e246bf6802a
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 091d6f8835ae1aae2f075f0b510954255c3a6a5c
+ms.sourcegitcommit: e323610df2df71c84f536e8a38650d33d8069e41
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34151894"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34703843"
 ---
 # <a name="collect-data-for-a-case-in-advanced-ediscovery"></a>Recopilar datos para un caso en eDiscovery avanzado
 
@@ -34,6 +34,7 @@ Si hace clic en **nueva búsqueda** en la ficha **búsquedas** , se iniciará un
 Una vez creada la búsqueda, se muestra una página de control flotante con los detalles. Tenga en cuenta que los botones **estadísticas** y **vista previa** aparecen inicialmente atenuados porque la búsqueda todavía no se ha completado. Puede realizar un seguimiento del progreso de la búsqueda en la ficha **búsquedas** .
 
 ## <a name="view-search-results-and-statistics"></a>Ver los resultados de la búsqueda y las estadísticas
+
 Hay dos componentes de una búsqueda de contenido: Statistics (Estimations) y Preview. Cuando se completen todos estos componentes, verá que el estado mostrado en las columnas correspondientes de la ficha **búsquedas** cambia desde **enviado** a **en curso** a **completado**.
 
 Una vez completada la estimación de búsqueda, haga clic en la búsqueda para mostrar la página de control flotante, que mostrará algunas estadísticas de alto nivel sobre los resultados de la búsqueda. En este momento, el botón **estadísticas** estará activo. Puede hacer clic en él para ver las estadísticas de búsqueda, como:

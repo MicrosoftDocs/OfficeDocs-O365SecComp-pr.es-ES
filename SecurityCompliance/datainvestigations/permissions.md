@@ -4,7 +4,7 @@ ms.author: markjjo
 author: markjjo
 manager: laurawi
 ms.date: ''
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: En este artículo se describe cómo configurar los permisos necesarios para usar la herramienta de investigaciones de datos en Microsoft 365.
-ms.openlocfilehash: c2627bcb1f226018221969c069607a9b60c7b173
-ms.sourcegitcommit: 4fedeb06a6e7796096fc6279cfb091c7b89d484d
+ms.openlocfilehash: bff6b976667f3793cf1973f9ab684ae14d590d97
+ms.sourcegitcommit: f96029928a6cdd141783026d57bc2179d7963af6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34652573"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "35017662"
 ---
 # <a name="assign-permissions-for-data-investigations-preview"></a>Asignar permisos para las investigaciones de datos (versión preliminar)
 

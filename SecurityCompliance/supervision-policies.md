@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre las directivas de supervisión en Office 365
-ms.openlocfilehash: 2948cc0440bf481e3f0e90e76a23392233d81cc8
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: d802fb0e17894a769fb330aa5f080fbd6151b44e
+ms.sourcegitcommit: 3699da2cad6e6a2002083e2884e32393dacab0ca
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34156482"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34694714"
 ---
 # <a name="supervision-policies-in-office-365"></a>Directivas de supervisión en Office 365
 
@@ -31,7 +31,7 @@ Estas directivas también pueden ayudarle a superar muchos de los retos de cumpl
 
 - Supervisión de tipos cada vez mayores de canales de comunicación
 - El volumen creciente de los datos de los mensajes
-- Aplicación reglamentaria & el riesgo de las multas
+- Cumplimiento normativo & el riesgo de las multas
 
 En algunas organizaciones, puede haber una separación de tareas entre el soporte de ti y el grupo de administración de cumplimiento. Office 365 admite la separación entre la configuración de características de la Directiva de supervisión y la configuración de directivas para las comunicaciones capturadas. Por ejemplo, el grupo de TI de una organización puede ser responsable de configurar permisos de funciones y grupos para admitir directivas de supervisión configuradas y administradas por el equipo de cumplimiento de la organización.
 
@@ -82,10 +82,15 @@ Para simplificar la configuración, cree grupos para los usuarios que necesitan 
 Con las directivas de supervisión, puede elegir supervisar los mensajes en una o varias de las plataformas de comunicación siguientes:
 
 - **Correo electrónico de Exchange:** Los buzones hospedados en Exchange online como parte de su suscripción a Office 365 son válidos para la supervisión de mensajes. Los correos electrónicos y datos adjuntos que coinciden con las condiciones de la supervisión están disponibles instantáneamente para la supervisión y en los informes de supervisión. Los tipos de datos adjuntos compatibles para la supervisión son los mismos que los [tipos de archivo admitidos para las inspecciones de contenido de reglas de flujo de correo de Exchange](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection).
+
 - **Microsoft Teams:** Se pueden supervisar las comunicaciones de chat y los datos adjuntos asociados tanto en canales públicos y privados de Microsoft Teams como en chats individuales. Chats de Microsoft teams que cumplen las condiciones de directiva de supervisión se procesan una vez cada 24 horas y, a continuación, están disponibles para la supervisión y en los informes de supervisión. Use las siguientes configuraciones de administración de grupos para supervisar los chats de usuarios individuales y las comunicaciones de canal en Microsoft Teams:
 
     - **Para supervisar los chats de Microsoft Teams:** Asigne usuarios individuales o asigne un [grupo de distribución](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) a la Directiva de supervisión. Esto es para relaciones de usuario y chat de 1 a 1 o de uno a varios.
-    - **Para las comunicaciones de canal de Teams:** Asigne cada canal de Microsoft Teams o grupo de Office 365 que desee supervisar que contenga un usuario específico a la Directiva de supervisión. Si agrega el mismo usuario a otros canales de Microsoft Teams o a otros grupos de Office 365, asegúrese también de agregar estos nuevos canales y grupos a la Directiva de supervisión.
+    - **Para las comunicaciones de canal de Teams:** Asigne cada canal de Microsoft Teams o grupo de Office 365 que desee supervisar que contenga un usuario específico a la Directiva de supervisión. Si agrega el mismo usuario a otros canales de Microsoft Teams o a otros grupos de Office 365, asegúrese de agregar estos nuevos canales y grupos a la Directiva de supervisión.
+
+- **Skype empresarial online:** Las comunicaciones de chat y los datos adjuntos asociados en Skype empresarial online pueden supervisarse. Chats de Skype empresarial online las condiciones de la Directiva de supervisión se procesan una vez cada 24 horas y, a continuación, están disponibles para la supervisión y en los informes de supervisión. Las conversaciones de chat supervisadas se han originado a partir de [conversaciones anteriores guardadas en Skype empresarial online](https://support.office.com/article/Find-a-previous-Skype-for-Business-conversation-18892eba-5f18-4281-8c87-fd48bd72e6a2).  Use la siguiente configuración de administración de grupos para supervisar las comunicaciones de chat de los usuarios en Skype empresarial online:
+
+    - **Para la supervisión de chats de Skype empresarial online:** Asigne usuarios individuales o asigne un [grupo de distribución](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) a la Directiva de supervisión. Esto es para relaciones de usuario y chat de 1 a 1 o de uno a varios.
 
 - **Orígenes de terceros:** Puede supervisar las comunicaciones de orígenes de terceros (como en Facebook o DropBox) para los datos que se importan a los buzones de correo de Office 365 de la organización. [Obtenga información sobre cómo importar datos de terceros a Office 365](https://docs.microsoft.com/office365/securitycompliance/archiving-third-party-data).
 
@@ -134,7 +139,7 @@ El modelo de lenguaje ofensivo admite en este momento palabras clave en inglés 
 | **Extremo** | Expresiones dirigidas a la religión y a las Ideologies políticas. |
 | **Oculta** | Expresiones cuyo significado o pronunciación es el mismo que otro término ofensivo. |
 | **Idioma de provocative** | Expresiones que causan potencialmente el enojo o la violencia. |
-| **Taboo** | Expresiones que, por lo general, no son adecuadas para las comunicaciones de la sociedad de educación. |
+| **Taboo** | Expresiones que generalmente son inadecuadas en las comunicaciones de la sociedad del normal. |
 | **Idioma no refinado** | Expresiones que carecen de modales y que son potencialmente duras y exigentes. |
 
 #### <a name="conditional-settings"></a>Configuración condicional
@@ -143,14 +148,14 @@ Las condiciones que elija para la Directiva se aplican a las comunicaciones de l
 
 La siguiente tabla explica más sobre cada condición.
   
-|**Condition**|**Cómo usar esta condición**|
+|**Condición**|**Cómo usar esta condición**|
 |:-----|:-----|
-| **Se recibe el mensaje desde cualquiera de estos dominios**  <br><br> **No se recibe el mensaje desde ninguno de estos dominios** | Para aplicar la Directiva cuando se incluyan o excluyan determinados dominios en un mensaje recibido, escriba cada dominio y separe varios dominios con una coma. Cada dominio que escriba se aplica por separado (solo uno de estos dominios debe aplicarse para que la Directiva se aplique al mensaje). |
-| **El mensaje se envía a cualquiera de estos dominios**  <br><br> **El mensaje no se envía a ninguno de estos dominios** | Para aplicar la Directiva cuando se incluyan o excluyan determinados dominios en un mensaje enviado, escriba cada dominio y separe varios dominios con una coma. Cada dominio que escriba se aplicará por separado (solo uno de estos dominios debe aplicarse para que la Directiva se aplique al mensaje). |
+| **Se recibe el mensaje desde cualquiera de estos dominios**  <br><br> **No se recibe el mensaje desde ninguno de estos dominios** | Aplicar la Directiva para incluir o excluir dominios o direcciones de correo electrónico específicos en los mensajes recibidos. Escriba cada dominio o dirección de correo electrónico y separe los distintos dominios o direcciones de correo electrónico con una coma. Cada dominio o dirección de correo electrónico que se escriba se aplica por separado, solo se debe solicitar un dominio o una dirección de correo electrónico para que la Directiva se aplique al mensaje. <br><br> Si desea supervisar todo el correo electrónico de un dominio específico pero desea excluir los mensajes que no necesitan revisión (boletines, anuncios, etc.), debe configurar dos condiciones: <br> - **Se recibe un mensaje de cualquiera de estas** condiciones de los dominios que define el dominio ("contoso.com") y <br> - **No se recibe un mensaje desde ninguna condición de dominio** que excluya la dirección de correo electrónico ("Newsletter@contoso.com"). |
+| **El mensaje se envía a cualquiera de estos dominios**  <br><br> **El mensaje no se envía a ninguno de estos dominios** | Aplicar la Directiva para incluir o excluir dominios o direcciones de correo electrónico específicos en los mensajes enviados. Escriba cada dominio o dirección de correo electrónico y separe los distintos dominios o direcciones de correo electrónico con una coma. Cada dirección de correo electrónico o dominio se aplica por separado, solo se debe solicitar un dominio o una dirección de correo electrónico para que la Directiva se aplique al mensaje. <br><br> Si desea supervisar todo el correo electrónico enviado a un dominio específico pero desea excluir los mensajes enviados que no necesitan revisión, debe configurar dos condiciones: <br> - **Se envía un mensaje a cualquiera de estas condiciones de los dominios** que define el dominio ("contoso.com") y <br> -Un **mensaje no se envía a ninguna condición de dominio** que excluya la dirección de correo electrónico ("subscriptions@contoso.com"). |
 | **El mensaje se clasifica con cualquiera de estas etiquetas**  <br><br> **El mensaje no está clasificado con ninguna de estas etiquetas** | Para aplicar la Directiva cuando se incluyen o excluyen determinadas etiquetas de retención en un mensaje. Las etiquetas de retención se deben configurar por separado y las etiquetas configuradas se eligen como parte de esta condición. Cada etiqueta que elija se aplica por separado (solo una de estas etiquetas se debe aplicar para que la Directiva se aplique al mensaje). Para obtener más información acerca de la configuración de etiquetas de retención, consulte [Overview of Retention Labels](https://docs.microsoft.com/office365/securitycompliance/labels).|
 | **El mensaje contiene alguna de estas palabras**  <br><br> **El mensaje no contiene ninguna de estas palabras** | Para aplicar la Directiva cuando se incluyan o excluyan ciertas palabras o frases en un mensaje, escriba cada palabra o frase en una línea independiente. Cada línea de palabras que escriba se aplica por separado (solo se debe aplicar una de estas líneas para que la Directiva se aplique al mensaje). Para obtener más información sobre cómo escribir palabras o frases, consulte la sección siguiente [Matching words and phrases to emails or attachments](supervision-policies.md#Matchwords).|
 | **Los datos adjuntos contienen alguna de estas palabras**  <br><br> **Los datos adjuntos no contienen ninguna de estas palabras** | Para aplicar la Directiva cuando ciertas palabras o frases se incluyen o excluyen en datos adjuntos de un mensaje (como un documento de Word), escriba cada palabra o frase en una línea independiente. Cada línea de palabras que escriba se aplica por separado (solo se debe aplicar una línea para que la Directiva se aplique a los datos adjuntos). Para obtener más información sobre cómo escribir palabras o frases, consulte la sección siguiente [Matching words and phrases to emails or attachments](supervision-policies.md#Matchwords).|
-| **Los datos adjuntos son cualquiera de estos tipos de archivo**  <br><br> **Datos adjuntos no es ninguno de estos tipos de archivo** | Para supervisar las comunicaciones que incluyan o excluyan tipos de datos adjuntos específicos, escriba las extensiones de archivo (por ejemplo,. exe o. pdf). Si desea incluir o excluir varias extensiones de archivo, indíquela en líneas separadas. Solo una extensión de dato adjunto debe coincidir para aplicar la directiva.|
+| **Los datos adjuntos son cualquiera de estos tipos de archivo**  <br><br> **Datos adjuntos no es ninguno de estos tipos de archivo** | Para supervisar las comunicaciones que incluyan o excluyan tipos de datos adjuntos específicos, escriba las extensiones de archivo (por ejemplo,. exe o. pdf). Si desea incluir o excluir varias extensiones de archivo, indíquela en líneas separadas. Para que se aplique la Directiva, solo debe coincidir una extensión de datos adjuntos.|
 | **El tamaño del mensaje es mayor que**  <br><br> **El tamaño del mensaje no es mayor que** | Para revisar los mensajes según un tamaño determinado, use estas condiciones para especificar el tamaño máximo o mínimo que puede tener un mensaje antes de que esté sujeto a revisión. Por ejemplo, si especifica que **el tamaño del mensaje es superior a** \> **1,0 MB**, todos los mensajes que tengan 1,01 MB o más, estarán sujetos a revisión. Puede elegir bytes, kilobytes, megabytes o gigabytes para esta condición.|
 | **El dato adjunto es mayor que**  <br><br> **Los datos adjuntos no tienen un tamaño superior a** | Para revisar los mensajes en función del tamaño de los datos adjuntos, especifique el tamaño máximo o mínimo que pueden tener los datos adjuntos antes de que el mensaje y sus datos adjuntos estén sujetos a revisión. Por ejemplo, si especifica que el **dato adjunto es superior** \> a **2,0 MB**, todos los mensajes con datos adjuntos 2,01 MB y sobre estarán sujetos a revisión. Puede elegir bytes, kilobytes, megabytes o gigabytes para esta condición.|
    
@@ -159,7 +164,7 @@ La siguiente tabla explica más sobre cada condición.
   
 ##### <a name="enter-multiple-conditions"></a>Escribir varias condiciones
 
-Si especifica varias condiciones, Office 365 usa todas las condiciones para determinar cuándo debe aplicarse la Directiva a los elementos de comunicación. Al configurar varias condiciones, deben cumplirse todas para que la directiva se aplique, a menos que introduzca una excepción. Por ejemplo, debe crear una directiva que se aplique si un mensaje contiene la palabra "Trade" y su tamaño es superior a 2 MB. Sin embargo, si el mensaje también contiene las palabras "aprobado por contoso Financial", la Directiva no debe aplicarse. Por lo tanto, en este caso, las tres condiciones serían las siguientes:
+Si especifica varias condiciones, Office 365 usa todas las condiciones para determinar cuándo debe aplicarse la Directiva a los elementos de comunicación. Al configurar varias condiciones, se deben cumplir todas las condiciones para que se aplique la Directiva, a menos que se especifique una excepción. Por ejemplo, necesita una directiva que se aplique si un mensaje contiene la palabra "Trade" y su tamaño es superior a 2 MB. Sin embargo, si el mensaje también contiene las palabras "aprobado por contoso Financial", la Directiva no debe aplicarse. Por lo tanto, en este caso, las tres condiciones serían las siguientes:
   
 - El **mensaje contiene cualquiera de estas palabras**, con las palabras clave "Trade"
 
@@ -173,15 +178,19 @@ Si desea reducir la cantidad de contenido que se va a revisar, puede especificar
 
 ## <a name="monitor--manage"></a>Supervisar & administrar
 
-Es fácil supervisar los resultados de las directivas de supervisión y aplicar una etiqueta de resolución. Puede ver rápidamente el estado de los elementos revisados, los usuarios y los grupos que están bajo la supervisión, así como los usuarios y grupos designados como revisores.
+Es fácil supervisar los resultados de las directivas de supervisión y aplicar una etiqueta de resolución. Puede ver rápidamente:
+
+- El estado de los elementos revisados
+- Usuarios y grupos bajo supervisión
+- Usuarios y grupos designados como revisores
 
 ### <a name="supervision-policy-dashboard"></a>Panel de directivas de supervisión
 
-Use el panel de directivas de supervisión para administrar los resultados de la Directiva de supervisión y para resolver los elementos pendientes. Este panel permite a los revisores ver los elementos que deben revisarse, realizar acciones en un elemento y revisar los resultados de los elementos revisados y reparados anteriormente para cada directiva de supervisión. Puede tener acceso al panel Directiva de supervisión en el centro de cumplimiento al **supervisar** > *la Directiva* > personalizada**abierta**.
+Use el panel de directivas de supervisión para administrar los resultados de la Directiva de supervisión y para resolver los elementos pendientes. Este panel permite a los revisores ver los elementos que se deben revisar, actuar en un elemento y revisar los resultados de los elementos revisados y resueltos anteriormente para cada directiva de supervisión. Puede tener acceso al panel Directiva de supervisión en el centro de cumplimiento al **supervisar** > *la Directiva* > personalizada**abierta**.
 
 #### <a name="dashboard-home"></a>Página principal del panel
 
-La página de **Inicio** del panel incluye varias secciones para ayudarle a tomar medidas rápidamente en sus directivas de supervisión. Aquí puede:
+La página de **Inicio** del panel tiene varias secciones para ayudarle a actuar rápidamente en sus directivas de supervisión. Aquí puede:
 
 - Revisar rápidamente los resaltados pendientes y resueltos durante la semana
 - Ver una lista de los usuarios supervisados y los grupos supervisados para la Directiva seleccionada
@@ -195,7 +204,7 @@ La pestaña **revisar** es donde los revisores clasifican y resuelven los elemen
 - Filtrar por elementos pendientes, compatibles, no compatibles y dudosos.
 - Etiquete un solo elemento como compatible, no compatible o cuestionable. También puede grabar un comentario con el elemento para ayudar a aclarar la acción de etiquetado tomada.
 - Etiquetas en masa varios elementos como compatibles, no compatibles o cuestionables. También puede grabar un comentario con varios elementos para ayudar a aclarar la acción de etiquetado que se realiza.
-- Permite ver el historial de la etiqueta de un solo elemento. Esto incluye quién resolvió el elemento, la fecha y la hora de la acción, la etiqueta de resolución y los comentarios incluidos.
+- Permite ver el historial de la etiqueta de un solo elemento. Incluye quién resolvió el elemento, la fecha y la hora de la acción, la etiqueta de resolución y los comentarios incluidos.
 - Reclasifique los elementos revisados anteriormente como compatibles, no compatibles o cuestionables. También puede grabar un comentario con uno o varios elementos para ayudar a aclarar la acción de reclasificación emprendida.
 
 #### <a name="resolved-items-tab"></a>Ficha elementos resueltos
@@ -215,8 +224,8 @@ Use los informes de supervisión para ver la actividad de revisión en el nivel 
 
 ### <a name="view-the-supervision-report"></a>Ver el informe de supervisión
 
-1. Inicie sesión en el [centro de cumplimiento](https://compliance.microsoft.com) con las credenciales de una cuenta de administrador en la organización que tenga permisos para ver informes de supervisión.
-2. Vaya a la **** \> **consola** de informes o a la **supervisión** para ver el widget supervisión de informes con un resumen de la actividad de directiva de supervisión actual.
+1. Inicie sesión en el [centro de cumplimiento](https://compliance.microsoft.com) con credenciales para una cuenta de administrador con permisos para ver informes de supervisión.
+2. Vaya a la **** \> **consola** de informes o a la **supervisión** para ver el widget supervisión de informes para ver un resumen de la actividad de la Directiva de supervisión actual.
 3. Seleccione el widget de **supervisión** para abrir la página informe detallado.
 
 > [!NOTE]
@@ -237,7 +246,7 @@ A continuación, se muestra un desglose de los valores mostrados en la columna *
 |:-----|:-----|
 | **No revisado** | Número de correos electrónicos no revisados todavía. Estos mensajes de correo electrónico están pendientes de revisión en el panel de supervisión de Office 365.
 | **Compliant** | Número de mensajes de correo electrónico revisados y marcados como compatibles. Estos mensajes aún necesitan resolución. |
-| **Questionable** | Número de correos electrónicos revisados y marcados como cuestionables. Esto actúa como una marca para otros revisores para ayudarle a comprobar si un correo electrónico necesita investigar el cumplimiento. Estos mensajes aún necesitan resolución. |
+| **Questionable** | Número de correos electrónicos revisados y marcados como cuestionables. Sirve como marca para otros revisores para ayudar a comprobar si un correo electrónico necesita investigar el cumplimiento. Estos mensajes aún necesitan resolución. |
 | **No compatible (activo)** | El número de correos electrónicos no compatibles que los revisores están investigando en este momento. |
 | **No compatible (resuelto)** | El número de correos electrónicos no compatibles que los revisores han investigado y resuelto. |
 | **Directiva de visitas** | Número total (diario) de mensajes de Exchange, Teams y orígenes de datos de terceros que coinciden con una o varias condiciones definidas en una directiva de supervisión |
@@ -245,7 +254,7 @@ A continuación, se muestra un desglose de los valores mostrados en la columna *
 | **Resuelto** | El número total de mensajes de Exchange, Teams y orígenes de datos de terceros clasificados **** como resueltos|
 
 > [!NOTE]
-> Las directivas de supervisión deben aprovisionarse primero antes de que aparezcan en este informe. Además, si se eliminan directivas, aún se muestran los datos históricos. Sin embargo, se indican como una "Directiva no existente" y la función de **exportación** no está disponible.
+> Las directivas de supervisión deben aprovisionarse antes de que aparezcan en los informes. Si se eliminan las directivas, aún se muestran los datos históricos. Sin embargo, se indican como una "Directiva no existente" y la función de **exportación** no está disponible.
 
 ## <a name="audit"></a>Las
 
@@ -258,7 +267,6 @@ Las siguientes actividades de directiva de supervisión se auditan y están disp
 | **Crear una directiva** | [New-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-supervisoryreviewpolicyv2) <br> [New-SupervisoryReviewRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/new-supervisoryreviewrule) |
 | **Editar una directiva** | [Set-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-supervisoryreviewpolicyv2) <br> [Set-SupervisoryReviewRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/set-supervisoryreviewrule) |
 | **Eliminar una directiva** | [Remove-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/remove-supervisoryreviewpolicyv2) |
-| **Ver una directiva** | [Get-SupervisoryReviewPolicyV2](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance/get-supervisoryreviewpolicyv2) |
 
 Vea actividades de auditoría en el registro de auditoría unificado o con el cmdlet de PowerShell [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog) .
 
@@ -272,4 +280,4 @@ Además de la información proporcionada en los informes y registros de supervis
 
 ## <a name="ready-to-get-started"></a>¿Está listo para empezar?
 
-Para empezar a configurar las directivas de supervisión para su organización, consulte [Configure tutela Policies](configure-supervision-policies.md).
+Para configurar directivas de supervisión para su organización, consulte [Configure tutela Policies](configure-supervision-policies.md).

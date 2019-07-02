@@ -1,5 +1,5 @@
 ---
-title: Supervisión y notificación del estado de seguridad en el centro de seguridad 365 de Microsoft
+title: Supervisión y visualización de informes en el centro de seguridad 365 de Microsoft
 description: Describe cómo el centro de seguridad 365 de Microsoft proporciona un resumen de la protección y el estado de la seguridad de un vistazo.
 keywords: seguridad, malware, Microsoft 365, M365, centro de seguridad, monitor, informe, estado
 ms.prod: w10
@@ -12,22 +12,22 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 0a0bcbde7daa79aabda30013fca2560384545feb
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 80b7bf07790b7f5cb8cf0e07acd6abb921404d6f
+ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32263132"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34852804"
 ---
-# <a name="monitor-and-report-security-status-in-microsoft-365-security-center"></a>Supervisión y notificación del estado de seguridad en el centro de seguridad 365 de Microsoft
+# <a name="monitor-and-view-reports-in-microsoft-365-security-center"></a>Supervisión y visualización de informes en el centro de seguridad 365 de Microsoft
 
 El centro de seguridad 365 de Microsoft proporciona un resumen del estado de protección y seguridad en todo el entorno de Microsoft 365.
 
-El centro de seguridad incluye una sección de **informes de & de supervisión** que incluye un host de tarjetas que abarcan una amplia variedad de áreas que los analistas de seguridad y los administradores realizan un seguimiento como parte de sus operaciones cotidianas. En la obtención de detalles, las tarjetas proporcionan informes detallados y, en algunos casos, opciones de administración.
+El centro de seguridad incluye una sección de **informes** que presenta un host de tarjetas que abarcan una amplia variedad de áreas que los analistas de seguridad y los administradores realizan un seguimiento como parte de sus operaciones cotidianas. En la obtención de detalles, las tarjetas proporcionan informes detallados y, en algunos casos, opciones de administración.
 
 ## <a name="customize-views"></a>Personalización de vistas
 
-De forma predeterminada, las tarjetas de supervisión y de informes se agrupan en las siguientes categorías:
+De forma predeterminada, las tarjetas se agrupan en las siguientes categorías:
   
 * [Identidades](monitor-and-report-identities.md) : cuentas de usuario y credenciales
 * [Datos](monitor-data.md) : contenido de documentos y correo electrónico

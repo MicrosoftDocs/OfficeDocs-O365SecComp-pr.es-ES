@@ -12,12 +12,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 37a5c6805579ecb9b03e6bd8f95562fe4c3e9521
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 1641c97e115c8dc12a0df3a0e6bba99163bae90c
+ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32261288"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34852844"
 ---
 # <a name="overview-of-the-microsoft-365-security-center"></a>Información general sobre el centro de seguridad de Microsoft 365
 
@@ -42,19 +42,19 @@ Esta información general le ayuda a mantenerse al día con las últimas activid
 El centro de seguridad 365 de Microsoft incluye:
 
 * **Inicio** : Obtenga una vista general del estado general de la seguridad de su organización.
-* **Alertas** : tenga una mayor visibilidad de todas las alertas en el entorno de Microsoft 356, incluso alertas de Microsoft Cloud App Security, Office 365 ATP, Azure ad y ATP de Windows Defender. Disponible para clientes de E3 y E5.  
-* **Supervisión de informes de &** : obtenga los detalles y la información que necesita para proteger mejor a sus usuarios, dispositivos, aplicaciones y mucho más. 
+* **Alertas** : tenga una mayor visibilidad de todas las alertas en el entorno de Microsoft 356, incluidas las alertas de Microsoft Cloud App Security, Office 365 ATP, Azure ad y ATP de Microsoft. Disponible para clientes de E3 y E5.  
+* **Informes** : obtenga los detalles y la información que necesita para proteger mejor a sus usuarios, dispositivos, aplicaciones y mucho más.
 * **Puntuación segura** : mejore su postura de seguridad general con calificación segura de Microsoft. Esta página proporciona un resumen de todas las distintas características y capacidades de seguridad que ha habilitado, e incluye recomendaciones para las áreas que deben mejorarse.
 * La **caza** : busca de forma proactiva el malware, los archivos sospechosos y las actividades en la organización de Microsoft 365.
 * **Clasificación** : Ayude a proteger la pérdida de datos agregando etiquetas para clasificar documentos, mensajes de correo electrónico, documentos, sitios y mucho más. Cuando se aplica una etiqueta (automáticamente o por el usuario), el contenido o el sitio está protegido en función de la configuración que elija. Por ejemplo, puede crear etiquetas que cifren archivos, agreguen marcado de contenido y controlen el acceso de los usuarios a sitios específicos.
 * **Directivas** : Configure las directivas para administrar dispositivos, Protéjase contra amenazas y reciba alertas sobre diversas actividades de su organización.
 * **Permisos** : administre quién en su organización tiene acceso al centro de seguridad 365 de Microsoft para ver contenido y realizar tareas. También puede asignar permisos de Microsoft 365 en el portal de Azure AD.
 
-## <a name="learn-more"></a>Más información
+## <a name="learn-more"></a>Obtener más información
 
 Explore estos temas sobre cómo supervisar, revisar y responder a sus necesidades de seguridad:
 
 * Revisión y mejora de la postura de seguridad de forma holística con [calificación segura de Microsoft](microsoft-secure-score.md)
-* [Supervisar e informar](monitoring-and-reporting.md) del estado de las identidades, los datos, los dispositivos, las aplicaciones y la infraestructura
+* [Informar](monitoring-and-reporting.md) del estado de las identidades, los datos, los dispositivos, las aplicaciones y la infraestructura
 * [Buscar de forma proactiva](hunting.md) los intentos de intrusión y la actividad de infracciones que afectan a su correo electrónico, datos, dispositivos y cuentas
 * [Comprenda las campañas y técnicas de ataque más recientes con el](latest-attack-campaigns.md) análisis de amenazas

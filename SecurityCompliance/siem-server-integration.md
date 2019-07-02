@@ -5,7 +5,7 @@ author: denisebmsft
 manager: laurawi
 audience: ITPro
 ms.topic: article
-ms.date: 10/29/2018
+ms.date: 06/17/2019
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
@@ -14,12 +14,12 @@ ms.custom:
 - Ent_Solutions
 - SIEM
 description: 'Resumen: Lea este artículo para obtener información general sobre la integración del servidor SIEM con Microsoft 365.'
-ms.openlocfilehash: cfa9c6c3ae501515f61799fdd480fc569918935f
-ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
+ms.openlocfilehash: 9138cbc395b90f50fa60bf545066c17cf26d7edf
+ms.sourcegitcommit: f2798d46acfbd56314e809cd3fe0350be807e420
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "34852694"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "35014769"
 ---
 # <a name="siem-server-integration-with-microsoft-365-services-and-applications"></a>Integración del servidor de SIEM con los servicios y aplicaciones de Microsoft 365
 
@@ -33,13 +33,13 @@ Un servidor de SIEM puede recibir datos de una amplia variedad de aplicaciones y
 
 | Servicio o aplicación de Microsoft 365 | Entradas del servidor SIEM | Recursos para obtener más información |
 | --- | --- | --- |
-| [Protección contra amenazas avanzada de Office 365](office-365-atp.md) <br/>   o   <br/>[Inteligencia sobre amenazas de Office 365](office-365-ti.md) | Registros de auditoría | [Integración de SIEM con Office 365 protección contra amenazas avanzada](siem-integration-with-office-365-ti.md) |
+| [Protección contra amenazas avanzada de Office 365](office-365-atp.md) <br/>o<br/>[Inteligencia sobre amenazas de Office 365](office-365-ti.md) | Registros de auditoría | [Integración de SIEM con Office 365 protección contra amenazas avanzada](siem-integration-with-office-365-ti.md) |
 | [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) | Integración de registros | [Integración de SIEM con Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/siem) |
-| [Office 365 Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security) | Integración de registros | [Integrar el servidor de SIEM con Cloud App Security](https://docs.microsoft.com/cloud-app-security/siem) |
 | [Protección contra amenazas de Microsoft](https://docs.microsoft.com/windows/security/threat-protection/) | Integración de registros | [Extraer alertas a las herramientas de SIEM](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-siem) |
 | [Centro de seguridad de Azure](https://docs.microsoft.com/azure/security-center/security-center-intro) (Protección contra amenazas y detección de amenazas) | Alertas | [Exportación de datos de seguridad de Azure a SIEM-configuración de canalización-vista previa](https://docs.microsoft.com/azure/security-center/security-center-export-data-to-siem) |
-| [Azure Active Directory Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/overview) | Registros de auditoría | [Integración de los registros de auditoría de Azure Active Directory](https://docs.microsoft.com/azure/security/security-azure-log-integration-ad) |
-| [Análisis de amenazas avanzadas de Azure](https://docs.microsoft.com/azure/security/azure-threat-detection) | Integración de registros | [Referencia de registro SIEM de ATA](https://docs.microsoft.com/advanced-threat-analytics/cef-format-sa) |
+|[Análisis de amenazas avanzadas de Azure](https://docs.microsoft.com/azure/security/azure-threat-detection) | Azure monitor | [Blog Usar Azure monitor para integrar con las herramientas de SIEM](https://azure.microsoft.com/blog/use-azure-monitor-to-integrate-with-siem-tools) |
+|[Azure Active Directory Identity Protection](https://docs.microsoft.com/azure/active-directory/identity-protection/overview) |Integración de registros |[Integrar las alertas de la API de seguridad de Microsoft Graph con un SIEM](https://docs.microsoft.com/graph/security-siemintegration) |
+
 
 ## <a name="audit-logging-must-be-turned-on"></a>El registro de auditoría debe estar activado
 

@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 ms.assetid: f87cb016-7876-4317-ae3c-9169b311ff8a
 description: Con el cifrado de mensajes de Office 365, su organización puede enviar y recibir mensajes de correo electrónico cifrados entre usuarios de dentro y fuera de la organización. El cifrado de mensajes de correo electrónico ayuda a garantizar que solo los destinatarios deseados puedan ver el contenido de los mensajes.
-ms.openlocfilehash: d9716d3021f4190f1679a5d387e9378b60586154
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: f6f6f59225d267d08ba20e1fdea219dc5d890ed5
+ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157592"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34852864"
 ---
 # <a name="office-365-message-encryption"></a>Cifrado de mensajes de Office 365
 
@@ -58,7 +58,7 @@ El cifrado de mensajes avanzado de Office 365 le permite crear varias plantillas
 
 El cifrado de mensajes avanzado en Office 365 ayuda a cumplir las obligaciones de cumplimiento que requieren un control más flexible del acceso del destinatario externo a los correos electrónicos cifrados. Con el cifrado avanzado de mensajes en Office 365, como administrador, puede controlar los mensajes de correo electrónico confidenciales que se comparten fuera de la organización con directivas automáticas que detectan los tipos de información confidencial (por ejemplo, PII, identificadores financieros o de salud) o palabras clave para mejorar protección al expirar el acceso a través de un portal web seguro a los correos electrónicos cifrados. Además, como administrador, puede controlar más los correos electrónicos cifrados a los que se accede externamente a través de un portal web de Office 365, revocando el acceso a un correo electrónico en cualquier momento.
 
-La revocación de mensajes y la expiración solo funcionan para los correos electrónicos que los usuarios envían a los destinatarios fuera de la organización de Office 365. Además, los destinatarios deben acceder al correo electrónico a través del portal web. Para asegurarse de que el destinatario use el portal para recibir correo electrónico, configure una plantilla de personalización de marca personalizada que aplique el contenedor. A continuación, se aplica la plantilla de personalización de marca en una regla de flujo de correo. Para obtener más información acerca del cifrado de mensajes avanzado, consulte [Office 365 Advanced Message Encryption](https://ome-advanced-message-encryption.md).
+La revocación de mensajes y la expiración solo funcionan para los correos electrónicos que los usuarios envían a los destinatarios fuera de la organización de Office 365. Además, los destinatarios deben acceder al correo electrónico a través del portal web. Para asegurarse de que el destinatario use el portal para recibir correo electrónico, configure una plantilla de personalización de marca personalizada que aplique el contenedor. A continuación, se aplica la plantilla de personalización de marca en una regla de flujo de correo. Para obtener más información acerca del cifrado de mensajes avanzado, consulte [Office 365 Advanced Message Encryption](ome-advanced-message-encryption.md).
 
 ## <a name="defining-rules-for-office-365-message-encryption"></a>Definición de reglas para el cifrado de mensajes de Office 365
 

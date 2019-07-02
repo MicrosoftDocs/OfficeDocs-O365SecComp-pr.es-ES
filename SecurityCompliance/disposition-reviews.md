@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Al crear una etiqueta de retención que conserva el contenido de Microsoft 365, puede optar por desencadenar una revisión de disposición al final del período de retención.
-ms.openlocfilehash: 6d4a8993efb3046e7f79f4e76a921921abf6d3e6
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 06b85d1ac4c8ed0527a8018129e146fee074d942
+ms.sourcegitcommit: 044003455eb36071806c9f008ac631d54c64dde6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34153432"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "35199713"
 ---
 # <a name="overview-of-disposition-reviews"></a>Información general sobre las revisiones de disposición
 
@@ -33,7 +33,7 @@ Cuando el contenido alcanza el final de su período de retención, existen vario
     
 - Devolver el contenido a los clientes o transferirlo a otra organización.
     
-Cuando se crea una etiqueta de retención en el centro de cumplimiento de Microsoft 365, el centro de seguridad de Microsoft 365 o el centro de seguridad de Office 365 &, puede optar por desencadenar una revisión de disposición al finalizar el período de retención. En una revisión de disposición:
+Cuando se crea una etiqueta de retención en el centro de cumplimiento de Microsoft 365, el centro de seguridad de Microsoft 365 o el centro de cumplimiento de & de seguridad de Office 365, puede optar por desencadenar una revisión de disposición al finalizar el período de retención. En una revisión de disposición:
   
 - Las personas que elija reciben una notificación por correo electrónico de que tienen contenido que revisar. Estos revisores pueden ser usuarios individuales, grupos de seguridad o de distribución o grupos de Office 365. Tenga en cuenta que las notificaciones se envían cada semana.
     
@@ -54,7 +54,7 @@ Cuando se crea una etiqueta de retención en el centro de cumplimiento de Micros
   
 Una revisión de disposición puede incluir contenido en buzones de Exchange, sitios de SharePoint, cuentas de OneDrive y grupos de Office 365. El contenido que espera una revisión de disposición en esas ubicaciones se elimina solo después de que un revisor elige eliminar el contenido de forma permanente.
   
-![Página disposiciones del centro de seguridad y cumplimiento](media/Retention_Dispositions_v2_page.png)
+![Página disposiciones del centro de seguridad y cumplimiento](media/Retention-Dispositions-v2-page.png)
 
 ## <a name="setting-up-the-disposition-review-by-creating-a-retention-label"></a>Configuración de la revisión de disposición mediante la creación de una etiqueta de retención
 
@@ -74,7 +74,7 @@ Cuando se notifica a un revisor por correo electrónico que el contenido está l
 
 Después de seleccionar una etiqueta de retención, la siguiente página muestra todas las disposiciones pendientes para esa etiqueta.
 
-![Opciones de disposición](media/Retention_Disposition_options_v2.png)
+![Opciones de disposición](media/Retention-Disposition-options-v2.png)
 
 A continuación, el revisor puede: 
   
@@ -118,13 +118,13 @@ En la página de **disposición pendiente** , puede ver las disposiciones pendie
     
 - La pestaña **elementos eliminados** muestra las desposiciones que se aprobaron para su eliminación durante una revisión de disposición y que ahora se encuentran en proceso de eliminación permanente. Los elementos a los que se ha aplicado una etiqueta de retención distinta o cuyo período de retención se ha ampliado como parte de una revisión no aparecerán aquí.
 
-![Pestañas de disposición](media/Retention_Disposition_tabs.png)
+![Pestañas de disposición](media/Retention-Disposition-tabs.png)
     
 ### <a name="filter-the-disposition-views"></a>Filtrar las vistas de disposición
 
 Puede filtrar estas vistas por etiqueta de retención o intervalo de tiempo. Para las disposiciones pendientes, el intervalo de tiempo se basa en la fecha de expiración. Para los elementos eliminados, el intervalo de tiempo se basa en la fecha de eliminación.
   
-![Opciones de filtro de disposición](media/Retention_filter_options.png)
+![Opciones de filtro de disposición](media/Retention-filter-options.png)
 
 ### <a name="export-the-disposition-items"></a>Exportar los elementos de disposición
 

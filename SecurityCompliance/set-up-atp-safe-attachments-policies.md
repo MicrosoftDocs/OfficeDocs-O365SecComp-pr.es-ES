@@ -1,9 +1,9 @@
 ---
-title: Configurar las directivas de datos adJuntos seguros de Office 365 ATP
+title: Configurar las directivas de datos adjuntos seguros de Office 365 ATP
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.date: 02/06/2019
 ms.service: O365-seccomp
@@ -14,15 +14,18 @@ search.appverid:
 ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 ms.collection:
 - M365-security-compliance
-description: Definir directivas de datos adJuntos seguros para proteger a su organización de archivos malintencionados en el correo electrónico.
-ms.openlocfilehash: 47587d9e189a6fcda2cac964130d0b257b4f4166
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+description: Definir directivas de datos adjuntos seguros para proteger a su organización de archivos malintencionados en el correo electrónico.
+ms.openlocfilehash: 532a4b6ab2d26506f10adb621a29718a32d52ff6
+ms.sourcegitcommit: 4fedeb06a6e7796096fc6279cfb091c7b89d484d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32266865"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34652703"
 ---
-# <a name="set-up-office-365-atp-safe-attachments-policies"></a>Configurar las directivas de datos adJuntos seguros de Office 365 ATP
+# <a name="set-up-office-365-atp-safe-attachments-policies"></a>Configurar las directivas de datos adjuntos seguros de Office 365 ATP
+
+> [!IMPORTANT]
+> Este artículo está destinado a los clientes empresariales que tienen la [protección contra amenazas avanzada de Office 365](office-365-atp.md). Si es un usuario doméstico que busca información sobre datos adjuntos seguros en Outlook, consulte [Advanced Outlook.com Security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 Los usuarios envían, reciben y comparten con regularidad datos adjuntos, como documentos, presentaciones, hojas de cálculo, etc. No siempre es fácil saber si los datos adjuntos son seguros o malintencionados solo mirando un mensaje de correo electrónico. Y lo último que desea es tener un dato malintencionado para llegar a través del cual se causan estragos en su organización. Afortunadamente, la [protección contra amenazas avanzada de Office 365](office-365-atp.md) (ATP) puede resultar útil. Puede configurar directivas de [datos adjuntos seguros de ATP](atp-safe-attachments.md) para ayudar a garantizar que su organización está protegida contra ataques de datos adjuntos de correo electrónico no seguro. 
   
@@ -30,9 +33,9 @@ Los usuarios envían, reciben y comparten con regularidad datos adjuntos, como d
   
 1. Revisión de los requisitos previos
     
-2. Configurar una directiva de datos adJuntos seguros de ATP
+2. Configurar una directiva de datos adjuntos seguros de ATP
     
-3. Obtener información sobre las opciones de directiva de datos adJuntos seguros de ATP
+3. Obtener información sobre las opciones de directiva de datos adjuntos seguros de ATP
     
 ## <a name="step-1-review-the-prerequisites"></a>Paso 1: revisar los requisitos previos
 
@@ -46,17 +49,17 @@ Los usuarios envían, reciben y comparten con regularidad datos adjuntos, como d
     |Administrador de seguridad |Centro de administración de Azure Active[https://aad.portal.azure.com](https://aad.portal.azure.com)Directory ()|
     |Administración de la organización de Exchange Online |Centro de administración de[https://outlook.office365.com/ecp](https://outlook.office365.com/ecp)Exchange () <br>o <br>  Cmdlets de PowerShell (vea [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)) |
     
-    Para obtener más información acerca de los roles y los permisos, consulte perMissions [in the Office 365 &amp; Security Compliance Center](permissions-in-the-security-and-compliance-center.md).
+    Para obtener más información acerca de los roles y los permisos, consulte Permissions [in the Office 365 &amp; Security Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 - [Obtener información sobre las opciones de directiva de datos adjuntos seguros de ATP](#step-3-learn-about-atp-safe-attachments-policy-options) (en este artículo). Algunas opciones, como las opciones supervisar o reemplazar, pueden dar lugar a un retraso de correo electrónico menor mientras se analizan los datos adjuntos. Para evitar retrasos en los mensajes, considere la posibilidad de usar la [entrega dinámica y la vista previa](dynamic-delivery-and-previewing.md).
     
 - Espere hasta 30 minutos para que la directiva nueva o actualizada se extienda a todos los centros de seguridad de Office 365.
     
-## <a name="step-2-set-up-or-edit-an-atp-safe-attachments-policy"></a>Paso 2: configurar (o editar) una directiva de datos adJuntos seguros de ATP
+## <a name="step-2-set-up-or-edit-an-atp-safe-attachments-policy"></a>Paso 2: configurar (o editar) una directiva de datos adjuntos seguros de ATP
   
 1. Vaya a [https://protection.office.com](https://protection.office.com) e inicie sesión con su cuenta profesional o educativa. 
     
-2. en el centro de navegación &amp; izquierdo de Office 365 Security Compliance Center, en **administración de amenazas**, seleccione **directiva** \> de datos adjuntos **seguros**.
+2. En el centro de navegación &amp; izquierdo de Office 365 Security Compliance Center, en **Administración de amenazas**, seleccione **Directiva** \> de datos adjuntos **seguros**.
     
 3. Si ve la opción **Activar ATP para SharePoint, OneDrive y Microsoft Teams**, le recomendamos que seleccione esta opción. Esto permitirá la [protección contra amenazas avanzada de office 365 para SharePoint, OneDrive y Microsoft Teams](atp-for-spo-odb-and-teams.md) para el entorno de Office 365. 
     
@@ -76,24 +79,24 @@ Los usuarios envían, reciben y comparten con regularidad datos adjuntos, como d
     
 6. Elija **Guardar**.
     
-Considere la posibilidad de configurar varias directivas de datos adJuntos seguros de ATP para su organización. Estas directivas se aplicarán en el orden en que aparezcan en la página de **datos adjuntos seguros de ATP** . Una vez definida o modificada una directiva, permita al menos 30 minutos para que las directivas entren en vigor en los centros de recursos de Microsoft. 
+Considere la posibilidad de configurar varias directivas de datos adjuntos seguros de ATP para su organización. Estas directivas se aplicarán en el orden en que aparezcan en la página de **datos adjuntos seguros de ATP** . Una vez definida o modificada una directiva, permita al menos 30 minutos para que las directivas entren en vigor en los centros de recursos de Microsoft. 
   
-## <a name="step-3-learn-about-atp-safe-attachments-policy-options"></a>Paso 3: información sobre las opciones de directiva de datos adJuntos seguros de ATP
+## <a name="step-3-learn-about-atp-safe-attachments-policy-options"></a>Paso 3: información sobre las opciones de directiva de datos adjuntos seguros de ATP
 
-A medida que configure las directivas de datos adJuntos seguros de ATP, podrá elegir entre varias opciones, como monitor, bloqueo, reemplazo, entrega dinámica, etc. En caso de que se haya preguntado sobre lo que hacen estas opciones, en la tabla siguiente se resumen cada uno de ellos y su efecto.
+A medida que configure las directivas de datos adjuntos seguros de ATP, podrá elegir entre varias opciones, como monitor, bloqueo, reemplazo, entrega dinámica, etc. En caso de que se haya preguntado sobre lo que hacen estas opciones, en la tabla siguiente se resumen cada uno de ellos y su efecto.
   
 |**Opción**|**Effect**|**Se usa cuando se desea:**|
 |:-----|:-----|:-----|
-|**Desactivada** <br/> |No analiza los datos adjuntos en busca de malware  <br/> No retrasa la entrega de mensajes  <br/> |Desactivar el análisis para remitentes internos, escáneres, faxes o hosts inteligentes que solo enviarán datos adjuntos conocidos y buenos  <br/> Evitar retrasos innecesarios en el correo interno de enrutamiento  <br/> **Esta opción no se recomienda para la mayoría de los usuarios. Permite activar el análisis de datos adJuntos seguros de ATP para un grupo pequeño de remitentes internos.**           |
+|**Desactivada** <br/> |No analiza los datos adjuntos en busca de malware  <br/> No retrasa la entrega de mensajes  <br/> |Desactivar el análisis para remitentes internos, escáneres, faxes o hosts inteligentes que solo enviarán datos adjuntos conocidos y buenos  <br/> Evitar retrasos innecesarios en el correo interno de enrutamiento  <br/> **Esta opción no se recomienda para la mayoría de los usuarios. Permite activar el análisis de datos adjuntos seguros de ATP para un grupo pequeño de remitentes internos.**           |
 |**Monitor** <br/> |Entrega los mensajes con datos adjuntos y, a continuación, realiza un seguimiento de lo que ocurre con malware detectado  <br/> |Ver dónde se encuentra el malware detectado en su organización  <br/> |
 |**Desbloquear** <br/> |Impide que se prosigan los mensajes con datos adjuntos de malware detectados  <br/> Envía mensajes con malware detectado a [cuarentena en Office 365](manage-quarantined-messages-and-files.md) donde un administrador o Analista de seguridad puede revisar y liberar (o eliminar) dichos mensajes  <br/> Bloquea los mensajes y datos adjuntos futuros de forma automática  <br/> |Proteger a su organización de ataques repetidos con los mismos datos adjuntos de malware  <br/> |
 |**Replace** <br/> |Quita los datos adjuntos de malware detectados  <br/> Notifica a los destinatarios que se han quitado datos adjuntos  <br/> Envía mensajes con malware detectado a [cuarentena en Office 365](manage-quarantined-messages-and-files.md) donde un administrador o Analista de seguridad puede revisar y liberar (o eliminar) dichos mensajes  <br/> |Elevar la visibilidad a los destinatarios que los datos adjuntos se quitaron debido al malware detectado  <br/> |
-|**Entrega dinámica** <br/> |Entrega los mensajes inmediatamente  <br/> Reemplaza datos adjuntos con un archivo de marcador de posición hasta que se completa la búsqueda y, a continuación, vuelve a adjuntar los datos adjuntos si no se detecta malware  <br/> Incluye funciones de vista previa de datos adjuntos para la mayoría de los PDF y archivos de Office durante el examen  <br/> Envía mensajes con malware detectado a cuarentena donde un administrador o Analista de seguridad puede revisar y liberar (o eliminar) dichos mensajes  <br/> [Obtener información sobre la vista previa y la entrega dinámica con datos adJuntos seguros de ATP](dynamic-delivery-and-previewing.md) <br/> |Evitar retrasos en los mensajes al proteger a los destinatarios de archivos malintencionados  <br/> Permitir a los destinatarios obtener una vista previa de los datos adjuntos en modo seguro mientras se lleva a cabo el análisis  <br/> |
+|**Entrega dinámica** <br/> |Entrega los mensajes inmediatamente  <br/> Reemplaza datos adjuntos con un archivo de marcador de posición hasta que se completa la búsqueda y, a continuación, vuelve a adjuntar los datos adjuntos si no se detecta malware  <br/> Incluye funciones de vista previa de datos adjuntos para la mayoría de los PDF y archivos de Office durante el examen  <br/> Envía mensajes con malware detectado a cuarentena donde un administrador o Analista de seguridad puede revisar y liberar (o eliminar) dichos mensajes  <br/> [Obtener información sobre la vista previa y la entrega dinámica con datos adjuntos seguros de ATP](dynamic-delivery-and-previewing.md) <br/> |Evitar retrasos en los mensajes al proteger a los destinatarios de archivos malintencionados  <br/> Permitir a los destinatarios obtener una vista previa de los datos adjuntos en modo seguro mientras se lleva a cabo el análisis  <br/> |
 |**Habilitar redireccionamiento** <br/> |Se aplica cuando se elige la opción supervisar, bloquear o reemplazar  <br/> Envía datos adjuntos a una dirección de correo electrónico especificada en la que los administradores o analistas de seguridad pueden investigar  <br/> |Permitir que los administradores de seguridad y analistas investiguen datos adjuntos sospechosos  <br/> |
    
 ## <a name="next-steps"></a>Pasos siguientes
 
-Una vez que se hayan implementado las directivas de datos adJuntos seguros de ATP, puede ver cómo está trabajando ATP para su organización consultando los informes. Vea los siguientes recursos para obtener más información:
+Una vez que se hayan implementado las directivas de datos adjuntos seguros de ATP, puede ver cómo está trabajando ATP para su organización consultando los informes. Vea los siguientes recursos para obtener más información:
 - [Ver informes para la protección contra amenazas avanzada de Office 365](view-reports-for-atp.md)
 - [Usar el explorador en el &amp; centro de seguridad y cumplimiento](use-explorer-in-security-and-compliance.md)
 

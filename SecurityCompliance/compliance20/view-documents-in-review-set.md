@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: ''
-ms.openlocfilehash: 0e986510ca49cfbfd77ab6f4d43220df1ebf35c5
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: d1a51e2496bd57d83e1baf78d82611c406a10e26
+ms.sourcegitcommit: 6bb40cf53374eaaae8da0a469f0248b1163184a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34151552"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "34767371"
 ---
 # <a name="view-documents-in-a-review-set"></a>Ver documentos de un conjunto de revisión
 
@@ -38,14 +38,14 @@ Este panel puede activarse o desactivarse para mostrar varios metadatos asociado
 
 ## <a name="native-view"></a>Vista nativa
 
-El visor nativo muestra la vista más completa de un documento. Admite cientos de tipos de archivo y está destinado a mostrar la experiencia más auténtica posible a la experiencia nativa. Para los archivos de Microsoft Office, por ejemplo, el visor aprovecha Office online para mostrar contenido como comentarios del documento, fórmulas de Excel, filas o columnas ocultas, notas de PowerPoint, etc. Para obtener más información acerca de los visores de Office Online, \[visite aquí necesita vínculo\]
+El visor nativo muestra la vista más completa de un documento. Admite cientos de tipos de archivo y está destinado a mostrar la experiencia más auténtica posible a la experiencia nativa. Para los archivos de Microsoft Office, el visor usa la versión Web de las aplicaciones de Office para mostrar contenido como comentarios del documento, fórmulas de Excel, filas o columnas ocultas y notas de PowerPoint.
 
 ![Vista nativa
 ](../media/Reviewimage3.png)
 
 ## <a name="text-view"></a>Vista de texto
 
-El visor de texto proporciona una vista del texto extraído de un archivo. Ignora las imágenes incrustadas y el formato, pero será una vista eficaz si un usuario intenta comprender el contenido rápidamente. La vista de texto también incluye otras características:
+El visor de texto proporciona una vista del texto extraído de un archivo. Ignora las imágenes incrustadas y el formato, pero es muy eficaz si está intentando comprender el contenido rápidamente. La vista de texto también incluye estas características:
 
   - El contador de línea hace que sea más fácil hacer referencia a partes específicas de un documento
 

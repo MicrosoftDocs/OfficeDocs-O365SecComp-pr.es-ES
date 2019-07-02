@@ -1,5 +1,5 @@
 ---
-title: Crear una búsqueda para recopilar datos
+title: Create a search
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -14,24 +14,24 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 360ba6a67d43a0b78b1104ae64885697009bb222
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 1aa4ce6e406e4b3a3b72b9d93f651416b1fc65f9
+ms.sourcegitcommit: 803baca9f99a6691fb41a3308e799752e4d8f20c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155112"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "35222254"
 ---
-# <a name="create-a-search-to-collect-data"></a>Crear una búsqueda para recopilar datos
+# <a name="create-a-search"></a>Create a search
 
 En la ficha **búsquedas** en su caso, puede crear una nueva búsqueda haciendo clic en **nueva búsqueda** y siguiendo el asistente.
 
-## <a name="name-your-search-and-give-description"></a>Asigne un nombre a la búsqueda y proporcione una descripción
+## <a name="name-your-search-and-give-it-a-description"></a>Asigne un nombre a la búsqueda y dele una descripción
 
 Cada búsqueda con un caso debe tener un nombre único. Opcionalmente, puede proporcionar una descripción para la búsqueda. 
 
-## <a name="define-your-conditions"></a>Definir las condiciones
+## <a name="define-your-search-query-and-conditions"></a>Definir la consulta y las condiciones de búsqueda
 
-Puede definir las condiciones para la búsqueda con las tarjetas de condición predefinidas o con el lenguaje de consulta de palabras clave (KQL). Para obtener más información, vea [crear consultas de búsqueda](building-search-queries.md).
+Puede definir las palabras clave Query y las condiciones de la búsqueda con las tarjetas de condición predefinidas o con el lenguaje de consulta de palabras clave (KQL). Para obtener más información, vea [crear consultas de búsqueda](building-search-queries.md).
 
 ## <a name="choose-the-custodians-to-search-from"></a>Elegir los custodios donde buscar
 

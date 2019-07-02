@@ -3,7 +3,7 @@ title: Configurar y descargar un informe personalizado en el centro de &amp; seg
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.audience: ITPro
+audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
@@ -14,12 +14,12 @@ ms.assetid: 1a7be622-f6a5-4ce1-a343-f249475334f6
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo configurar y descargar un informe con un intervalo de fechas personalizado y filtros en el &amp; centro de seguridad y cumplimiento.
-ms.openlocfilehash: 912dfb43a7fd146f4fb00eb68a7d1004db81466c
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 5e0d6e06be4589f7da837d5e0c2a6f883643ffdb
+ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32264372"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "34077796"
 ---
 # <a name="set-up-and-download-a-custom-report-in-the-security-amp-compliance-center"></a>Configurar y descargar un informe personalizado en el centro de &amp; seguridad y cumplimiento
 

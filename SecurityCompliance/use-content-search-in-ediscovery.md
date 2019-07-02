@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 55f31488-288a-473a-9b9e-831a11e3711a
 description: 'Use un script de PowerShell para crear una búsqueda de exhibición de documentos electrónicos local en Exchange online en función de una búsqueda creada en el centro de seguridad & cumplimiento. '
-ms.openlocfilehash: d021836a735d5c5dd12124e16e348729d88e6022
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: f3d5eb76dfa91334bccae42e0ddb66a71f739a6f
+ms.sourcegitcommit: 044003455eb36071806c9f008ac631d54c64dde6
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157982"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "35199827"
 ---
 # <a name="use-content-search-in-your-ediscovery-workflow"></a>Usar Búsqueda de contenido en el flujo de trabajo de eDiscovery
 
@@ -33,14 +33,14 @@ En este tema se incluye un script que puede ejecutar para crear una búsqueda de
 
 ## <a name="step-1-create-a-content-search-to-search-all-mailboxes-in-your-organization"></a>Paso 1: Crear una Búsqueda de contenido para todos los buzones de la organización
 
-El primer paso consiste en usar el centro de seguridad & cumplimiento (o PowerShell de & de seguridad del centro de cumplimiento) para crear una búsqueda de contenido que busque en todos los buzones de la organización. No existe un límite para el número de buzones de una búsqueda de contenido. Especifique una consulta de palabras clave adecuada (o una consulta de los tipos de información confidencial) para que la búsqueda devuelva solo los buzones de origen relevantes para la investigación. Si es necesario, restrinja la consulta de búsqueda para limitar el ámbito de los resultados de la búsqueda y los buzones de origen devueltos.
+El primer paso consiste en usar el centro de seguridad & cumplimiento (o PowerShell del centro de seguridad & cumplimiento) para crear una búsqueda de contenido que busque en todos los buzones de la organización. No existe un límite para el número de buzones de una búsqueda de contenido. Especifique una consulta de palabras clave adecuada (o una consulta de los tipos de información confidencial) para que la búsqueda devuelva solo los buzones de origen relevantes para la investigación. Si es necesario, restrinja la consulta de búsqueda para limitar el ámbito de los resultados de la búsqueda y los buzones de origen devueltos.
   
 > [!NOTE]
 > Si la búsqueda de contenido de origen no devuelve ningún resultado, no se creará un eDiscovery local al ejecutar el script en el paso 3. Revise la consulta de búsqueda y, después, vuelva a ejecutar la búsqueda de contenido para mostrar los resultados de la búsqueda. 
   
 ### <a name="use-the-security--compliance-center-to-search-all-mailboxes"></a>Usar el Centro de seguridad y cumplimiento para buscar en todos los buzones
 
-1. [Vaya al centro de seguridad _AMP_ cumplimiento](go-to-the-securitycompliance-center.md). 
+1. [Vaya al centro de seguridad & cumplimiento](go-to-the-securitycompliance-center.md). 
     
 2.  > Haga **** clic en buscar**contenido**búsqueda y, a continuación, haga clic en **nuevo** ![icono](media/O365-MDM-CreatePolicy-AddIcon.gif)agregar nuevo.
     
@@ -56,9 +56,9 @@ El primer paso consiste en usar el centro de seguridad & cumplimiento (o PowerSh
     
 7.  Si es necesario, refine la consulta de búsqueda para restringir el alcance de los resultados de la búsqueda y, a continuación, reinicie la búsqueda. 
     
-### <a name="use-security--compliance-center-powershell-to-search-all-mailboxes"></a>Usar el centro de seguridad & PowerShell para buscar en todos los buzones
+### <a name="use-security--compliance-center-powershell-to-search-all-mailboxes"></a>Usar el PowerShell del centro de cumplimiento de & de seguridad para buscar en todos los buzones
 
-También puede usar el cmdlet **New-ComplianceSearch** para buscar en todos los buzones de la organización. El primer paso consiste en [conectar con el PowerShell del centro de cumplimiento de & de seguridad](https://go.microsoft.com/fwlink/p/?LinkID=627084).
+También puede usar el cmdlet **New-ComplianceSearch** para buscar en todos los buzones de la organización. El primer paso consiste en [conectar con el PowerShell del centro de seguridad & cumplimiento](https://go.microsoft.com/fwlink/p/?LinkID=627084).
   
 Este es un ejemplo del uso de PowerShell para buscar en todos los buzones de la organización. La consulta de búsqueda devuelve todos los mensajes enviados entre el 1 de enero de 2015 y el 30 de junio de 2015 y que contienen la frase "informe financiero" en la línea del asunto. El primer comando crea la búsqueda y el segundo comando la ejecuta. 
   
@@ -110,7 +110,7 @@ Para ayudarle a crear una búsqueda de contenido con un máximo de 1.000 buzones
   "Number of mailboxes that have search hits: " + $mailboxes.Count
   ```
 
-2. En Security & Compliance Center PowerShell, vaya a la carpeta donde se encuentre el script creado en el paso anterior y ejecute el script; por ejemplo:
+2. En Security & PowerShell del centro de cumplimiento, vaya a la carpeta donde se encuentre el script creado en el paso anterior y ejecute el script; por ejemplo:
     
     ```
     .\SourceMailboxes.ps1
@@ -143,7 +143,7 @@ El paso siguiente es conectar Windows PowerShell al centro de seguridad & cumpli
     .\ConnectEXO-CC.ps1
     ```
 
-¿Cómo se sabe si se ha completado correctamente? Después de ejecutar el script, los cmdlets del centro de seguridad de & cumplimiento y Exchange Online se importan a la sesión local de PowerShell. Si no se muestra ningún error, la conexión se habrá establecido correctamente. Una prueba rápida es ejecutar un cmdlet del centro de cumplimiento de & de seguridad (por ejemplo, **install-UnifiedCompliancePrerequisite** ) y un cmdlet de Exchange Online, como **Get-Mailbox**. 
+¿Cómo se sabe si se ha completado correctamente? Después de ejecutar el script, los cmdlets del centro de seguridad & cumplimiento y Exchange Online se importan a la sesión local de PowerShell. Si no se muestra ningún error, la conexión se habrá establecido correctamente. Una prueba rápida es ejecutar un cmdlet del centro de cumplimiento de & de seguridad (por ejemplo, **install-UnifiedCompliancePrerequisite** ) y un cmdlet de Exchange Online, como **Get-Mailbox**. 
   
 ## <a name="step-3-run-the-script-to-create-an-in-place-ediscovery-search-from-the-content-search"></a>Paso 3: Ejecutar el script para crear una búsqueda de eDiscovery local a partir de la búsqueda de contenido
 
@@ -266,7 +266,7 @@ Después de crear e iniciar la búsqueda de exhibición de documentos electróni
 
 1. In the EAC, go to **Compliance management** \> **In-Place eDiscovery &amp; Hold**.
     
-2. En la vista de lista, seleccione la búsqueda de exhibición de documentos electrónicos local que creó en el paso 3 y, a continuación](media/O365_MDM_CreatePolicy_EditIcon.gif), haga clic en **Editar** ![icono de edición.
+2. En la vista de lista, seleccione la búsqueda de exhibición de documentos electrónicos local que creó en el paso 3 y, a continuación](media/O365-MDM-CreatePolicy-EditIcon.gif), haga clic en **Editar** ![icono de edición.
     
 3. En la página **Conservación local**, active la casilla **Pausar el contenido que coincida con la consulta de búsqueda en los buzones seleccionados** y después seleccione una de las siguientes opciones: 
     

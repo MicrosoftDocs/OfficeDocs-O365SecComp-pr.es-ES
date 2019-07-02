@@ -1,6 +1,6 @@
 ---
 title: Puntuación de seguridad de Microsoft
-description: Describe la puntuación segura de 365 de Microsoft, cómo se calculan los detalles y qué administradores de seguridad pueden esperar usarlos.
+description: Describe la puntuación segura de Microsoft en el centro de seguridad 365 de Microsoft, cómo se calculan los detalles y qué administradores de seguridad pueden esperar si lo usan.
 keywords: seguridad, malware, Microsoft 365, M365, calificación segura, centro de seguridad, acciones de mejora
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -15,14 +15,17 @@ ms.topic: article
 search.appverid:
 - MOE150
 - MET150
-ms.openlocfilehash: 1c47ec8e75fb712900fd1e459b7cfd73bb071ac4
-ms.sourcegitcommit: 1021ab534b3bc3c8684e42f67d11711f6765567e
+ms.openlocfilehash: 27a9d137bde0dd23be8824d94a25364f89706563
+ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "34334548"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34852784"
 ---
 # <a name="microsoft-secure-score"></a>Puntuación de seguridad de Microsoft
+
+>[!IMPORTANT]
+>Parte de la información se refiere a un producto prelanzamiento que puede modificarse de forma sustancial antes de su lanzamiento comercial. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 Con la puntuación segura de Microsoft en el centro de seguridad 365 de Microsoft, puede tener mayor visibilidad y control sobre la postura de seguridad de su organización. Desde un panel centralizado, puede supervisar y mejorar la seguridad de las identidades, los datos, las aplicaciones, los dispositivos y la infraestructura de Microsoft 365.
 
@@ -42,13 +45,13 @@ Actualmente, para ver la puntuación segura de Microsoft, debe tener asignado un
 
 ## <a name="rich-experiences--additional-security-recommendations"></a>Experiencias enriquecidas & recomendaciones de seguridad adicionales
 
-En la puntuación segura de Microsoft, hemos agregado recomendaciones de Azure AD, Intune y Cloud App Security con las recomendaciones del centro de seguridad de Azure y ATP de Windows Defender próximamente. También hemos agregado más recomendaciones de seguridad de Office 365. Con información adicional y una mayor visibilidad en un conjunto más amplio de productos y servicios de Microsoft, puede confiar en la administración de los informes sobre el estado de seguridad de la organización. También puede obtener su puntuación mediante la [API de Microsoft Graph](https://docs.microsoft.com/graph/api/resources/securescores?view=graph-rest-beta).
+En la puntuación segura de Microsoft, hemos agregado recomendaciones de Azure AD, Intune y Cloud App Security con las recomendaciones de Azure Security Center y Microsoft defender ATP disponibles próximamente. También hemos agregado más recomendaciones de seguridad de Office 365. Con información adicional y una mayor visibilidad en un conjunto más amplio de productos y servicios de Microsoft, puede confiar en la administración de los informes sobre el estado de seguridad de la organización. También puede obtener su puntuación mediante la [API de Microsoft Graph](https://docs.microsoft.com/graph/api/resources/securescores?view=graph-rest-beta).
 
 Para ayudarle a la información que necesita con mayor rapidez, las recomendaciones de Microsoft se organizan en grupos:
 
 * Identidad (estado de protección de las cuentas y roles de Azure AD)
 * Datos (estado de protección de los documentos de Office 365)
-* Dispositivo (estado de protección de los dispositivos; Las acciones de mejora de ATP de Windows Defender estarán disponibles próximamente)
+* Dispositivo (estado de protección de los dispositivos; Las acciones de mejora de ATP de Microsoft defender estarán disponibles próximamente)
 * Aplicación (estado de protección de las aplicaciones en la nube y el correo electrónico)
 * Infraestructura (estado de protección de los recursos de Azure; próximamente)
 
@@ -81,11 +84,11 @@ Al hacer clic en una acción de mejora, aparece una volar hacia fuera. Para comp
 
 Puede ver un gráfico de la puntuación de su organización con el tiempo en la ficha **historial** . Esta vista incluye la media global, la media de la industria y un recuento de asientos similar, junto con todas las acciones realizadas en el intervalo de tiempo seleccionado. También puede personalizar un intervalo de fechas y filtrar por categoría.
 
-La puntuación se calcula una vez al día (alrededor de 1:00 A.M. PST). Si realiza un cambio en una acción medida, la puntuación se actualizará automáticamente el día siguiente. También es importante tener en cuenta que otros portales muestran partes de la puntuación segura de Microsoft (como el centro de seguridad de Windows Defender). Si completa una acción de mejora y la puntuación aumenta en estos portales, la puntuación actualizada puede tardar hasta 24 horas en mostrarse en el centro de seguridad de Microsoft 365.  
+La puntuación se calcula una vez al día (alrededor de 1:00 A.M. PST). Si realiza un cambio en una acción medida, la puntuación se actualizará automáticamente el día siguiente. También es importante tener en cuenta que otros portales muestran partes de la puntuación segura de Microsoft (como el centro de seguridad de Microsoft defender). Si completa una acción de mejora y la puntuación aumenta en estos portales, la puntuación actualizada puede tardar hasta 24 horas en mostrarse en el centro de seguridad de Microsoft 365.  
 
-## <a name="how-controls-are-scored"></a>Cómo se puntuan los controles
+## <a name="how-improvement-actions-are-scored"></a>Cómo se puntuan las acciones de mejora
 
-Los controles se pueden puntuar de dos formas. Algunas se puntuan de una manera binaria: obtiene un 100% de la puntuación si tiene la característica o la configuración configurada según nuestra recomendación. Otras calificaciones se calculan como un porcentaje de la configuración total. Por ejemplo, si los Estados de la recomendación de mejora le proporcionarán 30 puntos si protege a todos los usuarios con el MFA y solo tiene 5 de 100 usuarios totales protegidos, se le asignará una puntuación parcial de 2 puntos (5 protegidos/100 en total * 30 máx PTS = puntuación parcial de 2 PTO) . 
+La mayoría se puntuan en binario: obtiene el 100% de los puntos si implementa la acción de mejora, como la creación de una nueva Directiva o la activación de una configuración específica. Para otras acciones de mejora, los puntos se dan como un porcentaje de la configuración total. Por ejemplo, si los Estados de acción de mejora obtienen 30 puntos si protege a todos los usuarios con autenticación multifactor y solo tiene 5 de 100 usuarios totales protegidos, se le asignará una puntuación parcial de unos 2 puntos (5 protegidos/100 en total * 30 máximo pts = 2)  PTS puntuación parcial).
 
 ## <a name="risk-awareness"></a>Conocimiento de riesgos
 
@@ -93,4 +96,4 @@ La puntuación segura de Microsoft es un resumen numérico de su postura de segu
 
 ## <a name="we-want-to-hear-from-you"></a>Queremos conocer su opinión
 
-Si tiene algún problema, háganoslo saber mediante la publicación de la comunidad de [seguridad, privacidad _AMP_ cumplimiento](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) . Estamos supervisando la comunidad y le proporcionaremos ayuda.
+Si tiene algún problema, háganoslo saber mediante la publicación de la comunidad de [seguridad, privacidad & cumplimiento](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) . Estamos supervisando la comunidad y le proporcionaremos ayuda.

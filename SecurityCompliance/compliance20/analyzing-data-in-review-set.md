@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: cfed07d473f2af367de4cb2e9fe924a29e4123cd
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: b331bba76f45a11a4d1c8c0552b27759cf49608a
+ms.sourcegitcommit: e323610df2df71c84f536e8a38650d33d8069e41
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155212"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34703813"
 ---
 # <a name="analyze-data-in-a-review-set-in-advanced-ediscovery"></a>Analizar datos en un conjunto de revisión en eDiscovery avanzado
 
@@ -39,7 +39,7 @@ Para analizar los datos de un conjunto de revisión:
 
 3. Haga clic en **administrar conjunto de revisiones**.
 
-4. Haga clic en **analizar**.
+4. Haga clic en **ejecutar análisis para el conjunto de revisión**.
 
 Puede comprobar el progreso del análisis en la ficha **trabajos** del caso.
 
@@ -53,7 +53,7 @@ Para ver un informe de análisis de un conjunto de revisión:
 
 2. Haga clic en **administrar conjunto de revisiones**.
 
-3. Haga clic en **Informe**.
+3. Haga clic en **Ver informe**.
 
 El informe tiene cuatro componentes del análisis:
 

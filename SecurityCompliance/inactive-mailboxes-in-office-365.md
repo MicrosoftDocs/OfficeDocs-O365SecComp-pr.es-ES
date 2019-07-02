@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 1fbd74e8-7a60-4157-afe8-fe79f05d2038
 description: Obtenga información sobre cómo conservar el contenido de los buzones de correo para los antiguos empleados al convertir el buzón en un buzón inactivo. Para ello, puede colocar el buzón en retención por juicio o aplicar una directiva de retención de Office 365 al buzón y, a continuación, quitar la cuenta de Office 365 correspondiente.
-ms.openlocfilehash: 58bcc888af0d1ae92cf9d86e116fe287e7c2316c
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: acfe0a3d8f3865cf0e30a938970235bf31dfbce4
+ms.sourcegitcommit: 6bb40cf53374eaaae8da0a469f0248b1163184a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152722"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "34767351"
 ---
 # <a name="overview-of-inactive-mailboxes-in-office-365"></a>Información general sobre los buzones inactivos en Office 365
 
@@ -39,11 +39,11 @@ Pero si su organización necesita conservar el contenido de los buzones de corre
   
 ## <a name="inactive-mailboxes-and-office-365-retention-policies"></a>Buzones de correo inactivos y directivas de retención de 365 de Office
 
-Además de la retención por juicio, el uso de la nueva característica de la Directiva de retención de Office 365 en el centro de seguridad & cumplimiento es otra forma de poner un buzón inactivo. Para usar una directiva de retención para crear un buzón inactivo: 
+Además de la retención por juicio, el uso de la nueva característica de la Directiva de retención de Office 365 del centro de seguridad & cumplimiento es otra forma de poner un buzón inactivo. Para usar una directiva de retención para crear un buzón inactivo: 
   
-- Debe aplicarse a los buzones de correo de Exchange o a las ubicaciones de Skype empresarial (porque el contenido relacionado con Skype se almacena en el buzón de correo del usuario). 
-    
 - Debe configurarse para conservar contenido o conservar y, a continuación, eliminar el contenido. Si se configura una directiva de retención para que solo elimine contenido, un buzón al que se aplica la Directiva no se desactivará cuando se elimine el buzón.
+
+- Debe aplicarse a los buzones de correo de Exchange o a las ubicaciones de Skype empresarial (porque el contenido relacionado con Skype se almacena en el buzón de correo del usuario). 
     
 - Puede estar basada en consultas para que conserve solo los elementos que coinciden con una consulta de búsqueda. 
     
@@ -57,7 +57,7 @@ Puede considerar la posibilidad de crear una directiva de retención de Office 3
     
 - Es una buena forma de identificar buzones inactivos, ya que la Directiva de retención solo se aplicará a los buzones inactivos.
     
-- Podrá identificar rápidamente la Directiva de retención que está asignada a los buzones inactivos en su organización. Esto hará que sea más fácil cambiar la configuración de retención (o eliminación) si es necesario. También facilitará la eliminación permanente de un buzón inactivo, ya que sólo se puede quitar de la Directiva mediante el centro de seguridad & cumplimiento. De lo contrario, tiene que usar Exchange Online PowerShell para quitar una retención por juicio de un buzón inactivo o usar PowerShell del centro de cumplimiento de & de seguridad para excluir un buzón inactivo de una directiva de retención de Office 365 de toda la organización.
+- Podrá identificar rápidamente la Directiva de retención que está asignada a los buzones inactivos en su organización. Esto hará que sea más fácil cambiar la configuración de retención (o eliminación) si es necesario. También facilitará la eliminación permanente de un buzón inactivo, ya que sólo se puede quitar de la Directiva mediante el centro de seguridad & cumplimiento. De lo contrario, debe usar Exchange Online PowerShell para quitar una retención por juicio de un buzón inactivo o usar el PowerShell del centro de cumplimiento de & de seguridad para excluir un buzón inactivo de una directiva de retención de Office 365 de toda la organización.
     
 - Si crea una directiva de retención de Office 365 específica para buzones inactivos, puede Agregar un máximo de 1.000 buzones de correo a la Directiva. Si es una organización de gran tamaño, es posible que tenga que crear más de una directiva de retención de Office 365 para usarla para los buzones inactivos.
 
@@ -66,13 +66,13 @@ Puede considerar la posibilidad de crear una directiva de retención de Office 3
   
 ## <a name="inactive-mailboxes-and-ediscovery-case-holds"></a>Buzones inactivos y casos de exhibición de documentos electrónicos
 
-Si una retención asociada a un caso de exhibición de documentos electrónicos en el centro de cumplimiento de seguridad & se coloca en un buzón y, a continuación, se elimina el buzón o la cuenta de Office 365 del usuario, el buzón se convertirá en un buzón inactivo. Sin embargo, no se recomienda usar suspensiones de casos de exhibición de documentos electrónicos para convertir un buzón en inactivo. Esto se debe a que los casos de eDiscovery están pensados para casos específicos y de tiempo limitado relacionados con problemas legales. En algún momento, es probable que finalice un caso legal y se quitarán las suspensiones asociadas al caso y se cerrará el caso de exhibición de documentos electrónicos. De hecho, si una retención que se coloca en un buzón inactivo está asociada a un caso de exhibición de documentos electrónicos y, a continuación, se suelta la retención o el caso de exhibición de documentos electrónicos se cierra (o se elimina), el buzón inactivo se eliminará permanentemente. Además, no puede crear una suspensión de eDiscovery basada en tiempo. Esto significa que el contenido de un buzón inactivo se conservará indefinidamente o hasta que se quite la retención y se elimine el buzón inactivo. Por lo tanto, se recomienda usar una retención por juicio o una directiva de retención de Office 365 para los buzones inactivos.
+Si una retención asociada a un caso de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento se coloca en un buzón y, a continuación, se elimina el buzón o la cuenta de Office 365 del usuario, el buzón se convertirá en un buzón inactivo. Sin embargo, no se recomienda usar suspensiones de casos de exhibición de documentos electrónicos para convertir un buzón en inactivo. Esto se debe a que los casos de eDiscovery están pensados para casos específicos y de tiempo limitado relacionados con problemas legales. En algún momento, es probable que finalice un caso legal y se quitarán las suspensiones asociadas al caso y se cerrará el caso de exhibición de documentos electrónicos. De hecho, si una retención que se coloca en un buzón inactivo está asociada a un caso de exhibición de documentos electrónicos y, a continuación, se suelta la retención o el caso de exhibición de documentos electrónicos se cierra (o se elimina), el buzón inactivo se eliminará permanentemente. Además, no puede crear una suspensión de eDiscovery basada en tiempo. Esto significa que el contenido de un buzón inactivo se conservará indefinidamente o hasta que se quite la retención y se elimine el buzón inactivo. Por lo tanto, se recomienda usar una retención por juicio o una directiva de retención de Office 365 para los buzones inactivos.
   
 Para obtener más información sobre los casos y las suspensiones de eDiscovery, vea [casos de eDiscovery](ediscovery-cases.md).
   
 ## <a name="inactive-mailboxes-and-office-365-labels"></a>Buzones de correo inactivos y etiquetas de Office 365
 
-Las etiquetas de Office 365 ayudan a clasificar los datos de correo electrónico de su organización para el gobierno y aplicar reglas de retención basadas en esa clasificación. Una etiqueta puede aplicarse a un elemento de correo electrónico manualmente por los usuarios o automáticamente por los administradores, y un elemento de correo electrónico solo puede tener asignada una etiqueta única. Si un único elemento de correo electrónico del buzón de un usuario tiene asignada una etiqueta y se elimina el buzón o la cuenta de Office 365 del usuario, el buzón se convertirá en un buzón inactivo. Al igual que ocurre con las suspensiones de casos de eDiscovery, no se recomienda usar etiquetas para convertir un buzón en inactivo. En su lugar, le recomendamos que use una retención por juicio o una directiva de retención de Office 365. Tenga en cuenta que, en el caso de las etiquetas, es posible que no se dé cuenta de que se ha aplicado una etiqueta a un elemento de correo electrónico y, a continuación, se ha realizado un buzón inactivo al eliminar la cuenta del usuario. 
+Las etiquetas de Office 365 ayudan a clasificar los datos de correo electrónico de su organización para el gobierno y aplicar reglas de retención basadas en esa clasificación. Una etiqueta puede aplicarse a un elemento de correo electrónico manualmente por los usuarios o automáticamente por los administradores, y un elemento de correo electrónico solo puede tener asignada una etiqueta única. Si un único elemento de correo electrónico del buzón de un usuario tiene asignada una etiqueta (y está configurada para conservar o conservar y, a continuación, elimina el elemento) y se elimina el buzón o la cuenta de Office 365 del usuario, el buzón se convertirá en un buzón inactivo. Al igual que ocurre con las suspensiones de casos de eDiscovery, no se recomienda usar etiquetas para convertir un buzón en inactivo. En su lugar, le recomendamos que use una retención por juicio o una directiva de retención de Office 365. Tenga en cuenta que, en el caso de las etiquetas, es posible que no se dé cuenta de que se ha aplicado una etiqueta a un elemento de correo electrónico y, a continuación, se ha realizado un buzón inactivo al eliminar la cuenta del usuario. 
   
 Para obtener más información acerca de las etiquetas, vea [información general sobre las etiquetas en Office 365](labels.md).
   
@@ -90,10 +90,10 @@ En la tabla siguiente se resume el proceso de creación de un buzón inactivo pa
   
 |**Para...**|**Haga esto...**|**Resultado**|
 |:-----|:-----|:-----|
-|Conservar el contenido del buzón indefinidamente después de que un empleado abandone la organización  <br/> | Coloque el buzón en retención por juicio o aplique una directiva de retención de Office 365 al buzón.  <br/>  No especifique una duración de retención para la retención por juicio o no configure la Directiva de retención de Office 365 para eliminar elementos; como alternativa, puede usar una directiva de retención que retenga elementos para siempre.  <br/>  Quite la cuenta de Office 365 del usuario  <br/> |Todo el contenido del buzón inactivo, incluidos los elementos de la carpeta elementos recuperables, se conserva indefinidamente.  <br/> |
+|Conservar el contenido del buzón indefinidamente después de que un empleado abandone la organización  <br/> | Coloque el buzón en retención por juicio o aplique una directiva de retención de Office 365 (configurada para conservar el contenido) al buzón.  <br/>  No especifique una duración de retención para la retención por juicio o no configure la Directiva de retención de Office 365 para eliminar elementos; como alternativa, puede usar una directiva de retención que retenga elementos para siempre.  <br/>  Quite la cuenta de Office 365 del usuario  <br/> |Todo el contenido del buzón inactivo, incluidos los elementos de la carpeta elementos recuperables, se conserva indefinidamente.  <br/> |
 |Conservar el contenido de los buzones de correo durante un período específico después de que un empleado abandone la organización y, a continuación, elimínelo  <br/> | Aplique una directiva de retención de Office 365 al buzón.  <br/>  Configure la Directiva de retención para conservar y, a continuación, elimine los elementos cuando expire el período de retención.  <br/>  Quite la cuenta de Office 365 del usuario  <br/> |Cuando expira el período de retención de un elemento de buzón de correo, el elemento se mueve a la carpeta elementos recuperables y, a continuación, se elimina de forma permanente (purga) del buzón inactivo cuando expira el período de retención de elementos eliminados (para buzones de Exchange). El período de retención de la Directiva de retención de Office 365 se puede configurar en función de la fecha original en que se ha recibido o creado un elemento de buzón, o bien cuando se modificó por última vez.  <br/> |
    
-**Nota:** Si ya se ha realizado una retención por juicio en un buzón o si ya se ha aplicado una directiva de retención de Office 365, todo lo que tiene que hacer es eliminar la cuenta de usuario de Office 365 correspondiente para crear un buzón inactivo. 
+**Nota:** Si ya se ha realizado una retención por juicio en un buzón o si una directiva de retención de Office 365 (que está configurada para conservar o conservar y, a continuación, eliminar contenido) ya se ha aplicado al buzón, todo lo que tiene que hacer es eliminar la cuenta de usuario de Office 365 correspondiente para Cree un buzón inactivo. 
   
 ## <a name="managing-inactive-mailboxes"></a>Administrar buzones inactivos
 

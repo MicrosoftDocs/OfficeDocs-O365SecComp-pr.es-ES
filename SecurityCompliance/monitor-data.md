@@ -1,5 +1,5 @@
 ---
-title: Supervisión e informes de datos en Microsoft 365 Security
+title: Supervisión de datos e informes en el centro de seguridad 365 de Microsoft
 description: Describe cómo puede realizar un seguimiento de la actividad del usuario que podría llevar a la revelación de datos no autorizados.
 keywords: seguridad, malware, Microsoft 365, M365, centro de seguridad, monitor, informe, datos
 ms.prod: w10
@@ -12,16 +12,16 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.openlocfilehash: 741daff150ef52ef99c3da31159c02bc9431757f
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 1facdff5200378fd2084ca909de2bf279b084025
+ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32263242"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "34852854"
 ---
-# <a name="monitor-and-report-data-in-microsoft-365-security"></a>Supervisión e informes de datos en Microsoft 365 Security
+# <a name="data-monitoring-and-reporting-in-microsoft-365-security-center"></a>Supervisión de datos e informes en el centro de seguridad 365 de Microsoft
 
-La categoría de **datos** ayuda a realizar un seguimiento de la actividad del usuario que podría llevar a la revelación no autorizada de datos. Estos son el retrabajo de los informes de directivas DLP de Office 365 DLP más un informe de coincidencia de directiva DLP de terceros.
+La categoría de **datos** ayuda a realizar un seguimiento de la actividad del usuario que podría llevar a la revelación no autorizada de datos. Estos son el retrabajo de los informes existentes de directivas DLP de Office 365 y un informe de coincidencia de directiva DLP de terceros.
 
 Puede ver lo siguiente:
 
@@ -30,4 +30,4 @@ Puede ver lo siguiente:
 * El número de directivas de DLP que invalida o falsos positivos se notifican
 * El número de coincidencias de directivas de DLP en los servicios en la nube de terceros a través de Microsoft Cloud App Security
 
-![Categoría de datos de la página de informes de & de supervisión](./media/security-docs/data.png)
+![Categoría de datos de la página informes](./media/security-docs/data.png)

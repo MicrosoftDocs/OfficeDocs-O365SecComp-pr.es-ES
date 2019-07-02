@@ -16,12 +16,12 @@ ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
 ms.collection:
 - M365-security-compliance
 description: 'Como administrador, puede ver, liberar e informar de mensajes falsos positivos en cuarentena en Office 365. Puede configurar directivas para que Office 365 filtre mensajes y los envíe a la cuarentena por varias razones: debido a que se identificaron como correo no deseado, en masa, con suplantación de identidad (phishing) o porque coincidieron con una regla de flujo de correo. '
-ms.openlocfilehash: aa469a1f0efa2265014593134d2b7865a59dd89f
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: abe9aa1a8c7d78af4d82d9a06284e12745d24dee
+ms.sourcegitcommit: dde3dc1dd419b97daa1da9827787c27935a2c757
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155702"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "35115931"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-administrator-in-office-365"></a>Administrar archivos y mensajes en cuarentena como un administrador en Office 365
 
@@ -29,7 +29,7 @@ Como administrador, puede ver, liberar y eliminar mensajes en cuarentena e infor
   
 De forma predeterminada, Office 365 envía mensajes de suplantación de identidad (phishing) y mensajes que contienen malware directamente a la cuarentena. Otros mensajes filtrados se envían a la carpeta de correo no deseado de los usuarios, a menos que configure una directiva para enviarlos a cuarentena.
   
-Debe tener permisos de administrador global (GA) en Office 365 para trabajar con los mensajes en cuarentena que se enviaron a otros usuarios y para trabajar con los archivos en cuarentena.
+Debe tener permisos de administrador global (GA) en Office 365, o administrador de seguridad en el centro de seguridad y cumplimiento, para trabajar con los mensajes en cuarentena que se enviaron a otros usuarios y trabajar con los archivos en cuarentena.
   
 > [!IMPORTANT]
 >De forma predeterminada, los mensajes de correo no deseado, masivos o de suplantación de identidad se mantienen en cuarentena durante 30 días. Los mensajes que se ponen en cuarentena debido a que coinciden con una regla de flujo de correo se mantienen en cuarentena durante 7 días. Los mensajes de malware se mantienen en cuarentena durante 15 días. Puede personalizar el tiempo de cuarentena de correo no deseado en configuración contra correo no &amp; deseado en el centro de seguridad y cumplimiento. Cuando Office 365 elimina un mensaje de la cuarentena, no puede recuperarlo. Si lo desea, puede cambiar el período de retención de los mensajes en cuarentena en las directivas de filtro contra correo no deseado. Para obtener más información, vea [configuración del período de retención de cuarentena](manage-quarantined-messages-and-files.md#BKMK_ModQuarantineTime) en este artículo. 

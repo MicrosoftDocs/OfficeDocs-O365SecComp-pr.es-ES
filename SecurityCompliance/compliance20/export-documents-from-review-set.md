@@ -14,18 +14,22 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 14efa58305e1963aa43c0c94fb208e5391c87119
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 7c1daccab799b3967c6b8c1d577060d062c05a70
+ms.sourcegitcommit: e323610df2df71c84f536e8a38650d33d8069e41
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155072"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "34703793"
 ---
 # <a name="export-documents-from-a-review-set"></a>Exportar documentos desde un conjunto de revisión
 
-La exportación de contenido de un conjunto de revisión puede realizarse a través de tres métodos diferentes:
+Puede exportar el contenido para la presentación o la revisión externa a partir de un conjunto de revisión por uno de los siguientes métodos:
 
-## <a name="download"></a>Descargar
+- [Descargar documentos](#download-documents-from-a-review-set)
+ 
+- [Exportar documentos](#export-documents-from-a-review-set)
+
+## <a name="download-documents-from-a-review-set"></a>Descargar documentos de un conjunto de revisión
 
 La descarga ofrece una forma sencilla de descargar contenido de un conjunto de revisión en formato nativo. Aprovecha las características de transferencia de datos del explorador para que aparezca un mensaje del explorador una vez que la descarga esté lista. Los archivos descargados con este método se comprimen en un archivo contenedor y serán archivos de nivel de elemento. Esto significa que, si selecciona un archivo adjunto, recibirá automáticamente el correo electrónico con los datos adjuntos incluidos. De forma similar, si selecciona una hoja de cálculo de Excel que estaba incrustada en un documento de Word, recibirá el documento de Word con la hoja de cálculo de Excel incrustada. Los elementos descargados conservarán la fecha de la última modificación, que se puede ver como una propiedad de archivo.
 
@@ -33,31 +37,31 @@ Para descargar contenido de un conjunto de revisión, seleccione los archivos qu
 
 ![Una captura de pantalla de una descripción de equipo generada automáticamente](../media/eDiscoDownload.png)
 
-## <a name="export"></a>Exportar
+## <a name="export-documents-from-a-review-set"></a>Exportar documentos desde un conjunto de revisión
 
 La exportación permite a los usuarios personalizar el contenido que se incluye en el paquete de descarga. Proporciona una página de configuración con la siguiente configuración:
 
 ### <a name="metadata-file"></a>Archivo de metadatos
 
-> Esto puede considerarse el "Cargar archivo" que contiene metadatos asociados con los archivos exportados. Para obtener una lista de los campos disponibles en el archivo de \[metadatos, vea Link\]. Por lo general, este archivo puede ser incorporado por las herramientas de terceros de terceras partes.<sup></sup>
+Esto puede considerarse el "Cargar archivo" que contiene metadatos asociados con los archivos exportados. Para obtener una lista de los campos disponibles en el archivo de \[metadatos, vea Link\]. Por lo general, este archivo puede ser incorporado por las herramientas de terceros de terceras partes.<sup></sup>
 
 ### <a name="tag-data"></a>Datos de etiqueta
 
-> Este contenido se agregaría como campos en el archivo de metadatos. Contiene toda la información de etiqueta aplicada en los conjuntos de revisión.
+Este contenido se agregaría como campos en el archivo de metadatos. Contiene toda la información de etiqueta aplicada en los conjuntos de revisión.
 
 ### <a name="text-files"></a>Archivos de texto
 
-> Los archivos de texto se pueden generar para cada archivo exportado de un conjunto de revisión. A menudo, los asociados de servicio necesitan estos archivos como parte de la recopilación de datos<sup></sup> en herramientas de terceros de terceros.
+Los archivos de texto se pueden generar para cada archivo exportado de un conjunto de revisión. A menudo, los asociados de servicio necesitan estos archivos como parte de la recopilación de datos<sup></sup> en herramientas de terceros de terceros.
 
 ### <a name="redacted-files"></a>Archivos censurados
 
-> Si se generan documentos PDF censurados durante la revisión, estos archivos están disponibles durante la exportación. Los usuarios pueden decidir si desea exportar solo los archivos nativos o reemplazar los nativos que tienen redacciones con el grabado en documentos PDF.
+Si se generan documentos PDF censurados durante la revisión, estos archivos están disponibles durante la exportación. Los usuarios pueden decidir si desea exportar solo los archivos nativos o reemplazar los nativos que tienen redacciones con el grabado en documentos PDF.
 
 ### <a name="export-location"></a>Ubicación de exportación
 
-> El contenido exportado se entrega en un BLOB de Azure o el BLOB de un cliente de Microsoft se puede usar si los detalles se proporcionan en la exportación.
+El contenido exportado se entrega en un BLOB de Azure o el BLOB de un cliente de Microsoft se puede usar si los detalles se proporcionan en la exportación.
 
-## <a name="export-structure"></a>Exportar estructura
+### <a name="export-structure"></a>Exportar estructura
 
 Cuando se exporta contenido desde un conjunto de revisión, el contenido se organiza en la estructura siguiente.
 
@@ -76,7 +80,3 @@ Cuando se exporta contenido desde un conjunto de revisión, el contenido se orga
           - ProcessingError: contenido con errores de procesamiento. Este contenido es el significado del nivel de elemento si los datos adjuntos experimentan un error de procesamiento, el correo electrónico que contiene los datos adjuntos se incluirá en esta carpeta.
     
       - Archivos\_de\_texto extraídos = contiene todos los archivos de texto extraídos generados en el procesamiento.
-
-## <a name="review-set"></a>conjunto de revisión
-
-El contenido se puede Agregar a otro conjunto de revisión.

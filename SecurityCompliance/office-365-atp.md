@@ -15,17 +15,17 @@ ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
 - M365-security-compliance
 description: Office 365 Advanced Threat Protection incluye datos adjuntos seguros, vínculos seguros, herramientas avanzadas contra la suplantación de identidad, herramientas de informes y capacidades de inteligencia de amenazas.
-ms.openlocfilehash: 903e089af172d8eac414aea69af75fcd696d5f20
-ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
+ms.openlocfilehash: ca70aeadb8fdde76fa5d7041fe1f0cf624496c24
+ms.sourcegitcommit: 4fedeb06a6e7796096fc6279cfb091c7b89d484d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "34408385"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "34652663"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Protección contra amenazas avanzada de Office 365
 
 > [!IMPORTANT]
-> Este artículo está destinado a los clientes de Office 365 Enterprise y Microsoft 365 Enterprise. Si usa Outlook.com, Office 365 Home o Office 365 personal, y está buscando información sobre vínculos seguros en Outlook, consulte [Advanced Outlook.com Security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Este artículo está destinado a los clientes empresariales que tienen la [protección contra amenazas avanzada de Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). Si usa Outlook.com, Office 365 Home o Office 365 personal, y está buscando información sobre vínculos seguros en Outlook, consulte [Advanced Outlook.com Security](https://support.office.com/article/advanced-outlook-com-security-for-office-365-subscribers-882d2243-eab9-4545-a58a-b36fee4a46e2).
 
 ## <a name="overview"></a>Información general
 
@@ -47,7 +47,7 @@ ATP se incluye en Office 365 E5; sin embargo, el plan ATP y el plan ATP 2 están
 
 Office 365 ATP proporciona numerosas herramientas para establecer un nivel de protección adecuado para su organización. 
 
-El equipo de seguridad de la organización debe definir directivas para cada herramienta de ATP en el centro de seguridad & cumplimiento de Office 365. Vaya a **** > **Directiva** de administración de amenazas para acceder a las opciones de directiva. (Para obtener ayuda, consulte [Guía de inicio rápido: configurar la protección contra amenazas avanzada de Office 365](checklist-atp-setup.md)).
+El equipo de seguridad de la organización debe definir directivas para cada herramienta de ATP del centro de seguridad & cumplimiento de Office 365. Vaya a **** > **Directiva** de administración de amenazas para acceder a las opciones de directiva. (Para obtener ayuda, consulte [Guía de inicio rápido: configurar la protección contra amenazas avanzada de Office 365](checklist-atp-setup.md)).
 
 Las directivas definidas para su organización determinan el nivel de comportamiento y protección de las amenazas predefinidas. Las opciones de Directiva son extremadamente flexibles. Por ejemplo, el equipo de seguridad de su organización puede establecer una protección contra amenazas avanzada a nivel de usuario, organización, destinatario y dominio. Es importante revisar las directivas de forma regular, ya que las amenazas y los retos nuevos surgen a diario.  
 
@@ -61,7 +61,7 @@ Las directivas definidas para su organización determinan el nivel de comportami
 
 ## <a name="view-atp-reports"></a>Ver informes de ATP
 
-Office 365 ATP incluye un [Panel de informes](view-reports-for-atp.md) avanzado para supervisar el rendimiento de ATP. Puede obtener acceso a ella en Reports **_GT_ Dashboard** en el centro de seguridad & cumplimiento. 
+Office 365 ATP incluye un [Panel de informes](view-reports-for-atp.md) avanzado para supervisar el rendimiento de ATP. Puede obtener acceso a ella en Reports **> Dashboard** en el centro de seguridad & cumplimiento. 
 
 Los informes se actualizan en tiempo real, lo que proporciona la información más reciente. Estos informes también proporcionan recomendaciones y le alertan de amenazas inminentes. Entre los informes predefinidos se incluyen los siguientes: 
 
@@ -93,7 +93,7 @@ AIR incluye un conjunto de guías de seguridad que se pueden iniciar automática
 
 ## <a name="permissions-required-to-use-atp-features"></a>Permisos necesarios para usar las características de ATP
 
-Para acceder a las características de ATP en el centro de seguridad & cumplimiento, debe tener asignado un rol adecuado. En la tabla siguiente se incluyen algunos ejemplos:
+Para acceder a las características de ATP en el centro de seguridad & cumplimiento, debe tener asignado un rol apropiado. En la tabla siguiente se incluyen algunos ejemplos:
 
 |Rol o grupo de roles  |Recursos para obtener más información  |
 |---------|---------|
