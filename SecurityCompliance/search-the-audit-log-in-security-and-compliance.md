@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Use el centro de seguridad & cumplimiento para buscar en el registro de auditoría unificado para ver la actividad del usuario y del administrador de la organización de Office 365. '
-ms.openlocfilehash: 6f27929da0a802e99c2b6373ba7ae9791776c67e
-ms.sourcegitcommit: b00c8fe1827d24f055a3076c10f284ff9ee3e04b
+ms.openlocfilehash: 656bb3a82c11308e8596c0eb71972ead5dfed620
+ms.sourcegitcommit: b262d40f6daf06be26e7586f37b736e09f8a4511
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "35113294"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35435230"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Buscar el registro de auditoría en el centro de seguridad & cumplimiento
 
@@ -257,7 +257,7 @@ Para filtrar los resultados:
 
 ### <a name="step-4-export-the-search-results-to-a-file"></a>Paso 4: exportar los resultados de la búsqueda a un archivo
 
-Puede exportar los resultados de una búsqueda de registro de auditoría a un archivo de valores separados por comas (CSV) en el equipo local. Puede abrir este archivo en Microsoft Excel y usar características como buscar, ordenar, filtrar y dividir una sola columna (que contiene celdas de varios valores) en varias columnas.
+Puede exportar los resultados de una búsqueda de registro de auditoría a un archivo de valores separados por comas (CSV) en el equipo local. Puede abrir este archivo en Microsoft Excel y usar características como buscar, ordenar, filtrar y dividir una sola columna (que contenga varias propiedades) en varias columnas.
   
 1. Ejecute una búsqueda de registro de auditoría y, a continuación, revise los criterios de búsqueda hasta que tenga los resultados deseados.
     
@@ -265,27 +265,24 @@ Puede exportar los resultados de una búsqueda de registro de auditoría a un ar
     
      - **Guardar resultados cargados** : elija esta opción para exportar sólo las entradas que se muestran en **resultados** en la página de búsqueda de **registros de auditoría** . El archivo CSV que se descarga contiene las mismas columnas (y datos) que se muestran en la página (fecha, usuario, actividad, elemento y detalles). Una columna adicional (con el nombre **más**) se incluye en el archivo CSV que contiene más información de la entrada del registro de auditoría. Como está exportando los mismos resultados que se cargan (y visibles) en la página de **búsqueda de registros de auditoría** , se exporta un máximo de 5.000 entradas. 
     
-     - **Descargar todos los resultados** : elija esta opción para exportar todas las entradas del registro de auditoría de Office 365 que cumplan los criterios de búsqueda. Para un conjunto grande de resultados de búsqueda, elija esta opción para descargar todas las entradas del registro de auditoría además de los resultados de 5.000 que se pueden mostrar en la página de **búsqueda de registros de auditoría** . Con esta opción se descargan los datos sin procesar del registro de auditoría en un archivo CSV y se incluye información adicional de la entrada del registro de auditoría en una columna denominada **AuditData**. La descarga del archivo puede tardar más tiempo si elige esta opción de exportación, ya que es posible que el archivo sea mucho mayor que el que se ha descargado si elige la otra opción.
+     - **Descargar todos los resultados** : elija esta opción para exportar todas las entradas del registro de auditoría de Office 365 que cumplan los criterios de búsqueda. Para un conjunto grande de resultados de búsqueda, elija esta opción para descargar todas las entradas del registro de auditoría, además de los registros de auditoría de 5.000 que se pueden mostrar en la página de búsqueda de registros de **Auditoría** . Con esta opción se descargan los datos sin procesar del registro de auditoría en un archivo CSV y se incluye información adicional de la entrada del registro de auditoría en una columna denominada **AuditData**. La descarga del archivo puede tardar más tiempo si elige esta opción de exportación, ya que es posible que el archivo sea mucho mayor que el que se ha descargado si elige la otra opción.
     
        > [!IMPORTANT]
        > Puede descargar un máximo de 50.000 entradas en un archivo CSV desde una sola búsqueda de registro de auditoría. Si se descargan 50.000 entradas en el archivo CSV, probablemente se da por hecho que hay más de 50.000 eventos que cumplen los criterios de búsqueda. Para exportar más de este límite, pruebe a usar un intervalo de fechas para reducir el número de entradas del registro de auditoría. Es posible que deba ejecutar varias búsquedas con intervalos de fecha más pequeños para exportar más de 50.000 entradas. 
   
 3. Después de seleccionar una opción de exportación, se muestra un mensaje en la parte inferior de la ventana en el que se le pregunta si desea abrir el archivo CSV, guardarlo en la carpeta descargas o guardarlo en una carpeta específica.
+ 
+#### <a name="more-information-about-exporting-and-viewing-audit-log-search-results"></a>Más información acerca de cómo exportar y ver los resultados de la búsqueda de registros de auditoría
 
-  
-#### <a name="more-information-about-exporting-audit-log-search-results"></a>Más información sobre cómo exportar resultados de la búsqueda de registros de auditoría
-
-- La opción **descargar todos los resultados** descarga los datos sin procesar del registro de auditoría de Office 365 en un archivo CSV. Este archivo contiene distintos nombres de columna (CreationDate, UserId, Operation, AuditData) que el archivo que se descarga si selecciona la opción **Guardar resultados cargados** . Los valores de los dos archivos. CSV diferentes para la misma actividad también pueden ser diferentes. Por ejemplo, la actividad en la columna **acción** del archivo CSV y puede tener un valor distinto de la versión "fácil de utilizar" que se muestra en la columna **actividad** de la página de **búsqueda del registro de auditoría** ; por ejemplo, MailboxLogin frente a usuario que ha iniciado sesión en el buzón.
-    
-- Si descarga todos los resultados, el archivo CSV contiene una columna denominada **AuditData**, que contiene información adicional sobre cada evento. Como se mencionó anteriormente, esta columna contiene una propiedad de varios valores para varias propiedades del registro de auditoría. Cada uno de los pares **propiedad: valor** de esta propiedad de varios valores se separan con una coma. Puede usar la consulta Power en Excel para dividir esta columna en varias columnas para que cada propiedad tenga su propia columna. Esto le permitirá ordenar y filtrar por una o varias de estas propiedades. Para obtener información sobre cómo hacerlo, vea la sección "dividir una columna por delimitador" en [dividir una columna de texto (Power Query)](https://support.office.com/article/5282d425-6dd0-46ca-95bf-8e0da9539662).
+- Si descarga todos los resultados de la búsqueda, el archivo CSV contiene una columna denominada **AuditData**, que contiene información adicional sobre cada evento. Los datos de esta columna constan de un objeto JSON que contiene varias propiedades del registro de auditoría. Cada par *propiedad: valor* del objeto JSON está separado por una coma. Puede usar la herramienta transformación de JSON en el editor de Power Query en Excel para dividir la columna **AuditData** en varias columnas, de modo que cada propiedad del objeto JSON tenga su propia columna. Esto le permitirá ordenar y filtrar por una o varias de estas propiedades. Para obtener instrucciones paso a paso sobre cómo usar el editor de Power Query para transformar el objeto JSON, consulte [exportar, configurar y ver registros de registro de auditoría](export-view-audit-log-records.md).
     
     Después de dividir la columna **AuditData** , puede filtrar en la columna **operaciones** para mostrar las propiedades detalladas de un tipo de actividad específico. 
     
-- Hay un límite de 3.060 caracteres para los datos que se muestran en el campo **AuditData** para un registro de auditoría. Si se supera el límite de 3.060 caracteres, los datos de este campo se truncan. 
-    
+- La opción **descargar todos los resultados** descarga los datos sin procesar del registro de auditoría de Office 365 en un archivo CSV. Este archivo contiene distintos nombres de columna (CreationDate, UserId, Operation, AuditData) que el archivo que se descarga si selecciona la opción **Guardar resultados cargados** . Los valores de los dos archivos. CSV diferentes para la misma actividad también pueden ser diferentes. Por ejemplo, la actividad en la columna **acción** del archivo CSV y puede tener un valor distinto del nombre descriptivo que se muestra en la columna **actividad** de la página de búsqueda del registro de **Auditoría** ; por ejemplo, MailboxLogin frente a usuario que ha iniciado sesión en el buzón.
+
 - Cuando se descargan todos los resultados de una consulta de búsqueda que contiene eventos de diferentes servicios de Office 365, la columna **AuditData** del archivo CSV contiene distintas propiedades en función del servicio en el que se realizó la acción. Por ejemplo, las entradas de los registros de auditoría de Exchange y Azure AD incluyen una propiedad denominada **ResultStatus** que indica si la acción se realizó correctamente o no. Esta propiedad no se incluye para los eventos de SharePoint. De forma similar, los eventos de SharePoint tienen una propiedad que identifica la dirección URL del sitio para actividades relacionadas con archivos y carpetas. Para mitigar este comportamiento, considere la posibilidad de usar diferentes búsquedas para exportar los resultados de las actividades de un solo servicio. 
     
-    Para obtener una descripción de las propiedades que se enumeran en la columna **AuditData** del archivo CSV al descargar todos los resultados y el servicio al que se aplica cada uno, consulte [propiedades detalladas en el registro de auditoría de Office 365](detailed-properties-in-the-office-365-audit-log.md).
+    Para obtener una descripción de muchas de las propiedades enumeradas en la columna **AuditData** del archivo CSV al descargar todos los resultados y el servicio al que se aplica cada uno, consulte [propiedades detalladas en el registro de auditoría de Office 365](detailed-properties-in-the-office-365-audit-log.md).
 
 ## <a name="audited-activities"></a>Actividades auditadas
 

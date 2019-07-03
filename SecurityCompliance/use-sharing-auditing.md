@@ -3,7 +3,7 @@ title: Auditar el uso compartido para buscar recursos compartidos con usuarios e
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 2/13/2018
+ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 50bbf89f-7870-4c2a-ae14-42635e0cfc01
 description: 'El uso compartido es una actividad clave en SharePoint Online y OneDrive para la empresa. Ahora, los administradores pueden usar la auditoría de uso compartido en el registro de auditoría de Office 365 para determinar cómo se usa el uso compartido en su organización. '
-ms.openlocfilehash: a363ebe2e8b1697521ab5f84df0b3fc221a2abcd
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: e2865d35e988d8c0e42a6c51f78507db8b170d4c
+ms.sourcegitcommit: b262d40f6daf06be26e7586f37b736e09f8a4511
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157902"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35435249"
 ---
 # <a name="use-sharing-auditing-in-the-office-365-audit-log"></a>Auditar el uso compartido para buscar recursos compartidos con usuarios externos
 
@@ -42,7 +42,7 @@ Hay otra propiedad de esquema que es importante para la historia de uso comparti
 
 ## <a name="the-sharepoint-sharing-model-and-sharing-events"></a>Modelo de uso compartido de SharePoint y eventos de uso compartido
 
-El uso compartido se define realmente mediante tres eventos independientes: **SharingSet**, **SharingInvitationCreated**y **SharingInvitaitonAccepted**. Este es el flujo de trabajo de cómo se registran los eventos de uso compartido en el registro de auditoría de Office 365. 
+El uso compartido se define mediante tres eventos independientes: **SharingSet**, **SharingInvitationCreated**y **SharingInvitaitonAccepted**. Este es el flujo de trabajo de cómo se registran los eventos de uso compartido en el registro de auditoría de Office 365. 
   
 ![Diagrama de flujo de cómo funciona la auditoría de uso compartido](media/d83dd40f-919b-484f-bfd6-5dc8de31bff6.png)
   
@@ -73,7 +73,7 @@ Un requisito común para los administradores es crear una lista de todos los rec
   
 ### <a name="step-1-search-for-sharing-events-and-export-the-results-to-a-csv-file"></a>Paso 1: buscar eventos de uso compartido y exportar los resultados a un archivo CSV
 
-El primer paso es buscar eventos de uso compartido en el registro de auditoría de Office 365. Para obtener más información (incluidos los permisos necesarios) sobre cómo buscar en el registro de auditoría, vea [Buscar en el registro de auditoría del centro de seguridad _AMP_ cumplimiento](search-the-audit-log-in-security-and-compliance.md).
+El primer paso es buscar eventos de uso compartido en el registro de auditoría de Office 365. Para obtener más información (incluidos los permisos necesarios) sobre cómo buscar en el registro de auditoría, vea [Buscar en el registro de auditoría del centro de seguridad & cumplimiento](search-the-audit-log-in-security-and-compliance.md).
   
 1. Vaya a [https://protection.office.com](https://protection.office.com).
     
@@ -83,9 +83,9 @@ El primer paso es buscar eventos de uso compartido en el registro de auditoría 
     
     Se muestra la página de **búsqueda de registros de auditoría** . 
     
-4. En **actividades**, haga clic en **compartir actividades** para buscar solo eventos de uso compartido. 
+4. En **actividades**, haga clic en **compartir y obtener acceso a actividades de solicitud** para buscar eventos relacionados con el uso compartido. 
     
-    ![En actividades, seleccione actividades de uso compartido.](media/46bb25b7-1eb2-4adf-903a-cc9ab58639f9.png)
+    ![En actividades, seleccione compartir y actividades de solicitud de acceso](media/46bb25b7-1eb2-4adf-903a-cc9ab58639f9.png)
   
 5.  Seleccione un intervalo de fecha y hora para buscar los eventos de uso compartido que se produjeron dentro de ese período. 
     
@@ -96,54 +96,24 @@ El primer paso es buscar eventos de uso compartido en el registro de auditoría 
     Una vez seleccionada la opción exportar, se muestra un mensaje en la parte inferior de la ventana que le pregunta si desea abrir o guardar el archivo CSV.
     
 8. Haga clic en **Guardar** \> y guardar **como** y guarde el archivo CSV en una carpeta del equipo local. 
-    
 
-  
 ### <a name="step-2-filter-the-csv-file-for-resources-shared-with-external-users"></a>Paso 2: filtrar el archivo CSV para los recursos compartidos con usuarios externos
 
-El paso siguiente es filtrar el archivo CSV para los eventos **SharingSet** y **SharingInvitationCreated** , así como mostrar los eventos en los que la propiedad **TargetUserOrGroupType** es **Guest**. Para ello, debe usar la característica Power Query de Excel. El siguiente procedimiento se realiza en Excel 2016. 
-  
-1. En Excel 2016, abra un libro en blanco.
+El paso siguiente es filtrar el archivo CSV para los eventos **SharingSet** y **SharingInvitationCreated** , así como mostrar los eventos en los que la propiedad **TargetUserOrGroupType** es **Guest**. Para ello, use la herramienta Power Query editor de Excel. Para obtener instrucciones paso a paso, consulte [exportar, configurar y ver registros de registro de auditoría](export-view-audit-log-records.md). 
+
+Una vez que haya seguido las instrucciones del tema anterior para preparar el archivo CSV, haga lo siguiente:
     
-2. Haga clic en la pestaña **datos** . 
+1. Abra el archivo CSV que preparó con el editor de Power Query. 
+
+2. En la pestaña **Inicio** , haga clic en **ordenar & filtro**y, a continuación, haga clic en **filtrar**.
     
-3. Haga clic en **nueva consulta** \> **desde archivo** \> **CSV**.
-    
-    ![En la pestaña datos, seleccione Nueva consulta, seleccione desde archivo y, después, seleccione desde CSV](media/5170ab34-b449-40ea-bd3f-f1432c1c5973.png)
-  
-4. Abra el archivo CSV que ha descargado en el paso 1.
-    
-    El archivo CSV se abre en el editor de consultas. Tenga en cuenta que hay cuatro columnas: **tiempo**, **usuario**, **acción**y **detalle**. La columna de **detalle** es un campo de múltiples propiedades. El paso siguiente es crear una nueva columna para cada una de las propiedades de la columna de **detalle** . 
-    
-5. Seleccione la columna **detalles** y, a continuación, en la pestaña **Inicio** , haga clic en **dividir columna** \> **por**delimitador.
-    
-    ![En la pestaña Inicio, haga clic en dividir columna y, a continuación, haga clic en por delimitador](media/aeb503e8-565b-42ea-91e2-9f127a74c00c.png)
-  
-6. En la ventana **dividir columna por** delimitador, haga lo siguiente: 
-    
-      - En **seleccionar o escribir**delimitador, seleccione **coma**.
-    
-      - En **dividir**, seleccione **en cada aparición del**delimitador.
-    
-7. Haga clic en **Aceptar**.
-    
-    La columna de **detalle** se divide en varias columnas. Cada columna nueva tiene el nombre **detalle. 1**, **detalle. 2**, **detalle. 3**y así sucesivamente. Observará que los valores de cada celda de las columnas **detail. n** van precedidos por el nombre de la propiedad; por ejemplo, **operación: SharingSet**, **Operation: SharingInvitationAccepted**y **Operation: SharingInvitationCreated**.
-    
-    ![La columna de detalle se divide en varias columnas, una para cada propiedad](media/4b104ead-0313-4bd4-b2a9-f143ccb378ac.png)
-  
-8. En la pestaña **archivo** , haga clic en **cerrar &amp; carga** para cerrar el editor de consultas y abrir el archivo en un libro de Excel. 
-    
-    El paso siguiente es filtrar el archivo para que solo se muestren los eventos **SharingSet** y **SharingInvitationCreated** . 
-    
-9. Vaya a la pestaña **Inicio** y, a continuación, seleccione la columna **acción** . 
-    
-10. En la lista desplegable **filtro &amp; ** de ordenación, desactive todas las selecciones, seleccione **SharingSet** y **SharingInvitationCreated**y haga clic en **Aceptar**.
+3. En la lista desplegable **ordenar & filtro** de la columna **operaciones** , desactive todas las selecciones, seleccione **SharingSet** y **SharingInvitationCreated**y haga clic en **Aceptar**.
     
     Excel muestra las filas de los eventos **SharingSet** y **SharingInvitationCreated** . 
     
-11. Vaya a la columna llamada **detail. 17** (o a cualquier columna que contenga la propiedad **TargetUserOrGroupType** ) y selecciónela. 
+4. Vaya a la columna llamada **TargetUserOrGroupType** y selecciónela. 
     
-12. En la lista desplegable **filtro &amp; ** de ordenación, desactive todas las selecciones, seleccione **TargetUserOrGroupType: invitado**y haga clic en **Aceptar**.
+5. En la lista desplegable **ordenar & filtro** , desactive todas las selecciones, seleccione **TargetUserOrGroupType: invitado**y haga clic en **Aceptar**.
     
     Ahora Excel muestra las filas de los eventos **SharingInvitationCreated** y **SharingSet** , y donde el usuario de destino está fuera de la organización, porque los usuarios externos se identifican mediante el valor **TargetUserOrGroupType: Guest**. 
     
@@ -151,7 +121,7 @@ En la siguiente tabla se muestran todos los usuarios de la organización que com
   
 ![Compartir eventos en el registro de auditoría de Office 365](media/0e0ecbe3-c794-4ca6-a2ca-63478fb3bb34.png)
   
-Aunque no se incluye en la tabla anterior, la columna **detail. 10** (o la columna que contiene la propiedad **objectId** ) identifica el recurso que se ha compartido con el usuario de destino; por ejemplo `ObjectId:https:\/\/contoso-my.sharepoint.com\/personal\/sarad_contoso_com\/Documents\/Southwater Proposal.docx`.
+Aunque no se incluye en la tabla anterior, la propiedad **objectId** identifica el recurso que se ha compartido con el usuario de destino; por ejemplo `ObjectId:https:\/\/contoso-my.sharepoint.com\/personal\/sarad_contoso_com\/Documents\/Southwater Proposal.docx`.
   
 > [!TIP]
-> Si desea identificar cuándo un usuario invitado ha recibido realmente permisos para obtener acceso a un recurso (en lugar de solo los recursos que compartiron con ellos), repita los pasos 10, 11 y 12, y filtre en la **SharingInvitationAccepted** y **SharingSet **eventos en el paso 10. 
+> Si desea identificar cuándo un usuario invitado ha recibido realmente permisos para obtener acceso a un recurso (en lugar de solo los recursos que compartiron con ellos), repita los pasos 2, 3 y 4, y filtre en la **SharingInvitationAccepted** y **SharingSet** eventos en el paso 5. 

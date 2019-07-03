@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid: MOE150
 ms.assetid: 39e4654a-9588-41f6-892b-c33ab57bfbe2
 description: Use el editor de búsqueda en masa en el centro de seguridad y cumplimiento de Office 365 o Microsoft 365 para cambiar rápidamente las ubicaciones de consulta y de contenido de una o más búsquedas de contenido.
-ms.openlocfilehash: d4f79cc323b752d020606e22ff72a47bc03e9ae9
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 69d2a40a28fd435873eae9b19ad2c8ad1e25d27c
+ms.sourcegitcommit: b262d40f6daf06be26e7586f37b736e09f8a4511
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152222"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35435120"
 ---
 # <a name="bulk-edit-content-searches"></a>Edición masiva de búsquedas de contenido
 
@@ -92,7 +92,7 @@ Estas son algunas sugerencias para editar ubicaciones de contenido con el editor
 - Puede agregar varias ubicaciones de contenido a una o más búsquedas si copia varias filas de un archivo de texto o un archivo de Excel y, a continuación, las pega en una sección de la página **ubicaciones** . Después de agregar nuevas ubicaciones, asegúrese de activar la casilla de verificación de cada búsqueda a la que desea agregar la ubicación. 
     
     > [!TIP]
-    > Para generar una lista de direcciones de correo electrónico para todos los usuarios de la organización, ejecute el comando PowerShell en el paso 2 de [usar búsqueda de contenido para buscar en el buzón y en el sitio de OneDrive para la empresa para obtener una lista de usuarios](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md#step2). O bien, use el script en [crear una lista de todas las ubicaciones de onedrive de la organización](https://support.office.com/article/8e200cb2-c768-49cb-88ec-53493e8ad80a) para generar una lista de todos los sitios de onedrive para la empresa de su organización. Tenga en cuenta que tendrá que anexar la dirección URL del dominio organization's de mi sitio (por ejemplo https://contoso-my.sharepoint.com) , a los sitios de OneDrive para la empresa que crea el script. Una vez que tenga una lista de direcciones de correo electrónico o sitios de OneDrive para la empresa, puede copiarlos y pegarlos en la página **ubicaciones** del editor de búsqueda en masa. 
+    > Para generar una lista de direcciones de correo electrónico para todos los usuarios de la organización, ejecute el comando de PowerShell en el paso 2 del [paso 2: generar una lista de usuarios](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md#step-2-generate-a-list-of-users). O bien, siga los pasos que se indican en [obtener una lista de todas las direcciones URL de onedrive del usuario en la organización](https://docs.microsoft.com/onedrive/list-onedrive-urls) para generar una lista de todos los sitios de onedrive para la empresa de su organización. Tenga en cuenta que tendrá que anexar la dirección URL para el dominio de mi sitio de la organización https://contoso-my.sharepoint.com) (por ejemplo, a los sitios de OneDrive para la empresa creados por el script. Una vez que tenga una lista de direcciones de correo electrónico o sitios de OneDrive para la empresa, puede copiarlos y pegarlos en la página **ubicaciones** del editor de búsqueda en masa. 
   
 - Después de hacer clic en **Guardar** para guardar los cambios en el editor de búsqueda en masa, se validará la dirección de correo electrónico para los buzones que agregó a la búsqueda. Si no existe la dirección de correo electrónico, aparecerá un mensaje de error que indica que no se encuentra el buzón. Tenga en cuenta que las direcciones URL de los sitios no se validan. 
   

@@ -13,27 +13,26 @@ search.appverid:
 - MOE150
 ms.assetid: 143b3ab8-8cb0-4036-a5fc-6536d837bfce
 description: Office 365 ofrece varias herramientas de eDiscovery distintas que puede usar para buscar y conservar contenido que se encuentra en diferentes ubicaciones, como buzones de Exchange, sitios de SharePoint y OneDrive para la empresa, grupos de Office 365 y conversaciones de Skype empresarial.
-ms.openlocfilehash: 80d22cf45412727c32a3557ac6b04ca68c9d17ce
-ms.sourcegitcommit: 3ffd188a7fd547ae343ccf14361c1e4300f88de0
+ms.openlocfilehash: a4643fed55552b094e63e837d9a349cbd4d10ac8
+ms.sourcegitcommit: b262d40f6daf06be26e7586f37b736e09f8a4511
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "35059528"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35435130"
 ---
 # <a name="ediscovery-in-office-365"></a>Exhibición de documentos electrónicos en Office 365
 
-La exhibición de documentos electrónicos, o eDiscovery, es el proceso de identificación y entrega de información electrónica que se puede usar como prueba en casos legales. Puede usar la exhibición de documentos electrónicos en Office 365 para buscar contenido en buzones de Exchange Online, grupos de Office 365, Microsoft Teams, SharePoint Online y OneDrive para la empresa, y conversaciones de Skype empresarial. Puede buscar buzones y sitios en la misma búsqueda de exhibición de documentos electrónicos mediante la herramienta de búsqueda de contenido en el centro de seguridad & cumplimiento. Además, puede usar casos de eDiscovery en el centro de seguridad & cumplimiento para identificar, mantener y exportar contenido encontrado en buzones y sitios. Si su organización tiene una suscripción a Office 365 E5, puede analizar el contenido con Office 365 Advanced eDiscovery.
+La exhibición de documentos electrónicos, o eDiscovery, es el proceso de identificación y entrega de información electrónica que se puede usar como prueba en casos legales. Puede usar la exhibición de documentos electrónicos en Office 365 para buscar contenido en buzones de Exchange Online, grupos de Office 365, Microsoft Teams, SharePoint Online y OneDrive para la empresa, y conversaciones de Skype empresarial. Puede buscar buzones y sitios en la misma búsqueda de exhibición de documentos electrónicos mediante la herramienta de búsqueda de contenido en el centro de seguridad & cumplimiento. Además, puede usar casos de eDiscovery en el centro de seguridad & cumplimiento para identificar, mantener y exportar contenido encontrado en buzones y sitios. Si su organización tiene una suscripción de Office 365 E5, puede analizar aún más el contenido mediante la solución de exhibición de documentos electrónicos avanzada en Microsoft 365.
   
 Office 365 proporciona las siguientes herramientas de eDiscovery:
   
-- [Búsqueda de contenido en el centro de seguridad & cumplimiento](ediscovery.md#contentsearch)
+- [Búsqueda de contenido en el centro de seguridad & cumplimiento](#content-search-in-the-security--compliance-center)
     
-- [Casos de eDiscovery en el centro de seguridad & cumplimiento](ediscovery.md#ediscoverycases)
+- [Casos de eDiscovery en el centro de seguridad & cumplimiento](#ediscovery-cases-in-the-security--compliance-center)
     
-- [eDiscovery avanzado de Office 365](ediscovery.md#advancedediscovery)
+- [Solución de eDiscovery avanzado de Microsoft 365](#advanced-ediscovery-solution-in-microsoft-365)
     
 ## <a name="content-search-in-the-security--compliance-center"></a>Búsqueda de contenido en el centro de seguridad & cumplimiento
-<a name="contentsearch"> </a>
 
 La tabla siguiente contiene vínculos a temas que le ayudarán a usar la herramienta de búsqueda de contenido en el centro de seguridad & cumplimiento.
   
@@ -51,18 +50,15 @@ La tabla siguiente contiene vínculos a temas que le ayudarán a usar la herrami
 |[Diferencias entre los resultados de búsqueda de exhibición de documentos electrónicos Estimado y real en Office 365](differences-between-estimated-and-actual-ediscovery-search-results.md) <br/> |Obtenga información sobre los motivos por los que puede haber diferencias entre el número de resultados de búsqueda estimados y el número de elementos reales que se exportan.  <br/> |
 |[Desduplicación en los resultados de búsqueda de eDiscovery](de-duplication-in-ediscovery-search-results.md) <br/> |Obtenga información sobre la característica de desduplicación opcional que puede habilitar al exportar mensajes de correo electrónico de Exchange que sean el resultado de una búsqueda de contenido.  <br/> |
 |[Buscar y eliminar mensajes de correo electrónico en la organización de Office 365](search-for-and-delete-messages-in-your-organization.md) <br/> |Obtenga información sobre cómo usar la búsqueda de contenido para buscar y eliminar un mensaje de correo electrónico de *todos los* buzones de la organización. Esto puede ayudarle a encontrar y eliminar mensajes de correo electrónico potencialmente dañinos o de alto riesgo.  <br/> |
-|[Usar búsqueda de contenido para buscar una lista de usuarios en el buzón y el sitio de OneDrive para la Empresa](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md) <br/> |Obtenga información sobre cómo usar un script para buscar en el buzón y un sitio de una unidad de negocio para un grupo de usuarios. Use el [paso 2: generar una lista de usuarios](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md#step2) en este tema para generar rápidamente una lista de direcciones de correo electrónico que puede usar para las ubicaciones de contenido de origen al crear y ejecutar la búsqueda en el paso 3.  <br/> |
+|[Usar búsqueda de contenido para buscar una lista de usuarios en el buzón y el sitio de OneDrive para la Empresa](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md) <br/> |Obtenga información sobre cómo usar un script para buscar en el buzón y un sitio de una unidad de negocio para un grupo de usuarios. Use el [paso 2: generar una lista de usuarios](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md#step-2-generate-a-list-of-users) en este tema para generar rápidamente una lista de direcciones de correo electrónico que puede usar para las ubicaciones de contenido de origen al crear y ejecutar la búsqueda en el paso 3.  <br/> |
 |[Crear, informar sobre y eliminar varias búsquedas de contenido](create-report-on-and-delete-multiple-content-searches.md) <br/> |Obtenga información sobre cómo usar scripts para crear varias búsquedas de contenido, ejecutar informes para obtener los resultados estimados de cada búsqueda y, a continuación, eliminar las búsquedas. Esto puede ayudarle a identificar y deseleccionar datos de búsqueda de forma rápida y eficaz.  <br/> |
 |[Clonar una búsqueda de contenido en el centro de seguridad & cumplimiento](clone-a-content-search.md) <br/> |Obtenga información sobre cómo usar el script de Windows PowerShell en este artículo para clonar rápidamente una búsqueda de contenido existente. Esto puede ayudarle a comparar los resultados de las diferentes consultas de búsqueda de palabras clave que se ejecutan en las mismas ubicaciones de contenido o ahorrar tiempo porque no es necesario volver a especificar un gran número de ubicaciones de contenido al crear una nueva búsqueda.  <br/> |
 |[Configurar el filtrado de permisos para Búsqueda de contenido](permissions-filtering-for-content-search.md) <br/> |Obtenga información sobre cómo usar el filtrado de permisos para permitir que un administrador de eDiscovery busque solo en un subconjunto de buzones y sitios de su organización de Office 365.  <br/> |
 |[Preparar un archivo CSV para una búsqueda de contenido dirigida](csv-file-for-an-id-list-content-search.md) <br/> |Aprenda a usar un archivo Results. csv o un archivo elementos. csv sin indexar (que contienen información sobre los resultados de una búsqueda de contenido) para crear una búsqueda dirigida de elementos de buzón específicos.  <br/> |
 |[Usar la búsqueda de contenido en Office 365 para colecciones dirigidas](use-content-search-for-targeted-collections.md) <br/> |Obtenga información sobre cómo usar el script de Windows PowerShell de este artículo para realizar colecciones de destino con la búsqueda de contenido. Una colección de destino significa que desea buscar en una carpeta determinada porque está seguro de que los elementos que responden a un caso (o a elementos con privilegios) se encuentran en esa carpeta. Use el script de este artículo para obtener el identificador de carpeta o la ruta de acceso de las carpetas de sitio o de buzón de correo específicas que desea buscar.  <br/> |
 |[Usar la búsqueda de contenido para buscar datos de terceros que se importaron a Office 365](use-content-search-to-search-third-party-data-that-was-imported.md) <br/> |Obtenga información acerca de cómo `kind` usar `itemclass` las propiedades del mensaje y para buscar datos de terceros que importó a Office 365.  <br/> |
-   
-[Return to top](ediscovery.md#top)
   
 ## <a name="ediscovery-cases-in-the-security--compliance-center"></a>Casos de eDiscovery en el centro de seguridad & cumplimiento
-<a name="ediscoverycases"> </a>
 
 La tabla siguiente contiene vínculos a temas que le ayudarán a usar casos de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento. Casos de uso para agregar miembros que puedan tener acceso al caso, coloque una retención en las ubicaciones de contenido relevantes para el caso, asocie varias búsquedas de contenido con el caso y exporte los resultados de la búsqueda desde el caso.
   
@@ -73,28 +69,9 @@ La tabla siguiente contiene vínculos a temas que le ayudarán a usar casos de e
 |[Crear un informe sobre suspensiones en casos de eDiscovery en Office 365](create-a-report-on-holds-in-ediscovery-cases.md) <br/> |Aprenda a usar el script de Windows PowerShell de este artículo para generar un informe que contenga información sobre todas las suspensiones asociadas con casos de eDiscovery en el centro de seguridad & cumplimiento.  <br/> |
 |[Usar un script para agregar usuarios a una suspensión en un caso de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento](use-a-script-to-add-users-to-a-hold-in-ediscovery.md) <br/> |Obtenga información sobre cómo usar el script de Windows PowerShell de este artículo para agregar rápidamente los sitios de buzones de correo y OneDrive para la empresa para una lista de usuarios a una nueva retención asociada a un caso de exhibición de documentos electrónicos en el centro de seguridad & cumplimiento.  <br/> |
 |[Buscar actividades de eDiscovery en el registro de auditoría de Office 365](search-for-ediscovery-activities-in-the-audit-log.md) <br/> |Obtenga información sobre cómo buscar en el registro de auditoría de Office 365 actividades relacionadas con la creación y la administración de casos de eDiscovery y búsquedas de contenido.  <br/> |
-   
-[Return to top](ediscovery.md#top)
   
-## <a name="office-365-advanced-ediscovery"></a>eDiscovery avanzado de Office 365
-<a name="advancedediscovery"> </a>
+## <a name="advanced-ediscovery-solution-in-microsoft-365"></a>Solución de eDiscovery avanzado de Microsoft 365
 
-La tabla siguiente contiene vínculos a temas que le ayudarán a obtener información sobre la herramienta eDiscovery avanzado en Office 365 y a usarla.
-  
-|**Tema**|**Descripción**|
-|:-----|:-----|
-|[eDiscovery avanzado de Office 365](office-365-advanced-ediscovery.md) <br/> |Obtenga información sobre cómo la herramienta Advanced eDiscovery puede ayudarle a analizar datos en Office 365, simplificar las revisiones de documentos y tomar decisiones para la exhibición de documentos electrónicos eficaz.  <br/> |
-|[Configuración rápida de eDiscovery avanzado](quick-setup-for-advanced-ediscovery.md) <br/> |Obtenga información sobre cómo empezar a usar la exhibición avanzada de documentos electrónicos.  <br/> |
-|[Preparar los resultados de búsqueda para la exhibición avanzada de documentos electrónicos de Office 365](prepare-search-results-for-advanced-ediscovery.md) <br/> |Obtenga información sobre cómo preparar los resultados de una búsqueda de contenido para analizarlos en la exhibición avanzada de documentos electrónicos.  <br/> |
-|[Configuración de usuarios y casos en la exhibición avanzada de documentos electrónicos de Office 365](set-up-users-and-cases-in-advanced-ediscovery.md) <br/> |Obtenga información sobre cómo configurar roles de usuario, crear casos y asignar usuarios a los casos en la exhibición avanzada de documentos electrónicos.  <br/> |
-|[Ejecutar el módulo de proceso y cargar datos](run-the-process-module-and-load-data-in-advanced-ediscovery.md) <br/> |Obtenga información sobre las directrices para preparar archivos de casos para el análisis con eDiscovery avanzado.  <br/> |
-|[Usar el análisis rápido en Office 365 Advanced eDiscovery](use-express-analysis-in-advanced-ediscovery.md) <br/> |Obtenga información sobre cómo ejecutar el modo de análisis rápido de eDiscovery avanzado para analizar rápidamente un caso y exportar los resultados.  <br/> |
-|[Analizar datos de casos con eDiscovery avanzado](analyze-case-data-with-advanced-ediscovery.md) <br/> |Obtenga información general sobre el proceso de análisis, que permite establecer parámetros, ejecutar opciones y ver los resultados en la exhibición avanzada de documentos electrónicos.  <br/> |
-|[Administración de la configuración de relevancia de eDiscovery avanzado](manage-relevance-setup-in-advanced-ediscovery.md) <br/> |Lea las recomendaciones para configurar el aprendizaje de relevancia en eDiscovery avanzado para puntuar los archivos por su relevancia y generar resultados analíticos.  <br/> |
-|[Uso del módulo de relevancia de eDiscovery avanzado](use-relevance-in-advanced-ediscovery.md) <br/> |Obtenga información sobre el módulo de relevancia en la exhibición avanzada de documentos electrónicos, incluido un flujo de trabajo y instrucciones y pasos para la revisión de archivos y aprendizaje.  <br/> |
-|[Exportación de datos de casos con eDiscovery avanzado](export-case-data-in-advanced-ediscovery.md) <br/> |Comprenda las directrices para exportar datos de casos de exhibición de documentos electrónicos y resultados para revisión externa.  <br/> |
-|[Aumentar la velocidad de descarga al exportar resultados de búsqueda de exhibición de documentos electrónicos de Office 365](increase-download-speeds-when-exporting-ediscovery-results.md) <br/> |Obtenga información sobre cómo configurar el registro de Windows para aumentar la velocidad de descarga al exportar datos de casos de la exhibición avanzada de documentos electrónicos.  <br/> |
-   
-[Return to top](ediscovery.md#top)
-  
+La solución Advanced eDiscovery de Microsoft 365 se basa en las capacidades existentes de eDiscovery y de análisis en Office 365. Esta nueva solución, denominada *exhibición avanzada*de documentos electrónicos, proporciona un flujo de trabajo de un extremo a otro para preservar, recopilar, revisar, analizar y exportar contenido que responde a las investigaciones internas y externas de la organización. También permite a los equipos jurídicos administrar todo el flujo de trabajo de notificación de retención legal para comunicarse con los administradores involucrados en un caso. 
 
+Para obtener más información, vea [Overview of The Advanced eDiscovery Solution en Microsoft 365](compliance20/overview-ediscovery-20.md).

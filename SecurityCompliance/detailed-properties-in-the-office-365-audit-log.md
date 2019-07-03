@@ -15,19 +15,19 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: ce004100-9e7f-443e-942b-9b04098fcfc3
-description: Descripciones de las propiedades adicionales que se incluyen en un registro de auditoría de Office 365.
-ms.openlocfilehash: 8ce85ea452389b0d8239de88730acd6039cc02be
-ms.sourcegitcommit: a6968df6e47ab5733a995f1efdc6e3676c5b5d7b
+description: Descripciones de propiedades adicionales incluidas en un registro de auditoría de Office 365.
+ms.openlocfilehash: 00f2eb2a9259247085973642b317ffbca8ba064a
+ms.sourcegitcommit: b262d40f6daf06be26e7586f37b736e09f8a4511
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "35253939"
+ms.lasthandoff: 07/02/2019
+ms.locfileid: "35435160"
 ---
 # <a name="detailed-properties-in-the-office-365-audit-log"></a>Propiedades detalladas del registro de auditoría de Office 365
 
 Al exportar los resultados de una búsqueda de registros de auditoría desde el centro de seguridad & cumplimiento, tiene la opción de descargar todos los resultados que cumplan los criterios de búsqueda. Para ello, seleccione **exportar resultados** \> **descargar todos los resultados** en la página de **búsqueda de registros de auditoría** . Para obtener más información, vea [Buscar en el registro de auditoría en el Office 365](search-the-audit-log-in-security-and-compliance.md).
   
- Cuando se exportan todos los resultados de una búsqueda de registro de auditoría, los datos sin procesar del registro de auditoría unificada de Office 365 se copian a un archivo de valores separados por comas (CSV) que se descarga en el equipo local. Este archivo contiene información adicional de cada registro de auditoría de una columna denominada **AuditData**. Esta columna contiene una propiedad de varios valores para varias propiedades del registro de auditoría. Cada uno de los pares **propiedad: valor** de esta propiedad de varios valores se separan con una coma. 
+ Cuando se exportan todos los resultados de una búsqueda de registro de auditoría, los datos sin procesar del registro de auditoría unificada de Office 365 se copian en un archivo de valores separados por comas (CSV) que se descarga en el equipo local. Este archivo contiene información adicional de cada registro de auditoría de una columna denominada **AuditData**. Esta columna contiene una propiedad de varios valores para varias propiedades del registro de auditoría. Cada uno de los pares **propiedad: valor** de esta propiedad de varios valores se separan con una coma. 
   
 En la tabla siguiente se describen las propiedades que se incluyen (según el servicio de Office 365 en el que se produce un evento) en la columna **AuditData** de múltiples propiedades. El **servicio de Office 365 que tiene esta** columna de propiedad indica el servicio y el tipo de actividad (usuario o administrador) que incluye la propiedad. Para obtener información más detallada acerca de estas propiedades o sobre las propiedades que podrían no aparecer en este tema, consulte [Office 365 Management Activity Schema API](https://go.microsoft.com/fwlink/p/?LinkId=717993).
   
@@ -49,7 +49,7 @@ En la tabla siguiente se describen las propiedades que se incluyen (según el se
 |CreationTime|La fecha y hora en formato Hora universal coordinada (UTC) en las que el usuario ha realizado la actividad.|Todo|
 |DestinationFileExtension|La extensión del archivo que se copia o mueve. Esta propiedad solo se muestra para las actividades de usuario de los y FileMoved.|SharePoint|
 |DestinationFileName|El nombre del archivo se copia o se mueve. Esta propiedad solo se muestra para las acciones los y FileMoved.|SharePoint|
-|DestinationRelativeUrl|La dirección URL de la carpeta de destino donde se copia o se mueve un archivo. La combinación de los valores de **SiteURL**, **DestinationRelativeURL**y las propiedades **DestinationFileName** es igual que el valor de la propiedad **objectId** , que es el nombre de la ruta de acceso completa del archivo que se copió. Esta propiedad solo se muestra para las actividades de usuario de los y FileMoved.|SharePoint|
+|DestinationRelativeUrl|La dirección URL de la carpeta de destino donde se copia o se mueve un archivo. La combinación de los valores de **SiteURL**, **DestinationRelativeURL**y la propiedad **DestinationFileName** es el mismo que el valor de la propiedad **objectId** , que es el nombre de la ruta de acceso completa del archivo que se ha copiado. Esta propiedad solo se muestra para las actividades de usuario de los y FileMoved.|SharePoint|
 |EventSource|Identifica que un evento se produjo en SharePoint. Los valores posibles son **SharePoint** y **ObjectModel**.|SharePoint|
 |ExternalAccess|Para la actividad de administración de Exchange, especifica si un usuario de la organización ejecutó el cmdlet, el personal del centro de administración de Microsoft o una cuenta de servicio de centro de recursos, o un administrador delegado. El valor **False** indica que el cmdlet lo ejecutó algún usuario de su organización. El valor **True** indica que el cmdlet lo ejecutó el personal del centros de datos, una cuenta de servicio del centro de datos o un administrador delegado.  <br/> Para la actividad de buzón de correo de Exchange, especifica si un usuario de fuera de la organización obtuvo acceso a un buzón.|Exchange|
 |ExtendedProperties|Las propiedades extendidas de un evento de Azure Active Directory.|Azure Active Directory|
@@ -75,9 +75,9 @@ En la tabla siguiente se describen las propiedades que se incluyen (según el se
 |SiteUrl|La dirección URL del sitio donde se encuentra el archivo o la carpeta a la que obtuvo acceso el usuario.|SharePoint|
 |SourceFileExtension|La extensión del archivo al que obtuvo acceso el usuario. Esta propiedad está en blanco si el objeto al que se obtuvo acceso es una carpeta.|SharePoint|
 |SourceFileName|El nombre del archivo o carpeta al que obtuvo acceso el usuario.|SharePoint|
-|SourceRelativeUrl|La dirección URL de la carpeta que contiene el archivo al que obtuvo acceso el usuario. La combinación de los valores de las propiedades **SiteURL**, **SourceRelativeURL**y **SourceFileName** es la misma que el valor de la propiedad **objectId** , que es el nombre de ruta completo del archivo al que ha tenido acceso el usuario.|SharePoint|
+|SourceRelativeUrl|La dirección URL de la carpeta que contiene el archivo al que obtuvo acceso el usuario. La combinación de los valores de **SiteURL**, **SourceRelativeURL**y la propiedad **SourceFileName** es la misma que el valor de la propiedad **objectId** , que es el nombre de la ruta de acceso completa del archivo al que tiene acceso el usuario.|SharePoint|
 |Subject|La línea de asunto del mensaje al que se obtuvo acceso.|Exchange (actividad de buzón de correo)|
-|TabType| Tipo de ficha agregada, eliminada o actualizada en un equipo. Los valores posibles de esta propiedad son:  <br/><br/> **Excelpin** : una pestaña de Excel.  <br/> **Extensión** : todas las aplicaciones de origen y de terceros; como Planner, VSTS y Forms.  <br/> **Notas** : pestaña OneNote.  <br/> **Pdfpin** : una ficha PDF.  <br/> **Powerbi** -una pestaña de powerbi.  <br/> **Powerpointpin** : una pestaña de PowerPoint.  <br/> **Sharepointfiles** : una pestaña de SharePoint.  <br/> **Página Web** : ficha de un sitio web anclado.  <br/> **Wiki: pestaña** : ficha wiki.  <br/> **Wordpin** : una pestaña de Word.|Microsoft Teams|
+|TabType| Tipo de ficha agregada, eliminada o actualizada en un equipo. Los valores posibles de esta propiedad son:  <br/><br/> **PIN de Excel** : una pestaña de Excel.  <br/> **Extensión** : todas las aplicaciones de origen y de terceros; como programación de clases, VSTS y formularios.  <br/> **Notas** : pestaña OneNote.  <br/> **Pdfpin** : una ficha PDF.  <br/> **Powerbi** -una pestaña de powerbi.  <br/> **Powerpointpin** : una pestaña de PowerPoint.  <br/> **Sharepointfiles** : una pestaña de SharePoint.  <br/> **Página Web** : ficha de un sitio web anclado.  <br/> **Wiki: pestaña** : ficha wiki.  <br/> **Wordpin** : una pestaña de Word.|Microsoft Teams|
 |Target|El usuario en el que se realizó la acción (identificada en la propiedad **Operation** ) en. Por ejemplo, si se agrega un usuario Guest a SharePoint o a un equipo de Microsoft, dicho usuario aparecerá en esta propiedad.|Azure Active Directory|
 |TeamGuid|El identificador de un equipo en Microsoft Teams.|Microsoft Teams|
 |TeamName|El nombre de un equipo en Microsoft Teams.|Microsoft Teams|
