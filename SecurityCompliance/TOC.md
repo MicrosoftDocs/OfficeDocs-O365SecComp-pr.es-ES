@@ -30,7 +30,7 @@
 ### [Aplicar una etiqueta de confidencialidad automáticamente al contenido](apply-sensitivity-label-automatically.md)
 ### [Ver el uso de etiquetas con el análisis de etiquetas](label-analytics.md)
 
-## [Evitar la pérdida de datos (DLP)](data-loss-prevention-policies.md)
+## [Prevención de pérdida de datos (DLP)](data-loss-prevention-policies.md)
 ### [DLP y Microsoft Teams](dlp-microsoft-teams.md)
 ### [Ver una descripción general ampliada de DLP](https://channel9.msdn.com/events/ignite/microsoft-ignite-orlando-2017/brk3111)
 ### Configurar DLP
