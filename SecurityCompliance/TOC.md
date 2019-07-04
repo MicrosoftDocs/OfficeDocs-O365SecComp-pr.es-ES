@@ -103,6 +103,7 @@
 #### [Usar un conector de ejemplo para archivar datos de Facebook](archive-facebook-data-with-sample-connector.md)
 #### [Usar un conector de ejemplo para archivar datos de Twitter](archive-twitter-data-with-sample-connector.md)
 #### [Configurar un conector para archivar datos de LinkedIn](archive-linkedin-data.md)
+#### [Configurar un conector para archivar datos instantáneos de Bloomberg](archive-instant-bloomberg-data.md)
 #### [Trabajar con un socio para archivar datos de terceros](work-with-partner-to-archive-third-party-data.md)
 ## Almacenar datos
 ### [Habilitar buzones de archivo](enable-archive-mailboxes.md)
@@ -245,6 +246,7 @@
 #### [Usar un conector de ejemplo para archivar datos de Facebook](archive-facebook-data-with-sample-connector.md)
 #### [Usar un conector de ejemplo para archivar datos de Twitter](archive-twitter-data-with-sample-connector.md)
 #### [Configurar un conector para archivar datos de LinkedIn](archive-linkedin-data.md)
+#### [Configurar un conector para archivar datos instantáneos de Bloomberg](archive-instant-bloomberg-data.md)
 #### [Trabajar con un socio para archivar datos de terceros](work-with-partner-to-archive-third-party-data.md)
 ## Almacenar datos
 ### [Habilitar buzones de archivo](enable-archive-mailboxes.md)
@@ -482,6 +484,7 @@
 ## [Activar o desactivar la búsqueda de registros de auditoría](turn-audit-log-search-on-or-off.md)
 ## [Administrar la auditoría de buzones de correo](enable-mailbox-auditing.md)
 ## [Propiedades detalladas del registro de auditoría](detailed-properties-in-the-office-365-audit-log.md)
+## [Exportar, configurar y ver registros de registro de auditoría](export-view-audit-log-records.md)
 ## [Usar el registro de auditoría para solucionar escenarios comunes](auditing-troubleshooting-scenarios.md)
 ## [Usar el uso compartido de auditoría en el registro de auditoría](use-sharing-auditing.md)
 ## [Buscar actividades de eDiscovery en el registro de auditoría](search-for-ediscovery-activities-in-the-audit-log.md)
