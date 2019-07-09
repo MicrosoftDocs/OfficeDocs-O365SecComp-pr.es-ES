@@ -3,7 +3,7 @@ title: Introducción a las barreras de información
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 06/28/2019
+ms.date: 07/08/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -11,20 +11,20 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Usar barreras de la información para garantizar el cumplimiento de la comunicación mediante Microsoft Teams en su organización.
-ms.openlocfilehash: 9750eab3c91b40cc96e16a386dbf59ba767ae877
-ms.sourcegitcommit: 011bfa60cafdf47900aadf96a17eb275efa877c4
+ms.openlocfilehash: e37c97ae8a5e3777e2a30432e8289abadae8f14c
+ms.sourcegitcommit: a6f046f1529b0515f4f0e918a19ec83f4138b871
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2019
-ms.locfileid: "35394285"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "35587049"
 ---
-# <a name="information-barriers-preview"></a>Barreras de la información (versión preliminar)
+# <a name="information-barriers"></a>Barreras de la información
 
 ## <a name="overview"></a>Información general
 
 Los servicios en la nube de Microsoft incluyen eficaces capacidades de comunicación y colaboración. Pero supongamos que desea restringir las comunicaciones entre dos grupos para evitar que se produzca un conflicto de intereses en la organización. O quizás desee restringir las comunicaciones entre determinadas personas dentro de la organización con el fin de proteger la información interna. Microsoft 365 permite la comunicación y la colaboración entre grupos y organizaciones, así que hay una forma de restringir las comunicaciones entre grupos de usuarios específicos cuando sea necesario. Con las barreras de la información, puede hacerlo. 
 
-Las barreras de la información están ahora en versión preliminar, comenzando con Microsoft Teams. Cuando estas características están disponibles para su organización, un administrador de cumplimiento o una barrera de la información pueden definir directivas para permitir o impedir las comunicaciones entre grupos de usuarios en Microsoft Teams. Las directivas de barrera de información se pueden usar para situaciones como estas:
+Las barreras de la información se están implementando ahora, a partir de Microsoft Teams. Suponiendo que la [suscripción](#required-licenses-and-permissions) incluya barreras informativas, un administrador de cumplimiento o barreras de información puede definir directivas para permitir o impedir las comunicaciones entre grupos de usuarios en Microsoft Teams. Las directivas de barrera de información se pueden usar para situaciones como estas:
 
 - Un comerciante de día no puede llamar a alguien del equipo de marketing
 - El personal de finanzas que trabaja con información de la compañía confidencial no puede recibir llamadas de determinados grupos de la organización
@@ -34,7 +34,7 @@ Las barreras de la información están ahora en versión preliminar, comenzando 
 Para todos estos escenarios de ejemplo (y más), se pueden definir directivas de barrera de información para impedir o permitir las comunicaciones en Microsoft Teams. Estas directivas pueden impedir que los usuarios llamen o chatean con ellos que no deben, o bien permitir que los usuarios se comuniquen solo con grupos específicos en Microsoft Teams. Con las directivas de barrera de información en vigor, cada vez que los usuarios que están cubiertos por estas directivas intentan comunicarse con otros usuarios de Microsoft Teams, se realizan comprobaciones para evitar (o permitir) la comunicación (según las directivas de la barrera de información definida). Para obtener más información sobre la experiencia del usuario con barreras de información, consulte [barreras de la información en Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams).
 
 > [!IMPORTANT]
-> Actualmente, las barreras de información no se aplican a las comunicaciones de correo electrónico ni al uso compartido de archivos a través de SharePoint Online o OneDrive. Además, las barreras de información son independientes de los [límites de cumplimiento](set-up-compliance-boundaries.md).<p>Antes de definir y aplicar directivas de barrera de información, asegúrese de que la organización no tiene [directivas de libreta de direcciones de Exchange](https://docs.microsoft.com/en-us/exchange/address-books/address-book-policies/address-book-policies) en vigor.  
+> Actualmente, las barreras de información no se aplican a las comunicaciones de correo electrónico ni al uso compartido de archivos a través de SharePoint Online o OneDrive. Además, las barreras de información son independientes de los [límites de cumplimiento](set-up-compliance-boundaries.md).<p>Antes de definir y aplicar directivas de barrera de información, asegúrese de que la organización no tiene [directivas de libreta de direcciones de Exchange](https://docs.microsoft.com/en-us/exchange/address-books/address-book-policies/address-book-policies) en vigor. (Las barreras de información se basan en las directivas de la libreta de direcciones). 
 
 ## <a name="what-happens-with-information-barriers"></a>Qué sucede con las barreras de la información
 
@@ -55,7 +55,7 @@ Para obtener más información sobre la experiencia del usuario con barreras de 
 
 ## <a name="required-licenses-and-permissions"></a>Permisos y licencias necesarios
 
-**Actualmente, las barreras de información están en versión preliminar**. Si estas características están disponibles para el público en general, se incluirán en las suscripciones, como:
+Las barreras de información se están implementando ahora y se incluyen en las suscripciones, como:
 
 - Microsoft 365 E5
 - Office 365 E5
@@ -83,5 +83,5 @@ Debe estar familiarizado con los cmdlets de PowerShell para poder definir, valid
 
 - [Definir políticas para las barreras de la información](information-barriers-policies.md)
 
-- [Edición (o eliminación) de directivas de barrera de información (versión preliminar)](information-barriers-edit-segments-policies.md.md) 
+- [Editar (o quitar) directivas de barrera de información](information-barriers-edit-segments-policies.md.md) 
 

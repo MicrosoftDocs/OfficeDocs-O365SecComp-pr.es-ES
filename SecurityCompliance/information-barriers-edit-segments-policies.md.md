@@ -3,7 +3,7 @@ title: Editar directivas de barrera de información
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 06/28/2019
+ms.date: 07/08/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -11,14 +11,14 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Obtenga información sobre cómo editar o quitar directivas para las barreras de información.
-ms.openlocfilehash: c3dca18ad217b89d9f9ae78b590cfb07f4631f37
-ms.sourcegitcommit: 011bfa60cafdf47900aadf96a17eb275efa877c4
+ms.openlocfilehash: c55ffac0984fe83fec1ef7b995d1589ea770bfef
+ms.sourcegitcommit: a6f046f1529b0515f4f0e918a19ec83f4138b871
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2019
-ms.locfileid: "35394335"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "35587079"
 ---
-# <a name="edit-or-remove-information-barrier-policies-preview"></a>Edición (o eliminación) de directivas de barrera de información (versión preliminar)
+# <a name="edit-or-remove-information-barrier-policies"></a>Editar (o quitar) directivas de barrera de información
 
 Una vez que haya [definido las directivas de barrera de información](information-barriers-policies.md), es posible que deba realizar cambios en dichas directivas o en sus segmentos de usuario, como parte de la solución de [problemas](information-barriers-troubleshooting.md) o del mantenimiento regular. Use este artículo como guía.
 
@@ -32,8 +32,8 @@ Una vez que haya [definido las directivas de barrera de información](informatio
 |[Definir un estado inactivo de una directiva](#set-a-policy-to-inactive-status)     |Establezca un estado inactivo para una Directiva cuando desee realizar cambios en una directiva o cuando no desee que una directiva esté en vigor.         |
 |[Quitar una directiva](#remove-a-policy)     |Quite una directiva de barrera de información cuando ya no necesite una Directiva concreta en su ubicación.         |
 |[Detención de una aplicación de Directiva](#stop-a-policy-application)     |Haga esto cuando quiera detener el proceso de aplicación de directivas de barrera de información.<br/>Tenga en cuenta que la detención de una aplicación de Directiva no es instantánea y no deshace las directivas que ya se han aplicado a los usuarios.         |
-|[Definir directivas para las barreras de información (vista previa)](information-barriers-policies.md)     |Defina una directiva de barrera de información cuando no tenga ya dichas directivas y deba restringir o limitar las comunicaciones entre grupos de usuarios específicos.         |
-|[Solución de problemas de las barreras de la información (versión preliminar)](information-barriers-troubleshooting.md)     |Consulte este artículo cuando surgen problemas inesperados con barreras de información.         |
+|[Definir políticas para las barreras de la información](information-barriers-policies.md)     |Defina una directiva de barrera de información cuando no tenga ya dichas directivas y deba restringir o limitar las comunicaciones entre grupos de usuarios específicos.         |
+|[Solución de problemas de obstáculos para la información](information-barriers-troubleshooting.md)     |Consulte este artículo cuando surgen problemas inesperados con barreras de información.         |
 
 > [!IMPORTANT]
 > Para llevar a cabo las tareas descritas en este artículo, debe tener asignada una función adecuada, como una de las siguientes:<br/>-Administrador global de Microsoft 365 Enterprise<br/>-Office 365 administrador global<br/>-Administrador de cumplimiento<br/>-IB Compliance Management (este es un nuevo rol).<p>Para obtener más información sobre los requisitos previos para las barreras de información, vea [requisitos previos (para las directivas de barrera de información)](information-barriers-policies.md#prerequisites).<p>Asegúrese de [conectarse a PowerShell del centro de seguridad & cumplimiento de Office 365](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
@@ -52,7 +52,7 @@ Los atributos de cuenta de usuario se usan para definir segmentos para que se pu
     |---------|---------|
     |`Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p>   Puede usar cualquier valor que identifique de forma exclusiva a cada usuario, como el nombre, el alias, el nombre distintivo, el nombre de dominio canónico, la dirección de correo electrónico o el GUID. <p>   (También puede usar este cmdlet para un solo usuario: `Get-InformationBarrierRecipientStatus -Identity <value>`)      |`Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw`  <p>   En este ejemplo, se hace referencia a dos cuentas de usuario en Office 365: *meganb* para *Nuria*y *alexw* para *Alex*.         |
 
-2. Determine qué atributo desea editar para los perfiles de cuenta de usuario. Consulte [atributos para las directivas de barrera de información (vista previa)](information-barriers-attributes.md) para obtener más información. 
+2. Determine qué atributo desea editar para los perfiles de cuenta de usuario. Consulte [atributos para las directivas de barrera de información](information-barriers-attributes.md) para obtener más información. 
 
 3. Edite una o más cuentas de usuario para incluir valores para el atributo que seleccionó en el paso anterior. Para ello, use uno de los procedimientos siguientes:
 
@@ -168,10 +168,10 @@ Si, después de empezar a aplicar directivas de barrera de información, desea d
 
 [Obtener información general sobre las barreras de la información](information-barriers.md)
 
-[Definir directivas para las barreras de información (vista previa)](information-barriers-policies.md)
+[Definir políticas para las barreras de la información](information-barriers-policies.md)
 
 [Obtenga más información sobre las barreras de la información en Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/information-barriers-in-teams)
 
-[Atributos de las directivas de barrera de información (vista previa)](information-barriers-attributes.md)
+[Atributos para directivas de barrera de información](information-barriers-attributes.md)
 
-[Solución de problemas de las barreras de la información (versión preliminar)](information-barriers-troubleshooting.md)
+[Solución de problemas de obstáculos para la información](information-barriers-troubleshooting.md)
