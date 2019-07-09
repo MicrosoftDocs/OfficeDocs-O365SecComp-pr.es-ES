@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con una directiva de retención, puede decidir de forma proactiva si quiere retener o eliminar contenido, ambos (retener y, a continuación, eliminar el contenido), aplicar una directiva única a la toda la organización o solo a determinadas ubicaciones o usuarios, o aplicar una directiva a todo el contenido o solo a aquel que cumpla ciertas condiciones.
-ms.openlocfilehash: 84470098cdbe1893a0e85dd52857bee428e58cbb
-ms.sourcegitcommit: b262d40f6daf06be26e7586f37b736e09f8a4511
+ms.openlocfilehash: 87abb5bde49204a465e820afd522d6757a10e97c
+ms.sourcegitcommit: a6f046f1529b0515f4f0e918a19ec83f4138b871
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35435260"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "35587119"
 ---
 # <a name="overview-of-retention-policies"></a>Introducción a las directivas de retención
 
@@ -58,7 +58,7 @@ Crear y administrar directivas de retención en:
 
 Cuando se incluye en una directiva de retención una ubicación como un sitio o buzón, el contenido permanece en su ubicación original. Los usuarios pueden seguir trabajando con sus documentos o buzones como si nada hubiera cambiado, pero si modifican o eliminan contenido que esté incluido en la directiva, se conservará una copia del mismo tal como era cuando se aplicó la directiva.
   
-Para las colecciones de sitios de Sharepoint, se conserva una copia del contenido original en la biblioteca de conservación de documentos cuando los usuarios lo modifican o eliminan; para el correo electrónico y las carpetas públicas, la copia se retiene en la carpeta Elementos recuperables. Estas ubicaciones seguras y el contenido retenido no son visibles para la mayoría de los usuarios. Con una directiva de retención, los usuarios ni siquiera necesitan saber que su contenido está sujeto a la directiva.
+Para las colecciones de sitios de SharePoint, se conserva una copia del contenido original en la biblioteca de suspensión para conservación cuando los usuarios lo modifican o eliminan. Para el correo electrónico y las carpetas públicas, la copia se conserva en la carpeta Elementos recuperables. Estas ubicaciones seguras y el contenido que se conserva no son visibles para la mayoría de los usuarios. Con una directiva de retención, los usuarios ni siquiera necesitan saber que su contenido está sujeto a la directiva.
   
 Notas:
   

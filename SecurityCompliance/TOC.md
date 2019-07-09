@@ -537,11 +537,11 @@
 ### [Novedades del Administrador de cumplimiento (Versión preliminar)](compliance-manager-release-notes.md)
 ### [Trabajar con el Administrador de cumplimiento (Versión preliminar)](working-with-compliance-manager.md)
 ### [Metodología de puntuación de cumplimiento (Versión preliminar)](compliance-score-methodology.md)
-## [Barreras de información (vista previa)](information-barriers.md)
-### [Definir directivas de barreras de información (vista previa)](information-barriers-policies.md)
-### [Atributos para las directivas de barreras de información (vista previa)](information-barriers-attributes.md)
-### [Solución de problemas de barreras de información (vista previa)](information-barriers-troubleshooting.md)
-### [Editar directivas de barreras de información (vista previa)](information-barriers-edit-segments-policies.md.md)
+## [Barreras de información](information-barriers.md)
+### [Definir directivas de barreras de información](information-barriers-policies.md)
+### [Atributos para las directivas de barreras de información](information-barriers-attributes.md)
+### [Solución de problemas de barreras de información](information-barriers-troubleshooting.md)
+### [Editar directivas de barreras de información](information-barriers-edit-segments-policies.md.md)
 
 
 ## Clave del cliente
