@@ -3,7 +3,7 @@ title: Bloquear correo no deseado en EOP independiente
 ms.author: tracyp
 author: msfttracyp
 ms.reviewer: andypunt
-manager: laurawi
+manager: dansimp
 ms.date: 2/25/2019
 audience: Admin
 ms.topic: article
@@ -16,12 +16,12 @@ ms.assetid: da21c0b6-e8f0-4cc8-af2e-5029a9433d59
 ms.collection:
 - M365-security-compliance
 description: Documento para administradores de EOP independiente para evitar falsos negativos de correo no deseado
-ms.openlocfilehash: a79fb94a233cd101caac96312b05a4c0d24ea645
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 20533f12ccc71fc97d82590efdaf551ab036b17d
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152202"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598496"
 ---
 ## <a name="customize-the-office-365-anti-spam-filter-with-these-settings"></a>Personalizar el filtro contra correo no deseado de Office 365 con estas opciones de configuración
 
@@ -35,7 +35,7 @@ Para personalizar el filtro contra correo no deseado de Office 365, agregue la d
     
 2. Busque la dirección IP después de la etiqueta CIP en el encabezado X-Forefront-Antispam-Report con el [Analizador de encabezados de mensaje](https://testconnectivity.microsoft.com/?tabid=mha) o de forma manual. 
     
-3. Para agregar la dirección IP a la lista de direcciones IP bloqueadas, siga los pasos que se indican en “Usar el EAC para editar la directiva de filtro de conexión predeterminada” en [Configurar la directiva de filtro de conexiones](https://technet.microsoft.com/es-ES/library/jj200718%28v=exchg.150%29.aspx).
+3. Para agregar la dirección IP a la lista de direcciones IP bloqueadas, siga los pasos que se indican en “Usar el EAC para editar la directiva de filtro de conexión predeterminada” en [Configurar la directiva de filtro de conexiones](https://technet.microsoft.com/en-us/library/jj200718%28v=exchg.150%29.aspx).
     
 ### <a name="block-bulk-mail-with-mail-flow-rules-transport-rules-or-the-spam-filter"></a>Bloquear el correo masivo con reglas de flujo de correo (reglas de transporte) o el filtro de correo no deseado
 
@@ -45,8 +45,7 @@ Para personalizar el filtro contra correo no deseado de Office 365, agregue la d
   
 ### <a name="block-email-spam-using-spam-filter-block-lists"></a>Bloquear el correo no deseado con listas de bloqueados de filtro de correo no deseado
 
-
-  [Configure las directivas de filtro de correo no deseado](https://technet.microsoft.com/es-ES/library/jj200684%28v=exchg.150%29.aspx) para agregar la dirección del remitente a la lista de bloqueados del remitente o agregue el dominio a la lista de bloqueados del dominio en el filtro de correo no deseado. Los correos electrónicos de un remitente o dominio que se encuentre en la lista de bloqueados de filtro de correo no deseado se marcarán como correo no deseado. 
+[Configure las directivas de filtro de correo no deseado](https://technet.microsoft.com/en-us/library/jj200684%28v=exchg.150%29.aspx) para agregar la dirección del remitente a la lista de bloqueados del remitente o agregue el dominio a la lista de bloqueados del dominio en el filtro de correo no deseado. Los correos electrónicos de un remitente o dominio que se encuentre en la lista de bloqueados de filtro de correo no deseado se marcarán como correo no deseado. 
   
 ## <a name="email-users-can-also-help-ensure-that-false-negative-and-email-spam-is-blocked-with-office-365-spam-filter"></a>Los usuarios de correo electrónico también pueden asegurarse de que los falsos negativos y el correo no deseado se bloqueen con un filtro contra correo no deseado de Office 365.
 
@@ -55,7 +54,7 @@ Facilitará los esfuerzos contra correo no deseado de Office 365 para impedir fa
 ![Bloquear un remitente en Outlook en la Web](media/fdf51381-2527-4819-ac2a-5dff84d2a36d.png)
   
 > [!NOTE]
-> Para obtener más información sobre las listas de remitentes seguros, vea [Preguntas frecuentes sobre listas de remitentes seguros y remitentes bloqueados](https://technet.microsoft.com/es-ES/library/dn133608%28v=exchg.150%29.aspx). 
+> Para obtener más información sobre las listas de remitentes seguros, vea [Preguntas frecuentes sobre listas de remitentes seguros y remitentes bloqueados](https://technet.microsoft.com/en-us/library/dn133608%28v=exchg.150%29.aspx). 
   
 ## <a name="eop-only-customers-set-up-directory-synchronization"></a>Solo clientes de EOP: configurar la sincronización de directorios
 

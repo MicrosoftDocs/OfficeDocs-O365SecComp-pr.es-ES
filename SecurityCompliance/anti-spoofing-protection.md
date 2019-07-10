@@ -2,7 +2,7 @@
 title: Protección contra la suplantación de identidad en Office 365
 ms.author: tracyp
 author: MSFTtracyp
-manager: laurawi
+manager: dansimp
 ms.date: 03/29/2019
 audience: ITPro
 ms.topic: article
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: TopSMBIssues
 localization_priority: Priority
 description: Este artículo describe cómo Office 365 reduce los ataques de phishing que usan dominios de remitentes falsificados, es decir, dominios suplantados. Para ello, analiza los mensajes y bloquea los que no pueden autenticarse mediante métodos de autenticación de correo electrónico estándar ni otras técnicas de reputación del remitente. Este cambio se implementó para reducir el número de ataques de phishing a los que se exponen las organizaciones de Office 365.
-ms.openlocfilehash: 455ce577e4ffb3dc4d943004dd3c299e7e6f1eae
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 066fbee27291ad8d89a7cb9d0f2abc586835b780
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155782"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598376"
 ---
 # <a name="anti-spoofing-protection-in-office-365"></a>Protección contra la suplantación de identidad en Office 365
 
@@ -114,7 +114,7 @@ Microsoft distingue entre dos tipos de mensajes de suplantación de identidad:
   
  **Suplantación de identidad dentro de la organización**
   
-También se denomina suplantación interna, esto ocurre cuando el dominio de la dirección en De: es igual o se alinea con el dominio del destinatario (cuando este es uno de los [dominios aceptados](https://technet.microsoft.com/es-ES/library/jj945194%28v=exchg.150%29.aspx) de su organización) o si el dominio de la dirección en De: es parte de la misma organización.
+También se denomina suplantación interna, esto ocurre cuando el dominio de la dirección en De: es igual o se alinea con el dominio del destinatario (cuando este es uno de los [dominios aceptados](https://technet.microsoft.com/en-us/library/jj945194%28v=exchg.150%29.aspx) de su organización) o si el dominio de la dirección en De: es parte de la misma organización.
   
 Por ejemplo, los siguientes tienen remitente y destinatario desde el mismo dominio (contoso.com). Se insertan espacios en la dirección de correo electrónico para evitar la recopilación de los spambot en esta página):
   
@@ -653,7 +653,7 @@ La tecnología contra la suplantación de Microsoft se implementó inicialmente 
   
 ### <a name="how-can-i-report-spam-or-non-spam-messages-back-to-microsoft"></a>¿Cómo señalar mensajes de correo no deseado o correo deseado a Microsoft?
 
-Puede usar el [complemento de mensaje de informe para Outlook](https://support.office.com/article/use-the-report-message-add-in-b5caa9f1-cdf3-4443-af8c-ff724ea719d2) o, si no está instalado, vea [Enviar mensajes de análisis de spam, correo deseado y phishing a Microsoft](https://technet.microsoft.com/es-ES/library/jj200769%28v=exchg.150%29.aspx).
+Puede usar el [complemento de mensaje de informe para Outlook](https://support.office.com/article/use-the-report-message-add-in-b5caa9f1-cdf3-4443-af8c-ff724ea719d2) o, si no está instalado, vea [Enviar mensajes de análisis de spam, correo deseado y phishing a Microsoft](https://technet.microsoft.com/en-us/library/jj200769%28v=exchg.150%29.aspx).
   
 ### <a name="im-a-domain-administrator-who-doesnt-know-who-all-my-senders-are"></a>Soy un administrador de dominios y no sé quiénes son mis remitentes.
 
