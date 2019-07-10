@@ -1,8 +1,8 @@
 ---
 title: 'Exchange Online Protection '
-ms.author: krowley
-author: kccross
-manager: laurawi
+ms.author: tracyp
+author: MSFTTracyP
+manager: dansimp
 ms.date: 12/9/2016
 audience: ITPro
 ms.topic: hub-page
@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 70ab4af2-fec4-4886-8e12-27d348649204
 description: Estas son algunas de las cosas que debe tener en cuenta antes de empezar a trabajar con EOP.
-ms.openlocfilehash: 3bf4874e3ab445813ee03de4def23ed12f66f537
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 85eee97632f90be224aea669c1bbabf32e252688
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34154672"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35599726"
 ---
 # <a name="exchange-online-protection"></a>Exchange Online Protection 
 

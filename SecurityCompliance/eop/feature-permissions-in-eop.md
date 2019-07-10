@@ -1,8 +1,8 @@
 ---
 title: Permisos de características en EOP
-ms.author: krowley
-author: kccross
-manager: laurawi
+ms.author: tracyp
+author: MSFTTracyP
+manager: dansimp
 ms.date: 1/30/2018
 audience: ITPro
 ms.topic: article
@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 34674847-a6b7-4a7e-9eaa-b64f22bc150d
 description: Los permisos necesarios para hacer tareas de administración en Microsoft Exchange Online Protection (EOP) varían en función de la característica que se administre.
-ms.openlocfilehash: 025a4a5c00eda9e9e67468088183b71f6d79c7c3
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 02c27609ef39ce971db2c555d6a345e94e98f470
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34154652"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35599686"
 ---
 # <a name="feature-permissions-in-eop"></a>Permisos de características en EOP
 

@@ -2,7 +2,7 @@
 title: Enviar notificaciones de email y mostrar sugerencias para directivas DLP
 ms.author: deniseb
 author: denisebmsft
-manager: laurawi
+manager: dansimp
 ms.date: 06/14/2019
 audience: Admin
 ms.topic: article
@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'Una sugerencia de directiva es una notificación o advertencia que aparece cuando alguien trabaja con contenido que entra en conflicto con una directiva DLP. Puede usar notificaciones de correo electrónico y sugerencias de directiva para aumentar el conocimiento y ayudar a los usuarios acerca de las directivas de la organización. También puede dar a los usuarios la opción de invalidar la Directiva, de modo que no se bloqueen si tienen una necesidad empresarial válida o si la Directiva está detectando un falso positivo. '
-ms.openlocfilehash: 4de22c8ad8a45cf1489e72516d30f078889774e3
-ms.sourcegitcommit: 9df5bf99c1860ace0c5cc90647733d075be412ad
+ms.openlocfilehash: 524499c7d530115ad5938d0ec60616afe1d174ff
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "34948908"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35600606"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>Enviar notificaciones de email y mostrar sugerencias para directivas DLP
 

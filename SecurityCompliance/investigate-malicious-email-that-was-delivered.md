@@ -2,7 +2,7 @@
 title: Buscar y investigar correo electrónico malintencionado que se entregó (Office 365 de investigación y respuesta de amenazas
 ms.author: deniseb
 author: denisebmsft
-manager: laurawi
+manager: dansimp
 ms.date: 03/19/2019
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo usar la investigación de amenazas y las capacidades de respuesta para buscar y investigar correo electrónico malintencionado.
-ms.openlocfilehash: febcf6704b1ba9dc23bf4e698715fb4b929b998b
-ms.sourcegitcommit: d3b2bffa8af5f19d97fe9771068c80705b890e85
+ms.openlocfilehash: d96083f0f48136b1c789fa83f9e9069d0dfccf4d
+ms.sourcegitcommit: 5abe4c11bf3c0659180c7812dd26be9689ab01ca
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "35414810"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35605455"
 ---
 # <a name="find-and-investigate-malicious-email-that-was-delivered-office-365-advanced-threat-protection-plan-2"></a>Buscar e investigar correo electrónico malintencionado que se entregó (Office 365 Advanced Threat Protection Plan 2)
 
@@ -78,10 +78,21 @@ Para ver los cambios en el campo Estado de entrega anterior (ahora acción de en
 1. Vaya a [https://protection.office.com](https://protection.office.com) e inicie sesión con su cuenta profesional o educativa para Office 365. Esto le llevará al centro de &amp; seguridad y cumplimiento. 
     
 2. En el panel de navegación izquierdo, elija **Threat Management** \> **Explorer**.
-<!--Comment>
-![Threat Explorer with Delivery Action and Delivery Location fields.](media/ThreatExFields.PNG)
 
-    
+
+![Explorador de amenazas con los campos acción de entrega y ubicación de entrega.](media/ThreatExFields.PNG)
+
+Puede que vea la nueva columna "acciones especiales" en este gráfico. Esta característica está destinada a comunicar a los administradores el resultado del procesamiento de un correo electrónico. Las acciones especiales pueden actualizarse al final de la escala de *tiempo de correo electrónico*del explorador de amenazas, que es una nueva característica destinada a mejorar la experiencia de búsqueda para los administradores.
+
+La escala de tiempo del correo electrónico reduce la aleatoriedad porque hay menos tiempo dedicado a comprobar diferentes ubicaciones para tratar de comprender los eventos que han sucedido desde que llegó el correo electrónico. Cuando se producen varios eventos en, o cerca de, al mismo tiempo en un correo electrónico, esos eventos se mostrarán en una vista escala de tiempo. Algunos de los eventos que se producen después de la entrega a su correo se capturarán en la columna "acciones especiales". La combinación de la información de la *escala de tiempo de correo electrónico* de ese correo con las *acciones especiales* realizadas en la entrega posterior de correo proporcionará a los administradores información sobre cómo funcionan sus directivas, dónde se enrutó el correo finalmente y, en algunos casos, cuál es el final la evaluación fue. Se puede tener acceso a la columna acciones especiales en el mismo lugar que la acción de entrega y la ubicación de entrega, pero para ver una escala de tiempo de correo electrónico:
+
+1. Haga clic en el asunto del correo electrónico.
+2. En el panel que aparece, haga clic en *correo electrónico escala de tiempo*. (Aparecerá entre otros títulos en el panel, como "Resumen" o "detalles", et cetera.)
+
+Una vez que haya abierto la escala de tiempo de correo electrónico, verá una tabla que le indicará los eventos posteriores a la entrega para ese correo o, en el caso de que no haya más eventos para el correo electrónico, verá un solo evento para la entrega original que indicará un resultado como *bloqueado* con un veredicto como *phish*. La pestaña también tiene la opción de exportar toda la escala de tiempo de correo electrónico y, a continuación, se exportarán todos los detalles de la ficha y los detalles del correo electrónico (aspectos como el asunto, el remitente, el destinatario, la red y el identificador del mensaje).
+
+
+<!--Comment>    
 3. In the View menu, choose **All email**.<br/>![Use the View menu to choose between Email and Content reports](media/d39013ff-93b6-42f6-bee5-628895c251c2.png)
   
 4. Notice the labels that appear in the report, such as **Delivered**, **Unknown**, or **Delivered to junk**.<br/>![Threat Explorer showing data for all email](media/208826ed-a85e-446f-b276-b5fdc312fbcb.png)<br/>(Depending on the actions that were taken on email messages for your organization, you might see additional labels, such as **Blocked** or **Replaced**.)

@@ -2,27 +2,27 @@
 title: Seguimiento de mensajes en el Centro de seguridad y cumplimiento
 ms.author: chrisda
 author: chrisda
-manager: serdars
+manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: Los administradores pueden usar el seguimiento de mensajes en el centro de seguridad & cumplimiento para averiguar qué sucedió con los mensajes.
-ms.openlocfilehash: 0db1780057172fe1a6a6c1f7a334fbbd2220df30
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: fb173dd09adf02c1b2eb7d0dbf9d5736483f231b
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158682"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35601017"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Seguimiento de mensajes en el Centro de seguridad y cumplimiento
 
 ## <a name="overview"></a>Información general
 
-Seguimiento de mensajes en el centro de seguridad de & cumplimiento sigue los mensajes de correo electrónico que viajan a través de la organización de Exchange Online. Puede determinar si el servicio ha recibido, rechazado, aplazado o entregado un mensaje. También muestra las acciones que se tomaron en el mensaje antes de que alcanzara su estado final.
+Seguimiento de mensajes en el centro de seguridad & cumplimiento sigue los mensajes de correo electrónico mientras viajan a través de la organización de Exchange Online. Puede determinar si el servicio ha recibido, rechazado, aplazado o entregado un mensaje. También muestra las acciones que se tomaron en el mensaje antes de que alcanzara su estado final.
 
-El seguimiento de mensajes en el centro de seguridad & Compliance Center mejora tras el seguimiento de mensajes que estaba disponible en el centro de administración de Exchange (EAC). Puede usar la información del seguimiento de mensajes para responder de manera eficiente a las preguntas de los usuarios sobre lo que sucedió con sus mensajes, solucionar problemas del flujo de correo y validar los cambios en la Directiva.
+El seguimiento de mensajes en el centro de seguridad & cumplimiento mejora según el seguimiento de mensajes que estaba disponible en el centro de administración de Exchange (EAC). Puede usar la información del seguimiento de mensajes para responder de manera eficiente a las preguntas de los usuarios sobre lo que sucedió con sus mensajes, solucionar problemas del flujo de correo y validar los cambios en la Directiva.
 
 ## <a name="open-message-trace"></a>Abrir el seguimiento de mensajes
 
@@ -32,7 +32,7 @@ El seguimiento de mensajes en el centro de seguridad & Compliance Center mejora 
 
 3. En el panel de navegación inferior izquierdo, expanda **centros de administración** y seleccione **seguridad & cumplimiento**.
 
-4. En la página **cumplimiento de seguridad &** que se abre, expanda **flujo de correo**y seleccione seguimiento de **mensajes**.
+4. En la página **seguridad & cumplimiento** que se abre, expanda **flujo de correo**y seleccione seguimiento de **mensajes**.
 
 ## <a name="message-trace-page"></a>Página de seguimiento de mensajes
 
@@ -145,7 +145,7 @@ Los diferentes tipos de informes devuelven diferentes niveles de información. L
 
 Después de ejecutar el seguimiento de mensajes, se mostrarán los resultados, ordenados por fecha y hora de forma descendente (primero el más reciente).
 
-![Resultados del informe de resumen para seguimiento de mensajes en el centro de seguridad & cumplimiento](media/0664bafe-0b03-477b-b571-0b046ac8c977.png)
+![Resultados del informe de Resumen de seguimiento de mensajes en el centro de seguridad & cumplimiento](media/0664bafe-0b03-477b-b571-0b046ac8c977.png)
 
 El informe de Resumen contiene la siguiente información:
 
@@ -183,7 +183,7 @@ En el resultado del informe de Resumen, puede ver los detalles de un mensaje med
 
 - Active la casilla de verificación de la fila y haga clic](media/1ea52bbf-9d00-48ce-9362-307f7f6fb7fe.png) \> en **más opciones** ![para **ver los detalles**de los mensajes.
 
-   ![Detalles después de hacer doble clic en una fila de los resultados del seguimiento de mensajes de informe de resumen en el centro de seguridad & cumplimiento](media/e50ee7cd-810a-4c06-8b58-e56ffd7028d1.png)
+   ![Detalles tras hacer doble clic en una fila en el informe de Resumen de resultados de seguimiento de mensajes en el centro de seguridad & cumplimiento](media/e50ee7cd-810a-4c06-8b58-e56ffd7028d1.png)
 
 Los detalles del seguimiento de mensajes contienen la siguiente información adicional que no está presente en el informe de Resumen:
 

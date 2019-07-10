@@ -3,7 +3,7 @@ title: Descripción de la evaluación en relevancia en Office 365 Advanced eDisc
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 9/14/2017
+ms.date: 09/14/2017
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 1d33d4fb-91ed-41c0-b72e-5a26eca3a2a7
 description: Obtenga información general sobre la fase de evaluación y su rol a la hora de determinar la riqueza de los problemas durante la formación de relevancia en la exhibición avanzada de documentos electrónicos de Office 365.
-ms.openlocfilehash: 229df3f51c6a71ddb644fcd45a6de0e30f9775b9
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 77d9449ad15fd3a53709f2a28a96b06ab54556eb
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155542"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598666"
 ---
 # <a name="understand-assessment-in-relevance-in-office-365-advanced-ediscovery"></a>Descripción de la evaluación en relevancia en Office 365 Advanced eDiscovery
 
@@ -48,7 +48,7 @@ Cada problema tiene su propia riqueza, el margen actual de error y, como resulta
 Puede aceptar las recomendaciones de relevancia o ajustar el margen de error actual de acuerdo con sus necesidades. El margen actual predeterminado del error se determina para la recuperación como igual o superior al 75%.
   
 > [!NOTE]
-> La fase de evaluación se puede omitir, en la pestaña **seguimiento de relevancia \> ** de la vista expandida para un problema, desactivando la casilla de verificación **evaluación** por problema y, a continuación, "todos los problemas". Sin embargo, como resultado, no habrá estadísticas para este problema. > desactivar la casilla de verificación **evaluación** solo puede realizarse antes de que se realice la evaluación. Cuando hay varios problemas en un caso, la evaluación se omite solo si la casilla de verificación está desactivada para cada problema 
+> La fase de evaluación se puede omitir, en la pestaña **seguimiento de relevancia \> ** de la vista expandida para un problema, desactivando la casilla de verificación **evaluación** por problema y, a continuación, "todos los problemas". Sin embargo, como resultado, no habrá estadísticas para este problema. > se puede desactivar la casilla de verificación **evaluación** antes de realizar la evaluación. Cuando hay varios problemas en un caso, la evaluación se omite solo si la casilla de verificación está desactivada para cada problema 
   
 ## <a name="see-also"></a>Vea también
 

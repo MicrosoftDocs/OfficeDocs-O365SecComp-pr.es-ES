@@ -2,8 +2,8 @@
 title: Informar a Microsoft sobre mensajes de correo electrónico no deseado
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
-ms.date: 12/9/2016
+manager: dansimp
+ms.date: 12/09/2016
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ ms.assetid: c31406ea-2979-4fac-9288-f835269b9d2f
 ms.collection:
 - M365-security-compliance
 description: 'El complemento de notificación de correo no deseado de Microsoft para Microsoft Office Outlook permite notificar mensajes de correo no deseado de varias formas:'
-ms.openlocfilehash: 46dec07830218022dcc9a44a41b93a87fdcc70bf
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 6064e60096ccad22fcb44ae35725640880b8468e
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157342"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35601207"
 ---
 # <a name="report-junk-email-messages-to-microsoft"></a>Informar a Microsoft sobre mensajes de correo electrónico no deseado
 

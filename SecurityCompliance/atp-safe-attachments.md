@@ -2,7 +2,7 @@
 title: Datos adjuntos seguros de ATP de Office 365
 ms.author: deniseb
 author: denisebmsft
-manager: laurawi
+manager: dansimp
 audience: Admin
 ms.date: 05/17/2019
 ms.topic: overview
@@ -15,12 +15,12 @@ ms.assetid: 6e13311e-92ae-495e-a619-56d770199170
 ms.collection:
 - M365-security-compliance
 description: La característica datos adjuntos seguros proporciona comprobación del tiempo de los datos adjuntos de correo electrónico. Usar datos adjuntos seguros para proteger a su organización de archivos malintencionados envíe o reciba mensajes de correo electrónico.
-ms.openlocfilehash: 2980349eaec22f1e67206f96b8ed22df539cdba7
-ms.sourcegitcommit: 4fedeb06a6e7796096fc6279cfb091c7b89d484d
+ms.openlocfilehash: 9077a555ca7f753448b866ce26f6ff4af5a165bd
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "34652623"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598576"
 ---
 # <a name="office-365-atp-safe-attachments"></a>Datos adjuntos seguros de ATP de Office 365
 

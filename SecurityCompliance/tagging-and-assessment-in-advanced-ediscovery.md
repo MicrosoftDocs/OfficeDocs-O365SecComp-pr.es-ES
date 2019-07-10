@@ -3,7 +3,7 @@ title: Etiquetado y evaluación en Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 9/14/2017
+ms.date: 09/14/2017
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: b5c82de7-ed2f-4cc6-becd-db403faf4d18
 description: 'Revise los pasos para realizar la formación sobre la evaluación, incluidos los archivos de etiquetado y la revisión de los resultados de la evaluación en eDiscovery avanzado de Office 365. '
-ms.openlocfilehash: 15463ac841e2fbbafe1fe502657a659f4a9e1883
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 067f8933bd7fc1286e468d664bf4dbd754e64f00
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34156412"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35600743"
 ---
 # <a name="tagging-and-assessment-in-office-365-advanced-ediscovery"></a>Etiquetado y evaluación en Office 365 Advanced eDiscovery
 
@@ -47,7 +47,7 @@ En esta sección se describe el procedimiento para el módulo de evaluación de 
     ![Seguimiento de relevancia: evaluación](media/da911ba5-8678-40d6-9ad5-fd0b058355c1.png)
   
     > [!TIP]
-    > De forma predeterminada, se recomienda continuar con el paso siguiente predeterminado cuando se haya completado el indicador de progreso de la evaluación para el problema, lo que indica que se ha revisado la muestra de evaluación y que se han etiquetado los archivos relevantes necesarios. > de lo contrario, si desea ver los resultados de la ficha **seguimiento** y controlar el margen de error y el siguiente paso, haga clic en **modificar** junto al **siguiente paso**, seleccione **continuar evaluación**y, a continuación, haga clic en **Aceptar**. 
+    > De forma predeterminada, se recomienda continuar con el paso siguiente predeterminado cuando se haya completado el indicador de progreso de la evaluación para el problema, lo que indica que se ha revisado la muestra de evaluación y que se han etiquetado los archivos relevantes necesarios. De lo contrario, si desea ver los resultados de la ficha **seguimiento** y controlar el margen de error y el siguiente paso, haga clic en **modificar** junto al **siguiente paso**, seleccione **continuar evaluación**y, a continuación, haga clic en **Aceptar**. > 
   
 1. Haga clic en **modificar** a la derecha de la casilla **evaluación** para ver y especificar los parámetros de evaluación por problema. Se muestra un cuadro de diálogo de **nivel de evaluación** para cada problema, tal como se muestra en el ejemplo siguiente: 
     
@@ -118,7 +118,7 @@ Cuando la riqueza es muy baja, el número de archivos de evaluación adicionales
 En ausencia de estabilización basada en estadísticas, habrá resultados con un nivel inferior de precisión y nivel de confianza. Sin embargo, estos resultados se pueden usar para buscar archivos relevantes cuando no es necesario conocer el porcentaje de archivos relevantes encontrados. De forma similar, este estado puede usarse para entrenar problemas con escasa riqueza, donde los resultados de relevancia pueden acelerar el acceso a los archivos relevantes para un problema específico.
   
 > [!TIP]
-> En la **pestaña \> seguimiento de relevancia** , la visualización de problemas expandida, están disponibles las siguientes opciones de visualización: > el siguiente paso recomendado, como **paso siguiente: el etiquetado** se puede omitir (por problema) haciendo clic en el botón **modificar** para su a la derecha y, a continuación, seleccione un paso diferente en el **paso siguiente**. Cuando no se haya completado el indicador de progreso de la evaluación, la evaluación será la siguiente opción recomendada, para etiquetar más archivos de evaluación y aumentar la precisión de las estadísticas. > puede cambiar el margen de error y evaluar su impacto; para ello, haga clic en **modificar**y, en el **cuadro de diálogo nivel de evaluación**, cambie el **margen de error de destino para RECALL estimaciones**y haga clic en **actualizar valores**. Además, en este cuadro de diálogo, puede ver las opciones avanzadas haciendo clic en **avanzadas**. > puede ver estadísticas adicionales del nivel de evaluación y su impacto haciendo clic en **Ver**. En el cuadro de diálogo resultados detallados mostrados, las estadísticas están disponibles por problema, cuando hay al menos 500 archivos de evaluación etiquetada y al menos 18 archivos se etiquetan como pertinentes para el problema. 
+> En la **pestaña \> seguimiento de relevancia** , la visualización de problemas expandida, están disponibles las siguientes opciones de visualización: > el paso siguiente recomendado, como **paso siguiente:** se puede omitir el etiquetado (por problema) haciendo clic en el botón **modificar** situado a la derecha. y, a continuación, seleccione un paso diferente en el **paso siguiente**. Cuando no se haya completado el indicador de progreso de la evaluación, la evaluación será la siguiente opción recomendada, para etiquetar más archivos de evaluación y aumentar la precisión de las estadísticas. > puede cambiar el margen de error y evaluar su impacto; para ello, haga clic en **modificar**y, en el **cuadro de diálogo nivel de evaluación**, cambie el **margen de error de destino para RECALL estimaciones**y haga clic en **actualizar valores**. Además, en este cuadro de diálogo, puede ver las opciones avanzadas haciendo clic en **avanzadas**. > puede ver estadísticas del nivel de evaluación adicional y su impacto haciendo clic en **Ver**. En el cuadro de diálogo resultados detallados mostrados, las estadísticas están disponibles por problema, cuando hay al menos 500 archivos de evaluación etiquetada y al menos 18 archivos se etiquetan como pertinentes para el problema. 
   
 ## <a name="see-also"></a>Vea también
 

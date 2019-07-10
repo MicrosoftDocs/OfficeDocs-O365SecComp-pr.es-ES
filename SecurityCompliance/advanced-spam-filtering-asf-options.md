@@ -2,8 +2,8 @@
 title: Opciones avanzadas de filtrado de correo no deseado
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
-ms.date: 6/26/2015
+manager: dansimp
+ms.date: 07/09/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ ms.assetid: b286f853-b484-4af0-b01f-281fffd85e7a
 ms.collection:
 - M365-security-compliance
 description: Las opciones avanzadas de filtrado de correo no deseado dan a los administradores la capacidad de inspeccionar distintos atributos de contenido de un mensaje. La presencia de dichos atributos en el mensaje ya sea aumenta la puntuación de correo no deseado del mensaje (lo cual aumenta la probabilidad de que se identifique como correo no deseado) o lo marca como correo no deseado. Las opciones de ASF se centran en propiedades de mensaje específicas, tales como las etiquetas HTML y el redireccionamiento de direcciones URL, las cuales se encuentran comúnmente en los mensajes de correo no deseado.
-ms.openlocfilehash: 84807b102967dc5d4a3812e97681a1c8fc7fa318
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 0f1fb22a0500df5e9ff261bd60b0430dd4fad4d0
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152452"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598676"
 ---
 # <a name="advanced-spam-filtering-options"></a>Opciones avanzadas de filtrado de correo no deseado
 
@@ -54,5 +54,5 @@ La tabla siguiente describe cada una de las opciones avanzadas de filtrado de co
 |Registro de SPF: error|Si se habilita esta configuración, los mensajes que no superen una comprobación SPF (es decir, que se enviaron desde una dirección IP que no está especificada en el registro SPF) se marcarán como correo no deseado. Si a la organización le preocupa la suplantación de identidad (phishing), es recomendable que se active esta opción.  <br/> <br/> El modo de prueba no está disponible para esta opción.  <br/> |X-CustomSpam: Error de registro SPF  <br/> |
 |Filtrado de identificador del remitente condicional: error  <br/> |Cuando esta configuración está habilitada, cualquier mensaje que no pase una comprobación de identificador de remitente condicional se marcará como correo no deseado. Esta opción combina una verificación de SPF con una verificación del identificador del remitente con el fin de ayudar a proteger en contra de los encabezados de mensaje que contengan remitentes falsificados.  <br/> <br/> El modo de prueba no está disponible para esta opción.  <br/> |X-CustomSpam: Error SPF de registro  <br/> |
 |Reenvío masivo de correo electrónico no deseado de NDR  <br/> |Si está usando EOP para proteger buzones locales, al estar habilitada esta configuración, todos los mensajes legítimos de informe de no entrega (NDR) se entregan al remitente original, y todos los mensajes de reenvío masivo de correo electrónico no deseado (NDR ilegítimo) se marcarán como correo no deseado. Si no habilita esta configuración, todos los NDR aún pasan por el filtrado de correo no deseado. En este caso, la mayoría de mensajes legítimos se entregará al remitente original, mientras que otros, pero no todos, mensajes de reenvío masivo de correo electrónico no deseado se marcarán como correo no deseado. En cambio, los mensajes de reenvío masivo de correo electrónico no deseado que no se marquen como correo no deseado no irán al remitente original porque irán al remitente suplantado.  <br/> <br/> Si está usando el servicio para proteger buzones de Exchange Online hospedados en la nube, no necesitará realizar esta configuración.  <br/><br/> Para ambos escenarios (buzones de correo locales y hospedados en la nube), tampoco es necesario habilitar esta configuración para el correo saliente enviado a través del servicio, ya que los NDR que son mensajes de devolución de mensajes legítimos se detectarán automáticamente y se entregarán al remitente original. . >  El modo de prueba no está disponible para esta opción.           <br/><br/>Sugerencia: para obtener más información acerca de los mensajes de reenvío masivo y EOP, vea [mensajes de reenvío masivo y EOP](backscatter-messages-and-eop.md).           |X-CustomSpam: Reenvío masivo de correo no deseado de NDR  <br/> |
-|Correo masivo|Las opciones avanzadas de filtrado de correo no deseado en correo masivo se han retirado y se han reemplazado por opciones de umbral de correo electrónico masivo. Vea [¿Cuál es la diferencia entre correo electrónico no deseado y correo electrónico masivo?](what-s-the-difference-between-junk-email-and-bulk-email.md) y [Configurar las directivas de filtro de correo no deseado](configure-your-spam-filter-policies.md) para obtener más información y ver cómo configurar las opciones.  ||
+|Correo masivo|Las opciones avanzadas de filtrado de correo no deseado en correo masivo se han retirado y se han reemplazado por opciones de umbral de correo electrónico masivo. Vea [¿Cuál es la diferencia entre correo electrónico no deseado y correo electrónico masivo?](what-s-the-difference-between-junk-email-and-bulk-email.md) y [Configurar las directivas de filtro de correo no deseado](configure-your-spam-filter-policies.md) para obtener más información y ver cómo configurar las opciones.  |X-CustomSpam: correo masivo | Correo masivo  <br/> |
 |

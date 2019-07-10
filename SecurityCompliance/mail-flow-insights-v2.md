@@ -2,19 +2,19 @@
 title: Reportes de flujo de Correo en el Centro de seguridad y cumplimiento
 ms.author: chrisda
 author: chrisda
-manager: serdars
+manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: beb6acaa-6016-4d54-ba7e-3d6d035e2b46
 description: Los administradores pueden obtener información sobre el panel del flujo de correo en el centro de seguridad & cumplimiento.
-ms.openlocfilehash: c7c1a6a16c908f42098500c1015b3c3994175818
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 402fcf0ac29ecd67c9ecbc2e46c47d9a6392eedd
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155882"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598906"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>Reportes de flujo de Correo en el Centro de seguridad y cumplimiento
 
@@ -62,7 +62,7 @@ El panel de flujo de correo está disponible para:
 
 Para obtener más información acerca del rol de administrador global de Office 365, consulte [acerca de los roles de administrador de office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles).
 
-Para obtener información sobre cómo asignar a los usuarios roles del centro de cumplimiento de & de seguridad, vea [conceder acceso a los usuarios al centro de seguridad _AMP_ cumplimiento](https://docs.microsoft.com/office365/securitycompliance/grant-access-to-the-security-and-compliance-center).
+Para obtener información sobre cómo asignar roles de seguridad & el centro de cumplimiento a los usuarios, vea [proporcionar a los usuarios acceso al centro de seguridad & cumplimiento](https://docs.microsoft.com/office365/securitycompliance/grant-access-to-the-security-and-compliance-center).
 
 ## <a name="where-to-find-the-mail-flow-dashboard"></a>Dónde encontrar el panel de flujo de correo
 

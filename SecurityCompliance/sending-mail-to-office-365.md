@@ -2,8 +2,8 @@
 title: Enviar correo a Office 365
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
-ms.date: 4/9/2016
+manager: dansimp
+ms.date: 04/09/2016
 audience: ITPro
 ms.topic: hub-page
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ ms.assetid: f9d4b5b6-8f4c-44df-9b06-2f9b3058ca20
 ms.collection:
 - M365-security-compliance
 description: Estos artículos ayudarán a remitentes externos a mejorar su reputación y aumentar su capacidad para entregar correo electrónico a los usuarios de Office 365. También proporcionan información sobre cómo informar de correo no deseado y los intentos de phishing, incluso si no es usuario de Office 365.
-ms.openlocfilehash: 963615fc6db4bc520b9d0c38d35b18a2a445e399
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 6ccc3a087ae0142081369592d79601102b3942d9
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158802"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35600476"
 ---
 # <a name="sending-mail-to-office-365"></a>Enviar correo a Office 365
 

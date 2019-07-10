@@ -2,7 +2,7 @@
 title: Remitente no verificado
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: dansimp
 ms.date: 04/25/2019
 audience: ITPro
 ms.topic: article
@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Para evitar que los mensajes de suplantación de identidad lleguen a su buzón, Outlook.com y Outlook en la web Compruebe que el remitente es quien dice ser y marcar los mensajes sospechosos como correo no deseado.
-ms.openlocfilehash: 92458a93a4da3e449061e4d2a4ba312d635c42cc
-ms.sourcegitcommit: 7f00f765e8fa674ce1c8c66f5b89b6bea45e13ac
+ms.openlocfilehash: a69af1efb634e1805f055d49ec5515f4b4252c3b
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "34341628"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35600266"
 ---
 # <a name="unverified-sender"></a>Remitente no verificado
 

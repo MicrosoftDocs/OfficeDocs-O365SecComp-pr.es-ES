@@ -2,8 +2,8 @@
 title: Niveles de confianza de correo no deseado
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
-ms.date: 10/2/2017
+manager: dansimp
+ms.date: 10/02/2017
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ ms.assetid: 34681000-0022-4b92-b38a-e32b3ed96bf6
 ms.collection:
 - M365-security-compliance
 description: A cada mensaje de correo electrónico que pasa por el filtrado de correo no deseado se le asigna una puntuación de correo no deseado. La puntuación se asigna a una clasificación de nivel de confianza contra correo no deseado (SCL) individual y se marca en un encabezado X. El servicio realiza acciones en los mensajes según la interpretación de la confianza contra correo no deseado de las clasificaciones de SCL. La tabla siguiente muestra cómo las distintas clasificaciones de SCL se interpretan en los filtros y la acción predeterminada que se realiza en los mensajes entrantes por cada clasificación.
-ms.openlocfilehash: 4eba1dc6fa1bbadcfd135a7bf43e7353755df6c4
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: beb322341f4d0de25d7bac9681c0beed93c48e5f
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158272"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35600880"
 ---
 # <a name="spam-confidence-levels"></a>Niveles de confianza de correo no deseado
 

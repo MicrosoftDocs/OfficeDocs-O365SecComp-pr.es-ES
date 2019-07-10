@@ -2,8 +2,8 @@
 title: Informes inteligentes y reportes en el Centro de seguridad y cumplimiento
 ms.author: deniseb
 author: denisebmsft
-manager: laurawi
-ms.date: 7/19/2018
+manager: dansimp
+ms.date: 07/19/2018
 audience: ITPro
 ms.topic: overview
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: e3e95f68-36e9-4256-bcca-78fe7fe5ea5d
 ms.collection:
 - M365-security-compliance
 description: Obtenga información general sobre los informes y avialable en el centro de seguridad &amp; y cumplimiento.
-ms.openlocfilehash: e84aebe117735e50e205e3f79124f50d9dc71d75
-ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
+ms.openlocfilehash: ccdfd9e8a61a4cde64522a1cd2a3f17b063f6410
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "34408245"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35601167"
 ---
 # <a name="smart-reports-and-insights-in-the-office-365-security-amp-compliance-center"></a>Informes inteligentes y opiniones del centro de seguridad &amp; y cumplimiento de Office 365
 
@@ -59,7 +59,7 @@ Hay una amplia variedad de informes disponibles en el centro &amp; de seguridad 
 |**Registro de auditoría** <br/> Información acerca de las actividades, los usuarios, los archivos o las carpetas de Office 365, etc.  <br/> |En el centro &amp; de seguridad y cumplimiento, vaya a búsqueda de registros de \> **Auditoría** de **investigación de búsqueda &amp; ** <br/> |[Buscar en el registro de auditoría del Centro de seguridad y cumplimiento de Office 365](search-the-audit-log-in-security-and-compliance.md) <br/> |
 |**Informes de cumplimiento** <br/> Informes de FedRAMP, informes de gobierno, riesgos y cumplimiento, informes de administración de seguridad de la información ISO y controles de la organización de servicios informes de auditoría y evaluación  <br/> |En el centro &amp; de seguridad y cumplimiento, vaya a **informes de cumplimiento** de **garantía** \> del servicio. <br/> |[Planeación del &amp; cumplimiento de la seguridad en Office 365](plan-for-security-and-compliance.md) <br/> |
   
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 
 Ahora que tiene una introducción a los informes y a la información, el siguiente paso es aprender a personalizar, administrar y descargar informes. Consulte los siguientes artículos:
   
