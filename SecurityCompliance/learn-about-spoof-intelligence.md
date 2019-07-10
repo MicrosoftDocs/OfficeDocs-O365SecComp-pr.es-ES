@@ -2,7 +2,7 @@
 title: Obtener más información sobre la inteligencia de suplantación de identidad
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: dansimp
 ms.date: 10/22/2018
 audience: Admin
 ms.topic: article
@@ -15,12 +15,12 @@ ms.assetid: 978c3173-3578-4286-aaf4-8a10951978bf
 ms.collection:
 - M365-security-compliance
 description: Use inteligencia de identidad en el &amp; centro de seguridad y cumplimiento en la página Configuración contra correo no deseado para revisar todos los remitentes que suplantan dominios que forman parte de la organización o suplantación de dominios externos. La inteligencia de identidad está disponible como parte de Office 365 Enterprise E5 o por separado como parte de la protección contra amenazas avanzada y de Exchange Online Protection.
-ms.openlocfilehash: d75c2efc2314b3227c65ec31ef1e0a0d6f931c13
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 878e67cdee72d5d1f6596827be3da1dece67b947
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155942"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598956"
 ---
 # <a name="learn-more-about-spoof-intelligence"></a>Obtener más información sobre la inteligencia de suplantación de identidad
 

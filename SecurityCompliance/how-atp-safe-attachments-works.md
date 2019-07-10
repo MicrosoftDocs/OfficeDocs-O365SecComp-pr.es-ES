@@ -2,7 +2,7 @@
 title: Funcionamiento de los datos adjuntos seguros de ATP de Office 365
 ms.author: deniseb
 author: denisebmsft
-manager: laurawi
+manager: dansimp
 audience: Admin
 ms.date: 05/17/2019
 ms.topic: overview
@@ -11,12 +11,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: La característica datos adjuntos seguros proporciona comprobación del tiempo de los datos adjuntos de correo electrónico. Usar datos adjuntos seguros para proteger a su organización de archivos malintencionados envíe o reciba mensajes de correo electrónico.
-ms.openlocfilehash: 99d31e327343971f6a7630e2a43ffd3044fbf976
-ms.sourcegitcommit: 424a614141c1f19a1c84a67ec2d71dd3d7ef6694
+ms.openlocfilehash: f0f117388957a14e3765b963a0e390ffb8fd7943
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34592279"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35599176"
 ---
 # <a name="how-ffice-365-atp-safe-attachments-works"></a>Cómo funciona ffice datos adjuntos seguros de ATP 365
 

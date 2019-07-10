@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: En este artículo se describe la nueva versión de eDiscovery avanzado en Microsoft 365.
-ms.openlocfilehash: 44bbc871295cb6b621ed6ee286c8dcd2c1cc1716
-ms.sourcegitcommit: ecc823c2a4f1465114cf1d3a4630e31c47779ddc
+ms.openlocfilehash: 45c7a35a27fea3891270ee72b1fd528a357ad825
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "35079394"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598736"
 ---
 # <a name="overview-of-the-advanced-ediscovery-solution-in-microsoft-365"></a>Información general sobre la solución de exhibición de documentos electrónicos avanzada en Microsoft 365
 
@@ -81,7 +81,8 @@ Use la ficha **búsquedas** para crear búsquedas para buscar en los orígenes d
 
 Use la pestaña **conjuntos de revisiones** para revisar y analizar el contenido que ha recopilado desde el sistema activo y que se ha agregado a un conjunto de revisión. Un *conjunto de revisiones* es una colección estática de los datos (es decir, una copia sin conexión de datos) de los datos de Private (y, si procede, de datos no de Private) que haya recopilado en la fase anterior del flujo de trabajo de eDiscovery. Cuando se agregan los resultados de la búsqueda a un conjunto de revisión, se desencadena un proceso que extrae los archivos de los contenedores, extrae los metadatos y extrae el texto. Cuando se completa este proceso, el sistema crea un nuevo índice de todos los datos recopilados por los custodios y los agrega al conjunto de revisión. Una vez que los datos se agregan al conjunto de revisión, puede ejecutar más consultas para acotar los datos de mayúsculas y minúsculas, ver datos como texto o en el formato de archivo nativo, y anotar, censurar y etiquetar documentos en el conjunto de revisión. También puede realizar análisis avanzados, como identificar la duplicación de documentos, los subprocesos de correo electrónico y los temas. Una vez que haya seleccionado los datos solo para lo que sea relevante para el caso, puede descargar los documentos directamente o exportarlos junto con los metadatos de archivo, las anotaciones y cualquier etiqueta. Para obtener más información, vea:
 
- –[Revisión de datos de casos en eDiscovery avanzado](reviewing-data-in-review-set.md) –[analizar datos en un conjunto de revisión en eDiscovery avanzado](analyzing-data-in-review-set.md)
+- [Revisar los datos de casos en eDiscovery avanzado](reviewing-data-in-review-set.md)
+- [Analizar datos en un conjunto de revisión en eDiscovery avanzado](analyzing-data-in-review-set.md)
 
 ## <a name="exporting-data-for-review-and-presentation"></a>Exportar datos para revisión y presentación
 

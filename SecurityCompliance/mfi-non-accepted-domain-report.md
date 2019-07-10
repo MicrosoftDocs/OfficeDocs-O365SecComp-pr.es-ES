@@ -2,19 +2,19 @@
 title: Informe de dominio no aceptado
 ms.author: chrisda
 author: chrisda
-manager: serdars
+manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: Los administradores pueden obtener información sobre el informe de dominio no aceptado en el panel de flujo de correo en el centro de seguridad & cumplimiento.
-ms.openlocfilehash: ce9ffc28fddca6eb27d3d7394c0aea2ac4be9beb
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 764329cdc7f595590c846a7e21cbe457378180ac
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158582"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598106"
 ---
 # <a name="non-accepted-domain-report"></a>Informe de dominio no aceptado
 
@@ -34,4 +34,4 @@ Al seleccionar una fila en la tabla, un control flotante le mostrará más detal
 
 ## <a name="see-also"></a>Vea también
 
-Para obtener más información acerca de otras indicaciones de flujo de correo en el panel de flujo de correo, consulte [mail Flow Insights en el centro de seguridad _AMP_ cumplimiento](mail-flow-insights-v2.md).
+Para obtener más información acerca de otras indicaciones del flujo de correo en el panel de flujo de correo, consulte [mail Flow Insights en el centro de seguridad & cumplimiento](mail-flow-insights-v2.md).

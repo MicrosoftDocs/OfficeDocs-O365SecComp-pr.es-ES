@@ -2,7 +2,7 @@
 title: Usar reglas de flujo de correo para ver lo que los usuarios reportan a Microsoft
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,12 +13,12 @@ ms.assetid: 8401f520-8e7c-467b-9e06-4a9fdb2ba548
 ms.collection:
 - M365-security-compliance
 description: Puede crear una regla de flujo de correo de Exchange para evitar que los usuarios envíen mensajes de correo electrónico a Microsoft para su análisis y usarlos en sus propios procesos de seguridad.
-ms.openlocfilehash: 0086cf048dcffa912085f23b328ab1d51780f0df
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 7308de8e3f23a7c210d4d8a4e6ec5e322d40055f
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34156142"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35600436"
 ---
 # <a name="use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft"></a>Usar reglas de flujo de correo para ver lo que los usuarios reportan a Microsoft
 

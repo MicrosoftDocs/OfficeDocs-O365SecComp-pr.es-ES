@@ -2,7 +2,7 @@
 title: Usar notificaciones de correo no deseado para el usuario para liberar y notificar mensajes de correo en cuarentena en Office 365
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: dansimp
 ms.date: 03/14/2019
 audience: Admin
 ms.topic: article
@@ -16,12 +16,12 @@ ms.assetid: 56de4ed5-b0aa-4195-9f46-033d7cc086bc
 ms.collection:
 - M365-security-compliance
 description: Si el administrador habilita las notificaciones para los usuarios, recibirá un mensaje de notificación que enumera los mensajes enviados a su buzón que se identificaron como correo no deseado, en masa o de suplantación de identidad. Puede liberar o informar de los mensajes después de recibir la notificación.
-ms.openlocfilehash: eb16e6a24bb4a2f30b7bcb33051b62afdeb9e250
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 887dab0df489e6f71266a6fdabfdd04f26a14ded
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34156042"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598446"
 ---
 # <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages-in-office-365"></a>Usar notificaciones de correo no deseado para el usuario para liberar y notificar mensajes de correo en cuarentena en Office 365
 
@@ -48,9 +48,9 @@ Estas son las acciones que puede llevar a cabo con un mensaje en cuarentena:
 
 - **Release** si el mensaje no es correo no deseado y desea que Office 365 envíe el mensaje al buzón de correo.
 
-- **Versión _AMP_ Permitir remitente** si el mensaje no es correo no deseado y desea que Office 365 agregue el remitente a la lista de remitentes seguros y destinatarios para futuros correos electrónicos. Tenga en cuenta que el administrador puede tener otras configuraciones de permitir o bloquear de toda la organización que invaliden la lista de remitentes seguros.
+- **Versión & Permitir remitente** si el mensaje no es correo no deseado y desea que Office 365 agregue el remitente a la lista de remitentes seguros y destinatarios para futuros correos electrónicos. Tenga en cuenta que el administrador puede tener otras configuraciones de permitir o bloquear de toda la organización que invaliden la lista de remitentes seguros.
 
-- **Publique el informe de &**, si el mensaje no es correo no deseado y desea enviar el mensaje al buzón e identificarlo en Microsoft para su análisis.
+- **Libere & Informe**, si el mensaje no es correo no deseado y desea enviar el mensaje al buzón de correo y notificarlo a Microsoft para su análisis.
 
 - **Bloquear** si desea que Office 365 agregue el remitente a la lista de remitentes bloqueados.
 

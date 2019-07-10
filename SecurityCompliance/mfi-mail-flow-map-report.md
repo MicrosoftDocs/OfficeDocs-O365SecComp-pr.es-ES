@@ -2,19 +2,19 @@
 title: Informe de mapa de flujo de correo
 ms.author: chrisda
 author: chrisda
-manager: serdars
+manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: Los administradores pueden obtener información sobre el informe de mapa de flujo de correo en el panel de flujo de correo en el centro de seguridad & cumplimiento.
-ms.openlocfilehash: 6b8c63f25e143c7b27202141362a4dada82b7a4d
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 04ffbdc339a084f3ae2bf9947469966f1a868d02
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158692"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35601027"
 ---
 # <a name="mail-flow-map-report"></a>Informe de mapa de flujo de correo
 
@@ -50,4 +50,4 @@ La información relacionada se muestra debajo del mapa de flujo de correo si est
 
 ## <a name="see-also"></a>Vea también
 
-Para obtener más información acerca de otras indicaciones de flujo de correo en el panel de flujo de correo, consulte [mail Flow Insights en el centro de seguridad _AMP_ cumplimiento](mail-flow-insights-v2.md).
+Para obtener más información acerca de otras indicaciones del flujo de correo en el panel de flujo de correo, consulte [mail Flow Insights en el centro de seguridad & cumplimiento](mail-flow-insights-v2.md).

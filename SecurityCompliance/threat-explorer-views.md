@@ -2,7 +2,7 @@
 title: Vistas en el explorador de amenazas y detecciones en tiempo real
 ms.author: deniseb
 author: denisebmsft
-manager: laurawi
+manager: dansimp
 ms.date: 03/18/2019
 audience: ITPro
 ms.topic: article
@@ -12,12 +12,12 @@ search.appverid: ''
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre los distintos tipos de vistas disponibles en el explorador de amenazas y las detecciones en tiempo real.
-ms.openlocfilehash: 14cdbbd602e53615abec12bedbac2f16be40111f
-ms.sourcegitcommit: 2b46fba650df8d252b1dd2b3c3f080a383183a06
+ms.openlocfilehash: 71ec20daae45bee8385f24091850ea6223399eae
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "34408325"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35600823"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>Vistas en el explorador de amenazas y detecciones en tiempo real
 
@@ -72,7 +72,7 @@ Cuando se selecciona un elemento de la lista, como una dirección URL detectada,
 
 ![Detalles sobre una dirección URL detectada](media/ThreatExplorerEmailPhishURLDetails.png)
 
-## <a name="email--user-reported"></a>_GT_ de correo electrónico notificado por el usuario
+## <a name="email--user-reported"></a>Correo electrónico > notificado por el usuario
 
 Para ver este informe, en el explorador (o en detecciones en tiempo real), elija **Ver** > **correo electrónico** > **del usuario notificado**. Esta vista muestra el correo electrónico que los usuarios han notificado como correo electrónico no deseado, no deseado o de suplantación de identidad. 
 
@@ -103,7 +103,7 @@ Para aplicar un filtro, elija **remitente**, seleccione un elemento de la lista 
 
 Debajo del gráfico, vea más detalles sobre los mensajes de correo electrónico específicos, como la línea de asunto, el destinatario, el remitente, el estado, etc. 
 
-## <a name="content--malware"></a>Malware > de contenido
+## <a name="content--malware"></a>Contenido > malware
 
 Para ver este informe, en explorador (o detecciones en tiempo real), elija **Ver** > **** > **malware**de contenido. Esta vista muestra los archivos que se identificaron como malintencionados con la [protección contra amenazas avanzada de Office 365 en SharePoint Online, OneDrive para la empresa y Microsoft Teams](atp-for-spo-odb-and-teams.md).
 

@@ -2,7 +2,7 @@
 title: Empleo de TLS por parte de Exchange Online para proteger las conexiones de correo electrónico en Office 365
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: dansimp
 ms.date: 8/2/2018
 audience: ITPro
 ms.topic: reference
@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Obtenga información sobre cómo Exchange Online y Office 365 usan la seguridad de la capa de transporte (TLS) y la confidencialidad directa (FS) para proteger las comunicaciones de correo electrónico. Obtenga también información sobre el certificado emitido por Microsoft para Exchange Online.
-ms.openlocfilehash: f23b71984302639835537beb757e9089f44ee0c9
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: e165be9a3407abfcc165054f7f147eeb2d2c0a82
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152882"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35599406"
 ---
 # <a name="how-exchange-online-uses-tls-to-secure-email-connections-in-office-365"></a>Empleo de TLS por parte de Exchange Online para proteger las conexiones de correo electrónico en Office 365
 

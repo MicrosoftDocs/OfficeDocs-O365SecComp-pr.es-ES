@@ -2,7 +2,7 @@
 title: Protección contra amenazas en Office 365
 ms.author: tracyp
 author: msfttracyp
-manager: laurawi
+manager: dansimp
 audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: b10023f6-f30f-45d3-b3ad-b71aa4aa0d58
 ms.collection:
 - M365-security-compliance
 description: Use este artículo como guía para configurar las características de protección contra amenazas ahora.
-ms.openlocfilehash: 6700e2714ea607f675b487204404d53c1d51db93
-ms.sourcegitcommit: 424a614141c1f19a1c84a67ec2d71dd3d7ef6694
+ms.openlocfilehash: 950259bb11446c3b7f27606b69a44f07ad478e79
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "34590583"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35600526"
 ---
 # <a name="protect-against-threats-in-office-365"></a>Protección contra amenazas en Office 365
 
@@ -47,7 +47,7 @@ Las características de protección contra amenazas se incluyen en todas las sus
 
 ### <a name="roles-and-permissions"></a>Roles y permisos
 
-Debe tener asignado un rol apropiado para configurar directivas en el [centro de seguridad _AMP_ cumplimiento](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center). En la tabla siguiente se incluyen algunos ejemplos: 
+Debe tener asignado un rol apropiado para configurar directivas en el [centro de seguridad & cumplimiento](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center). En la tabla siguiente se incluyen algunos ejemplos: 
 
 |Rol o grupo de roles  |Dónde obtener más información  |
 |---------|---------|
@@ -61,7 +61,7 @@ Para obtener más información, consulte Permissions [in the &amp; Office 365 Se
 
 La [protección contra malware](anti-malware-protection.md) está disponible en las suscripciones que incluyen [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description). 
 
-1. En el [centro de seguridad & cumplimiento](https://protection.office.com), elija**anti-malware**de**Directiva** > de **Administración** > de amenazas.
+1. En el [centro de seguridad & cumplimiento](https://protection.office.com), elija**Directiva** > de **Administración** > de amenazas**contra malware**.
 
 2. Haga doble clic en la directiva **predeterminada** y, a continuación, elija **configuración**.
 
@@ -83,7 +83,7 @@ La protección del tiempo de clic de los archivos y las direcciones URL malinten
 
 Para configurar los [datos adjuntos seguros de ATP](atp-safe-attachments.md), debe definir al menos una directiva de datos adjuntos seguros ATP. 
 
-1. En el [centro de seguridad & cumplimiento](https://protection.office.com), seleccione la**Directiva** > de **Administración** > de amenazas datos adjuntos**seguros de ATP**.
+1. En el [centro de seguridad & cumplimiento](https://protection.office.com), seleccione**Directiva** > de **Administración** > de amenazas: datos adjuntos**seguros ATP**.
 
 2. Seleccione la opción **Activar ATP para SharePoint, OneDrive y Microsoft Teams**.
 
@@ -109,7 +109,7 @@ Para obtener más información, consulte [configurar las directivas de datos adj
 
 Para configurar [vínculos seguros ATP](atp-safe-links.md), revise y edite su directiva predeterminada y agregue una directiva para usuarios específicos.
 
-1. En el [centro de seguridad & cumplimiento](https://protection.office.com), seleccione**vínculos seguros ATP**de la**Directiva** > de **Administración** > de amenazas.
+1. En el [centro de seguridad & cumplimiento](https://protection.office.com), seleccione**Directiva** > de **Administración** > de amenazas de**ATP Safe links**.
 
 2. Haga doble clic en la directiva **predeterminada** .
 
@@ -173,7 +173,7 @@ Para obtener más información sobre las opciones de la Directiva antiphishing, 
 
 [La protección contra correo no deseado](anti-spam-protection.md) está disponible en las suscripciones que incluyen [EOP](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description).
 
-1. En el [centro de seguridad & cumplimiento](https://protection.office.com), seleccione**anti-spam**de la**Directiva** > de **Administración** > de amenazas.
+1. En el [centro de seguridad & cumplimiento](https://protection.office.com), elija**anti-spam**de la**Directiva** > de **Administración** > de amenazas.
 
 2. En la ficha **personalizado** , active la **Configuración personalizada** .
 

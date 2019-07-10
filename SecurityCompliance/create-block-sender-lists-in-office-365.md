@@ -2,7 +2,7 @@
 title: Crear listas de remitentes bloqueados en Office 365
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: dansimp
 ms.date: 5/6/2019
 audience: ITPro
 ms.topic: article
@@ -11,12 +11,12 @@ localization_priority: Normal
 search.appverid:
 - MET150s
 description: Las opciones de la lista bloquear remitente incluyen los remitentes bloqueados de Outlook, los remitentes de correo no deseado y las listas de bloqueo de dominio, las listas de direcciones IP bloqueadas y las reglas de transporte de Exchange (ETR) también denominadas reglas de flujo de correo.
-ms.openlocfilehash: 9933cb79b7dce949384815a7b2ed8a9ac8a7824b
-ms.sourcegitcommit: f96029928a6cdd141783026d57bc2179d7963af6
+ms.openlocfilehash: 861fa0e47980a6bc295672cf1e8e35954c6f1dfb
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "35017692"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35599996"
 ---
 # <a name="create-block-sender-lists-in-office-365"></a>Crear listas de remitentes bloqueados en Office 365
 
@@ -48,6 +48,8 @@ Los pasos para configurar esto son diferentes entre [Outlook Web App](https://su
 ## <a name="use-anti-spam-policy-senderdomain-block-lists"></a>Usar la Directiva contra correo no deseado listas de bloqueo de remitente/dominio
 
 Cuando se ven afectados varios usuarios, el ámbito es más amplio y es necesario usar una directiva de bloqueo de correo no deseado de lista de remitentes/dominios en toda la empresa. Puede encontrar los pasos detallados en [configurar las directivas de filtro de correo no deseado](https://docs.microsoft.com/en-us/office365/securitycompliance/configure-your-spam-filter-policies) . Cualquier mensaje bloqueado mediante este método seguirá la acción de correo no deseado, tal como se ha configurado en la Directiva.
+
+El límite máximo de estas listas es de aproximadamente 1000 entradas.
 
 ## <a name="use-exchange-transport-rules-etrs-to-block-specific-senders"></a>Usar reglas de transporte de Exchange (ETR) para bloquear remitentes específicos
 

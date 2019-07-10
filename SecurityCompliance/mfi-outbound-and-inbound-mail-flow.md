@@ -2,7 +2,7 @@
 title: Flujo de correo entrante y saliente
 ms.author: chrisda
 author: chrisda
-manager: serdars
+manager: dansimp
 ms.date: 8/7/2018
 audience: ITPro
 ms.topic: article
@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: f2738dec-41b0-43c4-b814-84c0a4e45c6d
 description: Los administradores pueden obtener información sobre el widget de flujo de correo entrante y saliente en el panel de flujo de correo en el centro de seguridad & cumplimiento.
-ms.openlocfilehash: 629599f6a71c1b871abb819ae4cdd339ffa5e56b
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 349fdcba3bd8dc2e8be55cf94f9c1e526a78c37c
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158732"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598046"
 ---
 # <a name="outbound-and-inbound-mail-flow"></a>Flujo de correo entrante y saliente
 
@@ -51,4 +51,4 @@ La información apunta a los conectores para ayudar a atraer la atención sobre 
 
 ## <a name="see-also"></a>Vea también
 
-Para obtener más información acerca de otras indicaciones de flujo de correo en el panel de flujo de correo, consulte [mail Flow Insights en el centro de seguridad _AMP_ cumplimiento](mail-flow-insights.md).
+Para obtener más información acerca de otras indicaciones del flujo de correo en el panel de flujo de correo, consulte [mail Flow Insights en el centro de seguridad & cumplimiento](mail-flow-insights.md).

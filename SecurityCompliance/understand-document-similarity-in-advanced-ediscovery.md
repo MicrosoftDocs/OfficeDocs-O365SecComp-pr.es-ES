@@ -3,7 +3,7 @@ title: Comprender la similitud de documentos en Office 365 Advanced eDiscovery
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 9/14/2017
+ms.date: 09/14/2017
 audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 4d4cb381-4c9a-4165-a455-609d525c7a88
 description: 'Revise cómo el valor de similitud de documentos, el nivel mínimo de semejanza entre dos archivos que se consideran casi duplicados, funciona en eDiscovery avanzado de Office 365. '
-ms.openlocfilehash: ce9c2e6ea1d40c82b7a124c9d4d64ce915d266b0
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 78e4ab7d39600522370cd91f3d6561ff2fbdcf60
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34156382"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35600276"
 ---
 # <a name="understand-document-similarity-in-office-365-advanced-ediscovery"></a>Comprender la similitud de documentos en Office 365 Advanced eDiscovery
 

@@ -2,8 +2,8 @@
 title: Referencia Políticas, prácticas y directrices
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
-ms.date: 12/9/2016
+manager: dansimp
+ms.date: 12/09/2016
 audience: ITPro
 ms.topic: reference
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ ms.assetid: ff3f140b-b005-445f-bfe0-7bc3f328aaf0
 ms.collection:
 - M365-security-compliance
 description: Microsoft ha desarrollado diversas directivas, procedimientos y adoptado varias prácticas recomendadas del sector para ayudar a proteger a nuestros usuarios de un correo electrónico abusivo, no deseado o malintencionado.
-ms.openlocfilehash: 78b78f58ea2d96775361fe1761221e6c6e993688
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 4a9c38822c4d0f3e06e209acf021618864540c83
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34156852"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35601188"
 ---
 # <a name="reference-policies-practices-and-guidelines"></a>Referencia: Políticas, prácticas y directrices
   

@@ -2,8 +2,8 @@
 title: 'Tutorial: desde un informe detallado a un reporte'
 ms.author: deniseb
 author: denisebmsft
-manager: laurawi
-ms.date: 6/4/2018
+manager: dansimp
+ms.date: 06/04/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: d2104778-f0a1-4b69-baf3-c4b32e98a573
 ms.collection:
 - M365-security-compliance
 description: Obtenga información acerca de cómo puede pasar de un informe detallado a un conocimiento con las acciones recomendadas en el centro de seguridad &amp; y cumplimiento.
-ms.openlocfilehash: f97501ddfa749e8d05ea8cb663f455a357df667c
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: ec0c440ac24bccbd739fbb52c2bb92c87e9c7888
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077986"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35599286"
 ---
 # <a name="walkthrough---from-a-detailed-report-to-an-insight"></a>Tutorial: desde un informe detallado a un reporte
 

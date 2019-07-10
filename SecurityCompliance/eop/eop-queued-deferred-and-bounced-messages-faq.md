@@ -1,8 +1,8 @@
 ---
 title: Preguntas más frecuentes sobre mensajes devueltos, aplazados y en cola de EOP
-ms.author: krowley
-author: kccross
-manager: laurawi
+ms.author: tracyp
+author: MSFTTracyP
+manager: dansimp
 ms.date: 11/17/2014
 audience: ITPro
 ms.topic: article
@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9d015a0d-52a0-484d-9a08-121d04f973d3
 description: En este tema se ofrecen respuestas a las preguntas más frecuentes sobre los mensajes que se ponen en cola, se aplazan o se devuelven durante el proceso de filtrado de Microsoft Exchange Online Protection (EOP).
-ms.openlocfilehash: 7d584d8356cfca805427c5dd41dc3dee2ee57e85
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: d62153f8240d56dd1e6781546f7ef9132c39fe3f
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34150272"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35599756"
 ---
 # <a name="eop-queued-deferred-and-bounced-messages-faq"></a>Preguntas más frecuentes sobre mensajes devueltos, aplazados y en cola de EOP
 
@@ -31,7 +31,7 @@ R. Los mensajes se retienen cuando no se puede conectar con el servidor del dest
   
  **P. ¿Cuánto tiempo permanece aplazado un mensaje y cuál es el intervalo de reintento?**
   
-R. Los mensajes aplazados permanecen en las colas durante 2 días. Los reintentos de envío de mensajes se basan en el error que se obtiene del sistema de correo del destinatario. Los primeros aplazamientos son de 15 minutos o menos, con reintentos posteriores (en las próximas mitades o más), lo que aumenta el intervalo en varios reintentos hasta un máximo de 60 minutos. La expansión de la duración del intervalo es dinámica, teniendo en cuenta varias variables como los tamaños de las colas y la prioridad de mensajes interna. En Basic, tiene 15 minutos (o menos) para comenzar y, a continuación, se expande a partir de las próximas horas a 60 min máx.
+R. Los mensajes en aplazamientos permanecerán en nuestras colas por 1 día. Los reintentos de envío de mensajes se basan en el error que se obtiene del sistema de correo del destinatario. Los primeros aplazamientos son de 15 minutos o menos, con reintentos posteriores (en las próximas mitades o más), lo que aumenta el intervalo en varios reintentos hasta un máximo de 60 minutos. La expansión de la duración del intervalo es dinámica, teniendo en cuenta varias variables como los tamaños de las colas y la prioridad de mensajes interna. En Basic, tiene 15 minutos (o menos) para comenzar y, a continuación, se expande a partir de las próximas horas a 60 min máx.
   
  **Q. Después de que se restaura el servidor de correo electrónico, ¿cómo se distribuyen los mensajes en cola?**
   

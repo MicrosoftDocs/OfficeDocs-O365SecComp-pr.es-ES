@@ -2,7 +2,7 @@
 title: Configurar SPF en Office 365 para ayudar a evitar la suplantación de identidad
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: dansimp
 ms.date: 2/19/2018
 audience: ITPro
 ms.topic: article
@@ -14,12 +14,12 @@ ms.assetid: 71373291-83d2-466f-86ea-fc61493743a6
 ms.collection:
 - M365-security-compliance
 description: 'Resumen: En este artículo se describe cómo actualizar un registro de servicio de nombre de dominio (DNS) para poder utilizar un marco de directivas de remitente (SPF) con su dominio personalizado en Office 365. SPF permite validar el correo electrónico saliente enviado desde su dominio personalizado.'
-ms.openlocfilehash: 5194a9a8a8b694bc2dbac0eaf9b50517e46a9064
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 8023f481ac998a04b6864f84c457a3f4c9608c1b
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158202"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35600396"
 ---
 # <a name="set-up-spf-in-office-365-to-help-prevent-spoofing"></a>Configurar SPF en Office 365 para ayudar a evitar la suplantación de identidad
 
@@ -59,13 +59,13 @@ Recopile esta información:
     
 ||**Si usa...**|**¿Común para los clientes de Office 365?**|**Agregue esto...**|
 |:-----|:-----|:-----|:-----|
-|1  <br/> |Cualquier sistema de correo electrónico (obligatorio)  <br/> |Común. Todos los registros TXT de SPF comienzan con este valor  <br/> |v=spf1  <br/> |
-|segundo  <br/> |Exchange Online  <br/> |Común  <br/> |include:spf.protection.outlook.com  <br/> |
-|3  <br/> |Solo Exchange Online dedicado  <br/> |No es común  <br/> |IP4:23.103.224.0/19 IP4:206.191.224.0/19 IP4:40.103.0.0/16 include include SPF. Protection. Outlook. com  <br/> |
-|4  <br/> |Solo para Office 365 Alemania y Microsoft Cloud Alemania  <br/> |No es común  <br/> |incluir include SPF. Protection. Outlook. de  <br/> |
-|2,5  <br/> |Sistema de correo electrónico de terceros  <br/> |No es común  <br/> |include:\<domain name\>  <br/> Where domain name is the domain name of the third party email system.  <br/> |
-|6,5  <br/> |Sistema de correo local. Por ejemplo, Exchange Online Protection y otro sistema de correo electrónico  <br/> |No es común  <br/> | Use uno de estos para cada sistema de correo adicional:  <br/>  ip4:\<  _IP address_\>  <br/>  ip6:\<  _IP address_\>  <br/>  include:\<  _domain name_\>  <br/>  Donde el valor de \<  _IP address_\> es la dirección IP del otro sistema de correo y \< _domain name_\> es el nombre de dominio del otro sistema de correo que envía correo en nombre de su dominio.  <br/> |
-|0,7  <br/> |Cualquier sistema de correo electrónico (obligatorio)  <br/> |Común. Todos los registros TXT de SPF acaban con este valor  <br/> |\< _enforcement rule_\>  <br/> Puede ser uno de varios valores. Le recomendamos que use **-all**.  <br/> |
+|1   <br/> |Cualquier sistema de correo electrónico (obligatorio)  <br/> |Común. Todos los registros TXT de SPF comienzan con este valor  <br/> |v=spf1  <br/> |
+|2   <br/> |Exchange Online  <br/> |Común  <br/> |include:spf.protection.outlook.com  <br/> |
+|3   <br/> |Solo Exchange Online dedicado  <br/> |No es común  <br/> |IP4:23.103.224.0/19 IP4:206.191.224.0/19 IP4:40.103.0.0/16 include include SPF. Protection. Outlook. com  <br/> |
+|4   <br/> |Solo para Office 365 Alemania y Microsoft Cloud Alemania  <br/> |No es común  <br/> |incluir include SPF. Protection. Outlook. de  <br/> |
+|5   <br/> |Sistema de correo electrónico de terceros  <br/> |No es común  <br/> |include:\<domain name\>  <br/> Where domain name is the domain name of the third party email system.  <br/> |
+|6   <br/> |Sistema de correo local. Por ejemplo, Exchange Online Protection y otro sistema de correo electrónico  <br/> |No es común  <br/> | Use uno de estos para cada sistema de correo adicional:  <br/>  ip4:\<  _IP address_\>  <br/>  ip6:\<  _IP address_\>  <br/>  include:\<  _domain name_\>  <br/>  Donde el valor de \<  _IP address_\> es la dirección IP del otro sistema de correo y \< _domain name_\> es el nombre de dominio del otro sistema de correo que envía correo en nombre de su dominio.  <br/> |
+|7   <br/> |Cualquier sistema de correo electrónico (obligatorio)  <br/> |Común. Todos los registros TXT de SPF acaban con este valor  <br/> |\< _enforcement rule_\>  <br/> Puede ser uno de varios valores. Le recomendamos que use **-all**.  <br/> |
    
 1,1 por ejemplo, si está completamente hospedado en Office 365, es decir, no tiene ningún servidor de correo local, el registro TXT de SPF incluiría las filas 1, 2 y 7 y tendría el siguiente aspecto:
     

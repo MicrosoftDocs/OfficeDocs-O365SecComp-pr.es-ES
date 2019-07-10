@@ -2,8 +2,7 @@
 title: Administrar programaciones para varios informes en el &amp; centro de seguridad y cumplimiento
 ms.author: deniseb
 author: denisebmsft
-manager: laurawi
-ms.date: 6/1/2018
+manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,12 +12,12 @@ search.appverid:
 - MOE150
 ms.assetid: 3384c6f1-ffc0-4120-a211-1991aca51663
 description: Obtenga información sobre cómo ver, editar y administrar programaciones de informes en el &amp; centro de seguridad y cumplimiento.
-ms.openlocfilehash: a8f230ddf9442ba0a29d5fdaeba40bc8524405b5
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: 7ea5815d058e4e8d9b0cecb5d06888e695bb526d
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077596"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598816"
 ---
 # <a name="manage-schedules-for-multiple-reports-in-the-security-amp-compliance-center"></a>Administrar programaciones para varios informes en el &amp; centro de seguridad y cumplimiento
 

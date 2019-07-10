@@ -2,7 +2,7 @@
 title: Explorador de amenazas (y detecciones en tiempo real)
 ms.author: deniseb
 author: denisebmsft
-manager: laurawi
+manager: dansimp
 ms.date: 06/20/2019
 audience: ITPro
 ms.topic: article
@@ -15,12 +15,12 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre el explorador (y las detecciones en tiempo real) &amp; en el centro de seguridad y cumplimiento.
-ms.openlocfilehash: 3d2eab30b97655b692ed1bfe089b6a79834fd110
-ms.sourcegitcommit: 011bfa60cafdf47900aadf96a17eb275efa877c4
+ms.openlocfilehash: 127652ccb1c32ce84d8c80213d737b095913db40
+ms.sourcegitcommit: 5abe4c11bf3c0659180c7812dd26be9689ab01ca
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2019
-ms.locfileid: "35394355"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35605479"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Explorador de amenazas (y detecciones en tiempo real)
 
@@ -71,6 +71,9 @@ Ubicación de entrega muestra los resultados de las directivas y detecciones que
 5. Cuarentena: el correo electrónico en cuarentena y no se encuentra en el buzón de un usuario.
 6. Failed – el correo electrónico no pudo llegar al buzón.
 7. Perdido: el correo electrónico se pierde en algún lugar del flujo de correo.
+
+La escala de tiempo de correo electrónico es otra nueva característica de Explorer destinada a conseguir la experiencia de búsqueda mejor para los administradores. Reduce el proceso aleatorio porque se dedica menos tiempo a comprobar las distintas ubicaciones para tratar de comprender el evento. Cuando se producen varios eventos en, o cerca de, al mismo tiempo en un correo electrónico, esos eventos se mostrarán en una vista escala de tiempo. De hecho, algunos eventos que se producen después de la entrega a su correo se capturarán en la columna "acción especial". La combinación de la información de la escala de tiempo de ese correo con la acción especial tomada en la entrega posterior del correo proporcionará a los administradores información sobre cómo funcionan sus directivas, dónde se enrutó el correo finalmente y, en algunos casos, qué es la evaluación final.
+
 
 ## <a name="see-malware-detected-in-email-by-technology"></a>Ver malware detectado en correo electrónico por tecnología
 

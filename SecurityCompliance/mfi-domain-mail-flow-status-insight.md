@@ -2,25 +2,25 @@
 title: Información del estado del flujo de correo de dominio superior
 ms.author: chrisda
 author: chrisda
-manager: serdars
+manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: ''
 description: Los administradores pueden obtener información sobre el conocimiento del estado del flujo de correo del dominio superior del panel de flujo de correo en el centro de seguridad & cumplimiento.
-ms.openlocfilehash: c339769c65b2b1cec3d187873e71e5f1e283ccc7
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: d6a3345a614bcde42193eb9c78d93c56637ccac7
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158652"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35600843"
 ---
 # <a name="top-domain-mail-flow-status-insight"></a>Información del estado del flujo de correo de dominio superior
 
 La información del **Estado del flujo de correo de dominio superior** le ofrece el estado actual de los dominios de su organización en términos de flujo de correo. Esta visión le ayudará a identificar y solucionar problemas de dominios que experimentan problemas de impacto en el ***flujo de correo*** (por ejemplo, no se puede recibir correo electrónico externo), en especial expiraciones de dominio o dominios con registros MX incorrectos.
 
-![La información más detallada sobre el estado del flujo del dominio en el panel del flujo de correo en el centro de seguridad & cumplimiento](media/domain-mail-flow-status-selected.png)
+![La información más detallada sobre el estado del flujo del dominio en el panel de flujo del correo en el centro de seguridad & cumplimiento](media/domain-mail-flow-status-selected.png)
 
 Al hacer clic en **Ver detalles** en la visión, aparecerá un control flotante que muestra más detalles sobre el estado de cada dominio.
 
@@ -32,4 +32,4 @@ Una x de color rojo para un dominio indica que se ha cambiado el registro MX y q
 
 ## <a name="see-also"></a>Vea también
 
-Para obtener más información acerca de otras indicaciones de flujo de correo en el panel de flujo de correo, consulte [mail Flow Insights en el centro de seguridad _AMP_ cumplimiento](mail-flow-insights-v2.md).
+Para obtener más información acerca de otras indicaciones del flujo de correo en el panel de flujo de correo, consulte [mail Flow Insights en el centro de seguridad & cumplimiento](mail-flow-insights-v2.md).

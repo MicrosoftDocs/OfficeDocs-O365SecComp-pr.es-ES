@@ -2,7 +2,7 @@
 title: Funciones de ATP contra suplantación de identidad en Office 365
 ms.author: tracyp
 author: MSFTTracyp
-manager: laurawi
+manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,12 +13,12 @@ ms.assetid: 5076d0f6-7a59-4d6c-bd07-ba95033f0682
 ms.collection:
 - M365-security-compliance
 description: La protección contra phishing de ATP forma parte de la protección contra amenazas avanzada de Office 365. ATP anti-phishing aplica un conjunto de modelos de aprendizaje automático junto con algoritmos de detección de suplantación a los mensajes entrantes para proporcionar protección para los ataques de suplantación de identidad (phishing) y de consumo. Todos los mensajes están sujetos a un amplio conjunto de modelos de aprendizaje de máquinas capacitados para detectar mensajes de suplantación de identidad (phishing), junto con un conjunto de algoritmos avanzados que se usan para proteger contra varios ataques de suplantación de usuario y de dominio.
-ms.openlocfilehash: 0c17273d935dbdaec6d78a62a4edfa015b6b8efa
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: b2ce20d64952ecf489c2ccdbd5b4cafd16b8f64f
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155552"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35598626"
 ---
 # <a name="atp-anti-phishing-capabilities-in-office-365"></a>Funciones de ATP contra suplantación de identidad en Office 365
 
