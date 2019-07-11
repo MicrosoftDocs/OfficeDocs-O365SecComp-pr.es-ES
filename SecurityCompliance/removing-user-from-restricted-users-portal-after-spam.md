@@ -3,7 +3,7 @@ title: Quitar un usuario desde el Portal de usuarios restringidos después de en
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 03/12/2019
+ms.date: 07/10/2019
 audience: ITPro
 ms.topic: article
 f1_keywords:
@@ -16,12 +16,12 @@ ms.assetid: 712cfcc1-31e8-4e51-8561-b64258a8f1e5
 ms.collection:
 - M365-security-compliance
 description: Si un usuario envía mensajes de correo electrónico de forma continua desde Office 365 que se clasifican como correo no deseado, se les restringirá el envío de mensajes adicionales.
-ms.openlocfilehash: 80eb03ccb96f2178f168139234de8700b9b97e29
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 40d63bb452392041401fd1af6d0d6d4af67e5d2b
+ms.sourcegitcommit: 986f40a00ab454093b21e724d58594b8b8b4a9ba
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35601157"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "35613658"
 ---
 # <a name="removing-a-user-from-the-restricted-users-portal-after-sending-spam-email"></a>Quitar un usuario desde el Portal de usuarios restringidos después de enviar correo no deseado
 
@@ -71,6 +71,11 @@ Podrá editar la alerta en:
 - Activar o desactivar las notificaciones de correo electrónico
 - Enviar por correo electrónico los destinatarios necesarios
 - Limitar las notificaciones que recibe por día
+
+## <a name="checking-for-and-removing-restrictions-using-powershell"></a>Comprobación y eliminación de restricciones con PowerShell
+Los comandos de PowerShell para usuarios restringidos son los siguientes:
+- `Get-BlockedSenderAddress`: Ejecutar para recuperar la lista de usuarios a los que se les ha restringido el envío de correo electrónico
+- `Remove-BlockedSenderAddress`: Ejecutar para quitar usuarios de la restricción
 
 ## <a name="for-more-information"></a>Más información
 
