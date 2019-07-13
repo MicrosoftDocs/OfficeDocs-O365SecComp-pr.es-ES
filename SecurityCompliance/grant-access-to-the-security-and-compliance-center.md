@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: Los usuarios deben tener asignados permisos en el centro de seguridad & cumplimiento de Office 365 para poder administrar cualquiera de sus características de seguridad o cumplimiento.
-ms.openlocfilehash: f11114ede37269f9b89c4d2b34c69f2d6db8a3f7
-ms.sourcegitcommit: 044003455eb36071806c9f008ac631d54c64dde6
+ms.openlocfilehash: 7963a8c3db64e83566960abe9298b9a2d636ae53
+ms.sourcegitcommit: 6302a43d947a908dd10a8e40550b806f491692fc
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "35199747"
+ms.lasthandoff: 07/13/2019
+ms.locfileid: "35645125"
 ---
 # <a name="give-users-access-to-the-office-365-security--compliance-center"></a>Proporcionar a los usuarios acceso al Centro de seguridad y cumplimiento de Office 365
 
@@ -70,7 +70,7 @@ Para obtener más información acerca de los distintos permisos que puede conced
 2. Use el comando **Add-RoleGroupMember** para agregar un usuario al rol Administración de la organización, tal y como se muestra en el ejemplo siguiente.
 
    ```
-   Add-RoleGroupMember -Identity "OrganizationManagement" -Member MatildaS
+   Add-RoleGroupMember -Identity "Organization Management" -Member MatildaS
    ```
 
    **Parámetros**:
@@ -86,7 +86,7 @@ Para obtener información detallada acerca de la sintaxis y los parámetros, con
 Para comprobar que ha concedido a los usuarios acceso al centro de seguridad & cumplimiento, use el cmdlet **Get-RoleGroupMember** para ver los miembros del grupo de funciones de administración de la organización, tal como se muestra en el ejemplo siguiente.
   
 ```
-Get-RoleGroupMember -Identity "OrganizationManagement"
+Get-RoleGroupMember -Identity "Organization Management"
 ```
 
 Para obtener información detallada acerca de la sintaxis y los parámetros, consulte [Get-RoleGroupMember](https://go.microsoft.com/fwlink/p/?LinkId=510860).
