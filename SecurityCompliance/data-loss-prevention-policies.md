@@ -3,7 +3,7 @@ title: Información general sobre prevención de pérdida de datos
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 05/03/2019
+ms.date: 07/12/2019
 audience: ITPro
 ms.topic: conceptual
 f1_keywords:
@@ -15,17 +15,17 @@ ms.collection:
 search.appverid:
 - MET150
 description: Con una directiva de prevención de pérdida de datos (DLP) &amp; en el centro de seguridad y cumplimiento, puede identificar, supervisar y proteger automáticamente la información confidencial en Office 365.
-ms.openlocfilehash: 0199d43a7232b41dbbf1a5c67ab77ebe69d47a84
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: 2f20b3e3ec7ec3178156ca76c82ec323022f1979
+ms.sourcegitcommit: ea630cf1cbaa98ede5ee320c71a0fad7d7def6fb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077856"
+ms.lasthandoff: 07/13/2019
+ms.locfileid: "35672929"
 ---
 # <a name="overview-of-data-loss-prevention"></a>Información general sobre prevención de pérdida de datos
 
 > [!NOTE]
-> Las funciones de prevención de pérdida de datos se han agregado recientemente a Microsoft Teams en Office 365 E5 y Office 365 Advanced Compliance. Para obtener más información acerca de la disponibilidad de características, consulte [office 365 service descriptions: office 365 Security & Compliance Center](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center).
+> Las capacidades de prevención de pérdida de datos se han agregado recientemente a los mensajes de chat y de canal de Microsoft Teams para los usuarios con licencia de Office 365 Advanced Compliance, que está disponible como opción independiente y se incluye en Office 365 E5 y el cumplimiento de Microsoft 365 E5. Para obtener más información sobre los requisitos de licencia, consulte la [Guía de licencias de servicios en el nivel de inquilino de 365 de Microsoft](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance).
 
 Para cumplir con las normas empresariales y las regulaciones del sector, las organizaciones deben proteger la información confidencial e impedir su divulgación involuntaria. La información confidencial puede incluir datos financieros o información de identificación personal (PII), como números de tarjetas de crédito, números de seguridad social o registros de mantenimiento. Con una directiva de prevención de pérdida de datos (DLP) en el &amp; centro de seguridad y cumplimiento de Office 365, puede identificar, supervisar y proteger automáticamente la información confidencial en Office 365.
   
@@ -59,7 +59,7 @@ Las directivas de DLP se crean y se administran en la página prevención de pé
 
 Una directiva DLP contiene unas pocas cosas básicas:
   
-- Dónde proteger el contenido: **ubicaciones** como Exchange Online, SharePoint Online y los sitios de OneDrive para la empresa, así como chats y canales de Microsoft Teams. 
+- Dónde proteger el contenido: **ubicaciones** como Exchange Online, SharePoint Online y OneDrive para la empresa, así como mensajes de chat y canales de Microsoft Teams. 
     
 - Cuándo y cómo proteger el contenido aplicando **reglas** compuestas de: 
     
@@ -75,7 +75,7 @@ Por ejemplo, podría tener una directiva DLP que ayude a detectar la presencia d
   
 ### <a name="locations"></a>Ubicaciones
 
-Una directiva DLP puede encontrar y proteger información confidencial en Office 365, independientemente de si la información se encuentra en Exchange Online, SharePoint Online, OneDrive para la empresa o Microsoft Teams. Puede elegir proteger el contenido de correo electrónico de Exchange, los canales y chats de Microsoft Teams, y todas las bibliotecas de SharePoint o de OneDrive, o seleccionar ubicaciones específicas para una directiva.
+Una directiva DLP puede encontrar y proteger información confidencial en Office 365, independientemente de si la información se encuentra en Exchange Online, SharePoint Online, OneDrive para la empresa o Microsoft Teams. Puede elegir proteger el contenido del correo electrónico de Exchange, los chats de Microsoft Teams y los mensajes de canal y todas las bibliotecas de SharePoint o de OneDrive, o seleccionar ubicaciones específicas para una directiva.
   
 ![Opciones de ubicaciones donde se puede aplicar una directiva DLP](media/ee50a61a-e867-4571-a150-3eec8d83650f.png)
   
@@ -447,7 +447,7 @@ Después de crear una directiva DLP en el centro &amp; de seguridad y cumplimien
     
 - Programas de escritorio de Office (Excel, PowerPoint y Word)
 
-- Canales de Microsoft Teams y charlas
+- Canales y mensajes de chat de Microsoft Teams
     
 Una vez que la Directiva se ha sincronizado en las ubicaciones adecuadas, comienza a evaluar el contenido y a aplicar las acciones.
   
@@ -481,7 +481,7 @@ La evaluación de la Directiva DLP en Office está diseñada para no afectar al 
 
 ### <a name="policy-evaluation-in-microsoft-teams"></a>Evaluación de directivas en Microsoft Teams
  
-Al crear una directiva DLP que incluya a Microsoft Teams como ubicación, la Directiva se sincroniza desde el centro de seguridad &amp; y cumplimiento de Office 365 a las cuentas de usuario y los canales y chats de Microsoft Teams. Según la configuración de las directivas de DLP, cuando alguien intente compartir información confidencial en un canal o chat de Microsoft Teams, el mensaje se puede bloquear o revocar. Además, los documentos que contengan información confidencial y que se compartan con invitados (usuarios externos) no se abrirán para esos usuarios. Para obtener más información, consulte [prevención de pérdida de datos y Microsoft Teams](dlp-microsoft-teams.md).
+Al crear una directiva DLP que incluya a Microsoft Teams como ubicación, la Directiva se sincroniza desde el centro de seguridad &amp; y cumplimiento de Office 365 a las cuentas de usuario y los canales y los mensajes de chat de Microsoft Teams. Según la configuración de las directivas de DLP, cuando alguien intente compartir información confidencial en un mensaje de chat o canal de Microsoft Teams, el mensaje se puede bloquear o revocar. Además, los documentos que contengan información confidencial y que se compartan con invitados (usuarios externos) no se abrirán para esos usuarios. Para obtener más información, consulte [prevención de pérdida de datos y Microsoft Teams](dlp-microsoft-teams.md).
  
 ## <a name="permissions"></a>Permisos
 

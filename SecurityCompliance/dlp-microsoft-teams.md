@@ -3,7 +3,7 @@ title: Prevención de pérdida de datos y Microsoft Teams
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 07/01/2019
+ms.date: 07/12/2019
 audience: ITPro
 ms.topic: conceptual
 ms.service: O365-seccomp
@@ -13,28 +13,28 @@ ms.collection:
 search.appverid:
 - MET150
 description: Ahora puede aplicar directivas de DLP a chats y canales de Microsoft Teams. Lea este artículo para obtener más información sobre cómo funciona.
-ms.openlocfilehash: 3792fd6919749510ea20d4ff84b0249b16165a9f
-ms.sourcegitcommit: cc1b0281fa594cbb7c09f3e419df21aec9557831
+ms.openlocfilehash: 96ba26a4e155a976c2123cc44c3a8632092740ac
+ms.sourcegitcommit: ea630cf1cbaa98ede5ee320c71a0fad7d7def6fb
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "35417402"
+ms.lasthandoff: 07/13/2019
+ms.locfileid: "35672919"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>Prevención de pérdida de datos y Microsoft Teams
 
 > [!NOTE]
-> Las funciones de prevención de pérdida de datos se han agregado recientemente a Microsoft Teams en Office 365 E5 y Office 365 Advanced Compliance. Para obtener más información acerca de la disponibilidad de características, consulte [office 365 service descriptions: office 365 Security & Compliance Center](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center).
+> Las capacidades de prevención de pérdida de datos se han agregado recientemente a los mensajes de chat y de canal de Microsoft Teams para los usuarios con licencia de Office 365 Advanced Compliance, que está disponible como opción independiente y se incluye en Office 365 E5 y el cumplimiento de Microsoft 365 E5. Para obtener más información sobre los requisitos de licencia, consulte la [Guía de licencias de servicios en el nivel de inquilino de 365 de Microsoft](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance).
 
 ## <a name="overview-of-dlp-for-microsoft-teams"></a>Información general de DLP para Microsoft Teams
 
-Recientemente, se ampliaron las capacidades de [prevención de pérdida de datos](data-loss-prevention-policies.md) (DLP) para incluir Microsoft Teams. Si su organización tiene DLP, ahora puede definir directivas que impiden que los usuarios compartan información confidencial en una sesión de chat o de canal de Microsoft Teams. A continuación, se muestran algunos ejemplos de cómo funciona esta protección:
+Recientemente, se ampliaron las capacidades de [prevención de pérdida de datos](data-loss-prevention-policies.md) (DLP) para incluir los mensajes de chat y canales de Microsoft Teams. Si su organización tiene DLP, ahora puede definir directivas que impiden que los usuarios compartan información confidencial en una sesión de chat o de canal de Microsoft Teams. A continuación, se muestran algunos ejemplos de cómo funciona esta protección:
 
 - **Ejemplo 1: proteger la información confidencial en los mensajes**. Suponga que alguien intenta compartir información confidencial en un canal o chat de Microsoft Teams con invitados (usuarios externos). Si tiene definida una directiva DLP para evitar esto, se eliminan los mensajes con información confidencial que se envían a los usuarios externos. Esto sucede automáticamente y en segundos, según la configuración de la Directiva DLP.
 
     > [!NOTE]
-    > DLP para Microsoft Teams bloquea contenido confidencial cuando se comparte con usuarios que tienen [acceso de invitado](https://docs.microsoft.com/MicrosoftTeams/guest-access) en equipos y canales, y con usuarios que tienen [acceso externo](https://docs.microsoft.com/MicrosoftTeams/manage-external-access) en reuniones y sesiones de chat. Si está usando [Microsoft Teams junto con Skype empresarial](https://docs.microsoft.com/microsoftteams/migration-interop-guidance-for-teams-with-skype), tenga en cuenta que DLP para Teams no bloquea mensajes en sesiones de interoperabilidad o de chats federados.
+    > DLP para Microsoft Teams bloquea el contenido confidencial cuando se comparte con los usuarios de Microsoft teams que tienen:<br/>- [acceso de invitado](https://docs.microsoft.com/MicrosoftTeams/guest-access) en equipos y canales; o<br/>- [acceso externo](https://docs.microsoft.com/MicrosoftTeams/manage-external-access) en reuniones y sesiones de chat. <p>La DLP para sesiones de chat externas solo funcionará si el remitente y el receptor están en modo de solo Teams y usan la [Federación nativa de Microsoft Teams](https://docs.microsoft.com/microsoftteams/manage-external-access). DLP for Teams no bloquea mensajes en [](https://docs.microsoft.com/microsoftteams/teams-and-skypeforbusiness-coexistence-and-interoperability#interoperability-of-teams-and-skype-for-business) interoperabilidad con Skype empresarial o con sesiones de chat no nativas federadas.
 
-- **Ejemplo 2: protección de información confidencial en documentos**. Suponga que alguien intenta compartir un documento con invitados en un canal o chat de Microsoft Teams, y que el documento contiene información confidencial. Si tiene definida una directiva DLP para evitar esto, el documento no se abrirá para esos usuarios. Tenga en cuenta que, en este caso, la Directiva DLP debe incluir SharePoint y OneDrive para que la protección esté en su ubicación. (Este es un ejemplo de DLP para SharePoint que se muestra en Microsoft Teams).
+- **Ejemplo 2: protección de información confidencial en documentos**. Suponga que alguien intenta compartir un documento con invitados en un canal o chat de Microsoft Teams, y que el documento contiene información confidencial. Si tiene definida una directiva DLP para evitar esto, el documento no se abrirá para esos usuarios. Tenga en cuenta que, en este caso, la Directiva DLP debe incluir SharePoint y OneDrive para que la protección esté en su ubicación. (Este es un ejemplo de DLP para SharePoint que se muestra en Microsoft Teams y, por lo tanto, requiere que los usuarios tengan licencia para Office 365 DLP (incluido en Office 365 E3), pero no requiere que los usuarios tengan licencia para Office 365 el cumplimiento avanzado.)
 
 ## <a name="policy-tips-help-educate-users"></a>Las sugerencias de directivas ayudan a los usuarios
 
