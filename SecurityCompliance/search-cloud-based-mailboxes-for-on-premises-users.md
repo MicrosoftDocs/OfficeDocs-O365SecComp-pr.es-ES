@@ -3,7 +3,7 @@ title: Buscar buzones de correo basados en la nube para usuarios locales en Offi
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 6/4/2018
+ms.date: ''
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,20 +15,22 @@ search.appverid:
 - MET150
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: Use la herramienta de búsqueda de contenido en el centro de seguridad & cumplimiento para buscar y exportar datos de chat de Microsoft Teams (denominados 1xN chats) para usuarios locales en una implementación híbrida de Exchange.
-ms.openlocfilehash: b08e1ea9ea9fb9fe834bb10948be532cbc4337b4
-ms.sourcegitcommit: 6b2ca6bd153d24a717d6c537efd2d41d35c20a0b
+ms.openlocfilehash: 4bc63c4a908aba61b0f289d347d1434222ec2ed8
+ms.sourcegitcommit: a97e7da9a1f870540f0bdcba7be5fb6f8bd12f74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35587807"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35756862"
 ---
 # <a name="searching-cloud-based-mailboxes-for-on-premises-users-in-office-365"></a>Buscar buzones de correo basados en la nube para usuarios locales en Office 365
 
 Si su organización tiene una implementación híbrida de Exchange y ha habilitado Microsoft Teams, los usuarios pueden usar la aplicación de chat de Microsoft Teams para mensajería instantánea. En el caso del usuario basado en la nube, los datos de chat de Microsoft Teams (también denominados chats 1xN) se guardan en el buzón de correo basado en la nube principal. Cuando un usuario local usa la aplicación de chat de equipo, su buzón principal se encuentra local. Para superar esta limitación, Microsoft ha lanzado una nueva característica en la que se crea un área de almacenamiento basada en la nube (denominada buzón basado en la nube para usuarios locales) para almacenar los datos de chat de Teams para los usuarios locales. Esto le permite usar la herramienta de búsqueda de contenido en el centro de seguridad & cumplimiento para buscar y exportar los datos de chat de Microsoft Teams para los usuarios locales. 
   
-Estos son los requisitos y la limitación para configurar y configurar y buscar buzones de correo basados en la nube para los usuarios locales:
+Estos son los requisitos y las limitaciones para configurar buzones de correo basados en la nube para los usuarios locales:
   
 - Las cuentas de usuario del servicio de directorio local (como Active Directory) deben estar sincronizadas con Azure Active Directory, el servicio de directorio en Office 365. Esto significa que se crea una cuenta de usuario de correo en Office 365 y se asocia a un usuario cuyo buzón principal está ubicado en la organización local.
+
+- El usuario cuyo buzón de correo principal se encuentra en la organización local debe tener asignada una licencia de Microsoft Teams y una licencia de plan 1 de Exchange Online.
     
 - El buzón basado en la nube para los usuarios locales solo se usa para almacenar datos de chat de Teams. Un usuario local no puede iniciar sesión en el buzón de correo o el acceso basado en la nube de ninguna manera. No se puede usar para enviar o recibir mensajes de correo electrónico. 
     
@@ -58,7 +60,7 @@ Incluya la siguiente información cuando envíe la solicitud a soporte técnico 
     
 - El título o la descripción siguiente del propósito de la solicitud de soporte técnico: "habilitar la búsqueda de contenido de la aplicación para usuarios locales". Esto ayuda a enrutar la solicitud al equipo de ingeniería de exhibición de documentos electrónicos de Office 365 que va a implementar la solicitud. 
     
-Una vez realizado el cambio de ingeniería, el soporte técnico de Microsoft le enviará una fecha de implementación estimada. El proceso de implementación suele tardar 2-3 semanas después de enviar la solicitud de soporte técnico. 
+Una vez realizado el cambio de ingeniería, el soporte técnico de Microsoft le enviará una fecha de implementación estimada. El proceso de implementación suele tardar entre 2 y 3 semanas después de enviar la solicitud de soporte técnico. 
   
 ### <a name="what-happens-after-this-feature-is-enabled"></a>¿Qué ocurre después de habilitar esta característica?
 
@@ -90,9 +92,9 @@ Una vez habilitada la característica, puede usar la búsqueda de contenido en e
 
 4. En este punto, puede elegir una de las siguientes opciones en **ubicaciones**:
     
-    - **Todas las ubicaciones** : Seleccione esta opción para buscar en los buzones de todos los usuarios de la organización. Cuando se selecciona la casilla, también se buscará en todos los buzones de correo basados en la nube de los usuarios locales. 
+    - **Todas las ubicaciones:** Seleccione esta opción para buscar en los buzones de todos los usuarios de la organización. Cuando se selecciona la casilla, también se buscará en todos los buzones de correo basados en la nube de los usuarios locales. 
     
-    - **Ubicaciones específicas** : Seleccione esta opción y, a continuación, haga clic en **modificar** \> elija usuarios, grupos o equipos para buscar en buzones específicos. Como se ha explicado anteriormente, el selector de ubicaciones le permite buscar usuarios locales. 
+    - **Ubicaciones específicas:** Seleccione esta opción y, a continuación, haga clic en **modificar** \> elija usuarios, grupos o equipos para buscar en buzones específicos. Como se ha explicado anteriormente, el selector de ubicaciones le permite buscar usuarios locales. 
     
 5. Guarde y ejecute la búsqueda. Se puede obtener una vista previa de los resultados de búsqueda de los buzones basados en la nube para los usuarios locales como cualquier otro resultado de búsqueda. También puede exportar los resultados de la búsqueda (incluidos los datos de chat de los equipos) a un archivo PST. Para obtener más información, vea: 
     
@@ -159,4 +161,8 @@ No.
   
  **¿Puede buscar contenido buscar chats más antiguos de Microsoft Teams para los usuarios locales antes del tiempo que mi organización envió la solicitud para habilitar esta característica?**
   
-Microsoft inició el almacenamiento de los datos de chat de Microsoft Teams para los usuarios locales el 31 de enero de 2018. Por lo tanto, si la identidad de un usuario de Microsoft Teams se ha sincronizado entre Active Directory y Azure Active Directory desde esta fecha, los datos de chat de su equipo se almacenarán en un buzón de correo basado en la nube y se podrán buscar mediante la búsqueda de contenido. Microsoft también está trabajando en almacenar datos de chat de Microsoft Teams desde antes del 31 de enero de 2018 en los buzones de correo basados en la nube para los usuarios locales. Pronto estará disponible más información sobre esto.
+Microsoft inició el almacenamiento de los datos de chat de Microsoft Teams para los usuarios locales el 31 de enero de 2018. Por lo tanto, si la identidad de un usuario de Microsoft Teams se ha sincronizado entre Active Directory y Azure Active Directory desde esta fecha, los datos de chat de su equipo se almacenan en un buzón de correo basado en la nube y se pueden buscar mediante la búsqueda de contenido. Microsoft también está trabajando en almacenar datos de chat de Microsoft Teams desde antes del 31 de enero de 2018 en los buzones de correo basados en la nube para los usuarios locales. Pronto estará disponible más información sobre esto.
+
+ * * ¿Los usuarios locales necesitan una licencia para almacenar los datos de chat de Microsoft Teams en un buzón basado en la nube? 
+  
+Sí. Para almacenar datos de chat de Teams para un usuario local en un buzón basado en la nube, el usuario debe tener asignada una licencia de Microsoft Teams y una licencia de plan de Exchange online en Office 365 (o Microsoft 365).

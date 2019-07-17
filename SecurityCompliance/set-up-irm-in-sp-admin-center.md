@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 239ce6eb-4e81-42db-bf86-a01362fed65c
 description: Obtenga información sobre cómo usar IRM de SharePoint Online a través de Microsoft Azure Active Directory Rights Management Services (RMS) para proteger listas y bibliotecas de documentos de SharePoint.
-ms.openlocfilehash: 0df2639a12472ab6452afb7d9b66bc48beb9ba1f
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 16a76ecda37bd5480285dd70670843a88198bdb7
+ms.sourcegitcommit: a97e7da9a1f870540f0bdcba7be5fb6f8bd12f74
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34156562"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "35756852"
 ---
 # <a name="set-up-information-rights-management-irm-in-sharepoint-admin-center"></a>Set up Information Rights Management (IRM) in SharePoint admin center.
 
@@ -38,7 +38,7 @@ Después de activar el servicio Rights Management, inicie sesión en el centro d
     
 3. En el panel izquierdo, elija **Centro** \> de administración de **SharePoint**.
     
-4. En el panel izquierdo, elija **configuración**.
+4. En el panel izquierdo, elija **configuración**y, a continuación, elija **página Configuración clásica**.
     
 5. En la sección **Information Rights Management (IRM)** , elija **usar el servicio de IRM especificado en la configuración**y, a continuación, elija **Actualizar configuración de IRM**. Después de actualizar la configuración de IRM, las personas de su organización pueden empezar a usar IRM en sus bibliotecas de documentos y listas de SharePoint. Sin embargo, las opciones para hacerlo pueden tardar hasta una hora en aparecer en la configuración de la biblioteca y la configuración de la lista.
     
@@ -65,7 +65,7 @@ SharePoint Online admite el cifrado de los siguientes tipos de archivo:
     
 - Formato de especificación de papel XML (XPS)
     
-## <a name="next-steps"></a>Siguientes pasos
+## <a name="next-steps"></a>Pasos siguientes
 <a name="__toc220831191"> </a>
 
 Una vez que haya habilitado IRM para SharePoint Online, puede empezar a aplicar Rights Management a listas y bibliotecas. Para obtener más información, vea [aplicar Information Rights Management a una lista o biblioteca](apply-irm-to-a-list-or-library.md).
