@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Las etiquetas de retención de Office 365 ayudan a realizar las acciones adecuadas en el contenido adecuado. Con las etiquetas de retención, puede clasificar los datos de su organización para administrarlos mejor y aplicar reglas de retención basadas en esa clasificación. También puede usar etiquetas de retención para implementar la administración de registros en Office 365.
-ms.openlocfilehash: 9f9f1ead57d7082e227e229f2204e5af627a7b9c
-ms.sourcegitcommit: 6eb51931242d07abde2e37f1bd57d13bc724f0de
+ms.openlocfilehash: b3637470e0de1413589fc8e1ba35dc48e6823c4b
+ms.sourcegitcommit: 007af78a01461023bd434768154b5d96503f7e4b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34547985"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "35772167"
 ---
 # <a name="overview-of-retention-labels"></a>Introducción a las etiquetas de retención
 
@@ -72,9 +72,10 @@ Las etiquetas de retención son bloques de creación independientes y reutilizab
   
 ![Diagrama de etiquetas, directivas de etiquetas y ubicaciones](media/eee42516-adf0-4664-b5ab-76727a9a3511.png)
   
-1. Al publicar etiquetas de retención, se incluyen en una directiva de etiqueta de retención. 
+1. Al publicar etiquetas de retención, se incluyen en una póliza de etiqueta de retención. Tenga en cuenta que los nombres de las etiquetas de retención son inmutables y no pueden editarse una vez que se han creado.
 
-2. Se puede incluir una única etiqueta de retención en numerosas directivas de etiqueta de retención.
+
+2. Se puede incluir una única etiqueta de retención en numerosas pólizas de etiqueta de retención.
 
 3. También puede incluirse una sola ubicación en numerosas directivas de etiqueta de retención.    
     
