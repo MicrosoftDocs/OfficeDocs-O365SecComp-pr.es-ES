@@ -587,7 +587,6 @@
 ### [Resistencia de datos en Exchange Online](office-365-exchange-data-resiliency.md)
 ### [Protección de malware y Ransomware](office-365-malware-and-ransomware-protection.md)
 ### [Supervisión y recuperación automática](office-365-monitoring-and-self-healing.md)
-### [Resistencia de datos en SharePoint Online](office-365-sharepoint-data-resiliency.md)
 ## [Retención, eliminación y destrucción de datos en Office 365](office-365-data-retention-deletion-and-destruction-overview.md)
 ### [Destrucción de datos](office-365-data-destruction.md)
 ### [Inmutabilidad en Office 365](office-365-data-immutability.md)
