@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con una directiva de retención, puede decidir de forma proactiva si quiere retener o eliminar contenido, ambos (retener y, a continuación, eliminar el contenido), aplicar una directiva única a la toda la organización o solo a determinadas ubicaciones o usuarios, o aplicar una directiva a todo el contenido o solo a aquel que cumpla ciertas condiciones.
-ms.openlocfilehash: 87abb5bde49204a465e820afd522d6757a10e97c
-ms.sourcegitcommit: a6f046f1529b0515f4f0e918a19ec83f4138b871
+ms.openlocfilehash: e4690c9c68bd2ead17daa2f717dd751e14338131
+ms.sourcegitcommit: 007af78a01461023bd434768154b5d96503f7e4b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "35587119"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "35772177"
 ---
 # <a name="overview-of-retention-policies"></a>Introducción a las directivas de retención
 
@@ -62,7 +62,7 @@ Para las colecciones de sitios de SharePoint, se conserva una copia del contenid
   
 Notas:
   
-- El contenido de Skype se almacena en Exchange, donde se aplica la directiva según el tipo de mensaje (correo electrónico o conversación).
+- El contenido del chat en Teams se almacena en Exchange, donde se aplica la norma según el tipo de mensaje (correo electrónico o conversación).
     
 - Una directiva de retención aplicada a un grupo de Office 365 incluye el buzón del grupo y el sitio.
     

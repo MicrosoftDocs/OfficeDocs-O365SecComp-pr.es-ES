@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: 62f0dc9e32e89954b2838b70757d3a7c17d79cc4
-ms.sourcegitcommit: 6302a43d947a908dd10a8e40550b806f491692fc
+ms.openlocfilehash: f88bdcfc4ac7ed31ec44a7d18bd74cc2a1842bc5
+ms.sourcegitcommit: 2560a3ecc6a5e3b8b79bbf56a157b66c7553682e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2019
-ms.locfileid: "35672993"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35795594"
 ---
 # <a name="review-conversations-in-advanced-ediscovery"></a>Revisar las conversaciones en eDiscovery avanzado 
 
@@ -85,7 +85,7 @@ Para habilitar la recuperación de conversaciones:
   
 2. Seleccione un conjunto de revisiones existente o cree un conjunto de revisión. Puede configurar las opciones de recuperación al agregar resultados de búsqueda a un conjunto de revisión estándar o de conversación.
   
-3. Configure las opciones de recuperación de conversaciones para los orígenes de contenido que desea expandir en la búsqueda y, a continuación, haga clic en **Agregar** para iniciar el proceso.  
+3. En **Opciones de colección**, configure las opciones de recuperación de conversaciones para los orígenes de contenido que desee expandir en la búsqueda y, a continuación, haga clic en **Agregar** para iniciar el proceso.  
   
 4. Una vez finalizado el trabajo **Agregar a la definición de revisión** en la ficha **trabajos** , puede iniciar la revisión de las conversaciones.
 
@@ -97,9 +97,15 @@ Una vez que el contenido se ha procesado y agregado al conjunto de revisiones, p
 
 En un conjunto de revisiones estándar, los mensajes se procesan y se muestran como elementos individuales, de manera similar a como se almacenan en una carpeta de buzón de correo. En este flujo de trabajo, cada mensaje se procesa como un elemento independiente. Como resultado, las opciones de exportación y Resumen encadenados no están disponibles en un conjunto de revisión estándar. 
 
+  ![Conjunto de revisión estándar](../media/standardrs.PNG)
+
 ### <a name="reviewing-conversations-in-a-conversation-review-set"></a>Revisar conversaciones en un conjunto de revisión de conversación
 
-En un conjunto de revisión de conversación, los mensajes individuales se enlazan juntos y se presentan como conversaciones. Esto le permite revisar y exportar conversaciones contextuales. En las siguientes secciones se describe cómo revisar y exportar conversaciones en un conjunto de revisión de conversación.
+En un conjunto de revisión de conversación, los mensajes individuales se enlazan juntos y se presentan como conversaciones. Esto le permite revisar y exportar conversaciones contextuales. 
+
+  ![Conjunto de revisión de conversación](../media/ConversationRSOptions.PNG)
+
+En las siguientes secciones se describe cómo revisar y exportar conversaciones en un conjunto de revisión de conversación.
 
 #### <a name="reviewing-conversations"></a>Revisión de conversaciones
 
@@ -117,9 +123,9 @@ En un conjunto de revisión de conversación, puede usar las siguientes opciones
 
 - **Vista de anotar:** Permite marcar una vista encadenada de la conversación. Todos los mensajes de la conversación comparten el mismo documento con comentarios.
 
-- **Etiqueta:** Al ver conversaciones en un conjunto de revisiones, puede ver y aplicar etiquetas haciendo clic en el **Panel de codificación**.
+- **Etiquetado:** Al ver conversaciones en un conjunto de revisiones, puede ver y aplicar etiquetas haciendo clic en **Panel de etiquetado** en el panel de codificación.
 
-- **Volver a ejecutar la conversión de conversación:** Cuando se agregan mensajes a un conjunto de revisión de conversación, se ejecuta automáticamente un trabajo de conversión para crear las vistas de Resumen y anotaciones de conversaciones. Si se produce un error en el trabajo de reconstrucción de conversaciones, puede volver a ejecutar el trabajo de conversión haciendo clic en **acción > crear una conversación en PDF** en el conjunto de revisión.
+- **Volver a ejecutar la conversión de conversación:** Cuando se agregan mensajes a un conjunto de revisión de conversación, se ejecuta automáticamente un trabajo de conversión para crear las vistas de Resumen y anotaciones de conversaciones. Si se produce un error en el trabajo de reconstrucción de conversaciones, puede volver a ejecutar este trabajo haciendo clic en **acción > crear una conversación en PDF** en el conjunto de revisión.
 
 
 #### <a name="exporting-conversations"></a>Exportar conversaciones
