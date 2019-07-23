@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Use el centro de seguridad & cumplimiento para buscar en el registro de auditoría unificado para ver la actividad del usuario y del administrador de la organización de Office 365. '
-ms.openlocfilehash: 62fdd26ec4da38610324347e189878f2fb4ad584
-ms.sourcegitcommit: a97e7da9a1f870540f0bdcba7be5fb6f8bd12f74
+ms.openlocfilehash: f2ac7e39f4bb94b516ff64323179e8107a179906
+ms.sourcegitcommit: eda5fdbefdd1d9188375f83868c07bc075841c41
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35756882"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "35820503"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Buscar el registro de auditoría en el centro de seguridad & cumplimiento
 
@@ -329,6 +329,7 @@ En la tabla siguiente se describen las actividades de archivo y página en Share
 |Archivo modificado  <br/> |FileModified  <br/> |La cuenta de usuario o del sistema modifica el contenido o las propiedades de un documento en un sitio.  <br/> |
 |(ninguno)  <br/> |FileModifiedExtended  <br/> |Esto está relacionado con la actividad "archivo modificado" (FileModified). Se registra un evento FileModifiedExtended cuando la misma persona modifica continuamente un archivo durante un período prolongado (hasta 3 horas). La finalidad de registrar eventos FileModifiedExtended es reducir el número de eventos FileModified que se registran cuando se modifica un archivo de forma continua. Esto ayuda a reducir el ruido de varios registros de FileModified para lo que es esencialmente la misma actividad de usuario y le permite centrarse en el evento FileModified inicial (y más importante).  <br/> |
 |Archivo movido  <br/> |FileMoved  <br/> |El usuario mueve un documento de su ubicación actual en un sitio a una nueva ubicación.  <br/> |
+|(ninguno)  <br/> |FilePreviewed  <br/> |El usuario muestra una vista previa de los archivos en un sitio de SharePoint o de OneDrive para la empresa. Estos eventos normalmente se producen en grandes volúmenes en función de una actividad única, como la visualización de una galería de imágenes.  <br/> |
 |Se reciclaron todas las versiones secundarias del archivo  <br/> |FileVersionsAllMinorsRecycled  <br/> |El usuario elimina todas las versiones secundarias del historial de versiones de un archivo. Las versiones eliminadas se mueven a la papelera de reciclaje del sitio.  <br/> |
 |Todas las versiones del archivo se reciclaron  <br/> |FileVersionsAllRecycled  <br/> |El usuario elimina todas las versiones del historial de versiones de un archivo. Las versiones eliminadas se mueven a la papelera de reciclaje del sitio.  <br/> |
 |Versión reciclada del archivo  <br/> |FileVersionRecycled  <br/> |El usuario elimina una versión del historial de versiones de un archivo. La versión eliminada se mueve a la papelera de reciclaje del sitio.  <br/> |

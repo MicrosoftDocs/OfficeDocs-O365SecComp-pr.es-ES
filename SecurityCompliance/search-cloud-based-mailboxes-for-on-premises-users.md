@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: Use la herramienta de búsqueda de contenido en el centro de seguridad & cumplimiento para buscar y exportar datos de chat de Microsoft Teams (denominados 1xN chats) para usuarios locales en una implementación híbrida de Exchange.
-ms.openlocfilehash: 4bc63c4a908aba61b0f289d347d1434222ec2ed8
-ms.sourcegitcommit: a97e7da9a1f870540f0bdcba7be5fb6f8bd12f74
+ms.openlocfilehash: 38aff6116bd3cd8e4ba9f0f46d6fd81f790803f3
+ms.sourcegitcommit: eda5fdbefdd1d9188375f83868c07bc075841c41
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "35756862"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "35820493"
 ---
 # <a name="searching-cloud-based-mailboxes-for-on-premises-users-in-office-365"></a>Buscar buzones de correo basados en la nube para usuarios locales en Office 365
 
@@ -163,6 +163,6 @@ No.
   
 Microsoft inició el almacenamiento de los datos de chat de Microsoft Teams para los usuarios locales el 31 de enero de 2018. Por lo tanto, si la identidad de un usuario de Microsoft Teams se ha sincronizado entre Active Directory y Azure Active Directory desde esta fecha, los datos de chat de su equipo se almacenan en un buzón de correo basado en la nube y se pueden buscar mediante la búsqueda de contenido. Microsoft también está trabajando en almacenar datos de chat de Microsoft Teams desde antes del 31 de enero de 2018 en los buzones de correo basados en la nube para los usuarios locales. Pronto estará disponible más información sobre esto.
 
- * * ¿Los usuarios locales necesitan una licencia para almacenar los datos de chat de Microsoft Teams en un buzón basado en la nube? 
+ **¿Los usuarios locales necesitan una licencia para almacenar los datos de chat de Microsoft Teams en un buzón basado en la nube?**
   
 Sí. Para almacenar datos de chat de Teams para un usuario local en un buzón basado en la nube, el usuario debe tener asignada una licencia de Microsoft Teams y una licencia de plan de Exchange online en Office 365 (o Microsoft 365).
