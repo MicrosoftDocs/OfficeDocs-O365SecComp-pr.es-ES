@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con una directiva de retención, puede decidir de forma proactiva si quiere retener o eliminar contenido, ambos (retener y, a continuación, eliminar el contenido), aplicar una directiva única a la toda la organización o solo a determinadas ubicaciones o usuarios, o aplicar una directiva a todo el contenido o solo a aquel que cumpla ciertas condiciones.
-ms.openlocfilehash: e4690c9c68bd2ead17daa2f717dd751e14338131
-ms.sourcegitcommit: 007af78a01461023bd434768154b5d96503f7e4b
+ms.openlocfilehash: ca68d2ecb7757435b8af6b63505b5acb2688daf6
+ms.sourcegitcommit: 82ee560bf3ac84079764cbb4a2d858c321f65145
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "35772177"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "35840912"
 ---
 # <a name="overview-of-retention-policies"></a>Introducción a las directivas de retención
 
@@ -78,7 +78,7 @@ Esto es aplicable al contenido existente en el momento de aplicar la directiva d
   
 Tenga en cuenta que un usuario recibirá un error si intenta eliminar una biblioteca, lista, carpeta o sitio sujeto a una directiva de retención. Un usuario puede eliminar una carpeta si primero mueve o elimina los archivos que contiene que están sujetos a la directiva. Tenga en cuenta también que la biblioteca de conservación de documentos se crea cuando es necesario copiar el primer elemento a la biblioteca, y no al crear la directiva de retención. Por lo tanto, para probar la directiva, primero debe editar o eliminar un documento sujeto a la directiva en un sitio y, a continuación, ir a la biblioteca de conservación de documentos para ver la copia retenida.
   
-![Diagrama del ciclo de vida de contenido en SharePoint y OneDrive](Retention_Diagram_of_retention_flow_in_sites.png)
+![Diagrama del ciclo de vida de contenido en SharePoint y OneDrive](media/Retention_Diagram_of_retention_flow_in_sites.png)
   
 Cuando se asigna una directiva de retención a una cuenta de OneDrive o un sitio de SharePoint, el contenido puede seguir una de estas dos rutas:
   
