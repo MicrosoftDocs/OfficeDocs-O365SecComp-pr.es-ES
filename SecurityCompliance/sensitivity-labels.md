@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con las etiquetas de confidencialidad, puede clasificar y ayudar a proteger el contenido confidencial, sin poner impedimentos a la productividad y la capacidad de colaboración de los usuarios. Puede usar etiquetas de confidencialidad para aplicar opciones de protección como encriptación o marcas de agua en el contenido con la etiqueta.
-ms.openlocfilehash: df8caa3708a07859f0bfd058a1bd09ee38dc65ea
-ms.sourcegitcommit: 044003455eb36071806c9f008ac631d54c64dde6
+ms.openlocfilehash: 5e6ece4358362a3b32ad3b8b0b30f923e6d872cb
+ms.sourcegitcommit: 82ee560bf3ac84079764cbb4a2d858c321f65145
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/24/2019
-ms.locfileid: "35200000"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "35840892"
 ---
 # <a name="overview-of-sensitivity-labels"></a>Información general de etiquetas de confidencialidad
 
@@ -267,8 +267,8 @@ Para obtener más información sobre el SDK de Microsoft Information Protection,
 
 ## <a name="permissions"></a>Permisos
 
-Los miembros de su equipo de cumplimiento normativo que vayan a crear etiquetas de confidencialidad necesitan permisos del Centro de seguridad y cumplimiento. De forma predeterminada, el administrador de espacios empresariales tendrá acceso a esta ubicación y puede proporcionar acceso a los responsables de cumplimiento y otros usuarios para el Centro de seguridad y cumplimiento sin darles todos los permisos de un administrador de espacios empresariales. Para ello, se recomienda ir a la página **Permisos** del Centro de seguridad y cumplimiento, editar el grupo de roles **Administrador de cumplimiento** y agregar miembros al mismo.
+Los miembros de su equipo de cumplimiento que vayan a crear etiquetas de confidencialidad en el Centro de cumplimiento de Microsoft 365, Centro de seguridad de Microsoft 365 o el Centro de seguridad y cumplimiento de Office 365. De forma predeterminada, el administrador de su espacio empresarial tendrá acceso a estos centros de administración y podrá dar acceso a los responsables de cumplimiento y a otros usuarios, sin concederles todos los permisos de un administrador de espacio empresarial. Para ello, le recomendamos que vaya a la página de **Permisos** de uno de estos centros de administración y añada miembros a los grupos de roles **Administrador de cumplimiento** o **Administrador de seguridad**.
 
-Para más información, vea [Conceder acceso a los usuarios para el Centro de seguridad y cumplimiento de Office 365](grant-access-to-the-security-and-compliance-center.md).
+Para obtener más información, vea [Conceder acceso a los usuarios para el Centro de seguridad y cumplimiento de Office 365](grant-access-to-the-security-and-compliance-center.md).
 
 Estos permisos solo son necesarios para crear y aplicar una directiva de etiquetas. La aplicación de directivas no necesita acceso al contenido.
