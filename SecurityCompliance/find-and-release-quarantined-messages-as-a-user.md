@@ -1,5 +1,5 @@
 ---
-title: Buscar y liberar mensajes en cuarentena como un usuario en Office 365
+title: Buscar y liberar mensajes en cuarentena como usuario de Office 365
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
@@ -7,115 +7,115 @@ ms.date: 05/19/2018
 audience: Consumer/IW
 ms.topic: article
 ms.service: O365-seccomp
-localization_priority: Normal
+localization_priority: Priority
 search.appverid:
 - MET150
 - MEW150
 ms.assetid: efff08ec-68ff-4099-89b7-266e3c4817be
 ms.collection:
 - M365-security-compliance
-description: 'Como usuario de Office 365, puede administrar sus propios mensajes de correo no deseado en cuarentena de dos maneras: respondiendo a las notificaciones de correo no deseado que se le envían directamente (si el administrador ha configurado esta característica) o mediante la característica de cuarentena de correo &amp; no deseado en el cumplimiento de seguridad Datacenter.'
-ms.openlocfilehash: 47c17e59f6f54d973eeaf761ecee6a1ac5a3dbba
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
-ms.translationtype: MT
+description: 'Como usuario de Office 365, puede administrar sus propios mensajes en cuarentena o correo no deseado de dos maneras: respondiendo notificaciones de correo no deseado que se le envían directamente (si el administrador ha configurado esta característica), o mediante la característica de cuarentena de correo no deseado en el&amp;Centro de seguridad y cumplimiento.'
+ms.openlocfilehash: 20758876dbfe51f47d66c3c1eef4dcb3cee49768
+ms.sourcegitcommit: 33c8e9c16143650ca443d73e91631f9180a9268e
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35599356"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35854584"
 ---
-# <a name="find-and-release-quarantined-messages-as-a-user-in-office-365"></a>Buscar y liberar mensajes en cuarentena como un usuario en Office 365
+# <a name="find-and-release-quarantined-messages-as-a-user-in-office-365"></a>Buscar y liberar mensajes en cuarentena como usuario de Office 365
 
-Como usuario de Office 365, puede administrar los mensajes que se enviaron a la cuarentena en lugar de enviarlos de dos maneras: respondiendo [a las notificaciones de correo no deseado que se le envían directamente](use-spam-notifications-to-release-and-report-quarantined-messages.md) (si el administrador ha configurado esto) o mediante el &amp; centro de seguridad y cumplimiento. 
+Como usuario de Office 365, puede administrar los mensajes que se pongan en cuarentena en lugar de ser recibidos de dos maneras: mediante[responder a notificaciones de correo no deseado que se envían directamente](use-spam-notifications-to-release-and-report-quarantined-messages.md) (si el administrador lo ha configurado), o usando el &amp;Centro de seguridad y cumplimiento. 
   
 > [!NOTE]
-> Si es administrador, puede [administrar los mensajes en cuarentena](manage-quarantined-messages-and-files.md) para otros usuarios de su organización. 
+> Si es administrador, puede [administrar mensajes en cuarentena](manage-quarantined-messages-and-files.md) para otros usuarios de su organización. 
   
-## <a name="view-messages-that-were-sent-to-quarantine-instead-of-to-you"></a>Ver los mensajes que se enviaron a la cuarentena en lugar de a usted
+## <a name="view-messages-that-were-sent-to-quarantine-instead-of-to-you"></a>Ver los mensajes que se han puesto en cuarentena en lugar de ser recibidos
 
-1. Inicie sesión en Office 365 y [vaya al centro de seguridad y cumplimiento](go-to-the-securitycompliance-center.md) con su cuenta profesional o educativa. 
+1. Inicie sesión en Office 365 y [vaya al Centro de seguridad y cumplimiento](go-to-the-securitycompliance-center.md) usando su cuenta de trabajo o educativa. 
     
-2. En la parte izquierda, expanda **Administración de amenazas**, seleccione **revisar**y, a continuación, haga clic **en cuarentena**.
+2. A la izquierda, expanda **Administración de amenazas**, elija **Revisión** y luego elija **Cuarentena**.
     
     > [!TIP]
-    > Para ir directamente a la página **cuarentena** en el centro &amp; de seguridad y cumplimiento, use esta dirección URL: >[https://protection.office.com/?hash=/quarantine](https://protection.office.com/?hash=/quarantine)
+    > Para ir directamente a la página de**Cuarentena** en el &amp;Centro de seguridad y cumplimiento, use esta dirección URL[https://protection.office.com/?hash=/quarantine](https://protection.office.com/?hash=/quarantine):
   
-De forma predeterminada, el &amp; centro de seguridad y cumplimiento muestra todos los mensajes de correo electrónico que se han puesto en cuarentena como correo no deseado. Los mensajes se ordenan de más reciente a más antiguo en función de la **fecha** en que se recibió el mensaje. El **remitente**, el **asunto**y la fecha de caducidad (en **Expires** ) también se muestran para cada mensaje. Puede ordenar por un campo haciendo clic en el encabezado de columna correspondiente; Haga clic en un encabezado de columna por segunda vez para invertir el criterio de ordenación. 
+De forma predeterminada, &amp;el Centro de seguridad y cumplimiento muestra todos los mensajes de correo electrónico que se han puesto en cuarentena como correo no deseado. Los mensajes están ordenados de más recientes a más antiguos según la **fecha** en que se ha recibido el mensaje. **Remitente**, **Asunto** y la fecha de expiración (en **Expira**) también se muestran por cada mensaje. Puede ordenar un campo haciendo clic en el encabezado de la columna correspondiente; haga clic en un encabezado de columna una segunda vez para invertir el criterio de ordenación. 
   
-Puede ver una lista de todos los mensajes en cuarentena, o bien puede buscar mensajes específicos mediante filtros. Solo puede realizar operaciones masivas en un máximo de 100 elementos, por lo que el filtrado también puede ayudar a reducir el conjunto de resultados si tiene más de eso. Puede filtrar rápidamente los mensajes por una única razón de cuarentena eligiendo una opción de la lista desplegable. Las opciones son:
+Puede ver una lista de todos los mensajes en cuarentena o puede buscar mensajes específicos filtrando. Solo puede hacer operaciones en masa con un máximo de 100 elementos, los filtros también pueden ayudar a reducir el conjunto de resultados si tiene más de esos. Puede filtrar mensajes por un único motivo de cuarentena rápidamente eligiendo una opción en la lista desplegable. Entre las opciones se incluyen:
   
-- Correo identificado como correo no deseado. Estos mensajes en cuarentena se muestran de forma predeterminada.
+- Correo identificado como correo no deseado. De forma predeterminada, se muestran los mensajes en cuarentena.
     
 - Correo identificado como correo masivo.
     
-Una vez que haya encontrado un mensaje en cuarentena específico, haga clic en el mensaje para ver los detalles del mismo y emprender acciones. Puede liberar el mensaje al buzón de correo, obtener una vista previa del mensaje, descargar el mensaje o eliminar el mensaje de la cuarentena inmediatamente.
+Cuando encuentre un mensaje en cuarentena específico, haga clic en el mensaje para ver los detalles acerca de él y realizar acciones. Puede pasar el mensaje a la bandeja de entrada, obtener una vista previa del mensaje, descargar el mensaje o eliminar el mensaje en cuarentena inmediatamente.
   
 > [!NOTE]
-> Debe tener permisos de administrador en Office 365 para trabajar con los mensajes en cuarentena que se enviaron a otros usuarios. 
+> Debe tener permisos de administrador en Office 365 para trabajar con mensajes en cuarentena que se enviaron a otros usuarios. 
   
 ## <a name="to-filter-and-find-quarantined-messages"></a>Para filtrar y buscar mensajes en cuarentena
 
-Si tiene muchos elementos en cuarentena, puede reducir el número a un conjunto administrable si los filtra.
+Si tiene una gran cantidad de elementos en cuarentena, puede reducir el número a un conjunto más manejable con filtros.
   
-1. En la página **cuarentena** , elija si desea ver los mensajes de **correo electrónico** **masivo** o en cuarentena. 
+1. En la página **Cuarentena**, seleccione si desea ver mensajes en cuarentena de **correo no deseado** o **en masa**. 
     
-2. En **ordenar resultados por**, elija una combinación de condiciones estableciendo el filtro o filtros apropiados (no se pueden usar caracteres comodín en este momento). Hay varias condiciones que puede elegir, entre las que se incluyen las siguientes:
+2. En **Ordenar los resultados por**, elija cualquier combinación de condiciones, establezca el filtro adecuado o filtros (no puede usar caracteres comodín en este momento). Hay varias condiciones que puede elegir, incluidas los siguientes:
     
-  - **Identificador de mensaje** Use esta para seleccionar un mensaje específico cuando conoce el identificador del mensaje. 
+  - **Identificación de mensaje** Use esta opción para seleccionar un mensaje específico si conoce la identificación del mensaje. 
     
-    Por ejemplo, si un usuario envía un mensaje específico o está destinado a un usuario de su organización, pero nunca llegó a su destino, puede buscar el mensaje mediante un seguimiento de mensajes (consulte [ejecutar un seguimiento de mensajes y ver los resultados](https://go.microsoft.com/fwlink/?LinkId=799737)). Si descubre que el mensaje se envió a la cuarentena, quizá porque coincidía con una regla de flujo de correo o se identificó como correo no deseado, puede encontrar fácilmente este mensaje en cuarentena especificando su identificador de mensaje. Asegúrese de incluir la cadena completa de Id. de mensaje. Esto puede incluir corchetes angulares\<\>(), por ejemplo:
+    Por ejemplo, si un usuario de la organización envió un mensaje específico o bien, se le envió un mensaje específico al usuario, y el mensaje nunca llegó al destino, puede buscarlo mediante la característica de seguimiento de mensaje (consulte [Correr rastro del mensaje y ver resultados](https://go.microsoft.com/fwlink/?LinkId=799737)). Si descubre que el mensaje se envió a cuarentena, quizás porque coincidía con una regla o se identificó como correo no deseado, lo encontrará fácilmente en la cuarentena especificando este identificador de mensaje. Asegúrese de incluir la cadena completa de identificador de mensaje. Este poder puede incluir corchetes angulares(\<\>), por ejemplo:
     
     \<79239079-d95a-483a-aacf-e954f592a0f6@XYZPR00BM0200.contoso.com\>
     
-  - **Dirección de correo electrónico del remitente** Elija filtrar por una sola dirección de correo electrónico del remitente. 
+  - **Dirección de correo electrónico del remitente** Elija filtrar por una única dirección de correo electrónico del remitente. 
     
-  - **Dirección de correo electrónico del destinatario** Elija filtrar por una sola dirección de correo electrónico de destinatarios. 
+  - **Dirección de correo electrónico del destinatario** Elija filtrar por una única dirección de correo electrónico del destinatario. 
     
-  - **Asunto** Escriba el asunto de la dirección de correo electrónico que desea buscar. 
+  - **Asunto** Escriba el asunto de una dirección de correo electrónico que desea buscar. 
     
-  - **Intervalo de fechas** Puede elegir filtrar por la fecha en la que se envió el mensaje a cuarentena. Puede especificar la fecha o un intervalo de fechas, incluida la hora. 
+  - **Intervalo de fechas** Puede filtrar por la fecha en que se envió el mensaje a la cuarentena. Puede especificar la fecha o un intervalo de fechas, incluida la hora. 
     
-  - **Fecha** de expiración Para filtrar por fecha de expiración, elija **filtro avanzado**. Puede seleccionar mensajes que se eliminarán de la cuarentena en las próximas 24 horas ( **hoy**), en el siguiente 48 horas ( **próximos 2 días**), en la próxima semana ( **próximos 7 días**), o puede seleccionar un intervalo de tiempo personalizado.
+  - **Fecha de expiración**para filtrar por fecha de expiración, elija **Filtro avanzado**. Puede seleccionar que el mensaje se elimine de la cuarentena en las próximas 24 horas (**Hoy**), en las próximas 48 horas (**Próximos 2 días**), en la próxima semana (**Próximos 7 días**), o puede seleccionar un intervalo de tiempo personalizado.
     
     > [!IMPORTANT]
-    > De forma predeterminada, los mensajes de correo no deseado y masivos se mantienen en cuarentena durante 30 días. Sin embargo, este período de tiempo se puede configurar y es posible que el administrador haya establecido un período de retención de cuarentena diferente. Cuando Office 365 elimina un mensaje de la cuarentena, no puede recuperarlo. 
+    > De forma predeterminada, los mensajes de correo no deseado y en masa se conservan en cuarentena durante 30 días. Sin embargo, este período de tiempo es configurable y puede que su administrador haya establecido un período de retención de cuarentena diferente. Cuando Office 365 elimina un mensaje en cuarentena, no puede recuperarlo. 
   
 ## <a name="view-details-for-a-specific-message"></a>Ver detalles de un mensaje específico
 
-Después de seleccionar un mensaje, verá un resumen de las propiedades del mensaje en un panel del lado derecho de la página.
+Después de seleccionar un mensaje, verá un resumen de las propiedades del mensaje en un panel en el lado derecho de la página.
   
-- **Identificador del mensaje:** El identificador único del mensaje. 
+- **Identificación del mensaje:** Identificador único para el mensaje. 
     
 - **Dirección del remitente:** Quién envió el mensaje. 
     
-- **Recibido:** La fecha en que se recibió el mensaje. 
+- **Recibido:** la fecha en que se recibió el mensaje. 
     
-- **Asunto:** Texto de la línea de asunto del mensaje. 
+- **Asunto:** El texto de la línea de asunto del mensaje. 
     
-- **Motivo de cuarentena:** Muestra si un mensaje se ha identificado como **correo no deseado** o **masivo**.
+- **Motivo de la cuarentena:** Muestra si un mensaje se ha identificado como **Correo no deseado** o **Bulto**.
     
-- **Expires:** La fecha en la que se eliminará el mensaje de la cuarentena. 
+- **Expira:** la fecha en la que se eliminará el mensaje de la cuarentena. 
     
-- **Lanzado a:** Todas las direcciones de correo electrónico (si las hay) en las que se ha lanzado el mensaje. 
+- **Fecha de publicación para:** Todas las direcciones de correo electrónico (si corresponde) a las que el mensaje se ha liberado. 
     
-- **Todavía no se ha lanzado a:** Todas las direcciones de correo electrónico (si las hay) en las que no se ha lanzado el mensaje. Puede elegir **lanzar** si desea liberar el mensaje en su buzón (más información sobre cómo publicar mensajes en la sección siguiente). 
+- **Aún no se ha publicado para**. Todas las direcciones de correo electrónico (si corresponde) a las que el mensaje no se ha entregado todavía. Puede elegir**Liberar** si desea pasar el mensaje a la bandeja de entrada (más información sobre cómo liberar mensajes en la siguiente sección). 
     
-Puede obtener incluso más detalles sobre el mensaje eligiendo una de las siguientes opciones:
+Para obtener más información sobre el mensaje, elija una de las siguientes opciones:
   
-- **Ver el encabezado del mensaje** Elija esta opción para ver el texto del encabezado del mensaje. Para analizar el encabezado en profundidad, copie el texto del encabezado del mensaje en el portapapeles y, a continuación, elija **analizador de encabezados de mensajes de Microsoft** para ir al analizador de conectividad remota (haga clic con el botón secundario y elija Abrir en una nueva pestaña si no desea dejar Office 365 para completar esta tarea). Pegue el encabezado del mensaje en la página en la sección analizador de encabezados de mensaje y elija analizar encabezados. 
+- **Ver encabezado del mensaje** Seleccione esta opción para ver el texto del encabezado del mensaje. Copie el texto del encabezado del mensaje en el portapapeles para analizar el encabezado en profundidad y luego elija**Analizador de encabezados de mensaje de Microsoft**para desplazarse hasta el Analizador de conectividad remoto (haga clic y elija Abrir en una nueva pestaña si no desea dejar que Office 365 complete esta tarea). Pegue el encabezado del mensaje en la página en la sección del Analizador de encabezados de mensaje y seleccione Analizar encabezados. 
     
-- **Vista previa del mensaje** Permite ver versiones RAW o HTML del texto del cuerpo del mensaje. En la vista HTML, los vínculos están deshabilitados. 
+- **Vista previa del mensaje** Le permite ver versiones sin procesar o HTML del texto del cuerpo del mensaje. En la vista HTML, los vínculos se deshabilitan. 
     
 ## <a name="manage-your-quarantined-messages"></a>Administrar los mensajes en cuarentena
 
 Después de seleccionar un mensaje o un grupo de mensajes, tiene varias opciones para administrar los mensajes en cuarentena.
   
-- No ejecutar ninguna acción. Si decide no hacer nada, el mensaje será eliminado automáticamente por Office 365 automáticamente tras la expiración. Recuerde que, cuando Office 365 elimina un mensaje de la cuarentena, no puede recuperarlo.
+- No hacer nada. Si decide no hacer nada, Office 365 eliminará el mensaje automáticamente al vencimiento. Recuerde que cuando Office 365 elimina un mensaje en cuarentena, no puede recuperarlo.
     
-- **Liberar mensaje** Liberar un mensaje en cuarentena (o un conjunto de mensajes) para que el mensaje se envíe a su buzón de correo. Al liberar un mensaje, tiene la opción de informar al mensaje a Microsoft para que lo analice. 
+- **Liberar mensaje** Libera un mensaje en cuarentena (o un conjunto de mensajes) para que el mensaje se envíe a la bandeja de entrada. Cuando libera un mensaje, tiene la opción de enviar el mensaje a Microsoft para analizarlo. 
     
-    Cuando decide informar de un mensaje, también denominado notificar un mensaje como falso positivo, el mensaje se notifica al equipo de análisis de correo no deseado de Microsoft. El equipo evalúa y analiza los mensajes falsos positivos y, según los resultados del análisis, las reglas de filtro de contenido de correo no deseado de todo el servicio pueden ajustarse para permitir el paso de estos mensajes.
+    Si decide enviar un mensaje, también denominado informar de un mensaje como un falso positivo, el mensaje se notifica al Equipo de análisis de correo no deseado de Microsoft. El equipo evalúa y analiza los mensajes de falso positivo y, según los resultados del análisis, puede ajustar las reglas de filtro de contenido de correo no deseado de todo el servicio para dejar pasar estos mensajes.
     
-- **Mensaje de descarga** Permite descargar el mensaje como archivo. eml. Una vez que haya descargado un mensaje, puede revisar el archivo. eml mediante su cliente de correo electrónico antes de publicar el mensaje. 
+- **Descargar mensaje** Le permite descargar el mensaje como un archivo .eml. Después de descargar un mensaje, puede revisar el archivo .eml con el cliente de correo electrónico antes de liberar el mensaje. 
     
-- **Quitar de cuarentena** Elimina el mensaje inmediatamente de cuarentena sin liberar el mensaje al buzón de correo. 
+- **Eliminar de cuarentena** Elimina el mensaje inmediatamente de la cuarentena sin pasar el mensaje a la bandeja de entrada. 
     
 
