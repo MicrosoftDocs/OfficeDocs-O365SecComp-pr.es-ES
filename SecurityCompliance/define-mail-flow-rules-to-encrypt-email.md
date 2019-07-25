@@ -14,12 +14,12 @@ ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden aprender a crear reglas de flujo de correo (reglas de transporte) para cifrar y descifrar mensajes mediante el cifrado de mensajes de Office 365.
-ms.openlocfilehash: 624219c3d974c0a9ab8004bb7b606264c5d0f8ee
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 75b8e3c977a2708eb1edb8e2b94f555aa54045ca
+ms.sourcegitcommit: 33c8e9c16143650ca443d73e91631f9180a9268e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34150652"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35854694"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages-in-office-365"></a>Definir reglas de flujo de correo para cifrar mensajes de correo electrónico en Office 365
 
@@ -47,7 +47,7 @@ Puede definir reglas de flujo de correo para desencadenar el cifrado de mensajes
 
 2. Elija el icono **Administración** .
 
-3. En el Centro de administración de Office 365, elija **Centros de administración** \> **Exchange**.
+3. En el centro de administración de Microsoft 365, elija centro de **Administración** \> , **Exchange**.
 
 4. En el EAC, vaya a **** \> **reglas** de flujo de correo **** ![y seleccione nuevo](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> icono nuevo para **crear una nueva regla**. Para obtener más información acerca del uso de EAC, consulte [centro de administración de Exchange en Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
 
@@ -79,7 +79,7 @@ Puede definir reglas de flujo de correo para desencadenar el cifrado de mensajes
 
 2. Elija el icono **Administración** .
 
-3. En el Centro de administración de Office 365, elija **Centros de administración** \> **Exchange**.
+3. En el centro de administración de Microsoft 365, elija centro de **Administración** \> , **Exchange**.
 
 4. En el EAC, vaya a **Flujo de correo** \> **Reglas**.
 
@@ -105,7 +105,7 @@ Si todavía no ha movido su organización de Office 365 a las nuevas capacidades
 
 2. Elija el icono **Administración** .
 
-3. En el Centro de administración de Office 365, elija **Centros de administración** \> **Exchange**.
+3. En el centro de administración de Microsoft 365, elija centro de **Administración** \> , **Exchange**.
 
 4. En el EAC, vaya a **** \> **reglas** de flujo de correo **** ![y seleccione nuevo](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> icono nuevo para **crear una nueva regla**. Para obtener más información acerca del uso de EAC, consulte [centro de administración de Exchange en Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
 
@@ -163,7 +163,7 @@ Cuando los usuarios de correo electrónico envían mensajes cifrados, los destin
 
 2. Elija el icono **Administración** .
 
-3. En el Centro de administración de Office 365, elija **Centros de administración** \> **Exchange**.
+3. En el centro de administración de Microsoft 365, elija centro de **Administración** \> , **Exchange**.
 
 4. En el EAC, vaya a **** \> **reglas** de flujo de correo **** ![y seleccione nuevo](media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> icono nuevo para **crear una nueva regla**. Para obtener más información acerca del uso de EAC, consulte [centro de administración de Exchange en Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
 

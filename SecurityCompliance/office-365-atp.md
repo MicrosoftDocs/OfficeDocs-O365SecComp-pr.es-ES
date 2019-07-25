@@ -7,7 +7,7 @@ ms.date: 03/28/2019
 audience: Admin
 ms.topic: hub-page
 ms.service: O365-seccomp
-localization_priority: Normal
+localization_priority: Priority
 search.appverid:
 - MET150
 - MOE150
@@ -15,12 +15,12 @@ ms.assetid: e100fe7c-f2a1-4b7d-9e08-622330b83653
 ms.collection:
 - M365-security-compliance
 description: Office 365 Advanced Threat Protection incluye datos adjuntos seguros, vínculos seguros, herramientas avanzadas contra la suplantación de identidad, herramientas de informes y capacidades de inteligencia de amenazas.
-ms.openlocfilehash: 0793036f10444064f5f049a6a6ea7254de179967
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 96e79a8aabe0788388473da9fcd514b9285e1c00
+ms.sourcegitcommit: 33c8e9c16143650ca443d73e91631f9180a9268e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35600967"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "35854784"
 ---
 # <a name="office-365-advanced-threat-protection"></a>Protección contra amenazas avanzada de Office 365
 
@@ -53,7 +53,7 @@ Las directivas definidas para su organización determinan el nivel de comportami
 
 - [Datos adjuntos seguros de ATP](atp-safe-attachments.md): proporciona protección de día cero para proteger el sistema de mensajería, comprobando los archivos adjuntos de correo electrónico en busca de contenido malintencionado. Dirige todos los mensajes y datos adjuntos que no tienen una firma de virus o malware a un entorno especial y, a continuación, usa técnicas de aprendizaje y análisis de máquina para detectar los intentos malintencionados. Si no se encuentra ninguna actividad sospechosa, el mensaje se reenvía al buzón. Para obtener más información, consulte [configurar las directivas de datos adjuntos seguros de Office 365 ATP](set-up-atp-safe-attachments-policies.md).
 
-- [Vínculos seguros de ATP](atp-safe-links.md): proporciona la comprobación del tiempo de clic de las direcciones URL en mensajes de correo electrónico y archivos de Office. La protección está en curso y se aplica a todo el entorno de mensajería y de Office. Se examinan los vínculos para cada clic: los vínculos seguros permanecen accesibles y los vínculos malintencionados se bloquean dinámicamente. Para obtener más información, consulte [configurar las directivas de vínculos seguros de Office 365 ATP](https://docs.microsoft.com/en-us/office365/securitycompliance/set-up-atp-safe-links-policies). 
+- [Vínculos seguros de ATP](atp-safe-links.md): proporciona la comprobación del tiempo de clic de las direcciones URL, por ejemplo, en mensajes de correo electrónico y archivos de Office. La protección está en curso y se aplica a todo el entorno de mensajería y de Office. Se examinan los vínculos para cada clic: los vínculos seguros permanecen accesibles y los vínculos malintencionados se bloquean dinámicamente. Para obtener más información, consulte [configurar las directivas de vínculos seguros de Office 365 ATP](https://docs.microsoft.com/en-us/office365/securitycompliance/set-up-atp-safe-links-policies). 
 
 - [ATP para SharePoint, OneDrive y Microsoft Teams](atp-for-spo-odb-and-teams.md): protege a su organización cuando los usuarios colaboran y comparten archivos, identificando y bloqueando archivos malintencionados en los sitios de grupo y las bibliotecas de documentos. Para obtener más información, consulte [activar Office 365 ATP para SharePoint, OneDrive y Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md). 
 
