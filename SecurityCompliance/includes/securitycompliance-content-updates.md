@@ -3,49 +3,6 @@
 
 
 
-## <a name="week-of-june-17-2019"></a>Semana del 17 de junio de 2019
-
-
-| Fecha de publicación |Título del tema | Cambio |
-|------|------------|--------|
-| 6/17/2019 | [Ir al Centro de seguridad y cumplimiento de Office 365](/Office365/SecurityCompliance/go-to-the-securitycompliance-center) | modificado |
-| 6/17/2019 | [Proporcionar a los usuarios acceso al centro de seguridad & cumplimiento de Office 365](/Office365/SecurityCompliance/grant-access-to-the-security-and-compliance-center) | modificado |
-| 6/17/2019 | [Buscar y eliminar mensajes: Ayuda para administradores](/Office365/SecurityCompliance/search-for-and-delete-messagesadmin-help) | modificado |
-| 6/17/2019 | [Integración del servidor SIEM con Microsoft 365](/Office365/SecurityCompliance/siem-server-integration) | modificado |
-| 6/17/2019 | [Usar un conector de ejemplo para archivar datos de Facebook en Office 365 (versión preliminar)](/Office365/SecurityCompliance/archive-facebook-data-with-sample-connector) | modificado |
-| 6/17/2019 | [Usar un conector de ejemplo para archivar datos de Twitter en Office 365 (versión preliminar)](/Office365/SecurityCompliance/archive-twitter-data-with-sample-connector) | modificado |
-| 6/17/2019 | [Archivado de datos de terceros en Office 365](/Office365/SecurityCompliance/archiving-third-party-data) | modificado |
-| 6/17/2019 | [Implementar un conector para archivar datos de Twitter en Office 365](/Office365/SecurityCompliance/deploy-twitter-connector) | modificado |
-| 6/17/2019 | [Consultas de palabras clave y condiciones de búsqueda para la búsqueda de contenido](/Office365/SecurityCompliance/keyword-queries-and-search-conditions). | modificado |
-| 6/17/2019 | [Usar la búsqueda de contenido para buscar datos de terceros que se importaron a Office 365](/Office365/SecurityCompliance/use-content-search-to-search-third-party-data-that-was-imported) | modificado |
-| 6/17/2019 | [Páginas de advertencia de vínculos seguros de ATP de Office 365](/Office365/SecurityCompliance/atp-safe-links-warning-pages) | modificado |
-| 6/17/2019 | [Crear listas de remitentes bloqueados en Office 365](/Office365/SecurityCompliance/create-block-sender-lists-in-office-365) | modificado |
-| 6/17/2019 | [Crear listas de remitentes seguros en Office 365](/Office365/SecurityCompliance/create-safe-sender-lists-in-office-365) | modificado |
-| 6/17/2019 | [Asignar permisos para las investigaciones de datos (versión preliminar)](/Office365/SecurityCompliance/datainvestigations/permissions) | modificado |
-| 6/17/2019 | [Atributos para directivas de barrera de información](/Office365/SecurityCompliance/information-barriers-attributes) | modificado |
-| 6/17/2019 | [Definir directivas de barrera de información](/Office365/SecurityCompliance/information-barriers-policies) | modificado |
-| 6/17/2019 | [Solución de problemas de obstáculos para la información](/Office365/SecurityCompliance/information-barriers-troubleshooting) | modificado |
-| 6/17/2019 | [Introducción a las barreras de información](/Office365/SecurityCompliance/information-barriers) | modificado |
-| 6/18/2019 | [Exhibición de documentos electrónicos en Office 365](/Office365/SecurityCompliance/ediscovery) | modificado |
-| 6/18/2019 | [Definir directivas de barrera de información](/Office365/SecurityCompliance/information-barriers-policies) | modificado |
-| 6/18/2019 | [Proteger archivos de SharePoint Online con DLP y etiquetas de retención](/Office365/SecurityCompliance/protect-sharepoint-online-files-with-office-365-labels-and-dlp) | modificado |
-| 6/18/2019 | [Proteger sitios de SharePoint Online en un entorno de desarrollo y pruebas](/Office365/SecurityCompliance/secure-sharepoint-online-sites-in-a-dev-test-environment) | modificado |
-| 6/19/2019 | [Configurar un conector para archivar datos de LinkedIn en Office 365 (versión preliminar)](/Office365/SecurityCompliance/archive-linkedin-data) | modificado |
-| 6/19/2019 | [Información general sobre la solución de exhibición de documentos electrónicos avanzada en Microsoft 365](/Office365/SecurityCompliance/compliance20/overview-ediscovery-20) | modificado |
-| 6/19/2019 | [Definir directivas de barrera de información](/Office365/SecurityCompliance/information-barriers-policies) | modificado |
-| 6/19/2019 | [Contenido almacenado en buzones de correo de Exchange Online](/Office365/SecurityCompliance/what-is-stored-in-exo-mailbox) | modificado |
-| 6/20/2019 | [Buscar el registro de auditoría en el centro de seguridad & cumplimiento](/Office365/SecurityCompliance/search-the-audit-log-in-security-and-compliance) | modificado |
-| 6/20/2019 | [Explorador de amenazas (y detecciones en tiempo real)](/Office365/SecurityCompliance/threat-explorer) | modificado |
-| 6/20/2019 | [Definir directivas de barrera de información](/Office365/SecurityCompliance/information-barriers-policies) | modificado |
-| 6/20/2019 | [Configurar directivas de vínculos seguros de Office 365 ATP](/Office365/SecurityCompliance/set-up-atp-safe-links-policies) | modificado |
-| 6/20/2019 | [Directivas de alerta en el centro de seguridad y cumplimiento](/Office365/SecurityCompliance/alert-policies) | modificado |
-| 6/20/2019 | [Administrar archivos y mensajes en cuarentena como un administrador en Office 365](/Office365/SecurityCompliance/manage-quarantined-messages-and-files) | modificado |
-| 6/20/2019 | [Administrar la auditoría de buzones de correo](/Office365/SecurityCompliance/enable-mailbox-auditing) | modificado |
-| 6/21/2019 | [Definir directivas de barrera de información](/Office365/SecurityCompliance/information-barriers-policies) | modificado |
-| 6/21/2019 | [Solución de problemas de obstáculos para la información](/Office365/SecurityCompliance/information-barriers-troubleshooting) | modificado |
-| 6/21/2019 | [Información general sobre las directivas de retención](/Office365/SecurityCompliance/retention-policies) | modificado |
-
-
 ## <a name="week-of-june-24-2019"></a>Semana del 24 de junio de 2019
 
 
@@ -360,3 +317,38 @@
 | 7/18/2019 | [Set up Information Rights Management (IRM) in SharePoint admin center](/Office365/SecurityCompliance/set-up-irm-in-sp-admin-center). | modificado |
 | 7/18/2019 | [Configurar las nuevas capacidades de cifrado de mensajes de Office 365](/Office365/SecurityCompliance/set-up-new-message-encryption-capabilities) | modificado |
 | 7/18/2019 | [Revisar las conversaciones en eDiscovery avanzado](/Office365/SecurityCompliance/compliance20/conversation-review-sets) | modificado |
+
+
+## <a name="week-of-july-22-2019"></a>Semana del 22 de julio de 2019
+
+
+| Fecha de publicación |Título del tema | Cambio |
+|------|------------|--------|
+| 7/22/2019 | [Buscar buzones de correo basados en la nube para usuarios locales en Office 365](/Office365/SecurityCompliance/search-cloud-based-mailboxes-for-on-premises-users) | modificado |
+| 7/22/2019 | [Buscar el registro de auditoría en el centro de seguridad & cumplimiento](/Office365/SecurityCompliance/search-the-audit-log-in-security-and-compliance) | modificado |
+| 7/23/2019 | [Cargar datos que no son de Office 365 a un conjunto de revisión](/Office365/SecurityCompliance/compliance20/load-non-office365-data) | modificado |
+| 7/23/2019 | [Información general sobre las directivas de retención](/Office365/SecurityCompliance/retention-policies) | modificado |
+| 7/23/2019 | [Información general de etiquetas de confidencialidad](/Office365/SecurityCompliance/sensitivity-labels) | modificado |
+| 7/24/2019 | [Encabezados de mensajes de correo no deseado](/Office365/SecurityCompliance/anti-spam-message-headers) | modificado |
+| 7/24/2019 | [Configurar las directivas de filtro de correo no deseado](/Office365/SecurityCompliance/configure-your-spam-filter-policies) | modificado |
+| 7/24/2019 | [Búsqueda de contenido en Office 365](/Office365/SecurityCompliance/content-search) | modificado |
+| 7/24/2019 | [Información general sobre prevención de pérdida de datos](/Office365/SecurityCompliance/data-loss-prevention-policies) | modificado |
+| 7/24/2019 | [Definir reglas de flujo de correo para cifrar mensajes de correo electrónico en Office 365](/Office365/SecurityCompliance/define-mail-flow-rules-to-encrypt-email) | modificado |
+| 7/24/2019 | [Cifrado de correo electrónico en Office 365](/Office365/SecurityCompliance/email-encryption) | modificado |
+| 7/24/2019 | [Exportar resultados de la búsqueda de contenido](/Office365/SecurityCompliance/export-search-results) | modificado |
+| 7/24/2019 | [Buscar y liberar mensajes en cuarentena como un usuario en Office 365](/Office365/SecurityCompliance/find-and-release-quarantined-messages-as-a-user) | modificado |
+| 7/24/2019 | [Overview of importing your organization PST files to Office 365](/Office365/SecurityCompliance/importing-pst-files-to-office-365) | modificado |
+| 7/24/2019 | [Protección contra amenazas avanzada de Office 365](/Office365/SecurityCompliance/office-365-atp) | modificado |
+| 7/24/2019 | [Quitar un usuario desde el Portal de usuarios restringidos después de enviar correo no deseado](/Office365/SecurityCompliance/removing-user-from-restricted-users-portal-after-spam) | modificado |
+| 7/24/2019 | [Buscar y eliminar mensajes de correo electrónico de su organización de Office 365-ayuda para administradores](/Office365/SecurityCompliance/search-for-and-delete-messages-in-your-organization) | modificado |
+| 7/24/2019 | [Buscar el registro de auditoría en el centro de seguridad & cumplimiento](/Office365/SecurityCompliance/search-the-audit-log-in-security-and-compliance) | modificado |
+| 7/24/2019 | [Configurar las nuevas capacidades de cifrado de mensajes de Office 365](/Office365/SecurityCompliance/set-up-new-message-encryption-capabilities) | modificado |
+| 7/24/2019 | [Configurar SPF en Office 365 para ayudar a evitar la suplantación de identidad](/Office365/SecurityCompliance/set-up-spf-in-office-365-to-help-prevent-spoofing) | modificado |
+| 7/24/2019 | [Usar DKIM para el correo electrónico de su dominio personalizado en Office 365](/Office365/SecurityCompliance/use-dkim-to-validate-outbound-email) | modificado |
+| 7/24/2019 | [Usar DMARC para validar el correo electrónico en Office 365](/Office365/SecurityCompliance/use-dmarc-to-validate-email) | modificado |
+| 7/24/2019 | [Use la carga de red para importar los archivos PST de su organización a Office 365](/Office365/SecurityCompliance/use-network-upload-to-import-pst-files) | modificado |
+| 7/25/2019 | [Configurar un conector para archivar datos Instant Bloomberg en Office 365](/Office365/SecurityCompliance/archive-instant-bloomberg-data) | modificado |
+| 7/25/2019 | [Archivado de datos de terceros en Office 365](/Office365/SecurityCompliance/archiving-third-party-data) | modificado |
+| 7/25/2019 | [Cifrado en Office 365](/Office365/SecurityCompliance/encryption) | modificado |
+| 7/26/2019 | [Directivas de supervisión en Office 365](/Office365/SecurityCompliance/supervision-policies) | modificado |
+| 7/26/2019 | [Auditar el uso compartido para buscar recursos compartidos con usuarios externos](/Office365/SecurityCompliance/use-sharing-auditing) | modificado |

@@ -9,12 +9,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: Los administradores pueden usar el seguimiento de mensajes en el centro de seguridad & cumplimiento para averiguar qué sucedió con los mensajes.
-ms.openlocfilehash: fb173dd09adf02c1b2eb7d0dbf9d5736483f231b
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: af3739174203d7c8d81086a5bf7d036bc2bdd76f
+ms.sourcegitcommit: 73dcdafb15b462223d1a670c781db260eb73c2f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35601017"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36048222"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Seguimiento de mensajes en el Centro de seguridad y cumplimiento
 
@@ -23,6 +23,9 @@ ms.locfileid: "35601017"
 Seguimiento de mensajes en el centro de seguridad & cumplimiento sigue los mensajes de correo electrónico mientras viajan a través de la organización de Exchange Online. Puede determinar si el servicio ha recibido, rechazado, aplazado o entregado un mensaje. También muestra las acciones que se tomaron en el mensaje antes de que alcanzara su estado final.
 
 El seguimiento de mensajes en el centro de seguridad & cumplimiento mejora según el seguimiento de mensajes que estaba disponible en el centro de administración de Exchange (EAC). Puede usar la información del seguimiento de mensajes para responder de manera eficiente a las preguntas de los usuarios sobre lo que sucedió con sus mensajes, solucionar problemas del flujo de correo y validar los cambios en la Directiva.
+
+> [!NOTE]
+> El límite de la cantidad de mensajes devueltos es de 50.000. En la consola, cuando se ejecuta una consulta de gran tamaño, el recuento de mensajes del informe de cmdlet Get-HistoricalSearch supera 240.000.
 
 ## <a name="open-message-trace"></a>Abrir el seguimiento de mensajes
 

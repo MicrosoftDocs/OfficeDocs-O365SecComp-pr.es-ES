@@ -2,7 +2,7 @@
 title: Configurar directivas de vínculos seguros de Office 365 ATP
 ms.author: deniseb
 author: denisebmsft
-manager: laurawi
+manager: dansimp
 audience: Admin
 ms.topic: article
 ms.date: 06/26/2019
@@ -15,12 +15,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Configure las directivas de vínculos seguros para proteger a su organización de vínculos malintencionados en archivos de Word, Excel, PowerPoint y Visio, así como en mensajes de correo electrónico.
-ms.openlocfilehash: 8fd49eddc402400acafe0f9d702d19c7a3f63949
-ms.sourcegitcommit: 011bfa60cafdf47900aadf96a17eb275efa877c4
+ms.openlocfilehash: 0acee8ee333c8a8f81ed624c52287c412a25ccbb
+ms.sourcegitcommit: 73dcdafb15b462223d1a670c781db260eb73c2f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/29/2019
-ms.locfileid: "35394345"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36048082"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Configurar directivas de vínculos seguros de Office 365 ATP
 
@@ -97,9 +97,9 @@ Una vez que haya revisado (o editado) la directiva predeterminada de vínculos s
     
   - En la sección **seleccionar la acción** , elija **activado**.
     
-  - Seleccione **usar datos adjuntos seguros para analizar contenido**descargable.
+  - Seleccione **aplicar análisis de URL en tiempo real para vínculos sospechosos y vínculos que apunten a archivos** si desea habilitar la detonación de dirección URL para direcciones URL que señalen archivos y sospechosos (recomendado). Y seleccione **esperar a que se complete el análisis de URL antes de entregar el mensaje** si solo quiere que los usuarios reciban mensajes después de que se hayan examinado completamente las direcciones URL.
     
-  - Si esta opción está disponible, seleccione **aplicar vínculos seguros a los mensajes enviados dentro de la organización**.
+  - Seleccione **aplicar vínculos seguros a los mensajes enviados dentro de la organización** si desea habilitar vínculos seguros para los mensajes enviados entre usuarios de la organización (recomendado).
     
   - Seleccione no permitir que el **usuario haga clic a través de la dirección URL original**.
     

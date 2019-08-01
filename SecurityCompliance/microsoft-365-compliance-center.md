@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: o365-seccomp
 localization_priority: Normal
 description: Obtenga información sobre el nuevo centro de cumplimiento de Microsoft 365, incluido lo que contiene, cómo obtenerlo y los pasos siguientes.
-ms.openlocfilehash: fc6ab6893e142b3beb5289c8430477727b3844ac
-ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
+ms.openlocfilehash: ec7dff8d230bc3b9e7ab1fd4a9348a1b8eb0ca9b
+ms.sourcegitcommit: 73dcdafb15b462223d1a670c781db260eb73c2f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "34852794"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36048232"
 ---
 # <a name="overview-of-the-all-new-microsoft-365-compliance-center"></a>Información general sobre el nuevo centro de cumplimiento de Microsoft 365
 
@@ -68,7 +68,7 @@ Además de los vínculos de las tarjetas en la Página principal, encontrará un
 
 |  |  |
 |---------|---------|
-|![Navegación en el centro de cumplimiento de Microsoft 365](media/m365-compliance-center-leftnav.png)  |<br/><br/> Ir a **alertas** para ver y resolver [alertas](alerts.md)<br/><br/>Visite **** Reports para ver los datos sobre el [uso y la retención de etiquetas](sensitivity-labels.md), las coincidencias de [directivas de DLP y](view-the-dlp-reports.md)las invalidaciones, [los archivos](https://docs.microsoft.com/cloud-app-security/file-filters)compartidos, las [aplicaciones de terceros en uso](https://docs.microsoft.com/cloud-app-security/discovered-apps)y mucho más.<br/><br/>Expanda la sección **clasificación** para obtener acceso a las [etiquetas](labels.md), [las directivas de etiquetas](sensitivity-labels.md#what-label-policies-can-do), los [tipos de información confidencial](what-the-sensitive-information-types-look-for.md)y el análisis de las [etiquetas](view-label-activity-for-documents.md).<br/><br/>Vaya a **directivas** para ver las [alertas](alerts.md) y acceder a sus [DLP](data-loss-prevention-policies.md) y directivas de [retención](retention-policies.md) .<br/><br/> Use los vínculos de la sección **soluciones** para acceder a las soluciones de cumplimiento de la organización. Entre ellos se incluyen: <br/>[Disposiciones > del gobierno de datos](disposition-reviews.md)<br/>[eDiscovery (versión preliminar)](compliance20/overview-ediscovery-20.md)<br/>[Supervisión](supervision-policies.md)<br/>[Investigaciones de datos](datainvestigations/overview-data-investigations.md)<br/>[Solicitudes de interesados](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)        |
+|![Navegación en el centro de cumplimiento de Microsoft 365](media/m365-compliance-center-leftnav.png)  |<br/><br/> Ir a **alertas** para ver y resolver [alertas](alerts.md)<br/><br/>Visite **** Reports para ver los datos sobre el [uso y la retención de etiquetas](sensitivity-labels.md), las coincidencias de [directivas de DLP y](view-the-dlp-reports.md)las invalidaciones, [los archivos](https://docs.microsoft.com/cloud-app-security/file-filters)compartidos, las [aplicaciones de terceros en uso](https://docs.microsoft.com/cloud-app-security/discovered-apps)y mucho más.<br/><br/>Expanda la sección **clasificación** para obtener acceso a las [etiquetas](labels.md), [las directivas de etiquetas](sensitivity-labels.md#what-label-policies-can-do), los [tipos de información confidencial](what-the-sensitive-information-types-look-for.md)y el análisis de las [etiquetas](view-label-activity-for-documents.md).<br/><br/>Vaya a **directivas** para ver las [alertas](alerts.md) y acceder a sus [DLP](data-loss-prevention-policies.md) y directivas de [retención](retention-policies.md) .<br/><br/> Use los vínculos de la sección **soluciones** para acceder a las soluciones de cumplimiento de la organización. Entre ellos se incluyen: <br/>[Disposiciones > del gobierno de datos](disposition-reviews.md)<br/>[Exhibición de documentos electrónicos (eDiscovery)](compliance20/overview-ediscovery-20.md)<br/>[Supervisión](supervision-policies.md)<br/>[Investigaciones de datos](datainvestigations/overview-data-investigations.md)<br/>[Solicitudes de interesados](manage-gdpr-data-subject-requests-with-the-dsr-case-tool.md)        |
 
 
 ## <a name="how-do-i-get-this"></a>¿Cómo obtengo esto?

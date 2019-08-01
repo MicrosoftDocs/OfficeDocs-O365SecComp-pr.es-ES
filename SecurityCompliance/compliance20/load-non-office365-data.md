@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Importar datos que no son de Office 365 a un conjunto de revisión en un caso de exhibición avanzada de documentos electrónicos.
-ms.openlocfilehash: 37f8c2a5c97452845152e2a12578b9d243ab6711
-ms.sourcegitcommit: 82ee560bf3ac84079764cbb4a2d858c321f65145
+ms.openlocfilehash: d7609c774e7c8a42e24b22a87fbed271a12a97f5
+ms.sourcegitcommit: 73dcdafb15b462223d1a670c781db260eb73c2f5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "35840882"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36048112"
 ---
 # <a name="load-non-office-365-data-into-a-review-set"></a>Cargar datos que no son de Office 365 a un conjunto de revisión
 
@@ -40,7 +40,7 @@ El uso de la característica de carga que no es de Office 365 que se describe en
 
 - Los datos que no son de Office 365 deben ser un tipo de archivo compatible con la exhibición avanzada de documentos electrónicos. Para obtener más información, consulte [tipos de archivo admitidos en EDiscovery avanzado](supported-filetypes-ediscovery20.md).
 
-- Todos los archivos que se cargan en un conjunto de revisión deben estar ubicados en carpetas, donde cada carpeta está asociada a un custodio específico. Los nombres de estas carpetas deben usar el siguiente formato de nombre: *alias @ domainname*. El *alias @ domainname* debe ser el alias y el dominio de Office 365 del usuario. Puede recopilar todas las carpetas *alias @ domainname* en una carpeta raíz. La carpeta raíz solo puede contener las carpetas *alias @ domainname* . No se admiten los archivos separados en la carpeta raíz.
+- Todos los archivos que se cargan en un conjunto de revisión deben estar ubicados en carpetas, donde cada carpeta está asociada a un custodio específico. Los nombres de estas carpetas deben usar el siguiente formato de nombre: *alias @ domainname*. El alias @ domainname debe ser el alias y el dominio de Office 365 del usuario. Puede recopilar todas las carpetas alias @ domainname en una carpeta raíz. La carpeta raíz solo puede contener las carpetas alias @ domainname. No se admiten los archivos separados en la carpeta raíz.
 
    La estructura de carpetas para los datos que no son de Office 365 que desea cargar sería similar al ejemplo siguiente:
 
@@ -54,7 +54,7 @@ El uso de la característica de carga que no es de Office 365 que se describe en
 
 - Una cuenta asignada al grupo de roles eDiscovery Manager (y agregada como administrador de exhibición de documentos electrónicos).
 
-- Herramientas de almacenamiento de Microsoft Azure instaladas en un equipo que tiene acceso a la estructura de carpetas de contenido no Office 365. Para instalar AzCopy, vea [Get Started with AzCopy](https://docs.microsoft.com/azure/storage/common/storage-use-azcopy). Asegúrese de instalar AzCopy en la ubicación predeterminada, que es **% ProgramFiles (x86)% \ Microsoft SDKs\Azure\AzCopy**.
+- La herramienta AzCopy v 8.1 instalada en un equipo que tiene acceso a la estructura de carpetas de contenido no perteneciente a Office 365. Para instalar AzCopy, consulte [transferir datos con azcopy v 8.1 en Windows](https://docs.microsoft.com/previous-versions/azure/storage/storage-use-azcopy). Asegúrese de instalar AzCopy en la ubicación predeterminada, que es **% ProgramFiles (x86)% \ Microsoft SDKs\Azure\AzCopy**. Debe usar AzCopy v 8.1. Es posible que otras versiones de AzCopy no funcionen al cargar datos que no son de Office 365 en eDiscovery avanzado.
 
 
 ## <a name="upload-non-office-365-content-into-advanced-ediscovery"></a>Cargar contenido no de Office 365 en eDiscovery avanzado
@@ -81,14 +81,14 @@ El uso de la característica de carga que no es de Office 365 que se describe en
 
    a. En el cuadro **ruta de acceso a la ubicación de los archivos** , compruebe o escriba la ubicación de la carpeta raíz donde almacenó los datos que no son de Office 365 que desea cargar. Por ejemplo, para la ubicación de los archivos de ejemplo que se muestran en la **sección antes de comenzar**, debe escribir **%USERPROFILE\Downloads\nonO365**. Si se proporciona la ubicación correcta, se asegurará de que el comando AzCopy que se muestra en Box en la ruta se haya actualizado correctamente.
 
-   b. Haga clic en **copiar al** portapapeles para copiar el comando que se muestra en el cuadro. Inicie un símbolo del sistema de Windows, pegue el comando y presione Entrar.  Los archivos se cargarán en el almacenamiento de blobs seguro de Azure para el paso siguiente.
+   b. Haga clic en **copiar al** portapapeles para copiar el comando que se muestra en el cuadro.
 
 7. Inicie un símbolo del sistema de Windows, pegue el comando que copió en el paso anterior y, a continuación, presione **entrar** para iniciar el comando AzCopy.  Después de iniciar el comando, los archivos que no son de Office 365 se cargarán en la ubicación de almacenamiento de Azure que se preparó en el paso 4.
 
    ![Importación no de Office 365: AzCopy](../media/504e2dbe-f36f-4f36-9b08-04aea85d8250.png)
 
    > [!NOTE]
-   > Si se produce un error en el comando AzCopy proporcionado, consulte [solucionar problemas de azcopy en EDiscovery avanzado](troubleshooting-azcopy.md) .
+   > Como se indicó anteriormente, debe usar AzCopy v 8.1 para usar correctamente el comando que se proporciona en la página **cargar archivos** . Si el comando AzCopy proporcionado no se produce, consulte [solucionar problemas de azcopy en EDiscovery avanzado](troubleshooting-azcopy.md).
 
 8. Vuelva al centro de cumplimiento de & de seguridad y haga clic en **siguiente: procesar archivos** en el asistente.  Esto inicia el procesamiento, la extracción de texto y la indización de los archivos que no son de Office 365 que se cargaron en la ubicación de almacenamiento de Azure.  
 
