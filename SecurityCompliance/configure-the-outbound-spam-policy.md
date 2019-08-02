@@ -14,12 +14,12 @@ ms.assetid: a44764e9-a5d2-4c67-8888-e7fb871c17c7
 ms.collection:
 - M365-security-compliance
 description: El filtrado de correo no deseado saliente siempre está habilitado si utiliza el servicio para enviar correo electrónico saliente, lo que protege a las organizaciones que utilizan el servicio y sus destinatarios.
-ms.openlocfilehash: c3eb663d569e717597ff926896ed3daefb48186e
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 2bf2f8c7292bee4d1e89249bcec5c74a4b5d38c9
+ms.sourcegitcommit: bc25ea19c0b6d318751eadc4f27902b0054d5e2b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35600066"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36054658"
 ---
 # <a name="configure-the-outbound-spam-policy"></a>Configurar la directiva de correo no deseado saliente
 
@@ -29,6 +29,9 @@ En el siguiente vídeo se muestra cómo se configura la directiva de correo no d
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/1f20d655-0d3d-4141-9cae-e57f5a6cffe8?autoplay=false]
   
+> [!NOTE]
+> Para obtener los mejores resultados de filtrado, el contenido del vídeo anterior debería usarse con una configuración adecuada y estar familiarizado con [los controles de correo no deseado salientes de Office 365](https://docs.microsoft.com/office365/securitycompliance/outbound-spam-controls).
+
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>¿Qué necesita saber antes de comenzar?
 <a name="sectionSection0"> </a>
 

@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 4bfaf2ab-e633-4227-8bde-effefb41a3db
 description: La definición de usuarios de correo es una parte importante de la administración del servicio de Protección en línea de Exchange (EOP).
-ms.openlocfilehash: 520ca0fb48a131026d9a46138605892203bf6e93
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 6d982b635513050d931397bbc517ae3d76ee3752
+ms.sourcegitcommit: bc25ea19c0b6d318751eadc4f27902b0054d5e2b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35599606"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36054732"
 ---
 # <a name="manage-mail-users-in-eop"></a>Administrar usuarios de correo en EOP
 
@@ -64,11 +64,9 @@ Obtenga los permisos necesarios y prepárese para la sincronización de director
     > [!IMPORTANT]
     > Cuando finaliza el Asistente de configuración de la herramienta de sincronización de Microsoft Azure Active Directory, se crea la cuenta **MSOL_AD_SYNC** en el bosque de Active Directory. Esta cuenta se utiliza para leer y sincronizar la información de Active Directory local. Para que la sincronización de directorios se realice correctamente, debe asegurarse de que el TCP 443 esté abierto en el servidor de sincronización de directorios local. 
   
-4. Active los usuarios sincronizados, tal como se describe en [Activar usuarios sincronizados](http://go.microsoft.com/fwlink/p/?LinkId=308913).
+  4. Administre la sincronización de directorios, tal como se describe en [Administrar la sincronización de directorios](http://go.microsoft.com/fwlink/p/?LinkId=308915).
     
-5. Administre la sincronización de directorios, tal como se describe en [Administrar la sincronización de directorios](http://go.microsoft.com/fwlink/p/?LinkId=308915).
-    
-6. Compruebe que EOP se esté sincronizando correctamente. En el EAC, vaya a **Destinatarios**\> **Contactos** y vea que la lista de usuarios se haya sincronizado correctamente desde el entorno local. 
+  5. Compruebe que EOP se esté sincronizando correctamente. En el EAC, vaya a **Destinatarios**\> **Contactos** y vea que la lista de usuarios se haya sincronizado correctamente desde el entorno local. 
     
 ## <a name="use-the-eac-to-manage-mail-users"></a>Usar el EAC para administrar usuarios de correo
 

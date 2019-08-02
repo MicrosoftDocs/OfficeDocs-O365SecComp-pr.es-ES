@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Use el centro de seguridad & cumplimiento para buscar en el registro de auditoría unificado para ver la actividad del usuario y del administrador de la organización de Office 365. '
-ms.openlocfilehash: 5ba3659f8e6b004020b5270b62a40415e64ba96c
-ms.sourcegitcommit: 33c8e9c16143650ca443d73e91631f9180a9268e
+ms.openlocfilehash: d2e099343581c8842551491eb885534cbcbc961b
+ms.sourcegitcommit: bc25ea19c0b6d318751eadc4f27902b0054d5e2b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35854814"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36054782"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Buscar el registro de auditoría en el centro de seguridad & cumplimiento
 
@@ -140,6 +140,9 @@ Este es el proceso para realizar búsquedas en el registro de auditoría en Offi
 [Paso 3: filtrar los resultados de la búsqueda](#step-3-filter-the-search-results)
 
 [Paso 4: exportar los resultados de la búsqueda a un archivo](#step-4-export-the-search-results-to-a-file)
+
+
+
   
 ### <a name="step-1-run-an-audit-log-search"></a>Paso 1: ejecutar una búsqueda de registros de auditoría
 
@@ -787,6 +790,13 @@ Estas son algunas sugerencias para buscar actividades de administración de Exch
   
 - Para obtener información acerca de qué cmdlet se ejecutó, qué parámetros y valores de parámetro se usaron y qué objetos se vieron afectados, puede exportar los resultados de la búsqueda seleccionando la opción **descargar todos los resultados** . Para obtener más información, vea [exportar, configurar y ver registros de registro de auditoría](export-view-audit-log-records.md). 
     
+
+- También puede ver los eventos en el registro de auditoría de administración de Exchange mediante el centro de administración de Exchange. Para obtener instrucciones, consulte [View the Administrator Audit Log](https://technet.microsoft.com/library/dn342832%28v=exchg.150%29.aspx).
+
+> [!IMPORTANT]
+>  Para buscar y realizar un seguimiento del uso del administrador de Exchange Online privilegies use el cmdlet *Search-AdminAuditLog* sobre *Search-UnifiedAuditLog*.
+
+
 - También puede usar el `Search-UnifiedAuditLog -RecordType ExchangeAdmin` comando en Exchange Online PowerShell para devolver solo registros de auditoría del registro de auditoría de administración de Exchange. Puede tardar hasta 30 minutos después de ejecutarse un cmdlet de Exchange para que se devuelva la entrada del registro de auditoría correspondiente en los resultados de la búsqueda. Para obtener más información, vea [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-audit/search-unifiedauditlog). Para obtener información sobre cómo exportar los resultados de búsqueda devueltos por el cmdlet **Search-UnifiedAuditLog** a un archivo CSV, consulte la sección "sugerencias para exportar y ver el registro de auditoría" en [exportar, configurar y ver registros de auditoría](export-view-audit-log-records.md#tips-for-exporting-and-viewing-the-audit-log).
 
 - También puede ver eventos en el registro de auditoría de administración de Exchange con el centro de administración de Exchange o ejecutar **Search-AdminAuditLog** en Exchange Online PowerShell. Para obtener instrucciones, vea:

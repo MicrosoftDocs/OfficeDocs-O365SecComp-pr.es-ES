@@ -3,7 +3,7 @@ title: Información heredada para el cifrado de mensajes de Office 365
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 01/04/2018
+ms.date: 07/11/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ ms.assetid: 5986b9e1-c824-4f8f-9b7d-a2b0ae2a7fe9
 ms.collection:
 - M365-security-compliance
 description: Si todavía no ha movido su organización de Office 365 a las nuevas capacidades de OME, pero ya ha implementado OME, la información de este artículo se aplica a su organización. Microsoft recomienda que cree un plan para cambiar a las nuevas funciones de OME en cuanto sea razonable para su organización. Para obtener instrucciones, vea configurar las nuevas funciones de cifrado de mensajes de Office 365 basadas en Azure Information Protection. Si desea obtener más información sobre cómo funcionan las nuevas funciones en primer lugar, consulte Office 365 Message Encryption. En el resto de este artículo se hace referencia al comportamiento OME antes de la publicación de las nuevas capacidades de OME.
-ms.openlocfilehash: 89d3adfa2672e86dd6f247ad408ccc95ebaf2b7f
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 421a690ee9934368f1611f352bf8c6a75da1d09c
+ms.sourcegitcommit: bc25ea19c0b6d318751eadc4f27902b0054d5e2b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35598926"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36054752"
 ---
 # <a name="legacy-information-for-office-365-message-encryption"></a>Información heredada para el cifrado de mensajes de Office 365
 
@@ -30,15 +30,15 @@ Con el cifrado de mensajes de Office 365, su organización puede enviar y recibi
 Aquí le mostramos otros ejemplos:
   
 - Un empleado del Banco envía extractos de tarjeta de crédito a los clientes
-    
+
 - Un representante de la compañía de seguros proporciona detalles de directivas a los clientes
-    
+
 - Un intermediario de hipoteca solicita información financiera a un cliente para una solicitud de préstamo
-    
+
 - Un proveedor de asistencia sanitaria envía información sobre el cuidado de la salud a los pacientes
-    
+
 - Un abogado envía información confidencial a un cliente o a otro abogado
-    
+
 ## <a name="how-office-365-message-encryption-works-without-the-new-capabilities"></a>Cómo funciona el cifrado de mensajes de Office 365 sin las nuevas funciones
 
 El cifrado de mensajes de Office 365 es un servicio en línea que se basa en Microsoft Azure Rights Management (Azure RMS). Con Azure RMS, los administradores pueden definir reglas de flujo de correo para determinar las condiciones de cifrado. Por ejemplo, una regla puede requerir el cifrado de todos los mensajes dirigidos a un destinatario específico.
@@ -74,13 +74,13 @@ Los destinatarios siguen las instrucciones del mensaje para abrir los datos adju
 Como administrador de Exchange Online y Exchange Online Protection, puede personalizar los mensajes cifrados. Por ejemplo, puede Agregar la marca y el logotipo de su compañía, especificar una introducción y agregar texto de declinación de responsabilidades en los mensajes cifrados y en el portal donde los destinatarios ven los mensajes cifrados. Con los cmdlets de Windows PowerShell, puede personalizar los siguientes aspectos de la experiencia de visualización para los destinatarios de los mensajes de correo electrónico cifrados:
   
 - Texto de introducción del correo electrónico que contiene el mensaje cifrado
-    
+
 - Texto de declinación de responsabilidades del correo electrónico que contiene el mensaje cifrado
-    
+
 - Texto del portal que aparecerá en el portal de visualización de mensajes
-    
+
 - Logotipo que aparecerá en el mensaje de correo electrónico y en el portal de visualización
-    
+
 También puede volver a la apariencia predeterminada en cualquier momento.
   
 El siguiente ejemplo muestra un logotipo personalizado para ContosoPharma en los datos adjuntos de correo electrónico:
@@ -90,9 +90,9 @@ El siguiente ejemplo muestra un logotipo personalizado para ContosoPharma en los
  **Para personalizar los mensajes de correo electrónico de cifrado y el portal de cifrado con la marca de la organización**
   
 1. Conéctese a Exchange online mediante PowerShell remoto, tal como se describe en [Connect to Exchange Online Using Remote PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-exchange-online-tenants-with-remote-windows-powershell-for-delegated).
-    
-2. Use el cmdlet Set-OMEConfiguration como se describe aquí: [set-OMEConfiguration](http://technet.microsoft.com/en-us/3ef0aec0-ce28-411d-abe8-7236f082af1b) o use la siguiente tabla para obtener instrucciones. 
-    
+
+2. Use el cmdlet Set-OMEConfiguration como se describe aquí: [set-OMEConfiguration](http://technet.microsoft.com/en-us/3ef0aec0-ce28-411d-abe8-7236f082af1b) o use la siguiente tabla para obtener instrucciones.
+
    **Opciones de personalización de cifrado**
 
 |**Para personalizar esta característica de la experiencia de cifrado**|**Usar estos comandos de Windows PowerShell**|
@@ -101,13 +101,13 @@ El siguiente ejemplo muestra un logotipo personalizado para ContosoPharma en los
 |Declaración de declinación de responsabilidades en el correo electrónico que contiene el mensaje cifrado  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> DisclaimerText "<your disclaimer statement, string of up to 1024 characters>"` <br/> **Ejemplo:** `Set-OMEConfiguration -Identity "OME Configuration" -DisclaimerText "This message is confidential for the use of the addressee only"` <br/> |
 |Texto que aparece en la parte superior del portal de visualización de correo cifrado  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -PortalText "<text for your portal, string of up to 128 characters>"` <br/> **Ejemplo:** `Set-OMEConfiguration -Identity "OME Configuration" -PortalText "ContosoPharma secure email portal"` <br/> |
 |Logotipo  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <Byte[]>` <br/> **Ejemplo:** `Set-OMEConfiguration -Identity "OME configuration" -Image (Get-Content "C:\Temp\contosologo.png" -Encoding byte)` <br/> Formatos de archivo compatibles: .png, .jpg, .bmp o .tiff  <br/> Tamaño óptimo del archivo de logotipo: menos de 40 KB  <br/> Tamaño óptimo de la imagen de logotipo: 170 píxeles  <br/> |
-   
+
  **Para quitar personalizaciones de marca de los mensajes de correo electrónico de cifrado y el portal de cifrado**
   
 1. Conéctese a Exchange online mediante PowerShell remoto, tal como se describe en [Connect to Exchange Online Using Remote PowerShell](http://technet.microsoft.com/en-us/library/jj984289%28v=exchg.150%29.aspx).
-    
+
 2. Use el cmdlet Set-OMEConfiguration tal y como se describe aquí: [set-OMEConfiguration](http://technet.microsoft.com/3ef0aec0-ce28-411d-abe8-7236f082af1b). Para quitar las personalizaciones de marca de la organización de los valores de DisclaimerText, EmailText y PortalText, establezca el valor en una cadena vacía `""`. Para todos los valores de imagen, como el logotipo, establezca el `"$null"`valor en.
-    
+
    **Opciones de personalización de cifrado**
 
 |**Para revertir esta característica de la experiencia de cifrado de nuevo a la imagen y el texto predeterminados**|**Usar estos comandos de Windows PowerShell**|
@@ -116,7 +116,7 @@ El siguiente ejemplo muestra un logotipo personalizado para ContosoPharma en los
 |Declaración de declinación de responsabilidades en el correo electrónico que contiene el mensaje cifrado  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> DisclaimerText "<empty string>"` <br/> **Ejemplo:** `Set-OMEConfiguration -Identity "OME Configuration" -DisclaimerText ""` <br/> |
 |Texto que aparece en la parte superior del portal de visualización de correo cifrado  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -PortalText "<empty string>"` <br/> **Ejemplo de volver a su valor predeterminado:**`Set-OMEConfiguration -Identity "OME Configuration" -PortalText ""` <br/> |
 |Logotipo  <br/> | `Set-OMEConfiguration -Identity <OMEConfigurationIdParameter> -Image <"$null">` <br/> **Ejemplo de volver a su valor predeterminado:**`Set-OMEConfiguration -Identity "OME configuration" -Image $null` <br/> |
-   
+
 ## <a name="service-information-for-legacy-office-365-message-encryption-prior-to-the-release-of-the-new-ome-capabilities"></a>Información de servicio para el cifrado de mensajes de Office 365 heredado antes de la publicación de las nuevas capacidades de OME
 <a name="LegacyServiceInfo"> </a>
 
@@ -131,7 +131,7 @@ En la siguiente tabla se proporcionan detalles técnicos para el servicio de cif
 |Directivas de retención de correo electrónico de Exchange Online  <br/> |Exchange online no almacena los mensajes cifrados.  <br/> |
 |Compatibilidad de idiomas en el cifrado de mensajes de Office 365  <br/> | El cifrado de mensajes de Office 365 admite los idiomas de Office 365 de la siguiente manera:  <br/>  Los mensajes de correo electrónico entrantes y los archivos HTML adjuntos se localizan según la configuración de idioma del remitente.  <br/>  El portal de visualización se localiza en función de la configuración del explorador del destinatario.  <br/>  El cuerpo (contenido) del mensaje cifrado no se localiza.  <br/> |
 |Información de privacidad del Portal OME y la aplicación Visor OME  <br/> |El vínculo [Office 365 Messaging Encryption Portal privacy statement](protected-message-viewer-portal-privacy-statement.md) proporciona más información sobre el uso de su información privada por parte de Microsoft.  <br/> |
-   
+
 ## <a name="frequently-asked-questions-about-legacy-ome"></a>Preguntas más frecuentes acerca de OME heredados
 <a name="LegacyServiceInfo"> </a>
 
@@ -142,9 +142,9 @@ En la siguiente tabla se proporcionan detalles técnicos para el servicio de cif
 Los destinatarios externos pueden leer los correos electrónicos que reciban cifrados con el cifrado de Office 365 de dos maneras:
   
 - Iniciando sesión con una cuenta de Microsoft o una cuenta profesional o educativa asociada con Office 365.
-    
+
 - Mediante un código de paso único.
-    
+
  **P. ¿Se almacenan los mensajes cifrados de Office 365 en la nube o en los servidores de Microsoft?**
   
 No, los mensajes cifrados se conservan en el sistema de correo electrónico del destinatario y, cuando el destinatario abre el mensaje, se publica temporalmente para verlo en los servidores de Office 365. Pero los mensajes no se almacenan ahí.
@@ -159,7 +159,7 @@ Se requiere una licencia para cada usuario de la organización que envíe correo
   
  **P. ¿Requieren los destinatarios externos suscripciones?**
   
-No, los destinatarios externos no requieren una suscripción para leer o responder los mensajes cifrados. 
+No, los destinatarios externos no requieren una suscripción para leer o responder los mensajes cifrados.
   
  **P. ¿en qué se diferencia el cifrado de mensajes de Office 365 de Rights Management Services (RMS)?**
   
@@ -186,12 +186,12 @@ El correo electrónico entrante y el contenido HTML se localiza según la config
 El cifrado de mensajes de Office 365 usa Rights Management Services (RMS) como infraestructura de cifrado. El método de cifrado utilizado depende de dónde obtiene las claves de RMS utilizadas para cifrar y descifrar mensajes.
   
 - Si usa Microsoft Azure RMS para obtener las claves, se usa el modo criptográfico 2. El modo criptográfico 2 es una implementación criptográfica de AD RMS actualizada y mejorada. Es compatible con RSA 2048 para firma y cifrado, y admite SHA-256 para firma.
-    
+
 - Si usa Active Directory (AD) RMS para obtener las claves, se utiliza el modo criptográfico 1 o el modo criptográfico 2. El método empleado depende de la implementación local de AD RMS. El modo criptográfico 1 es la implementación criptográfica original de AD RMS. Es compatible con RSA 1024 para firma y cifrado, y admite SHA-1 para firma. Este modo sigue siendo compatible con todas las versiones actuales de RMS.
-    
+
 Para obtener más información, consulte [modos criptográficos de AD RMS](http://go.microsoft.com/fwlink/p/?LinkId=398616).
   
- **P. ¿Por qué algunos mensajes cifrados dicen proceder de Office365@messaging.microsoft.com?**
+ **P. ¿por qué algunos mensajes cifrados dicen que provienen de** Office365@messaging.microsoft.com?
   
 Cuando se envía una respuesta cifrada desde el portal de cifrado o a través de la aplicación del Visor de OME, la dirección de correo electrónico de envío se establece en Office365@messaging.microsoft.com porque el mensaje cifrado se envía a través de un extremo de Microsoft. Esto ayuda a evitar que los mensajes cifrados se marquen como correo no deseado. El nombre mostrado en el correo electrónico y la dirección del portal de cifrado no se modifican a causa de este etiquetado. Además, este etiquetado solo se aplica a los mensajes enviados a través del portal, no a través de cualquier otro cliente de correo electrónico.
   
@@ -205,7 +205,7 @@ Sí. Debe agregar direcciones URL para Exchange Online para que la lista de perm
   
  **P. ¿A cuántos destinatarios puedo enviar un mensaje cifrado de Office 365?**
   
-El límite de destinatarios de un mensaje cifrado se basa en el número de caracteres del campo **para** del mensaje. Cuando se combinan (tras expandir la lista de distribución), las direcciones de los destinatarios en el campo **Para** no deben superar los 11.980 caracteres. Como las direcciones de correo electrónico pueden variar en longitud de caracteres, no hay un límite de destinatarios estándar para un solo mensaje cifrado. 
+El límite de destinatarios es de 500 destinatarios por mensaje o, cuando se combina después de la expansión de la lista de distribución, 11.980 caracteres en el campo para, lo **que** ocurra primero.
   
  **P. ¿Es posible revocar un mensaje enviado a un destinatario concreto?**
   
@@ -217,6 +217,5 @@ No hay un informe que muestre si se ha visto un mensaje cifrado, pero hay dispon
   
  **P. ¿Qué hace Microsoft con la información que proporciono a través del Portal OME y la aplicación Visor OME?**
   
-La [declaración de privacidad del portal de cifrado de Office 365 Messaging](protected-message-viewer-portal-privacy-statement.md) proporciona información detallada sobre lo que Microsoft hace y qué no hace con la información privada. 
-  
-
+La [declaración de privacidad del portal de cifrado de Office 365 Messaging](protected-message-viewer-portal-privacy-statement.md) proporciona información detallada sobre lo que Microsoft hace y qué no hace con la información privada.
+ 

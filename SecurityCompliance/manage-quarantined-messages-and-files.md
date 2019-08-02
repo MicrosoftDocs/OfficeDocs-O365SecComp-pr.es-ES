@@ -16,12 +16,12 @@ ms.assetid: 065cc2cf-2f3a-47fd-a434-2a20b8f51d0c
 ms.collection:
 - M365-security-compliance
 description: 'Como administrador, puede ver, liberar e informar de mensajes falsos positivos en cuarentena en Office 365. Puede configurar directivas para que Office 365 filtre mensajes y los envíe a la cuarentena por varias razones: debido a que se identificaron como correo no deseado, en masa, con suplantación de identidad (phishing) o porque coincidieron con una regla de flujo de correo. '
-ms.openlocfilehash: 245068b7d3ec51cbca887883f791b19ea116731a
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: dda6766ec5fa7858abef0037f0a67ec8869abd59
+ms.sourcegitcommit: bc25ea19c0b6d318751eadc4f27902b0054d5e2b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35598806"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36054722"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-administrator-in-office-365"></a>Administrar archivos y mensajes en cuarentena como un administrador en Office 365
 
@@ -29,14 +29,14 @@ Como administrador, puede ver, liberar y eliminar mensajes en cuarentena e infor
   
 De forma predeterminada, Office 365 envía mensajes de suplantación de identidad (phishing) y mensajes que contienen malware directamente a la cuarentena. Otros mensajes filtrados se envían a la carpeta de correo no deseado de los usuarios, a menos que configure una directiva para enviarlos a cuarentena.
   
-Debe tener permisos de administrador global (GA) en Office 365, o administrador de seguridad en el centro de seguridad y cumplimiento, para trabajar con los mensajes en cuarentena que se enviaron a otros usuarios y trabajar con los archivos en cuarentena.
+Debe tener permisos de administrador global (GA) en Office 365, o ser miembro de uno o varios grupos de roles del centro de cumplimiento de & de seguridad, para trabajar con los mensajes en cuarentena o los archivos en cuarentena. Consulte [Permissions in the Office 365 Security & Compliance Center](https://docs.microsoft.com/office365/securitycompliance/permissions-in-the-security-and-compliance-center) para obtener más información.
   
 > [!IMPORTANT]
 >De forma predeterminada, los mensajes de correo no deseado, masivos o de suplantación de identidad se mantienen en cuarentena durante 30 días. Los mensajes que se ponen en cuarentena debido a que coinciden con una regla de flujo de correo se mantienen en cuarentena durante 7 días. Los mensajes de malware se mantienen en cuarentena durante 15 días. Puede personalizar el tiempo de cuarentena de correo no deseado en configuración contra correo no &amp; deseado en el centro de seguridad y cumplimiento. Cuando Office 365 elimina un mensaje de la cuarentena, no puede recuperarlo. Si lo desea, puede cambiar el período de retención de los mensajes en cuarentena en las directivas de filtro contra correo no deseado. Para obtener más información, vea [configuración del período de retención de cuarentena](manage-quarantined-messages-and-files.md#BKMK_ModQuarantineTime) en este artículo. 
   
 ## <a name="view-your-organizations-quarantined-messages"></a>Ver los mensajes en cuarentena de la organización
 
-1. Con una cuenta profesional o educativa con privilegios de administrador global en su organización de Office 365, inicie sesión en Office 365 y [vaya al centro de seguridad y cumplimiento](go-to-the-securitycompliance-center.md).
+1. Con una cuenta profesional o educativa con privilegios de administrador global (o roles de seguridad & cumplimiento del centro de cumplimiento) en la organización de Office 365, inicie sesión en Office 365 y [vaya al centro de seguridad y cumplimiento](go-to-the-securitycompliance-center.md).
     
 2. En la lista de la izquierda, expanda **Administración de amenazas**, seleccione **revisar**y, a continuación, haga clic **en cuarentena**.
     
@@ -189,7 +189,7 @@ Puede configurar cuánto tiempo los mensajes y archivos permanecerán en cuarent
   
 ### <a name="to-modify-the-quarantine-retention-period-for-the-default-spam-filter-policy-in-the-security-and-compliance-center"></a>Para modificar el período de retención de cuarentena para la Directiva de filtro de correo no deseado predeterminada en el centro de seguridad y cumplimiento
 
-1. Con una cuenta profesional o educativa con privilegios de administrador global en su organización de Office 365, inicie sesión en Office 365 y [vaya al centro de seguridad y cumplimiento](go-to-the-securitycompliance-center.md).
+1. Con una cuenta profesional o educativa con privilegios de administrador global (o roles de seguridad & cumplimiento del centro de cumplimiento) en la organización de Office 365, inicie sesión en Office 365 y [vaya al centro de seguridad y cumplimiento](go-to-the-securitycompliance-center.md).
     
 2. En la parte izquierda, expanda **Administración de amenazas**, elija **Directiva**y, a continuación, elija **anti-correo no deseado**. <br/>
     > [!TIP]
