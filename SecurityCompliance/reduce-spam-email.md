@@ -17,18 +17,18 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Obtenga información sobre las formas más comunes de reducir el correo masivo y el correo no deseado en Office 365.
-ms.openlocfilehash: 3dca1aeb404bd121cec3a363eb9413f3fe79b36b
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: d99b5e1452c60be713f0f4cfbab965d30eeeb8ef
+ms.sourcegitcommit: bc25ea19c0b6d318751eadc4f27902b0054d5e2b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35601237"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36054712"
 ---
 # <a name="how-to-reduce-spam-email-in-office-365"></a>Reducir el correo no deseado en Office 365
 
  **¿Recibe demasiado correo no deseado en Office 365? Siga este procedimiento.**
   
-Se recomienda informar de los mensajes que constituyan falsos negativos [usando el complemento Denunciar mensaje](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2) para ayudarnos a mejorar nuestros filtros. Además, puede reenviar el mensaje *como elemento adjunto* a junk@office365.microsoft.com o a phish@office365.microsoft.com (si se trataba de suplantación de identidad).
+Es muy recomendable que notifique los mensajes falsos negativos con [el complemento de mensaje de informe](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2) para que podamos mejorar nuestros filtros. Además, puede enviar el mensaje con [el explorador de envíos](admin-submission.md).
 
 > [!TIP]
 > Si cree que el mensaje es correo no deseado y está en la carpeta Correo no deseado, esto no debería suponer un problema. Si no desea que aparezca en ninguna parte del buzón, debe cambiar la directiva contra correo no deseado para poner el mensaje en cuarentena. Encontrará más información acerca de poner un mensaje en cuarentena en [Quarantine email messages in Office 365](quarantine-email-messages.md) (Poner mensajes de correo electrónico en cuarentena en Office 365).
@@ -57,7 +57,10 @@ Para impedir que se reciba demasiado correo no deseado, Exchange Online Protecti
     
 - **Bloquear inmediatamente un remitente** Si necesita bloquear de forma inmediata un remitente, puede hacerlo por dirección de correo electrónico, dominio o dirección IP. Vea [Crear listas de remitentes bloqueados en Office 365](create-block-sender-lists-in-office-365.md). Una entrada en una lista de permitidos del usuario final puede invalidar un bloqueo establecido por el administrador.
     
-- **Activar el complemento Denunciar mensaje para los usuarios** Es muy recomendable que [habilite el complemento Denunciar mensaje para los usuarios](enable-the-report-message-add-in.md). Como administrador, es posible que también pueda ver los comentarios que los usuarios envían y usar cualquier patrón para ajustar la configuración que pueda estar causando problemas.
+- **Activar el complemento de mensaje de informe para los usuarios** Es muy recomendable que [habilite el complemento de mensaje de informe para los usuarios](enable-the-report-message-add-in.md).
+
+- **Usar [el explorador de envíos](admin-submission.md)** Ahora los administradores pueden enviar mensajes de correo electrónico con el ID. de mensaje de red o archivo, las direcciones URL y los archivos para que Microsoft pueda analizarlos en Office 365. Como administrador, también puede ver los comentarios que envían los usuarios y usar patrones para ajustar las opciones de configuración que pueden causar problemas.
+
 - **Habilitar [DKIM](use-dkim-to-validate-outbound-email.md)** para firmar todos los mensajes salientes e incrementar la seguridad de su dominio y espacio empresarial.
  > [!TIP]
 > Después de habilitar DKIM, debe habilitar [DMARC](use-dkim-to-validate-outbound-email.md) ya que este registro validará si DKIM y SPF funcionan correctamente y, por lo general, los correos electrónicos falsificados no tienen la firma, dado que O365 administra su clave simétrica pública y privada.
@@ -66,8 +69,6 @@ Para impedir que se reciba demasiado correo no deseado, Exchange Online Protecti
 
 - **Habilitar la regla de correo no deseado y comprobar la lista de permitidos** Compruebe que la regla de acción de correo no deseado esté habilitada y que el remitente o el dominio del remitente no se estableciera para omitirlo en la lista de permitidos personal. La mejor forma de obtener acceso a estas opciones de configuración es desde [Bloquear o permitir (configuración de correo electrónico no deseado)](https://support.office.com/article/48c9f6f7-2309-4f95-9a4d-de987e880e46). Desde allí, también puede bloquear el dominio o la dirección de correo electrónico del remitente.
     
-- **Denunciar correo no deseado a Microsoft** Informe de los mensajes de correo no deseado a Microsoft con el [complemento Denunciar mensaje](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2). Además, también puede enviar un mensaje a junk@office365.microsoft.com y adjuntar uno o más mensajes al informe.
-    
-    **Importante** Si no reenvía los mensajes como datos adjuntos, no se incluirán los encabezados y no podremos mejorar el filtrado de correo no deseado en Office 365. 
-    
+- **Informar de correo no deseado a Microsoft** Para informar de mensajes de correo no deseado a Microsoft, use el [complemento de mensaje de informe](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2).
+       
 - **Cancelar la suscripción de correo masivo** Si el mensaje era algo para lo que se registró (boletines, anuncios de productos, etc.) y contiene un vínculo para cancelar la suscripción de un origen confiable, simplemente puede cancelar la suscripción. Office 365 no suele considerar estos mensajes como correo no deseado. También puede bloquear el remitente o pedirle al administrador que realice un cambio que cause que todo el correo masivo se considere correo no deseado.

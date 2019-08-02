@@ -14,20 +14,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre cómo evitar los falsos positivos y evitar que el correo electrónico deseado se marque como no deseado en Office 365.
-ms.openlocfilehash: c49bd519adf6c66f7f8c6c97fb7a24a0c7f85a99
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: baf3fa52f34107ad82c392b52295d35a7e0002c4
+ms.sourcegitcommit: bc25ea19c0b6d318751eadc4f27902b0054d5e2b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157482"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36054678"
 ---
 # <a name="how-to-prevent-real-email-from-being-marked-as-spam-in-office-365"></a>Evitar que el correo electrónico real se marque como correo no deseado en Office 365
 
  **¿Se está marcando el correo electrónico real como correo no deseado en Office 365? Siga este procedimiento.**
   
-Si recibe un falso positivo, debe informar del mensaje a Microsoft a través del [complemento Usar el mensaje de informe](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2). Además, puede reenviar el mensaje *como datos adjuntos* a not_junk@office365.microsoft.com.
-
-**Importante** Si no reenvía los mensajes como datos adjuntos, no se incluirán los encabezados y no podremos mejorar el filtrado de correo no deseado en Office 365.
+Si recibe un falso positivo, debe informar del mensaje a Microsoft mediante el [complemento de mensaje de informe](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2). Además, puede enviar el mensaje con [el explorador de envíos](admin-submission.md).
     
 ## <a name="determine-the-reason-why-the-message-was-marked-as-spam"></a>Determinar el motivo por el que un mensaje se marcó como correo no deseado
 
@@ -62,7 +60,9 @@ Para funcionar correctamente, Exchange Online Protection (EOP) necesita que los 
 
 - **Apuntar los registros DNS a Office 365** Para que EOP proporcione protección, los registros DNS del agente de intercambio de correo (MX) de todos los dominios tienen que apuntar a Office 365 (y únicamente a Office 365). Si los registros MX no apuntan a Office 365, EOP no proporcionará el filtrado de correo no deseado para los usuarios. Si quiere usar otro servicio o dispositivo para proporcionar filtrado de correo no deseado para su dominio, puede deshabilitar la protección contra correo no deseado en EOP. Para hacerlo, cree una regla de flujo de correo que establezca el valor de SCL en -1. Si posteriormente decide usar EOP, asegúrese de quitar esta regla de flujo de correo. 
     
-- **Activar el complemento Usar el mensaje de informe para los usuarios** Es muy recomendable que [habilite el complemento de mensaje de informe para los usuarios](enable-the-report-message-add-in.md). Como administrador, es posible que también pueda ver los comentarios que los usuarios envían y usar cualquier patrón para ajustar la configuración que pueda estar causando problemas.
+- **Activar el complemento de mensaje de informe para los usuarios** Es muy recomendable que [habilite el complemento de mensaje de informe para los usuarios](enable-the-report-message-add-in.md).
+
+- **Usar [el explorador de envíos](admin-submission.md)** Ahora los administradores pueden enviar mensajes de correo electrónico con el ID. de mensaje de red o archivo, las direcciones URL y los archivos para que Microsoft pueda analizarlos en Office 365. Como administrador, también puede ver los comentarios que envían los usuarios y usar patrones para ajustar las opciones de configuración que pueden causar problemas.
 
 - 
   **Asegúrese de que sus usuarios se encuentran dentro de los límites permitidos** para enviar y recibir correos electrónicos, como se muestra [aquí](https://docs.microsoft.com/es-ES/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits).
@@ -80,7 +80,6 @@ EOP respetará los Remitentes y destinatarios seguros de los usuarios, pero no l
 - **Deshabilitar el filtro SmartScreen en Outlook** Si usa el cliente para equipo de escritorio de Outlook, tendrá que deshabilitar la función de filtro SmartScreen, que se considera descontinuada. Si está habilitada, puede causar falsos positivos. Esto no es necesario si se ejecuta una versión actualizada del cliente de Outlook para equipo de escritorio.
 
 ## <a name="troubleshooting-a-message-ends-up-in-the-junk-folder-even-though-eop-marked-the-message-as-non-spam"></a>Solución de problemas: Un mensaje acaba en la carpeta de correo no deseado aunque EOP lo haya marcado como correo deseado
-
 
 Si los usuarios tienen habilitada la opción de Outlook "Solo listas seguras: solo correo de personas o dominios de la lista de remitentes seguros o de la lista de destinatarios seguros se enviará a la Bandeja de entrada", todo el correo electrónico se enviará a la carpeta de correo no deseado a menos que el remitente esté incluido en la lista de remitentes seguros del destinatario. Esto ocurre independientemente de si EOP marca un mensaje como no deseado o si ha configurado una regla en EOP para marcar un mensaje como correo deseado.
   
