@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 description: 'Obtenga información sobre el correo electrónico y las propiedades de archivo que puede buscar en los buzones de Exchange Online y en los sitios de SharePoint o de OneDrive para la empresa mediante la herramienta de búsqueda de contenido en el centro de seguridad & cumplimiento.  '
-ms.openlocfilehash: 2d9cc41b4e0f8139db385a9614d3022230cda50d
-ms.sourcegitcommit: f96029928a6cdd141783026d57bc2179d7963af6
+ms.openlocfilehash: 70f005d6875735dfe95e10bf4487c8e1373431ea
+ms.sourcegitcommit: 97b9f88b9beee23de13ecf6d0759ac0fad5cf08d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "35017652"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "36168188"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search"></a>Consultas de palabras clave y condiciones de búsqueda para la búsqueda de contenido
 
@@ -70,7 +70,7 @@ En la siguiente tabla se enumeran las propiedades de los mensajes de correo elec
 |||||
    
 > [!NOTE]
-> <sup>1</sup> para el valor de una propiedad de destinatario, puede usar la dirección de correo electrónico (también denominada *nombre principal del usuario* o UPN), nombre para mostrar o alias para especificar un usuario. Por ejemplo, para especificar el usuario Ann Beebe, puede usar annb@contoso.com, annb o "Ann Beebe".<br/><br/>Al buscar en cualquiera de las propiedades del destinatario (de, para, CC, CCO, participantes y destinatarios), Office 365 intenta ampliar la identidad de cada usuario buscando en Azure Active Directory.  Si el usuario se encuentra en Azure Active Directory, la consulta se expande para incluir la dirección de correo electrónico (o UPN), el alias, el nombre para mostrar y el LegacyExchangeDN del usuario.<br/><br/>Por ejemplo, una consulta como se `participants:ronnie@contoso.com` expande a `participants:ronnie@contoso.com OR participants:ronnie OR participants:"Ronald Nelson" OR participants:"<LegacyExchangeDN>"`.
+> <sup>1</sup> para el valor de una propiedad de destinatario, puede usar la dirección de correo electrónico (también denominada *nombre principal del usuario* o UPN), nombre para mostrar o alias para especificar un usuario. Por ejemplo, para especificar el usuario Ann Beebe, puede usar annb@contoso.com, annb o "Ann Beebe".<br/><br/>Al buscar en cualquiera de las propiedades del destinatario (de, para, CC, CCO, participantes y destinatarios), Office 365 intenta ampliar la identidad de cada usuario buscando en Azure Active Directory.  Si el usuario se encuentra en Azure Active Directory, la consulta se expande para incluir la dirección de correo electrónico (o UPN), el alias, el nombre para mostrar y el LegacyExchangeDN del usuario.<br/><br/>Por ejemplo, una consulta como se `participants:ronnie@contoso.com` expande a `participants:ronnie@contoso.com OR participants:ronnie OR participants:"Ronald Nelson" OR participants:"<LegacyExchangeDN>"`.<br/><br/>Para evitar la expansión de destinatarios, puede Agregar un carácter comodín (asterisco) al final de la dirección de correo electrónico en la consulta de búsqueda; por ejemplo, `participants:ronnie@contoso.com*`.
 
 ## <a name="searchable-site-properties"></a>Propiedades de sitio que se pueden buscar
 

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configure las directivas de revisión de supervisión para capturar las comunicaciones de los empleados para su revisión.
-ms.openlocfilehash: 4cf8c47f761f13165898cbc719f94e9bf9fd66f2
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 9cc13cb953d8166ceac04856fa8b54d0a4629bd6
+ms.sourcegitcommit: 97b9f88b9beee23de13ecf6d0759ac0fad5cf08d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34151542"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "36168178"
 ---
 # <a name="configure-supervision-policies-for-your-organization"></a>Configurar directivas de supervisión para su organización
 
@@ -53,7 +53,7 @@ Siga estos pasos para configurar y usar la supervisión en su organización de O
 
     Pruebe la Directiva de supervisión para asegurarse de que funciona según lo deseado. Es importante asegurarse de que la estrategia de cumplimiento cumple los estándares.
 
-- **Paso 6 (opcional)**: [configurar Outlook para revisores que no desean usar el panel de supervisión de Office 365 o Outlook en la web (anteriormente conocido como Outlook Web App) para revisar las comunicaciones](#step-6-configure-outlook-for-reviewers-optional) supervisadas
+- **Paso 6 (opcional)**: [configurar Outlook para revisores que no desean usar el panel de supervisión de Office 365 para revisar las comunicaciones](#step-6-configure-outlook-for-reviewers-optional) supervisadas
 
     Configure Outlook para proporcionar a los revisores acceso a la funcionalidad de supervisión del cliente de Outlook para que puedan evaluar y clasificar cada elemento.
 
@@ -68,6 +68,8 @@ Use el siguiente gráfico para ayudarle a configurar los grupos de su organizaci
 |Usuarios supervisados <br> Usuarios no supervisados | Grupos de distribución <br> Grupos de Office 365 | Grupos de distribución dinámicos |
 | Reviewers | Grupos de seguridad habilitados para correo  | Grupos de distribución <br> Grupos de distribución dinámicos |
   
+Cuando se selecciona un grupo de Office 365 para los usuarios supervisados, la Directiva supervisa el contenido del buzón de correo de Office 365 compartido y los canales de Microsoft Teams asociados con el grupo. Al seleccionar una lista de distribución, la Directiva supervisa los buzones de usuario individuales.
+
 Para administrar usuarios supervisados en grandes organizaciones empresariales, es posible que necesite supervisar a todos los usuarios en grupos grandes. Puede usar PowerShell para configurar un grupo de distribución para una directiva de supervisión global para el grupo asignado. Esto le permite supervisar miles de usuarios con una sola directiva y mantener la Directiva de supervisión actualizada a medida que los empleados nuevos se unen a su organización.
 
 1. Cree un [grupo de distribución](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/new-distributiongroup?view=exchange-ps) dedicado para la Directiva de supervisión global con las siguientes propiedades: Asegúrese de que este grupo de distribución no se use para otros fines u otros servicios de Office 365.
@@ -189,7 +191,7 @@ Los revisores que quieran usar Outlook en lugar del panel de supervisión en Off
 
 ### <a name="step-1-copy-the-address-for-the-supervision-mailbox"></a>Paso 1: copiar la dirección del buzón de supervisión
 
-Para configurar la revisión para escritorio de Outlook o Outlook para la web, necesita la dirección del buzón de supervisión creado como parte de la configuración de la Directiva de supervisión.
+Para configurar revisión para escritorio de Outlook, necesita la dirección del buzón de supervisión creado como parte de la configuración de la Directiva de supervisión.
   
 > [!NOTE]
 > Si otra persona creó la Directiva, debe obtener esta dirección para instalar el complemento.
