@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con una directiva de retención, puede decidir de forma proactiva si quiere retener o eliminar contenido, ambos (retener y, a continuación, eliminar el contenido), aplicar una directiva única a la toda la organización o solo a determinadas ubicaciones o usuarios, o aplicar una directiva a todo el contenido o solo a aquel que cumpla ciertas condiciones.
-ms.openlocfilehash: ca68d2ecb7757435b8af6b63505b5acb2688daf6
-ms.sourcegitcommit: 82ee560bf3ac84079764cbb4a2d858c321f65145
+ms.openlocfilehash: 1d9ad24a8322bec471a2725e16c0cd49ffa71202
+ms.sourcegitcommit: bc25ea19c0b6d318751eadc4f27902b0054d5e2b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "35840912"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36054772"
 ---
 # <a name="overview-of-retention-policies"></a>Introducción a las directivas de retención
 
@@ -300,19 +300,7 @@ La directiva de retención aparece ahora con un bloqueo de retención. Si ejecut
   
 ## <a name="releasing-a-retention-policy"></a>Publicar una directiva de retención
 
-Puede desactivar o eliminar una directiva de retención en cualquier momento. Al hacerlo, el contenido de SharePoint o de OneDrive que se retiene se elimina de forma inmediata y permanente. A partir de ahora, y para evitar pérdidas accidentales de datos, existe un período de gracia de 30 días durante el cual la expiración del contenido para esa Directiva no se produce en la Biblioteca de conservación de documentos, de modo que puede restaurar desde allí el contenido si lo ve necesario. También puede activar la Directiva de retención durante el período de gracia y no se eliminará ningún contenido para esa Directiva. Este período de gracia se puede configurar con PowerShell.
-
-En primer lugar, [conéctese a PowerShell del Centro de seguridad y cumplimiento de Office 365](http://go.microsoft.com/fwlink/p/?LinkID=799771).
-
-Luego ejecute este script de PowerShell. Puede establecer la propiedad `ip_tenantGracePeriodInDays` en la configuración de suscripción del espacio empresarial con cualquier valor entre 0-100 días. Si se establece en 0, no hay período de gracia y las directivas de retención se publicarán de inmediato. 
-
-`
-$siteSubscription = Get-SPSiteSubscription -Identity 
-$siteSubScriptionId 
-$siteSubSettingsMgr = [Microsoft.SharePoint.SPSiteSubscriptionSettingsManager]::Local
-$properties = $siteSubSettingsMgr.GetProperties($siteSubscription)
-$properties.SetValue("ip_tenantGracePeriodInDays",  30)
-`
+Puede desactivar o eliminar una directiva de retención en cualquier momento. Al hacerlo, el contenido de SharePoint o de OneDrive que se retiene se elimina de forma inmediata y permanente. A partir de ahora, y para evitar pérdidas accidentales de datos, existe un período de gracia de 30 días durante el cual la expiración del contenido para esa Directiva no se produce en la Biblioteca de conservación de documentos, de modo que puede restaurar desde allí el contenido si lo ve necesario. También puede activar la Directiva de retención durante el período de gracia y no se eliminará ningún contenido para esa Directiva. Este período de gracia se puede configurar con PowerShell. Muy pronto, ofreceremos un script de ejemplo para que lo use.
 
 Este periodo de gracia de 30 días en SharePoint y OneDrive corresponde a la retención de retraso de 30 días de Exchange. Para obtener más información, consulte [Gestionar buzón con una retención de retraso](https://docs.microsoft.com/es-ES/office365/securitycompliance/identify-a-hold-on-an-exchange-online-mailbox#managing-mailboxes-on-delay-hold).
 
