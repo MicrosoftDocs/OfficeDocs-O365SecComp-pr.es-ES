@@ -10,16 +10,16 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Obtenga más información sobre los principios de seguridad y las recomendaciones para modernizar la seguridad de su organización.
-ms.openlocfilehash: 640fb15a6e28ee00bc383f6502c06d80db287135
-ms.sourcegitcommit: 6bb40cf53374eaaae8da0a469f0248b1163184a4
+ms.openlocfilehash: f4f2eb8c98575a03635ec69274396cdf8769e498
+ms.sourcegitcommit: f0d23e57b00f07cef5b1b2d366eaeeeacda37e3e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "34767301"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35786595"
 ---
 # <a name="ciso-workshop-module-4b-threat-protection-strategy"></a>CISO Workshop Module 4B: estrategia de protección contra amenazas 
 
-En este módulo se revisa la evolución y la trayectoria de los centros de operaciones de seguridad de Microsoft (SOC), con la tecnología de los billones de señales del gráfico de seguridad inteligente de Microsoft.
+En este módulo se revisa la evolución y la trayectoria de los centros de operaciones de seguridad de Microsoft (SOC), con tecnología de billones de señales en el gráfico de seguridad inteligente de Microsoft.
 
 - Descarga del Resumen de PDF: [módulo 4B: estrategia de protección contra amenazas](media/ciso-workshop-4b-threat-protection-strategy.pdf)
 - Descargar Resumen de PowerPoint: [módulo 4B: estrategia de protección contra amenazas](https://docs.microsoft.com/office365/securitycompliance/media/ciso-workshop-4b-threat-protection-strategy.pptx)
@@ -36,7 +36,7 @@ En este módulo se revisa la evolución y la trayectoria de los centros de opera
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtDxA]
 
-## <a name="part-3-learnings-from-microsofts-corporate-it-soc-2207"></a>Parte 3: aprendizajes del SOC de TI Corporativo de Microsoft (22:07)
+## <a name="part-3-learnings-from-microsoft-corporate-it-soc-2207"></a>Parte 3: aprendizajes del SOC de TI de Microsoft Corporate (22:07)
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE368fZ]
 

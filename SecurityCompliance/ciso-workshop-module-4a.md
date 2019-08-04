@@ -10,12 +10,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Obtenga más información sobre los principios de seguridad y las recomendaciones para modernizar la seguridad de su organización.
-ms.openlocfilehash: 75cdd5ff4d65c7d7cbe90e8516f9027a496c4e36
-ms.sourcegitcommit: 6bb40cf53374eaaae8da0a469f0248b1163184a4
+ms.openlocfilehash: 4de220df8ab3d175ae5fc86d64f2f2bea7163937
+ms.sourcegitcommit: f0d23e57b00f07cef5b1b2d366eaeeeacda37e3e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "34767311"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35786585"
 ---
 # <a name="ciso-workshop-module-4a-threat-protection-strategy"></a>CISO Workshop Module 4A: estrategia de protección contra amenazas
 
@@ -52,7 +52,7 @@ Explore los aprendizajes clave sobre la protección contra amenazas, la evoluci�
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtQLJ]
 
-## <a name="part-7-roadmap-for-shadow-it-risk-from-third-party-software-as-a-service-505"></a>Parte 7: Guía básica de los riesgos de TI de software de terceros como servicio (5:05)
+## <a name="part-7-roadmap-for-shadow-it-risk-from-third-party-software-as-a-service-505"></a>Parte 7: mapa de ruta para el riesgo de TI de software de terceros como servicio (5:05)
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtYMC]
 

@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El administrador de cumplimiento de Microsoft es una herramienta gratuita de evaluación de riesgos basada en flujos de trabajo en el portal de confianza de servicios de Microsoft. El administrador de cumplimiento le permite realizar un seguimiento, asignar y comprobar actividades de cumplimiento normativo relacionadas con los servicios en la nube de Microsoft.
-ms.openlocfilehash: e7c8afd3a9b2e0514e0df7df0f10871b0a7ca329
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: e2539a2bb7a5929330410db1f611ff9b8b1a7173
+ms.sourcegitcommit: f0d23e57b00f07cef5b1b2d366eaeeeacda37e3e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155292"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35786635"
 ---
 # <a name="microsoft-compliance-manager-preview"></a>Administrador de cumplimiento de Microsoft (versión preliminar)
 
@@ -107,7 +107,7 @@ Los [elementos de acciones](https://docs.microsoft.com/office365/securitycomplia
 
 Los usuarios de su organización pueden usar el administrador de cumplimiento para revisar los controles administrados por el cliente de todas las evaluaciones para las que están asignados. Cuando un usuario inicia sesión en el administrador de cumplimiento y abre el panel de **elementos de acción** , se muestra una lista de los elementos de acción que tienen asignados. En función del rol de administrador de cumplimiento asignado al usuario, puede proporcionar detalles de implementación o prueba, actualizar el estado o asignar elementos de acción.
 
-Los controles de certificación suelen ser implementados por una persona y comprobados por otro. Por ejemplo, después de que se completen los elementos de acción inicialmente asignados a una persona para su implementación, los elementos de acción se asignan a la siguiente persona para las pruebas y la carga de evidencias. Cualquier usuario con permisos suficientes para las asignaciones de control puede asignar y reasignar elementos de acción. Esto permite la administración central de las asignaciones de control y el enrutamiento descentralizado de elementos de acción entre implementadores y evaluadores.
+Los controles de certificación suelen ser implementados por una persona y comprobados por otro. Por ejemplo, después de que se completen los elementos de acción inicialmente asignados a una persona para su implementación, los elementos de acción se asignan a la siguiente persona para probar y cargar las pruebas. Cualquier usuario con permisos suficientes para las asignaciones de control puede asignar y reasignar elementos de acción. Esto permite la administración central de las asignaciones de control y el enrutamiento descentralizado de elementos de acción entre implementadores y evaluadores.
 
 ## <a name="permissions"></a>Permisos
 
@@ -115,7 +115,7 @@ El administrador de cumplimiento usa un [modelo de permisos](https://docs.micros
 
 Para cambiar de permisos predeterminados e implementar un modelo de control de acceso basado en funciones totalmente, se debe agregar al menos un usuario a cada rol de administrador de cumplimiento. Una vez que se agrega un usuario a un rol, los permisos para realizar las acciones asignadas a esa función se quitan del conjunto predeterminado de permisos disponibles para todos los usuarios. Solo los usuarios aprovisionados con el rol podrán obtener acceso al administrador de cumplimiento y realizar las acciones permitidas por dicha función.
 
-Por ejemplo, si agrega un usuario a la función para administrar las evaluaciones, solo los miembros de dicha función pueden administrar las evaluaciones. Si no agrega un usuario al rol que permite a los usuarios leer los datos en evaluaciones, todos los usuarios de la Organización podrán acceder al administrador de cumplimiento y leer los datos en cualquier evaluación.
+Si agrega un usuario a la función para administrar las evaluaciones, solo los miembros de esa función pueden administrar las evaluaciones. Si no agrega un usuario al rol que permite a los usuarios leer los datos en evaluaciones, todos los usuarios de la Organización podrán acceder al administrador de cumplimiento y leer los datos en cualquier evaluación.
   
 ## <a name="manage-evidence"></a>Administrar pruebas
 

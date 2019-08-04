@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El administrador de cumplimiento de Microsoft es una herramienta gratuita de evaluación de riesgos basada en flujos de trabajo en el portal de confianza de servicios de Microsoft. El administrador de cumplimiento le permite realizar un seguimiento, asignar y comprobar actividades de cumplimiento normativo relacionadas con los servicios en la nube de Microsoft.
-ms.openlocfilehash: 5d59ef322fc9b5686d16230cb59ae141cd338090
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 55f90996997a60fd95347941bdcad7707c890166
+ms.sourcegitcommit: f0d23e57b00f07cef5b1b2d366eaeeeacda37e3e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155262"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35786645"
 ---
 # <a name="compliance-score-methodology-preview"></a>Metodología de puntuación de cumplimiento (versión preliminar)
 
@@ -39,15 +39,15 @@ Los elementos de acción se asignan a los controles y, cuando un control se asig
   
 ### <a name="mandatory-or-discretionary-controls"></a>Controles obligatorios o discrecionales
   
- **Los controles obligatorios** son controles que no se pueden omitir intencionada o accidentalmente. Un ejemplo de un control obligatorio común es una directiva de contraseñas administrada centralmente que establece los requisitos de longitud, complejidad y expiración de la contraseña. Los usuarios deben cumplir con estos requisitos para tener acceso al sistema.
+ **Los controles obligatorios** son acciones que no se pueden omitir intencionada o accidentalmente. Un ejemplo de un control obligatorio común es una directiva de contraseñas administrada centralmente que establece los requisitos de longitud, complejidad y expiración de la contraseña. Los usuarios deben cumplir con estos requisitos para tener acceso al sistema.
   
  Los **controles discrecionales** dependen de los usuarios para comprender la Directiva y actuar en consecuencia. Por ejemplo, una directiva que requiere que los usuarios bloqueen su equipo cuando lo dejan es un control discrecional porque depende del usuario.
   
 ### <a name="preventative-detective-or-corrective-controls"></a>Controles preventivos, de detectives o correctivos
   
- **Los controles preventivos** son controles que evitan riesgos específicos. Por ejemplo, la protección de la información en reposo mediante el cifrado es un control preventivo contra ataques, infracciones. La separación de tareas es un control preventivo para administrar los conflictos de intereses y protegerse contra el fraude.
+ **Los controles preventivos** son acciones que evitan riesgos específicos. Por ejemplo, la protección de la información en reposo mediante el cifrado es un control preventivo contra ataques, infracciones. La separación de tareas es un control preventivo para administrar los conflictos de intereses y protegerse contra el fraude.
   
- **Los controles** de detectives son controles que supervisan activamente los sistemas para identificar las condiciones o comportamientos anómalos que representan el riesgo o que se pueden usar para detectar intrusiones o determinar si se ha producido una infracción. Auditoría de acceso al sistema auditoría de acciones administrativas con privilegios son tipos de controles de supervisión de detectives. Las auditorías de cumplimiento normativo son un tipo de control de detectives que se usa para encontrar problemas del proceso.
+ **Los controles** de detectives son acciones que supervisan activamente los sistemas para identificar las condiciones o comportamientos anómalos que representan el riesgo o que se pueden usar para detectar intrusiones o determinar si se ha producido una infracción. Auditoría de acceso al sistema auditoría de acciones administrativas con privilegios son tipos de controles de supervisión de detectives. Las auditorías de cumplimiento normativo son un tipo de control de detectives que se usa para encontrar problemas del proceso.
   
 **Los controles correctivos** son controles que intentan mantener al mínimo los efectos negativos de un incidente de seguridad, emprenden acciones correctivas para reducir el efecto inmediato y revierten el daño, si es posible. La respuesta de la incidencia de privacidad es un control correctivo para limitar los daños y restaurar los sistemas a un estado operativo después de una infracción.
   
@@ -57,10 +57,10 @@ Cada control tiene un valor asignado en el administrador de cumplimiento según 
 |:-----|:-----|
 | Obligatorio de prevención | ,27 |
 | Discrecional preventivo | 9  |
-| Detective obligatorio | 3 |
-| Discrecionales de detectives | 1 |
-| Obligatorio de corrección | 3 |
-| Discrecionales correctivas | 1 |
+| Detective obligatorio | 3  |
+| Discrecionales de detectives | 1  |
+| Obligatorio de corrección | 3  |
+| Discrecionales correctivas | 1  |
   
 ## <a name="action-item-workflow"></a>Flujo de trabajo de elementos de acción
 

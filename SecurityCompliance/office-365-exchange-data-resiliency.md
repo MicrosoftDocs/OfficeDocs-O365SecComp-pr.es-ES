@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Una explicación de los diversos aspectos de la resistencia de datos en Exchange Online y Office 365.
-ms.openlocfilehash: 9e61efaf95d466fcb268e12317c7feab0701c062
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 96611c2db166e34a47b845b5683a367dd29ec25f
+ms.sourcegitcommit: f0d23e57b00f07cef5b1b2d366eaeeeacda37e3e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32262762"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35786675"
 ---
 # <a name="exchange-online-data-resiliency-in-office-365"></a>Resistencia de datos de Exchange online en Office 365
 
@@ -50,12 +50,12 @@ Todas las bases de datos de buzones de correo de Office 365 se hospedan en un [g
 
 A partir de estas cuatro copias, tres de ellas están configuradas como de alta disponibilidad. La cuarta copia se configura como una [copia retrasada](https://docs.microsoft.com/Exchange/high-availability/manage-ha/activate-lagged-db-copies)de la base de datos. La copia de base de datos atrasada no está destinada a la recuperación de buzones individuales o la recuperación de elementos de buzón. Su objetivo es proporcionar un mecanismo de recuperación para el caso excepcional de que se produzcan daños lógicos catastróficos en todo el sistema. 
 
-Las copias de base de datos atrasadas en Exchange online están configuradas con un tiempo de retardo de reproducción de archivo de registro de siete días. Además, el administrador de reTardo de reproducción de Exchange está habilitado para proporcionar la reproducción dinámica de archivos de registro para las copias retrasadas a fin de permitir copias de bases de datos atrasadas para la reparación automática y la administración del crecimiento del archivo de registro. Aunque las copias de base de datos retrasadas se usan en Exchange Online, es importante comprender que no son una copia de seguridad de un momento dado garantizado. Las copias de base de datos atrasadas en Exchange Online tienen un umbral de disponibilidad, normalmente alrededor del 90%, debido a los períodos en los que el disco que contiene una copia retrasada se pierde debido a un error en el disco, la copia retrasada se convierte en una copia de alta disponibilidad (debido a la reproducción automática), también como los períodos en los que la copia de base de datos retrasada vuelve a generar la cola de reproducción de registros. 
+Las copias de base de datos atrasadas en Exchange online están configuradas con un tiempo de retardo de reproducción de archivo de registro de siete días. Además, el administrador de retardo de reproducción de Exchange está habilitado para proporcionar la reproducción dinámica de archivos de registro para las copias retrasadas a fin de permitir copias de bases de datos atrasadas para la reparación automática y la administración del crecimiento del archivo de registro. Aunque las copias de base de datos retrasadas se usan en Exchange Online, es importante comprender que no son una copia de seguridad de un momento dado garantizado. Las copias de base de datos atrasadas en Exchange Online tienen un umbral de disponibilidad, normalmente alrededor del 90%, debido a los períodos en los que el disco que contiene una copia retrasada se pierde debido a un error en el disco, la copia retrasada se convierte en una copia de alta disponibilidad (debido a la reproducción automática), también como los períodos en los que la copia de base de datos retrasada vuelve a generar la cola de reproducción de registros. 
 
 ## <a name="transport-resilience"></a>Resistencia de transporte 
 Exchange Online incluye dos características principales de resistencia de transporte: la redundancia de instantáneas y la red de seguridad. La redundancia de instantáneas mantiene una copia redundante de un mensaje mientras está en tránsito. La red de seguridad mantiene una copia redundante de un mensaje después de que el mensaje se entregue correctamente. 
 
-Con la redundancia de instantáneas, cada servidor de transporte de Exchange Online hace una copia de todos los mensajes que recibe antes de confirmar que recibe correctamente el mensaje al servidor de envío. Esto hace que todos los mensajes de la canalización de transporte sean redundantes mientras están en tránsito. Si Exchange Online determina que el mensaje original se perdió en el tránsito, se entrega una copia redundante del mensaje. 
+Con la redundancia de instantáneas, cada servidor de transporte de Exchange Online hace una copia de cada mensaje que recibe antes de confirmar que recibe correctamente el mensaje al servidor de envío. Esto hace que todos los mensajes de la canalización de transporte sean redundantes mientras están en tránsito. Si Exchange Online determina que el mensaje original se perdió en el tránsito, se entrega una copia redundante del mensaje. 
 
 Red de seguridad es una cola de transporte que está asociada con el servicio de transporte en un servidor de buzones de correo. Esta cola almacena copias de mensajes correctamente procesados por el servidor. Cuando una base de datos de buzones o un error del servidor requieren activar una copia obsoleta de la base de datos de buzones, los mensajes de la cola de seguridad de la red se reenvían automáticamente a la nueva copia activa de la base de datos de buzones. La red de seguridad también es redundante, lo que elimina el transporte como un punto único de error. Usa el concepto de una red de seguridad principal y una red de seguridad de instantáneas donde la red de seguridad principal no está disponible durante más de 12 horas, las solicitudes de reenvío se convierten en solicitudes de reenvío de instantánea y los mensajes se vuelven a entregar desde la red de seguridad de instantáneas.
 

@@ -3,7 +3,7 @@ title: Remitente no verificado
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 04/25/2019
+ms.date: 07/11/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -13,14 +13,17 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Para evitar que los mensajes de suplantación de identidad lleguen a su buzón, Outlook.com y Outlook en la web Compruebe que el remitente es quien dice ser y marcar los mensajes sospechosos como correo no deseado.
-ms.openlocfilehash: a69af1efb634e1805f055d49ec5515f4b4252c3b
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 233474dbfff430be8dd95d513adeb257bb26c5c7
+ms.sourcegitcommit: 9e2df36b05a2c93ce2629a7a5eda8f44159d114d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35600266"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "35628513"
 ---
 # <a name="unverified-sender"></a>Remitente no verificado
+
+> [!NOTE] 
+> Estas actualizaciones se están implementando ahora y es posible que no estén disponibles para todos los usuarios.
 
 Para evitar que los mensajes de suplantación de identidad lleguen a su buzón, Outlook.com y Outlook en la web Compruebe que el remitente es quien dice ser y marcar los mensajes sospechosos como correo no deseado.
 
@@ -35,7 +38,7 @@ Outlook.com y Outlook en la web muestran indicadores cuando no se puede identifi
 
 Si es un cliente de Office 365, puede administrar esta característica a través del centro de seguridad & cumplimiento. 
 
-- En el centro de seguridad & cumplimiento de Office 365, los administradores de espacios empresariales pueden activar o desactivar la característica a través de la protección contra la suplantación de identidad (phishing) en la Directiva ANTIPHISH. Además, puede administrarse mediante el cmdlet "Set-AntiPhishPolicy". Para obtener más información, consulte protección contra la suplantación de identidad en Office 365 y set-AntiPhishPolicy.
+- En el centro de seguridad & cumplimiento de Office 365, los administradores globales o de seguridad pueden activar o desactivar la característica a través de la protección contra la suplantación de identidad (phishing) en la Directiva ANTIPHISH. Además, puede administrarse mediante el cmdlet "Set-AntiPhishPolicy". Para obtener más información, consulte [protección contra la suplantación de identidad en Office 365](anti-phishing-protection.md) y [set-AntiPhishPolicy](https://docs.microsoft.com/powershell/module/exchange/advanced-threat-protection/set-antiphishpolicy?view=exchange-ps).
 
     ![Edición de remitentes no autenticados en la interfaz gráfica.](media/unverified-sender-article-editing-unauthenticated-senders.jpg)
 

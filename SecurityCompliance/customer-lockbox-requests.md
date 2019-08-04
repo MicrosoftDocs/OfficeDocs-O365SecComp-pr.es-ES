@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre las solicitudes de caja de caja del cliente que le permiten controlar cómo un ingeniero de soporte técnico de Microsoft puede tener acceso a los datos cuando se tiene un problema.
-ms.openlocfilehash: f3cfdec6521cd5fe0bcb7007b27ce128ae3b2a1d
-ms.sourcegitcommit: 62447503300376aa95dd05fb5276f93a9f6a20b6
+ms.openlocfilehash: 2cbf19ad3c648373704c379794e24590fcb6d290
+ms.sourcegitcommit: f0d23e57b00f07cef5b1b2d366eaeeeacda37e3e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "34927583"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35786625"
 ---
 # <a name="customer-lockbox-in-office-365"></a>Caja de caja de cliente en Office 365
 
@@ -29,7 +29,7 @@ ms.locfileid: "34927583"
 
 La caja de caja del cliente garantiza que Microsoft no pueda obtener acceso al contenido para realizar una operación de servicio sin su aprobación explícita. Lockbox del cliente le ofrece el flujo de trabajo de aprobación para las solicitudes de acceso al contenido.
 
-Ocasionalmente, los ingenieros de Microsoft ayudan a solucionar problemas y solucionar problemas notificados por los clientes en el proceso de soporte. Normalmente, los problemas se arreglan mediante amplias herramientas de telemetría y depuración que Microsoft pone a su servicio. Sin embargo, en algunos casos es necesario que un ingeniero de Microsoft tenga acceso al contenido del cliente para determinar la causa raíz y corregir el problema. La caja de caja del cliente requiere que el ingeniero solicite el acceso del cliente como paso final en el flujo de trabajo de aprobación. Esto proporciona a las organizaciones la opción de aprobar o denegar estas solicitudes y proporcionar control de acceso directo al cliente.
+Ocasionalmente, los ingenieros de Microsoft ayudan a solucionar problemas y solucionar problemas notificados por los clientes en el proceso de soporte. Normalmente, los problemas se arreglan mediante amplias herramientas de telemetría y depuración que Microsoft pone a su servicio. Sin embargo, en algunos casos es necesario que un ingeniero de Microsoft tenga acceso al contenido del cliente para determinar la causa raíz y corregir el problema. La caja de caja del cliente requiere que el ingeniero solicite el acceso del cliente como paso final en el flujo de trabajo de aprobación. Esto proporciona a las organizaciones la opción de aprobar o denegar estas solicitudes y proporcionar un control de acceso directo al cliente.
 
 ### <a name="customer-lockbox-overview-video"></a>Vídeo de información general del Lockbox del cliente
 
@@ -226,7 +226,7 @@ Los administradores globales y todos los usuarios que tengan asignado el rol de 
 
 Los administradores globales y todos los usuarios que tengan asignado el rol de administrador de aprobación de acceso de Lockbox del cliente pueden aprobar solicitudes de caja de caja de cliente. Los clientes controlan estas asignaciones de roles en sus organizaciones.
 
-#### <a name="how-do-i-opt-in-to-customer-lockbox"></a>¿Cómo puedo optar por las cajas de caja del cliente?
+#### <a name="how-do-i-opt-in-to-customer-lockbox"></a>¿Cómo puedo participar en la caja de tareas del cliente?
 
 Un administrador global puede habilitar y configurar las cajas de caja de clientes en el centro de administración de Microsoft 365 o Microsoft 365.
 

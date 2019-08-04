@@ -13,16 +13,16 @@ search.appverid:
 - MOE150
 - MET150
 description: El administrador de cumplimiento de Microsoft es una herramienta gratuita de evaluación de riesgos basada en flujos de trabajo en el portal de confianza de servicios de Microsoft. El administrador de cumplimiento le permite realizar un seguimiento, asignar y comprobar actividades de cumplimiento normativo relacionadas con los servicios en la nube de Microsoft.
-ms.openlocfilehash: a082d069aced13aa9260a1a856d942c4feb7dd4b
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: af0efa2711215946930c091fc7c38cc1b9f575fd
+ms.sourcegitcommit: f0d23e57b00f07cef5b1b2d366eaeeeacda37e3e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152102"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35786655"
 ---
 # <a name="microsoft-compliance-manager-and-the-gdpr"></a>Administrador de cumplimiento de Microsoft y el RGPD
 
-El Reglamento General de protección de datos (RGPD) aprobado por la Unión Europea puede afectar a su estrategia de cumplimiento y a las acciones de mandato necesarias para administrar la información de usuarios y clientes que se usa en el administrador de cumplimiento.
+El Reglamento General de protección de datos (RGPD) aprobado por la Unión Europea puede afectar a su estrategia de cumplimiento y exigir acciones específicas para administrar la información de usuarios y clientes que se usa en el administrador de cumplimiento.
 
 ## <a name="user-privacy-settings"></a>Configuración de privacidad del usuario
 
@@ -59,7 +59,7 @@ Para cada cuenta de usuario identificada, puede generar un informe de dependenci
 3. Abra el documento para revisar los datos del informe.
 
 > [!IMPORTANT]
-> Este no es un informe histórico que conserva y muestra los cambios de estado en el historial de asignación de elementos de acción. El informe generado es una instantánea de los elementos de acción de control asignados en el momento en que se ejecuta el informe (fecha y marca de tiempo escrita en el informe). Por ejemplo, cualquier reasignación posterior de los elementos de acción dará lugar a datos diferentes del informe de instantáneas si este informe se genera de nuevo para el mismo usuario.
+> Los datos del informe no son una lista histórica que conserva y muestra los cambios de estado en el historial de asignación de elementos de acción. El informe generado es una instantánea de los elementos de acción de control asignados en el momento en que se ejecuta el informe (fecha y marca de tiempo escrita en el informe). Por ejemplo, cualquier reasignación posterior de los elementos de acción producirá diferentes datos del informe de instantáneas si el informe se genera de nuevo para el mismo usuario.
   
 ## <a name="delete-user-data-history"></a>Eliminar el historial de datos de usuarios
 

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 2cfce2c8-20c5-47f9-afc4-24b059c1bd76
 description: Los usuarios deben tener asignados permisos en el centro de seguridad & cumplimiento de Office 365 para poder administrar cualquiera de sus características de seguridad o cumplimiento.
-ms.openlocfilehash: 7963a8c3db64e83566960abe9298b9a2d636ae53
-ms.sourcegitcommit: 6302a43d947a908dd10a8e40550b806f491692fc
+ms.openlocfilehash: ea774648efcfe80461eae937f80856acaf1db224
+ms.sourcegitcommit: 7c1cb9e8adb1c3e9c667f4cf02ca3cec3ec1e171
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2019
-ms.locfileid: "35645125"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35792016"
 ---
 # <a name="give-users-access-to-the-office-365-security--compliance-center"></a>Proporcionar a los usuarios acceso al Centro de seguridad y cumplimiento de Office 365
 
@@ -39,11 +39,11 @@ Para obtener más información acerca de los distintos permisos que puede conced
 
 - Los permisos de acceso delegado (DAP) asociados con administrar en nombre de (AOBO) no pueden obtener acceso al centro de seguridad & cumplimiento.
 
-## <a name="use-the-office-365-admin-center-to-give-another-user-access-to-the-security--compliance-center"></a>Usar el centro de administración de Office 365 para conceder a otro usuario acceso al centro de seguridad & cumplimiento
+## <a name="use-the-admin-center-to-give-another-user-access-to-the-security--compliance-center"></a>Usar el centro de administración para conceder a otro usuario acceso al centro de seguridad & cumplimiento
 
 1. [Inicie sesión en Office 365 y vaya al centro de administración](https://go.microsoft.com/fwlink/p/?LinkId=525275).
 
-2. En el centro de administración de Office 365, Abra **centros de administración** y, a continuación, haga clic en **seguridad & cumplimiento**.
+2. En el centro de administración de Microsoft 365, Abra **centros de administración** y, a continuación, haga clic en **seguridad & cumplimiento**.
 
 3. En el centro de seguridad & cumplimiento, vaya a **permisos**.
 

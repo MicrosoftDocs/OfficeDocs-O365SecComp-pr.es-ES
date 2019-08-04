@@ -12,12 +12,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: La característica de vínculos seguros proporciona la comprobación del tiempo de clic de los hipervínculos en los documentos de Office y en los mensajes de correo electrónico. Lea este artículo para obtener información sobre cómo funciona el vínculo seguro ATP.
-ms.openlocfilehash: 7570fd65a9831a6436eec8c402a2bc0c2ae09b40
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 67779560e279028c158179c265196199b5d37d1c
+ms.sourcegitcommit: 7c1cb9e8adb1c3e9c667f4cf02ca3cec3ec1e171
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35599186"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35792046"
 ---
 # <a name="how-office-365-atp-safe-links-works"></a>Funcionamiento de los vínculos seguros de Office 365 ATP
          
@@ -49,9 +49,9 @@ En un nivel alto, aquí se muestra cómo funciona la protección de [vínculos s
     
 ## <a name="how-atp-safe-links-works-with-urls-in-office-documents"></a>Cómo funciona el vínculo seguro ATP con direcciones URL en documentos de Office
 
-En un nivel alto, aquí se muestra cómo funciona la protección de [vínculos seguros de ATP](atp-safe-links.md) para las direcciones URL en Office 365 ProPlus Applications (versiones actuales de Word, Excel y PowerPoint en Windows o Mac, aplicaciones de Office en dispositivos iOS o Android, Visio en Windows, OneNote online y Office En línea):
+En un nivel alto, aquí se muestra cómo funciona la protección de [vínculos seguros de ATP](atp-safe-links.md) para las direcciones URL en Office 365 ProPlus Applications (versiones actuales de Word, Excel y PowerPoint en Windows o Mac, aplicaciones de Office en dispositivos iOS o Android, Visio en Windows, OneNote en un explorador y Office en un explorador):
   
-1. Los usuarios han instalado Office 365 ProPlus en su equipo, smartphone o tableta. (O bien, están usando Office online en su explorador).
+1. Los usuarios han instalado Office 365 ProPlus en su equipo, smartphone o tableta. (O bien, usan Office en su explorador).
     
 2. Un usuario abre un Word, Excel, PowerPoint o Visio y inicia sesión en Office 365 Enterprise con su cuenta profesional o educativa. El documento contiene direcciones URL.
     

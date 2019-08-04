@@ -10,12 +10,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Obtenga más información sobre los principios de seguridad y las recomendaciones para modernizar la seguridad de su organización.
-ms.openlocfilehash: a12ab000e3a8d9d36bcb114e7ad6822b4e085940
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: b70413b29370e19909c751807fe53aefb58ea0aa
+ms.sourcegitcommit: f0d23e57b00f07cef5b1b2d366eaeeeacda37e3e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152122"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35786615"
 ---
 # <a name="ciso-workshop-module-3-identity-and-access-management"></a>CISO Workshop Module 3: administración de identidades y acceso 
 
@@ -40,7 +40,7 @@ Como la mayoría de los ataques modernos implican comprometer las identidades de
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtGm5]
 
-## <a name="part-4-building-an-identity-perimeter-1357"></a>Parte 4: creación de un perímetro de identidad (13:57)
+## <a name="part-4-build-an-identity-perimeter-1357"></a>Parte 4: crear un perímetro de identidad (13:57)
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtYMg]
 

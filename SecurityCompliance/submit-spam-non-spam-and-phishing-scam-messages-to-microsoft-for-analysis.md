@@ -2,7 +2,7 @@
 title: Envío de mensajes de correo no deseado, mensajes seguros y mensajes de correo de suplantación de identidad (phishing) a Microsoft para su análisis
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: dansimp
 ms.date: 04/19/2019
 audience: ITPro
 ms.topic: article
@@ -14,12 +14,12 @@ ms.assetid: dad30e2f-93fe-4d21-9a36-21c87ced85c1
 ms.collection:
 - M365-security-compliance
 description: 'Usted y sus usuarios pueden enviar mensajes de correo no deseado falsos negativos y falsos positivos a Microsoft para su análisis. '
-ms.openlocfilehash: 8949e3422b62a5bca0b72be8168054d8c1b96a70
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 4ca0cf08a2c24ce077756a4c481afd7af59b20a7
+ms.sourcegitcommit: 73d4cbcf7389935a04d2e451903ef14ebb38e096
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34156462"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "35638479"
 ---
 # <a name="submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis"></a>Envío de mensajes de correo no deseado, mensajes seguros y mensajes de correo de suplantación de identidad (phishing) a Microsoft para su análisis
 
@@ -27,6 +27,8 @@ Puede resultar frustrante cuando los usuarios de la organización reciben mensaj
   
 > [!NOTE]
 > Debido al elevado volumen de envíos que recibimos, es posible que no podamos contestar todas las solicitudes de análisis. 
+
+Los administradores pueden enviar correo electrónico, URL y datos adjuntos a Microsoft para su revisión. Vea [envíos de administración en Office 365 ATP](admin-submission.md).
   
 ## <a name="submit-junk-or-phishing-messages-that-passed-through-the-spam-filters"></a>Enviar mensajes de correo no deseado o de suplantación de identidad (phishing) que pasaron por los filtros de correo no deseado
 <a name="sectionSection0"> </a>

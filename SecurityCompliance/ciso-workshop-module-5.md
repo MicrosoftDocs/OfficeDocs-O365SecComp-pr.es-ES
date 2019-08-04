@@ -10,16 +10,16 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: Obtenga más información sobre los principios de seguridad y las recomendaciones para modernizar la seguridad de su organización.
-ms.openlocfilehash: dccd34a6bed27ec3dbbca6c2affdc56234b1a21a
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 94602055ca42e0af154b5e33d3140baa8af0c446
+ms.sourcegitcommit: f0d23e57b00f07cef5b1b2d366eaeeeacda37e3e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155512"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35786605"
 ---
 # <a name="ciso-workshop-module-5-information-protection"></a>CISO Workshop módulo 5: protección de la información
 
-Obtenga información sobre cómo proteger la información confidencial donde va con la clasificación automática, el cifrado persistente en los dispositivos y la supervisión continua de datos en dispositivos móviles, servicios en la nube y otros activos corporativos.
+Obtenga información sobre cómo proteger la información confidencial en cualquier lugar con la clasificación automática y el cifrado persistente en todos los dispositivos. Incluye información sobre la supervisión continua de datos en dispositivos móviles, servicios en la nube y otros activos corporativos.
 
 - Descarga del Resumen de PDF: [módulo 5: protección](media/ciso-workshop-5-information-protection-strategy.pdf) de la información
 - Descargar el Resumen de PowerPoint: [módulo 5: protección](https://docs.microsoft.com/office365/securitycompliance/media/ciso-workshop-5-information-protection-strategy.pptx) de la información

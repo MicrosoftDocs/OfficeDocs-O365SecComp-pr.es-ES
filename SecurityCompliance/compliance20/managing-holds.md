@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: ''
-ms.openlocfilehash: e8ec5114983d64e7d717d4b7ab866bfee9d8d488
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 4e46eba010cd51ab0722fb43196230ba44f4e9a4
+ms.sourcegitcommit: 7c1cb9e8adb1c3e9c667f4cf02ca3cec3ec1e171
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34154902"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35791996"
 ---
 # <a name="manage-holds-in-advanced-ediscovery"></a>Administrar suspensiones en la exhibición avanzada de documentos electrónicos
 
@@ -31,7 +31,7 @@ En algunos casos, puede tener un conjunto de custodios de datos que haya identif
 
 Para ver la Directiva de retención de custodios:
 
-1. En el **centro de seguridad _AMP_ cumplimiento**, haga clic en exhibición de documentos electrónicos **> Advanced eDiscovery** para mostrar la lista de casos de su organización.
+1. En el **centro de seguridad & cumplimiento**, haga clic en **eDiscovery > eDiscovery avanzado** para mostrar la lista de casos de su organización.
    
 2. Vaya a la **** pestaña custodios para agregar custodios en su caso. Para obtener información sobre cómo agregar y poner custodios en espera en un caso de exhibición avanzada de documentos electrónicos, vea [Agregar custodios a un caso de exhibición avanzada](add-custodians-to-case.md)de documentos electrónicos. Si ya ha agregado custodios y los ha colocado en espera, vaya al paso 3.
    
@@ -48,7 +48,7 @@ Al crear una suspensión, tiene las siguientes opciones para limitar el contenid
 
 Para crear una suspensión para un caso de exhibición avanzada de documentos electrónicos:
 
-1. En el **centro de seguridad _AMP_ cumplimiento**, haga clic en exhibición de documentos electrónicos **> Advanced eDiscovery** para mostrar la lista de casos de su organización.
+1. En el **centro de seguridad & cumplimiento**, haga clic en **eDiscovery > eDiscovery avanzado** para mostrar la lista de casos de su organización.
   
 2. Haga clic en **abrir** junto al caso en el que desea crear las suspensiones.
   
@@ -132,7 +132,7 @@ Tenga en cuenta lo siguiente en cuanto a la retención de estadísticas:
 
  - Cuando se realiza una búsqueda en el buzón de un usuario, no se buscará ningún grupo de Office 365 o equipo de Microsoft del que el usuario sea miembro. De forma similar, cuando se coloca un grupo de Office 365 o una retención en Microsoft Team, solo el buzón de grupo y el sitio de grupo se colocan en retención; los buzones y los sitios de OneDrive para la empresa de los miembros del grupo no se mantienen en suspensión a menos que los agregue explícitamente como custodios o coloque sus orígenes de datos en espera. Por lo tanto, si necesita poner un grupo de Office 365 o un equipo de Microsoft en espera para un custodio específico, considere la posibilidad de asignar el sitio de grupo y el buzón de grupo al custodio (consulte Managing custodios in Advanced eDiscovery). Si el grupo de Office 365 o el equipo de Microsoft no son atribuibles a un custodio único, considere la posibilidad de agregar el origen a una retención que no sea Private. 
  
- - Para obtener una lista de los miembros de un grupo de Office 365 o de Microsoft Team, puede ver las propiedades de la página Home > Groups en el centro de administración de Office 365. Como alternativa, puede ejecutar el siguiente comando en Exchange Online PowerShell:
+ - Para obtener una lista de los miembros de un grupo de Office 365 o de Microsoft Teams, puede ver las propiedades de la página de inicio del > de los grupos en el centro de administración de Microsoft 365. Como alternativa, puede ejecutar el siguiente comando en Exchange Online PowerShell:
 
    ``` 
    Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress

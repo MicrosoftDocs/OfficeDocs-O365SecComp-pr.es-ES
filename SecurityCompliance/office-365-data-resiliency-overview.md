@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Comprenda la resistencia de los datos en Microsoft Office 365.
-ms.openlocfilehash: ef8f3f9599f187e26885cb8ff81559546cc49c50
-ms.sourcegitcommit: 0017dc6a5f81c165d9dfd88be39a6bb17856582e
+ms.openlocfilehash: 90edfe1a7e2baac172fcd9b8cc36163b8130484b
+ms.sourcegitcommit: f0d23e57b00f07cef5b1b2d366eaeeeacda37e3e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "32262862"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35786685"
 ---
 # <a name="data-resiliency-in-office-365"></a>Resistencia de datos en Office 365
 
@@ -29,7 +29,7 @@ Teniendo en cuenta la naturaleza compleja de la informática en la nube, Microso
 La creación de la resistencia y la recuperación comienza con la suposición de que se producirá un error en la infraestructura y los procesos subyacentes en algún punto: el hardware (infraestructura) no funcionará, los seres humanos harán errores y el software tendrá errores. Aunque sería incorrecto que los desarrolladores de software no estuvieran pensando en estos aspectos antes de la nube, el modo en que se controlaban estos problemas en una implementación de ti típica era muy diferente antes de la nube: 
 - En primer lugar, las protecciones de hardware y de la infraestructura eran significativas. Esto significaba que los centros de recursos con una confiabilidad de 99,99% requerían una potencia y redundancia de red importantes, y los servidores se implementaban con clústeres basados en hardware, dos fuentes de alimentación, dos interfaces de red y similares. 
 - Segundo, el proceso es primordial. Los equipos de operaciones mantuvieron rigurosos procedimientos, cambios en Windows y, a menudo, un overhead importante en la administración de proyectos. 
-- En tercer lugar, la implementación se realizó a un ritmo glacial. La implementación de código sin la propiedad del origen significaba que se esperaba la publicación de versiones de revisión, y las versiones de versiones principales implicaban sustitución de hardware y una importante inversión en capital. Además, la única forma de corregir un problema era revertir. Por lo tanto, la mayoría de las organizaciones de ti distribuirían solo las versiones principales para evitar el trabajo de mantener actualizada. 
+- En tercer lugar, la implementación se realizó a un ritmo glacial. La implementación de código sin la propiedad del origen significaba que se esperaba la publicación de versiones de revisión, y las versiones de versiones principales implicaban sustitución de hardware y una importante inversión en capital. Además, la única forma de corregir un problema era volver al estado posterior. Por lo tanto, la mayoría de las organizaciones de ti distribuirían solo las versiones principales para evitar el trabajo de mantener actualizada. 
 - Por último, la escala de los sistemas implementados, así como el nivel de su interconexión es históricamente mucho más pequeña de lo que ahora es. 
 
 Hoy en día, los clientes esperan una innovación continua de Microsoft sin poner en riesgo la calidad, y esto es uno de los motivos por los que los servicios y el software de Microsoft se construyen teniendo en cuenta la resistencia y la capacidad de recuperación. 

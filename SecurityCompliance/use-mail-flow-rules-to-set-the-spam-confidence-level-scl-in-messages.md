@@ -2,7 +2,7 @@
 title: Usar reglas de flujo de correo para establecer el nivel de confianza contra correo no deseado (SCL)
 ms.author: tracyp
 author: MSFTTracyP
-manager: laurawi
+manager: dansimp
 ms.date: 11/17/2014
 audience: ITPro
 ms.topic: article
@@ -14,12 +14,12 @@ ms.assetid: 4ccab17a-6d49-4786-aa28-92fb28893e99
 ms.collection:
 - M365-security-compliance
 description: Los administradores pueden obtener información sobre cómo establecer el SCL de los mensajes en Exchange Online Protection.
-ms.openlocfilehash: c997f321ed14cddfa430c43e6de42f36934c642b
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 5ec92573a9ebd1789683d6fdd596747a0e082df0
+ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157972"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35601417"
 ---
 # <a name="use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages"></a>Usar reglas de flujo de correo para establecer el nivel de confianza contra correo no deseado (SCL)
 
