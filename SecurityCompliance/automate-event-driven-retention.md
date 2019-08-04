@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: En este tema se explica cómo configurar los flujos de procesos empresariales para automatizar la retención mediante eventos con la API de REST de Microsoft 365.
-ms.openlocfilehash: c89abc373a6c0a1de6b6528c638dbd34e586b6d7
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 180c98c57986ef7523548978bd1709cc79205e86
+ms.sourcegitcommit: 28484eb103bc7f3694f10e010228472049adbe9b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152282"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "35594358"
 ---
 # <a name="automate-event-based-retention"></a>Retención automática basada en eventos
 
@@ -170,7 +170,7 @@ Código de ejemplo para llamar a la API de REST
 <tbody>
 <tr class="odd">
 <td>URL</td>
-<td>https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent)</td>
+<td>https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent</td>
 <td></td>
 </tr>
 <tr class="even">
