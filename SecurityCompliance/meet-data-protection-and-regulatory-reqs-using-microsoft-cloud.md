@@ -13,12 +13,12 @@ search.appverid:
 - MET150
 ms.assetid: 429e686f-d8a6-455e-a2b6-3791d763f000
 description: El Administrador de cumplimiento del Portal de confianza de servicios de Microsoft proporciona herramientas para realizar un seguimiento, implementar y administrar los controles que permitan a su organización alcanzar el cumplimiento con normas del sector de seguridad y protección de datos (como RGPD, ISO 27001 y 27018, e HIPAA) en relación con los Servicios en la nube de Microsoft, como Office 365 y Microsoft Azure. El Administrador de cumplimiento ayuda a la persona que supervisa la protección de datos y la estrategia de privacidad a administrar el proceso de evaluación de riesgos y cumplimiento de su organización.
-ms.openlocfilehash: c4b7188428fc494ca8b0bfc9f76b725a7b9f6538
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 1c3bf4db5c2e1eabd431bc4d799c46ba8f41e97e
+ms.sourcegitcommit: f0d23e57b00f07cef5b1b2d366eaeeeacda37e3e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158842"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "35786715"
 ---
 # <a name="use-compliance-manager-to-help-meet-data-protection-and-regulatory-requirements-when-using-microsoft-cloud-services"></a>Usar el Administrador de cumplimiento para satisfacer los requisitos normativos y de protección de datos al usar los Servicios en la nube de Microsoft
 
@@ -59,7 +59,7 @@ Una evaluación está formada por varios componentes:
   
 - **Servicios dentro del ámbito**: cada evaluación se aplica a un conjunto específico de servicios Microsoft, que se indican en la sección Servicios en la nube dentro del ámbito. 
     
-- **Controles administrados de Microsoft**: por cada servicio en la nube, Microsoft implementa y administra un conjunto de *controles* como parte del cumplimiento de Microsoft de varias normas y reglamentos. Estos controles se organizan en *familias de controles* que se alinean con la estructura de la certificación o reglamento que se corresponda con la evaluación. Por cada control administrado por Microsoft, el Administrador de cumplimiento proporciona detalles sobre cómo Microsoft implementó el control, además de información sobre cómo y cuándo un auditor externo independiente aprobó y validó esa implementación. 
+- **Controles administrados de Microsoft**: por cada servicio en la nube, Microsoft implementa y administra un conjunto de *controles* como parte del cumplimiento de Microsoft de varias normas y reglamentos. Estos controles se organizan en *familias de controles* que se alinean con la estructura de la certificación o reglamento que se corresponda con la evaluación. Para cada control administrado por Microsoft, el Administrador de cumplimiento proporciona detalles sobre cómo Microsoft implementó el control, además de información sobre cómo y cuándo un auditor externo independiente aprobó y validó esa implementación. 
     
     Este es un ejemplo de tres controles administrados por Microsoft en la familia de controles **Seguridad** de una evaluación de Office 365 y RGPD. 
 
@@ -120,7 +120,7 @@ En el panel, en el Administrador de cumplimiento se muestra una puntuación tota
   
 Los puntos restantes provienen de la evaluación correcta de controles de cliente y de la implementación y prueba de los controles administrados por el cliente, cada uno con un valor específico que contribuye a la puntuación de cumplimiento global. 
   
-En cada evaluación, se muestra una puntuación de cumplimiento basada en riesgos para ayudarle a evaluar el nivel de riesgo (debido al incumplimiento o errores de control) asociado a cada control (incluidos los controles administrados por Microsoft y los controles administrados por el cliente) de una evaluación. Cada control administrado por el cliente tiene asignado un número de puntos posibles (que se denomina una *clasificación de gravedad*) en una escala del 1 al 10, donde se conceden más puntos a los controles asociados a un mayor factor de riesgo si estos producen errores, y menos puntos a controles con menor riesgo. 
+En cada evaluación, se muestra una puntuación de cumplimiento basada en riesgos para ayudarle a evaluar el nivel de riesgo (debido al incumplimiento o errores de control) asociado a cada control (incluidos los controles administrados por Microsoft y los controles administrados por el cliente) de una evaluación. Cada control administrado por el cliente tiene asignado un número de puntos posibles (que se denomina una clasificación de *gravedad) en una escala del 1 al 10, donde se conceden más puntos a los controles asociados a un mayor factor de riesgo si estos producen errores, y menos puntos a controles con menor riesgo. 
   
 Por ejemplo, el control de evaluación “Administración de acceso de usuario” que se muestra abajo tiene una clasificación de riesgo de gravedad muy alta y se muestra un valor asignado de 10.
   
@@ -148,7 +148,7 @@ Por ejemplo, en la imagen siguiente, la evaluación “Office 365: RGPD” se co
   
 ![Administrador de cumplimiento: Resumen de la evaluación](media/595eedae-e3e0-4d1f-8cf5-7c1c9f4fd1e8.png)
   
-En la evaluación, el control del RGPD 7.5.5 está relacionado con otros cinco controles (7.4.1, 7.4.3, 7.4.4, 7.4.8 y 7.4.9), cada uno con una puntuación de clasificación de riesgos de gravedad moderada a alta de 6 u 8. Con el filtro de evaluación, seleccionamos todos estos controles y se muestran en la vista de evaluación; pero, como puede comprobar abajo, no se evaluó ninguno de ellos. 
+En la evaluación, el control del RGPD 7.5.5 está relacionado con otros cinco controles (7.4.1, 7.4.3, 7.4.4, 7.4.8, y 7.4.9), cada uno con una puntuación de clasificación de riesgos de gravedad moderada a alta de 6 u 8. Con el filtro de evaluación, seleccionamos todos estos controles y se muestran en la vista de evaluación; pero, como puede comprobar abajo, no se evaluó ninguno de ellos. 
   
 ![Administrador de cumplimiento: Vista de evaluación (controles de filtro, ninguno evaluado)](media/b2ae7120-2d7a-4247-b0a9-f5f65433395f.jpg) Como los seis controles están relacionados, al finalizar alguno de ellos, se sincronizarán esos resultados de pruebas en todos los controles relacionados de esta evaluación (así como en todos los controles relacionados en una evaluación que se encuentre en la misma agrupación de evaluaciones). Al finalizar la implementación y las pruebas del control 7.5.5 del RGPD, el área de detalle del control se actualiza para indicar que se evaluaron los seis controles, con un incremento correspondiente en el número de controles evaluados hasta 57 y el 51 % evaluados, y un cambio en la puntuación de cumplimiento total de +40. 
   
@@ -277,13 +277,13 @@ Basándose en la clasificación de gravedad del control, se asignará un valor d
    
 Al dar prioridad a los controles de evaluación con los valores de puntuación de cumplimiento más elevados, la organización se centrará en los elementos de mayor riesgo y recibirá una respuesta más positiva proporcionalmente, ya que se agregarán más puntos a la puntuación de cumplimiento total por la evaluación completada de cada control.
   
-### <a name="summmary-of-scoring-methodology"></a>Resumen de la metodología de puntuación
+### <a name="summary-of-scoring-methodology"></a>Resumen de la metodología de puntuación
   
 La puntuación de cumplimiento es un componente básico de la forma en que el Administrador de cumplimiento ayuda a las organizaciones a comprender y administrar su cumplimiento. La puntuación de cumplimiento de una evaluación es una expresión del cumplimiento de la compañía en relación con una norma o reglamento como un número que, cuanto mayor sea la puntuación (hasta el número máximo de puntos asignados para la evaluación), mejor será la posición ante el cumplimiento de la compañía. Comprender la metodología de puntuación de cumplimiento en la que se asignan valores de gravedad de riesgo entre 1 y 10 (de menor a mayor) a los controles de evaluación y cómo se suman las evaluaciones de control completadas a la puntuación de cumplimiento total es esencial para que las organizaciones puedan priorizar sus acciones.
 
 ## <a name="grouping-assessments"></a>Agrupación de evaluaciones
 
-Al crear una evaluación, se le pedirá que cree un grupo para asignar la evaluación, o bien que asigne la evaluación a un grupo existente. Los grupos le permiten organizar de forma lógica las evaluaciones y compartir información común y tareas de flujo de trabajo entre evaluaciones que tengan los mismos controles administrados por el cliente o controles relacionados.
+Al crear una evaluación, se le pide que cree un grupo al que asignarla o que la asigne a un grupo existente. Los grupos le permiten organizar lógicamente las evaluaciones, así como compartir información común y tareas de flujo de trabajo entre las evaluaciones que tienen los mismos controles administrados por cliente (o relacionados).
   
 Por ejemplo, puede agrupar evaluaciones por año, equipos, departamentos o agencias dentro de su organización. Estos son algunos ejemplos de grupos y las evaluaciones que pueden contener.
   
@@ -318,21 +318,21 @@ Por ejemplo, puede agrupar evaluaciones por año, equipos, departamentos o agenc
   
 Estos son los requisitos para agrupar evaluaciones:
   
-- Los nombres de grupo (también denominados *id. de grupo*) tienen que ser únicos en la organización. 
+- Los nombres de grupo (también denominados *id. de grupo) tienen que ser únicos en la organización. 
     
 - Los grupos pueden contener evaluaciones para la misma certificación o reglamento, pero cada grupo solo puede contener una evaluación para par específico de certificación o servicio en la nube. Por ejemplo, un grupo no puede contener dos evaluaciones para Office 365 y el RGPD. De forma similar, un grupo puede contener varias evaluaciones para el mismo servicio en la nube, siempre que el reglamento o certificación correspondiente para cada uno sea distinto.
     
-Después de agregar una evaluación a una agrupación de evaluaciones, la agrupación no se puede cambiar. Puede cambiar el nombre del grupo de evaluaciones, lo que cambiaría el nombre de la agrupación de evaluaciones de todas las evaluaciones asociadas a ese grupo. Puede crear una evaluación y un grupo de evaluaciones y copiar la información de una evaluación existente, lo que crearía un duplicado de esa evaluación en otro grupo de evaluaciones. Al archivar una evaluación, se interrumpe la relación entre la evaluación y el grupo de evaluaciones; las actualizaciones posteriores en otras evaluaciones relacionadas ya no se reflejarán en la evaluación archivada.
+Después de agregar una evaluación a una agrupación de evaluaciones, la agrupación no se puede modificar. Puede cambiar el nombre del grupo de evaluaciones, lo que cambiará el nombre de la agrupación de evaluaciones de todas las evaluaciones asociadas con ese grupo. Puede crear una evaluación y un grupo de evaluaciones, y copiar la información de una evaluación existente, lo que creará un duplicado de esa evaluación y otro grupo de evaluaciones. El archivado de una evaluación rompe la relación entre dicha evaluación y el grupo de evaluación. Cualquier otra actualización de evaluaciones relacionadas no se verá reflejada en la evaluación archivada.
   
-Como se explicó anteriormente, una de las ventajas clave de usar grupos es que, cuando dos evaluaciones distintas en el mismo grupo comparten el mismo control administrado por el cliente (y, por lo tanto, las acciones de cliente serían las mismas para cada control), la finalización de los detalles de la implementación, la información sobre pruebas y el estado del control de una evaluación se sincronizarían con el mismo control en el resto de las evaluaciones del grupo. Es decir, si las evaluaciones comparten el mismo control y se encuentran en el mismo grupo, solo es necesario administrar el proceso de evaluación del control en una de las evaluaciones. Los resultados de ese control se sincronizarán automáticamente con otras evaluaciones. Por ejemplo, las normas ISO 27001 e ISO 27018 tienen un control relacionado con las directivas de contraseña. Si el estado de la prueba del control se establece en “Correcto” en una evaluación, el control se actualizará (y se marcará como “Correcto”) en la otra evaluación, siempre que ambas evaluaciones pertenezcan al mismo grupo de evaluaciones.
+Como se ha explicado anteriormente, una de las ventajas más importantes de los grupos se hace patente cuando dos evaluaciones diferentes del mismo grupo comparten un control administrado por el cliente (y, por lo tanto, las acciones de cliente son las mismas para cada control). Así, la cumplimentación de los detalles de la implementación, la información de pruebas y el estado del control en una evaluación se sincroniza con el mismo control de cualquier otra evaluación del grupo. Es decir, si las evaluaciones comparten un control y están en el mismo grupo, solo tendrá que administrar el proceso de evaluación de un control. Los resultados de ese control se sincronizarán automáticamente con otras evaluaciones. Por ejemplo, ISO 27001 e ISO 27018 tienen un control relacionado con las directivas de contraseñas. Si el Estado de la prueba del control es "Correcto" o "Superado" en una evaluación, el control se actualiza (y se marca como "Correcto" o "Superado") en la otra, siempre que ambas evaluaciones formen parte del mismo grupo de evaluaciones.
   
-A modo de ejemplo, tenga en cuenta estos dos controles de evaluación relacionados, ambos vinculados al cifrado de datos en redes públicas: el control 6.10.1.2 en la evaluación “Office 365: RGPD” y el control SC-13 en la evaluación “Office 365: NIST 800-53”. Se trata de controles de evaluación relacionados, en dos evaluaciones distintas, ambos en el grupo predeterminado; inicialmente, ninguna evaluación completó evaluaciones de control de cliente, como se muestra en el panel del Administrador de cumplimiento donde aparecen estas dos evaluaciones.
+Tomemos como ejemplo estos dos controles de evaluación relacionados, cada uno vinculado con el cifrado de datos en redes públicas, el control 6.10.1.2 en la evaluación del RGPD de Office 365, y el control SC-13 en la evaluación Office 365 - NIST 800-53. Estos son controles de evaluación relacionados, en dos evaluaciones distintas, ambas en el grupo predeterminado. Inicialmente, ninguna evaluación completa evaluaciones de control de cliente, ya que estas dos evaluaciones se muestran en el Panel del Administrador de cumplimiento.
   
 ![Panel del Administrador de cumplimiento: Evaluaciones agrupadas (antes)](media/dc0126a3-415c-4fbe-a020-1806dd1caebd.png)
   
 Al hacer clic en la evaluación **Office 365: RGPD** y usar los controles de filtro para ver el control del RGPD 6.10.1.2, vemos que el control SC-13 de NIST 800-53 se muestra como un control relacionado.
   
-![Evaluación del Administrador de cumplimiento: Controles compartidos](media/aafb106e-0abc-4918-8038-de11cf326dfe.png)
+![Evaluación del Administrador de Cumplimiento: Controles compartidos](media/aafb106e-0abc-4918-8038-de11cf326dfe.png)
   
  Aquí se muestra la finalización de la implementación y pruebas del control del RGPD 6.10.1.2. 
   
@@ -340,11 +340,11 @@ Al hacer clic en la evaluación **Office 365: RGPD** y usar los controles de fil
   
 Al navegar al control relacionado en la evaluación agrupada, vemos que el SC-13 de NIST 800-53 también se marcó como completado con la misma fecha y hora, sin ningún esfuerzo de pruebas o implementación.
   
-![Evaluación del Administrador de cumplimiento: NIST 800-53 SC(13) completado](media/b5933592-db5a-4fdd-9be2-bba777646a88.png)
+![Evaluación del Administrador de Cumplimiento: NIST 800-53 SC(13) completado](media/b5933592-db5a-4fdd-9be2-bba777646a88.png)
   
 De nuevo en el panel, podemos ver que cada evaluación tiene una evaluación de control completada y que la puntuación de cumplimiento total de cada evaluación se incrementó en ocho (el valor de la puntuación de cumplimiento del control compartido).
   
-![Panel del Administrador de cumplimiento: Sincronización de progreso de evaluación agrupada](media/727f1203-b98d-4a03-a7af-e9236f4c5534.png)
+![Panel del Administrador de cumplimiento — sincronización del progreso de evaluación agrupada](media/727f1203-b98d-4a03-a7af-e9236f4c5534.png)
 
 ## <a name="administrative-functions"></a>Funciones administrativas
 
@@ -397,7 +397,7 @@ Algunos reglamentos exigen que una organización pueda eliminar los datos de his
 
 Para buscar una cuenta de usuario:
   
-1. Escriba la dirección de correo electrónico del usuario; primero, escriba el alias (la información a la izquierda del símbolo @) y, después, haga clic en la lista de sufijos de dominio de la parte derecha para seleccionar el nombre de dominio. Si se trata de un espacio empresarial con varios dominios registrados, compruebe el sufijo del nombre de dominio de la dirección de correo electrónico para asegurarse de que sea correcto.
+1. Especifique la dirección de correo electrónico del usuario escribiendo el alias (la información a la izquierda del símbolo @) y elija el nombre de dominio haciendo clic en la lista de sufijos de dominios a la derecha. Si este es un espacio empresarial con varios dominios registrados, puede volver a comprobar el sufijo de nombre de dominio de dirección de correo electrónico para asegurarse de que es correcto.
     
 2. Después de especificar correctamente el nombre de usuario, haga clic en **Buscar**. 
     
@@ -409,11 +409,11 @@ Para buscar una cuenta de usuario:
     
 ### <a name="export-a-report-of-account-data-history"></a>Exportar un informe de historial de datos de cuenta
 
-Después de identificar una cuenta de usuario, puede que quiera generar un informe de dependencias que existan vinculadas a la cuenta. Esta información le permitirá reasignar acciones abiertas o garantizar el acceso a evidencias cargadas anteriormente. 
+Una vez que se haya identificado la cuenta de usuario, puede que desee generar un informe de las dependencias que se encuentran vinculadas a esta cuenta. Esta información le permitirá reasignar los elementos de acción abiertos o garantizar el acceso a evidencias cargadas anteriormente. 
   
  Para generar y exportar un informe:
   
-1. Haga clic en **Exportar** para generar y descargar un informe de las acciones de control del Administrador de cumplimiento que estén asignadas actualmente a la cuenta de usuario encontrada, así como la lista de documentos cargados por el usuario. Si no hay acciones asignadas ni documentos cargados, se mostrará el mensaje de error “Sin datos para el usuario”. 
+1. Haga clic en **Exportar** para generar y descargar un informe de los elementos de acción de control de Administrador de cumplimiento asignados a la cuenta de usuario devuelta, así como la lista de documentos que ha cargado el usuario. Si no hay acciones asignadas ni documentos cargados, un mensaje de error indicará "No hay datos para este usuario". 
     
 2. El informe se descargará en segundo plano desde la ventana del explorador activa (si no ve un mensaje emergente de descarga, consulte el historial de descargas del explorador).
     
@@ -432,7 +432,7 @@ Esta función permite a una organización quitar las dependencias activas o pend
     
 2. Seleccione **Reemplazar** para reasignar todas las acciones de control del usuario encontrado al nuevo usuario seleccionado. 
     
-3. Se mostrará un cuadro de diálogo de confirmación con el siguiente mensaje: “Esto reasignará todas las acciones de control del usuario actual al usuario seleccionado. Esta acción no se puede deshacer. ¿Está seguro de que quiere continuar?”.
+3. Aparecerá un cuadro de diálogo de confirmación que indica: "Esto reasignará todos los elementos de acción de control del usuario actual al usuario seleccionado. No se puede deshacer esta acción. ¿Realmente desea continuar?"
     
 4. Para continuar, haga clic en **Aceptar**; de lo contrario, haga clic en **Cancelar**. 
     
@@ -493,7 +493,7 @@ Para obtener acceso al Administrador de cumplimiento, vaya al Portal de confianz
   
 ## <a name="viewing-action-items"></a>Ver acciones
 
-El Administrador de cumplimiento ofrece una vista sencilla de todas las acciones de evaluaciones de control asignadas, lo que le permite realizar acciones en estas de forma rápida y sencilla. Puede ver todas las acciones, o bien puede seleccionar las acciones que se correspondan con una certificación específica (para hacerlo, haga clic en la pestaña asociada a esa evaluación). Por ejemplo, en la imagen siguiente, la pestaña RGPD está seleccionada, donde se muestren controles relacionados con la evaluación del RGPD.
+El Administrador de cumplimiento proporciona una vista útil de todas las acciones de evaluaciones de control asignadas, lo que le permite realizar acciones en estas de forma rápida y sencilla. Para ver todas las acciones o seleccionar las acciones que se correspondan con una certificación específica, haga clic en la pestaña asociada con esa evaluación. Por ejemplo, en la imagen siguiente, se seleccionó la pestaña RGPD, donde se muestran controles relacionados con la evaluación del RGPD.
   
 ![Administrador de cumplimiento: Acciones donde se muestran varias pestañas (RGPD seleccionada)](media/ba960f5c-becb-4d95-a000-d08ec77b7b46.png)
   
@@ -513,13 +513,13 @@ Para agregar una evaluación al Administrador de cumplimiento:
     
 2. En la ventana **Agregar una evaluación**, puede crear un grupo al que agregar la evaluación, o bien puede agregarlo a un grupo existente (el grupo integrado se denomina “Grupo inicial”). Según la opción que seleccione, escriba el nombre del nuevo grupo, o bien seleccione un grupo existente en la lista desplegable. Para obtener más información, vea [Agrupar evaluaciones](#grouping-assessments).
     
-    Si crea un grupo, también puede copiar información de un grupo existente en la nueva evaluación. Esto equivale a cualquier información que se agregó en los campos “Detalles de la implementación” y “Plan de pruebas y respuesta de administración” de los controles administrados por el cliente de las evaluaciones del grupo desde el que vaya a copiar a los mismos controles administrados por el cliente (o controles relacionados) de la nueva evaluación. Si agrega una nueva evaluación a un grupo existente, la información común de las evaluaciones en ese grupo se copiará en la nueva evaluación. Para obtener más información, vea [Copiar información de evaluaciones existentes](#copying-information-from-existing-assessments).
+    Si crea un grupo, también tendrá la opción de copiar la información de otro existente para la nueva evaluación. Esto significa que la información que se agregó en los campos Detalles de la implementación, Plan de pruebas y Respuesta de la administración de los controles administrados por el cliente de evaluaciones del grupo del que está copiando se pegan en los mismos controles administrados por el cliente (o los relacionados) en la nueva evaluación. Si agrega una evaluación nueva a un grupo existente, la información común de las evaluaciones de ese grupo se copiará a la nueva. Para obtener más información, vea [Copiar la información de evaluaciones existentes](#copying-information-from-existing-assessments).
     
 3. Haga clic en **Siguiente** y siga este procedimiento:
     
-    a. Seleccione un servicio en la nube de Microsoft para evaluar el cumplimiento en la lista desplegable **Seleccionar un producto**. 
+    a. Elija un servicio en la nube de Microsoft de la lista desplegable **Seleccionar un producto** para evaluar el cumplimiento. 
     
-    b. Seleccione una certificación para evaluar el servicio en la nube seleccionado en la lista desplegable **Seleccionar una certificación**. 
+    b. Elija una certificación para evaluar el servicio en la nube seleccionado en la lista desplegable **Seleccionar una certificación**. 
     
 4. Haga clic en **Agregar al panel** para crear la evaluación; la evaluación se agregará al panel del Administrador de cumplimiento como un nuevo icono al final de la lista de iconos existentes. 
     
@@ -533,7 +533,7 @@ Para agregar una evaluación al Administrador de cumplimiento:
 
 ## <a name="copying-information-from-existing-assessments"></a>Copiar información de evaluaciones existentes
 
-Como se explicó anteriormente, al crear un grupo de evaluaciones, puede copiar información de las evaluaciones de un grupo existente en la nueva evaluación del nuevo grupo. Esto le permite aplicar el trabajo de prueba y evaluación que se completó en los mismos controles administrados por el cliente de la nueva evaluación. Por ejemplo, si tiene un grupo para todas las evaluaciones relacionadas con el RGPD de su organización, puede copiar información común de trabajo de evaluaciones existente al agregar una nueva evaluación al grupo.
+Como se ha explicado anteriormente, al crear un grupo de evaluación, tiene la opción de copiar la información de las evaluaciones de un grupo existente a la nueva evaluación en el grupo nuevo. De esta manera, puede aplicar el trabajo de pruebas y evaluación realizado a los mismos controles administrados por el cliente en la nueva evaluación. Por ejemplo, si tiene un grupo para todas las evaluaciones relacionadas con el RGPD en su organización, puede copiar la información común de tareas de evaluación existentes al agregar una nueva evaluación al grupo.
   
 Puede copiar la siguiente información del cliente en una nueva evaluación:
   
@@ -543,7 +543,7 @@ Puede copiar la siguiente información del cliente en una nueva evaluación:
     
 - Detalles de la implementación e información sobre el plan de pruebas.
     
-De forma similar, también se sincronizará la información de los controles administrados por el cliente compartidos en el mismo grupo de evaluaciones. Además, también se sincronizará la información de los controles administrados por el cliente relacionados dentro de la misma evaluación.
+Asimismo, se sincroniza la información de controles administrados por el cliente compartidos en el mismo grupo de evaluación. También se sincroniza la información de controles administrados por el cliente relacionados en la misma evaluación.
 
 ## <a name="viewing-assessments"></a>Ver evaluaciones
 
@@ -557,15 +557,15 @@ De forma similar, también se sincronizará la información de los controles adm
     
 3. En esta sección, se muestran los servicios en la nube individuales que están dentro del ámbito de la evaluación.
     
-4. Esta sección contiene controles administrados por Microsoft. Los controles relacionados se organizan por familias de controles. Haga clic en una familia de controles para expandirla y mostrar los controles individuales.
+4. Esta sección contiene los controles administrados por Microsoft. Los controles relacionados se organizan en familias. Haga clic en una familia para expandirla y mostrar los controles individuales.
     
-5. Esta sección contiene controles administrados por el cliente, que también se organizan por familias de controles. Haga clic en una familia de controles para expandirla y mostrar los controles individuales.
+5. Esta sección contiene los controles administrados por el cliente, que también se organizan en familias. Haga clic en una familia para expandirla y mostrar los controles individuales.
     
-6. Muestra el número total de controles en la familia de controles y cuántos de esos controles se evaluaron. Una función clave del Administrador de cumplimiento es el seguimiento del progreso de la organización en la evaluación de los controles administrados por el cliente. Para obtener más información, vea la sección [Información sobre la puntuación de cumplimiento](#understanding-the-compliance-score). 
+6. Muestra el número total de controles de la familia y cuántos de ellos se han evaluado. Una función principal del Administrador de cumplimiento es seguir el progreso de su organización en la evaluación de los controles administrados por el cliente. Para obtener más información, vea la sección [Introducción a la Puntuación de cumplimiento](#understanding-the-compliance-score). 
 
 ## <a name="managing-the-assessment-process"></a>Administrar el proceso de evaluación
 
-El creador de una evaluación es inicialmente el único usuario de la evaluación. Por cada control administrado por el cliente, puede asignar una acción a un usuario de la organización para que esa persona se convierta en un usuario de evaluación que pueda realizar las acciones de cliente recomendadas, así como recopilar y cargar evidencias. Al asignar una acción, puede enviar un correo electrónico a la persona con detalles como las acciones de cliente recomendadas y la prioridad de la acción. En la notificación por correo electrónico, se incluye un vínculo al panel **Acciones**, donde se muestra una lista de todas las acciones asignadas a esa persona. 
+Inicialmente, el creador de una evaluación es su único usuario. Para cada control administrado por el cliente, puede asignar un elemento de acción a una persona de su organización. De esta manera, dicha persona se convierte en un usuario de evaluación que puede realizar las acciones de cliente recomendadas, así como recopilar y cargar las pruebas. Al asignar un elemento de acción, puede enviar un correo electrónico a esa persona con información sobre las acciones de cliente recomendadas y la prioridad del elemento de acción. La notificación por correo electrónico incluye un vínculo al panel **Elementos de acción**, en el que se enumeran todos los elementos de acción asignados a ese usuario. 
   
 Esta es una lista de las tareas que puede realizar con las características de flujo de trabajo del Administrador de cumplimiento.
   
@@ -573,9 +573,9 @@ Esta es una lista de las tareas que puede realizar con las características de f
   
 1. **Usar las opciones de filtro para encontrar controles de evaluación específicos**: el Administrador de cumplimiento proporciona **opciones de filtro**, que ofrecen criterios de selección altamente granulares para mostrar controles de evaluación, lo que le permitirá dedicarse de forma precisa a áreas específicas de sus esfuerzos de cumplimiento. 
     
-    Haga clic en el icono de embudo de la parte derecha de la página para mostrar u ocultar los controles de **Opciones de filtro**. Estos controles le permiten especificar criterios de filtro y abajo solo se mostrarán los controles de evaluación que coincidan con esos criterios. ![Controles de filtro de evaluaciones del Administrador de cumplimiento](media/d44e1b4b-d928-4778-8a3a-6231edde9ca0.png)
+    Haga clic en el icono de embudo de la parte derecha de la página para mostrar u ocultar los controles de **Opciones de filtro**. Estos controles le permiten especificar criterios de filtro, y en la parte inferior solo se mostrarán los controles de evaluación que se correspondan con esos criterios. ![Controles de filtro de evaluaciones del Administrador de cumplimiento](media/d44e1b4b-d928-4778-8a3a-6231edde9ca0.png)
   
-    - **Artículos**: filtra por el nombre del artículo y muestra los controles de evaluación asociados a ese artículo. Por ejemplo, al escribir “Artículo (5)”, se muestra una lista de selección de artículos cuyo nombre contiene esa cadena (por ejemplo, artículo (5)(1)(a), artículo (5)(1)(b), artículo (5)(1)(c), etc.). Al seleccionar el artículo (5)(1)(c), se mostrarán los controles asociados al artículo (5)(1)(c). Es un campo de selección múltiple que usa un operador OR con varios valores (por ejemplo, si selecciona el artículo (5)(1)(a) y, después, agrega el artículo (5)(1)(c), el filtro mostrará los controles asociados al artículo (5)(1)(a) o al artículo (5)(1)(c)). 
+    - **Artículos**: filtra el nombre del artículo y devuelve los controles de evaluación asociados con ese artículo. Por ejemplo, al escribir “Artículo (5)”, se muestra una lista de selección de artículos cuyo nombre contiene esa cadena (es decir, artículo (5)(1)(a), artículo (5)(1)(b), artículo (5)(1)(c), etc.). Si selecciona el artículo (5)(1)(c) se le mostrarán solo los controles asociados con dicho artículo. Este es un campo de selección múltiple que usa un operador “O” con varios valores (por ejemplo, si selecciona el artículo (5)(1)(a) y, después, agrega el artículo (5)(1)(c), el filtro mostrará los controles asociados con el artículo (5)(1)(a) o con el artículo (5)(1)(c)). 
     
       ![Vista de evaluación del Administrador de cumplimiento: Filtrar por nombre de artículo](media/8b0507a0-589d-484a-bc60-80a3debe3ddb.png)
   
@@ -597,17 +597,17 @@ Esta es una lista de las tareas que puede realizar con las características de f
     
 3. **Asignar una acción a un usuario**: puede asignar una acción a un usuario para implementar los requisitos de una certificación o reglamento, o bien para probar, verificar y documentar los requisitos de implementación de la organización. Al asignar una acción, puede enviar un correo electrónico a la persona con detalles como las acciones de cliente recomendadas y la prioridad de la acción. También puede cancelar la asignación o reasignar una acción a otro usuario. 
     
-4. **Administrar documentos**: los controles administrados por el cliente también permiten administrar documentos relacionados con la realización de tareas de implementación, validación y pruebas. Cualquier usuario con permisos para editar datos en el Administrador de cumplimiento puede cargar documentos si hace clic en **Administrar documentos**. Después de cargar un documento, puede hacer clic en **Administrar documentos** para ver y descargar archivos. 
+4. **Administrar documentos** Los controles administrados por el cliente también cuentan con una ubicación para administrar documentos relacionados con la realización de tareas de implementación, así como para realizar tareas de validación y pruebas. Cualquier persona que tenga permisos para editar datos en el Administrador de cumplimiento puede cargar documentos haciendo clic en **Administrar documentos**. Cuando se hayan cargado documentos, podrá hacer clic en **Administrar documentos** para ver y descargar los archivos. 
     
 5. **Proporcionar detalles de pruebas de implementación**: todos los controles administrados por el cliente tienen un campo editable donde los usuarios pueden agregar detalles de la implementación para documentar los pasos realizados por la organización para cumplir con los requisitos de la certificación o reglamento, así como para validar y documentar la forma en que la organización cumple esos requisitos.
     
 6. **Establecer el estado**: establece el estado de cada elemento como parte del proceso de evaluación. Los valores de estado disponibles son **Implementado**, **Implementación alternativa**, **Planeado** y **No está en el ámbito**. 
     
-7. **Especificar la fecha de prueba y el resultado de la prueba**: el usuario con el rol Evaluador del Administrador de cumplimiento puede verificar que se realicen las pruebas adecuadas, revisar los detalles de la implementación, el plan de pruebas, resultados de pruebas y cualquier evidencia cargada y, después, establecer la fecha de la prueba y el resultado de la prueba. Los valores del resultado de la prueba disponibles son **Correcto**, **Error: riesgo bajo**, **Error: riesgo** **medio** y **Error: riesgo alto**. 
+7. **Escribir la fecha y el resultado de la prueba** La persona con el rol Evaluador de Administrador de cumplimiento puede comprobar que se realizan las pruebas adecuadas, así como revisar los detalles de la implementación, el plan de pruebas, los resultados de las pruebas y cualquier evidencia cargada y, después, establecer los valores de Fecha de la prueba y Resultado de la prueba. Los valores disponibles para Resultado de la prueba son **Correcto**, **Erróneo - Riesgo bajo**, **Erróneo - Riesgo medio** y Erróneo - Riesgo alto. 
 
 ## <a name="managing-action-items"></a>Administrar acciones
 
-Los usuarios que participen en un proceso de evaluación en su organización pueden usar el Administrador de cumplimiento para revisar los controles administrados por el cliente de todas las evaluaciones a las que pertenezcan. Cuando un usuario inicia sesión en el Administrador de cumplimiento y abre el panel **Acciones**, se mostrará una lista de las acciones asignadas a su usuario. Según el rol del Administrador de cumplimiento asignado al usuario, pueden proporcionar detalles de pruebas o implementación, actualizar el estado o asignar acciones. 
+Las personas involucradas en el proceso de evaluación de la organización pueden usar el Administrador de cumplimiento para revisar los controles administrados por el cliente de todas las evaluaciones en las que son usuarios. Cuando un usuario inicia sesión en Administrador de cumplimiento y abre el panel **Elementos de acción**, ve una lista de los que tiene asignados. Según el rol de Administrador de cumplimiento asignado al usuario, este podrá proporcionar detalles sobre la prueba o la implementación, actualizar el estado o asignar elementos de acción. 
   
 Como los controles de certificación suelen implementarlos una persona y probarlos otra, la acción de control se puede asignar de forma inicial a una persona para la implementación y, una vez completada, esa persona puede reasignar la acción de control a la siguiente persona para realizar pruebas de control y cargar las evidencias. La asignación o reasignación de acciones de control puede realizarla cualquiera de los usuarios que tenga un rol del Administrador de cumplimiento con permisos suficientes, que permita la administración centralizada de asignaciones de control o el enrutamiento descentralizado de acciones de control, desde implementador a evaluador, según corresponda.
   
@@ -635,7 +635,7 @@ Las notas asociadas a la acción persisten en la sección de notas y estarán di
 
 ## <a name="exporting-information-from-an-assessment"></a>Exportar información de una evaluación
 
-Puede exportar una evaluación a un archivo de Excel para que las partes interesadas de cumplimiento de su organización puedan revisarla, o bien puede proporcionar el archivo exportado a auditores y entidades reguladoras. Este informe de evaluación es una instantánea de la fecha y hora en que se creó y contiene los detalles de los controles administrados por Microsoft y por el cliente para esa evaluación, como el estado de la implementación de controles, la fecha de la prueba de control y los resultados de pruebas, además de vínculos a los documentos de evidencias cargados. Le recomendamos que exporte el informe de evaluación antes de archivar una evaluación, ya que en las evaluaciones archivadas no se conservan los vínculos a los documentos cargados.
+Puede exportar una evaluación a un archivo de Excel para que las partes interesadas de cumplimiento lo revisen, o bien para facilitarlo a auditores y organismos reguladores. Este informe de evaluación es una instantánea de la evaluación en la fecha y hora en que se creó el informe, y contiene los detalles de los controles administrados por Microsoft y por el cliente para esa evaluación, incluido el estado de la implementación de controles, la fecha de pruebas de control y los resultados de pruebas, y proporciona vínculos a los documentos de evidencias cargados. Le recomendamos que exporte el informe de evaluación antes de archivar una evaluación, ya que en las evaluaciones archivadas no se conservan los vínculos a los documentos cargados.
   
 Para exportar un informe de evaluación:
   
@@ -684,7 +684,7 @@ De forma predeterminada, la búsqueda muestra resultados de documentos, y puede 
   
 ![Portal de confianza de servicios: Buscar en documentos con filtro aplicado](media/86b754e1-c63c-4514-89ac-d014bf334140.png)
   
-Haga clic en el vínculo “Administrador de cumplimiento” para mostrar resultados de la búsqueda de controles de evaluación del Administrador de cumplimiento. En los resultados de la búsqueda, se muestra la fecha en que se creó la evaluación, el nombre de la agrupación de evaluaciones, el servicio en la nube correspondiente y si los controles son de Microsoft o administrados por el cliente.
+Haga clic en el vínculo Administrador de cumplimiento para mostrar los resultados de búsqueda para los controles de evaluación del Administrador de cumplimiento. En la lista de resultados de búsqueda, se muestra la fecha en la que se creó la evaluación, el nombre de la agrupación de evaluaciones, el servicio en la nube aplicable y si los controles están administrados por Microsoft o por el cliente.
   
 ![Portal de confianza de servicios: Búsqueda en controles del Administrador de cumplimiento](media/bafb811a-68ce-40b5-ad16-058498fe5439.png)
   
@@ -700,7 +700,7 @@ El Portal de confianza de servicios de permite ver el contenido de la página en
 
 ## <a name="change-log-for-customer-managed-controls"></a>Registro de cambios de controles administrados por el cliente
 
-El Administrador de cumplimiento está diseñado para actualizarse periódicamente y mantenerse al día de los cambios que se produzcan en los requisitos normativos de nuestros servicios en la nube. En estas actualizaciones, se incluyen los cambios en controles administrados por el cliente. Se proporciona un registro de cambios que le permitirá comprender el impacto de estos cambios, como los detalles sobre el contenido agregado o modificado, así como directrices sobre cómo afectan los cambios a las evaluaciones existentes. En general, hay dos tipos de cambios:
+El Administrador de cumplimiento se diseñó para actualizarlo de forma periódica con el fin de mantenerse al día de los cambios en los requisitos reglamentarios, así como de los cambios en nuestros servicios en la nube. En estas actualizaciones, se incluyen cambios en los Controles administrados por el cliente. Se proporciona un registro de cambios que le ayudará a comprender el impacto de estos cambios, incluidos los detalles sobre el contenido que se haya agregado o modificado, así como una guía sobre cómo afectan los cambios a las evaluaciones existentes. En general, hay dos tipos de cambio:
   
 - Un cambio **mayor** es un cambio importante en una acción de cliente, como agregar o quitar un control o pasos numerados específicos, o bien un cambio en la guía sobre responsabilidades, recomendaciones o evidencias. En el caso de los cambios mayores, le recomendamos que vuelva a evaluar la implementación o evaluación del control afectado.
     
