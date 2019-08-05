@@ -13,7 +13,7 @@ search.appverid:
 ms.assetid: 316544cb-db1d-4c25-a5b9-c73bbcf53047
 ms.collection:
 - M365-security-compliance
-description: La configuración básica del filtro de correo no deseado incluye seleccionar la acción a tomar cuando se identifiquen mensajes como correo no deseado.
+description: La configuración básica del filtro de correo no deseado incluye seleccionar la acción que se realizará cuando se identifiquen mensajes como correo no deseado.
 ms.openlocfilehash: e06714e4a27601c7606c580551217155688a6169
 ms.sourcegitcommit: 33c8e9c16143650ca443d73e91631f9180a9268e
 ms.translationtype: HT
@@ -22,11 +22,11 @@ ms.lasthandoff: 07/25/2019
 ms.locfileid: "35854664"
 ---
 # <a name="configure-your-spam-filter-policies"></a>Configurar las directivas de filtro de correo no deseado
-La configuración del filtro de correo no deseado incluye seleccionar la acción a tomar cuando se identifiquen mensajes como correo no deseado. La configuración de la directiva de filtro de correo no deseado se aplica solo a los mensajes entrantes. Hay dos tipos:
+La configuración del filtro de correo no deseado incluye seleccionar la acción que se realizará cuando se identifiquen mensajes como correo no deseado. La configuración de la directiva de filtro de correo no deseado se aplica solo a los mensajes entrantes. Hay dos tipos:
 
-  - Predeterminada: la directiva de filtro de correo no deseado predeterminada se usa para configurar el filtro de correo no deseado para toda la compañía. No se puede cambiar el nombre de esta directiva y siempre está activada.
+  - Predeterminada: la directiva de filtro de correo no deseado predeterminada se usa para configurar el filtro de correo no deseado para toda la empresa. No se puede cambiar el nombre de esta directiva y siempre está activada.
 
-  - Personalizada: pueden aplicarse a usuarios, grupos o dominios específicos de su organización. Las directivas personalizadas siempre tienen prioridad sobre la predeterminada. Puede cambiar el orden en el que se ejecutan las directivas personalizadas cambiando la prioridad de cada directiva personalizada. Sin embargo, si hay varias directivas que cumplan el conjunto de criterios, solo se aplicará la directiva de prioridad más alta (es decir, la que tenga el número más cercano a 0).
+  - Personalizada: pueden aplicarse a usuarios, grupos o dominios específicos de su organización. Las directivas personalizadas siempre tienen prioridad sobre la predeterminada. Puede cambiar el orden en el que se ejecutan las directivas personalizadas cambiando la prioridad de cada una de ellas. Sin embargo, si hay varias directivas que cumplan el conjunto de criterios, solo se aplicará la directiva de prioridad más alta (es decir, la que tenga el número más cercano a 0).
 
 ## <a name="what-you-must-know-before-you-begin"></a>Qué necesita saber antes de comenzar
 
@@ -34,19 +34,19 @@ Tiempo estimado para finalizar: 30 minutos
   
 Deberá tener permisos asignados para poder llevar a cabo estos procedimientos. Para ver qué permisos necesita, consulte la entrada "Contra el correo electrónico no deseado" en el tema [Permisos de características de Exchange Online](http://technet.microsoft.com/library/15073ce1-0917-403b-8839-02a2ebc96e16.aspx).
 
-La configuración de la Directiva de filtro de correo no deseado se encuentra en el Centro de seguridad y cumplimiento (SCC). Puede obtener más información en [Ir al Centro de seguridad y cumplimiento de Office 365](go-to-the-securitycompliance-center.md). La página de configuración de correo no deseado se encuentra en el SCC \> **Administrador de amenazas** \> **Directiva** \> **sección contra el correo no deseado**.
+La configuración de la Directiva de filtro de correo no deseado se encuentra en el Centro de seguridad y cumplimiento (SCC). Puede obtener más información en [Ir al Centro de seguridad y cumplimiento de Office 365](go-to-the-securitycompliance-center.md). La página de configuración de correo no deseado se encuentra en la sección de SCC \> **Administrador de amenazas** \> **Directiva** \> **Contra el correo no deseado**.
 
 ## <a name="access-and-create-spam-filter-policies"></a>Crear y acceder a directivas de filtro de correo no deseado
 
-En la página Configuración de correo no deseado, puede ver la configuración predeterminada en la pestaña estándar. Para cambiar esta configuración, cambie a la pestaña **Personalizada**. Podrá ver y configurar algunas de las opciones predeterminadas en la Directiva de filtro de correo no deseado predeterminada.
+En la página Configuración de correo no deseado, puede ver la configuración predeterminada en la pestaña Estándar. Para cambiar esta configuración, cambie a la pestaña **Personalizada**. Podrá ver y configurar algunas de las opciones predeterminadas en la Directiva de filtro de correo no deseado predeterminada.
 
-Para habilitar más opciones personalizadas o añadir directivas personalizadas, cambie el selector de **Configuración personalizada a Activado. Esto habilitará el filtro de correo no deseado personalizado. Puede expandir y ver las directivas personalizadas desde aquí.
+Para habilitar más opciones personalizadas o agregar directivas personalizadas, cambie el selector de **Configuración personalizada** a **Activado**. Esto habilitará las directivas personalizadas de filtro de correo no deseado. Puede expandir y ver las directivas personalizadas desde aquí.
 
-## <a name="configure-custom-spam-filter-policy-settings"></a>Configurar opciones de directiva de filtro personalizado de correo no deseado
+## <a name="configure-custom-spam-filter-policy-settings"></a>Configurar opciones de directiva personalizada de filtro de correo no deseado
 
-1. Seleccione y haga clic en **Editar directiva** si está editando una directiva; en caso contrario, haga clic en **Crear una directiva.
+1. Seleccione y haga clic en **Editar directiva** si está editando una directiva; en caso contrario, haga clic en **Crear una directiva**.
 
-2. Puede dar un nombre único a las directivas personalizadas, pero no puede cambiar el nombre de las predeterminadas. También puede especificar una descripción más detallada (opcional).
+2. Puede dar un nombre único a las directivas personalizadas, pero no puede cambiar el nombre de la predeterminada. También puede especificar una descripción más detallada (opcional).
 
 3. En la sección **acciones de correo masivo y correo no deseado**:
 
@@ -57,7 +57,7 @@ Para habilitar más opciones personalizadas o añadir directivas personalizadas,
     > [!NOTE]
     > Para que esta acción funcione en los buzones locales, debe configurar dos reglas de transporte de Exchange en los servidores locales para encontrar los encabezados de correo no deseado que agregó EOP. Para más información, consulte [Asegurarse de que el correo no deseado se enruta a la carpeta de correo no deseado de cada usuario](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md). Este paso es esencial para clientes independientes de Protección en línea de Exchange (EOP):
 
-    - **Agregar encabezado X:**  Envía el mensaje a los destinatarios especificados y agrega un texto de encabezado X al encabezado de mensaje para identificarlo como correo no deseado. Si usa este texto como identificador, puede crear reglas de bandeja de entrada o usar un dispositivo indirecto para actuar en el mensaje. El texto predeterminado del encabezado X es **Este mensaje parece correo no deseado**.<br/>Puede personalizar el texto del encabezado X mediante el cuadro de entrada **Agregar este texto de encabezado X**. Si personaliza el texto del encabezado X, tenga en cuenta lo siguiente: 
+    - **Agregar encabezado X:**  Envía el mensaje a los destinatarios especificados y agrega un texto de encabezado X al encabezado de mensaje para identificarlo como correo no deseado. Si usa este texto como identificador, puede crear reglas de bandeja de entrada o usar un dispositivo indirecto para actuar en relación con el mensaje. El texto predeterminado del encabezado X es **Este mensaje parece correo no deseado**.<br/>Puede personalizar el texto del encabezado X mediante el cuadro de entrada **Agregar este texto de encabezado X**. Si personaliza el texto del encabezado X, tenga en cuenta lo siguiente: 
     
       - Si solo especifica el encabezado con el formato \< *encabezado* \>, sin espacios dentro del \< *encabezado* \>, se anexarán dos puntos al texto personalizado, seguido del texto predeterminado. Por ejemplo, si especifica "Este-es-mi-encabezado-personalizado", el texto del encabezado X aparecerá como "Este-es-mi-encabezado-personalizado: Este mensaje parece correo no deseado". 
         
@@ -65,19 +65,19 @@ Para habilitar más opciones personalizadas o añadir directivas personalizadas,
     
       - No puede especificar el texto del encabezado en el formato \< *encabezado*  \>:\<  *valor*  \>. Si lo hace, se pasarán por alto los valores que aparecen antes y después de los dos puntos y, en su lugar, aparecerá el texto de encabezado X predeterminado: "X-Esto-es-correo-no-deseado: Este mensaje parece correo no deseado." 
       
-      - Tenga en cuenta que, según la configuración de correo no deseado, los mensajes con este encabezado X podrían seguir terminando en la carpeta de correo no deseado. Para cambiar esto, deshabilite esta característica con set-MailboxJunkEmailConfiguration.
+      - Tenga en cuenta que, según la configuración de correo no deseado, los mensajes con este encabezado X podrían seguir terminando en la carpeta de correo no deseado. Para cambiar este comportamiento, deshabilite esta característica con set-MailboxJunkEmailConfiguration.
 
     - **Anteponer texto a la línea de asunto:** Envía el mensaje a los destinatarios especificados pero antepone a la línea de asunto el texto que se especificó en el cuadro de entrada **Anteponer texto a la línea de asunto**. Al usar este texto como identificador, también puede crear reglas para filtrar o enrutar los mensajes según sea necesario. 
 
     - **Redirigir el mensaje a la dirección de correo electrónico** Envía el mensaje a una dirección de correo designada en vez de a los destinatarios especificados. Especifique la dirección de «redirección» en el campo de entrada **Redirigir a esta dirección de correo electrónico**.
 
-    - **Eliminar mensaje** Elimina el mensaje completo, incluyendo todos los datos adjuntos. 
+    - **Eliminar mensaje** Elimina el mensaje completo, incluidos todos los datos adjuntos. 
         
-    - **Colocar el mensaje en cuarentena** Envía el mensaje a la cuarentena en lugar de a los destinatarios. Esta acción es la predeterminada para suplantación de identidad. Si selecciona esta opción, en el cuadro de entrada **Mantener el correo no deseado durante (días)**, especifique la cantidad de días durante los cuales se mantendrá el mensaje de correo no deseado en cuarentena. (Automáticamente se borrará después de que transcurra ese tiempo. El valor predeterminado es 30 días, que es el valor máximo. El valor mínimo es 1 día).<br/><br/>CONSEJO: Para más información sobre cómo los administradores pueden administrar los mensajes de correo que están en cuarentena en el EAC, consulte [Cuarentena](quarantine.md) y [Buscar y liberar mensajes en cuarentena como un administrador](find-and-release-quarantined-messages-as-an-administrator.md). > Para informarse sobre cómo configurar los mensajes de notificación de correo no deseado que se enviarán a los usuarios, consulte [Configurar las notificaciones de correo no deseado para el usuario final en EOP](configure-end-user-spam-notifications-in-eop.md) o Configurar las notificaciones de correo no deseado para el usuario final en Exchange Online. 
+    - **Colocar el mensaje en cuarentena** Envía el mensaje a la cuarentena en lugar de a los destinatarios. Esta acción es la predeterminada para la suplantación de identidad. Si selecciona esta opción, en el cuadro de entrada **Mantener el correo no deseado durante (días)**, especifique la cantidad de días durante los cuales se mantendrá el mensaje de correo no deseado en cuarentena. (Automáticamente se borrará después de que transcurra ese tiempo. El valor predeterminado es 30 días, que es el valor máximo. El valor mínimo es 1 día).<br/><br/>CONSEJO: Para más información sobre cómo los administradores pueden administrar los mensajes de correo que están en cuarentena en el EAC, consulte [Cuarentena](quarantine.md) y [Buscar y liberar mensajes en cuarentena como un administrador](find-and-release-quarantined-messages-as-an-administrator.md). >  Para informarse sobre cómo configurar los mensajes de notificación de correo no deseado que se enviarán a los usuarios, consulte [Configurar las notificaciones de correo no deseado para el usuario final en EOP](configure-end-user-spam-notifications-in-eop.md) o [Configurar las notificaciones de correo no deseado para el usuario final en Exchange Online](configure-end-user-spam-notifications-in-exchange-online.md). 
 
-  - En Seleccionar el umbral** puede determinar niveles a partir de los cuales se considerará o no el correo masivo como correo no deseado, en función del Nivel de quejas masivas (BCL) del mensaje. Puede elegir un valor de umbral de 1 a 9, donde 1 marca la mayor parte del correo electrónico masivo como correo no deseado y 9 permite entregar la mayoría del correo electrónico masivo. A continuación, el servicio realiza la acción configurada, por ejemplo, enviar el mensaje a la carpeta Correo electrónico no deseado del destinatario. Consulte [Valores de nivel de quejas masivas](bulk-complaint-level-values.md) y [¿Cuál es la diferencia entre el correo electrónico no deseado y el correo electrónico en masa?](what-s-the-difference-between-junk-email-and-bulk-email.md) para obtener más información. 
+  - En **Seleccionar el umbral** puede determinar niveles a partir de los cuales se considerará o no el correo masivo como correo no deseado, en función del Nivel de quejas masivas (BCL) del mensaje. Puede elegir un valor de umbral de 1 a 9, donde 1 marca la mayor parte del correo electrónico masivo como correo no deseado y 9 permite entregar la mayoría del correo electrónico masivo. A continuación, el servicio realiza la acción configurada, por ejemplo, enviar el mensaje a la carpeta Correo electrónico no deseado del destinatario. Consulte [Valores de nivel de quejas masivas](bulk-complaint-level-values.md) y [¿Cuál es la diferencia entre el correo electrónico no deseado y el correo electrónico en masa?](what-s-the-difference-between-junk-email-and-bulk-email.md) para obtener más información. 
 
-4. En la página Propiedades de correo no deseado** puede establecer las opciones de modo de prueba de la Directiva mediante las siguientes configuraciones: 
+4. En la página **Propiedades de correo no deseado** puede establecer las opciones de modo de prueba de la Directiva mediante las siguientes configuraciones: 
     
       - **Ninguno** No realiza ninguna acción de modo de prueba en el mensaje. Este valor es predeterminado. 
         
@@ -87,22 +87,22 @@ Para habilitar más opciones personalizadas o añadir directivas personalizadas,
 
 5. Solo para directivas personalizadas, haga clic en el elemento de menú **Aplicar a** y cree una regla basada en condiciones para especificar usuarios, grupos o dominios a los que aplicar la directiva. Puede crear varias condiciones siempre que sean únicas. 
     
-      - Para elegir los usuarios, seleccione **El destinatario es**. En el cuadro de diálogo posterior, seleccione uno o más remitentes de la compañía en la lista del selector de usuarios y luego haga clic en **Agregar**. Para agregar remitentes que no están en la lista, escriba sus direcciones de correo electrónico y haga clic en **comprobar nombres**. En este cuadro también se pueden usar comodines para incluir varias direcciones de correo electrónico (por ejemplo: \*@ _domainname_). Cuando termine de seleccionar, haga clic en **aceptar** para volver a la pantalla principal. 
+      - Para elegir los usuarios, seleccione **El destinatario es**. En el cuadro de diálogo posterior, seleccione uno o más remitentes de la empresa en la lista del selector de usuarios y luego haga clic en **Agregar**. Para agregar remitentes que no están en la lista, escriba sus direcciones de correo electrónico y haga clic en **Comprobar nombres**. En este cuadro también se pueden usar comodines para incluir varias direcciones de correo electrónico (por ejemplo: \*@ _domainname_). Cuando termine de seleccionar, haga clic en **aceptar** para volver a la pantalla principal. 
         
       - Para seleccionar grupos, seleccione **El destinatario es un miembro de**. Después, en el cuadro de diálogo posterior, seleccione o especifique los grupos. Haga clic en **Aceptar** para volver a la pantalla principal. 
         
-      - Para seleccionar dominios, seleccione El dominio del destinatario es**. Después agregue los dominios en el cuadro de diálogo posterior. Haga clic en **Aceptar** para volver a la pantalla principal. <br/><br/>Puede crear excepciones para la regla. Por ejemplo, puede filtrar mensajes de todos los dominios excepto de uno en concreto. Haga clic en **agregar excepción** y cree sus condiciones de excepción de forma parecida a como creó las otras condiciones.<br/><br/>Solo se permite aplicar una directiva de correo no deseado a un grupo para **Grupos de seguridad habilitados para correo electrónico**. 
+      - Para seleccionar dominios, seleccione **El dominio del destinatario es**. Después agregue los dominios en el cuadro de diálogo posterior. Haga clic en **Aceptar** para volver a la pantalla principal. <br/><br/>Puede crear excepciones para la regla. Por ejemplo, puede filtrar mensajes de todos los dominios excepto de uno en concreto. Haga clic en **agregar excepción** y cree sus condiciones de excepción de forma parecida a como creó las otras condiciones.<br/><br/>Solo se permite aplicar una directiva de correo no deseado a un grupo para **Grupos de seguridad habilitados para correo electrónico**. 
   
 6. Haga clic en **Guardar **. En el panel de la derecha, aparece un resumen de la configuración de la directiva.
 
-La directiva predeterminada no se puede deshabilitar ni eliminar, y las directivas personalizadas siempre tienen prioridad sobre la predeterminada. Puede habilitar o deshabilitar las directivas personalizadas marcando o desmarcando las casillas de la columna **HABILITADO**. De manera predeterminada, todas las directivas están habilitadas. Para eliminar una directiva personalizada, selecciónela, haga clic en el icono ![Icono eliminar](media/ITPro-EAC-DeleteIcon.gif) **Eliminar** y confirme que quiere eliminar la directiva.
+La directiva predeterminada no se puede deshabilitar ni eliminar, y las directivas personalizadas siempre tienen prioridad sobre la predeterminada. Puede habilitar o deshabilitar las directivas personalizadas marcando o desmarcando las casillas de la columna **HABILITADO**. De manera predeterminada, todas las directivas están habilitadas. Para eliminar una directiva personalizada, selecciónela, haga clic en el icono ![Icono Eliminar](media/ITPro-EAC-DeleteIcon.gif) **Eliminar** y confirme que quiere eliminar la directiva.
 
 > [!TIP]
-> Para cambiar la prioridad (orden de ejecución) de las directivas personalizadas, haga clic en la ![ Icono flecha arriba](media/ITPro-EAC-UpArrowIcon.gif) flecha de arriba y la ![Icono flecha abajo](media/ITPro-EAC-DownArrowIcon.gif) flecha de abajo. La directiva con **PRIORIDAD** de **0** se ejecutará primero, seguida de la **1**, la **2** y, así, sucesivamente. 
+> Para cambiar la prioridad (orden de ejecución) de las directivas personalizadas, haga clic en la ![Icono de flecha arriba](media/ITPro-EAC-UpArrowIcon.gif) flecha de arriba y la ![Icono de flecha abajo](media/ITPro-EAC-DownArrowIcon.gif) flecha de abajo. La directiva con **PRIORIDAD** de **0** se ejecutará primero, seguida de la **1**, la **2** y, así, sucesivamente. 
   
 ## <a name="use-remote-powershell-to-configure-spam-filter-policies"></a>Usar PowerShell remoto para configurar directivas de filtro de correo no deseado
 
-También puede configurar y aplicar directivas de filtro de correo no deseado en PowerShell. Para obtener información sobre cómo usar Windows PowerShell para conectarse a Exchange Online, vea [Conexión a Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554). Para aprender cómo usar Windows PowerShell para conectarse a Exchange Online Protection, vea [Conectarse a Exchange Online Protection con PowerShell remoto](https://go.microsoft.com/fwlink/p/?linkid=627290).
+También puede configurar y aplicar directivas de filtro de correo no deseado en PowerShell. Para obtener información sobre cómo usar Windows PowerShell para conectarse a Exchange Online, vea [Conexión a Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554). Para aprender a usar Windows PowerShell para conectarse a Exchange Online Protection, vea [Conectarse a Exchange Online Protection con PowerShell remoto](https://go.microsoft.com/fwlink/p/?linkid=627290).
   
 - [Get-HostedContentFilterPolicy](http://technet.microsoft.com/library/d510471a-dda5-4df7-b3f8-2ee7a1948436.aspx) Ver las opciones de filtro de correo no deseado. 
     
@@ -130,7 +130,7 @@ Puede habilitar las técnicas avanzadas de filtrado de correo no deseado si quie
 
 ## <a name="allowblock-lists"></a>Lista de bloqueados y lista de permitidos
 
-En algunas ocasiones, nuestros filtros pueden cometer un error o el sistema puede necesitar tiempo para ponerse al día. En estos casos, la directiva contra el correo no deseado le permite crear listas de permitidos y bloqueados que invaliden la clasificación realizada por el filtro. Esta opción se debe usar con moderación, ya que las listas pueden alcanzar tamaños excesivos, y de forma provisional, ya que nuestro sistema de filtrado debería funcionar correctamente.
+En algunas ocasiones, nuestros filtros pueden cometer un error o los sistemas pueden necesitar tiempo para ponerse al día. En estos casos, la directiva contra el correo no deseado le permite crear listas de permitidos y bloqueados que invaliden la clasificación realizada por el filtro. Esta opción se debe usar con moderación, ya que las listas pueden alcanzar tamaños excesivos, y de forma provisional, ya que nuestro sistema de filtrado debería funcionar correctamente.
 
 Ambas listas se configuran como parte de cualquier directiva de correo no deseado del cliente:
 
