@@ -16,12 +16,12 @@ localization_priority: Priority
 search.appverid:
 - MET150
 description: Obtenga información general de Office 365 Information Protection para RGPD. Aprenda a descubrir, clasificar, proteger y vigilar los datos personales.
-ms.openlocfilehash: 0231951aa4fde3075dc525707fc7cac98e8f7a45
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 0c1c43bdbe16b82a1fe85222b2faf9c76dfc6fe0
+ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152492"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "36165666"
 ---
 # <a name="overview-of-office-365-information-protection-for-gdpr"></a>Información general de Information Protection de Office 365 para RGPD
 
@@ -35,7 +35,7 @@ Artículo 4: definiciones
 
 Esta solución está pensada para ayudar a las organizaciones a descubrir y proteger los datos personales en Office 365 que podrían estar sujetos al RGPD. No se ofrece como una certificación de cumplimiento RGPD. Las organizaciones son responsables del cumplimiento de su propio RGPD y se recomienda que consulten a los equipos legales y de cumplimiento o busquen asesoramiento de terceros especializados en cumplimiento.
 
-[Evaluación de RGPD](https://assessment.microsoft.com/gdpr-compliance) es una herramienta de autoevaluación rápida y en línea disponible sin costo para ayudar a su organización a revisar su nivel de preparación para cumplir con el RGPD general (<http://aka.ms/gdprassessment>).
+[Evaluación de RGPD](https://www.microsoft.com/cyberassessment/en/gdpr/uso365?ls=Email&mkt_tok=eyJpIjoiTTJFeE5USXlOR1EwTWpJMiIsInQiOiJQTmdCYWR5NTlOd3JLWHZlb2NzNldKclQ4ZVBzVmhGeUhoUlFcL1pvSDIyXC9Ka05iTUR1aGpxT0YxQ0FUeGNDOUlkbWZLM1U4SUZWZmEyaGF6XC9ueUxkTHJzZnB3VDRMZlhPdkR4MzRLWkF5ckRNdWwxUkgzXC9yRU8yNkttSHhTb3VpZjNyVlJrNm9TTVZRYU5HR240a0FRPT0ifQ%3D%3D) es una herramienta de autoevaluación rápida y en línea disponible sin coste para ayudar a su organización a revisar su nivel de preparación general para cumplir con el RGPD.
 
 ## <a name="assess-and-manage-your-compliance-risk"></a>Evaluar y administrar los riesgos de cumplimiento
 
@@ -47,7 +47,7 @@ El Administrador de cumplimiento proporciona herramientas para realizar un segui
 
 ![Usar el Administrador de cumplimiento para ver los requisitos y seguir el progreso](Media/Overview-image1.png)
 
-Para obtener más información, consulte [Usar el Administrador de cumplimiento en el Portal de confianza de servicios](https://support.office.com/es-ES/article/Use-Compliance-Manager-in-the-Service-Trust-Portal-Preview-5756d342-5af9-4496-82e8-4dd50fa39942). 
+Para obtener más información, consulte [Usar el Administrador de cumplimiento en el Portal de confianza de servicios](https://servicetrust.microsoft.com/ComplianceManager). 
 
 ### <a name="step-2--use-content-search-and-sensitive-information-types-to-find-personal-data"></a>Paso 2: Usar la Búsqueda de contenido y los tipos de información confidencial para buscar datos personales 
 

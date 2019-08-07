@@ -6,6 +6,7 @@
 ## [Nuevo Centro de seguridad y cumplimiento de Microsoft 365](microsoft-security-and-compliance.md)
 ### [Centro de cumplimiento de Microsoft 365](microsoft-365-compliance-center.md)
 ### [Centro de seguridad de Microsoft 365](overview-security-center.md)
+### [Permisos en el Centro de cumplimiento de Microsoft 365 y el Centro de seguridad de Microsoft 365](permissions-microsoft-365-compliance-security.md)
 ### [Puntuación de seguridad de Microsoft](microsoft-secure-score.md)
 ## [Ir al Centro de seguridad y cumplimiento](go-to-the-securitycompliance-center.md)
 ### [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md)

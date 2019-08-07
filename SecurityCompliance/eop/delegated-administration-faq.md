@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: d6a87ce8-2c22-433a-b430-5eab14f6afdc
 description: En este tema se proporcionan las preguntas más frecuentes y sus respuestas para los socios y distribuidores de Microsoft que desean realizar tareas de administración delegada de Office 365, incluida la capacidad de administrar Exchange Online Protection (EOP) para otros inquilinos (empresas).
-ms.openlocfilehash: 8d28c8b6e0e85e9cfbe71e5b4b787159cc88ce08
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 0121c0a50e7f3ef7e5ab918a69efbd9ed609413e
+ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35599806"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "36165646"
 ---
 # <a name="delegated-administration-faq"></a>Preguntas más frecuentes sobre administración delegada
 
@@ -29,7 +29,7 @@ A. Si es un distribuidor o un partner de Microsoft y se ha registrado para ser u
     
 2. Regístrese para llevar a cabo la administración delegada de Office 365. Antes de que pueda comenzar a administrar la cuenta de un cliente, este debe autorizarlo como administrador delegado. Para obtener su aprobación, primero debe [enviarle una oferta de administración delegada](https://go.microsoft.com/fwlink/?LinkId=396829). (También puede ofrecerle administración delegada a su cliente más adelante). 
     
-3. Para crear la cuenta de administrador delegado siga los pasos que se describen en [Agregar o eliminar un administrador delegado](https://go.microsoft.com/fwlink/?LinkId=396831).
+3. Cree la cuenta de administrador delegada.
     
 Para obtener más información sobre cómo configurar la administración delegada de Office 365, visite [Partners: Crear un negocio y administrar una cuenta de partner de Office 365](https://go.microsoft.com/fwlink/?LinkId=301485). 
   

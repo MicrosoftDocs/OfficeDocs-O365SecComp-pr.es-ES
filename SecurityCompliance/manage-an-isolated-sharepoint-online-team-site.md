@@ -12,12 +12,12 @@ ms.collection: Ent_O365
 ms.custom: Ent_Solutions
 ms.assetid: 79a61003-4905-4ba8-9e8a-16def7add37c
 description: 'Resumen: administre el sitio de grupo de SharePoint Online aislado con estos procedimientos.'
-ms.openlocfilehash: 1670c806c799cdbd9ffa6d3c45568a3342b88815
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: e6ed86421ec199ce785e2daff5e9c5447939e69b
+ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34155822"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "36053085"
 ---
 # <a name="manage-an-isolated-sharepoint-online-team-site"></a>Administrar un sitio de grupo de SharePoint Online aislado
 
@@ -35,11 +35,11 @@ Cuando alguien nuevo se une al sitio, debe decidir su nivel de participación en
     
 - Ver: agregar la cuenta de usuario al grupo de acceso de visores del sitio
     
-Si administra cuentas de usuario y grupos a través de Windows Server Active Directory (AD), agregue los usuarios adecuados a los grupos de acceso adecuados mediante los procedimientos habituales de administración de grupos y usuarios de Windows Server AD y espere la sincronización con el Suscripción de Office 365.
+Si administra cuentas de usuario y grupos a través de los servicios de dominio de Active Directory (AD DS), agregue los usuarios adecuados a los grupos de acceso adecuados mediante los procedimientos normales de administración de grupos y usuarios de AD DS y espere la sincronización con su Office 365 scription.
   
-Si administra cuentas de usuario y grupos a través de Office 365, puede usar el centro de administración de Office o PowerShell de Microsoft:
+Si administra cuentas de usuario y grupos a través de Office 365, puede usar el centro de administración de Microsoft 365 o PowerShell de Microsoft:
   
-- En el centro de administración de Office, inicie sesión con una cuenta de usuario que tenga asignado el rol de administrador de la cuenta de usuario o de administrador de la compañía y use grupos para agregar los usuarios adecuados a los grupos de acceso adecuados.
+- En el centro de administración de Microsoft 365, inicie sesión con una cuenta de usuario que tenga asignado el rol de administrador de la cuenta de usuario o de administrador de la compañía y use grupos para agregar los usuarios adecuados a los grupos de acceso adecuados.
     
 - Para PowerShell, primero [Conéctese con el módulo Azure Active Directory PowerShell para Graph](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module). Para agregar una cuenta de usuario a un grupo de acceso con su nombre principal de usuario (UPN), use el siguiente bloque de comandos de PowerShell:
     
@@ -70,11 +70,11 @@ Para agregar acceso a todo un grupo, debe decidir el nivel de participación de 
     
 - Ver: agregar el grupo al grupo de acceso de visores del sitio
     
-Si administra cuentas de usuario y grupos a través de Windows Server AD, agregue los grupos adecuados a los grupos adecuados mediante los procedimientos habituales de administración de usuarios y grupos de Windows Server AD y espere la sincronización con la suscripción a Office 365.
+Si administra cuentas de usuario y grupos a través de AD DS, agregue los grupos adecuados a los grupos adecuados mediante los procedimientos normales de administración de usuarios y grupos de AD DS y espere la sincronización con la suscripción a Office 365.
   
-Si administra cuentas de usuario y grupos a través de Office 365, puede usar el centro de administración de Office o PowerShell:
+Si administra cuentas de usuario y grupos a través de Office 365, puede usar el centro de administración de Microsoft 365 o PowerShell:
   
-- En el centro de administración de Office, inicie sesión con una cuenta de usuario que tenga asignado el rol de administrador de la cuenta de usuario o de administrador de la compañía y use grupos para agregar los grupos adecuados a los grupos de acceso adecuados.
+- En el centro de administración de Microsoft 365, inicie sesión con una cuenta de usuario que tenga asignado el rol de administrador de la cuenta de usuario o de administrador de la compañía y use grupos para agregar los grupos adecuados a los grupos de acceso adecuados.
     
 - Para PowerShell, primero [Conéctese con el módulo Azure Active Directory PowerShell para Graph](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module).
  A continuación, use los siguientes comandos de PowerShell:
@@ -95,11 +95,11 @@ Cuando es necesario quitar el acceso de un usuario del sitio, se quitan del grup
     
 - Ver: quitar la cuenta de usuario del grupo de acceso de visores del sitio
     
-Si administra cuentas de usuario y grupos a través de Windows Server AD, quite los usuarios correspondientes de los grupos de acceso adecuados mediante los procedimientos habituales de administración de grupos y usuarios de Windows Server AD y espere la sincronización con su Office 365 scription.
+Si administra cuentas de usuario y grupos a través de AD DS, quite los usuarios correspondientes de los grupos de acceso adecuados mediante los procedimientos normales de administración de grupos y usuarios de AD DS y espere la sincronización con la suscripción a Office 365.
   
-Si administra cuentas de usuario y grupos a través de Office 365, puede usar el centro de administración de Office o PowerShell:
+Si administra cuentas de usuario y grupos a través de Office 365, puede usar el centro de administración de Microsoft 365 o PowerShell:
   
-- En el centro de administración de Office, inicie sesión con una cuenta de usuario que tenga asignado el rol de administrador de la cuenta de usuario o de administrador de la compañía y use grupos para quitar los usuarios correspondientes de los grupos de acceso adecuados.
+- En el centro de administración de Microsoft 365, inicie sesión con una cuenta de usuario que tenga asignado el rol de administrador de la cuenta de usuario o de administrador de la compañía y use grupos para quitar los usuarios correspondientes de los grupos de acceso adecuados.
     
 - Para PowerShell, primero [Conéctese con el módulo Azure Active Directory PowerShell para Graph](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module).
 Para quitar una cuenta de usuario de un grupo de acceso con su UPN, use el siguiente bloque de comandos de PowerShell:
@@ -128,11 +128,11 @@ Para quitar el acceso de un grupo completo, se quita el grupo del grupo de acces
     
 - Ver: quitar el grupo del grupo de acceso de visores del sitio
     
-Si administra cuentas de usuario y grupos a través de Windows Server Active Directory, quite los grupos adecuados de los grupos de acceso adecuados mediante los procedimientos habituales de administración de grupos y usuarios de Windows Server AD y espere la sincronización con el Suscripción de Office 365.
+Si administra cuentas de usuario y grupos a través de Windows Server Active Directory, quite los grupos adecuados de los grupos de acceso adecuados mediante los procedimientos normales de administración de grupos y usuarios de AD DS y espere la sincronización con su Office 365 scription.
   
-Si administra cuentas de usuario y grupos a través de Office 365, puede usar el centro de administración de Office o PowerShell:
+Si administra cuentas de usuario y grupos a través de Office 365, puede usar el centro de administración de Microsoft 365 o PowerShell:
   
-- En el centro de administración de Office, inicie sesión con una cuenta de usuario que tenga asignado el rol de administrador de la cuenta de usuario o de administrador de la compañía y use grupos para quitar los grupos adecuados de los grupos de acceso adecuados.
+- En el centro de administración de Microsoft 365, inicie sesión con una cuenta de usuario que tenga asignado el rol de administrador de la cuenta de usuario o de administrador de la compañía y use grupos para quitar los grupos adecuados de los grupos de acceso adecuados.
     
 - Para PowerShell, primero [Conéctese con el módulo Azure Active Directory PowerShell para Graph](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module).    
 Para quitar un grupo de un grupo de acceso mediante sus nombres para mostrar, use el siguiente bloque de comandos de PowerShell:
@@ -157,29 +157,29 @@ Para crear una subcarpeta de documentos con permisos personalizados, haga lo sig
     
 4. Haga clic en **Compartir**.
     
-5. Haga clic en **compartido con _GT_ avanzadas**.
+5. Haga clic en **compartido con > avanzada**.
     
 6. Haga clic en **dejar de heredar permisos**y, a continuación, haga clic en **Aceptar**.
     
 7. Haga clic en **Compartir**.
     
-8. Haga clic en **compartido con _GT_ avanzadas**.
+8. Haga clic en **compartido con > avanzada**.
     
-9. Haga clic en **conceder permisos _GT_ Shared with _GT_ Advanced**.
+9. Haga clic en **conceder permisos > compartidos con > avanzadas**.
     
-10. En la página permisos, haga clic ** \<en miembros del name> del sitio de la lista**.
+10. En la página permisos, haga clic ** \<en nombre del sitio> miembros en la lista**.
     
-11. En la ** \<página miembros del sitio name>** , seleccione la marca de verificación junto al grupo acceso de miembros del sitio, haga clic en **acciones**, haga clic en **quitar usuarios del grupo**y, a continuación, haga clic en **Aceptar**.
+11. En la ** \<página nombre del sitio> miembros** , seleccione la marca de verificación junto al grupo acceso de miembros del sitio, haga clic en **acciones**, haga clic en **quitar usuarios del grupo**y, a continuación, haga clic en **Aceptar**.
     
-12. Para agregar miembros específicos a esta subcarpeta, haga clic en **nuevo _GT_ agregar usuarios**.
+12. Para agregar miembros específicos a esta subcarpeta, haga clic en **nuevo > agregar usuarios**.
     
 13. En el cuadro de diálogo **compartir** , escriba los nombres de las cuentas de usuario que pueden colaborar en los archivos de la subcarpeta y, a continuación, haga clic en **compartir**.
     
 14. Actualice la página web para ver los nuevos resultados.
     
-15. En **grupos** en el panel de navegación izquierdo, haga clic en el ** \<grupo name> visitantes** y use los pasos 11-14 para especificar el conjunto de cuentas de usuario que pueden ver los archivos de la subcarpeta (según sea necesario).
+15. En **grupos** en el panel de navegación izquierdo, haga clic en el ** \<nombre del sitio> grupo visitantes** y use los pasos 11-14 para especificar el conjunto de cuentas de usuario que pueden ver los archivos de la subcarpeta (según sea necesario).
     
-16. En **grupos** en el panel de navegación izquierdo, ** \<** haga clic en el grupo propietarios de name> de sitios y use los pasos 11-14 para especificar el conjunto de cuentas de usuario que pueden administrar los permisos de la subcarpeta (según sea necesario).
+16. En **grupos** en el panel de navegación izquierdo, haga clic en el ** \<nombre del sitio> grupo propietarios** y use los pasos 11-14 para especificar el conjunto de cuentas de usuario que pueden administrar los permisos de la subcarpeta (según sea necesario).
     
 17. Cierre la pestaña **personas y grupos** del explorador.
     

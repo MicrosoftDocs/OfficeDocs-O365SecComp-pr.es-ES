@@ -14,12 +14,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: d1795031-beef-49ea-a6fc-5da5450d320d
 description: 'Resumen: Configure un sitio de grupo de SharePoint Online que esté aislado del resto de la organización en su entorno para desarrollo y pruebas de Office 365.'
-ms.openlocfilehash: 23b734e55e8c68cdc42f41b4e61bdfe152fb01e0
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: e4d4d4462efa91247954501c51a71120a7d341e0
+ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152592"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "36053095"
 ---
 # <a name="isolated-sharepoint-online-team-site-devtest-environment"></a>Sitio de grupo de SharePoint Online aislado en su entorno para desarrollo y pruebas
 
@@ -59,7 +59,7 @@ Si solo quiere crear un sitio de grupo de SharePoint Online aislado de forma lig
 Si desea crear un sitio de grupo de SharePoint Online aislado en una configuración de empresa simulada, siga las instrucciones que se indican en [DirSync para el entorno de desarrollo y pruebas de Office 365](https://docs.microsoft.com/office365/enterprise/dirsync-for-your-office-365-dev-test-environment).
   
 > [!NOTE]
-> Crear un sitio de SharePoint Online aislado no requiere un entorno para desarrollo y pruebas empresarial simulado que incluya una intranet simulada conectada a Internet y una sincronización de directorios para un bosque de Windows Server AD. Se proporciona aquí como opción para que pueda probar un sitio de SharePoint Online aislado y experimentar con él en un entorno que representa una organización típica. 
+> La creación de un sitio de SharePoint Online aislado no requiere el entorno de desarrollo y pruebas de una empresa simulada, que incluye una intranet simulada conectada a Internet y la sincronización de directorios para un bosque de servicios de dominio de Active Directory (AD DS). Se proporciona aquí como opción para que pueda probar un sitio de SharePoint Online aislado y experimentar con él en un entorno que representa una organización típica. 
   
 ## <a name="phase-2-create-user-accounts-and-access-groups"></a>Fase 2: crear cuentas de usuario y grupos de acceso
 
@@ -235,7 +235,7 @@ Ahora vamos a mostrar cómo acceder utilizando la cuenta de usuario del responsa
     
 11. En la pestaña **Documentos del ProyectoX** del explorador, haga clic en **Nuevo > Documento de Word**.
     
-12. Escriba texto en la página **Word Online**, espere a que el estado indique **Guardado**, haga clic en el botón Atrás del explorador y, a continuación, actualice la página. Debería ver un nuevo **Documento.docx** en la carpeta **Documentos**.
+12. Escriba algún texto en la página, espere a que el estado indique **guardado**, haga clic en el botón atrás del explorador y, a continuación, actualice la página. Debería ver un nuevo **Documento.docx** en la carpeta **Documentos**.
     
 13. Haga clic en el botón de puntos suspensivos del archivo **Documento.docx** y, a continuación, en **Obtener un vínculo**.
     

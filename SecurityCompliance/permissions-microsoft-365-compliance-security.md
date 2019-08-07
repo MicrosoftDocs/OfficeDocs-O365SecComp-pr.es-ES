@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usando el Centro de cumplimiento de Microsoft 365 o el Centro de seguridad de Microsoft 365, puede administrar los permisos de forma centralizada para todas las tareas relacionadas con la seguridad y el cumplimiento.
-ms.openlocfilehash: e08c082513a0ed382ca6b208082d38f1813636ce
-ms.sourcegitcommit: 97b9f88b9beee23de13ecf6d0759ac0fad5cf08d
+ms.openlocfilehash: 99a50d625fb503fd12514dde39e0ffe01ea97a5e
+ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "36168295"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "36222780"
 ---
 # <a name="permissions-in-the-microsoft-365-compliance-center-and-microsoft-365-security-center"></a>Permisos en el Centro de cumplimiento de Microsoft 365 y el Centro de seguridad de Microsoft 365
 
@@ -66,7 +66,7 @@ Los usuarios con este rol tienen permisos para administrar las características 
 
 Los usuarios con este rol tienen permisos para proteger y realizar un seguimiento de los datos en el Centro de cumplimiento de Microsoft 365, en el Centro de administración de Microsoft 365 y en Azure. Los usuarios también pueden administrar todas las características dentro del Centro de administración de Exchange, el Administrador de cumplimiento y el Centro de administración de Teams y Skype Empresarial, así como crear incidencias de soporte técnico para Azure y Microsoft 365.
 
-|**En este servicio...**|**El administrador de cumplimiento puede...**|
+|**En este servicio...**|**El administrador de datos de cumplimiento puede...**|
 |:-----|:-----|
 |[**Centro de cumplimiento de Microsoft 365**](https://compliance.microsoft.com/)|Proteger y administrar los datos de su organización en los servicios de Microsoft 365 <br/><br/> Administrar alertas de cumplimiento. <br/><br/> Administrar etiquetas de sensibilidad|
 |[**Administrador de cumplimiento**](https://docs.microsoft.com/office365/securitycompliance/meet-data-protection-and-regulatory-reqs-using-microsoft-cloud)|Controlar, asignar y comprobar las actividades de cumplimiento normativo de su organización.|
@@ -78,7 +78,7 @@ Los usuarios con este rol tienen permisos para proteger y realizar un seguimient
 
 Los usuarios con este rol tienen permisos para administrar las características relacionadas con la seguridad en el Centro de seguridad de Microsoft 365, Azure Active Directory Identity Protection, Azure Information Protection y el Centro de seguridad y cumplimiento de Office 365.
 
-|**En este servicio...**|**El administrador de cumplimiento puede...**|
+|**En este servicio...**|**El administrador de seguridad puede...**|
 |:-----|:-----|
 |[**Centro de seguridad de Microsoft 365**](https://security.microsoft.com/)|Supervisar las directivas relacionadas con la seguridad en servicios de Microsoft 365. <br/><br/>  Administrar alertas y amenazas de seguridad. <br/><br/> Ver informes. <br/><br/> Administrar etiquetas de confidencialidad.|
 |**Identity Protection Center**|Hace todo lo que el rol lector de seguridad puede hacer, y realiza todas las operaciones del Identity Protection Center, excepto restablecer contraseñas.|
@@ -95,7 +95,7 @@ Los usuarios con este rol tienen permisos para administrar las características 
 
 Los usuarios con este rol pueden administrar alertas y tener acceso global de solo lectura en características relacionadas con la seguridad, incluida toda la información en el Centro de seguridad de Microsoft 365, Azure Active Directory, Identity Protection, Privileged Identity Management, así como la capacidad para leer informes de inicio de sesión de Azure Active Directory y registros de auditoría, y en el Centro de seguridad y cumplimiento de Office 365.
 
-|**En este servicio...**|**El administrador de cumplimiento puede...**|
+|**En este servicio...**|**El operador de seguridad puede...**|
 |:-----|:-----|
 |[**Centro de seguridad de Microsoft 365**](https://security.microsoft.com/)|Hace todo lo que el rol de lector de seguridad puede hacer. <br/><br/> Ver, investigar y responder a las alertas de seguridad.|
 |**Identity Protection Center** (próximamente)|Hace todo lo que el rol de lector de seguridad puede hacer.|
@@ -110,7 +110,7 @@ Los usuarios con este rol pueden administrar alertas y tener acceso global de so
 
 Los usuarios con este rol tienen acceso global de solo lectura en la característica relacionada con la seguridad, incluida toda la información del Centro de seguridad de Microsoft 365, Azure Active Directory, Identity Protection, Privileged Identity Management, así como también la capacidad de leer registros de auditoría e informes de inicio de sesión de Azure Active Directory, y del Centro de seguridad y cumplimiento de Office 365.
 
-|**En este servicio...**|**El administrador de cumplimiento puede...**|
+|**En este servicio...**|**El lector de seguridad puede...**|
 |:-----|:-----|
 |[**Centro de seguridad de Microsoft 365**](https://security.microsoft.com/)|Ver directivas relacionadas con la seguridad en los servicios de Microsoft 365. <br/><br/> Ver alertas y amenazas de seguridad. <br/><br/> Ver informes.|
 |**Identity Protection Center**|Lea toda la información de los informes de seguridad y la configuración de las características de seguridad: antispam, cifrado, prevención de pérdida de datos (DLP), antimalware, protección contra amenazas avanzada (ATP), filtro antiphishing y reglas de flujo de correo (también conocidas como reglas de transporte).|

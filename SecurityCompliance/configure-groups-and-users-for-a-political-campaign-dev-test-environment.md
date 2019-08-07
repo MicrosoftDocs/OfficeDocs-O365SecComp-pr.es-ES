@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 0e22bcf3-bad3-42a4-b44f-276e0cf4790f
 description: 'Resumen: Cree suscripciones de evaluación de Office 365 y Enterprise Mobility + Security (EMS) que incluyan usuarios y grupos en un entorno de desarrollo y prueba para una campaña política.'
-ms.openlocfilehash: b81674723f1da5b4282a331207caad2fc6d3d0a0
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 53d6bc8a4cdba6dab33b963344a3bfabdb1e6a26
+ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34151486"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "36053147"
 ---
 # <a name="configure-groups-and-users-for-a-political-campaign-devtest-environment"></a>Configurar grupos y usuarios en un entorno de desarrollo y prueba de campaña política
 
@@ -40,7 +40,7 @@ Después, inscríbase en la suscripción de evaluación de EMS E5 y la agregará
     
 2. Haga clic en el icono **Administración**.
     
-3. En la pestaña **Centro de administración de Office** del explorador, en el panel de navegación izquierdo, haga clic en **Facturación > Servicios de compra**.
+3. En la pestaña del explorador **Centro de administración de Microsoft 365**, situada a la izquierda, haga clic en **Facturación > Servicios de compra**.
     
 4. En la página **Servicios de compra**, busque el elemento **Enterprise Mobility + Security E5**. Mantenga el puntero del mouse sobre ese elemento y haga clic en **Iniciar prueba gratuita**.
     
@@ -170,7 +170,7 @@ Siga estos pasos para comprobar que las licencias basadas en grupos y la pertene
   
 1. En la pestaña **Inicio de Microsoft Office** del explorador, haga clic en el icono **Administrador**.
     
-2. En la nueva pestaña **Centro de administración de Office** del explorador, haga clic en **Usuarios**.
+2. En la nueva pestaña **Centro de administración de Microsoft 365** del explorador, haga clic en **Usuarios**.
     
 3. En la lista de usuarios, haga clic en **Candidato**.
     
