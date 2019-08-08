@@ -1,7 +1,7 @@
 ---
 title: Crear un tipo de información confidencial personalizado con coincidencia exacta de datos
-ms.author: deniseb
-author: denisebmsft
+ms.author: chrfox
+author: chrfox
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Crear un tipo de información confidencial personalizado con clasificación basada en coincidencia exacta de datos
-ms.openlocfilehash: 3b15bf0197918d6bbc3897f9fa578c40b70d3f4e
-ms.sourcegitcommit: 4eb4ca899adcf4d86501530f875eb49af8cdaeb7
+ms.openlocfilehash: be86f22ec20d36aaf12ae253028d0896f885267e
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "34083193"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36230844"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification-preview"></a>Crear un tipo de información confidencial personalizado con coincidencia exacta de datos (versión preliminar)
 
@@ -83,9 +83,11 @@ La configuración de la clasificación basada en EDM implica guardar los datos c
     
     (Puede copiar, modificar y usar nuestro ejemplo).
     
-    ```<?xml version="1.0" encoding="utf-8"?> <EdmSchema xmlns="http://schemas.microsoft.com/office/2018/edm">
-        <DataStore name="PatientRecords" description="Esquema de registros de pacientes" version="1">
-            <Field name="PatientID" unique="false" searchable="true" /> <Field name="MRN" unique="false" searchable="true" />
+    ```<?xml version="1.0" encoding="utf-8"?>
+    <EdmSchema xmlns="http://schemas.microsoft.com/office/2018/edm">
+        <DataStore name="PatientRecords" description="Schema for patient records" version="1">
+            <Field name="PatientID" unique="false" searchable="true" />
+            <Field name="MRN" unique="false" searchable="true" />
             <Field name="FirstName" unique="false" searchable="false" />
             <Field name="LastName" unique="false" searchable="false" />
             <Field name="SSN" unique="false" searchable="true" />
@@ -97,15 +99,15 @@ La configuración de la clasificación basada en EDM implica guardar los datos c
     </EdmSchema>
     ```
 
-4. [Connect to Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
+4. [Conéctese a PowerShell del Centro de seguridad y cumplimiento de Office 365](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
 
-5. To upload the database schema, run the following cmdlets, one at a time:
+5. Para cargar el esquema de la base de datos, ejecute, uno a la vez, los siguientes cmdlets:
 
     `$edmSchemaXml=Get-Content .\edm.xml -Encoding Byte -ReadCount 0`
 
     `New-DlpEdmSchema -FileData $edmSchemaXml -Confirm:$true`
 
-    You will be prompted to confirm, as follows:
+    Se le pedirá que confirme lo siguiente:
 
        Confirm
        Are you sure you want to perform this action?
@@ -113,25 +115,25 @@ La configuración de la clasificación basada en EDM implica guardar los datos c
        [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [?] Help (default is "Y"):
 
     > [!TIP]
-    > If you want your changes to occur without confirmation, in Step 5, use this cmdlet instead: `New-DlpEdmSchema -FileData $edmSchemaXml`
+    > Si quiere que los cambios se realicen sin confirmación, en el paso 5, use este cmdlet: `New-DlpEdmSchema -FileData $edmSchemaXml`
     
-Now that the schema for your database of sensitive information is defined, the next step is to set up a rule package. Proceed to the section [Set up a rule package](#set-up-a-rule-package).
+Ahora que se ha definido el esquema de la base de datos de información confidencial, el siguiente paso es configurar un paquete de reglas. Vaya a la sección [Configurar un paquete de reglas](#set-up-a-rule-package).
 
-#### Editing the schema for EDM-based classification 
+#### <a name="editing-the-schema-for-edm-based-classification"></a>Editar el esquema de la clasificación basada en EDM 
 
-(As needed) If you want to make changes to your edm.xml file, such as changing which fields are used for EDM-based classification, follow these steps:
+(Según sea necesario) Si quiere realizar cambios en el archivo edm.xml, como cambiar los campos que se usan para la clasificación basada en EDM, siga estos pasos:
 
-1. Edit your edm.mxl file (this is the file discussed in the [Define the schema](#define-the-schema-for-your-database-of-sensitive-information) section of this article).
+1. Edite el archivo edm.xml (este es el archivo tratado en la sección [Definir el esquema](#define-the-schema-for-your-database-of-sensitive-information) de este artículo).
 
-2. [Connect to Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
+2. [Conéctese a PowerShell del Centro de seguridad y cumplimiento de Office 365](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
 
-3. To update your database schema, run the following cmdlets, one at a time:
+3. Para actualizar el esquema de la base de datos, ejecute, uno a la vez, los siguientes cmdlets:
 
     `$edmSchemaXml=Get-Content .\edm.xml -Encoding Byte -ReadCount 0`
 
     `Set-DlpEdmSchema -FileData $edmSchemaXml -Confirm:$true`
 
-    You will be prompted to confirm, as follows:
+    Se le pedirá que confirme lo siguiente:
 
        Confirm
        Are you sure you want to perform this action?
@@ -139,19 +141,19 @@ Now that the schema for your database of sensitive information is defined, the n
        [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [?] Help (default is "Y"):
 
     > [!TIP]
-    > If you want your changes to occur without confirmation, in Step 3, use this cmdlet instead: `Set-DlpEdmSchema -FileData $edmSchemaXml`
+    > Si quiere que los cambios se realicen sin confirmación, en el paso 3, use este cmdlet: `Set-DlpEdmSchema -FileData $edmSchemaXml`
 
-#### Removing the schema for EDM-based classification
+#### <a name="removing-the-schema-for-edm-based-classification"></a>Quitar el esquema de la clasificación basada en EDM
 
-(As needed) If you want to remove the schema you're using for EDM-based classification, follow these steps:
+(Según sea necesario) Si quiere quitar el esquema que está usando de la clasificación basada en EDM, siga estos pasos:
 
-1. [Connect to Office 365 Security & Compliance Center PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
+1. [Conéctese a PowerShell del Centro de seguridad y cumplimiento de Office 365](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell?view=exchange-ps).
 
-2. Run the following PowerShell cmdlet, substituting the data store name of "patientrecords" with the one you want to remove:
+2. Ejecute el siguiente cmdlet de PowerShell y sustituya el nombre del almacén de datos "registrospacientes" por el que quiere quitar:
 
     `Remove-DlpEdmSchema -Identity patientrecords`
 
-     You will be prompted to confirm, as follows:
+     Se le pedirá que confirme lo siguiente:
     
        Confirm
        Are you sure you want to perform this action?
@@ -159,25 +161,29 @@ Now that the schema for your database of sensitive information is defined, the n
        [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [?] Help (default is "Y"):
     
     > [!TIP]
-    > If you want your changes to occur without confirmation, in Step 2, use this cmdlet instead: `Remove-DlpEdmSchema -Identity patientrecords -Confirm:$false`
+    > Si quiere que los cambios se realicen sin confirmación, en el paso 2, use este cmdlet: `Remove-DlpEdmSchema -Identity patientrecords -Confirm:$false`
 
-### Set up a rule package
+### <a name="set-up-a-rule-package"></a>Configurar un paquete de reglas
 
-1. Create a rule package in .xml format (with Unicode encoding), similar to the following example. (You can copy, modify, and use our example.) 
+1. Cree un paquete de reglas en formato .xml (con codificación Unicode), similar al ejemplo siguiente: (Puede copiar, modificar y usar nuestro ejemplo). 
 
-   Recall from the previous procedure that our PatientRecords schema defines five fields as searchable: *PatientID*, *MRN*, *SSN*, *Phone*, and *DOB*. Our example rule package includes those fields and references the database schema file (edm.xml), with one *ExactMatch* items per searchable field. Consider the following ExactMatch item:
+   Recuerde del procedimiento anterior que nuestro esquema registrospacientes define cinco campos para la búsqueda: *IdPaciente*, *NEM*, *NSS*, *Teléfono* y *FechaNacimiento*. Nuestro paquete de reglas de ejemplo incluye esos campos y hace referencia al archivo de esquema de la base de datos (edm.xml), con un elemento *ExactMatch* por campo de búsqueda. Considere el siguiente elemento ExactMatch:
 
    ```
-    <ExactMatch id = "E1CC861E-3FE9-4A58-82DF-4BD259EAB371" patternsProximity = "300" dataStore ="PatientRecords" recommendedConfidence = "65" > <Pattern confidenceLevel="65"> <idMatch matches = "SSN" classification = "U.S. Social Security Number (SSN)" /> </Pattern> </ExactMatch>
+    <ExactMatch id = "E1CC861E-3FE9-4A58-82DF-4BD259EAB371" patternsProximity = "300" dataStore ="PatientRecords" recommendedConfidence = "65" >
+      <Pattern confidenceLevel="65">
+        <idMatch matches = "SSN" classification = "U.S. Social Security Number (SSN)" />
+      </Pattern>
+    </ExactMatch>
    ```
 
-    In this example, note the following:
+    En este ejemplo, tenga en cuenta lo siguiente:
 
-    - The dataStore name references the .csv file we created earlier: **dataStore = "PatientRecords"**.
-    - The idMatch value references a searchable field that is listed in the database schema file: **idMatch matches = "SSN"**.
-    - The classification value references an existing or custom sensitive information type: **classification = "U.S. Social Security Number (SSN)"**. (In this case, we use the existing sensitive information type of U.S. Social Security Number.)
+    - El nombre de dataStore hace referencia al archivo .csv que hemos creado anteriormente: **dataStore = "registrospacientes"**.
+    - El valor de idMatch hace referencia a un campo para la búsqueda que aparece en el archivo de esquema de la base de datos: **idMatch matches = "NSS"**.
+    - El valor classification hace referencia a un tipo de información confidencial existente o personalizada: **classification = "Número de seguridad social de Estados Unidos (NSS)"**. (En este caso, usamos el tipo de información confidencial existente del número de la seguridad social de Estados Unidos).
 
-    When you set up your rule package, make sure to correctly reference your .csv file and edm.xml file. (You can copy, modify, and use our example.) 
+    Cuando configure el paquete de reglas, asegúrese de hacer referencia correctamente al archivo. csv y al archivo edm.xml. (Puede copiar, modificar y usar nuestro ejemplo). 
 
     ```<?xml version="1.0" encoding="utf-8"?>
     <RulePackage xmlns="http://schemas.microsoft.com/office/2018/edm">
@@ -219,7 +225,7 @@ Now that the schema for your database of sensitive information is defined, the n
     </RulePackage>
     ```
     
-2. Cargue el paquete de reglas ejecutando los siguientes cmdlets de PowerShell, uno a uno:
+2. Cargue el paquete de reglas ejecutando, uno a la vez, los siguientes cmdlets de PowerShell:
 
     `$rulepack=Get-Content .\rulepack.xml -Encoding Byte -ReadCount 0`
 
