@@ -15,16 +15,18 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: Obtenga información sobre el archivado de expansión automática en Office 365, que proporciona almacenamiento ilimitado de archivos para buzones de Exchange Online.
-ms.openlocfilehash: 9b63bcd7cbf8c1cef8df336553debdbf7af2ba12
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 21489683bbb9f3e2addb5e95a38d8f8a418639de
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34158072"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36231084"
 ---
 # <a name="overview-of-unlimited-archiving-in-office-365"></a>Información general sobre el archivado ilimitado en Office 365
 
-En Office 365, los buzones de archivo proporcionan a los usuarios espacio de almacenamiento adicional en el buzón de correo. Después de habilitar el buzón de archivo de un usuario, hay disponible hasta 100 GB de almacenamiento adicional. Cuando se alcanza la cuota de almacenamiento de 100 GB, las organizaciones tuvieron que ponerse en contacto con Microsoft para solicitar espacio de almacenamiento adicional para un buzón de archivo. Esto ya no es así. La nueva característica de archivado ilimitado en Office 365 (denominada *archivado de expansión automática*) proporciona una cantidad ilimitada de almacenamiento en los buzones de archivo. Ahora, cuando se alcanza la cuota de almacenamiento en el buzón de archivo, Office 365 aumenta automáticamente el tamaño del archivo, lo que significa que los usuarios no se quedarán sin espacio de almacenamiento en el buzón y los administradores no tendrán que solicitar almacenamiento adicional para los buzones de archivo. .
+En Office 365, los buzones de archivo proporcionan a los usuarios espacio de almacenamiento adicional en el buzón de correo. Después de habilitar el buzón de archivo de un usuario, hay disponible hasta 100 GB de almacenamiento adicional. En el pasado, cuando se alcanzaba la cuota de almacenamiento de 100 GB, las organizaciones tenían que ponerse en contacto con Microsoft para solicitar espacio de almacenamiento adicional para un buzón de archivo. Esto ya no es así.
+
+La característica de archivo ilimitado en Office 365 (denominada *archivado de expansión automática*) proporciona una cantidad ilimitada de almacenamiento en los buzones de archivo. Ahora, cuando se alcanza la cuota de almacenamiento en el buzón de archivo, Office 365 aumenta automáticamente el tamaño del archivo, lo que significa que los usuarios no se quedarán sin espacio de almacenamiento en el buzón y los administradores no tendrán que solicitar almacenamiento adicional para los buzones de archivo. .
   
 Para obtener instrucciones paso a paso para activar el archivado de expansión automática, vea [Habilitar el archivado ilimitado en Office 365](enable-unlimited-archiving.md).
   

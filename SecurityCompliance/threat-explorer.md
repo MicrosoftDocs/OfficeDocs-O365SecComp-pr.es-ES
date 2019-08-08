@@ -1,9 +1,9 @@
 ---
-title: Explorador de amenazas (y detecciones en tiempo real)
+title: Explorador de amenazas y detecciones en tiempo real
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 06/20/2019
+ms.date: 08/07/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,15 +14,15 @@ search.appverid:
 ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
-description: Obtenga información sobre el explorador (y las detecciones en tiempo real) &amp; en el centro de seguridad y cumplimiento.
-ms.openlocfilehash: dff1fae01aa525135226d88b305de7c7c3aefb7c
-ms.sourcegitcommit: bc25ea19c0b6d318751eadc4f27902b0054d5e2b
+description: Obtenga información sobre el explorador y las detecciones en tiempo real &amp; en el centro de seguridad y cumplimiento.
+ms.openlocfilehash: 2e3e60c2b197c30f01efcfcba5e118091b29a22b
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36054762"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36230414"
 ---
-# <a name="threat-explorer-and-real-time-detections"></a>Explorador de amenazas (y detecciones en tiempo real)
+# <a name="threat-explorer-and-real-time-detections"></a>Explorador de amenazas y detecciones en tiempo real
 
 Si su organización tiene [office 365 Advanced Threat Protection](office-365-atp.md) (Office 365 ATP) y dispone de los [permisos necesarios](#required-licenses-and-permissions), tendrá un **Explorador** o detecciones en **tiempo real** (anteriormente informes en *tiempo real* , [consulte ](#new-features-in-real-time-detections)novedades). En el centro de seguridad & cumplimiento, vaya a **Administración de amenazas**y, a continuación, elija **Explorador** o **detecciones en tiempo real**. 
 
@@ -42,7 +42,7 @@ Con este informe, puede:
 
 ## <a name="new-features-in-real-time-detections"></a>Nuevas características en detecciones en tiempo real
 
-El explorador/detección en tiempo real agrega nuevos campos nuevos diseñados para proporcionarle una imagen más completa de dónde se encuentran los correos electrónicos. Parte del objetivo de este cambio es facilitar la búsqueda para los operadores de seguridad, pero el resultado neto es conocer la ubicación de los correos electrónicos con problemas de un vistazo.
+El explorador (y las detecciones en tiempo real) agrega nuevos campos nuevos diseñados para proporcionarle una imagen más completa de dónde se encuentran los correos electrónicos. Parte del objetivo de este cambio es facilitar la búsqueda para los operadores de seguridad, pero el resultado neto es conocer la ubicación de los correos electrónicos con problemas de un vistazo.
 
 ¿Cómo se hace esto? El estado de entrega ahora se divide en dos columnas:
 
@@ -105,9 +105,9 @@ Para revisar direcciones URL de phish en mensajes y hacer clic en direcciones UR
 
     El informe se actualiza para mostrar dos tablas de direcciones URL diferentes en la ficha dirección URL del informe:
 
-   1. Las **direcciones URL principales** son las que se encuentran en los mensajes que se han filtrado y la acción de entrega de correo electrónico se recuento para cada dirección URL. En la vista correo phish, esta lista normalmente contendrá direcciones URL legítimas. Los atacantes incluyen una mezcla de direcciones URL buenas y incorrectas en sus mensajes para intentar entregarlos, pero harán que los vínculos malintencionados sean más interesantes para el usuario hacer clic en. La tabla de direcciones URL se ordena por recuento de correo electrónico total (Nota: esta columna no se muestra para simplificar la vista).
+   - Las **direcciones URL principales** son las que se encuentran en los mensajes que se han filtrado y la acción de entrega de correo electrónico se recuento para cada dirección URL. En la vista correo phish, esta lista normalmente contendrá direcciones URL legítimas. Los atacantes incluyen una mezcla de direcciones URL buenas y incorrectas en sus mensajes para intentar entregarlos, pero harán que los vínculos malintencionados sean más interesantes para el usuario hacer clic en. La tabla de direcciones URL se ordena por recuento de correo electrónico total (Nota: esta columna no se muestra para simplificar la vista).
 
-   2. Los **clics principales** son las direcciones URL contenidas en vínculos seguros en las que se hizo clic, ordenadas por número total de clics (esta columna tampoco se muestra para simplificar la vista). Número total de recuentos por columna indique los vínculos seguros haga clic en recuento de veredictos para cada dirección URL con clic. En la vista de correo electrónico phish, estos son direcciones URL sospechosas o malintencionadas, pero pueden incluir direcciones URL limpias que estén en mensajes de suplantación. Los clics de dirección URL en vínculos desajustados no se mostrarán aquí.
+   - Los **clics principales** son las direcciones URL contenidas en vínculos seguros en las que se hizo clic, ordenadas por número total de clics (esta columna tampoco se muestra para simplificar la vista). Número total de recuentos por columna indique los vínculos seguros haga clic en recuento de veredictos para cada dirección URL con clic. En la vista de correo electrónico phish, estos son direcciones URL sospechosas o malintencionadas, pero pueden incluir direcciones URL limpias que estén en mensajes de suplantación. Los clics de dirección URL en vínculos desajustados no se mostrarán aquí.
    
    Las dos tablas URL muestran las direcciones URL principales en los correos electrónicos de suplantación de identidad por acción y ubicación de entrega, y muestran los clics en direcciones URL que se bloquearon (o visitaron a pesar de una advertencia) para que pueda comprender los posibles vínculos no válidos que los usuarios han recibido e interactúan con los usuarios. Desde aquí, puede realizar análisis adicionales. Por ejemplo, debajo del gráfico, puede ver las direcciones URL principales en los correos electrónicos que se bloquearon en el entorno de su organización.
    
@@ -117,11 +117,11 @@ Para revisar direcciones URL de phish en mensajes y hacer clic en direcciones UR
 
 ## <a name="review-email-messages-reported-by-users"></a>Revisar los mensajes de correo electrónico enviados por los usuarios
 
-Supongamos que desea ver los mensajes de correo electrónico que los usuarios de la organización han notificado como correo no deseado, correo no deseado o suplantación de identidad mediante el [complemento de mensajes de informe para Outlook y Outlook en la web](enable-the-report-message-add-in.md). Para ello, use el [correo electrónico >](threat-explorer-views.md#email--user-reported) vista notificada por el usuario de explorador (o detecciones en tiempo real).
+Supongamos que desea ver los mensajes de correo electrónico que los usuarios de la organización han notificado como correo no deseado, correo no deseado o suplantación de identidad mediante el [complemento de mensajes de informe para Outlook y Outlook en la web](enable-the-report-message-add-in.md). Para ello, use el [correo electrónico >](threat-explorer-views.md#email--submissions) vista de envíos del explorador (o detecciones en tiempo real).
 
 1. En el centro de seguridad & cumplimiento[https://protection.office.com](https://protection.office.com)(), elija **Threat Management** > **Explorer** (o **detecciones en tiempo real**). (En este ejemplo se usa el explorador).
 
-2. En el menú **Ver** , elija **correo electrónico** > notificado por el**usuario**.<br/>![Menú Ver para el explorador](media/ExplorerViewMenuEmailUserReported.png)<br/>
+2. En el menú **Ver** , elija envíos de **correo electrónico** > ****.<br/>![Menú Ver para el explorador](media/ExplorerViewMenuEmailUserReported.png)<br/>
 
 3. Haga clic en **remitente**y, a continuación, elija**tipo de informe** **básico** > .
 
@@ -170,8 +170,7 @@ Para obtener más información acerca de los roles y los permisos, vea los sigui
 - [Permissions in the Office 365 Security &amp; Compliance Center](permissions-in-the-security-and-compliance-center.md)
 - [Permisos de características de Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/feature-permissions)
   
-## <a name="some-differences-between-real-time-detection-and-threat-exporter"></a>Algunas diferencias entre la detección en tiempo real y el exportador de amenazas.
+## <a name="some-differences-between-threat-exporter-and-real-time-detections"></a>Algunas diferencias entre el exportador de amenazas y las detecciones en tiempo real
 
- - **El informe de detección en tiempo real** se incluye con la suscripción a ATP P1, mientras que el **Explorador de amenazas** incluye ATP P2.
- - El informe de detecciones en **tiempo real** le permite mostrar las detecciones en tiempo real, mientras que los informes del explorador de amenazas le permiten ver más detalles en un ataque determinado.
- - Los informes de **Threat Explorer** ofrecen distintos conjuntos de informes que mejoran su experiencia en el respeto de los informes **de detector en tiempo real** .
+ - El informe de detecciones en **tiempo real** está disponible en Office 365 ATP plan 1, mientras que **Threat Explorer** está disponible en Office 365 ATP plan 2.
+ - El informe de detecciones en **tiempo real** permite ver las detecciones en tiempo real. El **Explorador de amenazas** hace esto también, pero también le permite ver más detalles de un ataque determinado.

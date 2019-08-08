@@ -1,7 +1,7 @@
 ---
 title: Qué buscan los tipos de información confidencial
-ms.author: deniseb
-author: denisebmsft
+ms.author: chrfox
+author: chrfox
 manager: laurawi
 ms.date: 05/20/2019
 audience: Admin
@@ -14,12 +14,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: La prevención de pérdida de datos (DLP) en el &amp; centro de seguridad y cumplimiento de Office 365 incluye 80 tipos de información confidencial listos para que pueda usarlos en las directivas de DLP. Este tema enumera todos estos tipos de información confidencial y muestra lo que una directiva DLP busca al detectar cada uno de los tipos.
-ms.openlocfilehash: 1e1aeea164c15bb64c6040f7821bf006ee8ff42f
-ms.sourcegitcommit: b8737e52724a343d99082961bc113bba819d5681
+ms.openlocfilehash: 7f5c879b35f77ef142b8c45965357715f577832e
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "34247303"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36230384"
 ---
 # <a name="what-the-sensitive-information-types-look-for"></a>Qué buscan los tipos de información confidencial
 
@@ -65,22 +65,22 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywordabarouting"></a>Keyword_ABA_Routing
+#### <a name="keyword_aba_routing"></a>Keyword_ABA_Routing
 
 - ABA
 - aba #
 - aba routing #
 - aba routing number
-- ABA
-- abarouting#
+- ABA #
+- abarouting #
 - aba number
 - abaroutingnumber
 - american bank association routing #
 - american bank association routing number
-- americanbankassociationrouting#
+- americanbankassociationrouting #
 - americanbankassociationroutingnumber
 - bank routing number
-- bankrouting#
+- bankrouting #
 - bankroutingnumber
 - routing transit number
 - RTN 
@@ -122,7 +122,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywordargentinanationalid"></a>Keyword_argentina_national_id
+#### <a name="keyword_argentina_national_id"></a>Keyword_argentina_national_id
 
 - Número de identidad nacional de Argentina 
 - Identidad 
@@ -180,7 +180,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywordaustraliabankaccountnumber"></a>Keyword_australia_bank_account_number
+#### <a name="keyword_australia_bank_account_number"></a>Keyword_australia_bank_account_number
 
 - swift bank code
 - correspondent bank
@@ -246,7 +246,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywordaustraliadriverslicensenumber"></a>Keyword_australia_drivers_license_number
+#### <a name="keyword_australia_drivers_license_number"></a>Keyword_australia_drivers_license_number
 
 - international driving permits
 - australian automobile association
@@ -279,40 +279,40 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - Driver's Lics
 - Driver's Licence
 - Driver's Licences
-- DriverLic#
-- DriverLics#
-- DriverLicence#
-- DriverLicences#
+- DriverLic #
+- DriverLics #
+- DriverLicence #
+- DriverLicences #
 - Driver Lic#
 - Driver Lics#
 - Driver Licence#
 - Driver Licences#
-- DriversLic#
-- DriversLics#
-- DriversLicence#
-- DriversLicences#
+- DriversLic #
+- DriversLics #
+- DriversLicence #
+- DriversLicences #
 - Drivers Lic#
 - Drivers Lics#
 - Drivers Licence#
 - Drivers Licences#
-- N.º carné
-- N.º carnés
-- N.º carné
-- N.º carnés
+- N.º carné #
+- N.º carnés #
+- N.º carné #
+- N.º carnés #
 - Driver' Lic#
 - Driver' Lics#
 - Driver' Licence#
 - Driver' Licences#
-- Driver'sLic#
-- Driver'sLics#
-- Driver'sLicence#
-- Driver'sLicences#
+- Driver'sLic #
+- Driver'sLics #
+- Driver'sLicence #
+- Driver'sLicences #
 - Driver's Lic#
 - Driver's Lics#
 - Driver's Licence#
 - Driver's Licences# 
 
-#### <a name="keywordaustraliadriverslicensenumberexclusions"></a>Keyword_australia_drivers_license_number_exclusions
+#### <a name="keyword_australia_drivers_license_number_exclusions"></a>Keyword_australia_drivers_license_number_exclusions
 
 - aaaa
 - DriverLicense
@@ -331,20 +331,20 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - Driver'sLicenses
 - Driver's License
 - Permisos de conducción
-- DriverLicense#
-- DriverLicenses#
+- DriverLicense #
+- DriverLicenses #
 - Driver License#
 - Driver Licenses#
-- DriversLicense#
-- DriversLicenses#
+- DriversLicense #
+- DriversLicenses #
 - Drivers License#
 - Drivers Licenses#
-- Conducción
-- Conducción
+- Conducción #
+- Conducción #
 - Driver' License#
 - Driver' Licenses#
-- Driver'sLicense#
-- Driver'sLicenses#
+- Driver'sLicense #
+- Driver'sLicenses #
 - Driver's License#
 - Driver's Licenses#
    
@@ -397,7 +397,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywordaustraliamedicalaccountnumber"></a>Keyword_Australia_Medical_Account_Number
+#### <a name="keyword_australia_medical_account_number"></a>Keyword_Australia_Medical_Account_Number
 
 - bank account details
 - medicare payments
@@ -445,12 +445,12 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywordpassport"></a>Keyword_passport
+#### <a name="keyword_passport"></a>Keyword_passport
 
 - Passport Number
 - Passport No
 - Passport #
-- Usuarios
+- Usuarios #
 - PassportID
 - Passportno
 - passportnumber
@@ -462,11 +462,11 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - Passeport n °
 - Passeport Non
 - Passeport #
-- Passeport#
+- Passeport #
 - PasseportNon
 - Passeportn °
 
-#### <a name="keywordaustraliapassportnumber"></a>Keyword_australia_passport_number
+#### <a name="keyword_australia_passport_number"></a>Keyword_australia_passport_number
 
 - usuarios
 - passport details
@@ -522,7 +522,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywordaustraliataxfilenumber"></a>Keyword_Australia_Tax_File_Number
+#### <a name="keyword_australia_tax_file_number"></a>Keyword_Australia_Tax_File_Number
 
 - australian business number
 - marginal tax rate
@@ -533,7 +533,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 - individual tax return
 - tax file number
 
-#### <a name="keywordnumberexclusions"></a>Keyword_number_exclusions
+#### <a name="keyword_number_exclusions"></a>Keyword_number_exclusions
 
 - 00000000
 - 11111111
@@ -604,7 +604,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+#### <a name="cep_commonexamplekeywords"></a>CEP_CommonExampleKeywords
 
 (Tenga en cuenta que técnicamente, este tipo de información confidencial identifica estas palabras clave mediante una expresión regular, no una lista de palabras clave).
 
@@ -664,7 +664,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+#### <a name="cep_commonexamplekeywords"></a>CEP_CommonExampleKeywords
 
 (Tenga en cuenta que técnicamente, este tipo de información confidencial identifica estas palabras clave mediante una expresión regular, no una lista de palabras clave).
 
@@ -724,7 +724,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+#### <a name="cep_commonexamplekeywords"></a>CEP_CommonExampleKeywords
 
 (Tenga en cuenta que técnicamente, este tipo de información confidencial identifica estas palabras clave mediante una expresión regular, no una lista de palabras clave).
 
@@ -775,7 +775,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+#### <a name="cep_commonexamplekeywords"></a>CEP_CommonExampleKeywords
 
 (Tenga en cuenta que técnicamente, este tipo de información confidencial identifica estas palabras clave mediante una expresión regular, no una lista de palabras clave).
 
@@ -830,7 +830,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+#### <a name="cep_commonexamplekeywords"></a>CEP_CommonExampleKeywords
 
 (Tenga en cuenta que técnicamente, este tipo de información confidencial identifica estas palabras clave mediante una expresión regular, no una lista de palabras clave).
 
@@ -924,7 +924,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+#### <a name="cep_commonexamplekeywords"></a>CEP_CommonExampleKeywords
 
 (Tenga en cuenta que técnicamente, este tipo de información confidencial identifica estas palabras clave mediante una expresión regular, no una lista de palabras clave).
 
@@ -984,13 +984,13 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="cepazureemulatorstorageaccountfilter"></a>CEP_AzureEmulatorStorageAccountFilter
+#### <a name="cep_azureemulatorstorageaccountfilter"></a>CEP_AzureEmulatorStorageAccountFilter
 
 (Tenga en cuenta que técnicamente, este tipo de información confidencial identifica estas palabras clave mediante una expresión regular, no una lista de palabras clave).
 
 - Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw = =
 
-#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+#### <a name="cep_commonexamplekeywords"></a>CEP_CommonExampleKeywords
 
 (Tenga en cuenta que técnicamente, este tipo de información confidencial identifica estas palabras clave mediante una expresión regular, no una lista de palabras clave).
 
@@ -1073,7 +1073,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywordbelgiumnationalnumber"></a>Keyword_belgium_national_number
+#### <a name="keyword_belgium_national_number"></a>Keyword_belgium_national_number
 
 - Identidad
 - Registro
@@ -1148,7 +1148,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywordbrazilcpf"></a>Keyword_brazil_cpf
+#### <a name="keyword_brazil_cpf"></a>Keyword_brazil_cpf
 
 - CPF
 - Determinación
@@ -1208,7 +1208,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywordbrazilcnpj"></a>Keyword_brazil_cnpj
+#### <a name="keyword_brazil_cnpj"></a>Keyword_brazil_cnpj
 
 - CNPJ 
 - CNPJ/MF 
@@ -1284,7 +1284,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywordbrazilrg"></a>Keyword_brazil_rg
+#### <a name="keyword_brazil_rg"></a>Keyword_brazil_rg
 
 Cédula de Identidade identidad nacional identificador número de rregistro registro de Iidentidade registro Geral RG (esta palabra clave distingue entre mayúsculas y minúsculas) RIC (esta palabra clave distingue entre mayúsculas y minúsculas) 
    
@@ -1337,7 +1337,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywordcanadabankaccountnumber"></a>Keyword_canada_bank_account_number
+#### <a name="keyword_canada_bank_account_number"></a>Keyword_canada_bank_account_number
 
 - canada savings bonds
 - canada revenue agency
@@ -1440,12 +1440,12 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywordprovincenamedriverslicensename"></a>Keyword_[province_name]_drivers_license_name
+#### <a name="keyword_province_name_drivers_license_name"></a>Keyword_[province_name]_drivers_license_name
 
 - La abreviatura de la provincia, por ejemplo, AB
 - El nombre de la provincia, por ejemplo, Alberta
 
-#### <a name="keywordcanadadriverslicense"></a>Keyword_canada_drivers_license
+#### <a name="keyword_canada_drivers_license"></a>Keyword_canada_drivers_license
 
 - LISTAS
 - DISTRIBUCIÓN
@@ -1516,52 +1516,52 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - identification card
 - identification cards
 - determinación 
-- LISTAS
-- DISTRIBUCIÓN 
-- CDL 
-- CDLS# 
-- DriverLic# 
-- DriverLics# 
-- DriverLicense# 
-- DriverLicenses# 
-- DriverLicence# 
-- DriverLicences# 
+- LISTAS #
+- DISTRIBUCIÓN # 
+- CDL # 
+- CDLS # 
+- DriverLic # 
+- DriverLics # 
+- DriverLicense # 
+- DriverLicenses # 
+- DriverLicence # 
+- DriverLicences # 
 - Driver Lic#
 - Driver Lics# 
 - Driver License# 
 - Driver Licenses# 
 - Driver License# 
 - Driver Licences# 
-- DriversLic# 
-- DriversLics# 
-- DriversLicense# 
-- DriversLicenses# 
-- DriversLicence# 
-- DriversLicences# 
+- DriversLic # 
+- DriversLics # 
+- DriversLicense # 
+- DriversLicenses # 
+- DriversLicence # 
+- DriversLicences # 
 - Drivers Lic# 
 - Drivers Lics# 
 - Drivers License# 
 - Drivers Licenses# 
 - Drivers Licence# 
 - Drivers Licences# 
-- N.º carné 
-- N.º carnés 
-- Conducción 
-- Conducción 
-- N.º carné 
-- N.º carnés 
+- N.º carné # 
+- N.º carnés # 
+- Conducción # 
+- Conducción # 
+- N.º carné # 
+- N.º carnés # 
 - Driver' Lic# 
 - Driver' Lics# 
 - Driver' License# 
 - Driver' Licenses# 
 - Driver' Licence# 
 - Driver' Licences# 
-- Driver'sLic# 
-- Driver'sLics# 
-- Driver'sLicense# 
-- Driver'sLicenses# 
-- Driver'sLicence# 
-- Driver'sLicences# 
+- Driver'sLic # 
+- Driver'sLics # 
+- Driver'sLicense # 
+- Driver'sLicenses # 
+- Driver'sLicence # 
+- Driver'sLicences # 
 - Driver's Lic# 
 - Driver's Lics# 
 - Driver's License# 
@@ -1569,14 +1569,14 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - Driver's Licence# 
 - Driver's Licences# 
 - Permis de Conduire# 
-- identificador 
-- falta 
+- identificador # 
+- falta # 
 - idcard card# 
 - idcard cards# 
-- tarjeta 
+- tarjeta # 
 - identification card# 
 - identification cards# 
-- determinación 
+- determinación # 
    
 ## <a name="canada-health-service-number"></a>Número de servicio de salud de Canadá
 
@@ -1612,7 +1612,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywordcanadahealthservicenumber"></a>Keyword_canada_health_service_number
+#### <a name="keyword_canada_health_service_number"></a>Keyword_canada_health_service_number
 
 - personal health number
 - patient information
@@ -1659,7 +1659,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywordcanadapassportnumber"></a>Keyword_canada_passport_number
+#### <a name="keyword_canada_passport_number"></a>Keyword_canada_passport_number
 
 - canadian citizenship
 - canadian passport
@@ -1670,12 +1670,12 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - processing times
 - renewal application
 
-#### <a name="keywordpassport"></a>Keyword_passport
+#### <a name="keyword_passport"></a>Keyword_passport
 
 - Passport Number
 - Passport No
 - Passport #
-- Usuarios
+- Usuarios #
 - PassportID
 - Passportno
 - passportnumber
@@ -1687,7 +1687,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - Passeport n °
 - Passeport Non
 - Passeport #
-- Passeport#
+- Passeport #
 - PasseportNon
 - Passeportn °
    
@@ -1725,7 +1725,7 @@ Se encuentran al menos dos palabras clave de Keyword_canada_phin o Keyword_canad
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywordcanadaphin"></a>Keyword_canada_phin
+#### <a name="keyword_canada_phin"></a>Keyword_canada_phin
 
 - social insurance number
 - health information act
@@ -1743,7 +1743,7 @@ Se encuentran al menos dos palabras clave de Keyword_canada_phin o Keyword_canad
 - patient referral
 - health and wellness
 
-#### <a name="keywordcanadaprovinces"></a>Keyword_canada_provinces
+#### <a name="keyword_canada_provinces"></a>Keyword_canada_provinces
 
 - Nunavut
 - Quebec
@@ -1816,7 +1816,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywordsin"></a>Keyword_sin
+#### <a name="keyword_sin"></a>Keyword_sin
 
 - sin 
 - social insurance 
@@ -1828,11 +1828,11 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - numero d'assurance social 
 - national identification number 
 - national id 
-- PIN 
+- PIN # 
 - soc ins 
 - social ins 
 
-#### <a name="keywordsincollaborative"></a>Keyword_sin_collaborative
+#### <a name="keyword_sin_collaborative"></a>Keyword_sin_collaborative
 
 - driver's license 
 - drivers license 
@@ -1890,7 +1890,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywordchileidcard"></a>Keyword_chile_id_card
+#### <a name="keyword_chile_id_card"></a>Keyword_chile_id_card
 
 - Número de identificación nacional 
 - tarjeta de identidad 
@@ -1949,7 +1949,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-### <a name="keywordchinaresidentid"></a>Keyword_china_resident_id
+### <a name="keyword_china_resident_id"></a>Keyword_china_resident_id
 
 - Tarjeta de identidad de residente 
 - China 
@@ -2009,7 +2009,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywordccverification"></a>Keyword_cc_verification
+#### <a name="keyword_cc_verification"></a>Keyword_cc_verification
 
 - card verification
 - card identification number
@@ -2075,7 +2075,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 - vencimento
 - Venc 
 
-#### <a name="keywordccname"></a>Keyword_cc_name
+#### <a name="keyword_cc_name"></a>Keyword_cc_name
 
 - AMEX
 - american express
@@ -2097,7 +2097,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 - carte blanche
 - carteblanche
 - credit card
-- CC
+- CC #
 - # CC:
 - expiration date
 - exp date
@@ -2238,7 +2238,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywordcroatiaidcard"></a>Keyword_croatia_id_card
+#### <a name="keyword_croatia_id_card"></a>Keyword_croatia_id_card
 
 - Tarjeta de identidad croata
 - Osobna iskaznica
@@ -2286,7 +2286,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywordcroatiaoibnumber"></a>Keyword_croatia_oib_number
+#### <a name="keyword_croatia_oib_number"></a>Keyword_croatia_oib_number
 
 - Número de identificación personal
 - Osobni identifikacijski broj 
@@ -2378,7 +2378,7 @@ Se supera la suma de comprobación.
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keyworddenmarkid"></a>Keyword_denmark_id
+#### <a name="keyword_denmark_id"></a>Keyword_denmark_id
 
 - Número de identificación personal
 - RCP
@@ -2466,15 +2466,15 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywordeudebitcard"></a>Keyword_eu_debit_card
+#### <a name="keyword_eu_debit_card"></a>Keyword_eu_debit_card
 
 - account number 
 - card number 
 - card no. 
 - security number 
-- CC 
+- CC # 
 
-#### <a name="keywordcardtermsdict"></a>Keyword_card_terms_dict
+#### <a name="keyword_card_terms_dict"></a>Keyword_card_terms_dict
 
 - acct nbr 
 - acct num 
@@ -2655,7 +2655,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 - visum 
 - vpay   
 
-#### <a name="keywordcardsecuritytermsdict"></a>Keyword_card_security_terms_dict
+#### <a name="keyword_card_security_terms_dict"></a>Keyword_card_security_terms_dict
 
 - card identification number
 - card verification 
@@ -2727,7 +2727,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 - veiligheidsnummer 
 - verfalldatum 
 
-#### <a name="keywordcardexpirationtermsdict"></a>Keyword_card_expiration_terms_dict
+#### <a name="keyword_card_expiration_terms_dict"></a>Keyword_card_expiration_terms_dict
 
 - ablauf 
 - data de expiracao 
@@ -2880,7 +2880,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywordfrenchdriverslicense"></a>Keyword_french_drivers_license
+#### <a name="keyword_french_drivers_license"></a>Keyword_french_drivers_license
 
 - drivers licence
 - drivers license
@@ -2959,12 +2959,12 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywordpassport"></a>Keyword_passport
+#### <a name="keyword_passport"></a>Keyword_passport
 
 - Passport Number
 - Passport No
 - Passport #
-- Usuarios
+- Usuarios #
 - PassportID
 - Passportno
 - passportnumber
@@ -2976,7 +2976,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - Passeport n °
 - Passeport Non
 - Passeport #
-- Passeport#
+- Passeport #
 - PasseportNon
 - Passeportn °
 
@@ -3032,7 +3032,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywordfrinsee"></a>Keyword_fr_insee
+#### <a name="keyword_fr_insee"></a>Keyword_fr_insee
 
 - INSEE
 - securité sociale
@@ -3101,7 +3101,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywordgermandriverslicensenumber"></a>Keyword_german_drivers_license_number
+#### <a name="keyword_german_drivers_license_number"></a>Keyword_german_drivers_license_number
 
 - Führerschein
 - Fuhrerschein
@@ -3169,7 +3169,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - Driving Licence 
 - Driving Licences
 
-#### <a name="keywordgermandriverslicensecollaborative"></a>Keyword_german_drivers_license_collaborative
+#### <a name="keyword_german_drivers_license_collaborative"></a>Keyword_german_drivers_license_collaborative
 
 - Nr-Führerschein 
 - Nr-Fuhrerschein 
@@ -3190,7 +3190,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - N-Fuhrerschein 
 - N-fuehrerschein 
 
-#### <a name="keywordgermandriverslicense"></a>Keyword_german_drivers_license
+#### <a name="keyword_german_drivers_license"></a>Keyword_german_drivers_license
 
 - ausstellungsdatum
 - ausstellungsort
@@ -3256,7 +3256,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywordgermanpassport"></a>Keyword_german_passport
+#### <a name="keyword_german_passport"></a>Keyword_german_passport
 
 - reisepass
 - reisepasse
@@ -3264,21 +3264,21 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - usuarios
 - passports
 
-#### <a name="keywordgermanpassportcollaborative"></a>Keyword_german_passport_collaborative
+#### <a name="keyword_german_passport_collaborative"></a>Keyword_german_passport_collaborative
 
 - geburtsdatum
 - ausstellungsdatum
 - ausstellungsort
 
-#### <a name="keywordgermanpassportnumber"></a>Keyword_german_passport_number
+#### <a name="keyword_german_passport_number"></a>Keyword_german_passport_number
 
 No-Reisepass NR-Reisepass
 
-#### <a name="keywordgermanpassport1"></a>Keyword_german_passport1
+#### <a name="keyword_german_passport1"></a>Keyword_german_passport1
 
 Reisepass-NR
 
-#### <a name="keywordgermanpassport2"></a>Keyword_german_passport2
+#### <a name="keyword_german_passport2"></a>Keyword_german_passport2
 
 bnationalit. t
    
@@ -3321,7 +3321,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywordgermanyidcard"></a>Keyword_germany_id_card
+#### <a name="keyword_germany_id_card"></a>Keyword_germany_id_card
 
 - tarjeta de identidad
 - ID
@@ -3371,7 +3371,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywordgreeceidcard"></a>Keyword_greece_id_card
+#### <a name="keyword_greece_id_card"></a>Keyword_greece_id_card
 
 - Tarjeta de identidad griega
 - Tautotita
@@ -3421,7 +3421,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywordhongkongidcard"></a>Keyword_hong_kong_id_card
+#### <a name="keyword_hong_kong_id_card"></a>Keyword_hong_kong_id_card
 
 - tarjeta de identidad de Hong Kong
 - HKIDC
@@ -3496,7 +3496,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywordindiapermanentaccountnumber"></a>Keyword_india_permanent_account_number
+#### <a name="keyword_india_permanent_account_number"></a>Keyword_india_permanent_account_number
 
 - Número de cuenta permanente 
 - MANO 
@@ -3533,7 +3533,7 @@ Se supera la suma de comprobación.
 
 ### <a name="keywords"></a>Palabras clave
    
-#### <a name="keywordindiaaadhar"></a>Keyword_india_aadhar
+#### <a name="keyword_india_aadhar"></a>Keyword_india_aadhar
 - Aadhar
 - Aadhaar
 - UID
@@ -3585,7 +3585,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
    
-#### <a name="keywordindonesiaidcard"></a>Keyword_indonesia_id_card
+#### <a name="keyword_indonesia_id_card"></a>Keyword_indonesia_id_card
 
 - KTP
 - Kartu Tanda Penduduk 
@@ -3690,7 +3690,7 @@ Para IPv6, una directiva DLP está segura al 95% de que este tipo de informació
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywordipaddress"></a>Keyword_ipaddress
+#### <a name="keyword_ipaddress"></a>Keyword_ipaddress
 
 - IP (esta palabra clave distingue entre mayúsculas y minúsculas)
 - dirección IP 
@@ -3818,7 +3818,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywordirelandpps"></a>Keyword_ireland_pps
+#### <a name="keyword_ireland_pps"></a>Keyword_ireland_pps
 
 - Número de servicio público personal 
 - Número de PPS 
@@ -3826,7 +3826,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
  
 - N.º PPS 
 - N.ro PPS 
-- PPS 
+- PPS # 
 - PPSN 
 - Tarjeta de servicios públicos 
 - Uimhir Phearsanta Seirbhíse Poiblí 
@@ -3875,7 +3875,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywordisraelbankaccountnumber"></a>Keyword_israel_bank_account_number
+#### <a name="keyword_israel_bank_account_number"></a>Keyword_israel_bank_account_number
 
 - Número de cuenta bancaria 
 - Cuenta bancaria 
@@ -3917,7 +3917,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywordisraelnationalid"></a>Keyword_Israel_National_ID
+#### <a name="keyword_israel_national_id"></a>Keyword_Israel_National_ID
 
 - מספר זהות 
 - National ID Number
@@ -3960,7 +3960,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keyworditalydriverslicensenumber"></a>Keyword_italy_drivers_license_number
+#### <a name="keyword_italy_drivers_license_number"></a>Keyword_italy_drivers_license_number
 
 - numero di patente di guida 
 - patente di guida 
@@ -4019,7 +4019,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywordjpbankaccount"></a>Keyword_jp_bank_account
+#### <a name="keyword_jp_bank_account"></a>Keyword_jp_bank_account
 
 - Checking Account Number 
 - Checking Account 
@@ -4076,7 +4076,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - デビットACCTの番号 
 - デビット口座番号 
 
-#### <a name="keywordjpbankbranchcode"></a>Keyword_jp_bank_branch_code
+#### <a name="keyword_jp_bank_branch_code"></a>Keyword_jp_bank_branch_code
 
 Otemachi
 
@@ -4112,11 +4112,11 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywordjpdriverslicensenumber"></a>Keyword_jp_drivers_license_number
+#### <a name="keyword_jp_drivers_license_number"></a>Keyword_jp_drivers_license_number
 
-- listas 
+- listas # 
 - LISTAS 
-- distribución 
+- distribución # 
 - DISTRIBUCIÓN 
 - driver license 
 - driver licenses 
@@ -4125,9 +4125,9 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - drivers licenses 
 - driver's licenses 
 - driving licence 
+- Lic # 
 - Lic 
-- Lic 
-- conducción 
+- conducción # 
 - state id 
 - state identification 
 - state identification number 
@@ -4172,7 +4172,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywordjppassport"></a>Keyword_jp_passport
+#### <a name="keyword_jp_passport"></a>Keyword_jp_passport
 
 - パスポート 
 - パスポート番号 
@@ -4211,7 +4211,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywordjpresidentregistrationnumber"></a>Keyword_jp_resident_registration_number
+#### <a name="keyword_jp_resident_registration_number"></a>Keyword_jp_resident_registration_number
 
 - Resident Registration Number
 - Resident Register Number 
@@ -4270,7 +4270,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywordjpsin"></a>Keyword_jp_sin
+#### <a name="keyword_jp_sin"></a>Keyword_jp_sin
 
 - Social Insurance No. 
 - Social Insurance Num 
@@ -4313,11 +4313,11 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywordjpresidencecardnumber"></a>Keyword_jp_residence_card_number
+#### <a name="keyword_jp_residence_card_number"></a>Keyword_jp_residence_card_number
 
 - Número de tarjeta de residencia
 - Nº de tarjeta de residencia
-- Número de tarjeta de residencia
+- Tarjeta de residencia #
 - 在留カード番号
    
 ## <a name="malaysia-id-card-number"></a>Número de la tarjeta de identificación de Malasia
@@ -4359,7 +4359,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
    
-#### <a name="keywordmalaysiaidcardnumber"></a>Keyword_malaysia_id_card_number
+#### <a name="keyword_malaysia_id_card_number"></a>Keyword_malaysia_id_card_number
 
 - tarjeta de aplicación digital
 - i/c
@@ -4426,7 +4426,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywordnetherlandsbsn"></a>Keyword_netherlands_bsn
+#### <a name="keyword_netherlands_bsn"></a>Keyword_netherlands_bsn
 
 - Número de servicio de ciudadanía 
 - BSN 
@@ -4520,7 +4520,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywordnorwayidnumber"></a>Keyword_norway_id_number
+#### <a name="keyword_norway_id_number"></a>Keyword_norway_id_number
 
 - Número de identificación personal
 - Número de id. noruego
@@ -4567,7 +4567,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
    
-#### <a name="keywordphilippinesid"></a>Keyword_philippines_id
+#### <a name="keyword_philippines_id"></a>Keyword_philippines_id
 
 - Id. universal unificado
  
@@ -4607,7 +4607,7 @@ Se supera la suma de comprobación.
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywordpolishnationalidpassportnumber"></a>Keyword_polish_national_id_passport_number
+#### <a name="keyword_polish_national_id_passport_number"></a>Keyword_polish_national_id_passport_number
 
 - Dowód osobisty
 - Numerar dowodu osobistego
@@ -4651,7 +4651,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywordpeselidentificationnumber"></a>Keyword_pesel_identification_number
+#### <a name="keyword_pesel_identification_number"></a>Keyword_pesel_identification_number
 
 - Nr PESEL
 - PESEL   
@@ -4691,7 +4691,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywordpolishnationalidpassportnumber"></a>Keyword_polish_national_id_passport_number
+#### <a name="keyword_polish_national_id_passport_number"></a>Keyword_polish_national_id_passport_number
 
 - Números paszportu
 - Nº. Paszportu
@@ -4730,7 +4730,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywordportugalcitizencard"></a>Keyword_portugal_citizen_card
+#### <a name="keyword_portugal_citizen_card"></a>Keyword_portugal_citizen_card
 
 - Tarjeta del ciudadano
 - Tarjeta de id. nacional
@@ -4772,7 +4772,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywordsaudiarabianationalid"></a>Keyword_saudi_arabia_national_id
+#### <a name="keyword_saudi_arabia_national_id"></a>Keyword_saudi_arabia_national_id
 
 - Identification Card 
 - I card number 
@@ -4823,7 +4823,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
    
-#### <a name="keywordsingaporenric"></a>Keyword_singapore_nric
+#### <a name="keyword_singapore_nric"></a>Keyword_singapore_nric
 
 - Tarjeta de identidad de registro nacional 
 - Número de tarjeta de identidad 
@@ -4872,7 +4872,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
    
-#### <a name="keywordsouthafricaidentificationnumber"></a>Keyword_south_africa_identification_number
+#### <a name="keyword_south_africa_identification_number"></a>Keyword_south_africa_identification_number
 
 - tarjeta de identidad
 - ID
@@ -4924,7 +4924,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
    
-#### <a name="keywordsouthkorearesidentnumber"></a>Keyword_south_korea_resident_number
+#### <a name="keyword_south_korea_resident_number"></a>Keyword_south_korea_resident_number
 
 - Tarjeta de id. nacional 
 - Número de registro de ciudadano 
@@ -5014,14 +5014,14 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="cepglobalfilter"></a>CEP_GlobalFilter
+#### <a name="cep_globalfilter"></a>CEP_GlobalFilter
 
 - Some-Password
 - somepassword
 - secretPassword
 - AdventureWorks
 
-#### <a name="ceppasswordplaceholder"></a>CEP_PasswordPlaceHolder
+#### <a name="cep_passwordplaceholder"></a>CEP_PasswordPlaceHolder
 
 (Tenga en cuenta que técnicamente, este tipo de información confidencial identifica estas palabras clave mediante una expresión regular, no una lista de palabras clave).
 
@@ -5032,7 +5032,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
     - Cualquier combinación de 1-200 caracteres que estén en mayúsculas o minúsculas, dígitos, un asterisco (*), un guión (-), un subrayado (_) o un carácter de espacio en blanco
     - Símbolo mayor que (>)
 
-#### <a name="cepcommonexamplekeywords"></a>CEP_CommonExampleKeywords
+#### <a name="cep_commonexamplekeywords"></a>CEP_CommonExampleKeywords
 
 (Tenga en cuenta que técnicamente, este tipo de información confidencial identifica estas palabras clave mediante una expresión regular, no una lista de palabras clave).
 
@@ -5120,7 +5120,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
    
-#### <a name="keywordswedenpassport"></a>Keyword_sweden_passport
+#### <a name="keyword_sweden_passport"></a>Keyword_sweden_passport
 
 - visa requirements 
 - Alien Registration Card 
@@ -5132,12 +5132,12 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - Multiple Entry 
 - G3 Processing Fees 
 
-#### <a name="keywordpassport"></a>Keyword_passport
+#### <a name="keyword_passport"></a>Keyword_passport
 
 - Passport Number 
 - Passport No 
 - Passport # 
-- Usuarios 
+- Usuarios # 
 - PassportID 
 - Passportno 
 - passportnumber 
@@ -5149,7 +5149,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - Passeport n ° 
 - Passeport Non 
 - Passeport # 
-- Passeport# 
+- Passeport # 
 - PasseportNon 
 - Passeportn ° 
    
@@ -5189,7 +5189,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
    
-#### <a name="keywordswift"></a>Keyword_swift
+#### <a name="keyword_swift"></a>Keyword_swift
 
 - international organization for standardization 9362 
 - iso 9362 
@@ -5259,7 +5259,7 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywordtaiwanesenationalid"></a>Keyword_taiwanese_national_id
+#### <a name="keyword_taiwanese_national_id"></a>Keyword_taiwanese_national_id
 
 - 身份證字號 
 - 身份證 
@@ -5313,7 +5313,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywordtaiwanpassport"></a>Keyword_taiwan_passport
+#### <a name="keyword_taiwan_passport"></a>Keyword_taiwan_passport
 
 - Número de pasaporte ROC 
 - Número de pasaporte 
@@ -5359,7 +5359,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywordtaiwanresidentcertificate"></a>Keyword_taiwan_resident_certificate
+#### <a name="keyword_taiwan_resident_certificate"></a>Keyword_taiwan_resident_certificate
 
 - Certificado de residente 
 - Cert. residente
@@ -5415,7 +5415,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywordthaicitizenid"></a>Keyword_Thai_Citizen_Id
+#### <a name="keyword_thai_citizen_id"></a>Keyword_Thai_Citizen_Id
 
 - Número de id.
 - Número de identificación
@@ -5462,7 +5462,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywordturkishnationalid"></a>Keyword_Turkish_National_Id
+#### <a name="keyword_turkish_national_id"></a>Keyword_Turkish_National_Id
 
 - TC Kimlik no
 - TC Kimlik numarası
@@ -5507,7 +5507,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywordukdriverslicense"></a>Keyword_uk_drivers_license
+#### <a name="keyword_uk_drivers_license"></a>Keyword_uk_drivers_license
 
 - DVLA 
 - light vans 
@@ -5559,7 +5559,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywordukelectoral"></a>Keyword_uk_electoral
+#### <a name="keyword_uk_electoral"></a>Keyword_uk_electoral
 
 - council nomination 
 - nomination form 
@@ -5612,21 +5612,21 @@ Una directiva DLP está segura al 85% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
    
-#### <a name="keyworduknhsnumber"></a>Keyword_uk_nhs_number
+#### <a name="keyword_uk_nhs_number"></a>Keyword_uk_nhs_number
 
 - national health service 
 - del NHS del 
 - health services authority 
 - health authority
 
-#### <a name="keyworduknhsnumber1"></a>Keyword_uk_nhs_number1
+#### <a name="keyword_uk_nhs_number1"></a>Keyword_uk_nhs_number1
 
 - patient id 
 - patient identification 
 - patient no 
 - patient number
 
-#### <a name="keyworduknhsnumberdob"></a>Keyword_uk_nhs_number_dob
+#### <a name="keyword_uk_nhs_number_dob"></a>Keyword_uk_nhs_number_dob
 
 - EON 
 - NACIMIENTO 
@@ -5694,7 +5694,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keyworduknino"></a>Keyword_uk_nino
+#### <a name="keyword_uk_nino"></a>Keyword_uk_nino
 
 - national insurance number 
 - national insurance contributions 
@@ -5740,12 +5740,12 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywordpassport"></a>Keyword_passport
+#### <a name="keyword_passport"></a>Keyword_passport
 
 - Passport Number 
 - Passport No 
 - Passport # 
-- Usuarios 
+- Usuarios # 
 - PassportID 
 - Passportno 
 - passportnumber 
@@ -5757,7 +5757,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - Passeport n ° 
 - Passeport Non 
 - Passeport # 
-- Passeport# 
+- Passeport # 
 - PasseportNon 
 - Passeportn ° 
    
@@ -5793,7 +5793,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywordusabankaccount"></a>Keyword_usa_Bank_Account
+#### <a name="keyword_usa_bank_account"></a>Keyword_usa_Bank_Account
 
 - Checking Account Number 
 - Checking Account 
@@ -5870,7 +5870,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywordusdriverslicenseabbreviations"></a>Keyword_us_drivers_license_abbreviations
+#### <a name="keyword_us_drivers_license_abbreviations"></a>Keyword_us_drivers_license_abbreviations
 
 - LISTAS 
 - DISTRIBUCIÓN 
@@ -5878,18 +5878,18 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 - CDLS 
 - ID 
 - Falta 
-- LISTAS 
-- DISTRIBUCIÓN 
-- CDL 
-- CDLS# 
-- IDENTIFICADOR
-- Falta 
+- LISTAS # 
+- DISTRIBUCIÓN # 
+- CDL # 
+- CDLS # 
+- IDENTIFICADOR #
+- Falta # 
 - ID number 
 - ID numbers 
 - LIC 
-- Lic 
+- LIC # 
 
-#### <a name="keywordusdriverslicense"></a>Keyword_us_drivers_license
+#### <a name="keyword_us_drivers_license"></a>Keyword_us_drivers_license
 
 - DriverLic 
 - DriverLics 
@@ -5930,34 +5930,34 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 - id cards 
 - identification card 
 - identification cards 
-- DriverLic# 
-- DriverLics# 
-- DriverLicense# 
-- DriverLicenses# 
+- DriverLic # 
+- DriverLics # 
+- DriverLicense # 
+- DriverLicenses # 
 - Driver Lic# 
 - Driver Lics# 
 - Driver License# 
 - Driver Licenses# 
-- DriversLic# 
-- DriversLics# 
-- DriversLicense# 
-- DriversLicenses# 
+- DriversLic # 
+- DriversLics # 
+- DriversLicense # 
+- DriversLicenses # 
 - Drivers Lic# 
 - Drivers Lics# 
 - Drivers License# 
 - Drivers Licenses# 
-- N.º carné 
-- N.º carnés 
-- Conducción 
-- Conducción 
+- N.º carné # 
+- N.º carnés # 
+- Conducción # 
+- Conducción # 
 - Driver' Lic# 
 - Driver' Lics# 
 - Driver' License# 
 - Driver' Licenses# 
-- Driver'sLic# 
-- Driver'sLics# 
-- Driver'sLicense# 
-- Driver'sLicenses# 
+- Driver'sLic # 
+- Driver'sLics # 
+- Driver'sLicense # 
+- Driver'sLicenses # 
 - Driver's Lic# 
 - Driver's Lics# 
 - Driver's License# 
@@ -5968,7 +5968,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 - identification cards# 
 
 
-#### <a name="keywordstatenamedriverslicensename"></a>Keyword_[state_name]_drivers_license_name
+#### <a name="keyword_state_name_drivers_license_name"></a>Keyword_[state_name]_drivers_license_name
 
 - Abreviatura del estado (por ejemplo, "NY") 
 - Nombre del estado (por ejemplo, "New York")    
@@ -6043,7 +6043,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keyworditin"></a>Keyword_itin
+#### <a name="keyword_itin"></a>Keyword_itin
 
 - contribuyente 
 - tax id 
@@ -6057,7 +6057,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 - taxi 
 - individual taxpayer 
 
-#### <a name="keyworditincollaborative"></a>Keyword_itin_collaborative
+#### <a name="keyword_itin_collaborative"></a>Keyword_itin_collaborative
 
 - Licencia 
 - LISTAS 
@@ -6138,15 +6138,15 @@ Una directiva DLP está segura al 55% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywordssn"></a>Keyword_ssn
+#### <a name="keyword_ssn"></a>Keyword_ssn
 
 - Social Security 
 - Social Security# 
 - Soc Sec 
 - SSN 
 - SSN 
-- SSN 
-- SS 
+- SSN # 
+- SS # 
 - SSID 
    
 

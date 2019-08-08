@@ -1,7 +1,7 @@
 ---
 title: Introducción a la directiva predeterminada de DLP
-ms.author: deniseb
-author: denisebmsft
+ms.author: chrfox
+author: chrfox
 manager: laurawi
 ms.date: 8/10/2017
 audience: Admin
@@ -15,12 +15,12 @@ ms.assetid: e0ada764-6422-4b44-9472-513bed04837b
 ms.collection:
 - M365-security-compliance
 description: Antes de crear la primera Directiva de prevención de pérdida de datos (DLP), DLP ayuda a proteger la información confidencial con una directiva predeterminada. Esta directiva predeterminada y su recomendación (que se muestra a continuación) ayudan a mantener seguro el contenido confidencial mediante una notificación cuando el correo electrónico o los documentos que contienen un número de tarjeta de crédito se han compartido con alguien ajeno a la organización.
-ms.openlocfilehash: a14e2c9c1f833552c11e55ec76f6f804e0311479
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: 32e5fef1cbfb8fe13928100dbfdae0d620e79762
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077926"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36230504"
 ---
 # <a name="get-started-with-the-default-dlp-policy"></a>Introducción a la directiva predeterminada de DLP
 

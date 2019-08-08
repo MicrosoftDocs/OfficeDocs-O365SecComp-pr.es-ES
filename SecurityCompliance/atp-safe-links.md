@@ -1,7 +1,7 @@
 ---
 title: Vínculos seguros de Protección contra amenazas avanzada de Office 365
-ms.author: deniseb
-author: denisebmsft
+ms.author: tracyp
+author: MSFTTracyP
 manager: dansimp
 audience: Admin
 ms.date: 05/17/2019
@@ -22,12 +22,12 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: La característica de vínculos seguros proporciona la comprobación del tiempo de clic de los hipervínculos en los documentos de Office y en los mensajes de correo electrónico. Use vínculos seguros para proteger a su organización del phishing y otros ataques.
-ms.openlocfilehash: 34d1ebbc5e0434de55f9e5f74a000bc8978e603e
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: bb6a4c94f72e24ff4cf3baee337bc7c14953a399
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35598546"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36231104"
 ---
 # <a name="office-365-atp-safe-links"></a>Vínculos seguros de Protección contra amenazas avanzada de Office 365
 

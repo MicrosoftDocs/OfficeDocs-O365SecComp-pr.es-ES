@@ -1,7 +1,7 @@
 ---
 title: Solución de problemas de obstáculos para la información
-ms.author: deniseb
-author: denisebmsft
+ms.author: chrfox
+author: chrfox
 manager: laurawi
 ms.date: 07/08/2019
 audience: ITPro
@@ -11,12 +11,12 @@ ms.collection:
 - M365-security-compliance
 localization_priority: None
 description: Use este artículo como guía para solucionar problemas con las barreras de la información.
-ms.openlocfilehash: 251fc1775318e2ed7cbda9a56e2c82db527082f6
-ms.sourcegitcommit: a6f046f1529b0515f4f0e918a19ec83f4138b871
+ms.openlocfilehash: 47549029ffbaa5ead028c18e97850b30f8072011
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "35587059"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36230544"
 ---
 # <a name="troubleshooting-information-barriers"></a>Solución de problemas de obstáculos para la información
 

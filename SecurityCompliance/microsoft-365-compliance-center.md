@@ -1,7 +1,7 @@
 ---
 title: Información general sobre el nuevo centro de cumplimiento de Microsoft 365
-ms.author: deniseb
-author: denisebmsft
+ms.author: robmazz
+author: robmazz
 manager: laurawi
 ms.date: 05/29/2019
 audience: ITPro
@@ -9,12 +9,12 @@ ms.topic: article
 ms.service: o365-seccomp
 localization_priority: Normal
 description: Obtenga información sobre el nuevo centro de cumplimiento de Microsoft 365, incluido lo que contiene, cómo obtenerlo y los pasos siguientes.
-ms.openlocfilehash: ec7dff8d230bc3b9e7ab1fd4a9348a1b8eb0ca9b
-ms.sourcegitcommit: 73dcdafb15b462223d1a670c781db260eb73c2f5
+ms.openlocfilehash: 13caad70328322505557ea2e8deac902ae1fc9a6
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36048232"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36231134"
 ---
 # <a name="overview-of-the-all-new-microsoft-365-compliance-center"></a>Información general sobre el nuevo centro de cumplimiento de Microsoft 365
 

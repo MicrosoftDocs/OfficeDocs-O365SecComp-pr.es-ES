@@ -3,7 +3,7 @@ title: Vistas en el explorador de amenazas y detecciones en tiempo real
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 03/18/2019
+ms.date: 08/07/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,12 +12,12 @@ search.appverid: ''
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre los distintos tipos de vistas disponibles en el explorador de amenazas y las detecciones en tiempo real.
-ms.openlocfilehash: 71ec20daae45bee8385f24091850ea6223399eae
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 82476f9af3b703904fff40c8347f2848cf919dfc
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35600823"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36230394"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>Vistas en el explorador de amenazas y detecciones en tiempo real
 
@@ -72,9 +72,9 @@ Cuando se selecciona un elemento de la lista, como una dirección URL detectada,
 
 ![Detalles sobre una dirección URL detectada](media/ThreatExplorerEmailPhishURLDetails.png)
 
-## <a name="email--user-reported"></a>Correo electrónico > notificado por el usuario
+## <a name="email--submissions"></a>Envíos de > de correo electrónico
 
-Para ver este informe, en el explorador (o en detecciones en tiempo real), elija **Ver** > **correo electrónico** > **del usuario notificado**. Esta vista muestra el correo electrónico que los usuarios han notificado como correo electrónico no deseado, no deseado o de suplantación de identidad. 
+Para ver este informe, en explorador (o detecciones en tiempo real), elija **Ver** > envíos de**correo electrónico** > ****. Esta vista muestra el correo electrónico que los usuarios han notificado como correo electrónico no deseado, no deseado o de suplantación de identidad. 
 
 ![Mensajes de correo electrónico notificados por los usuarios](media/ThreatExplorerEmailUserReportedViewOptions.png) 
 
@@ -135,7 +135,7 @@ La capacidad de filtrar en un clic y navegar a detalles específicos puede ahorr
 
 ## <a name="queries-and-filters"></a>Consultas y filtros
 
-El explorador (y el informe de detecciones en tiempo real) tienen varios filtros y capacidades de consulta eficaces que le permiten profundizar en los detalles, como los usuarios de destino más importantes, las familias de malware principales, la tecnología de detección y mucho más. Cada tipo de informe ofrece varias formas de ver y explorar los datos.
+El explorador (así como el informe de detecciones en tiempo real) tiene varios filtros y capacidades de consulta eficaces que le permiten profundizar en los detalles, como los usuarios de destino más importantes, las familias de malware principales, la tecnología de detección y mucho más. Cada tipo de informe ofrece varias formas de ver y explorar los datos.
 
 > [!IMPORTANT]
-> No use caracteres comodín, como un asterisco (*) o un signo de interrogación (?), en la barra de consulta para el explorador (o detecciones en tiempo real). Al buscar mensajes de correo electrónico en el campo Subject, el explorador (o detecciones en tiempo real) realizará una coincidencia parcial y los resultados de rendimiento similares a una búsqueda comodín.
+> No use caracteres comodín, como un asterisco o un signo de interrogación, en la barra de consulta para exploradores (o detecciones en tiempo real). Al buscar mensajes de correo electrónico en el **campo Subject** , el explorador (o detecciones en tiempo real) realizará una coincidencia parcial y los resultados de rendimiento similares a una búsqueda comodín.

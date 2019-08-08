@@ -1,7 +1,7 @@
 ---
 title: Configurar directivas de vínculos seguros de Office 365 ATP
-ms.author: deniseb
-author: denisebmsft
+ms.author: tracyp
+author: msfttracyp
 manager: dansimp
 audience: Admin
 ms.topic: article
@@ -15,12 +15,12 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 description: Configure las directivas de vínculos seguros para proteger a su organización de vínculos malintencionados en archivos de Word, Excel, PowerPoint y Visio, así como en mensajes de correo electrónico.
-ms.openlocfilehash: 0acee8ee333c8a8f81ed624c52287c412a25ccbb
-ms.sourcegitcommit: 73dcdafb15b462223d1a670c781db260eb73c2f5
+ms.openlocfilehash: d84c57d1f21ea835d5a29e59a4efe4a11ff876c0
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36048082"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36230344"
 ---
 # <a name="set-up-office-365-atp-safe-links-policies"></a>Configurar directivas de vínculos seguros de Office 365 ATP
 

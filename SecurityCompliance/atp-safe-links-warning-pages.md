@@ -1,7 +1,7 @@
 ---
 title: Páginas de advertencia de vínculos seguros de ATP de Office 365
-ms.author: deniseb
-author: denisebmsft
+ms.author: tracyp
+author: MSFTTracyP
 manager: dansimp
 audience: ITPro
 ms.topic: overview
@@ -14,12 +14,12 @@ ms.assetid: fc4e6ebb-5acc-4bc5-bad8-4f3407d1d3f4
 ms.collection:
 - M365-security-compliance
 description: Obtenga información general de las páginas de advertencia que puede ver cuando la protección contra amenazas avanzada de Office 365 está en funcionamiento.
-ms.openlocfilehash: bc0f0859263c72b2d058366a6268663d0dd6b9a6
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 3cc918087e5ceee5bf929f3be9dca960c79b40e2
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35598656"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36231144"
 ---
 # <a name="office-365-atp-safe-links-warning-pages"></a>Páginas de advertencia de vínculos seguros de ATP de Office 365
 

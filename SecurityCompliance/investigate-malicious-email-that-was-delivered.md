@@ -1,9 +1,9 @@
 ---
-title: Buscar y investigar correo electrónico malintencionado que se entregó (Office 365 de investigación y respuesta de amenazas
+title: Buscar e investigar correo electrónico malintencionado que se entregó en Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 08/02/2019
+ms.date: 08/07/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,22 +15,22 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo usar la investigación de amenazas y las capacidades de respuesta para buscar y investigar correo electrónico malintencionado.
-ms.openlocfilehash: 9a1e5e1bb571b3b5c517ae628c29c10b44987adb
-ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
+ms.openlocfilehash: 1f558614d77577408a824b3c6181aae22753ab0f
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "36165676"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36230564"
 ---
-# <a name="find-and-investigate-malicious-email-that-was-delivered-office-365-advanced-threat-protection-plan-2"></a>Buscar e investigar correo electrónico malintencionado que se entregó (Office 365 Advanced Threat Protection Plan 2)
+# <a name="find-and-investigate-malicious-email-that-was-delivered-in-office-365"></a>Buscar e investigar correo electrónico malintencionado que se entregó en Office 365
 
-[Office 365 Advanced Threat Protection](office-365-atp.md) le permite investigar las actividades que ponen en riesgo a los usuarios y emprender acciones para proteger su organización. Por ejemplo, si forma parte del equipo de seguridad de su organización, puede encontrar e investigar los mensajes de correo electrónico sospechosos que se entregaron a los usuarios. Para ello, puede usar el [Explorador de amenazas (o detecciones en tiempo real)](threat-explorer.md).
+La [protección contra amenazas avanzada de Office 365](office-365-atp.md) le permite investigar actividades que pongan en riesgo a los usuarios y emprender acciones para proteger su organización. Por ejemplo, si forma parte del equipo de seguridad de su organización, puede encontrar e investigar los mensajes de correo electrónico sospechosos que se entregaron a los usuarios. Para ello, puede usar el [Explorador de amenazas (o detecciones en tiempo real)](threat-explorer.md).
   
 ## <a name="before-you-begin"></a>Antes de comenzar...
 
 Asegúrese de que se cumplen los siguientes requisitos:
   
-- Su organización tiene [Office 365 Advanced Threat Protection](office-365-atp.md) (plan 2) y [se asignan licencias a los usuarios](https://docs.microsoft.com/en-us/office365/admin/subscriptions-and-billing/assign-licenses-to-users).
+- Su organización tiene [Office 365 de protección contra amenazas avanzada](office-365-atp.md) y [se asignan licencias a los usuarios](https://docs.microsoft.com/en-us/office365/admin/subscriptions-and-billing/assign-licenses-to-users).
     
 - El [registro de auditoría de Office 365](turn-audit-log-search-on-or-off.md) está activado para su organización. 
     

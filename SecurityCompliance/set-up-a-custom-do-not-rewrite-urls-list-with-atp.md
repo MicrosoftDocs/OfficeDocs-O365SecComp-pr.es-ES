@@ -1,7 +1,7 @@
 ---
 title: Configurar una lista de direcciones URL de do-not-Rewrite personalizada con los vínculos seguros de Office 365 ATP
-ms.author: deniseb
-author: denisebmsft
+ms.author: tracyp
+author: msfttracyp
 manager: dansimp
 audience: Admin
 ms.topic: article
@@ -15,12 +15,12 @@ ms.assetid: 35dbfd99-da5a-422b-9b0e-c6caf3b645fa
 ms.collection:
 - M365-security-compliance
 description: Cuando configure las directivas de vínculos seguros de ATP, puede incluir una lista de direcciones URL de "do-not-Rewrite" para permitir que algunos usuarios de la organización visiten los sitios que incluya en la lista.
-ms.openlocfilehash: 88a3f816c9156abc2d910d8710296e471e2fc540
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: b64fb39754ccfb6f627fc79809e3b6dc93480ce4
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35601367"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36230364"
 ---
 # <a name="set-up-a-custom-do-not-rewrite-urls-list-using-office-365-atp-safe-links"></a>Configurar una lista de direcciones URL de do-not-Rewrite personalizada con los vínculos seguros de Office 365 ATP
 

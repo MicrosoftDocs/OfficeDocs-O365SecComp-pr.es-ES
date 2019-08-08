@@ -1,7 +1,7 @@
 ---
 title: Configurar las directivas de datos adjuntos seguros de Office 365 ATP
-ms.author: deniseb
-author: denisebmsft
+ms.author: tracyp
+author: msfttracyp
 manager: dansimp
 audience: Admin
 ms.topic: article
@@ -15,12 +15,12 @@ ms.assetid: 078eb946-819a-4e13-8673-fe0c0ad3a775
 ms.collection:
 - M365-security-compliance
 description: Definir directivas de datos adjuntos seguros para proteger a su organización de archivos malintencionados en el correo electrónico.
-ms.openlocfilehash: d5c246343e509d816e23dac7daae27ec9b3d4bc8
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 6b232fe607be847e0f0ea6b09ec5909cc3138680
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35601327"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36230354"
 ---
 # <a name="set-up-office-365-atp-safe-attachments-policies"></a>Configurar las directivas de datos adjuntos seguros de Office 365 ATP
 

@@ -1,7 +1,7 @@
 ---
 title: Qué incluyen las plantillas de directiva DLP
-ms.author: deniseb
-author: denisebmsft
+ms.author: chrfox
+author: chrfox
 manager: laurawi
 ms.date: 6/29/2018
 audience: Admin
@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: La prevención de pérdida de datos (DLP) en el &amp; centro de seguridad y cumplimiento de Office 365 incluye plantillas de directivas listas para usar que abordan requisitos de cumplimiento comunes, como ayudarle a proteger la información confidencial sujeta a la ley de seguros de salud de Estados Unidos ( HIPAA), Ley de Estados Unidos de Gramm-Leach-Bliley (GLBA) o ley de Patriot de Estados Unidos. En este tema se enumeran todas las plantillas de directivas, los tipos de información confidencial que buscan y las condiciones y acciones predeterminadas.
-ms.openlocfilehash: 505d544d68002bc82eafd85c51b4db4328ba9853
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: aff9f5179d9bad3d8c1c97d17473a14995137c32
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077156"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36231064"
 ---
 # <a name="what-the-dlp-policy-templates-include"></a>Qué incluyen las plantillas de directiva DLP
 

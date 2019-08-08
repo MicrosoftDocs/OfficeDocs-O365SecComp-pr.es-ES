@@ -1,7 +1,7 @@
 ---
 title: Habilitar el complemento de mensajes de informe
-ms.author: deniseb
-author: denisebmsft
+ms.author: tracyp
+author: msfttracyp
 manager: dansimp
 ms.date: 03/26/2019
 audience: Admin
@@ -15,12 +15,12 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo habilitar el complemento de mensajes de informe para Outlook y Outlook en la web, para usuarios individuales o para toda la organización.
-ms.openlocfilehash: 2c1fe3afd52afed17327a4ad2a5a493721b541fd
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 62fcb909dfcc8c7f613c57d0e1368c44856a1d99
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35599976"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36230724"
 ---
 # <a name="enable-the-report-message-add-in"></a>Habilitar el complemento de mensajes de informe
 

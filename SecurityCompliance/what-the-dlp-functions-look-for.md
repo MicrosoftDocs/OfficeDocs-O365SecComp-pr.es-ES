@@ -1,7 +1,7 @@
 ---
 title: Qué buscan las funciones de DLP
-ms.author: deniseb
-author: denisebmsft
+ms.author: chrfox
+author: chrfox
 manager: laurawi
 ms.date: 6/18/2016
 audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Los tipos de información confidencial buscan un patrón específico y corroborarlo asegurándose de que el formato es correcto, aplicando sumas de comprobación y buscando palabras clave relevantes u otra información. Parte de esta funcionalidad la realizan funciones internas. En este tema se explica lo que estas funciones buscan, para que comprenda mejor cómo funcionan los tipos de información confidencial predefinidos.
-ms.openlocfilehash: 044920a7ff28ffc1c4338a642bc130ee07ef7264
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: c192a17c488e5a7252a3599204d2bdeda4d0637c
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34078006"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36230324"
 ---
 # <a name="what-the-dlp-functions-look-for"></a>Qué buscan las funciones de DLP
 
@@ -27,7 +27,7 @@ La Prevención de pérdida de datos (DLP) incluye tipos de información confiden
   
 En este tema se explica lo que estas funciones buscan, para que comprenda mejor cómo funcionan los tipos de información confidencial predefinidos. Para más información, consulte [What the sensitive information types look for](what-the-sensitive-information-types-look-for.md).
   
-## <a name="funcusdate"></a>Func_us_date
+## <a name="func_us_date"></a>Func_us_date
 
 Esta función busca una fecha con el formato que se usa habitualmente en Estados Unidos. Esto incluye los formatos "month/Day/Year", "month-Day-Year" y "month Day Year". Los nombres o las abreviaturas de los meses no distinguen mayúsculas de minúsculas. 
   
@@ -55,7 +55,7 @@ Nombres de mes aceptados:
     
   - Ene. Feb., abril. Mayo, junio julio agosto. Sept. Oct.-Nov.
     
-## <a name="funceudate"></a>Func_eu_date
+## <a name="func_eu_date"></a>Func_eu_date
 
 Esta función busca una fecha en el formato que suele usarse en la UE (y en la mayoría de lugares fuera de los Estados Unidos). Esto incluye los formatos de "día/mes/año", "día-mes-año" y "día mes año". Los nombres o las abreviaturas de los meses no distinguen mayúsculas de minúsculas.
   
@@ -119,7 +119,7 @@ Nombres de mes aceptados:
     
   - Enero Feb. marzo Abr. Mayo Jun. Julio. Agosto Sept./set. Oct. noviembre. Dic.
     
-## <a name="funceudate1-deprecated"></a>Func_eu_date1 (en desuso)
+## <a name="func_eu_date1-deprecated"></a>Func_eu_date1 (en desuso)
 
 > [!NOTE]
 > Esta función está en desuso porque solo admite nombres de mes en Portugués, que ahora están incluidos en `Func_eu_date` la función anterior. 
@@ -150,7 +150,7 @@ Nombres de mes aceptados:
     
   - Jan FEV mar abr Mai Jun-Nov hace dez
     
-## <a name="funceudate2-deprecated"></a>Func_eu_date2 (en desuso)
+## <a name="func_eu_date2-deprecated"></a>Func_eu_date2 (en desuso)
 
 > [!NOTE]
 > Esta función está en desuso porque solo admite nombres de mes en holandés, que ahora están incluidos en `Func_eu_date` la función anterior. 
@@ -181,7 +181,7 @@ Nombres de mes aceptados:
     
   - Jan Feb maart Apr Mei Jun-Jul-Sep-Sept Oct OKT Nov Dec
     
-## <a name="funcexpirationdate"></a>Func_expiration_date
+## <a name="func_expiration_date"></a>Func_expiration_date
 
 Esta función busca una fecha en los formatos que suelen usarse en las tarjetas de crédito y débito, que excluyen los días a favor de los meses. Esta función coincidirá con las fechas en el formato "mes/año", "mes-año", "[nombre del mes]" y "[abreviatura del mes] año". Los nombres o las abreviaturas de los meses no distinguen mayúsculas de minúsculas.
   
@@ -213,7 +213,7 @@ Nombres de mes aceptados:
     
   - Jan Feb Marzo Apr mayo junio julio agosto Sept Oct Nov Dic
     
-## <a name="funcusaddress"></a>Func_us_address
+## <a name="func_us_address"></a>Func_us_address
 
 Esta función busca un nombre de estado de los Estados Unidos o una abreviatura postal seguidos de un código postal válido, tal como se usan en las direcciones postales. El código postal debe ser uno de los códigos postales correctos asociados al nombre del estado de los Estados Unidos o su abreviatura. El nombre de estado de los Estados Unidos y el código postal no pueden estar separados por signos de puntuación o letras.
   

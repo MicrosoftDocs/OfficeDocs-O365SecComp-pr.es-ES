@@ -1,7 +1,7 @@
 ---
 title: Crear un diccionario de palabras clave
-ms.author: deniseb
-author: denisebmsft
+ms.author: chrfox
+author: chrfox
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Para identificar información confidencial, a veces es necesario buscar palabras clave, especialmente al identificar contenido genérico (como comunicaciones relacionadas con la salud) o lenguaje explícito o inadecuado. Aunque puede crear listas de palabras clave en tipos de información confidencial, las listas de palabras clave están limitadas en tamaño y es necesario modificar el código XML para crearlas o editarlas. Los diccionarios de palabras clave ofrecen una administración más sencilla de palabras clave y con una escala mucho mayor, admitiendo hasta 100 000 términos por diccionario.
-ms.openlocfilehash: 9fcd1504104f367d177d0cc835736d728f36c277
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: 5e99cad328115ad6b49982ea4c5749cdea6e43ed
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077576"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36230794"
 ---
 # <a name="create-a-keyword-dictionary"></a>Crear un diccionario de palabras clave
 
@@ -39,7 +39,7 @@ Las palabras clave del diccionario pueden provenir de una amplia variedad de or�
 
 Siga estos pasos para crear e importar palabras clave para un diccionario personalizado:
 
-1. Conéctese al centro de cumplimiento de seguridad[https://protection.office.com](https://protection.office.com)& ().
+1. Conéctese al centro de seguridad & cumplimiento[https://protection.office.com](https://protection.office.com)().
 
 2. Vaya a **Clasificaciones > Tipos de información confidencial**.
 
