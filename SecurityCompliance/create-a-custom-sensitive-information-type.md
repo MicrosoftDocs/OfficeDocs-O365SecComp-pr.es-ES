@@ -1,7 +1,7 @@
 ---
 title: Crear un tipo de información confidencial personalizada en el Centro de seguridad y cumplimiento.
-ms.author: deniseb
-author: denisebmsft
+ms.author: chrfox
+author: chrfox
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga información sobre cómo crear, modificar, quitar y probar tipos personalizados de información confidencial para DLP en la interfaz gráfica de usuario del Centro de seguridad y cumplimiento.
-ms.openlocfilehash: 55e54bf8b49ec21bb5ed4f161efc4e5924ee52fb
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: 62a08b4978e7e962f46a1de43c3d3160a44dd46e
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077746"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36230904"
 ---
 # <a name="create-a-custom-sensitive-information-type-in-the-security--compliance-center"></a>Crear un tipo de información confidencial personalizada en el Centro de seguridad y cumplimiento.
 

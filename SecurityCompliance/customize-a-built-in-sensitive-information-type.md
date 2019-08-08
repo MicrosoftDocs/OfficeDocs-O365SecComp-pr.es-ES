@@ -1,7 +1,7 @@
 ---
 title: Personalizar un tipo de información confidencial integrado
-ms.author: deniseb
-author: denisebmsft
+ms.author: chrfox
+author: chrfox
 manager: laurawi
 ms.date: 07/08/2019
 audience: Admin
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Al buscar información confidencial en el contenido, es necesario describir esa información en lo que se denomina una regla. Prevención de pérdida de datos (DLP) incluye reglas para los tipos de información confidencial más comunes que se pueden usar inmediatamente. Para usar estas reglas, tendrá que incluirlas en una directiva. Quizás quiera ajustar estas reglas integradas para satisfacer las necesidades específicas de su organización; para hacerlo, puede crear un tipo de información confidencial personalizado. En este tema, se muestra cómo personalizar el archivo XML que contiene la colección de reglas existente para detectar una mayor variedad de posible información de tarjetas de crédito.
-ms.openlocfilehash: 8a621e3f1b24a8cea9cd263e44dc2def8a8b95b7
-ms.sourcegitcommit: a6f046f1529b0515f4f0e918a19ec83f4138b871
+ms.openlocfilehash: 2944202bf0f44c1a46834dce580abaf4f04aa40b
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/08/2019
-ms.locfileid: "35587109"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36230734"
 ---
 # <a name="customize-a-built-in-sensitive-information-type"></a>Personalizar un tipo de información confidencial integrado
 

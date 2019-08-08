@@ -1,7 +1,7 @@
 ---
 title: Tipos de información confidencial personalizada para DLP
-ms.author: deniseb
-author: denisebmsft
+ms.author: chrfox
+author: chrfox
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Obtenga la información general de los tipos de información confidencial personalizada para DLP.
-ms.openlocfilehash: 460b6d584208696011a5bcdd0b8ab00b6de207d3
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: 3c3acceb23fe74d22b9e952bf5dc76d9ed6eefd9
+ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077666"
+ms.lasthandoff: 08/07/2019
+ms.locfileid: "36230784"
 ---
 # <a name="custom-sensitive-information-types"></a>Tipos de información confidencial personalizada
 
