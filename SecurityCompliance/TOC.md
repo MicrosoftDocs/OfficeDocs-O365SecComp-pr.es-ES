@@ -345,7 +345,7 @@
 #### [Agregar datos a otro conjunto de revisión](compliance20/add-data-to-review-set-from-another-review-set.md)
 #### [Administrar conjuntos de carga](compliance20/manage-load-sets.md)
 
-### [Revisar los datos de casos](compliance20/reviewing-data-in-review-set.md)
+### Revisar los datos de casos
 #### [Ver documentos de un conjunto de revisión](compliance20/view-documents-in-review-set.md)
 #### [Consultar los datos de un conjunto de revisión](compliance20/review-set-search.md)
 #### [Etiquetar documentos en un conjunto de revisión](compliance20/tagging-documents.md)
@@ -363,7 +363,7 @@
 
 ### [Administrar trabajos](compliance20/managing-jobs-ediscovery20.md)
 
-### [Configurar los ajustes de casos](compliance20/configuring-case-settings-ediscovery20.md)
+### Configurar los ajustes de casos
 #### [Cerrar o eliminar un caso](compliance20/close-or-delete-case.md)
 #### [Agregar o quitar miembros de un caso](compliance20/add-remove-members.md)
 #### [Establecer la configuración de búsqueda y análisis](compliance20/configure-search-analytics-settings.md)
