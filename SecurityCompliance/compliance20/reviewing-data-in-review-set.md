@@ -13,15 +13,16 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
+ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: cf90216a2dedccf80ba2370caef0c910839b31ca
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 7dc4721f4be2bffbf24f49f7f9d2bcb94a4e4ad5
+ms.sourcegitcommit: c8ea7c0900e69e69bd5c735960df70aae27690a5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34154872"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "36258523"
 ---
-# <a name="review-case-data-in-advanced-ediscovery"></a><span data-ttu-id="74602-102">Revisar los datos de casos en eDiscovery avanzado</span><span class="sxs-lookup"><span data-stu-id="74602-102">Review case data in Advanced eDiscovery</span></span>
+# <a name="review-case-data-in-advanced-ediscovery"></a><span data-ttu-id="82911-102">Revisar los datos de casos en eDiscovery avanzado</span><span class="sxs-lookup"><span data-stu-id="82911-102">Review case data in Advanced eDiscovery</span></span>
 
 
-<span data-ttu-id="74602-103">Próximamente</span><span class="sxs-lookup"><span data-stu-id="74602-103">Coming soon</span></span>
+<span data-ttu-id="82911-103">Próximamente</span><span class="sxs-lookup"><span data-stu-id="82911-103">Coming soon</span></span>
