@@ -15,18 +15,18 @@ search.appverid:
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Use límites de cumplimiento para crear límites lógicos dentro de una organización de Office 365 que controlen las ubicaciones de contenido de usuario que puede buscar un administrador de exhibición de documentos electrónicos. Los límites de cumplimiento usan el filtrado de permisos de búsqueda (también denominados filtros de seguridad de cumplimiento) para controlar los buzones de correo, los sitios de SharePoint y las cuentas de OneDrive pueden ser buscados por usuarios específicos.
-ms.openlocfilehash: 1926155a09ae9acdec09f6155fc753cb980e51de
-ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
+ms.openlocfilehash: d94835c457884b98e84f68db6536e8f3774af669
+ms.sourcegitcommit: c8ea7c0900e69e69bd5c735960df70aae27690a5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "36168168"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "36258603"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations-in-office-365"></a>Configurar los límites de cumplimiento para investigaciones de eDiscovery en Office 365.
 
 Los límites de cumplimiento crean límites lógicos dentro de una organización de Office 365 que controlan las ubicaciones de contenido del usuario (como buzones de correo, sitios de SharePoint y cuentas de OneDrive) que los administradores de eDiscovery pueden buscar. Además, los límites de cumplimiento controlan quién puede tener acceso a casos de eDiscovery que se usan para administrar las investigaciones legales, de recursos humanos u otras investigaciones dentro de la organización. La necesidad de límites de cumplimiento suele ser necesaria para las corporaciones multinacionales que deben respetar los reglamentos y las regulaciones geográficas y para los gobiernos, que a menudo se dividen en diferentes agencias. En Office 365, los límites de cumplimiento le ayudan a cumplir estos requisitos cuando realizan búsquedas de contenido y administran investigaciones con casos de eDiscovery.
   
-Usaremos el ejemplo de la siguiente ilustración para explicar cómo funcionan los límites de cumplimiento.
+Usamos el ejemplo de la siguiente ilustración para explicar cómo funcionan los límites de cumplimiento.
   
 ![Los límites de cumplimiento constan de filtros de permisos de búsqueda que controlan el acceso a agencias y grupos de roles de administrador que controlan el acceso a casos de eDiscovery](media/5c206cc8-a6eb-4d6b-a3a5-21e158791f9a.png)
   
@@ -99,8 +99,6 @@ Mediante el escenario de límites de cumplimiento de Contoso, es necesario crear
 - Administradores de exhibición de documentos electrónicos de Coho Winery
     
 - Investigadores de Coho Winery
-    
-
   
 ## <a name="step-4-create-a-search-permissions-filter-to-enforce-the-compliance-boundary"></a>Paso 4: crear un filtro de permisos de búsqueda para aplicar el límite de cumplimiento
 
@@ -109,7 +107,7 @@ Una vez que haya creado los grupos de roles para cada agencia, el siguiente paso
 Esta es la sintaxis que se usa para crear un filtro de permisos de búsqueda usado para los límites de cumplimiento.
 
 ```
-New-ComplianceSecurityFilter -FilterName <name of filter> -Users <role groups> -Filters "Mailbox_<Compliance attribute from Step 1>  -eq '<AttributeVale> '", "Site_ComplianceAttribute  -eq <AttributeValue>' -or Site_Path -like <SharePointURL> *'" -Action <Action >
+New-ComplianceSecurityFilter -FilterName <name of filter> -Users <role groups> -Filters "Mailbox_<Compliance attribute from Step 1>  -eq '<AttributeVale> '", "Site_ComplianceAttribute  -eq '<AttributeValue>' -or Site_Path -like '<SharePointURL> *'" -Action <Action >
 ```
   
 Esta es una descripción de cada parámetro del comando:
@@ -126,7 +124,7 @@ Esta es una descripción de cada parámetro del comando:
     
   -  `Site_Path`: Especifica los sitios de SharePoint que pueden buscar los grupos de `Users` roles definidos en el parámetro. La *SharePointURL* especifica los sitios de la agencia que pueden buscar los miembros del grupo de roles; por ejemplo,`"Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'"`
     
--  `Action`: Especifica el tipo de acción de búsqueda de cumplimiento a la que se aplica el filtro. Por ejemplo, `-Action Search` el filtro solo se aplicaría cuando los miembros del grupo de roles definidos `Users` en el parámetro ejecuten una búsqueda de contenido. En este caso, el filtro no se aplicaría al exportar los resultados de la búsqueda. Para los límites de cumplimiento `-Action All` , use para que el filtro se aplique a todas las acciones de búsqueda. 
+-  `Action`: Especifica el tipo de acción de búsqueda de cumplimiento a la que se aplica el filtro. Por ejemplo, `-Action Search` solo aplicaría el filtro cuando los miembros del grupo de roles definidos en `Users` el parámetro ejecuten una búsqueda de contenido. En este caso, el filtro no se aplicaría al exportar los resultados de la búsqueda. Para los límites de cumplimiento `-Action All` , use para que el filtro se aplique a todas las acciones de búsqueda. 
     
     Para obtener una lista de las acciones de búsqueda de contenido, consulte la sección "New-ComplianceSecurityFilter" en [configurar el filtrado de permisos para la búsqueda de contenido](permissions-filtering-for-content-search.md#new-compliancesecurityfilter).
     
@@ -212,13 +210,12 @@ Los filtros de permisos de búsqueda también permiten controlar dónde se enrut
     |IND  <br/> |Asia Pacífico  <br/> |
     |LAM  <br/> |Infórmenos  <br/> |
     |||
-   
 
    Si no especifica el parámetro **Region** para un filtro de permisos de búsqueda, se buscará en la región de SharePoint predeterminada de la organización y, a continuación, los resultados de la búsqueda se exportarán al centro de recursos más cercano.
 
 > [!TIP]
-> Para simplificar el concepto, el parámetro **Region** controla el centro de datos que se usa para buscar contenido en SharePoint y OneDrive. Esto no se aplica a la búsqueda de contenido en Exchange porque las búsquedas de contenido de Exchange no están vinculadas por la ubicación geográfica de los centros de datos. Además, el mismo valor de parámetro **Region** también puede indicar el centro de recursos al que se redirigen las exportaciones. Esto suele ser necesario para controlar el movimiento de datos entre los tableros geográficos.
-  
+> Para simplificar el concepto, el parámetro **Region** controla el centro de datos que se usa para buscar contenido en SharePoint y OneDrive. Esto no se aplica a la búsqueda de contenido en Exchange porque las búsquedas de contenido de Exchange no están vinculadas por la ubicación geográfica de los centros de datos. Además, el mismo valor de parámetro **Region** también puede indicar el centro de recursos al que se redirigen las exportaciones. Esto suele ser necesario para controlar el movimiento de datos entre los tableros geográficos.<br/><br/>Si está usando la exhibición avanzada de documentos electrónicos, la búsqueda de contenido en SharePoint y OneDrive no está vinculada por la ubicación geográfica de los centros de datos. Para obtener más información acerca de la exhibición avanzada de documentos electrónicos, vea [Overview of The Advanced eDiscovery Solution en Microsoft 365](compliance20/overview-ediscovery-20.md).
+
 A continuación, se muestran ejemplos de cómo usar el parámetro **Region** al crear filtros de permisos de búsqueda para límites de cumplimiento. Esto supone que la subsidiaria de Fourth Coffee se encuentra en Norteamérica y que Coho Winery está en Europa. 
   
 ```

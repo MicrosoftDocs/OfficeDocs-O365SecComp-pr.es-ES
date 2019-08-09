@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: En este artículo se describe la nueva versión de eDiscovery avanzado en Microsoft 365.
-ms.openlocfilehash: 45c7a35a27fea3891270ee72b1fd528a357ad825
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: d3abd49d3ba336f5896887732ea0c37b59265bc9
+ms.sourcegitcommit: c8ea7c0900e69e69bd5c735960df70aae27690a5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35598736"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "36258563"
 ---
 # <a name="overview-of-the-advanced-ediscovery-solution-in-microsoft-365"></a>Información general sobre la solución de exhibición de documentos electrónicos avanzada en Microsoft 365
 
@@ -94,4 +94,4 @@ Use la ficha **trabajos** para supervisar procesos de ejecución prolongada para
 
 ## <a name="configuring-case-settings"></a>Configuración de los casos
 
-Use la pestaña **configuración** para establecer la configuración de casos. Esto incluye agregar miembros a un caso, cerrar o eliminar un caso y configurar las opciones de búsqueda y análisis. Para obtener más información, vea [Configure Case Settings in Advanced eDiscovery](configuring-case-settings-ediscovery20.md).
+Use la pestaña **configuración** para establecer la configuración de casos. Esto incluye agregar miembros a un caso, cerrar o eliminar un caso y configurar las opciones de búsqueda y análisis.
