@@ -52,7 +52,7 @@
 ### [Ver una descripción general ampliada de personalización de DLP](https://go.microsoft.com/fwlink/?linkid=852306)
 ### [Personalizar un tipo de información confidencial integrado](customize-a-built-in-sensitive-information-type.md)
 ### [Tipos de información confidencial personalizados](custom-sensitive-info-types.md)
-### [Crear un tipo de información confidencial personalizado con coincidencia exacta de datos (versión preliminar)](create-custom-sensitive-info-type-edm.md)
+### [Crear un tipo de información confidencial personalizado con clasificación basada en coincidencia exacta de datos](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
 ### [Crear un tipo de información confidencial personalizado en el Centro de seguridad y cumplimiento](create-a-custom-sensitive-information-type.md)
 ### [Crear un tipo de información confidencial personalizado con PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md)
 ### [Crear un diccionario de palabras clave](create-a-keyword-dictionary.md)
