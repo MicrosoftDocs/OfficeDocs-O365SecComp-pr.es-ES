@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Use límites de cumplimiento para crear límites lógicos dentro de una organización de Office 365 que controlen las ubicaciones de contenido de usuario que puede buscar un administrador de exhibición de documentos electrónicos. Los límites de cumplimiento usan el filtrado de permisos de búsqueda (también denominados filtros de seguridad de cumplimiento) para controlar los buzones de correo, los sitios de SharePoint y las cuentas de OneDrive pueden ser buscados por usuarios específicos.
-ms.openlocfilehash: d94835c457884b98e84f68db6536e8f3774af669
-ms.sourcegitcommit: c8ea7c0900e69e69bd5c735960df70aae27690a5
+ms.openlocfilehash: 44c157b8f155755c6a48830231074643a830f498
+ms.sourcegitcommit: 226adb6d05015da16138b315dd2f5b937bf4354d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "36258603"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36302429"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations-in-office-365"></a>Configurar los límites de cumplimiento para investigaciones de eDiscovery en Office 365.
 
@@ -107,7 +107,7 @@ Una vez que haya creado los grupos de roles para cada agencia, el siguiente paso
 Esta es la sintaxis que se usa para crear un filtro de permisos de búsqueda usado para los límites de cumplimiento.
 
 ```
-New-ComplianceSecurityFilter -FilterName <name of filter> -Users <role groups> -Filters "Mailbox_<Compliance attribute from Step 1>  -eq '<AttributeVale> '", "Site_ComplianceAttribute  -eq '<AttributeValue>' -or Site_Path -like '<SharePointURL> *'" -Action <Action >
+New-ComplianceSecurityFilter -FilterName <name of filter> -Users <role groups> -Filters "Mailbox_<ComplianceAttribute>  -eq '<AttributeVale> '", "Site_<ComplianceAttribute>  -eq '<AttributeValue>' -or Site_Path -like '<SharePointURL>*'" -Action <Action >
 ```
   
 Esta es una descripción de cada parámetro del comando:
@@ -116,19 +116,22 @@ Esta es una descripción de cada parámetro del comando:
     
 -  `Users`: Especifica los usuarios o grupos que obtienen este filtro aplicado a las acciones de búsqueda de contenido que realizan. Para los límites de cumplimiento, este parámetro especifica los grupos de roles (que ha creado en el paso 3) en la Agencia para la que está creando el filtro. Nota Este es un parámetro de varios valores para que pueda incluir uno o varios grupos de funciones separados por comas. 
     
--  `Filters`: Especifica los criterios de búsqueda para el filtro. Para los límites de cumplimiento, defina los siguientes filtros: cada uno se aplica a una ubicación de contenido. 
+-  `Filters`: Especifica los criterios de búsqueda para el filtro. Para los límites de cumplimiento, defina los siguientes filtros. Cada uno se aplica a una ubicación de contenido. 
     
-  -  `Mailbox`: Especifica los buzones de correo que pueden buscar los grupos `Users` de roles definidos en el parámetro. Para los límites de cumplimiento, *ComplianceAttribute* es el mismo atributo que identificó en el paso 1 y *AttributeValue* especifica la Agencia. Este filtro permite que los miembros del grupo de roles busquen sólo los buzones de una agencia específica; por ejemplo, `"Mailbox_Department -eq 'FourthCoffee'"`. 
+    -  `Mailbox`: Especifica los buzones de correo que pueden buscar los grupos `Users` de roles definidos en el parámetro. Para los límites de cumplimiento, *ComplianceAttribute* es el mismo atributo que identificó en el paso 1 y *AttributeValue* especifica la Agencia. Este filtro permite que los miembros del grupo de roles busquen sólo los buzones de una agencia específica; por ejemplo, `"Mailbox_Department -eq 'FourthCoffee'"`. 
     
-  -  `Site`: Especifica las cuentas de OneDrive que pueden buscar los grupos de `Users` roles definidos en el parámetro. Para el filtro de OneDrive, use la cadena `ComplianceAttribute`real. Esto se asigna al mismo atributo que identificó en el paso 1 y que se sincroniza con las cuentas de OneDrive como resultado de la solicitud de soporte que envió en el paso 2;  *AttributeValue* especifica la Agencia. Este filtro permite a los miembros del grupo de roles buscar solo en las cuentas de OneDrive de una agencia específica; por ejemplo, `"Site_ComplianceAttribute -eq 'FourthCoffee'"`.
+    -  `Site`: Especifica las cuentas de OneDrive que pueden buscar los grupos de `Users` roles definidos en el parámetro. Para el filtro de OneDrive, use la cadena `ComplianceAttribute`real. Esto se asigna al mismo atributo que identificó en el paso 1 y que se sincroniza con las cuentas de OneDrive como resultado de la solicitud de soporte que envió en el paso 2;  *AttributeValue* especifica la Agencia. Este filtro permite a los miembros del grupo de roles buscar solo en las cuentas de OneDrive de una agencia específica; por ejemplo, `"Site_ComplianceAttribute -eq 'FourthCoffee'"`.
     
-  -  `Site_Path`: Especifica los sitios de SharePoint que pueden buscar los grupos de `Users` roles definidos en el parámetro. La *SharePointURL* especifica los sitios de la agencia que pueden buscar los miembros del grupo de roles; por ejemplo,`"Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'"`
+    -  `Site_Path`: Especifica los sitios de SharePoint que pueden buscar los grupos de `Users` roles definidos en el parámetro. La *SharePointURL* especifica los sitios de la agencia que pueden buscar los miembros del grupo de roles; por ejemplo, `"Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'"` Observe que `Site` los `Site_Path` filtros y están conectados por un operador **or** .
     
+     > [!NOTE]
+     > La sintaxis del `Filters` parámetro incluye una *lista de filtros*. Una lista de filtros es un filtro que incluye un filtro de buzón y un filtro de sitio separados por una coma. En el ejemplo anterior, observe que una coma separa **Mailbox_ComplianceAttribute** y **Site_ComplianceAttribute**: `-Filters "Mailbox_<ComplianceAttribute>  -eq '<AttributeVale> '", "Site_ComplianceAttribute  -eq '<AttributeValue>' -or Site_Path -like '<SharePointURL>*'"`. Cuando este filtro se procesa durante la ejecución de una búsqueda de contenido, se crean dos filtros de permisos de búsqueda a partir de la lista Filtros: un filtro de buzón y un filtro de sitio. Una alternativa al uso de una lista de filtros sería crear dos filtros de permisos de búsqueda independientes para cada agencia: un filtro de permisos de búsqueda para el atributo Mailbox y un filtro para los atributos site. En cualquier caso, los resultados serán los mismos. El uso de una lista de filtros o la creación de filtros de permisos de búsqueda independientes es una cuestión de preferencia.
+
 -  `Action`: Especifica el tipo de acción de búsqueda de cumplimiento a la que se aplica el filtro. Por ejemplo, `-Action Search` solo aplicaría el filtro cuando los miembros del grupo de roles definidos en `Users` el parámetro ejecuten una búsqueda de contenido. En este caso, el filtro no se aplicaría al exportar los resultados de la búsqueda. Para los límites de cumplimiento `-Action All` , use para que el filtro se aplique a todas las acciones de búsqueda. 
     
     Para obtener una lista de las acciones de búsqueda de contenido, consulte la sección "New-ComplianceSecurityFilter" en [configurar el filtrado de permisos para la búsqueda de contenido](permissions-filtering-for-content-search.md#new-compliancesecurityfilter).
-    
-A continuación, se muestran ejemplos de los dos filtros de permisos de búsqueda que se crearían para admitir el escenario de límites de cumplimiento de contoso.
+
+A continuación, se muestran ejemplos de los dos filtros de permisos de búsqueda que se crearían para admitir el escenario de límites de cumplimiento de contoso. Ambos ejemplos incluyen una lista de filtros separados por comas, en la que los filtros de buzón de correo y sitio se incluyen en el mismo filtro de permisos de búsqueda y están separados por una coma.
   
  **Fourth Coffee**
 
