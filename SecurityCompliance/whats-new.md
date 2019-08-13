@@ -16,12 +16,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
 description: Estamos agregando de forma continuada nuevas características al centro de cumplimiento de Microsoft 365, solucionando los problemas que aprendemos y realizando cambios en función de sus comentarios. Descubra lo que hemos realizado este mes.
-ms.openlocfilehash: 1c51edbe5c6ac29d174fe0277c3f17628cdaf229
-ms.sourcegitcommit: ea86a64cf19f07952be4c16c89e0389b4ba3768e
+ms.openlocfilehash: 22c3253f3c529ff361fc1984f6bc82de8d72b094
+ms.sourcegitcommit: 28c104fb6a72d624fab5ac6178b5b0df9fa81484
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/10/2019
-ms.locfileid: "36286271"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "36297810"
 ---
 # <a name="whats-new-in-the-microsoft-365-compliance-center"></a>Novedades en el centro de cumplimiento de Microsoft 365
 
@@ -46,10 +46,6 @@ Hemos lanzado dos nuevos roles de administrador para ayudarle a administrar la s
 No hay más desplazamiento a través de un mar de informes para encontrar los que desea. Ahora puede buscar informes (en función de sus títulos) y filtrar por categorías como "etiquetas" y "cumplimiento" y fuentes como "Office 365" y "Microsoft Cloud App Security".
 
 ![Captura de pantalla de los botones de búsqueda y filtro para los informes con un filtro aplicado](media/mcc_report_filtering.png)
-
-### <a name="partners-admin-on-behalf-of-aobo-permissions"></a>Partners: permisos de administrador en nombre de (AOBO)
-
-Buenas noticias para los socios certificados de Microsoft. Los socios con los permisos de administrador en nombre de (AOBO) ahora pueden tener acceso a los centros de seguridad y cumplimiento de Microsoft 365 agregando el dominio del cliente a la dirección URL. Por ejemplo: `https://security.microsoft.com/contoso.com`.
 
 ### <a name="help-content"></a>Contenido de la Ayuda
 
