@@ -1,5 +1,5 @@
 ---
-title: Búsqueda de contenido en Office 365
+title: Búsqueda de contenido de Office 365
 ms.author: markjjo
 author: markjjo
 manager: laurawi
@@ -15,230 +15,230 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
-description: Use la herramienta de búsqueda de contenido en el centro de cumplimiento de Office 365 o Microsoft 365 para buscar contenido en buzones de correo, sitios de SharePoint Online, cuentas de OneDrive, Microsoft Teams, grupos de Office 365 y conversaciones de Skype empresarial. Puede usar consultas de búsqueda de palabras clave y condiciones de búsqueda para restringir los resultados de la búsqueda. A continuación, puede obtener una vista previa y exportar los resultados de búsqueda. La búsqueda de contenido también es una herramienta eficaz para buscar contenido relacionado con una solicitud de sujeto de datos de RGPD.
-ms.openlocfilehash: 12065a744b287bea5e2b9fc07e7fe8023d40bb5f
-ms.sourcegitcommit: 33c8e9c16143650ca443d73e91631f9180a9268e
-ms.translationtype: MT
+description: Use la herramienta de búsqueda de contenido del Centro de cumplimiento de Office 365 o Microsoft 365 para buscar contenido en buzones, sitios de SharePoint Online, cuentas de OneDrive, Microsoft Teams, grupos de Office 365 y conversaciones de Skype Empresarial. Puede restringir los resultados de la búsqueda mediante palabras clave y condiciones de búsqueda. Después, puede consultar una vista previa y exportar los resultados de búsqueda. La búsqueda de contenido también es una herramienta eficaz para encontrar información relacionada con la solicitud del interesado del RGPD.
+ms.openlocfilehash: 3df1ee02cc7b31a8dd316bac5ccd4455c26922c5
+ms.sourcegitcommit: 73dcdafb15b462223d1a670c781db260eb73c2f5
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "35854734"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "36048192"
 ---
-# <a name="content-search-in-office-365"></a>Búsqueda de contenido en Office 365
+# <a name="content-search-in-office-365"></a>Búsqueda de contenido de Office 365
 
-Puede usar la herramienta de búsqueda de contenido eDiscovery en el centro de cumplimiento de Office 365 o Microsoft 365 para buscar elementos locales como correo electrónico, documentos y conversaciones de mensajería instantánea en su organización de Office 365. Use esta herramienta para buscar elementos en estos servicios de Office 365:
+Puede usar la herramienta eDiscovery de búsqueda de contenido en el Centro de cumplimiento en Office 365 o Microsoft 365 para buscar elementos locales como correo electrónico, documentos y conversaciones de mensajería instantánea en su organización de Office 365. Úsela para buscar elementos en los siguientes servicios de Office 365:
   
-- Buzones de correo y carpetas públicas de Exchange Online
+- Buzones de Exchange Online y carpetas públicas
     
-- Sitios de SharePoint Online y cuentas de OneDrive para la empresa
+- Sitios de SharePoint Online y cuentas de OneDrive para la Empresa
     
-- Conversaciones de Skype empresarial
+- Conversaciones de Skype Empresarial
     
 - Microsoft Teams 
     
 - Grupos de Office 365
     
-Después de ejecutar una búsqueda de contenido, el número de ubicaciones de contenido y el número estimado de resultados de la búsqueda se muestran en el perfil de búsqueda. También puede ver rápidamente las estadísticas, como las ubicaciones de contenido que tienen la mayoría de los elementos que coinciden con la consulta de búsqueda. Después de ejecutar una búsqueda, puede obtener una vista previa de los resultados o exportarlos a un equipo local.
+Después de ejecutar una búsqueda de contenido, se mostrará el número de ubicaciones de contenido y un número estimado de resultados de la búsqueda en el perfil de búsqueda. También puede ver rápidamente estadísticas como las ubicaciones de contenido con la mayor cantidad de elementos encontrados por la consulta de búsqueda. Después de ejecutar una búsqueda, puede obtener una vista previa de los resultados o exportarlos a un equipo local.
 
-## <a name="create-a-search"></a>Create a search
+## <a name="create-a-search"></a>Crear una búsqueda
 
-Para tener acceso a la página de **búsqueda de contenido** para ejecutar las búsquedas y obtener una vista previa de los resultados de la búsqueda, el administrador, el responsable de cumplimiento o el administrador de eDiscovery deben ser miembros del grupo de roles eDiscovery Manager en el centro de seguridad & cumplimiento. Para obtener más información, consulte [asignar permisos de exhibición](assign-ediscovery-permissions.md)de documentos electrónicos.
+Para acceder a la página de **Búsqueda de contenido** y buscar, obtener una vista previa o exportar los resultados de búsqueda, es necesario que un administrador, responsable de cumplimento normativo o administrador de eDiscovery sea miembro del grupo de roles de administradores de eDiscovery del Centro de seguridad y cumplimiento. Para obtener más información, consulte [Asignar permisos de exhibición de documentos electrónicos](assign-ediscovery-permissions.md).
   
 1. Vaya a [https://protection.office.com](https://protection.office.com) e inicie sesión con su dirección de correo electrónico y contraseña de Office 365.
     
-2. Haga clic en búsqueda de **contenido**de **búsqueda** \> .
+2. Haga clic en **Buscar** \> **Búsqueda de contenido**.
     
-3. En la página **Buscar** , haga clic en la flecha ![junto a](media/8ee52980-254b-440b-99a2-18d068de62d3.gif) agregar icono **nueva búsqueda**. 
+3. En la página **Buscar**, haga clic en la flecha junto al ![icono Agregar](media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **Nueva búsqueda**. 
     
     ![La nueva lista desplegable de búsqueda](media/76b25861-55c5-4f50-9d48-9e2be2d0d078.png)
   
-    Use la pestaña Búsquedas DNS internas para especificar si desea usar los servidores DNS que están configurados en un adaptador de red instalado en este servidor o usar servidores DNS específicos al resolver las direcciones de servidores de correo para la entrega de correo interno. Los servidores DNS internos se usan para resolver direcciones IP para servidores de la organización.
+    Puede elegir entre las siguientes opciones:
     
-    - * * Búsqueda guiada: esta opción inicia un asistente que le guía a través de la creación de la búsqueda. La interfaz de usuario para seleccionar ubicaciones de contenido y crear la consulta de búsqueda son las mismas que las de la nueva opción de **búsqueda** . 
+    - **Búsqueda guiada: esta opción inicia un asistente que le guiará a través de la búsqueda. La interfaz de usuario para seleccionar ubicaciones de contenido y crear la consulta de búsqueda es la misma que la opción **Nueva Búsqueda**. 
     
-    - **Nueva búsqueda** : esta opción muestra una interfaz de usuario actualizada para crear una búsqueda. Esta es la opción predeterminada si hace clic en **nueva búsqueda**.
+    - **Nueva búsqueda**: esta opción muestra una interfaz de usuario actualizada para crear una búsqueda. Esta es la opción predeterminada si hace clic en **Nueva búsqueda**.
     
-    - **Buscar por lista** de identificadores: esta opción le permite buscar mensajes de correo electrónico específicos y otros elementos de buzón mediante una lista de identificadores de Exchange. Para crear una búsqueda de lista de IDENTIFICADOres (formalmente denominada búsqueda dirigida), envíe un archivo de valores separados por comas (CSV) que identifique los elementos de buzón específicos que se van a buscar. Para obtener instrucciones, vea [preparar un archivo CSV para una búsqueda de contenido de la lista de identificadores en Office 365](csv-file-for-an-id-list-content-search.md).
+    - **Buscar por id. de lista**: le permite buscar mensajes de correo específicos y otros elementos del buzón con una lista de ID. de Exchange. Para crear una búsqueda de lista de ID. (antes denominada búsqueda objetivo), debe enviar un archivo CSV que identifique los elementos de buzón específicos que desee buscar. Para sabe cómo hacerlo, consulte [Preparar un archivo CSV para una búsqueda de contenido de lista de identificadores en Office 365](csv-file-for-an-id-list-content-search.md)
     
-    El resto de los pasos de este procedimiento sigue el nuevo flujo de trabajo de búsqueda predeterminado.
+    El resto de los pasos de este procedimiento siguen el nuevo flujo de trabajo de búsqueda predeterminado.
     
-4. Haga clic en **nueva búsqueda** en la lista desplegable. 
+4. En la lista desplegable, haga clic en **Nueva búsqueda**. 
     
-5. En **consulta de búsqueda**, especifique las siguientes opciones:
+5. En **Consulta de búsqueda**, especifique las siguientes opciones:
     
-    ![Especificar palabras clave, condiciones y ubicaciones para la búsqueda](media/1e6de9dd-eac9-4e2a-819d-9740cf6c9106.png)
+    ![Indique las palabras clave, condiciones y ubicaciones a buscar](media/1e6de9dd-eac9-4e2a-819d-9740cf6c9106.png)
   
-   - **Palabras clave para buscar** : escriba una consulta de búsqueda en el cuadro **palabras clave** . Puede especificar palabras clave, propiedades del mensaje como la fecha de envío y de recepción, o propiedades del documento como nombres de archivo o la fecha de la última modificación de un documento. Puede usar consultas más complejas que usen un operador booleano, como **and**, **or**, **Not**y **Near**. También puede buscar información confidencial (por ejemplo, los números de la seguridad social) en documentos o buscar documentos que se han compartido de forma externa. Si deja vacío el cuadro palabra clave, todo el contenido ubicado en las ubicaciones de contenido especificadas se incluirá en los resultados de la búsqueda.
+   - Palabras clave a buscar: escriba una consulta de búsqueda en el cuadro **Palabras clave**. Puede especificar palabras clave, propiedades del mensaje como la fecha de envío y de recepción, o propiedades del documento como nombres de archivo o la fecha de la última modificación de un documento. También puede usar consultas más complejas con operadores booleanos como **Y**, **O**, **NOT** y **NEAR**. Además, puede buscar información confidencial (como los números de la seguridad social) en documentos o buscar en documentos que se han compartido de forma externa. Si deja el cuadro de la palabra clave en blanco, todo el contenido en las ubicaciones especificadas se incluye en los resultados de la búsqueda.
     
-      Como alternativa, puede hacer clic en la casilla **Mostrar lista de palabras clave** y escribir una palabra clave en cada fila. Si hace esto, las palabras clave de cada fila están conectadas por un operador lógico (**c:s**) que es similar en funcionalidad al operador **or** en la consulta de búsqueda que se crea. 
+      También puede marcar la casilla Mostrar lista de palabras clave** y escribir una palabra clave en cada fila. En este caso, las palabras clave de cada fila estarán conectadas por un operador lógico (**c:s**) funcionalmente similar al operador O en la consulta de búsqueda creada. 
     
-      ¿Por qué usar la lista de palabras clave? Puede obtener estadísticas que muestren cuántos elementos coinciden con cada palabra clave. Esto puede ayudarle a identificar rápidamente qué palabras clave son más (y menos) efectivas. También puede usar una frase de palabras clave (entre paréntesis) en una fila. Para obtener más información acerca de las estadísticas de búsqueda, consulte [View keyword Statistics for Content Search Results](view-keyword-statistics-for-content-search.md).
+      ¿Por qué usar la lista de palabras clave? Puede obtener estadísticas que muestran cuántos elementos coinciden con cada palabra clave. Esto le ayudará a identificar rápidamente las palabras clave más (y menos) efectivas. También puede usar una frase de palabras clave (entre paréntesis) en una fila. Para saber más sobre las estadísticas de búsqueda, consulte Ver estadísticas de palabras clave para resultados de búsqueda de contenido](view-keyword-statistics-for-content-search.md).
 
      > [!NOTE]
-     > Para ayudar a reducir los problemas causados por listas de palabras clave grandes, ahora está limitado a un máximo de 20 filas en la lista de palabras clave.
+     > Existe un límite máximo de 20 filas en la lista de palabras clave, con el fin de reducir los problemas causados por listas de palabras clave demasiado grandes.
     
-    - **Condiciones** : puede agregar condiciones de búsqueda para restringir una búsqueda y devolver un conjunto de resultados más refinado. Cada condición agrega una cláusula a la consulta de búsqueda que se crea y se ejecuta cuando se inicia la búsqueda. Una condición está conectada lógicamente a la consulta de palabras clave (especificada en el cuadro palabra clave) por un operador lógico (**c:c**) que es similar en funcionalidad al operador **and** . Esto significa que los elementos deben cumplir con la consulta de palabra clave y una o más condiciones que se van a incluir en los resultados. De esta manera, las condiciones permiten restringir los resultados. Para obtener una lista y una descripción de las condiciones que puede usar en una consulta de búsqueda, consulte la sección "condiciones de búsqueda" en [consultas de palabras clave y condiciones de búsqueda para la búsqueda de contenido](keyword-queries-and-search-conditions.md#search-conditions).
+    - **Condiciones**: puede agregar condiciones de búsqueda para recibir un conjunto de resultados más pertinente. Cada condición agrega una cláusula a la consulta de búsqueda que se crea y se ejecuta cuando se inicia la búsqueda. Una condición se conecta lógicamente a la consulta de palabras clave (especificada en el cuadro de palabras clave) mediante el operador **c:c**, que tiene una función parecida al operador **Y**. Eso significa que los elementos tienen que satisfacer la consulta de palabra clave y una o más condiciones para que se incluyan en los resultados. De esta manera, las condiciones permiten restringir los resultados. Para obtener una lista y descripciones de las condiciones permitidas en una consulta de búsqueda, vea la sección "Condiciones de búsqueda" en [Consultas de palabras clave y condiciones de búsqueda para la Búsqueda de contenido](keyword-queries-and-search-conditions.md#search-conditions).
     
-       - **Ubicaciones** : elija las ubicaciones de contenido en las que desea realizar la búsqueda.
+       - **Ubicaciones**: elegir las ubicaciones de contenido a buscar
     
-      - **Todas las ubicaciones** : Use esta opción para buscar en todas las ubicaciones de contenido de la organización. Esto incluye el correo electrónico en todos los buzones de Exchange (incluidos todos los buzones inactivos, buzones de todos los grupos de Office 365, buzones para todos los equipos de Microsoft Teams), todas las conversaciones de Skype empresarial, todos los sitios de SharePoint y OneDrive para la empresa (incluidos los sitios para todos los grupos de Office 365 y Microsoft Teams) y los elementos de todas las carpetas públicas de Exchange.
+      - **Todas las ubicaciones**: Seleccione esta opción para buscar en todas las ubicaciones de contenido de su organización. Esto incluye el correo de todos los buzones de Exchange (incluidos todos los buzones inactivos, los buzones de todos los grupos de Office 365 y todos los buzones de Microsoft Teams), todas las conversaciones de Skype Empresarial, todos los sitios de SharePoint y OneDrive para la Empresa (incluidos los sitios para todos los grupos de Office 365 y Microsoft Teams), y los elementos de todas las carpetas públicas de Exchange.
     
-      - **Ubicaciones específicas** : Use esta opción para buscar ubicaciones de contenido específicas. Puede buscar en todas las ubicaciones de contenido de un servicio de Office 365 específico (como buscar en todos los buzones de Exchange o buscar en todos los sitios de SharePoint) o puede buscar ubicaciones específicas en cualquiera de los servicios de Office 365 que se muestran. 
+      - Ubicaciones específicas**: Use esta opción para buscar en ubicaciones de contenido específicas. Puede buscar en todas las ubicaciones de contenido de un servicio específico de Office 365 (por ejemplo, en todos los buzones de Exchange o todos los sitios de SharePoint) o en ubicaciones específicas en cualquiera de los servicios de Office 365 que se muestren. 
     
-        ![Interfaz de usuario para elegir ubicaciones de contenido para buscar](media/9a09708b-f8a2-4382-8c4e-2c610ec33c72.png)
+        ![Interfaz de usuario para elegir ubicaciones de contenido en las que buscar](media/9a09708b-f8a2-4382-8c4e-2c610ec33c72.png)
   
-         También puede agregar grupos de distribución a la lista de buzones de Exchange para realizar búsquedas. Para los grupos de distribución, se busca en los buzones de los miembros del grupo. No se admiten grupos de distribución dinámicos.
+         También puede agregar grupos de distribución a la lista de buzones de Exchange en los que desea buscar. En los grupos de distribución, se busca en los buzones de los miembros del grupo. No se admiten grupos de distribución dinámicos.
     
        > [!NOTE]
-       > Cuando se busca en todas las ubicaciones del buzón o solo en determinados buzones, los datos de otras aplicaciones de Office 365 que se guardan en los buzones de usuario se incluyen al exportar los resultados de una búsqueda de contenido. Estos datos no se incluirán en los resultados de búsqueda estimados y no están disponibles para la vista previa. Se incluye cuando se exportan y se descargan los resultados de la búsqueda. Para obtener más información, vea [contenido almacenado en buzones de correo de Exchange Online](what-is-stored-in-exo-mailbox.md).
+       > Cuando busque en todas las ubicaciones del buzón o solo en buzones específicos, los datos de otras aplicaciones de Office 365 guardados en los buzones de usuario se incluirán en la exportación de resultados de una Búsqueda de contenido. Estos datos no se incluyen en los resultados de búsqueda estimados y no aparecen en la vista previa. Solo se incluyen cuando exporte y descargue los resultados de búsqueda. Para obtener más información, consulte [Contenido almacenado en los buzones de Exchange Online](what-is-stored-in-exo-mailbox.md).
 
     
-6. Una vez configurada la consulta de búsqueda, haga clic en **guardar & ejecutar**.
+6. Una vez que haya configurado la consulta de búsqueda, haga clic en **Guardar y ejecutar**.
     
-7. En la página **Guardar búsqueda** , escriba un nombre para la búsqueda y una descripción opcional que le ayude a identificar la búsqueda. El nombre de la búsqueda tiene que ser único en su organización. 
+7. En la página **Guardar búsqueda**, escriba un nombre y una descripción opcional que le ayude a identificar la búsqueda. El nombre de la búsqueda debe ser único en la organización. 
     
-8. Haga clic en **Guardar** para iniciar la búsqueda. 
+8. A continuación, haga clic en **Guardar** para iniciar la búsqueda. 
     
-    Después de guardar y ejecutar la búsqueda, los resultados devueltos por la búsqueda se muestran en el panel de resultados. En función de la configuración de la vista previa, se mostrarán los resultados de la búsqueda o tendrá que hacer clic en **vista previa de resultados** para verlos. Consulte la siguiente sección para obtener más detalles. 
+    Después de guardar y ejecutar la búsqueda, podrá ver los resultados en el panel de resultados. Según haya configurado la vista previa, los resultados de búsqueda se mostrarán directamente o tendrá que hacer clic en **Vista previa de resultados** para verlos. Consulte la siguiente sección para obtener detalles. 
     
-Para tener acceso a esta búsqueda de contenido de nuevo o tener acceso a otras búsquedas de contenido en la página **búsqueda de contenido** , seleccione la búsqueda y, a continuación, haga clic en **abrir**. 
+Para acceder nuevamente a esta búsqueda de contenido o para ver otras búsquedas de contenido en la página **Búsqueda de contenido**, seleccione la búsqueda y, a continuación, haga clic en **Abrir**. 
   
-Para borrar los resultados o crear otra búsqueda, haga ![clic en](media/O365-MDM-CreatePolicy-AddIcon.gif) agregar icono **nueva búsqueda**. 
+Para borrar los resultados o crear otra búsqueda, haga clic en ![Agregar icono](media/O365-MDM-CreatePolicy-AddIcon.gif) Nueva búsqueda**. 
 
   
 ## <a name="preview-search-results"></a>Vista previa de los resultados de búsqueda
 
-Hay dos opciones de configuración para obtener una vista previa de los resultados de búsqueda. Una vez que haya ejecutado una nueva búsqueda o haya abierto una búsqueda existente, haga clic en * * resultados individuales * * para ver la siguiente configuración de vista previa: 
+Hay dos opciones de configuración para obtener una vista previa de los resultados de búsqueda. Después de ejecutar una búsqueda nueva o abrir una existente, haga clic en ** resultados individuales ** para ver la siguiente configuración de vista previa: 
   
-![Opciones de vista previa de resultados de búsqueda](media/83519477-1c85-4442-8886-481f186fd758.png)
+![Opciones de vista previa de los resultados de búsqueda](media/83519477-1c85-4442-8886-481f186fd758.png)
   
-1. **Obtener vista previa de los resultados automáticamente** : esta configuración muestra los resultados de la búsqueda después de ejecutar una búsqueda.
+1. Vista previa de resultados automáticamente**: muestra los resultados de la búsqueda después de ejecutarla.
     
-2. **Vista previa de resultados manualmente** : esta configuración muestra marcadores de posición en el panel de resultados de búsqueda y muestra el botón **vista previa de resultados** en el que tiene que hacer clic para mostrar los resultados de la búsqueda. Esta es la configuración predeterminada. Ayuda a mejorar el rendimiento de la búsqueda, ya que no muestra automáticamente los resultados de la búsqueda cuando se abre una búsqueda existente. 
+2. Vista previa de resultados manualmente**: muestra marcadores de posición en el panel de resultados de la búsqueda. Para ver los resultados de la búsqueda, debe hacer clic en el botón **Vista previa de resultados**. Esta configuración es la predeterminada. Permite aumentar la rapidez de la búsqueda ya que no tiene que cargar los resultados automáticamente cada vez que abra una búsqueda existente. 
     
-Hay límites relacionados con el número de elementos disponibles para la vista previa. Para obtener más información, consulte [límites de la búsqueda de contenido](limits-for-content-search.md). 
+Existen límites para la cantidad de elementos disponibles en una vista previa. Para más información, vea la sección [Límites de la búsqueda de contenido](limits-for-content-search.md). 
   
-Para obtener una lista de los tipos de archivo compatibles con los que se puede obtener una vista previa, vea [vista previa de los resultados de búsqueda](#previewing-search-results) en la sección "más información sobre la búsqueda de contenido". Si no se admite un tipo de archivo para la vista previa o para descargar una copia de un documento, puede hacer clic en **Descargar archivo original** para descargarlo en el equipo local. Para las páginas Web. aspx, la dirección URL de la página se incluye aunque es posible que no tenga permisos para obtener acceso a la página. 
+Para obtener una lista de los tipos de archivo compatibles con una vista previa, vea [Vista previa de los resultados de búsqueda](#previewing-search-results) en la sección «Más información sobre la búsqueda de contenido». Si un tipo de archivo no es compatible con la vista previa o la opción de descargar una copia del documento, haga clic en **Descargar archivo original** para descargarlo en su propio ordenador. Para las páginas web .aspx se incluye la dirección URL de la página, aunque es posible que no tenga permiso para acceder a ella. 
   
-Además, tenga en cuenta que los elementos no indexados no están disponibles para la vista previa.
+Tenga en cuenta que no se puede obtener una vista previa de los elementos sin indexar.
   
-## <a name="view-information-and-statistics-about-a-search"></a>Ver información y estadísticas sobre una búsqueda
+## <a name="view-information-and-statistics-about-a-search"></a>Ver información y estadísticas sobre las búsquedas
 
-Después de crear y ejecutar una búsqueda de contenido, puede ver estadísticas sobre los resultados de búsqueda estimados. Esto incluye un resumen de los resultados de la búsqueda, las estadísticas de consulta, como el número de ubicaciones de contenido con elementos que coinciden con la consulta de búsqueda, y el nombre de las ubicaciones de contenido que tienen más elementos coincidentes. Puede mostrar estadísticas de una o más búsquedas de contenido. Esto le permite comparar rápidamente los resultados de varias búsquedas y tomar decisiones sobre la eficacia de las consultas de búsqueda.
+Después de crear y ejecutar una búsqueda de contenido, puede ver estadísticas sobre los resultados de búsqueda estimados. Esto incluye un resumen de los resultados de la búsqueda, estadísticas de la consulta —como el número de ubicaciones de contenido con elementos que haya encontrado la consulta— y el nombre de las ubicaciones de contenido con más elementos encontrados. Puede mostrar las estadísticas de una o más búsquedas de contenido. Esto le permite comparar rápidamente los resultados de varias búsquedas y tomar decisiones sobre la efectividad de sus consultas de búsqueda.
   
-También puede descargar las estadísticas de búsqueda y las estadísticas de palabras clave en un archivo CSV. Esto le permite usar las características de filtrado y ordenación de Excel para comparar los resultados y preparar los informes para los resultados de la búsqueda.
+También puede descargar estadísticas de búsqueda y de palabras clave en un archivo CSV. Así, una vez que abra el archivo con Excel podrá usar las opciones de filtrado y ordenación del programa para comparar los resultados, o preparar informes de los resultados de búsqueda.
   
 Para ver las estadísticas de búsqueda:
   
-1. En la página **búsqueda de contenido** , haga clic en **abrir** y, a continuación, haga clic en la búsqueda para la que desea ver las estadísticas. 
+1. En la página **Búsqueda de contenido**, haga clic en **Abrir** y, después, haga clic en la búsqueda cuyas estadísticas desea ver. 
     
-2. En la página flotante, haga clic en **abrir consulta**. 
+2. En la página de control flotante, haga clic en **Abrir consulta**. 
     
-3. En la lista desplegable **resultados individuales** , haga clic en **Perfil de búsqueda**.
+3. En la lista desplegable de **resultados individuales**, haga clic en **Perfil de búsqueda**.
     
-4. En la lista desplegable **tipo** , haga clic en una de las siguientes opciones en función de las estadísticas de búsqueda que desee ver. 
+4. En la lista desplegable **Tipo**, haga clic en una de las siguientes opciones en función de las estadísticas de búsqueda que desee ver. 
     
-  - **Resumen** : muestra estadísticas para cada tipo de ubicaciones de contenido que se han buscado. Este contenido el número de ubicaciones de contenido que contenían los elementos que coincidían con la consulta de búsqueda y el número total y el tamaño de los elementos de resultados de búsqueda. Esta es la configuración predeterminada.
+  - **Resumen**: muestra estadísticas para cada tipo de ubicación de contenido buscada. Las estadísticas mostradas incluyen el número de ubicaciones de contenido con elementos que coinciden con la consulta de búsqueda, y el número total y tamaño de los elementos devueltos por la búsqueda. Esta configuración es la predeterminada.
     
-  - **Consultas** : muestra estadísticas sobre la consulta de búsqueda. Esto incluye el tipo de ubicación de contenido a la que se aplican las estadísticas de consulta, parte de la consulta de búsqueda a la **** que se aplican las estadísticas (tenga en cuenta que Primary indica toda la consulta de búsqueda), el número de ubicaciones de contenido que contienen elementos que hacer coincidir la consulta de búsqueda y el número y tamaño totales y los elementos encontrados (en la ubicación de contenido especificada) que coinciden con la consulta de búsqueda. También se muestran las estadísticas de los elementos sin indexar (también denominados *elementos parcialmente indizados*). Sin embargo, en las estadísticas solo se incluyen los elementos parcialmente indizados de los buzones. Los elementos parcialmente indizados de SharePoint y OneDrive no se incluyen en las estadísticas.
+  - **Consultas**: muestra estadísticas sobre las consultas de búsqueda. Incluye el tipo de ubicación de contenido al que se aplican las estadísticas de la consulta, la parte de la consulta de búsqueda a la que se aplican las estadísticas (aquí, **Primario** se refiere a toda la consulta de búsqueda), el número de ubicaciones de contenido que contienen elementos encontrados por la consulta de búsqueda, y el número total, el tamaño y los elementos encontrados (en la ubicación de contenido definida) que coincidan con la consulta de búsqueda. También se muestran estadísticas de los elementos sin indexar (conocidos como *elementos indexados parcialmente*). Sin embargo, en las estadísticas los únicos elementos indexados parcialmente que se incluyen son los de buzones. No se incluyen, en cambio, los elementos indexados parcialmente de SharePoint y OneDrive.
     
-  - **Ubicaciones principales** : muestra estadísticas sobre el número de elementos que coinciden con la consulta de búsqueda en cada ubicación de contenido. Se muestran las principales 1.000 ubicaciones.
+  - **Ubicaciones principales**: muestra estadísticas sobre el número de elementos que coinciden con la consulta de búsqueda en cada ubicación de contenido. Se mostrarán las 1000 ubicaciones más importantes.
     
-Para obtener información más detallada acerca de las estadísticas de búsqueda, consulte [ver las estadísticas de palabras clave para los resultados de búsqueda de contenido](view-keyword-statistics-for-content-search.md).
+Para saber más sobre las estadísticas de búsqueda, consulte [Ver estadísticas de palabras clave para resultados de búsqueda de contenido](view-keyword-statistics-for-content-search.md).
   
   
 ## <a name="export-search-results"></a>Exportar resultados de búsqueda
 
-Una vez ejecutada correctamente la búsqueda, puede exportar los resultados de la búsqueda a un equipo local. Cuando se exportan los resultados del correo electrónico, se pueden descargar en el equipo como archivos PST o como mensajes individuales (archivos. msg). Al exportar contenido desde sitios de SharePoint y OneDrive, se exportan copias de documentos nativos de Office. También existen otros documentos e informes que se incluyen con los resultados de la búsqueda exportados. También puede exportar el informe de resultados de búsqueda y no los elementos reales.
+Después de que una búsqueda se ejecute correctamente, puede exportar los resultados de búsqueda a un equipo local. Cuando exporte los resultados de correo, puede descargarlos en su equipo como archivos PST o mensajes individuales (archivos .msg). Cuando exporta contenido desde los sitios de SharePoint y OneDrive, se exportan copias de documentos nativos de Office. Los resultados de búsqueda exportados también incluyen otros documentos e informes. Asimismo, puede exportar el informe de resultados de búsqueda (pero no los elementos reales).
   
-Para exportar los resultados de la búsqueda:
+Exportar resultados de búsqueda:
   
-1. En la página **búsqueda de contenido** , haga clic en la búsqueda para la que desea exportar los resultados de la búsqueda. 
+1. En la página **Búsqueda de contenido**, haga clic en la búsqueda cuyos resultados quiere exportar. 
     
-2. En la página flotante, haga ![clic en exportar resultados](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) de búsqueda **más**y, a continuación, haga clic en **exportar resultados**. También puede exportar un informe de resultados de búsqueda.
+2. En la página flotante, haga clic en el ![icono Exportar resultados de búsqueda](media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **Más** y después, haga clic, en **Exportar resultados**. También puede exportar un informe de resultados de búsqueda.
     
-3. Complete las secciones de la página volar en los resultados de la **exportación** . Asegúrese de usar la barra de desplazamiento para ver todas las opciones de exportación. 
+3. Complete las secciones de la página flotante **Exportar resultados. Asegúrese de usar la barra de desplazamiento para ver todas las opciones de exportación. 
     
-Para obtener instrucciones más detalladas y sugerencias para la solución de problemas, consulte:
+Para obtener instrucciones más detalladas y sugerencias para resolver problemas, consulte:
   
 - [Exportar resultados de la búsqueda de contenido](export-search-results.md)
     
 - [Exportar un informe de búsqueda de contenido](export-a-content-search-report.md)
     
   
-## <a name="more-information-about-content-search"></a>Más información acerca de la búsqueda de contenido
+## <a name="more-information-about-content-search"></a>Más información sobre la búsqueda de contenido
 
-Consulte las siguientes secciones para obtener más información acerca de las búsquedas de contenido.
+Vea las siguientes secciones para obtener más información sobre las búsquedas de contenido.
   
 [Límites de búsqueda de contenido](#content-search-limits)
   
-[Creación de una consulta de búsqueda](#building-a-search-query)
+[Crear una consulta de búsqueda](#building-a-search-query)
   
 [Buscar cuentas de OneDrive](#searching-onedrive-accounts)
   
-[Búsqueda de grupos de Microsoft Teams y Office 365](#searching-microsoft-teams-and-office-365-groups)
+[Buscar en grupos de Microsoft Teams y Office 365](#searching-microsoft-teams-and-office-365-groups)
   
-[Buscar buzones inactivos](#searching-inactive-mailboxes)
+[Buscar en buzones inactivos](#searching-inactive-mailboxes)
   
 [Vista previa de los resultados de búsqueda](#previewing-search-results)
   
-[Elementos parcialmente indizados](#partially-indexed-items)
+[Elementos indexados parcialmente](#partially-indexed-items)
   
 ### <a name="content-search-limits"></a>Límites de búsqueda de contenido
 
-- Para obtener una descripción de los límites que se aplican a la característica de búsqueda de contenido, consulte [limits for Content Search](limits-for-content-search.md).
+- Para obtener una descripción de los límites que se aplican a la característica de búsqueda de contenido, consulte [Límites de búsqueda de contenido](limits-for-content-search.md).
     
-- Microsoft recopila información de rendimiento para las búsquedas de contenido ejecutadas por todas las organizaciones de Office 365. Aunque la complejidad de la consulta de búsqueda puede influir en las horas de búsqueda, el factor más importante que afecta a la duración de las búsquedas es el número de buzones buscados. Aunque Microsoft no proporciona un acuerdo de nivel de servicio para los tiempos de búsqueda, en la tabla siguiente se enumeran los tiempos de búsqueda promedio de una búsqueda de contenido basada en el número de buzones que se incluyen en la búsqueda.
+- Microsoft recopila información del rendimiento de las búsquedas de contenido ejecutadas por todas las organizaciones de Office 365. Aunque la complejidad de una consulta de búsqueda puede afectar al tiempo que lleva ejecutarla, en realidad, el factor más determinante es el número de buzones incluidos en la búsqueda. Microsoft no proporciona un acuerdo de nivel de servicio para los tiempos de búsqueda. Sin embargo, en la siguiente tabla le mostramos los tiempos de búsqueda promedio en base al número de buzones.
     
-|**Número de buzones**|**Tiempo medio de búsqueda**|
+|**Número de buzones**|**Promedio de tiempo de búsqueda**|
 |:-----|:-----|
 |100  <br/> |30 segundos  <br/> |
-|1,000  <br/> |de 45 segundos  <br/> |
-|10,000  <br/> |4 minutos  <br/> |
-|25.000  <br/> |10 minutos  <br/> |
-|50.000  <br/> |20 minutos  <br/> |
-|100,000  <br/> |25 minutos  <br/> |
+|1000  <br/> |45 segundos  <br/> |
+|10 000  <br/> |4 minutos  <br/> |
+|25 000  <br/> |10 minutos  <br/> |
+|50 000  <br/> |20 minutos  <br/> |
+|100 000  <br/> |25 minutos  <br/> |
   
-### <a name="building-a-search-query"></a>Creación de una consulta de búsqueda
+### <a name="building-a-search-query"></a>Crear una consulta de búsqueda
 
-Para obtener información detallada sobre cómo crear una consulta de búsqueda, usar operadores de búsqueda booleanos y condiciones de búsqueda, y buscar tipos de información confidencial y contenido compartido con usuarios externos a la organización, vea [consultas de palabras clave y condiciones de búsqueda para la búsqueda de contenido ](keyword-queries-and-search-conditions.md).
+Para obtener información detallada sobre cómo crear una consulta de búsqueda, usar operadores booleanos y condiciones de búsqueda, y buscar información confidencial y contenido compartido con usuarios fuera de la organización, vea [Consultas de palabras clave y condiciones de búsqueda para la Búsqueda de contenido](keyword-queries-and-search-conditions.md).
   
 Tenga en cuenta lo siguiente cuando use la lista de palabras clave para crear una consulta de búsqueda.
   
-- Debe activar la casilla de verificación **Mostrar lista de palabras clave** y, a continuación, escribir cada palabra clave en una fila separada para crear una consulta de búsqueda en la que el operador **or** Conecte las palabras clave (o frases de palabra clave) de cada fila. Si pega una lista de palabras clave en el cuadro palabra clave o presiona la tecla **entrar** después de escribir una palabra clave, no se conectará al operador **or** . A continuación, se muestran ejemplos incorrectos y correctos de cómo agregar una lista de palabras clave. 
+- Debe seleccionar la casilla **Mostrar la lista de palabras clave** y, a continuación, escribir cada palabra clave en una fila. Si escribe varias palabras clave en una misma fila, quedarán relacionadas por el operador **O. Si pega una lista de palabras clave en el cuadro de palabras clave o presiona **Entrar** después de escribir cada palabra clave, estas no quedarán conectadas por el operador **O**. Estos son algunos ejemplos incorrectos y correctos de cómo agregar una lista de palabras clave. 
     
-    **Correctas**
+    **Incorrecto:**
     
-    ![La forma incorrecta de aplicar formato a una lista de palabras clave (pegando la lista en el cuadro palabra clave)](media/fb54e3df-232a-439a-b3d7-27a60ec76a4c.png)
+    ![La forma incorrecta de dar formato a una lista de palabras clave (pegar la lista en el cuadro de palabras clave)](media/fb54e3df-232a-439a-b3d7-27a60ec76a4c.png)
   
-    **Corregi**
+    **Correcto:**
     
-    ![La forma correcta de dar formato a una lista de palabras clave (seleccionando CheckBox y, a continuación, lista de pegado)](media/5d511a7b-c1f9-499c-bffe-e075bfc9adec.png)
+    ![La forma correcta de dar formato a una lista de palabras clave (seleccionar la casilla y, después, pegar la lista)](media/5d511a7b-c1f9-499c-bffe-e075bfc9adec.png)
   
-- También puede preparar una lista de palabras clave o frases de palabras clave en un archivo de Excel o en un archivo de texto sin formato y, a continuación, copiar y pegar la lista en la lista de palabras clave. Para ello, debe activar la casilla **Mostrar lista de palabras clave** . A continuación, haga clic en la primera fila de la lista de palabras clave y pegue la lista. Cada línea del archivo de texto o Excel se pega en una fila independiente en la lista de palabras clave. 
+- También puede crear una lista de palabras clave o frases clave en un archivo de Excel o en un archivo de texto sin formato y, después, pegarla en la lista de palabras clave. Para hacerlo, seleccione la casilla **Mostrar lista de palabras clave**. Después, haga clic en la primera fila de la lista de palabras clave y pegue la lista. Cada línea del archivo de texto o Excel se pegará en la línea correspondiente de la lista de palabras clave. 
     
-- Después de crear una consulta con la lista de palabras clave, es una buena idea comprobar la sintaxis de la consulta de búsqueda para que la consulta de búsqueda sea la deseada. En la consulta de búsqueda que se muestra en **consulta** en el panel de detalles, las palabras clave están separadas por el texto **(c:s)**. Esto indica que las palabras clave están conectadas por un operador lógico similar en funcionalidad al operador **or** . De forma similar, si la consulta de búsqueda incluye condiciones, las palabras clave y las condiciones están separadas por el texto **(c:c)**. Esto indica que las palabras clave están conectadas a las condiciones con un operador lógico similar en funcionalidad al operador **and** . Este es un ejemplo de la consulta de búsqueda (que se muestra en el panel de detalles) que se obtiene al usar la lista de palabras clave y una condición. 
+- Después de crear la consulta con la lista de palabras clave, es recomendable comprobar la sintaxis de la consulta para asegurarse de que es lo que desea buscar. En la consulta de búsqueda, que puede ver debajo de **Consulta** en el panel de detalles, las palabras clave quedan separadas por (c:s)**. Esto significa que están conectadas por un operador lógico similar al operador **O**. Del mismo modo, si la consulta de búsqueda incluye condiciones, las palabras clave aparecen separadas de las condiciones por **(c:c)**. Esto significa que están conectadas a las condiciones por un operador lógico similar a **Y**. Este ejemplo muestra una consulta de búsqueda (situada en el panel de detalles) obtenida al usar la lista de palabras clave con una condición. 
     
-    ![Ejemplo de la consulta que se crea al usar la lista de palabras clave y una condición](media/b463750c-57fa-4602-9fed-0d5a420db3ad.png)
+    ![Ejemplo de consulta creada utilizando la lista de palabras clave y una condición](media/b463750c-57fa-4602-9fed-0d5a420db3ad.png)
   
-- Cuando se ejecuta una búsqueda de contenido, Office 365 comprueba automáticamente la consulta de búsqueda en busca de caracteres no admitidos y de operadores booleanos que podrían no estar en mayúsculas. Los caracteres no admitidos suelen estar ocultos y, por lo general, causan un error de búsqueda o devuelven resultados no deseados. Para obtener más información acerca de los caracteres no admitidos que se comprueban, vea [comprobar si hay errores en la consulta de búsqueda de contenido](check-your-content-search-query-for-errors.md).
+- Cuando ejecuta una búsqueda de contenido, Office 365 comprueba automáticamente la búsqueda para verificar que no haya caracteres no admitidos ni operadores booleanos en minúsculas. Los caracteres no admitidos suelen estar ocultos y pueden provocar un error de búsqueda o devolver resultados no deseados. Para obtener más información acerca de la verificación de caracteres no compatibles, vea Comprobar si hay errores en la consulta de búsqueda de contenido](check-your-content-search-query-for-errors.md).
     
-- Si tiene una consulta de búsqueda que contiene palabras clave para caracteres que no son ingleses (como caracteres chinos), puede hacer clic en **idioma de consulta, idioma de consulta de país o región**![, icono de](media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png) país o región en búsqueda de contenido y seleccionar un valor del código de referencia cultural del país de idioma para la búsqueda. El idioma o región predeterminados es neutro. ¿Cómo se puede conocer si es necesario cambiar la configuración de idioma para una búsqueda de contenido? Si algunas ubicaciones de contenido contienen caracteres que no son del alfabeto inglés que está buscando, pero la búsqueda no devuelve resultados, la configuración de idioma puede ser la causa. 
+- Si su consulta de búsqueda contiene palabras clave con caracteres especiales (que no pertenecen al alfabeto inglés), puede hacer clic en **Consulta idioma-país/región**![el icono Consulta idioma-país/región](media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png) y seleccionar el código cultural del idioma y país relevantes para la búsqueda. Por defecto, la versión del idioma/región es la neutra. ¿Cómo saber si es necesario cambiar la configuración de idioma para una búsqueda de contenido? Si sabe que las ubicaciones de contenido contienen los caracteres especiales que busca, pero la búsqueda no devuelve ningún resultado, la configuración de idioma puede ser la causa. 
   
-### <a name="searching-onedrive-accounts"></a>Buscar cuentas de OneDrive
+### <a name="searching-onedrive-accounts"></a>Buscar en cuentas de OneDrive
 
-- Para recopilar una lista de las direcciones URL de los sitios de OneDrive de la organización, vea [crear una lista de todas las ubicaciones de onedrive en la organización](https://support.office.com/article/8e200cb2-c768-49cb-88ec-53493e8ad80a). Este script de este artículo crea un archivo de texto que contiene una lista de todos los sitios de OneDrive. Para ejecutar este script, tiene que instalar y usar el shell de administración de SharePoint Online. Asegúrese de anexar la dirección URL para el dominio de mi sitio de la organización en cada sitio de OneDrive que desee buscar. Este es el dominio que contiene todos los OneDrive; por ejemplo, `https://contoso-my.sharepoint.com`. Este es un ejemplo de una dirección URL para el sitio de OneDrive de `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`un usuario:.
+- Para obtener una lista de las direcciones URL de los sitios de OneDrive de su organización, vea Crear una lista de todas las ubicaciones de OneDrive en la organización](https://support.office.com/article/8e200cb2-c768-49cb-88ec-53493e8ad80a). El script en este artículo crea un archivo de texto que contiene una lista de todos los sitios de OneDrive. Para ejecutar este script, tiene que instalar y usar el Shell de SharePoint Online Management. Asegúrese de anexar la dirección URL para el dominio MiSitio de su organización a cada sitio de OneDrive que quiera buscar. Este es el dominio que contiene todos los sitios OneDrive; por ejemplo, `https://contoso-my.sharepoint.com`. Este es un ejemplo de una dirección URL para un sitio de usuario de OneDrive: `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`.
     
-    En el caso poco probable de que cambie el nombre principal de usuario (UPN) de una persona, la dirección URL de su ubicación de OneDrive se cambia para incorporar el nuevo UPN. Si esto ocurre, tiene que modificar una búsqueda de contenido agregando la nueva dirección URL de OneDrive del usuario y quitando la antigua.
+    En el caso poco habitual de que cambie el nombre principal de usuario (UPN) de una persona, la dirección URL de su ubicación de OneDrive cambiará para incorporar el nuevo UPN. Si esto ocurre, tendrá que modificar la búsqueda de contenido agregando la nueva dirección URL de OneDrive del usuario y eliminando la anterior.
   
-### <a name="searching-microsoft-teams-and-office-365-groups"></a>Búsqueda de grupos de Microsoft Teams y Office 365
+### <a name="searching-microsoft-teams-and-office-365-groups"></a>Buscar en Microsoft Teams y Grupos de Office 365
 
-Puede buscar en el buzón de correo asociado con un grupo de Office 365 o un equipo de Microsoft. Debido a que Microsoft Teams se basa en los grupos de Office 365, la búsqueda es similar. En ambos casos, solo se busca en el buzón de grupo o de equipo. No se busca en los buzones de los miembros del equipo o del grupo. Para realizar búsquedas, deberá agregarlas específicamente a la búsqueda.
+Puede buscar en el buzón asociado a un Grupo de Office 365 o Microsoft Teams. Como Microsoft Teams está basado en los Grupos de Office 365, la búsqueda en ambos es similar. En ambos casos, solo se busca en el buzón de grupo o de equipo. No se busca en los buzones del grupo o de los miembros del equipo. Si quiere buscar en estos, debe agregarlos específicamente a la búsqueda.
   
-Tenga en cuenta lo siguiente cuando busque contenido en Microsoft Teams y grupos de Office 365.
+Tenga en cuenta lo siguiente al buscar contenido en Microsoft Teams y Grupos de Office 365:
   
-- Para buscar el contenido que se encuentra en Teams and Office 365 grupos, tiene que especificar el buzón de correo y el sitio de SharePoint que están asociados con un equipo o grupo.
+- Para buscar contenido ubicado en Teams y Grupos de Office 365, debe especificar el buzón y el sitio de SharePoint asociados a un equipo o grupo.
     
-- Ejecute el cmdlet **Get-UnifiedGroup** en Exchange Online para ver las propiedades de un equipo o un grupo de Office 365. Esta es una buena forma de obtener la dirección URL del sitio que está asociado con un equipo o un grupo. Por ejemplo, el siguiente comando muestra las propiedades seleccionadas de un grupo de Office 365 llamado equipo de liderazgo Senior: 
+- Ejecute el cmdlet Get-UnifiedGroup** de Exchange Online para ver las propiedades de un equipo o grupo de Office 365. Este es un buen método para obtener la dirección URL del sitio asociado a un equipo o un grupo. Por ejemplo, el comando siguiente muestra las propiedades seleccionadas de un grupo de Office365 denominado Senior Leadership Team: 
     
   ```
   Get-UnifiedGroup "Senior Leadership Team" | FL DisplayName,Alias,PrimarySmtpAddress,SharePointSiteUrl
@@ -250,73 +250,73 @@ Tenga en cuenta lo siguiente cuando busque contenido en Microsoft Teams y grupos
   ```
 
     > [!NOTE]
-    > Para ejecutar el cmdlet **Get-UnifiedGroup** , debe tener asignado el rol destinatarios con permiso de vista en Exchange online o ser miembro de un grupo de roles que tenga asignado el rol destinatarios con permiso de vista. 
+    > Para ejecutar el cmdlet **Get-UnifiedGroup** debe tener asignado el rol de destinatarios con permiso de vista en Exchange Online o ser un miembro de un grupo de roles que tenga asignado el rol de destinatarios con permiso de vista. 
   
-- Cuando se realiza una búsqueda en el buzón de un usuario, no se buscará en ningún equipo o grupo de Office 365 del que el usuario sea miembro. De forma similar, cuando se realiza una búsqueda en un equipo o un grupo de Office 365, solo se busca en el buzón de grupo y el sitio de grupo que especifique. Los buzones y las cuentas de OneDrive para la empresa de los miembros del grupo no se buscan a menos que los agregue explícitamente a la búsqueda.
+- Cuando se busca en el buzón de un usuario, no se buscará en los equipos o grupos de Office365 a los que pertenece dicho usuario. De forma similar, al buscar en un equipo o en un grupo de Office 365, solo se busca en el buzón de grupo y en el sitio de grupo que especifique. Tampoco se busca en los buzones y las cuentas de OneDrive para la Empresa de los miembros del grupo a menos que los agregue explícitamente a la búsqueda.
     
-- Para obtener una lista de los miembros de un equipo o un grupo de Office 365, puede ver las propiedades de la página de **grupos principales \> ** en el centro de administración de Microsoft 365. Como alternativa, puede ejecutar el siguiente comando en Exchange Online PowerShell: 
+- Si quiere obtener una lista de los miembros de un equipo o grupo de Office 365 puede ver las propiedades en la página **Inicio \> Grupos** del Centro de administración de Microsoft 365. Además, puede ejecutar el comando siguiente en PowerShell de Exchange Online: 
     
   ```
   Get-UnifiedGroupLinks <group or team name> -LinkType Members | FL DisplayName,PrimarySmtpAddress 
   ```
 
     > [!NOTE]
-    > Para ejecutar el cmdlet **Get-UnifiedGroupLinks** , debe tener asignado el rol destinatarios con permiso de vista en Exchange online o ser miembro de un grupo de roles que tenga asignado el rol destinatarios con permiso de vista. 
+    > Para ejecutar el cmdlet **Get-UnifiedGroupLinks** debe tener asignado el rol de destinatarios con permiso de vista en Exchange Online o ser un miembro de un grupo de roles que tenga asignado el rol de destinatarios con permiso de vista. 
   
-- Las conversaciones que forman parte de un canal de Microsoft Teams se almacenan en el buzón de correo que está asociado al equipo. De forma similar, los archivos que los miembros del equipo comparten en un canal se almacenan en el sitio de SharePoint del equipo. Por lo tanto, tiene que agregar el buzón de equipo y el sitio de SharePoint como una ubicación de contenido para buscar conversaciones y archivos en un canal.
+- Las conversaciones de un canal de Teams se almacenan en el buzón de correo asociado al equipo. Asimismo, los archivos que los miembros del equipo comparten en un canal se almacenan en el sitio de SharePoint del equipo. Por lo tanto, tiene que agregar el buzón de equipo y el sitio de SharePoint como una ubicación de contenido para buscar conversaciones y archivos en un canal.
     
-- Como alternativa, las conversaciones que forman parte de la lista de chats en Microsoft Teams se almacenan en el buzón de correo de Exchange online de los usuarios que participan en el chat. Y los archivos que un usuario comparte en conversaciones de chat se almacenan en la cuenta de OneDrive para la empresa del usuario que comparte el archivo. Por lo tanto, tiene que agregar los buzones de usuario individuales y las cuentas de OneDrive para la empresa como ubicaciones de contenido para buscar conversaciones y archivos en la lista de chats.
+- Por otro lado, las conversaciones que forman parte de la lista de chat en Teams se almacenan en el buzón de Exchange Online de los usuarios que participan en el chat. Y los archivos que un usuario comparte en las conversaciones de chat se almacenan en la cuenta de OneDrive para la Empresa del usuario que comparte el archivo. Por lo tanto, tiene que agregar el buzón de usuario individual y las cuentas de OneDrive para la Empresa como ubicaciones de contenido para buscar conversaciones y archivos en la lista de chats.
     
     > [!NOTE]
-    > En una implementación híbrida de Exchange, los usuarios con un buzón de correo local pueden participar en conversaciones que forman parte de la lista de chats de Microsoft Teams. En este caso, el contenido de estas conversaciones también se puede buscar porque se guarda en un área de almacenamiento basada en la nube (denominada *buzón basado en la nube para los usuarios locales*) para los usuarios que tienen un buzón local. Para obtener más información, vea [Buscar buzones de correo basados en la nube para usuarios locales en Office 365](search-cloud-based-mailboxes-for-on-premises-users.md).
+    > En una implementación híbrida de Exchange, los usuarios con buzones locales podrían participar en conversaciones que forman parte de la lista de chats de Teams. En este caso, el contenido de estas conversaciones también se puede buscar ya que se guarda en un área de almacenamiento en la nube (*el buzón basado en la nube para usuarios locales*) para aquellos usuarios que tienen un buzón local. Para obtener más información, vea Búsqueda en buzones de correo basados en la nube para usuarios locales en Office 365](search-cloud-based-mailboxes-for-on-premises-users.md).
   
-- Cada canal de equipo o equipo contiene un wiki para la toma de notas y la colaboración. El contenido de la wiki se guarda automáticamente en un archivo con formato. mht. Este archivo se almacena en la biblioteca de documentos de datos wiki de Microsoft Teams en el sitio de SharePoint del equipo. Puede usar la herramienta de búsqueda de contenido para buscar en el sitio wiki especificando el sitio de SharePoint del equipo como la ubicación de contenido en la que se va a buscar. 
+- Cada equipo o canal de equipo contiene una wiki para tomar notas y colaborar. El contenido de esta se guarda automáticamente en un archivo con un formato .mht. Este archivo se almacena en la biblioteca de documentos de Datos Wiki de Teams en el sitio de SharePoint del equipo. Puede usar la herramienta de Búsqueda de contenido para buscar en la wiki. Para ello establezca el sitio de SharePoint del equipo como la ubicación de contenido en la que buscar. 
     
     > [!NOTE]
-    > La capacidad de buscar un equipo o un canal (cuando se realiza una búsqueda en el sitio de SharePoint del equipo) se presentó el 22 de junio de 2017. Las páginas wiki que se guardaron o actualizaron en esa fecha o después están disponibles para su búsqueda. Las páginas wiki que se guardaron o actualizaron por última vez antes de esa fecha no están disponibles para la búsqueda. 
+    > La función de búsqueda en el wiki de un equipo o un canal (cuando se busca en el sitio de SharePoint del grupo) se publicó el 22 de junio de 2017. Solo puede buscar en las páginas wiki guardadas o actualizadas en esa fecha o posteriores. Las páginas wiki guardadas o actualizadas por última vez antes de esa fecha no están disponibles para la búsqueda. 
  
-- La información de Resumen de las reuniones y las llamadas de un canal de Microsoft Teams también se almacena en los buzones de correo de los usuarios que marcaron la reunión o la llamada. Esto significa que puede usar la búsqueda de contenido para realizar búsquedas en estos registros de resumen. La información de resumen incluye: 
+- La información de resumen de reuniones y llamadas de un canal de equipo se almacena también en los buzones de los usuarios que entraran en la reunión o llamada. Esto significa que puede usar la Búsqueda de contenido para buscar en estos registros de resumen. Esta información de resumen incluye: 
   
   - Fecha, hora de inicio, hora de finalización y duración de una reunión o llamada
 
-  - La fecha y la hora en que cada participante se unió o abandonó la reunión o llamada
+  - La fecha y hora en la que cada participante se incorporó o abandonó la reunión o llamada
 
   - Llamadas enviadas al correo de voz
 
-  - Llamadas perdidas o no respondidas
+  - Llamadas perdidas o sin responder
 
   - Transferencias de llamadas, que se representan como dos llamadas independientes
 
-  Las reuniones y los registros de Resumen de llamadas pueden tardar hasta 8 horas en estar disponibles para su búsqueda.
+  La opción de buscar en resúmenes de reuniones y llamadas puede tardar hasta 8 horas en estar disponible.
 
-  En los resultados de la búsqueda, los resúmenes de las reuniones se identifican como **reuniones** en el **campo tipo**y los resúmenes de llamadas se identifican como **llamadas**. Además, las conversaciones que forman parte de un canal de Microsoft Teams y los chats 1xN se identifican como **mensajería instantánea** en el campo **tipo** .
+  En los resultados de búsqueda, los resúmenes de reunión se identifican como **Reunión** en el **campo Tipo** y los resúmenes de llamadas se identifican como **Llamada**. Asimismo, las conversaciones que forman parte de un canal de Teams y los chats de Teams (conocidos como 1xN) se identifican como **Mensajería instantánea en el campo **Tipo**.
   
-  ![Las reuniones de Microsoft Teams, las llamadas y los chats de 1xN se identifican en el campo tipo](media/O365-ContentSearch-Teams-MessageKind.png)
+  ![Las reuniones de Teams, las llamadas y los chats 1xN se identifican en el campo Tipo](media/O365-ContentSearch-Teams-MessageKind.png)
 
-- Puede usar la propiedad email de **Kind** o la condición de búsqueda **tipo de mensaje** para buscar contenido en Teams de forma específica. 
+- Puede usar la propiedad de correo **Tipo** o la condición de búsqueda **Tipo de mensaje** para buscar contenido en Teams de forma más específica. 
   
-  - Para usar la propiedad **Kind** como parte de la consulta de búsqueda de palabras clave, escriba `kind:microsoftteams`en el cuadro **palabras clave** de una consulta de búsqueda.
+  - Para usar la propiedad **Tipo** como parte de la consulta de búsqueda de palabras clave, escriba  en el cuadro de **palabras clave** de una consulta de búsqueda.
 
-    ![Use el tipo: Microsoft Teams en el cuadro palabras clave](media/O365-ContentSearch-Teams-Keywords.png)
+    ![Escriba kind:microsoftteams en el cuadro de palabras clave](media/O365-ContentSearch-Teams-Keywords.png)
   
-  - Para usar una condición de búsqueda, agregue la condición de **tipo de mensaje** y `microsoftteams`use el valor. 
+  - Para usar una condición de búsqueda, agregue la condición de Tipo de mensaje** y use el valor `microsoftteams`. 
 
-    ![Use la condición de tipo de mensaje con el valor Microsoft Teams.](media/O365-ContentSearch-Teams-MessageKindCondition.png)
+    ![Use la condición de tipo de mensaje con el valor microsoftteams.](media/O365-ContentSearch-Teams-MessageKindCondition.png)
 
-Tenga en cuenta que las condiciones se conectan lógicamente a la consulta de palabra clave por el operador **and** . Esto significa que un elemento debe coincidir con la consulta de palabra clave y la condición de búsqueda que se va a devolver en los resultados de la búsqueda. Para obtener más información, vea la sección "instrucciones para usar condiciones" en [consultas de palabras clave y condiciones de búsqueda para la búsqueda de contenido.](keyword-queries-and-search-conditions.md#guidelines-for-using-conditions)
+Tenga en cuenta que las condiciones están conectadas de forma lógica a la consulta de palabra clave por el operador **Y**. Esto significa que un elemento tiene que coincidir con la consulta de la palabra clave y con la condición de búsqueda para que aparezca en los resultados de la búsqueda. Para obtener más información, vea la sección de «Guías para utilizar condiciones» en [Consultas de palabras clave y condiciones de búsqueda para la búsqueda de contenido](keyword-queries-and-search-conditions.md#guidelines-for-using-conditions).
 
   
-### <a name="searching-inactive-mailboxes"></a>Buscar buzones inactivos
+### <a name="searching-inactive-mailboxes"></a>Buscar en buzones inactivos
 
-Puede buscar buzones inactivos en una búsqueda de contenido. Para obtener una lista de los buzones inactivos en su organización, ejecute el `Get-Mailbox -InactiveMailboxOnly` comando en Exchange Online PowerShell. Como alternativa, puede ir a **retención** de **gobierno** \> de datos en el centro de seguridad & cumplimiento y, a continuación, hacer clic](media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \> en **más**![barra de navegación para los **buzones**inactivos.
+Puede buscar en buzones inactivos en una búsqueda de contenido. Para obtener una lista de los buzones inactivos de la organización, ejecute el comando `Get-Mailbox -InactiveMailboxOnly` en Exchange Online PowerShell. Como alternativa, puede ir a **Gobierno de datos** \> **Retención** en el Centro de cumplimiento y seguridad y, a continuación, hacer clic en **Más**![Puntos suspensivos en la barra de navegación](media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \> **Buzones inactivos**.
   
-Estas son algunas de las cosas que debe tener en cuenta al buscar buzones inactivos.
+A continuación, se detallan algunos aspectos que se deben tener en cuenta al buscar buzones inactivos:
   
-- Si una búsqueda de contenido incluye un buzón de correo de usuario y ese buzón de correo se convierte en inactivo, la búsqueda de contenido continuará buscando en el buzón inactivo cuando vuelva a ejecutar la búsqueda después de que se vuelva inactiva.
+- Si una búsqueda de contenido incluye un buzón de usuario que deja de estar activo, la búsqueda de contenido seguirá buscando en el buzón inactivo al volver a ejecutarla después del cambio de estado.
     
-- A veces, un usuario puede tener un buzón activo y un buzón inactivo con la misma dirección SMTP. En este caso, solo se busca en el buzón específico que seleccione como ubicación para una búsqueda de contenido. Es decir, si agrega el buzón de un usuario a una búsqueda, no puede suponer que se busca en los buzones activos e inactivos. Solo se busca en el buzón que agregue explícitamente a la búsqueda.
+- En algunas ocasiones, un usuario puede tener un buzón activo y uno inactivo con la misma dirección SMTP. En ese caso, solo se buscarán los buzones específicos que seleccione como ubicaciones en una búsqueda de contenido. Es decir, si agrega el buzón de un usuario a una búsqueda, no dé por sentado que se buscará tanto en el buzón activo como el inactivo. Solo se buscará en el buzón que agregue explícitamente a la búsqueda.
     
-- Le recomendamos encarecidamente que Evite tener un buzón activo y un buzón inactivo con la misma dirección SMTP. Si necesita volver a usar la dirección SMTP asignada a un buzón inactivo, se recomienda que recupere el buzón inactivo o que restaure el contenido de un buzón inactivo en un buzón activo (o el archivo de un buzón activo) y, a continuación, elimine la inactiva bandeja. Para obtener más información, vea uno de los siguientes temas:
+- Le recomendamos que no tenga un buzón activo y un buzón inactivo con la misma dirección SMTP. Si necesita volver a usar la dirección SMTP que está asignada a un buzón inactivo, le recomendamos que recupere el buzón inactivo o restaure el contenido de un buzón inactivo a uno activo (o el archivo de un buzón activo) y, después, elimine el buzón inactivo. Para obtener más información, vea uno de los siguientes temas:
     
   - [Recuperar un buzón inactivo en Office 365](recover-an-inactive-mailbox.md)
     
@@ -327,26 +327,26 @@ Estas son algunas de las cosas que debe tener en cuenta al buscar buzones inacti
   
 ### <a name="previewing-search-results"></a>Vista previa de los resultados de búsqueda
 
-Puede obtener una vista previa de los tipos de archivo compatibles en el panel de vista previa. Si no se admite un tipo de archivo, tiene que descargar una copia del archivo en el equipo local para poder verlo. Se admiten los siguientes tipos de archivo, que se pueden mostrar en la vista previa del panel de resultados de búsqueda.
+Puede obtener una vista previa de los tipos de archivo compatibles en el panel de vista previa. Si un tipo de archivo no es compatible, necesitará descargar una copia en el equipo local para verlo. Se admiten los siguientes tipos de archivo y se puede obtener una vista previa en el panel Resultados de búsqueda.
   
-- . txt,. html,. MHTML
+- .txt, .html, .mhtml
     
-- . eml
+- .eml
     
-- . doc,. docx y. docm
+- .doc, .docx, .docm
     
-- . pptm,. pptx
+- .pptm, .pptx
     
 - .pdf
     
-Además, se admiten los siguientes tipos de contenedor de archivos. Puede ver la lista de archivos del contenedor en el panel de vista previa.
+Asimismo, se admiten los siguientes tipos de contenedor de archivo. Puede ver la lista de archivos del contenedor en el panel de vista previa.
   
 - .zip
     
-- . gzip
+- .gzip
     
-### <a name="partially-indexed-items"></a>Elementos parcialmente indizados
+### <a name="partially-indexed-items"></a>Elementos indexados parcialmente
 
-- Como se ha explicado anteriormente, los elementos parcialmente indizados de los buzones se incluyen en los resultados de búsqueda estimados. Los elementos parcialmente indizados de SharePoint y OneDrive no se incluyen en los resultados de búsqueda estimados. 
+- Como se ha explicado anteriormente, los elementos indexados parcialmente en los buzones se incluyen en los resultados de búsqueda estimados. En cambio, los elementos indexados parcialmente de SharePoint y OneDrive no se incluyen. 
     
-- Si un elemento parcialmente indizado coincide con la consulta de búsqueda (porque otras propiedades de mensaje o documento cumplen los criterios de búsqueda), no se incluye en el número estimado de elementos sin indexar. Si un elemento parcialmente indizado se excluye por los criterios de búsqueda, no se incluye en el número estimado de elementos sin indexar. Para obtener más información, vea [elementos parcialmente indizados en la búsqueda de contenido en Office 365](partially-indexed-items-in-content-search.md).
+- Si un elemento parcialmente indexado coincide con la búsqueda de consulta (porque otras propiedades del mensaje o documento cumplen los criterios de búsqueda), no se incluirá en el número estimado de elementos sin indexar. Si el criterio de búsqueda excluye un elemento parcialmente indexado, no se incluye en el número estimado de elementos sin indexar. Para más información, consulte [Elementos parcialmente indexados en la búsqueda de contenido en Office 365](partially-indexed-items-in-content-search.md)
