@@ -13,12 +13,12 @@ ms.assetid: 56fee1c7-dc37-470e-9b09-33fff6d94617
 ms.collection:
 - M365-security-compliance
 description: 'Resumen: Este artículo describe cómo usa DomainKeys Identified Mail (DKIM) con Office 365 para asegurarse de que los sistemas de correo electrónico de destino confían en los mensajes enviados desde su dominio personalizado.'
-ms.openlocfilehash: 40b7505b18db697ffb47932fba0f10c6a53b340c
-ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
+ms.openlocfilehash: d47a1e629952d65acdd9ecf05e4e521684775ae9
+ms.sourcegitcommit: d4acce11a26536b9d6ca71ba4933fc95136198a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "36222750"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36407929"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain-in-office-365"></a>Usar DKIM para validar el correo electrónico saliente enviado desde su dominio personalizado en Office 365
 
@@ -169,7 +169,7 @@ Una vez que haya publicado los registros CNAME en DNS, está preparado para habi
 2. Ejecute el siguiente comando:
     
     ```
-    New-DkimSigningConfig -DomainName <domain> -Enabled $true
+    Set-DkimSigningConfig -DomainName <domain> -Enabled $true
     ```
 
    Donde _domain_ es el nombre del dominio personalizado para el que quiere habilitar la firma DKIM. 
@@ -177,7 +177,7 @@ Una vez que haya publicado los registros CNAME en DNS, está preparado para habi
    Por ejemplo, para el dominio contoso.com:
     
     ```
-    New-DkimSigningConfig -DomainName contoso.com -Enabled $true
+    Set-DkimSigningConfig -DomainName contoso.com -Enabled $true
     ```
 
 #### <a name="to-confirm-dkim-signing-is-configured-properly-for-office-365"></a>Para confirmar que la firma DKIM está configurada correctamente en Office 365

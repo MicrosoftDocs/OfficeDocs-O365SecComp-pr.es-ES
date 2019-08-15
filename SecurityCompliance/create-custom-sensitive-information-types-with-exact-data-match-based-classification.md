@@ -14,18 +14,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Crear un tipo de información confidencial personalizado con clasificación basada en coincidencia exacta de datos
-ms.openlocfilehash: 77a30f7db24e903e7d6859d10edb0cc186441494
-ms.sourcegitcommit: 28c104fb6a72d624fab5ac6178b5b0df9fa81484
+ms.openlocfilehash: a937d5ccc947ee9322c5796cf49e9a8ff3eead16
+ms.sourcegitcommit: d4acce11a26536b9d6ca71ba4933fc95136198a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "36297768"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36407912"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Crear un tipo de información confidencial personalizado con clasificación basada en coincidencia exacta de datos
 
 ## <a name="overview"></a>Información general
 
-Los [tipos de información confidencial](https://review.docs.microsoft.com/es-ES/office365/securitycompliance/custom-sensitive-info-types) se usan para ayudar a evitar el uso compartido accidental o inadecuado de información confidencial. Como administrador, puede usar el  [Centro de seguridad y cumplimiento](https://review.docs.microsoft.com/es-ES/office365/securitycompliance/create-a-custom-sensitive-information-type) o [PowerShell](https://review.docs.microsoft.com/es-ES/office365/securitycompliance/create-a-custom-sensitive-information-type-in-scc-powershell) para definir un tipo de información confidencial basado en patrones, evidencia (palabras clave como *empleado*, *insignia*, *id.*, etc.), proximidad de caracteres (la similitud de la evidencia y los caracteres en un patrón determinado) y niveles de confianza. Estos tipos de información confidencial satisfacen las necesidades de negocio para muchas organizaciones.
+Los [tipos de información confidencial](https://docs.microsoft.com/es-ES/office365/securitycompliance/custom-sensitive-info-types) se usan para ayudar a evitar el uso compartido accidental o inadecuado de información confidencial. Como administrador, puede usar el  [Centro de seguridad y cumplimiento](https://docs.microsoft.com/es-ES/office365/securitycompliance/create-a-custom-sensitive-information-type) o [PowerShell](https://docs.microsoft.com/es-ES/office365/securitycompliance/create-a-custom-sensitive-information-type-in-scc-powershell) para definir un tipo de información confidencial basado en patrones, evidencia (palabras clave como *empleado*, *insignia*, *id.*, etc.), proximidad de caracteres (la similitud de la evidencia y los caracteres en un patrón determinado) y niveles de confianza. Estos tipos de información confidencial satisfacen las necesidades de negocio para muchas organizaciones.
 
 Pero, ¿qué pasa si quiere un tipo de información confidencial que use valores de datos exactos, en lugar de coincidir solo con patrones genéricos? Con la clasificación basada en coincidencia exacta de datos (EDM), puede crear un tipo de información confidencial personalizado que está diseñado para:
 
@@ -38,11 +38,11 @@ Pero, ¿qué pasa si quiere un tipo de información confidencial que use valores
 
 ![Clasificación basada en EDM](media/EDMClassification.png)
 
-La clasificación basada en EDM le permite crear tipos de información confidencial personalizados que hacen referencia a valores exactos en una base de datos de información confidencial. La base de datos puede ser actualizada diaria o semanalmente, y puede contener hasta 10 millones de filas de datos. Así que mientras los empleados, clientes o pacientes van y vienen y cambian los registros, los tipos de información confidencial se mantienen al día y aplicables. Y puede usar la clasificación basada en EDM con directivas, como [directivas de prevención de pérdida de datos](https://review.docs.microsoft.com/es-ES/office365/securitycompliance/data-loss-prevention-policies) (DLP) o [directivas de archivo de Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/data-protection-policies).
+La clasificación basada en EDM le permite crear tipos de información confidencial personalizados que hacen referencia a valores exactos en una base de datos de información confidencial. La base de datos puede ser actualizada diaria o semanalmente, y puede contener hasta 10 millones de filas de datos. Así que mientras los empleados, clientes o pacientes van y vienen y cambian los registros, los tipos de información confidencial se mantienen al día y aplicables. Y puede usar la clasificación basada en EDM con directivas, como [directivas de prevención de pérdida de datos](https://docs.microsoft.com/es-ES/office365/securitycompliance/data-loss-prevention-policies) (DLP) o [directivas de archivo de Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/data-protection-policies).
 
 ## <a name="required-licenses-and-permissions"></a>Permisos y licencias necesarios
 
-Debe ser un administrador global, administrador de cumplimiento o administrador de Exchange Online para realizar las tareas descritas en este artículo. Para obtener más información acerca de los permisos de DLP, vea [Permisos](https://review.docs.microsoft.com/es-ES/office365/securitycompliance/data-loss-prevention-policies#permissions).
+Debe ser un administrador global, administrador de cumplimiento o administrador de Exchange Online para realizar las tareas descritas en este artículo. Para obtener más información acerca de los permisos de DLP, vea [Permisos](https://docs.microsoft.com/es-ES/office365/securitycompliance/data-loss-prevention-policies#permissions).
 
 Cuando esté disponible de forma general, la clasificación basada en EDM se incluirá en estas suscripciones:
 
@@ -57,7 +57,7 @@ Cuando esté disponible de forma general, la clasificación basada en EDM se inc
 |---------|---------|
 |[Parte 1: Configurar la clasificación basada en EDM](#part-1-set-up-edm-based-classification)<br/><br/>(Según sea necesario)<br/>- [Editar el esquema de la base de datos](#editing-the-schema-for-edm-based-classification) <br/>- [Quitar el esquema](#removing-the-schema-for-edm-based-classification) |- Acceso de lectura a los datos confidenciales<br/>- Esquema base de datos en formato .xml (ejemplo proporcionado)<br/>- Paquete de reglas en formato .xml (ejemplo proporcionado)<br/>- Permisos de administrador para el Centro de seguridad y cumplimiento (con PowerShell) |
 |[Parte 2: Indizar y cargar los datos confidenciales](#part-2-index-and-upload-the-sensitive-data)<br/><br/>(Según sea necesario)<br/>[Actualizar los datos](#refreshing-your-sensitive-information-database) |- Cuenta de usuario y de grupo de seguridad personalizado<br/>- Acceso de administrador local en el equipo con el agente de carga EDM<br/>- Acceso de lectura a los datos confidenciales<br/>- Procesar y programar la actualización de los datos|
-|[Parte 3: Usar clasificación basada en EDM con los servicios de nube de Microsoft](#part-3-use-edm-based-classification-with-your-microsoft-cloud-services) |- Suscripción de Office 365 con DLP<br/>- Característica de clasificación basada en EDM habilitada (en versión preliminar) |
+|[Parte 3: Usar clasificación basada en EDM con los servicios de nube de Microsoft](#part-3-use-edm-based-classification-with-your-microsoft-cloud-services) |- Suscripción de Office 365 con DLP<br/>- Característica de clasificación basada en EDM habilitada |
 
 ### <a name="part-1-set-up-edm-based-classification"></a>Parte 1: Configurar la clasificación basada en EDM
 
@@ -482,13 +482,13 @@ Los tipos de información confidencial de EDM para las siguientes situaciones es
 ## <a name="related-articles"></a>Artículos relacionados
 
 
-  [Tipos de información confidencial integrados y lo que buscan](https://review.docs.microsoft.com/es-ES/office365/securitycompliance/what-the-sensitive-information-types-look-for)
+  [Tipos de información confidencial integrados y lo que buscan](https://docs.microsoft.com/es-ES/office365/securitycompliance/what-the-sensitive-information-types-look-for)
 
 
-  [Tipos de información confidencial personalizados](https://review.docs.microsoft.com/es-ES/office365/securitycompliance/custom-sensitive-info-types)
+  [Tipos de información confidencial personalizados](https://docs.microsoft.com/es-ES/office365/securitycompliance/custom-sensitive-info-types)
 
 
-  [Información general de directivas DLP](https://review.docs.microsoft.com/es-ES/office365/securitycompliance/data-loss-prevention-policies)
+  [Información general de directivas DLP](https://docs.microsoft.com/es-ES/office365/securitycompliance/data-loss-prevention-policies)
 
 [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)
 
