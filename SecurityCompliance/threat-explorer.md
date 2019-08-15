@@ -1,5 +1,5 @@
 ---
-title: Explorador de amenazas y detecciones en tiempo real
+title: Explorador de amenazas y detecciones en tiempo real, novedades en el explorador de amenazas, cambios en el explorador de amenazas, novedad en Office 365, seguridad, seguridad en la nube, novedad en la seguridad en ATP
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -15,12 +15,12 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre el explorador y las detecciones en tiempo real &amp; en el centro de seguridad y cumplimiento.
-ms.openlocfilehash: 2e3e60c2b197c30f01efcfcba5e118091b29a22b
-ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
+ms.openlocfilehash: 4e2a11162d3b67dd92cdcc1a7c0342ec861543ab
+ms.sourcegitcommit: d4acce11a26536b9d6ca71ba4933fc95136198a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36230414"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36407959"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Explorador de amenazas y detecciones en tiempo real
 
@@ -42,12 +42,16 @@ Con este informe, puede:
 
 ## <a name="new-features-in-real-time-detections"></a>Nuevas características en detecciones en tiempo real
 
-El explorador (y las detecciones en tiempo real) agrega nuevos campos nuevos diseñados para proporcionarle una imagen más completa de dónde se encuentran los correos electrónicos. Parte del objetivo de este cambio es facilitar la búsqueda para los operadores de seguridad, pero el resultado neto es conocer la ubicación de los correos electrónicos con problemas de un vistazo.
+A continuación se describen tres nuevas características que se agregan al explorador de amenazas.
+
+En primer lugar, **la vista previa del encabezado del correo electrónico y la descarga del cuerpo del correo electrónico** son características nuevas disponibles en el explorador de amenazas. Los administradores podrán analizar los encabezados y los correos electrónicos descargados en busca de amenazas. Como la descarga de mensajes de correo electrónico puede arriesgar la exposición de la información, este proceso se controla mediante el control de acceso basado en roles (RBAC). Un nuevo rol, denominado "vista previa", debe agregarse a otro grupo de roles de Office 365 (por ejemplo, a operaciones de la SEC o administrador de la SEC) para conceder la capacidad de descargar correos y obtener una vista previa de los encabezados en la vista de todos los correos electrónicos.
+
+Pero el explorador (y las detecciones en tiempo real) también agrega nuevos campos nuevos diseñados para proporcionarle una imagen más completa de dónde se encuentran los correos electrónicos. Parte del objetivo de este cambio es facilitar la búsqueda para los operadores de seguridad, pero el resultado neto es conocer la ubicación de los correos electrónicos con problemas de un vistazo.
 
 ¿Cómo se hace esto? El estado de entrega ahora se divide en dos columnas:
 
-- Acción de entrega: ¿Cuál es el estado de este correo electrónico?
-- Ubicación de entrega: ¿Dónde se distribuyó este correo electrónico como resultado?
+- **Acción de entrega** : ¿Cuál es el estado de este correo electrónico?
+- **Ubicación de entrega** : ¿Dónde se distribuyó este correo electrónico como resultado?
 
 La acción de entrega es la acción que se realiza en un correo electrónico debido a las directivas o detecciones existentes. Estas son las posibles acciones que puede realizar un correo electrónico:
 
@@ -62,7 +66,7 @@ Y esto es lo que el usuario puede ver y lo que no puede:
 |Pronuncia     | Blocked        |
 |Correo electrónico no deseado     | Sustitui        |
 
-Ubicación de entrega muestra los resultados de las directivas y detecciones que se ejecutan después de la entrega. Está vinculado a una acción de entrega. Este campo se agregó para proporcionar información sobre la acción tomada cuando se encuentra un mensaje problemático. Estos son los valores de possilbe de la ubicación de entrega:
+Ubicación de entrega muestra los resultados de las directivas y detecciones que se ejecutan después de la entrega. Está vinculado a una acción de entrega. Este campo se agregó para proporcionar información sobre la acción tomada cuando se encuentra un mensaje problemático. Estos son los valores posibles de la ubicación de entrega:
 
 1. Bandeja de entrada o carpeta: el correo electrónico se encuentra en la bandeja de entrada o en una carpeta (según las reglas de correo electrónico).
 2. Local o externa: el buzón de correo no existe en la nube pero es local.
@@ -72,8 +76,9 @@ Ubicación de entrega muestra los resultados de las directivas y detecciones que
 6. Failed – el correo electrónico no pudo llegar al buzón.
 7. Perdido: el correo electrónico se pierde en algún lugar del flujo de correo.
 
-La escala de tiempo de correo electrónico es otra nueva característica de Explorer destinada a conseguir la experiencia de búsqueda mejor para los administradores. Reduce el proceso aleatorio porque se dedica menos tiempo a comprobar las distintas ubicaciones para tratar de comprender el evento. Cuando se producen varios eventos en, o cerca de, al mismo tiempo en un correo electrónico, esos eventos se mostrarán en una vista escala de tiempo. De hecho, algunos eventos que se producen después de la entrega a su correo se capturarán en la columna "acción especial". La combinación de la información de la escala de tiempo de ese correo con la acción especial tomada en la entrega posterior del correo proporcionará a los administradores información sobre cómo funcionan sus directivas, dónde se enrutó el correo finalmente y, en algunos casos, qué es la evaluación final.
+La **escala de tiempo de correo electrónico** es otra nueva característica de Explorer destinada a conseguir la experiencia de búsqueda mejor para los administradores. Reduce el proceso aleatorio porque se dedica menos tiempo a comprobar las distintas ubicaciones para tratar de comprender el evento. Cuando se producen varios eventos en, o cerca de, al mismo tiempo en un correo electrónico, esos eventos se mostrarán en una vista escala de tiempo. De hecho, algunos eventos que se producen después de la entrega a su correo se capturarán en la columna "acción especial". La combinación de la información de la escala de tiempo de ese correo con la acción especial tomada en la entrega posterior del correo proporcionará a los administradores información sobre cómo funcionan sus directivas, dónde se enrutó el correo finalmente y, en algunos casos, qué es la evaluación final.
 
+Para obtener más información acerca de la investigación de correos electrónicos malintencionados [, vea Find and Investigate Malicious email Delivered in Office 365](https://docs.microsoft.com/en-us/office365/securitycompliance/investigate-malicious-email-that-was-delivered).
 
 ## <a name="see-malware-detected-in-email-by-technology"></a>Ver malware detectado en correo electrónico por tecnología
 

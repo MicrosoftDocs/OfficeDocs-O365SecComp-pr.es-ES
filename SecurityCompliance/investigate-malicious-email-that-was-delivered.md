@@ -1,5 +1,5 @@
 ---
-title: Buscar e investigar correo electrónico malintencionado que se entregó en Office 365
+title: Busque y investigue el correo electrónico malintencionado que se entregó en Office 365, TIMailData-en línea, incidente de seguridad, incidente, PowerShell de ATP, malware de correo electrónico, usuarios comprometidos, phish a correo electrónico, malware de correo electrónico
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -15,12 +15,12 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo usar la investigación de amenazas y las capacidades de respuesta para buscar y investigar correo electrónico malintencionado.
-ms.openlocfilehash: 1f558614d77577408a824b3c6181aae22753ab0f
-ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
+ms.openlocfilehash: aefadeba265ddc4fc6188f857f94c78fae4aa8e9
+ms.sourcegitcommit: d4acce11a26536b9d6ca71ba4933fc95136198a4
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36230564"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36407949"
 ---
 # <a name="find-and-investigate-malicious-email-that-was-delivered-in-office-365"></a>Buscar e investigar correo electrónico malintencionado que se entregó en Office 365
 
