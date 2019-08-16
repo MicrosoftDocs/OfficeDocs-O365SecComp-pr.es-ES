@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: 'El administrador del plan de archivos proporciona funciones avanzadas de administración para las etiquetas de retención, directivas de etiquetas de retención y proporciona una forma integrada para recorrer las etiquetas y la actividad de etiquetas de contenido para todo su ciclo de vida: incluyendo la creación, colaboración, declaración de registro, retención y, por último, eliminación.'
-ms.openlocfilehash: b7d80ff6a7f78e592462fe2723a87383e046015f
-ms.sourcegitcommit: 6eb51931242d07abde2e37f1bd57d13bc724f0de
+ms.openlocfilehash: 38bfb1e6a6cde931804e518660ddf6c2b45205b0
+ms.sourcegitcommit: f443de08971da2fe200a159b8efbed40effba125
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "34547975"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "36430017"
 ---
 # <a name="overview-of-file-plan-manager"></a>Información general sobre el administrador del plan de archivos
 
@@ -123,7 +123,28 @@ Descargue una plantilla en blanco (o empiece desde una exportación de su plan a
 
 ![Plantilla en blanco del plan de archivos abierta en Excel](media/file-plan-blank-template.png)
 
-Rellene la plantilla (disponible próximamente: información de referencia sobre combinaciones de valores válidas para una sola etiqueta de retención).
+Complete la plantilla. En esta tabla se muestran los valores válidos.
+
+|**Property**|**Tipo**|**Valores válidos**|
+|:-----|:-----|:-----|
+|LabelName|Cadena|Si el valor contiene espacios, escríbalo entre comillas (").|
+|Comment|Cadena|Si el valor contiene espacios, escríbalo entre comillas ("). |
+|Notes|Cadena|Personalizado|
+|IsRecordLabel|Cadena|$True: La etiqueta es una etiqueta de registro.</br>$False: La etiqueta no es una etiqueta de registro. Este es el valor predeterminado.|
+|RetentionAction|Cadena|Delete</br>Keep</br>KeepAndDelete |
+|RetentionDuration|Cadena|Esta propiedad especifica la cantidad de días que se va a conservar el contenido. Los valores válidos son:</br>Un número entero positivo.</br>El valor es ilimitado.|
+|RetentionType|Cadena|Esta propiedad especifica si se calcula la duración de retención desde la fecha de creación de contenidos, desde la fecha etiquetado o desde la fecha de la última modificación. Los valores válidos son:</br>CreationAgeInDays</br>EventAgeInDays</br>ModificationAgeInDays</br>TaggedAgeInDays |
+|ReviewerEmail|SmtpAddress[]|Esta propiedad especifica la dirección de correo electrónico del revisor para las acciones de retención Delete y KeepAndDelete. Puede especificar varias direcciones de correo electrónico separadas por comas.|
+|ReferenceId|Cadena|Personalizado|
+|DepartmentName|Cadena|Personalizado|
+|Categoría|Cadena|Personalizado|
+|SubCategory|Cadena|Personalizado|
+|AuthorityType|Cadena|Personalizado|
+|CitationName|Cadena|Personalizado|
+|CitationUrl|Cadena|Personalizado|
+|CitationJurisdiction|Cadena|Personalizado|
+|Regulatory|Cadena|Personalizado|
+|EventType|Cadena|Esta propiedad especifica la regla de retención que está asociada a la etiqueta. Puede usar cualquier valor que identifique de forma exclusiva la regla. Por ejemplo:</br>Nombre</br>Nombre completo (DN)</br>GUID </br>Puede usar el cmdlet [Get-RetentionComplianceRule](https://docs.microsoft.com/es-ES/powershell/module/exchange/policy-and-compliance-retention/get-retentioncompliancerule?view=exchange-ps) para ver las reglas de retención disponibles.|
 
 ![Plantilla del plan de archivos con información rellenada](media/file-plan-filled-out-template.png)
 
