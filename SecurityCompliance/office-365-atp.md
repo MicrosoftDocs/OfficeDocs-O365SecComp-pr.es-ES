@@ -49,7 +49,7 @@ Office 365 ATP proporciona numerosas herramientas para establecer un nivel de pr
 
 El equipo de seguridad de su organización debe definir directivas para cada herramienta de ATP en el Centro de seguridad y cumplimiento de Office 365. Vaya a **Administración de amenazas** > **Directiva** para acceder a las opciones de directivas. (Para obtener ayuda, consulte [Guía de inicio rápido: Configurar la Protección contra amenazas avanzada de Office 365](checklist-atp-setup.md)).
 
-Las directivas definidas por la organización determinan el comportamiento y el nivel de protección para las amenazas predefinidas. Las opciones de directivas son muy flexibles. Por ejemplo, el equipo de seguridad de su organización puede establecer protección contra amenazas específica para el nivel de usuario, organización, destinatario y dominio. Es importante revisar las directivas de forma periódica, ya que surgen a diario nuevas amenazas y desafíos.  
+Las directivas definidas por la organización determinan el comportamiento y el nivel de protección para las amenazas predefinidas. Las opciones de directivas son muy flexibles. Por ejemplo, el equipo de seguridad de su organización puede establecer protección contra amenazas específica para el nivel de usuario, organización, destinatario y dominio. Es importante revisar las directivas de forma periódica, ya que a diario surgen nuevas amenazas y desafíos.  
 
 - [Datos adjuntos seguros de ATP](atp-safe-attachments.md): proporciona protección de día cero para salvaguardar su sistema de mensajería, al comprobar los datos adjuntos de correo electrónico en busca de contenido malintencionado. Dirige todos los mensajes y datos adjuntos que no tienen una firma de virus o malware a un entorno especial y, a continuación, utiliza técnicas de aprendizaje automático y análisis para detectar fines malintencionados. Si no se encuentra ninguna actividad sospechosa, el mensaje se reenvía al buzón. Para obtener más información, consulte [Configurar directivas de datos adjuntos seguros de ATP de Office 365](set-up-atp-safe-attachments-policies.md).
 
@@ -83,13 +83,13 @@ Office 365 ATP Plan 2 incluye las mejores [herramientas de investigación y resp
 
 - [Explorador de amenazas (o detecciones en tiempo real)](threat-explorer.md) (también conocido como Explorador) es un informe en tiempo real que le permite identificar y analizar amenazas recientes. Puede configurar el Explorador para mostrar datos de períodos personalizados.
 
-- [Simulador de ataques](attack-simulator.md) le permite ejecutar escenarios de ataque realistas en la organización para identificar los puntos vulnerables. Hay disponibles simulaciones de los tipos actuales de ataques, incluido un [ataque "spear-phishing" de nombre para mostrar](attack-simulator.md#display-name-spear-phishing-attack), un [ataque de difusión de contraseña](attack-simulator.md#password-spray-attack) y un [ataque de contraseña por fuerza bruta](attack-simulator.md#brute-force-password-attack) entre otros.
+- [Simulador de ataques](attack-simulator.md) le permite ejecutar escenarios de ataque realistas en la organización para identificar los puntos vulnerables. Hay disponibles simulaciones de los tipos actuales de ataques, incluido un [ataque de phishing de objetivo definido de nombre para mostrar](attack-simulator.md#display-name-spear-phishing-attack), un [ataque de difusión de contraseña](attack-simulator.md#password-spray-attack) y un [ataque de contraseña por fuerza bruta](attack-simulator.md#brute-force-password-attack) entre otros.
     
 ## <a name="save-time-with-automated-investigation-and-response"></a>Ahorre tiempo gracias a las investigaciones y respuestas automáticas
 
-(**NOVEDAD**) Al investigar un posible ataque cibernético, el tiempo es esencial. Cuanto más pronto pueda identificar y mitigar las amenazas, mejor será para su organización. Office 365 ATP Plan 2 ahora incluirá funciones de [investigación y respuesta automatizadas (AIR)](automated-investigation-response-office.md). (Si todavía no tiene estas funciones, las tendrá pronto con ATP Plan 2).
+(**NOVEDAD**) Al investigar un posible ataque cibernético, el tiempo es esencial. Cuanto antes pueda identificar y mitigar las amenazas, mejor será para su organización. Office 365 ATP Plan 2 ahora incluirá funciones de [investigación y respuesta automatizadas (AIR)](automated-investigation-response-office.md). (Si todavía no tiene estas funciones, las tendrá pronto con ATP Plan 2).
 
-AIR incluye un conjunto de guías de seguridad que se pueden iniciar automáticamente, como cuando se activa una alerta, o manualmente, como desde una vista del Explorador. AIR pueden ahorrar tiempo y esfuerzo de su equipo de operaciones de seguridad en la reducción de amenazas de manera eficaz. Para obtener más información, consulte [Investigación y respuesta automatizadas (AIR) con Office 365](automated-investigation-response-office.md).
+AIR incluye un conjunto de guías de seguridad que se pueden iniciar automáticamente, como cuando se activa una alerta, o manualmente, como desde una vista del Explorador. AIR puede ahorrar tiempo y esfuerzo de su equipo de operaciones de seguridad en la reducción de amenazas de manera eficaz. Para obtener más información, consulte [Investigación y respuesta automatizadas (AIR) con Office 365](automated-investigation-response-office.md).
 
 ## <a name="permissions-required-to-use-atp-features"></a>Permisos necesarios para usar las características de ATP
 
@@ -111,7 +111,7 @@ Para obtener más información, vea:
 
 ## <a name="get-office-365-atp"></a>Obtener Office 365 ATP
 
-Office 365 ATP Plan 2 está incluido en Office 365 Enterprise E5, Office 365 Educación A5 y Microsoft 365 Empresa. Si su suscripción no incluye Office 365 ATP, puede comprar ATP Plan 1 o ATP Plan 2 como complemento en determinadas suscripciones. Para obtener más información, consulte los siguientes recursos:
+Office 365 ATP Plan 2 está incluido en Office 365 Enterprise E5, Office 365 Educación A5 y Microsoft 365 Empresa. Si su suscripción no incluye Office 365 ATP, puede comprar ATP Plan 1 o ATP Plan 2 como complemento para determinadas suscripciones. Para obtener más información, consulte los siguientes recursos:
 
 - Vea [Disponibilidad de Protección contra amenazas avanzada de Office 365 (ATP)](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#office-365-advanced-threat-protection-atp-availability) para obtener una lista de suscripciones que incluyen planes de ATP.
 
