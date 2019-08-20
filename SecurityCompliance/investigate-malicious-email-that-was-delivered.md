@@ -1,5 +1,5 @@
 ---
-title: Busque y investigue el correo electrónico malintencionado que se entregó en Office 365, TIMailData-en línea, incidente de seguridad, incidente, PowerShell de ATP, malware de correo electrónico, usuarios comprometidos, phish a correo electrónico, malware de correo electrónico
+title: Busque y investigue el correo electrónico malintencionado que se entregó en Office 365, TIMailData-en línea, incidente de seguridad, incidente, PowerShell de ATP, malware de correo electrónico, usuarios comprometidos, phish a correo electrónico, malware de correo electrónico, leer encabezados de correo, leer encabezados, abrir encabezados de correo electrónico
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -15,12 +15,12 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo usar la investigación de amenazas y las capacidades de respuesta para buscar y investigar correo electrónico malintencionado.
-ms.openlocfilehash: aefadeba265ddc4fc6188f857f94c78fae4aa8e9
-ms.sourcegitcommit: d4acce11a26536b9d6ca71ba4933fc95136198a4
+ms.openlocfilehash: 2049b3b8e0d7b9173639af3c48f75a072744fb7f
+ms.sourcegitcommit: dbcb3df3b313f7a9ea6669425e0a0498be844ae9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "36407949"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "36444879"
 ---
 # <a name="find-and-investigate-malicious-email-that-was-delivered-in-office-365"></a>Buscar e investigar correo electrónico malintencionado que se entregó en Office 365
 
@@ -40,9 +40,56 @@ Asegúrese de que se cumplen los siguientes requisitos:
     
 ## <a name="dealing-with-suspicious-emails"></a>Tratar los correos sospechosos
 
-Los atacantes malintencionados pueden enviar correo a sus usuarios para probar y phish sus credenciales y obtener acceso a sus secretos corporativos. Para evitarlo, debe usar los servicios de protección contra amenazas en Office 365, incluidos [Exchange Online Protection](eop/exchange-online-protection-overview.md) y la [protección contra amenazas avanzada](office-365-atp.md). Sin embargo, hay veces en las que un atacante puede enviar correo a los usuarios que contengan una dirección URL y que, más adelante, esta dirección URL apunte a contenido malintencionado (malware, etc.). Como alternativa, es posible que se vea demasiado tarde que un usuario de la organización se ha puesto en peligro y, mientras que el usuario ha estado en peligro, el atacante ha usado esa cuenta para enviar correo electrónico a otros usuarios de la compañía. Como parte de la limpieza de ambos escenarios, es posible que desee quitar los mensajes de correo electrónico de las bandejas de los usuarios. En situaciones como estas, puede aprovechar [el explorador de amenazas (o detecciones en tiempo real)](threat-explorer.md) para buscar y quitar los mensajes de correo electrónico.
+Los atacantes malintencionados pueden enviar correo a sus usuarios para probar y phish sus credenciales y obtener acceso a sus secretos corporativos. Para evitarlo, debe usar los servicios de protección contra amenazas en Office 365, incluidos [Exchange Online Protection](eop/exchange-online-protection-overview.md) y la [protección contra amenazas avanzada](office-365-atp.md). Sin embargo, hay veces en las que un atacante puede enviar correo a los usuarios que contengan una dirección URL y que, más adelante, esta dirección URL apunte a contenido malintencionado (malware, etc.). 
+
+Como alternativa, es posible que se vea demasiado tarde que un usuario de la organización se ha puesto en peligro y, mientras que el usuario ha estado en peligro, el atacante ha usado esa cuenta para enviar correo electrónico a otros usuarios de la compañía. Como parte de la limpieza de ambos escenarios, es posible que desee quitar los mensajes de correo electrónico de las bandejas de los usuarios. En situaciones como estas, puede aprovechar [el explorador de amenazas (o detecciones en tiempo real)](threat-explorer.md) para buscar y quitar los mensajes de correo electrónico.
 
 ## <a name="where-re-routed-emails-are-located-after-actions-are-taken"></a>Dónde se encuentran los mensajes de correo electrónico redistribuidos una vez que se llevan a cabo acciones
+
+Entonces, ¿dónde se envían los mensajes de correo electrónico y qué herramientas ayudan a los investigadores a comprender qué les ha ocurrido? Los campos del explorador de amenazas reportan información que ayudará a los administradores a descodificar eventos de correo electrónico con problemas.
+
+### <a name="view-the-email-headers-and-download-the-email-body"></a>Ver los encabezados de correo electrónico y descargar el cuerpo del correo electrónico
+
+**La vista previa del encabezado de correo electrónico y la descarga del cuerpo del correo** electrónico son características útiles de administración de amenazas de correo electrónico disponibles en el explorador de amenazas. Los administradores podrán analizar y descargar encabezados y correos electrónicos en busca de amenazas. El acceso para usar esta característica está controlado por el control de acceso basado en roles (RBAC), para reducir el riesgo de exposición del contenido de correo electrónico del usuario.
+
+Un nuevo *rol*, denominado "vista previa", debe agregarse a otro grupo de roles de Office 365 (por ejemplo, a operaciones de la SEC o administrador de la SEC) para conceder la capacidad de descargar correos y obtener una vista previa de los encabezados en la vista de todos los correos electrónicos.
+
+Para ver el control flotante con la descarga de correo electrónico y las opciones de vista previa de encabezado de correo electrónico: 
+
+1. Vaya a [https://protection.office.com](https://protection.office.com) e inicie sesión con su cuenta profesional o educativa para Office 365. Esto le llevará al centro de &amp; seguridad y cumplimiento. 
+    
+2. En el panel de navegación izquierdo, elija **Threat Management** \> **Explorer**.
+
+3. Haga clic en un asunto en la tabla del explorador de amenazas.
+
+Se abrirá el control flotante, donde se colocan tanto la vista previa del encabezado como los vínculos de descarga de correo electrónico.
+
+> [!IMPORTANT]
+> Use las siguientes tablas juntas. Uno le indica el RBAC obligatorio, el otro, la ubicación donde se deben conceder los derechos.
+<p>
+
+|Actividad  |RoleGroup de RBAC con acceso |¿El rol "vista previa" es necesario?  |
+|---------|---------|---------|
+|Usar el explorador de amenazas (y detecciones en tiempo real) para analizar las amenazas     |  Administrador global de Office 365,<br> Administrador de seguridad, <br> Lector de seguridad      | No   |
+|Usar el explorador de amenazas (y detecciones en tiempo real) para ver los encabezados de los mensajes de correo electrónico, y para descargar los mensajes de correo electrónico en cuarentena    |     Administrador global de Office 365, <br> Administrador de seguridad, <br>Lector de seguridad    |       No  |
+|Usar el explorador de amenazas para ver los encabezados y descargar los correos electrónicos que se entregan a los buzones     |      Administrador global de Office 365, <br>Administrador de seguridad,<br> Lector de seguridad, <br> Vista previa    |   Sí      |
+
+<br>
+
+|RoleGroup de RBAC  |Dónde se les asignan los usuarios  |
+|---------|---------|
+| Administrador global   | Centro de administración de Office 365        |
+| Administrador de seguridad      |    Centro de seguridad y cumplimiento     |
+| Lector de seguridad   |    Centro de seguridad y cumplimiento     |
+|      |    Centro de seguridad y cumplimiento     |
+
+
+> [!CAUTION]
+> Recuerde que ' vista previa ' es un rol y no un RoleGroup y que el rol debe agregarse a un RoleGroup posteriormente.
+
+![Control flotante del explorador de amenazas con vínculos de descarga y vista previa en la página.](media/ThreatExplorerDownloadandPreview.PNG)
+
+### <a name="check-the-delivery-action-and-location"></a>Comprobar la acción y la ubicación de la entrega
 
 Detecciones en tiempo real del explorador de amenazas ha agregado los campos acción de entrega y ubicación de entrega en el estado del lugar de entrega. Esto da como resultado una imagen más completa de dónde se encuentran los correos electrónicos. Parte del objetivo de este cambio es facilitar la búsqueda para los operadores de seguridad, pero el resultado neto es conocer la ubicación de los correos electrónicos con problemas de un vistazo.
 
@@ -67,7 +114,11 @@ Ubicación de entrega muestra los resultados de las directivas y detecciones que
 - **Cuarentena** : el correo electrónico en cuarentena y no se encuentra en el buzón de un usuario.
 - **Failed** – el correo electrónico no pudo llegar al buzón.
 - **** Perdido: el correo electrónico se pierde en algún lugar del flujo de correo.
+
+### <a name="view-the-timeline-of-your-email"></a>Ver la escala de tiempo del correo electrónico
   
+ **Escala de tiempo de correo electrónico** otro campo del explorador de amenazas también será AKE la búsqueda más sencilla para los administradores. En lugar de dedicar una valiosa comprobación de tiempo en la que el correo electrónico podría haber desaparecido, cuando, mientras investiga un evento, cuando se producen varios eventos en, o cerca de, la misma hora en un correo electrónico, esos eventos se muestran en una vista de escala de tiempo. Algunos de los eventos que se producen después de la entrega a su correo se capturarán en la columna "*acción especial*". La combinación de información de la escala de tiempo del correo con la acción especial tomada en la entrega posterior de correo proporciona a los administradores información sobre las directivas y el tratamiento de amenazas (por ejemplo, dónde se enrutó el correo y, en algunos casos, qué es la evaluación final).
+
 ## <a name="find-and-delete-suspicious-email-that-was-delivered"></a>Buscar y eliminar correo electrónico sospechoso que se entregó
 
 > [!TIP]

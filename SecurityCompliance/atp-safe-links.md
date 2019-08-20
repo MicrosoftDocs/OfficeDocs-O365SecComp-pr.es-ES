@@ -22,12 +22,12 @@ search.appverid:
 - ZWD160
 ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: La característica de vínculos seguros proporciona la comprobación del tiempo de clic de los hipervínculos en los documentos de Office y en los mensajes de correo electrónico. Use vínculos seguros para proteger a su organización del phishing y otros ataques.
-ms.openlocfilehash: bb6a4c94f72e24ff4cf3baee337bc7c14953a399
-ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
+ms.openlocfilehash: 725d5c331b330b2edca030b74a26eaa692f36465
+ms.sourcegitcommit: 72ee6feaa0e0fd6bf01bfb855ad6e3bef370bf89
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36231104"
+ms.lasthandoff: 08/13/2019
+ms.locfileid: "36393329"
 ---
 # <a name="office-365-atp-safe-links"></a>Vínculos seguros de Protección contra amenazas avanzada de Office 365
 
@@ -44,7 +44,7 @@ A medida que [se agregan nuevas características a ATP](office-365-atp.md#new-fe
          
 ## <a name="how-to-get-atp-safe-links-protection"></a>Cómo obtener protección de vínculos seguros de ATP
 
-En **primer lugar, asegúrese de que la suscripción incluye [protección contra amenazas avanzada](office-365-atp.md)**. ATP se incluye en en las suscripciones, como [microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home), [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business), Office 365 enterprise E5, Office 365 Education A5, etc. Si su organización tiene una suscripción de Office 365 que no incluye ATP de Office 365, puede comprar ATP como complemento. Para obtener más información, vea los recursos siguientes: 
+En **primer lugar, asegúrese de que la suscripción incluye [protección contra amenazas avanzada](office-365-atp.md)**. ATP se incluye en las suscripciones, como [microsoft 365 Enterprise](https://www.microsoft.com/microsoft-365/enterprise/home), [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/business), Office 365 enterprise E5, Office 365 Education A5, etc. Si su organización tiene una suscripción de Office 365 que no incluye ATP de Office 365, puede comprar ATP como complemento. Para obtener más información, vea los recursos siguientes: 
 
 - [Planes y precios de la protección contra amenazas avanzada de Office 365](https://products.office.com/exchange/advance-threat-protection)
 
