@@ -206,9 +206,7 @@
 #### [Configurar una lista personalizada de URL bloqueadas](set-up-a-custom-blocked-urls-list-wtih-atp.md)
 ### Tareas de configuración de administrador de roles
 #### [Activar ATP para SharePoint, OneDrive y Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md)
-#### [ATP para SharePoint, OneDrive y Microsoft Teams](atp-for-spo-odb-and-teams.md)
-## Administración de la seguridad: ATP posterior a la configuración
-## [Comprensión de las últimas campañas de ataques con análisis de amenazas](latest-attack-campaigns.md)
+## [Comprender las últimas campañas de ataques con análisis de amenazas](latest-attack-campaigns.md)
 ## [Búsqueda en Microsoft 365](hunting.md)
 ## [Ver y leer los informes de ATP](view-reports-for-atp.md)
 ## [Qué significan las páginas de advertencia de vínculos seguros de ATP](atp-safe-links-warning-pages.md)
@@ -218,17 +216,18 @@
 ## [Buscar e investigar el correo electrónico malintencionado que se ha entregado](investigate-malicious-email-that-was-delivered.md)
 ## [Explorador de amenazas (y detecciones en tiempo real)](threat-explorer.md)
 ### [Vistas del explorador de amenazas](threat-explorer-views.md)
+### [Identificar mensajes sospechosos en Outlook.com y Outlook en la Web](unverified-sender-feature.md)
 ## Integración para mayor seguridad
 ### [Integrar Office 365 ATP con Microsoft Defender ATP](integrate-office-365-ti-with-wdatp.md)
 ### [Integración de SIEM con ATP de Office 365](siem-integration-with-office-365-ti.md)
 ## Cómo funciona ATP
 ### [Cómo funcionan los Vínculos seguros de ATP](how-atp-safe-links-works.md)
 ### [Cómo funcionan los datos adjuntos seguros de ATP](how-atp-safe-attachments-works.md)
-#### [Detalles de vista previa y entrega dinámica](dynamic-delivery-and-previewing.md)
-### [Cómo funciona la Investigación y respuesta de amenazas](get-started-with-ti.md)
-#### [Sobre Investigación y respuesta de amenazas](office-365-ti.md)
-### [Cómo funciona la Investigación y respuesta de amenazas automatizada](automated-investigation-response-office.md)
-### [Identificar mensajes sospechosos en Outlook.com y Outlook en la Web](unverified-sender-feature.md)
+### [Detalles de vista previa y entrega dinámica](dynamic-delivery-and-previewing.md)
+### [ATP para SharePoint, OneDrive y Microsoft Teams](atp-for-spo-odb-and-teams.md)
+### [Cómo funciona la investigación y respuesta ante amenazas](office-365-ti.md)
+### [Cómo funciona la investigación y respuesta automatizada](automated-investigation-response-office.md)
+
 
 # Respuesta a incidentes de seguridad
 ## [Respuesta a incidentes de seguridad de Office 365](office365-security-incident-response-overview.md)
