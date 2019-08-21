@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Su organización puede trabajar con un socio de Microsoft para configurar un conector personalizado para importar datos de terceros desde orígenes de datos como Salesforce chatter, Yahoo Messenger o Yammer. Esto le permite archivar datos de orígenes de datos de terceros en Office 365 para poder usar las características de cumplimiento de Office 365, como directivas de retención, búsqueda de contenido y retención legal para administrar el gobierno de los datos de terceros de la organización.
-ms.openlocfilehash: 99596953ce0f18c0cd7220f0955d251dbccb0e37
-ms.sourcegitcommit: 372691a3a886e5cc299961032ee334aef26fb904
+ms.openlocfilehash: a22b4226efb582969072bbd92149080cca9b749c
+ms.sourcegitcommit: 59039d3bf479c4b2c1d2e2556a0adc755f431a1f
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "36464703"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "36473430"
 ---
 # <a name="work-with-a-partner-to-archive-third-party-data-in-office-365"></a>Trabajar con un partner para archivar datos de terceros en Office 365
 
@@ -71,7 +71,7 @@ En las secciones siguientes se enumeran los socios de Microsoft (y los orígenes
   
 ### <a name="17a-4-llc"></a>17a-4 LLC
 
-17a-4 LLC admite los siguientes orígenes de datos de terceros:
+[17a-4 LLC](https://www.17a-4.com) admite los siguientes orígenes de datos de terceros:
   
 - BlackBerry
     
