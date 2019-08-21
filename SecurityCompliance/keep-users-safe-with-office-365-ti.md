@@ -1,5 +1,5 @@
 ---
-title: Mantener a los usuarios de Office 365 seguros con capacidades de investigación y respuesta de amenazas de Office 365
+title: Mantenga su organización segura con las capacidades de investigación y respuesta de amenazas de Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -15,14 +15,14 @@ ms.assetid: 3387bfc3-028a-42f4-8133-4cbecfaab812
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo las capacidades de investigación y respuesta de las amenazas de Office 365 pueden ayudar a su organización a detectar intrusiones y amenazas, y mitigar rápidamente y recuperarse de amenazas.
-ms.openlocfilehash: 2170bf53247412ecf0ae1b9ca13286a6df8a6336
-ms.sourcegitcommit: a5a7e43822336ed18d8f5879167766686cf6b2a3
+ms.openlocfilehash: baedfb1ff74117bd2ed36cdf4551f898d377a971
+ms.sourcegitcommit: 4fd64e1811ae96633035cbc9cab1dbef3cbba34d
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "36478179"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "36484403"
 ---
-# <a name="keep-your-office-365-users-safe-with-office-365-threat-investigation-and-response-capabilities"></a>Mantener a los usuarios de Office 365 seguros con capacidades de investigación y respuesta de amenazas de Office 365
+# <a name="keep-your-organization-safe-with-office-365-threat-investigation-and-response-capabilities"></a>Mantenga su organización segura con las capacidades de investigación y respuesta de amenazas de Office 365
 
 ## <a name="overview"></a>Información general
 
