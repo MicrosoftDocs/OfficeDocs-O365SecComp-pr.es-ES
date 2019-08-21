@@ -13,14 +13,15 @@ ms.collection:
 search.appverid:
 - MET150
 description: Ahora puede aplicar directivas de DLP a chats y canales de Microsoft Teams. Lea este artículo para obtener más información sobre cómo funciona.
-ms.openlocfilehash: 8ac8f4e2a4189ca83772775a96067d0b5fc3a24b
-ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
+ms.openlocfilehash: 4edc05a2e0759884570239a038d0869e15240d17
+ms.sourcegitcommit: a5a7e43822336ed18d8f5879167766686cf6b2a3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36230744"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "36478229"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>Prevención de pérdida de datos y Microsoft Teams
+<!-- the note duplicates the first sentence of the overview, delete one or the other- -->
 
 > [!NOTE]
 > Las capacidades de prevención de pérdida de datos se han agregado recientemente a los mensajes de chat y de canal de Microsoft Teams para los usuarios con licencia de Office 365 Advanced Compliance, que está disponible como opción independiente y se incluye en Office 365 E5 y el cumplimiento de Microsoft 365 E5. Para obtener más información sobre los requisitos de licencia, consulte la [Guía de licencias de servicios en el nivel de inquilino de 365 de Microsoft](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance).
@@ -38,7 +39,7 @@ Recientemente, se ampliaron las capacidades de [prevención de pérdida de datos
 
 ## <a name="policy-tips-help-educate-users"></a>Las sugerencias de directivas ayudan a los usuarios
 
-De forma similar a cómo funciona DLP en [Exchange, Outlook y Outlook en la web](data-loss-prevention-policies.md#policy-evaluation-in-exchange-online-outlook-and-outlook-on-the-web), [sitios de SharePoint y OneDrive para la empresa](data-loss-prevention-policies.md#policy-evaluation-in-onedrive-for-business-and-sharepoint-online-sites)y [clientes de escritorio de Office](data-loss-prevention-policies.md#policy-evaluation-in-the-office-desktop-programs), las sugerencias de directiva aparecen cuando una acción entra en conflicto con una directiva DLP. A continuación, se muestra un ejemplo de una sugerencia de directiva:
+De forma similar a cómo funciona DLP en [Exchange, Outlook, Outlook en la web](data-loss-prevention-policies.md#policy-evaluation-in-exchange-online-outlook-and-outlook-on-the-web), [SharePoint Online, sitios de OneDrive para la empresa](data-loss-prevention-policies.md#policy-evaluation-in-onedrive-for-business-and-sharepoint-online-sites)y [clientes de escritorio de Office](data-loss-prevention-policies.md#policy-evaluation-in-the-office-desktop-programs), las sugerencias de directiva aparecen cuando una acción entra en conflicto con una directiva DLP. A continuación, se muestra un ejemplo de una sugerencia de directiva:
 
 ![Notificación de mensajes bloqueados en Microsoft Teams](media/dlp-teams-blockedmessage-notification.png)
 
@@ -46,7 +47,7 @@ En este caso, el remitente ha intentado compartir un número de la seguridad soc
 
 ![Opciones para resolver el mensaje bloqueado](media/dlp-teams-blockedmessage-possibleactions.png)
 
-En su organización, puede elegir si desea permitir que los usuarios invaliden una directiva DLP o no. Y, cuando configure las directivas de DLP, puede usar las sugerencias de directiva predeterminadas o [personalizar las sugerencias de directiva](#to-customize-policy-tips) para su organización. 
+En su organización, puede optar por permitir que los usuarios invaliden una directiva DLP. Y, cuando configure las directivas de DLP, puede usar las sugerencias de directiva predeterminadas o [personalizar las sugerencias de directiva](#to-customize-policy-tips) para su organización. 
 
 Volviendo a nuestro ejemplo, en el que un remitente compartió un número de la seguridad social en un canal de Teams, esto es lo que vio el destinatario:
 
@@ -73,7 +74,7 @@ Para realizar esta tarea, debe tener asignado un rol que tenga permisos para edi
 7. En la pestaña **configuración de directiva** , elija **Guardar**.
 
 Espere aproximadamente una hora para que los cambios funcionen en el centro de datos y sincronicen las cuentas de usuario.
- 
+ <!-- why are these syncing to user accounts? -->
 ## <a name="add-microsoft-teams-as-a-location-to-existing-dlp-policies"></a>Agregar Microsoft Teams como ubicación a las directivas de DLP existentes
 
 Para realizar esta tarea, debe tener asignado un rol que tenga permisos para editar directivas de DLP. Para obtener más información vea [Permisos](data-loss-prevention-policies.md#permissions).
@@ -91,7 +92,7 @@ Para realizar esta tarea, debe tener asignado un rol que tenga permisos para edi
 6. Haga clic en **Guardar **.
 
 Espere aproximadamente una hora para que los cambios funcionen en el centro de datos y sincronicen las cuentas de usuario.
-
+<!-- again, why user accounts? -->
 ## <a name="define-a-new-dlp-policy-for-microsoft-teams"></a>Definir una nueva Directiva de DLP para Microsoft Teams
 
 Para realizar esta tarea, debe tener asignado un rol que tenga permisos para editar directivas de DLP. Para obtener más información vea [Permisos](data-loss-prevention-policies.md#permissions).
@@ -104,7 +105,7 @@ Para realizar esta tarea, debe tener asignado un rol que tenga permisos para edi
 
 4. En la pestaña Nombre de la **Directiva** , especifique un nombre y una descripción para la Directiva y, a continuación, elija **siguiente**. 
 
-5. En la pestaña **elegir ubicaciones** , mantenga la configuración predeterminada de todas las ubicaciones o seleccione **permitirme elegir ubicaciones específicas**y, después, haga clic en **siguiente**.<br/>Si optó por elegir ubicaciones específicas, seleccione las ubicaciones de la Directiva DLP y, a continuación, elija **siguiente**.<br/>![Ubicaciones de directivas de DLP](media/dlp-teams-selectlocationsnewpolicy.png)<br/>
+5. En la pestaña **elegir ubicaciones** , mantenga la configuración predeterminada de todas las ubicaciones o seleccione **permitirme elegir ubicaciones específicas**y, después, haga clic en **siguiente**.<br/>Si ha elegido ubicaciones específicas, selecciónelas para su Directiva DLP y, a continuación, elija **siguiente**.<br/>![Ubicaciones de directivas de DLP](media/dlp-teams-selectlocationsnewpolicy.png)<br/>
     > [!NOTE]
     > Si desea asegurarse de que los documentos que contienen información confidencial no se compartan de manera inadecuada, asegúrese de que los **sitios de SharePoint** y **las cuentas de OneDrive** estén activados, junto con **los mensajes de chat y de canal**de Teams.
 <br/>

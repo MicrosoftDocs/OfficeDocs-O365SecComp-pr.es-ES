@@ -3,7 +3,7 @@ title: Mantener a los usuarios de Office 365 seguros con capacidades de investig
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 07/09/2019
+ms.date: 08/20/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: 3387bfc3-028a-42f4-8133-4cbecfaab812
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo las capacidades de investigación y respuesta de las amenazas de Office 365 pueden ayudar a su organización a detectar intrusiones y amenazas, y mitigar rápidamente y recuperarse de amenazas.
-ms.openlocfilehash: 28fbf0a66370e2e1d407454017943e57f5f368b1
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 2170bf53247412ecf0ae1b9ca13286a6df8a6336
+ms.sourcegitcommit: a5a7e43822336ed18d8f5879167766686cf6b2a3
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35598986"
+ms.lasthandoff: 08/20/2019
+ms.locfileid: "36478179"
 ---
 # <a name="keep-your-office-365-users-safe-with-office-365-threat-investigation-and-response-capabilities"></a>Mantener a los usuarios de Office 365 seguros con capacidades de investigación y respuesta de amenazas de Office 365
 
@@ -28,13 +28,13 @@ ms.locfileid: "35598986"
 
 ¿Sabe cuáles de los usuarios de Office 365 son atacados o que son peores en peligro? ¿Sabe cómo mitigar y recuperar los ataques que tienen como objetivo los usuarios? ¿Sabía que puede hacer exactamente esto con las funciones de seguridad que ya están disponibles en Office 365? 
   
-Las capacidades de [investigación y respuesta de amenazas de office 365](office-365-ti.md) se incluyen en su suscripción a Office 365 E5 (como parte de Office 365 Advanced Threat Protection Plan 2). Estas capacidades han ayudado a Microsoft IT a reducir el tiempo promedio de resolución de incidencias de ingeniería social en un 80% y aumentó el rendimiento del caso en un 37% por mes comparado con los 2 trimestres anteriores. 
+Las capacidades de [investigación y respuesta de amenazas de office 365](office-365-ti.md) se incluyen en su suscripción a Office 365 E5 (como parte de [Office 365 Advanced Threat Protection](office-365-atp.md) plan 2). Estas capacidades han ayudado a Microsoft IT a reducir el tiempo promedio de resolución de incidencias de ingeniería social en un 80% y aumentó el rendimiento del caso en un 37% por mes comparado con los 2 trimestres anteriores. 
 
 Hemos agregado nuevas funcionalidades recientemente para ayudarle a detectar y recuperarse de amenazas. Este es un rápido paso por el modo en que las capacidades de investigación y respuesta de amenazas actualizadas pueden hacer que sea incluso más eficaz.
   
 ## <a name="detect-intrusions-and-threats"></a>Detectar intrusiones y amenazas
 
-[Explorador de amenazas (o detecciones en tiempo real)](threat-explorer.md) (también conocido como explorador de amenazas) ayuda a los administradores y analistas de seguridad a identificar y comprender las amenazas activas en su empresa, ya que la configuración de seguridad más compleja puede eludirse con configuraciones de usuario aparentemente inocuas, como Safe listas blancas de remitentes. Explorer ayuda a los administradores globales o de seguridad de Office 365 a determinar rápidamente si los usuarios han estado comprometidos con amenazas como malware o phish. Esto ayuda a priorizar qué usuarios están más expuestos para una amenaza y la respuesta necesaria. 
+[Explorador de amenazas (o detecciones en tiempo real)](threat-explorer.md) (también conocido como explorador) ayuda a los administradores y analistas de seguridad a identificar y comprender las amenazas activas en su empresa, ya que la configuración de seguridad más compleja se puede eludir mediante configuraciones de usuario aparentemente inocuas, como el remitente seguro listas blancas. Explorer ayuda a los administradores globales o de seguridad de Office 365 a determinar rápidamente si los usuarios han estado comprometidos con amenazas como malware o phish. Esto ayuda a priorizar qué usuarios están más expuestos para una amenaza y la respuesta necesaria. 
   
 El explorador también ayuda a los administradores a navegar por las relaciones entre los usuarios y el correo. ¿Conoce un correo determinado que fue malo? Buscarla para ver qué usuarios recibieron el correo y, a continuación, seguir la serie de eventos y ver lo que los usuarios han hecho a su vez.
 
@@ -56,7 +56,6 @@ Si aún no tiene estas funciones, [pruébelo ahora](https://aka.ms/tryo365threat
 
 Las capacidades de investigación y respuesta de amenazas de Office 365 se alimentan con datos del gráfico de seguridad inteligente de Microsoft. El gráfico adquiere la última señal de amenazas de más de 1 mil millones dispositivos Windows, 450 mil millones inicios de sesión mensuales de Azure y 400 mil millones mensajes de correo electrónico mensuales en Office 365. Esta señal de amenaza sin rival es la que ofrece la gran visibilidad a un inquilino de cliente que es crucial para que los administradores y los analistas de seguridad tengan una visión completa de las amenazas que afectan a su organización. 
   
-   
 ## <a name="why-use-office-365-threat-investigation-and-response-capabilities"></a>¿Por qué usar capacidades de investigación y respuesta de amenazas de Office 365?
 
 Gartner calcula que en 2017 se gastó por sola vez más de $90B en Cybersecurity. El SID Deshpande, el analista principal de investigación de Gartner, se ha citado como decir que "el cambio de la industria a la detección y la respuesta... envía un mensaje claro de que la prevención es inútil a menos que esté ligada a una capacidad de detección y respuesta. La investigación y respuesta de amenazas es una parte fundamental de la cartera de servicios de toda la empresa, y se puede consumir como un servicio independiente o como parte de Office 365 E5.
