@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 description: Use la herramienta de búsqueda de contenido del Centro de cumplimiento de Office 365 o Microsoft 365 para buscar contenido en buzones, sitios de SharePoint Online, cuentas de OneDrive, Microsoft Teams, grupos de Office 365 y conversaciones de Skype Empresarial. Puede restringir los resultados de la búsqueda mediante palabras clave y condiciones de búsqueda. Después, puede consultar una vista previa y exportar los resultados de búsqueda. La búsqueda de contenido también es una herramienta eficaz para encontrar información relacionada con la solicitud del interesado del RGPD.
-ms.openlocfilehash: cf1935b8ab4df80182739497f60adf5a2bc6a6d7
-ms.sourcegitcommit: 59039d3bf479c4b2c1d2e2556a0adc755f431a1f
+ms.openlocfilehash: 2fff94899dabca85338ba1ca924ec37afa1dccf3
+ms.sourcegitcommit: 873c5bc0e6cd1ca3dfdb3a99a5371353b419311f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "36473420"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "36493171"
 ---
 # <a name="content-search-in-office-365"></a>Búsqueda de contenido de Office 365
 
@@ -335,13 +335,13 @@ A continuación, se detallan algunos aspectos que se deben tener en cuenta al bu
 
 Si la licencia de Exchange Online (o la licencia 365 completa de Office) se quita de una cuenta de usuario en Office 365 o en Azure Active Directory, el buzón del *usuario se convierte* en un buzón desconectado. Esto significa que el buzón ya no está asociado a la cuenta de usuario. Esto es lo que ocurre al buscar en buzones desconectados:
 
-- Cuando se quita la licencia de un buzón, el buzón pasa a un período de gracia de 30 días. Durante este periodo de gracia, aún puede usar la búsqueda de contenido para buscar en el buzón de correo.
+- Cuando se quita la licencia de un buzón, ya no se puede buscar en él. 
 
-- Si el buzón no se vuelve a licenciar en un plazo de 30 días, se marcará para eliminarse de forma permanente y se eliminará de Office 365 la próxima vez que se procese el buzón. En función de Cuándo se procese el buzón, es posible que pueda realizar búsquedas en él una vez que haya expirado el período de gracia de 30 días. Los buzones suelen procesarse una vez cada siete días. Una vez procesado, el buzón se eliminará y dejará de poderse buscar.
+- Si una búsqueda de contenido existente incluye un buzón de usuario en el que se ha quitado la licencia, los resultados de búsqueda del buzón desconectado no se incluirán cuando vuelva a ejecutar la búsqueda.
 
-- Si una búsqueda de contenido existente incluye un buzón de usuario en el que se ha quitado la licencia, el buzón desconectado se incluirá cuando vuelva a ejecutar la búsqueda hasta que el período de gracia de 30 días expire. Cuando expire el período de gracia y se quite el buzón, dejará de incluirse cuando vuelva a ejecutar la búsqueda.
+- Si usa el cmdlet **New-ComplianceSearch para crear una búsqueda de contenido y especifica un buzón desconectado como la ubicación de contenido de Exchange en la que buscar, la búsqueda de contenido no devolverá resultados de búsqueda del buzón desconectado.
 
-- Si se elimina la licencia de un buzón que está en espera (por una de las distintas [características de retención de Office 365](identify-a-hold-on-an-exchange-online-mailbox.md), el buzón se conservará indefinidamente y seguirá siendo susceptible de búsquedas más allá del periodo de gracia de 30 días.
+Si necesita conservar los datos de un buzón desconectado para poder buscarlos, debe poner el buzón en suspensión antes de quitar la licencia. De este forma, se conservan los datos y se permite la búsqueda en el buzón desconectado hasta que se quite la suspensión. Para más información sobre las suspensiones, vea [Cómo identificar el tipo de suspensión en un buzón de Exchange Online](identify-a-hold-on-an-exchange-online-mailbox.md)
 
 ### <a name="previewing-search-results"></a>Vista previa de los resultados de búsqueda
 
