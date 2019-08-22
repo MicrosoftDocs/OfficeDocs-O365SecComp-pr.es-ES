@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Configure las directivas de revisión de supervisión para capturar las comunicaciones de los empleados para su revisión.
-ms.openlocfilehash: 9cc13cb953d8166ceac04856fa8b54d0a4629bd6
-ms.sourcegitcommit: 97b9f88b9beee23de13ecf6d0759ac0fad5cf08d
+ms.openlocfilehash: c4735226235d557dc138d6eebaf9c7a84c39020c
+ms.sourcegitcommit: 3f3f3ecb28ef65d023f3573f9a4e09a0586d8f53
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "36168178"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "36490787"
 ---
 # <a name="configure-supervision-policies-for-your-organization"></a>Configurar directivas de supervisión para su organización
 
@@ -29,7 +29,7 @@ Usar directivas de supervisión para capturar las comunicaciones de los empleado
 
 > [!NOTE]
 > Los usuarios supervisados por directivas de supervisión deben tener una licencia de cumplimiento de Microsoft 365 E5, una licencia de Office 365 Enterprise E3 con el complemento de cumplimiento avanzado o incluirse en una suscripción a Office 365 Enterprise E5.
-Si no tiene un plan existente de Enterprise E5 y desea intentar la supervisión, puede [registrarse para obtener una versión de prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
+> Si no tiene un plan existente de Enterprise E5 y desea intentar la supervisión, puede [registrarse para obtener una versión de prueba de Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).
   
 Siga estos pasos para configurar y usar la supervisión en su organización de Office 365:
   
@@ -99,6 +99,7 @@ Para administrar usuarios supervisados en grandes organizaciones empresariales, 
     ```
 
 Para obtener más información acerca de la configuración de grupos, vea:
+
 - [Crear y administrar grupos de distribución](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups)
 - [Administrar grupos de seguridad habilitados para correo](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-mail-enabled-security-groups)
 - [Información general sobre los grupos de Office 365](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups?view=o365-worldwide)
@@ -166,7 +167,7 @@ Use un editor de texto (como el Bloc de notas) para crear un archivo que incluya
 
     - Asigne un nombre y una descripción a la Directiva.
     - Elija los usuarios o grupos que desea supervisar, incluida la elección de los usuarios o grupos que quiera excluir.
-    - Definir las condiciones de la Directiva de supervisión.
+    - Definir las [condiciones](supervision-policies.md#ConditionalSettings)de la Directiva de supervisión. Puede elegir entre la dirección del mensaje, la palabra clave, los tipos de archivo y las condiciones de coincidencia de tamaño.
     - Elija si le gustaría incluir tipos de información confidencial. Aquí puede seleccionar los tipos de información confidencial predeterminada y personalizado.
     - Elija si quiere habilitar el modelo de lenguaje ofensivo. Esto detecta un idioma no apropiado enviado o recibido en el cuerpo de los mensajes de correo electrónico.
     - Definir el porcentaje de comunicaciones que se van a revisar.
@@ -196,7 +197,7 @@ Para configurar revisión para escritorio de Outlook, necesita la dirección del
 > [!NOTE]
 > Si otra persona creó la Directiva, debe obtener esta dirección para instalar el complemento.
 
- **Para buscar la dirección del buzón de supervisión**
+**Para buscar la dirección del buzón de supervisión**
   
 1. Inicie sesión en el [centro de cumplimiento](https://compliance.microsoft.com) usando credenciales para una cuenta de administrador de su organización.
 

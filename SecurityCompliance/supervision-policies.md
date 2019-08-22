@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Obtenga información sobre las directivas de supervisión en Office 365
-ms.openlocfilehash: 6480c3ccb069e5e16618739303d71df115074baf
-ms.sourcegitcommit: 6122eb026c558a5126c40845e656fbb0c40cb32a
+ms.openlocfilehash: 3259620e16b626c81c9c0f71f7be1f627e9c6bc9
+ms.sourcegitcommit: 3f3f3ecb28ef65d023f3573f9a4e09a0586d8f53
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2019
-ms.locfileid: "36165656"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "36490767"
 ---
 # <a name="supervision-policies-in-office-365"></a>Directivas de supervisión en Office 365
 
@@ -144,6 +144,7 @@ El modelo de lenguaje ofensivo supervisa el correo electrónico en busca de la o
 | **Expresiones disfrazadas** | Expresiones cuyo significado o pronunciación es el mismo que otro término ofensivo. |
 
 #### <a name="conditional-settings"></a>Configuración condicional
+<a name="ConditionalSettings"> </a>
 
 Las condiciones que elija para la Directiva se aplican a las comunicaciones de los orígenes de correo electrónico y de terceros de la organización (como en Facebook o DropBox).
 

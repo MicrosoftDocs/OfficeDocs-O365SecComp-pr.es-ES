@@ -3,19 +3,19 @@ title: Número de identificación nacional de la UE
 ms.author: stephow
 author: stephow-MSFT
 manager: laurawi
-ms.date: 8/17/2018
+ms.date: ''
 audience: Admin
 ms.topic: reference
 ms.service: O365-seccomp
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: En este tema se muestra qué busca una directiva de prevención de pérdida de datos (DLP) cuando detecta el tipo de información confidencial de número de identificación nacional de la UE. Este tipo de información confidencial define distintos patrones, palabras clave y otras pruebas para cada país.
-ms.openlocfilehash: 205019d040648f0600f3dbf4403063edf9f31c41
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: cbcacb3f85877f5a84238468fb52d612d90f5f0b
+ms.sourcegitcommit: 3f3f3ecb28ef65d023f3573f9a4e09a0586d8f53
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34154471"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "36490777"
 ---
 # <a name="eu-national-identification-number"></a>Número de identificación nacional de la UE
 
@@ -59,7 +59,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywordsaustriaeunationalidcard"></a>Keywords_austria_eu_national_id_card
+#### <a name="keywords_austria_eu_national_id_card"></a>Keywords_austria_eu_national_id_card
 
 número de identidad austriaco
   
@@ -123,11 +123,11 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywordsbulgarianationalnumber"></a>Keywords_bulgaria_national_number
+#### <a name="keywords_bulgaria_national_number"></a>Keywords_bulgaria_national_number
 
 egn
   
-egn#
+egn #
   
 número nacional búlgaro
   
@@ -135,21 +135,21 @@ número nacional
   
 social security number
   
-nationalnumber#
+nationalnumber #
   
-SSN
+SSN #
   
 SSN
   
 nationalnumber
   
-bnn#
+bnn #
   
 bnn
   
 número de identificación personal
   
-personalidnumber#
+personalidnumber #
   
 единен граждански номер
   
@@ -157,7 +157,7 @@ edinen grazhdanski nomer
   
 егн
   
-егн#
+егн #
   
 ## <a name="croatia"></a>Croacia
 
@@ -197,7 +197,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywordscypruseunationalidcard"></a>Keywords_cyprus_eu_national_id_card
+#### <a name="keywords_cyprus_eu_national_id_card"></a>Keywords_cyprus_eu_national_id_card
 
 número de tarjeta de identificación
   
@@ -266,7 +266,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywordsestoniaeunationalidcard"></a>Keywords_estonia_eu_national_id_card
+#### <a name="keywords_estonia_eu_national_id_card"></a>Keywords_estonia_eu_national_id_card
 
 código de identificación personal
   
@@ -278,7 +278,7 @@ número nacional
   
 número de identificación personal
   
-personalidnumber#
+personalidnumber #
   
 IK
   
@@ -350,7 +350,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywordshungaryeunationalidcard"></a>Keywords_hungary_eu_national_id_card
+#### <a name="keywords_hungary_eu_national_id_card"></a>Keywords_hungary_eu_national_id_card
 
 número de identificación personal
   
@@ -417,7 +417,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywordsirelandeunationalidcard"></a>Keywords_ireland_eu_national_id_card
+#### <a name="keywords_ireland_eu_national_id_card"></a>Keywords_ireland_eu_national_id_card
 
 número de servicio público personal
   
@@ -491,7 +491,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywordsitalyeunationalidcard"></a>Keywords_italy_eu_national_id_card
+#### <a name="keywords_italy_eu_national_id_card"></a>Keywords_italy_eu_national_id_card
 
 código personal
   
@@ -501,7 +501,7 @@ número de certificado personal
   
 Código fiscal
   
-personalcodeno#
+personalcodeno #
   
 número de identificación personal
   
@@ -519,7 +519,7 @@ personal del identificador Codice
   
 Codice fiscal
   
-## <a name="italy"></a>Italia
+## <a name="latvia"></a>Letonia
 
 ### <a name="format"></a>Formato
 
@@ -567,7 +567,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywordslatviaeunationalidcard"></a>Keywords_latvia_eu_national_id_card
+#### <a name="keywords_latvia_eu_national_id_card"></a>Keywords_latvia_eu_national_id_card
 
 código personal
   
@@ -575,7 +575,7 @@ número de código personal
   
 número de certificado personal
   
-personalcodeno#
+personalcodeno #
   
 número de identificación personal
   
@@ -632,7 +632,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywordslithuaniaeunationalidcard"></a>Keywords_lithuania_eu_national_id_card
+#### <a name="keywords_lithuania_eu_national_id_card"></a>Keywords_lithuania_eu_national_id_card
 
 código numérico personal
   
@@ -642,7 +642,7 @@ número de servicio de ciudadanos
   
 número de identidad único
   
-uniqueidentityno#
+uniqueidentityno #
   
 código personal.
   
@@ -697,23 +697,23 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywordsluxemburgeunationalidcard"></a>Keywords_luxemburg_eu_national_id_card
+#### <a name="keywords_luxemburg_eu_national_id_card"></a>Keywords_luxemburg_eu_national_id_card
 
 identificador personal
   
 número de identificación personal
   
-personalidno#
+personalidno #
   
 número de identificador único
   
-personalidnumber#
+personalidnumber #
   
 clave de identificador única
   
 código de identificación personal
   
-uniqueidkey#
+uniqueidkey #
   
 Código individual
   
@@ -727,11 +727,11 @@ identificador personnelle
   
 personal de numéro d'identification
   
-idpersonnelle#
+idpersonnelle #
   
 persönliche identifikationsnummer
   
-eindeutigeid#
+eindeutigeid #
   
 ## <a name="malta"></a>Malta
 
@@ -778,7 +778,7 @@ Una directiva DLP está segura al 65% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywordsmaltaeunationalidcard"></a>Keywords_malta_eu_national_id_card
+#### <a name="keywords_malta_eu_national_id_card"></a>Keywords_malta_eu_national_id_card
 
 código numérico personal
   
@@ -788,7 +788,7 @@ número de servicio de ciudadanos
   
 número de identidad único
   
-uniqueidentityno#
+uniqueidentityno #
   
 kodiċi numerali personali
   
@@ -839,7 +839,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywordsnetherlandseunationalidcard"></a>Keywords_netherlands_eu_national_id_card
+#### <a name="keywords_netherlands_eu_national_id_card"></a>Keywords_netherlands_eu_national_id_card
 
 código numérico personal
   
@@ -849,11 +849,11 @@ número de servicio de ciudadanos
   
 número de identidad único
   
-uniqueidentityno#
+uniqueidentityno #
   
 BSN
   
-BSN
+BSN #
   
 persoonlijke numerieke código
   
@@ -912,7 +912,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywordsromaniaeunationalidcard"></a>Keywords_romania_eu_national_id_card
+#### <a name="keywords_romania_eu_national_id_card"></a>Keywords_romania_eu_national_id_card
 
 código numérico personal
   
@@ -920,19 +920,19 @@ número de identificación único
   
 cnp
   
-cnp#
+cnp #
   
 patilla
   
-patilla
+patilla #
   
 número de seguro
   
-insurancenumber#
+insurancenumber #
   
 número de identidad único
   
-uniqueidentityno#
+uniqueidentityno #
   
 personal numérico de pago
   
@@ -946,11 +946,11 @@ număr identitate
   
 număr identificare personal
   
-număridentitate#
+număridentitate #
   
-codnumericpersonal#
+codnumericpersonal #
   
-numărpersonalunic#
+numărpersonalunic #
   
 ## <a name="slovakia"></a>Eslovaquia
 
@@ -993,7 +993,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywordsslovakiaeunationalidcard"></a>Keywords_slovakia_eu_national_id_card
+#### <a name="keywords_slovakia_eu_national_id_card"></a>Keywords_slovakia_eu_national_id_card
 
 número de nacimiento
   
@@ -1003,9 +1003,9 @@ número de identificación personal
   
 social security number
   
-nationalnumber#
+nationalnumber #
   
-SSN
+SSN #
   
 SSN
   
@@ -1013,7 +1013,7 @@ número nacional
   
 número de identificación personal
   
-personalidnumber#
+personalidnumber #
   
 rč
   
@@ -1070,7 +1070,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywordssloveniaeunationalidcard"></a>Keywords_slovenia_eu_national_id_card
+#### <a name="keywords_slovenia_eu_national_id_card"></a>Keywords_slovenia_eu_national_id_card
 
 código numérico personal
   
@@ -1080,7 +1080,7 @@ número de registro único
   
 número de identidad único
   
-uniqueidentityno#
+uniqueidentityno #
   
 número único de ciudadano principal
   
@@ -1130,7 +1130,7 @@ Una directiva DLP está segura al 75% de que este tipo de información confidenc
 
 ### <a name="keywords"></a>Palabras clave
 
-#### <a name="keywordsspaineunationalidcard"></a>Keywords_spain_eu_national_id_card
+#### <a name="keywords_spain_eu_national_id_card"></a>Keywords_spain_eu_national_id_card
 
 DNI
   
@@ -1148,19 +1148,19 @@ número de la identidad personal
   
 número de identidad único
   
-nationalidno#
+nationalidno #
   
-UniqueID
+UniqueID #
   
-DNI
+DNI #
   
-nationalid#
+nationalid #
+  
+NIE #
   
 NIE
   
-NIE
-  
-nienúmero#
+nienúmero #
   
 NIE número
   
@@ -1172,9 +1172,9 @@ número nacional identidad
   
 número de DNI
   
-dninúmero#
+dninúmero #
   
-identidadúnico#
+identidadúnico #
   
 ## <a name="sweden"></a>Suecia
 
