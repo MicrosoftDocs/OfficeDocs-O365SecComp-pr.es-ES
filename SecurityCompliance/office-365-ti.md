@@ -3,7 +3,7 @@ title: Investigación y respuesta de amenazas de Office 365
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 08/20/2019
+ms.date: 08/22/2019
 audience: Admin
 ms.topic: overview
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
 ms.collection:
 - M365-security-compliance
 description: Descubra cómo las capacidades de inteligencia sobre amenazas de Office 365 Advanced Threat Protection pueden ayudarle a investigar amenazas contra su organización, responder a malware, phishing y otros ataques que Office 365 ha detectado en su nombre y buscar amenazas indicadores.
-ms.openlocfilehash: c99712553646a6ceff22005952289b2ca3e1dbf4
-ms.sourcegitcommit: a5a7e43822336ed18d8f5879167766686cf6b2a3
+ms.openlocfilehash: 774d3d5c6a1ff71c105c3778458cf2a0d0cbed94
+ms.sourcegitcommit: f473bf7f215ba4eb2f49e0dd23a9d2e39fa512c9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "36478189"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "36566218"
 ---
 # <a name="office-365-threat-investigation-and-response"></a>Investigación y respuesta de amenazas de Office 365
 
@@ -81,7 +81,7 @@ Como parte de la oferta del plan 2 de protección contra amenazas avanzada de Of
 Las capacidades de investigación y respuesta de amenazas de Office 365 se incluyen en Office 365 plan de protección contra amenazas avanzada 2 y Enterprise E5. 
 
 > [!TIP]
-> Si su organización tiene una suscripción de Office 365 que no incluye estas capacidades de investigación y respuesta de amenaza, puede adquirirlas como complemento junto con la protección contra amenazas avanzada de Office 365. Para obtener más información acerca de las opciones de planeación, consulte [office 365 Platform Service &amp; Description: Office 365 Security Compliance Center](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center) y [comprar o editar un complemento para Office 365 para empresas](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/buy-or-edit-an-add-on).
+> Si su organización tiene una suscripción de Office 365 que no incluye estas capacidades de investigación y respuesta de amenazas, puede comprar Office 365 el plan de protección contra amenazas avanzada 2 como complemento. Para obtener más información acerca de las opciones de planeación, consulte [office 365 Advanced Threat Protection Service Description](https://docs.microsoft.com/en-us/office365/servicedescriptions/office-365-advanced-threat-protection-service-description) y [comprar o editar un complemento para Office 365 para empresas](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/buy-or-edit-an-add-on).
   
 1. Como administrador global de Office 365, vaya a [https://admin.microsoft.com](https://admin.microsoft.com) e inicie sesión con su cuenta profesional o educativa para Office 365. 
     

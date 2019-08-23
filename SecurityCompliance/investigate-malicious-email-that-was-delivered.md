@@ -15,12 +15,12 @@ ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo usar la investigación de amenazas y las capacidades de respuesta para buscar y investigar correo electrónico malintencionado.
-ms.openlocfilehash: 2049b3b8e0d7b9173639af3c48f75a072744fb7f
-ms.sourcegitcommit: dbcb3df3b313f7a9ea6669425e0a0498be844ae9
+ms.openlocfilehash: 25eb1f4a13ad698d7b6817ea7917ccabea7210ae
+ms.sourcegitcommit: f473bf7f215ba4eb2f49e0dd23a9d2e39fa512c9
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "36444879"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "36566228"
 ---
 # <a name="find-and-investigate-malicious-email-that-was-delivered-in-office-365"></a>Buscar e investigar correo electrónico malintencionado que se entregó en Office 365
 
@@ -88,6 +88,9 @@ Se abrirá el control flotante, donde se colocan tanto la vista previa del encab
 > Recuerde que ' vista previa ' es un rol y no un RoleGroup y que el rol debe agregarse a un RoleGroup posteriormente.
 
 ![Control flotante del explorador de amenazas con vínculos de descarga y vista previa en la página.](media/ThreatExplorerDownloadandPreview.PNG)
+
+> [!IMPORTANT]
+> Esta funcionalidad no se muestra para los correos electrónicos que nunca se encontraron en el buzón de un usuario, lo que puede ocurrir si se perdió un correo electrónico o si se produce un error en su entrega. Para los casos en los que se eliminaron los correos electrónicos de los buzones de los usuarios, los administradores verán un error que indica que no se encontró correo.
 
 ### <a name="check-the-delivery-action-and-location"></a>Comprobar la acción y la ubicación de la entrega
 
