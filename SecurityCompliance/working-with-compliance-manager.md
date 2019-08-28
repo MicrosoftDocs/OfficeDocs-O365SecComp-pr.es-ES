@@ -1,7 +1,7 @@
 ---
 title: Trabajar con el administrador de cumplimiento de Microsoft (versión preliminar)
-ms.author: robmazz
-author: robmazz
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El administrador de cumplimiento de Microsoft es una herramienta gratuita de evaluación de riesgos basada en flujos de trabajo en el portal de confianza de servicios de Microsoft. El administrador de cumplimiento le permite realizar un seguimiento, asignar y comprobar actividades de cumplimiento normativo relacionadas con los servicios en la nube de Microsoft.
-ms.openlocfilehash: 6a6cc7cc51b911feddf21cfc107bc5c85bb959ba
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 07aee08c8929443b8b4f4805d22a94b0ad9db27a
+ms.sourcegitcommit: 1947ad3c0dde9163ba9b6834d8b38bd04b4264a5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157872"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36643312"
 ---
 # <a name="work-with-microsoft-compliance-manager-preview"></a>Trabajar con el administrador de cumplimiento de Microsoft (versión preliminar)
 
@@ -205,7 +205,7 @@ De un vistazo, puede ver el título, el propietario, la categoría, el cumplimie
     - **¿Desea copiar los datos de un grupo existente? (opcional):** conmute el control para habilitar la copia del grupo y, a continuación, haga lo siguiente:
         - **Seleccione un grupo (opcional):** Si la copia de grupo está habilitada, seleccione el grupo desde el que desea copiar
             - **Detalles de la implementación (opcional):** Seleccione esta selección para copiar los detalles de implementación en el nuevo grupo.
-            - **Información adicional del plan de & de prueba (opcional):** Seleccione esta selección para copiar el plan de pruebas y detalles de información adicional al nuevo grupo
+            - **Plan de pruebas & información adicional (opcional):** Seleccione esta selección para copiar el plan de pruebas y detalles de información adicional al nuevo grupo
             - **Documentos (opcional):** Seleccione esta selección para copiar los documentos en el nuevo grupo.
 
 3. Seleccione **Guardar** para crear la evaluación.
@@ -223,7 +223,7 @@ De un vistazo, puede ver el título, el propietario, la categoría, el cumplimie
 Al crear una evaluación, tiene la opción de copiar la información de un grupo existente. Esto le permite aplicar la información especificada en la evaluación copiada a los mismos controles en la nueva evaluación. Por ejemplo, si tiene un grupo para todas las evaluaciones relacionadas con FFIEC en su organización, puede copiar la siguiente información de las evaluaciones existentes:
 
 - Detalles de la implementación
-- Información adicional del plan de &
+- Plan de pruebas & información adicional
 - Documents
 
 #### <a name="copy-information-from-an-existing-assessment-to-a-new-assessment"></a>Copiar información de una evaluación existente a una nueva evaluación
@@ -237,7 +237,7 @@ Al crear una evaluación, tiene la opción de copiar la información de un grupo
     - **Seleccione un grupo o agregue un nuevo grupo (obligatorio):** Elija **Agregar un nuevo grupo** y proporcione un nombre de grupo único.
     - **¿Desea copiar los datos de un grupo existente? (opcional):** cambie el control a activado para habilitar la copia del grupo y, a continuación:- **Seleccione un grupo (opcional):** si la copia de grupo está habilitada, seleccione el grupo desde el que se va a copiar.
             - **Detalles de la implementación (opcional):** Seleccione esta selección para copiar los detalles de implementación en el nuevo grupo.
-            - **Información adicional del plan de & de prueba (opcional):** Seleccione esta selección para copiar el plan de pruebas y detalles de información adicional al nuevo grupo.
+            - **Plan de pruebas & información adicional (opcional):** Seleccione esta selección para copiar el plan de pruebas y detalles de información adicional al nuevo grupo.
             - **Documentos (opcional):** Seleccione esta selección para copiar los documentos en el nuevo grupo.
 
 3. Seleccione **Guardar** para crear la evaluación.

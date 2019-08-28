@@ -1,7 +1,7 @@
 ---
 title: Notas de la versión de Microsoft Compliance Manager
-ms.author: robmazz
-author: robmazz
+ms.author: chvukosw
+author: chvukosw
 manager: laurawi
 audience: Admin
 ms.topic: article
@@ -12,12 +12,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El administrador de cumplimiento de Microsoft es una herramienta gratuita de evaluación de riesgos basada en flujos de trabajo en el portal de confianza de servicios de Microsoft. El administrador de cumplimiento le permite realizar un seguimiento, asignar y comprobar actividades de cumplimiento normativo relacionadas con los servicios en la nube de Microsoft.
-ms.openlocfilehash: f01e70b7852e6421c7c77dbe5ed4b6ca2aa395b2
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+ms.openlocfilehash: 196118972079f83ba2f6a59ce1ae1514d9616599
+ms.sourcegitcommit: 1947ad3c0dde9163ba9b6834d8b38bd04b4264a5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34152072"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36643242"
 ---
 # <a name="release-notes-for-compliance-manager-preview"></a>Notas de la versión del administrador de cumplimiento (versión preliminar)
 

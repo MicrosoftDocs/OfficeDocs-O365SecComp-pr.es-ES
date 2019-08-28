@@ -9,12 +9,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 3e64f99d-ac33-4aba-91c5-9cb4ca476803
 description: Los administradores pueden usar el seguimiento de mensajes en el centro de seguridad & cumplimiento para averiguar qué sucedió con los mensajes.
-ms.openlocfilehash: af3739174203d7c8d81086a5bf7d036bc2bdd76f
-ms.sourcegitcommit: 73dcdafb15b462223d1a670c781db260eb73c2f5
+ms.openlocfilehash: 3c5efb1d832a52c6b6b5eb9cfb81ece216c64513
+ms.sourcegitcommit: 1947ad3c0dde9163ba9b6834d8b38bd04b4264a5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "36048222"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36643262"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Seguimiento de mensajes en el Centro de seguridad y cumplimiento
 
@@ -25,7 +25,7 @@ Seguimiento de mensajes en el centro de seguridad & cumplimiento sigue los mensa
 El seguimiento de mensajes en el centro de seguridad & cumplimiento mejora según el seguimiento de mensajes que estaba disponible en el centro de administración de Exchange (EAC). Puede usar la información del seguimiento de mensajes para responder de manera eficiente a las preguntas de los usuarios sobre lo que sucedió con sus mensajes, solucionar problemas del flujo de correo y validar los cambios en la Directiva.
 
 > [!NOTE]
-> El límite de la cantidad de mensajes devueltos es de 50.000. En la consola, cuando se ejecuta una consulta de gran tamaño, el recuento de mensajes del informe de cmdlet Get-HistoricalSearch supera 240.000.
+>  El recuento de mensajes se detendrá a 50 000 y el informe sólo reflejará este importe en la consola. El cmdlet Get-HistoricalSearch del cmdlet de PowerShell mostrará el recuento de mensajes auténtico.
 
 ## <a name="open-message-trace"></a>Abrir el seguimiento de mensajes
 
@@ -320,7 +320,7 @@ Disponible (completado) los informes extendidos están disponibles en la secció
 
 - **custom_data**: contiene datos relacionados con los tipos de eventos específicos. Para obtener más información, vea las siguientes secciones.
 
-#### <a name="customdata-values"></a>valores de custom_data
+#### <a name="custom_data-values"></a>valores de custom_data
 
 Varios **** agentes de Exchange Online `AGENTINFO` usan el campo custom_data para un evento para registrar los detalles de procesamiento de mensajes. Algunos de los agentes más interesantes se describen en las secciones siguientes.
 

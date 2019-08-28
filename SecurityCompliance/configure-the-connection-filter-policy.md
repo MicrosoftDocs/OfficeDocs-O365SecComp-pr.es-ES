@@ -1,9 +1,9 @@
 ---
-title: Configurar la directiva de filtro de conexión
+title: Configurar la Directiva de filtro de conexión, lista de permitidos, lista de bloqueados
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 10/24/2018
+ms.date: 8/27/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,18 +14,25 @@ ms.assetid: 6ae78c12-7bbe-44fa-ab13-c3768387d0e3
 ms.collection:
 - M365-security-compliance
 description: Para asegurarse de que el correo electrónico enviado por personas de confianza no está bloqueado, puede usar la Directiva de filtro de conexión para crear una lista de permitidos, también conocida como lista de remitentes seguros, de las direcciones IP en las que confía. También puede crear una lista de remitentes bloqueados.
-ms.openlocfilehash: 8589f7d714199414e7c5177ff227859da50e3e06
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: a3d9703bc90c0bc1000c2aa755451ffc2cb7d060
+ms.sourcegitcommit: 1947ad3c0dde9163ba9b6834d8b38bd04b4264a5
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35600096"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "36643222"
 ---
 # <a name="configure-the-connection-filter-policy"></a>Configurar la directiva de filtro de conexión
  
 La mayoría de nosotros tenemos amigos y socios comerciales en los que confiamos. Puede resultar frustrante encontrar correo electrónico de ellos en la carpeta de correo electrónico no deseado o incluso bloqueado totalmente por un filtro contra correo no deseado. Si desea asegurarse de que el correo electrónico que le envían las personas en las que confía no se bloquea, puede usar la directiva de filtro de conexión para crear una lista de direcciones IP permitidas, también conocida como lista de remitentes seguros, en las que confía. También puede crear una lista de remitentes bloqueados, que es una lista de direcciones IP, normalmente de spammers conocidos, de las que nunca quiere recibir mensajes de correo electrónico.
   
+- Al pensar en *[las listas](create-safe-sender-lists-in-office-365.md)* de permitidos, tenga en cuenta que las directivas de filtro de conexión se refieren a las *cuentas de confianza permitidas* por el filtro. Esto se hace con el interés de filtrar de forma más precisa los mensajes de correo de menor confianza o no confiable mientras se conservan los elementos necesarios. Una lista de permitidos de la Directiva de filtro de conexión consiste en filtrar las direcciones IP de confianza de un grupo mucho más amplio de cuentas e IPs y garantizar el acceso de los correos electrónicos de confianza fácilmente.
+
+- Una directiva de filtro de conexión que crea una lista de bloqueo puede considerarse como la detección de menos o con cuentas no fidedignas en el filtro en su lugar.
+
  Para obtener más información sobre configuración de correo no deseado que se aplica a toda la organización, consulte [Cómo ayudar a garantizar que un mensaje no se marque como correo no deseado](https://go.microsoft.com/fwlink/p/?LinkId=534224) o [Bloquear el correo no deseado con el filtro de correo no deseado de Office 365 para evitar problemas de negativos falsos](https://go.microsoft.com/fwlink/p/?LinkId=534225). Estos son útiles si tiene control de nivel de administrador y desea evitar falsos positivos o negativos falsos.
+
+> [!TIP]
+> Es posible que quiera pausar y leer sobre cómo crear [listas de bloqueo](create-block-sender-lists-in-office-365.md) [(o de remitentes seguros)](create-safe-sender-lists-in-office-365.md) .
   
 En el siguiente vídeo se muestran los pasos de configuración para la directiva de filtro de conexión:
   
