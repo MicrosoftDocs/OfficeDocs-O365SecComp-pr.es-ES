@@ -15,18 +15,18 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: Obtenga información sobre el archivado de expansión automática en Office 365, que proporciona almacenamiento ilimitado de archivos para buzones de Exchange Online.
-ms.openlocfilehash: 21489683bbb9f3e2addb5e95a38d8f8a418639de
-ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
+ms.openlocfilehash: bf79ec35fe1ee55702f8a3715d62f102d1d88632
+ms.sourcegitcommit: 73f1db241c0686020167d43442e7b07a2199ea3a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36231084"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "36658136"
 ---
 # <a name="overview-of-unlimited-archiving-in-office-365"></a>Información general sobre el archivado ilimitado en Office 365
 
 En Office 365, los buzones de archivo proporcionan a los usuarios espacio de almacenamiento adicional en el buzón de correo. Después de habilitar el buzón de archivo de un usuario, hay disponible hasta 100 GB de almacenamiento adicional. En el pasado, cuando se alcanzaba la cuota de almacenamiento de 100 GB, las organizaciones tenían que ponerse en contacto con Microsoft para solicitar espacio de almacenamiento adicional para un buzón de archivo. Esto ya no es así.
 
-La característica de archivo ilimitado en Office 365 (denominada *archivado de expansión automática*) proporciona una cantidad ilimitada de almacenamiento en los buzones de archivo. Ahora, cuando se alcanza la cuota de almacenamiento en el buzón de archivo, Office 365 aumenta automáticamente el tamaño del archivo, lo que significa que los usuarios no se quedarán sin espacio de almacenamiento en el buzón y los administradores no tendrán que solicitar almacenamiento adicional para los buzones de archivo. .
+La característica de archivado ilimitado de Office 365 (denominada *archivado de expansión automática*) proporciona hasta 1 TB de almacenamiento adicional en buzones de archivo. Cuando se alcanza la cuota de almacenamiento en el buzón de archivo, Office 365 aumenta automáticamente el tamaño del archivo, lo que significa que los usuarios no se quedarán sin espacio de almacenamiento en el buzón y los administradores no tendrán que solicitar almacenamiento adicional para los buzones de archivo.
   
 Para obtener instrucciones paso a paso para activar el archivado de expansión automática, vea [Habilitar el archivado ilimitado en Office 365](enable-unlimited-archiving.md).
   
@@ -35,7 +35,7 @@ Para obtener instrucciones paso a paso para activar el archivado de expansión a
   
 ## <a name="how-auto-expanding-archiving-works"></a>Funcionamiento del archivado de expansión automática
 
-Como se ha explicado anteriormente, el espacio de almacenamiento de buzones de correo adicional se crea cuando se habilita el buzón de archivo de un usuario. Cuando el archivado de expansión automática está habilitado, Office 365 comprueba periódicamente el tamaño del buzón de archivo. Cuando un buzón de archivo se acerca al límite de almacenamiento, Office 365 crea automáticamente espacio de almacenamiento adicional para el archivo. Si el usuario se queda sin este espacio de almacenamiento adicional, Office 365 agrega más espacio de almacenamiento al archivo del usuario. Este proceso se produce de forma automática, lo que significa que los administradores no tienen que solicitar el almacenamiento de archivos adicional o administrar el archivado de expansión automática. 
+Como se ha explicado anteriormente, el espacio de almacenamiento de buzones de correo adicional se crea cuando se habilita el buzón de archivo de un usuario. Cuando el archivado de expansión automática está habilitado, Office 365 comprueba periódicamente el tamaño del buzón de archivo. Cuando un buzón de archivo se acerca al límite de almacenamiento, Office 365 crea automáticamente espacio de almacenamiento adicional para el buzón de archivo. Este espacio adicional se denomina *archivo auxiliar*. Si el usuario se queda sin espacio de almacenamiento en un archivo auxiliar, Office 365 agregará automáticamente un nuevo archivo auxiliar. Office 365 agregará un máximo de 20 archivos auxiliares para un total de 1 TB de almacenamiento adicional. Este proceso se produce automáticamente, lo que significa que los administradores no tienen que administrar el archivado de expansión automática. 
   
 A continuación se muestra una introducción rápida del proceso.
   
@@ -43,12 +43,15 @@ A continuación se muestra una introducción rápida del proceso.
   
 1. El archivado está habilitado para un buzón de usuario o un buzón compartido. Se crea un buzón de archivo con 100 GB de espacio de almacenamiento y la cuota de advertencia para el buzón de archivo se establece en 90 GB.
     
-2. Un administrador habilita el archivado de expansión automática para el buzón de correo. A continuación, cuando el buzón de archivo (incluida la carpeta elementos recuperables) alcanza los 90 GB, se convierte en un archivo de expansión automática y Office 365 agrega espacio de almacenamiento al archivo. Tenga en cuenta que puede tardar hasta 30 días en aprovisionarse el espacio de almacenamiento adicional.
+2. Un administrador habilita el archivado de expansión automática para el buzón de correo. Cuando el buzón de archivo (incluida la carpeta elementos recuperables) alcanza los 90 GB, se convierte en un archivo de expansión automática y Office 365 agrega espacio de almacenamiento al archivo. Tenga en cuenta que puede tardar hasta 30 días en aprovisionarse el espacio de almacenamiento adicional.
+
+> [!NOTE]
+> Si un buzón se coloca en retención o se asigna a una directiva de retención de Office 365, la cuota de almacenamiento de la Maibox de archivo se aumenta a 110 GB cuando está habilitado el archivado de expansión automática. De forma similar, la cuota de advertencia de archivo aumenta a 100 GB.
     
-3. Office 365 agrega automáticamente más espacio de almacenamiento al archivo cuando es necesario.
+3. Office 365 agrega automáticamente más espacio de almacenamiento cuando es necesario. Como se mencionó anteriormente, Office 365 agregará hasta 20 archivos auxiliares, para un máximo de 1 TB de espacio de almacenamiento adicional en el archivo.
   
 > [!IMPORTANT]
-> Si un buzón se coloca en retención o se asigna a una directiva de retención de Office 365, la cuota de almacenamiento de la Maibox de archivo se aumenta a 110 GB cuando está habilitado el archivado de expansión automática. De forma similar, la cuota de advertencia de archivo aumenta a 100 GB.
+> El archivo de expansión automática solo se admite para los buzones de correo que se usan para usuarios individuales (o buzones compartidos) con una tasa de crecimiento que no supera 1 GB por día. El buzón de archivo de un usuario está diseñado exclusivamente para dicho usuario. El uso del registro en diario, las reglas de transporte o las reglas de reenvío automático para copiar mensajes en un buzón de archivo no está permitido. Microsoft se reserva el derecho de denegar el archivado ilimitado si el buzón de archivo de un usuario se usa para almacenar datos de archivo de otros usuarios.
 
 ## <a name="what-gets-moved-to-the-additional-archive-storage-space"></a>¿Qué se mueve al espacio de almacenamiento adicional del archivo?
 

@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: El administrador de cumplimiento de Microsoft es una herramienta gratuita de evaluación de riesgos basada en flujos de trabajo en el portal de confianza de servicios de Microsoft. El administrador de cumplimiento le permite realizar un seguimiento, asignar y comprobar actividades de cumplimiento normativo relacionadas con los servicios en la nube de Microsoft.
-ms.openlocfilehash: af0efa2711215946930c091fc7c38cc1b9f575fd
-ms.sourcegitcommit: f0d23e57b00f07cef5b1b2d366eaeeeacda37e3e
+ms.openlocfilehash: e41b28972dc2ada5c0591de0e73c04ea3306e039
+ms.sourcegitcommit: 3962de88a143f0eb416b5cfdfd777d731f560ec8
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "35786655"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "36649965"
 ---
 # <a name="microsoft-compliance-manager-and-the-gdpr"></a>Administrador de cumplimiento de Microsoft y el RGPD
 
@@ -40,7 +40,7 @@ Para buscar una cuenta de usuario:
 
 2. Cuando se haya escrito correctamente el nombre de usuario, seleccione **Buscar**.
 
-3. Para las cuentas de usuario que no se devuelven, se muestra "usuario no encontrado" en la página. Compruebe la información de la dirección de correo del usuario y realice las correcciones necesarias. Para volver a intentarlo, seleccione **Buscar**.
+3. Para las cuentas de usuario que no se devuelven, la página muestra al **usuario no encontrado**. Compruebe la información de la dirección de correo del usuario y realice las correcciones necesarias. Para volver a intentarlo, seleccione **Buscar**.
 
 4. Para las cuentas de usuario devueltas, el texto del botón cambia de **búsqueda** a **borrado**. Esto indica que la cuenta de usuario devuelta es el contexto operativo de las funciones adicionales y que estas funciones se aplican a esta cuenta de usuario.
 

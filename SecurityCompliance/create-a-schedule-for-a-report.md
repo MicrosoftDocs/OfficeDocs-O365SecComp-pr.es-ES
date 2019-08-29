@@ -3,7 +3,7 @@ title: Crear una programación para un informe en el centro &amp; de seguridad y
 ms.author: deniseb
 author: denisebmsft
 manager: laurawi
-ms.date: 6/1/2018
+ms.date: 08/28/2018
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: a74f637b-3710-4c41-b70f-b5a812929a81
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo configurar una programación para un informe en el centro &amp; de seguridad y cumplimiento.
-ms.openlocfilehash: cd7856a55f6d3442d96941012d5d06bf93c3d9d7
-ms.sourcegitcommit: 0d5a863f48914eeaaf29f7d2a2022618de186247
+ms.openlocfilehash: 41831116d98ef7ea430387f1402f572ab6b35443
+ms.sourcegitcommit: 73f1db241c0686020167d43442e7b07a2199ea3a
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "34077606"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "36658095"
 ---
 # <a name="create-a-schedule-for-a-report-in-the-security-amp-compliance-center"></a>Crear una programación para un informe en el centro &amp; de seguridad y cumplimiento
 
@@ -33,11 +33,29 @@ En el centro &amp; de seguridad y cumplimiento, hay disponibles varios [informes
   
 1. En el [Centro &amp; de seguridad y cumplimiento](https://protection.office.com), vaya a **informes** \> de **Panel**.
     
-2. Elija un informe. Para este ejemplo, elegiremos el informe de estado de protección contra amenazas.
+2. Elija uno de los siguientes informes: 
+
+    - Coincidencias de directivas DLP
+    - Regla de transporte de Exchange
+    - Falsos positivos y reemplazos de DLP
+    - Tipos de archivo de ATP de Office 365
+    - Disposición de mensajes ATP de Office 365
+    - Malware detectado en el correo electrónico
+    - Malware principal
+    - Destinatarios y remitentes principales
+    - Detecciones de suplantación de identidad
+    - Detecciones de correo no deseado
+    - Correo electrónico enviado y recibido
+    - Incidentes de DLP
+    - Informe de cifrado
+
+    Para este ejemplo, elegiremos el informe de tipos de archivo de protección contra amenazas avanzada.
     
-3. En la esquina superior izquierda del informe, elija **+ crear programación**.
+3. En la esquina superior izquierda del informe, elija **+ crear programación**. 
     
-    ![Puede crear una programación de informes en el centro de &amp; seguridad y cumplimiento](media/2311327c-14f6-4a17-b604-0c9ff2d485d1.png)
+    ![Crear programación](media/atpfiletypes-createschedule.png)
+
+    (Nota: no todos los informes tienen el botón **+ crear programación** ).
   
     Se abrirá el cuadro de diálogo **crear programación** . 
     
