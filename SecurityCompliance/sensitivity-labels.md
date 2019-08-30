@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con las etiquetas de confidencialidad, puede clasificar y ayudar a proteger el contenido confidencial, sin poner impedimentos a la productividad y la capacidad de colaboración de los usuarios. Puede usar etiquetas de confidencialidad para aplicar opciones de protección como encriptación o marcas de agua en el contenido con la etiqueta.
-ms.openlocfilehash: 5e6ece4358362a3b32ad3b8b0b30f923e6d872cb
-ms.sourcegitcommit: 82ee560bf3ac84079764cbb4a2d858c321f65145
+ms.openlocfilehash: 7ec9b2d171e4ddbe8a923161e503bb813dfc6813
+ms.sourcegitcommit: d55dab629ce1f8431b8370afde4131498dfc7471
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "35840892"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "36675461"
 ---
 # <a name="overview-of-sensitivity-labels"></a>Información general de etiquetas de confidencialidad
 
@@ -237,7 +237,7 @@ Y si un usuario intenta guardar contenido con la etiqueta en una unidad USB, apa
 Para que las etiquetas de confidencialidad puedan usar WIP, primero debe realizar los requisitos previos que se describen aquí: [Cómo Windows Information Protection protege los archivos con una etiqueta de confidencialidad](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/how-wip-works-with-labels?branch=vsts17546553). En este tema se describen los siguientes requisitos previos:
 
 - Asegúrese de que está ejecutando Windows 10, versión 1809 o posterior.
-- [Configure la protección contra amenazas avanzada de Microsoft defender (ATP de Microsoft Defender (ATP de Microsoft Defender)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/get-started), que analiza el contenido de una etiqueta y aplica la protección de información de Windows (WIP) correspondiente. ATP realiza algunas acciones independientemente del trabajo en curso, como, por ejemplo, informar de las anomalías.
+- [Configure la protección contra amenazas avanzada de Microsoft defender (ATP de Microsoft Defender (ATP de Microsoft Defender)](https://docs.microsoft.com/windows/security/threat-protection/), que analiza el contenido de una etiqueta y aplica la protección de información de Windows (WIP) correspondiente. ATP realiza algunas acciones independientemente del trabajo en curso, como, por ejemplo, informar de las anomalías.
 - Crear una directiva de Windows Information Protection (WIP) que se aplica a dispositivos de punto final. Puede hacer esto en cualquiera de estas ubicaciones:
     - [Crear una directiva de Windows Information Protection (WIP) con MDM usando Azure Portal para Microsoft Intune](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-intune-azure)
     - [Crear e implementar una directiva de Windows Information Protection (WIP) con System Center Configuration Manager](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-sccm)

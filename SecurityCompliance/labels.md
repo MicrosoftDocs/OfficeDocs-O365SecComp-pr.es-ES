@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Las etiquetas de retención de Office 365 ayudan a realizar las acciones adecuadas en el contenido adecuado. Con las etiquetas de retención, puede clasificar los datos de su organización para administrarlos mejor y aplicar reglas de retención basadas en esa clasificación. También puede usar etiquetas de retención para implementar la administración de registros en Office 365.
-ms.openlocfilehash: b3637470e0de1413589fc8e1ba35dc48e6823c4b
-ms.sourcegitcommit: 007af78a01461023bd434768154b5d96503f7e4b
+ms.openlocfilehash: e4028fa9526afbb33cb184adb7b3cd301feae837
+ms.sourcegitcommit: 361aab46b1bb295ed2dcc1a417ac81f699b8ff78
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "35772167"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "36676660"
 ---
 # <a name="overview-of-retention-labels"></a>Introducción a las etiquetas de retención
 
@@ -163,7 +163,7 @@ Además, una etiqueta de retención tiene dos opciones de retención que solo es
   
 - Desencadenar una revisión para eliminación al finalizar el período de retención para que los documentos de OneDrive y SharePoint tengan que revisarse antes de ser eliminados. Para obtener más información, vea [Información general sobre revisiones para eliminación](disposition-reviews.md).
     
-- Iniciar el período de retención desde el momento en que se etiquete el contenido, en lugar de la antigüedad del contenido o la fecha de la última modificación.
+- Iniciar el período de retención desde el momento en que se etiquete el contenido, en lugar de la antigüedad del contenido o la fecha de la última modificación. Tenga en cuenta que esta opción solo se aplica al contenido de los sitios de SharePoint y las cuentas de OneDrive. Para el correo electrónico de Exchange, el período de retención siempre se basa en la fecha en la que se ha enviado o recibido el mensaje, independientemente de la opción que elija aquí.
     
 ![Configuración de retención con opciones específicas para etiquetas](media/c49118c9-6279-4661-94db-deffa76e27ac.png)
   
