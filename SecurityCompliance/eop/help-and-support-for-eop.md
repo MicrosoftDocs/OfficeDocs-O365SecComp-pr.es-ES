@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Microsoft ofrece ayuda para EOP en diversos lugares y a través de varios métodos, incluido el autosoporte o el soporte asistido.
-ms.openlocfilehash: b1153149897efaeecec2f5003e7dfb10e28dc5ba
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: a60a45833eafd0151ac3a48ff67087b90bd50e31
+ms.sourcegitcommit: 361aab46b1bb295ed2dcc1a417ac81f699b8ff78
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35599666"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "36676778"
 ---
 # <a name="help-and-support-for-eop"></a>Ayuda y soporte técnico para EOP
 
@@ -48,40 +48,38 @@ Para más información sobre cómo el soporte premier puede ayudar a su organiza
 ### <a name="ask-for-help-on-the-web"></a>Solicitar ayuda en la Web
 
 1. Inicie sesión en el centro de administración de Microsoft 365.
-    
+
 2. Vaya a **Soporte**\> **Solicitar soporte técnico**\> **Nueva solicitud de servicio**
-    
+
 3. Use el formulario para agregar información acerca de la incidencia, buscar soluciones a problemas anteriores o adjuntar registros o archivos relacionados.
-    
+
 ### <a name="ask-for-help-on-the-telephone"></a>Solicitar ayuda por teléfono
 
 1. Inicie sesión en el centro de administración de Microsoft 365.
-    
+
 2. Para las incidencias generales de productos, vaya a **Soporte**\> **Solicitar soporte técnico**\> **Llamar a soporte técnico**.
-    
+
     Para las preguntas relacionadas con la compra de EOP, facturación o suscripciones, vaya a **Soporte**\> **Solicitar soporte técnico**\> **Llamar a soporte de facturación y suscripción**.
-    
+
 3. Use el Agente virtual para Microsoft Office 365 para buscar el número de teléfono correspondiente.
-    
+
 ## <a name="support-telephone-numbers"></a>Números de teléfono de soporte
 
 Microsoft proporciona números de teléfono locales o gratuitos para el soporte técnico en todo el mundo. Muchos de estos centros de soporte ofrecen ayuda en su propio idioma durante el horario comercial o en inglés las 24 horas del día, todos los días. Si su ubicación no aparece a continuación, use el Agente virtual de Microsoft Office 365 según se indicó anteriormente para encontrar su número de teléfono de soporte local.
   
 |**País o región**|**Preguntas previas a la compra y de facturación**|**Preguntas de soporte técnico**|
 |:-----|:-----|:-----|
-|Brasil  <br/> |Gratuito: 08007621146          Local: 1147001999  <br/> |Mismo  <br/> |
-|Francia  <br/> |Gratuito: 0805 540 594           Local: 01 57 32 42 97  <br/> |Mismo  <br/> |
-|Alemania  <br/> |Gratuito: 0800 589 2332           Local: 069 380 789 508  <br/> |Mismo  <br/> |
-|Japón  <br/> |Gratuito: 0120-628860          Local: 343326257  <br/> |Gratuito: 0120-996680          Local: 357679793  <br/> |
-|Corea  <br/> |Gratuito: 080-495-0880          Local: 234831937  <br/> |Mismo  <br/> |
-|España  <br/> |Gratuito: 900 814 197          Local: 912 718 160  <br/> |Mismo  <br/> |
-|Reino Unido  <br/> |Gratuito: 0800 032 6417          Local: 0203 450 6455  <br/> |Mismo  <br/> |
-|Estados Unidos  <br/> |Gratuito: 1-877-913-2707  <br/> |Gratuito: 1-800-865-9408  <br/> |
+|Brasil|Gratuito: 08007621146 <br/> Local: 1147001999|Mismo|
+|Francia|Gratuito: 0805 540 594 <br/> Local: 01 57 32 42 97|Mismo|
+|Alemania|Gratuito: 0800 589 2332 <br/>  Local: 069 380 789 508|Mismo|
+|Japón|Gratuito: 0120-628860 <br/> Local: 343326257|Gratuito: 0120-996680 <br/> Local: 357679793|
+|Corea|Gratuito: 080-495-0880 <br/> Local: 234831937|Mismo|
+|España|Gratuito: 900 814 197 <br/> Local: 912 718 160|Mismo|
+|Reino Unido|Gratuito: 0800 032 6417 <br/> Local: 0203 450 6455|Mismo|
+|Estados Unidos|Gratuito: 1-877-913-2707|Gratuito: 1-800-865-9408|
    
 ## <a name="for-more-information-about-eop-documentation"></a>Más información acerca de la documentación de EOP
 
 [Avisos de derechos de autor de terceros](third-party-copyright-notices.md)
   
 [Accesibilidad para personas con discapacidad](accessibility-for-people-with-disabilities.md)
-  
-
