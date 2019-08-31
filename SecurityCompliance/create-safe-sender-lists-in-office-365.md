@@ -12,12 +12,12 @@ search.appverid:
 - MET150s
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 description: Si desea asegurarse de que recibe el correo de un remitente determinado, ya que confía en ellos y sus mensajes, puede ajustar la lista de permitidos en una directiva de filtro de correo no deseado en el centro de administración de Exchange.
-ms.openlocfilehash: f0397ce3d26f6c539b3d7d663298c468e1155161
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 49803dee186a0f89e3caa42f8c7559bb6ce0c7c9
+ms.sourcegitcommit: 769b506c828c475c713dbb337e115714dcc7f17c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35599986"
+ms.lasthandoff: 08/31/2019
+ms.locfileid: "36699218"
 ---
 # <a name="create-safe-sender-lists-in-office-365"></a>Crear listas de remitentes seguros en Office 365
 
@@ -51,7 +51,7 @@ Para asegurarse de que solo se permiten mensajes legítimos en la organización,
 > [!IMPORTANT]
 > Si permite una dirección IP NATted, debe conocer los equipos que participan en el grupo de NAT para conocer el ámbito de su permiso. Tenga en cuenta que las direcciones IP pueden cambiar y también pueden ser participantes de NAT. Debe volver a comprobar todas las listas de permitidos, incluida la IP permite como parte de su mantenimiento estándar.
 
-- *Si lo*desea, puede Agregar una condición que el mensaje origine desde fuera de la organización (esto es implícito, pero es adecuado agregarlo como condición para tener en cuenta los servidores locales que puede que no estén correctamente configurados).
+- *Si lo*desea, puede Agregar una condición que el mensaje origine desde fuera de la organización (esto es implícito, pero es adecuado agregarlo como condición para tener en cuenta los servidores locales que pueden no estar correctamente configurados).
 
 - *Opcionalmente*, si puede identificar cualquier palabra clave o frase única en el asunto o el cuerpo del correo electrónico, use esta información como condición adicional para restringir aún más los mensajes de correo electrónico permitidos por la regla de flujo de correo.
 

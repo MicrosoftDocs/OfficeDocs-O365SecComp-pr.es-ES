@@ -14,12 +14,12 @@ ms.assetid: ab95bf17-bb09-4dd1-9990-ddd02ddecf05
 ms.collection:
 - M365-security-compliance
 description: En este tema se describe cómo los administradores de Exchange Online y Exchange Online Protection (EOP) pueden buscar, liberar e informar sobre los mensajes en cuarentena en el centro de administración de Exchange (EAC).
-ms.openlocfilehash: 1f2b3733cbba3c09e1ec7ca25377ac96d5c89147
-ms.sourcegitcommit: 32ecff689ae32c59a39b7633ca0f36a304e7516e
+ms.openlocfilehash: 9bf821885ad8d4ec89aa3c349a6c072f78f6c57a
+ms.sourcegitcommit: 769b506c828c475c713dbb337e115714dcc7f17c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "35599386"
+ms.lasthandoff: 08/31/2019
+ms.locfileid: "36699355"
 ---
 # <a name="find-and-release-quarantined-messages-as-an-administrator"></a>Buscar y liberar mensajes en cuarentena como un administrador
 
@@ -42,10 +42,10 @@ Puede ver una lista de todos los mensajes en cuarentena o puede buscar mensajes 
     
 - Puede liberar o informar sobre varios mensajes a la vez en la página **cuarentena**. De forma alternativa, puede crear un script de Windows PowerShell remoto para realizar esta tarea. Use el cmdlet [Get-QuarantineMessage](http://technet.microsoft.com/library/88026da1-8dbc-49e7-80e8-112a32773c34.aspx) para buscar los mensajes y el cmdlet [Release-QuarantineMessage](http://technet.microsoft.com/library/4a3aa05c-238f-46f2-b8dd-b0e3c38eab3e.aspx) para liberarlos. 
     
-- Para obtener información acerca de los métodos abreviados de teclado aplicables a los procedimientos de este tema, consulte **Keyboard shortcuts in Exchange 2013**.
+- Para obtener información acerca de los métodos abreviados de teclado que se pueden aplicar a los procedimientos de este tema, consulte [métodos abreviados de teclado para el centro de administración de Exchange en Exchange Online](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
     
 > [!TIP]
-> ¿Tiene algún problema? Solicite ayuda en los foros de Exchange. Visite los foros en [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), o [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
+> ¿Problemas? Solicite ayuda en los foros de Exchange. Visite los foros en [Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612),[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542), o [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351). 
   
 ## <a name="use-advanced-search-to-filter-and-locate-quarantined-messages"></a>Usar búsqueda avanzada para filtrar y buscar mensajes en cuarentena
 <a name="BKMK_UseAdvancedSearchtoFilterMessages"> </a>

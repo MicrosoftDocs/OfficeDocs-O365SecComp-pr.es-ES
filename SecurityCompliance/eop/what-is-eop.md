@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: 393b0050-7c7e-49e6-a03d-b1e09fe4de9e
 description: Este documento introductorio le ayudará a comprender Exchange Online Protection (EOP) y una terminología importante. Esto es aplicable a los clientes de Office 365 que protegen buzones de correo hospedados en la nube de Exchange Online y a clientes independientes de EOP que protegen buzones locales como Exchange Server 2016.
-ms.openlocfilehash: 87dba47a7a942dcb8eb103cee1a171dca6e53805
-ms.sourcegitcommit: 361aab46b1bb295ed2dcc1a417ac81f699b8ff78
+ms.openlocfilehash: c2dba2cbb16126e2169e0fb3907ceabe8185e82a
+ms.sourcegitcommit: 769b506c828c475c713dbb337e115714dcc7f17c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "36676650"
+ms.lasthandoff: 08/31/2019
+ms.locfileid: "36699198"
 ---
 ## <a name="what-is-exchange-online-protection-eop"></a>¿Qué es Exchange Online Protection (EOP)?
 
@@ -36,7 +36,7 @@ EOP intenta filtrar el correo no deseado y mantener la bandeja de entrada sin co
 
 **Saliente**: mensajes que salen de la oficina 365.
 
-**Internos**: mensajes de alguien dentro de la organización a alguien dentro de la organización. Esto incluye a los clientes que están en escenarios híbridos y un buzón de correo puede estar local y el otro buzón de correo está en la nube.
+**Internos**: mensajes de alguien dentro de la organización a alguien dentro de la organización. Esto incluye a los clientes que están en escenarios híbridos y un buzón de correo puede ser local y el otro buzón de correo está en la nube.
 
 **Falso negativo (FN)**: correo no deseado y otro correo no deseado que se envía de forma incorrecta a la bandeja de entrada.
 

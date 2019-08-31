@@ -10,12 +10,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: e87e84e1-7be0-44bf-a414-d91d60ed8817
 description: El script de ejemplo siguiente permite a los administradores de Microsoft Exchange Online Protection (EOP) que administran varios inquilinos (compañías) aplicar en estos opciones de configuración con Windows PowerShell.
-ms.openlocfilehash: 7ef2ea5b93835a37683f73fa43549af4bab5d47e
-ms.sourcegitcommit: 361aab46b1bb295ed2dcc1a417ac81f699b8ff78
+ms.openlocfilehash: 2886d2c1dd4dc2f324e8cc21babc3a9f4bf51e5f
+ms.sourcegitcommit: 769b506c828c475c713dbb337e115714dcc7f17c
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "36676640"
+ms.lasthandoff: 08/31/2019
+ms.locfileid: "36699208"
 ---
 # <a name="sample-script-for-applying-eop-settings-to-multiple-tenants"></a>Script de ejemplo para aplicar la configuración de EOP a varios inquilinos
 
@@ -29,7 +29,7 @@ El script de ejemplo siguiente permite a los administradores de Microsoft Exchan
 
 3. En cada fila del archivo .csv, agregue el nombre de administrador del inquilino en la columna UserName y el cmdlet que debe ejecutarse para dicho inquilino en la columna Cmdlet. Por ejemplo, admin@contoso.com y Get-AcceptedDomain.
 
-4. Copie el script [RunCmdletOnMultipleTenants.ps1](sample-script-for-applying-eop-settings-to-multiple-tenants.md#RunCmdletOnMultipleTenants.ps1) en un editor como el Bloc de notas y guarde el archivo en una ubicación (por ejemplo, c:\scripts) en la que los archivos. ps1 puedan encontrarse fácilmente.
+4. Copie el script [RunCmdletOnMultipleTenants.ps1](#runcmdletonmultipletenantsps1) en un editor como el Bloc de notas y guarde el archivo en una ubicación (por ejemplo, c:\scripts) en la que los archivos. ps1 puedan encontrarse fácilmente.
 
 5. Ejecute el script con la sintaxis siguiente:
 
