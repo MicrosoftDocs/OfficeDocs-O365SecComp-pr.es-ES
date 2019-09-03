@@ -81,12 +81,10 @@ Los comandos de PowerShell para usuarios restringidos son:
 
 [Responder a una cuenta de correo electrónico en comprometida](responding-to-a-compromised-email-account.md)
 
-
-  [Información sobre el usuario con restricción de envío de alertas de correo electrónico](https://docs.microsoft.com/es-ES/office365/securitycompliance/alert-policies)
+[Información sobre el usuario con restricción de envío de alertas de correo electrónico](https://docs.microsoft.com/es-ES/office365/securitycompliance/alert-policies)
 
 [Grupo de entrega de alto riesgo para mensajes salientes](high-risk-delivery-pool-for-outbound-messages.md)
 
 [Permisos en el Centro de seguridad y cumplimiento](permissions-in-the-security-and-compliance-center.md)
 
-
-  [Políticas de alerta en el Centro de seguridad y cumplimiento](https://docs.microsoft.com/es-ES/office365/securitycompliance/alert-policies)
+[Políticas de alerta en el Centro de seguridad y cumplimiento](https://docs.microsoft.com/es-ES/office365/securitycompliance/alert-policies)

@@ -47,14 +47,13 @@ Azure RMS también se activa automáticamente en la mayoría de los planes compa
 Para obtener más información, vea:
 
 - Vaya a [¿Qué suscripciones necesito para usar las nuevas funcionalidades de OME?](ome-faq.md#what-subscriptions-do-i-need-to-use-the-new-ome-capabilities) para comprobar si el plan de suscripción incluye Azure Information Protection (que incluye la funcionalidad de Azure RMS).
-- Vaya a [Azure Information Protection](https://azure.microsoft.com/en-us/services/information-protection/) para obtener información sobre cómo comprar una suscripción apta.  
+- Vaya a [Azure Information Protection](https://azure.microsoft.com/es-ES/services/information-protection/) para obtener información sobre cómo comprar una suscripción apta.  
 
 ### <a name="manually-activating-azure-rights-management"></a>Activar Azure Rights Management manualmente
 
 Si deshabilitó Azure RMS, o si no se activó automáticamente por algún motivo, puede activarlo manualmente en el:
 
-- 
-  **Centro de administración de Microsoft 365**: vea [Cómo activar Azure Rights Management desde el centro de administración](https://docs.microsoft.com/es-ES/azure/information-protection/activate-office365) para obtener instrucciones.
+- **Centro de administración de Microsoft 365**: vea [Cómo activar Azure Rights Management desde el centro de administración](https://docs.microsoft.com/es-ES/azure/information-protection/activate-office365) para obtener instrucciones.
 - **Portal Azure**: vea [Cómo activar Azure Rights Management desde el portal de Azure](https://docs.microsoft.com/en-gb/azure/information-protection/activate-azure) para obtener instrucciones.
 
 ## <a name="configure-management-of-your-azure-information-protection-tenant-key"></a>Configurar la administración del espacio empresarial de Azure Information Protection
@@ -67,8 +66,7 @@ Hay muchos motivos, por ejemplo, los requisitos de cumplimiento, que pueden requ
 
 Puede comprobar que su espacio empresarial de Office 365 está configurado correctamente para usar las nuevas funcionalidades de OME en [Exchange Online PowerShell](https://docs.microsoft.com/es-ES/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps).
   
-1. 
-  [Conectarse a Exchange Online PowerShell](https://docs.microsoft.com/es-ES/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) usando una cuenta con permisos de administrador global en su espacio empresarial de Office 365.
+1. [Conectarse a Exchange Online PowerShell](https://docs.microsoft.com/es-ES/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell) usando una cuenta con permisos de administrador global en su espacio empresarial de Office 365.
 
 2. Ejecute el cmdlet Get-IRMConfiguration.
 

@@ -186,8 +186,7 @@ Se le pedirá que confirme lo siguiente:
 
 Cuando configure el paquete de reglas, asegúrese de hacer referencia correctamente al archivo .csv y al archivo edm.xml. Puede copiar, modificar y usar nuestro ejemplo. En este XML de ejemplo, debe personalizar los siguientes campos para crear el tipo confidencial de EDM:
 
-- 
-  **RulePack id y ExactMatch id**: use  [New-GUID](https://docs.microsoft.com/es-ES/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6)  para generar un GUID.
+- **RulePack id y ExactMatch id**: use  [New-GUID](https://docs.microsoft.com/es-ES/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6)  para generar un GUID.
 
 - **Datastore**: este campo especifica el almacén de datos de búsqueda de EDM que se va a usar. Debe proporcionar un nombre de origen de datos de un esquema EDM configurado.
 
@@ -481,19 +480,15 @@ Los tipos de información confidencial de EDM para las siguientes situaciones es
 
 ## <a name="related-articles"></a>Artículos relacionados
 
+[Tipos de información confidencial integrados y lo que buscan](https://docs.microsoft.com/es-ES/office365/securitycompliance/what-the-sensitive-information-types-look-for)
 
-  [Tipos de información confidencial integrados y lo que buscan](https://docs.microsoft.com/es-ES/office365/securitycompliance/what-the-sensitive-information-types-look-for)
+[Tipos de información confidencial personalizados](https://docs.microsoft.com/es-ES/office365/securitycompliance/custom-sensitive-info-types)
 
-
-  [Tipos de información confidencial personalizados](https://docs.microsoft.com/es-ES/office365/securitycompliance/custom-sensitive-info-types)
-
-
-  [Información general de directivas DLP](https://docs.microsoft.com/es-ES/office365/securitycompliance/data-loss-prevention-policies)
+[Información general de directivas DLP](https://docs.microsoft.com/es-ES/office365/securitycompliance/data-loss-prevention-policies)
 
 [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)
 
-
-  [New-DlpEdmSchema](https://docs.microsoft.com/es-ES/powershell/module/exchange/policy-and-compliance-dlp/new-dlpedmschema?view=exchange-ps)
+[New-DlpEdmSchema](https://docs.microsoft.com/es-ES/powershell/module/exchange/policy-and-compliance-dlp/new-dlpedmschema?view=exchange-ps)
 
 ## <a name="feedback"></a>Comentarios
 Los comentarios de GitHub están habilitados, pero agregar problemas solo está disponible en el sitio público.

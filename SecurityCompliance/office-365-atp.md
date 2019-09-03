@@ -98,10 +98,8 @@ Para acceder a las características de ATP en el Centro de seguridad y cumplimie
 |Rol o grupo de roles  |Recursos para obtener más información  |
 |---------|---------|
 |Administrador global de Office 365 |[Acerca de los roles de administrador de Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)|
-|Administrador de seguridad |
-  [Permisos de roles de administrador en Azure Active Directory](https://docs.microsoft.com/es-ES/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
-|Administración de la organización en Exchange Online |
-  [Permisos de Exchange Online](https://docs.microsoft.com/es-ES/exchange/permissions-exo/permissions-exo) <br>y<br> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)|
+|Administrador de seguridad |[Permisos de roles de administrador en Azure Active Directory](https://docs.microsoft.com/es-ES/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
+|Administración de la organización en Exchange Online |[Permisos de Exchange Online](https://docs.microsoft.com/es-ES/exchange/permissions-exo/permissions-exo) <br>y<br> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online/exchange-online-powershell?view=exchange-ps)|
 
 Para obtener más información, vea:
 

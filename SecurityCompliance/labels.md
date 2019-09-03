@@ -283,14 +283,12 @@ Puede aplicar automáticamente etiquetas a contenido que cumpla determinadas con
 
 Para obtener más información sobre la sintaxis de consultas, vea:
 
-- 
-  [Referencia de la sintaxis del lenguaje de consultas de palabras clave (KQL)](https://docs.microsoft.com/es-ES/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
+- [Referencia de la sintaxis del lenguaje de consultas de palabras clave (KQL)](https://docs.microsoft.com/es-ES/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)
 
 Las etiquetas basadas en consultas usan el índice de búsqueda para identificar el contenido. Para obtener más información sobre las propiedades de búsqueda válidas, vea:
 
 - [Consultas de palabras clave y condiciones de búsqueda para la búsqueda de contenido](keyword-queries-and-search-conditions.md).
-- 
-  [Información general sobre las propiedades administradas y rastreadas en SharePoint Server](https://docs.microsoft.com/es-ES/SharePoint/technical-reference/crawled-and-managed-properties-overview)
+- [Información general sobre las propiedades administradas y rastreadas en SharePoint Server](https://docs.microsoft.com/es-ES/SharePoint/technical-reference/crawled-and-managed-properties-overview)
 
 Consultas de ejemplos:
 
