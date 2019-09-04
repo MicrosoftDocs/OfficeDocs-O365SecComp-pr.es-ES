@@ -13,12 +13,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Con las etiquetas de confidencialidad, puede clasificar y ayudar a proteger el contenido confidencial, sin poner impedimentos a la productividad y la capacidad de colaboración de los usuarios. Puede usar etiquetas de confidencialidad para aplicar opciones de protección como encriptación o marcas de agua en el contenido con la etiqueta.
-ms.openlocfilehash: 7ec9b2d171e4ddbe8a923161e503bb813dfc6813
-ms.sourcegitcommit: d55dab629ce1f8431b8370afde4131498dfc7471
+ms.openlocfilehash: ce05fe8062cb0f651edc74101b11877c091eb6fb
+ms.sourcegitcommit: fd3db13cd4fc71cd2cb164fd702007acba3e7399
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "36675461"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "36717710"
 ---
 # <a name="overview-of-sensitivity-labels"></a>Información general de etiquetas de confidencialidad
 
@@ -68,7 +68,7 @@ Cada elemento de contenido puede tener una única etiqueta de confidencialidad a
 
 Después de aplicar una etiqueta de confidencialidad a un documento o correo electrónico, la configuración de protección de la etiqueta se aplica en el contenido. Con una etiqueta de confidencialidad, puede:
 
-- **Encriptar** solo correo electrónico o correo electrónico y documentos. Puede elegir qué usuarios o grupos tienen permisos para realizar qué acciones y durante cuánto tiempo. Por ejemplo, puede permitir que los usuarios de un dominio específico fuera de su organización tengan permisos para revisar el contenido durante solo 7 días después de que se haya etiquetado el contenido. Para obtener más información, vea [Restringir el acceso al contenido mediante el cifrado en las etiquetas de confidencialidad](encryption-sensitivity-labels.md).
+- **Encriptar** solo correo electrónico o correo electrónico y documentos. Puede elegir qué usuarios o grupos tienen permisos para realizar qué acciones y durante cuánto tiempo. Por ejemplo, puede permitir que los usuarios de un dominio específico fuera de su organización tengan permisos para revisar el contenido durante solo 7 días después de que se haya etiquetado. Como alternativa, en lugar de asignar usted mismo los permisos al contenido, puede permitir que sus usuarios lo hagan al aplicar la etiqueta. Para obtener más información, vea [Restringir el acceso al contenido mediante el cifrado en las etiquetas de confidencialidad](encryption-sensitivity-labels.md).
 
 - **Marcar el contenido** agregando marcas de agua personalizadas, encabezados o pies de página a correos electrónicos o documentos a los que se ha aplicado la etiqueta. Tenga en cuenta que las marcas de agua se aplican únicamente a los documentos, no al correo electrónico, y están limitadas a 255 caracteres. Además, los encabezados y pies de página se limitan a 1024 caracteres (excepto en Excel, que están limitados a 255 caracteres o menos, en función de si el documento contiene otros encabezados o pies de página y de otros factores).
 
