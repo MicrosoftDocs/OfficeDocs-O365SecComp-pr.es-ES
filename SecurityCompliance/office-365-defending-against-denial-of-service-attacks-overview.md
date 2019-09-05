@@ -13,12 +13,12 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: Información general sobre los ataques de denegación de servicio (DoS).
-ms.openlocfilehash: df3ab233271f02b91f16f8954972a61000bf4d3b
-ms.sourcegitcommit: aa60a6cdf83c67576e858668d1182cd4fffeb5e0
+ms.openlocfilehash: 94f87a11f396cb8ef09fd6d670d73ba8d1e88eda
+ms.sourcegitcommit: 4a2bde56178609e75c1ad7ecad2db5e049fc0c45
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "33622480"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "36761666"
 ---
 # <a name="defend-against-denial-of-service-attacks-in-office-365"></a>Defenderse contra ataques por denegación de servicio en Office 365
 
@@ -34,7 +34,7 @@ Microsoft ofrece una infraestructura de confianza para más de 200 servicios en 
 - Skype
 - Xbox Live
 
-Como organización global con una presencia importante en Internet y muchas propiedades de Internet destacadas que proporcionan servicios en la nube, Microsoft es un objetivo común y amplio para los hackers y otras personas malintencionadas. La capa de comunicación de red entre los clientes y la nube de Microsoft es uno de los principales objetivos de ataques malintencionados. De hecho, Microsoft se realiza de forma continua y persistente bajo algún tipo de ataque a través de la red. En línea con esto, Microsoft usa principios de seguridad de defensa en profundidad para proteger sus redes y servicios en la nube. Sin sistemas de mitigación confiable y persistente que defienden contra estos ataques, los servicios en la nube de Microsoft estarán sin conexión y no estarán disponibles para los clientes.
+Como organización global con una presencia importante en Internet y muchas propiedades de Internet destacadas que proporcionan servicios en la nube, Microsoft es un objetivo común y amplio para los hackers y otras personas malintencionadas. La capa de comunicación de red entre los clientes y la nube de Microsoft es uno de los principales objetivos de ataques malintencionados. De hecho, Microsoft es de manera continua y persistente bajo alguna forma de ciberataque basada en la red. En línea con esto, Microsoft usa principios de seguridad de defensa en profundidad para proteger sus redes y servicios en la nube. Sin sistemas de mitigación confiable y persistente que defienden contra estos ataques, los servicios en la nube de Microsoft estarán sin conexión y no estarán disponibles para los clientes.
 
 ## <a name="definition-and-symptoms-of-denial-of-service-attacks"></a>Definición y síntomas de ataques por denegación de servicio
 

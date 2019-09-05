@@ -13,20 +13,20 @@ ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
-description: Esta solución le indica el aspecto que podrían tener los ataques cibernéticos más comunes en Office 365 y cómo responder a ellos.
-ms.openlocfilehash: 900022d97c974bdf84d3077c1127e715c06fa5de
-ms.sourcegitcommit: 9d67cb52544321a430343d39eb336112c1a11d35
+description: Esta solución le indica el aspecto que podrían tener los ataques de Cybersecurity más comunes en Office 365 y cómo responder a ellos.
+ms.openlocfilehash: f756141b9edfdef2769f18979dcab5ba731ee3fe
+ms.sourcegitcommit: 4a2bde56178609e75c1ad7ecad2db5e049fc0c45
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "34157682"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "36761676"
 ---
 # <a name="office-365-security-incident-response"></a>Respuesta a incidentes de seguridad de Office 365
 
- **Resumen:** Esta solución le indica qué son los indicadores para los ataques de protección en el ciberespacio más comunes en Office 365, cómo confirmar positivamente cualquier ataque determinado y cómo responder a él.
+ **Resumen:** Esta solución le indica qué son los indicadores para los ataques más comunes de Cybersecurity en Office 365, cómo confirmar positivamente cualquier ataque dado y cómo responder a él.
   
 ## <a name="overview"></a>Información general
-No se pueden frustrar todos los ataques cibernéticos. Los atacantes buscan constantemente nuevos puntos débiles en su estrategia defensiva o están aprovechando los viejos. Saber cómo reconocer un ataque le permite responder más rápidamente, lo que reduce la duración del incidente de seguridad.
+No todos los cyberattacks se pueden frustrar. Los atacantes buscan constantemente nuevos puntos débiles en su estrategia defensiva o están aprovechando los viejos. Saber cómo reconocer un ataque le permite responder más rápidamente, lo que reduce la duración del incidente de seguridad.
 
 Esta serie de artículos ayuda a comprender qué aspecto puede tener un tipo determinado de ataque en Office 365 y le proporciona los pasos que puede seguir para responder. Son puntos de entrada rápida para comprender:
  

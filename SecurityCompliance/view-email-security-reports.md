@@ -1,9 +1,9 @@
 ---
 title: Ver informes de seguridad de correo electrónico &amp; en el centro de seguridad y cumplimiento
-ms.author: chrfox
-author: chrfox
+ms.author: tracyp
+author: msfttracyp
 manager: dansimp
-ms.date: 05/21/2019
+ms.date: 08/29/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,12 +15,12 @@ ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre cómo buscar y usar informes de seguridad de correo electrónico para su organización. Los informes de seguridad de correo electrónico están &amp; disponibles en el centro de seguridad y cumplimiento.
-ms.openlocfilehash: 1e9d51c76b6df02c9d70626392a58c307ee214db
-ms.sourcegitcommit: 7a0cb7e1da39fc485fc29e7325b843d16b9808af
+ms.openlocfilehash: 90b4ab2c9fafc5c882791a5471e7e5a24f5ae4bd
+ms.sourcegitcommit: 4a2bde56178609e75c1ad7ecad2db5e049fc0c45
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/07/2019
-ms.locfileid: "36230424"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "36761716"
 ---
 # <a name="view-email-security-reports-in-the-security-amp-compliance-center"></a>Ver informes de seguridad de correo electrónico &amp; en el centro de seguridad y cumplimiento
 
@@ -29,7 +29,7 @@ Hay disponibles varios informes en el centro de [seguridad &amp; y cumplimiento]
 ![Panel en el que se ve cómo está funcionando la protección contra amenazas avanzada](media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
   
 Los informes de seguridad de correo electrónico incluyen lo siguiente:
-- [Informe](#encryption-report) de cifrado (Nueva)
+- [Informe de cifrado](#encryption-report) (Nueva)
 - [Informe de estado de protección contra amenazas](#threat-protection-status-report) 
 - [Informe de detecciones de malware](#malware-detections-report) 
 - [Informe de malware principal](#top-malware-report)
@@ -41,9 +41,9 @@ Los informes de seguridad de correo electrónico incluyen lo siguiente:
     
 ## <a name="encryption-report"></a>Informe de cifrado
 
-(**Nueva**) El **Informe** de cifrado muestra información sobre los mensajes de correo electrónico que se han cifrado, ya sea a través de las directivas de la organización o a través de los controles de usuario final. El equipo de seguridad de la organización puede usar la información de este informe para identificar patrones y aplicar de forma proactiva o ajustar las directivas de los mensajes de correo electrónico confidenciales.
+(**Nueva**) El **Informe de cifrado** muestra información sobre los mensajes de correo electrónico que se han cifrado, ya sea a través de las directivas de la organización o a través de los controles de usuario final. El equipo de seguridad de la organización puede usar la información de este informe para identificar patrones y aplicar de forma proactiva o ajustar las directivas de los mensajes de correo electrónico confidenciales.
 
-Para ver este informe, en el centro de seguridad & cumplimiento, vaya a **Informe**de cifrado de **paneles** \> de **informes** \> .
+Para ver este informe, en el centro de seguridad & cumplimiento, vaya a **Informe de cifrado**de **paneles** \> de **informes** \> .
 
 ![Informe de cifrado](media/encryptionreport-defaultview.png) 
 
@@ -86,9 +86,9 @@ También puede elegir si desea ver los datos de correo electrónico identificado
   
 ## <a name="malware-detections-report"></a>Informe de detecciones de malware
 
-El informe de detecciones de **malware** muestra el número de mensajes entrantes y salientes que se detectaron que contenían malware para su organización. 
+El informe de **detecciones de malware** muestra el número de mensajes entrantes y salientes que se detectaron que contenían malware para su organización. 
   
-Para ver este informe, en el [Centro &amp; de seguridad y cumplimiento](https://protection.office.com), vaya a detecciones de **malware**del **Panel** \> de **informes** \> .
+Para ver este informe, en el [Centro &amp; de seguridad y cumplimiento](https://protection.office.com), vaya a **detecciones de malware**del **Panel** \> de **informes** \> .
   
 ![Ejemplo de informe de detecciones de malware](media/a1ba61a3-565a-46d6-b0d5-6a6cff6b31d7.png)
   
@@ -130,7 +130,7 @@ Debajo del gráfico, verá quién eran los remitentes o destinatarios de correo 
   
 ## <a name="spoof-detections-report"></a>Informe de detecciones de suplantación de identidad
 
-El informe de detecciones de suplantación de **identidad** muestra el número de mensajes de correo falsificados que se han detectado y de aquellos que se consideran "buenos" (correo falsificado realizado por razones empresariales legítimas). 
+El informe de **detecciones de suplantación de identidad** muestra el número de mensajes de correo falsificados que se han detectado y de aquellos que se consideran "buenos" (correo falsificado realizado por razones empresariales legítimas). 
   
 Para ver este informe, en el [Centro &amp; de seguridad y cumplimiento](https://protection.office.com), vaya a **informes** \> de **correo falsificado**del **Panel** \> de informes.
   
@@ -142,9 +142,9 @@ Haga clic (o puntee) en el informe para abrirlo en una nueva ventana del explora
   
 ## <a name="spam-detections-report"></a>Informe de detecciones de correo no deseado
 
-El informe de detecciones de **correo no deseado** muestra todo el contenido de correo no deseado bloqueado por Exchange Online. 
+El informe de **detecciones de correo no deseado** muestra todo el contenido de correo no deseado bloqueado por Exchange Online. Los mensajes se cuentan por mensaje y no por destinatario. Por ejemplo, si se envió un mensaje de correo electrónico a 100 destinatarios de la organización, se cuenta como un mensaje.
   
-Para ver este informe, en el [Centro &amp; de seguridad y cumplimiento](https://protection.office.com), vaya a detecciones de **correo no deseado**del **Panel** \> de **informes** \> .
+Para ver este informe, en el [Centro &amp; de seguridad y cumplimiento](https://protection.office.com), vaya a **detecciones de correo no deseado**del **Panel** \> de **informes** \> .
   
 ![Para ver este informe, en el centro &amp; de seguridad y cumplimiento, vaya \> a \> informes de detección de correo no deseado de eop del panel informes](media/028cff3c-79ce-4ec0-8f0f-ec32ac28243a.png)
   

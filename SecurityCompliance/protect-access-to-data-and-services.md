@@ -13,16 +13,16 @@ search.appverid:
 - MET150
 ms.assetid: a6ef28a4-2447-4b43-aae2-f5af6d53c68e
 description: Página de aterrizaje para proteger el acceso a los datos y servicios de O365
-ms.openlocfilehash: 7cddedfbb5b0b7789f370f0445be167b6d4e187d
-ms.sourcegitcommit: b9d8a43cb3afcdc8820bc9470c5707eff8fc6616
+ms.openlocfilehash: 9fc1691e7e36f994b5d0b8a6a9735fe8ccd8735a
+ms.sourcegitcommit: 4a2bde56178609e75c1ad7ecad2db5e049fc0c45
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "34852744"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "36761616"
 ---
 # <a name="protect-user-and-device-access"></a>Proteger el acceso de usuario y de dispositivo
 
-Proteger el acceso a los datos y servicios de Office 365 es crucial para defenderse contra ataques cibernéticos y protegerse contra la pérdida de datos. Se pueden aplicar las mismas protecciones a otras aplicaciones SaaS en su entorno e incluso a aplicaciones locales publicadas con el proxy de aplicación de Azure Active Directory.
+Proteger el acceso a los datos y servicios de Office 365 es crucial para defenderse contra la cyberattacks y la protección contra la pérdida de datos. Se pueden aplicar las mismas protecciones a otras aplicaciones SaaS en su entorno e incluso a aplicaciones locales publicadas con el proxy de aplicación de Azure Active Directory.
   
 ## <a name="step-1-review-recommendations"></a>Paso 1: revisar recomendaciones
 
@@ -31,7 +31,7 @@ Capacidades recomendadas para la protección de las identidades y los dispositiv
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657) | [Más idiomas](https://www.microsoft.com/download/details.aspx?id=55032)
   
 ## <a name="step-2-protect-administrator-accounts-and-access"></a>Paso 2: proteger las cuentas de administrador y el acceso
-Las cuentas administrativas que se usan para administrar el entorno de Office 365 incluyen privilegios elevados. Estos son objetivos muy valiosos para los hackers y los delincuentes cibernéticos. 
+Las cuentas administrativas que se usan para administrar el entorno de Office 365 incluyen privilegios elevados. Estos son objetivos muy valiosos para los hackers y cyberattackers. 
 
 Empiece por usar las cuentas de administrador solo para la administración. Los administradores deben tener una cuenta de usuario independiente para uso normal, no administrativo y solo usar su cuenta administrativa cuando sea necesario para completar una tarea asociada a su función de trabajo.
 
@@ -56,7 +56,7 @@ Las directivas de autenticación multifactor (MFA) y de acceso condicional son h
 - Compatibilidad con dispositivos de Intune
 - Azure AD Identity Protection
 
-Implemetning el cumplimiento del dispositivo de Intune requiere la inscripción del dispositivo. La administración de dispositivos le permite garantizar que son correctos y compatibles antes de permitirles el acceso a los recursos de su entorno. Consulte [inscribir dispositivos para la administración en Intune](https://docs.microsoft.com/intune-classic/deploy-use/enroll-devices-in-microsoft-intune)
+La implementación del cumplimiento del dispositivo de Intune requiere la inscripción del dispositivo. La administración de dispositivos le permite garantizar que son correctos y compatibles antes de permitirles el acceso a los recursos de su entorno. Consulte [inscribir dispositivos para la administración en Intune](https://docs.microsoft.com/intune-classic/deploy-use/enroll-devices-in-microsoft-intune)
 
 ## <a name="step-4-configure-sharepoint-device-access-policies"></a>Paso 4: configurar las directivas de acceso a dispositivos de SharePoint
 
