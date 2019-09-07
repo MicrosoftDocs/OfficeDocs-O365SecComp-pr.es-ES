@@ -4,7 +4,7 @@ keywords: AIR, autoIR, ATP, automatizado, investigación, respuesta, corrección
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 09/04/2019
+ms.date: 09/06/2019
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 description: Empiece a usar la investigación automatizada y las capacidades de respuesta en Office 365 Advanced Threat Protection Plan 2.
-ms.openlocfilehash: 2c64ea936170524811839db7c593d67bfe11a928
-ms.sourcegitcommit: 4a2bde56178609e75c1ad7ecad2db5e049fc0c45
+ms.openlocfilehash: c2c2b9a0409c472c99b07293a002f9bdbf6c5090
+ms.sourcegitcommit: e6c0d9aea3172a5ccc6c7943625d69144ba20aca
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "36762033"
+ms.lasthandoff: 09/07/2019
+ms.locfileid: "36790934"
 ---
 # <a name="automatically-investigate-and-respond-to-threats-in-office-365"></a>Investigar y responder automáticamente a las amenazas en Office 365
 
@@ -89,6 +89,12 @@ Ciertos tipos de alertas desencadenan la investigación automática en Office 36
 5. Seleccione un elemento de la lista. Se abre un control flotante, con detalles sobre la alerta y vínculos a acciones e información adicionales.
 
 6. Revise la información en el control flotante y, en función de la alerta en particular, realice una acción, como **resolver**, **suprimir**o **notificar a los usuarios**. 
+
+    - **Resolve** equivale a cerrar una alerta
+    
+    - **Suprimir** hace que una directiva no desencadene alertas durante un período de tiempo especificado
+    
+    - **Notify users** inicia un correo electrónico con las direcciones de correo electrónico de los usuarios que ya se han especificado y permite que el equipo de operaciones de seguridad escriba un mensaje para esos usuarios. (Es similar a enviar un mensaje a los destinatarios mediante el [Explorador de amenazas](threat-explorer.md)).  
 
 ## <a name="use-the-office-365-management-activity-api-for-custom-or-third-party-reporting-solutions"></a>Usar la API de actividad de administración de Office 365 para soluciones de informes personalizadas o de terceros
 
