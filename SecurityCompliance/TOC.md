@@ -227,7 +227,7 @@
 ### [Detalles de vista previa y entrega dinámica](dynamic-delivery-and-previewing.md)
 ### [ATP para SharePoint, OneDrive y Microsoft Teams](atp-for-spo-odb-and-teams.md)
 ### [Cómo funciona la investigación y respuesta ante amenazas](office-365-ti.md)
-### [Cómo funciona la investigación y respuesta automatizada](automated-investigation-response-office.md)
+### [Cómo funciona la respuesta automática a incidentes](automated-investigation-response-office.md)
 
 
 # Respuesta a incidentes de seguridad
