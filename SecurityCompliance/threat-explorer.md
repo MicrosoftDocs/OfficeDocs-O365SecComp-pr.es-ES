@@ -15,16 +15,16 @@ ms.assetid: 82ac9922-939c-41be-9c8a-7c75b0a4e27d
 ms.collection:
 - M365-security-compliance
 description: Obtenga información sobre el explorador y las detecciones en tiempo real &amp; en el centro de seguridad y cumplimiento.
-ms.openlocfilehash: 049d26a328074be5e209ddecd959cd888a34b650
-ms.sourcegitcommit: dbcb3df3b313f7a9ea6669425e0a0498be844ae9
+ms.openlocfilehash: b404fdf5abaf0031313b211c2ef2d415045de4d1
+ms.sourcegitcommit: ff370e93b792204547694139ef99bc0848304570
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "36444890"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "36852802"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Explorador de amenazas y detecciones en tiempo real
 
-Si su organización tiene [office 365 Advanced Threat Protection](office-365-atp.md) (Office 365 ATP) y dispone de los [permisos necesarios](#required-licenses-and-permissions), tendrá un **Explorador** o detecciones en **tiempo real** (anteriormente informes en *tiempo real* , [consulte ](#new-features-in-real-time-detections)novedades). En el centro de seguridad & cumplimiento, vaya a **Administración de amenazas**y, a continuación, elija **Explorador** o **detecciones en tiempo real**. 
+Si su organización tiene [office 365 Advanced Threat Protection](office-365-atp.md) (Office 365 ATP) y dispone de los [permisos necesarios](#required-licenses-and-permissions), tendrá un **Explorador** o **detecciones en tiempo real** (anteriormente informes en *tiempo real* , [consulte Novedades)](#new-features-in-real-time-detections). En el centro de seguridad & cumplimiento, vaya a **Administración de amenazas**y, a continuación, elija **Explorador** o **detecciones en tiempo real**. 
 
 |Con el plan ATP 2, verá:  |Con el plan ATP 1, verá:  |
 |---------|---------|
@@ -106,7 +106,7 @@ Para revisar direcciones URL de phish en mensajes y hacer clic en direcciones UR
 
 3. Haga clic en **remitente**y, a continuación, elija **direcciones URL** > ,**haga clic en veredicto**.
 
-4. Seleccione una o más opciones, como **bloqueada** y **bloque**invalidado y, a continuación, haga clic en el botón **Actualizar** que se encuentra en la misma línea que las opciones para aplicar ese filtro. (No actualice la ventana del explorador).<br/>![Direcciones URL y haga clic en veredictos](media/ThreatExplorerEmailPhishClickVerdictOptions.png)<br/>
+4. Seleccione una o más opciones, como **bloqueada** y **bloque invalidado**y, a continuación, haga clic en el botón **Actualizar** que se encuentra en la misma línea que las opciones para aplicar ese filtro. (No actualice la ventana del explorador).<br/>![Direcciones URL y haga clic en veredictos](media/ThreatExplorerEmailPhishClickVerdictOptions.png)<br/>
 
     El informe se actualiza para mostrar dos tablas de direcciones URL diferentes en la ficha dirección URL del informe:
 
@@ -122,11 +122,11 @@ Para revisar direcciones URL de phish en mensajes y hacer clic en direcciones UR
 
 ## <a name="review-email-messages-reported-by-users"></a>Revisar los mensajes de correo electrónico enviados por los usuarios
 
-Supongamos que desea ver los mensajes de correo electrónico que los usuarios de la organización han notificado como correo no deseado, correo no deseado o suplantación de identidad mediante el [complemento de mensajes de informe para Outlook y Outlook en la web](enable-the-report-message-add-in.md). Para ello, use el [correo electrónico >](threat-explorer-views.md#email--submissions) vista de envíos del explorador (o detecciones en tiempo real).
+Supongamos que desea ver los mensajes de correo electrónico que los usuarios de la organización han notificado como correo no deseado, correo no deseado o suplantación de identidad mediante el [complemento de mensajes de informe para Outlook y Outlook en la web](enable-the-report-message-add-in.md). Para ello, use el [correo electrónico > vista de envíos](threat-explorer-views.md#email--submissions) del explorador (o detecciones en tiempo real).
 
 1. En el centro de seguridad & cumplimiento[https://protection.office.com](https://protection.office.com)(), elija **Threat Management** > **Explorer** (o **detecciones en tiempo real**). (En este ejemplo se usa el explorador).
 
-2. En el menú **Ver** , elija envíos de **correo electrónico** > ****.<br/>![Menú Ver para el explorador](media/ExplorerViewMenuEmailUserReported.png)<br/>
+2. En el **menú Ver** , elija**envíos**de **correo electrónico** > .<br/>![Menú Ver para el explorador](media/ExplorerViewMenuEmailUserReported.png)<br/>
 
 3. Haga clic en **remitente**y, a continuación, elija**tipo de informe** **básico** > .
 
@@ -137,9 +137,9 @@ El informe se actualiza para Mostrar datos sobre los mensajes de correo electró
 ## <a name="start-automated-investigation-and-response"></a>Iniciar investigación y respuesta automatizadas
 
 > [!NOTE]
-> Las capacidades de investigación y respuesta automatizadas están disponibles en **office 365 ATP plan 2** y **Office 365 E5**.
+> Las capacidades de respuesta a incidentes automatizada están disponibles en **office 365 ATP plan 2** y **Office 365 E5**.
 
-(Nueva) La [investigación y la respuesta automatizadas](automated-investigation-response-office.md) pueden guardar el equipo de operaciones de seguridad con mucho tiempo y esfuerzo en la investigación y mitigación de ataques cibernéticos. Además de configurar alertas que pueden desencadenar una guía de seguridad, puede iniciar un proceso de investigación y respuesta automatizado desde una vista en el explorador. 
+(Nueva) La [respuesta de incidente automatizada](automated-investigation-response-office.md) puede ahorrar al equipo de operaciones de seguridad mucho tiempo y esfuerzo para investigar y mitigar cyberattacks. Además de configurar alertas que pueden desencadenar una guía de seguridad, puede iniciar un proceso de investigación y respuesta automatizado desde una vista en el explorador. 
 
 Para obtener más información sobre esto, consulte [ejemplo: un administrador de seguridad desencadena una investigación desde el explorador](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer).
 
@@ -177,5 +177,5 @@ Para obtener más información acerca de los roles y los permisos, vea los sigui
   
 ## <a name="some-differences-between-threat-exporter-and-real-time-detections"></a>Algunas diferencias entre el exportador de amenazas y las detecciones en tiempo real
 
- - El informe de detecciones en **tiempo real** está disponible en Office 365 ATP plan 1, mientras que **Threat Explorer** está disponible en Office 365 ATP plan 2.
- - El informe de detecciones en **tiempo real** permite ver las detecciones en tiempo real. El **Explorador de amenazas** hace esto también, pero también le permite ver más detalles de un ataque determinado.
+ - El informe de **detecciones en tiempo real** está disponible en Office 365 ATP plan 1, mientras que **Threat Explorer** está disponible en Office 365 ATP plan 2.
+ - El informe de **detecciones en tiempo real** permite ver las detecciones en tiempo real. El **Explorador de amenazas** hace esto también, pero también le permite ver más detalles de un ataque determinado.

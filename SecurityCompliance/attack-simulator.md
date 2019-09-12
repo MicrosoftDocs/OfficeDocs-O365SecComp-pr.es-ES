@@ -1,7 +1,7 @@
 ---
 title: Simulador de ataques en Office 365
-ms.author: deniseb
-author: denisebmsft
+ms.author: chrisda
+author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: overview
@@ -14,12 +14,12 @@ ms.assetid: da5845db-c578-4a41-b2cb-5a09689a551b
 ms.collection:
 - M365-security-compliance
 description: Como administrador global de Office 365, puede usar simulador de ataque para ejecutar escenarios de ataque realistas en su organización. Esto puede ayudarle a identificar y encontrar a los usuarios vulnerables antes de que un ataque real reconozca a su empresa.
-ms.openlocfilehash: d0936e564104ae9c3b0fb00351c2c086386db5b0
-ms.sourcegitcommit: 4a2bde56178609e75c1ad7ecad2db5e049fc0c45
+ms.openlocfilehash: e72350fb8ca3ef8d7ed0218934097d2383f5ad53
+ms.sourcegitcommit: ff370e93b792204547694139ef99bc0848304570
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "36761636"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "36852782"
 ---
 # <a name="attack-simulator-in-office-365"></a>Simulador de ataques en Office 365
 

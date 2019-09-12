@@ -1,7 +1,7 @@
 ---
 title: Investigación y respuesta de amenazas de Office 365
-ms.author: deniseb
-author: denisebmsft
+ms.author: tracyp
+author: msfttracyp
 manager: dansimp
 ms.date: 08/23/2019
 audience: Admin
@@ -15,12 +15,12 @@ ms.assetid: 32405da5-bee1-4a4b-82e5-8399df94c512
 ms.collection:
 - M365-security-compliance
 description: Descubra cómo las capacidades de inteligencia sobre amenazas de Office 365 Advanced Threat Protection pueden ayudarle a investigar amenazas contra su organización, responder a malware, phishing y otros ataques que Office 365 ha detectado en su nombre y buscar amenazas indicadores.
-ms.openlocfilehash: 1d31f3a464060f5b72730e15895d918e61aa09a1
-ms.sourcegitcommit: 4a2bde56178609e75c1ad7ecad2db5e049fc0c45
+ms.openlocfilehash: 0edf68f3383759a4cffd9cb7c25260a51913beb0
+ms.sourcegitcommit: ff370e93b792204547694139ef99bc0848304570
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/05/2019
-ms.locfileid: "36761656"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "36852772"
 ---
 # <a name="office-365-threat-investigation-and-response"></a>Investigación y respuesta de amenazas de Office 365
 
@@ -74,7 +74,7 @@ Use el simulador de ataque para configurar y ejecutar cyberattacks realistas en 
 
 ### <a name="automated-investigation-and-response"></a>Investigación y respuesta automatizada
 
-Use las capacidades de investigación y respuesta automatizadas (AIR) para ahorrar tiempo y esfuerzo relacionando el contenido, los dispositivos y las personas con el riesgo de amenazas de la organización. Los procesos de aire pueden iniciarse siempre que se desencadenen determinados avisos o cuando el equipo de operaciones de seguridad lo inicie. Para obtener más información, consulte la [investigación y la respuesta automatizadas (Air) con Office 365](automated-investigation-response-office.md). 
+Use las capacidades de investigación y respuesta automatizadas (AIR) para ahorrar tiempo y esfuerzo relacionando el contenido, los dispositivos y las personas con el riesgo de amenazas de la organización. Los procesos de aire pueden iniciarse siempre que se desencadenen determinados avisos o cuando el equipo de operaciones de seguridad lo inicie. Para obtener más información, vea [respuesta de incidente automatizada (Air) con Office 365](automated-investigation-response-office.md). 
   
 ## <a name="threat-intelligence-widgets"></a>Widgets de inteligencia sobre amenazas
 
