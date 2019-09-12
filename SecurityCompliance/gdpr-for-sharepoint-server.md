@@ -35,9 +35,7 @@ El método recomendado básico para contenido generado por usuarios contenido en
 
 El método recomendado para recursos compartidos de archivos y bibliotecas y sitios de SharePoint está compuesto por estos pasos:
 
-1.  
-  **
-  [Instale y configure el escáner de Azure Information Protection.](https://docs.microsoft.com/es-ES/azure/information-protection/rms-client/client-admin-guide-install#options-to-install-the-azure-information-protection-client-for-users)**
+1.  **[Instale y configure el escáner de Azure Information Protection.](https://docs.microsoft.com/es-ES/azure/information-protection/rms-client/client-admin-guide-install#options-to-install-the-azure-information-protection-client-for-users)**
 
     -   Decida qué tipos de información confidencial quiere usar.
 
