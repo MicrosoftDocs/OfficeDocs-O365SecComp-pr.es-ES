@@ -1,6 +1,7 @@
 # [Seguridad y cumplimiento](index.md)
 
 # Introducción
+## [Novedades del centro de cumplimiento](whats-new.md)
 ## [Guía de seguridad de Office 365](security-roadmap.md)
 ## [Configurar su inquilino de Office 365 para aumentar la seguridad](tenant-wide-setup-for-increased-security.md)
 ## [Nuevo Centro de seguridad y cumplimiento de Microsoft 365](microsoft-security-and-compliance.md)
