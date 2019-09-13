@@ -15,18 +15,18 @@ search.appverid:
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: 'Use el Centro de seguridad y cumplimiento para buscar el registro de auditoría unificado para ver la actividad de usuarios y administradores en su organización de Office 365. '
-ms.openlocfilehash: f10c6b488683201a2980702cc83efe97bf54f046
-ms.sourcegitcommit: 50a2654d6d56249c3f836607f436446049be7833
+ms.openlocfilehash: 9fa2d1b2d047638ade395a2602ba6f6c8bf2ea79
+ms.sourcegitcommit: 6cc11f46f27a8c4f460100ba4da20c23bfd96f7e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "36838170"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "36877319"
 ---
 # <a name="search-the-audit-log-in-the-security--compliance-center"></a>Buscar el registro de auditoría en el Centro de seguridad y cumplimiento
 
 ## <a name="introduction"></a>Introducción
 
-¿Necesita averiguar si un usuario ha visto un documento determinado o si ha purgado un elemento de su buzón? Si es así, puede usar el Centro de seguridad &amp; cumplimiento de Office 365 para buscar el registro de auditoría unificado para ver la actividad de usuarios y administradores en su organización de Office 365. ¿Por qué un registro de auditoría unificado? Porque puede buscar los siguientes tipos de actividades administrativas y de usuario en Office 365:
+¿Necesita averiguar si un usuario ha visto un documento determinado o si ha purgado un elemento de su buzón? Si es así, puede usar el Centro de seguridad y cumplimiento de Office 365 para buscar el registro de auditoría unificado y ver la actividad de usuarios y administradores en su organización de Office 365. ¿Por qué un registro de auditoría unificado? Porque puede buscar los siguientes tipos de actividades administrativas y de usuario en Office 365:
 
 - Actividad de usuario en SharePoint Online y OneDrive para Empresas
 
@@ -74,9 +74,12 @@ Asegúrese de leer los siguientes elementos antes de iniciar la búsqueda del re
 
 - Cuando un usuario o administrador realiza una actividad auditada, se genera un registro de auditoría y se almacena en el registro de auditoría de Office 365 de su organización. La cantidad de tiempo que se retiene un registro de auditoría (y que se puede buscar en el registro de auditoría) depende de la suscripción a Office 365 y, específicamente, del tipo de licencia que se ha asignado a un usuario específico.
 
-  - **Office 365 E3:** Los registros de auditoría se conservan durante 90 días. Eso significa que puede buscar el registro de auditoría para las actividades que se han realizado en los últimos 90 días.
+  - **Office 365 E3:** Los registros de auditoría se conservan durante 90 días. Eso significa que puede buscar en registro de auditoría las actividades que se han realizado en los últimos 90 días.
 
-  - **Office 365 E5:** Los registros de auditoría también se conservan durante 90 días. La retención mantenimiento de registros de auditoría para un año puede estar disponible en ocasiones para usuarios de E5 y usuarios con una licencia de E3 y una licencia de complemento a Cumplimiento avanzado de Office 365.
+    > [!NOTE]
+    > Incluso si la auditoría de buzón está activada de forma predeterminada, es posible que los eventos de auditoría del buzón de algunos usuarios no se encuentren en búsquedas de registro de auditoría en el Centro de seguridad y cumplimiento a través de la API de Actividad de administración de Office 365. Para obtener más información, vea [Más información sobre el registro de auditoría del buzón de correo](enable-mailbox-auditing.md#more-information).
+
+  - **Office 365 E5:** los registros de auditoría también se conservan durante 90 días. La retención mantenimiento de registros de auditoría para un año puede estar disponible en ocasiones para usuarios de E5 y usuarios con una licencia de E3 y una licencia de complemento a Cumplimiento avanzado de Office 365.
 
     > [!NOTE]
     > El programa de la versión preliminar privada para el período de retención de un año para los registros de auditoría de las organizaciones E5 (o para los usuarios de las organizaciones E3 que tienen licencias de complemento a Cumplimiento avanzado) está cerrado a la nueva inscripción. Este artículo se actualizará cuando el período de retención de un año se encuentre disponible en vista previa pública o se publique para la disponibilidad general.
