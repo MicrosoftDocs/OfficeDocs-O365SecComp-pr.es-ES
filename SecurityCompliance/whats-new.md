@@ -16,12 +16,12 @@ ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
 description: Estamos agregando de forma continuada nuevas características al centro de cumplimiento de Microsoft 365, solucionando los problemas que aprendemos y realizando cambios en función de sus comentarios. Descubra lo que hemos realizado este mes.
-ms.openlocfilehash: 06c1292138ef7ca4c8421c169555454686ef8858
-ms.sourcegitcommit: 72ee6feaa0e0fd6bf01bfb855ad6e3bef370bf89
+ms.openlocfilehash: b3adf13fe662640c2dbc21eea6a48e2629a1113c
+ms.sourcegitcommit: 9fd606e8d912f4507fbcd9f1fcb9dfcfd20de08b
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "36393339"
+ms.lasthandoff: 09/13/2019
+ms.locfileid: "36980436"
 ---
 # <a name="whats-new-in-the-microsoft-365-compliance-center"></a>Novedades en el centro de cumplimiento de Microsoft 365
 
@@ -29,6 +29,12 @@ Estamos agregando de forma continuada nuevas características al [centro de cump
 
 > [!TIP]
 > ¿Está interesado en lo que ocurre en otros centros de administración? Consulte estos artículos:<br>[Novedades en el centro de administración de 365 de Microsoft](https://docs.microsoft.com/office365/admin/whats-new-in-preview?view=o365-worldwide)<br>[Novedades en el centro de administración de SharePoint](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)
+
+## <a name="august-2019"></a>2019 de agosto
+
+### <a name="data-investigations"></a>Investigaciones de datos
+
+Al realizar una investigación de datos, ahora puede eliminar elementos de sus ubicaciones originales. Esto significa que puede eliminar elementos de los buzones de Exchange, los sitios de SharePoint y las cuentas de OneDrive en toda la organización. Como ha recopilado los elementos como evidencia, tendrá copias de ellas retenidas en el conjunto de evidencias que puede investigar más o simplemente mantener como referencia. [Más información](datainvestigations/delete-items-from-original-locations.md)
 
 ## <a name="july-2019"></a>2019 de julio
 
